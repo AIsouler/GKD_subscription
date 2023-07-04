@@ -1,0 +1,29 @@
+{
+  "name": "@gkd-kit/subscription",
+  "type": "module",
+  "version": "0.0.0",
+  "private": false,
+  "main": "./dist/gkd.json",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsx ./src/main.ts"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^20",
+    "@types/prettier": "2.7.3",
+    "dayjs": "^1.11.7",
+    "dotenv": "16.2.0",
+    "lodash": "^4.17.21",
+    "prettier": "2.8.8",
+    "qiniu": "7.8.0",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4",
+    "undici": "^5.22.1"
+  },
+  "volta": {
+    "node": "20.3.0"
+  }
+}

@@ -1,0 +1,1138 @@
+{
+  "name": "GKD官方订阅",
+  "version": 4,
+  "author": "lisonge",
+  "supportUrl": "https://github.com/lisonge/gkd-subscription",
+  "apps": [
+    {
+      "id": "air.tv.douyu.android",
+      "groups": [
+        {
+          "key": 0,
+          "name": "斗鱼-开屏广告",
+          "activityIds": [
+            "com.douyu.module.home.pages.main.MainActivity",
+            "miuix.appcompat.app.m"
+          ],
+          "rules": [
+            "[text^='跳过'] + * >2 TextView[text*='跳转']"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "斗鱼-青少年模式",
+          "desc": "关闭青少年模式提醒弹窗",
+          "activityIds": "com.douyu.module.home.pages.main.MainActivity",
+          "rules": [
+            "[text='开启青少年模式'] + [text='我知道了']"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cmb.pb",
+      "groups": [
+        {
+          "key": 0,
+          "name": "招商银行-开屏广告",
+          "activityIds": "cmb.pb.app.mainframe.container.PBMainActivity",
+          "rules": "[id=`cmb.pb:id/ll_launch_ad_skip_hot_area`]"
+        }
+      ]
+    },
+    {
+      "id": "cn.wps.moffice_eng",
+      "groups": [
+        {
+          "key": 0,
+          "name": "WPS-开屏广告",
+          "activityIds": "cn.wps.moffice.documentmanager.PreStartActivity",
+          "rules": "[id=`cn.wps.moffice_eng:id/splash_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.MobileTicket",
+      "groups": [
+        {
+          "key": 0,
+          "name": "铁路12306-开屏广告",
+          "activityIds": "com.MobileTicket.ui.dialog.SplashAdDialog",
+          "rules": "[id=`com.MobileTicket:id/tv_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.UCMobile",
+      "groups": [
+        {
+          "key": 0,
+          "name": "UC浏览器-推荐页广告",
+          "activityIds": "com.uc.browser.InnerUCMobile",
+          "rules": [
+            "TextView[text=`屏蔽此条广告`]",
+            "TextView[text=`广告`] +n ImageView[desc=`不感兴趣`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.achievo.vipshop",
+      "groups": [
+        {
+          "key": 0,
+          "name": "唯品会-开屏广告",
+          "activityIds": "com.achievo.vipshop.activity.LodingActivity",
+          "rules": "[id=`com.achievo.vipshop:id/adv_countdown`]"
+        }
+      ]
+    },
+    {
+      "id": "com.alibaba.wireless",
+      "groups": [
+        {
+          "key": 0,
+          "name": "阿里巴巴-开屏广告",
+          "activityIds": "com.alibaba.wireless.launch.home.V5HomeActivity",
+          "rules": "[id=`com.alibaba.wireless:id/v5_splash_over`]"
+        }
+      ]
+    },
+    {
+      "id": "com.android.thememanager",
+      "groups": [
+        {
+          "key": 1,
+          "name": "miui主题壁纸-推荐下广告",
+          "rules": "[id=`com.android.thememanager:id/ad_close_btn`]"
+        }
+      ]
+    },
+    {
+      "id": "com.anjuke.android.app",
+      "groups": [
+        {
+          "key": 0,
+          "name": "安居客-开屏广告",
+          "activityIds": "com.anjuke.android.app.mainmodule.WelcomeActivity",
+          "rules": "[id=`com.anjuke.android.app:id/skip_btn`]"
+        }
+      ]
+    },
+    {
+      "id": "com.baidu.BaiduMap",
+      "groups": [
+        {
+          "key": 0,
+          "name": "百度地图-开屏广告",
+          "activityIds": "com.baidu.baidumaps.MapsActivity",
+          "rules": "@TextView[text^=`跳过`] + TextView[text=`广告`]"
+        }
+      ]
+    },
+    {
+      "id": "com.baidu.homework",
+      "groups": [
+        {
+          "key": 0,
+          "name": "作业帮-开屏广告",
+          "activityIds": "com.baidu.homework.activity.init.InitActivity",
+          "rules": "[id=`com.baidu.homework:id/adx_splash_skip_text`]"
+        }
+      ]
+    },
+    {
+      "id": "com.baidu.netdisk",
+      "groups": [
+        {
+          "key": 0,
+          "name": "百度网盘-开屏广告",
+          "activityIds": "com.baidu.netdisk.ui.Navigate",
+          "rules": [
+            "@TextView[text^=`跳过`] + TextView[text=`广告`]",
+            "[id='com.byted.pangle:id/tt_splash_skip_btn']"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.baidu.tieba",
+      "groups": [
+        {
+          "key": 0,
+          "name": "百度贴吧-开屏广告",
+          "desc": "数字倒计时广告,圆形倒计时广告",
+          "activityIds": [
+            "com.baidu.tieba.tblauncher.MainTabActivity",
+            "com.baidu.tieba.pb.pb.main.PbActivity"
+          ],
+          "rules": [
+            "TextView[text*=`广告`] - TextView[text^=`跳过`]",
+            "[id=`com.kwad.dy.sdk:id/ksad_splash_circle_skip_view`] TextView[text=`跳过`]",
+            "[id=`com.byted.pangle:id/tt_splash_skip_btn`]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "任意界面-选择不喜欢理由-不感兴趣",
+          "rules": "@View[text=null] - TextView[text=`选择不喜欢理由`][index=0]"
+        },
+        {
+          "key": 2,
+          "name": "首页/贴吧帖子列表-推荐列表-长得像帖子的广告卡片",
+          "activityIds": [
+            "com.baidu.tieba.tblauncher.MainTabActivity",
+            "com.baidu.tieba.frs.FrsActivity"
+          ],
+          "rules": [
+            "ImageView < @FrameLayout < LinearLayout < RelativeLayout <n LinearLayout < RelativeLayout + LinearLayout > RelativeLayout > TextView[text$=`广告`]"
+          ]
+        },
+        {
+          "key": 3,
+          "name": "某个广告卡片",
+          "desc": "忘记是哪个卡片了",
+          "activityIds": [
+            "com.baidu.tieba.tblauncher.MainTabActivity",
+            "com.baidu.tieba.pb.pb.main.PbActivity"
+          ],
+          "rules": "TextView[text=`广告`] <n FrameLayout <n LinearLayout - RelativeLayout @FrameLayout > ImageView"
+        },
+        {
+          "key": 4,
+          "name": "帖子评论区内部广告卡片",
+          "activityIds": "com.baidu.tieba.frs.FrsActivity",
+          "rules": "ImageView < @FrameLayout < LinearLayout < RelativeLayout <n LinearLayout < RelativeLayout + LinearLayout[id=`com.baidu.tieba:id/obfuscated`] TextView[text=`广告`]"
+        },
+        {
+          "key": 5,
+          "name": "帖子评论区广告卡片",
+          "activityIds": "com.baidu.tieba.pb.pb.main.PbActivity",
+          "rules": [
+            "TextView[text=`广告`] <n FrameLayout +n RelativeLayout[id=`com.baidu.tieba:id/obfuscated`] ImageView",
+            "TextView[text$=`广告`] +n FrameLayout[id=`com.baidu.tieba:id/obfuscated`] ImageView[id=null]",
+            "TextView[text$=`广告`] < RelativeLayout <n LinearLayout - RelativeLayout ImageView[id=null][desc=null]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.bjsk.intelligent",
+      "groups": [
+        {
+          "key": 0,
+          "name": "WiFi智能钥匙-开屏广告",
+          "activityIds": "com.cssq.wifi.ui.splash.SplashActivity",
+          "rules": [
+            "[text^=`跳过`]",
+            "[id=`com.byted.pangle:id/tt_splash_skip_btn`]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "WiFi智能钥匙-内部启动广告",
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "rules": [
+            "Image < @View +4 TextView[text=`反馈`] + View TextView[text=`广告`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.cmcc.cmvideo",
+      "groups": [
+        {
+          "key": 0,
+          "name": "咪咕视频-开屏广告",
+          "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
+          "rules": "[id=`com.cmcc.cmvideo:id/skip_button`]"
+        }
+      ]
+    },
+    {
+      "id": "com.coolapk.market",
+      "groups": [
+        {
+          "key": 0,
+          "name": "酷安-关闭卡片广告",
+          "desc": "点击卡片右上角按钮,然后点击关闭弹窗",
+          "activityIds": [
+            "com.coolapk.market.view.main.MainActivity",
+            "com.coolapk.market.view.base.SimpleAlphaActivity"
+          ],
+          "rules": [
+            {
+              "activityIds": [
+                "com.bytedance.sdk.openadsdk.core.dislike.ui",
+                "com.coolapk.market.view.main.MainActivity",
+                "com.coolapk.market.view.base.SimpleAlphaActivity"
+              ],
+              "matches": "@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]"
+            },
+            "Button[text$=`去广告`] - Button[text=`不感兴趣`]",
+            "[id=`com.coolapk.market:id/close_view`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.ct.client",
+      "groups": [
+        {
+          "key": 0,
+          "name": "中国电信-开屏广告",
+          "activityIds": [
+            "com.ct.client.activity.MainActivity",
+            "com.ct.client.activity.SplashActivity"
+          ],
+          "rules": "[id=`com.ct.client:id/tvSkip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.daimajia.gold",
+      "groups": [
+        {
+          "key": 0,
+          "name": "稀土掘金-开屏广告",
+          "activityIds": "im.juejin.android.ui.SplashActivity",
+          "rules": "[id=`com.daimajia.gold:id/fl_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.dianping.v1",
+      "groups": [
+        {
+          "key": 0,
+          "name": "大众点评-开屏广告",
+          "activityIds": "com.dianping.v1.NovaMainActivity",
+          "rules": "[id=`com.dianping.v1:id/new_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.dragon.read",
+      "groups": [
+        {
+          "key": 0,
+          "name": "番茄免费小说-阅读页面底部广告",
+          "rules": [
+            {
+              "activityIds": "com.dragon.read.ad.banner.ui",
+              "matches": "@[isClickable=true] TextView[text=`关闭此条广告`]"
+            },
+            {
+              "activityIds": "com.dragon.read.reader.ReaderActivity",
+              "matches": "@ImageView - LinearLayout TextView[text=`广告`]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.duokan.phone.remotecontroller",
+      "groups": [
+        {
+          "key": 0,
+          "name": "万能遥控-底部横幅广告",
+          "activityIds": "com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2",
+          "rules": "ImageView[id=`com.duokan.phone.remotecontroller:id/image_close_banner`]"
+        }
+      ]
+    },
+    {
+      "id": "com.duowan.kiwi",
+      "groups": [
+        {
+          "key": 0,
+          "name": "虎牙直播-开屏广告",
+          "activityIds": [
+            "com.duowan.kiwi.homepage.Homepage",
+            "com.duowan.kiwi.adsplash.view.AdSplashActivity"
+          ],
+          "rules": [
+            "[id=`com.duowan.kiwi:id/skip_time`]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "虎牙直播-关闭青少年模式弹窗",
+          "activityIds": [
+            "com.duowan.kiwi.homepage.Homepage",
+            "com.miui.home.launcher.Launcher"
+          ],
+          "rules": "[id=`com.duowan.kiwi:id/hyui_dialog_button_positive`][text=`我知道了`]"
+        }
+      ]
+    },
+    {
+      "id": "com.google.android.youtube",
+      "groups": [
+        {
+          "key": 0,
+          "name": "youtube-视频播放-跳过广告",
+          "activityIds": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity",
+          "rules": "[id=`com.google.android.youtube:id/skip_ad_button`]"
+        }
+      ]
+    },
+    {
+      "id": "com.gotokeep.keep",
+      "groups": [
+        {
+          "key": 0,
+          "name": "Keep-开屏广告",
+          "activityIds": "com.gotokeep.keep.splash.SplashActivity",
+          "rules": "[id=`com.gotokeep.keep:id/textSkip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.greenpoint.android.mc10086.activity",
+      "groups": [
+        {
+          "key": 0,
+          "name": "中国移动-开屏广告",
+          "activityIds": "com.mc10086.cmcc.view.tabs.AppTabFragment",
+          "rules": "[id=`com.greenpoint.android.mc10086.activity:id/video_time_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.handsgo.jiakao.android",
+      "groups": [
+        {
+          "key": 0,
+          "name": "驾考宝典-开屏广告",
+          "activityIds": "com.handsgo.jiakao.android.splash.Login",
+          "rules": "[id=`com.handsgo.jiakao.android:id/closeLayout`]"
+        }
+      ]
+    },
+    {
+      "id": "com.hunantv.imgo.activity",
+      "groups": [
+        {
+          "key": 0,
+          "name": "芒果TV-关闭青少年模式提示",
+          "activityIds": [
+            "com.hunantv.imgo.activity.MainActivity",
+            "miuix.appcompat.app.m"
+          ],
+          "rules": "[id=`com.hunantv.imgo.activity:id/btnIknow`]"
+        }
+      ]
+    },
+    {
+      "id": "com.hupu.shihuo",
+      "groups": [
+        {
+          "key": 0,
+          "name": "识货-开屏广告",
+          "activityIds": "com.shizhi.shihuoapp.module.main.ui.welcome.WelcomeActivity",
+          "rules": "[id=`com.hupu.shihuo:id/fl_countdown`]"
+        }
+      ]
+    },
+    {
+      "id": "com.hxak.liangongbao",
+      "groups": [
+        {
+          "key": 0,
+          "name": "链工宝-开屏广告",
+          "activityIds": "com.hxak.liangongbao.login.ui.HomeActivity",
+          "rules": "[id=`com.hxak.liangongbao:id/time_down`]"
+        }
+      ]
+    },
+    {
+      "id": "com.icbc",
+      "groups": [
+        {
+          "key": 0,
+          "name": "中国工商银行-第一次启动提示",
+          "activityIds": "com.icbc.activity.init.SplashActivity",
+          "rules": "[id=`com.icbc:id/close_btn`]"
+        }
+      ]
+    },
+    {
+      "id": "com.intsig.camscanner",
+      "groups": [
+        {
+          "key": 0,
+          "name": "扫描全能王-开屏vip提示",
+          "activityIds": "com.intsig.camscanner.guide.guidevideo.GuideVideoActivity",
+          "rules": "[id=`com.intsig.camscanner:id/tv_drop_cnl_close_new`]"
+        }
+      ]
+    },
+    {
+      "id": "com.iqiyi.hotchat",
+      "groups": [
+        {
+          "key": 0,
+          "name": "爱奇艺热聊-开屏广告",
+          "activityIds": "com.iqiyi.hotchat.ui.activity.AdvertisementActivity",
+          "rules": "[id=`com.iqiyi.hotchat:id/tv_advertisement_lunch_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.kmxs.reader",
+      "groups": [
+        {
+          "key": 0,
+          "name": "七猫免费小说-关闭青少年模式",
+          "activityIds": "com.kmxs.reader.home.ui.HomeActivity",
+          "rules": "[id=`com.kmxs.reader:id/young_dialog_close`]"
+        }
+      ]
+    },
+    {
+      "id": "com.kuaikan.comic",
+      "groups": [
+        {
+          "key": 0,
+          "name": "快看-开屏广告",
+          "activityIds": "com.kuaikan.comic.ui.AdvertisementActivity",
+          "rules": "[id=`com.kuaikan.comic:id/skip_button`]"
+        }
+      ]
+    },
+    {
+      "id": "com.kugou.android",
+      "groups": [
+        {
+          "key": 0,
+          "name": "酷狗音乐-开屏广告",
+          "activityIds": "com.kugou.android.app.splash.SplashActivity",
+          "rules": "[desc=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.mihoyo.hyperion",
+      "groups": [
+        {
+          "key": 0,
+          "name": "米游社-开屏广告",
+          "activityIds": "com.mihoyo.hyperion.ui.SplashActivity",
+          "rules": "[id=`com.mihoyo.hyperion:id/mSplashBtJump`]"
+        },
+        {
+          "key": 1,
+          "name": "米游社-青少年模式",
+          "desc": "关闭青少年模式提醒弹窗",
+          "rules": "TextView[id=`com.mihoyo.hyperion:id/tv_dialog_i_know`]"
+        }
+      ]
+    },
+    {
+      "id": "com.miui.player",
+      "groups": [
+        {
+          "key": 0,
+          "name": "小米音乐-开屏广告",
+          "activityIds": "com.tencent.qqmusiclite.activity.MainActivity",
+          "rules": "@TextView[text$=`跳过`] + TextView[id=`com.miui.player:id/ad_view`]"
+        }
+      ]
+    },
+    {
+      "id": "com.miui.systemAdSolution",
+      "groups": [
+        {
+          "key": 0,
+          "name": "miui任意app开屏广告",
+          "rules": "[id=`com.miui.systemAdSolution:id/view_skip_button`]"
+        },
+        {
+          "key": 1,
+          "name": "miui-为什么不希望看到这条推广",
+          "desc": "关闭这个提示",
+          "activityIds": "com.xiaomi.ad.feedback",
+          "rules": "[id=`com.miui.systemAdSolution:id/no_interest`]"
+        }
+      ]
+    },
+    {
+      "id": "com.mt.mtxx.mtxx",
+      "groups": [
+        {
+          "key": 0,
+          "name": "美图秀秀-开屏广告",
+          "activityIds": "com.meitu.business.ads.core.activity.AdActivity",
+          "rules": "[id=`com.mt.mtxx.mtxx:id/0*`][text=`跳过广告`]"
+        }
+      ]
+    },
+    {
+      "id": "com.netease.cloudmusic",
+      "groups": [
+        {
+          "key": 0,
+          "name": "网易云音乐-开屏广告",
+          "activityIds": "com.netease.cloudmusic.activity.MainActivity",
+          "rules": "TextView[text^=`跳过`][id=`com.netease.cloudmusic:id/skipBtn`]"
+        }
+      ]
+    },
+    {
+      "id": "com.qidian.QDReader",
+      "groups": [
+        {
+          "key": 0,
+          "name": "起点读书-开屏广告",
+          "activityIds": "com.qidian.QDReader.ui.activity.SplashADActivity",
+          "rules": "Button[text^=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.qiyi.video",
+      "groups": [
+        {
+          "key": 0,
+          "name": "iqiyi-开屏广告",
+          "activityIds": "org.qiyi.android.video.MainActivity",
+          "rules": "@FrameLayout[id=`com.qiyi.video:id/unused_res_a`] > LinearLayout[id=null] > TextView[text=`关闭`][id=`com.qiyi.video:id/unused_res_a`]"
+        },
+        {
+          "key": 1,
+          "name": "iqiyi-关闭青少年模式弹窗",
+          "activityIds": "org.qiyi.basecore.widget.dialog.AlertDialogBottom1",
+          "rules": "Button[id=`com.qiyi.video:id/confirm_btn`][text=`我知道了`]"
+        }
+      ]
+    },
+    {
+      "id": "com.quark.browser",
+      "groups": [
+        {
+          "key": 0,
+          "name": "夸克浏览器-小说阅读页面底部广告",
+          "activityIds": "com.ucpro.BrowserActivity",
+          "rules": [
+            "[id=`com.quark.browser:id/tv_close_ad`][text=`关闭广告`]",
+            "[id=`com.quark.browser:id/ad_close_layout_container`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.sankuai.meituan",
+      "groups": [
+        {
+          "key": 0,
+          "name": "美团-开屏广告",
+          "activityIds": "com.meituan.android.pt.homepage.activity.MainActivity",
+          "rules": "TextView[id=`com.sankuai.meituan:id/close_btn`][text^=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.sankuai.meituan.takeoutnew",
+      "groups": [
+        {
+          "key": 0,
+          "name": "美团外卖-开屏广告",
+          "activityIds": "com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity",
+          "rules": "[id=`com.sankuai.meituan.takeoutnew:id/tv_remain_time`] + TextView[text*=`跳过`]"
+        },
+        {
+          "key": 1,
+          "name": "美团外卖-关闭更新提醒弹窗",
+          "activityIds": "com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog",
+          "rules": [
+            "[id='com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel']"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "美团外卖-关闭弹窗美食广告",
+          "activityIds": "com.sankuai.waimai.platform.mach.dialog.DynamicDialog",
+          "rules": [
+            "@[desc='关闭'][isClickable=true] > ImageView"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.sdu.didi.psnger",
+      "groups": [
+        {
+          "key": 0,
+          "name": "滴滴-开屏广告",
+          "activityIds": "com.didi.sdk.app.launch.splash.SplashActivity",
+          "rules": "[id=`com.sdu.didi.psnger:id/skip_ad_ll`]"
+        }
+      ]
+    },
+    {
+      "id": "com.sina.weibo",
+      "groups": [
+        {
+          "key": 0,
+          "name": "微博-开屏广告",
+          "activityIds": "com.sina.weibo.mobileads.view.a",
+          "rules": [
+            "@RelativeLayout > TextView[text=`跳过`]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "微博-评论区顶部-相关推荐",
+          "activityIds": "com.sina.weibo.feed.DetailWeiboActivity",
+          "rules": "ImageView[id=`com.sina.weibo:id/iv_ad_x`]"
+        }
+      ]
+    },
+    {
+      "id": "com.smile.gifmaker",
+      "groups": [
+        {
+          "key": 0,
+          "name": "快手-关闭青少年模式弹窗",
+          "activityIds": "com.yxcorp.gifshow.HomeActivity",
+          "rules": "@[id=`com.smile.gifmaker:id/positive`] + [id=`com.smile.gifmaker:id/set_teenage_mode`]"
+        }
+      ]
+    },
+    {
+      "id": "com.snda.wifilocating",
+      "groups": [
+        {
+          "key": 0,
+          "name": "WiFi万能钥匙-内部广告",
+          "activityIds": "com.lantern.launcher.ui.MainActivityICS",
+          "rules": [
+            {
+              "matches": [
+                "[id=`com.snda.wifilocating:id/outer_ad_dislike_item_title`][text=`为什么看到此广告`]",
+                "@[id=`com.snda.wifilocating:id/outer_ad_dislike_item_one`] [id=`com.snda.wifilocating:id/outer_ad_dislike_item_title`][text=`不感兴趣`]"
+              ]
+            },
+            "ImageView[id=`com.snda.wifilocating:id/feed_item_sdk_logo`] < LinearLayout + [id=`com.snda.wifilocating:id/feed_item_dislike`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.ss.android.ugc.aweme",
+      "groups": [
+        {
+          "key": 0,
+          "name": "抖音-青少年模式弹窗",
+          "rules": "Button[text=`开启青少年模式`] + * > Button[text!=null]"
+        }
+      ]
+    },
+    {
+      "id": "com.taobao.taobao",
+      "groups": [
+        {
+          "key": 0,
+          "name": "淘宝-开屏广告",
+          "activityIds": "com.taobao.bootimage.activity.BootImageActivity",
+          "rules": "[id='com.taobao.taobao:id/close']"
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.androidqqmail",
+      "groups": [
+        {
+          "key": 0,
+          "name": "qq邮箱-广告邮件-列表卡片广告",
+          "activityIds": "com.tencent.qqmail.fragment.base.MailFragmentActivity",
+          "rules": [
+            "TextView[text=`赞助商提供的广告`] <n FrameLayout <n ListView[id=`com.tencent.androidqqmail:id/pop_up_list`] TextView[text=`不感兴趣`]",
+            "[id=`com.tencent.androidqqmail:id/advertise_view_ad`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.djcity",
+      "groups": [
+        {
+          "key": 0,
+          "name": "掌上道聚城-开屏广告",
+          "activityIds": "com.tencent.djcity.activities.homepage.PortalActivity",
+          "rules": "[id=`com.tencent.djcity:id/ad_view_ll_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.karaoke",
+      "groups": [
+        {
+          "key": 0,
+          "name": "全民K歌-开屏广告",
+          "activityIds": "com.tencent.karaoke.module.splash.ui.SplashAdDialog",
+          "rules": "[text*=`跳过`][id!=null]"
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.mm",
+      "groups": [
+        {
+          "key": 0,
+          "name": "微信朋友圈广告",
+          "desc": "朋友圈信息流广告,点击关闭按钮,确认关闭",
+          "activityIds": "com.tencent.mm.plugin.sns.ui.SnsTimeLineUI",
+          "rules": [
+            "TextView[text*=`广告`] + TextView[text=`关闭该广告`]",
+            "ImageView - TextView[text=`广告`][id!=null][index=0]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "微信电脑快捷自动登录",
+          "activityIds": ".plugin.webwx.ui.ExtDeviceWXLoginUI",
+          "rules": "TextView[text=`取消登录`] - Button[text=`登录`]"
+        },
+        {
+          "key": 2,
+          "name": "微信电脑第三方登录自动授权",
+          "activityIds": [
+            "com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI"
+          ],
+          "rules": "Button[text=`拒绝`] - Button[text=`允许`]"
+        },
+        {
+          "key": 3,
+          "name": "微信手机第三方app申请使用",
+          "desc": "自动点击同意",
+          "rules": [
+            "TextView + TextView[text=`申请使用`]",
+            "Button[text=`拒绝`] - Button[text=`允许`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.mobileqq",
+      "groups": [
+        {
+          "key": 0,
+          "name": "QQ-开屏广告",
+          "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+          "rules": "[text*=`跳过`]"
+        },
+        {
+          "key": 1,
+          "name": "QQ-消息页面-顶部广告",
+          "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+          "rules": [
+            "ImageView[id!=null][desc='关闭'][isClickable=true]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.mtt",
+      "groups": [
+        {
+          "key": 0,
+          "name": "QQ浏览器-开屏广告",
+          "activityIds": "com.tencent.mtt.MainActivity",
+          "rules": "@View[id=null] + ImageView + FrameLayout TextView[text=`向上滑动或点击查看`]"
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.qqlive",
+      "groups": [
+        {
+          "key": 0,
+          "name": "腾讯视频-开屏广告",
+          "activityIds": "com.tencent.qqlive.ona.activity.SplashHomeActivity",
+          "rules": [
+            "TextView[text*=`互动广告`] < LinearLayout < FrameLayout + FrameLayout > TextView[text=`跳过`]",
+            "TextView[text=`广告`] LinearLayout + TextView[text=`跳过`]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "腾讯视频-青少年模式弹窗",
+          "activityIds": "com.tencent.qqlive.ona.update.trunk.client.TrunkUpdateActivity",
+          "rules": "TextView[text*=`青少年模式`] +n TextView[id=`com.tencent.qqlive:id/arg`][text=`我知道了`]"
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.qqmusic",
+      "groups": [
+        {
+          "key": 0,
+          "name": "QQ音乐-开屏广告",
+          "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
+          "rules": "TextView[text=`跳过`]"
+        },
+        {
+          "key": 1,
+          "name": "QQ音乐-推荐页-广告卡片",
+          "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
+          "rules": "@LinearLayout[isClickable=true] > TextView[text='广告'] + ImageView"
+        }
+      ]
+    },
+    {
+      "id": "com.tencent.qt.sns",
+      "groups": [
+        {
+          "key": 0,
+          "name": "掌上穿越火线-开屏广告",
+          "activityIds": "com.tencent.gamehelper.ui.main.WelcomeActivity",
+          "rules": "[id=`com.tencent.qt.sns:id/tv_timer`][text$=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.xiaomi.market",
+      "groups": [
+        {
+          "key": 0,
+          "name": "小米应用商店-首页悬浮窗广告",
+          "activityIds": "com.xiaomi.market.ui.FloatWebActivity",
+          "rules": "Button[text='关闭']"
+        }
+      ]
+    },
+    {
+      "id": "com.ximalaya.ting.lite",
+      "groups": [
+        {
+          "key": 0,
+          "name": "喜马拉雅极速版-首页-推荐-卡片广告",
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "rules": "[id='com.ximalaya.ting.lite:id/main_ad_top_home_iv_close']"
+        }
+      ]
+    },
+    {
+      "id": "com.xunlei.downloadprovider",
+      "groups": [
+        {
+          "key": 0,
+          "name": "迅雷-开屏广告",
+          "activityIds": "com.xunlei.downloadprovider.launch.LaunchActivity",
+          "rules": "TextView[text^=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.yek.android.kfc.activitys",
+      "groups": [
+        {
+          "key": 0,
+          "name": "肯德基-开屏广告",
+          "activityIds": "com.yum.android.superkfc.ui.v5.HomeV5Activity",
+          "rules": "[id=`com.yek.android.kfc.activitys:id/splash_tv_3`]"
+        }
+      ]
+    },
+    {
+      "id": "com.yipiao",
+      "groups": [
+        {
+          "key": 0,
+          "name": "智行火车票12306抢票-开屏广告",
+          "activityIds": "com.app.main.entrance.MainActivity",
+          "rules": "LinearLayout > TextView + TextView[text=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.zhihu.android",
+      "groups": [
+        {
+          "key": 0,
+          "name": "知乎-开屏广告",
+          "activityIds": [
+            "com.zhihu.android.app.ui.activity.LauncherActivity",
+            "com.zhihu.android.app.ui.activity.LaunchAdActivity",
+            "com.zhihu.android.app.feed.AdTransparentHostActivity",
+            "com.miui.home.launcher.Launcher"
+          ],
+          "rules": "TextView[id=`com.zhihu.android:id/btn_skip`]"
+        },
+        {
+          "key": 1,
+          "name": "知乎-关闭广告弹窗",
+          "desc": "点击 关闭广告按钮 之后出现的广告弹窗",
+          "activityIds": [
+            "com.zhihu.android.ContentActivity",
+            "com.zhihu.android.app.ui.activity.MainActivity"
+          ],
+          "rules": "@FrameLayout ImageView + TextView[text*=`虚假广告`][id=`com.zhihu.android:id/tv_content`]"
+        },
+        {
+          "key": 2,
+          "name": "知乎-关闭广告原因",
+          "desc": "点击 关闭广告按钮 之后出现的选择原因",
+          "activityIds": "com.zhihu.android.ContentActivity",
+          "rules": [
+            "[id=`com.zhihu.android:id/confirm_uninterest`]",
+            "[id=`com.zhihu.android:id/revert_uninterest`] <n * + [id=`com.zhihu.android:id/reason_container`] > [id=`com.zhihu.android:id/uninterest_reason`]"
+          ]
+        },
+        {
+          "key": 3,
+          "name": "知乎-关闭推荐",
+          "desc": "关闭回答底部其他回答",
+          "activityIds": "com.zhihu.android.mix.activity.ContentMixProfileActivity",
+          "rules": [
+            "TextView + View + TextView + TextView[text$=`评论`][text*=`赞同`] + View"
+          ]
+        },
+        {
+          "key": 5,
+          "name": "知乎-推荐页广告卡片",
+          "desc": "赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告",
+          "activityIds": "com.zhihu.android.app.ui.activity.MainActivity",
+          "rules": [
+            "[id='com.zhihu.android:id/content'] >2 TextView[text='不感兴趣'][id='com.zhihu.android:id/title']",
+            "TextView[text=`内容质量差`][id=`com.zhihu.android:id/tv_content`]",
+            "@ImageView[id=`com.zhihu.android:id/menu`] < FrameLayout - * > TextView[text^=`广告`]",
+            "@ImageView[id=null][isClickable=true] -n TextView[text*=`广告`][index=0]"
+          ]
+        },
+        {
+          "key": 6,
+          "name": "问题-回答列表-卡片广告",
+          "activityIds": "com.zhihu.android.ContentActivity",
+          "rules": [
+            "@ImageView -n TextView[text=`广告`][index=0]",
+            "ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[isClickable=true]"
+          ]
+        },
+        {
+          "key": 7,
+          "name": "回答底部评论顶部的任意广告推荐",
+          "activityIds": [
+            "com.zhihu.android.mixshortcontainer.MixShortContainerActivity",
+            "com.zhihu.android.app.ui.activity.HostActivity"
+          ],
+          "rules": [
+            "@Image + TextView[text$=`的广告`]",
+            "TextView[text$=`的广告`] +n TextView[text=`×`]",
+            "TextView[text=`查看详情`] + TextView[text=`×`]",
+            "TextView[text*=`赞同`][text*=`评论`] + TextView[text=`×`]",
+            "TextView[text*=`回答`][text*=`关注`] + TextView[text=`×`]",
+            "TextView[text!=null] + TextView[text*=`赞同`] + View > Image",
+            "TextView[text$=`的广告`] - Image[id=null]",
+            "TextView[text*=`广告`] +2 Image[id=null]",
+            "TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]",
+            "TextView[text=''] + Image[text=''] + TextView[text='​'] + Image[id=null][isClickable=true]"
+          ]
+        },
+        {
+          "key": 8,
+          "name": "知乎-关闭首页广告",
+          "activityIds": "com.zhihu.android.app.ui.activity.AdAlphaVideoActivity",
+          "rules": "[id=`com.zhihu.android:id/tv_ad_close`]"
+        },
+        {
+          "key": 9,
+          "name": "知乎-推荐页-顶部广告",
+          "activityIds": "com.zhihu.android.app.ui.activity.MainActivity",
+          "rules": [
+            "[id='com.zhihu.android:id/tv_ad_tag'] + [id='com.zhihu.android:id/img_close_focus']"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.zidongdianji",
+      "groups": [
+        {
+          "key": 0,
+          "name": "自动点击器-开屏广告",
+          "activityIds": "com.autoclicker.clicker.ads.SplashActivity",
+          "rules": [
+            "[id=`com.byted.pangle:id/tt_splash_skip_btn`]",
+            "TextView[text^=`跳过`]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "自动点击器-首页顶部广告卡片",
+          "activityIds": "com.autoclicker.clicker.MainActivity",
+          "rules": [
+            {
+              "activityIds": "com.bytedance.sdk.openadsdk.core.dislike.ui",
+              "matches": "@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]"
+            },
+            "Image < @View + View >2 [text*=`广告`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv.danmaku.bili",
+      "groups": [
+        {
+          "key": -1,
+          "name": "B站-开屏广告",
+          "desc": "开屏广告,切回APP开屏广告",
+          "rules": "TextView[id=`tv.danmaku.bili:id/count_down`]"
+        },
+        {
+          "key": 0,
+          "name": "评论区顶部公告横幅",
+          "rules": "LinearLayout[id=`tv.danmaku.bili:id/ad_tint_frame`] > ImageView[desc=`关闭`]",
+          "excludeActivityIds": [
+            "com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "青少年模式弹窗",
+          "rules": "TextView[text*=`青少年模式`] + TextView[text=`我知道了`]"
+        },
+        {
+          "key": 2,
+          "name": "动态推荐卡片",
+          "rules": [
+            {
+              "activityIds": "tv.danmaku.bili.MainActivityV2",
+              "matches": "[id=`tv.danmaku.bili:id/ad_goods_mark_big`]"
+            }
+          ]
+        },
+        {
+          "key": 3,
+          "name": "点击关闭广告后出现的弹窗",
+          "rules": [
+            {
+              "activityIds": "com.bilibili.lib.ui.menu",
+              "matches": "TextView[text='广告质量差'][id^='tv.danmaku.bili:id/reason']"
+            }
+          ]
+        },
+        {
+          "key": 4,
+          "name": "视频底部广告",
+          "activityIds": "com.bilibili.video.videodetail.VideoDetailsActivity",
+          "rules": [
+            "[id=`tv.danmaku.bili:id/reason1_layout`] > [id=`tv.danmaku.bili:id/reason1`][text*=`广告`]",
+            "[id=`tv.danmaku.bili:id/ad_tint_frame`][desc^=`UP主推荐广告`] @[id=`tv.danmaku.bili:id/more`] > ImageView"
+          ]
+        },
+        {
+          "key": 5,
+          "name": "推荐页-可跳过广告",
+          "activityIds": "tv.danmaku.bili.MainActivityV2",
+          "rules": [
+            "[id=`tv.danmaku.bili:id/click_skip`]"
+          ]
+        }
+      ]
+    }
+  ]
+}
