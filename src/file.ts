@@ -1,10 +1,10 @@
 import dayjs from 'dayjs';
 import _ from 'lodash';
 import fs from 'node:fs/promises';
-import url from 'node:url';
 import path from 'node:path';
-import { SubscriptionConfig } from './types';
-import { refreshUrls, uploadFile } from './upload_qiniu';
+import url from 'node:url';
+import selfPkg from '../package.json';
+import type { SubscriptionConfig } from './types';
 
 export const relativePath = (p: string) => {
   return url.fileURLToPath(new URL(p, import.meta.url));
@@ -19,6 +19,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
 
   newConfig.version = oldConfig.version ?? 0;
   if (_.isEqual(newConfig, oldConfig)) {
+    console.log([oldConfig.name, `nothing changed, skip`]);
     return;
   }
   newConfig.version++;
@@ -67,17 +68,19 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
     'utf-8',
   );
   await fs.writeFile(filePath, buffer);
-  const { key, hash } = await uploadFile(filePath);
-  await refreshUrls(key);
-  console.log(
-    [
-      dayjs().format(`HH:mm:ss`),
-      (buffer.length / 1024).toFixed(3) + `KB`,
-      newConfig.version,
-      key,
-      hash,
-    ].join(` `),
+
+  const newPkg = { ...selfPkg, version: `0.0.` + newConfig.version };
+  await fs.writeFile(
+    relativePath('../package.json'),
+    JSON.stringify(newPkg, void 0, 2) + `\n`,
   );
+
+  console.log({
+    mtime: dayjs().format(`HH:mm:ss`),
+    name: newConfig.name,
+    size: (buffer.length / 1024).toFixed(3) + `KB`,
+    version: newConfig.version,
+  });
 };
 
 export async function* walk(dirPath: string) {

@@ -1,6 +1,6 @@
 {
   "name": "GKD官方订阅",
-  "version": 4,
+  "version": 5,
   "author": "lisonge",
   "supportUrl": "https://github.com/lisonge/gkd-subscription",
   "apps": [
@@ -1070,6 +1070,15 @@
             },
             "Image < @View + View >2 [text*=`广告`]"
           ]
+        }
+      ]
+    },
+    {
+      "id": "li.songe.gkd",
+      "groups": [
+        {
+          "key": 0,
+          "name": "GKD-空规则组"
         }
       ]
     },

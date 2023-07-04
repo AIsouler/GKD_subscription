@@ -1,7 +1,7 @@
 {
   "name": "@gkd-kit/subscription",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "private": false,
   "main": "./dist/gkd.json",
   "files": [

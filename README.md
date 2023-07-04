@@ -7,9 +7,9 @@ a subscription for gkd
 <details>
   <summary> gkd </summary>
 
-- [gdk](https://raw.gitmirror.com/lisonge/gkd-subscription/main/dist/gkd.json)
+- [gdk](https://raw.githubusercontent.com/gkd-kit/subscription/main/dist/gkd.json)
 
-![image](https://github.com/lisonge/gkd/assets/38517192/e9adef4e-4e56-42e2-9d46-2123966467ec)
+![image](https://github.com/lisonge/gkd/assets/38517192/cd25d007-f3ef-49bc-a930-6f0a7d0aded5)
 
 </details>
 
@@ -18,8 +18,8 @@ a subscription for gkd
 <details>
   <summary> gkd </summary>
 
-- [gkd](https://cdn.lisonge.com/gkd.json)
+- [gkd](https://registry.npmmirror.com/@gkd-kit/subscription/latest/files)
 
-![image](https://github.com/lisonge/gkd/assets/38517192/341aea22-9f48-4178-b94f-5d14868c70a3)
+![image](https://github.com/lisonge/gkd/assets/38517192/a0f95072-881e-4157-9c6b-2fcab03a84c2)
 
 </details>
