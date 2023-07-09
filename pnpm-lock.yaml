@@ -1,10 +1,13 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@gkd-kit/selector':
+    specifier: 0.0.3
+    version: 0.0.3
   '@types/lodash':
     specifier: ^4.14.194
     version: 4.14.194
@@ -18,16 +21,16 @@ dependencies:
     specifier: ^1.11.7
     version: 1.11.7
   dotenv:
-    specifier: 16.2.0
+    specifier: ^16.2.0
     version: 16.2.0
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
   prettier:
-    specifier: 2.8.8
+    specifier: ^2.8.8
     version: 2.8.8
   qiniu:
-    specifier: 7.8.0
+    specifier: ^7.8.0
     version: 7.8.0
   tsx:
     specifier: ^3.12.6
@@ -36,7 +39,7 @@ dependencies:
     specifier: ^5.0.4
     version: 5.0.4
   undici:
-    specifier: 5.22.1
+    specifier: ^5.22.1
     version: 5.22.1
 
 packages:
@@ -259,6 +262,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@gkd-kit/selector@0.0.3:
+    resolution: {integrity: sha512-CXpUQ38F0CWtsKgbL4hzitGCPvIHeDFPCUvNjjAuyrd/55ODbJxzFe0OQ6LzLoFimklNNZ8MOe2tJHIhxnNZ0A==}
+    dev: false
 
   /@tootallnate/once@1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}

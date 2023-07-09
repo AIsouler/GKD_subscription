@@ -13,5 +13,9 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["./src/**/*.ts", "./scripts/**/*.ts", "./types/**/*.ts"]
+  "include": [
+    "./src/**/*.{ts,js,mjs,cjs}",
+    "./scripts/**/*.ts",
+    "./types/**/*.ts"
+  ]
 }

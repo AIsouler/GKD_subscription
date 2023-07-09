@@ -4,10 +4,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import url from 'node:url';
 import selfPkg from '../package.json';
-import type { SubscriptionConfig } from './types';
+import type { SubscriptionConfig, IArray } from './types';
+import { parseSelector } from './selector';
 
 export const relativePath = (p: string) => {
   return url.fileURLToPath(new URL(p, import.meta.url));
+};
+
+const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
+  return Array<T>().concat(array);
 };
 
 export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
@@ -38,6 +43,36 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
         throw new Error(`invalid duplicated group key`);
       }
       keys.add(g.key);
+    });
+  });
+
+  newConfig.apps?.forEach((app) => {
+    app.groups?.forEach((g) => {
+      if (!g.rules) return;
+      const rules = iArrayToArray(g.rules).map((r) => {
+        if (typeof r == 'string') {
+          return { matches: r };
+        }
+        return r;
+      });
+      rules.forEach((r) => {
+        [r.matches, r.excludeMatches]
+          .map((m) => iArrayToArray(m))
+          .flat()
+          .forEach((selector) => {
+            try {
+              parseSelector(selector);
+            } catch (e) {
+              console.error({
+                message: `invalid selector`,
+                appId: app.id,
+                groupKey: g.key,
+                selector,
+              });
+              throw e;
+            }
+          });
+      });
     });
   });
 

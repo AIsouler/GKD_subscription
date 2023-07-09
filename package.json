@@ -1,9 +1,10 @@
 {
   "name": "@gkd-kit/subscription",
   "type": "module",
-  "version": "0.0.5",
-  "private": false,
+  "version": "0.0.6",
   "main": "./dist/gkd.json",
+  "unpkg": "./dist/gkd.json",
+  "jsdelivr": "./dist/gkd.json",
   "files": [
     "dist"
   ],
@@ -11,17 +12,28 @@
     "build": "tsx ./src/main.ts"
   },
   "dependencies": {
+    "@gkd-kit/selector": "0.0.3",
     "@types/lodash": "^4.14.194",
     "@types/node": "^20",
     "@types/prettier": "2.7.3",
     "dayjs": "^1.11.7",
-    "dotenv": "16.2.0",
+    "dotenv": "^16.2.0",
     "lodash": "^4.17.21",
-    "prettier": "2.8.8",
-    "qiniu": "7.8.0",
+    "prettier": "^2.8.8",
+    "qiniu": "^7.8.0",
     "tsx": "^3.12.6",
     "typescript": "^5.0.4",
     "undici": "^5.22.1"
+  },
+  "author": "lisonge",
+  "license": "MIT",
+  "homepage": "https://github.com/gkd-kit/subscription#readme",
+  "bugs": {
+    "url": "https://github.com/gkd-kit/subscription/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkd-kit/subscription.git"
   },
   "volta": {
     "node": "20.3.0"

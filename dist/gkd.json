@@ -1,8 +1,8 @@
 {
   "name": "GKD官方订阅",
-  "version": 5,
+  "version": 6,
   "author": "lisonge",
-  "supportUrl": "https://github.com/lisonge/gkd-subscription",
+  "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
     {
       "id": "air.tv.douyu.android",

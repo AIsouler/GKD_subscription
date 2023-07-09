@@ -1,4 +1,4 @@
-type IArray<T> = T | T[];
+export type IArray<T> = T | T[];
 
 export type SubscriptionConfig = {
   name?: string;
@@ -20,7 +20,7 @@ export type SubscriptionConfig = {
 type NumberFilter = {};
 type StringFilter = {};
 
-type AutoProps = {
+type CommonProps = {
   activityIds?: IArray<string>;
   excludeActivityIds?: IArray<string>;
   cd?: number;
@@ -42,7 +42,7 @@ type AutoProps = {
 export type AppConfig = {
   id: string;
   groups?: GroupConfig[];
-} & AutoProps;
+} & CommonProps;
 
 export type AppConfigMudule = {
   default: AppConfig;
@@ -53,16 +53,15 @@ type GroupConfig = {
   name: string;
   desc?: string;
   rules?: IArray<RuleConfig | string>;
-} & AutoProps;
+} & CommonProps;
 
 type RuleConfig = {
-  key?: number;
   name?: string;
   desc?: string;
   matches?: IArray<string>;
   excludeMatches?: IArray<string>;
   preKeys?: IArray<number>;
-} & AutoProps;
+} & CommonProps;
 
 export const defineSubsConfig = (config: SubscriptionConfig) => {
   return JSON.stringify(config, undefined, 2);
