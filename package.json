@@ -12,7 +12,7 @@
     "build": "tsx ./src/main.ts"
   },
   "dependencies": {
-    "@gkd-kit/selector": "0.0.3",
+    "@gkd-kit/selector": "0.0.4",
     "@types/lodash": "^4.14.194",
     "@types/node": "^20",
     "@types/prettier": "2.7.3",

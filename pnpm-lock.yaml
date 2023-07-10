@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@gkd-kit/selector':
-    specifier: 0.0.3
-    version: 0.0.3
+    specifier: 0.0.4
+    version: 0.0.4
   '@types/lodash':
     specifier: ^4.14.194
     version: 4.14.194
@@ -263,8 +263,8 @@ packages:
     dev: false
     optional: true
 
-  /@gkd-kit/selector@0.0.3:
-    resolution: {integrity: sha512-CXpUQ38F0CWtsKgbL4hzitGCPvIHeDFPCUvNjjAuyrd/55ODbJxzFe0OQ6LzLoFimklNNZ8MOe2tJHIhxnNZ0A==}
+  /@gkd-kit/selector@0.0.4:
+    resolution: {integrity: sha512-UP8fDzIwnULgh3aaoZKXN6+1WFu6gd5vnIOEMeX0rju1dVliQTulNWOqqSkb9UXbPMH7uyW0iLc9qXR5Cv3Kgw==}
     dev: false
 
   /@tootallnate/once@1.1.2:
