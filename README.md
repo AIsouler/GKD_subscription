@@ -2,24 +2,24 @@
 
 a subscription for gkd
 
-## gitmirror
+## githubusercontent
 
 <details>
   <summary> gkd </summary>
 
 - [gdk](https://raw.githubusercontent.com/gkd-kit/subscription/main/dist/gkd.json)
 
-![image](https://github.com/lisonge/gkd/assets/38517192/cd25d007-f3ef-49bc-a930-6f0a7d0aded5)
+![image](https://github.com/gkd-kit/subscription/assets/38517192/2c108e12-04c5-4183-8347-eea6fc3ae433)
 
 </details>
 
-## 大陆 CDN
+## npmmirror
 
 <details>
   <summary> gkd </summary>
 
 - [gkd](https://registry.npmmirror.com/@gkd-kit/subscription/latest/files)
 
-![image](https://github.com/lisonge/gkd/assets/38517192/a0f95072-881e-4157-9c6b-2fcab03a84c2)
+![image](https://github.com/gkd-kit/subscription/assets/38517192/aedeef12-a590-43fd-8568-afe367181d57)
 
 </details>

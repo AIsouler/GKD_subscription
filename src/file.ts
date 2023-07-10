@@ -29,7 +29,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   }
   newConfig.version++;
 
-  // check duplicated key
+  // check duplicated group key
   newConfig.apps?.forEach((app) => {
     const keys = new Set<number>();
     app.groups?.forEach((g) => {
@@ -46,6 +46,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
     });
   });
 
+  // check slector syntax
   newConfig.apps?.forEach((app) => {
     app.groups?.forEach((g) => {
       if (!g.rules) return;
@@ -64,7 +65,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
               parseSelector(selector);
             } catch (e) {
               console.error({
-                message: `invalid selector`,
+                message: `invalid selector syntax`,
                 appId: app.id,
                 groupKey: g.key,
                 selector,
