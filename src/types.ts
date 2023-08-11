@@ -1,33 +1,25 @@
 export type IArray<T> = T | T[];
 
-export type SubscriptionConfig = {
-  name?: string;
-  version?: number;
-  author?: string;
-  /**
-   * https url
-   * android file path
-   */
-  updateUrl?: string;
-  /**
-   * https url
-   * android schema url, qq group
-   */
-  supportUrl?: string;
-  apps?: AppConfig[];
+type NumberFilter = {
+  minimum?: number;
+  maximum?: number;
+  enum?: number[];
 };
-
-type NumberFilter = {};
-type StringFilter = {};
+type StringFilter = {
+  pattern?: string;
+  maxLength?: number;
+  minLength?: number;
+  enum?: string[];
+};
 
 type CommonProps = {
   activityIds?: IArray<string>;
   excludeActivityIds?: IArray<string>;
   cd?: number;
-  // https://github.com/ajv-validator/ajv
   appFilter?: {
-    versionName: StringFilter;
-    versionCode: NumberFilter;
+    name?: StringFilter;
+    versionName?: StringFilter;
+    versionCode?: NumberFilter;
   };
   deviceFilter?: {
     device?: StringFilter;
@@ -62,6 +54,23 @@ type RuleConfig = {
   excludeMatches?: IArray<string>;
   preKeys?: IArray<number>;
 } & CommonProps;
+
+export type SubscriptionConfig = {
+  name?: string;
+  version?: number;
+  author?: string;
+  /**
+   * https url
+   * android file path
+   */
+  updateUrl?: string;
+  /**
+   * https url
+   * android schema url, qq group
+   */
+  supportUrl?: string;
+  apps?: AppConfig[];
+};
 
 export const defineSubsConfig = (config: SubscriptionConfig) => {
   return JSON.stringify(config, undefined, 2);
