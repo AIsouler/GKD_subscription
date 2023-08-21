@@ -78,6 +78,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   });
 
   const sortKeys: (keyof SubscriptionConfig)[] = [
+    `id`,
     `name`,
     `version`,
     `author`,

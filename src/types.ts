@@ -56,20 +56,26 @@ type RuleConfig = {
 } & CommonProps;
 
 export type SubscriptionConfig = {
-  name?: string;
+  /**
+   * 当前订阅文件的标识, 如果新旧订阅文件id不一致则更新失败\
+   * 范围: `[-Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER]`\
+   * 建议值: `new Date().getTime()`
+   */
+  id: number;
+  name: string;
   version?: number;
-  author?: string;
+  author: string;
   /**
    * https url
    * android file path
    */
   updateUrl?: string;
   /**
-   * https url
+   * https url\
    * android schema url, qq group
    */
   supportUrl?: string;
-  apps?: AppConfig[];
+  apps: AppConfig[];
 };
 
 export const defineSubsConfig = (config: SubscriptionConfig) => {

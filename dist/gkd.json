@@ -1,6 +1,7 @@
 {
-  "name": "GKD官方订阅",
-  "version": 6,
+  "id": 0,
+  "name": "默认订阅",
+  "version": 7,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [

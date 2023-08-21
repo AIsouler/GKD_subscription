@@ -12,7 +12,8 @@ for await (const tsFp of walk(relativePath('./apps'))) {
 apps.sort((a, b) => (a.id > b.id ? 1 : -1));
 
 await writeConfig(`../dist/gkd.json`, {
-  name: `GKD官方订阅`,
+  id: 0,
+  name: `默认订阅`,
   author: `lisonge`,
   supportUrl: `https://github.com/gkd-kit/subscription`,
   apps,
