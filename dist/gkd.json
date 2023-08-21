@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 7,
+  "version": 8,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -127,7 +127,10 @@
           "key": 0,
           "name": "百度地图-开屏广告",
           "activityIds": "com.baidu.baidumaps.MapsActivity",
-          "rules": "@TextView[text^=`跳过`] + TextView[text=`广告`]"
+          "rules": [
+            "@TextView[text^=`跳过`] + TextView[text=`广告`]",
+            "ImageView[isClickable=false] + TextView[text^='跳过'][isClickable=true]"
+          ]
         }
       ]
     },
@@ -270,6 +273,7 @@
               ],
               "matches": "@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]"
             },
+            "Button[text$=\"免广告\"] + Button[text=\"不感兴趣\"]",
             "Button[text$=`去广告`] - Button[text=`不感兴趣`]",
             "[id=`com.coolapk.market:id/close_view`]"
           ]
@@ -677,7 +681,7 @@
         {
           "key": 0,
           "name": "微博-开屏广告",
-          "activityIds": "com.sina.weibo.mobileads.view.a",
+          "activityIds": "com.sina.weibo.mobileads.view.",
           "rules": [
             "@RelativeLayout > TextView[text=`跳过`]"
           ]
@@ -687,6 +691,17 @@
           "name": "微博-评论区顶部-相关推荐",
           "activityIds": "com.sina.weibo.feed.DetailWeiboActivity",
           "rules": "ImageView[id=`com.sina.weibo:id/iv_ad_x`]"
+        },
+        {
+          "key": 2,
+          "name": "微博-关闭不感兴趣广告弹窗",
+          "activityIds": "com.sina.weibo.view.bottomsheet.dialog.",
+          "rules": [
+            [
+              "[text=\"为何会看到此广告\"]",
+              "[text=\"不感兴趣\"]"
+            ]
+          ]
         }
       ]
     },
@@ -831,6 +846,20 @@
           "rules": [
             "ImageView[id!=null][desc='关闭'][isClickable=true]"
           ]
+        },
+        {
+          "key": 2,
+          "name": "QQ-好友动态-广告卡片",
+          "rules": [
+            {
+              "activityIds": "com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog",
+              "matches": "[isClickable=true] > ImageView + TextView[text=\"关闭此条广告\"]"
+            },
+            {
+              "activityIds": "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity",
+              "matches": "View[desc=\"广告\"] + ImageView[isClickable=true]"
+            }
+          ]
         }
       ]
     },
@@ -871,14 +900,20 @@
         {
           "key": 0,
           "name": "QQ音乐-开屏广告",
-          "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
-          "rules": "TextView[text=`跳过`]"
+          "activityIds": [
+            "com.tencent.qqmusic.activity.AppStarterActivity",
+            "com.tencent.qqmusic.business.splash.thirdpartsplash.tme.union.SplashDialog"
+          ],
+          "rules": "TextView[text=`跳过`][clickable=true]"
         },
         {
           "key": 1,
           "name": "QQ音乐-推荐页-广告卡片",
           "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
-          "rules": "@LinearLayout[isClickable=true] > TextView[text='广告'] + ImageView"
+          "rules": [
+            "@LinearLayout[isClickable=true] > TextView[text='广告'] + ImageView",
+            "TextView[text=\"广告 | 关闭\"][isClickable=true]"
+          ]
         }
       ]
     },
@@ -1121,7 +1156,7 @@
           "rules": [
             {
               "activityIds": "com.bilibili.lib.ui.menu",
-              "matches": "TextView[text='广告质量差'][id^='tv.danmaku.bili:id/reason']"
+              "matches": "TextView[text='广告质量差'||text='推广质量差'][id^='tv.danmaku.bili:id/reason']"
             }
           ]
         },

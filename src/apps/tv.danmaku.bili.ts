@@ -40,7 +40,7 @@ export default <AppConfig>{
         {
           activityIds: 'com.bilibili.lib.ui.menu',
           matches:
-            "TextView[text='广告质量差'][id^='tv.danmaku.bili:id/reason']",
+            "TextView[text='广告质量差'||text='推广质量差'][id^='tv.danmaku.bili:id/reason']", // 1691203420529
         },
       ],
     },

@@ -7,7 +7,10 @@ export default <AppConfig>{
       key: 0,
       name: '百度地图-开屏广告',
       activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '@TextView[text^=`跳过`] + TextView[text=`广告`]',
+      rules: [
+        '@TextView[text^=`跳过`] + TextView[text=`广告`]',
+        `ImageView[isClickable=false] + TextView[text^='跳过'][isClickable=true]`, // 1689423368140
+      ],
     },
   ],
 };

@@ -21,6 +21,7 @@ export default <AppConfig>{
           matches:
             '@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]',
         },
+        `Button[text$="免广告"] + Button[text="不感兴趣"]`, // 1692148279610
         'Button[text$=`去广告`] - Button[text=`不感兴趣`]',
         '[id=`com.coolapk.market:id/close_view`]',
       ],
