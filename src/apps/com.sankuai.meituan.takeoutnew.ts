@@ -24,7 +24,7 @@ export default <AppConfig>{
       name: `美团外卖-关闭弹窗美食广告`,
       activityIds: `com.sankuai.waimai.platform.mach.dialog.DynamicDialog`,
       rules: [
-        `@[desc='关闭'][isClickable=true] > ImageView`, // 1686969062508
+        `@[desc='关闭'][clickable=true] > ImageView`, // 1686969062508
       ],
     },
   ],

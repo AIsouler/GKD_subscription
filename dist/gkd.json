@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 8,
+  "version": 9,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -129,7 +129,7 @@
           "activityIds": "com.baidu.baidumaps.MapsActivity",
           "rules": [
             "@TextView[text^=`跳过`] + TextView[text=`广告`]",
-            "ImageView[isClickable=false] + TextView[text^='跳过'][isClickable=true]"
+            "ImageView[clickable=false] + TextView[text^='跳过'][clickable=true]"
           ]
         }
       ]
@@ -325,7 +325,7 @@
           "rules": [
             {
               "activityIds": "com.dragon.read.ad.banner.ui",
-              "matches": "@[isClickable=true] TextView[text=`关闭此条广告`]"
+              "matches": "@[clickable=true] TextView[text=`关闭此条广告`]"
             },
             {
               "activityIds": "com.dragon.read.reader.ReaderActivity",
@@ -659,7 +659,7 @@
           "name": "美团外卖-关闭弹窗美食广告",
           "activityIds": "com.sankuai.waimai.platform.mach.dialog.DynamicDialog",
           "rules": [
-            "@[desc='关闭'][isClickable=true] > ImageView"
+            "@[desc='关闭'][clickable=true] > ImageView"
           ]
         }
       ]
@@ -844,7 +844,7 @@
           "name": "QQ-消息页面-顶部广告",
           "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
           "rules": [
-            "ImageView[id!=null][desc='关闭'][isClickable=true]"
+            "ImageView[id!=null][desc='关闭'][clickable=true]"
           ]
         },
         {
@@ -853,11 +853,11 @@
           "rules": [
             {
               "activityIds": "com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog",
-              "matches": "[isClickable=true] > ImageView + TextView[text=\"关闭此条广告\"]"
+              "matches": "[clickable=true] > ImageView + TextView[text=\"关闭此条广告\"]"
             },
             {
               "activityIds": "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity",
-              "matches": "View[desc=\"广告\"] + ImageView[isClickable=true]"
+              "matches": "View[desc=\"广告\"] + ImageView[clickable=true]"
             }
           ]
         }
@@ -911,8 +911,8 @@
           "name": "QQ音乐-推荐页-广告卡片",
           "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
           "rules": [
-            "@LinearLayout[isClickable=true] > TextView[text='广告'] + ImageView",
-            "TextView[text=\"广告 | 关闭\"][isClickable=true]"
+            "@LinearLayout[clickable=true] > TextView[text='广告'] + ImageView",
+            "TextView[text=\"广告 | 关闭\"][clickable=true]"
           ]
         }
       ]
@@ -1035,7 +1035,7 @@
             "[id='com.zhihu.android:id/content'] >2 TextView[text='不感兴趣'][id='com.zhihu.android:id/title']",
             "TextView[text=`内容质量差`][id=`com.zhihu.android:id/tv_content`]",
             "@ImageView[id=`com.zhihu.android:id/menu`] < FrameLayout - * > TextView[text^=`广告`]",
-            "@ImageView[id=null][isClickable=true] -n TextView[text*=`广告`][index=0]"
+            "@ImageView[id=null][clickable=true] -n TextView[text*=`广告`][index=0]"
           ]
         },
         {
@@ -1044,7 +1044,7 @@
           "activityIds": "com.zhihu.android.ContentActivity",
           "rules": [
             "@ImageView -n TextView[text=`广告`][index=0]",
-            "ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[isClickable=true]"
+            "ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[clickable=true]"
           ]
         },
         {
@@ -1064,7 +1064,7 @@
             "TextView[text$=`的广告`] - Image[id=null]",
             "TextView[text*=`广告`] +2 Image[id=null]",
             "TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]",
-            "TextView[text=''] + Image[text=''] + TextView[text='​'] + Image[id=null][isClickable=true]"
+            "TextView[text=''] + Image[text=''] + TextView[text='​'] + Image[id=null][clickable=true]"
           ]
         },
         {

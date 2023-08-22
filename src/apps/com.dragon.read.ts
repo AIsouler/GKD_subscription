@@ -9,7 +9,7 @@ export default <AppConfig>{
       rules: [
         {
           activityIds: 'com.dragon.read.ad.banner.ui',
-          matches: '@[isClickable=true] TextView[text=`关闭此条广告`]',
+          matches: '@[clickable=true] TextView[text=`关闭此条广告`]',
         },
         {
           activityIds: 'com.dragon.read.reader.ReaderActivity',

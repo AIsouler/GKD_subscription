@@ -9,7 +9,7 @@ export default <AppConfig>{
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: [
         '@TextView[text^=`跳过`] + TextView[text=`广告`]',
-        `ImageView[isClickable=false] + TextView[text^='跳过'][isClickable=true]`, // 1689423368140
+        `ImageView[clickable=false] + TextView[text^='跳过'][clickable=true]`, // 1689423368140
       ],
     },
   ],

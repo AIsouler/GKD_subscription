@@ -14,7 +14,7 @@ export default <AppConfig>{
       name: `QQ-消息页面-顶部广告`,
       activityIds: `com.tencent.mobileqq.activity.SplashActivity`,
       rules: [
-        `ImageView[id!=null][desc='关闭'][isClickable=true]`, // 1687669217838
+        `ImageView[id!=null][desc='关闭'][clickable=true]`, // 1687669217838
       ],
     },
     {
@@ -23,11 +23,11 @@ export default <AppConfig>{
       rules: [
         {
           activityIds: `com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog`,
-          matches: `[isClickable=true] > ImageView + TextView[text="关闭此条广告"]`, // 1689050230463
+          matches: `[clickable=true] > ImageView + TextView[text="关闭此条广告"]`, // 1689050230463
         },
         {
           activityIds: `com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity`,
-          matches: `View[desc="广告"] + ImageView[isClickable=true]`, // 1689050226722
+          matches: `View[desc="广告"] + ImageView[clickable=true]`, // 1689050226722
         },
       ],
     },

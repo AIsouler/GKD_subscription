@@ -53,7 +53,7 @@ export default <AppConfig>{
         `[id='com.zhihu.android:id/content'] >2 TextView[text='不感兴趣'][id='com.zhihu.android:id/title']`, // 1686989681860
         'TextView[text=`内容质量差`][id=`com.zhihu.android:id/tv_content`]',
         '@ImageView[id=`com.zhihu.android:id/menu`] < FrameLayout - * > TextView[text^=`广告`]', // 1687913210243 1686989714786
-        '@ImageView[id=null][isClickable=true] -n TextView[text*=`广告`][index=0]', // 1687418944396 1686924015259
+        '@ImageView[id=null][clickable=true] -n TextView[text*=`广告`][index=0]', // 1687418944396 1686924015259
       ],
     },
     {
@@ -62,7 +62,7 @@ export default <AppConfig>{
       activityIds: 'com.zhihu.android.ContentActivity',
       rules: [
         '@ImageView -n TextView[text=`广告`][index=0]', // 1687787712268 1687787635158
-        `ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[isClickable=true]`, // 1688028432747
+        `ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[clickable=true]`, // 1688028432747
       ],
     },
     {
@@ -82,7 +82,7 @@ export default <AppConfig>{
         'TextView[text$=`的广告`] - Image[id=null]',
         'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
         'TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]', // 1687076663768 1686969672948
-        `TextView[text=''] + Image[text=''] + TextView[text='​'] + Image[id=null][isClickable=true]`, // 1687234636980
+        `TextView[text=''] + Image[text=''] + TextView[text='​'] + Image[id=null][clickable=true]`, // 1687234636980
       ],
     },
     {

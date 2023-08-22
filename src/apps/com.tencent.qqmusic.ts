@@ -17,8 +17,8 @@ export default <AppConfig>{
       name: 'QQ音乐-推荐页-广告卡片',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
-        `@LinearLayout[isClickable=true] > TextView[text='广告'] + ImageView`, // 1688045698846
-        `TextView[text="广告 | 关闭"][isClickable=true]`,
+        `@LinearLayout[clickable=true] > TextView[text='广告'] + ImageView`, // 1688045698846
+        `TextView[text="广告 | 关闭"][clickable=true]`,
       ],
     },
   ],
