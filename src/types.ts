@@ -44,6 +44,7 @@ type GroupConfig = {
   key: number;
   name: string;
   desc?: string;
+  enable?: boolean;
   rules?: IArray<RuleConfig | string>;
 } & CommonProps;
 

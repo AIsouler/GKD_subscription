@@ -4,5 +4,18 @@
   "version": 0,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
-  "apps": []
+  "apps": [
+    {
+      "id": "li.songe.gkd.debug",
+      "groups": [
+        {
+          "key": 0,
+          "name": "测试语法错误",
+          "rules": [
+            "[text^='跳过'syntax_error] + * >2 TextView[text*='跳转']"
+          ]
+        }
+      ]
+    }
+  ]
 }
