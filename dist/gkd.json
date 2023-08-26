@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 10,
+  "version": 11,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -216,6 +216,14 @@
             "TextView[text=`广告`] <n FrameLayout +n RelativeLayout[id=`com.baidu.tieba:id/obfuscated`] ImageView",
             "TextView[text$=`广告`] +n FrameLayout[id=`com.baidu.tieba:id/obfuscated`] ImageView[id=null]",
             "TextView[text$=`广告`] < RelativeLayout <n LinearLayout - RelativeLayout ImageView[id=null][desc=null]"
+          ]
+        },
+        {
+          "key": 6,
+          "name": "首页左侧游戏广告小图标",
+          "activityIds": "com.baidu.tieba.tblauncher.MainTabActivity",
+          "rules": [
+            "ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]"
           ]
         }
       ]

@@ -61,5 +61,13 @@ export default <AppConfig>{
         'TextView[text$=`广告`] < RelativeLayout <n LinearLayout - RelativeLayout ImageView[id=null][desc=null]',
       ],
     },
+    {
+      key: 6,
+      name: `首页左侧游戏广告小图标`,
+      activityIds: `com.baidu.tieba.tblauncher.MainTabActivity`,
+      rules: [
+        `ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]`,
+      ],
+    },
   ],
 };
