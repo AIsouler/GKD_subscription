@@ -8,8 +8,7 @@ export default <AppConfig>{
       name: '美团外卖-开屏广告',
       activityIds:
         'com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity',
-      rules:
-        '[id=`com.sankuai.meituan.takeoutnew:id/tv_remain_time`] + TextView[text*=`跳过`]',
+      rules: 'TextView[text*=`跳过`]',
     },
     {
       key: 1,
