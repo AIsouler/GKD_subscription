@@ -9,5 +9,11 @@ export default <AppConfig>{
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
       rules: 'TextView[text^=`跳过`][id=`com.netease.cloudmusic:id/skipBtn`]',
     },
+    {
+      key: 1,
+      name: `网易云音乐-广告卡片`,
+      activityIds: `com.netease.cloudmusic.activity.MainActivity`,
+      rules: [`[id="com.netease.cloudmusic:id/adTagClose"]`],
+    },
   ],
 };
