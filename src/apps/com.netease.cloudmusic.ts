@@ -12,8 +12,16 @@ export default <AppConfig>{
     {
       key: 1,
       name: `网易云音乐-广告卡片`,
-      activityIds: `com.netease.cloudmusic.activity.MainActivity`,
-      rules: [`[id="com.netease.cloudmusic:id/adTagClose"]`],
+      rules: [
+        {
+          activityIds: `com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet`,
+          matches: `[text="直接关闭"]`,
+        },
+        {
+          activityIds: `com.netease.cloudmusic.activity.MainActivity`,
+          matches: `[id="com.netease.cloudmusic:id/adTagClose"]`,
+        },
+      ],
     },
   ],
 };
