@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 25,
+  "version": 26,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -1219,6 +1219,19 @@
               "matches": "@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]"
             },
             "Image < @View + View >2 [text*=`广告`]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ctrip.android.view",
+      "groups": [
+        {
+          "key": 0,
+          "name": "携程旅行-开屏广告",
+          "activityIds": "ctrip.android.publicproduct.home.view.CtripHomeActivity",
+          "rules": [
+            "LinearLayout[childCount=2] > TextView + TextView[text=\"跳过\"]"
           ]
         }
       ]
