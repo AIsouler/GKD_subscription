@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 22,
+  "version": 23,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -458,6 +458,11 @@
     {
       "id": "com.hunantv.imgo.activity",
       "groups": [
+        {
+          "key": -1,
+          "name": "芒果TV",
+          "rules": "[id=\"com.hunantv.imgo.activity:id/layout_boot_skip\"]"
+        },
         {
           "key": 0,
           "name": "芒果TV-关闭青少年模式提示",
