@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 14,
+  "version": 15,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -279,7 +279,7 @@
                 "com.coolapk.market.view.main.MainActivity",
                 "com.coolapk.market.view.base.SimpleAlphaActivity"
               ],
-              "matches": "@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]"
+              "matches": "@LinearLayout > TextView[id!=null][text=`不感兴趣`]"
             },
             "Button[text$=\"免广告\"] + Button[text=\"不感兴趣\"]",
             "Button[text$=`去广告`] - Button[text=`不感兴趣`]",
