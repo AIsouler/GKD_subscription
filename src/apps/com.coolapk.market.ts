@@ -6,8 +6,12 @@ export default <AppConfig>{
     {
       key: -1,
       name: `酷安-开屏广告`,
-      activityIds: `com.coolapk.market.view.splash.SplashActivity`,
+      activityIds: [
+        `com.coolapk.market.view.splash.SplashActivity`,
+        `com.coolapk.market.view.main.MainActivity`,
+      ],
       rules: [`[id="com.byted.pangle.m:id/tt_splash_skip_btn"]`],
+      // https://gkd-kit.gitee.io/import/38517192/4ba30986-55d4-4a94-b7e2-6cf7d9c6d66d
       // https://gkd-kit.gitee.io/import/38517192/47919419-30c7-41ee-b31e-01afaa98f108
     },
     {

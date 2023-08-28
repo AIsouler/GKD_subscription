@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 28,
+  "version": 29,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -304,7 +304,10 @@
         {
           "key": -1,
           "name": "酷安-开屏广告",
-          "activityIds": "com.coolapk.market.view.splash.SplashActivity",
+          "activityIds": [
+            "com.coolapk.market.view.splash.SplashActivity",
+            "com.coolapk.market.view.main.MainActivity"
+          ],
           "rules": [
             "[id=\"com.byted.pangle.m:id/tt_splash_skip_btn\"]"
           ]
