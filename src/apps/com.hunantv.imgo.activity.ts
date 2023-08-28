@@ -18,5 +18,12 @@ export default <AppConfig>{
       ],
       rules: '[id=`com.hunantv.imgo.activity:id/btnIknow`]',
     },
+    {
+      key: 1,
+      name: `芒果TV-首页推荐流-卡片广告`,
+      activityIds: `com.hunantv.imgo.activity.MainActivity`,
+      // https://gkd-kit.gitee.io/import/38517192/b74150b5-8e9f-4cbb-86a7-722fc739a1b8
+      rules: `@[id="com.hunantv.imgo.activity:id/layout_logo"] > [id="com.hunantv.imgo.activity:id/tv_ad_logo"]`,
+    },
   ],
 };
