@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 24,
+  "version": 25,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -476,7 +476,10 @@
           "key": 1,
           "name": "芒果TV-首页推荐流-卡片广告",
           "activityIds": "com.hunantv.imgo.activity.MainActivity",
-          "rules": "@[id=\"com.hunantv.imgo.activity:id/layout_logo\"] > [id=\"com.hunantv.imgo.activity:id/tv_ad_logo\"]"
+          "rules": [
+            "[id=\"com.hunantv.imgo.activity:id/close_ad\"]",
+            "@[id=\"com.hunantv.imgo.activity:id/layout_logo\"] > [id=\"com.hunantv.imgo.activity:id/tv_ad_logo\"]"
+          ]
         }
       ]
     },
