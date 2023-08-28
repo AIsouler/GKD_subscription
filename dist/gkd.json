@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 15,
+  "version": 16,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -264,6 +264,14 @@
     {
       "id": "com.coolapk.market",
       "groups": [
+        {
+          "key": -1,
+          "name": "酷安-开屏广告",
+          "activityIds": "com.coolapk.market.view.splash.SplashActivity",
+          "rules": [
+            "[id=\"com.byted.pangle.m:id/tt_splash_skip_btn\"]"
+          ]
+        },
         {
           "key": 0,
           "name": "酷安-关闭卡片广告",

@@ -4,6 +4,13 @@ export default <AppConfig>{
   id: 'com.coolapk.market',
   groups: [
     {
+      key: -1,
+      name: `酷安-开屏广告`,
+      activityIds: `com.coolapk.market.view.splash.SplashActivity`,
+      rules: [`[id="com.byted.pangle.m:id/tt_splash_skip_btn"]`],
+      // https://gkd-kit.gitee.io/import/38517192/47919419-30c7-41ee-b31e-01afaa98f108
+    },
+    {
       key: 0,
       name: '酷安-关闭卡片广告',
       desc: '点击卡片右上角按钮,然后点击关闭弹窗',
