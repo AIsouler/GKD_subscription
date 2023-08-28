@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 18,
+  "version": 19,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -96,6 +96,19 @@
           "name": "阿里巴巴-开屏广告",
           "activityIds": "com.alibaba.wireless.launch.home.V5HomeActivity",
           "rules": "[id=`com.alibaba.wireless:id/v5_splash_over`]"
+        }
+      ]
+    },
+    {
+      "id": "com.android.bankabc",
+      "groups": [
+        {
+          "key": 0,
+          "name": "中国农业银行-开屏广告",
+          "activityIds": "com.alipay.mobile.quinox.LauncherActivity",
+          "rules": [
+            "ImageView[id=\"com.android.bankabc:id/close\"]"
+          ]
         }
       ]
     },
