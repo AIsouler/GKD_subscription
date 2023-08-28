@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 17,
+  "version": 18,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -900,7 +900,10 @@
           "key": 0,
           "name": "QQ浏览器-开屏广告",
           "activityIds": "com.tencent.mtt.MainActivity",
-          "rules": "@View[id=null] + ImageView + FrameLayout TextView[text=`向上滑动或点击查看`]"
+          "rules": [
+            "@View[id=null] + ImageView + FrameLayout TextView[text=`向上滑动或点击查看`]",
+            "@LinearLayout[clickable=true] > TextView[text=\"跳过\"]"
+          ]
         }
       ]
     },
