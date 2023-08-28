@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 21,
+  "version": 22,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -38,6 +38,17 @@
           "name": "招商银行-开屏广告",
           "activityIds": "cmb.pb.app.mainframe.container.PBMainActivity",
           "rules": "[id=`cmb.pb:id/ll_launch_ad_skip_hot_area`]"
+        }
+      ]
+    },
+    {
+      "id": "cn.damai",
+      "groups": [
+        {
+          "key": 0,
+          "name": "大麦-开屏广告",
+          "activityIds": "cn.damai.launcher.splash.SplashMainActivity",
+          "rules": "[id=\"cn.damai:id/homepage_advert_pb\"]"
         }
       ]
     },
@@ -1006,6 +1017,17 @@
           "name": "小米商城-开屏广告",
           "activityIds": "com.xiaomi.shop.activity.MainTabActivity",
           "rules": "[id=\"com.xiaomi.shop:id/skip\"]"
+        }
+      ]
+    },
+    {
+      "id": "com.ximalaya.ting.android",
+      "groups": [
+        {
+          "key": 0,
+          "name": "喜马拉雅-右侧浮动广告",
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "rules": "[id=\"com.ximalaya.ting.android:id/main_ad_broadside_close_real\"]"
         }
       ]
     },
