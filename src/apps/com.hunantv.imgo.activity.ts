@@ -5,9 +5,14 @@ export default <AppConfig>{
   groups: [
     {
       key: -1,
-      name: `芒果TV`,
-      // https://gkd-kit.gitee.io/import/38517192/0d54f18a-eb7a-498d-a458-32980190042b
-      rules: `[id="com.hunantv.imgo.activity:id/layout_boot_skip"]`,
+      name: `芒果TV-开屏广告`,
+      activityIds: `com.hunantv.imgo.activity.MainActivity`,
+      rules: [
+        // https://gkd-kit.gitee.io/import/38517192/0d54f18a-eb7a-498d-a458-32980190042b
+        `[id="com.hunantv.imgo.activity:id/layout_boot_skip"]`,
+        // https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0
+        `TextView[text!=null] - [text^="跳过"]`,
+      ],
     },
     {
       key: 0,
