@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 20,
+  "version": 21,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -598,7 +598,7 @@
           "key": 0,
           "name": "美图秀秀-开屏广告",
           "activityIds": "com.meitu.business.ads.core.activity.AdActivity",
-          "rules": "[id=`com.mt.mtxx.mtxx:id/0*`][text=`跳过广告`]"
+          "rules": "[text=`跳过广告`]"
         }
       ]
     },
