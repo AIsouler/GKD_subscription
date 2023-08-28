@@ -4,6 +4,15 @@ export default <AppConfig>{
   id: 'com.snda.wifilocating',
   groups: [
     {
+      key: -1,
+      name: `WiFi万能钥匙-开屏广告`,
+      activityIds: `com.lantern.launcher.ui.MainActivity`,
+      rules: [
+        // https://gkd-kit.gitee.io/import/38517192/4d6fdd1e-28ec-4b61-86e2-641b7b5b8899
+        `TextView[text="广告"] -3 RelativeLayout > TextView[text*="跳过"]`,
+      ],
+    },
+    {
       key: 0,
       name: 'WiFi万能钥匙-内部广告',
       activityIds: 'com.lantern.launcher.ui.MainActivityICS',
