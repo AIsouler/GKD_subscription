@@ -1,7 +1,7 @@
 {
   "name": "@gkd-kit/subscription",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "main": "./dist/gkd.json",
   "unpkg": "./dist/gkd.json",
   "jsdelivr": "./dist/gkd.json",
@@ -12,7 +12,7 @@
     "build": "tsx ./src/main.ts"
   },
   "devDependencies": {
-    "@gkd-kit/selector": "0.0.10",
+    "@gkd-kit/selector": "0.0.11",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.4.2",
     "@types/prettier": "2.7.3",
@@ -38,5 +38,8 @@
   },
   "volta": {
     "node": "20.5.0"
+  },
+  "dependencies": {
+    "picocolors": "1.0.0"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 30,
+  "version": 31,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -16,6 +16,7 @@
             "miuix.appcompat.app.m"
           ],
           "rules": [
+            "@TextView[text^='跳过'] + LinearLayout TextView[text*=\"跳转\"]",
             "[text^='跳过'] + * >2 TextView[text*='跳转']"
           ]
         },
@@ -26,19 +27,6 @@
           "activityIds": "com.douyu.module.home.pages.main.MainActivity",
           "rules": [
             "[text='开启青少年模式'] + [text='我知道了']"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "air.tv.douyu.android",
-      "groups": [
-        {
-          "key": 0,
-          "name": "快影-开屏广告",
-          "activityIds": "com.kwai.videoeditor.activity.splash.InnerVideoSplashActivity",
-          "rules": [
-            "Button[text=\"跳过\"]"
           ]
         }
       ]
@@ -588,6 +576,19 @@
           "name": "酷狗音乐-开屏广告",
           "activityIds": "com.kugou.android.app.splash.SplashActivity",
           "rules": "[desc=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.kwai.videoeditor",
+      "groups": [
+        {
+          "key": 0,
+          "name": "快影-开屏广告",
+          "activityIds": "com.kwai.videoeditor.activity.splash.InnerVideoSplashActivity",
+          "rules": [
+            "Button[text=\"跳过\"]"
+          ]
         }
       ]
     },

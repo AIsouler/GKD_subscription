@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: false
   excludeLinksFromLockfile: false
 
+dependencies:
+  picocolors:
+    specifier: 1.0.0
+    version: 1.0.0
+
 devDependencies:
   '@gkd-kit/selector':
-    specifier: 0.0.10
-    version: 0.0.10
+    specifier: 0.0.11
+    version: 0.0.11
   '@types/lodash':
     specifier: ^4.14.195
     version: 4.14.195
@@ -266,8 +271,8 @@ packages:
     dev: true
     optional: true
 
-  /@gkd-kit/selector@0.0.10:
-    resolution: {integrity: sha512-k9kE8ZrqJ6CoNSXqjlxZ0EbdwSsNXwkQJ1TwZ33Yxh1ujITyOGJk0D+gwaNzOCj6qRfAomdTXPXXk44YVVWqCA==}
+  /@gkd-kit/selector@0.0.11:
+    resolution: {integrity: sha512-WqerYbOBOnVQkDgiqhjSFWfZZdJwPNiM1faFFVHrUCL0cwtpi0QZa0MEknd66i82kTs2bBwqmD8y21syNZaNDg==}
     dev: true
 
   /@tootallnate/once@1.1.2:
@@ -861,6 +866,10 @@ packages:
     dependencies:
       through: 2.3.8
     dev: true
+
+  /picocolors@1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
 
   /prelude-ls@1.1.2:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}

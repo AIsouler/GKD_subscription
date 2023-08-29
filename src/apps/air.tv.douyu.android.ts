@@ -11,6 +11,8 @@ export default <AppConfig>{
         `miuix.appcompat.app.m`,
       ],
       rules: [
+        // https://gkd-kit.gitee.io/import/38517192/50c858ee-d331-4d5a-b5db-5eb17323c5ff
+        `@TextView[text^='跳过'] + LinearLayout TextView[text*="跳转"]`,
         `[text^='跳过'] + * >2 TextView[text*='跳转']`, // 1686970245243, 1686970188866
       ],
     },

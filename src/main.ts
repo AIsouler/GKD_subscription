@@ -1,11 +1,23 @@
 import { relativePath, walk, writeConfig } from './file';
 import { AppConfig, AppConfigMudule } from './types';
 import url from 'node:url';
+import path from 'node:path';
+import picocolors from 'picocolors';
 
 const apps: AppConfig[] = [];
 for await (const tsFp of walk(relativePath('./apps'))) {
   const mod: AppConfigMudule = await import(url.pathToFileURL(tsFp).href);
-  apps.push(mod.default);
+  const appConfig = mod.default;
+  if (path.basename(tsFp, `.ts`) != appConfig.id) {
+    throw new Error(
+      `${picocolors.blue(
+        tsFp,
+      )} file basename is not equal to its app id ${picocolors.blue(
+        appConfig.id,
+      )} `,
+    );
+  }
+  apps.push(appConfig);
 }
 
 // a,b,c,d
