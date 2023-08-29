@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 32,
+  "version": 33,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -13,7 +13,7 @@
           "name": "斗鱼-开屏广告",
           "activityIds": [
             "com.douyu.module.home.pages.main.MainActivity",
-            "miuix.appcompat.app.m"
+            "com.douyu.module.ad.launch.HotStartSplashActivity"
           ],
           "rules": [
             "@TextView[text^='跳过'] + LinearLayout TextView[text*=\"跳转\"]",
@@ -24,7 +24,10 @@
           "key": 1,
           "name": "斗鱼-青少年模式",
           "desc": "关闭青少年模式提醒弹窗",
-          "activityIds": "com.douyu.module.young.view.YoungModeGuideDialog",
+          "activityIds": [
+            "com.douyu.module.young.view.YoungModeGuideDialog",
+            "com.douyu.module.home.pages.main.MainActivity"
+          ],
           "rules": [
             "[text='开启青少年模式'] + [text='我知道了']"
           ]
