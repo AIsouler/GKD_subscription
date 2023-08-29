@@ -20,8 +20,9 @@ export default <AppConfig>{
       key: 1,
       name: `斗鱼-青少年模式`,
       desc: `关闭青少年模式提醒弹窗`,
-      activityIds: `com.douyu.module.home.pages.main.MainActivity`,
+      activityIds: `com.douyu.module.young.view.YoungModeGuideDialog`,
       rules: [
+        // https://gkd-kit.gitee.io/import/38517192/1c081a65-688a-406b-b67b-9bfb9aba0fad
         `[text='开启青少年模式'] + [text='我知道了']`, // 1686970236642
       ],
     },

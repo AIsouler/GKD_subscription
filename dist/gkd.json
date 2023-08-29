@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 31,
+  "version": 32,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -24,7 +24,7 @@
           "key": 1,
           "name": "斗鱼-青少年模式",
           "desc": "关闭青少年模式提醒弹窗",
-          "activityIds": "com.douyu.module.home.pages.main.MainActivity",
+          "activityIds": "com.douyu.module.young.view.YoungModeGuideDialog",
           "rules": [
             "[text='开启青少年模式'] + [text='我知道了']"
           ]

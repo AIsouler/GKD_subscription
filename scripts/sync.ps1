@@ -1,4 +1,9 @@
-pnpm build
+try {
+    pnpm build
+} catch {
+    Write-Host "An error occurred: $_"
+    return
+}
 git add '.'
 git commit -m 'chore: sync'
 git push
