@@ -4,6 +4,12 @@ export default <AppConfig>{
   id: 'com.UCMobile',
   groups: [
     {
+      key: -1,
+      name: `UC浏览器-开屏广告`,
+      activityIds: `com.uc.browser.InnerUCMobile`,
+      // rules: ``,
+    },
+    {
       key: 0,
       name: 'UC浏览器-推荐页广告',
       activityIds: 'com.uc.browser.InnerUCMobile',
