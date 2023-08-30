@@ -15,16 +15,13 @@
     "@gkd-kit/selector": "0.0.11",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.4.2",
-    "@types/prettier": "2.7.3",
-    "ajv": "8.12.0",
     "dayjs": "^1.11.9",
-    "dotenv": "^16.3.1",
     "lodash": "^4.17.21",
     "prettier": "^3.0.1",
-    "qiniu": "^7.9.0",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
-    "undici": "^5.23.0"
+    "undici": "^5.23.0",
+    "picocolors": "^1.0.0"
   },
   "author": "lisonge",
   "license": "MIT",
@@ -38,8 +35,5 @@
   },
   "volta": {
     "node": "20.5.0"
-  },
-  "dependencies": {
-    "picocolors": "1.0.0"
   }
 }
