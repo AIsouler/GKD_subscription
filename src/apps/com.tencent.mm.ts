@@ -8,6 +8,7 @@ export default <AppConfig>{
       name: '微信朋友圈广告',
       desc: '朋友圈信息流广告,点击关闭按钮,确认关闭',
       activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
+      // video https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79
       rules: [
         'TextView[text*=`广告`] + TextView[text=`关闭该广告`]',
         'ImageView - TextView[text=`广告`][id!=null][index=0]',
