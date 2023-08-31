@@ -15,7 +15,7 @@ export default <AppConfig>{
       name: `NGA玩家社区-首页-推荐-广告卡片`,
       activityIds: `com.donews.nga.activitys.MainActivity`,
       // https://gkd-kit.gitee.io/import/12482727
-      rules: [`id="gov.pianzong.androidnga:id/iv_close_ad"`],
+      rules: [`[id="gov.pianzong.androidnga:id/iv_close_ad"]`],
     },
   ],
 };

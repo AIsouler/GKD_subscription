@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 35,
+  "version": 36,
   "author": "lisonge",
   "supportUrl": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -607,7 +607,10 @@
         {
           "key": 0,
           "name": "米游社-开屏广告",
-          "activityIds": "com.mihoyo.hyperion.ui.SplashActivity",
+          "activityIds": [
+            "com.mihoyo.hyperion.ui.SplashActivity",
+            "com.mihoyo.hyperion.splash.SplashActivity"
+          ],
           "rules": "[id=`com.mihoyo.hyperion:id/mSplashBtJump`]"
         },
         {
@@ -1283,6 +1286,14 @@
           "activityIds": "gov.pianzong.androidnga.activity.LoadingActivity",
           "rules": [
             "[id=\"gov.pianzong.androidnga:id/iv_tg_ad\"]"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "NGA玩家社区-首页-推荐-广告卡片",
+          "activityIds": "com.donews.nga.activitys.MainActivity",
+          "rules": [
+            "[id=\"gov.pianzong.androidnga:id/iv_close_ad\"]"
           ]
         }
       ]
