@@ -6,7 +6,11 @@ export default <AppConfig>{
     {
       key: 0,
       name: '米游社-开屏广告',
-      activityIds: 'com.mihoyo.hyperion.ui.SplashActivity',
+      activityIds: [
+        'com.mihoyo.hyperion.ui.SplashActivity',
+        `com.mihoyo.hyperion.splash.SplashActivity`,
+      ],
+      // https://gkd-kit.gitee.io/import/12482738
       rules: '[id=`com.mihoyo.hyperion:id/mSplashBtJump`]',
     },
     {
