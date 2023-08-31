@@ -27,6 +27,6 @@ await writeConfig(`../dist/gkd.json`, {
   id: 0,
   name: `默认订阅`,
   author: `lisonge`,
-  supportUrl: `https://github.com/gkd-kit/subscription`,
+  supportUri: `https://github.com/gkd-kit/subscription`,
   apps,
 });

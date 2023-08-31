@@ -75,7 +75,7 @@ export type SubscriptionConfig = {
    * https url\
    * android schema url, qq group
    */
-  supportUrl?: string;
+  supportUri?: string;
   apps: AppConfig[];
 };
 

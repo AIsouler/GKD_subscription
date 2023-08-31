@@ -82,7 +82,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
     `name`,
     `version`,
     `author`,
-    'supportUrl',
+    'supportUri',
     `updateUrl`,
     `apps`,
   ];
