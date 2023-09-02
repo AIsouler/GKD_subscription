@@ -11,10 +11,10 @@ export default <AppConfig>{
         `com.coolapk.market.view.splash.SplashActivity`,
         `com.coolapk.market.view.main.MainActivity`,
       ],
-      rules: [`[id="com.byted.pangle.m:id/tt_splash_skip_btn"]`],
+      rules: `[id$=":id/tt_splash_skip_btn"]`,
       snapshotUrls: [
         `https://gkd-kit.gitee.io/import/38517192/4ba30986-55d4-4a94-b7e2-6cf7d9c6d66d`,
-        `https://gkd-kit.gitee.io/import/38517192/47919419-30c7-41ee-b31e-01afaa98f108`,
+        `https://gkd-kit.gitee.io/import/12503773`,
       ],
     },
     {
@@ -39,6 +39,13 @@ export default <AppConfig>{
         'Button[text$=`去广告`] - Button[text=`不感兴趣`]',
         '[id=`com.coolapk.market:id/close_view`]',
       ],
+    },
+    {
+      key: 1,
+      name: `关闭升级弹窗`,
+      activityIds: `com.coolapk.market.view.main.MainActivity`,
+      snapshotUrls: `https://gkd-kit.gitee.io/import/12503762`,
+      rules: '[text=`立即更新`] - [text=`取消`]',
     },
   ],
 };
