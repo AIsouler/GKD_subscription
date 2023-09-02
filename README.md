@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 78 个 APP, 共有 130 规则组
+当前订阅文件已适配 79 个 APP, 共有 132 规则组
 
 ## 适配 APP 列表
 
@@ -81,6 +81,14 @@
 - 首页左侧游戏广告小图标
 - 升级弹窗
   - [快照-0](https://gkd-kit.gitee.io/import/12496934)
+
+### [com.baidutieba.davy](/src/apps/com.baidutieba.davy.ts) - 贴吧一键签到大师
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12504282)
+- 内部弹窗广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12504289)
+  - [快照-1](https://gkd-kit.gitee.io/import/12504291)
 
 ### [com.bjsk.intelligent](/src/apps/com.bjsk.intelligent.ts) - WiFi智能钥匙
 
