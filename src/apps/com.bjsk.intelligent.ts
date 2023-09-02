@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.bjsk.intelligent',
+  name: `WiFi智能钥匙`,
   groups: [
     {
       key: 0,
-      name: 'WiFi智能钥匙-开屏广告',
+      name: '开屏广告',
       activityIds: 'com.cssq.wifi.ui.splash.SplashActivity',
       rules: [
         '[text^=`跳过`]',
@@ -14,7 +15,7 @@ export default <AppConfig>{
     },
     {
       key: 1,
-      name: 'WiFi智能钥匙-内部启动广告',
+      name: '内部启动广告',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: [

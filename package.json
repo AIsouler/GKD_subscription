@@ -1,10 +1,14 @@
 {
   "name": "@gkd-kit/subscription",
   "type": "module",
-  "version": "0.0.37",
+  "version": "0.0.40",
   "main": "./dist/gkd.json",
   "unpkg": "./dist/gkd.json",
   "jsdelivr": "./dist/gkd.json",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "./dist"
   ],

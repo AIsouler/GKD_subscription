@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.tencent.qqlive',
+  name: `腾讯视频`,
   groups: [
     {
       key: 0,
-      name: '腾讯视频-开屏广告',
+      name: '开屏广告',
       activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
       rules: [
         'TextView[text*=`互动广告`] < LinearLayout < FrameLayout + FrameLayout > TextView[text=`跳过`]',
@@ -14,7 +15,7 @@ export default <AppConfig>{
     },
     {
       key: 1,
-      name: '腾讯视频-青少年模式弹窗',
+      name: '关闭青少年弹窗',
       activityIds:
         'com.tencent.qqlive.ona.update.trunk.client.TrunkUpdateActivity',
       rules:

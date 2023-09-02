@@ -1,45 +1,60 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 37,
+  "version": 40,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
     {
       "id": "air.tv.douyu.android",
+      "name": "斗鱼",
       "groups": [
         {
           "key": 0,
-          "name": "斗鱼-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.douyu.module.home.pages.main.MainActivity",
             "com.douyu.module.ad.launch.HotStartSplashActivity"
           ],
           "rules": [
-            "@TextView[text^='跳过'] + LinearLayout TextView[text*=\"跳转\"]",
+            {
+              "matches": "@TextView[text^='跳过'] + LinearLayout TextView[text*=\"跳转\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/50c858ee-d331-4d5a-b5db-5eb17323c5ff"
+            },
             "[text^='跳过'] + * >2 TextView[text*='跳转']"
           ]
         },
         {
           "key": 1,
-          "name": "斗鱼-青少年模式",
+          "name": "青少年模式",
           "desc": "关闭青少年模式提醒弹窗",
           "activityIds": [
             "com.douyu.module.young.view.YoungModeGuideDialog",
             "com.douyu.module.home.pages.main.MainActivity"
           ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/1c081a65-688a-406b-b67b-9bfb9aba0fad",
           "rules": [
             "[text='开启青少年模式'] + [text='我知道了']"
           ]
+        },
+        {
+          "key": 2,
+          "name": "新版本弹窗",
+          "activityIds": [
+            "com.douyu.module.update.view.UpdateDialog",
+            "com.douyu.module.home.pages.main.MainActivity"
+          ],
+          "rules": "[text=\"立即升级\"] - [text=\"忽略\"][clickable=true]"
         }
       ]
     },
     {
       "id": "cmb.pb",
+      "name": "招商银行",
       "groups": [
         {
           "key": 0,
-          "name": "招商银行-开屏广告",
+          "name": "开屏广告",
           "activityIds": "cmb.pb.app.mainframe.container.PBMainActivity",
           "rules": "[id=`cmb.pb:id/ll_launch_ad_skip_hot_area`]"
         }
@@ -47,21 +62,24 @@
     },
     {
       "id": "cn.damai",
+      "name": "大麦",
       "groups": [
         {
           "key": 0,
-          "name": "大麦-开屏广告",
+          "name": "开屏广告",
           "activityIds": "cn.damai.launcher.splash.SplashMainActivity",
-          "rules": "[id=\"cn.damai:id/homepage_advert_pb\"]"
+          "rules": "[id=\"cn.damai:id/homepage_advert_pb\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/38859663-6f0c-48b1-9392-20ae937a8c9e"
         }
       ]
     },
     {
       "id": "cn.wps.moffice_eng",
+      "name": "WPS",
       "groups": [
         {
           "key": 0,
-          "name": "WPS-开屏广告",
+          "name": "开屏广告",
           "activityIds": "cn.wps.moffice.documentmanager.PreStartActivity",
           "rules": "[id=`cn.wps.moffice_eng:id/splash_skip`]"
         }
@@ -69,10 +87,11 @@
     },
     {
       "id": "com.MobileTicket",
+      "name": "铁路12306",
       "groups": [
         {
           "key": 0,
-          "name": "铁路12306-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.MobileTicket.ui.dialog.SplashAdDialog",
           "rules": "[id=`com.MobileTicket:id/tv_skip`]"
         }
@@ -80,15 +99,16 @@
     },
     {
       "id": "com.UCMobile",
+      "name": "UC浏览器",
       "groups": [
         {
           "key": -1,
-          "name": "UC浏览器-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.uc.browser.InnerUCMobile"
         },
         {
           "key": 0,
-          "name": "UC浏览器-推荐页广告",
+          "name": "推荐页广告",
           "activityIds": "com.uc.browser.InnerUCMobile",
           "rules": [
             "TextView[text=`屏蔽此条广告`]",
@@ -99,10 +119,11 @@
     },
     {
       "id": "com.achievo.vipshop",
+      "name": "唯品会",
       "groups": [
         {
           "key": 0,
-          "name": "唯品会-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.achievo.vipshop.activity.LodingActivity",
           "rules": "[id=`com.achievo.vipshop:id/adv_countdown`]"
         }
@@ -110,10 +131,11 @@
     },
     {
       "id": "com.alibaba.wireless",
+      "name": "阿里巴巴",
       "groups": [
         {
           "key": 0,
-          "name": "阿里巴巴-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.alibaba.wireless.launch.home.V5HomeActivity",
           "rules": "[id=`com.alibaba.wireless:id/v5_splash_over`]"
         }
@@ -121,33 +143,37 @@
     },
     {
       "id": "com.android.bankabc",
+      "name": "中国农业银行",
       "groups": [
         {
           "key": 0,
-          "name": "中国农业银行-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.alipay.mobile.quinox.LauncherActivity",
           "rules": [
             "ImageView[id=\"com.android.bankabc:id/close\"]"
-          ]
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/3653218a-e0e0-4a60-8308-dea5fd4179b3"
         }
       ]
     },
     {
       "id": "com.android.thememanager",
+      "name": "miui主题壁纸",
       "groups": [
         {
           "key": 1,
-          "name": "miui主题壁纸-推荐下广告",
+          "name": "推荐下广告",
           "rules": "[id=`com.android.thememanager:id/ad_close_btn`]"
         }
       ]
     },
     {
       "id": "com.anjuke.android.app",
+      "name": "安居客",
       "groups": [
         {
           "key": 0,
-          "name": "安居客-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.anjuke.android.app.mainmodule.WelcomeActivity",
           "rules": "[id=`com.anjuke.android.app:id/skip_btn`]"
         }
@@ -155,10 +181,11 @@
     },
     {
       "id": "com.baidu.BaiduMap",
+      "name": "百度地图",
       "groups": [
         {
           "key": 0,
-          "name": "百度地图-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.baidu.baidumaps.MapsActivity",
           "rules": [
             "@TextView[text^=`跳过`] + TextView[text=`广告`]",
@@ -169,10 +196,11 @@
     },
     {
       "id": "com.baidu.homework",
+      "name": "作业帮",
       "groups": [
         {
           "key": 0,
-          "name": "作业帮-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.baidu.homework.activity.init.InitActivity",
           "rules": "[id=`com.baidu.homework:id/adx_splash_skip_text`]"
         }
@@ -180,13 +208,17 @@
     },
     {
       "id": "com.baidu.netdisk",
+      "name": "百度网盘",
       "groups": [
         {
           "key": 0,
-          "name": "百度网盘-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.baidu.netdisk.ui.Navigate",
           "rules": [
-            "TextView[text=\"跳过\"][clickable=true]",
+            {
+              "matches": "TextView[text=\"跳过\"][clickable=true]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/edc1d0a6-ebdd-48b0-9e11-f0b2c277c40a"
+            },
             "@TextView[text^=`跳过`] + TextView[text=`广告`]",
             "[id='com.byted.pangle:id/tt_splash_skip_btn']"
           ]
@@ -195,10 +227,11 @@
     },
     {
       "id": "com.baidu.tieba",
+      "name": "百度贴吧",
       "groups": [
         {
           "key": 0,
-          "name": "百度贴吧-开屏广告",
+          "name": "开屏广告",
           "desc": "数字倒计时广告,圆形倒计时广告",
           "activityIds": [
             "com.baidu.tieba.tblauncher.MainTabActivity",
@@ -259,15 +292,23 @@
           "rules": [
             "ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]"
           ]
+        },
+        {
+          "key": 7,
+          "name": "升级弹窗",
+          "activityIds": "com.baidu.tieba.UpdateDialog",
+          "rules": "[text=\"稍后再说\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12496934"
         }
       ]
     },
     {
       "id": "com.bjsk.intelligent",
+      "name": "WiFi智能钥匙",
       "groups": [
         {
           "key": 0,
-          "name": "WiFi智能钥匙-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.cssq.wifi.ui.splash.SplashActivity",
           "rules": [
             "[text^=`跳过`]",
@@ -276,7 +317,7 @@
         },
         {
           "key": 1,
-          "name": "WiFi智能钥匙-内部启动广告",
+          "name": "内部启动广告",
           "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
           "rules": [
             "Image < @View +4 TextView[text=`反馈`] + View TextView[text=`广告`]"
@@ -286,32 +327,52 @@
     },
     {
       "id": "com.cmcc.cmvideo",
+      "name": "咪咕视频",
       "groups": [
         {
           "key": 0,
-          "name": "咪咕视频-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
           "rules": "[id=`com.cmcc.cmvideo:id/skip_button`]"
+        },
+        {
+          "key": 1,
+          "name": "青少年模式弹窗",
+          "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
+          "rules": "[id=\"com.cmcc.cmvideo:id/btn_cancle\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12498307"
+        },
+        {
+          "key": 2,
+          "name": "右下角小广告",
+          "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
+          "rules": "[id=\"com.cmcc.cmvideo:id/iv_right_bottom_close\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12498315"
         }
       ]
     },
     {
       "id": "com.coolapk.market",
+      "name": "酷安",
       "groups": [
         {
           "key": -1,
-          "name": "酷安-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.coolapk.market.view.splash.SplashActivity",
             "com.coolapk.market.view.main.MainActivity"
           ],
           "rules": [
             "[id=\"com.byted.pangle.m:id/tt_splash_skip_btn\"]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/38517192/4ba30986-55d4-4a94-b7e2-6cf7d9c6d66d",
+            "https://gkd-kit.gitee.io/import/38517192/47919419-30c7-41ee-b31e-01afaa98f108"
           ]
         },
         {
           "key": 0,
-          "name": "酷安-关闭卡片广告",
+          "name": "关闭卡片广告",
           "desc": "点击卡片右上角按钮,然后点击关闭弹窗",
           "activityIds": [
             "com.coolapk.market.view.main.MainActivity",
@@ -324,6 +385,7 @@
                 "com.coolapk.market.view.main.MainActivity",
                 "com.coolapk.market.view.base.SimpleAlphaActivity"
               ],
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315",
               "matches": "@LinearLayout > TextView[id!=null][text=`不感兴趣`]"
             },
             "Button[text$=\"免广告\"] + Button[text=\"不感兴趣\"]",
@@ -335,10 +397,11 @@
     },
     {
       "id": "com.ct.client",
+      "name": "中国电信",
       "groups": [
         {
           "key": 0,
-          "name": "中国电信-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.ct.client.activity.MainActivity",
             "com.ct.client.activity.SplashActivity"
@@ -349,10 +412,11 @@
     },
     {
       "id": "com.daimajia.gold",
+      "name": "稀土掘金",
       "groups": [
         {
           "key": 0,
-          "name": "稀土掘金-开屏广告",
+          "name": "开屏广告",
           "activityIds": "im.juejin.android.ui.SplashActivity",
           "rules": "[id=`com.daimajia.gold:id/fl_skip`]"
         }
@@ -360,10 +424,11 @@
     },
     {
       "id": "com.dianping.v1",
+      "name": "大众点评",
       "groups": [
         {
           "key": 0,
-          "name": "大众点评-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.dianping.v1.NovaMainActivity",
           "rules": "[id=`com.dianping.v1:id/new_skip`]"
         }
@@ -371,10 +436,11 @@
     },
     {
       "id": "com.dragon.read",
+      "name": "番茄免费小说",
       "groups": [
         {
           "key": 0,
-          "name": "番茄免费小说-阅读页面底部广告",
+          "name": "阅读页面底部广告",
           "rules": [
             {
               "activityIds": "com.dragon.read.ad.banner.ui",
@@ -390,10 +456,11 @@
     },
     {
       "id": "com.duokan.phone.remotecontroller",
+      "name": "万能遥控",
       "groups": [
         {
           "key": 0,
-          "name": "万能遥控-底部横幅广告",
+          "name": "底部横幅广告",
           "activityIds": "com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2",
           "rules": "ImageView[id=`com.duokan.phone.remotecontroller:id/image_close_banner`]"
         }
@@ -401,10 +468,11 @@
     },
     {
       "id": "com.duowan.kiwi",
+      "name": "虎牙直播",
       "groups": [
         {
           "key": 0,
-          "name": "虎牙直播-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.duowan.kiwi.homepage.Homepage",
             "com.duowan.kiwi.adsplash.view.AdSplashActivity"
@@ -415,7 +483,7 @@
         },
         {
           "key": 1,
-          "name": "虎牙直播-关闭青少年模式弹窗",
+          "name": "青少年弹窗",
           "activityIds": [
             "com.duowan.kiwi.homepage.Homepage",
             "com.miui.home.launcher.Launcher"
@@ -426,10 +494,11 @@
     },
     {
       "id": "com.google.android.youtube",
+      "name": "youtube",
       "groups": [
         {
           "key": 0,
-          "name": "youtube-视频播放-跳过广告",
+          "name": "视频播放-跳过广告",
           "activityIds": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity",
           "rules": "[id=`com.google.android.youtube:id/skip_ad_button`]"
         }
@@ -437,10 +506,11 @@
     },
     {
       "id": "com.gotokeep.keep",
+      "name": "Keep",
       "groups": [
         {
           "key": 0,
-          "name": "Keep-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.gotokeep.keep.splash.SplashActivity",
           "rules": "[id=`com.gotokeep.keep:id/textSkip`]"
         }
@@ -448,10 +518,11 @@
     },
     {
       "id": "com.greenpoint.android.mc10086.activity",
+      "name": "中国移动",
       "groups": [
         {
           "key": 0,
-          "name": "中国移动-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.mc10086.cmcc.view.tabs.AppTabFragment",
           "rules": "[id=`com.greenpoint.android.mc10086.activity:id/video_time_skip`]"
         }
@@ -459,10 +530,11 @@
     },
     {
       "id": "com.handsgo.jiakao.android",
+      "name": "驾考宝典",
       "groups": [
         {
           "key": 0,
-          "name": "驾考宝典-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.handsgo.jiakao.android.splash.Login",
           "rules": "[id=`com.handsgo.jiakao.android:id/closeLayout`]"
         }
@@ -470,19 +542,26 @@
     },
     {
       "id": "com.hunantv.imgo.activity",
+      "name": "芒果TV",
       "groups": [
         {
           "key": -1,
-          "name": "芒果TV-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.hunantv.imgo.activity.MainActivity",
           "rules": [
-            "[id=\"com.hunantv.imgo.activity:id/layout_boot_skip\"]",
-            "TextView[text!=null] - [text^=\"跳过\"]"
+            {
+              "matches": "[id=\"com.hunantv.imgo.activity:id/layout_boot_skip\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0"
+            },
+            {
+              "matches": "TextView[text!=null] - [text^=\"跳过\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0"
+            }
           ]
         },
         {
           "key": 0,
-          "name": "芒果TV-关闭青少年模式提示",
+          "name": "关闭青少年模式提示",
           "activityIds": [
             "com.hunantv.imgo.activity.MainActivity",
             "miuix.appcompat.app.m"
@@ -491,21 +570,28 @@
         },
         {
           "key": 1,
-          "name": "芒果TV-首页推荐流-卡片广告",
+          "name": "首页推荐流-卡片广告",
           "activityIds": "com.hunantv.imgo.activity.MainActivity",
           "rules": [
-            "[id=\"com.hunantv.imgo.activity:id/close_ad\"]",
-            "@[id=\"com.hunantv.imgo.activity:id/layout_logo\"] > [id=\"com.hunantv.imgo.activity:id/tv_ad_logo\"]"
+            {
+              "matches": "[id=\"com.hunantv.imgo.activity:id/close_ad\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/40fb71ad-01a5-4420-9150-88172ff8a3bf"
+            },
+            {
+              "matches": "@[id=\"com.hunantv.imgo.activity:id/layout_logo\"] > [id=\"com.hunantv.imgo.activity:id/tv_ad_logo\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/b74150b5-8e9f-4cbb-86a7-722fc739a1b8"
+            }
           ]
         }
       ]
     },
     {
       "id": "com.hupu.shihuo",
+      "name": "识货",
       "groups": [
         {
           "key": 0,
-          "name": "识货-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.shizhi.shihuoapp.module.main.ui.welcome.WelcomeActivity",
           "rules": "[id=`com.hupu.shihuo:id/fl_countdown`]"
         }
@@ -513,10 +599,11 @@
     },
     {
       "id": "com.hxak.liangongbao",
+      "name": "链工宝",
       "groups": [
         {
           "key": 0,
-          "name": "链工宝-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.hxak.liangongbao.login.ui.HomeActivity",
           "rules": "[id=`com.hxak.liangongbao:id/time_down`]"
         }
@@ -524,10 +611,11 @@
     },
     {
       "id": "com.icbc",
+      "name": "中国工商银行",
       "groups": [
         {
           "key": 0,
-          "name": "中国工商银行-第一次启动提示",
+          "name": "第一次启动提示",
           "activityIds": "com.icbc.activity.init.SplashActivity",
           "rules": "[id=`com.icbc:id/close_btn`]"
         }
@@ -535,10 +623,11 @@
     },
     {
       "id": "com.intsig.camscanner",
+      "name": "扫描全能王",
       "groups": [
         {
           "key": 0,
-          "name": "扫描全能王-开屏vip提示",
+          "name": "开屏vip提示",
           "activityIds": "com.intsig.camscanner.guide.guidevideo.GuideVideoActivity",
           "rules": "[id=`com.intsig.camscanner:id/tv_drop_cnl_close_new`]"
         }
@@ -546,21 +635,35 @@
     },
     {
       "id": "com.iqiyi.hotchat",
+      "name": "爱奇艺热聊",
       "groups": [
         {
           "key": 0,
-          "name": "爱奇艺热聊-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.iqiyi.hotchat.ui.activity.AdvertisementActivity",
           "rules": "[id=`com.iqiyi.hotchat:id/tv_advertisement_lunch_skip`]"
         }
       ]
     },
     {
-      "id": "com.kmxs.reader",
+      "id": "com.jym.mall",
+      "name": "交易猫",
       "groups": [
         {
           "key": 0,
-          "name": "七猫免费小说-关闭青少年模式",
+          "name": "升级弹窗",
+          "rules": "[id=\"com.jym.mall:id/tv_cancel\"][text=\"下次再说\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12496974"
+        }
+      ]
+    },
+    {
+      "id": "com.kmxs.reader",
+      "name": "七猫免费小说",
+      "groups": [
+        {
+          "key": 0,
+          "name": "关闭青少年模式",
           "activityIds": "com.kmxs.reader.home.ui.HomeActivity",
           "rules": "[id=`com.kmxs.reader:id/young_dialog_close`]"
         }
@@ -568,10 +671,11 @@
     },
     {
       "id": "com.kuaikan.comic",
+      "name": "快看",
       "groups": [
         {
           "key": 0,
-          "name": "快看-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.kuaikan.comic.ui.AdvertisementActivity",
           "rules": "[id=`com.kuaikan.comic:id/skip_button`]"
         }
@@ -579,10 +683,11 @@
     },
     {
       "id": "com.kugou.android",
+      "name": "酷狗音乐",
       "groups": [
         {
           "key": 0,
-          "name": "酷狗音乐-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.kugou.android.app.splash.SplashActivity",
           "rules": "[desc=`跳过`]"
         }
@@ -590,32 +695,36 @@
     },
     {
       "id": "com.kwai.videoeditor",
+      "name": "快影",
       "groups": [
         {
           "key": 0,
-          "name": "快影-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.kwai.videoeditor.activity.splash.InnerVideoSplashActivity",
           "rules": [
             "Button[text=\"跳过\"]"
-          ]
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/d12c3b08-8233-4584-b2b9-595ebb4ce665"
         }
       ]
     },
     {
       "id": "com.mihoyo.hyperion",
+      "name": "米游社",
       "groups": [
         {
           "key": 0,
-          "name": "米游社-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.mihoyo.hyperion.ui.SplashActivity",
             "com.mihoyo.hyperion.splash.SplashActivity"
           ],
-          "rules": "[id=`com.mihoyo.hyperion:id/mSplashBtJump`]"
+          "rules": "[id=`com.mihoyo.hyperion:id/mSplashBtJump`]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12482738"
         },
         {
           "key": 1,
-          "name": "米游社-青少年模式",
+          "name": "青少年模式",
           "desc": "关闭青少年模式提醒弹窗",
           "rules": "TextView[id=`com.mihoyo.hyperion:id/tv_dialog_i_know`]"
         }
@@ -623,10 +732,11 @@
     },
     {
       "id": "com.miui.player",
+      "name": "小米音乐",
       "groups": [
         {
           "key": 0,
-          "name": "小米音乐-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.qqmusiclite.activity.MainActivity",
           "rules": "@TextView[text$=`跳过`] + TextView[id=`com.miui.player:id/ad_view`]"
         }
@@ -634,16 +744,17 @@
     },
     {
       "id": "com.miui.systemAdSolution",
+      "name": "miui系统广告",
       "groups": [
         {
           "key": 0,
-          "name": "miui任意app开屏广告",
+          "name": "任意app开屏广告",
           "rules": "[id=`com.miui.systemAdSolution:id/view_skip_button`]"
         },
         {
           "key": 1,
           "name": "miui-为什么不希望看到这条推广",
-          "desc": "关闭这个提示",
+          "desc": "关闭这个提示,使用ADB禁用广告组件时,点击此按钮无反应",
           "activityIds": "com.xiaomi.ad.feedback",
           "rules": "[id=`com.miui.systemAdSolution:id/no_interest`]"
         }
@@ -651,35 +762,42 @@
     },
     {
       "id": "com.mt.mtxx.mtxx",
+      "name": "美图秀秀",
       "groups": [
         {
           "key": 0,
-          "name": "美图秀秀-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.meitu.business.ads.core.activity.AdActivity",
-          "rules": "[text=`跳过广告`]"
+          "rules": "[text=`跳过广告`]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/1f56aa17-c290-4e56-b6fb-a94bc778448b"
         }
       ]
     },
     {
       "id": "com.netease.cloudmusic",
+      "name": "网易云音乐",
       "groups": [
         {
           "key": 0,
-          "name": "网易云音乐-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.netease.cloudmusic.activity.MainActivity",
           "rules": "TextView[text^=`跳过`][id=`com.netease.cloudmusic:id/skipBtn`]"
         },
         {
           "key": 1,
-          "name": "网易云音乐-广告卡片",
+          "name": "广告卡片",
           "rules": [
             {
               "activityIds": "com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet",
-              "matches": "[text=\"直接关闭\"]"
+              "matches": "[text=\"直接关闭\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.songe.li/import/38517192/fea3449b-d642-4d75-929f-490421cc9080"
+              ]
             },
             {
               "activityIds": "com.netease.cloudmusic.activity.MainActivity",
-              "matches": "[id=\"com.netease.cloudmusic:id/adTagClose\"]"
+              "matches": "[id=\"com.netease.cloudmusic:id/adTagClose\"]",
+              "snapshotUrls": "https://gkd-kit.songe.li/import/38517192/a977b19d-2b3c-43df-ba01-63e7cbbb3908"
             }
           ]
         }
@@ -687,10 +805,11 @@
     },
     {
       "id": "com.qidian.QDReader",
+      "name": "起点读书",
       "groups": [
         {
           "key": 0,
-          "name": "起点读书-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.qidian.QDReader.ui.activity.SplashADActivity",
           "rules": "Button[text^=`跳过`]"
         }
@@ -698,27 +817,38 @@
     },
     {
       "id": "com.qiyi.video",
+      "name": "爱奇艺",
       "groups": [
         {
           "key": 0,
-          "name": "iqiyi-开屏广告",
+          "name": "开屏广告",
           "activityIds": "org.qiyi.android.video.MainActivity",
           "rules": "@FrameLayout[id=`com.qiyi.video:id/unused_res_a`] > LinearLayout[id=null] > TextView[text=`关闭`][id=`com.qiyi.video:id/unused_res_a`]"
         },
         {
           "key": 1,
-          "name": "iqiyi-关闭青少年模式弹窗",
+          "name": "青少年弹窗",
           "activityIds": "org.qiyi.basecore.widget.dialog.AlertDialogBottom1",
           "rules": "Button[id=`com.qiyi.video:id/confirm_btn`][text=`我知道了`]"
+        },
+        {
+          "key": 2,
+          "name": "我的-顶部广告",
+          "activityIds": "org.qiyi.android.video.MainActivity",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12495050",
+          "rules": [
+            "[id=\"com.qiyi.video:id/unused_res_a\"] > [id=\"com.qiyi.video:id/close\"]"
+          ]
         }
       ]
     },
     {
       "id": "com.quark.browser",
+      "name": "夸克浏览器",
       "groups": [
         {
           "key": 0,
-          "name": "夸克浏览器-小说阅读页面底部广告",
+          "name": "小说阅读页面底部广告",
           "activityIds": "com.ucpro.BrowserActivity",
           "rules": [
             "[id=`com.quark.browser:id/tv_close_ad`][text=`关闭广告`]",
@@ -729,10 +859,11 @@
     },
     {
       "id": "com.sankuai.meituan",
+      "name": "美团",
       "groups": [
         {
           "key": 0,
-          "name": "美团-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.meituan.android.pt.homepage.activity.MainActivity",
           "rules": "TextView[id=`com.sankuai.meituan:id/close_btn`][text^=`跳过`]"
         }
@@ -740,16 +871,17 @@
     },
     {
       "id": "com.sankuai.meituan.takeoutnew",
+      "name": "美团外卖",
       "groups": [
         {
           "key": 0,
-          "name": "美团外卖-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity",
           "rules": "TextView[text*=`跳过`]"
         },
         {
           "key": 1,
-          "name": "美团外卖-关闭更新提醒弹窗",
+          "name": "关闭更新弹窗",
           "activityIds": "com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog",
           "rules": [
             "[id='com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel']"
@@ -757,7 +889,7 @@
         },
         {
           "key": 2,
-          "name": "美团外卖-关闭弹窗美食广告",
+          "name": "关闭美食广告弹窗",
           "activityIds": "com.sankuai.waimai.platform.mach.dialog.DynamicDialog",
           "rules": [
             "@[desc='关闭'][clickable=true] > ImageView"
@@ -767,10 +899,11 @@
     },
     {
       "id": "com.sdu.didi.psnger",
+      "name": "滴滴",
       "groups": [
         {
           "key": 0,
-          "name": "滴滴-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.didi.sdk.app.launch.splash.SplashActivity",
           "rules": "[id=`com.sdu.didi.psnger:id/skip_ad_ll`]"
         }
@@ -778,10 +911,11 @@
     },
     {
       "id": "com.sina.weibo",
+      "name": "微博",
       "groups": [
         {
           "key": 0,
-          "name": "微博-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.sina.weibo.mobileads.view.",
           "rules": [
             "@RelativeLayout > TextView[text=`跳过`]"
@@ -789,13 +923,13 @@
         },
         {
           "key": 1,
-          "name": "微博-评论区顶部-相关推荐",
+          "name": "评论区顶部-相关推荐",
           "activityIds": "com.sina.weibo.feed.DetailWeiboActivity",
           "rules": "ImageView[id=`com.sina.weibo:id/iv_ad_x`]"
         },
         {
           "key": 2,
-          "name": "微博-关闭不感兴趣广告弹窗",
+          "name": "关闭不感兴趣广告弹窗",
           "activityIds": "com.sina.weibo.view.bottomsheet.dialog.",
           "rules": [
             [
@@ -808,10 +942,11 @@
     },
     {
       "id": "com.smile.gifmaker",
+      "name": "快手",
       "groups": [
         {
           "key": 0,
-          "name": "快手-关闭青少年模式弹窗",
+          "name": "关闭青少年弹窗",
           "activityIds": "com.yxcorp.gifshow.HomeActivity",
           "rules": "@[id=`com.smile.gifmaker:id/positive`] + [id=`com.smile.gifmaker:id/set_teenage_mode`]"
         }
@@ -819,18 +954,20 @@
     },
     {
       "id": "com.snda.wifilocating",
+      "name": "WiFi万能钥匙",
       "groups": [
         {
           "key": -1,
-          "name": "WiFi万能钥匙-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.lantern.launcher.ui.MainActivity",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/4d6fdd1e-28ec-4b61-86e2-641b7b5b8899",
           "rules": [
             "TextView[text=\"广告\"] -3 RelativeLayout > TextView[text*=\"跳过\"]"
           ]
         },
         {
           "key": 0,
-          "name": "WiFi万能钥匙-内部广告",
+          "name": "内部广告",
           "activityIds": "com.lantern.launcher.ui.MainActivityICS",
           "rules": [
             {
@@ -846,11 +983,15 @@
     },
     {
       "id": "com.ss.android.article.video",
+      "name": "西瓜视频",
       "groups": [
         {
           "key": 0,
           "name": "西瓜视频-关闭青少年模式弹窗",
           "activityIds": "com.ixigua.commonui.uikit.dialog.XGAlertDialog",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/38517192/78f0c1f6-e8da-4bc4-acd3-5e6dc056b044"
+          ],
           "rules": [
             "TextView[text=\"我知道了\"][clickable=true]"
           ]
@@ -859,20 +1000,22 @@
     },
     {
       "id": "com.ss.android.ugc.aweme",
+      "name": "抖音",
       "groups": [
         {
           "key": 0,
-          "name": "抖音-青少年模式弹窗",
+          "name": "关闭青少年弹窗",
           "rules": "Button[text=`开启青少年模式`] + * > Button[text!=null]"
         }
       ]
     },
     {
       "id": "com.taobao.taobao",
+      "name": "淘宝",
       "groups": [
         {
           "key": 0,
-          "name": "淘宝-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.taobao.bootimage.activity.BootImageActivity",
           "rules": "[id='com.taobao.taobao:id/close']"
         }
@@ -880,10 +1023,11 @@
     },
     {
       "id": "com.tencent.androidqqmail",
+      "name": "qq邮箱",
       "groups": [
         {
           "key": 0,
-          "name": "qq邮箱-广告邮件-列表卡片广告",
+          "name": "广告邮件-列表卡片广告",
           "activityIds": "com.tencent.qqmail.fragment.base.MailFragmentActivity",
           "rules": [
             "TextView[text=`赞助商提供的广告`] <n FrameLayout <n ListView[id=`com.tencent.androidqqmail:id/pop_up_list`] TextView[text=`不感兴趣`]",
@@ -894,10 +1038,11 @@
     },
     {
       "id": "com.tencent.djcity",
+      "name": "掌上道聚城",
       "groups": [
         {
           "key": 0,
-          "name": "掌上道聚城-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.djcity.activities.homepage.PortalActivity",
           "rules": "[id=`com.tencent.djcity:id/ad_view_ll_skip`]"
         }
@@ -905,10 +1050,11 @@
     },
     {
       "id": "com.tencent.karaoke",
+      "name": "全民K歌",
       "groups": [
         {
           "key": 0,
-          "name": "全民K歌-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.karaoke.module.splash.ui.SplashAdDialog",
           "rules": "[text*=`跳过`][id!=null]"
         }
@@ -916,12 +1062,16 @@
     },
     {
       "id": "com.tencent.mm",
+      "name": "微信",
       "groups": [
         {
           "key": 0,
-          "name": "微信朋友圈广告",
+          "name": "关闭朋友圈广告",
           "desc": "朋友圈信息流广告,点击关闭按钮,确认关闭",
           "activityIds": "com.tencent.mm.plugin.sns.ui.SnsTimeLineUI",
+          "exampleUrls": [
+            "https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79"
+          ],
           "rules": [
             "TextView[text*=`广告`] + TextView[text=`关闭该广告`]",
             "ImageView - TextView[text=`广告`][id!=null][index=0]"
@@ -929,13 +1079,13 @@
         },
         {
           "key": 1,
-          "name": "微信电脑快捷自动登录",
+          "name": "电脑微信快捷自动登录",
           "activityIds": ".plugin.webwx.ui.ExtDeviceWXLoginUI",
           "rules": "TextView[text=`取消登录`] - Button[text=`登录`]"
         },
         {
           "key": 2,
-          "name": "微信电脑第三方登录自动授权",
+          "name": "浏览器扫码微信登录自动授权",
           "activityIds": [
             "com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI"
           ],
@@ -943,7 +1093,7 @@
         },
         {
           "key": 3,
-          "name": "微信手机第三方app申请使用",
+          "name": "微信手机第三方APP申请使用",
           "desc": "自动点击同意",
           "rules": [
             "TextView + TextView[text=`申请使用`]",
@@ -954,16 +1104,17 @@
     },
     {
       "id": "com.tencent.mobileqq",
+      "name": "QQ",
       "groups": [
         {
           "key": 0,
-          "name": "QQ-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
           "rules": "[text*=`跳过`]"
         },
         {
           "key": 1,
-          "name": "QQ-消息页面-顶部广告",
+          "name": "消息页面-顶部广告",
           "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
           "rules": [
             "ImageView[id!=null][desc='关闭'][clickable=true]"
@@ -971,7 +1122,7 @@
         },
         {
           "key": 2,
-          "name": "QQ-好友动态-广告卡片",
+          "name": "好友动态-广告卡片",
           "rules": [
             {
               "activityIds": "com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog",
@@ -987,24 +1138,31 @@
     },
     {
       "id": "com.tencent.mtt",
+      "name": "QQ浏览器",
       "groups": [
         {
           "key": 0,
-          "name": "QQ浏览器-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.mtt.MainActivity",
           "rules": [
             "@View[id=null] + ImageView + FrameLayout TextView[text=`向上滑动或点击查看`]",
-            "@LinearLayout[clickable=true] > TextView[text=\"跳过\"]"
+            {
+              "matches": "@LinearLayout[clickable=true] > TextView[text=\"跳过\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/38517192/7d8e9661-c29a-4448-94c2-d7b0a1756107"
+              ]
+            }
           ]
         }
       ]
     },
     {
       "id": "com.tencent.qqlive",
+      "name": "腾讯视频",
       "groups": [
         {
           "key": 0,
-          "name": "腾讯视频-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.qqlive.ona.activity.SplashHomeActivity",
           "rules": [
             "TextView[text*=`互动广告`] < LinearLayout < FrameLayout + FrameLayout > TextView[text=`跳过`]",
@@ -1013,7 +1171,7 @@
         },
         {
           "key": 1,
-          "name": "腾讯视频-青少年模式弹窗",
+          "name": "关闭青少年弹窗",
           "activityIds": "com.tencent.qqlive.ona.update.trunk.client.TrunkUpdateActivity",
           "rules": "TextView[text*=`青少年模式`] +n TextView[id=`com.tencent.qqlive:id/arg`][text=`我知道了`]"
         }
@@ -1021,10 +1179,11 @@
     },
     {
       "id": "com.tencent.qqmusic",
+      "name": "QQ音乐",
       "groups": [
         {
           "key": 0,
-          "name": "QQ音乐-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.tencent.qqmusic.activity.AppStarterActivity",
             "com.tencent.qqmusic.business.splash.thirdpartsplash.tme.union.SplashDialog"
@@ -1033,7 +1192,7 @@
         },
         {
           "key": 1,
-          "name": "QQ音乐-推荐页-广告卡片",
+          "name": "推荐页-广告卡片",
           "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
           "rules": [
             "@LinearLayout[clickable=true] > TextView[text='广告'] + ImageView",
@@ -1044,10 +1203,11 @@
     },
     {
       "id": "com.tencent.qt.sns",
+      "name": "掌上穿越火线",
       "groups": [
         {
           "key": 0,
-          "name": "掌上穿越火线-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.tencent.gamehelper.ui.main.WelcomeActivity",
           "rules": "[id=`com.tencent.qt.sns:id/tv_timer`][text$=`跳过`]"
         }
@@ -1055,10 +1215,11 @@
     },
     {
       "id": "com.xiaomi.market",
+      "name": "小米应用商店",
       "groups": [
         {
           "key": 0,
-          "name": "小米应用商店-首页悬浮窗广告",
+          "name": "首页悬浮窗广告",
           "activityIds": "com.xiaomi.market.ui.FloatWebActivity",
           "rules": "Button[text='关闭']"
         }
@@ -1066,51 +1227,61 @@
     },
     {
       "id": "com.xiaomi.shop",
+      "name": "小米商城",
       "groups": [
         {
           "key": 0,
-          "name": "小米商城-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.xiaomi.shop.activity.MainTabActivity",
-          "rules": "[id=\"com.xiaomi.shop:id/skip\"]"
-        }
-      ]
-    },
-    {
-      "id": "com.ximalaya.ting.android",
-      "groups": [
-        {
-          "key": 0,
-          "name": "喜马拉雅-右侧浮动广告",
-          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
-          "rules": "[id=\"com.ximalaya.ting.android:id/main_ad_broadside_close_real\"]"
-        }
-      ]
-    },
-    {
-      "id": "com.ximalaya.ting.lite",
-      "groups": [
-        {
-          "key": 0,
-          "name": "喜马拉雅极速版-首页-推荐-卡片广告",
-          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
-          "rules": "[id='com.ximalaya.ting.lite:id/main_ad_top_home_iv_close']"
-        },
-        {
-          "key": 1,
-          "name": "喜马拉雅极速版-开屏广告",
-          "activityIds": "com.ximalaya.ting.android.host.activity.WelComeActivity",
-          "rules": [
-            "[id=\"com.ximalaya.ting.lite:id/host_common_time_countdown_text_view\"]"
+          "rules": "[id=\"com.xiaomi.shop:id/skip\"]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/38517192/9083b291-43f8-4d92-a506-a9dc6ed0156f"
           ]
         }
       ]
     },
     {
-      "id": "com.xunlei.downloadprovider",
+      "id": "com.ximalaya.ting.android",
+      "name": "喜马拉雅",
       "groups": [
         {
           "key": 0,
-          "name": "迅雷-开屏广告",
+          "name": "首页右侧浮动广告",
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "rules": "[id=\"com.ximalaya.ting.android:id/main_ad_broadside_close_real\"]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/38517192/45664dfb-b8e6-4bdb-b5bb-9852c7a86a2f"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.ximalaya.ting.lite",
+      "name": "喜马拉雅极速版",
+      "groups": [
+        {
+          "key": 1,
+          "name": "开屏广告",
+          "activityIds": "com.ximalaya.ting.android.host.activity.WelComeActivity",
+          "rules": [
+            "[id=\"com.ximalaya.ting.lite:id/host_common_time_countdown_text_view\"]"
+          ]
+        },
+        {
+          "key": 0,
+          "name": "首页-推荐-卡片广告",
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "rules": "[id='com.ximalaya.ting.lite:id/main_ad_top_home_iv_close']"
+        }
+      ]
+    },
+    {
+      "id": "com.xunlei.downloadprovider",
+      "name": "迅雷",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
           "activityIds": "com.xunlei.downloadprovider.launch.LaunchActivity",
           "rules": "TextView[text^=`跳过`]"
         }
@@ -1118,10 +1289,11 @@
     },
     {
       "id": "com.yek.android.kfc.activitys",
+      "name": "肯德基",
       "groups": [
         {
           "key": 0,
-          "name": "肯德基-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.yum.android.superkfc.ui.v5.HomeV5Activity",
           "rules": "[id=`com.yek.android.kfc.activitys:id/splash_tv_3`]"
         }
@@ -1129,10 +1301,11 @@
     },
     {
       "id": "com.yipiao",
+      "name": "智行火车票12306抢票",
       "groups": [
         {
           "key": 0,
-          "name": "智行火车票12306抢票-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.app.main.entrance.MainActivity",
           "rules": "LinearLayout > TextView + TextView[text=`跳过`]"
         }
@@ -1140,10 +1313,11 @@
     },
     {
       "id": "com.zhihu.android",
+      "name": "知乎",
       "groups": [
         {
           "key": 0,
-          "name": "知乎-开屏广告",
+          "name": "开屏广告",
           "activityIds": [
             "com.zhihu.android.app.ui.activity.LauncherActivity",
             "com.zhihu.android.app.ui.activity.LaunchAdActivity",
@@ -1154,7 +1328,7 @@
         },
         {
           "key": 1,
-          "name": "知乎-关闭广告弹窗",
+          "name": "关闭广告弹窗",
           "desc": "点击 关闭广告按钮 之后出现的广告弹窗",
           "activityIds": [
             "com.zhihu.android.ContentActivity",
@@ -1164,7 +1338,7 @@
         },
         {
           "key": 2,
-          "name": "知乎-关闭广告原因",
+          "name": "关闭广告原因",
           "desc": "点击 关闭广告按钮 之后出现的选择原因",
           "activityIds": "com.zhihu.android.ContentActivity",
           "rules": [
@@ -1174,7 +1348,7 @@
         },
         {
           "key": 3,
-          "name": "知乎-关闭推荐",
+          "name": "关闭推荐",
           "desc": "关闭回答底部其他回答",
           "activityIds": "com.zhihu.android.mix.activity.ContentMixProfileActivity",
           "rules": [
@@ -1183,7 +1357,7 @@
         },
         {
           "key": 5,
-          "name": "知乎-推荐页广告卡片",
+          "name": "推荐页广告卡片",
           "desc": "赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告",
           "activityIds": "com.zhihu.android.app.ui.activity.MainActivity",
           "rules": [
@@ -1224,13 +1398,13 @@
         },
         {
           "key": 8,
-          "name": "知乎-关闭首页广告",
+          "name": "关闭首页广告",
           "activityIds": "com.zhihu.android.app.ui.activity.AdAlphaVideoActivity",
           "rules": "[id=`com.zhihu.android:id/tv_ad_close`]"
         },
         {
           "key": 9,
-          "name": "知乎-推荐页-顶部广告",
+          "name": "推荐页-顶部广告",
           "activityIds": "com.zhihu.android.app.ui.activity.MainActivity",
           "rules": [
             "[id='com.zhihu.android:id/tv_ad_tag'] + [id='com.zhihu.android:id/img_close_focus']"
@@ -1240,10 +1414,11 @@
     },
     {
       "id": "com.zidongdianji",
+      "name": "自动点击器",
       "groups": [
         {
           "key": 0,
-          "name": "自动点击器-开屏广告",
+          "name": "开屏广告",
           "activityIds": "com.autoclicker.clicker.ads.SplashActivity",
           "rules": [
             "[id=`com.byted.pangle:id/tt_splash_skip_btn`]",
@@ -1252,7 +1427,7 @@
         },
         {
           "key": 1,
-          "name": "自动点击器-首页顶部广告卡片",
+          "name": "首页顶部广告卡片",
           "activityIds": "com.autoclicker.clicker.MainActivity",
           "rules": [
             {
@@ -1266,11 +1441,13 @@
     },
     {
       "id": "ctrip.android.view",
+      "name": "携程旅行",
       "groups": [
         {
           "key": 0,
-          "name": "携程旅行-开屏广告",
+          "name": "开屏广告",
           "activityIds": "ctrip.android.publicproduct.home.view.CtripHomeActivity",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/104f3807-7613-46ff-9eb2-3c8bcb6ee3b1",
           "rules": [
             "LinearLayout[childCount=2] > TextView + TextView[text=\"跳过\"]"
           ]
@@ -1279,27 +1456,31 @@
     },
     {
       "id": "gov.pianzong.androidnga",
+      "name": "NGA玩家社区",
       "groups": [
         {
           "key": 0,
-          "name": "NGA玩家社区-开屏广告",
+          "name": "开屏广告",
           "activityIds": "gov.pianzong.androidnga.activity.LoadingActivity",
           "rules": [
             "[id=\"gov.pianzong.androidnga:id/iv_tg_ad\"]"
-          ]
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12476484"
         },
         {
           "key": 1,
-          "name": "NGA玩家社区-首页-推荐-广告卡片",
+          "name": "首页-推荐-广告卡片",
           "activityIds": "com.donews.nga.activitys.MainActivity",
           "rules": [
             "[id=\"gov.pianzong.androidnga:id/iv_close_ad\"]"
-          ]
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12482727"
         }
       ]
     },
     {
       "id": "li.songe.gkd",
+      "name": "GKD",
       "groups": [
         {
           "key": 0,
@@ -1309,10 +1490,11 @@
     },
     {
       "id": "tv.danmaku.bili",
+      "name": "B站",
       "groups": [
         {
           "key": -1,
-          "name": "B站-开屏广告",
+          "name": "开屏广告",
           "desc": "开屏广告,切回APP开屏广告",
           "rules": "TextView[id=`tv.danmaku.bili:id/count_down`]"
         },

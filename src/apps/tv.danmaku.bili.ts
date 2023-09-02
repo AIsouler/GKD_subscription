@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'tv.danmaku.bili',
+  name: `B站`,
   groups: [
     {
       key: -1,
-      name: 'B站-开屏广告',
+      name: '开屏广告',
       desc: '开屏广告,切回APP开屏广告',
       rules: 'TextView[id=`tv.danmaku.bili:id/count_down`]',
     },

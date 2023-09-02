@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.zidongdianji',
+  name: `自动点击器`,
   groups: [
     {
       key: 0,
-      name: '自动点击器-开屏广告',
+      name: '开屏广告',
       activityIds: 'com.autoclicker.clicker.ads.SplashActivity',
       rules: [
         '[id=`com.byted.pangle:id/tt_splash_skip_btn`]',
@@ -14,7 +15,7 @@ export default <AppConfig>{
     },
     {
       key: 1,
-      name: '自动点击器-首页顶部广告卡片',
+      name: '首页顶部广告卡片',
       activityIds: 'com.autoclicker.clicker.MainActivity',
       rules: [
         {

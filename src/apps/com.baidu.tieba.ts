@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.baidu.tieba',
+  name: `百度贴吧`,
   groups: [
     {
       key: 0,
-      name: '百度贴吧-开屏广告',
+      name: '开屏广告',
       desc: '数字倒计时广告,圆形倒计时广告',
       activityIds: [
         'com.baidu.tieba.tblauncher.MainTabActivity',
@@ -68,6 +69,13 @@ export default <AppConfig>{
       rules: [
         `ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]`,
       ],
+    },
+    {
+      key: 7,
+      name: `升级弹窗`,
+      activityIds: `com.baidu.tieba.UpdateDialog`,
+      rules: `[text="稍后再说"]`,
+      snapshotUrls: `https://gkd-kit.gitee.io/import/12496934`,
     },
   ],
 };

@@ -33,6 +33,7 @@ type CommonProps = {
 
 export type AppConfig = {
   id: string;
+  name: string;
   groups?: GroupConfig[];
 } & CommonProps;
 
@@ -46,6 +47,8 @@ type GroupConfig = {
   desc?: string;
   enable?: boolean;
   rules?: IArray<RuleConfig | string>;
+  snapshotUrls?: IArray<string>;
+  exampleUrls?: IArray<string>;
 } & CommonProps;
 
 type RuleConfig = {
@@ -54,6 +57,8 @@ type RuleConfig = {
   matches?: IArray<string>;
   excludeMatches?: IArray<string>;
   preKeys?: IArray<number>;
+  snapshotUrls?: IArray<string>;
+  exampleUrls?: IArray<string>;
 } & CommonProps;
 
 export type SubscriptionConfig = {

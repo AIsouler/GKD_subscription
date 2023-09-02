@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.zhihu.android',
+  name: `知乎`,
   groups: [
     {
       key: 0,
-      name: '知乎-开屏广告',
+      name: '开屏广告',
       activityIds: [
         'com.zhihu.android.app.ui.activity.LauncherActivity',
         'com.zhihu.android.app.ui.activity.LaunchAdActivity',
@@ -16,7 +17,7 @@ export default <AppConfig>{
     },
     {
       key: 1,
-      name: '知乎-关闭广告弹窗',
+      name: '关闭广告弹窗',
       desc: '点击 关闭广告按钮 之后出现的广告弹窗',
       activityIds: [
         'com.zhihu.android.ContentActivity',
@@ -27,7 +28,7 @@ export default <AppConfig>{
     },
     {
       key: 2,
-      name: '知乎-关闭广告原因',
+      name: '关闭广告原因',
       desc: '点击 关闭广告按钮 之后出现的选择原因',
       activityIds: 'com.zhihu.android.ContentActivity',
       rules: [
@@ -37,7 +38,7 @@ export default <AppConfig>{
     },
     {
       key: 3,
-      name: '知乎-关闭推荐',
+      name: '关闭推荐',
       desc: '关闭回答底部其他回答',
       activityIds: 'com.zhihu.android.mix.activity.ContentMixProfileActivity',
       rules: [
@@ -46,7 +47,7 @@ export default <AppConfig>{
     },
     {
       key: 5,
-      name: '知乎-推荐页广告卡片',
+      name: '推荐页广告卡片',
       desc: `赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告`,
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
@@ -87,13 +88,13 @@ export default <AppConfig>{
     },
     {
       key: 8,
-      name: '知乎-关闭首页广告',
+      name: '关闭首页广告',
       activityIds: 'com.zhihu.android.app.ui.activity.AdAlphaVideoActivity',
       rules: '[id=`com.zhihu.android:id/tv_ad_close`]',
     },
     {
       key: 9,
-      name: `知乎-推荐页-顶部广告`,
+      name: `推荐页-顶部广告`,
       activityIds: `com.zhihu.android.app.ui.activity.MainActivity`,
       rules: [
         `[id='com.zhihu.android:id/tv_ad_tag'] + [id='com.zhihu.android:id/img_close_focus']`, // 1686911063850

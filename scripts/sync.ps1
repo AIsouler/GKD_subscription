@@ -1,4 +1,3 @@
-pnpm build
 git add '.'
 git commit -m 'chore: sync'
 git push

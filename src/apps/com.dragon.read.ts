@@ -2,10 +2,11 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.dragon.read',
+  name: `番茄免费小说`,
   groups: [
     {
       key: 0,
-      name: '番茄免费小说-阅读页面底部广告',
+      name: '阅读页面底部广告',
       rules: [
         {
           activityIds: 'com.dragon.read.ad.banner.ui',

@@ -2,16 +2,17 @@ import type { AppConfig } from '../types';
 
 export default <AppConfig>{
   id: 'com.UCMobile',
+  name: `UC浏览器`,
   groups: [
     {
       key: -1,
-      name: `UC浏览器-开屏广告`,
+      name: `开屏广告`,
       activityIds: `com.uc.browser.InnerUCMobile`,
-      // rules: ``,
+      // TODO
     },
     {
       key: 0,
-      name: 'UC浏览器-推荐页广告',
+      name: '推荐页广告',
       activityIds: 'com.uc.browser.InnerUCMobile',
       rules: [
         'TextView[text=`屏蔽此条广告`]',
