@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 79 个 APP, 共有 132 规则组
+当前订阅文件已适配 80 个 APP, 共有 135 规则组
 
 ## 适配 APP 列表
 
@@ -51,7 +51,7 @@
 
 ### [com.android.thememanager](/src/apps/com.android.thememanager.ts) - miui主题壁纸
 
-- 推荐下广告
+- 推荐下广告 - 注意如果使用ADB禁用了MIUI广告组件,点击此按钮会无反应,可关闭此规则,避免过多相同点击记录
 
 ### [com.anjuke.android.app](/src/apps/com.anjuke.android.app.ts) - 安居客
 
@@ -112,6 +112,20 @@
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315)
 - 关闭升级弹窗
   - [快照-0](https://gkd-kit.gitee.io/import/12503762)
+
+### [com.copymanga.app](/src/apps/com.copymanga.app.ts) - 拷貝漫畫
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12504489)
+  - [快照-1](https://gkd-kit.gitee.io/import/12504507)
+  - [快照-2](https://gkd-kit.gitee.io/import/12504492)
+- 内部弹窗广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12504486)
+  - [快照-1](https://gkd-kit.gitee.io/import/12504488)
+  - [快照-2](https://gkd-kit.gitee.io/import/12504501)
+  - [快照-3](https://gkd-kit.gitee.io/import/12504520)
+- 加入书架按钮下面的广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12504525)
 
 ### [com.ct.client](/src/apps/com.ct.client.ts) - 中国电信
 

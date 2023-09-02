@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 42,
+  "version": 43,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -163,6 +163,7 @@
         {
           "key": 1,
           "name": "推荐下广告",
+          "desc": "注意如果使用ADB禁用了MIUI广告组件,点击此按钮会无反应,可关闭此规则,避免过多相同点击记录",
           "rules": "[id=`com.android.thememanager:id/ad_close_btn`]"
         }
       ]
@@ -428,6 +429,68 @@
           "activityIds": "com.coolapk.market.view.main.MainActivity",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12503762",
           "rules": "[text=`立即更新`] - [text=`取消`]"
+        }
+      ]
+    },
+    {
+      "id": "com.copymanga.app",
+      "name": "拷貝漫畫",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": [
+            "com.copymanga.app.MainActivity",
+            "com.miui.home.launcher.Launcher",
+            "com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity"
+          ],
+          "rules": [
+            {
+              "matches": "TextView[text!=null] - TextView[text^=\"跳过\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12504489",
+                "https://gkd-kit.gitee.io/import/12504507"
+              ]
+            },
+            {
+              "matches": "ImageView + ViewGroup > TextView[text=\"跳过\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12504492"
+            }
+          ]
+        },
+        {
+          "key": 1,
+          "name": "内部弹窗广告",
+          "activityIds": "com.copymanga.app.MainActivity",
+          "rules": [
+            {
+              "activityIds": "com.kwad.components.ad.interstitial",
+              "matches": "TextView[text=\"跳过\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12504486"
+            },
+            {
+              "activityIds": "com.kwad.components.ad.interstitial",
+              "matches": "ViewGroup[clickable=true] > ImageView",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12504488"
+            },
+            {
+              "matches": "ImageView < FrameLayout < FrameLayout +2 FrameLayout > ImageView",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12504501"
+            },
+            {
+              "matches": "ImageView + FrameLayout + FrameLayout > ImageView",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12504520"
+            }
+          ]
+        },
+        {
+          "key": 2,
+          "name": "加入书架按钮下面的广告",
+          "activityIds": "com.copymanga.app.MainActivity",
+          "rules": {
+            "matches": "ImageView[id=\"com.copymanga.app:id/close\"]",
+            "snapshotUrls": "https://gkd-kit.gitee.io/import/12504525"
+          }
         }
       ]
     },
