@@ -136,7 +136,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12505365',
         },
         {
-          matches: '[id$="/ll_close"]',
+          matches: '[id$="/nativeclose"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12505350',
             'https://gkd-kit.gitee.io/import/12505286',
