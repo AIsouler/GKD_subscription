@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 82 个 APP, 共有 145 规则组
+当前订阅文件已适配 87 个 APP, 共有 151 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -47,6 +47,11 @@
 
 - 开屏广告
 
+### [com.alibaba.android.rimet](/src/apps/com.alibaba.android.rimet.ts) - 钉钉
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.songe.li/import/12506211)
+
 ### [com.alibaba.wireless](/src/apps/com.alibaba.wireless.ts) - 阿里巴巴
 
 - 开屏广告
@@ -67,6 +72,11 @@
 ### [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts) - 百度地图
 
 - 开屏广告
+
+### [com.baidu.duer.superapp](/src/apps/com.baidu.duer.superapp.ts) - 小度
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12506571)
 
 ### [com.baidu.homework](/src/apps/com.baidu.homework.ts) - 作业帮
 
@@ -151,6 +161,7 @@
 - 开屏广告
   - [快照-0](https://gkd-kit.gitee.io/import/12505151)
   - [快照-1](https://gkd-kit.gitee.io/import/12505152)
+  - [快照-2](https://gkd-kit.gitee.io/import/12506164)
 
 ### [com.dragon.read](/src/apps/com.dragon.read.ts) - 番茄免费小说
 
@@ -180,6 +191,11 @@
 ### [com.handsgo.jiakao.android](/src/apps/com.handsgo.jiakao.android.ts) - 驾考宝典
 
 - 开屏广告
+
+### [com.heytap.market](/src/apps/com.heytap.market.ts) - 软件商店
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12506561)
 
 ### [com.hunantv.imgo.activity](/src/apps/com.hunantv.imgo.activity.ts) - 芒果TV
 
@@ -219,6 +235,11 @@
 ### [com.kmxs.reader](/src/apps/com.kmxs.reader.ts) - 七猫免费小说
 
 - 关闭青少年模式
+
+### [com.koudai.weidian.buyer](/src/apps/com.koudai.weidian.buyer.ts) - 微店
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.songe.li/import/12506297)
 
 ### [com.kuaikan.comic](/src/apps/com.kuaikan.comic.ts) - 快看
 
@@ -337,6 +358,9 @@
 - 电脑微信快捷自动登录
 - 浏览器扫码微信登录自动授权
 - 微信手机第三方APP申请使用 - 自动点击同意
+- 微信读书网页版扫码登录自动授权
+  - [快照-0](https://gkd-kit.songe.li/import/12506197)
+  - [快照-1](https://gkd-kit.songe.li/import/12506201)
 
 ### [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts) - QQ
 
@@ -371,6 +395,13 @@
   - [快照-1](https://gkd-kit.gitee.io/import/12505764)
   - [快照-2](https://gkd-kit.gitee.io/import/12505753)
   - [快照-3](https://gkd-kit.gitee.io/import/12505763)
+
+### [com.xiachufang](/src/apps/com.xiachufang.ts) - 下厨房
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.songe.li/import/12505985)
+  - [快照-1](https://gkd-kit.songe.li/import/12506014)
+  - [快照-2](https://gkd-kit.songe.li/import/12506041)
 
 ### [com.xiaomi.market](/src/apps/com.xiaomi.market.ts) - 小米应用商店
 
