@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 80 个 APP, 共有 135 规则组
+当前订阅文件已适配 81 个 APP, 共有 136 规则组
 
 ## 适配 APP 列表
 
@@ -138,6 +138,12 @@
 ### [com.dianping.v1](/src/apps/com.dianping.v1.ts) - 大众点评
 
 - 开屏广告
+
+### [com.douban.frodo](/src/apps/com.douban.frodo.ts) - 豆瓣
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12505151)
+  - [快照-1](https://gkd-kit.gitee.io/import/12505152)
 
 ### [com.dragon.read](/src/apps/com.dragon.read.ts) - 番茄免费小说
 
