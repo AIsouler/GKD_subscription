@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 82 个 APP, 共有 138 规则组
+当前订阅文件已适配 82 个 APP, 共有 145 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -383,8 +383,25 @@
 
 ### [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts) - 喜马拉雅
 
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12506207)
+  - [快照-1](https://gkd-kit.gitee.io/import/12506273)
 - 首页右侧浮动广告
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/45664dfb-b8e6-4bdb-b5bb-9852c7a86a2f)
+- 播放页面-暂停按钮下面的广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12506218)
+- 播放页面-底部推荐列表-夹杂广告 - 点击关闭-点击屏蔽
+  - [快照-0](https://gkd-kit.gitee.io/import/12506269)
+  - [快照-1](https://gkd-kit.gitee.io/import/12506225)
+- 播放页面-播放前广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12506250)
+- 首页-推荐列表广告 - 点击关闭-点击屏蔽
+  - [快照-0](https://gkd-kit.gitee.io/import/12506258)
+  - [快照-1](https://gkd-kit.gitee.io/import/12506253)
+- 关闭热播推荐广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12506270)
+- 关闭更新弹窗
+  - [快照-0](https://gkd-kit.gitee.io/import/12506287)
 
 ### [com.ximalaya.ting.lite](/src/apps/com.ximalaya.ting.lite.ts) - 喜马拉雅极速版
 
