@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "build": "tsc --noEmit && tsx ./scripts/build.ts",
-    "check": "tsc --noEmit && tsx ./scripts/check.ts"
+    "check": "tsc --noEmit && tsx ./scripts/check.ts",
+    "sync": "tsx ./scripts/sync.ts"
   },
   "devDependencies": {
     "@gkd-kit/selector": "0.0.11",
