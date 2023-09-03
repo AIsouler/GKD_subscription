@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.kmxs.reader',
   name: `七猫免费小说`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.kmxs.reader:id/young_dialog_close`]',
     },
   ],
-};
+});

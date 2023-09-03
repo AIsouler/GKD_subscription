@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.mt.mtxx.mtxx',
   name: `美图秀秀`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/38517192/1f56aa17-c290-4e56-b6fb-a94bc778448b`,
     },
   ],
-};
+});

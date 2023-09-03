@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'cn.damai',
   name: `大麦`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/38517192/38859663-6f0c-48b1-9392-20ae937a8c9e`,
     },
   ],
-};
+});

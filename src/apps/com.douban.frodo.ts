@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.douban.frodo',
   name: '豆瓣',
   groups: [
@@ -15,4 +15,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

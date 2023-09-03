@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.icbc',
   name: `中国工商银行`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.icbc:id/close_btn`]',
     },
   ],
-};
+});

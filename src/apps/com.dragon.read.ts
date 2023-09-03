@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.dragon.read',
   name: `番茄免费小说`,
   groups: [
@@ -19,4 +19,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.baidu.netdisk',
   name: `百度网盘`,
   groups: [
@@ -18,4 +18,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

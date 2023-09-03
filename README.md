@@ -2,7 +2,9 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 81 个 APP, 共有 136 规则组
+当前订阅文件已适配 81 个 APP, 共有 137 规则组
+
+如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 适配 APP 列表
 
@@ -26,6 +28,11 @@
 ### [cn.wps.moffice_eng](/src/apps/cn.wps.moffice_eng.ts) - WPS
 
 - 开屏广告
+- 首页-文档列表广告
+  - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b)
+  - [快照-0](https://gkd-kit.gitee.io/import/12505365)
+  - [快照-1](https://gkd-kit.gitee.io/import/12505350)
+  - [快照-2](https://gkd-kit.gitee.io/import/12505286)
 
 ### [com.MobileTicket](/src/apps/com.MobileTicket.ts) - 铁路12306
 
@@ -33,7 +40,7 @@
 
 ### [com.UCMobile](/src/apps/com.UCMobile.ts) - UC浏览器
 
-- 开屏广告
+- 开屏广告 - 空规则组-待实现
 - 推荐页广告
 
 ### [com.achievo.vipshop](/src/apps/com.achievo.vipshop.ts) - 唯品会

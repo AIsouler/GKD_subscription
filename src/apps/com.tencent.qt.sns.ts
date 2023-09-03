@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.tencent.qt.sns',
   name: `掌上穿越火线`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.tencent.qt.sns:id/tv_timer`][text$=`跳过`]',
     },
   ],
-};
+});

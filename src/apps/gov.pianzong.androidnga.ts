@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'gov.pianzong.androidnga',
   name: `NGA玩家社区`,
   groups: [
@@ -19,4 +19,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/12482727`,
     },
   ],
-};
+});

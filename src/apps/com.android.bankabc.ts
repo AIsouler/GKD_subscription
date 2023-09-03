@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.android.bankabc',
   name: `中国农业银行`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/38517192/3653218a-e0e0-4a60-8308-dea5fd4179b3`,
     },
   ],
-};
+});

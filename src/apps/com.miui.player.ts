@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.miui.player',
   name: `小米音乐`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
         '@TextView[text$=`跳过`] + TextView[id=`com.miui.player:id/ad_view`]',
     },
   ],
-};
+});

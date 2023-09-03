@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.yipiao',
   name: `智行火车票12306抢票`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: 'LinearLayout > TextView + TextView[text=`跳过`]',
     },
   ],
-};
+});

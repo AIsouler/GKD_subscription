@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.sankuai.meituan.takeoutnew',
   name: `美团外卖`,
   groups: [
@@ -28,4 +28,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

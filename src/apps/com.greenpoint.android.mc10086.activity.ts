@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.greenpoint.android.mc10086.activity',
   name: `中国移动`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
         '[id=`com.greenpoint.android.mc10086.activity:id/video_time_skip`]',
     },
   ],
-};
+});

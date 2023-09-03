@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.zhihu.android',
   name: `知乎`,
   groups: [
@@ -101,4 +101,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

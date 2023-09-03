@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.ximalaya.ting.android',
   name: `喜马拉雅`,
   groups: [
@@ -14,4 +14,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

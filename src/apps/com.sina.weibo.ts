@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.sina.weibo',
   name: `微博`,
   groups: [
@@ -20,7 +20,9 @@ export default <AppConfig>{
       key: 2,
       name: `关闭不感兴趣广告弹窗`,
       activityIds: `com.sina.weibo.view.bottomsheet.dialog.`,
-      rules: [[`[text="为何会看到此广告"]`, `[text="不感兴趣"]`]], // 1688889362832
+      rules: {
+        matches: [`[text="为何会看到此广告"]`, `[text="不感兴趣"]`],
+      }, // 1688889362832
     },
   ],
-};
+});

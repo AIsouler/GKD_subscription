@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.mihoyo.hyperion',
   name: `米游社`,
   groups: [
@@ -21,4 +21,4 @@ export default <AppConfig>{
       rules: 'TextView[id=`com.mihoyo.hyperion:id/tv_dialog_i_know`]',
     },
   ],
-};
+});

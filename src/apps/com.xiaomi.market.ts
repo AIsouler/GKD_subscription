@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.xiaomi.market',
   name: `小米应用商店`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: "Button[text='关闭']",
     },
   ],
-};
+});

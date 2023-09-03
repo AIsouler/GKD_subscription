@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.android.thememanager',
   name: `miui主题壁纸`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.android.thememanager:id/ad_close_btn`]',
     },
   ],
-};
+});

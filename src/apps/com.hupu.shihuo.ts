@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.hupu.shihuo',
   name: `识货`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       rules: '[id=`com.hupu.shihuo:id/fl_countdown`]',
     },
   ],
-};
+});

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.zidongdianji',
   name: `自动点击器`,
   groups: [
@@ -27,4 +27,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

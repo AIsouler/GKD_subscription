@@ -1,7 +1,7 @@
 {
   "name": "@gkd-kit/subscription",
   "type": "module",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "main": "./dist/gkd.json",
   "unpkg": "./dist/gkd.json",
   "jsdelivr": "./dist/gkd.json",
@@ -13,7 +13,8 @@
     "./dist"
   ],
   "scripts": {
-    "build": "tsx ./src/main.ts"
+    "build": "tsc --noEmit && tsx ./scripts/build.ts",
+    "check": "tsc --noEmit && tsx ./scripts/check.ts"
   },
   "devDependencies": {
     "@gkd-kit/selector": "0.0.11",

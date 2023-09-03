@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.dianping.v1',
   name: `大众点评`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.dianping.v1:id/new_skip`]',
     },
   ],
-};
+});

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.cmcc.cmvideo',
   name: `咪咕视频`,
   groups: [
@@ -25,4 +25,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/12498315`,
     },
   ],
-};
+});

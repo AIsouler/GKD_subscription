@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.tencent.djcity',
   name: `掌上道聚城`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.tencent.djcity:id/ad_view_ll_skip`]',
     },
   ],
-};
+});

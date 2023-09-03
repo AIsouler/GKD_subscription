@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.tencent.mtt',
   name: `QQ浏览器`,
   groups: [
@@ -20,4 +20,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

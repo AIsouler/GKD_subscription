@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.tencent.mm',
   name: `微信`,
   groups: [
@@ -39,4 +39,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

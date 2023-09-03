@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.google.android.youtube',
   name: `youtube`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       rules: '[id=`com.google.android.youtube:id/skip_ad_button`]',
     },
   ],
-};
+});

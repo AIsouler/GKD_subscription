@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.qidian.QDReader',
   name: `起点读书`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: 'Button[text^=`跳过`]',
     },
   ],
-};
+});

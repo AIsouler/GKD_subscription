@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.ss.android.article.video',
   name: `西瓜视频`,
   groups: [
@@ -14,4 +14,4 @@ export default <AppConfig>{
       rules: [`TextView[text="我知道了"][clickable=true]`],
     },
   ],
-};
+});

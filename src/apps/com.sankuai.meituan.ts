@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.sankuai.meituan',
   name: `美团`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: 'TextView[id=`com.sankuai.meituan:id/close_btn`][text^=`跳过`]',
     },
   ],
-};
+});

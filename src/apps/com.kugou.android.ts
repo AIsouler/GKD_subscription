@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.kugou.android',
   name: `酷狗音乐`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[desc=`跳过`]',
     },
   ],
-};
+});

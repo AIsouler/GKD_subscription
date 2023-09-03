@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.jym.mall',
   name: `交易猫`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/12496974`,
     },
   ],
-};
+});

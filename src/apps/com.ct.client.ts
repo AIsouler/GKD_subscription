@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.ct.client',
   name: `中国电信`,
   groups: [
@@ -14,4 +14,4 @@ export default <AppConfig>{
       rules: '[id=`com.ct.client:id/tvSkip`]',
     },
   ],
-};
+});

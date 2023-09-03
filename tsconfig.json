@@ -3,7 +3,7 @@
     "target": "ESNext",
     "lib": ["ESNext"],
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "declaration": true,
     "declarationMap": true,
@@ -13,9 +13,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": [
-    "./src/**/*.{ts,js,mjs,cjs}",
-    "./scripts/**/*.ts",
-    "./types/**/*.ts"
-  ]
+  "include": ["./src/**/*.ts", "./scripts/**/*.ts", "./types/**/*.ts"]
 }

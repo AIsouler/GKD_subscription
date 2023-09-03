@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.ximalaya.ting.lite',
   name: `喜马拉雅极速版`,
   groups: [
@@ -19,4 +19,4 @@ export default <AppConfig>{
       rules: "[id='com.ximalaya.ting.lite:id/main_ad_top_home_iv_close']",
     },
   ],
-};
+});

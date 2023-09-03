@@ -1,12 +1,13 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.UCMobile',
   name: `UC浏览器`,
   groups: [
     {
       key: -1,
       name: `开屏广告`,
+      desc: `空规则组-待实现`,
       activityIds: `com.uc.browser.InnerUCMobile`,
       // TODO
     },
@@ -20,4 +21,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

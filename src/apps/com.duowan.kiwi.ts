@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.duowan.kiwi',
   name: `虎牙直播`,
   groups: [
@@ -24,4 +24,4 @@ export default <AppConfig>{
         '[id=`com.duowan.kiwi:id/hyui_dialog_button_positive`][text=`我知道了`]',
     },
   ],
-};
+});

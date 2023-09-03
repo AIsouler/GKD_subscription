@@ -67,6 +67,11 @@ type GroupConfig = {
    * 控制规则默认情况下是启用还是禁用, 默认启用
    */
   enable?: boolean;
+  /**
+   * string => { matches: string }
+   *
+   * string[] => { matches: string }[]
+   */
   rules?: IArray<RuleConfig | string>;
   /**
    * 当前 规则/规则组 的快照链接, 最好填上, 增强订阅可维护性
@@ -144,4 +149,8 @@ export type SubscriptionConfig = {
 
 export const defineSubsConfig = (config: SubscriptionConfig) => {
   return JSON.stringify(config, undefined, 2);
+};
+
+export const defineAppConfig = (config: AppConfig) => {
+  return config;
 };

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.ss.android.ugc.aweme',
   name: `抖音`,
   groups: [
@@ -10,4 +10,4 @@ export default <AppConfig>{
       rules: 'Button[text=`开启青少年模式`] + * > Button[text!=null]',
     },
   ],
-};
+});

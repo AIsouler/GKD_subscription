@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.iqiyi.hotchat',
   name: `爱奇艺热聊`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.iqiyi.hotchat:id/tv_advertisement_lunch_skip`]',
     },
   ],
-};
+});

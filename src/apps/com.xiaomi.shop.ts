@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.xiaomi.shop',
   name: `小米商城`,
   groups: [
@@ -14,4 +14,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

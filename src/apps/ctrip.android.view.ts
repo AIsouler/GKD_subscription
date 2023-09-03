@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'ctrip.android.view',
   name: `携程旅行`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       rules: [`LinearLayout[childCount=2] > TextView + TextView[text="跳过"]`],
     },
   ],
-};
+});

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.qiyi.video',
   name: `爱奇艺`,
   groups: [
@@ -27,4 +27,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.baidu.tieba',
   name: `百度贴吧`,
   groups: [
@@ -78,4 +78,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/12496934`,
     },
   ],
-};
+});

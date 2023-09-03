@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'tv.danmaku.bili',
   name: `B站`,
   groups: [
@@ -61,4 +61,4 @@ export default <AppConfig>{
       rules: ['[id=`tv.danmaku.bili:id/click_skip`]'],
     },
   ],
-};
+});

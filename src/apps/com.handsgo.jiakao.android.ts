@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.handsgo.jiakao.android',
   name: `驾考宝典`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.handsgo.jiakao.android:id/closeLayout`]',
     },
   ],
-};
+});

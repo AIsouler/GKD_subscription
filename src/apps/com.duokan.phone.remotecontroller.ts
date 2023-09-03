@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.duokan.phone.remotecontroller',
   name: `万能遥控`,
   groups: [
@@ -13,4 +13,4 @@ export default <AppConfig>{
         'ImageView[id=`com.duokan.phone.remotecontroller:id/image_close_banner`]',
     },
   ],
-};
+});

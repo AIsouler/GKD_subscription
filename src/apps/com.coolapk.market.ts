@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.coolapk.market',
   name: `酷安`,
   groups: [
@@ -48,4 +48,4 @@ export default <AppConfig>{
       rules: '[text=`立即更新`] - [text=`取消`]',
     },
   ],
-};
+});

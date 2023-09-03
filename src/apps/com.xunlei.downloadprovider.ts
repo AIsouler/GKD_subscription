@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.xunlei.downloadprovider',
   name: `迅雷`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: 'TextView[text^=`跳过`]',
     },
   ],
-};
+});

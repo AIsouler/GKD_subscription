@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.snda.wifilocating',
   name: `WiFi万能钥匙`,
   groups: [
@@ -28,4 +28,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

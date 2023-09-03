@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.copymanga.app',
   name: '拷貝漫畫',
   groups: [
@@ -62,4 +62,4 @@ export default <AppConfig>{
       },
     },
   ],
-};
+});

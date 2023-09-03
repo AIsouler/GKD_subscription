@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.miui.systemAdSolution',
   name: `miui系统广告`,
   groups: [
@@ -17,4 +17,4 @@ export default <AppConfig>{
       rules: '[id=`com.miui.systemAdSolution:id/no_interest`]',
     },
   ],
-};
+});

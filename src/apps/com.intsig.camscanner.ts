@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.intsig.camscanner',
   name: `扫描全能王`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.intsig.camscanner:id/tv_drop_cnl_close_new`]',
     },
   ],
-};
+});

@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.sdu.didi.psnger',
   name: `滴滴`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.sdu.didi.psnger:id/skip_ad_ll`]',
     },
   ],
-};
+});

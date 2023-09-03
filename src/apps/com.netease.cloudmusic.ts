@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.netease.cloudmusic',
   name: `网易云音乐`,
   groups: [
@@ -29,4 +29,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

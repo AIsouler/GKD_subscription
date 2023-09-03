@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.kwai.videoeditor',
   name: `快影`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
       snapshotUrls: `https://gkd-kit.gitee.io/import/38517192/d12c3b08-8233-4584-b2b9-595ebb4ce665`,
     },
   ],
-};
+});

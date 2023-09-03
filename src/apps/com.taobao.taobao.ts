@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: `com.taobao.taobao`,
   name: `淘宝`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: `[id='com.taobao.taobao:id/close']`, // 1687596777612
     },
   ],
-};
+});

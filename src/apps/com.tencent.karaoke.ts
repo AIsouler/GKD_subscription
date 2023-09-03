@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.tencent.karaoke',
   name: `全民K歌`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[text*=`跳过`][id!=null]',
     },
   ],
-};
+});

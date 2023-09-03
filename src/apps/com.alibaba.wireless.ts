@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.alibaba.wireless',
   name: `阿里巴巴`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.alibaba.wireless:id/v5_splash_over`]',
     },
   ],
-};
+});

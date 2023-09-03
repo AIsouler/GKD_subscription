@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.tencent.qqlive',
   name: `腾讯视频`,
   groups: [
@@ -22,4 +22,4 @@ export default <AppConfig>{
         'TextView[text*=`青少年模式`] +n TextView[id=`com.tencent.qqlive:id/arg`][text=`我知道了`]',
     },
   ],
-};
+});

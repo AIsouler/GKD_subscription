@@ -1,11 +1,11 @@
-import { relativePath, walk, writeConfig } from './file';
-import { AppConfig, AppConfigMudule } from './types';
-import url from 'node:url';
 import path from 'node:path';
+import url from 'node:url';
 import picocolors from 'picocolors';
+import { walk } from './file';
+import type { AppConfig, AppConfigMudule, SubscriptionConfig } from './types';
 
 const apps: AppConfig[] = [];
-for await (const tsFp of walk(relativePath('./apps'))) {
+for await (const tsFp of walk(process.cwd() + '/src/apps')) {
   const mod: AppConfigMudule = await import(url.pathToFileURL(tsFp).href);
   const appConfig = mod.default;
   if (path.basename(tsFp, `.ts`) != appConfig.id) {
@@ -22,11 +22,12 @@ for await (const tsFp of walk(relativePath('./apps'))) {
 
 // a,b,c,d
 apps.sort((a, b) => (a.id > b.id ? 1 : -1));
-
-await writeConfig(`../dist/gkd.json`, {
+const subsConfig: SubscriptionConfig = {
   id: 0,
   name: `默认订阅`,
   author: `lisonge`,
   supportUri: `https://github.com/gkd-kit/subscription`,
   apps,
-});
+};
+
+export default subsConfig;

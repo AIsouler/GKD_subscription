@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.smile.gifmaker',
   name: `快手`,
   groups: [
@@ -12,4 +12,4 @@ export default <AppConfig>{
         '@[id=`com.smile.gifmaker:id/positive`] + [id=`com.smile.gifmaker:id/set_teenage_mode`]',
     },
   ],
-};
+});

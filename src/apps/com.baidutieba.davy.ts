@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.baidutieba.davy',
   name: '贴吧一键签到大师',
   groups: [
@@ -30,4 +30,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

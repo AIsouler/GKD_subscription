@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.bjsk.intelligent',
   name: `WiFi智能钥匙`,
   groups: [
@@ -23,4 +23,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

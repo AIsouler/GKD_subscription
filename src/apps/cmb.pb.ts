@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'cmb.pb',
   name: '招商银行',
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`cmb.pb:id/ll_launch_ad_skip_hot_area`]',
     },
   ],
-};
+});

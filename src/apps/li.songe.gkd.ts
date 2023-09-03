@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'li.songe.gkd',
   name: `GKD`,
   groups: [
@@ -9,4 +9,4 @@ export default <AppConfig>{
       name: `GKD-空规则组`,
     },
   ],
-};
+});

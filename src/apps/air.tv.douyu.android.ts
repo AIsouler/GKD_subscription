@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'air.tv.douyu.android',
   name: `斗鱼`,
   groups: [
@@ -42,4 +42,4 @@ export default <AppConfig>{
       rules: '[text="立即升级"] - [text="忽略"][clickable=true]',
     },
   ],
-};
+});

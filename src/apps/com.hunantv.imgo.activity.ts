@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.hunantv.imgo.activity',
   name: `芒果TV`,
   groups: [
@@ -44,4 +44,4 @@ export default <AppConfig>{
       ],
     },
   ],
-};
+});

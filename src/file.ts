@@ -2,14 +2,13 @@ import dayjs from 'dayjs';
 import _ from 'lodash';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import url from 'node:url';
-import selfPkg from '../package.json';
-import type { SubscriptionConfig, IArray } from './types';
+import type selfPkgT from '../package.json';
 import { parseSelector } from './selector';
+import type { IArray, SubscriptionConfig } from './types';
 
-export const relativePath = (p: string) => {
-  return url.fileURLToPath(new URL(p, import.meta.url));
-};
+const selfPkg: typeof selfPkgT = JSON.parse(
+  await fs.readFile(process.cwd() + '/package.json', 'utf-8'),
+);
 
 const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
   return Array<T>().concat(array);
@@ -26,10 +25,9 @@ const sortKeys: (keyof SubscriptionConfig)[] = [
 ];
 
 export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
-  const filePath = relativePath(fp);
   const newConfig: SubscriptionConfig = { ...config };
   const oldConfig: SubscriptionConfig = JSON.parse(
-    await fs.readFile(filePath, 'utf-8').catch(() => `{}`),
+    await fs.readFile(fp, 'utf-8').catch(() => `{}`),
   );
 
   newConfig.version = oldConfig.version ?? 0;
@@ -50,11 +48,11 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
     JSON.stringify(Object.fromEntries(map.entries()), void 0, 2),
     'utf-8',
   );
-  await fs.writeFile(filePath, buffer);
+  await fs.writeFile(fp, buffer);
 
   const newPkg = { ...selfPkg, version: `0.0.` + newConfig.version };
   await fs.writeFile(
-    relativePath('../package.json'),
+    process.cwd() + '/package.json',
     JSON.stringify(newPkg, void 0, 2) + `\n`,
   );
 
@@ -144,7 +142,7 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
 };
 
 export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
-  const mdTemplate = await fs.readFile(relativePath('../Template.md'), 'utf-8');
+  const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
   const appListText = newConfig.apps
     .map((app) => {
       const appMdText = `### [${app.id}](/src/apps/${app.id}.ts) - ${app.name}\n`;
@@ -216,5 +214,5 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
     )
     .replace(`--APP_LIST--`, appListText);
 
-  await fs.writeFile(relativePath(`../README.md`), readMeMdText);
+  await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
 };

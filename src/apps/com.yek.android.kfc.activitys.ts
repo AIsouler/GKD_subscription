@@ -1,6 +1,6 @@
-import type { AppConfig } from '../types';
+import { defineAppConfig } from '../types';
 
-export default <AppConfig>{
+export default defineAppConfig({
   id: 'com.yek.android.kfc.activitys',
   name: `肯德基`,
   groups: [
@@ -11,4 +11,4 @@ export default <AppConfig>{
       rules: '[id=`com.yek.android.kfc.activitys:id/splash_tv_3`]',
     },
   ],
-};
+});
