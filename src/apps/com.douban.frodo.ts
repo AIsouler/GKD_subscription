@@ -26,7 +26,22 @@ export default defineAppConfig({
       activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
       rules: '[id="com.douban.frodo:id/check_status"][checked=true]',
       snapshotUrls: [
-          'https://gkd-kit.gitee.io/import/12508777'
+        'https://gkd-kit.gitee.io/import/12508777'
+      ]
+    },
+    {
+      key: 2,
+      name: '剧照广告',
+      activityIds: 'com.douban.frodo.baseproject.image.SociableImageActivity',
+      rules: [
+        {
+          matches: 'TextView[id="com.douban.frodo:id/ad_not_interest"][text="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12509475',
+        },
+        {
+          matches: 'TextView[id="com.douban.frodo:id/mainText"][text="不感兴趣"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12509476',
+        },
       ]
     }
   ],
