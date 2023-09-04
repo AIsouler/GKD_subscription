@@ -83,7 +83,7 @@ export default defineAppConfig({
         'TextView[text$=`的广告`] - Image[id=null]',
         'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
         'TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]', // 1687076663768 1686969672948
-        `TextView[text=''] + Image[text=''] + TextView[text='​'] + Image[id=null][clickable=true]`, // 1687234636980
+        `TextView[text=''] + Image[text=''] + TextView[text='\u200b'] + Image[id=null][clickable=true]`, // 1687234636980
       ],
     },
     {

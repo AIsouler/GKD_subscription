@@ -13,21 +13,32 @@
     "./dist"
   ],
   "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache --fix ./**/*.{js,ts,jsx,tsx}",
     "build": "tsc --noEmit && tsx ./scripts/build.ts",
-    "check": "tsc --noEmit && tsx ./scripts/check.ts",
-    "sync": "tsx ./scripts/sync.ts"
+    "check": "tsc --noEmit && tsx ./scripts/check.ts"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@gkd-kit/selector": "0.0.11",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "6.5.0",
+    "@typescript-eslint/parser": "6.5.0",
     "dayjs": "^1.11.9",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-define-config": "1.23.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "lodash": "^4.17.21",
+    "picocolors": "^1.0.0",
     "prettier": "^3.0.1",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
-    "undici": "^5.23.0",
-    "picocolors": "^1.0.0"
+    "undici": "^5.23.0"
   },
   "author": "lisonge",
   "license": "MIT",
@@ -42,5 +53,18 @@
   "volta": {
     "node": "20.5.0"
   },
-  "packageManager": "pnpm@8.7.1"
+  "packageManager": "pnpm@8.7.1",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --cache --write --ignore-unknown"
+    ],
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --cache --fix"
+    ]
+  }
 }
