@@ -1,0 +1,27 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: |
+      ${{ !contains(github.event.head_commit.message, 'chore: release') }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: volta-cli/action@v3
+
+      - uses: pnpm/action-setup@v2
+
+      - run: pnpm install
+
+      - run: pnpm run check
