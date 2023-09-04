@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 49,
+  "version": 50,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -1017,8 +1017,14 @@
         {
           "key": 0,
           "name": "开屏广告",
-          "activityIds": "com.qidian.QDReader.ui.activity.SplashADActivity",
-          "rules": "Button[text^=`跳过`]"
+          "activityIds": [
+            "com.qidian.QDReader.ui.activity.SplashADActivity",
+            "com.qidian.QDReader.ui.activity.SplashImageActivity"
+          ],
+          "rules": "Button[text^=`跳过`]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12508836"
+          ]
         }
       ]
     },

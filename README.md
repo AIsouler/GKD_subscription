@@ -286,6 +286,7 @@
 ### [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts) - 起点读书
 
 - 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12508836)
 
 ### [com.qiyi.video](/src/apps/com.qiyi.video.ts) - 爱奇艺
 
