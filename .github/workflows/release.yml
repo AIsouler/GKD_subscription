@@ -46,3 +46,6 @@ jobs:
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           pnpm publish
+
+      - name: sync npmmirror
+        run: curl -X PUT 'https://registry-direct.npmmirror.com/@gkd-kit/app/sync'
