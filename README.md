@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 89 个 APP, 共有 156 规则组
+当前订阅文件已适配 90 个 APP, 共有 158 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -167,6 +167,9 @@
   - [快照-2](https://gkd-kit.gitee.io/import/12506164)
 - 不同步到我的动态 - 标记看过时，不同步到我的动态
   - [快照-0](https://gkd-kit.gitee.io/import/12508777)
+- 剧照广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12509475)
+  - [快照-1](https://gkd-kit.gitee.io/import/12509476)
 
 ### [com.dragon.read](/src/apps/com.dragon.read.ts) - 番茄免费小说
 
@@ -180,6 +183,12 @@
 
 - 开屏广告
 - 青少年弹窗
+
+### [com.estrongs.android.pop](/src/apps/com.estrongs.android.pop.ts) - ES文件浏览器
+
+- 内部弹窗广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12509667)
+  - [快照-1](https://gkd-kit.gitee.io/import/12509669)
 
 ### [com.google.android.youtube](/src/apps/com.google.android.youtube.ts) - youtube
 
