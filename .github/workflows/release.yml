@@ -7,8 +7,7 @@ on:
 
 jobs:
   release:
-    if: |
-      ${{ contains(github.event.head_commit.message, 'chore: release') }}
+    if: ${{ startsWith(github.event.head_commit.message, 'chore(main):') && contains(github.event.head_commit.message, 'release') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,9 +20,7 @@ jobs:
 
       - run: pnpm install
 
-      - name: Release
-        run: |
-          pnpm run build
+      - run: pnpm run build
 
       - name: Git commit
         id: commit
@@ -44,10 +41,7 @@ jobs:
           branch: ${{ github.ref }}
 
       - name: Publish package
+        if: ${{ steps.commit.outcome == 'success' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           pnpm publish
-
-      - name: Log
-        if: ${{ steps.commit.outcome != 'success' }}
-        run: echo Nothing to commit.
