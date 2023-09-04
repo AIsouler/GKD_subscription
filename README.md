@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 88 个 APP, 共有 154 规则组
+当前订阅文件已适配 89 个 APP, 共有 155 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -211,6 +211,11 @@
 - 首页推荐流-卡片广告
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/40fb71ad-01a5-4420-9150-88172ff8a3bf)
   - [快照-1](https://gkd-kit.gitee.io/import/38517192/b74150b5-8e9f-4cbb-86a7-722fc739a1b8)
+
+### [com.hupu.games](/src/apps/com.hupu.games.ts) - 虎扑
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12509060)
 
 ### [com.hupu.shihuo](/src/apps/com.hupu.shihuo.ts) - 识货
 
