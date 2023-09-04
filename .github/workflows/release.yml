@@ -46,7 +46,7 @@ jobs:
       - name: Publish package
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-          publish
+          pnpm publish
 
       - name: Log
         if: ${{ steps.commit.outcome != 'success' }}
