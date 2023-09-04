@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/gkd-kit/subscription/compare/v1.1.0...v1.2.0) (2023-09-04)
+
+
+### Features
+
+* 汽水音乐 ([83fca9f](https://github.com/gkd-kit/subscription/commit/83fca9fbc7d28860c4796de4ed29bc2567bbe834))
+
 ## [1.1.0](https://github.com/gkd-kit/subscription/compare/v1.0.0...v1.1.0) (2023-09-04)
 
 
