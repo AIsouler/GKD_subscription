@@ -1,3 +1,5 @@
+name: release-please
+
 on:
   push:
     branches:
@@ -6,8 +8,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-
-name: release-please
 
 jobs:
   release-please:
