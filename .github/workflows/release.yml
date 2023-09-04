@@ -29,8 +29,9 @@ jobs:
           git config --local user.name github-actions[bot]
           git config --global core.autocrlf true
           git config --global core.safecrlf false
+          git status
           git add .
-          git commit -m "CI build" -a
+          git commit -m "build: json,readme" -a
         continue-on-error: true
 
       - name: Git push
