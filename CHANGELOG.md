@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/gkd-kit/subscription/compare/v1.0.0...v1.1.0) (2023-09-04)
+
+
+### Features
+
+* 书旗小说+4规则组 ([afa6130](https://github.com/gkd-kit/subscription/commit/afa6130203914bbe9cdf35056c029194db398447))
+
 ## 1.0.0 (2023-09-04)
 
 
