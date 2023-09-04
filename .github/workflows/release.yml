@@ -43,6 +43,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
 
+      - name: Publish package
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          publish
+
       - name: Log
         if: ${{ steps.commit.outcome != 'success' }}
         run: echo Nothing to commit.
