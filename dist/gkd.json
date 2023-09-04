@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 52,
+  "version": 53,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -789,6 +789,19 @@
               "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/b74150b5-8e9f-4cbb-86a7-722fc739a1b8"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "com.hupu.games",
+      "name": "虎扑",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.hupu.games.main.MainActivity",
+          "rules": "[id=\"com.byted.pangle:id/tt_splash_skip_btn\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12509060"
         }
       ]
     },
