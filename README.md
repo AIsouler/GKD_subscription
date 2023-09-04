@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 87 个 APP, 共有 152 规则组
+当前订阅文件已适配 88 个 APP, 共有 153 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -255,6 +255,11 @@
 
 - 开屏广告
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/d12c3b08-8233-4584-b2b9-595ebb4ce665)
+
+### [com.lucky.luckyclient](/src/apps/com.lucky.luckyclient.ts) - 瑞幸咖啡
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.songe.li/import/12508764)
 
 ### [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts) - 米游社
 
