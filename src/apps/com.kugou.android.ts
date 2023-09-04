@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.kugou.android',
-  name: `酷狗音乐`,
+  name: '酷狗音乐',
   groups: [
     {
       key: 0,

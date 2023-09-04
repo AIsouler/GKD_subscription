@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.zidongdianji',
-  name: `自动点击器`,
+  name: '自动点击器',
   groups: [
     {
       key: 0,

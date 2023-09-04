@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.gotokeep.keep',
-  name: `Keep`,
+  name: 'Keep',
   groups: [
     {
       key: 0,

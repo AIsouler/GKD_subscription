@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.intsig.camscanner',
-  name: `扫描全能王`,
+  name: '扫描全能王',
   groups: [
     {
       key: 0,

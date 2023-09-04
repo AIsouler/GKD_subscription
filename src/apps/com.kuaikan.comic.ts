@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.kuaikan.comic',
-  name: `快看`,
+  name: '快看',
   groups: [
     {
       key: 0,

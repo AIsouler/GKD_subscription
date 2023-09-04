@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.greenpoint.android.mc10086.activity',
-  name: `中国移动`,
+  name: '中国移动',
   groups: [
     {
       key: 0,

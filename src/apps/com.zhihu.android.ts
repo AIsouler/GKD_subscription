@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.zhihu.android',
-  name: `知乎`,
+  name: '知乎',
   groups: [
     {
       key: 0,
@@ -48,10 +48,10 @@ export default defineAppConfig({
     {
       key: 5,
       name: '推荐页广告卡片',
-      desc: `赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告`,
+      desc: '赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
-        `[id='com.zhihu.android:id/content'] >2 TextView[text='不感兴趣'][id='com.zhihu.android:id/title']`, // 1686989681860
+        '[id=\'com.zhihu.android:id/content\'] >2 TextView[text=\'不感兴趣\'][id=\'com.zhihu.android:id/title\']', // 1686989681860
         'TextView[text=`内容质量差`][id=`com.zhihu.android:id/tv_content`]',
         '@ImageView[id=`com.zhihu.android:id/menu`] < FrameLayout - * > TextView[text^=`广告`]', // 1687913210243 1686989714786
         '@ImageView[id=null][clickable=true] -n TextView[text*=`广告`][index=0]', // 1687418944396 1686924015259
@@ -63,7 +63,7 @@ export default defineAppConfig({
       activityIds: 'com.zhihu.android.ContentActivity',
       rules: [
         '@ImageView -n TextView[text=`广告`][index=0]', // 1687787712268 1687787635158
-        `ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[clickable=true]`, // 1688028432747
+        'ImageView[id=null] + TextView[text!=null][id=null] + ViewGroup > ImageView[clickable=true]', // 1688028432747
       ],
     },
     {
@@ -83,7 +83,7 @@ export default defineAppConfig({
         'TextView[text$=`的广告`] - Image[id=null]',
         'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
         'TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]', // 1687076663768 1686969672948
-        `TextView[text=''] + Image[text=''] + TextView[text='\u200b'] + Image[id=null][clickable=true]`, // 1687234636980
+        'TextView[text=\'\'] + Image[text=\'\'] + TextView[text=\'\u200b\'] + Image[id=null][clickable=true]', // 1687234636980
       ],
     },
     {
@@ -94,10 +94,10 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: `推荐页-顶部广告`,
-      activityIds: `com.zhihu.android.app.ui.activity.MainActivity`,
+      name: '推荐页-顶部广告',
+      activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
-        `[id='com.zhihu.android:id/tv_ad_tag'] + [id='com.zhihu.android:id/img_close_focus']`, // 1686911063850
+        '[id=\'com.zhihu.android:id/tv_ad_tag\'] + [id=\'com.zhihu.android:id/img_close_focus\']', // 1686911063850
       ],
     },
   ],

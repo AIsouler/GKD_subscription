@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.djcity',
-  name: `掌上道聚城`,
+  name: '掌上道聚城',
   groups: [
     {
       key: 0,

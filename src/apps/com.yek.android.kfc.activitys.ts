@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.yek.android.kfc.activitys',
-  name: `肯德基`,
+  name: '肯德基',
   groups: [
     {
       key: 0,

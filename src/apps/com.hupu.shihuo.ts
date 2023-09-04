@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.hupu.shihuo',
-  name: `识货`,
+  name: '识货',
   groups: [
     {
       key: 0,

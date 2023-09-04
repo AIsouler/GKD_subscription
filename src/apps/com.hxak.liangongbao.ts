@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.hxak.liangongbao',
-  name: `链工宝`,
+  name: '链工宝',
   groups: [
     {
       key: 0,

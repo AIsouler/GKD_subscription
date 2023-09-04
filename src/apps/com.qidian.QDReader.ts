@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.qidian.QDReader',
-  name: `起点读书`,
+  name: '起点读书',
   groups: [
     {
       key: 0,

@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.handsgo.jiakao.android',
-  name: `驾考宝典`,
+  name: '驾考宝典',
   groups: [
     {
       key: 0,

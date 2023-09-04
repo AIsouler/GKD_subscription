@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.baidu.tieba',
-  name: `百度贴吧`,
+  name: '百度贴吧',
   groups: [
     {
       key: 0,
@@ -64,18 +64,18 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: `首页左侧游戏广告小图标`,
-      activityIds: `com.baidu.tieba.tblauncher.MainTabActivity`,
+      name: '首页左侧游戏广告小图标',
+      activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
       rules: [
-        `ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]`,
+        'ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]',
       ],
     },
     {
       key: 7,
-      name: `升级弹窗`,
-      activityIds: `com.baidu.tieba.UpdateDialog`,
-      rules: `[text="稍后再说"]`,
-      snapshotUrls: `https://gkd-kit.gitee.io/import/12496934`,
+      name: '升级弹窗',
+      activityIds: 'com.baidu.tieba.UpdateDialog',
+      rules: '[text="稍后再说"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12496934',
     },
   ],
 });

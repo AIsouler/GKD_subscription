@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.duowan.kiwi',
-  name: `虎牙直播`,
+  name: '虎牙直播',
   groups: [
     {
       key: 0,

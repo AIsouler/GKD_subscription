@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.google.android.youtube',
-  name: `youtube`,
+  name: 'youtube',
   groups: [
     {
       key: 0,

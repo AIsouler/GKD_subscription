@@ -4,4 +4,4 @@ import picocolors from 'picocolors';
 
 checkConfig(subsConfig);
 
-console.log(picocolors.green(`校验成功, 合法订阅`));
+console.log(picocolors.green('校验成功, 合法订阅'));

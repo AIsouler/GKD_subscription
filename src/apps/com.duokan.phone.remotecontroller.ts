@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.duokan.phone.remotecontroller',
-  name: `万能遥控`,
+  name: '万能遥控',
   groups: [
     {
       key: 0,

@@ -8,7 +8,7 @@ const apps: AppConfig[] = [];
 for await (const tsFp of walk(process.cwd() + '/src/apps')) {
   const mod: AppConfigMudule = await import(url.pathToFileURL(tsFp).href);
   const appConfig = mod.default;
-  if (path.basename(tsFp, `.ts`) != appConfig.id) {
+  if (path.basename(tsFp, '.ts') != appConfig.id) {
     throw new Error(
       `${picocolors.blue(
         tsFp,
@@ -24,9 +24,9 @@ for await (const tsFp of walk(process.cwd() + '/src/apps')) {
 apps.sort((a, b) => (a.id > b.id ? 1 : -1));
 const subsConfig: SubscriptionConfig = {
   id: 0,
-  name: `默认订阅`,
-  author: `lisonge`,
-  supportUri: `https://github.com/gkd-kit/subscription`,
+  name: '默认订阅',
+  author: 'lisonge',
+  supportUri: 'https://github.com/gkd-kit/subscription',
   apps,
 };
 

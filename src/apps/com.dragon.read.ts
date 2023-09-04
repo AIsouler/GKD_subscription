@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.dragon.read',
-  name: `番茄免费小说`,
+  name: '番茄免费小说',
   groups: [
     {
       key: 0,

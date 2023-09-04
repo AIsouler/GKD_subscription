@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.miui.player',
-  name: `小米音乐`,
+  name: '小米音乐',
   groups: [
     {
       key: 0,

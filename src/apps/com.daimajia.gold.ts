@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.daimajia.gold',
-  name: `稀土掘金`,
+  name: '稀土掘金',
   groups: [
     {
       key: 0,

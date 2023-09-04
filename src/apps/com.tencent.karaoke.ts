@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.karaoke',
-  name: `全民K歌`,
+  name: '全民K歌',
   groups: [
     {
       key: 0,

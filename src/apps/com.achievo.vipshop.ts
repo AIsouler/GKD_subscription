@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.achievo.vipshop',
-  name: `唯品会`,
+  name: '唯品会',
   groups: [
     {
       key: 0,

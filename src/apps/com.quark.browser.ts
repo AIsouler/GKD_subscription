@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.quark.browser',
-  name: `夸克浏览器`,
+  name: '夸克浏览器',
   groups: [
     {
       key: 0,

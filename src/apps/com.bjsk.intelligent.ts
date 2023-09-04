@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.bjsk.intelligent',
-  name: `WiFi智能钥匙`,
+  name: 'WiFi智能钥匙',
   groups: [
     {
       key: 0,
