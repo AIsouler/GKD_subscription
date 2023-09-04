@@ -8,8 +8,11 @@ export default defineAppConfig({
       key: -1,
       name: '开屏广告',
       activityIds: 'com.weico.international.ui.ad.AdActivity',
-      rules: 'TextView[text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12509123',
+      rules: 'TextView[text*="跳过"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12509123',
+        'https://gkd-kit.gitee.io/import/12510132',
+      ],
     },
     {
       key: 0,
