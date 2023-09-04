@@ -18,5 +18,16 @@ export default defineAppConfig({
         'https://gkd-kit.gitee.io/import/12506164',
       ],
     },
+    {
+      key: 1,
+      name: '不同步到我的动态',
+      desc: '标记看过时，不同步到我的动态',
+      enable: false,
+      activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
+      rules: '[id="com.douban.frodo:id/check_status"][checked=true]',
+      snapshotUrls: [
+          'https://gkd-kit.gitee.io/import/12508777'
+      ]
+    }
   ],
 });
