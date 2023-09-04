@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 88 个 APP, 共有 153 规则组
+当前订阅文件已适配 88 个 APP, 共有 154 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -147,6 +147,9 @@
 ### [com.ct.client](/src/apps/com.ct.client.ts) - 中国电信
 
 - 开屏广告
+  - [快照-0](https://gkd-kit.songe.li/import/12508958)
+- 用户引导
+  - [快照-0](https://gkd-kit.songe.li/import/12508971)
 
 ### [com.daimajia.gold](/src/apps/com.daimajia.gold.ts) - 稀土掘金
 
