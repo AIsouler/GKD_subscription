@@ -1,8 +1,12 @@
 # @gkd-kit/subscription
 
+<p>
+  <a href="https://www.npmjs.com/package/@gkd-kit/subscription"><img src="https://img.shields.io/npm/v/@gkd-kit/subscription.svg" alt="npm package"></a>
+</p>
+
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 91 个 APP, 共有 160 规则组
+当前订阅文件已适配 93 个 APP, 共有 165 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -282,6 +286,11 @@
 - 开屏广告
   - [快照-0](https://gkd-kit.songe.li/import/12508764)
 
+### [com.luna.music](/src/apps/com.luna.music.ts) - 汽水音乐
+
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12514049)
+
 ### [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts) - 米游社
 
 - 开屏广告
@@ -343,6 +352,20 @@
 ### [com.sdu.didi.psnger](/src/apps/com.sdu.didi.psnger.ts) - 滴滴
 
 - 开屏广告
+
+### [com.shuqi.controller](/src/apps/com.shuqi.controller.ts) - 书旗小说
+
+- 内部右侧浮动广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12513811)
+- 关闭打卡红包弹窗
+  - [快照-0](https://gkd-kit.gitee.io/import/12513822)
+- 阅读页面底部广告 - 点击关闭x图标-关闭优惠券弹窗-关闭当前广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12513893)
+  - [快照-1](https://gkd-kit.gitee.io/import/12513908)
+  - [快照-2](https://gkd-kit.gitee.io/import/12513860)
+- 听书页面底部广告 - 点击卡片右上角关闭按钮-点击底部中间<关闭当前广告>
+  - [快照-0](https://gkd-kit.gitee.io/import/12513959)
+  - [快照-1](https://gkd-kit.gitee.io/import/12513944)
 
 ### [com.sina.weibo](/src/apps/com.sina.weibo.ts) - 微博
 
