@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 54,
+  "version": 55,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -625,6 +625,21 @@
           "snapshotUrls": [
             "https://gkd-kit.gitee.io/import/12508777"
           ]
+        },
+        {
+          "key": 2,
+          "name": "剧照广告",
+          "activityIds": "com.douban.frodo.baseproject.image.SociableImageActivity",
+          "rules": [
+            {
+              "matches": "TextView[id=\"com.douban.frodo:id/ad_not_interest\"][text=\"广告\"][visibleToUser=true]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12509475"
+            },
+            {
+              "matches": "TextView[id=\"com.douban.frodo:id/mainText\"][text=\"不感兴趣\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12509476"
+            }
+          ]
         }
       ]
     },
@@ -683,6 +698,28 @@
             "com.miui.home.launcher.Launcher"
           ],
           "rules": "[id=`com.duowan.kiwi:id/hyui_dialog_button_positive`][text=`我知道了`]"
+        }
+      ]
+    },
+    {
+      "id": "com.estrongs.android.pop",
+      "name": "ES文件浏览器",
+      "groups": [
+        {
+          "key": 0,
+          "name": "内部弹窗广告",
+          "rules": [
+            {
+              "activityIds": "com.fighter.loader.view.InteractTemplateAdDialog",
+              "matches": "[id=\"com.estrongs.android.pop:id/iv_close\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12509667"
+            },
+            {
+              "activityIds": "com.estrongs.android.pop.view.FileExplorerActivity",
+              "matches": "TextView[text!=null] < FrameLayout - ImageView - FrameLayout > ImageView",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12509669"
+            }
+          ]
         }
       ]
     },
