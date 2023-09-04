@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 90 个 APP, 共有 158 规则组
+当前订阅文件已适配 90 个 APP, 共有 159 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -223,8 +223,12 @@
 
 ### [com.hupu.games](/src/apps/com.hupu.games.ts) - 虎扑
 
-- 开屏广告
+- 开屏广告 - 开屏广告,任意界面切回APP广告
   - [快照-0](https://gkd-kit.gitee.io/import/12509060)
+  - [快照-1](https://gkd-kit.gitee.io/import/12510962)
+- 推荐流广告 - 点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12511010)
+  - [快照-1](https://gkd-kit.gitee.io/import/12511005)
 
 ### [com.hupu.shihuo](/src/apps/com.hupu.shihuo.ts) - 识货
 
@@ -416,6 +420,7 @@
 
 - 开屏广告
   - [快照-0](https://gkd-kit.gitee.io/import/12509123)
+  - [快照-1](https://gkd-kit.gitee.io/import/12510132)
 - 主页-推荐流广告
   - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b)
   - [快照-0](https://gkd-kit.gitee.io/import/12505755)
