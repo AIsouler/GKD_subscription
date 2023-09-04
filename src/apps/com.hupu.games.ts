@@ -14,5 +14,21 @@ export default defineAppConfig({
         'https://gkd-kit.gitee.io/import/12510962',
       ],
     },
+    {
+      key: 1,
+      activityIds: 'com.hupu.games.main.MainActivity',
+      name: '推荐流广告',
+      desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
+      rules: [
+        {
+          matches: '[id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12511010',
+        },
+        {
+          matches: '[id="com.hupu.games:id/tv_tag"][text="广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12511005',
+        },
+      ],
+    },
   ],
 });
