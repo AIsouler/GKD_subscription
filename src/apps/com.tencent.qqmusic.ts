@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.qqmusic',
-  name: `QQ音乐`,
+  name: 'QQ音乐',
   groups: [
     {
       key: 0,
@@ -18,8 +18,8 @@ export default defineAppConfig({
       name: '推荐页-广告卡片',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
-        `@LinearLayout[clickable=true] > TextView[text='广告'] + ImageView`, // 1688045698846
-        `TextView[text="广告 | 关闭"][clickable=true]`,
+        '@LinearLayout[clickable=true] > TextView[text=\'广告\'] + ImageView', // 1688045698846
+        'TextView[text="广告 | 关闭"][clickable=true]',
       ],
     },
   ],

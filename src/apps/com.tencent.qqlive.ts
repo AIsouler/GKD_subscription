@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.qqlive',
-  name: `腾讯视频`,
+  name: '腾讯视频',
   groups: [
     {
       key: 0,

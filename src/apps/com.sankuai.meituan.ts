@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.sankuai.meituan',
-  name: `美团`,
+  name: '美团',
   groups: [
     {
       key: 0,

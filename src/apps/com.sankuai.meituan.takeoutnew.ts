@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.sankuai.meituan.takeoutnew',
-  name: `美团外卖`,
+  name: '美团外卖',
   groups: [
     {
       key: 0,
@@ -13,18 +13,19 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: `关闭更新弹窗`,
-      activityIds: `com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog`,
+      name: '关闭更新弹窗',
+      activityIds:
+        'com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog',
       rules: [
-        `[id='com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel']`, // 1686969252896
+        '[id=\'com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel\']', // 1686969252896
       ],
     },
     {
       key: 2,
-      name: `关闭美食广告弹窗`,
-      activityIds: `com.sankuai.waimai.platform.mach.dialog.DynamicDialog`,
+      name: '关闭美食广告弹窗',
+      activityIds: 'com.sankuai.waimai.platform.mach.dialog.DynamicDialog',
       rules: [
-        `@[desc='关闭'][clickable=true] > ImageView`, // 1686969062508
+        '@[desc=\'关闭\'][clickable=true] > ImageView', // 1686969062508
       ],
     },
   ],

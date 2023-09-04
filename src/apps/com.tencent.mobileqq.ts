@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.mobileqq',
-  name: `QQ`,
+  name: 'QQ',
   groups: [
     {
       key: 0,
@@ -12,23 +12,26 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: `消息页面-顶部广告`,
-      activityIds: `com.tencent.mobileqq.activity.SplashActivity`,
+      name: '消息页面-顶部广告',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
-        `ImageView[id!=null][desc='关闭'][clickable=true]`, // 1687669217838
+        'ImageView[id!=null][desc=\'关闭\'][clickable=true]', // 1687669217838
       ],
     },
     {
       key: 2,
-      name: `好友动态-广告卡片`,
+      name: '好友动态-广告卡片',
       rules: [
         {
-          activityIds: `com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog`,
-          matches: `[clickable=true] > ImageView + TextView[text="关闭此条广告"]`, // 1689050230463
+          activityIds:
+            'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
+          matches:
+            '[clickable=true] > ImageView + TextView[text="关闭此条广告"]', // 1689050230463
         },
         {
-          activityIds: `com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity`,
-          matches: `View[desc="广告"] + ImageView[clickable=true]`, // 1689050226722
+          activityIds:
+            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+          matches: 'View[desc="广告"] + ImageView[clickable=true]', // 1689050226722
         },
       ],
     },

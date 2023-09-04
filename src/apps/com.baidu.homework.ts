@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.baidu.homework',
-  name: `作业帮`,
+  name: '作业帮',
   groups: [
     {
       key: 0,

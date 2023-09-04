@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.iqiyi.hotchat',
-  name: `爱奇艺热聊`,
+  name: '爱奇艺热聊',
   groups: [
     {
       key: 0,

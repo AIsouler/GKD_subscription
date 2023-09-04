@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.smile.gifmaker',
-  name: `快手`,
+  name: '快手',
   groups: [
     {
       key: 0,

@@ -15,24 +15,24 @@ const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
 };
 
 const sortKeys: (keyof SubscriptionConfig)[] = [
-  `id`,
-  `name`,
-  `version`,
-  `author`,
+  'id',
+  'name',
+  'version',
+  'author',
   'supportUri',
-  `updateUrl`,
-  `apps`,
+  'updateUrl',
+  'apps',
 ];
 
 export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   const newConfig: SubscriptionConfig = { ...config };
   const oldConfig: SubscriptionConfig = JSON.parse(
-    await fs.readFile(fp, 'utf-8').catch(() => `{}`),
+    await fs.readFile(fp, 'utf-8').catch(() => '{}'),
   );
 
   newConfig.version = oldConfig.version ?? 0;
   if (_.isEqual(newConfig, oldConfig)) {
-    console.log([oldConfig.name, `nothing changed, skip`]);
+    console.log([oldConfig.name, 'nothing changed, skip']);
     return;
   }
   newConfig.version++;
@@ -50,18 +50,18 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   );
   await fs.writeFile(fp, buffer);
 
-  const newPkg = { ...selfPkg, version: `0.0.` + newConfig.version };
+  const newPkg = { ...selfPkg, version: '0.0.' + newConfig.version };
   await fs.writeFile(
     process.cwd() + '/package.json',
-    JSON.stringify(newPkg, void 0, 2) + `\n`,
+    JSON.stringify(newPkg, void 0, 2) + '\n',
   );
 
   await updateReadMeMd(newConfig);
 
   console.log({
-    mtime: dayjs().format(`HH:mm:ss`),
+    mtime: dayjs().format('HH:mm:ss'),
     name: newConfig.name,
-    size: (buffer.length / 1024).toFixed(3) + `KB`,
+    size: (buffer.length / 1024).toFixed(3) + 'KB',
     version: newConfig.version,
   });
 };
@@ -95,7 +95,7 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
           groupName: g.name,
           groupKey: g.key,
         });
-        throw new Error(`invalid duplicated group key`);
+        throw new Error('invalid duplicated group key');
       }
       keys.add(g.key);
     });
@@ -120,7 +120,7 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
               parseSelector(selector);
             } catch (e) {
               console.error({
-                message: `invalid selector syntax`,
+                message: 'invalid selector syntax',
                 appId: app.id,
                 groupKey: g.key,
                 selector,
@@ -137,7 +137,7 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
       sortKeys,
       newKeys,
     });
-    throw new Error(`sortKeys miss some new key`);
+    throw new Error('sortKeys miss some new key');
   }
 };
 
@@ -150,7 +150,7 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
         ?.map((group) => {
           const groupNameMdText =
             `- ${group.name}` +
-            (group.desc ? ` - ${group.desc}` : ``).trimEnd();
+            (group.desc ? ` - ${group.desc}` : '').trimEnd();
 
           const exampleUrls: string[] = [];
           exampleUrls.push(...iArrayToArray(group.exampleUrls));
@@ -170,7 +170,7 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
                 return `  - [示例-${i}](${u})`;
               }
             })
-            .join(`\n`)
+            .join('\n')
             .trimEnd();
 
           const snapshotUrls: string[] = [];
@@ -191,28 +191,28 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
                 return `  - [快照-${i}](${u})`;
               }
             })
-            .join(`\n`);
+            .join('\n');
           return [groupNameMdText, exampleMdText, snapshotMdText]
             .filter((s) => s)
-            .join(`\n`)
+            .join('\n')
             .trimEnd();
         })
-        .join(`\n`)
+        .join('\n')
         .trimEnd();
 
-      return [appMdText, groupMdText].join(`\n`).trimEnd();
+      return [appMdText, groupMdText].join('\n').trimEnd();
     })
-    .join(`\n\n`)
+    .join('\n\n')
     .trimEnd();
   const readMeMdText = mdTemplate
-    .replace(`--APP_SIZE--`, newConfig.apps.length.toString())
+    .replace('--APP_SIZE--', newConfig.apps.length.toString())
     .replace(
-      `--GROUP_SIZE--`,
+      '--GROUP_SIZE--',
       newConfig.apps
         .reduce((p, c) => p + (c.groups?.length || 0), 0)
         .toString(),
     )
-    .replace(`--APP_LIST--`, appListText);
+    .replace('--APP_LIST--', appListText);
 
   await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
 };

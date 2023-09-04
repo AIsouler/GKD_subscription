@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.anjuke.android.app',
-  name: `安居客`,
+  name: '安居客',
   groups: [
     {
       key: 0,

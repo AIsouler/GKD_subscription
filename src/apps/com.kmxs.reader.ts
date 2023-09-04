@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.kmxs.reader',
-  name: `七猫免费小说`,
+  name: '七猫免费小说',
   groups: [
     {
       key: 0,

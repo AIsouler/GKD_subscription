@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.sdu.didi.psnger',
-  name: `滴滴`,
+  name: '滴滴',
   groups: [
     {
       key: 0,

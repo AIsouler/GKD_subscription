@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.icbc',
-  name: `中国工商银行`,
+  name: '中国工商银行',
   groups: [
     {
       key: 0,

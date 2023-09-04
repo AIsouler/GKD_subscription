@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.qiyi.video',
-  name: `爱奇艺`,
+  name: '爱奇艺',
   groups: [
     {
       key: 0,
@@ -19,11 +19,11 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: `我的-顶部广告`,
-      activityIds: `org.qiyi.android.video.MainActivity`,
-      snapshotUrls: `https://gkd-kit.gitee.io/import/12495050`,
+      name: '我的-顶部广告',
+      activityIds: 'org.qiyi.android.video.MainActivity',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12495050',
       rules: [
-        `[id="com.qiyi.video:id/unused_res_a"] > [id="com.qiyi.video:id/close"]`,
+        '[id="com.qiyi.video:id/unused_res_a"] > [id="com.qiyi.video:id/close"]',
       ],
     },
   ],

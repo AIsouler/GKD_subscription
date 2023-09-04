@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.qt.sns',
-  name: `掌上穿越火线`,
+  name: '掌上穿越火线',
   groups: [
     {
       key: 0,

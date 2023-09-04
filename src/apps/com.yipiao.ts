@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.yipiao',
-  name: `智行火车票12306抢票`,
+  name: '智行火车票12306抢票',
   groups: [
     {
       key: 0,

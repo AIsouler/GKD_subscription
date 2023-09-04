@@ -18,5 +18,6 @@ module.exports = defineConfig({
     '@typescript-eslint/no-explicit-any': 'off',
     'no-empty': 'off',
     'prefer-const': 'off',
+    quotes: ['error', 'single', { allowTemplateLiterals: false }],
   },
 });

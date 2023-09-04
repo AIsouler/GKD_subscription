@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.xunlei.downloadprovider',
-  name: `迅雷`,
+  name: '迅雷',
   groups: [
     {
       key: 0,

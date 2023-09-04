@@ -2,17 +2,17 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.mihoyo.hyperion',
-  name: `米游社`,
+  name: '米游社',
   groups: [
     {
       key: 0,
       name: '开屏广告',
       activityIds: [
         'com.mihoyo.hyperion.ui.SplashActivity',
-        `com.mihoyo.hyperion.splash.SplashActivity`,
+        'com.mihoyo.hyperion.splash.SplashActivity',
       ],
       rules: '[id=`com.mihoyo.hyperion:id/mSplashBtJump`]',
-      snapshotUrls: `https://gkd-kit.gitee.io/import/12482738`,
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12482738',
     },
     {
       key: 1,

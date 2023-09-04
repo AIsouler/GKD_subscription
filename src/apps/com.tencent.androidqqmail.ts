@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.tencent.androidqqmail',
-  name: `qq邮箱`,
+  name: 'qq邮箱',
   groups: [
     {
       key: 0,

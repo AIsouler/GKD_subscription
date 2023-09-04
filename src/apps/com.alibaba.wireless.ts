@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.alibaba.wireless',
-  name: `阿里巴巴`,
+  name: '阿里巴巴',
   groups: [
     {
       key: 0,

@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.dianping.v1',
-  name: `大众点评`,
+  name: '大众点评',
   groups: [
     {
       key: 0,

@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'tv.danmaku.bili',
-  name: `B站`,
+  name: 'B站',
   groups: [
     {
       key: -1,
@@ -41,7 +41,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.bilibili.lib.ui.menu',
           matches:
-            "TextView[text='广告质量差'||text='推广质量差'][id^='tv.danmaku.bili:id/reason']", // 1691203420529
+            'TextView[text=\'广告质量差\'||text=\'推广质量差\'][id^=\'tv.danmaku.bili:id/reason\']', // 1691203420529
         },
       ],
     },

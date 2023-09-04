@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.MobileTicket',
-  name: `铁路12306`,
+  name: '铁路12306',
   groups: [
     {
       key: 0,
