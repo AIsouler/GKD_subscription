@@ -2,7 +2,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 89 个 APP, 共有 155 规则组
+当前订阅文件已适配 89 个 APP, 共有 156 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -405,6 +405,8 @@
 
 ### [com.weico.international](/src/apps/com.weico.international.ts) - 微博轻享版
 
+- 开屏广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12509123)
 - 主页-推荐流广告
   - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b)
   - [快照-0](https://gkd-kit.gitee.io/import/12505755)
