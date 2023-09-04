@@ -2,13 +2,8 @@ import dayjs from 'dayjs';
 import _ from 'lodash';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import type selfPkgT from '../package.json';
 import { parseSelector } from './selector';
 import type { IArray, SubscriptionConfig } from './types';
-
-const selfPkg: typeof selfPkgT = JSON.parse(
-  await fs.readFile(process.cwd() + '/package.json', 'utf-8'),
-);
 
 const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
   return Array<T>().concat(array);
@@ -49,12 +44,6 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
     'utf-8',
   );
   await fs.writeFile(fp, buffer);
-
-  const newPkg = { ...selfPkg, version: '0.0.' + newConfig.version };
-  await fs.writeFile(
-    process.cwd() + '/package.json',
-    JSON.stringify(newPkg, void 0, 2) + '\n',
-  );
 
   await updateReadMeMd(newConfig);
 
