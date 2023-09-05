@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/gkd-kit/subscription/compare/v1.5.0...v1.6.0) (2023-09-05)
+
+
+### Features
+
+* **喜马拉雅:** 关闭青少年模式弹窗 ([89bc29a](https://github.com/gkd-kit/subscription/commit/89bc29a728127c046676f896f7b5c20ac6a45cb4))
+* **喜马拉雅:** 播放页面-播放前广告 ([ab977af](https://github.com/gkd-kit/subscription/commit/ab977af0bfa285ee66bc75b18b46285ac56ba59e))
+
 ## [1.5.0](https://github.com/gkd-kit/subscription/compare/v1.4.0...v1.5.0) (2023-09-05)
 
 
