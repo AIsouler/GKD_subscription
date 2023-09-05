@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/gkd-kit/subscription/compare/v1.7.0...v1.8.0) (2023-09-05)
+
+
+### Features
+
+* **抖音:** 关闭朋友推荐弹窗 ([a918a12](https://github.com/gkd-kit/subscription/commit/a918a12b7941042c25d551098ffd9b5586b8cd0e))
+
 ## [1.7.0](https://github.com/gkd-kit/subscription/compare/v1.6.0...v1.7.0) (2023-09-05)
 
 
