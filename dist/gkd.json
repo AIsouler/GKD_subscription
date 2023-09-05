@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 62,
+  "version": 63,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -1841,9 +1841,15 @@
         {
           "key": 3,
           "name": "播放页面-播放前广告",
-          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "activityIds": [
+            "com.ximalaya.ting.android.host.activity.MainActivity",
+            "com.ximalaya.ting.android.framework.view.dialog"
+          ],
           "rules": "[id=\"com.ximalaya.ting.android:id/main_play_ad_close_real\"]",
-          "snapshotUrls": "https://gkd-kit.gitee.io/import/12506250"
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12506250",
+            "https://gkd-kit.gitee.io/import/12520626"
+          ]
         },
         {
           "key": 4,
@@ -1878,6 +1884,18 @@
           "name": "关闭更新弹窗",
           "rules": "[id=\"com.ximalaya.ting.android:id/host_tv_update_later\"]",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12506287"
+        },
+        {
+          "key": 7,
+          "name": "关闭青少年模式弹窗",
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12506209",
+          "rules": {
+            "matches": [
+              "[text*=\"青少年模式\"][id=\"com.ximalaya.ting.android:id/host_btn_set\"]",
+              "[id=\"com.ximalaya.ting.android:id/host_dialog_close\"]"
+            ]
+          }
         }
       ]
     },

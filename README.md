@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 97 个 APP, 共有 169 规则组
+当前订阅文件已适配 97 个 APP, 共有 170 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -508,6 +508,7 @@
   - [快照-1](https://gkd-kit.gitee.io/import/12506225)
 - **播放页面-播放前广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12506250)
+  - [快照-1](https://gkd-kit.gitee.io/import/12520626)
 - **首页-推荐列表广告** - 点击关闭-点击屏蔽
   - [快照-0](https://gkd-kit.gitee.io/import/12506258)
   - [快照-1](https://gkd-kit.gitee.io/import/12506253)
@@ -515,6 +516,8 @@
   - [快照-0](https://gkd-kit.gitee.io/import/12506270)
 - **关闭更新弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12506287)
+- **关闭青少年模式弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12506209)
 
 ### [com.ximalaya.ting.lite](/src/apps/com.ximalaya.ting.lite.ts) - 喜马拉雅极速版
 
