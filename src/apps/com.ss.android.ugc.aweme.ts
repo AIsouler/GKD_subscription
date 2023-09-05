@@ -28,5 +28,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      activityIds: [
+        'com.ss.android.ugc.aweme.main.MainActivity',
+        'com.miui.home.launcher.Launcher',
+      ],
+      name: '关闭朋友推荐弹窗',
+      rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12525387',
+        'https://gkd-kit.gitee.io/import/12525389',
+      ],
+    },
   ],
 });
