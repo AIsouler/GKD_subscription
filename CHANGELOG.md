@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/gkd-kit/subscription/compare/v1.4.0...v1.5.0) (2023-09-05)
+
+
+### Features
+
+* **百度文库:** 开屏广告 ([e26ca60](https://github.com/gkd-kit/subscription/commit/e26ca607b8737385196faed989bf73ba8e6081a5))
+
 ## [1.4.0](https://github.com/gkd-kit/subscription/compare/v1.3.0...v1.4.0) (2023-09-05)
 
 
