@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/gkd-kit/subscription/compare/v1.2.0...v1.3.0) (2023-09-05)
+
+
+### Features
+
+* **鲨鱼记账:** 新用户特惠广告 ([c523059](https://github.com/gkd-kit/subscription/commit/c523059a9d0b313634a81b5833f8f6a73b0eb0c8))
+
 ## [1.2.0](https://github.com/gkd-kit/subscription/compare/v1.1.0...v1.2.0) (2023-09-04)
 
 
