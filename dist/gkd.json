@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 60,
+  "version": 61,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -922,6 +922,19 @@
       ]
     },
     {
+      "id": "com.jingdong.app.mall",
+      "name": "京东",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "rules": "[desc$=\"广告\"] +2 [desc=\"跳过\"] > [text=\"跳过\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12519430"
+        }
+      ]
+    },
+    {
       "id": "com.jym.mall",
       "name": "交易猫",
       "groups": [
@@ -967,6 +980,19 @@
           "name": "开屏广告",
           "activityIds": "com.kuaikan.comic.ui.AdvertisementActivity",
           "rules": "[id=`com.kuaikan.comic:id/skip_button`]"
+        }
+      ]
+    },
+    {
+      "id": "com.kuaishou.nebula",
+      "name": "快手极速版",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.yxcorp.gifshow.HomeActivity",
+          "rules": "[id=\"com.kuaishou.nebula:id/splash_skip_text\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12519389"
         }
       ]
     },
