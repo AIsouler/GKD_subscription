@@ -1,8 +1,5 @@
 import { defineAppConfig } from '../types';
 
-// TODO 喜马拉雅 青少年模式弹窗 没有关闭按钮, 但是可以点击根节点以外的区域或者按下返回键关闭这个弹窗
-// https://gkd-kit.gitee.io/import/12506209
-
 export default defineAppConfig({
   id: 'com.ximalaya.ting.android',
   name: '喜马拉雅',
@@ -61,9 +58,15 @@ export default defineAppConfig({
     {
       key: 3,
       name: '播放页面-播放前广告',
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      activityIds: [
+        'com.ximalaya.ting.android.host.activity.MainActivity',
+        'com.ximalaya.ting.android.framework.view.dialog',
+      ],
       rules: '[id="com.ximalaya.ting.android:id/main_play_ad_close_real"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12506250',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12506250',
+        'https://gkd-kit.gitee.io/import/12520626',
+      ],
     },
     {
       key: 4,
