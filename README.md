@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 97 个 APP, 共有 170 规则组
+当前订阅文件已适配 97 个 APP, 共有 171 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -413,6 +413,9 @@
 ### [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts) - 抖音
 
 - **关闭青少年弹窗**
+- **关闭用户推荐**
+  - [快照-0](https://gkd-kit.gitee.io/import/12520962)
+  - [快照-1](https://gkd-kit.gitee.io/import/12520943)
 
 ### [com.taobao.taobao](/src/apps/com.taobao.taobao.ts) - 淘宝
 
