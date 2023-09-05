@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 93 个 APP, 共有 165 规则组
+当前订阅文件已适配 94 个 APP, 共有 166 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -352,6 +352,12 @@
 ### [com.sdu.didi.psnger](/src/apps/com.sdu.didi.psnger.ts) - 滴滴
 
 - **开屏广告**
+
+### [com.shark.jizhang](/src/apps/com.shark.jizhang.ts) - 鲨鱼记账
+
+- **新用户特惠广告** - 弹窗广告,右下角浮动广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12518500)
+  - [快照-1](https://gkd-kit.gitee.io/import/12518517)
 
 ### [com.shuqi.controller](/src/apps/com.shuqi.controller.ts) - 书旗小说
 

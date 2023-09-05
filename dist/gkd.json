@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 59,
+  "version": 60,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -1070,7 +1070,7 @@
         {
           "key": 1,
           "name": "miui-为什么不希望看到这条推广",
-          "desc": "关闭这个提示,使用ADB禁用广告组件时,点击此按钮无反应",
+          "desc": "关闭这个提示",
           "activityIds": "com.xiaomi.ad.feedback",
           "rules": "[id=`com.miui.systemAdSolution:id/no_interest`]"
         }
@@ -1245,6 +1245,27 @@
           "name": "开屏广告",
           "activityIds": "com.didi.sdk.app.launch.splash.SplashActivity",
           "rules": "[id=`com.sdu.didi.psnger:id/skip_ad_ll`]"
+        }
+      ]
+    },
+    {
+      "id": "com.shark.jizhang",
+      "name": "鲨鱼记账",
+      "groups": [
+        {
+          "key": 0,
+          "name": "新用户特惠广告",
+          "desc": "弹窗广告,右下角浮动广告",
+          "activityIds": "com.shark.jizhang.module.main.MainActivity",
+          "rules": [
+            {
+              "matches": "[id=\"com.shark.jizhang:id/buy_later_view\"||id=\"com.shark.jizhang:id/tv_count_down\"] - [id=\"com.shark.jizhang:id/close_view\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12518500",
+                "https://gkd-kit.gitee.io/import/12518517"
+              ]
+            }
+          ]
         }
       ]
     },
