@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 61,
+  "version": 62,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -351,6 +351,25 @@
           "activityIds": "com.baidu.tieba.UpdateDialog",
           "rules": "[text=\"稍后再说\"]",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12496934"
+        }
+      ]
+    },
+    {
+      "id": "com.baidu.wenku",
+      "name": "百度文库",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": [
+            "com.baidu.wenku.splash.view.activity.WelcomeActivity",
+            "com.miui.home.launcher.Launcher"
+          ],
+          "rules": "[id=\"com.baidu.wenku:id/jump_second\"]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12520200",
+            "https://gkd-kit.gitee.io/import/12520204"
+          ]
         }
       ]
     },
