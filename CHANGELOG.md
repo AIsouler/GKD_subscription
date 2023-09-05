@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/gkd-kit/subscription/compare/v1.3.0...v1.4.0) (2023-09-05)
+
+
+### Features
+
+* **京东:** 开屏广告 ([552ca15](https://github.com/gkd-kit/subscription/commit/552ca15d099a460b805bb5aac0621e974c207868))
+* **快手极速版:** 开屏广告 ([30445ae](https://github.com/gkd-kit/subscription/commit/30445aef144ec1f33d3c5280821a7138bc8370a7))
+
 ## [1.3.0](https://github.com/gkd-kit/subscription/compare/v1.2.0...v1.3.0) (2023-09-05)
 
 
