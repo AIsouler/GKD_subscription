@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 94 个 APP, 共有 166 规则组
+当前订阅文件已适配 96 个 APP, 共有 168 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -254,6 +254,11 @@
 
 - **开屏广告**
 
+### [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts) - 京东
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12519430)
+
 ### [com.jym.mall](/src/apps/com.jym.mall.ts) - 交易猫
 
 - **升级弹窗**
@@ -271,6 +276,11 @@
 ### [com.kuaikan.comic](/src/apps/com.kuaikan.comic.ts) - 快看
 
 - **开屏广告**
+
+### [com.kuaishou.nebula](/src/apps/com.kuaishou.nebula.ts) - 快手极速版
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12519389)
 
 ### [com.kugou.android](/src/apps/com.kugou.android.ts) - 酷狗音乐
 
