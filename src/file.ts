@@ -87,6 +87,24 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
         throw new Error('invalid duplicated group key');
       }
       keys.add(g.key);
+
+      // check duplicated rule key
+      const ruleKeys = new Set<number>();
+      iArrayToArray(g.rules).forEach((r) => {
+        if (typeof r == 'object' && r.key !== undefined) {
+          if (ruleKeys.has(r.key)) {
+            console.error({
+              configName: newConfig.name,
+              appId: app.id,
+              groupName: g.name,
+              groupKey: g.key,
+              ruleKey: r.key,
+            });
+            throw new Error('invalid duplicated rule key');
+          }
+          ruleKeys.add(r.key);
+        }
+      });
     });
   });
 
@@ -138,7 +156,7 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
       const groupMdText = app.groups
         ?.map((group) => {
           const groupNameMdText =
-            `- ${group.name}` +
+            `- ${group.enable === false ? '默认禁用 ' : ''}**${group.name}**` +
             (group.desc ? ` - ${group.desc}` : '').trimEnd();
 
           const exampleUrls: string[] = [];

@@ -13,7 +13,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: 'miui-为什么不希望看到这条推广',
-      desc: '关闭这个提示,使用ADB禁用广告组件时,点击此按钮无反应',
+      desc: '关闭这个提示',
       activityIds: 'com.xiaomi.ad.feedback',
       rules: '[id=`com.miui.systemAdSolution:id/no_interest`]',
     },
