@@ -105,5 +105,17 @@ export default defineAppConfig({
       rules: '[id="com.ximalaya.ting.android:id/host_tv_update_later"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12506287',
     },
+    {
+      key: 7,
+      name: '关闭青少年模式弹窗',
+      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12506209',
+      rules: {
+        matches: [
+          '[text*="青少年模式"][id="com.ximalaya.ting.android:id/host_btn_set"]',
+          '[id="com.ximalaya.ting.android:id/host_dialog_close"]',
+        ],
+      },
+    },
   ],
 });
