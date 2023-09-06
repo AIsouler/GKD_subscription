@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/gkd-kit/subscription/compare/v1.12.0...v1.13.0) (2023-09-06)
+
+
+### Features
+
+* add "中国联通、什么值得买、京东云无线宝、发现精彩"开屏广告规则 ([#44](https://github.com/gkd-kit/subscription/issues/44)) ([4b3c930](https://github.com/gkd-kit/subscription/commit/4b3c93044d333eb6c5b010121cc1cbb7884b63dc))
+
 ## [1.12.0](https://github.com/gkd-kit/subscription/compare/v1.11.1...v1.12.0) (2023-09-06)
 
 
