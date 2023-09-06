@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 97 个 APP, 共有 174 规则组
+当前订阅文件已适配 98 个 APP, 共有 176 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -307,6 +307,11 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12514049)
 
+### [com.miaoying.appmy.cs](/src/apps/com.miaoying.appmy.cs.ts) - 新小财神影视
+
+- **关闭公告栏** - APP启动时出现的公告栏
+  - [快照-0](https://gkd-kit.gitee.io/import/12522872)
+
 ### [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts) - 米游社
 
 - **开屏广告**
@@ -424,6 +429,8 @@
 - **关闭朋友推荐弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12525387)
   - [快照-1](https://gkd-kit.gitee.io/import/12525389)
+- **关闭更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12534016)
 
 ### [com.taobao.taobao](/src/apps/com.taobao.taobao.ts) - 淘宝
 
