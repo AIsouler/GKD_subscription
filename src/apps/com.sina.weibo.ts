@@ -24,5 +24,28 @@ export default defineAppConfig({
         matches: ['[text="为何会看到此广告"]', '[text="不感兴趣"]'],
       }, // 1688889362832
     },
+    {
+      key: 3,
+      name: '兴趣领域推荐',
+      desc: '出现在长久未登录的账户再次登录时',
+      activityIds: 'com.sina.weibo.account.interest.InterestActivity',
+      rules:
+        '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"&&text="跳过"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12531405',
+    },
+    {
+      key: 4,
+      name: '精选博主推荐',
+      desc: '出现在长久未登录的账户再次登录时',
+      activityIds: 'com.sina.weibo.account.recommend.RecommendActivity',
+      rules: [
+        '[id="com.sina.weibo:id/tv_option"&&text="取消勾选"]',
+        '[id="com.sina.weibo:id/new_next_btn"&&text="进入微博（已选0个）"]',
+      ],
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12531433',
+        'https://gkd-kit.songe.li/import/12531434',
+      ],
+    },
   ],
 });
