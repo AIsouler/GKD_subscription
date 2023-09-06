@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 98 个 APP, 共有 177 规则组
+当前订阅文件已适配 99 个 APP, 共有 178 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -590,6 +590,11 @@
 ### [li.songe.gkd](/src/apps/li.songe.gkd.ts) - GKD
 
 - **GKD-空规则组**
+
+### [me.ele](/src/apps/me.ele.ts) - 饿了么
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.songe.li/import/12534930)
 
 ### [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts) - B站
 
