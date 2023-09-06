@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 69,
+  "version": 70,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -2221,6 +2221,19 @@
         {
           "key": 0,
           "name": "GKD-空规则组"
+        }
+      ]
+    },
+    {
+      "id": "me.ele",
+      "name": "饿了么",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "me.ele.application.ui.splash.SplashActivity",
+          "rules": "[id=\"me.ele:id/skip_button\"]",
+          "snapshotUrls": "https://gkd-kit.songe.li/import/12534930"
         }
       ]
     },
