@@ -41,5 +41,12 @@ export default defineAppConfig({
         'https://gkd-kit.gitee.io/import/12525389',
       ],
     },
+    {
+      key: 3,
+      name: '关闭更新弹窗',
+      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+      rules: '@[text="以后再说"] +2 [text="立即升级"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12534016',
+    },
   ],
 });
