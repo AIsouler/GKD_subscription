@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.0](https://github.com/gkd-kit/subscription/compare/v1.9.0...v1.10.0) (2023-09-06)
+
+
+### Features
+
+* **抖音:** 关闭更新弹窗 ([b3feb65](https://github.com/gkd-kit/subscription/commit/b3feb65d1b6235dee34895be5e712c357a090d97))
+* **新小财神影视:** 关闭公告栏 ([412b7c8](https://github.com/gkd-kit/subscription/commit/412b7c8a66275c46e7922e8d4ffead23a3a013ae))
+
 ## [1.9.0](https://github.com/gkd-kit/subscription/compare/v1.8.0...v1.9.0) (2023-09-06)
 
 
