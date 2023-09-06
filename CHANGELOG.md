@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/gkd-kit/subscription/compare/v1.11.1...v1.12.0) (2023-09-06)
+
+
+### Features
+
+* 饿了么-开屏广告 ([#42](https://github.com/gkd-kit/subscription/issues/42)) ([87d74a0](https://github.com/gkd-kit/subscription/commit/87d74a0c8e047066b449395ec882ce8bd90c1591))
+
 ## [1.11.1](https://github.com/gkd-kit/subscription/compare/v1.11.0...v1.11.1) (2023-09-06)
 
 
