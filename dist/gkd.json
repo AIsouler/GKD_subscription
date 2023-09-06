@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 66,
+  "version": 67,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -1069,6 +1069,23 @@
       ]
     },
     {
+      "id": "com.miaoying.appmy.cs",
+      "name": "新小财神影视",
+      "groups": [
+        {
+          "key": -1,
+          "name": "关闭公告栏",
+          "desc": "APP启动时出现的公告栏",
+          "activityIds": [
+            "com.miaoying.appmy.cs.MainActivity",
+            "com.miui.home.launcher.Launcher"
+          ],
+          "rules": "@[desc=\"我知道了\"] + [desc=\"了解更多\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12522872"
+        }
+      ]
+    },
+    {
       "id": "com.mihoyo.hyperion",
       "name": "米游社",
       "groups": [
@@ -1523,6 +1540,13 @@
             "https://gkd-kit.gitee.io/import/12525387",
             "https://gkd-kit.gitee.io/import/12525389"
           ]
+        },
+        {
+          "key": 3,
+          "name": "关闭更新弹窗",
+          "activityIds": "com.ss.android.ugc.aweme.main.MainActivity",
+          "rules": "@[text=\"以后再说\"] +2 [text=\"立即升级\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12534016"
         }
       ]
     },
