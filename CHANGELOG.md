@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/gkd-kit/subscription/compare/v1.10.0...v1.11.0) (2023-09-06)
+
+
+### Features
+
+* **中国移动:** 关闭更新弹窗 ([fc27e7d](https://github.com/gkd-kit/subscription/commit/fc27e7d23776a81a7220a07570e1ddf795b525c4))
+
 ## [1.10.0](https://github.com/gkd-kit/subscription/compare/v1.9.0...v1.10.0) (2023-09-06)
 
 
