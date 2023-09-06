@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 98 个 APP, 共有 176 规则组
+当前订阅文件已适配 98 个 APP, 共有 177 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -211,6 +211,8 @@
 ### [com.greenpoint.android.mc10086.activity](/src/apps/com.greenpoint.android.mc10086.activity.ts) - 中国移动
 
 - **开屏广告**
+- **关闭更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12534264)
 
 ### [com.handsgo.jiakao.android](/src/apps/com.handsgo.jiakao.android.ts) - 驾考宝典
 
