@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 70,
+  "version": 71,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -565,6 +565,19 @@
       ]
     },
     {
+      "id": "com.cs_credit_bank",
+      "name": "发现精彩",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.mapass.example.activity.MainActivity_",
+          "rules": "[id=\"com.cs_credit_bank:id/start_skip\"]",
+          "snapshotUrls": "https://gkd-kit.songe.li/import/12536487"
+        }
+      ]
+    },
+    {
       "id": "com.ct.client",
       "name": "中国电信",
       "groups": [
@@ -951,6 +964,19 @@
           "name": "开屏广告",
           "activityIds": "com.iqiyi.hotchat.ui.activity.AdvertisementActivity",
           "rules": "[id=`com.iqiyi.hotchat:id/tv_advertisement_lunch_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.jdcloud.mt.smartrouter",
+      "name": "京东云无线宝",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.jdcloud.mt.smartrouter.nwelcome.WelcomeActivity",
+          "rules": "LinearLayout > TextView[text^=\"跳过\"]",
+          "snapshotUrls": "https://gkd-kit.songe.li/import/12535237"
         }
       ]
     },
@@ -1460,6 +1486,19 @@
       ]
     },
     {
+      "id": "com.sinovatech.unicom.ui",
+      "name": "中国联通",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.sinovatech.unicom.basic.ui.activity.WelcomeClient",
+          "rules": "[id=\"com.sinovatech.unicom.ui:id/welcome_advertise_close\"]",
+          "snapshotUrls": "https://gkd-kit.songe.li/import/12535185"
+        }
+      ]
+    },
+    {
       "id": "com.smile.gifmaker",
       "name": "快手",
       "groups": [
@@ -1468,6 +1507,19 @@
           "name": "关闭青少年弹窗",
           "activityIds": "com.yxcorp.gifshow.HomeActivity",
           "rules": "@[id=`com.smile.gifmaker:id/positive`] + [id=`com.smile.gifmaker:id/set_teenage_mode`]"
+        }
+      ]
+    },
+    {
+      "id": "com.smzdm.client.android",
+      "name": "什么值得买",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.smzdm.client.android.app.WelComeActivity",
+          "rules": "[id=\"com.smzdm.client.android:id/tv_skip\"]",
+          "snapshotUrls": "https://gkd-kit.songe.li/import/12535072"
         }
       ]
     },

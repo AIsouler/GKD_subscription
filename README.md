@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 99 个 APP, 共有 178 规则组
+当前订阅文件已适配 103 个 APP, 共有 182 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -154,6 +154,11 @@
 - **加入书架按钮下面的广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12504525)
 
+### [com.cs_credit_bank](/src/apps/com.cs_credit_bank.ts) - 发现精彩
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.songe.li/import/12536487)
+
 ### [com.ct.client](/src/apps/com.ct.client.ts) - 中国电信
 
 - **开屏广告**
@@ -262,6 +267,11 @@
 ### [com.iqiyi.hotchat](/src/apps/com.iqiyi.hotchat.ts) - 爱奇艺热聊
 
 - **开屏广告**
+
+### [com.jdcloud.mt.smartrouter](/src/apps/com.jdcloud.mt.smartrouter.ts) - 京东云无线宝
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.songe.li/import/12535237)
 
 ### [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts) - 京东
 
@@ -408,9 +418,19 @@
   - [快照-0](https://gkd-kit.songe.li/import/12531433)
   - [快照-1](https://gkd-kit.songe.li/import/12531434)
 
+### [com.sinovatech.unicom.ui](/src/apps/com.sinovatech.unicom.ui.ts) - 中国联通
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.songe.li/import/12535185)
+
 ### [com.smile.gifmaker](/src/apps/com.smile.gifmaker.ts) - 快手
 
 - **关闭青少年弹窗**
+
+### [com.smzdm.client.android](/src/apps/com.smzdm.client.android.ts) - 什么值得买
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.songe.li/import/12535072)
 
 ### [com.snda.wifilocating](/src/apps/com.snda.wifilocating.ts) - WiFi万能钥匙
 
