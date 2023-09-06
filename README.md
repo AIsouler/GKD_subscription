@@ -240,7 +240,8 @@
   - [快照-1](https://gkd-kit.gitee.io/import/12510962)
 - **推荐流广告** - 点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告
   - [快照-0](https://gkd-kit.gitee.io/import/12511010)
-  - [快照-1](https://gkd-kit.gitee.io/import/12511005)
+  - [快照-1](https://gkd-kit.gitee.io/import/12534848)
+  - [快照-2](https://gkd-kit.gitee.io/import/12511005)
 
 ### [com.hupu.shihuo](/src/apps/com.hupu.shihuo.ts) - 识货
 
