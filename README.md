@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 97 个 APP, 共有 172 规则组
+当前订阅文件已适配 97 个 APP, 共有 174 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -394,6 +394,11 @@
 - **开屏广告**
 - **评论区顶部-相关推荐**
 - **关闭不感兴趣广告弹窗**
+- **兴趣领域推荐** - 出现在长久未登录的账户再次登录时
+  - [快照-0](https://gkd-kit.songe.li/import/12531405)
+- **精选博主推荐** - 出现在长久未登录的账户再次登录时
+  - [快照-0](https://gkd-kit.songe.li/import/12531433)
+  - [快照-1](https://gkd-kit.songe.li/import/12531434)
 
 ### [com.smile.gifmaker](/src/apps/com.smile.gifmaker.ts) - 快手
 
