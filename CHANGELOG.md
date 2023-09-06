@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/gkd-kit/subscription/compare/v1.11.0...v1.11.1) (2023-09-06)
+
+
+### Bug Fixes
+
+* **虎扑:** 推荐流广告不能准确关闭 ([330bc8c](https://github.com/gkd-kit/subscription/commit/330bc8c3672164c86d84c01c1ce67aa604389e0e))
+
 ## [1.11.0](https://github.com/gkd-kit/subscription/compare/v1.10.0...v1.11.0) (2023-09-06)
 
 
