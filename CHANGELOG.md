@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/gkd-kit/subscription/compare/v1.8.0...v1.9.0) (2023-09-06)
+
+
+### Features
+
+* **微博:** 兴趣领域和精选博主推荐 ([#36](https://github.com/gkd-kit/subscription/issues/36)) ([e08257b](https://github.com/gkd-kit/subscription/commit/e08257b3356e473fb0180d08dca63c474c9c7c28))
+
 ## [1.8.0](https://github.com/gkd-kit/subscription/compare/v1.7.0...v1.8.0) (2023-09-05)
 
 
