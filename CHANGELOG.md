@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.15.0](https://github.com/gkd-kit/subscription/compare/v1.14.0...v1.15.0) (2023-09-07)
+
+
+### Features
+
+* **豆瓣:** 影评广告卡片 ([1adfa8f](https://github.com/gkd-kit/subscription/commit/1adfa8f91d3916955d8fa3973ee2f699c6c2e1a1))
+
+
+### Performance Improvements
+
+* **豆瓣:** 自动选择不感兴趣弹窗, (默认禁用)信息流广告 ([04b07a8](https://github.com/gkd-kit/subscription/commit/04b07a8f3f896f73bbec0384b0fce7ab24ed4ed5))
+
 ## [1.14.0](https://github.com/gkd-kit/subscription/compare/v1.13.0...v1.14.0) (2023-09-07)
 
 
