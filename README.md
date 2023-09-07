@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 103 个 APP, 共有 182 规则组
+当前订阅文件已适配 103 个 APP, 共有 185 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -185,6 +185,20 @@
 - **剧照广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12509475)
   - [快照-1](https://gkd-kit.gitee.io/import/12509476)
+- **信息流广告** - 首页动态/推荐,帖子底部,点击广告关闭后出现关闭原因底部菜单-选择不感兴趣
+  - [快照-0](https://gkd-kit.gitee.io/import/12548016)
+  - [快照-1](https://gkd-kit.gitee.io/import/12547964)
+  - [快照-2](https://gkd-kit.gitee.io/import/12548011)
+  - [快照-3](https://gkd-kit.gitee.io/import/12548046)
+  - [快照-4](https://gkd-kit.gitee.io/import/12548476)
+  - [快照-5](https://gkd-kit.gitee.io/import/12548064)
+  - [快照-6](https://gkd-kit.gitee.io/import/12548450)
+- **卡片广告** - 书影音-卡片广告-点击卡片右下角"广告"文字
+  - [快照-0](https://gkd-kit.gitee.io/import/12548160)
+  - [快照-1](https://gkd-kit.gitee.io/import/12548116)
+  - [快照-2](https://gkd-kit.gitee.io/import/12548131)
+- **关闭评分反馈弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12548314)
 
 ### [com.dragon.read](/src/apps/com.dragon.read.ts) - 番茄免费小说
 
