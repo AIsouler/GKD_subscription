@@ -47,6 +47,7 @@ export default defineAppConfig({
     {
       key: 3,
       name: '信息流广告',
+      enable: false,
       desc: '首页动态/推荐,帖子底部,点击广告关闭后出现关闭原因底部菜单-选择不感兴趣',
       activityIds: [
         'com.douban.frodo.activity.SplashActivity',
@@ -55,10 +56,6 @@ export default defineAppConfig({
         'com.douban.frodo.subject.activity.ForumTopicActivity',
       ],
       rules: [
-        {
-          matches: '[text="不感兴趣"][id="com.douban.frodo:id/mainText"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548016',
-        },
         {
           matches:
             'ImageView[id="com.douban.frodo:id/avatar"][index=0] +n ImageView[id="com.douban.frodo:id/menu_item"]',
@@ -69,11 +66,6 @@ export default defineAppConfig({
           ],
         },
         {
-          matches:
-            'TextView < FrameLayout + FrameLayout > ImageView +3 FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548476',
-        },
-        {
           matches: '[id$="ad_not_interest"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12548064',
@@ -81,6 +73,21 @@ export default defineAppConfig({
           ],
         },
       ],
+    },
+    {
+      key: 7,
+      name: '自动选择不感兴趣弹窗',
+      desc: '广告关闭原因底部菜单-选择不感兴趣',
+      activityIds: [
+        'com.douban.frodo.activity.SplashActivity',
+        'com.douban.frodo.status.activity.StatusDetailActivity',
+        'com.douban.frodo.subject.structure.activity.MovieActivity',
+        'com.douban.frodo.subject.activity.ForumTopicActivity',
+      ],
+      rules: {
+        matches: '[text="不感兴趣"][id="com.douban.frodo:id/mainText"]',
+        snapshotUrls: 'https://gkd-kit.gitee.io/import/12548016',
+      },
     },
     {
       key: 4,
