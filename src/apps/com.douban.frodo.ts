@@ -113,5 +113,18 @@ export default defineAppConfig({
         snapshotUrls: 'https://gkd-kit.gitee.io/import/12548314',
       },
     },
+    {
+      key: 6,
+      name: '影评广告卡片',
+      desc: '影评顶部评论区顶部广告卡片-点击右下角x关闭广告',
+      activityIds: ['com.douban.frodo.subject.activity.ForumTopicActivity'],
+      rules: [
+        {
+          matches:
+            'TextView < FrameLayout + FrameLayout > ImageView +3 FrameLayout > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548476',
+        },
+      ],
+    },
   ],
 });
