@@ -44,5 +44,74 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '信息流广告',
+      desc: '首页动态/推荐,帖子底部,点击广告关闭后出现关闭原因底部菜单-选择不感兴趣',
+      activityIds: [
+        'com.douban.frodo.activity.SplashActivity',
+        'com.douban.frodo.status.activity.StatusDetailActivity',
+        'com.douban.frodo.subject.structure.activity.MovieActivity',
+        'com.douban.frodo.subject.activity.ForumTopicActivity',
+      ],
+      rules: [
+        {
+          matches: '[text="不感兴趣"][id="com.douban.frodo:id/mainText"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548016',
+        },
+        {
+          matches:
+            'ImageView[id="com.douban.frodo:id/avatar"][index=0] +n ImageView[id="com.douban.frodo:id/menu_item"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12547964',
+            'https://gkd-kit.gitee.io/import/12548011',
+            'https://gkd-kit.gitee.io/import/12548046',
+          ],
+        },
+        {
+          matches:
+            'TextView < FrameLayout + FrameLayout > ImageView +3 FrameLayout > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548476',
+        },
+        {
+          matches: '[id$="ad_not_interest"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12548064',
+            'https://gkd-kit.gitee.io/import/12548450',
+          ],
+        },
+      ],
+    },
+    {
+      key: 4,
+      cd: 10000,
+      name: '卡片广告',
+      desc: '书影音-卡片广告-点击卡片右下角"广告"文字',
+      // 豆瓣在屏幕之外渲染了大量节点, 在节点肉眼不可见但是无障碍可见的情况下, 仍然会触发大量点击
+      // 发现增加一个较高的 cd 值可以避免后续广告节点出现, 从而不会触发点击
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12548160',
+      activityIds: 'com.douban.frodo.activity.SplashActivity',
+      rules: [
+        {
+          matches:
+            '[text="广告"] < * + * > [text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548116',
+        },
+        {
+          matches:
+            '@View[clickable=true] > Image - TextView[text="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12548131',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '关闭评分反馈弹窗',
+      activityIds: 'com.douban.frodo.activity.SplashActivity',
+      rules: {
+        matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
+        snapshotUrls: 'https://gkd-kit.gitee.io/import/12548314',
+      },
+    },
   ],
 });
