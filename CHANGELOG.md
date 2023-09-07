@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/gkd-kit/subscription/compare/v1.13.0...v1.14.0) (2023-09-07)
+
+
+### Features
+
+* **豆瓣:** 信息流广告,卡片广告,关闭评分反馈弹窗 ([89fc85e](https://github.com/gkd-kit/subscription/commit/89fc85e5e460a00566fa035a38c2c55d7f72cf26))
+
 ## [1.13.0](https://github.com/gkd-kit/subscription/compare/v1.12.0...v1.13.0) (2023-09-06)
 
 
