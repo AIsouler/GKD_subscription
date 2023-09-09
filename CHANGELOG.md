@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/gkd-kit/subscription/compare/v1.16.0...v1.17.0) (2023-09-09)
+
+
+### Features
+
+* **新小财神影视:** 内部弹窗广告,内部弹窗广告-2 ([31d2b70](https://github.com/gkd-kit/subscription/commit/31d2b707b7b40903e4680d9cc2dfd0efed401731))
+
 ## [1.16.0](https://github.com/gkd-kit/subscription/compare/v1.15.0...v1.16.0) (2023-09-09)
 
 
