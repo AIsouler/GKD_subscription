@@ -27,7 +27,12 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '@ImageView[desc=null&&id=null] < FrameLayout[childCount=1] +n FrameLayout > FrameLayout > TextView[text.length=4]',
+            '@ImageView < FrameLayout -2 ImageView < FrameLayout + FrameLayout > FrameLayout > TextView[text.length=4]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12565637'],
+        },
+        {
+          matches:
+            '@ImageView[desc=null&&id=null] < FrameLayout[childCount=1] +n FrameLayout[childCount<=1] + FrameLayout > FrameLayout > TextView[text.length=4]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12522881',
             'https://gkd-kit.gitee.io/import/12565480',
