@@ -16,6 +16,10 @@ export default defineAppConfig({
         'TextView[text*=`广告`] - TextView[text^=`跳过`]',
         '[id=`com.kwad.dy.sdk:id/ksad_splash_circle_skip_view`] TextView[text=`跳过`]',
         '[id=`com.byted.pangle:id/tt_splash_skip_btn`]',
+        {
+          matches: '@TextView[text="跳过"] + TextView[text.length=1]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12566191',
+        },
       ],
     },
     {
