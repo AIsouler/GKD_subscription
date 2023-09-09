@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.1](https://github.com/gkd-kit/subscription/compare/v1.18.0...v1.18.1) (2023-09-09)
+
+
+### Bug Fixes
+
+* **百度贴吧:** 开屏广告-增加规则 ([5bdd0e4](https://github.com/gkd-kit/subscription/commit/5bdd0e476df276a66a2d63a6e8fb60774878d5c3))
+
 ## [1.18.0](https://github.com/gkd-kit/subscription/compare/v1.17.1...v1.18.0) (2023-09-09)
 
 
