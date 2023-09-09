@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 75,
+  "version": 76,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -1220,7 +1220,13 @@
           ],
           "rules": [
             {
-              "matches": "@ImageView[desc=null&&id=null] < FrameLayout[childCount=1] +n FrameLayout > FrameLayout > TextView[text.length=4]",
+              "matches": "@ImageView < FrameLayout -2 ImageView < FrameLayout + FrameLayout > FrameLayout > TextView[text.length=4]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12565637"
+              ]
+            },
+            {
+              "matches": "@ImageView[desc=null&&id=null] < FrameLayout[childCount=1] +n FrameLayout[childCount<=1] + FrameLayout > FrameLayout > TextView[text.length=4]",
               "snapshotUrls": [
                 "https://gkd-kit.gitee.io/import/12522881",
                 "https://gkd-kit.gitee.io/import/12565480",
