@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 73,
+  "version": 74,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -847,6 +847,7 @@
         {
           "key": 0,
           "name": "视频播放-跳过广告",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12565261",
           "activityIds": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity",
           "rules": "[id=`com.google.android.youtube:id/skip_ad_button`]"
         }
@@ -1922,6 +1923,25 @@
           "name": "开屏广告",
           "activityIds": "com.tencent.gamehelper.ui.main.WelcomeActivity",
           "rules": "[id=`com.tencent.qt.sns:id/tv_timer`][text$=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.videogo",
+      "name": "萤石云视频",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": [
+            "com.videogo.login.LoadingActivity"
+          ],
+          "rules": [
+            {
+              "matches": "[id=\"com.videogo:id/ad_skip_tv\"]",
+              "snapshotUrls": "https://gkd-kit.songe.li/import/12565356"
+            }
+          ]
         }
       ]
     },

@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 103 个 APP, 共有 187 规则组
+当前订阅文件已适配 104 个 APP, 共有 188 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -224,6 +224,7 @@
 ### [com.google.android.youtube](/src/apps/com.google.android.youtube.ts) - youtube
 
 - **视频播放-跳过广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12565261)
 
 ### [com.gotokeep.keep](/src/apps/com.gotokeep.keep.ts) - Keep
 
@@ -522,6 +523,11 @@
 ### [com.tencent.qt.sns](/src/apps/com.tencent.qt.sns.ts) - 掌上穿越火线
 
 - **开屏广告**
+
+### [com.videogo](/src/apps/com.videogo.ts) - 萤石云视频
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.songe.li/import/12565356)
 
 ### [com.weico.international](/src/apps/com.weico.international.ts) - 微博轻享版
 
