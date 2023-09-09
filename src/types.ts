@@ -20,14 +20,26 @@ type CommonProps = {
    * 如果 设备界面Id startWith activityIds 的任意一项, 则匹配
    */
   activityIds?: IArray<string>;
+
   /**
    * 如果 设备界面Id startWith excludeActivityIds 的任意一项, 则排除匹配, 这个优先级更高
    */
   excludeActivityIds?: IArray<string>;
+
   /**
+   * 单位: 毫秒
+   *
    * 当前规则的冷却时间
    */
   cd?: number;
+
+  /**
+   * 单位: 毫秒
+   *
+   * 延迟执行
+   */
+  delay?: number;
+
   appFilter?: {
     name?: StringFilter;
     versionName?: StringFilter;
