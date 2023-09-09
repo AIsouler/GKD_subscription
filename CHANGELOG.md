@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.16.0](https://github.com/gkd-kit/subscription/compare/v1.15.0...v1.16.0) (2023-09-09)
+
+
+### Features
+
+* **萤石云视频:** 跳过开屏广告 ([#51](https://github.com/gkd-kit/subscription/issues/51)) ([bfe840f](https://github.com/gkd-kit/subscription/commit/bfe840ff040551e6b79db14f69343fa4bef5c13e))
+
+
+### Performance Improvements
+
+* **youtube:** 视频播放-跳过广告-增加快照 ([9a9f008](https://github.com/gkd-kit/subscription/commit/9a9f008d8af8516a87462aac16109fdde0a2e456))
+
 ## [1.15.0](https://github.com/gkd-kit/subscription/compare/v1.14.0...v1.15.0) (2023-09-07)
 
 
