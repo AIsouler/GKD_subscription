@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/gkd-kit/subscription/compare/v1.17.1...v1.18.0) (2023-09-09)
+
+
+### Features
+
+* **快看漫画:** 关闭青少年模式弹窗 ([5d53a67](https://github.com/gkd-kit/subscription/commit/5d53a670c70f8d7199d822dde9e57c22345cc3ec))
+
 ## [1.17.1](https://github.com/gkd-kit/subscription/compare/v1.17.0...v1.17.1) (2023-09-09)
 
 
