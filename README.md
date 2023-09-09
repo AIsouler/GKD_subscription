@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 104 个 APP, 共有 190 规则组
+当前订阅文件已适配 104 个 APP, 共有 191 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -309,9 +309,11 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.songe.li/import/12506297)
 
-### [com.kuaikan.comic](/src/apps/com.kuaikan.comic.ts) - 快看
+### [com.kuaikan.comic](/src/apps/com.kuaikan.comic.ts) - 快看漫画
 
 - **开屏广告**
+- **关闭青少年模式弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12565678)
 
 ### [com.kuaishou.nebula](/src/apps/com.kuaishou.nebula.ts) - 快手极速版
 
