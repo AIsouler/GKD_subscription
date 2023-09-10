@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.20.0](https://github.com/gkd-kit/subscription/compare/v1.19.0...v1.20.0) (2023-09-10)
+
+
+### Features
+
+* **平安好生活:** 开屏广告 ([e0104e3](https://github.com/gkd-kit/subscription/commit/e0104e3fb1c33b042a8b1357c53235b446fc54f6))
+* **微信:** 微信红包自动领取 ([c73a320](https://github.com/gkd-kit/subscription/commit/c73a3204be95f6bd19f716a3869bfdcaedc05a37))
+
 ## [1.19.0](https://github.com/gkd-kit/subscription/compare/v1.18.1...v1.19.0) (2023-09-10)
 
 
