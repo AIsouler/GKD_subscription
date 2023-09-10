@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/gkd-kit/subscription/compare/v1.18.1...v1.19.0) (2023-09-10)
+
+
+### Features
+
+* **虎扑:** 开屏广告 ([b662cca](https://github.com/gkd-kit/subscription/commit/b662ccaa4b68db81126a2acb79b423ea3b0581f2))
+
 ## [1.18.1](https://github.com/gkd-kit/subscription/compare/v1.18.0...v1.18.1) (2023-09-09)
 
 
