@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 104 个 APP, 共有 191 规则组
+当前订阅文件已适配 105 个 APP, 共有 193 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -389,6 +389,11 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12512845)
 
+### [com.pingan.lifecircle](/src/apps/com.pingan.lifecircle.ts) - 平安好生活
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12567724)
+
 ### [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts) - 起点读书
 
 - **开屏广告**
@@ -513,6 +518,12 @@
 - **微信读书网页版扫码登录自动授权**
   - [快照-0](https://gkd-kit.songe.li/import/12506197)
   - [快照-1](https://gkd-kit.songe.li/import/12506201)
+- 默认禁用 **微信红包自动领取** - 自动领取私聊红包,群聊红包
+  - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/32cfda78-b2e1-456c-8d85-bfb2bc4683aa)
+  - [快照-0](https://gkd-kit.gitee.io/import/12567696)
+  - [快照-1](https://gkd-kit.gitee.io/import/12567697)
+  - [快照-2](https://gkd-kit.gitee.io/import/12567698)
+  - [快照-3](https://gkd-kit.gitee.io/import/12567637)
 
 ### [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts) - QQ
 
