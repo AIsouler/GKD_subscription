@@ -56,5 +56,45 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 5,
+      name: '微信红包自动领取',
+      desc: '自动领取私聊红包,群聊红包',
+      exampleUrls:
+        'https://github.com/gkd-kit/subscription/assets/38517192/32cfda78-b2e1-456c-8d85-bfb2bc4683aa',
+      rules: [
+        {
+          name: '从红包结算界面返回',
+          preKeys: [1, 2],
+          activityIds:
+            'com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyBeforeDetailUI',
+          matches: 'ImageView[desc="返回"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12567696',
+        },
+        {
+          key: 1,
+          name: '点击红包-开',
+          activityIds:
+            'com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyNotHookReceiveUI',
+          // Button[desc="开"] 会在出现金币动画时会消失
+          matches: 'ImageButton[desc="开"] + Button[desc="开"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12567697',
+            'https://gkd-kit.gitee.io/import/12567698', // 额外增加,金币动画的快照,规则不在这个快照上运行
+          ],
+        },
+        {
+          key: 2,
+          name: '点击别人发的红包',
+          activityIds: 'com.tencent.mm.ui.LauncherUI',
+          // 第一个 LinearLayout[childCount=1] 区分是自己发的红包还是别人发的
+          // 第二个 LinearLayout[childCount=1] 区分这个红包是否被领取过
+          matches:
+            'LinearLayout[childCount=1] >5 LinearLayout[childCount=1] - ImageView < LinearLayout + View + RelativeLayout > TextView[text="微信红包"][id!=null]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12567637',
+        },
+      ],
+    },
   ],
 });
