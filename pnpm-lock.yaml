@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^17.7.0
     version: 17.7.0
   '@gkd-kit/selector':
-    specifier: 0.0.11
-    version: 0.0.11
+    specifier: 0.0.12
+    version: 0.0.12
   '@types/lodash':
     specifier: ^4.14.195
     version: 4.14.195
@@ -523,8 +523,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@gkd-kit/selector@0.0.11:
-    resolution: {integrity: sha512-WqerYbOBOnVQkDgiqhjSFWfZZdJwPNiM1faFFVHrUCL0cwtpi0QZa0MEknd66i82kTs2bBwqmD8y21syNZaNDg==}
+  /@gkd-kit/selector@0.0.12:
+    resolution: {integrity: sha512-gxA1uMBpbppLAcAng2g/GQwAud3tJFB/osYDYlrpQ2LwgBF7EkxfD0mDtgdHhfoQZpciA4XcdR+RXrYs9BacZw==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.11:

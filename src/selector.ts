@@ -1,5 +1,5 @@
-import SelectorKit from '@gkd-kit/selector';
+import { CommonSelector } from '@gkd-kit/selector';
 
 export const parseSelector = (source: string) => {
-  return SelectorKit.CommonSelector.Companion.parse(source);
+  return CommonSelector.Companion.parse(source);
 };
