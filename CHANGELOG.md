@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.1](https://github.com/gkd-kit/subscription/compare/v1.20.0...v1.20.1) (2023-09-11)
+
+
+### Bug Fixes
+
+* **虎扑:** 开屏广告 ([5eadf58](https://github.com/gkd-kit/subscription/commit/5eadf581a13a48c9ab086eee755c65dd26a13246))
+
 ## [1.20.0](https://github.com/gkd-kit/subscription/compare/v1.19.0...v1.20.0) (2023-09-10)
 
 
