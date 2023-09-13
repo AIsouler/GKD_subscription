@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 84,
+  "version": 85,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -408,9 +408,10 @@
           ],
           "rules": [
             {
-              "matches": "[id=\"com.byted.pangle:id/tt_splash_skip_btn\"]",
+              "matches": "[id=\"com.byted.pangle:id/tt_splash_skip_btn\"||text=\"跳过\"]",
               "snapshotUrls": [
-                "https://gkd-kit.gitee.io/import/12597925"
+                "https://gkd-kit.gitee.io/import/12597925",
+                "https://gkd-kit.gitee.io/import/12598507"
               ]
             }
           ]
