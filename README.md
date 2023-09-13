@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 105 个 APP, 共有 193 规则组
+当前订阅文件已适配 106 个 APP, 共有 194 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -550,6 +550,13 @@
 ### [com.tencent.qt.sns](/src/apps/com.tencent.qt.sns.ts) - 掌上穿越火线
 
 - **开屏广告**
+
+### [com.tima.carnet.m.main](/src/apps/com.tima.carnet.m.main.ts) - 钛马星
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/22029832/5aa3f016-d33c-4821-91bd-f23235b04ad3)
+  - [快照-1](https://gkd-kit.gitee.io/import/12594568)
+  - [快照-2](https://gkd-kit.gitee.io/import/12594574)
 
 ### [com.videogo](/src/apps/com.videogo.ts) - 萤石云视频
 
