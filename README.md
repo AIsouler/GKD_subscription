@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 107 个 APP, 共有 195 规则组
+当前订阅文件已适配 108 个 APP, 共有 197 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -114,6 +114,13 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12520200)
   - [快照-1](https://gkd-kit.gitee.io/import/12520204)
+
+### [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts) - 一刻相册
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12597925)
+- **软件升级提醒**
+  - [快照-0](https://gkd-kit.gitee.io/import/12597916)
 
 ### [com.baidutieba.davy](/src/apps/com.baidutieba.davy.ts) - 贴吧一键签到大师
 
