@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 106 个 APP, 共有 194 规则组
+当前订阅文件已适配 107 个 APP, 共有 195 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -50,6 +50,11 @@
 ### [com.achievo.vipshop](/src/apps/com.achievo.vipshop.ts) - 唯品会
 
 - **开屏广告**
+
+### [com.ai.obc.cbn.app](/src/apps/com.ai.obc.cbn.app.ts) - 中国广电
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/22029832/3d58f8d5-bb6a-464a-88f7-5a27c5e0854c)
 
 ### [com.alibaba.android.rimet](/src/apps/com.alibaba.android.rimet.ts) - 钉钉
 
