@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/gkd-kit/subscription/compare/v1.20.1...v1.21.0) (2023-09-13)
+
+
+### Features
+
+* **钛马星:** 开屏广告 ([#64](https://github.com/gkd-kit/subscription/issues/64)) ([fb54255](https://github.com/gkd-kit/subscription/commit/fb542559af518747b8deb0f75d0acee2c544cf1b))
+
 ## [1.20.1](https://github.com/gkd-kit/subscription/compare/v1.20.0...v1.20.1) (2023-09-11)
 
 
