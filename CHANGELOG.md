@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.0](https://github.com/gkd-kit/subscription/compare/v1.21.0...v1.22.0) (2023-09-13)
+
+
+### Features
+
+* **中国广电:** 开屏广告 ([#66](https://github.com/gkd-kit/subscription/issues/66)) ([2c5dad5](https://github.com/gkd-kit/subscription/commit/2c5dad5d786c45c790fd5af16567e5783fe0acb2))
+
 ## [1.21.0](https://github.com/gkd-kit/subscription/compare/v1.20.1...v1.21.0) (2023-09-13)
 
 
