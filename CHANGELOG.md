@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.0](https://github.com/gkd-kit/subscription/compare/v1.23.0...v1.24.0) (2023-09-13)
+
+
+### Features
+
+* **一刻相册:** 开屏广告-适配其他情形 ([e8d8df2](https://github.com/gkd-kit/subscription/commit/e8d8df2b35b9ff6ccbb2d384e84339d075b3bf94))
+
 ## [1.23.0](https://github.com/gkd-kit/subscription/compare/v1.22.0...v1.23.0) (2023-09-13)
 
 
