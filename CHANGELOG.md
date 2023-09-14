@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.26.1](https://github.com/gkd-kit/subscription/compare/v1.26.0...v1.26.1) (2023-09-14)
+
+
+### Bug Fixes
+
+* sync npmmirror ([78ad7bd](https://github.com/gkd-kit/subscription/commit/78ad7bd047405d24a44500f17cd60704a719a172))
+* **什么值得买:** 开屏广告-适配miui ([2778279](https://github.com/gkd-kit/subscription/commit/2778279651c532cb73b0025fdcdf5a50d7cfda9d))
+
 ## [1.26.0](https://github.com/gkd-kit/subscription/compare/v1.25.0...v1.26.0) (2023-09-14)
 
 
