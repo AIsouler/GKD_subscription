@@ -3,5 +3,6 @@ pnpm-workspace.yaml
 LICENCE
 
 dist
-# README.md by pnpm build
+
 README.md
+CHANGELOG.md
