@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 110 个 APP, 共有 199 规则组
+当前订阅文件已适配 111 个 APP, 共有 200 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -305,6 +305,12 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.songe.li/import/12535237)
+
+### [com.jim.qrcode](/src/apps/com.jim.qrcode.ts) - 随便扫
+
+- **顶部广告卡片** - 点击卡片右上角关闭按钮
+  - [快照-0](https://gkd-kit.gitee.io/import/12606861)
+  - [快照-1](https://gkd-kit.gitee.io/import/12606862)
 
 ### [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts) - 京东
 
