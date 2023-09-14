@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.0](https://github.com/gkd-kit/subscription/compare/v1.24.0...v1.25.0) (2023-09-14)
+
+
+### Features
+
+* **懂车帝:** 开屏广告 ([04d7ea4](https://github.com/gkd-kit/subscription/commit/04d7ea41d17b91a6d2a9a9bf2d968106f2aadec8))
+
 ## [1.24.0](https://github.com/gkd-kit/subscription/compare/v1.23.0...v1.24.0) (2023-09-13)
 
 
