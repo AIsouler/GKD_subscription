@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.26.0](https://github.com/gkd-kit/subscription/compare/v1.25.0...v1.26.0) (2023-09-14)
+
+
+### Features
+
+* **随便扫:** 顶部广告卡片 ([e08aab7](https://github.com/gkd-kit/subscription/commit/e08aab78432eeec119ac53302eb772326811d4ea))
+
 ## [1.25.0](https://github.com/gkd-kit/subscription/compare/v1.24.0...v1.25.0) (2023-09-14)
 
 
