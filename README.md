@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 108 个 APP, 共有 197 规则组
+当前订阅文件已适配 110 个 APP, 共有 199 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -311,6 +311,13 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12519430)
 
+### [com.jxedt](/src/apps/com.jxedt.ts) - 驾校一点通
+
+- **首页广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12605051)
+  - [快照-1](https://gkd-kit.gitee.io/import/12605053)
+  - [快照-2](https://gkd-kit.gitee.io/import/12605057)
+
 ### [com.jym.mall](/src/apps/com.jym.mall.ts) - 交易猫
 
 - **升级弹窗**
@@ -493,6 +500,11 @@
 
 - **西瓜视频-关闭青少年模式弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/78f0c1f6-e8da-4bc4-acd3-5e6dc056b044)
+
+### [com.ss.android.auto](/src/apps/com.ss.android.auto.ts) - 懂车帝
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12605327)
 
 ### [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts) - 抖音
 
