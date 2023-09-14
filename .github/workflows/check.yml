@@ -24,3 +24,12 @@ jobs:
       - run: pnpm install
 
       - run: pnpm run check
+
+      - run: |
+          pnpm run format
+          pnpm run lint
+          git_status=$(git status --porcelain)
+          if [ -n "$git_status" ]; then
+            echo "提交代码风格不合规"
+            exit 1
+          fi
