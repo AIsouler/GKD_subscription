@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.27.0](https://github.com/gkd-kit/subscription/compare/v1.26.1...v1.27.0) (2023-09-15)
+
+
+### Features
+
+* **宝宝树孕育:** 开屏广告以及其它偶发广告 ([#80](https://github.com/gkd-kit/subscription/issues/80)) ([254510e](https://github.com/gkd-kit/subscription/commit/254510e5677c51b4d22ae21265144d5f7e2b60b9))
+* **美团:** 版本更新弹窗 ([#79](https://github.com/gkd-kit/subscription/issues/79)) ([7efb035](https://github.com/gkd-kit/subscription/commit/7efb03560c2b01a7ffbd29a1fd895e35ce8d509b))
+
 ## [1.26.1](https://github.com/gkd-kit/subscription/compare/v1.26.0...v1.26.1) (2023-09-14)
 
 
