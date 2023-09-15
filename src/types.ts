@@ -13,11 +13,13 @@ type StringFilter = {
 };
 
 /**
- * null/undefined 则使用上级属性, 例如 rule.cd 是 null, 则 rule.cd 使用 group.cd
+ * 此类型任意属性如果是 undefined 则使用上级属性, 例如 rule.cd 是 undefined, 则 rule.cd 使用 group.cd
  */
 type CommonProps = {
   /**
    * 如果 设备界面Id startWith activityIds 的任意一项, 则匹配
+   *
+   * 如果要匹配所有界面: `undefined` (不填写) 或者 `[]` (避免使用上级属性)
    */
   activityIds?: IArray<string>;
 
@@ -37,9 +39,13 @@ type CommonProps = {
    * 单位: 毫秒
    *
    * 延迟执行
+   *
    */
   delay?: number;
 
+  /**
+   * 后期估计会修改优化,暂不使用
+   */
   appFilter?: {
     name?: StringFilter;
     versionName?: StringFilter;
@@ -70,7 +76,8 @@ export type AppConfigMudule = {
 
 type GroupConfig = {
   /**
-   * 当前规则组在列表中的唯一标识
+   * 当前规则组在列表中的唯一标识\
+   * 也是客户端禁用/启用此规则组的依据
    */
   key: number;
   name: string;
@@ -144,16 +151,17 @@ export type SubscriptionConfig = {
   name: string;
   /**
    * 必填, 此处有 ? 是因为本项目的 version 由 ts 校验自动生成
+   *
+   * 只有当新订阅的 version 大于本地旧订阅的 version 才执行更新替换本地
    */
   version?: number;
-  author: string;
+  author?: string;
   /**
    * APP 会定时或者用户手动请求这个链接, 如果返回的订阅的 version 大于 APP 订阅当前的 version , 则更新
    */
   updateUrl?: string;
   /**
-   * https url\
-   * android schema url, qq group
+   * https url, custom android schema url
    */
   supportUri?: string;
   apps: AppConfig[];
