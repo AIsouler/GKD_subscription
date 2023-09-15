@@ -28,8 +28,10 @@ jobs:
       - run: |
           pnpm run format
           pnpm run lint
+          git status --porcelain
           git_status=$(git status --porcelain)
           if [ -n "$git_status" ]; then
+            git --no-pager diff
             echo "提交代码风格不合规"
             exit 1
           fi
