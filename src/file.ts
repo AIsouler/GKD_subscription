@@ -72,6 +72,11 @@ export async function* walk(dirPath: string) {
   }
 }
 
+export const validSnapshotUrl = (s: string) => {
+  const u = new URL(s);
+  return u.pathname.startsWith('/import/');
+};
+
 export const checkConfig = (newConfig: SubscriptionConfig) => {
   // check duplicated group key
   newConfig.apps?.forEach((app) => {
@@ -135,6 +140,39 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
               throw e;
             }
           });
+      });
+    });
+  });
+
+  // check snapshotUrls
+  newConfig.apps?.forEach((app) => {
+    app.groups?.forEach((g) => {
+      iArrayToArray(g.snapshotUrls).forEach((u) => {
+        if (!validSnapshotUrl(u)) {
+          console.error({
+            appId: app.id,
+            groupKey: g.key,
+          });
+          throw new Error(
+            `invalid snapshotUrls: ${u}\nit should like https://gkd-kit.gitee.io/import/12506571`,
+          );
+        }
+      });
+      iArrayToArray(g.rules).forEach((r, ruleIndex) => {
+        if (typeof r == 'string') return;
+        iArrayToArray(r.snapshotUrls).forEach((u) => {
+          if (!validSnapshotUrl(u)) {
+            console.error({
+              appId: app.id,
+              groupKey: g.key,
+              ruleIndex: ruleIndex,
+              ruleKey: r.key,
+            });
+            throw new Error(
+              `invalid snapshotUrls: ${u}\nit should like https://gkd-kit.gitee.io/import/12506571`,
+            );
+          }
+        });
       });
     });
   });
