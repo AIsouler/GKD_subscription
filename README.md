@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 111 个 APP, 共有 200 规则组
+当前订阅文件已适配 112 个 APP, 共有 204 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -77,6 +77,16 @@
 ### [com.anjuke.android.app](/src/apps/com.anjuke.android.app.ts) - 安居客
 
 - **开屏广告**
+
+### [com.babytree.apps.pregnancy](/src/apps/com.babytree.apps.pregnancy.ts) - 宝宝树孕育
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12614755)
+  - [快照-1](https://gkd-kit.gitee.io/import/12614757)
+- **弹出广告(偶发)**
+  - [快照-0](https://gkd-kit.gitee.io/import/12614834)
+- **首页右侧悬浮广告(偶发)**
+  - [快照-0](https://gkd-kit.gitee.io/import/12614838)
 
 ### [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts) - 百度地图
 
@@ -440,6 +450,8 @@
 ### [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts) - 美团
 
 - **开屏广告**
+- **版本更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12614559)
 
 ### [com.sankuai.meituan.takeoutnew](/src/apps/com.sankuai.meituan.takeoutnew.ts) - 美团外卖
 
