@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 89,
+  "version": 90,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -168,6 +168,21 @@
             {
               "matches": "[id=\"com.ai.obc.cbn.app:id/tvTg\"]",
               "snapshotUrls": "https://gkd-kit.gitee.io/import/22029832/3d58f8d5-bb6a-464a-88f7-5a27c5e0854c"
+            }
+          ]
+        },
+        {
+          "key": 2,
+          "name": "版本弹窗",
+          "activityIds": [
+            "com.ai.obc.cbn.app.ui.other.activity.MainActivity"
+          ],
+          "rules": [
+            {
+              "matches": "[id$=\"/ivDis\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12617201"
+              ]
             }
           ]
         }
