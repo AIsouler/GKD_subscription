@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.28.0](https://github.com/gkd-kit/subscription/compare/v1.27.0...v1.28.0) (2023-09-15)
+
+
+### Features
+
+* **中国广电:** 添加版本弹窗规则 ([#83](https://github.com/gkd-kit/subscription/issues/83)) ([3823f7c](https://github.com/gkd-kit/subscription/commit/3823f7c5e67328213a3ed1cbcff589c6d9ddc2f5))
+
 ## [1.27.0](https://github.com/gkd-kit/subscription/compare/v1.26.1...v1.27.0) (2023-09-15)
 
 
