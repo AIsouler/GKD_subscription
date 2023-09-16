@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.31.0](https://github.com/gkd-kit/subscription/compare/v1.30.0...v1.31.0) (2023-09-16)
+
+
+### Features
+
+* **七猫免费小说:** 开屏广告,阅读页面底部广告,阅读结束后显示的广告,签到弹窗 ([#96](https://github.com/gkd-kit/subscription/issues/96)) ([e3a52bf](https://github.com/gkd-kit/subscription/commit/e3a52bf23827a2b48da3a1b637084cd86789868a))
+* **飞猫管家:** 开屏广告 ([#102](https://github.com/gkd-kit/subscription/issues/102)) ([3b337de](https://github.com/gkd-kit/subscription/commit/3b337de513f8d74243c1ca1653daba87f7f051ce))
+
 ## [1.30.0](https://github.com/gkd-kit/subscription/compare/v1.29.0...v1.30.0) (2023-09-16)
 
 
