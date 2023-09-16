@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 90,
+  "version": 91,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -746,6 +746,85 @@
           "name": "开屏广告",
           "activityIds": "com.dianping.v1.NovaMainActivity",
           "rules": "[id=`com.dianping.v1:id/new_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.dongqiudi.news",
+      "name": "懂球帝",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.dongqiudi.news.BaseSplashActivity",
+          "rules": [
+            {
+              "matches": "[id=\"com.byted.pangle:id/tt_splash_skip_btn\"||text^=\"跳过\"&&id=null]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12620568",
+                "https://gkd-kit.gitee.io/import/12620577",
+                "https://gkd-kit.gitee.io/import/12621997"
+              ]
+            },
+            {
+              "name": "另一种倒计时广告",
+              "desc": "此广告要点击文字相邻的图片,如果直接点击文字会无反应或者触发广告跳转",
+              "matches": "[id=\"com.dongqiudi.news:id/ad_skip_time\"] + [id=\"com.dongqiudi.news:id/scale_iv\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12620583",
+                "https://gkd-kit.gitee.io/import/12621953"
+              ]
+            }
+          ]
+        },
+        {
+          "key": 1,
+          "name": "青少年模式弹窗",
+          "activityIds": "com.dongqiudi.news.MainActivity",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12621980",
+          "rules": "[text*=\"青少年模式\"] + [id=\"com.dongqiudi.news:id/tv_know\"]"
+        },
+        {
+          "key": 2,
+          "name": "更新弹窗",
+          "activityIds": "com.dongqiudi.news.DownloadActivity",
+          "rules": "TextView[text*=\"新版本\"] +3 TextView[text=\"下次提醒\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12620586"
+        },
+        {
+          "key": 3,
+          "name": "穿山甲广告弹窗",
+          "activityIds": "com.dongqiudi.news.MainActivity",
+          "rules": "FrameLayout[desc^=\"webview-close\"] > View[clickable=true]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12620588"
+        },
+        {
+          "enable": false,
+          "key": 4,
+          "name": "首页信息流广告",
+          "desc": "点击广告卡片x关闭按钮-关闭反馈理由弹窗",
+          "activityIds": "com.dongqiudi.news.MainActivity",
+          "rules": [
+            {
+              "preKeys": [
+                1,
+                2
+              ],
+              "name": "首页信息流广告-反馈理由",
+              "matches": "TextView[text=\"诱导点击\"][id=\"com.dongqiudi.news:id/text_item\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12620656"
+            },
+            {
+              "key": 1,
+              "matches": "TextView[id=\"com.dongqiudi.news:id/ads_label\"] +(n) ImageView[id=\"com.dongqiudi.news:id/feedback_close\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12620654"
+            },
+            {
+              "key": 2,
+              "matches": "TextView[id=\"com.dongqiudi.news:id/ads_title\"] +(2) RelativeLayout > ImageView[id=\"com.dongqiudi.news:id/feedback_close\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12620788"
+            }
+          ]
         }
       ]
     },
@@ -1534,6 +1613,64 @@
       ]
     },
     {
+      "id": "com.netease.newsreader.activity",
+      "name": "网易新闻",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.netease.nr.biz.ad.newAd.AdActivity",
+          "rules": "[text=\"广告\"] < LinearLayout - LinearLayout > [text=\"跳过\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639864"
+        },
+        {
+          "key": 1,
+          "name": "版本更新弹窗",
+          "activityIds": "com.netease.newsreader.common.base.activity.SingleFragmentActivity",
+          "rules": "[text$=\"版本更新了\"] +(2) RelativeLayout > [text=\"稍后再说\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639884"
+        },
+        {
+          "key": 2,
+          "name": "系统推送弹窗",
+          "desc": "检测到未开启系统推送-点击暂不开启",
+          "activityIds": "com.netease.newsreader.common.base.activity.SingleFragmentActivity",
+          "rules": "[text*=\"开启系统推送\"] - ImageView < * < * < FrameLayout + FrameLayout >(3) Button[text=\"暂不开启\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639800"
+        },
+        {
+          "key": 3,
+          "name": "系统推送提示信息",
+          "desc": "点击顶部提醒右侧x按钮",
+          "activityIds": "com.netease.newsreader.common.base.activity.SingleFragmentActivity",
+          "rules": "[text^=\"打开推送\"] +(2) RelativeLayout > ImageView",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639869"
+        },
+        {
+          "enable": false,
+          "key": 4,
+          "name": "首页信息流广告",
+          "desc": "点击广告卡片x关闭按钮-关闭反馈理由弹窗",
+          "activityIds": "com.netease.nr.phone.main.MainActivity",
+          "rules": [
+            {
+              "preKeys": [
+                1
+              ],
+              "name": "首页信息流广告-反馈理由",
+              "matches": "[text=\"不感兴趣\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12639752"
+            },
+            {
+              "key": 1,
+              "matches": "FrameLayout[childCount=1] >5 TextView[text=\"广告\"] +2 ImageView[clickable=true]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12639751"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.njh.biubiu",
       "name": "biubiu加速器",
       "groups": [
@@ -1639,6 +1776,34 @@
           "activityIds": "com.meituan.android.upgrade.ui.",
           "rules": "TextView[text^=`新版本`] - Button[id=`com.sankuai.meituan:id/btn_close`]",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12614559"
+        },
+        {
+          "enable": false,
+          "key": 2,
+          "name": "美团买菜活动弹窗",
+          "activityIds": "com.meituan.retail.c.android.mrn.mrn.MallMrnModal",
+          "rules": "ViewGroup > ViewGroup +(5) ViewGroup > ImageView",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639717"
+        },
+        {
+          "key": 3,
+          "name": "小调查弹窗",
+          "activityIds": "com.meituan.retail.c.android.mrn.mrn.MallMrnModal",
+          "rules": "[text=\"小调查\"] + ViewGroup > ViewGroup > ImageView",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639723"
+        },
+        {
+          "key": 4,
+          "name": "首页右侧抽奖小广告",
+          "activityIds": [
+            "com.meituan.android.pt.homepage.activity.MainActivity",
+            "com.miui.home.launcher.Launcher"
+          ],
+          "rules": "FrameLayout > @ImageView + ImageView[desc=\"资质与规则\"]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12639815",
+            "https://gkd-kit.gitee.io/import/12639734"
+          ]
         }
       ]
     },
@@ -2345,6 +2510,33 @@
           "snapshotUrls": [
             "https://gkd-kit.gitee.io/import/38517192/9083b291-43f8-4d92-a506-a9dc6ed0156f"
           ]
+        }
+      ]
+    },
+    {
+      "id": "com.xiaomi.smarthome",
+      "name": "米家",
+      "groups": [
+        {
+          "key": 0,
+          "name": "米家智惠广告",
+          "activityIds": "com.xiaomi.smarthome.SmartHomeMainActivity",
+          "rules": [
+            {
+              "matches": "RelativeLayout[id=null] > ImageView[id!=null] + ImageView[clickable=true][id!=null]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12639658"
+              ]
+            }
+          ]
+        },
+        {
+          "enable": false,
+          "key": 1,
+          "name": "设备固件升级提示弹窗",
+          "activityIds": "com.xiaomi.smarthome.framework.plugin.rn.PluginRNActivity",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12639671",
+          "rules": "[text*=\"检测到\"&&text*=\"升级\"] < ViewGroup + ViewGroup > Button > [text = \"取消\"]"
         }
       ]
     },

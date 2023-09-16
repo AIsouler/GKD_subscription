@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 112 个 APP, 共有 205 规则组
+当前订阅文件已适配 115 个 APP, 共有 220 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -199,6 +199,25 @@
 ### [com.dianping.v1](/src/apps/com.dianping.v1.ts) - 大众点评
 
 - **开屏广告**
+
+### [com.dongqiudi.news](/src/apps/com.dongqiudi.news.ts) - 懂球帝
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12620568)
+  - [快照-1](https://gkd-kit.gitee.io/import/12620577)
+  - [快照-2](https://gkd-kit.gitee.io/import/12621997)
+  - [快照-3](https://gkd-kit.gitee.io/import/12620583)
+  - [快照-4](https://gkd-kit.gitee.io/import/12621953)
+- **青少年模式弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12621980)
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12620586)
+- **穿山甲广告弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12620588)
+- 默认禁用 **首页信息流广告** - 点击广告卡片x关闭按钮-关闭反馈理由弹窗
+  - [快照-0](https://gkd-kit.gitee.io/import/12620656)
+  - [快照-1](https://gkd-kit.gitee.io/import/12620654)
+  - [快照-2](https://gkd-kit.gitee.io/import/12620788)
 
 ### [com.douban.frodo](/src/apps/com.douban.frodo.ts) - 豆瓣
 
@@ -423,6 +442,20 @@
   - [快照-0](https://gkd-kit.songe.li/import/38517192/fea3449b-d642-4d75-929f-490421cc9080)
   - [快照-1](https://gkd-kit.songe.li/import/38517192/a977b19d-2b3c-43df-ba01-63e7cbbb3908)
 
+### [com.netease.newsreader.activity](/src/apps/com.netease.newsreader.activity.ts) - 网易新闻
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639864)
+- **版本更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639884)
+- **系统推送弹窗** - 检测到未开启系统推送-点击暂不开启
+  - [快照-0](https://gkd-kit.gitee.io/import/12639800)
+- **系统推送提示信息** - 点击顶部提醒右侧x按钮
+  - [快照-0](https://gkd-kit.gitee.io/import/12639869)
+- 默认禁用 **首页信息流广告** - 点击广告卡片x关闭按钮-关闭反馈理由弹窗
+  - [快照-0](https://gkd-kit.gitee.io/import/12639752)
+  - [快照-1](https://gkd-kit.gitee.io/import/12639751)
+
 ### [com.njh.biubiu](/src/apps/com.njh.biubiu.ts) - biubiu加速器
 
 - **开屏广告**
@@ -454,6 +487,13 @@
 - **开屏广告**
 - **版本更新弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12614559)
+- 默认禁用 **美团买菜活动弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639717)
+- **小调查弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639723)
+- **首页右侧抽奖小广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639815)
+  - [快照-1](https://gkd-kit.gitee.io/import/12639734)
 
 ### [com.sankuai.meituan.takeoutnew](/src/apps/com.sankuai.meituan.takeoutnew.ts) - 美团外卖
 
@@ -635,6 +675,13 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/9083b291-43f8-4d92-a506-a9dc6ed0156f)
+
+### [com.xiaomi.smarthome](/src/apps/com.xiaomi.smarthome.ts) - 米家
+
+- **米家智惠广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639658)
+- 默认禁用 **设备固件升级提示弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12639671)
 
 ### [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts) - 喜马拉雅
 
