@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 115 个 APP, 共有 220 规则组
+当前订阅文件已适配 118 个 APP, 共有 230 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -399,6 +399,13 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12514049)
 
+### [com.maque.app](/src/apps/com.maque.app.ts) - 麻雀省钱
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12641032)
+- **首页活动弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640100)
+
 ### [com.miaoying.appmy.cs](/src/apps/com.miaoying.appmy.cs.ts) - 新小财神影视
 
 - **关闭公告栏** - APP启动时出现的公告栏
@@ -470,6 +477,15 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12508836)
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12641026)
+- **青少年模式弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640241)
+- **活动弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640195)
+  - [快照-1](https://gkd-kit.gitee.io/import/12640158)
+- 默认禁用 **系统推送提示信息** - 点击顶部提醒左侧x按钮
+  - [快照-0](https://gkd-kit.gitee.io/import/12640242)
 
 ### [com.qiyi.video](/src/apps/com.qiyi.video.ts) - 爱奇艺
 
@@ -713,6 +729,17 @@
 - **开屏广告**
 - **首页-推荐-卡片广告**
 
+### [com.xingluo.allcolor](/src/apps/com.xingluo.allcolor.ts) - 一起来涂色
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640349)
+- 默认禁用 **底部穿山甲广告** - 点击广告卡片x关闭按钮-关闭反馈理由弹窗
+  - [快照-0](https://gkd-kit.gitee.io/import/12640358)
+  - [快照-1](https://gkd-kit.gitee.io/import/12640359)
+  - [快照-2](https://gkd-kit.gitee.io/import/12640362)
+  - [快照-3](https://gkd-kit.gitee.io/import/12640374)
+  - [快照-4](https://gkd-kit.gitee.io/import/12640406)
+
 ### [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts) - 迅雷
 
 - **开屏广告**
@@ -747,6 +774,15 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/104f3807-7613-46ff-9eb2-3c8bcb6ee3b1)
   - [快照-1](https://gkd-kit.songe.li/import/12511071)
+
+### [fm.qingting.qtradio](/src/apps/fm.qingting.qtradio.ts) - 蜻蜓FM
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640433)
+  - [快照-1](https://gkd-kit.gitee.io/import/12640971)
+- **播放界面的广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640438)
+  - [快照-1](https://gkd-kit.gitee.io/import/12640981)
 
 ### [gov.pianzong.androidnga](/src/apps/gov.pianzong.androidnga.ts) - NGA玩家社区
 
