@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.30.0](https://github.com/gkd-kit/subscription/compare/v1.29.0...v1.30.0) (2023-09-16)
+
+
+### Features
+
+* **一起来涂色:** 开屏广告,底部穿山甲广告 ([#97](https://github.com/gkd-kit/subscription/issues/97)) ([9a9177f](https://github.com/gkd-kit/subscription/commit/9a9177f84e0d8ea507cbf42998909e210bc9a7df))
+* **蜻蜓FM:** 开屏广告,播放界面的广告 ([#98](https://github.com/gkd-kit/subscription/issues/98)) ([6f17362](https://github.com/gkd-kit/subscription/commit/6f17362bcf44139f17e09f7bdd2163cda738d06e))
+* **起点读书:** 更新弹窗, ([#95](https://github.com/gkd-kit/subscription/issues/95)) ([2d4091d](https://github.com/gkd-kit/subscription/commit/2d4091df660c50c56d970962e789d8d011326d5e))
+* **麻雀省钱:** 开屏广告,首页活动弹窗 ([#94](https://github.com/gkd-kit/subscription/issues/94)) ([5d38540](https://github.com/gkd-kit/subscription/commit/5d38540f44811d7485c30f07986ca3bd595600e4))
+
 ## [1.29.0](https://github.com/gkd-kit/subscription/compare/v1.28.0...v1.29.0) (2023-09-16)
 
 
