@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 118 个 APP, 共有 230 规则组
+当前订阅文件已适配 119 个 APP, 共有 237 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -362,7 +362,19 @@
 
 ### [com.kmxs.reader](/src/apps/com.kmxs.reader.ts) - 七猫免费小说
 
-- **关闭青少年模式**
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640282)
+- **青少年模式弹窗**
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12641338)
+- **阅读页面底部广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640296)
+- **阅读结束后显示的广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640303)
+- 默认禁用 **签到弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12640320)
+- 默认禁用 **右侧悬浮红包** - 此规则无法触发，原因未知，因此默认关闭
+  - [快照-0](https://gkd-kit.gitee.io/import/12640287)
 
 ### [com.koudai.weidian.buyer](/src/apps/com.koudai.weidian.buyer.ts) - 微店
 
@@ -768,6 +780,11 @@
 
 - **开屏广告**
 - **首页顶部广告卡片**
+
+### [com.zy.flt_yishang](/src/apps/com.zy.flt_yishang.ts) - 飞猫管家
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12641337)
 
 ### [ctrip.android.view](/src/apps/ctrip.android.view.ts) - 携程旅行
 
