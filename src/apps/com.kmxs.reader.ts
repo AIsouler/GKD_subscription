@@ -22,6 +22,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: 'com.km.app.update.UpdateVersionV2Activity',
       rules: '[id="com.kmxs.reader:id/tv_update_cancel"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12641338',
     },
     {
       key: 2,
