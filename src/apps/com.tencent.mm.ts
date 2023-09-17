@@ -96,5 +96,35 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 6,
+      name: '订阅号底部广告',
+      desc: '自动点击-广告反馈按钮-不感兴趣-与我无关',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
+      rules: [
+        {
+          key: 1,
+          name: '点击广告反馈按钮',
+          matches: '[text="广告"] + [text="feedback_icon"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642232',
+        },
+        {
+          key: 2,
+          preKeys: [1],
+          name: '点击不感兴趣',
+          matches: '[id^="menu"] > [id="dislike"][text="不感兴趣"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642234'],
+        },
+        {
+          key: 3,
+          preKeys: [2],
+          name: '点击与我无关',
+          matches: '[id^="menu"] > [id="isdismatch"][text="与我无关"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642238'],
+        },
+      ],
+    },
   ],
 });
