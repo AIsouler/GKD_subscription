@@ -11,8 +11,13 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches: '@[text="关闭"] < View + View > [text="安装"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642909',
+          matches: 'View > [text="关闭"]',
+          // 快照里可以选择 @[text="关闭"] < View + View > [text="安装"||text="打开"]
+          // 但是实际执行选择器却无法点击, 原因未知, 需要后续排查
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642909',
+            'https://gkd-kit.gitee.io/import/12643316',
+          ],
         },
         {
           key: 2,
