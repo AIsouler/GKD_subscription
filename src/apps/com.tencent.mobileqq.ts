@@ -15,7 +15,7 @@ export default defineAppConfig({
       name: '消息页面-顶部广告',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
-        'ImageView[id!=null][desc=\'关闭\'][clickable=true]', // 1687669217838
+        'ImageView[id!=null][desc="关闭"][clickable=true]', // 1687669217838
       ],
     },
     {
@@ -34,6 +34,14 @@ export default defineAppConfig({
           matches: 'View[desc="广告"] + ImageView[clickable=true]', // 1689050226722
         },
       ],
+    },
+    {
+      key: 3,
+      name: '频道页面-广告弹窗',
+      activityIds:
+        'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
+      rules: ['ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]'],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12642081'],
     },
   ],
 });
