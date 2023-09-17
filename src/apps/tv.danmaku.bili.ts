@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'tv.danmaku.bili',
-  name: 'B站',
+  name: '哔哩哔哩',
   groups: [
     {
       key: -1,
@@ -41,17 +41,31 @@ export default defineAppConfig({
         {
           activityIds: 'com.bilibili.lib.ui.menu',
           matches:
-            'TextView[text=\'广告质量差\'||text=\'推广质量差\'][id^=\'tv.danmaku.bili:id/reason\']', // 1691203420529
+            'TextView[text=`广告质量差`||text=`推广质量差`][id^=`tv.danmaku.bili:id/reason`]',
         },
       ],
     },
     {
       key: 4,
       name: '视频底部广告',
-      activityIds: 'com.bilibili.video.videodetail.VideoDetailsActivity',
+      activityIds: [
+        'com.bilibili.video.videodetail.VideoDetailsActivity',
+        'com.bilibili.ship.theseus.all.UnitedBizDetailsActivity',
+      ],
       rules: [
         '[id=`tv.danmaku.bili:id/reason1_layout`] > [id=`tv.danmaku.bili:id/reason1`][text*=`广告`]',
-        '[id=`tv.danmaku.bili:id/ad_tint_frame`][desc^=`UP主推荐广告`] @[id=`tv.danmaku.bili:id/more`] > ImageView',
+        {
+          name: '点击屏蔽广告原因',
+          matches:
+            '[id="tv.danmaku.bili:id/menu_text"][text="屏蔽广告"] < [id="tv.danmaku.bili:id/title"] + [id="tv.danmaku.bili:id/dislike_reasons"] >2 [id="tv.danmaku.bili:id/reason1_layout"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642261',
+        },
+        {
+          name: '点击广告卡片右侧菜单图标',
+          matches:
+            '[id=`tv.danmaku.bili:id/ad_tint_frame`][desc^=`UP主推荐广告`] @[id=`tv.danmaku.bili:id/more`] > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642260',
+        },
       ],
     },
     {
