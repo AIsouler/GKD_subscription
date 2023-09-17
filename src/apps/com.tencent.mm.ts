@@ -15,6 +15,11 @@ export default defineAppConfig({
       rules: [
         'TextView[text*="广告"] + TextView[text="关闭该广告"]',
         'ImageView - TextView[text="广告"][id!=null][index=0]',
+        '[text^="你觉得这条广告怎么样"] + FrameLayout >(2) LinearLayout > [text="关闭该广告"]',
+      ],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12642588',
+        'https://gkd-kit.gitee.io/import/12642584',
       ],
     },
     {
