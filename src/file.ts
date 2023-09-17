@@ -40,7 +40,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
     map.set(k, newConfig[k]);
   });
   const buffer = Buffer.from(
-    JSON.stringify(Object.fromEntries(map.entries()), void 0, 2),
+    JSON.stringify(Object.fromEntries(map.entries())),
     'utf-8',
   );
   await fs.writeFile(fp, buffer);
