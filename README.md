@@ -241,9 +241,10 @@
 
 - **谷歌广告-全屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12642909)
-  - [快照-1](https://gkd-kit.gitee.io/import/12643032)
-  - [快照-2](https://gkd-kit.gitee.io/import/12643039)
-  - [快照-3](https://gkd-kit.gitee.io/import/12643246)
+  - [快照-1](https://gkd-kit.gitee.io/import/12643316)
+  - [快照-2](https://gkd-kit.gitee.io/import/12643032)
+  - [快照-3](https://gkd-kit.gitee.io/import/12643039)
+  - [快照-4](https://gkd-kit.gitee.io/import/12643246)
 - **谷歌广告-视频广告** - 点击跳过视频-点击关闭按钮
   - [快照-0](https://gkd-kit.gitee.io/import/12642913)
   - [快照-1](https://gkd-kit.gitee.io/import/12642932)
