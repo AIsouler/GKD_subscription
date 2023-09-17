@@ -14,9 +14,39 @@ export default defineAppConfig({
           snapshotUrls:
             'https://gkd-kit.gitee.io/import/38517192/edc1d0a6-ebdd-48b0-9e11-f0b2c277c40a',
         },
-        '@TextView[text^=`跳过`] + TextView[text=`广告`]',
-        '[id=\'com.byted.pangle:id/tt_splash_skip_btn\']', // 1687136781353
+        '@TextView[text^="跳过"] + TextView[text="广告"]',
+        '[id="com.byted.pangle:id/tt_splash_skip_btn"]', // 1687136781353
       ],
+    },
+    {
+      key: 1,
+      name: '活动弹窗',
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules:
+        '@[id="com.baidu.netdisk:id/iv_close"] + [id="com.baidu.netdisk:id/cl_content"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642505',
+    },
+    {
+      key: 2,
+      name: '首页banner广告',
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642514', // 节点过多，选择器无法查询
+    },
+    {
+      key: 3,
+      name: '首页热门广告',
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules:
+        '[id="com.baidu.netdisk:id/vf_content"] + [id="com.baidu.netdisk:id/close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642514', // 节点过多，选择器无法查询
+    },
+    {
+      key: 4,
+      name: '我的页面-限时福利',
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules: '@TextView + [text="专属福利"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642558', // 节点过多，选择器无法查询
     },
   ],
 });
