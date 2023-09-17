@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 119 个 APP, 共有 237 规则组
+当前订阅文件已适配 133 个 APP, 共有 284 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -23,6 +23,11 @@
 ### [cmb.pb](/src/apps/cmb.pb.ts) - 招商银行
 
 - **开屏广告**
+
+### [cn.com.ruijie.magicbox](/src/apps/cn.com.ruijie.magicbox.ts) - 无线魔盒
+
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642359)
 
 ### [cn.damai](/src/apps/cn.damai.ts) - 大麦
 
@@ -80,6 +85,16 @@
 
 - **开屏广告**
 
+### [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts) - 高德地图
+
+- **首页-地图页面上方消息提醒**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642830)
+- 默认禁用 **首页-签到卡片**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642842)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642845)
+- 默认禁用 **加油页面-优惠券弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642857)
+
 ### [com.babytree.apps.pregnancy](/src/apps/com.babytree.apps.pregnancy.ts) - 宝宝树孕育
 
 - **开屏广告**
@@ -93,6 +108,14 @@
 ### [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts) - 百度地图
 
 - **开屏广告**
+- **地图上方黄页横幅**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642301)
+- **打车界面-右侧悬浮球**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642307)
+- 默认禁用 **美食大礼包弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642310)
+- 默认禁用 **酒店提前订弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642319)
 
 ### [com.baidu.duer.superapp](/src/apps/com.baidu.duer.superapp.ts) - 小度
 
@@ -107,6 +130,14 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/edc1d0a6-ebdd-48b0-9e11-f0b2c277c40a)
+- **活动弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642505)
+- **首页banner广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642514)
+- **首页热门广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642514)
+- **我的页面-限时福利**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642558)
 
 ### [com.baidu.tieba](/src/apps/com.baidu.tieba.ts) - 百度贴吧
 
@@ -156,6 +187,11 @@
 - **右下角小广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12498315)
 
+### [com.cnspeedtest.globalspeed](/src/apps/com.cnspeedtest.globalspeed.ts) - 全球网测
+
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642345)
+
 ### [com.coolapk.market](/src/apps/com.coolapk.market.ts) - 酷安
 
 - **开屏广告**
@@ -165,6 +201,11 @@
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315)
 - **关闭升级弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12503762)
+- **关闭卡片广告（旧版）** - 点击卡片右上角按钮,然后点击关闭弹窗
+  - [快照-0](https://gkd-kit.gitee.io/import/12642132)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642155)
+  - [快照-2](https://gkd-kit.gitee.io/import/12642094)
+  - [快照-3](https://gkd-kit.gitee.io/import/12642148)
 
 ### [com.copymanga.app](/src/apps/com.copymanga.app.ts) - 拷貝漫畫
 
@@ -195,6 +236,23 @@
 ### [com.daimajia.gold](/src/apps/com.daimajia.gold.ts) - 稀土掘金
 
 - **开屏广告**
+
+### [com.daysko.safp](/src/apps/com.daysko.safp.ts) - 7天澳門統考
+
+- **谷歌广告-全屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642909)
+  - [快照-1](https://gkd-kit.gitee.io/import/12643032)
+  - [快照-2](https://gkd-kit.gitee.io/import/12643039)
+  - [快照-3](https://gkd-kit.gitee.io/import/12643246)
+- **谷歌广告-视频广告** - 点击跳过视频-点击关闭按钮
+  - [快照-0](https://gkd-kit.gitee.io/import/12642913)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642932)
+  - [快照-2](https://gkd-kit.gitee.io/import/12642952)
+  - [快照-3](https://gkd-kit.gitee.io/import/12642983)
+- **谷歌广告-页面底部广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642993)
+  - [快照-1](https://gkd-kit.gitee.io/import/12643229)
+  - [快照-2](https://gkd-kit.gitee.io/import/12643001)
 
 ### [com.dianping.v1](/src/apps/com.dianping.v1.ts) - 大众点评
 
@@ -259,6 +317,13 @@
 
 - **开屏广告**
 - **青少年弹窗**
+
+### [com.eastmoney.android.fund](/src/apps/com.eastmoney.android.fund.ts) - 天天基金
+
+- **自选页面广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642387)
+- 默认禁用 **自选页面缩写提示信息**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642387)
 
 ### [com.estrongs.android.pop](/src/apps/com.estrongs.android.pop.ts) - ES文件浏览器
 
@@ -347,6 +412,10 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12519430)
+- 默认禁用 **购物车界面-砸金蛋**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642266)
+- 默认禁用 **我的界面-参与调研**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642270)
 
 ### [com.jxedt](/src/apps/com.jxedt.ts) - 驾校一点通
 
@@ -411,6 +480,11 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12514049)
 
+### [com.m17qcc.mm](/src/apps/com.m17qcc.mm.ts) - 青创网
+
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642297)
+
 ### [com.maque.app](/src/apps/com.maque.app.ts) - 麻雀省钱
 
 - **开屏广告**
@@ -453,6 +527,11 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/1f56aa17-c290-4e56-b6fb-a94bc778448b)
+
+### [com.mxtech.videoplayer.ad](/src/apps/com.mxtech.videoplayer.ad.ts) - MX 播放器
+
+- **谷歌广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642204)
 
 ### [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts) - 网易云音乐
 
@@ -533,6 +612,15 @@
 
 - **开屏广告**
 
+### [com.sf.activity](/src/apps/com.sf.activity.ts) - 顺丰速运
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642434)
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642445)
+- **专属月报弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642441)
+
 ### [com.shark.jizhang](/src/apps/com.shark.jizhang.ts) - 鲨鱼记账
 
 - **新用户特惠广告** - 弹窗广告,右下角浮动广告
@@ -609,6 +697,16 @@
 ### [com.taobao.taobao](/src/apps/com.taobao.taobao.ts) - 淘宝
 
 - **开屏广告**
+- 默认禁用 **限时福利弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642792)
+- **消息页面-热门活动卡片**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642795)
+- **视频页面-活动弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642813)
+- 默认禁用 **视频页面-签到弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642798)
+- 默认禁用 **视频页面-左右侧领取奖励小广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642806)
 
 ### [com.tencent.androidqqmail](/src/apps/com.tencent.androidqqmail.ts) - qq邮箱
 
@@ -626,6 +724,8 @@
 
 - **关闭朋友圈广告** - 朋友圈信息流广告,点击关闭按钮,确认关闭
   - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
+  - [快照-0](https://gkd-kit.gitee.io/import/12642588)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642584)
 - **电脑微信快捷自动登录**
 - **浏览器扫码微信登录自动授权**
 - **微信手机第三方APP申请使用** - 自动点击同意
@@ -638,12 +738,18 @@
   - [快照-1](https://gkd-kit.gitee.io/import/12567697)
   - [快照-2](https://gkd-kit.gitee.io/import/12567698)
   - [快照-3](https://gkd-kit.gitee.io/import/12567637)
+- 默认禁用 **订阅号底部广告** - 自动点击-广告反馈按钮-不感兴趣-与我无关
+  - [快照-0](https://gkd-kit.gitee.io/import/12642232)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642234)
+  - [快照-2](https://gkd-kit.gitee.io/import/12642238)
 
 ### [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts) - QQ
 
 - **开屏广告**
 - **消息页面-顶部广告**
 - **好友动态-广告卡片**
+- **频道页面-广告弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642081)
 
 ### [com.tencent.mtt](/src/apps/com.tencent.mtt.ts) - QQ浏览器
 
@@ -664,12 +770,28 @@
 
 - **开屏广告**
 
+### [com.tencent.weread](/src/apps/com.tencent.weread.ts) - 微信读书
+
+- **系统推送弹窗** - 系统推送弹窗-点击取消
+  - [快照-0](https://gkd-kit.gitee.io/import/12642247)
+
 ### [com.tima.carnet.m.main](/src/apps/com.tima.carnet.m.main.ts) - 钛马星
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/22029832/5aa3f016-d33c-4821-91bd-f23235b04ad3)
   - [快照-1](https://gkd-kit.gitee.io/import/12594568)
   - [快照-2](https://gkd-kit.gitee.io/import/12594574)
+
+### [com.tiqiaa.icontrol](/src/apps/com.tiqiaa.icontrol.ts) - 遥控精灵
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642183)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642185)
+
+### [com.umetrip.android.msky.app](/src/apps/com.umetrip.android.msky.app.ts) - 航旅纵横
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642287)
 
 ### [com.videogo](/src/apps/com.videogo.ts) - 萤石云视频
 
@@ -710,6 +832,13 @@
   - [快照-0](https://gkd-kit.gitee.io/import/12639658)
 - 默认禁用 **设备固件升级提示弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12639671)
+
+### [com.xiaomi.vipaccount](/src/apps/com.xiaomi.vipaccount.ts) - 小米社区
+
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642466)
+- **评论区广告卡片**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642459)
 
 ### [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts) - 喜马拉雅
 
@@ -755,6 +884,32 @@
 ### [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts) - 迅雷
 
 - **开屏广告**
+
+### [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts) - 拼多多
+
+- 默认禁用 **开屏广告** - 占位，暂时不起作用
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642017)
+- 默认禁用 **首页优惠弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642015)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642019)
+- 默认禁用 **免单活动弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642032)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642038)
+- 默认禁用 **红包弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642023)
+- 默认禁用 **多多买菜抽奖弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642053)
+- **多多视频悬浮窗广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642058)
+
+### [com.xyhui](/src/apps/com.xyhui.ts) - PU口袋校园
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642486)
+- **优量汇广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642482)
+  - [快照-1](https://gkd-kit.gitee.io/import/12643276)
 
 ### [com.yek.android.kfc.activitys](/src/apps/com.yek.android.kfc.activitys.ts) - 肯德基
 
@@ -817,7 +972,7 @@
 - **开屏广告**
   - [快照-0](https://gkd-kit.songe.li/import/12534930)
 
-### [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts) - B站
+### [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts) - 哔哩哔哩
 
 - **开屏广告** - 开屏广告,切回APP开屏广告
 - **评论区顶部公告横幅**
@@ -825,4 +980,6 @@
 - **动态推荐卡片**
 - **点击关闭广告后出现的弹窗**
 - **视频底部广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12642261)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642260)
 - **推荐页-可跳过广告**

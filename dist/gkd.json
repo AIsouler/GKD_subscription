@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "默认订阅",
-  "version": 93,
+  "version": 94,
   "author": "lisonge",
   "supportUri": "https://github.com/gkd-kit/subscription",
   "apps": [
@@ -57,6 +57,21 @@
           "name": "开屏广告",
           "activityIds": "cmb.pb.app.mainframe.container.PBMainActivity",
           "rules": "[id=`cmb.pb:id/ll_launch_ad_skip_hot_area`]"
+        }
+      ]
+    },
+    {
+      "id": "cn.com.ruijie.magicbox",
+      "name": "无线魔盒",
+      "groups": [
+        {
+          "key": 1,
+          "name": "更新弹窗",
+          "activityIds": "cn.com.ruijie.wifibox.activity.MainActivity",
+          "rules": [
+            "@ImageView[id=\"cn.com.ruijie.magicbox:id/imageView_close\"] +(2) RelativeLayout > LinearLayout > [text*=\"新版本\"]"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642359"
         }
       ]
     },
@@ -253,6 +268,40 @@
       ]
     },
     {
+      "id": "com.autonavi.minimap",
+      "name": "高德地图",
+      "groups": [
+        {
+          "key": 10,
+          "name": "首页-地图页面上方消息提醒",
+          "activityIds": "com.autonavi.map.activity.NewMapActivity",
+          "rules": "RelativeLayout[desc=\"弹窗\"] > [id=\"com.autonavi.minimap:id/msgbox_popup_clear\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642830"
+        },
+        {
+          "enable": false,
+          "key": 11,
+          "name": "首页-签到卡片",
+          "activityIds": "com.autonavi.map.activity.NewMapActivity",
+          "rules": "@ImageView < ViewGroup -(2) ViewGroup > ViewGroup > View[text*=\"签到\"||text*=\"成长值\"]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642842",
+            "https://gkd-kit.gitee.io/import/12642845"
+          ]
+        },
+        {
+          "enable": false,
+          "key": 12,
+          "name": "加油页面-优惠券弹窗",
+          "activityIds": "com.autonavi.map.activity.NewMapActivity",
+          "rules": "@ImageView < [desc=\"关闭\"][clickable=true] - ViewGroup > ViewGroup > ViewGroup > View[text=\"立即领取\"]",
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642857"
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.babytree.apps.pregnancy",
       "name": "宝宝树孕育",
       "groups": [
@@ -307,8 +356,38 @@
           "activityIds": "com.baidu.baidumaps.MapsActivity",
           "rules": [
             "@TextView[text^=`跳过`] + TextView[text=`广告`]",
-            "ImageView[clickable=false] + TextView[text^='跳过'][clickable=true]"
+            "ImageView[clickable=false] + TextView[text^=\"跳过\"][clickable=true]"
           ]
+        },
+        {
+          "key": 1,
+          "name": "地图上方黄页横幅",
+          "activityIds": "com.baidu.baidumaps.MapsActivity",
+          "rules": "[id=\"com.baidu.BaiduMap:id/yellow_banner_close\"][desc=\"关闭\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642301"
+        },
+        {
+          "key": 2,
+          "name": "打车界面-右侧悬浮球",
+          "activityIds": "com.baidu.baidumaps.MapsActivity",
+          "rules": "RelativeLayout[id=\"com.baidu.BaiduMap:id/rl_close_content\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642307"
+        },
+        {
+          "enable": false,
+          "key": 3,
+          "name": "美食大礼包弹窗",
+          "activityIds": "com.baidu.baidumaps.MapsActivity",
+          "rules": "[text=\"美食大礼包\"] +(6) TextView[id=null][clickable=true]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642310"
+        },
+        {
+          "enable": false,
+          "key": 4,
+          "name": "酒店提前订弹窗",
+          "activityIds": "com.baidu.baidumaps.MapsActivity",
+          "rules": "[id=\"lottie_box\"] + TextView[id=null][clickable=true]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642319"
         }
       ]
     },
@@ -350,9 +429,37 @@
               "matches": "TextView[text=\"跳过\"][clickable=true]",
               "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/edc1d0a6-ebdd-48b0-9e11-f0b2c277c40a"
             },
-            "@TextView[text^=`跳过`] + TextView[text=`广告`]",
-            "[id='com.byted.pangle:id/tt_splash_skip_btn']"
+            "@TextView[text^=\"跳过\"] + TextView[text=\"广告\"]",
+            "[id=\"com.byted.pangle:id/tt_splash_skip_btn\"]"
           ]
+        },
+        {
+          "key": 1,
+          "name": "活动弹窗",
+          "activityIds": "com.baidu.netdisk.ui.MainActivity",
+          "rules": "@[id=\"com.baidu.netdisk:id/iv_close\"] + [id=\"com.baidu.netdisk:id/cl_content\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642505"
+        },
+        {
+          "key": 2,
+          "name": "首页banner广告",
+          "activityIds": "com.baidu.netdisk.ui.MainActivity",
+          "rules": "[id=\"com.baidu.netdisk:id/banner_item_close\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642514"
+        },
+        {
+          "key": 3,
+          "name": "首页热门广告",
+          "activityIds": "com.baidu.netdisk.ui.MainActivity",
+          "rules": "[id=\"com.baidu.netdisk:id/vf_content\"] + [id=\"com.baidu.netdisk:id/close\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642514"
+        },
+        {
+          "key": 4,
+          "name": "我的页面-限时福利",
+          "activityIds": "com.baidu.netdisk.ui.MainActivity",
+          "rules": "@TextView + [text=\"专属福利\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642558"
         }
       ]
     },
@@ -574,6 +681,21 @@
       ]
     },
     {
+      "id": "com.cnspeedtest.globalspeed",
+      "name": "全球网测",
+      "groups": [
+        {
+          "key": 1,
+          "name": "更新弹窗",
+          "activityIds": "com.ruili.android.taierspeed.main.MainActivity",
+          "rules": [
+            "[id=\"com.cnspeedtest.globalspeed:id/vision_btn_ok\"][text=\"更新\"] +2 [id=\"com.cnspeedtest.globalspeed:id/vision_btn_cancel\"]"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642345"
+        }
+      ]
+    },
+    {
       "id": "com.coolapk.market",
       "name": "酷安",
       "groups": [
@@ -605,8 +727,12 @@
                 "com.coolapk.market.view.main.MainActivity",
                 "com.coolapk.market.view.base.SimpleAlphaActivity"
               ],
-              "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315",
-              "matches": "@LinearLayout > TextView[id!=null][text=`不感兴趣`]"
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315"
+              ],
+              "matches": [
+                "[id=\"com.byted.pangle.m:id/tt_item_tv\"][text=`不感兴趣`]"
+              ]
             },
             "Button[text$=\"免广告\"] + Button[text=\"不感兴趣\"]",
             "Button[text$=`去广告`] - Button[text=`不感兴趣`]",
@@ -619,6 +745,39 @@
           "activityIds": "com.coolapk.market.view.main.MainActivity",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12503762",
           "rules": "[text=`立即更新`] - [text=`取消`]"
+        },
+        {
+          "key": 2,
+          "name": "关闭卡片广告（旧版）",
+          "desc": "点击卡片右上角按钮,然后点击关闭弹窗",
+          "activityIds": [
+            "com.coolapk.market.view.feed.FeedDetailActivityV8",
+            "com.bytedance.sdk.openadsdk.core.dislike.ui",
+            "com.coolapk.market.view.node.DynamicNodePageActivity"
+          ],
+          "rules": [
+            {
+              "preKeys": [
+                1
+              ],
+              "name": "关闭广告-反馈理由",
+              "matches": "[text$=\"今日免广告\"] + [text=\"不感兴趣\"][clickable=true]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642132",
+                "https://gkd-kit.gitee.io/import/12642155"
+              ]
+            },
+            {
+              "key": 1,
+              "matches": [
+                "[id=\"com.coolapk.market:id/close_view\"][desc=\"关闭\"]"
+              ],
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642094",
+                "https://gkd-kit.gitee.io/import/12642148"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -734,6 +893,95 @@
           "name": "开屏广告",
           "activityIds": "im.juejin.android.ui.SplashActivity",
           "rules": "[id=`com.daimajia.gold:id/fl_skip`]"
+        }
+      ]
+    },
+    {
+      "id": "com.daysko.safp",
+      "name": "7天澳門統考",
+      "groups": [
+        {
+          "key": 1,
+          "name": "谷歌广告-全屏广告",
+          "activityIds": "com.google.android.gms.ads.AdActivity",
+          "rules": [
+            {
+              "key": 1,
+              "matches": "@[text=\"关闭\"] < View + View > [text=\"安装\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12642909"
+            },
+            {
+              "key": 2,
+              "matches": "[id=\"adchoiceWrap\"] + [id=\"mv_close_btn\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12643032"
+            },
+            {
+              "key": 3,
+              "name": "右上角白色圆形背景黑色x关闭按钮",
+              "matches": "View[clickable=false][childCount=2] > TextView[clickable=true] + View[clickable=true][childCount=1] > Button[clickable=true]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12643039",
+                "https://gkd-kit.gitee.io/import/12643246"
+              ]
+            }
+          ]
+        },
+        {
+          "key": 2,
+          "name": "谷歌广告-视频广告",
+          "desc": "点击跳过视频-点击关闭按钮",
+          "activityIds": [
+            "com.google.android.gms.ads.AdActivity"
+          ],
+          "rules": [
+            {
+              "key": 1,
+              "matches": "TextView[id=null][text=\"跳过视频\"] < View +(2) @View > Button[clickable=true]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642913",
+                "https://gkd-kit.gitee.io/import/12642932"
+              ]
+            },
+            {
+              "key": 3,
+              "matches": [
+                "Button[id=null][clickable=true] < @View - TextView < View - View >(n) View[desc=\"安装\"]"
+              ],
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642952"
+              ]
+            },
+            {
+              "key": 4,
+              "cd": 2500,
+              "matches": [
+                "[desc=\"了解详情\"] - View > [text=\"关闭\"]"
+              ],
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642983"
+              ]
+            }
+          ]
+        },
+        {
+          "key": 3,
+          "name": "谷歌广告-页面底部广告",
+          "activityIds": "com.daysko.safp.MainActivity",
+          "rules": [
+            {
+              "matches": "[id!=\"why_this_ad_btn\"] -2 View[id=\"mys-wrapper\"] + View >2 Button[clickable=true]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642993",
+                "https://gkd-kit.gitee.io/import/12643229"
+              ]
+            },
+            {
+              "matches": "View[desc=\"Advertisement\"] + View >(2) Button",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12643001"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1018,6 +1266,31 @@
       ]
     },
     {
+      "id": "com.eastmoney.android.fund",
+      "name": "天天基金",
+      "groups": [
+        {
+          "key": 1,
+          "name": "自选页面广告",
+          "activityIds": "com.eastmoney.android.fund.centralis.activity.FundRootActivity",
+          "rules": [
+            "FrameLayout > FrameLayout > ImageView + FrameLayout[childCount=1] > ImageView"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642387"
+        },
+        {
+          "enable": false,
+          "key": 2,
+          "name": "自选页面缩写提示信息",
+          "activityIds": "com.eastmoney.android.fund.centralis.activity.FundRootActivity",
+          "rules": [
+            "[desc=\"表示场内基金的最新价和折价率\"] -(2) FrameLayout < FrameLayout + ImageView"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642387"
+        }
+      ]
+    },
+    {
       "id": "com.estrongs.android.pop",
       "name": "ES文件浏览器",
       "groups": [
@@ -1297,6 +1570,22 @@
           "activityIds": "com.jingdong.app.mall.MainFrameActivity",
           "rules": "[desc$=\"广告\"] +2 [desc=\"跳过\"] > [text=\"跳过\"]",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12519430"
+        },
+        {
+          "enable": false,
+          "key": 1,
+          "name": "购物车界面-砸金蛋",
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "rules": "[id=\"com.jd.lib.cart.feature:id/iv_egg_close\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642266"
+        },
+        {
+          "enable": false,
+          "key": 2,
+          "name": "我的界面-参与调研",
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "rules": "RelativeLayout > ImageView[text=null][id^=\"com.jd.lib.personal.feature:id\"] + ImageView[text=null][id^=\"com.jd.lib.personal.feature:id\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642270"
         }
       ]
     },
@@ -1503,6 +1792,19 @@
       ]
     },
     {
+      "id": "com.m17qcc.mm",
+      "name": "青创网",
+      "groups": [
+        {
+          "key": 1,
+          "name": "更新弹窗",
+          "activityIds": "miuix.appcompat.app.m",
+          "rules": "[text*=\"新版本\"] +(n) LinearLayout > TextView[text=\"取消\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642297"
+        }
+      ]
+    },
+    {
       "id": "com.maque.app",
       "name": "麻雀省钱",
       "groups": [
@@ -1656,6 +1958,25 @@
           "activityIds": "com.meitu.business.ads.core.activity.AdActivity",
           "rules": "[text=`跳过广告`]",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/38517192/1f56aa17-c290-4e56-b6fb-a94bc778448b"
+        }
+      ]
+    },
+    {
+      "id": "com.mxtech.videoplayer.ad",
+      "name": "MX 播放器",
+      "groups": [
+        {
+          "key": 1,
+          "name": "谷歌广告",
+          "activityIds": "com.mxtech.videoplayer.ad.ActivityMediaList",
+          "rules": [
+            {
+              "matches": "[desc=\"Advertisement\"] + View >(2) View + Button[clickable=true]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642204"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1973,6 +2294,39 @@
       ]
     },
     {
+      "id": "com.sf.activity",
+      "name": "顺丰速运",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.sf.activity.MainActivity",
+          "rules": [
+            "[id=\"AdViewSkipBtn\"] >(2) TextView[text^=\"跳过\"]"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642434"
+        },
+        {
+          "key": 1,
+          "name": "更新弹窗",
+          "activityIds": "com.sf.activity.MainActivity",
+          "rules": [
+            "@[text=\"取消\"] < ViewGroup - ScrollView >(2) [text*=\"新版本\"]"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642445"
+        },
+        {
+          "key": 2,
+          "name": "专属月报弹窗",
+          "activityIds": "com.sf.activity.MainActivity",
+          "rules": [
+            "[id=\"MonthReportDialogCloseBtn\"] > ImageView"
+          ],
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642441"
+        }
+      ]
+    },
+    {
       "id": "com.shark.jizhang",
       "name": "鲨鱼记账",
       "groups": [
@@ -2262,7 +2616,45 @@
           "key": 0,
           "name": "开屏广告",
           "activityIds": "com.taobao.bootimage.activity.BootImageActivity",
-          "rules": "[id='com.taobao.taobao:id/close']"
+          "rules": "[id=\"com.taobao.taobao:id/close\"]"
+        },
+        {
+          "enable": false,
+          "key": 1,
+          "name": "限时福利弹窗",
+          "activityIds": "com.taobao.tao.welcome.Welcome",
+          "rules": "[desc^=\"限时福利\"] < FrameLayout + [desc=\"关闭按钮\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642792"
+        },
+        {
+          "key": 2,
+          "name": "消息页面-热门活动卡片",
+          "activityIds": "com.taobao.tao.welcome.Welcome",
+          "rules": "[desc=\"热门活动抢先看\"] +(6) FrameLayout > TextView",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642795"
+        },
+        {
+          "key": 10,
+          "name": "视频页面-活动弹窗",
+          "activityIds": "com.taobao.tao.welcome.Welcome",
+          "rules": "View[id=null] > [text=\"立即参加\"] + TextView[id=null][clickable=true]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642813"
+        },
+        {
+          "enable": false,
+          "key": 11,
+          "name": "视频页面-签到弹窗",
+          "activityIds": "com.taobao.tao.welcome.Welcome",
+          "rules": "@View[clickable=true] - View > View > TextView[text=\"立即签到\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642798"
+        },
+        {
+          "enable": false,
+          "key": 12,
+          "name": "视频页面-左右侧领取奖励小广告",
+          "activityIds": "com.taobao.tao.welcome.Welcome",
+          "rules": "View[id=null] > Image[id=null][clickable=true][text$=\"jpg_\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642806"
         }
       ]
     },
@@ -2319,7 +2711,12 @@
           ],
           "rules": [
             "TextView[text*=\"广告\"] + TextView[text=\"关闭该广告\"]",
-            "ImageView - TextView[text=\"广告\"][id!=null][index=0]"
+            "ImageView - TextView[text=\"广告\"][id!=null][index=0]",
+            "[text^=\"你觉得这条广告怎么样\"] + FrameLayout >(2) LinearLayout > [text=\"关闭该广告\"]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642588",
+            "https://gkd-kit.gitee.io/import/12642584"
           ]
         },
         {
@@ -2400,6 +2797,43 @@
               "snapshotUrls": "https://gkd-kit.gitee.io/import/12567637"
             }
           ]
+        },
+        {
+          "enable": false,
+          "key": 6,
+          "name": "订阅号底部广告",
+          "desc": "自动点击-广告反馈按钮-不感兴趣-与我无关",
+          "activityIds": "com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI",
+          "rules": [
+            {
+              "key": 1,
+              "name": "点击广告反馈按钮",
+              "matches": "[text=\"广告\"] + [text=\"feedback_icon\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12642232"
+            },
+            {
+              "key": 2,
+              "preKeys": [
+                1
+              ],
+              "name": "点击不感兴趣",
+              "matches": "[id^=\"menu\"] > [id=\"dislike\"][text=\"不感兴趣\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642234"
+              ]
+            },
+            {
+              "key": 3,
+              "preKeys": [
+                2
+              ],
+              "name": "点击与我无关",
+              "matches": "[id^=\"menu\"] > [id=\"isdismatch\"][text=\"与我无关\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642238"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2418,7 +2852,7 @@
           "name": "消息页面-顶部广告",
           "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
           "rules": [
-            "ImageView[id!=null][desc='关闭'][clickable=true]"
+            "ImageView[id!=null][desc=\"关闭\"][clickable=true]"
           ]
         },
         {
@@ -2433,6 +2867,17 @@
               "activityIds": "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity",
               "matches": "View[desc=\"广告\"] + ImageView[clickable=true]"
             }
+          ]
+        },
+        {
+          "key": 3,
+          "name": "频道页面-广告弹窗",
+          "activityIds": "com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog",
+          "rules": [
+            "ImageView[id=\"com.tencent.mobileqq:id/close\"][clickable=true]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642081"
           ]
         }
       ]
@@ -2515,6 +2960,26 @@
       ]
     },
     {
+      "id": "com.tencent.weread",
+      "name": "微信读书",
+      "groups": [
+        {
+          "key": 1,
+          "name": "系统推送弹窗",
+          "desc": "系统推送弹窗-点击取消",
+          "activityIds": "com.tencent.weread.module.bottomSheet.BottomSheetForFragment",
+          "rules": [
+            {
+              "matches": "[id=\"com.tencent.weread:id/open_notification_title\"] +(n) [id=\"com.tencent.weread:id/open_notification_close\"]",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642247"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.tima.carnet.m.main",
       "name": "钛马星",
       "groups": [
@@ -2531,6 +2996,39 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "com.tiqiaa.icontrol",
+      "name": "遥控精灵",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.tiqiaa.icontrol.WelcomeActivity",
+          "rules": [
+            {
+              "matches": "@[id=null][text^=\"跳过\"] < LinearLayout +(n) ImageView",
+              "snapshotUrls": [
+                "https://gkd-kit.gitee.io/import/12642183",
+                "https://gkd-kit.gitee.io/import/12642185"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.umetrip.android.msky.app",
+      "name": "航旅纵横",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.umetrip.android.msky.app.module.startup.SplashActivity",
+          "rules": "[id=\"com.umetrip.android.msky.app:id/tv_jump\"][text$=\"跳过\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642287"
         }
       ]
     },
@@ -2662,6 +3160,26 @@
           "activityIds": "com.xiaomi.smarthome.framework.plugin.rn.PluginRNActivity",
           "snapshotUrls": "https://gkd-kit.gitee.io/import/12639671",
           "rules": "[text*=\"检测到\"&&text*=\"升级\"] < ViewGroup + ViewGroup > Button > [text = \"取消\"]"
+        }
+      ]
+    },
+    {
+      "id": "com.xiaomi.vipaccount",
+      "name": "小米社区",
+      "groups": [
+        {
+          "key": 1,
+          "name": "更新弹窗",
+          "activityIds": "miuix.appcompat.app.AlertDialog",
+          "rules": "@[text=\"稍后安装\"] < LinearLayout - ScrollView >(4) [text=\"发现新版本\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642466"
+        },
+        {
+          "key": 2,
+          "name": "评论区广告卡片",
+          "activityIds": "com.xiaomi.vipaccount.newbrowser.NormalWebActivity",
+          "rules": "[text=\"closeGray\"][clickable=true]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642459"
         }
       ]
     },
@@ -2885,6 +3403,141 @@
           "name": "开屏广告",
           "activityIds": "com.xunlei.downloadprovider.launch.LaunchActivity",
           "rules": "TextView[text^=`跳过`]"
+        }
+      ]
+    },
+    {
+      "id": "com.xunmeng.pinduoduo",
+      "name": "拼多多",
+      "groups": [
+        {
+          "enable": false,
+          "key": 0,
+          "name": "开屏广告",
+          "desc": "占位，暂时不起作用",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.ui.activity.HomeActivity"
+          ],
+          "rules": [],
+          "snapshotUrls": []
+        },
+        {
+          "key": 1,
+          "name": "更新弹窗",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.activity.NewPageActivity"
+          ],
+          "rules": [
+            "[text*=\"新版本\"] - ImageView < LinearLayout < LinearLayout + ImageButton[clickable=true]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642017"
+          ]
+        },
+        {
+          "enable": false,
+          "key": 2,
+          "name": "首页优惠弹窗",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+            "com.miui.home.launcher.Launcher"
+          ],
+          "rules": [
+            "FrameLayout > FrameLayout > RelativeLayout > @ImageView[id=\"com.xunmeng.pinduoduo:id/pdd\"][text=null][clickable=true] + ImageView[id=\"com.xunmeng.pinduoduo:id/pdd\"][text=null][clickable=true]",
+            "View[id=null] > TextView + View > View +(4) View[clickable=true] > Image[id=null]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642015",
+            "https://gkd-kit.gitee.io/import/12642019"
+          ]
+        },
+        {
+          "enable": false,
+          "key": 3,
+          "name": "免单活动弹窗",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.activity.NewPageActivity"
+          ],
+          "rules": [
+            "TextView[text=\"免单特权\"] < View < View +(5) View[clickable=true] > Image[id=null]",
+            "TextView[text$=\"抽免单\"] -(2) Image[id=null][clickable=true]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642032",
+            "https://gkd-kit.gitee.io/import/12642038"
+          ]
+        },
+        {
+          "enable": false,
+          "key": 4,
+          "name": "红包弹窗",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.ui.activity.HomeActivity"
+          ],
+          "rules": [
+            "@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup > ImageView + ViewGroup > ImageView +(2) FrameLayout > TextView[text=\"专属现金红包\"]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642023"
+          ]
+        },
+        {
+          "enable": false,
+          "key": 5,
+          "name": "多多买菜抽奖弹窗",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.activity.NewPageActivity"
+          ],
+          "rules": [
+            "[id=null][text=\"关闭弹窗\"][clickable=true]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642053"
+          ]
+        },
+        {
+          "key": 6,
+          "name": "多多视频悬浮窗广告",
+          "activityIds": [
+            "com.xunmeng.pinduoduo.ui.activity.HomeActivity"
+          ],
+          "rules": [
+            "@TextView[id=null][clickable=true] + Image[id=null][text=\"webp\"]",
+            "@TextView[id=null][clickable=true] + View > Image[text=\"webp\"]"
+          ],
+          "snapshotUrls": [
+            "https://gkd-kit.gitee.io/import/12642058"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.xyhui",
+      "name": "PU口袋校园",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "activityIds": "com.xyhui.start.LoadingActivity",
+          "rules": "ImageView -(4) LinearLayout > [text^=\"跳过\"]",
+          "snapshotUrls": "https://gkd-kit.gitee.io/import/12642486"
+        },
+        {
+          "key": 1,
+          "name": "优量汇广告",
+          "activityIds": "com.xyhui.start.PUMainActivity",
+          "rules": [
+            {
+              "key": 1,
+              "matches": "[text=\"查看详情\"] - View < FrameLayout - FrameLayout >(2) ImageView[id=null]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12642482"
+            },
+            {
+              "key": 2,
+              "matches": "[text=\"查看详情\"] - View < FrameLayout -(4) FrameLayout > ImageView[id=null]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12643276"
+            }
+          ]
         }
       ]
     },
@@ -3154,7 +3807,7 @@
     },
     {
       "id": "tv.danmaku.bili",
-      "name": "B站",
+      "name": "哔哩哔哩",
       "groups": [
         {
           "key": -1,
@@ -3191,17 +3844,29 @@
           "rules": [
             {
               "activityIds": "com.bilibili.lib.ui.menu",
-              "matches": "TextView[text='广告质量差'||text='推广质量差'][id^='tv.danmaku.bili:id/reason']"
+              "matches": "TextView[text=`广告质量差`||text=`推广质量差`][id^=`tv.danmaku.bili:id/reason`]"
             }
           ]
         },
         {
           "key": 4,
           "name": "视频底部广告",
-          "activityIds": "com.bilibili.video.videodetail.VideoDetailsActivity",
+          "activityIds": [
+            "com.bilibili.video.videodetail.VideoDetailsActivity",
+            "com.bilibili.ship.theseus.all.UnitedBizDetailsActivity"
+          ],
           "rules": [
             "[id=`tv.danmaku.bili:id/reason1_layout`] > [id=`tv.danmaku.bili:id/reason1`][text*=`广告`]",
-            "[id=`tv.danmaku.bili:id/ad_tint_frame`][desc^=`UP主推荐广告`] @[id=`tv.danmaku.bili:id/more`] > ImageView"
+            {
+              "name": "点击屏蔽广告原因",
+              "matches": "[id=\"tv.danmaku.bili:id/menu_text\"][text=\"屏蔽广告\"] < [id=\"tv.danmaku.bili:id/title\"] + [id=\"tv.danmaku.bili:id/dislike_reasons\"] >2 [id=\"tv.danmaku.bili:id/reason1_layout\"]",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12642261"
+            },
+            {
+              "name": "点击广告卡片右侧菜单图标",
+              "matches": "[id=`tv.danmaku.bili:id/ad_tint_frame`][desc^=`UP主推荐广告`] @[id=`tv.danmaku.bili:id/more`] > ImageView",
+              "snapshotUrls": "https://gkd-kit.gitee.io/import/12642260"
+            }
           ]
         },
         {
