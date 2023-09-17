@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.32.1](https://github.com/gkd-kit/subscription/compare/v1.32.0...v1.32.1) (2023-09-17)
+
+
+### Performance Improvements
+
+* **7天澳門統考:** 全屏广告-增加范围 ([1726b5c](https://github.com/gkd-kit/subscription/commit/1726b5c9d034671dc2a8e236924d52173902f4e9))
+
 ## [1.32.0](https://github.com/gkd-kit/subscription/compare/v1.31.0...v1.32.0) (2023-09-17)
 
 
