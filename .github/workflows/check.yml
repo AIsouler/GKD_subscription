@@ -25,13 +25,21 @@ jobs:
 
       - run: pnpm run check
 
-      - run: |
-          pnpm run format
-          pnpm run lint
-          git status --porcelain
+      - run: pnpm run format
+
+      - run: pnpm run lint
+
+      - name: Git commit
+        id: commit
+        run: |
           git_status=$(git status --porcelain)
-          if [ -n "$git_status" ]; then
-            git --no-pager diff
-            echo "提交代码风格不合规"
-            exit 1
+          if [ -z "$git_status" ]; then
+            exit 0
           fi
+          git config --local user.email github-actions[bot]@users.noreply.github.com
+          git config --local user.name github-actions[bot]
+          git config --global core.autocrlf true
+          git config --global core.safecrlf false
+          git status
+          git add .
+          git commit -m "chore: format+lint" -a
