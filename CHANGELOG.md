@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.33.0](https://github.com/gkd-kit/subscription/compare/v1.32.1...v1.33.0) (2023-09-18)
+
+
+### Features
+
+* **掌医课堂:** 开屏广告, 退出确认弹窗 ([#145](https://github.com/gkd-kit/subscription/issues/145)) ([6ae7d16](https://github.com/gkd-kit/subscription/commit/6ae7d16d3ed14a048c5e148ad4cbe2f043181dc0))
+* **澎湃新闻:** 开屏广告 ([#146](https://github.com/gkd-kit/subscription/issues/146)) ([abb0c8a](https://github.com/gkd-kit/subscription/commit/abb0c8a2f5e0229a1889fff0cd7fd9e466402dc2))
+
+
+### Bug Fixes
+
+* **QQ:** 开屏广告(误触-默认关闭) ([#154](https://github.com/gkd-kit/subscription/issues/154)) ([4f7f997](https://github.com/gkd-kit/subscription/commit/4f7f9973e8bdf468bc18108d47821977e1646f29))
+
 ## [1.32.1](https://github.com/gkd-kit/subscription/compare/v1.32.0...v1.32.1) (2023-09-17)
 
 
