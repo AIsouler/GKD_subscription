@@ -53,10 +53,12 @@ export default defineAppConfig({
       enable: false,
       key: 99,
       name: '右侧悬浮红包',
-      desc: '此规则无法触发，原因未知，因此默认关闭',
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
-      rules:
-        '[id="com.kmxs.reader:id/red_packet_img"] + [id="com.kmxs.reader:id/close_red_packet"]',
+      rules: {
+        matches:
+          '[id="com.kmxs.reader:id/red_packet_img"] + [id="com.kmxs.reader:id/close_red_packet"]',
+        action: 'clickCenter',
+      },
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12640287'],
     },
   ],
