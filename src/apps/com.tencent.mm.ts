@@ -112,8 +112,12 @@ export default defineAppConfig({
         {
           key: 1,
           name: '点击广告反馈按钮',
-          matches: '[text="广告"] + [text="feedback_icon"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642232',
+          matches:
+            'View[childCount=1] >(5) [text="广告"] + [text="feedback_icon"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642232',
+            'https://gkd-kit.gitee.io/import/12646837', // key: 3 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
+          ],
         },
         {
           key: 2,
