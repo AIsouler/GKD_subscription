@@ -5,8 +5,10 @@ export default defineAppConfig({
   name: 'QQ',
   groups: [
     {
+      enable: false,
       key: 0,
       name: '开屏广告',
+      desc: '规则误触,待修复,需要快照准确定位',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: '[text*=`跳过`]',
     },
