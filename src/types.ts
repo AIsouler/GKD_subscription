@@ -132,6 +132,26 @@ type RuleConfig = {
    *
    */
   preKeys?: IArray<number>;
+
+  /**
+   * @example
+   * `click`
+   * // 为默认值, 如果目标节点是 clickable 的, 则使用 `clickNode`, 反之使用 `clickCenter`
+   *
+   * @example
+   * `clickNode`
+   * // 向系统发起一个点击无障碍节点事件. 即使节点在屏幕外部/或者被其它节点遮挡,也依然能够正确触发点击目标节点
+   * // 但是如果目标节点不是 clickable 的, 目标 APP 通常不响应这个点击事件, 也就是点击无效果
+   * // 在极少数情况下, 即使节点是 clickable 的, APP 也不会响应节点点击事件, 此时需要手动设置 `clickCenter`
+   *
+   * @example
+   * `clickCenter`
+   * // 计算出此控件的中心的坐标并且如果这个坐标在屏幕内部，那么就向系统发起一个点击屏幕坐标事件
+   * // 如果这个坐标不在屏幕内部, 当作未匹配
+   * // 另外如果目标节点的位置被其它节点遮挡覆盖, 则会点击触发最上层的节点(可能不是目标节点)
+   */
+  action?: 'click' | 'clickNode' | 'clickCenter';
+
   snapshotUrls?: IArray<string>;
   exampleUrls?: IArray<string>;
 } & CommonProps;
