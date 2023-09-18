@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 133 个 APP, 共有 284 规则组
+当前订阅文件已适配 135 个 APP, 共有 287 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -746,7 +746,7 @@
 
 ### [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts) - QQ
 
-- **开屏广告**
+- 默认禁用 **开屏广告** - 规则误触,待修复,需要快照准确定位
 - **消息页面-顶部广告**
 - **好友动态-广告卡片**
 - **频道页面-广告弹窗**
@@ -810,6 +810,12 @@
   - [快照-1](https://gkd-kit.gitee.io/import/12505764)
   - [快照-2](https://gkd-kit.gitee.io/import/12505753)
   - [快照-3](https://gkd-kit.gitee.io/import/12505763)
+
+### [com.wondertek.paper](/src/apps/com.wondertek.paper.ts) - 澎湃新闻
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12644536)
+  - [快照-1](https://gkd-kit.gitee.io/import/12645559)
 
 ### [com.xiachufang](/src/apps/com.xiachufang.ts) - 下厨房
 
@@ -919,6 +925,13 @@
 ### [com.yipiao](/src/apps/com.yipiao.ts) - 智行火车票12306抢票
 
 - **开屏广告**
+
+### [com.zgnet.eClass](/src/apps/com.zgnet.eClass.ts) - 掌医课堂
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12644260)
+- 默认禁用 **退出确认弹窗（默认关闭）**
+  - [快照-0](https://gkd-kit.gitee.io/import/12645513)
 
 ### [com.zhihu.android](/src/apps/com.zhihu.android.ts) - 知乎
 
