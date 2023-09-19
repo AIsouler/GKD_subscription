@@ -51,7 +51,7 @@ export default defineAppConfig({
       desc: '赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
-        '[id=\'com.zhihu.android:id/content\'] >2 TextView[text=\'不感兴趣\'][id=\'com.zhihu.android:id/title\']', // 1686989681860
+        '[id="com.zhihu.android:id/content"] >2 TextView[text="不感兴趣"][id="com.zhihu.android:id/title"]', // 1686989681860
         'TextView[text=`内容质量差`][id=`com.zhihu.android:id/tv_content`]',
         '@ImageView[id=`com.zhihu.android:id/menu`] < FrameLayout - * > TextView[text^=`广告`]', // 1687913210243 1686989714786
         '@ImageView[id=null][clickable=true] -n TextView[text*=`广告`][index=0]', // 1687418944396 1686924015259
@@ -74,16 +74,70 @@ export default defineAppConfig({
         'com.zhihu.android.app.ui.activity.HostActivity',
       ],
       rules: [
-        '@Image + TextView[text$=`的广告`]',
-        'TextView[text$=`的广告`] +n TextView[text=`×`]',
-        'TextView[text=`查看详情`] + TextView[text=`×`]',
-        'TextView[text*=`赞同`][text*=`评论`] + TextView[text=`×`]',
-        'TextView[text*=`回答`][text*=`关注`] + TextView[text=`×`]',
-        'TextView[text!=null] + TextView[text*=`赞同`] + View > Image',
-        'TextView[text$=`的广告`] - Image[id=null]',
-        'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
-        'TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]', // 1687076663768 1686969672948
-        'TextView[text=\'\'] + Image[text=\'\'] + TextView[text=\'\u200b\'] + Image[id=null][clickable=true]', // 1687234636980
+        {
+          key: 0,
+          matches: '@Image + TextView[text$=`的广告`]',
+        },
+        {
+          key: 1,
+          matches: 'TextView[text$=`的广告`] +n TextView[text=`×`]',
+        },
+        {
+          key: 2,
+          activityIds: [
+            'com.zhihu.android.mix.activity.ContentMixProfileActivity',
+          ],
+          matches: 'TextView[text=`查看详情`] + TextView[text=`×`]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12647617',
+            'https://gkd-kit.gitee.io/import/12647659', // 点击x按钮后的快照，界面无任何变化，导致反复触发这条规则
+          ],
+        },
+        {
+          key: 3,
+          matches: 'TextView[text*=`赞同`][text*=`评论`] + TextView[text=`×`]',
+        },
+        {
+          key: 4,
+          matches: 'TextView[text*=`回答`][text*=`关注`] + TextView[text=`×`]',
+        },
+        {
+          key: 5,
+          matches:
+            'TextView[text!=null] + TextView[text*=`赞同`] + View > Image',
+        },
+        {
+          key: 6,
+          matches: 'TextView[text$=`的广告`] - Image[id=null]',
+        },
+        {
+          key: 7,
+          matches: 'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
+        },
+        {
+          key: 8,
+          matches: 'TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]', // 1687076663768 1686969672948
+        },
+        {
+          key: 9,
+          matches:
+            'TextView[text=""] + Image[text=""] + TextView[text="\u200b"] + Image[id=null][clickable=true]', // 1687234636980
+        },
+        {
+          key: 10,
+          matches:
+            '@ImageView[id=null][clickable=true] -(2) ViewGroup > [text$="广告"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12647525'],
+        },
+        // 预留11~99
+        {
+          preKeys: [10],
+          key: 100,
+          desc: '反馈弹窗-点击“不感兴趣”',
+          matches:
+            '[id="com.zhihu.android:id/recycler_view"] > FrameLayout >(3) [text$="不感兴趣"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12647541'],
+        },
       ],
     },
     {
@@ -97,8 +151,40 @@ export default defineAppConfig({
       name: '推荐页-顶部广告',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
-        '[id=\'com.zhihu.android:id/tv_ad_tag\'] + [id=\'com.zhihu.android:id/img_close_focus\']', // 1686911063850
+        '[id="com.zhihu.android:id/tv_ad_tag"] + [id="com.zhihu.android:id/img_close_focus"]', // 1686911063850
       ],
+    },
+    {
+      enable: false,
+      key: 10,
+      name: '推送通知弹窗',
+      desc: '推送通知弹窗-点击x按钮',
+      activityIds: 'com.zhihu.android.app.ui.dialog.d',
+      rules: [
+        'TextView[id="com.zhihu.android:id/guide_title"] - ImageView[id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
+      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12647583'],
+    },
+    {
+      enable: false,
+      key: 11,
+      name: '盐选会员-月卡红包',
+      activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+      rules: [
+        'ImageView[id="com.zhihu.android:id/floating_img"] + ImageView[id="com.zhihu.android:id/floating_close_btn"][clickable=true]',
+      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12647421'],
+    },
+    {
+      enable: false,
+      key: 101, // 不属于广告，序号往后排
+      name: '问题回答-自动展开',
+      activityIds:
+        'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
+      rules: [
+        'ImageView[id="com.zhihu.android:id/iv_expand"] - TextView[id="com.zhihu.android:id/tv_expand"][text="展开"]',
+      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12647688'],
     },
   ],
 });
