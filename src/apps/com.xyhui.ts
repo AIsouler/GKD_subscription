@@ -14,19 +14,31 @@ export default defineAppConfig({
     {
       key: 1,
       name: '优量汇广告',
-      activityIds: 'com.xyhui.start.PUMainActivity',
+      activityIds: [
+        'com.xyhui.start.PUMainActivity',
+        'com.huawei.android.launcher.unihome.UniHomeLauncher',
+        'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity',
+      ],
       rules: [
         {
           key: 1,
           matches:
-            '[text="查看详情"] - View < FrameLayout - FrameLayout >(2) ImageView[id=null]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642482',
+            '[text="查看详情"||text="立即打开"||text="立即抢购"] - View < FrameLayout - FrameLayout >(2) ImageView[id=null]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642482', // 查看详情
+            'https://gkd-kit.gitee.io/import/12646347', // 立即打开
+            'https://gkd-kit.gitee.io/import/12646519', // 立即抢购
+            'https://gkd-kit.gitee.io/import/12646541', // 华为手机的快照，activityId = 'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity'
+          ],
         },
         {
           key: 2,
           matches:
-            '[text="查看详情"] - View < FrameLayout -(4) FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12643276',
+            '[text="查看详情"||text="立即打开"||text="立即抢购"] - View < FrameLayout -(4) FrameLayout > ImageView[id=null]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12643276',
+            'https://gkd-kit.gitee.io/import/12646420', // 华为手机的快照，activityId = 'com.huawei.android.launcher.unihome.UniHomeLauncher'
+          ],
         },
       ],
     },
