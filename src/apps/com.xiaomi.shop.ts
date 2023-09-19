@@ -13,5 +13,13 @@ export default defineAppConfig({
         'https://gkd-kit.gitee.io/import/38517192/9083b291-43f8-4d92-a506-a9dc6ed0156f',
       ],
     },
+    {
+      key: 1,
+      name: '首页弹窗广告',
+      activityIds: 'com.xiaomi.shop.plugin.homepage.utils.AdDialog',
+      rules:
+        'LinearLayout[childCount=2] > ImageView[id=null] + ImageView[id=null][clickable=true]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12649330'],
+    },
   ],
 });
