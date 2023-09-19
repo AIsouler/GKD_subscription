@@ -31,10 +31,12 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.core.dislike.ui',
             'com.coolapk.market.view.main.MainActivity',
             'com.coolapk.market.view.base.SimpleAlphaActivity',
+            'com.coolapk.market.view.node.DynamicNodePageActivity',
           ],
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315',
             'https://gkd-kit.gitee.io/import/12655713',
+            'https://gkd-kit.gitee.io/import/12660759',
           ],
           matches: ['[id$="id/tt_item_tv"][text=`不感兴趣`]'],
         },
