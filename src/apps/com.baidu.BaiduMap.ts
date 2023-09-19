@@ -43,5 +43,23 @@ export default defineAppConfig({
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642319',
     },
+    {
+      enable: false,
+      key: 5,
+      name: '请求定位弹窗',
+      activityIds: ['com.baidu.mapframework.widget.BMBaseDialog'],
+      rules: [
+        {
+          matches:
+            '[text^="开启位置服务"] + RelativeLayout > [id="com.baidu.BaiduMap:id/tv_notip_btn"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12660884',
+        },
+        {
+          matches:
+            '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12660883',
+        },
+      ],
+    },
   ],
 });
