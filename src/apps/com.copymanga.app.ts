@@ -29,7 +29,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '内部弹窗广告',
-      activityIds: 'com.copymanga.app.MainActivity',
+      activityIds: [
+        'com.copymanga.app.MainActivity',
+        'com.miui.home.launcher.Launcher',
+      ],
       rules: [
         {
           activityIds: 'com.kwad.components.ad.interstitial',
@@ -48,7 +51,10 @@ export default defineAppConfig({
         },
         {
           matches: 'ImageView + FrameLayout + FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12504520',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12504520',
+            'https://gkd-kit.gitee.io/import/12661019',
+          ],
         },
       ],
     },
