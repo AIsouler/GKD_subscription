@@ -26,6 +26,10 @@ export default defineAppConfig({
             '[text^="你觉得这条广告怎么样"] + FrameLayout >2 @LinearLayout[clickable=true] > [text="关闭该广告"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12642584'],
         },
+        {
+          matches: '[text="关闭该广告的原因"] +(2) [text="直接关闭"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12663984'],
+        },
       ],
     },
     {
@@ -41,13 +45,16 @@ export default defineAppConfig({
       rules: 'Button[text="拒绝"] - Button[text="允许"]',
     },
     {
+      enable: false,
       key: 3,
-      name: '微信手机第三方APP申请使用',
-      desc: '自动点击同意',
+      name: '第三方APP申请使用授权弹窗',
+      desc: '自动点击允许',
+      activityIds: ['com.tencent.mm.plugin.base.stub.UIEntryStub'],
       rules: [
         'TextView + TextView[text="申请使用"]',
         'Button[text="拒绝"] - Button[text="允许"]',
       ],
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12663602',
     },
     {
       key: 4,
