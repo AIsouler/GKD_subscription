@@ -14,9 +14,17 @@ export default defineAppConfig({
       enable: false,
       key: 1,
       name: '限时福利弹窗',
-      activityIds: 'com.taobao.tao.welcome.Welcome',
+      activityIds: [
+        'com.taobao.tao.welcome.Welcome',
+        'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
+        'com.taobao.android.detail.wrapper.activity.DetailActivity',
+      ],
       rules: '[desc^="限时福利"] < FrameLayout + [desc="关闭按钮"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642792',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12642792', // activityId: com.taobao.tao.welcome.Welcome
+        'https://gkd-kit.gitee.io/import/12648734', // activityId: com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
+        'https://gkd-kit.gitee.io/import/12648746', // activityId: com.taobao.android.detail.wrapper.activity.DetailActivity
+      ],
     },
     {
       key: 2,
@@ -40,14 +48,6 @@ export default defineAppConfig({
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642798',
-    },
-    {
-      enable: false,
-      key: 12,
-      name: '视频页面-左右侧领取奖励小广告',
-      activityIds: 'com.taobao.tao.welcome.Welcome',
-      rules: 'View[id=null] > Image[id=null][clickable=true][text$="jpg_"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642806',
     },
   ],
 });
