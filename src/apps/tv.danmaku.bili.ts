@@ -74,5 +74,14 @@ export default defineAppConfig({
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: ['[id=`tv.danmaku.bili:id/click_skip`]'],
     },
+    {
+      key: 6,
+      name: '更新弹窗',
+      activityIds: 'com.bilibili.app.preferences.BiliPreferencesActivity',
+      rules: [
+        '[id="tv.danmaku.bili:id/update_btn_confirm"] + [id="tv.danmaku.bili:id/update_btn_cancel"]',
+      ],
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12649689',
+    },
   ],
 });
