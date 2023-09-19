@@ -18,5 +18,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '每日弹窗广告',
+      activityIds: [
+        'com.tima.carnet.m.main.lib.common.dialog.TimaLoadingDialog',
+      ],
+      rules: [
+        {
+          matches: [
+            'CheckBox[id$="today_will_not_shown"] + ImageButton[clickable=true]',
+          ],
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12654432'],
+        },
+      ],
+    },
   ],
 });
