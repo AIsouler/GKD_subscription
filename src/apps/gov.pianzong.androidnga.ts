@@ -18,5 +18,14 @@ export default defineAppConfig({
       rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12482727',
     },
+    {
+      key: 2,
+      name: '话题-帖子列表广告',
+      desc: '点击卡片右下角x按钮关闭广告',
+      activityIds:
+        'gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity',
+      rules: 'Image[text="ams_icon_single_close"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12655805'],
+    },
   ],
 });
