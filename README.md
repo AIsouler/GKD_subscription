@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 143 个 APP, 共有 317 规则组
+当前订阅文件已适配 153 个 APP, 共有 346 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -19,6 +19,12 @@
 - **青少年模式** - 关闭青少年模式提醒弹窗
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/1c081a65-688a-406b-b67b-9bfb9aba0fad)
 - **新版本弹窗**
+
+### [android.zhibo8](/src/apps/android.zhibo8.ts) - 直播吧
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12605327)
+  - [快照-1](https://gkd-kit.gitee.io/import/12661109)
 
 ### [cmb.pb](/src/apps/cmb.pb.ts) - 招商银行
 
@@ -42,6 +48,24 @@
   - [快照-0](https://gkd-kit.gitee.io/import/12505365)
   - [快照-1](https://gkd-kit.gitee.io/import/12505350)
   - [快照-2](https://gkd-kit.gitee.io/import/12505286)
+
+### [cn.xiaochuankeji.tieba](/src/apps/cn.xiaochuankeji.tieba.ts) - 最右
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660905)
+  - [快照-1](https://gkd-kit.gitee.io/import/12660955)
+  - [快照-2](https://gkd-kit.gitee.io/import/12660984)
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660882)
+- **青少年模式弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660929)
+- **评论区广告卡片**
+  - [快照-0](https://gkd-kit.gitee.io/import/12661011)
+  - [快照-1](https://gkd-kit.gitee.io/import/12661028)
+- 默认禁用 **系统通知弹窗** - 系统通知弹窗，点击暂不开启
+  - [快照-0](https://gkd-kit.gitee.io/import/12660823)
+- 默认禁用 **系统通知提示信息** - 系统通知提示信息，点击x按钮
+  - [快照-0](https://gkd-kit.gitee.io/import/12660851)
 
 ### [com.MobileTicket](/src/apps/com.MobileTicket.ts) - 铁路12306
 
@@ -117,6 +141,9 @@
   - [快照-0](https://gkd-kit.gitee.io/import/12642310)
 - 默认禁用 **酒店提前订弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12642319)
+- 默认禁用 **请求定位弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660884)
+  - [快照-1](https://gkd-kit.gitee.io/import/12660883)
 
 ### [com.baidu.duer.superapp](/src/apps/com.baidu.duer.superapp.ts) - 小度
 
@@ -178,6 +205,11 @@
   - [快照-0](https://gkd-kit.gitee.io/import/12504289)
   - [快照-1](https://gkd-kit.gitee.io/import/12504291)
 
+### [com.bankcomm.maidanba](/src/apps/com.bankcomm.maidanba.ts) - 买单吧
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660986)
+
 ### [com.bjsk.intelligent](/src/apps/com.bjsk.intelligent.ts) - WiFi智能钥匙
 
 - **开屏广告**
@@ -219,6 +251,7 @@
 - **关闭卡片广告** - 点击卡片右上角按钮,然后点击关闭弹窗
   - [快照-0](https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315)
   - [快照-1](https://gkd-kit.gitee.io/import/12655713)
+  - [快照-2](https://gkd-kit.gitee.io/import/12660759)
 - **关闭升级弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12503762)
 - **关闭卡片广告（旧版）** - 点击卡片右上角按钮,然后点击关闭弹窗
@@ -238,6 +271,7 @@
   - [快照-1](https://gkd-kit.gitee.io/import/12504488)
   - [快照-2](https://gkd-kit.gitee.io/import/12504501)
   - [快照-3](https://gkd-kit.gitee.io/import/12504520)
+  - [快照-4](https://gkd-kit.gitee.io/import/12661019)
 - **加入书架按钮下面的广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12504525)
 
@@ -252,6 +286,11 @@
   - [快照-0](https://gkd-kit.songe.li/import/12508958)
 - 默认禁用 **用户引导**
   - [快照-0](https://gkd-kit.songe.li/import/12508971)
+
+### [com.cubic.autohome](/src/apps/com.cubic.autohome.ts) - 汽车之家
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660744)
 
 ### [com.daimajia.gold](/src/apps/com.daimajia.gold.ts) - 稀土掘金
 
@@ -366,6 +405,16 @@
 - **开屏广告**
 - **关闭更新弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12534264)
+- **首页广告弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662361)
+- **请求推送通知弹窗** - 请求推送通知弹窗，点击取消
+  - [快照-0](https://gkd-kit.gitee.io/import/12662213)
+- **请求获取剪贴板权限弹窗** - 请求获取剪贴板权限弹窗，点击不允许
+  - [快照-0](https://gkd-kit.gitee.io/import/12662251)
+- **右侧悬浮小图标**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662265)
+- **请求好评弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662345)
 
 ### [com.handsgo.jiakao.android](/src/apps/com.handsgo.jiakao.android.ts) - 驾考宝典
 
@@ -375,6 +424,17 @@
 
 - **更新弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12649457)
+
+### [com.hexin.plat.android](/src/apps/com.hexin.plat.android.ts) - 同花顺
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662631)
+  - [快照-1](https://gkd-kit.gitee.io/import/12662620)
+- **信息流广告** - 信息流广告-点击x按钮-点击内容质量差
+  - [快照-0](https://gkd-kit.gitee.io/import/12662754)
+  - [快照-1](https://gkd-kit.gitee.io/import/12662781)
+- **指数页面-底部产品广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662656)
 
 ### [com.heytap.market](/src/apps/com.heytap.market.ts) - 软件商店
 
@@ -388,6 +448,8 @@
 
 ### [com.huawei.android.thememanager](/src/apps/com.huawei.android.thememanager.ts) - 华为主题
 
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12657379)
 - **主题详情页“下应用领主题”横幅**
   - [快照-0](https://gkd-kit.gitee.io/import/12647175)
 - **主题详情页广告**
@@ -402,11 +464,14 @@
   - [快照-2](https://gkd-kit.gitee.io/import/12647326)
 - **分类页“免费领取”**
   - [快照-0](https://gkd-kit.gitee.io/import/12647393)
-- **精选页信息流广告**
+- **主页面（推荐、分类、我的）广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12647614)
   - [快照-1](https://gkd-kit.gitee.io/import/12647653)
   - [快照-2](https://gkd-kit.gitee.io/import/12647650)
-  - [快照-3](https://gkd-kit.gitee.io/import/12647655)
+  - [快照-3](https://gkd-kit.gitee.io/import/12657822)
+  - [快照-4](https://gkd-kit.gitee.io/import/12647655)
+- 默认禁用 **首页活动弹窗-默认禁用**
+  - [快照-0](https://gkd-kit.gitee.io/import/12657939)
 
 ### [com.hunantv.imgo.activity](/src/apps/com.hunantv.imgo.activity.ts) - 芒果TV
 
@@ -609,6 +674,11 @@
   - [快照-0](https://gkd-kit.songe.li/import/38517192/fea3449b-d642-4d75-929f-490421cc9080)
   - [快照-1](https://gkd-kit.songe.li/import/38517192/a977b19d-2b3c-43df-ba01-63e7cbbb3908)
 
+### [com.netease.mail](/src/apps/com.netease.mail.ts) - 网易邮箱大师
+
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12664070)
+
 ### [com.netease.newsreader.activity](/src/apps/com.netease.newsreader.activity.ts) - 网易新闻
 
 - **开屏广告**
@@ -627,6 +697,15 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12512845)
+
+### [com.onecard.hainan](/src/apps/com.onecard.hainan.ts) - 海南一卡通
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662092)
+  - [快照-1](https://gkd-kit.gitee.io/import/12662129)
+- **更新弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12662114)
+  - [快照-1](https://gkd-kit.gitee.io/import/12662136)
 
 ### [com.pingan.lifecircle](/src/apps/com.pingan.lifecircle.ts) - 平安好生活
 
@@ -761,6 +840,8 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12605327)
+- **首页推荐卡片广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660816)
 
 ### [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts) - 抖音
 
@@ -802,13 +883,15 @@
 
 ### [com.tencent.mm](/src/apps/com.tencent.mm.ts) - 微信
 
-- **关闭朋友圈广告** - 朋友圈信息流广告,点击关闭按钮,确认关闭
+- **朋友圈广告** - 朋友圈信息流广告,点击关闭按钮,确认关闭
   - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
   - [快照-0](https://gkd-kit.gitee.io/import/12642588)
   - [快照-1](https://gkd-kit.gitee.io/import/12642584)
+  - [快照-2](https://gkd-kit.gitee.io/import/12663984)
 - **电脑微信快捷自动登录**
 - **浏览器扫码微信登录自动授权**
-- **微信手机第三方APP申请使用** - 自动点击同意
+- 默认禁用 **第三方APP申请使用授权弹窗** - 自动点击允许,但由于此界面可以额外新建昵称头像,默认不启用
+  - [快照-0](https://gkd-kit.gitee.io/import/12663602)
 - **微信读书网页版扫码登录自动授权**
   - [快照-0](https://gkd-kit.songe.li/import/12506197)
   - [快照-1](https://gkd-kit.songe.li/import/12506201)
@@ -1074,6 +1157,13 @@
   - [快照-0](https://gkd-kit.gitee.io/import/12476484)
 - **首页-推荐-广告卡片**
   - [快照-0](https://gkd-kit.gitee.io/import/12482727)
+- **话题-帖子列表广告** - 点击卡片右下角x按钮关闭广告
+  - [快照-0](https://gkd-kit.gitee.io/import/12655805)
+
+### [insigma.waybook.jinan](/src/apps/insigma.waybook.jinan.ts) - 369出行
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12660773)
 
 ### [li.songe.gkd](/src/apps/li.songe.gkd.ts) - GKD
 
@@ -1083,6 +1173,15 @@
 
 - **开屏广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12648511)
+
+### [me.chunyu.ChunyuDoctor](/src/apps/me.chunyu.ChunyuDoctor.ts) - 春雨医生
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12661722)
+  - [快照-1](https://gkd-kit.gitee.io/import/12661937)
+- **应用评分弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12661907)
+  - [快照-1](https://gkd-kit.gitee.io/import/12661924)
 
 ### [me.ele](/src/apps/me.ele.ts) - 饿了么
 
@@ -1108,3 +1207,9 @@
 - **推荐页-可跳过广告**
 - **更新弹窗**
   - [快照-0](https://gkd-kit.gitee.io/import/12649689)
+
+### [vstc.AKCXKJ.client](/src/apps/vstc.AKCXKJ.client.ts) - FOWL
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12661199)
+  - [快照-1](https://gkd-kit.gitee.io/import/12661178)
