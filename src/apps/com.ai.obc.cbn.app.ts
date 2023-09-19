@@ -19,11 +19,17 @@ export default defineAppConfig({
     {
       key: 2,
       name: '版本弹窗',
-      activityIds: ['com.ai.obc.cbn.app.ui.other.activity.MainActivity'],
+      activityIds: [
+        'com.ai.obc.cbn.app.ui.other.activity.MainActivity',
+        'com.ai.obc.cbn.app.ui.main.fragment.MainFragment',
+      ],
       rules: [
         {
           matches: '[id$="/ivDis"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12617201'],
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12617201',
+            'https://gkd-kit.gitee.io/import/12655061',
+          ],
         },
       ],
     },
