@@ -33,12 +33,13 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          matches: '[id="com.huawei.hms.ads.uiengine:id/unlike_iv"||id="com.huawei.android.thememanager:id/download_pps_close"||id="com.huawei.android.thememanager:id/pps_close"]',
+          matches:
+            '[id="com.huawei.hms.ads.uiengine:id/unlike_iv"||id="com.huawei.android.thememanager:id/download_pps_close"||id="com.huawei.android.thememanager:id/pps_close"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12647248',
             'https://gkd-kit.gitee.io/import/12647292',
             'https://gkd-kit.gitee.io/import/12647367',
-        ]
+          ],
         },
       ],
     },
@@ -65,12 +66,17 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          matches: '[id="com.huawei.android.thememanager:id/pps_lable_top"||id="com.huawei.android.thememanager:id/tv_btn_uninterested"||id="com.huawei.android.thememanager:id/pps_img_video_close"]',
+          matches:
+            '[id="com.huawei.android.thememanager:id/pps_lable_top"||id="com.huawei.android.thememanager:id/pps_img_video_close"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12647311',
-            'https://gkd-kit.gitee.io/import/12647326',
             'https://gkd-kit.gitee.io/import/12647346',
-        ]
+          ],
+        },
+        {
+          matches:
+            '[id="com.huawei.android.thememanager:id/tv_btn_uninterested"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12647326',
         },
       ],
     },
@@ -92,13 +98,17 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '[id="com.huawei.android.thememanager:id/announce_ad_close_btn"||id="com.huawei.android.thememanager:id/pps_lable_top"||id="com.huawei.android.thememanager:id/tv_btn_uninterested"||id="com.huawei.android.thememanager:id/pps_img_video_close"]',
+            '[id="com.huawei.android.thememanager:id/announce_ad_close_btn"||id="com.huawei.android.thememanager:id/pps_lable_top"||id="com.huawei.android.thememanager:id/pps_img_video_close"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12647614',
             'https://gkd-kit.gitee.io/import/12647653',
-            'https://gkd-kit.gitee.io/import/12647655',
             'https://gkd-kit.gitee.io/import/12647650',
-        ]
+          ],
+        },
+        {
+          matches:
+            '[id="com.huawei.android.thememanager:id/tv_btn_uninterested"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12647655',
         },
       ],
     },
