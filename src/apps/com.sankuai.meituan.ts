@@ -46,5 +46,13 @@ export default defineAppConfig({
         'https://gkd-kit.gitee.io/import/12639734',
       ],
     },
+    {
+      key: 5,
+      name: '美团买菜-支付成功后-红包弹窗',
+      desc: '美团买菜-支付成功后-关闭红包弹窗',
+      activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
+      rules: 'TextView[text="恭喜你获得以下权益"] + ViewGroup > ImageView',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12646768',
+    },
   ],
 });
