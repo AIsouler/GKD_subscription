@@ -19,10 +19,17 @@ export default defineAppConfig({
     {
       key: 2,
       name: '关闭不感兴趣广告弹窗',
-      activityIds: 'com.sina.weibo.view.bottomsheet.dialog.',
+      activityIds: [
+        'com.sina.weibo.view.bottomsheet.dialog.',
+        'com.sina.weibo.VisitorMainTabActivity',
+      ],
       rules: {
-        matches: ['[text="为何会看到此广告"]', '[text="不感兴趣"]'],
-      }, // 1688889362832
+        matches: [
+          '[id="com.sina.weibo:id/tv_name"][text="为何会看到此广告"]',
+          '[id="com.sina.weibo:id/tv_name"][text="不感兴趣"]',
+        ],
+        snapshotUrls: 'https://gkd-kit.gitee.io/import/12672985',
+      },
     },
     {
       key: 3,
