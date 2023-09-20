@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 155 个 APP, 共有 349 规则组
+当前订阅文件已适配 156 个 APP, 共有 351 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -204,6 +204,11 @@
 - **内部弹窗广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12504289)
   - [快照-1](https://gkd-kit.gitee.io/import/12504291)
+
+### [com.bankcomm.Bankcomm](/src/apps/com.bankcomm.Bankcomm.ts) - 交通银行
+
+- **弹窗广告** - 点击右上角x
+  - [快照-0](https://gkd-kit.gitee.io/import/12671987)
 
 ### [com.bankcomm.maidanba](/src/apps/com.bankcomm.maidanba.ts) - 买单吧
 
@@ -820,11 +825,15 @@
 - **开屏广告**
 - **评论区顶部-相关推荐**
 - **关闭不感兴趣广告弹窗**
+  - [快照-0](https://gkd-kit.gitee.io/import/12672985)
 - **兴趣领域推荐** - 出现在长久未登录的账户再次登录时
   - [快照-0](https://gkd-kit.songe.li/import/12531405)
 - **精选博主推荐** - 出现在长久未登录的账户再次登录时
   - [快照-0](https://gkd-kit.songe.li/import/12531433)
   - [快照-1](https://gkd-kit.songe.li/import/12531434)
+- **帖子详情底部评论区顶部广告** - 点击右上角x
+  - [快照-0](https://gkd-kit.gitee.io/import/12673043)
+  - [快照-1](https://gkd-kit.gitee.io/import/12673051)
 
 ### [com.sinovatech.unicom.ui](/src/apps/com.sinovatech.unicom.ui.ts) - 中国联通
 
