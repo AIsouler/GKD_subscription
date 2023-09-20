@@ -11,7 +11,7 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
-    if: ${{ !startsWith(github.event.head_commit.message, 'chore(main):') &&  !contains(github.event.head_commit.message, 'release')  }}
+    if: ${{ !startsWith(github.event.head_commit.message, 'chore(main):') &&  !contains(github.event.head_commit.message, 'release') && !contains(github.event.head_commit.message, 'check_format_lint')  }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -34,14 +34,19 @@ jobs:
       - name: Git commit
         id: commit
         run: |
-          git_status=$(git status --porcelain)
-          if [ -z "$git_status" ]; then
-            exit 0
-          fi
+          git status --porcelain
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
           git config --global core.autocrlf true
           git config --global core.safecrlf false
           git status
           git add .
-          git commit -m "chore: format+lint" -a
+          git commit -m "chore(actions): check_format_lint" -a
+        continue-on-error: true
+
+      - name: Git push
+        uses: ad-m/github-push-action@master
+        if: ${{ steps.commit.outcome == 'success' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
