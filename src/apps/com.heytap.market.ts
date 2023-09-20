@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.heytap.cdo.client.cards.page.main.maintab.MainTabActivity',
       rules:
-        '[id="android:id/content"] > RelativeLayout > LinearLayout > [text="跳过"]',
+        '[id="android:id/content"] > RelativeLayout > LinearLayout > [text="跳过"||text="Skip"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12506561',
     },
   ],
