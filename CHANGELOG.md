@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.36.0](https://github.com/gkd-kit/subscription/compare/v1.35.0...v1.36.0) (2023-09-20)
+
+
+### Features
+
+* **7天澳門統考:** 增加适配 ([0e7e603](https://github.com/gkd-kit/subscription/commit/0e7e6033091626ce884f54595992e49c408fc19d))
+* **华为主题:** 首页弹窗 ([#196](https://github.com/gkd-kit/subscription/issues/196)) ([de2c462](https://github.com/gkd-kit/subscription/commit/de2c462e37d02a48934556291440f7f05fcbd0cf))
+* **华为智慧搜索:** 下拉广告 ([#198](https://github.com/gkd-kit/subscription/issues/198)) ([ad57a1a](https://github.com/gkd-kit/subscription/commit/ad57a1a9057328f97aea7a55804306ef0758e642))
+* **华为运动健康:** 开屏广告, “我的”页会员广告  ([#197](https://github.com/gkd-kit/subscription/issues/197)) ([7c0b84e](https://github.com/gkd-kit/subscription/commit/7c0b84efb65f00e9151269fbc29fa6c23174a47b))
+
 ## [1.35.0](https://github.com/gkd-kit/subscription/compare/v1.34.0...v1.35.0) (2023-09-19)
 
 
