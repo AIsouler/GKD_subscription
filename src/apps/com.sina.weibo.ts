@@ -54,5 +54,23 @@ export default defineAppConfig({
         'https://gkd-kit.songe.li/import/12531434',
       ],
     },
+    {
+      key: 5,
+      name: '帖子详情底部评论区顶部广告',
+      desc: '点击右上角x',
+      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+      rules: [
+        {
+          matches:
+            '[id="com.sina.weibo:id/left_img_container"] + LinearLayout >2 [id="com.sina.weibo:id/close"][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12673043',
+        },
+        {
+          matches:
+            '[id="com.sina.weibo:id/corner_marker_view"] >2 [id="com.sina.weibo:id/right_top_tag"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12673051',
+        },
+      ],
+    },
   ],
 });
