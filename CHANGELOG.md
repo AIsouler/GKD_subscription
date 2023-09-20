@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.37.0](https://github.com/gkd-kit/subscription/compare/v1.36.0...v1.37.0) (2023-09-20)
+
+
+### Features
+
+* **交通银行:** 点击右上角x ([3a0d347](https://github.com/gkd-kit/subscription/commit/3a0d347e53f85f4886f2e6f22582c28c6b156639))
+* **微博:** 关闭不感兴趣广告弹窗 ([a5f9de7](https://github.com/gkd-kit/subscription/commit/a5f9de77fac49131b9bc697477e2a6e2da92afae))
+* **微博:** 帖子详情底部评论区顶部广告 ([#208](https://github.com/gkd-kit/subscription/issues/208)) ([79b7618](https://github.com/gkd-kit/subscription/commit/79b76180c9cd298630b38f2162021d37a5aebb20))
+* **软件商店:** 开屏广告-适配英文 ([#202](https://github.com/gkd-kit/subscription/issues/202)) ([e75cfe0](https://github.com/gkd-kit/subscription/commit/e75cfe0e8c062c1108f0940bc103eca7f4f5f585))
+
 ## [1.36.0](https://github.com/gkd-kit/subscription/compare/v1.35.0...v1.36.0) (2023-09-20)
 
 
