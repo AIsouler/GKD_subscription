@@ -45,8 +45,9 @@ export default defineAppConfig({
         {
           key: 1,
           matches:
-            'TextView[id=null][text="跳过视频"] < View +(2) @View > Button[clickable=true]',
+            '[id=null][text="跳过视频"] < View +(2) @View > Button[clickable=true]',
           snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12668269',
             'https://gkd-kit.gitee.io/import/12642913',
             'https://gkd-kit.gitee.io/import/12642932',
           ],
@@ -54,9 +55,13 @@ export default defineAppConfig({
         {
           key: 3,
           matches: [
-            'Button[id=null][clickable=true] < @View - TextView < View - View >(n) View[desc="安装"]', // 点中间的View才会关闭广告，最后两个 View 之间的距离不确定
+            'Button[id=null][clickable=true] < @View - * < View - View >(n) View[desc="安装"]', // 点中间的View才会关闭广告，最后两个 View 之间的距离不确定
           ],
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642952'],
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642952',
+            // https://github.com/gkd-kit/subscription/pull/136#issuecomment-1723186711
+            'https://gkd-kit.gitee.io/import/12668298',
+          ],
         },
         {
           key: 4,
