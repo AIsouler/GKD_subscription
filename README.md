@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 153 个 APP, 共有 346 规则组
+当前订阅文件已适配 155 个 APP, 共有 349 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -305,10 +305,12 @@
   - [快照-3](https://gkd-kit.gitee.io/import/12643039)
   - [快照-4](https://gkd-kit.gitee.io/import/12643246)
 - **谷歌广告-视频广告** - 点击跳过视频-点击关闭按钮
-  - [快照-0](https://gkd-kit.gitee.io/import/12642913)
-  - [快照-1](https://gkd-kit.gitee.io/import/12642932)
-  - [快照-2](https://gkd-kit.gitee.io/import/12642952)
-  - [快照-3](https://gkd-kit.gitee.io/import/12642983)
+  - [快照-0](https://gkd-kit.gitee.io/import/12668269)
+  - [快照-1](https://gkd-kit.gitee.io/import/12642913)
+  - [快照-2](https://gkd-kit.gitee.io/import/12642932)
+  - [快照-3](https://gkd-kit.gitee.io/import/12642952)
+  - [快照-4](https://gkd-kit.gitee.io/import/12668298)
+  - [快照-5](https://gkd-kit.gitee.io/import/12642983)
 - **谷歌广告-页面底部广告**
   - [快照-0](https://gkd-kit.gitee.io/import/12642993)
   - [快照-1](https://gkd-kit.gitee.io/import/12643229)
@@ -472,6 +474,19 @@
   - [快照-4](https://gkd-kit.gitee.io/import/12647655)
 - 默认禁用 **首页活动弹窗-默认禁用**
   - [快照-0](https://gkd-kit.gitee.io/import/12657939)
+  - [快照-1](https://gkd-kit.gitee.io/import/12667815)
+
+### [com.huawei.health](/src/apps/com.huawei.health.ts) - 华为运动健康
+
+- **开屏广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12667766)
+- **“我的”页会员广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12667814)
+
+### [com.huawei.search](/src/apps/com.huawei.search.ts) - 华为智慧搜索
+
+- **下拉搜索横幅广告**
+  - [快照-0](https://gkd-kit.gitee.io/import/12667938)
 
 ### [com.hunantv.imgo.activity](/src/apps/com.hunantv.imgo.activity.ts) - 芒果TV
 
