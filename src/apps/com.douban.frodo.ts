@@ -72,6 +72,14 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12548450',
           ],
         },
+        {
+          activityIds: ['com.douban.frodo.group.activity.GroupTopicActivity'],
+          matches: 'ImageView[id=null] +(n) FrameLayout > ImageView[id=null]', // 这个广告可以直接关闭，不需要二次点击
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12674798',
+            'https://gkd-kit.gitee.io/import/12674842',
+          ],
+        },
       ],
     },
     {
