@@ -5,6 +5,13 @@ export default defineAppConfig({
   name: '高德地图',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      activityIds: 'com.autonavi.map.activity.NewMapActivity',
+      rules: '@LinearLayout[clickable=true] > TextView[text="跳过"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12667556',
+    },
+    {
       key: 10,
       name: '首页-地图页面上方消息提醒',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
