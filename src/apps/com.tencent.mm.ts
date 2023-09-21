@@ -116,7 +116,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '订阅号底部广告',
+      name: '订阅号文章底部广告',
       desc: '自动点击-广告反馈按钮-不感兴趣-与我无关',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
@@ -125,10 +125,11 @@ export default defineAppConfig({
           key: 1,
           name: '点击广告反馈按钮',
           matches:
-            'View[childCount=1] >(5) [text="广告"] + [text="feedback_icon"]',
+            'View[childCount=1] >(5) [text="广告"] + [text="feedback_icon"][visibleToUser=true]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642232',
             'https://gkd-kit.gitee.io/import/12646837', // key: 3 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
+            'https://gkd-kit.gitee.io/import/12678937', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
           ],
         },
         {
