@@ -21,5 +21,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 1,
+      name: '主页广告卡片',
+      activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+      rules: [
+        {
+          matches:
+            'ImageView - LinearLayout >(2) ImageView[id="com.estrongs.android.pop:id/close"][clickable=true]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12674919'],
+        },
+      ],
+    },
   ],
 });
