@@ -50,6 +50,9 @@ devDependencies:
   picocolors:
     specifier: ^1.0.0
     version: 1.0.0
+  pinyin-pro:
+    specifier: 3.16.6
+    version: 3.16.6
   prettier:
     specifier: ^3.0.1
     version: 3.0.1
@@ -2107,6 +2110,10 @@ packages:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
     engines: {node: '>=0.10'}
     hasBin: true
+    dev: true
+
+  /pinyin-pro@3.16.6:
+    resolution: {integrity: sha512-l4W4c/K49kj33P5JwpAHkkN/rlxeOwQ07bLhMg8kJVIsdxD3Cpa3aIBF1PKUPt3rxbebawmBoeR1x8VgZmFO5w==}
     dev: true
 
   /prelude-ls@1.2.1:
