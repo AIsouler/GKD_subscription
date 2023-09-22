@@ -19,7 +19,7 @@ jobs:
       - name: download node
         uses: nick-fields/retry@v2
         with:
-          timeout_minutes: 10
+          timeout_minutes: 3
           max_attempts: 3
           command: node -v
 
