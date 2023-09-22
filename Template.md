@@ -13,3 +13,7 @@
 ## 适配 APP 列表
 
 --APP_LIST--
+
+## 感谢以下开发者的贡献
+
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription)

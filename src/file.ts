@@ -1,9 +1,8 @@
-import dayjs from 'dayjs';
 import _ from 'lodash';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { parseSelector } from './selector';
-import type { IArray, SubscriptionConfig } from './types';
+import type { AppConfig, IArray, SubscriptionConfig } from './types';
 
 const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
   return Array<T>().concat(array);
@@ -20,18 +19,26 @@ const sortKeys: (keyof SubscriptionConfig)[] = [
 ];
 
 export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
-  const newConfig: SubscriptionConfig = { ...config };
   const oldConfig: SubscriptionConfig = JSON.parse(
     await fs.readFile(fp, 'utf-8').catch(() => '{}'),
   );
 
-  newConfig.version = oldConfig.version ?? 0;
+  const newConfig: SubscriptionConfig = {
+    ...config,
+    version: oldConfig.version || 0,
+  };
+  newConfig.version = oldConfig.version || 0;
+  checkConfig(newConfig);
+
+  // update md
+  await updateReadMeMd(newConfig);
+  console.log('更新文档');
+
   if (_.isEqual(newConfig, oldConfig)) {
-    console.log([oldConfig.name, 'nothing changed, skip']);
+    console.log('没有检测到规则变化,跳过更新');
     return;
   }
   newConfig.version++;
-  checkConfig(newConfig);
 
   // keep json key sort by map
   const map = new Map<string, unknown>();
@@ -45,14 +52,11 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   );
   await fs.writeFile(fp, buffer);
 
-  await updateReadMeMd(newConfig);
-
-  console.log({
-    mtime: dayjs().format('HH:mm:ss'),
-    name: newConfig.name,
-    size: (buffer.length / 1024).toFixed(3) + 'KB',
-    version: newConfig.version,
-  });
+  console.log(
+    `更新订阅: 版本:${newConfig.version}, 文件大小: ${
+      (buffer.length / 1024).toFixed(3) + 'KB'
+    }`,
+  );
 };
 
 export async function* walk(dirPath: string) {
@@ -186,69 +190,96 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
   }
 };
 
-export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
-  const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
-  const appListText = newConfig.apps
-    .map((app) => {
-      const appMdText = `### [${app.id}](/src/apps/${app.id}.ts) - ${app.name}\n`;
-      const groupMdText = app.groups
-        ?.map((group) => {
-          const groupNameMdText =
-            `- ${group.enable === false ? '默认禁用 ' : ''}**${group.name}**` +
-            (group.desc ? ` - ${group.desc}` : '').trimEnd();
+export const updateAppMd = async (app: AppConfig) => {
+  const appHeadMdText = [
+    `# ${app.name}`,
+    `存在 ${app.groups?.length || 0} 规则组 - [${app.id}](/src/apps/${
+      app.id
+    }.ts)`,
+  ].join('\n\n');
+  const groupMdText = (app.groups || [])
+    .map((group) => {
+      const groupNameMdText = [
+        `## ${group.name}`,
+        [group.enable === false ? '默认禁用' : '', group.desc]
+          .filter((s) => s)
+          .join(' - '),
+      ]
+        .join('\n\n')
+        .trim();
 
-          const exampleUrls: string[] = [];
-          exampleUrls.push(...iArrayToArray(group.exampleUrls));
-          iArrayToArray(group.rules)
-            .map((r) =>
-              typeof r == 'string' ? [] : iArrayToArray(r.exampleUrls),
-            )
-            .flat()
-            .forEach((u) => {
-              if (u) {
-                exampleUrls.push(u);
-              }
-            });
-          const exampleMdText = exampleUrls
-            .map((u, i) => {
-              if (u) {
-                return `  - [示例-${i}](${u})`;
-              }
-            })
-            .join('\n')
-            .trimEnd();
-
-          const snapshotUrls: string[] = [];
-          snapshotUrls.push(...iArrayToArray(group.snapshotUrls));
-          iArrayToArray(group.rules)
-            .map((r) =>
-              typeof r == 'string' ? [] : iArrayToArray(r.snapshotUrls),
-            )
-            .flat()
-            .forEach((u) => {
-              if (u) {
-                snapshotUrls.push(u);
-              }
-            });
-          const snapshotMdText = snapshotUrls
-            .map((u, i) => {
-              if (u) {
-                return `  - [快照-${i}](${u})`;
-              }
-            })
-            .join('\n');
-          return [groupNameMdText, exampleMdText, snapshotMdText]
-            .filter((s) => s)
-            .join('\n')
-            .trimEnd();
+      const exampleUrls: string[] = [];
+      exampleUrls.push(...iArrayToArray(group.exampleUrls));
+      iArrayToArray(group.rules)
+        .map((r) => (typeof r == 'string' ? [] : iArrayToArray(r.exampleUrls)))
+        .flat()
+        .forEach((u) => {
+          if (u) {
+            exampleUrls.push(u);
+          }
+        });
+      const exampleMdText = exampleUrls
+        .map((u, i) => {
+          if (u) {
+            return `- [示例-${i}](${u})`;
+          }
         })
-        .join('\n')
-        .trimEnd();
+        .join('\n');
 
-      return [appMdText, groupMdText].join('\n').trimEnd();
+      const snapshotUrls: string[] = [];
+      snapshotUrls.push(...iArrayToArray(group.snapshotUrls));
+      iArrayToArray(group.rules)
+        .map((r) => (typeof r == 'string' ? [] : iArrayToArray(r.snapshotUrls)))
+        .flat()
+        .forEach((u) => {
+          if (u) {
+            snapshotUrls.push(u);
+          }
+        });
+      const snapshotMdText = snapshotUrls
+        .map((u, i) => {
+          if (u) {
+            return `- [快照-${i}](${u})`;
+          }
+        })
+        .join('\n');
+      return [groupNameMdText, exampleMdText, snapshotMdText]
+        .filter((s) => s)
+        .join('\n\n')
+        .trim();
     })
     .join('\n\n')
-    .trimEnd();
+    .trim();
+
+  const appMdText = [appHeadMdText, groupMdText].join('\n\n').trim() + '\n';
+  await fs.writeFile(process.cwd() + `/docs/${app.id}.md`, appMdText, 'utf-8');
+};
+export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
+  await Promise.all(
+    newConfig.apps.map(async (app) => {
+      await updateAppMd(app);
+    }),
+  );
+
+  const appListText =
+    '| 名称 | ID | 规则组 |\n| - | - | - |\n' +
+    newConfig.apps
+      .map((app) => {
+        const groups = app.groups || [];
+        const diabledSize = _.sumBy(groups, (g) =>
+          g.enable === false ? 1 : 0,
+        );
+
+        return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${
+          diabledSize
+            ? `${groups.length}/${
+                groups.length - diabledSize
+              }启用/${diabledSize}禁用`
+            : groups.length
+        } |`;
+      })
+      .join('\n');
+  const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
   const readMeMdText = mdTemplate
     .replace('--APP_SIZE--', newConfig.apps.length.toString())
     .replace(
