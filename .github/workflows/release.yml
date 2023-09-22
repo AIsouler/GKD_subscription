@@ -14,14 +14,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: volta-cli/action@v3
-
-      - name: download node
-        uses: nick-fields/retry@v2
+      - uses: actions/setup-node@v3
         with:
-          timeout_minutes: 3
-          max_attempts: 3
-          command: node -v
+          node-version: 20
 
       - uses: pnpm/action-setup@v2
 
