@@ -45,5 +45,17 @@ export default defineAppConfig({
       rules: ['ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]'],
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12642081'],
     },
+    {
+      enable: false,
+      key: 10,
+      name: '自动勾选原图',
+      desc: '发送图片时自动勾选原图',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      rules: ['@CheckBox[checked=false] + [text="原图"]'],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12705556', // 未勾选原图
+        'https://gkd-kit.gitee.io/import/12705559', // 已勾选原图
+      ],
+    },
   ],
 });
