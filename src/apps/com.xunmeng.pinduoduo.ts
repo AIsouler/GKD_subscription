@@ -81,5 +81,15 @@ export default defineAppConfig({
       ],
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12642058'],
     },
+    {
+      enable: false,
+      key: 7,
+      name: '多多视频每日签到弹窗',
+      activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
+      rules: [
+        '@ImageView[id=null] < ViewGroup < ViewGroup +(2) ViewGroup >(n) [text^="每日签到"]',
+      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12700615'],
+    },
   ],
 });
