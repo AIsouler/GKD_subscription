@@ -5,33 +5,18 @@ export default defineAppConfig({
   name: '云闪付',
   groups: [
     {
-      key: 1,
-      name: '定位权限悬浮弹窗',
+      key: 0,
+      name: '开屏广告',
       activityIds: ['com.unionpay.activity.UPActivityMain'],
       rules: [
         {
-          matches:
-            '[id="com.unionpay:id/locate_guide_view"] >2 [id="com.unionpay:id/locate_iv_close"][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12694508',
+          matches: '[id="com.unionpay:id/jump"][text^="跳过"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12705391',
         },
       ],
     },
     {
-      key: 2,
-      name: '访问位置请求弹窗',
-      enable: false,
-      desc: '自动点击【不允许】。默认关闭，请手动开启',
-      activityIds: ['com.unionpay.base.UPDialog'],
-      rules: [
-        {
-          matches:
-            '[text$="想访问您的位置信息"] < * +2 LinearLayout > [id="com.unionpay:id/btn_cancel"][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12695773',
-        },
-      ],
-    },
-    {
-      key: 3,
+      key: 9,
       name: '右侧悬浮广告',
       activityIds: ['com.unionpay.activity.UPActivityMain'],
       rules: [
@@ -43,9 +28,35 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 4,
-      name: '开启消息通知弹窗',
+      key: 10,
+      name: '定位权限悬浮弹窗',
+      activityIds: ['com.unionpay.activity.UPActivityMain'],
+      rules: [
+        {
+          matches:
+            '[id="com.unionpay:id/locate_guide_view"] >2 [id="com.unionpay:id/locate_iv_close"][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12694508',
+        },
+      ],
+    },
+    {
       enable: false,
+      key: 11,
+      name: '访问位置请求弹窗',
+      desc: '自动点击【不允许】。默认关闭，请手动开启',
+      activityIds: ['com.unionpay.base.UPDialog'],
+      rules: [
+        {
+          matches:
+            '[text$="想访问您的位置信息"] < * +2 LinearLayout > [id="com.unionpay:id/btn_cancel"][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12695773',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 12,
+      name: '开启消息通知弹窗',
       desc: '默认关闭，请手动开启',
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
