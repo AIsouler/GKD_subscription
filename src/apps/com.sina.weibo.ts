@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '帖子详情底部评论区顶部广告',
+      name: '帖子详情底部，评论区顶部广告',
       desc: '点击右上角x',
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       rules: [
@@ -88,6 +88,42 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12674498',
         },
       ],
+    },
+    {
+      key: 7,
+      name: '首页顶部话题分享窗口',
+      activityIds: ['com.sina.weibo.MainTabActivity'],
+      rules:
+        '[id="com.sina.weibo:id/tvGuide"] + [id="com.sina.weibo:id/v_close"] + [id="com.sina.weibo:id/iv_close"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12705972'],
+    },
+    {
+      key: 8,
+      name: '发现页广告弹窗',
+      activityIds: ['com.sina.weibo.page.ad.DiscoverAdDialog'],
+      rules:
+        '[id="com.sina.weibo:id/ad_portrait_layout"] + [id="com.sina.weibo:id/btn_close"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12705974'],
+    },
+    {
+      enable: false,
+      key: 9,
+      name: '请求开启通知弹窗',
+      desc: '自动点击暂不开启',
+      activityIds: ['com.sina.weibo.notifyguidev2.NotifyGuideV2Activity'],
+      rules:
+        '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12705979'],
+    },
+    {
+      enable: false,
+      key: 10,
+      name: '请求开启通知提示信息',
+      desc: '自动点击x按钮',
+      activityIds: ['com.sina.weibo.MainTabActivity'],
+      rules:
+        '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12705986'],
     },
   ],
 });
