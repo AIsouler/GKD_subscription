@@ -47,6 +47,16 @@ export default defineAppConfig({
     },
     {
       enable: false,
+      key: 4,
+      name: '新人专享1元购SVIP',
+      desc: '消息界面-搜索框和消息记录直接的广告卡片,点击关闭右侧x',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      rules:
+        '@ImageView[id!=null][clickable=true] -2 TextView[id!=null][text^="新人专享1元购SVIP"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12706907',
+    },
+    {
+      enable: false,
       key: 10,
       name: '自动勾选原图',
       desc: '发送图片时自动勾选原图',
