@@ -41,7 +41,7 @@ export default defineAppConfig({
           matches: ['[id$="id/tt_item_tv"][text=`不感兴趣`]'],
         },
         'Button[text$="广告"] + Button[text="不感兴趣"]',
-        '[id=`com.coolapk.market:id/close_view`]',
+        '[id="com.coolapk.market:id/close_view"]',
       ],
     },
     {
@@ -62,8 +62,20 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: 1,
+          name: '点击x按钮',
+          matches: [
+            '[id="com.coolapk.market:id/top_text_view"] + [id="com.coolapk.market:id/close_view"][desc="关闭"]',
+          ],
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642094',
+            'https://gkd-kit.gitee.io/import/12642148',
+          ],
+        },
+        {
           preKeys: [1],
-          name: '关闭广告-反馈理由',
+          key: 2,
+          name: '点击不感兴趣',
           matches: '[text$="今日免广告"] + [text="不感兴趣"][clickable=true]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642132',
@@ -71,12 +83,12 @@ export default defineAppConfig({
           ],
         },
         {
-          key: 1,
-          matches: ['[id="com.coolapk.market:id/close_view"][desc="关闭"]'],
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642094',
-            'https://gkd-kit.gitee.io/import/12642148',
-          ],
+          // preKeys: [2], // 取消前置 key，防止快速滑动时停在最后一个界面而不进行点击
+          key: 3,
+          name: '再次点击不感兴趣',
+          matches:
+            '@LinearLayout > [id="com.byted.pangle.m:id/tt_item_tv"][text="不感兴趣"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12706437'],
         },
       ],
     },
