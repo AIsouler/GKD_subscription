@@ -165,5 +165,28 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 8,
+      name: '订阅号文章中间广告',
+      desc: '自动点击-关闭此广告',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
+      rules: [
+        {
+          key: 1,
+          matches:
+            'View[childCount=1] > @[id="feedbackTagContainer"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12700183',
+            'https://gkd-kit.gitee.io/import/12701503', // 事件完成后，采用[childCount=1]进行限定，防止频繁触发规则
+          ],
+        },
+        {
+          key: 2,
+          matches: 'TextView[id="closeBtn"][text="关闭此广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700191',
+        },
+      ],
+    },
   ],
 });
