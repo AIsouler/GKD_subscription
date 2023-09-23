@@ -1,6 +1,6 @@
 # 微信
 
-存在 9 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 10 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -62,3 +62,9 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12700183)
 - [快照-1](https://gkd-kit.gitee.io/import/12701503)
 - [快照-2](https://gkd-kit.gitee.io/import/12700191)
+
+## 自动查看原图
+
+默认禁用 - 自动点击底部左侧[查看原图（*M）]按钮
+
+- [快照-0](https://gkd-kit.gitee.io/import/12706944)
