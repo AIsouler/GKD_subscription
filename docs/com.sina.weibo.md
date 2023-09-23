@@ -1,6 +1,6 @@
 # 微博
 
-存在 7 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
+存在 11 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
 
 ## 开屏广告
 
@@ -23,7 +23,7 @@
 - [快照-0](https://gkd-kit.songe.li/import/12531433)
 - [快照-1](https://gkd-kit.songe.li/import/12531434)
 
-## 帖子详情底部评论区顶部广告
+## 帖子详情底部，评论区顶部广告
 
 点击右上角x
 
@@ -36,3 +36,23 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12674511)
 - [快照-1](https://gkd-kit.gitee.io/import/12674498)
+
+## 首页顶部话题分享窗口
+
+- [快照-0](https://gkd-kit.gitee.io/import/12705972)
+
+## 发现页广告弹窗
+
+- [快照-0](https://gkd-kit.gitee.io/import/12705974)
+
+## 请求开启通知弹窗
+
+默认禁用 - 自动点击暂不开启
+
+- [快照-0](https://gkd-kit.gitee.io/import/12705979)
+
+## 请求开启通知提示信息
+
+默认禁用 - 自动点击x按钮
+
+- [快照-0](https://gkd-kit.gitee.io/import/12705986)

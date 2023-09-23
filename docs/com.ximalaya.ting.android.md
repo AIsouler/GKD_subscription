@@ -21,6 +21,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12506269)
 - [快照-1](https://gkd-kit.gitee.io/import/12506225)
+- [快照-2](https://gkd-kit.gitee.io/import/12701414)
 
 ## 播放页面-播放前广告
 
@@ -33,6 +34,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12506258)
 - [快照-1](https://gkd-kit.gitee.io/import/12506253)
+- [快照-2](https://gkd-kit.gitee.io/import/12701374)
 
 ## 关闭热播推荐广告
 

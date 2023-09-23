@@ -23,7 +23,8 @@
 
 点击卡片右上角按钮,然后点击关闭弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12642132)
-- [快照-1](https://gkd-kit.gitee.io/import/12642155)
-- [快照-2](https://gkd-kit.gitee.io/import/12642094)
-- [快照-3](https://gkd-kit.gitee.io/import/12642148)
+- [快照-0](https://gkd-kit.gitee.io/import/12642094)
+- [快照-1](https://gkd-kit.gitee.io/import/12642148)
+- [快照-2](https://gkd-kit.gitee.io/import/12642132)
+- [快照-3](https://gkd-kit.gitee.io/import/12642155)
+- [快照-4](https://gkd-kit.gitee.io/import/12706437)

@@ -4,6 +4,8 @@
 
 ## 开屏广告
 
+- [快照-0](https://gkd-kit.gitee.io/import/12700920)
+
 ## 广告卡片
 
 - [快照-0](https://gkd-kit.songe.li/import/38517192/fea3449b-d642-4d75-929f-490421cc9080)
