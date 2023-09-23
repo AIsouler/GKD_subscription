@@ -14,13 +14,13 @@ export default defineAppConfig({
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12660905'],
         },
         {
-          matches: '@[id=null][text^="跳过"] < LinearLayout +(4) ImageView',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12660955'],
-        },
-        {
           matches:
-            '[text="广告"] - ImageView < ViewGroup - ViewGroup >(2) [text="跳过"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12660984'],
+            '[id="cn.xiaochuankeji.tieba:id/splash_ad_view"] [text^="跳过"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12660955',
+            'https://gkd-kit.gitee.io/import/12660984',
+            'https://gkd-kit.gitee.io/import/12699405',
+          ],
         },
       ],
     },
