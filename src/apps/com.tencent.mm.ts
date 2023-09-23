@@ -188,5 +188,14 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 9,
+      name: '自动查看原图',
+      desc: '自动点击底部左侧[查看原图（*M）]按钮',
+      activityIds: 'com.tencent.mm.ui.chatting.gallery.ImageGalleryUI',
+      rules: 'Button[text^="查看原图"][clickable=true]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12706944',
+    },
   ],
 });
