@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.40.0](https://github.com/gkd-kit/subscription/compare/v1.39.0...v1.40.0) (2023-09-23)
+
+
+### Features
+
+* **微信:** 自动查看原图 ([#271](https://github.com/gkd-kit/subscription/issues/271)) ([3a4f449](https://github.com/gkd-kit/subscription/commit/3a4f4497439a6e899cc01ca3f4fca553075095a2))
+
 ## [1.39.0](https://github.com/gkd-kit/subscription/compare/v1.38.0...v1.39.0) (2023-09-23)
 
 
