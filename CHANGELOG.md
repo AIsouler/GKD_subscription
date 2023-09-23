@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.40.2](https://github.com/gkd-kit/subscription/compare/v1.40.1...v1.40.2) (2023-09-23)
+
+
+### Bug Fixes
+
+* **哔哩哔哩:** 视频底部广告-误触 ([e8321de](https://github.com/gkd-kit/subscription/commit/e8321de18314b53310cffebd704b8a12a4ae20e0))
+
 ## [1.40.1](https://github.com/gkd-kit/subscription/compare/v1.40.0...v1.40.1) (2023-09-23)
 
 
