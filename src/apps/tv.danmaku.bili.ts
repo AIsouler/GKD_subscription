@@ -57,34 +57,30 @@ export default defineAppConfig({
     {
       key: 4,
       name: '视频底部广告',
+      desc: '点击[视频底部,评论区顶部]的广告卡片右侧菜单按钮,选择屏蔽广告原因',
       activityIds: [
         'com.bilibili.video.videodetail.VideoDetailsActivity',
         'com.bilibili.ship.theseus.all.UnitedBizDetailsActivity',
-        'tv.danmaku.bili.MainActivityV2',
       ],
       rules: [
         {
-          // 以前的旧规则,出这条规则的时候忘记保留快照了
-          name: '点击包含[广告]的菜单项',
-          matches:
-            '[id=`tv.danmaku.bili:id/reason1_layout`] > [id=`tv.danmaku.bili:id/reason1`][text*=`广告`]',
-        },
-        {
-          name: '点击屏蔽广告原因',
-          matches:
-            '[id="tv.danmaku.bili:id/menu_text"][text="屏蔽广告"] < [id="tv.danmaku.bili:id/title"] + [id="tv.danmaku.bili:id/dislike_reasons"] >2 [id="tv.danmaku.bili:id/reason1_layout"]',
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642261', // 屏蔽广告菜单弹窗
-            'https://gkd-kit.gitee.io/import/12706768', // 首页点击[视频卡片右下角菜单图标]后出现的普通菜单弹窗, 限制标题 [text="屏蔽广告"] 避免误触此弹窗
-          ],
-        },
-        {
+          key: 0,
           name: '点击广告卡片右侧菜单图标',
           matches:
             '[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id="tv.danmaku.bili:id/more"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642260', // n = 2
             'https://gkd-kit.gitee.io/import/12705266', // n = 3
+          ],
+        },
+        {
+          preKeys: 0,
+          name: '点击屏蔽广告',
+          matches:
+            '[id="tv.danmaku.bili:id/menu_text"][text="屏蔽广告"] < [id="tv.danmaku.bili:id/title"] + [id="tv.danmaku.bili:id/dislike_reasons"] >2 [id="tv.danmaku.bili:id/reason1_layout"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642261', // 屏蔽广告菜单弹窗
+            'https://gkd-kit.gitee.io/import/12706768', // 首页点击[视频卡片右下角菜单图标]后出现的普通菜单弹窗, 限制标题 [text="屏蔽广告"] 避免误触此弹窗
           ],
         },
       ],
