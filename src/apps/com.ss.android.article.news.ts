@@ -27,5 +27,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 10,
+      name: '请求通知权限弹窗',
+      activityIds: ['com.ss.android.article.news.activity.MainActivity'],
+      rules: [
+        {
+          matches: '[text^="开启通知"] + LinearLayout > [text="暂不开启"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12706699'],
+        },
+      ],
+    },
   ],
 });
