@@ -7,8 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-      rules: 'TextView[text^=`跳过`][id=`com.netease.cloudmusic:id/skipBtn`]',
+      activityIds: [
+        'com.netease.cloudmusic.activity.MainActivity',
+        'com.netease.cloudmusic.activity.LoadingActivity',
+      ],
+      rules: '[id="com.netease.cloudmusic:id/skipBtn"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12700920'],
     },
     {
       key: 1,
