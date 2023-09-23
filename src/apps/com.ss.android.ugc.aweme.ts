@@ -35,7 +35,7 @@ export default defineAppConfig({
         },
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '[text="朋友推荐"] +(2) FrameLayout > [desc="不感兴趣"]',
+          matches: '[text="朋友推荐"] +(2) @FrameLayout > [desc="不感兴趣"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12675129',
         },
         {
