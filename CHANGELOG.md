@@ -1,5 +1,55 @@
 # Changelog
 
+## [1.39.0](https://github.com/gkd-kit/subscription/compare/v1.38.0...v1.39.0) (2023-09-23)
+
+
+### Features
+
+* **GKD:** 批量删除快照 ([#321](https://github.com/gkd-kit/subscription/issues/321)) ([aeb5347](https://github.com/gkd-kit/subscription/commit/aeb53474ebea94237f21c09cacd4da8a097de3a4))
+* **Gspace:** 开屏广告(增加快照)，主页面上方广告 ([#301](https://github.com/gkd-kit/subscription/issues/301)) ([3e9d5c2](https://github.com/gkd-kit/subscription/commit/3e9d5c2e0c3716e27d510c70032aeb91310115f6))
+* **Keep:** 青少年模式弹窗, 首页广告弹窗, 首页信息流广告, 运动购页面-广告弹窗 ([#312](https://github.com/gkd-kit/subscription/issues/312)) ([3f2984a](https://github.com/gkd-kit/subscription/commit/3f2984a58fe853df381096e5702bf26bb85b4bf8))
+* **NGA玩家社区:** 社区-顶部广告, 开屏广告, 话题-帖子列表广告 ([#313](https://github.com/gkd-kit/subscription/issues/313)) ([2de4291](https://github.com/gkd-kit/subscription/commit/2de42913ffb25d2a3faa18a856d2683aea62d5f9))
+* **QQ:** 新人专享1元购SVIP ([#272](https://github.com/gkd-kit/subscription/issues/272)) ([0e4d92d](https://github.com/gkd-kit/subscription/commit/0e4d92d1b5a1de495d7c23ee35f1dda9541b3b3f))
+* **QQ:** 自动勾选原图（默认关闭） ([#307](https://github.com/gkd-kit/subscription/issues/307)) ([099080c](https://github.com/gkd-kit/subscription/commit/099080c594970be0c8ac7234a19e69810df67981))
+* **东方财富:** 开屏广告, 更新弹窗, 请求通知权限提示信息（默认关闭）([#311](https://github.com/gkd-kit/subscription/issues/311)) ([62fd5c5](https://github.com/gkd-kit/subscription/commit/62fd5c50421b636922cf1b82af57109641b86212))
+* **中信银行:** 开屏广告,更新弹窗,广告弹窗  ([#290](https://github.com/gkd-kit/subscription/issues/290)) ([66c72c6](https://github.com/gkd-kit/subscription/commit/66c72c6875631d73792a64a619c9c27241b449ee))
+* **丰云行:** 开屏广告 ([#299](https://github.com/gkd-kit/subscription/issues/299)) ([f8a6136](https://github.com/gkd-kit/subscription/commit/f8a61361f365950cdafcac38490a436c0a37afc4))
+* **云闪付:** 定位请求悬浮框，定位请求弹窗，消息通知弹窗，右侧悬浮广告 ([#267](https://github.com/gkd-kit/subscription/issues/267)) ([cc2e90b](https://github.com/gkd-kit/subscription/commit/cc2e90b72d2fd2a00ea43b142b96b119be4eb58b)), closes [#263](https://github.com/gkd-kit/subscription/issues/263)
+* **云闪付:** 开屏广告 ([#303](https://github.com/gkd-kit/subscription/issues/303)) ([08daace](https://github.com/gkd-kit/subscription/commit/08daacebbd9b42a752a725dcb28c1c91e1da2e1f))
+* **什么值得买:** 弹窗广告 ([#266](https://github.com/gkd-kit/subscription/issues/266)) ([812f309](https://github.com/gkd-kit/subscription/commit/812f309c37f7b78b0189df04caa86bae69a05098)), closes [#265](https://github.com/gkd-kit/subscription/issues/265)
+* **今日头条:** 请求通知权限弹窗（默认关闭）([#320](https://github.com/gkd-kit/subscription/issues/320)) ([463e864](https://github.com/gkd-kit/subscription/commit/463e86465347fe5a9930928e107d57efc5029c02))
+* **优酷视频:** 青少年模式弹窗, 视频推荐弹窗 ([#289](https://github.com/gkd-kit/subscription/issues/289)) ([92eb062](https://github.com/gkd-kit/subscription/commit/92eb062df996f3621b09b30928072fcda52f3a40))
+* **最右:** 开屏广告 ([#277](https://github.com/gkd-kit/subscription/issues/277)) ([88fd273](https://github.com/gkd-kit/subscription/commit/88fd273c3a0ed657a0bb3d48380d1ca729d1eff1))
+* **凤凰新闻:** 开屏广告, 信息流广告, 请求位置权限弹窗（默认关闭）([#306](https://github.com/gkd-kit/subscription/issues/306)) ([4bf6203](https://github.com/gkd-kit/subscription/commit/4bf6203e11cc74c1c75dd4c5b4470f8fd9c5d561))
+* **南网在线:** 更新弹窗, 首页广告弹窗 ([#280](https://github.com/gkd-kit/subscription/issues/280)) ([80afeef](https://github.com/gkd-kit/subscription/commit/80afeef8dc371e77922aeae69913b309a1e327fd))
+* **哔哩哔哩:** 动态推荐广告卡片-优化适配 ([d0a1210](https://github.com/gkd-kit/subscription/commit/d0a12107eefd705fbd51b51bf71e2d6c5943ba33))
+* **哔哩哔哩:** 开屏广告（补充快照）,视频底部广告（新增快照） ([#298](https://github.com/gkd-kit/subscription/issues/298)) ([d27bf78](https://github.com/gkd-kit/subscription/commit/d27bf78720cc4d7edf4adc2bcf7240a6c3256210))
+* **喜马拉雅:** 首页-推荐列表广告, 播放页面-底部推荐列表-夹杂广告 ([#291](https://github.com/gkd-kit/subscription/issues/291)) ([e649faa](https://github.com/gkd-kit/subscription/commit/e649faa2a5c40f34efc9e4d3d3c06770c88c3d2e))
+* **头条搜索极速版:** 一些广告弹窗 ([#304](https://github.com/gkd-kit/subscription/issues/304)) ([54a2a6b](https://github.com/gkd-kit/subscription/commit/54a2a6bef79b77f299748afcaf6c804bb7cd5cf3))
+* **小组件盒子:** 开屏广告, 更新弹窗, 第三方 SDK 广告, 会员限时优惠弹窗（默认关闭）([#316](https://github.com/gkd-kit/subscription/issues/316)) ([7153a89](https://github.com/gkd-kit/subscription/commit/7153a8973e9c513438d593ee65560ec6fb8e651b))
+* **微信:** 订阅号文章中间广告 ([#292](https://github.com/gkd-kit/subscription/issues/292)) ([4f842fe](https://github.com/gkd-kit/subscription/commit/4f842fe44772ddda2d9607ffaff30f99c2775add))
+* **微博:** 首页顶部话题分享窗口, 发现页广告弹窗, 请求开启通知弹窗（默认关闭）,  请求开启通知提示信息（默认关闭） ([#308](https://github.com/gkd-kit/subscription/issues/308)) ([3c2236b](https://github.com/gkd-kit/subscription/commit/3c2236b9d96cc779821b31403a4b84bd3919aac1))
+* **招商银行:** 朝朝宝-广告弹窗,请求定位权限弹窗（默认关闭）([#309](https://github.com/gkd-kit/subscription/issues/309)) ([8a28db1](https://github.com/gkd-kit/subscription/commit/8a28db11fb7412d05b8398616fff8496745752bc))
+* **拼多多:** 多多视频每日签到弹窗 ([#285](https://github.com/gkd-kit/subscription/issues/285)) ([cc4462a](https://github.com/gkd-kit/subscription/commit/cc4462a0dccb9edc2eb65f67d95719548f83a2ab))
+* **掌通家园:** 开屏广告,更新弹窗, 信息流文章底部广告  ([#302](https://github.com/gkd-kit/subscription/issues/302)) ([16dd312](https://github.com/gkd-kit/subscription/commit/16dd3122bab476b0d31caaed05d2c5592b2d5e71))
+* **智联招聘:** 开屏广告, 更新弹窗, 我的页面-banner广告 ([#315](https://github.com/gkd-kit/subscription/issues/315)) ([f353ead](https://github.com/gkd-kit/subscription/commit/f353eadcd6e2eb6f70e5e7977ebe6ccac2b5e2eb))
+* **校钉:** 开屏广告 ([#284](https://github.com/gkd-kit/subscription/issues/284)) ([6a2a58b](https://github.com/gkd-kit/subscription/commit/6a2a58b4f9e89ed4cf51192469a74e7488f757c9))
+* **涨乐财富通:** 开屏广告,更新弹窗 ([#276](https://github.com/gkd-kit/subscription/issues/276)) ([3f2882d](https://github.com/gkd-kit/subscription/commit/3f2882d83acbd21cf8eab135ce33237e01f2516d))
+* **百度网盘:** 开屏广告, 更新快照 ([#318](https://github.com/gkd-kit/subscription/issues/318)) ([b2df76a](https://github.com/gkd-kit/subscription/commit/b2df76a11e0a02ff655dd4baa42150ad8bcb15b8))
+* **网易云音乐:** 开屏广告 ([#287](https://github.com/gkd-kit/subscription/issues/287)) ([8c6acaa](https://github.com/gkd-kit/subscription/commit/8c6acaa9b470ac55bab3da4624e78e39c3fa418e))
+* **翡翠视频:** 开屏广告, 首页广告弹窗 ([#286](https://github.com/gkd-kit/subscription/issues/286)) ([8220984](https://github.com/gkd-kit/subscription/commit/822098421f58f9ddd405a470cd83d886bd4b91af))
+* **腾讯视频:** 开屏广告,更新弹窗,首页-顶部广告卡片,片头广告, 个人中心-广告卡片, 请求开启推送通知弹窗 ([#282](https://github.com/gkd-kit/subscription/issues/282)) ([168bf22](https://github.com/gkd-kit/subscription/commit/168bf22144f1493ca567495fe57b8cdf1cd980a9))
+* **金十数据:** 更新弹窗,首页广告弹窗, 快讯页面-广告弹窗, 会员页面-顶部广告（默认关闭）  ([#310](https://github.com/gkd-kit/subscription/issues/310)) ([f6e7188](https://github.com/gkd-kit/subscription/commit/f6e71886fadff9c348fb59c4097398a150c5d86a))
+* **音乐:** 会员过期续费弹窗, 我的页面-顶部 banner 广告 ([#288](https://github.com/gkd-kit/subscription/issues/288)) ([69071c1](https://github.com/gkd-kit/subscription/commit/69071c194c83aa95a1d401ca70d824bd14b46af6))
+* **顺易充:** 首页广告弹窗 ([#279](https://github.com/gkd-kit/subscription/issues/279)) ([50ad9bf](https://github.com/gkd-kit/subscription/commit/50ad9bfde6b4190631fcd1c9391314c208ff2398))
+
+
+### Bug Fixes
+
+* **抖音:** 关闭用户推荐(规则误触) ([#319](https://github.com/gkd-kit/subscription/issues/319)) ([3c3f407](https://github.com/gkd-kit/subscription/commit/3c3f407f742fd2e1ec6f9d9c296c0347ad223b52))
+* **直播吧:** 开屏广告-快照链接错误 ([8559128](https://github.com/gkd-kit/subscription/commit/8559128f61738916f030be5102c0433dde6ee465))
+* **酷安:** 关闭卡片广告（旧版） ([#293](https://github.com/gkd-kit/subscription/issues/293)) ([b0577eb](https://github.com/gkd-kit/subscription/commit/b0577eb4e5d1cd7d20e9426d23576dfcf1a70f3e))
+
 ## [1.38.0](https://github.com/gkd-kit/subscription/compare/v1.37.0...v1.38.0) (2023-09-21)
 
 
