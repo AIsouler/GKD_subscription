@@ -39,11 +39,24 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '频道页面-广告弹窗',
-      activityIds:
-        'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
-      rules: ['ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]'],
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12642081'],
+      name: '频道页面广告',
+      rules: [
+        {
+          name: '弹窗广告',
+          activityIds:
+            'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
+          matches:
+            'ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642081',
+        },
+        {
+          name: '右侧悬浮广告',
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches:
+            'FrameLayout[desc="发表帖子"] - LinearLayout[id!=null] >3 ImageView[id!=null][clickable=false] - View[id!=null][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12708844',
+        },
+      ],
     },
     {
       enable: false,
