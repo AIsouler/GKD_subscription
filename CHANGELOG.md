@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.41.0](https://github.com/gkd-kit/subscription/compare/v1.40.2...v1.41.0) (2023-09-24)
+
+
+### Features
+
+* **365时政:** 首页广告弹窗 ([#340](https://github.com/gkd-kit/subscription/issues/340)) ([7165634](https://github.com/gkd-kit/subscription/commit/71656344f62650b701d4fb44125ef77dc647980f))
+* **QQ:** 频道页面广告 ([#342](https://github.com/gkd-kit/subscription/issues/342)) ([1d4ae42](https://github.com/gkd-kit/subscription/commit/1d4ae42d2786cbf25dd845de9d4e04499455f340))
+* **亲邻开门:** 首页顶部广告, 开门有奖弹窗（默认关闭）,  获得金币弹窗（默认关闭）([#331](https://github.com/gkd-kit/subscription/issues/331)) ([8834614](https://github.com/gkd-kit/subscription/commit/88346145627236b8744189014a3910555d5ded58))
+* **学习通:** 开屏广告 ([#337](https://github.com/gkd-kit/subscription/issues/337)) ([2afd154](https://github.com/gkd-kit/subscription/commit/2afd1546f87e4495be15c83188c4764893893bea))
+* **快手:** 开屏广告, 首页-红包弹窗（默认关闭）,首页-左侧红包悬浮控件（默认关闭）,你可能感兴趣的人（默认关闭）   ([#339](https://github.com/gkd-kit/subscription/issues/339)) ([db6228e](https://github.com/gkd-kit/subscription/commit/db6228ea0ad9f93e63f891edb1a15c8da5cf885b))
+* **盖乐世社区:** 开屏广告 ([#335](https://github.com/gkd-kit/subscription/issues/335)) ([8ece0c5](https://github.com/gkd-kit/subscription/commit/8ece0c52ef9ea989f9f0017ec8f41ce7b21359b9))
+* **知乎:** 会员页面-广告弹窗, 问题回答-自动展开, 开屏广告 ([#329](https://github.com/gkd-kit/subscription/issues/329)) ([cdae316](https://github.com/gkd-kit/subscription/commit/cdae316af908944e98409ea1bce7f9cc46162cfc))
+* **联通智家:** 更新弹窗 ([#332](https://github.com/gkd-kit/subscription/issues/332)) ([7cdd25c](https://github.com/gkd-kit/subscription/commit/7cdd25c9ffcd393ae39b957027063077d668a7f0))
+* **腾讯动漫:** 开屏广告, 青少年模式弹窗, 漫画阅读页面-左侧悬浮广告 ([#333](https://github.com/gkd-kit/subscription/issues/333)) ([57e4668](https://github.com/gkd-kit/subscription/commit/57e46685a8a0dfedb5b7e55602ccd7abb58d6b94))
+* **自考笔果题库:** 开屏广告,更新弹窗,首页广告弹窗,请求定位权限弹窗（默认关闭） ([#341](https://github.com/gkd-kit/subscription/issues/341)) ([6d0fcb5](https://github.com/gkd-kit/subscription/commit/6d0fcb5dc7e7180e6b814f7a0e8cf87cea59d928))
+* **起点读书:** 青少年模式弹窗-优化规则 ([0e38ab0](https://github.com/gkd-kit/subscription/commit/0e38ab04b38901344185bd9cccc8786b97be5085))
+* **迅雷:** 视频详情-广告卡片, 视频详情-直播推荐, 会员续费弹窗（默认关闭） ([#330](https://github.com/gkd-kit/subscription/issues/330)) ([5ac73e9](https://github.com/gkd-kit/subscription/commit/5ac73e90c3af2affdcfae1d4c46fa8bb34f05a19))
+* **随手记:** 开屏广告 ([#336](https://github.com/gkd-kit/subscription/issues/336)) ([c0a7930](https://github.com/gkd-kit/subscription/commit/c0a7930604435f35d528464e272324477a8a5f3f))
+
+
+### Bug Fixes
+
+* **微信:** 订阅号规则冲突 ([#334](https://github.com/gkd-kit/subscription/issues/334)) ([7478ab8](https://github.com/gkd-kit/subscription/commit/7478ab8afe489190375ea5f0666af318fe7193c9))
+* **酷安:** 关闭卡片广告 ([#325](https://github.com/gkd-kit/subscription/issues/325)) ([12fe8d5](https://github.com/gkd-kit/subscription/commit/12fe8d531eeec8a72b0d5c175c40ef0aea5e8cb5))
+
 ## [1.40.2](https://github.com/gkd-kit/subscription/compare/v1.40.1...v1.40.2) (2023-09-23)
 
 
