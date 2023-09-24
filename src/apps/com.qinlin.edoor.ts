@@ -1,0 +1,38 @@
+import { defineAppConfig } from '../types';
+
+export default defineAppConfig({
+  id: 'com.qinlin.edoor',
+  name: '亲邻开门',
+  groups: [
+    {
+      key: 1,
+      name: '首页顶部广告',
+      activityIds: 'com.qinlin.edoor.MainActivity',
+      rules: [
+        {
+          matches: [
+            '[id="com.qinlin.edoor:id/reaper_ad_source_layout"]',
+            '[id="com.qinlin.edoor:id/close"]',
+          ],
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12707733',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 10,
+      name: '开门有奖弹窗',
+      activityIds: 'com.qinlin.edoor.MainActivity',
+      rules: '[desc="开门有奖"] +2 [desc="立即领取"] + ImageView',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12707736',
+    },
+    {
+      enable: false,
+      key: 11,
+      name: '获得金币弹窗',
+      activityIds: 'com.qinlin.edoor.MainActivity',
+      rules: ['[desc="获得金币"] +3 [desc="开心收下"] + ImageView'],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12707738'],
+    },
+  ],
+});
