@@ -9,11 +9,11 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: [
         'com.zhihu.android.app.ui.activity.LauncherActivity',
-        'com.zhihu.android.app.ui.activity.LaunchAdActivity',
         'com.zhihu.android.app.feed.AdTransparentHostActivity',
         'com.miui.home.launcher.Launcher',
       ],
-      rules: 'TextView[id=`com.zhihu.android:id/btn_skip`]', // 1688038758143
+      rules: 'TextView[id="com.zhihu.android:id/btn_skip"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12707641',
     },
     {
       key: 1,
@@ -87,7 +87,7 @@ export default defineAppConfig({
           activityIds: [
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
           ],
-          matches: 'TextView[text=`查看详情`] + TextView[text=`×`]',
+          matches: 'TextView[text="查看详情"] + TextView[text="×"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12647617',
             'https://gkd-kit.gitee.io/import/12647659', // 点击x按钮后的快照，界面无任何变化，导致反复触发这条规则
@@ -168,12 +168,21 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '盐选会员-月卡红包',
+      name: '会员页面-月卡红包',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         'ImageView[id="com.zhihu.android:id/floating_img"] + ImageView[id="com.zhihu.android:id/floating_close_btn"][clickable=true]',
       ],
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12647421'],
+    },
+    {
+      key: 12,
+      name: '会员页面-广告弹窗',
+      activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+      rules: [
+        '[id="com.zhihu.android:id/image"] < RelativeLayout + [id="com.zhihu.android:id/dismiss"]',
+      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12707676'],
     },
     {
       enable: false,
@@ -182,9 +191,12 @@ export default defineAppConfig({
       activityIds:
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
       rules: [
-        'ImageView[id="com.zhihu.android:id/iv_expand"] - TextView[id="com.zhihu.android:id/tv_expand"][text="展开"]',
+        'ImageView[id="com.zhihu.android:id/iv_expand"] - TextView[id="com.zhihu.android:id/tv_expand"][text="展开"][visibleToUser=true]',
       ],
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12647688'],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12647688',
+        'https://gkd-kit.gitee.io/import/12707687', // 使用 [visibleToUser=true] 进行限定，防止在控件不可见时提前触发规则
+      ],
     },
   ],
 });
