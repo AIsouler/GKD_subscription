@@ -10,9 +10,10 @@
 
 ## 好友动态-广告卡片
 
-## 频道页面-广告弹窗
+## 频道页面广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642081)
+- [快照-1](https://gkd-kit.gitee.io/import/12708844)
 
 ## 新人专享1元购SVIP
 

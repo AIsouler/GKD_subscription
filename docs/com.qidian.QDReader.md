@@ -13,6 +13,7 @@
 ## 青少年模式弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12640241)
+- [快照-1](https://gkd-kit.gitee.io/import/12709168)
 
 ## 活动弹窗
 

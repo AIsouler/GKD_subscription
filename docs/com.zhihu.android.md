@@ -1,8 +1,10 @@
 # 知乎
 
-存在 12 规则组 - [com.zhihu.android](/src/apps/com.zhihu.android.ts)
+存在 13 规则组 - [com.zhihu.android](/src/apps/com.zhihu.android.ts)
 
 ## 开屏广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/12707641)
 
 ## 关闭广告弹窗
 
@@ -39,14 +41,19 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12647583)
 
-## 盐选会员-月卡红包
+## 会员页面-月卡红包
 
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12647421)
+
+## 会员页面-广告弹窗
+
+- [快照-0](https://gkd-kit.gitee.io/import/12707676)
 
 ## 问题回答-自动展开
 
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12647688)
+- [快照-1](https://gkd-kit.gitee.io/import/12707687)
