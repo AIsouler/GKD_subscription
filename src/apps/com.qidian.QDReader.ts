@@ -25,10 +25,16 @@ export default defineAppConfig({
     {
       key: 2,
       name: '青少年模式弹窗',
-      activityIds: ['com.qidian.QDReader.bll.helper.z0'],
+      activityIds: [
+        'com.qidian.QDReader.bll.helper.z0',
+        'com.qidian.QDReader.ui.activity.MainGroupActivity',
+      ],
       rules:
-        '[text$="青少年模式"] < [id="com.qidian.QDReader:id/btnEnterTeen"] + [id="com.qidian.QDReader:id/btnCancel"] >(2) [text="我知道了"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12640241'],
+        '[id="com.qidian.QDReader:id/btnEnterTeen"] + [id="com.qidian.QDReader:id/btnCancel"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12640241',
+        'https://gkd-kit.gitee.io/import/12709168',
+      ],
     },
     {
       key: 3,
