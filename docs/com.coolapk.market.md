@@ -11,9 +11,11 @@
 
 点击卡片右上角按钮,然后点击关闭弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315)
-- [快照-1](https://gkd-kit.gitee.io/import/12655713)
-- [快照-2](https://gkd-kit.gitee.io/import/12660759)
+- [快照-0](https://gkd-kit.gitee.io/import/12707506)
+- [快照-1](https://gkd-kit.gitee.io/import/12707509)
+- [快照-2](https://gkd-kit.gitee.io/import/38517192/9badc07c-4da2-4066-8af5-d96a86a28315)
+- [快照-3](https://gkd-kit.gitee.io/import/12655713)
+- [快照-4](https://gkd-kit.gitee.io/import/12660759)
 
 ## 关闭升级弹窗
 
