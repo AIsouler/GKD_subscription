@@ -15,7 +15,7 @@
 
 ## 开始
 
-首先我们需要给需要添加规则的APP打快照, 也就是把APP的广告截图节点信息给保存下来 <https://gkd-kit.gitee.io/import/12505276>
+首先我们需要给需要添加规则的APP打快照, 也就是把APP的广告截图节点信息给保存下来 <https://gkd-kit.gitee.io/import/12505276> (如何获取这个链接将在审查快照这一步说明)
 
 首先打开APP-主页 -允许无障碍授权
 
@@ -86,6 +86,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 了解完了之后, 编写的选择器也很简单 `[id="com.mopub.ad.xiaomi:id/nativeclose"]`
 
 接下来测试这个选择器能否选中这个图标按钮, 点击审查工具的 选择器查询, 输入刚刚这个规则, 然后点击查询
+`这里点击右侧的分享-生成链接-zip才能获取快照链接（以/import/开头）`
 
 ![image](https://github.com/gkd-kit/subscription/assets/38517192/3aea04fd-da91-4f43-a79e-e40fdad4a5d4)
 
@@ -132,7 +133,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
       rules: [
         {
           matches: '[text="关闭当前广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12505365',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12505365',//获取链接的方法在上一步有说明
         },
         {
           matches: '[id$="/nativeclose"]',
