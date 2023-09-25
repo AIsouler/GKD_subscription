@@ -59,5 +59,13 @@ export default defineAppConfig({
       rules: '@[id="com.qidian.QDReader:id/ivClose"] + [text^="开启推送"]',
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12640242'],
     },
+    {
+      key: 5,
+      name: '右侧悬浮广告',
+      activityIds: ['com.qidian.QDReader.ui.activity.MainGroupActivity'],
+      rules:
+        '[id="com.qidian.QDReader:id/ivAd"] + [id="com.qidian.QDReader:id/ivAdClose"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12717032'],
+    },
   ],
 });
