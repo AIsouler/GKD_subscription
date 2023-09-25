@@ -1,10 +1,8 @@
 # @gkd-kit/subscription
 
-<p>
-  <a href="https://www.npmjs.com/package/@gkd-kit/subscription"><img src="https://img.shields.io/npm/v/@gkd-kit/subscription.svg" alt="npm package"></a>
-</p>
+GKD 默认订阅规则
 
-搞快点 APP 默认订阅规则
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v108
 
 当前订阅文件已适配 204 个 APP, 共有 505 规则组
 
@@ -221,4 +219,4 @@
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=--VERSION--)
