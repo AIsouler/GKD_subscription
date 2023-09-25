@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.42.0](https://github.com/gkd-kit/subscription/compare/v1.41.0...v1.42.0) (2023-09-25)
+
+
+### Features
+
+* **懂车帝:** 升级弹窗 ([6484683](https://github.com/gkd-kit/subscription/commit/64846835710d59fd6c8f9c1f2d89d34b0d390636))
+* **懂车帝:** 首页推荐卡片广告 ([#140](https://github.com/gkd-kit/subscription/issues/140)) ([0d63f51](https://github.com/gkd-kit/subscription/commit/0d63f5128be6fcf64266d38dd034ebbdd43e7af7))
+
 ## [1.41.0](https://github.com/gkd-kit/subscription/compare/v1.40.2...v1.41.0) (2023-09-24)
 
 
