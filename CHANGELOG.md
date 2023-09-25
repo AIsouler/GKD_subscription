@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.44.0](https://github.com/gkd-kit/subscription/compare/v1.43.0...v1.44.0) (2023-09-25)
+
+
+### Features
+
+* **光宇游戏:** 开屏广告 ([#358](https://github.com/gkd-kit/subscription/issues/358)) ([5fe0f4b](https://github.com/gkd-kit/subscription/commit/5fe0f4bd87af8b19c0add418b03d9c361da40946))
+* **公考雷达:** 更新弹窗,首页右侧悬浮广告, 通知权限弹窗（默认关闭） ([#365](https://github.com/gkd-kit/subscription/issues/365)) ([91198e4](https://github.com/gkd-kit/subscription/commit/91198e45ae0fc364d03f54c28fd6895a54563dfd))
+* **华图在线:** 开屏广告,首页广告弹窗, 通知权限弹窗 ([#370](https://github.com/gkd-kit/subscription/issues/370)) ([e7edb7b](https://github.com/gkd-kit/subscription/commit/e7edb7beced7770edb719eaa8ef99d5c9accab24))
+* **嗨探:** 开屏广告 ([#361](https://github.com/gkd-kit/subscription/issues/361)) ([a84cd4c](https://github.com/gkd-kit/subscription/commit/a84cd4cd383078593c07cbc76749c8baf5b0bb52))
+* **学习强国:** 更新弹窗, 通知权限提示  ([#364](https://github.com/gkd-kit/subscription/issues/364)) ([3e9b45b](https://github.com/gkd-kit/subscription/commit/3e9b45bad42b520a20b0acc0125591f6ac6d0416))
+* **小熊油耗:** 开屏广告 ([#360](https://github.com/gkd-kit/subscription/issues/360)) ([acf1fe6](https://github.com/gkd-kit/subscription/commit/acf1fe6859da7f384c5fbe9e3e2f5fca6b8de13a))
+* **小米应用商店:** 请求开启推送弹窗（默认关闭） ([#362](https://github.com/gkd-kit/subscription/issues/362)) ([30f689f](https://github.com/gkd-kit/subscription/commit/30f689fdeae127d7a81385e1447ae4dfe6d2781a))
+* **小米游戏中心:** 开屏广告, 首页右侧悬浮广告 ([#371](https://github.com/gkd-kit/subscription/issues/371)) ([9315d5b](https://github.com/gkd-kit/subscription/commit/9315d5baefa5417bd69b08df6df0758b9c7bec3a))
+* **快对:** 开屏广告, 首页广告弹窗 ([#373](https://github.com/gkd-kit/subscription/issues/373)) ([ea82570](https://github.com/gkd-kit/subscription/commit/ea825709b2723a28697b4cecb5e4406493a1b8d8))
+* **掌上公交:** 请求通知权限弹窗,签到成功弹窗  ([#372](https://github.com/gkd-kit/subscription/issues/372)) ([2a53f13](https://github.com/gkd-kit/subscription/commit/2a53f13e7764a5573116884887fd4204d5f7f3b6))
+* **正气:** 更新弹窗 ([#366](https://github.com/gkd-kit/subscription/issues/366)) ([97123c8](https://github.com/gkd-kit/subscription/commit/97123c87722141b13b399358f7498b556044f104))
+* **番茄免费小说:** 更新弹窗, 右侧悬浮红包, 通知权限弹窗, 阅读页面底部广告 ([#374](https://github.com/gkd-kit/subscription/issues/374)) ([6b1e1b6](https://github.com/gkd-kit/subscription/commit/6b1e1b6bcb8f8810ecad84657fa6da6697c8ae11))
+* **疯狂刷题:** 更新弹窗 ([#363](https://github.com/gkd-kit/subscription/issues/363)) ([4437551](https://github.com/gkd-kit/subscription/commit/4437551d069a44da9c9bec192d5228aaf32e6ac5))
+* **系统更新:** miui更新弹窗 ([#359](https://github.com/gkd-kit/subscription/issues/359)) ([e084f04](https://github.com/gkd-kit/subscription/commit/e084f0456ffdaff01dc9f987dfed6d5488f1308c))
+* **网速管家极速版:** 更新弹窗, 新人专享优惠弹窗 ([#367](https://github.com/gkd-kit/subscription/issues/367)) ([68efba2](https://github.com/gkd-kit/subscription/commit/68efba257b0888bc2f3ed1a3fb233f672f5aa3a3))
+* **薄荷健康:** 开屏广告,更新弹窗,发现页广告弹窗, 通知权限弹窗 ([#376](https://github.com/gkd-kit/subscription/issues/376)) ([0d19098](https://github.com/gkd-kit/subscription/commit/0d1909855e47f4ac16ea8b698b8e7545fe3a1582))
+* **起点读书:** 右侧悬浮广告 ([#377](https://github.com/gkd-kit/subscription/issues/377)) ([63b3fd2](https://github.com/gkd-kit/subscription/commit/63b3fd28438d2f7ca8160430585f5335606d5c9f))
+
+
+### Bug Fixes
+
+* **微信:** 订阅号文章广告 ([#375](https://github.com/gkd-kit/subscription/issues/375)) ([491074d](https://github.com/gkd-kit/subscription/commit/491074d46252a6dcd657792a2fe2beceec3ada58))
+
 ## [1.43.0](https://github.com/gkd-kit/subscription/compare/v1.42.0...v1.43.0) (2023-09-25)
 
 
