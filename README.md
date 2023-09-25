@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 202 个 APP, 共有 501 规则组
+当前订阅文件已适配 202 个 APP, 共有 502 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -56,7 +56,7 @@
 | 大众点评 | [com.dianping.v1](/docs/com.dianping.v1.md) | 1 |
 | 滴滴 | [com.sdu.didi.psnger](/docs/com.sdu.didi.psnger.md) | 1 |
 | 钉钉 | [com.alibaba.android.rimet](/docs/com.alibaba.android.rimet.md) | 1 |
-| 懂车帝 | [com.ss.android.auto](/docs/com.ss.android.auto.md) | 2 |
+| 懂车帝 | [com.ss.android.auto](/docs/com.ss.android.auto.md) | 3 |
 | 东方财富 | [com.eastmoney.android.berlin](/docs/com.eastmoney.android.berlin.md) | 3 |
 | 动卡空间 | [com.citiccard.mobilebank](/docs/com.citiccard.mobilebank.md) | 1 |
 | 懂球帝 | [com.dongqiudi.news](/docs/com.dongqiudi.news.md) | 5/4启用/1禁用 |
