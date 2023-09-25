@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.43.0](https://github.com/gkd-kit/subscription/compare/v1.42.0...v1.43.0) (2023-09-25)
+
+
+### Features
+
+* **Gspace:** youtube 播放视频跳过广告 ([#348](https://github.com/gkd-kit/subscription/issues/348)) ([83b2377](https://github.com/gkd-kit/subscription/commit/83b2377edd3a5b190e328d1d7f4d8b89453b118b))
+* **HMS Core:** 页面中间跳出广告 ([#347](https://github.com/gkd-kit/subscription/issues/347)) ([28f08c0](https://github.com/gkd-kit/subscription/commit/28f08c0cf7f7a01198ed35aa07b0786e34e283ba))
+* **哈工大:** 开屏页面 ([#352](https://github.com/gkd-kit/subscription/issues/352)) ([f313253](https://github.com/gkd-kit/subscription/commit/f3132536a6a59adaed2bae9b12fb71865367f0b2))
+
 ## [1.42.0](https://github.com/gkd-kit/subscription/compare/v1.41.0...v1.42.0) (2023-09-25)
 
 
