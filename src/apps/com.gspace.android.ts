@@ -26,5 +26,13 @@ export default defineAppConfig({
       rules: '[id="com.gspace.android:id/hiad_banner_close_button"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12705339',
     },
+    {
+      key: 2,
+      name: 'Youtube播放视频跳过广告',
+      // activityIds: 'com.huawei.openalliance.ad.ppskit.activity.InnerPPSInterstitialAdActivity',
+      // 我不清楚，上面的activityIds是否与系统有关
+      rules: '[id="com.google.android.youtube:id/skip_ad_button"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12709006',
+    },
   ],
 });
