@@ -31,5 +31,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '升级弹窗',
+      activityIds: 'com.ss.android.auto.activity.SplashActivity',
+      rules:
+        '@TextView[text="以后再说"] - FrameLayout >2 TextView[text="立即\n升级"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12711631',
+    },
   ],
 });
