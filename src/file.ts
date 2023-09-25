@@ -30,15 +30,19 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   newConfig.version = oldConfig.version || 0;
   checkConfig(newConfig);
 
+  const hasUpdate = !_.isEqual(newConfig, oldConfig);
+  if (hasUpdate) {
+    newConfig.version++;
+  }
+
   // update md
   await updateReadMeMd(newConfig);
   console.log('更新文档');
 
-  if (_.isEqual(newConfig, oldConfig)) {
-    console.log('没有检测到规则变化,跳过更新');
+  if (!hasUpdate) {
+    console.log('没有检测到规则变化,跳过更新JSON');
     return;
   }
-  newConfig.version++;
 
   // keep json key sort by map
   const map = new Map<string, unknown>();
@@ -288,7 +292,7 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
         .reduce((p, c) => p + (c.groups?.length || 0), 0)
         .toString(),
     )
+    .replace('--VERSION--', (newConfig.version || 0).toString())
     .replace('--APP_LIST--', appListText);
-
   await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
 };
