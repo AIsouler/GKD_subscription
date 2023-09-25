@@ -38,15 +38,16 @@
 - [快照-2](https://gkd-kit.gitee.io/import/12567698)
 - [快照-3](https://gkd-kit.gitee.io/import/12567637)
 
-## 订阅号文章底部广告
+## 订阅号文章广告
 
-默认禁用 - 自动点击-广告反馈按钮-不感兴趣-与我无关
+自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642232)
 - [快照-1](https://gkd-kit.gitee.io/import/12646837)
 - [快照-2](https://gkd-kit.gitee.io/import/12678937)
-- [快照-3](https://gkd-kit.gitee.io/import/12642234)
-- [快照-4](https://gkd-kit.gitee.io/import/12642238)
+- [快照-3](https://gkd-kit.gitee.io/import/12700183)
+- [快照-4](https://gkd-kit.gitee.io/import/12701503)
+- [快照-5](https://gkd-kit.gitee.io/import/12714424)
 
 ## 自动选中发送原图
 
@@ -55,12 +56,12 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12686641)
 - [快照-1](https://gkd-kit.gitee.io/import/12686640)
 
-## 订阅号文章中间广告
+## 订阅号文章广告反馈
 
-自动点击-关闭此广告
+自动点击反馈理由，配合【订阅号文章广告】规则使用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12700183)
-- [快照-1](https://gkd-kit.gitee.io/import/12701503)
+- [快照-0](https://gkd-kit.gitee.io/import/12642234)
+- [快照-1](https://gkd-kit.gitee.io/import/12642238)
 - [快照-2](https://gkd-kit.gitee.io/import/12700191)
 
 ## 自动查看原图

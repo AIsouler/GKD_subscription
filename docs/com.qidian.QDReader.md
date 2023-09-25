@@ -1,6 +1,6 @@
 # 起点读书
 
-存在 5 规则组 - [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts)
+存在 6 规则组 - [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts)
 
 ## 开屏广告
 
@@ -25,3 +25,7 @@
 默认禁用 - 点击顶部提醒左侧x按钮
 
 - [快照-0](https://gkd-kit.gitee.io/import/12640242)
+
+## 右侧悬浮广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/12717032)
