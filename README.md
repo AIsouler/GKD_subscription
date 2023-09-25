@@ -6,7 +6,7 @@
 
 搞快点 APP 默认订阅规则
 
-当前订阅文件已适配 202 个 APP, 共有 502 规则组
+当前订阅文件已适配 204 个 APP, 共有 505 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -20,7 +20,8 @@
 | EMobile7 | [com.weaver.emobile7](/docs/com.weaver.emobile7.md) | 1 |
 | FOWL | [vstc.AKCXKJ.client](/docs/vstc.AKCXKJ.client.md) | 1 |
 | GKD | [li.songe.gkd](/docs/li.songe.gkd.md) | 2/1启用/1禁用 |
-| Gspace | [com.gspace.android](/docs/com.gspace.android.md) | 2 |
+| Gspace | [com.gspace.android](/docs/com.gspace.android.md) | 3 |
+| HMS Core | [com.huawei.hwid](/docs/com.huawei.hwid.md) | 1 |
 | Keep | [com.gotokeep.keep](/docs/com.gotokeep.keep.md) | 5 |
 | QQ | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md) | 6/3启用/3禁用 |
 | WPS | [cn.wps.moffice_eng](/docs/cn.wps.moffice_eng.md) | 2 |
@@ -73,6 +74,7 @@
 | 盖乐世社区 | [com.samsung.android.voc](/docs/com.samsung.android.voc.md) | 1 |
 | 高德地图 | [com.autonavi.minimap](/docs/com.autonavi.minimap.md) | 4/2启用/2禁用 |
 | 高铁管家 | [com.gtgj.view](/docs/com.gtgj.view.md) | 1 |
+| 哈工大APP | [cn.edu.hit.welink](/docs/cn.edu.hit.welink.md) | 1 |
 | 海南一卡通 | [com.onecard.hainan](/docs/com.onecard.hainan.md) | 2 |
 | 哈啰 | [com.jingyao.easybike](/docs/com.jingyao.easybike.md) | 4 |
 | 航旅纵横 | [com.umetrip.android.msky.app](/docs/com.umetrip.android.msky.app.md) | 1 |
