@@ -40,5 +40,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 11,
+      name: '请求开启推送弹窗',
+      desc: '自动点击关闭按钮',
+      activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+      rules:
+        '@[id="com.xiaomi.market:id/dialog_cancel"] - LinearLayout > [id="com.xiaomi.market:id/btn_start_push"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12714980',
+    },
   ],
 });
