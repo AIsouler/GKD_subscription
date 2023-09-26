@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.46.0](https://github.com/gkd-kit/subscription/compare/v1.45.0...v1.46.0) (2023-09-26)
+
+
+### Features
+
+* **今日头条:** 竖屏视频广告 ([#228](https://github.com/gkd-kit/subscription/issues/228)) ([85057af](https://github.com/gkd-kit/subscription/commit/85057af13f08c9a387d132fd933f6a2e9fa627fd))
+* **菜鸟:** 开屏广告 ([#387](https://github.com/gkd-kit/subscription/issues/387)) ([af988f3](https://github.com/gkd-kit/subscription/commit/af988f3fc67f2b5b1f4233822440cf2d1f0d98c5))
+* **豆瓣:** 信息流广告-规则优化 ([#385](https://github.com/gkd-kit/subscription/issues/385)) ([6eb6fce](https://github.com/gkd-kit/subscription/commit/6eb6fce80aaefbc81ecbe4f74f187fa7bf39890a))
+
+
+### Bug Fixes
+
+* **微信:** 订阅号文章广告 ([#386](https://github.com/gkd-kit/subscription/issues/386)) ([73706f0](https://github.com/gkd-kit/subscription/commit/73706f096d7f26e162425f055098db2aad343556))
+
 ## [1.45.0](https://github.com/gkd-kit/subscription/compare/v1.44.0...v1.45.0) (2023-09-26)
 
 
