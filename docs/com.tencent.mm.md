@@ -45,9 +45,10 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12642232)
 - [快照-1](https://gkd-kit.gitee.io/import/12646837)
 - [快照-2](https://gkd-kit.gitee.io/import/12678937)
-- [快照-3](https://gkd-kit.gitee.io/import/12700183)
-- [快照-4](https://gkd-kit.gitee.io/import/12701503)
-- [快照-5](https://gkd-kit.gitee.io/import/12714424)
+- [快照-3](https://gkd-kit.gitee.io/import/12714427)
+- [快照-4](https://gkd-kit.gitee.io/import/12700183)
+- [快照-5](https://gkd-kit.gitee.io/import/12701503)
+- [快照-6](https://gkd-kit.gitee.io/import/12714424)
 
 ## 自动选中发送原图
 
@@ -61,8 +62,10 @@
 自动点击反馈理由，配合【订阅号文章广告】规则使用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642234)
-- [快照-1](https://gkd-kit.gitee.io/import/12642238)
-- [快照-2](https://gkd-kit.gitee.io/import/12700191)
+- [快照-1](https://gkd-kit.gitee.io/import/12722301)
+- [快照-2](https://gkd-kit.gitee.io/import/12722331)
+- [快照-3](https://gkd-kit.gitee.io/import/12642238)
+- [快照-4](https://gkd-kit.gitee.io/import/12700191)
 
 ## 自动查看原图
 
