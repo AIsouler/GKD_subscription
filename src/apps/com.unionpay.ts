@@ -16,6 +16,17 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 1,
+      name: '更新弹窗',
+      activityIds: ['com.unionpay.base.UPDialog'],
+      rules: [
+        {
+          matches: '@[text="稍候再说"] + [text="立即更新"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12727278',
+        },
+      ],
+    },
+    {
       key: 9,
       name: '右侧悬浮广告',
       activityIds: ['com.unionpay.activity.UPActivityMain'],
