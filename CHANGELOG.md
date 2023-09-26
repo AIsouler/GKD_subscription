@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.45.0](https://github.com/gkd-kit/subscription/compare/v1.44.0...v1.45.0) (2023-09-26)
+
+
+### Features
+
+* **IT之家:** 开屏广告 ([#378](https://github.com/gkd-kit/subscription/issues/378)) ([c5cf987](https://github.com/gkd-kit/subscription/commit/c5cf987aae76e952946f557cc48db60be55b4fc2))
+* **QQ:** 好友热播 ([#381](https://github.com/gkd-kit/subscription/issues/381)) ([c3183b4](https://github.com/gkd-kit/subscription/commit/c3183b4e6544dff8db8cf4dcf44229eeac89806f))
+* **Wind金融终端:** 开屏广告 ([#201](https://github.com/gkd-kit/subscription/issues/201)) ([bf4f605](https://github.com/gkd-kit/subscription/commit/bf4f605645d15a7e54a889a4e41d5a5ff728ec23))
+* **网易云音乐:** 广告卡片-适配其它界面 ([2a04cdd](https://github.com/gkd-kit/subscription/commit/2a04cddc80298e779c23406419293e44fd1e7501))
+
+
+### Bug Fixes
+
+* **QQ:** 消息页面-顶部广告-误触关闭 ([#383](https://github.com/gkd-kit/subscription/issues/383)) ([36c666d](https://github.com/gkd-kit/subscription/commit/36c666d4648f81d286a7134b8a216e36935628fb))
+
 ## [1.44.0](https://github.com/gkd-kit/subscription/compare/v1.43.0...v1.44.0) (2023-09-25)
 
 
