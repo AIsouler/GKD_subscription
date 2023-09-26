@@ -15,10 +15,16 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2'],
+      activityIds: [
+        'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
+        'com.cmbchina.ccd.pluto.cmbActivity.secplugin.activity.login.fingerprint.cmbR6VH0R',
+      ],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_sure_tips"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_cancel_tips"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12647025'],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12647025',
+        'https://gkd-kit.songe.li/import/12727203',
+      ],
     },
     {
       key: 2,
