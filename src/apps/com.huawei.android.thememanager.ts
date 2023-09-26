@@ -146,5 +146,12 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 8,
+      name: '更新弹窗',
+      activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
+      rules: '@[text="以后再说"] + [text="立即更新"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12727318',
+    },
   ],
 });
