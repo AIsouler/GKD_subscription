@@ -47,16 +47,33 @@ export default defineAppConfig({
     {
       key: 3,
       name: '信息流广告',
-      enable: false,
-      desc: '首页动态/推荐,帖子底部,点击广告关闭后出现关闭原因底部菜单-选择不感兴趣',
+      desc: '首页动态/推荐,小组讨论列表,帖子底部,点击广告关闭后出现关闭原因底部菜单-点击不感兴趣',
       activityIds: [
         'com.douban.frodo.activity.SplashActivity',
         'com.douban.frodo.status.activity.StatusDetailActivity',
         'com.douban.frodo.subject.structure.activity.MovieActivity',
         'com.douban.frodo.subject.activity.ForumTopicActivity',
+        'com.douban.frodo.group.activity.GroupDetailActivity',
+        'com.douban.frodo.group.activity.GroupTopicActivity',
       ],
       rules: [
         {
+          name: '点击不感兴趣',
+          preKeys: [1, 2, 3],
+          matches:
+            '@LinearLayout[clickable=true] > [id="com.douban.frodo:id/mainText"][text="不感兴趣"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12548016',
+            'https://gkd-kit.gitee.io/import/12723422',
+          ],
+        },
+        {
+          key: 1,
+          name: '点击广告卡片右上角菜单图标按钮',
+          activityIds: [
+            'com.douban.frodo.activity.SplashActivity',
+            'com.douban.frodo.status.activity.StatusDetailActivity',
+          ],
           matches:
             'ImageView[id="com.douban.frodo:id/avatar"][index=0] +n ImageView[id="com.douban.frodo:id/menu_item"]',
           snapshotUrls: [
@@ -66,36 +83,28 @@ export default defineAppConfig({
           ],
         },
         {
-          matches: '[id$="ad_not_interest"]',
+          key: 2,
+          name: '点击广告卡片右下角[广告]文字按钮',
+          matches: '[text="广告"][id$="ad_not_interest"]',
+          activityIds: [
+            'com.douban.frodo.subject.structure.activity.MovieActivity',
+            'com.douban.frodo.subject.activity.ForumTopicActivity',
+            'com.douban.frodo.group.activity.GroupTopicActivity',
+          ],
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12548064',
             'https://gkd-kit.gitee.io/import/12548450',
+            'https://gkd-kit.gitee.io/import/12723751',
           ],
         },
         {
-          activityIds: ['com.douban.frodo.group.activity.GroupTopicActivity'],
-          matches: 'ImageView[id=null] +(n) FrameLayout > ImageView[id=null]', // 这个广告可以直接关闭，不需要二次点击
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12674798',
-            'https://gkd-kit.gitee.io/import/12674842',
-          ],
+          key: 3,
+          name: '点击卡片中间的[广告]文字按钮',
+          activityIds: ['com.douban.frodo.group.activity.GroupDetailActivity'],
+          matches: '[id="com.douban.frodo:id/ad_tag"][text="广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12723569',
         },
       ],
-    },
-    {
-      key: 7,
-      name: '自动选择不感兴趣弹窗',
-      desc: '广告关闭原因底部菜单-选择不感兴趣',
-      activityIds: [
-        'com.douban.frodo.activity.SplashActivity',
-        'com.douban.frodo.status.activity.StatusDetailActivity',
-        'com.douban.frodo.subject.structure.activity.MovieActivity',
-        'com.douban.frodo.subject.activity.ForumTopicActivity',
-      ],
-      rules: {
-        matches: '[text="不感兴趣"][id="com.douban.frodo:id/mainText"]',
-        snapshotUrls: 'https://gkd-kit.gitee.io/import/12548016',
-      },
     },
     {
       key: 4,
@@ -140,6 +149,23 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12548476',
         },
       ],
+    },
+    // key=7 已被删除,不可使用
+    {
+      key: 8,
+      name: '小组讨论详情页广告',
+      desc: '帖子底部-评论区顶部广告卡片,点击卡片右下角x直接关闭',
+      rules: {
+        activityIds: ['com.douban.frodo.group.activity.GroupTopicActivity'],
+        matches:
+          'ImageView[id=null] +(n) LinearLayout[childCount<=2] + FrameLayout[childCount=1] > ImageView[id=null][visibleToUser=true]',
+        snapshotUrls: [
+          'https://gkd-kit.gitee.io/import/12674798',
+          'https://gkd-kit.gitee.io/import/12674842',
+          'https://gkd-kit.gitee.io/import/12723462',
+          'https://gkd-kit.gitee.io/import/12723800',
+        ],
+      },
     },
   ],
 });
