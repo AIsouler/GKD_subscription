@@ -36,5 +36,13 @@ export default defineAppConfig({
       rules: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12650713',
     },
+    {
+      key: 4,
+      name: '首页活动弹窗',
+      activityIds: 'me.ele.component.pops2.Pops2MistDialog',
+      rules:
+        '[id="me.ele:id/id_magex_mistview"] > ImageView + ImageView[id=null][clickable=true]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12726709',
+    },
   ],
 });
