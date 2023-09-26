@@ -13,8 +13,10 @@ export default defineAppConfig({
       rules: '[text*=`跳过`]',
     },
     {
+      enable: false,
       key: 1,
       name: '消息页面-顶部广告',
+      desc: '规则误触,待修复,需要快照准确定位',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         'ImageView[id!=null][desc="关闭"][clickable=true]', // 1687669217838
