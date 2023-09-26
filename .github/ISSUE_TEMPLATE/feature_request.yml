@@ -1,0 +1,17 @@
+name: APP 适配
+description: 请求增加适配 APP 规则
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请按照此模版填写 APP 适配规则需求信息
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 请输入需要添加规则的界面的快照, 也可在后面补充其它信息
+      description: |
+        按照此教程 [CONTRIBUTING.md](https://github.com/gkd-kit/subscription/blob/main/CONTRIBUTING.md) 或者下面的截图示例 来给界面打快照, 并粘贴到下面的输入框\
+        ![img](https://user-images.githubusercontent.com/45487685/270372181-9e05a475-6664-4e1b-adc7-1e3973fff01f.png)\
+        如果是需要多个点击如 [点击关闭按钮->出现关闭弹窗->点击关闭原因] 这种类型, 则需要填写每个点击界面的快照
+    validations:
+      required: true
