@@ -5,10 +5,18 @@ export default defineAppConfig({
   name: '一淘',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      activityIds: 'com.taobao.sns.app.advertise.SplashAdActivity',
+      rules: '[id!=null][text^="跳过"][clickable=true]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12727451',
+    },
+    {
       key: 1,
       name: '更新弹窗',
       activityIds: [
         'com.taobao.etao.app.homev4.HomeV4Activity',
+        'com.taobao.etao.app.home.view.NewHomeActivity',
         'com.miui.home.launcher.Launcher',
       ],
       rules: [
@@ -17,6 +25,7 @@ export default defineAppConfig({
             '[text="更新提示"] < LinearLayout < LinearLayout +(2) ScrollView >(2) [text="取消"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12684250',
+            'https://gkd-kit.songe.li/import/12727457', // activityId: 'com.taobao.etao.app.home.view.NewHomeActivity'
             'https://gkd-kit.gitee.io/import/12684244', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
