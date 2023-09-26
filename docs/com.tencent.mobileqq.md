@@ -1,12 +1,14 @@
 # QQ
 
-存在 6 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 7 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
 默认禁用 - 规则误触,待修复,需要快照准确定位
 
 ## 消息页面-顶部广告
+
+默认禁用 - 规则误触,待修复,需要快照准确定位
 
 ## 好友动态-广告卡片
 
@@ -20,6 +22,13 @@
 默认禁用 - 消息界面-搜索框和消息记录直接的广告卡片,点击关闭右侧x
 
 - [快照-0](https://gkd-kit.gitee.io/import/12706907)
+
+## 好友热播
+
+默认禁用 - 好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭
+
+- [快照-0](https://gkd-kit.gitee.io/import/12721427)
+- [快照-1](https://gkd-kit.gitee.io/import/12721433)
 
 ## 自动勾选原图
 

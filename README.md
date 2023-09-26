@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v109
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v110
 
-当前订阅文件已适配 218 个 APP, 共有 536 规则组
+当前订阅文件已适配 220 个 APP, 共有 539 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -21,7 +21,7 @@ GKD 默认订阅规则
 | Gspace | [com.gspace.android](/docs/com.gspace.android.md) | 3 |
 | HMS Core | [com.huawei.hwid](/docs/com.huawei.hwid.md) | 1 |
 | Keep | [com.gotokeep.keep](/docs/com.gotokeep.keep.md) | 5 |
-| QQ | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md) | 6/3启用/3禁用 |
+| QQ | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md) | 7/2启用/5禁用 |
 | WPS | [cn.wps.moffice_eng](/docs/cn.wps.moffice_eng.md) | 2 |
 | youtube | [com.google.android.youtube](/docs/com.google.android.youtube.md) | 1 |
 | 365时政 | [cn.net.shizheng.study](/docs/cn.net.shizheng.study.md) | 1 |
@@ -29,6 +29,7 @@ GKD 默认订阅规则
 | 7天澳門統考 | [com.daysko.safp](/docs/com.daysko.safp.md) | 3 |
 | ES文件浏览器 | [com.estrongs.android.pop](/docs/com.estrongs.android.pop.md) | 2 |
 | GIF助手 | [com.didikee.gifparser](/docs/com.didikee.gifparser.md) | 1 |
+| IT之家 | [com.ruanmei.ithome](/docs/com.ruanmei.ithome.md) | 1 |
 | MX 播放器 | [com.mxtech.videoplayer.ad](/docs/com.mxtech.videoplayer.ad.md) | 1 |
 | NGA玩家社区 | [gov.pianzong.androidnga](/docs/gov.pianzong.androidnga.md) | 4 |
 | OurPlay加速器 | [com.excean.splay](/docs/com.excean.splay.md) | 2 |
@@ -38,6 +39,7 @@ GKD 默认订阅规则
 | UC浏览器 | [com.UCMobile](/docs/com.UCMobile.md) | 2 |
 | WiFi万能钥匙 | [com.snda.wifilocating](/docs/com.snda.wifilocating.md) | 2 |
 | WiFi智能钥匙 | [com.bjsk.intelligent](/docs/com.bjsk.intelligent.md) | 2 |
+| Wind金融终端 | [windinfo.android](/docs/windinfo.android.md) | 1 |
 | 爱奇艺 | [com.qiyi.video](/docs/com.qiyi.video.md) | 3 |
 | 爱奇艺热聊 | [com.iqiyi.hotchat](/docs/com.iqiyi.hotchat.md) | 1 |
 | 阿里巴巴 | [com.alibaba.wireless](/docs/com.alibaba.wireless.md) | 2 |
