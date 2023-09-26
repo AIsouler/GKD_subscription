@@ -27,10 +27,15 @@ export default defineAppConfig({
           ],
         },
         {
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          activityIds: [
+            'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
+          ],
           matches: '[id="com.netease.cloudmusic:id/adTagClose"]',
-          snapshotUrls:
+          snapshotUrls: [
             'https://gkd-kit.songe.li/import/38517192/a977b19d-2b3c-43df-ba01-63e7cbbb3908',
+            'https://gkd-kit.gitee.io/import/12723229',
+          ],
         },
       ],
     },
