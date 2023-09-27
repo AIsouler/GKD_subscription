@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.49.0](https://github.com/gkd-kit/subscription/compare/v1.48.0...v1.49.0) (2023-09-27)
+
+
+### Features
+
+* **今日头条:** 竖屏视频广告-适配优化 ([#228](https://github.com/gkd-kit/subscription/issues/228)) ([7173fcf](https://github.com/gkd-kit/subscription/commit/7173fcff2794515d50fbfa8b2c51683525cea6ca))
+
 ## [1.48.0](https://github.com/gkd-kit/subscription/compare/v1.47.0...v1.48.0) (2023-09-27)
 
 
