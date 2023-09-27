@@ -62,5 +62,28 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 12,
+      name: '信息流广告',
+      desc: '点击右上角x按钮,点击不感兴趣',
+      activityIds: 'com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity',
+      rules: [
+        {
+          name: '点击右上角x按钮',
+          key: 0,
+          matches:
+            'FlattenUIText[text^="广告"][text.length=4] -n UIView[desc="不感兴趣 按钮"][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12733098',
+        },
+        {
+          name: '点击不感兴趣',
+          preKeys: 0,
+          matches:
+            '@ViewGroup[clickable=true] > ImageView + TextView[text="不感兴趣"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12733152',
+        },
+      ],
+    },
   ],
 });
