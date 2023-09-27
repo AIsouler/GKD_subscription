@@ -7,17 +7,21 @@ export default defineAppConfig({
     {
       key: 1,
       name: '开屏广告',
-      activityIds: [
-        'com.babytree.apps.pregnancy.video.splash.SplashVideoTransitionActivity',
-        'com.babytree.apps.pregnancy.MainActivity',
-      ],
       rules: [
         {
+          activityIds: [
+            'com.babytree.apps.pregnancy.video.splash.SplashVideoTransitionActivity',
+          ],
+          matches: 'TextView[text="跳过"][id!=null]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12614757',
+        },
+        {
+          activityIds: ['com.babytree.apps.pregnancy.MainActivity'],
           matches:
-            'ImageView[id!=null] + TextView[clickable=true][text^="跳过"][text.length<=4][id!=null]',
+            '[name$="FrameLayout"||name$="ViewGroup"] > TextView[text^="跳过"][clickable=true][text.length<=4]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12614755',
-            'https://gkd-kit.gitee.io/import/12614757',
+            'https://gkd-kit.gitee.io/import/12737138',
           ],
         },
       ],
