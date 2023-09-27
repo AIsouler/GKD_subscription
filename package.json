@@ -17,7 +17,8 @@
     "format": "prettier --cache --write .",
     "lint": "eslint --cache --fix ./**/*.{js,ts,jsx,tsx}",
     "build": "tsc --noEmit && tsx ./scripts/build.ts",
-    "check": "tsc --noEmit && tsx ./scripts/check.ts"
+    "check": "tsc --noEmit && tsx ./scripts/check.ts",
+    "updateSubs": "tsx ./scripts/updateSubs.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
