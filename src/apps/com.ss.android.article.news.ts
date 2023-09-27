@@ -50,11 +50,21 @@ export default defineAppConfig({
           key: 0,
           name: '点击右上角[更多]图标按钮',
           matches:
-            '@ImageView[clickable=true][desc="更多"] <3 RelativeLayout -2 RelativeLayout >4 FlattenUIText[desc="查看商品"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12679280',
+            '@ImageView[clickable=true][desc="更多"] <3 RelativeLayout -2 RelativeLayout >4 LynxFlattenUI[text="头条优惠券无门槛全平台通用"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12679280',
+            'https://gkd-kit.gitee.io/import/12733282',
+          ],
         },
         {
-          preKeys: 0,
+          key: 1,
+          name: '点击右上角[更多]图标按钮-抖音直播',
+          matches:
+            '@ImageView[clickable=true][desc="更多"] <4 RelativeLayout -2 RelativeLayout >4 LinearLayout[childCount=3] > ScrollView[childCount=1] > TextView[text$="广告"][clickable=true]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12733281'],
+        },
+        {
+          preKeys: [0, 1],
           name: '点击不感兴趣',
           matches:
             '@LinearLayout[clickable=true] > RelativeLayout + TextView[text="不感兴趣"]',
