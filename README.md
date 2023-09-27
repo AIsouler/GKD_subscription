@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v112
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v113
 
-当前订阅文件已适配 231 个 APP, 共有 562 规则组
+当前订阅文件已适配 236 个 APP, 共有 573 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -47,6 +47,7 @@ GKD 默认订阅规则
 | 百度地图 | [com.baidu.BaiduMap](/docs/com.baidu.BaiduMap.md) | 6/3启用/3禁用 |
 | 百度贴吧 | [com.baidu.tieba](/docs/com.baidu.tieba.md) | 8 |
 | 百度网盘 | [com.baidu.netdisk](/docs/com.baidu.netdisk.md) | 6 |
+| 百度网盘-三星版本 | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md) | 5 |
 | 百度文库 | [com.baidu.wenku](/docs/com.baidu.wenku.md) | 1 |
 | 宝宝树孕育 | [com.babytree.apps.pregnancy](/docs/com.babytree.apps.pregnancy.md) | 3 |
 | 哔哩哔哩 | [tv.danmaku.bili](/docs/tv.danmaku.bili.md) | 8 |
@@ -104,7 +105,7 @@ GKD 默认订阅规则
 | 京东云无线宝 | [com.jdcloud.mt.smartrouter](/docs/com.jdcloud.mt.smartrouter.md) | 1 |
 | 京喜 | [com.jd.pingou](/docs/com.jd.pingou.md) | 1 |
 | 京喜特价 | [com.jd.jdlite](/docs/com.jd.jdlite.md) | 2 |
-| 今日头条 | [com.ss.android.article.news](/docs/com.ss.android.article.news.md) | 4/2启用/2禁用 |
+| 今日头条 | [com.ss.android.article.news](/docs/com.ss.android.article.news.md) | 5/2启用/3禁用 |
 | 金十数据 | [com.jin10](/docs/com.jin10.md) | 4/3启用/1禁用 |
 | 拷貝漫畫 | [com.copymanga.app](/docs/com.copymanga.app.md) | 3 |
 | 肯德基 | [com.yek.android.kfc.activitys](/docs/com.yek.android.kfc.activitys.md) | 1 |
@@ -134,6 +135,7 @@ GKD 默认订阅规则
 | miui系统广告 | [com.miui.systemAdSolution](/docs/com.miui.systemAdSolution.md) | 2 |
 | miui主题壁纸 | [com.android.thememanager](/docs/com.android.thememanager.md) | 1 |
 | 米游社 | [com.mihoyo.hyperion](/docs/com.mihoyo.hyperion.md) | 3 |
+| 摩托范 | [com.jdd.motorfans](/docs/com.jdd.motorfans.md) | 1 |
 | 南网在线 | [com.csg.palmhall](/docs/com.csg.palmhall.md) | 2 |
 | 澎湃新闻 | [com.wondertek.paper](/docs/com.wondertek.paper.md) | 1 |
 | 拼多多 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md) | 8/2启用/6禁用 |
@@ -179,6 +181,7 @@ GKD 默认订阅规则
 | 网易云音乐 | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md) | 2 |
 | 万能遥控 | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md) | 1 |
 | 微博 | [com.sina.weibo](/docs/com.sina.weibo.md) | 11/9启用/2禁用 |
+| 微博极速版 | [com.sina.weibolite](/docs/com.sina.weibolite.md) | 2 |
 | 微博轻享版 | [com.weico.international](/docs/com.weico.international.md) | 2 |
 | 微店 | [com.koudai.weidian.buyer](/docs/com.koudai.weidian.buyer.md) | 1 |
 | 唯品会 | [com.achievo.vipshop](/docs/com.achievo.vipshop.md) | 1 |
@@ -227,7 +230,9 @@ GKD 默认订阅规则
 | 招商银行 | [cmb.pb](/docs/cmb.pb.md) | 3/2启用/1禁用 |
 | 正气 | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md) | 2 |
 | 直播吧 | [android.zhibo8](/docs/android.zhibo8.md) | 1 |
+| 支付宝 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md) | 1/0启用/1禁用 |
 | 知乎 | [com.zhihu.android](/docs/com.zhihu.android.md) | 13/10启用/3禁用 |
+| 智慧生活 | [com.huawei.smarthome](/docs/com.huawei.smarthome.md) | 1 |
 | 智联招聘 | [com.zhaopin.social](/docs/com.zhaopin.social.md) | 3 |
 | 智行火车票12306抢票 | [com.yipiao](/docs/com.yipiao.md) | 1 |
 | 中国电信 | [com.ct.client](/docs/com.ct.client.md) | 2/1启用/1禁用 |
