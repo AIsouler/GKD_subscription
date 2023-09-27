@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.48.0](https://github.com/gkd-kit/subscription/compare/v1.47.0...v1.48.0) (2023-09-27)
+
+
+### Features
+
+* **今日头条:** 信息流广告-默认关闭 ([#411](https://github.com/gkd-kit/subscription/issues/411)) ([666bef1](https://github.com/gkd-kit/subscription/commit/666bef101426a85902b2a9e305cf8f5f9b7cf51c))
+* **宝宝树孕育:** 开屏广告-优化适配 ([#417](https://github.com/gkd-kit/subscription/issues/417)) ([8abacc4](https://github.com/gkd-kit/subscription/commit/8abacc4d06d25cf094c6542e3cd6f5564a100188))
+* **微博极速版:** 开屏广告,信息流广告 ([#413](https://github.com/gkd-kit/subscription/issues/413)) ([f25db9f](https://github.com/gkd-kit/subscription/commit/f25db9fb4377f479e7a69b7b16c906b1904c4740))
+* **摩托范:** APP内弹窗广告 ([#414](https://github.com/gkd-kit/subscription/issues/414)) ([a86dcf9](https://github.com/gkd-kit/subscription/commit/a86dcf9763a2d74b3efe621171c87df5269538c7))
+* **支付宝:** 关闭花呗升级弹窗 ([#410](https://github.com/gkd-kit/subscription/issues/410)) ([f536e77](https://github.com/gkd-kit/subscription/commit/f536e77d0b656f7939bdd9b6d73ba5e54e3deb5c))
+* **智慧生活:** 更新弹窗 ([#419](https://github.com/gkd-kit/subscription/issues/419)) ([d931c5a](https://github.com/gkd-kit/subscription/commit/d931c5ace01c2d78abd63aca6f14946bdeb89646))
+* **百度网盘-三星版本:** 各类广告 ([#390](https://github.com/gkd-kit/subscription/issues/390)) ([c83f7ba](https://github.com/gkd-kit/subscription/commit/c83f7baf3bb46ecc798d818dacc51ebd226fa8f9))
+* **腾讯视频:** 首页-顶部广告卡片 ([#415](https://github.com/gkd-kit/subscription/issues/415)) ([c3c9098](https://github.com/gkd-kit/subscription/commit/c3c9098c6c056cc7c8ad9726a63e27d3e7efe11c))
+
 ## [1.47.0](https://github.com/gkd-kit/subscription/compare/v1.46.0...v1.47.0) (2023-09-26)
 
 
