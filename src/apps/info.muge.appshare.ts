@@ -13,8 +13,7 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          matches:
-            '@[id="com.byted.pangle:id/tt_splash_skip_btn"] + [id="com.byted.pangle:id/tt_splash_ad_logo"]',
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12683145',
             'https://gkd-kit.gitee.io/import/12683173', // activityId: 'com.miui.home.launcher.Launcher'
@@ -26,8 +25,11 @@ export default defineAppConfig({
         },
         {
           matches:
-            'ImageView -(4) LinearLayout[childCount=2] > [id=null][text="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12683211',
+            'ImageView -(4) LinearLayout[childCount=2] > [id=null][text^="跳过"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12683211',
+            'https://gkd-kit.gitee.io/import/12748893',
+          ],
         },
       ],
     },
