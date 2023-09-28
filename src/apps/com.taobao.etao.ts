@@ -32,6 +32,19 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 2,
+      name: '首页广告弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.taobao.etao.app.home.view.NewHomeActivity',
+          matches:
+            'LinearLayout > FrameLayout + RelativeLayout > ImageView[id!=null][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12739581',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 10,
       name: '请求打开系统通知提示信息',
