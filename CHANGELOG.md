@@ -1,5 +1,37 @@
 # Changelog
 
+## [1.51.0](https://github.com/gkd-kit/subscription/compare/v1.50.0...v1.51.0) (2023-09-28)
+
+
+### Features
+
+* **AppShare:** 开屏广告 ([#477](https://github.com/gkd-kit/subscription/issues/477)) ([775bcd8](https://github.com/gkd-kit/subscription/commit/775bcd80ffc5b9baedfb19a6f82ccff107093b06))
+* **Cellular-Z:** 开屏广告-适配其它 ([#475](https://github.com/gkd-kit/subscription/issues/475)) ([203c1f0](https://github.com/gkd-kit/subscription/commit/203c1f05e16bbc7f543f1552f8a2f99b3ea8f3f3))
+* **i茅台:** 开屏广告,首页广告弹窗,通知权限弹窗  ([#459](https://github.com/gkd-kit/subscription/issues/459)) ([4806a4d](https://github.com/gkd-kit/subscription/commit/4806a4d4d6408790b52c6e594dc38667ce91744e))
+* **丰声:** 自动登录 ([#463](https://github.com/gkd-kit/subscription/issues/463)) ([0d72570](https://github.com/gkd-kit/subscription/commit/0d72570e4926924219f6c6314e9fb23785771af3))
+* **交通银行:** 首页弹窗广告 ([#466](https://github.com/gkd-kit/subscription/issues/466)) ([b1de5ad](https://github.com/gkd-kit/subscription/commit/b1de5ad65d97c029ca09b96bd005ee2819a7a788))
+* **倒计日:** 应用评价弹窗 ([#451](https://github.com/gkd-kit/subscription/issues/451)) ([56b1d53](https://github.com/gkd-kit/subscription/commit/56b1d538368c400765cd23da794bab75d931141a))
+* **华为智慧搜索:** 下拉广告 ([#455](https://github.com/gkd-kit/subscription/issues/455)) ([057a6d6](https://github.com/gkd-kit/subscription/commit/057a6d656783f28e7bbb72de90303b509c1e7b68))
+* **华为音乐:** 开屏广告 ([#462](https://github.com/gkd-kit/subscription/issues/462)) ([baaf594](https://github.com/gkd-kit/subscription/commit/baaf5946eb9ce0bcef380d980154dc161f59eb98))
+* **华图在线:** 首页广告弹窗 ([#452](https://github.com/gkd-kit/subscription/issues/452)) ([77806bd](https://github.com/gkd-kit/subscription/commit/77806bd5c983922b48e8d68bf75d58527b8b8a01))
+* **央视新闻:** 开屏广告 ([#479](https://github.com/gkd-kit/subscription/issues/479)) ([c199888](https://github.com/gkd-kit/subscription/commit/c1998884cf5a687bbdb73362ff352deb39741128))
+* **小爱音箱:** 开屏广告 ([#474](https://github.com/gkd-kit/subscription/issues/474)) ([228ac46](https://github.com/gkd-kit/subscription/commit/228ac4666fbd8c746aa05c5cfbbeca43ed6d6073))
+* **小爱音箱:** 首页广告弹窗 ([#470](https://github.com/gkd-kit/subscription/issues/470)) ([710b2cf](https://github.com/gkd-kit/subscription/commit/710b2cf745e61505bc7f0d61c9f4c10cf54ac325))
+* **抖音:** 首页左上角广告 ([#482](https://github.com/gkd-kit/subscription/issues/482)) ([69a0acb](https://github.com/gkd-kit/subscription/commit/69a0acbce960127c75c1f8b683d1f82992daa74f))
+* **掌上公交:** 开屏广告 ([#471](https://github.com/gkd-kit/subscription/issues/471)) ([188b669](https://github.com/gkd-kit/subscription/commit/188b6691482dbda27da3c94df3ac9bbef5277627))
+* **易捷加油:** 弹窗广告 ([#475](https://github.com/gkd-kit/subscription/issues/475)) ([f8ededa](https://github.com/gkd-kit/subscription/commit/f8ededa5fef65b3f4d5b23d2ea28450049a15c53))
+* **有道云笔记:** 开屏广告 ([#469](https://github.com/gkd-kit/subscription/issues/469)) ([006254e](https://github.com/gkd-kit/subscription/commit/006254ee6455139b34373917e7dde3c39826fdd2))
+* **皮皮搞笑:** 开屏广告, 青少年模式弹窗 ([#456](https://github.com/gkd-kit/subscription/issues/456)) ([ed0bf1d](https://github.com/gkd-kit/subscription/commit/ed0bf1d08c9daf1d1b031264b8eb454b5a46aa10))
+* **网上国网:** 首页弹窗广告 ([#454](https://github.com/gkd-kit/subscription/issues/454)) ([d9e3419](https://github.com/gkd-kit/subscription/commit/d9e34196c22d43dd1342d51242ee419736c44bc8))
+* **网易云音乐:** 中间滚动广告 ([#472](https://github.com/gkd-kit/subscription/issues/472)) ([d78f3d0](https://github.com/gkd-kit/subscription/commit/d78f3d08d53d82507296dba4409bf6d7c85076de))
+* **苏e行:** 开屏广告 ([#476](https://github.com/gkd-kit/subscription/issues/476)) ([34b9ae4](https://github.com/gkd-kit/subscription/commit/34b9ae4728461afba5d26a1d4ec97493a60c2b71))
+* **飞傲音乐:** 开屏广告 ([603db8f](https://github.com/gkd-kit/subscription/commit/603db8f2aa750ed85275d22acd4b322ff2074be3))
+
+
+### Bug Fixes
+
+* **微信:** 订阅号文章广告 ([#467](https://github.com/gkd-kit/subscription/issues/467)) ([44e82a3](https://github.com/gkd-kit/subscription/commit/44e82a3fc029cf768b7bdc3d8bbae719fcf2a0b5))
+
 ## [1.50.0](https://github.com/gkd-kit/subscription/compare/v1.49.0...v1.50.0) (2023-09-28)
 
 
