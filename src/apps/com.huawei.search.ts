@@ -11,7 +11,15 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.huawei.search:id/iv_topic_close_in_image"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12667938'],
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12667938',
+            'https://gkd-kit.gitee.io/import/12745008',
+          ],
+        },
+        {
+          matches:
+            'ViewGroup[id="com.huawei.search:id/unlike_flow_layout"] > TextView[text="直接关闭"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12745001'],
         },
       ],
     },
