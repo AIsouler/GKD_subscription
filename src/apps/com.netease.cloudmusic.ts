@@ -39,5 +39,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '我的页面-中间滚动广告',
+      activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
+      rules:
+        '[id="com.netease.cloudmusic:id/auto_scroll_switcher"] + [id="com.netease.cloudmusic:id/close_btn"]',
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12745666'],
+    },
   ],
 });
