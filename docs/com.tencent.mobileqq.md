@@ -1,6 +1,6 @@
 # QQ
 
-存在 7 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 8 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -29,6 +29,12 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12721427)
 - [快照-1](https://gkd-kit.gitee.io/import/12721433)
+
+## 动态广告卡片
+
+点击右上角[广告]右侧的x按钮直接关闭
+
+- [快照-0](https://gkd-kit.gitee.io/import/12749584)
 
 ## 自动勾选原图
 
