@@ -64,8 +64,10 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12642234)
 - [快照-1](https://gkd-kit.gitee.io/import/12722301)
 - [快照-2](https://gkd-kit.gitee.io/import/12722331)
-- [快照-3](https://gkd-kit.gitee.io/import/12642238)
-- [快照-4](https://gkd-kit.gitee.io/import/12700191)
+- [快照-3](https://gkd-kit.gitee.io/import/12745280)
+- [快照-4](https://gkd-kit.gitee.io/import/12642238)
+- [快照-5](https://gkd-kit.gitee.io/import/12745169)
+- [快照-6](https://gkd-kit.gitee.io/import/12700191)
 
 ## 自动查看原图
 
