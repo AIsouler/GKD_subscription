@@ -285,14 +285,14 @@ export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
       .join('\n');
   const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
   const readMeMdText = mdTemplate
-    .replace('--APP_SIZE--', newConfig.apps.length.toString())
-    .replace(
+    .replaceAll('--APP_SIZE--', newConfig.apps.length.toString())
+    .replaceAll(
       '--GROUP_SIZE--',
       newConfig.apps
         .reduce((p, c) => p + (c.groups?.length || 0), 0)
         .toString(),
     )
-    .replace('--VERSION--', (newConfig.version || 0).toString())
-    .replace('--APP_LIST--', appListText);
+    .replaceAll('--VERSION--', (newConfig.version || 0).toString())
+    .replaceAll('--APP_LIST--', appListText);
   await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
 };
