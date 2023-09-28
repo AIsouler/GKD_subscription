@@ -68,6 +68,14 @@ export default defineAppConfig({
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12534016',
     },
     {
+      key: 4,
+      name: '首页左上角广告',
+      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+      rules:
+        'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12749276',
+    },
+    {
       enable: false,
       key: 10,
       name: '请求开启通知提示信息',
