@@ -1,6 +1,6 @@
 # 哈啰
 
-存在 4 规则组 - [com.jingyao.easybike](/src/apps/com.jingyao.easybike.ts)
+存在 5 规则组 - [com.jingyao.easybike](/src/apps/com.jingyao.easybike.ts)
 
 ## 应用内活动、广告弹窗（大部分）
 
@@ -18,3 +18,7 @@
 ## 骑行订单完成-广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12684673)
+
+## 骑行卡-优惠券弹窗
+
+- [快照-0](https://gkd-kit.songe.li/import/12739316)
