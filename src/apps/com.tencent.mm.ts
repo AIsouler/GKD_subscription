@@ -174,19 +174,25 @@ export default defineAppConfig({
           // preKeys: [1], 取消 preKeys 提高点击成功率
           name: '点击不感兴趣',
           matches:
-            '[id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
+            'View[clickable=true] > [id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642234',
             'https://gkd-kit.gitee.io/import/12722301',
             'https://gkd-kit.gitee.io/import/12722331', // 使用 [id="feedbackTagContainer"][visibleToUser=true] 进行限定，防止反馈界面未出现就触发规则
+            'https://gkd-kit.gitee.io/import/12745280', // 使用 View[clickable=true] 进行限定，防止点击之后继续触发规则
           ],
+          action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://gkd-kit.gitee.io/import/12745280 中成功点击 [与我无关]
         },
         {
           key: 2,
           // preKeys: [2], 取消 preKeys 提高点击成功率
           name: '点击与我无关',
-          matches: '[id^="menu"] > [id="isdismatch"][text="与我无关"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642238'],
+          matches:
+            'View[clickable=true] > [id^="menu"] > [id="isdismatch"][text="与我无关"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642238',
+            'https://gkd-kit.gitee.io/import/12745169', // 使用 View[clickable=true] 进行限定，防止点击之后继续触发规则
+          ],
         },
         {
           key: 3,
