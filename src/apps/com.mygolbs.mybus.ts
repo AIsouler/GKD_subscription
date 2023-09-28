@@ -5,6 +5,13 @@ export default defineAppConfig({
   name: '掌上公交',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      activityIds: 'com.mygolbs.mybus.LoginActivity',
+      rules: '[id="com.mygolbs.mybus:id/splash_container"] >n [text^="跳过"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12745634',
+    },
+    {
       enable: false,
       key: 10,
       name: '请求通知权限弹窗',
