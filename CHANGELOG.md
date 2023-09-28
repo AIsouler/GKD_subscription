@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.52.0](https://github.com/gkd-kit/subscription/compare/v1.51.0...v1.52.0) (2023-09-28)
+
+
+### Features
+
+* **QQ:** 动态广告卡片 ([#483](https://github.com/gkd-kit/subscription/issues/483)) ([d343104](https://github.com/gkd-kit/subscription/commit/d343104b2cfbbafadd887345bf9d4b301f378585))
+* **人民日报:** 开屏广告 ([#484](https://github.com/gkd-kit/subscription/issues/484)) ([7c52560](https://github.com/gkd-kit/subscription/commit/7c52560b92b892f0aa751360da77362db668419f))
+
 ## [1.51.0](https://github.com/gkd-kit/subscription/compare/v1.50.0...v1.51.0) (2023-09-28)
 
 
