@@ -5,3 +5,5 @@
 ## 下拉搜索横幅广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12667938)
+- [快照-1](https://gkd-kit.gitee.io/import/12745008)
+- [快照-2](https://gkd-kit.gitee.io/import/12745001)

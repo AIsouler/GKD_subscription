@@ -1,6 +1,10 @@
 # 掌上公交
 
-存在 2 规则组 - [com.mygolbs.mybus](/src/apps/com.mygolbs.mybus.ts)
+存在 3 规则组 - [com.mygolbs.mybus](/src/apps/com.mygolbs.mybus.ts)
+
+## 开屏广告
+
+- [快照-0](https://gkd-kit.songe.li/import/12745634)
 
 ## 请求通知权限弹窗
 
