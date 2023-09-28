@@ -48,5 +48,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 10,
+      name: '应用评价弹窗',
+      activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
+      rules: '@[text="以后再说"] + [text="马上评价"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12744951',
+    },
   ],
 });
