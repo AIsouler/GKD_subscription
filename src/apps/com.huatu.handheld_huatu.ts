@@ -14,10 +14,16 @@ export default defineAppConfig({
     {
       key: 1,
       name: '首页广告弹窗',
-      activityIds: 'com.huatu.handheld_huatu.view.MainPopDialog',
+      activityIds: [
+        'com.huatu.handheld_huatu.view.MainPopDialog',
+        'com.huatu.handheld_huatu.business.main.MainTabActivity',
+      ],
       rules:
         '[id="com.huatu.handheld_huatu:id/main_img_adv_bg"] + [id="com.huatu.handheld_huatu:id/main_img_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12715702',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12715702', // activityId: 'com.huatu.handheld_huatu.view.MainPopDialog'
+        'https://gkd-kit.songe.li/import/12744973', // activityId: 'com.huatu.handheld_huatu.business.main.MainTabActivity'
+      ],
     },
     {
       enable: false,
