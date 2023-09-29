@@ -76,6 +76,13 @@ export default defineAppConfig({
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12749276',
     },
     {
+      key: 5,
+      name: '广告弹窗',
+      rules:
+        '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12769137',
+    },
+    {
       enable: false,
       key: 10,
       name: '请求开启通知提示信息',
