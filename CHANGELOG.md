@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.54.0](https://github.com/gkd-kit/subscription/compare/v1.53.0...v1.54.0) (2023-09-29)
+
+
+### Features
+
+* **今日头条:** 开屏广告-适配其它布局 ([#492](https://github.com/gkd-kit/subscription/issues/492)) ([053864f](https://github.com/gkd-kit/subscription/commit/053864fc860d75f015f3cefe19e9ac0a2cb1a656))
+* **抖音:** 广告弹窗 ([#491](https://github.com/gkd-kit/subscription/issues/491)) ([567dcf0](https://github.com/gkd-kit/subscription/commit/567dcf09ff4be52ff241e9ede55ea6f304590a0e))
+
 ## [1.53.0](https://github.com/gkd-kit/subscription/compare/v1.52.0...v1.53.0) (2023-09-29)
 
 
