@@ -18,5 +18,14 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '首页广告弹窗',
+      activityIds:
+        'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
+      rules:
+        '[id="com.yitong.mbank.psbc:id/iv_theme"] + [id="com.yitong.mbank.psbc:id/iv_theme_close_btn"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12755516',
+    },
   ],
 });
