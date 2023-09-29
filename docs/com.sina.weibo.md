@@ -1,6 +1,6 @@
 # 微博
 
-存在 11 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
+存在 14 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
 
 ## 开屏广告
 
@@ -56,3 +56,19 @@
 默认禁用 - 自动点击x按钮
 
 - [快照-0](https://gkd-kit.gitee.io/import/12705986)
+
+## 首页顶部签到卡片
+
+默认禁用 - 自动点击x按钮
+
+- [快照-0](https://gkd-kit.songe.li/import/12749876)
+
+## 首页广告弹窗
+
+- [快照-0](https://gkd-kit.songe.li/import/12750090)
+
+## 右下角刷微博领现金悬浮广告
+
+默认禁用 - 自动点击x按钮
+
+- [快照-0](https://gkd-kit.songe.li/import/12750118)

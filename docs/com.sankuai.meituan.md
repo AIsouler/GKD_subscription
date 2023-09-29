@@ -4,7 +4,9 @@
 
 ## 开屏广告
 
-## 版本更新弹窗
+- [快照-0](https://gkd-kit.songe.li/import/12749811)
+
+## 更新弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12614559)
 - [快照-1](https://gkd-kit.gitee.io/import/12673132)
