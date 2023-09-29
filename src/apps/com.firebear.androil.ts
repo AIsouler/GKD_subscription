@@ -11,5 +11,19 @@ export default defineAppConfig({
       rules: '[id=`com.byted.pangle.m:id/tt_splash_skip_btn`]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12712742',
     },
+    {
+      key: 1,
+      name: '第三方 SDK 广告',
+      rules: [
+        {
+          key: 0,
+          name: '穿山甲',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '@Image < View + View >2 TextView[text="广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12754919',
+        },
+      ],
+    },
   ],
 });
