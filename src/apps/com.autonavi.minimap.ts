@@ -8,8 +8,12 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
-      rules: '@LinearLayout[clickable=true] > TextView[text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12667556',
+      rules:
+        '[id="com.autonavi.minimap:id/fl_splash_container"] >n [text^="跳过"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12667556',
+        'https://gkd-kit.songe.li/import/12750045',
+      ],
     },
     {
       key: 10,
