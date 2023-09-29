@@ -10,9 +10,11 @@ export default defineAppConfig({
       activityIds: ['com.ss.android.article.news.activity.MainActivity'],
       rules: [
         {
-          matches:
-            '[id="android:id/tabhost"] >(3) [text="跳过广告"][clickable=true]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684954'],
+          matches: '[childCount=1] > [text="跳过广告"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12684954',
+            'https://gkd-kit.gitee.io/import/12754759',
+          ],
         },
       ],
     },
