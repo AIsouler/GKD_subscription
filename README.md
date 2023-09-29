@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v118
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v119
 
-当前订阅文件已适配 268 个 APP, 共有 634 规则组
+当前订阅文件已适配 268 个 APP, 共有 635 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -71,7 +71,7 @@ GKD 默认订阅规则
 | 动卡空间 | [com.citiccard.mobilebank](/docs/com.citiccard.mobilebank.md) | 1 |
 | 懂球帝 | [com.dongqiudi.news](/docs/com.dongqiudi.news.md) | 5/4启用/1禁用 |
 | 豆瓣 | [com.douban.frodo](/docs/com.douban.frodo.md) | 8/7启用/1禁用 |
-| 抖音 | [com.ss.android.ugc.aweme](/docs/com.ss.android.ugc.aweme.md) | 6/5启用/1禁用 |
+| 抖音 | [com.ss.android.ugc.aweme](/docs/com.ss.android.ugc.aweme.md) | 7/6启用/1禁用 |
 | 斗鱼 | [air.tv.douyu.android](/docs/air.tv.douyu.android.md) | 3 |
 | 饿了么 | [me.ele](/docs/me.ele.md) | 5/3启用/2禁用 |
 | 番茄免费小说 | [com.dragon.read](/docs/com.dragon.read.md) | 4/3启用/1禁用 |
@@ -283,4 +283,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=118)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=119)

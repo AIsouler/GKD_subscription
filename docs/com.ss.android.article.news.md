@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12684954)
+- [快照-1](https://gkd-kit.gitee.io/import/12754759)
 
 ## 更新弹窗
 
