@@ -25,5 +25,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '升级弹窗',
+      activityIds: 'com.firebear.androil.app.home.MainActivity',
+      rules:
+        '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12755032',
+    },
   ],
 });
