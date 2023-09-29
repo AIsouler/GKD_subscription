@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.firebear.androil.app.splash.SplashActivity',
-      rules: '[id=`com.byted.pangle.m:id/tt_splash_skip_btn`]',
+      rules: '[id="com.firebear.androil:id/adContainerLay"] [text="跳过"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12712742',
     },
     {
