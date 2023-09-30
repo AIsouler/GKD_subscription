@@ -114,9 +114,10 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 6,
       name: '订阅号文章广告',
-      desc: '自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则',
+      desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
       rules: [
@@ -163,9 +164,10 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 8,
       name: '订阅号文章广告反馈',
-      desc: '自动点击反馈理由，配合【订阅号文章广告】规则使用',
+      desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
       rules: [
@@ -174,12 +176,11 @@ export default defineAppConfig({
           // preKeys: [1], 取消 preKeys 提高点击成功率
           name: '点击不感兴趣',
           matches:
-            'View[clickable=true] > [id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
+            'View > [id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642234',
             'https://gkd-kit.gitee.io/import/12722301',
             'https://gkd-kit.gitee.io/import/12722331', // 使用 [id="feedbackTagContainer"][visibleToUser=true] 进行限定，防止反馈界面未出现就触发规则
-            'https://gkd-kit.gitee.io/import/12745280', // 使用 View[clickable=true] 进行限定，防止点击之后继续触发规则
           ],
           action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://gkd-kit.gitee.io/import/12745280 中成功点击 [与我无关]
         },
@@ -187,12 +188,8 @@ export default defineAppConfig({
           key: 2,
           // preKeys: [2], 取消 preKeys 提高点击成功率
           name: '点击与我无关',
-          matches:
-            'View[clickable=true] > [id^="menu"] > [id="isdismatch"][text="与我无关"]',
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642238',
-            'https://gkd-kit.gitee.io/import/12745169', // 使用 View[clickable=true] 进行限定，防止点击之后继续触发规则
-          ],
+          matches: 'View > [id^="menu"] > [id="isdismatch"][text="与我无关"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642238'],
         },
         {
           key: 3,
