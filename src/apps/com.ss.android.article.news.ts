@@ -45,17 +45,19 @@ export default defineAppConfig({
       enable: false,
       key: 11,
       name: '竖屏视频广告',
-      desc: '点击右上角[更多]图标按钮,出现菜单,点击不感兴趣',
+      desc: '检测到广告时,点击右上角[更多]图标按钮,出现菜单,点击不感兴趣',
       activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
       rules: [
         {
           key: 0,
           name: '点击右上角[更多]图标按钮',
           matches:
-            '@ImageView[clickable=true][desc="更多"] <3 RelativeLayout -2 RelativeLayout >4 LynxFlattenUI[text="头条优惠券无门槛全平台通用"]',
+            '@ImageView[clickable=true][desc="更多"] <n RelativeLayout -2 RelativeLayout >4 LynxFlattenUI[text="头条优惠券无门槛全平台通用"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12679280',
             'https://gkd-kit.gitee.io/import/12733282',
+            'https://gkd-kit.gitee.io/import/12763251',
+            'https://gkd-kit.gitee.io/import/12763252',
           ],
         },
         {
@@ -79,21 +81,30 @@ export default defineAppConfig({
       key: 12,
       name: '信息流广告',
       desc: '点击右上角x按钮,点击不感兴趣',
-      activityIds: 'com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity',
+      activityIds: [
+        'com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity',
+        'com.ss.android.article.news.activity.MainActivity',
+      ],
       rules: [
         {
           name: '点击右上角x按钮',
           key: 0,
           matches:
-            'FlattenUIText[text^="广告"][text.length=4] -n UIView[desc="不感兴趣 按钮"][clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12733098',
+            'FlattenUIText[text^="广告"||text^="来自"] -n UIView[text^="不感兴趣"][clickable=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12733098',
+            'https://gkd-kit.gitee.io/import/12755264',
+          ],
         },
         {
           name: '点击不感兴趣',
           preKeys: 0,
           matches:
             '@ViewGroup[clickable=true] > ImageView + TextView[text="不感兴趣"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12733152',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12733152',
+            'https://gkd-kit.gitee.io/import/12755265',
+          ],
         },
       ],
     },
