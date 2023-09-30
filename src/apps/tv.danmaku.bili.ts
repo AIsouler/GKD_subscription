@@ -15,10 +15,12 @@ export default defineAppConfig({
       key: 0,
       name: '评论区顶部公告横幅',
       rules:
-        'LinearLayout[id=`tv.danmaku.bili:id/ad_tint_frame`] > ImageView[desc=`关闭`]',
+        'LinearLayout[id=`tv.danmaku.bili:id/ad_tint_frame`] > ImageView[id="tv.danmaku.bili:id/close"]',
       excludeActivityIds: [
         'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+        'tv.danmaku.bili.MainActivityV2',
       ],
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12775156',
     },
     {
       key: 1,
