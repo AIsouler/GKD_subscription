@@ -40,7 +40,7 @@
 
 ## 订阅号文章广告
 
-自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则
+默认禁用 - ⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642232)
 - [快照-1](https://gkd-kit.gitee.io/import/12646837)
@@ -59,15 +59,13 @@
 
 ## 订阅号文章广告反馈
 
-自动点击反馈理由，配合【订阅号文章广告】规则使用
+默认禁用 - ⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642234)
 - [快照-1](https://gkd-kit.gitee.io/import/12722301)
 - [快照-2](https://gkd-kit.gitee.io/import/12722331)
-- [快照-3](https://gkd-kit.gitee.io/import/12745280)
-- [快照-4](https://gkd-kit.gitee.io/import/12642238)
-- [快照-5](https://gkd-kit.gitee.io/import/12745169)
-- [快照-6](https://gkd-kit.gitee.io/import/12700191)
+- [快照-3](https://gkd-kit.gitee.io/import/12642238)
+- [快照-4](https://gkd-kit.gitee.io/import/12700191)
 
 ## 自动查看原图
 
