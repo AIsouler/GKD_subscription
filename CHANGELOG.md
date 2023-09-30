@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.55.0](https://github.com/gkd-kit/subscription/compare/v1.54.0...v1.55.0) (2023-09-30)
+
+
+### Features
+
+* **36氪:** 开屏广告 ([#523](https://github.com/gkd-kit/subscription/issues/523)) ([8a2826c](https://github.com/gkd-kit/subscription/commit/8a2826c96419b47e39700260ea61c4b02b961470))
+* **中国移动云盘:** 开屏广告,更新弹窗 ([#524](https://github.com/gkd-kit/subscription/issues/524)) ([b5f84c0](https://github.com/gkd-kit/subscription/commit/b5f84c0cd7832c0965b52d66cde2c9cba0b31ab6))
+* **乐橙:** 开屏广告 ([#522](https://github.com/gkd-kit/subscription/issues/522)) ([038151c](https://github.com/gkd-kit/subscription/commit/038151c56d2aff859dc80f02c6021b6f96ae2be2))
+* **今日头条:** 竖屏视频广告,信息流广告-规则优化 ([71a4975](https://github.com/gkd-kit/subscription/commit/71a49757ac90755cdb3a3c4527faf77bed1f922b))
+* **哔哩哔哩:** 评论区顶部公告横幅-规则优化 ([5fa0be9](https://github.com/gkd-kit/subscription/commit/5fa0be96a9b2624fc5532c92659c52953bf9f486))
+* **央视频:** 开屏广告 ([#525](https://github.com/gkd-kit/subscription/issues/525)) ([ad1d3d2](https://github.com/gkd-kit/subscription/commit/ad1d3d208aaa6dbebeecd2e756667270e0359cff))
+* **好游快爆:** 开屏广告 ([#530](https://github.com/gkd-kit/subscription/issues/530)) ([2f359d5](https://github.com/gkd-kit/subscription/commit/2f359d5a1ae04339b3de8d0ca3089e9c984115da))
+* **民生银行:** 开屏广告 ([#526](https://github.com/gkd-kit/subscription/issues/526)) ([6e55de8](https://github.com/gkd-kit/subscription/commit/6e55de82ea3a070e30b225d1d192c41b48108601))
+* **涨乐全球通:** 开屏广告 ([#531](https://github.com/gkd-kit/subscription/issues/531)) ([5d3a286](https://github.com/gkd-kit/subscription/commit/5d3a286b3efcf3ba1cf0a790bbacca6aa7c4a3d6))
+* **淘特:** 开屏广告 ([#529](https://github.com/gkd-kit/subscription/issues/529)) ([49cf2d1](https://github.com/gkd-kit/subscription/commit/49cf2d10a26a6016c9b5e5f45948505b2a8f45cb))
+* **通达信:** 开屏广告 ([#527](https://github.com/gkd-kit/subscription/issues/527)) ([68c16bb](https://github.com/gkd-kit/subscription/commit/68c16bb1630ee0edc074ae901a0dbcd7b7ea4aa2))
+* **酷安:** 卡片广告-规则优化整合 ([e75f619](https://github.com/gkd-kit/subscription/commit/e75f6190b11a7972b7b8525c1a61749184159dd0))
+
+
+### Bug Fixes
+
+* **京东:** 我的界面-参与调研-规则优化 ([#533](https://github.com/gkd-kit/subscription/issues/533)) ([b852d54](https://github.com/gkd-kit/subscription/commit/b852d54149f9b0ed7d676afd7f214d54e9e8a04f))
+
 ## [1.54.0](https://github.com/gkd-kit/subscription/compare/v1.53.0...v1.54.0) (2023-09-29)
 
 
