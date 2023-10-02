@@ -1,6 +1,6 @@
 # 百度网盘
 
-存在 6 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
+存在 7 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
 
 ## 开屏广告
 
@@ -27,3 +27,9 @@
 ## 相册页面-激活无限空间弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12648987)
+
+## 看视频免费享极速下载弹窗
+
+默认禁用 - 自动点击x按钮
+
+- [快照-0](https://gkd-kit.songe.li/import/12783106)

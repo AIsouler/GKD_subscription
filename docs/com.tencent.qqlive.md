@@ -30,11 +30,10 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12700407)
 - [快照-1](https://gkd-kit.gitee.io/import/12700433)
 
-## 个人中心-广告卡片
-
-自动点击“不感兴趣”
+## 个人中心广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12700175)
+- [快照-1](https://gkd-kit.songe.li/import/12777344)
 
 ## 广告反馈卡片
 
