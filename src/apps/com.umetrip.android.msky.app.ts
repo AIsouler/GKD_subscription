@@ -20,5 +20,13 @@ export default defineAppConfig({
         '[id="com.umetrip.android.msky.app:id/imageView"] + [id="com.umetrip.android.msky.app:id/iv_cancel"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12750185',
     },
+    {
+      key: 11,
+      name: '首页右侧悬浮广告',
+      activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
+      rules:
+        '@[id="com.umetrip.android.msky.app:id/iv_close_envelope"] + [id="com.umetrip.android.msky.app:id/media_view_envelope"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12783264',
+    },
   ],
 });
