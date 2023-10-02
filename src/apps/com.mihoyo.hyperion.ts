@@ -22,10 +22,16 @@ export default defineAppConfig({
       key: 1,
       name: '青少年模式',
       desc: '关闭青少年模式提醒弹窗',
-      activityIds: 'com.mihoyo.hyperion.main.HyperionMainActivity',
+      activityIds: [
+        'com.mihoyo.hyperion.main.HyperionMainActivity',
+        'com.mihoyo.hyperion.splash.SplashActivity',
+      ],
       rules:
         'TextView[id="com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode"] + TextView[id="com.mihoyo.hyperion:id/tv_dialog_i_know"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12675547',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12675547',
+        'https://gkd-kit.songe.li/import/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
+      ],
     },
     {
       key: 2,
