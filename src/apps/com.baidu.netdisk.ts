@@ -69,5 +69,15 @@ export default defineAppConfig({
         '@ImageView[id="com.baidu.netdisk:id/close_btn"] + ImageView[id="com.baidu.netdisk:id/bg_image"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12648987',
     },
+    {
+      enable: false,
+      key: 10,
+      name: '看视频免费享极速下载弹窗',
+      desc: '自动点击x按钮',
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules:
+        'ViewGroup > [id="com.baidu.netdisk:id/background_image"] +n [id="com.baidu.netdisk:id/iv_close"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12783106',
+    },
   ],
 });
