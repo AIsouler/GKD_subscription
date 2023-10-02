@@ -63,21 +63,25 @@ export default defineAppConfig({
       activityIds: [
         'com.bilibili.video.videodetail.VideoDetailsActivity',
         'com.bilibili.ship.theseus.all.UnitedBizDetailsActivity',
+        'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+        'tv.danmaku.bili.MainActivityV2',
       ],
       rules: [
         {
           key: 0,
           name: '点击广告卡片右侧菜单图标',
           matches:
-            'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id="tv.danmaku.bili:id/more"]',
+            'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642260', // n = 2
             'https://gkd-kit.gitee.io/import/12705266', // n = 3
+            'https://gkd-kit.songe.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
             'https://gkd-kit.gitee.io/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
           ],
         },
         {
           preKeys: 0,
+          key: 1,
           name: '点击屏蔽广告',
           matches:
             '[id="tv.danmaku.bili:id/menu_text"][text="屏蔽广告"] < [id="tv.danmaku.bili:id/title"] + [id="tv.danmaku.bili:id/dislike_reasons"] >2 [id="tv.danmaku.bili:id/reason1_layout"]',
