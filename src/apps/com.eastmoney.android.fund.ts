@@ -5,6 +5,14 @@ export default defineAppConfig({
   name: '天天基金',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      activityIds:
+        'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
+      rules: '[id="com.eastmoney.android.fund:id/ad_ignore"][text^="跳过"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12781533',
+    },
+    {
       key: 1,
       name: '自选页面广告',
       activityIds:
