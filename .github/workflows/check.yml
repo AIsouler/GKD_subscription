@@ -36,19 +36,16 @@ jobs:
       - name: Git commit
         id: commit
         run: |
-          git status --porcelain
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
-          git config --global core.autocrlf true
-          git config --global core.safecrlf false
-          git status
-          git add .
-          git commit -m "chore(actions): check_format_lint" -a
+          git status --porcelain
+          git --no-pager diff
+          git commit -a -m "chore(actions): check_format_lint"
         continue-on-error: true
 
       - name: Git push
         uses: ad-m/github-push-action@master
         if: ${{ steps.commit.outcome == 'success' }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          github_token: ${{ github.token }}
+          branch: ${{ github.head_ref }}
