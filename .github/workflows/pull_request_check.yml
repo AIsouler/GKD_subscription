@@ -1,14 +1,13 @@
-name: pull_request Check
+name: pull_request_check
 
 on:
   pull_request:
     branches:
       - main
 
-permissions: write-all
-
 jobs:
   check:
+    if: github.repository == 'gkd-kit/subscription'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -27,18 +26,11 @@ jobs:
 
       - run: pnpm run lint
 
-      - name: Git commit
-        id: commit
+      - name: check format status
         run: |
-          git config --local user.email github-actions[bot]@users.noreply.github.com
-          git config --local user.name github-actions[bot]
-          git status --porcelain
-          git --no-pager diff
-          git commit -a -m "chore(actions): check_format_lint"
-        continue-on-error: true
-
-      - name: Git push
-        uses: ad-m/github-push-action@master
-        if: ${{ steps.commit.outcome == 'success' }}
-        with:
-          branch: ${{ github.head_ref }}
+          status=$(git status --porcelain)
+          if [ -n "$status" ]; then
+            echo "Something wasn’t formatted properly"
+            git --no-pager diff
+            exit 1
+          fi

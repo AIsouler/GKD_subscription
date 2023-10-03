@@ -11,10 +11,9 @@ permissions:
 
 jobs:
   release-please:
+    if: github.repository == 'gkd-kit/subscription'
     runs-on: ubuntu-latest
     steps:
-      # prevent run on fork
-      - if: github.repository == 'gkd-kit/subscription'
-        uses: google-github-actions/release-please-action@v3
+      - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
