@@ -1,9 +1,6 @@
-name: Check
+name: pull_request Check
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     branches:
       - main
@@ -13,10 +10,10 @@ permissions: write-all
 jobs:
   check:
     runs-on: ubuntu-latest
-    if: ${{ !startsWith(github.event.head_commit.message, 'chore(main):') &&  !contains(github.event.head_commit.message, 'release') && !contains(github.event.head_commit.message, 'check_format_lint')  }}
     steps:
       - uses: actions/checkout@v3
         with:
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - uses: actions/setup-node@v3
@@ -47,5 +44,4 @@ jobs:
         uses: ad-m/github-push-action@master
         if: ${{ steps.commit.outcome == 'success' }}
         with:
-          github_token: ${{ github.token }}
           branch: ${{ github.head_ref }}
