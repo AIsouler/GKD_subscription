@@ -7,7 +7,8 @@ on:
 
 jobs:
   release:
-    if: ${{ startsWith(github.event.head_commit.message, 'chore(main):') && contains(github.event.head_commit.message, 'release') }}
+    # prevent run on fork
+    if: ${{ github.repository == 'gkd-kit/subscription' && startsWith(github.event.head_commit.message, 'chore(main):') && contains(github.event.head_commit.message, 'release') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

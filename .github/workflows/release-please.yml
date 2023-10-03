@@ -13,6 +13,8 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      # prevent run on fork
+      - if: github.repository == 'gkd-kit/subscription'
+        uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
