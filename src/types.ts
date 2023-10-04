@@ -24,6 +24,14 @@ type CommonProps = {
   activityIds?: IArray<string>;
 
   /**
+   * 匹配桌面的 activityId, 因为 activityId 在某些机器/应用上获取概率不准确
+   *
+   * 有时当出现 开屏广告 时, activityId 还是桌面的
+   *
+   */
+  matchLauncher?: boolean;
+
+  /**
    * 如果 设备界面Id startWith excludeActivityIds 的任意一项, 则排除匹配, 这个优先级更高
    */
   excludeActivityIds?: IArray<string>;
@@ -38,10 +46,37 @@ type CommonProps = {
   /**
    * 单位: 毫秒
    *
-   * 延迟执行
+   * 延迟执行: 查询到节点->等待一段时间->再次查询到节点则执行对应 action
+   *
+   * 也许应该更名为 actionDelay
    *
    */
   delay?: number;
+
+  /**
+   *
+   * 如果开启, 此规则下的所有 `末尾属性选择器`的`第一个属性选择表达式`符合下面的结构之一的选择器 将使用快速查找
+   *
+   * - [id='abc']
+   * - [text='abc']
+   * - [text^='abc']
+   * - [text*='abc']
+   * - [text$='abc']
+   *
+   * 比如 `A > B + C[id='x'][childCount=2]` 符合, 但 `A > B + C[childCount=2][id='x']` 不符合
+   *
+   * 它的底层原理是 跳过手动遍历所有节点 直接调用 [findAccessibilityNodeInfosByViewId](https://developer.android.google.cn/reference/android/view/accessibility/AccessibilityNodeInfo#findAccessibilityNodeInfosByViewId(java.lang.String)) / [findAccessibilityNodeInfosByText](https://developer.android.google.cn/reference/android/view/accessibility/AccessibilityNodeInfo#findAccessibilityNodeInfosByText(java.lang.String)) 得到可匹配节点
+   *
+   * 但是请注意在某些复杂结构下, 即使目标节点存在, 快速查询也无法查询到, 因此请实机测试后再使用
+   *
+   * 比如 [Image < &#64;View + View >2 [text*='广告']](https://github.com/gkd-kit/subscription/blob/1ae87452d287b558f58f9c4e4448a3190e212ca1/src/apps/com.zidongdianji.ts#L26) 虽然符合快速查询的条件但是使用 `findAccessibilityNodeInfosByText("广告")` 并不能查询到节点
+   *
+   * 它是优点是快速, 因为遍历所有节点是一个耗时行为, 虽然多数情况下这种耗时较低
+   *
+   * 但是在某些软件比如 哔哩哔哩 的开屏广告在这种耗时下延迟可达 1-2s, 这也是导致 [gkd-kit/gkd#60](https://github.com/gkd-kit/gkd/issues/60) 的原因
+   *
+   */
+  quickFind?: boolean;
 
   /**
    * 后期估计会修改优化,暂不使用
