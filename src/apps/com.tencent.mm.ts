@@ -208,5 +208,32 @@ export default defineAppConfig({
       rules: 'Button[text^="查看原图"][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12706944',
     },
+    {
+      enable: false,
+      key: 10,
+      name: '微信小程序-开屏广告',
+      activityIds: [
+        'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+        'com.tencent.mm.plugin.appbrand.launching.AppBrandLaunchProxyUI',
+      ],
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            '[text="广告"] < FrameLayout[childCount=1] <2 FrameLayout[childCount=3] <2 FrameLayout[childCount=2] - FrameLayout[childCount=3] > FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12701979',
+            'https://gkd-kit.gitee.io/import/12777076',
+            'https://gkd-kit.gitee.io/import/12785012',
+            'https://gkd-kit.gitee.io/import/12785183',
+          ],
+        },
+        {
+          matches:
+            '[text="广告"] < * <2 * <2 * <2 FrameLayout[childCount=2] - FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12785246'],
+        },
+      ],
+    },
   ],
 });
