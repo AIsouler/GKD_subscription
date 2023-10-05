@@ -17,8 +17,12 @@ export default defineAppConfig({
       key: 1,
       name: '地图上方黄页横幅',
       activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[id="com.baidu.BaiduMap:id/yellow_banner_close"][desc="关闭"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642301',
+      rules:
+        'LinearLayout[id="com.baidu.BaiduMap:id/switcher_layout_banner"] > [id="com.baidu.BaiduMap:id/yellow_banner_close"][desc="关闭"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12642301',
+        'https://gkd-kit.gitee.io/import/12801465',
+      ],
     },
     {
       key: 2,
