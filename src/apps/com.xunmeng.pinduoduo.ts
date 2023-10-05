@@ -5,13 +5,11 @@ export default defineAppConfig({
   name: '拼多多',
   groups: [
     {
-      enable: false,
       key: 0,
       name: '开屏广告',
-      desc: '占位，暂时不起作用',
-      activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
-      rules: [],
-      snapshotUrls: [],
+      activityIds: ['com.xunmeng.pinduoduo.ui.activity.MainFrameActivity'],
+      rules: ['RelativeLayout > TextView[id!=null][text^="跳过"]'],
+      snapshotUrls: ['https://gkd-kit.songe.li/import/12799632'],
     },
     {
       key: 1,
