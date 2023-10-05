@@ -10,7 +10,8 @@
 
 ## 评论区顶部公告横幅
 
-- [快照-0](https://gkd-kit.gitee.io/import/12775156)
+- [快照-0](https://gkd-kit.gitee.io/import/12785461)
+- [快照-1](https://gkd-kit.gitee.io/import/12775156)
 
 ## 青少年模式弹窗
 

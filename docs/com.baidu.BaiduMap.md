@@ -7,6 +7,7 @@
 ## 地图上方黄页横幅
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642301)
+- [快照-1](https://gkd-kit.gitee.io/import/12801465)
 
 ## 打车界面-右侧悬浮球
 
