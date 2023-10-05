@@ -102,6 +102,13 @@ export default defineAppConfig({
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12749584',
     },
     {
+      key: 7,
+      name: '扫一扫-登录确认',
+      activityIds: 'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
+      rules: 'Button[text="拒绝"] - Button[text="登录"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12789287',
+    },
+    {
       enable: false,
       key: 10,
       name: '自动勾选原图',
