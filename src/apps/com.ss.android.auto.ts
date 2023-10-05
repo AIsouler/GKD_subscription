@@ -39,5 +39,31 @@ export default defineAppConfig({
         '@TextView[text="以后再说"] - FrameLayout >2 TextView[text="立即\n升级"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12711631',
     },
+    {
+      key: 3,
+      name: '首页直播推荐窗口',
+      activityIds: 'com.ss.android.auto.activity.SplashActivity',
+      rules:
+        '@ImageView[clickable=true][id!=null] - RelativeLayout >4 [id="com.ss.android.auto:id/at1"][text="特价抢购"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12798338',
+    },
+    {
+      key: 4,
+      name: '文章底部广告',
+      activityIds:
+        'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
+      rules:
+        '@ImageView[clickable=true] <2 RelativeLayout[childCount=4][id!=null] > TextView[text="广告"][id!=null]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12811597',
+    },
+    {
+      key: 5,
+      name: '评论区广告',
+      activityIds:
+        'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
+      rules:
+        'RelativeLayout[childCount=5][id=null] > @ImageView[clickable=true][id!=null] - LinearLayout[childCount=2][id!=null] > TextView[text="广告"][id!=null]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12811459',
+    },
   ],
 });
