@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.57.0](https://github.com/gkd-kit/subscription/compare/v1.56.0...v1.57.0) (2023-10-05)
+
+
+### Features
+
+* **Android 系统文件选择器:** 授权第三方应用访问文件夹 ([#625](https://github.com/gkd-kit/subscription/issues/625)) ([64f19d6](https://github.com/gkd-kit/subscription/commit/64f19d6c86659ff9c3d58b77ce169b44518dfcc8))
+* **Instagram:** 信息流广告 ([#621](https://github.com/gkd-kit/subscription/issues/621)) ([f1b6e94](https://github.com/gkd-kit/subscription/commit/f1b6e94d4a20f6d7f3cc54f917f1000437a620e3))
+* **NP管理器:** 开屏广告,广告弹窗,广告卡片 ([#628](https://github.com/gkd-kit/subscription/issues/628)) ([fb1d825](https://github.com/gkd-kit/subscription/commit/fb1d8252d78823e7fe2a18cc2e1178379aac2844))
+* **OmoFun:** 插屏广告 ([#595](https://github.com/gkd-kit/subscription/issues/595)) ([b947ff0](https://github.com/gkd-kit/subscription/commit/b947ff0f93a99cfac1d66768927020590ebb8d33))
+* **PU口袋校园:** 优量汇广告-规则优化 ([#604](https://github.com/gkd-kit/subscription/issues/604)) ([9207540](https://github.com/gkd-kit/subscription/commit/9207540b369a9e9088c4e7ddced789053fe8b135))
+* **QQ:** 扫码登录确认 ([#596](https://github.com/gkd-kit/subscription/issues/596)) ([20819ed](https://github.com/gkd-kit/subscription/commit/20819edc8d7c62359e541a05d201747ea3f56cd2))
+* **QQ:** 消息页面顶部-SVIP 广告  - 优化规则 ([#608](https://github.com/gkd-kit/subscription/issues/608)) ([70a19a9](https://github.com/gkd-kit/subscription/commit/70a19a927185f429e74a694c5e26a5b18ef03545))
+* **QQ阅读:** 开屏广告 ([#643](https://github.com/gkd-kit/subscription/issues/643)) ([39f5fd1](https://github.com/gkd-kit/subscription/commit/39f5fd19003937389e636cc246100e71c9d25cde))
+* **tita搜索:** 开屏广告, 应用内第三方 SDK 广告, 观看视频去除广告提示弹窗 ([#631](https://github.com/gkd-kit/subscription/issues/631)) ([ab3a2c6](https://github.com/gkd-kit/subscription/commit/ab3a2c67801ea8f30d8300276971a70c4361d96f))
+* **X:** 信息流广告 ([#623](https://github.com/gkd-kit/subscription/issues/623)) ([4fff4c5](https://github.com/gkd-kit/subscription/commit/4fff4c57850eb78325d39716b6f53aec1c724617))
+* **アニメ新番組:** 开屏广告 ([#627](https://github.com/gkd-kit/subscription/issues/627)) ([51c6c78](https://github.com/gkd-kit/subscription/commit/51c6c786d487ab362094f5ad426da28e1dfe6919))
+* **小周便签:** 开屏广告 ([#620](https://github.com/gkd-kit/subscription/issues/620)) ([94360a7](https://github.com/gkd-kit/subscription/commit/94360a70d68d24458a47f25b778d1b4a08b47ac4))
+* **微信:** 微信小程序-开屏广告 ([e9ac752](https://github.com/gkd-kit/subscription/commit/e9ac75256b1d0185497bae6dd70ca8cd7c807bb7))
+* **微信:** 网页版文件传输助手扫码自动授权 ([#610](https://github.com/gkd-kit/subscription/issues/610)) ([4b65bd5](https://github.com/gkd-kit/subscription/commit/4b65bd5a4f529479cb7d1c81e65a4786ee8ef5c7))
+* **懂车帝:** 首页直播推荐窗口, 文章底部、评论区广告 ([#619](https://github.com/gkd-kit/subscription/issues/619)) ([47ebbc7](https://github.com/gkd-kit/subscription/commit/47ebbc775b3cdd2cf473096afaacd90cee0a7e52))
+* **拼多多:** 开屏广告 ([#626](https://github.com/gkd-kit/subscription/issues/626)) ([c93ed23](https://github.com/gkd-kit/subscription/commit/c93ed2398b3596585d2dc6d9cf8e797da3f20050))
+* **掌上英雄联盟:** 开屏广告 ([#607](https://github.com/gkd-kit/subscription/issues/607)) ([7b5ff4c](https://github.com/gkd-kit/subscription/commit/7b5ff4c37177bb53f78d59ad26db2690050876dc))
+* **摩托范:** 第三方 SDK 广告弹窗 ([#622](https://github.com/gkd-kit/subscription/issues/622)) ([30d0354](https://github.com/gkd-kit/subscription/commit/30d0354ed3c67f9b552be34b2d1c47456a1509b3))
+* **支付宝:** 关闭开启定位提示 ([#605](https://github.com/gkd-kit/subscription/issues/605)) ([dcb5dbe](https://github.com/gkd-kit/subscription/commit/dcb5dbe1c20bd4f82aaa2318360920704317c8a9))
+* **爱壹帆:** 开屏广告 ([#606](https://github.com/gkd-kit/subscription/issues/606)) ([dde1c02](https://github.com/gkd-kit/subscription/commit/dde1c021b71f86ac8b8a5d4eede0fbc0f88498fb))
+
+
+### Bug Fixes
+
+* **百度地图:** 地图上方黄页横幅误触 ([#632](https://github.com/gkd-kit/subscription/issues/632)) ([655c245](https://github.com/gkd-kit/subscription/commit/655c24569032235f3c9f3d59b794f2791b5d6c1e))
+
 ## [1.56.0](https://github.com/gkd-kit/subscription/compare/v1.55.0...v1.56.0) (2023-10-02)
 
 
