@@ -42,6 +42,8 @@ export default defineAppConfig({
       activityIds: [
         'com.ksf.yyx.MainActivity',
         'com.sigmob.sdk.base.common.TransparentAdActivity',
+        // 'com.miui.wakepath.ui.ConfirmStartActivity', //抓到activityIds为小米的 不确定是否正常
+        // 'com.miui.home.launcher.Launcher',
       ],
       rules: [
         {
@@ -68,6 +70,18 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12775921',
             'https://gkd-kit.gitee.io/import/12776903',
           ],
+        },
+        {
+          action: 'clickCenter',
+          matches:
+            'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12789196',
+        },
+        {
+          action: 'clickCenter',
+          matches:
+            'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12789928',
         },
       ],
     },
