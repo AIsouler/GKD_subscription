@@ -1,6 +1,6 @@
 # 微信
 
-存在 10 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 12 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -72,3 +72,17 @@
 默认禁用 - 自动点击底部左侧[查看原图（*M）]按钮
 
 - [快照-0](https://gkd-kit.gitee.io/import/12706944)
+
+## 微信小程序-开屏广告
+
+默认禁用
+
+- [快照-0](https://gkd-kit.gitee.io/import/12701979)
+- [快照-1](https://gkd-kit.gitee.io/import/12777076)
+- [快照-2](https://gkd-kit.gitee.io/import/12785012)
+- [快照-3](https://gkd-kit.gitee.io/import/12785183)
+- [快照-4](https://gkd-kit.gitee.io/import/12785246)
+
+## 网页版文件传输助手扫码自动授权
+
+- [快照-0](https://gkd-kit.songe.li/import/12793745)

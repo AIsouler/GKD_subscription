@@ -1,6 +1,6 @@
 # QQ
 
-存在 8 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 9 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -19,11 +19,12 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12642081)
 - [快照-1](https://gkd-kit.gitee.io/import/12708844)
 
-## 新人专享1元购SVIP
+## 消息页面顶部-SVIP 广告
 
 默认禁用 - 消息界面-搜索框和消息记录直接的广告卡片,点击关闭右侧x
 
 - [快照-0](https://gkd-kit.gitee.io/import/12706907)
+- [快照-1](https://gkd-kit.songe.li/import/12793359)
 
 ## 好友热播
 
@@ -37,6 +38,10 @@
 点击右上角[广告]右侧的x按钮直接关闭
 
 - [快照-0](https://gkd-kit.gitee.io/import/12749584)
+
+## 扫一扫-登录确认
+
+- [快照-0](https://gkd-kit.songe.li/import/12789287)
 
 ## 自动勾选原图
 

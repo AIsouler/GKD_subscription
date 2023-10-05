@@ -20,3 +20,5 @@
 - [快照-3](https://gkd-kit.gitee.io/import/12775924)
 - [快照-4](https://gkd-kit.gitee.io/import/12775921)
 - [快照-5](https://gkd-kit.gitee.io/import/12776903)
+- [快照-6](https://gkd-kit.gitee.io/import/12789196)
+- [快照-7](https://gkd-kit.gitee.io/import/12789928)
