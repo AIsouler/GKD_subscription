@@ -11,6 +11,7 @@ export default defineAppConfig({
         'com.copymanga.app.MainActivity',
         'com.miui.home.launcher.Launcher',
         'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',
+        'com.huawei.android.launcher.unihome.UniHomeLauncher',
       ],
       rules: [
         {
