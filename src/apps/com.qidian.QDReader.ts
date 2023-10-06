@@ -42,12 +42,14 @@ export default defineAppConfig({
       activityIds: [
         'com.qidian.QDReader.ui.activity.MainGroupActivity',
         'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
+        'com.qidian.QDReader.framework.widget.dialog.judian',
       ],
       rules:
         '[id="com.qidian.QDReader:id/imgBKT"] + [id="com.qidian.QDReader:id/imgClose"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12640195',
         'https://gkd-kit.gitee.io/import/12640158',
+        'https://gkd-kit.songe.li/import/12818198',
       ],
     },
     {
