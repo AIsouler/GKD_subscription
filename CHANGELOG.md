@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.59.0](https://github.com/gkd-kit/subscription/compare/v1.58.0...v1.59.0) (2023-10-06)
+
+
+### Features
+
+* **X:** 信息流广告-规则优化 ([176754a](https://github.com/gkd-kit/subscription/commit/176754a290b4b652e002bbac2be65dc2c22ad1d2))
+
 ## [1.58.0](https://github.com/gkd-kit/subscription/compare/v1.57.0...v1.58.0) (2023-10-06)
 
 
