@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v122
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v123
 
-当前订阅文件已适配 306 个 APP, 共有 695 规则组
+当前订阅文件已适配 306 个 APP, 共有 698 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -288,7 +288,7 @@ GKD 默认订阅规则
 | 涨乐全球通 | [com.lphtsccft.zlqqt2](/docs/com.lphtsccft.zlqqt2.md) | 1 |
 | 掌上穿越火线 | [com.tencent.qt.sns](/docs/com.tencent.qt.sns.md) | 1 |
 | 掌上道聚城 | [com.tencent.djcity](/docs/com.tencent.djcity.md) | 1 |
-| 掌上公交 | [com.mygolbs.mybus](/docs/com.mygolbs.mybus.md) | 3/1启用/2禁用 |
+| 掌上公交 | [com.mygolbs.mybus](/docs/com.mygolbs.mybus.md) | 6/4启用/2禁用 |
 | 掌上生活 | [com.cmbchina.ccd.pluto.cmbActivity](/docs/com.cmbchina.ccd.pluto.cmbActivity.md) | 5/4启用/1禁用 |
 | 掌上英雄联盟 | [com.tencent.qt.qtl](/docs/com.tencent.qt.qtl.md) | 1 |
 | 掌通家园 | [com.seebaby](/docs/com.seebaby.md) | 3 |
@@ -321,4 +321,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=122)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=123)
