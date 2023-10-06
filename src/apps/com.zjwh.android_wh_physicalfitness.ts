@@ -39,9 +39,19 @@ export default defineAppConfig({
         'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
       rules: [
         {
+          key: 0,
           matches:
-            '[text="广告"] - ImageView < ViewGroup - ViewGroup >(2) [text="跳过"]',
+            '[id="com.kwad.dy.sdk:id/ksad_splash_root_container"] >n ViewGroup > [text="跳过"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12673495'],
+        },
+        {
+          key: 1,
+          matches:
+            '[id="com.kwad.dy.sdk:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[clickable=true] > ImageView',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12826112',
+            'https://gkd-kit.songe.li/import/12826124',
+          ],
         },
       ],
     },
