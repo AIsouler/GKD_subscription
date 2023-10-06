@@ -217,6 +217,10 @@ export default defineAppConfig({
 
 然后提交这个文件发起 pr 即可
 
+此外如果你想提交多个 APP 的规则, 你应该每个 APP 分别基于 main 分支新起分支 commit 然后每个 APP 的分支分别发起各自的 pr
+
+也就是你想提交 N 个 APP, 你应该分别发起 N 个 pr
+
 ## 检测修复代码
 
 有些人可能没有配置 nodejs 环境或者直接在 github 网页上提交了
