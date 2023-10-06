@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.58.0](https://github.com/gkd-kit/subscription/compare/v1.57.0...v1.58.0) (2023-10-06)
+
+
+### Features
+
+* **Instagram:** 信息流广告-规则优化 ([#673](https://github.com/gkd-kit/subscription/issues/673)) ([cb0789c](https://github.com/gkd-kit/subscription/commit/cb0789c1d3b7dc9d41f9256474d67d66e28043f8))
+* **X:** 信息流广告-规则优化 ([#672](https://github.com/gkd-kit/subscription/issues/672)) ([f76a2bd](https://github.com/gkd-kit/subscription/commit/f76a2bdd0c6086fb453271c3070a1b1072e67bed))
+* **掌上公交:** 开屏广告,广告卡片,广告弹窗,顶栏小广告 ([#599](https://github.com/gkd-kit/subscription/issues/599)) ([8f32028](https://github.com/gkd-kit/subscription/commit/8f3202803f31fdd106806f897e34c7c30a738938))
+
 ## [1.57.0](https://github.com/gkd-kit/subscription/compare/v1.56.0...v1.57.0) (2023-10-05)
 
 
