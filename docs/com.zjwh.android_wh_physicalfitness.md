@@ -14,6 +14,8 @@
 ## 快手广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12673495)
+- [快照-1](https://gkd-kit.songe.li/import/12826112)
+- [快照-2](https://gkd-kit.songe.li/import/12826124)
 
 ## 第三方SDK广告
 

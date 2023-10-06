@@ -19,6 +19,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12640195)
 - [快照-1](https://gkd-kit.gitee.io/import/12640158)
+- [快照-2](https://gkd-kit.songe.li/import/12818198)
 
 ## 系统推送提示信息
 

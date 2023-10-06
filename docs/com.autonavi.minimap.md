@@ -17,6 +17,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642842)
 - [快照-1](https://gkd-kit.gitee.io/import/12642845)
+- [快照-2](https://gkd-kit.songe.li/import/12818770)
 
 ## 加油页面-优惠券弹窗
 
