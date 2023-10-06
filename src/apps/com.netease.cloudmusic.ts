@@ -22,19 +22,22 @@ export default defineAppConfig({
           activityIds:
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
           matches: '[text="直接关闭"]',
-          snapshotUrls: [
-            'https://gkd-kit.songe.li/import/38517192/fea3449b-d642-4d75-929f-490421cc9080',
-          ],
+          snapshotUrls: ['https://gkd-kit.songe.li/import/12829967'],
         },
         {
           activityIds: [
             'com.netease.cloudmusic.activity.MainActivity',
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
+            'com.netease.cloudmusic.music.biz.comment.activity.ReplyCommentActivity2',
+            'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
           ],
           matches: '[id="com.netease.cloudmusic:id/adTagClose"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/38517192/a977b19d-2b3c-43df-ba01-63e7cbbb3908',
+            'https://gkd-kit.songe.li/import/12829944',
             'https://gkd-kit.gitee.io/import/12723229',
+            'https://gkd-kit.gitee.io/import/12829938',
+            'https://gkd-kit.gitee.io/import/12829964',
+            'https://gkd-kit.gitee.io/import/12829953',
           ],
         },
       ],
