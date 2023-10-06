@@ -27,9 +27,16 @@ export default defineAppConfig({
       activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
       rules: [
         {
+          key: 0,
           matches:
             'ImageView - LinearLayout >(2) ImageView[id="com.estrongs.android.pop:id/close"][clickable=true]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12674919'],
+        },
+        {
+          key: 1,
+          matches:
+            '@[id="com.estrongs.android.pop:id/close"] + [id^="com.estrongs.android.pop:id/ad_flag_source"]',
+          snapshotUrls: ['https://gkd-kit.songe.li/import/12818281'],
         },
       ],
     },
