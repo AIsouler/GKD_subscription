@@ -29,10 +29,11 @@ export default defineAppConfig({
       name: '首页-签到卡片',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules:
-        '@ImageView < ViewGroup -(2) ViewGroup > ViewGroup > View[text*="签到"||text*="成长值"]',
+        '@ImageView[visibleToUser=true] < ViewGroup -(2) ViewGroup > ViewGroup > View[text*="签到"||text*="成长值"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12642842',
         'https://gkd-kit.gitee.io/import/12642845',
+        'https://gkd-kit.songe.li/import/12818770', // 限定 ImageView[visibleToUser=true]，防止控件不可见时触发规则
       ],
     },
     {
