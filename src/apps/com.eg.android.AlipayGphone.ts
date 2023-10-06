@@ -10,8 +10,21 @@ export default defineAppConfig({
       name: '关闭花呗升级弹窗',
       activityIds:
         'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
-      rules: 'View[childCount=3] > @Image - View[text="花呗服务升级"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12737055',
+      rules: [
+        {
+          key: 0,
+          matches: 'View[childCount=3] > @Image - View[text="花呗服务升级"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12737055',
+        },
+        {
+          key: 1,
+          matches: [
+            '[text="根据相关法律法规要求，请尽快完成花呗升级"]',
+            'FrameLayout > FrameLayout  > FrameLayout > [text="关闭"]',
+          ],
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12826077',
+        },
+      ],
     },
     {
       enable: false,
