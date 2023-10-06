@@ -116,22 +116,23 @@ export default defineAppConfig({
       key: 19, // 配合应用内其他广告卡片使用，反馈界面的规则都是一样的
       name: '广告反馈卡片',
       desc: '自动点击 不感兴趣 -> 确定',
+      activityIds: [
+        'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+        'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
+      ],
       rules: [
         {
           key: 1,
-          activityIds: [
-            'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
-          ],
           matches:
             '[text="关闭这条广告的原因"] +(2) RecyclerView > [text="不感兴趣"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700303',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12700303',
+            'https://gkd-kit.gitee.io/import/12829866',
+          ],
         },
         {
           preKeys: [1],
           key: 2,
-          activityIds: [
-            'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
-          ],
           matches:
             '[text="关闭这条广告的原因"] + [text="确认"][clickable=true]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12700210',
