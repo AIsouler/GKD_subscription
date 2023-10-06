@@ -40,7 +40,8 @@
 自动点击 不感兴趣 -> 确定
 
 - [快照-0](https://gkd-kit.gitee.io/import/12700303)
-- [快照-1](https://gkd-kit.gitee.io/import/12700210)
+- [快照-1](https://gkd-kit.gitee.io/import/12829866)
+- [快照-2](https://gkd-kit.gitee.io/import/12700210)
 
 ## 请求开启推送通知弹窗
 
