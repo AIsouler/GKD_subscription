@@ -35,6 +35,10 @@ export default defineAppConfig({
           preKeys: [0, 1, 2],
           key: 10,
           name: '点击屏蔽',
+          activityIds: [
+            'com.twitter.app.main.MainActivity',
+            'com.twitter.tweetdetail.TweetDetailActivity',
+          ],
           matches:
             '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"]', // 点击“我不喜欢”会返回主页，应当点击“屏蔽”。https://github.com/gkd-kit/subscription/issues/609#issuecomment-1745172531
           snapshotUrls: 'https://gkd-kit.songe.li/import/12798810',
@@ -42,6 +46,10 @@ export default defineAppConfig({
         {
           preKeys: 10,
           key: 11,
+          activityIds: [
+            'com.twitter.app.main.MainActivity',
+            'com.twitter.tweetdetail.TweetDetailActivity',
+          ],
           name: '二次确认-点击屏蔽',
           matches: '[text="取消"] + [text="屏蔽"]',
           snapshotUrls: 'https://gkd-kit.songe.li/import/12825947',
