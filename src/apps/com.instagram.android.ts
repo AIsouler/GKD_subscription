@@ -12,7 +12,8 @@ export default defineAppConfig({
         {
           key: 0,
           desc: '点击【更多】按钮',
-          matches: '[id="com.instagram.android:id/feed_more_button_stub"]',
+          matches:
+            '[text="赞助内容"] + [id="com.instagram.android:id/feed_more_button_stub"]',
           snapshotUrls: 'https://gkd-kit.songe.li/import/12798562',
         },
         {
