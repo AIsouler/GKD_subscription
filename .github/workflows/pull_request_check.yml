@@ -12,6 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Get changed files
+        id: changed_files
+        uses: tj-actions/changed-files@v39
+
+      - name: Check changed files
+        run: |
+          if [ ${{ steps.changed_files.outputs.all_changed_files_count }} -ne 1 ]; then
+            echo "your changed files count must be 1"
+            exit 1
+          fi
+          for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
       - uses: actions/setup-node@v3
         with:
           node-version: 20
