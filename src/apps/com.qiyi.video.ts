@@ -26,5 +26,25 @@ export default defineAppConfig({
         '[id="com.qiyi.video:id/unused_res_a"] > [id="com.qiyi.video:id/close"]',
       ],
     },
+    {
+      key: 3,
+      name: '开启推送通知弹窗',
+      activityIds: 'org.qiyi.android.video.MainActivity',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12838152',
+      rules: [
+        '[id="com.qiyi.video:id/title" && text="开启推送通知"]',
+        '[id="com.qiyi.video:id/cancel_btn" && text="暂时不要"]',
+      ],
+    },
+    {
+      key: 4,
+      name: '版本更新弹窗',
+      activityIds: 'org.qiyi.android.video.MainActivity',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12838158',
+      rules: [
+        '[id="com.qiyi.video:id/title" && text="有新版本更新啦！"]',
+        '[id="com.qiyi.video:id/cancel_btn" && text="暂不升级"]',
+      ],
+    },
   ],
 });
