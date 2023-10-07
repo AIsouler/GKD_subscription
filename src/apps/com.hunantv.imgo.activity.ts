@@ -23,12 +23,14 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '关闭青少年模式提示',
+      name: '青少年模式弹窗',
       activityIds: [
         'com.hunantv.imgo.activity.MainActivity',
         'miuix.appcompat.app.m',
       ],
-      rules: '[id=`com.hunantv.imgo.activity:id/btnIknow`]',
+      rules:
+        '[id="com.hunantv.imgo.activity:id/llSetAgeMode"] + [id="com.hunantv.imgo.activity:id/btnIknow"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12832447',
     },
     {
       key: 1,
