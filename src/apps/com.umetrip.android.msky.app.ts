@@ -12,6 +12,20 @@ export default defineAppConfig({
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642287',
     },
     {
+      key: 9,
+      name: '首页-升级提示',
+      activityIds: [
+        'com.miui.home.launcher.Launcher',
+        'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
+      ],
+      rules:
+        '@[id="com.umetrip.android.msky.app:id/iv_cancel"] - * > [id="com.umetrip.android.msky.app:id/btn_upgrade"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12838294',
+        'https://gkd-kit.gitee.io/import/12838293',
+      ],
+    },
+    {
       enable: false,
       key: 10,
       name: '进入飞行模式-提示弹窗',
