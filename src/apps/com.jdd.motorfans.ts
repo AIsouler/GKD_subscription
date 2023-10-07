@@ -34,9 +34,19 @@ export default defineAppConfig({
       activityIds: ['com.jdd.motorfans.MTMainActivity'],
       rules: [
         {
+          name: '点x按钮',
+          key: 0,
           matches:
             '[id="com.jdd.motorfans:id/recyclerView"] > FrameLayout[id="com.jdd.motorfans:id/container"] > FrameLayout[childCount=3] > ImageView[clickable=true][id=null] + ImageView[clickable=true][id=null]', //虽然在审查页面能匹配上，但是在“执行选择器”功能下一直处于搜索中，先添加后到真机测试
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12826382'],
+        },
+        {
+          name: '点击不感兴趣',
+          preKeys: 0,
+          matches: [
+            'TextView[id="com.jdd.motorfans:id/beizi_dislike_item_multi_one_title"][text*="不感兴趣"]',
+          ],
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12829069'],
         },
       ],
     },
