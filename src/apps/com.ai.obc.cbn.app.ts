@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '开屏广告',
-      activityIds: ['com.ai.obc.cbn.app.ui.other.activity.SplashActivity'],
+      activityIds: [
+        'com.ai.obc.cbn.app.ui.other.activity.SplashActivity',
+        'com.android.launcher.Launcher',
+      ],
       rules: [
         {
           matches: '[id="com.ai.obc.cbn.app:id/tvTg"]',
