@@ -7,7 +7,9 @@
 - [快照-0](https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0)
 - [快照-1](https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0)
 
-## 关闭青少年模式提示
+## 青少年模式弹窗
+
+- [快照-0](https://gkd-kit.songe.li/import/12832447)
 
 ## 首页推荐流-卡片广告
 

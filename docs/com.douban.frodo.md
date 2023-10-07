@@ -1,6 +1,6 @@
 # 豆瓣
 
-存在 8 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
+存在 9 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
 
 ## 开屏广告
 
@@ -59,3 +59,9 @@
 - [快照-1](https://gkd-kit.gitee.io/import/12674842)
 - [快照-2](https://gkd-kit.gitee.io/import/12723462)
 - [快照-3](https://gkd-kit.gitee.io/import/12723800)
+
+## 个性化内容推荐弹窗
+
+首页底部-个性化内容推荐弹窗-点击卡片右上角x直接关闭
+
+- [快照-0](https://gkd-kit.gitee.io/import/12836798)
