@@ -7,13 +7,18 @@ export default defineAppConfig({
     {
       key: 0,
       name: '下拉搜索横幅广告',
-      activityIds: ['com.huawei.search.HomeActivity'],
+      activityIds: [
+        'com.huawei.search.HomeActivity',
+        'com.huawei.search.MainActivity',
+      ],
       rules: [
         {
-          matches: '[id="com.huawei.search:id/iv_topic_close_in_image"]',
+          matches:
+            '[id="com.huawei.search:id/iv_topic_close_in_image"||id="com.huawei.search:id/iv_topic_left_close"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12667938',
             'https://gkd-kit.gitee.io/import/12745008',
+            'https://gkd-kit.gitee.io/import/12841076',
           ],
         },
         {
