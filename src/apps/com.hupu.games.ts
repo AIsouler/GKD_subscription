@@ -28,14 +28,16 @@ export default defineAppConfig({
             'com.google.android.material.bottomsheet.BottomSheetDialog',
             'com.hupu.games.main.MainActivity',
           ],
-          matches: '[id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
+          matches:
+            '@[clickable=true] > [id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12511010',
             'https://gkd-kit.gitee.io/import/12534848',
           ],
         },
         {
-          matches: '[id="com.hupu.games:id/tv_tag"][text="广告"]',
+          matches:
+            '@[id="com.hupu.games:id/shield_view"] >2 [id="com.hupu.games:id/tv_tag"][text="广告"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12511005',
         },
       ],
