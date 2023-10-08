@@ -1,6 +1,10 @@
 # 小米社区
 
-存在 2 规则组 - [com.xiaomi.vipaccount](/src/apps/com.xiaomi.vipaccount.ts)
+存在 3 规则组 - [com.xiaomi.vipaccount](/src/apps/com.xiaomi.vipaccount.ts)
+
+## 开屏广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/12841023)
 
 ## 更新弹窗
 

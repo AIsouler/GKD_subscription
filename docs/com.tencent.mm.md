@@ -55,7 +55,8 @@
 默认禁用 - 图片和视频选择器-自动选中底部中间的发送原图
 
 - [快照-0](https://gkd-kit.gitee.io/import/12686641)
-- [快照-1](https://gkd-kit.gitee.io/import/12686640)
+- [快照-1](https://gkd-kit.songe.li/import/12840865)
+- [快照-2](https://gkd-kit.gitee.io/import/12686640)
 
 ## 订阅号文章广告反馈
 
