@@ -5,6 +5,13 @@ export default defineAppConfig({
   name: '小米社区',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      activityIds: 'com.xiaomi.mi.launch.LaunchActivity',
+      rules: '[id="com.xiaomi.vipaccount:id/tv_skip"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12841023',
+    },
+    {
       key: 1,
       name: '更新弹窗',
       activityIds: 'miuix.appcompat.app.AlertDialog',
