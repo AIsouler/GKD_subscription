@@ -39,7 +39,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页/贴吧帖子列表-推荐列表-长得像帖子的广告卡片',
+      name: '首页/吧内-帖子列表-推荐列表-长得像帖子的广告卡片',
       activityIds: [
         'com.baidu.tieba.tblauncher.MainTabActivity',
         'com.baidu.tieba.frs.FrsActivity',
@@ -48,8 +48,11 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            'TextView[text$="广告"] < RelativeLayout <n LinearLayout - RelativeLayout > LinearLayout > FrameLayout +n RelativeLayout > LinearLayout',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12775930',
+            'TextView[text$="广告"] <n RelativeLayout <n LinearLayout - RelativeLayout > LinearLayout > FrameLayout +n RelativeLayout > LinearLayout',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12775930',
+            'https://gkd-kit.gitee.io/import/12840951',
+          ],
         },
       ],
     },
@@ -95,14 +98,17 @@ export default defineAppConfig({
         },
       ],
     },
-    {
-      key: 6,
-      name: '首页左侧游戏广告小图标',
-      activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
-      rules: [
-        'ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]',
-      ],
-    },
+    // 在"我的"界面中出现不停点击，问题快照: https://gkd-kit.gitee.io/import/12839905
+    // 且现有规则缺少快照核实问题所在,故暂时移除规则
+    // {
+    //   key: 6,
+    //   name: '首页左侧游戏广告小图标',
+    //   activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
+    //   rules: [
+    //     'ImageView[clickable=true] - RelativeLayout[clickable=false][childCount=1] > ImageView[clickable=true]',
+    //   ],
+    // },
+
     {
       key: 7,
       name: '升级弹窗',
