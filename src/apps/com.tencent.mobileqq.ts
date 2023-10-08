@@ -26,17 +26,17 @@ export default defineAppConfig({
     {
       key: 2,
       name: '好友动态-广告卡片',
+      activityIds: 'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
       rules: [
         {
-          activityIds:
-            'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
-          matches:
-            '[clickable=true] > ImageView + TextView[text="关闭此条广告"]', // 1689050230463
+          key: 0,
+          matches: 'View[desc="广告"] + ImageView[clickable=true]', // 1689050226722
         },
         {
-          activityIds:
-            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-          matches: 'View[desc="广告"] + ImageView[clickable=true]', // 1689050226722
+          preKeys: 0,
+          matches:
+            '[clickable=true] > ImageView + TextView[text="关闭此条广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12840889',
         },
       ],
     },
