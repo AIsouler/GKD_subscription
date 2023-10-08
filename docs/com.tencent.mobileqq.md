@@ -1,6 +1,6 @@
 # QQ
 
-存在 9 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 10 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -13,6 +13,8 @@
 - [快照-0](https://gkd-kit.songe.li/import/12774870)
 
 ## 好友动态-广告卡片
+
+- [快照-0](https://gkd-kit.gitee.io/import/12840889)
 
 ## 频道页面广告
 
@@ -49,3 +51,10 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12705556)
 - [快照-1](https://gkd-kit.gitee.io/import/12705559)
+
+## 自动查看原图
+
+默认禁用 - 查看图片时自动点击原图
+
+- [快照-0](https://gkd-kit.songe.li/import/12840632)
+- [快照-1](https://gkd-kit.songe.li/import/12840633)
