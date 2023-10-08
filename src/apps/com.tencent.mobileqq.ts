@@ -117,10 +117,22 @@ export default defineAppConfig({
       name: '自动勾选原图',
       desc: '发送图片时自动勾选原图',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: ['@CheckBox[checked=false] + [text="原图"]'],
+      rules: '@CheckBox[checked=false] + [text="原图"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12705556', // 未勾选原图
         'https://gkd-kit.gitee.io/import/12705559', // 已勾选原图
+      ],
+    },
+    {
+      enable: false,
+      key: 11,
+      name: '自动查看原图',
+      desc: '查看图片时自动点击原图',
+      activityIds: 'com.tencent.richframework.gallery.QQGalleryActivity',
+      rules: '[desc="查看原图"][checked=false]',
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12840632', // 点击原图前
+        'https://gkd-kit.songe.li/import/12840633', // 点击原图后
       ],
     },
   ],
