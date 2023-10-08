@@ -48,5 +48,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 4,
+      name: '消息-打开通知',
+      activityIds:
+        'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
+      rules: [
+        {
+          matches: 'TextView[text="开启消息通知"] +n ImageView[clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12839864',
+        },
+        {
+          matches:
+            'TextView[text ^="打开系统通知"] - FrameLayout[clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12839865',
+        },
+      ],
+    },
   ],
 });
