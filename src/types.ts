@@ -115,22 +115,27 @@ type GroupConfig = {
    * 也是客户端禁用/启用此规则组的依据
    */
   key: number;
+
   name: string;
   desc?: string;
+
   /**
    * 控制规则默认情况下是启用还是禁用, 默认启用
    */
   enable?: boolean;
+
   /**
    * string => { matches: string }
    *
    * string[] => { matches: string }[]
    */
   rules?: IArray<RuleConfig | string>;
+
   /**
    * 当前 规则/规则组 的快照链接, 最好填上, 增强订阅可维护性
    */
   snapshotUrls?: IArray<string>;
+
   /**
    * 当前 规则/规则组 的规则在手机上的运行示例, gif/mp4 都行
    *
@@ -144,16 +149,20 @@ type RuleConfig = {
    * 当前规则在列表中的唯一标识
    */
   key?: number;
+
   name?: string;
   desc?: string;
+
   /**
    * 一个或者多个合法的 GKD 选择器, 如果每个选择器都能匹配上节点, 那么点击最后一个选择器的目标节点
    */
   matches?: IArray<string>;
+
   /**
    * 一个或者多个合法的 GKD 选择器, 如果存在一个选择器匹配上节点, 则停止匹配此规则
    */
   excludeMatches?: IArray<string>;
+
   /**
    * 要求当前列表里某个 key 刚刚执行
    *
@@ -198,27 +207,35 @@ export type SubscriptionConfig = {
    * 建议值: `new Date().getTime()`
    *
    * 官方默认订阅是 0, 负数 id APP 自己内部使用, APP 不允许用户添加负数 id 的订阅
+   *
+   * 负数订阅由 APP 内部使用, 如本地订阅是 -2, 内存订阅是 -1
    */
   id: number;
+
   /**
    * 规则的名称
    */
   name: string;
+
   /**
    * 必填, 此处有 ? 是因为本项目的 version 由 ts 校验自动生成
    *
    * 只有当新订阅的 version 大于本地旧订阅的 version 才执行更新替换本地
    */
   version?: number;
+
   author?: string;
+
   /**
    * APP 会定时或者用户手动请求这个链接, 如果返回的订阅的 version 大于 APP 订阅当前的 version , 则更新
    */
   updateUrl?: string;
+
   /**
    * https url, custom android schema url
    */
   supportUri?: string;
+
   apps: AppConfig[];
 };
 
