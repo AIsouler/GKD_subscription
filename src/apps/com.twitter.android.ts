@@ -36,16 +36,22 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '信息流广告-帖子详情页',
+      name: '信息流广告-帖子详情页、搜索页',
       desc: '点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]',
-      activityIds: 'com.twitter.tweetdetail.TweetDetailActivity',
+      activityIds: [
+        'com.twitter.tweetdetail.TweetDetailActivity',
+        'com.twitter.android.search.implementation.results.SearchActivity',
+      ],
       rules: [
         {
-          name: '评论区广告-点击右上角关闭',
+          name: '点击右上角关闭',
           key: 0,
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] +n [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12825969',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12825969', // com.twitter.tweetdetail.TweetDetailActivity
+            'https://gkd-kit.songe.li/import/12847584', // com.twitter.android.search.implementation.results.SearchActivity
+          ],
         },
         {
           preKeys: [0],
@@ -53,7 +59,10 @@ export default defineAppConfig({
           name: '点击屏蔽',
           matches:
             '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12828815',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12828815', // com.twitter.tweetdetail.TweetDetailActivity
+            'https://gkd-kit.songe.li/import/12847600', // com.twitter.android.search.implementation.results.SearchActivity
+          ],
         },
         {
           preKeys: 10,
