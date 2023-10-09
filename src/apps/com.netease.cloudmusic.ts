@@ -50,5 +50,12 @@ export default defineAppConfig({
         '[id="com.netease.cloudmusic:id/auto_scroll_switcher"] + [id="com.netease.cloudmusic:id/close_btn"]',
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12745666'],
     },
+    {
+      key: 3,
+      name: '主页-免费听歌',
+      activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
+      rules: ['@ImageView + ViewGroup > TextView[text="VIP歌曲免费听30分钟"]'],
+      snapshotUrls: ['https://gkd-kit.songe.li/import/12843383'],
+    },
   ],
 });
