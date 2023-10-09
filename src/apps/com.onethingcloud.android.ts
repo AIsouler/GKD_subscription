@@ -6,9 +6,10 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
+      matchLauncher: true,
       name: '开屏广告',
       activityIds: 'com.onethingcloud.android.MainActivity',
-      rules: 'View[desc ^="跳过" && desc.length=6]',
+      rules: 'View[desc^="跳过"][desc.length=6]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12841174',
     },
     {
