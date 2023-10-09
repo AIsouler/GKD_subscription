@@ -1,5 +1,37 @@
 # Changelog
 
+## [1.64.0](https://github.com/gkd-kit/subscription/compare/v1.63.0...v1.64.0) (2023-10-09)
+
+
+### Features
+
+* ** 完美校园 :** 升级提示,密码过期提示 ([#791](https://github.com/gkd-kit/subscription/issues/791)) ([67b6cba](https://github.com/gkd-kit/subscription/commit/67b6cbafc2a5a454912014ffaeebc6a7dd30e873))
+* ** 荣耀智慧空间 :** 首页顶部广告,推荐服务声明弹窗 ([#799](https://github.com/gkd-kit/subscription/issues/799)) ([a9495d4](https://github.com/gkd-kit/subscription/commit/a9495d49fd7b8f67a0fd4ff36ee374ef6b59b504))
+* **123云盘:** 开屏广告 ([#809](https://github.com/gkd-kit/subscription/issues/809)) ([921b989](https://github.com/gkd-kit/subscription/commit/921b989b6de7090e9355b70058f92b77f2f57e11))
+* **e福州:** 开屏广告 ([#803](https://github.com/gkd-kit/subscription/issues/803)) ([bed3938](https://github.com/gkd-kit/subscription/commit/bed3938c2bfa5e758caa03de3640e8c8f8bdadbe))
+* **QooApp:** 开屏广告 ([#798](https://github.com/gkd-kit/subscription/issues/798)) ([f473d32](https://github.com/gkd-kit/subscription/commit/f473d3226c4e57b31e6f6be4bd2b455f032f8cf1))
+* **交通银行:** 版本升级弹窗 ([#793](https://github.com/gkd-kit/subscription/issues/793)) ([d8b8fd2](https://github.com/gkd-kit/subscription/commit/d8b8fd214629c6de8736c66ae8fc88d4c8632cea))
+* **古诗文网:** 应用内广告弹窗-规则优化 ([#806](https://github.com/gkd-kit/subscription/issues/806)) ([2c3dd62](https://github.com/gkd-kit/subscription/commit/2c3dd6247c92418214be0432010797fd7c06fc1a))
+* **小蚕霸王餐:** 开屏广告 ([#790](https://github.com/gkd-kit/subscription/issues/790)) ([d3a809d](https://github.com/gkd-kit/subscription/commit/d3a809d7aa2f19045b9dbc61fec0d7fc5a50307f))
+* **得力e+:** 开屏广告 ([#797](https://github.com/gkd-kit/subscription/issues/797)) ([0eded6c](https://github.com/gkd-kit/subscription/commit/0eded6c33f277d0fc5442022156044d7753d39c1))
+* **志愿汇:** 开屏广告, 主页广告 ([#787](https://github.com/gkd-kit/subscription/issues/787)) ([e35de74](https://github.com/gkd-kit/subscription/commit/e35de74a157c626708f7c399e83d3cf957277da9))
+* **抖音:** 自动勾选原图 ([#802](https://github.com/gkd-kit/subscription/issues/802)) ([1ef1ba2](https://github.com/gkd-kit/subscription/commit/1ef1ba2edbaf2d4341d00372dae0405d91205ae2))
+* **支付宝:** 关闭花呗升级弹窗-规则优化 ([#804](https://github.com/gkd-kit/subscription/issues/804)) ([cd14188](https://github.com/gkd-kit/subscription/commit/cd14188325da1b8f3fdf06737d025493bd3602dd))
+* **极氪:** 开屏广告 ([#807](https://github.com/gkd-kit/subscription/issues/807)) ([3f69000](https://github.com/gkd-kit/subscription/commit/3f69000dd3aa51b35dafe45d51c74fd7572b1f4b))
+* **淘特:** 版本升级弹窗 ([#795](https://github.com/gkd-kit/subscription/issues/795)) ([2a7e986](https://github.com/gkd-kit/subscription/commit/2a7e9864a2a012366c7c8d24bb2216f1b8cf636b))
+* **瑞幸咖啡:** 软件更新 ([#810](https://github.com/gkd-kit/subscription/issues/810)) ([5f61109](https://github.com/gkd-kit/subscription/commit/5f61109bf13f877157992bd02ce96b4049425fa3))
+* **知乎:** 开屏广告 - 规则优化 ([#777](https://github.com/gkd-kit/subscription/issues/777)) ([8dae5b6](https://github.com/gkd-kit/subscription/commit/8dae5b6448f6f207472bb5dd5daae6aac7fb5941))
+* **网心云:** 开屏广告,广告弹窗 ([#776](https://github.com/gkd-kit/subscription/issues/776)) ([59aae42](https://github.com/gkd-kit/subscription/commit/59aae4299ad8e235fd7c545a196ea6d3e185e749))
+* **网易云音乐:** 增加免费听歌弹窗规则 ([#792](https://github.com/gkd-kit/subscription/issues/792)) ([1da536b](https://github.com/gkd-kit/subscription/commit/1da536bdcd82a758f7d11f5a28c0af24939eda86))
+* **轻音社:** 开屏广告,应用内广告弹窗 ([#801](https://github.com/gkd-kit/subscription/issues/801)) ([c4b5e97](https://github.com/gkd-kit/subscription/commit/c4b5e9720522b2ec0d54c7b4ba0b8f65c6802d4f))
+* **途虎养车:** 开屏广告 ([#808](https://github.com/gkd-kit/subscription/issues/808)) ([04c4487](https://github.com/gkd-kit/subscription/commit/04c4487775561c6398dfbaa66aff685af7eca53d))
+* **钉钉:** 开屏广告-规则优化 ([#805](https://github.com/gkd-kit/subscription/issues/805)) ([dfc6f37](https://github.com/gkd-kit/subscription/commit/dfc6f379be459b114eab2709e2dd2e79c89f9c80))
+
+
+### Bug Fixes
+
+* **TapTap:** 游戏浏览界面-推荐广告-规则优化 ([#782](https://github.com/gkd-kit/subscription/issues/782)) ([e893050](https://github.com/gkd-kit/subscription/commit/e8930504e45d1397cb1483e1a700e9fa5c2328f1))
+
 ## [1.63.0](https://github.com/gkd-kit/subscription/compare/v1.62.0...v1.63.0) (2023-10-08)
 
 
