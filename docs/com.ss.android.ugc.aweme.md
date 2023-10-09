@@ -1,6 +1,6 @@
 # 抖音
 
-存在 7 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+存在 8 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
 ## 关闭青少年弹窗
 
@@ -34,3 +34,10 @@
 默认禁用 - 自动点击“暂不”
 
 - [快照-0](https://gkd-kit.gitee.io/import/12675129)
+
+## 自动勾选原图
+
+默认禁用 - 聊天发送图片时自动勾选原图
+
+- [快照-0](https://gkd-kit.songe.li/import/12846036)
+- [快照-1](https://gkd-kit.songe.li/import/12846040)
