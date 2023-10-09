@@ -8,8 +8,11 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.xyhui.start.LoadingActivity',
-      rules: 'ImageView -(4) LinearLayout > [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642486',
+      rules: 'LinearLayout > [text^="跳过"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12642486',
+        'https://gkd-kit.songe.li/import/12846496',
+      ],
     },
     {
       key: 1,
@@ -44,6 +47,13 @@ export default defineAppConfig({
           ],
         },
       ],
+    },
+    {
+      key: 2,
+      name: '首页-浮窗广告',
+      activityIds: 'com.xyhui.start.PUMainActivity',
+      rules: 'ImageView[id="com.xyhui:id/deleteIv"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12846543',
     },
   ],
 });
