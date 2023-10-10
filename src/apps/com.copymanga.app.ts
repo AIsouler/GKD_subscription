@@ -7,11 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchLauncher: true,
       activityIds: [
         'com.copymanga.app.MainActivity',
-        'com.miui.home.launcher.Launcher',
         'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',
-        'com.huawei.android.launcher.unihome.UniHomeLauncher',
       ],
       rules: [
         {
@@ -28,10 +27,8 @@ export default defineAppConfig({
     {
       key: 1,
       name: '内部弹窗广告',
-      activityIds: [
-        'com.copymanga.app.MainActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      matchLauncher: true,
+      activityIds: ['com.copymanga.app.MainActivity'],
       rules: [
         {
           activityIds: 'com.kwad.components.ad.interstitial',
@@ -55,16 +52,41 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12661019',
           ],
         },
+        {
+          matches:
+            '@ImageView < FrameLayout[childCount=1] +2 FrameLayout[childCount=2] >2 TextView[text$="看看"][text^="去"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12504501',
+        },
       ],
     },
     {
       key: 2,
       name: '加入书架按钮下面的广告',
       activityIds: 'com.copymanga.app.MainActivity',
-      rules: {
-        matches: 'ImageView[id="com.copymanga.app:id/close"]',
-        snapshotUrls: 'https://gkd-kit.gitee.io/import/12504525',
-      },
+      rules: [
+        {
+          name: '点击右上角x',
+          matches: 'ImageView[id="com.copymanga.app:id/close"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12504525',
+        },
+        {
+          name: '点击右下角x',
+          matches:
+            'FrameLayout[childCount=3] > LinearLayout[childCount=1] + FrameLayout[childCount=1] > ImageView[id=null]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12851671',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '关闭赞助提示',
+      activityIds: 'com.copymanga.app.MainActivity',
+      rules: [
+        {
+          matches: '@[desc="就这样吧"] + [desc^="赞助免广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12851627',
+        },
+      ],
     },
   ],
 });
