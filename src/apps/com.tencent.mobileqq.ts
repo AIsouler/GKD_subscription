@@ -26,11 +26,15 @@ export default defineAppConfig({
     {
       key: 2,
       name: '好友动态-广告卡片',
-      activityIds: 'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+      activityIds: [
+        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+        'com.tencent.mobileqq.activity.SplashActivity',
+      ],
       rules: [
         {
           key: 0,
           matches: 'View[desc="广告"] + ImageView[clickable=true]', // 1689050226722
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12847842',
         },
         {
           preKeys: 0,
@@ -133,6 +137,30 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.songe.li/import/12840632', // 点击原图前
         'https://gkd-kit.songe.li/import/12840633', // 点击原图后
+      ],
+    },
+    {
+      enable: false,
+      key: 12,
+      name: 'QQ小世界评论区广告',
+      desc: '点击广告-弹出原因框-关闭此条广告',
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'com.tencent.biz.qqcircle.activity.QCircleFolderActivity',
+      ],
+      rules: [
+        {
+          key: 0,
+          matches:
+            'RelativeLayout[childCount=5] > @LinearLayout[clickable=true][childCount=2][id!=null] > TextView[text="广告"][id!=null]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12847819',
+        },
+        {
+          preKeys: 0,
+          matches:
+            '@LinearLayout[clickable=true] > TextView[text="关闭此条广告"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12847821',
+        },
       ],
     },
   ],
