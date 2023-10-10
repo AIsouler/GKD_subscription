@@ -8,5 +8,7 @@
 
 ## 广告邮件-列表卡片广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12775857)
-- [快照-1](https://gkd-kit.songe.li/import/12775862)
+- [快照-0](https://gkd-kit.songe.li/import/12842757)
+- [快照-1](https://gkd-kit.songe.li/import/12842775)
+- [快照-2](https://gkd-kit.songe.li/import/12775857)
+- [快照-3](https://gkd-kit.songe.li/import/12775862)
