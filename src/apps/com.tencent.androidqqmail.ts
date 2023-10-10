@@ -18,7 +18,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: '[id="com.tencent.androidqqmail:id/advertise_view_ad"]', // 需要补充快照
+          desc: '英文版邮箱广告',
+          matches: ['[id="com.tencent.androidqqmail:id/advertise_view_ad"]'],
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12842757',
+        },
+        {
+          preKeys: [0],
+          matches: '@FrameLayout > TextView[text="Not interested"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12842775',
         },
         {
           key: 1,
