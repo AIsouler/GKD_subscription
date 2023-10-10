@@ -1,6 +1,6 @@
 # 米游社
 
-存在 3 规则组 - [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts)
+存在 4 规则组 - [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts)
 
 ## 开屏广告
 
@@ -19,3 +19,10 @@
 关闭版本更新提示弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12675513)
+
+## 自动打卡
+
+点击顶部搜索框右侧[打卡],切换板块自动签到
+
+- [快照-0](https://gkd-kit.gitee.io/import/12857503)
+- [快照-1](https://gkd-kit.gitee.io/import/12859518)

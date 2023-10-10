@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12712742)
+- [快照-1](https://gkd-kit.songe.li/import/12855707)
 
 ## 第三方 SDK 广告
 

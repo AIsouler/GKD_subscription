@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12700962)
+- [快照-1](https://gkd-kit.songe.li/import/12852707)
 
 ## 会员过期续费弹窗
 
