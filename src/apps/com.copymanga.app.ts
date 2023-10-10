@@ -15,15 +15,13 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          matches: 'TextView[text!=null] - TextView[text^="跳过"]',
+          matches: '[text *= "跳过" && text.length<6]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12504489',
             'https://gkd-kit.gitee.io/import/12504507',
+            'https://gkd-kit.songe.li/import/12852509',
+            'https://gkd-kit.gitee.io/import/12504492',
           ],
-        },
-        {
-          matches: 'ImageView + ViewGroup > TextView[text="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12504492',
         },
       ],
     },
