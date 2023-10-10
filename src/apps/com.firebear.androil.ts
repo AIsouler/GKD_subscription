@@ -8,8 +8,17 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.firebear.androil.app.splash.SplashActivity',
-      rules: '[id="com.firebear.androil:id/adContainerLay"] [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12712742',
+      rules: [
+        {
+          matches:
+            '[id="com.firebear.androil:id/adContainerLay"] [text="跳过"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12712742',
+        },
+        {
+          matches: '[id="com.mangshe.tvdown:id/skip_view2"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12855707',
+        },
+      ],
     },
     {
       key: 1,
