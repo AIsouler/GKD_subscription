@@ -7,10 +7,16 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+      activityIds: [
+        'com.tencent.qqmusiclite.activity.MainActivity',
+        'com.tencent.qqmusiclite.activity.SplashAdActivity',
+      ],
       rules:
         '@TextView[text$=`跳过`] + TextView[id="com.miui.player:id/ad_view"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12700962',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12700962',
+        'https://gkd-kit.songe.li/import/12852707',
+      ],
     },
     {
       enable: false,
