@@ -69,13 +69,14 @@ export default defineAppConfig({
       enable: false,
       key: 4,
       name: '消息页面顶部-SVIP 广告',
-      desc: '消息界面-搜索框和消息记录直接的广告卡片,点击关闭右侧x',
+      desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules:
-        'LinearLayout > TextView[text*="SVIP"] + FrameLayout + ImageView[id!=null]',
+        'LinearLayout > TextView[text*="SVIP"] + FrameLayout + [name$="ImageView"||name$="Button"][id!=null]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12706907',
         'https://gkd-kit.songe.li/import/12793359',
+        'http://gkd-kit.songe.li/import/12855048',
       ],
     },
     {
@@ -114,6 +115,15 @@ export default defineAppConfig({
       activityIds: 'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
       rules: 'Button[text="拒绝"] - Button[text="登录"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12789287',
+    },
+    {
+      enable: false,
+      key: 8,
+      name: '消息页面顶部-无法接收新消息通知',
+      desc: '消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      rules: 'RelativeLayout > [text^="当前无法接收"] + ImageView',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12855441',
     },
     {
       enable: false,
