@@ -21,7 +21,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '主页-推荐流广告',
-      activityIds: 'com.weico.international.activity.MainFragmentActivity',
+      activityIds: [
+        'com.weico.international.activity.MainFragmentActivity',
+        'com.weico.international.ui.search.SearchActivity',
+      ],
       exampleUrls:
         'https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b',
       rules: [
@@ -39,6 +42,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12505753',
             'https://gkd-kit.gitee.io/import/12505763',
+            'https://gkd-kit.songe.li/import/12857202',
           ],
         },
       ],
