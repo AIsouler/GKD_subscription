@@ -9,12 +9,14 @@ export default defineAppConfig({
       name: '应用内广告弹窗',
       rules: [
         {
+          delay: 500,
           key: 0,
           activityIds: 'org.gushiwen.gushiwen.HomeActivity',
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12813618',
         },
         {
+          delay: 500,
           key: 1,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
