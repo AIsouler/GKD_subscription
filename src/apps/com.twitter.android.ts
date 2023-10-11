@@ -9,6 +9,7 @@ export default defineAppConfig({
       name: '信息流广告-主页',
       desc: '点击右上角关闭,点击我不喜欢',
       activityIds: 'com.twitter.app.main.MainActivity',
+      cd: 3000, // https://github.com/gkd-kit/subscription/issues/832
       rules: [
         {
           key: 0,
@@ -42,6 +43,7 @@ export default defineAppConfig({
         'com.twitter.tweetdetail.TweetDetailActivity',
         'com.twitter.android.search.implementation.results.SearchActivity',
       ],
+      cd: 3000,
       rules: [
         {
           name: '点击右上角关闭',
