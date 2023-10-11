@@ -127,5 +127,14 @@ export default defineAppConfig({
         ],
       },
     },
+    {
+      key: 8,
+      name: '评论区广告',
+      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      quickFind: true,
+      rules:
+        '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12869426',
+    },
   ],
 });
