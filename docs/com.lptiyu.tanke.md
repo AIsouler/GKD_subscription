@@ -5,3 +5,4 @@
 ## 弹窗广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12829816)
+- [快照-1](https://gkd-kit.songe.li/import/12869344)

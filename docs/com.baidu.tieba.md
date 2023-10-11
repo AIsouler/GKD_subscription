@@ -8,6 +8,7 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12775906)
 - [快照-1](https://gkd-kit.gitee.io/import/12566191)
+- [快照-2](https://gkd-kit.gitee.io/import/12870916)
 
 ## 任意界面-选择不喜欢理由-不感兴趣
 
