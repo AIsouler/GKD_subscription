@@ -60,6 +60,26 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 3,
+      name: '应用内广告弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches: '@[text="关闭"] +n LinearLayout > [text*="广告"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12868648',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[text=""] < View +n View > View > TextView[text="广告"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12868667',
+        },
+      ],
+    },
+    {
       enable: true,
       key: 10,
       name: '会员续费弹窗',
