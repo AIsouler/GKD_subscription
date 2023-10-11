@@ -8,6 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       desc: '数字倒计时广告,圆形倒计时广告',
+      quickFind: true,
       activityIds: [
         'com.baidu.tieba.tblauncher.MainTabActivity',
         'com.baidu.tieba.pb.pb.main.PbActivity',
@@ -21,13 +22,18 @@ export default defineAppConfig({
         { key: 1, matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]' }, // 需要补充快照
         {
           key: 2,
-          matches: 'TextView[text*="广告"] - TextView[text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12775906',
+          matches:
+            'TextView[text*="广告"||text.length=1] - TextView[text^="跳过"][text.length=5||text.length=2]',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12775906',
+            'https://gkd-kit.gitee.io/import/12566191',
+          ],
         },
         {
           key: 3,
-          matches: '@TextView[text="跳过"] + TextView[text.length=1]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12566191'],
+          matches:
+            '@FrameLayout[childCount=1][clickable=true][id!=null] > TextView[text="跳过"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12870916',
         },
       ],
     },
