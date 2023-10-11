@@ -21,6 +21,14 @@ export default defineAppConfig({
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://gkd-kit.songe.li/import/12781461',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[text=""] < View +n View > View > TextView[text="广告"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12781461',
+        },
       ],
     },
   ],
