@@ -84,7 +84,9 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          matches: 'TextView[text$=`的广告`] +n TextView[text=`×`]',
+          matches:
+            'TextView[text$=`的广告`] +n TextView[text=`×`][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12864109',
         },
         {
           key: 2,
