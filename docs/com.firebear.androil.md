@@ -7,9 +7,10 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12712742)
 - [快照-1](https://gkd-kit.songe.li/import/12855707)
 
-## 第三方 SDK 广告
+## 广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12754919)
+- [快照-1](https://gkd-kit.gitee.io/import/12864214)
 
 ## 升级弹窗
 

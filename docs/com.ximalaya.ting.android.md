@@ -1,6 +1,6 @@
 # 喜马拉雅
 
-存在 9 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
+存在 10 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
 
 ## 开屏广告
 
@@ -47,3 +47,7 @@
 ## 关闭青少年模式弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12506209)
+
+## 评论区广告
+
+- [快照-0](https://gkd-kit.songe.li/import/12869426)
