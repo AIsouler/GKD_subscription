@@ -5,6 +5,14 @@ export default defineAppConfig({
   name: '飞书',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      activityIds: 'com.ss.android.lark.main.app.MainActivity',
+      rules: '[id="com.ss.android.lark:id/splash_skip_btn_layout"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12870733',
+    },
+    {
       enable: false,
       key: 10,
       name: '自动查看原图',
