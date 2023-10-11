@@ -11,5 +11,16 @@ export default defineAppConfig({
       rules: '[id="com.cn21.ecloud:id/tv_ad_skip"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12865351',
     },
+    {
+      key: 1,
+      name: '首页弹窗',
+      activityIds: ['com.cn21.ecloud.activity.MainPageActivity'],
+      rules:
+        '[id="com.cn21.ecloud:id/content_frame"] >n FrameLayout >n @ImageView[desc=null] - View < View[childCount=2]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12865481',
+        'https://gkd-kit.gitee.io/import/12865488',
+      ],
+    },
   ],
 });
