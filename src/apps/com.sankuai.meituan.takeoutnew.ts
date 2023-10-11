@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds:
         'com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog',
       rules: [
-        '[id=\'com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel\']', // 1686969252896
+        '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]', // 1686969252896
       ],
     },
     {
@@ -25,7 +25,21 @@ export default defineAppConfig({
       name: '关闭美食广告弹窗',
       activityIds: 'com.sankuai.waimai.platform.mach.dialog.DynamicDialog',
       rules: [
-        '@[desc=\'关闭\'][clickable=true] > ImageView', // 1686969062508
+        '@[desc="关闭"][clickable=true] > ImageView', // 1686969062508
+      ],
+    },
+    {
+      key: 3,
+      name: '付款后广告弹窗',
+      rules: [
+        {
+          key: 0,
+          name: '美团买药弹窗-点击[暂时放弃]',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
+          matches:
+            '[text="送亲友"] <2 FrameLayout[childCount=2] > [text="暂时放弃"][clickable=true]',
+        },
       ],
     },
   ],
