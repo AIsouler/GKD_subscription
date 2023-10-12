@@ -24,7 +24,10 @@ export default defineAppConfig({
       key: 1,
       name: '版本升级弹窗',
       desc: '点击 暂不更新',
-      activityIds: 'com.bankcomm.module.biz.webcontainer.BCMHtml5Activity',
+      activityIds: [
+        'com.bankcomm.module.biz.webcontainer.BCMHtml5Activity',
+        'com.bankcomm.module.biz.home.MainActivity',
+      ],
       rules: '[id = "com.bankcomm.Bankcomm:id/tvNotNow" && text = "暂不更新"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12842484',
     },
