@@ -20,6 +20,11 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12506273',
           ],
         },
+        {
+          matches:
+            'TextView[text^="跳过"] < @LinearLayout +3 TextView[text^="跳转详情"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12877937'],
+        },
       ],
     },
     {
