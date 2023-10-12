@@ -66,8 +66,12 @@ export default defineAppConfig({
         {
           key: 0,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matchLauncher: true,
           matches: '@[text="关闭"] +n LinearLayout > [text*="广告"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12868648',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12868648',
+            'https://gkd-kit.gitee.io/import/12879372', //activityIds is Launcher, add matchLauncher: true,
+          ],
         },
         {
           key: 1,
@@ -76,6 +80,13 @@ export default defineAppConfig({
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
           snapshotUrls: 'https://gkd-kit.songe.li/import/12868667',
+        },
+        {
+          key: 2,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches:
+            'TextView[text="广告"] <n ViewGroup -2 ViewGroup > @ViewGroup',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12879452',
         },
       ],
     },
