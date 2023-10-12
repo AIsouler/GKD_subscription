@@ -56,7 +56,16 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0],
+          name: '点击右上角关闭',
+          key: 1,
+          matches:
+            '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12882676', // com.twitter.tweetdetail.TweetDetailActivity
+          ],
+        },
+        {
+          preKeys: [0, 1],
           key: 10,
           name: '点击屏蔽',
           matches:
