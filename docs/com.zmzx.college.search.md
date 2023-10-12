@@ -6,6 +6,7 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12867875)
 - [快照-1](https://gkd-kit.songe.li/import/12867970)
+- [快照-2](https://gkd-kit.songe.li/import/12881929)
 
 ## 首页-推送通知
 
