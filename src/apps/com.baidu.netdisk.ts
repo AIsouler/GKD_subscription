@@ -14,8 +14,11 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          matches: 'TextView[text="跳过"][clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472597',
+          matches: 'TextView[text^="跳过"][clickable=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12472597',
+            'https://gkd-kit.songe.li/import/12877626',
+          ],
         },
         {
           matches: '@TextView[text^="跳过"] + TextView[text="广告"]',
