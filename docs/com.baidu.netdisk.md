@@ -5,9 +5,10 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12472597)
-- [快照-1](https://gkd-kit.gitee.io/import/12648924)
-- [快照-2](https://gkd-kit.gitee.io/import/12706553)
-- [快照-3](https://gkd-kit.gitee.io/import/12865287)
+- [快照-1](https://gkd-kit.songe.li/import/12877626)
+- [快照-2](https://gkd-kit.gitee.io/import/12648924)
+- [快照-3](https://gkd-kit.gitee.io/import/12706553)
+- [快照-4](https://gkd-kit.gitee.io/import/12865287)
 
 ## 活动弹窗
 

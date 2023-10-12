@@ -1,6 +1,6 @@
 # 美团
 
-存在 7 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
+存在 8 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
 
 ## 开屏广告
 
@@ -35,3 +35,9 @@
 ## 美团骑行-广告、优惠券弹窗
 
 - [快照-0](https://gkd-kit.songe.li/import/12739204)
+
+## 请求定位弹窗
+
+默认禁用 - 首页-顶部-打开位置开关，点击右侧x关闭
+
+- [快照-0](https://gkd-kit.gitee.io/import/12874657)
