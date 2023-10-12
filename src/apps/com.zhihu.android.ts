@@ -7,16 +7,19 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
+      matchLauncher: true,
       activityIds: [
         'com.zhihu.android.app.ui.activity.LauncherActivity',
         'com.zhihu.android.app.feed.AdTransparentHostActivity',
-        'com.miui.home.launcher.Launcher',
         'com.zhihu.android.ContentActivity',
+        'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
       ],
       rules: 'TextView[id="com.zhihu.android:id/btn_skip"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12707641',
-        'https://gkd-kit.songe.li/import/12841423',
+        'https://gkd-kit.gitee.io/import/12707641', // com.zhihu.android.app.ui.activity.LauncherActivity
+        'https://gkd-kit.songe.li/import/12841423', // com.zhihu.android.ContentActivity
+        'https://gkd-kit.gitee.io/import/12883329', // com.zhihu.android.mixshortcontainer.MixShortContainerActivity
       ],
     },
     {
