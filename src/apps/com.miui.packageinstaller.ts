@@ -6,6 +6,16 @@ export default defineAppConfig({
   groups: [
     {
       enable: false,
+      key: 9,
+      name: '自动第三方安装应用',
+      desc: '自动允许第三方应用调用安装，安装应用',
+      activityIds: [],
+      rules:
+        'TextView[text*="尝试安装应用"] < LinearLayout +2n LinearLayout > Button[text="继续"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12874746',
+    },
+    {
+      enable: false,
       key: 10,
       name: '自动安装应用',
       rules: [
