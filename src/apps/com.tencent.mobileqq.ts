@@ -173,5 +173,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 13,
+      name: 'QQ小程序开屏广告',
+      desc: '点击右下角跳过',
+      activityIds: 'com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI',
+      rules: [
+        {
+          matches:
+            'TextView[text = "广告"] < RelativeLayout + RelativeLayout TextView[text = "跳过"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12877215',
+        },
+      ],
+    },
   ],
 });
