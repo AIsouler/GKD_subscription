@@ -9,9 +9,20 @@ export default defineAppConfig({
       name: '广告弹窗',
       matchLauncher: true,
       quickFind: true,
-      rules:
-        '@ImageView < FrameLayout[childCount=1] <3 FrameLayout[childCount=5] <2 FrameLayout[childCount=3] < FrameLayout[childCount=1] < [id="android:id/content"][childCount=1]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12885087',
+      rules: [
+        {
+          key: 0,
+          matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12885087',
+        },
+        {
+          key: 1,
+          activityIds: 'com.dmzj.manhua.ui.home.HomeTabsActivitys',
+          matches:
+            'ImageView < FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12893731',
+        },
+      ],
     },
   ],
 });
