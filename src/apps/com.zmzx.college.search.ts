@@ -27,11 +27,18 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '我的-弹窗广告',
-      activityIds:
+      name: '弹窗广告',
+      desc: '会出现在搜题页面与我的页面',
+      quickFind: true,
+      activityIds: [
         'com.zmzx.college.search.activity.main.activity.MainActivity',
+        'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
+      ],
       rules: 'ImageView[id="com.zmzx.college.search:id/iv_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12867751',
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12867751',
+        'https://gkd-kit.songe.li/import/12894813',
+      ],
     },
     {
       key: 3,
