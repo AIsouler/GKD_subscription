@@ -7,6 +7,8 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
+      matchLauncher: true,
       activityIds: [
         'com.ss.android.article.news.activity.MainActivity',
         'com.bytedance.ugc.UgcDetailInfoActivity',
@@ -25,10 +27,8 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: [
-        'com.ss.android.mine.BaseSettingActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      matchLauncher: true,
+      activityIds: ['com.ss.android.mine.BaseSettingActivity'],
       rules: [
         {
           matches: '[text="升级版本"] +n [desc="关闭"][clickable=true]',

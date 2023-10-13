@@ -7,6 +7,8 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchLauncher: true,
+      quickFind: true,
       rules: [
         {
           matches: '[id="android.zhibo8:id/tv_skip_text"]',
@@ -21,6 +23,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '信息流广告',
+      activityIds: 'android.zhibo8.ui.contollers.main.MainActivity',
       rules: [
         {
           key: 0,
