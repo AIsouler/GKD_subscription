@@ -26,12 +26,22 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '美团买菜活动弹窗',
       activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
-      rules: 'ViewGroup > ViewGroup +(5) ViewGroup > ImageView',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12639717',
+      rules: [
+        {
+          key: 0,
+          matches: 'ViewGroup > ViewGroup +(5) ViewGroup > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12639717',
+        },
+        {
+          key: 1,
+          matches:
+            '@ImageView < ViewGroup +3 ViewGroup > ViewGroup > TextView[text^="红包已到账"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892626',
+        },
+      ],
     },
     {
       key: 3,
