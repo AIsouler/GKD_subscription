@@ -32,5 +32,12 @@ export default defineAppConfig({
         '@[id="com.lphtsccft:id/dialog_btn_left"][text="取消"] + [id="com.lphtsccft:id/dialog_btn_right"][text="确定"]',
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12699308'],
     },
+    {
+      key: 3,
+      name: '右侧悬浮广告',
+      activityIds: 'com.lphtsccft.zhangle.main.MainActivity',
+      rules: '[id="com.lphtsccft:id/home_float_close"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12892821',
+    },
   ],
 });
