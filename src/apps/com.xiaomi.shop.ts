@@ -10,9 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.xiaomi.shop.activity.MainTabActivity',
       rules: '[id="com.xiaomi.shop:id/skip"]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/38517192/9083b291-43f8-4d92-a506-a9dc6ed0156f',
-      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12472631'],
     },
     {
       key: 1,

@@ -13,7 +13,7 @@ export default defineAppConfig({
       ],
       rules: '[id$=":id/tt_splash_skip_btn"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/38517192/4ba30986-55d4-4a94-b7e2-6cf7d9c6d66d',
+        'https://gkd-kit.gitee.io/import/12472612',
         'https://gkd-kit.gitee.io/import/12503773',
       ],
     },
