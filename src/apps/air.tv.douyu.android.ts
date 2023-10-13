@@ -42,5 +42,22 @@ export default defineAppConfig({
       ],
       rules: '[text="立即升级"] - [text="忽略"][clickable=true]',
     },
+    {
+      key: 3,
+      name: '直播间悬浮广告',
+      activityIds: 'tv.douyu.view.activity.PlayerActivity',
+      rules: [
+        {
+          key: 0,
+          matches: 'ImageView < ViewGroup + @ViewGroup > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892825',
+        },
+        {
+          key: 1,
+          matches: 'ViewPager + @View + ImageView + View',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892825',
+        },
+      ],
+    },
   ],
 });
