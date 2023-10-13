@@ -1,6 +1,6 @@
 # 大学搜题酱
 
-存在 3 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
+存在 4 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
 
 ## 开屏广告
 
@@ -14,6 +14,13 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12867853)
 
-## 我的-弹窗广告
+## 弹窗广告
+
+会出现在搜题页面与我的页面
 
 - [快照-0](https://gkd-kit.songe.li/import/12867751)
+- [快照-1](https://gkd-kit.songe.li/import/12894813)
+
+## 资料库-弹窗广告
+
+- [快照-0](https://gkd-kit.songe.li/import/12893408)

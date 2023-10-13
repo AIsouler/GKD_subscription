@@ -17,6 +17,7 @@
 - [快照-3](https://gkd-kit.gitee.io/import/12504520)
 - [快照-4](https://gkd-kit.gitee.io/import/12661019)
 - [快照-5](https://gkd-kit.gitee.io/import/12504501)
+- [快照-6](https://gkd-kit.gitee.io/import/12892156)
 
 ## 加入书架按钮下面的广告
 
