@@ -33,5 +33,16 @@ export default defineAppConfig({
       rules: 'ImageView[id="com.zmzx.college.search:id/iv_close"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12867751',
     },
+    {
+      key: 3,
+      name: '资料库-弹窗广告',
+      activityIds: [
+        'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+      ],
+      rules:
+        '@LinearLayout > ImageView[id="com.zmzx.college.search:id/tt_reward_full_count_down_after_close"]',
+      quickFind: true,
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12893408',
+    },
   ],
 });
