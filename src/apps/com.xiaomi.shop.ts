@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       activityIds: 'com.xiaomi.shop.activity.MainTabActivity',
       rules: '[id="com.xiaomi.shop:id/skip"]',
       snapshotUrls: [

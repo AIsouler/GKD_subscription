@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       activityIds: 'com.android36kr.app.ui.LogoActivity',
       rules: '[id="com.android36kr.app:id/tv_skip"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12774811',
