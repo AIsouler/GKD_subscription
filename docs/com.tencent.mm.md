@@ -9,8 +9,9 @@
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642588)
-- [快照-1](https://gkd-kit.gitee.io/import/12663984)
-- [快照-2](https://gkd-kit.gitee.io/import/12642584)
+- [快照-1](https://gkd-kit.gitee.io/import/12888129)
+- [快照-2](https://gkd-kit.gitee.io/import/12663984)
+- [快照-3](https://gkd-kit.gitee.io/import/12642584)
 
 ## 电脑微信快捷自动登录
 

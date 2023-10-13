@@ -13,9 +13,8 @@
 
 ## 美团买菜活动弹窗
 
-默认禁用
-
 - [快照-0](https://gkd-kit.gitee.io/import/12639717)
+- [快照-1](https://gkd-kit.gitee.io/import/12892626)
 
 ## 小调查弹窗
 
