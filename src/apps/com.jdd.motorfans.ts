@@ -57,5 +57,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '文章内容弹窗',
+      activityIds: [
+        'com.jdd.motorfans.modules.zone.search.ZoneInsideSearchActivity',
+      ],
+      rules: [
+        {
+          name: '点x按钮',
+          key: 0,
+          matches: '[id="com.jdd.motorfans:id/iv_close"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12888087'],
+        },
+      ],
+    },
   ],
 });
