@@ -8,8 +8,7 @@ export default defineAppConfig({
       key: -1,
       name: '开屏广告',
       activityIds: 'com.lantern.launcher.ui.MainActivity',
-      snapshotUrls:
-        'https://gkd-kit.gitee.io/import/38517192/4d6fdd1e-28ec-4b61-86e2-641b7b5b8899',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12472605',
       rules: [
         'TextView[text="广告"] -3 RelativeLayout > TextView[text*="跳过"]',
       ],

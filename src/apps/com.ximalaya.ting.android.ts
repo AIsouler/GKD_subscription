@@ -32,9 +32,7 @@ export default defineAppConfig({
       name: '首页右侧浮动广告',
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/38517192/45664dfb-b8e6-4bdb-b5bb-9852c7a86a2f',
-      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12472620'],
     },
     {
       key: 1,

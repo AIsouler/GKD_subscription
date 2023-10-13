@@ -11,13 +11,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.hunantv.imgo.activity:id/layout_boot_skip"]',
-          snapshotUrls:
-            'https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472612',
         },
         {
           matches: 'TextView[text!=null] - [text^="跳过"]',
-          snapshotUrls:
-            'https://gkd-kit.gitee.io/import/38517192/7202bd0a-a5c6-4ec4-9547-bf4ca6d372d0',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472612',
         },
       ],
     },
@@ -41,15 +39,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@[id="com.hunantv.imgo.activity:id/layout_logo"] > [id="com.hunantv.imgo.activity:id/tv_ad_logo"]',
-          snapshotUrls:
-            'https://gkd-kit.gitee.io/import/38517192/b74150b5-8e9f-4cbb-86a7-722fc739a1b8',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472616',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '[id="com.hunantv.imgo.activity:id/close_ad"]',
-          snapshotUrls:
-            'https://gkd-kit.gitee.io/import/38517192/40fb71ad-01a5-4420-9150-88172ff8a3bf',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472615',
         },
       ],
     },
