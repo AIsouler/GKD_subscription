@@ -15,8 +15,12 @@ export default defineAppConfig({
       rules: [
         {
           name: '点击广告卡片右上角',
-          matches: 'ImageView - TextView[text="广告"][id!=null][index=0]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642588'],
+          matches:
+            'ImageView - TextView[text="广告"][clickable=true][id!=null]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642588',
+            'https://gkd-kit.gitee.io/import/12888129', //ImageView - TextView[text="广告"][id!=null][index=0]这个规则无法匹配该广告，需要删除[index=0]
+          ],
         },
         // 以下是[确认关闭按钮]出现的情况
         {
