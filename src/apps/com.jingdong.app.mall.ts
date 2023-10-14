@@ -66,5 +66,14 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 10,
+      name: '京东账号登录授权',
+      desc: '自动点击【确认登录】',
+      activityIds: 'com.jingdong.app.mall.WebActivity',
+      rules: '[text="京东登录"] > [desc="确认登录"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12901734',
+    },
   ],
 });
