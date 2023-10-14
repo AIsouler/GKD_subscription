@@ -116,5 +116,15 @@ export default defineAppConfig({
       ],
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12649689',
     },
+    {
+      quickFind: true,
+      key: 7,
+      name: '视频内免流卡',
+      activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+      rules: [
+        'TextView[text="B站免流星卡"] < LinearLayout - [id="tv.danmaku.bili:id/toast_x"]',
+      ],
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12892611',
+    },
   ],
 });
