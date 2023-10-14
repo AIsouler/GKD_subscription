@@ -8,8 +8,13 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.sf.activity.MainActivity',
-      rules: ['[id="AdViewSkipBtn"] >(2) TextView[text^="跳过"]'],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642434',
+      matchLauncher: true,
+      quickFind: true,
+      rules: '[id="AdViewSkipBtn"] >(2) TextView[text^="跳过"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12642434',
+        'https://gkd-kit.gitee.io/import/12901349', // com.bbk.launcher2.Launcher
+      ],
     },
     {
       key: 1,
