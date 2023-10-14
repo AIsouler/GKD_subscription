@@ -7,34 +7,83 @@ export default defineAppConfig({
     {
       key: 0,
       name: '朋友圈广告',
-      desc: '点击广告卡片右上角关闭按钮出现菜单,确认关闭',
+      desc: '点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭',
+      quickFind: true,
       activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
       exampleUrls: [
         'https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79',
       ],
       rules: [
         {
+          key: 0,
           name: '点击广告卡片右上角',
           matches:
             'ImageView - TextView[text="广告"][clickable=true][id!=null]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642588',
             'https://gkd-kit.gitee.io/import/12888129', //ImageView - TextView[text="广告"][id!=null][index=0]这个规则无法匹配该广告，需要删除[index=0]
+            'https://gkd-kit.gitee.io/import/12907641',
           ],
         },
         // 以下是[确认关闭按钮]出现的情况
+        // 情况1 - 你觉得这条广告怎么样->直接关闭
         {
-          matches: '[text="关闭该广告的原因"] +(2) [text="直接关闭"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12663984'],
-        },
-        {
+          preKeys: 0,
+          key: 1,
+          name: '你觉得这条广告怎么样-点击[关闭该广告]',
           matches:
-            '[text^="你觉得这条广告怎么样"] + FrameLayout >2 @LinearLayout[clickable=true] > [text="关闭该广告"]',
+            '@LinearLayout[clickable=true][childCount=2] > [text="关闭该广告"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12642584'],
         },
         {
-          matches: 'TextView[text*="广告"] + TextView[text="关闭该广告"]',
-          // 需要快照
+          preKeys: 1,
+          key: 2,
+          name: '关闭该广告的原因-点击[直接关闭]',
+          matches: '[text="关闭该广告的原因"] +(2) [text="直接关闭"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12663984'],
+        },
+        // 情况2 - 关闭该广告
+        {
+          preKeys: 0,
+          key: 3,
+          name: '对这条广告不感兴趣-点击[关闭该广告]',
+          matches:
+            'TextView[text="你可以这样优化广告推荐"] + TextView[text="关闭该广告"][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12907642',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 12,
+      name: '朋友圈广告-英文版',
+      desc: '点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭',
+      activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          name: '点击广告卡片右上角[Sponsored]',
+          matches:
+            'ImageView - TextView[text="Sponsored"][clickable=true][id!=null]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12905837',
+        },
+        // 以下是[确认关闭按钮]出现的情况
+        // 情况1 - 你觉得这条广告怎么样->直接关闭
+        {
+          preKeys: 0,
+          key: 1,
+          name: 'Sponsored story-点击[Close the ad]',
+          matches:
+            '@LinearLayout[clickable=true][childCount=2] > TextView[text="Close the ad"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12905838',
+        },
+        {
+          preKeys: 1,
+          key: 2,
+          name: 'Reason for closing the ad - 点击[Close]',
+          matches: '[text="Reason for closing the ad"] +(2) [text="Close"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12905846',
         },
       ],
     },
