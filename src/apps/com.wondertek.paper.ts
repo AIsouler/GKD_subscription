@@ -19,5 +19,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '应用内弹窗',
+      activityIds: ['cn.thepaper.paper.ui.main.MainActivity'],
+      rules: [
+        {
+          matches:
+            '[id="com.wondertek.paper:id/second_num"] <2 [id="com.wondertek.paper:id/relative_layout"] + [id="com.wondertek.paper:id/close_photo"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12899226'],
+        },
+      ],
+    },
   ],
 });
