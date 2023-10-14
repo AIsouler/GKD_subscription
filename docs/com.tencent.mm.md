@@ -1,17 +1,27 @@
 # 微信
 
-存在 12 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 13 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
-点击广告卡片右上角关闭按钮出现菜单,确认关闭
+点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642588)
 - [快照-1](https://gkd-kit.gitee.io/import/12888129)
-- [快照-2](https://gkd-kit.gitee.io/import/12663984)
+- [快照-2](https://gkd-kit.gitee.io/import/12907641)
 - [快照-3](https://gkd-kit.gitee.io/import/12642584)
+- [快照-4](https://gkd-kit.gitee.io/import/12663984)
+- [快照-5](https://gkd-kit.gitee.io/import/12907642)
+
+## 朋友圈广告-英文版
+
+默认禁用 - 点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭
+
+- [快照-0](https://gkd-kit.songe.li/import/12905837)
+- [快照-1](https://gkd-kit.songe.li/import/12905838)
+- [快照-2](https://gkd-kit.songe.li/import/12905846)
 
 ## 电脑微信快捷自动登录
 

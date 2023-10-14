@@ -4,5 +4,6 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12829886)
-- [快照-1](https://gkd-kit.songe.li/import/12893553)
+- [快照-0](https://gkd-kit.songe.li/import/12901732)
+- [快照-1](https://gkd-kit.gitee.io/import/12829886)
+- [快照-2](https://gkd-kit.songe.li/import/12893553)
