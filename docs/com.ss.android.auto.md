@@ -27,6 +27,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12811459)
 - [快照-1](https://gkd-kit.gitee.io/import/12825865)
+- [快照-2](https://gkd-kit.gitee.io/import/12900666)
 
 ## 请求推送通知弹窗
 

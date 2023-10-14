@@ -21,6 +21,7 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12513893)
 - [快照-1](https://gkd-kit.gitee.io/import/12513908)
 - [快照-2](https://gkd-kit.gitee.io/import/12513860)
+- [快照-3](https://gkd-kit.songe.li/import/12901429)
 
 ## 听书页面底部广告
 

@@ -1,6 +1,6 @@
 # 哔哩哔哩
 
-存在 8 规则组 - [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts)
+存在 9 规则组 - [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts)
 
 ## 开屏广告
 
@@ -40,3 +40,7 @@
 ## 更新弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12649689)
+
+## 视频内免流卡
+
+- [快照-0](https://gkd-kit.gitee.io/import/12892611)

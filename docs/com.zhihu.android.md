@@ -7,6 +7,7 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12707641)
 - [快照-1](https://gkd-kit.songe.li/import/12841423)
 - [快照-2](https://gkd-kit.gitee.io/import/12883329)
+- [快照-3](https://gkd-kit.gitee.io/import/12899263)
 
 ## 关闭广告弹窗
 
