@@ -23,5 +23,20 @@ export default defineAppConfig({
       rules:
         '[id=`com.duowan.kiwi:id/hyui_dialog_button_positive`][text=`我知道了`]',
     },
+    {
+      key: 2,
+      name: '直播间悬浮广告',
+      activityIds: 'com.duowan.kiwi.liveroom.ChannelPage',
+      rules: [
+        {
+          key: 0,
+          matches: '[id="com.duowan.kiwi:id/ad_close"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12901045',
+            'https://gkd-kit.gitee.io/import/12901044',
+          ],
+        },
+      ],
+    },
   ],
 });
