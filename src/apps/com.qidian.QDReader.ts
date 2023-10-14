@@ -69,5 +69,14 @@ export default defineAppConfig({
         '[id="com.qidian.QDReader:id/ivAd"] + [id="com.qidian.QDReader:id/ivAdClose"]',
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12717032'],
     },
+    {
+      enable: false,
+      key: 10,
+      name: '起点中文网登录自动确认',
+      desc: '自动点击【登录】',
+      activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
+      rules: '[id="scanLogin"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12903081',
+    },
   ],
 });
