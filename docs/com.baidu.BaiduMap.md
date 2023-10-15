@@ -1,6 +1,6 @@
 # 百度地图
 
-存在 6 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
+存在 8 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
 
 ## 开屏广告
 
@@ -8,6 +8,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642301)
 - [快照-1](https://gkd-kit.gitee.io/import/12801465)
+- [快照-2](https://gkd-kit.songe.li/import/12909281)
 
 ## 打车界面-右侧悬浮球
 
@@ -31,3 +32,16 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12660884)
 - [快照-1](https://gkd-kit.gitee.io/import/12660883)
+- [快照-2](https://gkd-kit.songe.li/import/12909299)
+
+## 打车界面-新人红包弹窗
+
+默认禁用
+
+- [快照-0](https://gkd-kit.songe.li/import/12909300)
+
+## 升级更新弹窗
+
+默认禁用
+
+- [快照-0](https://gkd-kit.songe.li/import/12909385)

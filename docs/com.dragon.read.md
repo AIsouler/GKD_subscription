@@ -4,7 +4,8 @@
 
 ## 阅读页面底部广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12716444)
+- [快照-0](https://gkd-kit.songe.li/import/12908734)
+- [快照-1](https://gkd-kit.gitee.io/import/12716444)
 
 ## 更新弹窗
 
