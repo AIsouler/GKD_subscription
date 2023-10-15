@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       activityIds: 'com.xyhui.start.LoadingActivity',
       rules: '[name$="ViewGroup"||name$="LinearLayout"] > [text^="跳过"]',
       snapshotUrls: [
@@ -18,6 +19,8 @@ export default defineAppConfig({
     {
       key: 1,
       name: '首页-优量汇弹窗广告',
+      matchLauncher: true,
+      quickFind: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
         'com.huawei.android.launcher.unihome.UniHomeLauncher',
@@ -56,6 +59,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '首页-浮窗广告',
+      quickFind: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
         'com.xyhui.start.LoadingActivity',
@@ -64,6 +68,21 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.songe.li/import/12846543',
         'https://gkd-kit.songe.li/import/12868119',
+      ],
+    },
+    {
+      enable: false,
+      key: 3,
+      name: '升级提示',
+      quickFind: true,
+      activityIds: [
+        'com.xyhui.start.PUMainActivity',
+        'com.xyhui.start.LoadingActivity',
+      ],
+      rules: 'ImageView[id="com.xyhui:id/closeIv"]',
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12908853',
+        'https://gkd-kit.songe.li/import/12908865',
       ],
     },
   ],
