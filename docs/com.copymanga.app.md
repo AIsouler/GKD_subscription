@@ -23,6 +23,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12504525)
 - [快照-1](https://gkd-kit.gitee.io/import/12851671)
+- [快照-2](https://gkd-kit.gitee.io/import/12909005)
 
 ## 关闭赞助提示
 
