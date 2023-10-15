@@ -18,7 +18,7 @@ export default defineAppConfig({
         },
         {
           matches: '@ImageView - LinearLayout TextView[text="广告"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12908719',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12908734',
         },
         {
           matches:
