@@ -77,8 +77,11 @@ export default defineAppConfig({
         {
           name: '点击右下角x',
           matches:
-            'FrameLayout[childCount=3] > LinearLayout[childCount=1] + FrameLayout[childCount=1] > ImageView[id=null]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12851671',
+            'FrameLayout[childCount=3] > LinearLayout + FrameLayout[childCount=1] > ImageView[id=null]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12851671',
+            'https://gkd-kit.gitee.io/import/12909005',
+          ],
         },
       ],
     },
