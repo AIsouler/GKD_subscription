@@ -16,17 +16,23 @@ export default defineAppConfig({
     {
       key: 1,
       name: '地图上方黄页横幅',
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules:
-        'LinearLayout[id="com.baidu.BaiduMap:id/switcher_layout_banner"] > [id="com.baidu.BaiduMap:id/yellow_banner_close"][desc="关闭"]',
+      quickFind: true,
+      activityIds: [
+        'com.baidu.baidumaps.MapsActivity',
+        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
+        'com.lbe.security.ui.CountdownDialogActivity',
+      ],
+      rules: 'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12642301',
         'https://gkd-kit.gitee.io/import/12801465',
+        'https://gkd-kit.songe.li/import/12909281',
       ],
     },
     {
       key: 2,
       name: '打车界面-右侧悬浮球',
+      quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642307',
@@ -35,6 +41,7 @@ export default defineAppConfig({
       enable: false,
       key: 3,
       name: '美食大礼包弹窗',
+      quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642310',
@@ -43,6 +50,7 @@ export default defineAppConfig({
       enable: false,
       key: 4,
       name: '酒店提前订弹窗',
+      quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642319',
@@ -51,7 +59,11 @@ export default defineAppConfig({
       enable: false,
       key: 5,
       name: '请求定位弹窗',
-      activityIds: ['com.baidu.mapframework.widget.BMBaseDialog'],
+      quickFind: true,
+      activityIds: [
+        'com.baidu.mapframework.widget.BMBaseDialog',
+        'com.baidu.baidumaps.MapsActivity',
+      ],
       rules: [
         {
           matches:
@@ -63,7 +75,31 @@ export default defineAppConfig({
             '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12660883',
         },
+        {
+          matches:
+            'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12909299',
+        },
       ],
+    },
+    {
+      enable: false,
+      key: 6,
+      name: '打车界面-新人红包弹窗',
+      quickFind: true,
+      activityIds: 'com.baidu.baidumaps.MapsActivity',
+      rules:
+        'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12909300',
+    },
+    {
+      enable: false,
+      key: 7,
+      name: '升级更新弹窗',
+      quickFind: true,
+      activityIds: 'com.baidu.baidumaps.MapsActivity',
+      rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12909385',
     },
   ],
 });
