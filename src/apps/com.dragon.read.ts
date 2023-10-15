@@ -7,17 +7,20 @@ export default defineAppConfig({
     {
       key: 0,
       name: '阅读页面底部广告',
+      activityIds: [
+        'com.dragon.read.ad.banner.ui',
+        'com.dragon.read.reader.ReaderActivity',
+        'com.dragon.read.reader.ui.ReaderActivity',
+      ],
       rules: [
         {
-          activityIds: 'com.dragon.read.ad.banner.ui',
           matches: '@[clickable=true] TextView[text="关闭此条广告"]',
         },
         {
-          activityIds: 'com.dragon.read.reader.ReaderActivity',
           matches: '@ImageView - LinearLayout TextView[text="广告"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12908719',
         },
         {
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches:
             '[id="com.dragon.read:id/root_view"] >n ViewGroup > @FrameLayout[id!=null][clickable=true] > ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12716444',
