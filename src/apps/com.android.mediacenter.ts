@@ -10,8 +10,18 @@ export default defineAppConfig({
       activityIds: 'com.android.mediacenter.PageActivity',
       matchLauncher: true,
       quickFind: true,
-      rules: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12901417',
+      rules: [
+        {
+          key: 0,
+          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12901417',
+        },
+        {
+          key: 1,
+          matches: '[id="com.android.mediacenter:id/jump"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12908742',
+        },
+      ],
     },
   ],
 });
