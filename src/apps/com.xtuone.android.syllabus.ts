@@ -13,6 +13,7 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: 0,
           matches:
             '[id="com.byted.pangle:id/tt_splash_skip_btn"||id="com.xtuone.android.syllabus:id/ignore_top"||text^="跳过"]',
           snapshotUrls: [
@@ -20,6 +21,11 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12840736',
             'https://gkd-kit.gitee.io/import/12840737',
           ],
+        },
+        {
+          key: 1,
+          matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
+          snapshotUrls: ['https://gkd-kit.songe.li/import/12909593'],
         },
       ],
     },
