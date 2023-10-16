@@ -1,6 +1,6 @@
 # 华为主题
 
-存在 9 规则组 - [com.huawei.android.thememanager](/src/apps/com.huawei.android.thememanager.ts)
+存在 10 规则组 - [com.huawei.android.thememanager](/src/apps/com.huawei.android.thememanager.ts)
 
 ## 开屏广告
 
@@ -48,3 +48,7 @@
 ## 更新弹窗
 
 - [快照-0](https://gkd-kit.songe.li/import/12727318)
+
+## 请求通知权限弹窗
+
+- [快照-0](https://gkd-kit.songe.li/import/12918192)

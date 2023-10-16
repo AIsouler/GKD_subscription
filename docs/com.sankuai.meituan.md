@@ -37,6 +37,8 @@
 
 ## 请求定位弹窗
 
-默认禁用 - 首页-顶部-打开位置开关，点击右侧x关闭
+默认禁用 - 首页/外卖界面-【打开位置开关弹窗】-点击右侧x关闭
 
 - [快照-0](https://gkd-kit.gitee.io/import/12874657)
+- [快照-1](https://gkd-kit.gitee.io/import/12910210)
+- [快照-2](https://gkd-kit.gitee.io/import/12910211)
