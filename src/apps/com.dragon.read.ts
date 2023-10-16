@@ -39,7 +39,7 @@ export default defineAppConfig({
       name: '右侧悬浮红包',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules:
-        '[id="com.dragon.read:id/action_bar_root"] >n RelativeLayout > ImageView[id!=null][clickable=true]',
+        '[id="android:id/content"] > FrameLayout > RelativeLayout[childCount=1][clickable=true] > RelativeLayout[childCount=3] > ImageView[id!=null][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12716506',
     },
     {
