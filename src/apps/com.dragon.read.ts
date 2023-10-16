@@ -43,6 +43,20 @@ export default defineAppConfig({
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12716506',
     },
     {
+      key: 3,
+      name: '优惠券弹窗',
+      rules: [
+        {
+          key: 0,
+          name: '电商惊喜券',
+          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          matches:
+            '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"] ',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12910159',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 10,
       name: '请求通知权限弹窗',
