@@ -12,6 +12,7 @@ export default defineAppConfig({
         'com.jdd.motorfans.MTMainActivity',
         'com.jdd.motorfans.modules.detail.DetailActivity2',
         'com.jdd.motorfans.search.SearchMainActivity',
+        'com.jdd.motorfans.modules.base.FragmentContainerActivity',
         'com.miui.home.launcher.Launcher',
       ],
       rules: [
@@ -24,6 +25,7 @@ export default defineAppConfig({
             'https://gkd-kit.songe.li/import/12798654',
             'https://gkd-kit.songe.li/import/12878843',
             'https://gkd-kit.songe.li/import/12840710',
+            'https://gkd-kit.songe.li/import/12913956', // com.jdd.motorfans.modules.base.FragmentContainerActivity
           ],
           exampleUrls:
             'https://user-images.githubusercontent.com/44717382/270852019-b0296eaa-a378-49b3-877b-acefca2a7d58.gif',
