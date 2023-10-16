@@ -11,6 +11,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^17.7.0
     version: 17.7.0
+  '@commitlint/types':
+    specifier: ^17.4.4
+    version: 17.4.4
   '@gkd-kit/selector':
     specifier: 0.0.14
     version: 0.0.14

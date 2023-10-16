@@ -23,6 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/types": "^17.4.4",
     "@gkd-kit/selector": "0.0.14",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.4.2",
