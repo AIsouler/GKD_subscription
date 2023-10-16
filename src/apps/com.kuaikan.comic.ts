@@ -17,5 +17,12 @@ export default defineAppConfig({
       rules: '[text*="青少年模式"] +2 [id="com.kuaikan.comic:id/cancel"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12565678',
     },
+    {
+      key: 2,
+      name: '漫画界面-底部广告弹窗',
+      activityIds: 'com.kuaikan.comic.infinitecomic.view.ComicInfiniteActivity',
+      rules: '[id="com.kuaikan.comic:id/adBannerClose"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12910268',
+    },
   ],
 });
