@@ -153,5 +153,13 @@ export default defineAppConfig({
       rules: '@[text="以后再说"] + [text="立即更新"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12727318',
     },
+    {
+      key: 9,
+      name: '请求通知权限弹窗',
+      activityIds:
+        'com.huawei.android.thememanager.base.widget.ActivatePushDialog',
+      rules: '@[text="取消"] < * - * >n [text="开启消息通知"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/12918192',
+    },
   ],
 });
