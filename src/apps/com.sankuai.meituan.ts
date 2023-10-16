@@ -89,10 +89,20 @@ export default defineAppConfig({
       enable: false,
       key: 7,
       name: '请求定位弹窗',
-      desc: '首页-顶部-打开位置开关，点击右侧x关闭',
-      activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-      rules: '[id ="com.sankuai.meituan:id/location_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12874657',
+      desc: '首页/外卖界面-【打开位置开关弹窗】-点击右侧x关闭',
+      activityIds: [
+        'com.meituan.android.pt.homepage.activity.MainActivity',
+        'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
+      ],
+      rules: [
+        '[id ="com.sankuai.meituan:id/location_close"]',
+        '[id ="com.sankuai.meituan:id/location_layer_close"]',
+      ],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12874657',
+        'https://gkd-kit.gitee.io/import/12910210',
+        'https://gkd-kit.gitee.io/import/12910211',
+      ],
     },
   ],
 });
