@@ -28,5 +28,14 @@ export default defineAppConfig({
       rules: '[id="com.dw.btime:id/old_baby_close"][clickable=true]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12889450',
     },
+    {
+      key: 3,
+      name: '更新提示',
+      quickFind: true,
+      activityIds: 'com.dw.btime.base_library.dialog.DWBaseDialog',
+      rules:
+        'TextView[text="立即更新"] -3 [id="com.dw.btime:id/iv_upgrade_close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12911011',
+    },
   ],
 });
