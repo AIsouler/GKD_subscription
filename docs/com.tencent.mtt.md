@@ -8,12 +8,14 @@
 
 ## 小说阅读页面-卡片广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12907446)
-- [快照-1](https://gkd-kit.gitee.io/import/12907445)
-- [快照-2](https://gkd-kit.gitee.io/import/12907654)
-- [快照-3](https://gkd-kit.gitee.io/import/12907651)
-- [快照-4](https://gkd-kit.gitee.io/import/12907655)
-- [快照-5](https://gkd-kit.gitee.io/import/12907653)
+默认禁用
+
+- [快照-0](https://gkd-kit.gitee.io/import/12907654)
+- [快照-1](https://gkd-kit.gitee.io/import/12907651)
+- [快照-2](https://gkd-kit.gitee.io/import/12907655)
+- [快照-3](https://gkd-kit.gitee.io/import/12907653)
+- [快照-4](https://gkd-kit.gitee.io/import/12907446)
+- [快照-5](https://gkd-kit.gitee.io/import/12907445)
 
 ## 小说阅读页面-视频广告
 

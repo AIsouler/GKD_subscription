@@ -1,6 +1,6 @@
 # QQ
 
-存在 13 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 15 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -56,6 +56,10 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12855441)
 
+## 我的等级-浮窗广告
+
+- [快照-0](https://gkd-kit.songe.li/import/12914734)
+
 ## 自动勾选原图
 
 默认禁用 - 发送图片时自动勾选原图
@@ -82,3 +86,9 @@
 点击右下角跳过
 
 - [快照-0](https://gkd-kit.songe.li/import/12877215)
+- [快照-1](https://gkd-kit.songe.li/import/12919195)
+
+## 黄钻-弹窗广告
+
+- [快照-0](https://gkd-kit.songe.li/import/12914978)
+- [快照-1](https://gkd-kit.songe.li/import/12914886)

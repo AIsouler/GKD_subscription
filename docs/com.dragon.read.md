@@ -1,6 +1,6 @@
 # 番茄免费小说
 
-存在 5 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
+存在 6 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
 
 ## 阅读页面底部广告
 
@@ -14,6 +14,10 @@
 ## 右侧悬浮红包
 
 - [快照-0](https://gkd-kit.gitee.io/import/12716506)
+
+## 优惠券弹窗
+
+- [快照-0](https://gkd-kit.songe.li/import/12910159)
 
 ## 请求通知权限弹窗
 

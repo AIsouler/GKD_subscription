@@ -6,6 +6,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12472612)
 - [快照-1](https://gkd-kit.gitee.io/import/12503773)
+- [快照-2](https://gkd-kit.gitee.io/import/12917990)
 
 ## 卡片广告
 
