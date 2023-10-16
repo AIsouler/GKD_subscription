@@ -7,24 +7,18 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchLauncher: true,
+      quickFind: true,
       activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
       rules: [
         {
-          matches:
-            'TextView[text*="互动广告"] < LinearLayout < FrameLayout + FrameLayout > TextView[text="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700227',
-        },
-        {
-          matches: 'TextView[text="广告"] LinearLayout + TextView[text="跳过"]',
-        },
-        {
-          matches: '@[text="跳过"] - LinearLayout > [text="广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700122',
-        },
-        {
-          matches:
-            '@[text="跳过"] < FrameLayout - FrameLayout >(2) [text="广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700541',
+          matches: 'FrameLayout[id=null] > TextView[text="跳过"][id=null]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12700227',
+            'https://gkd-kit.gitee.io/import/12700122',
+            'https://gkd-kit.gitee.io/import/12700541',
+            'https://gkd-kit.gitee.io/import/12910953',
+          ],
         },
       ],
     },
