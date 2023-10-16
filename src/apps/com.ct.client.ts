@@ -7,9 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchLauncher: true,
+      quickFind: true,
       activityIds: [
         'com.ct.client.activity.MainActivity',
-        'com.miui.home.launcher.Launcher',
         'com.ct.client.activity.SplashActivity',
       ],
       rules: '[id="com.ct.client:id/tvSkip"||id="com.ct.client:id/btSkip"]',
@@ -22,6 +23,7 @@ export default defineAppConfig({
       key: 1,
       name: '用户引导',
       enable: false,
+      quickFind: true,
       activityIds: 'com.ct.client.activity.UserGuideActivity',
       rules: '[id="com.ct.client:id/tvSkip"]',
       snapshotUrls: ['https://gkd-kit.songe.li/import/12508971'],
@@ -29,6 +31,8 @@ export default defineAppConfig({
     {
       key: 2,
       name: '首页-取消升级',
+      enable: false,
+      quickFind: true,
       activityIds: [
         'com.ct.client.activity.MainActivity',
         'com.ct.client.common.ConfirmDialogActivity',
@@ -38,10 +42,28 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '首页-弹窗广告',
-      activityIds: ['com.ct.client.common.ConfirmDialogActivity'],
-      rules: 'RelativeLayout > ImageView[desc="关闭"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12819676'],
+      name: '浮窗广告',
+      desc: '会出现在首页、查询办理页面',
+      quickFind: true,
+      activityIds: [
+        'com.ct.client.common.ConfirmDialogActivity',
+        'com.ct.client.activity.MainActivity',
+      ],
+      rules: 'ImageView[id="com.ct.client:id/close"]',
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12819676',
+        'https://gkd-kit.songe.li/import/12913735',
+      ],
+    },
+    {
+      key: 4,
+      name: '业务办理-弹窗广告',
+      // quickFind: true, 实机测试使用无法跳过
+      activityIds: [
+        'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
+      ],
+      rules: 'Image[text="tishi-close"]',
+      snapshotUrls: ['https://gkd-kit.songe.li/import/12913804'],
     },
   ],
 });
