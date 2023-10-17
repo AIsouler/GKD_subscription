@@ -37,10 +37,18 @@ export default defineAppConfig({
     {
       key: 1,
       name: '活动弹窗',
+      desc: '关闭各种活动弹窗信息',
+      quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
-      rules:
-        '@[id="com.baidu.netdisk:id/iv_close"] + [id="com.baidu.netdisk:id/cl_content"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642505',
+      rules: [
+        {
+          matches: '[id="com.baidu.netdisk:id/iv_close"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642505',
+            'https://gkd-kit.gitee.io/import/12923937',
+          ],
+        },
+      ],
     },
     {
       key: 2,
@@ -76,11 +84,26 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '更新提醒',
+      name: '更新提醒,通知权限',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
-      rules:
-        '[id="com.baidu.netdisk:id/dialog_button_cancel" && text="下次再说"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12863984',
+      rules: '[id="com.baidu.netdisk:id/dialog_button_cancel"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12863984',
+        'https://gkd-kit.gitee.io/import/12923936',
+      ],
+    },
+    {
+      key: 7,
+      name: '续费横幅提示',
+      desc: '关闭续费横幅提示',
+      quickFind: true,
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules: [
+        {
+          matches: 'View[desc="续费"] + ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12924036',
+        },
+      ],
     },
     {
       enable: false,
