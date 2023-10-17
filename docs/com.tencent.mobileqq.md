@@ -1,6 +1,6 @@
 # QQ
 
-存在 15 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 16 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -92,3 +92,8 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12914978)
 - [快照-1](https://gkd-kit.songe.li/import/12914886)
+
+## 好友动态-为你推荐
+
+- [快照-0](https://gkd-kit.songe.li/import/12929620)
+- [快照-1](https://gkd-kit.songe.li/import/12929619)

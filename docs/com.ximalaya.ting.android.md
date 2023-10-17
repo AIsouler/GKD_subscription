@@ -12,9 +12,10 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12472620)
 
-## 播放页面-暂停按钮下面的广告
+## 播放页面-播放控制区域的广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12506218)
+- [快照-1](https://gkd-kit.songe.li/import/12927110)
 
 ## 播放页面-底部推荐列表-夹杂广告
 

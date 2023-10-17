@@ -4,6 +4,10 @@
 
 ## 开屏广告
 
+- [快照-0](https://gkd-kit.songe.li/import/12924598)
+- [快照-1](https://gkd-kit.songe.li/import/12909174)
+- [快照-2](https://gkd-kit.songe.li/import/12909201)
+
 ## 地图上方黄页横幅
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642301)
@@ -34,11 +38,12 @@
 - [快照-1](https://gkd-kit.gitee.io/import/12660883)
 - [快照-2](https://gkd-kit.songe.li/import/12909299)
 
-## 打车界面-新人红包弹窗
+## 打车界面-弹窗广告
 
 默认禁用
 
 - [快照-0](https://gkd-kit.songe.li/import/12909300)
+- [快照-1](https://gkd-kit.songe.li/import/12930699)
 
 ## 升级更新弹窗
 
