@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.72.0](https://github.com/gkd-kit/subscription/compare/v1.71.0...v1.72.0) (2023-10-17)
+
+
+### Features
+
+* **QQ:** 好友动态-为你推荐 ([#1182](https://github.com/gkd-kit/subscription/issues/1182)) ([c3f5c04](https://github.com/gkd-kit/subscription/commit/c3f5c04ea0a674c70bcd0cf30166d775f96e78db))
+* **华为天气:** 开屏广告 ([#1180](https://github.com/gkd-kit/subscription/issues/1180)) ([3217115](https://github.com/gkd-kit/subscription/commit/3217115748ee1fae6392267ecac0059361e8c9d3)), closes [#1178](https://github.com/gkd-kit/subscription/issues/1178)
+* **叨鱼:** 开屏广告 ([#1187](https://github.com/gkd-kit/subscription/issues/1187)) ([2240f57](https://github.com/gkd-kit/subscription/commit/2240f5787412c942ac0c5a05dc944d2c90d91853)), closes [#1184](https://github.com/gkd-kit/subscription/issues/1184)
+* **喜马拉雅:** 播放页面-播放控制区域的广告（完善规则） ([#1170](https://github.com/gkd-kit/subscription/issues/1170)) ([ef775b6](https://github.com/gkd-kit/subscription/commit/ef775b62aecd2e60fb3fd1b87336d8c04389e1af))
+* **微信:** 网页版文件传输助手扫码-规则优化 ([#1148](https://github.com/gkd-kit/subscription/issues/1148)) ([2dff2c0](https://github.com/gkd-kit/subscription/commit/2dff2c0e4799981a69ee77802538675eecb34c23)), closes [#1147](https://github.com/gkd-kit/subscription/issues/1147)
+* **微博:** 评论区博主内容推荐规则优化 ([#1186](https://github.com/gkd-kit/subscription/issues/1186)) ([1f333fd](https://github.com/gkd-kit/subscription/commit/1f333fd7a789c89fde717922c535ac026cc64f27)), closes [#1181](https://github.com/gkd-kit/subscription/issues/1181)
+* **我的长沙:** 开屏广告 ([#1171](https://github.com/gkd-kit/subscription/issues/1171)) ([4d662ce](https://github.com/gkd-kit/subscription/commit/4d662ce280011b6cd1bd53c1f0fa3d489afa14e8))
+* **拷贝漫画:** 崩溃修复, 新的activityIds和弹窗 ([#1167](https://github.com/gkd-kit/subscription/issues/1167)) ([658287f](https://github.com/gkd-kit/subscription/commit/658287f1257aed5b6bbd78884c9019ef6d6c5959))
+* **瑞幸咖啡:** 超值换购, quickFind, matchLauncher ([#1157](https://github.com/gkd-kit/subscription/issues/1157)) ([b4ded34](https://github.com/gkd-kit/subscription/commit/b4ded34fa65c756a24b3555ecf0fb092bda1c4ea))
+* **百度地图:** 打车界面-弹窗广告; 开屏广告规则优化 ([#1185](https://github.com/gkd-kit/subscription/issues/1185)) ([89e2f6e](https://github.com/gkd-kit/subscription/commit/89e2f6ec152d6345f7f224e387e40a8519bd67f0)), closes [#1059](https://github.com/gkd-kit/subscription/issues/1059)
+* **百度网盘:** 横幅续费提示, 权限提示 ([#1163](https://github.com/gkd-kit/subscription/issues/1163)) ([65821a5](https://github.com/gkd-kit/subscription/commit/65821a511a8147b63433ba4de61f58192b570104))
+* **糖心Vlog:** 开屏广告,广告弹窗,公告弹窗 ([#1169](https://github.com/gkd-kit/subscription/issues/1169)) ([b8891a2](https://github.com/gkd-kit/subscription/commit/b8891a2534cb9cd81740230fcac1b86d05ddd538))
+* **芒果TV:** 开屏广告-完善规则 ([#1173](https://github.com/gkd-kit/subscription/issues/1173)) ([aadd7ef](https://github.com/gkd-kit/subscription/commit/aadd7efd433adf91f1d90ffb64f3c652802ab9a8))
+* **蜜雪冰城:** 主界面弹窗广告 ([#1179](https://github.com/gkd-kit/subscription/issues/1179)) ([16f561d](https://github.com/gkd-kit/subscription/commit/16f561d4d06f3fe7136ddaec5cdd2c75650c1b3e))
+* **蜻蜓点金:** 开屏广告, 通知权限 ([#1165](https://github.com/gkd-kit/subscription/issues/1165)) ([34a6de3](https://github.com/gkd-kit/subscription/commit/34a6de319889dfbfc3663065e195489bf9b2942f)), closes [#1158](https://github.com/gkd-kit/subscription/issues/1158)
+* **讯飞输入法:** 开屏广告 ([#1168](https://github.com/gkd-kit/subscription/issues/1168)) ([35d413c](https://github.com/gkd-kit/subscription/commit/35d413c66544c7cf15f71872b36172c489cedb5a)), closes [#1166](https://github.com/gkd-kit/subscription/issues/1166)
+* **语雀:** 关闭横幅 ([#1161](https://github.com/gkd-kit/subscription/issues/1161)) ([25b6236](https://github.com/gkd-kit/subscription/commit/25b623639906fef44f72fb31cbfc3b5bacab315f))
+* **酷安:** 开屏广告-优化规则 ([#1172](https://github.com/gkd-kit/subscription/issues/1172)) ([ace568b](https://github.com/gkd-kit/subscription/commit/ace568bb203edcc0460166da819d34bd6fc713d7))
+* **闪动校园:** 开屏广告 ([#1164](https://github.com/gkd-kit/subscription/issues/1164)) ([e07dc58](https://github.com/gkd-kit/subscription/commit/e07dc583fb712ac7a553c5a644253ac8a5df8d95)), closes [#1156](https://github.com/gkd-kit/subscription/issues/1156)
+* **阿里网盘:** 自动签到 ([#1177](https://github.com/gkd-kit/subscription/issues/1177)) ([c642d5b](https://github.com/gkd-kit/subscription/commit/c642d5bfd37aa13e963ff14d4f8545789b317892))
+
 ## [1.71.0](https://github.com/gkd-kit/subscription/compare/v1.70.0...v1.71.0) (2023-10-16)
 
 
