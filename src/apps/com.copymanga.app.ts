@@ -29,6 +29,7 @@ export default defineAppConfig({
       name: '内部弹窗广告',
       matchLauncher: true,
       activityIds: ['com.copymanga.app.MainActivity'],
+      delay: 500,
       rules: [
         {
           activityIds: 'com.kwad.components.ad.interstitial',
@@ -47,6 +48,7 @@ export default defineAppConfig({
         },
         {
           matches: 'ImageView + FrameLayout + FrameLayout > ImageView',
+
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12504520',
             'https://gkd-kit.gitee.io/import/12661019',
@@ -59,8 +61,20 @@ export default defineAppConfig({
         },
         {
           matches:
-            'TextView[text="立即申请"] < FrameLayout <2 FrameLayout -2 FrameLayout',
+            'TextView[text.length=4] < FrameLayout[childCount>=1] <2 FrameLayout[childCount>=2] -2 FrameLayout',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12892156',
+        },
+        {
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[text="反馈"] -2 @View - Image',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12925052',
+        },
+        {
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[text="反馈"] -4 @View < View[childCount=7]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12925095',
         },
       ],
     },
