@@ -12,7 +12,7 @@ export default defineAppConfig({
         'com.yuque.mobile.android.app.rn.activity.ReactNativeMainActivity',
       rules: [
         {
-          matches: 'TextView[text="了解更多"] - ViewGroup[clickable=true]',
+          matches: 'TextView[text="了解更多"] + ViewGroup[clickable=true]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12911014',
         },
       ],
