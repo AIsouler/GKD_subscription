@@ -36,10 +36,23 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '播放页面-暂停按钮下面的广告',
+      name: '播放页面-播放控制区域的广告',
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      rules: '[id="com.ximalaya.ting.android:id/x_play_ad_banner_close_real"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12506218',
+      rules: [
+        {
+          key: 0,
+          name: '暂停按钮下方的广告',
+          matches:
+            '[id="com.ximalaya.ting.android:id/x_play_ad_banner_close_real"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12506218',
+        },
+        {
+          key: 1,
+          name: '喜马小游戏广告',
+          matches: '[id="com.ximalaya.ting.android:id/host_game_close_tv"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12927110',
+        },
+      ],
     },
     {
       key: 2,
