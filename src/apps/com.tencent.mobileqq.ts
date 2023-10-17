@@ -224,5 +224,24 @@ export default defineAppConfig({
         'https://gkd-kit.songe.li/import/12914886',
       ],
     },
+    {
+      key: 15,
+      name: '好友动态-为你推荐',
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[text="为你推荐"] + ImageView[id!=null][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12929620',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches:
+            '@LinearLayout[id!=null][clickable=true] > LinearLayout > [text="减少此类推荐"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12929619',
+        },
+      ],
+    },
   ],
 });
