@@ -6,6 +6,7 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12818335)
 - [快照-1](https://gkd-kit.songe.li/import/12893573)
+- [快照-2](https://gkd-kit.songe.li/import/12923776)
 
 ## 更新弹窗
 
