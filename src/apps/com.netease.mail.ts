@@ -9,7 +9,10 @@ export default defineAppConfig({
       name: '开屏广告',
       matchLauncher: true,
       quickFind: true,
-      activityIds: 'com.netease.mail.biz.main.MainITabActivity',
+      activityIds: [
+        'com.netease.mail.biz.main.MainITabActivity',
+        'com.netease.mail.biz.main.SplashActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -20,7 +23,10 @@ export default defineAppConfig({
           key: 1,
           matches:
             '[id="com.netease.mail:id/ad_placeholder"] >n [text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12893573',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/12893573',
+            'https://gkd-kit.songe.li/import/12923776', // com.netease.mail.biz.main.SplashActivity
+          ],
         },
       ],
     },
