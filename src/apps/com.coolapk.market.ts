@@ -12,11 +12,18 @@ export default defineAppConfig({
         'com.coolapk.market.view.splash.SplashActivity',
         'com.coolapk.market.view.main.MainActivity',
       ],
-      rules: ['[id$=":id/tt_splash_skip_btn"]', 'TextView[text^="跳过"]'],
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12472612',
-        'https://gkd-kit.gitee.io/import/12503773',
-        'https://gkd-kit.gitee.io/import/12917990', // TextView
+      rules: [
+        {
+          key: 0,
+          matches: '[id$=":id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12503773',
+        },
+        {
+          key: 1,
+          matches:
+            '[id="com.coolapk.market:id/ad_container"] >n [text^="跳过"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12917990',
+        },
       ],
     },
     {
