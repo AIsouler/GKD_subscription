@@ -14,7 +14,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12472612',
         },
         {
-          matches: 'TextView[text!=null] - [text^="跳过"]',
+          matches: '[id="com.hunantv.imgo.activity:id/ivAd"] >n [text^="跳过"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12472612',
         },
       ],
