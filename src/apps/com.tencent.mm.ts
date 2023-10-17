@@ -295,6 +295,7 @@ export default defineAppConfig({
     {
       key: 11,
       name: '网页版文件传输助手扫码自动授权',
+      quickFind: true,
       activityIds: 'com.tencent.mm.ui.LauncherUI',
       rules: '[text="打开网页版文件传输助手"] + * > Button[text="打开"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12793745',
