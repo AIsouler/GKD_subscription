@@ -7,10 +7,13 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      // quickFind: true, 会导致实机无法跳过
       activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: [
-        '@TextView[text^=`跳过`] + TextView[text=`广告`]',
-        'ImageView[clickable=false] + TextView[text^="跳过"][clickable=true]', // 1689423368140
+      rules: ['TextView[text^="跳过"]'],
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12924598',
+        'https://gkd-kit.songe.li/import/12909174',
+        'https://gkd-kit.songe.li/import/12909201',
       ],
     },
     {
@@ -85,12 +88,18 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '打车界面-新人红包弹窗',
+      name: '打车界面-弹窗广告',
       quickFind: true,
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
+      activityIds: [
+        'com.baidu.baidumaps.MapsActivity',
+        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
+      ],
       rules:
         'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12909300',
+      snapshotUrls: [
+        'https://gkd-kit.songe.li/import/12909300',
+        'https://gkd-kit.songe.li/import/12930699',
+      ],
     },
     {
       enable: false,
