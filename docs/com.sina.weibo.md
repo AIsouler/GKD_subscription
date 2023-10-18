@@ -1,6 +1,6 @@
 # 微博
 
-存在 14 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
+存在 15 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
 
 ## 开屏广告
 
@@ -75,3 +75,9 @@
 默认禁用 - 自动点击x按钮
 
 - [快照-0](https://gkd-kit.songe.li/import/12750118)
+
+## 请求定位权限弹窗
+
+自动点击【以后再说】
+
+- [快照-0](https://gkd-kit.songe.li/import/13003311)

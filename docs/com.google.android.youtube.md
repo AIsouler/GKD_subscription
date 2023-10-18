@@ -5,6 +5,7 @@
 ## 视频播放-跳过广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12565261)
+- [快照-1](https://gkd-kit.gitee.io/import/13024980)
 
 ## 视频播放-赞助商广告
 
