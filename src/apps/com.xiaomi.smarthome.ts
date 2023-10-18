@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            'RelativeLayout[id=null] > ImageView[id!=null] + ImageView[clickable=true][id!=null]',
+            'RelativeLayout[childCount=2] > ImageView[id!=null] + ImageView[clickable=true][id!=null]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12639658'],
         },
       ],
