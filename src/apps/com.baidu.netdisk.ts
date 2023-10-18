@@ -11,6 +11,7 @@ export default defineAppConfig({
       activityIds: [
         'com.baidu.netdisk.ui.Navigate',
         'com.baidu.netdisk.ui.DefaultMainActivity',
+        'com.baidu.netdisk.ui.MainActivity',
       ],
       rules: [
         {
@@ -18,6 +19,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12472597',
             'https://gkd-kit.songe.li/import/12877626',
+            'https://gkd-kit.songe.li/import/12988458',
           ],
         },
         {
