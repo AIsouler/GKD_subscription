@@ -22,11 +22,52 @@ export default defineAppConfig({
       key: 2,
       name: '软件升级提醒',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
+      quickFind: true,
       rules: [
         {
           matches:
             '[id="com.baidu.youavideo:id/tv_upgrade"] < LinearLayout +2 [id="com.baidu.youavideo:id/img_close"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12597916'],
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '悬浮窗',
+      desc: '关闭广告悬浮窗',
+      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
+      quickFind: true,
+      rules: [
+        {
+          matches: '[id="com.baidu.youavideo:id/img_operation_close"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12970088'],
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '评价',
+      desc: '点击下次再说',
+      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
+      quickFind: true,
+      rules: [
+        {
+          matches: '[id="com.baidu.youavideo:id/tv_next_time"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12970094'],
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '会员充值提示',
+      desc: '点击x关闭充值提示',
+      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            '[id="com.baidu.youavideo:id/tv_confirm_pay"] -5 [id="com.baidu.youavideo:id/img_close_dialog"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12970094'],
         },
       ],
     },
