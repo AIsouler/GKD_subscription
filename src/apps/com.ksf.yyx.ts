@@ -39,6 +39,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '插屏广告',
+      matchLauncher: true,
       activityIds: [
         'com.ksf.yyx.MainActivity',
         'com.sigmob.sdk.base.common.TransparentAdActivity',
@@ -52,8 +53,11 @@ export default defineAppConfig({
         },
         {
           matches:
-            '[id="com.ksf.yyx:id/ksad_container"] [text="广告"] <2 ViewGroup -2 ViewGroup > @ViewGroup[clickable=true][childCount=1] ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12775923',
+            '[id="com.ksf.yyx:id/ksad_container"] TextView[text="广告"] <2 ViewGroup -n ViewGroup[childCount=1] > @ViewGroup[childCount=1 && clickable=true] > ImageView',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12775923',
+            'https://gkd-kit.songe.li/import/12998899',
+          ],
         },
         {
           matches: '[id="ad_area"] [id="close_btn"][clickable=true]',
