@@ -178,5 +178,13 @@ export default defineAppConfig({
         '[id="com.sina.weibo:id/floating_window"] >2 [id="com.sina.weibo:id/close"]',
       snapshotUrls: ['https://gkd-kit.songe.li/import/12750118'],
     },
+    {
+      key: 14,
+      name: '请求定位权限弹窗',
+      desc: '自动点击【以后再说】',
+      activityIds: 'com.sina.weibo.utils.WeiboDialog$CustomDialog',
+      rules: '@[text="以后再说"] + * + [text="去开启"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/13003311',
+    },
   ],
 });
