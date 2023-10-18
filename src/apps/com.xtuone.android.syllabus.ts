@@ -33,13 +33,15 @@ export default defineAppConfig({
       key: 1,
       name: '首页banner广告',
       activityIds: ['com.xtuone.android.friday.MainFragmentActivity'],
-      rules: [
-        {
-          matches:
-            '[id="com.xtuone.android.syllabus:id/treehole_banner_close"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12840733'],
-        },
-      ],
+      rules: '[id="com.xtuone.android.syllabus:id/treehole_banner_close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12840733',
+    },
+    {
+      key: 2,
+      name: '课程表界面广告',
+      activityIds: ['com.xtuone.android.friday.MainFragmentActivity'],
+      rules: '[id="com.xtuone.android.syllabus:id/imgv_close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12999642',
     },
   ],
 });
