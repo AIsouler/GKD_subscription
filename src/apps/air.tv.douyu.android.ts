@@ -49,8 +49,12 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: 'ImageView < ViewGroup + @ViewGroup > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892825',
+          matches:
+            'ImageView < ViewGroup + @ViewGroup[childCount=1] > ImageView', //添加childCount=1避免【全屏播放-设置】误触
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12892825',
+            'https://gkd-kit.gitee.io/import/13037239',
+          ],
         },
         {
           key: 1,
