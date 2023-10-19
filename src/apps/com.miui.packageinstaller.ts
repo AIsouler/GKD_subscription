@@ -123,10 +123,20 @@ export default defineAppConfig({
             'https://gkd-kit.songe.li/import/12910080',
           ],
         },
+        {
+          key: 1,
+          desc: '点击【继续更新】',
+          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          matches: '@[text="继续更新"] + [text="取消更新"]',
+          snapshotUrls: [
+            'https://gkd-kit.songe.li/import/13024731',
+            'https://gkd-kit.songe.li/import/13038465',
+          ],
+        },
 
         // 需勾选【已了解此安装包未经安全检测】才能继续更新
         {
-          key: 1,
+          key: 2,
           desc: '勾选【已了解此安装包未经安全检测】',
           activityIds: [
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
@@ -139,18 +149,10 @@ export default defineAppConfig({
             'https://gkd-kit.songe.li/import/13024731', // 已勾选
           ],
         },
-        {
-          preKeys: 1,
-          key: 2,
-          desc: '点击【继续更新',
-          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
-          matches: '@[text="继续更新"] + [text="取消更新"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13024731',
-        },
 
         // 更新完成
         {
-          preKeys: [0, 2],
+          preKeys: [0, 1],
           key: 3,
           desc: '点击【完成】',
           activityIds:
