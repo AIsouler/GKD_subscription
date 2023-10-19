@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.74.0](https://github.com/gkd-kit/subscription/compare/v1.73.0...v1.74.0) (2023-10-19)
+
+
+### Features
+
+* **kds宽带山:** 应用内广告卡片 ([#1244](https://github.com/gkd-kit/subscription/issues/1244)) ([0baca14](https://github.com/gkd-kit/subscription/commit/0baca1450b015c9cd4fd5b8ec7613c5f188e194b)), closes [#1231](https://github.com/gkd-kit/subscription/issues/1231)
+* **qq邮箱:** 关闭开启通知提醒 ([#1243](https://github.com/gkd-kit/subscription/issues/1243)) ([ee0a2eb](https://github.com/gkd-kit/subscription/commit/ee0a2ebc939f414138b211fd89b0200a609f5e30))
+* **中国电信:** 消息-开启消息通知、浮窗广告规则优化 ([#1247](https://github.com/gkd-kit/subscription/issues/1247)) ([582af2e](https://github.com/gkd-kit/subscription/commit/582af2e05c7262d1863b50d9d0fb912bee33fbe6))
+* **作业帮家长版:** 赏好评弹窗 ([#1245](https://github.com/gkd-kit/subscription/issues/1245)) ([3f54aaf](https://github.com/gkd-kit/subscription/commit/3f54aafd63e9a4d9f37a5072a616d26ed5fe3f55))
+* **喵上漫画:** 开屏广告-规则优化 ([#1246](https://github.com/gkd-kit/subscription/issues/1246)) ([cdc1a03](https://github.com/gkd-kit/subscription/commit/cdc1a0372998f2fb03695b8513da82e2a1741d44))
+* **应用包管理组件:** 自动更新应用-规则优化 ([#1234](https://github.com/gkd-kit/subscription/issues/1234)) ([74a17ae](https://github.com/gkd-kit/subscription/commit/74a17aef2c7515d95f64504c2bf6522e82bf460d))
+* **应用安装器:** 自动安装应用 ([#1236](https://github.com/gkd-kit/subscription/issues/1236)) ([47d06ca](https://github.com/gkd-kit/subscription/commit/47d06ca691a16e511adf17d1c8e77338071a408c))
+* **微博:** 评论区博主内容推荐-误触; 请求定位权限弹窗 ([#1228](https://github.com/gkd-kit/subscription/issues/1228)) ([567308a](https://github.com/gkd-kit/subscription/commit/567308a55b26fa89dae9208f45e5038ce2207127))
+* **游民星空:** 开屏广告-规则优化 ([#1238](https://github.com/gkd-kit/subscription/issues/1238)) ([0919cd5](https://github.com/gkd-kit/subscription/commit/0919cd5e95c82d4dfc6b2cba52e4f9f59107a268))
+* **百度贴吧:** 帖子评论区广告卡片-规则优化 ([#1242](https://github.com/gkd-kit/subscription/issues/1242)) ([a89ff77](https://github.com/gkd-kit/subscription/commit/a89ff773be8d049c8137de52cb4057a012d6932d))
+* **盯盯拍:** 开屏广告 ([#1240](https://github.com/gkd-kit/subscription/issues/1240)) ([1353608](https://github.com/gkd-kit/subscription/commit/135360830cdfccbbe983e4be5b915efaa0cac088)), closes [#1060](https://github.com/gkd-kit/subscription/issues/1060)
+* **腾讯视频:** 视频播放时的广告-规则优化 ([#1241](https://github.com/gkd-kit/subscription/issues/1241)) ([f1ea78a](https://github.com/gkd-kit/subscription/commit/f1ea78aa448d83e1e9a4829f6eb4966372518311))
+* **菜鸟:** 寄包裹-弹窗广告、升级提示 ([#1239](https://github.com/gkd-kit/subscription/issues/1239)) ([b860b86](https://github.com/gkd-kit/subscription/commit/b860b8688f1dcb9d076f25d33a2b454d1e3085cf))
+* **阿里网盘:** 自动签到-规则优化 ([#1235](https://github.com/gkd-kit/subscription/issues/1235)) ([36ef78b](https://github.com/gkd-kit/subscription/commit/36ef78bef2573bfec5b3abb45a70d47dbddbb3c2))
+
+
+### Bug Fixes
+
+* ** 斗鱼 :** 播放界面-全屏播放规则优化 ([#1232](https://github.com/gkd-kit/subscription/issues/1232)) ([36a6079](https://github.com/gkd-kit/subscription/commit/36a6079fba9ea5d3ddb9eb0ebaf6b4d7c36880a8)), closes [#1162](https://github.com/gkd-kit/subscription/issues/1162)
+
 ## [1.73.0](https://github.com/gkd-kit/subscription/compare/v1.72.0...v1.73.0) (2023-10-18)
 
 
