@@ -8,8 +8,16 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.gamersky.main.activity.LibMainActivity',
-      rules: 'View[clickable= true] + TextView[text ^= "跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12848922',
+      rules: [
+        {
+          matches: 'View[clickable= true] + TextView[text ^= "跳过"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/12848922',
+        },
+        {
+          matches: '[id="com.gamersky:id/jump"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13038181',
+        },
+      ],
     },
   ],
 });
