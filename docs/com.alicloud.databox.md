@@ -5,3 +5,4 @@
 ## 自动签到
 
 - [快照-0](https://gkd-kit.songe.li/import/12929318)
+- [快照-1](https://gkd-kit.songe.li/import/13038304)

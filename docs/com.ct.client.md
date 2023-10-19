@@ -1,6 +1,6 @@
 # 中国电信
 
-存在 5 规则组 - [com.ct.client](/src/apps/com.ct.client.ts)
+存在 6 规则组 - [com.ct.client](/src/apps/com.ct.client.ts)
 
 ## 开屏广告
 
@@ -25,7 +25,14 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12819676)
 - [快照-1](https://gkd-kit.songe.li/import/12913735)
+- [快照-2](https://gkd-kit.songe.li/import/13043345)
 
 ## 业务办理-弹窗广告
 
 - [快照-0](https://gkd-kit.songe.li/import/12913804)
+
+## 消息-开启消息通知
+
+自动点击关闭
+
+- [快照-0](https://gkd-kit.songe.li/import/13043522)

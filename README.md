@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v138
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v139
 
-当前订阅文件已适配 446 个 APP, 共有 970 规则组
+当前订阅文件已适配 450 个 APP, 共有 978 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -92,7 +92,7 @@ GKD 默认订阅规则
 | biubiu加速器 | [com.njh.biubiu](/docs/com.njh.biubiu.md) | 1 |
 | 薄荷健康 | [com.boohee.one](/docs/com.boohee.one.md) | 4 |
 | 步道乐跑 | [com.lptiyu.tanke](/docs/com.lptiyu.tanke.md) | 1 |
-| 菜鸟 | [com.cainiao.wireless](/docs/com.cainiao.wireless.md) | 3 |
+| 菜鸟 | [com.cainiao.wireless](/docs/com.cainiao.wireless.md) | 5/3启用/2禁用 |
 | 测测 | [com.xxwolo.cc5](/docs/com.xxwolo.cc5.md) | 1 |
 | 超级课程表 | [com.xtuone.android.syllabus](/docs/com.xtuone.android.syllabus.md) | 3 |
 | 春雨医生 | [me.chunyu.ChunyuDoctor](/docs/me.chunyu.ChunyuDoctor.md) | 2 |
@@ -109,6 +109,7 @@ GKD 默认订阅规则
 | 点心云 | [com.dianxinai.mobile](/docs/com.dianxinai.mobile.md) | 1 |
 | 滴滴 | [com.sdu.didi.psnger](/docs/com.sdu.didi.psnger.md) | 1 |
 | 钉钉 | [com.alibaba.android.rimet](/docs/com.alibaba.android.rimet.md) | 1 |
+| 盯盯拍 | [com.vyou.vcameraclient](/docs/com.vyou.vcameraclient.md) | 1 |
 | 懂车帝 | [com.ss.android.auto](/docs/com.ss.android.auto.md) | 7 |
 | 东方财富 | [com.eastmoney.android.berlin](/docs/com.eastmoney.android.berlin.md) | 3 |
 | 动卡空间 | [com.citiccard.mobilebank](/docs/com.citiccard.mobilebank.md) | 1 |
@@ -187,6 +188,7 @@ GKD 默认订阅规则
 | 金十数据 | [com.jin10](/docs/com.jin10.md) | 4/3启用/1禁用 |
 | 囧次元 | [com.viva.note](/docs/com.viva.note.md) | 3 |
 | 拷貝漫畫 | [com.copymanga.app](/docs/com.copymanga.app.md) | 4 |
+| kds宽带山 | [net.pchome.kds](/docs/net.pchome.kds.md) | 1 |
 | 肯德基 | [com.yek.android.kfc.activitys](/docs/com.yek.android.kfc.activitys.md) | 1 |
 | 快递100 | [com.Kingdee.Express](/docs/com.Kingdee.Express.md) | 1 |
 | 快对 | [com.kuaiduizuoye.scan](/docs/com.kuaiduizuoye.scan.md) | 2 |
@@ -258,7 +260,7 @@ GKD 默认订阅规则
 | 蜻蜓点金 | [zhongxinjiantou.szkingdom.android.newphone](/docs/zhongxinjiantou.szkingdom.android.newphone.md) | 2 |
 | 亲邻开门 | [com.qinlin.edoor](/docs/com.qinlin.edoor.md) | 3/1启用/2禁用 |
 | 汽水音乐 | [com.luna.music](/docs/com.luna.music.md) | 1 |
-| qq邮箱 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md) | 2 |
+| qq邮箱 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md) | 3/2启用/1禁用 |
 | 全民K歌 | [com.tencent.karaoke](/docs/com.tencent.karaoke.md) | 1 |
 | 全能计算器 | [com.jincheng.supercaculator](/docs/com.jincheng.supercaculator.md) | 1 |
 | 全球网测 | [com.cnspeedtest.globalspeed](/docs/com.cnspeedtest.globalspeed.md) | 1 |
@@ -397,6 +399,7 @@ GKD 默认订阅规则
 | 一刻相册 | [com.baidu.youavideo](/docs/com.baidu.youavideo.md) | 5 |
 | 易快报 | [com.hose.ekuaibao](/docs/com.hose.ekuaibao.md) | 1 |
 | 萤石云视频 | [com.videogo](/docs/com.videogo.md) | 1 |
+| 应用安装器 | [com.oplus.appdetail](/docs/com.oplus.appdetail.md) | 1/0启用/1禁用 |
 | 应用包管理组件 | [com.miui.packageinstaller](/docs/com.miui.packageinstaller.md) | 3/0启用/3禁用 |
 | 一起来涂色 | [com.xingluo.allcolor](/docs/com.xingluo.allcolor.md) | 2/1启用/1禁用 |
 | 一淘 | [com.taobao.etao](/docs/com.taobao.etao.md) | 4/3启用/1禁用 |
@@ -437,7 +440,7 @@ GKD 默认订阅规则
 | 智行火车票12306抢票 | [com.yipiao](/docs/com.yipiao.md) | 1 |
 | 智行旅行 | [cn.suanya.zhixing](/docs/cn.suanya.zhixing.md) | 1 |
 | 志愿汇 | [com.zzw.october](/docs/com.zzw.october.md) | 2 |
-| 中国电信 | [com.ct.client](/docs/com.ct.client.md) | 5/3启用/2禁用 |
+| 中国电信 | [com.ct.client](/docs/com.ct.client.md) | 6/4启用/2禁用 |
 | 中国工商银行 | [com.icbc](/docs/com.icbc.md) | 2 |
 | 中国广电 | [com.ai.obc.cbn.app](/docs/com.ai.obc.cbn.app.md) | 2 |
 | 中国建设银行 | [com.chinamworld.main](/docs/com.chinamworld.main.md) | 1 |
@@ -457,8 +460,9 @@ GKD 默认订阅规则
 | 自考笔果题库 | [com.dep.biguo](/docs/com.dep.biguo.md) | 4/3启用/1禁用 |
 | 最右 | [cn.xiaochuankeji.tieba](/docs/cn.xiaochuankeji.tieba.md) | 6/4启用/2禁用 |
 | 作业帮 | [com.baidu.homework](/docs/com.baidu.homework.md) | 1 |
+| 作业帮家长版 | [com.zuoyebang.knowledge](/docs/com.zuoyebang.knowledge.md) | 1 |
 | アニメ新番組 | [online.bangumi](/docs/online.bangumi.md) | 1 |
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=138)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=139)
