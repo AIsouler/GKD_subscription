@@ -38,5 +38,26 @@ export default defineAppConfig({
       rules: 'View[desc="立即查看"] +2 ImageView[id=null]',
       snapshotUrls: ['https://gkd-kit.songe.li/import/12914450'],
     },
+    {
+      key: 3,
+      name: '寄包裹-弹窗广告',
+      enable: false,
+      activityIds: [
+        'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+      ],
+      rules: 'View + Image + View[text.length>0]',
+      snapshotUrls: ['https://gkd-kit.songe.li/import/13042279'],
+    },
+    {
+      key: 4,
+      name: '升级提示',
+      enable: false,
+      quickFind: true,
+      activityIds: [
+        'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+      ],
+      rules: '[text="确认"] - [text="取消"]',
+      snapshotUrls: ['https://gkd-kit.songe.li/import/13042207'],
+    },
   ],
 });
