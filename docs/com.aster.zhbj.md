@@ -8,6 +8,8 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12981243)
 - [快照-1](https://gkd-kit.gitee.io/import/13029855)
+- [快照-2](https://gkd-kit.gitee.io/import/13043320)
+- [快照-3](https://gkd-kit.gitee.io/import/13043344)
 
 ## 应用内广告弹窗
 

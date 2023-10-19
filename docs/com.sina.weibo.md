@@ -37,8 +37,9 @@
 评论区同一博主其他博文推荐
 
 - [快照-0](https://gkd-kit.gitee.io/import/12674498)
-- [快照-1](https://gkd-kit.gitee.io/import/12674511)
-- [快照-2](https://gkd-kit.gitee.io/import/12929591)
+- [快照-1](https://gkd-kit.songe.li/import/13035647)
+- [快照-2](https://gkd-kit.gitee.io/import/12674511)
+- [快照-3](https://gkd-kit.gitee.io/import/12929591)
 
 ## 首页顶部话题分享窗口
 

@@ -17,4 +17,5 @@
 ## 直播间悬浮广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12892825)
-- [快照-1](https://gkd-kit.gitee.io/import/12892825)
+- [快照-1](https://gkd-kit.gitee.io/import/13037239)
+- [快照-2](https://gkd-kit.gitee.io/import/12892825)

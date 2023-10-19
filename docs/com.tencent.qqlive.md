@@ -24,12 +24,13 @@
 - [快照-2](https://gkd-kit.gitee.io/import/12700518)
 - [快照-3](https://gkd-kit.gitee.io/import/12737313)
 
-## 片头广告
+## 视频播放时的广告
 
 自动点击 跳过广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12700407)
 - [快照-1](https://gkd-kit.gitee.io/import/12700433)
+- [快照-2](https://gkd-kit.songe.li/import/13043079)
 
 ## 个人中心广告
 

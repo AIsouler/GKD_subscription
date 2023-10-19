@@ -26,8 +26,9 @@
 ## 帖子评论区广告卡片
 
 - [快照-0](https://gkd-kit.songe.li/import/12775913)
-- [快照-1](https://gkd-kit.songe.li/import/12775916)
-- [快照-2](https://gkd-kit.songe.li/import/12775892)
+- [快照-1](https://gkd-kit.songe.li/import/13043133)
+- [快照-2](https://gkd-kit.songe.li/import/12775916)
+- [快照-3](https://gkd-kit.songe.li/import/12775892)
 
 ## 升级弹窗
 
