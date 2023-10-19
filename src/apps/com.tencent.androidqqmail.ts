@@ -14,6 +14,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '广告邮件-列表卡片广告',
+      quickFind: true,
       activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
       rules: [
         {
@@ -39,6 +40,19 @@ export default defineAppConfig({
           matches:
             '[text="赞助商提供的广告"] < FrameLayout + @FrameLayout > [text="不感兴趣"]',
           snapshotUrls: 'https://gkd-kit.songe.li/import/12775862',
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '开启通知提醒',
+      enable: false,
+      quickFind: true,
+      activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
+      rules: [
+        {
+          matches: '[text="立刻开启"] - [text="以后再说"]',
+          snapshotUrls: ['https://gkd-kit.songe.li/import/13043069'],
         },
       ],
     },
