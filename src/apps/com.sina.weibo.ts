@@ -91,8 +91,11 @@ export default defineAppConfig({
         {
           activityIds: ['com.sina.weibo.feed.DetailWeiboActivity'],
           matches:
-            '[id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12674498',
+            'RelativeLayout[visibleToUser=true] - RelativeLayout >n [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12674498',
+            'https://gkd-kit.songe.li/import/13035647', // 限制 RelativeLayout[visibleToUser=true]，防止在这个快照中误触点赞按钮
+          ],
         },
         {
           activityIds: [
