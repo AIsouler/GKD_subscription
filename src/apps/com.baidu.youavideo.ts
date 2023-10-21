@@ -71,5 +71,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 6,
+      name: '弹窗广告',
+      desc: '点击x关闭广告提示',
+      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"] ',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13048700'],
+        },
+      ],
+    },
   ],
 });
