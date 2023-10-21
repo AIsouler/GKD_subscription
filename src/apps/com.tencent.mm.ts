@@ -304,5 +304,20 @@ export default defineAppConfig({
       rules: '[text="打开网页版文件传输助手"] + * > Button[text="打开"]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12793745',
     },
+    {
+      enable: false,
+      key: 13,
+      name: '提瓦特助手小程序-弹窗广告',
+      activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
+      rules: [
+        {
+          matches: [
+            'RelativeLayout[childCount=1][clickable=true] > [text="提瓦特小助手"]',
+            'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
+          ],
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12926021'],
+        },
+      ],
+    },
   ],
 });
