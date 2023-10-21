@@ -17,9 +17,10 @@ export default defineAppConfig({
           matches:
             '[id="com.oplus.appdetail:id/view_bottom_guide_continue_install_btn"]',
           excludeMatches:
-            '[id="com.oplus.appdetail:id/view_scanning_and_tip_view_tv_title"]',
+            '[id="com.oplus.appdetail:id/view_scanning_and_tip_view_tv_title"][text^="正在扫描"]',
           snapshotUrls: [
             'https://gkd-kit.songe.li/import/13038560', // 使用 excludeMatches，扫描病毒阶段不进行点击
+            'https://gkd-kit.songe.li/import/13054204',
             'https://gkd-kit.songe.li/import/13038570',
           ],
         },
@@ -27,8 +28,15 @@ export default defineAppConfig({
           key: 1,
           desc: '点击【完成】',
           activityIds: 'com.oplus.appdetail.model.finish.InstallFinishActivity',
-          matches: '[id="com.oplus.appdetail:id/launch_button"]',
+          matches: '[id="com.oplus.appdetail:id/launch_button"][text="完成"]',
           snapshotUrls: 'https://gkd-kit.songe.li/import/13038664',
+        },
+        {
+          key: 2,
+          desc: '点击【完成】',
+          activityIds: 'com.oplus.appdetail.model.finish.InstallFinishActivity',
+          matches: '[id="com.oplus.appdetail:id/done_button"][text="完成"]',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/13054849',
         },
       ],
     },
