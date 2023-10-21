@@ -44,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '直播间悬浮广告',
+      name: '直播间广告',
       activityIds: 'tv.douyu.view.activity.PlayerActivity',
       rules: [
         {
@@ -60,6 +60,24 @@ export default defineAppConfig({
           key: 1,
           matches: 'ViewPager + @View + ImageView + View',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12892825',
+        },
+        {
+          key: 2,
+          matches:
+            'RelativeLayout[childCount=3] > ViewPager + @View + ImageView',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/13056107',
+        },
+        {
+          key: 3,
+          matches:
+            'ViewGroup[childCount=4] > View + ImageView + FrameLayout + ImageView',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/13056107',
+        },
+        {
+          key: 4,
+          matches:
+            'FrameLayout[childCount=2] > @ImageView - FrameLayout > RelativeLayout > WebView',
+          snapshotUrls: 'https://gkd-kit.songe.li/import/13056107',
         },
       ],
     },
