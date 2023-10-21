@@ -48,7 +48,6 @@ export default defineAppConfig({
         },
         {
           matches: 'ImageView + FrameLayout + FrameLayout > ImageView',
-
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12504520',
             'https://gkd-kit.gitee.io/import/12661019',
@@ -61,8 +60,8 @@ export default defineAppConfig({
         },
         {
           matches:
-            'TextView[text.length=4] < FrameLayout[childCount>=1] <2 FrameLayout[childCount>=2] -2 FrameLayout',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892156',
+            'TextView[text.length=4] < FrameLayout[childCount>=1] <2 FrameLayout[childCount>=2] -2 FrameLayout > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892156', //最后是ImageView否则和io/import/12504501误触
         },
         {
           activityIds:
