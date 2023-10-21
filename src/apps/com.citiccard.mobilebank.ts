@@ -8,11 +8,44 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: ['com.citiccard.mobilebankapp.WelcomeActivity'],
+      quickFind: true,
+      rules: [
+        {
+          matches: '[id="com.citiccard.mobilebank:id/btn_skip"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684908'],
+        },
+        {
+          matches: '[id="com.citiccard.mobilebank:id/jump"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13049013'],
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '广告弹窗',
+      activityIds: [
+        'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
+      ],
+      quickFind: true,
+      rules: [
+        {
+          matches: '[id="com.citiccard.mobilebank:id/iv_bill_home_cancel"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13049284'],
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '通知权限弹窗',
+      activityIds: [
+        'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
+      ],
+      quickFind: true,
       rules: [
         {
           matches:
-            '[id="com.citiccard.mobilebank:id/iv_popAdv"] + [id="com.citiccard.mobilebank:id/btn_skip"][text$="跳过"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684908'],
+            '[id="com.citiccard.mobilebank:id/ll_app_upgrade_content"] + [id="com.citiccard.mobilebank:id/iv_close"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13049283'],
         },
       ],
     },
