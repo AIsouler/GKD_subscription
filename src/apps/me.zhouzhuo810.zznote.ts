@@ -10,12 +10,14 @@ export default defineAppConfig({
       activityIds: [
         'me.zhouzhuo810.zznote.view.act.QiDongActivity',
         'me.zhouzhuo810.zznote.view.act.edit.immersive.SpanPicWordDetailImmersiveActivity',
+        'me.zhouzhuo810.zznote.view.act.MainViewPagerActivity',
       ],
       rules:
         '[id="me.zhouzhuo810.zznote:id/native_ad_container"] + [id^="me.zhouzhuo810.zznote:id/btn_next"]',
       snapshotUrls: [
         'https://gkd-kit.songe.li/import/12798528',
         'https://gkd-kit.songe.li/import/12912217',
+        'https://gkd-kit.songe.li/import/13059838',
       ],
     },
   ],
