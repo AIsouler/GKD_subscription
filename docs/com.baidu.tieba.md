@@ -1,6 +1,6 @@
 # 百度贴吧
 
-存在 7 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
+存在 8 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
 
 ## 开屏广告
 
@@ -18,6 +18,7 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12775930)
 - [快照-1](https://gkd-kit.gitee.io/import/12840951)
+- [快照-2](https://gkd-kit.gitee.io/import/13060892)
 
 ## 某个广告卡片
 
@@ -27,8 +28,9 @@
 
 - [快照-0](https://gkd-kit.songe.li/import/12775913)
 - [快照-1](https://gkd-kit.songe.li/import/13043133)
-- [快照-2](https://gkd-kit.songe.li/import/12775916)
-- [快照-3](https://gkd-kit.songe.li/import/12775892)
+- [快照-2](https://gkd-kit.songe.li/import/13054256)
+- [快照-3](https://gkd-kit.songe.li/import/12775916)
+- [快照-4](https://gkd-kit.songe.li/import/12775892)
 
 ## 升级弹窗
 
@@ -37,3 +39,7 @@
 ## 帖子底部广告卡片
 
 - [快照-0](https://gkd-kit.songe.li/import/12775882)
+
+## 应用内广告弹窗
+
+- [快照-0](https://gkd-kit.gitee.io/import/13060891)

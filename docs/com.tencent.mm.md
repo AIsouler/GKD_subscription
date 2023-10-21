@@ -1,6 +1,6 @@
 # 微信
 
-存在 13 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 14 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -11,9 +11,10 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12642588)
 - [快照-1](https://gkd-kit.gitee.io/import/12888129)
 - [快照-2](https://gkd-kit.gitee.io/import/12907641)
-- [快照-3](https://gkd-kit.gitee.io/import/12642584)
-- [快照-4](https://gkd-kit.gitee.io/import/12663984)
-- [快照-5](https://gkd-kit.gitee.io/import/12907642)
+- [快照-3](https://gkd-kit.gitee.io/import/13000395)
+- [快照-4](https://gkd-kit.gitee.io/import/12642584)
+- [快照-5](https://gkd-kit.gitee.io/import/12663984)
+- [快照-6](https://gkd-kit.gitee.io/import/12907642)
 
 ## 朋友圈广告-英文版
 
@@ -98,3 +99,9 @@
 ## 网页版文件传输助手扫码自动授权
 
 - [快照-0](https://gkd-kit.songe.li/import/12793745)
+
+## 提瓦特助手小程序-弹窗广告
+
+默认禁用
+
+- [快照-0](https://gkd-kit.gitee.io/import/12926021)

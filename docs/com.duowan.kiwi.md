@@ -4,6 +4,8 @@
 
 ## 开屏广告
 
+- [快照-0](https://gkd-kit.gitee.io/import/13052592)
+
 ## 青少年模式弹窗
 
 - [快照-0](https://gkd-kit.songe.li/import/12908790)

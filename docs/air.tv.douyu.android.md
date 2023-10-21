@@ -14,8 +14,11 @@
 
 ## 新版本弹窗
 
-## 直播间悬浮广告
+## 直播间广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12892825)
 - [快照-1](https://gkd-kit.gitee.io/import/13037239)
 - [快照-2](https://gkd-kit.gitee.io/import/12892825)
+- [快照-3](https://gkd-kit.songe.li/import/13056107)
+- [快照-4](https://gkd-kit.songe.li/import/13056107)
+- [快照-5](https://gkd-kit.songe.li/import/13056107)
