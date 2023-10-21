@@ -5,3 +5,4 @@
 ## 应用内广告卡片
 
 - [快照-0](https://gkd-kit.songe.li/import/13043221)
+- [快照-1](https://gkd-kit.songe.li/import/13049609)

@@ -1,6 +1,6 @@
 # 抖音
 
-存在 8 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+存在 9 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
 ## 关闭青少年弹窗
 
@@ -28,6 +28,14 @@
 ## 广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12769137)
+
+## 去商店评分
+
+点击[取消]
+
+- [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008)
+
+- [快照-0](https://gkd-kit.gitee.io/import/13053628)
 
 ## 请求开启通知提示信息
 

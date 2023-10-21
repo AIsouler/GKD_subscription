@@ -1,6 +1,6 @@
 # 一刻相册
 
-存在 5 规则组 - [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts)
+存在 6 规则组 - [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts)
 
 ## 开屏广告
 
@@ -28,3 +28,9 @@
 点击x关闭充值提示
 
 - [快照-0](https://gkd-kit.gitee.io/import/12970094)
+
+## 弹窗广告
+
+点击x关闭广告提示
+
+- [快照-0](https://gkd-kit.gitee.io/import/13048700)
