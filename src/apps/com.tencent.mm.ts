@@ -9,7 +9,10 @@ export default defineAppConfig({
       name: '朋友圈广告',
       desc: '点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭',
       quickFind: true,
-      activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
+      activityIds: [
+        'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
+        'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
+      ],
       exampleUrls: [
         'https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79',
       ],
@@ -23,6 +26,7 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12642588',
             'https://gkd-kit.gitee.io/import/12888129', //ImageView - TextView[text="广告"][id!=null][index=0]这个规则无法匹配该广告，需要删除[index=0]
             'https://gkd-kit.gitee.io/import/12907641',
+            'https://gkd-kit.gitee.io/import/13000395',
           ],
         },
         // 以下是[确认关闭按钮]出现的情况
