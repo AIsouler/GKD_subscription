@@ -60,6 +60,12 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12840951',
           ],
         },
+        {
+          key: 1,
+          matches:
+            'RelativeLayout[childCount=2] > RelativeLayout[childCount=1][clickable=true] > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13060892',
+        },
       ],
     },
     {
@@ -91,10 +97,11 @@ export default defineAppConfig({
         {
           key: 1,
           matches:
-            'TextView[text$="广告"] +n FrameLayout[id="com.baidu.tieba:id/obfuscated"] >n ImageView[id=null]',
+            'TextView[text$="广告"] +n FrameLayout[id="com.baidu.tieba:id/obfuscated"] >n @FrameLayout[clickable=true] > ImageView[id=null]',
           snapshotUrls: [
             'https://gkd-kit.songe.li/import/12775913', // com.baidu.tieba.pb.pb.main.PbActivity
             'https://gkd-kit.songe.li/import/13043133', // com.baidu.tieba.tblauncher.MainTabActivity
+            'https://gkd-kit.songe.li/import/13054256',
           ],
         },
         {
@@ -133,6 +140,13 @@ export default defineAppConfig({
       rules:
         'LinearLayout > RelativeLayout > ImageView[id=null][clickable=true]',
       snapshotUrls: 'https://gkd-kit.songe.li/import/12775882',
+    },
+    {
+      key: 9,
+      name: '应用内广告弹窗',
+      activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
+      rules: 'View[childCount=3] > @View[clickable=true] > Image',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13060891',
     },
   ],
 });
