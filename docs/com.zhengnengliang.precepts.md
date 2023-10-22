@@ -4,10 +4,10 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12727650)
+- [快照-0](https://i.gkd.li/import/12727650)
 - [快照-1](https://gkd-kit.gitee.io/import/12715352)
 
 ## 第三方 SDK 广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12739767)
-- [快照-1](https://gkd-kit.songe.li/import/12727705)
+- [快照-0](https://i.gkd.li/import/12739767)
+- [快照-1](https://i.gkd.li/import/12727705)

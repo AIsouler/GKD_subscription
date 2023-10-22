@@ -4,4 +4,4 @@
 
 ## 赏好评弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/13043228)
+- [快照-0](https://i.gkd.li/import/13043228)

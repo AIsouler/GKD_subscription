@@ -4,7 +4,7 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12740125)
+- [快照-0](https://i.gkd.li/import/12740125)
 
 ## 广告弹窗
 

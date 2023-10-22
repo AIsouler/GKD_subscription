@@ -13,8 +13,8 @@
 
 ## 主页弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12893419)
+- [快照-0](https://i.gkd.li/import/12893419)
 
 ## 学习-弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12893450)
+- [快照-0](https://i.gkd.li/import/12893450)

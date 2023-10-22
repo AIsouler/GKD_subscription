@@ -4,8 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.vercel.app/import/12999805)
+- [快照-0](https://i.gkd.li/import/12999805)
 
 ## 升级弹窗
 
-- [快照-0](https://gkd-kit.vercel.app/import/12999725)
+- [快照-0](https://i.gkd.li/import/12999725)

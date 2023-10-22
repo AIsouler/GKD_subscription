@@ -4,8 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12840093)
+- [快照-0](https://i.gkd.li/import/12840093)
 
 ## 主界面弹窗广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12929345)
+- [快照-0](https://i.gkd.li/import/12929345)

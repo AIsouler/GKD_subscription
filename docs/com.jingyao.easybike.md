@@ -21,4 +21,4 @@
 
 ## 骑行卡-优惠券弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12739316)
+- [快照-0](https://i.gkd.li/import/12739316)

@@ -4,17 +4,17 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12727451)
+- [快照-0](https://i.gkd.li/import/12727451)
 
 ## 更新弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12684250)
-- [快照-1](https://gkd-kit.songe.li/import/12727457)
+- [快照-1](https://i.gkd.li/import/12727457)
 - [快照-2](https://gkd-kit.gitee.io/import/12684244)
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12739581)
+- [快照-0](https://i.gkd.li/import/12739581)
 
 ## 请求打开系统通知提示信息
 

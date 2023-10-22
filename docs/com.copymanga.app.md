@@ -6,7 +6,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12504489)
 - [快照-1](https://gkd-kit.gitee.io/import/12504507)
-- [快照-2](https://gkd-kit.songe.li/import/12852509)
+- [快照-2](https://i.gkd.li/import/12852509)
 - [快照-3](https://gkd-kit.gitee.io/import/12504492)
 
 ## 内部弹窗广告

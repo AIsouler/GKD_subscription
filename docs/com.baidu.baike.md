@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12755714)
+- [快照-0](https://i.gkd.li/import/12755714)
 
 ## 请求通知权限弹窗
 
 自动点击【不允许】
 
-- [快照-0](https://gkd-kit.songe.li/import/12755717)
+- [快照-0](https://i.gkd.li/import/12755717)

@@ -4,4 +4,4 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12781280)
+- [快照-0](https://i.gkd.li/import/12781280)

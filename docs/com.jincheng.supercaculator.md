@@ -6,5 +6,5 @@
 
 点击右上角x
 
-- [快照-0](https://gkd-kit.songe.li/import/12859523)
-- [快照-1](https://gkd-kit.songe.li/import/12859545)
+- [快照-0](https://i.gkd.li/import/12859523)
+- [快照-1](https://i.gkd.li/import/12859545)

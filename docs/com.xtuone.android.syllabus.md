@@ -7,7 +7,7 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12840730)
 - [快照-1](https://gkd-kit.gitee.io/import/12840736)
 - [快照-2](https://gkd-kit.gitee.io/import/12840737)
-- [快照-3](https://gkd-kit.songe.li/import/12909593)
+- [快照-3](https://i.gkd.li/import/12909593)
 
 ## 首页banner广告
 

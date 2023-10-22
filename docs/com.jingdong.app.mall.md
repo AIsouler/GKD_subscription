@@ -18,13 +18,13 @@
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642270)
-- [快照-1](https://gkd-kit.songe.li/import/12774910)
+- [快照-1](https://i.gkd.li/import/12774910)
 
 ## 首页-浮层广告
 
 默认禁用
 
-- [快照-0](https://gkd-kit.songe.li/import/12837870)
+- [快照-0](https://i.gkd.li/import/12837870)
 
 ## 消息-打开通知
 

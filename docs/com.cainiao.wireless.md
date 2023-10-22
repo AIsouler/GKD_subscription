@@ -9,20 +9,20 @@
 
 ## 包裹页面-弹窗广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12914371)
+- [快照-0](https://i.gkd.li/import/12914371)
 
 ## 包裹页面-地图底部横条广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12914450)
+- [快照-0](https://i.gkd.li/import/12914450)
 
 ## 寄包裹-弹窗广告
 
 默认禁用
 
-- [快照-0](https://gkd-kit.songe.li/import/13042279)
+- [快照-0](https://i.gkd.li/import/13042279)
 
 ## 升级提示
 
 默认禁用
 
-- [快照-0](https://gkd-kit.songe.li/import/13042207)
+- [快照-0](https://i.gkd.li/import/13042207)

@@ -4,11 +4,11 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12508764)
+- [快照-0](https://i.gkd.li/import/12508764)
 
 ## 软件更新
 
-- [快照-0](https://gkd-kit.songe.li/import/12846499)
+- [快照-0](https://i.gkd.li/import/12846499)
 
 ## 超值换购
 

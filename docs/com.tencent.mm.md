@@ -20,9 +20,9 @@
 
 默认禁用 - 点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭
 
-- [快照-0](https://gkd-kit.songe.li/import/12905837)
-- [快照-1](https://gkd-kit.songe.li/import/12905838)
-- [快照-2](https://gkd-kit.songe.li/import/12905846)
+- [快照-0](https://i.gkd.li/import/12905837)
+- [快照-1](https://i.gkd.li/import/12905838)
+- [快照-2](https://i.gkd.li/import/12905846)
 
 ## 电脑微信快捷自动登录
 
@@ -36,8 +36,8 @@
 
 ## 微信读书网页版扫码登录自动授权
 
-- [快照-0](https://gkd-kit.songe.li/import/12506197)
-- [快照-1](https://gkd-kit.songe.li/import/12506201)
+- [快照-0](https://i.gkd.li/import/12506197)
+- [快照-1](https://i.gkd.li/import/12506201)
 
 ## 微信红包自动领取
 
@@ -67,7 +67,7 @@
 默认禁用 - 图片和视频选择器-自动选中底部中间的发送原图
 
 - [快照-0](https://gkd-kit.gitee.io/import/12686641)
-- [快照-1](https://gkd-kit.songe.li/import/12840865)
+- [快照-1](https://i.gkd.li/import/12840865)
 - [快照-2](https://gkd-kit.gitee.io/import/12686640)
 
 ## 订阅号文章广告反馈
@@ -98,7 +98,7 @@
 
 ## 网页版文件传输助手扫码自动授权
 
-- [快照-0](https://gkd-kit.songe.li/import/12793745)
+- [快照-0](https://i.gkd.li/import/12793745)
 
 ## 提瓦特助手小程序-弹窗广告
 

@@ -12,7 +12,7 @@
 关闭青少年模式提醒弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12675547)
-- [快照-1](https://gkd-kit.songe.li/import/12775850)
+- [快照-1](https://i.gkd.li/import/12775850)
 
 ## 版本更新提示
 

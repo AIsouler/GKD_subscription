@@ -4,15 +4,15 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12745150)
+- [快照-0](https://i.gkd.li/import/12745150)
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12745130)
-- [快照-1](https://gkd-kit.songe.li/import/12745153)
+- [快照-0](https://i.gkd.li/import/12745130)
+- [快照-1](https://i.gkd.li/import/12745153)
 
 ## 请求通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://gkd-kit.songe.li/import/12745142)
+- [快照-0](https://i.gkd.li/import/12745142)

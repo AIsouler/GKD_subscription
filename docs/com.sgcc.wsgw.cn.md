@@ -4,4 +4,4 @@
 
 ## 首页弹窗广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12745042)
+- [快照-0](https://i.gkd.li/import/12745042)

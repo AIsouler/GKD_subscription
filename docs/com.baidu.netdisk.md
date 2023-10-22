@@ -5,8 +5,8 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12472597)
-- [快照-1](https://gkd-kit.songe.li/import/12877626)
-- [快照-2](https://gkd-kit.songe.li/import/12988458)
+- [快照-1](https://i.gkd.li/import/12877626)
+- [快照-2](https://i.gkd.li/import/12988458)
 - [快照-3](https://gkd-kit.gitee.io/import/12648924)
 - [快照-4](https://gkd-kit.gitee.io/import/12706553)
 - [快照-5](https://gkd-kit.gitee.io/import/12865287)
@@ -51,4 +51,4 @@
 
 默认禁用 - 自动点击x按钮
 
-- [快照-0](https://gkd-kit.songe.li/import/12783106)
+- [快照-0](https://i.gkd.li/import/12783106)

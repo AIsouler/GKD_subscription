@@ -4,8 +4,8 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12727241)
+- [快照-0](https://i.gkd.li/import/12727241)
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12727248)
+- [快照-0](https://i.gkd.li/import/12727248)

@@ -4,4 +4,4 @@
 
 ## 应用内广告弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12846524)
+- [快照-0](https://i.gkd.li/import/12846524)

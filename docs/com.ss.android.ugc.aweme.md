@@ -47,5 +47,5 @@
 
 默认禁用 - 聊天发送图片时自动勾选原图
 
-- [快照-0](https://gkd-kit.songe.li/import/12846036)
-- [快照-1](https://gkd-kit.songe.li/import/12846040)
+- [快照-0](https://i.gkd.li/import/12846036)
+- [快照-1](https://i.gkd.li/import/12846040)

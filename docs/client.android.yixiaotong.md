@@ -4,13 +4,13 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/13055542)
+- [快照-0](https://i.gkd.li/import/13055542)
 
 ## 应用内广告弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/13055837)
-- [快照-1](https://gkd-kit.songe.li/import/13060116)
+- [快照-0](https://i.gkd.li/import/13055837)
+- [快照-1](https://i.gkd.li/import/13060116)
 
 ## 应用内广告卡片
 
-- [快照-0](https://gkd-kit.songe.li/import/13055542)
+- [快照-0](https://i.gkd.li/import/13055542)

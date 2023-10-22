@@ -4,7 +4,7 @@
 
 ## 阅读页面底部广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12908734)
+- [快照-0](https://i.gkd.li/import/12908734)
 - [快照-1](https://gkd-kit.gitee.io/import/12716444)
 
 ## 更新弹窗
@@ -17,7 +17,7 @@
 
 ## 优惠券弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12910159)
+- [快照-0](https://i.gkd.li/import/12910159)
 
 ## 请求通知权限弹窗
 
