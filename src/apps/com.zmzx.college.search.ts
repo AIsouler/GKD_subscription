@@ -51,5 +51,26 @@ export default defineAppConfig({
       quickFind: true,
       snapshotUrls: 'https://gkd-kit.songe.li/import/12893408',
     },
+    {
+      key: 4,
+      name: '教材-底部广告',
+      quickFind: true,
+      activityIds: [
+        'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
+      ],
+      rules: '[id="com.zmzx.college.search:id/close"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/13063381',
+    },
+    {
+      key: 5,
+      name: '升级弹窗',
+      enable: false,
+      quickFind: true,
+      activityIds: [
+        'com.zmzx.college.search.activity.main.activity.MainActivity',
+      ],
+      rules: '[id="com.zmzx.college.search:id/update_close"]',
+      snapshotUrls: 'https://gkd-kit.songe.li/import/13063373',
+    },
   ],
 });
