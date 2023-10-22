@@ -90,11 +90,13 @@ export default defineAppConfig({
             'com.douban.frodo.subject.structure.activity.MovieActivity',
             'com.douban.frodo.subject.activity.ForumTopicActivity',
             'com.douban.frodo.group.activity.GroupTopicActivity',
+            'com.douban.frodo.activity.SplashActivity',
           ],
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12548064',
             'https://gkd-kit.gitee.io/import/12548450',
             'https://gkd-kit.gitee.io/import/12723751',
+            'https://gkd-kit.gitee.io/import/13062693',
           ],
         },
         {
