@@ -244,5 +244,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 16,
+      name: 'NT QQ-登录确认',
+      desc: 'NT QQ 登录时自动点击允许登录QQ',
+      activityIds: 'com.tencent.mobileqq.activity.DevlockQuickLoginActivity',
+      rules: 'Button[text="允许登录QQ"][clickable=true][id!=null]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13063027',
+    },
   ],
 });
