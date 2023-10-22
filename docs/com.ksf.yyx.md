@@ -16,7 +16,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12775922)
 - [快照-1](https://gkd-kit.gitee.io/import/12775923)
-- [快照-2](https://gkd-kit.songe.li/import/12998899)
+- [快照-2](https://i.gkd.li/import/12998899)
 - [快照-3](https://gkd-kit.gitee.io/import/12775925)
 - [快照-4](https://gkd-kit.gitee.io/import/12775924)
 - [快照-5](https://gkd-kit.gitee.io/import/12775921)

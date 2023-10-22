@@ -6,5 +6,5 @@
 
 默认禁用 - 自动点击【使用此文件夹】->【允许】
 
-- [快照-0](https://gkd-kit.songe.li/import/12799610)
-- [快照-1](https://gkd-kit.songe.li/import/12799603)
+- [快照-0](https://i.gkd.li/import/12799610)
+- [快照-1](https://i.gkd.li/import/12799603)

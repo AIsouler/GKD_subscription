@@ -4,7 +4,7 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12749811)
+- [快照-0](https://i.gkd.li/import/12749811)
 
 ## 更新弹窗
 
@@ -33,7 +33,7 @@
 
 ## 美团骑行-广告、优惠券弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12739204)
+- [快照-0](https://i.gkd.li/import/12739204)
 
 ## 请求定位弹窗
 

@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12838048)
+- [快照-0](https://i.gkd.li/import/12838048)
 
 ## 消息推送通知
 
 默认禁用 - 自动点击暂不开启。
 
-- [快照-0](https://gkd-kit.songe.li/import/12909620)
+- [快照-0](https://i.gkd.li/import/12909620)

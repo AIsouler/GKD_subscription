@@ -8,7 +8,7 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12727278)
+- [快照-0](https://i.gkd.li/import/12727278)
 
 ## 右侧悬浮广告
 

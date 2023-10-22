@@ -4,9 +4,9 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12818335)
-- [快照-1](https://gkd-kit.songe.li/import/12893573)
-- [快照-2](https://gkd-kit.songe.li/import/12923776)
+- [快照-0](https://i.gkd.li/import/12818335)
+- [快照-1](https://i.gkd.li/import/12893573)
+- [快照-2](https://i.gkd.li/import/12923776)
 - [快照-3](https://gkd-kit.gitee.io/import/12999739)
 
 ## 更新弹窗

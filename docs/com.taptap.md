@@ -6,7 +6,7 @@
 
 自动点击【对此内容不感兴趣】
 
-- [快照-0](https://gkd-kit.songe.li/import/12840903)
-- [快照-1](https://gkd-kit.songe.li/import/12842279)
+- [快照-0](https://i.gkd.li/import/12840903)
+- [快照-1](https://i.gkd.li/import/12842279)
 - [快照-2](https://gkd-kit.gitee.io/import/12864810)
-- [快照-3](https://gkd-kit.songe.li/import/12840904)
+- [快照-3](https://i.gkd.li/import/12840904)

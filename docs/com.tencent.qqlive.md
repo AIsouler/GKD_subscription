@@ -30,12 +30,12 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12700407)
 - [快照-1](https://gkd-kit.gitee.io/import/12700433)
-- [快照-2](https://gkd-kit.songe.li/import/13043079)
+- [快照-2](https://i.gkd.li/import/13043079)
 
 ## 个人中心广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12700175)
-- [快照-1](https://gkd-kit.songe.li/import/12777344)
+- [快照-1](https://i.gkd.li/import/12777344)
 
 ## 广告反馈卡片
 

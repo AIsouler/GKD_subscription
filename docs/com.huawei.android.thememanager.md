@@ -47,8 +47,8 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12727318)
+- [快照-0](https://i.gkd.li/import/12727318)
 
 ## 请求通知权限弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12918192)
+- [快照-0](https://i.gkd.li/import/12918192)

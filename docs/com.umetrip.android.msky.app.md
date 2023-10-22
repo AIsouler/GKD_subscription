@@ -10,7 +10,7 @@
 
 默认禁用
 
-- [快照-0](https://gkd-kit.songe.li/import/12909632)
+- [快照-0](https://i.gkd.li/import/12909632)
 
 ## 首页-升级提示
 
@@ -23,8 +23,8 @@
 
 默认禁用
 
-- [快照-0](https://gkd-kit.songe.li/import/12750185)
+- [快照-0](https://i.gkd.li/import/12750185)
 
 ## 首页右侧悬浮广告
 
-- [快照-0](https://gkd-kit.songe.li/import/12783264)
+- [快照-0](https://i.gkd.li/import/12783264)

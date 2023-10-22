@@ -10,4 +10,4 @@
 ## 主页广告卡片
 
 - [快照-0](https://gkd-kit.gitee.io/import/12674919)
-- [快照-1](https://gkd-kit.songe.li/import/12818281)
+- [快照-1](https://i.gkd.li/import/12818281)

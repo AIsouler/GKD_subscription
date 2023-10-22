@@ -10,6 +10,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12847323)
 - [快照-1](https://gkd-kit.gitee.io/import/12847336)
+- [快照-2](https://i.gkd.li/import/13063271)
 
 ## 信息流内嵌广告
 

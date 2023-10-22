@@ -31,7 +31,8 @@
 - [快照-5](https://gkd-kit.gitee.io/import/12548064)
 - [快照-6](https://gkd-kit.gitee.io/import/12548450)
 - [快照-7](https://gkd-kit.gitee.io/import/12723751)
-- [快照-8](https://gkd-kit.gitee.io/import/12723569)
+- [快照-8](https://gkd-kit.gitee.io/import/13062693)
+- [快照-9](https://gkd-kit.gitee.io/import/12723569)
 
 ## 卡片广告
 

@@ -4,4 +4,4 @@
 
 ## 相册-云存储空间不足
 
-- [快照-0](https://gkd-kit.songe.li/import/12847374)
+- [快照-0](https://i.gkd.li/import/12847374)

@@ -8,8 +8,8 @@
 
 ## 广告卡片
 
-- [快照-0](https://gkd-kit.songe.li/import/12829967)
-- [快照-1](https://gkd-kit.songe.li/import/12829944)
+- [快照-0](https://i.gkd.li/import/12829967)
+- [快照-1](https://i.gkd.li/import/12829944)
 - [快照-2](https://gkd-kit.gitee.io/import/12723229)
 - [快照-3](https://gkd-kit.gitee.io/import/12829938)
 - [快照-4](https://gkd-kit.gitee.io/import/12829964)
@@ -21,4 +21,4 @@
 
 ## 主页-免费听歌
 
-- [快照-0](https://gkd-kit.songe.li/import/12843383)
+- [快照-0](https://i.gkd.li/import/12843383)

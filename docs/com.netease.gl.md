@@ -8,7 +8,7 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.songe.li/import/12883135)
+- [快照-0](https://i.gkd.li/import/12883135)
 
 ## 应用内广告弹窗
 
