@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.tencent.qqmail.launcher.desktop.LauncherActivity',
       rules: 'RelativeLayout > ImageView[id!=null] + ImageView[id!=null]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12775855',
+      snapshotUrls: 'https://i.gkd.li/import/12775855',
     },
     {
       key: 0,
@@ -21,25 +21,25 @@ export default defineAppConfig({
           key: 0,
           desc: '英文版邮箱广告',
           matches: ['[id="com.tencent.androidqqmail:id/advertise_view_ad"]'],
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12842757',
+          snapshotUrls: 'https://i.gkd.li/import/12842757',
         },
         {
           preKeys: [0],
           matches: '@FrameLayout > TextView[text="Not interested"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12842775',
+          snapshotUrls: 'https://i.gkd.li/import/12842775',
         },
         {
           key: 1,
           matches:
             'LinearLayout > TextView + @LinearLayout[id!=null][clickable=true] > [text="广告"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12775857',
+          snapshotUrls: 'https://i.gkd.li/import/12775857',
         },
         {
           preKeys: [1],
           key: 9,
           matches:
             '[text="赞助商提供的广告"] < FrameLayout + @FrameLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12775862',
+          snapshotUrls: 'https://i.gkd.li/import/12775862',
         },
       ],
     },
@@ -52,7 +52,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="立刻开启"] - [text="以后再说"]',
-          snapshotUrls: ['https://gkd-kit.songe.li/import/13043069'],
+          snapshotUrls: ['https://i.gkd.li/import/13043069'],
         },
       ],
     },

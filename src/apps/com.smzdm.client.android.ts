@@ -12,7 +12,7 @@ export default defineAppConfig({
         'com.miui.home.launcher.Launcher',
       ],
       rules: '[id="com.smzdm.client.android:id/tv_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12535072',
+      snapshotUrls: 'https://i.gkd.li/import/12535072',
     },
     {
       key: 1,

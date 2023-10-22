@@ -13,7 +13,7 @@ export default defineAppConfig({
         'com.sina.weibo.mobileads.view.', // 需要补充快照
       ],
       rules: ['@RelativeLayout > TextView[text="跳过"]'],
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12782355',
+      snapshotUrls: 'https://i.gkd.li/import/12782355',
     },
     {
       key: 1,
@@ -46,7 +46,7 @@ export default defineAppConfig({
       activityIds: 'com.sina.weibo.account.interest.InterestActivity',
       rules:
         '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"][text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12531405',
+      snapshotUrls: 'https://i.gkd.li/import/12531405',
     },
     {
       key: 4,
@@ -59,8 +59,8 @@ export default defineAppConfig({
         '[id="com.sina.weibo:id/new_next_btn"&&text="进入微博（已选0个）"]',
       ],
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12531433',
-        'https://gkd-kit.songe.li/import/12531434',
+        'https://i.gkd.li/import/12531433',
+        'https://i.gkd.li/import/12531434',
       ],
     },
     {
@@ -94,7 +94,7 @@ export default defineAppConfig({
             'RelativeLayout[visibleToUser=true] - RelativeLayout >n [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12674498',
-            'https://gkd-kit.songe.li/import/13035647', // 限制 RelativeLayout[visibleToUser=true]，防止在这个快照中误触点赞按钮
+            'https://i.gkd.li/import/13035647', // 限制 RelativeLayout[visibleToUser=true]，防止在这个快照中误触点赞按钮
           ],
         },
         {
@@ -159,7 +159,7 @@ export default defineAppConfig({
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
         '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12749876'],
+      snapshotUrls: ['https://i.gkd.li/import/12749876'],
     },
     {
       key: 12,
@@ -168,7 +168,7 @@ export default defineAppConfig({
       activityIds: ['com.sina.weibo.business'],
       rules:
         '@[id="com.sina.weibo:id/btn_close"] - FrameLayout > [id="com.sina.weibo:id/ad_tag"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12750090'],
+      snapshotUrls: ['https://i.gkd.li/import/12750090'],
     },
     {
       enable: false,
@@ -179,7 +179,7 @@ export default defineAppConfig({
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
         '[id="com.sina.weibo:id/floating_window"] >2 [id="com.sina.weibo:id/close"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12750118'],
+      snapshotUrls: ['https://i.gkd.li/import/12750118'],
     },
     {
       key: 14,
@@ -187,7 +187,7 @@ export default defineAppConfig({
       desc: '自动点击【以后再说】',
       activityIds: 'com.sina.weibo.utils.WeiboDialog$CustomDialog',
       rules: '@[text="以后再说"] + * + [text="去开启"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13003311',
+      snapshotUrls: 'https://i.gkd.li/import/13003311',
     },
   ],
 });

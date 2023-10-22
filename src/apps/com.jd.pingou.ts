@@ -14,8 +14,8 @@ export default defineAppConfig({
       matchLauncher: true,
       rules: '[desc="闪屏广告"] + [text$="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12727342',
-        'https://gkd-kit.songe.li/import/13062974',
+        'https://i.gkd.li/import/12727342',
+        'https://i.gkd.li/import/13062974',
       ],
     },
   ],

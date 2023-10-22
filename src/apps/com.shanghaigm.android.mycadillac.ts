@@ -11,7 +11,7 @@ export default defineAppConfig({
         'com.shanghaigm.android.mycadillac.account.ui.LoginAnimationActivity',
       rules:
         '[id="com.shanghaigm.android.mycadillac:id/tv_close"][text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12918198',
+      snapshotUrls: 'https://i.gkd.li/import/12918198',
     },
   ],
 });

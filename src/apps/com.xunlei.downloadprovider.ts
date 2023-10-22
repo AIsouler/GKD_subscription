@@ -38,7 +38,7 @@ export default defineAppConfig({
           key: 2,
           activityIds: 'com.xunlei.downloadprovider.feedback.view',
           matches: '[id="com.xunlei.downloadprovider:id/ad_ima_skip"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12882988',
+          snapshotUrls: 'https://i.gkd.li/import/12882988',
         },
       ],
     },
@@ -76,10 +76,10 @@ export default defineAppConfig({
           matchLauncher: true,
           matches: '@[text="关闭"] +n * >n [text*="广告"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12868648',
+            'https://i.gkd.li/import/12868648',
             'https://gkd-kit.gitee.io/import/12879372',
-            'https://gkd-kit.songe.li/import/12882366',
-            'https://gkd-kit.songe.li/import/12892871',
+            'https://i.gkd.li/import/12882366',
+            'https://i.gkd.li/import/12892871',
           ],
         },
 
@@ -92,8 +92,8 @@ export default defineAppConfig({
             'Image[text=""] < @View + View +n View > View > TextView[text="广告"]',
           delay: 1000,
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12868667',
-            'https://gkd-kit.songe.li/import/12881946',
+            'https://i.gkd.li/import/12868667',
+            'https://i.gkd.li/import/12881946',
           ],
         },
 
@@ -106,8 +106,8 @@ export default defineAppConfig({
           ],
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12882132',
-            'https://gkd-kit.songe.li/import/12901374',
+            'https://i.gkd.li/import/12882132',
+            'https://i.gkd.li/import/12901374',
           ],
         },
         {
@@ -115,14 +115,14 @@ export default defineAppConfig({
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             'ImageView < FrameLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12882166',
+          snapshotUrls: 'https://i.gkd.li/import/12882166',
         },
         {
           key: 22,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12882237',
+          snapshotUrls: 'https://i.gkd.li/import/12882237',
         },
 
         // 快手广告
@@ -133,10 +133,10 @@ export default defineAppConfig({
           matches:
             'ImageView < @ViewGroup[visibleToUser=true] < ViewGroup +n ViewGroup > [text="广告"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12882199', // n = 1
-            'https://gkd-kit.songe.li/import/12881911', // n = 2
-            'https://gkd-kit.songe.li/import/12892912', // 点击目标为具备 clickable=true 的 ViewGroup，防止在这个快照中点击到下落的礼物
-            'https://gkd-kit.songe.li/import/12881976', // 限定 visibleToUser=true，防止在这个快照中误触
+            'https://i.gkd.li/import/12882199', // n = 1
+            'https://i.gkd.li/import/12881911', // n = 2
+            'https://i.gkd.li/import/12892912', // 点击目标为具备 clickable=true 的 ViewGroup，防止在这个快照中点击到下落的礼物
+            'https://i.gkd.li/import/12881976', // 限定 visibleToUser=true，防止在这个快照中误触
           ],
         },
         {
@@ -144,7 +144,7 @@ export default defineAppConfig({
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[text="广告"] <2 ViewGroup -2 ViewGroup >n [text="跳过"] + ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12881976',
+          snapshotUrls: 'https://i.gkd.li/import/12881976',
         },
         {
           key: 2,
@@ -163,7 +163,7 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches: '[id="com.xunlei.downloadprovider:id/ad_more"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12881865',
+          snapshotUrls: 'https://i.gkd.li/import/12881865',
         },
         {
           key: 1,
@@ -173,8 +173,8 @@ export default defineAppConfig({
           ],
           matches: '[id="com.xunlei.downloadprovider:id/btn_ad_feedback"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12892893',
-            'https://gkd-kit.songe.li/import/12901395',
+            'https://i.gkd.li/import/12892893',
+            'https://i.gkd.li/import/12901395',
           ],
         },
         {
@@ -182,7 +182,7 @@ export default defineAppConfig({
           key: 2,
           activityIds: 'com.xunlei.downloadprovider.download.center.newcenter',
           matches: '[id="com.xunlei.downloadprovider:id/close_ad"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/128818775',
+          snapshotUrls: 'https://i.gkd.li/import/128818775',
         },
       ],
     },
@@ -192,7 +192,7 @@ export default defineAppConfig({
       activityIds:
         'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
       rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12882892',
+      snapshotUrls: 'https://i.gkd.li/import/12882892',
     },
     {
       key: 10,
@@ -209,14 +209,14 @@ export default defineAppConfig({
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[id="com.xunlei.downloadprovider:id/all_picture_image"] + [id="com.xunlei.downloadprovider:id/close_btn"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12882928',
+          snapshotUrls: 'https://i.gkd.li/import/12882928',
         },
         {
           key: 2,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[text="立即开通"] + [id="com.xunlei.downloadprovider:id/close"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12882939',
+          snapshotUrls: 'https://i.gkd.li/import/12882939',
         },
       ],
     },

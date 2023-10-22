@@ -15,7 +15,7 @@ export default defineAppConfig({
           activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
           matches:
             '[id="com.alibaba.android.rimet:id/btn_check_detail"||text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12506211',
+          snapshotUrls: 'https://i.gkd.li/import/12506211',
         },
         {
           key: 1,

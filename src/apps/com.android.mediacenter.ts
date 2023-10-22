@@ -14,14 +14,14 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12901417',
+          snapshotUrls: 'https://i.gkd.li/import/12901417',
           exampleUrls:
             'https://github.com/gkd-kit/inspect/assets/38517192/6c34cd13-cfda-4462-99ed-2a2534a6fdf5',
         },
         {
           key: 1,
           matches: '[id="com.android.mediacenter:id/jump"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12908742',
+          snapshotUrls: 'https://i.gkd.li/import/12908742',
           exampleUrls:
             'https://github.com/gkd-kit/inspect/assets/38517192/c71bb14d-cd1f-4f9e-8ee9-6a1e11e56901',
         },

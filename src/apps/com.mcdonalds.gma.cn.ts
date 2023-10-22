@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.mcdonalds.gma.cn.activity.LaunchActivity',
       rules: '[id="com.mcdonalds.gma.cn:id/tv_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740193',
+      snapshotUrls: 'https://i.gkd.li/import/12740193',
     },
   ],
 });

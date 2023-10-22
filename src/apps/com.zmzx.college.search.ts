@@ -11,9 +11,9 @@ export default defineAppConfig({
       activityIds: 'com.zmzx.college.search.activity.init.InitActivity',
       rules: ['TextView[text^="跳过"][text.length<=3]'],
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12867875',
-        'https://gkd-kit.songe.li/import/12867970',
-        'https://gkd-kit.songe.li/import/12881929',
+        'https://i.gkd.li/import/12867875',
+        'https://i.gkd.li/import/12867970',
+        'https://i.gkd.li/import/12881929',
       ],
     },
     {
@@ -23,7 +23,7 @@ export default defineAppConfig({
       activityIds:
         'com.zmzx.college.search.activity.main.activity.MainActivity',
       rules: 'ImageView[id="com.zmzx.college.search:id/siv_dialog_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12867853',
+      snapshotUrls: 'https://i.gkd.li/import/12867853',
     },
     {
       key: 2,
@@ -36,8 +36,8 @@ export default defineAppConfig({
       ],
       rules: 'ImageView[id="com.zmzx.college.search:id/iv_close"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12867751',
-        'https://gkd-kit.songe.li/import/12894813',
+        'https://i.gkd.li/import/12867751',
+        'https://i.gkd.li/import/12894813',
       ],
     },
     {
@@ -49,7 +49,7 @@ export default defineAppConfig({
       rules:
         '@LinearLayout > ImageView[id="com.zmzx.college.search:id/tt_reward_full_count_down_after_close"]',
       quickFind: true,
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12893408',
+      snapshotUrls: 'https://i.gkd.li/import/12893408',
     },
     {
       key: 4,
@@ -59,7 +59,7 @@ export default defineAppConfig({
         'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
       ],
       rules: '[id="com.zmzx.college.search:id/close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13063381',
+      snapshotUrls: 'https://i.gkd.li/import/13063381',
     },
     {
       key: 5,
@@ -70,7 +70,7 @@ export default defineAppConfig({
         'com.zmzx.college.search.activity.main.activity.MainActivity',
       ],
       rules: '[id="com.zmzx.college.search:id/update_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13063373',
+      snapshotUrls: 'https://i.gkd.li/import/13063373',
     },
   ],
 });

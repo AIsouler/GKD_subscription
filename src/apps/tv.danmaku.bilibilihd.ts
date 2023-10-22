@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       matchLauncher: true,
       rules: '[id="tv.danmaku.bilibilihd:id/count_down"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13031261',
+      snapshotUrls: 'https://i.gkd.li/import/13031261',
     },
   ],
 });

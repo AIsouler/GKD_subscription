@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.qh.tesla.splash.SplashActivity',
       rules: '[id="com.qh.tesla:id/ad_timer"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740377',
+      snapshotUrls: 'https://i.gkd.li/import/12740377',
     },
   ],
 });

@@ -12,7 +12,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.sdo.sdaccountkey:id/tv_pass"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12934779',
+          snapshotUrls: 'https://i.gkd.li/import/12934779',
         },
       ],
     },

@@ -15,9 +15,9 @@ export default defineAppConfig({
       rules:
         '[id="me.zhouzhuo810.zznote:id/native_ad_container"] + [id^="me.zhouzhuo810.zznote:id/btn_next"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12798528',
-        'https://gkd-kit.songe.li/import/12912217',
-        'https://gkd-kit.songe.li/import/13059838',
+        'https://i.gkd.li/import/12798528',
+        'https://i.gkd.li/import/12912217',
+        'https://i.gkd.li/import/13059838',
       ],
     },
   ],

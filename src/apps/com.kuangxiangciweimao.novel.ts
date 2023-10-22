@@ -11,7 +11,7 @@ export default defineAppConfig({
         'com.kuangxiangciweimao.novel.activity.AdvertisementActivity',
       matchLauncher: true,
       rules: '[id="com.kuangxiangciweimao.novel:id/mTasksView"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13056248',
+      snapshotUrls: 'https://i.gkd.li/import/13056248',
     },
   ],
 });

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.icbc.activity.init.LoadingAdvActivity',
       rules: '[id="com.icbc:id/tv_skip_adv"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12739088',
+      snapshotUrls: 'https://i.gkd.li/import/12739088',
     },
     {
       key: 0,

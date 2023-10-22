@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.molink.john.hummingbird.activity.WellComeActivity',
       rules: '[id="com.molink.john.hummingbird:id/rl_timer"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12867595',
+      snapshotUrls: 'https://i.gkd.li/import/12867595',
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: ['[id="com.jingcai.apps.qualitydev:id/tv_toapp"]'],
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12838092',
+          snapshotUrls: 'https://i.gkd.li/import/12838092',
         },
       ],
     },

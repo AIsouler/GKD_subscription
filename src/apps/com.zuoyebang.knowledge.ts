@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.baidu.homework.activity.init.InitActivity',
       rules: 'TextView[id="com.zuoyebang.knowledge:id/btn_cancle"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13043228',
+      snapshotUrls: 'https://i.gkd.li/import/13043228',
     },
   ],
 });

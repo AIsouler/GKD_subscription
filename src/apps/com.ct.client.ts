@@ -20,8 +20,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.ct.client:id/btSkip"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12508958',
-            'https://gkd-kit.songe.li/import/12819736',
+            'https://i.gkd.li/import/12508958',
+            'https://i.gkd.li/import/12819736',
           ],
         },
       ],
@@ -33,7 +33,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ct.client.activity.UserGuideActivity',
       rules: '[id="com.ct.client:id/tvSkip"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12508971'],
+      snapshotUrls: ['https://i.gkd.li/import/12508971'],
     },
     {
       key: 2,
@@ -45,7 +45,7 @@ export default defineAppConfig({
         'com.ct.client.common.ConfirmDialogActivity',
       ],
       rules: 'LinearLayout > TextView[text="取消升级"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12819594'],
+      snapshotUrls: ['https://i.gkd.li/import/12819594'],
     },
     {
       key: 3,
@@ -60,13 +60,13 @@ export default defineAppConfig({
         {
           matches: 'ImageView[id="com.ct.client:id/close"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12819676',
-            'https://gkd-kit.songe.li/import/12913735',
+            'https://i.gkd.li/import/12819676',
+            'https://i.gkd.li/import/12913735',
           ],
         },
         {
           matches: 'ImageView[id="com.ct.client:id/ivFloatClose"]',
-          snapshotUrls: ['https://gkd-kit.songe.li/import/13043345'],
+          snapshotUrls: ['https://i.gkd.li/import/13043345'],
         },
       ],
     },
@@ -78,7 +78,7 @@ export default defineAppConfig({
         'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
       ],
       rules: 'Image[text="tishi-close"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12913804'],
+      snapshotUrls: ['https://i.gkd.li/import/12913804'],
     },
     {
       key: 5,
@@ -87,7 +87,7 @@ export default defineAppConfig({
       // quickFind: true, 实机测试使用无法跳过
       activityIds: ['com.ct.client.activity.MainActivity'],
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',
-      snapshotUrls: ['https://gkd-kit.songe.li/import/13043522'],
+      snapshotUrls: ['https://i.gkd.li/import/13043522'],
     },
   ],
 });

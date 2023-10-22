@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'online.bangumi.MainActivity',
       rules: 'TextView[text^="跳過"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12799678',
+      snapshotUrls: 'https://i.gkd.li/import/12799678',
     },
   ],
 });

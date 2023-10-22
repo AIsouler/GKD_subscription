@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: ['com.dianxinai.mobile.MainActivity'],
       rules:
         '@ViewGroup[clickable = true] > TextView[text $="s" && text.length=2]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12847518',
+      snapshotUrls: 'https://i.gkd.li/import/12847518',
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.boc.bocsoft.mobile.bocmobile.buss.system.splash.SplashActivity',
       rules: '[id="com.chinamworld.bocmbci:id/tv_timer"][text*="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12727106',
+      snapshotUrls: 'https://i.gkd.li/import/12727106',
     },
   ],
 });

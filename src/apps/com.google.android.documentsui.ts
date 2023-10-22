@@ -14,13 +14,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[text="使用此文件夹"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12799610',
+          snapshotUrls: 'https://i.gkd.li/import/12799610',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '[text="取消"] + [text="允许"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12799603',
+          snapshotUrls: 'https://i.gkd.li/import/12799603',
         },
       ],
     },

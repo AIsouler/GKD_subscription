@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.topgether.sixfoot:id/mAdsContainer"] >n [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12882503',
+      snapshotUrls: 'https://i.gkd.li/import/12882503',
     },
   ],
 });

@@ -16,8 +16,8 @@ export default defineAppConfig({
           matches:
             '[id="com.taptap.app.middle:id/decision_layout_mask"] + @[id="com.taptap.app.game:id/app_menu"][visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12840903',
-            'https://gkd-kit.songe.li/import/12842279',
+            'https://i.gkd.li/import/12840903',
+            'https://i.gkd.li/import/12842279',
             'https://gkd-kit.gitee.io/import/12864810', //需避免点击正常情况下的app menu
           ],
         },
@@ -26,7 +26,7 @@ export default defineAppConfig({
           activityIds:
             'com.taptap.game.discovery.impl.findgame.allgame.dialog.FindGameMenuDialog',
           matches: '@LinearLayout > [text="对此内容不感兴趣"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12840904',
+          snapshotUrls: 'https://i.gkd.li/import/12840904',
         },
       ],
     },

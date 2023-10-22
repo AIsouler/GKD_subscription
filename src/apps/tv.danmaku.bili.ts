@@ -81,7 +81,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12642260', // n = 2
             'https://gkd-kit.gitee.io/import/12705266', // n = 3
-            'https://gkd-kit.songe.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
+            'https://i.gkd.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
             'https://gkd-kit.gitee.io/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
           ],
         },

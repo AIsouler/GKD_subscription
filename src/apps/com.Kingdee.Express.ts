@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.Kingdee.Express.module.splash.SplashActivity',
       rules:
         '[id="com.Kingdee.Express:id/rl_splash_container"] >n [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12775998',
+      snapshotUrls: 'https://i.gkd.li/import/12775998',
     },
   ],
 });

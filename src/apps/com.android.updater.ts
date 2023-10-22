@@ -16,7 +16,7 @@ export default defineAppConfig({
         '[id="com.android.updater:id/alertTitle"][text="开启智能更新"] < * +2 * > Button[id="android:id/button2"][text="暂不开启"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12715712',
-        'https://gkd-kit.songe.li/import/12749906',
+        'https://i.gkd.li/import/12749906',
       ],
     },
   ],

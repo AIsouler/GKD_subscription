@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'run.xbud.android.mvp.ui.other.SplashActivity',
       rules: '[id="run.xbud.android:id/bodyLayout"] >n [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12777125',
+      snapshotUrls: 'https://i.gkd.li/import/12777125',
     },
     {
       key: 1,
@@ -18,8 +18,8 @@ export default defineAppConfig({
       rules:
         '[id="run.xbud.android:id/ksad_tk_view"] >n @ViewGroup[clickable=true] > ImageView',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12777133',
-        'https://gkd-kit.songe.li/import/12777134',
+        'https://i.gkd.li/import/12777133',
+        'https://i.gkd.li/import/12777134',
       ],
     },
   ],

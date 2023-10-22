@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.taobao.sns.app.advertise.SplashAdActivity',
       rules: '[id!=null][text^="跳过"][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12727451',
+      snapshotUrls: 'https://i.gkd.li/import/12727451',
     },
     {
       key: 1,
@@ -25,7 +25,7 @@ export default defineAppConfig({
             '[text="更新提示"] < LinearLayout < LinearLayout +(2) ScrollView >(2) [text="取消"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12684250',
-            'https://gkd-kit.songe.li/import/12727457', // activityId: 'com.taobao.etao.app.home.view.NewHomeActivity'
+            'https://i.gkd.li/import/12727457', // activityId: 'com.taobao.etao.app.home.view.NewHomeActivity'
             'https://gkd-kit.gitee.io/import/12684244', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
@@ -40,7 +40,7 @@ export default defineAppConfig({
           activityIds: 'com.taobao.etao.app.home.view.NewHomeActivity',
           matches:
             'LinearLayout > FrameLayout + RelativeLayout > ImageView[id!=null][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12739581',
+          snapshotUrls: 'https://i.gkd.li/import/12739581',
         },
       ],
     },

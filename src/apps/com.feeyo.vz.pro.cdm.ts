@@ -14,13 +14,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12884347',
+          snapshotUrls: 'https://i.gkd.li/import/12884347',
         },
         {
           key: 1,
           matches:
             '[id="com.feeyo.vz.pro.cdm:id/splashAdContainer"] >n [text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12893753',
+          snapshotUrls: 'https://i.gkd.li/import/12893753',
         },
       ],
     },

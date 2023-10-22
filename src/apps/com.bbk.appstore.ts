@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: ['com.bbk.appstore.ui.AppStore'],
       rules:
         '[id="com.bbk.appstore:id/launch_activity_root_layout"] >6 [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12847395',
+      snapshotUrls: 'https://i.gkd.li/import/12847395',
     },
   ],
 });

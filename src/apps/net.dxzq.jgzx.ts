@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="net.dxzq.jgzx:id/tv_m"][text="跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12852136',
+          snapshotUrls: 'https://i.gkd.li/import/12852136',
         },
       ],
     },

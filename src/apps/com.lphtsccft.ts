@@ -37,7 +37,7 @@ export default defineAppConfig({
       name: '右侧悬浮广告',
       activityIds: 'com.lphtsccft.zhangle.main.MainActivity',
       rules: '[id="com.lphtsccft:id/home_float_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12892821',
+      snapshotUrls: 'https://i.gkd.li/import/12892821',
     },
   ],
 });

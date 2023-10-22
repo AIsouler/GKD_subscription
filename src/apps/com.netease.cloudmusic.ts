@@ -22,7 +22,7 @@ export default defineAppConfig({
           activityIds:
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
           matches: '[text="直接关闭"]',
-          snapshotUrls: ['https://gkd-kit.songe.li/import/12829967'],
+          snapshotUrls: ['https://i.gkd.li/import/12829967'],
         },
         {
           activityIds: [
@@ -33,7 +33,7 @@ export default defineAppConfig({
           ],
           matches: '[id="com.netease.cloudmusic:id/adTagClose"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12829944',
+            'https://i.gkd.li/import/12829944',
             'https://gkd-kit.gitee.io/import/12723229',
             'https://gkd-kit.gitee.io/import/12829938',
             'https://gkd-kit.gitee.io/import/12829964',
@@ -55,7 +55,7 @@ export default defineAppConfig({
       name: '主页-免费听歌',
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules: ['@ImageView + ViewGroup > TextView[text="VIP歌曲免费听30分钟"]'],
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12843383'],
+      snapshotUrls: ['https://i.gkd.li/import/12843383'],
     },
   ],
 });

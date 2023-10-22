@@ -36,7 +36,7 @@ export default defineAppConfig({
           key: 1,
           matches:
             '@[id="com.estrongs.android.pop:id/close"] + [id^="com.estrongs.android.pop:id/ad_flag_source"]',
-          snapshotUrls: ['https://gkd-kit.songe.li/import/12818281'],
+          snapshotUrls: ['https://i.gkd.li/import/12818281'],
         },
       ],
     },

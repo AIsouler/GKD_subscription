@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.zeekrlife.mobile:id/main_adv_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12846375',
+      snapshotUrls: 'https://i.gkd.li/import/12846375',
     },
   ],
 });

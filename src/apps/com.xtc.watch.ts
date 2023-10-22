@@ -19,8 +19,8 @@ export default defineAppConfig({
             '[id="com.xtc.watch:id/iv_close"]',
           ],
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/13059965',
-            'https://gkd-kit.songe.li/import/13063274',
+            'https://i.gkd.li/import/13059965',
+            'https://i.gkd.li/import/13063274',
           ],
         },
       ],

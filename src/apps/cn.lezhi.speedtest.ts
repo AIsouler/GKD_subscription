@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'cn.lezhi.speedtest.main5.MainV5Activity',
       rules:
         '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >n [id="cn.lezhi.speedtest:id/iv_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12727619',
+      snapshotUrls: 'https://i.gkd.li/import/12727619',
     },
   ],
 });

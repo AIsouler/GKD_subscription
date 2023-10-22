@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.mangshe.tvdown:id/skip_view2"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12854596',
+          snapshotUrls: 'https://i.gkd.li/import/12854596',
         },
       ],
     },

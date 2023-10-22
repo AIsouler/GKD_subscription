@@ -12,13 +12,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.qq.qcloud:id/gdt_ad_text"] + ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12755789',
+          snapshotUrls: 'https://i.gkd.li/import/12755789',
         },
         {
           key: 1,
           matches:
             '[text^="互动广告"] + @LinearLayout[clickable=true] > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12755799',
+          snapshotUrls: 'https://i.gkd.li/import/12755799',
         },
       ],
     },

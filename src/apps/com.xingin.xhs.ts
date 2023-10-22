@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',
       rules: '[text="广告"] - @FrameLayout > [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12739065',
+      snapshotUrls: 'https://i.gkd.li/import/12739065',
     },
   ],
 });

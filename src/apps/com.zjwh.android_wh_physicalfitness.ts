@@ -49,8 +49,8 @@ export default defineAppConfig({
           matches:
             '[id="com.kwad.dy.sdk:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[clickable=true] > ImageView',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12826112',
-            'https://gkd-kit.songe.li/import/12826124',
+            'https://i.gkd.li/import/12826112',
+            'https://i.gkd.li/import/12826124',
           ],
         },
       ],

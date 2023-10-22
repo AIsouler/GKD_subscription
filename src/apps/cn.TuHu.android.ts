@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="cn.TuHu.android:id/rl_activity_welcome_jump"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12846408',
+      snapshotUrls: 'https://i.gkd.li/import/12846408',
     },
   ],
 });

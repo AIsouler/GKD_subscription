@@ -10,7 +10,7 @@ export default defineAppConfig({
       // quickFind: true, 实机测试会导致无法点击
       activityIds: 'com.xuexiaoyi.entrance.splash.SplashActivity',
       rules: 'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12895001',
+      snapshotUrls: 'https://i.gkd.li/import/12895001',
     },
   ],
 });

@@ -18,8 +18,8 @@ export default defineAppConfig({
           matches: 'TextView[text^="跳过"][clickable=true]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12472597',
-            'https://gkd-kit.songe.li/import/12877626',
-            'https://gkd-kit.songe.li/import/12988458',
+            'https://i.gkd.li/import/12877626',
+            'https://i.gkd.li/import/12988458',
           ],
         },
         {
@@ -115,7 +115,7 @@ export default defineAppConfig({
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules:
         'ViewGroup > [id="com.baidu.netdisk:id/background_image"] +n [id="com.baidu.netdisk:id/iv_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783106',
+      snapshotUrls: 'https://i.gkd.li/import/12783106',
     },
   ],
 });

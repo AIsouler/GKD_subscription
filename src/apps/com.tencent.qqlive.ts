@@ -91,7 +91,7 @@ export default defineAppConfig({
           name: '点击左下角广告横幅右上角x',
           matches:
             'FrameLayout[childCount=2] > FrameLayout > RelativeLayout > View[id!=null][clickable=true]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13043079',
+          snapshotUrls: 'https://i.gkd.li/import/13043079',
         },
       ],
     },
@@ -110,7 +110,7 @@ export default defineAppConfig({
           key: 1,
           matches:
             'RelativeLayout > FrameLayout + @ImageView[clickable=true] + ImageView + ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12777344',
+          snapshotUrls: 'https://i.gkd.li/import/12777344',
         },
       ],
     },

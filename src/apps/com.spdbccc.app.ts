@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.spdbccc.app.sp.splash.activity.SplashActivity',
       rules: '[id="com.spdbccc.app:id/tv_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740270',
+      snapshotUrls: 'https://i.gkd.li/import/12740270',
     },
   ],
 });

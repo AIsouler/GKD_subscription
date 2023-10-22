@@ -15,8 +15,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12894158', // chuxin.shimo.shimowendang.launchad.mediatom.MediatomActivity
-        'https://gkd-kit.songe.li/import/12894163', // chuxin.shimo.shimowendang.MainActivity
+        'https://i.gkd.li/import/12894158', // chuxin.shimo.shimowendang.launchad.mediatom.MediatomActivity
+        'https://i.gkd.li/import/12894163', // chuxin.shimo.shimowendang.MainActivity
       ],
     },
   ],

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.baidu.baike.activity.SplashActivity',
       rules: '[id="com.baidu.baike:id/btn_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12755714',
+      snapshotUrls: 'https://i.gkd.li/import/12755714',
     },
     {
       key: 10,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       desc: '自动点击【不允许】',
       activityIds: 'com.baidu.baike.component.push.NotificationEnableDialog',
       rules: '[text^="打开推送通知"] +2 [text="不允许"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12755717',
+      snapshotUrls: 'https://i.gkd.li/import/12755717',
     },
   ],
 });

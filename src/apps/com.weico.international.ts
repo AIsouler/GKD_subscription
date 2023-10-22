@@ -15,7 +15,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12509123',
         'https://gkd-kit.gitee.io/import/12510132',
-        'https://gkd-kit.songe.li/import/12740537', // activityId: 'com.sina.weibo.ad'
+        'https://i.gkd.li/import/12740537', // activityId: 'com.sina.weibo.ad'
       ],
     },
     {
@@ -42,7 +42,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12505753',
             'https://gkd-kit.gitee.io/import/12505763',
-            'https://gkd-kit.songe.li/import/12857202',
+            'https://i.gkd.li/import/12857202',
           ],
         },
       ],

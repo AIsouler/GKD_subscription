@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'io.dcloud.H55BDF6BE.activity.FullADSActivity',
       matchLauncher: true,
       rules: '[id="io.dcloud.H55BDF6BE:id/tv_time"][text$="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13031273',
+      snapshotUrls: 'https://i.gkd.li/import/13031273',
     },
   ],
 });

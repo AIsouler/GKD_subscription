@@ -11,8 +11,8 @@ export default defineAppConfig({
       activityIds: 'com.jincheng.supercaculator.activity.MainActivity',
       rules: '@Image < View < View TextView[text = "反馈"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12859523',
-        'https://gkd-kit.songe.li/import/12859545',
+        'https://i.gkd.li/import/12859523',
+        'https://i.gkd.li/import/12859545',
       ],
     },
   ],

@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12846783',
+      snapshotUrls: 'https://i.gkd.li/import/12846783',
     },
   ],
 });

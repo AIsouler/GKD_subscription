@@ -22,7 +22,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[text="稍候再说"] + [text="立即更新"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12727278',
+          snapshotUrls: 'https://i.gkd.li/import/12727278',
         },
       ],
     },

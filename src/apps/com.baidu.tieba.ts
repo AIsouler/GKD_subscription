@@ -25,7 +25,7 @@ export default defineAppConfig({
           matches:
             'TextView[text*="广告"||text.length=1] - TextView[text^="跳过"][text.length=5||text.length=2]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12775906',
+            'https://i.gkd.li/import/12775906',
             'https://gkd-kit.gitee.io/import/12566191',
           ],
         },
@@ -41,7 +41,7 @@ export default defineAppConfig({
       key: 1,
       name: '任意界面-选择不喜欢理由-不感兴趣',
       rules: '@View[text=null] - TextView[text="选择不喜欢理由"][index=0]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12775914',
+      snapshotUrls: 'https://i.gkd.li/import/12775914',
     },
     {
       key: 2,
@@ -56,7 +56,7 @@ export default defineAppConfig({
           matches:
             'TextView[text$="广告"] <n RelativeLayout <n LinearLayout - RelativeLayout > LinearLayout > FrameLayout +n RelativeLayout > LinearLayout',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12775930',
+            'https://i.gkd.li/import/12775930',
             'https://gkd-kit.gitee.io/import/12840951',
           ],
         },
@@ -99,9 +99,9 @@ export default defineAppConfig({
           matches:
             'TextView[text$="广告"] +n FrameLayout[id="com.baidu.tieba:id/obfuscated"] >n @FrameLayout[clickable=true] > ImageView[id=null]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12775913', // com.baidu.tieba.pb.pb.main.PbActivity
-            'https://gkd-kit.songe.li/import/13043133', // com.baidu.tieba.tblauncher.MainTabActivity
-            'https://gkd-kit.songe.li/import/13054256',
+            'https://i.gkd.li/import/12775913', // com.baidu.tieba.pb.pb.main.PbActivity
+            'https://i.gkd.li/import/13043133', // com.baidu.tieba.tblauncher.MainTabActivity
+            'https://i.gkd.li/import/13054256',
           ],
         },
         {
@@ -109,8 +109,8 @@ export default defineAppConfig({
           matches:
             'TextView[text$="广告"] < RelativeLayout <n LinearLayout - RelativeLayout >n @FrameLayout > ImageView[id=null][desc=null]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12775916',
-            'https://gkd-kit.songe.li/import/12775892', // 指定点击目标为具备 clickable=true 属性的 @FrameLayout，防止在这个快照误触点击收藏
+            'https://i.gkd.li/import/12775916',
+            'https://i.gkd.li/import/12775892', // 指定点击目标为具备 clickable=true 属性的 @FrameLayout，防止在这个快照误触点击收藏
           ],
         },
       ],
@@ -139,7 +139,7 @@ export default defineAppConfig({
       activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
       rules:
         'LinearLayout > RelativeLayout > ImageView[id=null][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12775882',
+      snapshotUrls: 'https://i.gkd.li/import/12775882',
     },
     {
       key: 9,

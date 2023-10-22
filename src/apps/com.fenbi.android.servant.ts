@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.fenbi.android.servant:id/count_down_view"]',
-          snapshotUrls: 'https://gkd-kit.vercel.app/import/12999805',
+          snapshotUrls: 'https://i.gkd.li/import/12999805',
         },
       ],
     },
@@ -22,7 +22,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.fenbi.android.servant:id/close"]',
-          snapshotUrls: 'https://gkd-kit.vercel.app/import/12999725',
+          snapshotUrls: 'https://i.gkd.li/import/12999725',
         },
       ],
     },

@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.videogo:id/ad_skip_tv"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12565356',
+          snapshotUrls: 'https://i.gkd.li/import/12565356',
         },
       ],
     },

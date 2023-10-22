@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.jujie.xbreader.ad.SplashActivity',
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12840884',
+      snapshotUrls: 'https://i.gkd.li/import/12840884',
     },
   ],
 });

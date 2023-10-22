@@ -34,7 +34,7 @@ export default defineAppConfig({
       matchLauncher: true,
       rules:
         '[id="com.duowan.kiwi:id/hyui_dialog_button_positive"][text="我知道了"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12908790',
+      snapshotUrls: 'https://i.gkd.li/import/12908790',
     },
     {
       key: 2,

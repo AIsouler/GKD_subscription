@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
       rules: '[id="com.eastmoney.android.fund:id/ad_ignore"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12781533',
+      snapshotUrls: 'https://i.gkd.li/import/12781533',
     },
     {
       key: 1,

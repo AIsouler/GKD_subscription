@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'im.xingzhe.activity.LaunchActivity',
       matchLauncher: true,
       rules: '[id="im.xingzhe:id/count_text"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13031282',
+      snapshotUrls: 'https://i.gkd.li/import/13031282',
     },
   ],
 });

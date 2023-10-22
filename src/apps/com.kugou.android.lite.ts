@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds:
         'com.kugou.android.app.splash.adcontainer.AdContainerActivity',
       rules: '@[desc="跳过"] - FrameLayout >n [text="互动广告"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12919282',
+      snapshotUrls: 'https://i.gkd.li/import/12919282',
     },
   ],
 });

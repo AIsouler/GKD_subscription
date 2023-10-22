@@ -22,10 +22,10 @@ export default defineAppConfig({
             '[id="com.jdd.motorfans:id/ad_content"] >n [id="com.jdd.motorfans:id/iv_close"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12733646',
-            'https://gkd-kit.songe.li/import/12798654',
-            'https://gkd-kit.songe.li/import/12878843',
-            'https://gkd-kit.songe.li/import/12840710',
-            'https://gkd-kit.songe.li/import/12913956', // com.jdd.motorfans.modules.base.FragmentContainerActivity
+            'https://i.gkd.li/import/12798654',
+            'https://i.gkd.li/import/12878843',
+            'https://i.gkd.li/import/12840710',
+            'https://i.gkd.li/import/12913956', // com.jdd.motorfans.modules.base.FragmentContainerActivity
           ],
           exampleUrls:
             'https://user-images.githubusercontent.com/44717382/270852019-b0296eaa-a378-49b3-877b-acefca2a7d58.gif',

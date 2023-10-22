@@ -56,8 +56,8 @@ export default defineAppConfig({
       activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',
       rules: '[id$="ad_read_close"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12881810',
-        'https://gkd-kit.songe.li/import/12893631',
+        'https://i.gkd.li/import/12881810',
+        'https://i.gkd.li/import/12893631',
       ],
     },
   ],

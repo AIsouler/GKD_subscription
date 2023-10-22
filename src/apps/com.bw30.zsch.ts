@@ -11,9 +11,9 @@ export default defineAppConfig({
       quickFind: true,
       rules: 'TextView[id="com.bw30.zsch:id/timer_text"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12882959',
-        'https://gkd-kit.songe.li/import/12882967',
-        'https://gkd-kit.songe.li/import/12882991',
+        'https://i.gkd.li/import/12882959',
+        'https://i.gkd.li/import/12882967',
+        'https://i.gkd.li/import/12882991',
       ],
     },
   ],

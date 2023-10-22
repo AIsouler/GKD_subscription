@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.taobao.ltao.maintab.MainFrameActivity',
       rules:
         '[id="com.taobao.litetao:id/root_layout"] > TextView[text^="还剩"&&text$="秒"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12774851',
+      snapshotUrls: 'https://i.gkd.li/import/12774851',
     },
     {
       key: 1,
@@ -21,8 +21,8 @@ export default defineAppConfig({
       ],
       rules: '[id = "com.taobao.litetao:id/update_imageview_cancel_v2"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12843615',
-        'https://gkd-kit.songe.li/import/12843614',
+        'https://i.gkd.li/import/12843615',
+        'https://i.gkd.li/import/12843614',
       ],
     },
   ],

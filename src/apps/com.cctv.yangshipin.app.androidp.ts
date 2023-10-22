@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
       rules:
         '[id="com.cctv.yangshipin.app.androidp:id/ad_container"] >n [text$="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12774838',
+      snapshotUrls: 'https://i.gkd.li/import/12774838',
     },
   ],
 });

@@ -22,7 +22,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12847323',
         'https://gkd-kit.gitee.io/import/12847336',
-        'https://gkd-kit.songe.li/import/13063271', // 限定 [clickable=true] 防止在此快照中点击左上角头像
+        'https://i.gkd.li/import/13063271', // 限定 [clickable=true] 防止在此快照中点击左上角头像
       ],
     },
     {

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.sinovatech.unicom.basic.ui.activity.WelcomeClient',
       rules: '[id="com.sinovatech.unicom.ui:id/welcome_advertise_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12535185',
+      snapshotUrls: 'https://i.gkd.li/import/12535185',
     },
   ],
 });

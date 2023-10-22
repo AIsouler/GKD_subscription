@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.tencent.zebra:id/splash_container"] + [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12893521',
+      snapshotUrls: 'https://i.gkd.li/import/12893521',
     },
   ],
 });

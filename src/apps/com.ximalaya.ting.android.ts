@@ -50,7 +50,7 @@ export default defineAppConfig({
           key: 1,
           name: '喜马小游戏广告',
           matches: '[id="com.ximalaya.ting.android:id/host_game_close_tv"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12927110',
+          snapshotUrls: 'https://i.gkd.li/import/12927110',
         },
       ],
     },
@@ -150,7 +150,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12869426',
+      snapshotUrls: 'https://i.gkd.li/import/12869426',
     },
   ],
 });

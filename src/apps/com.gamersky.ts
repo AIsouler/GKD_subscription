@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'View[clickable= true] + TextView[text ^= "跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12848922',
+          snapshotUrls: 'https://i.gkd.li/import/12848922',
         },
         {
           matches: '[id="com.gamersky:id/jump"]',
