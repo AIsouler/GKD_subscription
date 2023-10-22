@@ -17,10 +17,12 @@ export default defineAppConfig({
       key: 1,
       name: '悬浮广告',
       activityIds: 'com.tencent.mocmna.activity.MainActivity',
-      rules: 'ViewGroup[childCount=2] > @ImageView[id!=null] + ImageView',
+      rules:
+        'ViewGroup[childCount=2] > @ImageView[id!=null][clickable=true] + ImageView',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12847323',
         'https://gkd-kit.gitee.io/import/12847336',
+        'https://gkd-kit.songe.li/import/13063271', // 限定 [clickable=true] 防止在此快照中点击左上角头像
       ],
     },
     {
