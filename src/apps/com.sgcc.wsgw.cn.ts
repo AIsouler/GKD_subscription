@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.sgcc.wsgw.mainbundle.NewsSyRemind2Activity',
       rules:
         '[id="com.sgcc.wsgw.cn:id/news_remind_laytout"] > RelativeLayout > [id="com.sgcc.wsgw.cn:id/btn_remind_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12745042',
+      snapshotUrls: 'https://i.gkd.li/import/12745042',
     },
   ],
 });

@@ -23,7 +23,7 @@ export default defineAppConfig({
             '[text="根据相关法律法规要求，请尽快完成花呗升级"]',
             'FrameLayout > FrameLayout  > FrameLayout > [text="关闭"]',
           ],
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12826077',
+          snapshotUrls: 'https://i.gkd.li/import/12826077',
         },
       ],
     },
@@ -34,7 +34,7 @@ export default defineAppConfig({
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules:
         '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text^="开启定位权限"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12792688',
+      snapshotUrls: 'https://i.gkd.li/import/12792688',
     },
   ],
 });

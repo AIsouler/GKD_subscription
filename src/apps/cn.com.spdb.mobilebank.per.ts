@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'cn.com.spdb.mobilebank.per.activity.MainActivity',
       rules:
         '[id="cn.com.spdb.mobilebank.per:id/splash_tb_time"][text$="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740308',
+      snapshotUrls: 'https://i.gkd.li/import/12740308',
     },
   ],
 });

@@ -12,7 +12,7 @@ export default defineAppConfig({
         '[id="com.autonavi.minimap:id/fl_splash_container"] >n [text^="跳过"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12667556',
-        'https://gkd-kit.songe.li/import/12750045',
+        'https://i.gkd.li/import/12750045',
       ],
     },
     {
@@ -33,7 +33,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12642842',
         'https://gkd-kit.gitee.io/import/12642845',
-        'https://gkd-kit.songe.li/import/12818770', // 限定 ImageView[visibleToUser=true]，防止控件不可见时触发规则
+        'https://i.gkd.li/import/12818770', // 限定 ImageView[visibleToUser=true]，防止控件不可见时触发规则
       ],
     },
     {

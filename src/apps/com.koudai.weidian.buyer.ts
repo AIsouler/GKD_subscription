@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.koudai.weidian.buyer.activity.SplashActivity',
       rules: '[id="com.koudai.weidian.buyer:id/skip_view"||text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12506297',
+      snapshotUrls: 'https://i.gkd.li/import/12506297',
     },
   ],
 });

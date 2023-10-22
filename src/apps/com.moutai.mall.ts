@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.moutai.mall.module.splash.SplashActivity',
       rules: '[id="com.moutai.mall:id/tvSkip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12745150',
+      snapshotUrls: 'https://i.gkd.li/import/12745150',
     },
     {
       key: 1,
@@ -21,8 +21,8 @@ export default defineAppConfig({
       rules:
         '[id="com.moutai.mall:id/ivPic"] + ViewGroup + [id="com.moutai.mall:id/vClose"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12745130', // activityId: 'com.moutai.mall.MainActivity'
-        'https://gkd-kit.songe.li/import/12745153', // activityId: 'com.moutai.mall.module.splash.SplashActivity'
+        'https://i.gkd.li/import/12745130', // activityId: 'com.moutai.mall.MainActivity'
+        'https://i.gkd.li/import/12745153', // activityId: 'com.moutai.mall.module.splash.SplashActivity'
       ],
     },
     {
@@ -32,7 +32,7 @@ export default defineAppConfig({
       activityIds: 'com.moutai.mall.MainActivity',
       rules:
         '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12745142',
+      snapshotUrls: 'https://i.gkd.li/import/12745142',
     },
   ],
 });

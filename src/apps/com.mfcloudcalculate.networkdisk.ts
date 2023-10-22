@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches:
             '[id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"] >n [text^="跳过"][text.length<=4]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12846434',
-            'https://gkd-kit.songe.li/import/13059834',
+            'https://i.gkd.li/import/12846434',
+            'https://i.gkd.li/import/13059834',
           ],
         },
       ],

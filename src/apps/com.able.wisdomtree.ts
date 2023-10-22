@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: ['[id="com.able.wisdomtree:id/tv_skip"]'],
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12838048',
+          snapshotUrls: 'https://i.gkd.li/import/12838048',
         },
       ],
     },
@@ -25,7 +25,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.able.wisdomtree.widget.MyAlertDialog',
       rules: 'TextView[id="com.able.wisdomtree:id/negativeButton"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12909620',
+      snapshotUrls: 'https://i.gkd.li/import/12909620',
     },
   ],
 });

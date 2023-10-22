@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.sec.android.app.samsungapps:id/skip"]',
-          snapshotUrls: ['https://gkd-kit.songe.li/import/12674484'],
+          snapshotUrls: ['https://i.gkd.li/import/12674484'],
         },
       ],
     },

@@ -11,9 +11,9 @@ export default defineAppConfig({
       rules:
         '[id$="/tt_splash_skip_btn"||id$="/start_page_count_down_tv"||text$="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12505985',
-        'https://gkd-kit.songe.li/import/12506014',
-        'https://gkd-kit.songe.li/import/12506041',
+        'https://i.gkd.li/import/12505985',
+        'https://i.gkd.li/import/12506014',
+        'https://i.gkd.li/import/12506041',
       ],
     },
   ],

@@ -28,7 +28,7 @@ export default defineAppConfig({
       ],
       rules:
         '[id="com.hunantv.imgo.activity:id/llSetAgeMode"] + [id="com.hunantv.imgo.activity:id/btnIknow"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12832447',
+      snapshotUrls: 'https://i.gkd.li/import/12832447',
     },
     {
       key: 1,
@@ -58,12 +58,12 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.hunantv.imgo.activity:id/imgPromotion"] + [id="com.hunantv.imgo.activity:id/vClosePromotionView"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12818464',
+          snapshotUrls: 'https://i.gkd.li/import/12818464',
         },
         {
           key: 1,
           matches: '@TextView[id=null][text=""] - View > Image[id="hotGif"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12818528',
+          snapshotUrls: 'https://i.gkd.li/import/12818528',
         },
       ],
     },
@@ -76,13 +76,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@[id="com.hunantv.imgo.activity:id/apperience_close"] + [id="com.hunantv.imgo.activity:id/apperience_enter"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12818430',
+          snapshotUrls: 'https://i.gkd.li/import/12818430',
         },
         {
           key: 1,
           matches:
             '@[id="com.hunantv.imgo.activity:id/iv_float_close"] + [id="com.hunantv.imgo.activity:id/iv_float_content"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12818481',
+          snapshotUrls: 'https://i.gkd.li/import/12818481',
         },
       ],
     },

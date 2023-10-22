@@ -25,7 +25,7 @@ export default defineAppConfig({
         'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
       rules:
         '[id="com.yitong.mbank.psbc:id/iv_theme"] + [id="com.yitong.mbank.psbc:id/iv_theme_close_btn"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12755516',
+      snapshotUrls: 'https://i.gkd.li/import/12755516',
     },
   ],
 });

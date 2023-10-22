@@ -20,7 +20,7 @@ export default defineAppConfig({
           activityIds: 'com.dmzj.manhua.ui.home.HomeTabsActivitys',
           matches:
             'ImageView < FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12893731',
+          snapshotUrls: 'https://i.gkd.li/import/12893731',
         },
       ],
     },

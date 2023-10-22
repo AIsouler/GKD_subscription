@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.lphtsccft.zhangle.startup.SplashScreenActivity',
       rules: '[id="com.lphtsccft.zlqqt2:id/countdown_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12774860',
+      snapshotUrls: 'https://i.gkd.li/import/12774860',
     },
   ],
 });

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
       rules: 'TextView[id="com.sankuai.meituan:id/close_btn"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12749811',
+      snapshotUrls: 'https://i.gkd.li/import/12749811',
     },
     {
       key: 1,
@@ -81,7 +81,7 @@ export default defineAppConfig({
           activityIds: 'com.meituan.mmp.lib.HeraActivity',
           matches:
             'View[childCount=3] > View + TextView + TextView[text=""][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12739204',
+          snapshotUrls: 'https://i.gkd.li/import/12739204',
         },
       ],
     },

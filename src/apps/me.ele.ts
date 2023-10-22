@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'me.ele.application.ui.splash.SplashActivity',
       rules: '[id="me.ele:id/skip_button"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12534930',
+      snapshotUrls: 'https://i.gkd.li/import/12534930',
     },
     {
       key: 1,
@@ -42,7 +42,7 @@ export default defineAppConfig({
       activityIds: 'me.ele.component.pops2.Pops2MistDialog',
       rules:
         '[id="me.ele:id/id_magex_mistview"] > ImageView + ImageView[id=null][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12726709',
+      snapshotUrls: 'https://i.gkd.li/import/12726709',
     },
   ],
 });

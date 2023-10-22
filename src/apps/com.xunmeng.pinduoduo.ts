@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.MainFrameActivity'],
       rules: ['RelativeLayout > TextView[id!=null][text^="跳过"]'],
-      snapshotUrls: ['https://gkd-kit.songe.li/import/12799632'],
+      snapshotUrls: ['https://i.gkd.li/import/12799632'],
     },
     {
       key: 1,

@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '[id="com.mxbc.mxsa:id/count_down"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12840093',
+          snapshotUrls: 'https://i.gkd.li/import/12840093',
         },
       ],
     },
@@ -24,7 +24,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '[id="com.mxbc.mxsa:id/close"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12929345',
+          snapshotUrls: 'https://i.gkd.li/import/12929345',
         },
       ],
     },

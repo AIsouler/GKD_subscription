@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.mobi.shtp.activity.login.AdvActivity',
       rules:
         '[id="com.mobi.shtp:id/ll_adv_img"] + [id="com.mobi.shtp:id/tv_count"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740073',
+      snapshotUrls: 'https://i.gkd.li/import/12740073',
     },
   ],
 });

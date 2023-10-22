@@ -56,7 +56,7 @@ export default defineAppConfig({
             '[id="com.ksf.yyx:id/ksad_container"] TextView[text="广告"] <2 ViewGroup -n ViewGroup[childCount=1] > @ViewGroup[childCount=1 && clickable=true] > ImageView',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12775923',
-            'https://gkd-kit.songe.li/import/12998899',
+            'https://i.gkd.li/import/12998899',
           ],
         },
         {

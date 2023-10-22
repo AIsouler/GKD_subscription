@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.digitalchina.mobile.dfhfz1:id/tv_skip"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12846137',
+      snapshotUrls: 'https://i.gkd.li/import/12846137',
     },
   ],
 });

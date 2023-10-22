@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: 'bin.mt.plus.Main',
       rules: '@[text="取消"] + [text="更新"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12908784',
+      snapshotUrls: 'https://i.gkd.li/import/12908784',
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.alipay.mobile.quinox.LauncherActivity',
       rules:
         '[id="com.antfortune.wealth:id/welcome_page"] > RelativeLayout + View',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12776577',
+      snapshotUrls: 'https://i.gkd.li/import/12776577',
     },
   ],
 });

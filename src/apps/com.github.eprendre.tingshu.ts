@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.github.eprendre.tingshu.ui.SplashActivity',
       rules:
         '[id="com.github.eprendre.tingshu:id/frame_layout"] >n [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783430',
+      snapshotUrls: 'https://i.gkd.li/import/12783430',
     },
     {
       key: 1,
@@ -19,7 +19,7 @@ export default defineAppConfig({
         'com.github.eprendre.tingshu.ui.search.AggregateSearchActivity',
       rules:
         '[id="com.github.eprendre.tingshu:id/banner_container"] >n FrameLayout > ImageView +2 FrameLayout > ImageView',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783466',
+      snapshotUrls: 'https://i.gkd.li/import/12783466',
     },
   ],
 });

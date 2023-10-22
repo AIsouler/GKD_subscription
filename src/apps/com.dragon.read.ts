@@ -18,7 +18,7 @@ export default defineAppConfig({
         },
         {
           matches: '@ImageView - LinearLayout TextView[text="广告"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12908734',
+          snapshotUrls: 'https://i.gkd.li/import/12908734',
         },
         {
           matches:
@@ -52,7 +52,7 @@ export default defineAppConfig({
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
           matches:
             '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"] ',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12910159',
+          snapshotUrls: 'https://i.gkd.li/import/12910159',
         },
       ],
     },

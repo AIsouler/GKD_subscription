@@ -12,7 +12,7 @@ export default defineAppConfig({
         '[id="com.lptiyu.tanke:id/interact_ad_root"] >n [id="com.lptiyu.tanke:id/iv_close"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12829816',
-        'https://gkd-kit.songe.li/import/12869344',
+        'https://i.gkd.li/import/12869344',
       ],
     },
   ],

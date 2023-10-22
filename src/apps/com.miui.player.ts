@@ -15,7 +15,7 @@ export default defineAppConfig({
         '@TextView[text$=`跳过`] + TextView[id="com.miui.player:id/ad_view"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12700962',
-        'https://gkd-kit.songe.li/import/12852707',
+        'https://i.gkd.li/import/12852707',
       ],
     },
     {

@@ -10,7 +10,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: 'com.guwendao.gwd.MainActivity',
       rules: '[text="应用升级提醒"] +n LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12776605',
+      snapshotUrls: 'https://i.gkd.li/import/12776605',
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12776607',
+          snapshotUrls: 'https://i.gkd.li/import/12776607',
         },
         {
           activityIds:
@@ -29,13 +29,13 @@ export default defineAppConfig({
           key: 1,
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12777151',
+          snapshotUrls: 'https://i.gkd.li/import/12777151',
         },
         {
           key: 2,
           matches:
             '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12781344',
+          snapshotUrls: 'https://i.gkd.li/import/12781344',
         },
         {
           key: 3,
@@ -50,7 +50,7 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           key: 10,
           matches: '@Image[id=null] < View + View + TextView[text="反馈"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12781327',
+          snapshotUrls: 'https://i.gkd.li/import/12781327',
         },
       ],
     },

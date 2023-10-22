@@ -10,7 +10,7 @@ export default defineAppConfig({
       matchLauncher: true,
       activityIds: 'com.leduoworks.gpstoolbox.newest.StarterActivity',
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13062600',
+      snapshotUrls: 'https://i.gkd.li/import/13062600',
     },
     {
       key: 1,

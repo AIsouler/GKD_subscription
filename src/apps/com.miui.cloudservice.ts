@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.miui.cloudservice.hybrid.SignDeductDialogHybridActivity',
       rules: 'View > [text="以后再说"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12847374',
+      snapshotUrls: 'https://i.gkd.li/import/12847374',
     },
   ],
 });

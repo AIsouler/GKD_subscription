@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.xueqiu.android.community.FakeAdActivity',
       rules: '[id="com.xueqiu.android:id/tv_skip"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12776009',
+      snapshotUrls: 'https://i.gkd.li/import/12776009',
     },
   ],
 });

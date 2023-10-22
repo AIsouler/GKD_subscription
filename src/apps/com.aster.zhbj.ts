@@ -36,7 +36,7 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'com.bbk.launcher2.Launcher',
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12777325',
+          snapshotUrls: 'https://i.gkd.li/import/12777325',
         },
         {
           key: 1,
@@ -58,7 +58,7 @@ export default defineAppConfig({
           key: 3,
           activityIds: 'com.aster.comic.app.view.MainActivity',
           matches: '[desc^="webview-close"] > View',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12903062',
+          snapshotUrls: 'https://i.gkd.li/import/12903062',
         },
         {
           key: 4,

@@ -32,7 +32,7 @@ export default defineAppConfig({
         'FrameLayout + RelativeLayout > RelativeLayout > ImageView + ImageView[desc!="返回"][visibleToUser=true]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12642270',
-        'https://gkd-kit.songe.li/import/12774910', // 使用 [desc!="返回"] 进行限定，防止在进入商品详情页时点击返回按钮
+        'https://i.gkd.li/import/12774910', // 使用 [desc!="返回"] 进行限定，防止在进入商品详情页时点击返回按钮
       ],
     },
     {
@@ -44,7 +44,7 @@ export default defineAppConfig({
         {
           matches:
             '@[desc^="关闭浮层"] <n * < [id="com.jingdong.app.mall:id/home_float_layout"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12837870',
+          snapshotUrls: 'https://i.gkd.li/import/12837870',
         },
       ],
     },

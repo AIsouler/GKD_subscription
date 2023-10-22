@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
       rules:
         '[id = "com.jx.cmcc.ict.ibelieve:id/video_time_skip"][text *= "跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12852491',
+      snapshotUrls: 'https://i.gkd.li/import/12852491',
     },
   ],
 });

@@ -20,7 +20,7 @@ export default defineAppConfig({
       rules: 'TextView[id="com.zhihu.android:id/btn_skip"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12707641', // com.zhihu.android.app.ui.activity.LauncherActivity
-        'https://gkd-kit.songe.li/import/12841423', // com.zhihu.android.ContentActivity
+        'https://i.gkd.li/import/12841423', // com.zhihu.android.ContentActivity
         'https://gkd-kit.gitee.io/import/12883329', // com.zhihu.android.mixshortcontainer.MixShortContainerActivity
         'https://gkd-kit.gitee.io/import/12899263', // com.zhihu.android.app.ui.activity.LaunchAdActivity
         'https://gkd-kit.gitee.io/import/12981146', // com.zhihu.android.mix.activity.ContentMixProfileActivity

@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       rules:
         '[id="client.android.yixiaotong:id/rel_advlogo"] - * >n [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13055542',
+      snapshotUrls: 'https://i.gkd.li/import/13055542',
     },
     {
       key: 1,
@@ -24,7 +24,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             'ImageView - FrameLayout > ImageView +2 FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13055837',
+          snapshotUrls: 'https://i.gkd.li/import/13055837',
         },
 
         // 快手广告
@@ -34,7 +34,7 @@ export default defineAppConfig({
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             '[id="client.android.yixiaotong:id/ksad_tk_view"] >n ViewGroup + ViewGroup > @ViewGroup > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13060116',
+          snapshotUrls: 'https://i.gkd.li/import/13060116',
         },
       ],
     },
@@ -44,7 +44,7 @@ export default defineAppConfig({
       activityIds:
         'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
       rules: 'ImageView - FrameLayout - FrameLayout > ImageView',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13055542',
+      snapshotUrls: 'https://i.gkd.li/import/13055542',
     },
   ],
 });

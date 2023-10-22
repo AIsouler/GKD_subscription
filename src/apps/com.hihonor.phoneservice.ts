@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: 'com.hihonor.phoneservice.main.MainActivity',
       rules:
         '[text^="开启定位权限"] + [id="com.hihonor.phoneservice:id/iv_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783134',
+      snapshotUrls: 'https://i.gkd.li/import/12783134',
     },
   ],
 });

@@ -14,15 +14,15 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[text="开启设置"] - TextView[text="取消"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12867401', // 创作页面
+          snapshotUrls: 'https://i.gkd.li/import/12867401', // 创作页面
         },
         {
           matches: 'ImageView[id="com.bilibili.studio:id/iv_close"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12908880', // 模板页面
+          snapshotUrls: 'https://i.gkd.li/import/12908880', // 模板页面
         },
         {
           matches: 'ImageView[id="com.bilibili.studio:id/iv_push_tips_close"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12908886', // 我的页面
+          snapshotUrls: 'https://i.gkd.li/import/12908886', // 我的页面
         },
       ],
     },

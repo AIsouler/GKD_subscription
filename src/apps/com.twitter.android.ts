@@ -16,7 +16,7 @@ export default defineAppConfig({
           name: '视频广告-点击右上角关闭',
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] <2 LinearLayout + LinearLayout >n [id="com.twitter.android:id/upper_video_attribution"][text="视频将在广告后播放"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12798795',
+          snapshotUrls: 'https://i.gkd.li/import/12798795',
         },
         {
           key: 1,
@@ -31,7 +31,7 @@ export default defineAppConfig({
           name: '点击[我不喜欢这个广告]',
           matches:
             '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text="我不喜欢这个广告"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12798810',
+          snapshotUrls: 'https://i.gkd.li/import/12798810',
         },
       ],
     },
@@ -52,8 +52,8 @@ export default defineAppConfig({
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] +n [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12825969', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://gkd-kit.songe.li/import/12847584', // com.twitter.android.search.implementation.results.SearchActivity
+            'https://i.gkd.li/import/12825969', // com.twitter.tweetdetail.TweetDetailActivity
+            'https://i.gkd.li/import/12847584', // com.twitter.android.search.implementation.results.SearchActivity
           ],
         },
         {
@@ -62,8 +62,8 @@ export default defineAppConfig({
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text$="推荐"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12882676', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://gkd-kit.songe.li/import/12904603', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/import/12882676', // com.twitter.tweetdetail.TweetDetailActivity
+            'https://i.gkd.li/import/12904603', // com.twitter.app.profiles.ProfileActivity
           ],
         },
         {
@@ -74,8 +74,8 @@ export default defineAppConfig({
             '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12828815', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://gkd-kit.songe.li/import/12847600', // com.twitter.android.search.implementation.results.SearchActivity
-            'https://gkd-kit.songe.li/import/12904602', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/import/12847600', // com.twitter.android.search.implementation.results.SearchActivity
+            'https://i.gkd.li/import/12904602', // com.twitter.app.profiles.ProfileActivity
           ],
         },
         {
@@ -85,7 +85,7 @@ export default defineAppConfig({
           matches: '[text="取消"] + [text="屏蔽"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12828832', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://gkd-kit.songe.li/import/12904601', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/import/12904601', // com.twitter.app.profiles.ProfileActivity
           ],
         },
       ],

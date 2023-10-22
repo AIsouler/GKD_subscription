@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.ponyemu.main.activitys.AdLaunchActivity',
       rules: '[id="com.ponyemu.main:id/time"] +2 [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783200',
+      snapshotUrls: 'https://i.gkd.li/import/12783200',
     },
   ],
 });

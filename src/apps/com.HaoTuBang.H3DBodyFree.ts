@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.HaoTuBang.H3DBodyFree.modules.login.activity.SpalashActivity',
       rules: '[id="com.HaoTuBang.H3DBodyFree:id/adsParent"] >n [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783176',
+      snapshotUrls: 'https://i.gkd.li/import/12783176',
     },
   ],
 });

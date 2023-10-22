@@ -12,7 +12,7 @@ export default defineAppConfig({
       // 来自 #979 的优化建议，反馈会匹配到桌面活动ID
       matchLauncher: true,
       rules: '[id = "com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12859492',
+      snapshotUrls: 'https://i.gkd.li/import/12859492',
     },
   ],
 });

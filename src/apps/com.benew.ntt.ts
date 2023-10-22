@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.benew.ntt.AdActivity',
       rules: '[id="com.benew.ntt:id/ad_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740387',
+      snapshotUrls: 'https://i.gkd.li/import/12740387',
     },
   ],
 });

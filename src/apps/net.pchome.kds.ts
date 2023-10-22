@@ -12,13 +12,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '@Image[text=""] < View +2 View > View > View > TextView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13043221',
+          snapshotUrls: 'https://i.gkd.li/import/13043221',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '@LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13049609',
+          snapshotUrls: 'https://i.gkd.li/import/13049609',
         },
       ],
     },

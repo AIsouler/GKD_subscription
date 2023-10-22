@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.yitong.mobile.biz.launcher.app.splash.Splashactivity',
       rules: '[id="cn.com.shbank.mper:id/splash_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740247',
+      snapshotUrls: 'https://i.gkd.li/import/12740247',
     },
   ],
 });

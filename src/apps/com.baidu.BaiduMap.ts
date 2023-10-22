@@ -11,9 +11,9 @@ export default defineAppConfig({
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: ['TextView[text^="跳过"]'],
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12924598',
-        'https://gkd-kit.songe.li/import/12909174',
-        'https://gkd-kit.songe.li/import/12909201',
+        'https://i.gkd.li/import/12924598',
+        'https://i.gkd.li/import/12909174',
+        'https://i.gkd.li/import/12909201',
       ],
     },
     {
@@ -29,7 +29,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12642301',
         'https://gkd-kit.gitee.io/import/12801465',
-        'https://gkd-kit.songe.li/import/12909281',
+        'https://i.gkd.li/import/12909281',
       ],
     },
     {
@@ -81,7 +81,7 @@ export default defineAppConfig({
         {
           matches:
             'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12909299',
+          snapshotUrls: 'https://i.gkd.li/import/12909299',
         },
       ],
     },
@@ -97,8 +97,8 @@ export default defineAppConfig({
       rules:
         'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12909300',
-        'https://gkd-kit.songe.li/import/12930699',
+        'https://i.gkd.li/import/12909300',
+        'https://i.gkd.li/import/12930699',
       ],
     },
     {
@@ -108,7 +108,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12909385',
+      snapshotUrls: 'https://i.gkd.li/import/12909385',
     },
   ],
 });

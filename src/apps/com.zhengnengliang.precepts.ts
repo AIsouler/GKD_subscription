@@ -13,7 +13,7 @@ export default defineAppConfig({
       ],
       rules: '@[text="取消"] +2 [text="升级"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12727650',
+        'https://i.gkd.li/import/12727650',
         'https://gkd-kit.gitee.io/import/12715352',
       ],
     },
@@ -26,8 +26,8 @@ export default defineAppConfig({
       ],
       rules: '[text="点此去广告"] + ImageButton[clickable=true]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12739767',
-        'https://gkd-kit.songe.li/import/12727705', // activityId: 'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton'
+        'https://i.gkd.li/import/12739767',
+        'https://i.gkd.li/import/12727705', // activityId: 'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton'
       ],
     },
   ],

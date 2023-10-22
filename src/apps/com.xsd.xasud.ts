@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: ['io.dcloud.PandoraEntryActivity'],
       rules: '[text = "广告启动页"] [text = "跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12847496',
+      snapshotUrls: 'https://i.gkd.li/import/12847496',
     },
   ],
 });

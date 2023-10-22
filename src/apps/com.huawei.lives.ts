@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.huawei.lives.ui.SplashADActivity',
       matchLauncher: true,
       rules: '[id="com.huawei.lives:id/hiad_skip_text"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/13063001',
+      snapshotUrls: 'https://i.gkd.li/import/13063001',
     },
   ],
 });

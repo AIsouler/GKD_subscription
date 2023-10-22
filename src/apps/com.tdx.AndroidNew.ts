@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.tdx.Android.TdxAndroidActivity',
       rules: '[id=null][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12774846',
+      snapshotUrls: 'https://i.gkd.li/import/12774846',
     },
   ],
 });

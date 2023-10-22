@@ -23,7 +23,7 @@ export default defineAppConfig({
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_sure_tips"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_cancel_tips"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12647025',
-        'https://gkd-kit.songe.li/import/12727203',
+        'https://i.gkd.li/import/12727203',
       ],
     },
     {

@@ -12,7 +12,7 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12846524',
+          snapshotUrls: 'https://i.gkd.li/import/12846524',
         },
       ],
     },

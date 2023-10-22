@@ -13,8 +13,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.qcymall.earphonesetup:id/count_time"] + [text="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12776001',
-        'https://gkd-kit.songe.li/import/12776002',
+        'https://i.gkd.li/import/12776001',
+        'https://i.gkd.li/import/12776002',
       ],
     },
   ],

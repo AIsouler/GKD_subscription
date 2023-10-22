@@ -12,8 +12,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id="com.tencent.qt.qtl:id/skip_layout"] > [text$="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12793273',
-        'https://gkd-kit.songe.li/import/12893534', // com.miui.home.launcher.Launcher
+        'https://i.gkd.li/import/12793273',
+        'https://i.gkd.li/import/12893534', // com.miui.home.launcher.Launcher
       ],
     },
   ],

@@ -21,7 +21,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.mico.main.MainActivity',
       rules:
         '[id="com.xiaomi.mico:id/adImage"] + [id="com.xiaomi.mico:id/ivCloseAd"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12745621',
+      snapshotUrls: 'https://i.gkd.li/import/12745621',
     },
   ],
 });

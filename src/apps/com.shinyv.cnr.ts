@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.shinyv.cnr.StartActivity',
       rules: '[id="com.shinyv.cnr:id/delet"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12817925',
+      snapshotUrls: 'https://i.gkd.li/import/12817925',
     },
     {
       key: 1,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds: 'yt.com.module.home.MainActivity',
       rules:
         '[id="com.shinyv.cnr:id/iv_ad"] + [id="com.shinyv.cnr:id/iv_close"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12817933',
+      snapshotUrls: 'https://i.gkd.li/import/12817933',
     },
   ],
 });

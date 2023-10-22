@@ -20,7 +20,7 @@ export default defineAppConfig({
       activityIds: 'com.ume.lib_weex.view.WeexActivity',
       rules:
         'View[desc="立即预订"] <n FrameLayout <n FrameLayout <n FrameLayout <n ViewPager <n FrameLayout + FrameLayout > ImageView[id=null]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12909632',
+      snapshotUrls: 'https://i.gkd.li/import/12909632',
     },
     {
       enable: false,
@@ -46,7 +46,7 @@ export default defineAppConfig({
       activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
       rules:
         '[id="com.umetrip.android.msky.app:id/imageView"] + [id="com.umetrip.android.msky.app:id/iv_cancel"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12750185',
+      snapshotUrls: 'https://i.gkd.li/import/12750185',
     },
     {
       key: 11,
@@ -55,7 +55,7 @@ export default defineAppConfig({
       activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
       rules:
         '@[id="com.umetrip.android.msky.app:id/iv_close_envelope"] + [id="com.umetrip.android.msky.app:id/media_view_envelope"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12783264',
+      snapshotUrls: 'https://i.gkd.li/import/12783264',
     },
   ],
 });

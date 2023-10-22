@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12901732',
+          snapshotUrls: 'https://i.gkd.li/import/12901732',
         },
         {
           key: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
             '[id="com.jovetech.CloudSee.temp:id/splash_container"] >n [text^="跳过"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12829886',
-            'https://gkd-kit.songe.li/import/12893553',
+            'https://i.gkd.li/import/12893553',
           ],
         },
       ],

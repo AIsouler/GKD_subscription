@@ -12,11 +12,11 @@ export default defineAppConfig({
         {
           matches:
             '[id = "com.realtech.xiaocan:id/splash_ad_container"] [text ^= "跳过"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12843368',
+          snapshotUrls: 'https://i.gkd.li/import/12843368',
         },
         {
           matches: '[id = "com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12854728',
+          snapshotUrls: 'https://i.gkd.li/import/12854728',
         },
       ],
     },

@@ -13,8 +13,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.baidu.xin.aiqicha:id/time"][text="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12755760',
-        'https://gkd-kit.songe.li/import/12755761', // activityId: 'com.miui.home.launcher.Launcher'
+        'https://i.gkd.li/import/12755760',
+        'https://i.gkd.li/import/12755761', // activityId: 'com.miui.home.launcher.Launcher'
       ],
     },
     {
@@ -26,8 +26,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.baidu.xin.aiqicha:id/update_cancel"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12755738',
-        'https://gkd-kit.songe.li/import/12755762', // activityId: 'com.miui.home.launcher.Launcher'
+        'https://i.gkd.li/import/12755738',
+        'https://i.gkd.li/import/12755762', // activityId: 'com.miui.home.launcher.Launcher'
       ],
     },
     {
@@ -36,7 +36,7 @@ export default defineAppConfig({
       desc: '自动点击【不允许】',
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: '[id="com.baidu.xin.aiqicha:id/notice_dialog_cancel_iv"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12755733',
+      snapshotUrls: 'https://i.gkd.li/import/12755733',
     },
     {
       key: 11,
@@ -44,7 +44,7 @@ export default defineAppConfig({
       desc: '自动点击x按钮',
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12755756',
+      snapshotUrls: 'https://i.gkd.li/import/12755756',
     },
   ],
 });

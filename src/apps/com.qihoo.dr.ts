@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.qihoo.dr.ActivityWelcome',
       rules: '[id="com.qihoo.dr:id/fl_ad"] >n [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740163',
+      snapshotUrls: 'https://i.gkd.li/import/12740163',
     },
   ],
 });

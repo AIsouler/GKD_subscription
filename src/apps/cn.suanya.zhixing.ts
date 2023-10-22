@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.app.main.entrance.MainActivity',
       rules: 'LinearLayout > TextView + TextView[id!=null][text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12739122',
+      snapshotUrls: 'https://i.gkd.li/import/12739122',
     },
   ],
 });

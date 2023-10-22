@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaohu.olevodmobile.home.InitActivity',
       rules:
         '@[id="com.xiaohu.olevodmobile:id/init_time_text"] + [text="跳过"]', // 这个 app 的开屏广告需要点击倒计时按钮才能跳过
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12826256',
+      snapshotUrls: 'https://i.gkd.li/import/12826256',
     },
   ],
 });

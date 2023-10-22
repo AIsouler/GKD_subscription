@@ -12,7 +12,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.showstartfans.activity:id/txt_jump"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12894279',
+      snapshotUrls: 'https://i.gkd.li/import/12894279',
     },
   ],
 });

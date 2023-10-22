@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.lucky.luckyclient:id/tv_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12508764',
+      snapshotUrls: 'https://i.gkd.li/import/12508764',
     },
     {
       key: 1,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       activityIds: 'com.luckin.client.main.FirstActivity',
       rules:
         '@ImageView[id="com.lucky.luckyclient:id/dismiss_btn"] - LinearLayout > ImageView[id="com.lucky.luckyclient:id/update_btn"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12846499',
+      snapshotUrls: 'https://i.gkd.li/import/12846499',
     },
     {
       key: 2,

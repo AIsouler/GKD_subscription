@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.chinamobile.mcloud.client.ui.logo.LogoActivity',
       rules: '[id="com.chinamobile.mcloud:id/btn_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12774830',
+      snapshotUrls: 'https://i.gkd.li/import/12774830',
     },
     {
       key: 1,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds: 'com.chinamobile.mcloud.client.ui.setting.UpgradeActivity',
       rules:
         '@[id="com.chinamobile.mcloud:id/bn_cancel"] + [id="com.chinamobile.mcloud:id/upgrade_title"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12774833',
+      snapshotUrls: 'https://i.gkd.li/import/12774833',
     },
   ],
 });

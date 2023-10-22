@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.mapass.example.activity.MainActivity_',
       rules: '[id="com.cs_credit_bank:id/start_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12536487',
+      snapshotUrls: 'https://i.gkd.li/import/12536487',
     },
   ],
 });

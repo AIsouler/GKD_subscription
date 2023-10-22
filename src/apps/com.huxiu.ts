@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.huxiu.ui.activity.HXRegistrationAgreementPrivacyPolicyActivity',
       rules: '[id="com.huxiu:id/tv_skip_ad"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12776004',
+      snapshotUrls: 'https://i.gkd.li/import/12776004',
     },
   ],
 });

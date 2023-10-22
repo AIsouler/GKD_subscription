@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.glodon.constructioncalculators.main.SplashActivityTt',
       matchLauncher: true,
       rules: '@[text^="跳过"] < LinearLayout +n ImageView',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12882803',
+      snapshotUrls: 'https://i.gkd.li/import/12882803',
     },
   ],
 });

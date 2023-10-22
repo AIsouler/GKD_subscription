@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.lolaage.tbulu.tools:id/skipPart"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12882538',
+      snapshotUrls: 'https://i.gkd.li/import/12882538',
     },
     {
       key: 1,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       activityIds: 'com.lolaage.tbulu.tools.upgrade',
       rules:
         '[id="com.lolaage.tbulu.tools:id/tvFullUpgrade"] + [id="com.lolaage.tbulu.tools:id/tvCancel"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12882550',
+      snapshotUrls: 'https://i.gkd.li/import/12882550',
     },
   ],
 });

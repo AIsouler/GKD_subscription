@@ -11,7 +11,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.cece.app.MainActivity',
       rules: '[text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12852352',
+      snapshotUrls: 'https://i.gkd.li/import/12852352',
     },
   ],
 });

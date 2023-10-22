@@ -35,7 +35,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12640241',
         'https://gkd-kit.gitee.io/import/12709168',
-        'https://gkd-kit.songe.li/import/12905817',
+        'https://i.gkd.li/import/12905817',
       ],
     },
     {
@@ -51,7 +51,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12640195',
         'https://gkd-kit.gitee.io/import/12640158',
-        'https://gkd-kit.songe.li/import/12818198',
+        'https://i.gkd.li/import/12818198',
       ],
     },
     {

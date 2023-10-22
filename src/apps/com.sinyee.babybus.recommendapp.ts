@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.sinyee.babybus.recommendapp.SplashActivity',
       rules:
         '[id="com.sinyee.babybus.recommendapp:id/splash_fl_ad_container"] >n [text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12740356',
+      snapshotUrls: 'https://i.gkd.li/import/12740356',
     },
   ],
 });

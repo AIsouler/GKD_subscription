@@ -30,7 +30,7 @@ export default defineAppConfig({
         'TextView[id="com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode"] + TextView[id="com.mihoyo.hyperion:id/tv_dialog_i_know"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12675547',
-        'https://gkd-kit.songe.li/import/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
+        'https://i.gkd.li/import/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
       ],
     },
     {

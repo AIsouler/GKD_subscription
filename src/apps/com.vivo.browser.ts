@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.vivo.browser.BrowserActivity',
       rules: 'TextView[clickable = true && text ^= "跳过" && text.length = 4]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12847431',
+      snapshotUrls: 'https://i.gkd.li/import/12847431',
     },
   ],
 });

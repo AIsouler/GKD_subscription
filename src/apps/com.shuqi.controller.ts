@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.shuqi.home.MainActivity',
       rules: '[id="com.shuqi.controller:id/splash_container"] [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12854869',
+      snapshotUrls: 'https://i.gkd.li/import/12854869',
     },
     {
       key: 0,
@@ -57,7 +57,7 @@ export default defineAppConfig({
           activityIds: 'com.shuqi.reader.ShuqiReaderActivity',
           matches:
             '[id="com.shuqi.controller:id/banner_container_ad"] >n RelativeLayout + ImageView',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12901429',
+          snapshotUrls: 'https://i.gkd.li/import/12901429',
         },
       ],
     },

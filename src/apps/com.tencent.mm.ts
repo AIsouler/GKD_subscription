@@ -70,7 +70,7 @@ export default defineAppConfig({
           name: '点击广告卡片右上角[Sponsored]',
           matches:
             'ImageView - TextView[text="Sponsored"][clickable=true][id!=null]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12905837',
+          snapshotUrls: 'https://i.gkd.li/import/12905837',
         },
         // 以下是[确认关闭按钮]出现的情况
         // 情况1 - 你觉得这条广告怎么样->直接关闭
@@ -80,14 +80,14 @@ export default defineAppConfig({
           name: 'Sponsored story-点击[Close the ad]',
           matches:
             '@LinearLayout[clickable=true][childCount=2] > TextView[text="Close the ad"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12905838',
+          snapshotUrls: 'https://i.gkd.li/import/12905838',
         },
         {
           preKeys: 1,
           key: 2,
           name: 'Reason for closing the ad - 点击[Close]',
           matches: '[text="Reason for closing the ad"] +(2) [text="Close"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12905846',
+          snapshotUrls: 'https://i.gkd.li/import/12905846',
         },
       ],
     },
@@ -119,14 +119,14 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'Button[text="登 录"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12506197',
+          snapshotUrls: 'https://i.gkd.li/import/12506197',
         },
         {
           matches: [
             '[text="登录成功"]',
             '[id="com.tencent.mm:id/g1"][desc="返回"]',
           ],
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12506201',
+          snapshotUrls: 'https://i.gkd.li/import/12506201',
         },
       ],
     },
@@ -218,7 +218,7 @@ export default defineAppConfig({
           matches: '[text="原图"] - ImageButton[desc="未选中,原图,复选框"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12686641', // 未选中
-            'https://gkd-kit.songe.li/import/12840865', // 未选中
+            'https://i.gkd.li/import/12840865', // 未选中
             'https://gkd-kit.gitee.io/import/12686640', // 已选中
           ],
         },
@@ -302,7 +302,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.tencent.mm.ui.LauncherUI',
       rules: '[text="打开网页版文件传输助手"] + * > Button[text="打开"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12793745',
+      snapshotUrls: 'https://i.gkd.li/import/12793745',
     },
     {
       enable: false,

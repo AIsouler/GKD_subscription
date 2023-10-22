@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.picooc.activity.start.WelcomeActivity',
       rules: 'TextView[text = "广告"] <2 ViewGroup - ViewGroup [text = "跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12859002',
+      snapshotUrls: 'https://i.gkd.li/import/12859002',
     },
   ],
 });

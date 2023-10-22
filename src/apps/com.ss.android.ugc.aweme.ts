@@ -111,8 +111,8 @@ export default defineAppConfig({
         'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
       rules: '[text="原图"][desc="未选中/复选框 原图"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12846036', // 未选中
-        'https://gkd-kit.songe.li/import/12846040', // 已选中
+        'https://i.gkd.li/import/12846036', // 未选中
+        'https://i.gkd.li/import/12846040', // 已选中
       ],
     },
   ],

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.tmri.app.ui.activity.main.TmriNewActivity',
       rules: '[id="com.tmri.app.main:id/tv_timer"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12767813',
+      snapshotUrls: 'https://i.gkd.li/import/12767813',
     },
   ],
 });

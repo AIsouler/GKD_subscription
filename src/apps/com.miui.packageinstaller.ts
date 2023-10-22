@@ -22,7 +22,7 @@ export default defineAppConfig({
           activityIds:
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
           matches: '@[text="允许"] + [text="禁止"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/13054478',
+          snapshotUrls: 'https://i.gkd.li/import/13054478',
         },
       ],
     },
@@ -43,8 +43,8 @@ export default defineAppConfig({
           matches:
             '[text="取消安装"] < LinearLayout - @FrameLayout > LinearLayout > [text="继续安装"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12818034',
-            'https://gkd-kit.songe.li/import/12818054',
+            'https://i.gkd.li/import/12818034',
+            'https://i.gkd.li/import/12818054',
           ],
         },
         {
@@ -106,7 +106,7 @@ export default defineAppConfig({
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
           matches:
             '[id="com.miui.packageinstaller:id/done_layout"] > [text="完成"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12818044',
+          snapshotUrls: 'https://i.gkd.li/import/12818044',
         },
       ],
     },
@@ -126,8 +126,8 @@ export default defineAppConfig({
           matches:
             '[text="取消更新"] < LinearLayout - @FrameLayout > LinearLayout > [text="继续更新"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/12817988',
-            'https://gkd-kit.songe.li/import/12910080',
+            'https://i.gkd.li/import/12817988',
+            'https://i.gkd.li/import/12910080',
           ],
         },
         {
@@ -136,8 +136,8 @@ export default defineAppConfig({
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
           matches: '@[text="继续更新"] + [text="取消更新"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/13024731',
-            'https://gkd-kit.songe.li/import/13038465',
+            'https://i.gkd.li/import/13024731',
+            'https://i.gkd.li/import/13038465',
           ],
         },
 
@@ -152,8 +152,8 @@ export default defineAppConfig({
           matches:
             '[id="com.miui.packageinstaller:id/install_checked"][checked=false][text="已了解此安装包未经安全检测"]',
           snapshotUrls: [
-            'https://gkd-kit.songe.li/import/13024730', // 未勾选
-            'https://gkd-kit.songe.li/import/13024731', // 已勾选
+            'https://i.gkd.li/import/13024730', // 未勾选
+            'https://i.gkd.li/import/13024731', // 已勾选
           ],
         },
 
@@ -166,7 +166,7 @@ export default defineAppConfig({
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
           matches:
             '[id="com.miui.packageinstaller:id/done_layout"] > [text="完成"]',
-          snapshotUrls: 'https://gkd-kit.songe.li/import/12817999',
+          snapshotUrls: 'https://i.gkd.li/import/12817999',
         },
       ],
     },

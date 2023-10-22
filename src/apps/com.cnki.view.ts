@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.cnki.view.core.tramp.main.SplashActivity',
       rules: '[id="com.cnki.view:id/tv_advert_skip"]',
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12755696',
+      snapshotUrls: 'https://i.gkd.li/import/12755696',
     },
     {
       key: 1,
@@ -20,8 +20,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.cnki.view:id/update_undo"]',
       snapshotUrls: [
-        'https://gkd-kit.songe.li/import/12755689', // activityId: 'com.cnki.view.core.navigator.main.HomeActivity'
-        'https://gkd-kit.songe.li/import/12755700', // activityId: 'com.cnki.view.core.tramp.main.SplashActivity'
+        'https://i.gkd.li/import/12755689', // activityId: 'com.cnki.view.core.navigator.main.HomeActivity'
+        'https://i.gkd.li/import/12755700', // activityId: 'com.cnki.view.core.tramp.main.SplashActivity'
       ],
     },
   ],

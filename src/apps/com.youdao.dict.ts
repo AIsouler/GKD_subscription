@@ -34,7 +34,7 @@ export default defineAppConfig({
       activityIds: 'com.youdao.dict.activity.MainActivity',
       rules: '@ImageView[id="com.youdao.dict:id/iv_close_bt"]',
       quickFind: true,
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12893419',
+      snapshotUrls: 'https://i.gkd.li/import/12893419',
     },
     {
       key: 3,
@@ -42,7 +42,7 @@ export default defineAppConfig({
       activityIds: 'com.youdao.dict.edu.main.MainPopDialog',
       rules: '@ImageView[id="com.youdao.dict:id/iv_close"]',
       quickFind: true,
-      snapshotUrls: 'https://gkd-kit.songe.li/import/12893450',
+      snapshotUrls: 'https://i.gkd.li/import/12893450',
     },
   ],
 });
