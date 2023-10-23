@@ -34,5 +34,12 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '请求通知权限弹窗',
+      activityIds: 'com.netease.gl.compfeed.widget.CommonWebPopupDialog',
+      rules: '@[id="com.netease.gl:id/iv_close"] + [text="开启推送"]',
+      snapshotUrls: 'https://i.gkd.li/import/13072071',
+    },
   ],
 });
