@@ -1,0 +1,16 @@
+import { defineAppConfig } from '../types';
+
+export default defineAppConfig({
+  id: 'com.shanghaionstar',
+  name: '安吉星',
+  groups: [
+    {
+      key: 0,
+      name: '开屏广告',
+      matchLauncher: true,
+      activityIds: 'com.shanghaionstar.home.LoadingActivity',
+      rules: '[id="com.shanghaionstar:id/jump_view"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13071523',
+    },
+  ],
+});
