@@ -59,5 +59,17 @@ export default defineAppConfig({
       rules: '[text="确认"] - [text="取消"]',
       snapshotUrls: ['https://i.gkd.li/import/13042207'],
     },
+    {
+      key: 5,
+      name: '开启消息弹窗',
+      desc: '自动点击关闭。',
+      enable: false,
+      quickFind: true,
+      activityIds: [
+        'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+      ],
+      rules: '[id="com.cainiao.wireless:id/gg_dialog_base_close"]',
+      snapshotUrls: ['https://i.gkd.li/import/13068573'],
+    },
   ],
 });
