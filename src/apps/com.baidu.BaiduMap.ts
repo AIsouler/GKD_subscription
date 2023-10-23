@@ -7,13 +7,15 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      // quickFind: true, 会导致实机无法跳过
+      quickFind: true,
+      matchLauncher: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: ['TextView[text^="跳过"]'],
+      rules: ['TextView[text^="跳过"][text.length<=5]'],
       snapshotUrls: [
         'https://i.gkd.li/import/12924598',
         'https://i.gkd.li/import/12909174',
         'https://i.gkd.li/import/12909201',
+        'https://i.gkd.li/import/13074377',
       ],
     },
     {
