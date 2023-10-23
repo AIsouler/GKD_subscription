@@ -27,6 +27,24 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 2,
+      name: '支付完成界面广告卡片',
+      activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
+      rules: [
+        {
+          key: 0,
+          matches: '[id="bannerBox"] >2 [text="广告"] + TextView',
+          snapshotUrls: 'https://i.gkd.li/import/13070564',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches: '[text="关闭广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13070974',
+        },
+      ],
+    },
+    {
       key: 9,
       name: '右侧悬浮广告',
       activityIds: ['com.unionpay.activity.UPActivityMain'],
