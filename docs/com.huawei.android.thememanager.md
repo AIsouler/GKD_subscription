@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12657379)
+- [快照-1](https://i.gkd.li/import/13069736)
 
 ## 主题详情页“下应用领主题”横幅
 
