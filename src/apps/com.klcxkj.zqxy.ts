@@ -23,6 +23,13 @@ export default defineAppConfig({
         },
         {
           key: 2,
+          activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
+          matches:
+            'ImageView < FrameLayout - FrameLayout > FrameLayout > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13071301',
+        },
+        {
+          key: 3,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
