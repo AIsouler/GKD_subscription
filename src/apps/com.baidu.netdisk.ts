@@ -56,6 +56,7 @@ export default defineAppConfig({
       key: 2,
       name: '首页banner广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      quickFind: true,
       rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12706544',
     },
@@ -63,6 +64,7 @@ export default defineAppConfig({
       key: 3,
       name: '首页热门广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      quickFind: true,
       rules:
         '[id="com.baidu.netdisk:id/vf_content"] + [id="com.baidu.netdisk:id/close"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12706544',
@@ -71,12 +73,14 @@ export default defineAppConfig({
       key: 4,
       name: '我的页面-限时福利',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      quickFind: true,
       rules: '@TextView + [text="专属福利"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12706549',
     },
     {
       key: 5,
       name: '相册页面-激活无限空间弹窗',
+      quickFind: true,
       activityIds:
         'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
       rules:
@@ -86,13 +90,11 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '更新提醒,通知权限',
+      name: '更新提醒弹窗',
+      quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
-      rules: '[id="com.baidu.netdisk:id/dialog_button_cancel"]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12863984',
-        'https://gkd-kit.gitee.io/import/12923936',
-      ],
+      rules: '[text="立即更新"] -n [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12863984'],
     },
     {
       key: 7,
@@ -109,9 +111,20 @@ export default defineAppConfig({
     },
     {
       enable: false,
+      key: 8,
+      name: '开启消息通知弹窗',
+      desc: '自动点击关闭',
+      quickFind: true,
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]', //单独使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/12923936'],
+    },
+    {
+      enable: false,
       key: 10,
       name: '看视频免费享极速下载弹窗',
       desc: '自动点击x按钮',
+      quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules:
         'ViewGroup > [id="com.baidu.netdisk:id/background_image"] +n [id="com.baidu.netdisk:id/iv_close"]',
