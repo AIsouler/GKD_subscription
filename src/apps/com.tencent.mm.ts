@@ -100,8 +100,13 @@ export default defineAppConfig({
     {
       key: 2,
       name: '浏览器扫码微信登录自动授权',
-      activityIds: ['com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI'],
+      desc: '自动允许使用头像昵称等',
+      activityIds: [
+        'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
+        'com.tencent.mm.ui.LauncherUI',
+      ],
       rules: 'Button[text="拒绝"] - Button[text="允许"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13065462', //com.tencent.mm.ui.LauncherUI
     },
     {
       enable: false,
