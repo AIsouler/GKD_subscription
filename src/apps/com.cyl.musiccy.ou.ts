@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchLauncher: true,
       activityIds: ['com.cyl.musiccy.ou.MainActivity'],
       rules: [
         {
@@ -31,6 +32,11 @@ export default defineAppConfig({
           matches: 'FrameLayout > LinearLayout > TextView[text^="跳过"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13063246',
         },
+        {
+          matches:
+            '[id="com.cyl.musiccy.ou:id/ksad_splash_root_container"] [text="跳过"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13071599',
+        },
       ],
     },
     {
@@ -51,11 +57,11 @@ export default defineAppConfig({
     {
       key: 2,
       name: '插屏广告',
+      matchLauncher: true,
       activityIds: [
         'com.cyl.musiccy.ou.MainActivity',
         'com.sigmob.sdk.base.common.TransparentAdActivity',
         'com.miui.wakepath.ui.ConfirmStartActivity',
-        'com.miui.home.launcher.Launcher',
       ],
       rules: [
         {
@@ -95,8 +101,11 @@ export default defineAppConfig({
         {
           action: 'clickCenter',
           matches:
-            'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12789928',
+            'TextView[text="立即下载" || text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12789928',
+            'https://gkd-kit.gitee.io/import/13071595',
+          ],
         },
         {
           action: 'click',
