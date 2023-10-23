@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.78.0](https://github.com/gkd-kit/subscription/compare/v1.77.0...v1.78.0) (2023-10-23)
+
+
+### Features
+
+* **百度地图:** 开屏广告-规则优化 ([4badfa0](https://github.com/gkd-kit/subscription/commit/4badfa01fc8a098ef2aee4385cc9ac2c5987caae))
+
 ## [1.77.0](https://github.com/gkd-kit/subscription/compare/v1.76.0...v1.77.0) (2023-10-23)
 
 
