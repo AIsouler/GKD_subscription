@@ -1,6 +1,6 @@
 # 百度网盘
 
-存在 9 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
+存在 10 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
 
 ## 开屏广告
 
@@ -34,18 +34,23 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12648987)
 
-## 更新提醒,通知权限
+## 更新提醒弹窗
 
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12863984)
-- [快照-1](https://gkd-kit.gitee.io/import/12923936)
 
 ## 续费横幅提示
 
 关闭续费横幅提示
 
 - [快照-0](https://gkd-kit.gitee.io/import/12924036)
+
+## 开启消息通知弹窗
+
+默认禁用 - 自动点击关闭
+
+- [快照-0](https://gkd-kit.gitee.io/import/12923936)
 
 ## 看视频免费享极速下载弹窗
 

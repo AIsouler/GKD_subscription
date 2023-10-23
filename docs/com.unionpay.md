@@ -1,6 +1,6 @@
 # 云闪付
 
-存在 6 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
+存在 7 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
 
 ## 开屏广告
 
@@ -9,6 +9,11 @@
 ## 更新弹窗
 
 - [快照-0](https://i.gkd.li/import/12727278)
+
+## 支付完成界面广告卡片
+
+- [快照-0](https://i.gkd.li/import/13070564)
+- [快照-1](https://i.gkd.li/import/13070974)
 
 ## 右侧悬浮广告
 

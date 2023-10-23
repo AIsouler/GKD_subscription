@@ -25,6 +25,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12837870)
+- [快照-1](https://i.gkd.li/import/13072091)
 
 ## 消息-打开通知
 
