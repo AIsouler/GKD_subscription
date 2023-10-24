@@ -34,5 +34,13 @@ export default defineAppConfig({
         'TextView[text="广告 | 关闭"][clickable=true]',
       ],
     },
+    {
+      key: 2,
+      name: '首页-底部广告弹窗',
+      quickFind: true,
+      activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
+      rules: 'View[id="js_close_btn"][desc="关闭"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13115121',
+    },
   ],
 });
