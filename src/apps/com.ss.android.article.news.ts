@@ -105,13 +105,14 @@ export default defineAppConfig({
           name: '点击右上角x按钮',
           key: 0,
           matches:
-            '[text^="广告"|| text$="广告" ||text^="来自"] <n FrameLayout > UIView[text^="不感兴趣"][clickable=true]',
+            '[text^="广告"|| text$="广告" ||text^="来自"] <n FrameLayout > UIView[text^="不感兴趣"]',
           action: 'clickCenter',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12733098',
             'https://gkd-kit.gitee.io/import/12755264',
             'https://gkd-kit.gitee.io/import/12836272',
-            'https://gkd-kit.gitee.io/import/12840162', //别的‘广告’是单独的一个组件，它是和标题一起
+            'https://gkd-kit.gitee.io/import/12840162',
+            'https://gkd-kit.gitee.io/import/13093576',
           ],
           exampleUrls: [
             'https://user-images.githubusercontent.com/44717382/273436460-cf007525-81ce-418b-ac05-3bfd75a627fe.gif', //这是 https://gkd-kit.gitee.io/import/12840162
