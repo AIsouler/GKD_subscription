@@ -88,8 +88,18 @@ export const validSnapshotUrl = (s: string) => {
 export const checkConfig = (newConfig: SubscriptionConfig) => {
   // check duplicated group key
   newConfig.apps?.forEach((app) => {
+    const deprecatedKeys = app.deprecatedKeys || [];
     const keys = new Set<number>();
     app.groups?.forEach((g) => {
+      if (deprecatedKeys.includes(g.key)) {
+        console.error({
+          configName: newConfig.name,
+          appId: app.id,
+          groupName: g.name,
+          groupKey: g.key,
+        });
+        throw new Error('invalid deprecated group key');
+      }
       if (keys.has(g.key)) {
         console.error({
           configName: newConfig.name,
