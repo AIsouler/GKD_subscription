@@ -5,6 +5,15 @@ export default defineAppConfig({
   name: '头条搜索极速版',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchLauncher: true,
+      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
+      rules: '@FrameLayout[desc= "跳过广告"] > TextView[text="跳过广告"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13111705',
+    },
+    {
       enable: false,
       key: 10,
       name: '首页-红包弹窗',
