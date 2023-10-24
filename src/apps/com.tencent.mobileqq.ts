@@ -5,13 +5,15 @@ export default defineAppConfig({
   name: 'QQ',
   groups: [
     {
-      enable: false,
       key: 0,
       name: '开屏广告',
-      desc: '规则误触,待修复,需要快照准确定位',
+      quickFind: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: '[id!=null][text="跳过"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13062244',
+      rules: '[childCount=5] > TextView[text="跳过"][clickable=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13062244',
+        'https://i.gkd.li/import/13093155',
+      ],
     },
     {
       enable: false,
