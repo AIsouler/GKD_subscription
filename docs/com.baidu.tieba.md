@@ -1,6 +1,6 @@
 # 百度贴吧
 
-存在 8 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
+存在 9 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
 
 ## 开屏广告
 
@@ -43,3 +43,7 @@
 ## 应用内广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/13060891)
+
+## 首页-悬浮小广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/13115167)

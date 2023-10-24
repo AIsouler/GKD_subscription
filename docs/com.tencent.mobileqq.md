@@ -4,9 +4,8 @@
 
 ## 开屏广告
 
-默认禁用 - 规则误触,待修复,需要快照准确定位
-
 - [快照-0](https://i.gkd.li/import/13062244)
+- [快照-1](https://i.gkd.li/import/13093155)
 
 ## 消息页面-顶部广告
 
@@ -25,13 +24,14 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12642081)
 - [快照-1](https://gkd-kit.gitee.io/import/12708844)
 
-## 消息页面顶部-SVIP 广告
+## 顶部SVIP广告
 
 默认禁用 - 消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x
 
 - [快照-0](https://gkd-kit.gitee.io/import/12706907)
-- [快照-1](https://i.gkd.li/import/12793359)
-- [快照-2](http://gkd-kit.songe.li/import/12855048)
+- [快照-1](https://gkd-kit.gitee.io/import/13107298)
+- [快照-2](https://i.gkd.li/import/12793359)
+- [快照-3](https://i.gkd.li/import/12855048)
 
 ## 好友热播
 

@@ -5,7 +5,8 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12712742)
-- [快照-1](https://i.gkd.li/import/12855707)
+- [快照-1](https://gkd-kit.gitee.io/import/13088169)
+- [快照-2](https://i.gkd.li/import/12855707)
 
 ## 广告弹窗
 
