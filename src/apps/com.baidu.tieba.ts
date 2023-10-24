@@ -148,5 +148,12 @@ export default defineAppConfig({
       rules: 'View[childCount=3] > @View[clickable=true] > Image',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/13060891',
     },
+    {
+      key: 10,
+      name: '首页-悬浮小广告',
+      activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
+      rules: 'TextView[text="广告"] + ImageView[clickable=true]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13115167',
+    },
   ],
 });
