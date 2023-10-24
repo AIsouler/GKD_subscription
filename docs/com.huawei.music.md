@@ -1,6 +1,6 @@
 # 华为音乐
 
-存在 6 规则组 - [com.huawei.music](/src/apps/com.huawei.music.ts)
+存在 7 规则组 - [com.huawei.music](/src/apps/com.huawei.music.ts)
 
 ## 开屏广告
 
@@ -21,10 +21,9 @@
 
 ## 播放（音乐、视频）页面广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13068935)
-- [快照-1](https://gkd-kit.gitee.io/import/13067956)
-- [快照-2](https://gkd-kit.gitee.io/import/13067978)
-- [快照-3](https://gkd-kit.gitee.io/import/13067387)
+- [快照-0](https://gkd-kit.gitee.io/import/13067956)
+- [快照-1](https://gkd-kit.gitee.io/import/13067978)
+- [快照-2](https://gkd-kit.gitee.io/import/13067387)
 
 ## 评论区广告
 
@@ -34,3 +33,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/13067986)
 - [快照-1](https://gkd-kit.gitee.io/import/13067981)
+
+## 播放器上滑广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/13068935)

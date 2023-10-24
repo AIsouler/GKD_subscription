@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v143
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v144
 
-当前订阅文件已适配 475 个 APP, 共有 1035 规则组
+当前订阅文件已适配 479 个 APP, 共有 1047 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -24,12 +24,13 @@ GKD 默认订阅规则
 | Instagram | [com.instagram.android](/docs/com.instagram.android.md) | 1 |
 | Keep | [com.gotokeep.keep](/docs/com.gotokeep.keep.md) | 5 |
 | MyCadillac | [com.shanghaigm.android.mycadillac](/docs/com.shanghaigm.android.mycadillac.md) | 1 |
+| OKOK | [com.chipsea.btcontrol](/docs/com.chipsea.btcontrol.md) | 1 |
 | OMOFUN | [com.ksf.yyx](/docs/com.ksf.yyx.md) | 3 |
 | OMOFUN | [com.cyl.musiccy.ou](/docs/com.cyl.musiccy.ou.md) | 3 |
 | PICOOC | [com.picooc](/docs/com.picooc.md) | 1 |
 | Pods King | [com.msnothing.airpodsking](/docs/com.msnothing.airpodsking.md) | 1 |
 | QCY | [com.qcymall.earphonesetup](/docs/com.qcymall.earphonesetup.md) | 1 |
-| QQ | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md) | 17/9启用/8禁用 |
+| QQ | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md) | 17/10启用/7禁用 |
 | QooApp | [com.qooapp.qoohelper](/docs/com.qooapp.qoohelper.md) | 1 |
 | RAR | [com.rarlab.rar](/docs/com.rarlab.rar.md) | 1/0启用/1禁用 |
 | Soul | [cn.soulapp.android](/docs/cn.soulapp.android.md) | 3 |
@@ -37,6 +38,7 @@ GKD 默认订阅规则
 | TapTap | [com.taptap](/docs/com.taptap.md) | 1 |
 | WPS | [cn.wps.moffice_eng](/docs/cn.wps.moffice_eng.md) | 5/3启用/2禁用 |
 | bebird | [com.molink.john.hummingbird](/docs/com.molink.john.hummingbird.md) | 1 |
+| bilibili | [com.bilibili.app.in](/docs/com.bilibili.app.in.md) | 1 |
 | fiil+ | [com.fengeek.f002](/docs/com.fengeek.f002.md) | 1 |
 | iGPSPORT | [com.igpsport.igpsportandroid](/docs/com.igpsport.igpsportandroid.md) | 1 |
 | youtube | [com.google.android.youtube](/docs/com.google.android.youtube.md) | 3 |
@@ -63,7 +65,7 @@ GKD 默认订阅规则
 | OurPlay加速器 | [com.excean.splay](/docs/com.excean.splay.md) | 2 |
 | PU口袋校园 | [com.xyhui](/docs/com.xyhui.md) | 4/3启用/1禁用 |
 | QQ浏览器 | [com.tencent.mtt](/docs/com.tencent.mtt.md) | 3/2启用/1禁用 |
-| QQ音乐 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md) | 2 |
+| QQ音乐 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md) | 3 |
 | QQ阅读 | [com.qq.reader](/docs/com.qq.reader.md) | 1 |
 | UC浏览器 | [com.UCMobile](/docs/com.UCMobile.md) | 4 |
 | WiFi万能钥匙 | [com.snda.wifilocating](/docs/com.snda.wifilocating.md) | 2 |
@@ -82,7 +84,7 @@ GKD 默认订阅规则
 | 安居客 | [com.anjuke.android.app](/docs/com.anjuke.android.app.md) | 1 |
 | 百度百科 | [com.baidu.baike](/docs/com.baidu.baike.md) | 2 |
 | 百度地图 | [com.baidu.BaiduMap](/docs/com.baidu.BaiduMap.md) | 8/3启用/5禁用 |
-| 百度贴吧 | [com.baidu.tieba](/docs/com.baidu.tieba.md) | 8 |
+| 百度贴吧 | [com.baidu.tieba](/docs/com.baidu.tieba.md) | 9 |
 | 百度网盘 | [com.baidu.netdisk](/docs/com.baidu.netdisk.md) | 10/7启用/3禁用 |
 | 百度网盘-三星版本 | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md) | 5 |
 | 百度文库 | [com.baidu.wenku](/docs/com.baidu.wenku.md) | 1 |
@@ -128,6 +130,7 @@ GKD 默认订阅规则
 | 东兴198 | [net.dxzq.jgzx](/docs/net.dxzq.jgzx.md) | 1 |
 | 豆瓣 | [com.douban.frodo](/docs/com.douban.frodo.md) | 9/8启用/1禁用 |
 | 抖音 | [com.ss.android.ugc.aweme](/docs/com.ss.android.ugc.aweme.md) | 9/7启用/2禁用 |
+| 抖音极速版 | [com.ss.android.ugc.aweme.lite](/docs/com.ss.android.ugc.aweme.lite.md) | 1 |
 | 斗鱼 | [air.tv.douyu.android](/docs/air.tv.douyu.android.md) | 4 |
 | e福州 | [com.digitalchina.mobile.dfhfz1](/docs/com.digitalchina.mobile.dfhfz1.md) | 1 |
 | 饿了么 | [me.ele](/docs/me.ele.md) | 5/3启用/2禁用 |
@@ -172,7 +175,7 @@ GKD 默认订阅规则
 | 华为视频 | [com.huawei.himovie](/docs/com.huawei.himovie.md) | 1 |
 | 华为天气 | [com.huawei.android.totemweather](/docs/com.huawei.android.totemweather.md) | 1 |
 | 华为应用市场 | [com.huawei.appmarket](/docs/com.huawei.appmarket.md) | 1 |
-| 华为音乐 | [com.huawei.music](/docs/com.huawei.music.md) | 6 |
+| 华为音乐 | [com.huawei.music](/docs/com.huawei.music.md) | 7 |
 | 华为音乐 | [com.android.mediacenter](/docs/com.android.mediacenter.md) | 3 |
 | 华为运动健康 | [com.huawei.health](/docs/com.huawei.health.md) | 2 |
 | 华为智慧搜索 | [com.huawei.search](/docs/com.huawei.search.md) | 1 |
@@ -287,6 +290,7 @@ GKD 默认订阅规则
 | 人民日报 | [com.facetech.konking](/docs/com.facetech.konking.md) | 2 |
 | 日淘任意门 | [com.rym.door](/docs/com.rym.door.md) | 1 |
 | 荣耀商城 | [com.hihonor.vmall](/docs/com.hihonor.vmall.md) | 1 |
+| 荣耀应用市场 | [com.hihonor.appmarket](/docs/com.hihonor.appmarket.md) | 4 |
 | 荣耀智慧空间 | [com.hihonor.magichome](/docs/com.hihonor.magichome.md) | 3/2启用/1禁用 |
 | 软件商店 | [com.heytap.market](/docs/com.heytap.market.md) | 1 |
 | 瑞幸咖啡 | [com.lucky.luckyclient](/docs/com.lucky.luckyclient.md) | 3/2启用/1禁用 |
@@ -300,7 +304,7 @@ GKD 默认订阅规则
 | 上汽荣威 | [com.saicmotor.tocapp](/docs/com.saicmotor.tocapp.md) | 1 |
 | 鲨鱼记账 | [com.shark.jizhang](/docs/com.shark.jizhang.md) | 1 |
 | 什么值得买 | [com.smzdm.client.android](/docs/com.smzdm.client.android.md) | 2 |
-| 识货 | [com.hupu.shihuo](/docs/com.hupu.shihuo.md) | 1 |
+| 识货 | [com.hupu.shihuo](/docs/com.hupu.shihuo.md) | 2 |
 | 石墨文档 | [chuxin.shimo.shimowendang](/docs/chuxin.shimo.shimowendang.md) | 1 |
 | 手机知网 | [com.cnki.client](/docs/com.cnki.client.md) | 2 |
 | 水印相机 | [com.tencent.zebra](/docs/com.tencent.zebra.md) | 1 |
@@ -337,7 +341,7 @@ GKD 默认订阅规则
 | 通达信 | [com.tdx.AndroidNew](/docs/com.tdx.AndroidNew.md) | 1 |
 | 同花顺 | [com.hexin.plat.android](/docs/com.hexin.plat.android.md) | 3 |
 | 通知播报助手 | [com.voice.broadcastassistant](/docs/com.voice.broadcastassistant.md) | 1 |
-| 头条搜索极速版 | [com.ss.android.article.lite](/docs/com.ss.android.article.lite.md) | 7/1启用/6禁用 |
+| 头条搜索极速版 | [com.ss.android.article.lite](/docs/com.ss.android.article.lite.md) | 8/2启用/6禁用 |
 | 途虎养车 | [cn.TuHu.android](/docs/cn.TuHu.android.md) | 1 |
 | vivo浏览器 | [com.vivo.browser](/docs/com.vivo.browser.md) | 1 |
 | vivo应用商店 | [com.bbk.appstore](/docs/com.bbk.appstore.md) | 1 |
@@ -490,4 +494,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=143)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=144)

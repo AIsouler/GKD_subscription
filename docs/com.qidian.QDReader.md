@@ -9,6 +9,7 @@
 ## 更新弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12641026)
+- [快照-1](https://gkd-kit.gitee.io/import/13116821)
 
 ## 青少年模式弹窗
 
