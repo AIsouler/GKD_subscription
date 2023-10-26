@@ -1,11 +1,16 @@
 # 运动世界校园
 
-存在 4 规则组 - [com.zjwh.android_wh_physicalfitness](/src/apps/com.zjwh.android_wh_physicalfitness.ts)
+存在 5 规则组 - [com.zjwh.android_wh_physicalfitness](/src/apps/com.zjwh.android_wh_physicalfitness.ts)
+
+## 开屏广告
+
+- [快照-0](https://i.gkd.li/import/13166424)
 
 ## 优量汇广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12673231)
 - [快照-1](https://gkd-kit.gitee.io/import/12673523)
+- [快照-2](https://i.gkd.li/import/13166472)
 
 ## 百青藤广告
 

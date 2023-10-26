@@ -9,6 +9,7 @@
 ## 广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/13063815)
+- [快照-1](https://gkd-kit.gitee.io/import/13168440)
 
 ## 悬浮窗小广告
 

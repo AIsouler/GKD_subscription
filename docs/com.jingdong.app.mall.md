@@ -1,6 +1,6 @@
 # 京东
 
-存在 6 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
+存在 7 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
 
 ## 开屏广告
 
@@ -24,8 +24,10 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12837870)
-- [快照-1](https://i.gkd.li/import/13072091)
+- [快照-0](https://i.gkd.li/import/13165659)
+- [快照-1](https://i.gkd.li/import/12837870)
+- [快照-2](https://i.gkd.li/import/13072091)
+- [快照-3](https://i.gkd.li/import/12837870)
 
 ## 消息-打开通知
 
@@ -33,6 +35,12 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12839864)
 - [快照-1](https://gkd-kit.gitee.io/import/12839865)
+
+## 首页-弹窗广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13165721)
 
 ## 京东账号登录授权
 
