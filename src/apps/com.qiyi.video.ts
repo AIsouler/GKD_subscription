@@ -10,7 +10,8 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
       rules:
-        '@FrameLayout[id=`com.qiyi.video:id/unused_res_a`] > LinearLayout[id=null] > TextView[text=`关闭`][id=`com.qiyi.video:id/unused_res_a`]',
+        '@LinearLayout[id=`com.qiyi.video:id/unused_res_a`] > TextView[text=`关闭`][id=`com.qiyi.video:id/unused_res_a`]',
+      snapshotUrls: 'https://i.gkd.li/import/13160866',
     },
     {
       key: 1,
