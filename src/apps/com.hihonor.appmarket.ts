@@ -17,9 +17,16 @@ export default defineAppConfig({
       key: 1,
       name: '广告弹窗',
       quickFind: true,
-      activityIds: 'com.hihonor.android.launcher.unihome.UniHomeLauncher',
+      matchLauncher: true,
+      activityIds: [
+        'com.hihonor.android.launcher.unihome.UniHomeLauncher',
+        'com.hihonor.appmarket.module.main.MainActivity',
+      ],
       rules: '[id="com.hihonor.appmarket:id/iv_dialog_operation_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13063815',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13063815',
+        'https://gkd-kit.gitee.io/import/13168440',
+      ],
     },
     {
       key: 2,
