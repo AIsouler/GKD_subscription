@@ -1,4 +1,3 @@
-import { matches } from 'lodash';
 import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
@@ -8,12 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchLauncher: true,
       rules: [
         {
           activityIds: [
             'com.tencent.qqmusic.activity.AppStarterActivity',
             'com.tencent.qqmusic.business.splash.thirdpartsplash.tme.union.SplashDialog',
-            'com.miui.home.launcher.Launcher',
           ],
           matches: 'TextView[text=`跳过`][clickable=true]',
           snapshotUrls: [
@@ -41,6 +40,15 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
       rules: 'View[id="js_close_btn"][desc="关闭"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/13115121',
+    },
+    {
+      key: 3,
+      name: '内测体验弹窗',
+      desc: '点击[不再提醒]',
+      activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+      quickFind: true,
+      rules: '[text="抢先体验"] -2 [text="不再提醒"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13178485',
     },
   ],
 });
