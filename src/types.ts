@@ -1,17 +1,5 @@
 export type IArray<T> = T | T[];
 
-type NumberFilter = {
-  minimum?: number;
-  maximum?: number;
-  enum?: number[];
-};
-type StringFilter = {
-  pattern?: string;
-  maxLength?: number;
-  minLength?: number;
-  enum?: string[];
-};
-
 /**
  * 此类型任意属性如果是 undefined 则使用上级属性, 例如 rule.cd 是 undefined, 则 rule.cd 使用 group.cd
  */
@@ -39,7 +27,14 @@ type CommonProps = {
   /**
    * 单位: 毫秒
    *
-   * 当前规则的冷却时间
+   * 当前规则的冷却时间, 或者执行 action 最小间隔
+   *
+   */
+  actionCd?: number;
+
+  /**
+   * @deprecated
+   * 使用 actionCd
    */
   cd?: number;
 
@@ -48,8 +43,12 @@ type CommonProps = {
    *
    * 延迟执行: 查询到节点->等待一段时间->再次查询到节点则执行对应 action
    *
-   * 也许应该更名为 actionDelay
-   *
+   */
+  actionDelay?: number;
+
+  /**
+   * @deprecated
+   * 使用 actionDelay
    */
   delay?: number;
 
@@ -79,20 +78,63 @@ type CommonProps = {
   quickFind?: boolean;
 
   /**
-   * 后期估计会修改优化,暂不使用
+   * 单位: 毫秒
+   *
+   * 匹配延迟
+   *
+   * 规则准备匹配/或被唤醒时, 等待一段时间, 使此规则参与查询屏幕节点
+   *
    */
-  appFilter?: {
-    name?: StringFilter;
-    versionName?: StringFilter;
-    versionCode?: NumberFilter;
-  };
-  deviceFilter?: {
-    device?: StringFilter;
-    model?: StringFilter;
-    manufacturer?: StringFilter;
-    brand?: StringFilter;
-    sdkInt?: NumberFilter;
-    release?: StringFilter;
+  matchDelay?: number;
+
+  /**
+   * 单位: 毫秒
+   *
+   * 规则匹配时间, 此规则参与查询屏幕节点时, 等待一段时间, 休眠此规则
+   *
+   * 例如某些应用的 开屏广告 的 activityId 容易误触/太广泛, 而开屏广告几乎只在应用切出来时出现, 设置一个有限匹配时间能避免后续的误触
+   *
+   */
+  matchTime?: number;
+
+  /**
+   * 最大执行次数
+   *
+   * 规则的 action 被执行的最大次数, 达到最大次数时, 休眠此规则
+   *
+   * 功能类似 matchTime, 适用于只需要执行一次的: 开屏广告/更新弹窗/青少年弹窗 一类规则
+   *
+   * 当规则准备匹配/或被唤醒时, 将重新计算次数
+   *
+   */
+  actionMaximum?: number;
+
+  /**
+   * 默认值: `activity`
+   *
+   * 当规则因为 matchTime/actionMaximum 而休眠时, 如何唤醒此规则
+   *
+   * @example
+   * 'activity'
+   * // 当 activity 刷新时, 唤醒规则
+   * // 刷新 activity 并不代表 activityId 变化
+   * // 如 哔哩哔哩视频播放页 底部点击推荐视频 进入另一个 视频播放页, 进入了新 activity 但是 activityId 并没有变化
+   *
+   * @example
+   * 'app'
+   * // 重新进入 app 时, 唤醒规则
+   */
+  resetMatch?: 'activity' | 'app';
+
+  // 暂未支持
+  filter?: {
+    /**
+     * 某些应用使用框架生成控件id, 如QQ/微信, 这些id只在相邻几个版本可使用
+     */
+    appVersionCode?: unknown;
+    screenHeight?: unknown;
+    screenWidth?: unknown;
+    isLandscape?: boolean;
   };
 };
 
@@ -198,8 +240,12 @@ type RuleConfig = {
    * // 计算出此控件的中心的坐标并且如果这个坐标在屏幕内部，那么就向系统发起一个点击屏幕坐标事件
    * // 如果这个坐标不在屏幕内部, 当作未匹配
    * // 另外如果目标节点的位置被其它节点遮挡覆盖, 则会点击触发最上层的节点(可能不是目标节点)
+   *
+   * @example
+   * `back`
+   * // 向系统发起一个返回事件, 相当于按下返回键
    */
-  action?: 'click' | 'clickNode' | 'clickCenter';
+  action?: 'click' | 'clickNode' | 'clickCenter' | 'back';
 
   snapshotUrls?: IArray<string>;
   exampleUrls?: IArray<string>;
