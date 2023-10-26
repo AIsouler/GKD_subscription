@@ -16,10 +16,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '弹窗广告',
-      activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
       rules: [
         {
           key: 0,
+          activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
           matches:
             '[id="com.lptiyu.tanke:id/interact_ad_root"] >n [id="com.lptiyu.tanke:id/iv_close"]',
           snapshotUrls: [
@@ -29,8 +29,16 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13070801',
+        },
+        {
+          key: 2,
+          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
+          matches:
+            '@LinearLayout > [id="com.lptiyu.tanke:id/skip_parent_view"]',
+          snapshotUrls: 'https://i.gkd.li/import/13166361',
         },
       ],
     },
