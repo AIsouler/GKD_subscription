@@ -22,8 +22,11 @@ export default defineAppConfig({
         },
         {
           matches:
-            '[id="com.dragon.read:id/root_view"] >n ViewGroup > @FrameLayout[id!=null][clickable=true] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12716444',
+            '[id="com.dragon.read:id/root_view"] >n ViewGroup[childCount=4] > @FrameLayout[id!=null][clickable=true][childCount=1] > ImageView[visibleToUser=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12716444',
+            'https://gkd-kit.gitee.io/import/13062909', // 误触
+          ],
         },
       ],
     },
