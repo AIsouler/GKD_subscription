@@ -89,5 +89,13 @@ export default defineAppConfig({
       ],
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12700615'],
     },
+    {
+      enable: false,
+      key: 8,
+      name: '商品详情页视频讲解窗口',
+      activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+      rules: '[id="com.xunmeng.pinduoduo:id/iv_float_window_close"] > TextView',
+      snapshotUrls: 'https://i.gkd.li/import/13178326',
+    },
   ],
 });
