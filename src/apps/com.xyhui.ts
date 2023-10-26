@@ -20,7 +20,6 @@ export default defineAppConfig({
       key: 1,
       name: '首页-优量汇弹窗广告',
       matchLauncher: true,
-      quickFind: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
         'com.huawei.android.launcher.unihome.UniHomeLauncher',
