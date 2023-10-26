@@ -6,6 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/12908734)
 - [快照-1](https://gkd-kit.gitee.io/import/12716444)
+- [快照-2](https://gkd-kit.gitee.io/import/13062909)
 
 ## 更新弹窗
 

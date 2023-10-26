@@ -12,6 +12,7 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12754919)
 - [快照-1](https://gkd-kit.gitee.io/import/12864214)
+- [快照-2](https://gkd-kit.gitee.io/import/13175439)
 
 ## 升级弹窗
 

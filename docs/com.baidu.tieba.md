@@ -9,6 +9,7 @@
 - [快照-0](https://i.gkd.li/import/12775906)
 - [快照-1](https://gkd-kit.gitee.io/import/12566191)
 - [快照-2](https://gkd-kit.gitee.io/import/12870916)
+- [快照-3](https://gkd-kit.gitee.io/import/13168386)
 
 ## 任意界面-选择不喜欢理由-不感兴趣
 
@@ -43,6 +44,7 @@
 ## 应用内广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/13060891)
+- [快照-1](https://gkd-kit.gitee.io/import/13168383)
 
 ## 首页-悬浮小广告
 
