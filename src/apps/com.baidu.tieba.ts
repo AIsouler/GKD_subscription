@@ -12,6 +12,7 @@ export default defineAppConfig({
       activityIds: [
         'com.baidu.tieba.tblauncher.MainTabActivity',
         'com.baidu.tieba.pb.pb.main.PbActivity',
+        'com.baidu.tieba.frs.FrsActivity',
       ],
       rules: [
         {
@@ -34,6 +35,12 @@ export default defineAppConfig({
           matches:
             '@FrameLayout[childCount=1][clickable=true][id!=null] > TextView[text="跳过"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12870916',
+        },
+        {
+          key: 4,
+          matches:
+            'TextView[text="广告"] - @LinearLayout[clickable=true] [text="关闭"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13168386',
         },
       ],
     },
@@ -144,9 +151,25 @@ export default defineAppConfig({
     {
       key: 9,
       name: '应用内广告弹窗',
-      activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
-      rules: 'View[childCount=3] > @View[clickable=true] > Image',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13060891',
+      activityIds: [
+        'com.baidu.tbadk.browser.TBWebContainerActivity',
+        'com.baidu.tieba.tblauncher.MainTabActivity',
+      ],
+      rules: [
+        {
+          key: 0,
+          desc: '点击右上角x关闭',
+          matches: 'View[childCount=3] > @View[clickable=true] > Image',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13060891',
+        },
+        {
+          key: 1,
+          desc: '点击正下方x关闭',
+          matches:
+            '@TextView[clickable=true && text=null] - FrameLayout TextView[text="广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13168383',
+        },
+      ],
     },
     {
       key: 10,
