@@ -31,14 +31,21 @@ export default defineAppConfig({
     {
       key: 3,
       name: '付款后广告弹窗',
+      activityIds:
+        'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
       rules: [
         {
           key: 0,
           name: '美团买药弹窗-点击[暂时放弃]',
-          activityIds:
-            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
           matches:
             '[text="送亲友"] <2 FrameLayout[childCount=2] > [text="暂时放弃"][clickable=true]',
+        },
+        {
+          key: 1,
+          name: '领取外卖神卷-点击底部【x】',
+          matches:
+            '@ImageView[clickable=true] - FrameLayout > FrameLayout > FrameLayout TextView[text="点我领取"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13175526',
         },
       ],
     },
