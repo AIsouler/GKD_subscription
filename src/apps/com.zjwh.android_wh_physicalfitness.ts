@@ -5,9 +5,21 @@ export default defineAppConfig({
   name: '运动世界校园',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      activityIds: 'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
+      matchLauncher: true,
+      rules:
+        '[id="com.zjwh.android_wh_physicalfitness:id/layoutContainer"] >n [text="跳过"]',
+      snapshotUrls: 'https://i.gkd.li/import/13166424',
+    },
+    {
       key: 1,
       name: '优量汇广告',
-      activityIds: 'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
+      activityIds: [
+        'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
+        'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
+      ],
       rules: [
         {
           matches:
@@ -15,6 +27,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12673231',
             'https://gkd-kit.gitee.io/import/12673523',
+            'https://i.gkd.li/import/13166472', // com.zjwh.android_wh_physicalfitness.ui.AdActivity
           ],
         },
       ],
