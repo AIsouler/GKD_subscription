@@ -129,9 +129,15 @@ export default defineAppConfig({
       key: 7,
       name: '扫一扫-登录确认',
       quickFind: true,
-      activityIds: 'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
+      activityIds: [
+        'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
+        'com.tencent.mobileqq.activity.DevLockQuickVerifyActivity',
+      ],
       rules: 'Button[text="拒绝"] - Button[text="登录"]',
-      snapshotUrls: 'https://i.gkd.li/import/12789287',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12789287',
+        'https://i.gkd.li/import/13166314',
+      ],
     },
     {
       enable: false,
