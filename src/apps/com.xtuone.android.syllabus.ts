@@ -43,5 +43,12 @@ export default defineAppConfig({
       rules: '[id="com.xtuone.android.syllabus:id/imgv_close"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12999642',
     },
+    {
+      key: 3,
+      name: '弹窗广告',
+      activityIds: 'com.xtuone.android.friday.MainFragmentActivity',
+      rules: '[id="com.xtuone.android.syllabus:id/dialog_ad_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13166501',
+    },
   ],
 });
