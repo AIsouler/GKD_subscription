@@ -12,6 +12,7 @@ export default defineAppConfig({
       activityIds: [
         'com.ss.android.article.news.activity.MainActivity',
         'com.bytedance.ugc.UgcDetailInfoActivity',
+        'com.ss.android.splashad.splash.view.SplashAdActivity',
       ],
       rules: [
         {
@@ -20,6 +21,7 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12684954',
             'https://gkd-kit.gitee.io/import/12754759',
             'https://gkd-kit.gitee.io/import/12840189',
+            'https://gkd-kit.gitee.io/import/13174224',
           ],
         },
       ],
