@@ -41,6 +41,12 @@ export default defineAppConfig({
           matches: '[text="广告"] + View >4 [text="| 跳过"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12864214'],
         },
+        {
+          key: 2,
+          name: '点击右上角x (2)',
+          matches: '[id="com.byted.pangle.m:id/tt_reward_full_count_down"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13175439'],
+        },
       ],
     },
     {
