@@ -152,5 +152,29 @@ export default defineAppConfig({
         '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/import/12869426',
     },
+    {
+      key: 9,
+      enable: false,
+      name: '我的-中间卡片式广告',
+      desc: '点击图片中【x】,原因选【不感兴趣】',
+      activityIds: [
+        'com.ximalaya.ting.android.host.activity.MainActivity',
+        'om.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
+      ],
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          matches: '[id="com.ximalaya.ting.android:id/main_close_layout"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13194838',
+        },
+        {
+          preKeys: 0,
+          matches:
+            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_un_interest_title"][text="不感兴趣"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13194839',
+        },
+      ],
+    },
   ],
 });
