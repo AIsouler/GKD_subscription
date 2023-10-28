@@ -7,9 +7,10 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      desc: '空规则组-待实现',
       activityIds: 'com.uc.browser.InnerUCMobile',
-      // TODO
+      matchLauncher: true,
+      rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+      snapshotUrls: 'https://i.gkd.li/import/13188653',
     },
     {
       key: 0,
