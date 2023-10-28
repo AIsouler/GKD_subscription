@@ -16,5 +16,17 @@ export default defineAppConfig({
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/61d335f0-a85a-4e26-80fe-6bc0d1742bc0',
     },
+    {
+      key: 1,
+      name: '版本更新',
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            '[text="立即更新"] <2 * > [id="com.oray.sunlogin:id/button_cancel"][text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/import/13195560',
+        },
+      ],
+    },
   ],
 });
