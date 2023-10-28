@@ -10,8 +10,12 @@ export default defineAppConfig({
       activityIds: ['com.chaozh.iReader.ui.activity.WelcomeActivity'],
       rules: [
         {
-          matches: 'TextView[text*="跳过"]',
+          matches: 'TextView[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13175317',
+        },
+        {
+          matches: 'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13190313',
         },
       ],
     },
