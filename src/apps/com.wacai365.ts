@@ -19,8 +19,11 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13162861',
         },
         {
-          matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13177538',
+          matches: '[id$="id/tt_splash_skip_btn"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13177538',
+            'https://gkd-kit.gitee.io/import/13194893',
+          ],
         },
       ],
     },
