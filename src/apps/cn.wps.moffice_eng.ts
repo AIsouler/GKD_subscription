@@ -8,7 +8,18 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'cn.wps.moffice.documentmanager.PreStartActivity',
-      rules: '[id=`cn.wps.moffice_eng:id/splash_skip`]',
+      rules: [
+        {
+          key: 0,
+          matches: '[id=`cn.wps.moffice_eng:id/splash_skip`]',
+          snapshotUrls: [], // 需要补充快照
+        },
+        {
+          key: 1,
+          matches: '[id="cn.wps.moffice_eng:id/splash_jump"]',
+          snapshotUrls: 'https://i.gkd.li/import/13188596',
+        },
+      ],
     },
     {
       key: 1,
