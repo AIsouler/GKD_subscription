@@ -19,5 +19,12 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '广告卡片',
+      activityIds: 'com.jxedt.ui.activitys.exercise.OrderExerciseActivity',
+      rules: '[id="com.jxedt:id/img_question_banner_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13195641',
+    },
   ],
 });
