@@ -7,19 +7,23 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.redfinger.app.activity.Ads2Activity',
-      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          matches: '[id="com.redfinger.app:id/ksad_splash_circle_skip_view"]',
-          snapshotUrls: 'https://i.gkd.li/import/13166289',
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13166289',
+            'https://i.gkd.li/import/13188631',
+            'https://i.gkd.li/import/13166298',
+          ],
         },
         {
-          key: 1,
-          matches:
-            '[id="com.redfinger.app:id/anythink_myoffer_splash_skip_area"]',
-          snapshotUrls: 'https://i.gkd.li/import/13166298',
+          key: 2,
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13188645',
         },
       ],
     },
