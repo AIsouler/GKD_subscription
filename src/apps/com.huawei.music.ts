@@ -121,8 +121,11 @@ export default defineAppConfig({
       activityIds: ['com.android.mediacenter.MainActivity'],
       rules: [
         {
-          matches: 'ViewGroup > TextView[text="广告"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/13068935'],
+          matches: 'ViewGroup > TextView[text="广告"][id$="ad_icon"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13068935',
+            'https://gkd-kit.gitee.io/import/13194163', // 避免在此规则误触
+          ],
         },
       ],
     },
