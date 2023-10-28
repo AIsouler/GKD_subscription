@@ -180,5 +180,20 @@ export default defineAppConfig({
         snapshotUrls: 'https://gkd-kit.gitee.io/import/12836798',
       },
     },
+    {
+      key: 10,
+      name: '弹窗',
+      desc: '浏览详情时弹窗广告',
+      rules: {
+        activityIds: [
+          'com.douban.frodo.subject.structure.activity.MovieActivity',
+        ],
+        matches: [
+          '[text="查看详情"]',
+          'FrameLayout[childCount=5] > FrameLayout > ImageView',
+        ],
+        snapshotUrls: 'https://i.gkd.li/import/13195565',
+      },
+    },
   ],
 });
