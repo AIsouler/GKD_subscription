@@ -7,31 +7,23 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
       quickFind: true,
-      activityIds: [
-        'com.netease.mail.biz.main.MainITabActivity',
-        'com.netease.mail.biz.main.SplashActivity',
-        'com.netease.mail.ad.launch.ui.SplashAdActivity',
-        'com.netease.mail.biz.main.MainITabActivity',
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          matches: '[id="com.netease.mail:id/ad_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/12818335',
-        },
-        {
-          key: 1,
-          matches:
-            '[id="com.netease.mail:id/ad_placeholder"] >n [text^="跳过"]',
+          matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/import/12893573',
-            'https://i.gkd.li/import/12923776', // com.netease.mail.biz.main.SplashActivity
+            'https://i.gkd.li/import/12923776',
+            'https://i.gkd.li/import/13195662',
+            'https://i.gkd.li/import/12818335',
           ],
         },
         {
-          key: 2,
+          key: 1,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12999739',
         },
