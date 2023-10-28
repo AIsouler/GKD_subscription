@@ -14,11 +14,21 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: ['com.xunmeng.pinduoduo.activity.NewPageActivity'],
       rules: [
-        '[text*="新版本"] - ImageView < LinearLayout < LinearLayout + ImageButton[clickable=true]',
+        {
+          key: 0,
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            '[text*="新版本"] - ImageView < LinearLayout < LinearLayout + ImageButton[clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642017',
+        },
+        {
+          key: 1,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches: '@Image + Image +n [text="立即升级"]',
+          snapshotUrls: 'https://i.gkd.li/import/13195645',
+        },
       ],
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12642017'],
     },
     {
       enable: false,
