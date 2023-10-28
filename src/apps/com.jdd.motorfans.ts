@@ -8,24 +8,20 @@ export default defineAppConfig({
       key: 1,
       name: '第三方 SDK 广告弹窗',
       matchLauncher: true,
-      activityIds: [
-        'com.jdd.motorfans.MTMainActivity',
-        'com.jdd.motorfans.modules.detail.DetailActivity2',
-        'com.jdd.motorfans.search.SearchMainActivity',
-        'com.jdd.motorfans.modules.base.FragmentContainerActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      activityIds: [],
       rules: [
         {
           key: 0,
           matches:
             '[id="com.jdd.motorfans:id/ad_content"] >n [id="com.jdd.motorfans:id/iv_close"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12733646',
-            'https://i.gkd.li/import/12798654',
-            'https://i.gkd.li/import/12878843',
-            'https://i.gkd.li/import/12840710',
+            'https://gkd-kit.gitee.io/import/12733646', // com.jdd.motorfans.MTMainActivity
+            'https://i.gkd.li/import/12798654', // com.jdd.motorfans.modules.detail.DetailActivity2
+            'https://i.gkd.li/import/12878843', // com.jdd.motorfans.search.SearchMainActivity
             'https://i.gkd.li/import/12913956', // com.jdd.motorfans.modules.base.FragmentContainerActivity
+            'https://i.gkd.li/import/13188861', // com.jdd.motorfans.message.ChatDetailActivity
+            'https://i.gkd.li/import/12840710', // com.miui.home.launcher.Launcher
+            'https://i.gkd.li/import/13188928', // com.tencent.mm.ui.LauncherUI
           ],
           exampleUrls:
             'https://user-images.githubusercontent.com/44717382/270852019-b0296eaa-a378-49b3-877b-acefca2a7d58.gif',
