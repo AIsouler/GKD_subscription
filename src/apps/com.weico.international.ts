@@ -20,7 +20,8 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '主页-推荐流广告',
+      name: '推荐流广告',
+      desc: '主页,搜索页',
       activityIds: [
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',
@@ -29,8 +30,8 @@ export default defineAppConfig({
         'https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b',
       rules: [
         {
-          activityIds:
-            'com.google.android.material.bottomsheet.BottomSheetDialog',
+          preKeys: [1],
+          name: '点击不感兴趣',
           matches: '@View > [text="不感兴趣"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12505755',
@@ -38,6 +39,8 @@ export default defineAppConfig({
           ],
         },
         {
+          key: 0,
+          name: '点击广告卡片右上角[x]',
           matches: '[id="com.weico.international:id/item_timeline_ad_action"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12505753',
