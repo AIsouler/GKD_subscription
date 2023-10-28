@@ -37,10 +37,21 @@ export default defineAppConfig({
       enable: false,
       key: 1,
       name: '关闭开启定位提示',
+      quickFind: true,
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules:
         '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text^="开启定位权限"]',
       snapshotUrls: 'https://i.gkd.li/import/12792688',
+    },
+    {
+      enable: false,
+      key: 2,
+      name: '关闭开启通知提示',
+      quickFind: true,
+      activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
+      rules:
+        '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text ^="开启通知权限"]',
+      snapshotUrls: 'https://i.gkd.li/import/13194955',
     },
   ],
 });
