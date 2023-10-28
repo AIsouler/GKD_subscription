@@ -1,6 +1,6 @@
 # 番茄免费小说
 
-存在 6 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
+存在 7 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
 
 ## 阅读页面底部广告
 
@@ -31,3 +31,9 @@
 点击底部圆形x图标
 
 - [快照-0](https://gkd-kit.gitee.io/import/12878266)
+
+## 关闭阅读-全屏广告
+
+点击右上角【关闭】
+
+- [快照-0](https://gkd-kit.gitee.io/import/13191156)

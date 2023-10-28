@@ -8,7 +8,9 @@
 - [快照-1](https://gkd-kit.gitee.io/import/12510132)
 - [快照-2](https://i.gkd.li/import/12740537)
 
-## 主页-推荐流广告
+## 推荐流广告
+
+主页,搜索页
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b)
 

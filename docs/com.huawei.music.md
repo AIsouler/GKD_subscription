@@ -37,3 +37,4 @@
 ## 播放器上滑广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/13068935)
+- [快照-1](https://gkd-kit.gitee.io/import/13194163)

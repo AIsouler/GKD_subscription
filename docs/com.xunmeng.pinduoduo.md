@@ -9,6 +9,7 @@
 ## 更新弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642017)
+- [快照-1](https://i.gkd.li/import/13195645)
 
 ## 首页优惠弹窗
 
