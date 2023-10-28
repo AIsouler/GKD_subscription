@@ -5,8 +5,9 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12916417)
-- [快照-1](https://gkd-kit.gitee.io/import/12985488)
-- [快照-2](https://gkd-kit.gitee.io/import/13028151)
+- [快照-1](https://gkd-kit.gitee.io/import/13028151)
+- [快照-2](https://i.gkd.li/import/13195567)
+- [快照-3](https://gkd-kit.gitee.io/import/12985488)
 
 ## 会员提示
 

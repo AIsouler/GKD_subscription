@@ -4,6 +4,8 @@
 
 ## 开屏广告
 
+- [快照-0](https://i.gkd.li/import/13188596)
+
 ## 首页-文档列表广告
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b)

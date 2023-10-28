@@ -5,7 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12833280)
-- [快照-1](https://i.gkd.li/import/12850094)
+- [快照-1](https://gkd-kit.gitee.io/import/12850094)
 
 ## 青少年模式弹窗
 
