@@ -10,9 +10,15 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+          activityIds: [
+            'com.klcxkj.zqxy.ui.main.MainActivity',
+            'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+          ],
           matches: '[id="com.klcxkj.zqxy:id/anythink_myoffer_btn_close_id"]',
-          snapshotUrls: 'https://i.gkd.li/import/12781415',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13195649',
+            'https://i.gkd.li/import/12781415',
+          ],
         },
         {
           key: 1,
