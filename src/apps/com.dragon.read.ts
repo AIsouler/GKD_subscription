@@ -79,5 +79,14 @@ export default defineAppConfig({
         '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12878266',
     },
+    {
+      key: 12,
+      name: '关闭阅读-全屏广告',
+      desc: '点击右上角【关闭】',
+      quickFind: true,
+      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+      rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13191156',
+    },
   ],
 });
