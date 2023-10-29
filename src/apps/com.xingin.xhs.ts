@@ -8,14 +8,20 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',
-      rules: '[text="广告"] - @FrameLayout > [text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12739065',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="跳过"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12739065', // com.xingin.xhs.index.v2.IndexActivityV2
+        'https://gkd-kit.gitee.io/import/13197784', // com.xingin.matrix.detail.activity.DetailFeedActivity
+      ],
     },
     {
       key: 1,
       name: '关闭开启通知弹窗',
       quickFind: true,
+      actionMaximum: 1,
       activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',
       rules: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',
       snapshotUrls: 'https://i.gkd.li/import/13195753',
