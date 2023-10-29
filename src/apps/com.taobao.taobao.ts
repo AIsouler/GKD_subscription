@@ -18,18 +18,30 @@ export default defineAppConfig({
       enable: false,
       key: 1,
       name: '限时福利弹窗',
-      activityIds: [
-        'com.taobao.tao.welcome.Welcome',
-        'com.taobao.tao.TBMainActivity',
-        'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
-        'com.taobao.android.detail.wrapper.activity.DetailActivity',
-      ],
-      rules: '[desc^="限时福利"] < FrameLayout + [desc="关闭按钮"]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12642792', // activityId: com.taobao.tao.welcome.Welcome
-        'https://gkd-kit.gitee.io/import/13180826', // activityId: com.taobao.tao.TBMainActivity
-        'https://gkd-kit.gitee.io/import/12648734', // activityId: com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
-        'https://gkd-kit.gitee.io/import/12648746', // activityId: com.taobao.android.detail.wrapper.activity.DetailActivity
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.taobao.tao.welcome.Welcome',
+            'com.taobao.tao.TBMainActivity',
+            'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
+            'com.taobao.android.detail.wrapper.activity.DetailActivity',
+          ],
+          matches: '[desc^="限时福利"] < FrameLayout + [desc="关闭按钮"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642792', // activityId: com.taobao.tao.welcome.Welcome
+            'https://gkd-kit.gitee.io/import/13180826', // activityId: com.taobao.tao.TBMainActivity
+            'https://gkd-kit.gitee.io/import/12648734', // activityId: com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
+            'https://gkd-kit.gitee.io/import/12648746', // activityId: com.taobao.android.detail.wrapper.activity.DetailActivity
+          ],
+        },
+        {
+          key: 1,
+          desc: '88VIP开通优惠弹窗',
+          activityIds: 'com.taobao.tao.welcome.Welcome',
+          matches: '[desc="淘气值冲刺成功"] < FrameLayout + [desc="关闭按钮"]',
+          snapshotUrls: 'https://i.gkd.li/import/13198052',
+        },
       ],
     },
     {
