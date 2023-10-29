@@ -5,18 +5,28 @@ export default defineAppConfig({
   name: '喜马拉雅极速版',
   groups: [
     {
-      key: 1,
+      key: -1,
       name: '开屏广告',
-      activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
-        '[id="com.ximalaya.ting.lite:id/host_common_time_countdown_text_view"]',
+        {
+          matches: '[text^="跳过"][text.length<=10]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13197061',
+        },
+        {
+          matches:
+            '[id="com.ximalaya.ting.lite:id/host_common_time_countdown_text_view"]',
+        },
       ],
     },
     {
       key: 0,
       name: '首页-推荐-卡片广告',
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      rules: '[id=\'com.ximalaya.ting.lite:id/main_ad_top_home_iv_close\']',
+      rules: '[id="com.ximalaya.ting.lite:id/main_ad_top_home_iv_close"]',
     },
   ],
 });
