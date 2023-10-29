@@ -7,13 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          activityIds: [
-            'com.tencent.qqmusic.activity.AppStarterActivity',
-            'com.tencent.qqmusic.business.splash.thirdpartsplash.tme.union.SplashDialog',
-          ],
           matches: 'TextView[text=`跳过`][clickable=true]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12673960', // text="互动广告"
@@ -49,6 +48,15 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[text="抢先体验"] -2 [text="不再提醒"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/13178485',
+    },
+    {
+      key: 4,
+      name: '免流弹窗',
+      desc: '点击[流量够用]',
+      activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+      quickFind: true,
+      rules: '[text="流量够用"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13197868',
     },
   ],
 });
