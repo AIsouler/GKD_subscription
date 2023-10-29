@@ -7,10 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.netease.cloudmusic.activity.MainActivity',
-        'com.netease.cloudmusic.activity.LoadingActivity',
-      ],
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="com.netease.cloudmusic:id/skipBtn"]',
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12700920'],
     },
@@ -19,12 +19,7 @@ export default defineAppConfig({
       name: '广告卡片',
       rules: [
         {
-          activityIds:
-            'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
-          matches: '[text="直接关闭"]',
-          snapshotUrls: ['https://i.gkd.li/import/12829967'],
-        },
-        {
+          key: 0,
           activityIds: [
             'com.netease.cloudmusic.activity.MainActivity',
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
@@ -39,6 +34,11 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12829964',
             'https://gkd-kit.gitee.io/import/12829953',
           ],
+        },
+        {
+          preKeys: 1,
+          matches: '[text="直接关闭"]',
+          snapshotUrls: ['https://i.gkd.li/import/12829967'],
         },
       ],
     },
@@ -84,6 +84,18 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13189055',
         },
       ],
+    },
+    {
+      key: 6,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      matchDelay: 1000,
+      resetMatch: 'app',
+      rules:
+        'ImageButton[id="com.netease.cloudmusic:id/md_dialog_cm_close_btn"]',
+      snapshotUrls: 'https://i.gkd.li/import/13197457',
     },
   ],
 });
