@@ -8,14 +8,9 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchLauncher: true,
-      activityIds: [
-        'com.zhihu.android.app.ui.activity', //匹配所有ui.activity
-        'com.zhihu.android.app.feed.AdTransparentHostActivity',
-        'com.zhihu.android.ContentActivity',
-        'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
-        'com.zhihu.android.mix.activity.ContentMixProfileActivity',
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: 'TextView[id="com.zhihu.android:id/btn_skip"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12707641', // com.zhihu.android.app.ui.activity.LauncherActivity
@@ -114,11 +109,13 @@ export default defineAppConfig({
           key: 4,
           matches: 'TextView[text*=`回答`][text*=`关注`] + TextView[text=`×`]',
         },
-        {
-          key: 5,
-          matches:
-            'TextView[text!=null] + TextView[text*=`赞同`] + View > Image',
-        },
+        // 存在误触，缺乏快照处置，暂时移除
+        // 误触快照：https://i.gkd.li/import/13196039
+        // {
+        //   key: 5,
+        //   matches:
+        //     'TextView[text!=null] + TextView[text*=`赞同`] + View > Image',
+        // },
         {
           key: 6,
           matches: 'TextView[text$=`的广告`] - Image[id=null]',
