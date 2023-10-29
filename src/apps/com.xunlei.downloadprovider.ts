@@ -158,6 +158,7 @@ export default defineAppConfig({
     {
       key: 4,
       name: '下载页面-广告卡片',
+      matchLauncher: true,
       rules: [
         {
           key: 0,
@@ -182,7 +183,10 @@ export default defineAppConfig({
           key: 2,
           activityIds: 'com.xunlei.downloadprovider.download.center.newcenter',
           matches: '[id="com.xunlei.downloadprovider:id/close_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/128818775',
+          snapshotUrls: [
+            'https://i.gkd.li/import/128818775',
+            'https://i.gkd.li/import/13198070',
+          ],
         },
       ],
     },
