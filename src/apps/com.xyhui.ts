@@ -8,12 +8,22 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      activityIds: 'com.xyhui.start.LoadingActivity',
-      rules: '[name$="ViewGroup"||name$="LinearLayout"] > [text^="跳过"]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12642486',
-        'https://i.gkd.li/import/12846496',
-        'https://i.gkd.li/import/12868232',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          snapshotUrls: [
+            'https://i.gkd.li/import/12642486',
+            'https://i.gkd.li/import/12846496',
+            'https://i.gkd.li/import/12868232',
+          ],
+          matches: '[text^="跳过"][text.length<=10]',
+        },
+        {
+          matches: '[id="com.xyhui:id/ms_skipView"]',
+          snapshotUrls: ['https://i.gkd.li/import/13197417'],
+        },
       ],
     },
     {
@@ -22,7 +32,6 @@ export default defineAppConfig({
       matchLauncher: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
-        'com.huawei.android.launcher.unihome.UniHomeLauncher',
         'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity',
         'com.xyhui.start.LoadingActivity',
       ],
@@ -83,6 +92,15 @@ export default defineAppConfig({
         'https://i.gkd.li/import/12908853',
         'https://i.gkd.li/import/12908865',
       ],
+    },
+    {
+      key: 4,
+      name: '我的-弹窗广告',
+      activityIds: [
+        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      ],
+      rules: '[text="查看详情"] <n FrameLayout -n FrameLayout > View',
+      snapshotUrls: ['https://i.gkd.li/import/13197443'],
     },
   ],
 });
