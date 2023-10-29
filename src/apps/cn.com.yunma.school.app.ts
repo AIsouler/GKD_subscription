@@ -8,10 +8,18 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchLauncher: true,
-      activityIds: 'com.yunma.app.ui.start.SplashActivity',
-      rules: '[id="cn.com.yunma.school.app:id/skip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13175275',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        '[text^="跳过"][text.length<=10]',
+        '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
+      ],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13175275',
+        'https://gkd-kit.gitee.io/import/13177064',
+        'https://gkd-kit.gitee.io/import/13179898',
+      ],
     },
   ],
 });
