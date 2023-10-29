@@ -83,14 +83,5 @@ export default defineAppConfig({
       rules: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12642798',
     },
-    {
-      key: 12,
-      name: '弹窗-下次从首页找到',
-      desc: '点击底部x图片按钮',
-      quickFind: true,
-      activityIds: 'com.alibaba.triver.container.TriverMainActivity',
-      rules: '[id="com.taobao.taobao.triver_taobao:id/close_image"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13197362',
-    },
   ],
 });
