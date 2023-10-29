@@ -7,13 +7,23 @@ export default defineAppConfig({
     {
       key: 0,
       name: '首页悬浮窗广告',
+      quickFind: true,
       activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
       rules: 'Button[text="关闭"]',
+    },
+    {
+      key: 9,
+      name: '应用升级界面-顶部广告横幅',
+      quickFind: true,
+      activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+      rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
+      snapshotUrls: 'https://i.gkd.li/import/13197334',
     },
     {
       enable: false,
       key: 10,
       name: '忽略升级',
+      quickFind: true,
       desc: '应用升级界面-自动点击忽略',
       exampleUrls:
         'https://github.com/gkd-kit/subscription/assets/45487685/a3a61df9-7757-428e-b4fe-a960e09a0bbe',
@@ -45,10 +55,22 @@ export default defineAppConfig({
       key: 11,
       name: '请求开启推送弹窗',
       desc: '自动点击关闭按钮',
-      activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
-      rules:
-        '@[id="com.xiaomi.market:id/dialog_cancel"] - LinearLayout > [id="com.xiaomi.market:id/btn_start_push"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12714980',
+      quickFind: true,
+      activityIds: [
+        'com.xiaomi.market.ui.UpdateListActivity',
+        'com.miui.home.launcher.Launcher',
+      ],
+      rules: [
+        {
+          matches:
+            '@[id="com.xiaomi.market:id/dialog_cancel"] - LinearLayout > [id="com.xiaomi.market:id/btn_start_push"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12714980',
+        },
+        {
+          matches: 'Button[text="立即开启"] - Button[text="不了，谢谢"]',
+          snapshotUrls: 'https://i.gkd.li/import/13197306',
+        },
+      ],
     },
   ],
 });
