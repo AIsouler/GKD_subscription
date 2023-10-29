@@ -1,6 +1,10 @@
 # 向日葵远程控制
 
-存在 2 规则组 - [com.oray.sunlogin](/src/apps/com.oray.sunlogin.ts)
+存在 3 规则组 - [com.oray.sunlogin](/src/apps/com.oray.sunlogin.ts)
+
+## 开屏广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/13197052)
 
 ## 瓜子会员弹窗
 
@@ -10,6 +14,7 @@
 
 - [快照-0](https://i.gkd.li/import/13195950)
 - [快照-1](https://i.gkd.li/import/12910411)
+- [快照-2](https://gkd-kit.gitee.io/import/13197454)
 
 ## 版本更新
 

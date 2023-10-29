@@ -1,6 +1,6 @@
 # QQ音乐
 
-存在 4 规则组 - [com.tencent.qqmusic](/src/apps/com.tencent.qqmusic.ts)
+存在 5 规则组 - [com.tencent.qqmusic](/src/apps/com.tencent.qqmusic.ts)
 
 ## 开屏广告
 
@@ -20,3 +20,9 @@
 点击[不再提醒]
 
 - [快照-0](https://gkd-kit.gitee.io/import/13178485)
+
+## 免流弹窗
+
+点击[流量够用]
+
+- [快照-0](https://gkd-kit.gitee.io/import/13197868)

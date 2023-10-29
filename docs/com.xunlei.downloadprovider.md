@@ -47,6 +47,7 @@
 - [快照-1](https://i.gkd.li/import/12892893)
 - [快照-2](https://i.gkd.li/import/12901395)
 - [快照-3](https://i.gkd.li/import/128818775)
+- [快照-4](https://i.gkd.li/import/13198070)
 
 ## 搜索页面-顶部banner广告
 
