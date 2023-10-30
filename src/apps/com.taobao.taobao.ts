@@ -26,6 +26,7 @@ export default defineAppConfig({
             'com.taobao.tao.TBMainActivity',
             'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
             'com.taobao.android.detail.wrapper.activity.DetailActivity',
+            'com.alibaba.triver.container.TriverMainActivity',
           ],
           matches: '[desc^="限时福利"] < FrameLayout + [desc="关闭按钮"]',
           snapshotUrls: [
@@ -33,6 +34,7 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/13180826', // activityId: com.taobao.tao.TBMainActivity
             'https://gkd-kit.gitee.io/import/12648734', // activityId: com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
             'https://gkd-kit.gitee.io/import/12648746', // activityId: com.taobao.android.detail.wrapper.activity.DetailActivity
+            'https://gkd-kit.gitee.io/import/13198239', //com.alibaba.triver.container.TriverMainActivity
           ],
         },
         {
