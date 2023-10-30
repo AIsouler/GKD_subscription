@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v148
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v149
 
-当前订阅文件已适配 531 个 APP, 共有 1156 规则组
+当前订阅文件已适配 531 个 APP, 共有 1157 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -419,7 +419,7 @@ GKD 默认订阅规则
 | 我的听书 | [com.github.eprendre.tingshu](/docs/com.github.eprendre.tingshu.md) | 2 |
 | 无线魔盒 | [cn.com.ruijie.magicbox](/docs/cn.com.ruijie.magicbox.md) | 1 |
 | 下厨房 | [com.xiachufang](/docs/com.xiachufang.md) | 1 |
-| 向日葵远程控制 | [com.oray.sunlogin](/docs/com.oray.sunlogin.md) | 3 |
+| 向日葵远程控制 | [com.oray.sunlogin](/docs/com.oray.sunlogin.md) | 4 |
 | 闲鱼 | [com.taobao.idlefish](/docs/com.taobao.idlefish.md) | 1 |
 | 小爱音箱 | [com.xiaomi.mico](/docs/com.xiaomi.mico.md) | 2 |
 | 小白PDF阅读器 | [com.jujie.xbreader](/docs/com.jujie.xbreader.md) | 1 |
@@ -546,4 +546,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=148)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=149)
