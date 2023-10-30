@@ -7,13 +7,17 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
       quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="android:id/content"] >3 TextView[text^="跳过"][text.length<=4]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12841168',
+          matches: 'TextView[text^="跳过"][text.length<=4][clickable=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12841168',
+            'https://gkd-kit.gitee.io/import/13199536',
+          ],
         },
       ],
     },
