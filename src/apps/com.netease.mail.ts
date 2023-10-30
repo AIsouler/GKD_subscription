@@ -15,11 +15,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[text*="跳过"][text.length<=10]',
+          excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
           snapshotUrls: [
             'https://i.gkd.li/import/12893573',
             'https://i.gkd.li/import/12923776',
             'https://i.gkd.li/import/13195662',
             'https://i.gkd.li/import/12818335',
+            'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
           ],
         },
         {
