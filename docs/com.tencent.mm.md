@@ -1,6 +1,6 @@
 # 微信
 
-存在 14 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 16 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -59,12 +59,13 @@
 默认禁用 - ⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642232)
-- [快照-1](https://gkd-kit.gitee.io/import/12646837)
-- [快照-2](https://gkd-kit.gitee.io/import/12678937)
-- [快照-3](https://gkd-kit.gitee.io/import/12714427)
-- [快照-4](https://gkd-kit.gitee.io/import/12700183)
-- [快照-5](https://gkd-kit.gitee.io/import/12701503)
-- [快照-6](https://gkd-kit.gitee.io/import/12714424)
+- [快照-1](https://gkd-kit.gitee.io/import/13199281)
+- [快照-2](https://gkd-kit.gitee.io/import/12646837)
+- [快照-3](https://gkd-kit.gitee.io/import/12678937)
+- [快照-4](https://gkd-kit.gitee.io/import/12714427)
+- [快照-5](https://gkd-kit.gitee.io/import/12700183)
+- [快照-6](https://gkd-kit.gitee.io/import/12701503)
+- [快照-7](https://gkd-kit.gitee.io/import/12714424)
 
 ## 自动选中发送原图
 
@@ -109,3 +110,16 @@
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12926021)
+
+## 小程序-内部广告
+
+默认禁用 - 需同时开启"小程序-内部广告-反馈"
+
+- [快照-0](https://gkd-kit.gitee.io/import/13199282)
+
+## 小程序-内部广告-反馈
+
+默认禁用 - 需同时开启"小程序-内部广告"
+
+- [快照-0](https://i.gkd.li/import/13200044)
+- [快照-1](https://i.gkd.li/import/13200048)

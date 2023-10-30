@@ -9,7 +9,10 @@
 - [快照-2](https://gkd-kit.gitee.io/import/12673998)
 - [快照-3](https://gkd-kit.gitee.io/import/12674074)
 
-## 推荐页-广告卡片
+## 广告卡片
+
+- [快照-0](https://i.gkd.li/import/13206534)
+- [快照-1](https://i.gkd.li/import/13206982)
 
 ## 首页-底部广告弹窗
 

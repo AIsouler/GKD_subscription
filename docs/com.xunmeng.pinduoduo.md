@@ -1,6 +1,6 @@
 # 拼多多
 
-存在 9 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 10 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 开屏广告
 
@@ -52,3 +52,10 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13178326)
+
+## 多多视频每日自动签到
+
+默认禁用
+
+- [快照-0](https://gkd-kit.gitee.io/import/13201422)
+- [快照-1](https://gkd-kit.gitee.io/import/13205634)

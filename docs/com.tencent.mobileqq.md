@@ -21,8 +21,9 @@
 
 ## 频道页面广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12642081)
-- [快照-1](https://gkd-kit.gitee.io/import/12708844)
+- [快照-0](https://i.gkd.li/import/13206663)
+- [快照-1](https://gkd-kit.gitee.io/import/12642081)
+- [快照-2](https://gkd-kit.gitee.io/import/12708844)
 
 ## 顶部SVIP广告
 
