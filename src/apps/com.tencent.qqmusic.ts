@@ -25,11 +25,30 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '推荐页-广告卡片',
+      name: '广告卡片',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
-        '@LinearLayout[clickable=true] > TextView[text="广告"] + ImageView', // 1688045698846
-        'TextView[text="广告 | 关闭"][clickable=true]',
+        {
+          key: 0,
+          matches:
+            '@LinearLayout[clickable=true] > TextView[text="广告"] + ImageView', // 1688045698846
+        },
+        {
+          key: 1,
+          matches: 'TextView[text="广告 | 关闭"][clickable=true]',
+          snapshotUrls: [], // 需要补充快照
+        },
+        {
+          key: 2,
+          matches: '[text="广告"] + * + [desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/13206534',
+        },
+        {
+          key: 3,
+          matches:
+            '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"]',
+          snapshotUrls: 'https://i.gkd.li/import/13206982',
+        },
       ],
     },
     {
