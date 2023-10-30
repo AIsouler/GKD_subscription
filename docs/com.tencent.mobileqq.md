@@ -6,6 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/13062244)
 - [快照-1](https://i.gkd.li/import/13093155)
+- [快照-2](https://i.gkd.li/import/13207731)
 
 ## 消息页面-顶部广告
 
@@ -13,6 +14,7 @@
 
 - [快照-0](https://i.gkd.li/import/12892726)
 - [快照-1](https://i.gkd.li/import/12774870)
+- [快照-2](https://i.gkd.li/import/13207766)
 
 ## 好友动态-广告卡片
 
