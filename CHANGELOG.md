@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.84.0](https://github.com/gkd-kit/subscription/compare/v1.83.0...v1.84.0) (2023-10-30)
+
+
+### Features
+
+* **QQ:** 开屏广告（优化规则） ([#1619](https://github.com/gkd-kit/subscription/issues/1619)) ([e29e152](https://github.com/gkd-kit/subscription/commit/e29e152b693a4fbc8c64b23956359cf17972d706))
+* **QQ:** 消息页面-顶部广告（完善规则） ([#1620](https://github.com/gkd-kit/subscription/issues/1620)) ([bf0b772](https://github.com/gkd-kit/subscription/commit/bf0b772602fa7702b12a73b8ae5b166887966737))
+* **向日葵远程控制:** 设备列表-卡片广告 ([#1617](https://github.com/gkd-kit/subscription/issues/1617)) ([9b5bf59](https://github.com/gkd-kit/subscription/commit/9b5bf591bba6fd816b1ffc347634e4dbc936124e))
+* **网易邮箱大师:** 邮件列表广告-误触修复 ([b1ca633](https://github.com/gkd-kit/subscription/commit/b1ca6337cbe64b42eb50aa7122bbfdd7c3836f0f))
+* **网易邮箱大师:** 邮件列表广告-误触修复 ([8409b97](https://github.com/gkd-kit/subscription/commit/8409b977af5b0ae35a008d686c089673ebc8c72b))
+
 ## [1.83.0](https://github.com/gkd-kit/subscription/compare/v1.82.0...v1.83.0) (2023-10-30)
 
 
