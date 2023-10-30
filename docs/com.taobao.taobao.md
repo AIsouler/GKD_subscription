@@ -12,7 +12,8 @@
 - [快照-1](https://gkd-kit.gitee.io/import/13180826)
 - [快照-2](https://gkd-kit.gitee.io/import/12648734)
 - [快照-3](https://gkd-kit.gitee.io/import/12648746)
-- [快照-4](https://i.gkd.li/import/13198052)
+- [快照-4](https://gkd-kit.gitee.io/import/13198239)
+- [快照-5](https://i.gkd.li/import/13198052)
 
 ## 消息页面-热门活动卡片
 

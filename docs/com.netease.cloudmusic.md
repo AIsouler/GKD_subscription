@@ -1,6 +1,6 @@
 # 网易云音乐
 
-存在 7 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
+存在 8 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
 
 ## 开屏广告
 
@@ -34,5 +34,11 @@
 - [快照-0](https://gkd-kit.gitee.io/import/13189055)
 
 ## 版本更新
+
+- [快照-0](https://i.gkd.li/import/13197457)
+
+## 播放界面右上角-免费听歌
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13197457)
