@@ -12,10 +12,11 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: 'TextView[text="跳过"][clickable=true]',
+      rules: 'TextView[text^="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/13062244',
         'https://i.gkd.li/import/13093155',
+        // 存在 跳过广告 的文字
       ],
     },
     {
