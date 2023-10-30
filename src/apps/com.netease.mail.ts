@@ -22,6 +22,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13195662',
             'https://i.gkd.li/import/12818335',
             'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
+            'https://i.gkd.li/import/13207736', // TODO 一整块图片，无法跳过
           ],
         },
         {
