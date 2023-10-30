@@ -93,7 +93,7 @@ export default defineAppConfig({
         {
           activityIds: ['com.sina.weibo.feed.DetailWeiboActivity'],
           matches:
-            'RelativeLayout[visibleToUser=true] - RelativeLayout >n [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
+            'RelativeLayout[visibleToUser=true] - RelativeLayout >n @[id="com.sina.weibo:id/ll_close"] > [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12674498',
             'https://i.gkd.li/import/13035647', // 限制 RelativeLayout[visibleToUser=true]，防止在这个快照中误触点赞按钮
@@ -173,15 +173,31 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/12750090'],
     },
     {
-      enable: false,
       key: 13,
-      name: '右下角刷微博领现金悬浮广告',
+      name: '悬浮广告',
       desc: '自动点击x按钮',
       quickFind: true,
-      activityIds: ['com.sina.weibo.MainTabActivity'],
-      rules:
-        '[id="com.sina.weibo:id/floating_window"] >2 [id="com.sina.weibo:id/close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12750118'],
+      activityIds: 'com.sina.weibo.MainTabActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[id="com.sina.weibo:id/floating_window"] >2 [id="com.sina.weibo:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/import/12750118',
+        },
+        {
+          key: 1,
+          matches:
+            '[id="com.sina.weibo:id/floating_window"] >n [id="com.sina.weibo:id/closeView"]',
+          snapshotUrls: 'https://i.gkd.li/import/13206775',
+        },
+        {
+          key: 2,
+          matches:
+            '[id="com.sina.weibo:id/tv_tag"] + @*[clickable=true] + [id="com.sina.weibo:id/countdown_btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13206841',
+        },
+      ],
     },
     {
       key: 14,
