@@ -7,17 +7,26 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'me.ele.application.ui.splash.SplashActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="me.ele:id/skip_button"]',
       snapshotUrls: 'https://i.gkd.li/import/12534930',
     },
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: 'com.afollestad.materialdialogs.MaterialDialog',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      matchDelay: 3000,
       rules:
         '[text*="更新应用版本"] < ScrollView + [text="取消"][focusable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12650280',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12650280',
+        'https://gkd-kit.gitee.io/import/13206819',
+      ],
     },
     {
       enable: false,
@@ -43,6 +52,14 @@ export default defineAppConfig({
       rules:
         '[id="me.ele:id/id_magex_mistview"] > ImageView + ImageView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/12726709',
+    },
+    {
+      key: 5,
+      name: '付款后广告弹窗',
+      quickFind: true,
+      activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
+      rules: 'bb Button[text="关闭"]',
+      snapshotUrls: 'https://i.gkd.li/import/13205301',
     },
   ],
 });
