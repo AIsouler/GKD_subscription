@@ -45,13 +45,15 @@ export default defineAppConfig({
       key: 2,
       name: '邮件列表广告',
       activityIds: ['com.netease.mail.biz.main.MainITabActivity'],
+      quickFind: true,
       rules: [
         {
           key: 0,
-          matches: '[id="com.netease.mail:id/ad_arrow"]',
+          matches: '[id="com.netease.mail:id/ad_vip"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12999833',
         },
         {
+          preKeys: 0,
           key: 1,
           matches: '[id="com.netease.mail:id/ll_delete"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12999841',
