@@ -89,12 +89,20 @@ export default defineAppConfig({
       key: 6,
       name: '版本更新',
       quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      matchDelay: 1000,
-      resetMatch: 'app',
+      activityIds:
+        'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
       rules:
         'ImageButton[id="com.netease.cloudmusic:id/md_dialog_cm_close_btn"]',
+      snapshotUrls: 'https://i.gkd.li/import/13197457',
+    },
+    {
+      enable: false,
+      key: 7,
+      name: '播放界面右上角-免费听歌',
+      quickFind: true,
+      activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
+      rules:
+        'TextView[text^="看视频，免费畅听VIP歌曲"] + [id="com.netease.cloudmusic:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/13197457',
     },
   ],
