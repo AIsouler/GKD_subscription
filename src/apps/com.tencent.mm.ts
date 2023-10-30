@@ -92,6 +92,7 @@ export default defineAppConfig({
       ],
     },
     {
+      // Key1,2,3,4,11 均为授权类的规则
       key: 1,
       name: '电脑微信快捷自动登录',
       activityIds: '.plugin.webwx.ui.ExtDeviceWXLoginUI',
@@ -180,16 +181,19 @@ export default defineAppConfig({
       key: 6,
       name: '订阅号文章广告',
       desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则',
-      activityIds:
-        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
+      activityIds: [
+        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
+      ],
       rules: [
         {
           key: 1,
           name: '广告类型1',
-          matches:
+          matches: [
             'View[id="ad_container"] > View[childCount=1] >n @View > [id=null][text^="广告"][visibleToUser=true]',
+          ],
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642232',
+            'https://gkd-kit.gitee.io/import/12642232', // ui.TmplWebViewMMUI
+            'https://gkd-kit.gitee.io/import/13199281', // ui.TmplWebViewTooLMpUI
             'https://gkd-kit.gitee.io/import/12646837', // 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
             'https://gkd-kit.gitee.io/import/12678937', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
             'https://gkd-kit.gitee.io/import/12714427', // 优化规则，使用 View[id="ad_container"] 作为特征节点
@@ -235,7 +239,7 @@ export default defineAppConfig({
       name: '订阅号文章广告反馈',
       desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用',
       activityIds:
-        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
+        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
       rules: [
         {
           key: 1,
@@ -321,6 +325,44 @@ export default defineAppConfig({
             'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
           ],
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12926021'],
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 14,
+      name: '小程序-内部广告',
+      desc: '需同时开启"小程序-内部广告-反馈"',
+      activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            'FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text="广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13199282', //[childCount=3]避免在点击展开菜单后重复点击
+          ],
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 15,
+      name: '小程序-内部广告-反馈',
+      desc: '需同时开启"小程序-内部广告"',
+      activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
+      quickFind: true,
+      rules: [
+        {
+          matches: '[text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: ['https://i.gkd.li/import/13200044'],
+        },
+        {
+          matches: '[text="与我无关"][visibleToUser=true]',
+          snapshotUrls: ['https://i.gkd.li/import/13200048'],
+        },
+        {
+          matches: '[text="关闭此广告"][visibleToUser=true]', //预防性规则,目前没有快照
         },
       ],
     },
