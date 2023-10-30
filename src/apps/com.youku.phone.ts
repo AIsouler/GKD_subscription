@@ -5,13 +5,14 @@ export default defineAppConfig({
   name: '优酷视频',
   groups: [
     {
-      enable: false,
       key: 0,
       name: '开屏广告',
-      desc: '占位，暂无作用',
-      activityIds: 'com.youku.v2.HomePageEntry',
-      rules: [],
-      snapshotUrls: [],
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[id="com.youku.phone:id/splash_ad_txt_skip"]',
+      snapshotUrls: 'https://i.gkd.li/import/13206958',
     },
     {
       enable: false,
