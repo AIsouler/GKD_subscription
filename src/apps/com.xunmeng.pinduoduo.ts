@@ -107,5 +107,29 @@ export default defineAppConfig({
       rules: '[id="com.xunmeng.pinduoduo:id/iv_float_window_close"] > TextView',
       snapshotUrls: 'https://i.gkd.li/import/13178326',
     },
+    {
+      enable: false,
+      key: 9,
+      name: '多多视频每日自动签到',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
+      rules: [
+        {
+          key: 0,
+          desc: '自动签到',
+          matches: ['FrameLayout > TextView[text="领取今日现金"]'],
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13201422',
+        },
+        {
+          key: 1,
+          preKeys: [0],
+          desc: '在签到后关闭弹窗',
+          matches: ['FrameLayout > TextView[text="明日继续来领"]'],
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13205634',
+        },
+      ],
+    },
   ],
 });
