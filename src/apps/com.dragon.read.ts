@@ -5,6 +5,20 @@ export default defineAppConfig({
   name: '番茄免费小说',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          matches: '[text="跳过广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13210844',
+        },
+      ],
+    },
+    {
       key: 0,
       name: '阅读页面底部广告',
       activityIds: [
