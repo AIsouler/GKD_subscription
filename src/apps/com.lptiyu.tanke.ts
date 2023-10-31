@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '弹窗广告',
+      name: '广告弹窗',
       rules: [
         {
           key: 0,
@@ -39,6 +39,13 @@ export default defineAppConfig({
           matches:
             '@LinearLayout > [id="com.lptiyu.tanke:id/skip_parent_view"]',
           snapshotUrls: 'https://i.gkd.li/import/13166361',
+        },
+        {
+          key: 3,
+          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
+          matches:
+            '[id="com.lptiyu.tanke:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[clickable=true][childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13218232',
         },
       ],
     },
