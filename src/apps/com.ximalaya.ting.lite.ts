@@ -28,5 +28,19 @@ export default defineAppConfig({
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_ad_top_home_iv_close"]',
     },
+    {
+      key: 1,
+      name: '广告弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image < View + View + View > View > View > TextView[text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13218286',
+        },
+      ],
+    },
   ],
 });
