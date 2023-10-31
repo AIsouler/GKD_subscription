@@ -46,8 +46,11 @@ export default defineAppConfig({
         {
           key: 3,
           matches:
-            '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"]',
-          snapshotUrls: 'https://i.gkd.li/import/13206982',
+            '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"||text="摇动点击广告跳转"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13206982',
+            'https://i.gkd.li/import/13218134',
+          ],
         },
       ],
     },
