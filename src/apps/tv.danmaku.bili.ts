@@ -122,7 +122,7 @@ export default defineAppConfig({
       name: '直播间卡片广告',
       desc: '直播间底部售卖卡片-点击右上角x',
       quickFind: true,
-      matchTime: 1000,
+      matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
       rules: '[id="tv.danmaku.bili:id/shopping_close"]',
