@@ -36,11 +36,10 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12839864)
 - [快照-1](https://gkd-kit.gitee.io/import/12839865)
 
-## 首页-弹窗广告
-
-默认禁用
+## 广告弹窗
 
 - [快照-0](https://i.gkd.li/import/13165721)
+- [快照-1](https://i.gkd.li/import/13218034)
 
 ## 京东账号登录授权
 

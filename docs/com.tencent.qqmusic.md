@@ -13,6 +13,7 @@
 
 - [快照-0](https://i.gkd.li/import/13206534)
 - [快照-1](https://i.gkd.li/import/13206982)
+- [快照-2](https://i.gkd.li/import/13218134)
 
 ## 首页-底部广告弹窗
 

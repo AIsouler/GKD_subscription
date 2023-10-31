@@ -7,6 +7,7 @@
 - [快照-0](https://i.gkd.li/import/13062244)
 - [快照-1](https://i.gkd.li/import/13093155)
 - [快照-2](https://i.gkd.li/import/13207731)
+- [快照-3](https://i.gkd.li/import/13217807)
 
 ## 消息页面-顶部广告
 

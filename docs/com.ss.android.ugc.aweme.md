@@ -1,6 +1,10 @@
 # 抖音
 
-存在 9 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+存在 10 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+
+## 开屏广告
+
+- [快照-0](https://gkd-kit.gitee.io/import/13216121)
 
 ## 关闭青少年弹窗
 

@@ -35,7 +35,8 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12649689)
+- [快照-0](https://gkd-kit.gitee.io/import/13212209)
+- [快照-1](https://gkd-kit.gitee.io/import/12649689)
 
 ## 视频内免流卡
 
