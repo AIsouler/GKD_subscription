@@ -1,6 +1,6 @@
 # X(推特)
 
-存在 2 规则组 - [com.twitter.android](/src/apps/com.twitter.android.ts)
+存在 3 规则组 - [com.twitter.android](/src/apps/com.twitter.android.ts)
 
 ## 信息流广告-主页
 
@@ -10,7 +10,7 @@
 - [快照-1](https://gkd-kit.gitee.io/import/12813235)
 - [快照-2](https://i.gkd.li/import/12798810)
 
-## 信息流广告-帖子详情页、搜索页、用户资料页
+## 信息流广告-帖子详情页、搜索页
 
 点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]
 
@@ -23,3 +23,13 @@
 - [快照-6](https://i.gkd.li/import/12904602)
 - [快照-7](https://gkd-kit.gitee.io/import/12828832)
 - [快照-8](https://i.gkd.li/import/12904601)
+
+## 信息流广告-用户资料页
+
+点击右上角关闭,点击我不喜欢
+
+- [快照-0](https://i.gkd.li/import/12825969)
+- [快照-1](https://i.gkd.li/import/12847584)
+- [快照-2](https://i.gkd.li/import/12882676)
+- [快照-3](https://i.gkd.li/import/12904603)
+- [快照-4](https://i.gkd.li/import/12798810)
