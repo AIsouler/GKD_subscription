@@ -27,10 +27,9 @@ export default defineAppConfig({
     {
       key: 2,
       name: '更新弹窗',
-      activityIds: ['com.lphtsccft.zhangle.main.MainActivity'],
-      rules:
-        '@[id="com.lphtsccft:id/dialog_btn_left"][text="取消"] + [id="com.lphtsccft:id/dialog_btn_right"][text="确定"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12699308'],
+      activityIds: 'com.lphtsccft.zhangle.main.MainActivity',
+      rules: '[text*="升级体验"] +2 LinearLayout > [text="取消"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/12699308',
     },
     {
       key: 3,
