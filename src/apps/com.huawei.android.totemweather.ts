@@ -7,8 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.huawei.android.totemweather.WeatherHome',
-      matchLauncher: true,
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
@@ -16,6 +18,15 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12928975',
         },
       ],
+    },
+    {
+      key: 1,
+      name: '广告卡片',
+      quickFind: true,
+      activityIds:
+        'com.huawei.android.totemweather.composite.MarketCompositeActivity',
+      rules: '[id="com.huawei.android.totemweather:id/promote_ad_cancel"]',
+      snapshotUrls: 'https://i.gkd.li/import/13218197',
     },
   ],
 });
