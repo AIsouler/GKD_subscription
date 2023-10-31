@@ -67,12 +67,24 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 5,
-      name: '首页-弹窗广告',
-      activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-      rules: 'FrameLayout > [desc="关闭"]',
-      snapshotUrls: ['https://i.gkd.li/import/13165721'],
+      name: '广告弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: 'FrameLayout > [desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/13165721',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.jd.lib.cashier.complete.view.CashierCompleteActivity',
+          matches:
+            '[id="com.jingdong.app.mall:id/webview"] + [id="com.jingdong.app.mall:id/close"][desc="关闭页面"]',
+          snapshotUrls: 'https://i.gkd.li/import/13218034',
+        },
+      ],
     },
     {
       enable: false,
