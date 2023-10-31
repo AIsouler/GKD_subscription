@@ -100,11 +100,20 @@ export default defineAppConfig({
       quickFind: true,
       key: 6,
       name: '更新弹窗',
-      activityIds: 'com.bilibili.app.preferences.BiliPreferencesActivity',
-      rules: [
-        '[id="tv.danmaku.bili:id/update_btn_confirm"] + [id="tv.danmaku.bili:id/update_btn_cancel"]',
+      activityIds: [
+        'com.bilibili.app.preferences.BiliPreferencesActivity',
+        'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
       ],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12649689',
+      rules: [
+        {
+          key: 1,
+          matches: '[id="tv.danmaku.bili:id/update_btn_cancel"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13212209',
+            'https://gkd-kit.gitee.io/import/12649689',
+          ],
+        },
+      ],
     },
     {
       quickFind: true,
