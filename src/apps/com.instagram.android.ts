@@ -6,43 +6,43 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
+      enable: false,
       name: '信息流广告',
+      desc: '但是步骤较多, 影响app使用',
+      quickFind: true,
       activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
       rules: [
         {
           key: 0,
           name: '点击【更多】按钮',
+          actionCd: 4000,
           matches:
             '[text="赞助内容"] + [id="com.instagram.android:id/feed_more_button_stub"]',
           snapshotUrls: 'https://i.gkd.li/import/12798562',
         },
         {
-          preKeys: 0,
           key: 1,
           name: '点击【隐藏广告】按钮',
-          matches:
-            '[id="com.instagram.android:id/recycler_view"] [text="隐藏广告"]',
+          matches: '@ViewGroup >n [text="隐藏广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12798571',
             'https://gkd-kit.gitee.io/import/12829448',
           ],
         },
         {
-          preKeys: 1,
           key: 2,
           name: '点击【广告不相关】按钮',
-          matches:
-            '[id="com.instagram.android:id/report_tag_title"][text="广告不相关"]',
+          matches: '@ViewGroup > [text="广告不相关"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12798590',
             'https://gkd-kit.gitee.io/import/12829464',
           ],
         },
         {
-          preKeys: 2,
           key: 3,
           name: '关闭[你不会再看到这条广告]',
-          matches: 'Button[id="com.instagram.android:id/background_dimmer"]',
+          action: 'back',
+          matches: '[text="你不会再看到这条广告"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12829492',
         },
       ],
