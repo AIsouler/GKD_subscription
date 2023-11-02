@@ -7,10 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.duowan.kiwi.homepage.Homepage',
-        'com.duowan.kiwi.adsplash.view.AdSplashActivity',
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
