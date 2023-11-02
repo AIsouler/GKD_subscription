@@ -7,11 +7,20 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
-      matchLauncher: true,
-      rules:
-        '[id="com.zjwh.android_wh_physicalfitness:id/layoutContainer"] >n [text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/13166424',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13166424',
+            'https://i.gkd.li/import/13228145',
+          ],
+        },
+      ],
     },
     {
       key: 1,
@@ -55,7 +64,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.kwad.dy.sdk:id/ksad_splash_root_container"] >n ViewGroup > [text="跳过"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12673495'],
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12673495',
         },
         {
           key: 1,
@@ -65,6 +74,12 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12826112',
             'https://i.gkd.li/import/12826124',
           ],
+        },
+        {
+          key: 2,
+          matches:
+            '[id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13228216',
         },
       ],
     },
