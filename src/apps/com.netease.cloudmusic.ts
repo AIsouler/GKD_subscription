@@ -68,32 +68,55 @@ export default defineAppConfig({
           matches: 'WebView >n View > TextView + TextView + TextView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13188737',
         },
+        {
+          key: 1,
+          name: '京东双十一广告弹窗',
+          matches: '[text="广告"] < ViewGroup + ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13229016',
+        },
       ],
     },
     {
       enable: false,
       key: 5,
       name: 'VIP 弹窗',
-      activityIds:
-        'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
       rules: [
         {
           key: 0,
+          activityIds:
+            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
           matches:
             '[text*="开通VIP"] + @ViewGroup[childCount=1][clickable=true] > ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13189055',
+        },
+        {
+          key: 1,
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '@ImageView - ViewGroup > [text="解锁千万级会员曲库"]',
+          snapshotUrls: 'https://i.gkd.li/import/13228955',
         },
       ],
     },
     {
       key: 6,
-      name: '版本更新',
+      name: '更新弹窗',
       quickFind: true,
-      activityIds:
-        'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-      rules:
-        'ImageButton[id="com.netease.cloudmusic:id/md_dialog_cm_close_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13197457',
+      matchLauncher: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
+          ],
+          matches: '[id="com.netease.cloudmusic:id/md_dialog_cm_close_btn"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13233790',
+            'https://i.gkd.li/import/13197457',
+            'https://i.gkd.li/import/13228878',
+          ],
+        },
+      ],
     },
     {
       enable: false,
