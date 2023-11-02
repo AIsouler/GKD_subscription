@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/13062992)
+- [快照-1](https://gkd-kit.gitee.io/import/13225111)
 
 ## 应用内广告卡片
 

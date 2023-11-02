@@ -26,16 +26,20 @@
 ## 广告弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/13188737)
+- [快照-1](https://i.gkd.li/import/13229016)
 
 ## VIP 弹窗
 
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/13189055)
+- [快照-1](https://i.gkd.li/import/13228955)
 
-## 版本更新
+## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/13197457)
+- [快照-0](https://i.gkd.li/import/13233790)
+- [快照-1](https://i.gkd.li/import/13197457)
+- [快照-2](https://i.gkd.li/import/13228878)
 
 ## 播放界面右上角-免费听歌
 

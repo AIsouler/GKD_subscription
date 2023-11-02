@@ -23,6 +23,7 @@
 - [快照-7](https://gkd-kit.gitee.io/import/12889148)
 - [快照-8](https://gkd-kit.gitee.io/import/12889148)
 - [快照-9](https://i.gkd.li/import/12818044)
+- [快照-10](https://i.gkd.li/import/13229404)
 
 ## 自动更新应用
 

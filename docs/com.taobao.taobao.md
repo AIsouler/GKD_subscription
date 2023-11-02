@@ -25,6 +25,7 @@
 默认禁用 - 自动点击关闭
 
 - [快照-0](https://i.gkd.li/import/13197594)
+- [快照-1](https://gkd-kit.gitee.io/import/13222946)
 
 ## 各级页面-添加到首页弹窗
 

@@ -4,6 +4,8 @@
 
 ## 信息流广告
 
+默认禁用 - 但是步骤较多, 影响app使用
+
 - [快照-0](https://i.gkd.li/import/12798562)
 - [快照-1](https://i.gkd.li/import/12798571)
 - [快照-2](https://gkd-kit.gitee.io/import/12829448)

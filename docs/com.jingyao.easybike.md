@@ -1,6 +1,16 @@
 # 哈啰
 
-存在 5 规则组 - [com.jingyao.easybike](/src/apps/com.jingyao.easybike.ts)
+存在 7 规则组 - [com.jingyao.easybike](/src/apps/com.jingyao.easybike.ts)
+
+## 请求通知权限弹窗
+
+- [快照-0](https://i.gkd.li/import/13228735)
+
+## 请求定位权限弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13228677)
 
 ## 应用内活动、广告弹窗（大部分）
 

@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12928975)
+- [快照-1](https://gkd-kit.gitee.io/import/13226636)
 
 ## 广告卡片
 

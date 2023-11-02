@@ -36,6 +36,7 @@
 - [快照-1](https://gkd-kit.gitee.io/import/13107298)
 - [快照-2](https://i.gkd.li/import/12793359)
 - [快照-3](https://i.gkd.li/import/12855048)
+- [快照-4](https://i.gkd.li/import/13228108)
 
 ## 好友热播
 
