@@ -11,8 +11,11 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/13197473',
+      rules: 'TextView[text^="跳过"][text.length<=10]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13197473',
+        'https://gkd-kit.gitee.io/import/13223790',
+      ],
     },
   ],
 });
