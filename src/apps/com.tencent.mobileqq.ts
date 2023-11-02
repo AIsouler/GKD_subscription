@@ -94,12 +94,13 @@ export default defineAppConfig({
       desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules:
-        'LinearLayout > TextView[text*="SVIP"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',
+        'LinearLayout > TextView[text*="SVIP"||text*="超级会员"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12706907',
         'https://gkd-kit.gitee.io/import/13107298',
         'https://i.gkd.li/import/12793359',
         'https://i.gkd.li/import/12855048',
+        'https://i.gkd.li/import/13228108',
       ],
     },
     {
