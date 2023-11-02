@@ -8,3 +8,4 @@
 
 - [快照-0](https://i.gkd.li/import/13062330)
 - [快照-1](https://i.gkd.li/import/13068583)
+- [快照-2](https://gkd-kit.gitee.io/import/13231850)

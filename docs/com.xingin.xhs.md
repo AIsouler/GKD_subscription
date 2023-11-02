@@ -10,3 +10,4 @@
 ## 关闭开启通知弹窗
 
 - [快照-0](https://i.gkd.li/import/13195753)
+- [快照-1](https://gkd-kit.gitee.io/import/13222356)

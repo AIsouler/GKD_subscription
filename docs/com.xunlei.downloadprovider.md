@@ -1,6 +1,6 @@
 # 迅雷
 
-存在 7 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
+存在 8 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
 
 ## 开屏广告
 
@@ -12,6 +12,7 @@
 - [快照-1](https://gkd-kit.gitee.io/import/12707717)
 - [快照-2](https://gkd-kit.gitee.io/import/12707702)
 - [快照-3](https://i.gkd.li/import/12882988)
+- [快照-4](https://i.gkd.li/import/13228423)
 
 ## 视频详情-直播推荐
 
@@ -52,6 +53,10 @@
 ## 搜索页面-顶部banner广告
 
 - [快照-0](https://i.gkd.li/import/12882892)
+
+## 更新弹窗
+
+- [快照-0](https://i.gkd.li/import/13228920)
 
 ## 会员续费广告
 

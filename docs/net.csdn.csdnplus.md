@@ -5,7 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12673680)
-- [快照-1](https://gkd-kit.gitee.io/import/12838461)
+- [快照-1](https://i.gkd.li/import/13224627)
 
 ## 更新弹窗
 
@@ -15,7 +15,9 @@
 ## 信息流广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12673738)
-- [快照-1](https://gkd-kit.gitee.io/import/12673787)
+- [快照-1](https://i.gkd.li/import/13224538)
+- [快照-2](https://gkd-kit.gitee.io/import/12673787)
+- [快照-3](https://i.gkd.li/import/13224551)
 
 ## 请求推送通知弹窗
 

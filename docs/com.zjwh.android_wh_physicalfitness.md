@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/13166424)
+- [快照-1](https://i.gkd.li/import/13228145)
 
 ## 优量汇广告
 
@@ -21,6 +22,7 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12673495)
 - [快照-1](https://i.gkd.li/import/12826112)
 - [快照-2](https://i.gkd.li/import/12826124)
+- [快照-3](https://i.gkd.li/import/13228216)
 
 ## 第三方SDK广告
 
