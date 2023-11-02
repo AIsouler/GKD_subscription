@@ -33,5 +33,16 @@ export default defineAppConfig({
       ],
       snapshotUrls: ['https://i.gkd.li/import/13197634'],
     },
+    {
+      key: 3,
+      name: '更新提示',
+      quickFind: true,
+      activityIds: 'com.wm.dmall.MainActivity',
+      rules: [
+        '[id="com.wm.dmall:id/update_confirm_btn"]',
+        '[id="com.wm.dmall:id/close_btn"]',
+      ],
+      snapshotUrls: ['https://gkd-kit.gitee.io/import/13234668'],
+    },
   ],
 });
