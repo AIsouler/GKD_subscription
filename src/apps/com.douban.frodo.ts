@@ -195,5 +195,19 @@ export default defineAppConfig({
         snapshotUrls: 'https://i.gkd.li/import/13195565',
       },
     },
+    {
+      key: 11,
+      name: '更新弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.douban.frodo.activity.BetaApkDialogActivity',
+          matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
+          snapshotUrls: 'https://i.gkd.li/import/13228832',
+        },
+      ],
+    },
   ],
 });
