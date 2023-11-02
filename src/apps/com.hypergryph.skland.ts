@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: ['com.hypergryph.skland.MainActivity'],
-      rules: '[id="com.hypergryph.skland:id/confirmTv"]',
+      rules: '[text*="青少年模式"] +n [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13197012',
     },
   ],
