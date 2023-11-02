@@ -18,15 +18,6 @@ export default defineAppConfig({
     },
     {
       quickFind: true,
-      key: 1,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      name: '青少年模式弹窗',
-      rules: 'TextView[text*=`青少年模式`] + TextView[text=`我知道了`]',
-    },
-    {
-      quickFind: true,
       key: 0,
       name: '评论区顶部公告横幅',
       rules:
@@ -42,10 +33,20 @@ export default defineAppConfig({
     },
     {
       quickFind: true,
+      key: 1,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      name: '青少年模式弹窗',
+      rules: 'TextView[text*=`青少年模式`] + TextView[text=`我知道了`]',
+    },
+    {
+      quickFind: true,
       key: 2,
       name: '动态推荐广告卡片',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
       activityIds: 'tv.danmaku.bili.MainActivityV2',
+      matchDelay: 5000,
       rules: [
         {
           key: 1,
@@ -59,6 +60,7 @@ export default defineAppConfig({
         },
       ],
     },
+    // key = 3已弃用
     {
       key: 4,
       name: '视频底部广告',
@@ -96,21 +98,26 @@ export default defineAppConfig({
         },
       ],
     },
+    // key = 5已弃用
     {
       quickFind: true,
       key: 6,
       name: '更新弹窗',
+      actionMaximum: 1,
+      matchDelay: 5000,
       activityIds: [
         'com.bilibili.app.preferences.BiliPreferencesActivity',
         'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
+        'tv.danmaku.bili.MainActivityV2',
       ],
       rules: [
         {
           key: 1,
           matches: '[id="tv.danmaku.bili:id/update_btn_cancel"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13212209',
-            'https://gkd-kit.gitee.io/import/12649689',
+            'https://gkd-kit.gitee.io/import/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
+            'https://gkd-kit.gitee.io/import/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
+            'https://i.gkd.li/import/13228977',
           ],
         },
       ],
@@ -136,6 +143,19 @@ export default defineAppConfig({
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
       rules: '[id="tv.danmaku.bili:id/shopping_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13200549',
+    },
+    {
+      key: 9,
+      enable: false,
+      name: '请求通知权限弹窗',
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
+      quickFind: true,
+      matchDelay: 5000,
+      matchTime: 10000,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: '[text="打开推送通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13229159',
     },
   ],
 });
