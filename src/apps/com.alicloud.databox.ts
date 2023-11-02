@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.alicloud.databox',
-  name: '阿里网盘',
+  name: '阿里云盘',
   groups: [
     {
       key: 0,
@@ -25,6 +25,13 @@ export default defineAppConfig({
           quickFind: true,
         },
       ],
+    },
+    {
+      key: 1,
+      name: '活动弹窗',
+      activityIds: 'com.alicloud.databox.MainActivity',
+      rules: '[text^="好运盲盒"] >n View > Image + TextView[clickable=true]',
+      snapshotUrls: 'https://i.gkd.li/import/13228610',
     },
   ],
 });
