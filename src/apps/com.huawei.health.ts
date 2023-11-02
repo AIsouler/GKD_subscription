@@ -13,14 +13,14 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
+          key: 0,
+          matches: '[id$="hiad_skip_text"]',
           action: 'clickCenter',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12667766'],
-        },
-        {
-          matches: '[id="com.huawei.health:id/hiad_skip_text"]',
-          action: 'clickCenter',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/13215012'],
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12667766',
+            'https://gkd-kit.gitee.io/import/13215012',
+            'https://i.gkd.li/import/13228290',
+          ],
         },
       ],
     },
