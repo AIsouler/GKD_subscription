@@ -8,10 +8,20 @@ export default defineAppConfig({
       key: 1,
       name: '首页广告弹窗',
       matchTime: 10000,
-      actionMaximum: 1,
       activityIds: 'pdj.main.MainActivity',
-      rules: 'WebView[text="京东到家"] >7 TextView[text=""]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13217796',
+      rules: [
+        {
+          key: 0,
+          matches: 'WebView[text="京东到家"] >7 TextView[text=""]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13217796',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches: '[id="com.jingdong.pdj:id/ivClose"][desc="关闭"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13223282',
+        },
+      ],
     },
     {
       key: 2,
