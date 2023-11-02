@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      activityIds: 'com.yxcorp.gifshow.HomeActivity',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="com.smile.gifmaker:id/splash_skip_text"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12708602',
     },
