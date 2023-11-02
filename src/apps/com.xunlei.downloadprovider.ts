@@ -3,10 +3,12 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.xunlei.downloadprovider',
   name: '迅雷',
+  deprecatedKeys: [11],
   groups: [
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       activityIds: 'com.xunlei.downloadprovider.launch.LaunchActivity',
       rules: 'TextView[text^="跳过"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12707693',
@@ -14,6 +16,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '视频详情页广告',
+      quickFind: true,
       activityIds:
         'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
       rules: [
@@ -40,12 +43,19 @@ export default defineAppConfig({
           matches: '[id="com.xunlei.downloadprovider:id/ad_ima_skip"]',
           snapshotUrls: 'https://i.gkd.li/import/12882988',
         },
+        {
+          key: 3,
+          matches:
+            '[id="com.xunlei.downloadprovider:id/play_detail_ad_title"] + [id="com.xunlei.downloadprovider:id/close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/import/13228423',
+        },
       ],
     },
     {
       key: 2,
       name: '视频详情-直播推荐',
       desc: '自动点击【减少推荐】',
+      quickFind: true,
       rules: [
         {
           key: 0,
@@ -193,14 +203,24 @@ export default defineAppConfig({
     {
       key: 5,
       name: '搜索页面-顶部banner广告',
+      quickFind: true,
       activityIds:
         'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
       rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12882892',
     },
     {
+      key: 6,
+      name: '更新弹窗',
+      quickFind: true,
+      activityIds: 'com.xunlei.upgrade.XUpgradeActivity',
+      rules: '[id="com.xunlei.downloadprovider:id/x_upgrade_cancel"]',
+      snapshotUrls: 'https://i.gkd.li/import/13228920',
+    },
+    {
       key: 10,
       name: '会员续费广告',
+      quickFind: true,
       rules: [
         {
           key: 0,
