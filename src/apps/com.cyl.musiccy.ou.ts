@@ -92,26 +92,33 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12776903',
           ],
         },
+        // 该规则暂时不会遇到
+        // {
+        //   action: 'clickCenter',
+        //   matches:
+        //     'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
+        //   snapshotUrls: 'https://gkd-kit.gitee.io/import/12789196',
+        // },
         {
           action: 'clickCenter',
           matches:
-            'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12789196',
-        },
-        {
-          action: 'clickCenter',
-          matches:
-            'TextView[text="立即下载" || text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12789928',
-            'https://gkd-kit.gitee.io/import/13071595',
-          ],
+            'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/12789928'],
         },
         {
           action: 'click',
           matches:
             'TextView[text^="摇动"||text^="点击"] <2 LinearLayout < LinearLayout < FrameLayout -n FrameLayout[childCount=1] > ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13063249',
+        },
+        {
+          action: 'click',
+          matches:
+            'TextView[text="查看详情"] < FrameLayout  <2 FrameLayout[childCount=2] -n FrameLayout > ImageView',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13215476',
+            'https://gkd-kit.gitee.io/import/13071595',
+          ],
         },
       ],
     },
