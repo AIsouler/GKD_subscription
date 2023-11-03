@@ -26,13 +26,26 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '我的界面-参与调研',
+      name: '我的界面-悬浮广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-      rules:
-        'FrameLayout + RelativeLayout > RelativeLayout > ImageView + ImageView[desc!="返回"][visibleToUser=true]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12642270',
-        'https://i.gkd.li/import/12774910', // 使用 [desc!="返回"] 进行限定，防止在进入商品详情页时点击返回按钮
+      rules: [
+        {
+          key: 0,
+          desc: '参与调研',
+          matches:
+            'FrameLayout + RelativeLayout > RelativeLayout > ImageView + ImageView[desc!="返回"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12642270',
+            'https://i.gkd.li/import/12774910', // 使用 [desc!="返回"] 进行限定，防止在进入商品详情页时点击返回按钮
+          ],
+        },
+        {
+          key: 1,
+          desc: '邀好友得红包',
+          matches:
+            '@ImageView[id!=null] + FrameLayout[childCount=3] > ImageView + LinearLayout + TextView',
+          snapshotUrls: 'https://i.gkd.li/import/13242002',
+        },
       ],
     },
     {
@@ -83,6 +96,12 @@ export default defineAppConfig({
           matches:
             '[id="com.jingdong.app.mall:id/webview"] + [id="com.jingdong.app.mall:id/close"][desc="关闭页面"]',
           snapshotUrls: 'https://i.gkd.li/import/13218034',
+        },
+        {
+          key: 2,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: '[desc="弹窗"] + [desc="关闭按钮"]',
+          snapshotUrls: 'https://i.gkd.li/import/13241883',
         },
       ],
     },
