@@ -15,8 +15,12 @@ export default defineAppConfig({
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12700920'],
     },
     {
+      enable: false,
       key: 1,
       name: '广告卡片',
+      desc: '点击【x】-【直接关闭】',
+      quickFind: true,
+      matchDelay: 3000,
       rules: [
         {
           key: 0,
@@ -26,7 +30,7 @@ export default defineAppConfig({
             'com.netease.cloudmusic.music.biz.comment.activity.ReplyCommentActivity2',
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
           ],
-          matches: '[id="com.netease.cloudmusic:id/adTagClose"]',
+          matches: '[id="com.netease.cloudmusic:id/adTagView"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12829944',
             'https://gkd-kit.gitee.io/import/12723229',
@@ -36,7 +40,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: 1,
+          preKeys: 0,
           matches: '[text="直接关闭"]',
           snapshotUrls: ['https://i.gkd.li/import/12829967'],
         },
@@ -45,6 +49,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '我的页面-中间滚动广告',
+      quickFind: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules:
         '[id="com.netease.cloudmusic:id/auto_scroll_switcher"] + [id="com.netease.cloudmusic:id/close_btn"]',
@@ -53,6 +58,7 @@ export default defineAppConfig({
     {
       key: 3,
       name: '主页-免费听歌',
+      quickFind: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules: ['@ImageView + ViewGroup > TextView[text="VIP歌曲免费听30分钟"]'],
       snapshotUrls: ['https://i.gkd.li/import/12843383'],
@@ -80,13 +86,16 @@ export default defineAppConfig({
       enable: false,
       key: 5,
       name: 'VIP 弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-          matches:
-            '[text*="开通VIP"] + @ViewGroup[childCount=1][clickable=true] > ImageView',
+          matches: 'ImageView < @ViewGroup[clickable=true] - [text*="开通VIP"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13189055',
         },
         {
@@ -94,6 +103,21 @@ export default defineAppConfig({
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
           matches: '@ImageView - ViewGroup > [text="解锁千万级会员曲库"]',
           snapshotUrls: 'https://i.gkd.li/import/13228955',
+        },
+        {
+          key: 2,
+          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
+          matches: '@ImageView -2 ViewGroup [text="解锁更高音质"]',
+          snapshotUrls: 'https://i.gkd.li/import/13230603',
+        },
+        {
+          key: 3,
+          name: 'VIP续费',
+          activityIds:
+            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
+          matches:
+            'ImageView < @ViewGroup -3 ViewGroup [text="您的黑胶VIP已过期"]',
+          snapshotUrls: 'https://i.gkd.li/import/13230605',
         },
       ],
     },
