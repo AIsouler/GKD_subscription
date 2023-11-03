@@ -29,5 +29,12 @@ export default defineAppConfig({
       rules: '[desc="限时购买"] + ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13198097',
     },
+    {
+      key: 3,
+      name: '广告弹窗',
+      activityIds: 'com.tencent.docs.DocsFlutterActivity',
+      rules: 'View[childCount=2] > @TextView[id=null][clickable=true] + View',
+      snapshotUrls: 'https://i.gkd.li/import/13242404',
+    },
   ],
 });
