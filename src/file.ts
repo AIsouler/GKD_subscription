@@ -36,7 +36,7 @@ export const writeConfig = async (fp: string, config: SubscriptionConfig) => {
   }
 
   // update md
-  await updateReadMeMd(newConfig);
+  await updateReadMeMd(newConfig, oldConfig);
   console.log('更新文档');
 
   if (!hasUpdate) {
@@ -268,12 +268,21 @@ export const updateAppMd = async (app: AppConfig) => {
   const appMdText = [appHeadMdText, groupMdText].join('\n\n').trim() + '\n';
   await fs.writeFile(process.cwd() + `/docs/${app.id}.md`, appMdText, 'utf-8');
 };
-export const updateReadMeMd = async (newConfig: SubscriptionConfig) => {
+export const updateReadMeMd = async (
+  newConfig: SubscriptionConfig,
+  oldConfig: SubscriptionConfig,
+) => {
+  let changeCount = 0;
   await Promise.all(
     newConfig.apps.map(async (app) => {
-      await updateAppMd(app);
+      const oldApp = oldConfig.apps.find((a) => a.id == app.id);
+      if (!_.isEqual(oldApp, app)) {
+        await updateAppMd(app);
+        changeCount++;
+      }
     }),
   );
+  if (changeCount <= 0) return;
 
   const appListText =
     '| 名称 | ID | 规则组 |\n| - | - | - |\n' +

@@ -8,6 +8,8 @@
 
 ## 广告卡片
 
+默认禁用 - 点击【x】-【直接关闭】
+
 - [快照-0](https://i.gkd.li/import/12829944)
 - [快照-1](https://gkd-kit.gitee.io/import/12723229)
 - [快照-2](https://gkd-kit.gitee.io/import/12829938)
@@ -34,6 +36,8 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/13189055)
 - [快照-1](https://i.gkd.li/import/13228955)
+- [快照-2](https://i.gkd.li/import/13230603)
+- [快照-3](https://i.gkd.li/import/13230605)
 
 ## 更新弹窗
 

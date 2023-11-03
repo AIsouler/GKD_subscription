@@ -1,6 +1,6 @@
 # 喜马拉雅
 
-存在 11 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
+存在 12 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
 
 ## 开屏广告
 
@@ -60,3 +60,9 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/13194838)
 - [快照-1](https://gkd-kit.gitee.io/import/13194839)
+
+## 首页-专辑订阅推荐弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13251713)
