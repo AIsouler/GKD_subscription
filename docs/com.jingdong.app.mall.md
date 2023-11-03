@@ -13,12 +13,13 @@
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642266)
 
-## 我的界面-参与调研
+## 我的界面-悬浮广告
 
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642270)
 - [快照-1](https://i.gkd.li/import/12774910)
+- [快照-2](https://i.gkd.li/import/13242002)
 
 ## 首页-浮层广告
 
@@ -40,6 +41,7 @@
 
 - [快照-0](https://i.gkd.li/import/13165721)
 - [快照-1](https://i.gkd.li/import/13218034)
+- [快照-2](https://i.gkd.li/import/13241883)
 
 ## 京东账号登录授权
 

@@ -5,8 +5,11 @@
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12503773)
-- [快照-1](https://gkd-kit.gitee.io/import/12917990)
-- [快照-2](https://gkd-kit.gitee.io/import/13211392)
+- [快照-1](https://i.gkd.li/import/13247610)
+- [快照-2](https://gkd-kit.gitee.io/import/12917990)
+- [快照-3](https://gkd-kit.gitee.io/import/13211392)
+- [快照-4](https://i.gkd.li/import/13247733)
+- [快照-5](https://i.gkd.li/import/13247782)
 
 ## 卡片广告
 

@@ -1,4 +1,4 @@
-# qq邮箱
+# QQ邮箱
 
 存在 3 规则组 - [com.tencent.androidqqmail](/src/apps/com.tencent.androidqqmail.ts)
 

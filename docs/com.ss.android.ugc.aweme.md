@@ -1,6 +1,6 @@
 # 抖音
 
-存在 10 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+存在 11 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
 ## 开屏广告
 
@@ -53,3 +53,9 @@
 
 - [快照-0](https://i.gkd.li/import/12846036)
 - [快照-1](https://i.gkd.li/import/12846040)
+
+## 休息提醒
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13241564)
