@@ -7,9 +7,15 @@ export default defineAppConfig({
     {
       key: 0,
       name: '首页悬浮窗广告',
-      quickFind: true,
       activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
-      rules: 'Button[text="关闭"]',
+      quickFind: true,
+      rules: {
+        matches: [
+          '[id="com.xiaomi.market:id/webview_container"]',
+          'Button[text.length=2][text="关闭"]',
+        ],
+      },
+      snapshotUrls: 'https://i.gkd.li/import/13248808',
     },
     {
       key: 9,
