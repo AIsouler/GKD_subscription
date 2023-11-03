@@ -28,10 +28,26 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.wm.dmall.MainActivity',
       rules: [
-        '[id="com.wm.dmall:id/iv_close"]',
+        '@[id="com.wm.dmall:id/iv_close"] + [id="com.wm.dmall:id/view_float"]',
         '[id="com.wm.dmall:id/close_iV"]',
       ],
-      snapshotUrls: ['https://i.gkd.li/import/13197634'],
+      snapshotUrls: [
+        'https://i.gkd.li/import/13197634',
+        'https://gkd-kit.gitee.io/import/13246242', //id误触
+      ],
+    },
+    {
+      key: 3,
+      name: '更新提示',
+      quickFind: true,
+      activityIds: 'com.wm.dmall.MainActivity',
+      rules: {
+        matches: [
+          '[id="com.wm.dmall:id/update_confirm_btn"]',
+          '[id="com.wm.dmall:id/close_btn"]',
+        ],
+        snapshotUrls: ['https://gkd-kit.gitee.io/import/13234668'],
+      },
     },
     {
       key: 3,
