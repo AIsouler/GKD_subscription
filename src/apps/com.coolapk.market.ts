@@ -10,7 +10,10 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      excludeActivityIds: ['com.coolapk.market.view.search.'],
+      excludeActivityIds: [
+        'com.coolapk.market.view.search.',
+        'com.coolapk.market.view.feed.',
+      ],
       rules: [
         {
           key: 0,
@@ -29,6 +32,7 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12917990',
             'https://gkd-kit.gitee.io/import/13211392',
             'https://i.gkd.li/import/13247733', // 误触
+            'https://i.gkd.li/import/13247782', // 可能误触
           ],
         },
       ],
