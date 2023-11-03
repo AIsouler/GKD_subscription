@@ -20,7 +20,7 @@ export default defineAppConfig({
       key: 1,
       name: '更新弹窗',
       activityIds: 'ctrip.android.publicproduct.home.view.CtripHomeActivity',
-      rules: '[text^="升级新版本"] <2 LinearLayout + [desc="关闭"]',
+      rules: '[text*="用户已升级"] < * + [desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/import/13218347',
     },
   ],
