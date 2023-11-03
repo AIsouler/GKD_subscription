@@ -7,10 +7,10 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      activityIds: [
-        'com.ximalaya.ting.android.host.activity.MainActivity',
-        'com.ximalaya.ting.android.host.activity.SplashAdActivity',
-      ],
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches:
@@ -30,6 +30,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '首页右侧浮动广告',
+      quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
       snapshotUrls: ['https://gkd-kit.gitee.io/import/12472620'],
@@ -37,6 +38,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '播放页面-播放控制区域的广告',
+      quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: [
         {
@@ -58,6 +60,7 @@ export default defineAppConfig({
       key: 2,
       name: '播放页面-底部推荐列表-夹杂广告',
       desc: '点击关闭-点击屏蔽',
+      quickFind: true,
       rules: [
         {
           activityIds: 'com.ximalaya.ting.android.main.dialog',
@@ -78,6 +81,7 @@ export default defineAppConfig({
     {
       key: 3,
       name: '播放页面-播放前广告',
+      quickFind: true,
       activityIds: [
         'com.ximalaya.ting.android.host.activity.MainActivity',
         'com.ximalaya.ting.android.framework.view.dialog',
@@ -128,12 +132,14 @@ export default defineAppConfig({
     {
       key: 6,
       name: '关闭更新弹窗',
+      quickFind: true,
       rules: '[id="com.ximalaya.ting.android:id/host_tv_update_later"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12506287',
     },
     {
       key: 7,
       name: '关闭青少年模式弹窗',
+      quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12506209',
       rules: {
@@ -175,6 +181,19 @@ export default defineAppConfig({
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13194839',
         },
       ],
+    },
+    {
+      enable: false,
+      key: 10,
+      name: '首页-专辑订阅推荐弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      rules:
+        '[text="你可能感兴趣的专辑"] + [id="com.ximalaya.ting.android:id/main_iv_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13251713',
     },
   ],
 });
