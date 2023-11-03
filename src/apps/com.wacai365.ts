@@ -27,5 +27,26 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 1,
+      name: '新版本提示',
+      quickFind: true,
+      actionMaximum: 1,
+      activityIds: 'com.wacai365.HomeActivity',
+      rules:
+        '@ImageView[id="com.wacai365:id/tv_cancel"] - TextView[text^="新版本"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13249620',
+    },
+    {
+      enable: false,
+      key: 2,
+      name: '弹窗广告',
+      quickFind: true,
+      actionMaximum: 1,
+      activityIds: 'com.wacai365.HomeActivity',
+      rules: '[id^="com.wacai365:id/promote_banner_close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13249666',
+    },
   ],
 });
