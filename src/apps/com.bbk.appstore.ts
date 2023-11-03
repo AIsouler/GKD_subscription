@@ -20,6 +20,10 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: [
+        'com.bbk.appstore.upgrade.UpgradeNecessaryActivity',
+        'com.bbk.appstore.ui.AppStoreTabActivity',
+      ],
       rules: [
         {
           activityIds: 'com.bbk.appstore.upgrade.UpgradeNecessaryActivity',
@@ -30,6 +34,11 @@ export default defineAppConfig({
           activityIds: 'com.bbk.appstore.ui.AppStoreTabActivity',
           matches: '[id="com.bbk.appstore:id/common_dialog_netgtive_btn"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13198234',
+        },
+        {
+          activityIds: 'com.bbk.appstore.ui.AppStoreTabActivity',
+          matches: '[id="com.bbk.appstore:id/quit_button"][text="取消"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13246971',
         },
       ],
     },
