@@ -17,5 +17,16 @@ export default defineAppConfig({
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/798afc53-4aaf-481f-acb1-7c193bd8e6d6',
     },
+    {
+      key: 2,
+      name: '搜索底部广告',
+      quickFind: true,
+      matchLauncher: true,
+      activityIds: 'com.zhouyu.music.activities.MainActivity',
+      rules: '[id="com.zhouyu.music:id/ksad_ad_dislike"]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13245859', //launcher
+      ],
+    },
   ],
 });
