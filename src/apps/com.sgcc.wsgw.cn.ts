@@ -12,7 +12,10 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text^="跳过"][text.length<10]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/13247957', 'https://i.gkd.li/import/13242169'],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13247957',
+        'https://i.gkd.li/import/13242169',
+      ],
     },
     {
       key: 1,
