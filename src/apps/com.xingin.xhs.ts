@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '关闭开启通知弹窗',
+      name: '关闭请求通知弹窗',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
@@ -28,10 +28,18 @@ export default defineAppConfig({
         'com.xingin.xhs.index.v2.IndexActivityV2',
         'com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity',
       ],
-      rules: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/13195753', //com.xingin.xhs.index.v2.IndexActivityV2
-        'https://gkd-kit.gitee.io/import/13222356', //com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity
+      rules: [
+        {
+          matches: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13195753', //com.xingin.xhs.index.v2.IndexActivityV2
+            'https://gkd-kit.gitee.io/import/13222356', //com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity
+          ],
+        },
+        {
+          matches: '@ImageView <2 FrameLayout - [text^="打开通知"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13250418',
+        },
       ],
     },
     {
