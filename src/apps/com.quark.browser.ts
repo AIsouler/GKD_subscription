@@ -13,5 +13,16 @@ export default defineAppConfig({
         '[id=`com.quark.browser:id/ad_close_layout_container`]',
       ],
     },
+    {
+      enable: false,
+      key: 2,
+      name: '设置默认浏览器提示',
+      desc: '点击取消',
+      quickFind: true,
+      actionMaximum: 1,
+      activityIds: 'com.ucpro.BrowserActivity',
+      rules: '@Button[text="取消"] + Button[text="去设置"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13249469',
+    },
   ],
 });
