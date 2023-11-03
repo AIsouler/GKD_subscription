@@ -7,33 +7,30 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       activityIds: [
         'com.baidu.netdisk.ui.Navigate',
         'com.baidu.netdisk.ui.DefaultMainActivity',
         'com.baidu.netdisk.ui.MainActivity',
       ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: 'TextView[text^="跳过"][clickable=true]',
+          quickFind: true,
+          matches: '[text^="跳过"][text.length<=5]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12472597',
             'https://i.gkd.li/import/12877626',
             'https://i.gkd.li/import/12988458',
-          ],
-        },
-        {
-          matches: '@TextView[text^="跳过"] + TextView[text="广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12648924',
-        },
-        {
-          matches: '[id="com.baidu.netdisk:id/countdown"][text^="跳过"]',
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12706553',
+            'https://gkd-kit.gitee.io/import/12648924',
             'https://gkd-kit.gitee.io/import/12865287',
           ],
         },
-        '[id="com.byted.pangle:id/tt_splash_skip_btn"]', // 1687136781353
+        {
+          quickFind: false,
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+        },
       ],
     },
     {
