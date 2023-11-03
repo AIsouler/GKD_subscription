@@ -40,9 +40,15 @@ export default defineAppConfig({
         {
           key: 1,
           desc: '88VIP开通优惠弹窗',
-          activityIds: 'com.taobao.tao.welcome.Welcome',
+          activityIds: [
+            'com.taobao.tao.welcome.Welcome',
+            'com.taobao.tao.TBMainActivity',
+          ],
           matches: '[desc="淘气值冲刺成功"] < FrameLayout + [desc="关闭按钮"]',
-          snapshotUrls: 'https://i.gkd.li/import/13198052',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13198052', //com.taobao.tao.welcome.Welcome
+            'https://gkd-kit.gitee.io/import/13249418', //com.taobao.tao.TBMainActivity
+          ],
         },
       ],
     },
