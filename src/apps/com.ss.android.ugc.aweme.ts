@@ -61,6 +61,7 @@ export default defineAppConfig({
     {
       key: 2,
       matchLauncher: true,
+      quickFind: true,
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
       name: '关闭朋友推荐弹窗',
       rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
@@ -72,6 +73,7 @@ export default defineAppConfig({
     {
       key: 3,
       name: '关闭更新弹窗',
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
@@ -89,12 +91,14 @@ export default defineAppConfig({
     {
       key: 5,
       name: '广告弹窗',
+      quickFind: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12769137',
     },
     {
       key: 6,
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       name: '去商店评分',
@@ -108,6 +112,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       name: '请求开启通知提示信息',
@@ -122,6 +127,7 @@ export default defineAppConfig({
       key: 11,
       name: '自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
+      quickFind: true,
       activityIds:
         'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
       rules: '[text="原图"][desc="未选中/复选框 原图"]',
@@ -129,6 +135,17 @@ export default defineAppConfig({
         'https://i.gkd.li/import/12846036', // 未选中
         'https://i.gkd.li/import/12846040', // 已选中
       ],
+    },
+    {
+      enable: false,
+      key: 12,
+      name: '休息提醒',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="休息一下吧"] +3 Button[text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/13241564',
     },
   ],
 });
