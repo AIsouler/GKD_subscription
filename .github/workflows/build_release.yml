@@ -1,15 +1,12 @@
-name: Release
+name: build_release
 
-on:
-  push:
-    branches:
-      - 'main'
+on: workflow_dispatch
 
 jobs:
-  release:
-    # prevent run on fork
-    if: ${{ github.repository == 'gkd-kit/subscription' && startsWith(github.event.head_commit.message, 'chore(main):') && contains(github.event.head_commit.message, 'release') }}
+  build_release:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,6 +22,11 @@ jobs:
 
       - run: pnpm run build
 
+      - id: version
+        run: |
+          version=$(pnpm show @gkd-kit/subscription version)
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
+
       - name: Git commit
         id: commit
         run: |
@@ -34,15 +36,26 @@ jobs:
           git config --global core.safecrlf false
           git status
           git add .
-          git commit -m "build: json,readme" -a
+          git commit -a -m "chore: v${{steps.version.outputs.version}}"
+          git tag ${{steps.version.outputs.version}}
         continue-on-error: true
 
       - name: Git push
-        uses: ad-m/github-push-action@master
         if: ${{ steps.commit.outcome == 'success' }}
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+          tags: true
+
+      - name: Create Release
+        if: ${{ steps.commit.outcome == 'success' }}
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          release_name: Release ${{ steps.version.outputs.version }}
 
       - name: Publish package
         if: ${{ steps.commit.outcome == 'success' }}
@@ -51,4 +64,5 @@ jobs:
           pnpm publish
 
       - name: sync npmmirror
+        if: ${{ steps.commit.outcome == 'success' }}
         run: curl -X PUT 'https://registry-direct.npmmirror.com/@gkd-kit/subscription/sync'
