@@ -202,15 +202,27 @@ export default defineAppConfig({
     {
       key: 14,
       name: '请求定位权限弹窗',
-      desc: '自动点击【以后再说】',
-      activityIds: [
-        'com.sina.weibo.MainTabActivity',
-        'com.sina.weibo.utils.WeiboDialog$CustomDialog',
-      ],
-      rules: '@[text="以后再说"] + * + [text="去开启"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/13218093',
-        'https://i.gkd.li/import/13003311',
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.sina.weibo.MainTabActivity',
+            'com.sina.weibo.utils.WeiboDialog$CustomDialog',
+          ],
+          matches: '@[text="以后再说"] + * + [text="去开启"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13218093',
+            'https://i.gkd.li/import/13003311',
+          ],
+        },
+        {
+          key: 1,
+          activityIds: 'com.sina.weibo.MainTabActivity',
+          matches:
+            '@[id="com.sina.weibo:id/btn_close"] +2 [text="使用您的位置信息"]',
+          snapshotUrls: 'https://i.gkd.li/import/13255595',
+        },
       ],
     },
   ],
