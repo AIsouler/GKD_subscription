@@ -82,7 +82,6 @@
 
 ## 请求定位权限弹窗
 
-自动点击【以后再说】
-
 - [快照-0](https://i.gkd.li/import/13218093)
 - [快照-1](https://i.gkd.li/import/13003311)
+- [快照-2](https://i.gkd.li/import/13255595)
