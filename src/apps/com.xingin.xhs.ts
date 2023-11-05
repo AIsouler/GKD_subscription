@@ -22,11 +22,10 @@ export default defineAppConfig({
       name: '关闭请求通知弹窗',
       quickFind: true,
       actionMaximum: 1,
-      matchTime: 30000,
-      resetMatch: 'app',
       activityIds: [
         'com.xingin.xhs.index.v2.IndexActivityV2',
         'com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity',
+        'com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity',
       ],
       rules: [
         {
@@ -34,6 +33,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13195753', //com.xingin.xhs.index.v2.IndexActivityV2
             'https://gkd-kit.gitee.io/import/13222356', //com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity
+            'https://gkd-kit.gitee.io/import/13255627', //com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity
           ],
         },
         {
