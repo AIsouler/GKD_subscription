@@ -157,5 +157,27 @@ export default defineAppConfig({
       rules: '[text="打开推送通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/13229159',
     },
+    {
+      key: 10,
+      enable: false,
+      name: '首页-推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          name: '点击广告卡片右下角菜单按钮',
+          matches:
+            '[id="tv.danmaku.bili:id/ad_tint_frame"] [id="tv.danmaku.bili:id/more"]',
+          snapshotUrls: 'https://i.gkd.li/import/13256570',
+        },
+        {
+          name: '点击[不感兴趣]',
+          preKeys: 0,
+          matches: '[id="tv.danmaku.bili:id/menu_layout"] [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/import/13256605',
+        },
+      ],
+    },
   ],
 });
