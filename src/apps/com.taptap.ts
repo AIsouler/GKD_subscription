@@ -23,10 +23,15 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          activityIds:
+          activityIds: [
             'com.taptap.game.discovery.impl.findgame.allgame.dialog.FindGameMenuDialog',
+            'com.taptap.other.basic.impl.TapMainActivity',
+          ],
           matches: '@LinearLayout > [text="对此内容不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/12840904',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12840904',
+            'https://i.gkd.li/import/13258679', //other.basic.impl.TapMainActivity
+          ],
         },
       ],
     },
