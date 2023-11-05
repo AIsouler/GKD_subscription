@@ -19,9 +19,12 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '关闭请求通知弹窗',
+      name: '通知权限弹窗',
       quickFind: true,
       actionMaximum: 1,
+      matchTime: 30000,
+      resetMatch: 'app',
+      matchLauncher: true,
       activityIds: [
         'com.xingin.xhs.index.v2.IndexActivityV2',
         'com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity',
@@ -33,6 +36,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13195753', //com.xingin.xhs.index.v2.IndexActivityV2
             'https://gkd-kit.gitee.io/import/13222356', //com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity
+            'https://gkd-kit.gitee.io/import/13256145', //com.huawei.android.launcher.unihome.UniHomeLauncher
             'https://gkd-kit.gitee.io/import/13255627', //com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity
           ],
         },
@@ -44,7 +48,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '免流量升级弹窗',
+      name: '更新弹窗',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
