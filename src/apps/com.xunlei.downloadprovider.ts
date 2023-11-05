@@ -242,6 +242,13 @@ export default defineAppConfig({
             '[text="立即开通"] + [id="com.xunlei.downloadprovider:id/close"]',
           snapshotUrls: 'https://i.gkd.li/import/12882939',
         },
+        {
+          key: 3,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches:
+            '[text="您的会员已过期"] < LinearLayout +n ImageView[desc="迅雷"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13259268',
+        },
       ],
     },
     // key = 11 已被使用，后续不可再使用
