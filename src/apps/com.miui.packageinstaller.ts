@@ -167,11 +167,16 @@ export default defineAppConfig({
           preKeys: [0, 1],
           key: 3,
           desc: '点击【完成】',
-          activityIds:
+          activityIds: [
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
+            'com.miui.packageInstaller.InstallProgressActivity',
+          ],
           matches:
             '[id="com.miui.packageinstaller:id/done_layout"] > [text="完成"]',
-          snapshotUrls: 'https://i.gkd.li/import/12817999',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12817999',
+            'https://i.gkd.li/import/13255733',
+          ],
         },
       ],
     },
