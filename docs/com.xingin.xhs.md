@@ -7,12 +7,14 @@
 - [快照-0](https://i.gkd.li/import/12739065)
 - [快照-1](https://gkd-kit.gitee.io/import/13197784)
 
-## 关闭请求通知弹窗
+## 通知权限弹窗
 
 - [快照-0](https://i.gkd.li/import/13195753)
 - [快照-1](https://gkd-kit.gitee.io/import/13222356)
-- [快照-2](https://gkd-kit.gitee.io/import/13250418)
+- [快照-2](https://gkd-kit.gitee.io/import/13256145)
+- [快照-3](https://gkd-kit.gitee.io/import/13255627)
+- [快照-4](https://gkd-kit.gitee.io/import/13250418)
 
-## 免流量升级弹窗
+## 更新弹窗
 
 - [快照-0](https://gkd-kit.gitee.io/import/13246890)

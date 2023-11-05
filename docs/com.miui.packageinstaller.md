@@ -36,3 +36,4 @@
 - [快照-4](https://i.gkd.li/import/13024730)
 - [快照-5](https://i.gkd.li/import/13024731)
 - [快照-6](https://i.gkd.li/import/12817999)
+- [快照-7](https://i.gkd.li/import/13255733)

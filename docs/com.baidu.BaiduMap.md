@@ -1,6 +1,6 @@
 # 百度地图
 
-存在 8 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
+存在 9 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
 
 ## 开屏广告
 
@@ -51,3 +51,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12909385)
+
+## 打开通知权限
+
+默认禁用
+
+- [快照-0](https://gkd-kit.gitee.io/import/13258995)

@@ -1,6 +1,6 @@
 # 哔哩哔哩
 
-存在 9 规则组 - [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts)
+存在 10 规则组 - [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts)
 
 ## 开屏广告
 
@@ -54,3 +54,10 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13229159)
+
+## 首页-推荐视频卡片广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13256570)
+- [快照-1](https://i.gkd.li/import/13256605)

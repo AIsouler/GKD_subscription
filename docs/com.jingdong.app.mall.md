@@ -1,11 +1,12 @@
 # 京东
 
-存在 8 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
+存在 9 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
 
 ## 开屏广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12668289)
 - [快照-1](https://gkd-kit.gitee.io/import/12519430)
+- [快照-2](https://gkd-kit.gitee.io/import/13255802)
 
 ## 购物车界面-砸金蛋
 
@@ -21,7 +22,7 @@
 - [快照-1](https://i.gkd.li/import/12774910)
 - [快照-2](https://i.gkd.li/import/13242002)
 
-## 首页-浮层广告
+## 首页-右侧浮层广告
 
 默认禁用
 
@@ -42,6 +43,16 @@
 - [快照-0](https://i.gkd.li/import/13165721)
 - [快照-1](https://i.gkd.li/import/13218034)
 - [快照-2](https://i.gkd.li/import/13241883)
+- [快照-3](https://i.gkd.li/import/132599029)
+- [快照-4](https://i.gkd.li/import/13258996)
+
+## 首页-底部横幅广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13258973)
+- [快照-1](https://i.gkd.li/import/13258980)
+- [快照-2](https://i.gkd.li/import/13258981)
 
 ## 京东账号登录授权
 

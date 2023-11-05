@@ -6,7 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/12775855)
 
-## 广告邮件-列表卡片广告
+## 列表卡片广告
 
 - [快照-0](https://i.gkd.li/import/12842757)
 - [快照-1](https://i.gkd.li/import/12842775)
