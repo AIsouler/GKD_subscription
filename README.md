@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v152
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v153
 
-当前订阅文件已适配 573 个 APP, 共有 1239 规则组
+当前订阅文件已适配 575 个 APP, 共有 1241 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -49,6 +49,7 @@ GKD 默认订阅规则
 | fiil+ | [com.fengeek.f002](/docs/com.fengeek.f002.md) | 2/1启用/1禁用 |
 | iGPSPORT | [com.igpsport.igpsportandroid](/docs/com.igpsport.igpsportandroid.md) | 1 |
 | youtube | [com.google.android.youtube](/docs/com.google.android.youtube.md) | 3 |
+| 10000社区 | [dxwt.questionnaire.ui](/docs/dxwt.questionnaire.ui.md) | 1 |
 | 123云盘 | [com.mfcloudcalculate.networkdisk](/docs/com.mfcloudcalculate.networkdisk.md) | 1 |
 | 1号会员店 | [com.thestore.main](/docs/com.thestore.main.md) | 2/1启用/1禁用 |
 | 360家庭防火墙 | [com.qihoo.srouter.n300](/docs/com.qihoo.srouter.n300.md) | 1 |
@@ -374,6 +375,7 @@ GKD 默认订阅规则
 | 手机天猫 | [com.tmall.wireless](/docs/com.tmall.wireless.md) | 3/2启用/1禁用 |
 | 手机知网 | [com.cnki.client](/docs/com.cnki.client.md) | 2 |
 | 刷刷题 | [com.shuashuati.app](/docs/com.shuashuati.app.md) | 1 |
+| 书城 | [com.heytap.book](/docs/com.heytap.book.md) | 1 |
 | 水印相机 | [com.tencent.zebra](/docs/com.tencent.zebra.md) | 1 |
 | 顺丰速运 | [com.sf.activity](/docs/com.sf.activity.md) | 3 |
 | 顺易充 | [com.longshine.nanwang.electric.charge](/docs/com.longshine.nanwang.electric.charge.md) | 1 |
@@ -588,4 +590,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=152)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=153)
