@@ -28,8 +28,11 @@ export default defineAppConfig({
       quickFind: true,
       name: '请求通知权限弹窗',
       activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
-      rules: '[text="开启推送提醒"] <2 * + [id="cn.TuHu.android:id/imgClose"]',
-      snapshotUrls: 'https://i.gkd.li/import/13228796',
+      rules: '[id="cn.TuHu.android:id/imgClose"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13228796', //推送提醒消息弹窗
+        'https://gkd-kit.gitee.io/import/13256535', //2023年11月5日新增推送物流进度等信息弹窗
+      ],
     },
   ],
 });
