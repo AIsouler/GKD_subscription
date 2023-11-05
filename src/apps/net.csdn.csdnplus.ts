@@ -72,6 +72,16 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 3,
+      name: '关闭好评弹窗',
+      resetMatch: 'app',
+      actionMaximum: 1,
+      quickFind: true,
+      activityIds: 'net.csdn.csdnplus.activity.MainActivity',
+      rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13251085',
+    },
+    {
       enable: false,
       key: 10,
       quickFind: true,
