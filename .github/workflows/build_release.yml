@@ -24,7 +24,7 @@ jobs:
 
       - id: version
         run: |
-          version=$(pnpm show @gkd-kit/subscription version)
+          version=$(pnpm exec tsx ./scripts/showVersion.ts)
           echo "version=${version}" >> "$GITHUB_OUTPUT"
 
       - name: Git commit
