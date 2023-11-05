@@ -53,12 +53,13 @@ export default defineAppConfig({
           key: 1,
           name: '点击右上角x按钮',
           matches:
-            '[id="com.coolapk.market:id/ad_time_view"||id="com.coolapk.market:id/top_text_view"||id="com.coolapk.market:id/ad_text_view"] + [id="com.coolapk.market:id/close_view"]',
+            '[id="com.coolapk.market:id/ad_time_view"||id="com.coolapk.market:id/top_text_view"||id="com.coolapk.market:id/ad_text_view"] +n [id="com.coolapk.market:id/close_view"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12707506',
             'https://gkd-kit.gitee.io/import/12642094',
             'https://gkd-kit.gitee.io/import/12642148',
             'https://gkd-kit.gitee.io/import/12774771',
+            'https://i.gkd.li/import/13257987',
           ],
         },
         {
