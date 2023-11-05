@@ -110,6 +110,16 @@ export default defineAppConfig({
         'https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008',
     },
     {
+      key: 7,
+      enable: false,
+      quickFind: true,
+      name: '设置无声进入抖音',
+      desc: '点击[拒绝]',
+      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+      rules: '@[text="拒绝"] + [text="去设置"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13256087',
+    },
+    {
       enable: false,
       key: 10,
       quickFind: true,
