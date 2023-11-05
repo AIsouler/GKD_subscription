@@ -17,9 +17,13 @@ export default defineAppConfig({
       activityIds: [
         'com.xiaomi.ad.feedback',
         'com.android.thememanager.module.detail.view.ThemeDetailActivity',
+        'com.android.thememanager.ThemeResourceProxyTabActivity',
       ],
       rules: '[id="com.miui.systemAdSolution:id/no_interest"]',
-      snapshotUrls: 'https://i.gkd.li/import/13227328',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13227328', // com.android.thememanager.module.detail.view.ThemeDetailActivity
+        'https://i.gkd.li/import/13255751', // com.android.thememanager.ThemeResourceProxyTabActivity
+      ],
     },
   ],
 });
