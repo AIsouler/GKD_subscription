@@ -9,7 +9,7 @@
 - [快照-2](https://i.gkd.li/import/12868232)
 - [快照-3](https://i.gkd.li/import/13197417)
 
-## 首页-优量汇弹窗广告
+## 首页-弹窗广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/12642482)
 - [快照-1](https://gkd-kit.gitee.io/import/12646347)
@@ -23,8 +23,10 @@
 - [快照-9](https://i.gkd.li/import/12793180)
 - [快照-10](https://i.gkd.li/import/12868503)
 - [快照-11](https://gkd-kit.gitee.io/import/12646420)
+- [快照-12](https://i.gkd.li/import/13259196)
+- [快照-13](https://i.gkd.li/import/13259198)
 
-## 首页-浮窗广告
+## 首页-右侧浮窗广告
 
 - [快照-0](https://i.gkd.li/import/12846543)
 - [快照-1](https://i.gkd.li/import/12868119)
@@ -38,4 +40,5 @@
 
 ## 我的-弹窗广告
 
-- [快照-0](https://i.gkd.li/import/13197443)
+- [快照-0](https://i.gkd.li/import/13259183)
+- [快照-1](https://i.gkd.li/import/13259194)

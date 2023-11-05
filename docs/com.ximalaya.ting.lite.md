@@ -1,6 +1,6 @@
 # 喜马拉雅极速版
 
-存在 4 规则组 - [com.ximalaya.ting.lite](/src/apps/com.ximalaya.ting.lite.ts)
+存在 6 规则组 - [com.ximalaya.ting.lite](/src/apps/com.ximalaya.ting.lite.ts)
 
 ## 开屏广告
 
@@ -15,3 +15,13 @@
 ## 小说推荐弹窗
 
 - [快照-0](https://i.gkd.li/import/13229127)
+
+## 支付宝提现广告弹窗
+
+点击右上角圆形x
+
+- [快照-0](https://gkd-kit.gitee.io/import/13256447)
+
+## 关闭开启通知弹窗
+
+- [快照-0](https://gkd-kit.gitee.io/import/13256505)

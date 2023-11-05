@@ -1,6 +1,6 @@
 # 抖音
 
-存在 11 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+存在 12 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
 ## 开屏广告
 
@@ -40,6 +40,12 @@
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008)
 
 - [快照-0](https://gkd-kit.gitee.io/import/13053628)
+
+## 设置无声进入抖音
+
+默认禁用 - 点击[拒绝]
+
+- [快照-0](https://gkd-kit.gitee.io/import/13256087)
 
 ## 请求开启通知提示信息
 
