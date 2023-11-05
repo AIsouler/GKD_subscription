@@ -31,8 +31,21 @@ export default defineAppConfig({
       quickFind: true,
       activityIds:
         'com.huawei.android.totemweather.composite.MarketCompositeActivity',
-      rules: '[id="com.huawei.android.totemweather:id/promote_ad_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13218197',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[id="com.huawei.android.totemweather:id/promote_ad_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/13218197',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches:
+            '[id="com.huawei.android.totemweather:id/feedback_negative_flv"] > [text="直接关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/13259434',
+        },
+      ],
     },
   ],
 });
