@@ -53,10 +53,11 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: 'ZFB提现广告',
+      name: '支付宝提现广告弹窗',
+      desc: '点击右上角圆形x',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"][index=1]',
+      rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/13256447',
     },
     {
