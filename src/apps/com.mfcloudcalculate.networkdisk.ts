@@ -7,8 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.mfcloudcalculate.networkdisk.activity.SplashActivity',
-      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -18,6 +19,11 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12846434',
             'https://i.gkd.li/import/13059834',
           ],
+        },
+        {
+          key: 1,
+          matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13259303'],
         },
       ],
     },
