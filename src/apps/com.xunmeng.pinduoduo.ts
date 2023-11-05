@@ -111,9 +111,9 @@ export default defineAppConfig({
       enable: false,
       key: 9,
       name: '多多视频每日自动签到',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
       rules: [
         {
