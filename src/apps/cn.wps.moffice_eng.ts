@@ -29,21 +29,24 @@ export default defineAppConfig({
       ],
       activityIds: [
         'cn.wps.moffice.main.StartPublicActivity',
+        'cn.wps.moffice.documentmanager.PreStartActivity',
         'cn.wps.moffice.main.local.HomeRootActivity',
       ],
       rules: [
         {
-          matches: '[text="关闭当前广告"||text="不喜欢此广告"]',
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12505365',
-            'https://i.gkd.li/import/12882277',
-          ],
-        },
-        {
+          key: 0,
           matches: '[id$="/nativeclose"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12505350',
             'https://gkd-kit.gitee.io/import/12505286',
+          ],
+        },
+        {
+          preKeys: 0,
+          matches: '[text="关闭当前广告"||text="不喜欢此广告"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12505365',
+            'https://i.gkd.li/import/13259090',
           ],
         },
       ],
@@ -51,13 +54,14 @@ export default defineAppConfig({
     {
       key: 2,
       name: '首页-弹窗广告',
+      quickFind: true,
       activityIds: [
         'cn.wps.moffice.main.AfterLoginActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
       ],
       rules: '[id="cn.wps.moffice_eng:id/afterlogin_cancel"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12882589',
+        'https://i.gkd.li/import/13259097',
         'https://i.gkd.li/import/12882712',
       ],
     },
