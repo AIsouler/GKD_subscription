@@ -28,7 +28,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '首页-优量汇弹窗广告',
+      name: '首页-弹窗广告',
       matchLauncher: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
@@ -62,11 +62,20 @@ export default defineAppConfig({
             'https://gkd-kit.gitee.io/import/12646420', // 华为手机的快照，activityId = 'com.huawei.android.launcher.unihome.UniHomeLauncher'
           ],
         },
+        {
+          key: 3,
+          matches:
+            '[text="广告"] <n * < * < ViewGroup - ViewGroup >n ViewGroup > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13259196',
+            'https://i.gkd.li/import/13259198',
+          ],
+        },
       ],
     },
     {
       key: 2,
-      name: '首页-浮窗广告',
+      name: '首页-右侧浮窗广告',
       quickFind: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
@@ -99,8 +108,12 @@ export default defineAppConfig({
       activityIds: [
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       ],
-      rules: '[text="查看详情"] <n FrameLayout -n FrameLayout > View',
-      snapshotUrls: ['https://i.gkd.li/import/13197443'],
+      rules:
+        '[text="查看详情"] <n FrameLayout -n FrameLayout > [(name="android.widget.ImageView"&&clickable=false)||name="android.view.View"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13259183',
+        'https://i.gkd.li/import/13259194',
+      ],
     },
   ],
 });
