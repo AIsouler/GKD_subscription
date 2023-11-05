@@ -32,7 +32,8 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: 'ViewGroup > ViewGroup +(5) ViewGroup > ImageView',
+          matches:
+            'ViewGroup > ViewGroup[childCount=6] > ViewGroup > ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12639717',
         },
         {
