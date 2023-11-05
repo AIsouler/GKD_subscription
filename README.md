@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v153
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v154
 
-当前订阅文件已适配 575 个 APP, 共有 1241 规则组
+当前订阅文件已适配 576 个 APP, 共有 1242 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -159,6 +159,7 @@ GKD 默认订阅规则
 | 豆瓣 | [com.douban.frodo](/docs/com.douban.frodo.md) | 11/10启用/1禁用 |
 | 豆果美食 | [com.douguo.recipe](/docs/com.douguo.recipe.md) | 1 |
 | 抖音 | [com.ss.android.ugc.aweme](/docs/com.ss.android.ugc.aweme.md) | 11/8启用/3禁用 |
+| 抖音 | [com.ss.android.ugc.aweme.mobile](/docs/com.ss.android.ugc.aweme.mobile.md) | 1 |
 | 抖音极速版 | [com.ss.android.ugc.aweme.lite](/docs/com.ss.android.ugc.aweme.lite.md) | 1 |
 | 斗鱼 | [air.tv.douyu.android](/docs/air.tv.douyu.android.md) | 4 |
 | 毒霸姬 | [com.cf.dubaji](/docs/com.cf.dubaji.md) | 1 |
@@ -590,4 +591,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=153)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=154)
