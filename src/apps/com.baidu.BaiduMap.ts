@@ -112,5 +112,15 @@ export default defineAppConfig({
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
       snapshotUrls: 'https://i.gkd.li/import/12909385',
     },
+    {
+      enable: false,
+      key: 8,
+      name: '打开通知权限',
+      quickFind: true,
+      activityIds: 'com.baidu.baidumaps.MapsActivity',
+      rules:
+        '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13258995',
+    },
   ],
 });
