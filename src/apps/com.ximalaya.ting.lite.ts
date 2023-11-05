@@ -25,6 +25,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '首页-推荐-卡片广告',
+      quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_ad_top_home_iv_close"]',
     },
@@ -49,6 +50,23 @@ export default defineAppConfig({
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_iv_novel_back"]',
       snapshotUrls: 'https://i.gkd.li/import/13229127',
+    },
+    {
+      key: 3,
+      name: 'ZFB提现广告',
+      quickFind: true,
+      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"][index=1]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13256447',
+    },
+    {
+      key: 4,
+      name: '关闭开启通知弹窗',
+      quickFind: true,
+      activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
+      rules:
+        '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13256505',
     },
   ],
 });
