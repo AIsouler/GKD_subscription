@@ -7,12 +7,20 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-      rules:
-        '@RelativeLayout[desc="跳过"][id!=null] > TextView[text="跳过"][id!=null]',
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12668289',
-        'https://gkd-kit.gitee.io/import/12519430',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          matches: '[text="跳过"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12668289',
+            'https://gkd-kit.gitee.io/import/12519430',
+            'https://gkd-kit.gitee.io/import/13255802',
+          ],
+        },
       ],
     },
     {
