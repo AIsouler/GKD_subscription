@@ -59,7 +59,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '首页-浮层广告',
+      name: '首页-右侧浮层广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: 'RelativeLayout >n * > [desc^="关闭浮层"]',
       snapshotUrls: [
@@ -108,9 +108,30 @@ export default defineAppConfig({
         {
           key: 2,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-          matches: '[desc="弹窗"] + [desc="关闭按钮"]',
-          snapshotUrls: 'https://i.gkd.li/import/13241883',
+          matches: '@[desc="关闭按钮"] <n * >n *[desc="弹窗"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13241883',
+            'https://i.gkd.li/import/132599029',
+          ],
         },
+        {
+          key: 3,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: 'RelativeLayout > ImageView[desc="关闭页面"]',
+          snapshotUrls: 'https://i.gkd.li/import/13258996',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 6,
+      name: '首页-底部横幅广告',
+      activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+      rules: 'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13258973',
+        'https://i.gkd.li/import/13258980',
+        'https://i.gkd.li/import/13258981',
       ],
     },
     {
