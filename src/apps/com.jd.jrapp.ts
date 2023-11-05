@@ -22,9 +22,23 @@ export default defineAppConfig({
       name: '通知提醒',
       quickFind: true,
       actionMaximum: 1,
-      activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
-      rules: 'TextView[text^="打开通知"] +2 [id="com.jd.jrapp:id/iv_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13249998',
+      activityIds: [
+        'com.jd.jrapp.bm.mainbox.main.MainActivity',
+        'com.jd.jrapp.bm.common.web.ui.WebActivity',
+      ],
+      rules: [
+        {
+          activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
+          matches:
+            'TextView[text^="打开通知"] +2 [id="com.jd.jrapp:id/iv_close"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13249998',
+        },
+        {
+          activityIds: 'com.jd.jrapp.bm.common.web.ui.WebActivity',
+          matches: 'View[text="开启并订阅通知"] < View + View[clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13255656',
+        },
+      ],
     },
   ],
 });
