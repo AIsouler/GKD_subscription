@@ -290,8 +290,11 @@ export default defineAppConfig({
       key: 18,
       name: '消息页面-顶部更新提示',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: '[desc="发现QQ版本更新"] > [desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/import/13188722',
+      rules: 'TextView[text="发现QQ版本更新"] + ImageView[clickable=true]', //修正desc值为null时无法点击问题
+      snapshotUrls: [
+        'https://i.gkd.li/import/13188722',
+        'https://gkd-kit.gitee.io/import/13255493', //desc值为null快照
+      ],
     },
   ],
 });
