@@ -95,8 +95,12 @@ export default defineAppConfig({
           key: 0,
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-          matches: 'ImageView < @ViewGroup[clickable=true] - [text*="开通VIP"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13189055',
+          matches:
+            'ImageView < @ViewGroup[clickable=true] <2 ViewGroup < ViewGroup  + ScrollView [text ="会员套餐"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13189055',
+            'https://gkd-kit.gitee.io/import/13260416',
+          ],
         },
         {
           key: 1,
