@@ -96,24 +96,33 @@ export default defineAppConfig({
       key: 4,
       name: '首页-推荐列表广告',
       desc: '点击关闭-点击屏蔽',
+      activityIds: [
+        'com.ximalaya.ting.android.host.activity.MainActivity',
+        'com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
+      ],
       rules: [
         {
-          activityIds:
-            'com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
-          matches:
-            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_shield"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12506258',
-        },
-        {
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          key: 0,
+          quickFind: true,
           matches: '[id="com.ximalaya.ting.android:id/xm_ad_close_real"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12506253',
         },
         {
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          key: 1,
           matches:
             '[id="com.ximalaya.ting.android:id/main_ad_dynamic_lay"] >(4) ImageView + ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12701374',
+        },
+        {
+          preKeys: [0, 1],
+          name: '点击关闭原因【屏蔽】',
+          quickFind: true,
+          matches:
+            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_shield"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12506258',
+            'https://gkd-kit.gitee.io/import/13260487',
+          ],
         },
       ],
     },
