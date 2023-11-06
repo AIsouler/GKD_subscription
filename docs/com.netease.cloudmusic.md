@@ -35,9 +35,10 @@
 默认禁用
 
 - [快照-0](https://gkd-kit.gitee.io/import/13189055)
-- [快照-1](https://i.gkd.li/import/13228955)
-- [快照-2](https://i.gkd.li/import/13230603)
-- [快照-3](https://i.gkd.li/import/13230605)
+- [快照-1](https://gkd-kit.gitee.io/import/13260416)
+- [快照-2](https://i.gkd.li/import/13228955)
+- [快照-3](https://i.gkd.li/import/13230603)
+- [快照-4](https://i.gkd.li/import/13230605)
 
 ## 更新弹窗
 

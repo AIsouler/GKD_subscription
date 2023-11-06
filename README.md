@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v155
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v156
 
-当前订阅文件已适配 590 个 APP, 共有 1269 规则组
+当前订阅文件已适配 590 个 APP, 共有 1275 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -157,7 +157,7 @@ GKD 默认订阅规则
 | 东方财富 | [com.eastmoney.android.berlin](/docs/com.eastmoney.android.berlin.md) | 3 |
 | 动卡空间 | [com.citiccard.mobilebank](/docs/com.citiccard.mobilebank.md) | 3 |
 | 动漫之家社区 | [com.dmzjsq.manhua](/docs/com.dmzjsq.manhua.md) | 1 |
-| 懂球帝 | [com.dongqiudi.news](/docs/com.dongqiudi.news.md) | 5/4启用/1禁用 |
+| 懂球帝 | [com.dongqiudi.news](/docs/com.dongqiudi.news.md) | 6/5启用/1禁用 |
 | 东兴198 | [net.dxzq.jgzx](/docs/net.dxzq.jgzx.md) | 1 |
 | 豆瓣 | [com.douban.frodo](/docs/com.douban.frodo.md) | 11/10启用/1禁用 |
 | 豆果美食 | [com.douguo.recipe](/docs/com.douguo.recipe.md) | 1 |
@@ -216,7 +216,7 @@ GKD 默认订阅规则
 | 恒大智慧社区 | [com.hd.smartVillage](/docs/com.hd.smartVillage.md) | 2/1启用/1禁用 |
 | 红手指云手机 | [com.redfinger.app](/docs/com.redfinger.app.md) | 1 |
 | 猴子分身 | [cn.chuci.and.wkfenshen](/docs/cn.chuci.and.wkfenshen.md) | 1 |
-| 华尔街见闻 | [com.wallstreetcn.news](/docs/com.wallstreetcn.news.md) | 1 |
+| 华尔街见闻 | [com.wallstreetcn.news](/docs/com.wallstreetcn.news.md) | 2 |
 | 华图在线 | [com.huatu.handheld_huatu](/docs/com.huatu.handheld_huatu.md) | 3/2启用/1禁用 |
 | 华为浏览器 | [com.huawei.browser](/docs/com.huawei.browser.md) | 1 |
 | 华为生活服务 | [com.huawei.lives](/docs/com.huawei.lives.md) | 1 |
@@ -249,7 +249,7 @@ GKD 默认订阅规则
 | 京东云无线宝 | [com.jdcloud.mt.smartrouter](/docs/com.jdcloud.mt.smartrouter.md) | 1 |
 | 京喜 | [com.jd.pingou](/docs/com.jd.pingou.md) | 1 |
 | 京喜特价 | [com.jd.jdlite](/docs/com.jd.jdlite.md) | 3 |
-| 今日头条 | [com.ss.android.article.news](/docs/com.ss.android.article.news.md) | 5/2启用/3禁用 |
+| 今日头条 | [com.ss.android.article.news](/docs/com.ss.android.article.news.md) | 6/3启用/3禁用 |
 | 今日相机 | [com.xhey.xcamera](/docs/com.xhey.xcamera.md) | 1 |
 | 金十数据 | [com.jin10](/docs/com.jin10.md) | 4/3启用/1禁用 |
 | 囧次元 | [com.viva.note](/docs/com.viva.note.md) | 3 |
@@ -441,11 +441,11 @@ GKD 默认订阅规则
 | 网易大神 | [com.netease.gl](/docs/com.netease.gl.md) | 4 |
 | 网易新闻 | [com.netease.newsreader.activity](/docs/com.netease.newsreader.activity.md) | 5/4启用/1禁用 |
 | 网易严选 | [com.netease.yanxuan](/docs/com.netease.yanxuan.md) | 2 |
-| 网易有道词典 | [com.youdao.dict](/docs/com.youdao.dict.md) | 4 |
+| 网易有道词典 | [com.youdao.dict](/docs/com.youdao.dict.md) | 5 |
 | 网易邮箱 | [com.netease.mobimail](/docs/com.netease.mobimail.md) | 3 |
 | 网易邮箱大师 | [com.netease.mail](/docs/com.netease.mail.md) | 3 |
 | 网易云音乐 | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md) | 8/5启用/3禁用 |
-| 完美校园 | [com.newcapec.mobile.ncp](/docs/com.newcapec.mobile.ncp.md) | 2/0启用/2禁用 |
+| 完美校园 | [com.newcapec.mobile.ncp](/docs/com.newcapec.mobile.ncp.md) | 3/1启用/2禁用 |
 | 万能遥控 | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md) | 1 |
 | 微博 | [com.sina.weibo](/docs/com.sina.weibo.md) | 15/12启用/3禁用 |
 | 微博极速版 | [com.sina.weibolite](/docs/com.sina.weibolite.md) | 2 |
@@ -498,7 +498,7 @@ GKD 默认订阅规则
 | 携程旅行 | [ctrip.android.view](/docs/ctrip.android.view.md) | 2 |
 | 稀饭动漫 | [com.xfani.app](/docs/com.xfani.app.md) | 2 |
 | 西瓜视频 | [com.ss.android.article.video](/docs/com.ss.android.article.video.md) | 1 |
-| 喜马拉雅 | [com.ximalaya.ting.android](/docs/com.ximalaya.ting.android.md) | 12/10启用/2禁用 |
+| 喜马拉雅 | [com.ximalaya.ting.android](/docs/com.ximalaya.ting.android.md) | 13/11启用/2禁用 |
 | 喜马拉雅极速版 | [com.ximalaya.ting.lite](/docs/com.ximalaya.ting.lite.md) | 6 |
 | 心动日常 | [com.youloft.icloser](/docs/com.youloft.icloser.md) | 3/2启用/1禁用 |
 | 醒图 | [com.xt.retouch](/docs/com.xt.retouch.md) | 1 |
@@ -605,4 +605,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=155)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=156)
