@@ -15,5 +15,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '卡片广告',
+      desc: '点击关闭, 无后续确认操作',
+      activityIds: ['com.wallstreetcn.news.ProxyMainActivity'],
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            '[text="广告"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13262717',
+        },
+      ],
+    },
   ],
 });
