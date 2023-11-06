@@ -5,6 +5,16 @@ export default defineAppConfig({
   name: '完美校园',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: 'TextView[text^="跳过"][text.length<=10]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13263321',
+    },
+    {
       key: 10,
       name: '新版本提示',
       desc: '新版本提示弹窗，点击右上角【X】按钮。（需手动开启）',
