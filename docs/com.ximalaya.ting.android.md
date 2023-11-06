@@ -1,6 +1,6 @@
 # 喜马拉雅
 
-存在 12 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
+存在 13 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
 
 ## 开屏广告
 
@@ -34,9 +34,10 @@
 
 点击关闭-点击屏蔽
 
-- [快照-0](https://gkd-kit.gitee.io/import/12506258)
-- [快照-1](https://gkd-kit.gitee.io/import/12506253)
-- [快照-2](https://gkd-kit.gitee.io/import/12701374)
+- [快照-0](https://gkd-kit.gitee.io/import/12506253)
+- [快照-1](https://gkd-kit.gitee.io/import/12701374)
+- [快照-2](https://gkd-kit.gitee.io/import/12506258)
+- [快照-3](https://gkd-kit.gitee.io/import/13260487)
 
 ## 关闭热播推荐广告
 
@@ -66,3 +67,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13251713)
+
+## 弹窗广告
+
+- [快照-0](https://i.gkd.li/import/13263421)

@@ -1,6 +1,6 @@
 # 懂球帝
 
-存在 5 规则组 - [com.dongqiudi.news](/src/apps/com.dongqiudi.news.ts)
+存在 6 规则组 - [com.dongqiudi.news](/src/apps/com.dongqiudi.news.ts)
 
 ## 开屏广告
 
@@ -29,3 +29,9 @@
 - [快照-0](https://gkd-kit.gitee.io/import/12620656)
 - [快照-1](https://gkd-kit.gitee.io/import/12620654)
 - [快照-2](https://gkd-kit.gitee.io/import/12620788)
+
+## 首页-广告弹窗
+
+点击底部【x】关闭
+
+- [快照-0](https://i.gkd.li/import/13260467)
