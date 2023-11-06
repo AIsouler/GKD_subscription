@@ -18,10 +18,12 @@ export default defineAppConfig({
         {
           key: 0,
           quickFind: false,
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          matches:
+            '[id="com.byted.pangle:id/tt_splash_skip_btn"||id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12503773',
             'https://i.gkd.li/import/13247610',
+            'https://gkd-kit.gitee.io/import/13264779',
           ],
         },
         {
