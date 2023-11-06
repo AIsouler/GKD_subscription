@@ -39,7 +39,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          desc: '88VIP开通优惠弹窗',
+          name: '88VIP开通优惠弹窗',
           activityIds: [
             'com.taobao.tao.welcome.Welcome',
             'com.taobao.tao.TBMainActivity',

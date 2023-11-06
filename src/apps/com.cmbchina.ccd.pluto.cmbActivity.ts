@@ -39,7 +39,7 @@ export default defineAppConfig({
       name: '右侧悬浮广告',
       rules: [
         {
-          desc: '信用卡、我的页面-悬浮广告',
+          name: '信用卡、我的页面-悬浮广告',
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
             'com.cmbchina.ccd.pluto.cmbActivity.secondNav.cmbBQDU4FG',
@@ -52,7 +52,7 @@ export default defineAppConfig({
           ],
         },
         {
-          desc: '查账页面-悬浮广告',
+          name: '查账页面-悬浮广告',
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
             'com.cmbchina.ccd.pluto.cmbActivity.repaymentBillv3.billRepay.view.cmbK99GNX',

@@ -41,7 +41,7 @@ export default defineAppConfig({
         {
           preKeys: [0, 1],
           key: 10,
-          desc: '打赏页面-点击返回按钮',
+          name: '打赏页面-点击返回按钮',
           activityIds: [
             'local.z.androidshared.vip.RewardActivity',
             'local.z.androidshared.pay.RewardActivity',
@@ -55,7 +55,7 @@ export default defineAppConfig({
         {
           preKeys: [0, 1],
           key: 11,
-          desc: '荣誉会员-点击返回按钮',
+          name: '荣誉会员-点击返回按钮',
           activityIds: [
             'local.z.androidshared.vip.member.VipActivity',
             'local.z.androidshared.pay.vip.VipActivity',

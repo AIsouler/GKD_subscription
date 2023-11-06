@@ -118,14 +118,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          desc: '自动签到',
+          name: '自动签到',
           matches: ['FrameLayout > TextView[text="领取今日现金"]'],
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13201422',
         },
         {
           key: 1,
           preKeys: [0],
-          desc: '在签到后关闭弹窗',
+          name: '在签到后关闭弹窗',
           matches: ['FrameLayout > TextView[text="明日继续来领"]'],
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13205634',
         },

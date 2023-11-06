@@ -198,7 +198,6 @@ type RuleConfig = {
   key?: number;
 
   name?: string;
-  desc?: string;
 
   /**
    * 一个或者多个合法的 GKD 选择器, 如果每个选择器都能匹配上节点, 那么点击最后一个选择器的目标节点
