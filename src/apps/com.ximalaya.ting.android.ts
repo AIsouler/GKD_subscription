@@ -204,5 +204,14 @@ export default defineAppConfig({
         '[text="你可能感兴趣的专辑"] + [id="com.ximalaya.ting.android:id/main_iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13251713',
     },
+    {
+      key: 11,
+      name: '弹窗广告',
+      quickFind: true,
+      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      rules:
+        '@[id="com.ximalaya.ting.android:id/host_close_firework"] +2 [id="com.ximalaya.ting.android:id/host_firework_ad_tag"]',
+      snapshotUrls: 'https://i.gkd.li/import/13263421',
+    },
   ],
 });
