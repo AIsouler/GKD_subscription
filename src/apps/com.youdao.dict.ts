@@ -31,10 +31,16 @@ export default defineAppConfig({
     {
       key: 2,
       name: '主页弹窗',
-      activityIds: 'com.youdao.dict.activity.MainActivity',
+      activityIds: [
+        'com.youdao.dict.activity.MainActivity',
+        'com.youdao.dict.activity.DictSplashActivity',
+      ],
       rules: '@ImageView[id="com.youdao.dict:id/iv_close_bt"]',
       quickFind: true,
-      snapshotUrls: 'https://i.gkd.li/import/12893419',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12893419',
+        'https://gkd-kit.gitee.io/import/13263801',
+      ],
     },
     {
       key: 3,
@@ -43,6 +49,14 @@ export default defineAppConfig({
       rules: '@ImageView[id="com.youdao.dict:id/iv_close"]',
       quickFind: true,
       snapshotUrls: 'https://i.gkd.li/import/12893450',
+    },
+    {
+      key: 4,
+      name: 'VIP-弹窗',
+      activityIds: 'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
+      rules: '@ImageView[id="com.youdao.dict:id/iv_close"]',
+      quickFind: true,
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13263706',
     },
   ],
 });
