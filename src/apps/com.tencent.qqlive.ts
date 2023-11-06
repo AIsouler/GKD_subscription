@@ -49,7 +49,7 @@ export default defineAppConfig({
       activityIds: ['com.tencent.qqlive.ona.activity.SplashHomeActivity'],
       rules: [
         {
-          desc: '点击右上角[广告]',
+          name: '点击右上角[广告]',
           matches:
             'FrameLayout - RelativeLayout > RelativeLayout > FrameLayout + ImageView[clickable=true]',
           snapshotUrls: [
@@ -58,12 +58,12 @@ export default defineAppConfig({
           ],
         },
         {
-          desc: '点击右上角[关闭广告]',
+          name: '点击右上角[关闭广告]',
           matches: '[text="关闭广告"][clickable=true]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12700518'],
         },
         {
-          desc: '点击右上角[广告]',
+          name: '点击右上角[广告]',
           matches:
             'RelativeLayout[id=null] > @FrameLayout[clickable=true][id!=null] > ImageView[desc="the ad tag"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12737313',

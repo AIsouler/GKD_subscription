@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          desc: '自动签到',
+          name: '自动签到',
           matches: ['[id="com.alicloud.databox:id/tvTaskAction"][text="领取"]'],
           snapshotUrls: 'https://i.gkd.li/import/12929318',
           quickFind: true,
@@ -19,7 +19,7 @@ export default defineAppConfig({
         {
           key: 1,
           preKeys: [0],
-          desc: '在签到后，关闭弹窗',
+          name: '在签到后，关闭弹窗',
           matches: ['[id="com.alicloud.databox:id/ivClose"]'],
           snapshotUrls: 'https://i.gkd.li/import/13038304',
           quickFind: true,

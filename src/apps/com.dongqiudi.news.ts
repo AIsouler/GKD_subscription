@@ -19,8 +19,7 @@ export default defineAppConfig({
           ],
         },
         {
-          name: '另一种倒计时广告',
-          desc: '此广告要点击文字相邻的图片,如果直接点击文字会无反应或者触发广告跳转',
+          name: '另一种倒计时广告', // 此广告要点击文字相邻的图片,如果直接点击文字会无反应或者触发广告跳转
           matches:
             '[id="com.dongqiudi.news:id/ad_skip_time"] + [id="com.dongqiudi.news:id/scale_iv"]',
           snapshotUrls: [

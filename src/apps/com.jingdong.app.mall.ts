@@ -39,7 +39,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          desc: '参与调研',
+          name: '参与调研',
           matches:
             'FrameLayout + RelativeLayout > RelativeLayout > ImageView + ImageView[desc!="返回"][visibleToUser=true]',
           snapshotUrls: [
@@ -49,7 +49,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          desc: '邀好友得红包',
+          name: '邀好友得红包',
           matches:
             '@ImageView[id!=null] + FrameLayout[childCount=3] > ImageView + LinearLayout + TextView',
           snapshotUrls: 'https://i.gkd.li/import/13242002',

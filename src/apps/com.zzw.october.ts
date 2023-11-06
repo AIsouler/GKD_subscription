@@ -11,14 +11,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          desc: '方形按钮-开屏广告',
+          name: '方形按钮-开屏广告',
           quickFind: true,
           matches: ['[id="com.zzw.october:id/skip_parent_view"]'],
           snapshotUrls: ['https://i.gkd.li/import/12842667'],
         },
         {
           key: 2,
-          desc: '圆形按钮-开屏广告',
+          name: '圆形按钮-开屏广告',
           quickFind: true,
           matches: 'TextView[text^="跳过"][text.length<=4]',
           snapshotUrls: [

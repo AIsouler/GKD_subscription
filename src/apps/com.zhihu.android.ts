@@ -143,7 +143,7 @@ export default defineAppConfig({
         {
           preKeys: [10],
           key: 100,
-          desc: '反馈弹窗-点击“不感兴趣”',
+          name: '反馈弹窗-点击“不感兴趣”',
           matches:
             '[id="com.zhihu.android:id/recycler_view"] > FrameLayout >(3) [text$="不感兴趣"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12647541'],

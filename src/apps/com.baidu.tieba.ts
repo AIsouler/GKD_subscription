@@ -146,7 +146,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          desc: '点击右上角x关闭',
+          name: '点击右上角x关闭',
           matches:
             'View[childCount=3] > @View[clickable=true][childCount=1] > Image',
           snapshotUrls: [
@@ -156,7 +156,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          desc: '点击正下方x关闭',
+          name: '点击正下方x关闭',
           matches:
             '@TextView[clickable=true && text=null] - FrameLayout TextView[text="广告"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13168383',

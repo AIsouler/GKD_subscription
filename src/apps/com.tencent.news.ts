@@ -29,7 +29,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          desc: '点击【更多】按钮',
+          name: '点击【更多】按钮',
           matches:
             'FrameLayout[id="android:id/content"][childCount=1] >n [text="广告"] +n [id="com.tencent.news:id/dislike_streamAd_more"]',
           snapshotUrls: [
@@ -41,7 +41,7 @@ export default defineAppConfig({
         {
           preKeys: [0],
           key: 1,
-          desc: '点击【不感兴趣】按钮',
+          name: '点击【不感兴趣】按钮',
           matches:
             '[id="com.tencent.news:id/dislike_reason_view"] >n [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/12755852',
