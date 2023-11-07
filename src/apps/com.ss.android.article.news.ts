@@ -43,12 +43,16 @@ export default defineAppConfig({
       name: '浮窗广告',
       quickFind: true,
       activityIds: ['com.ss.android.article.news.activity.MainActivity'],
-      actionMaximum: 1,
       rules: [
         {
           matches:
             '@ImageView < FrameLayout[childCount=2] < FrameLayout < FrameLayout <2 FrameLayout <4 [id="android:id/tabhost"]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/13262675'],
+        },
+        {
+          matches:
+            '@ImageView <2 FrameLayout < FrameLayout  < FrameLayout  <5 RelativeLayout < LinearLayout <2 ViewPager <2 FrameLayout < FrameLayout <3 [id="android:id/tabhost"]',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13274622'],
         },
       ],
     },
