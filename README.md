@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v156
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v157
 
-当前订阅文件已适配 590 个 APP, 共有 1275 规则组
+当前订阅文件已适配 594 个 APP, 共有 1285 规则组
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -62,6 +62,7 @@ GKD 默认订阅规则
 | 36氪 | [com.android36kr.app](/docs/com.android36kr.app.md) | 1 |
 | 3Dbody解剖 | [com.HaoTuBang.H3DBodyFree](/docs/com.HaoTuBang.H3DBodyFree.md) | 1 |
 | 7天澳門統考 | [com.daysko.safp](/docs/com.daysko.safp.md) | 3 |
+| AH视频 | [com.chunqiu.ah](/docs/com.chunqiu.ah.md) | 2 |
 | Android 系统文件选择器 | [com.google.android.documentsui](/docs/com.google.android.documentsui.md) | 1/0启用/1禁用 |
 | CAD看图王 | [com.gstarmc.android](/docs/com.gstarmc.android.md) | 1 |
 | ES文件浏览器 | [com.estrongs.android.pop](/docs/com.estrongs.android.pop.md) | 2 |
@@ -305,7 +306,7 @@ GKD 默认订阅规则
 | 喵喵折 | [com.henzanapp.miaomiaozhe](/docs/com.henzanapp.miaomiaozhe.md) | 1 |
 | 喵上漫画 | [com.aster.zhbj](/docs/com.aster.zhbj.md) | 2 |
 | 咪咕快游 | [cn.emagsoftware.gamehall](/docs/cn.emagsoftware.gamehall.md) | 1 |
-| 咪咕视频 | [com.cmcc.cmvideo](/docs/com.cmcc.cmvideo.md) | 3 |
+| 咪咕视频 | [com.cmcc.cmvideo](/docs/com.cmcc.cmvideo.md) | 6 |
 | 咪咕视频爱看版 | [com.wondertek.miguaikan](/docs/com.wondertek.miguaikan.md) | 1 |
 | 咪咕音乐 | [cmccwm.mobilemusic](/docs/cmccwm.mobilemusic.md) | 1 |
 | 米家 | [com.xiaomi.smarthome](/docs/com.xiaomi.smarthome.md) | 2/1启用/1禁用 |
@@ -345,6 +346,7 @@ GKD 默认订阅规则
 | 奇妙应用 | [com.magicalstory.AppStore](/docs/com.magicalstory.AppStore.md) | 2 |
 | 亲宝宝 | [com.dw.btime](/docs/com.dw.btime.md) | 4 |
 | 青创网 | [com.m17qcc.mm](/docs/com.m17qcc.mm.md) | 1 |
+| 轻松阅 | [io.sbyd.app](/docs/io.sbyd.app.md) | 2 |
 | 蜻蜓FM | [fm.qingting.qtradio](/docs/fm.qingting.qtradio.md) | 2 |
 | 蜻蜓点金 | [zhongxinjiantou.szkingdom.android.newphone](/docs/zhongxinjiantou.szkingdom.android.newphone.md) | 2 |
 | 亲邻开门 | [com.qinlin.edoor](/docs/com.qinlin.edoor.md) | 3/1启用/2禁用 |
@@ -410,11 +412,12 @@ GKD 默认订阅规则
 | 腾讯微云 | [com.qq.qcloud](/docs/com.qq.qcloud.md) | 1 |
 | 腾讯文档 | [com.tencent.docs](/docs/com.tencent.docs.md) | 4 |
 | 腾讯新闻 | [com.tencent.news](/docs/com.tencent.news.md) | 4/3启用/1禁用 |
+| 天府通 | [com.chinarainbow.tft](/docs/com.chinarainbow.tft.md) | 1 |
 | 天空影视 | [com.miaoying.appmy](/docs/com.miaoying.appmy.md) | 1 |
 | 天猫精灵 | [com.alibaba.ailabs.tg](/docs/com.alibaba.ailabs.tg.md) | 1 |
 | 甜糖 | [com.tt.turbo](/docs/com.tt.turbo.md) | 1 |
 | 天天基金 | [com.eastmoney.android.fund](/docs/com.eastmoney.android.fund.md) | 3/2启用/1禁用 |
-| 天天跳绳 | [com.gkid.crazyrope](/docs/com.gkid.crazyrope.md) | 2 |
+| 天天跳绳 | [com.gkid.crazyrope](/docs/com.gkid.crazyrope.md) | 3 |
 | 天翼云盘 | [com.cn21.ecloud](/docs/com.cn21.ecloud.md) | 2 |
 | 贴吧极速版 | [com.baidu.tieba_mini](/docs/com.baidu.tieba_mini.md) | 1 |
 | 贴吧一键签到大师 | [com.baidutieba.davy](/docs/com.baidutieba.davy.md) | 2 |
@@ -598,6 +601,7 @@ GKD 默认订阅规则
 | 住这儿 | [com.vanke.activity](/docs/com.vanke.activity.md) | 1 |
 | 自动点击器 | [com.zidongdianji](/docs/com.zidongdianji.md) | 2 |
 | 自考笔果题库 | [com.dep.biguo](/docs/com.dep.biguo.md) | 4/3启用/1禁用 |
+| 最会买 | [com.ruanmei.zuihuimai](/docs/com.ruanmei.zuihuimai.md) | 1 |
 | 最右 | [cn.xiaochuankeji.tieba](/docs/cn.xiaochuankeji.tieba.md) | 6/4启用/2禁用 |
 | 作业帮 | [com.baidu.homework](/docs/com.baidu.homework.md) | 1 |
 | 作业帮家长版 | [com.zuoyebang.knowledge](/docs/com.zuoyebang.knowledge.md) | 1 |
@@ -605,4 +609,4 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=156)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=157)

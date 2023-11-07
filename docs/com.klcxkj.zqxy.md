@@ -8,4 +8,6 @@
 - [快照-1](https://i.gkd.li/import/12781415)
 - [快照-2](https://i.gkd.li/import/12781461)
 - [快照-3](https://i.gkd.li/import/13071301)
-- [快照-4](https://i.gkd.li/import/12781461)
+- [快照-4](https://gkd-kit.gitee.io/import/13274836)
+- [快照-5](https://i.gkd.li/import/12781461)
+- [快照-6](https://gkd-kit.gitee.io/import/13274838)
