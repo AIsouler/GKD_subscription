@@ -29,10 +29,16 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
+          activityIds: [
+            'com.klcxkj.zqxy.ui.main.MainActivity',
+            'com.klcxkj.zqxy.ui.device.apartment.ble.BathingBleActivity',
+          ],
           matches:
-            'ImageView < FrameLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13071301',
+            'ImageView < FrameLayout[childCount=1] - FrameLayout > @FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13071301',
+            'https://gkd-kit.gitee.io/import/13274836',
+          ],
         },
         {
           key: 3,
@@ -41,6 +47,12 @@ export default defineAppConfig({
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/12781461',
+        },
+        {
+          key: 4,
+          activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
+          matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13274838',
         },
       ],
     },
