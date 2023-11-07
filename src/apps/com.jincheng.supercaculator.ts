@@ -8,11 +8,21 @@ export default defineAppConfig({
       key: 0,
       name: '弹窗广告',
       desc: '点击右上角x',
-      activityIds: 'com.jincheng.supercaculator.activity.MainActivity',
-      rules: '@Image < View < View TextView[text = "反馈"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12859523',
-        'https://i.gkd.li/import/12859545',
+      rules: [
+        {
+          activityIds: 'com.jincheng.supercaculator.activity.MainActivity',
+          matches: '@Image < View < View TextView[text = "反馈"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12859523',
+            'https://i.gkd.li/import/12859545',
+          ],
+        },
+        {
+          activityIds: 'com.jincheng.supercaculator.activity.SplashActivity',
+          matches:
+            'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: ['https://gkd-kit.gitee.io/import/13261870'],
+        },
       ],
     },
   ],
