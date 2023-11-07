@@ -118,10 +118,11 @@ export default defineAppConfig({
           name: '点击关闭原因【屏蔽】',
           quickFind: true,
           matches:
-            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_shield"]',
+            '@[name="android.widget.RelativeLayout" || name="android.widget.LinearLayout"] > [text="屏蔽"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12506258',
             'https://gkd-kit.gitee.io/import/13260487',
+            'https://gkd-kit.gitee.io/import/13275928', //没有id
           ],
         },
       ],
