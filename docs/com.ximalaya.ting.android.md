@@ -38,6 +38,7 @@
 - [快照-1](https://gkd-kit.gitee.io/import/12701374)
 - [快照-2](https://gkd-kit.gitee.io/import/12506258)
 - [快照-3](https://gkd-kit.gitee.io/import/13260487)
+- [快照-4](https://gkd-kit.gitee.io/import/13275928)
 
 ## 关闭热播推荐广告
 

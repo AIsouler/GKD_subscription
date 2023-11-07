@@ -17,6 +17,7 @@
 ## 浮窗广告
 
 - [快照-0](https://gkd-kit.gitee.io/import/13262675)
+- [快照-1](https://gkd-kit.gitee.io/import/13274622)
 
 ## 请求通知权限弹窗
 
