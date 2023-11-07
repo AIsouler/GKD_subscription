@@ -39,5 +39,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '浮窗广告',
+      desc: '二步确认',
+      quickFind: true,
+      activityIds: 'com.gkid.crazyrope.ui.drillcommon.DrillActivity',
+      rules: [
+        '[id="com.gkid.crazyrope:id/iv_close"]',
+        '[id="com.gkid.crazyrope:id/tv_close"][text="关闭广告"]',
+      ],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13262845',
+        'https://gkd-kit.gitee.io/import/13262844',
+      ],
+    },
   ],
 });
