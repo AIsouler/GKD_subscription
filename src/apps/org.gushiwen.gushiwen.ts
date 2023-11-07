@@ -26,8 +26,9 @@ export default defineAppConfig({
         {
           delay: 500,
           key: 1,
-          activityIds:
+          activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          ],
           matches: '@Image < View[width<100] <n View > [text="反馈"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12837225',
@@ -39,7 +40,15 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 1],
+          delay: 500,
+          key: 2,
+          activityIds: 'org.gushiwen.gushiwen.HomeActivity',
+          matches:
+            '@FrameLayout  +2 FrameLayout > LinearLayout > LinearLayout > [text^="摇动"]',
+          snapshotUrls: ['https://i.gkd.li/import/13266879'],
+        },
+        {
+          preKeys: [0, 1, 2],
           key: 10,
           name: '打赏页面-点击返回按钮',
           activityIds: [
@@ -53,7 +62,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 1],
+          preKeys: [0, 1, 2],
           key: 11,
           name: '荣誉会员-点击返回按钮',
           activityIds: [
