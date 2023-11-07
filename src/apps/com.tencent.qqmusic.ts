@@ -29,16 +29,6 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
         {
-          key: 0,
-          matches:
-            '@LinearLayout[clickable=true] > TextView[text="广告"] + ImageView', // 1688045698846
-        },
-        {
-          key: 1,
-          matches: 'TextView[text="广告 | 关闭"][clickable=true]',
-          snapshotUrls: [], // 需要补充快照
-        },
-        {
           key: 2,
           matches: '[text="广告"] + * + [desc="关闭"]',
           snapshotUrls: 'https://i.gkd.li/import/13206534',
