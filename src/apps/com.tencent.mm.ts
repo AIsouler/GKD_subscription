@@ -124,7 +124,7 @@ export default defineAppConfig({
       activityIds: ['com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI'],
       rules: [
         {
-          matches: 'Button[text="登 录"]',
+          matches: '[text="微信读书网页版"] +3 Button[text="登 录"]',
           snapshotUrls: 'https://i.gkd.li/import/12506197',
         },
         {
@@ -289,13 +289,16 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          matches:
-            '[text="广告"] < FrameLayout[childCount=1] <2 FrameLayout[childCount=3] <2 FrameLayout[childCount=2] - FrameLayout[childCount=3] > FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
+          matches: [
+            'FrameLayout[childCount=2] > FrameLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text="广告"]',
+            'FrameLayout[childCount<=3] > FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
+          ],
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12701979',
             'https://gkd-kit.gitee.io/import/12777076',
             'https://gkd-kit.gitee.io/import/12785012',
             'https://gkd-kit.gitee.io/import/12785183',
+            'https://i.gkd.li/import/13306883',
           ],
         },
         {
