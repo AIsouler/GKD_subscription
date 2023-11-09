@@ -18,10 +18,14 @@ export default defineAppConfig({
       key: 1,
       name: '更新弹窗',
       quickFind: true,
+      matchLauncher: true,
       activityIds: 'com.xmcy.hykb.app.dialog.UpdateDialog',
       rules:
         '@[id="com.xmcy.hykb:id/iv_inner_button_close"] - RelativeLayout >n [id="com.xmcy.hykb:id/text_update_tip"]',
-      snapshotUrls: 'https://i.gkd.li/import/12870604',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12870604',
+        'https://i.gkd.li/import/13297450',
+      ],
     },
     {
       key: 2,
