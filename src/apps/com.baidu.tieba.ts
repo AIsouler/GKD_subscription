@@ -165,10 +165,24 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '首页-悬浮小广告',
-      activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
-      rules: 'TextView[text="广告"] + ImageView[clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13115167',
+      name: '悬浮小广告',
+      rules: [
+        {
+          key: 0,
+          name: '首页右侧悬浮广告',
+          activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
+          matches: 'TextView[text="广告"] + ImageView[clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13115167',
+        },
+        {
+          key: 1,
+          name: '评论区左侧悬浮广告',
+          quickFind: true,
+          activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
+          matches: 'LinearLayout[childCount=2] > @ImageView + [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13296280',
+        },
+      ],
     },
   ],
 });
