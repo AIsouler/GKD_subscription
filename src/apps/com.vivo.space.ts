@@ -20,8 +20,11 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.vivo.space.ui.VivoSpaceTabActivity',
-      rules: 'Image[text=""] + TextView[text=""]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13218155',
+      rules: 'Image[text=""] + [text=""][clickable=true]',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13218155',
+        'https://gkd-kit.gitee.io/import/13292907',
+      ],
     },
   ],
 });
