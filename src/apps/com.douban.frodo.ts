@@ -182,22 +182,41 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '弹窗',
-      desc: '浏览详情时弹窗广告',
+      name: '弹窗广告',
+      desc: '浏览详情时弹窗广告,点击右上角x',
+      matchLauncher: true,
+      quickFind: true,
       rules: {
         activityIds: [
           'com.douban.frodo.subject.structure.activity.MovieActivity',
         ],
         matches: [
-          '[text="查看详情"]',
-          'FrameLayout[childCount=5] > FrameLayout > ImageView',
+          '[text*="看"][text="查看详情"||text^="去"&&text$="看看"]',
+          'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
         ],
-        snapshotUrls: 'https://i.gkd.li/import/13195565',
+        snapshotUrls: [
+          'https://i.gkd.li/import/13195565',
+          'https://gkd-kit.gitee.io/import/13296656', //新增ids对应快照
+        ],
       },
     },
     {
       key: 11,
       name: '更新弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.douban.frodo.activity.BetaApkDialogActivity',
+          matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
+          snapshotUrls: 'https://i.gkd.li/import/13228832',
+        },
+      ],
+    },
+    {
+      key: 12,
+      name: '新版试用弹窗',
       quickFind: true,
       actionMaximum: 1,
       rules: [
