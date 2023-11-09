@@ -57,22 +57,23 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
-      name: '请求开启推送弹窗',
+      name: '请求通知权限提示弹窗',
       desc: '自动点击关闭按钮',
       quickFind: true,
-      activityIds: [
-        'com.xiaomi.market.ui.UpdateListActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      matchLauncher: true,
+      activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: [
         {
+          key: 0,
+          name: '开启推送',
           matches:
             '@[id="com.xiaomi.market:id/dialog_cancel"] - LinearLayout > [id="com.xiaomi.market:id/btn_start_push"]',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/12714980',
         },
         {
+          key: 1,
+          name: '开启通知栏提醒',
           matches: 'Button[text="立即开启"] - Button[text="不了，谢谢"]',
           snapshotUrls: 'https://i.gkd.li/import/13197306',
         },
