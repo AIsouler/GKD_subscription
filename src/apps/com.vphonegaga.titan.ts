@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13292910',
+      snapshotUrls: 'https://i.gkd.li/import/13296354',
     },
     {
       key: 1,
