@@ -9,9 +9,15 @@ export default defineAppConfig({
       name: '关闭开启通知弹窗',
       quickFind: true,
       actionMaximum: 1,
-      activityIds: 'com.hd.smartVillage.modules.main.MainActivity',
+      activityIds: [
+        'com.hd.smartVillage.modules.main.MainActivity',
+        'com.hd.smartVillage.modules.h5service.H5WebActivity',
+      ],
       rules: 'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13223669',
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/13223669', //com.hd.smartVillage.modules.main.MainActivity
+        'https://gkd-kit.gitee.io/import/13293000', //com.hd.smartVillage.modules.h5service.H5WebActivity
+      ],
     },
     {
       enable: false,
