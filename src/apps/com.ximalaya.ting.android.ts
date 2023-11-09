@@ -63,9 +63,15 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.ximalaya.ting.android.main.dialog',
+          activityIds: [
+            'com.ximalaya.ting.android.main.dialog',
+            'com.ximalaya.ting.android.host.activity.MainActivity',
+          ],
           matches: '@[clickable=true] > [text="屏蔽"] + [text="关闭当前广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12506269',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12506269',
+            'https://gkd-kit.gitee.io/import/13296565', //com.ximalaya.ting.android.host.activity.MainActivity
+          ],
         },
         {
           activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
@@ -181,8 +187,12 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: '[id="com.ximalaya.ting.android:id/main_close_layout"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13194838',
+          matches:
+            '[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/13194838',
+            'https://gkd-kit.gitee.io/import/13296565', // [visibleToUser=true]
+          ],
         },
         {
           preKeys: 0,
