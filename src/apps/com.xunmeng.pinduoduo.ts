@@ -31,34 +31,54 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '首页优惠弹窗',
-      activityIds: [
-        'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+      matchLauncher: true,
       rules: [
-        'FrameLayout > FrameLayout > RelativeLayout > @ImageView[id="com.xunmeng.pinduoduo:id/pdd"][text=null][clickable=true] + ImageView[id="com.xunmeng.pinduoduo:id/pdd"][text=null][clickable=true]',
-        'View[id=null] > TextView + View > View +(4) View[clickable=true] > Image[id=null]',
-      ],
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12642015',
-        'https://gkd-kit.gitee.io/import/12642019',
+        {
+          key: 0,
+          name: '首页优惠弹窗1',
+          matches:
+            'FrameLayout > FrameLayout > RelativeLayout > @ImageView[id="com.xunmeng.pinduoduo:id/pdd"][text=null][clickable=true] + ImageView[id="com.xunmeng.pinduoduo:id/pdd"][text=null][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642015',
+        },
+        {
+          key: 1,
+          name: '首页优惠弹窗2',
+          matches:
+            'View[id=null] > TextView + View > View +(4) View[clickable=true] > Image[id=null]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642019',
+        },
       ],
     },
     {
-      enable: false,
       key: 3,
-      name: '免单活动弹窗',
-      activityIds: ['com.xunmeng.pinduoduo.activity.NewPageActivity'],
+      name: '活动弹窗',
       rules: [
-        'TextView[text="免单特权"] < View < View +(5) View[clickable=true] > Image[id=null]',
-        'TextView[text$="抽免单"] -(2) Image[id=null][clickable=true]',
-      ],
-      snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12642032',
-        'https://gkd-kit.gitee.io/import/12642038',
+        {
+          key: 0,
+          name: '抽免单活动1',
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            'TextView[text="免单特权"] < View < View +(5) View[clickable=true] > Image[id=null]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642032',
+        },
+        {
+          key: 1,
+          name: '抽免单活动2',
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            'TextView[text$="抽免单"] -(2) Image[id=null][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642038',
+        },
+        {
+          key: 2,
+          name: '下单后追加订单',
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches: '@[text="关闭弹窗"][clickable=true] + [text$="下单成功"]',
+          snapshotUrls: 'https://i.gkd.li/import/13308175',
+        },
       ],
     },
     {
