@@ -99,11 +99,12 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
-            'Image[text=""] < @View + View +n View > View > TextView[text="广告"]',
+            'Image[text=""] < @View + View +n View > View > TextView[text$="广告"][text.length<=10]',
           delay: 1000,
           snapshotUrls: [
             'https://i.gkd.li/import/12868667',
             'https://i.gkd.li/import/12881946',
+            'https://i.gkd.li/import/13295179',
           ],
         },
 
