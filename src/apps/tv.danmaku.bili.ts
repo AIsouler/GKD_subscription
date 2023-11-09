@@ -126,12 +126,18 @@ export default defineAppConfig({
       quickFind: true,
       key: 7,
       matchTime: 10000,
-      name: '视频内免流卡',
+      name: '视频悬浮广告',
+      desc: '领取大会员月卡,B站免流星卡',
       activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
-      rules: [
-        'TextView[text="B站免流星卡"] < LinearLayout - [id="tv.danmaku.bili:id/toast_x"]',
+      actionMaximum: 1,
+      rules: ['[id="tv.danmaku.bili:id/toast_x"]'],
+      snapshotUrls: [
+        'https://gkd-kit.gitee.io/import/12892611',
+        'https://i.gkd.li/import/13308344',
       ],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12892611',
+      exampleUrls: [
+        'https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb',
+      ],
     },
     {
       key: 8,
