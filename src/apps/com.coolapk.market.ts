@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.coolapk.market',
   name: '酷安',
+  deprecatedKeys: [2],
   groups: [
     {
       key: -1,
@@ -30,11 +31,13 @@ export default defineAppConfig({
           quickFind: true,
           key: 1,
           matches: '[text^="跳过"][text.length<=4]',
+          excludeMatches: '[id="com.coolapk.market:id/item_view"]',
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12917990',
             'https://gkd-kit.gitee.io/import/13211392',
             'https://i.gkd.li/import/13247733', // 误触
             'https://i.gkd.li/import/13247782', // 可能误触
+            'https://i.gkd.li/import/13296816', // snapshot of excludeMatches
           ],
         },
       ],
@@ -78,6 +81,7 @@ export default defineAppConfig({
           ],
         },
         {
+          preKeys: [1],
           key: 3,
           name: '选择关闭原因-点击不感兴趣',
           matches: [
@@ -108,6 +112,5 @@ export default defineAppConfig({
       rules: '[text="以后再说"] + [text="去开启"]',
       snapshotUrls: 'https://gkd-kit.gitee.io/import/13296465',
     },
-    // key=2 曾经被使用,不可再用
   ],
 });
