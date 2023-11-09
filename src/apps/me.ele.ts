@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'me.ele',
   name: '饿了么',
+  deprecatedKeys: [3],
   groups: [
     {
       key: 0,
@@ -31,19 +32,30 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '开屏红包弹窗',
-      activityIds: 'me.ele.component.pops2.Pops2MistDialog',
-      rules:
-        '@ImageView[id=null][clickable=true] - ViewGroup >(5) ViewGroup[childCount=5]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12650238',
-    },
-    {
-      enable: false,
-      key: 3,
-      name: '超市便利页面-红包弹窗',
-      activityIds: 'me.ele.newretail.pack.ui.activity.PackActivity',
-      rules: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12650713',
+      name: '红包弹窗',
+      rules: [
+        {
+          key: 0,
+          name: '红包弹窗1',
+          activityIds: [
+            'me.ele.component.pops2.Pops2MistDialog',
+            'me.ele.component.webcontainer.view.AppUCWebActivity',
+          ],
+          matches:
+            '@ImageView[id=null][clickable=true] - ViewGroup >(5) ViewGroup[childCount=5]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12650238',
+            'https://i.gkd.li/import/13294893',
+          ],
+        },
+        {
+          key: 1,
+          name: '红包弹窗2',
+          activityIds: 'me.ele.newretail.pack.ui.activity.PackActivity',
+          matches: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/12650713',
+        },
+      ],
     },
     {
       key: 4,
@@ -60,6 +72,14 @@ export default defineAppConfig({
       activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
       rules: 'bb Button[text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/import/13205301',
+    },
+    {
+      key: 6,
+      name: '吃货卡续费弹窗',
+      quickFind: true,
+      activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
+      rules: '@View + View >2 [text="买校园版超级吃货卡"]',
+      snapshotUrls: 'https://i.gkd.li/import/13295007',
     },
   ],
 });
