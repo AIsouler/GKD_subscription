@@ -178,11 +178,15 @@ export default defineAppConfig({
       key: 10,
       name: '自动勾选原图',
       desc: '发送图片时自动勾选原图',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
+      ],
       rules: '@CheckBox[checked=false] + [text="原图"]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12705556', // 未勾选原图
         'https://gkd-kit.gitee.io/import/12705559', // 已勾选原图
+        'https://i.gkd.li/import/13295142', // com.tencent.qqnt.qbasealbum.WinkHomeActivity
       ],
     },
     {
