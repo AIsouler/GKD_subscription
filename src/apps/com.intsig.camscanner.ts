@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
       rules: '[id="com.intsig.camscanner:id/tv_skip_ad"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12668795',
+      snapshotUrls: 'https://i.gkd.li/import/import/12668795',
     },
     {
       key: 0,
@@ -25,7 +25,7 @@ export default defineAppConfig({
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
       rules:
         '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12668813',
+      snapshotUrls: 'https://i.gkd.li/import/import/12668813',
     },
   ],
 });

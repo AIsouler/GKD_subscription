@@ -4,8 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13212257)
+- [快照-0](https://i.gkd.li/import/import/13212257)
 
 ## 弹窗广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13212320)
+- [快照-0](https://i.gkd.li/import/import/13212320)

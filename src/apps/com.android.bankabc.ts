@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: ['ImageView[id="com.android.bankabc:id/close"]'],
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12472629',
+        'https://i.gkd.li/import/import/12472629',
         'https://i.gkd.li/import/13196201',
       ],
     },
@@ -24,7 +24,7 @@ export default defineAppConfig({
       rules: [
         '[id="com.android.bankabc:id/upgrade_bottom"] > [id="com.android.bankabc:id/negativeTextView"][text="残忍拒绝"]',
       ],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12685502',
+      snapshotUrls: 'https://i.gkd.li/import/import/12685502',
     },
     {
       key: 10,
@@ -33,7 +33,7 @@ export default defineAppConfig({
       rules: [
         '[id="com.android.bankabc:id/iv_switch"] + [id="com.android.bankabc:id/iv_skip"]',
       ],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12685764',
+      snapshotUrls: 'https://i.gkd.li/import/import/12685764',
     },
   ],
 });

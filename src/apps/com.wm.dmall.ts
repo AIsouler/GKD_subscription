@@ -33,7 +33,7 @@ export default defineAppConfig({
       ],
       snapshotUrls: [
         'https://i.gkd.li/import/13197634',
-        'https://gkd-kit.gitee.io/import/13246242', //id误触
+        'https://i.gkd.li/import/import/13246242', //id误触
       ],
     },
     {
@@ -46,7 +46,7 @@ export default defineAppConfig({
           '[id="com.wm.dmall:id/update_confirm_btn"]',
           '[id="com.wm.dmall:id/close_btn"]',
         ],
-        snapshotUrls: ['https://gkd-kit.gitee.io/import/13234668'],
+        snapshotUrls: ['https://i.gkd.li/import/import/13234668'],
       },
     },
   ],

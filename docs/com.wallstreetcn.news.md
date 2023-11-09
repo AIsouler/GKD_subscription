@@ -4,10 +4,10 @@
 
 ## 启动-开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12850458)
+- [快照-0](https://i.gkd.li/import/import/12850458)
 
 ## 卡片广告
 
 点击关闭, 无后续确认操作
 
-- [快照-0](https://gkd-kit.gitee.io/import/13262717)
+- [快照-0](https://i.gkd.li/import/import/13262717)

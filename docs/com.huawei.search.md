@@ -4,7 +4,7 @@
 
 ## 下拉搜索横幅广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12667938)
-- [快照-1](https://gkd-kit.gitee.io/import/12745008)
-- [快照-2](https://gkd-kit.gitee.io/import/12841076)
-- [快照-3](https://gkd-kit.gitee.io/import/12745001)
+- [快照-0](https://i.gkd.li/import/import/12667938)
+- [快照-1](https://i.gkd.li/import/import/12745008)
+- [快照-2](https://i.gkd.li/import/import/12841076)
+- [快照-3](https://i.gkd.li/import/import/12745001)

@@ -9,4 +9,4 @@
 ## 青少年模式弹窗
 
 - [快照-0](https://inspect.gkd.li/import/13063676)
-- [快照-1](https://gkd-kit.gitee.io/import/13262801)
+- [快照-1](https://i.gkd.li/import/import/13262801)

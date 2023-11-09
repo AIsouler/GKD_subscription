@@ -18,7 +18,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.ky.medical.reference:id/icClose"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12840924',
+          snapshotUrls: 'https://i.gkd.li/import/import/12840924',
         },
       ],
     },

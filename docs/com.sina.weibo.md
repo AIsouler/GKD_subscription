@@ -11,7 +11,7 @@
 
 ## 关闭不感兴趣广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12672985)
+- [快照-0](https://i.gkd.li/import/import/12672985)
 
 ## 兴趣领域推荐
 
@@ -30,37 +30,37 @@
 
 点击右上角x
 
-- [快照-0](https://gkd-kit.gitee.io/import/12673043)
-- [快照-1](https://gkd-kit.gitee.io/import/12673051)
+- [快照-0](https://i.gkd.li/import/import/12673043)
+- [快照-1](https://i.gkd.li/import/import/12673051)
 
 ## 评论区博主内容推荐
 
 评论区同一博主其他博文推荐
 
-- [快照-0](https://gkd-kit.gitee.io/import/12674498)
+- [快照-0](https://i.gkd.li/import/import/12674498)
 - [快照-1](https://i.gkd.li/import/13035647)
-- [快照-2](https://gkd-kit.gitee.io/import/12674511)
-- [快照-3](https://gkd-kit.gitee.io/import/12929591)
+- [快照-2](https://i.gkd.li/import/import/12674511)
+- [快照-3](https://i.gkd.li/import/import/12929591)
 
 ## 首页顶部话题分享窗口
 
-- [快照-0](https://gkd-kit.gitee.io/import/12705972)
+- [快照-0](https://i.gkd.li/import/import/12705972)
 
 ## 发现页广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12705974)
+- [快照-0](https://i.gkd.li/import/import/12705974)
 
 ## 请求开启通知弹窗
 
 默认禁用 - 自动点击暂不开启
 
-- [快照-0](https://gkd-kit.gitee.io/import/12705979)
+- [快照-0](https://i.gkd.li/import/import/12705979)
 
 ## 请求开启通知提示信息
 
 默认禁用 - 自动点击x按钮
 
-- [快照-0](https://gkd-kit.gitee.io/import/12705986)
+- [快照-0](https://i.gkd.li/import/import/12705986)
 
 ## 首页顶部签到卡片
 

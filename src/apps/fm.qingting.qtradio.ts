@@ -12,8 +12,8 @@ export default defineAppConfig({
         '[id="fm.qingting.qtradio:id/third_skip_layout"||id="fm.qingting.qtradio:id/skip_ad"]',
       ],
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12640433',
-        'https://gkd-kit.gitee.io/import/12640971',
+        'https://i.gkd.li/import/import/12640433',
+        'https://i.gkd.li/import/import/12640971',
       ],
     },
     {
@@ -25,8 +25,8 @@ export default defineAppConfig({
         '@[id="fm.qingting.qtradio:id/iv_close"] + RelativeLayout > LinearLayout > TextView[text="广告"]',
       ],
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12640438',
-        'https://gkd-kit.gitee.io/import/12640981',
+        'https://i.gkd.li/import/import/12640438',
+        'https://i.gkd.li/import/import/12640981',
       ],
     },
   ],

@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.jr.app.MiFinanceActivity',
       matchLauncher: true,
       rules: '[id="com.mipay.wallet:id/skip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13059351',
+      snapshotUrls: 'https://i.gkd.li/import/import/13059351',
     },
   ],
 });

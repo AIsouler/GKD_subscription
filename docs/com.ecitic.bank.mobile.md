@@ -4,13 +4,13 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12701203)
+- [快照-0](https://i.gkd.li/import/import/12701203)
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12701217)
-- [快照-1](https://gkd-kit.gitee.io/import/12701250)
+- [快照-0](https://i.gkd.li/import/import/12701217)
+- [快照-1](https://i.gkd.li/import/import/12701250)
 
 ## 广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12701230)
+- [快照-0](https://i.gkd.li/import/import/12701230)

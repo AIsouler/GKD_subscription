@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'cn.hsa.app.login.ui.OpeningPageActivity',
       rules: '[id="cn.hsa.app:id/tvCountDown"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12839891',
+      snapshotUrls: 'https://i.gkd.li/import/import/12839891',
     },
   ],
 });

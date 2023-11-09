@@ -12,7 +12,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/import/13062330',
         'https://i.gkd.li/import/13068583',
-        'https://gkd-kit.gitee.io/import/13231850',
+        'https://i.gkd.li/import/import/13231850',
       ],
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/798afc53-4aaf-481f-acb1-7c193bd8e6d6',
@@ -25,7 +25,7 @@ export default defineAppConfig({
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '[id="com.zhouyu.music:id/ksad_ad_dislike"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/13245859', //launcher
+        'https://i.gkd.li/import/import/13245859', //launcher
       ],
     },
   ],

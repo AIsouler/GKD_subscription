@@ -6,4 +6,4 @@
 
 点击跳过按钮
 
-- [快照-0](https://gkd-kit.gitee.io/import/12908332)
+- [快照-0](https://i.gkd.li/import/import/12908332)

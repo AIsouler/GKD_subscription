@@ -25,7 +25,7 @@ export default defineAppConfig({
       rules: '[id="com.bilibili.comic:id/tv_know"]',
       snapshotUrls: [
         'https://inspect.gkd.li/import/13063676',
-        'https://gkd-kit.gitee.io/import/13262801',
+        'https://i.gkd.li/import/import/13262801',
       ],
     },
   ],

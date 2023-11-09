@@ -10,7 +10,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.onethingcloud.android.MainActivity',
       rules: 'View[desc^="跳过"][desc.length=6]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12841174',
+      snapshotUrls: 'https://i.gkd.li/import/import/12841174',
     },
     {
       key: 1,
@@ -18,7 +18,7 @@ export default defineAppConfig({
       activityIds: 'com.onethingcloud.android.MainActivity',
       rules:
         'FrameLayout >8 View > ImageView + ImageView + ImageView[clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12841171',
+      snapshotUrls: 'https://i.gkd.li/import/import/12841171',
     },
   ],
 });

@@ -25,8 +25,8 @@ export default defineAppConfig({
       rules:
         '[text*="更新应用版本"] < ScrollView + [text="取消"][focusable=true]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12650280',
-        'https://gkd-kit.gitee.io/import/13206819',
+        'https://i.gkd.li/import/import/12650280',
+        'https://i.gkd.li/import/import/13206819',
       ],
     },
     {
@@ -44,7 +44,7 @@ export default defineAppConfig({
           matches:
             '@ImageView[id=null][clickable=true] - ViewGroup >(5) ViewGroup[childCount=5]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12650238',
+            'https://i.gkd.li/import/import/12650238',
             'https://i.gkd.li/import/13294893',
           ],
         },
@@ -53,7 +53,7 @@ export default defineAppConfig({
           name: '红包弹窗2',
           activityIds: 'me.ele.newretail.pack.ui.activity.PackActivity',
           matches: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12650713',
+          snapshotUrls: 'https://i.gkd.li/import/import/12650713',
         },
       ],
     },

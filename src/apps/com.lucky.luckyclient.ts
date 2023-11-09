@@ -29,7 +29,7 @@ export default defineAppConfig({
       activityIds: 'com.lucky.luckyclient.preview2.OrderPreviewActivity2',
       quickFind: true,
       rules: '[id="com.lucky.luckyclient:id/close_iv"][visibleToUser=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12922834',
+      snapshotUrls: 'https://i.gkd.li/import/import/12922834',
     },
     {
       key: 3,

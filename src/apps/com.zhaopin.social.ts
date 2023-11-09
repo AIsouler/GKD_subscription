@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.zhaopin.social.SplashActivity',
       rules:
         '[id="com.zhaopin.social:id/tv_ad"] + [id="com.zhaopin.social:id/cdp_view"][text^="跳过"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706183'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706183'],
     },
     {
       key: 1,
@@ -18,14 +18,14 @@ export default defineAppConfig({
       activityIds: 'com.zhaopin.social.my.setting.AboutUsActivity',
       rules:
         '[id="com.zhaopin.social:id/update"] + [id="com.zhaopin.social:id/ignore"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706186'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706186'],
     },
     {
       key: 2,
       name: '我的页面-banner广告',
       activityIds: 'com.zhaopin.social.homepage.ZSC_MainTabActivity',
       rules: '[id="com.zhaopin.social:id/rl_banner_close"][clickable=true]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706181'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706181'],
     },
     {
       key: 3,
@@ -43,7 +43,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: ['com.zhaopin.social.homepage.ZSC_MainTabActivity'],
       rules: '[id="com.zhaopin.social:id/message_pushlayout_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13063427',
+      snapshotUrls: 'https://i.gkd.li/import/import/13063427',
     },
   ],
 });

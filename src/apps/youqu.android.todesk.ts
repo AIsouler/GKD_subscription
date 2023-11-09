@@ -17,8 +17,8 @@ export default defineAppConfig({
         '[id="youqu.android.todesk:id/sivDeviceBanner"] + [id="youqu.android.todesk:id/llClose"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13228546',
-        'https://gkd-kit.gitee.io/import/13256552', //新增快照
-        'https://gkd-kit.gitee.io/import/13296380', //新增快照
+        'https://i.gkd.li/import/import/13256552', //新增快照
+        'https://i.gkd.li/import/import/13296380', //新增快照
       ],
     },
   ],

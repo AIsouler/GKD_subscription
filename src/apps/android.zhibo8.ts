@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: 'TextView[text^="跳过"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12700387',
-            'https://gkd-kit.gitee.io/import/12661109',
+            'https://i.gkd.li/import/import/12700387',
+            'https://i.gkd.li/import/import/12661109',
           ],
         },
       ],
@@ -32,14 +32,14 @@ export default defineAppConfig({
           name: '点击[查看详情]右侧x',
           matches:
             '@[id="android.zhibo8:id/iv_tip"] - [id="android.zhibo8:id/tv_app_download_2"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12841134',
+          snapshotUrls: 'https://i.gkd.li/import/import/12841134',
         },
         {
           key: 1, //不重叠不需要preKeys
           name: '点击[不感兴趣]',
           matches:
             '@LinearLayout > [id="android.zhibo8:id/tv_title"][text="不感兴趣"]', // issues/1656, 直接指向text可能不工作
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12841135',
+          snapshotUrls: 'https://i.gkd.li/import/import/12841135',
         },
       ],
     },

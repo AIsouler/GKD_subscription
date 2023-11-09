@@ -6,28 +6,28 @@
 
 ## 关闭更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12534264)
+- [快照-0](https://i.gkd.li/import/import/12534264)
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12662361)
+- [快照-0](https://i.gkd.li/import/import/12662361)
 
 ## 请求推送通知弹窗
 
 请求推送通知弹窗，点击取消
 
-- [快照-0](https://gkd-kit.gitee.io/import/12662213)
+- [快照-0](https://i.gkd.li/import/import/12662213)
 
 ## 请求获取剪贴板权限弹窗
 
 请求获取剪贴板权限弹窗，点击不允许
 
-- [快照-0](https://gkd-kit.gitee.io/import/12662251)
+- [快照-0](https://i.gkd.li/import/import/12662251)
 
 ## 右侧悬浮小图标
 
-- [快照-0](https://gkd-kit.gitee.io/import/12662265)
+- [快照-0](https://i.gkd.li/import/import/12662265)
 
 ## 请求好评弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12662345)
+- [快照-0](https://i.gkd.li/import/import/12662345)

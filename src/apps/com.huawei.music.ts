@@ -12,11 +12,11 @@ export default defineAppConfig({
         {
           matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
           action: 'clickCenter',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12745222'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12745222'],
         },
       ],
     },
-    // 若开启播放器时恰好首页在展示首页横幅广告，则在播放器下拉的推荐页面中会误触此规则导致点击广告（https://gkd-kit.gitee.io/import/13068854）
+    // 若开启播放器时恰好首页在展示首页横幅广告，则在播放器下拉的推荐页面中会误触此规则导致点击广告（https://i.gkd.li/import/import/13068854）
     // {
     //   key: 1,
     //   name: '首页横幅广告',
@@ -29,8 +29,8 @@ export default defineAppConfig({
     //     {
     //       matches: 'TextView[id="com.huawei.music:id/ad_banner_tag"&&visibleToUser=true]',
     //       snapshotUrls: [
-    //         'https://gkd-kit.gitee.io/import/13068287',
-    //         'https://gkd-kit.gitee.io/import/13067243',
+    //         'https://i.gkd.li/import/import/13068287',
+    //         'https://i.gkd.li/import/import/13067243',
     //       ],
     //     },
     //   ],
@@ -45,12 +45,12 @@ export default defineAppConfig({
           matches:
             'TextView[id="com.huawei.music:id/label_title"][text="直接关闭"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13067574',
-            'https://gkd-kit.gitee.io/import/13067572',
-            'https://gkd-kit.gitee.io/import/13067571',
-            'https://gkd-kit.gitee.io/import/13067659',
-            'https://gkd-kit.gitee.io/import/13067665',
-            'https://gkd-kit.gitee.io/import/13067820',
+            'https://i.gkd.li/import/import/13067574',
+            'https://i.gkd.li/import/import/13067572',
+            'https://i.gkd.li/import/import/13067571',
+            'https://i.gkd.li/import/import/13067659',
+            'https://i.gkd.li/import/import/13067665',
+            'https://i.gkd.li/import/import/13067820',
           ],
         },
       ],
@@ -64,7 +64,7 @@ export default defineAppConfig({
         {
           matches:
             'TextView[id="com.huawei.music:id/live_info"] < LinearLayout -2 [id="com.huawei.music:id/close_button"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/13067649'],
+          snapshotUrls: ['https://i.gkd.li/import/import/13067649'],
         },
       ],
     },
@@ -78,9 +78,9 @@ export default defineAppConfig({
           matches:
             'TextView[id="com.huawei.music:id/ad_icon"&&visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13067956',
-            'https://gkd-kit.gitee.io/import/13067978',
-            'https://gkd-kit.gitee.io/import/13067387',
+            'https://i.gkd.li/import/import/13067956',
+            'https://i.gkd.li/import/import/13067978',
+            'https://i.gkd.li/import/import/13067387',
           ],
         },
       ],
@@ -95,7 +95,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.huawei.music:id/ad_icon"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/13067937'],
+          snapshotUrls: ['https://i.gkd.li/import/import/13067937'],
         },
       ],
     },
@@ -108,8 +108,8 @@ export default defineAppConfig({
         {
           matches: 'TextView[text="不感兴趣"][id$="title"][visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13067986',
-            'https://gkd-kit.gitee.io/import/13067981',
+            'https://i.gkd.li/import/import/13067986',
+            'https://i.gkd.li/import/import/13067981',
           ],
         },
       ],
@@ -124,9 +124,9 @@ export default defineAppConfig({
           matches:
             'ViewGroup > TextView[text="广告"][id$="ad_icon"][visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13068935',
-            'https://gkd-kit.gitee.io/import/13194163', // 避免在此规则误触
-            'https://gkd-kit.gitee.io/import/13263590', // visibleToUser
+            'https://i.gkd.li/import/import/13068935',
+            'https://i.gkd.li/import/import/13194163', // 避免在此规则误触
+            'https://i.gkd.li/import/import/13263590', // visibleToUser
           ],
         },
       ],

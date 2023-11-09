@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text^="跳过"][text.length<10]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13261949',
+          snapshotUrls: 'https://i.gkd.li/import/import/13261949',
         },
       ],
     },
@@ -26,12 +26,12 @@ export default defineAppConfig({
         {
           matches:
             'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13274336',
+          snapshotUrls: 'https://i.gkd.li/import/import/13274336',
         },
         {
           matches:
             'FrameLayout[childCount=6] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13302326',
+          snapshotUrls: 'https://i.gkd.li/import/import/13302326',
         },
       ],
     },

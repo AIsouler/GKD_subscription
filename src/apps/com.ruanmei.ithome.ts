@@ -9,14 +9,14 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.ruanmei.ithome.ui.MainActivity',
       rules: '[id="com.ruanmei.ithome:id/fl_skip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12720744',
+      snapshotUrls: 'https://i.gkd.li/import/import/12720744',
     },
     {
       key: 1,
       name: '资讯页-信息流广告',
       activityIds: 'com.ruanmei.ithome.ui.MainActivity',
       rules: '[id="hongbaotips"] +n @View > [text="关闭"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13167193',
+      snapshotUrls: 'https://i.gkd.li/import/import/13167193',
     },
   ],
 });

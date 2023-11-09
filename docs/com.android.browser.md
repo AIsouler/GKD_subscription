@@ -4,7 +4,7 @@
 
 ## 关闭[个性推荐开启提示]
 
-- [快照-0](https://gkd-kit.gitee.io/import/12829403)
+- [快照-0](https://i.gkd.li/import/import/12829403)
 
 ## 主页信息流广告
 

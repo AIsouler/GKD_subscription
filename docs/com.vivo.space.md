@@ -8,4 +8,4 @@
 
 ## 活动广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13218155)
+- [快照-0](https://i.gkd.li/import/import/13218155)

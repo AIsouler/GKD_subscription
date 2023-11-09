@@ -4,20 +4,20 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12888429)
-- [快照-1](https://gkd-kit.gitee.io/import/12888730)
-- [快照-2](https://gkd-kit.gitee.io/import/12888762)
+- [快照-0](https://i.gkd.li/import/import/12888429)
+- [快照-1](https://i.gkd.li/import/import/12888730)
+- [快照-2](https://i.gkd.li/import/import/12888762)
 
 ## 应用内通知
 
-- [快照-0](https://gkd-kit.gitee.io/import/12888361)
-- [快照-1](https://gkd-kit.gitee.io/import/12888389)
+- [快照-0](https://i.gkd.li/import/import/12888361)
+- [快照-1](https://i.gkd.li/import/import/12888389)
 
 ## 应用内弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12888388)
-- [快照-1](https://gkd-kit.gitee.io/import/12888419)
-- [快照-2](https://gkd-kit.gitee.io/import/12888578)
-- [快照-3](https://gkd-kit.gitee.io/import/12888647)
-- [快照-4](https://gkd-kit.gitee.io/import/12888945)
-- [快照-5](https://gkd-kit.gitee.io/import/13213661)
+- [快照-0](https://i.gkd.li/import/import/12888388)
+- [快照-1](https://i.gkd.li/import/import/12888419)
+- [快照-2](https://i.gkd.li/import/import/12888578)
+- [快照-3](https://i.gkd.li/import/import/12888647)
+- [快照-4](https://i.gkd.li/import/import/12888945)
+- [快照-5](https://i.gkd.li/import/import/13213661)

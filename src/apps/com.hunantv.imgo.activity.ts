@@ -11,11 +11,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.hunantv.imgo.activity:id/layout_boot_skip"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472612',
+          snapshotUrls: 'https://i.gkd.li/import/import/12472612',
         },
         {
           matches: '[id="com.hunantv.imgo.activity:id/ivAd"] >n [text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472612',
+          snapshotUrls: 'https://i.gkd.li/import/import/12472612',
         },
       ],
     },
@@ -39,13 +39,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@[id="com.hunantv.imgo.activity:id/layout_logo"] > [id="com.hunantv.imgo.activity:id/tv_ad_logo"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472616',
+          snapshotUrls: 'https://i.gkd.li/import/import/12472616',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '[id="com.hunantv.imgo.activity:id/close_ad"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12472615',
+          snapshotUrls: 'https://i.gkd.li/import/import/12472615',
         },
       ],
     },

@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.qihoo.srouter.n300:id/tv_countdown"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13216607',
+          snapshotUrls: 'https://i.gkd.li/import/import/13216607',
         },
       ],
     },

@@ -18,10 +18,10 @@ export default defineAppConfig({
           ],
           matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12981243',
-            'https://gkd-kit.gitee.io/import/13029855',
-            'https://gkd-kit.gitee.io/import/13043320',
-            'https://gkd-kit.gitee.io/import/13043344',
+            'https://i.gkd.li/import/import/12981243',
+            'https://i.gkd.li/import/import/13029855',
+            'https://i.gkd.li/import/import/13043320',
+            'https://i.gkd.li/import/import/13043344',
           ],
         },
       ],
@@ -44,14 +44,14 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
           matches:
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13029880',
+          snapshotUrls: 'https://i.gkd.li/import/import/13029880',
         },
         {
           key: 2,
           activityIds: 'com.aster.comic.app.view.MainActivity',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12872249',
+          snapshotUrls: 'https://i.gkd.li/import/import/12872249',
         },
         // 字节广告
         {
@@ -68,8 +68,8 @@ export default defineAppConfig({
           ],
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12984767',
-            'https://gkd-kit.gitee.io/import/12998908',
+            'https://i.gkd.li/import/import/12984767',
+            'https://i.gkd.li/import/import/12998908',
           ],
         },
         {
@@ -79,8 +79,8 @@ export default defineAppConfig({
           matches:
             '@Image[text=""] < View + View +n View > View > TextView[text="广告"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12996953',
-            'https://gkd-kit.gitee.io/import/13003644',
+            'https://i.gkd.li/import/import/12996953',
+            'https://i.gkd.li/import/import/13003644',
           ],
         },
       ],

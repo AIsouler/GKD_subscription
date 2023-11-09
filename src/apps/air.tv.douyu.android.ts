@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text^="跳过"][text.length<=10]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12893916',
+          snapshotUrls: 'https://i.gkd.li/import/import/12893916',
         },
       ],
     },
@@ -26,7 +26,7 @@ export default defineAppConfig({
         'com.douyu.module.young.view.YoungModeGuideDialog',
         'com.douyu.module.home.pages.main.MainActivity',
       ],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12472598',
+      snapshotUrls: 'https://i.gkd.li/import/import/12472598',
       rules: [
         '[text="开启青少年模式"] + [text=\'我知道了\']', // 1686970236642
       ],
@@ -50,14 +50,14 @@ export default defineAppConfig({
           matches:
             'ImageView < ViewGroup + @ViewGroup[childCount=1] > ImageView', //添加childCount=1避免【全屏播放-设置】误触
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12892825',
-            'https://gkd-kit.gitee.io/import/13037239',
+            'https://i.gkd.li/import/import/12892825',
+            'https://i.gkd.li/import/import/13037239',
           ],
         },
         {
           key: 1,
           matches: 'ViewPager + @View + ImageView + View',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12892825',
+          snapshotUrls: 'https://i.gkd.li/import/import/12892825',
         },
         {
           key: 2,

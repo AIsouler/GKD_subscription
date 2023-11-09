@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.qooapp.qoohelper.arch.welcome.WelcomeActivity',
       rules: '[id="com.qooapp.qoohelper:id/skipTv"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12843901',
+      snapshotUrls: 'https://i.gkd.li/import/import/12843901',
     },
   ],
 });

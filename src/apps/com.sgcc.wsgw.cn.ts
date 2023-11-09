@@ -13,7 +13,7 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[text^="跳过"][text.length<10]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/13247957',
+        'https://i.gkd.li/import/import/13247957',
         'https://i.gkd.li/import/13242169',
       ],
     },
@@ -33,7 +33,7 @@ export default defineAppConfig({
           matches: '@[focusable=true] + [text="今日不再出现"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12745042',
-            'https://gkd-kit.gitee.io/import/13247655',
+            'https://i.gkd.li/import/import/13247655',
           ],
         },
         {
@@ -43,8 +43,8 @@ export default defineAppConfig({
           matches:
             'ViewGroup[childCount=1] > @ViewGroup[childCount=1] > ImageView',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13247655',
-            'https://gkd-kit.gitee.io/import/13247655',
+            'https://i.gkd.li/import/import/13247655',
+            'https://i.gkd.li/import/import/13247655',
           ],
         },
         {

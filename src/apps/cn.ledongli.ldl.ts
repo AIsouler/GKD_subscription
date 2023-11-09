@@ -12,8 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: 'TextView[text^="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12668468', //text="跳过"
-        'https://gkd-kit.gitee.io/import/13259199', //text="跳过 "
+        'https://i.gkd.li/import/import/12668468', //text="跳过"
+        'https://i.gkd.li/import/import/13259199', //text="跳过 "
       ],
     },
   ],

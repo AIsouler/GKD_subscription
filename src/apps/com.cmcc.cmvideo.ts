@@ -20,7 +20,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.cmcc.cmvideo:id/btn_cancle"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12498307',
+      snapshotUrls: 'https://i.gkd.li/import/import/12498307',
     },
     {
       key: 2,
@@ -29,7 +29,7 @@ export default defineAppConfig({
       matchLauncher: true,
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
       rules: '[id="com.cmcc.cmvideo:id/iv_right_bottom_close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12498315',
+      snapshotUrls: 'https://i.gkd.li/import/import/12498315',
     },
     {
       key: 3,

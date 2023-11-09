@@ -4,13 +4,13 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12833280)
-- [快照-1](https://gkd-kit.gitee.io/import/12850094)
+- [快照-0](https://i.gkd.li/import/import/12833280)
+- [快照-1](https://i.gkd.li/import/import/12850094)
 
 ## 青少年模式弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12834093)
+- [快照-0](https://i.gkd.li/import/import/12834093)
 
 ## 广场页卡片广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12838000)
+- [快照-0](https://i.gkd.li/import/import/12838000)

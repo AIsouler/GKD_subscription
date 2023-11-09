@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.tencent.ysdkcore:id/com_tencent_ysdk_icon_h5_xx"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/13276317'],
+          snapshotUrls: ['https://i.gkd.li/import/import/13276317'],
         },
       ],
     },

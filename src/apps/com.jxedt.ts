@@ -12,9 +12,9 @@ export default defineAppConfig({
         {
           matches: '[id="com.jxedt:id/tv_guide_tiaoguo" || text*="跳过"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12605051',
-            'https://gkd-kit.gitee.io/import/12605053',
-            'https://gkd-kit.gitee.io/import/12605057',
+            'https://i.gkd.li/import/import/12605051',
+            'https://i.gkd.li/import/import/12605053',
+            'https://i.gkd.li/import/import/12605057',
           ],
         },
       ],

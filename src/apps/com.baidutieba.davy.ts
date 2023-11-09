@@ -12,7 +12,7 @@ export default defineAppConfig({
         'com.miui.home.launcher.Launcher',
       ],
       rules: '[id="com.baidutieba.davy:id/skipBt"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12504282',
+      snapshotUrls: 'https://i.gkd.li/import/import/12504282',
     },
     {
       key: 1,
@@ -21,11 +21,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.baidutieba.davy:id/exit"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12504289',
+          snapshotUrls: 'https://i.gkd.li/import/import/12504289',
         },
         {
           matches: '[id="com.baidutieba.davy:id/mimo_interstitial_close_img"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12504291',
+          snapshotUrls: 'https://i.gkd.li/import/import/12504291',
         },
       ],
     },

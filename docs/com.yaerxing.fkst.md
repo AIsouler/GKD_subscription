@@ -4,6 +4,6 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12715037)
-- [快照-1](https://gkd-kit.gitee.io/import/12715047)
-- [快照-2](https://gkd-kit.gitee.io/import/12715053)
+- [快照-0](https://i.gkd.li/import/import/12715037)
+- [快照-1](https://i.gkd.li/import/import/12715047)
+- [快照-2](https://i.gkd.li/import/import/12715053)

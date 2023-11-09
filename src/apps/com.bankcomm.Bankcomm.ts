@@ -16,7 +16,7 @@ export default defineAppConfig({
         '[id="com.bankcomm.Bankcomm:id/popup_ad_image"] - [id="com.bankcomm.Bankcomm:id/popup_close"]',
       // 貌似快照里位置和截图不对应
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12671987',
+        'https://i.gkd.li/import/import/12671987',
         'https://i.gkd.li/import/12745293', // activityId: 'com.hihonor.android.launcher.unihome.UniHomeLauncher'
       ],
     },

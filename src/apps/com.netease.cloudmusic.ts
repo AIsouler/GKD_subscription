@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.netease.cloudmusic:id/skipBtn"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12700920'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12700920'],
     },
     {
       enable: false,
@@ -33,10 +33,10 @@ export default defineAppConfig({
           matches: '[id="com.netease.cloudmusic:id/adTagView"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12829944',
-            'https://gkd-kit.gitee.io/import/12723229',
-            'https://gkd-kit.gitee.io/import/12829938',
-            'https://gkd-kit.gitee.io/import/12829964',
-            'https://gkd-kit.gitee.io/import/12829953',
+            'https://i.gkd.li/import/import/12723229',
+            'https://i.gkd.li/import/import/12829938',
+            'https://i.gkd.li/import/import/12829964',
+            'https://i.gkd.li/import/import/12829953',
           ],
         },
         {
@@ -53,7 +53,7 @@ export default defineAppConfig({
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules:
         '[id="com.netease.cloudmusic:id/auto_scroll_switcher"] + [id="com.netease.cloudmusic:id/close_btn"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12745666'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12745666'],
     },
     {
       key: 3,
@@ -72,7 +72,7 @@ export default defineAppConfig({
           key: 0,
           name: '音乐专辑售卖广告弹窗',
           matches: 'WebView >n View > TextView + TextView + TextView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13188737',
+          snapshotUrls: 'https://i.gkd.li/import/import/13188737',
         },
         {
           key: 1,
@@ -98,8 +98,8 @@ export default defineAppConfig({
           matches:
             'ImageView < @ViewGroup[clickable=true] <2 ViewGroup < ViewGroup  + ScrollView [text ="会员套餐"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13189055',
-            'https://gkd-kit.gitee.io/import/13260416',
+            'https://i.gkd.li/import/import/13189055',
+            'https://i.gkd.li/import/import/13260416',
           ],
         },
         {

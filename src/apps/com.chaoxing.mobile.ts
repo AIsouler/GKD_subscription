@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.chaoxing.mobile.activity.SplashActivity',
       rules: '[id="com.chaoxing.mobile:id/jump_view"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12708472',
+      snapshotUrls: 'https://i.gkd.li/import/import/12708472',
     },
     {
       key: 10,

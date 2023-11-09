@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         '@ImageView[id="cn.com.ruijie.magicbox:id/imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',
       ],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642359',
+      snapshotUrls: 'https://i.gkd.li/import/import/12642359',
     },
   ],
 });

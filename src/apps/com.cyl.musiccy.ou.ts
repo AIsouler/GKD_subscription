@@ -12,30 +12,30 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.cyl.musiccy.ou:id/ksad_splash_circle_skip_view"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12775918',
+          snapshotUrls: 'https://i.gkd.li/import/import/12775918',
         },
         {
           matches:
             '[id="com.cyl.musiccy.ou:id/ksad_splash_root_container"] [childCount=3] > @ImageView[clickable=true] - [text="|"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12775919'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12775919'],
         },
         {
           matches:
             'FrameLayout > FrameLayout > [text^="跳过 "][text.length<=4][clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12775926',
+          snapshotUrls: 'https://i.gkd.li/import/import/12775926',
         },
         {
           matches: 'LinearLayout > FrameLayout > TextView[text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13063151',
+          snapshotUrls: 'https://i.gkd.li/import/import/13063151',
         },
         {
           matches: 'FrameLayout > LinearLayout > TextView[text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13063246',
+          snapshotUrls: 'https://i.gkd.li/import/import/13063246',
         },
         {
           matches:
             '[id="com.cyl.musiccy.ou:id/ksad_splash_root_container"] [text="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13071599',
+          snapshotUrls: 'https://i.gkd.li/import/import/13071599',
         },
       ],
     },
@@ -46,11 +46,11 @@ export default defineAppConfig({
       rules: [
         // {
         //   matches: '[desc="了解更多"] - [desc="我知道了"]',
-        //   snapshotUrls: 'https://gkd-kit.gitee.io/import/12775920',
+        //   snapshotUrls: 'https://i.gkd.li/import/import/12775920',
         // },
         {
           matches: '[desc="我知道了"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13063206',
+          snapshotUrls: 'https://i.gkd.li/import/import/13063206',
         },
       ],
     },
@@ -67,20 +67,20 @@ export default defineAppConfig({
         {
           matches: '[id="com.cyl.musiccy.ou:id/ksad_container"] [text="跳过"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12775922',
-            'https://gkd-kit.gitee.io/import/13063222',
+            'https://i.gkd.li/import/import/12775922',
+            'https://i.gkd.li/import/import/13063222',
           ],
         },
         {
           matches:
             '[id="com.cyl.musiccy.ou:id/ksad_container"] [text="广告"] <2 ViewGroup -2 ViewGroup > @ViewGroup[clickable=true][childCount=1] ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12775923',
+          snapshotUrls: 'https://i.gkd.li/import/import/12775923',
         },
         {
           matches: '[id="ad_area"] [id="close_btn"][clickable=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12775925',
-            'https://gkd-kit.gitee.io/import/12775924',
+            'https://i.gkd.li/import/import/12775925',
+            'https://i.gkd.li/import/import/12775924',
           ],
         },
         {
@@ -88,8 +88,8 @@ export default defineAppConfig({
           matches:
             '[text^="去"][text$="看看"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12775921',
-            'https://gkd-kit.gitee.io/import/12776903',
+            'https://i.gkd.li/import/import/12775921',
+            'https://i.gkd.li/import/import/12776903',
           ],
         },
         // 该规则暂时不会遇到
@@ -97,27 +97,27 @@ export default defineAppConfig({
         //   action: 'clickCenter',
         //   matches:
         //     'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
-        //   snapshotUrls: 'https://gkd-kit.gitee.io/import/12789196',
+        //   snapshotUrls: 'https://i.gkd.li/import/import/12789196',
         // },
         {
           action: 'clickCenter',
           matches:
             'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12789928'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12789928'],
         },
         {
           action: 'click',
           matches:
             'TextView[text^="摇动"||text^="点击"] <2 LinearLayout < LinearLayout < FrameLayout -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13063249',
+          snapshotUrls: 'https://i.gkd.li/import/import/13063249',
         },
         {
           action: 'click',
           matches:
             'TextView[text="查看详情"] < FrameLayout  <2 FrameLayout[childCount=2] -n FrameLayout > ImageView',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13215476',
-            'https://gkd-kit.gitee.io/import/13071595',
+            'https://i.gkd.li/import/import/13215476',
+            'https://i.gkd.li/import/import/13071595',
           ],
         },
       ],

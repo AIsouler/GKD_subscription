@@ -11,13 +11,13 @@ export default defineAppConfig({
         {
           activityIds: 'com.fighter.loader.view.InteractTemplateAdDialog',
           matches: '[id="com.estrongs.android.pop:id/iv_close"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12509667',
+          snapshotUrls: 'https://i.gkd.li/import/import/12509667',
         },
         {
           activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
           matches:
             'TextView[text!=null] < FrameLayout - ImageView - FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12509669',
+          snapshotUrls: 'https://i.gkd.li/import/import/12509669',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             'ImageView - LinearLayout >(2) ImageView[id="com.estrongs.android.pop:id/close"][clickable=true]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12674919'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12674919'],
         },
         {
           key: 1,

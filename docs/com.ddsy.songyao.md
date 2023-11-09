@@ -4,8 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13048719)
+- [快照-0](https://i.gkd.li/import/import/13048719)
 
 ## 优惠卷提示
 
-- [快照-0](https://gkd-kit.gitee.io/import/13048720)
+- [快照-0](https://i.gkd.li/import/import/13048720)

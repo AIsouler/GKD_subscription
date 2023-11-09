@@ -12,8 +12,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"||text="跳过"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12597925',
-            'https://gkd-kit.gitee.io/import/12598507',
+            'https://i.gkd.li/import/import/12597925',
+            'https://i.gkd.li/import/import/12598507',
           ],
         },
       ],
@@ -27,7 +27,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.baidu.youavideo:id/tv_upgrade"] < LinearLayout +2 [id="com.baidu.youavideo:id/img_close"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12597916'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12597916'],
         },
       ],
     },
@@ -40,7 +40,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/img_operation_close"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12970088'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12970088'],
         },
       ],
     },
@@ -53,7 +53,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/tv_next_time"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12970094'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12970094'],
         },
       ],
     },
@@ -67,7 +67,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.baidu.youavideo:id/tv_confirm_pay"] -5 [id="com.baidu.youavideo:id/img_close_dialog"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12970094'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12970094'],
         },
       ],
     },
@@ -81,7 +81,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"] ',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/13048700'],
+          snapshotUrls: ['https://i.gkd.li/import/import/13048700'],
         },
       ],
     },

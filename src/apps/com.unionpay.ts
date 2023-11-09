@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.unionpay:id/jump"][text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12705391',
+          snapshotUrls: 'https://i.gkd.li/import/import/12705391',
         },
       ],
     },
@@ -52,7 +52,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.unionpay:id/frog_float"] >2 [id="com.unionpay:id/close_view"][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12695699',
+          snapshotUrls: 'https://i.gkd.li/import/import/12695699',
         },
       ],
     },
@@ -64,7 +64,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.unionpay:id/locate_guide_view"] >2 [id="com.unionpay:id/locate_iv_close"][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12694508',
+          snapshotUrls: 'https://i.gkd.li/import/import/12694508',
         },
       ],
     },
@@ -78,7 +78,7 @@ export default defineAppConfig({
         {
           matches:
             '[text$="想访问您的位置信息"] < * +2 LinearLayout > [id="com.unionpay:id/btn_cancel"][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12695773',
+          snapshotUrls: 'https://i.gkd.li/import/import/12695773',
         },
       ],
     },
@@ -92,7 +92,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="开启消息通知"] < * + [id="com.unionpay:id/view_alert_cancel"][visibleToUser=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12695736',
+          snapshotUrls: 'https://i.gkd.li/import/import/12695736',
         },
       ],
     },

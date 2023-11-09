@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.yaya.zone:id/tv_skip"][text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13215214',
+          snapshotUrls: 'https://i.gkd.li/import/import/13215214',
         },
       ],
     },

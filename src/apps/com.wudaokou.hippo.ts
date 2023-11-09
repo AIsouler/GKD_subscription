@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.wudaokou.hippo:id/splash_skip"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12891918',
+          snapshotUrls: 'https://i.gkd.li/import/import/12891918',
         },
       ],
     },

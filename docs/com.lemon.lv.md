@@ -10,4 +10,4 @@
 
 关闭完成导出后的下方广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12911010)
+- [快照-0](https://i.gkd.li/import/import/12911010)

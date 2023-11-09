@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       activityIds: 'com.tencent.tgclub.business.appframe.WelcomeActivity',
       rules: '[id="com.tencent.tgclub:id/jump_time"][text$="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13163289',
+      snapshotUrls: 'https://i.gkd.li/import/import/13163289',
     },
   ],
 });

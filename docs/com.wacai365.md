@@ -4,18 +4,18 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13162861)
-- [快照-1](https://gkd-kit.gitee.io/import/13177538)
-- [快照-2](https://gkd-kit.gitee.io/import/13194893)
+- [快照-0](https://i.gkd.li/import/import/13162861)
+- [快照-1](https://i.gkd.li/import/import/13177538)
+- [快照-2](https://i.gkd.li/import/import/13194893)
 
 ## 新版本提示
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/13249620)
+- [快照-0](https://i.gkd.li/import/import/13249620)
 
 ## 弹窗广告
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/13249666)
+- [快照-0](https://i.gkd.li/import/import/13249666)

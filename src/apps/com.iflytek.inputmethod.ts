@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.iflytek.inputmethod.settingsnew:id/ll_skip"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12906597',
+          snapshotUrls: 'https://i.gkd.li/import/import/12906597',
         },
         {
           key: 1,

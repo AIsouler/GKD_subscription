@@ -18,7 +18,7 @@ export default defineAppConfig({
             '[id="android:id/message"][text^=`黑阈服务权限不足`]',
             '[text=`取消`][id^=`android:id/button`]',
           ],
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13218439',
+          snapshotUrls: 'https://i.gkd.li/import/import/13218439',
         },
       ],
     },

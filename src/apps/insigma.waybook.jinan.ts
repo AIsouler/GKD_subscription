@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       rules: '[id="insigma.waybook.jinan:id/qm_time"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12660773',
+      snapshotUrls: 'https://i.gkd.li/import/import/12660773',
     },
   ],
 });

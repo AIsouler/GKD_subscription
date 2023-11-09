@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.xiaomi.youpin:id/yp_splash_jump_image"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12836717'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12836717'],
         },
       ],
     },
@@ -25,7 +25,7 @@ export default defineAppConfig({
         {
           matches:
             '@Image <2 View[childCount=2] < [id="app"] < [text="有品"] < * < [id="android:id/content"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12836727'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12836727'],
         },
       ],
     },
@@ -38,7 +38,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.xiaomi.youpin:id/ypd_alert_close_area"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12836775'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12836775'],
         },
       ],
     },

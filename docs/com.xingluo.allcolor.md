@@ -4,14 +4,14 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640349)
+- [快照-0](https://i.gkd.li/import/import/12640349)
 
 ## 底部穿山甲广告
 
 默认禁用 - 点击广告卡片x关闭按钮-关闭反馈理由弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640358)
-- [快照-1](https://gkd-kit.gitee.io/import/12640359)
-- [快照-2](https://gkd-kit.gitee.io/import/12640362)
-- [快照-3](https://gkd-kit.gitee.io/import/12640374)
-- [快照-4](https://gkd-kit.gitee.io/import/12640406)
+- [快照-0](https://i.gkd.li/import/import/12640358)
+- [快照-1](https://i.gkd.li/import/import/12640359)
+- [快照-2](https://i.gkd.li/import/import/12640362)
+- [快照-3](https://i.gkd.li/import/import/12640374)
+- [快照-4](https://i.gkd.li/import/import/12640406)

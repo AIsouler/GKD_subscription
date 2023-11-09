@@ -21,7 +21,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@FlattenUIImage + LynxAdComponentView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12911010',
+          snapshotUrls: 'https://i.gkd.li/import/import/12911010',
         },
       ],
     },

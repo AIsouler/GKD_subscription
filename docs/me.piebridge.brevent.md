@@ -6,4 +6,4 @@
 
 默认禁用 - 点击取消
 
-- [快照-0](https://gkd-kit.gitee.io/import/13218439)
+- [快照-0](https://i.gkd.li/import/import/13218439)

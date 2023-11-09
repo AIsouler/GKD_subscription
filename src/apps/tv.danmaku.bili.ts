@@ -14,7 +14,7 @@ export default defineAppConfig({
       name: '开屏广告',
       desc: '开屏广告,任意界面切回APP开屏广告',
       rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12705270',
+      snapshotUrls: 'https://i.gkd.li/import/import/12705270',
     },
     {
       quickFind: true,
@@ -27,8 +27,8 @@ export default defineAppConfig({
         'tv.danmaku.bili.MainActivityV2', // 主页
       ],
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12785461',
-        'https://gkd-kit.gitee.io/import/12775156',
+        'https://i.gkd.li/import/import/12785461',
+        'https://i.gkd.li/import/import/12775156',
       ],
     },
     {
@@ -51,12 +51,12 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '[id=`tv.danmaku.bili:id/ad_goods_mark_big`]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700222',
+          snapshotUrls: 'https://i.gkd.li/import/import/12700222',
         },
         {
           preKeys: 1,
           matches: '[text="不感兴趣"][id^="tv.danmaku.bili:id/reason"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700243',
+          snapshotUrls: 'https://i.gkd.li/import/import/12700243',
         },
       ],
     },
@@ -78,10 +78,10 @@ export default defineAppConfig({
           matches:
             'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642260', // n = 2
-            'https://gkd-kit.gitee.io/import/12705266', // n = 3
+            'https://i.gkd.li/import/import/12642260', // n = 2
+            'https://i.gkd.li/import/import/12705266', // n = 3
             'https://i.gkd.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
-            'https://gkd-kit.gitee.io/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
+            'https://i.gkd.li/import/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
           ],
         },
         {
@@ -92,8 +92,8 @@ export default defineAppConfig({
           matches:
             '[id="tv.danmaku.bili:id/menu_text"][text="屏蔽广告"] < [id="tv.danmaku.bili:id/title"] + [id="tv.danmaku.bili:id/dislike_reasons"] >2 [id="tv.danmaku.bili:id/reason1_layout"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642261', // 屏蔽广告菜单弹窗
-            'https://gkd-kit.gitee.io/import/12706768', // 首页点击[视频卡片右下角菜单图标]后出现的普通菜单弹窗, 限制标题 [text="屏蔽广告"] 避免误触此弹窗
+            'https://i.gkd.li/import/import/12642261', // 屏蔽广告菜单弹窗
+            'https://i.gkd.li/import/import/12706768', // 首页点击[视频卡片右下角菜单图标]后出现的普通菜单弹窗, 限制标题 [text="屏蔽广告"] 避免误触此弹窗
           ],
         },
       ],
@@ -115,8 +115,8 @@ export default defineAppConfig({
           key: 1,
           matches: '[id="tv.danmaku.bili:id/update_btn_cancel"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
-            'https://gkd-kit.gitee.io/import/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
+            'https://i.gkd.li/import/import/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
+            'https://i.gkd.li/import/import/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
             'https://i.gkd.li/import/13228977',
           ],
         },
@@ -132,7 +132,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       rules: ['[id="tv.danmaku.bili:id/toast_x"]'],
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12892611',
+        'https://i.gkd.li/import/import/12892611',
         'https://i.gkd.li/import/13308344',
       ],
       exampleUrls: [

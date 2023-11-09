@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="cn.emagsoftware.gamehall:id/splash_skip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13258853',
+      snapshotUrls: 'https://i.gkd.li/import/import/13258853',
     },
   ],
 });

@@ -8,6 +8,6 @@
 
 ## 请求消息通知
 
-- [快照-0](https://gkd-kit.gitee.io/import/13198101)
-- [快照-1](https://gkd-kit.gitee.io/import/13198234)
-- [快照-2](https://gkd-kit.gitee.io/import/13246971)
+- [快照-0](https://i.gkd.li/import/import/13198101)
+- [快照-1](https://i.gkd.li/import/import/13198234)
+- [快照-2](https://i.gkd.li/import/import/13246971)

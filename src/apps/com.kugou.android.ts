@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.kugou.android.app.splash.SplashActivity',
       rules: '[desc=`跳过`]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12775410',
+      snapshotUrls: 'https://i.gkd.li/import/import/12775410',
     },
   ],
 });

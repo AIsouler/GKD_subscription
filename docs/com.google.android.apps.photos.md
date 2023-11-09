@@ -6,4 +6,4 @@
 
 点击[以后再说]
 
-- [快照-0](https://gkd-kit.gitee.io/import/13218940)
+- [快照-0](https://i.gkd.li/import/import/13218940)

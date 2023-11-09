@@ -17,7 +17,7 @@ export default defineAppConfig({
       desc: '选择[取消]',
       activityIds: 'com.mcdonalds.gma.cn.activity.MainActivity',
       rules: '[id="com.mcdonalds.gma.cn:id/tv_cancel"][text="取消"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13259242',
+      snapshotUrls: 'https://i.gkd.li/import/import/13259242',
     },
   ],
 });

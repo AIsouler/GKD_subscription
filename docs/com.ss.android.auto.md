@@ -4,31 +4,31 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12605327)
+- [快照-0](https://i.gkd.li/import/import/12605327)
 
 ## 首页推荐卡片广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12660816)
-- [快照-1](https://gkd-kit.gitee.io/import/12711589)
+- [快照-0](https://i.gkd.li/import/import/12660816)
+- [快照-1](https://i.gkd.li/import/import/12711589)
 
 ## 升级弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12711631)
+- [快照-0](https://i.gkd.li/import/import/12711631)
 
 ## 首页直播推荐窗口
 
-- [快照-0](https://gkd-kit.gitee.io/import/12798338)
+- [快照-0](https://i.gkd.li/import/import/12798338)
 
 ## 文章底部广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12811597)
+- [快照-0](https://i.gkd.li/import/import/12811597)
 
 ## 评论区广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12811459)
-- [快照-1](https://gkd-kit.gitee.io/import/12825865)
-- [快照-2](https://gkd-kit.gitee.io/import/12900666)
+- [快照-0](https://i.gkd.li/import/import/12811459)
+- [快照-1](https://i.gkd.li/import/import/12825865)
+- [快照-2](https://i.gkd.li/import/import/12900666)
 
 ## 请求推送通知弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12840664)
+- [快照-0](https://i.gkd.li/import/import/12840664)

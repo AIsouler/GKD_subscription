@@ -15,8 +15,8 @@ export default defineAppConfig({
       ],
       rules: 'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/13223669', //com.hd.smartVillage.modules.main.MainActivity
-        'https://gkd-kit.gitee.io/import/13293000', //com.hd.smartVillage.modules.h5service.H5WebActivity
+        'https://i.gkd.li/import/import/13223669', //com.hd.smartVillage.modules.main.MainActivity
+        'https://i.gkd.li/import/import/13293000', //com.hd.smartVillage.modules.h5service.H5WebActivity
       ],
     },
     {
@@ -28,7 +28,7 @@ export default defineAppConfig({
       activityIds: 'com.hd.smartVillage.modules.main.MainActivity',
       rules:
         'TextView[id="com.hd.smartVillage:id/tv_upgrade_cancel"][text="取消"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13223642',
+      snapshotUrls: 'https://i.gkd.li/import/import/13223642',
     },
   ],
 });

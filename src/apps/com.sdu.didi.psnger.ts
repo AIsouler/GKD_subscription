@@ -16,7 +16,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id=`com.sdu.didi.psnger:id/skip_ad_ll`]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12888394',
+          snapshotUrls: 'https://i.gkd.li/import/import/12888394',
         },
       ],
     },

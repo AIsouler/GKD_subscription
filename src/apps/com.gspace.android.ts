@@ -17,16 +17,16 @@ export default defineAppConfig({
         {
           matches: '[id="com.gspace.android:id/hiad_skip_text"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12668986',
-            'https://gkd-kit.gitee.io/import/12668985',
-            'https://gkd-kit.gitee.io/import/12703037',
+            'https://i.gkd.li/import/import/12668986',
+            'https://i.gkd.li/import/import/12668985',
+            'https://i.gkd.li/import/import/12703037',
           ],
         },
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12910422',
-            'https://gkd-kit.gitee.io/import/12910417',
+            'https://i.gkd.li/import/import/12910422',
+            'https://i.gkd.li/import/import/12910417',
           ],
         },
       ],
@@ -40,20 +40,20 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.gspace.android:id/hiad_banner_close_button"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12705339',
+          snapshotUrls: 'https://i.gkd.li/import/import/12705339',
         },
         {
           key: 1,
           matches: '@Image < View -2 View > View > View TextView[text="广告"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12910419', //activityIds: 'com.gspace.android.ui.activity.main.MainActivity',
-            'https://gkd-kit.gitee.io/import/12910935', //activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
+            'https://i.gkd.li/import/import/12910419', //activityIds: 'com.gspace.android.ui.activity.main.MainActivity',
+            'https://i.gkd.li/import/import/12910935', //activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
           ],
         },
         {
           preKeys: 1,
           matches: '[id="com.byted.pangle:id/tt_item_tv" && text= "不感兴趣"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12910420',
+          snapshotUrls: 'https://i.gkd.li/import/import/12910420',
         },
       ],
     },
@@ -63,7 +63,7 @@ export default defineAppConfig({
       // activityIds: 'com.huawei.openalliance.ad.ppskit.activity.InnerPPSInterstitialAdActivity',
       // 我不清楚，上面的activityIds是否与系统有关
       rules: '[id="com.google.android.youtube:id/skip_ad_button"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12709006',
+      snapshotUrls: 'https://i.gkd.li/import/import/12709006',
     },
   ],
 });

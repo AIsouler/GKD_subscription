@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12661722)
-- [快照-1](https://gkd-kit.gitee.io/import/12661937)
+- [快照-0](https://i.gkd.li/import/import/12661722)
+- [快照-1](https://i.gkd.li/import/import/12661937)
 
 ## 应用评分弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12661907)
-- [快照-1](https://gkd-kit.gitee.io/import/12661924)
+- [快照-0](https://i.gkd.li/import/import/12661907)
+- [快照-1](https://i.gkd.li/import/import/12661924)

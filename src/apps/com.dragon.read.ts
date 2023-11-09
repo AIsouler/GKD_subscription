@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="跳过广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13210844',
+          snapshotUrls: 'https://i.gkd.li/import/import/13210844',
         },
       ],
     },
@@ -38,8 +38,8 @@ export default defineAppConfig({
           matches:
             '[id="com.dragon.read:id/root_view"] >n ViewGroup[childCount=4] > @FrameLayout[id!=null][clickable=true][childCount=1] > ImageView[visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12716444',
-            'https://gkd-kit.gitee.io/import/13062909', // 误触
+            'https://i.gkd.li/import/import/12716444',
+            'https://i.gkd.li/import/import/13062909', // 误触
           ],
         },
       ],
@@ -49,7 +49,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: 'com.dragon.read.update',
       rules: '@[text="以后再说"] + [text="优先体验"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12716477',
+      snapshotUrls: 'https://i.gkd.li/import/import/12716477',
     },
     {
       key: 2,
@@ -57,7 +57,7 @@ export default defineAppConfig({
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules:
         '[id="android:id/content"] > FrameLayout > RelativeLayout[childCount=1][clickable=true] > RelativeLayout[childCount=3] > ImageView[id!=null][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12716506',
+      snapshotUrls: 'https://i.gkd.li/import/import/12716506',
     },
     {
       key: 3,
@@ -81,7 +81,7 @@ export default defineAppConfig({
       activityIds: 'com.dragon.read.widget.ConfirmDialogBuilder',
       rules:
         '@[text="取消"] < LinearLayout -2 LinearLayout > [text="开启推送提醒"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12716592',
+      snapshotUrls: 'https://i.gkd.li/import/import/12716592',
     },
     {
       key: 11,
@@ -91,7 +91,7 @@ export default defineAppConfig({
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules:
         '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12878266',
+      snapshotUrls: 'https://i.gkd.li/import/import/12878266',
     },
     {
       key: 12,
@@ -100,7 +100,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13191156',
+      snapshotUrls: 'https://i.gkd.li/import/import/13191156',
     },
   ],
 });

@@ -9,4 +9,4 @@
 
 ## 下方横幅
 
-- [快照-0](https://gkd-kit.gitee.io/import/13185746)
+- [快照-0](https://i.gkd.li/import/import/13185746)

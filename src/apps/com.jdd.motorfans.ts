@@ -15,7 +15,7 @@ export default defineAppConfig({
           matches:
             '[id="com.jdd.motorfans:id/ad_content"] >n [id="com.jdd.motorfans:id/iv_close"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12733646', // com.jdd.motorfans.MTMainActivity
+            'https://i.gkd.li/import/import/12733646', // com.jdd.motorfans.MTMainActivity
             'https://i.gkd.li/import/12798654', // com.jdd.motorfans.modules.detail.DetailActivity2
             'https://i.gkd.li/import/12878843', // com.jdd.motorfans.search.SearchMainActivity
             'https://i.gkd.li/import/12913956', // com.jdd.motorfans.modules.base.FragmentContainerActivity
@@ -29,7 +29,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '@ImageView -n RelativeLayout > TextView[text*="广告"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12826288'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12826288'],
         },
       ],
     },
@@ -43,7 +43,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.jdd.motorfans:id/recyclerView"] > FrameLayout[id="com.jdd.motorfans:id/container"] > FrameLayout[childCount=3] > ImageView[clickable=true][id=null] + ImageView[clickable=true][id=null]', //虽然在审查页面能匹配上，但是在“执行选择器”功能下一直处于搜索中，先添加后到真机测试
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12826382'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12826382'],
         },
         {
           name: '点击不感兴趣',
@@ -51,7 +51,7 @@ export default defineAppConfig({
           matches: [
             'TextView[id="com.jdd.motorfans:id/beizi_dislike_item_multi_one_title"][text*="不感兴趣"]',
           ],
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12829069'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12829069'],
         },
       ],
     },
@@ -66,7 +66,7 @@ export default defineAppConfig({
           name: '点x按钮',
           key: 0,
           matches: '[id="com.jdd.motorfans:id/iv_close"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12888087'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12888087'],
         },
       ],
     },

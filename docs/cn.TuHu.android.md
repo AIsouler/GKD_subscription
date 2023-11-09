@@ -13,4 +13,4 @@
 ## 请求通知权限弹窗
 
 - [快照-0](https://i.gkd.li/import/13228796)
-- [快照-1](https://gkd-kit.gitee.io/import/13256535)
+- [快照-1](https://i.gkd.li/import/import/13256535)

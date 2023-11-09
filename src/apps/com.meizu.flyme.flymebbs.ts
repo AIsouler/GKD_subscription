@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.meizu.flyme.flymebbs:id/tv_skip"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13213487',
+          snapshotUrls: 'https://i.gkd.li/import/import/13213487',
         },
       ],
     },

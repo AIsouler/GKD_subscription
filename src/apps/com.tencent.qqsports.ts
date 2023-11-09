@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqsports.ui.SplashActivity',
       rules:
         '[id="com.tencent.qqsports:id/splash_activity_ad"] >5 [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12845494',
+      snapshotUrls: 'https://i.gkd.li/import/import/12845494',
     },
   ],
 });

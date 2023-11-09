@@ -4,14 +4,14 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13024858)
+- [快照-0](https://i.gkd.li/import/import/13024858)
 
 ## 应用内广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/13024867)
-- [快照-1](https://gkd-kit.gitee.io/import/13024869)
+- [快照-0](https://i.gkd.li/import/import/13024867)
+- [快照-1](https://i.gkd.li/import/import/13024869)
 
 ## 右侧悬浮广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13024863)
-- [快照-1](https://gkd-kit.gitee.io/import/13024872)
+- [快照-0](https://i.gkd.li/import/import/13024863)
+- [快照-1](https://i.gkd.li/import/import/13024872)

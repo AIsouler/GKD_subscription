@@ -37,15 +37,15 @@ export default defineAppConfig({
           key: 0,
           matches: '[id$="/nativeclose"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12505350',
-            'https://gkd-kit.gitee.io/import/12505286',
+            'https://i.gkd.li/import/import/12505350',
+            'https://i.gkd.li/import/import/12505286',
           ],
         },
         {
           preKeys: 0,
           matches: '[text="关闭当前广告"||text="不喜欢此广告"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12505365',
+            'https://i.gkd.li/import/import/12505365',
             'https://i.gkd.li/import/13259090',
           ],
         },

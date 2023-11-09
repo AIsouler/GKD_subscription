@@ -22,8 +22,8 @@ export default defineAppConfig({
       activityIds: 'com.vivo.space.ui.VivoSpaceTabActivity',
       rules: 'Image[text=""] + [text=""][clickable=true]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/13218155',
-        'https://gkd-kit.gitee.io/import/13292907',
+        'https://i.gkd.li/import/import/13218155',
+        'https://i.gkd.li/import/import/13292907',
       ],
     },
   ],

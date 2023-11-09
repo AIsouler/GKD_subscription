@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.chinavisionary.microtang:id/tv_timer"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12841143',
+          snapshotUrls: 'https://i.gkd.li/import/import/12841143',
         },
       ],
     },

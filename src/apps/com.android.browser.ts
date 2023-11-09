@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             '@ImageView[id!=null][clickable=true] -2 [text="个性推荐获得更丰富内容"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12829403',
+          snapshotUrls: 'https://i.gkd.li/import/import/12829403',
         },
       ],
     },

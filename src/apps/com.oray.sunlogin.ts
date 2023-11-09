@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.oray.sunlogin:id/ll_skip_ad"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13197052',
+          snapshotUrls: 'https://i.gkd.li/import/import/13197052',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/import/13195950',
         'https://i.gkd.li/import/12910411',
-        'https://gkd-kit.gitee.io/import/13197454', //如果没有text条件则会和这一条误触
+        'https://i.gkd.li/import/import/13197454', //如果没有text条件则会和这一条误触
       ],
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/61d335f0-a85a-4e26-80fe-6bc0d1742bc0',

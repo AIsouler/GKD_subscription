@@ -11,11 +11,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13175317',
+          snapshotUrls: 'https://i.gkd.li/import/import/13175317',
         },
         {
           matches: 'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13190313',
+          snapshotUrls: 'https://i.gkd.li/import/import/13190313',
         },
       ],
     },

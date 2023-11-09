@@ -4,9 +4,9 @@
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/13217796)
-- [快照-1](https://gkd-kit.gitee.io/import/13223282)
+- [快照-0](https://i.gkd.li/import/import/13217796)
+- [快照-1](https://i.gkd.li/import/import/13223282)
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/13217634)
+- [快照-0](https://i.gkd.li/import/import/13217634)

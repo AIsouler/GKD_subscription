@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '[id=`com.google.android.apps.photos:id/negative_button`][text=`以后再说`]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13218940',
+          snapshotUrls: 'https://i.gkd.li/import/import/13218940',
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
       key: 1,
       name: '关闭更新弹窗',
       activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12534264',
+      snapshotUrls: 'https://i.gkd.li/import/import/12534264',
       rules:
         'Button[text="以后再说"][id^="com.greenpoint.android.mc10086.activity:id/dialog_btn"]',
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.greenpoint.android.mc10086.activity:id/ad_image"] < RelativeLayout + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12662361'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12662361'],
         },
       ],
     },
@@ -39,7 +39,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text*="开启推送通知"] +(2) LinearLayout > [text="取消"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12662213'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12662213'],
         },
       ],
     },
@@ -52,7 +52,7 @@ export default defineAppConfig({
         {
           matches:
             '[text*="获取您的剪切板信息"] < LinearLayout +(2) LinearLayout >(2) [text="不允许"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12662251'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12662251'],
         },
       ],
     },
@@ -64,7 +64,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.greenpoint.android.mc10086.activity:id/drag_img"] + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12662265'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12662265'],
         },
       ],
     },
@@ -76,7 +76,7 @@ export default defineAppConfig({
         {
           matches:
             '@[id="com.greenpoint.android.mc10086.activity:id/close_img"][desc="关闭"] - RelativeLayout >(2) [text$="好评"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12662345'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12662345'],
         },
       ],
     },
