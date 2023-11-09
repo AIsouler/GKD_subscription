@@ -23,6 +23,18 @@ export default defineAppConfig({
       activityIds: 'com.tencent.mtt.MainActivity',
       rules: [
         {
+          cd: 3000,
+          key: 0,
+          name: '点击广告按钮',
+          excludeMatches: '[desc="屏蔽此广告"||desc="不感兴趣"]',
+          matches:
+            '@ViewGroup[clickable=true][visibleToUser=true] > ViewGroup > [desc="广告"]',
+          snapshotUrls: [
+            'https://gkd-kit.gitee.io/import/12907446',
+            'https://gkd-kit.gitee.io/import/12907445', // 限定 visibleToUser=true，防止在节点不可见时触发规则
+          ],
+        },
+        {
           preKeys: 0,
           key: 1,
           name: '点击[屏蔽此广告]',
@@ -40,17 +52,6 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://gkd-kit.gitee.io/import/12907655',
             'https://gkd-kit.gitee.io/import/12907653',
-          ],
-        },
-        {
-          cd: 3000,
-          key: 0,
-          name: '点击广告按钮',
-          excludeMatches: '[desc="屏蔽此广告"||desc="不感兴趣"]',
-          matches: '@ViewGroup[visibleToUser=true] > ViewGroup > [desc="广告"]',
-          snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12907446',
-            'https://gkd-kit.gitee.io/import/12907445', // 限定 visibleToUser=true，防止在节点不可见时触发规则
           ],
         },
       ],
