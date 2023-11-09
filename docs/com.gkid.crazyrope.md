@@ -4,20 +4,20 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12916417)
-- [快照-1](https://gkd-kit.gitee.io/import/13028151)
+- [快照-0](https://i.gkd.li/import/import/12916417)
+- [快照-1](https://i.gkd.li/import/import/13028151)
 - [快照-2](https://i.gkd.li/import/13195567)
-- [快照-3](https://gkd-kit.gitee.io/import/12985488)
+- [快照-3](https://i.gkd.li/import/import/12985488)
 
 ## 会员提示
 
 点击不需要
 
-- [快照-0](https://gkd-kit.gitee.io/import/12916419)
+- [快照-0](https://i.gkd.li/import/import/12916419)
 
 ## 浮窗广告
 
 二步确认
 
-- [快照-0](https://gkd-kit.gitee.io/import/13262845)
-- [快照-1](https://gkd-kit.gitee.io/import/13262844)
+- [快照-0](https://i.gkd.li/import/import/13262845)
+- [快照-1](https://i.gkd.li/import/import/13262844)

@@ -10,7 +10,7 @@
 - [快照-1](https://i.gkd.li/import/12566191)
 - [快照-2](https://i.gkd.li/import/12870916)
 - [快照-3](https://i.gkd.li/import/13233500)
-- [快照-4](https://gkd-kit.gitee.io/import/13168386)
+- [快照-4](https://i.gkd.li/import/import/13168386)
 
 ## 任意界面-选择不喜欢理由-不感兴趣
 
@@ -19,8 +19,8 @@
 ## 首页/吧内-帖子列表-推荐列表-长得像帖子的广告卡片
 
 - [快照-0](https://i.gkd.li/import/12775930)
-- [快照-1](https://gkd-kit.gitee.io/import/12840951)
-- [快照-2](https://gkd-kit.gitee.io/import/13060892)
+- [快照-1](https://i.gkd.li/import/import/12840951)
+- [快照-2](https://i.gkd.li/import/import/13060892)
 
 ## 某个广告卡片
 
@@ -36,7 +36,7 @@
 
 ## 升级弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12496934)
+- [快照-0](https://i.gkd.li/import/import/12496934)
 
 ## 帖子底部广告卡片
 
@@ -44,10 +44,10 @@
 
 ## 应用内广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/13060891)
-- [快照-1](https://gkd-kit.gitee.io/import/13222361)
-- [快照-2](https://gkd-kit.gitee.io/import/13168383)
+- [快照-0](https://i.gkd.li/import/import/13060891)
+- [快照-1](https://i.gkd.li/import/import/13222361)
+- [快照-2](https://i.gkd.li/import/import/13168383)
 
 ## 首页-悬浮小广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13115167)
+- [快照-0](https://i.gkd.li/import/import/13115167)

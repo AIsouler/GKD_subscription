@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.huawei.hwid:id/interstitial_close"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12709068'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12709068'],
         },
       ],
     },

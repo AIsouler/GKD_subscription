@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.kurogame.kjq:id/jump"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12836250',
-            'https://gkd-kit.gitee.io/import/12836248',
+            'https://i.gkd.li/import/import/12836250',
+            'https://i.gkd.li/import/import/12836248',
           ],
         },
       ],

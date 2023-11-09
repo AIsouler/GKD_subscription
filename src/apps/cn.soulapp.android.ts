@@ -16,8 +16,8 @@ export default defineAppConfig({
           action: 'clickCenter', // 在极少数情况下, 即使节点是 clickable 的, APP 也不会响应节点点击事件, 此时需要手动设置 `clickCenter`
           matches: '[id="cn.soulapp.android:id/c_ad_skip_view_btn"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12833280',
-            'https://gkd-kit.gitee.io/import/12850094',
+            'https://i.gkd.li/import/import/12833280',
+            'https://i.gkd.li/import/import/12850094',
           ],
         },
       ],
@@ -32,7 +32,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.soulapp.android:id/btn_sure"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12834093',
+          snapshotUrls: 'https://i.gkd.li/import/import/12834093',
         },
       ],
     },
@@ -45,7 +45,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="cn.soulapp.android:id/sl_ad_root"] >n [id="cn.soulapp.android:id/fl_tag_container"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12838000',
+          snapshotUrls: 'https://i.gkd.li/import/import/12838000',
         },
       ],
     },

@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: '@FrameLayout[desc= "跳过广告"] > TextView[text="跳过广告"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13111705',
+      snapshotUrls: 'https://i.gkd.li/import/import/13111705',
     },
     {
       enable: false,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       name: '首页-红包弹窗',
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: '@[desc="关闭"] + [text$="现金红包"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12705414',
+      snapshotUrls: 'https://i.gkd.li/import/import/12705414',
     },
     {
       key: 11,
@@ -27,7 +27,7 @@ export default defineAppConfig({
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules:
         'FrameLayout[id!=null] > @ImageView[id!=null][clickable=true] + ImageView[id!=null]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12705452',
+      snapshotUrls: 'https://i.gkd.li/import/import/12705452',
     },
     {
       enable: false,
@@ -35,7 +35,7 @@ export default defineAppConfig({
       name: '首页-你可能感兴趣的人',
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: '[text="你可能感兴趣的人"] + [desc="关闭"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12705427',
+      snapshotUrls: 'https://i.gkd.li/import/import/12705427',
     },
     {
       enable: false,
@@ -47,7 +47,7 @@ export default defineAppConfig({
           matches:
             'UIView[clickable=false] + LynxFlattenUI[clickable=true][visibleToUser=true]',
           action: 'clickCenter',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12705439',
+          snapshotUrls: 'https://i.gkd.li/import/import/12705439',
         },
       ],
     },
@@ -57,7 +57,7 @@ export default defineAppConfig({
       name: '任务页面-右侧悬浮红包',
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: 'UIScrollView + UIView + UISvg',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12705447',
+      snapshotUrls: 'https://i.gkd.li/import/import/12705447',
     },
     {
       enable: false,
@@ -69,7 +69,7 @@ export default defineAppConfig({
           matches:
             '[text^="答对"][text$="金币"] + FlattenUIImage[clickable=true]',
           action: 'clickCenter',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12705456',
+          snapshotUrls: 'https://i.gkd.li/import/import/12705456',
         },
       ],
     },
@@ -82,7 +82,7 @@ export default defineAppConfig({
         {
           matches: '[text^="搜索"][text$="金币"] + LynxFlattenUI + UISvg',
           action: 'clickCenter',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12705468',
+          snapshotUrls: 'https://i.gkd.li/import/import/12705468',
         },
       ],
     },

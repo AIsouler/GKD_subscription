@@ -16,7 +16,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.huachenjie.shandong_school:id/flAd"] >n [text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12922866',
+          snapshotUrls: 'https://i.gkd.li/import/import/12922866',
         },
         {
           key: 1,

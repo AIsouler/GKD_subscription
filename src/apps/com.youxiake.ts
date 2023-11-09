@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.youxiake:id/start_skip_txt"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12891979',
+          snapshotUrls: 'https://i.gkd.li/import/import/12891979',
         },
       ],
     },

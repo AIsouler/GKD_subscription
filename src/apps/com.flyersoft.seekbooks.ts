@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.flyersoft.seekbooks:id/splash_container1"] >5 [text^="跳过"][text.length<=3]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12857275',
+          snapshotUrls: 'https://i.gkd.li/import/import/12857275',
         },
       ],
     },

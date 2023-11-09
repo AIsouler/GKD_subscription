@@ -18,7 +18,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/12840903',
             'https://i.gkd.li/import/12842279',
-            'https://gkd-kit.gitee.io/import/12864810', //需避免点击正常情况下的app menu
+            'https://i.gkd.li/import/import/12864810', //需避免点击正常情况下的app menu
           ],
         },
         {

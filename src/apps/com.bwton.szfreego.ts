@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.bwton.szfreego.business.LaunchActivity',
       rules: '[id="com.bwton.szfreego:id/tvSkip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12749225',
+      snapshotUrls: 'https://i.gkd.li/import/import/12749225',
     },
   ],
 });

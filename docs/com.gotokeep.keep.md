@@ -4,20 +4,20 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706108)
+- [快照-0](https://i.gkd.li/import/import/12706108)
 
 ## 青少年模式弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706097)
+- [快照-0](https://i.gkd.li/import/import/12706097)
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706102)
+- [快照-0](https://i.gkd.li/import/import/12706102)
 
 ## 首页信息流广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706115)
+- [快照-0](https://i.gkd.li/import/import/12706115)
 
 ## 运动购页面-广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706111)
+- [快照-0](https://i.gkd.li/import/import/12706111)

@@ -4,22 +4,22 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12775918)
-- [快照-1](https://gkd-kit.gitee.io/import/12775919)
-- [快照-2](https://gkd-kit.gitee.io/import/12775926)
+- [快照-0](https://i.gkd.li/import/import/12775918)
+- [快照-1](https://i.gkd.li/import/import/12775919)
+- [快照-2](https://i.gkd.li/import/import/12775926)
 
 ## 首页通知
 
-- [快照-0](https://gkd-kit.gitee.io/import/12775920)
+- [快照-0](https://i.gkd.li/import/import/12775920)
 
 ## 插屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12775922)
-- [快照-1](https://gkd-kit.gitee.io/import/12775923)
+- [快照-0](https://i.gkd.li/import/import/12775922)
+- [快照-1](https://i.gkd.li/import/import/12775923)
 - [快照-2](https://i.gkd.li/import/12998899)
-- [快照-3](https://gkd-kit.gitee.io/import/12775925)
-- [快照-4](https://gkd-kit.gitee.io/import/12775924)
-- [快照-5](https://gkd-kit.gitee.io/import/12775921)
-- [快照-6](https://gkd-kit.gitee.io/import/12776903)
-- [快照-7](https://gkd-kit.gitee.io/import/12789196)
-- [快照-8](https://gkd-kit.gitee.io/import/12789928)
+- [快照-3](https://i.gkd.li/import/import/12775925)
+- [快照-4](https://i.gkd.li/import/import/12775924)
+- [快照-5](https://i.gkd.li/import/import/12775921)
+- [快照-6](https://i.gkd.li/import/import/12776903)
+- [快照-7](https://i.gkd.li/import/import/12789196)
+- [快照-8](https://i.gkd.li/import/import/12789928)

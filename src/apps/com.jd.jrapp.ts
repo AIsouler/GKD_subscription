@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.jd.jrapp:id/btn_jump"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13054174',
+          snapshotUrls: 'https://i.gkd.li/import/import/13054174',
         },
       ],
     },
@@ -31,12 +31,12 @@ export default defineAppConfig({
           activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
           matches:
             'TextView[text^="打开通知"] +2 [id="com.jd.jrapp:id/iv_close"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13249998',
+          snapshotUrls: 'https://i.gkd.li/import/import/13249998',
         },
         {
           activityIds: 'com.jd.jrapp.bm.common.web.ui.WebActivity',
           matches: 'View[text="开启并订阅通知"] < View + View[clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13255656',
+          snapshotUrls: 'https://i.gkd.li/import/import/13255656',
         },
       ],
     },

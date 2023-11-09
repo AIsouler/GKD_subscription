@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'cn.speedtest.lite.main.MainActivity',
       rules:
         '@[id="cn.speedtest.lite:id/iv_close"] - [id="cn.speedtest.lite:id/ll_main_pane"] >2 [id="cn.speedtest.lite:id/tv_upgrade_content"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12715483',
+      snapshotUrls: 'https://i.gkd.li/import/import/12715483',
     },
     {
       enable: false,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       activityIds: 'cn.speedtest.lite.main.MainActivity',
       rules:
         '@[id="cn.speedtest.lite:id/iv_close"] - RelativeLayout >n [id="cn.speedtest.lite:id/ad_banner"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12715511',
+      snapshotUrls: 'https://i.gkd.li/import/import/12715511',
     },
   ],
 });

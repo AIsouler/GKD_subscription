@@ -4,17 +4,17 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12889257)
-- [快照-1](https://gkd-kit.gitee.io/import/12972209)
+- [快照-0](https://i.gkd.li/import/import/12889257)
+- [快照-1](https://i.gkd.li/import/import/12972209)
 
 ## 应用内弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12889448)
+- [快照-0](https://i.gkd.li/import/import/12889448)
 
 ## 应用内横幅
 
-- [快照-0](https://gkd-kit.gitee.io/import/12889450)
+- [快照-0](https://i.gkd.li/import/import/12889450)
 
 ## 更新提示
 
-- [快照-0](https://gkd-kit.gitee.io/import/12911011)
+- [快照-0](https://i.gkd.li/import/import/12911011)

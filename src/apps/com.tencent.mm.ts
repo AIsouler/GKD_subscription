@@ -23,10 +23,10 @@ export default defineAppConfig({
           matches:
             'ImageView - TextView[text="广告"][clickable=true][id!=null]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642588',
-            'https://gkd-kit.gitee.io/import/12888129', //ImageView - TextView[text="广告"][id!=null][index=0]这个规则无法匹配该广告，需要删除[index=0]
-            'https://gkd-kit.gitee.io/import/12907641',
-            'https://gkd-kit.gitee.io/import/13000395',
+            'https://i.gkd.li/import/import/12642588',
+            'https://i.gkd.li/import/import/12888129', //ImageView - TextView[text="广告"][id!=null][index=0]这个规则无法匹配该广告，需要删除[index=0]
+            'https://i.gkd.li/import/import/12907641',
+            'https://i.gkd.li/import/import/13000395',
           ],
         },
         // 以下是[确认关闭按钮]出现的情况
@@ -37,14 +37,14 @@ export default defineAppConfig({
           name: '你觉得这条广告怎么样-点击[关闭该广告]',
           matches:
             '@LinearLayout[clickable=true][childCount=2] > [text="关闭该广告"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642584'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12642584'],
         },
         {
           preKeys: 1,
           key: 2,
           name: '关闭该广告的原因-点击[直接关闭]',
           matches: '[text="关闭该广告的原因"] +(2) [text="直接关闭"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12663984'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12663984'],
         },
         // 情况2 - 关闭该广告
         {
@@ -53,7 +53,7 @@ export default defineAppConfig({
           name: '对这条广告不感兴趣-点击[关闭该广告]',
           matches:
             'TextView[text="你可以这样优化广告推荐"] + TextView[text="关闭该广告"][clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12907642',
+          snapshotUrls: 'https://i.gkd.li/import/import/12907642',
         },
       ],
     },
@@ -107,7 +107,7 @@ export default defineAppConfig({
         'com.tencent.mm.ui.LauncherUI',
       ],
       rules: 'Button[text="拒绝"] - Button[text="允许"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13065462', //com.tencent.mm.ui.LauncherUI
+      snapshotUrls: 'https://i.gkd.li/import/import/13065462', //com.tencent.mm.ui.LauncherUI
     },
     {
       enable: false,
@@ -116,7 +116,7 @@ export default defineAppConfig({
       desc: '自动点击允许,但由于此界面可以额外新建昵称头像,默认不启用',
       activityIds: ['com.tencent.mm.plugin.base.stub.UIEntryStub'],
       rules: 'Button[text="拒绝"] - Button[text="允许"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12663602',
+      snapshotUrls: 'https://i.gkd.li/import/import/12663602',
     },
     {
       key: 4,
@@ -150,7 +150,7 @@ export default defineAppConfig({
           activityIds:
             'com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyBeforeDetailUI',
           matches: 'ImageView[desc="返回"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12567696',
+          snapshotUrls: 'https://i.gkd.li/import/import/12567696',
         },
         {
           key: 1,
@@ -160,8 +160,8 @@ export default defineAppConfig({
           // Button[desc="开"] 会在出现金币动画时会消失
           matches: 'ImageButton[desc="开"] + Button[desc="开"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12567697',
-            'https://gkd-kit.gitee.io/import/12567698', // 额外增加,金币动画的快照,规则不在这个快照上运行
+            'https://i.gkd.li/import/import/12567697',
+            'https://i.gkd.li/import/import/12567698', // 额外增加,金币动画的快照,规则不在这个快照上运行
           ],
         },
         {
@@ -172,7 +172,7 @@ export default defineAppConfig({
           // 第二个 LinearLayout[childCount=1] 区分这个红包是否被领取过
           matches:
             'LinearLayout[childCount=1] >5 LinearLayout[childCount=1] - ImageView < LinearLayout + View + RelativeLayout > TextView[text="微信红包"][id!=null]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12567637',
+          snapshotUrls: 'https://i.gkd.li/import/import/12567637',
         },
       ],
     },
@@ -192,11 +192,11 @@ export default defineAppConfig({
             'View[id="ad_container"] > View[childCount=1] >n @View > [id=null][text^="广告"][visibleToUser=true]',
           ],
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642232', // ui.TmplWebViewMMUI
-            'https://gkd-kit.gitee.io/import/13199281', // ui.TmplWebViewTooLMpUI
-            'https://gkd-kit.gitee.io/import/12646837', // 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
-            'https://gkd-kit.gitee.io/import/12678937', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
-            'https://gkd-kit.gitee.io/import/12714427', // 优化规则，使用 View[id="ad_container"] 作为特征节点
+            'https://i.gkd.li/import/import/12642232', // ui.TmplWebViewMMUI
+            'https://i.gkd.li/import/import/13199281', // ui.TmplWebViewTooLMpUI
+            'https://i.gkd.li/import/import/12646837', // 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
+            'https://i.gkd.li/import/import/12678937', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
+            'https://i.gkd.li/import/import/12714427', // 优化规则，使用 View[id="ad_container"] 作为特征节点
           ],
         },
         {
@@ -205,9 +205,9 @@ export default defineAppConfig({
           matches:
             'View[childCount=1] > @[id="feedbackTagContainer"][visibleToUser=true] > [id="feedbackTag"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12700183',
-            'https://gkd-kit.gitee.io/import/12701503', // 事件完成后，采用[childCount=1]进行限定，防止频繁触发规则
-            'https://gkd-kit.gitee.io/import/12714424',
+            'https://i.gkd.li/import/import/12700183',
+            'https://i.gkd.li/import/import/12701503', // 事件完成后，采用[childCount=1]进行限定，防止频繁触发规则
+            'https://i.gkd.li/import/import/12714424',
           ],
         },
       ],
@@ -226,9 +226,9 @@ export default defineAppConfig({
           key: 1,
           matches: '[text="原图"] - ImageButton[desc="未选中,原图,复选框"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12686641', // 未选中
+            'https://i.gkd.li/import/import/12686641', // 未选中
             'https://i.gkd.li/import/12840865', // 未选中
-            'https://gkd-kit.gitee.io/import/12686640', // 已选中
+            'https://i.gkd.li/import/import/12686640', // 已选中
           ],
         },
       ],
@@ -248,24 +248,24 @@ export default defineAppConfig({
           matches:
             'View > [id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642234',
-            'https://gkd-kit.gitee.io/import/12722301',
-            'https://gkd-kit.gitee.io/import/12722331', // 使用 [id="feedbackTagContainer"][visibleToUser=true] 进行限定，防止反馈界面未出现就触发规则
+            'https://i.gkd.li/import/import/12642234',
+            'https://i.gkd.li/import/import/12722301',
+            'https://i.gkd.li/import/import/12722331', // 使用 [id="feedbackTagContainer"][visibleToUser=true] 进行限定，防止反馈界面未出现就触发规则
           ],
-          action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://gkd-kit.gitee.io/import/12745280 中成功点击 [与我无关]
+          action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://i.gkd.li/import/import/12745280 中成功点击 [与我无关]
         },
         {
           key: 2,
           // preKeys: [2], 取消 preKeys 提高点击成功率
           name: '点击与我无关',
           matches: 'View > [id^="menu"] > [id="isdismatch"][text="与我无关"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642238'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12642238'],
         },
         {
           key: 3,
           name: '点击关闭此广告',
           matches: 'TextView[id="closeBtn"][text="关闭此广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12700191',
+          snapshotUrls: 'https://i.gkd.li/import/import/12700191',
         },
       ],
     },
@@ -276,7 +276,7 @@ export default defineAppConfig({
       desc: '自动点击底部左侧[查看原图（*M）]按钮',
       activityIds: 'com.tencent.mm.ui.chatting.gallery.ImageGalleryUI',
       rules: 'Button[text^="查看原图"][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12706944',
+      snapshotUrls: 'https://i.gkd.li/import/import/12706944',
     },
     {
       enable: false,
@@ -294,17 +294,17 @@ export default defineAppConfig({
             'FrameLayout[childCount<=3] > FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
           ],
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12701979',
-            'https://gkd-kit.gitee.io/import/12777076',
-            'https://gkd-kit.gitee.io/import/12785012',
-            'https://gkd-kit.gitee.io/import/12785183',
+            'https://i.gkd.li/import/import/12701979',
+            'https://i.gkd.li/import/import/12777076',
+            'https://i.gkd.li/import/import/12785012',
+            'https://i.gkd.li/import/import/12785183',
             'https://i.gkd.li/import/13306883',
           ],
         },
         {
           matches:
             '[text="广告"] < * <2 * <2 * <2 FrameLayout[childCount=2] - FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12785246'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12785246'],
         },
       ],
     },
@@ -327,7 +327,7 @@ export default defineAppConfig({
             'RelativeLayout[childCount=1][clickable=true] > [text="提瓦特小助手"]',
             'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
           ],
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12926021'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12926021'],
         },
       ],
     },
@@ -343,7 +343,7 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text="广告"][visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13199282', //[childCount=3]避免在点击展开菜单后重复点击
+            'https://i.gkd.li/import/import/13199282', //[childCount=3]避免在点击展开菜单后重复点击
           ],
         },
       ],
@@ -381,7 +381,7 @@ export default defineAppConfig({
         matches: '@Image -n * > View[text="可横向滚动"]',
         action: 'clickCenter',
       },
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13298294',
+      snapshotUrls: 'https://i.gkd.li/import/import/13298294',
     },
   ],
 });

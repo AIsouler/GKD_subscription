@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text=`跳过广告`]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12472627',
+      snapshotUrls: 'https://i.gkd.li/import/import/12472627',
     },
     {
       key: 1,

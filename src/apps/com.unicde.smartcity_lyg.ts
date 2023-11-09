@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.unicde.smartcity.features.welcome.WelcomeActivity',
       matchLauncher: true,
       rules: '[id="com.unicde.smartcity_lyg:id/tv_down"][text$="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13059584',
+      snapshotUrls: 'https://i.gkd.li/import/import/13059584',
     },
   ],
 });

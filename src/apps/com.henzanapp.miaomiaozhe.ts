@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: 'com.henzanapp.miaomiaozhe.activity.WelcomeActivity',
       rules: '[text="更新提示"] +(2) LinearLayout > [text="取消"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12649457'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12649457'],
     },
   ],
 });

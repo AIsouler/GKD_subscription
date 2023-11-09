@@ -17,7 +17,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'View[childCount=3] > @Image - View[text="花呗服务升级"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12737055', //com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main
+          snapshotUrls: 'https://i.gkd.li/import/import/12737055', //com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main
         },
         {
           key: 1,
@@ -26,9 +26,9 @@ export default defineAppConfig({
             'FrameLayout > FrameLayout  > FrameLayout > [text="关闭"]',
           ],
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13183946', //com.alipay.android.msp.ui.views.MspContainerActivity
+            'https://i.gkd.li/import/import/13183946', //com.alipay.android.msp.ui.views.MspContainerActivity
             'https://i.gkd.li/import/12826077', //com.alipay.android.msp.ui.views.MspUniRenderActivity
-            'https://gkd-kit.gitee.io/import/12915864', //matchLauncher
+            'https://i.gkd.li/import/import/12915864', //matchLauncher
           ],
         },
       ],

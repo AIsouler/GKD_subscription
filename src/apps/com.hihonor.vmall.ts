@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '应用内广告弹窗',
       activityIds: 'com.vmall.client.base.fragment.VmallWapActivity',
       rules: '[id="com.hihonor.vmall:id/gift_close_iv"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13060881',
+      snapshotUrls: 'https://i.gkd.li/import/import/13060881',
     },
   ],
 });

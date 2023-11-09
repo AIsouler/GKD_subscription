@@ -13,13 +13,13 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13051862',
+          snapshotUrls: 'https://i.gkd.li/import/import/13051862',
         },
         {
           matches: '[id="com.didapinche.booking:id/tv_full_skip"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13051805',
-            'https://gkd-kit.gitee.io/import/13051792',
+            'https://i.gkd.li/import/import/13051805',
+            'https://i.gkd.li/import/import/13051792',
           ],
         },
       ],

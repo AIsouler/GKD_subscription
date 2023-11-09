@@ -4,10 +4,10 @@
 
 ## 米家智惠广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12639658)
+- [快照-0](https://i.gkd.li/import/import/12639658)
 
 ## 设备固件升级提示弹窗
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12639671)
+- [快照-0](https://i.gkd.li/import/import/12639671)

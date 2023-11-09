@@ -22,7 +22,7 @@ export default defineAppConfig({
           activityIds: 'com.alibaba.android.rimet.biz.SplashAdvertiseActivity',
           matches:
             '[id="com.alibaba.android.rimet:id/splash_advertise_pass_text"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12837220',
+          snapshotUrls: 'https://i.gkd.li/import/import/12837220',
         },
       ],
     },

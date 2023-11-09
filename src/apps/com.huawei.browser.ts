@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
           action: 'clickCenter',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12681995'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12681995'],
         },
       ],
     },

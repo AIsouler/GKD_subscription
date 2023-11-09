@@ -12,7 +12,7 @@ export default defineAppConfig({
         'LinearLayout[childCount=2] > TextView + TextView[text="跳过"||text="跳过广告"]',
       ],
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12472613',
+        'https://i.gkd.li/import/import/12472613',
         'https://i.gkd.li/import/12511071',
       ],
     },

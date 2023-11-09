@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: '[text="跳过"][text.length<10]',
       snapshotUrls: [
         'https://i.gkd.li/import/13070420',
-        'https://gkd-kit.gitee.io/import/13293751',
+        'https://i.gkd.li/import/import/13293751',
       ],
     },
     {
@@ -26,7 +26,7 @@ export default defineAppConfig({
           matches:
             '[id="com.lptiyu.tanke:id/interact_ad_root"] >n [id="com.lptiyu.tanke:id/iv_close"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12829816',
+            'https://i.gkd.li/import/import/12829816',
             'https://i.gkd.li/import/12869344',
           ],
         },

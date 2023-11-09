@@ -13,8 +13,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.baidu.wenku:id/jump_second"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12520200',
-        'https://gkd-kit.gitee.io/import/12520204',
+        'https://i.gkd.li/import/import/12520200',
+        'https://i.gkd.li/import/import/12520204',
       ],
     },
   ],

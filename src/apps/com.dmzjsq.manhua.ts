@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12885087',
+          snapshotUrls: 'https://i.gkd.li/import/import/12885087',
         },
         {
           key: 1,

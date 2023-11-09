@@ -15,14 +15,14 @@ export default defineAppConfig({
           // 快照里可以选择 @[text="关闭"] < View + View > [text="安装"||text="打开"]
           // 但是实际执行选择器却无法点击, 原因未知, 需要后续排查
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642909',
-            'https://gkd-kit.gitee.io/import/12643316',
+            'https://i.gkd.li/import/import/12642909',
+            'https://i.gkd.li/import/import/12643316',
           ],
         },
         {
           key: 2,
           matches: '[id="adchoiceWrap"] + [id="mv_close_btn"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12643032',
+          snapshotUrls: 'https://i.gkd.li/import/import/12643032',
         },
         {
           key: 3,
@@ -30,8 +30,8 @@ export default defineAppConfig({
           matches:
             'View[clickable=false][childCount=2] > TextView[clickable=true] + View[clickable=true][childCount=1] > Button[clickable=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12643039',
-            'https://gkd-kit.gitee.io/import/12643246',
+            'https://i.gkd.li/import/import/12643039',
+            'https://i.gkd.li/import/import/12643246',
           ],
         },
       ],
@@ -47,9 +47,9 @@ export default defineAppConfig({
           matches:
             '[id=null][text="跳过视频"] < View +(2) @View > Button[clickable=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12668269',
-            'https://gkd-kit.gitee.io/import/12642913',
-            'https://gkd-kit.gitee.io/import/12642932',
+            'https://i.gkd.li/import/import/12668269',
+            'https://i.gkd.li/import/import/12642913',
+            'https://i.gkd.li/import/import/12642932',
           ],
         },
         {
@@ -58,16 +58,16 @@ export default defineAppConfig({
             'Button[id=null][clickable=true] < @View - * < View - View >(n) View[desc="安装"]', // 点中间的View才会关闭广告，最后两个 View 之间的距离不确定
           ],
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642952',
+            'https://i.gkd.li/import/import/12642952',
             // https://github.com/gkd-kit/subscription/pull/136#issuecomment-1723186711
-            'https://gkd-kit.gitee.io/import/12668298',
+            'https://i.gkd.li/import/import/12668298',
           ],
         },
         {
           key: 4,
           cd: 2500,
           matches: ['[desc="了解详情"] - View > [text="关闭"]'],
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642983'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12642983'],
         },
       ],
     },
@@ -80,13 +80,13 @@ export default defineAppConfig({
           matches:
             '[id!="why_this_ad_btn"] -2 View[id="mys-wrapper"] + View >2 Button[clickable=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642993',
-            'https://gkd-kit.gitee.io/import/12643229',
+            'https://i.gkd.li/import/import/12642993',
+            'https://i.gkd.li/import/import/12643229',
           ],
         },
         {
           matches: 'View[desc="Advertisement"] + View >(2) Button',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12643001'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12643001'],
         },
       ],
     },

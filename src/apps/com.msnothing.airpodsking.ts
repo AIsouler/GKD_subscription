@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.msnothing.ad.splash.HomeSplashActivity',
       matchLauncher: true,
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12908449',
+      snapshotUrls: 'https://i.gkd.li/import/import/12908449',
     },
   ],
 });

@@ -9,21 +9,21 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: ['com.jin10.lgd.update.UpdateActivity'],
       rules: '@[id="com.jin10:id/update_cancel"] + [id="com.jin10:id/iv_pic"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706043'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706043'],
     },
     {
       key: 2,
       name: '首页广告弹窗',
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '[id="com.jin10:id/iv_body"] + [id="com.jin10:id/iv_close"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706045'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706045'],
     },
     {
       key: 3,
       name: '快讯页面-广告弹窗',
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '@[id="com.jin10:id/iv_close"] + [id="com.jin10:id/iv_pic"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706047'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706047'],
     },
     {
       enable: false,
@@ -31,7 +31,7 @@ export default defineAppConfig({
       name: '会员页面-顶部广告',
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '[id="com.jin10:id/iv_header"] + [id="com.jin10:id/iv_close"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12706051'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12706051'],
     },
   ],
 });

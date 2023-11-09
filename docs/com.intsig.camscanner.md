@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12668795)
+- [快照-0](https://i.gkd.li/import/import/12668795)
 
 ## 开屏vip提示
 
 ## 主页面上方广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12668813)
+- [快照-0](https://i.gkd.li/import/import/12668813)

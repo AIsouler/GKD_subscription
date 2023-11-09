@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             '[desc="Advertisement"] + View >(2) View + Button[clickable=true]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12642204'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12642204'],
         },
       ],
     },

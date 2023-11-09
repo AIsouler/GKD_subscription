@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.byyoung.setting:id/tv_name"][text*="忽略授权"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12829909',
+          snapshotUrls: 'https://i.gkd.li/import/import/12829909',
         },
       ],
     },

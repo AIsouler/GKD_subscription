@@ -12,8 +12,8 @@ export default defineAppConfig({
         {
           matches: '@[id=null][text^="跳过"] < LinearLayout +(n) ImageView',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12642183',
-            'https://gkd-kit.gitee.io/import/12642185',
+            'https://i.gkd.li/import/import/12642183',
+            'https://i.gkd.li/import/import/12642185',
           ],
         },
       ],

@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="app.podcast.cosmos:id/tvSkip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12883661',
+      snapshotUrls: 'https://i.gkd.li/import/import/12883661',
     },
   ],
 });

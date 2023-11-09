@@ -28,7 +28,7 @@ export default defineAppConfig({
           key: 3,
           matches:
             'TextView[text="广告"] - @LinearLayout[clickable=true] > [text="关闭"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13168386',
+          snapshotUrls: 'https://i.gkd.li/import/import/13168386',
         },
       ],
     },
@@ -52,14 +52,14 @@ export default defineAppConfig({
             'TextView[text$="广告"] <n RelativeLayout <n LinearLayout - RelativeLayout > LinearLayout > FrameLayout +n RelativeLayout > LinearLayout',
           snapshotUrls: [
             'https://i.gkd.li/import/12775930',
-            'https://gkd-kit.gitee.io/import/12840951',
+            'https://i.gkd.li/import/import/12840951',
           ],
         },
         {
           key: 1,
           matches:
             'RelativeLayout[childCount=2] > RelativeLayout[childCount=1][clickable=true] > ImageView',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13060892',
+          snapshotUrls: 'https://i.gkd.li/import/import/13060892',
         },
       ],
     },
@@ -110,7 +110,7 @@ export default defineAppConfig({
         },
       ],
     },
-    // 在"我的"界面中出现不停点击，问题快照: https://gkd-kit.gitee.io/import/12839905
+    // 在"我的"界面中出现不停点击，问题快照: https://i.gkd.li/import/import/12839905
     // 且现有规则缺少快照核实问题所在,故暂时移除规则
     // {
     //   key: 6,
@@ -126,7 +126,7 @@ export default defineAppConfig({
       name: '升级弹窗',
       activityIds: 'com.baidu.tieba.UpdateDialog',
       rules: '[text="稍后再说"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12496934',
+      snapshotUrls: 'https://i.gkd.li/import/import/12496934',
     },
     {
       key: 8,
@@ -150,8 +150,8 @@ export default defineAppConfig({
           matches:
             'View[childCount=3] > @View[clickable=true][childCount=1] > Image',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/13060891',
-            'https://gkd-kit.gitee.io/import/13222361', //childCount=1否则误触这里
+            'https://i.gkd.li/import/import/13060891',
+            'https://i.gkd.li/import/import/13222361', //childCount=1否则误触这里
           ],
         },
         {
@@ -159,7 +159,7 @@ export default defineAppConfig({
           name: '点击正下方x关闭',
           matches:
             '@TextView[clickable=true && text=null] - FrameLayout TextView[text="广告"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13168383',
+          snapshotUrls: 'https://i.gkd.li/import/import/13168383',
         },
       ],
     },
@@ -172,7 +172,7 @@ export default defineAppConfig({
           name: '首页右侧悬浮广告',
           activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
           matches: 'TextView[text="广告"] + ImageView[clickable=true]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13115167',
+          snapshotUrls: 'https://i.gkd.li/import/import/13115167',
         },
         {
           key: 1,

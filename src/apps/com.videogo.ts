@@ -27,12 +27,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.videogo:id/ad_close"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13255684',
+          snapshotUrls: 'https://i.gkd.li/import/import/13255684',
         },
         {
           preKeys: 0,
           matches: '[id="com.videogo:id/ad_closead_nointerest"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13255697',
+          snapshotUrls: 'https://i.gkd.li/import/import/13255697',
         },
       ],
     },

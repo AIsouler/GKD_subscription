@@ -4,7 +4,7 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13052592)
+- [快照-0](https://i.gkd.li/import/import/13052592)
 
 ## 青少年模式弹窗
 
@@ -12,5 +12,5 @@
 
 ## 直播间悬浮广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12901045)
-- [快照-1](https://gkd-kit.gitee.io/import/12901044)
+- [快照-0](https://i.gkd.li/import/import/12901045)
+- [快照-1](https://i.gkd.li/import/import/12901044)

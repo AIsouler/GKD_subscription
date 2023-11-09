@@ -12,8 +12,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id="AdViewSkipBtn"] >(2) TextView[text^="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12642434',
-        'https://gkd-kit.gitee.io/import/12901349', // com.bbk.launcher2.Launcher
+        'https://i.gkd.li/import/import/12642434',
+        'https://i.gkd.li/import/import/12901349', // com.bbk.launcher2.Launcher
       ],
     },
     {
@@ -25,7 +25,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@[text="取消"] < ViewGroup - ScrollView >(2) [text*="新版本"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12642445',
+          snapshotUrls: 'https://i.gkd.li/import/import/12642445',
         },
         {
           key: 1,
@@ -39,7 +39,7 @@ export default defineAppConfig({
       name: '专属月报弹窗',
       activityIds: 'com.sf.activity.MainActivity',
       rules: ['[id="MonthReportDialogCloseBtn"] > ImageView'],
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12642441',
+      snapshotUrls: 'https://i.gkd.li/import/import/12642441',
     },
   ],
 });

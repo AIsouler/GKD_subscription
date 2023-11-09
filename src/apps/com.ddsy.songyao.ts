@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.ddsy.songyao:id/time"][text*="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13048719',
+          snapshotUrls: 'https://i.gkd.li/import/import/13048719',
         },
       ],
     },
@@ -26,7 +26,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.ddsy.songyao:id/iv_coupon_bottom"] + [id="com.ddsy.songyao:id/iv_close"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13048720',
+          snapshotUrls: 'https://i.gkd.li/import/import/13048720',
         },
       ],
     },

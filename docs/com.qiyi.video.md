@@ -10,12 +10,12 @@
 
 ## 我的-顶部广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12495050)
+- [快照-0](https://i.gkd.li/import/import/12495050)
 
 ## 开启推送通知弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12838152)
+- [快照-0](https://i.gkd.li/import/import/12838152)
 
 ## 版本更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12838158)
+- [快照-0](https://i.gkd.li/import/import/12838158)

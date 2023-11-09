@@ -15,9 +15,9 @@ export default defineAppConfig({
           matches:
             '[id="com.byted.pangle:id/tt_splash_skip_btn"||text^="跳过"&&id=null]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12620568',
-            'https://gkd-kit.gitee.io/import/12620577',
-            'https://gkd-kit.gitee.io/import/12621997',
+            'https://i.gkd.li/import/import/12620568',
+            'https://i.gkd.li/import/import/12620577',
+            'https://i.gkd.li/import/import/12621997',
           ],
         },
         {
@@ -26,8 +26,8 @@ export default defineAppConfig({
           matches:
             '[id="com.dongqiudi.news:id/ad_skip_time"] + [id="com.dongqiudi.news:id/scale_iv"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12620583',
-            'https://gkd-kit.gitee.io/import/12621953',
+            'https://i.gkd.li/import/import/12620583',
+            'https://i.gkd.li/import/import/12621953',
           ],
         },
       ],
@@ -41,7 +41,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="青少年模式"] + [id="com.dongqiudi.news:id/tv_know"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12621980',
+      snapshotUrls: 'https://i.gkd.li/import/import/12621980',
     },
     {
       key: 2,
@@ -52,14 +52,14 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12620586',
+      snapshotUrls: 'https://i.gkd.li/import/import/12620586',
     },
     {
       key: 3,
       name: '穿山甲广告弹窗',
       activityIds: 'com.dongqiudi.news.MainActivity',
       rules: 'FrameLayout[desc^="webview-close"] > View[clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12620588',
+      snapshotUrls: 'https://i.gkd.li/import/import/12620588',
     },
     {
       enable: false,
@@ -74,19 +74,19 @@ export default defineAppConfig({
           name: '首页信息流广告-反馈理由',
           matches:
             'TextView[text="诱导点击"][id="com.dongqiudi.news:id/text_item"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12620656',
+          snapshotUrls: 'https://i.gkd.li/import/import/12620656',
         },
         {
           key: 1,
           matches:
             'TextView[id="com.dongqiudi.news:id/ads_label"] +(n) ImageView[id="com.dongqiudi.news:id/feedback_close"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12620654',
+          snapshotUrls: 'https://i.gkd.li/import/import/12620654',
         },
         {
           key: 2,
           matches:
             'TextView[id="com.dongqiudi.news:id/ads_title"] +(2) RelativeLayout > ImageView[id="com.dongqiudi.news:id/feedback_close"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12620788',
+          snapshotUrls: 'https://i.gkd.li/import/import/12620788',
         },
       ],
     },

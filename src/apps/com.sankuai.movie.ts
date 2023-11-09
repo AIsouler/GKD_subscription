@@ -13,8 +13,8 @@ export default defineAppConfig({
       ],
       rules: '[text="点击跳转详情页"] < FrameLayout +(2) [text$="跳过"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12649967', // activityId: com.sankuai.movie.welcome.Welcome
-        'https://gkd-kit.gitee.io/import/12649911', // activityId: com.miui.home.launcher.Launcher
+        'https://i.gkd.li/import/import/12649967', // activityId: com.sankuai.movie.welcome.Welcome
+        'https://i.gkd.li/import/import/12649911', // activityId: com.miui.home.launcher.Launcher
       ],
     },
     {
@@ -26,8 +26,8 @@ export default defineAppConfig({
       ],
       rules: '[text^="更新"] +(3) LinearLayout > [text="取消"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12649942', // activityId: com.maoyan.android.adx.popupads.d
-        'https://gkd-kit.gitee.io/import/12649938', // activityId: com.miui.home.launcher.Launcher
+        'https://i.gkd.li/import/import/12649942', // activityId: com.maoyan.android.adx.popupads.d
+        'https://i.gkd.li/import/import/12649938', // activityId: com.miui.home.launcher.Launcher
       ],
     },
   ],

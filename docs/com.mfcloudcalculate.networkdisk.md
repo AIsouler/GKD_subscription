@@ -6,4 +6,4 @@
 
 - [快照-0](https://i.gkd.li/import/12846434)
 - [快照-1](https://i.gkd.li/import/13059834)
-- [快照-2](https://gkd-kit.gitee.io/import/13259303)
+- [快照-2](https://i.gkd.li/import/import/13259303)

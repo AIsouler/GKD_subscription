@@ -4,4 +4,4 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12673154)
+- [快照-0](https://i.gkd.li/import/import/12673154)

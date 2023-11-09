@@ -4,16 +4,16 @@
 
 ## 首页顶部广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12707733)
+- [快照-0](https://i.gkd.li/import/import/12707733)
 
 ## 开门有奖弹窗
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12707736)
+- [快照-0](https://i.gkd.li/import/import/12707736)
 
 ## 获得金币弹窗
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12707738)
+- [快照-0](https://i.gkd.li/import/import/12707738)

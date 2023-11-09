@@ -13,8 +13,8 @@
 ## 首页-浮窗广告
 
 - [快照-0](https://i.gkd.li/import/13197634)
-- [快照-1](https://gkd-kit.gitee.io/import/13246242)
+- [快照-1](https://i.gkd.li/import/import/13246242)
 
 ## 更新提示
 
-- [快照-0](https://gkd-kit.gitee.io/import/13234668)
+- [快照-0](https://i.gkd.li/import/import/13234668)

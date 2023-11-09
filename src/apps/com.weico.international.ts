@@ -12,8 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: 'TextView[text^="跳过"][text.length<10]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12509123',
-        'https://gkd-kit.gitee.io/import/12510132',
+        'https://i.gkd.li/import/import/12509123',
+        'https://i.gkd.li/import/import/12510132',
         'https://i.gkd.li/import/12740537', // activityId: 'com.sina.weibo.ad'
       ],
     },
@@ -33,8 +33,8 @@ export default defineAppConfig({
           name: '点击不感兴趣',
           matches: '@View > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12505755',
-            'https://gkd-kit.gitee.io/import/12505764',
+            'https://i.gkd.li/import/import/12505755',
+            'https://i.gkd.li/import/import/12505764',
           ],
         },
         {
@@ -42,8 +42,8 @@ export default defineAppConfig({
           name: '点击广告卡片右上角[x]',
           matches: '[id="com.weico.international:id/item_timeline_ad_action"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12505753',
-            'https://gkd-kit.gitee.io/import/12505763',
+            'https://i.gkd.li/import/import/12505753',
+            'https://i.gkd.li/import/import/12505763',
             'https://i.gkd.li/import/12857202',
           ],
         },

@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.tbc.android.defaults:id/tvLoginAdSkip"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12685253'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12685253'],
         },
       ],
     },

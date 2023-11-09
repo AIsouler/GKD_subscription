@@ -4,7 +4,7 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/13197061)
+- [快照-0](https://i.gkd.li/import/import/13197061)
 
 ## 首页-推荐-卡片广告
 
@@ -20,8 +20,8 @@
 
 点击右上角圆形x
 
-- [快照-0](https://gkd-kit.gitee.io/import/13256447)
+- [快照-0](https://i.gkd.li/import/import/13256447)
 
 ## 关闭开启通知弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/13256505)
+- [快照-0](https://i.gkd.li/import/import/13256505)

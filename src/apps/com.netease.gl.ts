@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.netease.gl:id/tv_next_step"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12883227',
+      snapshotUrls: 'https://i.gkd.li/import/import/12883227',
     },
     {
       key: 1,
@@ -30,7 +30,7 @@ export default defineAppConfig({
           activityIds: 'com.netease.gl.ui.activity.welcome.WelcomeActivity',
           matches:
             '@[id="com.netease.gl:id/iv_close"] + [id="com.netease.gl:id/iv_cover"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12883277',
+          snapshotUrls: 'https://i.gkd.li/import/import/12883277',
         },
       ],
     },

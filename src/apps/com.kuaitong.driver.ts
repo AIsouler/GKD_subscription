@@ -13,13 +13,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.kuaitong.driver:id/ksad_splash_circle_skip_view"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13059956',
+          snapshotUrls: 'https://i.gkd.li/import/import/13059956',
         },
         {
           key: 1,
           matches:
             '[id="com.kuaitong.driver:id/ad_dcloud_splash_container"] >n [text="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13059954',
+          snapshotUrls: 'https://i.gkd.li/import/import/13059954',
         },
       ],
     },

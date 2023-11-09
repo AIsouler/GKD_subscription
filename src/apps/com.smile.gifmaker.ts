@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.smile.gifmaker:id/splash_skip_text"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12708602',
+      snapshotUrls: 'https://i.gkd.li/import/import/12708602',
     },
     {
       key: 0,
@@ -26,7 +26,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.smile.gifmaker:id/set_teenage_mode"] + [id="com.smile.gifmaker:id/positive"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12708609',
+          snapshotUrls: 'https://i.gkd.li/import/import/12708609',
         },
       ],
     },
@@ -42,15 +42,15 @@ export default defineAppConfig({
           matches:
             '@ImageView[id=null][clickable=true] + ViewGroup > [text!=null] + [text!=null]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12708649',
-            'https://gkd-kit.gitee.io/import/12708660',
+            'https://i.gkd.li/import/import/12708649',
+            'https://i.gkd.li/import/import/12708660',
           ],
         },
         {
           name: '限时高额奖励弹窗',
           matches:
             '@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup >2 [text="立即领取"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12708681'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12708681'],
         },
       ],
     },
@@ -65,8 +65,8 @@ export default defineAppConfig({
           matches:
             '[id="com.smile.gifmaker:id/pendant_mask_bg"] + [id="com.smile.gifmaker:id/pendant_close"][visibleToUser=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12708671',
-            'https://gkd-kit.gitee.io/import/12708676', // 执行规则后，控件隐藏，使用 visibleToUser=true 进行限定，防止反复触发规则
+            'https://i.gkd.li/import/import/12708671',
+            'https://i.gkd.li/import/import/12708676', // 执行规则后，控件隐藏，使用 visibleToUser=true 进行限定，防止反复触发规则
           ],
         },
       ],
@@ -79,8 +79,8 @@ export default defineAppConfig({
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: '[id="com.smile.gifmaker:id/close_pymk"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12708620',
-        'https://gkd-kit.gitee.io/import/12708707',
+        'https://i.gkd.li/import/import/12708620',
+        'https://i.gkd.li/import/import/12708707',
       ],
     },
   ],

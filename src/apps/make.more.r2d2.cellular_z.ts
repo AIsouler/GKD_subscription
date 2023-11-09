@@ -11,11 +11,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text^="跳过"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12648511',
+          snapshotUrls: 'https://i.gkd.li/import/import/12648511',
         },
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12747314',
+          snapshotUrls: 'https://i.gkd.li/import/import/12747314',
         },
       ],
     },

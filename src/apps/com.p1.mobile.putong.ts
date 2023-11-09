@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.p1.mobile.putong.account.ui.welcome.SplashAct',
       rules: '@LinearLayout > TextView[text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12866488',
+      snapshotUrls: 'https://i.gkd.li/import/import/12866488',
     },
   ],
 });

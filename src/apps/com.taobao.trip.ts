@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.taobao.trip:id/splash_biz_skip_ad"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13065579',
+          snapshotUrls: 'https://i.gkd.li/import/import/13065579',
         },
       ],
     },

@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.sfacg:id/tv_jump"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13185579',
+          snapshotUrls: 'https://i.gkd.li/import/import/13185579',
         },
       ],
     },

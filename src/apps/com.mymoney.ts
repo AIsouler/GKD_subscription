@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.mymoney.biz.splash.SplashScreenActivity',
       rules: '[id="com.mymoney:id/external_ad_content"] >2 [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12709192',
+      snapshotUrls: 'https://i.gkd.li/import/import/12709192',
     },
   ],
 });

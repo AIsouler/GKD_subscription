@@ -190,7 +190,7 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
             groupKey: g.key,
           });
           throw new Error(
-            `invalid snapshotUrls: ${u}\nit should like https://gkd-kit.gitee.io/import/12506571`,
+            `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/import/import/12506571`,
           );
         }
       });
@@ -205,7 +205,7 @@ export const checkConfig = (newConfig: SubscriptionConfig) => {
               ruleKey: r.key,
             });
             throw new Error(
-              `invalid snapshotUrls: ${u}\nit should like https://gkd-kit.gitee.io/import/12506571`,
+              `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/import/import/12506571`,
             );
           }
         });

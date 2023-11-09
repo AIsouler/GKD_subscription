@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.taobao.idlefish:id/advert_close"]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12668670', //com.taobao.idlefish.maincontainer.activity.MainActivity
-            'https://gkd-kit.gitee.io/import/13049015', //com.taobao.fleamarket.home.activity.InitActivity
+            'https://i.gkd.li/import/import/12668670', //com.taobao.idlefish.maincontainer.activity.MainActivity
+            'https://i.gkd.li/import/import/13049015', //com.taobao.fleamarket.home.activity.InitActivity
           ],
         },
       ],

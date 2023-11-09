@@ -4,4 +4,4 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12727845)
+- [快照-0](https://i.gkd.li/import/import/12727845)

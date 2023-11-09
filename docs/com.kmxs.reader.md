@@ -4,30 +4,30 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640282)
+- [快照-0](https://i.gkd.li/import/import/12640282)
 
 ## 青少年模式弹窗
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12641338)
+- [快照-0](https://i.gkd.li/import/import/12641338)
 
 ## 阅读页面底部广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640296)
+- [快照-0](https://i.gkd.li/import/import/12640296)
 
 ## 阅读结束后显示的广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640303)
+- [快照-0](https://i.gkd.li/import/import/12640303)
 
 ## 签到弹窗
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640320)
+- [快照-0](https://i.gkd.li/import/import/12640320)
 
 ## 右侧悬浮红包
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12640287)
+- [快照-0](https://i.gkd.li/import/import/12640287)

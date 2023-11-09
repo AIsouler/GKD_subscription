@@ -10,7 +10,7 @@ export default defineAppConfig({
       matchLauncher: true,
       rules:
         'View[childCount=4] > [desc^="跳过（"][desc.length<=6][clickable=true]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12865344',
+      snapshotUrls: 'https://i.gkd.li/import/import/12865344',
     },
   ],
 });

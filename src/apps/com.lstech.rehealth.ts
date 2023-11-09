@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.lstech.rehealth.splash.SplashActivity',
       rules:
         '[id="com.lstech.rehealth:id/ksad_splash_root_container"] [text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12830071',
+      snapshotUrls: 'https://i.gkd.li/import/import/12830071',
     },
   ],
 });

@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.ikang.official:id/llAdvertCountdown"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13197061',
+          snapshotUrls: 'https://i.gkd.li/import/import/13197061',
         },
       ],
     },

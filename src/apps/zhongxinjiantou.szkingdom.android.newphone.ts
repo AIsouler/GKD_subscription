@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="zhongxinjiantou.szkingdom.android.newphone:id/kds_advertise_btn_timmer"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12924454',
+          snapshotUrls: 'https://i.gkd.li/import/import/12924454',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="zhongxinjiantou.szkingdom.android.newphone:id/tv_notify_confirm_off"][text="放弃通知"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12924466',
+          snapshotUrls: 'https://i.gkd.li/import/import/12924466',
         },
       ],
     },

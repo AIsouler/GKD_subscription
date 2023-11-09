@@ -4,47 +4,47 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12657379)
+- [快照-0](https://i.gkd.li/import/import/12657379)
 - [快照-1](https://i.gkd.li/import/13069736)
 
 ## 主题详情页“下应用领主题”横幅
 
-- [快照-0](https://gkd-kit.gitee.io/import/12647175)
+- [快照-0](https://i.gkd.li/import/import/12647175)
 
 ## 主题详情页广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12647248)
-- [快照-1](https://gkd-kit.gitee.io/import/12647292)
-- [快照-2](https://gkd-kit.gitee.io/import/12647367)
+- [快照-0](https://i.gkd.li/import/import/12647248)
+- [快照-1](https://i.gkd.li/import/import/12647292)
+- [快照-2](https://i.gkd.li/import/import/12647367)
 
 ## 主题详情页广告关闭弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12647268)
+- [快照-0](https://i.gkd.li/import/import/12647268)
 
 ## 主题详情信息流广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12647311)
-- [快照-1](https://gkd-kit.gitee.io/import/12647346)
-- [快照-2](https://gkd-kit.gitee.io/import/12647326)
+- [快照-0](https://i.gkd.li/import/import/12647311)
+- [快照-1](https://i.gkd.li/import/import/12647346)
+- [快照-2](https://i.gkd.li/import/import/12647326)
 
 ## 分类页“免费领取”
 
-- [快照-0](https://gkd-kit.gitee.io/import/12647393)
+- [快照-0](https://i.gkd.li/import/import/12647393)
 
 ## 主页面（推荐、分类、我的）广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12647614)
-- [快照-1](https://gkd-kit.gitee.io/import/12647653)
-- [快照-2](https://gkd-kit.gitee.io/import/12647650)
-- [快照-3](https://gkd-kit.gitee.io/import/12657822)
-- [快照-4](https://gkd-kit.gitee.io/import/12647655)
+- [快照-0](https://i.gkd.li/import/import/12647614)
+- [快照-1](https://i.gkd.li/import/import/12647653)
+- [快照-2](https://i.gkd.li/import/import/12647650)
+- [快照-3](https://i.gkd.li/import/import/12657822)
+- [快照-4](https://i.gkd.li/import/import/12647655)
 
 ## 首页活动弹窗-默认禁用
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12657939)
-- [快照-1](https://gkd-kit.gitee.io/import/12667815)
+- [快照-0](https://i.gkd.li/import/import/12657939)
+- [快照-1](https://i.gkd.li/import/import/12667815)
 
 ## 更新弹窗
 

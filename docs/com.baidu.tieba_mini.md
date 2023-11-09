@@ -4,5 +4,5 @@
 
 ## 首页-信息流广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12905039)
-- [快照-1](https://gkd-kit.gitee.io/import/12904633)
+- [快照-0](https://i.gkd.li/import/import/12905039)
+- [快照-1](https://i.gkd.li/import/import/12904633)

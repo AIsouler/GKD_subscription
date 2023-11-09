@@ -6,5 +6,5 @@
 
 点击跳过
 
-- [快照-0](https://gkd-kit.gitee.io/import/12922866)
+- [快照-0](https://i.gkd.li/import/import/12922866)
 - [快照-1](https://i.gkd.li/import/13031192)

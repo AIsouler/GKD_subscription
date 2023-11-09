@@ -11,16 +11,16 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'ImageView -(4) LinearLayout[childCount=2] > [text^="跳过"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684539'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12684539'],
         },
         {
           matches:
             '[id="com.excean.splay:id/fl_jump"] - RelativeLayout > [text="跳过"][clickable=true]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684565'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12684565'],
         },
         {
           matches: '[id="com.excean.splay:id/render_ad_skip"][text^="跳过"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684579'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12684579'],
         },
       ],
     },
@@ -32,7 +32,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.excean.splay:id/positive"][text="立即更新"] + [id="com.excean.splay:id/negative"][text="忽略"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12684551'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12684551'],
         },
       ],
     },

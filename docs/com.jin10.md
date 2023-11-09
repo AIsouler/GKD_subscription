@@ -4,18 +4,18 @@
 
 ## 更新弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706043)
+- [快照-0](https://i.gkd.li/import/import/12706043)
 
 ## 首页广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706045)
+- [快照-0](https://i.gkd.li/import/import/12706045)
 
 ## 快讯页面-广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706047)
+- [快照-0](https://i.gkd.li/import/import/12706047)
 
 ## 会员页面-顶部广告
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12706051)
+- [快照-0](https://i.gkd.li/import/import/12706051)

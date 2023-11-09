@@ -9,14 +9,14 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.cubic.autohome.MainActivity',
       rules: '[id="com.cubic.autohome:id/ad_splash_skip"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12660744',
+      snapshotUrls: 'https://i.gkd.li/import/import/12660744',
     },
     {
       key: 1,
       name: '弹窗广告',
       activityIds: 'com.cubic.autohome.MainActivity',
       rules: '[id="com.cubic.autohome:id/operate_show_exit_layout"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12836324',
+      snapshotUrls: 'https://i.gkd.li/import/import/12836324',
     },
   ],
 });

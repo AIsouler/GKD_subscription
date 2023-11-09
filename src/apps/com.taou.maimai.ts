@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.taou.maimai:id/skipBtnNormal"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12840698',
+          snapshotUrls: 'https://i.gkd.li/import/import/12840698',
         },
       ],
     },

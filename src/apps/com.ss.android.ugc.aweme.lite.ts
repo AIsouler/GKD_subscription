@@ -11,7 +11,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: 'Button[desc="开启青少年模式"] + Button[text="我知道了"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13111607',
+      snapshotUrls: 'https://i.gkd.li/import/import/13111607',
     },
   ],
 });

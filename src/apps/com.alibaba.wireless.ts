@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.alibaba.wireless.launch.home.V5HomeActivity',
       rules: '[id="com.alibaba.wireless:id/v5_splash_over"][text^="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/12684411',
+      snapshotUrls: 'https://i.gkd.li/import/import/12684411',
     },
     {
       key: 1,
@@ -21,8 +21,8 @@ export default defineAppConfig({
       rules:
         '[id="com.alibaba.wireless:id/update_title"] +(2) LinearLayout >(2) [text="取消"]',
       snapshotUrls: [
-        'https://gkd-kit.gitee.io/import/12684422',
-        'https://gkd-kit.gitee.io/import/12684426',
+        'https://i.gkd.li/import/import/12684422',
+        'https://i.gkd.li/import/import/12684426',
       ],
     },
   ],

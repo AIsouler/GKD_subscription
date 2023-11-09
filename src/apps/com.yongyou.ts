@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: ['com.yongyou.ui.main.WelcomeActivity'],
       rules: '[id="com.yongyou:id/tv_jump"][text^="跳过"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12705337'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12705337'],
     },
   ],
 });

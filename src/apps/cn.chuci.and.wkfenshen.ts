@@ -15,7 +15,7 @@ export default defineAppConfig({
             '[id="cn.chuci.and.wkfenshen:id/dialog_local_buy_btn"]',
             '[id="cn.chuci.and.wkfenshen:id/action_close"]',
           ],
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/13226988',
+          snapshotUrls: 'https://i.gkd.li/import/import/13226988',
         },
       ],
     },

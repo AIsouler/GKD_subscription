@@ -15,7 +15,7 @@ export default defineAppConfig({
           activityIds: [],
           matches:
             'TextView[text*="尝试安装应用"] < LinearLayout +2n LinearLayout > Button[text="继续"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12874746',
+          snapshotUrls: 'https://i.gkd.li/import/import/12874746',
         },
         {
           key: 1,
@@ -52,7 +52,7 @@ export default defineAppConfig({
           name: '点击【继续安装】',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
           matches: '@[text="继续安装"] + [text="取消安装"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12889120',
+          snapshotUrls: 'https://i.gkd.li/import/import/12889120',
         },
 
         // 需勾选【已了解此应用未经安全检测】才能继续安装
@@ -63,8 +63,8 @@ export default defineAppConfig({
           matches:
             '[id="com.miui.packageinstaller:id/install_checked"][checked=false]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12888410', // 未勾选
-            'https://gkd-kit.gitee.io/import/12889120', // 已勾选
+            'https://i.gkd.li/import/import/12888410', // 未勾选
+            'https://i.gkd.li/import/import/12889120', // 已勾选
           ],
         },
 
@@ -74,7 +74,7 @@ export default defineAppConfig({
           name: '点击【了解风险】',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
           matches: '@[text="了解风险"] + [text="取消安装"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12889135',
+          snapshotUrls: 'https://i.gkd.li/import/import/12889135',
         },
         {
           preKeys: 3,
@@ -84,8 +84,8 @@ export default defineAppConfig({
           matches:
             '[id="com.miui.packageinstaller:id/install_checked"][checked=false]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12889137', // 未勾选
-            'https://gkd-kit.gitee.io/import/12889148', // 已勾选
+            'https://i.gkd.li/import/import/12889137', // 未勾选
+            'https://i.gkd.li/import/import/12889148', // 已勾选
           ],
         },
         {
@@ -94,7 +94,7 @@ export default defineAppConfig({
           name: '点击【仍然安装】',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
           matches: '@[text="仍然安装"] + [text="取消安装"]',
-          snapshotUrls: 'https://gkd-kit.gitee.io/import/12889148',
+          snapshotUrls: 'https://i.gkd.li/import/import/12889148',
         },
 
         // 安装完成

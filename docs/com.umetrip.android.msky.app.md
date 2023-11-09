@@ -4,7 +4,7 @@
 
 ## 开屏广告
 
-- [快照-0](https://gkd-kit.gitee.io/import/12642287)
+- [快照-0](https://i.gkd.li/import/import/12642287)
 
 ## 酒店-弹窗广告
 
@@ -16,8 +16,8 @@
 
 默认禁用
 
-- [快照-0](https://gkd-kit.gitee.io/import/12838294)
-- [快照-1](https://gkd-kit.gitee.io/import/12838293)
+- [快照-0](https://i.gkd.li/import/import/12838294)
+- [快照-1](https://i.gkd.li/import/import/12838293)
 
 ## 进入飞行模式-提示弹窗
 

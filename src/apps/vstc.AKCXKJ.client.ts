@@ -14,11 +14,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12661199'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12661199'],
         },
         {
           matches: '@[id=null][text^="跳过"] < LinearLayout +(4) ImageView',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12661178'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12661178'],
         },
       ],
     },

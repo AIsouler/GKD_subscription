@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: ['com.ys.resemble.ui.login.splash.SplashSecondAdActivity'],
       rules: '[id="com.feicui.vdhelper:id/txt_skip"][text^="跳过"]',
-      snapshotUrls: ['https://gkd-kit.gitee.io/import/12700730'],
+      snapshotUrls: ['https://i.gkd.li/import/import/12700730'],
     },
     {
       key: 1,
@@ -18,26 +18,26 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'ImageView - FrameLayout >(2) ImageView[id=null]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12700749'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12700749'],
         },
         {
           matches: [
             'ImageView + [id=null][text="广告"]',
             'ImageView + [id=null][text="跳过"]',
           ],
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12700759'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12700759'],
         },
         {
           matches:
             '[text="广告"] - ImageView < ViewGroup -(2) ViewGroup >(2) ImageView[id=null]',
-          snapshotUrls: ['https://gkd-kit.gitee.io/import/12700800'],
+          snapshotUrls: ['https://i.gkd.li/import/import/12700800'],
         },
         {
           activityIds: ['com.sigmob.sdk.base.common.TransparentAdActivity'],
           matches: '[id="close_btn"][clickable=true]',
           snapshotUrls: [
-            'https://gkd-kit.gitee.io/import/12700837',
-            'https://gkd-kit.gitee.io/import/12700848', // 为了兼容此快照，仅使用 id="close_btn" 进行匹配
+            'https://i.gkd.li/import/import/12700837',
+            'https://i.gkd.li/import/import/12700848', // 为了兼容此快照，仅使用 id="close_btn" 进行匹配
           ],
         },
       ],

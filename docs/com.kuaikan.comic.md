@@ -6,8 +6,8 @@
 
 ## 关闭青少年模式弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12565678)
+- [快照-0](https://i.gkd.li/import/import/12565678)
 
 ## 漫画界面-底部广告弹窗
 
-- [快照-0](https://gkd-kit.gitee.io/import/12910268)
+- [快照-0](https://i.gkd.li/import/import/12910268)
