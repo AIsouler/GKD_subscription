@@ -99,7 +99,6 @@ export default defineAppConfig({
 
         // 安装完成
         {
-          preKeys: [0, 1, 5],
           key: 6,
           name: '点击【完成】',
           activityIds: [
@@ -164,7 +163,6 @@ export default defineAppConfig({
 
         // 更新完成
         {
-          preKeys: [0, 1],
           key: 3,
           name: '点击【完成】',
           activityIds: [
