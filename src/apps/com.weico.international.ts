@@ -7,11 +7,10 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      activityIds: [
-        'com.weico.international.ui.ad.AdActivity',
-        'com.sina.weibo.ad',
-      ],
-      rules: 'TextView[text*="跳过"]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: 'TextView[text^="跳过"][text.length<10]',
       snapshotUrls: [
         'https://gkd-kit.gitee.io/import/12509123',
         'https://gkd-kit.gitee.io/import/12510132',
