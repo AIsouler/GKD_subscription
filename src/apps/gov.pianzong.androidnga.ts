@@ -8,11 +8,9 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchLauncher: true,
-      activityIds: [
-        'gov.pianzong.androidnga.activity.LoadingActivity',
-        'gov.pianzong.androidnga.activity.WarmstartActivity',
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         '[id="gov.pianzong.androidnga:id/iv_tg_ad"]',
         '[id="gov.pianzong.androidnga:id/ksad_splash_circle_skip_view"]',
@@ -34,7 +32,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '话题-帖子列表广告',
-      desc: '点击卡片右下角x按钮关闭广告',
+      desc: '点击卡片x按钮关闭广告',
       activityIds:
         'gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity',
       rules: [
@@ -46,6 +44,11 @@ export default defineAppConfig({
           matches:
             'TextView[text!=null] - ImageView < LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView[id=null]',
           snapshotUrls: ['https://gkd-kit.gitee.io/import/12706140'],
+        },
+        {
+          matches:
+            '[text="广告"] - [id="gov.pianzong.androidnga:id/iv_information_ad_close"]',
+          snapshotUrls: ['https://i.gkd.li/import/13303236'],
         },
       ],
     },
