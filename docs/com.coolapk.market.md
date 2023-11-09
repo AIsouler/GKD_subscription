@@ -1,6 +1,6 @@
 # 酷安
 
-存在 3 规则组 - [com.coolapk.market](/src/apps/com.coolapk.market.ts)
+存在 4 规则组 - [com.coolapk.market](/src/apps/com.coolapk.market.ts)
 
 ## 开屏广告
 
@@ -11,6 +11,7 @@
 - [快照-4](https://i.gkd.li/import/import/13211392)
 - [快照-5](https://i.gkd.li/import/13247733)
 - [快照-6](https://i.gkd.li/import/13247782)
+- [快照-7](https://i.gkd.li/import/13296816)
 
 ## 卡片广告
 
@@ -33,3 +34,7 @@
 ## 关闭升级弹窗
 
 - [快照-0](https://i.gkd.li/import/import/12503762)
+
+## 关闭推送通知
+
+- [快照-0](https://i.gkd.li/import/import/13296465)

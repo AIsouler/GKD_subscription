@@ -39,9 +39,14 @@
 - [快照-1](https://i.gkd.li/import/import/13212209)
 - [快照-2](https://i.gkd.li/import/13228977)
 
-## 视频内免流卡
+## 视频悬浮广告
+
+领取大会员月卡,B站免流星卡
+
+- [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb)
 
 - [快照-0](https://i.gkd.li/import/import/12892611)
+- [快照-1](https://i.gkd.li/import/13308344)
 
 ## 直播间卡片广告
 

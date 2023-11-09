@@ -5,6 +5,7 @@
 ## 关闭开启通知弹窗
 
 - [快照-0](https://i.gkd.li/import/import/13223669)
+- [快照-1](https://i.gkd.li/import/import/13293000)
 
 ## 更新弹窗
 

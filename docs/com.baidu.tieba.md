@@ -48,6 +48,7 @@
 - [快照-1](https://i.gkd.li/import/import/13222361)
 - [快照-2](https://i.gkd.li/import/import/13168383)
 
-## 首页-悬浮小广告
+## 悬浮小广告
 
 - [快照-0](https://i.gkd.li/import/import/13115167)
+- [快照-1](https://i.gkd.li/import/13296280)

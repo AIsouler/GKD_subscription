@@ -22,8 +22,9 @@
 点击关闭-点击屏蔽
 
 - [快照-0](https://i.gkd.li/import/import/12506269)
-- [快照-1](https://i.gkd.li/import/import/12506225)
-- [快照-2](https://i.gkd.li/import/import/12701414)
+- [快照-1](https://i.gkd.li/import/import/13296565)
+- [快照-2](https://i.gkd.li/import/import/12506225)
+- [快照-3](https://i.gkd.li/import/import/12701414)
 
 ## 播放页面-播放前广告
 
@@ -61,7 +62,8 @@
 默认禁用 - 点击图片中【x】,原因选【不感兴趣】
 
 - [快照-0](https://i.gkd.li/import/import/13194838)
-- [快照-1](https://i.gkd.li/import/import/13194839)
+- [快照-1](https://i.gkd.li/import/import/13296565)
+- [快照-2](https://i.gkd.li/import/import/13194839)
 
 ## 首页-专辑订阅推荐弹窗
 

@@ -15,10 +15,11 @@
 
 ## 话题-帖子列表广告
 
-点击卡片右下角x按钮关闭广告
+点击卡片x按钮关闭广告
 
 - [快照-0](https://i.gkd.li/import/import/12655805)
 - [快照-1](https://i.gkd.li/import/import/12706140)
+- [快照-2](https://i.gkd.li/import/13303236)
 
 ## 社区-顶部广告
 

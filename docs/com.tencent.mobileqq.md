@@ -74,6 +74,7 @@
 
 - [快照-0](https://i.gkd.li/import/import/12705556)
 - [快照-1](https://i.gkd.li/import/import/12705559)
+- [快照-2](https://i.gkd.li/import/13295142)
 
 ## 自动查看原图
 

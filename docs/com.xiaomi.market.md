@@ -20,9 +20,9 @@
 - [快照-1](https://i.gkd.li/import/import/12674264)
 - [快照-2](https://i.gkd.li/import/import/12674269)
 
-## 请求开启推送弹窗
+## 请求通知权限提示弹窗
 
-默认禁用 - 自动点击关闭按钮
+自动点击关闭按钮
 
 - [快照-0](https://i.gkd.li/import/import/12714980)
 - [快照-1](https://i.gkd.li/import/13197306)
