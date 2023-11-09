@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="跳过"]',
-      snapshotUrls: 'https://gkd-kit.gitee.io/import/13293606',
+      snapshotUrls: 'https://i.gkd.li/import/13293606',
     },
   ],
 });
