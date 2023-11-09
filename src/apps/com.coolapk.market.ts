@@ -100,6 +100,14 @@ export default defineAppConfig({
       snapshotUrls: 'https://gkd-kit.gitee.io/import/12503762',
       rules: '[text=`立即更新`] - [text=`取消`]',
     },
+    {
+      key: 3,
+      quickFind: true,
+      name: '关闭推送通知',
+      activityIds: 'com.coolapk.market.view.main.MainActivity',
+      rules: '[text="以后再说"] + [text="去开启"]',
+      snapshotUrls: 'https://gkd-kit.gitee.io/import/13296465',
+    },
     // key=2 曾经被使用,不可再用
   ],
 });
