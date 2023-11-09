@@ -10,6 +10,7 @@
 
 - [快照-0](https://i.gkd.li/import/import/12614559)
 - [快照-1](https://i.gkd.li/import/import/12673132)
+- [快照-2](https://i.gkd.li/import/import/13292635)
 
 ## 美团买菜活动弹窗
 

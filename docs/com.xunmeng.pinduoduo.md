@@ -13,17 +13,14 @@
 
 ## 首页优惠弹窗
 
-默认禁用
-
 - [快照-0](https://i.gkd.li/import/import/12642015)
 - [快照-1](https://i.gkd.li/import/import/12642019)
 
-## 免单活动弹窗
-
-默认禁用
+## 活动弹窗
 
 - [快照-0](https://i.gkd.li/import/import/12642032)
 - [快照-1](https://i.gkd.li/import/import/12642038)
+- [快照-2](https://i.gkd.li/import/13308175)
 
 ## 红包弹窗
 

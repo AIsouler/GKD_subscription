@@ -11,17 +11,13 @@
 - [快照-0](https://i.gkd.li/import/import/12650280)
 - [快照-1](https://i.gkd.li/import/import/13206819)
 
-## 开屏红包弹窗
+## 红包弹窗
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/import/12650238)
-
-## 超市便利页面-红包弹窗
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/import/import/12650713)
+- [快照-1](https://i.gkd.li/import/13294893)
+- [快照-2](https://i.gkd.li/import/import/12650713)
 
 ## 首页活动弹窗
 
@@ -30,3 +26,7 @@
 ## 付款后广告弹窗
 
 - [快照-0](https://i.gkd.li/import/13205301)
+
+## 吃货卡续费弹窗
+
+- [快照-0](https://i.gkd.li/import/13295007)

@@ -1,6 +1,6 @@
 # 微信
 
-存在 16 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 17 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -99,7 +99,8 @@
 - [快照-1](https://i.gkd.li/import/import/12777076)
 - [快照-2](https://i.gkd.li/import/import/12785012)
 - [快照-3](https://i.gkd.li/import/import/12785183)
-- [快照-4](https://i.gkd.li/import/import/12785246)
+- [快照-4](https://i.gkd.li/import/13306883)
+- [快照-5](https://i.gkd.li/import/import/12785246)
 
 ## 网页版文件传输助手扫码自动授权
 
@@ -123,3 +124,9 @@
 
 - [快照-0](https://i.gkd.li/import/13200044)
 - [快照-1](https://i.gkd.li/import/13200048)
+
+## 小程序-京东购物
+
+默认禁用 - 低价包邮广告
+
+- [快照-0](https://i.gkd.li/import/import/13298294)
