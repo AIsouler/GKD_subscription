@@ -28,6 +28,11 @@ export default defineAppConfig({
             'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
           snapshotUrls: 'https://gkd-kit.gitee.io/import/13274336',
         },
+        {
+          matches:
+            'FrameLayout[childCount=6] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://gkd-kit.gitee.io/import/13302326',
+        },
       ],
     },
   ],
