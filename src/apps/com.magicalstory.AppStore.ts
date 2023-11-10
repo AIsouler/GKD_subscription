@@ -31,7 +31,7 @@ export default defineAppConfig({
             '[id="com.magicalstory.AppStore:id/banner"]',
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/import/13185746',
+          snapshotUrls: 'https://i.gkd.li/import/13185746',
         },
       ],
     },

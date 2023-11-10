@@ -11,16 +11,16 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.netease.mobimail:id/ad_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12667519',
+          snapshotUrls: 'https://i.gkd.li/import/12667519',
         },
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12686093',
+          snapshotUrls: 'https://i.gkd.li/import/12686093',
         },
         {
           matches:
             '[id="com.netease.mobimail:id/ad_placeholder"] >5 TextView[text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12686132',
+          snapshotUrls: 'https://i.gkd.li/import/12686132',
         },
       ],
     },
@@ -31,12 +31,12 @@ export default defineAppConfig({
         {
           activityIds: 'com.netease.mail.biz.main.MainITabActivity',
           matches: '[id="com.netease.mobimail:id/ad_vip"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12683488',
+          snapshotUrls: 'https://i.gkd.li/import/12683488',
         },
         {
           activityIds: 'com.netease.mail.biz.main.MainITabActivity',
           matches: '[id="com.netease.mobimail:id/ll_delete"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12683511',
+          snapshotUrls: 'https://i.gkd.li/import/12683511',
         },
       ],
     },
@@ -45,7 +45,7 @@ export default defineAppConfig({
       name: '切回时的开屏广告',
       activityIds: 'com.netease.mail.biz.main.MainITabActivity',
       rules: '@LinearLayout > TextView[text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12685745',
+      snapshotUrls: 'https://i.gkd.li/import/12685745',
     },
   ],
 });

@@ -7,4 +7,4 @@
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/5f6591b6-220e-4117-9cc1-b07375085f64)
 
 - [快照-0](https://i.gkd.li/import/13310527)
-- [快照-1](https://i.gkd.li/import/import/12506571)
+- [快照-1](https://i.gkd.li/import/12506571)

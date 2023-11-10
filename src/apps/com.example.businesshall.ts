@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.example.businesshall:id/jump_layout"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12830978'],
+          snapshotUrls: ['https://i.gkd.li/import/12830978'],
         },
       ],
     },

@@ -20,9 +20,9 @@ export default defineAppConfig({
             '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12910405',
+            'https://i.gkd.li/import/12910405',
             'https://i.gkd.li/import/13072365',
-            'https://i.gkd.li/import/import/13175102',
+            'https://i.gkd.li/import/13175102',
           ],
         },
       ],
@@ -34,7 +34,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.youloft.icloser.view.dialog.VipRetainPacketDialog',
       rules: '[id="com.youloft.icloser:id/tv_later_buy"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13067183',
+      snapshotUrls: 'https://i.gkd.li/import/13067183',
     },
     {
       key: 2,

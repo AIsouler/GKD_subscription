@@ -8,4 +8,4 @@
 
 ## 应用内弹窗
 
-- [快照-0](https://i.gkd.li/import/import/13245808)
+- [快照-0](https://i.gkd.li/import/13245808)

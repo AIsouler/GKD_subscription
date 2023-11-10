@@ -4,8 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12472612)
-- [快照-1](https://i.gkd.li/import/import/12472612)
+- [快照-0](https://i.gkd.li/import/12472612)
+- [快照-1](https://i.gkd.li/import/12472612)
 
 ## 青少年模式弹窗
 
@@ -13,8 +13,8 @@
 
 ## 首页推荐流-卡片广告
 
-- [快照-0](https://i.gkd.li/import/import/12472616)
-- [快照-1](https://i.gkd.li/import/import/12472615)
+- [快照-0](https://i.gkd.li/import/12472616)
+- [快照-1](https://i.gkd.li/import/12472615)
 
 ## 应用内广告弹窗
 

@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.fengeek.f002:id/we_img_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13068924',
+          snapshotUrls: 'https://i.gkd.li/import/13068924',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
           quickFind: true,
           action: 'clickCenter',
           matches: '[clickable=true][id="com.fengeek.f002:id/av_elc"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13161277',
+          snapshotUrls: 'https://i.gkd.li/import/13161277',
         },
         {
           preKeys: [0],
@@ -38,7 +38,7 @@ export default defineAppConfig({
           action: 'clickNode',
           matches:
             '[clickable=true][id="com.fengeek.f002:id/device_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13161365',
+          snapshotUrls: 'https://i.gkd.li/import/13161365',
         },
       ],
     },

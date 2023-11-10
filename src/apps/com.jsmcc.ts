@@ -13,8 +13,8 @@ export default defineAppConfig({
           matches:
             '[id="com.jsmcc:id/ad_content"] [text^="跳过"][text.length<=3]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12830488',
-            'https://i.gkd.li/import/import/12830580',
+            'https://i.gkd.li/import/12830488',
+            'https://i.gkd.li/import/12830580',
           ],
         },
       ],

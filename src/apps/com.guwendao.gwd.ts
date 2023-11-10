@@ -41,7 +41,7 @@ export default defineAppConfig({
           key: 3,
           matches:
             'ImageView < FrameLayout + FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12924728',
+          snapshotUrls: 'https://i.gkd.li/import/12924728',
         },
 
         // 字节广告

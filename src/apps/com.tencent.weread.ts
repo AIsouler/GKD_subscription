@@ -20,7 +20,7 @@ export default defineAppConfig({
         {
           matches: '[id="com.tencent.weread:id/open_notification_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12642247',
+            'https://i.gkd.li/import/12642247',
             'https://i.gkd.li/import/13233735',
           ],
         },

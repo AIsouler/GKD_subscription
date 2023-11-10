@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: ['com.ecitic.bank.mobile.ui.SplashActivity'],
       rules: '[id="com.ecitic.bank.mobile:id/skip_adv_layout"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12701203'],
+      snapshotUrls: ['https://i.gkd.li/import/12701203'],
     },
     {
       key: 1,
@@ -20,8 +20,8 @@ export default defineAppConfig({
       ],
       rules: '@[text="暂不更新"] + [text="立即更新"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12701217',
-        'https://i.gkd.li/import/import/12701250', // activityId: 'com.miui.home.launcher.Launcher'
+        'https://i.gkd.li/import/12701217',
+        'https://i.gkd.li/import/12701250', // activityId: 'com.miui.home.launcher.Launcher'
       ],
     },
     {
@@ -30,7 +30,7 @@ export default defineAppConfig({
       activityIds: ['com.ecitic.bank.mobile.ui.webview.CordovaWebViewActivity'],
       rules:
         '[id="com.ecitic.bank.mobile:id/id_cordova_view"] + [id="com.ecitic.bank.mobile:id/close_product_send"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12701230'],
+      snapshotUrls: ['https://i.gkd.li/import/12701230'],
     },
   ],
 });

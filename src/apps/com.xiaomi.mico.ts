@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.xiaomi.mico:id/splash_ad_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12748911',
+          snapshotUrls: 'https://i.gkd.li/import/12748911',
         },
       ],
     },

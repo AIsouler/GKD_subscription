@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.bxkj.student.splash.SplashActivity',
       rules: '[id="com.bxkj.student:id/tv_time"][text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12882766',
+      snapshotUrls: 'https://i.gkd.li/import/12882766',
     },
   ],
 });

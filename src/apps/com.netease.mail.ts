@@ -28,7 +28,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12999739',
+          snapshotUrls: 'https://i.gkd.li/import/12999739',
         },
       ],
     },
@@ -40,7 +40,7 @@ export default defineAppConfig({
       ],
       rules:
         '[id="com.netease.mail:id/tv_ignore_this_version"][text="暂不更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12664070',
+      snapshotUrls: 'https://i.gkd.li/import/12664070',
     },
     {
       key: 2,
@@ -51,16 +51,16 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.netease.mail:id/ad_vip"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12999833',
+          snapshotUrls: 'https://i.gkd.li/import/12999833',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '[id="com.netease.mail:id/ll_delete"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12999841',
+          snapshotUrls: 'https://i.gkd.li/import/12999841',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/import/12664070',
+      snapshotUrls: 'https://i.gkd.li/import/12664070',
     },
   ],
 });

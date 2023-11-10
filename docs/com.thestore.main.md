@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/13163668)
+- [快照-0](https://i.gkd.li/import/13163668)
 
 ## 促销广告
 
 默认禁用 - 关闭促销弹窗，也许有用呢
 
-- [快照-0](https://i.gkd.li/import/import/13163686)
+- [快照-0](https://i.gkd.li/import/13163686)

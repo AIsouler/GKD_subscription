@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.hose.ekuaibao.view.activity.EkbProActivity',
       rules:
         'View[childCount=2] > TextView + TextView[text="不感兴趣"][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12649616'],
+      snapshotUrls: ['https://i.gkd.li/import/12649616'],
     },
   ],
 });

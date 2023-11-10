@@ -4,12 +4,12 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12841023)
+- [快照-0](https://i.gkd.li/import/12841023)
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12642466)
+- [快照-0](https://i.gkd.li/import/12642466)
 
 ## 评论区广告卡片
 
-- [快照-0](https://i.gkd.li/import/import/12642459)
+- [快照-0](https://i.gkd.li/import/12642459)

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.pingan.carowner.activity.SplashActivity',
       rules: '[id="com.pingan.carowner:id/splash_time_tv"][text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12727845',
+      snapshotUrls: 'https://i.gkd.li/import/12727845',
     },
   ],
 });

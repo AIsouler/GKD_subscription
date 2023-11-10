@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.douguo.recipe:id/ad_jump"] > [text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13215621',
+          snapshotUrls: 'https://i.gkd.li/import/13215621',
         },
       ],
     },

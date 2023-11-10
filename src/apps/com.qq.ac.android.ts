@@ -12,8 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.qq.ac.android:id/text_ad_logo"] + [text="跳过"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12707750', //com.qq.ac.android.splash.SplashActivity
-        'https://i.gkd.li/import/import/13195632', //com.qq.ac.android.splash.SplashHotActivity
+        'https://i.gkd.li/import/12707750', //com.qq.ac.android.splash.SplashActivity
+        'https://i.gkd.li/import/13195632', //com.qq.ac.android.splash.SplashHotActivity
       ],
     },
     {
@@ -24,8 +24,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text="青少年守护模式"] - [id="com.qq.ac.android:id/close_btn"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12707752',
-        'https://i.gkd.li/import/import/13195636',
+        'https://i.gkd.li/import/12707752',
+        'https://i.gkd.li/import/13195636',
       ],
     },
     {
@@ -34,7 +34,7 @@ export default defineAppConfig({
       activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
       rules:
         '[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12707756'],
+      snapshotUrls: ['https://i.gkd.li/import/12707756'],
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.jd.iots:id/skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12901733',
+      snapshotUrls: 'https://i.gkd.li/import/12901733',
     },
   ],
 });

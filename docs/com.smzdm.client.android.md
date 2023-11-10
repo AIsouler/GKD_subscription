@@ -8,7 +8,7 @@
 
 ## APP内弹窗广告
 
-- [快照-0](https://i.gkd.li/import/import/12695751)
+- [快照-0](https://i.gkd.li/import/12695751)
 
 ## 更新弹窗
 

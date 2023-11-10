@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[id="cn.guancha.app:id/tv_jump_btn"][text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12907063',
+          snapshotUrls: 'https://i.gkd.li/import/12907063',
         },
       ],
     },

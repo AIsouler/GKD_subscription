@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.youdao.dict.activity.DictSplashActivity',
       rules: '[id="com.youdao.dict:id/skin_text"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12668545',
+      snapshotUrls: 'https://i.gkd.li/import/12668545',
     },
     {
       key: 1,
@@ -19,12 +19,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[text="广告"] - [id="com.youdao.dict:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12668574',
+          snapshotUrls: 'https://i.gkd.li/import/12668574',
         },
         {
           key: 1,
           matches: '[id="com.youdao.dict:id/close_pop"][text="收起广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12668583',
+          snapshotUrls: 'https://i.gkd.li/import/12668583',
         },
       ],
     },
@@ -39,7 +39,7 @@ export default defineAppConfig({
       quickFind: true,
       snapshotUrls: [
         'https://i.gkd.li/import/12893419',
-        'https://i.gkd.li/import/import/13263801',
+        'https://i.gkd.li/import/13263801',
       ],
     },
     {
@@ -56,7 +56,7 @@ export default defineAppConfig({
       activityIds: 'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
       rules: '@ImageView[id="com.youdao.dict:id/iv_close"]',
       quickFind: true,
-      snapshotUrls: 'https://i.gkd.li/import/import/13263706',
+      snapshotUrls: 'https://i.gkd.li/import/13263706',
     },
   ],
 });

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.uzmap.pkg.EntranceActivity',
       rules: '[id="com.maque.app:id/ksad_splash_circle_skip_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12641032',
+      snapshotUrls: 'https://i.gkd.li/import/12641032',
     },
     {
       key: 1,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds: 'com.uzmap.pkg.EntranceActivity',
       rules:
         'ViewGroup[childCount=2] > ImageView[clickable=true] + ViewGroup[clickable=true][childCount=1] > ImageView[id=null][clickable=false]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12640100',
+      snapshotUrls: 'https://i.gkd.li/import/12640100',
     },
   ],
 });

@@ -14,7 +14,7 @@ export default defineAppConfig({
             '[id="com.qinlin.edoor:id/reaper_ad_source_layout"]',
             '[id="com.qinlin.edoor:id/close"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/import/12707733',
+          snapshotUrls: 'https://i.gkd.li/import/12707733',
         },
       ],
     },
@@ -24,7 +24,7 @@ export default defineAppConfig({
       name: '开门有奖弹窗',
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: '[desc="开门有奖"] +2 [desc="立即领取"] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/import/12707736',
+      snapshotUrls: 'https://i.gkd.li/import/12707736',
     },
     {
       enable: false,
@@ -32,7 +32,7 @@ export default defineAppConfig({
       name: '获得金币弹窗',
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: ['[desc="获得金币"] +3 [desc="开心收下"] + ImageView'],
-      snapshotUrls: ['https://i.gkd.li/import/import/12707738'],
+      snapshotUrls: ['https://i.gkd.li/import/12707738'],
     },
   ],
 });

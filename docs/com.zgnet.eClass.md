@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12644260)
+- [快照-0](https://i.gkd.li/import/12644260)
 
 ## 退出确认弹窗（默认关闭）
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12645513)
+- [快照-0](https://i.gkd.li/import/12645513)

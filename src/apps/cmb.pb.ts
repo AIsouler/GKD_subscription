@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'cmb.pb.app.mainframe.container.PBMainActivity',
       rules: '[id="cmb.pb:id/ll_launch_ad_skip_hot_area"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12706015',
+      snapshotUrls: 'https://i.gkd.li/import/12706015',
     },
     {
       key: 10,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds:
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12706022',
+      snapshotUrls: 'https://i.gkd.li/import/12706022',
     },
     {
       key: 11,
@@ -28,7 +28,7 @@ export default defineAppConfig({
       rules:
         '@[id="cmb.pb:id/ivDelete"][desc="关闭"] - FrameLayout > [id="cmb.pb:id/tvDescription"][text*="获取您的位置"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12706029',
+        'https://i.gkd.li/import/12706029',
         'https://i.gkd.li/import/13248893',
       ],
     },

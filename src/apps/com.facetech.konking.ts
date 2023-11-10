@@ -15,12 +15,12 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.facetech.konking:id/ksad_splash_circle_skip_view"] > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12841078',
+          snapshotUrls: 'https://i.gkd.li/import/12841078',
         },
         {
           key: 1,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12841079',
+          snapshotUrls: 'https://i.gkd.li/import/12841079',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12841081',
+      snapshotUrls: 'https://i.gkd.li/import/12841081',
     },
   ],
 });

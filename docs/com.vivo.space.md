@@ -8,5 +8,5 @@
 
 ## 活动广告
 
-- [快照-0](https://i.gkd.li/import/import/13218155)
-- [快照-1](https://i.gkd.li/import/import/13292907)
+- [快照-0](https://i.gkd.li/import/13218155)
+- [快照-1](https://i.gkd.li/import/13292907)

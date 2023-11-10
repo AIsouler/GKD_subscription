@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.missevan:id/skip_title"][text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12908434',
+          snapshotUrls: 'https://i.gkd.li/import/12908434',
         },
       ],
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.missevan:id/iKnowTextView"][text="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12908433',
+          snapshotUrls: 'https://i.gkd.li/import/12908433',
         },
       ],
     },

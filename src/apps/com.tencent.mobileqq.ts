@@ -56,7 +56,7 @@ export default defineAppConfig({
           preKeys: 0,
           matches:
             '[clickable=true] > ImageView + TextView[text="关闭此条广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12840889',
+          snapshotUrls: 'https://i.gkd.li/import/12840889',
         },
       ],
     },
@@ -75,7 +75,7 @@ export default defineAppConfig({
             'ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/13206663', // com.tencent.mobileqq.activity.SplashActivity
-            'https://i.gkd.li/import/import/12642081', // com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog
+            'https://i.gkd.li/import/12642081', // com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog
           ],
         },
         {
@@ -83,7 +83,7 @@ export default defineAppConfig({
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
             'FrameLayout[desc="发表帖子"] - LinearLayout[id!=null] >3 ImageView[id!=null][clickable=false] - View[id!=null][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12708844',
+          snapshotUrls: 'https://i.gkd.li/import/12708844',
         },
       ],
     },
@@ -96,8 +96,8 @@ export default defineAppConfig({
       rules:
         'LinearLayout > TextView[text*="SVIP"||text*="超级会员"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12706907',
-        'https://i.gkd.li/import/import/13107298',
+        'https://i.gkd.li/import/12706907',
+        'https://i.gkd.li/import/13107298',
         'https://i.gkd.li/import/12793359',
         'https://i.gkd.li/import/12855048',
         'https://i.gkd.li/import/13228108',
@@ -118,7 +118,7 @@ export default defineAppConfig({
           matches:
             'TextView[text="好友热播"] + Button[id^="com.tencent.mobileqq.qzone_df_impl:id/"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12721427', // com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity
+            'https://i.gkd.li/import/12721427', // com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity
             'https://i.gkd.li/import/12894359', // com.tencent.mobileqq.activity.SplashActivity
           ],
         },
@@ -127,7 +127,7 @@ export default defineAppConfig({
           matches:
             'TextView[text="减少好友热播"] <2 LinearLayout < LinearLayout[id^="com.tencent.mobileqq.qzone_df_impl:id/"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12721433', // com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity
+            'https://i.gkd.li/import/12721433', // com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity
             'https://i.gkd.li/import/12894375', // com.tencent.mobileqq.activity.SplashActivity
           ],
         },
@@ -140,7 +140,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules:
         '@ImageView[clickable=true] - TextView[text="广告"] - [id="com.tencent.mobileqq:id/tv_name"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12749584',
+      snapshotUrls: 'https://i.gkd.li/import/12749584',
     },
     {
       key: 7,
@@ -184,8 +184,8 @@ export default defineAppConfig({
       ],
       rules: '@CheckBox[checked=false] + [text="原图"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12705556', // 未勾选原图
-        'https://i.gkd.li/import/import/12705559', // 已勾选原图
+        'https://i.gkd.li/import/12705556', // 未勾选原图
+        'https://i.gkd.li/import/12705559', // 已勾选原图
         'https://i.gkd.li/import/13295142', // com.tencent.qqnt.qbasealbum.WinkHomeActivity
       ],
     },
@@ -280,7 +280,7 @@ export default defineAppConfig({
       desc: 'NT QQ 登录时自动点击允许登录QQ',
       activityIds: 'com.tencent.mobileqq.activity.DevlockQuickLoginActivity',
       rules: 'Button[text="允许登录QQ"][clickable=true][id!=null]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13063027',
+      snapshotUrls: 'https://i.gkd.li/import/13063027',
     },
     {
       key: 17,
@@ -297,7 +297,7 @@ export default defineAppConfig({
       rules: 'TextView[text="发现QQ版本更新"] + ImageView[clickable=true]', //修正desc值为null时无法点击问题
       snapshotUrls: [
         'https://i.gkd.li/import/13188722',
-        'https://i.gkd.li/import/import/13255493', //desc值为null快照
+        'https://i.gkd.li/import/13255493', //desc值为null快照
       ],
     },
   ],

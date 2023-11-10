@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.edu.hit.welink:id/skip_button"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12710980',
+          snapshotUrls: 'https://i.gkd.li/import/12710980',
         },
       ],
     },

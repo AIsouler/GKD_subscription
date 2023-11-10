@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.luna.biz.ad.AdActivity',
       rules: '[id$="/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12514049',
+      snapshotUrls: 'https://i.gkd.li/import/12514049',
     },
   ],
 });

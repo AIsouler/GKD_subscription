@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           quickFind: true,
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12673680'],
+          snapshotUrls: ['https://i.gkd.li/import/12673680'],
         },
         {
           // 无法使用 quickFind
@@ -39,8 +39,8 @@ export default defineAppConfig({
           matches:
             '[id="net.csdn.csdnplus:id/update"] -2 [id="net.csdn.csdnplus:id/cancel"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12673693',
-            'https://i.gkd.li/import/import/12673654',
+            'https://i.gkd.li/import/12673693',
+            'https://i.gkd.li/import/12673654',
           ],
         },
       ],
@@ -55,7 +55,7 @@ export default defineAppConfig({
           key: 1,
           matches: '[text="广告"] + [id="net.csdn.csdnplus:id/iv_more"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12673738',
+            'https://i.gkd.li/import/12673738',
             'https://i.gkd.li/import/13224538',
           ],
         },
@@ -65,7 +65,7 @@ export default defineAppConfig({
           matches:
             '@[clickable=true] > [id="net.csdn.csdnplus:id/img_feedback_title"][text="重复推荐该广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12673787',
+            'https://i.gkd.li/import/12673787',
             'https://i.gkd.li/import/13224551',
           ],
         },
@@ -79,7 +79,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13251085',
+      snapshotUrls: 'https://i.gkd.li/import/13251085',
     },
     {
       enable: false,
@@ -95,7 +95,7 @@ export default defineAppConfig({
           '[text="开启推送通知"]',
           '[id="net.csdn.csdnplus:id/iv_close"]',
         ],
-        snapshotUrls: ['https://i.gkd.li/import/import/12673638'],
+        snapshotUrls: ['https://i.gkd.li/import/12673638'],
       },
     },
   ],

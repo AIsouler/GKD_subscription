@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '广告弹窗',
       activityIds: 'com.dtchuxing.main.MainActivity',
       rules: '[id="com.dtdream.publictransit:id/ifv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12830113',
+      snapshotUrls: 'https://i.gkd.li/import/12830113',
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.fiio.music:id/btn_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12748933',
+          snapshotUrls: 'https://i.gkd.li/import/12748933',
         },
       ],
     },

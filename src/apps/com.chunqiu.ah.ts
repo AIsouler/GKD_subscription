@@ -15,13 +15,13 @@ export default defineAppConfig({
         {
           matches: '[text^="跳过"][text.length<10]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/13264387',
-            'https://i.gkd.li/import/import/13264381',
+            'https://i.gkd.li/import/13264387',
+            'https://i.gkd.li/import/13264381',
           ],
         },
         {
           matches: '@ImageView - [text="|"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13264377',
+          snapshotUrls: 'https://i.gkd.li/import/13264377',
         },
       ],
     },
@@ -33,7 +33,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@FrameLayout - FrameLayout >2 [text="京东"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13264383',
+          snapshotUrls: 'https://i.gkd.li/import/13264383',
         },
       ],
     },

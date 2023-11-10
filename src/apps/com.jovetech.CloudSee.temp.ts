@@ -21,7 +21,7 @@ export default defineAppConfig({
           matches:
             '[id="com.jovetech.CloudSee.temp:id/splash_container"] >n [text^="跳过"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12829886',
+            'https://i.gkd.li/import/12829886',
             'https://i.gkd.li/import/12893553',
           ],
         },

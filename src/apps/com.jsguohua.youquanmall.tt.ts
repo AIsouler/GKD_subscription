@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text^="跳过"][text.length<=3]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13163305',
+          snapshotUrls: 'https://i.gkd.li/import/13163305',
         },
       ],
     },
@@ -25,7 +25,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="去微信看看"] < FrameLayout <n FrameLayout[childCount=2] -n FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/13163314',
+          snapshotUrls: 'https://i.gkd.li/import/13163314',
         },
       ],
     },

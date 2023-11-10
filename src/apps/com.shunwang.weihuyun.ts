@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.shunwang.weihuyun:id/tv_jump"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12903874'],
+          snapshotUrls: ['https://i.gkd.li/import/12903874'],
         },
       ],
     },

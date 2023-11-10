@@ -10,5 +10,5 @@
 
 弹窗广告,右下角浮动广告
 
-- [快照-0](https://i.gkd.li/import/import/12518500)
-- [快照-1](https://i.gkd.li/import/import/12518517)
+- [快照-0](https://i.gkd.li/import/12518500)
+- [快照-1](https://i.gkd.li/import/12518517)

@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules:
         '@TextView[text$=`跳过`] + TextView[id="com.miui.player:id/ad_view"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12700962',
+        'https://i.gkd.li/import/12700962',
         'https://i.gkd.li/import/12852707',
       ],
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
         'com.tencent.qqmusiclite.activity.player.MusicPlayerActivity',
       rules:
         '[id="com.miui.player:id/free_mode_tips_layout"] + [id="com.miui.player:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13303283',
+      snapshotUrls: 'https://i.gkd.li/import/13303283',
     },
     {
       key: 2,
@@ -38,8 +38,8 @@ export default defineAppConfig({
         'com.tencent.qqmusiclite.activity.player.MusicPlayerActivity',
       rules: '[id="com.miui.player:id/ad_skip_text"][text="关闭"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/13304347', // 倒计时
-        'https://i.gkd.li/import/import/13304344', // 可关闭
+        'https://i.gkd.li/import/13304347', // 倒计时
+        'https://i.gkd.li/import/13304344', // 可关闭
       ],
     },
     {
@@ -47,7 +47,7 @@ export default defineAppConfig({
       name: '弹窗广告_底部弹窗',
       activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
       rules: 'ViewGroup > @ViewGroup + ViewGroup[childCount=5]',
-      snapshotUrls: ['https://i.gkd.li/import/import/13304343'],
+      snapshotUrls: ['https://i.gkd.li/import/13304343'],
     },
     {
       enable: false,
@@ -55,7 +55,7 @@ export default defineAppConfig({
       name: '会员过期续费弹窗',
       activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
       rules: '[id=null][desc="关闭弹框按钮"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12700955',
+      snapshotUrls: 'https://i.gkd.li/import/12700955',
     },
     {
       enable: false,
@@ -64,7 +64,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
       rules:
         '[id="com.miui.player:id/banner_image"] + [id="com.miui.player:id/close_banner"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12700984',
+      snapshotUrls: 'https://i.gkd.li/import/12700984',
     },
   ],
 });

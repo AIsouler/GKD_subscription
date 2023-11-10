@@ -4,4 +4,4 @@
 
 ## 首页-横幅广告
 
-- [快照-0](https://i.gkd.li/import/import/12649616)
+- [快照-0](https://i.gkd.li/import/12649616)

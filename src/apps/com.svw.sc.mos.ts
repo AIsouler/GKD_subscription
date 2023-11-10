@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.svw.sc.mos:id/launch_jump"][text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12912850',
+          snapshotUrls: 'https://i.gkd.li/import/12912850',
         },
       ],
     },

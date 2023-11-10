@@ -6,10 +6,10 @@
 
 点x取消提示
 
-- [快照-0](https://i.gkd.li/import/import/12911014)
+- [快照-0](https://i.gkd.li/import/12911014)
 
 ## 自动原图
 
 默认禁用 - 如果没有勾选原图, 则勾选
 
-- [快照-0](https://i.gkd.li/import/import/12911013)
+- [快照-0](https://i.gkd.li/import/12911013)

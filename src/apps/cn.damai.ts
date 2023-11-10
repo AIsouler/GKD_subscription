@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'cn.damai.launcher.splash.SplashMainActivity',
       rules: '[id="cn.damai:id/homepage_advert_pb"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12472623',
+      snapshotUrls: 'https://i.gkd.li/import/12472623',
     },
   ],
 });

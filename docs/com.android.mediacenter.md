@@ -16,7 +16,7 @@
 
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/433dd71c-4fe5-41c9-a2da-dd3ac29f8dd4)
 
-- [快照-0](https://i.gkd.li/import/import/12914026)
+- [快照-0](https://i.gkd.li/import/12914026)
 
 ## 推荐广告卡片
 
@@ -25,5 +25,5 @@
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/37ee4a9b-2518-41e6-8227-7b204ed1bf61)
 - [示例-1](https://github.com/gkd-kit/inspect/assets/38517192/d098a194-80ff-49a1-b80e-191f7574a816)
 
-- [快照-0](https://i.gkd.li/import/import/12914077)
-- [快照-1](https://i.gkd.li/import/import/12914078)
+- [快照-0](https://i.gkd.li/import/12914077)
+- [快照-1](https://i.gkd.li/import/12914078)

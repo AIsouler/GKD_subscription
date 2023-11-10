@@ -28,8 +28,8 @@ export default defineAppConfig({
       rules:
         'FrameLayout[id="com.jingyao.easybike:id/hbDialogLayout"] + ImageView[id="com.jingyao.easybike:id/actionDialogClose"][clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12650028', // 哈啰出行保弹窗
-        'https://i.gkd.li/import/import/12650090', // 账单查看弹窗
+        'https://i.gkd.li/import/12650028', // 哈啰出行保弹窗
+        'https://i.gkd.li/import/12650090', // 账单查看弹窗
       ],
     },
     {
@@ -40,7 +40,7 @@ export default defineAppConfig({
       ],
       rules:
         '[id="com.jingyao.easybike:id/lottie_view"] < ViewGroup + [id="com.jingyao.easybike:id/btn_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12650163'],
+      snapshotUrls: ['https://i.gkd.li/import/12650163'],
     },
     {
       key: 12,
@@ -48,7 +48,7 @@ export default defineAppConfig({
       activityIds: ['com.hellobike.atlas.business.portal.PortalActivity'],
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12650071'],
+      snapshotUrls: ['https://i.gkd.li/import/12650071'],
     },
     {
       key: 13,
@@ -56,7 +56,7 @@ export default defineAppConfig({
       activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],
       rules:
         '[text="订单完成"] >(2) View[childCount=2] > Image[id=null][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12684673'],
+      snapshotUrls: ['https://i.gkd.li/import/12684673'],
     },
     {
       key: 14,

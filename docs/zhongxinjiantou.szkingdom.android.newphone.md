@@ -6,10 +6,10 @@
 
 点击跳过
 
-- [快照-0](https://i.gkd.li/import/import/12924454)
+- [快照-0](https://i.gkd.li/import/12924454)
 
 ## 通知权限
 
 点击放弃通知
 
-- [快照-0](https://i.gkd.li/import/import/12924466)
+- [快照-0](https://i.gkd.li/import/12924466)

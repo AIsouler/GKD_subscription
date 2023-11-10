@@ -16,10 +16,10 @@ export default defineAppConfig({
         '[id="gov.pianzong.androidnga:id/ksad_splash_circle_skip_view"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12476484',
-        'https://i.gkd.li/import/import/12706127', // activityIds: 'com.miui.home.launcher.Launcher',
-        'https://i.gkd.li/import/import/12864707', // activityIds: 'gov.pianzong.androidnga.activity.LoadingActivity',
-        'https://i.gkd.li/import/import/12911882', // activityIds: 'gov.pianzong.androidnga.activity.WarmstartActivity'
+        'https://i.gkd.li/import/12476484',
+        'https://i.gkd.li/import/12706127', // activityIds: 'com.miui.home.launcher.Launcher',
+        'https://i.gkd.li/import/12864707', // activityIds: 'gov.pianzong.androidnga.activity.LoadingActivity',
+        'https://i.gkd.li/import/12911882', // activityIds: 'gov.pianzong.androidnga.activity.WarmstartActivity'
       ],
     },
     {
@@ -27,7 +27,7 @@ export default defineAppConfig({
       name: '首页-推荐-广告卡片',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
-      snapshotUrls: 'https://i.gkd.li/import/import/12482727',
+      snapshotUrls: 'https://i.gkd.li/import/12482727',
     },
     {
       key: 2,
@@ -38,12 +38,12 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'Image[text="ams_icon_single_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12655805'],
+          snapshotUrls: ['https://i.gkd.li/import/12655805'],
         },
         {
           matches:
             'TextView[text!=null] - ImageView < LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView[id=null]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12706140'],
+          snapshotUrls: ['https://i.gkd.li/import/12706140'],
         },
         {
           matches:
@@ -57,7 +57,7 @@ export default defineAppConfig({
       name: '社区-顶部广告',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12706132'],
+      snapshotUrls: ['https://i.gkd.li/import/12706132'],
     },
   ],
 });

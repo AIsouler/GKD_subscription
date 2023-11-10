@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.huawei.appmarket:id/skip_textview"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12683196',
+      snapshotUrls: 'https://i.gkd.li/import/12683196',
     },
     {
       key: 1,

@@ -8,16 +8,16 @@
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12650280)
-- [快照-1](https://i.gkd.li/import/import/13206819)
+- [快照-0](https://i.gkd.li/import/12650280)
+- [快照-1](https://i.gkd.li/import/13206819)
 
 ## 红包弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12650238)
+- [快照-0](https://i.gkd.li/import/12650238)
 - [快照-1](https://i.gkd.li/import/13294893)
-- [快照-2](https://i.gkd.li/import/import/12650713)
+- [快照-2](https://i.gkd.li/import/12650713)
 
 ## 首页活动弹窗
 

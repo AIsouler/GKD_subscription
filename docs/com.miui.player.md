@@ -4,34 +4,34 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12700962)
+- [快照-0](https://i.gkd.li/import/12700962)
 - [快照-1](https://i.gkd.li/import/12852707)
 
 ## 浮窗广告
 
 关闭右侧飘窗广告
 
-- [快照-0](https://i.gkd.li/import/import/13303283)
+- [快照-0](https://i.gkd.li/import/13303283)
 
 ## 横幅广告
 
 关闭播放页面横幅广告
 
-- [快照-0](https://i.gkd.li/import/import/13304347)
-- [快照-1](https://i.gkd.li/import/import/13304344)
+- [快照-0](https://i.gkd.li/import/13304347)
+- [快照-1](https://i.gkd.li/import/13304344)
 
 ## 弹窗广告\_底部弹窗
 
-- [快照-0](https://i.gkd.li/import/import/13304343)
+- [快照-0](https://i.gkd.li/import/13304343)
 
 ## 会员过期续费弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12700955)
+- [快照-0](https://i.gkd.li/import/12700955)
 
 ## 我的页面-顶部 banner 广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12700984)
+- [快照-0](https://i.gkd.li/import/12700984)

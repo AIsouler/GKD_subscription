@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.jd.app.reader:id/count_down_time"][text^="跳过"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12686559',
-            'https://i.gkd.li/import/import/12686589', // activityId: 'com.miui.home.launcher.Launcher'
+            'https://i.gkd.li/import/12686559',
+            'https://i.gkd.li/import/12686589', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
       ],
@@ -28,7 +28,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[text="下次再说"] +(2) [text="立即更新"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12686632'],
+          snapshotUrls: ['https://i.gkd.li/import/12686632'],
         },
       ],
     },
@@ -44,8 +44,8 @@ export default defineAppConfig({
           matches:
             '[id="com.jd.app.reader:id/mCardView"] + [id="com.jd.app.reader:id/mCloseBtn"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12686577',
-            'https://i.gkd.li/import/import/12686664', // activityId: 'com.miui.home.launcher.Launcher'
+            'https://i.gkd.li/import/12686577',
+            'https://i.gkd.li/import/12686664', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
       ],

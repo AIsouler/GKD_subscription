@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.peopledailychina.activity.activity.WelcomeActivity',
       rules: '[id="com.peopledailychina.activity:id/act_welcome_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12749658',
+      snapshotUrls: 'https://i.gkd.li/import/12749658',
     },
   ],
 });

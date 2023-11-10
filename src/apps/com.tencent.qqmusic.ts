@@ -15,10 +15,10 @@ export default defineAppConfig({
         {
           matches: 'TextView[text=`跳过`][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12673960', // text="互动广告"
-            'https://i.gkd.li/import/import/12674023', // text="互动广告 | "
-            'https://i.gkd.li/import/import/12673998', // text="广告"
-            'https://i.gkd.li/import/import/12674074', // text="运营推广"
+            'https://i.gkd.li/import/12673960', // text="互动广告"
+            'https://i.gkd.li/import/12674023', // text="互动广告 | "
+            'https://i.gkd.li/import/12673998', // text="广告"
+            'https://i.gkd.li/import/12674074', // text="运营推广"
           ],
         },
       ],
@@ -50,7 +50,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
       rules: 'View[id="js_close_btn"][desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13115121',
+      snapshotUrls: 'https://i.gkd.li/import/13115121',
     },
     {
       key: 3,
@@ -59,7 +59,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       quickFind: true,
       rules: '[text="抢先体验"] -2 [text="不再提醒"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13178485',
+      snapshotUrls: 'https://i.gkd.li/import/13178485',
     },
     {
       key: 4,
@@ -68,7 +68,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       quickFind: true,
       rules: '[text="流量够用"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13197868',
+      snapshotUrls: 'https://i.gkd.li/import/13197868',
     },
   ],
 });

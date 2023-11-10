@@ -13,9 +13,9 @@ export default defineAppConfig({
       ],
       rules: '[id="com.douban.frodo:id/skip"||text^="跳过"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12505151',
-        'https://i.gkd.li/import/import/12505152',
-        'https://i.gkd.li/import/import/12506164',
+        'https://i.gkd.li/import/12505151',
+        'https://i.gkd.li/import/12505152',
+        'https://i.gkd.li/import/12506164',
       ],
     },
     {
@@ -25,7 +25,7 @@ export default defineAppConfig({
       enable: false,
       activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
       rules: '[id="com.douban.frodo:id/check_status"][checked=true]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12508777'],
+      snapshotUrls: ['https://i.gkd.li/import/12508777'],
     },
     {
       key: 2,
@@ -35,12 +35,12 @@ export default defineAppConfig({
         {
           matches:
             'TextView[id="com.douban.frodo:id/ad_not_interest"][text="广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12509475',
+          snapshotUrls: 'https://i.gkd.li/import/12509475',
         },
         {
           matches:
             'TextView[id="com.douban.frodo:id/mainText"][text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12509476',
+          snapshotUrls: 'https://i.gkd.li/import/12509476',
         },
       ],
     },
@@ -63,8 +63,8 @@ export default defineAppConfig({
           matches:
             '@LinearLayout[clickable=true] > [id="com.douban.frodo:id/mainText"][text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12548016',
-            'https://i.gkd.li/import/import/12723422',
+            'https://i.gkd.li/import/12548016',
+            'https://i.gkd.li/import/12723422',
           ],
         },
         {
@@ -77,9 +77,9 @@ export default defineAppConfig({
           matches:
             'ImageView[id="com.douban.frodo:id/avatar"][index=0] +n ImageView[id="com.douban.frodo:id/menu_item"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12547964',
-            'https://i.gkd.li/import/import/12548011',
-            'https://i.gkd.li/import/import/12548046',
+            'https://i.gkd.li/import/12547964',
+            'https://i.gkd.li/import/12548011',
+            'https://i.gkd.li/import/12548046',
           ],
         },
         {
@@ -93,10 +93,10 @@ export default defineAppConfig({
             'com.douban.frodo.activity.SplashActivity',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12548064',
-            'https://i.gkd.li/import/import/12548450',
-            'https://i.gkd.li/import/import/12723751',
-            'https://i.gkd.li/import/import/13062693',
+            'https://i.gkd.li/import/12548064',
+            'https://i.gkd.li/import/12548450',
+            'https://i.gkd.li/import/12723751',
+            'https://i.gkd.li/import/13062693',
           ],
         },
         {
@@ -104,7 +104,7 @@ export default defineAppConfig({
           name: '点击卡片中间的[广告]文字按钮',
           activityIds: ['com.douban.frodo.group.activity.GroupDetailActivity'],
           matches: '[id="com.douban.frodo:id/ad_tag"][text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12723569',
+          snapshotUrls: 'https://i.gkd.li/import/12723569',
         },
       ],
     },
@@ -115,18 +115,18 @@ export default defineAppConfig({
       desc: '书影音-卡片广告-点击卡片右下角"广告"文字',
       // 豆瓣在屏幕之外渲染了大量节点, 在节点肉眼不可见但是无障碍可见的情况下, 仍然会触发大量点击
       // 发现增加一个较高的 cd 值可以避免后续广告节点出现, 从而不会触发点击
-      snapshotUrls: 'https://i.gkd.li/import/import/12548160',
+      snapshotUrls: 'https://i.gkd.li/import/12548160',
       activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: [
         {
           matches:
             '[text="广告"] < * + * > [text="不感兴趣"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12548116',
+          snapshotUrls: 'https://i.gkd.li/import/12548116',
         },
         {
           matches:
             '@View[clickable=true] > Image - TextView[text="广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12548131',
+          snapshotUrls: 'https://i.gkd.li/import/12548131',
         },
       ],
     },
@@ -136,7 +136,7 @@ export default defineAppConfig({
       activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: {
         matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
-        snapshotUrls: 'https://i.gkd.li/import/import/12548314',
+        snapshotUrls: 'https://i.gkd.li/import/12548314',
       },
     },
     {
@@ -148,7 +148,7 @@ export default defineAppConfig({
         {
           matches:
             'TextView < FrameLayout + FrameLayout > ImageView +3 FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12548476',
+          snapshotUrls: 'https://i.gkd.li/import/12548476',
         },
       ],
     },
@@ -162,10 +162,10 @@ export default defineAppConfig({
         matches:
           'ImageView[id=null] +(n) LinearLayout[childCount<=2] + FrameLayout[childCount=1] > ImageView[id=null][visibleToUser=true]',
         snapshotUrls: [
-          'https://i.gkd.li/import/import/12674798',
-          'https://i.gkd.li/import/import/12674842',
-          'https://i.gkd.li/import/import/12723462',
-          'https://i.gkd.li/import/import/12723800',
+          'https://i.gkd.li/import/12674798',
+          'https://i.gkd.li/import/12674842',
+          'https://i.gkd.li/import/12723462',
+          'https://i.gkd.li/import/12723800',
         ],
       },
     },
@@ -177,7 +177,7 @@ export default defineAppConfig({
         activityIds: ['com.douban.frodo.activity.SplashActivity'],
         matches:
           '[id="com.douban.frodo:id/info"][text^="开启个性化推荐"] - [id="com.douban.frodo:id/close"]',
-        snapshotUrls: 'https://i.gkd.li/import/import/12836798',
+        snapshotUrls: 'https://i.gkd.li/import/12836798',
       },
     },
     {
@@ -196,7 +196,7 @@ export default defineAppConfig({
         ],
         snapshotUrls: [
           'https://i.gkd.li/import/13195565',
-          'https://i.gkd.li/import/import/13296656', //新增ids对应快照
+          'https://i.gkd.li/import/13296656', //新增ids对应快照
         ],
       },
     },

@@ -6,4 +6,4 @@
 
 点击"跳过广告"
 
-- [快照-0](https://i.gkd.li/import/import/12912850)
+- [快照-0](https://i.gkd.li/import/12912850)

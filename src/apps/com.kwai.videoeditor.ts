@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.kwai.videoeditor.activity.splash.InnerVideoSplashActivity',
       rules: ['Button[text="跳过"]'],
-      snapshotUrls: 'https://i.gkd.li/import/import/12472610',
+      snapshotUrls: 'https://i.gkd.li/import/12472610',
     },
   ],
 });

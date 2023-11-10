@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           matches:
             '@[id="com.yitong.mbank.psbc:id/bt_cancel"][text="暂不更新"] + [id="com.yitong.mbank.psbc:id/bt_updata"][text="立即更新"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12685350'],
+          snapshotUrls: ['https://i.gkd.li/import/12685350'],
         },
       ],
     },

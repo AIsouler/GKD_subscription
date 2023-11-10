@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="csii.com.qny:id/tv_count_down"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12908332',
+          snapshotUrls: 'https://i.gkd.li/import/12908332',
         },
       ],
     },

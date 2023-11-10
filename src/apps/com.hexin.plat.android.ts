@@ -16,8 +16,8 @@ export default defineAppConfig({
           matches:
             '[id="com.hexin.plat.android:id/ad_image"] + [id="com.hexin.plat.android:id/skip_tv"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12662631',
-            'https://i.gkd.li/import/import/12662620',
+            'https://i.gkd.li/import/12662631',
+            'https://i.gkd.li/import/12662620',
           ],
         },
       ],
@@ -32,14 +32,14 @@ export default defineAppConfig({
           key: 1,
           matches:
             '@[id="com.hexin.plat.android:id/iv_feed_bottom_bar_dislike"] < LinearLayout -(2) LinearLayout >(2) [text="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12662754'],
+          snapshotUrls: ['https://i.gkd.li/import/12662754'],
         },
         {
           preKeys: [1],
           key: 2,
           matches:
             '[id="com.hexin.plat.android:id/tv_negative_feedback_option"][text="内容质量差"] - ImageView < LinearLayout[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12662781'],
+          snapshotUrls: ['https://i.gkd.li/import/12662781'],
         },
       ],
     },
@@ -51,7 +51,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.hexin.plat.android:id/prod_ad"] + [id="com.hexin.plat.android:id/prod_close_image"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12662656'],
+          snapshotUrls: ['https://i.gkd.li/import/12662656'],
         },
       ],
     },

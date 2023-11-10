@@ -10,7 +10,7 @@ export default defineAppConfig({
       matchLauncher: true,
       activityIds: 'com.shanghaionstar.home.LoadingActivity',
       rules: '[id="com.shanghaionstar:id/jump_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13071523',
+      snapshotUrls: 'https://i.gkd.li/import/13071523',
     },
   ],
 });

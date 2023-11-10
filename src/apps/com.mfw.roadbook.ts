@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.mfw.roadbook:id/skipLayout"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13049046',
+          snapshotUrls: 'https://i.gkd.li/import/13049046',
         },
       ],
     },

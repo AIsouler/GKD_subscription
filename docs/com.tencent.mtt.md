@@ -4,20 +4,20 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12472630)
+- [快照-0](https://i.gkd.li/import/12472630)
 
 ## 小说阅读页面-卡片广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12907446)
-- [快照-1](https://i.gkd.li/import/import/12907445)
-- [快照-2](https://i.gkd.li/import/import/12907654)
-- [快照-3](https://i.gkd.li/import/import/12907651)
-- [快照-4](https://i.gkd.li/import/import/12907655)
-- [快照-5](https://i.gkd.li/import/import/12907653)
+- [快照-0](https://i.gkd.li/import/12907446)
+- [快照-1](https://i.gkd.li/import/12907445)
+- [快照-2](https://i.gkd.li/import/12907654)
+- [快照-3](https://i.gkd.li/import/12907651)
+- [快照-4](https://i.gkd.li/import/12907655)
+- [快照-5](https://i.gkd.li/import/12907653)
 
 ## 小说阅读页面-视频广告
 
-- [快照-0](https://i.gkd.li/import/import/12909822)
-- [快照-1](https://i.gkd.li/import/import/12908955)
+- [快照-0](https://i.gkd.li/import/12909822)
+- [快照-1](https://i.gkd.li/import/12908955)

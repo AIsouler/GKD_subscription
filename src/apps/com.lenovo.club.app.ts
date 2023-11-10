@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.lenovo.club.app.AdActivity',
       rules: '[id="com.lenovo.club.app:id/tv_jump"][text$="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12829678',
+      snapshotUrls: 'https://i.gkd.li/import/12829678',
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: 'TextView[id="com.glyh.mbank.pro:id/tv_countdown"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12876201',
+      snapshotUrls: 'https://i.gkd.li/import/12876201',
     },
   ],
 });

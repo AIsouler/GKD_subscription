@@ -4,29 +4,29 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12504489)
-- [快照-1](https://i.gkd.li/import/import/12504507)
+- [快照-0](https://i.gkd.li/import/12504489)
+- [快照-1](https://i.gkd.li/import/12504507)
 - [快照-2](https://i.gkd.li/import/12852509)
-- [快照-3](https://i.gkd.li/import/import/12504492)
+- [快照-3](https://i.gkd.li/import/12504492)
 
 ## 内部弹窗广告
 
-- [快照-0](https://i.gkd.li/import/import/12504486)
-- [快照-1](https://i.gkd.li/import/import/12504488)
-- [快照-2](https://i.gkd.li/import/import/12504501)
-- [快照-3](https://i.gkd.li/import/import/12504520)
-- [快照-4](https://i.gkd.li/import/import/12661019)
-- [快照-5](https://i.gkd.li/import/import/12504501)
-- [快照-6](https://i.gkd.li/import/import/12892156)
-- [快照-7](https://i.gkd.li/import/import/12925052)
-- [快照-8](https://i.gkd.li/import/import/12925095)
+- [快照-0](https://i.gkd.li/import/12504486)
+- [快照-1](https://i.gkd.li/import/12504488)
+- [快照-2](https://i.gkd.li/import/12504501)
+- [快照-3](https://i.gkd.li/import/12504520)
+- [快照-4](https://i.gkd.li/import/12661019)
+- [快照-5](https://i.gkd.li/import/12504501)
+- [快照-6](https://i.gkd.li/import/12892156)
+- [快照-7](https://i.gkd.li/import/12925052)
+- [快照-8](https://i.gkd.li/import/12925095)
 
 ## 加入书架按钮下面的广告
 
-- [快照-0](https://i.gkd.li/import/import/12504525)
-- [快照-1](https://i.gkd.li/import/import/12851671)
-- [快照-2](https://i.gkd.li/import/import/12909005)
+- [快照-0](https://i.gkd.li/import/12504525)
+- [快照-1](https://i.gkd.li/import/12851671)
+- [快照-2](https://i.gkd.li/import/12909005)
 
 ## 关闭赞助提示
 
-- [快照-0](https://i.gkd.li/import/import/12851627)
+- [快照-0](https://i.gkd.li/import/12851627)

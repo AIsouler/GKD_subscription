@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.thestore.main:id/ll_skip"] > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13163668',
+          snapshotUrls: 'https://i.gkd.li/import/13163668',
         },
       ],
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
         {
           matches: '[id="com.thestore.main.home.feature:id/ad"] > TextView',
           //TextView有id类似".../j"担心这个id是随机的，所以用了TextView而不是id
-          snapshotUrls: 'https://i.gkd.li/import/import/13163686',
+          snapshotUrls: 'https://i.gkd.li/import/13163686',
         },
       ],
     },

@@ -4,16 +4,16 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12699286)
+- [快照-0](https://i.gkd.li/import/12699286)
 
 ## 首页广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12646899)
-- [快照-1](https://i.gkd.li/import/import/12646925)
+- [快照-0](https://i.gkd.li/import/12646899)
+- [快照-1](https://i.gkd.li/import/12646925)
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12699308)
+- [快照-0](https://i.gkd.li/import/12699308)
 
 ## 右侧悬浮广告
 

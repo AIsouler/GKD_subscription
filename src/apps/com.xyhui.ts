@@ -41,14 +41,14 @@ export default defineAppConfig({
           matches:
             'TextView - View < FrameLayout - FrameLayout >(2) ImageView[id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12642482', // 查看详情
-            'https://i.gkd.li/import/import/12646347', // 立即打开
-            'https://i.gkd.li/import/import/12646519', // 立即抢购
+            'https://i.gkd.li/import/12642482', // 查看详情
+            'https://i.gkd.li/import/12646347', // 立即打开
+            'https://i.gkd.li/import/12646519', // 立即抢购
             'https://i.gkd.li/import/12793157', // 立即安装
             'https://i.gkd.li/import/12793177', // 立即下载
             'https://i.gkd.li/import/12868157', // 立即下载, activityId = 'com.xyhui.start.LoadingActivity'
             'https://i.gkd.li/import/12868369', // 去微信看看
-            'https://i.gkd.li/import/import/12646541', // 华为手机的快照，activityId = 'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity'
+            'https://i.gkd.li/import/12646541', // 华为手机的快照，activityId = 'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity'
           ],
         },
         {
@@ -56,10 +56,10 @@ export default defineAppConfig({
           matches:
             'TextView - View < FrameLayout -(4) FrameLayout > ImageView[id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12643276', // 查看详情
+            'https://i.gkd.li/import/12643276', // 查看详情
             'https://i.gkd.li/import/12793180', // 立即下载
             'https://i.gkd.li/import/12868503', // 去微信看看
-            'https://i.gkd.li/import/import/12646420', // 华为手机的快照，activityId = 'com.huawei.android.launcher.unihome.UniHomeLauncher'
+            'https://i.gkd.li/import/12646420', // 华为手机的快照，activityId = 'com.huawei.android.launcher.unihome.UniHomeLauncher'
           ],
         },
         {

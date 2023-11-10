@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.torch.open.ad.splash.SplashAdActivity',
       rules: 'TextView[text$="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12749208',
+      snapshotUrls: 'https://i.gkd.li/import/12749208',
     },
   ],
 });

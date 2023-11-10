@@ -4,15 +4,15 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12706183)
+- [快照-0](https://i.gkd.li/import/12706183)
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12706186)
+- [快照-0](https://i.gkd.li/import/12706186)
 
 ## 我的页面-banner广告
 
-- [快照-0](https://i.gkd.li/import/import/12706181)
+- [快照-0](https://i.gkd.li/import/12706181)
 
 ## 社区-弹窗广告
 
@@ -22,4 +22,4 @@
 
 默认禁用 - 自动点击关闭
 
-- [快照-0](https://i.gkd.li/import/import/13063427)
+- [快照-0](https://i.gkd.li/import/13063427)

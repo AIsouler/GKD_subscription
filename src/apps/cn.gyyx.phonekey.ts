@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'cn.gyyx.phonekey.ui.dialog.AdDialog',
       rules: '[id=`cn.gyyx.phonekey:id/rl_ad_pass`]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12712285',
+      snapshotUrls: 'https://i.gkd.li/import/12712285',
     },
   ],
 });

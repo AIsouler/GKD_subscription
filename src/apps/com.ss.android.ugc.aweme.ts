@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[desc="跳过广告"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13216121',
+      snapshotUrls: 'https://i.gkd.li/import/13216121',
     },
     {
       key: 0,
@@ -29,32 +29,32 @@ export default defineAppConfig({
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[id="com.ss.android.ugc.aweme:id/desc"][text="减少此类推荐"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12520962',
+          snapshotUrls: 'https://i.gkd.li/import/12520962',
         },
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[text="换一个"] - FrameLayout[clickable=true] > ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12520943'],
+          snapshotUrls: ['https://i.gkd.li/import/12520943'],
         },
 
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[text="你可能感兴趣"] < LinearLayout + [text="隐藏"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12675396'],
+          snapshotUrls: ['https://i.gkd.li/import/12675396'],
         },
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: '[text="朋友推荐"] +(2) @FrameLayout > [desc="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12675129',
+          snapshotUrls: 'https://i.gkd.li/import/12675129',
         },
         {
           activityIds:
             'com.ss.android.ugc.aweme.friends.ui.RawAddFriendsActivity',
           matches:
             '[text="朋友推荐"] < LinearLayout + FrameLayout > [desc="关闭"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12675245',
+          snapshotUrls: 'https://i.gkd.li/import/12675245',
         },
       ],
     },
@@ -66,8 +66,8 @@ export default defineAppConfig({
       name: '关闭朋友推荐弹窗',
       rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12525387',
-        'https://i.gkd.li/import/import/12525389',
+        'https://i.gkd.li/import/12525387',
+        'https://i.gkd.li/import/12525389',
       ],
     },
     {
@@ -78,7 +78,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="以后再说"] +2 [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12534016',
+      snapshotUrls: 'https://i.gkd.li/import/12534016',
     },
     {
       key: 4,
@@ -86,7 +86,7 @@ export default defineAppConfig({
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules:
         'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12749276',
+      snapshotUrls: 'https://i.gkd.li/import/12749276',
     },
     {
       key: 5,
@@ -94,7 +94,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12769137',
+      snapshotUrls: 'https://i.gkd.li/import/12769137',
     },
     {
       key: 6,
@@ -105,7 +105,7 @@ export default defineAppConfig({
       desc: '点击[取消]',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="取消"] +2 [text="五星好评"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13053628',
+      snapshotUrls: 'https://i.gkd.li/import/13053628',
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008',
     },
@@ -117,7 +117,7 @@ export default defineAppConfig({
       desc: '点击[拒绝]',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="拒绝"] + [text="去设置"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13256087',
+      snapshotUrls: 'https://i.gkd.li/import/13256087',
     },
     {
       enable: false,
@@ -130,7 +130,7 @@ export default defineAppConfig({
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules:
         '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >(2) [text="开启朋友通知"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12675129',
+      snapshotUrls: 'https://i.gkd.li/import/12675129',
     },
     {
       enable: false,

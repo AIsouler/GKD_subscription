@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.wondertek.miguaikan:id/splash_time"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13258889',
+      snapshotUrls: 'https://i.gkd.li/import/13258889',
     },
   ],
 });

@@ -24,9 +24,9 @@ export default defineAppConfig({
           matches:
             '[text="更新提示"] < LinearLayout < LinearLayout +(2) ScrollView >(2) [text="取消"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12684250',
+            'https://i.gkd.li/import/12684250',
             'https://i.gkd.li/import/12727457', // activityId: 'com.taobao.etao.app.home.view.NewHomeActivity'
-            'https://i.gkd.li/import/import/12684244', // activityId: 'com.miui.home.launcher.Launcher'
+            'https://i.gkd.li/import/12684244', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
       ],
@@ -54,13 +54,13 @@ export default defineAppConfig({
           activityIds: ['com.taobao.sns.app.message.MessageActivity'],
           matches:
             '[text^="打开消息通知"] + [text="去开启"] + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12684278'],
+          snapshotUrls: ['https://i.gkd.li/import/12684278'],
         },
         {
           activityIds: ['com.taobao.etao.mine.MetaXMineActivity'],
           matches:
             '[text^="打开消息通知"] + FrameLayout > [text="去开启"] < FrameLayout + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12684351'],
+          snapshotUrls: ['https://i.gkd.li/import/12684351'],
         },
       ],
     },

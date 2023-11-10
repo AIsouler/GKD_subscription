@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.shizhuang.duapp:id/tv_countdown_bottom"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12841026',
+          snapshotUrls: 'https://i.gkd.li/import/12841026',
         },
       ],
     },

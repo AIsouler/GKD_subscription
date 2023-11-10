@@ -37,7 +37,7 @@ export default defineAppConfig({
             'ImageView < FrameLayout[childCount=1] - FrameLayout > @FrameLayout[childCount=1] > ImageView',
           snapshotUrls: [
             'https://i.gkd.li/import/13071301',
-            'https://i.gkd.li/import/import/13274836',
+            'https://i.gkd.li/import/13274836',
           ],
         },
         {
@@ -52,7 +52,7 @@ export default defineAppConfig({
           key: 4,
           activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
           matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13274838',
+          snapshotUrls: 'https://i.gkd.li/import/13274838',
         },
       ],
     },

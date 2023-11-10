@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.pingan.lifecircle.home.SplashActivity',
       rules: '[id="com.pingan.lifecircle:id/splash_time_tv"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12567724',
+      snapshotUrls: 'https://i.gkd.li/import/12567724',
     },
   ],
 });

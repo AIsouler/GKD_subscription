@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13226136',
+      snapshotUrls: 'https://i.gkd.li/import/13226136',
     },
     {
       enable: false,
@@ -23,7 +23,7 @@ export default defineAppConfig({
       activityIds:
         'com.fenbi.android.leo.imgsearch.sdk.activity.NewCheckCameraActivity',
       rules: '@[text="残忍拒绝"] + [text*="好评"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13226140',
+      snapshotUrls: 'https://i.gkd.li/import/13226140',
     },
   ],
 });

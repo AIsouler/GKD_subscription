@@ -16,8 +16,8 @@ export default defineAppConfig({
           matches:
             '[id="me.chunyu.ChunyuDoctor:id/tv_ad_label"] +(2) [id="me.chunyu.ChunyuDoctor:id/welcome_tv_timer"][text^="跳过"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12661722',
-            'https://i.gkd.li/import/import/12661937',
+            'https://i.gkd.li/import/12661722',
+            'https://i.gkd.li/import/12661937',
           ],
         },
       ],
@@ -34,8 +34,8 @@ export default defineAppConfig({
           matches:
             '[text="给应用评分"] +(2) RelativeLayout > [text="下次再说"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12661907',
-            'https://i.gkd.li/import/import/12661924',
+            'https://i.gkd.li/import/12661907',
+            'https://i.gkd.li/import/12661924',
           ],
         },
       ],

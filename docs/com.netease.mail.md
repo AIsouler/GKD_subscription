@@ -10,14 +10,14 @@
 - [快照-3](https://i.gkd.li/import/12818335)
 - [快照-4](https://i.gkd.li/import/13206298)
 - [快照-5](https://i.gkd.li/import/13207736)
-- [快照-6](https://i.gkd.li/import/import/12999739)
+- [快照-6](https://i.gkd.li/import/12999739)
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12664070)
+- [快照-0](https://i.gkd.li/import/12664070)
 
 ## 邮件列表广告
 
-- [快照-0](https://i.gkd.li/import/import/12664070)
-- [快照-1](https://i.gkd.li/import/import/12999833)
-- [快照-2](https://i.gkd.li/import/import/12999841)
+- [快照-0](https://i.gkd.li/import/12664070)
+- [快照-1](https://i.gkd.li/import/12999833)
+- [快照-2](https://i.gkd.li/import/12999841)

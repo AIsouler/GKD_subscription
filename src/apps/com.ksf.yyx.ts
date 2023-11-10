@@ -11,17 +11,17 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.ksf.yyx:id/ksad_splash_circle_skip_view"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12775918',
+          snapshotUrls: 'https://i.gkd.li/import/12775918',
         },
         {
           matches:
             '[id="com.ksf.yyx:id/ksad_splash_root_container"] [childCount=3] > @ImageView[clickable=true] - [text="|"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12775919'],
+          snapshotUrls: ['https://i.gkd.li/import/12775919'],
         },
         {
           matches:
             'FrameLayout > FrameLayout > [text^="跳过 "][text.length<=4][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12775926',
+          snapshotUrls: 'https://i.gkd.li/import/12775926',
         },
       ],
     },
@@ -32,7 +32,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[desc="了解更多"] - [desc="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12775920',
+          snapshotUrls: 'https://i.gkd.li/import/12775920',
         },
       ],
     },
@@ -49,21 +49,21 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.ksf.yyx:id/ksad_container"] [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12775922',
+          snapshotUrls: 'https://i.gkd.li/import/12775922',
         },
         {
           matches:
             '[id="com.ksf.yyx:id/ksad_container"] TextView[text="广告"] <2 ViewGroup -n ViewGroup[childCount=1] > @ViewGroup[childCount=1 && clickable=true] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12775923',
+            'https://i.gkd.li/import/12775923',
             'https://i.gkd.li/import/12998899',
           ],
         },
         {
           matches: '[id="ad_area"] [id="close_btn"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12775925',
-            'https://i.gkd.li/import/import/12775924',
+            'https://i.gkd.li/import/12775925',
+            'https://i.gkd.li/import/12775924',
           ],
         },
         {
@@ -71,21 +71,21 @@ export default defineAppConfig({
           matches:
             '[text^="去"][text$="看看"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12775921',
-            'https://i.gkd.li/import/import/12776903',
+            'https://i.gkd.li/import/12775921',
+            'https://i.gkd.li/import/12776903',
           ],
         },
         {
           action: 'clickCenter',
           matches:
             'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12789196',
+          snapshotUrls: 'https://i.gkd.li/import/12789196',
         },
         {
           action: 'clickCenter',
           matches:
             'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12789928',
+          snapshotUrls: 'https://i.gkd.li/import/12789928',
         },
       ],
     },

@@ -20,7 +20,7 @@ export default defineAppConfig({
       name: 'APP内弹窗广告',
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '[id="com.smzdm.client.android:id/dialog_home_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12695751',
+      snapshotUrls: 'https://i.gkd.li/import/12695751',
     },
     {
       key: 2,
