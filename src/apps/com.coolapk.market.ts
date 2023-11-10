@@ -81,7 +81,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [1],
+          preKeys: [1, 2],
           key: 3,
           name: '选择关闭原因-点击不感兴趣',
           matches: [
