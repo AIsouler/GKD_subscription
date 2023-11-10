@@ -12,8 +12,8 @@
 
 ## 青少年模式弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12701050)
+- [快照-0](https://i.gkd.li/import/12701050)
 
 ## 视频推荐弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12701029)
+- [快照-0](https://i.gkd.li/import/12701029)

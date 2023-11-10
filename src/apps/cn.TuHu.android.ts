@@ -31,7 +31,7 @@ export default defineAppConfig({
       rules: '[id="cn.TuHu.android:id/imgClose"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13228796', //推送提醒消息弹窗
-        'https://i.gkd.li/import/import/13256535', //2023年11月5日新增推送物流进度等信息弹窗
+        'https://i.gkd.li/import/13256535', //2023年11月5日新增推送物流进度等信息弹窗
       ],
     },
   ],

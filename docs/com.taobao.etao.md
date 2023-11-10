@@ -8,9 +8,9 @@
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12684250)
+- [快照-0](https://i.gkd.li/import/12684250)
 - [快照-1](https://i.gkd.li/import/12727457)
-- [快照-2](https://i.gkd.li/import/import/12684244)
+- [快照-2](https://i.gkd.li/import/12684244)
 
 ## 首页广告弹窗
 
@@ -20,5 +20,5 @@
 
 默认禁用 - 自动点击提示信息的x按钮
 
-- [快照-0](https://i.gkd.li/import/import/12684278)
-- [快照-1](https://i.gkd.li/import/import/12684351)
+- [快照-0](https://i.gkd.li/import/12684278)
+- [快照-1](https://i.gkd.li/import/12684351)

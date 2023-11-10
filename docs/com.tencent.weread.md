@@ -6,7 +6,7 @@
 
 系统推送弹窗-点击取消
 
-- [快照-0](https://i.gkd.li/import/import/12642247)
+- [快照-0](https://i.gkd.li/import/12642247)
 - [快照-1](https://i.gkd.li/import/13233735)
 
 ## 青少年模式弹窗

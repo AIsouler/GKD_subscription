@@ -14,20 +14,20 @@
 
 ## 应用内活动、广告弹窗（大部分）
 
-- [快照-0](https://i.gkd.li/import/import/12650028)
-- [快照-1](https://i.gkd.li/import/import/12650090)
+- [快照-0](https://i.gkd.li/import/12650028)
+- [快照-1](https://i.gkd.li/import/12650090)
 
 ## 哈啰智能电动车-广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12650163)
+- [快照-0](https://i.gkd.li/import/12650163)
 
 ## 右侧悬浮广告
 
-- [快照-0](https://i.gkd.li/import/import/12650071)
+- [快照-0](https://i.gkd.li/import/12650071)
 
 ## 骑行订单完成-广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12684673)
+- [快照-0](https://i.gkd.li/import/12684673)
 
 ## 骑行卡-优惠券弹窗
 

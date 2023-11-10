@@ -15,9 +15,9 @@ export default defineAppConfig({
         {
           matches: 'TextView[text^="跳过"][text.length<=4]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12888429',
-            'https://i.gkd.li/import/import/12888730',
-            'https://i.gkd.li/import/import/12888762',
+            'https://i.gkd.li/import/12888429',
+            'https://i.gkd.li/import/12888730',
+            'https://i.gkd.li/import/12888762',
           ],
         },
       ],
@@ -35,8 +35,8 @@ export default defineAppConfig({
           matches:
             'View[desc^="APP最新版本"] > Button[desc="关闭"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12888361',
-            'https://i.gkd.li/import/import/12888389',
+            'https://i.gkd.li/import/12888361',
+            'https://i.gkd.li/import/12888389',
           ],
         },
       ],
@@ -53,23 +53,23 @@ export default defineAppConfig({
         {
           matches: '[id="ad_area"] [id="close_btn"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12888388',
-            'https://i.gkd.li/import/import/12888419',
-            'https://i.gkd.li/import/import/12888578',
-            'https://i.gkd.li/import/import/12888647',
+            'https://i.gkd.li/import/12888388',
+            'https://i.gkd.li/import/12888419',
+            'https://i.gkd.li/import/12888578',
+            'https://i.gkd.li/import/12888647',
           ],
         },
         {
           matches:
             'TextView[text="反馈"] + @ImageView[clickable=true] + TextView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12888945',
+          snapshotUrls: 'https://i.gkd.li/import/12888945',
         },
         {
           matches: [
             '[text="查看详情"]',
             'ImageView < FrameLayout[childCount=1]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/import/13213661',
+          snapshotUrls: 'https://i.gkd.li/import/13213661',
         },
       ],
     },

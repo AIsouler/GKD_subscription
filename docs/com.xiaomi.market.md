@@ -16,13 +16,13 @@
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/45487685/a3a61df9-7757-428e-b4fe-a960e09a0bbe)
 
-- [快照-0](https://i.gkd.li/import/import/12674261)
-- [快照-1](https://i.gkd.li/import/import/12674264)
-- [快照-2](https://i.gkd.li/import/import/12674269)
+- [快照-0](https://i.gkd.li/import/12674261)
+- [快照-1](https://i.gkd.li/import/12674264)
+- [快照-2](https://i.gkd.li/import/12674269)
 
 ## 请求通知权限提示弹窗
 
 自动点击关闭按钮
 
-- [快照-0](https://i.gkd.li/import/import/12714980)
+- [快照-0](https://i.gkd.li/import/12714980)
 - [快照-1](https://i.gkd.li/import/13197306)

@@ -19,8 +19,8 @@ export default defineAppConfig({
           ],
           action: 'clickCenter', // 根据 https://github.com/gkd-kit/subscription/pull/1180#issuecomment-1767735683 反馈，此处使用 clickCenter 事件。
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12928975',
-            'https://i.gkd.li/import/import/13226636',
+            'https://i.gkd.li/import/12928975',
+            'https://i.gkd.li/import/13226636',
           ],
         },
       ],

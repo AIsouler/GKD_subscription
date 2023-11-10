@@ -20,7 +20,7 @@ export default defineAppConfig({
       activityIds:
         'com.fanli.android.module.webview.ui.activity.TransparentBrowserInnerActivity',
       rules: '[id="J_poplayer_box"] >n @View + [text="main_bkg"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13245808',
+      snapshotUrls: 'https://i.gkd.li/import/13245808',
     },
   ],
 });

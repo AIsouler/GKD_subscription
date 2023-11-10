@@ -4,9 +4,9 @@
 
 ## 首页广告
 
-- [快照-0](https://i.gkd.li/import/import/12605051)
-- [快照-1](https://i.gkd.li/import/import/12605053)
-- [快照-2](https://i.gkd.li/import/import/12605057)
+- [快照-0](https://i.gkd.li/import/12605051)
+- [快照-1](https://i.gkd.li/import/12605053)
+- [快照-2](https://i.gkd.li/import/12605057)
 
 ## 广告卡片
 

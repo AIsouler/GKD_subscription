@@ -8,4 +8,4 @@
 
 ## 首页占位广告
 
-- [快照-0](https://i.gkd.li/import/import/13062612)
+- [快照-0](https://i.gkd.li/import/13062612)

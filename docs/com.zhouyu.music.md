@@ -8,8 +8,8 @@
 
 - [快照-0](https://i.gkd.li/import/13062330)
 - [快照-1](https://i.gkd.li/import/13068583)
-- [快照-2](https://i.gkd.li/import/import/13231850)
+- [快照-2](https://i.gkd.li/import/13231850)
 
 ## 搜索底部广告
 
-- [快照-0](https://i.gkd.li/import/import/13245859)
+- [快照-0](https://i.gkd.li/import/13245859)

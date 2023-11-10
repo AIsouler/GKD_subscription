@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.example.maintenancemaster:id/advertisement_countdown_ccd"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12903877'],
+          snapshotUrls: ['https://i.gkd.li/import/12903877'],
         },
       ],
     },

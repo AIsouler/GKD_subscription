@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: '[id="com.onecard.hainan:id/tv_jump"][text$="跳过"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12662092',
-            'https://i.gkd.li/import/import/12662129',
+            'https://i.gkd.li/import/12662092',
+            'https://i.gkd.li/import/12662129',
           ],
         },
       ],
@@ -32,8 +32,8 @@ export default defineAppConfig({
         {
           matches: '@[text="暂不更新"] +(2) [text="立即更新"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12662114',
-            'https://i.gkd.li/import/import/12662136',
+            'https://i.gkd.li/import/12662114',
+            'https://i.gkd.li/import/12662136',
           ],
         },
       ],

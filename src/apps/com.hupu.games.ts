@@ -11,10 +11,10 @@ export default defineAppConfig({
       rules:
         '[id="com.byted.pangle:id/tt_splash_skip_btn"||id="com.hupu.games:id/tv_time"&&text*="跳过"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12509060',
-        'https://i.gkd.li/import/import/12510962',
-        'https://i.gkd.li/import/import/12567546',
-        'https://i.gkd.li/import/import/12567546',
+        'https://i.gkd.li/import/12509060',
+        'https://i.gkd.li/import/12510962',
+        'https://i.gkd.li/import/12567546',
+        'https://i.gkd.li/import/12567546',
       ],
     },
     {
@@ -33,7 +33,7 @@ export default defineAppConfig({
           matches:
             '@[id="com.hupu.games:id/shield_view"] >2 [id="com.hupu.games:id/tv_tag"][text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12511005',
+            'https://i.gkd.li/import/12511005',
             'https://i.gkd.li/import/13258026',
             'https://i.gkd.li/import/13259692',
           ],
@@ -44,8 +44,8 @@ export default defineAppConfig({
           matches:
             '@[clickable=true] > [id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12511010',
-            'https://i.gkd.li/import/import/12534848',
+            'https://i.gkd.li/import/12511010',
+            'https://i.gkd.li/import/12534848',
             'https://i.gkd.li/import/13259699',
           ],
         },

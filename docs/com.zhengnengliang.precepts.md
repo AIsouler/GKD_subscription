@@ -5,7 +5,7 @@
 ## 更新弹窗
 
 - [快照-0](https://i.gkd.li/import/12727650)
-- [快照-1](https://i.gkd.li/import/import/12715352)
+- [快照-1](https://i.gkd.li/import/12715352)
 
 ## 第三方 SDK 广告
 

@@ -4,14 +4,14 @@
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12715215)
+- [快照-0](https://i.gkd.li/import/12715215)
 
 ## 首页右侧悬浮广告
 
-- [快照-0](https://i.gkd.li/import/import/12715291)
+- [快照-0](https://i.gkd.li/import/12715291)
 
 ## 请求通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12715250)
+- [快照-0](https://i.gkd.li/import/12715250)

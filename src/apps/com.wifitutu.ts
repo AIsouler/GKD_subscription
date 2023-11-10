@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12992451',
+          snapshotUrls: 'https://i.gkd.li/import/12992451',
         },
       ],
     },
@@ -25,12 +25,12 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'View < [desc^="dislike"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13233916',
+          snapshotUrls: 'https://i.gkd.li/import/13233916',
         },
         {
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13234048',
+          snapshotUrls: 'https://i.gkd.li/import/13234048',
         },
       ],
     },

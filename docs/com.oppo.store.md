@@ -6,8 +6,8 @@
 
 点击下次再说
 
-- [快照-0](https://i.gkd.li/import/import/13295202)
+- [快照-0](https://i.gkd.li/import/13295202)
 
 ## 弹窗广告
 
-- [快照-0](https://i.gkd.li/import/import/13295201)
+- [快照-0](https://i.gkd.li/import/13295201)

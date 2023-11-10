@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.netease.nr.biz.ad.newAd.AdActivity',
       rules: '[text="广告"] < LinearLayout - LinearLayout > [text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12639864',
+      snapshotUrls: 'https://i.gkd.li/import/12639864',
     },
     {
       key: 1,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds:
         'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules: '[text$="版本更新了"] +(2) RelativeLayout > [text="稍后再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12639884',
+      snapshotUrls: 'https://i.gkd.li/import/12639884',
     },
     {
       key: 2,
@@ -27,7 +27,7 @@ export default defineAppConfig({
         'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules:
         '[text*="开启系统推送"] - ImageView < * < * < FrameLayout + FrameLayout >(3) Button[text="暂不开启"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12639800',
+      snapshotUrls: 'https://i.gkd.li/import/12639800',
     },
     {
       key: 3,
@@ -36,7 +36,7 @@ export default defineAppConfig({
       activityIds:
         'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules: '[text^="打开推送"] +(2) RelativeLayout > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/import/12639869',
+      snapshotUrls: 'https://i.gkd.li/import/12639869',
     },
     {
       enable: false,
@@ -49,13 +49,13 @@ export default defineAppConfig({
           preKeys: [1],
           name: '首页信息流广告-反馈理由',
           matches: '[text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12639752',
+          snapshotUrls: 'https://i.gkd.li/import/12639752',
         },
         {
           key: 1,
           matches:
             'FrameLayout[childCount=1] >5 TextView[text="广告"] +2 ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12639751',
+          snapshotUrls: 'https://i.gkd.li/import/12639751',
         },
       ],
     },

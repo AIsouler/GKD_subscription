@@ -16,14 +16,14 @@ export default defineAppConfig({
           matches:
             '[id="com.ximalaya.ting.android:id/xm_ad_host_count_down_click_lay"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12506207',
-            'https://i.gkd.li/import/import/12506273',
+            'https://i.gkd.li/import/12506207',
+            'https://i.gkd.li/import/12506273',
           ],
         },
         {
           matches:
             'TextView[text^="跳过"] < @LinearLayout +3 TextView[text^="跳转详情"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12877937'],
+          snapshotUrls: ['https://i.gkd.li/import/12877937'],
         },
       ],
     },
@@ -33,7 +33,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12472620'],
+      snapshotUrls: ['https://i.gkd.li/import/12472620'],
     },
     {
       key: 1,
@@ -46,7 +46,7 @@ export default defineAppConfig({
           name: '暂停按钮下方的广告',
           matches:
             '[id="com.ximalaya.ting.android:id/x_play_ad_banner_close_real"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12506218',
+          snapshotUrls: 'https://i.gkd.li/import/12506218',
         },
         {
           key: 1,
@@ -69,8 +69,8 @@ export default defineAppConfig({
           ],
           matches: '@[clickable=true] > [text="屏蔽"] + [text="关闭当前广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12506269',
-            'https://i.gkd.li/import/import/13296565', //com.ximalaya.ting.android.host.activity.MainActivity
+            'https://i.gkd.li/import/12506269',
+            'https://i.gkd.li/import/13296565', //com.ximalaya.ting.android.host.activity.MainActivity
           ],
         },
         {
@@ -78,8 +78,8 @@ export default defineAppConfig({
           matches:
             '[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12506225',
-            'https://i.gkd.li/import/import/12701414', // 关闭广告后，控件仍然存在但不可见，使用 visibleToUser=true 进行限定，防止关闭之后继续触发规则
+            'https://i.gkd.li/import/12506225',
+            'https://i.gkd.li/import/12701414', // 关闭广告后，控件仍然存在但不可见，使用 visibleToUser=true 进行限定，防止关闭之后继续触发规则
           ],
         },
       ],
@@ -94,8 +94,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.ximalaya.ting.android:id/main_play_ad_close_real"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12506250',
-        'https://i.gkd.li/import/import/12520626',
+        'https://i.gkd.li/import/12506250',
+        'https://i.gkd.li/import/12520626',
       ],
     },
     {
@@ -111,13 +111,13 @@ export default defineAppConfig({
           key: 0,
           quickFind: true,
           matches: '[id="com.ximalaya.ting.android:id/xm_ad_close_real"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12506253',
+          snapshotUrls: 'https://i.gkd.li/import/12506253',
         },
         {
           key: 1,
           matches:
             '[id="com.ximalaya.ting.android:id/main_ad_dynamic_lay"] >(4) ImageView + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12701374',
+          snapshotUrls: 'https://i.gkd.li/import/12701374',
         },
         {
           preKeys: [0, 1],
@@ -126,9 +126,9 @@ export default defineAppConfig({
           matches:
             '@[name="android.widget.RelativeLayout" || name="android.widget.LinearLayout"] > [text="屏蔽"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12506258',
-            'https://i.gkd.li/import/import/13260487',
-            'https://i.gkd.li/import/import/13275928', //没有id
+            'https://i.gkd.li/import/12506258',
+            'https://i.gkd.li/import/13260487',
+            'https://i.gkd.li/import/13275928', //没有id
           ],
         },
       ],
@@ -140,7 +140,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="热播推荐"] + ImageView + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12506270',
+          snapshotUrls: 'https://i.gkd.li/import/12506270',
           // 点击后出现 com.ximalaya.ting.android.main.dialog 弹窗
         },
       ],
@@ -150,14 +150,14 @@ export default defineAppConfig({
       name: '关闭更新弹窗',
       quickFind: true,
       rules: '[id="com.ximalaya.ting.android:id/host_tv_update_later"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12506287',
+      snapshotUrls: 'https://i.gkd.li/import/12506287',
     },
     {
       key: 7,
       name: '关闭青少年模式弹窗',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      snapshotUrls: 'https://i.gkd.li/import/import/12506209',
+      snapshotUrls: 'https://i.gkd.li/import/12506209',
       rules: {
         matches: [
           '[text*="青少年模式"][id="com.ximalaya.ting.android:id/host_btn_set"]',
@@ -190,15 +190,15 @@ export default defineAppConfig({
           matches:
             '[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/13194838',
-            'https://i.gkd.li/import/import/13296565', // [visibleToUser=true]
+            'https://i.gkd.li/import/13194838',
+            'https://i.gkd.li/import/13296565', // [visibleToUser=true]
           ],
         },
         {
           preKeys: 0,
           matches:
             '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_un_interest_title"][text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13194839',
+          snapshotUrls: 'https://i.gkd.li/import/13194839',
         },
       ],
     },

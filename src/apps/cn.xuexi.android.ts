@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules: '@[text="取消"] + [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12715139',
+      snapshotUrls: 'https://i.gkd.li/import/12715139',
     },
     {
       enable: false,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules:
         '[text^="开启消息通知"] +2 [id="cn.xuexi.android:id/layout_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12715160',
+      snapshotUrls: 'https://i.gkd.li/import/12715160',
     },
   ],
 });

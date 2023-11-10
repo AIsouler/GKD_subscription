@@ -11,7 +11,7 @@ export default defineAppConfig({
         'com.xinhang.mobileclient.launcher.activity.LauncherActivity',
       matchLauncher: true,
       rules: '[id="com.xinhang.mobileclient:id/cdp_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13024858',
+      snapshotUrls: 'https://i.gkd.li/import/13024858',
     },
     {
       key: 1,
@@ -21,12 +21,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'View[desc^="close"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13024867',
+          snapshotUrls: 'https://i.gkd.li/import/13024867',
         },
         {
           key: 1,
           matches: 'View > View > TextView + TextView[text=""]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13024869',
+          snapshotUrls: 'https://i.gkd.li/import/13024869',
         },
       ],
     },
@@ -37,8 +37,8 @@ export default defineAppConfig({
       rules:
         '@[id="com.xinhang.mobileclient:id/iv_close"] + [id="com.xinhang.mobileclient:id/iv_advert"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/13024863',
-        'https://i.gkd.li/import/import/13024872',
+        'https://i.gkd.li/import/13024863',
+        'https://i.gkd.li/import/13024872',
       ],
     },
   ],

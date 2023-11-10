@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.SplashActivity'],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/tv_skip_timer"][text^="跳过"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12647186'],
+      snapshotUrls: ['https://i.gkd.li/import/12647186'],
     },
     {
       key: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_sure_tips"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_cancel_tips"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12647025',
+        'https://i.gkd.li/import/12647025',
         'https://i.gkd.li/import/12727203',
       ],
     },
@@ -32,7 +32,7 @@ export default defineAppConfig({
       activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2'],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/lly_cf_view_content"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cf_view_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12647000'],
+      snapshotUrls: ['https://i.gkd.li/import/12647000'],
     },
     {
       key: 3,
@@ -47,8 +47,8 @@ export default defineAppConfig({
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_floating_ad_cmb"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_close_floating_ad_cmb"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12647039', // 信用卡页面
-            'https://i.gkd.li/import/import/12647052', // 我的页面
+            'https://i.gkd.li/import/12647039', // 信用卡页面
+            'https://i.gkd.li/import/12647052', // 我的页面
           ],
         },
         {
@@ -59,7 +59,7 @@ export default defineAppConfig({
           ],
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_bg"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12647127'],
+          snapshotUrls: ['https://i.gkd.li/import/12647127'],
         },
       ],
     },
@@ -73,7 +73,7 @@ export default defineAppConfig({
       ],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/btn_open_notify"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/iv_delete"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12647068'],
+      snapshotUrls: ['https://i.gkd.li/import/12647068'],
     },
   ],
 });

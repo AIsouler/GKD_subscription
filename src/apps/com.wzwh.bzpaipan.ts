@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: 'com.qq.e.ads.PortraitADActivity',
       rules:
         '@ImageView[clickable=true] < LinearLayout[childCount=1] <2 FrameLayout[childCount=2] < [id="android:id/content"][childCount=1]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13162912',
+      snapshotUrls: 'https://i.gkd.li/import/13162912',
     },
   ],
 });

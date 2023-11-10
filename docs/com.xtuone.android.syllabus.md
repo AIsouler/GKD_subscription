@@ -4,18 +4,18 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12840730)
-- [快照-1](https://i.gkd.li/import/import/12840736)
-- [快照-2](https://i.gkd.li/import/import/12840737)
+- [快照-0](https://i.gkd.li/import/12840730)
+- [快照-1](https://i.gkd.li/import/12840736)
+- [快照-2](https://i.gkd.li/import/12840737)
 - [快照-3](https://i.gkd.li/import/12909593)
 
 ## 首页banner广告
 
-- [快照-0](https://i.gkd.li/import/import/12840733)
+- [快照-0](https://i.gkd.li/import/12840733)
 
 ## 课程表界面广告
 
-- [快照-0](https://i.gkd.li/import/import/12999642)
+- [快照-0](https://i.gkd.li/import/12999642)
 
 ## 弹窗广告
 

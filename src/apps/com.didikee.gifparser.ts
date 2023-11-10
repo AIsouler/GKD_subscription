@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.didikee.gifparser:id/skip_view"][text^="跳过"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12674390'],
+          snapshotUrls: ['https://i.gkd.li/import/12674390'],
         },
       ],
     },

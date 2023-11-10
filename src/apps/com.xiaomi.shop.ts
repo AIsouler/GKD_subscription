@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.xiaomi.shop.activity.MainTabActivity',
       rules: '[id="com.xiaomi.shop:id/skip"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12472631'],
+      snapshotUrls: ['https://i.gkd.li/import/12472631'],
     },
     {
       key: 1,
@@ -18,7 +18,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.shop.plugin.homepage.utils.AdDialog',
       rules:
         'LinearLayout[childCount=2] > ImageView[id=null] + ImageView[id=null][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12649330'],
+      snapshotUrls: ['https://i.gkd.li/import/12649330'],
     },
   ],
 });

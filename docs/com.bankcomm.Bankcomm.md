@@ -6,7 +6,7 @@
 
 点击右上角x
 
-- [快照-0](https://i.gkd.li/import/import/12671987)
+- [快照-0](https://i.gkd.li/import/12671987)
 - [快照-1](https://i.gkd.li/import/12745293)
 
 ## 版本升级弹窗

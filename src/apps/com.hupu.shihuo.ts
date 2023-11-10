@@ -19,7 +19,7 @@ export default defineAppConfig({
         'com.shizhuang.duapp.modules.rn.mini.MiniReactActivity$MiniUITranslucentReactActivity',
       rules:
         '[id="com.hupu.shihuo:id/fragment_container"] >11 @ViewGroup[clickable=true] > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/import/13115664',
+      snapshotUrls: 'https://i.gkd.li/import/13115664',
     },
   ],
 });

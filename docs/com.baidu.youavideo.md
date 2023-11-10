@@ -4,33 +4,33 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12597925)
-- [快照-1](https://i.gkd.li/import/import/12598507)
+- [快照-0](https://i.gkd.li/import/12597925)
+- [快照-1](https://i.gkd.li/import/12598507)
 
 ## 软件升级提醒
 
-- [快照-0](https://i.gkd.li/import/import/12597916)
+- [快照-0](https://i.gkd.li/import/12597916)
 
 ## 悬浮窗
 
 关闭广告悬浮窗
 
-- [快照-0](https://i.gkd.li/import/import/12970088)
+- [快照-0](https://i.gkd.li/import/12970088)
 
 ## 评价
 
 点击下次再说
 
-- [快照-0](https://i.gkd.li/import/import/12970094)
+- [快照-0](https://i.gkd.li/import/12970094)
 
 ## 会员充值提示
 
 点击x关闭充值提示
 
-- [快照-0](https://i.gkd.li/import/import/12970094)
+- [快照-0](https://i.gkd.li/import/12970094)
 
 ## 弹窗广告
 
 点击x关闭广告提示
 
-- [快照-0](https://i.gkd.li/import/import/13048700)
+- [快照-0](https://i.gkd.li/import/13048700)

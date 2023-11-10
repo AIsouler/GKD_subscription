@@ -19,7 +19,7 @@ export default defineAppConfig({
           key: 1,
           matches:
             '[id="com.duowan.kiwi:id/ams_splash_ad_container"] >2 [text^="跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/13052592'],
+          snapshotUrls: ['https://i.gkd.li/import/13052592'],
         },
       ],
     },
@@ -44,8 +44,8 @@ export default defineAppConfig({
           key: 0,
           matches: '[id="com.duowan.kiwi:id/ad_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12901045',
-            'https://i.gkd.li/import/import/12901044',
+            'https://i.gkd.li/import/12901045',
+            'https://i.gkd.li/import/12901044',
           ],
         },
       ],

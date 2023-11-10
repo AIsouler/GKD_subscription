@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.pupumall.customer.activity.SplashActivity',
       rules: '[id="com.pupumall.customer:id/tv_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12830126',
+      snapshotUrls: 'https://i.gkd.li/import/12830126',
     },
   ],
 });

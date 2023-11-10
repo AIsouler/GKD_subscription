@@ -6,4 +6,4 @@
 
 点击【我知道了】
 
-- [快照-0](https://i.gkd.li/import/import/13111607)
+- [快照-0](https://i.gkd.li/import/13111607)

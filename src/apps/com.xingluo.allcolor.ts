@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: ['com.cccgame.android.MainActivity'],
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12640349'],
+      snapshotUrls: ['https://i.gkd.li/import/12640349'],
     },
     {
       enable: false,
@@ -25,33 +25,33 @@ export default defineAppConfig({
           preKeys: [1, 2, 3, 4],
           name: '穿山甲广告-反馈理由',
           matches: '[id="com.byted.pangle:id/tt_item_tv"][text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12640358',
+          snapshotUrls: 'https://i.gkd.li/import/12640358',
         },
         {
           key: 1,
           matches: ['[text="广告"] < * - View < * - View > Image[id=null]'],
-          snapshotUrls: ['https://i.gkd.li/import/import/12640359'],
+          snapshotUrls: ['https://i.gkd.li/import/12640359'],
         },
         {
           key: 2,
           matches: [
             '@Image[id=null] < View -(2) View > View > View > TextView[text="广告"]',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/import/12640362'],
+          snapshotUrls: ['https://i.gkd.li/import/12640362'],
         },
         {
           key: 3,
           matches: [
             '@View[id=null] < FrameLayout[desc^="dislike"] + FrameLayout >(2) TextView[text="广告"]',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/import/12640374'],
+          snapshotUrls: ['https://i.gkd.li/import/12640374'],
         },
         {
           key: 4,
           matches: [
             '@Image[id=null] < View - View > View + View > TextView[text="广告"]',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/import/12640406'],
+          snapshotUrls: ['https://i.gkd.li/import/12640406'],
         },
       ],
     },

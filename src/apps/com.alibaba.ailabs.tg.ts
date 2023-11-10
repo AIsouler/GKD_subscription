@@ -11,12 +11,12 @@ export default defineAppConfig({
       rules: [
         {
           matches: ['[id="com.alibaba.ailabs.tg:id/fl_ad"] >n [text^="跳过"]'],
-          snapshotUrls: ['https://i.gkd.li/import/import/12814080'],
+          snapshotUrls: ['https://i.gkd.li/import/12814080'],
         },
         {
           action: 'clickNode',
           matches: ['[id="com.alibaba.ailabs.tg:id/operation_ad_skip_text"]'],
-          snapshotUrls: ['https://i.gkd.li/import/import/12819744'],
+          snapshotUrls: ['https://i.gkd.li/import/12819744'],
         },
       ],
     },

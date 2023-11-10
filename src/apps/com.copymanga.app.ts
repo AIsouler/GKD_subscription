@@ -16,10 +16,10 @@ export default defineAppConfig({
         {
           matches: '[text *= "跳过" && text.length<6]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12504489',
-            'https://i.gkd.li/import/import/12504507',
+            'https://i.gkd.li/import/12504489',
+            'https://i.gkd.li/import/12504507',
             'https://i.gkd.li/import/12852509',
-            'https://i.gkd.li/import/import/12504492',
+            'https://i.gkd.li/import/12504492',
           ],
         },
       ],
@@ -34,46 +34,46 @@ export default defineAppConfig({
         {
           activityIds: 'com.kwad.components.ad.interstitial',
           matches: 'TextView[text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12504486',
+          snapshotUrls: 'https://i.gkd.li/import/12504486',
         },
         {
           activityIds: 'com.kwad.components.ad.interstitial',
           matches: 'ViewGroup[clickable=true] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12504488',
+          snapshotUrls: 'https://i.gkd.li/import/12504488',
         },
         {
           matches:
             'ImageView < FrameLayout < FrameLayout +2 FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12504501',
+          snapshotUrls: 'https://i.gkd.li/import/12504501',
         },
         {
           matches: 'ImageView + FrameLayout + FrameLayout > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12504520',
-            'https://i.gkd.li/import/import/12661019',
+            'https://i.gkd.li/import/12504520',
+            'https://i.gkd.li/import/12661019',
           ],
         },
         {
           matches:
             '@ImageView < FrameLayout[childCount=1] +2 FrameLayout[childCount=2] >2 TextView[text$="看看"][text^="去"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12504501',
+          snapshotUrls: 'https://i.gkd.li/import/12504501',
         },
         {
           matches:
             'TextView[text.length=4] < FrameLayout[childCount>=1] <2 FrameLayout[childCount>=2] -2 FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12892156', //最后是ImageView否则和io/import/12504501误触
+          snapshotUrls: 'https://i.gkd.li/import/12892156', //最后是ImageView否则和io/import/12504501误触
         },
         {
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text="反馈"] -2 @View - Image',
-          snapshotUrls: 'https://i.gkd.li/import/import/12925052',
+          snapshotUrls: 'https://i.gkd.li/import/12925052',
         },
         {
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text="反馈"] -4 @View < View[childCount=7]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12925095',
+          snapshotUrls: 'https://i.gkd.li/import/12925095',
         },
       ],
     },
@@ -85,15 +85,15 @@ export default defineAppConfig({
         {
           name: '点击右上角x',
           matches: 'ImageView[id="com.copymanga.app:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12504525',
+          snapshotUrls: 'https://i.gkd.li/import/12504525',
         },
         {
           name: '点击右下角x',
           matches:
             'FrameLayout[childCount=3] > LinearLayout + FrameLayout[childCount=1] > ImageView[id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12851671',
-            'https://i.gkd.li/import/import/12909005',
+            'https://i.gkd.li/import/12851671',
+            'https://i.gkd.li/import/12909005',
           ],
         },
       ],
@@ -105,7 +105,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[desc="就这样吧"] + [desc^="赞助免广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12851627',
+          snapshotUrls: 'https://i.gkd.li/import/12851627',
         },
       ],
     },

@@ -4,8 +4,8 @@
 
 ## 评论区-满意度评价
 
-- [快照-0](https://i.gkd.li/import/import/13115189)
+- [快照-0](https://i.gkd.li/import/13115189)
 
 ## APP评分
 
-- [快照-0](https://i.gkd.li/import/import/13180746)
+- [快照-0](https://i.gkd.li/import/13180746)

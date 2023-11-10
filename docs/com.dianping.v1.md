@@ -4,18 +4,18 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12726928)
+- [快照-0](https://i.gkd.li/import/12726928)
 
 ## 主页推荐关注弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12727011)
+- [快照-0](https://i.gkd.li/import/12727011)
 
 ## 消息页上方开启系统通知提醒
 
-- [快照-0](https://i.gkd.li/import/import/12727070)
+- [快照-0](https://i.gkd.li/import/12727070)
 
 ## 关闭[签到开红包]
 
 点击右下角悬浮图片右上角的x图标
 
-- [快照-0](https://i.gkd.li/import/import/12727366)
+- [快照-0](https://i.gkd.li/import/12727366)

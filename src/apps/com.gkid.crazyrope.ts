@@ -14,14 +14,14 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12916417',
+          snapshotUrls: 'https://i.gkd.li/import/12916417',
         },
         {
           matches: '[text^="跳过"][text.length<=10]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/13028151',
+            'https://i.gkd.li/import/13028151',
             'https://i.gkd.li/import/13195567',
-            'https://i.gkd.li/import/import/12985488',
+            'https://i.gkd.li/import/12985488',
           ],
         },
       ],
@@ -35,7 +35,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.gkid.crazyrope:id/btn_close"][text="暂不需要"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12916419',
+          snapshotUrls: 'https://i.gkd.li/import/12916419',
         },
       ],
     },
@@ -50,8 +50,8 @@ export default defineAppConfig({
         '[id="com.gkid.crazyrope:id/tv_close"][text="关闭广告"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/import/13262845',
-        'https://i.gkd.li/import/import/13262844',
+        'https://i.gkd.li/import/13262845',
+        'https://i.gkd.li/import/13262844',
       ],
     },
   ],

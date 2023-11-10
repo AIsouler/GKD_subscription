@@ -8,4 +8,4 @@
 
 点击左上角x关闭
 
-- [快照-0](https://i.gkd.li/import/import/13115664)
+- [快照-0](https://i.gkd.li/import/13115664)

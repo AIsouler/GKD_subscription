@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12667766)
-- [快照-1](https://i.gkd.li/import/import/13215012)
+- [快照-0](https://i.gkd.li/import/12667766)
+- [快照-1](https://i.gkd.li/import/13215012)
 - [快照-2](https://i.gkd.li/import/13228290)
 
 ## “我的”页会员广告
 
-- [快照-0](https://i.gkd.li/import/import/12667814)
+- [快照-0](https://i.gkd.li/import/12667814)

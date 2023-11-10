@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.samsung.android.voc.app.initialize.datainitialize.InitializeActivity',
       rules: '[id="com.samsung.android.voc:id/skip_ad_text_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12708061',
+      snapshotUrls: 'https://i.gkd.li/import/12708061',
     },
   ],
 });

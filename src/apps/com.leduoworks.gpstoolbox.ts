@@ -19,7 +19,7 @@ export default defineAppConfig({
       matchLauncher: true,
       quickFind: true,
       rules: '[id="com.leduoworks.gpstoolbox:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13062612',
+      snapshotUrls: 'https://i.gkd.li/import/13062612',
     },
   ],
 });

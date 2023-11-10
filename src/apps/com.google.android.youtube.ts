@@ -13,8 +13,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id=`com.google.android.youtube:id/skip_ad_button`]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12565261',
-        'https://i.gkd.li/import/import/13024980', // matchLauncher
+        'https://i.gkd.li/import/12565261',
+        'https://i.gkd.li/import/13024980', // matchLauncher
       ],
     },
     {
@@ -24,7 +24,7 @@ export default defineAppConfig({
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
       matchLauncher: true,
       rules: 'ImageView[desc="更多选项"] + @ImageView[desc="关闭广告面板"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12877346',
+      snapshotUrls: 'https://i.gkd.li/import/12877346',
     },
     {
       key: 2,
@@ -34,7 +34,7 @@ export default defineAppConfig({
       matchLauncher: true,
       rules:
         'ImageView < @Button < ViewGroup +3 Button[desc*="YouTube Premium"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12877357',
+      snapshotUrls: 'https://i.gkd.li/import/12877357',
     },
   ],
 });

@@ -22,9 +22,9 @@ export default defineAppConfig({
       rules:
         'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12614559',
-        'https://i.gkd.li/import/import/12673132',
-        'https://i.gkd.li/import/import/13292635', //com.meituan.android.pt.homepage.activity.MainActivity
+        'https://i.gkd.li/import/12614559',
+        'https://i.gkd.li/import/12673132',
+        'https://i.gkd.li/import/13292635', //com.meituan.android.pt.homepage.activity.MainActivity
       ],
     },
     {
@@ -36,13 +36,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             'ViewGroup > ViewGroup[childCount=6] > ViewGroup > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/import/12639717',
+          snapshotUrls: 'https://i.gkd.li/import/12639717',
         },
         {
           key: 1,
           matches:
             '@ImageView < ViewGroup +3 ViewGroup > ViewGroup > TextView[text^="红包已到账"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12892626',
+          snapshotUrls: 'https://i.gkd.li/import/12892626',
         },
       ],
     },
@@ -51,7 +51,7 @@ export default defineAppConfig({
       name: '小调查弹窗',
       activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
       rules: '[text="小调查"] + ViewGroup > ViewGroup > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/import/12639723',
+      snapshotUrls: 'https://i.gkd.li/import/12639723',
     },
     {
       key: 4,
@@ -62,8 +62,8 @@ export default defineAppConfig({
       ],
       rules: 'FrameLayout > @ImageView + ImageView[desc="资质与规则"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12639815',
-        'https://i.gkd.li/import/import/12639734',
+        'https://i.gkd.li/import/12639815',
+        'https://i.gkd.li/import/12639734',
       ],
     },
     {
@@ -72,7 +72,7 @@ export default defineAppConfig({
       desc: '美团买菜-支付成功后-关闭红包弹窗',
       activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
       rules: 'TextView[text="恭喜你获得以下权益"] + ViewGroup > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/import/12646768',
+      snapshotUrls: 'https://i.gkd.li/import/12646768',
     },
     {
       key: 6,
@@ -102,9 +102,9 @@ export default defineAppConfig({
         '[id ="com.sankuai.meituan:id/location_layer_close"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/import/12874657',
-        'https://i.gkd.li/import/import/12910210',
-        'https://i.gkd.li/import/import/12910211',
+        'https://i.gkd.li/import/12874657',
+        'https://i.gkd.li/import/12910210',
+        'https://i.gkd.li/import/12910211',
       ],
     },
   ],

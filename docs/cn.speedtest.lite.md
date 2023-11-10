@@ -4,10 +4,10 @@
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12715483)
+- [快照-0](https://i.gkd.li/import/12715483)
 
 ## 新人专享优惠弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12715511)
+- [快照-0](https://i.gkd.li/import/12715511)

@@ -4,14 +4,14 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12614757)
-- [快照-1](https://i.gkd.li/import/import/12614755)
-- [快照-2](https://i.gkd.li/import/import/12737138)
+- [快照-0](https://i.gkd.li/import/12614757)
+- [快照-1](https://i.gkd.li/import/12614755)
+- [快照-2](https://i.gkd.li/import/12737138)
 
 ## 弹出广告(偶发)
 
-- [快照-0](https://i.gkd.li/import/import/12614834)
+- [快照-0](https://i.gkd.li/import/12614834)
 
 ## 首页右侧悬浮广告(偶发)
 
-- [快照-0](https://i.gkd.li/import/import/12614838)
+- [快照-0](https://i.gkd.li/import/12614838)

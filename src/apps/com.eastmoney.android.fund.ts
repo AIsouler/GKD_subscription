@@ -20,7 +20,7 @@ export default defineAppConfig({
       rules: [
         'FrameLayout > FrameLayout > ImageView + FrameLayout[childCount=1] > ImageView',
       ],
-      snapshotUrls: 'https://i.gkd.li/import/import/12642387',
+      snapshotUrls: 'https://i.gkd.li/import/12642387',
     },
     {
       enable: false,
@@ -31,7 +31,7 @@ export default defineAppConfig({
       rules: [
         '[desc="表示场内基金的最新价和折价率"] -(2) FrameLayout < FrameLayout + ImageView',
       ],
-      snapshotUrls: 'https://i.gkd.li/import/import/12642387',
+      snapshotUrls: 'https://i.gkd.li/import/12642387',
     },
   ],
 });

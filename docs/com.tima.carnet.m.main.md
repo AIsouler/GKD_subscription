@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/22029832/5aa3f016-d33c-4821-91bd-f23235b04ad3)
-- [快照-1](https://i.gkd.li/import/import/12594568)
-- [快照-2](https://i.gkd.li/import/import/12594574)
+- [快照-0](https://i.gkd.li/import/22029832/5aa3f016-d33c-4821-91bd-f23235b04ad3)
+- [快照-1](https://i.gkd.li/import/12594568)
+- [快照-2](https://i.gkd.li/import/12594574)
 
 ## 每日弹窗广告
 
-- [快照-0](https://i.gkd.li/import/import/12654432)
+- [快照-0](https://i.gkd.li/import/12654432)

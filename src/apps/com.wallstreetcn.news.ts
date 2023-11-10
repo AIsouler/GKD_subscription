@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.wallstreetcn.news:id/iv_jump"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12850458',
+          snapshotUrls: 'https://i.gkd.li/import/12850458',
         },
       ],
     },
@@ -25,7 +25,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="广告"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13262717',
+          snapshotUrls: 'https://i.gkd.li/import/13262717',
         },
       ],
     },

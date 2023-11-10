@@ -16,13 +16,13 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.wacai365:id/ksad_splash_circle_skip_view"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13162861',
+          snapshotUrls: 'https://i.gkd.li/import/13162861',
         },
         {
           matches: '[id$="id/tt_splash_skip_btn"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/13177538',
-            'https://i.gkd.li/import/import/13194893',
+            'https://i.gkd.li/import/13177538',
+            'https://i.gkd.li/import/13194893',
           ],
         },
       ],
@@ -36,7 +36,7 @@ export default defineAppConfig({
       activityIds: 'com.wacai365.HomeActivity',
       rules:
         '@ImageView[id="com.wacai365:id/tv_cancel"] - TextView[text^="新版本"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13249620',
+      snapshotUrls: 'https://i.gkd.li/import/13249620',
     },
     {
       enable: false,
@@ -46,7 +46,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds: 'com.wacai365.HomeActivity',
       rules: '[id^="com.wacai365:id/promote_banner_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13249666',
+      snapshotUrls: 'https://i.gkd.li/import/13249666',
     },
   ],
 });

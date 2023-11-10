@@ -128,7 +128,7 @@ export default defineAppConfig({
             '[id="com.mygolbs.mybus:id/message"][text$="请开启通知权限"]',
             '[id="com.mygolbs.mybus:id/view_neg"] > [id="com.mygolbs.mybus:id/negativeButton"][text="取消"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/import/12715980',
+          snapshotUrls: 'https://i.gkd.li/import/12715980',
         },
       ],
     },
@@ -140,7 +140,7 @@ export default defineAppConfig({
       activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
       rules:
         '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12716035',
+      snapshotUrls: 'https://i.gkd.li/import/12716035',
     },
   ],
 });

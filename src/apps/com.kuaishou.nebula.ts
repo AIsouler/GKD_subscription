@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.kuaishou.nebula:id/splash_skip_text"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12519389',
+      snapshotUrls: 'https://i.gkd.li/import/12519389',
     },
     {
       key: 1,

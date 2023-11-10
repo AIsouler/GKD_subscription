@@ -12,11 +12,11 @@ export default defineAppConfig({
         {
           matches:
             '@[text^="跳过"][clickable=true] - FrameLayout >(2) [id="com.byted.pangle:id/tt_splash_ad_logo"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12683266'],
+          snapshotUrls: ['https://i.gkd.li/import/12683266'],
         },
         {
           matches: '@[text^="跳过"] - FrameLayout >(n) [text="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12683289'],
+          snapshotUrls: ['https://i.gkd.li/import/12683289'],
         },
       ],
     },

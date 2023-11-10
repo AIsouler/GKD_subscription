@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'TextView[id="com.yujian.ResideMenuDemo:id/btn_selectOther"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13224234',
+      snapshotUrls: 'https://i.gkd.li/import/13224234',
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: 'com.chaozh.iReader.ui.activity.WelcomeActivity',
       rules:
         'RelativeLayout[childCount=1] > [text^="跳过"][text.length<=4][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12872346',
+      snapshotUrls: 'https://i.gkd.li/import/12872346',
     },
   ],
 });

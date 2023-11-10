@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '升级弹窗',
       rules: '[id="com.jym.mall:id/tv_cancel"][text="下次再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12496974',
+      snapshotUrls: 'https://i.gkd.li/import/12496974',
     },
   ],
 });

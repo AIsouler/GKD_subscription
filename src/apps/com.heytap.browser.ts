@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: 'TextView[text^="跳过"][text.length<=4][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12841168',
-            'https://i.gkd.li/import/import/13199536',
+            'https://i.gkd.li/import/12841168',
+            'https://i.gkd.li/import/13199536',
           ],
         },
       ],

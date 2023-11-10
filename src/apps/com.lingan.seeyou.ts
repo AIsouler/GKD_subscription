@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.lingan.seeyou:id/rl_count_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13065769',
+          snapshotUrls: 'https://i.gkd.li/import/13065769',
         },
       ],
     },

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'org.daai.netcheck.MainActivity',
       rules: '[id="org.daai.netcheck:id/skip_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13174128',
+      snapshotUrls: 'https://i.gkd.li/import/13174128',
     },
   ],
 });

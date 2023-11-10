@@ -8,4 +8,4 @@
 
 ## 广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12744270)
+- [快照-0](https://i.gkd.li/import/12744270)

@@ -4,15 +4,15 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12715734)
+- [快照-0](https://i.gkd.li/import/12715734)
 
 ## 首页广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12715702)
+- [快照-0](https://i.gkd.li/import/12715702)
 - [快照-1](https://i.gkd.li/import/12744973)
 
 ## 请求通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/import/12715719)
+- [快照-0](https://i.gkd.li/import/12715719)

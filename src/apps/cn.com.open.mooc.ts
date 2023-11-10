@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.com.open.mooc:id/stepOver"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/13185441'],
+          snapshotUrls: ['https://i.gkd.li/import/13185441'],
         },
       ],
     },

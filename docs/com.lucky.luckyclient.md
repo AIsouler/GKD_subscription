@@ -14,7 +14,7 @@
 
 默认禁用 - 关闭超值换购弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12922834)
+- [快照-0](https://i.gkd.li/import/12922834)
 
 ## 优惠卷领取提示
 

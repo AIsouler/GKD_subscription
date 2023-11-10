@@ -4,9 +4,9 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12904614)
+- [快照-0](https://i.gkd.li/import/12904614)
 
 ## 应用内广告卡片
 
-- [快照-0](https://i.gkd.li/import/import/12904612)
-- [快照-1](https://i.gkd.li/import/import/12906196)
+- [快照-0](https://i.gkd.li/import/12904612)
+- [快照-1](https://i.gkd.li/import/12906196)

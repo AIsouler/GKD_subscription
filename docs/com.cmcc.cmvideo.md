@@ -6,11 +6,11 @@
 
 ## 青少年模式弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12498307)
+- [快照-0](https://i.gkd.li/import/12498307)
 
 ## 右下角小广告
 
-- [快照-0](https://i.gkd.li/import/import/12498315)
+- [快照-0](https://i.gkd.li/import/12498315)
 
 ## 版本更新提示
 

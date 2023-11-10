@@ -5,11 +5,11 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/13070420)
-- [快照-1](https://i.gkd.li/import/import/13293751)
+- [快照-1](https://i.gkd.li/import/13293751)
 
 ## 广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12829816)
+- [快照-0](https://i.gkd.li/import/12829816)
 - [快照-1](https://i.gkd.li/import/12869344)
 - [快照-2](https://i.gkd.li/import/13070801)
 - [快照-3](https://i.gkd.li/import/13166361)

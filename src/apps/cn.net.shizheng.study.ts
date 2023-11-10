@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'cn.dingwei.cloud_classroom.MainActivity',
       rules:
         'View[childCount=2] > ImageView[id=""] + Button[id=""][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12708731',
+      snapshotUrls: 'https://i.gkd.li/import/12708731',
     },
   ],
 });

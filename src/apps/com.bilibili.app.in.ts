@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: 'com.bilibili.video.story.StoryVideoActivity',
       rules:
         '[text="对当前的评论区满意吗？"] + [id="com.bilibili.app.in:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13115189',
+      snapshotUrls: 'https://i.gkd.li/import/13115189',
     },
     {
       key: 6,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13180746',
+      snapshotUrls: 'https://i.gkd.li/import/13180746',
     },
   ],
 });

@@ -10,4 +10,4 @@
 
 ## 付款后广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/13175526)
+- [快照-0](https://i.gkd.li/import/13175526)

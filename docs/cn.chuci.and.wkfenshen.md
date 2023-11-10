@@ -4,4 +4,4 @@
 
 ## 购买会员弹窗
 
-- [快照-0](https://i.gkd.li/import/import/13226988)
+- [快照-0](https://i.gkd.li/import/13226988)

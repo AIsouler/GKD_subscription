@@ -6,4 +6,4 @@
 
 点击开屏右上角“跳过”按钮
 
-- [快照-0](https://i.gkd.li/import/import/12907063)
+- [快照-0](https://i.gkd.li/import/12907063)

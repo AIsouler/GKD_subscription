@@ -4,14 +4,14 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/12642434)
-- [快照-1](https://i.gkd.li/import/import/12901349)
+- [快照-0](https://i.gkd.li/import/12642434)
+- [快照-1](https://i.gkd.li/import/12901349)
 
 ## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12642445)
+- [快照-0](https://i.gkd.li/import/12642445)
 - [快照-1](https://i.gkd.li/import/13291144)
 
 ## 专属月报弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12642441)
+- [快照-0](https://i.gkd.li/import/12642441)

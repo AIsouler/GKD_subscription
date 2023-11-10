@@ -13,8 +13,8 @@ export default defineAppConfig({
         {
           matches: '[text^="跳过"][text.length<=4]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12901758',
-            'https://i.gkd.li/import/import/12724823',
+            'https://i.gkd.li/import/12901758',
+            'https://i.gkd.li/import/12724823',
           ],
         },
       ],

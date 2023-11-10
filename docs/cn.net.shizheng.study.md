@@ -4,4 +4,4 @@
 
 ## 首页广告弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12708731)
+- [快照-0](https://i.gkd.li/import/12708731)

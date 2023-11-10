@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       rules: 'Button[desc^="跳过广告"][desc.length<=6][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12641337',
+      snapshotUrls: 'https://i.gkd.li/import/12641337',
     },
   ],
 });

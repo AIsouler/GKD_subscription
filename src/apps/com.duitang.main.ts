@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13202185',
+          snapshotUrls: 'https://i.gkd.li/import/13202185',
         },
       ],
     },
@@ -26,7 +26,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.duitang.main:id/teenGuideKnown"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13202230',
+          snapshotUrls: 'https://i.gkd.li/import/13202230',
         },
       ],
     },
@@ -39,7 +39,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.duitang.main:id/adOptionEntry"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13202725',
+          snapshotUrls: 'https://i.gkd.li/import/13202725',
         },
       ],
     },
@@ -53,7 +53,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.duitang.main:id/scoreDuitangCancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13203217',
+          snapshotUrls: 'https://i.gkd.li/import/13203217',
         },
       ],
     },

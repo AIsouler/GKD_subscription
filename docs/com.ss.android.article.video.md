@@ -4,4 +4,4 @@
 
 ## 西瓜视频-关闭青少年模式弹窗
 
-- [快照-0](https://i.gkd.li/import/import/12472628)
+- [快照-0](https://i.gkd.li/import/12472628)

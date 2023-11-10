@@ -7,5 +7,5 @@
 设备列表和连接界面中的广告卡片
 
 - [快照-0](https://i.gkd.li/import/13228546)
-- [快照-1](https://i.gkd.li/import/import/13256552)
-- [快照-2](https://i.gkd.li/import/import/13296380)
+- [快照-1](https://i.gkd.li/import/13256552)
+- [快照-2](https://i.gkd.li/import/13296380)

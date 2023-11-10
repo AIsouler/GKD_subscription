@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text^="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/import/13197061',
+          snapshotUrls: 'https://i.gkd.li/import/13197061',
         },
         {
           matches:
@@ -58,7 +58,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13256447',
+      snapshotUrls: 'https://i.gkd.li/import/13256447',
     },
     {
       key: 4,
@@ -67,7 +67,7 @@ export default defineAppConfig({
       activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
       rules:
         '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/13256505',
+      snapshotUrls: 'https://i.gkd.li/import/13256505',
     },
   ],
 });

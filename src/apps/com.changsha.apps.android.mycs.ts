@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.changsha.apps.android.mycs:id/tv_countdown"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12926529',
+          snapshotUrls: 'https://i.gkd.li/import/12926529',
         },
       ],
     },

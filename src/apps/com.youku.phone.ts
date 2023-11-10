@@ -28,14 +28,14 @@ export default defineAppConfig({
       name: '青少年模式弹窗',
       activityIds: 'com.youku.phone.designatemode.adolescent.HomePageTipDialog',
       rules: '[text="青少年模式"] +(3) [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12701050',
+      snapshotUrls: 'https://i.gkd.li/import/12701050',
     },
     {
       key: 3,
       name: '视频推荐弹窗',
       activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12701029',
+      snapshotUrls: 'https://i.gkd.li/import/12701029',
     },
   ],
 });

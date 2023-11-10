@@ -14,10 +14,10 @@ export default defineAppConfig({
         {
           matches: 'FrameLayout[id=null] > TextView[text="跳过"][id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12700227',
-            'https://i.gkd.li/import/import/12700122',
-            'https://i.gkd.li/import/import/12700541',
-            'https://i.gkd.li/import/import/12910953',
+            'https://i.gkd.li/import/12700227',
+            'https://i.gkd.li/import/12700122',
+            'https://i.gkd.li/import/12700541',
+            'https://i.gkd.li/import/12910953',
           ],
         },
       ],
@@ -31,7 +31,7 @@ export default defineAppConfig({
       ],
       rules:
         'TextView[text*="青少年模式"] +n TextView[id="com.tencent.qqlive:id/arg"][text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12700145',
+      snapshotUrls: 'https://i.gkd.li/import/12700145',
     },
     {
       key: 2,
@@ -41,7 +41,7 @@ export default defineAppConfig({
       ],
       rules:
         '@[text="暂不升级"] - LinearLayout > FrameLayout > [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12700486',
+      snapshotUrls: 'https://i.gkd.li/import/12700486',
     },
     {
       key: 3,
@@ -53,20 +53,20 @@ export default defineAppConfig({
           matches:
             'FrameLayout - RelativeLayout > RelativeLayout > FrameLayout + ImageView[clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12700299',
-            'https://i.gkd.li/import/import/12700302',
+            'https://i.gkd.li/import/12700299',
+            'https://i.gkd.li/import/12700302',
           ],
         },
         {
           name: '点击右上角[关闭广告]',
           matches: '[text="关闭广告"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12700518'],
+          snapshotUrls: ['https://i.gkd.li/import/12700518'],
         },
         {
           name: '点击右上角[广告]',
           matches:
             'RelativeLayout[id=null] > @FrameLayout[clickable=true][id!=null] > ImageView[desc="the ad tag"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12737313',
+          snapshotUrls: 'https://i.gkd.li/import/12737313',
         },
       ],
     },
@@ -82,8 +82,8 @@ export default defineAppConfig({
           matches:
             '@[text$="跳过广告"][clickable=true] < LinearLayout > [text="VIP可关闭该广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12700407',
-            'https://i.gkd.li/import/import/12700433',
+            'https://i.gkd.li/import/12700407',
+            'https://i.gkd.li/import/12700433',
           ],
         },
         {
@@ -104,7 +104,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             'ViewGroup > TextView + LinearLayout[childCount=2] + ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12700175',
+          snapshotUrls: 'https://i.gkd.li/import/12700175',
         },
         {
           key: 1,
@@ -128,8 +128,8 @@ export default defineAppConfig({
           matches:
             '[text="关闭这条广告的原因"] +(2) RecyclerView > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12700303',
-            'https://i.gkd.li/import/import/12829866',
+            'https://i.gkd.li/import/12700303',
+            'https://i.gkd.li/import/12829866',
           ],
         },
         {
@@ -137,7 +137,7 @@ export default defineAppConfig({
           key: 2,
           matches:
             '[text="关闭这条广告的原因"] + [text="确认"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12700210',
+          snapshotUrls: 'https://i.gkd.li/import/12700210',
         },
       ],
     },
@@ -149,7 +149,7 @@ export default defineAppConfig({
       activityIds:
         'com.tencent.qqlive.ona.update.trunk.client.TrunkUpdateActivity',
       rules: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12700139',
+      snapshotUrls: 'https://i.gkd.li/import/12700139',
     },
   ],
 });

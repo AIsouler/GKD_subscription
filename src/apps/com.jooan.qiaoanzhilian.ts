@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: 'TextView[text^="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/13197473',
-        'https://i.gkd.li/import/import/13223790',
+        'https://i.gkd.li/import/13223790',
       ],
     },
   ],

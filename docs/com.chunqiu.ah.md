@@ -4,10 +4,10 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/import/13264387)
-- [快照-1](https://i.gkd.li/import/import/13264381)
-- [快照-2](https://i.gkd.li/import/import/13264377)
+- [快照-0](https://i.gkd.li/import/13264387)
+- [快照-1](https://i.gkd.li/import/13264381)
+- [快照-2](https://i.gkd.li/import/13264377)
 
 ## 弹窗广告
 
-- [快照-0](https://i.gkd.li/import/import/13264383)
+- [快照-0](https://i.gkd.li/import/13264383)

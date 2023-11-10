@@ -16,11 +16,11 @@ export default defineAppConfig({
           matches:
             '@[width>1 && width<65] < FrameLayout - [name="android.widget.ImageView"||name="android.widget.FrameLayout"||name="android.widget.LinearLayout"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12813618',
-            'https://i.gkd.li/import/import/12903835',
-            'https://i.gkd.li/import/import/12903885',
-            'https://i.gkd.li/import/import/12876077',
-            'https://i.gkd.li/import/import/13059294',
+            'https://i.gkd.li/import/12813618',
+            'https://i.gkd.li/import/12903835',
+            'https://i.gkd.li/import/12903885',
+            'https://i.gkd.li/import/12876077',
+            'https://i.gkd.li/import/13059294',
           ],
         },
         {
@@ -31,12 +31,12 @@ export default defineAppConfig({
           ],
           matches: '@Image < View[width<100] <n View > [text="反馈"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12837225',
-            'https://i.gkd.li/import/import/12876086',
-            'https://i.gkd.li/import/import/12876067',
-            'https://i.gkd.li/import/import/12837225',
-            'https://i.gkd.li/import/import/12912911',
-            'https://i.gkd.li/import/import/13171930',
+            'https://i.gkd.li/import/12837225',
+            'https://i.gkd.li/import/12876086',
+            'https://i.gkd.li/import/12876067',
+            'https://i.gkd.li/import/12837225',
+            'https://i.gkd.li/import/12912911',
+            'https://i.gkd.li/import/13171930',
           ],
         },
         {
@@ -57,8 +57,8 @@ export default defineAppConfig({
           ],
           matches: '[id="org.gushiwen.gushiwen:id/btn_back"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12813638',
-            'https://i.gkd.li/import/import/13111042',
+            'https://i.gkd.li/import/12813638',
+            'https://i.gkd.li/import/13111042',
           ],
         },
         {
@@ -71,8 +71,8 @@ export default defineAppConfig({
           ],
           matches: '[id="org.gushiwen.gushiwen:id/backBtn"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12837229',
-            'https://i.gkd.li/import/import/13111057',
+            'https://i.gkd.li/import/12837229',
+            'https://i.gkd.li/import/13111057',
           ],
         },
       ],

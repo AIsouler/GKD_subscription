@@ -38,10 +38,10 @@
 
 默认禁用 - 自动点击【取消】
 
-- [快照-0](https://i.gkd.li/import/import/12715980)
+- [快照-0](https://i.gkd.li/import/12715980)
 
 ## 签到成功弹窗
 
 默认禁用 - 自动点击x按钮
 
-- [快照-0](https://i.gkd.li/import/import/12716035)
+- [快照-0](https://i.gkd.li/import/12716035)

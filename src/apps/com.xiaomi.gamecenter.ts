@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.xiaomi.gamecenter.ui.MainTabActivity',
       rules: '[id="com.xiaomi.gamecenter:id/skip"][text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12715833',
+      snapshotUrls: 'https://i.gkd.li/import/12715833',
     },
     {
       key: 1,
@@ -17,7 +17,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.gamecenter.ui.MainTabActivity',
       rules:
         '[id="com.xiaomi.gamecenter:id/ad_view"] + [id="com.xiaomi.gamecenter:id/close_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12715800',
+      snapshotUrls: 'https://i.gkd.li/import/12715800',
     },
   ],
 });

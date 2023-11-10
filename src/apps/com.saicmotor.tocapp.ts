@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds: 'com.saicmotor.common.activity.WelcomeActivity',
       rules: '[id="com.saicmotor.tocapp:id/ll_down_time_layout"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12839899',
+      snapshotUrls: 'https://i.gkd.li/import/12839899',
     },
   ],
 });

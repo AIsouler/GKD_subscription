@@ -39,20 +39,20 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.xiaomi.market:id/fold_text"][text^="查看全部升级"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12674261',
+          snapshotUrls: 'https://i.gkd.li/import/12674261',
         },
         {
           key: 1,
           matches:
             '[id="com.xiaomi.market:id/expandable_textview"] + [id="com.xiaomi.market:id/expand_button"][desc="更多"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12674264',
+          snapshotUrls: 'https://i.gkd.li/import/12674264',
         },
         {
           preKeys: [1],
           key: 2,
           matches:
             '@[id="com.xiaomi.market:id/ignore_this"][text="忽略本次"] + [id="com.xiaomi.market:id/ignore_permanently"][text="永久忽略"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12674269',
+          snapshotUrls: 'https://i.gkd.li/import/12674269',
         },
       ],
     },
@@ -69,7 +69,7 @@ export default defineAppConfig({
           name: '开启推送',
           matches:
             '@[id="com.xiaomi.market:id/dialog_cancel"] - LinearLayout > [id="com.xiaomi.market:id/btn_start_push"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12714980',
+          snapshotUrls: 'https://i.gkd.li/import/12714980',
         },
         {
           key: 1,

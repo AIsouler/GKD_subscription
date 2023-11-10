@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.zero.flutter_gromore_ads.page.AdSplashActivity',
       matchLauncher: true,
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/import/12904614',
+      snapshotUrls: 'https://i.gkd.li/import/12904614',
     },
     {
       key: 1,
@@ -20,13 +20,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.byted.pangle:id/tt_bu_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12904612',
+          snapshotUrls: 'https://i.gkd.li/import/12904612',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '@LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/import/12906196',
+          snapshotUrls: 'https://i.gkd.li/import/12906196',
         },
       ],
     },

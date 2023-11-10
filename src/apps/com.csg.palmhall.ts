@@ -9,14 +9,14 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: ['com.csg.palmhall.MainActivity'],
       rules: '@[text="关闭"] + [text="升级"]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12700060'],
+      snapshotUrls: ['https://i.gkd.li/import/12700060'],
     },
     {
       key: 2,
       name: '首页广告弹窗',
       activityIds: ['com.csg.palmhall.MainActivity'],
       rules: 'View > Image +(3) [text="不再显示"][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/import/import/12700075'],
+      snapshotUrls: ['https://i.gkd.li/import/12700075'],
     },
   ],
 });

@@ -14,9 +14,9 @@ export default defineAppConfig({
           matches:
             '[id="com.wondertek.paper:id/count_down" || id="com.wondertek.paper:id/count_miss"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/import/12644536',
-            'https://i.gkd.li/import/import/12645559',
-            'https://i.gkd.li/import/import/13064620', //matchLauncher
+            'https://i.gkd.li/import/12644536',
+            'https://i.gkd.li/import/12645559',
+            'https://i.gkd.li/import/13064620', //matchLauncher
           ],
         },
       ],
@@ -29,7 +29,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.wondertek.paper:id/second_num"] <2 [id="com.wondertek.paper:id/relative_layout"] + [id="com.wondertek.paper:id/close_photo"]',
-          snapshotUrls: ['https://i.gkd.li/import/import/12899226'],
+          snapshotUrls: ['https://i.gkd.li/import/12899226'],
         },
       ],
     },
