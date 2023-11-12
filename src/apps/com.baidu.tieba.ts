@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidu.tieba',
   name: '百度贴吧',
+  deprecatedKeys: [4],
   groups: [
     {
       key: 0,
@@ -129,7 +130,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '应用内广告弹窗',
+      name: '广告弹窗',
       matchLauncher: true,
       matchTime: 10000,
       actionMaximum: 1,
