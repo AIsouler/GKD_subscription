@@ -18,6 +18,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12819594)
+- [快照-1](https://i.gkd.li/import/13316168)
 
 ## 浮窗广告
 

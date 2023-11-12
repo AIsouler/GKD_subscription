@@ -10,9 +10,12 @@
 
 ## 广告弹窗
 
+来自第三方SDK【穿山甲】
+
 - [快照-0](https://i.gkd.li/import/12754919)
-- [快照-1](https://i.gkd.li/import/12864214)
-- [快照-2](https://i.gkd.li/import/13175439)
+- [快照-1](https://i.gkd.li/import/13324698)
+- [快照-2](https://i.gkd.li/import/12864214)
+- [快照-3](https://i.gkd.li/import/13175439)
 
 ## 升级弹窗
 
