@@ -25,6 +25,7 @@
 - [快照-1](https://i.gkd.li/import/13296565)
 - [快照-2](https://i.gkd.li/import/12506225)
 - [快照-3](https://i.gkd.li/import/12701414)
+- [快照-4](https://i.gkd.li/import/13314183)
 
 ## 播放页面-播放前广告
 

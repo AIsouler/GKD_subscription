@@ -1,6 +1,6 @@
 # 豆瓣
 
-存在 12 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
+存在 13 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
 
 ## 开屏广告
 
@@ -73,6 +73,7 @@
 
 - [快照-0](https://i.gkd.li/import/13195565)
 - [快照-1](https://i.gkd.li/import/13296656)
+- [快照-2](https://i.gkd.li/import/13328126)
 
 ## 更新弹窗
 
@@ -81,3 +82,7 @@
 ## 新版试用弹窗
 
 - [快照-0](https://i.gkd.li/import/13228832)
+
+## 详情页广告
+
+- [快照-0](https://i.gkd.li/import/13318902)

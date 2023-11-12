@@ -5,8 +5,10 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12667519)
-- [快照-1](https://i.gkd.li/import/12686093)
+- [快照-1](https://i.gkd.li/import/13328425)
 - [快照-2](https://i.gkd.li/import/12686132)
+- [快照-3](https://i.gkd.li/import/13328441)
+- [快照-4](https://i.gkd.li/import/12686093)
 
 ## 邮件列表页面广告条目
 
