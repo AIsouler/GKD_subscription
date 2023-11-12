@@ -7,13 +7,16 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.tencent.mtt.MainActivity',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
-        '@View[id=null] + ImageView + FrameLayout TextView[text=`向上滑动或点击查看`]',
         {
           matches: '@LinearLayout[clickable=true] > TextView[text="跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/12472630'],
+          snapshotUrls: 'https://i.gkd.li/import/12472630',
         },
+        '@View[id=null] + ImageView + FrameLayout TextView[text=`向上滑动或点击查看`]', // 缺少快照
       ],
     },
     {
