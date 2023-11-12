@@ -9,7 +9,9 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       desc: '虚假按钮，实际点击无法跳过，规则暂时保留',
-      activityIds: ['com.example.flutter3_frame.MainActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches:
@@ -21,6 +23,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '广告弹窗',
+      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.example.flutter3_frame.MainActivity'],
       rules: [
         {
@@ -33,6 +39,10 @@ export default defineAppConfig({
     {
       key: 2,
       name: '公告弹窗',
+      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.example.flutter3_frame.MainActivity'],
       rules: [
         {
