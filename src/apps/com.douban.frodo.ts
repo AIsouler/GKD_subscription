@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.douban.frodo',
   name: '豆瓣',
+  deprecatedKeys: [7],
   groups: [
     {
       key: 0,
@@ -152,7 +153,6 @@ export default defineAppConfig({
         },
       ],
     },
-    // key=7 已被删除,不可使用
     {
       key: 8,
       name: '小组讨论详情页广告',
@@ -185,20 +185,27 @@ export default defineAppConfig({
       name: '弹窗广告',
       desc: '浏览详情时弹窗广告,点击右上角x',
       matchLauncher: true,
-      quickFind: true,
-      rules: {
-        activityIds: [
-          'com.douban.frodo.subject.structure.activity.MovieActivity',
-        ],
-        matches: [
-          '[text*="看"][text="查看详情"||text^="去"&&text$="看看"]',
-          'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
-        ],
-        snapshotUrls: [
-          'https://i.gkd.li/import/13195565',
-          'https://i.gkd.li/import/13296656', //新增ids对应快照
-        ],
-      },
+      rules: [
+        {
+          key: 0,
+          name: '腾讯广告-1',
+          activityIds:
+            'com.douban.frodo.subject.structure.activity.MovieActivity',
+          matches:
+            'ImageView - FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13195565',
+        },
+        {
+          key: 1,
+          name: '腾讯广告-2',
+          matches:
+            'ImageView -n FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13296656',
+            'https://i.gkd.li/import/13328126',
+          ],
+        },
+      ],
     },
     {
       key: 11,
