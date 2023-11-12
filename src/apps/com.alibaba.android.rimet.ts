@@ -62,5 +62,25 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      name: '自动点击原图',
+      enable: false,
+      key: 3,
+      actionMaximum: 1,
+      quickFind: true,
+      activityIds:
+        'com.alibaba.android.dingtalk.photoui.activitys.AlbumActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            'CheckBox[id="com.alibaba.android.rimet:id/cb_send_origin"][text="原图"][checked=false]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13309648', //未选中 [checked=false]
+            'https://i.gkd.li/import/13309845', //已选中 [checked=true]
+          ],
+        },
+      ],
+    },
   ],
 });
