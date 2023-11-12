@@ -32,6 +32,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
+          quickFind: true,
           name: '【x+关闭】型',
           matches:
             'TextView[text="广告"] - @LinearLayout[clickable=true] > [text="关闭"]',
@@ -57,7 +58,7 @@ export default defineAppConfig({
             // 'TextView[text$="广告"]',
             'RelativeLayout > TextView[clickable=true][text$="广告"]',
             // 'LinearLayout[childCount=1] > @FrameLayout[clickable=true][childCount=1][visibleToUser=true] > ImageView',
-            'LinearLayout[childCount=1] > @FrameLayout[clickable=true][childCount=1] > ImageView',
+            'LinearLayout[childCount=1] > @FrameLayout[clickable=true][childCount=1][desc=null] > ImageView',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12775930',
@@ -67,6 +68,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13054256', // 此3条应算卡片式广告
             'https://i.gkd.li/import/12775916',
             'https://i.gkd.li/import/12775892', // 指定点击目标为具备 clickable=true 属性的 @FrameLayout，防止在这个快照误触点击收藏
+            'https://i.gkd.li/import/13328300', // 指定点击目标为具备 desc=null 属性的 @FrameLayout，防止在这个快照误触点击【更多】
           ],
         },
         {
@@ -153,12 +155,14 @@ export default defineAppConfig({
           activityIds: [
             'com.baidu.tieba.frs.FrsActivity',
             'com.baidu.tieba.tblauncher.MainTabActivity',
+            'com.baidu.tieba.LogoActivity',
           ],
           matches:
             '@TextView[clickable=true && text=null] - FrameLayout TextView[text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13168383', // activityIds: com.baidu.tieba.tblauncher.MainTabActivity
             'https://i.gkd.li/import/13322120', // activityIds: com.miui.home.launcher.Launcher
+            'https://i.gkd.li/import/13328246', // activityIds: com.baidu.tieba.LogoActivity
           ],
         },
       ],
@@ -199,8 +203,11 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'activity',
       rules:
-        '[text="看到这了，进吧逛逛呗"] < LinearLayout + LinearLayout ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13322337',
+        'TextView[text!=null] < LinearLayout + LinearLayout > View + ImageView[clickable=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13322337',
+        'https://i.gkd.li/import/13328738',
+      ],
     },
   ],
 });
