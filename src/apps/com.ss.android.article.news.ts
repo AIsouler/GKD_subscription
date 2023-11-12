@@ -27,13 +27,17 @@ export default defineAppConfig({
       key: 1,
       name: '更新弹窗',
       matchLauncher: true,
-      activityIds: ['com.ss.android.mine.BaseSettingActivity'],
+      activityIds: [
+        'com.ss.android.mine.BaseSettingActivity',
+        'com.ss.android.article.base.feature.ugc.story.StoryVideoActivity',
+      ],
       rules: [
         {
           matches: '[text="升级版本"] +n [desc="关闭"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12685000',
             'https://i.gkd.li/import/12840104',
+            'https://i.gkd.li/import/13316081',
           ],
         },
       ],
