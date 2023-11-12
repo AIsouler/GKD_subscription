@@ -26,14 +26,18 @@ export default defineAppConfig({
     {
       key: 1,
       name: '广告弹窗',
+      desc: '来自第三方SDK【穿山甲】',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: [
         {
           key: 0,
           name: '点击右上角x',
-          matches: '@Image < View + View >2 TextView[text="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/12754919'],
+          matches: '[text="反馈"] +2 View > Image',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12754919',
+            'https://i.gkd.li/import/13324698',
+          ],
         },
         {
           key: 1,
