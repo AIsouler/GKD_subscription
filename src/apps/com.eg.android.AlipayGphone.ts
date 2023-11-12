@@ -53,5 +53,32 @@ export default defineAppConfig({
         '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text ^="开启通知权限"]',
       snapshotUrls: 'https://i.gkd.li/import/13194955',
     },
+    {
+      enable: false,
+      key: 3,
+      name: '版本更新提示',
+      desc: '选择稍后再说',
+      quickFind: true,
+      activityIds: 'com.alipay.mobile.alipassapp.alkb.kb.ALPMainPage63',
+      rules:
+        'TextView[id="com.alipay.mobile.accountauthbiz:id/update_cancel_tv"]',
+      snapshotUrls: 'https://i.gkd.li/import/13327095',
+    },
+    {
+      enable: false,
+      key: 4,
+      name: '设置支付宝小组件',
+      desc: '点击关闭',
+      quickFind: true,
+      activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+      rules: [
+        {
+          matches:
+            '@TextView[text="关闭"] < * <3 * < * + * >3 TextView[text="设置支付宝小组件"]',
+          action: 'clickCenter',
+          snapshotUrls: 'https://i.gkd.li/import/13327349',
+        },
+      ],
+    },
   ],
 });
