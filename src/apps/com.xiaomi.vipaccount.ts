@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.xiaomi.mi.launch.LaunchActivity',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="com.xiaomi.vipaccount:id/tv_skip"]',
       snapshotUrls: 'https://i.gkd.li/import/12841023',
     },
@@ -25,6 +28,14 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
       rules: '[text="closeGray"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/12642459',
+    },
+    {
+      enable: false,
+      key: 3,
+      name: '签到弹窗',
+      activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
+      rules: '[text="签到赢权益"] +n Image[text*="cancel_circle"]',
+      snapshotUrls: 'https://i.gkd.li/import/13328271',
     },
   ],
 });
