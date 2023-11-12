@@ -6,10 +6,21 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '西瓜视频-关闭青少年模式弹窗',
-      activityIds: 'com.ixigua.commonui.uikit.dialog.XGAlertDialog',
-      snapshotUrls: ['https://i.gkd.li/import/12472628'],
-      rules: ['TextView[text="我知道了"][clickable=true]'],
+      name: '青少年模式弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text$="青少年模式"] +n [text="我知道了"]',
+      snapshotUrls: 'https://i.gkd.li/import/12472628',
+    },
+    {
+      key: 1,
+      name: '更新弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '@[desc="关闭"] - LinearLayout > [text="立即升级"]',
+      snapshotUrls: 'https://i.gkd.li/import/13328430',
     },
   ],
 });
