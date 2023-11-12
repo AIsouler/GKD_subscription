@@ -7,11 +7,11 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.douban.frodo.activity.SplashActivity',
-        'com.douban.frodo.splash.SplashActivityHot',
-      ],
-      rules: '[id="com.douban.frodo:id/skip"||text^="跳过"]',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text^="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/12505151',
         'https://i.gkd.li/import/12505152',
@@ -225,6 +225,21 @@ export default defineAppConfig({
           activityIds: 'com.douban.frodo.activity.BetaApkDialogActivity',
           matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
           snapshotUrls: 'https://i.gkd.li/import/13228832',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '详情页广告',
+      rules: [
+        {
+          matchLauncher: true,
+          quickFind: true,
+          matches: [
+            '[text^="扭动或点击"]',
+            '[text^="扭动或点击"] <n FrameLayout[childCount=4] -5 FrameLayout[childCount=2] > FrameLayout[childCount=3] > FrameLayout[childCount=1] > ImageView[id=null]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13318902',
         },
       ],
     },
