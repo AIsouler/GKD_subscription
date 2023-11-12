@@ -14,11 +14,13 @@ export default defineAppConfig({
     {
       key: 1,
       name: '关闭更新弹窗',
+      matchLauncher: true,
       activityIds:
         'com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog',
       rules: [
         '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]', // 1686969252896
       ],
+      snapshotUrls: 'https://i.gkd.li/import/13276882', // matchLauncher
     },
     {
       key: 2,
