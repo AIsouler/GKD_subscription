@@ -7,13 +7,13 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      desc: '点击跳过',
-      matchLauncher: true,
-      quickFind: true,
-      activityIds: 'com.huachenjie.shandong_school.splash.SplashActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
+          quickFind: true,
           matches:
             '[id="com.huachenjie.shandong_school:id/flAd"] >n [text^="跳过"]',
           snapshotUrls: 'https://i.gkd.li/import/12922866',
