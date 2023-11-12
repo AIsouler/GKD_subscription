@@ -43,9 +43,13 @@ export default defineAppConfig({
       activityIds: [
         'com.ct.client.activity.MainActivity',
         'com.ct.client.common.ConfirmDialogActivity',
+        'com.ct.client.activity.SplashActivity',
       ],
       rules: 'LinearLayout > TextView[text="取消升级"]',
-      snapshotUrls: ['https://i.gkd.li/import/12819594'],
+      snapshotUrls: [
+        'https://i.gkd.li/import/12819594',
+        'https://i.gkd.li/import/13316168',
+      ],
     },
     {
       key: 3,
