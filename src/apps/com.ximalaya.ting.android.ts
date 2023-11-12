@@ -76,10 +76,11 @@ export default defineAppConfig({
         {
           activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
           matches:
-            '[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
+            '@[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true] > [id="com.ximalaya.ting.android:id/main_mark_text"][text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12506225',
             'https://i.gkd.li/import/12701414', // 关闭广告后，控件仍然存在但不可见，使用 visibleToUser=true 进行限定，防止关闭之后继续触发规则
+            'https://i.gkd.li/import/13314183', // 原规则clickable=false容易误触【橱窗】'[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
           ],
         },
       ],
