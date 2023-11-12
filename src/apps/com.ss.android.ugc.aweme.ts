@@ -73,12 +73,16 @@ export default defineAppConfig({
     {
       key: 3,
       name: '关闭更新弹窗',
+      matchLauncher: true,
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="以后再说"] +2 [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/12534016',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12534016',
+        'https://i.gkd.li/import/13328599',
+      ],
     },
     {
       key: 4,
