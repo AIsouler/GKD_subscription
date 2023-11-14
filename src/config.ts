@@ -27,6 +27,8 @@ const subsConfig: SubscriptionConfig = {
   name: '默认订阅',
   author: 'lisonge',
   supportUri: 'https://github.com/gkd-kit/subscription',
+  checkUpdateUrl:
+    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json',
   apps: _.sortBy(apps, (a) => {
     const pyName = pinyin(a.name, { separator: '', toneType: 'none' });
     if (pyName === a.name) return a.name;
