@@ -120,10 +120,11 @@ export default defineAppConfig({
           key: 6,
           matches: 'TextView[text$=`的广告`] - Image[id=null]',
         },
-        {
-          key: 7,
-          matches: 'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
-        },
+        // {
+        //   key: 7,
+        //   matches: 'TextView[text*=`广告`] +2 Image[id=null]', // 1687338556331
+        //   误触 https://i.gkd.li/import/13332447, 原规则没有快照无法debug, 先关闭
+        // },
         {
           key: 8,
           matches: 'TextView[text*=`点赞`][text*=`的回答`] +2 Image[id=null]', // 1687076663768 1686969672948
