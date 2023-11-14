@@ -105,6 +105,7 @@ export default defineAppConfig({
       name: '更新弹窗',
       actionMaximum: 1,
       matchDelay: 5000,
+      matchLauncher: true,
       activityIds: [
         'com.bilibili.app.preferences.BiliPreferencesActivity',
         'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
@@ -118,6 +119,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
             'https://i.gkd.li/import/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
             'https://i.gkd.li/import/13228977',
+            'https://i.gkd.li/import/13334963',
           ],
         },
       ],
