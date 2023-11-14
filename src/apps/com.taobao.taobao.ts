@@ -109,5 +109,16 @@ export default defineAppConfig({
       rules: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
       snapshotUrls: 'https://i.gkd.li/import/12642798',
     },
+    {
+      key: 12,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.taobao.android.detail.wrapper.activity.DetailActivity',
+      rules: '[id="com.taobao.taobao:id/update_imageview_cancel_v2"]',
+      snapshotUrls: 'https://i.gkd.li/import/13336760',
+    },
   ],
 });
