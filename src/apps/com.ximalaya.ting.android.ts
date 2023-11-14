@@ -178,16 +178,13 @@ export default defineAppConfig({
     {
       key: 9,
       enable: false,
-      name: '我的-中间卡片式广告',
-      desc: '点击图片中【x】,原因选【不感兴趣】',
-      activityIds: [
-        'com.ximalaya.ting.android.host.activity.MainActivity',
-        'om.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
-      ],
+      name: '卡片式广告',
       quickFind: true,
       rules: [
         {
           key: 0,
+          name: '我的页面-点击卡片右上角关闭按钮',
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
           matches:
             '[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true]',
           snapshotUrls: [
@@ -197,9 +194,21 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
+          key: 1,
+          name: '我的页面-点击不感兴趣',
+          activityIds:
+            'com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
           matches:
-            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_un_interest_title"][text="不感兴趣"]',
+            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_un_interest"]',
           snapshotUrls: 'https://i.gkd.li/import/13194839',
+        },
+        {
+          key: 2,
+          name: '有声书分类页面-点击卡片右上角关闭按钮',
+          activityIds:
+            'com.ximalaya.ting.android.host.activity.SplashAdActivity',
+          matches: '[id="com.ximalaya.ting.android:id/main_iv_dislike"]',
+          snapshotUrls: 'https://i.gkd.li/import/13334685',
         },
       ],
     },
