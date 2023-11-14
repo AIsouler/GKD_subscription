@@ -24,12 +24,16 @@ export default defineAppConfig({
     {
       key: 10,
       name: '应用内活动、广告弹窗（大部分）',
-      activityIds: ['com.hellobike.ads.widget.insert.dialog.HBAdvertDialog'],
+      activityIds: [
+        'com.hellobike.ads.widget.insert.dialog.HBAdvertDialog',
+        'com.hellobike.atlas.business.portal.PortalActivity',
+      ],
       rules:
         'FrameLayout[id="com.jingyao.easybike:id/hbDialogLayout"] + ImageView[id="com.jingyao.easybike:id/actionDialogClose"][clickable=true]',
       snapshotUrls: [
         'https://i.gkd.li/import/12650028', // 哈啰出行保弹窗
         'https://i.gkd.li/import/12650090', // 账单查看弹窗
+        'https://i.gkd.li/import/13331231', // 骑行卡 atlas.business.portal.PortalActivity
       ],
     },
     {
