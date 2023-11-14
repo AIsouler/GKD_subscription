@@ -49,5 +49,19 @@ export default defineAppConfig({
         snapshotUrls: ['https://i.gkd.li/import/13234668'],
       },
     },
+    {
+      key: 4,
+      name: '优惠劵提示',
+      enable: false,
+      quickFind: true,
+      matchLauncher: true,
+      rules: {
+        matches: [
+          '[id="com.wm.dmall:id/coupon_activity"][text="去使用"]',
+          '[id="com.wm.dmall:id/iv_close"]',
+        ],
+        snapshotUrls: ['https://i.gkd.li/import/13331283'],
+      },
+    },
   ],
 });
