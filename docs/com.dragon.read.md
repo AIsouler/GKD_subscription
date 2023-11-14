@@ -16,9 +16,10 @@
 
 - [快照-0](https://i.gkd.li/import/12716477)
 
-## 右侧悬浮红包
+## 首页右侧悬浮广告
 
 - [快照-0](https://i.gkd.li/import/12716506)
+- [快照-1](https://i.gkd.li/import/13318796)
 
 ## 优惠券弹窗
 

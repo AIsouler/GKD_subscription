@@ -33,14 +33,15 @@
 - [快照-7](https://i.gkd.li/import/12723751)
 - [快照-8](https://i.gkd.li/import/13062693)
 - [快照-9](https://i.gkd.li/import/12723569)
+- [快照-10](https://i.gkd.li/import/13347455)
 
 ## 卡片广告
 
 书影音-卡片广告-点击卡片右下角"广告"文字
 
 - [快照-0](https://i.gkd.li/import/12548160)
-- [快照-1](https://i.gkd.li/import/12548116)
-- [快照-2](https://i.gkd.li/import/12548131)
+- [快照-1](https://i.gkd.li/import/12548131)
+- [快照-2](https://i.gkd.li/import/12548116)
 
 ## 关闭评分反馈弹窗
 

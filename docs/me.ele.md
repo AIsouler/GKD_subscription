@@ -17,7 +17,8 @@
 
 - [快照-0](https://i.gkd.li/import/12650238)
 - [快照-1](https://i.gkd.li/import/13294893)
-- [快照-2](https://i.gkd.li/import/12650713)
+- [快照-2](https://i.gkd.li/import/13331361)
+- [快照-3](https://i.gkd.li/import/12650713)
 
 ## 首页活动弹窗
 

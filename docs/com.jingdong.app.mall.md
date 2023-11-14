@@ -45,6 +45,7 @@
 - [快照-2](https://i.gkd.li/import/13241883)
 - [快照-3](https://i.gkd.li/import/132599029)
 - [快照-4](https://i.gkd.li/import/13258996)
+- [快照-5](https://i.gkd.li/import/13336847)
 
 ## 首页-底部横幅广告
 

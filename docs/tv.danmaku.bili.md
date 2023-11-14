@@ -38,6 +38,7 @@
 - [快照-0](https://i.gkd.li/import/12649689)
 - [快照-1](https://i.gkd.li/import/13212209)
 - [快照-2](https://i.gkd.li/import/13228977)
+- [快照-3](https://i.gkd.li/import/13334963)
 
 ## 视频悬浮广告
 
