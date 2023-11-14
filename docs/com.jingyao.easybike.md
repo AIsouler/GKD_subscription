@@ -16,6 +16,7 @@
 
 - [快照-0](https://i.gkd.li/import/12650028)
 - [快照-1](https://i.gkd.li/import/12650090)
+- [快照-2](https://i.gkd.li/import/13331231)
 
 ## 哈啰智能电动车-广告弹窗
 

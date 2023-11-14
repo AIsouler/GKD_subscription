@@ -6,6 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/12783430)
 
-## 搜索结果底部广告
+## 卡片式广告
 
 - [快照-0](https://i.gkd.li/import/12783466)
+- [快照-1](https://i.gkd.li/import/13334850)

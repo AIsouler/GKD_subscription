@@ -20,6 +20,8 @@
 
 - [快照-0](https://i.gkd.li/import/12867751)
 - [快照-1](https://i.gkd.li/import/12894813)
+- [快照-2](https://i.gkd.li/import/13345633)
+- [快照-3](https://i.gkd.li/import/13346628)
 
 ## 资料库-弹窗广告
 
@@ -28,6 +30,7 @@
 ## 教材-底部广告
 
 - [快照-0](https://i.gkd.li/import/13063381)
+- [快照-1](https://i.gkd.li/import/13346621)
 
 ## 升级弹窗
 

@@ -1,6 +1,6 @@
 # 淘宝
 
-存在 7 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
+存在 8 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
 
 ## 开屏广告
 
@@ -44,3 +44,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642798)
+
+## 版本更新
+
+- [快照-0](https://i.gkd.li/import/13336760)

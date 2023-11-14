@@ -58,13 +58,14 @@
 
 - [快照-0](https://i.gkd.li/import/12869426)
 
-## 我的-中间卡片式广告
+## 卡片式广告
 
-默认禁用 - 点击图片中【x】,原因选【不感兴趣】
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13194838)
 - [快照-1](https://i.gkd.li/import/13296565)
 - [快照-2](https://i.gkd.li/import/13194839)
+- [快照-3](https://i.gkd.li/import/13334685)
 
 ## 首页-专辑订阅推荐弹窗
 
