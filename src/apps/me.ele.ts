@@ -40,12 +40,14 @@ export default defineAppConfig({
           activityIds: [
             'me.ele.component.pops2.Pops2MistDialog',
             'me.ele.component.webcontainer.view.AppUCWebActivity',
+            'me.ele.application.ui.Launcher.LauncherActivity',
           ],
           matches:
             '@ImageView[id=null][clickable=true] - ViewGroup >(5) ViewGroup[childCount=5]',
           snapshotUrls: [
             'https://i.gkd.li/import/12650238',
             'https://i.gkd.li/import/13294893',
+            'https://i.gkd.li/import/13331361', // me.ele.application.ui.Launcher.LauncherActivity
           ],
         },
         {
