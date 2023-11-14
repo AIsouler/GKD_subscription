@@ -44,14 +44,19 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12792688',
     },
     {
-      enable: false,
       key: 2,
-      name: '关闭开启通知提示',
+      name: '请求通知权限提示',
       quickFind: true,
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
-      rules:
-        '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text ^="开启通知权限"]',
-      snapshotUrls: 'https://i.gkd.li/import/13194955',
+      rules: [
+        {
+          key: 0,
+          name: '首页底部提示',
+          matches:
+            '@[desc="关闭"] - * >n [id="com.alipay.mobile.antui:id/tipTextView"][text^="开启通知权限"]',
+          snapshotUrls: 'https://i.gkd.li/import/13194955',
+        },
+      ],
     },
     {
       enable: false,
