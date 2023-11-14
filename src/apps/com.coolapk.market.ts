@@ -109,7 +109,7 @@ export default defineAppConfig({
       quickFind: true,
       name: '关闭推送通知',
       activityIds: 'com.coolapk.market.view.main.MainActivity',
-      rules: '[text="以后再说"] + [text="去开启"]',
+      rules: '[text="去开启"] - [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/import/13296465',
     },
   ],
