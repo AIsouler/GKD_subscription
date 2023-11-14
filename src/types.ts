@@ -284,8 +284,17 @@ export type SubscriptionConfig = {
 
   /**
    * APP 会定时或者用户手动请求这个链接, 如果返回的订阅的 version 大于 APP 订阅当前的 version , 则更新
+   *
+   * 如果这个字段不存在, 则使用添加订阅时填写的链接
    */
   updateUrl?: string;
+
+  /**
+   * 一个只需要 id 和 version 的 json 文件链接, 检测更新时, 优先检测此链接, 如果 id 相等并且 version 增加, 则再去请求 updateUrl
+   *
+   * 目的是防止订阅文件过大而消耗过多的流量
+   */
+  checkUpdateUrl?: string;
 
   /**
    * https url, custom android schema url
