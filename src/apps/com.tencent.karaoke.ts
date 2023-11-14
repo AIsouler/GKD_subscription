@@ -14,5 +14,18 @@ export default defineAppConfig({
       rules: '[text^="跳过"][text.length<10]',
       snapshotUrls: 'https://i.gkd.li/import/13302490',
     },
+    {
+      key: 1,
+      name: '卡片式广告',
+      rules: [
+        {
+          key: 0,
+          name: '动态页面-卡片式广告',
+          activityIds: 'com.tencent.karaoke.module.main.ui.MainTabActivity',
+          matches: 'RelativeLayout > [text="广告"] + ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13334798',
+        },
+      ],
+    },
   ],
 });
