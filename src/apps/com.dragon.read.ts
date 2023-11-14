@@ -53,11 +53,21 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '右侧悬浮红包',
-      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-      rules:
-        '[id="android:id/content"] > FrameLayout > RelativeLayout[childCount=1][clickable=true] > RelativeLayout[childCount=3] > ImageView[id!=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12716506',
+      name: '首页右侧悬浮广告',
+      activityIds: [
+        'com.dragon.read.pages.main.MainFragmentActivity',
+        'com.dragon.read.ad.openingscreenad.OpeningScreenADActivity',
+      ],
+      rules: [
+        {
+          matches:
+            '[id="android:id/content"] > FrameLayout[childCount=1] > RelativeLayout[childCount=1] >2 ImageView[id!=null][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12716506', //relativeLayout和ImageView之间是RelativeLayoutRelativeLayout
+            'https://i.gkd.li/import/13318796', //relativeLayout和ImageView之间是ViewGroup
+          ],
+        },
+      ],
     },
     {
       key: 3,
