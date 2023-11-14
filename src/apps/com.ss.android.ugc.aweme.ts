@@ -161,5 +161,21 @@ export default defineAppConfig({
       rules: '[text="休息一下吧"] +3 Button[text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/13241564',
     },
+    {
+      key: 13,
+      name: '添加搜索到桌面弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds:
+        'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+      rules: [
+        {
+          action: 'back',
+          matches: 'ViewGroup[desc="添加搜索到桌面"]',
+          snapshotUrls: 'https://i.gkd.li/import/13338556',
+        },
+      ],
+    },
   ],
 });
