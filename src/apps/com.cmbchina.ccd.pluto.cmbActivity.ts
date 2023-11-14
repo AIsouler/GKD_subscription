@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.SplashActivity'],
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/tv_skip_timer"][text^="跳过"]',
       snapshotUrls: ['https://i.gkd.li/import/12647186'],
@@ -15,6 +18,11 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
+      quickFind: true,
+      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
         'com.cmbchina.ccd.pluto.cmbActivity.secplugin.activity.login.fingerprint.cmbR6VH0R',
@@ -24,11 +32,17 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/import/12647025',
         'https://i.gkd.li/import/12727203',
+        'https://i.gkd.li/import/13345771', // matchLauncher: true,
       ],
     },
     {
       key: 2,
       name: '首页弹窗',
+      quickFind: true,
+      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2'],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/lly_cf_view_content"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cf_view_close"]',
@@ -37,6 +51,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '右侧悬浮广告',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           name: '信用卡、我的页面-悬浮广告',
@@ -68,6 +85,9 @@ export default defineAppConfig({
       key: 4,
       name: '消息页面-通知开关',
       desc: '点击x按钮，不开启系统通知',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.cmbchina.ccd.pluto.cmbActivity.messagebox.activity.cmbBAP9I2J',
       ],
