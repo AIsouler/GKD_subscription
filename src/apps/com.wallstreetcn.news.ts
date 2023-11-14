@@ -24,7 +24,7 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '[text="广告"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
+            '[text="广告" || text="活动"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13262717',
         },
       ],
