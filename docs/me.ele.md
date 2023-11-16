@@ -13,16 +13,17 @@
 
 ## 红包弹窗
 
-默认禁用
-
 - [快照-0](https://i.gkd.li/import/12650238)
 - [快照-1](https://i.gkd.li/import/13294893)
 - [快照-2](https://i.gkd.li/import/13331361)
-- [快照-3](https://i.gkd.li/import/12650713)
+- [快照-3](https://i.gkd.li/import/13362974)
+- [快照-4](https://i.gkd.li/import/13376008)
+- [快照-5](https://i.gkd.li/import/12650713)
 
-## 首页活动弹窗
+## 活动弹窗
 
 - [快照-0](https://i.gkd.li/import/12726709)
+- [快照-1](https://i.gkd.li/import/13362878)
 
 ## 付款后广告弹窗
 

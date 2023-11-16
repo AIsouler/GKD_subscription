@@ -66,6 +66,8 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13241564)
+- [快照-1](https://i.gkd.li/import/13372604)
+- [快照-2](https://i.gkd.li/import/13372725)
 
 ## 添加搜索到桌面弹窗
 

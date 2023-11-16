@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12640282)
+- [快照-1](https://i.gkd.li/import/13362271)
 
 ## 青少年模式弹窗
 
@@ -19,6 +20,8 @@
 ## 阅读结束后显示的广告
 
 - [快照-0](https://i.gkd.li/import/12640303)
+- [快照-1](https://i.gkd.li/import/13362269)
+- [快照-2](https://i.gkd.li/import/13362272)
 
 ## 签到弹窗
 

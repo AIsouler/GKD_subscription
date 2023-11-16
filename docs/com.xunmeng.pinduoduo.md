@@ -55,4 +55,5 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13201422)
-- [快照-1](https://i.gkd.li/import/13205634)
+- [快照-1](https://i.gkd.li/import/13372677)
+- [快照-2](https://i.gkd.li/import/13205634)
