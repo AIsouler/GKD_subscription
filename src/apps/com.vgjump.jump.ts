@@ -7,12 +7,20 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/13259108',
+      rules: [
+        {
+          quickFind: true,
+          matches: 'TextView[text^="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/13259108',
+        },
+        {
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13372486',
+        },
+      ],
     },
   ],
 });
