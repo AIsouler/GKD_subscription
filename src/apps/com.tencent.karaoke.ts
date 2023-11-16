@@ -27,5 +27,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 1,
+          name: '活动弹窗',
+          activityIds:
+            'com.tencent.karaoke.module.splash.ui.SplashBaseActivity',
+          matches:
+            '[desc$="霸屏的按钮"] < ViewGroup + ViewGroup[childCount=1] > ViewGroup[childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13363281',
+        },
+      ],
+    },
   ],
 });
