@@ -134,18 +134,24 @@ export default defineAppConfig({
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
+      matchLauncher: true,
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
       rules: [
         {
           key: 0,
           name: '自动签到',
+          action: 'clickCenter',
           matches: ['FrameLayout > TextView[text="领取今日现金"]'],
-          snapshotUrls: 'https://i.gkd.li/import/13201422',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13201422', //com.xunmeng.pinduoduo.ui.activity.HomeActivity
+            'https://i.gkd.li/import/13372677', //com.bbk.launcher2.Launcher
+          ],
         },
         {
           key: 1,
           preKeys: [0],
           name: '在签到后关闭弹窗',
+          action: 'clickCenter',
           matches: ['FrameLayout > TextView[text="明日继续来领"]'],
           snapshotUrls: 'https://i.gkd.li/import/13205634',
         },
