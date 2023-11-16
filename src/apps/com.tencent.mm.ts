@@ -5,6 +5,7 @@ export default defineAppConfig({
   name: '微信',
   groups: [
     {
+      enable: false,
       key: 0,
       name: '朋友圈广告',
       desc: '点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭',
@@ -93,12 +94,14 @@ export default defineAppConfig({
     },
     {
       // Key1,2,3,4,11 均为授权类的规则
+      enable: false,
       key: 1,
       name: '电脑微信快捷自动登录',
       activityIds: '.plugin.webwx.ui.ExtDeviceWXLoginUI',
       rules: 'TextView[text="取消登录"] - Button[text="登录"]',
     },
     {
+      enable: false,
       key: 2,
       name: '浏览器扫码微信登录自动授权',
       desc: '自动允许使用头像昵称等',
@@ -119,6 +122,7 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12663602',
     },
     {
+      enable: false,
       key: 4,
       name: '微信读书网页版扫码登录自动授权',
       activityIds: ['com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI'],
@@ -335,37 +339,35 @@ export default defineAppConfig({
       enable: false,
       key: 14,
       name: '小程序-内部广告',
-      desc: '需同时开启"小程序-内部广告-反馈"',
       activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
       quickFind: true,
       rules: [
         {
+          key: 0,
+          name: '【广告】0',
           matches:
             'FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text="广告"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13199282', //[childCount=3]避免在点击展开菜单后重复点击
-          ],
+          snapshotUrls: 'https://i.gkd.li/import/13199282', //[childCount=3]避免在点击展开菜单后重复点击
         },
-      ],
-    },
-    {
-      enable: false,
-      key: 15,
-      name: '小程序-内部广告-反馈',
-      desc: '需同时开启"小程序-内部广告"',
-      activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
-      quickFind: true,
-      rules: [
         {
+          key: 1,
+          name: '【广告】1',
+          matches: 'Image[text="feedback_icon"] - [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13378208',
+        },
+        {
+          preKeys: [0, 1],
+          key: 11,
+          name: '点击原因【不感兴趣】',
           matches: '[text="不感兴趣"][visibleToUser=true]',
-          snapshotUrls: ['https://i.gkd.li/import/13200044'],
+          snapshotUrls: 'https://i.gkd.li/import/13200044',
         },
         {
+          preKeys: 11,
+          key: 12,
+          name: '点击原因【与我无关】',
           matches: '[text="与我无关"][visibleToUser=true]',
-          snapshotUrls: ['https://i.gkd.li/import/13200048'],
-        },
-        {
-          matches: '[text="关闭此广告"][visibleToUser=true]', //预防性规则,目前没有快照
+          snapshotUrls: 'https://i.gkd.li/import/13200048',
         },
       ],
     },
