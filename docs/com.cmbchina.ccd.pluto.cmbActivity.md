@@ -15,6 +15,7 @@
 ## 首页弹窗
 
 - [快照-0](https://i.gkd.li/import/12647000)
+- [快照-1](https://i.gkd.li/import/13360282)
 
 ## 右侧悬浮广告
 

@@ -1,10 +1,10 @@
 # 微信
 
-存在 17 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 16 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
-点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭
+默认禁用 - 点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
 
@@ -26,9 +26,11 @@
 
 ## 电脑微信快捷自动登录
 
+默认禁用
+
 ## 浏览器扫码微信登录自动授权
 
-自动允许使用头像昵称等
+默认禁用 - 自动允许使用头像昵称等
 
 - [快照-0](https://i.gkd.li/import/13065462)
 
@@ -39,6 +41,8 @@
 - [快照-0](https://i.gkd.li/import/12663602)
 
 ## 微信读书网页版扫码登录自动授权
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12506197)
 - [快照-1](https://i.gkd.li/import/12506201)
@@ -114,16 +118,12 @@
 
 ## 小程序-内部广告
 
-默认禁用 - 需同时开启"小程序-内部广告-反馈"
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13199282)
-
-## 小程序-内部广告-反馈
-
-默认禁用 - 需同时开启"小程序-内部广告"
-
-- [快照-0](https://i.gkd.li/import/13200044)
-- [快照-1](https://i.gkd.li/import/13200048)
+- [快照-1](https://i.gkd.li/import/13378208)
+- [快照-2](https://i.gkd.li/import/13200044)
+- [快照-3](https://i.gkd.li/import/13200048)
 
 ## 小程序-京东购物
 

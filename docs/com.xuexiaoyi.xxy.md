@@ -5,13 +5,19 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12895001)
+- [快照-1](https://i.gkd.li/import/13266314)
 
 ## 首页-底部广告
 
 - [快照-0](https://i.gkd.li/import/13068836)
-- [快照-1](https://i.gkd.li/import/13068811)
-- [快照-2](https://i.gkd.li/import/13202990)
-- [快照-3](https://i.gkd.li/import/13068819)
+- [快照-1](https://i.gkd.li/import/13375502)
+- [快照-2](https://i.gkd.li/import/13375559)
+- [快照-3](https://i.gkd.li/import/13068811)
+- [快照-4](https://i.gkd.li/import/13202990)
+- [快照-5](https://i.gkd.li/import/13266356)
+- [快照-6](https://i.gkd.li/import/13266362)
+- [快照-7](https://i.gkd.li/import/13266689)
+- [快照-8](https://i.gkd.li/import/13068819)
 
 ## 升级弹窗
 
