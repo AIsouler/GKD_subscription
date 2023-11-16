@@ -7,9 +7,15 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: ['[id="com.kmxs.reader:id/tv_count_down_text"][text^="跳过"]'],
-      snapshotUrls: ['https://i.gkd.li/import/12640282'],
+      snapshotUrls: [
+        'https://i.gkd.li/import/12640282',
+        'https://i.gkd.li/import/13362271',
+      ],
     },
     {
       key: 0,
@@ -35,10 +41,21 @@ export default defineAppConfig({
     {
       key: 3,
       name: '阅读结束后显示的广告',
+      quickFind: true,
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
-      rules:
-        '[text$="广告"] - ImageView[id="com.kmxs.reader:id/logo_icon"] < * < * - LinearLayout > ImageView[id="com.kmxs.reader:id/ad_direct_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12640303'],
+      rules: [
+        {
+          matches: [
+            '[text$="广告"]',
+            '[id="com.kmxs.reader:id/ad_direct_close"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12640303',
+            'https://i.gkd.li/import/13362269',
+            'https://i.gkd.li/import/13362272',
+          ],
+        },
+      ],
     },
     {
       enable: false,
