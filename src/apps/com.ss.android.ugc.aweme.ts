@@ -155,11 +155,19 @@ export default defineAppConfig({
       key: 12,
       name: '休息提醒',
       quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text="休息一下吧"] +3 Button[text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/13241564',
+      rules: [
+        {
+          matches: '[text="可进入使用管理助手更改设置"] -2 Button[text="取消"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13241564',
+            'https://i.gkd.li/import/13372604',
+          ],
+        },
+        {
+          matches: '[text="管理使用时间"] + Button[text="忽略提醒"]',
+          snapshotUrls: 'https://i.gkd.li/import/13372725',
+        },
+      ],
     },
     {
       key: 13,
