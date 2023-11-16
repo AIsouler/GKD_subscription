@@ -5,6 +5,7 @@ export default defineAppConfig({
   name: 'Gmail',
   groups: [
     {
+      enable: false,
       key: 2,
       name: '信息流广告',
       rules: [
@@ -36,6 +37,14 @@ export default defineAppConfig({
           name: '点击继续确认屏蔽',
           matches: 'Button[text="继续"]', // TODO Button[text="继续"] <<n [id="com.google.android.gm:id/design_bottom_sheet"]
           snapshotUrls: 'https://i.gkd.li/import/13255701',
+        },
+        {
+          preKeys: 2,
+          key: 3,
+          quickFind: true,
+          name: '关闭弹窗',
+          matches: '[id="com.google.android.gm:id/my_ad_center_close_icon"]',
+          snapshotUrls: 'https://i.gkd.li/import/13263279',
         },
       ],
     },
