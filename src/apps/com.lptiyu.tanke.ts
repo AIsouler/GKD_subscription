@@ -18,37 +18,43 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '广告弹窗',
+      name: '弹窗广告',
       rules: [
         {
           key: 0,
+          name: '腾讯广告-1',
+          matchLauncher: true,
           activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
           matches:
             '[id="com.lptiyu.tanke:id/interact_ad_root"] >n [id="com.lptiyu.tanke:id/iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12829816',
             'https://i.gkd.li/import/12869344',
+            'https://i.gkd.li/import/13378925',
           ],
         },
         {
           key: 1,
+          name: '腾讯广告-2',
           activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13070801',
         },
         {
           key: 2,
+          name: '快手广告',
+          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
+          matches:
+            '[text="广告"] <2 ViewGroup -n ViewGroup > @ViewGroup[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13218232',
+        },
+        {
+          key: 3,
+          name: '其他广告',
           activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
           matches:
             '@LinearLayout > [id="com.lptiyu.tanke:id/skip_parent_view"]',
           snapshotUrls: 'https://i.gkd.li/import/13166361',
-        },
-        {
-          key: 3,
-          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
-          matches:
-            '[id="com.lptiyu.tanke:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[clickable=true][childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13218232',
         },
       ],
     },
