@@ -20,4 +20,6 @@ GKD 默认订阅规则
 
 你可以将默认订阅删除后, 添加此订阅, 订阅链接如下
 
-<https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.openad.json>
+```txt
+https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.openad.json
+```
