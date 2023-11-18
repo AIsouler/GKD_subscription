@@ -30,11 +30,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            '@[desc="关闭"][clickable=true] - LinearLayout > TextView[text!=null]', // 1687669217838
+            'TextView[text!=null] < LinearLayout + ImageView[desc="关闭"]', // 原@语法会出现两个选项可能会导致误触
           snapshotUrls: [
             'https://i.gkd.li/import/12892726',
             'https://i.gkd.li/import/12774870',
             'https://i.gkd.li/import/13207766',
+            'https://i.gkd.li/import/13386518',
           ],
         },
       ],
@@ -285,9 +286,15 @@ export default defineAppConfig({
     {
       key: 17,
       name: '更新弹窗',
-      activityIds: 'com.tencent.mobileqq.upgrade',
+      activityIds: [
+        'com.tencent.mobileqq.upgrade',
+        'com.tencent.mobileqq.activity.SplashActivity',
+      ],
       rules: '@[desc="关闭"] - ViewGroup > [text="发现新版本"]',
-      snapshotUrls: 'https://i.gkd.li/import/13188721',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13188721',
+        'https://i.gkd.li/import/13386719',
+      ],
     },
     {
       enable: false,
