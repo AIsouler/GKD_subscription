@@ -13,3 +13,11 @@ GKD 默认订阅规则
 ## 感谢以下开发者的贡献
 
 ![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=--VERSION--)
+
+## 其它
+
+本仓库额外构建了一个仅启用 开屏广告 规则的订阅
+
+你可以将默认订阅删除后, 添加此订阅, 订阅链接如下
+
+<https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.openad.json>
