@@ -343,7 +343,14 @@ export const updateReadMeMd = async (
         .reduce((p, c) => p + (c.groups?.length || 0), 0)
         .toString(),
     )
-    .replaceAll('--VERSION--', (newConfig.version || 0).toString())
-    .replaceAll('--APP_LIST--', appListText);
+    .replaceAll('--VERSION--', (newConfig.version || 0).toString());
   await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
+  const appListTemplateMd = await fs.readFile(
+    process.cwd() + '/AppListTemplate.md',
+    'utf-8',
+  );
+  await fs.writeFile(
+    process.cwd() + '/AppList.md',
+    appListTemplateMd.replaceAll('--APP_LIST--', appListText),
+  );
 };
