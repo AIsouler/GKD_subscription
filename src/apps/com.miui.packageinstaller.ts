@@ -19,10 +19,15 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          activityIds:
+          activityIds: [
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+            'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          ],
           matches: '@[text="允许"] + [text="禁止"]',
-          snapshotUrls: 'https://i.gkd.li/import/13054478',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13054478',
+            'https://i.gkd.li/import/13399425',
+          ],
         },
       ],
     },
