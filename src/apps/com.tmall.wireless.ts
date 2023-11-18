@@ -21,19 +21,19 @@ export default defineAppConfig({
       activityIds: [
         'com.tmall.wireless.splash.TMSplashActivity',
         'com.tmall.wireless.maintab.module.TMMainTabActivity',
+        'com.tmall.wireless.webview.TMCommonWebViewActivity',
       ],
       rules: '[id="com.tmall.wireless:id/update_button_cancel"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13162603', //com.tmall.wireless.splash.TMSplashActivity
         'https://i.gkd.li/import/13258201', //com.tmall.wireless.maintab.module.TMMainTabActivity
+        'https://i.gkd.li/import/13399536', //com.tmall.wireless.webview.TMCommonWebViewActivity
       ],
     },
     {
       enable: false,
       key: 2,
       name: '弹窗广告',
-      matchTime: 10000,
-      actionMaximum: 1,
       activityIds: [
         'com.tmall.wireless.maintab.module.TMMainTabActivity',
         'com.tmall.wireless.turboweb.container.TurboWebViewActivity',
