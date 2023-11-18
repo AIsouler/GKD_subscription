@@ -6,16 +6,24 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告弹窗',
+      name: '弹窗广告',
       rules: [
         {
-          key: 0,
+          key: 1,
           name: '字节广告',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13328194',
+        },
+        {
+          key: 2,
+          name: '腾讯广告',
+          matchLauncher: true,
+          matches:
+            'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13391833',
         },
       ],
     },
