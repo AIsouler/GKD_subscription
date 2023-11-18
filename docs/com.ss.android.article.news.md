@@ -1,6 +1,6 @@
 # 今日头条
 
-存在 6 规则组 - [com.ss.android.article.news](/src/apps/com.ss.android.article.news.ts)
+存在 7 规则组 - [com.ss.android.article.news](/src/apps/com.ss.android.article.news.ts)
 
 ## 开屏广告
 
@@ -53,3 +53,9 @@
 - [快照-4](https://i.gkd.li/import/13093576)
 - [快照-5](https://i.gkd.li/import/12733152)
 - [快照-6](https://i.gkd.li/import/12755265)
+
+## 底部话题推荐弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/12706699)

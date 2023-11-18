@@ -1,6 +1,6 @@
 # 中信银行
 
-存在 3 规则组 - [com.ecitic.bank.mobile](/src/apps/com.ecitic.bank.mobile.ts)
+存在 4 规则组 - [com.ecitic.bank.mobile](/src/apps/com.ecitic.bank.mobile.ts)
 
 ## 开屏广告
 
@@ -14,3 +14,7 @@
 ## 广告弹窗
 
 - [快照-0](https://i.gkd.li/import/12701230)
+
+## 请求开通知权限弹窗
+
+- [快照-0](https://i.gkd.li/import/13399102)

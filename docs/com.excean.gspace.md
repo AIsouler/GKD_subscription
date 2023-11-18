@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/13296144)
+- [快照-1](https://i.gkd.li/import/13385318)
 
 ## 弹窗广告
 

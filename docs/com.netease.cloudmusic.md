@@ -39,6 +39,7 @@
 - [快照-2](https://i.gkd.li/import/13228955)
 - [快照-3](https://i.gkd.li/import/13230603)
 - [快照-4](https://i.gkd.li/import/13230605)
+- [快照-5](https://i.gkd.li/import/13391498)
 
 ## 更新弹窗
 
