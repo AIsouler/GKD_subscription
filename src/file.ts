@@ -77,6 +77,19 @@ export const writeConfig = async (config: SubscriptionConfig) => {
   const buffer = Buffer.from(orderdStringify(newConfig, sortKeys), 'utf-8');
   await fs.writeFile(gkdFp, buffer);
 
+  // update gkd.openad.json
+  const onlyOpenAdConfig = _.cloneDeep(newConfig);
+  onlyOpenAdConfig.apps.forEach((a) => {
+    a.groups?.forEach((g) => {
+      g.enable = g.name.startsWith('开屏广告');
+    });
+  });
+  await fs.writeFile(
+    process.cwd() + '/dist/gkd.openad.json',
+    orderdStringify(onlyOpenAdConfig, sortKeys),
+    'utf-8',
+  );
+
   // update gkd.version.json
   await fs.writeFile(
     versionFp,
