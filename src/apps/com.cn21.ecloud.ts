@@ -22,5 +22,16 @@ export default defineAppConfig({
         'https://i.gkd.li/import/12865488',
       ],
     },
+    {
+      key: 2,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: ['com.cn21.ecloud.activity.MainPageActivity'],
+      rules: '[id="com.cn21.ecloud:id/ivCancel"]',
+      snapshotUrls: 'https://i.gkd.li/import/13399488',
+    },
   ],
 });
