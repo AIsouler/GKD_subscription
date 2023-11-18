@@ -8,6 +8,7 @@
 
 - [快照-0](https://i.gkd.li/import/12874746)
 - [快照-1](https://i.gkd.li/import/13054478)
+- [快照-2](https://i.gkd.li/import/13399425)
 
 ## 自动安装应用
 

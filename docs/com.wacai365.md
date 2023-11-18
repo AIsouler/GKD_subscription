@@ -7,6 +7,7 @@
 - [快照-0](https://i.gkd.li/import/13162861)
 - [快照-1](https://i.gkd.li/import/13177538)
 - [快照-2](https://i.gkd.li/import/13194893)
+- [快照-3](https://i.gkd.li/import/13399124)
 
 ## 新版本提示
 

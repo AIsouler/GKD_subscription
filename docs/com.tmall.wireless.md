@@ -10,6 +10,7 @@
 
 - [快照-0](https://i.gkd.li/import/13162603)
 - [快照-1](https://i.gkd.li/import/13258201)
+- [快照-2](https://i.gkd.li/import/13399536)
 
 ## 弹窗广告
 

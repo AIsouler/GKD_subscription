@@ -1,11 +1,16 @@
 # 高德地图
 
-存在 4 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
+存在 5 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
 
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12667556)
 - [快照-1](https://i.gkd.li/import/12750045)
+
+## 更新弹窗
+
+- [快照-0](https://i.gkd.li/import/13379094)
+- [快照-1](https://i.gkd.li/import/13379426)
 
 ## 首页-地图页面上方消息提醒
 
