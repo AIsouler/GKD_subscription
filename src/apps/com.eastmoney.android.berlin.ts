@@ -16,10 +16,14 @@ export default defineAppConfig({
       name: '更新弹窗',
       activityIds: [
         'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
+        'com.bbk.launcher2.Launcher',
       ],
       rules:
         '@[id="com.eastmoney.android.berlin:id/tv_update_next_time"] + [id="com.eastmoney.android.berlin:id/tv_update_now"]',
-      snapshotUrls: ['https://i.gkd.li/import/12706070'],
+      snapshotUrls: [
+        'https://i.gkd.li/import/12706070', //com.eastmoney.android.module.launcher.internal.home.HomeActivity
+        'https://i.gkd.li/import/13399156', //com.bbk.launcher2.Launcher
+      ],
     },
     {
       enable: true,
