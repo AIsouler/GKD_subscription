@@ -7,17 +7,18 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.ecitic.bank.mobile.ui.SplashActivity'],
-      rules: '[id="com.ecitic.bank.mobile:id/skip_adv_layout"]',
-      snapshotUrls: ['https://i.gkd.li/import/12701203'],
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '@LinearLayout > [text="跳过"]',
+      snapshotUrls: 'https://i.gkd.li/import/12701203',
     },
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: [
-        'com.ecitic.bank.mobile.ui.MainActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '@[text="暂不更新"] + [text="立即更新"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12701217',
@@ -31,6 +32,13 @@ export default defineAppConfig({
       rules:
         '[id="com.ecitic.bank.mobile:id/id_cordova_view"] + [id="com.ecitic.bank.mobile:id/close_product_send"]',
       snapshotUrls: ['https://i.gkd.li/import/12701230'],
+    },
+    {
+      key: 3,
+      name: '请求开通知权限弹窗',
+      activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
+      rules: '@[text="取消"] + [text="立即开启"]',
+      snapshotUrls: 'https://i.gkd.li/import/13399102',
     },
   ],
 });
