@@ -8,22 +8,27 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchLauncher: true,
-      activityIds: [
-        'com.wacai365.HomeActivity',
-        'com.wacai.android.wind.splash.WindDialogActivity',
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          key: 0,
           matches: '[id="com.wacai365:id/ksad_splash_circle_skip_view"]',
           snapshotUrls: 'https://i.gkd.li/import/13162861',
         },
         {
+          key: 1,
           matches: '[id$="id/tt_splash_skip_btn"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13177538',
             'https://i.gkd.li/import/13194893',
           ],
+        },
+        {
+          key: 2,
+          matches: '[text^="跳过"][text.length<=6]',
+          snapshotUrls: 'https://i.gkd.li/import/13399124',
         },
       ],
     },
