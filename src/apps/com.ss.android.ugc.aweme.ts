@@ -185,5 +185,12 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 14,
+      name: '视频播放中途插入的打招呼界面',
+      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+      rules: 'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
+      snapshotUrls: 'https://i.gkd.li/import/13379307',
+    },
   ],
 });
