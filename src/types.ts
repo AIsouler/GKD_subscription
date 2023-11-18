@@ -12,6 +12,8 @@ type CommonProps = {
   activityIds?: IArray<string>;
 
   /**
+   * @deprecated 从 v1.5.0 已弃用
+   *
    * 匹配桌面的 activityId, 因为 activityId 在某些机器/应用上获取概率不准确
    *
    * 有时当出现 开屏广告 时, activityId 还是桌面的
@@ -249,8 +251,27 @@ type RuleConfig = {
    * @example
    * `back`
    * // 向系统发起一个返回事件, 相当于按下返回键
+   *
+   * @example
+   * `longClick`
+   * // 如果目标节点是 longClickable 的, 则使用 `longClickNode`, 反之使用 `longClickCenter`
+   *
+   * @example
+   * `longClickNode`
+   * // 向系统发起一个长按无障碍节点事件，与 clickNode 类似
+   *
+   * @example
+   * `longClickCenter`
+   * // 与 clickCenter 类似, 长按时间为 400 毫秒
    */
-  action?: 'click' | 'clickNode' | 'clickCenter' | 'back';
+  action?:
+    | 'click'
+    | 'clickNode'
+    | 'clickCenter'
+    | 'back'
+    | 'longClick'
+    | 'longClickNode'
+    | 'longClickCenter';
 
   /**
    * 与这个 key 的 rule 共享次数
