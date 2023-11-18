@@ -257,21 +257,33 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 15,
       name: '好友动态-为你推荐',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      quickFind: true,
+      matchLauncher: true,
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+      ],
       rules: [
         {
           key: 0,
-          matches: '[text="为你推荐"] + ImageView[id!=null][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12929620',
+          matches: '@ImageView[clickable=true] - [text="为你推荐"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12929620',
+            'https://i.gkd.li/import/13387606', // activityIds: 'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+          ],
         },
         {
           preKeys: 0,
           key: 1,
           matches:
             '@LinearLayout[id!=null][clickable=true] > LinearLayout > [text="减少此类推荐"]',
-          snapshotUrls: 'https://i.gkd.li/import/12929619',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12929619',
+            'https://i.gkd.li/import/13387605', // matchLauncher: true,
+          ],
         },
       ],
     },
