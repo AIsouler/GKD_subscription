@@ -167,5 +167,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 13,
+      name: '底部话题推荐弹窗',
+      activityIds: ['com.ss.android.article.news.activity.MainActivity'],
+      rules: [
+        {
+          name: '话题谈论',
+          matches:
+            'FlattenUIText[text="参与讨论"] + FlattenUIImage[clickable=true]',
+          snapshotUrls: ['https://i.gkd.li/import/12706699'],
+        },
+      ],
+    },
   ],
 });
