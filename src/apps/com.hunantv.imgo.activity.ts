@@ -7,16 +7,15 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      activityIds: 'com.hunantv.imgo.activity.MainActivity',
-      rules: [
-        {
-          matches: '[id="com.hunantv.imgo.activity:id/layout_boot_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/12472612',
-        },
-        {
-          matches: '[id="com.hunantv.imgo.activity:id/ivAd"] >n [text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12472612',
-        },
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules:
+        '@[text^="跳过"][text.length<=10] <<n [id="com.hunantv.imgo.activity:id/rlAd"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12472612',
+        'https://i.gkd.li/import/13401943',
       ],
     },
     {
