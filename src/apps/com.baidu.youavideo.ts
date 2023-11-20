@@ -7,14 +7,23 @@ export default defineAppConfig({
     {
       key: 1,
       name: '开屏广告',
-      activityIds: ['com.baidu.youavideo.app.ui.SplashActivity'],
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"||text="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12597925',
-            'https://i.gkd.li/import/12598507',
-          ],
+          key: 0,
+          name: '百青藤广告',
+          actionMaximum: 1,
+          quickFind: true,
+          matches: '[text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/12598507',
+        },
+        {
+          key: 1,
+          name: '字节广告',
+          actionMaximumKey: 0,
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/12597925',
         },
       ],
     },
@@ -84,6 +93,15 @@ export default defineAppConfig({
           snapshotUrls: ['https://i.gkd.li/import/13048700'],
         },
       ],
+    },
+    {
+      key: 7,
+      name: '请求开启通知权限弹窗',
+      activityIds: 'com.baidu.youavideo.app.ui.HomeActivity',
+      quickFind: true,
+      rules:
+        '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13413819',
     },
   ],
 });
