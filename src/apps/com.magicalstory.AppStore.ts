@@ -23,15 +23,20 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '下方横幅',
+      name: '卡片式广告',
       activityIds: 'com.magicalstory.AppStore.search.searchActivity',
       rules: [
         {
+          key: 0,
+          name: '腾讯广告',
           matches: [
-            '[id="com.magicalstory.AppStore:id/banner"]',
+            '[id^="com.magicalstory.AppStore:id/banner"]',
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13185746',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13185746',
+            'https://i.gkd.li/import/13413482',
+          ],
         },
       ],
     },
