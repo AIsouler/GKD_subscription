@@ -82,5 +82,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 4,
+      name: '版本更新弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          matches: '@Button[text*="暂不更新"] + Button[text*="更新"]',
+          snapshotUrls: 'https://i.gkd.li/import/13402478',
+        },
+      ],
+    },
   ],
 });
