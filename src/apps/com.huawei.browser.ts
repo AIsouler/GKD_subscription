@@ -10,9 +10,12 @@ export default defineAppConfig({
       activityIds: ['com.huawei.browser.BrowserMainActivity'],
       rules: [
         {
-          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
+          matches: '[id$="/hiad_skip_text"]',
           action: 'clickCenter',
-          snapshotUrls: ['https://i.gkd.li/import/12681995'],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12681995',
+            'https://i.gkd.li/import/13403785',
+          ],
         },
       ],
     },
