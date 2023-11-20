@@ -6,11 +6,15 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      matchLauncher: true,
       name: '开屏广告',
-      activityIds: 'com.onethingcloud.android.MainActivity',
-      rules: 'View[desc^="跳过"][desc.length=6]',
-      snapshotUrls: 'https://i.gkd.li/import/12841174',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[desc^="跳过"][desc.length<=10]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12841174',
+        'https://i.gkd.li/import/13414384',
+      ],
     },
     {
       key: 1,
