@@ -1,6 +1,6 @@
 # 起点读书
 
-存在 7 规则组 - [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts)
+存在 8 规则组 - [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts)
 
 ## 开屏广告
 
@@ -38,3 +38,9 @@
 默认禁用 - 自动点击【登录】
 
 - [快照-0](https://i.gkd.li/import/12903081)
+
+## 信息流广告
+
+默认禁用 - 自动点击【x】
+
+- [快照-0](https://i.gkd.li/import/13406169)

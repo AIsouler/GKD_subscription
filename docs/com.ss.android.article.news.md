@@ -1,6 +1,6 @@
 # 今日头条
 
-存在 7 规则组 - [com.ss.android.article.news](/src/apps/com.ss.android.article.news.ts)
+存在 8 规则组 - [com.ss.android.article.news](/src/apps/com.ss.android.article.news.ts)
 
 ## 开屏广告
 
@@ -8,6 +8,7 @@
 - [快照-1](https://i.gkd.li/import/12754759)
 - [快照-2](https://i.gkd.li/import/12840189)
 - [快照-3](https://i.gkd.li/import/13174224)
+- [快照-4](https://i.gkd.li/import/13402688)
 
 ## 更新弹窗
 
@@ -59,3 +60,10 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12706699)
+
+## 自动观看广告视频
+
+默认禁用 - 自动观看广告并等待30s后关闭
+
+- [快照-0](https://i.gkd.li/import/13402468)
+- [快照-1](https://i.gkd.li/import/13402480)

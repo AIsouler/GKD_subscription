@@ -22,6 +22,7 @@
 - [快照-0](https://i.gkd.li/import/12647039)
 - [快照-1](https://i.gkd.li/import/12647052)
 - [快照-2](https://i.gkd.li/import/12647127)
+- [快照-3](https://i.gkd.li/import/13402782)
 
 ## 消息页面-通知开关
 

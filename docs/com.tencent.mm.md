@@ -97,16 +97,17 @@
 
 ## 微信小程序-开屏广告
 
-默认禁用
-
 - [快照-0](https://i.gkd.li/import/12701979)
 - [快照-1](https://i.gkd.li/import/12777076)
 - [快照-2](https://i.gkd.li/import/12785012)
 - [快照-3](https://i.gkd.li/import/12785183)
 - [快照-4](https://i.gkd.li/import/13306883)
 - [快照-5](https://i.gkd.li/import/12785246)
+- [快照-6](https://i.gkd.li/import/13407275)
 
 ## 网页版文件传输助手扫码自动授权
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12793745)
 
@@ -121,12 +122,14 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13199282)
-- [快照-1](https://i.gkd.li/import/13378208)
-- [快照-2](https://i.gkd.li/import/13200044)
-- [快照-3](https://i.gkd.li/import/13200048)
+- [快照-1](https://i.gkd.li/import/13407275)
+- [快照-2](https://i.gkd.li/import/13378208)
+- [快照-3](https://i.gkd.li/import/13200044)
+- [快照-4](https://i.gkd.li/import/13200048)
 
 ## 小程序-京东购物
 
 默认禁用 - 低价包邮广告
 
 - [快照-0](https://i.gkd.li/import/13298294)
+- [快照-1](https://i.gkd.li/import/13327022)

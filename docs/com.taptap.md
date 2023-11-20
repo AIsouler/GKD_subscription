@@ -1,6 +1,6 @@
 # TapTap
 
-存在 1 规则组 - [com.taptap](/src/apps/com.taptap.ts)
+存在 2 规则组 - [com.taptap](/src/apps/com.taptap.ts)
 
 ## 游戏浏览界面-推荐广告
 
@@ -11,3 +11,7 @@
 - [快照-2](https://i.gkd.li/import/12864810)
 - [快照-3](https://i.gkd.li/import/12840904)
 - [快照-4](https://i.gkd.li/import/13258679)
+
+## 更新提示
+
+- [快照-0](https://i.gkd.li/import/13387479)
