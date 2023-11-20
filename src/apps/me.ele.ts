@@ -16,9 +16,9 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '版本更新',
       quickFind: true,
-      matchTime: 10000,
+      // matchTime: 10000, 部分更新提示不在10s内
       actionMaximum: 1,
       resetMatch: 'app',
       matchDelay: 3000,
