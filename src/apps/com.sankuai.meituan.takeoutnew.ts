@@ -7,20 +7,22 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds:
-        'com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: 'TextView[text*=`跳过`]',
     },
     {
       key: 1,
-      name: '关闭更新弹窗',
-      matchLauncher: true,
-      activityIds:
-        'com.sankuai.waimai.business.page.homepage.widget.dialog.UpdateForceInstallDialog',
-      rules: [
-        '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]', // 1686969252896
+      name: '更新弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13415044',
+        'https://i.gkd.li/import/13276882',
       ],
-      snapshotUrls: 'https://i.gkd.li/import/13276882', // matchLauncher
     },
     {
       key: 2,
