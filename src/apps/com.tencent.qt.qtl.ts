@@ -7,13 +7,15 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.tencent.zone.main.MainZoneHomeActivity',
-      matchLauncher: true,
       quickFind: true,
-      rules: '[id="com.tencent.qt.qtl:id/skip_layout"] > [text$="跳过"]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text$="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/12793273',
-        'https://i.gkd.li/import/12893534', // com.miui.home.launcher.Launcher
+        'https://i.gkd.li/import/12893534',
+        'https://i.gkd.li/import/13413724',
       ],
     },
   ],
