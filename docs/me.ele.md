@@ -6,7 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/12534930)
 
-## 更新弹窗
+## 版本更新
 
 - [快照-0](https://i.gkd.li/import/12650280)
 - [快照-1](https://i.gkd.li/import/13206819)

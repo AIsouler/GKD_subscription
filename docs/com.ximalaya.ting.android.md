@@ -1,6 +1,6 @@
 # 喜马拉雅
 
-存在 13 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
+存在 14 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
 
 ## 开屏广告
 
@@ -76,3 +76,11 @@
 ## 弹窗广告
 
 - [快照-0](https://i.gkd.li/import/13263421)
+
+## 推送通知
+
+取消推送通知
+
+- [示例-0](https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df)
+
+- [快照-0](https://i.gkd.li/import/13389145)
