@@ -58,7 +58,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          name: '信用卡、我的页面-悬浮广告',
+          name: '信用卡、我的页面',
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
             'com.cmbchina.ccd.pluto.cmbActivity.secondNav.cmbBQDU4FG',
@@ -71,7 +71,7 @@ export default defineAppConfig({
           ],
         },
         {
-          name: '查账页面-悬浮广告',
+          name: '查账页面',
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
             'com.cmbchina.ccd.pluto.cmbActivity.repaymentBillv3.billRepay.view.cmbK99GNX',
@@ -79,6 +79,13 @@ export default defineAppConfig({
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_bg"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_close"]',
           snapshotUrls: ['https://i.gkd.li/import/12647127'],
+        },
+        {
+          name: '发现页',
+          activityIds: 'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
+          matches:
+            '[id="com.cmbchina.ccd.pluto.cmbActivity:id/view_cat"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/view_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13402782',
         },
       ],
     },
