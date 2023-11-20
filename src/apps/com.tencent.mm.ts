@@ -283,19 +283,21 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12706944',
     },
     {
-      enable: false,
       key: 10,
       name: '微信小程序-开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
       activityIds: [
         'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
         'com.tencent.mm.plugin.appbrand.launching.AppBrandLaunchProxyUI',
       ],
-      quickFind: true,
       rules: [
         {
           matches: [
-            'FrameLayout[childCount=2] > FrameLayout[childCount=3] > FrameLayout[childCount=1] > TextView[text="广告"]',
-            'FrameLayout[childCount<=3] > FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
+            'FrameLayout > TextView + FrameLayout > TextView[text="广告"]',
+            'FrameLayout > TextView + FrameLayout > TextView[text="跳过"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12701979',
@@ -303,16 +305,14 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12785012',
             'https://i.gkd.li/import/12785183',
             'https://i.gkd.li/import/13306883',
+            'https://i.gkd.li/import/12785246',
+            'https://i.gkd.li/import/13407275',
           ],
-        },
-        {
-          matches:
-            '[text="广告"] < * <2 * <2 * <2 FrameLayout[childCount=2] - FrameLayout[childCount=2] >  FrameLayout[childCount=1] > [text="跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/12785246'],
         },
       ],
     },
     {
+      enable: false,
       key: 11,
       name: '网页版文件传输助手扫码自动授权',
       quickFind: true,
@@ -347,7 +347,12 @@ export default defineAppConfig({
           name: '【广告】0',
           matches:
             'FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text="广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13199282', //[childCount=3]避免在点击展开菜单后重复点击
+          excludeMatches:
+            'FrameLayout > TextView + FrameLayout > TextView[text="跳过"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13199282', // [childCount=3]避免在点击展开菜单后重复点击
+            'https://i.gkd.li/import/13407275', // excludeMatches中添加key10中规则，避免误触
+          ],
         },
         {
           key: 1,
