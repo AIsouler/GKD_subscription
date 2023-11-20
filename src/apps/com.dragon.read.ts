@@ -84,6 +84,19 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 4,
+      name: '阅读页面_关注作者',
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches: '@ImageView +2 FrameLayout >3 [text="关注"]',
+          snapshotUrls: 'https://i.gkd.li/import/13399505',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 10,
       name: '请求通知权限弹窗',
