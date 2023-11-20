@@ -163,8 +163,12 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
       rules:
-        'TextView[text^="看视频，免费畅听VIP歌曲"] + [id="com.netease.cloudmusic:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13197457',
+        'TextView[text!=null] + ImageView[id="com.netease.cloudmusic:id/close"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13402634',
+        'https://i.gkd.li/import/13402635',
+        'https://i.gkd.li/import/13402636',
+      ],
     },
   ],
 });
