@@ -92,5 +92,14 @@ export default defineAppConfig({
       rules: '[id="scanLogin"]',
       snapshotUrls: 'https://i.gkd.li/import/12903081',
     },
+    {
+      enable: false,
+      key: 11,
+      name: '信息流广告',
+      desc: '自动点击【x】',
+      activityIds: 'com.qidian.QDReader.flutter.DailyReadingMainPageActivity',
+      rules: 'View[desc="更多游戏"] - ImageView[clickable=true]',
+      snapshotUrls: 'https://i.gkd.li/import/13406169',
+    },
   ],
 });
