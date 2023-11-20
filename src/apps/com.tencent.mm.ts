@@ -378,12 +378,18 @@ export default defineAppConfig({
       desc: '低价包邮广告',
       actionDelay: 500,
       actionMaximum: 1,
-      activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI01',
+      activityIds: [
+        'com.tencent.mm.plugin.appbrand.ui.AppBrandUI01',
+        'com.tencent.mm.plugin.appbrand.ui.AppBrandUI00',
+      ],
       rules: {
         matches: '@Image -n * > View[text="可横向滚动"]',
         action: 'clickCenter',
+        snapshotUrls: [
+          'https://i.gkd.li/import/13298294', //com.tencent.mm.plugin.appbrand.ui.AppBrandUI01
+          'https://i.gkd.li/import/13327022', //com.tencent.mm.plugin.appbrand.ui.AppBrandUI00
+        ],
       },
-      snapshotUrls: 'https://i.gkd.li/import/13298294',
     },
   ],
 });
