@@ -28,10 +28,16 @@ export default defineAppConfig({
     {
       key: 2,
       name: '广告弹窗',
-      activityIds: ['com.ecitic.bank.mobile.ui.webview.CordovaWebViewActivity'],
+      activityIds: [
+        'com.ecitic.bank.mobile.ui.MainActivity',
+        'com.ecitic.bank.mobile.ui.webview.CordovaWebViewActivity',
+      ],
       rules:
         '[id="com.ecitic.bank.mobile:id/id_cordova_view"] + [id="com.ecitic.bank.mobile:id/close_product_send"]',
-      snapshotUrls: ['https://i.gkd.li/import/12701230'],
+      snapshotUrls: [
+        'https://i.gkd.li/import/13402746',
+        'https://i.gkd.li/import/12701230',
+      ],
     },
     {
       key: 3,
