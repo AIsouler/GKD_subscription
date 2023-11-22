@@ -24,11 +24,14 @@ export default defineAppConfig({
     {
       key: 1,
       name: '卡片式广告',
-      activityIds: 'com.magicalstory.AppStore.search.searchActivity',
       rules: [
         {
           key: 0,
           name: '腾讯广告',
+          activityIds: [
+            'com.magicalstory.AppStore.search.searchActivity',
+            'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
+          ],
           matches: [
             '[id^="com.magicalstory.AppStore:id/banner"]',
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
@@ -36,6 +39,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13185746',
             'https://i.gkd.li/import/13413482',
+            'https://i.gkd.li/import/13416979',
           ],
         },
       ],
