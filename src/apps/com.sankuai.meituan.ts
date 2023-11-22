@@ -107,5 +107,20 @@ export default defineAppConfig({
         'https://i.gkd.li/import/12910211',
       ],
     },
+    {
+      enable: false,
+      key: 8,
+      name: '通知弹窗',
+      desc: '点击跳过',
+      quickFind: true,
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches: 'TextView[id=\'com.sankuai.meituan:id/later\']',
+          snapshotUrls: 'https://i.gkd.li/import/13439134',
+        },
+      ],
+    },
   ],
 });
