@@ -1,6 +1,6 @@
 # 云闪付
 
-存在 7 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
+存在 8 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
 
 ## 开屏广告
 
@@ -34,3 +34,7 @@
 默认禁用 - 默认关闭，请手动开启
 
 - [快照-0](https://i.gkd.li/import/12695736)
+
+## 获得新勋章提示
+
+- [快照-0](https://i.gkd.li/import/13440341)

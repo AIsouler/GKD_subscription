@@ -17,8 +17,11 @@
 - [快照-1](https://i.gkd.li/import/12774870)
 - [快照-2](https://i.gkd.li/import/13207766)
 - [快照-3](https://i.gkd.li/import/13386518)
+- [快照-4](https://i.gkd.li/import/13426912)
 
 ## 好友动态-广告卡片
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12847842)
 - [快照-1](https://i.gkd.li/import/12840889)
