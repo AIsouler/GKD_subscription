@@ -11,9 +11,15 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.smk.activity.MainActivity',
+      activityIds: [
+        'com.smk.activity.MainActivity',
+        'com.smk.activity.LaunchActivity',
+      ],
       rules: '[id="com.smk:id/iv_close_ad"]',
-      snapshotUrls: 'https://i.gkd.li/import/13402584',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13402584',
+        'https://i.gkd.li/import/13425013', // activityIds: 'com.smk.activity.LaunchActivity',
+      ],
     },
   ],
 });
