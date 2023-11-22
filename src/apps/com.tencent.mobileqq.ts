@@ -41,6 +41,7 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 2,
       name: '好友动态-广告卡片',
       activityIds: [
@@ -55,8 +56,9 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
+          quickFind: true,
           matches:
-            '[clickable=true] > ImageView + TextView[text="关闭此条广告"]',
+            '@[clickable=true] > ImageView + TextView[text="关闭此条广告"]',
           snapshotUrls: 'https://i.gkd.li/import/12840889',
         },
       ],
