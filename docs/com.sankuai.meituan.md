@@ -1,6 +1,6 @@
 # 美团
 
-存在 8 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
+存在 9 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
 
 ## 开屏广告
 
@@ -43,3 +43,9 @@
 - [快照-0](https://i.gkd.li/import/12874657)
 - [快照-1](https://i.gkd.li/import/12910210)
 - [快照-2](https://i.gkd.li/import/12910211)
+
+## 通知弹窗
+
+默认禁用 - 点击跳过
+
+- [快照-0](https://i.gkd.li/import/13439134)

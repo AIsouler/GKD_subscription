@@ -1,6 +1,6 @@
 # 淘宝
 
-存在 8 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
+存在 9 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
 
 ## 开屏广告
 
@@ -27,6 +27,7 @@
 
 - [快照-0](https://i.gkd.li/import/13197594)
 - [快照-1](https://i.gkd.li/import/13222946)
+- [快照-2](https://i.gkd.li/import/13438404)
 
 ## 各级页面-添加到首页弹窗
 
@@ -48,3 +49,9 @@
 ## 版本更新
 
 - [快照-0](https://i.gkd.li/import/13336760)
+
+## 小额免密支付弹窗
+
+默认禁用 - 点击关闭
+
+- [快照-0](https://i.gkd.li/import/13438414)

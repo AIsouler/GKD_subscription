@@ -1,6 +1,6 @@
 # 百度地图
 
-存在 9 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
+存在 10 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
 
 ## 开屏广告
 
@@ -57,3 +57,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13258995)
+
+## 通勤卡-添加至桌面
+
+默认禁用 - 点击取消
+
+- [快照-0](https://i.gkd.li/import/13439258)
