@@ -40,5 +40,15 @@ export default defineAppConfig({
       rules: '@[text="暂不允许"] + [text="允许"]',
       snapshotUrls: 'https://i.gkd.li/import/13198020',
     },
+    {
+      key: 3,
+      name: '通知弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      activityIds:
+        'com.smzdm.client.android.module.community.module.bask.BaskDetailActivity',
+      rules: 'ImageView[id="com.smzdm.client.android:id/ib_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13438810',
+    },
   ],
 });
