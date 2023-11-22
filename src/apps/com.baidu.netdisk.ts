@@ -33,14 +33,22 @@ export default defineAppConfig({
       name: '活动弹窗',
       desc: '关闭各种活动弹窗信息',
       quickFind: true,
-      activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
         {
-          matches: '[id="com.baidu.netdisk:id/iv_close"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12642505',
-            'https://i.gkd.li/import/12923937',
-          ],
+          key: 1,
+          name: '一刻相册推广弹窗',
+          activityIds: 'com.baidu.netdisk.ui.MainActivity',
+          matches:
+            '[id="com.baidu.netdisk:id/cl_content"] - [id="com.baidu.netdisk:id/iv_close"]',
+          snapshotUrls: ['https://i.gkd.li/import/12642505'],
+        },
+        {
+          key: 2,
+          name: 'VIP弹窗',
+          activityIds: 'com.baidu.netdisk.business.guide.dialog.lifeproduct.', // LifeV10GuideDialog
+          matches:
+            '[id="com.baidu.netdisk:id/view_content_bg2"] - [id="com.baidu.netdisk:id/iv_close"]',
+          snapshotUrls: ['https://i.gkd.li/import/12923937'],
         },
       ],
     },
