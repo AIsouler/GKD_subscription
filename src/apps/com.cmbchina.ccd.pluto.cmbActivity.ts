@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '版本更新',
       quickFind: true,
       matchLauncher: true,
       matchTime: 10000,
@@ -25,7 +25,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       activityIds: [
         'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
-        'com.cmbchina.ccd.pluto.cmbActivity.secplugin.activity.login.fingerprint.cmbR6VH0R',
+        'com.cmbchina.ccd.pluto.cmbActivity.secplugin',
       ],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_sure_tips"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_cancel_tips"]',
@@ -61,7 +61,7 @@ export default defineAppConfig({
           name: '信用卡、我的页面',
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
-            'com.cmbchina.ccd.pluto.cmbActivity.secondNav.cmbBQDU4FG',
+            'com.cmbchina.ccd.pluto.cmbActivity.secondNav',
           ],
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_floating_ad_cmb"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_close_floating_ad_cmb"]',
@@ -74,7 +74,7 @@ export default defineAppConfig({
           name: '查账页面',
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
-            'com.cmbchina.ccd.pluto.cmbActivity.repaymentBillv3.billRepay.view.cmbK99GNX',
+            'com.cmbchina.ccd.pluto.cmbActivity.repaymentBillv3.billRepay',
           ],
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_bg"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_close"]',
@@ -97,9 +97,7 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.cmbchina.ccd.pluto.cmbActivity.messagebox.activity.cmbBAP9I2J',
-      ],
+      activityIds: ['com.cmbchina.ccd.pluto.cmbActivity.messagebox'],
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/btn_open_notify"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/iv_delete"]',
       snapshotUrls: ['https://i.gkd.li/import/12647068'],
