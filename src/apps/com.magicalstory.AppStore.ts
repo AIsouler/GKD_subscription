@@ -44,5 +44,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '公告',
+      activityIds: 'com.magicalstory.AppStore.main.MainActivity',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches:
+            '[text*="隐藏"][id="com.magicalstory.AppStore:id/btn_selectNegative"]',
+          snapshotUrls: 'https://i.gkd.li/import/13437553',
+        },
+      ],
+    },
   ],
 });
