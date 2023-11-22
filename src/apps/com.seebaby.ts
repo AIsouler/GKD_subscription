@@ -8,9 +8,11 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: ['com.seebaby.login.ui.activity.LauncherActivity'],
-      rules:
-        '[id="com.seebaby:id/view_ads_logo"] + [id="com.seebaby:id/rtv_ads_time"]',
-      snapshotUrls: ['https://i.gkd.li/import/12705347'],
+      rules: '[text^="跳过"][text.length<10]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12705347', // 有id
+        'https://i.gkd.li/import/13421495', // 无id
+      ],
     },
     {
       key: 1,
