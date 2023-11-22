@@ -9,14 +9,23 @@ export default defineAppConfig({
       enable: false,
       name: '跳过实体号码链接',
       quickFind: true,
-      activityIds: 'com.google.android.apps.voice.promo.PromoActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: [
+        'com.google.android.apps.voice.promo.PromoActivity',
+        'com.google.android.apps.voice.verification.procedure.VerificationActivity',
+      ],
       rules: [
         {
           matches: [
-            '[text="Link this device to Google Voice"]',
+            '[id="com.google.android.apps.googlevoice:id/title_view"][text="Link this device to Google Voice" || text="将此设备与 Google Voice 关联"]',
             '[id="com.google.android.apps.googlevoice:id/skip_button"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13314255',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13314255',
+            'https://i.gkd.li/import/13437190',
+          ],
         },
       ],
     },
