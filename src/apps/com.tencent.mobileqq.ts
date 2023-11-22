@@ -38,6 +38,13 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13386518',
           ],
         },
+        {
+          key: 1,
+          name: '消息页面-顶部惊喜礼包',
+          matches:
+            '[text*="惊喜礼包"] + FrameLayout + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13426912',
+        },
       ],
     },
     {
