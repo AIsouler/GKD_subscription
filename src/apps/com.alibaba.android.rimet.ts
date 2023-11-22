@@ -98,5 +98,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 5,
+      name: '扫码自动登录桌面版',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      activityIds: 'com.alibaba.android.user.qrcode.WebLoginActivity',
+      rules: [
+        {
+          matches: '[id="com.alibaba.android.rimet:id/btn_login"]',
+          snapshotUrls: 'https://i.gkd.li/import/13433981',
+        },
+      ],
+    },
   ],
 });
