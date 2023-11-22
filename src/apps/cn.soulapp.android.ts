@@ -49,5 +49,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: 'app评分',
+      quickFind: true,
+      activityIds: ['cn.soulapp.android.component.chat.ConversationActivity'],
+      rules: [
+        {
+          matches:
+            '[id="cn.soulapp.android:id/score_message"] +3 [id="cn.soulapp.android:id/cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/13425057',
+        },
+      ],
+    },
   ],
 });
