@@ -22,6 +22,13 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13405483',
           ],
         },
+        {
+          matches: '[id="cn.silent.comic:id/ad_dcloud_main_skip"]',
+          exampleUrls: [
+            'https://m.gkd.li/83610194/94a8ecb5-1124-4090-a1ce-11340a4a76f2',
+          ],
+          snapshotUrls: ['https://i.gkd.li/import/13421452'],
+        },
       ],
     },
   ],
