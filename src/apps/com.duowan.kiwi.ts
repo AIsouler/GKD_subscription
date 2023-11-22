@@ -63,6 +63,12 @@ export default defineAppConfig({
         {
           key: 2,
           matches:
+            '[id="com.duowan.kiwi:id/popup_banner"] >2 [id="com.duowan.kiwi:id/ui_count_down"]',
+          snapshotUrls: ['https://i.gkd.li/import/13417245'],
+        },
+        {
+          key: 3,
+          matches:
             '[id="com.duowan.kiwi:id/miniapp_content_container"] FrameLayout > ViewGroup[childCount=2] > @ViewGroup[clickable=true] > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13401266',
         },
