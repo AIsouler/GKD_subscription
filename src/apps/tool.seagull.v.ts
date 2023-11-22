@@ -18,5 +18,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告',
+      rules: [
+        {
+          key: 0,
+          name: '全屏广告-1',
+          activityIds: 'io.github.trojan_gfw.igniter.MainActivity',
+          matches: [
+            '[id="mys-wrapper"] + View >n Image',
+            '@View[clickable=true] > [text="关闭"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13426255',
+        },
+      ],
+    },
   ],
 });
