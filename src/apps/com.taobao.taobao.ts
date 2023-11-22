@@ -70,11 +70,13 @@ export default defineAppConfig({
       activityIds: [
         'com.taobao.tao.welcome.Welcome',
         'com.taobao.android.order.bundle.TBOrderDetailActivity',
+        'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
       ],
       rules: 'View[text^="开启系统通知"] + Image[clickable=true]',
       snapshotUrls: [
         'https://i.gkd.li/import/13197594', //com.taobao.tao.welcome.Welcome
         'https://i.gkd.li/import/13222946', //com.taobao.android.order.bundle.TBOrderDetailActivity
+        'https://i.gkd.li/import/13438404', //com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
       ],
     },
     {
@@ -119,6 +121,16 @@ export default defineAppConfig({
       activityIds: 'com.taobao.android.detail.wrapper.activity.DetailActivity',
       rules: '[id="com.taobao.taobao:id/update_imageview_cancel_v2"]',
       snapshotUrls: 'https://i.gkd.li/import/13336760',
+    },
+    {
+      enable: false,
+      key: 13,
+      name: '小额免密支付弹窗',
+      desc: '点击关闭',
+      quickFind: true,
+      activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+      rules: '@[text="关闭"] < * <3 * < * + * >3 [text$="小额免密支付"]',
+      snapshotUrls: 'https://i.gkd.li/import/13438414',
     },
   ],
 });
