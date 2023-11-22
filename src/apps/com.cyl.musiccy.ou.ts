@@ -7,47 +7,36 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
-      activityIds: ['com.cyl.musiccy.ou.MainActivity'],
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.cyl.musiccy.ou:id/ksad_splash_circle_skip_view"]',
-          snapshotUrls: 'https://i.gkd.li/import/12775918',
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12775918',
+            'https://i.gkd.li/import/12775926',
+            'https://i.gkd.li/import/13063151',
+            'https://i.gkd.li/import/13063246',
+            'https://i.gkd.li/import/13071599',
+          ],
         },
         {
           matches:
             '[id="com.cyl.musiccy.ou:id/ksad_splash_root_container"] [childCount=3] > @ImageView[clickable=true] - [text="|"]',
           snapshotUrls: ['https://i.gkd.li/import/12775919'],
         },
-        {
-          matches:
-            'FrameLayout > FrameLayout > [text^="跳过 "][text.length<=4][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12775926',
-        },
-        {
-          matches: 'LinearLayout > FrameLayout > TextView[text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13063151',
-        },
-        {
-          matches: 'FrameLayout > LinearLayout > TextView[text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13063246',
-        },
-        {
-          matches:
-            '[id="com.cyl.musiccy.ou:id/ksad_splash_root_container"] [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13071599',
-        },
       ],
     },
     {
       key: 1,
       name: '首页通知',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.cyl.musiccy.ou.MainActivity'],
       rules: [
-        // {
-        //   matches: '[desc="了解更多"] - [desc="我知道了"]',
-        //   snapshotUrls: 'https://i.gkd.li/import/12775920',
-        // },
         {
           matches: '[desc="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/import/13063206',
@@ -58,6 +47,7 @@ export default defineAppConfig({
       key: 2,
       name: '插屏广告',
       matchLauncher: true,
+      actionDelay: 300,
       activityIds: [
         'com.cyl.musiccy.ou.MainActivity',
         'com.sigmob.sdk.base.common.TransparentAdActivity',
@@ -65,6 +55,8 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: 0,
+          quickFind: true,
           matches: '[id="com.cyl.musiccy.ou:id/ksad_container"] [text="跳过"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12775922',
@@ -72,11 +64,14 @@ export default defineAppConfig({
           ],
         },
         {
+          key: 1,
           matches:
             '[id="com.cyl.musiccy.ou:id/ksad_container"] [text="广告"] <2 ViewGroup -2 ViewGroup > @ViewGroup[clickable=true][childCount=1] ImageView',
           snapshotUrls: 'https://i.gkd.li/import/12775923',
         },
         {
+          key: 2,
+          quickFind: true,
           matches: '[id="ad_area"] [id="close_btn"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12775925',
@@ -84,41 +79,28 @@ export default defineAppConfig({
           ],
         },
         {
-          action: 'clickCenter',
+          key: 3,
           matches:
-            '[text^="去"][text$="看看"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
+            'ImageView <n FrameLayout > FrameLayout[index=1] > FrameLayout[index=2] > ImageView',
           snapshotUrls: [
             'https://i.gkd.li/import/12775921',
             'https://i.gkd.li/import/12776903',
-          ],
-        },
-        // 该规则暂时不会遇到
-        // {
-        //   action: 'clickCenter',
-        //   matches:
-        //     'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
-        //   snapshotUrls: 'https://i.gkd.li/import/12789196',
-        // },
-        {
-          action: 'clickCenter',
-          matches:
-            'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: ['https://i.gkd.li/import/12789928'],
-        },
-        {
-          action: 'click',
-          matches:
-            'TextView[text^="摇动"||text^="点击"] <2 LinearLayout < LinearLayout < FrameLayout -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13063249',
-        },
-        {
-          action: 'click',
-          matches:
-            'TextView[text="查看详情"] < FrameLayout  <2 FrameLayout[childCount=2] -n FrameLayout > ImageView',
-          snapshotUrls: [
+            'https://i.gkd.li/import/12789928',
             'https://i.gkd.li/import/13215476',
             'https://i.gkd.li/import/13071595',
           ],
+        },
+        {
+          key: 4,
+          matches:
+            'ImageView <n FrameLayout - FrameLayout > FrameLayout[index=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13063249',
+        },
+        {
+          key: 5,
+          matches:
+            'ImageView <n FrameLayout > FrameLayout[index=0] > FrameLayout FrameLayout > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13422363',
         },
       ],
     },
