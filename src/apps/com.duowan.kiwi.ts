@@ -74,5 +74,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '更新弹窗',
+      enable: false,
+      activityIds: 'com.duowan.kiwi.homepage.Homepage',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@ImageView[id="com.duowan.kiwi:id/upgrade_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/13440833',
+        },
+      ],
+    },
   ],
 });
