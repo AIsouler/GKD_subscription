@@ -1,6 +1,6 @@
 # 大学搜题酱
 
-存在 6 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
+存在 7 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
 
 ## 开屏广告
 
@@ -22,6 +22,7 @@
 - [快照-1](https://i.gkd.li/import/12894813)
 - [快照-2](https://i.gkd.li/import/13345633)
 - [快照-3](https://i.gkd.li/import/13346628)
+- [快照-4](https://i.gkd.li/import/13451304)
 
 ## 资料库-弹窗广告
 
@@ -37,3 +38,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13063373)
+
+## 申请开启推送通知弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13440939)

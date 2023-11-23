@@ -1,6 +1,6 @@
 # 虎牙直播
 
-存在 3 规则组 - [com.duowan.kiwi](/src/apps/com.duowan.kiwi.ts)
+存在 4 规则组 - [com.duowan.kiwi](/src/apps/com.duowan.kiwi.ts)
 
 ## 开屏广告
 
@@ -18,3 +18,9 @@
 - [快照-3](https://i.gkd.li/import/13395606)
 - [快照-4](https://i.gkd.li/import/13417245)
 - [快照-5](https://i.gkd.li/import/13401266)
+
+## 更新弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13440833)
