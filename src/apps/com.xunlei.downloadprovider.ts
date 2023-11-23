@@ -225,12 +225,21 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: 'com.xunlei.downloadprovider.homepage.member',
-          matches: '[id="com.xunlei.downloadprovider:id/close_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12707698',
+          name: '【我的】',
+          activityIds: [
+            'com.xunlei.downloadprovider.homepage.member',
+            'com.xunlei.downloadprovider.frame.MainTabActivity',
+          ],
+          matches:
+            '@[id="com.xunlei.downloadprovider:id/close_btn"] - LinearLayout [text="您的会员已过期"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12707698',
+            'https://i.gkd.li/import/13448909',
+          ],
         },
         {
           key: 1,
+          name: '【下载页】1',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[id="com.xunlei.downloadprovider:id/all_picture_image"] + [id="com.xunlei.downloadprovider:id/close_btn"]',
@@ -238,6 +247,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
+          name: '【下载页】2',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[text="立即开通"] + [id="com.xunlei.downloadprovider:id/close"]',
@@ -245,6 +255,7 @@ export default defineAppConfig({
         },
         {
           key: 3,
+          name: '【首页】',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[text="您的会员已过期"] < LinearLayout +n ImageView[desc="迅雷"]',
