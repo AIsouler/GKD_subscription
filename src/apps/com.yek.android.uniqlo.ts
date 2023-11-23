@@ -22,5 +22,21 @@ export default defineAppConfig({
       rules: 'ImageView[id="com.yek.android.uniqlo:id/pop_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13212320',
     },
+    {
+      key: 2,
+      name: '新版本弹窗',
+      desc: '点击取消',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.yek.android.uniqlo.activity.WelcomeActivity',
+          matches: '@TextView[text=\'取消\'] + TextView[text=\'确定\']',
+          snapshotUrls: 'https://i.gkd.li/import/13446421',
+        },
+      ],
+    },
   ],
 });
