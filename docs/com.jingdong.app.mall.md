@@ -1,6 +1,6 @@
 # 京东
 
-存在 9 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
+存在 10 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
 
 ## 开屏广告
 
@@ -66,3 +66,9 @@
 默认禁用 - 自动点击右上角【x】
 
 - [快照-0](https://i.gkd.li/import/13191146)
+
+## 购物车界面-支付成功广告弹窗
+
+默认禁用 - 自动点击正下方的【x】
+
+- [快照-0](https://i.gkd.li/import/13446362)

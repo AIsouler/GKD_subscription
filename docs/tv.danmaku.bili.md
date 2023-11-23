@@ -1,6 +1,6 @@
 # 哔哩哔哩
 
-存在 10 规则组 - [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts)
+存在 11 规则组 - [tv.danmaku.bili](/src/apps/tv.danmaku.bili.ts)
 
 ## 开屏广告
 
@@ -67,3 +67,7 @@
 
 - [快照-0](https://i.gkd.li/import/13256570)
 - [快照-1](https://i.gkd.li/import/13256605)
+
+## 个性化内容推荐弹窗
+
+- [快照-0](https://i.gkd.li/import/13448905)

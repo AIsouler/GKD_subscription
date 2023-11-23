@@ -1,6 +1,6 @@
 # 拼多多
 
-存在 10 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 11 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 开屏广告
 
@@ -57,3 +57,9 @@
 - [快照-0](https://i.gkd.li/import/13201422)
 - [快照-1](https://i.gkd.li/import/13372677)
 - [快照-2](https://i.gkd.li/import/13205634)
+
+## 多多视频-划到广告自动跳过
+
+默认禁用 - 点击返回自动刷新，从而跳过广告
+
+- [快照-0](https://i.gkd.li/import/13446291)

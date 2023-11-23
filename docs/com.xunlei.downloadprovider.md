@@ -62,6 +62,7 @@
 ## 会员续费广告
 
 - [快照-0](https://i.gkd.li/import/12707698)
-- [快照-1](https://i.gkd.li/import/12882928)
-- [快照-2](https://i.gkd.li/import/12882939)
-- [快照-3](https://i.gkd.li/import/13259268)
+- [快照-1](https://i.gkd.li/import/13448909)
+- [快照-2](https://i.gkd.li/import/12882928)
+- [快照-3](https://i.gkd.li/import/12882939)
+- [快照-4](https://i.gkd.li/import/13259268)
