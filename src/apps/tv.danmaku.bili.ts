@@ -187,5 +187,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 11,
+      name: '个性化内容推荐弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
+      rules:
+        '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
+      snapshotUrls: 'https://i.gkd.li/import/13448905',
+    },
   ],
 });
