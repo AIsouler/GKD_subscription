@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.weihudashi.activity.AdvertisementActivity'],
+      actionMaximum: 1,
+      matchTime: 10000,
+      quickFind: true,
+      resetMatch: 'app',
       rules: [
         {
           matches:
