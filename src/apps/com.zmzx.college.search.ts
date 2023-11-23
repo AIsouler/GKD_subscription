@@ -42,6 +42,8 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: 0,
+          name: '腾讯广告',
           quickFind: true,
           matches: 'ImageView[id="com.zmzx.college.search:id/iv_close"]',
           snapshotUrls: [
@@ -51,10 +53,20 @@ export default defineAppConfig({
           ],
         },
         {
-          name: '教材界面',
+          key: 1,
+          name: '快手广告-1',
           matches:
             '[text="广告"] <2 ViewGroup -3 ViewGroup > @ViewGroup[clickable=true] > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13346628',
+        },
+        {
+          key: 2,
+          name: '快手广告-2',
+          matches: [
+            'ViewGroup > ViewGroup > ViewGroup[childCount=2] > ImageView + [text="广告"]',
+            'ViewGroup > ViewGroup > ViewGroup[childCount=1] > ImageView[childCount=0]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13451304',
         },
       ],
     },
