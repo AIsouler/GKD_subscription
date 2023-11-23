@@ -42,6 +42,13 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13416979',
           ],
         },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.magicalstory.AppStore.main.MainActivity',
+          matches: '[id="com.magicalstory.AppStore:id/button_close_ad"]',
+          snapshotUrls: 'https://i.gkd.li/import/13443417',
+        },
       ],
     },
     {
