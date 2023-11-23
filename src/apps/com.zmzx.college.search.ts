@@ -97,5 +97,20 @@ export default defineAppConfig({
       rules: '[id="com.zmzx.college.search:id/update_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13063373',
     },
+    {
+      key: 6,
+      name: '申请开启推送通知弹窗',
+      enable: false,
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          matches:
+            '[text="开启推送通知"] - [id="com.zmzx.college.search:id/siv_dialog_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13440939',
+        },
+      ],
+    },
   ],
 });
