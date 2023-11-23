@@ -157,5 +157,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 10,
+      name: '多多视频-划到广告自动跳过',
+      desc: '点击返回自动刷新，从而跳过广告',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '@ImageView[desc=\'返回\'] -3 ViewPager >19 TextView[text=\'正在直播\']',
+          snapshotUrls: 'https://i.gkd.li/import/13446291',
+        },
+      ],
+    },
   ],
 });
