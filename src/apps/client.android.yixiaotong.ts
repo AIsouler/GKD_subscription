@@ -46,5 +46,18 @@ export default defineAppConfig({
       rules: 'ImageView - FrameLayout - FrameLayout > ImageView',
       snapshotUrls: 'https://i.gkd.li/import/13055542',
     },
+    {
+      key: 3,
+      name: '底部卡片广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      activityIds:
+        'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
+      rules:
+        '@TextView[clickable=true][text=""] + View [text="广告"] <<n [id="client.android.yixiaotong:id/ksad_container"]',
+      snapshotUrls: 'https://i.gkd.li/import/13448963',
+    },
   ],
 });
