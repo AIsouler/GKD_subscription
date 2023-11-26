@@ -67,10 +67,12 @@ export default defineAppConfig({
       key: 8,
       name: '开启系统通知提示',
       desc: '自动点击关闭',
+      actionMaximum: 1,
       activityIds: [
         'com.taobao.tao.welcome.Welcome',
         'com.taobao.android.order.bundle.TBOrderDetailActivity',
         'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
+        'com.taobao.tao.TBMainActivity',
       ],
       rules: '[text^="开启系统通知"] + Image[clickable=true]',
       snapshotUrls: [
@@ -78,6 +80,7 @@ export default defineAppConfig({
         'https://i.gkd.li/import/13222946', //com.taobao.android.order.bundle.TBOrderDetailActivity
         'https://i.gkd.li/import/13438404', //com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
         'https://i.gkd.li/import/13446901',
+        'https://i.gkd.li/import/13455424', //com.taobao.tao.TBMainActivity
       ],
     },
     {
