@@ -16,8 +16,13 @@
 - [快照-4](https://i.gkd.li/import/13202990)
 - [快照-5](https://i.gkd.li/import/13266356)
 - [快照-6](https://i.gkd.li/import/13266362)
-- [快照-7](https://i.gkd.li/import/13266689)
-- [快照-8](https://i.gkd.li/import/13068819)
+- [快照-7](https://i.gkd.li/import/13457114)
+- [快照-8](https://i.gkd.li/import/13457204)
+- [快照-9](https://i.gkd.li/import/13266689)
+- [快照-10](https://i.gkd.li/import/13457210)
+- [快照-11](https://i.gkd.li/import/13457302)
+- [快照-12](https://i.gkd.li/import/13068819)
+- [快照-13](https://i.gkd.li/import/13457380)
 
 ## 升级弹窗
 

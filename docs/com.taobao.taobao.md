@@ -29,6 +29,7 @@
 - [快照-1](https://i.gkd.li/import/13222946)
 - [快照-2](https://i.gkd.li/import/13438404)
 - [快照-3](https://i.gkd.li/import/13446901)
+- [快照-4](https://i.gkd.li/import/13455424)
 
 ## 各级页面-添加到首页弹窗
 

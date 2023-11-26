@@ -8,6 +8,7 @@
 - [快照-1](https://i.gkd.li/import/12846496)
 - [快照-2](https://i.gkd.li/import/12868232)
 - [快照-3](https://i.gkd.li/import/13197417)
+- [快照-4](https://i.gkd.li/import/13458588)
 
 ## 弹窗广告
 
@@ -28,6 +29,7 @@
 - [快照-14](https://i.gkd.li/import/13259196)
 - [快照-15](https://i.gkd.li/import/13259198)
 - [快照-16](https://i.gkd.li/import/13259183)
+- [快照-17](https://i.gkd.li/import/13458692)
 
 ## 首页-右侧浮窗广告
 

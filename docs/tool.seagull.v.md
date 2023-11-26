@@ -6,6 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/13413556)
 
-## 全屏广告
+## 谷歌广告
 
 - [快照-0](https://i.gkd.li/import/13426255)
+- [快照-1](https://i.gkd.li/import/13459399)

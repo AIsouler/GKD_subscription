@@ -1,6 +1,6 @@
 # 奇妙应用
 
-存在 3 规则组 - [com.magicalstory.AppStore](/src/apps/com.magicalstory.AppStore.ts)
+存在 4 规则组 - [com.magicalstory.AppStore](/src/apps/com.magicalstory.AppStore.ts)
 
 ## 开屏广告
 
@@ -17,3 +17,7 @@
 ## 公告
 
 - [快照-0](https://i.gkd.li/import/13437553)
+
+## 更新弹窗
+
+- [快照-0](https://i.gkd.li/import/13459373)

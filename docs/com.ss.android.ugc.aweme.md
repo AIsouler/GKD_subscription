@@ -4,7 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/13216121)
+- [快照-0](https://i.gkd.li/import/13460370)
+- [快照-1](https://i.gkd.li/import/13216121)
 
 ## 关闭青少年弹窗
 

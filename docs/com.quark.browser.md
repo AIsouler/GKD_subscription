@@ -15,6 +15,7 @@
 点击取消
 
 - [快照-0](https://i.gkd.li/import/13292512)
+- [快照-1](https://i.gkd.li/import/13455360)
 
 ## 弹窗广告
 
