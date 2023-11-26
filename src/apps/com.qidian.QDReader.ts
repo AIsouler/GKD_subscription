@@ -7,25 +7,23 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.qidian.QDReader.ui.activity.SplashADActivity',
-        'com.qidian.QDReader.ui.activity.SplashImageActivity',
-      ],
-      rules: 'Button[text^=`跳过`]',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text^="跳过"][text.length<=10]',
       snapshotUrls: ['https://i.gkd.li/import/12508836'],
     },
     {
       key: 1,
       name: '更新弹窗',
       quickFind: true,
-      activityIds: [
-        'com.qidian.QDReader.framework.widget.dialog.judian',
-        'com.tencent.upgrade.ui.UpgradeDialogActivity',
-      ],
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches:
-            'TextView[text$="新版本"] +(2) RelativeLayout >(4) TextView[text="以后再说"]',
+            '[text$="新版本"] +2 * >2 [id="com.qidian.QDReader:id/cancel"]',
           snapshotUrls: ['https://i.gkd.li/import/12641026'],
         },
         {
@@ -37,11 +35,9 @@ export default defineAppConfig({
     {
       key: 2,
       name: '青少年模式弹窗',
-      activityIds: [
-        'com.qidian.QDReader.bll.helper.z0',
-        'com.qidian.QDReader.ui.activity.MainGroupActivity',
-        'com.qidian.QDReader.framework.widget.dialog.judian',
-      ],
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules:
         '[id="com.qidian.QDReader:id/btnEnterTeen"] + [id="com.qidian.QDReader:id/btnCancel"]',
       snapshotUrls: [
@@ -67,21 +63,36 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
-      name: '系统推送提示信息',
+      name: '请求通知权限提示信息',
       desc: '点击顶部提醒左侧x按钮',
-      activityIds: ['com.afollestad.materialdialogs.MaterialDialog'],
+      quickFind: true,
+      activityIds: 'com.afollestad.materialdialogs.MaterialDialog',
       rules: '@[id="com.qidian.QDReader:id/ivClose"] + [text^="开启推送"]',
-      snapshotUrls: ['https://i.gkd.li/import/12640242'],
+      snapshotUrls: 'https://i.gkd.li/import/12640242',
     },
     {
       key: 5,
-      name: '右侧悬浮广告',
-      activityIds: ['com.qidian.QDReader.ui.activity.MainGroupActivity'],
-      rules:
-        '[id="com.qidian.QDReader:id/ivAd"] + [id="com.qidian.QDReader:id/ivAdClose"]',
-      snapshotUrls: ['https://i.gkd.li/import/12717032'],
+      name: '悬浮广告',
+      rules: [
+        {
+          key: 0,
+          name: '书架页面右侧悬浮广告',
+          activityIds: 'com.qidian.QDReader.ui.activity.MainGroupActivity',
+          quickFind: true,
+          matches:
+            '[id="com.qidian.QDReader:id/ivAd"] + [id="com.qidian.QDReader:id/ivAdClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/12717032',
+        },
+        {
+          key: 1,
+          name: '详情页右侧悬浮广告',
+          activityIds: 'com.qidian.QDReader.ui.activity.QDBookDetailActivity',
+          matches:
+            '[id="com.qidian.QDReader:id/floatingView"] + [id="com.qidian.QDReader:id/ivAdClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/13459031',
+        },
+      ],
     },
     {
       enable: false,
