@@ -324,14 +324,23 @@ export default defineAppConfig({
       enable: false,
       key: 13,
       name: '提瓦特助手小程序-弹窗广告',
-      activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
+      activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
       rules: [
         {
+          key: 0,
           matches: [
             'RelativeLayout[childCount=1][clickable=true] > [text="提瓦特小助手"]',
             'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/12926021'],
+          snapshotUrls: 'https://i.gkd.li/import/12926021',
+        },
+        {
+          key: 1,
+          matches: [
+            'FrameLayout > FrameLayout > FrameLayout > TextView[text="广告"]',
+            'FrameLayout[childCount=6] + FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13459614',
         },
       ],
     },
