@@ -29,6 +29,12 @@ export default defineAppConfig({
           matches: '[id="com.xyhui:id/ms_skipView"]',
           snapshotUrls: ['https://i.gkd.li/import/13197417'],
         },
+        {
+          key: 3,
+          name: '开屏广告-3',
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: ['https://i.gkd.li/import/13458588'],
+        },
       ],
     },
     {
@@ -111,6 +117,13 @@ export default defineAppConfig({
             '[desc^="webview-close"] > View',
           ],
           snapshotUrls: 'https://i.gkd.li/import/13259183',
+        },
+        {
+          key: 7,
+          name: '美数广告',
+          activityIds: 'com.meishu.sdk.activity.SdkInterstitialActivity',
+          matches: ['[id="com.xyhui:id/ms_activity_sdk_interstitial_cacel"]'],
+          snapshotUrls: 'https://i.gkd.li/import/13458692',
         },
       ],
     },
