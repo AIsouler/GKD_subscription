@@ -14,5 +14,16 @@ export default defineAppConfig({
       rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: 'https://i.gkd.li/import/13426833',
     },
+    {
+      key: 1,
+      name: '弹窗广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules:
+        'FrameLayout[childCount=3] + FrameLayout[childCount=1][index=1] > ImageView',
+      snapshotUrls: 'https://i.gkd.li/import/13463241',
+    },
   ],
 });
