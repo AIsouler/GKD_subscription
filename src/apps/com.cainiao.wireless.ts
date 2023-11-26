@@ -8,14 +8,24 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      activityIds: 'com.cainiao.wireless.homepage.view.activity.AdsActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          key: 0,
+          name: '开屏广告-1',
           matches: '[text^="跳过"][text.length<=4]',
           snapshotUrls: [
             'https://i.gkd.li/import/12901758',
             'https://i.gkd.li/import/12724823',
           ],
+        },
+        {
+          key: 1,
+          name: '开屏广告-2',
+          matches: '[id="com.cainiao.wireless:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13459538',
         },
       ],
     },
