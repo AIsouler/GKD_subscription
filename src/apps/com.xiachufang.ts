@@ -50,6 +50,14 @@ export default defineAppConfig({
             '[id="com.xiachufang:id/jad_feed_close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13363079',
         },
+        {
+          key: 3,
+          name: '菜谱底部卡片广告-1-弹出窗口',
+          activityIds: 'com.xiachufang.activity.recipe.RecipeDetailActivity',
+          quickFind: true,
+          matches: '[id="com.byted.pangle:id/tt_item_tv"][text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/import/13454534',
+        },
       ],
     },
     {
