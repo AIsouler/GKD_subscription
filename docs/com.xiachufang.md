@@ -12,6 +12,7 @@
 
 - [快照-0](https://i.gkd.li/import/13348710)
 - [快照-1](https://i.gkd.li/import/13363079)
+- [快照-2](https://i.gkd.li/import/13454534)
 
 ## 厨房问卷
 

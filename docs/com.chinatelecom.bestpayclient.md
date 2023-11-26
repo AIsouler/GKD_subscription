@@ -13,6 +13,8 @@
 ## 广告弹窗
 
 - [快照-0](https://i.gkd.li/import/13402692)
+- [快照-1](https://i.gkd.li/import/13455790)
+- [快照-2](https://i.gkd.li/import/13455929)
 
 ## 悬浮窗小广告
 

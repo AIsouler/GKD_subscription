@@ -125,6 +125,7 @@ NT QQ 登录时自动点击允许登录QQ
 
 - [快照-0](https://i.gkd.li/import/13188721)
 - [快照-1](https://i.gkd.li/import/13386719)
+- [快照-2](https://i.gkd.li/import/13459507)
 
 ## 消息页面-顶部更新提示
 

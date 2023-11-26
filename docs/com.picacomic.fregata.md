@@ -1,6 +1,6 @@
 # PicACG
 
-存在 4 规则组 - [com.picacomic.fregata](/src/apps/com.picacomic.fregata.ts)
+存在 5 规则组 - [com.picacomic.fregata](/src/apps/com.picacomic.fregata.ts)
 
 ## 开屏广告
 
@@ -33,3 +33,9 @@
 
 - [快照-0](https://i.gkd.li/import/13422844)
 - [快照-1](https://i.gkd.li/import/13422874)
+
+## 流量提醒弹窗
+
+默认禁用 - 弹出流量提醒弹窗时自动点击“确定”
+
+- [快照-0](https://i.gkd.li/import/13466492)
