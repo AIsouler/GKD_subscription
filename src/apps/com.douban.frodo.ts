@@ -12,7 +12,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
+      rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/12505151',
         'https://i.gkd.li/import/12505152',
@@ -20,13 +20,30 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 1,
-      name: '不同步到我的动态',
-      desc: '标记看过时，不同步到我的动态',
       enable: false,
+      key: 1,
+      name: '不分享/同步作品短评',
+      desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
+      quickFind: true,
+      matchTime: 5000,
+      resetMatch: 'activity',
       activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
-      rules: '[id="com.douban.frodo:id/check_status"][checked=true]',
-      snapshotUrls: ['https://i.gkd.li/import/12508777'],
+      rules: [
+        {
+          key: 0,
+          name: '不分享到微信、微博',
+          matches:
+            '@LinearLayout > [id="com.douban.frodo:id/check_weibo_wechat"][visibleToUser=true][checked=true]',
+          snapshotUrls: ['https://i.gkd.li/import/12508777'],
+        },
+        {
+          key: 1,
+          name: '不同步到动态',
+          matches:
+            '@LinearLayout > [id="com.douban.frodo:id/check_status"][visibleToUser=true][checked=true]',
+          snapshotUrls: ['https://i.gkd.li/import/12508777'],
+        },
+      ],
     },
     {
       key: 2,
