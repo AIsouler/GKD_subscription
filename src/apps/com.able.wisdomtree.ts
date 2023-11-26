@@ -25,7 +25,18 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.able.wisdomtree.widget.MyAlertDialog',
       rules: 'TextView[id="com.able.wisdomtree:id/negativeButton"]',
-      snapshotUrls: 'https://i.gkd.li/import/12909620',
+      snapshotUrls: 'https://i.gkd.li/import/13458779',
+    },
+    {
+      enable: false,
+      key: 3,
+      name: '升级提醒',
+      desc: '自动点击忽略。',
+      quickFind: true,
+      activityIds:
+        'com.example.advertisement_business.advertisement.AdvertisementActivity',
+      rules: '[text="更新"] -n [text="忽略"]',
+      snapshotUrls: 'https://i.gkd.li/import/13458796',
     },
   ],
 });
