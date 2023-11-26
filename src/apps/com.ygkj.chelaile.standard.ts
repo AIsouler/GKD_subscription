@@ -7,10 +7,11 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
+      rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/13062992',
         'https://i.gkd.li/import/13225111', //无ID
@@ -19,12 +20,16 @@ export default defineAppConfig({
     {
       key: 1,
       name: '应用内广告卡片',
-      activityIds: 'dev.xesam.chelaile.app.module.func.SplashActivity',
+      activityIds: [
+        'dev.xesam.chelaile.app.module.func.SplashActivity',
+        'dev.xesam.chelaile.app.module.PanelHostActivity',
+      ],
       rules:
         'ImageView[id^="com.ygkj.chelaile.standard:id/cll_all_pic_close"][visibleToUser=true]',
       snapshotUrls: [
         'https://i.gkd.li/import/13062991',
         'https://i.gkd.li/import/13062984',
+        'https://i.gkd.li/import/13464325',
       ],
     },
   ],
