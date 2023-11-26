@@ -307,14 +307,13 @@ export default defineAppConfig({
     {
       key: 17,
       name: '更新弹窗',
-      activityIds: [
-        'com.tencent.mobileqq.upgrade',
-        'com.tencent.mobileqq.activity.SplashActivity',
-      ],
-      rules: '@[desc="关闭"] - ViewGroup > [text="发现新版本"]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '@[desc="关闭"] - ViewGroup > [text="立即体验"||text="立即升级"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13188721',
         'https://i.gkd.li/import/13386719',
+        'https://i.gkd.li/import/13459507',
       ],
     },
     {
