@@ -67,5 +67,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '更新弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules:
+        '[id="com.magicalstory.AppStore:id/tv_update"] <2 * + * > [id="com.magicalstory.AppStore:id/iv_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13459373',
+    },
   ],
 });
