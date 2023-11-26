@@ -31,6 +31,7 @@ export default defineAppConfig({
       activityIds: [
         'com.ss.android.mine.BaseSettingActivity',
         'com.ss.android.article.base.feature.ugc.story.StoryVideoActivity',
+        'com.ss.android.article.news.activity.MainActivity',
       ],
       rules: [
         {
@@ -39,6 +40,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12685000',
             'https://i.gkd.li/import/12840104',
             'https://i.gkd.li/import/13316081',
+            'https://i.gkd.li/import/13458927',
           ],
         },
       ],
