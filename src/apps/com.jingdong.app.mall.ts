@@ -141,6 +141,20 @@ export default defineAppConfig({
     },
     {
       enable: false,
+      key: 7,
+      name: '首页弹窗-打开通知',
+      desc: '自动点击正下方的【x】',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: '[id="com.jingdong.app.mall:id/btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13463618',
+        },
+      ],
+    },
+    {
+      enable: false,
       key: 10,
       name: '京东账号登录授权',
       desc: '自动点击【确认登录】',
