@@ -89,5 +89,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 5,
+      name: '流量提醒弹窗',
+      desc: '弹出流量提醒弹窗时自动点击“确定”',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      activityIds: 'com.picacomic.fregata.activities.ComicViewerActivity',
+      rules: [
+        {
+          matches:
+            'RelativeLayout > Button[text="確定"][id="com.picacomic.fregata:id/button_dialog_custom_positive"]',
+          snapshotUrls: 'https://i.gkd.li/import/13466492',
+        },
+      ],
+    },
   ],
 });
