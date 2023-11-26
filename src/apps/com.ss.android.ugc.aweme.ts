@@ -10,8 +10,19 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc="跳过广告"]',
-      snapshotUrls: 'https://i.gkd.li/import/13216121',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: 'https://i.gkd.li/import/13460370',
+        },
+        {
+          actionMaximumKey: 0,
+          matches: '[desc="跳过广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13216121',
+        },
+      ],
     },
     {
       key: 0,
