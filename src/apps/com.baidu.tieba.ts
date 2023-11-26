@@ -49,6 +49,7 @@ export default defineAppConfig({
         'com.baidu.tieba.pb.pb.main.PbActivity',
         'com.baidu.tieba.frs.FrsActivity',
         'com.baidu.tieba.tblauncher.MainTabActivity',
+        'com.baidu.tieba.forum.ForumActivity',
       ],
       rules: [
         {
@@ -69,6 +70,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12775916',
             'https://i.gkd.li/import/12775892', // 指定点击目标为具备 clickable=true 属性的 @FrameLayout，防止在这个快照误触点击收藏
             'https://i.gkd.li/import/13328300', // 指定点击目标为具备 desc=null 属性的 @FrameLayout，防止在这个快照误触点击【更多】
+            'https://i.gkd.li/import/13459289',
           ],
         },
         {
