@@ -56,20 +56,19 @@ export default defineAppConfig({
           key: 0,
           name: '点击广告【x】',
           matches: [
-            // 'TextView[text$="广告"]',
-            'RelativeLayout > TextView[clickable=true][text$="广告"]',
-            // 'LinearLayout[childCount=1] > @FrameLayout[clickable=true][childCount=1][visibleToUser=true] > ImageView',
-            'LinearLayout[childCount=1] > @FrameLayout[clickable=true][childCount=1][desc=null] > ImageView',
+            'RelativeLayout > TextView[text$="广告"][clickable=true]',
+            'LinearLayout[clickable=true][childCount=1] > @FrameLayout[clickable=true][childCount=1][desc=null] > ImageView',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/12775930',
-            'https://i.gkd.li/import/12840951',
             'https://i.gkd.li/import/12775913', // 此3条应算卡片式广告
             'https://i.gkd.li/import/13043133', // 此3条应算卡片式广告
             'https://i.gkd.li/import/13054256', // 此3条应算卡片式广告
+            'https://i.gkd.li/import/12775930',
+            'https://i.gkd.li/import/12840951',
             'https://i.gkd.li/import/12775916',
             'https://i.gkd.li/import/12775892', // 指定点击目标为具备 clickable=true 属性的 @FrameLayout，防止在这个快照误触点击收藏
             'https://i.gkd.li/import/13328300', // 指定点击目标为具备 desc=null 属性的 @FrameLayout，防止在这个快照误触点击【更多】
+            'https://i.gkd.li/import/13402610', // 指定LinearLayout[clickable=true] 、 activityIds: 'com.baidu.tieba.forum.ForumActivity',
             'https://i.gkd.li/import/13459289',
           ],
         },
