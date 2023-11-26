@@ -22,5 +22,15 @@ export default defineAppConfig({
       rules: '@[desc="关闭"] - LinearLayout > [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/import/13328430',
     },
+    {
+      key: 2,
+      name: '通知弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules:
+        '@TextView[id="com.ss.android.article.video:id/sj"][text="暂不开启"]',
+      snapshotUrls: 'https://i.gkd.li/import/13456568',
+    },
   ],
 });
