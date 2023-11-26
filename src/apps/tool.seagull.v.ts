@@ -20,17 +20,23 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '谷歌广告',
       rules: [
         {
           key: 0,
-          name: '全屏广告-1',
-          activityIds: 'io.github.trojan_gfw.igniter.MainActivity',
+          name: '谷歌广告-1',
+          activityIds: [
+            'io.github.trojan_gfw.igniter.MainActivity',
+            'com.google.android.gms.ads.AdActivity',
+          ],
           matches: [
             '[id="mys-wrapper"] + View >n Image',
             '@View[clickable=true] > [text="关闭"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13426255',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13426255',
+            'https://i.gkd.li/import/13459399',
+          ],
         },
       ],
     },
