@@ -11,8 +11,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.psychiatrygarden.activity.online.AnswerQuestionActivity',
+      activityIds: 'com.psychiatrygarden.activity.HomePageNewActivity',
       rules: [
         {
           matches: '@ImageView[id="com.yikaobang.yixue:id/close"]',
