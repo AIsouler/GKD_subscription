@@ -78,5 +78,33 @@ export default defineAppConfig({
       },
       snapshotUrls: ['https://i.gkd.li/import/12640287'],
     },
+    {
+      enable: false,
+      key: 5,
+      name: '【字节】视频广告',
+      desc: '此规则有概率误触或失效，请谨慎选择开启。',
+      activityIds:
+        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          name: '点击跳过',
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13459157',
+            'https://i.gkd.li/import/13459172',
+            'https://i.gkd.li/import/13459174',
+          ],
+        },
+        {
+          key: 1,
+          name: '点击叉号',
+          matches:
+            '[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13459182',
+        },
+      ],
+    },
   ],
 });
