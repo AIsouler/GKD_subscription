@@ -8,9 +8,10 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      activityIds: 'com.tencent.qqsports.ui.SplashActivity',
-      rules:
-        '[id="com.tencent.qqsports:id/splash_activity_ad"] >5 [text="跳过"]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: 'https://i.gkd.li/import/12845494',
     },
   ],
