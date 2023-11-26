@@ -88,13 +88,13 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12648987',
     },
     {
-      enable: false,
       key: 6,
-      name: '更新提醒弹窗',
+      name: '更新弹窗',
       quickFind: true,
-      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[text="立即更新"] -n [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
-      snapshotUrls: ['https://i.gkd.li/import/12863984'],
+      snapshotUrls: 'https://i.gkd.li/import/12863984',
     },
     {
       key: 7,
