@@ -54,7 +54,8 @@ export default defineAppConfig({
       key: 3,
       name: '右侧悬浮广告',
       quickFind: true,
-      actionMaximum: 1,
+      matchTime: 10000,
+      actionMaximum: 2, // 目前只有2个界面会分别弹悬浮窗
       resetMatch: 'app',
       rules: [
         {
