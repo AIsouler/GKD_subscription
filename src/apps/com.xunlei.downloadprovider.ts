@@ -9,19 +9,23 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      activityIds: 'com.xunlei.downloadprovider.launch.LaunchActivity',
-      rules: 'TextView[text^="跳过"]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text^="跳过"][text.length<=10]',
       snapshotUrls: 'https://i.gkd.li/import/12707693',
     },
     {
       key: 1,
       name: '视频详情页广告',
       quickFind: true,
-      activityIds:
-        'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
       rules: [
         {
           key: 0,
+          name: '点击右上角x按钮',
+          activityIds:
+            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
+          quickFind: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
           snapshotUrls: 'https://i.gkd.li/import/12707701',
@@ -29,7 +33,12 @@ export default defineAppConfig({
         {
           preKeys: [0],
           key: 1,
-          activityIds: 'com.xunlei.downloadprovider.feedback.view',
+          name: '点击不感兴趣',
+          activityIds: [
+            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
+            'com.xunlei.downloadprovider.feedback.view',
+          ],
+          quickFind: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
           snapshotUrls: [
@@ -39,12 +48,18 @@ export default defineAppConfig({
         },
         {
           key: 2,
+          name: '点击关闭按钮',
           activityIds: 'com.xunlei.downloadprovider.feedback.view',
+          quickFind: true,
           matches: '[id="com.xunlei.downloadprovider:id/ad_ima_skip"]',
           snapshotUrls: 'https://i.gkd.li/import/12882988',
         },
         {
           key: 3,
+          name: '点击右上角x按钮',
+          activityIds:
+            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
+          quickFind: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/play_detail_ad_title"] + [id="com.xunlei.downloadprovider:id/close_iv"]',
           snapshotUrls: 'https://i.gkd.li/import/13228423',
