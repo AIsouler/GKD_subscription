@@ -8,7 +8,10 @@ export default defineAppConfig({
       enable: false,
       key: 1,
       name: '请求开启反恶意软件提示弹窗',
-      activityIds: 'pl.solidexplorer.SolidExplorer',
+      activityIds: [
+        'pl.solidexplorer.SolidExplorer',
+        'com.android.packageinstaller.activity.InstallerActivity',
+      ],
       rules: [
         {
           key: 0,
