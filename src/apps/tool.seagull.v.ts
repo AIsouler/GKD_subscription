@@ -38,6 +38,23 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13459399',
           ],
         },
+        {
+          key: 1,
+          name: '谷歌广告-2',
+          activityIds: 'com.google.android.gms.ads.AdActivity',
+          matches: [
+            '[id="mys-wrapper"] + View >n Image',
+            '[id="mys-wrapper"] >n View > View > Button',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13476799',
+        },
+        {
+          key: 2,
+          name: '谷歌广告-3',
+          activityIds: 'com.google.android.gms.ads.AdActivity',
+          matches: '[desc="Interstitial close button"]',
+          snapshotUrls: 'https://i.gkd.li/import/13476579',
+        },
       ],
     },
   ],
