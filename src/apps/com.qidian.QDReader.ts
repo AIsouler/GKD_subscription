@@ -53,6 +53,7 @@ export default defineAppConfig({
         'com.qidian.QDReader.ui.activity.MainGroupActivity',
         'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
         'com.qidian.QDReader.framework.widget.dialog.judian',
+        'com.qidian.QDReader.ui.activity.BookLastPageNewActivity',
       ],
       rules:
         '[id="com.qidian.QDReader:id/imgBKT"] + [id="com.qidian.QDReader:id/imgClose"]',
@@ -60,6 +61,7 @@ export default defineAppConfig({
         'https://i.gkd.li/import/12640195',
         'https://i.gkd.li/import/12640158',
         'https://i.gkd.li/import/12818198',
+        'https://i.gkd.li/import/13469004', // .ui.activity.BookLastPageNewActivity
       ],
     },
     {
