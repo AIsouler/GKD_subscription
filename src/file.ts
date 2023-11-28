@@ -1,9 +1,14 @@
 import _ from 'lodash';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { parseSelector } from './selector';
 import type PkgT from '../package.json';
-import type { AppConfig, IArray, SubscriptionConfig } from './types';
+import { parseSelector } from './selector';
+import type {
+  AppConfig,
+  GroupConfig,
+  IArray,
+  SubscriptionConfig,
+} from './types';
 
 const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
   return Array<T>().concat(array);
@@ -312,20 +317,104 @@ export const updateAppMd = async (app: AppConfig) => {
   const appMdText = [appHeadMdText, groupMdText].join('\n\n').trim() + '\n';
   await fs.writeFile(process.cwd() + `/docs/${app.id}.md`, appMdText, 'utf-8');
 };
+
+const getAppDiffLog = (
+  oldGroups: GroupConfig[] = [],
+  newGroups: GroupConfig[] = [],
+) => {
+  const removeGroups = oldGroups.filter(
+    (og) => !newGroups.find((ng) => ng.key == og.key),
+  );
+  const addGroups: GroupConfig[] = [];
+  const changeGroups: GroupConfig[] = [];
+  newGroups.forEach((ng) => {
+    const oldGroup = oldGroups.find((og) => og.key == ng.key);
+    if (oldGroup) {
+      if (!_.isEqual(oldGroup, ng)) {
+        changeGroups.push(ng);
+      }
+    } else {
+      addGroups.push(ng);
+    }
+  });
+  return {
+    addGroups,
+    changeGroups,
+    removeGroups,
+  };
+};
+
+type AppDiff = {
+  app: AppConfig;
+  addGroups: GroupConfig[];
+  changeGroups: GroupConfig[];
+  removeGroups: GroupConfig[];
+};
+
 export const updateReadMeMd = async (
   newConfig: SubscriptionConfig,
   oldConfig: SubscriptionConfig,
 ) => {
   let changeCount = 0;
+  const appDiffs: AppDiff[] = [];
   await Promise.all(
     newConfig.apps.map(async (app) => {
       const oldApp = oldConfig.apps.find((a) => a.id == app.id);
       if (!_.isEqual(oldApp, app)) {
-        await updateAppMd(app);
         changeCount++;
+        await updateAppMd(app);
+        const diffLog = getAppDiffLog(oldApp?.groups, app.groups);
+        if (
+          diffLog.addGroups.length +
+            diffLog.changeGroups.length +
+            diffLog.removeGroups.length >
+          0
+        ) {
+          appDiffs.push({ app, ...diffLog });
+        }
       }
     }),
   );
+  if (appDiffs.length > 0) {
+    const addGroupsCount = appDiffs.reduce((p, c) => p + c.addGroups.length, 0);
+    const changeGroupsCount = appDiffs.reduce(
+      (p, c) => p + c.changeGroups.length,
+      0,
+    );
+    const removeGroupsCount = appDiffs.reduce(
+      (p, c) => p + c.removeGroups.length,
+      0,
+    );
+    const changeLogText =
+      [
+        '# v' + newConfig.version,
+        [
+          `更新 ${appDiffs.length} 应用`,
+          addGroupsCount ? `新增 ${addGroupsCount} 规则` : '',
+          changeGroupsCount ? `变动 ${changeGroupsCount} 规则` : '',
+          removeGroupsCount ? `移除 ${removeGroupsCount} 规则` : '',
+        ]
+          .filter((s) => s)
+          .join(',\x20'),
+        '## 更新详情',
+        '|APP|新增|变动|移除|\n|-|-|-|-|\n' +
+          appDiffs
+            .map((a) =>
+              [
+                '',
+                a.app.name,
+                a.addGroups.map((g) => '<li>' + g.name).join(''),
+                a.changeGroups.map((g) => '<li>' + g.name).join(''),
+                a.removeGroups.map((g) => '<li>' + g.name).join(''),
+                '',
+              ].join('|'),
+            )
+            .join('\n'),
+      ].join('\n\n') + '\n';
+
+    await fs.writeFile(process.cwd() + '/CHANGELOG.md', changeLogText);
+  }
+
   if (changeCount <= 0) return;
   console.log('更新文档: ' + changeCount);
 

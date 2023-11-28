@@ -164,7 +164,7 @@ export type AppConfigMudule = {
   default: AppConfig;
 };
 
-type GroupConfig = {
+export type GroupConfig = {
   /**
    * 当前规则组在列表中的唯一标识\
    * 也是客户端禁用/启用此规则组的依据
