@@ -98,11 +98,43 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '点击叉号',
+          name: '点击【x】',
           quickFind: true,
           matches:
             '[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13459182',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 6,
+      name: '【百度】全屏广告',
+      desc: '此规则有概率误触或失效，请谨慎选择开启。',
+      activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击【x】',
+          matches:
+            'RelativeLayout > RelativeLayout + ImageView + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13472957',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 7,
+      name: '【腾讯】全屏广告',
+      desc: '此规则有概率误触或失效，请谨慎选择开启。',
+      activityIds: 'com.qq.e.ads.PortraitADActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击【x】',
+          matches:
+            'FrameLayout[childCount=10] > FrameLayout[index=3] > FrameLayout > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13472955',
         },
       ],
     },
