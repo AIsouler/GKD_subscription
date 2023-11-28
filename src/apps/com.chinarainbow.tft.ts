@@ -11,8 +11,16 @@ export default defineAppConfig({
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: [
         {
+          key: 0,
           matches: 'Image[text=""] < @View +4 [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/import/13269854',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches:
+            '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13468554',
         },
       ],
     },
