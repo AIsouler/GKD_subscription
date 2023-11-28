@@ -77,8 +77,16 @@ export default defineAppConfig({
             '[id="me.ele:id/id_magex_mistview"][childCount=2] > ImageView + ImageView[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12726709',
-            'https://i.gkd.li/import/13362878',
+            'https://i.gkd.li/import/13476719',
           ],
+        },
+        {
+          key: 2,
+          name: '全能超市-活动弹窗',
+          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+          matches:
+            '[id="me.ele:id/fl_render_e_shop"] + FrameLayout >n ViewGroup[childCount=6] > View[index=5]',
+          snapshotUrls: 'https://i.gkd.li/import/13476611',
         },
       ],
     },
