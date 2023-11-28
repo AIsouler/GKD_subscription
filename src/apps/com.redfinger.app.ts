@@ -12,6 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
+          quickFind: true,
           key: 0,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
@@ -21,7 +22,7 @@ export default defineAppConfig({
           ],
         },
         {
-          key: 2,
+          key: 1,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/13188645',
         },
