@@ -45,6 +45,12 @@ export default defineAppConfig({
             '[text*="惊喜礼包"] + FrameLayout + ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13426912',
         },
+        {
+          key: 2,
+          matches:
+            'ImageView + RelativeLayout[childCount=2] > TextView[text!=null] + ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13476400',
+        },
       ],
     },
     {
@@ -191,12 +197,14 @@ export default defineAppConfig({
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
         'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
+        'com.tencent.mobileqq.activity.photo.album.NewPhotoListActivity',
       ],
       rules: '@CheckBox[checked=false] + [text="原图"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12705556', // 未勾选原图
         'https://i.gkd.li/import/12705559', // 已勾选原图
         'https://i.gkd.li/import/13295142', // com.tencent.qqnt.qbasealbum.WinkHomeActivity
+        'https://i.gkd.li/import/13476247', // com.tencent.mobileqq.activity.photo.album.NewPhotoListActivity
       ],
     },
     {
