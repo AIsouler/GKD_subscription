@@ -11,34 +11,11 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text="跳过"]',
+      rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/12782355',
         'https://i.gkd.li/import/13194049',
       ],
-    },
-    {
-      key: 1,
-      name: '评论区顶部-相关推荐',
-      quickFind: true,
-      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
-      rules: 'ImageView[id=`com.sina.weibo:id/iv_ad_x`]',
-    },
-    {
-      key: 2,
-      name: '关闭不感兴趣广告弹窗',
-      quickFind: true,
-      activityIds: [
-        'com.sina.weibo.view.bottomsheet.dialog.',
-        'com.sina.weibo.VisitorMainTabActivity',
-      ],
-      rules: {
-        matches: [
-          '[id="com.sina.weibo:id/tv_name"][text="为何会看到此广告"]',
-          '[id="com.sina.weibo:id/tv_name"][text="不感兴趣"]',
-        ],
-        snapshotUrls: 'https://i.gkd.li/import/12672985',
-      },
     },
     {
       key: 3,
@@ -67,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '帖子详情底部，评论区顶部广告',
+      name: '博文内容区与评论区中间卡片式广告',
       desc: '点击右上角x',
       quickFind: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
@@ -85,12 +62,14 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 6,
       name: '评论区博主内容推荐',
       desc: '评论区同一博主其他博文推荐',
       quickFind: true,
       rules: [
         {
+          key: 0,
           activityIds: ['com.sina.weibo.feed.DetailWeiboActivity'],
           matches:
             'RelativeLayout[visibleToUser=true] - RelativeLayout >n @[id="com.sina.weibo:id/ll_close"] > [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
@@ -100,6 +79,7 @@ export default defineAppConfig({
           ],
         },
         {
+          preKeys: 0,
           activityIds: [
             'com.sina.weibo.utils.WeiboDialog$CustomDialog',
             'com.sina.weibo.feed.DetailWeiboActivity',
@@ -224,6 +204,26 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13255595',
         },
       ],
+    },
+    {
+      key: 15,
+      name: '评论区底部-账号推荐关注悬浮窗',
+      desc: '点击【x】',
+      quickFind: true,
+      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+      rules:
+        '@[id="com.sina.weibo:id/close_layout"] - LinearLayout [id="com.sina.weibo:id/btnFollow"]',
+      snapshotUrls: 'https://i.gkd.li/import/13482954',
+    },
+    {
+      key: 16,
+      name: '评论区底部-转发推荐悬浮窗',
+      desc: '点击【x】',
+      quickFind: true,
+      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+      rules:
+        '[text*="一键转发"] < LinearLayout +2 [id="com.sina.weibo:id/tv_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13482960',
     },
   ],
 });
