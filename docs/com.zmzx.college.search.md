@@ -1,6 +1,6 @@
 # 大学搜题酱
 
-存在 7 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
+存在 8 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
 
 ## 开屏广告
 
@@ -44,3 +44,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13440939)
+
+## 请求好评弹窗
+
+- [快照-0](https://i.gkd.li/import/13476308)
