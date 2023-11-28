@@ -40,6 +40,16 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
+      key: 4,
+      name: '截屏分享',
+      desc: '关闭截屏时app弹出的分享弹窗',
+      activityIds: 'com.autonavi.map.activity.NewMapActivity',
+      rules:
+        '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView',
+      snapshotUrls: 'https://i.gkd.li/import/13473388',
+    },
+    {
       key: 10,
       name: '首页-地图页面上方消息提醒',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
