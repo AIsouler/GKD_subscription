@@ -101,6 +101,7 @@
 | OPPO商城               | [com.oppo.store](/docs/com.oppo.store.md)                                                         | 2               |
 | OPPO手机管家           | [com.coloros.phonemanager](/docs/com.coloros.phonemanager.md)                                     | 1               |
 | OurPlay加速器          | [com.excean.splay](/docs/com.excean.splay.md)                                                     | 2               |
+| PAPAGO焦点             | [com.vidure.papago](/docs/com.vidure.papago.md)                                                   | 1               |
 | PU口袋校园             | [com.xyhui](/docs/com.xyhui.md)                                                                   | 4/3启用/1禁用   |
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                       | 3/2启用/1禁用   |
 | QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                               | 5               |
@@ -129,7 +130,6 @@
 | 阿里云盘               | [com.alicloud.databox](/docs/com.alicloud.databox.md)                                             | 2               |
 | 安吉星                 | [com.shanghaionstar](/docs/com.shanghaionstar.md)                                                 | 1               |
 | 安居客                 | [com.anjuke.android.app](/docs/com.anjuke.android.app.md)                                         | 1               |
-| 安全服务               | [com.miui.securitycenter](/docs/com.miui.securitycenter.md)                                       | 1/0启用/1禁用   |
 | 安兔兔评测             | [com.antutu.ABenchMark](/docs/com.antutu.ABenchMark.md)                                           | 2               |
 | 澳覓                   | [com.mem.MacaoLife](/docs/com.mem.MacaoLife.md)                                                   | 3               |
 | 百词斩                 | [com.jiongji.andriod.card](/docs/com.jiongji.andriod.card.md)                                     | 1               |
@@ -164,6 +164,7 @@
 | 不厌书法               | [com.buyanchuantong.buyanshufa](/docs/com.buyanchuantong.buyanshufa.md)                           | 1/0启用/1禁用   |
 | 彩虹多多               | [com.ddyc.lotterytool](/docs/com.ddyc.lotterytool.md)                                             | 3/1启用/2禁用   |
 | 菜鸟                   | [com.cainiao.wireless](/docs/com.cainiao.wireless.md)                                             | 6/3启用/3禁用   |
+| 财新                   | [com.caing.news](/docs/com.caing.news.md)                                                         | 1               |
 | 彩云天气               | [com.nowcasting.activity](/docs/com.nowcasting.activity.md)                                       | 2               |
 | 参考消息               | [com.cankaoxiaoxi.app1](/docs/com.cankaoxiaoxi.app1.md)                                           | 1               |
 | 测测                   | [com.xxwolo.cc5](/docs/com.xxwolo.cc5.md)                                                         | 1               |
@@ -184,11 +185,11 @@
 | 叨鱼                   | [com.sdo.sdaccountkey](/docs/com.sdo.sdaccountkey.md)                                             | 1               |
 | 大师兄影视             | [com.zhiyin.qingdan.dashixiong](/docs/com.zhiyin.qingdan.dashixiong.md)                           | 3/2启用/1禁用   |
 | 大淘客联盟             | [com.dataoke.union](/docs/com.dataoke.union.md)                                                   | 1               |
-| 大学搜题酱             | [com.zmzx.college.search](/docs/com.zmzx.college.search.md)                                       | 7/4启用/3禁用   |
+| 大学搜题酱             | [com.zmzx.college.search](/docs/com.zmzx.college.search.md)                                       | 8/5启用/3禁用   |
 | 大众点评               | [com.dianping.v1](/docs/com.dianping.v1.md)                                                       | 4               |
 | 得间免费小说           | [com.chaozh.iReader.dj](/docs/com.chaozh.iReader.dj.md)                                           | 1               |
 | 得力e+                 | [com.delicloud.app.smartoffice](/docs/com.delicloud.app.smartoffice.md)                           | 1               |
-| 得物                   | [com.shizhuang.duapp](/docs/com.shizhuang.duapp.md)                                               | 1               |
+| 得物                   | [com.shizhuang.duapp](/docs/com.shizhuang.duapp.md)                                               | 2/1启用/1禁用   |
 | 电视果                 | [tv.tvguo.androidphone](/docs/tv.tvguo.androidphone.md)                                           | 1               |
 | 点淘                   | [com.taobao.live](/docs/com.taobao.live.md)                                                       | 1               |
 | 点心云                 | [com.dianxinai.mobile](/docs/com.dianxinai.mobile.md)                                             | 1               |
@@ -245,12 +246,13 @@
 | 纷玩岛                 | [cn.com.livelab](/docs/cn.com.livelab.md)                                                         | 2               |
 | 服服                   | [com.citymobi.fufu](/docs/com.citymobi.fufu.md)                                                   | 1               |
 | 盖乐世社区             | [com.samsung.android.voc](/docs/com.samsung.android.voc.md)                                       | 1               |
-| 高德地图               | [com.autonavi.minimap](/docs/com.autonavi.minimap.md)                                             | 5/3启用/2禁用   |
+| 高德地图               | [com.autonavi.minimap](/docs/com.autonavi.minimap.md)                                             | 6/3启用/3禁用   |
 | 高铁管家               | [com.gtgj.view](/docs/com.gtgj.view.md)                                                           | 1               |
+| 个人图书馆             | [com.doc360.client](/docs/com.doc360.client.md)                                                   | 2               |
 | 公考雷达               | [com.maidu.gkld](/docs/com.maidu.gkld.md)                                                         | 4/3启用/1禁用   |
 | 工银e生活              | [com.icbc.elife](/docs/com.icbc.elife.md)                                                         | 1               |
 | 观察者                 | [cn.guancha.app](/docs/cn.guancha.app.md)                                                         | 1               |
-| 光大银行               | [com.cebbank.mobile.cemb](/docs/com.cebbank.mobile.cemb.md)                                       | 2               |
+| 光大银行               | [com.cebbank.mobile.cemb](/docs/com.cebbank.mobile.cemb.md)                                       | 3               |
 | 广东税务               | [com.example.servyouappzhuhai](/docs/com.example.servyouappzhuhai.md)                             | 1/0启用/1禁用   |
 | 广发银行               | [com.cgbchina.xpt](/docs/com.cgbchina.xpt.md)                                                     | 1               |
 | 广汽传祺               | [com.cloudy.component](/docs/com.cloudy.component.md)                                             | 1               |
@@ -258,6 +260,7 @@
 | 光宇游戏               | [cn.gyyx.phonekey](/docs/cn.gyyx.phonekey.md)                                                     | 1               |
 | 咕咚                   | [com.codoon.gps](/docs/com.codoon.gps.md)                                                         | 2               |
 | 谷歌相册               | [com.google.android.apps.photos](/docs/com.google.android.apps.photos.md)                         | 1               |
+| 呱呱天气               | [com.qingwatq.weather](/docs/com.qingwatq.weather.md)                                             | 2               |
 | 桂林银行               | [com.glyh.mbank.pro](/docs/com.glyh.mbank.pro.md)                                                 | 1               |
 | 国家医保服务平台       | [cn.hsa.app](/docs/cn.hsa.app.md)                                                                 | 1               |
 | 国家政务服务平台       | [com.service.android.gov.cn](/docs/com.service.android.gov.cn.md)                                 | 1               |
@@ -303,7 +306,7 @@
 | i 音乐                 | [com.android.bbkmusic](/docs/com.android.bbkmusic.md)                                             | 1               |
 | i茅台                  | [com.moutai.mall](/docs/com.moutai.mall.md)                                                       | 3/2启用/1禁用   |
 | i主题                  | [com.bbk.theme](/docs/com.bbk.theme.md)                                                           | 1               |
-| 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                 | 1               |
+| 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                 | 3               |
 | 建工计算器             | [com.glodon.constructioncalculators](/docs/com.glodon.constructioncalculators.md)                 | 1               |
 | 简书                   | [com.jianshu.haruki](/docs/com.jianshu.haruki.md)                                                 | 2               |
 | 简讯                   | [com.tipsoon.android](/docs/com.tipsoon.android.md)                                               | 1               |
@@ -311,7 +314,7 @@
 | 交管12123              | [com.tmri.app.main](/docs/com.tmri.app.main.md)                                                   | 2               |
 | 交通银行               | [com.bankcomm.Bankcomm](/docs/com.bankcomm.Bankcomm.md)                                           | 2               |
 | 交易猫                 | [com.jym.mall](/docs/com.jym.mall.md)                                                             | 1               |
-| 驾校一点通             | [com.jxedt](/docs/com.jxedt.md)                                                                   | 2               |
+| 驾校一点通             | [com.jxedt](/docs/com.jxedt.md)                                                                   | 3               |
 | 解压专家               | [com.fileunzip.zxwknight](/docs/com.fileunzip.zxwknight.md)                                       | 2               |
 | 极氪                   | [com.zeekrlife.mobile](/docs/com.zeekrlife.mobile.md)                                             | 1               |
 | 金币云商               | [com.terminus.tmall](/docs/com.terminus.tmall.md)                                                 | 1               |
@@ -329,7 +332,7 @@
 | 囧次元                 | [com.viva.note](/docs/com.viva.note.md)                                                           | 3               |
 | 韭研公社               | [com.jiucaigongshe](/docs/com.jiucaigongshe.md)                                                   | 1               |
 | 开吧                   | [com.hz.czfw.app](/docs/com.hz.czfw.app.md)                                                       | 1               |
-| 拷貝漫畫               | [com.copymanga.app](/docs/com.copymanga.app.md)                                                   | 4               |
+| 拷貝漫畫               | [com.copymanga.app](/docs/com.copymanga.app.md)                                                   | 6               |
 | kds宽带山              | [net.pchome.kds](/docs/net.pchome.kds.md)                                                         | 1               |
 | 肯德基                 | [com.yek.android.kfc.activitys](/docs/com.yek.android.kfc.activitys.md)                           | 1               |
 | 口袋48                 | [com.pocket.snh48.activity](/docs/com.pocket.snh48.activity.md)                                   | 1               |
@@ -342,6 +345,7 @@
 | 快手极速版             | [com.kuaishou.nebula](/docs/com.kuaishou.nebula.md)                                               | 2               |
 | 快题库                 | [com.android.tiku.union](/docs/com.android.tiku.union.md)                                         | 1               |
 | 快通驾考               | [com.kuaitong.driver](/docs/com.kuaitong.driver.md)                                               | 1               |
+| 快牙                   | [com.dewmobile.kuaiya](/docs/com.dewmobile.kuaiya.md)                                             | 2               |
 | 快影                   | [com.kwai.videoeditor](/docs/com.kwai.videoeditor.md)                                             | 1               |
 | 夸克浏览器             | [com.quark.browser](/docs/com.quark.browser.md)                                                   | 4/3启用/1禁用   |
 | 酷安                   | [com.coolapk.market](/docs/com.coolapk.market.md)                                                 | 4               |
@@ -352,6 +356,7 @@
 | 库街区                 | [com.kurogame.kjq](/docs/com.kurogame.kjq.md)                                                     | 1               |
 | 酷我音乐               | [cn.kuwo.player](/docs/cn.kuwo.player.md)                                                         | 1               |
 | 懒人听书               | [bubei.tingshu](/docs/bubei.tingshu.md)                                                           | 2               |
+| 蓝奏浏览器             | [com.flatter.app.kuafu](/docs/com.flatter.app.kuafu.md)                                           | 1               |
 | 乐橙                   | [com.mm.android.lc](/docs/com.mm.android.lc.md)                                                   | 1               |
 | 乐动力                 | [cn.ledongli.ldl](/docs/cn.ledongli.ldl.md)                                                       | 1               |
 | 乐看视频               | [com.zhl.bmi](/docs/com.zhl.bmi.md)                                                               | 1               |
@@ -430,10 +435,11 @@
 | 汽车之家               | [com.cubic.autohome](/docs/com.cubic.autohome.md)                                                 | 2               |
 | 起点读书               | [com.qidian.QDReader](/docs/com.qidian.QDReader.md)                                               | 8/6启用/2禁用   |
 | 企鹅体育               | [com.tencent.tv.qie](/docs/com.tencent.tv.qie.md)                                                 | 1               |
-| 七猫免费小说           | [com.kmxs.reader](/docs/com.kmxs.reader.md)                                                       | 8/5启用/3禁用   |
+| 七猫免费小说           | [com.kmxs.reader](/docs/com.kmxs.reader.md)                                                       | 10/5启用/5禁用  |
 | 奇妙应用               | [com.magicalstory.AppStore](/docs/com.magicalstory.AppStore.md)                                   | 4               |
 | 亲宝宝                 | [com.dw.btime](/docs/com.dw.btime.md)                                                             | 4               |
 | 青创网                 | [com.m17qcc.mm](/docs/com.m17qcc.mm.md)                                                           | 1               |
+| 青岛公交查询           | [com.qingdaonews.bus](/docs/com.qingdaonews.bus.md)                                               | 1               |
 | 轻松阅                 | [io.sbyd.app](/docs/io.sbyd.app.md)                                                               | 2               |
 | 蜻蜓FM                 | [fm.qingting.qtradio](/docs/fm.qingting.qtradio.md)                                               | 2               |
 | 蜻蜓FM                 | [com.miui.fm](/docs/com.miui.fm.md)                                                               | 1               |
@@ -531,6 +537,7 @@
 | 天天跳绳               | [com.gkid.crazyrope](/docs/com.gkid.crazyrope.md)                                                 | 3               |
 | 天翼生活               | [com.ataaw.tianyi](/docs/com.ataaw.tianyi.md)                                                     | 1               |
 | 天翼云盘               | [com.cn21.ecloud](/docs/com.cn21.ecloud.md)                                                       | 3               |
+| 挑战答题助手           | [cc.kinva.smartqa](/docs/cc.kinva.smartqa.md)                                                     | 1               |
 | 贴吧极速版             | [com.baidu.tieba_mini](/docs/com.baidu.tieba_mini.md)                                             | 1               |
 | 贴吧一键签到大师       | [com.baidutieba.davy](/docs/com.baidutieba.davy.md)                                               | 2               |
 | 铁路12306              | [com.MobileTicket](/docs/com.MobileTicket.md)                                                     | 1               |
@@ -572,7 +579,7 @@
 | 万能遥控               | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md)                   | 1               |
 | 万年历                 | [com.youloft.calendar](/docs/com.youloft.calendar.md)                                             | 1               |
 | 微爱                   | [com.welove520.welove](/docs/com.welove520.welove.md)                                             | 1               |
-| 微博                   | [com.sina.weibo](/docs/com.sina.weibo.md)                                                         | 15/12启用/3禁用 |
+| 微博                   | [com.sina.weibo](/docs/com.sina.weibo.md)                                                         | 15/11启用/4禁用 |
 | 微博极速版             | [com.sina.weibolite](/docs/com.sina.weibolite.md)                                                 | 2               |
 | 微博轻享版             | [com.weico.international](/docs/com.weico.international.md)                                       | 2               |
 | 微店                   | [com.koudai.weidian.buyer](/docs/com.koudai.weidian.buyer.md)                                     | 1               |
@@ -594,6 +601,7 @@
 | 无忧行                 | [com.cmi.jegotrip](/docs/com.cmi.jegotrip.md)                                                     | 1               |
 | 下厨房                 | [com.xiachufang](/docs/com.xiachufang.md)                                                         | 3               |
 | 向日葵远程控制         | [com.oray.sunlogin](/docs/com.oray.sunlogin.md)                                                   | 4               |
+| 湘潭出行               | [com.whpe.qrcode.hunan_xiangtan](/docs/com.whpe.qrcode.hunan_xiangtan.md)                         | 1               |
 | 闲鱼                   | [com.taobao.idlefish](/docs/com.taobao.idlefish.md)                                               | 1               |
 | 小爱音箱               | [com.xiaomi.mico](/docs/com.xiaomi.mico.md)                                                       | 2               |
 | 小白PDF阅读器          | [com.jujie.xbreader](/docs/com.jujie.xbreader.md)                                                 | 1               |
@@ -605,10 +613,12 @@
 | 小红书                 | [com.xingin.xhs](/docs/com.xingin.xhs.md)                                                         | 4/3启用/1禁用   |
 | 小卖部逆袭记           | [com.dz.xmbnxj](/docs/com.dz.xmbnxj.md)                                                           | 1               |
 | 小马模拟器             | [com.ponyemu.main](/docs/com.ponyemu.main.md)                                                     | 1               |
+| 小米打印               | [com.mi.print](/docs/com.mi.print.md)                                                             | 1               |
 | 小米浏览器             | [com.android.browser](/docs/com.android.browser.md)                                               | 2               |
 | 小米钱包               | [com.mipay.wallet](/docs/com.mipay.wallet.md)                                                     | 1               |
 | 小米商城               | [com.xiaomi.shop](/docs/com.xiaomi.shop.md)                                                       | 2               |
 | 小米社区               | [com.xiaomi.vipaccount](/docs/com.xiaomi.vipaccount.md)                                           | 5/4启用/1禁用   |
+| 小米手机管家           | [com.miui.securitycenter](/docs/com.miui.securitycenter.md)                                       | 3/0启用/3禁用   |
 | 小米应用商店           | [com.xiaomi.market](/docs/com.xiaomi.market.md)                                                   | 4/3启用/1禁用   |
 | 小米音乐               | [com.miui.player](/docs/com.miui.player.md)                                                       | 6/4启用/2禁用   |
 | 小米有品               | [com.xiaomi.youpin](/docs/com.xiaomi.youpin.md)                                                   | 3               |
@@ -618,6 +628,7 @@
 | 小米账号               | [com.xiaomi.account](/docs/com.xiaomi.account.md)                                                 | 1               |
 | 小天才                 | [com.xtc.watch](/docs/com.xtc.watch.md)                                                           | 2/0启用/2禁用   |
 | 小小优趣               | [com.ukids.client.phone](/docs/com.ukids.client.phone.md)                                         | 1               |
+| 晓晓优选               | [moc.nauxuoyoaixoaix.www](/docs/moc.nauxuoyoaixoaix.www.md)                                       | 1               |
 | 小熊油耗               | [com.firebear.androil](/docs/com.firebear.androil.md)                                             | 3               |
 | 小熊有好货             | [com.xiaoxiongyhh](/docs/com.xiaoxiongyhh.md)                                                     | 1               |
 | 小鹰看看               | [com.okcam.ookcam](/docs/com.okcam.ookcam.md)                                                     | 1               |
@@ -651,7 +662,7 @@
 | 学习通                 | [com.chaoxing.mobile](/docs/com.chaoxing.mobile.md)                                               | 2/1启用/1禁用   |
 | 讯飞AI学               | [com.iflytek.aistudyclient.parentcontrol](/docs/com.iflytek.aistudyclient.parentcontrol.md)       | 1               |
 | 讯飞输入法             | [com.iflytek.inputmethod](/docs/com.iflytek.inputmethod.md)                                       | 1               |
-| 迅雷                   | [com.xunlei.downloadprovider](/docs/com.xunlei.downloadprovider.md)                               | 8/7启用/1禁用   |
+| 迅雷                   | [com.xunlei.downloadprovider](/docs/com.xunlei.downloadprovider.md)                               | 8/6启用/2禁用   |
 | 亚朵                   | [com.atour.atourlife](/docs/com.atour.atourlife.md)                                               | 1               |
 | 央视频                 | [com.cctv.yangshipin.app.androidp](/docs/com.cctv.yangshipin.app.androidp.md)                     | 1               |
 | 央视体育               | [com.cctv.cctv5ultimate](/docs/com.cctv.cctv5ultimate.md)                                         | 2               |
@@ -660,11 +671,13 @@
 | 易班                   | [com.yiban.app](/docs/com.yiban.app.md)                                                           | 1               |
 | 一点万象               | [com.crland.mixc](/docs/com.crland.mixc.md)                                                       | 1               |
 | 移动云手机             | [com.chinamobile.hycloudphone](/docs/com.chinamobile.hycloudphone.md)                             | 1               |
+| 一嗨租车               | [com.ehai](/docs/com.ehai.md)                                                                     | 1               |
 | 一加软件商店           | [com.oppo.market](/docs/com.oppo.market.md)                                                       | 1               |
 | 易捷加油               | [cn.com.hkgt.gasapp](/docs/cn.com.hkgt.gasapp.md)                                                 | 2               |
 | 医考帮                 | [com.yikaobang.yixue](/docs/com.yikaobang.yixue.md)                                               | 1               |
 | 一刻相册               | [com.baidu.youavideo](/docs/com.baidu.youavideo.md)                                               | 7               |
 | 易快报                 | [com.hose.ekuaibao](/docs/com.hose.ekuaibao.md)                                                   | 1               |
+| 影视仓                 | [com.movie.store](/docs/com.movie.store.md)                                                       | 1               |
 | 萤石云视频             | [com.videogo](/docs/com.videogo.md)                                                               | 2               |
 | 应用安装器             | [com.oplus.appdetail](/docs/com.oplus.appdetail.md)                                               | 1/0启用/1禁用   |
 | 应用包管理组件         | [com.miui.packageinstaller](/docs/com.miui.packageinstaller.md)                                   | 3/0启用/3禁用   |
@@ -707,6 +720,7 @@
 | 掌医课堂               | [com.zgnet.eClass](/docs/com.zgnet.eClass.md)                                                     | 2/1启用/1禁用   |
 | 掌阅                   | [com.chaozh.iReaderFree](/docs/com.chaozh.iReaderFree.md)                                         | 1               |
 | 湛庐阅读               | [com.cheersedu.app](/docs/com.cheersedu.app.md)                                                   | 2               |
+| 招联金融               | [com.zl.fqbao](/docs/com.zl.fqbao.md)                                                             | 1               |
 | 招商银行               | [cmb.pb](/docs/cmb.pb.md)                                                                         | 3               |
 | 浙里办                 | [com.hanweb.android.zhejiang.activity](/docs/com.hanweb.android.zhejiang.activity.md)             | 2               |
 | 正气                   | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md)                               | 2               |
@@ -735,6 +749,7 @@
 | 中国建设银行           | [com.chinamworld.main](/docs/com.chinamworld.main.md)                                             | 1               |
 | 中国联通               | [com.sinovatech.unicom.ui](/docs/com.sinovatech.unicom.ui.md)                                     | 2               |
 | 中国农业银行           | [com.android.bankabc](/docs/com.android.bankabc.md)                                               | 3               |
+| 中国天气               | [com.hf](/docs/com.hf.md)                                                                         | 1               |
 | 中国移动               | [com.greenpoint.android.mc10086.activity](/docs/com.greenpoint.android.mc10086.activity.md)       | 7               |
 | 中国移动河南           | [com.xinhang.mobileclient](/docs/com.xinhang.mobileclient.md)                                     | 3               |
 | 中国移动江苏           | [com.jsmcc](/docs/com.jsmcc.md)                                                                   | 2               |

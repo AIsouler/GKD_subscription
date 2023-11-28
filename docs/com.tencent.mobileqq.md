@@ -18,6 +18,7 @@
 - [快照-2](https://i.gkd.li/import/13207766)
 - [快照-3](https://i.gkd.li/import/13386518)
 - [快照-4](https://i.gkd.li/import/13426912)
+- [快照-5](https://i.gkd.li/import/13476400)
 
 ## 好友动态-广告卡片
 
@@ -79,6 +80,7 @@
 - [快照-0](https://i.gkd.li/import/12705556)
 - [快照-1](https://i.gkd.li/import/12705559)
 - [快照-2](https://i.gkd.li/import/13295142)
+- [快照-3](https://i.gkd.li/import/13476247)
 
 ## 自动查看原图
 

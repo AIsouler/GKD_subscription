@@ -23,7 +23,8 @@
 ## 活动弹窗
 
 - [快照-0](https://i.gkd.li/import/12726709)
-- [快照-1](https://i.gkd.li/import/13362878)
+- [快照-1](https://i.gkd.li/import/13476719)
+- [快照-2](https://i.gkd.li/import/13476611)
 
 ## 付款后广告弹窗
 

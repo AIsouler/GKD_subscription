@@ -22,6 +22,7 @@
 - [快照-0](https://i.gkd.li/import/12640195)
 - [快照-1](https://i.gkd.li/import/12640158)
 - [快照-2](https://i.gkd.li/import/12818198)
+- [快照-3](https://i.gkd.li/import/13469004)
 
 ## 请求通知权限提示信息
 

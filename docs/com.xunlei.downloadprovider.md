@@ -43,13 +43,16 @@
 - [快照-15](https://i.gkd.li/import/12881976)
 - [快照-16](https://i.gkd.li/import/12879452)
 
-## 下载页面-广告卡片
+## 【下载页】广告卡片
+
+默认禁用 - 需选二次弹窗关闭原因
 
 - [快照-0](https://i.gkd.li/import/12881865)
 - [快照-1](https://i.gkd.li/import/12892893)
 - [快照-2](https://i.gkd.li/import/12901395)
 - [快照-3](https://i.gkd.li/import/128818775)
 - [快照-4](https://i.gkd.li/import/13198070)
+- [快照-5](https://i.gkd.li/import/13484249)
 
 ## 搜索页面-顶部banner广告
 
