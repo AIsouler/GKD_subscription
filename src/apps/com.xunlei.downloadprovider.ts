@@ -182,18 +182,22 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 4,
-      name: '下载页面-广告卡片',
-      matchLauncher: true,
+      name: '【下载页】广告卡片',
+      desc: '需选二次弹窗关闭原因',
+      quickFind: true,
       rules: [
         {
           key: 0,
+          name: '点击更多【···】',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches: '[id="com.xunlei.downloadprovider:id/ad_more"]',
           snapshotUrls: 'https://i.gkd.li/import/12881865',
         },
         {
           key: 1,
+          name: '点击【x】',
           activityIds: [
             'com.xunlei.downloadprovider.frame.MainTabActivity',
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -206,12 +210,17 @@ export default defineAppConfig({
         },
         {
           preKeys: [0, 1],
+          name: '关闭原因选【减少推荐】',
           key: 2,
-          activityIds: 'com.xunlei.downloadprovider.download.center.newcenter',
+          activityIds: [
+            'com.xunlei.downloadprovider.download.center.newcenter',
+            'com.xunlei.downloadprovider.frame.MainTabActivity',
+          ],
           matches: '[id="com.xunlei.downloadprovider:id/close_ad"]',
           snapshotUrls: [
             'https://i.gkd.li/import/128818775',
             'https://i.gkd.li/import/13198070',
+            'https://i.gkd.li/import/13484249',
           ],
         },
       ],
@@ -273,7 +282,7 @@ export default defineAppConfig({
           name: '【首页】',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
-            '[text="您的会员已过期"] < LinearLayout +n ImageView[desc="迅雷"]',
+            '[text="您的会员已过期"] < LinearLayout +n [id="com.xunlei.downloadprovider:id/touch_bottom_bar_bubble_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/import/13259268',
         },
       ],
