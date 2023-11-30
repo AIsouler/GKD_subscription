@@ -79,6 +79,14 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/12640287'],
     },
     {
+      key: 8,
+      name: '书架顶部广告',
+      quickFind: true,
+      activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
+      rules: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
+      snapshotUrls: ['https://i.gkd.li/import/13489942'],
+    },
+    {
       enable: false,
       key: 5,
       name: '【字节】视频广告',
