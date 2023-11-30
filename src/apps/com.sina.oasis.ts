@@ -34,8 +34,8 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
-          matches: '[text*="关闭此广告"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13434471',
+          matches: '@LinearLayout > [text*="关闭此广告"][text.length<=10]',
+          snapshotUrls: 'https://i.gkd.li/import/13498631',
         },
       ],
     },
