@@ -11,11 +11,11 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      rules:
-        '@TextView[text$=`跳过`] + TextView[id="com.miui.player:id/ad_view"]',
+      rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: [
         'https://i.gkd.li/import/12700962',
         'https://i.gkd.li/import/12852707',
+        'https://i.gkd.li/import/13490450',
       ],
     },
     {
