@@ -58,5 +58,16 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.sgcc.wsgw.rnbundle.activity.HomeReactActivity',
+      rules: '@ImageView < ViewGroup -3 [text="有新版本啦!"]',
+      snapshotUrls: 'https://i.gkd.li/import/13501638',
+    },
   ],
 });
