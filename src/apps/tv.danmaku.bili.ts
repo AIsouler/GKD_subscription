@@ -7,46 +7,46 @@ export default defineAppConfig({
   groups: [
     {
       key: -1,
+      name: '开屏广告',
+      desc: '开屏广告,任意界面切回APP开屏广告',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      name: '开屏广告',
-      desc: '开屏广告,任意界面切回APP开屏广告',
       rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳过"]',
       snapshotUrls: 'https://i.gkd.li/import/12705270',
     },
     {
-      quickFind: true,
       key: 0,
       name: '评论区顶部公告横幅',
-      rules:
-        'LinearLayout[id=`tv.danmaku.bili:id/ad_tint_frame`] > ImageView[id="tv.danmaku.bili:id/close"][desc=`关闭`]',
+      quickFind: true,
       excludeActivityIds: [
         'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3', // 直播间
         'tv.danmaku.bili.MainActivityV2', // 主页
       ],
+      rules:
+        'LinearLayout[id=`tv.danmaku.bili:id/ad_tint_frame`] > ImageView[id="tv.danmaku.bili:id/close"][desc=`关闭`]',
       snapshotUrls: [
         'https://i.gkd.li/import/12785461',
         'https://i.gkd.li/import/12775156',
       ],
     },
     {
-      quickFind: true,
       key: 1,
+      name: '青少年模式弹窗',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      name: '青少年模式弹窗',
       rules: 'TextView[text*=`青少年模式`] + TextView[text=`我知道了`]',
     },
     {
-      quickFind: true,
       key: 2,
       name: '动态推荐广告卡片',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
+      quickFind: true,
       matchDelay: 5000,
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
           key: 1,
@@ -62,9 +62,11 @@ export default defineAppConfig({
     },
     // key = 3已弃用
     {
+      enable: false,
       key: 4,
-      name: '视频底部广告',
-      desc: '点击[视频底部,评论区顶部]的广告卡片右侧菜单按钮,选择屏蔽广告原因',
+      name: '视频底部与评论区中间卡片式广告',
+      desc: '需点击二次弹窗 屏蔽原因',
+      quickFind: true,
       activityIds: [
         'com.bilibili.video.videodetail.VideoDetailsActivity',
         'com.bilibili.ship.theseus.all.UnitedBizDetailsActivity',
@@ -72,7 +74,6 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          quickFind: true,
           key: 0,
           name: '点击广告卡片右侧菜单图标',
           matches:
@@ -85,27 +86,25 @@ export default defineAppConfig({
           ],
         },
         {
-          quickFind: true,
           preKeys: 0,
           key: 1,
           name: '点击屏蔽广告',
           matches:
-            '[id="tv.danmaku.bili:id/menu_text"][text="屏蔽广告"] < [id="tv.danmaku.bili:id/title"] + [id="tv.danmaku.bili:id/dislike_reasons"] >2 [id="tv.danmaku.bili:id/reason1_layout"]',
+            '[id="tv.danmaku.bili:id/dislike_reasons"] @RelativeLayout > [text*="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12642261', // 屏蔽广告菜单弹窗
-            'https://i.gkd.li/import/12706768', // 首页点击[视频卡片右下角菜单图标]后出现的普通菜单弹窗, 限制标题 [text="屏蔽广告"] 避免误触此弹窗
+            'https://i.gkd.li/import/13495649',
           ],
         },
       ],
     },
     // key = 5已弃用
     {
-      quickFind: true,
       key: 6,
       name: '更新弹窗',
+      quickFind: true,
       actionMaximum: 1,
       matchDelay: 5000,
-      matchLauncher: true,
       activityIds: [
         'com.bilibili.app.preferences.BiliPreferencesActivity',
         'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
@@ -125,13 +124,13 @@ export default defineAppConfig({
       ],
     },
     {
-      quickFind: true,
       key: 7,
-      matchTime: 10000,
       name: '视频悬浮广告',
       desc: '领取大会员月卡,B站免流星卡',
-      activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+      quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
       rules: ['[id="tv.danmaku.bili:id/toast_x"]'],
       snapshotUrls: [
         'https://i.gkd.li/import/12892611',
@@ -153,24 +152,24 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/13200549',
     },
     {
-      key: 9,
       enable: false,
+      key: 9,
       name: '请求通知权限弹窗',
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
       quickFind: true,
       matchDelay: 5000,
       matchTime: 10000,
-      resetMatch: 'app',
       actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[text="打开推送通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/13229159',
     },
     {
-      key: 10,
       enable: false,
+      key: 10,
       name: '首页-推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
       quickFind: true,
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
           key: 0,
@@ -180,8 +179,8 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13256570',
         },
         {
-          name: '点击[不感兴趣]',
           preKeys: 0,
+          name: '点击[不感兴趣]',
           matches: '[id="tv.danmaku.bili:id/menu_layout"] [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13256605',
         },
