@@ -1,10 +1,16 @@
 # 飞书
 
-存在 3 规则组 - [com.ss.android.lark](/src/apps/com.ss.android.lark.ts)
+存在 4 规则组 - [com.ss.android.lark](/src/apps/com.ss.android.lark.ts)
 
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12870733)
+
+## 桌面端登录确认
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13494960)
 
 ## 自动查看原图
 
