@@ -109,12 +109,14 @@ export default defineAppConfig({
           activityIds: [
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
             'com.miui.packageInstaller.InstallProgressActivity',
+            'com.miui.packageInstaller.ui.securemode.PureInstallProgressActivity',
           ],
           matches:
             '[id="com.miui.packageinstaller:id/done_layout"] > [text="完成"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12818044', // com.miui.packageInstaller.ui.normalmode.InstallProgressActivity
             'https://i.gkd.li/import/13229404', // com.miui.packageInstaller.InstallProgressActivity
+            'https://i.gkd.li/import/13501872', // com.miui.packageInstaller.ui.securemode.PureInstallProgressActivity
           ],
         },
       ],
