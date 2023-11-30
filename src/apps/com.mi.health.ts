@@ -14,5 +14,15 @@ export default defineAppConfig({
       rules: '[id="com.mi.health:id/nextView"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/import/13258813',
     },
+    {
+      key: 2,
+      name: '权限提醒',
+      activityIds: 'com.xiaomi.fitness.main.MainActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '[text="开启后台无限制"] + [id="com.mi.health:id/close_icon"]',
+      snapshotUrls: 'https://i.gkd.li/import/13495035',
+    },
   ],
 });
