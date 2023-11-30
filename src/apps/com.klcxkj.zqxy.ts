@@ -23,9 +23,11 @@ export default defineAppConfig({
         {
           key: 1,
           activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
-          matches:
-            'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12781461',
+          matches: 'ImageView -n FrameLayout > FrameLayout > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12781461',
+            'https://i.gkd.li/import/13488673',
+          ],
         },
         {
           key: 2,
@@ -53,6 +55,21 @@ export default defineAppConfig({
           activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
           matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13274838',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '横幅广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.klcxkj.zqxy.ui.device.drink.ble.DrinkingBleActivity',
+          ],
+          matches:
+            '[id="com.klcxkj.zqxy:id/bathing_adv_layout"] >n FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: ['https://i.gkd.li/import/13488870'],
         },
       ],
     },
