@@ -26,5 +26,29 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '版本更新',
+      desc: '勾选【忽略】-点击【以后再说】',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.bcut.homepage.widget.MainActivity',
+      rules: [
+        {
+          key: 0,
+          name: '勾选【忽略】',
+          matches:
+            '[id="com.bilibili.studio:id/update_cbx_ignore_version"][checked=false]',
+        },
+        {
+          preKeys: 0,
+          name: '点击【以后再说】',
+          matches: '[id="com.bilibili.studio:id/update_btn_cancel"]',
+        },
+      ],
+      snapshotUrls: 'https://i.gkd.li/import/13496049',
+    },
   ],
 });
