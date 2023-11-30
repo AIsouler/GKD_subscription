@@ -171,7 +171,7 @@ export default defineAppConfig({
     {
       key: 10,
       name: '悬浮小广告',
-      matchDelay: 5000,
+      matchDelay: 500,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
