@@ -6,6 +6,7 @@
 
 - [快照-0](https://i.gkd.li/import/12700962)
 - [快照-1](https://i.gkd.li/import/12852707)
+- [快照-2](https://i.gkd.li/import/13490450)
 
 ## 浮窗广告
 

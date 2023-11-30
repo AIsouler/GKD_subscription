@@ -21,11 +21,13 @@
 
 - [快照-0](https://i.gkd.li/import/13194955)
 
-## 版本更新提示
+## 版本更新
 
-默认禁用 - 选择稍后再说
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13327095)
+- [快照-1](https://i.gkd.li/import/13490805)
+- [快照-2](https://i.gkd.li/import/13490797)
 
 ## 设置支付宝小组件
 
