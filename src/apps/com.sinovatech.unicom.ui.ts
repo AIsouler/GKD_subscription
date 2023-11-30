@@ -25,5 +25,16 @@ export default defineAppConfig({
         '[text="去开启"] - [id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
       snapshotUrls: 'https://i.gkd.li/import/13331268',
     },
+    {
+      key: 2,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+      rules: '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
+      snapshotUrls: 'https://i.gkd.li/import/13511386',
+    },
   ],
 });
