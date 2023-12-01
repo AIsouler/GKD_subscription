@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^17.8.1
     version: 17.8.1
   '@gkd-kit/selector':
-    specifier: 0.0.15
-    version: 0.0.15
+    specifier: 0.0.16
+    version: 0.0.16
   '@types/lodash':
     specifier: ^4.14.201
     version: 4.14.201
@@ -44,6 +44,9 @@ devDependencies:
   husky:
     specifier: ^8.0.3
     version: 8.0.3
+  json5:
+    specifier: 2.2.3
+    version: 2.2.3
   lint-staged:
     specifier: ^15.1.0
     version: 15.1.0
@@ -505,8 +508,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@gkd-kit/selector@0.0.15:
-    resolution: {integrity: sha512-fWFXWjfLUQ7SS9FUadEQVzq/QW/DDNAJZWJSBMRnTcHuZtS1bb0eMGS9aDa9t6hrp6YAnpoLYEkR10qzciyqTQ==}
+  /@gkd-kit/selector@0.0.16:
+    resolution: {integrity: sha512-I2/e2fYfgewaSMbkXDQz0leh35qr0XhwEsOUYjsNOQOwsg6BPnwCGwBuPVoK47TL/VmSj2NsNUCkN4fRZcvwYg==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.13:
@@ -1693,6 +1696,12 @@ packages:
 
   /json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
+    dev: true
+
+  /json5@2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
+    engines: {node: '>=6'}
+    hasBin: true
     dev: true
 
   /jsonfile@6.1.0:
