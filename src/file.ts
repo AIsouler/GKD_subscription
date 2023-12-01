@@ -9,6 +9,7 @@ import type {
   IArray,
   SubscriptionConfig,
 } from './types';
+import JSON5 from 'json5';
 
 const iArrayToArray = <T>(array: IArray<T> = []): T[] => {
   return Array<T>().concat(array);
@@ -40,15 +41,30 @@ const orderdStringify = (
     JSON.stringify(Object.fromEntries(map.entries()), replacer, space) + '\n'
   );
 };
+const orderdStringify5 = (
+  obj: any,
+  keys: string[],
+  replacer?: (this: any, key: string, value: any) => any,
+  space?: string | number,
+) => {
+  const map = new Map<string, unknown>();
+  keys.forEach((k) => {
+    if (obj[k] === undefined) return;
+    map.set(k, obj[k]);
+  });
+  return (
+    JSON5.stringify(Object.fromEntries(map.entries()), replacer, space) + '\n'
+  );
+};
 const pkg: typeof PkgT = JSON.parse(
   await fs.readFile(process.cwd() + '/package.json', 'utf-8'),
 );
 const pkgKeys = Object.keys(pkg);
 
 export const writeConfig = async (config: SubscriptionConfig) => {
-  const gkdFp = process.cwd() + '/dist/gkd.json';
+  const gkdFp = process.cwd() + '/dist/gkd.json5';
   const versionFp = process.cwd() + '/dist/gkd.version.json';
-  const oldConfig: SubscriptionConfig = JSON.parse(
+  const oldConfig: SubscriptionConfig = JSON5.parse(
     await fs.readFile(gkdFp, 'utf-8').catch(() => '{}'),
   );
 
@@ -79,7 +95,7 @@ export const writeConfig = async (config: SubscriptionConfig) => {
   );
 
   // update gkd.json
-  const buffer = Buffer.from(orderdStringify(newConfig, sortKeys), 'utf-8');
+  const buffer = Buffer.from(orderdStringify5(newConfig, sortKeys), 'utf-8');
   await fs.writeFile(gkdFp, buffer);
 
   // update gkd.openad.json
