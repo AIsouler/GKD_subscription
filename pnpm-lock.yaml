@@ -45,7 +45,7 @@ devDependencies:
     specifier: ^8.0.3
     version: 8.0.3
   json5:
-    specifier: 2.2.3
+    specifier: ^2.2.3
     version: 2.2.3
   lint-staged:
     specifier: ^15.1.0
