@@ -6,8 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '第三方 SDK 广告弹窗',
-      matchLauncher: true,
+      name: '弹窗广告',
       activityIds: [],
       rules: [
         {
@@ -29,7 +28,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '@ImageView -n RelativeLayout > TextView[text*="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/12826288'],
+          snapshotUrls: 'https://i.gkd.li/import/12826288',
         },
       ],
     },
