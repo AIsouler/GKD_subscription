@@ -335,5 +335,19 @@ export default defineAppConfig({
         'https://i.gkd.li/import/13255493', //desc值为null快照
       ],
     },
+    {
+      enable: false,
+      key: 19,
+      name: '内测邀请弹窗',
+      quickFind: true,
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@ImageView[desc="关闭"] <2 * >2 [text="QQ测试版"]',
+          snapshotUrls: 'https://i.gkd.li/import/13526551',
+        },
+      ],
+    },
   ],
 });
