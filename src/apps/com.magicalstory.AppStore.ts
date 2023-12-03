@@ -31,6 +31,7 @@ export default defineAppConfig({
           activityIds: [
             'com.magicalstory.AppStore.search.searchActivity',
             'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
+            'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
           ],
           matches: [
             '[id^="com.magicalstory.AppStore:id/banner"]',
@@ -40,6 +41,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13185746',
             'https://i.gkd.li/import/13413482',
             'https://i.gkd.li/import/13416979',
+            'https://i.gkd.li/import/13527698',
           ],
         },
         {
