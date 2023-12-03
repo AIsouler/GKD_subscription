@@ -42,10 +42,10 @@ export default defineAppConfig({
       name: '小说页全屏卡片广告',
       desc: '点击关闭和确定按钮',
       quickFind: true,
-      activityIds: 'com.duokan.reader.DkMainActivity',
       rules: [
         {
           key: 0,
+          activityIds: 'com.duokan.reader.DkMainActivity',
           matches:
             '@TextView[id="com.duokan.reader:id/reading__app_ad_view__close"][text="广告"]',
         },
