@@ -41,6 +41,13 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 1,
+      name: '申请消息提醒弹窗',
+      activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
+      rules: '@ImageView[clickable=true] -2 LinearLayout > [text^="打开通知"]',
+      snapshotUrls: 'https://i.gkd.li/import/13536170',
+    },
+    {
       enable: false,
       key: 2,
       name: '信息流广告',
