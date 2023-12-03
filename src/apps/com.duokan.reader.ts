@@ -50,7 +50,7 @@ export default defineAppConfig({
             '@TextView[id="com.duokan.reader:id/reading__app_ad_view__close"][text="广告"]',
         },
         {
-          preKeys: 0,
+          key: 1,
           matches:
             '@TextView[id="com.duokan.reader:id/ad__feedback_close_dialog_button"][text="知道了"]',
         },
