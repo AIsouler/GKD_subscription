@@ -130,11 +130,15 @@ export default defineAppConfig({
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+      activityIds: [
+        'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+        'com.bilibili.video.videodetail.VideoDetailsActivity',
+      ],
       rules: ['[id="tv.danmaku.bili:id/toast_x"]'],
       snapshotUrls: [
         'https://i.gkd.li/import/12892611',
         'https://i.gkd.li/import/13308344',
+        'https://i.gkd.li/import/13538048', // activityIds: 'com.bilibili.video.videodetail.VideoDetailsActivity',
       ],
       exampleUrls: [
         'https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb',
