@@ -7,14 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.dianping.v1.NovaMainActivity',
-        'com.dianping.main.guide.SplashActivity',
-      ],
-      rules: '[id=`com.dianping.v1:id/new_skip`]',
-      snapshotUrls: 'https://i.gkd.li/import/12726928', // 对应第二条activityIds
-      // 缺第一条activityIds对应的快照
-      // 上面两条activityIds，在截快照时交替出现，故都放在判定条件里
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text$="跳过"][text.length<=10]',
+      snapshotUrls: 'https://i.gkd.li/import/12726928',
     },
     {
       key: 1,
@@ -43,6 +41,19 @@ export default defineAppConfig({
       rules:
         '[id="com.dianping.v1:id/float_image"] + [id="com.dianping.v1:id/close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/12727366',
+    },
+    {
+      key: 4,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.dianping.v1.NovaMainActivity',
+          quickFind: true,
+          matches: '[id="com.dianping.v1:id/operate_cross_icon"]',
+          snapshotUrls: 'https://i.gkd.li/import/13538340',
+        },
+      ],
     },
   ],
 });
