@@ -7,19 +7,22 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.taobao.idlefish.maincontainer.activity.MainActivity',
-        'com.taobao.fleamarket.home.activity.InitActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[id="com.taobao.idlefish:id/advert_close"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12668670',
+        'https://i.gkd.li/import/13049015',
       ],
-      rules: [
-        {
-          matches: '[id="com.taobao.idlefish:id/advert_close"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12668670', //com.taobao.idlefish.maincontainer.activity.MainActivity
-            'https://i.gkd.li/import/13049015', //com.taobao.fleamarket.home.activity.InitActivity
-          ],
-        },
-      ],
+    },
+    {
+      key: 1,
+      name: '请求开启通知权限弹窗',
+      activityIds:
+        'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
+      rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',
+      snapshotUrls: 'https://i.gkd.li/import/13538351',
     },
   ],
 });
