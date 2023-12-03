@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.dragon.read',
   name: '番茄免费小说',
+  deprecatedKeys: [11],
   groups: [
     {
       key: -1,
@@ -20,7 +21,7 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '阅读页面底部广告',
+      name: '卡片式广告',
       activityIds: [
         'com.dragon.read.ad.banner.ui',
         'com.dragon.read.reader.ReaderActivity',
@@ -28,26 +29,38 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: 0,
           matches: '@[clickable=true] TextView[text="关闭此条广告"]',
         },
         {
+          key: 1,
           matches: '@ImageView - LinearLayout TextView[text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/12908734',
         },
         {
+          key: 2,
           matches:
-            '[id="com.dragon.read:id/root_view"] >n ViewGroup[childCount=4] > @FrameLayout[id!=null][clickable=true][childCount=1] > ImageView[visibleToUser=true]',
+            'FrameLayout > FrameLayout > ViewGroup[childCount=4] > @FrameLayout[clickable=true][visibleToUser=true] > ImageView',
           snapshotUrls: [
             'https://i.gkd.li/import/12716444',
             'https://i.gkd.li/import/13062909', // 误触
           ],
+        },
+        {
+          key: 3,
+          quickFind: true,
+          matches:
+            '[id="com.dragon.read:id/layout_banner_ad_bg"] > [id="com.dragon.read:id/close_button"]',
+          snapshotUrls: 'https://i.gkd.li/import/13520314',
         },
       ],
     },
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: 'com.dragon.read.update',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: '@[text="以后再说"] + [text="优先体验"]',
       snapshotUrls: 'https://i.gkd.li/import/12716477',
     },
@@ -77,9 +90,19 @@ export default defineAppConfig({
           key: 0,
           name: '电商惊喜券',
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          quickFind: true,
           matches:
-            '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"] ',
+            '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"]',
           snapshotUrls: 'https://i.gkd.li/import/12910159',
+        },
+        {
+          key: 1,
+          name: '爆款好物一分购',
+          quickFind: true,
+          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          matches:
+            '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
+          snapshotUrls: 'https://i.gkd.li/import/12878266',
         },
       ],
     },
@@ -97,24 +120,35 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 5,
+      name: '广告弹窗',
+      rules: [
+        {
+          key: 0,
+          name: '阅读页面广告弹窗-点击反馈按钮',
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches: '[text="反馈"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13520160',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '阅读页面广告弹窗-点击不感兴趣',
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          quickFind: true,
+          matches: '[id="com.dragon.read:id/ad_feedback_not_interest"]',
+          snapshotUrls: 'https://i.gkd.li/import/13520219',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 10,
       name: '请求通知权限弹窗',
       desc: '自动点击【取消】',
       activityIds: 'com.dragon.read.widget.ConfirmDialogBuilder',
-      rules:
-        '@[text="取消"] < LinearLayout -2 LinearLayout > [text="开启推送提醒"]',
+      rules: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
       snapshotUrls: 'https://i.gkd.li/import/12716592',
-    },
-    {
-      key: 11,
-      name: '广告弹窗',
-      desc: '点击底部圆形x图标',
-      quickFind: true,
-      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-      rules:
-        '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
-      snapshotUrls: 'https://i.gkd.li/import/12878266',
     },
     {
       key: 12,
