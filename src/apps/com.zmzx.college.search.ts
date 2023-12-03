@@ -68,6 +68,23 @@ export default defineAppConfig({
           ],
           snapshotUrls: 'https://i.gkd.li/import/13451304',
         },
+        {
+          key: 3,
+          name: '字节广告-1',
+          activityIds:
+            'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
+          matches:
+            '[id="com.zmzx.college.search:id/ad_flag_source_layout"] + [id="com.zmzx.college.search:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13522998',
+        },
+        {
+          key: 4,
+          name: '字节广告-2',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
+          matches: '@Image < View +3 View > View > TextView[text$="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13523288',
+        },
       ],
     },
     {
