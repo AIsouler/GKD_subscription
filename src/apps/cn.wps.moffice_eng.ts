@@ -103,5 +103,26 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '文档末尾广告',
+      activityIds: [
+        'cn.wps.moffice.writer.multiactivity.Writer', //Writer1,Writer2...
+      ],
+      rules: [
+        {
+          key: 1,
+          matches:
+            '[id="cn.wps.moffice_eng:id/doc_end_ad_container_main"] >2 [id="cn.wps.moffice_eng:id/btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13513911',
+        },
+        {
+          preKeys: 1,
+          key: 2,
+          matches: '[text="关闭当前广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13513914',
+        },
+      ],
+    },
   ],
 });
