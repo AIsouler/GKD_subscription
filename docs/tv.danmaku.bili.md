@@ -48,6 +48,7 @@
 
 - [快照-0](https://i.gkd.li/import/12892611)
 - [快照-1](https://i.gkd.li/import/13308344)
+- [快照-2](https://i.gkd.li/import/13538048)
 
 ## 直播间卡片广告
 

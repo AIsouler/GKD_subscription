@@ -7,6 +7,8 @@
 - [快照-0](https://i.gkd.li/import/12684539)
 - [快照-1](https://i.gkd.li/import/12684565)
 - [快照-2](https://i.gkd.li/import/12684579)
+- [快照-3](https://i.gkd.li/import/13486087)
+- [快照-4](https://i.gkd.li/import/13486740)
 
 ## 更新弹窗
 

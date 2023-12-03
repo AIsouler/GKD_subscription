@@ -4,11 +4,11 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/12514049)
+- [快照-0](https://i.gkd.li/import/13533782)
 
 ## VIP弹窗
 
 直接关闭所有该样式弹窗
 
-- [快照-0](https://i.gkd.li/import/13365087)
-- [快照-1](https://i.gkd.li/import/13365085)
+- [快照-0](https://i.gkd.li/import/13533795)
+- [快照-1](https://i.gkd.li/import/13533797)

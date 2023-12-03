@@ -23,6 +23,8 @@
 - [快照-2](https://i.gkd.li/import/13345633)
 - [快照-3](https://i.gkd.li/import/13346628)
 - [快照-4](https://i.gkd.li/import/13451304)
+- [快照-5](https://i.gkd.li/import/13522998)
+- [快照-6](https://i.gkd.li/import/13523288)
 
 ## 资料库-弹窗广告
 

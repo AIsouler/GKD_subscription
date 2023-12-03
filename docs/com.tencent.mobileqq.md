@@ -1,6 +1,6 @@
 # QQ
 
-存在 19 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 20 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -135,3 +135,9 @@ NT QQ 登录时自动点击允许登录QQ
 
 - [快照-0](https://i.gkd.li/import/13188722)
 - [快照-1](https://i.gkd.li/import/13255493)
+
+## 内测邀请弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13526551)

@@ -1,6 +1,6 @@
 # 淘宝
 
-存在 9 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
+存在 10 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
 
 ## 开屏广告
 
@@ -20,6 +20,10 @@
 
 - [快照-0](https://i.gkd.li/import/12642795)
 - [快照-1](https://i.gkd.li/import/13197877)
+
+## 悬浮广告
+
+- [快照-0](https://i.gkd.li/import/13521702)
 
 ## 开启系统通知提示
 

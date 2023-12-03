@@ -39,6 +39,7 @@
 - [快照-0](https://i.gkd.li/import/12700407)
 - [快照-1](https://i.gkd.li/import/12700433)
 - [快照-2](https://i.gkd.li/import/13043079)
+- [快照-3](https://i.gkd.li/import/13526547)
 
 ## 请求通知权限弹窗
 

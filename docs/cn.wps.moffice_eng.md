@@ -1,6 +1,6 @@
 # WPS
 
-存在 5 规则组 - [cn.wps.moffice_eng](/src/apps/cn.wps.moffice_eng.ts)
+存在 6 规则组 - [cn.wps.moffice_eng](/src/apps/cn.wps.moffice_eng.ts)
 
 ## 开屏广告
 
@@ -34,3 +34,8 @@
 - [快照-1](https://i.gkd.li/import/12882610)
 - [快照-2](https://i.gkd.li/import/12882678)
 - [快照-3](https://i.gkd.li/import/12882554)
+
+## 文档末尾广告
+
+- [快照-0](https://i.gkd.li/import/13513911)
+- [快照-1](https://i.gkd.li/import/13513914)
