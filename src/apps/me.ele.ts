@@ -70,25 +70,31 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          name: '天天特价',
           activityIds: [
             'me.ele.component.pops2.Pops2MistDialog',
             'me.ele.newbooking.checkout.entrypoint.WMCheckoutActivity',
+            'me.ele.application.ui.Launcher.LauncherActivity',
           ],
           matches:
             '@ImageView[clickable=true] - ImageView < [id="me.ele:id/id_magex_mistview"][childCount=2]',
           snapshotUrls: [
             'https://i.gkd.li/import/12726709',
             'https://i.gkd.li/import/13476719',
+            'https://i.gkd.li/import/13523508',
           ],
         },
         {
           key: 2,
-          name: '全能超市-活动弹窗',
-          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+          activityIds: [
+            'me.ele.application.ui.Launcher.LauncherActivity',
+            'me.ele.application.ui.Launcher.LauncherActivity',
+          ],
           matches:
             '[id="me.ele:id/fl_render_e_shop"] + FrameLayout >n ViewGroup[childCount=6] > View[index=5]',
-          snapshotUrls: 'https://i.gkd.li/import/13476611',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13476611',
+            'https://i.gkd.li/import/13523541',
+          ],
         },
       ],
     },
