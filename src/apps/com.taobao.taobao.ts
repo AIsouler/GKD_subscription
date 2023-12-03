@@ -63,6 +63,20 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 3,
+      name: '悬浮广告',
+      rules: [
+        {
+          key: 0,
+          name: '商品详情右侧悬浮广告',
+          activityIds: 'com.taobao.browser.BrowserActivity',
+          matches:
+            'View[childCount=2] > @Image[text!=""][clickable=true] + View',
+          snapshotUrls: 'https://i.gkd.li/import/13521702',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 8,
       name: '开启系统通知提示',
