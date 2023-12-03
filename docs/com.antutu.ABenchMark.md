@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/13233875)
+- [快照-1](https://i.gkd.li/import/13538328)
 
 ## 广告卡片
 

@@ -8,16 +8,21 @@
 
 ## 首页推荐卡片广告
 
+默认禁用 - 需二次点击关闭原因
+
 - [快照-0](https://i.gkd.li/import/12660816)
 - [快照-1](https://i.gkd.li/import/12711589)
 
 ## 升级弹窗
 
-- [快照-0](https://i.gkd.li/import/12711631)
+- [快照-0](https://i.gkd.li/import/13534445)
 
-## 首页直播推荐窗口
+## 右下角悬浮窗
 
 - [快照-0](https://i.gkd.li/import/12798338)
+- [快照-1](https://i.gkd.li/import/13535531)
+- [快照-2](https://i.gkd.li/import/13535933)
+- [快照-3](https://i.gkd.li/import/13535932)
 
 ## 文章底部广告
 

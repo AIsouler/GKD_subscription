@@ -1,6 +1,6 @@
 # 微信
 
-存在 16 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 17 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -27,6 +27,9 @@
 ## 电脑微信快捷自动登录
 
 默认禁用
+
+- [快照-0](https://i.gkd.li/import/13522625)
+- [快照-1](https://i.gkd.li/import/13522577)
 
 ## 浏览器扫码微信登录自动授权
 
@@ -93,7 +96,7 @@
 
 默认禁用 - 自动点击底部左侧[查看原图（*M）]按钮
 
-- [快照-0](https://i.gkd.li/import/12706944)
+- [快照-0](https://i.gkd.li/import/13523031)
 
 ## 微信小程序-开屏广告
 
@@ -134,3 +137,7 @@
 
 - [快照-0](https://i.gkd.li/import/13298294)
 - [快照-1](https://i.gkd.li/import/13327022)
+
+## 青少年模式弹窗
+
+- [快照-0](https://i.gkd.li/import/13538145)

@@ -1,6 +1,6 @@
 # 爱奇艺
 
-存在 5 规则组 - [com.qiyi.video](/src/apps/com.qiyi.video.ts)
+存在 6 规则组 - [com.qiyi.video](/src/apps/com.qiyi.video.ts)
 
 ## 开屏广告
 
@@ -20,3 +20,10 @@
 ## 版本更新弹窗
 
 - [快照-0](https://i.gkd.li/import/12838158)
+
+## 播放页-插入广告
+
+默认禁用 - 视频播放前或播放中途插入的广告。默认关闭。
+
+- [快照-0](https://i.gkd.li/import/13536669)
+- [快照-1](https://i.gkd.li/import/13536703)

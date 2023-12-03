@@ -6,9 +6,9 @@
 
 - [快照-0](https://i.gkd.li/import/12700920)
 
-## 广告卡片
+## 卡片式广告
 
-默认禁用 - 点击【x】-【直接关闭】
+默认禁用 - 有二次确认弹窗
 
 - [快照-0](https://i.gkd.li/import/12829944)
 - [快照-1](https://i.gkd.li/import/12723229)
@@ -16,6 +16,9 @@
 - [快照-3](https://i.gkd.li/import/12829964)
 - [快照-4](https://i.gkd.li/import/12829953)
 - [快照-5](https://i.gkd.li/import/12829967)
+- [快照-6](https://i.gkd.li/import/13526986)
+- [快照-7](https://i.gkd.li/import/13526711)
+- [快照-8](https://i.gkd.li/import/13526712)
 
 ## 我的页面-中间滚动广告
 
@@ -47,10 +50,11 @@
 - [快照-1](https://i.gkd.li/import/13197457)
 - [快照-2](https://i.gkd.li/import/13228878)
 
-## 播放界面右上角-免费听歌
+## 播放界面广告
 
-默认禁用
+默认禁用 - 右上角VIP小悬浮、巨幅卡片式广告
 
 - [快照-0](https://i.gkd.li/import/13402634)
 - [快照-1](https://i.gkd.li/import/13402635)
 - [快照-2](https://i.gkd.li/import/13402636)
+- [快照-3](https://i.gkd.li/import/13527105)

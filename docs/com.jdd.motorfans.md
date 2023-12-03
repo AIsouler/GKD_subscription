@@ -2,7 +2,7 @@
 
 存在 3 规则组 - [com.jdd.motorfans](/src/apps/com.jdd.motorfans.ts)
 
-## 第三方 SDK 广告弹窗
+## 弹窗广告
 
 - [示例-0](https://user-images.githubusercontent.com/44717382/270852019-b0296eaa-a378-49b3-877b-acefca2a7d58.gif)
 
