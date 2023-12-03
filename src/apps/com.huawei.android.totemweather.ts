@@ -26,14 +26,15 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 1,
-      name: '广告卡片',
+      name: '卡片式广告',
       quickFind: true,
-      activityIds:
-        'com.huawei.android.totemweather.composite.MarketCompositeActivity',
       rules: [
         {
           key: 0,
+          activityIds:
+            'com.huawei.android.totemweather.composite.MarketCompositeActivity',
           matches:
             '[id="com.huawei.android.totemweather:id/promote_ad_cancel"]',
           snapshotUrls: 'https://i.gkd.li/import/13218197',
@@ -41,9 +42,17 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 1,
+          activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
           matches:
             '[id="com.huawei.android.totemweather:id/feedback_negative_flv"] > [text="直接关闭"]',
           snapshotUrls: 'https://i.gkd.li/import/13259434',
+        },
+        {
+          key: 2,
+          activityIds: 'com.huawei.android.totemweather.WeatherMainActivity',
+          matches:
+            '[id="com.huawei.android.totemweather:id/ad_cancel"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13521221',
         },
       ],
     },
