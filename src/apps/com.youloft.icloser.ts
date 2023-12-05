@@ -8,22 +8,22 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchLauncher: true,
-      activityIds: [
-        'com.youloft.icloser.splash.AdSplashActivity',
-        'com.youloft.icloser.splash.SplashActivity',
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: [
-            'TextView[text^="跳过"]',
-            '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          ],
+          key: 0,
+          matches: '[text^="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/import/12910405',
-            'https://i.gkd.li/import/13072365',
             'https://i.gkd.li/import/13175102',
           ],
+        },
+        {
+          key: 1,
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13072365',
         },
       ],
     },
