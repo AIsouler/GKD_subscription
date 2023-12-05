@@ -35,5 +35,25 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.huawei.watchface.api.WebViewActivity',
+          matches:
+            'View[childCount=2] > View + View[childCount=1] > Image[childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13546292',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '请求开启个性化推荐弹窗',
+      activityIds: 'com.huawei.watchface.api.WebViewActivity',
+      rules: '[text="开启个性化推荐"] +2 [text="开启"] + Button',
+      snapshotUrls: 'https://i.gkd.li/import/13546292',
+    },
   ],
 });
