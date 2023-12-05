@@ -20,7 +20,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '快手广告',
+          name: '快手广告-1',
           activityIds: 'com.ys.resemble.ui.login.splash.SplashADSetActivity',
           matches: [
             'ViewGroup > ViewGroup > [text="广告"]',
@@ -30,6 +30,26 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          name: '快手广告-2',
+          activityIds: 'com.ys.resemble.ui.MainActivity',
+          matches: [
+            'ViewGroup > ViewGroup > [text="广告"]',
+            '@ViewGroup > [text="跳过"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13546700',
+        },
+        {
+          key: 2,
+          name: '快手广告-3',
+          activityIds: 'com.ys.resemble.ui.MainActivity',
+          matches: [
+            'ViewGroup > ViewGroup > [text="广告"]',
+            'ViewGroup > @ViewGroup[childCount=1] > ImageView[childCount=0]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13546701',
+        },
+        {
+          key: 3,
           name: '腾讯广告',
           activityIds: 'com.ys.resemble.ui.login.splash.SplashADSetActivity',
           matches:
