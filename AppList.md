@@ -15,6 +15,7 @@
 | CSDN                   | [net.csdn.csdnplus](/docs/net.csdn.csdnplus.md)                                                   | 5/4启用/1禁用   |
 | CTM Buddy              | [com.ctm](/docs/com.ctm.md)                                                                       | 3               |
 | Cellular-Z             | [make.more.r2d2.cellular_z](/docs/make.more.r2d2.cellular_z.md)                                   | 1               |
+| ECOVACS HOME           | [com.eco.global.app](/docs/com.eco.global.app.md)                                                 | 1               |
 | EMobile7               | [com.weaver.emobile7](/docs/com.weaver.emobile7.md)                                               | 1               |
 | Edifier Connect        | [com.edifier.edifierconnect](/docs/com.edifier.edifierconnect.md)                                 | 1               |
 | FOWL                   | [vstc.AKCXKJ.client](/docs/vstc.AKCXKJ.client.md)                                                 | 1               |

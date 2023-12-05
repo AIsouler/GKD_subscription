@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v171
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v172
 
-当前订阅文件已适配 801 个 APP, 共有 1683 规则组
+当前订阅文件已适配 802 个 APP, 共有 1684 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -12,7 +12,7 @@ GKD 默认订阅规则
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=171)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=172)
 
 ## 其它
 
