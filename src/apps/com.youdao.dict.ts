@@ -58,5 +58,16 @@ export default defineAppConfig({
       quickFind: true,
       snapshotUrls: 'https://i.gkd.li/import/13263706',
     },
+    {
+      key: 5,
+      name: '评价弹窗',
+      activityIds: 'com.youdao.dict.activity.MainActivity',
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      matchDelay: 10000,
+      rules: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
+      snapshotUrls: 'https://i.gkd.li/import/13540941',
+    },
   ],
 });
