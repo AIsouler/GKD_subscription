@@ -68,5 +68,15 @@ export default defineAppConfig({
         '[id="com.chinatelecom.bestpayclient:id/best_h5_container"] View[childCount=2] > @View[clickable=true] +  View[clickable=true] > Image[text!=null]',
       snapshotUrls: 'https://i.gkd.li/import/13402711',
     },
+    {
+      key: 5,
+      name: '年底积分活动弹窗',
+      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      matchTime: 10000,
+      rules: 'View > View[index=1] > Image',
+      snapshotUrls: 'https://i.gkd.li/import/13543032',
+    },
   ],
 });
