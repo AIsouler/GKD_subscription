@@ -5,6 +5,7 @@
 ## 弹窗广告
 
 - [快照-0](https://i.gkd.li/import/13521556)
+- [快照-1](https://i.gkd.li/import/13546184)
 
 ## 卡片式广告
 

@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12847303)
+- [快照-1](https://i.gkd.li/import/13539641)
 
 ## 悬浮广告
 

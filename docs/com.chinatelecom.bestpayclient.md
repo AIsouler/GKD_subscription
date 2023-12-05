@@ -1,6 +1,6 @@
 # 翼支付
 
-存在 4 规则组 - [com.chinatelecom.bestpayclient](/src/apps/com.chinatelecom.bestpayclient.ts)
+存在 5 规则组 - [com.chinatelecom.bestpayclient](/src/apps/com.chinatelecom.bestpayclient.ts)
 
 ## 开屏广告
 
@@ -21,3 +21,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13402711)
+
+## 年底积分活动弹窗
+
+- [快照-0](https://i.gkd.li/import/13543032)

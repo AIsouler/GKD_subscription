@@ -1,6 +1,6 @@
 # 网易有道词典
 
-存在 5 规则组 - [com.youdao.dict](/src/apps/com.youdao.dict.ts)
+存在 6 规则组 - [com.youdao.dict](/src/apps/com.youdao.dict.ts)
 
 ## 开屏广告
 
@@ -23,3 +23,7 @@
 ## VIP-弹窗
 
 - [快照-0](https://i.gkd.li/import/13263706)
+
+## 评价弹窗
+
+- [快照-0](https://i.gkd.li/import/13540941)
