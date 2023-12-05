@@ -16,6 +16,16 @@ export default defineAppConfig({
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13521556',
         },
+        {
+          key: 1,
+          name: '快手广告',
+          activityIds: 'com.feiyu.morin.view.main.MainActivity',
+          matches: [
+            'ViewGroup[childCount=2] > ImageView + [text="广告"]',
+            '@ViewGroup > [text="跳过"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13546184',
+        },
       ],
     },
     {
