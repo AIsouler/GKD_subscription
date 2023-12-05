@@ -54,6 +54,14 @@ export default defineAppConfig({
           matches: '[id="com.ximalaya.ting.android:id/host_game_close_tv"]',
           snapshotUrls: 'https://i.gkd.li/import/12927110',
         },
+        {
+          key: 2,
+          name: '体验会员广告',
+          matches: '[id="com.ximalaya.ting.android:id/main_iv_close"]',
+          exampleUrls:
+            'https://m.gkd.li/6328439/ea870e6f-07c9-4167-ab62-03e52838110b',
+          snapshotUrls: 'https://i.gkd.li/import/13546642',
+        },
       ],
     },
     {
