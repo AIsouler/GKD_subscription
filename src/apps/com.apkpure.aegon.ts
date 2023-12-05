@@ -74,5 +74,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '添加桌面快捷方式',
+      desc: '下次添加',
+      rules: [
+        {
+          activityIds: 'com.apkpure.aegon.main.activity.MainTabActivity',
+          matches: '[id="com.apkpure.aegon:id/arg"][text="下次添加"]',
+          snapshotUrls: 'https://i.gkd.li/import/13416401',
+        },
+      ],
+    },
   ],
 });
