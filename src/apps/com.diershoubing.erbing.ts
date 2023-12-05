@@ -14,9 +14,11 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches:
-            '@[id="com.byted.pangle:id/tt_splash_skip_btn"] <<n [id="com.diershoubing.erbing:id/containerV"]',
-          snapshotUrls: 'https://i.gkd.li/import/13378853',
+          matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13378853',
+            'https://i.gkd.li/import/13546165',
+          ],
         },
         {
           key: 1,
