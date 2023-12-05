@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '第三方 SDK 广告弹窗',
+      name: '弹窗广告',
       rules: [
         {
           key: 0,
@@ -22,8 +22,10 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          name: '腾讯广告-1',
           activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
-          matches: 'ImageView -n FrameLayout > FrameLayout > ImageView',
+          matches:
+            'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
             'https://i.gkd.li/import/12781461',
             'https://i.gkd.li/import/13488673',
@@ -31,27 +33,36 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          activityIds: [
-            'com.klcxkj.zqxy.ui.main.MainActivity',
-            'com.klcxkj.zqxy.ui.device.apartment.ble.BathingBleActivity',
-          ],
+          name: '腾讯广告-2',
+          activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
           matches:
-            'ImageView < FrameLayout[childCount=1] - FrameLayout > @FrameLayout[childCount=1] > ImageView',
+            'ImageView <(1,2) FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
+            'https://i.gkd.li/import/13546464',
             'https://i.gkd.li/import/13071301',
             'https://i.gkd.li/import/13274836',
           ],
         },
         {
           key: 3,
+          name: '腾讯广告-3',
+          activityIds:
+            'com.klcxkj.zqxy.ui.device.apartment.ble.BathingBleActivity',
+          matches:
+            'ImageView -n FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13274836',
+        },
+        {
+          key: 4,
+          name: '字节广告',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12781461',
         },
         {
-          key: 4,
+          key: 5,
+          name: '吉欣广告',
           activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
           matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13274838',
