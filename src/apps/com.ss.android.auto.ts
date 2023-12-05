@@ -31,10 +31,16 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/12660816',
         },
         {
+          // 不与旧版本合并，尽量使用[clickable=true]，保证速度避免误触
           preKeys: 1,
-          name: '点击【不感兴趣】',
-          matches:
-            '[text$="精准屏蔽"] + [text="不感兴趣"][id!=null][clickable=true]',
+          name: '点击【不感兴趣】1', // 懂车帝v7.8.4样式
+          matches: '@ViewGroup[clickable=true] TextView[text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/import/13538627',
+        },
+        {
+          preKeys: 1,
+          name: '点击【不感兴趣】2', // 懂车帝v7.7.4样式
+          matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12711589',
         },
       ],
@@ -72,17 +78,18 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '文章底部广告',
+      name: '文章底部卡片式广告',
       quickFind: true,
       activityIds:
         'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
       rules:
-        '@ImageView[clickable=true] <2 RelativeLayout[childCount=4][id!=null] > TextView[text="广告"][id!=null]',
+        'FrameLayout > RelativeLayout > @ImageView[clickable=true] + [text="广告"]',
       snapshotUrls: 'https://i.gkd.li/import/12811597',
     },
     {
       key: 5,
-      name: '评论区广告',
+      name: '评论区信息流广告',
+      desc: '像正常内容的广告',
       quickFind: true,
       activityIds: [
         'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
@@ -90,7 +97,7 @@ export default defineAppConfig({
         'com.ss.android.auto.ugc.video.activity.UgcNewDetailActivity',
       ],
       rules:
-        'RelativeLayout[childCount=5][id=null] > @ImageView[clickable=true][id!=null] - LinearLayout[childCount=2][id!=null] > TextView[text="广告"][id!=null]',
+        'FrameLayout > RelativeLayout > @ImageView[clickable=true] - LinearLayout > [text="广告"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12811459',
         'https://i.gkd.li/import/12825865',
@@ -104,8 +111,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.ss.android.auto.activity.SplashActivity',
-      rules:
-        '@TextView[clickable=true && text.length =1] + [text ^="打开推送通知"]',
+      rules: '@TextView[clickable=true] + [text^="打开推送通知"]',
       snapshotUrls: 'https://i.gkd.li/import/12840664',
     },
   ],
