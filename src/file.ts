@@ -98,19 +98,6 @@ export const writeConfig = async (config: SubscriptionConfig) => {
   const buffer = Buffer.from(orderdStringify5(newConfig, sortKeys), 'utf-8');
   await fs.writeFile(gkdFp, buffer);
 
-  // update gkd.openad.json
-  const onlyOpenAdConfig = _.cloneDeep(newConfig);
-  onlyOpenAdConfig.apps.forEach((a) => {
-    a.groups?.forEach((g) => {
-      g.enable = g.name.startsWith('开屏广告');
-    });
-  });
-  await fs.writeFile(
-    process.cwd() + '/dist/gkd.openad.json',
-    orderdStringify(onlyOpenAdConfig, sortKeys),
-    'utf-8',
-  );
-
   // update gkd.version.json
   await fs.writeFile(
     versionFp,
@@ -439,17 +426,7 @@ export const updateReadMeMd = async (
     newConfig.apps
       .map((app) => {
         const groups = app.groups || [];
-        const diabledSize = _.sumBy(groups, (g) =>
-          g.enable === false ? 1 : 0,
-        );
-
-        return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${
-          diabledSize
-            ? `${groups.length}/${
-                groups.length - diabledSize
-              }启用/${diabledSize}禁用`
-            : groups.length
-        } |`;
+        return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`;
       })
       .join('\n');
   const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
