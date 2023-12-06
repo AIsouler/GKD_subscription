@@ -4,9 +4,13 @@
 
 ## 版本升级弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12838034)
 - [快照-1](https://i.gkd.li/import/12840591)
 
 ## 首页-广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12840619)

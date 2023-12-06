@@ -8,10 +8,14 @@
 
 ## 版本更新
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12650280)
 - [快照-1](https://i.gkd.li/import/13206819)
 
 ## 红包弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12650238)
 - [快照-1](https://i.gkd.li/import/13294893)
@@ -22,6 +26,8 @@
 
 ## 活动弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12726709)
 - [快照-1](https://i.gkd.li/import/13476719)
 - [快照-2](https://i.gkd.li/import/13523508)
@@ -30,8 +36,12 @@
 
 ## 付款后广告弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13205301)
 
 ## 吃货卡续费弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13295007)

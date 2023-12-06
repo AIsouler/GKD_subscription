@@ -4,6 +4,8 @@
 
 ## 应用内广告弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12813618)
 - [快照-1](https://i.gkd.li/import/12903835)
 - [快照-2](https://i.gkd.li/import/12903885)

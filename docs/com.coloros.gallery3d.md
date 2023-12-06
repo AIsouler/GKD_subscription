@@ -4,6 +4,8 @@
 
 ## 更新提示
 
+默认禁用
+
 - [示例-0](https://m.gkd.li/47232102/0dae9f4b-8432-4cf4-b648-07ae17cdece2)
 
 - [快照-0](https://i.gkd.li/import/13554797)

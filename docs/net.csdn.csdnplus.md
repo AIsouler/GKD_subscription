@@ -9,10 +9,14 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12673693)
 - [快照-1](https://i.gkd.li/import/12673654)
 
 ## 信息流广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12673738)
 - [快照-1](https://i.gkd.li/import/13224538)
@@ -20,6 +24,8 @@
 - [快照-3](https://i.gkd.li/import/13224551)
 
 ## 关闭好评弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13251085)
 

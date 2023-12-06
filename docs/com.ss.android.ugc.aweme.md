@@ -9,7 +9,11 @@
 
 ## 关闭青少年弹窗
 
+默认禁用
+
 ## 关闭用户推荐
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12520962)
 - [快照-1](https://i.gkd.li/import/12520943)
@@ -19,25 +23,33 @@
 
 ## 关闭朋友推荐弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12525387)
 - [快照-1](https://i.gkd.li/import/12525389)
 
 ## 关闭更新弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12534016)
 - [快照-1](https://i.gkd.li/import/13328599)
 
 ## 首页左上角广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12749276)
 
 ## 广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12769137)
 
 ## 去商店评分
 
-点击[取消]
+默认禁用 - 点击[取消]
 
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008)
 
@@ -72,8 +84,12 @@
 
 ## 添加搜索到桌面弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13338556)
 
 ## 视频播放中途插入的打招呼界面
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13379307)

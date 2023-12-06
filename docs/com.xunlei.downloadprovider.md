@@ -8,6 +8,8 @@
 
 ## 视频详情页广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12707701)
 - [快照-1](https://i.gkd.li/import/12707717)
 - [快照-2](https://i.gkd.li/import/12707702)
@@ -16,7 +18,7 @@
 
 ## 视频详情-直播推荐
 
-自动点击【减少推荐】
+默认禁用 - 自动点击【减少推荐】
 
 - [快照-0](https://i.gkd.li/import/12707701)
 - [快照-1](https://i.gkd.li/import/12707710)
@@ -56,13 +58,19 @@
 
 ## 搜索页面-顶部banner广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12882892)
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13228920)
 
 ## 会员续费广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12707698)
 - [快照-1](https://i.gkd.li/import/13448909)

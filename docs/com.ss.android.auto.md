@@ -16,9 +16,13 @@
 
 ## 升级弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13534445)
 
 ## 右下角悬浮窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12798338)
 - [快照-1](https://i.gkd.li/import/13535531)
@@ -27,16 +31,20 @@
 
 ## 文章底部卡片式广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12811597)
 
 ## 评论区信息流广告
 
-像正常内容的广告
+默认禁用 - 像正常内容的广告
 
 - [快照-0](https://i.gkd.li/import/12811459)
 - [快照-1](https://i.gkd.li/import/12825865)
 - [快照-2](https://i.gkd.li/import/12900666)
 
 ## 请求推送通知弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12840664)

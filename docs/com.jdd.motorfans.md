@@ -4,6 +4,8 @@
 
 ## 弹窗广告
 
+默认禁用
+
 - [示例-0](https://user-images.githubusercontent.com/44717382/270852019-b0296eaa-a378-49b3-877b-acefca2a7d58.gif)
 
 - [快照-0](https://i.gkd.li/import/12733646)
@@ -17,9 +19,13 @@
 
 ## 信息流广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12826382)
 - [快照-1](https://i.gkd.li/import/12829069)
 
 ## 文章内容弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12888087)

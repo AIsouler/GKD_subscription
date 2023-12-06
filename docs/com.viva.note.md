@@ -10,10 +10,14 @@
 
 ## 应用内通知
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12888361)
 - [快照-1](https://i.gkd.li/import/12888389)
 
 ## 应用内弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12888388)
 - [快照-1](https://i.gkd.li/import/12888419)

@@ -12,11 +12,15 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12685000)
 - [快照-1](https://i.gkd.li/import/12840104)
 - [快照-2](https://i.gkd.li/import/13316081)
 
 ## 浮窗广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13262675)
 - [快照-1](https://i.gkd.li/import/13274622)

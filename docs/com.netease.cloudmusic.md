@@ -22,13 +22,19 @@
 
 ## 我的页面-中间滚动广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12745666)
 
 ## 主页-免费听歌
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12843383)
 
 ## 广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13188737)
 - [快照-1](https://i.gkd.li/import/13229016)
@@ -45,6 +51,8 @@
 - [快照-5](https://i.gkd.li/import/13391498)
 
 ## 更新弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13233790)
 - [快照-1](https://i.gkd.li/import/13197457)

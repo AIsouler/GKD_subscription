@@ -9,9 +9,13 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12706195)
 
 ## 第三方 SDK 广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12706209)
 - [快照-1](https://i.gkd.li/import/12706209)

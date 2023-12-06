@@ -8,9 +8,13 @@
 
 ## 公告弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13455634)
 
 ## 广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13455628)
 - [快照-1](https://i.gkd.li/import/13455629)

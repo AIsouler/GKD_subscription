@@ -29,6 +29,8 @@
 
 ## 频道页面广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13206663)
 - [快照-1](https://i.gkd.li/import/12642081)
 - [快照-2](https://i.gkd.li/import/12708844)
@@ -54,11 +56,13 @@
 
 ## 动态广告卡片
 
-点击右上角[广告]右侧的x按钮直接关闭
+默认禁用 - 点击右上角[广告]右侧的x按钮直接关闭
 
 - [快照-0](https://i.gkd.li/import/12749584)
 
 ## 扫一扫-登录确认
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12789287)
 - [快照-1](https://i.gkd.li/import/13166314)
@@ -70,6 +74,8 @@
 - [快照-0](https://i.gkd.li/import/12855441)
 
 ## 我的等级-浮窗广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12914734)
 
@@ -98,12 +104,14 @@
 
 ## QQ小程序开屏广告
 
-点击右下角跳过
+默认禁用 - 点击右下角跳过
 
 - [快照-0](https://i.gkd.li/import/12877215)
 - [快照-1](https://i.gkd.li/import/12919195)
 
 ## 黄钻-弹窗广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12914978)
 - [快照-1](https://i.gkd.li/import/12914886)
@@ -119,11 +127,13 @@
 
 ## NT QQ-登录确认
 
-NT QQ 登录时自动点击允许登录QQ
+默认禁用 - NT QQ 登录时自动点击允许登录QQ
 
 - [快照-0](https://i.gkd.li/import/13063027)
 
 ## 更新弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13188721)
 - [快照-1](https://i.gkd.li/import/13386719)

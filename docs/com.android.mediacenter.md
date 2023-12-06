@@ -12,7 +12,7 @@
 
 ## VIP广告弹窗
 
-点击底部圆形x图标关闭弹窗
+默认禁用 - 点击底部圆形x图标关闭弹窗
 
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/433dd71c-4fe5-41c9-a2da-dd3ac29f8dd4)
 
@@ -20,7 +20,7 @@
 
 ## 推荐广告卡片
 
-点击卡片右上角[广告],点击不感兴趣[直接关闭]
+默认禁用 - 点击卡片右上角[广告],点击不感兴趣[直接关闭]
 
 - [示例-0](https://github.com/gkd-kit/inspect/assets/38517192/37ee4a9b-2518-41e6-8227-7b204ed1bf61)
 - [示例-1](https://github.com/gkd-kit/inspect/assets/38517192/d098a194-80ff-49a1-b80e-191f7574a816)

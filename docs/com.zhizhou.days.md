@@ -4,6 +4,8 @@
 
 ## 第三方 SDK 广告弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12727499)
 - [快照-1](https://i.gkd.li/import/12739678)
 - [快照-2](https://i.gkd.li/import/12727528)

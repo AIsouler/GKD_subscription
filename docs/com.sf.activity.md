@@ -9,9 +9,13 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12642445)
 - [快照-1](https://i.gkd.li/import/13291144)
 
 ## 专属月报弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642441)

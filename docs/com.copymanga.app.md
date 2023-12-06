@@ -11,6 +11,8 @@
 
 ## 弹窗广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13259085)
 - [快照-1](https://i.gkd.li/import/12504486)
 - [快照-2](https://i.gkd.li/import/12504488)
@@ -31,18 +33,26 @@
 
 ## 加入书架按钮下面的广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12504525)
 - [快照-1](https://i.gkd.li/import/12851671)
 - [快照-2](https://i.gkd.li/import/12909005)
 
 ## 关闭赞助提示
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12851627)
 
 ## 自动确认线路
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13233179)
 
 ## 关闭提示
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13233180)
