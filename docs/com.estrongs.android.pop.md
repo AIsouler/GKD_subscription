@@ -4,10 +4,14 @@
 
 ## 内部弹窗广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12509667)
 - [快照-1](https://i.gkd.li/import/12509669)
 
 ## 主页广告卡片
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12674919)
 - [快照-1](https://i.gkd.li/import/12818281)

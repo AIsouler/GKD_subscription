@@ -9,6 +9,8 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13379094)
 - [快照-1](https://i.gkd.li/import/13379426)
 
@@ -19,6 +21,8 @@
 - [快照-0](https://i.gkd.li/import/13473388)
 
 ## 首页-地图页面上方消息提醒
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642830)
 

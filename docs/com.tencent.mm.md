@@ -100,6 +100,8 @@
 
 ## 微信小程序-开屏广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12701979)
 - [快照-1](https://i.gkd.li/import/12777076)
 - [快照-2](https://i.gkd.li/import/12785012)
@@ -139,5 +141,7 @@
 - [快照-1](https://i.gkd.li/import/13327022)
 
 ## 青少年模式弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13538145)

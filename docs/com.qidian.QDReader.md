@@ -8,16 +8,22 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12641026)
 - [快照-1](https://i.gkd.li/import/13116821)
 
 ## 青少年模式弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12640241)
 - [快照-1](https://i.gkd.li/import/12709168)
 - [快照-2](https://i.gkd.li/import/12905817)
 
 ## 活动弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12640195)
 - [快照-1](https://i.gkd.li/import/12640158)
@@ -26,11 +32,13 @@
 
 ## 请求通知权限提示信息
 
-点击顶部提醒左侧x按钮
+默认禁用 - 点击顶部提醒左侧x按钮
 
 - [快照-0](https://i.gkd.li/import/12640242)
 
 ## 悬浮广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12717032)
 - [快照-1](https://i.gkd.li/import/13459031)

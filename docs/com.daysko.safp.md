@@ -4,6 +4,8 @@
 
 ## 谷歌广告-全屏广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12642909)
 - [快照-1](https://i.gkd.li/import/12643316)
 - [快照-2](https://i.gkd.li/import/12643032)
@@ -12,7 +14,7 @@
 
 ## 谷歌广告-视频广告
 
-点击跳过视频-点击关闭按钮
+默认禁用 - 点击跳过视频-点击关闭按钮
 
 - [快照-0](https://i.gkd.li/import/12668269)
 - [快照-1](https://i.gkd.li/import/12642913)
@@ -22,6 +24,8 @@
 - [快照-5](https://i.gkd.li/import/12642983)
 
 ## 谷歌广告-页面底部广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642993)
 - [快照-1](https://i.gkd.li/import/12643229)

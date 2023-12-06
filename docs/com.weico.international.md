@@ -10,7 +10,7 @@
 
 ## 推荐流广告
 
-主页,搜索页
+默认禁用 - 主页,搜索页
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b)
 

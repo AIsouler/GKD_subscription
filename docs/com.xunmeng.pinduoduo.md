@@ -8,15 +8,21 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12642017)
 - [快照-1](https://i.gkd.li/import/13195645)
 
 ## 首页优惠弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12642015)
 - [快照-1](https://i.gkd.li/import/12642019)
 
 ## 活动弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642032)
 - [快照-1](https://i.gkd.li/import/12642038)
@@ -35,6 +41,8 @@
 - [快照-0](https://i.gkd.li/import/12642053)
 
 ## 多多视频悬浮窗广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642058)
 

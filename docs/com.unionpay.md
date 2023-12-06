@@ -8,18 +8,26 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12727278)
 
 ## 支付完成界面广告卡片
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13070564)
 - [快照-1](https://i.gkd.li/import/13070974)
 
 ## 右侧悬浮广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12695699)
 
 ## 定位权限悬浮弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12694508)
 
@@ -36,5 +44,7 @@
 - [快照-0](https://i.gkd.li/import/12695736)
 
 ## 获得新勋章提示
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13440341)

@@ -9,6 +9,8 @@
 
 ## 首页-底部广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13068836)
 - [快照-1](https://i.gkd.li/import/13375502)
 - [快照-2](https://i.gkd.li/import/13375559)

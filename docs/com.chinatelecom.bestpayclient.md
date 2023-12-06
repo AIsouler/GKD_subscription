@@ -8,9 +8,13 @@
 
 ## 版本更新
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13391544)
 
 ## 广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13402692)
 - [快照-1](https://i.gkd.li/import/13455790)
@@ -23,5 +27,7 @@
 - [快照-0](https://i.gkd.li/import/13402711)
 
 ## 年底积分活动弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13543032)

@@ -4,5 +4,7 @@
 
 ## 首页-信息流广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12905039)
 - [快照-1](https://i.gkd.li/import/12904633)

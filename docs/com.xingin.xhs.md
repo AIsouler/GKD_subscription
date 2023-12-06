@@ -9,6 +9,8 @@
 
 ## 通知权限弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/13195753)
 - [快照-1](https://i.gkd.li/import/13222356)
 - [快照-2](https://i.gkd.li/import/13256145)
@@ -16,6 +18,8 @@
 - [快照-4](https://i.gkd.li/import/13250418)
 
 ## 更新弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13246890)
 

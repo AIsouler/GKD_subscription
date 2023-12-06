@@ -12,6 +12,8 @@
 
 ## 弹窗广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12643276)
 - [快照-1](https://i.gkd.li/import/12868503)
 - [快照-2](https://i.gkd.li/import/12646420)
@@ -32,6 +34,8 @@
 - [快照-17](https://i.gkd.li/import/13458692)
 
 ## 首页-右侧浮窗广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12846543)
 - [快照-1](https://i.gkd.li/import/12868119)

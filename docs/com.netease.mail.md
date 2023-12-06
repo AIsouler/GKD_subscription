@@ -14,9 +14,13 @@
 
 ## 更新弹窗
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12664070)
 
 ## 邮件列表广告
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12664070)
 - [快照-1](https://i.gkd.li/import/12999833)

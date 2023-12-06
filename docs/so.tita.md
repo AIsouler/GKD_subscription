@@ -8,6 +8,8 @@
 
 ## 应用内第三方 SDK 广告
 
+默认禁用
+
 - [快照-0](https://i.gkd.li/import/12800404)
 - [快照-1](https://i.gkd.li/import/12800504)
 - [快照-2](https://i.gkd.li/import/12800437)
