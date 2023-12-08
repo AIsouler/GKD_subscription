@@ -150,5 +150,19 @@ export default defineAppConfig({
       rules: '@[text="关闭"] < * <3 * < * + * >3 [text$="小额免密支付"]',
       snapshotUrls: 'https://i.gkd.li/import/13438414',
     },
+    {
+      enable: false,
+      key: 14,
+      name: '开启悬浮窗权限',
+      desc: '点击“否”',
+      activityIds:
+        'com.taobao.android.detail2.core.framework.floatwindow.permission.PermissionActivity',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      matchTime: 10000,
+      rules: '[id="android:id/button2"]',
+      snapshotUrls: 'https://i.gkd.li/import/13588165',
+    },
   ],
 });
