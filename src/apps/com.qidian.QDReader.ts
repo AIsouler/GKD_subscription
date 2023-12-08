@@ -114,5 +114,16 @@ export default defineAppConfig({
       rules: 'View[desc="更多游戏"] - ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13406169',
     },
+    {
+      key: 12,
+      name: '福利中心-我知道了',
+      desc: '福利中心看视频后获得奖励，自动点击“我知道了”',
+      activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      matchTime: 10000,
+      rules: 'View[desc="我知道了"]',
+      snapshotUrls: 'https://i.gkd.li/import/13606901',
+    },
   ],
 });
