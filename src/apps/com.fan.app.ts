@@ -46,5 +46,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '开启通知弹窗',
+      desc: '自动点击“以后再说”',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: '[id="com.fan.app:id/tv_nj_later"]',
+      snapshotUrls: 'https://i.gkd.li/import/13601734',
+    },
   ],
 });
