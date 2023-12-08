@@ -1,6 +1,6 @@
 # 淘宝
 
-存在 10 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
+存在 12 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
 
 ## 开屏广告
 
@@ -69,3 +69,15 @@
 默认禁用 - 点击关闭
 
 - [快照-0](https://i.gkd.li/import/13438414)
+
+## 将小组件添加到手机桌面
+
+默认禁用 - 点击取消
+
+- [快照-0](https://i.gkd.li/import/13598578)
+
+## 开启悬浮窗权限
+
+默认禁用 - 点击“否”
+
+- [快照-0](https://i.gkd.li/import/13588165)

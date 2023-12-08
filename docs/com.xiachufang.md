@@ -7,6 +7,7 @@
 - [快照-0](https://i.gkd.li/import/12505985)
 - [快照-1](https://i.gkd.li/import/12506014)
 - [快照-2](https://i.gkd.li/import/12506041)
+- [快照-3](https://i.gkd.li/import/13539576)
 
 ## 卡片式广告
 

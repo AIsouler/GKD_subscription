@@ -1,6 +1,6 @@
 # 起点读书
 
-存在 8 规则组 - [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts)
+存在 9 规则组 - [com.qidian.QDReader](/src/apps/com.qidian.QDReader.ts)
 
 ## 开屏广告
 
@@ -54,3 +54,9 @@
 默认禁用 - 自动点击【x】
 
 - [快照-0](https://i.gkd.li/import/13406169)
+
+## 福利中心-我知道了
+
+默认禁用 - 福利中心看视频后获得奖励，自动点击“我知道了”
+
+- [快照-0](https://i.gkd.li/import/13606901)

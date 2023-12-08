@@ -1,6 +1,6 @@
 # 华为运动健康
 
-存在 4 规则组 - [com.huawei.health](/src/apps/com.huawei.health.ts)
+存在 5 规则组 - [com.huawei.health](/src/apps/com.huawei.health.ts)
 
 ## 开屏广告
 
@@ -25,3 +25,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13546292)
+
+## 底部横幅广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13587206)
