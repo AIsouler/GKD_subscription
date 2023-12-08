@@ -153,6 +153,20 @@ export default defineAppConfig({
     {
       enable: false,
       key: 14,
+      name: '将小组件添加到手机桌面',
+      desc: '点击取消',
+      activityIds: 'com.alibaba.triver.container.TriverMainActivity',
+      rules: [
+        {
+          action: 'clickCenter',
+          matches: 'View[text="立即添加"] + View[text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/import/13598578',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 15,
       name: '开启悬浮窗权限',
       desc: '点击“否”',
       activityIds:
@@ -161,7 +175,12 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'activity',
       matchTime: 10000,
-      rules: '[id="android:id/button2"]',
+      rules: {
+        matches: [
+          '[id="android:id/message"][text*="悬浮窗权限"]',
+          '[id="android:id/button2"][text="否"]',
+        ],
+      },
       snapshotUrls: 'https://i.gkd.li/import/13588165',
     },
   ],
