@@ -1,6 +1,6 @@
 # 小米音乐
 
-存在 6 规则组 - [com.miui.player](/src/apps/com.miui.player.ts)
+存在 7 规则组 - [com.miui.player](/src/apps/com.miui.player.ts)
 
 ## 开屏广告
 
@@ -26,6 +26,12 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13304343)
+
+## 飘窗广告\_首页右侧
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13562649)
 
 ## 会员过期续费弹窗
 

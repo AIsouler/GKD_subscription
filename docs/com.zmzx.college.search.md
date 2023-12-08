@@ -7,6 +7,7 @@
 - [快照-0](https://i.gkd.li/import/12867875)
 - [快照-1](https://i.gkd.li/import/12867970)
 - [快照-2](https://i.gkd.li/import/12881929)
+- [快照-3](https://i.gkd.li/import/13561976)
 
 ## 首页-推送通知
 

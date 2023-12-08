@@ -1,6 +1,6 @@
 # 微信
 
-存在 17 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 18 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 朋友圈广告
 
@@ -145,3 +145,10 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13538145)
+- [快照-1](https://i.gkd.li/import/13575195)
+
+## 青少年模式自动点击验证密码
+
+默认禁用 - 点击“验证密码”以申请临时访问
+
+- [快照-0](https://i.gkd.li/import/13588338)
