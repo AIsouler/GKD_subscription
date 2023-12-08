@@ -55,5 +55,17 @@ export default defineAppConfig({
       rules: '[text="开启个性化推荐"] +2 [text="开启"] + Button',
       snapshotUrls: 'https://i.gkd.li/import/13546292',
     },
+    {
+      enable: false,
+      key: 4,
+      name: '底部横幅广告',
+      rules: [
+        {
+          activityIds: 'com.huawei.health.MainActivity',
+          matches: '[id="com.huawei.health:id/marketing_close_icon"]',
+          snapshotUrls: 'https://i.gkd.li/import/13587206',
+        },
+      ],
+    },
   ],
 });
