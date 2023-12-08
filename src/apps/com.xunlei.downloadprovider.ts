@@ -150,6 +150,15 @@ export default defineAppConfig({
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/12882237',
         },
+        {
+          key: 23,
+          activityIds:
+            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
+          quickFind: true,
+          matches:
+            '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
+          snapshotUrls: 'https://i.gkd.li/import/13597068',
+        },
 
         // 快手广告
         {
