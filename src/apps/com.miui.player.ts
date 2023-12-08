@@ -50,6 +50,15 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/13304343'],
     },
     {
+      key: 4,
+      name: '飘窗广告_首页右侧',
+      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+      quickFind: true,
+      rules:
+        '[id="com.miui.player:id/cl_floating_promote"] > [id="com.miui.player:id/iv_close"]',
+      snapshotUrls: ['https://i.gkd.li/import/13562649'],
+    },
+    {
       enable: false,
       key: 10,
       name: '会员过期续费弹窗',
