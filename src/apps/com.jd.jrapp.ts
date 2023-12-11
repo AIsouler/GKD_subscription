@@ -7,9 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
       quickFind: true,
-      activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.jd.jrapp:id/btn_jump"]',
@@ -39,6 +40,18 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13255656',
         },
       ],
+    },
+    {
+      key: 2,
+      name: '版本更新',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
+      rules:
+        '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
+      snapshotUrls: 'https://i.gkd.li/import/13628364',
     },
   ],
 });
