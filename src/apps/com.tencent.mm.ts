@@ -452,16 +452,27 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 18,
       name: '青少年模式自动点击验证密码',
       desc: '点击“验证密码”以申请临时访问',
-      activityIds: 'com.tencent.mm.plugin.teenmode.ui.AuthorizationRequestUI',
       actionMaximum: 1,
       resetMatch: 'activity',
       matchTime: 10000,
-      rules: '@LinearLayout[childCount=2] > [text="验证密码"]',
-      snapshotUrls: 'https://i.gkd.li/import/13588338',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.tencent.mm.plugin.teenmode.ui.AuthorizationRequestUI',
+          matches: '@LinearLayout[childCount=2] > [text="验证密码"]',
+          snapshotUrls: 'https://i.gkd.li/import/13588338',
+        },
+        {
+          key: 1,
+          activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
+          matches: ['View[text="申请今天临时访问"]', 'View[desc="验证密码"]'],
+          snapshotUrls: 'https://i.gkd.li/import/13631987',
+        },
+      ],
     },
   ],
 });
