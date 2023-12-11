@@ -45,10 +45,14 @@ export default defineAppConfig({
         {
           key: 1,
           name: '快手广告-2',
-          activityIds: 'com.kwad.components.ad.interstitial',
+          activityIds: [
+            'com.copymanga.app.MainActivity',
+            'com.kwad.components.ad.interstitial',
+          ],
           matches:
             '[text="广告"] <2 ViewGroup -(2,3) ViewGroup > ViewGroup[clickable=true][visibleToUser=true]',
           snapshotUrls: [
+            'https://i.gkd.li/import/13625486',
             'https://i.gkd.li/import/12504486',
             'https://i.gkd.li/import/12504488',
             'https://i.gkd.li/import/13344156',
