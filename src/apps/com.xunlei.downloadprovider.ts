@@ -18,7 +18,6 @@ export default defineAppConfig({
     {
       key: 1,
       name: '视频详情页广告',
-      quickFind: true,
       rules: [
         {
           key: 0,
@@ -35,6 +34,7 @@ export default defineAppConfig({
           key: 1,
           name: '点击不感兴趣',
           activityIds: [
+            'com.xunlei.downloadprovider.frame.MainTabActivity',
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
             'com.xunlei.downloadprovider.feedback.view',
           ],
@@ -42,6 +42,7 @@ export default defineAppConfig({
           matches:
             '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
           snapshotUrls: [
+            'https://i.gkd.li/import/13625418', // activityId: 'com.xunlei.downloadprovider.frame.MainTabActivity',
             'https://i.gkd.li/import/12707717', // activityId: 'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
             'https://i.gkd.li/import/12707702', // activityId: 'com.xunlei.downloadprovider.feedback.view'
           ],
