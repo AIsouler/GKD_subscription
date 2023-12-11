@@ -45,10 +45,15 @@ export default defineAppConfig({
       name: '通知弹窗',
       quickFind: true,
       actionMaximum: 1,
-      activityIds:
+      activityIds: [
         'com.smzdm.client.android.module.community.module.bask.BaskDetailActivity',
+        'com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity',
+      ],
       rules: 'ImageView[id="com.smzdm.client.android:id/ib_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13438810',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13438810', //com.smzdm.client.android.module.community.module.bask.BaskDetailActivity
+        'https://i.gkd.li/import/13626746', //com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity
+      ],
     },
   ],
 });
