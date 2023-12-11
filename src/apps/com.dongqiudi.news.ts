@@ -55,13 +55,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12620586',
     },
     {
-      key: 3,
-      name: '穿山甲广告弹窗',
-      activityIds: 'com.dongqiudi.news.MainActivity',
-      rules: 'FrameLayout[desc^="webview-close"] > View[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12620588',
-    },
-    {
       enable: false,
       key: 4,
       name: '首页信息流广告',
@@ -98,6 +91,37 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id="com.dongqiudi.news:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13260467',
+    },
+    {
+      key: 8,
+      name: '数据页弹窗广告',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.dongqiudi.news.MainActivity',
+      rules: [
+        {
+          name: '腾讯广告SDK',
+          matches:
+            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+          snapshotUrls: 'https://i.gkd.li/import/13626900',
+        },
+        {
+          name: '快手广告磁力智投SDK',
+          matches:
+            'ViewGroup[childCount=1] > @ViewGroup[clickable=true][childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13627105',
+        },
+        {
+          name: '字节广告穿山甲SDK-1',
+          matches: 'View[text="反馈"] -2 @View > Image',
+          snapshotUrls: 'https://i.gkd.li/import/13627106',
+        },
+        {
+          name: '字节广告穿山甲SDK-2', //合并key3
+          matches: 'FrameLayout[desc^="webview-close"] > View[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/12620588',
+        },
+      ],
     },
   ],
 });
