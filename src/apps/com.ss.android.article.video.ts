@@ -32,5 +32,16 @@ export default defineAppConfig({
         '@TextView[id="com.ss.android.article.video:id/sj"][text="暂不开启"]',
       snapshotUrls: 'https://i.gkd.li/import/13456568',
     },
+    {
+      key: 6,
+      name: '红包弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.ss.android.article.video.activity.SplashActivity',
+      rules: '@FlattenUIImage[clickable=true] -2 [text="开心收下"]',
+      snapshotUrls: 'https://i.gkd.li/import/13620299',
+    },
   ],
 });
