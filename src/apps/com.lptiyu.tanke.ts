@@ -65,6 +65,15 @@ export default defineAppConfig({
         },
         {
           key: 4,
+          name: '快手广告-3',
+          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
+          quickFind: true,
+          matches:
+            '[id="com.lptiyu.tanke:id/ksad_splash_circle_skip_left_view"]',
+          snapshotUrls: 'https://i.gkd.li/import/13625386',
+        },
+        {
+          key: 5,
           name: '其他广告',
           activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
           matches:
