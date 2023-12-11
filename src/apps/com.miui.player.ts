@@ -75,5 +75,20 @@ export default defineAppConfig({
         '[id="com.miui.player:id/banner_image"] + [id="com.miui.player:id/close_banner"]',
       snapshotUrls: 'https://i.gkd.li/import/12700984',
     },
+    {
+      enable: false,
+      key: 12,
+      name: '看广告视频领VIP',
+      desc: '等待15s自动点击【退出】',
+      rules: [
+        {
+          actionDelay: 15000,
+          quickFind: true,
+          activityIds: 'com.tencentmusic.ad.tmead.reward.TMERewardActivity',
+          matches: '[id="com.miui.player:id/tme_ad_skip_button"]',
+          snapshotUrls: 'https://i.gkd.li/import/13610667',
+        },
+      ],
+    },
   ],
 });
