@@ -94,8 +94,10 @@ export default defineAppConfig({
           key: 98,
           name: '广告反馈卡片-选择原因',
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
+            'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+          ],
           matches:
             '[text="关闭这条广告的原因"] +(2) RecyclerView > [text="不感兴趣"]',
           snapshotUrls: [
@@ -108,8 +110,10 @@ export default defineAppConfig({
           key: 99,
           name: '广告反馈卡片-确认',
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
+            'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+          ],
           matches:
             '[text="关闭这条广告的原因"] + [text="确认"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12700210',
