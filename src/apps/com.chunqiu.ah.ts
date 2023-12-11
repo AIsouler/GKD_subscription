@@ -37,5 +37,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '卡片式广告',
+      rules: [
+        {
+          key: 0,
+          name: '腾讯广告',
+          activityIds: 'com.androlua.LuaActivity',
+          matches:
+            'ImageView < FrameLayout -2 FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13635499',
+        },
+      ],
+    },
   ],
 });
