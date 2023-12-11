@@ -202,6 +202,19 @@ export default defineAppConfig({
           matches: 'LinearLayout[childCount=2] > @ImageView + [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13296280',
         },
+        {
+          key: 2,
+          activityIds: [
+            'com.baidu.tieba.pb.pb.main.PbActivity',
+            'com.baidu.tieba.tblauncher.MainTabActivity',
+          ],
+          matches:
+            'RelativeLayout[childCount=2] > RelativeLayout[childCount=1] > ImageView[childCount=0][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13625336',
+            'https://i.gkd.li/import/13627881',
+          ],
+        },
       ],
     },
     {
