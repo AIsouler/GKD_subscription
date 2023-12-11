@@ -91,6 +91,19 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 4,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.duowan.kiwi.homepage.Homepage',
+          matches:
+            '[id="com.duowan.kiwi:id/animation_view"] + [id="com.duowan.kiwi:id/v_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13625453',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 5,
       name: 'root提示',
