@@ -153,10 +153,16 @@ export default defineAppConfig({
       key: 6,
       name: '动态广告卡片',
       desc: '点击右上角[广告]右侧的x按钮直接关闭',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+      ],
       rules:
         '@ImageView[clickable=true] - TextView[text="广告"] - [id="com.tencent.mobileqq:id/tv_name"]',
-      snapshotUrls: 'https://i.gkd.li/import/12749584',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12749584',
+        'https://i.gkd.li/import/13627967',
+      ],
     },
     {
       key: 7,
