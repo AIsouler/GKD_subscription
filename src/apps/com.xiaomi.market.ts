@@ -79,5 +79,16 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 12,
+      name: '个性化推荐弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.xiaomi.market.business_ui.main.MarketTabActivity',
+      rules: '[id="com.xiaomi.market:id/close_float_recommend"]',
+      snapshotUrls: 'https://i.gkd.li/import/13624971',
+    },
   ],
 });
