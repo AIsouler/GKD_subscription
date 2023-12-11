@@ -24,5 +24,13 @@ export default defineAppConfig({
       rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',
       snapshotUrls: 'https://i.gkd.li/import/13538351',
     },
+    {
+      key: 2,
+      name: '请求开启手机信息权限弹窗',
+      activityIds: 'com.taobao.idlefish.maincontainer.activity.MainActivity',
+      rules:
+        '@Button[text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',
+      snapshotUrls: 'https://i.gkd.li/import/13620277',
+    },
   ],
 });
