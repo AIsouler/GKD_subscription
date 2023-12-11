@@ -11,8 +11,15 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.vivo.space:id/timer"]',
-      snapshotUrls: ['https://i.gkd.li/import/13197585'],
+      rules: [
+        {
+          matches: 'TextView[text*="跳过"][text.length<=5]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13622769',
+            'https://i.gkd.li/import/13197585',
+          ],
+        },
+      ],
     },
     {
       key: 3,
