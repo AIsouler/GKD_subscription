@@ -13,6 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           matches: 'TextView[text=`跳过`][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12673960', // text="互动广告"
@@ -20,6 +21,12 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12673998', // text="广告"
             'https://i.gkd.li/import/12674074', // text="运营推广"
           ],
+        },
+        {
+          key: 1,
+          quickFind: false,
+          matches: '@ViewGroup > ViewGroup[text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/13628165',
         },
       ],
     },
