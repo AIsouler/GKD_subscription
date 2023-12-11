@@ -20,8 +20,9 @@
 
 - [快照-0](https://i.gkd.li/import/13537836)
 
-## 更新弹窗
+## 版本更新
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13537840)
+- [快照-1](https://i.gkd.li/import/13626328)

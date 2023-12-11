@@ -18,7 +18,8 @@
 
 - [快照-0](https://i.gkd.li/import/13402692)
 - [快照-1](https://i.gkd.li/import/13455790)
-- [快照-2](https://i.gkd.li/import/13455929)
+- [快照-2](https://i.gkd.li/import/13626324)
+- [快照-3](https://i.gkd.li/import/13455929)
 
 ## 悬浮窗小广告
 
@@ -31,3 +32,4 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13543032)
+- [快照-1](https://i.gkd.li/import/13625037)

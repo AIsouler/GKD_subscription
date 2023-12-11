@@ -69,6 +69,8 @@
 - [快照-0](https://i.gkd.li/import/13115167)
 - [快照-1](https://i.gkd.li/import/13327933)
 - [快照-2](https://i.gkd.li/import/13296280)
+- [快照-3](https://i.gkd.li/import/13625336)
+- [快照-4](https://i.gkd.li/import/13627881)
 
 ## 吧内-悬浮卡通-进吧逛逛
 

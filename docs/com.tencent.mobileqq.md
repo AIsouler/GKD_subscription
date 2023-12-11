@@ -1,6 +1,6 @@
 # QQ
 
-存在 20 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 19 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -59,13 +59,16 @@
 默认禁用 - 点击右上角[广告]右侧的x按钮直接关闭
 
 - [快照-0](https://i.gkd.li/import/12749584)
+- [快照-1](https://i.gkd.li/import/13627967)
 
 ## 扫一扫-登录确认
 
-默认禁用
+默认禁用 - 自动点击登录。包括 PC 登录确认、QQ 互联登录确认。
 
-- [快照-0](https://i.gkd.li/import/12789287)
-- [快照-1](https://i.gkd.li/import/13166314)
+- [快照-0](https://i.gkd.li/import/13623520)
+- [快照-1](https://i.gkd.li/import/12789287)
+- [快照-2](https://i.gkd.li/import/13063027)
+- [快照-3](https://i.gkd.li/import/13166314)
 
 ## 消息页面顶部-无法接收新消息通知
 
@@ -124,12 +127,6 @@
 - [快照-1](https://i.gkd.li/import/13387606)
 - [快照-2](https://i.gkd.li/import/12929619)
 - [快照-3](https://i.gkd.li/import/13387605)
-
-## NT QQ-登录确认
-
-默认禁用 - NT QQ 登录时自动点击允许登录QQ
-
-- [快照-0](https://i.gkd.li/import/13063027)
 
 ## 更新弹窗
 

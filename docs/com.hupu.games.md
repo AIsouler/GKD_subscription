@@ -4,8 +4,6 @@
 
 ## 开屏广告
 
-开屏广告,任意界面切回APP广告
-
 - [快照-0](https://i.gkd.li/import/12509060)
 - [快照-1](https://i.gkd.li/import/12510962)
 - [快照-2](https://i.gkd.li/import/12567546)

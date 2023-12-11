@@ -33,6 +33,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642023)
+- [快照-1](https://i.gkd.li/import/13625441)
 
 ## 多多买菜抽奖弹窗
 
