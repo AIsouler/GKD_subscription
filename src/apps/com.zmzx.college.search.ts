@@ -125,9 +125,13 @@ export default defineAppConfig({
       resetMatch: 'app',
       activityIds: [
         'com.zmzx.college.search.activity.main.activity.MainActivity',
+        'com.zmzx.college.search.activity.init.InitActivity',
       ],
       rules: '[id="com.zmzx.college.search:id/update_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13063373',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13063373',
+        'https://i.gkd.li/import/13623469',
+      ],
     },
     {
       key: 6,
