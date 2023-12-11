@@ -23,9 +23,15 @@ export default defineAppConfig({
       name: '消息推送通知',
       desc: '自动点击暂不开启。',
       quickFind: true,
-      activityIds: 'com.able.wisdomtree.widget.MyAlertDialog',
+      activityIds: [
+        'com.able.wisdomtree.widget.MyAlertDialog',
+        'com.able.wisdomtree.login.MainGroupActivity',
+      ],
       rules: 'TextView[id="com.able.wisdomtree:id/negativeButton"]',
-      snapshotUrls: 'https://i.gkd.li/import/13458779',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13458779',
+        'https://i.gkd.li/import/13623441',
+      ],
     },
     {
       enable: false,
