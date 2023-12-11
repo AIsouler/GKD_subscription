@@ -85,11 +85,22 @@ export default defineAppConfig({
       enable: false,
       key: 4,
       name: '红包弹窗',
-      activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
+      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
-        '@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup > ImageView + ViewGroup > ImageView +(2) FrameLayout > TextView[text="专属现金红包"]',
+        {
+          key: 0,
+          matches:
+            '@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup > ImageView + ViewGroup > ImageView +(2) FrameLayout > TextView[text="专属现金红包"]',
+          snapshotUrls: 'https://i.gkd.li/import/12642023',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches:
+            '@ImageView[clickable=true] < ViewGroup + ViewGroup >n [text="送你大额现金"]',
+          snapshotUrls: 'https://i.gkd.li/import/13625441',
+        },
       ],
-      snapshotUrls: ['https://i.gkd.li/import/12642023'],
     },
     {
       enable: false,
@@ -167,7 +178,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
-            '@ImageView[desc=\'返回\'] -3 ViewPager >19 TextView[text=\'正在直播\']',
+            '@ImageView[desc="返回"] -3 ViewPager >19 TextView[text="正在直播"]',
           snapshotUrls: 'https://i.gkd.li/import/13446291',
         },
       ],
