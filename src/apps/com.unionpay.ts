@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.unionpay.activity.UPActivityMain'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: [
         {
           matches: '[id="com.unionpay:id/jump"][text^="跳过"]',
@@ -18,6 +21,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
@@ -29,11 +36,12 @@ export default defineAppConfig({
     {
       key: 2,
       name: '支付完成界面广告卡片',
+      quickFind: true,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
         {
           key: 0,
-          matches: '[id="bannerBox"] >2 [text="广告"] + TextView',
+          matches: '[id="bannerBox"] > @View[clickable=true] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13070564',
         },
         {
@@ -47,6 +55,10 @@ export default defineAppConfig({
     {
       key: 9,
       name: '右侧悬浮广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: ['com.unionpay.activity.UPActivityMain'],
       rules: [
         {
@@ -59,20 +71,20 @@ export default defineAppConfig({
     {
       key: 10,
       name: '定位权限悬浮弹窗',
-      activityIds: ['com.unionpay.activity.UPActivityMain'],
-      rules: [
-        {
-          matches:
-            '[id="com.unionpay:id/locate_guide_view"] >2 [id="com.unionpay:id/locate_iv_close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12694508',
-        },
-      ],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      activityIds: 'com.unionpay.activity.UPActivityMain',
+      rules: '[id="com.unionpay:id/view_locate_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13634882',
     },
     {
       enable: false,
       key: 11,
       name: '访问位置请求弹窗',
       desc: '自动点击【不允许】。默认关闭，请手动开启',
+      quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
@@ -87,6 +99,7 @@ export default defineAppConfig({
       key: 12,
       name: '开启消息通知弹窗',
       desc: '默认关闭，请手动开启',
+      quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
@@ -98,12 +111,15 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '获得新勋章提示',
+      name: '天天签到-获得新勋章提示',
+      desc: '点击左上角返回',
       actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: [
         {
           activityIds: 'com.unionpay.cordova.UPActivityCordovaWeb',
-          matches: 'TextView[text=\'炫耀一下\'] + TextView[clickable=true]',
+          matches: '[id="com.unionpay:id/iv_title_left_image"][desc="返回"]', //实测原规则点击中间下方【x】无效
           snapshotUrls: 'https://i.gkd.li/import/13440341',
         },
       ],
