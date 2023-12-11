@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '通知权限授权弹窗',
-      activityIds: 'com.hpbr.bosszhipin.module.main.activity.MainActivity',
+      activityIds: [
+        'com.hpbr.bosszhipin.module.main.activity.MainActivity',
+        'com.hpbr.bosszhipin.module.launcher.WelcomeActivity',
+      ],
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -15,7 +18,10 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@ImageView[id="com.hpbr.bosszhipin:id/iv_cancle"]',
-          snapshotUrls: 'https://i.gkd.li/import/13440781',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13440781',
+            'https://i.gkd.li/import/13623476',
+          ],
         },
       ],
     },
