@@ -7,7 +7,6 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -22,6 +21,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          quickFind: true,
           matches: '[text="跳过"]',
           snapshotUrls: 'https://i.gkd.li/import/13538207',
         },

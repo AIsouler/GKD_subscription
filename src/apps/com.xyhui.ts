@@ -8,7 +8,6 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -16,6 +15,7 @@ export default defineAppConfig({
         {
           key: 1,
           name: '开屏广告-1',
+          quickFind: true,
           snapshotUrls: [
             'https://i.gkd.li/import/12642486',
             'https://i.gkd.li/import/12846496',
@@ -26,6 +26,7 @@ export default defineAppConfig({
         {
           key: 2,
           name: '开屏广告-2',
+          quickFind: true,
           matches: '[id="com.xyhui:id/ms_skipView"]',
           snapshotUrls: ['https://i.gkd.li/import/13197417'],
         },

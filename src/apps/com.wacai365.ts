@@ -7,13 +7,13 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
+          quickFind: true,
           matches: '[id="com.wacai365:id/ksad_splash_circle_skip_view"]',
           snapshotUrls: 'https://i.gkd.li/import/13162861',
         },
@@ -27,6 +27,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
+          quickFind: true,
           matches: '[text^="跳过"][text.length<=6]',
           snapshotUrls: 'https://i.gkd.li/import/13399124',
         },

@@ -7,15 +7,16 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
-      quickFind: true,
-      activityIds: 'com.didapinche.booking.home.activity.StartActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/13051862',
         },
         {
+          quickFind: true,
           matches: '[id="com.didapinche.booking:id/tv_full_skip"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13051805',

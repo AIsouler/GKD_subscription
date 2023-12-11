@@ -7,9 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
-      quickFind: true,
-      activityIds: 'com.jovision.saas.ui.activity.splash.SplashActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -18,6 +18,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          quickFind: true,
           matches:
             '[id="com.jovetech.CloudSee.temp:id/splash_container"] >n [text^="跳过"]',
           snapshotUrls: [

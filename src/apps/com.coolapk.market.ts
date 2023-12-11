@@ -18,9 +18,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          quickFind: false,
-          matches:
-            '[id="com.byted.pangle:id/tt_splash_skip_btn"||id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
+          matches: '[id$="tt_splash_skip_btn"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12503773',
             'https://i.gkd.li/import/13247610',

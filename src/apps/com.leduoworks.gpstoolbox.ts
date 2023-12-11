@@ -7,8 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
-      activityIds: 'com.leduoworks.gpstoolbox.newest.StarterActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
       snapshotUrls: 'https://i.gkd.li/import/13062600',
     },
