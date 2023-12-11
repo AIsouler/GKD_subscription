@@ -5,6 +5,19 @@ export default defineAppConfig({
   name: '无忧行',
   groups: [
     {
+      key: 2,
+      name: '应用内广告弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          matches: '[id="com.cmi.jegotrip:id/ig_ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13631904',
+        },
+      ],
+    },
+    {
       key: 3,
       name: '请求定位权限弹窗',
       quickFind: true,
