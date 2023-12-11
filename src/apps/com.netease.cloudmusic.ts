@@ -42,10 +42,15 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
-          activityIds:
+          activityIds: [
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
+            'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
+          ],
           matches: '[text="直接关闭"]',
-          snapshotUrls: ['https://i.gkd.li/import/12829967'],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12829967',
+            'https://i.gkd.li/import/13627047', //activityIds: 'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
+          ],
         },
         {
           key: 3,
