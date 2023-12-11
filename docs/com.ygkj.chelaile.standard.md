@@ -7,10 +7,11 @@
 - [快照-0](https://i.gkd.li/import/13062992)
 - [快照-1](https://i.gkd.li/import/13225111)
 
-## 应用内广告卡片
+## 卡片式广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13062991)
 - [快照-1](https://i.gkd.li/import/13062984)
 - [快照-2](https://i.gkd.li/import/13464325)
+- [快照-3](https://i.gkd.li/import/13625374)

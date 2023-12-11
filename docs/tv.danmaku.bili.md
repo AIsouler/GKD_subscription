@@ -67,6 +67,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13229159)
+- [快照-1](https://i.gkd.li/import/13614090)
 
 ## 首页-推荐视频卡片广告
 
@@ -74,6 +75,7 @@
 
 - [快照-0](https://i.gkd.li/import/13256570)
 - [快照-1](https://i.gkd.li/import/13256605)
+- [快照-2](https://i.gkd.li/import/13625309)
 
 ## 个性化内容推荐弹窗
 

@@ -1,6 +1,6 @@
 # 小米应用商店
 
-存在 4 规则组 - [com.xiaomi.market](/src/apps/com.xiaomi.market.ts)
+存在 5 规则组 - [com.xiaomi.market](/src/apps/com.xiaomi.market.ts)
 
 ## 首页悬浮窗广告
 
@@ -30,3 +30,9 @@
 
 - [快照-0](https://i.gkd.li/import/12714980)
 - [快照-1](https://i.gkd.li/import/13197306)
+
+## 个性化推荐弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13624971)

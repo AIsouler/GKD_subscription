@@ -16,9 +16,10 @@
 - [快照-3](https://i.gkd.li/import/12829964)
 - [快照-4](https://i.gkd.li/import/12829953)
 - [快照-5](https://i.gkd.li/import/12829967)
-- [快照-6](https://i.gkd.li/import/13526986)
-- [快照-7](https://i.gkd.li/import/13526711)
-- [快照-8](https://i.gkd.li/import/13526712)
+- [快照-6](https://i.gkd.li/import/13627047)
+- [快照-7](https://i.gkd.li/import/13526986)
+- [快照-8](https://i.gkd.li/import/13526711)
+- [快照-9](https://i.gkd.li/import/13526712)
 
 ## 我的页面-中间滚动广告
 

@@ -29,3 +29,4 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13438810)
+- [快照-1](https://i.gkd.li/import/13626746)

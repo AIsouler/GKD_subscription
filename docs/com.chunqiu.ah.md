@@ -1,6 +1,6 @@
 # AH视频
 
-存在 2 规则组 - [com.chunqiu.ah](/src/apps/com.chunqiu.ah.ts)
+存在 3 规则组 - [com.chunqiu.ah](/src/apps/com.chunqiu.ah.ts)
 
 ## 开屏广告
 
@@ -13,3 +13,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13264383)
+
+## 卡片式广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13635499)

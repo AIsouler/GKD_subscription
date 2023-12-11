@@ -6,12 +6,13 @@
 
 - [快照-0](https://i.gkd.li/import/13055542)
 
-## 应用内广告弹窗
+## 弹窗广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13055837)
 - [快照-1](https://i.gkd.li/import/13060116)
+- [快照-2](https://i.gkd.li/import/13625511)
 
 ## 卡片式广告
 

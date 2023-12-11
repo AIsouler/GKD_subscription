@@ -1,6 +1,6 @@
 # 微博
 
-存在 15 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
+存在 17 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
 
 ## 开屏广告
 
@@ -25,7 +25,8 @@
 默认禁用 - 点击右上角x
 
 - [快照-0](https://i.gkd.li/import/12673043)
-- [快照-1](https://i.gkd.li/import/12673051)
+- [快照-1](https://i.gkd.li/import/13635551)
+- [快照-2](https://i.gkd.li/import/12673051)
 
 ## 评论区博主内容推荐
 
@@ -99,3 +100,15 @@
 默认禁用 - 点击【x】
 
 - [快照-0](https://i.gkd.li/import/13482960)
+
+## 评论区-信息流广告
+
+默认禁用 - 点击【x】
+
+- [快照-0](https://i.gkd.li/import/13632175)
+
+## APP评分弹窗
+
+默认禁用 - 点击【x】
+
+- [快照-0](https://i.gkd.li/import/13620220)
