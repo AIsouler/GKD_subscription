@@ -189,9 +189,14 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
+          key: 1,
           name: '点击[不感兴趣]',
-          matches: '[id="tv.danmaku.bili:id/menu_layout"] [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13256605',
+          matches:
+            '@[id="tv.danmaku.bili:id/reason1_layout"] > [text$="不感兴趣"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13256605',
+            'https://i.gkd.li/import/13625309',
+          ],
         },
       ],
     },
