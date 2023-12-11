@@ -7,18 +7,14 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: [
-        'com.huawei.android.thememanager.mvp.view.activity.onlinebase.PageActivity',
-      ],
-      rules: [
-        {
-          matches: '[id$="hiad_skip_text"]',
-          action: 'clickCenter',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12657379',
-            'https://i.gkd.li/import/13069736',
-          ],
-        },
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text^="跳过"][text.length<=10]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12657379',
+        'https://i.gkd.li/import/13069736',
       ],
     },
     {
