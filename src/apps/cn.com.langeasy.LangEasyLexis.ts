@@ -1,7 +1,7 @@
 import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
-  id: 'cn.com.langeasy.langeasylexis',
+  id: 'cn.com.langeasy.LangEasyLexis',
   name: '不背单词',
   groups: [
     {
@@ -10,8 +10,8 @@ export default defineAppConfig({
       name: '自动签到',
       rules: [
         {
-          activityIds: 'cn.com.langeasy.langeasylexis.activity.MainActivity',
-          matches: '[id="cn.com.langeasy.langeasylexis:id/bb_checkin"]',
+          activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
+          matches: '[id="cn.com.langeasy.LangEasyLexis:id/bb_checkin"]',
           snapshotUrls: 'https://i.gkd.li/import/13610321',
         },
       ],
