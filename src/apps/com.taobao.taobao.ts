@@ -183,5 +183,17 @@ export default defineAppConfig({
       },
       snapshotUrls: 'https://i.gkd.li/import/13588165',
     },
+    {
+      key: 16,
+      name: '花呗升级报送征信',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+      rules:
+        '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
+      snapshotUrls: 'https://i.gkd.li/import/13628020',
+    },
   ],
 });
