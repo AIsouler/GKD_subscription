@@ -5,6 +5,16 @@ export default defineAppConfig({
   name: '4399游戏盒',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="跳过"]',
+      snapshotUrls: 'https://i.gkd.li/import/13635282',
+    },
+    {
       key: 1,
       name: '悬浮广告',
       rules: [
