@@ -35,10 +35,16 @@ export default defineAppConfig({
         {
           key: 0,
           name: '腾讯广告',
-          activityIds: 'com.feiyu.morin.view.main.MainActivity',
+          activityIds: [
+            'com.feiyu.morin.view.main.MainActivity',
+            'com.feiyu.morin.view.main.PlayerBottomControlActivity',
+          ],
           matches:
-            'ImageView + LinearLayout + LinearLayout + FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13521680',
+            'ImageView + LinearLayout + LinearLayout + FrameLayout[childCount=1] > ImageView[childCount=0]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13521680',
+            'https://i.gkd.li/import/13625476',
+          ],
         },
       ],
     },
