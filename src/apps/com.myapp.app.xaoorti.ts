@@ -11,8 +11,11 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.myapp.app.xaoorti:id/ksad_splash_circle_skip_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/13520474',
+      rules: '[text^="跳过"][text.length<=10]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13520474',
+        'https://i.gkd.li/import/13625351',
+      ],
     },
     {
       key: 1,
