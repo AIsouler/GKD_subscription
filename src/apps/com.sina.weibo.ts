@@ -227,6 +227,15 @@ export default defineAppConfig({
     },
     {
       key: 17,
+      name: '评论区-信息流广告',
+      desc: '点击【x】',
+      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+      quickFind: true,
+      rules: '[text="广告"] + [id="com.sina.weibo:id/iv_close_icon"]',
+      snapshotUrls: 'https://i.gkd.li/import/13632175',
+    },
+    {
+      key: 18,
       name: 'APP评分弹窗',
       desc: '点击【x】',
       quickFind: true,
