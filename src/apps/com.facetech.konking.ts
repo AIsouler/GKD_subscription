@@ -7,12 +7,13 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.facetech.konking.MainActivity',
-      matchLauncher: true,
-      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
+          quickFind: true,
           matches:
             '[id="com.facetech.konking:id/ksad_splash_circle_skip_view"] > [text="跳过"]',
           snapshotUrls: 'https://i.gkd.li/import/12841078',

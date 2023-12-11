@@ -7,11 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]', // 删除旧规则[id$="/tt_splash_skip_btn"]，等出现[id="com.byted.pangle.m:id/tt_splash_skip_btn"] 快照再适配
+      rules: '[id$="id/tt_splash_skip_btn"]',
       snapshotUrls: 'https://i.gkd.li/import/13533782',
     },
     {
