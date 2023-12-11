@@ -160,13 +160,18 @@ export default defineAppConfig({
       key: 9,
       name: '请求通知权限弹窗',
       quickFind: true,
-      matchDelay: 5000,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
-      rules: '[text="打开推送通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13229159',
+      activityIds: [
+        'tv.danmaku.bili.MainActivityV2',
+        'com.bilibili.video.story.StoryTransparentActivity',
+      ],
+      rules: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13229159',
+        'https://i.gkd.li/import/13614090',
+      ],
     },
     {
       enable: false,
