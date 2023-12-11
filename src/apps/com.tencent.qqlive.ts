@@ -155,8 +155,8 @@ export default defineAppConfig({
       name: '请求通知权限弹窗',
       desc: '自动点击[以后再说]',
       quickFind: true,
-      activityIds:
-        'com.tencent.qqlive.ona.update.trunk.client.TrunkUpdateActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
       snapshotUrls: 'https://i.gkd.li/import/12700139',
     },
