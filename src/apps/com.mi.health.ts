@@ -40,12 +40,23 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '更新弹窗',
+      name: '版本更新',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      rules: '[text^="发现新版本"] < * + * >n [text="放弃更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/13537840',
+      rules: [
+        {
+          activityIds: 'com.xiaomi.fitness.main.MainActivity',
+          matches: '[text^="发现新版本"] < * + * >n [text="放弃更新"]',
+          snapshotUrls: 'https://i.gkd.li/import/13537840',
+        },
+        {
+          activityIds: 'com.mi.health.home.HomeActivity',
+          matches:
+            '[text="立即更新"] + [id="com.mi.health:id/tv_negative"][text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/import/13626328',
+        },
+      ],
     },
   ],
 });
