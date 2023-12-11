@@ -43,13 +43,22 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '首页',
+          name: '首页1',
           matches:
             '[id="com.chinatelecom.bestpayclient:id/iv_dialog_close_one"]',
           snapshotUrls: 'https://i.gkd.li/import/13455790',
         },
+
         {
           key: 2,
+          name: '首页2',
+          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+          matches:
+            '@Image[clickable=true][text!=null] < View[childCount=2] <<n FrameLayout[id="com.chinatelecom.bestpayclient:id/h5_pc_container"]',
+          snapshotUrls: 'https://i.gkd.li/import/13626324',
+        },
+        {
+          key: 3,
           name: '借贷页',
           matches:
             '@View[clickable=true][text=""] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
@@ -71,12 +80,15 @@ export default defineAppConfig({
     {
       key: 5,
       name: '年底积分活动弹窗',
-      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
-      matchTime: 10000,
-      rules: 'View > View[index=1] > Image',
-      snapshotUrls: 'https://i.gkd.li/import/13543032',
+      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+      rules: 'View > View[index=1][clickable=true][childCount=1] > Image',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13543032',
+        'https://i.gkd.li/import/13625037', //修改规则，避免在此误触
+      ],
     },
   ],
 });
