@@ -20,7 +20,10 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.luna.biz.main.main.MainActivity',
+      activityIds: [
+        'com.luna.biz.main.main.MainActivity',
+        'com.luna.biz.ad.AdActivity',
+      ],
       rules: [
         {
           action: 'back',
@@ -32,7 +35,14 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13613296', // matches中添加[id="com.luna.music:id/design_bottom_sheet"], 避免在此误触
             'https://i.gkd.li/import/13613498', // matches中添加[id="com.luna.music:id/design_bottom_sheet"], 避免在此误触
             'https://i.gkd.li/import/13613850', // 单独matches: '[id="com.luna.music:id/design_bottom_sheet"]', 会误触
+            'https://i.gkd.li/import/13660652', // activityIds: 'com.luna.biz.ad.AdActivity',
           ],
+        },
+        {
+          name: '右小角小悬浮窗',
+          matches:
+            '[id="com.luna.music:id/fl_pendant_container"] > [id="com.luna.music:id/view_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13674376',
         },
       ],
     },
