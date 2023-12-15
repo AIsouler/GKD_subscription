@@ -7,13 +7,20 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: 'TextView[id="com.sankuai.meituan:id/close_btn"][text^="跳过"]',
       snapshotUrls: 'https://i.gkd.li/import/12749811',
     },
     {
       key: 1,
       name: '更新弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: [
         'com.meituan.android.upgrade.ui.',
         'com.meituan.android.upgrade.UpgradeDialogActivity',
@@ -48,10 +55,27 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '小调查弹窗',
-      activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
-      rules: '[text="小调查"] + ViewGroup > ViewGroup > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/12639723',
+      name: '订单调查弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      quickFind: true,
+      rules: [
+        {
+          name: '我的页面-小调查',
+          action: 'back',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
+          matches: 'TextView[text="小调查"]',
+          snapshotUrls: 'https://i.gkd.li/import/12639723',
+        },
+        {
+          name: '订单详情页匿名调查',
+          action: 'back',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
+          matches: '[id="com.sankuai.meituan:id/questionnaireTitle"]',
+          snapshotUrls: 'https://i.gkd.li/import/13682336',
+        },
+      ],
     },
     {
       key: 4,
