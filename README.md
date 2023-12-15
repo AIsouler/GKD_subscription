@@ -2,9 +2,9 @@
 
 GKD 默认订阅规则, 默认规则仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
 
-当前订阅为 APP 自带, 无需手动添加, 当前版本: v176
+当前订阅为 APP 自带, 无需手动添加, 当前版本: v177
 
-当前订阅文件已适配 871 个 APP, 共有 1813 规则组
+当前订阅文件已适配 889 个 APP, 共有 1845 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -12,4 +12,4 @@ GKD 默认订阅规则, 默认规则仅启用 `开屏广告` 一类规则, 其�
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=176)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=177)

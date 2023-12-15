@@ -21,11 +21,12 @@
 - [快照-0](https://i.gkd.li/import/12639717)
 - [快照-1](https://i.gkd.li/import/12892626)
 
-## 小调查弹窗
+## 订单调查弹窗
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12639723)
+- [快照-1](https://i.gkd.li/import/13682336)
 
 ## 首页右侧抽奖小广告
 

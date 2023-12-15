@@ -1,6 +1,6 @@
 # 云闪付
 
-存在 8 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
+存在 9 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
 
 ## 开屏广告
 
@@ -46,5 +46,11 @@
 ## 天天签到-获得新勋章提示
 
 默认禁用 - 点击左上角返回
+
+- [快照-0](https://i.gkd.li/import/13440341)
+
+## 我的页面-广告弹窗
+
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/13440341)

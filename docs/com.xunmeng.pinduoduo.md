@@ -34,6 +34,7 @@
 
 - [快照-0](https://i.gkd.li/import/12642023)
 - [快照-1](https://i.gkd.li/import/13625441)
+- [快照-2](https://i.gkd.li/import/13669963)
 
 ## 多多买菜抽奖弹窗
 

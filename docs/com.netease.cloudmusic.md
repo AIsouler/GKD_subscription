@@ -33,12 +33,13 @@
 
 - [快照-0](https://i.gkd.li/import/12843383)
 
-## 广告弹窗
+## 弹窗广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13188737)
 - [快照-1](https://i.gkd.li/import/13229016)
+- [快照-2](https://i.gkd.li/import/13684724)
 
 ## VIP 弹窗
 
