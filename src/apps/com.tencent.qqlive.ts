@@ -49,10 +49,11 @@ export default defineAppConfig({
           key: 0,
           name: '首页顶部卡片广告',
           matches:
-            'FrameLayout - RelativeLayout > RelativeLayout > FrameLayout + ImageView[clickable=true][childCount=0]',
+            'FrameLayout - RelativeLayout > RelativeLayout > FrameLayout + ImageView[clickable=true][childCount=0][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12700299',
             'https://i.gkd.li/import/12700302',
+            'https://i.gkd.li/import/13685929', // 限定 visibleToUser=true 防止误触
           ],
         },
         {
@@ -78,9 +79,16 @@ export default defineAppConfig({
         {
           key: 4,
           name: '点击右上角[广告]',
+          activityIds: [
+            'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+            'com.tencent.qqlive.ona.activity.VideoDetailActivity',
+          ],
           matches:
             'RelativeLayout[id=null] > @FrameLayout[clickable=true][id!=null] > ImageView[desc="the ad tag"]',
-          snapshotUrls: 'https://i.gkd.li/import/12737313',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12737313',
+            'https://i.gkd.li/import/13685842',
+          ],
         },
         {
           key: 5,
@@ -97,12 +105,14 @@ export default defineAppConfig({
           activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
             'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+            'com.tencent.qqlive.ona.activity.VideoDetailActivity',
           ],
           matches:
             '[text="关闭这条广告的原因"] +(2) RecyclerView > [text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12700303',
             'https://i.gkd.li/import/12829866',
+            'https://i.gkd.li/import/13685871',
           ],
         },
         {
@@ -113,10 +123,14 @@ export default defineAppConfig({
           activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
             'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+            'com.tencent.qqlive.ona.activity.VideoDetailActivity',
           ],
           matches:
             '[text="关闭这条广告的原因"] + [text="确认"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12700210',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12700210',
+            'https://i.gkd.li/import/13685877',
+          ],
         },
       ],
     },
