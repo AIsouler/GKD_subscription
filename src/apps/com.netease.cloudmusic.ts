@@ -93,7 +93,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '广告弹窗',
+      name: '弹窗广告',
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
       rules: [
         {
@@ -107,6 +107,12 @@ export default defineAppConfig({
           name: '京东双十一广告弹窗',
           matches: '[text="广告"] < ViewGroup + ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13229016',
+        },
+        {
+          key: 2,
+          matches:
+            '[id="com.netease.cloudmusic:id/dsl_dialog_root"] >n ViewGroup[childCount=2] > ImageView + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13684724',
         },
       ],
     },
