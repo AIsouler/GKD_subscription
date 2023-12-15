@@ -35,8 +35,11 @@ export default defineAppConfig({
           name: '腾讯广告',
           activityIds: 'com.lolaage.tbulu.tools.ui.activity.WelcomeActivity',
           matches:
-            'ImageView -2 FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13627861',
+            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13627861',
+            'https://i.gkd.li/import/13650732',
+          ],
         },
       ],
     },
