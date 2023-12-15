@@ -25,5 +25,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '通知/链接蓝牙附件设备 权限申请',
+      quickFind: true,
+      activityIds: 'com.enflick.android.TextNow.activities.MainActivity',
+      rules:
+        '@ImageView[clickable=true] <2 [id="com.enflick.android.TextNow:id/calling_banner"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13657279',
+        'https://i.gkd.li/import/13657280',
+      ],
+    },
   ],
 });
