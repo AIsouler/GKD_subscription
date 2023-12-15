@@ -28,6 +28,21 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 2,
+      name: '功能体验邀请弹窗',
+      rules: [
+        {
+          key: 0,
+          name: '【首页商城】体验邀请弹窗',
+          activityIds:
+            'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
+          matches:
+            '[text="不再提示"] + @ECCustomUiImage[clickable=true] +n LynxFlattenUI[text^="立即体验"]',
+          snapshotUrls: 'https://i.gkd.li/import/13684791',
+        },
+      ],
+    },
+    {
       key: 8,
       name: '朋友推荐弹窗',
       quickFind: true,
