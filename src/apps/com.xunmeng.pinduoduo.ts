@@ -82,23 +82,30 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '红包弹窗',
-      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
           key: 0,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup > ImageView + ViewGroup > ImageView +(2) FrameLayout > TextView[text="专属现金红包"]',
           snapshotUrls: 'https://i.gkd.li/import/12642023',
         },
         {
           key: 1,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           quickFind: true,
           matches:
             '@ImageView[clickable=true] < ViewGroup + ViewGroup >n [text="送你大额现金"]',
           snapshotUrls: 'https://i.gkd.li/import/13625441',
+        },
+        {
+          key: 2,
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            '[text="百亿补贴"] > View > View > @View[clickable=true] +n [text^="立即领取"]',
+          snapshotUrls: 'https://i.gkd.li/import/13669963',
         },
       ],
     },
