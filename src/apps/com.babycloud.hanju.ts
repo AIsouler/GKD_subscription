@@ -20,13 +20,23 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '卡片广告',
-      quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'activity',
-      matchTime: 10000,
-      rules: '[id="com.babycloud.hanju:id/unified_ad_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13628282',
+      name: '卡片式广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.babycloud.hanju.ui.activity.HanjuSeriesActivity',
+            'com.babycloud.hanju.ui.activity.HanjuHomeActivity',
+          ],
+          quickFind: true,
+          matches:
+            '[id="com.babycloud.hanju:id/unified_ad_close"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13628282',
+            'https://i.gkd.li/import/13670721',
+          ],
+        },
+      ],
     },
   ],
 });
