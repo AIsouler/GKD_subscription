@@ -137,15 +137,25 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
       name: '请求开启通知提示信息',
       desc: '自动点击“暂不”',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-      rules:
-        '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >(2) [text="开启朋友通知"]',
-      snapshotUrls: 'https://i.gkd.li/import/12675129',
+      rules: [
+        {
+          name: '顶部卡片',
+          matches:
+            '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >(2) [text="开启朋友通知"]',
+          snapshotUrls: 'https://i.gkd.li/import/12675129',
+        },
+        {
+          name: '半幅弹窗',
+          matches: '[text="及时获得消息提醒"] +2 [text="暂不开启"]',
+          snapshotUrls: 'https://i.gkd.li/import/13669790',
+        },
+      ],
     },
     {
       enable: false,
@@ -182,17 +192,24 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '添加搜索到桌面弹窗',
-      matchTime: 10000,
+      name: '添加快捷方式到桌面',
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
       rules: [
         {
+          name: '搜索快捷方式',
+          activityIds:
+            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
           action: 'back',
           matches: 'ViewGroup[desc="添加搜索到桌面"]',
           snapshotUrls: 'https://i.gkd.li/import/13338556',
+        },
+        {
+          name: '商城快捷方式',
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '[text="添加抖音商城到桌面"] +2 LinearLayout > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/import/13669682',
         },
       ],
     },
