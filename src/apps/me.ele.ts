@@ -74,6 +74,7 @@ export default defineAppConfig({
             'me.ele.component.pops2.Pops2MistDialog',
             'me.ele.newbooking.checkout.entrypoint.WMCheckoutActivity',
             'me.ele.application.ui.Launcher.LauncherActivity',
+            'me.ele.android.emagex.container.EMagexActivity',
           ],
           matches:
             '@ImageView[clickable=true] - ImageView < [id="me.ele:id/id_magex_mistview"][childCount=2]',
@@ -81,6 +82,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12726709',
             'https://i.gkd.li/import/13476719',
             'https://i.gkd.li/import/13523508',
+            'https://i.gkd.li/import/13685037',
           ],
         },
         {
