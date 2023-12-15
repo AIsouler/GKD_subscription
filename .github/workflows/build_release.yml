@@ -37,7 +37,6 @@ jobs:
           git status
           git add .
           git commit -a -m "chore: v${{steps.version.outputs.version}}"
-          git tag ${{steps.version.outputs.version}}
         continue-on-error: true
 
       - name: Git push
