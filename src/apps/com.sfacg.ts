@@ -7,13 +7,18 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       actionMaximum: 1,
       matchTime: 15000,
+      resetMatch: 'app',
       rules: [
         {
+          quickFind: true,
           matches: '[id="com.sfacg:id/tv_jump"]',
           snapshotUrls: 'https://i.gkd.li/import/13185579',
+        },
+        {
+          matches: '[id$="tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13644814',
         },
       ],
     },
