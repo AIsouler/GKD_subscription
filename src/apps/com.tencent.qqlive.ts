@@ -157,12 +157,22 @@ export default defineAppConfig({
       enable: false,
       key: 20,
       name: '请求通知权限弹窗',
-      desc: '自动点击[以后再说]',
-      quickFind: true,
-      actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
-      snapshotUrls: 'https://i.gkd.li/import/12700139',
+      rules: [
+        {
+          key: 0,
+          actionMaximum: 1,
+          quickFind: true,
+          matches: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
+          snapshotUrls: 'https://i.gkd.li/import/12700139',
+        },
+        {
+          key: 1,
+          actionMaximumKey: 0,
+          matches: '@ImageView + * > [text^="开启通知"]',
+          snapshotUrls: 'https://i.gkd.li/import/13670465',
+        },
+      ],
     },
   ],
 });
