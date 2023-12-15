@@ -246,14 +246,21 @@ export default defineAppConfig({
       key: 11, //与key12完全重复
       name: '版本更新',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds: 'com.douban.frodo.activity.BetaApkDialogActivity',
+          activityIds: [
+            'com.douban.frodo.activity.BetaApkDialogActivity',
+            'com.douban.frodo.activity.SplashActivity',
+          ],
           matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
-          snapshotUrls: 'https://i.gkd.li/import/13228832',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13228832',
+            'https://i.gkd.li/import/13659160', // activityIds: 'com.douban.frodo.activity.SplashActivity',
+          ],
         },
       ],
     },
