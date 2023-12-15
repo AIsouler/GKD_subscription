@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.sina.weibo',
   name: '微博',
+  deprecatedKeys: [12],
   groups: [
     {
       key: 0,
@@ -111,12 +112,32 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '发现页广告弹窗',
-      quickFind: true,
-      activityIds: ['com.sina.weibo.page.ad.DiscoverAdDialog'],
-      rules:
-        '[id="com.sina.weibo:id/ad_portrait_layout"] + [id="com.sina.weibo:id/btn_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12705974'],
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.sina.weibo.business',
+          quickFind: true,
+          matches:
+            '@[id="com.sina.weibo:id/btn_close"] - FrameLayout > [id="com.sina.weibo:id/ad_tag"]',
+          snapshotUrls: 'https://i.gkd.li/import/12750090',
+        },
+        {
+          key: 1,
+          activityIds: 'com.sina.weibo.feed.MPDialogActivity',
+          matches:
+            'View[childCount=2] > @TextView[clickable=true] - View >n [text="元"]',
+          snapshotUrls: 'https://i.gkd.li/import/13670266',
+        },
+        {
+          key: 2,
+          activityIds: 'com.sina.weibo.page.ad.DiscoverAdDialog',
+          quickFind: true,
+          matches:
+            '[id="com.sina.weibo:id/ad_portrait_layout"] + [id="com.sina.weibo:id/btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/12705974',
+        },
+      ],
     },
     {
       enable: false,
@@ -150,15 +171,6 @@ export default defineAppConfig({
       rules:
         '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
       snapshotUrls: ['https://i.gkd.li/import/12749876'],
-    },
-    {
-      key: 12,
-      name: '首页广告弹窗',
-      quickFind: true,
-      activityIds: ['com.sina.weibo.business'],
-      rules:
-        '@[id="com.sina.weibo:id/btn_close"] - FrameLayout > [id="com.sina.weibo:id/ad_tag"]',
-      snapshotUrls: ['https://i.gkd.li/import/12750090'],
     },
     {
       key: 13,
