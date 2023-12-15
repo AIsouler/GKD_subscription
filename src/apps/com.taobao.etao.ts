@@ -7,40 +7,41 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.taobao.sns.app.advertise.SplashAdActivity',
-      rules: '[id!=null][text^="跳过"][clickable=true]',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text*="跳过"][text.length<=10]',
       snapshotUrls: 'https://i.gkd.li/import/12727451',
     },
     {
       key: 1,
       name: '更新弹窗',
-      activityIds: [
-        'com.taobao.etao.app.homev4.HomeV4Activity',
-        'com.taobao.etao.app.home.view.NewHomeActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: [
-        {
-          matches:
-            '[text="更新提示"] < LinearLayout < LinearLayout +(2) ScrollView >(2) [text="取消"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12684250',
-            'https://i.gkd.li/import/12727457', // activityId: 'com.taobao.etao.app.home.view.NewHomeActivity'
-            'https://i.gkd.li/import/12684244', // activityId: 'com.miui.home.launcher.Launcher'
-          ],
-        },
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="更新提示"] <<2 * +2 * >2 [text="取消"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12684250',
+        'https://i.gkd.li/import/12727457',
+        'https://i.gkd.li/import/12684244',
       ],
     },
     {
       key: 2,
-      name: '首页广告弹窗',
+      name: '弹窗广告',
       rules: [
         {
           key: 0,
-          activityIds: 'com.taobao.etao.app.home.view.NewHomeActivity',
+          activityIds: [
+            'com.taobao.etao.app.home.view.NewHomeActivity',
+            'com.taobao.etao.app.homev4.HomeV4Activity',
+          ],
           matches:
-            'LinearLayout > FrameLayout + RelativeLayout > ImageView[id!=null][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12739581',
+            'LinearLayout[childCount=2] > @RelativeLayout[clickable=true][childCount=1] > ImageView[childCount=0]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12739581',
+            'https://i.gkd.li/import/13670025',
+          ],
         },
       ],
     },
