@@ -7,9 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds:
-        'com.shizhi.shihuoapp.module.main.ui.welcome.WelcomeActivity',
-      rules: '[id=`com.hupu.shihuo:id/fl_countdown`]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '@[clickable=true] > [text*="跳过"][text.length<=10]',
+      snapshotUrls: 'https://i.gkd.li/import/13685134',
     },
     {
       key: 3,
