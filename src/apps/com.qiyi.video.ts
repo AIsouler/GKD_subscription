@@ -51,11 +51,20 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '版本更新弹窗',
+      name: '版本更新',
       quickFind: true,
-      activityIds: 'org.qiyi.android.video.MainActivity',
-      snapshotUrls: 'https://i.gkd.li/import/12838158',
-      rules: ['[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: [
+        'org.qiyi.android.video.MainActivity',
+        'org.qiyi.android.search.view.PhoneSearchActivity',
+      ],
+      rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12838158',
+        'https://i.gkd.li/import/13684912', //activityIds: 'org.qiyi.android.search.view.PhoneSearchActivity',
+      ],
     },
     {
       key: 5,
