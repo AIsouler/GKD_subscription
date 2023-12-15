@@ -81,6 +81,7 @@ export default defineAppConfig({
         {
           key: -1,
           preKeys: [0, 1, 2, 3],
+          actionCd: 35000, //APP更新后点击不感兴趣不会跳过当前视频了，所以需要冷却一下等下一次重新跳过广告视频
           name: '点击不感兴趣',
           matches:
             '@LinearLayout[clickable=true] > RelativeLayout + TextView[text="不感兴趣"]',
