@@ -5,6 +5,7 @@
 ## 开屏广告
 
 - [快照-0](https://i.gkd.li/import/12706108)
+- [快照-1](https://i.gkd.li/import/13635599)
 
 ## 青少年模式弹窗
 

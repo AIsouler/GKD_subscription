@@ -15,6 +15,8 @@
 - [快照-2](https://i.gkd.li/import/13613296)
 - [快照-3](https://i.gkd.li/import/13613498)
 - [快照-4](https://i.gkd.li/import/13613850)
+- [快照-5](https://i.gkd.li/import/13660652)
+- [快照-6](https://i.gkd.li/import/13674376)
 
 ## 看广告视频拿VIP
 

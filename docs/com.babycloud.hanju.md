@@ -6,8 +6,9 @@
 
 - [快照-0](https://i.gkd.li/import/13234983)
 
-## 卡片广告
+## 卡片式广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13628282)
+- [快照-1](https://i.gkd.li/import/13670721)
