@@ -10,25 +10,34 @@ export default defineAppConfig({
       desc: '点击右上角x',
       rules: [
         {
-          activityIds: 'com.jincheng.supercaculator.activity.MainActivity',
+          key: 0,
+          name: '字节广告',
+          activityIds: [
+            'com.jincheng.supercaculator.activity.MainActivity',
+            'com.jincheng.supercaculator.activity.basic.CalculatorActivity',
+          ],
           matches: '@Image < View < View TextView[text = "反馈"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12859523',
             'https://i.gkd.li/import/12859545',
+            'https://i.gkd.li/import/13670598',
           ],
         },
         {
+          key: 1,
+          name: '腾讯广告-1',
           activityIds: 'com.jincheng.supercaculator.activity.SplashActivity',
           matches:
             'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: ['https://i.gkd.li/import/13261870'],
+          snapshotUrls: 'https://i.gkd.li/import/13261870',
         },
         {
-          // 与"咕咚"app快照类似，https://i.gkd.li/import/13348663 ，可能来自同个sdk
+          key: 2,
+          name: '腾讯广告-2',
           activityIds:
             'com.jincheng.supercaculator.activity.basic.CalculatorActivity',
           matches:
-            '[id="android:id/content"] >4 FrameLayout > ImageView + FrameLayout > ImageView',
+            'ImageView -2 FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13378847',
         },
       ],
