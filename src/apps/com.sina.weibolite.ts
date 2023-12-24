@@ -37,5 +37,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: 'APP评分',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.weico.international.activity.MainFragmentActivity',
+      rules: '[id="com.sina.weibolite:id/ed_btn_negative"]',
+      snapshotUrls: 'https://i.gkd.li/import/13727728',
+    },
   ],
 });
