@@ -156,7 +156,8 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '帖子内容与评论区中间的卡片式广告',
+      name: '搜索页/帖子内容与评论区中间的卡片式广告',
+      desc: '部分有二次弹窗',
       actionMaximum: 1,
       resetMatch: 'activity',
       rules: [
@@ -184,12 +185,14 @@ export default defineAppConfig({
             'com.douban.frodo.subject.activity.ForumTopicActivity',
             'com.douban.frodo.group.activity.GroupTopicActivity',
             'com.douban.frodo.activity.SplashActivity',
+            'com.douban.frodo.search.activity.NewSearchActivity', // 搜索页
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/12548064',
             'https://i.gkd.li/import/12548450',
             'https://i.gkd.li/import/12723751',
             'https://i.gkd.li/import/13062693',
+            'https://i.gkd.li/import/13692895', // activityIds: 'com.douban.frodo.search.activity.NewSearchActivity'
           ],
         },
         {
