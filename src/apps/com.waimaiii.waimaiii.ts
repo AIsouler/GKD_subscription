@@ -24,6 +24,12 @@ export default defineAppConfig({
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/13346451',
         },
+        {
+          key: 2,
+          matches:
+            '[id="com.waimaiii.waimaiii:id/flContainer"] >n FrameLayout[childCount=3] > FrameLayout + @View[clickable=true] + TextView',
+          snapshotUrls: 'https://i.gkd.li/import/13694837',
+        },
       ],
     },
     {
