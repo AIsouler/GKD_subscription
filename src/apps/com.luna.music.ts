@@ -10,8 +10,18 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id$="id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13533782',
+      rules: [
+        {
+          name: '字节穿山甲广告SDK',
+          matches: '[id$="id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13533782',
+        },
+        {
+          quickFind: true,
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: 'https://i.gkd.li/import/13704658',
+        },
+      ],
     },
     {
       key: 2,
