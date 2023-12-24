@@ -57,22 +57,29 @@ export default defineAppConfig({
       enable: false,
       key: 2,
       name: '好友动态-广告卡片',
-      activityIds: [
-        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-        'com.tencent.mobileqq.activity.SplashActivity',
-      ],
       rules: [
         {
           key: 0,
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches: 'View[desc="广告"] + ImageView[clickable=true]', // 1689050226722
           snapshotUrls: 'https://i.gkd.li/import/12847842',
         },
         {
           preKeys: 0,
+          key: 1,
+          activityIds:
+            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
           quickFind: true,
-          matches:
-            '@[clickable=true] > ImageView + TextView[text="关闭此条广告"]',
+          matches: '@[clickable=true] > ImageView + [text="关闭此条广告"]',
           snapshotUrls: 'https://i.gkd.li/import/12840889',
+        },
+        {
+          preKeys: 0,
+          key: 2,
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          quickFind: true,
+          matches: '@[clickable=true] > * > ImageView + [text="隐藏此条动态"]',
+          snapshotUrls: 'https://i.gkd.li/import/13761147',
         },
       ],
     },
