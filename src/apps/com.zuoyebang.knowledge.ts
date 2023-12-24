@@ -15,6 +15,16 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/13296260',
     },
     {
+      key: 1,
+      name: '更新提醒',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[id="com.zuoyebang.knowledge:id/cancel_button"]',
+      snapshotUrls: 'https://i.gkd.li/import/13695522',
+    },
+    {
       key: 3,
       name: '赏好评弹窗',
       quickFind: true,
