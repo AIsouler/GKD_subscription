@@ -365,5 +365,25 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      enable: false,
+      key: 20,
+      name: '钱包-卡片广告',
+      quickFind: true,
+      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      rules: [
+        {
+          key: 0,
+          matches: 'ViewGroup[childCount=6] > [text="广告"]',
+          snapshotUrls: ['https://i.gkd.li/import/13695087'],
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches: '@LinearLayout > [text="关闭此条广告"]',
+          snapshotUrls: ['https://i.gkd.li/import/13699701'],
+        },
+      ],
+    },
   ],
 });
