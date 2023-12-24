@@ -68,25 +68,35 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 1],
+          name: '点击右上角关闭-英文',
+          key: 2,
+          matches:
+            '[id="com.twitter.android:id/tweet_ad_badge_top_right"] + [id="com.twitter.android:id/tweet_curation_action"]',
+          snapshotUrls: ['https://i.gkd.li/import/13680756'],
+        },
+        {
+          preKeys: [0, 1, 2],
           key: 10,
           name: '点击屏蔽',
           matches:
-            '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"]',
+            '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"||text^="屏蔽"||text^="Block"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12828815', // com.twitter.tweetdetail.TweetDetailActivity
             'https://i.gkd.li/import/12847600', // com.twitter.android.search.implementation.results.SearchActivity
             'https://i.gkd.li/import/12904602', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/import/13680783', // 兼容英文
           ],
         },
         {
           preKeys: 10,
           key: 11,
           name: '二次确认-点击屏蔽',
-          matches: '[text="取消"] + [text="屏蔽"]',
+          matches:
+            '[text="取消"||text^="Cancel"] + [text="屏蔽"||text^="Block"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12828832', // com.twitter.tweetdetail.TweetDetailActivity
             'https://i.gkd.li/import/12904601', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/import/13680798', // 兼容英文
           ],
         },
       ],
