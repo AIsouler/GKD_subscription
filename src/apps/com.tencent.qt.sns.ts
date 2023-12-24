@@ -7,7 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.tencent.gamehelper.ui.main.WelcomeActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id=`com.tencent.qt.sns:id/tv_timer`][text$=`跳过`]',
     },
     {
@@ -24,13 +26,15 @@ export default defineAppConfig({
       key: 2,
       enable: false,
       name: '更新弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      matchDelay: 10000,
-      rules:
-        '@[id="com.tencent.qt.sns:id/btnNegative"][text*="取消"] +2 [id="com.tencent.qt.sns:id/btnPositive"][text*="现在升级"]', //防止误触其它取消按钮
-      snapshotUrls: 'https://i.gkd.li/import/13497984',
+      rules: '[text="版本更新"] +4 LinearLayout > [text="取消"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13497984',
+        'https://i.gkd.li/import/13713478',
+      ],
     },
   ],
 });
