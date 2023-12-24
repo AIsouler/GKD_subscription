@@ -55,5 +55,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '卡片式广告',
+      rules: [
+        {
+          key: 0,
+          name: '推荐页卡片广告',
+          activityIds: 'com.dianping.v1.NovaMainActivity',
+          matches:
+            '[desc="reculike_delete"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13759369',
+        },
+      ],
+    },
   ],
 });
