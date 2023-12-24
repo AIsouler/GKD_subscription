@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.sankuai.meituan',
   name: '美团',
+  deprecatedKeys: [5, 6],
   groups: [
     {
       key: 0,
@@ -36,20 +37,48 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '美团买菜活动弹窗',
-      activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
+      name: '广告弹窗',
       rules: [
         {
           key: 0,
+          name: '美团买菜-折扣弹窗',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
           matches:
-            'ViewGroup > ViewGroup[childCount=6] > ViewGroup > ImageView',
+            'ViewGroup > ViewGroup[childCount=6] > ViewGroup[childCount=1] > ImageView[childCount=0][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/12639717',
         },
         {
           key: 1,
+          name: '美团买菜-红包弹窗',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
           matches:
             '@ImageView < ViewGroup +3 ViewGroup > ViewGroup > TextView[text^="红包已到账"]',
           snapshotUrls: 'https://i.gkd.li/import/12892626',
+        },
+        {
+          key: 2,
+          name: '美团买菜-支付成功后-红包弹窗',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
+          matches:
+            'TextView[text="恭喜你获得以下权益"] + ViewGroup > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/12646768',
+        },
+        {
+          key: 3,
+          name: '超市便利-广告弹窗',
+          activityIds:
+            'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
+          matches:
+            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13694877',
+        },
+        {
+          key: 4,
+          name: '骑行卡-红包弹窗',
+          activityIds: 'com.meituan.mmp.lib.HeraActivity',
+          matches:
+            'View[childCount=3] > View + TextView + TextView[text=""][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/12739204',
         },
       ],
     },
@@ -91,28 +120,6 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 5,
-      name: '美团买菜-支付成功后-红包弹窗',
-      desc: '美团买菜-支付成功后-关闭红包弹窗',
-      activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
-      rules: 'TextView[text="恭喜你获得以下权益"] + ViewGroup > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/12646768',
-    },
-    {
-      key: 6,
-      name: '美团骑行-广告、优惠券弹窗',
-      rules: [
-        {
-          key: 0,
-          name: '骑行卡福利大派送弹窗',
-          activityIds: 'com.meituan.mmp.lib.HeraActivity',
-          matches:
-            'View[childCount=3] > View + TextView + TextView[text=""][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12739204',
-        },
-      ],
-    },
-    {
       enable: false,
       key: 7,
       name: '请求定位弹窗',
@@ -134,14 +141,15 @@ export default defineAppConfig({
     {
       enable: false,
       key: 8,
-      name: '通知弹窗',
+      name: '请求开启通知权限弹窗',
       desc: '点击跳过',
       quickFind: true,
       actionMaximum: 1,
       rules: [
         {
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: 'TextView[id=\'com.sankuai.meituan:id/later\']',
+          matches:
+            '[id="com.sankuai.meituan:id/notify_open_hint_title"] +n [id="com.sankuai.meituan:id/later"]',
           snapshotUrls: 'https://i.gkd.li/import/13439134',
         },
       ],
