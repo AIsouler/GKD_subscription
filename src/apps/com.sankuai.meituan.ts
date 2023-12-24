@@ -154,5 +154,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      name: '订单完成后的红包弹窗',
+      desc: '直接关闭整个模块',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          action: 'back',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
+          matches: '[id="com.sankuai.meituan:id/module_container"]',
+          snapshotUrls: 'https://i.gkd.li/import/13695703',
+        },
+      ],
+    },
   ],
 });
