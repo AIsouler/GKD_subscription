@@ -183,6 +183,15 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/12881976',
         },
         {
+          key: 32,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches: [
+            'ViewGroup[childCount=2] > ImageView + TextView[text="广告"]',
+            'ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView[childCount=0]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13761275',
+        },
+        {
           key: 2,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
