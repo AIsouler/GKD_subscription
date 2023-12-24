@@ -7,17 +7,17 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.ct.client.activity.MainActivity',
-        'com.ct.client.activity.SplashActivity',
-      ],
       rules: [
         {
+          key: 0,
           matches: '[id="com.ct.client:id/tvSkip"]',
         },
         {
+          key: 1,
           matches: '[id="com.ct.client:id/btSkip"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12508958',
@@ -37,18 +37,15 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页-取消升级',
-      enable: false,
+      name: '更新弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.ct.client.activity.MainActivity',
-        'com.ct.client.common.ConfirmDialogActivity',
-        'com.ct.client.activity.SplashActivity',
-      ],
-      rules: 'LinearLayout > TextView[text="取消升级"]',
+      rules: 'LinearLayout > [text="取消升级"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12819594',
         'https://i.gkd.li/import/13316168',
+        'https://i.gkd.li/import/13695096',
       ],
     },
     {
