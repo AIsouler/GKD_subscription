@@ -7,8 +7,11 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.alibaba.wireless.launch.home.V5HomeActivity',
-      rules: '[id="com.alibaba.wireless:id/v5_splash_over"][text^="跳过"]',
+      quickFind: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: '[id="com.alibaba.wireless:id/v5_splash_over"]',
       snapshotUrls: 'https://i.gkd.li/import/12684411',
     },
     {
@@ -23,6 +26,17 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/import/12684422',
         'https://i.gkd.li/import/12684426',
+      ],
+    },
+    {
+      key: 2,
+      name: '首页-弹窗广告',
+      quickFind: true,
+      activityIds: 'com.alibaba.wireless.launch.home.V5HomeActivity',
+      rules: 'WebView >n View > Image[text*="FXa-124-124"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13683509',
+        'https://i.gkd.li/import/13683510',
       ],
     },
   ],
