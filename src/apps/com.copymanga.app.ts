@@ -31,11 +31,12 @@ export default defineAppConfig({
         'com.copymanga.app.MainActivity',
         'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',
       ],
-      delay: 400,
+      actionDelay: 400,
       rules: [
         {
           key: 0,
           name: '快手广告-1',
+          activityIds: 'com.copymanga.app.MainActivity',
           matches: [
             'ViewGroup > [text="广告"]',
             'ViewGroup[childCount=3] > TextView + TextView + ImageView[clickable=true]',
@@ -60,6 +61,16 @@ export default defineAppConfig({
         },
         {
           key: 2,
+          name: '快手广告-3',
+          activityIds: 'com.copymanga.app.MainActivity',
+          matches: [
+            'ViewGroup > [text="广告"]',
+            '@ViewGroup[clickable=true] > [text="跳过"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13696292',
+        },
+        {
+          key: 3,
           name: '腾讯广告-1',
           activityIds: 'com.copymanga.app.MainActivity',
           matches:
@@ -74,14 +85,14 @@ export default defineAppConfig({
           ],
         },
         {
-          key: 3,
+          key: 4,
           name: '腾讯广告-2',
           matches:
             'ImageView <2 FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13246786',
         },
         {
-          key: 4,
+          key: 5,
           name: '腾讯广告-3',
           matches:
             '[id="com.copymanga.app:id/interact_ad_root"] > [id="com.copymanga.app:id/iv_close"]',
@@ -91,14 +102,14 @@ export default defineAppConfig({
           ],
         },
         {
-          key: 5,
+          key: 6,
           name: '腾讯广告-4',
           matches:
             'ImageView - ImageView - FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13233178',
         },
         {
-          key: 6,
+          key: 7,
           name: '字节广告-1',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -109,7 +120,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13372542',
         },
         {
-          key: 7,
+          key: 8,
           name: '字节广告-2',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -117,7 +128,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/12925052',
         },
         {
-          key: 8,
+          key: 9,
           name: '字节广告-3',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -128,16 +139,29 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '加入书架按钮下面的广告',
-      activityIds: 'com.copymanga.app.MainActivity',
+      name: '卡片式广告',
       rules: [
         {
-          name: '点击右上角x',
-          matches: 'ImageView[id="com.copymanga.app:id/close"]',
+          key: 0,
+          name: '快手广告-1',
+          activityIds: 'com.copymanga.app.MainActivity',
+          matches:
+            '[id^="com.copymanga.app:id/ad_flag_source"] - * > [id="com.copymanga.app:id/close"]',
           snapshotUrls: 'https://i.gkd.li/import/12504525',
         },
         {
-          name: '点击右下角x',
+          key: 1,
+          name: '快手广告-2',
+          activityIds: 'com.copymanga.app.MainActivity',
+          quickFind: true,
+          matches:
+            '[id="com.copymanga.app:id/close_m_image_left_text_right_no_compliance"]',
+          snapshotUrls: 'https://i.gkd.li/import/13761154',
+        },
+        {
+          key: 2,
+          name: '腾讯广告',
+          activityIds: 'com.copymanga.app.MainActivity',
           matches:
             'FrameLayout[childCount=3] > LinearLayout + FrameLayout[childCount=1] > ImageView[id=null]',
           snapshotUrls: [
