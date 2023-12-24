@@ -22,35 +22,22 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '腾讯广告-1',
-          activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
-          matches:
-            'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12781461',
-            'https://i.gkd.li/import/13488673',
+          name: '腾讯广告',
+          activityIds: [
+            'com.klcxkj.zqxy.ui.main.MainActivity',
+            'com.klcxkj.zqxy.ui.device.apartment.ble.BathingBleActivity',
           ],
-        },
-        {
-          key: 2,
-          name: '腾讯广告-2',
-          activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
           matches:
-            'ImageView <(1,2) FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView[width<90][height<90]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13546464',
+            'https://i.gkd.li/import/12781461', //腾讯-1，原'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/import/13488673',
+            'https://i.gkd.li/import/13546464', //腾讯-2，原'ImageView <(1,2) FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
             'https://i.gkd.li/import/13071301',
             'https://i.gkd.li/import/13274836',
+            'https://i.gkd.li/import/13274836', //腾讯-3，原'ImageView -n FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/import/13707849', //腾讯-4
           ],
-        },
-        {
-          key: 3,
-          name: '腾讯广告-3',
-          activityIds:
-            'com.klcxkj.zqxy.ui.device.apartment.ble.BathingBleActivity',
-          matches:
-            'ImageView -n FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13274836',
         },
         {
           key: 4,
