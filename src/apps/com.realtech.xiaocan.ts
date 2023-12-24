@@ -13,7 +13,6 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          name: '开屏广告-1',
           quickFind: true,
           matches: '[text^="跳过"][text.length<=10]',
           snapshotUrls: [
@@ -24,9 +23,27 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '开屏广告-2',
           matches: '[id = "com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/12854728',
+        },
+        {
+          key: 3,
+          matches:
+            '[id="com.realtech.xiaocan:id/splash_ad_container"] >n FrameLayout[childCount=3] > FrameLayout + @View[clickable=true] + TextView',
+          snapshotUrls: 'https://i.gkd.li/import/13694858',
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.realtech.xiaocan.MainActivity',
+          matches:
+            'View[childCount=3] > View + ImageView + ImageView[clickable=true][childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13694864',
         },
       ],
     },
