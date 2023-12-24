@@ -136,9 +136,15 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.taobao.android.detail.wrapper.activity.DetailActivity',
+      activityIds: [
+        'com.taobao.android.detail.wrapper.activity.DetailActivity',
+        'com.taobao.android.order.bundle.TBOrderListActivity',
+      ],
       rules: '[id="com.taobao.taobao:id/update_imageview_cancel_v2"]',
-      snapshotUrls: 'https://i.gkd.li/import/13336760',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13336760',
+        'https://i.gkd.li/import/13695520',
+      ],
     },
     {
       enable: false,
@@ -190,10 +196,22 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-      rules:
-        '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
-      snapshotUrls: 'https://i.gkd.li/import/13628020',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches:
+            '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
+          snapshotUrls: 'https://i.gkd.li/import/13628020',
+        },
+        {
+          key: 1,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches:
+            '[text="根据相关法律法规要求，请尽快完成花呗升级"] <<n FrameLayout FrameLayout @[text="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/13691864',
+        },
+      ],
     },
   ],
 });
