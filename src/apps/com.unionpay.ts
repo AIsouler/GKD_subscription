@@ -55,7 +55,7 @@ export default defineAppConfig({
     {
       key: 9,
       name: '右侧悬浮广告',
-      matchTime: 10000,
+      // matchTime: 10000, 部分广告不在10s内
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
