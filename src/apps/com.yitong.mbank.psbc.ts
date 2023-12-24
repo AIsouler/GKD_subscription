@@ -7,14 +7,18 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
+      quickFind: true,
       activityIds: [
         'com.yitong.mbank.psbc.module.app.view.customview.dialog.DialogUpdateApk',
+        'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
       ],
       rules: [
         {
-          matches:
-            '@[id="com.yitong.mbank.psbc:id/bt_cancel"][text="暂不更新"] + [id="com.yitong.mbank.psbc:id/bt_updata"][text="立即更新"]',
-          snapshotUrls: ['https://i.gkd.li/import/12685350'],
+          matches: 'Button[id="com.yitong.mbank.psbc:id/bt_cancel"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12685350',
+            'https://i.gkd.li/import/13695462',
+          ],
         },
       ],
     },
