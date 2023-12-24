@@ -7,14 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.shengqugames.permission.HelpActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-      rules: [
-        {
-          matches: '[id="com.sdo.sdaccountkey:id/tv_pass"]',
-          snapshotUrls: 'https://i.gkd.li/import/12934779',
-        },
-      ],
+      rules: '[text*="跳过"][text.length<=10]',
+      snapshotUrls: 'https://i.gkd.li/import/12934779',
     },
   ],
 });
