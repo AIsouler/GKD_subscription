@@ -1,6 +1,6 @@
 # 懂车帝
 
-存在 7 规则组 - [com.ss.android.auto](/src/apps/com.ss.android.auto.ts)
+存在 8 规则组 - [com.ss.android.auto](/src/apps/com.ss.android.auto.ts)
 
 ## 开屏广告
 
@@ -48,3 +48,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12840664)
+
+## 选车页卡片广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13686928)

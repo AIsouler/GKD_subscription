@@ -13,12 +13,13 @@
 
 - [快照-0](https://i.gkd.li/import/12508971)
 
-## 首页-取消升级
+## 更新弹窗
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12819594)
 - [快照-1](https://i.gkd.li/import/13316168)
+- [快照-2](https://i.gkd.li/import/13695096)
 
 ## 浮窗广告
 

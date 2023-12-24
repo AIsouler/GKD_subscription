@@ -7,7 +7,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12565261)
-- [快照-1](https://i.gkd.li/import/13024980)
+- [快照-1](https://i.gkd.li/import/13705106)
 
 ## 视频播放-赞助商广告
 

@@ -19,6 +19,7 @@
 
 - [快照-0](https://i.gkd.li/import/12642015)
 - [快照-1](https://i.gkd.li/import/12642019)
+- [快照-2](https://i.gkd.li/import/13761182)
 
 ## 活动弹窗
 

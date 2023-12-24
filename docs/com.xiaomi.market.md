@@ -30,6 +30,7 @@
 
 - [快照-0](https://i.gkd.li/import/12714980)
 - [快照-1](https://i.gkd.li/import/13197306)
+- [快照-2](https://i.gkd.li/import/13691701)
 
 ## 个性化推荐弹窗
 

@@ -14,7 +14,8 @@
 - [快照-5](https://i.gkd.li/import/13071301)
 - [快照-6](https://i.gkd.li/import/13274836)
 - [快照-7](https://i.gkd.li/import/13274836)
-- [快照-8](https://i.gkd.li/import/13274838)
+- [快照-8](https://i.gkd.li/import/13707849)
+- [快照-9](https://i.gkd.li/import/13274838)
 
 ## 横幅广告
 
