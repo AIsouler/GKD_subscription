@@ -35,13 +35,14 @@ export default defineAppConfig({
           ],
           matches: [
             '[id^="com.magicalstory.AppStore:id/banner"]',
-            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView[visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/import/13185746',
             'https://i.gkd.li/import/13413482',
             'https://i.gkd.li/import/13416979',
             'https://i.gkd.li/import/13527698',
+            'https://i.gkd.li/import/13759492', // 限定 visibleToUser, 防止误触
           ],
         },
         {
