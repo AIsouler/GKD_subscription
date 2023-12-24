@@ -38,7 +38,8 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text*=`青少年模式`] + TextView[text=`我知道了`]',
+      rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
+      snapshotUrls: 'https://i.gkd.li/import/13746766',
     },
     {
       key: 2,
@@ -191,11 +192,11 @@ export default defineAppConfig({
           preKeys: 0,
           key: 1,
           name: '点击[不感兴趣]',
-          matches:
-            '@[id="tv.danmaku.bili:id/reason1_layout"] > [text$="不感兴趣"]',
+          matches: '@RelativeLayout > [text$="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13256605',
             'https://i.gkd.li/import/13625309',
+            'https://i.gkd.li/import/13742257',
           ],
         },
       ],
