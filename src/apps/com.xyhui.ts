@@ -61,6 +61,7 @@ export default defineAppConfig({
           name: '腾讯广告-2',
           activityIds: [
             'com.xyhui.start.PUMainActivity',
+            'com.xyhui.start.LoadingActivity',
             'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity',
           ],
           matches:
@@ -70,6 +71,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12646519',
             'https://i.gkd.li/import/12868369',
             'https://i.gkd.li/import/12646541', // 华为手机的快照，activityId = 'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity'
+            'https://i.gkd.li/import/13695488',
           ],
         },
         {
