@@ -39,18 +39,20 @@ export default defineAppConfig({
     {
       key: 2,
       name: '浮窗广告',
-      quickFind: true,
-      activityIds: ['com.ss.android.article.news.activity.MainActivity'],
       rules: [
         {
+          key: 0,
+          activityIds: [
+            'com.ss.android.article.news.activity.MainActivity',
+            'com.ss.android.ugc.detail.activity.TikTokActivity',
+          ],
           matches:
-            '@ImageView < FrameLayout[childCount=2] < FrameLayout < FrameLayout <2 FrameLayout <4 [id="android:id/tabhost"]',
-          snapshotUrls: ['https://i.gkd.li/import/13262675'],
-        },
-        {
-          matches:
-            '@ImageView <2 FrameLayout < FrameLayout  < FrameLayout  <5 RelativeLayout < LinearLayout <2 ViewPager <2 FrameLayout < FrameLayout <3 [id="android:id/tabhost"]',
-          snapshotUrls: ['https://i.gkd.li/import/13274622'],
+            'FrameLayout > FrameLayout > FrameLayout[childCount=2] > ImageView + ImageView[clickable=true][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13262675',
+            'https://i.gkd.li/import/13274622',
+            'https://i.gkd.li/import/13761236',
+          ],
         },
       ],
     },
