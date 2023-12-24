@@ -7,9 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.moutai.mall.module.splash.SplashActivity',
-      rules: '[id="com.moutai.mall:id/tvSkip"]',
-      snapshotUrls: 'https://i.gkd.li/import/12745150',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '[text*="跳过"][text.length<=10]',
+      snapshotUrls: 'https://i.gkd.li/import/13704960',
     },
     {
       key: 1,
