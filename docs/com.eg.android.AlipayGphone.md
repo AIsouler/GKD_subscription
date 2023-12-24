@@ -31,7 +31,8 @@
 
 - [快照-0](https://i.gkd.li/import/13327095)
 - [快照-1](https://i.gkd.li/import/13490805)
-- [快照-2](https://i.gkd.li/import/13490797)
+- [快照-2](https://i.gkd.li/import/13580594)
+- [快照-3](https://i.gkd.li/import/13490797)
 
 ## 设置支付宝小组件
 

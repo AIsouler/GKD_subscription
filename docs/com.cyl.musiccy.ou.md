@@ -17,19 +17,20 @@
 
 - [快照-0](https://i.gkd.li/import/13063206)
 
-## 插屏广告
+## 弹窗广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12775922)
 - [快照-1](https://i.gkd.li/import/13063222)
 - [快照-2](https://i.gkd.li/import/12775923)
-- [快照-3](https://i.gkd.li/import/12775925)
-- [快照-4](https://i.gkd.li/import/12775924)
-- [快照-5](https://i.gkd.li/import/12775921)
-- [快照-6](https://i.gkd.li/import/12776903)
-- [快照-7](https://i.gkd.li/import/12789928)
-- [快照-8](https://i.gkd.li/import/13215476)
-- [快照-9](https://i.gkd.li/import/13071595)
-- [快照-10](https://i.gkd.li/import/13063249)
-- [快照-11](https://i.gkd.li/import/13422363)
+- [快照-3](https://i.gkd.li/import/13759345)
+- [快照-4](https://i.gkd.li/import/12775925)
+- [快照-5](https://i.gkd.li/import/12775924)
+- [快照-6](https://i.gkd.li/import/12775921)
+- [快照-7](https://i.gkd.li/import/12776903)
+- [快照-8](https://i.gkd.li/import/12789928)
+- [快照-9](https://i.gkd.li/import/13215476)
+- [快照-10](https://i.gkd.li/import/13071595)
+- [快照-11](https://i.gkd.li/import/13063249)
+- [快照-12](https://i.gkd.li/import/13422363)

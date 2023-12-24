@@ -20,12 +20,13 @@
 - [快照-0](https://i.gkd.li/import/12472616)
 - [快照-1](https://i.gkd.li/import/12472615)
 
-## 应用内广告弹窗
+## 弹窗广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12818464)
 - [快照-1](https://i.gkd.li/import/12818528)
+- [快照-2](https://i.gkd.li/import/13761169)
 
 ## 右侧悬浮广告
 

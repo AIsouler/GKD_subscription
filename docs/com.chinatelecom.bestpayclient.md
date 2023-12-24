@@ -12,7 +12,7 @@
 
 - [快照-0](https://i.gkd.li/import/13391544)
 
-## 广告弹窗
+## 弹窗广告
 
 默认禁用
 
@@ -20,6 +20,8 @@
 - [快照-1](https://i.gkd.li/import/13455790)
 - [快照-2](https://i.gkd.li/import/13626324)
 - [快照-3](https://i.gkd.li/import/13455929)
+- [快照-4](https://i.gkd.li/import/13696322)
+- [快照-5](https://i.gkd.li/import/13696323)
 
 ## 悬浮窗小广告
 

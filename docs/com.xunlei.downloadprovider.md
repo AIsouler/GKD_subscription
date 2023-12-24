@@ -45,7 +45,8 @@
 - [快照-14](https://i.gkd.li/import/12892912)
 - [快照-15](https://i.gkd.li/import/12881976)
 - [快照-16](https://i.gkd.li/import/12881976)
-- [快照-17](https://i.gkd.li/import/12879452)
+- [快照-17](https://i.gkd.li/import/13761275)
+- [快照-18](https://i.gkd.li/import/12879452)
 
 ## 【下载页】广告卡片
 

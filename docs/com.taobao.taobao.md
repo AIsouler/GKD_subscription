@@ -63,6 +63,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13336760)
+- [快照-1](https://i.gkd.li/import/13695520)
 
 ## 小额免密支付弹窗
 
@@ -87,3 +88,4 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13628020)
+- [快照-1](https://i.gkd.li/import/13691864)

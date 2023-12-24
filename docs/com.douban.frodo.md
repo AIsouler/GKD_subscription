@@ -48,9 +48,9 @@
 
 - [快照-0](https://i.gkd.li/import/12548314)
 
-## 帖子内容与评论区中间的卡片式广告
+## 搜索页/帖子内容与评论区中间的卡片式广告
 
-默认禁用
+默认禁用 - 部分有二次弹窗
 
 - [快照-0](https://i.gkd.li/import/12674798)
 - [快照-1](https://i.gkd.li/import/12674842)
@@ -62,8 +62,9 @@
 - [快照-7](https://i.gkd.li/import/12548450)
 - [快照-8](https://i.gkd.li/import/12723751)
 - [快照-9](https://i.gkd.li/import/13062693)
-- [快照-10](https://i.gkd.li/import/12548016)
-- [快照-11](https://i.gkd.li/import/12723422)
+- [快照-10](https://i.gkd.li/import/13692895)
+- [快照-11](https://i.gkd.li/import/12548016)
+- [快照-12](https://i.gkd.li/import/12723422)
 
 ## 个性化内容推荐弹窗
 

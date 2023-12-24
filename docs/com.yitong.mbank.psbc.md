@@ -7,6 +7,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12685350)
+- [快照-1](https://i.gkd.li/import/13695462)
 
 ## 首页广告弹窗
 

@@ -12,6 +12,7 @@
 
 - [快照-0](https://i.gkd.li/import/13458779)
 - [快照-1](https://i.gkd.li/import/13623441)
+- [快照-2](https://i.gkd.li/import/13695447)
 
 ## 升级提醒
 
