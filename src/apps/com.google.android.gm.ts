@@ -28,15 +28,21 @@ export default defineAppConfig({
           preKeys: [-1, 0],
           key: 1,
           name: '广告中心-点击屏蔽',
-          matches: 'Button[text="屏蔽此广告"]', // TODO quickFind 优化改进 Button[text="屏蔽此广告"] <<n [id="com.google.android.gm:id/my_ad_center_dialog"]
-          snapshotUrls: 'https://i.gkd.li/import/13255700',
+          matches: 'Button[text="屏蔽此广告"||text^="Block"]', // TODO quickFind 优化改进 Button[text="屏蔽此广告"] <<n [id="com.google.android.gm:id/my_ad_center_dialog"]
+          snapshotUrls: [
+            'https://i.gkd.li/import/13255700',
+            'https://i.gkd.li/import/13724271',
+          ],
         },
         {
           preKeys: 1,
           key: 2,
           name: '点击继续确认屏蔽',
-          matches: 'Button[text="继续"]', // TODO Button[text="继续"] <<n [id="com.google.android.gm:id/design_bottom_sheet"]
-          snapshotUrls: 'https://i.gkd.li/import/13255701',
+          matches: 'Button[text="继续"||text="Continue"]', // TODO Button[text="继续"] <<n [id="com.google.android.gm:id/design_bottom_sheet"]
+          snapshotUrls: [
+            'https://i.gkd.li/import/13255701',
+            'https://i.gkd.li/import/13724287',
+          ],
         },
         {
           preKeys: 2,
