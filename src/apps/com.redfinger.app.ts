@@ -12,7 +12,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
           key: 0,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
@@ -25,6 +24,29 @@ export default defineAppConfig({
           key: 1,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/13188645',
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '更新弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules:
+        '[id="com.redfinger.app:id/btn_update"] + [id="com.redfinger.app:id/iv_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13761821',
+    },
+    {
+      key: 2,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.redfinger.app.activity.MainActivity',
+          quickFind: true,
+          matches: '[id="com.redfinger.app:id/rl_screen_ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13761825',
         },
       ],
     },
