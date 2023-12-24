@@ -103,5 +103,14 @@ export default defineAppConfig({
         '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13413819',
     },
+    {
+      key: 8,
+      name: '照片-底部浮窗广告',
+      activityIds: 'com.baidu.youavideo.home.view.HomeActivity',
+      quickFind: true,
+      rules:
+        '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13711475',
+    },
   ],
 });
