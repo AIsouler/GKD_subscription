@@ -50,19 +50,28 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '应用内广告弹窗',
-      activityIds: 'com.hunantv.imgo.activity.MainActivity',
+      name: '弹窗广告',
       rules: [
         {
           key: 0,
+          activityIds: 'com.hunantv.imgo.activity.MainActivity',
           matches:
             '[id="com.hunantv.imgo.activity:id/imgPromotion"] + [id="com.hunantv.imgo.activity:id/vClosePromotionView"]',
           snapshotUrls: 'https://i.gkd.li/import/12818464',
         },
         {
           key: 1,
+          activityIds: 'com.hunantv.imgo.activity.MainActivity',
           matches: '@TextView[id=null][text=""] - View > Image[id="hotGif"]',
           snapshotUrls: 'https://i.gkd.li/import/12818528',
+        },
+        {
+          key: 2,
+          activityIds: 'com.hunantv.imgo.activity.MainActivity',
+          quickFind: true,
+          matches:
+            '[id="com.hunantv.imgo.activity:id/ivPromotion"] + [id="com.hunantv.imgo.activity:id/btnClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/13761169',
         },
       ],
     },
