@@ -36,5 +36,19 @@ export default defineAppConfig({
       rules: '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
       snapshotUrls: 'https://i.gkd.li/import/13511386',
     },
+    {
+      key: 3,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          name: '首页弹窗',
+          activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+          matches:
+            '[text="首页弹窗"] >n View + TextView + Image[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13761130',
+        },
+      ],
+    },
   ],
 });
