@@ -43,13 +43,13 @@ export default defineAppConfig({
     {
       key: 3,
       name: '自动打卡',
-      desc: '点击顶部搜索框右侧[打卡],切换板块自动签到',
+      desc: '点击[打卡],切换板块自动签到',
       activityIds: 'com.mihoyo.hyperion.main.HyperionMainActivity',
       rules:
-        'TextView[id="com.mihoyo.hyperion:id/mTvText"][text="打卡"][visibleToUser=true]',
+        'TextView[id="com.mihoyo.hyperion:id/signTv"][text="打卡"][visibleToUser=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12857503', // 未打卡
-        'https://i.gkd.li/import/12859518', // 已打卡
+        'https://i.gkd.li/import/13721772', // 未打卡
+        'https://i.gkd.li/import/13721776', // 已打卡
       ],
     },
   ],
