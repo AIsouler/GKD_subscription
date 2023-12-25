@@ -1,4 +1,21 @@
+import apps from './rawApps';
 import type { RawGlobalGroup } from './types';
+
+const diabledAppIds = [
+  'com.android.systemui',
+  'com.miui.aod',
+  'com.miui.home',
+  'com.android.launcher.Launcher',
+  'com.bbk.launcher2.Launcher',
+  'com.huawei.android.launcher.unihome.UniHomeLauncher',
+];
+
+// 如果应用规则已有开屏广告一类的规则, 则在全局规则禁用此应用
+diabledAppIds.push(
+  ...apps
+    .filter((a) => a.groups.some((g) => g.name.startsWith('开屏广告')))
+    .map((a) => a.id),
+);
 
 const globalGroups: RawGlobalGroup[] = [
   {
@@ -23,20 +40,7 @@ const globalGroups: RawGlobalGroup[] = [
         action: 'clickCenter',
       },
     ],
-    apps: [
-      {
-        id: 'com.android.systemui',
-        enable: false,
-      },
-      {
-        id: 'com.miui.aod',
-        enable: false,
-      },
-      {
-        id: 'com.miui.home',
-        enable: false,
-      },
-    ],
+    apps: diabledAppIds.map((id) => ({ id, enable: false })),
   },
 ];
 export default globalGroups;
