@@ -22,7 +22,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '弹窗广告',
-      matchLauncher: true,
+
       activityIds: ['com.dfsly.bbs.ui.NavigationActivity'],
       quickFind: true,
       rules: [
@@ -33,7 +33,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13343675',
             'https://i.gkd.li/import/13335135',
-            'https://i.gkd.li/import/13335316', // matchLauncher
+            'https://i.gkd.li/import/13335316',
           ],
         },
       ],

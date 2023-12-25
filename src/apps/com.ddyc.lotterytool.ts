@@ -31,7 +31,7 @@ export default defineAppConfig({
       enable: false,
       key: 2,
       name: '请求推送通知弹窗',
-      matchLauncher: true,
+
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

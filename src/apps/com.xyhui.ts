@@ -41,7 +41,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '弹窗广告',
-      matchLauncher: true,
+
       rules: [
         {
           key: 1,

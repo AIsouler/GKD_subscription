@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.youxiake.ui.main.MainActivity',
-      matchLauncher: true,
+
       quickFind: true,
       rules: [
         {

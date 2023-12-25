@@ -32,7 +32,7 @@ export default defineAppConfig({
         'com.duowan.kiwi.immersepage.impl.ImmersePageActivity',
       ],
       quickFind: true,
-      matchLauncher: true,
+
       rules:
         '[id="com.duowan.kiwi:id/hyui_dialog_button_positive"][text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/12908790',

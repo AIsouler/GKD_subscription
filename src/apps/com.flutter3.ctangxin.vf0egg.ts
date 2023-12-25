@@ -23,7 +23,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '广告弹窗',
-      matchLauncher: true,
+
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -39,7 +39,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '公告弹窗',
-      matchLauncher: true,
+
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

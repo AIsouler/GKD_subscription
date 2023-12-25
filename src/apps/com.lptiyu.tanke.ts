@@ -23,7 +23,7 @@ export default defineAppConfig({
         {
           key: 0,
           name: '腾讯广告-1',
-          matchLauncher: true,
+
           activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
           matches:
             '[id="com.lptiyu.tanke:id/interact_ad_root"] >n [id="com.lptiyu.tanke:id/iv_close"]',

@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.netease.gl.ui.activity.welcome.WelcomeActivity',
-      matchLauncher: true,
+
       quickFind: true,
       rules: '[id="com.netease.gl:id/tv_next_step"][text^="跳过"]',
       snapshotUrls: 'https://i.gkd.li/import/12883227',

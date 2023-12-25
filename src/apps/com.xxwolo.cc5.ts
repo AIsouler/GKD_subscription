@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
+
       quickFind: true,
       activityIds: 'com.cece.app.MainActivity',
       rules: '[text^="跳过"]',

@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '广告弹窗',
-      matchLauncher: true,
+
       quickFind: true,
       rules: [
         {

@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.sf.activity.MainActivity',
-      matchLauncher: true,
+
       quickFind: true,
       rules: '[id="AdViewSkipBtn"] >(2) TextView[text^="跳过"]',
       snapshotUrls: [

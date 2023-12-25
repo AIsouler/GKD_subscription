@@ -32,7 +32,7 @@ export default defineAppConfig({
       key: 2,
       name: '主页广告',
       activityIds: ['com.zzw.october.MainActivity'],
-      matchLauncher: true,
+
       rules: [
         {
           key: 1,

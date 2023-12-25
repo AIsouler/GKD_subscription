@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '信息流广告-主页',
       desc: '点击右上角关闭,点击我不喜欢',
       activityIds: 'com.twitter.app.main.MainActivity',
-      cd: 3000, // https://github.com/gkd-kit/subscription/issues/832
+      actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
       quickFind: true,
       rules: [
         {
@@ -45,7 +45,7 @@ export default defineAppConfig({
         'com.twitter.tweetdetail.TweetDetailActivity',
         'com.twitter.android.search.implementation.results.SearchActivity',
       ],
-      cd: 3000,
+      actionCd: 3000,
       rules: [
         {
           name: '点击右上角关闭',
@@ -107,7 +107,7 @@ export default defineAppConfig({
       desc: '点击右上角关闭,点击我不喜欢',
       quickFind: true,
       activityIds: ['com.twitter.app.profiles.ProfileActivity'],
-      cd: 3000,
+      actionCd: 3000,
       rules: [
         {
           name: '点击右上角关闭',

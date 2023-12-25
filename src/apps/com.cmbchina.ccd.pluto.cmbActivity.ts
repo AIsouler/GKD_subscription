@@ -19,7 +19,7 @@ export default defineAppConfig({
       key: 1,
       name: '版本更新',
       quickFind: true,
-      matchLauncher: true,
+
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -32,7 +32,7 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/import/12647025',
         'https://i.gkd.li/import/12727203',
-        'https://i.gkd.li/import/13345771', // matchLauncher: true,
+        'https://i.gkd.li/import/13345771', //
       ],
     },
     {

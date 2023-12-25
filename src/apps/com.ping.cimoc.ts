@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.ping.cimoc.ui.activity.SplashActivity',
-      matchLauncher: true,
+
       rules: '[id="com.ping.cimoc:id/splash_container"] >n [text="跳过"]',
       snapshotUrls: 'https://i.gkd.li/import/13187773',
     },

@@ -20,7 +20,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '首页弹窗广告',
-      matchLauncher: true,
+
       activityIds: [
         'com.sgcc.wsgw.mainbundle.NewsSyRemind2Activity',
         'com.sgcc.wsgw.rnbundle.activity.HomeReactActivity',

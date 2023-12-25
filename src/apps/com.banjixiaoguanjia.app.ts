@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.zero.flutter_gromore_ads.page.AdSplashActivity',
-      matchLauncher: true,
+
       rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
       snapshotUrls: 'https://i.gkd.li/import/12904614',
     },

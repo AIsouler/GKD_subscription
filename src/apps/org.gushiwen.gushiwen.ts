@@ -7,10 +7,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '应用内广告弹窗',
-      matchLauncher: true,
+
       rules: [
         {
-          delay: 500,
+          actionDelay: 500,
           key: 0,
           activityIds: 'org.gushiwen.gushiwen.HomeActivity',
           matches:
@@ -24,7 +24,7 @@ export default defineAppConfig({
           ],
         },
         {
-          delay: 500,
+          actionDelay: 500,
           key: 1,
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -40,7 +40,7 @@ export default defineAppConfig({
           ],
         },
         {
-          delay: 500,
+          actionDelay: 500,
           key: 2,
           activityIds: 'org.gushiwen.gushiwen.HomeActivity',
           matches:

@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchLauncher: true,
+
       activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
       rules: '[id="com.hihonor.appmarket:id/tv_operation_skip"]',
       snapshotUrls: 'https://i.gkd.li/import/13063925',
@@ -17,7 +17,7 @@ export default defineAppConfig({
       key: 1,
       name: '广告弹窗',
       quickFind: true,
-      matchLauncher: true,
+
       activityIds: [
         'com.hihonor.android.launcher.unihome.UniHomeLauncher',
         'com.hihonor.appmarket.module.main.MainActivity',

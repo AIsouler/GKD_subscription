@@ -3,7 +3,6 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.lanjinger.choiassociatedpress',
   name: '财联社',
-  quickFind: true,
   groups: [
     {
       key: 0,

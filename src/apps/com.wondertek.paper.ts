@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 1,
       name: '开屏广告',
       activityIds: ['cn.thepaper.paper.ui.splash.welcome.LaunchActivity'],
-      matchLauncher: true,
+
       rules: [
         {
           matches:
@@ -16,7 +16,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/12644536',
             'https://i.gkd.li/import/12645559',
-            'https://i.gkd.li/import/13064620', //matchLauncher
+            'https://i.gkd.li/import/13064620',
           ],
         },
       ],

@@ -24,7 +24,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
-      matchLauncher: true,
+
       activityIds: [
         'com.xingin.xhs.index.v2.IndexActivityV2',
         'com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity',

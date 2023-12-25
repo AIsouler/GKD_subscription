@@ -309,7 +309,7 @@ export default defineAppConfig({
       key: 15,
       name: '好友动态-为你推荐',
       quickFind: true,
-      matchLauncher: true,
+
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -330,7 +330,7 @@ export default defineAppConfig({
             '@LinearLayout[id!=null][clickable=true] > LinearLayout > [text="减少此类推荐"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12929619',
-            'https://i.gkd.li/import/13387605', // matchLauncher: true,
+            'https://i.gkd.li/import/13387605', //
           ],
         },
       ],

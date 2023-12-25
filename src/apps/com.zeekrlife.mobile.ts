@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.zeekrlife.main.MainActivity',
-      matchLauncher: true,
+
       quickFind: true,
       rules: '[id="com.zeekrlife.mobile:id/main_adv_skip"]',
       snapshotUrls: 'https://i.gkd.li/import/12846375',

@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.huawei.lives.ui.SplashADActivity',
-      matchLauncher: true,
+
       rules: '[id="com.huawei.lives:id/hiad_skip_text"]',
       snapshotUrls: 'https://i.gkd.li/import/13063001',
     },

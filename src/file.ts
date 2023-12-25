@@ -18,6 +18,8 @@ const sortKeys: (keyof RawSubscription)[] = [
   'supportUri',
   'updateUrl',
   'checkUpdateUrl',
+  'globalGroups',
+  'categories',
   'apps',
 ];
 

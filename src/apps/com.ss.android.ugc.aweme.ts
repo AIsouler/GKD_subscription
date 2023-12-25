@@ -71,7 +71,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      matchLauncher: true,
+
       quickFind: true,
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
       name: '关闭朋友推荐弹窗',
@@ -84,7 +84,7 @@ export default defineAppConfig({
     {
       key: 3,
       name: '关闭更新弹窗',
-      matchLauncher: true,
+
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',

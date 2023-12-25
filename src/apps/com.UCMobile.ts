@@ -52,7 +52,7 @@ export default defineAppConfig({
       key: 10,
       name: '请求通知权限弹窗',
       activityIds: 'com.uc.browser.InnerUCMobile',
-      matchLauncher: true,
+
       rules: '@ImageView - LinearLayout >n [text="开启消息通知"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12880812',

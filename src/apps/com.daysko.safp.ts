@@ -65,7 +65,7 @@ export default defineAppConfig({
         },
         {
           key: 4,
-          cd: 2500,
+          actionCd: 2500,
           matches: ['[desc="了解详情"] - View > [text="关闭"]'],
           snapshotUrls: ['https://i.gkd.li/import/12642983'],
         },

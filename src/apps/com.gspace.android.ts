@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '跳过开屏广告',
-      matchLauncher: true,
+
       activityIds: [
         'com.gspace.android.ui.activity.SplashActivity', // Gspace主应用开屏
         'com.gspace.android.util.ShortcutHandleActivity', // Gspace子应用桌面快捷方式开屏
@@ -34,7 +34,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '主页面上方广告',
-      matchLauncher: true,
+
       activityIds: ['com.gspace.android.ui.activity.main.MainActivity'],
       rules: [
         {

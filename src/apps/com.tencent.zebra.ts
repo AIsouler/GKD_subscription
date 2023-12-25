@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.android.camera.splash.SplashActivity',
-      matchLauncher: true,
+
       quickFind: true,
       rules: '[id="com.tencent.zebra:id/splash_container"] + [text="跳过"]',
       snapshotUrls: 'https://i.gkd.li/import/12893521',

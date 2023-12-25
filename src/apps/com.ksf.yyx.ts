@@ -39,7 +39,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '插屏广告',
-      matchLauncher: true,
+
       activityIds: [
         'com.ksf.yyx.MainActivity',
         'com.sigmob.sdk.base.common.TransparentAdActivity',

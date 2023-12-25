@@ -26,7 +26,7 @@ export default defineAppConfig({
       key: 2,
       name: '右下角小广告',
       quickFind: true,
-      matchLauncher: true,
+
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
       rules: '[id="com.cmcc.cmvideo:id/iv_right_bottom_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12498315',
@@ -53,7 +53,7 @@ export default defineAppConfig({
       key: 5,
       name: '弹窗广告',
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
-      matchLauncher: true,
+
       rules:
         '@[id="com.cmcc.cmvideo:id/iv_big_close"] + [id="com.cmcc.cmvideo:id/sdv_big_pic"]',
       snapshotUrls: [
