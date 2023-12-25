@@ -5,6 +5,8 @@ type RawCommonProps = {
    * 单位: 毫秒
    *
    * 当前规则的冷却时间, 或者执行 action 最小间隔
+   *
+   * 默认值: 1000
    */
   actionCd?: number;
 
