@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import url from 'node:url';
-import type { AppConfigMudule } from '../src/types';
+import type { RawApp } from '../src/types';
 import { tryRun } from '../src/utils';
 
 // 使用命令更新内存订阅
@@ -36,7 +36,7 @@ if (!(await fs.stat(tsFp).catch(() => false))) {
 }
 
 const getAppConfig = async () => {
-  const mod: AppConfigMudule = await import(url.pathToFileURL(tsFp).href);
+  const mod: { default: RawApp } = await import(url.pathToFileURL(tsFp).href);
   return mod.default;
 };
 

@@ -1,44 +1,12 @@
 export type IArray<T> = T | T[];
 
-/**
- * 此类型任意属性如果是 undefined 则使用上级属性, 例如 rule.cd 是 undefined, 则 rule.cd 使用 group.cd
- */
-type CommonProps = {
-  /**
-   * 如果 设备界面Id startWith activityIds 的任意一项, 则匹配
-   *
-   * 如果要匹配所有界面: `undefined` (不填写) 或者 `[]` (避免使用上级属性)
-   */
-  activityIds?: IArray<string>;
-
-  /**
-   * @deprecated 从 v1.5.0 已弃用
-   *
-   * 匹配桌面的 activityId, 因为 activityId 在某些机器/应用上获取概率不准确
-   *
-   * 有时当出现 开屏广告 时, activityId 还是桌面的
-   *
-   */
-  matchLauncher?: boolean;
-
-  /**
-   * 如果 设备界面Id startWith excludeActivityIds 的任意一项, 则排除匹配, 这个优先级更高
-   */
-  excludeActivityIds?: IArray<string>;
-
+type RawCommonProps = {
   /**
    * 单位: 毫秒
    *
    * 当前规则的冷却时间, 或者执行 action 最小间隔
-   *
    */
   actionCd?: number;
-
-  /**
-   * @deprecated
-   * 使用 actionCd
-   */
-  cd?: number;
 
   /**
    * 单位: 毫秒
@@ -49,16 +17,11 @@ type CommonProps = {
   actionDelay?: number;
 
   /**
-   * @deprecated
-   * 使用 actionDelay
-   */
-  delay?: number;
-
-  /**
    *
    * 如果开启, 此规则下的所有 `末尾属性选择器`的`第一个属性选择表达式`符合下面的结构之一的选择器 将使用快速查找
    *
    * - [id='abc']
+   * - [vid='abc']
    * - [text='abc']
    * - [text^='abc']
    * - [text*='abc']
@@ -134,90 +97,44 @@ type CommonProps = {
    */
   resetMatch?: 'activity' | 'app';
 
-  // 暂未支持
-  filter?: {
-    /**
-     * 某些应用使用框架生成控件id, 如QQ/微信, 这些id只在相邻几个版本可使用
-     */
-    appVersionCode?: unknown;
-    screenHeight?: unknown;
-    screenWidth?: unknown;
-    isLandscape?: boolean;
-  };
-};
-
-export type AppConfig = {
-  id: string;
   /**
-   * 如果设备没有安装这个 APP, 则使用这个 name 显示
-   */
-  name: string;
-  groups?: GroupConfig[];
-
-  /**
-   * 某些规则组被移除不使用时, 为了避免 key 在后续被复用, 需要将已经删除的规则组的 key 填入此数组做校验使用
-   */
-  deprecatedKeys?: number[];
-} & CommonProps;
-
-export type AppConfigMudule = {
-  default: AppConfig;
-};
-
-export type GroupConfig = {
-  /**
-   * 当前规则组在列表中的唯一标识\
-   * 也是客户端禁用/启用此规则组的依据
-   */
-  key: number;
-
-  name: string;
-  desc?: string;
-
-  /**
-   * 控制规则默认情况下是启用还是禁用, 默认启用
+   * 与这个 key 的 rule 共享 cd
    *
-   * 仅对于本仓库的规则而言, 除开屏广告外, 其它规则默认禁用
-   */
-  enable?: boolean;
-
-  /**
-   * string => { matches: string }
+   * 比如开屏广告可能需要多个 rule 去匹配, 当一个 rule 触发时, 其它 rule 的触发是无意义的
    *
-   * string[] => { matches: string }[]
+   * 如果你对这个 key 的 rule 设置 actionCd=3000, 那么当这个 rule 和 本 rule 触发任意一个时, 在 3000毫秒 内两个 rule 都将进入 cd
    */
-  rules?: IArray<RuleConfig | string>;
+  actionCdKey?: number;
 
   /**
-   * 当前 规则/规则组 的快照链接, 最好填上, 增强订阅可维护性
+   * 与这个 key 的 rule 共享次数
+   *
+   * 比如开屏广告可能需要多个 rule 去匹配, 当一个 rule 触发时, 其它 rule 的触发是无意义的
+   *
+   * 如果你对这个 key 的 rule 设置 actionMaximum=0, 那么当这个 rule 和 本 rule 触发任意一个时, 两个 rule 都将进入休眠
+   */
+  actionMaximumKey?: number;
+
+  /**
+   * 当前 规则/规则组 的快照链接, 增强订阅可维护性
    */
   snapshotUrls?: IArray<string>;
 
   /**
-   * 当前 规则/规则组 的规则在手机上的运行示例, gif/mp4 都行
+   * 当前 规则/规则组 的规则在手机上的运行示例, 支持 jpg/png/webp/gif
    *
    * 如果规则是多个规则组合起来的, 可以更好看懂规则到底在干啥, 比如 点击关闭按钮-选择关闭原因-确认关闭 这种广告用 gif 看着更清楚在干啥
    */
   exampleUrls?: IArray<string>;
-} & CommonProps;
+};
 
-type RuleConfig = {
+type RawRuleProps = RawCommonProps & {
   /**
    * 当前规则在列表中的唯一标识
    */
   key?: number;
 
   name?: string;
-
-  /**
-   * 一个或者多个合法的 GKD 选择器, 如果每个选择器都能匹配上节点, 那么点击最后一个选择器的目标节点
-   */
-  matches?: IArray<string>;
-
-  /**
-   * 一个或者多个合法的 GKD 选择器, 如果存在一个选择器匹配上节点, 则停止匹配此规则
-   */
-  excludeMatches?: IArray<string>;
 
   /**
    * 要求当前列表里某个 key 刚刚执行
@@ -227,8 +144,6 @@ type RuleConfig = {
    * 那么 选择关闭原因 必须要求 比如点击关闭按钮 刚刚点击过才能执行, 确认关闭 也要求 选择关闭原因 刚刚点击过才执行
    *
    * 否则后面的规则不会触发, 也就是要求规则按顺序执行, 这是为了防止规则匹配范围太过广泛而误触
-   *
-   * 多数情况下 不需要设置
    *
    */
   preKeys?: IArray<number>;
@@ -276,59 +191,181 @@ type RuleConfig = {
     | 'longClickCenter';
 
   /**
-   * 与这个 key 的 rule 共享次数
-   *
-   * 比如开屏广告可能需要多个 rule 去匹配, 当一个 rule 触发时, 其它 rule 的触发是无意义的
-   *
-   * 如果你对这个 key 的 rule 设置 actionMaximum=1, 那么当这个 rule 和 本 rule 触发任意一个时, 两个 rule 都将进入休眠
+   * 一个或者多个合法的 GKD 选择器, 如果每个选择器都能匹配上节点, 那么点击最后一个选择器的目标节点
    */
-  actionMaximumKey?: number;
+  matches?: IArray<string>;
 
   /**
-   * 与这个 key 的 rule 共享 cd
-   *
-   * 比如开屏广告可能需要多个 rule 去匹配, 当一个 rule 触发时, 其它 rule 的触发是无意义的
-   *
-   * 如果你对这个 key 的 rule 设置 actionCd=3000, 那么当这个 rule 和 本 rule 触发任意一个时, 在 3000毫秒 内两个 rule 都将进入 cd
+   * 一个或者多个合法的 GKD 选择器, 如果存在一个选择器匹配上节点, 则停止匹配此规则
    */
-  actionCdKey?: number;
+  excludeMatches?: IArray<string>;
+};
 
-  snapshotUrls?: IArray<string>;
-  exampleUrls?: IArray<string>;
-} & CommonProps;
+type RawGroupProps = RawCommonProps & {
+  /**
+   * 当前规则组在列表中的唯一标识
+   *
+   * 也是客户端禁用/启用此规则组的依据
+   */
+  key: number;
 
-export type SubscriptionConfig = {
+  name: string;
+  desc?: string;
+
+  /**
+   * 控制规则默认情况下是启用还是禁用, 默认启用
+   *
+   * 仅对于本仓库的规则而言, 除开屏广告外, 其它规则默认禁用
+   */
+  enable?: boolean;
+
+  // rules: RawRuleProps[];
+};
+
+type RawAppRuleProps = {
+  /**
+   * 如果 设备界面Id startWith activityIds 的任意一项, 则匹配
+   *
+   * 如果要匹配所有界面: `undefined` (不填写) 或者 `[]` (避免使用上级属性)
+   */
+  activityIds?: IArray<string>;
+
+  /**
+   * 如果 设备界面Id startWith excludeActivityIds 的任意一项, 则排除匹配
+   *
+   * 优先级高于 activityIds
+   */
+  excludeActivityIds?: IArray<string>;
+};
+
+// <--全局规则相关--
+type RawGlobalApp = RawAppRuleProps & {
+  id: string;
+  /**
+   * 默认值: `true`
+   *
+   * true => 在此 APP 启用此规则
+   *
+   * false => 在此 APP 禁用此规则
+   */
+  enable?: boolean;
+};
+type RawGlobalRuleProps = {
+  /**
+   * 默认值: `true`
+   *
+   * true => 匹配任意 APP
+   *
+   * false => 仅匹配 apps 里面的 app
+   */
+  matchAnyApp?: boolean;
+  apps?: RawGlobalApp[];
+};
+
+type RawGlobalRule = RawRuleProps & RawGlobalRuleProps;
+
+export type RawGlobalGroup = RawGroupProps &
+  RawGlobalRuleProps & {
+    apps: RawGlobalApp[];
+    rules: RawGlobalRule[];
+  };
+// --全局规则相关-->
+
+// <--APP规则相关--
+export type RawCategory = {
+  /**
+   * 当前分类在列表中的唯一标识
+   *
+   * 也是客户端禁用/启用此分类组的依据
+   */
+  key: number;
+
+  /**
+   * 分类名称
+   *
+   * 同时也是分类的依据, 捕获以 name 开头的所有 APP 规则组, 不捕获全局规则组
+   *
+   * 示例: `开屏广告` 将捕获 `开屏广告-1` `开屏广告-2` `开屏广告-233` 这类 APP 规则组
+   */
+  name: string;
+
+  /**
+   * null => 跟随捕获的规则组的 enable 的默认值
+   *
+   * true => 全部启用捕获的规则组
+   *
+   * false => 全部禁用捕获的规则组
+   */
+  enable?: boolean;
+};
+
+type RawAppRule = RawRuleProps & RawAppRuleProps;
+export type RawAppGroup = RawGroupProps &
+  RawAppRuleProps & {
+    /**
+     * string => { matches: string }
+     *
+     * string[] => { matches: string }[]
+     */
+    rules: IArray<RawAppRule | string>;
+  };
+
+export type RawApp = {
+  id: string;
+
+  /**
+   * 如果设备没有安装这个 APP, 则使用这个 name 显示
+   */
+  name?: string;
+
+  groups: RawAppGroup[];
+
+  /**
+   * 某些规则组被移除不使用时, 为了避免 key 在后续被复用, 需要将已经删除的规则组的 key 填入此数组做校验使用
+   */
+  deprecatedKeys?: number[];
+};
+// --APP规则相关-->
+
+export type RawSubscription = {
   /**
    * 当前订阅文件的标识, 如果新旧订阅文件id不一致则更新失败\
    * 范围: `[0, Number.MAX_SAFE_INTEGER]`\
    * 建议值: `new Date().getTime()`
    *
-   * 官方默认订阅是 0, 负数 id APP 自己内部使用, APP 不允许用户添加负数 id 的订阅
+   * GKD默认订阅是 0, 负数 id APP 自己内部使用, APP 不允许用户添加负数 id 的订阅
    *
    * 负数订阅由 APP 内部使用, 如本地订阅是 -2, 内存订阅是 -1
    */
   id: number;
 
   /**
-   * 规则的名称
+   * 订阅的名称
    */
   name: string;
 
   /**
-   * 必填, 此处有 ? 是因为本项目的 version 由 ts 校验自动生成
+   * 订阅的版本号, 用于检测更新
    *
    * 只有当新订阅的 version 大于本地旧订阅的 version 才执行更新替换本地
    */
-  version?: number;
+  version: number;
 
   author?: string;
 
   /**
-   * APP 会定时或者用户手动请求这个链接, 如果返回的订阅的 version 大于 APP 订阅当前的 version , 则更新
+   * GKD 会定时或者用户手动刷新请求这个链接, 如果返回的订阅的 version 大于 APP 订阅当前的 version , 则更新
    *
    * 如果这个字段不存在, 则使用添加订阅时填写的链接
    */
   updateUrl?: string;
+
+  /**
+   * 一个自定义 uri 链接, 用户点击[用户反馈]时, 打开此链接
+   *
+   * 可以是一个网页链接, 也可以是一个 APP 内部的 uri 链接
+   */
+  supportUri?: string;
 
   /**
    * 一个只需要 id 和 version 的 json 文件链接, 检测更新时, 优先检测此链接, 如果 id 相等并且 version 增加, 则再去请求 updateUrl
@@ -337,18 +374,15 @@ export type SubscriptionConfig = {
    */
   checkUpdateUrl?: string;
 
-  /**
-   * https url, custom android schema url
-   */
-  supportUri?: string;
-
-  apps: AppConfig[];
+  apps?: RawApp[];
+  categories?: RawCategory[];
+  globalGroups?: RawGlobalGroup[];
 };
 
-export const defineSubsConfig = (config: SubscriptionConfig) => {
+export const defineSubsConfig = (config: RawSubscription) => {
   return JSON.stringify(config, undefined, 2);
 };
 
-export const defineAppConfig = (config: AppConfig) => {
+export const defineAppConfig = (config: RawApp) => {
   return config;
 };
