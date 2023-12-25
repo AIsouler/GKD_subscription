@@ -36,7 +36,7 @@ const globalGroups: RawGlobalGroup[] = [
       {
         key: 1,
         matches:
-          '[id*="skip"||((text*="跳过"||text*="skip")&&text.length<10)||desc*="skip"||desc*="跳过"][editable=false]',
+          '[(text.length<10&&(text*="跳过"||text*="skip")) || id$="tt_splash_skip_btn" || desc*="跳过" || desc*="skip"]',
         action: 'clickCenter',
       },
     ],
