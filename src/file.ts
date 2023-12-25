@@ -135,8 +135,31 @@ export const validSnapshotUrl = (s: string) => {
 };
 
 export const checkConfig = (newConfig: RawSubscription) => {
+  const globalGroups = newConfig.globalGroups || [];
+  globalGroups.forEach((g) => {
+    // check rules selector syntax
+    g.rules.forEach((r) => {
+      [r.matches, r.excludeMatches]
+        .map((m) => iArrayToArray(m))
+        .flat()
+        .forEach((selector) => {
+          try {
+            parseSelector(selector);
+          } catch (e) {
+            console.error({
+              message: 'invalid selector syntax',
+              groupKey: g.key,
+              selector,
+            });
+            throw e;
+          }
+        });
+    });
+  });
+
   // check duplicated group key
-  newConfig.apps?.forEach((app) => {
+  const apps = newConfig.apps || [];
+  apps.forEach((app) => {
     const deprecatedKeys = app.deprecatedKeys || [];
     const keys = new Set<number>();
     app.groups?.forEach((g) => {
@@ -177,13 +200,8 @@ export const checkConfig = (newConfig: RawSubscription) => {
           ruleKeys.add(r.key);
         }
       });
-    });
-  });
 
-  // check slector syntax
-  newConfig.apps?.forEach((app) => {
-    app.groups?.forEach((g) => {
-      if (!g.rules) return;
+      // check rules selector syntax
       const rules = iArrayToArray(g.rules).map((r) => {
         if (typeof r == 'string') {
           return { matches: r };
@@ -208,12 +226,8 @@ export const checkConfig = (newConfig: RawSubscription) => {
             }
           });
       });
-    });
-  });
 
-  // check snapshotUrls
-  newConfig.apps?.forEach((app) => {
-    app.groups?.forEach((g) => {
+      // check snapshotUrls
       iArrayToArray(g.snapshotUrls).forEach((u) => {
         if (!validSnapshotUrl(u)) {
           console.error({
@@ -243,6 +257,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
       });
     });
   });
+
   const newKeys = Object.keys(newConfig) as (keyof RawSubscription)[];
   if (newKeys.some((s) => !sortKeys.includes(s))) {
     console.log({
