@@ -26,7 +26,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '弹窗广告',
-      matchLauncher: true,
+
       activityIds: [
         'com.copymanga.app.MainActivity',
         'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',

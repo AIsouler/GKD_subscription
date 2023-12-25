@@ -26,7 +26,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.mtt.MainActivity',
       rules: [
         {
-          cd: 3000,
+          actionCd: 3000,
           key: 0,
           name: '点击广告按钮',
           excludeMatches: '[desc="屏蔽此广告"||desc="不感兴趣"]',

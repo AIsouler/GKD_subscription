@@ -21,7 +21,7 @@ export default defineAppConfig({
         {
           key: 0,
           name: '首页中心悬浮广告',
-          matchLauncher: true,
+
           activityIds: 'com.bbk.launcher2.Launcher',
           matches:
             '[id="com.m4399.gamecenter:id/image"] + [id="com.m4399.gamecenter:id/close"]',

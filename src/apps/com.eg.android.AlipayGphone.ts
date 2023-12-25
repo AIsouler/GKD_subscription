@@ -30,7 +30,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13183946', //com.alipay.android.msp.ui.views.MspContainerActivity
             'https://i.gkd.li/import/12826077', //com.alipay.android.msp.ui.views.MspUniRenderActivity
-            'https://i.gkd.li/import/12915864', //matchLauncher
+            'https://i.gkd.li/import/12915864',
           ],
         },
         {

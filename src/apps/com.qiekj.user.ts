@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.qiekj.user.MainActivity',
-      matchLauncher: true,
+
       rules: [
         {
           key: 0,

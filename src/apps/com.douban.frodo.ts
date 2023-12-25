@@ -119,7 +119,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      cd: 10000,
+      actionCd: 10000,
       name: '卡片广告',
       desc: '书影音-卡片广告-点击卡片右下角"广告"文字',
       // 豆瓣在屏幕之外渲染了大量节点, 在节点肉眼不可见但是无障碍可见的情况下, 仍然会触发大量点击
@@ -222,7 +222,7 @@ export default defineAppConfig({
       key: 10, // 已包含key13内容
       name: '弹窗广告',
       desc: '浏览详情时弹窗广告,点击右上角x',
-      matchLauncher: true,
+
       rules: [
         {
           key: 0,

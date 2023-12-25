@@ -20,7 +20,7 @@ export default defineAppConfig({
         {
           key: 2,
           name: '腾讯广告',
-          matchLauncher: true,
+
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13391833',

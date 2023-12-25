@@ -29,7 +29,7 @@ export default defineAppConfig({
         'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
         'com.maoyun.guoguo.MainActivity',
       ],
-      matchLauncher: true,
+
       rules: [
         {
           matches:
@@ -48,7 +48,7 @@ export default defineAppConfig({
         'com.sigmob.sdk.base.common.TransparentAdActivity',
         'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
       ],
-      matchLauncher: true,
+
       rules: [
         {
           matches: '[id="ad_area"] [id="close_btn"]',

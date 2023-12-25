@@ -54,7 +54,7 @@ export default defineAppConfig({
       name: '优惠劵提示',
       enable: false,
       quickFind: true,
-      matchLauncher: true,
+
       rules: {
         matches: [
           '[id="com.wm.dmall:id/coupon_activity"][text="去使用"]',

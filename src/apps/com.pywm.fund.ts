@@ -17,7 +17,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '版本更新',
-      matchLauncher: true,
+
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

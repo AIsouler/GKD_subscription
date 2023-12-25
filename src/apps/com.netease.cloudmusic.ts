@@ -173,7 +173,7 @@ export default defineAppConfig({
       key: 6,
       name: '更新弹窗',
       quickFind: true,
-      matchLauncher: true,
+
       rules: [
         {
           key: 0,

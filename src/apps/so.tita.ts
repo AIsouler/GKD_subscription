@@ -33,7 +33,7 @@ export default defineAppConfig({
             '[id="so.tita:id/flyt_native"] >n LinearLayout > FrameLayout + LinearLayout + FrameLayout[visibleToUser=true]',
             '[id="so.tita:id/flyt_native"] >n FrameLayout > ImageView +n FrameLayout > ImageView[visibleToUser=true]',
           ],
-          delay: 1000,
+          actionDelay: 1000,
           snapshotUrls: [
             'https://i.gkd.li/import/12800504', // so.tita.view.activity.HomeActivity
             'https://i.gkd.li/import/12800437', // so.tita.view.activity.EpisodeActivity

@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.jd.smart.activity.LoadingActivity',
-      matchLauncher: true,
+
       quickFind: true,
       rules: '[id="com.jd.iots:id/skip"]',
       snapshotUrls: 'https://i.gkd.li/import/12901733',

@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '开屏广告',
-      matchLauncher: true,
+
       quickFind: true,
       activityIds: ['com.flyersoft.seekbooks.ActivityMain'],
       rules: [

@@ -36,7 +36,7 @@ export default defineAppConfig({
       name: '请求推送通知弹窗',
       desc: '请求推送通知弹窗，点击取消',
       activityIds: 'com.mc10086.cmcc.base.StartPageActivity',
-      matchLauncher: true,
+
       rules: [
         {
           matches: '[text*="开启推送通知"] +(2) LinearLayout > [text="取消"]',

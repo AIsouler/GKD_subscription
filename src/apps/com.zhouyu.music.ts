@@ -21,7 +21,7 @@ export default defineAppConfig({
       key: 2,
       name: '搜索底部广告',
       quickFind: true,
-      matchLauncher: true,
+
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '[id="com.zhouyu.music:id/ksad_ad_dislike"]',
       snapshotUrls: [

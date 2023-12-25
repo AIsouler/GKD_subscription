@@ -8,7 +8,6 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'io.dcloud.PandoraEntryActivity',
-      matchLauncher: true,
       rules: '[id="bbs.zhixun.com:id/ad_dcloud_main_skip"]',
       snapshotUrls: 'https://i.gkd.li/import/13188572',
     },

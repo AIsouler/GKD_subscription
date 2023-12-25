@@ -8,7 +8,6 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'io.iftech.android.podcast.app.home.main.view.MainActivity',
-      matchLauncher: true,
       quickFind: true,
       rules: '[id="app.podcast.cosmos:id/tvSkip"]',
       snapshotUrls: 'https://i.gkd.li/import/12883661',

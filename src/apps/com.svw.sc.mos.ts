@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       desc: '点击"跳过广告"',
-      matchLauncher: true,
+
       quickFind: false,
       activityIds: 'com.svw.sc.mos.views.SplashActivity',
       rules: [

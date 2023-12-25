@@ -374,9 +374,9 @@ export type RawSubscription = {
    */
   checkUpdateUrl?: string;
 
-  apps?: RawApp[];
-  categories?: RawCategory[];
   globalGroups?: RawGlobalGroup[];
+  categories?: RawCategory[];
+  apps?: RawApp[];
 };
 
 export const defineSubsConfig = (config: RawSubscription) => {

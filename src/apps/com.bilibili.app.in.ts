@@ -26,7 +26,7 @@ export default defineAppConfig({
       name: '订阅感兴趣的通知',
       desc: '点击【暂不开启】',
       quickFind: true,
-      matchLauncher: true,
+
       rules: '[text="订阅感兴趣的通知"] +2 LinearLayout [text="暂不开启"]',
       snapshotUrls: 'https://i.gkd.li/import/13399195',
     },

@@ -99,7 +99,7 @@ export default defineAppConfig({
         {
           key: 0,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matchLauncher: true,
+
           matches: '@[text="关闭"] +n * >n [text*="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12868648',
@@ -116,7 +116,7 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             'Image[text=""] < @View + View +n View > View > TextView[text$="广告"][text.length<=10]',
-          delay: 1000,
+          actionDelay: 1000,
           snapshotUrls: [
             'https://i.gkd.li/import/12868667',
             'https://i.gkd.li/import/12881946',
@@ -165,7 +165,7 @@ export default defineAppConfig({
         {
           key: 30,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matchLauncher: true,
+
           matches:
             'ImageView < @ViewGroup[visibleToUser=true] < ViewGroup +n ViewGroup > [text="广告"]',
           snapshotUrls: [

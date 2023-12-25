@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       desc: '点击：跳过',
-      matchLauncher: true,
+
       quickFind: true,
       activityIds: 'cn.missevan.activity.MainActivity',
       rules: [

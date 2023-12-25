@@ -11,7 +11,7 @@ export default defineAppConfig({
         'com.jd.jdlite.ad.ADActivity',
         'com.jd.jdlite.MainActivity',
       ],
-      matchLauncher: true,
+
       rules: '[desc="闪屏广告"] + [text$="跳过"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12727385',

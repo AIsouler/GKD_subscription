@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       desc: '点击跳过按钮',
-      matchLauncher: true,
+
       activityIds: 'csii.com.qny.ui.activity.AdvertisementActivity',
       rules: [
         {

@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
+
       quickFind: true,
       activityIds: 'com.zero.flutter_qq_ads.page.AdSplashActivity',
       rules: [

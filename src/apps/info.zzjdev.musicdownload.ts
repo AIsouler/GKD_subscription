@@ -8,7 +8,7 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'info.zzjdev.musicdownload.start.SplashActivity1',
-      matchLauncher: true,
+
       rules: '[id="info.zzjdev.musicdownload:id/skip_view"]',
       snapshotUrls: 'https://i.gkd.li/import/13187827',
     },

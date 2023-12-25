@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '开屏广告',
       activityIds:
         'com.xinhang.mobileclient.launcher.activity.LauncherActivity',
-      matchLauncher: true,
+
       rules: '[id="com.xinhang.mobileclient:id/cdp_skip"]',
       snapshotUrls: 'https://i.gkd.li/import/13024858',
     },

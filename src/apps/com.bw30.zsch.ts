@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchLauncher: true,
+
       quickFind: true,
       activityIds: [
         'com.bw.zsch.home.PrivacyPolicyActivity',

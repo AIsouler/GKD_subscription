@@ -17,7 +17,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '升级提示',
-      matchLauncher: true,
+
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
