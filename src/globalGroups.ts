@@ -18,7 +18,9 @@ const diabledAppIds = [
 // 如果应用规则已有开屏广告一类的规则, 则在全局规则禁用此应用
 diabledAppIds.push(
   ...apps
-    .filter((a) => a.groups.some((g) => g.name.startsWith('开屏广告')))
+    .filter((a) =>
+      a.groups.some((g) => g.name.startsWith('开屏广告') && g.enable !== false),
+    )
     .map((a) => a.id),
 );
 
