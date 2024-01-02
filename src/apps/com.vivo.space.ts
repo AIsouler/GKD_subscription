@@ -33,5 +33,19 @@ export default defineAppConfig({
         'https://i.gkd.li/import/13292907',
       ],
     },
+    {
+      key: 4,
+      name: '消息通知弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: 'Button[id="com.vivo.space:id/vbutton_title"][text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/import/13771581',
+        },
+      ],
+    },
   ],
 });
