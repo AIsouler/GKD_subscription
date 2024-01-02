@@ -19,6 +19,20 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 2,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          name: '穿山甲SDK',
+          quickFind: true,
+          matches:
+            '@[id="com.qinlin.edoor:id/iv_close"] - LinearLayout >n [text*="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13771774',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 10,
       name: '开门有奖弹窗',
