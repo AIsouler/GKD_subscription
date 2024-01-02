@@ -11,8 +11,14 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.bilibili.comic:id/btn_full_ad_skip"]',
-      snapshotUrls: ['https://inspect.gkd.li/import/13063673'],
+      rules: [
+        '[id="com.bilibili.comic:id/btn_full_ad_skip"]',
+        '[id="com.bilibili.comic:id/skip_btn"]',
+      ],
+      snapshotUrls: [
+        'https://i.gkd.li/import/13063673',
+        'https://i.gkd.li/import/13800292', //id="com.bilibili.comic:id/skip_btn"
+      ],
     },
     {
       key: 1,
@@ -24,7 +30,7 @@ export default defineAppConfig({
       activityIds: ['com.bilibili.comic.home.view.FlutterMainActivity'],
       rules: '[id="com.bilibili.comic:id/tv_know"]',
       snapshotUrls: [
-        'https://inspect.gkd.li/import/13063676',
+        'https://i.gkd.li/import/13063676',
         'https://i.gkd.li/import/13262801',
       ],
     },
