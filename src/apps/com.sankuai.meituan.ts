@@ -171,5 +171,14 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '新人返场特惠',
+      desc: '点击右上角返回',
+      activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
+      matchTime: 10000,
+      rules: '[id="shareNav"] > [text=""]',
+      snapshotUrls: 'https://i.gkd.li/import/13800691',
+    },
   ],
 });
