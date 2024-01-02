@@ -62,7 +62,10 @@ export default defineAppConfig({
         {
           key: 1,
           name: '学习页面-弹窗广告',
-          activityIds: 'com.youdao.dict.edu.main.MainPopDialog',
+          activityIds: [
+            'com.youdao.dict.edu.main.MainPopDialog',
+            'com.youdao.dict.activity.MainActivity',
+          ],
           quickFind: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/12893450',
