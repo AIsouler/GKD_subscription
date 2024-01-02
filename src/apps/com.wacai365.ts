@@ -39,10 +39,16 @@ export default defineAppConfig({
       name: '新版本提示',
       quickFind: true,
       actionMaximum: 1,
-      activityIds: 'com.wacai365.HomeActivity',
+      activityIds: [
+        'com.wacai365.HomeActivity',
+        'com.wacai.android.wind.splash.WindDialogActivity',
+      ],
       rules:
         '@ImageView[id="com.wacai365:id/tv_cancel"] - TextView[text^="新版本"]',
-      snapshotUrls: 'https://i.gkd.li/import/13249620',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13249620', //com.wacai365.HomeActivity
+        'https://i.gkd.li/import/13772291', //com.wacai.android.wind.splash.WindDialogActivity
+      ],
     },
     {
       enable: false,
