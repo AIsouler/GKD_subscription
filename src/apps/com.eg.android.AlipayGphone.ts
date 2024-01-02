@@ -129,5 +129,27 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '小程序-12306',
+      activityIds: 'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[desc="推荐广告"] > [desc="展开更多选项"][visibleToUser=true]',
+          action: 'clickCenter',
+          snapshotUrls: 'https://i.gkd.li/import/13763314',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          quickFind: true,
+          matches: '[text="对该内容不感兴趣"]',
+          action: 'clickCenter',
+          snapshotUrls: 'https://i.gkd.li/import/13763315',
+        },
+      ],
+    },
   ],
 });
