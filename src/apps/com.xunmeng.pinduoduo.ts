@@ -189,12 +189,21 @@ export default defineAppConfig({
       name: '多多视频-划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
       quickFind: true,
+      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          matches:
-            '@ImageView[desc="返回"] -3 ViewPager >19 TextView[text="正在直播"]',
+          matches: [
+            'TextView[text="正在直播"]',
+            '@ImageView[desc="返回"] <4 ViewGroup <<3 FrameLayout[id="android:id/content"]',
+          ],
           snapshotUrls: 'https://i.gkd.li/import/13446291',
+        },
+        {
+          matches: [
+            'TextView[text="查看更多低价商品"]',
+            '@ImageView[desc="返回"] <4 ViewGroup <<3 FrameLayout[id="android:id/content"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13791119',
         },
       ],
     },
