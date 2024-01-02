@@ -124,5 +124,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 6,
+      name: '首页-底部广告',
+      quickFind: true,
+      activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+      rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13804525',
+    },
   ],
 });
