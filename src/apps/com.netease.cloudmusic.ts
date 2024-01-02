@@ -217,5 +217,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 8,
+      name: '发现-顶部视频广告',
+      desc: '自动点击跳过。',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '[id="com.netease.cloudmusic:id/skipBannerAd"]',
+          snapshotUrls: 'https://i.gkd.li/import/13768367',
+        },
+      ],
+    },
   ],
 });
