@@ -82,14 +82,13 @@ export default defineAppConfig({
           preKeys: [1, 2],
           key: 3,
           name: '选择关闭原因-点击不感兴趣',
-          matches: [
-            '@LinearLayout[clickable=true] > TextView[text="不感兴趣"][id$="id/tt_item_tv"]',
-          ],
+          matches: ['@LinearLayout > TextView[text="不感兴趣"]'],
           snapshotUrls: [
             'https://i.gkd.li/import/12472633',
             'https://i.gkd.li/import/12655713',
             'https://i.gkd.li/import/12660759',
             'https://i.gkd.li/import/12706437',
+            'https://i.gkd.li/import/13786886', // 没有id
           ],
         },
       ],
