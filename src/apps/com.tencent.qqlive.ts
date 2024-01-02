@@ -12,12 +12,17 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'FrameLayout[id=null] > TextView[text="跳过"][id=null]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12700227',
-        'https://i.gkd.li/import/12700122',
-        'https://i.gkd.li/import/12700541',
-        'https://i.gkd.li/import/12910953',
+      rules: [
+        {
+          action: 'clickCenter', //反馈测试clickNode点击无效
+          matches: 'TextView[text*="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12700227',
+            'https://i.gkd.li/import/12700122',
+            'https://i.gkd.li/import/12700541',
+            'https://i.gkd.li/import/12910953',
+          ],
+        },
       ],
     },
     {
