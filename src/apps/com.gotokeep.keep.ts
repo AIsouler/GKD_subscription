@@ -60,10 +60,24 @@ export default defineAppConfig({
     {
       key: 4,
       name: '运动购页面-广告弹窗',
-      activityIds:
-        'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
-      rules: 'ImageView + LinearLayout > ImageView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12706111',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
+          matches:
+            'ImageView + LinearLayout > ImageView[id=null][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/12706111',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
+          matches:
+            '[id="com.gotokeep.keep:id/contentContainer"] + [id="com.gotokeep.keep:id/closeImageView"]',
+          snapshotUrls: 'https://i.gkd.li/import/13766358',
+        },
+      ],
     },
     {
       key: 5,
