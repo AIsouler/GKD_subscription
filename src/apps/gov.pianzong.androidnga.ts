@@ -7,19 +7,21 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
+      quickFind: true,
       resetMatch: 'app',
       rules: [
         '[id="gov.pianzong.androidnga:id/iv_tg_ad"]',
         '[id="gov.pianzong.androidnga:id/ksad_splash_circle_skip_view"]',
+        '[id="gov.pianzong.androidnga:id/ksad_skip_view_skip"]',
       ],
       snapshotUrls: [
         'https://i.gkd.li/import/12476484',
         'https://i.gkd.li/import/12706127', // activityIds: 'com.miui.home.launcher.Launcher',
         'https://i.gkd.li/import/12864707', // activityIds: 'gov.pianzong.androidnga.activity.LoadingActivity',
         'https://i.gkd.li/import/12911882', // activityIds: 'gov.pianzong.androidnga.activity.WarmstartActivity'
+        'https://i.gkd.li/import/13798686', // id="gov.pianzong.androidnga:id/ksad_skip_view_skip"
       ],
     },
     {
