@@ -16,15 +16,18 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
-            'LinearLayout[clickable=true] > LinearLayout[clickable=true] > ImageView[width<90][height<90]',
-          snapshotUrls: 'https://i.gkd.li/import/13695604',
+            '@LinearLayout[clickable=true] > LinearLayout[clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13695604',
+            'https://i.gkd.li/import/13762212',
+            'https://i.gkd.li/import/13762195',
+          ],
         },
         {
           name: '腾讯广告SDK',
           activityIds: 'com.xpx365.projphoto.FirstActivity',
-          matches:
-            'FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView[width<90][height<90]',
-          snapshotUrls: 'https://i.gkd.li/import/13695519',
+          matches: 'FrameLayout[childCount>1] > FrameLayout[index=3]',
+          snapshotUrls: 'https://i.gkd.li/import/13762196',
         },
         {
           name: '快手广告SDK',
