@@ -95,6 +95,11 @@ export default defineAppConfig({
           matches: '@Button[text*="暂不更新"] + Button[text*="更新"]',
           snapshotUrls: 'https://i.gkd.li/import/13402478',
         },
+        {
+          matches:
+            'TextView[id="com.alibaba.android.rimet:id/dialog_close_button"]',
+          snapshotUrls: 'https://i.gkd.li/import/13772151',
+        },
       ],
     },
     {
