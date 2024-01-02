@@ -62,5 +62,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '顶部广告条',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.huawei.android.totemweather.WeatherMainActivity',
+          matches: '[vid="rl_close_pps"] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/import/13800100',
+        },
+      ],
+    },
   ],
 });
