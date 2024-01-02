@@ -8,8 +8,9 @@ export default defineAppConfig({
       key: 1,
       name: '开屏广告',
       quickFind: true,
-      activityIds:
-        'com.example.advertisement_business.advertisement.AdvertisementActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: ['[id="com.able.wisdomtree:id/tv_skip"]'],
@@ -39,10 +40,14 @@ export default defineAppConfig({
       name: '升级提醒',
       desc: '自动点击忽略。',
       quickFind: true,
-      activityIds:
-        'com.example.advertisement_business.advertisement.AdvertisementActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[text="更新"] -n [text="忽略"]',
-      snapshotUrls: 'https://i.gkd.li/import/13458796',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13458796',
+        'https://i.gkd.li/import/13797285',
+      ],
     },
   ],
 });
