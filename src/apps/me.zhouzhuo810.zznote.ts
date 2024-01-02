@@ -10,12 +10,15 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
+      rules: [
         '[id="me.zhouzhuo810.zznote:id/native_ad_container"] + [id^="me.zhouzhuo810.zznote:id/btn_next"]',
+        '@LinearLayout > [text*="跳过"]',
+      ],
       snapshotUrls: [
         'https://i.gkd.li/import/12798528',
         'https://i.gkd.li/import/12912217',
         'https://i.gkd.li/import/13059838',
+        'https://i.gkd.li/import/13800235', //@LinearLayout > [text*="跳过"]
       ],
     },
   ],
