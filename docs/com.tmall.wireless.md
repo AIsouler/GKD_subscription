@@ -1,10 +1,6 @@
 # 手机天猫
 
-存在 4 规则组 - [com.tmall.wireless](/src/apps/com.tmall.wireless.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13162604)
+存在 3 规则组 - [com.tmall.wireless](/src/apps/com.tmall.wireless.ts)
 
 ## 版本更新
 

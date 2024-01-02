@@ -1,11 +1,6 @@
 # 亲宝宝
 
-存在 4 规则组 - [com.dw.btime](/src/apps/com.dw.btime.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12889257)
-- [快照-1](https://i.gkd.li/import/12972209)
+存在 3 规则组 - [com.dw.btime](/src/apps/com.dw.btime.ts)
 
 ## 应用内弹窗
 

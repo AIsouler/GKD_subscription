@@ -1,10 +1,6 @@
 # 小恩爱
 
-存在 3 规则组 - [com.xiaoenai.app](/src/apps/com.xiaoenai.app.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13727905)
+存在 2 规则组 - [com.xiaoenai.app](/src/apps/com.xiaoenai.app.ts)
 
 ## 广告弹窗
 

@@ -1,11 +1,6 @@
 # 大师兄影视
 
-存在 3 规则组 - [com.zhiyin.qingdan.dashixiong](/src/apps/com.zhiyin.qingdan.dashixiong.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12843284)
-- [快照-1](https://i.gkd.li/import/12843283)
+存在 2 规则组 - [com.zhiyin.qingdan.dashixiong](/src/apps/com.zhiyin.qingdan.dashixiong.ts)
 
 ## 弹窗广告
 

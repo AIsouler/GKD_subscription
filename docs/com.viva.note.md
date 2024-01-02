@@ -1,12 +1,6 @@
 # 囧次元
 
-存在 3 规则组 - [com.viva.note](/src/apps/com.viva.note.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12888429)
-- [快照-1](https://i.gkd.li/import/12888730)
-- [快照-2](https://i.gkd.li/import/12888762)
+存在 2 规则组 - [com.viva.note](/src/apps/com.viva.note.ts)
 
 ## 应用内通知
 

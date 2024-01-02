@@ -1,10 +1,6 @@
 # tita搜索
 
-存在 3 规则组 - [so.tita](/src/apps/so.tita.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12800319)
+存在 2 规则组 - [so.tita](/src/apps/so.tita.ts)
 
 ## 应用内第三方 SDK 广告
 

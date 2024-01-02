@@ -1,10 +1,6 @@
 # 识货
 
-存在 3 规则组 - [com.hupu.shihuo](/src/apps/com.hupu.shihuo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13685134)
+存在 2 规则组 - [com.hupu.shihuo](/src/apps/com.hupu.shihuo.ts)
 
 ## 请求消息通知
 

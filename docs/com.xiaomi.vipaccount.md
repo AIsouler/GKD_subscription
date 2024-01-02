@@ -1,10 +1,6 @@
 # 小米社区
 
-存在 5 规则组 - [com.xiaomi.vipaccount](/src/apps/com.xiaomi.vipaccount.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12841023)
+存在 4 规则组 - [com.xiaomi.vipaccount](/src/apps/com.xiaomi.vipaccount.ts)
 
 ## 更新弹窗
 

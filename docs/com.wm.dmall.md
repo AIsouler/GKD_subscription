@@ -1,10 +1,6 @@
 # 多点
 
-存在 5 规则组 - [com.wm.dmall](/src/apps/com.wm.dmall.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13197630)
+存在 4 规则组 - [com.wm.dmall](/src/apps/com.wm.dmall.ts)
 
 ## 首页-弹窗广告
 

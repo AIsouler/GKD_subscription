@@ -1,10 +1,6 @@
 # 拼多多
 
-存在 11 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12799632)
+存在 10 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 更新弹窗
 
@@ -54,6 +50,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12700615)
+- [快照-1](https://i.gkd.li/import/13804657)
 
 ## 商品详情页视频讲解窗口
 
@@ -74,3 +71,4 @@
 默认禁用 - 点击返回自动刷新，从而跳过广告
 
 - [快照-0](https://i.gkd.li/import/13446291)
+- [快照-1](https://i.gkd.li/import/13791119)

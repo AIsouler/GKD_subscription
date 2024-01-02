@@ -1,12 +1,6 @@
 # 菜鸟
 
-存在 6 规则组 - [com.cainiao.wireless](/src/apps/com.cainiao.wireless.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12901758)
-- [快照-1](https://i.gkd.li/import/12724823)
-- [快照-2](https://i.gkd.li/import/13459538)
+存在 5 规则组 - [com.cainiao.wireless](/src/apps/com.cainiao.wireless.ts)
 
 ## 弹窗广告
 

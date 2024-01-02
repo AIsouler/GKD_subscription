@@ -1,10 +1,6 @@
 # 荣耀应用市场
 
-存在 4 规则组 - [com.hihonor.appmarket](/src/apps/com.hihonor.appmarket.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13063925)
+存在 3 规则组 - [com.hihonor.appmarket](/src/apps/com.hihonor.appmarket.ts)
 
 ## 广告弹窗
 

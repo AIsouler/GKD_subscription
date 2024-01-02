@@ -1,12 +1,6 @@
 # 京东
 
-存在 11 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12668289)
-- [快照-1](https://i.gkd.li/import/12519430)
-- [快照-2](https://i.gkd.li/import/13255802)
+存在 10 规则组 - [com.jingdong.app.mall](/src/apps/com.jingdong.app.mall.ts)
 
 ## 购物车界面-砸金蛋
 
@@ -36,7 +30,8 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12839864)
-- [快照-1](https://i.gkd.li/import/12839865)
+- [快照-1](https://i.gkd.li/import/13772299)
+- [快照-2](https://i.gkd.li/import/12839865)
 
 ## 广告弹窗
 

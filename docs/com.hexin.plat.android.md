@@ -1,11 +1,6 @@
 # 同花顺
 
-存在 3 规则组 - [com.hexin.plat.android](/src/apps/com.hexin.plat.android.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12662631)
-- [快照-1](https://i.gkd.li/import/12662620)
+存在 2 规则组 - [com.hexin.plat.android](/src/apps/com.hexin.plat.android.ts)
 
 ## 信息流广告
 

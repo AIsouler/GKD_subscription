@@ -1,10 +1,6 @@
 # 百词斩
 
-存在 3 规则组 - [com.jiongji.andriod.card](/src/apps/com.jiongji.andriod.card.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13495409)
+存在 2 规则组 - [com.jiongji.andriod.card](/src/apps/com.jiongji.andriod.card.ts)
 
 ## 活动弹窗
 

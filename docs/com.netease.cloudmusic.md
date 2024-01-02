@@ -1,10 +1,6 @@
 # 网易云音乐
 
-存在 8 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12700920)
+存在 10 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
 
 ## 卡片式广告
 
@@ -68,3 +64,22 @@
 - [快照-1](https://i.gkd.li/import/13402635)
 - [快照-2](https://i.gkd.li/import/13402636)
 - [快照-3](https://i.gkd.li/import/13527105)
+
+## 发现-顶部视频广告
+
+默认禁用 - 自动点击跳过。
+
+- [快照-0](https://i.gkd.li/import/13768367)
+
+## 免费听弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13804534)
+
+## 功能升级弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13804541)
+- [快照-1](https://i.gkd.li/import/13804544)

@@ -1,10 +1,6 @@
 # 涨乐财富通
 
-存在 4 规则组 - [com.lphtsccft](/src/apps/com.lphtsccft.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12699286)
+存在 3 规则组 - [com.lphtsccft](/src/apps/com.lphtsccft.ts)
 
 ## 首页广告弹窗
 

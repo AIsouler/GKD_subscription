@@ -1,10 +1,6 @@
 # 书旗小说
 
-存在 5 规则组 - [com.shuqi.controller](/src/apps/com.shuqi.controller.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12854869)
+存在 4 规则组 - [com.shuqi.controller](/src/apps/com.shuqi.controller.ts)
 
 ## 内部右侧浮动广告
 

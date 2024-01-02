@@ -1,10 +1,6 @@
 # 自考笔果题库
 
-存在 4 规则组 - [com.dep.biguo](/src/apps/com.dep.biguo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12708763)
+存在 3 规则组 - [com.dep.biguo](/src/apps/com.dep.biguo.ts)
 
 ## 更新弹窗
 

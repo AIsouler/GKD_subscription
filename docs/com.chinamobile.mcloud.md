@@ -1,10 +1,6 @@
 # 中国移动云盘
 
-存在 5 规则组 - [com.chinamobile.mcloud](/src/apps/com.chinamobile.mcloud.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12774830)
+存在 4 规则组 - [com.chinamobile.mcloud](/src/apps/com.chinamobile.mcloud.ts)
 
 ## 更新弹窗
 

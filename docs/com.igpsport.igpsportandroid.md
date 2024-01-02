@@ -2,6 +2,8 @@
 
 存在 1 规则组 - [com.igpsport.igpsportandroid](/src/apps/com.igpsport.igpsportandroid.ts)
 
-## 开屏广告
+## 更新弹窗
 
-- [快照-0](https://i.gkd.li/import/12818230)
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13797203)

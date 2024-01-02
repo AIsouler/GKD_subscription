@@ -1,10 +1,6 @@
 # 堆糖
 
-存在 4 规则组 - [com.duitang.main](/src/apps/com.duitang.main.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13202185)
+存在 3 规则组 - [com.duitang.main](/src/apps/com.duitang.main.ts)
 
 ## 青少年模式
 

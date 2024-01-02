@@ -1,10 +1,6 @@
 # i茅台
 
-存在 3 规则组 - [com.moutai.mall](/src/apps/com.moutai.mall.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13704960)
+存在 2 规则组 - [com.moutai.mall](/src/apps/com.moutai.mall.ts)
 
 ## 首页广告弹窗
 

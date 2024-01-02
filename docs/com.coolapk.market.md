@@ -30,6 +30,7 @@
 - [快照-10](https://i.gkd.li/import/12655713)
 - [快照-11](https://i.gkd.li/import/12660759)
 - [快照-12](https://i.gkd.li/import/12706437)
+- [快照-13](https://i.gkd.li/import/13786886)
 
 ## 关闭升级弹窗
 

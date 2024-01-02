@@ -1,10 +1,6 @@
 # 大众点评
 
-存在 6 规则组 - [com.dianping.v1](/src/apps/com.dianping.v1.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12726928)
+存在 5 规则组 - [com.dianping.v1](/src/apps/com.dianping.v1.ts)
 
 ## 主页推荐关注弹窗
 

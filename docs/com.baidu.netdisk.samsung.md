@@ -1,10 +1,6 @@
 # 百度网盘-三星版本
 
-存在 5 规则组 - [com.baidu.netdisk.samsung](/src/apps/com.baidu.netdisk.samsung.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12738323)
+存在 4 规则组 - [com.baidu.netdisk.samsung](/src/apps/com.baidu.netdisk.samsung.ts)
 
 ## 弹窗广告
 

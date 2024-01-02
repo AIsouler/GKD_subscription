@@ -1,10 +1,6 @@
 # 动漫之家
 
-存在 3 规则组 - [com.dmzj.manhua](/src/apps/com.dmzj.manhua.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13542494)
+存在 2 规则组 - [com.dmzj.manhua](/src/apps/com.dmzj.manhua.ts)
 
 ## 弹窗广告
 

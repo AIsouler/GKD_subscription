@@ -1,10 +1,6 @@
 # vivo应用商店
 
-存在 2 规则组 - [com.bbk.appstore](/src/apps/com.bbk.appstore.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12847395)
+存在 1 规则组 - [com.bbk.appstore](/src/apps/com.bbk.appstore.ts)
 
 ## 请求消息通知
 

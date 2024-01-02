@@ -1,11 +1,6 @@
 # 爱企查
 
-存在 4 规则组 - [com.baidu.xin.aiqicha](/src/apps/com.baidu.xin.aiqicha.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12755760)
-- [快照-1](https://i.gkd.li/import/12755761)
+存在 3 规则组 - [com.baidu.xin.aiqicha](/src/apps/com.baidu.xin.aiqicha.ts)
 
 ## 更新弹窗
 

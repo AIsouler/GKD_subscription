@@ -2,10 +2,6 @@
 
 存在 6 规则组 - [cn.wps.moffice_eng](/src/apps/cn.wps.moffice_eng.ts)
 
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13188596)
-
 ## 首页-文档列表广告
 
 默认禁用
@@ -45,3 +41,9 @@
 
 - [快照-0](https://i.gkd.li/import/13513911)
 - [快照-1](https://i.gkd.li/import/13513914)
+
+## 首页-底部广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13804525)

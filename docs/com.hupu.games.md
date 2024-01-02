@@ -1,13 +1,6 @@
 # 虎扑
 
-存在 2 规则组 - [com.hupu.games](/src/apps/com.hupu.games.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12509060)
-- [快照-1](https://i.gkd.li/import/12510962)
-- [快照-2](https://i.gkd.li/import/12567546)
-- [快照-3](https://i.gkd.li/import/12567546)
+存在 1 规则组 - [com.hupu.games](/src/apps/com.hupu.games.ts)
 
 ## 推荐流广告
 

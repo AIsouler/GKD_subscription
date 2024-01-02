@@ -2,11 +2,6 @@
 
 存在 14 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13460370)
-- [快照-1](https://i.gkd.li/import/13216121)
-
 ## 关闭青少年弹窗
 
 默认禁用
@@ -95,3 +90,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13379307)
+
+## 关闭商城推荐
+
+默认禁用 - 点击【不感兴趣】
+
+- [快照-0](https://i.gkd.li/import/13800207)

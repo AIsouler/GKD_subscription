@@ -1,13 +1,6 @@
 # 最右
 
-存在 6 规则组 - [cn.xiaochuankeji.tieba](/src/apps/cn.xiaochuankeji.tieba.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12660905)
-- [快照-1](https://i.gkd.li/import/12660955)
-- [快照-2](https://i.gkd.li/import/12660984)
-- [快照-3](https://i.gkd.li/import/12699405)
+存在 5 规则组 - [cn.xiaochuankeji.tieba](/src/apps/cn.xiaochuankeji.tieba.ts)
 
 ## 更新弹窗
 

@@ -2,10 +2,6 @@
 
 存在 3 规则组 - [com.jd.jrapp](/src/apps/com.jd.jrapp.ts)
 
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13054174)
-
 ## 通知提醒
 
 默认禁用
@@ -18,3 +14,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13628364)
+
+## 满意度打分弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13804561)

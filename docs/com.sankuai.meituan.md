@@ -2,10 +2,6 @@
 
 存在 8 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
 
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12749811)
-
 ## 更新弹窗
 
 默认禁用
@@ -57,3 +53,9 @@
 默认禁用 - 直接关闭整个模块
 
 - [快照-0](https://i.gkd.li/import/13695703)
+
+## 新人返场特惠
+
+默认禁用 - 点击右上角返回
+
+- [快照-0](https://i.gkd.li/import/13800691)

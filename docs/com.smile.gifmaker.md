@@ -1,10 +1,6 @@
 # 快手
 
-存在 5 规则组 - [com.smile.gifmaker](/src/apps/com.smile.gifmaker.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12708602)
+存在 4 规则组 - [com.smile.gifmaker](/src/apps/com.smile.gifmaker.ts)
 
 ## 青少年模式弹窗
 

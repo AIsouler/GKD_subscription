@@ -1,10 +1,6 @@
 # 东方财富
 
-存在 3 规则组 - [com.eastmoney.android.berlin](/src/apps/com.eastmoney.android.berlin.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12706071)
+存在 2 规则组 - [com.eastmoney.android.berlin](/src/apps/com.eastmoney.android.berlin.ts)
 
 ## 更新弹窗
 

@@ -1,11 +1,6 @@
 # 奇妙应用
 
-存在 5 规则组 - [com.magicalstory.AppStore](/src/apps/com.magicalstory.AppStore.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13185745)
-- [快照-1](https://i.gkd.li/import/13191546)
+存在 4 规则组 - [com.magicalstory.AppStore](/src/apps/com.magicalstory.AppStore.ts)
 
 ## 卡片式广告
 
