@@ -17,18 +17,27 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '词条页面广告',
-      activityIds: 'com.youdao.dict.activity.MainActivity',
+      name: '卡片式广告',
       rules: [
         {
           key: 0,
-          matches: '[text="广告"] - [id="com.youdao.dict:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12668574',
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          quickFind: true,
+          matches: '[text="广告"] - [vid="close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12668574',
+            'https://i.gkd.li/import/13800055',
+          ],
         },
         {
           key: 1,
-          matches: '[id="com.youdao.dict:id/close_pop"][text="收起广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12668583',
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          quickFind: true,
+          matches: '[vid="close_pop"][text="收起广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12668583',
+            'https://i.gkd.li/import/13800056',
+          ],
         },
       ],
     },
