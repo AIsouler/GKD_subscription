@@ -7,6 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '版本升级弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.lbe.security.ui.CountdownDialogActivity',
         'com.jf.my.MainActivity',
@@ -19,6 +23,11 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12838034',
             'https://i.gkd.li/import/12840591',
           ],
+        },
+        {
+          matches:
+            '[id="com.jf.my:id/toUpgradeTv"] - [id="com.jf.my:id/cancelTv"]',
+          snapshotUrls: 'https://i.gkd.li/import/13786867',
         },
       ],
     },
