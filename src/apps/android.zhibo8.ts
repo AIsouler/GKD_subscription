@@ -41,6 +41,13 @@ export default defineAppConfig({
             '@LinearLayout > [id="android.zhibo8:id/tv_title"][text="不感兴趣"]', // issues/1656, 直接指向text可能不工作
           snapshotUrls: 'https://i.gkd.li/import/12841135',
         },
+        {
+          key: 2,
+          name: '点击【广告】右侧的x',
+          matches:
+            '[text="广告"] <3 LinearLayout +2 [visibleToUser=true][id="android.zhibo8:id/iv_tip"]',
+          snapshotUrls: 'https://i.gkd.li/import/13786148',
+        },
       ],
     },
   ],
