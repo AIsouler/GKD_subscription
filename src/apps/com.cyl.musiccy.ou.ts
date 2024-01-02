@@ -67,10 +67,16 @@ export default defineAppConfig({
         {
           key: 1,
           name: '快手广告-2',
-          activityIds: 'com.ksf.yyx.MainActivity',
+          activityIds: [
+            'com.ksf.yyx.MainActivity',
+            'com.cyl.musiccy.ou.MainActivity',
+          ],
           matches:
             '[text="广告"] <2 ViewGroup -2 ViewGroup > @ViewGroup[clickable=true] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12775923',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12775923',
+            'https://i.gkd.li/import/13800051',
+          ],
         },
         {
           key: 2,
