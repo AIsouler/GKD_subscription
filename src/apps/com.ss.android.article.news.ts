@@ -42,17 +42,19 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: [
-            'com.ss.android.article.news.activity.MainActivity',
-            'com.ss.android.ugc.detail.activity.TikTokActivity',
-          ],
+          name: '首页-浮窗广告',
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          matches:
+            'FrameLayout > FrameLayout > FrameLayout[childCount=2] > @ImageView + ImageView[clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13762123',
+        },
+        {
+          key: 1,
+          name: '视频页-浮窗广告',
+          activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
           matches:
             'FrameLayout > FrameLayout > FrameLayout[childCount=2] > ImageView + ImageView[clickable=true][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13262675',
-            'https://i.gkd.li/import/13274622',
-            'https://i.gkd.li/import/13761236',
-          ],
+          snapshotUrls: 'https://i.gkd.li/import/13761236',
         },
       ],
     },
