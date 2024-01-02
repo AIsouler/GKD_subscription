@@ -135,8 +135,32 @@ export const validSnapshotUrl = (s: string) => {
 };
 
 export const checkConfig = (newConfig: RawSubscription) => {
+  const categories = newConfig.categories || [];
+  categories.forEach((c) => {
+    if (
+      categories.some(
+        (c2) => (c2.key == c.key || c2.name == c.name) && c2 !== c,
+      )
+    ) {
+      console.error({
+        configName: newConfig.name,
+        categoryName: c.name,
+        categoryKey: c.key,
+      });
+      throw new Error('invalid duplicated category');
+    }
+  });
+
   const globalGroups = newConfig.globalGroups || [];
   globalGroups.forEach((g) => {
+    if (globalGroups.some((g2) => g2.key == g.key && g2 !== g)) {
+      console.error({
+        configName: newConfig.name,
+        groupName: g.name,
+        groupKey: g.key,
+      });
+      throw new Error('invalid deprecated global group key');
+    }
     // check rules selector syntax
     g.rules.forEach((r) => {
       [r.matches, r.excludeMatches]
@@ -430,17 +454,25 @@ export const updateReadMeMd = async (
     await fs.writeFile(process.cwd() + '/CHANGELOG.md', changeLogText);
   }
 
-  if (changeCount <= 0) return;
-  console.log('更新文档: ' + changeCount);
+  if (changeCount > 0) {
+    const appListText =
+      '| 名称 | ID | 规则组 |\n| - | - | - |\n' +
+      newConfig
+        .apps!.map((app) => {
+          const groups = app.groups || [];
+          return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`;
+        })
+        .join('\n');
+    const appListTemplateMd = await fs.readFile(
+      process.cwd() + '/AppListTemplate.md',
+      'utf-8',
+    );
+    await fs.writeFile(
+      process.cwd() + '/AppList.md',
+      appListTemplateMd.replaceAll('--APP_LIST--', appListText),
+    );
+  }
 
-  const appListText =
-    '| 名称 | ID | 规则组 |\n| - | - | - |\n' +
-    newConfig
-      .apps!.map((app) => {
-        const groups = app.groups || [];
-        return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`;
-      })
-      .join('\n');
   const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
   const readMeMdText = mdTemplate
     .replaceAll('--APP_SIZE--', newConfig.apps!.length.toString())
@@ -452,12 +484,4 @@ export const updateReadMeMd = async (
     )
     .replaceAll('--VERSION--', (newConfig.version || 0).toString());
   await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
-  const appListTemplateMd = await fs.readFile(
-    process.cwd() + '/AppListTemplate.md',
-    'utf-8',
-  );
-  await fs.writeFile(
-    process.cwd() + '/AppList.md',
-    appListTemplateMd.replaceAll('--APP_LIST--', appListText),
-  );
 };
