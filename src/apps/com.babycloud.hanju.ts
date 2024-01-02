@@ -38,5 +38,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '视频播放时的弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.babycloud.hanju.ui.activity.HanjuSeriesActivity',
+          matches: '@[vid="close_rl"][clickable=true] > [vid="close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/import/13800123',
+        },
+      ],
+    },
   ],
 });
