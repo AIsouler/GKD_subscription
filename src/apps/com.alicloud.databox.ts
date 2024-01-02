@@ -54,10 +54,8 @@ export default defineAppConfig({
       activityIds: 'com.alicloud.databox.MainActivity',
       rules: [
         {
-          action: 'back',
-          matches:
-            '[text="立即了解新版本"] <<n [id="com.alicloud.databox:id/webContainer"]',
-          snapshotUrls: 'https://i.gkd.li/import/13678160',
+          matches: '[text^="立即了解"] -3 View[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13806865',
         },
       ],
     },
