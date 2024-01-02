@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '微店',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '@[clickable=true] > [text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/12506297',
-    },
-    {
       key: 6,
       name: '首页红包弹窗',
       matchTime: 10000,

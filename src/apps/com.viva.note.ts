@@ -5,24 +5,6 @@ export default defineAppConfig({
   name: '囧次元',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: 'TextView[text^="跳过"][text.length<=4]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12888429',
-            'https://i.gkd.li/import/12888730',
-            'https://i.gkd.li/import/12888762',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '应用内通知',
       activityIds: [

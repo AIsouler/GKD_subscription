@@ -5,25 +5,6 @@ export default defineAppConfig({
   name: '掌上公交',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.mygolbs.mybus.LoginActivity',
-      rules: [
-        {
-          matches:
-            '[id="com.mygolbs.mybus:id/splash_container"||id="com.mygolbs.mybus:id/adsRl"] [text^="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12745634',
-            'https://i.gkd.li/import/12790377',
-          ],
-        },
-        {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12790485',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '广告卡片',
       activityIds: [

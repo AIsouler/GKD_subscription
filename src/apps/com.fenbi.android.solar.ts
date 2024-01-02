@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '小猿搜题',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      quickFind: true,
-      resetMatch: 'app',
-      rules: '[id="com.fenbi.android.solar:id/btn_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/13631841',
-    },
-    {
       key: 1,
       name: '升级提示',
 

@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '钛马星',
   groups: [
     {
-      key: 1,
-      name: '开屏广告',
-      rules: [
-        {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12594568',
-            'https://i.gkd.li/import/12594574',
-          ],
-        },
-      ],
-    },
-    {
       key: 2,
       name: '每日弹窗广告',
       activityIds: [

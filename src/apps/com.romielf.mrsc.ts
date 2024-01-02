@@ -5,12 +5,6 @@ export default defineAppConfig({
   name: '每日赛车',
   groups: [
     {
-      name: '开屏广告',
-      key: 0,
-      rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/12667534',
-    },
-    {
       name: '新闻页面摇一摇广告',
       key: 1,
       enable: false,

@@ -5,25 +5,6 @@ export default defineAppConfig({
   name: '小熊油耗',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.firebear.androil.app.splash.SplashActivity',
-      rules: [
-        {
-          matches:
-            '[id="com.firebear.androil:id/adContainerLay"] [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12712742',
-        },
-        {
-          matches: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13088169',
-            'https://i.gkd.li/import/12855707',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '广告弹窗',
       desc: '来自第三方SDK【穿山甲】',

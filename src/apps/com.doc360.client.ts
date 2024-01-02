@@ -5,15 +5,6 @@ export default defineAppConfig({
   name: '个人图书馆',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13485331',
-    },
-    {
       key: 5,
       name: '阅读-推荐-信息流广告',
       quickFind: true,

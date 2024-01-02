@@ -3,14 +3,9 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidu.netdisk.samsung',
   name: '百度网盘-三星版本',
+
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.baidu.netdisk.ui.Navigate',
-      rules: '[id="com.baidu.netdisk.samsung:id/countdown"]',
-      snapshotUrls: 'https://i.gkd.li/import/12738323',
-    },
     {
       key: 1,
       name: '弹窗广告',

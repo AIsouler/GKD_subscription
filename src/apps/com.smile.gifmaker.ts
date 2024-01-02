@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '快手',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.smile.gifmaker:id/splash_skip_text"]',
-      snapshotUrls: 'https://i.gkd.li/import/12708602',
-    },
-    {
       key: 0,
       name: '青少年模式弹窗',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',

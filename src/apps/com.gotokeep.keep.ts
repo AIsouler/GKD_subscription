@@ -5,24 +5,6 @@ export default defineAppConfig({
   name: 'Keep',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          key: 0,
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12706108',
-            'https://i.gkd.li/import/13635599',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '青少年模式弹窗',
       actionMaximum: 1,

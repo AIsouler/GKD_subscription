@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '堆糖',
   groups: [
     {
-      name: '开屏广告',
-      key: 0,
-      matchTime: 10000,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      rules: [
-        {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13202185',
-        },
-      ],
-    },
-    {
       name: '青少年模式',
       desc: '关闭青少年模式提醒弹窗',
       key: 1,

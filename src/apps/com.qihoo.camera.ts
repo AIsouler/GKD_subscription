@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '360摄像机',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '[text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/12846783',
-    },
-    {
       key: 6,
       name: '卡录像界面广告',
       actionMaximum: 1,

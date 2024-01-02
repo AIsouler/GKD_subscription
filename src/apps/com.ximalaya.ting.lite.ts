@@ -5,24 +5,6 @@ export default defineAppConfig({
   name: '喜马拉雅极速版',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[text^="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13197061',
-        },
-        {
-          matches:
-            '[id="com.ximalaya.ting.lite:id/host_common_time_countdown_text_view"]',
-        },
-      ],
-    },
-    {
       key: 0,
       name: '首页-推荐-卡片广告',
       quickFind: true,

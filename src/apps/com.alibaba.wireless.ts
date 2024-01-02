@@ -3,17 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.alibaba.wireless',
   name: '阿里巴巴',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      actionMaximum: 1,
-      matchTime: 10000,
-      resetMatch: 'app',
-      rules: '[id="com.alibaba.wireless:id/v5_splash_over"]',
-      snapshotUrls: 'https://i.gkd.li/import/12684411',
-    },
     {
       key: 1,
       name: '更新弹窗',

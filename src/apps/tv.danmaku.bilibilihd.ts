@@ -7,15 +7,20 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
-
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: '[id="tv.danmaku.bilibilihd:id/count_down"]',
       snapshotUrls: 'https://i.gkd.li/import/13031261',
     },
     {
       key: 1,
       name: '青少年模式弹窗',
-      activityIds: 'com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: '[text*="青少年模式"] + [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13166639',
     },

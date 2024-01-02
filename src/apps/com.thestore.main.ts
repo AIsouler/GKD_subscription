@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '1号会员店',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-
-      quickFind: true,
-      activityIds: 'com.thestore.main.LoadingActivity',
-      rules: [
-        {
-          matches: '[id="com.thestore.main:id/ll_skip"] > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13163668',
-        },
-      ],
-    },
-    {
       key: 1,
       enable: false,
       name: '促销广告',

@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '华为应用市场',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.huawei.appmarket:id/skip_textview"]',
-      snapshotUrls: 'https://i.gkd.li/import/12683196',
-    },
-    {
       key: 1,
       name: '更新弹窗',
       matchTime: 10000,

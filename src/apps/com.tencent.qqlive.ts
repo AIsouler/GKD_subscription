@@ -6,26 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [5, 19],
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          action: 'clickCenter', //反馈测试clickNode点击无效
-          matches: 'TextView[text*="跳过"][text.length<=10]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12700227',
-            'https://i.gkd.li/import/12700122',
-            'https://i.gkd.li/import/12700541',
-            'https://i.gkd.li/import/12910953',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '青少年模式弹窗',
       actionMaximum: 1,

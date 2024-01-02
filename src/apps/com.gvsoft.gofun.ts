@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: 'GoFun出行',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@LinearLayout > [text*="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/13497753',
-        'https://i.gkd.li/import/13668997',
-      ],
-    },
-    {
       key: 5,
       name: '广告弹窗',
       quickFind: true,

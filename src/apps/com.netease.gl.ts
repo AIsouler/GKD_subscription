@@ -5,15 +5,6 @@ export default defineAppConfig({
   name: '网易大神',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.netease.gl.ui.activity.welcome.WelcomeActivity',
-
-      quickFind: true,
-      rules: '[id="com.netease.gl:id/tv_next_step"][text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12883227',
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: 'com.netease.gl.serviceupdate.widget.DialogUpdate',

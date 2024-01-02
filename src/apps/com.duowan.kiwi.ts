@@ -5,26 +5,6 @@ export default defineAppConfig({
   name: '虎牙直播',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: '[id=`com.duowan.kiwi:id/skip_time`]',
-        },
-        {
-          key: 1,
-          matches:
-            '[id="com.duowan.kiwi:id/ams_splash_ad_container"] >2 [text^="跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/13052592'],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '青少年模式弹窗',
       activityIds: [

@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '秀动',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text$="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/12894279',
-    },
-    {
       key: 1,
       name: '弹窗广告',
       rules: [

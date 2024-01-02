@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '猫眼',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '[text$="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12649967', // activityId: com.sankuai.movie.welcome.Welcome
-        'https://i.gkd.li/import/12649911', // activityId: com.miui.home.launcher.Launcher
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       actionMaximum: 1,

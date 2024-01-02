@@ -7,8 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-
-      activityIds: 'com.shanghaionstar.home.LoadingActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="com.shanghaionstar:id/jump_view"]',
       snapshotUrls: 'https://i.gkd.li/import/13071523',
     },

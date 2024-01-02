@@ -6,39 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [4],
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 1,
-          name: '开屏广告-1',
-          quickFind: true,
-          snapshotUrls: [
-            'https://i.gkd.li/import/12642486',
-            'https://i.gkd.li/import/12846496',
-            'https://i.gkd.li/import/12868232',
-          ],
-          matches: '[text^="跳过"][text.length<=10]',
-        },
-        {
-          key: 2,
-          name: '开屏广告-2',
-          quickFind: true,
-          matches: '[id="com.xyhui:id/ms_skipView"]',
-          snapshotUrls: ['https://i.gkd.li/import/13197417'],
-        },
-        {
-          key: 3,
-          name: '开屏广告-3',
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: ['https://i.gkd.li/import/13458588'],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '弹窗广告',
 

@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '掌通家园',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: ['com.seebaby.login.ui.activity.LauncherActivity'],
-      rules: '[text^="跳过"][text.length<10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12705347', // 有id
-        'https://i.gkd.li/import/13421495', // 无id
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: ['com.seebaby.login.ui.activity.LauncherActivity'],

@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '一起来涂色',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: ['com.cccgame.android.MainActivity'],
-      rules: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: ['https://i.gkd.li/import/12640349'],
-    },
-    {
       enable: false,
       key: 1,
       name: '底部穿山甲广告',

@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '手机电视高清直播',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      rules: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13766517',
-    },
-    {
       key: 3,
       name: '弹窗广告',
       rules: [

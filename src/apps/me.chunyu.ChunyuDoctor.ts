@@ -5,24 +5,6 @@ export default defineAppConfig({
   name: '春雨医生',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'me.chunyu.ChunyuDoctor.Activities.WelcomeActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: [
-        {
-          matches:
-            '[id="me.chunyu.ChunyuDoctor:id/tv_ad_label"] +(2) [id="me.chunyu.ChunyuDoctor:id/welcome_tv_timer"][text^="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12661722',
-            'https://i.gkd.li/import/12661937',
-          ],
-        },
-      ],
-    },
-    {
       key: 10,
       name: '应用评分弹窗',
       activityIds: [

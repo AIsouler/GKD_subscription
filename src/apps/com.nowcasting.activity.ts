@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '彩云天气',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[id="com.nowcasting.activity:id/cll_splash_ad_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/13690833',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '弹窗广告_VIP',
       quickFind: true,

@@ -5,22 +5,6 @@ export default defineAppConfig({
   name: '亲宝宝',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      activityIds: 'com.dw.btime.MainHomeTabActivity',
-      rules: [
-        {
-          matches: '[id="com.dw.btime:id/ad_screen_skip_btn_v1"]',
-          snapshotUrls: 'https://i.gkd.li/import/12889257',
-        },
-        {
-          matches: '[id="com.dw.btime:id/ad_screen_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12972209',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '应用内弹窗',
       quickFind: true,

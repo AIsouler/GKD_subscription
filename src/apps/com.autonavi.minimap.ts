@@ -3,20 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.autonavi.minimap',
   name: '高德地图',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@LinearLayout > [text^="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12667556',
-        'https://i.gkd.li/import/12750045',
-      ],
-    },
     {
       key: 1,
       name: '更新弹窗',

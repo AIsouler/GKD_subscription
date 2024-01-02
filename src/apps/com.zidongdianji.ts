@@ -5,15 +5,6 @@ export default defineAppConfig({
   name: '自动点击器',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.autoclicker.clicker.ads.SplashActivity',
-      rules: [
-        '[id=`com.byted.pangle:id/tt_splash_skip_btn`]',
-        'TextView[text^=`跳过`]',
-      ],
-    },
-    {
       key: 1,
       name: '卡片式广告',
       rules: [

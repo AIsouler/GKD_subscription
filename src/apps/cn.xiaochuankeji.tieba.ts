@@ -3,27 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'cn.xiaochuankeji.tieba',
   name: '最右',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'cn.xiaochuankeji.tieba.ui.base.SplashActivity',
-      rules: [
-        {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: ['https://i.gkd.li/import/12660905'],
-        },
-        {
-          matches:
-            '[id="cn.xiaochuankeji.tieba:id/splash_ad_view"] [text^="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12660955',
-            'https://i.gkd.li/import/12660984',
-            'https://i.gkd.li/import/12699405',
-          ],
-        },
-      ],
-    },
     {
       key: 1,
       name: '更新弹窗',

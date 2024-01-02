@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '华图在线',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.huatu.handheld_huatu.business.guide.SplashActivity',
-      rules: '[id="com.huatu.handheld_huatu:id/splash_tv_jump"]',
-      snapshotUrls: 'https://i.gkd.li/import/12715734',
-    },
-    {
       key: 1,
       name: '首页广告弹窗',
       activityIds: [

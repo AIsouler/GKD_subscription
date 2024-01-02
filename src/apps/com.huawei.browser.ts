@@ -7,7 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.huawei.browser.BrowserMainActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id$="/hiad_skip_text"]',

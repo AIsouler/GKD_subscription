@@ -3,17 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidutieba.davy',
   name: '贴吧一键签到大师',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.baidutieba.SplashActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: '[id="com.baidutieba.davy:id/skipBt"]',
-      snapshotUrls: 'https://i.gkd.li/import/12504282',
-    },
     {
       key: 1,
       name: '内部弹窗广告',

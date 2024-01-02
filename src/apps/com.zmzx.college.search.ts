@@ -5,23 +5,6 @@ export default defineAppConfig({
   name: '大学搜题酱',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      excludeActivityIds:
-        'com.zmzx.college.search.activity.login.activity.LoginActivity',
-      rules: ['TextView[text^="跳过"][text.length<=3]'],
-      snapshotUrls: [
-        'https://i.gkd.li/import/12867875',
-        'https://i.gkd.li/import/12867970',
-        'https://i.gkd.li/import/12881929',
-        'https://i.gkd.li/import/13561976', //登录误触
-      ],
-    },
-    {
       enable: false,
       key: 1,
       name: '首页-推送通知',

@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '图图影视',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-
-      quickFind: true,
-      activityIds: 'com.zero.flutter_qq_ads.page.AdSplashActivity',
-      rules: [
-        {
-          matches: '[text^="跳过"][text.length<=3]',
-          snapshotUrls: 'https://i.gkd.li/import/13163305',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '应用内弹窗',
       activityIds: 'com.zero.flutter_qq_ads.page.AdSplashActivity',

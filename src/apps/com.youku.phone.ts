@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '优酷视频',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.youku.phone:id/splash_ad_txt_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/13206958',
-    },
-    {
       enable: false,
       key: 1,
       name: '更新弹窗',

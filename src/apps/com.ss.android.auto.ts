@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '懂车帝',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@FrameLayout[clickable=true] > [text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/12605327',
-    },
-    {
       enable: false,
       key: 1,
       name: '首页推荐卡片广告',

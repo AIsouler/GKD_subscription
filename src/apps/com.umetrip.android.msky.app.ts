@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '航旅纵横',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text$="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12642287',
-        'https://i.gkd.li/import/13328294',
-      ],
-    },
-    {
       enable: false,
       key: 8,
       name: '酒店-弹窗广告',

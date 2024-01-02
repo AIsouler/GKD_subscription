@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.taobao.bootimage.activity.BootImageActivity',
       rules: '[id="com.taobao.taobao:id/close"]',
     },
     {

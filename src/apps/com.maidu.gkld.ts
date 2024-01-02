@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '公考雷达',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[id="com.maidu.gkld:id/tv_splash_timer"][text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13328332',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: 'com.maidu.gkld.ui.main.MainActivity',

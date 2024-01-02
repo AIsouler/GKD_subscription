@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '大师兄影视',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12843284',
-        'https://i.gkd.li/import/12843283',
-      ],
-    },
-    {
       key: 1,
       name: '弹窗广告',
       activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',

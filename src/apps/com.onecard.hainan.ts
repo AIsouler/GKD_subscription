@@ -5,23 +5,6 @@ export default defineAppConfig({
   name: '海南一卡通',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.hainan.renshe.app.ui.SplashActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: [
-        {
-          matches: '[id="com.onecard.hainan:id/tv_jump"][text$="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12662092',
-            'https://i.gkd.li/import/12662129',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: [

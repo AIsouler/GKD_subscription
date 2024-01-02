@@ -5,15 +5,6 @@ export default defineAppConfig({
   name: '中国移动河南',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds:
-        'com.xinhang.mobileclient.launcher.activity.LauncherActivity',
-
-      rules: '[id="com.xinhang.mobileclient:id/cdp_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/13024858',
-    },
-    {
       key: 1,
       name: '应用内广告弹窗',
       activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',

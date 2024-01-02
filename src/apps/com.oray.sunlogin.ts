@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '向日葵远程控制',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          matches: '[id="com.oray.sunlogin:id/ll_skip_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/13197052',
-        },
-      ],
-    },
-    {
       key: 0,
       name: '瓜子会员弹窗',
       desc: '点击右上角[关闭]',

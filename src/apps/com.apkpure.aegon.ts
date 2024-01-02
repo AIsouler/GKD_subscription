@@ -3,20 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.apkpure.aegon',
   name: 'APKPure',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[text$="跳过"||text^="Skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/13466685',
-        },
-      ],
-    },
     {
       key: 1,
       name: '热门推荐关闭',

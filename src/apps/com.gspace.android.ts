@@ -5,33 +5,6 @@ export default defineAppConfig({
   name: 'Gspace',
   groups: [
     {
-      key: 0,
-      name: '跳过开屏广告',
-
-      activityIds: [
-        'com.gspace.android.ui.activity.SplashActivity', // Gspace主应用开屏
-        'com.gspace.android.util.ShortcutHandleActivity', // Gspace子应用桌面快捷方式开屏
-        'com.gspace.android.ui.activity.VappLoadingActivity', // Gspace子应用开屏
-      ],
-      rules: [
-        {
-          matches: '[id="com.gspace.android:id/hiad_skip_text"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12668986',
-            'https://i.gkd.li/import/12668985',
-            'https://i.gkd.li/import/12703037',
-          ],
-        },
-        {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12910422',
-            'https://i.gkd.li/import/12910417',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '主页面上方广告',
 

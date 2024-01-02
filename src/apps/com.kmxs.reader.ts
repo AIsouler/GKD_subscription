@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '七猫免费小说',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: ['[id="com.kmxs.reader:id/tv_count_down_text"][text^="跳过"]'],
-      snapshotUrls: [
-        'https://i.gkd.li/import/12640282',
-        'https://i.gkd.li/import/13362271',
-      ],
-    },
-    {
       key: 0,
       name: '青少年模式弹窗',
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',

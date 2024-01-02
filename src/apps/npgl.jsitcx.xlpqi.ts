@@ -5,18 +5,6 @@ export default defineAppConfig({
   name: 'NP管理器',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      rules: [
-        {
-          key: 0,
-          activityIds: 'flc.ast.SplashActivity',
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12799908',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '应用内第三方 SDK 广告弹窗',
       rules: [

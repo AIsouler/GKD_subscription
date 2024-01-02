@@ -5,34 +5,6 @@ export default defineAppConfig({
   name: '网易邮箱大师',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          quickFind: true,
-          matches: '[text*="跳过"][text.length<=10]',
-          excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12893573',
-            'https://i.gkd.li/import/12923776',
-            'https://i.gkd.li/import/13195662',
-            'https://i.gkd.li/import/12818335',
-            'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
-            'https://i.gkd.li/import/13207736', // TODO 一整块图片，无法跳过
-          ],
-        },
-        {
-          key: 1,
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12999739',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: [

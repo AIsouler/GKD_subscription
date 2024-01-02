@@ -5,18 +5,6 @@ export default defineAppConfig({
   name: '蜜雪冰城',
   groups: [
     {
-      key: 1,
-      name: '开屏广告',
-      activityIds: ['com.mxbc.mxsa.modules.splash.SplashActivity'],
-      rules: [
-        {
-          key: 1,
-          matches: '[id="com.mxbc.mxsa:id/count_down"]',
-          snapshotUrls: 'https://i.gkd.li/import/12840093',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '主界面弹窗广告',
       activityIds: ['com.mxbc.mxsa.modules.main.MainActivity'],

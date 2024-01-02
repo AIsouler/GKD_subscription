@@ -3,20 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidu.xin.aiqicha',
   name: '爱企查',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.baidu.newbridge.fast.MainFastActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: '[id="com.baidu.xin.aiqicha:id/time"][text="跳过"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12755760',
-        'https://i.gkd.li/import/12755761', // activityId: 'com.miui.home.launcher.Launcher'
-      ],
-    },
     {
       key: 1,
       name: '更新弹窗',

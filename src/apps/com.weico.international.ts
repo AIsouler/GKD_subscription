@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '微博轻享版',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: 'TextView[text^="跳过"][text.length<10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12509123',
-        'https://i.gkd.li/import/12510132',
-        'https://i.gkd.li/import/12740537', // activityId: 'com.sina.weibo.ad'
-      ],
-    },
-    {
       key: 0,
       name: '推荐流广告',
       desc: '主页,搜索页',

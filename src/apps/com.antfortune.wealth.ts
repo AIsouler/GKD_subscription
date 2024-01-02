@@ -7,9 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.alipay.mobile.quinox.LauncherActivity',
+      resetMatch: 'app',
+      actionMaximum: 1,
+      matchTime: 10000,
+      quickFind: true,
       rules:
-        '[id="com.antfortune.wealth:id/welcome_page"] > RelativeLayout + View',
+        '@View[clickable=true] <2 [id="com.antfortune.wealth:id/welcome_page"]',
       snapshotUrls: 'https://i.gkd.li/import/12776577',
     },
   ],

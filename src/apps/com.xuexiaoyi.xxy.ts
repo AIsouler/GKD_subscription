@@ -5,18 +5,6 @@ export default defineAppConfig({
   name: '学小易',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: 'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12895001',
-        'https://i.gkd.li/import/13266314',
-      ],
-    },
-    {
       key: 1,
       name: '首页-底部广告',
       activityIds: [
