@@ -3,15 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'cn.com.spdb.mobilebank.per',
   name: '浦发银行',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'cn.com.spdb.mobilebank.per.activity.MainActivity',
-      rules:
-        '[id="cn.com.spdb.mobilebank.per:id/splash_tb_time"][text$="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12740308',
-    },
     {
       key: 1,
       name: '消息中心-系统通知请求',

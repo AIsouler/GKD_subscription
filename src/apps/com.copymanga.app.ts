@@ -3,26 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.copymanga.app',
   name: '拷貝漫畫',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 30000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          matches: '[text^="跳过"][text.length<6]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12504489',
-            'https://i.gkd.li/import/12504507',
-            'https://i.gkd.li/import/12852509',
-            'https://i.gkd.li/import/12504492',
-          ],
-        },
-      ],
-    },
     {
       key: 1,
       name: '弹窗广告',

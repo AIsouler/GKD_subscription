@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '手机天猫',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.tmall.wireless:id/splash_ad_txt_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/13162604',
-    },
-    {
       key: 1,
       name: '版本更新',
       quickFind: true,

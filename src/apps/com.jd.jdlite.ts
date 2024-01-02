@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '京喜特价',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.jd.jdlite.ad.ADActivity',
-        'com.jd.jdlite.MainActivity',
-      ],
-
-      rules: '[desc="闪屏广告"] + [text$="跳过"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12727385',
-        'https://i.gkd.li/import/13062972',
-      ],
-    },
-    {
       key: 1,
       name: '首页广告弹窗',
       activityIds: 'com.jd.jdlite.MainFrameActivity',

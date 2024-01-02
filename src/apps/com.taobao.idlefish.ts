@@ -5,18 +5,6 @@ export default defineAppConfig({
   name: '闲鱼',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.taobao.idlefish:id/advert_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12668670',
-        'https://i.gkd.li/import/13049015',
-      ],
-    },
-    {
       key: 1,
       name: '请求开启通知权限弹窗',
       activityIds:

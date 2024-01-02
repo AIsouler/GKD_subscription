@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: 'tita搜索',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'so.tita.view.activity.GActivity',
-      rules: '@[text^="跳过"] < LinearLayout +n ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/12800319',
-    },
-    {
       key: 1,
       name: '应用内第三方 SDK 广告',
       rules: [

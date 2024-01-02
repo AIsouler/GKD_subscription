@@ -5,14 +5,6 @@ export default defineAppConfig({
   name: '智联招聘',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.zhaopin.social.SplashActivity',
-      rules:
-        '[id="com.zhaopin.social:id/tv_ad"] + [id="com.zhaopin.social:id/cdp_view"][text^="跳过"]',
-      snapshotUrls: ['https://i.gkd.li/import/12706183'],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: 'com.zhaopin.social.my.setting.AboutUsActivity',

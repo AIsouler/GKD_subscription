@@ -3,33 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidu.netdisk',
   name: '百度网盘',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          quickFind: true,
-          matches: '[text^="跳过"][text.length<=5]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12472597',
-            'https://i.gkd.li/import/12877626',
-            'https://i.gkd.li/import/12988458',
-            'https://i.gkd.li/import/12648924',
-            'https://i.gkd.li/import/12865287',
-          ],
-        },
-        {
-          key: 1,
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13538334',
-        },
-      ],
-    },
     {
       key: 1,
       name: '活动弹窗',

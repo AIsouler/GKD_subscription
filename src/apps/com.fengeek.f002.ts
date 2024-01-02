@@ -5,17 +5,6 @@ export default defineAppConfig({
   name: 'fiil+',
   groups: [
     {
-      key: 1,
-      name: '开屏广告',
-      activityIds: ['com.fengeek.f002.WelcomeActivity'],
-      rules: [
-        {
-          matches: '[id="com.fengeek.f002:id/we_img_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/13068924',
-        },
-      ],
-    },
-    {
       enable: false,
       key: 2,
       name: '自动连接耳机',

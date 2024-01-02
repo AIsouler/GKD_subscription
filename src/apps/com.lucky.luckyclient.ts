@@ -5,15 +5,6 @@ export default defineAppConfig({
   name: '瑞幸咖啡',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.luckin.client.main.FirstActivity',
-
-      quickFind: true,
-      rules: '[id="com.lucky.luckyclient:id/tv_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/12508764',
-    },
-    {
       key: 1,
       name: '软件更新',
       activityIds: 'com.luckin.client.main.FirstActivity',

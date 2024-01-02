@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '华尔街见闻',
   groups: [
     {
-      key: 0,
-      name: '启动-开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          matches: '[id="com.wallstreetcn.news:id/iv_jump"]',
-          snapshotUrls: 'https://i.gkd.li/import/12850458',
-        },
-      ],
-    },
-    {
       key: 10,
       name: '卡片广告',
       desc: '点击关闭, 无后续确认操作',

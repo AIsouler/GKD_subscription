@@ -5,32 +5,6 @@ export default defineAppConfig({
   name: 'QQ音乐',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: 'TextView[text=`跳过`][clickable=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12673960', // text="互动广告"
-            'https://i.gkd.li/import/12674023', // text="互动广告 | "
-            'https://i.gkd.li/import/12673998', // text="广告"
-            'https://i.gkd.li/import/12674074', // text="运营推广"
-          ],
-        },
-        {
-          key: 1,
-          quickFind: false,
-          matches: '@ViewGroup > ViewGroup[text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13628165',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '广告卡片',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',

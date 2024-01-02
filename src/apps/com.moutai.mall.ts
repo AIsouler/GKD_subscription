@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: 'i茅台',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '[text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13704960',
-    },
-    {
       key: 1,
       name: '首页广告弹窗',
       activityIds: [

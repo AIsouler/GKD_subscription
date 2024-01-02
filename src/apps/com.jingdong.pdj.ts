@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '京东到家',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '[id="com.jingdong.pdj:id/adv_exit_bnt"]',
-      snapshotUrls: 'https://i.gkd.li/import/13293044',
-    },
-    {
       key: 1,
       name: '首页广告弹窗',
       matchTime: 10000,

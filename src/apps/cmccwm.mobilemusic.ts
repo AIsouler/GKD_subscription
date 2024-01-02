@@ -3,17 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'cmccwm.mobilemusic',
   name: '咪咕音乐',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id = "cmccwm.mobilemusic.base_runtime:id/bt_skip_ad"]',
-      snapshotUrls: 'https://i.gkd.li/import/12852498',
-    },
     {
       key: 1,
       name: '版本更新',

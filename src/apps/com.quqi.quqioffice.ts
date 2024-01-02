@@ -5,21 +5,6 @@ export default defineAppConfig({
   name: '曲奇云盘',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.quqi.quqioffice.pages.splashAd.SplashAdPage',
-      rules: [
-        {
-          matches: 'TextView[text="4"||text="5"] - TextView[text$="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12854643',
-        },
-        {
-          matches: 'View[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12854691',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '私人云-看图-弹窗广告',
       desc: '在线私人云看图片自动弹出自动播放可跳过广告',

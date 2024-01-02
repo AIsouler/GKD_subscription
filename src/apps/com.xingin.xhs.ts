@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '小红书',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text="跳过"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12739065', // com.xingin.xhs.index.v2.IndexActivityV2
-        'https://i.gkd.li/import/13197784', // com.xingin.matrix.detail.activity.DetailFeedActivity
-      ],
-    },
-    {
       key: 1,
       name: '通知权限弹窗',
       quickFind: true,

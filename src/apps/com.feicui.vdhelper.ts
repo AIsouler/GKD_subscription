@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '翡翠视频',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: ['com.ys.resemble.ui.login.splash.SplashSecondAdActivity'],
-      rules: '[id="com.feicui.vdhelper:id/txt_skip"][text^="跳过"]',
-      snapshotUrls: ['https://i.gkd.li/import/12700730'],
-    },
-    {
       key: 1,
       name: '首页广告弹窗',
       activityIds: ['com.ys.resemble.ui.MainActivity'],

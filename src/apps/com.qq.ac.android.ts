@@ -5,18 +5,6 @@ export default defineAppConfig({
   name: '腾讯动漫',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.qq.ac.android:id/text_ad_logo"] + [text="跳过"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12707750', //com.qq.ac.android.splash.SplashActivity
-        'https://i.gkd.li/import/13195632', //com.qq.ac.android.splash.SplashHotActivity
-      ],
-    },
-    {
       key: 1,
       name: '青少年模式弹窗',
       activityIds: ['com.qq.ac.android.main.MainActivity'],

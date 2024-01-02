@@ -5,14 +5,6 @@ export default defineAppConfig({
   name: '掌上穿越火线',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id=`com.tencent.qt.sns:id/tv_timer`][text$=`跳过`]',
-    },
-    {
       key: 1,
       name: '首页活动弹窗',
       actionMaximum: 1,

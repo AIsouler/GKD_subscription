@@ -6,15 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [3],
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="me.ele:id/skip_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/12534930',
-    },
-    {
       key: 1,
       name: '版本更新',
       quickFind: true,

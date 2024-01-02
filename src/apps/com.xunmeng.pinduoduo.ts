@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '拼多多',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: ['com.xunmeng.pinduoduo.ui.activity.MainFrameActivity'],
-      rules: ['RelativeLayout > TextView[id!=null][text^="跳过"]'],
-      snapshotUrls: ['https://i.gkd.li/import/12799632'],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       rules: [

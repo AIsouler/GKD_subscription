@@ -3,29 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.babytree.apps.pregnancy',
   name: '宝宝树孕育',
+  deprecatedKeys: [1],
   groups: [
-    {
-      key: 1,
-      name: '开屏广告',
-      rules: [
-        {
-          activityIds: [
-            'com.babytree.apps.pregnancy.video.splash.SplashVideoTransitionActivity',
-          ],
-          matches: 'TextView[text="跳过"][id!=null]',
-          snapshotUrls: 'https://i.gkd.li/import/12614757',
-        },
-        {
-          activityIds: ['com.babytree.apps.pregnancy.MainActivity'],
-          matches:
-            '[name$="FrameLayout"||name$="ViewGroup"] > TextView[text^="跳过"][clickable=true][text.length<=4]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12614755',
-            'https://i.gkd.li/import/12737138',
-          ],
-        },
-      ],
-    },
     {
       key: 2,
       name: '弹出广告(偶发)',

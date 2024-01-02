@@ -5,14 +5,6 @@ export default defineAppConfig({
   name: '小米商城',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      activityIds: 'com.xiaomi.shop.activity.MainTabActivity',
-      rules: '[id="com.xiaomi.shop:id/skip"]',
-      snapshotUrls: ['https://i.gkd.li/import/12472631'],
-    },
-    {
       key: 1,
       name: '首页弹窗广告',
       activityIds: 'com.xiaomi.shop.plugin.homepage.utils.AdDialog',

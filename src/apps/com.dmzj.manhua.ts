@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '动漫之家',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      matchTime: 10000,
-      rules: '[text*="跳过"][text.length<=5]',
-      snapshotUrls: 'https://i.gkd.li/import/13542494',
-    },
-    {
       key: 1,
       name: '弹窗广告',
       activityIds: 'com.dmzj.manhua.ui.LaunchInterceptorActivity',

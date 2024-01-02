@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '中信银行',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@LinearLayout > [text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12701203',
-    },
-    {
       key: 1,
       name: '更新弹窗',
       actionMaximum: 1,

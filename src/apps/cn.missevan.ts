@@ -3,21 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'cn.missevan',
   name: '猫耳FM',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      desc: '点击：跳过',
-
-      quickFind: true,
-      activityIds: 'cn.missevan.activity.MainActivity',
-      rules: [
-        {
-          matches: '[id="cn.missevan:id/skip_title"][text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12908434',
-        },
-      ],
-    },
     {
       key: 1,
       name: '青少年提示',

@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '网上国网',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '[text^="跳过"][text.length<10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/13247957',
-        'https://i.gkd.li/import/13242169',
-      ],
-    },
-    {
       key: 1,
       name: '首页弹窗广告',
 

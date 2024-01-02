@@ -5,23 +5,6 @@ export default defineAppConfig({
   name: 'vivo 官网',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: 'TextView[text*="跳过"][text.length<=5]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13622769',
-            'https://i.gkd.li/import/13197585',
-          ],
-        },
-      ],
-    },
-    {
       key: 3,
       name: '活动广告',
       matchTime: 10000,

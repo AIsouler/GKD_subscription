@@ -5,25 +5,6 @@ export default defineAppConfig({
   name: '汽水音乐',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          name: '字节穿山甲广告SDK',
-          matches: '[id$="id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13533782',
-        },
-        {
-          quickFind: true,
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13704658',
-        },
-      ],
-    },
-    {
       key: 2,
       name: 'VIP弹窗',
       desc: '直接关闭所有底部半屏弹窗',

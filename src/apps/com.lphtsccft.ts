@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '涨乐财富通',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: ['com.lphtsccft.zhangle.startup.SplashScreenActivity'],
-      rules: '[id="com.lphtsccft:id/countdown_skip"][text="跳过"]',
-      snapshotUrls: ['https://i.gkd.li/import/12699286'],
-    },
-    {
       key: 1,
       name: '首页广告弹窗',
       activityIds: [

@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '云闪付',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          matches: '[id="com.unionpay:id/jump"][text^="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12705391',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       matchTime: 10000,

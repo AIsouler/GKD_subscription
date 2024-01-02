@@ -5,26 +5,6 @@ export default defineAppConfig({
   name: '今日头条',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12684954',
-            'https://i.gkd.li/import/12754759',
-            'https://i.gkd.li/import/12840189',
-            'https://i.gkd.li/import/13174224',
-            'https://i.gkd.li/import/13402688',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       actionMaximum: 1,

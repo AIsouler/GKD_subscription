@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '书旗小说',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      activityIds: 'com.shuqi.home.MainActivity',
-      rules: '[id="com.shuqi.controller:id/splash_container"] [text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12854869',
-    },
-    {
       key: 0,
       name: '内部右侧浮动广告',
       activityIds: 'com.shuqi.home.MainActivity',

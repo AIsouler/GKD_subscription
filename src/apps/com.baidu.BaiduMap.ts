@@ -3,21 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidu.BaiduMap',
   name: '百度地图',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: ['TextView[text^="跳过"][text.length<=5]'],
-      snapshotUrls: [
-        'https://i.gkd.li/import/12924598',
-        'https://i.gkd.li/import/12909174',
-        'https://i.gkd.li/import/12909201',
-        'https://i.gkd.li/import/13074377',
-      ],
-    },
     {
       key: 1,
       name: '地图上方黄页横幅',
@@ -132,7 +119,7 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.baidu.baidumaps.MapsActivity',
-          matches: 'TextView[id=\'com.baidu.BaiduMap:id/tv_dialog_cancel\']',
+          matches: 'TextView[id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
           snapshotUrls: 'https://i.gkd.li/import/13439258',
         },
       ],

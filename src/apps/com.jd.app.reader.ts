@@ -5,23 +5,6 @@ export default defineAppConfig({
   name: '京东读书',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.jingdong.app.reader.logo.JdLogoActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: [
-        {
-          matches: '[id="com.jd.app.reader:id/count_down_time"][text^="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12686559',
-            'https://i.gkd.li/import/12686589', // activityId: 'com.miui.home.launcher.Launcher'
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: ['com.jingdong.app.reader.logo.JdLogoActivity'],

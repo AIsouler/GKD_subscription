@@ -3,23 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.danlan.xiaolan',
   name: 'Blued极速版',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      activityIds: 'com.blued.android.core.ui.TerminalActivity',
-      rules: [
-        {
-          matches:
-            '[id="com.danlan.xiaolan:id/tt_splash_skip_btn"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/13421629'],
-        },
-      ],
-    },
     {
       key: 1,
       quickFind: true,

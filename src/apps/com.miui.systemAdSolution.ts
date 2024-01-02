@@ -5,12 +5,6 @@ export default defineAppConfig({
   name: 'miui系统广告',
   groups: [
     {
-      key: 0,
-      name: '任意app开屏广告',
-      desc: '此广告组件可以使用ADB卸载',
-      rules: '[id=`com.miui.systemAdSolution:id/view_skip_button`]',
-    },
-    {
       key: 1,
       name: 'miui-为什么不希望看到这条推广',
       desc: '点击【不感兴趣】',

@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '多点',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.wm.dmall:id/splashSkipTextView"]',
-      snapshotUrls: ['https://i.gkd.li/import/13197630'],
-    },
-    {
       key: 1,
       name: '首页-弹窗广告',
       quickFind: true,

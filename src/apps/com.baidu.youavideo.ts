@@ -3,30 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.baidu.youavideo',
   name: '一刻相册',
+  deprecatedKeys: [1],
   groups: [
-    {
-      key: 1,
-      name: '开屏广告',
-      matchTime: 10000,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          name: '百青藤广告',
-          actionMaximum: 1,
-          quickFind: true,
-          matches: '[text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12598507',
-        },
-        {
-          key: 1,
-          name: '字节广告',
-          actionMaximumKey: 0,
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12597925',
-        },
-      ],
-    },
     {
       key: 2,
       name: '软件升级提醒',

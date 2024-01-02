@@ -3,17 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.ctm',
   name: 'CTM Buddy',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.ctm:id/tv_skip_adv"]',
-      snapshotUrls: 'https://i.gkd.li/import/13350472',
-    },
     {
       key: 1,
       name: '浮窗广告',

@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '扫描全能王',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12668795',
-        'https://i.gkd.li/import/13635350',
-        'https://i.gkd.li/import/13635351',
-      ],
-    },
-    {
       key: 0,
       name: '开屏vip提示',
       activityIds: 'com.intsig.camscanner.guide.guidevideo.GuideVideoActivity',

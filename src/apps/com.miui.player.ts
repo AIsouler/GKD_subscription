@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '小米音乐',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '[text*="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12700962',
-        'https://i.gkd.li/import/12852707',
-        'https://i.gkd.li/import/13490450',
-      ],
-    },
-    {
       key: 1,
       name: '浮窗广告',
       desc: '关闭右侧飘窗广告',

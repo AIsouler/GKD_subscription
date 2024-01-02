@@ -3,24 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'android.zhibo8',
   name: '直播吧',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          matches: 'TextView[text^="跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12700387',
-            'https://i.gkd.li/import/12661109',
-          ],
-        },
-      ],
-    },
     {
       key: 1,
       name: '信息流广告',

@@ -3,24 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'cn.wps.moffice_eng',
   name: 'WPS',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'cn.wps.moffice.documentmanager.PreStartActivity',
-      rules: [
-        {
-          key: 0,
-          matches: '[id=`cn.wps.moffice_eng:id/splash_skip`]',
-          snapshotUrls: [], // 需要补充快照
-        },
-        {
-          key: 1,
-          matches: '[id="cn.wps.moffice_eng:id/splash_jump"]',
-          snapshotUrls: 'https://i.gkd.li/import/13188596',
-        },
-      ],
-    },
     {
       key: 1,
       name: '首页-文档列表广告',

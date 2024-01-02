@@ -3,29 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.ct.client',
   name: '中国电信',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: [
-        {
-          key: 0,
-          matches: '[id="com.ct.client:id/tvSkip"]',
-        },
-        {
-          key: 1,
-          matches: '[id="com.ct.client:id/btSkip"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12508958',
-            'https://i.gkd.li/import/12819736',
-          ],
-        },
-      ],
-    },
     {
       key: 1,
       name: '用户引导',

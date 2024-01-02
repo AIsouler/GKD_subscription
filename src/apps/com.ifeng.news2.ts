@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '凤凰新闻',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.ifeng.news2.activity.IfengTabMainActivity',
-      rules: '[id="com.ifeng.news2:id/skip_layout"] > [text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12705529',
-    },
-    {
       key: 1,
       name: '信息流广告',
       activityIds: 'com.ifeng.news2.activity.IfengTabMainActivity',

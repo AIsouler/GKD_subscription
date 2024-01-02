@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '自考笔果题库',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: 'com.dep.biguo.mvp.ui.activity.SplashActivity',
-      rules: '[id="com.dep.biguo:id/adView"] [text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/import/12708763',
-    },
-    {
       key: 1,
       name: '更新弹窗',
       activityIds: 'com.dep.biguo.dialog',

@@ -5,18 +5,6 @@ export default defineAppConfig({
   name: '蜻蜓FM',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: ['fm.qingting.qtradio.QTRadioActivity'],
-      rules: [
-        '[id="fm.qingting.qtradio:id/third_skip_layout"||id="fm.qingting.qtradio:id/skip_ad"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/import/12640433',
-        'https://i.gkd.li/import/12640971',
-      ],
-    },
-    {
       key: 1,
       name: '播放界面的广告',
       activityIds: ['fm.qingting.qtradio.QTRadioActivity'],

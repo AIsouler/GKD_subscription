@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '识货',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: '@[clickable=true] > [text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13685134',
-    },
-    {
       key: 2,
       name: '请求消息通知',
       matchTime: 10000,

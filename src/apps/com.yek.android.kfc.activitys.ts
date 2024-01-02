@@ -7,7 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: 'com.yum.android.superkfc.ui.v5.HomeV5Activity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id=`com.yek.android.kfc.activitys:id/splash_tv_3`]',
     },
   ],

@@ -5,16 +5,6 @@ export default defineAppConfig({
   name: '我的荣耀',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13523578',
-    },
-    {
       enable: false,
       key: 10,
       name: '请求位置权限提示信息',

@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '芒果TV',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules:
-        '@[text^="跳过"][text.length<=10] <<n [id="com.hunantv.imgo.activity:id/rlAd"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12472612',
-        'https://i.gkd.li/import/13401943',
-      ],
-    },
-    {
       key: 0,
       name: '青少年模式弹窗',
       activityIds: [

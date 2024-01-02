@@ -5,26 +5,6 @@ export default defineAppConfig({
   name: '飞韵听书',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          name: '【跳过】',
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13445848',
-        },
-        {
-          name: '【字节穿山甲SDK】',
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13440325',
-        },
-      ],
-    },
-    {
       key: 5,
       name: '播放界面卡片式广告',
       desc: '需点击二次弹窗关闭原因',

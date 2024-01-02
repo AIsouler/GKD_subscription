@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '腾讯新闻',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.tencent.news.activity.SplashActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: '@[text="跳过"] - LinearLayout > [text*="广告"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12755818',
-        'https://i.gkd.li/import/12755896',
-        'https://i.gkd.li/import/12755901', // activityId: 'com.miui.home.launcher.Launcher'
-      ],
-    },
-    {
       key: 1,
       name: '信息流广告',
       desc: '自动点击【更多】->【不感兴趣】',
