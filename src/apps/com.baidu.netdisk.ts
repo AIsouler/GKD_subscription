@@ -132,5 +132,19 @@ export default defineAppConfig({
         'ViewGroup > [id="com.baidu.netdisk:id/background_image"] +n [id="com.baidu.netdisk:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12783106',
     },
+    {
+      key: 11,
+      quickFind: true,
+      name: '幸运券包弹窗',
+      desc: '自动点击关闭',
+      activityIds: 'com.baidu.netdisk.ui.MainActivity',
+      rules: [
+        {
+          matches:
+            '[id="com.baidu.netdisk:id/tv_title"][text^="恭喜获得"] -3 ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13806852',
+        },
+      ],
+    },
   ],
 });
