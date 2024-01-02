@@ -73,12 +73,17 @@ export default defineAppConfig({
       enable: false,
       key: 4,
       name: '消息-打开通知',
-      activityIds:
+      activityIds: [
         'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
+        'com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity',
+      ],
       rules: [
         {
           matches: 'TextView[text="开启消息通知"] +n ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12839864',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12839864', //com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew
+            'https://i.gkd.li/import/13772299', //com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity
+          ],
         },
         {
           matches:
