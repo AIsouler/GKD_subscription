@@ -220,5 +220,12 @@ export default defineAppConfig({
       rules: 'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
       snapshotUrls: 'https://i.gkd.li/import/13379307',
     },
+    {
+      key: 15,
+      name: '关闭商城推荐',
+      desc: '点击【不感兴趣】',
+      rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
+      snapshotUrls: 'https://i.gkd.li/import/13800207',
+    },
   ],
 });
