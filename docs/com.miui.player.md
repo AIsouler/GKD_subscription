@@ -1,12 +1,6 @@
 # 小米音乐
 
-存在 9 规则组 - [com.miui.player](/src/apps/com.miui.player.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12700962)
-- [快照-1](https://i.gkd.li/import/12852707)
-- [快照-2](https://i.gkd.li/import/13490450)
+存在 8 规则组 - [com.miui.player](/src/apps/com.miui.player.ts)
 
 ## 浮窗广告
 

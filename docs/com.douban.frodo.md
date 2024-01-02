@@ -1,12 +1,6 @@
 # 豆瓣
 
-存在 10 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12505151)
-- [快照-1](https://i.gkd.li/import/12505152)
-- [快照-2](https://i.gkd.li/import/12506164)
+存在 9 规则组 - [com.douban.frodo](/src/apps/com.douban.frodo.ts)
 
 ## 不分享/同步作品短评
 

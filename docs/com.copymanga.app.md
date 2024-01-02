@@ -1,13 +1,6 @@
 # 拷貝漫畫
 
-存在 6 规则组 - [com.copymanga.app](/src/apps/com.copymanga.app.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12504489)
-- [快照-1](https://i.gkd.li/import/12504507)
-- [快照-2](https://i.gkd.li/import/12852509)
-- [快照-3](https://i.gkd.li/import/12504492)
+存在 5 规则组 - [com.copymanga.app](/src/apps/com.copymanga.app.ts)
 
 ## 弹窗广告
 

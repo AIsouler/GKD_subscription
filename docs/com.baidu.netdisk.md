@@ -2,15 +2,6 @@
 
 存在 10 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
 
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12472597)
-- [快照-1](https://i.gkd.li/import/12877626)
-- [快照-2](https://i.gkd.li/import/12988458)
-- [快照-3](https://i.gkd.li/import/12648924)
-- [快照-4](https://i.gkd.li/import/12865287)
-- [快照-5](https://i.gkd.li/import/13538334)
-
 ## 活动弹窗
 
 默认禁用 - 关闭各种活动弹窗信息
@@ -65,3 +56,9 @@
 默认禁用 - 自动点击x按钮
 
 - [快照-0](https://i.gkd.li/import/12783106)
+
+## 幸运券包弹窗
+
+默认禁用 - 自动点击关闭
+
+- [快照-0](https://i.gkd.li/import/13806852)

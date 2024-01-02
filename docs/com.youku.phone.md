@@ -1,10 +1,6 @@
 # 优酷视频
 
-存在 4 规则组 - [com.youku.phone](/src/apps/com.youku.phone.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13206958)
+存在 3 规则组 - [com.youku.phone](/src/apps/com.youku.phone.ts)
 
 ## 更新弹窗
 

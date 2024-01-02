@@ -8,6 +8,7 @@
 - [快照-1](https://i.gkd.li/import/12706127)
 - [快照-2](https://i.gkd.li/import/12864707)
 - [快照-3](https://i.gkd.li/import/12911882)
+- [快照-4](https://i.gkd.li/import/13798686)
 
 ## 首页-推荐-广告卡片
 

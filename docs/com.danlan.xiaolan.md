@@ -1,10 +1,6 @@
 # Blued极速版
 
-存在 3 规则组 - [com.danlan.xiaolan](/src/apps/com.danlan.xiaolan.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13421629)
+存在 2 规则组 - [com.danlan.xiaolan](/src/apps/com.danlan.xiaolan.ts)
 
 ## 附近的人-广告卡片
 

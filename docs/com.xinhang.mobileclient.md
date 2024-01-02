@@ -1,10 +1,6 @@
 # 中国移动河南
 
-存在 3 规则组 - [com.xinhang.mobileclient](/src/apps/com.xinhang.mobileclient.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13024858)
+存在 2 规则组 - [com.xinhang.mobileclient](/src/apps/com.xinhang.mobileclient.ts)
 
 ## 应用内广告弹窗
 

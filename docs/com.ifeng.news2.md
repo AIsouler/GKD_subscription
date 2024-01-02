@@ -1,10 +1,6 @@
 # 凤凰新闻
 
-存在 3 规则组 - [com.ifeng.news2](/src/apps/com.ifeng.news2.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12705529)
+存在 2 规则组 - [com.ifeng.news2](/src/apps/com.ifeng.news2.ts)
 
 ## 信息流广告
 

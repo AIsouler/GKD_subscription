@@ -25,8 +25,11 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12847842)
-- [快照-1](https://i.gkd.li/import/12840889)
-- [快照-2](https://i.gkd.li/import/13761147)
+- [快照-1](https://i.gkd.li/import/13787345)
+- [快照-2](https://i.gkd.li/import/12840889)
+- [快照-3](https://i.gkd.li/import/13761147)
+- [快照-4](https://i.gkd.li/import/12749584)
+- [快照-5](https://i.gkd.li/import/13627967)
 
 ## 频道页面广告
 
@@ -54,13 +57,6 @@
 - [快照-1](https://i.gkd.li/import/12894359)
 - [快照-2](https://i.gkd.li/import/12721433)
 - [快照-3](https://i.gkd.li/import/12894375)
-
-## 动态广告卡片
-
-默认禁用 - 点击右上角[广告]右侧的x按钮直接关闭
-
-- [快照-0](https://i.gkd.li/import/12749584)
-- [快照-1](https://i.gkd.li/import/13627967)
 
 ## 扫一扫-登录确认
 
@@ -156,3 +152,9 @@
 
 - [快照-0](https://i.gkd.li/import/13695087)
 - [快照-1](https://i.gkd.li/import/13699701)
+
+## 首页广告弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13797876)

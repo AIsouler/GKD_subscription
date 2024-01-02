@@ -1,10 +1,6 @@
 # 迅雷
 
-存在 8 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12707693)
+存在 7 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
 
 ## 视频详情页广告
 
@@ -32,21 +28,22 @@
 - [快照-1](https://i.gkd.li/import/12879372)
 - [快照-2](https://i.gkd.li/import/12882366)
 - [快照-3](https://i.gkd.li/import/12892871)
-- [快照-4](https://i.gkd.li/import/12868667)
-- [快照-5](https://i.gkd.li/import/12881946)
-- [快照-6](https://i.gkd.li/import/13295179)
-- [快照-7](https://i.gkd.li/import/12882132)
-- [快照-8](https://i.gkd.li/import/12901374)
-- [快照-9](https://i.gkd.li/import/12882166)
-- [快照-10](https://i.gkd.li/import/12882237)
-- [快照-11](https://i.gkd.li/import/13597068)
-- [快照-12](https://i.gkd.li/import/12882199)
-- [快照-13](https://i.gkd.li/import/12881911)
-- [快照-14](https://i.gkd.li/import/12892912)
-- [快照-15](https://i.gkd.li/import/12881976)
+- [快照-4](https://i.gkd.li/import/13799878)
+- [快照-5](https://i.gkd.li/import/12868667)
+- [快照-6](https://i.gkd.li/import/12881946)
+- [快照-7](https://i.gkd.li/import/13295179)
+- [快照-8](https://i.gkd.li/import/12882132)
+- [快照-9](https://i.gkd.li/import/12901374)
+- [快照-10](https://i.gkd.li/import/12882166)
+- [快照-11](https://i.gkd.li/import/12882237)
+- [快照-12](https://i.gkd.li/import/13597068)
+- [快照-13](https://i.gkd.li/import/12882199)
+- [快照-14](https://i.gkd.li/import/12881911)
+- [快照-15](https://i.gkd.li/import/12892912)
 - [快照-16](https://i.gkd.li/import/12881976)
-- [快照-17](https://i.gkd.li/import/13761275)
-- [快照-18](https://i.gkd.li/import/12879452)
+- [快照-17](https://i.gkd.li/import/12881976)
+- [快照-18](https://i.gkd.li/import/13761275)
+- [快照-19](https://i.gkd.li/import/12879452)
 
 ## 【下载页】广告卡片
 

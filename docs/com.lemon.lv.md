@@ -1,10 +1,6 @@
 # 剪映
 
-存在 2 规则组 - [com.lemon.lv](/src/apps/com.lemon.lv.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13229094)
+存在 1 规则组 - [com.lemon.lv](/src/apps/com.lemon.lv.ts)
 
 ## 导出界面底部广告
 

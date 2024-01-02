@@ -1,12 +1,6 @@
 # 微博轻享版
 
-存在 2 规则组 - [com.weico.international](/src/apps/com.weico.international.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12509123)
-- [快照-1](https://i.gkd.li/import/12510132)
-- [快照-2](https://i.gkd.li/import/12740537)
+存在 1 规则组 - [com.weico.international](/src/apps/com.weico.international.ts)
 
 ## 推荐流广告
 

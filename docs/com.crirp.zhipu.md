@@ -1,10 +1,6 @@
 # 智谱
 
-存在 3 规则组 - [com.crirp.zhipu](/src/apps/com.crirp.zhipu.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13725305)
+存在 2 规则组 - [com.crirp.zhipu](/src/apps/com.crirp.zhipu.ts)
 
 ## 首页-今日要闻-不再提示
 

@@ -1,10 +1,6 @@
 # 懂车帝
 
-存在 8 规则组 - [com.ss.android.auto](/src/apps/com.ss.android.auto.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12605327)
+存在 7 规则组 - [com.ss.android.auto](/src/apps/com.ss.android.auto.ts)
 
 ## 首页推荐卡片广告
 

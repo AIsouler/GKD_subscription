@@ -1,10 +1,6 @@
 # 乐校通
 
-存在 4 规则组 - [client.android.yixiaotong](/src/apps/client.android.yixiaotong.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13055542)
+存在 3 规则组 - [client.android.yixiaotong](/src/apps/client.android.yixiaotong.ts)
 
 ## 弹窗广告
 

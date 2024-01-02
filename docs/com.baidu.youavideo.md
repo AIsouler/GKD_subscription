@@ -1,11 +1,6 @@
 # 一刻相册
 
-存在 8 规则组 - [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12598507)
-- [快照-1](https://i.gkd.li/import/12597925)
+存在 7 规则组 - [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts)
 
 ## 软件升级提醒
 

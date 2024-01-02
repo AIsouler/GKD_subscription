@@ -1,8 +1,6 @@
 # 咪咕视频
 
-存在 6 规则组 - [com.cmcc.cmvideo](/src/apps/com.cmcc.cmvideo.ts)
-
-## 开屏广告
+存在 5 规则组 - [com.cmcc.cmvideo](/src/apps/com.cmcc.cmvideo.ts)
 
 ## 青少年模式弹窗
 

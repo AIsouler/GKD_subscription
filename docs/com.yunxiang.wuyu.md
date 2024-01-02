@@ -1,10 +1,6 @@
 # 特狗APP
 
-存在 3 规则组 - [com.yunxiang.wuyu](/src/apps/com.yunxiang.wuyu.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13455619)
+存在 2 规则组 - [com.yunxiang.wuyu](/src/apps/com.yunxiang.wuyu.ts)
 
 ## 公告弹窗
 

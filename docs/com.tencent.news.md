@@ -1,12 +1,6 @@
 # 腾讯新闻
 
-存在 4 规则组 - [com.tencent.news](/src/apps/com.tencent.news.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12755818)
-- [快照-1](https://i.gkd.li/import/12755896)
-- [快照-2](https://i.gkd.li/import/12755901)
+存在 3 规则组 - [com.tencent.news](/src/apps/com.tencent.news.ts)
 
 ## 信息流广告
 

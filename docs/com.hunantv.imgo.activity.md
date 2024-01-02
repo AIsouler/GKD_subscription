@@ -1,11 +1,6 @@
 # 芒果TV
 
-存在 5 规则组 - [com.hunantv.imgo.activity](/src/apps/com.hunantv.imgo.activity.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12472612)
-- [快照-1](https://i.gkd.li/import/13401943)
+存在 4 规则组 - [com.hunantv.imgo.activity](/src/apps/com.hunantv.imgo.activity.ts)
 
 ## 青少年模式弹窗
 

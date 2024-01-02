@@ -1,12 +1,6 @@
 # 掌上公交
 
-存在 6 规则组 - [com.mygolbs.mybus](/src/apps/com.mygolbs.mybus.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12745634)
-- [快照-1](https://i.gkd.li/import/12790377)
-- [快照-2](https://i.gkd.li/import/12790485)
+存在 5 规则组 - [com.mygolbs.mybus](/src/apps/com.mygolbs.mybus.ts)
 
 ## 广告卡片
 

@@ -1,11 +1,6 @@
 # 学小易
 
-存在 3 规则组 - [com.xuexiaoyi.xxy](/src/apps/com.xuexiaoyi.xxy.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12895001)
-- [快照-1](https://i.gkd.li/import/13266314)
+存在 2 规则组 - [com.xuexiaoyi.xxy](/src/apps/com.xuexiaoyi.xxy.ts)
 
 ## 首页-底部广告
 

@@ -1,11 +1,6 @@
 # 车来了
 
-存在 2 规则组 - [com.ygkj.chelaile.standard](/src/apps/com.ygkj.chelaile.standard.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13062992)
-- [快照-1](https://i.gkd.li/import/13225111)
+存在 1 规则组 - [com.ygkj.chelaile.standard](/src/apps/com.ygkj.chelaile.standard.ts)
 
 ## 卡片式广告
 

@@ -1,10 +1,6 @@
 # 中国广电
 
-存在 2 规则组 - [com.ai.obc.cbn.app](/src/apps/com.ai.obc.cbn.app.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/22029832/3d58f8d5-bb6a-464a-88f7-5a27c5e0854c)
+存在 1 规则组 - [com.ai.obc.cbn.app](/src/apps/com.ai.obc.cbn.app.ts)
 
 ## 版本弹窗
 

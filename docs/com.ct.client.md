@@ -1,11 +1,6 @@
 # 中国电信
 
-存在 6 规则组 - [com.ct.client](/src/apps/com.ct.client.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12508958)
-- [快照-1](https://i.gkd.li/import/12819736)
+存在 5 规则组 - [com.ct.client](/src/apps/com.ct.client.ts)
 
 ## 用户引导
 

@@ -1,10 +1,6 @@
 # 鲨鱼记账
 
-存在 2 规则组 - [com.shark.jizhang](/src/apps/com.shark.jizhang.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13192242)
+存在 1 规则组 - [com.shark.jizhang](/src/apps/com.shark.jizhang.ts)
 
 ## 新用户特惠广告
 

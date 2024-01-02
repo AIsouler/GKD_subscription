@@ -1,10 +1,6 @@
 # APKPure
 
-存在 5 规则组 - [com.apkpure.aegon](/src/apps/com.apkpure.aegon.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13466685)
+存在 4 规则组 - [com.apkpure.aegon](/src/apps/com.apkpure.aegon.ts)
 
 ## 热门推荐关闭
 

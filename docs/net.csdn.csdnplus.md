@@ -1,11 +1,6 @@
 # CSDN
 
-存在 5 规则组 - [net.csdn.csdnplus](/src/apps/net.csdn.csdnplus.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12673680)
-- [快照-1](https://i.gkd.li/import/13224627)
+存在 4 规则组 - [net.csdn.csdnplus](/src/apps/net.csdn.csdnplus.ts)
 
 ## 更新弹窗
 

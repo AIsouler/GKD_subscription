@@ -1,13 +1,6 @@
 # 大学搜题酱
 
-存在 8 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12867875)
-- [快照-1](https://i.gkd.li/import/12867970)
-- [快照-2](https://i.gkd.li/import/12881929)
-- [快照-3](https://i.gkd.li/import/13561976)
+存在 7 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
 
 ## 首页-推送通知
 

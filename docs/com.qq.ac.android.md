@@ -1,11 +1,6 @@
 # 腾讯动漫
 
-存在 3 规则组 - [com.qq.ac.android](/src/apps/com.qq.ac.android.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12707750)
-- [快照-1](https://i.gkd.li/import/13195632)
+存在 2 规则组 - [com.qq.ac.android](/src/apps/com.qq.ac.android.ts)
 
 ## 青少年模式弹窗
 

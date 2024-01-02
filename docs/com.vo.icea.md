@@ -1,11 +1,6 @@
 # 飞韵听书
 
-存在 3 规则组 - [com.vo.icea](/src/apps/com.vo.icea.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13445848)
-- [快照-1](https://i.gkd.li/import/13440325)
+存在 2 规则组 - [com.vo.icea](/src/apps/com.vo.icea.ts)
 
 ## 播放界面卡片式广告
 

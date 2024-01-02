@@ -1,10 +1,6 @@
 # 招商银行
 
-存在 3 规则组 - [cmb.pb](/src/apps/cmb.pb.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12706015)
+存在 2 规则组 - [cmb.pb](/src/apps/cmb.pb.ts)
 
 ## 朝朝宝-广告弹窗
 

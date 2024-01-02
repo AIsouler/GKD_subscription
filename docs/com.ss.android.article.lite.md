@@ -1,10 +1,6 @@
 # 头条搜索极速版
 
-存在 8 规则组 - [com.ss.android.article.lite](/src/apps/com.ss.android.article.lite.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13111705)
+存在 7 规则组 - [com.ss.android.article.lite](/src/apps/com.ss.android.article.lite.ts)
 
 ## 首页-红包弹窗
 

@@ -1,10 +1,6 @@
 # 斗鱼
 
-存在 4 规则组 - [air.tv.douyu.android](/src/apps/air.tv.douyu.android.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12893916)
+存在 3 规则组 - [air.tv.douyu.android](/src/apps/air.tv.douyu.android.ts)
 
 ## 青少年模式
 

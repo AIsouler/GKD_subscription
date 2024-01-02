@@ -1,10 +1,6 @@
 # 饿了么
 
-存在 8 规则组 - [me.ele](/src/apps/me.ele.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12534930)
+存在 7 规则组 - [me.ele](/src/apps/me.ele.ts)
 
 ## 版本更新
 

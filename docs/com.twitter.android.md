@@ -1,6 +1,6 @@
 # X(推特)
 
-存在 3 规则组 - [com.twitter.android](/src/apps/com.twitter.android.ts)
+存在 4 规则组 - [com.twitter.android](/src/apps/com.twitter.android.ts)
 
 ## 信息流广告-主页
 
@@ -36,3 +36,9 @@
 - [快照-2](https://i.gkd.li/import/12882676)
 - [快照-3](https://i.gkd.li/import/12904603)
 - [快照-4](https://i.gkd.li/import/12798810)
+
+## 评价弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13774150)

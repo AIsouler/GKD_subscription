@@ -8,6 +8,7 @@
 
 - [快照-0](https://i.gkd.li/import/12838034)
 - [快照-1](https://i.gkd.li/import/12840591)
+- [快照-2](https://i.gkd.li/import/13786867)
 
 ## 首页-广告弹窗
 

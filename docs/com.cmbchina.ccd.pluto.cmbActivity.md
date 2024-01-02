@@ -1,10 +1,6 @@
 # 掌上生活
 
-存在 5 规则组 - [com.cmbchina.ccd.pluto.cmbActivity](/src/apps/com.cmbchina.ccd.pluto.cmbActivity.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12647186)
+存在 4 规则组 - [com.cmbchina.ccd.pluto.cmbActivity](/src/apps/com.cmbchina.ccd.pluto.cmbActivity.ts)
 
 ## 版本更新
 

@@ -1,12 +1,6 @@
 # 喜马拉雅
 
-存在 14 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12506207)
-- [快照-1](https://i.gkd.li/import/12506273)
-- [快照-2](https://i.gkd.li/import/12877937)
+存在 13 规则组 - [com.ximalaya.ting.android](/src/apps/com.ximalaya.ting.android.ts)
 
 ## 首页右侧浮动广告
 

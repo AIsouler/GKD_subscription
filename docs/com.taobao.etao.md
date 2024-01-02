@@ -1,10 +1,6 @@
 # 一淘
 
-存在 4 规则组 - [com.taobao.etao](/src/apps/com.taobao.etao.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12727451)
+存在 3 规则组 - [com.taobao.etao](/src/apps/com.taobao.etao.ts)
 
 ## 更新弹窗
 

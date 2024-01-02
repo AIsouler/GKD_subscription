@@ -1,10 +1,6 @@
 # 华图在线
 
-存在 3 规则组 - [com.huatu.handheld_huatu](/src/apps/com.huatu.handheld_huatu.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12715734)
+存在 2 规则组 - [com.huatu.handheld_huatu](/src/apps/com.huatu.handheld_huatu.ts)
 
 ## 首页广告弹窗
 

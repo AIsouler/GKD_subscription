@@ -1,13 +1,6 @@
 # 百度地图
 
-存在 10 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12924598)
-- [快照-1](https://i.gkd.li/import/12909174)
-- [快照-2](https://i.gkd.li/import/12909201)
-- [快照-3](https://i.gkd.li/import/13074377)
+存在 9 规则组 - [com.baidu.BaiduMap](/src/apps/com.baidu.BaiduMap.ts)
 
 ## 地图上方黄页横幅
 

@@ -1,12 +1,6 @@
 # 志愿汇
 
-存在 2 规则组 - [com.zzw.october](/src/apps/com.zzw.october.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12842667)
-- [快照-1](https://i.gkd.li/import/12842724)
-- [快照-2](https://i.gkd.li/import/13160835)
+存在 1 规则组 - [com.zzw.october](/src/apps/com.zzw.october.ts)
 
 ## 主页广告
 

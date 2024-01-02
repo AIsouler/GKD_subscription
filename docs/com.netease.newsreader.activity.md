@@ -1,10 +1,6 @@
 # 网易新闻
 
-存在 5 规则组 - [com.netease.newsreader.activity](/src/apps/com.netease.newsreader.activity.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12639864)
+存在 4 规则组 - [com.netease.newsreader.activity](/src/apps/com.netease.newsreader.activity.ts)
 
 ## 版本更新弹窗
 

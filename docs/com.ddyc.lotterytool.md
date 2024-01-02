@@ -1,10 +1,6 @@
 # 彩虹多多
 
-存在 3 规则组 - [com.ddyc.lotterytool](/src/apps/com.ddyc.lotterytool.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13324556)
+存在 2 规则组 - [com.ddyc.lotterytool](/src/apps/com.ddyc.lotterytool.ts)
 
 ## 广告弹窗
 

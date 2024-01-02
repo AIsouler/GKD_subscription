@@ -1,10 +1,6 @@
 # 什么值得买
 
-存在 5 规则组 - [com.smzdm.client.android](/src/apps/com.smzdm.client.android.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12535072)
+存在 4 规则组 - [com.smzdm.client.android](/src/apps/com.smzdm.client.android.ts)
 
 ## APP内弹窗广告
 
