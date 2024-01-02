@@ -37,11 +37,13 @@ export default defineAppConfig({
           activityIds: [
             'com.qq.e.ads.PortraitADActivity',
             'com.gentle.ppcat.MainActivity',
+            'com.hihonor.android.launcher.drawer.DrawerLauncher',
           ],
           matches: '[desc="关闭喵"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12777059',
             'https://i.gkd.li/import/12777054', // activityId: 'com.gentle.ppcat.MainActivity'
+            'https://i.gkd.li/import/13797494', // activityId: 'com.hihonor.android.launcher.drawer.DrawerLauncher'
           ],
         },
       ],
