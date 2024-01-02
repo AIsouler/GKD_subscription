@@ -13,7 +13,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳过"]',
+      rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳"]',
       snapshotUrls: 'https://i.gkd.li/import/12705270',
     },
     {
