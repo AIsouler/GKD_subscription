@@ -53,5 +53,13 @@ export default defineAppConfig({
         '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/import/13628364',
     },
+    {
+      key: 3,
+      name: '满意度打分弹窗',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: '[text*="满意度打几分"] + ImageView',
+      snapshotUrls: 'https://i.gkd.li/import/13804561',
+    },
   ],
 });
