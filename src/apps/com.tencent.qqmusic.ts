@@ -37,8 +37,11 @@ export default defineAppConfig({
       rules: [
         {
           key: 2,
-          matches: '[text="广告"] + * + [desc="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/13206534',
+          matches: '[text="广告"] +n [desc="关闭"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13206534', //歌单页
+            'https://i.gkd.li/import/13797001', //我的页
+          ],
         },
         {
           key: 3,
