@@ -5,14 +5,33 @@ export default defineAppConfig({
   name: '手机电视高清直播',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: '[id="com.byted.pangle.m:id/tt_splash_skip_btn"]',
+      snapshotUrls: 'https://i.gkd.li/import/13766517',
+    },
+    {
       key: 3,
       name: '弹窗广告',
       rules: [
         {
+          key: 0,
+          name: '字节SDK',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '@Image[text.length=0] < View -n [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/import/13739951',
+        },
+        {
+          key: 1,
+          name: '腾讯SDK',
+          activityIds: 'com.tvmain.mvp.view.activity.TvMainActivity',
+          matches: '@ImageView < FrameLayout <n FrameLayout + TextView',
+          snapshotUrls: 'https://i.gkd.li/import/13766516',
         },
       ],
     },
