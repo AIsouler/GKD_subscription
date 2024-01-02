@@ -54,6 +54,12 @@ export default defineAppConfig({
             '[id="com.huawei.android.totemweather:id/ad_cancel"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13521221',
         },
+        {
+          key: 3,
+          activityIds: 'com.huawei.android.totemweather.WeatherHome',
+          matches: '[id="com.huawei.android.totemweather:id/ad_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/13787501',
+        },
       ],
     },
   ],
