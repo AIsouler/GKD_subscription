@@ -39,10 +39,12 @@ export default defineAppConfig({
       name: '更新弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules:
-        '@[text="暂不升级"] - LinearLayout > FrameLayout > [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/12700486',
+        '[text^="有新版本"] + FrameLayout + LinearLayout + [text="暂不升级"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12700486',
+        'https://i.gkd.li/import/13799951',
+      ],
     },
     {
       key: 3,
