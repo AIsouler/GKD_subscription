@@ -139,5 +139,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '评价弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      enable: false,
+      rules: [
+        {
+          activityIds: 'com.twitter.app.main.MainActivity',
+          matches: '[id="com.twitter.android:id/app_rating_button_never"]',
+          snapshotUrls: 'https://i.gkd.li/import/13774150',
+        },
+      ],
+    },
   ],
 });
