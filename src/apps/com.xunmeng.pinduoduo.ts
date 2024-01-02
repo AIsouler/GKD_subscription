@@ -142,8 +142,12 @@ export default defineAppConfig({
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
       rules: [
         '@ImageView[id=null] < ViewGroup < ViewGroup +(2) ViewGroup >(n) [text^="每日签到"]',
+        'ViewGroup[childCount=5] > @ViewGroup[index=0][clickable=true] +3 ViewGroup >2 [text="分享现金红包至拼小圈"]',
       ],
-      snapshotUrls: ['https://i.gkd.li/import/12700615'],
+      snapshotUrls: [
+        'https://i.gkd.li/import/12700615',
+        'https://i.gkd.li/import/13804657', //规则2
+      ],
     },
     {
       enable: false,
