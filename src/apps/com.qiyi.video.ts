@@ -5,6 +5,19 @@ export default defineAppConfig({
   name: '爱奇艺',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '@LinearLayout > [text="关闭"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13160866',
+        'https://i.gkd.li/import/13379565',
+      ],
+    },
+    {
       key: 1,
       name: '青少年弹窗',
       quickFind: true,

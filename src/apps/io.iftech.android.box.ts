@@ -1,4 +1,3 @@
-import { machine } from 'os';
 import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
