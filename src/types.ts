@@ -269,6 +269,16 @@ type RawGlobalRuleProps = {
    * false => 仅匹配 apps 里面的 app
    */
   matchAnyApp?: boolean;
+
+  /**
+   * 默认值: `false`
+   *
+   * 是否匹配桌面, 仅全局规则可用
+   *
+   * 如果你切换了桌面, 你需要打开 GKD 的界面触发识别新桌面
+   */
+  matchLauncher?: boolean;
+
   apps?: RawGlobalApp[];
 };
 
