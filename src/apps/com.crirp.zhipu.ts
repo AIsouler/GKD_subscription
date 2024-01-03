@@ -3,8 +3,22 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.crirp.zhipu',
   name: '智谱',
-  deprecatedKeys: [1],
   groups: [
+    {
+      name: '开屏广告',
+      key: 1,
+      enable: true,
+      matchTime: 10000,
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[text="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/13725305',
+        },
+      ],
+    },
     {
       name: '首页-今日要闻-不再提示',
       key: 2,
