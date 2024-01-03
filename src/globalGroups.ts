@@ -3,16 +3,20 @@ import type { RawGlobalGroup } from './types';
 
 const diabledAppIds = [
   'com.android.systemui',
+  'com.android.settings',
+
+  // miui 锁屏应用
   'com.miui.aod',
 
   // 在桌面禁用
   'com.miui.home',
-  'com.android.launcher.Launcher',
+  'com.android.launcher',
   'com.bbk.launcher2.Launcher',
   'com.huawei.android.launcher.unihome.UniHomeLauncher',
 
   // 在一些常见的应用中禁用
   'com.tencent.mm',
+  'li.songe.gkd',
 ];
 
 // 如果应用规则已有开屏广告一类的规则, 则在全局规则禁用此应用
