@@ -8,15 +8,14 @@ const diabledAppIds = [
   // miui 锁屏应用
   'com.miui.aod',
 
-  // 在桌面禁用
-  'com.miui.home',
-  'com.android.launcher',
-  'com.bbk.launcher2.Launcher',
-  'com.huawei.android.launcher.unihome.UniHomeLauncher',
-
   // 在一些常见的应用中禁用
   'com.tencent.mm',
   'li.songe.gkd',
+
+  // https://github.com/gkd-kit/gkd/issues/451
+  'mark.via',
+  'com.mycompany.app.soulbrowser',
+  'com.mmbox.xbrowser',
 ];
 
 // 如果应用规则已有开屏广告一类的规则, 则在全局规则禁用此应用
