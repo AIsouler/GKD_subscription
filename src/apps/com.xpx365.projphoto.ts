@@ -5,6 +5,24 @@ export default defineAppConfig({
   name: '工程相机',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      actionCdKey: 0,
+      actionMaximumKey: 0,
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@View <2 FrameLayout <2 FrameLayout < [vid="splash_container"]',
+          snapshotUrls: 'https://i.gkd.li/import/13827755',
+        },
+      ],
+    },
+    {
       key: 6,
       name: '广告弹窗',
       matchTime: 10000,
