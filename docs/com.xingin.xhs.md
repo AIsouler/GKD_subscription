@@ -17,6 +17,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13246890)
+- [快照-1](https://i.gkd.li/import/13741680)
 
 ## 信息流广告
 
