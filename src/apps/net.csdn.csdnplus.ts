@@ -5,6 +5,31 @@ export default defineAppConfig({
   name: 'CSDN',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: ['https://i.gkd.li/import/12673680'],
+        },
+        {
+          quickFind: true,
+          matches:
+            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid="fl_third_ad"]',
+          snapshotUrls: 'https://i.gkd.li/import/13826577',
+        },
+        {
+          // 无法使用 quickFind
+          matches: '[id$="tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/13224627',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '更新弹窗',
       quickFind: true,
