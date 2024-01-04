@@ -40,10 +40,20 @@ export default defineAppConfig({
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
-      activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',
-      rules:
-        '@ImageView[clickable=true] <2 FrameLayout < LinearLayout >2 [text="立即安装"]',
-      snapshotUrls: 'https://i.gkd.li/import/13246890',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@ImageView[clickable=true] <2 FrameLayout +3 FrameLayout > Button[text="立即安装"]',
+          snapshotUrls: 'https://i.gkd.li/import/13246890',
+        },
+        {
+          actionMaximumKey: 0,
+          matches:
+            '@ImageView[clickable=true] <2 FrameLayout +3 FrameLayout > Button[text="立即参与内测"]',
+          snapshotUrls: 'https://i.gkd.li/import/13741680',
+        },
+      ],
     },
     {
       enable: false,
