@@ -2,14 +2,14 @@ import apps from './rawApps';
 import type { RawGlobalGroup } from './types';
 
 const diabledAppIds = [
-  'com.android.systemui',
-  'com.android.settings',
+  'com.android.systemui', // 通知栏界面
+  'com.android.settings', // 系统设置
 
-  // miui 锁屏应用
-  'com.miui.aod',
+  'com.miui.aod', // miui 锁屏界面
+  'miui.systemui.plugin', // miui 状态栏界面
 
   // 在一些常见的应用中禁用
-  'com.tencent.mm',
+  'com.tencent.mm', // 微信
   'li.songe.gkd',
 
   // https://github.com/gkd-kit/gkd/issues/451
