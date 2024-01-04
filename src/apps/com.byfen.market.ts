@@ -23,5 +23,12 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 1,
+      name: '弹窗广告',
+      quickFind: true,
+      rules: '[id="com.byfen.market:id/idIvClose"]',
+      snapshotUrls: 'https://i.gkd.li/import/13801613',
+    },
   ],
 });
