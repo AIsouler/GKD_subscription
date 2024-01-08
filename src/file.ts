@@ -189,8 +189,12 @@ export const checkConfig = (newConfig: RawSubscription) => {
     app.groups?.forEach((g) => {
       const oldGroup = oldGroups.find((og) => og.key == g.key);
       if (!oldGroup || !_.isEqual(oldGroup, g)) {
-        // 检查新增/变动的规则组是否能被分类捕获
-        if (!categories.some((c) => g.name.startsWith(c.name))) {
+        // 检查新增/变动的规则组是否能被分类
+        if (
+          !categories.some(
+            (c) => g.name == c.name || g.name.startsWith(c.name + '-'),
+          )
+        ) {
           console.error({
             configName: newConfig.name,
             appId: app.id,
@@ -200,7 +204,10 @@ export const checkConfig = (newConfig: RawSubscription) => {
             categories: categories.map((c) => c.name),
           });
           throw new Error(
-            'invalid group name, it must startsWith any category',
+            [
+              'invalid group name, it must equal any category name or startWith categoryName + "-".',
+              'example: "开屏广告" or "分段广告-朋友圈"',
+            ].join('\n'),
           );
         }
       }
