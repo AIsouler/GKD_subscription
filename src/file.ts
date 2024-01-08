@@ -58,13 +58,12 @@ const pkg: typeof PkgT = JSON.parse(
 );
 const pkgKeys = Object.keys(pkg);
 
+const gkdFp = process.cwd() + '/dist/gkd.json5';
+const versionFp = process.cwd() + '/dist/gkd.version.json';
+const oldConfig: RawSubscription = JSON5.parse(
+  await fs.readFile(gkdFp, 'utf-8').catch(() => '{}'),
+);
 export const writeConfig = async (config: RawSubscription) => {
-  const gkdFp = process.cwd() + '/dist/gkd.json5';
-  const versionFp = process.cwd() + '/dist/gkd.version.json';
-  const oldConfig: RawSubscription = JSON5.parse(
-    await fs.readFile(gkdFp, 'utf-8').catch(() => '{}'),
-  );
-
   const newConfig: RawSubscription = {
     ...config,
     version: oldConfig.version || 0,
@@ -186,7 +185,26 @@ export const checkConfig = (newConfig: RawSubscription) => {
   apps.forEach((app) => {
     const deprecatedKeys = app.deprecatedKeys || [];
     const keys = new Set<number>();
+    const oldGroups = oldConfig.apps?.find((a) => a.id == app.id)?.groups || [];
     app.groups?.forEach((g) => {
+      const oldGroup = oldGroups.find((og) => og.key == g.key);
+      if (!oldGroup || !_.isEqual(oldGroup, g)) {
+        // 检查新增/变动的规则组是否能被分类捕获
+        if (!categories.some((c) => g.name.startsWith(c.name))) {
+          console.error({
+            configName: newConfig.name,
+            appId: app.id,
+            appName: app.name,
+            groupName: g.name,
+            groupKey: g.key,
+            categories: categories.map((c) => c.name),
+          });
+          throw new Error(
+            'invalid group name, it must startsWith any category',
+          );
+        }
+      }
+
       if (deprecatedKeys.includes(g.key)) {
         console.error({
           configName: newConfig.name,

@@ -42,6 +42,11 @@ const categories: RawCategory[] = [
     // 如微信朋友圈广告/酷安帖子广告/贴吧帖子广告
     // 需要分阶段多步操作才能关闭, 会造成屏幕略微闪烁, 稍微影响用户体验
   },
+  {
+    key: 9,
+    name: '功能类',
+    // 非广告, 点击某些功能按钮
+  },
 ];
 
 export default categories;
