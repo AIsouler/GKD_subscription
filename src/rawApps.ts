@@ -8,6 +8,9 @@ import type { RawApp } from './types';
 
 const rawApps: RawApp[] = [];
 for await (const tsFp of walk(process.cwd() + '/src/apps')) {
+  if (!tsFp.endsWith('.ts')) {
+    throw new Error('invalid typescript app config file: ' + tsFp);
+  }
   const mod: { default: RawApp } = await import(url.pathToFileURL(tsFp).href);
   const appConfig = mod.default;
   if (path.basename(tsFp, '.ts') != appConfig.id) {
