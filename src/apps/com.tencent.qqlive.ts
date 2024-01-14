@@ -14,7 +14,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          action: 'clickCenter', //反馈测试clickNode点击无效
           matches: 'TextView[text*="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/import/12700227',
