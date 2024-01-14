@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告',
       rules: [
         {
           key: 0,
@@ -59,6 +59,14 @@ export default defineAppConfig({
           quickFind: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/12893450',
+        },
+        {
+          key: 2,
+          name: '抽奖机会-弹窗广告',
+          activityIds: 'com.youdao.dict.activity.DictSplashActivity',
+          quickFind: true,
+          matches: '[vid="skip_bottom_view"]',
+          snapshotUrls: 'https://i.gkd.li/import/13931202',
         },
       ],
     },
