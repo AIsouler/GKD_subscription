@@ -201,6 +201,17 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 6,
+      name: '全屏广告-首页-广告弹窗',
+      resetMatch: 'app',
+      actionMaximum: 1,
+      quickFind: true,
+      activityIds: 'com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity',
+      rules:
+        '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
+      snapshotUrls: 'https://i.gkd.li/import/13842643',
+    },
+    {
       enable: false,
       key: 20,
       name: '请求通知权限弹窗',
