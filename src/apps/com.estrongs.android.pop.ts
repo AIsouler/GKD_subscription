@@ -38,6 +38,11 @@ export default defineAppConfig({
             '@[id="com.estrongs.android.pop:id/close"] + [id^="com.estrongs.android.pop:id/ad_flag_source"]',
           snapshotUrls: ['https://i.gkd.li/import/12818281'],
         },
+        {
+          key: 2,
+          matches: '[vid="close_b_t_a_i_b_no_compliance"]',
+          snapshotUrls: 'https://i.gkd.li/import/13842299',
+        },
       ],
     },
   ],
