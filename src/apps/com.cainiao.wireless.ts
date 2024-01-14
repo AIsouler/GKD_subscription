@@ -69,5 +69,15 @@ export default defineAppConfig({
       rules: '@[text="取消"] + [text="好评"]',
       snapshotUrls: 'https://i.gkd.li/import/13692761',
     },
+    {
+      key: 7,
+      name: '首页-今日手气红包',
+      desc: '点击右上角X',
+      quickFind: true,
+      activityIds:
+        'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+      rules: '[vid="dialog_full_image_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13842492',
+    },
   ],
 });
