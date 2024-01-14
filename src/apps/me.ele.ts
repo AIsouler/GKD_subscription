@@ -143,5 +143,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      quickFind: true,
+      name: '通知提示-获取订单信息通知',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'me.ele.message.ui.PushMessageGuideActivity',
+          matches:
+            '@View[visibleToUser=true] < * <2 [id="me.ele:id/frame_bottom_bg"]',
+          snapshotUrls: 'https://i.gkd.li/import/13931205',
+        },
+      ],
+    },
   ],
 });
