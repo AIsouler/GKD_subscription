@@ -7,13 +7,14 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '卡片式广告',
+      name: '局部广告',
       rules: [
         {
           key: 0,
           activityIds: [
             'com.babycloud.hanju.ui.activity.HanjuSeriesActivity',
             'com.babycloud.hanju.ui.activity.HanjuHomeActivity',
+            'com.babycloud.hanju.search.activity.SearchActivity',
           ],
           quickFind: true,
           matches:
@@ -21,6 +22,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13628282',
             'https://i.gkd.li/import/13670721',
+            'https://i.gkd.li/import/13849929',
           ],
         },
       ],
