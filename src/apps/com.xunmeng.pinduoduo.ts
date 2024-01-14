@@ -218,5 +218,18 @@ export default defineAppConfig({
         'https://i.gkd.li/import/13925380', // checked=true
       ],
     },
+    {
+      key: 12,
+      quickFind: true,
+      name: '全屏广告-下单成功邀请好友弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
+          matches: '[id="com.xunmeng.pinduoduo:id/pdd"] >7 [text="关闭弹窗"]',
+          snapshotUrls: 'https://i.gkd.li/import/13927594',
+        },
+      ],
+    },
   ],
 });
