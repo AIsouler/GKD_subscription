@@ -254,7 +254,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 12,
-      name: '贴吧内签到并关闭弹窗',
+      name: '功能类-贴吧内签到并关闭弹窗',
       resetMatch: 'activity',
       rules: [
         {

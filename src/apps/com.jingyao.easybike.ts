@@ -83,7 +83,7 @@ export default defineAppConfig({
     {
       key: 15,
       quickFind: true,
-      name: '新人教学弹窗',
+      name: '功能类-新人教学弹窗',
       desc: '点击跳过',
       activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],
       rules:

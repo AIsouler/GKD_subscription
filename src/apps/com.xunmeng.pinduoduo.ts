@@ -113,7 +113,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: '多多买菜抽奖弹窗',
+      name: '全屏广告-多多买菜抽奖弹窗',
       activityIds: ['com.xunmeng.pinduoduo.activity.NewPageActivity'],
       rules: [
         'View[childCount=1] > Button[id=null][text="关闭弹窗"][clickable=true]',

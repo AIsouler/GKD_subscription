@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '内部弹窗广告',
+      name: '全屏广告',
       rules: [
         {
           activityIds: 'com.fighter.loader.view.InteractTemplateAdDialog',
@@ -23,8 +23,9 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '主页广告卡片',
+      name: '局部广告',
       activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+      quickFind: true,
       rules: [
         {
           key: 0,
@@ -35,7 +36,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches:
-            '@[id="com.estrongs.android.pop:id/close"] + [id^="com.estrongs.android.pop:id/ad_flag_source"]',
+            '@[id="com.estrongs.android.pop:id/close"] + [id="com.estrongs.android.pop:id/ad_flag_source"]',
           snapshotUrls: ['https://i.gkd.li/import/12818281'],
         },
         {

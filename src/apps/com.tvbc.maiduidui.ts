@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '青少年弹窗',
+      name: '青少年模式',
       quickFind: true,
       activityIds: 'com.tvbc.maiduidui.MainHomeActivity',
       matchTime: 10000,

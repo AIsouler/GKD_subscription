@@ -26,6 +26,10 @@ const categories: RawCategory[] = [
     name: '定位提示',
   },
   {
+    key: -1,
+    name: '权限提示',
+  },
+  {
     key: 6,
     name: '局部广告',
     // 不影响使用的广告, 所有的广告卡片及悬浮广告按钮

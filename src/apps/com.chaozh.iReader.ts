@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '权限弹窗',
+      name: '权限提示',
       quickFind: true,
       matchTime: 10000,
       rules: [
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '通知弹窗',
+      name: '通知提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
