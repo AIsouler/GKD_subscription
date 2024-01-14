@@ -53,5 +53,19 @@ export default defineAppConfig({
         '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme.lite:id/close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13650523',
     },
+    {
+      key: 9,
+      quickFind: true,
+      name: '通知提示-消息提醒弹窗',
+      desc: '点击暂不开启',
+      rules: [
+        {
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '[id="com.ss.android.ugc.aweme.lite:id/gl7"] > [id="com.ss.android.ugc.aweme.lite:id/h5q"]',
+          snapshotUrls: 'https://i.gkd.li/import/13888485',
+        },
+      ],
+    },
   ],
 });
