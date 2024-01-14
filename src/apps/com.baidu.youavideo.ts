@@ -90,5 +90,12 @@ export default defineAppConfig({
         '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13711475',
     },
+    {
+      key: 9,
+      name: '局部广告-广告卡片',
+      quickFind: true,
+      rules: '[vid="iv_close"][visibleToUser=true]',
+      snapshotUrls: 'https://i.gkd.li/import/13874124',
+    },
   ],
 });
