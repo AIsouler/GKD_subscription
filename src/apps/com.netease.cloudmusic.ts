@@ -251,5 +251,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 11,
+      quickFind: true,
+      name: '全屏广告-播放页赞赏好音乐弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
+          matches: '@ImageView[clickable=true] +3 * > [text="立即支持"]',
+          snapshotUrls: 'https://i.gkd.li/import/13848913',
+        },
+      ],
+    },
   ],
 });
