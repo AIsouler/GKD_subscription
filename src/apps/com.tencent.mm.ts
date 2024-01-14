@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 0,
-      name: '朋友圈广告',
+      name: '分段广告-朋友圈广告',
       desc: '点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭',
       quickFind: true,
       activityIds: [
@@ -51,17 +51,19 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 3,
-          name: '对这条广告不感兴趣-点击[关闭该广告]',
-          matches:
-            'TextView[text="你可以这样优化广告推荐"] + TextView[text="关闭该广告"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12907642',
+          name: '广告反馈-点击[关闭该广告]',
+          matches: 'TextView[text^="关闭"][text$="广告"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12907642',
+            'https://i.gkd.li/import/13926578',
+          ],
         },
       ],
     },
     {
       enable: false,
       key: 12,
-      name: '朋友圈广告-英文版',
+      name: '分段广告-朋友圈广告[英文]',
       desc: '点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭',
       activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
       quickFind: true,
@@ -94,7 +96,7 @@ export default defineAppConfig({
     },
     {
       key: 20,
-      name: '朋友圈广告-繁体',
+      name: '分段广告-朋友圈广告[繁体]',
       desc: '点击广告卡片右上角[廣告],出现菜单点击[關閉此廣告],确认关闭',
       activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
       quickFind: true,
@@ -119,7 +121,7 @@ export default defineAppConfig({
       // Key1,2,3,4,11 均为授权类的规则
       enable: false,
       key: 1,
-      name: '电脑微信快捷自动登录',
+      name: '功能类-电脑微信快捷自动登录',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -137,7 +139,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '浏览器扫码微信登录自动授权',
+      name: '功能类-浏览器扫码微信登录自动授权',
       desc: '自动允许使用头像昵称等',
       quickFind: true,
       matchTime: 10000,
@@ -153,7 +155,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '第三方APP申请使用授权弹窗',
+      name: '功能类-第三方APP申请使用授权弹窗',
       desc: '自动点击允许,但由于此界面可以额外新建昵称头像,默认不启用',
       quickFind: true,
       matchTime: 10000,
@@ -166,7 +168,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '微信读书网页版扫码登录自动授权',
+      name: '功能类-微信读书网页版扫码登录自动授权',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -189,7 +191,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: '微信红包自动领取',
+      name: '功能类-微信红包自动领取',
       desc: '自动领取私聊红包,群聊红包',
       exampleUrls:
         'https://github.com/gkd-kit/subscription/assets/38517192/32cfda78-b2e1-456c-8d85-bfb2bc4683aa',
@@ -229,7 +231,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '订阅号文章广告',
+      name: '分段广告-订阅号文章广告',
       desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则',
       activityIds: [
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
@@ -265,7 +267,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '自动选中发送原图',
+      name: '功能类-自动选中发送原图',
       desc: '图片和视频选择器-自动选中底部中间的发送原图',
       quickFind: true,
       activityIds: [
@@ -287,7 +289,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 8,
-      name: '订阅号文章广告反馈',
+      name: '分段广告-订阅号文章广告反馈',
       desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
@@ -323,7 +325,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '自动查看原图',
+      name: '功能类-自动查看原图',
       desc: '自动点击底部左侧[查看原图（*M）]按钮',
       quickFind: true,
       activityIds: 'com.tencent.mm.ui.chatting.gallery.ImageGalleryUI',
@@ -332,7 +334,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '微信小程序-开屏广告',
+      name: '全屏广告-微信小程序-开屏广告',
       quickFind: true,
       matchTime: 10000,
       // actionMaximum: 1, // 经常需要点2次，首次点击过早大概率跳不过
@@ -363,7 +365,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '网页版文件传输助手扫码自动授权',
+      name: '功能类-网页版文件传输助手扫码自动授权',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -375,7 +377,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 13,
-      name: '提瓦特助手小程序-弹窗广告',
+      name: '全屏广告-提瓦特助手小程序-弹窗广告',
       activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
       rules: [
         {
@@ -399,7 +401,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 14,
-      name: '小程序-内部广告',
+      name: '分段广告-小程序-内部广告',
       activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
       quickFind: true,
       rules: [
@@ -440,26 +442,20 @@ export default defineAppConfig({
     {
       enable: false,
       key: 16,
-      name: '小程序-京东购物',
+      name: '全屏广告-小程序-京东购物',
       desc: '低价包邮广告',
       actionDelay: 500,
       actionMaximum: 1,
-      activityIds: [
-        'com.tencent.mm.plugin.appbrand.ui.AppBrandUI01',
-        'com.tencent.mm.plugin.appbrand.ui.AppBrandUI00',
-      ],
+      activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
       rules: {
         matches: '@Image -n * > View[text="可横向滚动"]',
         action: 'clickCenter',
-        snapshotUrls: [
-          'https://i.gkd.li/import/13298294', //com.tencent.mm.plugin.appbrand.ui.AppBrandUI01
-          'https://i.gkd.li/import/13327022', //com.tencent.mm.plugin.appbrand.ui.AppBrandUI00
-        ],
+        snapshotUrls: ['https://i.gkd.li/import/13298294'],
       },
     },
     {
       key: 17,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -476,7 +472,7 @@ export default defineAppConfig({
     },
     {
       key: 18,
-      name: '青少年模式自动点击验证密码',
+      name: '功能类-青少年模式自动点击验证密码',
       desc: '点击“验证密码”以申请临时访问',
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -499,7 +495,7 @@ export default defineAppConfig({
     },
     {
       key: 19,
-      name: '订阅号-展开更早的消息',
+      name: '功能类-订阅号-展开更早的消息',
       rules: [
         {
           key: 0,
