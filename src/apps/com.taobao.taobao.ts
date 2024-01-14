@@ -190,7 +190,7 @@ export default defineAppConfig({
     },
     {
       key: 16,
-      name: '花呗升级报送征信',
+      name: '全屏广告-花呗升级报送征信',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -209,6 +209,13 @@ export default defineAppConfig({
           matches:
             '[text="根据相关法律法规要求，请尽快完成花呗升级"] <<n FrameLayout FrameLayout @[text="关闭"]',
           snapshotUrls: 'https://i.gkd.li/import/13691864',
+        },
+        {
+          key: 2,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches:
+            '[id="com.taobao.taobao:id/flybird_userinfo"] + * [text="暂不升级，继续付款"]',
+          snapshotUrls: 'https://i.gkd.li/import/13898735',
         },
       ],
     },
