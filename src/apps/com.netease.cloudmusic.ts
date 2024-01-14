@@ -35,7 +35,26 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: 0,
+          key: 1,
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '[vid="tag_ad_banner"]',
+          snapshotUrls: 'https://i.gkd.li/import/13927753',
+        },
+        {
+          key: 2,
+          name: '信息流广告-评论区内容推荐', // 考虑位置是否移出
+          activityIds:
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
+          matches:
+            '@ViewGroup[clickable=true][childCount=2] > ImageView - ViewGroup > TextView[text.length>0]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13526986',
+            'https://i.gkd.li/import/13526711',
+          ],
+        },
+        {
+          preKeys: [0, 1],
+          key: 90,
           activityIds: [
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
@@ -49,19 +68,8 @@ export default defineAppConfig({
           ],
         },
         {
-          key: 3,
-          name: '信息流广告-评论区内容推荐', // 考虑位置是否移出
-          activityIds:
-            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
-          matches:
-            '@ViewGroup[clickable=true][childCount=2] > ImageView - ViewGroup > TextView[text.length>0]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13526986',
-            'https://i.gkd.li/import/13526711',
-          ],
-        },
-        {
-          preKeys: 3,
+          preKeys: 2,
+          key: 91,
           activityIds:
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
           matches:
