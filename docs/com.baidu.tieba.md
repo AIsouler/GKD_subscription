@@ -1,6 +1,6 @@
 # 百度贴吧
 
-存在 9 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
+存在 10 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
 
 ## 开屏广告
 
@@ -80,3 +80,10 @@
 
 - [快照-0](https://i.gkd.li/import/13322337)
 - [快照-1](https://i.gkd.li/import/13328738)
+
+## 功能类-贴吧内签到并关闭弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13776801)
+- [快照-1](https://i.gkd.li/import/13776424)

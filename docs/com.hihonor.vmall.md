@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.hihonor.vmall](/src/apps/com.hihonor.vmall.ts)
 
-## 应用内广告弹窗
+## 全屏广告-应用内广告弹窗
 
 默认禁用
 

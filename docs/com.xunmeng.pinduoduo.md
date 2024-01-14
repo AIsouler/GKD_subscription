@@ -1,6 +1,6 @@
 # 拼多多
 
-存在 10 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 12 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 更新弹窗
 
@@ -33,7 +33,7 @@
 - [快照-1](https://i.gkd.li/import/13625441)
 - [快照-2](https://i.gkd.li/import/13669963)
 
-## 多多买菜抽奖弹窗
+## 全屏广告-多多买菜抽奖弹窗
 
 默认禁用
 
@@ -72,3 +72,16 @@
 
 - [快照-0](https://i.gkd.li/import/13446291)
 - [快照-1](https://i.gkd.li/import/13791119)
+
+## 功能类-自动点击原图
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13925378)
+- [快照-1](https://i.gkd.li/import/13925380)
+
+## 全屏广告-下单成功邀请好友弹窗
+
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/13927594)

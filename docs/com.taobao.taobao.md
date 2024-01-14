@@ -83,9 +83,10 @@
 
 - [快照-0](https://i.gkd.li/import/13588165)
 
-## 花呗升级报送征信
+## 全屏广告-花呗升级报送征信
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13628020)
 - [快照-1](https://i.gkd.li/import/13691864)
+- [快照-2](https://i.gkd.li/import/13898735)

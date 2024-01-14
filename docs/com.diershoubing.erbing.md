@@ -7,9 +7,13 @@
 - [快照-0](https://i.gkd.li/import/13378853)
 - [快照-1](https://i.gkd.li/import/13546165)
 - [快照-2](https://i.gkd.li/import/13538207)
+- [快照-3](https://i.gkd.li/import/13857307)
 
-## 签到弹窗
+## 分段广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13378845)
+- [示例-0](https://m.gkd.li/47232102/5498dc61-9f29-42c6-a75b-ac8471e48328)
+
+- [快照-0](https://i.gkd.li/import/13868396)
+- [快照-1](https://i.gkd.li/import/13868401)
