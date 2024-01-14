@@ -40,5 +40,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      quickFind: true,
+      name: '局部广告-首页右下角卡片悬浮窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+          matches: '[id="com.sinovatech.unicom.ui:id/home_xuanfu_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13930543',
+        },
+      ],
+    },
   ],
 });
