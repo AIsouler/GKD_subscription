@@ -115,5 +115,20 @@ export default defineAppConfig({
       rules: 'View[desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13606901',
     },
+    {
+      key: 13,
+      quickFind: true,
+      name: '全屏广告-红包弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds:
+            'com.qidian.QDReader.ui.activity.hongbao_square.NewHongBaoSquareActivity',
+          matches:
+            '[id="com.qidian.QDReader:id/rootView"] > [id="com.qidian.QDReader:id/btnHongbaoClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/13918466',
+        },
+      ],
+    },
   ],
 });
