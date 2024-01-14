@@ -80,5 +80,15 @@ export default defineAppConfig({
       rules: '[desc="去使用"] + Button[text=null][visibleToUser=true]',
       snapshotUrls: ['https://i.gkd.li/import/12739316'],
     },
+    {
+      key: 15,
+      quickFind: true,
+      name: '新人教学弹窗',
+      desc: '点击跳过',
+      activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],
+      rules:
+        '@View[text="跳过"] <2 View <2 View <<n FrameLayout[id="com.jingyao.easybike:id/h5_pc_container"]',
+      snapshotUrls: ['https://i.gkd.li/import/13837543'],
+    },
   ],
 });
