@@ -57,7 +57,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '好友动态-广告卡片',
+      name: '分段广告-好友动态-广告卡片',
       rules: [
         {
           key: 0,
@@ -360,12 +360,10 @@ export default defineAppConfig({
     {
       enable: false,
       key: 18,
-      name: '消息页面-顶部更新提示',
+      name: '更新提示-消息页面-顶部',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: [
-        'TextView[text="发现QQ版本更新"] + ImageView[clickable=true]', //修正desc值为null时无法点击问题
-        'TextView[text="发现QQ版本更新"] -2 ImageView[clickable=true]',
-      ],
+      quickFind: true,
+      rules: '[id="com.tencent.mobileqq:id/iyx"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13188722',
         'https://i.gkd.li/import/13255493', //desc值为null快照

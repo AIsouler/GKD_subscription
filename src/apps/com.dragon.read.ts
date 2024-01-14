@@ -107,7 +107,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '广告弹窗',
+      name: '分段广告',
       quickFind: true,
       rules: [
         {

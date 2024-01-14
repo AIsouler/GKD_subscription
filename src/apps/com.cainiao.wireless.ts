@@ -71,7 +71,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '首页-今日手气红包',
+      name: '全屏广告-今日手气红包',
       desc: '点击右上角X',
       quickFind: true,
       activityIds:
