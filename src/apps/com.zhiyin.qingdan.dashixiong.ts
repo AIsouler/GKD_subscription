@@ -6,12 +6,12 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
-      activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
+      name: '全屏广告',
       rules: [
         {
           key: 0,
           name: '快手广告-1',
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           quickFind: true,
           matches:
             '@ImageView <n ViewGroup -2 ViewGroup > ViewGroup > [text="广告"]',
@@ -20,6 +20,7 @@ export default defineAppConfig({
         {
           key: 1,
           name: '快手广告-2',
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches: [
             'ViewGroup[childCount=2] > ImageView + [text="广告"]',
             'ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView',
@@ -29,12 +30,14 @@ export default defineAppConfig({
         {
           key: 2,
           name: '快手广告-3',
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches: '[text="广告"] <2 ViewGroup -3 ViewGroup >2 [text="跳过"]',
           snapshotUrls: 'https://i.gkd.li/import/13521140',
         },
         {
           key: 3,
           name: '腾讯广告-1',
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/12843282',
@@ -42,7 +45,10 @@ export default defineAppConfig({
         {
           key: 4,
           name: '腾讯广告-2',
-          activityIds: 'com.qq.e.ads.ADActivity',
+          activityIds: [
+            'com.zhiyin.qingdan.dashixiong.MainActivity',
+            'com.qq.e.ads.ADActivity',
+          ],
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
@@ -54,6 +60,7 @@ export default defineAppConfig({
         {
           key: 5,
           name: '字节广告',
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           quickFind: true,
           matches: '@Image < View +n View > View > View > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/12843323',
