@@ -77,5 +77,17 @@ export default defineAppConfig({
       rules: '[desc^="必读通告"] +n [desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/12843280',
     },
+    {
+      key: 11,
+      name: '全屏广告-首页广告弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.sigmob.sdk.base.common.TransparentAdActivity',
+          matches: '[id="close_btn"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13887500',
+        },
+      ],
+    },
   ],
 });
