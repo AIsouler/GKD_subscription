@@ -189,5 +189,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 15,
+      quickFind: true,
+      name: '局部广告-底部热榜弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          matches:
+            '@FlattenUIImage[clickable=true] <n FrameLayout <<2 FrameLayout - LinearLayout [text="首页"]',
+          snapshotUrls: 'https://i.gkd.li/import/13828331',
+        },
+      ],
+    },
   ],
 });
