@@ -115,7 +115,9 @@ export default defineAppConfig({
       key: 5,
       name: '多多买菜抽奖弹窗',
       activityIds: ['com.xunmeng.pinduoduo.activity.NewPageActivity'],
-      rules: ['[id=null][text="关闭弹窗"][clickable=true]'],
+      rules: [
+        'View[childCount=1] > Button[id=null][text="关闭弹窗"][clickable=true]',
+      ], //添加父节点条件。原规则会与退换货选择货物弹窗冲突。https://i.gkd.li/import/13830730
       snapshotUrls: ['https://i.gkd.li/import/12642053'],
     },
     {
