@@ -243,12 +243,24 @@ export default defineAppConfig({
     },
     {
       key: 17,
-      name: '评论区-信息流广告',
-      desc: '点击【x】',
-      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       quickFind: true,
-      rules: '[text="广告"] + [id="com.sina.weibo:id/iv_close_icon"]',
-      snapshotUrls: 'https://i.gkd.li/import/13632175',
+      name: '分段广告-评论区信息流广告',
+      desc: '点击X-点击不感兴趣',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          matches: '[text="广告"] + [id="com.sina.weibo:id/iv_close_icon"]',
+          snapshotUrls: 'https://i.gkd.li/import/13852321',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          matches: '[text="不感兴趣"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13852322',
+        },
+      ],
     },
     {
       key: 18,
@@ -260,6 +272,18 @@ export default defineAppConfig({
       activityIds: 'com.sina.weibo.MainTabActivity',
       rules: '@[text="不了，谢谢"] +4 [text="喜欢，给好评"]',
       snapshotUrls: 'https://i.gkd.li/import/13620220',
+    },
+    {
+      key: 19,
+      quickFind: true,
+      name: '功能类-自动点击查看原图',
+      rules: [
+        {
+          activityIds: 'com.sina.weibo.photoalbum.imageviewer.ImageViewer',
+          matches: '@LinearLayout >3 [vid="tv_dialog_item"][text^="原图"]',
+          snapshotUrls: 'https://i.gkd.li/import/13929119',
+        },
+      ],
     },
   ],
 });
