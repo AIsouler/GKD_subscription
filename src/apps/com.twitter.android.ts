@@ -153,5 +153,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      quickFind: true,
+      name: '通知提示-请求通知权限弹窗',
+      desc: '点击"Not now"',
+      rules: [
+        {
+          activityIds: 'com.twitter.app.main.MainActivity',
+          matches:
+            '[id="com.twitter.android:id/secondary_button"] [text="Not now"]',
+          snapshotUrls: 'https://i.gkd.li/import/13930126',
+        },
+      ],
+    },
   ],
 });
