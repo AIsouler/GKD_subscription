@@ -53,10 +53,11 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '消息-打开通知',
+      name: '通知提示-请求打开通知',
       activityIds: [
         'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
         'com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity',
+        'com.jingdong.app.mall.MainFrameActivity',
       ],
       rules: [
         {
@@ -64,6 +65,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/12839864', //com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew
             'https://i.gkd.li/import/13772299', //com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity
+            'https://i.gkd.li/import/13917163', //com.jingdong.app.mall.MainFrameActivity
           ],
         },
         {
