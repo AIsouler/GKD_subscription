@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '卡片式广告',
+      name: '分段广告',
       desc: '有二次确认弹窗',
       quickFind: true,
       // matchDelay: 3000, 我又想不起来为什么要有这个了
@@ -21,13 +21,17 @@ export default defineAppConfig({
             'com.netease.cloudmusic.music.biz.comment.activity.ReplyCommentActivity2',
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
           ],
-          matches: '[id="com.netease.cloudmusic:id/adTagView"]',
+          matches: [
+            '[id="com.netease.cloudmusic:id/adTagView"]',
+            '[vid="adTagClose"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/import/12829944',
             'https://i.gkd.li/import/12723229',
             'https://i.gkd.li/import/12829938',
             'https://i.gkd.li/import/12829964',
             'https://i.gkd.li/import/12829953',
+            'https://i.gkd.li/import/13859634', //vid="adTagClose"
           ],
         },
         {
@@ -35,11 +39,13 @@ export default defineAppConfig({
           activityIds: [
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
+            'com.netease.cloudmusic.activity.MainActivity',
           ],
           matches: '[text="直接关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12829967',
             'https://i.gkd.li/import/13627047', //activityIds: 'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
+            'https://i.gkd.li/import/13859635', //activityIds: 'com.netease.cloudmusic.activity.MainActivity'
           ],
         },
         {
