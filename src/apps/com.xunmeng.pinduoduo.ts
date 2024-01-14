@@ -206,5 +206,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 11,
+      name: '功能类-自动点击原图',
+      activityIds:
+        'com.xunmeng.pinduoduo.app_album.album.MultiImageSelectorActivity',
+      quickFind: true,
+      rules: '@[text="原图"][checked=false] + [text="发送"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13925378', // checked=false
+        'https://i.gkd.li/import/13925380', // checked=true
+      ],
+    },
   ],
 });
