@@ -58,5 +58,27 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      quickFind: true,
+      name: '功能类-自动签到',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'info.muge.appshare.view.main.MainActivity',
+          matches: '[id="info.muge.appshare:id/tvSign"][text="签到"]',
+          snapshotUrls: 'https://i.gkd.li/import/13931265',
+        },
+        {
+          preKeys: 0,
+          activityIds: 'info.muge.appshare.view.main.MainActivity',
+          matches: '[id="info.muge.appshare:id/tvClose"][text="确定"]',
+          snapshotUrls: 'https://i.gkd.li/import/13931279',
+        },
+      ],
+    },
   ],
 });
