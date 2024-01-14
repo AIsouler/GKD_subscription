@@ -6,15 +6,31 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告',
       rules: [
         {
           key: 0,
           name: '百度广告',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
-            '@ImageView[clickable=true] + RelativeLayout > RelativeLayout[childCount=6] > ImageView[childCount=0][index=5]',
-          snapshotUrls: 'https://i.gkd.li/import/13799876',
+            '[id="android:id/content"] >n RelativeLayout[childCount<=3] > ImageView[clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13799876',
+            'https://i.gkd.li/import/13852024',
+          ],
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          name: '信息流广告',
+          quickFind: true,
+          matches: '[vid="time_line_type"] <<n * > * > [vid="rl_down"]',
+          snapshotUrls: 'https://i.gkd.li/import/13852023',
         },
       ],
     },
