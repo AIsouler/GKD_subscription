@@ -150,5 +150,36 @@ export default defineAppConfig({
         '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13476308',
     },
+    {
+      key: 8,
+      name: '局部广告-教材内弹窗广告1',
+      quickFind: true,
+      activityIds: [
+        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      ],
+      rules: '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after"]',
+      snapshotUrls: ['https://i.gkd.li/import/13929945'],
+    },
+    {
+      key: 9,
+      name: '局部广告-教材内弹窗广告2',
+      quickFind: true,
+      activityIds: [
+        'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
+      ],
+      rules: '[id="com.zmzx.college.search:id/iv_close"]',
+      snapshotUrls: ['https://i.gkd.li/import/13929981'],
+    },
+    {
+      key: 10,
+      name: '局部广告-教材内底部广告',
+      quickFind: true,
+      activityIds: [
+        'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
+      ],
+      rules:
+        '[id="com.zmzx.college.search:id/close_m_image_left_text_right_app_compliance"]',
+      snapshotUrls: ['https://i.gkd.li/import/13929965'],
+    },
   ],
 });
