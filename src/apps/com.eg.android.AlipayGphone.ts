@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 0,
-      name: '关闭花呗升级弹窗',
+      name: '更新提示-关闭花呗升级弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -39,12 +39,17 @@ export default defineAppConfig({
             '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
           snapshotUrls: 'https://i.gkd.li/import/13631362',
         },
+        {
+          matches:
+            '[id="com.alipay.android.app:id/flybird_userinfo"] + * >8 FrameLayout[clickable=true][index=1]',
+          snapshotUrls: 'https://i.gkd.li/import/13857535',
+        },
       ],
     },
     {
       enable: false,
       key: 1,
-      name: '关闭开启定位提示',
+      name: '定位提示-请求定位权限弹窗',
       quickFind: true,
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules:
@@ -53,7 +58,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '请求通知权限提示',
+      name: '通知提示-请求通知弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -80,7 +85,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '版本更新',
+      name: '更新提示-版本更新弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -148,6 +153,20 @@ export default defineAppConfig({
           matches: '[text="对该内容不感兴趣"]',
           action: 'clickCenter',
           snapshotUrls: 'https://i.gkd.li/import/13763315',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '全屏广告-借呗消费信贷协议',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+          matches:
+            '[text="同意协议并刷脸验证"] < * -4 * >2 Image[visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13915022',
         },
       ],
     },
