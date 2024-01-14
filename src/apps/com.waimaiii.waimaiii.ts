@@ -30,6 +30,12 @@ export default defineAppConfig({
             '[id="com.waimaiii.waimaiii:id/flContainer"] >n FrameLayout[childCount=3] > FrameLayout + @View[clickable=true] + TextView',
           snapshotUrls: 'https://i.gkd.li/import/13694837',
         },
+        {
+          key: 3,
+          matches:
+            '[id="android:id/content"] >9 FrameLayout + View[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13930573',
+        },
       ],
     },
     {
