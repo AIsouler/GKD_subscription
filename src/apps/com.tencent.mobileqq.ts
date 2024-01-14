@@ -74,11 +74,16 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 1,
-          activityIds:
+          activityIds: [
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+            'com.tencent.mobileqq.activity.SplashActivity',
+          ],
           quickFind: true,
           matches: '@[clickable=true] > ImageView + [text="关闭此条广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12840889',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12840889',
+            'https://i.gkd.li/import/13831867', //activityId: 'com.tencent.mobileqq.activity.SplashActivity'
+          ],
         },
         {
           preKeys: 0,
