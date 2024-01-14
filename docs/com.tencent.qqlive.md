@@ -1,6 +1,6 @@
 # 腾讯视频
 
-存在 6 规则组 - [com.tencent.qqlive](/src/apps/com.tencent.qqlive.ts)
+存在 7 规则组 - [com.tencent.qqlive](/src/apps/com.tencent.qqlive.ts)
 
 ## 开屏广告
 
@@ -54,6 +54,12 @@
 - [快照-2](https://i.gkd.li/import/13043079)
 - [快照-3](https://i.gkd.li/import/13526547)
 - [快照-4](https://i.gkd.li/import/13695067)
+
+## 全屏广告-首页-广告弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13842643)
 
 ## 请求通知权限弹窗
 

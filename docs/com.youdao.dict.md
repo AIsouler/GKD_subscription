@@ -11,13 +11,14 @@
 - [快照-2](https://i.gkd.li/import/12668583)
 - [快照-3](https://i.gkd.li/import/13800056)
 
-## 弹窗广告
+## 全屏广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12893419)
 - [快照-1](https://i.gkd.li/import/13263801)
 - [快照-2](https://i.gkd.li/import/12893450)
+- [快照-3](https://i.gkd.li/import/13931202)
 
 ## VIP-弹窗
 

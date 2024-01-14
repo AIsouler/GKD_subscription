@@ -1,6 +1,6 @@
 # 云闪付
 
-存在 8 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
+存在 9 规则组 - [com.unionpay](/src/apps/com.unionpay.ts)
 
 ## 更新弹窗
 
@@ -50,3 +50,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13440341)
+
+## 全屏广告-领取优惠弹窗
+
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/13848688)

@@ -1,6 +1,6 @@
 # 一刻相册
 
-存在 7 规则组 - [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts)
+存在 8 规则组 - [com.baidu.youavideo](/src/apps/com.baidu.youavideo.ts)
 
 ## 软件升级提醒
 
@@ -43,3 +43,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13711475)
+
+## 局部广告-广告卡片
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13874124)

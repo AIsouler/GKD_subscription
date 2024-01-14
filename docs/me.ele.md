@@ -1,6 +1,6 @@
 # 饿了么
 
-存在 7 规则组 - [me.ele](/src/apps/me.ele.ts)
+存在 8 规则组 - [me.ele](/src/apps/me.ele.ts)
 
 ## 版本更新
 
@@ -58,3 +58,9 @@
 
 - [快照-0](https://i.gkd.li/import/13710588)
 - [快照-1](https://i.gkd.li/import/13710585)
+
+## 通知提示-获取订单信息通知
+
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/13931205)

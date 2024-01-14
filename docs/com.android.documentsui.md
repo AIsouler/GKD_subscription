@@ -1,9 +1,15 @@
 # 文件
 
-存在 1 规则组 - [com.android.documentsui](/src/apps/com.android.documentsui.ts)
+存在 2 规则组 - [com.android.documentsui](/src/apps/com.android.documentsui.ts)
 
-## 允许第三方应用访问文件夹
+## 功能类-允许第三方应用访问文件夹
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13801468)
+
+## 功能类-使用此文件夹
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13916082)

@@ -1,6 +1,6 @@
 # 哈啰
 
-存在 7 规则组 - [com.jingyao.easybike](/src/apps/com.jingyao.easybike.ts)
+存在 8 规则组 - [com.jingyao.easybike](/src/apps/com.jingyao.easybike.ts)
 
 ## 请求通知权限弹窗
 
@@ -46,3 +46,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12739316)
+
+## 功能类-新人教学弹窗
+
+默认禁用 - 点击跳过
+
+- [快照-0](https://i.gkd.li/import/13837543)

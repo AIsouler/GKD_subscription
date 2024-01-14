@@ -25,13 +25,14 @@
 - [快照-2](https://i.gkd.li/import/13072091)
 - [快照-3](https://i.gkd.li/import/12837870)
 
-## 消息-打开通知
+## 通知提示-请求打开通知
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12839864)
 - [快照-1](https://i.gkd.li/import/13772299)
-- [快照-2](https://i.gkd.li/import/12839865)
+- [快照-2](https://i.gkd.li/import/13917163)
+- [快照-3](https://i.gkd.li/import/12839865)
 
 ## 广告弹窗
 
