@@ -279,6 +279,13 @@ type RawGlobalRuleProps = {
    */
   matchLauncher?: boolean;
 
+  /**
+   * 默认值: `false`
+   *
+   * 是否匹配系统应用, 仅全局规则可用
+   */
+  matchSystemApp?: boolean;
+
   apps?: RawGlobalApp[];
 };
 
