@@ -5,7 +5,7 @@
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://registry.npmmirror.com/@gkd-kit/subscription/latest/files
+https://s.gkd.li/
 ```
 
 当前版本: v--VERSION--
