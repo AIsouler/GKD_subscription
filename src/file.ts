@@ -90,6 +90,13 @@ export const writeConfig = async (config: RawSubscription) => {
     'utf-8',
   );
 
+  newConfig.apps?.forEach((app) => {
+    app.groups?.forEach((g) => {
+      if (g.name.startsWith('开屏广告')) {
+        g.order = -1;
+      }
+    });
+  });
   // update gkd.json
   const buffer = Buffer.from(orderdStringify5(newConfig, sortKeys), 'utf-8');
   await fs.writeFile(gkdFp, buffer);

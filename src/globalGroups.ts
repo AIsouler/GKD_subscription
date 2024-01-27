@@ -31,6 +31,7 @@ const globalGroups: RawGlobalGroup[] = [
   {
     key: 0,
     name: '开屏广告',
+    order: -1,
     actionMaximum: 2,
     matchTime: 10000,
     resetMatch: 'app',
