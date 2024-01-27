@@ -6,7 +6,7 @@ type RawCommonProps = {
    *
    * 当前规则的冷却时间, 或者执行 action 最小间隔
    *
-   * 默认值: 1000
+   * @default 1000
    */
   actionCd?: number;
 
@@ -83,9 +83,9 @@ type RawCommonProps = {
   actionMaximum?: number;
 
   /**
-   * 默认值: `activity`
-   *
    * 当规则因为 matchTime/actionMaximum 而休眠时, 如何唤醒此规则
+   *
+   * @default 'activity'
    *
    * @example
    * 'activity'
@@ -116,6 +116,18 @@ type RawCommonProps = {
    * 如果你对这个 key 的 rule 设置 actionMaximum=1, 那么当这个 rule 和 本 rule 触发任意一个时, 两个 rule 都将进入休眠
    */
   actionMaximumKey?: number;
+
+  /**
+   * 规则参与匹配的顺序, 数字越小越先匹配
+   *
+   * 如果两个规则 order 相同, 按照 groups 中的声明顺序匹配, app 类型规则顺序优先于 global 类型规则
+   *
+   * 属于不同订阅的规则按照订阅列表中顺序执行, 长按订阅卡片可以拖动排序
+   *
+   * @default 0
+   *
+   */
+  order?: number;
 
   /**
    * 当前 规则/规则组 的快照链接, 增强订阅可维护性
