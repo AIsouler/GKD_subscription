@@ -10,7 +10,8 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'RelativeLayout > ImageView[id!=null] + ImageView[id!=null]',
+      rules:
+        'RelativeLayout[childCount=3] > ImageView + @ImageView[clickable=true][visibleToUser=true] + FrameLayout[childCount>0]',
       snapshotUrls: 'https://i.gkd.li/import/12775855',
     },
     {
