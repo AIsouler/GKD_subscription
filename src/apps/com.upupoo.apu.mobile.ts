@@ -10,8 +10,27 @@ export default defineAppConfig({
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules: '[id="android:id/content"] >n FrameLayout[childCount=4] > View',
-      snapshotUrls: 'https://i.gkd.li/import/13830230',
+      rules:
+        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13830230',
+        'https://i.gkd.li/import/14052232',
+      ],
+    },
+    {
+      key: 1,
+      name: '青少年模式',
+      desc: '点击"我知道了"',
+      matchTime: 10000,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds: 'com.upupoo.apu.mobile.MainActivity',
+          matches: '[desc="青少年模式"] +3 [desc="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/import/14052188',
+        },
+      ],
     },
   ],
 });
