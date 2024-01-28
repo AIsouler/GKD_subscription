@@ -1,8 +1,13 @@
 # Cellular-Z
 
-存在 1 规则组 - [make.more.r2d2.cellular_z](/src/apps/make.more.r2d2.cellular_z.ts)
+存在 2 规则组 - [make.more.r2d2.cellular_z](/src/apps/make.more.r2d2.cellular_z.ts)
 
-## 更新弹窗
+## 开屏广告
+
+- [快照-0](https://i.gkd.li/import/13987038)
+- [快照-1](https://i.gkd.li/import/13978978)
+
+## 更新提示
 
 默认禁用
 

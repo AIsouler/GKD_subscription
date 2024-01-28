@@ -11,6 +11,7 @@
 - [快照-4](https://i.gkd.li/import/12683173)
 - [快照-5](https://i.gkd.li/import/13702708)
 - [快照-6](https://i.gkd.li/import/13842826)
+- [快照-7](https://i.gkd.li/import/13939089)
 
 ## 卡片式广告
 
