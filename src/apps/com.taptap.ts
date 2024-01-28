@@ -5,6 +5,16 @@ export default defineAppConfig({
   name: 'TapTap',
   groups: [
     {
+      key: 1,
+      name: '开屏广告', //占位,避免和全局开屏广告规则误触
+      rules: [
+        {
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: ['https://i.gkd.li/import/13946250'],
+        },
+      ],
+    },
+    {
       key: 2,
       name: '游戏浏览界面-推荐广告',
       desc: '自动点击【对此内容不感兴趣】',
