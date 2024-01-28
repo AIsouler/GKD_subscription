@@ -23,13 +23,16 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          matches: '[id = "com.byted.pangle:id/tt_splash_skip_btn"]',
+          quickFind: true,
+          matches:
+            '@[id$="tt_splash_skip_btn"] <<n [id="com.realtech.xiaocan:id/splash_ad_container"]',
           snapshotUrls: 'https://i.gkd.li/import/12854728',
         },
         {
           key: 3,
+          quickFind: true,
           matches:
-            '[id="com.realtech.xiaocan:id/splash_ad_container"] >n FrameLayout[childCount<=4] > FrameLayout +n @View[clickable=true] + TextView',
+            '@View[visibleToUser=true][clickable=true] <n FrameLayout[childCount=4||childCount=3] <<n [id="com.realtech.xiaocan:id/splash_ad_container"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13694858',
             'https://i.gkd.li/import/13794403',
