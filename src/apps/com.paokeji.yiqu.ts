@@ -5,6 +5,16 @@ export default defineAppConfig({
   name: '喵趣漫画',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: '@View[clickable=true] <<n [vid="lyContainer"]',
+      snapshotUrls: 'https://i.gkd.li/import/14031922',
+    },
+    {
       key: 1,
       name: '局部广告',
       activityIds: [
