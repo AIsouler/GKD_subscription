@@ -11,6 +11,7 @@
 - [快照-4](https://i.gkd.li/import/13206298)
 - [快照-5](https://i.gkd.li/import/13207736)
 - [快照-6](https://i.gkd.li/import/12999739)
+- [快照-7](https://i.gkd.li/import/14046124)
 
 ## 更新提示
 
