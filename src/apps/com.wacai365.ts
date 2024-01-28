@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '新版本提示',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       activityIds: [
@@ -24,12 +24,33 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       actionMaximum: 1,
       activityIds: 'com.wacai365.HomeActivity',
       rules: '[id^="com.wacai365:id/promote_banner_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13249666',
+    },
+    {
+      key: 3,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          matches: '@View[clickable=true] <2 * <2 * < [vid="flTTContainer"]',
+          snapshotUrls: 'https://i.gkd.li/import/14021540',
+        },
+        {
+          key: 3,
+          quickFind: true,
+          matches: '[text^="跳过"][text.length<=6]',
+          snapshotUrls: 'https://i.gkd.li/import/13399124',
+        },
+      ],
     },
   ],
 });
