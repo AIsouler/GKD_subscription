@@ -36,6 +36,12 @@ export default defineAppConfig({
             '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid="rlAdView"]',
           snapshotUrls: 'https://i.gkd.li/import/13842826',
         },
+        {
+          key: 3,
+          name: '穿山甲SDK',
+          matches: '@View[clickable=true] <<n [vid="tp_splash_container_id"]',
+          snapshotUrls: 'https://i.gkd.li/import/13939089',
+        },
       ],
     },
     {
