@@ -32,6 +32,12 @@ export default defineAppConfig({
           matches: '[id$="tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/12999739',
         },
+        {
+          key: 2,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+          snapshotUrls: 'https://i.gkd.li/import/14046124',
+        },
       ],
     },
     {
