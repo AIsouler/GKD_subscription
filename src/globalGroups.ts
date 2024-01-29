@@ -1,5 +1,6 @@
 import apps from './rawApps';
 import type { RawGlobalGroup } from './types';
+import { OPEN_AD_ORDER } from './utils';
 
 const diabledAppIds = [
   'com.android.systemui', // 通知栏界面
@@ -31,7 +32,7 @@ const globalGroups: RawGlobalGroup[] = [
   {
     key: 0,
     name: '开屏广告',
-    order: -1,
+    order: OPEN_AD_ORDER,
     actionMaximum: 2,
     matchTime: 10000,
     resetMatch: 'app',
