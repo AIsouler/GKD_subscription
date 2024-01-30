@@ -241,6 +241,16 @@ type RawGroupProps = RawCommonProps & {
    */
   enable?: boolean;
 
+  /**
+   * 其它 group 的 key, 允许将目标组的 rule 添加到当前组的作用域
+   *
+   * 假设 group1{key=1} 有一个 rule1{key=1}, group2{key=2} 有一个 rule2{key=2}
+   *
+   * 如果 group1 的 scopeKeys=[2], 那么 rule1 的 preKeys/actionCdKey/actionMaximumKey 可以是 2
+   *
+   */
+  scopeKeys?: number[];
+
   // rules: RawRuleProps[];
 };
 
