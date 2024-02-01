@@ -25,5 +25,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-购买动态投放弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          quickFind: true,
+          matches: '[id="com.soft.blued:id/iv_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/37ea59cf-9606-4cd6-a74a-84f353f07975',
+          snapshotUrls: 'https://i.gkd.li/import/14060676',
+        },
+      ],
+    },
   ],
 });
