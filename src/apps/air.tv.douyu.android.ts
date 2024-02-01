@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '新版本弹窗',
+      name: '更新提示',
       activityIds: [
         'com.douyu.module.update.view.UpdateDialog',
         'com.douyu.module.home.pages.main.MainActivity',
@@ -29,8 +29,11 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '直播间广告',
-      activityIds: 'tv.douyu.view.activity.PlayerActivity',
+      name: '局部广告-直播间广告',
+      activityIds: [
+        'tv.douyu.view.activity.PlayerActivity',
+        'com.douyu.module.player.p.rambobase.RamboPlayerActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -63,6 +66,12 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount=2] > @ImageView - FrameLayout > RelativeLayout > WebView',
           snapshotUrls: 'https://i.gkd.li/import/13056107',
+        },
+        {
+          key: 5,
+          matches:
+            'RelativeLayout[visibleToUser=true] > ImageView[clickable=true][index=1]',
+          snapshotUrls: 'https://i.gkd.li/import/13948990',
         },
       ],
     },
