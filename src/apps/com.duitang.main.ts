@@ -18,7 +18,7 @@ export default defineAppConfig({
       ],
     },
     {
-      name: '首页-推荐浏览广告',
+      name: '局部广告-推荐浏览广告',
       desc: '关闭推荐浏览页面广告',
       key: 2,
       activityIds: ['com.duitang.main.business.main.NAMainActivity'],
@@ -31,7 +31,7 @@ export default defineAppConfig({
       ],
     },
     {
-      name: '去商店评分',
+      name: '评价提示',
       desc: '点击[下次再说]',
       key: 3,
       actionMaximum: 1,
@@ -41,6 +41,19 @@ export default defineAppConfig({
         {
           matches: '[id="com.duitang.main:id/scoreDuitangCancel"]',
           snapshotUrls: 'https://i.gkd.li/import/13203217',
+        },
+      ],
+    },
+    {
+      key: 4,
+      quickFind: true,
+      name: '全屏广告-图片页广告弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.duitang.main.business.display.ImageActivity',
+          matches: '[id="com.duitang.main:id/popUpbtnClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/13997011',
         },
       ],
     },
