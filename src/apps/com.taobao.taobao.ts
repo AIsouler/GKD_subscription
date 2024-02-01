@@ -219,5 +219,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 17,
+      name: '全屏广告-抢天降补贴弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.taobao.tao.welcome.Welcome',
+          matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
+          snapshotUrls: 'https://i.gkd.li/import/14060521',
+        },
+      ],
+    },
   ],
 });
