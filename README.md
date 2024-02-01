@@ -1,11 +1,13 @@
-# @gkd-kit/subscription
+# @AIsouler/subscription
 
-`默认规则` 仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
+---
+
+由AIsouler维护的GKD规则, 仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
 
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://fastly.jsdelivr.net/npm/@gkd-kit/subscription
+https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5
 ```
 
 当前版本: v186
@@ -19,3 +21,7 @@ https://fastly.jsdelivr.net/npm/@gkd-kit/subscription
 ## 感谢以下开发者的贡献
 
 ![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=186)
+
+## 感谢以下项目
+
+[gkd-kit/subscription](https://github.com/gkd-kit/subscription)
