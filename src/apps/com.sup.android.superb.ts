@@ -45,5 +45,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 8,
+      name: '评价提示',
+      desc: '点击取消',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.sup.android.base.MainActivity',
+          matches: '[id="com.sup.android.superb:id/a1i"]',
+          snapshotUrls: 'https://i.gkd.li/import/14005608',
+        },
+      ],
+    },
   ],
 });
