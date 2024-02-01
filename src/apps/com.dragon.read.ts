@@ -152,7 +152,7 @@ export default defineAppConfig({
           key: 4,
           name: '阅读页面广告弹窗-点击不感兴趣',
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches: '[text="举报"] <2 ViewGroup - ViewGroup[clickable=true]',
+          matches: 'ViewGroup[childCount=2] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13816454',
         },
       ],
