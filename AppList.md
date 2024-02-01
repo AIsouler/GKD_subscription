@@ -19,7 +19,7 @@
 | HMS Core               | [com.huawei.hwid](/docs/com.huawei.hwid.md)                                                                                                                       | 1      |
 | Instagram              | [com.instagram.android](/docs/com.instagram.android.md)                                                                                                           | 1      |
 | JavDB                  | [xxx.pornhub.fuck](/docs/xxx.pornhub.fuck.md)                                                                                                                     | 1      |
-| Keep                   | [com.gotokeep.keep](/docs/com.gotokeep.keep.md)                                                                                                                   | 5      |
+| Keep                   | [com.gotokeep.keep](/docs/com.gotokeep.keep.md)                                                                                                                   | 6      |
 | LIBVIO                 | [lab.vie.two](/docs/lab.vie.two.md)                                                                                                                               | 1      |
 | MINO 4K                | [com.qjy.youqulife.io](/docs/com.qjy.youqulife.io.md)                                                                                                             | 1      |
 | Nico                   | [com.superrhino.rarering](/docs/com.superrhino.rarering.md)                                                                                                       | 1      |
