@@ -201,7 +201,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/14059876',
         },
         {
-          preKeys: [0,3],
+          preKeys: [0, 3],
           key: 1,
           name: '点击[不感兴趣]/[相似内容过多]',
           matches:
