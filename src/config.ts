@@ -4,7 +4,7 @@ import apps from './rawApps';
 import type { RawSubscription } from './types';
 
 const subsConfig: RawSubscription = {
-  id: 0,
+  id: 666,
   version: 0,
   name: 'AIsouler的GKD订阅',
   author: 'AIsouler',
