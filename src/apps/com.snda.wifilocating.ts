@@ -18,5 +18,18 @@ export default defineAppConfig({
         'ImageView[id=`com.snda.wifilocating:id/feed_item_sdk_logo`] < LinearLayout + [id=`com.snda.wifilocating:id/feed_item_dislike`]',
       ],
     },
+    {
+      key: 1,
+      name: '全屏广告-"好看"页面广告弹窗',
+      desc: '点击X',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.lantern.start.main.activity.HomeMainActivity',
+          matches: '[vid="interstitial_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/import/14032794',
+        },
+      ],
+    },
   ],
 });
