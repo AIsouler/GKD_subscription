@@ -58,13 +58,13 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '竖屏视频广告',
-      desc: '检测到广告时,点击右上角[更多]图标按钮,出现菜单,点击不感兴趣',
+      name: '全屏广告-竖屏视频广告',
+      desc: '点击右上角[更多]图标按钮,点击不感兴趣',
       activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
       rules: [
         {
           key: -1,
-          preKeys: [0, 1, 2, 3],
+          preKeys: 0,
           actionCd: 35000, //APP更新后点击不感兴趣不会跳过当前视频了，所以需要冷却一下等下一次重新跳过广告视频
           name: '点击不感兴趣',
           matches:
@@ -74,35 +74,17 @@ export default defineAppConfig({
         {
           key: 0,
           name: '点击右上角[更多]图标按钮',
-          matches:
-            '@ImageView[clickable=true][desc="更多"] <n RelativeLayout -2 RelativeLayout >4 LynxFlattenUI[text="头条优惠券无门槛全平台通用"]',
+          matches: 'ImageView[clickable=true][desc="更多"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12679280',
             'https://i.gkd.li/import/12733282',
             'https://i.gkd.li/import/12763251',
             'https://i.gkd.li/import/12763252',
+            'https://i.gkd.li/import/12733281',
+            'https://i.gkd.li/import/13185633',
+            'https://i.gkd.li/import/13186082',
+            'https://i.gkd.li/import/13930050',
           ],
-        },
-        {
-          key: 1,
-          name: '点击右上角[更多]图标按钮-抖音直播',
-          matches:
-            '@ImageView[clickable=true][desc="更多"] <4 RelativeLayout -2 RelativeLayout >4 LinearLayout[childCount=3] > ScrollView[childCount=1] > TextView[text$="广告"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/12733281'],
-        },
-        {
-          key: 2,
-          name: '第二种广告界面；点击右上角[更多]图标按钮',
-          matches:
-            '@ImageView[clickable=true][desc="更多"] <n RelativeLayout -2 RelativeLayout >n TextView[text$="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/13185633'],
-        },
-        {
-          key: 3,
-          name: '第三种广告界面；点击右上角[更多]图标按钮',
-          matches:
-            '@ImageView[clickable=true][desc="更多"] <n RelativeLayout +2 LinearLayout > TextView[text$="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/13186082'],
         },
       ],
     },
@@ -197,8 +179,7 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
-          matches:
-            '@FlattenUIImage[clickable=true] <n FrameLayout <<2 FrameLayout - LinearLayout [text="首页"]',
+          matches: 'FrameLayout[childCount=8] > FlattenUIImage[index=7]',
           snapshotUrls: 'https://i.gkd.li/import/13828331',
         },
       ],
