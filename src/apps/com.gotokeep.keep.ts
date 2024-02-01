@@ -70,5 +70,24 @@ export default defineAppConfig({
       rules: '@[text="暂不开启"] +2 [text="开启通知权限"]',
       snapshotUrls: 'https://i.gkd.li/import/13761671',
     },
+    {
+      key: 6,
+      name: '更新提示',
+      desc: '点击"暂不升级"',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
+          matches: '[id="com.gotokeep.keep:id/text_secondary_action"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6b0091e9-1bf1-49bd-be5c-e6997bc9accb',
+          snapshotUrls: 'https://i.gkd.li/import/14126005',
+        },
+      ],
+    },
   ],
 });
