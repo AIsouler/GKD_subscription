@@ -1,6 +1,6 @@
 # 微博
 
-存在 16 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
+存在 17 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
 
 ## 兴趣领域推荐
 
@@ -99,6 +99,7 @@
 
 - [快照-0](https://i.gkd.li/import/13852321)
 - [快照-1](https://i.gkd.li/import/13852322)
+- [快照-2](https://i.gkd.li/import/13958782)
 
 ## APP评分弹窗
 
@@ -111,3 +112,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13929119)
+
+## 全屏广告-最热钻超弹窗
+
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/14033735)

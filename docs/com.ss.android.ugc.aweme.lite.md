@@ -1,6 +1,6 @@
 # 抖音极速版
 
-存在 4 规则组 - [com.ss.android.ugc.aweme.lite](/src/apps/com.ss.android.ugc.aweme.lite.ts)
+存在 5 规则组 - [com.ss.android.ugc.aweme.lite](/src/apps/com.ss.android.ugc.aweme.lite.ts)
 
 ## 青少年弹窗
 
@@ -26,3 +26,10 @@
 默认禁用 - 点击暂不开启
 
 - [快照-0](https://i.gkd.li/import/13888485)
+
+## 功能类-选择图片时自动勾选原图
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13946092)
+- [快照-1](https://i.gkd.li/import/13946033)

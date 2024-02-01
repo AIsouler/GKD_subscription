@@ -24,9 +24,9 @@
 - [快照-0](https://i.gkd.li/import/12706699)
 - [快照-1](https://i.gkd.li/import/12840217)
 
-## 竖屏视频广告
+## 全屏广告-竖屏视频广告
 
-默认禁用 - 检测到广告时,点击右上角[更多]图标按钮,出现菜单,点击不感兴趣
+默认禁用 - 点击右上角[更多]图标按钮,点击不感兴趣
 
 - [快照-0](https://i.gkd.li/import/12679277)
 - [快照-1](https://i.gkd.li/import/12679280)
@@ -36,6 +36,7 @@
 - [快照-5](https://i.gkd.li/import/12733281)
 - [快照-6](https://i.gkd.li/import/13185633)
 - [快照-7](https://i.gkd.li/import/13186082)
+- [快照-8](https://i.gkd.li/import/13930050)
 
 ## 信息流广告
 
