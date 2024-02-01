@@ -86,5 +86,25 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '分段广告-软件详情页广告',
+      desc: '有二次弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
+          matches:
+            '[id="info.muge.appshare:id/adContainer"] >6 FrameLayout[visibleToUser=true][index=2][desc!=null]',
+          snapshotUrls: 'https://i.gkd.li/import/13758909',
+        },
+        {
+          preKeys: 0,
+          activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
+          matches: '[text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/import/13944942',
+        },
+      ],
+    },
   ],
 });
