@@ -22,6 +22,11 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12910953',
           ],
         },
+        {
+          action: 'clickCenter',
+          matches: 'TextView[text*="跳过"][text.length<=10]',
+          snapshotUrls: 'https://i.gkd.li/import/14049316',
+        },
       ],
     },
     {
@@ -161,7 +166,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '视频播放时的广告',
+      name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过广告',
       activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
       rules: [
@@ -196,6 +201,20 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount=4] > ImageView + FrameLayout + FrameLayout + ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13695067',
+        },
+        {
+          key: 4,
+          name: '居中广告',
+          matches:
+            '[id="com.tencent.qqlive:id/arg"] > FrameLayout[clickable=true] + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13946107',
+        },
+        {
+          key: 5,
+          name: '居中广告',
+          matches:
+            'RelativeLayout[childCount=2] < LinearLayout <2 FrameLayout[childCount=2] < LinearLayout + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/14001277',
         },
       ],
     },
