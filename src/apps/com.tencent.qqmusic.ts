@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告卡片',
+      name: '局部广告-广告卡片',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
         {
@@ -30,7 +30,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页-底部广告弹窗',
+      name: '全屏广告-首页-底部广告弹窗',
       quickFind: true,
       activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
       rules: 'View[id="js_close_btn"][desc="关闭"]',
@@ -38,7 +38,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '内测体验弹窗',
+      name: '功能类-内测体验弹窗',
       desc: '点击[不再提醒]',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       quickFind: true,
@@ -47,12 +47,36 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '免流弹窗',
+      name: '全屏广告-免流弹窗',
       desc: '点击[流量够用]',
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       quickFind: true,
       rules: '[text="流量够用"]',
       snapshotUrls: 'https://i.gkd.li/import/13197868',
+    },
+    {
+      key: 5,
+      name: '全屏广告-看广告免费听歌弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
+          matches: '[id="com.tencent.qqmusic:id/c5i"] >5 [desc="关闭按钮"]',
+          snapshotUrls: 'https://i.gkd.li/import/13806773',
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '全屏广告-豪华绿钻弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[id="android:id/content"] >4 ViewGroup[childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13806782',
+        },
+      ],
     },
   ],
 });
