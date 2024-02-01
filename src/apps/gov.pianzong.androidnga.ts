@@ -61,5 +61,20 @@ export default defineAppConfig({
       rules: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
       snapshotUrls: ['https://i.gkd.li/import/12706132'],
     },
+    {
+      key: 4,
+      name: '全屏广告-广告弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.hihonor.android.launcher.unihome.UniHomeLauncher',
+          matches: '[id="gov.pianzong.androidnga:id/iv_homedialog_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/346f4485-82a7-4cf3-aab3-1fe6c9bb23af',
+          snapshotUrls: 'https://i.gkd.li/import/14126934',
+        },
+      ],
+    },
   ],
 });
