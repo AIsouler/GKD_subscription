@@ -14,5 +14,21 @@ export default defineAppConfig({
       rules: '[id="com.hihonor.vmall:id/gift_close_iv"]',
       snapshotUrls: 'https://i.gkd.li/import/13060881',
     },
+    {
+      key: 2,
+      quickFind: true,
+      name: '通知提示-关闭开启消息通知弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.vmall.client.messageCenter.fragment.MessageCenterActivity',
+          matches:
+            '[text="开启消息通知"] - [id="com.hihonor.vmall:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13959029',
+        },
+      ],
+    },
   ],
 });
