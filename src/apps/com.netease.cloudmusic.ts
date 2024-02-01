@@ -7,8 +7,8 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '分段广告',
-      desc: '有二次确认弹窗',
+      name: '分段广告-有二次确认弹窗',
+      desc: '⚠️该规则有概率误触',
       quickFind: true,
       // matchDelay: 3000, 我又想不起来为什么要有这个了
       rules: [
@@ -32,6 +32,7 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12829964',
             'https://i.gkd.li/import/12829953',
             'https://i.gkd.li/import/13859634', //vid="adTagClose"
+            'https://i.gkd.li/import/14070500', // 误触快照，节点被遮罩时触发点击
           ],
         },
         {
@@ -59,6 +60,7 @@ export default defineAppConfig({
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
             'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
           ],
           matches: '[text="直接关闭"]',
           snapshotUrls: [
@@ -80,7 +82,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '我的页面-中间滚动广告',
+      name: '局部广告-我的页面-中间滚动广告',
       quickFind: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules:
@@ -97,7 +99,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
       rules: [
         {
@@ -118,12 +120,19 @@ export default defineAppConfig({
             '[id="com.netease.cloudmusic:id/dsl_dialog_root"] >n ViewGroup[childCount=2] > ImageView + ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13684724',
         },
+        {
+          key: 3,
+          name: '抢新春好礼弹窗',
+          matches:
+            '[id="com.netease.cloudmusic:id/dsl_dialog_root"] ImageView[visibleToUser=true][index=2]',
+          snapshotUrls: 'https://i.gkd.li/import/13962214',
+        },
       ],
     },
     {
       enable: false,
       key: 5,
-      name: 'VIP 弹窗',
+      name: '全屏广告-VIP弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -134,10 +143,11 @@ export default defineAppConfig({
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
           matches:
-            'ImageView < @ViewGroup[clickable=true] <2 ViewGroup < ViewGroup + ScrollView [text="会员套餐"]',
+            'ImageView <<n @ViewGroup[clickable=true] <2 ViewGroup < ViewGroup + ScrollView [text="会员套餐"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13189055',
             'https://i.gkd.li/import/13260416',
+            'https://i.gkd.li/import/13996787',
           ],
         },
         {
@@ -171,11 +181,20 @@ export default defineAppConfig({
             '[text*="搭配会员音效"] + @ViewGroup[childCount=1] > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13391498',
         },
+        {
+          key: 5,
+          name: '搭配高清臻音-VIP支付弹窗',
+          activityIds:
+            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
+          matches:
+            '@ImageView[index=4] +5 ViewGroup[childCount=4] [text*="确认协议并支付"]',
+          snapshotUrls: 'https://i.gkd.li/import/14045917',
+        },
       ],
     },
     {
       key: 6,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
 
       rules: [
@@ -197,7 +216,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '播放界面广告',
+      name: '局部广告-播放界面广告',
       desc: '右上角VIP小悬浮、巨幅卡片式广告',
       quickFind: true,
       activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
@@ -215,15 +234,22 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '巨幅卡片式广告',
+          name: '巨幅卡片式广告1',
           matches: '[text^="跳过广告"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/import/13527105',
+        },
+        {
+          key: 2,
+          name: '巨幅卡片式广告2',
+          matches:
+            '@TextView[index=2] <3 ViewGroup[childCount=3] <<n [id="com.netease.cloudmusic:id/container"]',
+          snapshotUrls: 'https://i.gkd.li/import/14045424',
         },
       ],
     },
     {
       key: 8,
-      name: '发现-顶部视频广告',
+      name: '局部广告-发现页顶部视频广告',
       desc: '自动点击跳过。',
       quickFind: true,
       rules: [
@@ -236,7 +262,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '免费听弹窗',
+      name: '全屏广告-免费听弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
@@ -246,7 +272,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '功能升级弹窗',
+      name: '功能类-功能升级弹窗',
       rules: [
         {
           key: 0,
@@ -275,6 +301,20 @@ export default defineAppConfig({
           activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
           matches: '@ImageView[clickable=true] +3 * > [text="立即支持"]',
           snapshotUrls: 'https://i.gkd.li/import/13848913',
+        },
+      ],
+    },
+    {
+      key: 12,
+      name: '全屏广告-音乐回忆弹窗',
+      desc: '点击X',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches:
+            '@ImageView[index=1] <2 ViewGroup[childCount=2] <<n [id="com.netease.cloudmusic:id/dsl_dialog_root"]',
+          snapshotUrls: 'https://i.gkd.li/import/14036940',
         },
       ],
     },
