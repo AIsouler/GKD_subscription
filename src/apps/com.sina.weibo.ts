@@ -260,6 +260,13 @@ export default defineAppConfig({
           matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13852322',
         },
+        {
+          preKeys: 0,
+          key: 2,
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          matches: '[text="不想看到此类内容"]',
+          snapshotUrls: 'https://i.gkd.li/import/13958782',
+        },
       ],
     },
     {
@@ -282,6 +289,20 @@ export default defineAppConfig({
           activityIds: 'com.sina.weibo.photoalbum.imageviewer.ImageViewer',
           matches: '@LinearLayout >3 [vid="tv_dialog_item"][text^="原图"]',
           snapshotUrls: 'https://i.gkd.li/import/13929119',
+        },
+      ],
+    },
+    {
+      key: 21,
+      name: '全屏广告-最热钻超弹窗',
+      desc: '点击X',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.sina.weibo.feed.MPDialogActivity',
+          matches:
+            '@Image[text="close"] < View[childCount=4] <2 * <<n [id="com.sina.weibo:id/container"]',
+          snapshotUrls: 'https://i.gkd.li/import/14033735',
         },
       ],
     },
