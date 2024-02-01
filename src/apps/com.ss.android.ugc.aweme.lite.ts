@@ -67,5 +67,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      quickFind: true,
+      name: '功能类-选择图片时自动勾选原图',
+      rules: [
+        {
+          activityIds:
+            'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
+          matches:
+            '[id="com.ss.android.ugc.aweme.lite:id/amh"][desc^="未选中"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13946092', //未勾选原图
+            'https://i.gkd.li/import/13946033', //已勾选原图
+          ],
+        },
+      ],
+    },
   ],
 });
