@@ -170,12 +170,13 @@ type RawRuleProps = RawCommonProps & {
    * @example
    * `click`
    * // 为默认值, 如果目标节点是 clickable 的, 则使用 `clickNode`, 反之使用 `clickCenter`
+   * // 并且当 `clickNode` 事件没有被应用接收时, 则使用 `clickCenter`
    *
    * @example
    * `clickNode`
    * // 向系统发起一个点击无障碍节点事件. 即使节点在屏幕外部/或者被其它节点遮挡,也依然能够正确触发点击目标节点
    * // 但是如果目标节点不是 clickable 的, 目标 APP 通常不响应这个点击事件, 也就是点击无效果
-   * // 在极少数情况下, 即使节点是 clickable 的, APP 也不会响应节点点击事件, 此时需要手动设置 `clickCenter`
+   * // 在极少数情况下, 即使节点是 clickable 的, APP 显示接收但是不响应节点点击事件, 此时需要手动设置 `clickCenter`
    *
    * @example
    * `clickCenter`
@@ -190,6 +191,7 @@ type RawRuleProps = RawCommonProps & {
    * @example
    * `longClick`
    * // 如果目标节点是 longClickable 的, 则使用 `longClickNode`, 反之使用 `longClickCenter`
+   * // 并且当 `longClickNode` 事件没有被应用接收时, 则使用 `longClickCenter`
    *
    * @example
    * `longClickNode`
@@ -317,7 +319,7 @@ type RawGlobalRule = RawRuleProps & RawGlobalRuleProps;
 
 export type RawGlobalGroup = RawGroupProps &
   RawGlobalRuleProps & {
-    apps: RawGlobalApp[];
+    apps?: RawGlobalApp[];
     rules: RawGlobalRule[];
   };
 // --全局规则相关-->
