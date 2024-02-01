@@ -1,7 +1,7 @@
 {
   "name": "@gkd-kit/subscription",
   "type": "module",
-  "version": "1.186.0",
+  "version": "1.187.0",
   "main": "./dist/gkd.json5",
   "unpkg": "./dist/gkd.json5",
   "jsdelivr": "./dist/gkd.json5",
