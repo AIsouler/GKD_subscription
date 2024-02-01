@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '评论区顶部公告横幅',
+      name: '局部广告-评论区顶部公告横幅',
       quickFind: true,
       excludeActivityIds: [
         'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3', // 直播间
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -43,7 +43,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '动态推荐广告卡片',
+      name: '局部广告-动态推荐广告卡片',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
       quickFind: true,
       matchDelay: 5000,
@@ -65,7 +65,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '视频底部与评论区中间卡片式广告',
+      name: '分段广告-视频底部与评论区中间卡片式广告',
       desc: '需点击二次弹窗 屏蔽原因',
       quickFind: true,
       activityIds: [
@@ -102,7 +102,7 @@ export default defineAppConfig({
     // key = 5已弃用
     {
       key: 6,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       matchDelay: 5000,
@@ -126,7 +126,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '视频悬浮广告',
+      name: '局部广告-视频悬浮广告',
       desc: '领取大会员月卡,B站免流星卡',
       quickFind: true,
       matchTime: 10000,
@@ -147,7 +147,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '直播间卡片广告',
+      name: '局部广告-直播间卡片广告',
       desc: '直播间底部售卖卡片-点击右上角x',
       quickFind: true,
       matchTime: 10000,
@@ -159,7 +159,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -177,33 +177,55 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '首页-推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
+      name: '分段广告-首页-推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
       quickFind: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
           key: 0,
           name: '点击广告卡片右下角菜单按钮',
+          actionMaximum: 1,
+          resetMatch: 'activity',
+          actionCd: 500,
           matches:
-            '[id="tv.danmaku.bili:id/ad_tint_frame"] [id="tv.danmaku.bili:id/more"]',
-          snapshotUrls: 'https://i.gkd.li/import/13256570',
+            'RelativeLayout[desc^="广告"] > ViewGroup[childCount=3] > FrameLayout[index=2]',
+          snapshotUrls: 'https://i.gkd.li/import/14083540',
         },
         {
-          preKeys: 0,
+          key: 3,
+          actionMaximum: 1,
+          resetMatch: 'activity',
+          actionCd: 500,
+          matches:
+            'ViewGroup[desc^="广告"] >2 ViewGroup[childCount=3] > FrameLayout[index=2]',
+          snapshotUrls: 'https://i.gkd.li/import/14059876',
+        },
+        {
+          preKeys: [0,3],
           key: 1,
-          name: '点击[不感兴趣]',
-          matches: '@RelativeLayout > [text$="不感兴趣"]',
+          name: '点击[不感兴趣]/[相似内容过多]',
+          matches:
+            '@TextView < RelativeLayout[index=0] < LinearLayout[index=0] < [id="tv.danmaku.bili:id/dislike_reasons"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13256605',
             'https://i.gkd.li/import/13625309',
             'https://i.gkd.li/import/13742257',
+            'https://i.gkd.li/import/14059882',
+            'https://i.gkd.li/import/13945597',
           ],
+        },
+        {
+          preKeys: 0,
+          key: 2,
+          matches:
+            'RecyclerView[childCount=2] > RelativeLayout[index=1] > [id="tv.danmaku.bili:id/item"]',
+          snapshotUrls: 'https://i.gkd.li/import/13742257',
         },
       ],
     },
     {
       key: 11,
-      name: '个性化内容推荐弹窗',
+      name: '局部广告-个性化内容推荐弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
