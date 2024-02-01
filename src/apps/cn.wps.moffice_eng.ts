@@ -116,5 +116,29 @@ export default defineAppConfig({
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13804525',
     },
+    {
+      key: 7,
+      quickFind: true,
+      name: '局部广告-首页底部升级会员卡片',
+      rules: [
+        {
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches: '[id="cn.wps.moffice_eng:id/phone_message_close_button"]',
+          snapshotUrls: 'https://i.gkd.li/import/13945839',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '全屏广告-体验超级会员弹窗',
+      rules: [
+        {
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches:
+            '[id="cn.wps.moffice_eng:id/push_tips_ptr_super_webview"] >6 TextView[index=2]',
+          snapshotUrls: 'https://i.gkd.li/import/13945835',
+        },
+      ],
+    },
   ],
 });
