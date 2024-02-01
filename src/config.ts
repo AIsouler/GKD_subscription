@@ -10,9 +10,9 @@ const subsConfig: RawSubscription = {
   author: 'AIsouler',
   supportUri: 'https://github.com/AIsouler/subscription',
   updateUrl:
-    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files',
+    'https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5',
   checkUpdateUrl:
-    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json',
+    'https://raw.githubusercontent.com/AIsouler/subscription/main/dist/AIsouler_gkd.version.json',
   globalGroups,
   categories,
   apps,

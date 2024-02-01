@@ -7,7 +7,7 @@ AIsouler维护的GKD规则, 仅启用 `开屏广告` 一类规则, 其它所有�
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://fastly.jsdelivr.net/npm/@gkd-kit/subscription
+https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5
 ```
 
 当前版本: v185
