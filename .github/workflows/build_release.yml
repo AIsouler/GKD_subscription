@@ -1,6 +1,9 @@
 name: build_release
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 16 * * *
 
 jobs:
   build_release:
@@ -56,13 +59,3 @@ jobs:
           tag_name: v${{ steps.version.outputs.version }}
           release_name: Release ${{ steps.version.outputs.version }}
           body_path: ./CHANGELOG.md
-
-      - name: Publish package
-        if: ${{ steps.commit.outcome == 'success' }}
-        run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-          pnpm publish
-
-      - name: sync npmmirror
-        if: ${{ steps.commit.outcome == 'success' }}
-        run: curl -X PUT 'https://registry-direct.npmmirror.com/@gkd-kit/subscription/sync'

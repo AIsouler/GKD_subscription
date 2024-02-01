@@ -7,7 +7,7 @@ on:
 
 jobs:
   check:
-    if: github.repository == 'gkd-kit/subscription'
+    if: github.repository == 'AIsouler/subscription'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
