@@ -84,7 +84,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '红包弹窗',
+      name: '全屏广告-红包弹窗',
       rules: [
         {
           key: 0,
@@ -107,6 +107,13 @@ export default defineAppConfig({
           matches:
             '[text="百亿补贴"] > View > View > @View[clickable=true] +n [text^="立即领取"]',
           snapshotUrls: 'https://i.gkd.li/import/13669963',
+        },
+        {
+          key: 3,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '[id="com.xunmeng.pinduoduo:id/pdd"] View[childCount=3][clickable=false] > Image[index=0]',
+          snapshotUrls: 'https://i.gkd.li/import/13944160',
         },
       ],
     },
@@ -228,6 +235,57 @@ export default defineAppConfig({
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
           matches: '[id="com.xunmeng.pinduoduo:id/pdd"] >7 [text="关闭弹窗"]',
           snapshotUrls: 'https://i.gkd.li/import/13927594',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '全屏广告-金币翻倍特权弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '[id="com.xunmeng.pinduoduo:id/pdd"] ViewGroup[childCount=4] > ImageView[clickable=true][desc=null]',
+          snapshotUrls: 'https://i.gkd.li/import/13944165',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '全屏广告-红包助手打款弹窗',
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '[id="com.xunmeng.pinduoduo:id/pdd"][childCount=1] >4 ImageView[id=null]',
+          snapshotUrls: 'https://i.gkd.li/import/13972251',
+        },
+      ],
+    },
+    {
+      key: 15,
+      name: '全屏广告-多多视频-上滑看视频得现金弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches: '[text="上滑看视频得现金"] - [text="webp"]',
+          snapshotUrls: 'https://i.gkd.li/import/13809053',
+        },
+      ],
+    },
+    {
+      key: 16,
+      name: '青少年模式',
+      desc: '点击我知道了',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '[text="青少年模式"] < FrameLayout +5 ViewGroup [text="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/import/13809053',
         },
       ],
     },
