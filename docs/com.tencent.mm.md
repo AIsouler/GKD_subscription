@@ -1,6 +1,6 @@
 # 微信
 
-存在 20 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 22 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 分段广告-朋友圈广告
 
@@ -78,9 +78,10 @@
 - [快照-2](https://i.gkd.li/import/12646837)
 - [快照-3](https://i.gkd.li/import/12678937)
 - [快照-4](https://i.gkd.li/import/12714427)
-- [快照-5](https://i.gkd.li/import/12700183)
-- [快照-6](https://i.gkd.li/import/12701503)
-- [快照-7](https://i.gkd.li/import/12714424)
+- [快照-5](https://i.gkd.li/import/14006180)
+- [快照-6](https://i.gkd.li/import/12700183)
+- [快照-7](https://i.gkd.li/import/12701503)
+- [快照-8](https://i.gkd.li/import/12714424)
 
 ## 功能类-自动选中发送原图
 
@@ -97,8 +98,10 @@
 - [快照-0](https://i.gkd.li/import/12642234)
 - [快照-1](https://i.gkd.li/import/12722301)
 - [快照-2](https://i.gkd.li/import/12722331)
-- [快照-3](https://i.gkd.li/import/12642238)
-- [快照-4](https://i.gkd.li/import/12700191)
+- [快照-3](https://i.gkd.li/import/14006203)
+- [快照-4](https://i.gkd.li/import/12642238)
+- [快照-5](https://i.gkd.li/import/14006206)
+- [快照-6](https://i.gkd.li/import/12700191)
 
 ## 功能类-自动查看原图
 
@@ -167,3 +170,15 @@
 
 - [快照-0](https://i.gkd.li/import/13790550)
 - [快照-1](https://i.gkd.li/import/13790949)
+
+## 全屏广告-小程序-同程旅行
+
+默认禁用 - 首页弹窗广告
+
+- [快照-0](https://i.gkd.li/import/13999900)
+
+## 功能类-开启青少年模式后的每日验证
+
+默认禁用 - 点击"验证密码"
+
+- [快照-0](https://i.gkd.li/import/14050004)

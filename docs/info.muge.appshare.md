@@ -1,6 +1,6 @@
 # AppShare
 
-存在 3 规则组 - [info.muge.appshare](/src/apps/info.muge.appshare.ts)
+存在 4 规则组 - [info.muge.appshare](/src/apps/info.muge.appshare.ts)
 
 ## 开屏广告
 
@@ -27,3 +27,10 @@
 
 - [快照-0](https://i.gkd.li/import/13931265)
 - [快照-1](https://i.gkd.li/import/13931279)
+
+## 分段广告-软件详情页广告
+
+默认禁用 - 有二次弹窗
+
+- [快照-0](https://i.gkd.li/import/13758909)
+- [快照-1](https://i.gkd.li/import/13944942)

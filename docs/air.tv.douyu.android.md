@@ -8,11 +8,11 @@
 
 - [快照-0](https://i.gkd.li/import/12472598)
 
-## 新版本弹窗
+## 更新提示
 
 默认禁用
 
-## 直播间广告
+## 局部广告-直播间广告
 
 默认禁用
 
@@ -22,3 +22,4 @@
 - [快照-3](https://i.gkd.li/import/13056107)
 - [快照-4](https://i.gkd.li/import/13056107)
 - [快照-5](https://i.gkd.li/import/13056107)
+- [快照-6](https://i.gkd.li/import/13948990)

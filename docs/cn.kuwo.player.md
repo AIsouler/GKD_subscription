@@ -2,9 +2,8 @@
 
 存在 1 规则组 - [cn.kuwo.player](/src/apps/cn.kuwo.player.ts)
 
-## 开屏、切屏广告
+## 全屏广告-酷我会员日弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12727887)
-- [快照-1](https://i.gkd.li/import/12740634)
+- [快照-0](https://i.gkd.li/import/13974483)

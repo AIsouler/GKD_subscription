@@ -2,7 +2,7 @@
 
 存在 7 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
 
-## 视频详情页广告
+## 分段广告-视频详情页广告
 
 默认禁用
 
@@ -13,14 +13,15 @@
 - [快照-4](https://i.gkd.li/import/12882988)
 - [快照-5](https://i.gkd.li/import/13228423)
 
-## 视频详情-直播推荐
+## 分段广告-视频详情页直播推荐
 
 默认禁用 - 自动点击【减少推荐】
 
 - [快照-0](https://i.gkd.li/import/12707701)
 - [快照-1](https://i.gkd.li/import/12707710)
+- [快照-2](https://i.gkd.li/import/14005330)
 
-## 应用内广告弹窗
+## 全屏广告-应用内广告弹窗
 
 默认禁用 - ⚠ 此规则容易误触，因此默认关闭。
 
@@ -45,7 +46,7 @@
 - [快照-18](https://i.gkd.li/import/13761275)
 - [快照-19](https://i.gkd.li/import/12879452)
 
-## 【下载页】广告卡片
+## 分段广告-【下载页】广告卡片
 
 默认禁用 - 需选二次弹窗关闭原因
 
@@ -56,19 +57,19 @@
 - [快照-4](https://i.gkd.li/import/13198070)
 - [快照-5](https://i.gkd.li/import/13484249)
 
-## 搜索页面-顶部banner广告
+## 局部广告-搜索页面顶部广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12882892)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13228920)
 
-## 会员续费广告
+## 全屏广告-会员续费广告
 
 默认禁用
 

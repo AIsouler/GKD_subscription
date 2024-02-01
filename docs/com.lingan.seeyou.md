@@ -2,6 +2,8 @@
 
 存在 1 规则组 - [com.lingan.seeyou](/src/apps/com.lingan.seeyou.ts)
 
-## 开屏广告
+## 局部广告-评论区上方卡片广告
 
-- [快照-0](https://i.gkd.li/import/13065769)
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/14034770)

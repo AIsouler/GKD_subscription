@@ -2,6 +2,9 @@
 
 存在 1 规则组 - [com.sgcc.evs.echarge](/src/apps/com.sgcc.evs.echarge.ts)
 
-## 开屏广告
+## 全屏广告-首页广告弹窗
 
-- [快照-0](https://i.gkd.li/import/13213926)
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/13958838)
+- [快照-1](https://i.gkd.li/import/14005508)

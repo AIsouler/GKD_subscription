@@ -2,6 +2,8 @@
 
 存在 1 规则组 - [com.aiwu.market](/src/apps/com.aiwu.market.ts)
 
-## 开屏广告
+## 青少年模式
 
-- [快照-0](https://i.gkd.li/import/13295919)
+默认禁用 - 点击"我知道了"
+
+- [快照-0](https://i.gkd.li/import/14032203)

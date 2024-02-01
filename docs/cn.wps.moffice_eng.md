@@ -1,6 +1,6 @@
 # WPS
 
-存在 6 规则组 - [cn.wps.moffice_eng](/src/apps/cn.wps.moffice_eng.ts)
+存在 8 规则组 - [cn.wps.moffice_eng](/src/apps/cn.wps.moffice_eng.ts)
 
 ## 首页-文档列表广告
 
@@ -47,3 +47,15 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13804525)
+
+## 局部广告-首页底部升级会员卡片
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13945839)
+
+## 全屏广告-体验超级会员弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13945835)

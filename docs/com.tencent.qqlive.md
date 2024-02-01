@@ -8,6 +8,7 @@
 - [快照-1](https://i.gkd.li/import/12700122)
 - [快照-2](https://i.gkd.li/import/12700541)
 - [快照-3](https://i.gkd.li/import/12910953)
+- [快照-4](https://i.gkd.li/import/14049316)
 
 ## 青少年模式弹窗
 
@@ -45,7 +46,7 @@
 - [快照-16](https://i.gkd.li/import/13685877)
 - [快照-17](https://i.gkd.li/import/13703298)
 
-## 视频播放时的广告
+## 全屏广告-视频播放时的广告
 
 默认禁用 - 自动点击 跳过广告
 
@@ -54,6 +55,8 @@
 - [快照-2](https://i.gkd.li/import/13043079)
 - [快照-3](https://i.gkd.li/import/13526547)
 - [快照-4](https://i.gkd.li/import/13695067)
+- [快照-5](https://i.gkd.li/import/13946107)
+- [快照-6](https://i.gkd.li/import/14001277)
 
 ## 全屏广告-首页-广告弹窗
 

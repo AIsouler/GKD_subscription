@@ -1,6 +1,6 @@
 # QQ
 
-存在 20 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 21 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -152,7 +152,7 @@
 
 - [快照-0](https://i.gkd.li/import/13526551)
 
-## 钱包-卡片广告
+## 分段广告-钱包页卡片广告
 
 默认禁用
 
@@ -164,3 +164,10 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13797876)
+
+## 分段广告-天气页卡片广告
+
+默认禁用 - 点击关闭-点击关闭此条广告
+
+- [快照-0](https://i.gkd.li/import/14019384)
+- [快照-1](https://i.gkd.li/import/14019401)

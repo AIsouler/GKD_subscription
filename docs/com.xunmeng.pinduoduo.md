@@ -1,6 +1,6 @@
 # 拼多多
 
-存在 12 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 16 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 更新弹窗
 
@@ -25,13 +25,14 @@
 - [快照-1](https://i.gkd.li/import/12642038)
 - [快照-2](https://i.gkd.li/import/13308175)
 
-## 红包弹窗
+## 全屏广告-红包弹窗
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642023)
 - [快照-1](https://i.gkd.li/import/13625441)
 - [快照-2](https://i.gkd.li/import/13669963)
+- [快照-3](https://i.gkd.li/import/13944160)
 
 ## 全屏广告-多多买菜抽奖弹窗
 
@@ -85,3 +86,27 @@
 默认禁用 - 点击X
 
 - [快照-0](https://i.gkd.li/import/13927594)
+
+## 全屏广告-金币翻倍特权弹窗
+
+默认禁用 - 点击X
+
+- [快照-0](https://i.gkd.li/import/13944165)
+
+## 全屏广告-红包助手打款弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13972251)
+
+## 全屏广告-多多视频-上滑看视频得现金弹窗
+
+默认禁用 - 点击关闭
+
+- [快照-0](https://i.gkd.li/import/13809053)
+
+## 青少年模式
+
+默认禁用 - 点击我知道了
+
+- [快照-0](https://i.gkd.li/import/13809053)
