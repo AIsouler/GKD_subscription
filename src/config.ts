@@ -12,7 +12,7 @@ const subsConfig: RawSubscription = {
   updateUrl:
     'https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5',
   checkUpdateUrl:
-    'https://raw.githubusercontent.com/AIsouler/subscription/main/dist/AIsouler_gkd.version.json',
+    'https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.version.json',
   globalGroups,
   categories,
   apps,
