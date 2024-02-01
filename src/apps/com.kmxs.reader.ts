@@ -133,5 +133,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      quickFind: true,
+      name: '全屏广告-今日专属推荐弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          matches: '[id="com.kmxs.reader:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13941276',
+        },
+      ],
+    },
   ],
 });
