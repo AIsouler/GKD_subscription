@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '首页-广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       quickFind: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
       rules: '[id="com.duokan.reader:id/store_feed_layer_close"]',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '小说推荐弹窗',
+      name: '全屏广告-小说推荐弹窗',
       rules: [
         {
           key: 1,
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '小说页广告',
+      name: '局部广告-小说页广告',
       desc: '小说页面下方出现的条形广告',
       quickFind: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
@@ -39,7 +39,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '小说页全屏卡片广告',
+      name: '分段广告-小说页全屏卡片广告',
       desc: '点击关闭和确定按钮',
       quickFind: true,
       rules: [
@@ -58,6 +58,23 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/import/13498048',
         'https://i.gkd.li/import/13497990',
+      ],
+    },
+    {
+      key: 6,
+      name: '更新提示',
+      desc: '点击以后再说',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.duokan.reader.DkMainActivity',
+          matches:
+            '[id="com.duokan.reader:id/general__common_dialog_view__button_frame"] >2 [text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/import/14007573',
+        },
       ],
     },
   ],
