@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '关闭青少年弹窗',
+      name: '青少年模式',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '关闭用户推荐',
+      name: '局部广告-关闭用户推荐',
       rules: [
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
@@ -54,7 +54,7 @@ export default defineAppConfig({
 
       quickFind: true,
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
-      name: '关闭朋友推荐弹窗',
+      name: '全屏广告-关闭朋友推荐弹窗',
       rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12525387',
@@ -63,7 +63,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '关闭更新弹窗',
+      name: '更新提示-关闭更新弹窗',
 
       quickFind: true,
       actionMaximum: 1,
@@ -77,7 +77,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '首页左上角广告',
+      name: '局部广告-首页左上角广告',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules:
         'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
@@ -85,7 +85,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       quickFind: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
@@ -96,7 +96,7 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      name: '去商店评分',
+      name: '评价提示-去商店评分',
       desc: '点击[取消]',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="取消"] +2 [text="五星好评"]',
@@ -117,7 +117,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求开启通知提示信息',
+      name: '通知提示-请求开启通知提示信息',
       desc: '自动点击“暂不”',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -140,7 +140,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '自动勾选原图',
+      name: '功能类-自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
       quickFind: true,
       activityIds:
@@ -154,7 +154,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 12,
-      name: '休息提醒',
+      name: '全屏广告-休息提醒',
       quickFind: true,
       rules: [
         {
@@ -172,7 +172,7 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '添加快捷方式到桌面',
+      name: '全屏广告-添加快捷方式到桌面',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -195,17 +195,30 @@ export default defineAppConfig({
     },
     {
       key: 14,
-      name: '视频播放中途插入的打招呼界面',
+      name: '全屏广告-视频播放中途插入的打招呼界面',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: 'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
       snapshotUrls: 'https://i.gkd.li/import/13379307',
     },
     {
       key: 15,
-      name: '关闭商城推荐',
+      name: '全屏广告-关闭商城推荐',
       desc: '点击【不感兴趣】',
       rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
       snapshotUrls: 'https://i.gkd.li/import/13800207',
+    },
+    {
+      key: 16,
+      quickFind: true,
+      name: '局部广告-拍同款弹窗',
+      desc: '点击不感兴趣',
+      rules: [
+        {
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches: '@LynxFlattenUI[text="不感兴趣"] +4 [text="拍同款"]',
+          snapshotUrls: 'https://i.gkd.li/import/13996724',
+        },
+      ],
     },
   ],
 });
