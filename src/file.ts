@@ -58,8 +58,8 @@ const pkg: typeof PkgT = JSON.parse(
 );
 const pkgKeys = Object.keys(pkg);
 
-const gkdFp = process.cwd() + '/dist/gkd.json5';
-const versionFp = process.cwd() + '/dist/gkd.version.json';
+const gkdFp = process.cwd() + '/dist/AIsouler_gkd.json5';
+const versionFp = process.cwd() + '/dist/AIsouler_gkd.version.json';
 const oldConfig: RawSubscription = JSON5.parse(
   await fs.readFile(gkdFp, 'utf-8').catch(() => '{}'),
 );

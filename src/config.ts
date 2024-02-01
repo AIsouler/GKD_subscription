@@ -6,9 +6,9 @@ import type { RawSubscription } from './types';
 const subsConfig: RawSubscription = {
   id: 0,
   version: 0,
-  name: '默认订阅',
-  author: 'lisonge',
-  supportUri: 'https://github.com/gkd-kit/subscription',
+  name: 'AIsouler的GKD订阅',
+  author: 'AIsouler',
+  supportUri: 'https://github.com/AIsouler/subscription',
   updateUrl:
     'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files',
   checkUpdateUrl:
