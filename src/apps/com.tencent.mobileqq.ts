@@ -413,9 +413,12 @@ export default defineAppConfig({
     {
       enable: false,
       key: 20,
-      name: '钱包-卡片广告',
+      name: '分段广告-钱包页卡片广告',
       quickFind: true,
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -442,6 +445,27 @@ export default defineAppConfig({
           matches:
             'ViewGroup[childCount=2] > ViewGroup[childCount=3][index=1] > ViewGroup[clickable=true][visibleToUser=true][index=1][childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13797876',
+        },
+      ],
+    },
+    {
+      key: 22,
+      name: '分段广告-天气页卡片广告',
+      desc: '点击关闭-点击关闭此条广告',
+      quickFind: true,
+      activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
+      rules: [
+        {
+          key: 0,
+
+          matches: '[id="com.tencent.mobileqq:id/nca"]',
+          snapshotUrls: 'https://i.gkd.li/import/14019384',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches: '@LinearLayout[childCount=3] > [text="关闭此条广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/14019401',
         },
       ],
     },
