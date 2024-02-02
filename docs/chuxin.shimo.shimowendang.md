@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [chuxin.shimo.shimowendang](/src/apps/chuxin.shimo.shimowendang.ts)
 
-## 首页顶部横幅广告
+## 局部广告-首页顶部横幅广告
 
 默认禁用
 
