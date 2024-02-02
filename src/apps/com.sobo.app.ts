@@ -20,5 +20,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-广告弹窗',
+      desc: '点击X',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.sobo.app.MainActivity',
+          matches:
+            '@ImageView[visibleToUser=true] < FrameLayout <2 FrameLayout[childCount=4] <<n [id="android:id/content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3ed9ad25-083f-4d69-b944-360a6bc2233f',
+          snapshotUrls: 'https://i.gkd.li/import/14133546',
+        },
+      ],
+    },
   ],
 });
