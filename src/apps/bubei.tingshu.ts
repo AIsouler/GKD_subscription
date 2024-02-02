@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '悬浮广告',
+      name: '局部广告-悬浮广告',
       rules: [
         {
           key: 0,
@@ -22,7 +22,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,

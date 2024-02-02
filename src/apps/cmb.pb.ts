@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      name: '朝朝宝-广告弹窗',
+      name: '全屏广告-广告弹窗',
       activityIds:
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
