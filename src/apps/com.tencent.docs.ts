@@ -16,9 +16,9 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
-      activityIds: 'com.tencent.docs.DocsFlutterActivity',
+      resetMatch: 'app',
       rules: '@[desc="暂不更新"] + [desc="现在更新"]',
       snapshotUrls: 'https://i.gkd.li/import/13198091',
     },
