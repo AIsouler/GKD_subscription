@@ -13,5 +13,14 @@ export default defineAppConfig({
       rules: '[id="com.xingye.app:id/teenagerDialogConfirmTv"]',
       snapshotUrls: 'https://i.gkd.li/import/13766001',
     },
+    {
+      key: 2,
+      name: '更新提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '[vid="settingUpdateCancelTv"]',
+      snapshotUrls: 'https://i.gkd.li/import/14137987',
+    },
   ],
 });
