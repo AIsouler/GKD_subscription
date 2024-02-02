@@ -80,5 +80,26 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      desc: '点击"暂不"',
+      matchTime: 10000,
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds: [
+            'com.aster.comic.app.view.bookdetails.BookdetailsActivity',
+            'com.aster.comic.app.view.MainActivity',
+          ],
+          matches: '[id="com.paokeji.yiqu:id/btnCancel"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2ce54292-bfc6-41c6-b2e5-e7d8302fc522',
+          snapshotUrls: 'https://i.gkd.li/import/14140265',
+        },
+      ],
+    },
   ],
 });
