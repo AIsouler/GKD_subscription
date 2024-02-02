@@ -7,6 +7,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新弹窗',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'bin.mt.plus.Main',
       rules: '@[text="取消"] + [text="更新"]',
       snapshotUrls: 'https://i.gkd.li/import/12908784',
