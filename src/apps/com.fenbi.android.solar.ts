@@ -31,6 +31,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
+          activityIds:
+            'com.fenbi.tutorinternal.activity.ReplayActivityWithQuestion',
           matches: '[id="com.fenbi.android.solar:id/tv_cancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7864769f-542c-4f76-8b90-4d030b53651b',
