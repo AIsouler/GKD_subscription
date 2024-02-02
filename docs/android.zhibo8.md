@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [android.zhibo8](/src/apps/android.zhibo8.ts)
 
-## 信息流广告
+## 局部广告-信息流广告
 
 默认禁用
 

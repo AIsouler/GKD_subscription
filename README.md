@@ -10,9 +10,9 @@
 https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5
 ```
 
-当前版本: v187 (默认订阅最新版本号为v185，v185之后的为该仓库新增的版本)
+当前版本: v188 (默认订阅最新版本号为v185，v185之后的为该仓库新增的版本)
 
-当前订阅文件已适配 633 个 APP, 共有 1433 规则组
+当前订阅文件已适配 634 个 APP, 共有 1443 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -20,7 +20,7 @@ https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=187)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=188)
 
 ## 感谢以下项目
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [bin.mt.plus.canary](/src/apps/bin.mt.plus.canary.ts)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 
