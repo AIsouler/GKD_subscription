@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
