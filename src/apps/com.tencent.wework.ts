@@ -5,13 +5,15 @@ export default defineAppConfig({
   name: '企业微信',
   groups: [
     {
+      // 节点id疑似随机生成,尽量不用id属性
       key: 1,
       name: '功能类-自动抢红包',
       desc: '自己发的红包不抢',
-      quickFind: true,
       rules: [
         {
           key: 0,
+          quickFind: true,
+          name: '点击别人发的红包',
           activityIds:
             'com.tencent.wework.msg.controller.ExternalContactMessageListActivity',
           matches:
@@ -26,19 +28,25 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 1,
+          name: '开红包',
           activityIds:
             'com.tencent.wework.enterprise.redenvelopes.controller.RedEnvelopeCollectorActivity',
-          matches: '[id="com.tencent.wework:id/ivo"]',
+          matches:
+            'RelativeLayout[childCount=3] > FrameLayout + RelativeLayout[childCount=3] + ImageView',
           exampleUrls:
             'https://m.gkd.li/57941037/52525cdb-0746-483c-b1ba-2282f3a8b8ed',
-          snapshotUrls: 'https://i.gkd.li/import/14151108',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14151108',
+            'https://i.gkd.li/import/14151215',
+          ],
         },
         {
           preKeys: [0, 1],
           key: 2,
+          name: '从金额页面返回到聊天页面',
           activityIds:
             'com.tencent.wework.enterprise.redenvelopes.controller.RedEnvelopeDetailActivity',
-          matches: '[id="com.tencent.wework:id/lx9"]',
+          matches: 'LinearLayout[childCount=3] > LinearLayout TextView',
           exampleUrls:
             'https://m.gkd.li/57941037/2a69cf93-1d10-48c4-8456-663197c6feca',
           snapshotUrls: 'https://i.gkd.li/import/14151120',
