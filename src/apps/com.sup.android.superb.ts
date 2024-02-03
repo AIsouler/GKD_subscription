@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '请求开启通知权限弹窗',
+      name: '通知提示-请求开启通知权限弹窗',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -24,7 +24,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '右上角红包悬浮窗',
+      name: '局部广告-右上角红包悬浮窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -58,6 +58,21 @@ export default defineAppConfig({
           activityIds: 'com.sup.android.base.MainActivity',
           matches: '[id="com.sup.android.superb:id/a1i"]',
           snapshotUrls: 'https://i.gkd.li/import/14005608',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '全屏广告-集五福弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.sup.android.base.MainActivity',
+          matches: '[id="com.sup.android.superb:id/afa"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/246d1d0b-d493-4d40-bbb7-9c04ae6b457d',
+          snapshotUrls: 'https://i.gkd.li/import/14151026',
         },
       ],
     },
