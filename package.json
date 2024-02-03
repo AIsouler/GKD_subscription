@@ -1,10 +1,10 @@
 {
-  "name": "@gkd-kit/subscription",
+  "name": "@aisouler/gkd_subscription",
   "type": "module",
   "version": "1.190.0",
-  "main": "./dist/gkd.json5",
-  "unpkg": "./dist/gkd.json5",
-  "jsdelivr": "./dist/gkd.json5",
+  "main": "./dist/AIsouler_gkd.json5",
+  "unpkg": "./dist/AIsouler_gkd.json5",
+  "jsdelivr": "./dist/AIsouler_gkd.json5",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -43,15 +43,15 @@
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
-  "author": "lisonge",
+  "author": "AIsouler",
   "license": "MIT",
-  "homepage": "https://github.com/gkd-kit/subscription#readme",
+  "homepage": "https://github.com/AIsouler/GKD_subscription#readme",
   "bugs": {
-    "url": "https://github.com/gkd-kit/subscription/issues"
+    "url": "https://github.com/AIsouler/GKD_subscription/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gkd-kit/subscription.git"
+    "url": "git+https://github.com/AIsouler/GKD_subscription.git"
   },
   "volta": {
     "node": "20.9.0"
