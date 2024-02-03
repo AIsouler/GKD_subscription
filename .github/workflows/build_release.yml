@@ -65,4 +65,4 @@ jobs:
 
       - name: sync npmmirror
         if: ${{ steps.commit.outcome == 'success' }}
-        run: curl -X PUT 'https://registry-direct.npmmirror.com/@gkd-kit/subscription/sync'
+        run: curl -X PUT 'https://registry-direct.npmmirror.com/@AIsouler/GKD_subscription/sync'
