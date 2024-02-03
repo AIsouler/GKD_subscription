@@ -167,8 +167,8 @@
 | 点心云                 | [com.dianxinai.mobile](/docs/com.dianxinai.mobile.md)                                                                                                             | 1      |
 | 滴宠生活               | [com.mxchip.petmarvel](/docs/com.mxchip.petmarvel.md)                                                                                                             | 1      |
 | 嘀嗒出行               | [com.didapinche.booking](/docs/com.didapinche.booking.md)                                                                                                         | 1      |
-| 滴滴                   | [com.sdu.didi.psnger](/docs/com.sdu.didi.psnger.md)                                                                                                               | 1      |
 | 滴滴车主               | [com.sdu.didi.gsui](/docs/com.sdu.didi.gsui.md)                                                                                                                   | 1      |
+| 滴滴出行               | [com.sdu.didi.psnger](/docs/com.sdu.didi.psnger.md)                                                                                                               | 1      |
 | 叮当快药               | [com.ddsy.songyao](/docs/com.ddsy.songyao.md)                                                                                                                     | 1      |
 | 钉钉                   | [com.alibaba.android.rimet](/docs/com.alibaba.android.rimet.md)                                                                                                   | 5      |
 | 懂车帝                 | [com.ss.android.auto](/docs/com.ss.android.auto.md)                                                                                                               | 8      |
@@ -266,7 +266,7 @@
 | 交易猫                 | [com.jym.mall](/docs/com.jym.mall.md)                                                                                                                             | 1      |
 | 驾校一点通             | [com.jxedt](/docs/com.jxedt.md)                                                                                                                                   | 2      |
 | 解压专家               | [com.fileunzip.zxwknight](/docs/com.fileunzip.zxwknight.md)                                                                                                       | 2      |
-| 京东                   | [com.jingdong.app.mall](/docs/com.jingdong.app.mall.md)                                                                                                           | 10     |
+| 京东                   | [com.jingdong.app.mall](/docs/com.jingdong.app.mall.md)                                                                                                           | 9      |
 | 京东到家               | [com.jingdong.pdj](/docs/com.jingdong.pdj.md)                                                                                                                     | 2      |
 | 京东读书               | [com.jd.app.reader](/docs/com.jd.app.reader.md)                                                                                                                   | 3      |
 | 京东金融               | [com.jd.jrapp](/docs/com.jd.jrapp.md)                                                                                                                             | 3      |
@@ -332,8 +332,6 @@
 | 咪咕视频               | [com.cmcc.cmvideo](/docs/com.cmcc.cmvideo.md)                                                                                                                     | 5      |
 | 咪咕音乐               | [cmccwm.mobilemusic](/docs/cmccwm.mobilemusic.md)                                                                                                                 | 1      |
 | 米家                   | [com.xiaomi.smarthome](/docs/com.xiaomi.smarthome.md)                                                                                                             | 2      |
-| miui系统广告           | [com.miui.systemAdSolution](/docs/com.miui.systemAdSolution.md)                                                                                                   | 1      |
-| miui主题壁纸           | [com.android.thememanager](/docs/com.android.thememanager.md)                                                                                                     | 2      |
 | 蜜雪冰城               | [com.mxbc.mxsa](/docs/com.mxbc.mxsa.md)                                                                                                                           | 1      |
 | 蜜雪冰城鸿蒙版         | [com.mxbc.ohsa](/docs/com.mxbc.ohsa.md)                                                                                                                           | 1      |
 | 米游社                 | [com.mihoyo.hyperion](/docs/com.mihoyo.hyperion.md)                                                                                                               | 3      |
@@ -355,7 +353,7 @@
 | 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 16     |
 | 皮皮搞笑               | [cn.xiaochuankeji.zuiyouLite](/docs/cn.xiaochuankeji.zuiyouLite.md)                                                                                               | 2      |
 | 皮皮喵                 | [com.gentle.ppcat](/docs/com.gentle.ppcat.md)                                                                                                                     | 1      |
-| 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 5      |
+| 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 6      |
 | 浦发银行               | [cn.com.spdb.mobilebank.per](/docs/cn.com.spdb.mobilebank.per.md)                                                                                                 | 1      |
 | 普益基金               | [com.pywm.fund](/docs/com.pywm.fund.md)                                                                                                                           | 1      |
 | 钱包                   | [com.vivo.wallet](/docs/com.vivo.wallet.md)                                                                                                                       | 1      |
@@ -371,6 +369,7 @@
 | 蜻蜓点金               | [zhongxinjiantou.szkingdom.android.newphone](/docs/zhongxinjiantou.szkingdom.android.newphone.md)                                                                 | 1      |
 | 亲邻开门               | [com.qinlin.edoor](/docs/com.qinlin.edoor.md)                                                                                                                     | 5      |
 | 汽水音乐               | [com.luna.music](/docs/com.luna.music.md)                                                                                                                         | 3      |
+| 企业微信               | [com.tencent.wework](/docs/com.tencent.wework.md)                                                                                                                 | 1      |
 | 全民K歌                | [com.tencent.karaoke](/docs/com.tencent.karaoke.md)                                                                                                               | 2      |
 | 全民泡泡超人           | [com.tencent.tmgp.kgame.ppcr](/docs/com.tencent.tmgp.kgame.ppcr.md)                                                                                               | 1      |
 | 全能计算器             | [com.jincheng.supercaculator](/docs/com.jincheng.supercaculator.md)                                                                                               | 1      |
@@ -609,6 +608,7 @@
 | 智慧搜索               | [com.huawei.search](/docs/com.huawei.search.md)                                                                                                                   | 1      |
 | 智联招聘               | [com.zhaopin.social](/docs/com.zhaopin.social.md)                                                                                                                 | 4      |
 | 芝麻粒                 | [pansong291.xposed.quickenergy.repair](/docs/pansong291.xposed.quickenergy.repair.md)                                                                             | 1      |
+| 智能服务               | [com.miui.systemAdSolution](/docs/com.miui.systemAdSolution.md)                                                                                                   | 1      |
 | 智谱                   | [com.crirp.zhipu](/docs/com.crirp.zhipu.md)                                                                                                                       | 3      |
 | 芝士漫画               | [com.ping.cimoc](/docs/com.ping.cimoc.md)                                                                                                                         | 1      |
 | 知天气-决策            | [com.pcs.knowing_weather](/docs/com.pcs.knowing_weather.md)                                                                                                       | 1      |
@@ -629,6 +629,7 @@
 | 中羽在线               | [com.badmintoncn.bbs](/docs/com.badmintoncn.bbs.md)                                                                                                               | 1      |
 | 追剧达人               | [com.sjm.luobo](/docs/com.sjm.luobo.md)                                                                                                                           | 1      |
 | 追漫大全               | [com.mj.mjyd](/docs/com.mj.mjyd.md)                                                                                                                               | 1      |
+| 主题壁纸               | [com.android.thememanager](/docs/com.android.thememanager.md)                                                                                                     | 2      |
 | 淄博出行               | [com.pandabus.android.zb](/docs/com.pandabus.android.zb.md)                                                                                                       | 1      |
 | 自动点击器             | [com.zidongdianji](/docs/com.zidongdianji.md)                                                                                                                     | 1      |
 | 自考笔果题库           | [com.dep.biguo](/docs/com.dep.biguo.md)                                                                                                                           | 3      |

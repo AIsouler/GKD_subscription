@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.xiaomi.account](/src/apps/com.xiaomi.account.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 
