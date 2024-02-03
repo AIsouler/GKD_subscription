@@ -2,19 +2,19 @@
 
 存在 4 规则组 - [com.sinovatech.unicom.ui](/src/apps/com.sinovatech.unicom.ui.ts)
 
-## 权限申请
+## 权限提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13331268)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13511386)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 
