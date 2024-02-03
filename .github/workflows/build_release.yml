@@ -60,7 +60,7 @@ jobs:
       - name: Publish package
         if: ${{ steps.commit.outcome == 'success' }}
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.GITHUB_TOKEN }}
+          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           pnpm publish
 
       - name: sync npmmirror
