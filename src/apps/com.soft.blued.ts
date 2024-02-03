@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 0,
@@ -22,6 +22,15 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13694950',
             'https://i.gkd.li/import/13699455', // activityIds: 'com.soft.blued.ui.home.HomeActivity',
           ],
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.soft.blued.ui.home.HomeActivity',
+          matches: '[id="com.soft.blued:id/ad_option"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/65ee5632-c54b-4ef6-95e9-e57582ff7017',
+          snapshotUrls: 'https://i.gkd.li/import/14149470',
         },
       ],
     },
