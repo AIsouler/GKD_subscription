@@ -6,10 +6,11 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13206534)
-- [快照-1](https://i.gkd.li/import/13797001)
-- [快照-2](https://i.gkd.li/import/13206982)
-- [快照-3](https://i.gkd.li/import/13218134)
+- [快照-0](https://i.gkd.li/import/13985169)
+- [快照-1](https://i.gkd.li/import/13206534)
+- [快照-2](https://i.gkd.li/import/13797001)
+- [快照-3](https://i.gkd.li/import/13206982)
+- [快照-4](https://i.gkd.li/import/13218134)
 
 ## 全屏广告-首页-底部广告弹窗
 
@@ -17,7 +18,7 @@
 
 - [快照-0](https://i.gkd.li/import/13115121)
 
-## 功能类-内测体验弹窗
+## 更新提示-内测体验弹窗
 
 默认禁用 - 点击[不再提醒]
 
