@@ -441,7 +441,7 @@
 | 天府通                 | [com.chinarainbow.tft](/docs/com.chinarainbow.tft.md)                                                                                                             | 1      |
 | 天空影视               | [com.miaoying.appmy](/docs/com.miaoying.appmy.md)                                                                                                                 | 1      |
 | 天猫精灵               | [com.alibaba.ailabs.tg](/docs/com.alibaba.ailabs.tg.md)                                                                                                           | 1      |
-| 天天基金               | [com.eastmoney.android.fund](/docs/com.eastmoney.android.fund.md)                                                                                                 | 3      |
+| 天天基金               | [com.eastmoney.android.fund](/docs/com.eastmoney.android.fund.md)                                                                                                 | 4      |
 | 天天视频               | [com.myapp.app.xaoorti](/docs/com.myapp.app.xaoorti.md)                                                                                                           | 1      |
 | 天天跳绳               | [com.gkid.crazyrope](/docs/com.gkid.crazyrope.md)                                                                                                                 | 2      |
 | 天翼生活               | [com.ataaw.tianyi](/docs/com.ataaw.tianyi.md)                                                                                                                     | 1      |
