@@ -2,13 +2,13 @@
 
 存在 2 规则组 - [com.android.browser](/src/apps/com.android.browser.ts)
 
-## 关闭[个性推荐开启提示]
+## 局部广告-关闭[个性推荐开启提示]
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12829403)
 
-## 主页信息流广告
+## 分段广告-主页信息流广告
 
 默认禁用
 

@@ -2,25 +2,25 @@
 
 存在 4 规则组 - [com.zhaopin.social](/src/apps/com.zhaopin.social.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12706186)
 
-## 我的页面-banner广告
+## 局部广告-我的页面卡片广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12706181)
 
-## 社区-弹窗广告
+## 全屏广告-社区页面弹窗广告
 
 默认禁用
 
 - [快照-0](https://inspect.gkd.li/import/13063442)
 
-## 消息-开启消息通知
+## 通知提示-开启消息通知弹窗
 
 默认禁用 - 自动点击关闭
 

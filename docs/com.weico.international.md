@@ -2,9 +2,9 @@
 
 存在 1 规则组 - [com.weico.international](/src/apps/com.weico.international.ts)
 
-## 推荐流广告
+## 分段广告-信息流广告
 
-默认禁用 - 主页,搜索页
+默认禁用 - 出现在主页,搜索页
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b)
 
