@@ -480,10 +480,14 @@ export default defineAppConfig({
           quickFind: true,
           action: 'clickCenter',
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          matches: '[id="com.tencent.mobileqq:id/az7"]',
+          matches:
+            'RelativeLayout[childCount=4] > View + RelativeLayout[childCount=2] + ImageView + ImageView',
           exampleUrls:
             'https://m.gkd.li/57941037/b09d6db6-0e67-421a-aa7d-35453bf9a0bc',
-          snapshotUrls: 'https://i.gkd.li/import/14134934',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14134934',
+            'https://i.gkd.li/import/14151820', // 误触快照
+          ],
         },
       ],
     },
