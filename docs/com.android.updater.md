@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.android.updater](/src/apps/com.android.updater.ts)
 
-## MIUI更新弹窗
+## 更新提示-MIUI更新弹窗
 
 默认禁用
 

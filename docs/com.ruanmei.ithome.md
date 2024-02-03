@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.ruanmei.ithome](/src/apps/com.ruanmei.ithome.ts)
 
-## 资讯页-信息流广告
+## 局部广告-资讯页信息流广告
 
 默认禁用
 
