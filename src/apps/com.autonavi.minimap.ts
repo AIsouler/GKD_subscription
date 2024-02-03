@@ -30,7 +30,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '未分类-截屏分享',
+      name: '功能类-截屏分享',
       desc: '关闭截屏时app弹出的分享弹窗',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules:

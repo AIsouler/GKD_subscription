@@ -25,7 +25,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '未分类-文件即将过期提示',
+      name: '功能类-文件即将过期提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
