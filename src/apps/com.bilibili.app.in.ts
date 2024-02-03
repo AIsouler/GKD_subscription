@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 5,
-      name: '评论区-满意度评价',
+      name: '评价提示-评论区满意度评价',
       quickFind: true,
       activityIds: 'com.bilibili.video.story.StoryVideoActivity',
       rules:
@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: 'APP评分',
+      name: '评价提示-APP评分',
       quickFind: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',
@@ -23,7 +23,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '订阅感兴趣的通知',
+      name: '通知提示-订阅感兴趣的通知',
       desc: '点击【暂不开启】',
       quickFind: true,
 
@@ -32,8 +32,8 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '打开推送通知弹窗',
-      desc: '自动点击“暂不”',
+      name: '通知提示-推送通知弹窗',
+      desc: '自动点击"暂不"',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

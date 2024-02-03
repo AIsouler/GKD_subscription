@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '信息流广告-主页',
+      name: '分段广告-主页信息流广告',
       desc: '点击右上角关闭,点击我不喜欢',
       activityIds: 'com.twitter.app.main.MainActivity',
       actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
@@ -38,7 +38,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '信息流广告-帖子详情页、搜索页',
+      name: '分段广告-帖子详情页、搜索页信息流广告',
       desc: '点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]',
       quickFind: true,
       activityIds: [
@@ -103,7 +103,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '信息流广告-用户资料页',
+      name: '分段广告-用户资料页信息流广告',
       desc: '点击右上角关闭,点击我不喜欢',
       quickFind: true,
       activityIds: ['com.twitter.app.profiles.ProfileActivity'],
@@ -141,7 +141,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '评价弹窗',
+      name: '评价提示',
       quickFind: true,
       matchTime: 10000,
       enable: false,

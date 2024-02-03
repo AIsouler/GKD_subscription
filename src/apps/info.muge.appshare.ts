@@ -46,7 +46,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 0,

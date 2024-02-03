@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       rules: [
         {
           key: 0,
@@ -25,7 +25,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页优惠弹窗',
+      name: '全屏广告-首页优惠弹窗',
       rules: [
         {
           key: 0,
@@ -55,7 +55,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '活动弹窗',
+      name: '全屏广告-活动弹窗',
       rules: [
         {
           key: 0,
@@ -129,7 +129,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '多多视频悬浮窗广告',
+      name: '局部广告-多多视频悬浮窗广告',
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
       rules: [
         '@TextView[id=null][clickable=true] + Image[id=null][text="webp"]',
@@ -140,7 +140,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '多多视频每日签到弹窗',
+      name: '全屏广告-多多视频每日签到弹窗',
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
       rules: [
         '@ImageView[id=null] < ViewGroup < ViewGroup +(2) ViewGroup >(n) [text^="每日签到"]',
@@ -154,7 +154,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 8,
-      name: '商品详情页视频讲解窗口',
+      name: '局部广告-商品详情页视频讲解窗口',
       activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
       rules: '[id="com.xunmeng.pinduoduo:id/iv_float_window_close"] > TextView',
       snapshotUrls: 'https://i.gkd.li/import/13178326',
@@ -162,11 +162,10 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '多多视频每日自动签到',
+      name: '分段广告-多多视频每日自动签到',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-
       activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
       rules: [
         {
@@ -192,7 +191,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '多多视频-划到广告自动跳过',
+      name: '全屏广告-多多视频划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
       quickFind: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',

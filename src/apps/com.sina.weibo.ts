@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 3,
-      name: '兴趣领域推荐',
+      name: '全屏广告-兴趣领域推荐',
       desc: '出现在长久未登录的账户再次登录时',
       quickFind: true,
       activityIds: 'com.sina.weibo.account.interest.InterestActivity',
@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '精选博主推荐',
+      name: '全屏广告-精选博主推荐',
       desc: '出现在长久未登录的账户再次登录时',
       quickFind: true,
       activityIds: 'com.sina.weibo.account.recommend.RecommendActivity',
@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '博文内容区与评论区中间卡片式广告',
+      name: '局部广告-博文内容区与评论区中间卡片式广告',
       desc: '点击右上角x',
       quickFind: true,
       rules: [
@@ -69,7 +69,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '评论区博主内容推荐',
+      name: '局部广告-评论区博主内容推荐',
       desc: '评论区同一博主其他博文推荐',
       quickFind: true,
       rules: [
@@ -99,7 +99,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '首页顶部话题分享窗口',
+      name: '局部广告-首页顶部话题分享窗口',
       quickFind: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
@@ -108,7 +108,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -138,7 +138,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '请求开启通知弹窗',
+      name: '通知提示-请求开启通知弹窗',
       desc: '自动点击暂不开启',
       quickFind: true,
       activityIds: ['com.sina.weibo.notifyguidev2.NotifyGuideV2Activity'],
@@ -149,7 +149,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求开启通知提示信息',
+      name: '通知提示-请求开启通知提示信息',
       desc: '自动点击x按钮',
       quickFind: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
@@ -160,7 +160,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '首页顶部签到卡片',
+      name: '局部广告-首页顶部签到卡片',
       desc: '自动点击x按钮',
       quickFind: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
@@ -170,7 +170,7 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '悬浮广告',
+      name: '局部广告-悬浮广告',
       desc: '自动点击x按钮',
       quickFind: true,
       activityIds: 'com.sina.weibo.MainTabActivity',
@@ -197,7 +197,7 @@ export default defineAppConfig({
     },
     {
       key: 14,
-      name: '请求定位权限弹窗',
+      name: '定位提示-请求定位权限弹窗',
       quickFind: true,
       rules: [
         {
@@ -223,7 +223,7 @@ export default defineAppConfig({
     },
     {
       key: 15,
-      name: '评论区底部-账号推荐关注悬浮窗',
+      name: '局部广告-评论区底部账号推荐关注悬浮窗',
       desc: '点击【x】',
       quickFind: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
@@ -233,7 +233,7 @@ export default defineAppConfig({
     },
     {
       key: 16,
-      name: '评论区底部-转发推荐悬浮窗',
+      name: '局部广告-评论区底部转发推荐悬浮窗',
       desc: '点击【x】',
       quickFind: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
@@ -271,7 +271,7 @@ export default defineAppConfig({
     },
     {
       key: 18,
-      name: 'APP评分弹窗',
+      name: '评价提示-APP评分弹窗',
       desc: '点击【x】',
       quickFind: true,
       actionMaximum: 1,

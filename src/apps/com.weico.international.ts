@@ -6,8 +6,8 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '推荐流广告',
-      desc: '主页,搜索页',
+      name: '分段广告-信息流广告',
+      desc: '出现在主页,搜索页',
       activityIds: [
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',

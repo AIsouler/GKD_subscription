@@ -23,7 +23,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '关闭广告弹窗',
+      name: '分段广告-关闭广告弹窗',
       desc: '点击 关闭广告按钮 之后出现的广告弹窗',
       activityIds: [
         'com.zhihu.android.ContentActivity',
@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '关闭广告原因',
+      name: '分段广告-关闭广告原因',
       desc: '点击 关闭广告按钮 之后出现的选择原因',
       activityIds: 'com.zhihu.android.ContentActivity',
       rules: [
@@ -44,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '关闭推荐',
+      name: '局部广告-关闭推荐',
       desc: '关闭回答底部其他回答',
       activityIds: 'com.zhihu.android.mix.activity.ContentMixProfileActivity',
       rules: [
@@ -118,7 +118,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '回答底部评论顶部的任意广告推荐',
+      name: '分段广告-回答底部评论顶部广告',
       activityIds: [
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
         'com.zhihu.android.app.ui.activity.HostActivity',
@@ -197,13 +197,13 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '关闭首页广告',
+      name: '局部广告-关闭首页广告',
       activityIds: 'com.zhihu.android.app.ui.activity.AdAlphaVideoActivity',
       rules: '[id=`com.zhihu.android:id/tv_ad_close`]',
     },
     {
       key: 9,
-      name: '推荐页-顶部广告',
+      name: '局部广告-推荐页顶部广告',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         '[id="com.zhihu.android:id/tv_ad_tag"] + [id="com.zhihu.android:id/img_close_focus"]', // 1686911063850
@@ -212,7 +212,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '推送通知弹窗',
+      name: '通知提示-推送通知弹窗',
       desc: '推送通知弹窗-点击x按钮',
       activityIds: 'com.zhihu.android.app.ui.dialog.d',
       rules: [
@@ -223,7 +223,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '会员页面-月卡红包',
+      name: '全屏广告-会员页面月卡红包',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         'ImageView[id="com.zhihu.android:id/floating_img"] + ImageView[id="com.zhihu.android:id/floating_close_btn"][clickable=true]',
@@ -232,7 +232,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '会员页面-广告弹窗',
+      name: '全屏广告-会员页面广告弹窗',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         '[id="com.zhihu.android:id/image"] < RelativeLayout + [id="com.zhihu.android:id/dismiss"]',
@@ -242,7 +242,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 101, // 不属于广告，序号往后排
-      name: '问题回答-自动展开',
+      name: '功能类-自动展开回答',
       activityIds:
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
       rules: [

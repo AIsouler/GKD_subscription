@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '自动第三方安装应用',
+      name: '功能类-自动第三方安装应用',
       desc: '自动允许第三方应用调用安装，安装应用',
       rules: [
         {
@@ -34,7 +34,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '自动安装应用',
+      name: '功能类-自动安装应用',
       desc: '启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
       rules: [
         // 正常安装
@@ -124,7 +124,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '自动更新应用',
+      name: '功能类-自动更新应用',
       rules: [
         // 正常更新
         {

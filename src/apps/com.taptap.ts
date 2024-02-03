@@ -16,7 +16,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '游戏浏览界面-推荐广告',
+      name: '局部广告-游戏浏览页面推荐广告',
       desc: '自动点击【对此内容不感兴趣】',
       rules: [
         {
@@ -47,7 +47,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       activityIds: 'com.taptap.upgrade.library.dialog.UpgradeDialogAct',
       rules: [

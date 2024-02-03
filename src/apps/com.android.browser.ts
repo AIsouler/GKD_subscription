@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '关闭[个性推荐开启提示]',
+      name: '局部广告-关闭[个性推荐开启提示]',
       activityIds: ['com.android.browser.BrowserActivity'],
       rules: [
         {
@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '主页信息流广告',
+      name: '分段广告-主页信息流广告',
       quickFind: true,
       activityIds: [
         'com.android.browser.BrowserActivity',
