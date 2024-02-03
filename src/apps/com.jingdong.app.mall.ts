@@ -3,11 +3,12 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.jingdong.app.mall',
   name: '京东',
+  deprecatedKeys: [7],
   groups: [
     {
       enable: false,
       key: 1,
-      name: '购物车界面-砸金蛋',
+      name: '局部广告-购物车页面砸金蛋',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: '[id="com.jd.lib.cart.feature:id/iv_egg_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12642266',
@@ -15,7 +16,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '我的界面-悬浮广告',
+      name: '局部广告-我的页面悬浮广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -40,7 +41,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '首页-右侧浮层广告',
+      name: '局部广告-首页右侧浮层广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: 'RelativeLayout >n * > [desc^="关闭浮层"]',
       snapshotUrls: [
@@ -73,11 +74,17 @@ export default defineAppConfig({
             'TextView[text ^="打开系统通知"] - FrameLayout[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12839865',
         },
+        {
+          quickFind: true,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: '[id="com.jingdong.app.mall:id/btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13463618',
+        },
       ],
     },
     {
       key: 5,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -118,7 +125,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '首页-底部横幅广告',
+      name: '局部广告-首页底部横幅广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: 'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
       snapshotUrls: [
@@ -129,22 +136,8 @@ export default defineAppConfig({
     },
     {
       enable: false,
-      key: 7,
-      name: '首页弹窗-打开通知',
-      desc: '自动点击正下方的【x】',
-      quickFind: true,
-      rules: [
-        {
-          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-          matches: '[id="com.jingdong.app.mall:id/btn_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13463618',
-        },
-      ],
-    },
-    {
-      enable: false,
       key: 10,
-      name: '京东账号登录授权',
+      name: '功能类-京东账号登录授权',
       desc: '自动点击【确认登录】',
       activityIds: 'com.jingdong.app.mall.WebActivity',
       rules: '[text="京东登录"] > [desc="确认登录"]',
@@ -153,7 +146,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '支付界面-产品推荐',
+      name: '局部广告-支付页面产品推荐',
       desc: '自动点击右上角【x】',
       activityIds:
         'com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity',
@@ -163,7 +156,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 12,
-      name: '购物车界面-支付成功广告弹窗',
+      name: '全屏广告-购物车页面支付成功广告弹窗',
       desc: '自动点击正下方的【x】',
       quickFind: true,
       rules: [

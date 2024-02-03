@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '自动继续安装',
+      name: '功能类-自动继续安装',
       desc: 'USB安装应用,点击继续安装',
       quickFind: true,
       activityIds: 'com.miui.permcenter.install.AdbInstallActivity',
@@ -21,7 +21,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '禁止获取定位',
+      name: '功能类-禁止获取定位',
       desc: '关闭【允许联网及定位】后，每次打开手机管家都会出现',
       quickFind: true,
       activityIds: [
@@ -44,7 +44,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 12,
-      name: '忽略体检分数',
+      name: '功能类-忽略体检分数',
       desc: '退出时忽略体检优化分数',
       quickFind: true,
       activityIds: 'com.miui.securityscan.MainActivity',

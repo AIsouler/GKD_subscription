@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '资讯页-信息流广告',
+      name: '局部广告-资讯页信息流广告',
       activityIds: 'com.ruanmei.ithome.ui.MainActivity',
       rules: '[id="hongbaotips"] +n @View > [text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/import/13167193',

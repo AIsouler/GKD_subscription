@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '授权第三方应用访问文件夹',
+      name: '功能类-授权第三方应用访问文件夹',
       desc: '自动点击【使用此文件夹】->【允许】',
       activityIds: 'com.android.documentsui.picker.PickActivity',
       rules: [

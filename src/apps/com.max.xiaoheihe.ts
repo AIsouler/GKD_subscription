@@ -7,7 +7,8 @@ export default defineAppConfig({
     // { key: 0 }, 开屏广告 占位
     {
       key: 1,
-      name: '弹窗_签到成功',
+      name: '功能类-签到成功弹窗',
+      desc: '点击"确定"',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,

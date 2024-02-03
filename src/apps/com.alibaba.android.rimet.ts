@@ -8,7 +8,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '消息列表上方广告',
+      name: '局部广告-消息列表上方广告',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -25,7 +25,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '文件即将过期提示',
+      name: '未分类-文件即将过期提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -41,7 +41,7 @@ export default defineAppConfig({
       ],
     },
     {
-      name: '自动点击原图',
+      name: '功能类-自动点击原图',
       enable: false,
       key: 3,
       actionMaximum: 1,
@@ -63,7 +63,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '版本更新弹窗',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -84,7 +84,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: '扫码自动登录桌面版',
+      name: '功能类-扫码自动登录桌面版',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

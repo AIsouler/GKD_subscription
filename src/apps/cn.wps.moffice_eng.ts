@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-文档列表广告',
+      name: '分段广告-首页文档列表广告',
       exampleUrls: [
         'https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b',
       ],
@@ -37,7 +37,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页-弹窗广告',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       activityIds: [
         'cn.wps.moffice.main.AfterLoginActivity',
@@ -52,7 +52,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '升级提示',
+      name: '更新提示',
       activityIds: [
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
         'cn.wps.moffice.main.local.HomeRootActivity',
@@ -64,7 +64,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '开启WPS云服务',
+      name: '功能类-开启WPS云服务',
       desc: '自动点击不开启',
       activityIds: [
         'cn.wps.moffice.main.cloud.roaming.login.core.QingLoginActivity',
@@ -89,7 +89,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '文档末尾广告',
+      name: '局部广告-文档末尾广告',
       activityIds: [
         'cn.wps.moffice.writer.multiactivity.Writer', //Writer1,Writer2...
       ],
@@ -110,7 +110,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '首页-底部广告',
+      name: '局部广告-首页底部广告',
       quickFind: true,
       activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',

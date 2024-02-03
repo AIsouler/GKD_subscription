@@ -2,11 +2,11 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.sdu.didi.psnger',
-  name: '滴滴',
+  name: '滴滴出行',
   groups: [
     {
       key: 1,
-      name: '打车页面广告',
+      name: '局部广告-打车页面右上角红包广告',
       desc: '点击广告卡片左上角x',
       rules: [
         {

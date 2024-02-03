@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '活动弹窗',
+      name: '全屏广告-活动弹窗',
       desc: '关闭各种活动弹窗信息',
       quickFind: true,
       rules: [
@@ -31,7 +31,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页banner广告',
+      name: '局部广告-首页卡片广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
@@ -39,7 +39,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '首页热门广告',
+      name: '局部广告-首页热门广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules:
@@ -48,7 +48,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '我的页面-限时福利',
+      name: '局部广告-"我的"页面限时福利',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules: '@TextView + [text="专属福利"]',
@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '相册页面-激活无限空间弹窗',
+      name: '全屏广告-相册页面激活无限空间弹窗',
       quickFind: true,
       activityIds:
         'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
@@ -66,7 +66,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -75,7 +75,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '续费横幅提示',
+      name: '局部广告-续费横幅提示',
       desc: '关闭续费横幅提示',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
@@ -89,7 +89,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 8,
-      name: '开启消息通知弹窗',
+      name: '通知提示-开启消息通知弹窗',
       desc: '自动点击关闭',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
@@ -99,7 +99,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '看视频免费享极速下载弹窗',
+      name: '全屏广告-看视频免费享极速下载弹窗',
       desc: '自动点击x按钮',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
@@ -110,7 +110,7 @@ export default defineAppConfig({
     {
       key: 11,
       quickFind: true,
-      name: '幸运券包弹窗',
+      name: '全屏广告-幸运券包弹窗',
       desc: '自动点击关闭',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [

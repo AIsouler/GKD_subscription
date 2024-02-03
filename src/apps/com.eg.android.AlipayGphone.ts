@@ -124,7 +124,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '设置支付宝小组件',
+      name: '功能类-设置支付宝小组件',
       desc: '点击关闭',
       quickFind: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',

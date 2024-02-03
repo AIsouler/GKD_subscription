@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '通知权限弹窗',
+      name: '通知提示-通知权限弹窗',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
@@ -35,7 +35,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
@@ -58,7 +58,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '信息流广告',
+      name: '分段广告-信息流广告',
       desc: '长按【赞助】/【广告】标识的卡片-点【不感兴趣】',
       quickFind: true,
       activityIds: 'com.xingin.xhs.index.v2.IndexActivityV2',

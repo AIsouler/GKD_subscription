@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 0,
@@ -39,7 +39,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '公告',
+      name: '通知提示-公告',
       activityIds: 'com.magicalstory.AppStore.main.MainActivity',
       quickFind: true,
       matchTime: 10000,
@@ -55,7 +55,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -65,7 +65,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '搜索页-卡片广告',
+      name: '局部广告-搜索页卡片广告',
       desc: '腾讯广告',
       actionMaximum: 1,
       activityIds: 'com.magicalstory.AppStore.search.searchActivity',

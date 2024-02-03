@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '卡片广告',
+      name: '分段广告-卡片广告',
       desc: '点击卡片右上角按钮->免广告-点击不感兴趣->选择关闭原因-点击不感兴趣',
       quickFind: true,
       activityIds: [
@@ -110,7 +110,7 @@ export default defineAppConfig({
     {
       key: 1,
       quickFind: true,
-      name: '关闭升级弹窗',
+      name: '更新提示',
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12503762',
       rules: '[text=`立即更新`] - [text=`取消`]',
@@ -118,7 +118,7 @@ export default defineAppConfig({
     {
       key: 3,
       quickFind: true,
-      name: '关闭推送通知',
+      name: '通知提示',
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       rules: '[text="去开启"] - [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/import/13296465',
