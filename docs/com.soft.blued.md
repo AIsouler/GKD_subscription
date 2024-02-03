@@ -2,13 +2,16 @@
 
 存在 2 规则组 - [com.soft.blued](/src/apps/com.soft.blued.ts)
 
-## 卡片式广告
+## 局部广告-卡片式广告
 
 默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/65ee5632-c54b-4ef6-95e9-e57582ff7017)
 
 - [快照-0](https://i.gkd.li/import/12777097)
 - [快照-1](https://i.gkd.li/import/13694950)
 - [快照-2](https://i.gkd.li/import/13699455)
+- [快照-3](https://i.gkd.li/import/14149470)
 
 ## 全屏广告-购买动态投放弹窗
 
