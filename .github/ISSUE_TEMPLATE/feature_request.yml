@@ -1,4 +1,4 @@
-name: APP 适配(如果是开屏广告一类的快照请说明是否开启全局规则)
+name: APP 适配（如果是开屏广告一类的快照请说明是否开启全局规则）
 description: 请求增加适配 APP 规则
 body:
   - type: markdown
