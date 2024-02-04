@@ -9,7 +9,7 @@
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://raw.gitmirror.com/AIsouler/subscription/main/dist/AIsouler_gkd.json5
+https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 ```
 
 当前版本: v--VERSION--
