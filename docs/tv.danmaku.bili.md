@@ -71,18 +71,23 @@
 - [快照-0](https://i.gkd.li/import/13229159)
 - [快照-1](https://i.gkd.li/import/13614090)
 
-## 分段广告-首页-推荐视频卡片广告
+## 分段广告-首页推荐视频卡片广告
 
 默认禁用
 
+- [示例-0](https://m.gkd.li/57941037/acd89b46-45fc-459f-8d17-3913d98dcbad)
+- [示例-1](https://m.gkd.li/57941037/9c2f42d7-c262-4e06-b3c6-40f0908e7a94)
+
 - [快照-0](https://i.gkd.li/import/14083540)
 - [快照-1](https://i.gkd.li/import/14059876)
-- [快照-2](https://i.gkd.li/import/13256605)
-- [快照-3](https://i.gkd.li/import/13625309)
-- [快照-4](https://i.gkd.li/import/13742257)
-- [快照-5](https://i.gkd.li/import/14059882)
+- [快照-2](https://i.gkd.li/import/13742257)
+- [快照-3](https://i.gkd.li/import/13256605)
+- [快照-4](https://i.gkd.li/import/14155801)
+- [快照-5](https://i.gkd.li/import/13742257)
 - [快照-6](https://i.gkd.li/import/13945597)
-- [快照-7](https://i.gkd.li/import/13742257)
+- [快照-7](https://i.gkd.li/import/14155272)
+- [快照-8](https://i.gkd.li/import/14059882)
+- [快照-9](https://i.gkd.li/import/13625309)
 
 ## 局部广告-个性化内容推荐弹窗
 

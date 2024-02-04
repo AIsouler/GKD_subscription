@@ -1,6 +1,6 @@
 # 淘宝
 
-存在 14 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
+存在 15 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
 
 ## 开屏广告
 
@@ -96,3 +96,11 @@
 默认禁用 - 点击X
 
 - [快照-0](https://i.gkd.li/import/14060521)
+
+## 功能类-"「0元下单」权益"弹窗
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/a35c954d-5162-463c-aee3-b72b9c2d6625)
+
+- [快照-0](https://i.gkd.li/import/14155537)

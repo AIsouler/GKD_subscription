@@ -11,9 +11,11 @@
 - [快照-4](https://i.gkd.li/import/13856647)
 - [快照-5](https://i.gkd.li/import/13868177)
 
-## 局部广告-消息页面顶部广告
+## 局部广告-消息页面顶部横幅广告
 
-默认禁用 - 规则误触,待修复,需要快照准确定位
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/3922e10b-ed7e-41c0-955c-88189876548d)
 
 - [快照-0](https://i.gkd.li/import/12892726)
 - [快照-1](https://i.gkd.li/import/12774870)
@@ -21,6 +23,7 @@
 - [快照-3](https://i.gkd.li/import/13386518)
 - [快照-4](https://i.gkd.li/import/13426912)
 - [快照-5](https://i.gkd.li/import/13476400)
+- [快照-6](https://i.gkd.li/import/14155603)
 
 ## 分段广告-好友动态-广告卡片
 
