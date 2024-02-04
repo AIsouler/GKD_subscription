@@ -178,7 +178,6 @@ export default defineAppConfig({
       enable: false,
       key: 10,
       name: '分段广告-首页-推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
-      quickFind: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
@@ -217,9 +216,20 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 2,
+          name: '点击[不感兴趣]',
           matches:
             'RecyclerView[childCount=2] > RelativeLayout[index=1] > [id="tv.danmaku.bili:id/item"]',
           snapshotUrls: 'https://i.gkd.li/import/13742257',
+        },
+        {
+          preKeys: 0,
+          key: 4,
+          name: '点击[相似内容过多]',
+          quickFind: true,
+          matches: '@FrameLayout > [text="相似内容过多"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/acd89b46-45fc-459f-8d17-3913d98dcbad',
+          snapshotUrls: 'https://i.gkd.li/import/14155272',
         },
       ],
     },
