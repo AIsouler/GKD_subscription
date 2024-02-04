@@ -240,8 +240,22 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/12707676'],
     },
     {
+      key: 13,
+      name: '局部广告-搜索栏上方广告',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          matches: '[vid="ad_container"] [vid="img_close_focus"]',
+          exampleUrls:
+            'https://m.gkd.li/101449500/11c26ab8-0b01-4345-8ea8-d4e97233b723',
+          snapshotUrls: 'https://i.gkd.li/import/14156887',
+        },
+      ],
+    },
+    {
       enable: false,
-      key: 101, // 不属于广告，序号往后排
+      key: 101,
       name: '功能类-自动展开回答',
       activityIds:
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
