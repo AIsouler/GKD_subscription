@@ -556,5 +556,25 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 23,
+      name: '全屏广告-小程序-粤省事-投资弹窗',
+      activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+      rules: [
+        {
+          key: 0,
+          matches: [
+            '[text="粤省事码"]',
+            'WebView >n View[childCount=2] + View > View[childCount=2] > TextView + TextView[id=null][visibleToUser=true]',
+          ],
+          exampleUrls:
+            'https://m.gkd.li/101449500/4e808d65-d8f7-4140-a03f-e840bf1c374d',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14113750',
+            'https://i.gkd.li/import/14157089', //在此快照误触
+          ],
+        },
+      ],
+    },
   ],
 });
