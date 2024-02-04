@@ -460,9 +460,13 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
       rules: {
-        matches: '@Image -n * > View[text="可横向滚动"]',
+        matches:
+          'View[childCount=8] > View[index=6] > View[childCount=4] > Image[visibleToUser=true]',
         action: 'clickCenter',
-        snapshotUrls: ['https://i.gkd.li/import/13298294'],
+        snapshotUrls: [
+          'https://i.gkd.li/import/13298294',
+          'https://i.gkd.li/import/14156176', // 误触快照
+        ],
       },
     },
     {
