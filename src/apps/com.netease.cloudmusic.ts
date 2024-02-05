@@ -91,7 +91,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '主页-免费听歌',
+      name: '全屏广告-看广告免费听歌弹窗',
       quickFind: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules: ['@ImageView + ViewGroup > TextView[text="VIP歌曲免费听30分钟"]'],
