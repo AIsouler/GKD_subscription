@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '地图上方黄页横幅',
+      name: '局部广告-地图上方黄页横幅',
       quickFind: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
@@ -23,7 +23,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '打车界面-右侧悬浮球',
+      name: '局部广告-打车界面右侧悬浮球',
       quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
@@ -32,7 +32,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '美食大礼包弹窗',
+      name: '全屏广告-美食大礼包弹窗',
       quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
@@ -41,7 +41,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '酒店提前订弹窗',
+      name: '全屏广告-酒店提前订弹窗',
       quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
@@ -50,7 +50,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: '请求定位弹窗',
+      name: '定位提示-请求定位弹窗',
       quickFind: true,
       activityIds: [
         'com.baidu.mapframework.widget.BMBaseDialog',
@@ -77,7 +77,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '打车界面-弹窗广告',
+      name: '全屏广告-打车界面弹窗广告',
       quickFind: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
@@ -93,7 +93,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '升级更新弹窗',
+      name: '更新提示',
       quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
@@ -102,7 +102,8 @@ export default defineAppConfig({
     {
       enable: false,
       key: 8,
-      name: '打开通知权限',
+      name: '通知提示-请求打开通知权限弹窗',
+      desc: '点击关闭',
       quickFind: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules:
@@ -112,7 +113,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '通勤卡-添加至桌面',
+      name: '功能类-通勤卡添加至桌面',
       desc: '点击取消',
       quickFind: true,
       actionMaximum: 1,

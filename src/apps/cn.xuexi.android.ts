@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules: '@[text="取消"] + [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/import/12715139',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求开启通知权限提示信息',
+      name: '通知提示-请求开启通知权限提示信息',
       desc: '自动点击x按钮',
       activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules:

@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: 'VIP广告弹窗',
+      name: '全屏广告-VIP广告弹窗',
       desc: '点击底部圆形x图标关闭弹窗',
       activityIds: 'com.android.mediacenter.MainActivity',
       quickFind: true,
@@ -40,7 +40,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '推荐广告卡片',
+      name: '局部广告-推荐广告卡片',
       desc: '点击卡片右上角[广告],点击不感兴趣[直接关闭]',
       quickFind: true,
       rules: [

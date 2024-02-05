@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '弹出广告(偶发)',
+      name: '全屏广告-弹出广告(偶发)',
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '首页右侧悬浮广告(偶发)',
+      name: '局部广告-首页右侧悬浮广告(偶发)',
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {

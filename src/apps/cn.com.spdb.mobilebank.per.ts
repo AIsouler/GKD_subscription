@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '消息中心-系统通知请求',
+      name: '通知提示-系统通知请求',
       desc: '自动点击关闭。',
       enable: false,
       activityIds:

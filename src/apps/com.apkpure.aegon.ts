@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '热门推荐关闭',
+      name: '全屏广告-热门推荐关闭',
       desc: '关闭应用推广',
       rules: [
         {
@@ -21,7 +21,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '更新与已安装界面-查看更多',
+      name: '功能类-更新与已安装界面-查看更多',
       desc: '在更新界面自动点击查看更多按钮，展开所有应用',
       rules: [
         {
@@ -39,7 +39,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '更新界面-软件推荐',
+      name: '分段广告-更新界面软件推荐',
       activityIds: [
         'com.apkpure.aegon.main.activity.MainTabActivity',
         'com.apkpure.aegon.main.activity.AppManagerActivity',
@@ -64,7 +64,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '添加桌面快捷方式',
+      name: '功能类-添加桌面快捷方式',
       desc: '下次添加',
       rules: [
         {

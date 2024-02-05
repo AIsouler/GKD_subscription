@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '信息流广告',
+      name: '分段广告-信息流广告',
       quickFind: true,
       activityIds: 'cn.xiaochuankeji.zuiyouLite.ui.slide.ActivitySlideDetail',
       rules: [
