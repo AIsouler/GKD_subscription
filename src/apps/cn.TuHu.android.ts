@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       quickFind: true,
       activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
       rules:
@@ -17,7 +17,7 @@ export default defineAppConfig({
     {
       key: 10,
       quickFind: true,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
       rules: '[id="cn.TuHu.android:id/imgClose"]',
       snapshotUrls: [

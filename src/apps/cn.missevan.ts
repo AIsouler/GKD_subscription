@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '青少年提示',
+      name: '青少年模式',
       desc: '点击：知道了',
       activityIds: 'cn.missevan.activity.MainActivity',
       quickFind: true,

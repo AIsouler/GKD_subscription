@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'cn.speedtest.lite.main.MainActivity',
       rules:
         '@[id="cn.speedtest.lite:id/iv_close"] - [id="cn.speedtest.lite:id/ll_main_pane"] >2 [id="cn.speedtest.lite:id/tv_upgrade_content"]',
@@ -15,7 +15,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '新人专享优惠弹窗',
+      name: '全屏广告-新人专享优惠弹窗',
       activityIds: 'cn.speedtest.lite.main.MainActivity',
       rules:
         '@[id="cn.speedtest.lite:id/iv_close"] - RelativeLayout >n [id="cn.speedtest.lite:id/ad_banner"]',

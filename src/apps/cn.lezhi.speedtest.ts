@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'cn.lezhi.speedtest.main5.MainV5Activity',
       rules:
         '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >n [id="cn.lezhi.speedtest:id/iv_close"]',

@@ -192,5 +192,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 12,
+      name: '功能类-付款后自动点击完成',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.sankuai.waimai.platform.machpro.container.WMMPActivity',
+          matches:
+            '[vid="mach_pro_root"] ViewGroup[childCount=3] > [text="完成"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/257a3a0d-966b-4c16-89d9-abf9acaef9a9',
+          snapshotUrls: 'https://i.gkd.li/import/14163717',
+        },
+      ],
+    },
   ],
 });

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       activityIds: 'cn.dingwei.cloud_classroom.MainActivity',
       rules:
         'View[childCount=2] > ImageView[id=""] + Button[id=""][clickable=true]',

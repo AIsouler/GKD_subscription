@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '自动签到',
+      name: '功能类-自动签到',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -22,7 +22,8 @@ export default defineAppConfig({
     {
       key: 2,
       enable: false,
-      name: '右下角弹窗',
+      name: '功能类-右下角年度报告弹窗',
+      desc: '点击关闭',
       quickFind: true,
       matchTime: 10000,
       rules: [

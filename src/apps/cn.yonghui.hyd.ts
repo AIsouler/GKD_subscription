@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '红包弹窗',
+      name: '全屏广告-红包弹窗',
       rules: [
         {
           key: 0,
