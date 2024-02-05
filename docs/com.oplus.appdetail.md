@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.oplus.appdetail](/src/apps/com.oplus.appdetail.ts)
 
-## 自动安装应用
+## 功能类-自动安装应用
 
 默认禁用
 

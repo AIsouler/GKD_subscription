@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.ants360.yicamera](/src/apps/com.ants360.yicamera.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.android.tnaant](/src/apps/com.android.tnaant.ts)
 
-## 公告弹窗
+## 通知提示-公告弹窗
 
 默认禁用
 

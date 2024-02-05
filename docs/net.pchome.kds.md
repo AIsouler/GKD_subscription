@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [net.pchome.kds](/src/apps/net.pchome.kds.ts)
 
-## 应用内广告卡片
+## 分段广告-应用内广告卡片
 
 默认禁用
 

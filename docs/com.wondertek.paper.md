@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.wondertek.paper](/src/apps/com.wondertek.paper.ts)
 
-## 应用内弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 

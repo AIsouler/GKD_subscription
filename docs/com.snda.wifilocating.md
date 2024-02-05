@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.snda.wifilocating](/src/apps/com.snda.wifilocating.ts)
 
-## 内部广告
+## 分段广告-内部广告
 
 默认禁用
 

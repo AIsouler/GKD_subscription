@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.ddsy.songyao](/src/apps/com.ddsy.songyao.ts)
 
-## 优惠卷提示
+## 全屏广告-优惠卷提示
 
 默认禁用
 

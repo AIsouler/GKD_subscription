@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.tongcheng.android](/src/apps/com.tongcheng.android.ts)
 
-## 应用内卡片广告
+## 分段广告-卡片广告
 
 默认禁用
 

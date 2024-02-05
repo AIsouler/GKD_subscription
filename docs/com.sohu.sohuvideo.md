@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.sohu.sohuvideo](/src/apps/com.sohu.sohuvideo.ts)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 

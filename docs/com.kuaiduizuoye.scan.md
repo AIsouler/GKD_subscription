@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.kuaiduizuoye.scan](/src/apps/com.kuaiduizuoye.scan.ts)
 
-## 首页广告弹窗
+## 全屏广告-首页广告弹窗
 
 默认禁用
 

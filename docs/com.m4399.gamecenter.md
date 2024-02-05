@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.m4399.gamecenter](/src/apps/com.m4399.gamecenter.ts)
 
-## 悬浮广告
+## 局部广告-悬浮广告
 
 默认禁用
 

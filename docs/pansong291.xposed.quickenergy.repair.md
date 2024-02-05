@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [pansong291.xposed.quickenergy.repair](/src/apps/pansong291.xposed.quickenergy.repair.ts)
 
-## 开屏弹窗跳过
+## 未分类-开屏弹窗跳过
 
 默认禁用 - 打开app点击知道了
 

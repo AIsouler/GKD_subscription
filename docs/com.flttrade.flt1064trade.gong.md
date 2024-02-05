@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.flttrade.flt1064trade.gong](/src/apps/com.flttrade.flt1064trade.gong.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 

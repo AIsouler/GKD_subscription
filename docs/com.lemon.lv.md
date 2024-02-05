@@ -1,6 +1,6 @@
 # 剪映
 
-存在 1 规则组 - [com.lemon.lv](/src/apps/com.lemon.lv.ts)
+存在 2 规则组 - [com.lemon.lv](/src/apps/com.lemon.lv.ts)
 
 ## 局部广告-导出界面底部广告
 
@@ -10,3 +10,9 @@
 
 - [快照-0](https://i.gkd.li/import/12911010)
 - [快照-1](https://i.gkd.li/import/14149461)
+
+## 局部广告-选择素材界面上方广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14122865)

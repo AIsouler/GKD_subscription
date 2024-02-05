@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.igpsport.igpsportandroid](/src/apps/com.igpsport.igpsportandroid.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 

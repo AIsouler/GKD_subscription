@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.lptiyu.tanke](/src/apps/com.lptiyu.tanke.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.shark.jizhang](/src/apps/com.shark.jizhang.ts)
 
-## 新用户特惠广告
+## 局部广告-新用户特惠广告
 
 默认禁用 - 弹窗广告,右下角浮动广告
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.zzw.october](/src/apps/com.zzw.october.ts)
 
-## 主页广告
+## 全屏广告-弹窗广告
 
 默认禁用
 

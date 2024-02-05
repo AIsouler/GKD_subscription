@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.xingluo.allcolor](/src/apps/com.xingluo.allcolor.ts)
 
-## 底部穿山甲广告
+## 分段广告-底部穿山甲广告
 
 默认禁用 - 点击广告卡片x关闭按钮-关闭反馈理由弹窗
 

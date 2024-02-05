@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.cubic.autohome](/src/apps/com.cubic.autohome.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 

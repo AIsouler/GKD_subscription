@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.baidutieba.davy](/src/apps/com.baidutieba.davy.ts)
 
-## 内部弹窗广告
+## 全屏广告-内部弹窗广告
 
 默认禁用
 

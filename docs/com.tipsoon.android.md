@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.tipsoon.android](/src/apps/com.tipsoon.android.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 

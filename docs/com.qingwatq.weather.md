@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.qingwatq.weather](/src/apps/com.qingwatq.weather.ts)
 
-## 卡片式广告
+## 局部广告-卡片式广告
 
 默认禁用
 

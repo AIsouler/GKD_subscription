@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.xiaomi.gamecenter](/src/apps/com.xiaomi.gamecenter.ts)
 
-## 首页右侧悬浮广告
+## 局部广告-首页右侧悬浮广告
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [youqu.android.todesk](/src/apps/youqu.android.todesk.ts)
 
-## 广告卡片
+## 局部广告-广告卡片
 
 默认禁用 - 设备列表和连接界面中的广告卡片
 

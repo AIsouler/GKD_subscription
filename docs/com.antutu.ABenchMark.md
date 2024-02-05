@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.antutu.ABenchMark](/src/apps/com.antutu.ABenchMark.ts)
 
-## 广告卡片
+## 局部广告-广告卡片
 
 默认禁用
 

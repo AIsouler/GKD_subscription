@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.google.android.apps.translate](/src/apps/com.google.android.apps.translate.ts)
 
-## 登录弹窗
+## 功能类-登录弹窗
 
 默认禁用 - 登录备份翻译记录
 

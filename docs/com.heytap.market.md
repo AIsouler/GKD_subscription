@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.heytap.market](/src/apps/com.heytap.market.ts)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 

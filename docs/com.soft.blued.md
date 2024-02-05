@@ -19,4 +19,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/37ea59cf-9606-4cd6-a74a-84f353f07975)
 
-- [快照-0](https://i.gkd.li/import/14060676)
+- [快照-0](https://i.gkd.li/import/14157519)

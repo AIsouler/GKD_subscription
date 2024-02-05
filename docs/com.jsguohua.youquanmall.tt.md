@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.jsguohua.youquanmall.tt](/src/apps/com.jsguohua.youquanmall.tt.ts)
 
-## 应用内弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 

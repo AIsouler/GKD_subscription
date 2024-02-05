@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.sina.oasis](/src/apps/com.sina.oasis.ts)
 
-## 首页-推荐广告
+## 分段广告-首页推荐广告
 
 默认禁用
 

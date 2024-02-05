@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.huawei.search](/src/apps/com.huawei.search.ts)
 
-## 下拉搜索横幅广告
+## 局部广告-下拉搜索横幅广告
 
 默认禁用
 

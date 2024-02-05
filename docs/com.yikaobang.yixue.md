@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.yikaobang.yixue](/src/apps/com.yikaobang.yixue.ts)
 
-## 应用内会员活动弹窗
+## 全屏广告-会员活动弹窗
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.youloft.calendar](/src/apps/com.youloft.calendar.ts)
 
-## 悬浮广告
+## 局部广告-悬浮广告
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.jianshu.haruki](/src/apps/com.jianshu.haruki.ts)
 
-## VIP弹窗
+## 全屏广告-VIP弹窗
 
 默认禁用
 

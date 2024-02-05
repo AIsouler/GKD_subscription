@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.baidu.tieba_mini](/src/apps/com.baidu.tieba_mini.ts)
 
-## 首页-信息流广告
+## 分段广告-首页信息流广告
 
 默认禁用
 

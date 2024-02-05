@@ -2,7 +2,7 @@
 
 存在 9 规则组 - [com.zmzx.college.search](/src/apps/com.zmzx.college.search.ts)
 
-## 首页-推送通知
+## 通知提示-请求推送通知弹窗
 
 默认禁用
 
@@ -27,20 +27,20 @@
 - [快照-0](https://i.gkd.li/import/13849755)
 - [快照-1](https://i.gkd.li/import/13063381)
 
-## 升级弹窗
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13063373)
 - [快照-1](https://i.gkd.li/import/13623469)
 
-## 申请开启推送通知弹窗
+## 通知提示-申请开启推送通知弹窗
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13440939)
 
-## 请求好评弹窗
+## 评价提示-请求好评弹窗
 
 默认禁用
 

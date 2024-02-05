@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.example.raylink_flutter](/src/apps/com.example.raylink_flutter.ts)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [tw.com.gamer.android.animad](/src/apps/tw.com.gamer.android.animad.ts)
 
-## 动画疯年龄限制
+## 未分类-动画疯年龄限制
 
 默认禁用 - 点击同意
 

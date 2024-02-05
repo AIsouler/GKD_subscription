@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.sfexpress.sfim](/src/apps/com.sfexpress.sfim.ts)
 
-## CAS安全认证-自动登录
+## 功能类-CAS安全认证-自动登录
 
 默认禁用 - 自动点击【登录】按钮
 

@@ -1,6 +1,6 @@
 # 美团
 
-存在 9 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
+存在 10 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
 
 ## 更新提示
 
@@ -66,3 +66,11 @@
 
 - [快照-0](https://i.gkd.li/import/14033982)
 - [快照-1](https://i.gkd.li/import/14034073)
+
+## 功能类-付款后自动点击完成
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/257a3a0d-966b-4c16-89d9-abf9acaef9a9)
+
+- [快照-0](https://i.gkd.li/import/14163717)

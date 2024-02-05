@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.zivn.cloudbrush3](/src/apps/com.zivn.cloudbrush3.ts)
 
-## 信息流广告
+## 分段广告-信息流广告
 
 默认禁用
 

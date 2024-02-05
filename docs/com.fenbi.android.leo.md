@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.fenbi.android.leo](/src/apps/com.fenbi.android.leo.ts)
 
-## 评分弹窗
+## 评价提示
 
 默认禁用
 

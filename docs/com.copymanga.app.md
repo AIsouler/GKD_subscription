@@ -2,7 +2,7 @@
 
 存在 5 规则组 - [com.copymanga.app](/src/apps/com.copymanga.app.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 
@@ -26,7 +26,7 @@
 - [快照-17](https://i.gkd.li/import/12925052)
 - [快照-18](https://i.gkd.li/import/12925095)
 
-## 卡片式广告
+## 局部广告-卡片式广告
 
 默认禁用
 
@@ -35,20 +35,22 @@
 - [快照-2](https://i.gkd.li/import/12851671)
 - [快照-3](https://i.gkd.li/import/12909005)
 
-## 关闭赞助提示
+## 全屏广告-关闭赞助提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12851627)
 
-## 自动确认线路
+## 功能类-自动确认线路
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13233179)
 
-## 关闭提示
+## 通知提示-关闭系统提示弹窗
 
 默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/7577dafa-9e3e-44de-bd20-c52f8a30e9c6)
 
 - [快照-0](https://i.gkd.li/import/13233180)

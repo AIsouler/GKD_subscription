@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.xuexiaoyi.xxy](/src/apps/com.xuexiaoyi.xxy.ts)
 
-## 首页-底部广告
+## 局部广告-首页-底部广告
 
 默认禁用
 
@@ -21,7 +21,7 @@
 - [快照-12](https://i.gkd.li/import/13068819)
 - [快照-13](https://i.gkd.li/import/13457380)
 
-## 升级弹窗
+## 更新提示
 
 默认禁用 - 自动点击以后再说。
 

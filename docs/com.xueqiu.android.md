@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.xueqiu.android](/src/apps/com.xueqiu.android.ts)
 
-## 首页广告
+## 局部广告-信息流广告
 
 默认禁用
 
@@ -10,7 +10,7 @@
 
 - [快照-0](https://i.gkd.li/import/13388227)
 
-## 评论区广告
+## 局部广告-评论区广告
 
 默认禁用
 

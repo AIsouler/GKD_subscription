@@ -102,7 +102,7 @@
 | WiFi万能钥匙           | [com.snda.wifilocating](/docs/com.snda.wifilocating.md)                                                                                                           | 2      |
 | WiFi智能钥匙           | [com.bjsk.intelligent](/docs/com.bjsk.intelligent.md)                                                                                                             | 1      |
 | X(推特)                | [com.twitter.android](/docs/com.twitter.android.md)                                                                                                               | 5      |
-| 爱企查                 | [com.baidu.xin.aiqicha](/docs/com.baidu.xin.aiqicha.md)                                                                                                           | 3      |
+| 爱企查                 | [com.baidu.xin.aiqicha](/docs/com.baidu.xin.aiqicha.md)                                                                                                           | 2      |
 | 爱奇艺                 | [com.qiyi.video](/docs/com.qiyi.video.md)                                                                                                                         | 6      |
 | 爱奇艺极速版           | [com.qiyi.video.lite](/docs/com.qiyi.video.lite.md)                                                                                                               | 1      |
 | 爱山东                 | [com.hanweb.android.sdzwfw.activity](/docs/com.hanweb.android.sdzwfw.activity.md)                                                                                 | 1      |
@@ -260,7 +260,7 @@
 | 简单搜索               | [com.baidu.searchcraft](/docs/com.baidu.searchcraft.md)                                                                                                           | 1      |
 | 简书                   | [com.jianshu.haruki](/docs/com.jianshu.haruki.md)                                                                                                                 | 1      |
 | 简讯                   | [com.tipsoon.android](/docs/com.tipsoon.android.md)                                                                                                               | 1      |
-| 剪映                   | [com.lemon.lv](/docs/com.lemon.lv.md)                                                                                                                             | 1      |
+| 剪映                   | [com.lemon.lv](/docs/com.lemon.lv.md)                                                                                                                             | 2      |
 | 交管12123              | [com.tmri.app.main](/docs/com.tmri.app.main.md)                                                                                                                   | 1      |
 | 交通银行               | [com.bankcomm.Bankcomm](/docs/com.bankcomm.Bankcomm.md)                                                                                                           | 2      |
 | 交易猫                 | [com.jym.mall](/docs/com.jym.mall.md)                                                                                                                             | 1      |
@@ -319,7 +319,7 @@
 | 蚂蚁财富               | [com.antfortune.wealth](/docs/com.antfortune.wealth.md)                                                                                                           | 1      |
 | 蚂蚁加速器             | [com.android.tnaant](/docs/com.android.tnaant.md)                                                                                                                 | 1      |
 | 每日赛车               | [com.romielf.mrsc](/docs/com.romielf.mrsc.md)                                                                                                                     | 1      |
-| 美团                   | [com.sankuai.meituan](/docs/com.sankuai.meituan.md)                                                                                                               | 9      |
+| 美团                   | [com.sankuai.meituan](/docs/com.sankuai.meituan.md)                                                                                                               | 10     |
 | 美团外卖               | [com.sankuai.meituan.takeoutnew](/docs/com.sankuai.meituan.takeoutnew.md)                                                                                         | 3      |
 | 美团众包               | [com.sankuai.meituan.dispatch.crowdsource](/docs/com.sankuai.meituan.dispatch.crowdsource.md)                                                                     | 1      |
 | 美图秀秀               | [com.mt.mtxx.mtxx](/docs/com.mt.mtxx.mtxx.md)                                                                                                                     | 1      |
@@ -373,7 +373,7 @@
 | 全民K歌                | [com.tencent.karaoke](/docs/com.tencent.karaoke.md)                                                                                                               | 2      |
 | 全民泡泡超人           | [com.tencent.tmgp.kgame.ppcr](/docs/com.tencent.tmgp.kgame.ppcr.md)                                                                                               | 1      |
 | 全能计算器             | [com.jincheng.supercaculator](/docs/com.jincheng.supercaculator.md)                                                                                               | 1      |
-| 全球购骑士特权         | [com.black.unique](/docs/com.black.unique.md)                                                                                                                     | 1      |
+| 全球购骑士特权         | [com.black.unique](/docs/com.black.unique.md)                                                                                                                     | 2      |
 | 全球上网               | [com.miui.virtualsim](/docs/com.miui.virtualsim.md)                                                                                                               | 1      |
 | 全球网测               | [com.cnspeedtest.globalspeed](/docs/com.cnspeedtest.globalspeed.md)                                                                                               | 1      |
 | 权限管理服务           | [com.lbe.security.miui](/docs/com.lbe.security.miui.md)                                                                                                           | 1      |
@@ -550,6 +550,7 @@
 | 稀土掘金               | [com.daimajia.gold](/docs/com.daimajia.gold.md)                                                                                                                   | 1      |
 | 秀动                   | [com.showstartfans.activity](/docs/com.showstartfans.activity.md)                                                                                                 | 1      |
 | 雪球                   | [com.xueqiu.android](/docs/com.xueqiu.android.md)                                                                                                                 | 2      |
+| 雪球基金               | [com.xueqiu.fund](/docs/com.xueqiu.fund.md)                                                                                                                       | 1      |
 | 学小易                 | [com.xuexiaoyi.xxy](/docs/com.xuexiaoyi.xxy.md)                                                                                                                   | 2      |
 | 学习强国               | [cn.xuexi.android](/docs/cn.xuexi.android.md)                                                                                                                     | 2      |
 | 学习通                 | [com.chaoxing.mobile](/docs/com.chaoxing.mobile.md)                                                                                                               | 1      |
@@ -611,7 +612,7 @@
 | 智联招聘               | [com.zhaopin.social](/docs/com.zhaopin.social.md)                                                                                                                 | 4      |
 | 芝麻粒                 | [pansong291.xposed.quickenergy.repair](/docs/pansong291.xposed.quickenergy.repair.md)                                                                             | 1      |
 | 智能服务               | [com.miui.systemAdSolution](/docs/com.miui.systemAdSolution.md)                                                                                                   | 1      |
-| 智谱                   | [com.crirp.zhipu](/docs/com.crirp.zhipu.md)                                                                                                                       | 3      |
+| 智谱                   | [com.crirp.zhipu](/docs/com.crirp.zhipu.md)                                                                                                                       | 2      |
 | 芝士漫画               | [com.ping.cimoc](/docs/com.ping.cimoc.md)                                                                                                                         | 1      |
 | 知天气-决策            | [com.pcs.knowing_weather](/docs/com.pcs.knowing_weather.md)                                                                                                       | 1      |
 | 知网文化               | [com.cnki.view](/docs/com.cnki.view.md)                                                                                                                           | 1      |
@@ -636,6 +637,6 @@
 | 自动点击器             | [com.zidongdianji](/docs/com.zidongdianji.md)                                                                                                                     | 1      |
 | 自考笔果题库           | [com.dep.biguo](/docs/com.dep.biguo.md)                                                                                                                           | 3      |
 | 子腾园                 | [com.zmsoft.forwatch](/docs/com.zmsoft.forwatch.md)                                                                                                               | 1      |
-| 最右                   | [cn.xiaochuankeji.tieba](/docs/cn.xiaochuankeji.tieba.md)                                                                                                         | 5      |
+| 最右                   | [cn.xiaochuankeji.tieba](/docs/cn.xiaochuankeji.tieba.md)                                                                                                         | 4      |
 | 作业帮家长版           | [com.zuoyebang.knowledge](/docs/com.zuoyebang.knowledge.md)                                                                                                       | 2      |
 | 作业精灵               | [com.pcncn.jj](/docs/com.pcncn.jj.md)                                                                                                                             | 1      |

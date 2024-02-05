@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.hose.ekuaibao](/src/apps/com.hose.ekuaibao.ts)
 
-## 首页-横幅广告
+## 局部广告-首页横幅广告
 
 默认禁用
 

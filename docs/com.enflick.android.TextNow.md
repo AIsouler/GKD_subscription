@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.enflick.android.TextNow](/src/apps/com.enflick.android.TextNow.ts)
 
-## 设为默认应用提示
+## 功能类-设为默认应用提示
 
 默认禁用
 

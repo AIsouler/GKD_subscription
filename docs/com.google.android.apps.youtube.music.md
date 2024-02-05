@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.google.android.apps.youtube.music](/src/apps/com.google.android.apps.youtube.music.ts)
 
-## 播放界面广告
+## 局部广告-播放界面广告
 
 默认禁用
 

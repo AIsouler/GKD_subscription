@@ -13,13 +13,15 @@
 - [快照-6](https://i.gkd.li/import/13842826)
 - [快照-7](https://i.gkd.li/import/13939089)
 
-## 局部广告-卡片式广告
+## 局部广告-软件详情页卡片广告
 
-默认禁用
+默认禁用 - 点击关闭
 
-- [快照-0](https://i.gkd.li/import/13761259)
+- [示例-0](https://m.gkd.li/57941037/c19bb8e3-abae-46ee-bfe9-d7846cd868bc)
+
+- [快照-0](https://i.gkd.li/import/14160820)
 - [快照-1](https://i.gkd.li/import/13712716)
-- [快照-2](https://i.gkd.li/import/13758909)
+- [快照-2](https://i.gkd.li/import/13761259)
 
 ## 功能类-自动签到
 
@@ -30,7 +32,12 @@
 
 ## 分段广告-软件详情页广告
 
-默认禁用 - 有二次弹窗
+默认禁用 - 点击关闭-点击不感兴趣
+
+- [示例-0](https://m.gkd.li/57941037/3bc12aa2-7673-4261-9e3d-7e1605b22847)
+- [示例-1](https://m.gkd.li/57941037/fefece63-2ec2-413c-a292-4583d58478fe)
+- [示例-2](https://m.gkd.li/57941037/27a5eebc-a55a-466e-85f3-7642c23b4b3d)
 
 - [快照-0](https://i.gkd.li/import/13758909)
-- [快照-1](https://i.gkd.li/import/13944942)
+- [快照-1](https://i.gkd.li/import/14160959)
+- [快照-2](https://i.gkd.li/import/14161009)

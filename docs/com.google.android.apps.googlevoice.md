@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.google.android.apps.googlevoice](/src/apps/com.google.android.apps.googlevoice.ts)
 
-## 跳过实体号码链接
+## 功能类-跳过实体号码链接
 
 默认禁用
 

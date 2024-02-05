@@ -2,18 +2,18 @@
 
 存在 3 规则组 - [com.youku.phone](/src/apps/com.youku.phone.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用 - 占位，暂无作用
 
-## 青少年模式弹窗
+## 青少年模式
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12701050)
 - [快照-1](https://i.gkd.li/import/13498556)
 
-## 视频推荐弹窗
+## 全屏广告-视频推荐弹窗
 
 默认禁用
 

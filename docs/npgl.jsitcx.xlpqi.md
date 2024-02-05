@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [npgl.jsitcx.xlpqi](/src/apps/npgl.jsitcx.xlpqi.ts)
 
-## 应用内第三方 SDK 广告弹窗
+## 全屏广告-广告弹窗
 
 默认禁用
 
@@ -10,7 +10,7 @@
 - [快照-1](https://i.gkd.li/import/12799942)
 - [快照-2](https://i.gkd.li/import/12800095)
 
-## 应用内第三方 SDK 广告卡片
+## 分段广告-广告卡片
 
 默认禁用
 

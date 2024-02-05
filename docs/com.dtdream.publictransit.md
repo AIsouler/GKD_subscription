@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.dtdream.publictransit](/src/apps/com.dtdream.publictransit.ts)
 
-## 广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 

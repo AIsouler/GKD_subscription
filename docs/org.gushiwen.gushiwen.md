@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [org.gushiwen.gushiwen](/src/apps/org.gushiwen.gushiwen.ts)
 
-## 应用内广告弹窗
+## 分段广告-广告弹窗
 
 默认禁用
 

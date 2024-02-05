@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.xiachufang](/src/apps/com.xiachufang.ts)
 
-## 卡片式广告
+## 局部广告-卡片式广告
 
 默认禁用
 
@@ -11,7 +11,7 @@
 - [快照-2](https://i.gkd.li/import/13454534)
 - [快照-3](https://i.gkd.li/import/13484117)
 
-## 厨房问卷
+## 未分类-厨房问卷
 
 默认禁用
 

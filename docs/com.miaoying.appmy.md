@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.miaoying.appmy](/src/apps/com.miaoying.appmy.ts)
 
-## 应用内广告弹窗
+## 全屏广告-广告弹窗
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.guodongbaohe.app](/src/apps/com.guodongbaohe.app.ts)
 
-## 广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 
