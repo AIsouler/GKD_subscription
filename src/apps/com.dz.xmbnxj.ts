@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '底部卡片广告',
+      name: '局部广告-底部卡片广告',
       rules: [
         {
           activityIds: 'com.lynx.boot.LynxActivity',

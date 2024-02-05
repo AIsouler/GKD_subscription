@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内弹窗',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       activityIds: 'com.dw.btime.MainHomeTabActivity',
       rules: '[id="com.dw.btime:id/iv_overlay_close"][clickable=true]',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '应用内横幅',
+      name: '局部广告-横幅广告',
       quickFind: true,
       activityIds: 'com.dw.btime.MainHomeTabActivity',
       rules: '[id="com.dw.btime:id/old_baby_close"][clickable=true]',

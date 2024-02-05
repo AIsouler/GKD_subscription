@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.cf.dubaji.module.main.MainActivity',
       quickFind: true,
       rules: [

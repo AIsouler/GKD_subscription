@@ -35,7 +35,6 @@ export default defineAppConfig({
         {
           key: 1,
           name: '点击关闭',
-          activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
           matches:
             '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
           exampleUrls:

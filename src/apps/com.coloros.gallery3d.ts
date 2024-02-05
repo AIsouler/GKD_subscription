@@ -23,7 +23,8 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '开启相册同步弹窗',
+      name: '功能类-开启相册同步弹窗',
+      desc: '点击忽略',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

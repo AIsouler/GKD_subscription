@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '广告弹窗',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.dtchuxing.main.MainActivity',
       rules: '[id="com.dtdream.publictransit:id/ifv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12830113',

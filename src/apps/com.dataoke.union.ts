@@ -6,7 +6,8 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '开启消息通知',
+      name: '通知提示-请求消息通知弹窗',
+      desc: '点击取消',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

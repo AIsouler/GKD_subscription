@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.ruili.android.taierspeed.main.MainActivity',
       rules: [
         '[id="com.cnspeedtest.globalspeed:id/vision_btn_ok"][text="更新"] +2 [id="com.cnspeedtest.globalspeed:id/vision_btn_cancel"]',

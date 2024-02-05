@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.cubic.autohome.MainActivity',
       rules: '[id="com.cubic.autohome:id/operate_show_exit_layout"]',
       snapshotUrls: 'https://i.gkd.li/import/12836324',
