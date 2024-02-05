@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '信息流广告',
+      name: '局部广告-信息流广告',
       rules: [
         {
           key: 0,

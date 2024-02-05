@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       desc: '自动点击【不允许】',
       activityIds: 'com.baidu.baike.component.push.NotificationEnableDialog',
       rules: '[text^="打开推送通知"] +2 [text="不允许"]',

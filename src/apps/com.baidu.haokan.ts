@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 3,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
