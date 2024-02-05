@@ -7,8 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
-
+      name: '全屏广告-弹窗广告',
       activityIds: [
         'com.copymanga.app.MainActivity',
         'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',
@@ -121,7 +120,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 0,
@@ -155,7 +154,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '关闭赞助提示',
+      name: '全屏广告-关闭赞助提示',
       activityIds: 'com.copymanga.app.MainActivity',
       rules: [
         {
@@ -166,7 +165,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '自动确认线路',
+      name: '功能类-自动确认线路',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -179,13 +178,15 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '关闭提示',
+      name: '通知提示-关闭系统提示弹窗',
       matchTime: 30000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           matches: '[desc="系统提示"] +n [desc="确定"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7577dafa-9e3e-44de-bd20-c52f8a30e9c6',
           snapshotUrls: 'https://i.gkd.li/import/13233180',
         },
       ],

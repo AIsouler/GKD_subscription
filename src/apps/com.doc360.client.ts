@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 5,
-      name: '阅读-推荐-信息流广告',
+      name: '局部广告-信息流广告',
       quickFind: true,
       activityIds: 'com.doc360.client.activity.ReadRoomActivity',
       rules:

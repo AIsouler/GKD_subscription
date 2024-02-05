@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '浮窗广告',
+      name: '局部广告-浮窗广告',
       quickFind: true,
       activityIds: 'com.ctm.home.page.MainActivity',
       rules: '[id="com.ctm:id/iv_close"]',
@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '底部横幅广告',
+      name: '局部广告-底部横幅广告',
       quickFind: true,
       activityIds: 'com.ctm.home.page.MainActivity',
       rules: '[id="com.ctm:id/btn_close"]',

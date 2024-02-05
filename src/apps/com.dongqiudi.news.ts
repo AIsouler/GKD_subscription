@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
       matchTime: 10000,
@@ -45,7 +45,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.dongqiudi.news.DownloadActivity',
       quickFind: true,
       matchTime: 10000,
@@ -57,7 +57,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '首页信息流广告',
+      name: '分段广告-首页信息流广告',
       desc: '点击广告卡片x关闭按钮-关闭反馈理由弹窗',
       activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
@@ -85,7 +85,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '首页-广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       desc: '点击底部【x】关闭',
       activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
@@ -94,7 +94,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '数据页弹窗广告',
+      name: '全屏广告-数据页弹窗广告',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dongqiudi.news.MainActivity',

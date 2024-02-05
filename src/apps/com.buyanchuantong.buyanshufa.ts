@@ -7,7 +7,8 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '功能介绍',
+      name: '功能类-功能介绍',
+      desc: '点击跳过',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

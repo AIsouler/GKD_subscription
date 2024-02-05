@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '优惠卷提示',
+      name: '全屏广告-优惠卷提示',
       quickFind: true,
       activityIds: 'com.ddsy.songyao.activity.SplashActivity',
       rules: [

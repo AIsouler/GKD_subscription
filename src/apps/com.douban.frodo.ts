@@ -3,12 +3,12 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.douban.frodo',
   name: '豆瓣',
-  deprecatedKeys: [0, 7],
+  deprecatedKeys: [0, 7, 12],
   groups: [
     {
       enable: false,
       key: 1,
-      name: '不分享/同步作品短评',
+      name: '功能类-不分享/同步作品短评',
       desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
       quickFind: true,
       matchTime: 5000,
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '剧照广告',
+      name: '分段广告-剧照广告',
       activityIds: 'com.douban.frodo.baseproject.image.SociableImageActivity',
       rules: [
         {
@@ -51,7 +51,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '信息流广告',
+      name: '分段广告-信息流广告',
       desc: '首页动态/推荐,小组讨论列表,帖子底部,点击广告关闭后出现关闭原因底部菜单-点击不感兴趣',
       quickFind: true,
       activityIds: [
@@ -106,7 +106,7 @@ export default defineAppConfig({
     {
       key: 4,
       actionCd: 10000,
-      name: '卡片广告',
+      name: '分段广告-卡片广告',
       desc: '书影音-卡片广告-点击卡片右下角"广告"文字',
       // 豆瓣在屏幕之外渲染了大量节点, 在节点肉眼不可见但是无障碍可见的情况下, 仍然会触发大量点击
       // 发现增加一个较高的 cd 值可以避免后续广告节点出现, 从而不会触发点击
@@ -132,7 +132,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '关闭评分反馈弹窗',
+      name: '评价提示-关闭评分反馈弹窗',
       quickFind: true,
       activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: {
@@ -142,7 +142,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '搜索页/帖子内容与评论区中间的卡片式广告',
+      name: '分段广告-搜索页/帖子内容与评论区中间的卡片式广告',
       desc: '部分有二次弹窗',
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -195,7 +195,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '个性化内容推荐弹窗',
+      name: '局部广告-个性化内容推荐弹窗',
       desc: '首页底部-个性化内容推荐弹窗-点击卡片右上角x直接关闭',
       rules: {
         activityIds: ['com.douban.frodo.activity.SplashActivity'],
@@ -206,9 +206,8 @@ export default defineAppConfig({
     },
     {
       key: 10, // 已包含key13内容
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       desc: '浏览详情时弹窗广告,点击右上角x',
-
       rules: [
         {
           key: 0,
@@ -233,7 +232,7 @@ export default defineAppConfig({
     },
     {
       key: 11, //与key12完全重复
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

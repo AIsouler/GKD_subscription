@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 0,
-      name: '通知权限请求',
+      name: '通知提示-通知权限请求',
       desc: '会出现在创作、模板、我的页面，自动点击不开启。',
       quickFind: true,
       activityIds: 'com.bcut.homepage.widget.MainActivity',
@@ -28,7 +28,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '版本更新',
+      name: '更新提示',
       desc: '勾选【忽略】-点击【以后再说】',
       quickFind: true,
       matchTime: 10000,

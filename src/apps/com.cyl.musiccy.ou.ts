@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '首页通知',
+      name: '通知提示-首页公告弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -47,7 +47,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       actionDelay: 300,
       rules: [
         {

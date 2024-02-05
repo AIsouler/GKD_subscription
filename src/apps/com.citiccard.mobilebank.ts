@@ -22,7 +22,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '广告弹窗',
+      name: '全屏广告-弹窗广告',
       activityIds: [
         'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
       ],
@@ -36,7 +36,8 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '通知权限弹窗',
+      name: '通知提示-通知权限弹窗',
+      desc: '点击关闭',
       activityIds: [
         'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
       ],

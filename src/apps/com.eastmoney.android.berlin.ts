@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: [
         'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
         'com.bbk.launcher2.Launcher',
@@ -21,7 +21,7 @@ export default defineAppConfig({
     {
       enable: true,
       key: 10,
-      name: '请求通知权限提示信息',
+      name: '通知提示-请求通知权限提示信息',
       activityIds: [
         'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
       ],

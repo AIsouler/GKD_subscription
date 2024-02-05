@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       resetMatch: 'app',
       actionMaximum: 1,
       activityIds: ['com.byd.aeri.splash.module_splash.activity.TabManager'],

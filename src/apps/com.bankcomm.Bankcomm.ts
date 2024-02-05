@@ -10,7 +10,7 @@ export default defineAppConfig({
         'com.bankcomm.module.biz.home.MainActivity',
         'com.hihonor.android.launcher.unihome.UniHomeLauncher',
       ],
-      name: '首页弹窗广告',
+      name: '全屏广告-首页弹窗广告',
       desc: '点击右上角x',
       rules:
         '[id="com.bankcomm.Bankcomm:id/popup_ad_image"] - [id="com.bankcomm.Bankcomm:id/popup_close"]',
@@ -22,7 +22,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '版本升级弹窗',
+      name: '更新提示',
       desc: '点击 暂不更新',
       activityIds: [
         'com.bankcomm.module.biz.webcontainer.BCMHtml5Activity',

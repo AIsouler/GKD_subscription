@@ -21,8 +21,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '弹窗广告',
-
+      name: '全屏广告-弹窗广告',
       activityIds: ['com.dfsly.bbs.ui.NavigationActivity'],
       quickFind: true,
       rules: [

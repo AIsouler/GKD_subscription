@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 3,
-      name: '首页-弹窗广告',
+      name: '全屏广告-首页弹窗广告',
       quickFind: true,
       activityIds: 'com.csair.mbp.CSMBPActivity',
       rules: '[id="com.csair.mbp:id/close_btn"]',

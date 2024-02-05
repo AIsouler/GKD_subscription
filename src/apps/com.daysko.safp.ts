@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '谷歌广告-全屏广告',
+      name: '全屏广告-谷歌广告',
       activityIds: 'com.google.android.gms.ads.AdActivity',
       rules: [
         {
@@ -38,7 +38,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '谷歌广告-视频广告',
+      name: '全屏广告-视频广告',
       desc: '点击跳过视频-点击关闭按钮',
       activityIds: ['com.google.android.gms.ads.AdActivity'],
       rules: [
@@ -73,7 +73,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '谷歌广告-页面底部广告',
+      name: '局部广告-页面底部广告',
       activityIds: 'com.daysko.safp.MainActivity',
       rules: [
         {

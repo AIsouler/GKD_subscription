@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       actionMaximum: 1,
       resetMatch: 'activity',
       rules: [
@@ -74,7 +74,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '悬浮窗小广告',
+      name: '局部广告-悬浮窗小广告',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
@@ -84,7 +84,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '年底积分活动弹窗',
+      name: '全屏广告-年底积分活动弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

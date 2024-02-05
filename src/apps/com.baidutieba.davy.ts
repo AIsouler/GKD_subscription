@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '内部弹窗广告',
+      name: '全屏广告-内部弹窗广告',
       activityIds: 'com.davy.commonlibrary.utils.DialogUtil',
       rules: [
         {

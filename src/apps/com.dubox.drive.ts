@@ -24,7 +24,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '广告弹窗',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       activityIds: 'com.dubox.drive.ui.MainActivity',
       rules: 'ImageView[id="com.dubox.drive:id/ivClose"]',
@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '通知权限',
+      name: '通知提示',
       quickFind: true,
       activityIds: 'com.dubox.drive.permission.view.PermissionDialogActivity',
       rules:
