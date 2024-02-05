@@ -2,20 +2,20 @@
 
 存在 3 规则组 - [com.yitong.mbank.psbc](/src/apps/com.yitong.mbank.psbc.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12685350)
 - [快照-1](https://i.gkd.li/import/13695462)
 
-## 首页广告弹窗
+## 全屏广告-首页广告弹窗
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12755516)
 
-## 首页-浮窗广告
+## 局部广告-首页-浮窗广告
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.tmri.app.main](/src/apps/com.tmri.app.main.ts)
 
-## 通知提示
+## 通知提示-请求通知弹窗
 
 默认禁用
 

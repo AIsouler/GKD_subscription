@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.huawei.appmarket](/src/apps/com.huawei.appmarket.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 

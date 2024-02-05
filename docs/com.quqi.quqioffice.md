@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.quqi.quqioffice](/src/apps/com.quqi.quqioffice.ts)
 
-## 私人云-看图-弹窗广告
+## 全屏广告-私人云看图弹窗广告
 
 默认禁用 - 在线私人云看图片自动弹出自动播放可跳过广告
 

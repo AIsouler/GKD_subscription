@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [fm.qingting.qtradio](/src/apps/fm.qingting.qtradio.ts)
 
-## 播放界面的广告
+## 局部广告-播放界面的广告
 
 默认禁用
 

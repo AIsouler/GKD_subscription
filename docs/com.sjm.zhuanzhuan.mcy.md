@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.sjm.zhuanzhuan.mcy](/src/apps/com.sjm.zhuanzhuan.mcy.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 

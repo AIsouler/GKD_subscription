@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.vivo.wallet](/src/apps/com.vivo.wallet.ts)
 
-## 通知权限授权弹窗
+## 通知提示-请求通知权限授权弹窗
 
 默认禁用
 

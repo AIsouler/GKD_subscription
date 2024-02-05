@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.rarlab.rar](/src/apps/com.rarlab.rar.ts)
 
-## 订购 RAR 弹窗
+## 全屏广告-订购 RAR 弹窗
 
 默认禁用 - 自动点击【放弃】
 

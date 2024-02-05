@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.kuaishou.nebula](/src/apps/com.kuaishou.nebula.ts)
 
-## 青少年弹窗
+## 青少年模式
 
 默认禁用
 

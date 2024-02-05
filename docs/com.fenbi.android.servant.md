@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.fenbi.android.servant](/src/apps/com.fenbi.android.servant.ts)
 
-## 升级弹窗
+## 更新提示
 
 默认禁用
 

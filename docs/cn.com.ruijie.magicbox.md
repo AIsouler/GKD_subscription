@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [cn.com.ruijie.magicbox](/src/apps/cn.com.ruijie.magicbox.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.banjixiaoguanjia.app](/src/apps/com.banjixiaoguanjia.app.ts)
 
-## 应用内广告卡片
+## 分段广告-卡片广告
 
 默认禁用
 

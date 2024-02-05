@@ -50,7 +50,7 @@
 
 - [快照-0](https://i.gkd.li/import/13053628)
 
-## 设置无声进入抖音
+## 功能类-设置无声进入抖音弹窗
 
 默认禁用 - 点击[拒绝]
 
@@ -76,7 +76,8 @@
 
 - [快照-0](https://i.gkd.li/import/13241564)
 - [快照-1](https://i.gkd.li/import/13372604)
-- [快照-2](https://i.gkd.li/import/13372725)
+- [快照-2](https://i.gkd.li/import/14160675)
+- [快照-3](https://i.gkd.li/import/13372725)
 
 ## 全屏广告-添加快捷方式到桌面
 

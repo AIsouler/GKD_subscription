@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.keke.ysh1.tz08051h](/src/apps/com.keke.ysh1.tz08051h.ts)
 
-## 开屏提示
+## 未分类-开屏公告提示
 
 默认禁用
 

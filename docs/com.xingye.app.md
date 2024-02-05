@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.xingye.app](/src/apps/com.xingye.app.ts)
 
-## 青少年模式弹窗
+## 青少年模式
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.mxtech.videoplayer.ad](/src/apps/com.mxtech.videoplayer.ad.ts)
 
-## 谷歌广告
+## 全屏广告-谷歌广告
 
 默认禁用
 

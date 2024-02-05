@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.tima.carnet.m.main](/src/apps/com.tima.carnet.m.main.ts)
 
-## 每日弹窗广告
+## 全屏广告-每日弹窗广告
 
 默认禁用
 
@@ -11,7 +11,7 @@
 - [快照-2](https://i.gkd.li/import/13508074)
 - [快照-3](https://i.gkd.li/import/13508041)
 
-## 设备界面顶部广告
+## 分段广告-设备界面顶部广告
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 3 规则组 - [com.jdd.motorfans](/src/apps/com.jdd.motorfans.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 
@@ -17,14 +17,14 @@
 - [快照-6](https://i.gkd.li/import/13188928)
 - [快照-7](https://i.gkd.li/import/12826288)
 
-## 信息流广告
+## 分段广告-信息流广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12826382)
 - [快照-1](https://i.gkd.li/import/12829069)
 
-## 文章内容弹窗
+## 全屏广告-文章内容页面弹窗广告
 
 默认禁用
 

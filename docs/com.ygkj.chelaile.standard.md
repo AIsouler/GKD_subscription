@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.ygkj.chelaile.standard](/src/apps/com.ygkj.chelaile.standard.ts)
 
-## 卡片式广告
+## 局部广告-卡片式广告
 
 默认禁用
 

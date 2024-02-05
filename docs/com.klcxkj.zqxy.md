@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.klcxkj.zqxy](/src/apps/com.klcxkj.zqxy.ts)
 
-## 弹窗广告
+## 全屏广告-弹窗广告
 
 默认禁用
 
@@ -17,7 +17,7 @@
 - [快照-8](https://i.gkd.li/import/13707849)
 - [快照-9](https://i.gkd.li/import/13274838)
 
-## 横幅广告
+## 局部广告-横幅广告
 
 默认禁用
 

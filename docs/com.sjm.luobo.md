@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.sjm.luobo](/src/apps/com.sjm.luobo.ts)
 
-## 广告弹窗
+## 全屏广告-广告弹窗
 
 默认禁用
 

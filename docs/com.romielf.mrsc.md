@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.romielf.mrsc](/src/apps/com.romielf.mrsc.ts)
 
-## 新闻页面摇一摇广告
+## 局部广告-新闻页面摇一摇广告
 
 默认禁用 - 点击准确率灵敏度不太高
 

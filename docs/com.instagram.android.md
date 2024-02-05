@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.instagram.android](/src/apps/com.instagram.android.ts)
 
-## 信息流广告
+## 分段广告-信息流广告
 
 默认禁用 - 但是步骤较多, 影响app使用
 

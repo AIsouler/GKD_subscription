@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.videogo](/src/apps/com.videogo.ts)
 
-## 主页广告
+## 分段广告-主页广告
 
 默认禁用
 

@@ -2,13 +2,13 @@
 
 存在 2 规则组 - [com.guwendao.gwd](/src/apps/com.guwendao.gwd.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12776605)
 
-## 第三方 SDK 广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 

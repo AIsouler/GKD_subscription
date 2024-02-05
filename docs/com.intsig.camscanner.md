@@ -2,11 +2,11 @@
 
 存在 2 规则组 - [com.intsig.camscanner](/src/apps/com.intsig.camscanner.ts)
 
-## 开屏vip提示
+## 全屏广告-开屏vip提示
 
 默认禁用
 
-## 主页面上方广告
+## 局部广告-主页面上方广告
 
 默认禁用
 

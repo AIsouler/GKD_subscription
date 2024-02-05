@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.cnki.client](/src/apps/com.cnki.client.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 

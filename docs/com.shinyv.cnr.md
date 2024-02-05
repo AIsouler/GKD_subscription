@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.shinyv.cnr](/src/apps/com.shinyv.cnr.ts)
 
-## 首页广告弹窗
+## 全屏广告-首页广告弹窗
 
 默认禁用
 

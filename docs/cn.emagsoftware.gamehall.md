@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [cn.emagsoftware.gamehall](/src/apps/cn.emagsoftware.gamehall.ts)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 

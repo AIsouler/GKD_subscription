@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.dewmobile.kuaiya](/src/apps/com.dewmobile.kuaiya.ts)
 
-## 卡片式广告
+## 局部广告-卡片式广告
 
 默认禁用
 

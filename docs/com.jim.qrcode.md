@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.jim.qrcode](/src/apps/com.jim.qrcode.ts)
 
-## 顶部广告卡片
+## 局部广告-顶部广告卡片
 
 默认禁用 - 点击卡片右上角关闭按钮
 

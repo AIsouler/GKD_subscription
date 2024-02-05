@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.mosoink.teach](/src/apps/com.mosoink.teach.ts)
 
-## 首页-班课列表广告
+## 全屏广告-首页班课列表广告
 
 默认禁用
 

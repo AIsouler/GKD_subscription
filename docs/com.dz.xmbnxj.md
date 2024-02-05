@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.dz.xmbnxj](/src/apps/com.dz.xmbnxj.ts)
 
-## 底部卡片广告
+## 局部广告-底部卡片广告
 
 默认禁用
 

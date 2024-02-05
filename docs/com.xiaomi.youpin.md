@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.xiaomi.youpin](/src/apps/com.xiaomi.youpin.ts)
 
-## 广告弹窗
+## 全屏广告-广告弹窗
 
 默认禁用
 

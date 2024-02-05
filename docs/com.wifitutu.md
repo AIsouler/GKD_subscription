@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.wifitutu](/src/apps/com.wifitutu.ts)
 
-## 首页-WiFi列表广告
+## 局部广告-首页-WiFi列表广告
 
 默认禁用
 

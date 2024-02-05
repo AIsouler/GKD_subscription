@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.xt.retouch](/src/apps/com.xt.retouch.ts)
 
-## 好评反馈
+## 评价提示-好评反馈
 
 默认禁用
 

@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.hnnx.pmbank](/src/apps/com.hnnx.pmbank.ts)
 
-## 版本更新
+## 更新提示
 
 默认禁用
 

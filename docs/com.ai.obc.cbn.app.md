@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.ai.obc.cbn.app](/src/apps/com.ai.obc.cbn.app.ts)
 
-## 版本弹窗
+## 更新提示
 
 默认禁用
 
