@@ -22,7 +22,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '小说阅读页面-卡片广告',
+      name: '分段广告-小说阅读页面-卡片广告',
       activityIds: 'com.tencent.mtt.MainActivity',
       rules: [
         {
@@ -61,7 +61,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '小说阅读页面-视频广告',
+      name: '分段广告-小说阅读页面-视频广告',
       activityIds: 'com.qq.e.tg.RewardvideoPortraitADActivity',
       rules: [
         {

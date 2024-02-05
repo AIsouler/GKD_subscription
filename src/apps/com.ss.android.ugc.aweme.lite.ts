@@ -6,8 +6,8 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '青少年弹窗',
-      desc: '点击【我知道了】（旧版本）【关闭】（新版本）',
+      name: '青少年模式',
+      desc: '点击"我知道了"/"关闭"',
       quickFind: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       actionMaximum: 1,
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '功能体验邀请弹窗',
+      name: '功能类-功能体验邀请弹窗',
       rules: [
         {
           key: 0,
@@ -44,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '朋友推荐弹窗',
+      name: '全屏广告-朋友推荐弹窗',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',

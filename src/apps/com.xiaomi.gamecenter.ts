@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页右侧悬浮广告',
+      name: '局部广告-首页右侧悬浮广告',
       activityIds: 'com.xiaomi.gamecenter.ui.MainTabActivity',
       rules:
         '[id="com.xiaomi.gamecenter:id/ad_view"] + [id="com.xiaomi.gamecenter:id/close_btn"]',

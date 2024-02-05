@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '主页广告',
+      name: '分段广告-主页广告',
       quickFind: true,
       activityIds: ['com.videogo.main.MainTabActivity'],
       rules: [

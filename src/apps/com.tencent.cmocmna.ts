@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '悬浮广告',
+      name: '局部广告-悬浮广告',
       activityIds: 'com.tencent.mocmna.activity.MainActivity',
       rules:
         'ViewGroup[childCount=2] > @ImageView[id!=null][clickable=true] + ImageView',
@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '信息流内嵌广告',
+      name: '局部广告-信息流内嵌广告',
       activityIds: 'com.tencent.mocmna.activity.MainActivity',
       rules: 'ImageView - ViewGroup > ImageView + ImageView + ImageView',
       snapshotUrls: [

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告卡片',
+      name: '局部广告-广告卡片',
       desc: '设备列表和连接界面中的广告卡片',
       activityIds: [
         'youqu.android.todesk.activity.WelcomeActivity',

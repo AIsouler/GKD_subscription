@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '谷歌广告',
+      name: '全屏广告-谷歌广告',
       activityIds: 'com.mxtech.videoplayer.ad.ActivityMediaList',
       rules: [
         {

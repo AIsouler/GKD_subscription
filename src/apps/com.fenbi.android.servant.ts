@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '升级弹窗',
+      name: '更新提示',
       activityIds: 'com.fenbi.android.module.home.HomeActivity',
       rules: [
         {

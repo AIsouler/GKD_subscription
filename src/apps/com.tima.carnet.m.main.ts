@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '每日弹窗广告',
+      name: '全屏广告-每日弹窗广告',
       activityIds: [
         'com.tima.carnet.m.main.lib.common.dialog.TimaLoadingDialog',
         'com.tima.carnet.m.main.app.main.NoticeActivity',
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '设备界面顶部广告',
+      name: '分段广告-设备界面顶部广告',
       activityIds: ['com.tima.carnet.m.main.app.main.MainActivity'],
       rules: [
         {

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       activityIds: [
         'com.moutai.mall.MainActivity',
         'com.moutai.mall.module.splash.SplashActivity',
@@ -21,7 +21,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       activityIds: 'com.moutai.mall.MainActivity',
       rules:
         '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',

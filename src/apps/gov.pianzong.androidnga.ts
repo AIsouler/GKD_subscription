@@ -26,14 +26,14 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '首页-推荐-广告卡片',
+      name: '局部广告-首页-推荐-广告卡片',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
       snapshotUrls: 'https://i.gkd.li/import/12482727',
     },
     {
       key: 2,
-      name: '话题-帖子列表广告',
+      name: '局部广告-话题-帖子列表广告',
       desc: '点击卡片x按钮关闭广告',
       activityIds:
         'gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity',
@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '社区-顶部广告',
+      name: '局部广告-社区-顶部广告',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
       snapshotUrls: ['https://i.gkd.li/import/12706132'],

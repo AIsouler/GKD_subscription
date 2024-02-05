@@ -8,7 +8,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '首页-推送通知',
+      name: '通知提示-请求推送通知弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -109,7 +109,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '升级弹窗',
+      name: '更新提示',
       enable: false,
       quickFind: true,
       matchTime: 10000,
@@ -127,7 +127,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '申请开启推送通知弹窗',
+      name: '通知提示-申请开启推送通知弹窗',
       enable: false,
       quickFind: true,
       matchTime: 10000,
@@ -142,7 +142,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '请求好评弹窗',
+      name: '评价提示-请求好评弹窗',
       activityIds:
         'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
       quickFind: true,

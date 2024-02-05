@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '视频播放-跳过广告',
+      name: '全屏广告-视频播放-跳过广告',
       activityIds: [
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '视频播放-赞助商广告',
+      name: '全屏广告-视频播放-赞助商广告',
       activityIds:
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
       rules:
@@ -46,7 +46,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页-会员广告',
+      name: '局部广告-首页会员广告',
       activityIds:
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
       rules:
@@ -55,7 +55,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '订阅浮窗广告',
+      name: '全屏广告-订阅浮窗广告',
       activityIds:
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
       rules:

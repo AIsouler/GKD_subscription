@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: [
         'com.zhengnengliang.precepts.ui.activity.MainActivity',
         'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton',
@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '第三方 SDK 广告',
+      name: '全屏广告-弹窗广告',
       activityIds: [
         'com.zhengnengliang.precepts.ui.activity.MainActivity',
         'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton',

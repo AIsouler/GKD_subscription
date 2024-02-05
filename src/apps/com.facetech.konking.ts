@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内广告弹窗',
+      name: '全屏广告-广告弹窗',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: '@Image[text=""] < View +n View > View > TextView[text="广告"]',

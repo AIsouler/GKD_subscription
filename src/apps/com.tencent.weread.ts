@@ -6,8 +6,8 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '系统推送弹窗',
-      desc: '系统推送弹窗-点击取消',
+      name: '通知提示-请求系统推送弹窗',
+      desc: '点击取消',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
@@ -28,7 +28,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,

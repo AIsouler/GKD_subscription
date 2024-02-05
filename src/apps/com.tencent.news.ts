@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '信息流广告',
+      name: '分段广告-信息流广告',
       desc: '自动点击【更多】->【不感兴趣】',
       activityIds: [
         'com.tencent.news.activity.SplashActivity',
@@ -36,7 +36,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '广告、活动弹窗',
+      name: '全屏广告-广告、活动弹窗',
       rules: [
         {
           key: 0,
@@ -50,7 +50,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       activityIds: 'com.tencent.news.activity.SplashActivity',
       rules: '[text="开启通知"] + [text="先不了"]',
       snapshotUrls: 'https://i.gkd.li/import/12755824',

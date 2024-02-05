@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
         {
@@ -23,7 +23,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '首页-红包弹窗',
+      name: '全屏广告-首页红包弹窗',
       desc: '自动点击x按钮',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
@@ -47,7 +47,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '首页-左侧红包悬浮控件',
+      name: '局部广告-首页左侧红包悬浮控件',
       desc: '自动点击x按钮',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [

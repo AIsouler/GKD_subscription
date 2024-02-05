@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: '我的-卡片式广告',
+      name: '分段广告-我的页面卡片式广告',
       desc: '需点击二次弹窗确认',
       quickFind: true,
       activityIds: 'com.camellia.trace.activity.MainActivity',
@@ -30,7 +30,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '【字节】广告弹窗',
+      name: '全屏广告-【字节】广告弹窗',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: '[text="反馈"] -2 @View > Image',

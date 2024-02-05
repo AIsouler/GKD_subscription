@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="暂不更新"] + [text="立即更新"]',
@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '广告弹窗',
+      name: '全屏广告-弹窗广告',
       activityIds: [
         'com.ecitic.bank.mobile.ui.MainActivity',
         'com.ecitic.bank.mobile.ui.webview.CordovaWebViewActivity',
@@ -31,7 +31,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '请求开通知权限弹窗',
+      name: '通知提示-请求开通知权限弹窗',
       activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
       rules: '@[text="取消"] + [text="立即开启"]',
       snapshotUrls: 'https://i.gkd.li/import/13399102',

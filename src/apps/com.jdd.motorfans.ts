@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       activityIds: [],
       rules: [
         {
@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '信息流广告',
+      name: '分段广告-信息流广告',
       activityIds: ['com.jdd.motorfans.MTMainActivity'],
       rules: [
         {
@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '文章内容弹窗',
+      name: '全屏广告-文章内容页面弹窗广告',
       activityIds: [
         'com.jdd.motorfans.modules.zone.search.ZoneInsideSearchActivity',
       ],

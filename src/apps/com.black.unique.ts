@@ -17,5 +17,24 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '开屏广告',
+      desc: '点击跳过',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.black.unique.feature.home.HomeActivity',
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/63a72bd6-72be-410c-86ab-09ba7a4fa318',
+          snapshotUrls: 'https://i.gkd.li/import/14167393',
+        },
+      ],
+    },
   ],
 });

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: 'VIP弹窗',
+      name: '全屏广告-VIP弹窗',
       desc: '直接关闭所有底部半屏弹窗',
       quickFind: true,
       actionMaximum: 1,
@@ -40,7 +40,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '看广告视频拿VIP',
+      name: '功能类-看广告视频拿VIP',
       desc: '30s广告后点击【跳过】',
       activityIds: [
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',

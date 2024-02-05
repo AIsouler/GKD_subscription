@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       activityIds: ['com.qq.ac.android.main.MainActivity'],
       actionMaximum: 1,
       resetMatch: 'app',
@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '漫画阅读页面-左侧悬浮广告',
+      name: '局部广告-漫画阅读页面-左侧悬浮广告',
       activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
       rules:
         '[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',

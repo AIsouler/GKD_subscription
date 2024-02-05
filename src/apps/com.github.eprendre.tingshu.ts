@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       activityIds: [
         'com.github.eprendre.tingshu.ui.search.AggregateSearchActivity',
         'com.github.eprendre.tingshu.ui.play.PlayerActivity',
@@ -28,7 +28,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '活动弹窗',
+      name: '全屏广告-活动弹窗',
       activityIds: 'com.baicizhan.main.activity.MainTabActivity',
       rules:
         '[text="反馈"] + ImageView + ImageView[childCount=0][clickable=true]',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '动画疯年龄限制',
+      name: '未分类-动画疯年龄限制',
       desc: '点击同意',
       activityIds: 'tw.com.gamer.android.animad.VideoActivity',
       quickFind: true,

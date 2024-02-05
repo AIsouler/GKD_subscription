@@ -31,7 +31,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -40,7 +40,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -52,7 +52,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '卡片式广告',
+      name: '分段广告-卡片式广告',
       rules: [
         {
           key: 0,
@@ -232,7 +232,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 20,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       resetMatch: 'app',
       rules: [
         {

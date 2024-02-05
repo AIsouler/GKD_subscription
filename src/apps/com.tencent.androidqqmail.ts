@@ -16,7 +16,7 @@ export default defineAppConfig({
     },
     {
       key: 0,
-      name: '列表卡片广告',
+      name: '分段广告-列表卡片广告',
       quickFind: true,
       activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
       rules: [
@@ -51,7 +51,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '开启通知提醒',
+      name: '通知提示-开启通知提醒',
       enable: false,
       quickFind: true,
       activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',

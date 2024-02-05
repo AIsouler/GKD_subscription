@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '私人云-看图-弹窗广告',
+      name: '全屏广告-私人云看图弹窗广告',
       desc: '在线私人云看图片自动弹出自动播放可跳过广告',
       activityIds: [
         'com.qq.e.ads.PortraitADActivity',

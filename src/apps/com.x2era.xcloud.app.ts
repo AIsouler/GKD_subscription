@@ -5,7 +5,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: 'Fa米家-升级提示',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

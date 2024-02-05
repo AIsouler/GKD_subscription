@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告卡片',
+      name: '局部广告-广告卡片',
       activityIds: 'com.mvvm.view.LazyMapStrategyActivity_TengXun',
       rules: [
         {
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '开启通知弹窗',
+      name: '通知提示-请求通知弹窗',
       desc: '自动点击“以后再说”',
       quickFind: true,
       matchTime: 10000,

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '首页广告',
+      name: '全屏广告-首页弹窗广告',
       rules: [
         {
           quickFind: true,
@@ -20,7 +20,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '首页浮窗',
+      name: '局部广告-首页浮窗广告',
       rules: [
         {
           activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '今日推荐',
+      name: '局部广告-今日推荐',
       rules: [
         {
           activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',

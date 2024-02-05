@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内广告卡片',
+      name: '分段广告-应用内广告卡片',
       activityIds: 'net.pchome.kds.View.activity.TopicActivity2',
       rules: [
         {

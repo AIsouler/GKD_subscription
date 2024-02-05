@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '开屏提示',
+      name: '未分类-开屏公告提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -23,7 +23,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '个人页顶部广告',
+      name: '局部广告-个人页顶部广告',
       rules: [
         {
           activityIds: 'com.kugou.android.app.MediaActivity',
@@ -37,7 +37,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: 'VIP弹窗',
+      name: '全屏广告-VIP弹窗',
       rules: [
         {
           matches:

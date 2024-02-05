@@ -6,14 +6,14 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '广告卡片',
+      name: '局部广告-广告卡片',
       activityIds: 'com.jxedt.ui.activitys.exercise.OrderExerciseActivity',
       rules: '[id="com.jxedt:id/img_question_banner_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13195641',
     },
     {
       key: 3,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,

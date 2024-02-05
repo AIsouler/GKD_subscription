@@ -8,7 +8,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 8,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       quickFind: true,
       activityIds: [
         'com.yanzhenjie.permission.PermissionActivity',
@@ -23,7 +23,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 9,
-      name: '请求定位权限弹窗',
+      name: '定位提示-请求定位权限弹窗',
       quickFind: true,
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules:
@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '应用内活动、广告弹窗（大部分）',
+      name: '全屏广告-应用内活动、广告弹窗（大部分）',
       activityIds: [
         'com.hellobike.ads.widget.insert.dialog.HBAdvertDialog',
         'com.hellobike.atlas.business.portal.PortalActivity',
@@ -47,7 +47,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '哈啰智能电动车-广告弹窗',
+      name: '全屏广告-哈啰智能电动车-广告弹窗',
       quickFind: true,
       activityIds: [
         'com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity',
@@ -58,7 +58,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '右侧悬浮广告',
+      name: '局部广告-右侧悬浮广告',
       quickFind: true,
       activityIds: ['com.hellobike.atlas.business.portal.PortalActivity'],
       rules:
@@ -67,7 +67,7 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '骑行订单完成-广告弹窗',
+      name: '全屏广告-骑行订单完成-广告弹窗',
       activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],
       rules:
         '[text="订单完成"] >(2) View[childCount=2] > Image[id=null][clickable=true]',
@@ -75,7 +75,7 @@ export default defineAppConfig({
     },
     {
       key: 14,
-      name: '骑行卡-优惠券弹窗',
+      name: '全屏广告-骑行卡-优惠券弹窗',
       activityIds: ['com.hellobike.atlas.business.portal.PortalActivity'],
       rules: '[desc="去使用"] + Button[text=null][visibleToUser=true]',
       snapshotUrls: ['https://i.gkd.li/import/12739316'],

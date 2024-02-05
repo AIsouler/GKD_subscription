@@ -7,9 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds:
-        'com.kuangxiangciweimao.novel.activity.AdvertisementActivity',
-
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[id="com.kuangxiangciweimao.novel:id/mTasksView"]',
       snapshotUrls: 'https://i.gkd.li/import/13056248',
     },

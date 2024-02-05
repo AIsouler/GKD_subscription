@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-底部广告',
+      name: '局部广告-首页-底部广告',
       activityIds: [
         'com.xuexiaoyi.entrance.main.MainActivity',
         'com.xuexiaoyi.platform.base.arch.RouterFragmentActivity',
@@ -70,7 +70,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '升级弹窗',
+      name: '更新提示',
       desc: '自动点击以后再说。',
       activityIds: 'com.xuexiaoyi.entrance.main.MainActivity',
       enable: false,

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -16,7 +16,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       activityIds: 'com.zui.launcher.drawer.NormalLauncher',
       quickFind: true,
       rules:

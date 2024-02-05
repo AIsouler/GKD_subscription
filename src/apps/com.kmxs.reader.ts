@@ -6,20 +6,20 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: '[id="com.kmxs.reader:id/young_dialog_close"]',
     },
     {
       key: -2,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.km.app.update.UpdateVersionV2Activity',
       rules: '[id="com.kmxs.reader:id/tv_update_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/12641338',
     },
     {
       key: 2,
-      name: '阅读页面底部广告',
+      name: '局部广告-阅读页面底部广告',
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules:
         '[id="com.kmxs.reader:id/ll_ad_native_banner"] > [id="com.kmxs.reader:id/iv_ad_direct_close"]',
@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '阅读结束后显示的广告',
+      name: '全屏广告-阅读结束后显示的广告',
       quickFind: true,
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules: [
@@ -47,7 +47,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '签到弹窗',
+      name: '全屏广告-签到弹窗',
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules:
         '@TextView[id=null] < View +(2) TextView[text^="已连签"&&text*="天"]',
@@ -56,7 +56,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 99,
-      name: '右侧悬浮红包',
+      name: '局部广告-右侧悬浮红包',
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: {
         matches:
@@ -67,7 +67,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '书架顶部广告',
+      name: '局部广告-书架顶部广告',
       quickFind: true,
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
@@ -76,7 +76,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 5,
-      name: '【字节】视频广告',
+      name: '全屏广告-字节视频广告',
       desc: '此规则有概率误触或失效，请谨慎选择开启。',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -104,7 +104,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 6,
-      name: '【百度】全屏广告',
+      name: '全屏广告-百度',
       desc: '此规则有概率误触或失效，请谨慎选择开启。',
       activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
       rules: [
@@ -120,7 +120,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 7,
-      name: '【腾讯】全屏广告',
+      name: '全屏广告-腾讯',
       desc: '此规则有概率误触或失效，请谨慎选择开启。',
       activityIds: 'com.qq.e.ads.PortraitADActivity',
       rules: [

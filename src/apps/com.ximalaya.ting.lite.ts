@@ -6,14 +6,14 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '首页-推荐-卡片广告',
+      name: '局部广告-首页、推荐页-卡片广告',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_ad_top_home_iv_close"]',
     },
     {
       key: 1,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '小说推荐弹窗',
+      name: '全屏广告-小说推荐弹窗',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_iv_novel_back"]',
@@ -35,7 +35,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '支付宝提现广告弹窗',
+      name: '全屏广告-支付宝提现广告弹窗',
       desc: '点击右上角圆形x',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
@@ -44,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '关闭开启通知弹窗',
+      name: '通知提示-请求开启通知弹窗',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
       rules:

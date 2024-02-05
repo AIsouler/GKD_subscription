@@ -6,8 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内广告弹窗',
-
+      name: '分段广告-广告弹窗',
       rules: [
         {
           actionDelay: 500,

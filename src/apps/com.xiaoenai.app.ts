@@ -43,7 +43,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '信息流广告',
+      name: '局部广告-信息流广告',
       activityIds:
         'com.xiaoenai.app.presentation.home.view.activity.HomeActivity',
       rules: [

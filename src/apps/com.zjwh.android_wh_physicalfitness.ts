@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '优量汇广告',
+      name: '全屏广告-优量汇广告',
       activityIds: [
         'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
         'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
@@ -25,7 +25,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '百青藤广告',
+      name: '全屏广告-百青藤广告',
       activityIds:
         'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
       rules: [
@@ -38,7 +38,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '快手广告',
+      name: '全屏广告-快手广告',
       activityIds: [
         'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
         'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
@@ -72,7 +72,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '百度广告',
+      name: '全屏广告-百度广告',
       activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -82,7 +82,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '第三方SDK广告', // 不知道是什么SDK
+      name: '全屏广告-第三方SDK广告', // 不知道是什么SDK
       activityIds: 'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
       rules: [
         {

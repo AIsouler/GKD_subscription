@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页广告',
+      name: '局部广告-信息流广告',
       rules: [
         {
           quickFind: true,
@@ -21,7 +21,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '评论区广告',
+      name: '局部广告-评论区广告',
       rules: [
         {
           quickFind: true,

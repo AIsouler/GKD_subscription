@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '通知提示',
+      name: '通知提示-请求通知弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

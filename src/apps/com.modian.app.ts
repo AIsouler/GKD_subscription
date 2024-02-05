@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '「我的」界面广告条',
+      name: '局部广告-"我的"界面广告条',
       activityIds: 'com.modian.app.ui.activity.MainActivity',
       rules: [
         {

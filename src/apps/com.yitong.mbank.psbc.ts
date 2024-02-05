@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       activityIds: [
         'com.yitong.mbank.psbc.module.app.view.customview.dialog.DialogUpdateApk',
@@ -24,7 +24,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       activityIds:
         'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
       rules:
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '首页-浮窗广告',
+      name: '局部广告-首页-浮窗广告',
       activityIds:
         'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
       rules: '[id="com.yitong.mbank.psbc:id/img_close_float_window"]',

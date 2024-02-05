@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       activityIds: ['com.android.app.station.NewMainAct'],
       rules:
         '[id="com.longshine.nanwang.electric.charge:id/bodyFL"] + [id="com.longshine.nanwang.electric.charge:id/ivClose"]',

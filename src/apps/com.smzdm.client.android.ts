@@ -7,14 +7,14 @@ export default defineAppConfig({
     {
       key: 1,
       quickFind: true,
-      name: 'APP内弹窗广告',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '[id="com.smzdm.client.android:id/dialog_home_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12695751',
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       quickFind: true,
       actionMaximum: 1,
@@ -24,7 +24,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '请求读取剪贴板权限弹窗',
+      name: '权限提示-请求读取剪贴板权限弹窗',
       quickFind: true,
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '@[text="暂不允许"] + [text="允许"]',
@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '通知弹窗',
+      name: '通知提示-请求通知弹窗',
       quickFind: true,
       actionMaximum: 1,
       activityIds: [

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '广告卡片',
+      name: '分段广告-广告卡片',
       activityIds: [
         'com.mygolbs.mybus.RTimeActivity',
         'com.mygolbs.mybus.NewHomePageActivity',
@@ -74,7 +74,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       activityIds: ['com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity'],
       rules: [
         {
@@ -87,7 +87,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '顶栏小广告',
+      name: '局部广告-顶栏小广告',
       activityIds: ['com.mygolbs.mybus.RTimeActivity'],
       rules: [
         {
@@ -100,7 +100,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       desc: '自动点击【取消】',
       activityIds: 'com.mygolbs.mybus.defines.CustomDialog',
       rules: [
@@ -116,7 +116,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '签到成功弹窗',
+      name: '功能类-签到成功弹窗',
       desc: '自动点击x按钮',
       activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
       rules:

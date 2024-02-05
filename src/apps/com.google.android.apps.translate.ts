@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '登录弹窗',
+      name: '功能类-登录弹窗',
       desc: '登录备份翻译记录',
       quickFind: true,
       matchTime: 10000,

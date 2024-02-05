@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 6,
-      name: '卡录像界面广告',
+      name: '局部广告-卡录像界面广告',
       actionMaximum: 1,
       activityIds: 'com.qihoo.jia.playpage.RecordPlayActivity',
       rules: [

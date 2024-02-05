@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       matchTime: 10000,
       activityIds: 'pdj.main.MainActivity',
       rules: [
@@ -25,7 +25,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

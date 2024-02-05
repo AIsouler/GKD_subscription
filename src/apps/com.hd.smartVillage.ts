@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '关闭开启通知弹窗',
+      name: '通知提示-关闭开启通知弹窗',
       quickFind: true,
       actionMaximum: 1,
       activityIds: [
@@ -22,7 +22,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       activityIds: 'com.hd.smartVillage.modules.main.MainActivity',
