@@ -6,7 +6,10 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.hainan.renshe.app.ui.SplashActivity',
         'com.miui.home.launcher.Launcher',

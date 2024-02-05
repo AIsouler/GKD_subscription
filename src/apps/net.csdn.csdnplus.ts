@@ -31,7 +31,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -53,7 +53,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '信息流广告',
+      name: '分段广告-信息流广告',
       quickFind: true,
       activityIds: ['net.csdn.csdnplus.activity.MainActivity'],
       rules: [
@@ -79,7 +79,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '关闭好评弹窗',
+      name: '评价提示-软件好评弹窗',
       resetMatch: 'app',
       actionMaximum: 1,
       quickFind: true,
@@ -94,7 +94,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      name: '请求推送通知弹窗',
+      name: '通知提示-请求推送通知弹窗',
       activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: {
         matches: [

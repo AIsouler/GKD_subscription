@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 6,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       desc: '快手广告SDK',
       matchTime: 10000,
       actionMaximum: 1,

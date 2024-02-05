@@ -24,14 +24,14 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '广告卡片',
+      name: '局部广告-广告卡片',
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: '[desc="限时购买"] + ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13198097',
     },
     {
       key: 3,
-      name: '广告弹窗',
+      name: '全屏广告-广告弹窗',
       actionDelay: 200,
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: 'View[childCount=2] > @TextView[id=null][clickable=true] + View',

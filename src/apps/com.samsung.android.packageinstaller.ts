@@ -5,7 +5,7 @@ export default defineAppConfig({
   name: '软件包安装程序',
   groups: [
     {
-      name: '跳过安全使用协议',
+      name: '功能类-跳过安全使用协议',
       key: 2,
       desc: '自动点击略过并关闭反恶意软件协议',
       enable: true,

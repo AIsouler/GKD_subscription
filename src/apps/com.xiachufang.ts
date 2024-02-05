@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       rules: [
         {
           key: 1,
@@ -46,7 +46,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '厨房问卷',
+      name: '未分类-厨房问卷',
       rules: [
         {
           key: 1,

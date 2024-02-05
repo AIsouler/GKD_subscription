@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '内部广告',
+      name: '分段广告-内部广告',
       activityIds: 'com.lantern.launcher.ui.MainActivityICS',
       rules: [
         {

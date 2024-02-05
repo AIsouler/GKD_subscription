@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '设为默认应用提示',
+      name: '功能类-设为默认应用提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

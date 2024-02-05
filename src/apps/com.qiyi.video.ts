@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '青少年弹窗',
+      name: '青少年模式',
       quickFind: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
       rules: [
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '我的-顶部广告',
+      name: '局部广告-我的页面顶部广告',
       quickFind: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12495050',
@@ -43,7 +43,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '开启推送通知弹窗',
+      name: '通知提示-开启推送通知弹窗',
       quickFind: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12838152',
@@ -51,7 +51,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -69,7 +69,7 @@ export default defineAppConfig({
     {
       key: 5,
       enable: false,
-      name: '播放页-插入广告',
+      name: '全屏广告-播放页-插入广告',
       desc: '视频播放前或播放中途插入的广告。默认关闭。',
       activityIds: 'org.iqiyi.video.activity.PlayerActivity',
       rules: [

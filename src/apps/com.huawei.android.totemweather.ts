@@ -28,7 +28,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '卡片式广告',
+      name: '局部广告-卡片式广告',
       quickFind: true,
       rules: [
         {
@@ -64,7 +64,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '顶部广告条',
+      name: '局部广告-顶部广告条',
       rules: [
         {
           key: 0,

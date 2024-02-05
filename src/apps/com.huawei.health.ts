@@ -26,7 +26,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '“我的”页会员广告',
+      name: '局部广告-“我的”页会员广告',
       activityIds: ['com.huawei.health.MainActivity'],
       rules: [
         {
@@ -37,7 +37,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -50,7 +50,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '请求开启个性化推荐弹窗',
+      name: '功能类-请求开启个性化推荐弹窗',
       activityIds: 'com.huawei.watchface.api.WebViewActivity',
       rules: '[text="开启个性化推荐"] +2 [text="开启"] + Button',
       snapshotUrls: 'https://i.gkd.li/import/13546292',
@@ -58,7 +58,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '底部横幅广告',
+      name: '局部广告-底部横幅广告',
       rules: [
         {
           activityIds: 'com.huawei.health.MainActivity',

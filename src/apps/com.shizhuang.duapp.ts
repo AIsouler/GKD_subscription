@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '截屏分享',
+      name: '功能类-截屏分享',
       desc: '关闭截屏时app弹出的分享弹窗',
       quickFind: true,
       activityIds:

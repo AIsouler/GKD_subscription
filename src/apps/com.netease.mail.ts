@@ -72,7 +72,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '全屏广告-查看成就',
+      name: '未分类-获得成就弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

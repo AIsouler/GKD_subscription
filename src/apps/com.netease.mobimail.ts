@@ -39,7 +39,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '邮件列表页面广告条目',
+      name: '局部广告-邮件列表页面广告条目',
       rules: [
         {
           activityIds: 'com.netease.mail.biz.main.MainITabActivity',
@@ -55,7 +55,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '切回时的开屏广告',
+      name: '开屏广告-切回时的开屏广告',
       activityIds: 'com.netease.mail.biz.main.MainITabActivity',
       rules: '@LinearLayout > TextView[text^="跳过"]',
       snapshotUrls: 'https://i.gkd.li/import/12685745',

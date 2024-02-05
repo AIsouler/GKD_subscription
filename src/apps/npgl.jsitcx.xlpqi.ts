@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内第三方 SDK 广告弹窗',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -30,7 +30,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '应用内第三方 SDK 广告卡片',
+      name: '分段广告-广告卡片',
       activityIds: [
         'flc.ast.HomeActivity',
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',

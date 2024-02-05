@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '浮窗廣告',
+      name: '局部广告-浮窗广告',
       quickFind: true,
       activityIds: 'com.zdyl.mfood.ui.home.MainActivity',
       rules: '[id="com.m.mfood:id/close"]',

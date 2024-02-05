@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 1,
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '升级专业版弹窗',
+      name: '全屏广告-升级专业版弹窗',
       activityIds: 'com.fileunzip.zxwknight.activity.MainActivity',
       rules:
         '@[id="com.fileunzip.zxwknight:id/ziputil_dialog_imageview"] +n [text="升级到专业版"]',

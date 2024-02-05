@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-弹窗广告',
+      name: '全屏广告-首页弹窗广告',
       activityIds:
         'com.netease.yanxuan.module.mainpage.activity.MainPageActivity',
       rules: '[id="com.netease.yanxuan:id/trans_cancel"]',

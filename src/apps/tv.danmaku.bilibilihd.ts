@@ -16,7 +16,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

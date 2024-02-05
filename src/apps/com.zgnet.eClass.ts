@@ -20,7 +20,7 @@ export default defineAppConfig({
     {
       key: 2,
       enable: false,
-      name: '退出确认弹窗（默认关闭）',
+      name: '功能类-退出确认弹窗',
       rules: [
         {
           matches:

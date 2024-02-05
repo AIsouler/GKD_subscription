@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '弹窗提醒',
+      name: '更新提示-通知提示',
       desc: '已知包括APP升级提醒与开启通知提醒，自动点击关闭。',
       enable: false,
       quickFind: true,
@@ -22,7 +22,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '开启通知提醒',
+      name: '通知提示-请求开启通知提醒弹窗',
       enable: false,
       quickFind: true,
       activityIds: ['com.xtc.watch.view.home.activity.XtcHomeActivity'],

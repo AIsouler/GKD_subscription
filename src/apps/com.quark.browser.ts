@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '小说阅读页面底部广告',
+      name: '局部广告-小说阅读页面底部广告',
       activityIds: 'com.ucpro.BrowserActivity',
       rules: [
         '[id=`com.quark.browser:id/tv_close_ad`][text=`关闭广告`]',
@@ -16,7 +16,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 2,
-      name: '设置默认浏览器提示',
+      name: '功能类-设置默认浏览器提示',
       desc: '点击取消',
       quickFind: true,
       actionMaximum: 1,
@@ -46,7 +46,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       actionMaximum: 1,
       activityIds: 'com.ucpro.BrowserActivity',

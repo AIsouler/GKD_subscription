@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '自动安装应用',
+      name: '功能类-自动安装应用',
       rules: [
         {
           key: 0,

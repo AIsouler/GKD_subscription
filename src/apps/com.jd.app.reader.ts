@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: ['com.jingdong.app.reader.logo.JdLogoActivity'],
       rules: [
         {
@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页弹窗广告',
+      name: '全屏广告-首页弹窗广告',
       activityIds: [
         'com.jingdong.app.reader.main.ui.JdMainActivity',
         'com.miui.home.launcher.Launcher',
@@ -35,7 +35,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '阅读页面广告弹窗',
+      name: '全屏广告-阅读页面广告弹窗',
       activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',
       rules: '[id$="ad_read_close"]',
       snapshotUrls: [

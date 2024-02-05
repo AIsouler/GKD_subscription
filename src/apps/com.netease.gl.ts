@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.netease.gl.serviceupdate.widget.DialogUpdate',
       rules:
         '@[id="com.netease.gl:id/iv_close"] +2 LinearLayout >n [id="com.netease.gl:id/btn_update"]',
@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '应用内广告弹窗',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '请求通知权限弹窗',
+      name: '通知提示-请求通知权限弹窗',
       activityIds: 'com.netease.gl.compfeed.widget.CommonWebPopupDialog',
       rules: '@[id="com.netease.gl:id/iv_close"] + [text="开启推送"]',
       snapshotUrls: 'https://i.gkd.li/import/13072071',

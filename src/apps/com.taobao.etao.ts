@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="更新提示"] <<2 * +2 * >2 [text="取消"]',
@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -38,7 +38,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '请求打开系统通知提示信息',
+      name: '通知提示-请求打开系统通知提示信息',
       desc: '自动点击提示信息的x按钮',
       rules: [
         {

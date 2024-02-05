@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '开屏vip提示',
+      name: '全屏广告-开屏vip提示',
       activityIds: 'com.intsig.camscanner.guide.guidevideo.GuideVideoActivity',
       rules: '[id=`com.intsig.camscanner:id/tv_drop_cnl_close_new`]',
       // need snapshot
@@ -14,7 +14,7 @@ export default defineAppConfig({
 
     {
       key: 1,
-      name: '主页面上方广告',
+      name: '局部广告-主页面上方广告',
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
       rules:
         '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',

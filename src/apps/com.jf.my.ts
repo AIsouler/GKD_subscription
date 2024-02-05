@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '版本升级弹窗',
+      name: '更新提示-版本升级弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '首页-广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       activityIds: 'com.jf.my.main.ui.dialog.HomeRedPackageDialog',
       rules: '[id="com.jf.my:id/iv_back"]',
       snapshotUrls: 'https://i.gkd.li/import/12840619',

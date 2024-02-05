@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '播放界面的广告',
+      name: '局部广告-播放界面的广告',
       activityIds: ['fm.qingting.qtradio.QTRadioActivity'],
       rules: [
         '[id="fm.qingting.qtradio:id/view_ad_close"]',

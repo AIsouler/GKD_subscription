@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -58,7 +58,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '横幅广告',
+      name: '局部广告-横幅广告',
       rules: [
         {
           key: 0,

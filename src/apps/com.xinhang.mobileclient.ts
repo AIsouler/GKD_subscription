@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '应用内广告弹窗',
+      name: '全屏广告-广告弹窗',
       activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',
       rules: [
         {
@@ -23,7 +23,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '右侧悬浮广告',
+      name: '局部广告-右侧悬浮广告',
       activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',
       rules:
         '@[id="com.xinhang.mobileclient:id/iv_close"] + [id="com.xinhang.mobileclient:id/iv_advert"]',

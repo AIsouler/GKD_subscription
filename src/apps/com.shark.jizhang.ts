@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '新用户特惠广告',
+      name: '局部广告-新用户特惠广告',
       desc: '弹窗广告,右下角浮动广告',
       activityIds: 'com.shark.jizhang.module.main.MainActivity',
       rules: [

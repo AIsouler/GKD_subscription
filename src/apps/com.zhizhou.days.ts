@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '第三方 SDK 广告弹窗',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -51,7 +51,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
-      name: '应用评价弹窗',
+      name: '评价提示-应用评价弹窗',
       activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
       rules: '@[text="以后再说"] + [text="马上评价"]',
       snapshotUrls: 'https://i.gkd.li/import/12744951',

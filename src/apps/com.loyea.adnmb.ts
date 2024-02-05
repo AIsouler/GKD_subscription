@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 5,
-      name: '通知弹窗',
+      name: '通知提示-通知弹窗',
       enable: false,
       quickFind: true,
       activityIds: 'com.loyea.adnmb.activity.MainActivity',

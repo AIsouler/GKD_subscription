@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-横幅广告',
+      name: '局部广告-首页横幅广告',
       activityIds: 'com.hose.ekuaibao.view.activity.EkbProActivity',
       rules:
         'View[childCount=2] > TextView + TextView[text="不感兴趣"][clickable=true]',

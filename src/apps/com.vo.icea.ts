@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 5,
-      name: '播放界面卡片式广告',
+      name: '分段广告-播放界面卡片式广告',
       desc: '需点击二次弹窗关闭原因',
       quickFind: true,
       activityIds: [
@@ -30,7 +30,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '首页广告弹窗',
+      name: '全屏广告-首页广告弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

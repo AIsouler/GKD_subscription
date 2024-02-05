@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       activityIds: [
         'com.hunantv.imgo.activity.MainActivity',
         'miuix.appcompat.app.m',
@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '首页推荐流-卡片广告',
+      name: '分段广告-首页推荐广告',
       activityIds: 'com.hunantv.imgo.activity.MainActivity',
       rules: [
         {
@@ -36,7 +36,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -63,7 +63,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '右侧悬浮广告',
+      name: '局部广告-右侧悬浮广告',
       activityIds: 'com.hunantv.imgo.activity.MainActivity',
       rules: [
         {

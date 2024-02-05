@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       desc: '占位，暂无作用',
       activityIds: 'com.youku.v2.HomePageEntry',
       rules: [],
@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '视频推荐弹窗',
+      name: '全屏广告-视频推荐弹窗',
       quickFind: true,
       activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',

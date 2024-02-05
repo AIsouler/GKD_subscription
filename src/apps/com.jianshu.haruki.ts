@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: 'VIP弹窗',
+      name: '全屏广告-VIP弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

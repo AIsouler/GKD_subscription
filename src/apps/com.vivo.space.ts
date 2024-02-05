@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 3,
-      name: '活动广告',
+      name: '全屏广告-活动广告',
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.vivo.space.ui.VivoSpaceTabActivity',
@@ -18,7 +18,8 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '消息通知弹窗',
+      name: '通知提示-请求消息通知弹窗',
+      desc: '点击取消',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

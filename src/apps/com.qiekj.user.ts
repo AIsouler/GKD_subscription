@@ -8,7 +8,6 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.qiekj.user.MainActivity',
-
       rules: [
         {
           key: 0,
@@ -32,7 +31,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.qiekj.user.MainActivity',
       quickFind: true,
       matchTime: 10000,

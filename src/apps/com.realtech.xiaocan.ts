@@ -42,7 +42,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,

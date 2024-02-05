@@ -6,21 +6,21 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '内部右侧浮动广告',
+      name: '局部广告-内部右侧浮动广告',
       activityIds: 'com.shuqi.home.MainActivity',
       rules: '[id="com.shuqi.controller:id/promotion_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12513811',
     },
     {
       key: 1,
-      name: '关闭打卡红包弹窗',
+      name: '全屏广告-关闭打卡红包弹窗',
       activityIds: 'com.shuqi.common',
       rules: '[id="com.shuqi.controller:id/bottomCloseImg"]',
       snapshotUrls: 'https://i.gkd.li/import/12513822',
     },
     {
       key: 2,
-      name: '阅读页面底部广告',
+      name: '局部广告-阅读页面底部广告',
       desc: '点击关闭x图标-关闭优惠券弹窗-关闭当前广告',
       rules: [
         {
@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '听书页面底部广告',
+      name: '局部广告-听书页面底部广告',
       desc: '点击卡片右上角关闭按钮-点击底部中间<关闭当前广告>',
       activityIds: 'com.shuqi.audio.online.view.AudioBookActivity',
       rules: [

@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -24,7 +24,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '通知弹窗',
+      name: '通知提示',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '红包弹窗',
+      name: '全屏广告-红包弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

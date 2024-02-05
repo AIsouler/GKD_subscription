@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '首页-WiFi列表广告',
+      name: '局部广告-首页-WiFi列表广告',
       activityIds: ['com.wifitutu.ui.main.MainActivity'],
       rules: [
         {

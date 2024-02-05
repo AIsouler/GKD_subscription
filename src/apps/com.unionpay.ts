@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '更新弹窗',
+      name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -21,7 +21,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '支付完成界面广告卡片',
+      name: '分段广告-支付完成界面广告卡片',
       quickFind: true,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
@@ -40,7 +40,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '右侧悬浮广告',
+      name: '局部广告-右侧悬浮广告',
       // matchTime: 10000, 部分广告不在10s内
       actionMaximum: 1,
       resetMatch: 'app',
@@ -56,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '定位权限悬浮弹窗',
+      name: '定位提示-定位权限悬浮弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -68,7 +68,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 11,
-      name: '访问位置请求弹窗',
+      name: '定位提示-访问位置请求弹窗',
       desc: '自动点击【不允许】。默认关闭，请手动开启',
       quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
@@ -83,8 +83,8 @@ export default defineAppConfig({
     {
       enable: false,
       key: 12,
-      name: '开启消息通知弹窗',
-      desc: '默认关闭，请手动开启',
+      name: '通知提示-请求开启消息通知弹窗',
+      desc: '点击关闭',
       quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
@@ -97,7 +97,7 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '天天签到-获得新勋章提示',
+      name: '全屏广告-天天签到-获得新勋章提示',
       desc: '点击左上角返回',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -112,7 +112,7 @@ export default defineAppConfig({
     },
     {
       key: 14,
-      name: '我的页面-广告弹窗',
+      name: '全屏广告-我的页面-广告弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.unionpay.activity.UPActivityMain',
