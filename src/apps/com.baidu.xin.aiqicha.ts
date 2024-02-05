@@ -26,6 +26,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
+          name: '点击不允许',
           matches: '[id="com.baidu.xin.aiqicha:id/notice_dialog_cancel_iv"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9c26bb3a-d770-429a-b211-46b97a47f5f0',
@@ -33,6 +34,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          name: '点击关闭',
           activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
           matches:
             '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
