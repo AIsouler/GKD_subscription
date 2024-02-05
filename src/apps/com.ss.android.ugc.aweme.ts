@@ -28,7 +28,6 @@ export default defineAppConfig({
             '[text="换一个"] - FrameLayout[clickable=true] > ImageView[clickable=true]',
           snapshotUrls: ['https://i.gkd.li/import/12520943'],
         },
-
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
@@ -51,7 +50,6 @@ export default defineAppConfig({
     },
     {
       key: 2,
-
       quickFind: true,
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
       name: '全屏广告-关闭朋友推荐弹窗',
@@ -64,7 +62,6 @@ export default defineAppConfig({
     {
       key: 3,
       name: '更新提示-关闭更新弹窗',
-
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -108,7 +105,7 @@ export default defineAppConfig({
       key: 7,
       enable: false,
       quickFind: true,
-      name: '设置无声进入抖音',
+      name: '功能类-设置无声进入抖音弹窗',
       desc: '点击[拒绝]',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="拒绝"] + [text="去设置"]',
@@ -158,10 +155,11 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          matches: '[text="可进入使用管理助手更改设置"] -2 Button[text="取消"]',
+          matches: '@[text="取消"] + [text*="提醒我"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13241564',
             'https://i.gkd.li/import/13372604',
+            'https://i.gkd.li/import/14160675',
           ],
         },
         {
