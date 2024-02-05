@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '升级提示',
+      name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
