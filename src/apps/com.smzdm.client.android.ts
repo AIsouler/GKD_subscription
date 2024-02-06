@@ -15,9 +15,11 @@ export default defineAppConfig({
     {
       key: 2,
       name: '更新提示',
-      activityIds: 'com.smzdm.client.android.app.HomeActivity',
-      quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules:
         '[id="com.smzdm.client.android:id/tv_version"] +2 [id="com.smzdm.client.android:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13198016',

@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.guwendao.gwd.MainActivity',
       rules: '[text="应用升级提醒"] +n LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12776605',

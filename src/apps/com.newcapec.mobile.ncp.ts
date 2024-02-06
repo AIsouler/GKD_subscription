@@ -5,10 +5,13 @@ export default defineAppConfig({
   name: '完美校园',
   groups: [
     {
+      enable: false,
       key: 10,
       name: '更新提示',
       desc: '新版本提示弹窗，点击右上角【X】按钮',
-      enable: false,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.wanxiao.basebusiness.activity.SplashActivity',
       rules: '[id="com.newcapec.mobile.ncp:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12843377',

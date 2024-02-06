@@ -5,10 +5,13 @@ export default defineAppConfig({
   name: 'Reddit',
   groups: [
     {
+      enable: false,
       key: 3,
       name: '更新提示-社区消息',
       quickFind: true,
-      enable: false,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.reddit.launch.main.MainActivity',

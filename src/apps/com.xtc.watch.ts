@@ -5,10 +5,13 @@ export default defineAppConfig({
   name: '小天才',
   groups: [
     {
+      enable: false,
       key: 2,
       name: '更新提示-通知提示',
-      desc: '已知包括APP升级提醒与开启通知提醒，自动点击关闭。',
-      enable: false,
+      desc: '已知包括APP升级提醒与开启通知提醒，自动点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: [
         'com.xtc.widget.phone.popup.activity.CustomActivity14',

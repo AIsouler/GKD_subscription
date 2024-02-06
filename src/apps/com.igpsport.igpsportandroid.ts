@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="忽略本次"] + [text="立即升级"]',

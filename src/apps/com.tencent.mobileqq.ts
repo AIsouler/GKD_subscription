@@ -378,6 +378,7 @@ export default defineAppConfig({
     {
       key: 17,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[desc="关闭"] - ViewGroup > [text="立即体验"||text="立即升级"]',
@@ -391,6 +392,9 @@ export default defineAppConfig({
       enable: false,
       key: 18,
       name: '更新提示-消息页面-顶部',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -411,6 +415,9 @@ export default defineAppConfig({
       enable: false,
       key: 19,
       name: '更新提示-内测邀请弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [

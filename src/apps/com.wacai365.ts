@@ -9,7 +9,9 @@ export default defineAppConfig({
       key: 1,
       name: '更新提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.wacai365.HomeActivity',
         'com.wacai.android.wind.splash.WindDialogActivity',

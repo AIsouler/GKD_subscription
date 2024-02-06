@@ -114,6 +114,9 @@ export default defineAppConfig({
       enable: false,
       key: 3,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',

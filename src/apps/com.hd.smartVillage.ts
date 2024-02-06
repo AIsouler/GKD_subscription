@@ -24,7 +24,9 @@ export default defineAppConfig({
       key: 2,
       name: '更新提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.hd.smartVillage.modules.main.MainActivity',
       rules:
         'TextView[id="com.hd.smartVillage:id/tv_upgrade_cancel"][text="取消"]',

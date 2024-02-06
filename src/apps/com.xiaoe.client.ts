@@ -6,9 +6,12 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      quickFind: true,
       name: '更新提示-版本更新弹窗',
       desc: '点击暂不更新',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: [
         {
           activityIds: 'com.xiaoe.app.ui.main.XiaoeMainActivity',

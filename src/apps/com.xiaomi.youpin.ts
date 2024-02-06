@@ -21,6 +21,9 @@ export default defineAppConfig({
     {
       key: 2,
       name: '更新提示-版本升级弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.xiaomi.youpin.globalpopwindow.popwindow.PopWindowActivity',
       ],

@@ -29,6 +29,7 @@ export default defineAppConfig({
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.jingdong.pdj.plunginupdate.update.UpdateDialogActivity',
       rules: 'Button[text="暂不安装"]',
       snapshotUrls: 'https://i.gkd.li/import/13217634',

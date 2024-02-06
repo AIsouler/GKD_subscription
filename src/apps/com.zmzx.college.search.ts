@@ -108,9 +108,9 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 5,
       name: '更新提示',
-      enable: false,
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
