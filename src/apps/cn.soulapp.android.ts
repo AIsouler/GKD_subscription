@@ -51,6 +51,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '评价提示-app评分',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: ['cn.soulapp.android.component.chat.ConversationActivity'],
       rules: [

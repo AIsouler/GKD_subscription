@@ -143,9 +143,12 @@ export default defineAppConfig({
     {
       key: 7,
       name: '评价提示-请求好评弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds:
         'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
-      quickFind: true,
       rules:
         '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13476308',

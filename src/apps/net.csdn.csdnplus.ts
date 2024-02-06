@@ -80,8 +80,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '评价提示-软件好评弹窗',
-      resetMatch: 'app',
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',

@@ -42,8 +42,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '评价提示-满意度打分弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: '[text*="满意度打几分"] + ImageView',
       snapshotUrls: 'https://i.gkd.li/import/13804561',
     },

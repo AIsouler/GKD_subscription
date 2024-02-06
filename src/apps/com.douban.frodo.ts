@@ -133,6 +133,9 @@ export default defineAppConfig({
     {
       key: 5,
       name: '评价提示-关闭评分反馈弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: {
