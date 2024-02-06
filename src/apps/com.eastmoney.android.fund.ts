@@ -51,5 +51,24 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '评价提示-好评弹窗',
+      desc: '点击下次再说',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
+          matches:
+            '[id="com.eastmoney.android.fund:id/container"] [desc="下次再说"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d791a2f9-ae86-4389-8ee7-36a87f11b60d',
+          snapshotUrls: 'https://i.gkd.li/import/14179508',
+        },
+      ],
+    },
   ],
 });
