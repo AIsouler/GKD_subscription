@@ -122,6 +122,7 @@ export default defineAppConfig({
       activityIds: [
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
         'com.zhihu.android.app.ui.activity.HostActivity',
+        'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
       ],
       rules: [
         {
@@ -182,7 +183,10 @@ export default defineAppConfig({
           key: 10,
           matches:
             '@ImageView[id=null][clickable=true] -(2) ViewGroup > [text$="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/12647525'],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12647525',
+            'https://i.gkd.li/import/14178516', //activityId: com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity
+          ],
         },
         // 预留11~99
         {
