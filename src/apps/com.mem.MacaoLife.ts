@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '通知提示-请求通知提示弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.mem.life.ui.launch.LaunchActivity',
       rules: '[id="com.mem.MacaoLife:id/cancel"]',

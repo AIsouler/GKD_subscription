@@ -36,7 +36,9 @@ export default defineAppConfig({
       key: 3,
       name: '通知提示-请求通知弹窗',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.smzdm.client.android.module.community.module.bask.BaskDetailActivity',
         'com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity',

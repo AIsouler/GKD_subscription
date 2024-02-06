@@ -43,6 +43,9 @@ export default defineAppConfig({
       enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.ss.android.article.news.activity.MainActivity'],
       rules: [
         {
@@ -157,14 +160,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【看视频】',
+          name: '点击"看视频"',
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches:
             '[id="com.bytedance.novel.api:id/component_ad_dialog_button_video"]',
           snapshotUrls: 'https://i.gkd.li/import/13402468',
         },
         {
-          name: '等待30s点击【关闭】',
+          name: '等待30s点击"关闭"',
           actionDelay: 30000,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
           matches: 'UIText[text="广告"] +n UIText[text="关闭"]',

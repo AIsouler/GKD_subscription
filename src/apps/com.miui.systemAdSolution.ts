@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '分段广告-为什么不希望看到这条推广',
-      desc: '点击【不感兴趣】',
+      desc: '点击"不感兴趣"',
       activityIds: [
         'com.xiaomi.ad.feedback',
         'com.android.thememanager.module.detail.view.ThemeDetailActivity',

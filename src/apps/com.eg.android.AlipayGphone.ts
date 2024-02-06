@@ -63,6 +63,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '通知提示-请求通知弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -101,13 +102,13 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          name: '弹窗-【稍后再说】',
+          name: '弹窗-"稍后再说"',
           matches:
             'TextView[id="com.alipay.mobile.accountauthbiz:id/update_cancel_tv"]',
           snapshotUrls: 'https://i.gkd.li/import/13327095',
         },
         {
-          name: '弹窗-【x】',
+          name: '弹窗-"x"',
           matches:
             '[text="版本更新"||text^="Version"] - [id="com.alipay.mobile.antui:id/btn_close"]',
           snapshotUrls: [
@@ -116,7 +117,7 @@ export default defineAppConfig({
           ],
         },
         {
-          name: '卡片-【x】',
+          name: '卡片-"x"',
           matches:
             '[text="立即升级最新版支付宝客户端"] < LinearLayout + [id="com.alipay.mobile.advertisement:id/announcementview_righticon"]',
           snapshotUrls: 'https://i.gkd.li/import/13490797',

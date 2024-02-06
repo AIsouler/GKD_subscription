@@ -33,7 +33,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '【首页商城】体验邀请弹窗',
+          name: '"首页商城"体验邀请弹窗',
           activityIds:
             'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
           matches:
@@ -58,6 +58,9 @@ export default defineAppConfig({
       quickFind: true,
       name: '通知提示-消息提醒弹窗',
       desc: '点击暂不开启',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',

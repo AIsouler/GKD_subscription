@@ -96,7 +96,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '点击【x】',
+          name: '点击"x"',
           quickFind: true,
           matches:
             '[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
@@ -113,7 +113,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击"x"',
           matches:
             'RelativeLayout > RelativeLayout + ImageView + ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13472957',
@@ -129,7 +129,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击"x"',
           matches:
             'FrameLayout[childCount=10] > FrameLayout[index=3] > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13472955',

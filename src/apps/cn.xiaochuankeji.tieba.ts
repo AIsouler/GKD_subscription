@@ -57,6 +57,9 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-系统通知弹窗',
       desc: '系统通知弹窗，点击暂不开启',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity',
       rules: [
         {

@@ -60,8 +60,10 @@ export default defineAppConfig({
       key: 11,
       name: '通知提示-请求通知权限提示弹窗',
       desc: '自动点击关闭按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-
       activityIds: [
         'com.xiaomi.market.ui.UpdateListActivity',
         'com.xiaomi.market.business_ui.main.MarketTabActivity',

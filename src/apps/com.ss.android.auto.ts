@@ -17,7 +17,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击"x"',
           matches:
             'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] - LinearLayout > [text="广告"]',
           // 貌似快照存在延迟导致屏幕与节点不对应
@@ -29,13 +29,13 @@ export default defineAppConfig({
         {
           // 不与旧版本合并，尽量使用[clickable=true]，保证速度避免误触
           preKeys: 0,
-          name: '点击【不感兴趣】1', // 懂车帝v7.8.4样式
+          name: '点击"不感兴趣"1', // 懂车帝v7.8.4样式
           matches: '@ViewGroup[clickable=true] TextView[text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13538627',
         },
         {
           preKeys: 0,
-          name: '点击【不感兴趣】2', // 懂车帝v7.7.4样式、v7.8.0样式
+          name: '点击"不感兴趣"2', // 懂车帝v7.7.4样式、v7.8.0样式
           matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12711589',

@@ -36,6 +36,7 @@ export default defineAppConfig({
     {
       key: 4,
       name: '通知提示-推送通知权限弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,

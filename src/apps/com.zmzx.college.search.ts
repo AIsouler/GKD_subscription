@@ -126,12 +126,13 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 6,
       name: '通知提示-申请开启推送通知弹窗',
-      enable: false,
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches:

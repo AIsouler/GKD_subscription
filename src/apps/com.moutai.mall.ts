@@ -22,6 +22,9 @@ export default defineAppConfig({
       enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.moutai.mall.MainActivity',
       rules:
         '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',

@@ -26,6 +26,9 @@ export default defineAppConfig({
       enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.maidu.gkld.ui.main.MainActivity',
       rules:
         '[id="com.maidu.gkld:id/ll_open_app_notice"] + [id="com.maidu.gkld:id/iv_cancel"]',

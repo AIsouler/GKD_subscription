@@ -29,6 +29,9 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-请求开启通知权限弹窗',
       desc: '自动点击x按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.boohee.one.app.account.ui.activity.MsgCategoryActivityV2',
       rules: '[id="com.boohee.one:id/img_close_push"]',

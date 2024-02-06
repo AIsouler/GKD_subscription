@@ -55,6 +55,9 @@ export default defineAppConfig({
       key: 5,
       name: '通知提示-开启消息通知弹窗',
       desc: '自动点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       // quickFind: true, 实机测试使用无法跳过
       activityIds: ['com.ct.client.activity.MainActivity'],
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',

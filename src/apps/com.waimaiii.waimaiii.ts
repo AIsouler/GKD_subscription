@@ -13,14 +13,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '【跳过+倒计时】型',
+          name: '"跳过+倒计时"型',
           quickFind: true,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/import/13346166',
         },
         {
           key: 1,
-          name: '【圆圈跳过】型-穿山甲SDK',
+          name: '"圆圈跳过"型-穿山甲SDK',
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/13346451',
         },

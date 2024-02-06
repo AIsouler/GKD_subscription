@@ -278,14 +278,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '【我的】升级-下次再说',
+          name: '"我的"升级-下次再说',
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
           matches: '[text="下次再说"] < ViewGroup',
           snapshotUrls: 'https://i.gkd.li/import/13804541',
         },
         {
           key: 1,
-          name: '【社区广场】升级-点击右上角x',
+          name: '"社区广场"升级-点击右上角x',
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
           matches: '[text="社区广场全新升级"] + ViewGroup > ImageView',

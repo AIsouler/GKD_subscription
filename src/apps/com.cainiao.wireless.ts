@@ -54,10 +54,13 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/13042207'],
     },
     {
+      enable: false,
       key: 5,
       name: '通知提示',
-      desc: '自动点击关闭。',
-      enable: false,
+      desc: '自动点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: [
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',

@@ -6,10 +6,13 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
+      enable: false,
       key: 1,
       name: '通知提示-系统通知请求',
       desc: '自动点击关闭。',
-      enable: false,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'cn.com.spdb.mobilebank.per.activity.web.stage.StageCommonWebActivity',
       rules: '[text="去开启"] + View > Image[text.length=0]',

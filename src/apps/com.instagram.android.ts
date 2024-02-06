@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【更多】按钮',
+          name: '点击"更多"按钮',
           actionCd: 4000,
           matches:
             '[text="赞助内容"] + [id="com.instagram.android:id/feed_more_button_stub"]',
@@ -22,7 +22,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '点击【隐藏广告】按钮',
+          name: '点击"隐藏广告"按钮',
           matches: '@ViewGroup >n [text="隐藏广告"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12798571',
@@ -31,7 +31,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '点击【广告不相关】按钮',
+          name: '点击"广告不相关"按钮',
           matches: '@ViewGroup > [text="广告不相关"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12798590',

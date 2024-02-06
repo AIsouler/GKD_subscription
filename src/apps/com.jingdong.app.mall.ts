@@ -55,6 +55,9 @@ export default defineAppConfig({
       enable: false,
       key: 4,
       name: '通知提示-请求打开通知',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
         'com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity',
@@ -138,7 +141,7 @@ export default defineAppConfig({
       enable: false,
       key: 10,
       name: '功能类-京东账号登录授权',
-      desc: '自动点击【确认登录】',
+      desc: '自动点击"确认登录"',
       activityIds: 'com.jingdong.app.mall.WebActivity',
       rules: '[text="京东登录"] > [desc="确认登录"]',
       snapshotUrls: 'https://i.gkd.li/import/12901734',
@@ -147,7 +150,7 @@ export default defineAppConfig({
       enable: false,
       key: 11,
       name: '局部广告-支付页面产品推荐',
-      desc: '自动点击右上角【x】',
+      desc: '自动点击右上角"x"',
       activityIds:
         'com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity',
       rules: 'ImageView[clickable=true && desc="关闭"]',
@@ -157,7 +160,7 @@ export default defineAppConfig({
       enable: false,
       key: 12,
       name: '全屏广告-购物车页面支付成功广告弹窗',
-      desc: '自动点击正下方的【x】',
+      desc: '自动点击正下方的"x"',
       quickFind: true,
       rules: [
         {

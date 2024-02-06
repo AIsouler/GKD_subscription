@@ -65,7 +65,7 @@ export default defineAppConfig({
       enable: false,
       key: 12,
       name: '功能类-你可能感兴趣的人',
-      desc: '自动点击【关闭/隐藏】',
+      desc: '自动点击"关闭/隐藏"',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
         {

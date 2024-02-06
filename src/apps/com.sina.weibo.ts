@@ -140,6 +140,9 @@ export default defineAppConfig({
       key: 9,
       name: '通知提示-请求开启通知弹窗',
       desc: '自动点击暂不开启',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: ['com.sina.weibo.notifyguidev2.NotifyGuideV2Activity'],
       rules:
@@ -151,6 +154,9 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-请求开启通知提示信息',
       desc: '自动点击x按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
@@ -224,7 +230,7 @@ export default defineAppConfig({
     {
       key: 15,
       name: '局部广告-评论区底部账号推荐关注悬浮窗',
-      desc: '点击【x】',
+      desc: '点击"x"',
       quickFind: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       rules:
@@ -234,7 +240,7 @@ export default defineAppConfig({
     {
       key: 16,
       name: '局部广告-评论区底部转发推荐悬浮窗',
-      desc: '点击【x】',
+      desc: '点击"x"',
       quickFind: true,
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       rules:
@@ -272,7 +278,7 @@ export default defineAppConfig({
     {
       key: 18,
       name: '评价提示-APP评分弹窗',
-      desc: '点击【x】',
+      desc: '点击"x"',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

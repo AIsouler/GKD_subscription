@@ -92,6 +92,9 @@ export default defineAppConfig({
       key: 8,
       name: '通知提示-开启消息通知弹窗',
       desc: '自动点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]', //单独使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）

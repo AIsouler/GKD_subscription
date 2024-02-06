@@ -164,6 +164,9 @@ export default defineAppConfig({
     {
       key: 9,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.huawei.android.thememanager.base.widget.ActivatePushDialog',
       rules: '@[text="取消"] < * - * >n [text="开启消息通知"]',

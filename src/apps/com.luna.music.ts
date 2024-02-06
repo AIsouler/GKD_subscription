@@ -41,7 +41,7 @@ export default defineAppConfig({
       enable: false,
       key: 7,
       name: '功能类-看广告视频拿VIP',
-      desc: '30s广告后点击【跳过】',
+      desc: '30s广告后点击"跳过"',
       activityIds: [
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
         'com.luna.biz.ad.AdActivity',
@@ -49,7 +49,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '等待30s点击【跳过】',
+          name: '等待30s点击"跳过"',
           actionDelay: 30000,
           matches: 'WebView > WebView > View TextView[text="| 跳过"]',
           snapshotUrls: [
@@ -59,7 +59,7 @@ export default defineAppConfig({
         },
         {
           preKeys: 0,
-          name: '点击【坚持退出】',
+          name: '点击"坚持退出"',
           quickFind: true,
           matches: '[id="com.byted.pangle:id/tt_negtive"][text="坚持退出"]',
           snapshotUrls: 'https://i.gkd.li/import/13613184',

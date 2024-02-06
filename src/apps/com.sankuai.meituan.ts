@@ -113,7 +113,7 @@ export default defineAppConfig({
       enable: false,
       key: 7,
       name: '定位提示',
-      desc: '首页/外卖界面-【打开位置开关弹窗】-点击右侧x关闭',
+      desc: '首页/外卖界面-"打开位置开关弹窗"-点击右侧x关闭',
       activityIds: [
         'com.meituan.android.pt.homepage.activity.MainActivity',
         'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
@@ -134,7 +134,9 @@ export default defineAppConfig({
       name: '通知提示-请求开启通知权限弹窗',
       desc: '点击跳过',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',

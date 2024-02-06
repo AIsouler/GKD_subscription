@@ -41,6 +41,9 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-请求打开系统通知提示信息',
       desc: '自动点击提示信息的x按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: ['com.taobao.sns.app.message.MessageActivity'],

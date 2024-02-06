@@ -18,6 +18,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.lenovo.leos.appstore.activities.NotificationGuideActivity',
       quickFind: true,

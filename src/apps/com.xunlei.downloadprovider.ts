@@ -60,7 +60,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '分段广告-视频详情页直播推荐',
-      desc: '自动点击【减少推荐】',
+      desc: '自动点击"减少推荐"',
       quickFind: true,
       rules: [
         {
@@ -202,20 +202,20 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '分段广告-【下载页】广告卡片',
+      name: '分段广告-"下载页"广告卡片',
       desc: '需选二次弹窗关闭原因',
       quickFind: true,
       rules: [
         {
           key: 0,
-          name: '点击更多【···】',
+          name: '点击更多"···"',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches: '[id="com.xunlei.downloadprovider:id/ad_more"]',
           snapshotUrls: 'https://i.gkd.li/import/12881865',
         },
         {
           key: 1,
-          name: '点击【x】',
+          name: '点击"x"',
           activityIds: [
             'com.xunlei.downloadprovider.frame.MainTabActivity',
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -228,7 +228,7 @@ export default defineAppConfig({
         },
         {
           preKeys: [0, 1],
-          name: '关闭原因选【减少推荐】',
+          name: '关闭原因选"减少推荐"',
           key: 2,
           activityIds: [
             'com.xunlei.downloadprovider.download.center.newcenter',
@@ -270,7 +270,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '【我的】',
+          name: '"我的"',
           activityIds: [
             'com.xunlei.downloadprovider.homepage.member',
             'com.xunlei.downloadprovider.frame.MainTabActivity',
@@ -284,7 +284,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '【下载页】1',
+          name: '"下载页"1',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[id="com.xunlei.downloadprovider:id/all_picture_image"] + [id="com.xunlei.downloadprovider:id/close_btn"]',
@@ -292,7 +292,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '【下载页】2',
+          name: '"下载页"2',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[text="立即开通"] + [id="com.xunlei.downloadprovider:id/close"]',
@@ -300,7 +300,7 @@ export default defineAppConfig({
         },
         {
           key: 3,
-          name: '【首页】',
+          name: '"首页"',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[text="您的会员已过期"] < LinearLayout +n [id="com.xunlei.downloadprovider:id/touch_bottom_bar_bubble_close_iv"]',

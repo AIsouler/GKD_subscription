@@ -86,7 +86,7 @@ export default defineAppConfig({
     {
       key: 5,
       name: '全屏广告-首页弹窗广告',
-      desc: '点击底部【x】关闭',
+      desc: '点击底部"x"关闭',
       activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
       rules: '[id="com.dongqiudi.news:id/iv_close"]',

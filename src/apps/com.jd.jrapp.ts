@@ -8,7 +8,9 @@ export default defineAppConfig({
       key: 1,
       name: '通知提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.jd.jrapp.bm.mainbox.main.MainActivity',
         'com.jd.jrapp.bm.common.web.ui.WebActivity',

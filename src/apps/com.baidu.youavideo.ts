@@ -91,8 +91,11 @@ export default defineAppConfig({
     {
       key: 7,
       name: '通知提示-请求开启通知权限弹窗',
-      activityIds: 'com.baidu.youavideo.app.ui.HomeActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
+      activityIds: 'com.baidu.youavideo.app.ui.HomeActivity',
       rules:
         '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13413819',

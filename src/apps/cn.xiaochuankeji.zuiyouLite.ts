@@ -28,13 +28,13 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击"x"',
           matches: '[id="cn.xiaochuankeji.zuiyouLite:id/ad_remove"]',
           snapshotUrls: 'https://i.gkd.li/import/13387116',
         },
         {
           preKeys: 0,
-          name: '点击【不喜欢广告主】',
+          name: '点击"不喜欢广告主"',
           matches: '@LinearLayout[clickable=true] > [text="不喜欢广告主"]',
           snapshotUrls: 'https://i.gkd.li/import/13387155',
         },

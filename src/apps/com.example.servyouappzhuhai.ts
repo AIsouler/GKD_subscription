@@ -5,9 +5,9 @@ export default defineAppConfig({
   name: '广东税务',
   groups: [
     {
+      enable: false,
       key: 0,
       name: '通知提示-通知权限授权弹窗',
-      enable: false,
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
