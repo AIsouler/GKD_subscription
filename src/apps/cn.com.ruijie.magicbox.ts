@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'cn.com.ruijie.wifibox.activity.MainActivity',
       rules: [
         '@ImageView[id="cn.com.ruijie.magicbox:id/imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',

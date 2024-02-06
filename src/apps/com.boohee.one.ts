@@ -8,6 +8,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.boohee.library.update.UpdateDialogActivity',
       rules:
         '@[id="com.boohee.one:id/tv_ignore"] + [id="com.boohee.one:id/tv_update"]',

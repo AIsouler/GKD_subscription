@@ -24,6 +24,9 @@ export default defineAppConfig({
       key: 1,
       name: '更新提示',
       desc: '点击 暂不更新',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.bankcomm.module.biz.webcontainer.BCMHtml5Activity',
         'com.bankcomm.module.biz.home.MainActivity',

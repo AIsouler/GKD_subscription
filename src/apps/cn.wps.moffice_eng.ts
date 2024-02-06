@@ -53,6 +53,9 @@ export default defineAppConfig({
       enable: false,
       key: 3,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
         'cn.wps.moffice.main.local.HomeRootActivity',

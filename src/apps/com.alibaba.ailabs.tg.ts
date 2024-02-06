@@ -9,6 +9,9 @@ export default defineAppConfig({
       key: 1,
       name: '更新提示',
       quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.alibaba.ailabs.tg.activity.HomeActivity',
       rules:
         '[id="com.alibaba.ailabs.tg:id/ll_download"] + [id="com.alibaba.ailabs.tg:id/va_dialog_cancel"]',

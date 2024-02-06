@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="发现新版本"] +n * > [text="忽略"]',

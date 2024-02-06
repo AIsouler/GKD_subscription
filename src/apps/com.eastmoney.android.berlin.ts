@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
         'com.bbk.launcher2.Launcher',

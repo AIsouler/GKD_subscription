@@ -6,9 +6,12 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      quickFind: true,
       name: '更新提示',
       desc: '点击取消',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '@[text="取消"] + [text="立即升级"]',

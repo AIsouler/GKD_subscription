@@ -8,10 +8,13 @@ export default defineAppConfig({
       key: 0,
       name: '更新提示-取消更新',
       desc: '点击[以后再说]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: [
         'com.google.android.apps.photos.update.treatment.UpdateAppTreatmentPromoPageActivity',
       ],
-      quickFind: true,
       rules: [
         {
           matches:

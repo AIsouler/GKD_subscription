@@ -8,6 +8,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.cnki.client.core.navigator.main.HomeActivity'],
       rules: '[id="com.cnki.client:id/update_undo"]',
       snapshotUrls: 'https://i.gkd.li/import/12854857',

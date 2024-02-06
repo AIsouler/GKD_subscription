@@ -40,9 +40,12 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/12914450'],
     },
     {
+      enable: false,
       key: 4,
       name: '更新提示',
-      enable: false,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: [
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
