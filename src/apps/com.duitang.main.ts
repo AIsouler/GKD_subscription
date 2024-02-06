@@ -31,10 +31,12 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 3,
       name: '评价提示',
       desc: '点击[下次再说]',
-      key: 3,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: ['com.miui.home.launcher.Launcher'],
       rules: [

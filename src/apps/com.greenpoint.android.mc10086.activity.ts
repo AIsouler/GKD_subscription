@@ -84,6 +84,9 @@ export default defineAppConfig({
     {
       key: 13,
       name: '评价提示-请求好评弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
       rules: [
         {

@@ -7,7 +7,10 @@ export default defineAppConfig({
     {
       key: 3,
       name: '评价提示-评分弹窗',
-      desc: '自动点击 LATER 。',
+      desc: '自动点击 LATER ',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds:

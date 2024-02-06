@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 5,
       name: '评价提示-评论区满意度评价',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.bilibili.video.story.StoryVideoActivity',
       rules:
@@ -16,6 +19,9 @@ export default defineAppConfig({
     {
       key: 6,
       name: '评价提示-APP评分',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',

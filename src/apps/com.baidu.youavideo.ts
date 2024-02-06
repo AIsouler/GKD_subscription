@@ -38,8 +38,11 @@ export default defineAppConfig({
       key: 4,
       name: '评价提示',
       desc: '点击下次再说',
-      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
+      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/tv_next_time"]',

@@ -274,6 +274,7 @@ export default defineAppConfig({
       name: '评价提示-APP评分弹窗',
       desc: '点击【x】',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.sina.weibo.MainTabActivity',

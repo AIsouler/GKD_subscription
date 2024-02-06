@@ -9,7 +9,9 @@ export default defineAppConfig({
       key: 1,
       name: '评价提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.fenbi.android.leo.imgsearch.sdk.activity.NewCheckCameraActivity',
       rules: '@[text="残忍拒绝"] + [text*="好评"][text.length<=10]',

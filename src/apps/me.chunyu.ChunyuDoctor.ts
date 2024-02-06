@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 10,
       name: '评价提示-应用评分弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'me.chunyu.ChunyuDoctor.Activities.WelcomeActivity',
         'me.chunyu.ChunyuDoctor.Activities.MainActivity',

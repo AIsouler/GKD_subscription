@@ -140,11 +140,13 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 4,
       name: '评价提示',
       quickFind: true,
       matchTime: 10000,
-      enable: false,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.twitter.app.main.MainActivity',
