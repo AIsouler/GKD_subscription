@@ -91,11 +91,11 @@ export default defineAppConfig({
     {
       enable: false,
       key: 10,
+      name: '通知提示-请求推送通知弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      name: '通知提示-请求推送通知弹窗',
       activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: {
         matches: [

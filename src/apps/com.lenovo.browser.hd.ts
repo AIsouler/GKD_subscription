@@ -18,8 +18,12 @@ export default defineAppConfig({
     {
       key: 2,
       name: '通知提示-请求通知权限弹窗',
-      activityIds: 'com.zui.launcher.drawer.NormalLauncher',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
+      activityIds: 'com.zui.launcher.drawer.NormalLauncher',
+
       rules:
         '[text="开启消息通知"] +n * > [id="com.lenovo.browser.hd:id/tv_cancle"]',
       snapshotUrls: 'https://i.gkd.li/import/13401980',

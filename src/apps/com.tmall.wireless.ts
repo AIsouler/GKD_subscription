@@ -45,6 +45,7 @@ export default defineAppConfig({
       name: '通知提示-请求系统通知弹窗',
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.tmall.wireless.messagebox.activity.TMMsgboxMainActivity',
       rules: 'View[text="开启系统通知"] - View[clickable=true]',

@@ -69,7 +69,7 @@ export default defineAppConfig({
       enable: false,
       key: 11,
       name: '定位提示-访问位置请求弹窗',
-      desc: '自动点击【不允许】。默认关闭，请手动开启',
+      desc: '自动点击"不允许"。默认关闭，请手动开启',
       quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
@@ -85,6 +85,9 @@ export default defineAppConfig({
       key: 12,
       name: '通知提示-请求开启消息通知弹窗',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: ['com.unionpay.base.UPDialog'],
       rules: [

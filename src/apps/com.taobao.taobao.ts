@@ -80,7 +80,9 @@ export default defineAppConfig({
       key: 8,
       name: '通知提示',
       desc: '自动点击关闭',
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.taobao.tao.welcome.Welcome',
         'com.taobao.android.order.bundle.TBOrderDetailActivity',

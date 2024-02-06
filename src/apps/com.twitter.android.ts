@@ -160,6 +160,9 @@ export default defineAppConfig({
       quickFind: true,
       name: '通知提示-请求通知权限弹窗',
       desc: '点击"Not now"',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.twitter.app.main.MainActivity',

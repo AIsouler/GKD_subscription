@@ -55,7 +55,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '通知提示-请求开启通知权限弹窗',
-      activityIds: [],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       rules:
         '[text="开启专属学习资料推送"] + [id="com.handsgo.jiakao.android:id/closeIv"]',

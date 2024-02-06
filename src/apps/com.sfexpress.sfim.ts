@@ -8,7 +8,7 @@ export default defineAppConfig({
       enable: false,
       key: 10,
       name: '功能类-CAS安全认证-自动登录',
-      desc: '自动点击【登录】按钮',
+      desc: '自动点击"登录"按钮',
       activityIds: [
         'com.sfexpress.sfim.scan.view.SfScanActivity',
         'com.sfexpress.sfim.microservice.commonservice.ui.MicroAppContainerActivity',

@@ -19,6 +19,9 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-请求开启通知权限提示信息',
       desc: '自动点击x按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules:
         '[text^="开启消息通知"] +2 [id="cn.xuexi.android:id/layout_close"]',

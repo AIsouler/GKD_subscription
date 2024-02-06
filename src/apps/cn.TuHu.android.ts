@@ -18,6 +18,9 @@ export default defineAppConfig({
       key: 10,
       quickFind: true,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
       rules: '[id="cn.TuHu.android:id/imgClose"]',
       snapshotUrls: [

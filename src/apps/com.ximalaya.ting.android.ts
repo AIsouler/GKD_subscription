@@ -65,7 +65,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/12506225',
             'https://i.gkd.li/import/12701414', // 关闭广告后，控件仍然存在但不可见，使用 visibleToUser=true 进行限定，防止关闭之后继续触发规则
-            'https://i.gkd.li/import/13314183', // 原规则clickable=false容易误触【橱窗】'[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
+            'https://i.gkd.li/import/13314183', // 原规则clickable=false容易误触"橱窗"'[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
           ],
         },
       ],
@@ -107,7 +107,7 @@ export default defineAppConfig({
         },
         {
           preKeys: [0, 1],
-          name: '点击关闭原因【屏蔽】',
+          name: '点击关闭原因"屏蔽"',
           quickFind: true,
           matches:
             '@[name="android.widget.RelativeLayout" || name="android.widget.LinearLayout"] > [text="屏蔽"]',
@@ -227,6 +227,9 @@ export default defineAppConfig({
       key: 12,
       name: '通知提示-请求推送通知',
       desc: '取消推送通知',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           actionMaximum: 1,

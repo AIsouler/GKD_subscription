@@ -9,6 +9,9 @@ export default defineAppConfig({
       enable: false,
       key: 8,
       name: '通知提示-请求通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: [
         'com.yanzhenjie.permission.PermissionActivity',

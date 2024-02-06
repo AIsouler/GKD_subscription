@@ -7,7 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '通知提示',
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
       rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',

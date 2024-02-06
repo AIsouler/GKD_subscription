@@ -33,7 +33,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告',
-      desc: '来自第三方SDK【穿山甲】',
+      desc: '来自第三方SDK"穿山甲"',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: [

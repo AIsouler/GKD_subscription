@@ -154,6 +154,9 @@ export default defineAppConfig({
       quickFind: true,
       name: '通知提示-获取订单信息通知',
       desc: '点击X',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'me.ele.message.ui.PushMessageGuideActivity',

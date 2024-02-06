@@ -33,6 +33,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '通知提示-请求开通知权限弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
       rules: '@[text="取消"] + [text="立即开启"]',
       snapshotUrls: 'https://i.gkd.li/import/13399102',

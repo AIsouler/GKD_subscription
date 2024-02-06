@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           key: 0,
           quickFind: true,
-          name: '【跳过+倒计时】型',
+          name: '"跳过+倒计时"型',
           matches: 'TextView[text^="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/import/12775906',
@@ -26,14 +26,14 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '【圆圈跳过】型-来自穿山甲SDK',
+          name: '"圆圈跳过"型-来自穿山甲SDK',
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/13322227',
         },
         {
           key: 2,
           quickFind: true,
-          name: '【x+关闭】型',
+          name: '"x+关闭"型',
           matches:
             'TextView[text="广告"] - @LinearLayout[clickable=true] > [text="关闭"]',
           snapshotUrls: 'https://i.gkd.li/import/13168386',
@@ -43,6 +43,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '通知提示-申请消息提醒弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -82,7 +83,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击广告【x】',
+          name: '点击广告"x"',
           matches: [
             'RelativeLayout > TextView[text$="广告"][clickable=true]',
             'LinearLayout[clickable=true][childCount=1] > @FrameLayout[clickable=true][childCount=1][desc=null] > ImageView',
@@ -95,14 +96,14 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12840951',
             'https://i.gkd.li/import/12775916',
             'https://i.gkd.li/import/12775892', // 指定点击目标为具备 clickable=true 属性的 @FrameLayout，防止在这个快照误触点击收藏
-            'https://i.gkd.li/import/13328300', // 指定点击目标为具备 desc=null 属性的 @FrameLayout，防止在这个快照误触点击【更多】
+            'https://i.gkd.li/import/13328300', // 指定点击目标为具备 desc=null 属性的 @FrameLayout，防止在这个快照误触点击"更多"
             'https://i.gkd.li/import/13402610', // 指定LinearLayout[clickable=true] 、 activityIds: 'com.baidu.tieba.forum.ForumActivity',
             'https://i.gkd.li/import/13459289',
           ],
         },
         {
           preKeys: 0,
-          name: '关闭原因-【不感兴趣】',
+          name: '关闭原因-"不感兴趣"',
           matches:
             '@View[text=null] - TextView[text="选择不喜欢理由"][index=0]',
           snapshotUrls: 'https://i.gkd.li/import/12775914',

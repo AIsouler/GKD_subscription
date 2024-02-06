@@ -31,9 +31,9 @@ export default defineAppConfig({
     {
       key: 2,
       name: '通知提示-公告弹窗', //分类存疑
-      resetMatch: 'app',
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.xsj.app.MainActivity',
       rules: '[desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13875711',

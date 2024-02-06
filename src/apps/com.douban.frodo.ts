@@ -116,14 +116,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【广告】',
+          name: '点击"广告"',
           matches:
             '@View[clickable=true] > Image - TextView[text="广告"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/12548131',
         },
         {
           preKeys: 0,
-          name: '点击【不感兴趣】',
+          name: '点击"不感兴趣"',
           matches:
             '[text="广告"] < * + * > [text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/12548116',
@@ -152,7 +152,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【x】关闭型',
+          name: '点击"x"关闭型',
           activityIds: ['com.douban.frodo.group.activity.GroupTopicActivity'],
           matches:
             'ImageView[id=null] +(n) LinearLayout[childCount<=2] + FrameLayout[childCount=1] > ImageView[id=null][visibleToUser=true][top>250]',
@@ -161,13 +161,13 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12674842',
             'https://i.gkd.li/import/12723462',
             'https://i.gkd.li/import/12723800',
-            'https://i.gkd.li/import/13402399', // 添加[top>250]，避免误触快照中【更多】按钮
+            'https://i.gkd.li/import/13402399', // 添加[top>250]，避免误触快照中"更多"按钮
             'https://i.gkd.li/import/12548476', // 原key6
           ],
         },
         {
           key: 1,
-          name: '点击【广告】选原因型',
+          name: '点击"广告"选原因型',
           matches: '[text="广告"][id$="ad_not_interest"]',
           activityIds: [
             'com.douban.frodo.subject.structure.activity.MovieActivity',
@@ -185,7 +185,7 @@ export default defineAppConfig({
           ],
         },
         {
-          name: '点击【不感兴趣】',
+          name: '点击"不感兴趣"',
           preKeys: 1,
           matches:
             '@LinearLayout[clickable=true] > [id="com.douban.frodo:id/mainText"][text="不感兴趣"]',

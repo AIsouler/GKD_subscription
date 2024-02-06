@@ -120,8 +120,11 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      quickFind: true,
       name: '通知提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       rules: '[text="去开启"] - [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/import/13296465',

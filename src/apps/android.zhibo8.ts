@@ -27,7 +27,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '点击【广告】右侧的x',
+          name: '点击"广告"右侧的x',
           matches:
             '[text="广告"] <3 LinearLayout +2 [visibleToUser=true][id="android.zhibo8:id/iv_tip"]',
           snapshotUrls: 'https://i.gkd.li/import/13786148',

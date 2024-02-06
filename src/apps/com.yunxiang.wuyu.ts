@@ -24,13 +24,13 @@ export default defineAppConfig({
       activityIds: 'com.yunxiang.wuyu.MainActivity',
       rules: [
         {
-          name: '【x】型',
+          name: '"x"型',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +n ViewGroup [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13455628',
         },
         {
-          name: '【跳过】型',
+          name: '"跳过"型',
           matches: [
             'TextView[text="广告"]',
             '@ViewGroup > TextView[text="跳过"]',

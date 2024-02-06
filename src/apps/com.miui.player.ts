@@ -74,7 +74,7 @@ export default defineAppConfig({
       enable: false,
       key: 12,
       name: '功能类-看广告视频领VIP',
-      desc: '等待15s自动点击【退出】',
+      desc: '等待15s自动点击"退出"',
       rules: [
         {
           actionDelay: 15000,

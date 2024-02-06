@@ -16,13 +16,13 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【反馈】',
+          name: '点击"反馈"',
           matches: 'WebView @[text="反馈"] - View > Image',
           snapshotUrls: 'https://i.gkd.li/import/13510973',
         },
         {
           preKeys: 0,
-          name: '原因选【不感兴趣】',
+          name: '原因选"不感兴趣"',
           matches: '@LinearLayout[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13510972',
         },

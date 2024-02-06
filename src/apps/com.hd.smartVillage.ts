@@ -8,7 +8,9 @@ export default defineAppConfig({
       key: 1,
       name: '通知提示-关闭开启通知弹窗',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.hd.smartVillage.modules.main.MainActivity',
         'com.hd.smartVillage.modules.h5service.H5WebActivity',

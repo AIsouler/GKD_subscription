@@ -45,6 +45,9 @@ export default defineAppConfig({
     {
       key: 4,
       name: '通知提示-请求开启通知弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
       rules:

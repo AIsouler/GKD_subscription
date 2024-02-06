@@ -41,7 +41,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            'ImageView < ViewGroup + @ViewGroup[childCount=1] > ImageView', //添加childCount=1避免【全屏播放-设置】误触
+            'ImageView < ViewGroup + @ViewGroup[childCount=1] > ImageView', //添加childCount=1避免"全屏播放-设置"误触
           snapshotUrls: [
             'https://i.gkd.li/import/12892825',
             'https://i.gkd.li/import/13037239',

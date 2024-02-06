@@ -15,6 +15,9 @@ export default defineAppConfig({
     {
       key: 2,
       name: '通知提示-消息页上方开启系统通知提醒',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.dianping.main.guide.SplashActivity'],
       rules: {
         matches:

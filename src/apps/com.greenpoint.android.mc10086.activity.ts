@@ -37,6 +37,9 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-请求推送通知弹窗',
       desc: '请求推送通知弹窗，点击取消',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.mc10086.cmcc.base.StartPageActivity',
       rules: [
         {

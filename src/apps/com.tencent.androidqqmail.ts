@@ -50,9 +50,13 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 1,
       name: '通知提示-开启通知提醒',
-      enable: false,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+
       quickFind: true,
       activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
       rules: [

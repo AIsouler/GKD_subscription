@@ -235,7 +235,7 @@ export default defineAppConfig({
       enable: false,
       key: 6,
       name: '分段广告-订阅号文章广告',
-      desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则',
+      desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用"订阅号文章广告反馈"规则',
       activityIds: [
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
         'com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI',
@@ -295,7 +295,7 @@ export default defineAppConfig({
       enable: false,
       key: 8,
       name: '分段广告-订阅号文章广告反馈',
-      desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用',
+      desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合"订阅号文章广告"规则使用',
       activityIds: [
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
         'com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI',
@@ -419,7 +419,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '【广告】0',
+          name: '"广告"0',
           matches:
             'FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text="广告"][visibleToUser=true]',
           excludeMatches:
@@ -431,21 +431,21 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '【广告】1',
+          name: '"广告"1',
           matches: 'Image[text="feedback_icon"] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13378208',
         },
         {
           preKeys: [0, 1],
           key: 11,
-          name: '点击原因【不感兴趣】',
+          name: '点击原因"不感兴趣"',
           matches: '[text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13200044',
         },
         {
           preKeys: 11,
           key: 12,
-          name: '点击原因【与我无关】',
+          name: '点击原因"与我无关"',
           matches: '[text="与我无关"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13200048',
         },

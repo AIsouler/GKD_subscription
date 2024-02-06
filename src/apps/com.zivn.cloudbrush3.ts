@@ -13,14 +13,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击"x"',
           matches:
             '@View[clickable=true] < FrameLayout  -2 FrameLayout [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/13425305',
         },
         {
           preKeys: 0,
-          name: '点击【不感兴趣】',
+          name: '点击"不感兴趣"',
           matches:
             '@LinearLayout > [id="com.byted.pangle.m:id/tt_item_tv"][text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13425306',

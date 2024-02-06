@@ -28,6 +28,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '通知提示-首页公告通知',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.ksf.yyx.MainActivity'],
       rules: [
         {

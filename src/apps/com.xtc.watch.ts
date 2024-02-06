@@ -24,9 +24,12 @@ export default defineAppConfig({
       ],
     },
     {
+      enable: false,
       key: 3,
       name: '通知提示-请求开启通知提醒弹窗',
-      enable: false,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: ['com.xtc.watch.view.home.activity.XtcHomeActivity'],
       rules: [

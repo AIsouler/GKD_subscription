@@ -8,6 +8,9 @@ export default defineAppConfig({
       key: -1,
       name: '通知提示-关闭公告栏',
       desc: 'APP启动时出现的公告栏',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.miaoying.appmy.cs.MainActivity',
         'com.miui.home.launcher.Launcher',

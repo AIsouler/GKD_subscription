@@ -24,7 +24,10 @@ export default defineAppConfig({
     {
       key: 10,
       name: '通知提示-请求通知权限弹窗',
-      desc: '自动点击【不允许】/关闭',
+      desc: '自动点击"不允许"/关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: [
         {

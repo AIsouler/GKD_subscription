@@ -15,7 +15,7 @@ export default defineAppConfig({
       key: 11,
       name: '未分类-推荐服务声明',
       enable: false,
-      desc: '推荐服务声明弹窗。默认点击【取消】按钮',
+      desc: '推荐服务声明弹窗。默认点击"取消"按钮',
       activityIds: 'com.hihonor.magichome.business.MainActivity',
       rules:
         '[text$="推荐服务声明"] < LinearLayout < LinearLayout + LinearLayout > [id="com.hihonor.magichome:id/negative_btn"]',

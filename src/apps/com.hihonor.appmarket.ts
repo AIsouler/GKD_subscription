@@ -29,6 +29,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '通知提示-请求推送通知弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
       rules:

@@ -50,7 +50,7 @@ export default defineAppConfig({
       enable: false,
       key: 11,
       name: '局部广告-首页签到卡片',
-      desc: '点击【x】',
+      desc: '点击"x"',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',

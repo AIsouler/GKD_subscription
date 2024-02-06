@@ -19,6 +19,9 @@ export default defineAppConfig({
       key: 2,
       name: '通知提示-系统推送弹窗',
       desc: '检测到未开启系统推送-点击暂不开启',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules:
@@ -29,6 +32,9 @@ export default defineAppConfig({
       key: 3,
       name: '通知提示-系统推送提示信息',
       desc: '点击顶部提醒右侧x按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules: '[text^="打开推送"] +(2) RelativeLayout > ImageView',

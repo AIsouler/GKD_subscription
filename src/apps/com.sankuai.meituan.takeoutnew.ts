@@ -38,7 +38,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '领取外卖神卷-点击底部【x】',
+          name: '领取外卖神卷-点击底部"x"',
           matches:
             '@ImageView[clickable=true] - FrameLayout > FrameLayout > FrameLayout TextView[text="点我领取"]',
           snapshotUrls: 'https://i.gkd.li/import/13175526',

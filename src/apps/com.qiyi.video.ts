@@ -44,6 +44,9 @@ export default defineAppConfig({
     {
       key: 3,
       name: '通知提示-开启推送通知弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12838152',
