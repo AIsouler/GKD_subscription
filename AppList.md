@@ -4,7 +4,7 @@
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | APKPure                | [com.apkpure.aegon](/docs/com.apkpure.aegon.md)                                                                                                                   | 4      |
 | AcFun                  | [tv.acfundanmaku.video](/docs/tv.acfundanmaku.video.md)                                                                                                           | 1      |
-| AppShare               | [info.muge.appshare](/docs/info.muge.appshare.md)                                                                                                                 | 4      |
+| AppShare               | [info.muge.appshare](/docs/info.muge.appshare.md)                                                                                                                 | 5      |
 | BUFF                   | [com.netease.buff](/docs/com.netease.buff.md)                                                                                                                     | 1      |
 | Blued                  | [com.soft.blued](/docs/com.soft.blued.md)                                                                                                                         | 2      |
 | CFMOTO                 | [com.lxt.cfmoto](/docs/com.lxt.cfmoto.md)                                                                                                                         | 1      |
@@ -30,7 +30,7 @@
 | OurPlay                | [com.excean.gspace](/docs/com.excean.gspace.md)                                                                                                                   | 1      |
 | PicACG                 | [com.picacomic.fregata](/docs/com.picacomic.fregata.md)                                                                                                           | 5      |
 | QCY                    | [com.qcymall.earphonesetup](/docs/com.qcymall.earphonesetup.md)                                                                                                   | 1      |
-| QQ                     | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md)                                                                                                             | 22     |
+| QQ                     | [com.tencent.mobileqq](/docs/com.tencent.mobileqq.md)                                                                                                             | 23     |
 | RAR                    | [com.rarlab.rar](/docs/com.rarlab.rar.md)                                                                                                                         | 1      |
 | RayLink                | [com.example.raylink_flutter](/docs/com.example.raylink_flutter.md)                                                                                               | 2      |
 | Reddit                 | [com.reddit.frontpage](/docs/com.reddit.frontpage.md)                                                                                                             | 2      |
@@ -121,6 +121,7 @@
 | 百度                   | [com.baidu.searchbox](/docs/com.baidu.searchbox.md)                                                                                                               | 1      |
 | 百度百科               | [com.baidu.baike](/docs/com.baidu.baike.md)                                                                                                                       | 1      |
 | 百度地图               | [com.baidu.BaiduMap](/docs/com.baidu.BaiduMap.md)                                                                                                                 | 9      |
+| 百度输入法             | [com.baidu.input](/docs/com.baidu.input.md)                                                                                                                       | 2      |
 | 百度贴吧               | [com.baidu.tieba](/docs/com.baidu.tieba.md)                                                                                                                       | 10     |
 | 百度网盘               | [com.baidu.netdisk](/docs/com.baidu.netdisk.md)                                                                                                                   | 10     |
 | 百度网盘-三星版本      | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md)                                                                                                   | 4      |
@@ -440,7 +441,7 @@
 | 天府通                 | [com.chinarainbow.tft](/docs/com.chinarainbow.tft.md)                                                                                                             | 1      |
 | 天空影视               | [com.miaoying.appmy](/docs/com.miaoying.appmy.md)                                                                                                                 | 1      |
 | 天猫精灵               | [com.alibaba.ailabs.tg](/docs/com.alibaba.ailabs.tg.md)                                                                                                           | 1      |
-| 天天基金               | [com.eastmoney.android.fund](/docs/com.eastmoney.android.fund.md)                                                                                                 | 4      |
+| 天天基金               | [com.eastmoney.android.fund](/docs/com.eastmoney.android.fund.md)                                                                                                 | 5      |
 | 天天视频               | [com.myapp.app.xaoorti](/docs/com.myapp.app.xaoorti.md)                                                                                                           | 1      |
 | 天天跳绳               | [com.gkid.crazyrope](/docs/com.gkid.crazyrope.md)                                                                                                                 | 2      |
 | 天翼生活               | [com.ataaw.tianyi](/docs/com.ataaw.tianyi.md)                                                                                                                     | 1      |
@@ -604,8 +605,8 @@
 | 正气                   | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md)                                                                                               | 2      |
 | 直播吧                 | [android.zhibo8](/docs/android.zhibo8.md)                                                                                                                         | 1      |
 | 知到                   | [com.able.wisdomtree](/docs/com.able.wisdomtree.md)                                                                                                               | 2      |
-| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 10     |
-| 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 14     |
+| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 11     |
+| 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 7      |
 | 智慧生活               | [com.huawei.smarthome](/docs/com.huawei.smarthome.md)                                                                                                             | 1      |
 | 智慧树                 | [com.hyww.wisdomtree](/docs/com.hyww.wisdomtree.md)                                                                                                               | 2      |
 | 智慧搜索               | [com.huawei.search](/docs/com.huawei.search.md)                                                                                                                   | 1      |
@@ -623,6 +624,7 @@
 | 中国建设银行           | [com.chinamworld.main](/docs/com.chinamworld.main.md)                                                                                                             | 1      |
 | 中国军号               | [cn.mil.junhao](/docs/cn.mil.junhao.md)                                                                                                                           | 3      |
 | 中国联通               | [com.sinovatech.unicom.ui](/docs/com.sinovatech.unicom.ui.md)                                                                                                     | 4      |
+| 中国农业银行           | [com.android.bankabc](/docs/com.android.bankabc.md)                                                                                                               | 1      |
 | 中国人保               | [com.cloudpower.netsale.activity](/docs/com.cloudpower.netsale.activity.md)                                                                                       | 1      |
 | 中国移动               | [com.greenpoint.android.mc10086.activity](/docs/com.greenpoint.android.mc10086.activity.md)                                                                       | 6      |
 | 中国移动河南           | [com.xinhang.mobileclient](/docs/com.xinhang.mobileclient.md)                                                                                                     | 2      |
