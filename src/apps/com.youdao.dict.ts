@@ -105,6 +105,7 @@ export default defineAppConfig({
       key: 6,
       name: '更新提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:

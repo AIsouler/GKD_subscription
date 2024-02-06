@@ -38,6 +38,9 @@ export default defineAppConfig({
       quickFind: true,
       name: '更新提示',
       desc: '点击我再想想',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[text="发现新版本"] +2 * > [text="我再想想"]',

@@ -17,6 +17,7 @@ export default defineAppConfig({
       key: 1,
       name: '更新提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[desc="关闭"] - LinearLayout > [text="立即升级"]',

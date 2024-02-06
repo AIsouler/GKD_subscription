@@ -6,10 +6,10 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      desc: '关闭升级弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      desc: '关闭升级弹窗',
       rules: [
         {
           activityIds: 'com.x2era.xcloud.app.MainActivity',

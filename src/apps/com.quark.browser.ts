@@ -28,8 +28,9 @@ export default defineAppConfig({
       key: 3,
       name: '更新提示',
       desc: '点击取消',
-      quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.ucpro.BrowserActivity',
       rules: [
         {

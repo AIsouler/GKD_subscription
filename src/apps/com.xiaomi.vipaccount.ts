@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'miuix.appcompat.app.AlertDialog',
       rules:
         '@[text="稍后安装"] < LinearLayout - ScrollView >(4) [text="发现新版本"]',

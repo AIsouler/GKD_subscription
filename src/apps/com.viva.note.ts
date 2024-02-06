@@ -7,11 +7,13 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
         'com.maoyun.guoguo.MainActivity',
       ],
-
       rules: [
         {
           matches:

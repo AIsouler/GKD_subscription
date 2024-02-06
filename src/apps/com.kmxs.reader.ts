@@ -13,6 +13,9 @@ export default defineAppConfig({
     {
       key: -2,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.km.app.update.UpdateVersionV2Activity',
       rules: '[id="com.kmxs.reader:id/tv_update_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/12641338',

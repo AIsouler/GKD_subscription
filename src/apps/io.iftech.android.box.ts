@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'io.iftech.android.box.main.HomeActivity',
       rules: '[text*="新版本"] +(2) [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12706195',

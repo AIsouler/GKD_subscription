@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds:
         'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules: '[text$="版本更新了"] +(2) RelativeLayout > [text="稍后再说"]',

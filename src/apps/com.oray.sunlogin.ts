@@ -20,9 +20,11 @@ export default defineAppConfig({
         'https://github.com/gkd-kit/inspect/assets/38517192/61d335f0-a85a-4e26-80fe-6bc0d1742bc0',
     },
     {
-      matchTime: 30000,
       key: 1,
       name: '更新提示-版本更新',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       rules: [
         {

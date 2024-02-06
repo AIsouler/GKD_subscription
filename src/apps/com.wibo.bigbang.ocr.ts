@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
-      matchTime: 20000,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
