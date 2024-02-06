@@ -122,5 +122,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-广告弹窗',
+      desc: '广告展示率低于20%时出现的广告',
+      rules: [
+        {
+          matches:
+            'RelativeLayout[childCount=2] > RelativeLayout > View[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6b1d7b37-edd7-499f-a8b0-ecba24ef2c44',
+          snapshotUrls: 'https://i.gkd.li/import/14181146',
+        },
+      ],
+    },
   ],
 });
