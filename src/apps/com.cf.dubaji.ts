@@ -7,8 +7,11 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
-      activityIds: 'com.cf.dubaji.module.main.MainActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
+      activityIds: 'com.cf.dubaji.module.main.MainActivity',
       rules: [
         {
           key: 0,

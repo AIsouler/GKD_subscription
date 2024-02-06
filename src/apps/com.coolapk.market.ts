@@ -109,8 +109,11 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      quickFind: true,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12503762',
       rules: '[text=`立即更新`] - [text=`取消`]',

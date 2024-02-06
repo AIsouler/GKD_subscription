@@ -63,6 +63,9 @@ export default defineAppConfig({
     {
       key: 2,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.firebear.androil.app.home.MainActivity',
       rules:
         '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',

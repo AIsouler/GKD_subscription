@@ -8,6 +8,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.alibaba.wireless.launch.home.V5HomeActivity',
         'com.alibaba.wireless.workbench.myali.MyAliSettingActivity',

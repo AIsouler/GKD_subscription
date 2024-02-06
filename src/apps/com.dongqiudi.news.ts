@@ -46,11 +46,11 @@ export default defineAppConfig({
     {
       key: 2,
       name: '更新提示',
-      activityIds: 'com.dongqiudi.news.DownloadActivity',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: 'com.dongqiudi.news.DownloadActivity',
       rules: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
       snapshotUrls: 'https://i.gkd.li/import/12620586',
     },

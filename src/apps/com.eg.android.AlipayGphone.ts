@@ -8,6 +8,7 @@ export default defineAppConfig({
       enable: false,
       key: 0,
       name: '更新提示-关闭花呗升级弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -89,6 +90,7 @@ export default defineAppConfig({
       enable: false,
       key: 3,
       name: '更新提示-版本更新弹窗',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,

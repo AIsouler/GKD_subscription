@@ -7,10 +7,19 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
-      activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
-      snapshotUrls: 'https://i.gkd.li/import/12534264',
-      rules:
-        'Button[text="以后再说"][id^="com.greenpoint.android.mc10086.activity:id/dialog_btn"]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
+          matches:
+            'Button[text="以后再说"][id^="com.greenpoint.android.mc10086.activity:id/dialog_btn"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/65ee49f0-f3f2-4ef8-9f76-e832b0551b86',
+          snapshotUrls: 'https://i.gkd.li/import/12534264',
+        },
+      ],
     },
     {
       key: 2,

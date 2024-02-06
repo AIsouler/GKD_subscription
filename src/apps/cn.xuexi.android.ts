@@ -7,6 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules: '@[text="取消"] + [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/import/12715139',

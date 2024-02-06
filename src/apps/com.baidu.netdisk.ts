@@ -68,6 +68,7 @@ export default defineAppConfig({
       key: 6,
       name: '更新提示',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="立即更新"] -n [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）

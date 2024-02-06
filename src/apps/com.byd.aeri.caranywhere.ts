@@ -8,8 +8,9 @@ export default defineAppConfig({
       enable: false,
       key: 1,
       name: '更新提示',
-      resetMatch: 'app',
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: ['com.byd.aeri.splash.module_splash.activity.TabManager'],
       rules: [
         {
