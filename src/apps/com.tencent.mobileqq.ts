@@ -507,5 +507,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 24,
+      name: '局部广告-聊天页面顶部卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches:
+            'FrameLayout[childCount=2] FrameLayout[childCount=2] > FrameLayout[index=1] > RelativeLayout[childCount=4] > ImageView[index=3]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3bf709fc-eefc-4d66-9a00-475738934cd7',
+          snapshotUrls: 'https://i.gkd.li/import/14178667',
+        },
+      ],
+    },
   ],
 });
