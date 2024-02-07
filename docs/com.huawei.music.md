@@ -1,6 +1,6 @@
 # 华为音乐
 
-存在 7 规则组 - [com.huawei.music](/src/apps/com.huawei.music.ts)
+存在 9 规则组 - [com.huawei.music](/src/apps/com.huawei.music.ts)
 
 ## 开屏广告
 
@@ -51,3 +51,19 @@
 - [快照-0](https://i.gkd.li/import/13068935)
 - [快照-1](https://i.gkd.li/import/13194163)
 - [快照-2](https://i.gkd.li/import/13263590)
+
+## 全屏广告-弹窗广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/00c83449-9809-4de8-9c7c-c6ce1b9fa2c3)
+
+- [快照-0](https://i.gkd.li/import/14193738)
+
+## 局部广告-"我的"页面卡片广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/b205c209-07c9-49e1-b72d-f9b31d9bc2d9)
+
+- [快照-0](https://i.gkd.li/import/14193767)

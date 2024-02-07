@@ -1,6 +1,12 @@
 # 京东读书
 
-存在 3 规则组 - [com.jd.app.reader](/src/apps/com.jd.app.reader.ts)
+存在 4 规则组 - [com.jd.app.reader](/src/apps/com.jd.app.reader.ts)
+
+## 开屏广告
+
+- [示例-0](https://m.gkd.li/57941037/6f4561e5-b998-43f9-8848-b6b43d045a3d)
+
+- [快照-0](https://i.gkd.li/import/14189228)
 
 ## 更新提示
 

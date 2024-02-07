@@ -1,6 +1,6 @@
 # X(推特)
 
-存在 5 规则组 - [com.twitter.android](/src/apps/com.twitter.android.ts)
+存在 7 规则组 - [com.twitter.android](/src/apps/com.twitter.android.ts)
 
 ## 分段广告-主页信息流广告
 
@@ -48,3 +48,19 @@
 默认禁用 - 点击"Not now"
 
 - [快照-0](https://i.gkd.li/import/13930126)
+
+## 功能类-自动点击"翻译帖子"
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/40ece44f-883f-429a-aa0c-17dac15a50e4)
+
+- [快照-0](https://i.gkd.li/import/14189817)
+
+## 功能类-自动点击"显示更多帖子"
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/7efa8af7-90d3-42b4-bf5d-3d83775f175a)
+
+- [快照-0](https://i.gkd.li/import/14189847)

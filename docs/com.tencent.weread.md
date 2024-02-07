@@ -2,12 +2,13 @@
 
 存在 2 规则组 - [com.tencent.weread](/src/apps/com.tencent.weread.ts)
 
-## 通知提示-请求系统推送弹窗
+## 通知提示-开启推送通知
 
-默认禁用 - 点击取消
+默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642247)
 - [快照-1](https://i.gkd.li/import/13233735)
+- [快照-2](https://i.gkd.li/import/14190089)
 
 ## 青少年模式
 

@@ -12,9 +12,9 @@
 https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 ```
 
-当前版本: v10
+当前版本: v11
 
-当前订阅文件已适配 640 个 APP, 共有 1451 规则组
+当前订阅文件已适配 644 个 APP, 共有 1462 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -30,4 +30,4 @@ https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=10)
+![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=11)
