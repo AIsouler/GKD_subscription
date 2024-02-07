@@ -251,26 +251,29 @@ export default defineAppConfig({
       key: 17,
       quickFind: true,
       name: '分段广告-评论区信息流广告',
-      desc: '点击X-点击不感兴趣',
+      desc: '点击X-点击"不感兴趣"/"不想看到此类内容"',
+      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
       rules: [
         {
           key: 0,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          name: '点击关闭',
+
           matches: '[text="广告"] + [id="com.sina.weibo:id/iv_close_icon"]',
           snapshotUrls: 'https://i.gkd.li/import/13852321',
         },
         {
           preKeys: 0,
           key: 1,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          name: '点击"不感兴趣"',
           matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13852322',
         },
         {
           preKeys: 0,
           key: 2,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
-          matches: '[text="不想看到此类内容"]',
+          name: '点击"不想看到此类内容"',
+          matches:
+            '@LinearLayout[index=1][clickable=true] >2 [text="不想看到此类内容"]',
           snapshotUrls: 'https://i.gkd.li/import/13958782',
         },
       ],
