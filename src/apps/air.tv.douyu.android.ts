@@ -15,7 +15,7 @@ export default defineAppConfig({
       ],
       snapshotUrls: 'https://i.gkd.li/import/12472598',
       rules: [
-        '[text="开启青少年模式"] + [text=\'我知道了\']', // 1686970236642
+        '[text="开启青少年模式"] + [text="我知道了"]', // 1686970236642
       ],
     },
     {
