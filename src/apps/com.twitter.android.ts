@@ -172,5 +172,33 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 6,
+      name: '功能类-自动点击"翻译帖子"',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.twitter.tweetdetail.TweetDetailActivity',
+          matches: '[vid="translation_link"][text="翻译帖子"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/40ece44f-883f-429a-aa0c-17dac15a50e4',
+          snapshotUrls: 'https://i.gkd.li/import/14189817',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '功能类-自动点击"显示更多帖子"',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.twitter.app.main.MainActivity',
+          matches: '@FrameLayout[clickable=true] > [text="显示更多帖子"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7efa8af7-90d3-42b4-bf5d-3d83775f175a',
+          snapshotUrls: 'https://i.gkd.li/import/14189847',
+        },
+      ],
+    },
   ],
 });
