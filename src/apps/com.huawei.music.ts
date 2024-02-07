@@ -7,7 +7,9 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.android.mediacenter.PageActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
@@ -128,6 +130,37 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13194163', // 避免在此规则误触
             'https://i.gkd.li/import/13263590', // visibleToUser
           ],
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.android.mediacenter.PageActivity',
+          matches: '[vid="campaign_dialog_close_image_view"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/00c83449-9809-4de8-9c7c-c6ce1b9fa2c3',
+          snapshotUrls: 'https://i.gkd.li/import/14193738',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '局部广告-"我的"页面卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.android.mediacenter.MainActivity',
+          matches:
+            'RelativeLayout[childCount=2] + * [vid="close_radio_camp_button"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b205c209-07c9-49e1-b72d-f9b31d9bc2d9',
+          snapshotUrls: 'https://i.gkd.li/import/14193767',
         },
       ],
     },
