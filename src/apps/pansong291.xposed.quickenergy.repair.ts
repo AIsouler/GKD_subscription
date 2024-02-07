@@ -11,7 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: ['pansong291.xposed.quickenergy.ui.MainActivity'],
-          matches: ['[id=\'android:id/button2\']'],
+          matches: ['[id="android:id/button2"]'],
           snapshotUrls: ['https://i.gkd.li/import/13445477'],
         },
       ],
