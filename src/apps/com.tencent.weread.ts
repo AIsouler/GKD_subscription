@@ -34,7 +34,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '青少年模式弹窗',
+      name: '青少年模式',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
