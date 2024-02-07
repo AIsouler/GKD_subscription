@@ -514,10 +514,13 @@ export default defineAppConfig({
           name: '集福卡活动卡片',
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
-            'FrameLayout[childCount=2] FrameLayout[childCount=2] > FrameLayout[index=1] > RelativeLayout[childCount=4] > ImageView[index=3]',
+            'FrameLayout[childCount=2] >4 FrameLayout[childCount=2] > FrameLayout[index=1] > RelativeLayout[childCount=4] > TextView[index=1][text!*="正在语音通话"] +2 ImageView',
           exampleUrls:
             'https://m.gkd.li/57941037/3bf709fc-eefc-4d66-9a00-475738934cd7',
-          snapshotUrls: 'https://i.gkd.li/import/14178667',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14178667',
+            'https://i.gkd.li/import/14193973', // 误触界面
+          ],
         },
         {
           key: 1,
