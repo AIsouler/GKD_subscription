@@ -349,7 +349,6 @@ export default defineAppConfig({
       key: 15,
       name: '局部广告-好友动态页面"为你推荐"',
       quickFind: true,
-
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -531,6 +530,39 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/4cf5bc02-d2c3-4ca4-833e-522a194e3131',
           snapshotUrls: 'https://i.gkd.li/import/14183188',
+        },
+      ],
+    },
+    {
+      key: 25,
+      name: '全屏广告-个人主页广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          action: 'back',
+          activityIds:
+            'com.tencent.mobileqq.profilecard.activity.FriendProfileCardActivity',
+          matches: '[text="开启迷你窝"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/882ab889-a145-4951-9a44-1dc192490c79',
+          snapshotUrls: 'https://i.gkd.li/import/14188980',
+        },
+      ],
+    },
+    {
+      key: 26,
+      name: '全屏广告-腾讯文档页面-"使用App"弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds:
+            'com.tencent.mobileqq.activity.TeamWorkDocEditBrowserActivity',
+          matches:
+            '[id="com.tencent.mobileqq:id/webview"] >3 View[childCount=14] > View[index=8] > View > TextView[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6efc2dfd-79f3-43b5-bf20-f59a88295ddb',
+          snapshotUrls: 'https://i.gkd.li/import/14188983',
         },
       ],
     },
