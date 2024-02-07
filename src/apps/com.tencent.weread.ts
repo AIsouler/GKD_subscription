@@ -6,29 +6,35 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '通知提示-请求系统推送弹窗',
-      desc: '点击取消',
-      quickFind: true,
-      actionMaximum: 1,
-      matchTime: 30000,
-      resetMatch: 'app',
-      activityIds: [
-        'com.tencent.weread.module.bottomSheet.BottomSheetForFragment',
-        'com.tencent.weread.WeReadFragmentActivity',
-      ],
+      name: '通知提示-开启推送通知',
       rules: [
         {
+          key: 0,
+          name: '通知提示-开启推送通知提示弹窗',
+          quickFind: true,
+          actionMaximum: 1,
+          matchTime: 30000,
+          resetMatch: 'app',
           matches: '[id="com.tencent.weread:id/open_notification_close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/12642247',
             'https://i.gkd.li/import/13233735',
           ],
         },
+        {
+          key: 1,
+          name: '通知提示-开启推送通知提示信息',
+          actionMaximum: 1,
+          resetMatch: 'app',
+          matches:
+            '[text="开启推送通知"] +3 [clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/14190089',
+        },
       ],
     },
     {
       key: 2,
-      name: '青少年模式',
+      name: '青少年模式弹窗',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 30000,
