@@ -34,6 +34,7 @@ export default defineAppConfig({
           preKeys: 0,
           key: 1,
           name: '点击关闭',
+          quickFind: true,
           matches: '[text^="关闭"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/12907642', // text="关闭该广告"
@@ -44,6 +45,7 @@ export default defineAppConfig({
           preKeys: 0,
           key: 2,
           name: '点击"Close the ad"',
+          quickFind: true,
           matches: '[text="Close the ad"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/14207480',
         },
@@ -51,6 +53,7 @@ export default defineAppConfig({
           preKeys: 0,
           key: 3,
           name: '点击"關閉此廣告"',
+          quickFind: true,
           matches: '[text="關閉此廣告"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13791202',
         },
