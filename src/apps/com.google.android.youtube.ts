@@ -62,5 +62,14 @@ export default defineAppConfig({
         'ViewGroup[desc="免费试用 1 个月"] < * - * > ViewGroup[text="不用了，谢谢"]', // 缺少英文快照
       snapshotUrls: 'https://i.gkd.li/import/13797512',
     },
+    {
+      key: 4,
+      name: '通知提示-开启推送通知提示弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="开启通知"] < * < * +2 * >2 [text="不用了"]',
+      snapshotUrls: 'https://i.gkd.li/import/14194155',
+    },
   ],
 });
