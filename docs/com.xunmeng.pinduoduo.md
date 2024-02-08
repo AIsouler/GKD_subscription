@@ -1,6 +1,6 @@
 # 拼多多
 
-存在 16 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 17 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 更新提示
 
@@ -110,3 +110,9 @@
 默认禁用 - 点击我知道了
 
 - [快照-0](https://i.gkd.li/import/13809053)
+
+## 通知提示-请求开启消息通知弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14109435)

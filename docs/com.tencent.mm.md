@@ -1,36 +1,24 @@
 # 微信
 
-存在 23 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 21 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 分段广告-朋友圈广告
 
-默认禁用 - 点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭
+默认禁用 - 点击广告卡片右上角,直接关闭/出现菜单,确认关闭
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
 
-- [快照-0](https://i.gkd.li/import/12642588)
-- [快照-1](https://i.gkd.li/import/12888129)
-- [快照-2](https://i.gkd.li/import/12907641)
-- [快照-3](https://i.gkd.li/import/13000395)
-- [快照-4](https://i.gkd.li/import/12642584)
-- [快照-5](https://i.gkd.li/import/12663984)
-- [快照-6](https://i.gkd.li/import/12907642)
-- [快照-7](https://i.gkd.li/import/13926578)
-
-## 分段广告-朋友圈广告[英文]
-
-默认禁用 - 点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭
-
-- [快照-0](https://i.gkd.li/import/12905837)
-- [快照-1](https://i.gkd.li/import/12905838)
-- [快照-2](https://i.gkd.li/import/12905846)
-
-## 分段广告-朋友圈广告[繁体]
-
-默认禁用 - 点击广告卡片右上角[廣告],出现菜单点击[關閉此廣告],确认关闭
-
-- [快照-0](https://i.gkd.li/import/13791200)
-- [快照-1](https://i.gkd.li/import/13791202)
+- [快照-0](https://i.gkd.li/import/13000395)
+- [快照-1](https://i.gkd.li/import/12905837)
+- [快照-2](https://i.gkd.li/import/13791200)
+- [快照-3](https://i.gkd.li/import/12907642)
+- [快照-4](https://i.gkd.li/import/13926578)
+- [快照-5](https://i.gkd.li/import/14207480)
+- [快照-6](https://i.gkd.li/import/13791202)
+- [快照-7](https://i.gkd.li/import/12642584)
+- [快照-8](https://i.gkd.li/import/12663984)
+- [快照-9](https://i.gkd.li/import/12905838)
+- [快照-10](https://i.gkd.li/import/12905846)
 
 ## 功能类-电脑微信快捷自动登录
 

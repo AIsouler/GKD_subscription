@@ -21,8 +21,7 @@
 
 - [快照-0](https://i.gkd.li/import/12673043)
 - [快照-1](https://i.gkd.li/import/13635551)
-- [快照-2](https://i.gkd.li/import/12673051)
-- [快照-3](https://i.gkd.li/import/13787207)
+- [快照-2](https://i.gkd.li/import/13787207)
 
 ## 局部广告-评论区博主内容推荐
 
@@ -93,13 +92,15 @@
 
 - [快照-0](https://i.gkd.li/import/13482960)
 
-## 分段广告-评论区信息流广告
+## 分段广告-信息流广告
 
 默认禁用 - 点击X-点击"不感兴趣"/"不想看到此类内容"
 
 - [快照-0](https://i.gkd.li/import/13852321)
-- [快照-1](https://i.gkd.li/import/13852322)
-- [快照-2](https://i.gkd.li/import/13958782)
+- [快照-1](https://i.gkd.li/import/12673051)
+- [快照-2](https://i.gkd.li/import/14210775)
+- [快照-3](https://i.gkd.li/import/13852322)
+- [快照-4](https://i.gkd.li/import/13958782)
 
 ## 评价提示-APP评分弹窗
 

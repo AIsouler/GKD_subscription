@@ -1,6 +1,10 @@
 # 小组件盒子
 
-存在 3 规则组 - [io.iftech.android.box](/src/apps/io.iftech.android.box.ts)
+存在 4 规则组 - [io.iftech.android.box](/src/apps/io.iftech.android.box.ts)
+
+## 开屏广告
+
+- [快照-0](https://i.gkd.li/import/14204126)
 
 ## 更新提示
 
