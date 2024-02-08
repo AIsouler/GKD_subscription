@@ -93,5 +93,14 @@ export default defineAppConfig({
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/btn_open_notify"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/iv_delete"]',
       snapshotUrls: ['https://i.gkd.li/import/12647068'],
     },
+    {
+      key: 4,
+      name: '定位提示-请求开启定位权限弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="定位服务"] +n * > [text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/14209071',
+    },
   ],
 });
