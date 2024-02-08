@@ -46,5 +46,14 @@ export default defineAppConfig({
       rules: '[text="允许获取位置信息"] +n * > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/14208572',
     },
+    {
+      key: 4,
+      name: '通知提示',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[vid="iv_notification_reminder_dialog_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/14208621',
+    },
   ],
 });
