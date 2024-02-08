@@ -453,15 +453,23 @@ export default defineAppConfig({
     {
       key: 21,
       name: '全屏广告-首页广告弹窗',
+      activityIds: 'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
       rules: [
         {
           key: 0,
           name: '元梦之星广告弹窗',
-          activityIds:
-            'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
           matches:
             'ViewGroup[childCount=2] > ViewGroup[childCount=3][index=1] > ViewGroup[clickable=true][visibleToUser=true][index=1][childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13797876',
+        },
+        {
+          key: 1,
+          name: '现金瓜分弹窗',
+          matches:
+            'RelativeLayout >5 ViewGroup[childCount=6] > ViewGroup[index=2][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/a9fe74db-07b4-47e6-beed-80983f61d2e3',
+          snapshotUrls: 'https://i.gkd.li/import/14207286',
         },
       ],
     },
