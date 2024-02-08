@@ -65,10 +65,14 @@ export default defineAppConfig({
           activityIds: [
             'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
             'com.cmbchina.ccd.pluto.cmbActivity.repaymentBillv3.billRepay',
+            'com.cmbchina.ccd.pluto.cmbActivity.repaymentBillv3.billDetail.view',
           ],
           matches:
-            '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_bg"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cmb_drag_pendant_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12647127'],
+            '@[vid="img_cmb_drag_pendant_close"] + [vid="img_cmb_drag_pendant_bg"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12647127',
+            'https://i.gkd.li/import/14209121',
+          ],
         },
         {
           name: '发现页',
@@ -92,6 +96,15 @@ export default defineAppConfig({
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/btn_open_notify"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/iv_delete"]',
       snapshotUrls: ['https://i.gkd.li/import/12647068'],
+    },
+    {
+      key: 5,
+      name: '定位提示-请求开启定位权限弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="定位服务"] +n * > [text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/14209071',
     },
   ],
 });
