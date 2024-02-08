@@ -67,7 +67,7 @@ export default defineAppConfig({
           action: 'longClick',
           name: '长按"赞助"/"广告"卡片',
           matches:
-            '@FrameLayout[clickable=true] > LinearLayout TextView[text="赞助"||text="广告"]',
+            '@FrameLayout[clickable=true] > LinearLayout TextView[text="赞助"||text="广告"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/import/13455503',
             'https://i.gkd.li/import/13470690',
