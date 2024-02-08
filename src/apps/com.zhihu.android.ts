@@ -36,16 +36,19 @@ export default defineAppConfig({
         {
           key: 2,
           quickFind: true,
-          matches: '@ImageView[clickable=true] -3 * > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13849442',
+          matches: '@ImageView[clickable=true] -(2,3) * > [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13849442',
+            'https://i.gkd.li/import/14178979',
+          ],
+          exampleUrls:
+            'https://m.gkd.li/57941037/65e9f31a-e80f-4996-9621-1b8fd92940d6',
         },
         {
           key: 3,
-          matches:
-            'RecyclerView[childCount=24] > FrameLayout[index=11] >3 ImageView[index=3]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/65e9f31a-e80f-4996-9621-1b8fd92940d6',
-          snapshotUrls: 'https://i.gkd.li/import/14178979',
+          quickFind: true,
+          matches: '@ViewGroup[clickable=true] <4 * -3 * >2 [text*="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/14192451',
         },
         {
           key: 90,
