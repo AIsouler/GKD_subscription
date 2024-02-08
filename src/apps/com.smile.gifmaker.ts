@@ -79,7 +79,8 @@ export default defineAppConfig({
         {
           key: 1,
           quickFind: true,
-          matches: 'ViewGroup[childCount=3] > [text="隐藏"]',
+          matches:
+            'ViewGroup[childCount=3] > [text="隐藏"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/14001536',
         },
       ],
