@@ -14,7 +14,8 @@
 - [快照-2](https://i.gkd.li/import/14178516)
 - [快照-3](https://i.gkd.li/import/13849442)
 - [快照-4](https://i.gkd.li/import/14178979)
-- [快照-5](https://i.gkd.li/import/13849689)
+- [快照-5](https://i.gkd.li/import/14192451)
+- [快照-6](https://i.gkd.li/import/13849689)
 
 ## 通知提示-推送通知弹窗
 
@@ -53,8 +54,11 @@
 默认禁用 - 点击关闭
 
 - [示例-0](https://m.gkd.li/57941037/0443d5cb-aa24-4447-afd7-58c5a09af835)
+- [示例-1](https://m.gkd.li/45487685/c7d89c48-91d1-4658-b22e-d2626117be8b)
 
 - [快照-0](https://i.gkd.li/import/14178980)
+- [快照-1](https://i.gkd.li/import/14206949)
+- [快照-2](https://i.gkd.li/import/14206988)
 
 ## 功能类-自动展开回答
 
