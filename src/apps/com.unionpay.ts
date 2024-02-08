@@ -69,14 +69,17 @@ export default defineAppConfig({
       enable: false,
       key: 11,
       name: '定位提示-访问位置请求弹窗',
-      desc: '自动点击"不允许"。默认关闭，请手动开启',
+      desc: '自动点击"不允许"',
       quickFind: true,
-      activityIds: ['com.unionpay.base.UPDialog'],
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[text$="想访问您的位置信息"] < * +2 LinearLayout > [id="com.unionpay:id/btn_cancel"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12695773',
+          matches: '[text*="访问您的位置信息"] < * +n * > [text="不允许"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12695773',
+            'https://i.gkd.li/import/14209001',
+          ],
         },
       ],
     },
