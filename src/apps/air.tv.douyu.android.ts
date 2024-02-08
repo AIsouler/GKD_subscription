@@ -49,7 +49,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          matches: 'ViewPager + @View + ImageView + View',
+          matches: 'ViewPager[childCount=3] + @View + ImageView + View',
           snapshotUrls: 'https://i.gkd.li/import/12892825',
         },
         {
