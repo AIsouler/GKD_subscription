@@ -41,7 +41,7 @@ export default defineAppConfig({
           snapshotUrls: ['https://i.gkd.li/import/12642584'],
         },
         {
-          preKeys: 1,
+          preKeys: 0,
           key: 2,
           name: '关闭该广告的原因-点击[直接关闭]',
           matches: '[text="关闭该广告的原因"] +(2) [text="直接关闭"]',
@@ -65,7 +65,10 @@ export default defineAppConfig({
       key: 12,
       name: '分段广告-朋友圈广告[英文]',
       desc: '点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭',
-      activityIds: 'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
+      activityIds: [
+        'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
+        'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
+      ],
       quickFind: true,
       rules: [
         {
@@ -86,11 +89,19 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/12905838',
         },
         {
-          preKeys: 1,
+          preKeys: 0,
           key: 2,
           name: 'Reason for closing the ad - 点击[Close]',
           matches: '[text="Reason for closing the ad"] +(2) [text="Close"]',
           snapshotUrls: 'https://i.gkd.li/import/12905846',
+        },
+        {
+          preKeys: 0,
+          key: 3,
+          matches: '[text="Close the ad"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e7e8d592-740b-415d-9224-f6268709d69a',
+          snapshotUrls: 'https://i.gkd.li/import/14207480',
         },
       ],
     },
