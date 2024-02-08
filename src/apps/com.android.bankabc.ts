@@ -37,5 +37,14 @@ export default defineAppConfig({
       rules: '[vid="upgrade_bottom"] > [vid="negativeTextView"]',
       snapshotUrls: 'https://i.gkd.li/import/14208545',
     },
+    {
+      key: 3,
+      name: '定位提示',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="允许获取位置信息"] +n * > [text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/14208572',
+    },
   ],
 });
