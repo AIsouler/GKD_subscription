@@ -40,5 +40,12 @@ export default defineAppConfig({
       rules: '@[text="取消"] + [text="立即开启"]',
       snapshotUrls: 'https://i.gkd.li/import/13399102',
     },
+    {
+      key: 4,
+      name: '局部广告-理财产品悬浮广告',
+      activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
+      rules: '@[clickable=true] +2 [text="恭喜您关注到宝藏基金"]',
+      snapshotUrls: 'https://i.gkd.li/import/14208637',
+    },
   ],
 });
