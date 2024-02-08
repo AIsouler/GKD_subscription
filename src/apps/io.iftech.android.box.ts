@@ -10,7 +10,8 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="adContainer"] >n View[clickable=true]',
+      rules:
+        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
       snapshotUrls: 'https://i.gkd.li/import/14204126',
     },
     {
