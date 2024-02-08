@@ -16,10 +16,21 @@ export default defineAppConfig({
     {
       key: 10,
       name: '全屏广告-广告弹窗',
-      activityIds:
-        'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
-      rules: '[id="cover-img"] + [text="关闭推荐"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706022',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
+          matches: '[id="cover-img"] + [text="关闭推荐"]',
+          snapshotUrls: 'https://i.gkd.li/import/12706022',
+        },
+        {
+          key: 1,
+          activityIds: 'com.pb.marketing.PopupWindowActivity',
+          matches: '[desc^="活动图片"] + [desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/import/14208693',
+        },
+      ],
     },
     {
       key: 11,
