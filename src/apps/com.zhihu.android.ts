@@ -135,10 +135,22 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            '[vid="custom_recycler_view"] > FrameLayout[index=11] ImageView[index=4]',
+            '[text*="广告"] +(2,3) ImageView[clickable=true][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/0443d5cb-aa24-4447-afd7-58c5a09af835',
-          snapshotUrls: 'https://i.gkd.li/import/14178980',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14178980',
+            'https://i.gkd.li/import/14206949',
+          ],
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + * > [text*="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/45487685/c7d89c48-91d1-4658-b22e-d2626117be8b',
+          snapshotUrls: 'https://i.gkd.li/import/14206988',
         },
       ],
     },
