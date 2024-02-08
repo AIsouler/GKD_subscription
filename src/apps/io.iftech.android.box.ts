@@ -5,12 +5,21 @@ export default defineAppConfig({
   name: '小组件盒子',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules:
+        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+      snapshotUrls: 'https://i.gkd.li/import/14204126',
+    },
+    {
       key: 1,
       name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'io.iftech.android.box.main.HomeActivity',
       rules: '[text*="新版本"] +(2) [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12706195',
     },
