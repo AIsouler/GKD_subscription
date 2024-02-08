@@ -98,7 +98,7 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/12647068'],
     },
     {
-      key: 4,
+      key: 5,
       name: '定位提示-请求开启定位权限弹窗',
       quickFind: true,
       actionMaximum: 1,
