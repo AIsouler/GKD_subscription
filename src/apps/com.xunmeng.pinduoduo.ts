@@ -291,5 +291,14 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 17,
+      name: '通知提示-请求开启消息通知弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules:
+        'ViewGroup[vid="pdd"] >n ViewGroup[childCount=3] > @ImageView[clickable=true]',
+      snapshotUrls: 'https://i.gkd.li/import/14109435',
+    },
   ],
 });
