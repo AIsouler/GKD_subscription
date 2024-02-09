@@ -75,13 +75,19 @@ export default defineAppConfig({
     {
       key: 2,
       name: '全屏广告-广告弹窗',
-      activityIds: ['com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity'],
+      activityIds: [
+        'com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity',
+        'com.mygolbs.mybus.NewHomePageActivity',
+      ],
       rules: [
         {
           name: '点击右上角x关闭图标',
           matches:
-            '[id="android:id/content"] >3 FrameLayout[childCount=6][index=0] > FrameLayout[childCount=1][index=1] > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/import/12790762',
+            'FrameLayout[childCount=2] > FrameLayout[childCount>4] > FrameLayout[index=1][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12790762',
+            'https://i.gkd.li/import/14219270',
+          ],
         },
       ],
     },
