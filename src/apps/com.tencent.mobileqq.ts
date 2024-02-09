@@ -580,5 +580,42 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 27,
+      name: '功能类-自动抢红包',
+      desc: '自己发的红包、专属红包、口令红包、私聊红包不抢',
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+      ],
+      rules: [
+        {
+          key: 0,
+          matches:
+            'TextView[text*="红包"] - @ViewGroup[childCount=5] > TextView[text!="已领取"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7a933a7f-dc5a-4eb7-8a6f-fe3cc4e8fb5e',
+          snapshotUrls: 'https://i.gkd.li/import/14221309',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches:
+            '[id="android:id/content"] >4 ViewGroup[index=1] > ImageView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/61006833-9806-45b2-b3a1-55b9b248958f',
+          snapshotUrls: 'https://i.gkd.li/import/14221242',
+        },
+        {
+          preKeys: [0, 1],
+          key: 2,
+          quickFind: true,
+          matches: '@[desc="返回"] + [text="红包记录"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b90e6a69-ac57-41a5-bd2c-c500b92a58ba',
+          snapshotUrls: 'https://i.gkd.li/import/14221279',
+        },
+      ],
+    },
   ],
 });
