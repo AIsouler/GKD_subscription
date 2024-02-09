@@ -62,12 +62,15 @@ export default defineAppConfig({
         },
         {
           key: 3,
-          name: '稀有龙鹅卡掉落',
+          name: '稀有龙鹅卡掉落/瓜分现金',
           matches:
             'RelativeLayout[childCount=2] > ImageView + RelativeLayout[childCount=2] > ImageView',
           exampleUrls:
             'https://m.gkd.li/57941037/3922e10b-ed7e-41c0-955c-88189876548d',
-          snapshotUrls: 'https://i.gkd.li/import/14155603',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14155603',
+            'https://i.gkd.li/import/14217033',
+          ],
         },
       ],
     },
