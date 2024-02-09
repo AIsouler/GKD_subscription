@@ -69,22 +69,27 @@ export default defineAppConfig({
       name: '全屏广告-弹窗广告',
       desc: '点击x关闭广告提示',
       quickFind: true,
+      activityIds: [
+        'com.baidu.youavideo.home.view.HomeActivity',
+        'com.baidu.youavideo.preview.ui.hometimeline.TimelinePreviewActivity',
+        'com.baidu.youavideo.preview.ui.search.SearchPreviewActivity',
+      ],
       rules: [
         {
           key: 0,
-          activityIds: 'com.baidu.youavideo.home.view.HomeActivity',
           matches:
             '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"] ',
           snapshotUrls: ['https://i.gkd.li/import/13048700'],
         },
         {
           key: 1,
-          activityIds:
-            'com.baidu.youavideo.preview.ui.hometimeline.TimelinePreviewActivity',
           matches: '[id="com.baidu.youavideo:id/iv_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/3aa0e107-e31f-4e5a-8969-1fcd8310281d',
-          snapshotUrls: 'https://i.gkd.li/import/14133595',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14133595',
+            'https://i.gkd.li/import/14217352',
+          ],
         },
       ],
     },
