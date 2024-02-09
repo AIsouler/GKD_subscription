@@ -128,12 +128,11 @@ export default defineAppConfig({
       key: 14,
       name: '局部广告-信息流广告',
       desc: '点击关闭',
-      activityIds: [
-        'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
-      ],
       rules: [
         {
           key: 0,
+          activityIds:
+            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
             '[text*="广告"] +(2,3) ImageView[clickable=true][visibleToUser=true]',
           exampleUrls:
@@ -146,11 +145,20 @@ export default defineAppConfig({
         {
           key: 1,
           quickFind: true,
+          activityIds:
+            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] + * > [text*="广告"]',
           exampleUrls:
             'https://m.gkd.li/45487685/c7d89c48-91d1-4658-b22e-d2626117be8b',
           snapshotUrls: 'https://i.gkd.li/import/14206988',
+        },
+        {
+          key: 2,
+          activityIds:
+            'com.zhihu.android.mix.activity.ContentMixProfileActivity',
+          matches: '[text*="广告"] +2 [text="×"]',
+          snapshotUrls: 'https://i.gkd.li/import/14220104',
         },
       ],
     },
