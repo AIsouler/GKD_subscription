@@ -32,6 +32,15 @@ export default defineAppConfig({
             'https://i.gkd.li/import/14138323',
           ],
         },
+        {
+          key: 2,
+          quickFind: true,
+          activityIds: 'com.android.packageinstaller.DeleteStagedFileOnResult',
+          matches: '[vid="confirm_bottom_button_layout"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1decf3eb-ef21-4e67-9fd9-ce8727a9b9b5',
+          snapshotUrls: 'https://i.gkd.li/import/14228348',
+        },
       ],
     },
   ],
