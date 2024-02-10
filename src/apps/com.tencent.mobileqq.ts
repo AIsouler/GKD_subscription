@@ -607,7 +607,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/14221242',
         },
         {
-          preKeys: [0, 1],
+          preKeys: 1,
           key: 2,
           quickFind: true,
           matches: '@[desc="返回"] + [text="红包记录"]',
