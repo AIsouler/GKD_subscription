@@ -617,5 +617,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 28,
+      name: '全屏广告-账号信息页面-新人SVIP领取弹窗',
+      activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
+      rules: '[childCount=3] > [desc*="活动"] + [desc^="关闭"][clickable=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/14217758',
+        'https://i.gkd.li/import/14217783',
+      ],
+    },
   ],
 });
