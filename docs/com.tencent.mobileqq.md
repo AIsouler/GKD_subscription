@@ -1,6 +1,6 @@
 # QQ
 
-存在 25 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 27 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -24,6 +24,7 @@
 - [快照-4](https://i.gkd.li/import/13426912)
 - [快照-5](https://i.gkd.li/import/13476400)
 - [快照-6](https://i.gkd.li/import/14155603)
+- [快照-7](https://i.gkd.li/import/14217033)
 
 ## 分段广告-好友动态-广告卡片
 
@@ -216,3 +217,22 @@
 - [示例-0](https://m.gkd.li/57941037/6efc2dfd-79f3-43b5-bf20-f59a88295ddb)
 
 - [快照-0](https://i.gkd.li/import/14188983)
+
+## 功能类-自动抢红包
+
+默认禁用 - 自己发的红包、专属红包、口令红包、私聊红包不抢
+
+- [示例-0](https://m.gkd.li/57941037/7a933a7f-dc5a-4eb7-8a6f-fe3cc4e8fb5e)
+- [示例-1](https://m.gkd.li/57941037/61006833-9806-45b2-b3a1-55b9b248958f)
+- [示例-2](https://m.gkd.li/57941037/b90e6a69-ac57-41a5-bd2c-c500b92a58ba)
+
+- [快照-0](https://i.gkd.li/import/14221309)
+- [快照-1](https://i.gkd.li/import/14221242)
+- [快照-2](https://i.gkd.li/import/14221279)
+
+## 全屏广告-账号信息页面-新人SVIP领取弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14217758)
+- [快照-1](https://i.gkd.li/import/14217783)

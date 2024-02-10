@@ -59,6 +59,7 @@
 - [快照-0](https://i.gkd.li/import/14178980)
 - [快照-1](https://i.gkd.li/import/14206949)
 - [快照-2](https://i.gkd.li/import/14206988)
+- [快照-3](https://i.gkd.li/import/14220104)
 
 ## 功能类-自动展开回答
 
