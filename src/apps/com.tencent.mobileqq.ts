@@ -592,7 +592,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            'TextView[text*="红包"] - @ViewGroup[childCount=5] > TextView[text!="已领取"]',
+            'ImageView <<2 FrameLayout +2 * >3 TextView[text*="红包"] - @ViewGroup[childCount=5] > TextView[text!="已领取"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7a933a7f-dc5a-4eb7-8a6f-fe3cc4e8fb5e',
           snapshotUrls: 'https://i.gkd.li/import/14221309',
@@ -600,8 +600,7 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 1,
-          matches:
-            '[id="android:id/content"] >4 ViewGroup[index=1] > ImageView',
+          matches: '@[desc="拆红包"] - RelativeLayout > [text!=null]',
           exampleUrls:
             'https://m.gkd.li/57941037/61006833-9806-45b2-b3a1-55b9b248958f',
           snapshotUrls: 'https://i.gkd.li/import/14221242',
