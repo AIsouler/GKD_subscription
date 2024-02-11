@@ -62,26 +62,31 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 12,
-      name: '功能类-你可能感兴趣的人',
+      name: '功能类-推荐关注',
       desc: '自动点击"关闭/隐藏"',
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
         {
           key: 0,
+          name: '消息页面-你可能感兴趣的人',
           matches: '[id="com.smile.gifmaker:id/close_pymk"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12708620',
-            'https://i.gkd.li/import/12708707',
-          ],
+          snapshotUrls: 'https://i.gkd.li/import/12708707',
         },
         {
           key: 1,
+          name: '我的页面-你可能感兴趣的人',
           quickFind: true,
           matches:
             'ViewGroup[childCount=3] > [text="隐藏"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/14001536',
+        },
+        {
+          key: 2,
+          name: '朋友推荐弹窗',
+          quickFind: true,
+          matches: '[text="朋友推荐"] + [vid="close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/14232217',
         },
       ],
     },
