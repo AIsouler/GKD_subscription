@@ -18,15 +18,34 @@ export default defineAppConfig({
       ],
     },
     {
-      name: '局部广告-推荐浏览广告',
-      desc: '关闭推荐浏览页面广告',
+      name: '局部广告-信息流广告',
       key: 2,
-      activityIds: ['com.duitang.main.business.main.NAMainActivity'],
-      quickFind: true,
       rules: [
         {
-          matches: '[id="com.duitang.main:id/adOptionEntry"]',
-          snapshotUrls: 'https://i.gkd.li/import/13202725',
+          key: 0,
+          activityIds: [
+            'com.duitang.main.business.',
+            'com.duitang.main.activity.',
+          ],
+          quickFind: true,
+          matches: '[vid="adOptionEntry"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14232228',
+            'https://i.gkd.li/import/14232332',
+            'https://i.gkd.li/import/14232347',
+            'https://i.gkd.li/import/14232348',
+            'https://i.gkd.li/import/14232368',
+          ],
+        },
+        {
+          key: 1,
+          activityIds: 'com.duitang.main.business.',
+          quickFind: true,
+          matches: '[vid="adClose"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14232218',
+            'https://i.gkd.li/import/14232352',
+          ],
         },
       ],
     },
