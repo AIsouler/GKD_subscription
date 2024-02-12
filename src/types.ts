@@ -1,4 +1,21 @@
+/**
+ * 一个或者多个值类型
+ * @example
+ * const n1: IArray<number> = 1; // ✅
+ * const n2: IArray<number> = [1]; // ✅
+ * const s1: IArray<string> = 'hello'; // ✅
+ * const a2: IArray<string> = ['hello']; // ✅
+ */
 export type IArray<T> = T | T[];
+
+/**
+ * 此类型表示一个整数
+ *
+ * @example
+ * 114514 // ✅
+ * 2.5 // ❌
+ */
+export type Integer = number;
 
 type RawCommonProps = {
   /**
@@ -8,7 +25,7 @@ type RawCommonProps = {
    *
    * @default 1000
    */
-  actionCd?: number;
+  actionCd?: Integer;
 
   /**
    * 单位: 毫秒
@@ -16,7 +33,7 @@ type RawCommonProps = {
    * 延迟执行: 查询到节点->等待一段时间->再次查询到节点则执行对应 action
    *
    */
-  actionDelay?: number;
+  actionDelay?: Integer;
 
   /**
    *
@@ -58,7 +75,7 @@ type RawCommonProps = {
    * 规则准备匹配/或被唤醒时, 等待一段时间, 使此规则参与查询屏幕节点
    *
    */
-  matchDelay?: number;
+  matchDelay?: Integer;
 
   /**
    * 单位: 毫秒
@@ -68,7 +85,7 @@ type RawCommonProps = {
    * 例如某些应用的 开屏广告 的 activityId 容易误触/太广泛, 而开屏广告几乎只在应用切出来时出现, 设置一个有限匹配时间能避免后续的误触
    *
    */
-  matchTime?: number;
+  matchTime?: Integer;
 
   /**
    * 最大执行次数
@@ -80,7 +97,7 @@ type RawCommonProps = {
    * 当规则准备匹配/或被唤醒时, 将重新计算次数
    *
    */
-  actionMaximum?: number;
+  actionMaximum?: Integer;
 
   /**
    * 当规则因为 matchTime/actionMaximum 而休眠时, 如何唤醒此规则
@@ -106,7 +123,7 @@ type RawCommonProps = {
    *
    * 如果你对这个 key 的 rule 设置 actionCd=3000, 那么当这个 rule 和 本 rule 触发任意一个时, 在 3000毫秒 内两个 rule 都将进入 cd
    */
-  actionCdKey?: number;
+  actionCdKey?: Integer;
 
   /**
    * 与这个 key 的 rule 共享次数
@@ -115,7 +132,7 @@ type RawCommonProps = {
    *
    * 如果你对这个 key 的 rule 设置 actionMaximum=1, 那么当这个 rule 和 本 rule 触发任意一个时, 两个 rule 都将进入休眠
    */
-  actionMaximumKey?: number;
+  actionMaximumKey?: Integer;
 
   /**
    * 规则参与匹配的顺序, 数字越小越先匹配
@@ -127,7 +144,7 @@ type RawCommonProps = {
    * @default 0
    *
    */
-  order?: number;
+  order?: Integer;
 
   /**
    * 当前 规则/规则组 的快照链接, 增强订阅可维护性
@@ -150,8 +167,11 @@ type RawRuleProps = RawCommonProps & {
    *
    * 设置后不可更改, 否则造成点击记录错乱
    */
-  key?: number;
+  key?: Integer;
 
+  /**
+   * 规则组名称
+   */
   name?: string;
 
   /**
@@ -164,7 +184,7 @@ type RawRuleProps = RawCommonProps & {
    * 否则后面的规则不会触发, 也就是要求规则按顺序执行, 这是为了防止规则匹配范围太过广泛而误触
    *
    */
-  preKeys?: IArray<number>;
+  preKeys?: IArray<Integer>;
 
   /**
    * @example
@@ -231,9 +251,16 @@ type RawGroupProps = RawCommonProps & {
    *
    * key 没有顺序大小之分, 可以是任意数字
    */
-  key: number;
+  key: Integer;
 
+  /**
+   * 规则组名称
+   */
   name: string;
+
+  /**
+   * 规则组描述
+   */
   desc?: string;
 
   /**
@@ -253,7 +280,7 @@ type RawGroupProps = RawCommonProps & {
    * 如果存在相同 key 的 rule, 优先使用本组的 rule, 其次按 scopeKeys 的顺序查找其它组的 rule
    *
    */
-  scopeKeys?: IArray<number>;
+  scopeKeys?: IArray<Integer>;
 
   // rules: RawRuleProps[];
 };
@@ -272,6 +299,34 @@ type RawAppRuleProps = {
    * 优先级高于 activityIds
    */
   excludeActivityIds?: IArray<string>;
+
+  /**
+   * 如果应用版本名称包含在此列表中, 则匹配
+   *
+   * @version 1.7.0
+   */
+  versionNames?: IArray<string>;
+
+  /**
+   * 如果应用版本名称包含在此列表中, 则排除匹配, 优先级高于 versionNames
+   *
+   * @version 1.7.0
+   */
+  excludeVersionNames?: IArray<string>;
+
+  /**
+   * 如果应用版本代码包含在此列表中, 则匹配
+   *
+   * @version 1.7.0
+   */
+  versionCodes?: IArray<Integer>;
+
+  /**
+   * 如果应用版本代码包含在此列表中, 则排除匹配, 优先级高于 versionCodes
+   *
+   * @version 1.7.0
+   */
+  excludeVersionCodes?: IArray<Integer>;
 };
 
 // <--全局规则相关--
@@ -331,7 +386,7 @@ export type RawCategory = {
    *
    * 也是客户端禁用/启用此分类组的依据
    */
-  key: number;
+  key: Integer;
 
   /**
    * 分类名称
@@ -364,6 +419,9 @@ export type RawAppGroup = RawGroupProps &
   };
 
 export type RawApp = {
+  /**
+   * 应用包名
+   */
   id: string;
 
   /**
@@ -371,6 +429,9 @@ export type RawApp = {
    */
   name?: string;
 
+  /**
+   * 此应用的规则组列表
+   */
   groups: RawAppGroup[];
 
   /**
@@ -390,7 +451,7 @@ export type RawSubscription = {
    *
    * 负数订阅由 APP 内部使用, 如本地订阅是 -2, 内存订阅是 -1
    */
-  id: number;
+  id: Integer;
 
   /**
    * 订阅的名称
@@ -402,8 +463,11 @@ export type RawSubscription = {
    *
    * 只有当新订阅的 version 大于本地旧订阅的 version 才执行更新替换本地
    */
-  version: number;
+  version: Integer;
 
+  /**
+   * 作者名称
+   */
   author?: string;
 
   /**
@@ -427,8 +491,19 @@ export type RawSubscription = {
    */
   checkUpdateUrl?: string;
 
+  /**
+   * 此订阅的全局规则组列表
+   */
   globalGroups?: RawGlobalGroup[];
+
+  /**
+   * 此订阅的应用规则分类列表
+   */
   categories?: RawCategory[];
+
+  /**
+   * 此订阅的应用列表
+   */
   apps?: RawApp[];
 };
 
