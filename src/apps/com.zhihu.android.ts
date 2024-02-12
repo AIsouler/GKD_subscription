@@ -134,13 +134,14 @@ export default defineAppConfig({
           activityIds:
             'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
-            '[text*="广告" || text="创作者小助手"] +(2,3) ImageView[clickable=true][visibleToUser=true]',
+            'ViewGroup > TextView[text!=""][index=1] +(2,3) ImageView[clickable=true][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/0443d5cb-aa24-4447-afd7-58c5a09af835',
           snapshotUrls: [
             'https://i.gkd.li/import/14178980',
             'https://i.gkd.li/import/14206949',
             'https://i.gkd.li/import/14232195', // text="创作者小助手"
+            'https://i.gkd.li/import/14235024', // text="知乎游戏"
           ],
         },
         {
