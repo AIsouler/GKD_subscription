@@ -50,15 +50,21 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '局部广告-卡片式广告',
+      name: '分段广告-推荐页卡片式广告',
       rules: [
         {
           key: 0,
-          name: '推荐页卡片广告',
           activityIds: 'com.dianping.v1.NovaMainActivity',
           matches:
             '[desc="reculike_delete"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13759369',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          activityIds: 'com.dianping.v1.NovaMainActivity',
+          matches: '@[clickable=true] > [text="不看该内容"]',
+          snapshotUrls: 'https://i.gkd.li/import/14238381',
         },
       ],
     },
