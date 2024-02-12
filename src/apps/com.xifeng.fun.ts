@@ -26,9 +26,10 @@ export default defineAppConfig({
       key: 2,
       name: '通知提示-公告弹窗',
       desc: '点击"我知道了"',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.xifeng.fun.MainActivity',
           matches: '[desc="我知道了"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/971c3631-a9cc-4aec-992e-6cf1166eea1b',
