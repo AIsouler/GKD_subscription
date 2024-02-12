@@ -95,5 +95,13 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      name: '功能类-看视频免费听弹窗',
+      desc: '点击【立得全天畅听】',
+      activityIds: 'com.luna.biz.main.main.MainActivity',
+      rules: '[text="立得全天畅听"][clickable=true]',
+      snapshotUrls: 'https://i.gkd.li/import/14237527',
+    },
   ],
 });
