@@ -631,5 +631,20 @@ export default defineAppConfig({
         'https://i.gkd.li/import/14217783',
       ],
     },
+    {
+      key: 29,
+      name: '功能类-申请入群后自动点击右上角关闭',
+      actionMaximum: 1,
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
+          matches: 'RelativeLayout[childCount=2] > [text="关闭"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030',
+          snapshotUrls: 'https://i.gkd.li/import/14235163',
+        },
+      ],
+    },
   ],
 });
