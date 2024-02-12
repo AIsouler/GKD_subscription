@@ -23,10 +23,10 @@
 - [快照-0](https://i.gkd.li/import/12708671)
 - [快照-1](https://i.gkd.li/import/12708676)
 
-## 功能类-你可能感兴趣的人
+## 功能类-推荐关注
 
 默认禁用 - 自动点击"关闭/隐藏"
 
-- [快照-0](https://i.gkd.li/import/12708620)
-- [快照-1](https://i.gkd.li/import/12708707)
-- [快照-2](https://i.gkd.li/import/14001536)
+- [快照-0](https://i.gkd.li/import/12708707)
+- [快照-1](https://i.gkd.li/import/14001536)
+- [快照-2](https://i.gkd.li/import/14232217)

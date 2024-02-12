@@ -1,6 +1,6 @@
 # QQ
 
-存在 27 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 28 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -164,7 +164,8 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13695087)
-- [快照-1](https://i.gkd.li/import/13699701)
+- [快照-1](https://i.gkd.li/import/14231489)
+- [快照-2](https://i.gkd.li/import/13699701)
 
 ## 全屏广告-首页广告弹窗
 
@@ -200,7 +201,8 @@
 
 - [快照-0](https://i.gkd.li/import/14178667)
 - [快照-1](https://i.gkd.li/import/14193973)
-- [快照-2](https://i.gkd.li/import/14183188)
+- [快照-2](https://i.gkd.li/import/14235146)
+- [快照-3](https://i.gkd.li/import/14183188)
 
 ## 全屏广告-个人主页广告
 
@@ -236,3 +238,11 @@
 
 - [快照-0](https://i.gkd.li/import/14217758)
 - [快照-1](https://i.gkd.li/import/14217783)
+
+## 功能类-申请入群后自动点击右上角关闭
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030)
+
+- [快照-0](https://i.gkd.li/import/14235163)
