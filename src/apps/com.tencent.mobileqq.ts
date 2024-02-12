@@ -431,25 +431,29 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 20,
       name: '分段广告-钱包页卡片广告',
-      quickFind: true,
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
-      ],
       rules: [
         {
           key: 0,
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          quickFind: true,
           matches: 'ViewGroup[childCount=6] > [text="广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/13695087'],
+          snapshotUrls: 'https://i.gkd.li/import/13695087',
         },
         {
-          preKeys: 0,
           key: 1,
+          activityIds: 'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+          matches: '@View[visibleToUser=true] > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/14231489',
+        },
+        {
+          preKeys: [0, 1],
+          key: 2,
+          activityIds: 'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+          quickFind: true,
           matches: '@LinearLayout > [text="关闭此条广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/13699701'],
+          snapshotUrls: 'https://i.gkd.li/import/13699701',
         },
       ],
     },
