@@ -44,7 +44,7 @@ export default defineAppConfig({
           activityIds:
             'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
           matches:
-            '@ImageView[visibleToUser=true] < FrameLayout <2 FrameLayout[childCount=2] <<n [id="com.eastmoney.android.fund:id/container"]',
+            '@ImageView[visibleToUser=true] < FrameLayout - ImageView < FrameLayout <<4 [vid="container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/21743bbb-010a-410c-8ce1-57710d37722d',
           snapshotUrls: 'https://i.gkd.li/import/14149452',
