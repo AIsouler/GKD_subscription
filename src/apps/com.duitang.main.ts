@@ -57,11 +57,10 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.miui.home.launcher.Launcher'],
       rules: [
         {
-          matches: '[id="com.duitang.main:id/scoreDuitangCancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/13203217',
+          matches: '[vid="scoreDuitangCancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/14273094',
         },
       ],
     },
