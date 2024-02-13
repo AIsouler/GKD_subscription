@@ -170,8 +170,11 @@ export default defineAppConfig({
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
           matches:
-            'ImageView < @ViewGroup -3 ViewGroup [text="您的黑胶VIP已过期"]',
-          snapshotUrls: 'https://i.gkd.li/import/13230605',
+            '@ViewGroup[clickable=true][childCount=1] -(3,4) ViewGroup[childCount=19] > [text="黑胶VIP连续包季"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13230605',
+            'https://i.gkd.li/import/14268181',
+          ],
         },
         {
           key: 4,
