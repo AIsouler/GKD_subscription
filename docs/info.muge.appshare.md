@@ -4,14 +4,15 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/12683168)
-- [快照-1](https://i.gkd.li/import/12683211)
-- [快照-2](https://i.gkd.li/import/12748893)
-- [快照-3](https://i.gkd.li/import/12683145)
-- [快照-4](https://i.gkd.li/import/12683173)
-- [快照-5](https://i.gkd.li/import/13702708)
-- [快照-6](https://i.gkd.li/import/13842826)
-- [快照-7](https://i.gkd.li/import/13939089)
+- [快照-0](https://i.gkd.li/import/12683145)
+- [快照-1](https://i.gkd.li/import/12683173)
+- [快照-2](https://i.gkd.li/import/13702708)
+- [快照-3](https://i.gkd.li/import/13842826)
+- [快照-4](https://i.gkd.li/import/13939089)
+- [快照-5](https://i.gkd.li/import/14260635)
+- [快照-6](https://i.gkd.li/import/12683168)
+- [快照-7](https://i.gkd.li/import/12683211)
+- [快照-8](https://i.gkd.li/import/12748893)
 
 ## 局部广告-软件详情页卡片广告
 

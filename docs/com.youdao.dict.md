@@ -33,6 +33,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13540941)
+- [快照-1](https://i.gkd.li/import/14256301)
 
 ## 更新提示
 
