@@ -45,5 +45,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-搜索结果页底部必应推荐卡片',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.android.browser.BrowserActivity',
+          matches: '[id="bnp_close_icon"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b0d601cf-6cd1-411c-8555-bd4a8ee3335c',
+          snapshotUrls: 'https://i.gkd.li/import/14256707',
+        },
+      ],
+    },
   ],
 });
