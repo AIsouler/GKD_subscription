@@ -97,9 +97,11 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.youdao.dict.activity.MainActivity',
       rules: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
-      snapshotUrls: 'https://i.gkd.li/import/13540941',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13540941',
+        'https://i.gkd.li/import/14256301',
+      ],
     },
     {
       key: 6,
