@@ -55,7 +55,10 @@ export default defineAppConfig({
           matches: '[id="bnp_close_icon"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/b0d601cf-6cd1-411c-8555-bd4a8ee3335c',
-          snapshotUrls: 'https://i.gkd.li/import/14256707',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14256707',
+            'https://i.gkd.li/import/14256761', // visibleToUser=true防止误触此界面
+          ],
         },
       ],
     },
