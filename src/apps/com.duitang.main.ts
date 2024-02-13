@@ -77,5 +77,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '通知提示-请求开启通知弹窗',
+      desc: '点击[x]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '@[vid="dialogNegative"] +2 [text="打开通知"]',
+      snapshotUrls: 'https://i.gkd.li/import/14273121',
+    },
   ],
 });
