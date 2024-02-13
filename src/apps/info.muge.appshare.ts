@@ -10,8 +10,20 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules: [
+        {
+          key: 0,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12683145',
+            'https://i.gkd.li/import/12683173',
+            'https://i.gkd.li/import/13702708',
+            'https://i.gkd.li/import/13842826',
+            'https://i.gkd.li/import/13939089',
+            'https://i.gkd.li/import/14260635',
+          ],
+        },
         {
           key: 1,
           matches: '[text*="跳过"][text.length<=10]',
@@ -20,27 +32,6 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12683211',
             'https://i.gkd.li/import/12748893',
           ],
-        },
-        {
-          key: 0,
-          matches: '[id$="tt_splash_skip_btn"] <<n [vid="rlAdView"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/12683145',
-            'https://i.gkd.li/import/12683173',
-            'https://i.gkd.li/import/13702708',
-          ],
-        },
-        {
-          key: 2,
-          matches:
-            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid="rlAdView"]',
-          snapshotUrls: 'https://i.gkd.li/import/13842826',
-        },
-        {
-          key: 3,
-          name: '穿山甲SDK',
-          matches: '@View[clickable=true] <<n [vid="tp_splash_container_id"]',
-          snapshotUrls: 'https://i.gkd.li/import/13939089',
         },
       ],
     },
