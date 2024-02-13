@@ -33,8 +33,11 @@ export default defineAppConfig({
           name: '腾讯广告-搜索页面',
           activityIds: 'com.magicalstory.AppStore.search.searchActivity',
           matches:
-            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[visibleToUser=true] < FrameLayout +2 *[visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13185746',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView < FrameLayout +2 *[visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13185746',
+            'https://i.gkd.li/import/13695554',
+          ],
         },
         {
           key: 2,
