@@ -52,8 +52,9 @@
 - [快照-3](https://i.gkd.li/import/13228955)
 - [快照-4](https://i.gkd.li/import/13230603)
 - [快照-5](https://i.gkd.li/import/13230605)
-- [快照-6](https://i.gkd.li/import/13391498)
-- [快照-7](https://i.gkd.li/import/14045917)
+- [快照-6](https://i.gkd.li/import/14268181)
+- [快照-7](https://i.gkd.li/import/13391498)
+- [快照-8](https://i.gkd.li/import/14045917)
 
 ## 更新提示
 

@@ -103,7 +103,7 @@
 | U净                    | [com.midea.vm.washer](/docs/com.midea.vm.washer.md)                                                                                                               | 1      |
 | VIVO 电子书            | [com.chaozh.iReader](/docs/com.chaozh.iReader.md)                                                                                                                 | 2      |
 | WiFi万能钥匙           | [com.wifitutu](/docs/com.wifitutu.md)                                                                                                                             | 1      |
-| WiFi万能钥匙           | [com.snda.wifilocating](/docs/com.snda.wifilocating.md)                                                                                                           | 2      |
+| WiFi万能钥匙           | [com.snda.wifilocating](/docs/com.snda.wifilocating.md)                                                                                                           | 1      |
 | WiFi智能钥匙           | [com.bjsk.intelligent](/docs/com.bjsk.intelligent.md)                                                                                                             | 1      |
 | X(推特)                | [com.twitter.android](/docs/com.twitter.android.md)                                                                                                               | 7      |
 | 爱企查                 | [com.baidu.xin.aiqicha](/docs/com.baidu.xin.aiqicha.md)                                                                                                           | 2      |
@@ -451,6 +451,7 @@
 | 天空影视               | [com.miaoying.appmy](/docs/com.miaoying.appmy.md)                                                                                                                 | 1      |
 | 天猫精灵               | [com.alibaba.ailabs.tg](/docs/com.alibaba.ailabs.tg.md)                                                                                                           | 1      |
 | 天气                   | [com.hihonor.android.totemweather](/docs/com.hihonor.android.totemweather.md)                                                                                     | 1      |
+| 天气                   | [com.coloros.weather2](/docs/com.coloros.weather2.md)                                                                                                             | 1      |
 | 天天基金               | [com.eastmoney.android.fund](/docs/com.eastmoney.android.fund.md)                                                                                                 | 5      |
 | 天天视频               | [com.myapp.app.xaoorti](/docs/com.myapp.app.xaoorti.md)                                                                                                           | 1      |
 | 天天跳绳               | [com.gkid.crazyrope](/docs/com.gkid.crazyrope.md)                                                                                                                 | 2      |
@@ -520,7 +521,7 @@
 | 小黑盒                 | [com.max.xiaoheihe](/docs/com.max.xiaoheihe.md)                                                                                                                   | 1      |
 | 小红书                 | [com.xingin.xhs](/docs/com.xingin.xhs.md)                                                                                                                         | 3      |
 | 小卖部逆袭记           | [com.dz.xmbnxj](/docs/com.dz.xmbnxj.md)                                                                                                                           | 1      |
-| 小米浏览器             | [com.android.browser](/docs/com.android.browser.md)                                                                                                               | 2      |
+| 小米浏览器             | [com.android.browser](/docs/com.android.browser.md)                                                                                                               | 3      |
 | 小米商城               | [com.xiaomi.shop](/docs/com.xiaomi.shop.md)                                                                                                                       | 1      |
 | 小米社区               | [com.xiaomi.vipaccount](/docs/com.xiaomi.vipaccount.md)                                                                                                           | 4      |
 | 小米手机管家           | [com.miui.securitycenter](/docs/com.miui.securitycenter.md)                                                                                                       | 3      |
