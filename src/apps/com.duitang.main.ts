@@ -57,11 +57,10 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.miui.home.launcher.Launcher'],
       rules: [
         {
-          matches: '[id="com.duitang.main:id/scoreDuitangCancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/13203217',
+          matches: '[vid="scoreDuitangCancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/14273094',
         },
       ],
     },
@@ -77,6 +76,16 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13997011',
         },
       ],
+    },
+    {
+      key: 5,
+      name: '通知提示-请求开启通知弹窗',
+      desc: '点击[x]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '@[vid="dialogNegative"] +2 [text="打开通知"]',
+      snapshotUrls: 'https://i.gkd.li/import/14273121',
     },
   ],
 });
