@@ -63,8 +63,11 @@ export default defineAppConfig({
           preKeys: 0,
           key: 1,
           activityIds: 'com.dianping.v1.NovaMainActivity',
-          matches: '@[clickable=true] > [text="不看该内容"]',
-          snapshotUrls: 'https://i.gkd.li/import/14238381',
+          matches: '@[clickable=true] > [text="重复出现"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14238381',
+            'https://i.gkd.li/import/14269115',
+          ],
         },
       ],
     },
