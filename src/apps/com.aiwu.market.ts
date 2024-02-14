@@ -14,7 +14,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.aiwu.market.ui.activity.NewHomeActivity',
           matches: '[vid="hintTextView2"] + [vid="confirmView"]',
           snapshotUrls: 'https://i.gkd.li/import/14032203',
         },

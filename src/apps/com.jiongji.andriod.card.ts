@@ -19,7 +19,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.baicizhan.main.activity.MainTabActivity',
       rules: '[text="抢先体验"] - [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/13488652',
     },

@@ -12,10 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.wacai365.HomeActivity',
-        'com.wacai.android.wind.splash.WindDialogActivity',
-      ],
       rules:
         '@ImageView[id="com.wacai365:id/tv_cancel"] - TextView[text^="新版本"]',
       snapshotUrls: [

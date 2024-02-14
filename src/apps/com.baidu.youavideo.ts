@@ -12,7 +12,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       rules: [
         {
           matches:
@@ -42,7 +41,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/tv_next_time"]',
@@ -100,7 +98,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.baidu.youavideo.app.ui.HomeActivity',
       rules:
         '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13413819',

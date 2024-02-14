@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.fenbi.android.module.home.HomeActivity',
       rules: [
         {
           matches: '[id="com.fenbi.android.servant:id/close"]',

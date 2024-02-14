@@ -13,7 +13,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.lc.mine.view.activity.AboutActivity',
       rules: [
         {
           matches: '[id="com.mm.android.lchg:id/btn_cancel"][text*="稍后再说"]',

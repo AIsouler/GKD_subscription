@@ -7,10 +7,8 @@ export default defineAppConfig({
     {
       key: 0,
       name: '青少年模式',
-      activityIds: [
-        'com.hunantv.imgo.activity.MainActivity',
-        'miuix.appcompat.app.m',
-      ],
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules:
         '[id="com.hunantv.imgo.activity:id/llSetAgeMode"] + [id="com.hunantv.imgo.activity:id/btnIknow"]',
       snapshotUrls: 'https://i.gkd.li/import/12832447',

@@ -33,7 +33,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.wm.dmall.MainActivity',
       rules: {
         matches: [
           '[id="com.wm.dmall:id/update_confirm_btn"]',

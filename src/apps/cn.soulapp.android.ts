@@ -55,7 +55,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['cn.soulapp.android.component.chat.ConversationActivity'],
       rules: [
         {
           matches:
@@ -71,7 +70,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['cn.soulapp.android.component.startup.main.MainActivity'],
       rules: [
         {
           matches:

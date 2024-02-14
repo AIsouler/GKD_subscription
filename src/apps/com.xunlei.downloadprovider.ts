@@ -259,7 +259,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xunlei.upgrade.XUpgradeActivity',
       rules: '[id="com.xunlei.downloadprovider:id/x_upgrade_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/13228920',
     },

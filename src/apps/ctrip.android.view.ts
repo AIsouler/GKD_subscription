@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'ctrip.android.publicproduct.home.view.CtripHomeActivity',
       rules: '[text*="用户已升级"] < * + [desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/import/13218347',
     },

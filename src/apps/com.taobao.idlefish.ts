@@ -10,8 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
       rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',
       snapshotUrls: 'https://i.gkd.li/import/13538351',
     },
@@ -31,7 +29,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.taobao.idlefish.maincontainer.activity.MainActivity',
       rules: '[text="立即升级"] -2 [text="暂不升级"]',
       snapshotUrls: 'https://i.gkd.li/import/13832272',
     },

@@ -24,9 +24,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.xiaomi.youpin.globalpopwindow.popwindow.PopWindowActivity',
-      ],
       rules: [
         {
           matches: '[id="com.xiaomi.youpin:id/ypd_alert_close_image"]',

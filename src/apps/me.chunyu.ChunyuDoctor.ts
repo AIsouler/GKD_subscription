@@ -10,10 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'me.chunyu.ChunyuDoctor.Activities.WelcomeActivity',
-        'me.chunyu.ChunyuDoctor.Activities.MainActivity',
-      ],
       rules: [
         {
           matches:

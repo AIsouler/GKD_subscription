@@ -9,10 +9,6 @@ export default defineAppConfig({
       key: 1,
       name: '青少年模式',
       desc: '关闭青少年模式提醒弹窗',
-      activityIds: [
-        'com.douyu.module.young.view.YoungModeGuideDialog',
-        'com.douyu.module.home.pages.main.MainActivity',
-      ],
       snapshotUrls: 'https://i.gkd.li/import/12472598',
       rules: [
         '[text="开启青少年模式"] + [text="我知道了"]', // 1686970236642
@@ -24,10 +20,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.douyu.module.update.view.UpdateDialog',
-        'com.douyu.module.home.pages.main.MainActivity',
-      ],
       rules: '[text="立即升级"] - [text="忽略"][clickable=true]',
     },
     {

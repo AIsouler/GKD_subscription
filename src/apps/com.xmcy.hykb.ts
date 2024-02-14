@@ -11,7 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.xmcy.hykb.app.dialog.UpdateDialog',
       rules:
         '@[id="com.xmcy.hykb:id/iv_inner_button_close"] - RelativeLayout >n [id="com.xmcy.hykb:id/text_update_tip"]',
       snapshotUrls: [

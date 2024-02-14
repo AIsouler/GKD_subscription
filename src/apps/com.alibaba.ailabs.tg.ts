@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.alibaba.ailabs.tg.activity.HomeActivity',
       rules:
         '[id="com.alibaba.ailabs.tg:id/ll_download"] + [id="com.alibaba.ailabs.tg:id/va_dialog_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/13296332',

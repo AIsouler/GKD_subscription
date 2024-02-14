@@ -12,20 +12,14 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.bbk.appstore.upgrade.UpgradeNecessaryActivity',
-        'com.bbk.appstore.ui.AppStoreTabActivity',
-      ],
       rules: [
         {
           key: 0,
-          activityIds: 'com.bbk.appstore.upgrade.UpgradeNecessaryActivity',
           matches: '[id="com.bbk.appstore:id/upgrade_necessary_btn_high_new"]',
           snapshotUrls: 'https://i.gkd.li/import/13198101',
         },
         {
           actionMaximumKey: 0,
-          activityIds: 'com.bbk.appstore.ui.AppStoreTabActivity',
           matches: ['[text*="通知"]', '[text="取消"]'],
           snapshotUrls: [
             'https://i.gkd.li/import/13198234',

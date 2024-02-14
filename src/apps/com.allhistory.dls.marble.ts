@@ -14,8 +14,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
-            'com.pwrd.dls.marble.other.notification.NotificationDialogActivity',
           matches: '[vid="v_open"] + [vid="v_not"]',
           snapshotUrls: 'https://i.gkd.li/import/13997956',
         },

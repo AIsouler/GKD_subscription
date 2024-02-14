@@ -25,7 +25,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.huatu.handheld_huatu.business.main.MainTabActivity',
       rules: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12715719',
     },

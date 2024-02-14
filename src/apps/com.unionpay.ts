@@ -11,7 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
           matches: '@[text="稍候再说"] + [text="立即更新"]',
@@ -92,7 +91,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.unionpay.base.UPDialog'],
       rules: [
         {
           matches:

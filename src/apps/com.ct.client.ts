@@ -59,9 +59,8 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       // quickFind: true, 实机测试使用无法跳过
-      activityIds: ['com.ct.client.activity.MainActivity'],
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/13043522'],
+      snapshotUrls: 'https://i.gkd.li/import/13043522',
     },
     {
       key: 6,

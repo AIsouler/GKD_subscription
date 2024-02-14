@@ -12,7 +12,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.loyea.adnmb.activity.MainActivity',
       rules: 'LinearLayout > Button[text="确定"]',
       snapshotUrls: 'https://i.gkd.li/import/13623450',
     },

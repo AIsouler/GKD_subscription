@@ -39,7 +39,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
-      activityIds: 'com.tencent.weread.WeReadFragmentActivity',
       rules: '[text="设置青少年模式"] - LinearLayout >2 [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13233668',
     },

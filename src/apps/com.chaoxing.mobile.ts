@@ -14,7 +14,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.chaoxing.mobile.main.ui.MainTabActivity',
       rules: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
       snapshotUrls: 'https://i.gkd.li/import/13197374',
     },

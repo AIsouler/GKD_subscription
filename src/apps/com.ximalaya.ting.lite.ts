@@ -49,7 +49,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.ximalaya.ting.android.host.activity.WelComeActivity',
       rules:
         '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',
       snapshotUrls: 'https://i.gkd.li/import/13256505',

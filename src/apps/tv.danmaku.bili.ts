@@ -106,11 +106,6 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       matchDelay: 5000,
-      activityIds: [
-        'com.bilibili.app.preferences.BiliPreferencesActivity',
-        'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
-        'tv.danmaku.bili.MainActivityV2',
-      ],
       rules: [
         {
           key: 1,
@@ -164,10 +159,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'tv.danmaku.bili.MainActivityV2',
-        'com.bilibili.video.story.StoryTransparentActivity',
-      ],
       rules: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13229159',

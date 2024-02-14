@@ -10,8 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules: '[text$="版本更新了"] +(2) RelativeLayout > [text="稍后再说"]',
       snapshotUrls: 'https://i.gkd.li/import/12639884',
     },
@@ -22,8 +20,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules:
         '[text*="开启系统推送"] - ImageView < * < * < FrameLayout + FrameLayout >(3) Button[text="暂不开启"]',
       snapshotUrls: 'https://i.gkd.li/import/12639800',
@@ -35,8 +31,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.netease.newsreader.common.base.activity.SingleFragmentActivity',
       rules: '[text^="打开推送"] +(2) RelativeLayout > ImageView',
       snapshotUrls: 'https://i.gkd.li/import/12639869',
     },

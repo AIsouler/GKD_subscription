@@ -46,9 +46,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.netease.mobimail.module.flutter.CustomFlutterActivity',
-      ],
       rules:
         '[id="com.netease.mail:id/tv_ignore_this_version"][text="暂不更新"]',
       snapshotUrls: 'https://i.gkd.li/import/12664070',

@@ -11,7 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.xiaomi.fitness.baseui.common.CommonBaseActivity',
       rules: '[id="com.mi.health:id/nextView"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/import/13258813',
     },
@@ -48,12 +47,10 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.xiaomi.fitness.main.MainActivity',
           matches: '[text^="发现新版本"] < * + * >n [text="放弃更新"]',
           snapshotUrls: 'https://i.gkd.li/import/13537840',
         },
         {
-          activityIds: 'com.mi.health.home.HomeActivity',
           matches:
             '[text="立即更新"] + [id="com.mi.health:id/tv_negative"][text="取消"]',
           snapshotUrls: 'https://i.gkd.li/import/13626328',

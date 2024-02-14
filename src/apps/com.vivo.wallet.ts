@@ -5,14 +5,13 @@ export default defineAppConfig({
   name: '钱包',
   groups: [
     {
+      enable: false,
       key: 1,
       name: '通知提示-请求通知权限授权弹窗',
-      activityIds: 'com.vivo.wallet.bookkeep.activity.BookKeepMainActivity',
-      enable: false,
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
           matches: '@Button[text*="取消"]',

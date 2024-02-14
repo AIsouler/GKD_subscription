@@ -11,7 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.shizhi.shihuoapp.module.main.ui.main.MainActivity',
       rules: '[text^="通知分类"] +n ImageView[id="com.hupu.shihuo:id/ivClose"]',
       snapshotUrls: 'https://i.gkd.li/import/13704887',
     },
@@ -35,7 +34,6 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.shizhi.shihuoapp.module.main.ui.main.MainActivity',
           matches: '[text="发现新版本"] +2 ViewGroup > [text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/import/14052208',
         },

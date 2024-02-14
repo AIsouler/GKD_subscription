@@ -11,11 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
-      activityIds: [
-        'com.xingin.xhs.index.v2.IndexActivityV2',
-        'com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity',
-        'com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity',
-      ],
       rules: [
         {
           matches: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',

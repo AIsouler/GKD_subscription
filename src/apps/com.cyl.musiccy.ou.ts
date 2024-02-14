@@ -37,7 +37,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.cyl.musiccy.ou.MainActivity'],
       rules: [
         {
           matches: '[desc="我知道了"]',

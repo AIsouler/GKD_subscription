@@ -22,7 +22,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.yek.android.uniqlo.activity.WelcomeActivity',
           matches: '@TextView[text="取消"] + TextView[text="确定"]',
           snapshotUrls: 'https://i.gkd.li/import/13446421',
         },

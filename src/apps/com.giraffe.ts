@@ -14,7 +14,6 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.speed.shadowsocks.ui.main.MainActivity',
           matches: '[id="com.giraffe:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/14000409',
         },

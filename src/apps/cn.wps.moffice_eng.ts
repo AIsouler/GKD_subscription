@@ -56,10 +56,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-        'cn.wps.moffice.main.local.HomeRootActivity',
-      ],
       rules:
         '[id="cn.wps.moffice_eng:id/close_new_func_guide_dialog_imageView"]',
       snapshotUrls: 'https://i.gkd.li/import/12882371',

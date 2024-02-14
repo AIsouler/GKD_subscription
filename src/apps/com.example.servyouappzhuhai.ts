@@ -11,7 +11,7 @@ export default defineAppConfig({
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.example.servyouappzhuhai:id/btn_dialog_negtive"]',

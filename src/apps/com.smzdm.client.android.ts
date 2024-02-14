@@ -19,7 +19,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules:
         '[id="com.smzdm.client.android:id/tv_version"] +2 [id="com.smzdm.client.android:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13198016',
@@ -39,10 +38,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.smzdm.client.android.module.community.module.bask.BaskDetailActivity',
-        'com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity',
-      ],
       rules: 'ImageView[id="com.smzdm.client.android:id/ib_close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13438810', //com.smzdm.client.android.module.community.module.bask.BaskDetailActivity

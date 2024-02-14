@@ -5,11 +5,11 @@ export default defineAppConfig({
   name: '堆糖',
   groups: [
     {
+      key: 1,
       name: '青少年模式',
       desc: '关闭青少年模式提醒弹窗',
-      key: 1,
       actionMaximum: 1,
-      activityIds: ['com.duitang.main.business.main.NAMainActivity'],
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.duitang.main:id/teenGuideKnown"]',

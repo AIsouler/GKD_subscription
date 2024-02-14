@@ -137,7 +137,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.sina.weibo.notifyguidev2.NotifyGuideV2Activity'],
       rules:
         '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
       snapshotUrls: ['https://i.gkd.li/import/12705979'],
@@ -151,7 +150,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.sina.weibo.MainTabActivity'],
       rules:
         '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
       snapshotUrls: ['https://i.gkd.li/import/12705986'],
@@ -287,7 +285,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.sina.weibo.MainTabActivity',
       rules: '@[text="不了，谢谢"] +4 [text="喜欢，给好评"]',
       snapshotUrls: 'https://i.gkd.li/import/13620220',
     },

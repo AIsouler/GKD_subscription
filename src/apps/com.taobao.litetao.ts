@@ -18,10 +18,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.taobao.ltao.maintab.MainFrameActivity',
-        'com.taobao.litetao.launcher.ALiFlutterActivityCompat',
-      ],
       rules: '[id = "com.taobao.litetao:id/update_imageview_cancel_v2"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12843615',

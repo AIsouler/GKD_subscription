@@ -21,8 +21,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.lenovo.leos.appstore.activities.NotificationGuideActivity',
       quickFind: true,
       rules: '[text$="打开应用中心通知"] +n [text="知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13401991',

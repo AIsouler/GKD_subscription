@@ -13,10 +13,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.xtc.widget.phone.popup.activity.CustomActivity14',
-        'com.xtc.widget.phone.popup.activity.CustomActivity13',
-      ],
       rules: '[id="com.xtc.watch:id/iv_close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13197390',
@@ -31,7 +27,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.xtc.watch.view.home.activity.XtcHomeActivity'],
       rules: [
         {
           matches: ['[id="com.xtc.watch:id/iv_notify_permission_close"]'],

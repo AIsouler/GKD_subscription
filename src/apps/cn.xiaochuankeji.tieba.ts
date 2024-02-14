@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'cn.xiaochuankeji.tieba.ui.home.setting.SettingActivity',
       rules: [
         {
           matches:
@@ -23,7 +22,6 @@ export default defineAppConfig({
     {
       key: 2,
       name: '青少年模式',
-      activityIds: 'cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity',
       rules: [
         {
           matches: '[text$="青少年模式"] + [text$="知道了"]',
@@ -60,7 +58,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity',
       rules: [
         {
           matches:

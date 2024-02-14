@@ -22,8 +22,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.zui.launcher.drawer.NormalLauncher',
-
       rules:
         '[text="开启消息通知"] +n * > [id="com.lenovo.browser.hd:id/tv_cancle"]',
       snapshotUrls: 'https://i.gkd.li/import/13401980',

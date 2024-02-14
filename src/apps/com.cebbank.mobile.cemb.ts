@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.cebbank.mobile.cemb.view.CustomizedDialog',
       rules: '@[text="不再提示"] +2 [text="立即更新"]',
       snapshotUrls: 'https://i.gkd.li/import/12727241',
     },

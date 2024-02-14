@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'cn.xiaochuankeji.zuiyouLite.ui.main',
       rules: '[id="cn.xiaochuankeji.zuiyouLite:id/young_close_btn"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12745083',

@@ -21,7 +21,8 @@ export default defineAppConfig({
       key: 1,
       name: '青少年模式',
       quickFind: true,
-      activityIds: 'org.qiyi.android.video.MainActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.qiyi.video:id/confirm_btn"][text="我知道了"]',
@@ -48,7 +49,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'org.qiyi.android.video.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12838152',
       rules: ['[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]'],
     },
@@ -59,10 +59,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'org.qiyi.android.video.MainActivity',
-        'org.qiyi.android.search.view.PhoneSearchActivity',
-      ],
       rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12838158',

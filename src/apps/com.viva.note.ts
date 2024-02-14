@@ -10,10 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
-        'com.maoyun.guoguo.MainActivity',
-      ],
       rules: [
         {
           matches:

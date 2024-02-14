@@ -11,10 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.hd.smartVillage.modules.main.MainActivity',
-        'com.hd.smartVillage.modules.h5service.H5WebActivity',
-      ],
       rules: 'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13223669', //com.hd.smartVillage.modules.main.MainActivity
@@ -29,7 +25,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.hd.smartVillage.modules.main.MainActivity',
       rules:
         'TextView[id="com.hd.smartVillage:id/tv_upgrade_cancel"][text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/13223642',

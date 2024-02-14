@@ -21,7 +21,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.baidu.homework.activity.init.InitActivity',
       rules: 'TextView[id="com.zuoyebang.knowledge:id/btn_cancle"]',
       snapshotUrls: 'https://i.gkd.li/import/13043228',
     },

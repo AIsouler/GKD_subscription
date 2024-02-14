@@ -13,8 +13,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.zmzx.college.search.activity.main.activity.MainActivity',
       rules: 'ImageView[id="com.zmzx.college.search:id/siv_dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12867853',
     },
@@ -115,10 +113,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.zmzx.college.search.activity.main.activity.MainActivity',
-        'com.zmzx.college.search.activity.init.InitActivity',
-      ],
       rules: '[id="com.zmzx.college.search:id/update_close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13063373',
@@ -148,8 +142,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds:
-        'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
       rules:
         '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13476308',

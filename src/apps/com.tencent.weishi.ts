@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.tencent.oscar.module.main.MainActivity',
       rules: '[text="青少年保护功能提示"] +3 [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13448882',
     },

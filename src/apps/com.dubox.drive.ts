@@ -37,7 +37,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.dubox.drive.permission.view.PermissionDialogActivity',
       rules:
         '[text="Authorize"] - [id="com.dubox.drive:id/dialog_button_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/13688406',

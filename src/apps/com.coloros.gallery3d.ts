@@ -13,7 +13,6 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.coloros.gallery3d.app.MainActivity',
           matches: '[text="更新"] -2 [text="取消"]',
           exampleUrls:
             'https://m.gkd.li/47232102/0dae9f4b-8432-4cf4-b648-07ae17cdece2',

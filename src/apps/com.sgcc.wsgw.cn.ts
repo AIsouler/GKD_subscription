@@ -51,7 +51,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.sgcc.wsgw.rnbundle.activity.HomeReactActivity',
       rules: '@ImageView < ViewGroup -3 [text="有新版本啦!"]',
       snapshotUrls: 'https://i.gkd.li/import/13501638',
     },

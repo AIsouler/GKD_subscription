@@ -11,10 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.cnki.view.core.navigator.main.HomeActivity',
-        'com.cnki.view.core.tramp.main.SplashActivity',
-      ],
       rules: '[id="com.cnki.view:id/update_undo"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12755689', // activityId: 'com.cnki.view.core.navigator.main.HomeActivity'

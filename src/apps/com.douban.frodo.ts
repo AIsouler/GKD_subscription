@@ -137,7 +137,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.douban.frodo.activity.SplashActivity',
       rules: {
         matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
         snapshotUrls: 'https://i.gkd.li/import/12548314',
@@ -243,10 +242,6 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: [
-            'com.douban.frodo.activity.BetaApkDialogActivity',
-            'com.douban.frodo.activity.SplashActivity',
-          ],
           matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
           snapshotUrls: [
             'https://i.gkd.li/import/13228832',

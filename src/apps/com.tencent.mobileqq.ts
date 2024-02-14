@@ -421,7 +421,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {
           key: 0,

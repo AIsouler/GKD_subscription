@@ -13,14 +13,12 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches:
             '[text*="新版本"] - ImageView < LinearLayout < LinearLayout + ImageButton[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12642017',
         },
         {
           key: 1,
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches: '@Image + Image +n [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/import/13195645',
         },
@@ -281,10 +279,11 @@ export default defineAppConfig({
       key: 16,
       name: '青少年模式',
       desc: '点击我知道了',
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '[text="青少年模式"] < FrameLayout +5 ViewGroup [text="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/import/13809053',

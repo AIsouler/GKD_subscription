@@ -90,10 +90,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       rules: [
         {
-          activityIds: [
-            'com.aster.comic.app.view.bookdetails.BookdetailsActivity',
-            'com.aster.comic.app.view.MainActivity',
-          ],
           matches: '[id="com.paokeji.yiqu:id/btnCancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/2ce54292-bfc6-41c6-b2e5-e7d8302fc522',

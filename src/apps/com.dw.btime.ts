@@ -27,7 +27,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.dw.btime.base_library.dialog.DWBaseDialog',
       rules:
         'TextView[text="立即更新"] -3 [id="com.dw.btime:id/iv_upgrade_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12911011',

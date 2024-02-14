@@ -7,12 +7,9 @@ export default defineAppConfig({
     {
       key: 1,
       name: '青少年模式',
-      activityIds: [
-        'com.duowan.kiwi.homepage.Homepage', // 缺少快照
-        'com.duowan.kiwi.immersepage.impl.ImmersePageActivity',
-      ],
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-
       rules:
         '[id="com.duowan.kiwi:id/hyui_dialog_button_positive"][text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/12908790',
@@ -58,7 +55,6 @@ export default defineAppConfig({
       key: 3,
       name: '更新提示',
       enable: false,
-      activityIds: 'com.duowan.kiwi.homepage.Homepage',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

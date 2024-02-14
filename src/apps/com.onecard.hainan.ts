@@ -10,10 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.hainan.renshe.app.ui.SplashActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
       rules: [
         {
           matches: '@[text="暂不更新"] +(2) [text="立即更新"]',

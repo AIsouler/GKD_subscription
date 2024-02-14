@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'app.lawnchair.LawnchairLauncher',
       rules: '[desc="公告"] + * + [desc="知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13334608',
     },

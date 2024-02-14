@@ -10,11 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.yaerxing.fkst.activity.MainActivity',
-        'com.yaerxing.fkst.activity.SplashActivity',
-        'com.yaerxing.fkst.activity.SelectModuleActivity',
-      ],
       rules:
         '@[id="com.yaerxing.fkst:id/iv_close"] < LinearLayout - LinearLayout > [id="com.yaerxing.fkst:id/btn_update"]',
       snapshotUrls: [

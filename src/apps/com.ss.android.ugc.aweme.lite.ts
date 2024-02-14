@@ -9,8 +9,8 @@ export default defineAppConfig({
       name: '青少年模式',
       desc: '点击"我知道了"/"关闭"',
       quickFind: true,
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -63,7 +63,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[id="com.ss.android.ugc.aweme.lite:id/gl7"] > [id="com.ss.android.ugc.aweme.lite:id/h5q"]',
           snapshotUrls: 'https://i.gkd.li/import/13888485',

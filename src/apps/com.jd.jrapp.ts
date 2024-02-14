@@ -11,19 +11,13 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.jd.jrapp.bm.mainbox.main.MainActivity',
-        'com.jd.jrapp.bm.common.web.ui.WebActivity',
-      ],
       rules: [
         {
-          activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
           matches:
             'TextView[text^="打开通知"] +2 [id="com.jd.jrapp:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13249998',
         },
         {
-          activityIds: 'com.jd.jrapp.bm.common.web.ui.WebActivity',
           matches: 'View[text="开启并订阅通知"] < View + View[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/13255656',
         },
@@ -36,7 +30,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.jd.jrapp.bm.mainbox.main.MainActivity',
       rules:
         '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/import/13628364',

@@ -53,7 +53,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: '[text="抢先体验"] -2 [text="不再提醒"]',
       snapshotUrls: 'https://i.gkd.li/import/13178485',
     },

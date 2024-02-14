@@ -33,7 +33,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.jingdong.app.reader.logo.JdLogoActivity'],
       rules: [
         {
           matches: '@[text="下次再说"] +(2) [text="立即更新"]',

@@ -33,7 +33,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
       rules:
         'TextView[text="接收通知"] < LinearLayout < LinearLayout +n [id="android:id/buttonPanel"] Button[text="否"]',
       snapshotUrls: 'https://i.gkd.li/import/13073319',

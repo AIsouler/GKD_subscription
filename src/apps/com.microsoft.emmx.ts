@@ -11,7 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'org.chromium.chrome.browser.ChromeTabbedActivity',
       rules: '[text="允许通知"] + [text="不，谢谢"]',
       snapshotUrls: 'https://i.gkd.li/import/13646187',
     },

@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'bin.mt.plus.Main',
       rules: '@[text="取消"] + [text="更新"]',
       snapshotUrls: 'https://i.gkd.li/import/12908784',
     },

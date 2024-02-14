@@ -32,7 +32,6 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
-      activityIds: 'com.qiekj.user.MainActivity',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

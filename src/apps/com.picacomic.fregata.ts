@@ -29,7 +29,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
-      activityIds: 'com.picacomic.fregata.activities.MainActivity',
       rules: [
         {
           matches:

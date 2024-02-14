@@ -22,7 +22,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
       rules: '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
       snapshotUrls: 'https://i.gkd.li/import/13511386',
     },
