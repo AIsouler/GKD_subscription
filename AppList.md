@@ -127,7 +127,7 @@
 | 百度地图               | [com.baidu.BaiduMap](/docs/com.baidu.BaiduMap.md)                                                                                                                 | 9      |
 | 百度输入法             | [com.baidu.input](/docs/com.baidu.input.md)                                                                                                                       | 2      |
 | 百度贴吧               | [com.baidu.tieba](/docs/com.baidu.tieba.md)                                                                                                                       | 10     |
-| 百度网盘               | [com.baidu.netdisk](/docs/com.baidu.netdisk.md)                                                                                                                   | 10     |
+| 百度网盘               | [com.baidu.netdisk](/docs/com.baidu.netdisk.md)                                                                                                                   | 11     |
 | 百度网盘-三星版本      | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md)                                                                                                   | 4      |
 | 百分网游戏盒子         | [com.byfen.market](/docs/com.byfen.market.md)                                                                                                                     | 2      |
 | 班级小管家             | [com.banjixiaoguanjia.app](/docs/com.banjixiaoguanjia.app.md)                                                                                                     | 1      |
@@ -191,7 +191,7 @@
 | 抖音极速版             | [com.ss.android.ugc.aweme.lite](/docs/com.ss.android.ugc.aweme.lite.md)                                                                                           | 5      |
 | 斗鱼                   | [air.tv.douyu.android](/docs/air.tv.douyu.android.md)                                                                                                             | 3      |
 | 毒霸姬                 | [com.cf.dubaji](/docs/com.cf.dubaji.md)                                                                                                                           | 1      |
-| 堆糖                   | [com.duitang.main](/docs/com.duitang.main.md)                                                                                                                     | 4      |
+| 堆糖                   | [com.duitang.main](/docs/com.duitang.main.md)                                                                                                                     | 5      |
 | 多点                   | [com.wm.dmall](/docs/com.wm.dmall.md)                                                                                                                             | 4      |
 | 多看                   | [com.duokan.reader](/docs/com.duokan.reader.md)                                                                                                                   | 5      |
 | 多系统工具箱           | [com.example.ourom](/docs/com.example.ourom.md)                                                                                                                   | 1      |
@@ -369,7 +369,7 @@
 | 汽车之家               | [com.cubic.autohome](/docs/com.cubic.autohome.md)                                                                                                                 | 2      |
 | 起点读书               | [com.qidian.QDReader](/docs/com.qidian.QDReader.md)                                                                                                               | 9      |
 | 七猫免费小说           | [com.kmxs.reader](/docs/com.kmxs.reader.md)                                                                                                                       | 11     |
-| 奇妙应用               | [com.magicalstory.AppStore](/docs/com.magicalstory.AppStore.md)                                                                                                   | 4      |
+| 奇妙应用               | [com.magicalstory.AppStore](/docs/com.magicalstory.AppStore.md)                                                                                                   | 3      |
 | 亲宝宝                 | [com.dw.btime](/docs/com.dw.btime.md)                                                                                                                             | 3      |
 | 青创网                 | [com.m17qcc.mm](/docs/com.m17qcc.mm.md)                                                                                                                           | 1      |
 | 青岛公交查询           | [com.qingdaonews.bus](/docs/com.qingdaonews.bus.md)                                                                                                               | 1      |
