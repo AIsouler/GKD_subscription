@@ -66,7 +66,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="以后再说"] +2 [text="立即升级"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12534016',
@@ -97,7 +96,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="取消"] +2 [text="五星好评"]',
       snapshotUrls: 'https://i.gkd.li/import/13053628',
       exampleUrls:
@@ -121,7 +119,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: [
         {
           name: '顶部卡片',
