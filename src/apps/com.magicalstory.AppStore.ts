@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.magicalstory.AppStore',
   name: '奇妙应用',
+  deprecatedKeys: [6],
   groups: [
     {
       key: 1,
@@ -12,24 +13,34 @@ export default defineAppConfig({
           key: 0,
           name: '腾讯广告',
           activityIds: [
-            'com.magicalstory.AppStore.search.searchActivity',
             'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
             'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
           ],
-          matches: [
-            '[id^="com.magicalstory.AppStore:id/banner"]',
-            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView[visibleToUser=true]',
-          ],
+          excludeActivityIds: 'com.magicalstory.AppStore.search.searchActivity', // 排除搜索页，搜索页的规则见 key: 1
+          matches:
+            '[visibleToUser=true] - [vid^="banner"] >n FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[visibleToUser=true] < FrameLayout +2 *[visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13185746',
             'https://i.gkd.li/import/13413482',
             'https://i.gkd.li/import/13416979',
             'https://i.gkd.li/import/13527698',
             'https://i.gkd.li/import/13759492', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/import/14273176', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/import/14273317', // 限定 visibleToUser, 防止误触
           ],
         },
         {
           key: 1,
+          name: '腾讯广告-搜索页面',
+          activityIds: 'com.magicalstory.AppStore.search.searchActivity',
+          matches:
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView < FrameLayout +2 *[visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13185746',
+            'https://i.gkd.li/import/13695554',
+          ],
+        },
+        {
+          key: 2,
           quickFind: true,
           activityIds: 'com.magicalstory.AppStore.main.MainActivity',
           matches: '[id="com.magicalstory.AppStore:id/button_close_ad"]',
@@ -63,16 +74,6 @@ export default defineAppConfig({
       rules:
         '[id="com.magicalstory.AppStore:id/tv_update"] <2 * + * > [id="com.magicalstory.AppStore:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13459373',
-    },
-    {
-      key: 6,
-      name: '局部广告-搜索页卡片广告',
-      desc: '腾讯广告',
-      actionMaximum: 1,
-      activityIds: 'com.magicalstory.AppStore.search.searchActivity',
-      rules:
-        'FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
-      snapshotUrls: 'https://i.gkd.li/import/13695554',
     },
   ],
 });
