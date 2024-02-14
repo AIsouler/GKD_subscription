@@ -64,13 +64,17 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '局部广告-顶部广告条',
+      name: '局部广告-顶部广告卡片',
       rules: [
         {
           key: 0,
+          quickFind: true,
           activityIds: 'com.huawei.android.totemweather.WeatherMainActivity',
-          matches: '[vid="rl_close_pps"] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13800100',
+          matches: '@ImageView[visibleToUser=true] < [vid="rl_close_pps"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13800100',
+            'https://i.gkd.li/import/14278462', // 使用visibleToUser=true防止在此页面误触
+          ],
         },
       ],
     },
