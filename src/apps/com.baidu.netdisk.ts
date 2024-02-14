@@ -125,5 +125,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 12,
+      name: '局部广告-右下角悬浮卡片',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.baidu.netdisk.ui.MainActivity',
+          matches:
+            '[vid="float_btn_close"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/470eec82-ed99-4f50-beba-2587e525cfdf',
+          snapshotUrls: 'https://i.gkd.li/import/14278618',
+        },
+      ],
+    },
   ],
 });
