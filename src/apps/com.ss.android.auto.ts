@@ -51,10 +51,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.ss.android.auto.activity.SplashActivity',
-        'com.ss.android.auto.policy.AutoPrivacyActivity',
-      ],
       rules:
         '@TextView[text="以后再说"] - FrameLayout >2 TextView[text$="升级"]',
       snapshotUrls: 'https://i.gkd.li/import/13534445',
@@ -113,11 +109,6 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.ss.android.auto.activity.SplashActivity',
-        'com.ss.android.auto.policy.AutoPrivacyActivity',
-        'com.bytedance.im.auto.conversation.activity.ConversationListActivity', // https://i.gkd.li/import/14060897
-      ],
       rules: '@TextView[clickable=true] + [text*="推送通知"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12840664',

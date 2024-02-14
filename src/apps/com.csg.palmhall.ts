@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.csg.palmhall.MainActivity'],
       rules: '@[text="关闭"] + [text="升级"]',
       snapshotUrls: ['https://i.gkd.li/import/12700060'],
     },

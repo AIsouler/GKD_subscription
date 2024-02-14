@@ -23,7 +23,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.cn21.ecloud.activity.MainPageActivity'],
       rules: '[id="com.cn21.ecloud:id/ivCancel"]',
       snapshotUrls: 'https://i.gkd.li/import/13399488',
     },

@@ -13,7 +13,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.bcut.homepage.widget.MainActivity',
       rules: [
         {
           matches: 'TextView[text="开启设置"] - TextView[text="取消"]',
@@ -37,7 +36,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.bcut.homepage.widget.MainActivity',
       rules: [
         {
           key: 0,

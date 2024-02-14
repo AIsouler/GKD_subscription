@@ -34,7 +34,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xsj.app.MainActivity',
       rules: '[desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/13875711',
     },

@@ -64,10 +64,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.xiaomi.market.ui.UpdateListActivity',
-        'com.xiaomi.market.business_ui.main.MarketTabActivity',
-      ],
       rules: [
         {
           key: 0,

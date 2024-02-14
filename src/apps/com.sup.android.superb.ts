@@ -58,7 +58,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.sup.android.base.MainActivity',
           matches: '[id="com.sup.android.superb:id/a1i"]',
           snapshotUrls: 'https://i.gkd.li/import/14005608',
         },

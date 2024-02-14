@@ -54,7 +54,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.tencent.news.activity.SplashActivity',
       rules: '[text="开启通知"] + [text="先不了"]',
       snapshotUrls: 'https://i.gkd.li/import/12755824',
     },

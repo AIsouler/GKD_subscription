@@ -11,10 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.baidu.newbridge.fast.MainFastActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
       rules: '[id="com.baidu.xin.aiqicha:id/update_cancel"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12755738',
@@ -28,7 +24,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: [
         {
           key: 0,

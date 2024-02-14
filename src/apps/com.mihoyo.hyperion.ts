@@ -8,10 +8,8 @@ export default defineAppConfig({
       key: 1,
       name: '青少年模式',
       desc: '关闭青少年模式提醒弹窗',
-      activityIds: [
-        'com.mihoyo.hyperion.main.HyperionMainActivity',
-        'com.mihoyo.hyperion.splash.SplashActivity',
-      ],
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules:
         'TextView[id="com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode"] + TextView[id="com.mihoyo.hyperion:id/tv_dialog_i_know"]',
       snapshotUrls: [

@@ -13,8 +13,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
-            'downloadtwittervideo.twitterdownloader.twittervideodownloader.twittersaver.MainActivity',
           matches:
             '[id="downloadtwittervideo.twitterdownloader.twittervideodownloader.twittersaver:id/tv_cancel"]',
           snapshotUrls: 'https://i.gkd.li/import/13748858',

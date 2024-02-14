@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.maidu.gkld.ui.main.MainActivity',
       rules: '[id="com.maidu.gkld:id/tv_update_next"]',
       snapshotUrls: 'https://i.gkd.li/import/12715215',
     },
@@ -29,7 +28,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.maidu.gkld.ui.main.MainActivity',
       rules:
         '[id="com.maidu.gkld:id/ll_open_app_notice"] + [id="com.maidu.gkld:id/iv_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/12715250',

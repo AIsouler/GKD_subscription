@@ -66,6 +66,7 @@ export default defineAppConfig({
       key: 4,
       name: '青少年模式-首页顶部横幅提示',
       quickFind: true,
+      actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="青少年模式"] + [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/14209309',

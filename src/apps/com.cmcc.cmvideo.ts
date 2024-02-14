@@ -18,7 +18,6 @@ export default defineAppConfig({
       key: 2,
       name: '局部广告-右下角小广告',
       quickFind: true,
-
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
       rules: '[id="com.cmcc.cmvideo:id/iv_right_bottom_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12498315',

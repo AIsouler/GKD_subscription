@@ -47,9 +47,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
-      ],
       rules: '[text="确认"] - [text="取消"]',
       snapshotUrls: ['https://i.gkd.li/import/13042207'],
     },
@@ -62,9 +59,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
-      ],
       rules: '[id="com.cainiao.wireless:id/gg_dialog_base_close"]',
       snapshotUrls: ['https://i.gkd.li/import/13068573'],
     },
@@ -74,7 +68,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
       rules: '@[text="取消"] + [text="好评"]',
       snapshotUrls: 'https://i.gkd.li/import/13692761',
     },

@@ -149,7 +149,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.twitter.app.main.MainActivity',
           matches: '[id="com.twitter.android:id/app_rating_button_never"]',
           snapshotUrls: 'https://i.gkd.li/import/13774150',
         },
@@ -165,7 +164,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.twitter.app.main.MainActivity',
           matches:
             '[id="com.twitter.android:id/secondary_button"] [text="Not now"]',
           snapshotUrls: 'https://i.gkd.li/import/13930126',

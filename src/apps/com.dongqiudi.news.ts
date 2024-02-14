@@ -35,7 +35,6 @@ export default defineAppConfig({
     {
       key: 1,
       name: '青少年模式',
-      activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -50,7 +49,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.dongqiudi.news.DownloadActivity',
       rules: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
       snapshotUrls: 'https://i.gkd.li/import/12620586',
     },

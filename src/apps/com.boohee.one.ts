@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.boohee.library.update.UpdateDialogActivity',
       rules:
         '@[id="com.boohee.one:id/tv_ignore"] + [id="com.boohee.one:id/tv_update"]',
       snapshotUrls: 'https://i.gkd.li/import/12716918',
@@ -32,8 +31,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.boohee.one.app.account.ui.activity.MsgCategoryActivityV2',
       rules: '[id="com.boohee.one:id/img_close_push"]',
       snapshotUrls: 'https://i.gkd.li/import/12716950',
     },

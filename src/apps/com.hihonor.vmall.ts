@@ -23,8 +23,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
-            'com.vmall.client.messageCenter.fragment.MessageCenterActivity',
           matches:
             '[text="开启消息通知"] - [id="com.hihonor.vmall:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13959029',

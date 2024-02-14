@@ -14,7 +14,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.reddit.launch.main.MainActivity',
           matches: '[id="com.reddit.frontpage:id/cancel_button"]',
           snapshotUrls: 'https://i.gkd.li/import/13649914',
         },

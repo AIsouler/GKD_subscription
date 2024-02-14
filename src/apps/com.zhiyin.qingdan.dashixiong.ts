@@ -75,7 +75,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
       quickFind: true,
       rules: '[desc^="必读通告"] +n [desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/import/12843280',

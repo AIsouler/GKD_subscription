@@ -11,7 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.mcdonalds.gma.cn.activity.MainActivity',
       rules: '[id="com.mcdonalds.gma.cn:id/tv_cancel"][text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/13259242',
     },

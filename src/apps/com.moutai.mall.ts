@@ -25,7 +25,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.moutai.mall.MainActivity',
       rules:
         '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',
       snapshotUrls: 'https://i.gkd.li/import/12745142',

@@ -13,10 +13,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.yanzhenjie.permission.PermissionActivity',
-        'com.hellobike.atlas.business.portal.PortalActivity',
-      ],
       rules: '[text*="开启通知"] < FrameLayout + FrameLayout >2 [text="取消"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13228735',

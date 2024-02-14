@@ -83,12 +83,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.taobao.tao.welcome.Welcome',
-        'com.taobao.android.order.bundle.TBOrderDetailActivity',
-        'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
-        'com.taobao.tao.TBMainActivity',
-      ],
       rules: '[text^="开启系统通知"] + Image[clickable=true]',
       snapshotUrls: [
         'https://i.gkd.li/import/13197594', //com.taobao.tao.welcome.Welcome
@@ -137,10 +131,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.taobao.android.detail.wrapper.activity.DetailActivity',
-        'com.taobao.android.order.bundle.TBOrderListActivity',
-      ],
       rules: '[id="com.taobao.taobao:id/update_imageview_cancel_v2"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13336760',

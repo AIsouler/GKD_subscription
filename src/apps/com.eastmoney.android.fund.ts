@@ -60,8 +60,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
-            'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
           matches:
             '[id="com.eastmoney.android.fund:id/container"] [desc="下次再说"]',
           exampleUrls:

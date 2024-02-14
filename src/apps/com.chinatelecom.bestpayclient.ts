@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
       rules: '[id="com.chinatelecom.bestpayclient:id/bupdate_tv_bottom_tip"]',
       snapshotUrls: 'https://i.gkd.li/import/13391544',
     },

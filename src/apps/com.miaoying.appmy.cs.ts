@@ -11,10 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.miaoying.appmy.cs.MainActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
       rules: '@[desc="我知道了"] + [desc="了解更多"]',
       snapshotUrls: 'https://i.gkd.li/import/12522872',
     },

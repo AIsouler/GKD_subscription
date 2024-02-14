@@ -21,7 +21,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
       rules: '[id="cn.TuHu.android:id/imgClose"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13228796', //推送提醒消息弹窗

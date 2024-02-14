@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 15000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.bilibili.comic.home.view.FlutterMainActivity'],
       rules: '[id="com.bilibili.comic:id/tv_know"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13063676',

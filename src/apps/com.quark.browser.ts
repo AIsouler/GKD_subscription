@@ -31,7 +31,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ucpro.BrowserActivity',
       rules: [
         {
           key: 0,

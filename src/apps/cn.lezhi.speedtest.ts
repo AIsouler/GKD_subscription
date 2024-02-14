@@ -37,7 +37,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'cn.lezhi.speedtest.main5.MainV5Activity',
       rules:
         '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >n [id="cn.lezhi.speedtest:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12727619',

@@ -80,8 +80,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
-            'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
           matches: '[id="com.gotokeep.keep:id/text_secondary_action"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6b0091e9-1bf1-49bd-be5c-e6997bc9accb',

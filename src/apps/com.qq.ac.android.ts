@@ -7,7 +7,6 @@ export default defineAppConfig({
     {
       key: 1,
       name: '青少年模式',
-      activityIds: ['com.qq.ac.android.main.MainActivity'],
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="青少年守护模式"] - [id="com.qq.ac.android:id/close_btn"]',

@@ -57,7 +57,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
       rules: [
         {
           matches: '[text="立刻开启"] - [text="以后再说"]',

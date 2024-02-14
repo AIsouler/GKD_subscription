@@ -42,10 +42,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.citiccard.mobilebank.card.activity.BillDetailHomeActivity',
-      ],
-
       rules: [
         {
           matches:

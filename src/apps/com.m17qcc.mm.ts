@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'miuix.appcompat.app.m',
       rules: '[text*="新版本"] +(n) LinearLayout > TextView[text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/12642297',
     },

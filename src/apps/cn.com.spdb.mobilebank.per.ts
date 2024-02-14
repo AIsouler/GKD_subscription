@@ -13,8 +13,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'cn.com.spdb.mobilebank.per.activity.web.stage.StageCommonWebActivity',
       rules: '[text="去开启"] + View > Image[text.length=0]',
       snapshotUrls: 'https://i.gkd.li/import/13458535',
     },

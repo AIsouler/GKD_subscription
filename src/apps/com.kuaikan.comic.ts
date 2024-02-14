@@ -7,7 +7,8 @@ export default defineAppConfig({
     {
       key: 1,
       name: '青少年模式',
-      activityIds: 'com.kuaikan.main.MainActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: '[text*="青少年模式"] +2 [id="com.kuaikan.comic:id/cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/12565678',
     },

@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xt.retouch.uilauncher.MainActivity',
       rules: '[id="com.xt.retouch:id/market_feedback_dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13062637',
     },

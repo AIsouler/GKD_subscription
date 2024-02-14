@@ -14,7 +14,6 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.xiaoe.app.ui.main.XiaoeMainActivity',
           matches: 'FrameLayout[vid="centerPopupContainer"] [text="暂不更新"]',
           snapshotUrls: 'https://i.gkd.li/import/13832282',
         },

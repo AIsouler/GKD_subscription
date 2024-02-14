@@ -77,7 +77,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xuexiaoyi.entrance.main.MainActivity',
       rules: '[text="立即体验"] + [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/import/13203105',
     },

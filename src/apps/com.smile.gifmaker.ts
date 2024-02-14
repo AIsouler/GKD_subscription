@@ -7,7 +7,8 @@ export default defineAppConfig({
     {
       key: 0,
       name: '青少年模式',
-      activityIds: 'com.yxcorp.gifshow.HomeActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches:

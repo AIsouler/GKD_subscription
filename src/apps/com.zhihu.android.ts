@@ -69,7 +69,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.zhihu.android.app.ui.dialog.d',
           matches:
             '[id="com.zhihu.android:id/guide_title"] - [id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
           exampleUrls:

@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'miuix.appcompat.app.AlertDialog',
       rules:
         '@[text="稍后安装"] < LinearLayout - ScrollView >(4) [text="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/import/12642466',

@@ -18,7 +18,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.dianping.main.guide.SplashActivity'],
       rules: {
         matches:
           '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',

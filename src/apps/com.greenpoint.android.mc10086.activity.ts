@@ -12,7 +12,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
           matches:
             'Button[text="以后再说"][id^="com.greenpoint.android.mc10086.activity:id/dialog_btn"]',
           exampleUrls:
@@ -40,7 +39,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.mc10086.cmcc.base.StartPageActivity',
       rules: [
         {
           matches: '[text*="开启推送通知"] +(2) LinearLayout > [text="取消"]',
@@ -90,7 +88,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
       rules: [
         {
           matches:

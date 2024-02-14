@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules: '@[text="取消"] + [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/import/12715139',
     },
@@ -22,7 +21,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.alibaba.android.rimet.biz.SplashActivity',
       rules:
         '[text^="开启消息通知"] +2 [id="cn.xuexi.android:id/layout_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12715160',

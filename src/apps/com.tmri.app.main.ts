@@ -13,10 +13,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: [
-            'com.tmri.app.ui.activity.main.MainTabHostNewActivity',
-            'com.tmri.app.ui.activity.main.TmriNewActivity',
-          ],
           matches: 'ImageButton[id="com.tmri.app.main:id/btn_cancel"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13315944', //com.tmri.app.ui.activity.main.MainTabHostNewActivity

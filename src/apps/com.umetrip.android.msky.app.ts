@@ -22,10 +22,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.miui.home.launcher.Launcher',
-        'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
-      ],
       rules:
         '@[id="com.umetrip.android.msky.app:id/iv_cancel"] - * > [id="com.umetrip.android.msky.app:id/btn_upgrade"]',
       snapshotUrls: [

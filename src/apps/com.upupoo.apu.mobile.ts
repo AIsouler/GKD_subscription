@@ -26,7 +26,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       rules: [
         {
-          activityIds: 'com.upupoo.apu.mobile.MainActivity',
           matches: '[desc="青少年模式"] +3 [desc="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/import/14052188',
         },

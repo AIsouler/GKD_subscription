@@ -237,10 +237,6 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: [
-            'com.netease.cloudmusic.activity.MainActivity',
-            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-          ],
           matches: '[id="com.netease.cloudmusic:id/md_dialog_cm_close_btn"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13233790',

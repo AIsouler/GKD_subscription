@@ -23,7 +23,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xiaomi.smarthome.framework.plugin.rn.PluginRNActivity',
       snapshotUrls: 'https://i.gkd.li/import/12639671',
       rules:
         '[text*="检测到"&&text*="升级"] < ViewGroup + ViewGroup > Button > [text = "取消"]',

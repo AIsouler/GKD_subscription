@@ -11,7 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.cf.dubaji.module.main.MainActivity',
       rules: [
         {
           key: 0,

@@ -58,11 +58,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
-        'com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity',
-        'com.jingdong.app.mall.MainFrameActivity',
-      ],
       rules: [
         {
           matches: 'TextView[text="开启消息通知"] +n ImageView[clickable=true]',
@@ -79,7 +74,6 @@ export default defineAppConfig({
         },
         {
           quickFind: true,
-          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
           matches: '[id="com.jingdong.app.mall:id/btn_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13463618',
         },

@@ -447,10 +447,6 @@ export default defineAppConfig({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.tencent.mm.plugin.finder.ui.FinderSelfUI',
-        'com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI',
-      ],
       rules:
         'TextView[text^="为呵护未成年人健康成长，微信推出青少年模式"] +2 Button[text="我知道了"]',
       snapshotUrls: [

@@ -31,7 +31,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.ksf.yyx.MainActivity'],
       rules: [
         {
           matches: '[desc="了解更多"] - [desc="我知道了"]',

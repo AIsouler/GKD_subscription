@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.netease.gl.serviceupdate.widget.DialogUpdate',
       rules:
         '@[id="com.netease.gl:id/iv_close"] +2 LinearLayout >n [id="com.netease.gl:id/btn_update"]',
       snapshotUrls: 'https://i.gkd.li/import/12883135',
@@ -34,7 +33,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.netease.gl.compfeed.widget.CommonWebPopupDialog',
       rules: '@[id="com.netease.gl:id/iv_close"] + [text="开启推送"]',
       snapshotUrls: 'https://i.gkd.li/import/13072071',
     },

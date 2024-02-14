@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.seebaby.login.ui.activity.LauncherActivity'],
       rules: '@[id="com.seebaby:id/btn_later"] + [text$="新版本"]',
       snapshotUrls: ['https://i.gkd.li/import/12705351'],
     },

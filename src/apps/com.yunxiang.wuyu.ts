@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.yunxiang.wuyu.MainActivity',
       rules: '[desc^="人生嘛"] +4 ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13455634',
     },

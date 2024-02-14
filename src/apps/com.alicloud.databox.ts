@@ -61,7 +61,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.alicloud.databox.MainActivity',
       rules: [
         {
           matches: '[text^="立即了解"] -3 View[clickable=true]',

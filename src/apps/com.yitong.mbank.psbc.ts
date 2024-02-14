@@ -11,10 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.yitong.mbank.psbc.module.app.view.customview.dialog.DialogUpdateApk',
-        'com.yitong.mbank.psbc.module.home.view.activity.MainActivity',
-      ],
       rules: [
         {
           matches: 'Button[id="com.yitong.mbank.psbc:id/bt_cancel"]',

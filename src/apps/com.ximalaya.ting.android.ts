@@ -145,8 +145,9 @@ export default defineAppConfig({
     {
       key: 7,
       name: '青少年模式',
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       snapshotUrls: 'https://i.gkd.li/import/12506209',
       rules: {
         matches: [
@@ -230,11 +231,9 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      quickFind: true,
       rules: [
         {
-          actionMaximum: 1,
-          quickFind: true,
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
           matches: '[id=`com.ximalaya.ting.android:id/cancel_btn`]',
           exampleUrls:
             'https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df',

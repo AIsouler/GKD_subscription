@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xiaomi.account.upgrade.AccountApkUpdateDialogActivity',
       rules: '@[text="以后再说"] + [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/import/12781280',
     },

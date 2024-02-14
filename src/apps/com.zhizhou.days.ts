@@ -55,7 +55,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
       rules: '@[text="以后再说"] + [text="马上评价"]',
       snapshotUrls: 'https://i.gkd.li/import/12744951',
     },

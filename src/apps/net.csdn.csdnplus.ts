@@ -36,10 +36,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'net.csdn.csdnplus.activity.MainActivity',
-        'net.csdn.csdnplus.activity.SetActivity',
-      ],
       rules: [
         {
           matches:
@@ -84,7 +80,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
       snapshotUrls: 'https://i.gkd.li/import/13251085',
     },
@@ -96,7 +91,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: {
         matches: [
           '[text="开启推送通知"]',

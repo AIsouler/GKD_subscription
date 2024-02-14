@@ -12,11 +12,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.meituan.android.upgrade.ui.',
-        'com.meituan.android.upgrade.UpgradeDialogActivity',
-        'com.meituan.android.pt.homepage.activity.MainActivity',
-      ],
       rules:
         'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
       snapshotUrls: [
@@ -82,15 +77,12 @@ export default defineAppConfig({
         {
           name: '我的页面-小调查',
           action: 'back',
-          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
           matches: 'TextView[text="小调查"]',
           snapshotUrls: 'https://i.gkd.li/import/12639723',
         },
         {
           name: '订单详情页匿名调查',
           action: 'back',
-          activityIds:
-            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
           matches: '[id="com.sankuai.meituan:id/questionnaireTitle"]',
           snapshotUrls: 'https://i.gkd.li/import/13682336',
         },
@@ -139,7 +131,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
           matches:
             '[id="com.sankuai.meituan:id/notify_open_hint_title"] +n [id="com.sankuai.meituan:id/later"]',
           snapshotUrls: 'https://i.gkd.li/import/13439134',

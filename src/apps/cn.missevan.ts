@@ -9,7 +9,6 @@ export default defineAppConfig({
       key: 1,
       name: '青少年模式',
       desc: '点击：知道了',
-      activityIds: 'cn.missevan.activity.MainActivity',
       quickFind: true,
       rules: [
         {

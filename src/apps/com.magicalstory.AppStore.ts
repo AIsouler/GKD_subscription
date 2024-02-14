@@ -55,7 +55,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.magicalstory.AppStore.main.MainActivity',
       rules: [
         {
           matches:

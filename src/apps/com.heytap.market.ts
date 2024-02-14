@@ -11,8 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.heytap.cdo.client.cards.page.main.maintab.MainTabActivity',
       rules: [
         {
           action: 'back',

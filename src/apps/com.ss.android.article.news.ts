@@ -46,7 +46,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.ss.android.article.news.activity.MainActivity'],
       rules: [
         {
           matches: '[text^="开启通知"] + LinearLayout > [text="暂不开启"]',

@@ -14,7 +14,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       rules: [
         {
-          activityIds: 'com.bokecc.dance.activity.MainActivity',
           matches: '[id="com.bokecc.dance:id/tv_cancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9156698c-76bb-4921-a39d-96a20c45260b',

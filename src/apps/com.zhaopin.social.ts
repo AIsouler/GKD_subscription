@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.zhaopin.social.my.setting.AboutUsActivity',
       rules:
         '[id="com.zhaopin.social:id/update"] + [id="com.zhaopin.social:id/ignore"]',
       snapshotUrls: ['https://i.gkd.li/import/12706186'],
@@ -39,7 +38,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: ['com.zhaopin.social.homepage.ZSC_MainTabActivity'],
       rules: '[id="com.zhaopin.social:id/message_pushlayout_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13063427',
     },

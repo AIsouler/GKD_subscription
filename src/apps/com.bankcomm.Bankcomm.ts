@@ -27,10 +27,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.bankcomm.module.biz.webcontainer.BCMHtml5Activity',
-        'com.bankcomm.module.biz.home.MainActivity',
-      ],
       rules: '[id = "com.bankcomm.Bankcomm:id/tvNotNow" && text = "暂不更新"]',
       snapshotUrls: 'https://i.gkd.li/import/12842484',
     },

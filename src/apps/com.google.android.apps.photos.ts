@@ -12,9 +12,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.google.android.apps.photos.update.treatment.UpdateAppTreatmentPromoPageActivity',
-      ],
       rules: [
         {
           matches:

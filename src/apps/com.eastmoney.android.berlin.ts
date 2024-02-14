@@ -10,10 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
-        'com.bbk.launcher2.Launcher',
-      ],
       rules:
         '@[id="com.eastmoney.android.berlin:id/tv_update_next_time"] + [id="com.eastmoney.android.berlin:id/tv_update_now"]',
       snapshotUrls: [
@@ -28,9 +24,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
-      ],
       rules:
         '[id="com.eastmoney.android.berlin:id/push_on_notify_on"] + [id="com.eastmoney.android.berlin:id/push_on_notify_delete"]',
       snapshotUrls: ['https://i.gkd.li/import/12706065'],

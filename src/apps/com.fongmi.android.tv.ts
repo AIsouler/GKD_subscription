@@ -13,7 +13,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.fongmi.android.tv.ui.activity.MainActivity',
           matches:
             '[id="com.fongmi.android.tv:id/buttonPanel"] >2 [text="取消"]',
           snapshotUrls: 'https://i.gkd.li/import/14035154',

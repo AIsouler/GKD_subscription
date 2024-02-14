@@ -11,10 +11,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.ai.obc.cbn.app.ui.other.activity.MainActivity',
-        'com.ai.obc.cbn.app.ui.main.fragment.MainFragment',
-      ],
       rules: [
         {
           matches: '[id$="/ivDis"]',

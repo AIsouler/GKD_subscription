@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.wanxiao.basebusiness.activity.SplashActivity',
       rules: '[id="com.newcapec.mobile.ncp:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12843377',
     },

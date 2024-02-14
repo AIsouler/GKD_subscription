@@ -3,20 +3,14 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.kmxs.reader',
   name: '七猫免费小说',
+  deprecatedKeys: [0],
   groups: [
-    {
-      key: 0,
-      name: '青少年模式',
-      activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
-      rules: '[id="com.kmxs.reader:id/young_dialog_close"]',
-    },
     {
       key: -2,
       name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.km.app.update.UpdateVersionV2Activity',
       rules: '[id="com.kmxs.reader:id/tv_update_cancel"]',
       snapshotUrls: 'https://i.gkd.li/import/12641338',
     },

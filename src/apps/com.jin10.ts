@@ -10,7 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.jin10.lgd.update.UpdateActivity'],
       rules: '@[id="com.jin10:id/update_cancel"] + [id="com.jin10:id/iv_pic"]',
       snapshotUrls: ['https://i.gkd.li/import/12706043'],
     },

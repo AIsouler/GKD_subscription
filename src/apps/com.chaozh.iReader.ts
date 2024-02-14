@@ -24,7 +24,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
       excludeActivityIds:
         'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
       rules: [

@@ -10,10 +10,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.zhengnengliang.precepts.ui.activity.MainActivity',
-        'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton',
-      ],
       rules: '@[text="取消"] +2 [text="升级"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12727650',

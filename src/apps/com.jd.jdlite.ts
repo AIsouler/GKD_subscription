@@ -17,7 +17,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.jd.jdlite.MainFrameActivity',
       rules:
         '@ImageView[clickable=true] - LinearLayout > [text="开启消息通知"]',
       snapshotUrls: 'https://i.gkd.li/import/13062969',

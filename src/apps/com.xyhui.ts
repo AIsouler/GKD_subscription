@@ -118,10 +118,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.xyhui.start.PUMainActivity',
-        'com.xyhui.start.LoadingActivity',
-      ],
       rules: 'ImageView[id="com.xyhui:id/closeIv"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12908853',

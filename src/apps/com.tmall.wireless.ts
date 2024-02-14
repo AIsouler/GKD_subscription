@@ -11,11 +11,6 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      activityIds: [
-        'com.tmall.wireless.splash.TMSplashActivity',
-        'com.tmall.wireless.maintab.module.TMMainTabActivity',
-        'com.tmall.wireless.webview.TMCommonWebViewActivity',
-      ],
       rules: '[id="com.tmall.wireless:id/update_button_cancel"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13162603', //com.tmall.wireless.splash.TMSplashActivity
@@ -46,8 +41,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.tmall.wireless.messagebox.activity.TMMsgboxMainActivity',
       rules: 'View[text="开启系统通知"] - View[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13258215',
     },

@@ -12,7 +12,6 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.oppo.store.MainActivity',
       rules: '@[text="下次再说"] -n [text="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/import/13295202',
     },
