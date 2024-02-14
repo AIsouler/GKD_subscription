@@ -1,10 +1,6 @@
 # 优酷视频
 
-存在 3 规则组 - [com.youku.phone](/src/apps/com.youku.phone.ts)
-
-## 更新提示
-
-默认禁用 - 占位，暂无作用
+存在 2 规则组 - [com.youku.phone](/src/apps/com.youku.phone.ts)
 
 ## 青少年模式
 
