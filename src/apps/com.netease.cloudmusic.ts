@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '分段广告-有二次确认弹窗',
+      name: '分段广告-卡片广告',
       desc: '点击[X]-点击[直接关闭]/[不感兴趣]',
       rules: [
         {
@@ -50,7 +50,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 1],
+          // preKeys: [0, 1],该条分段广告有概率被VIP弹窗插入导致二段不触发，故去掉preKeys
           key: 90,
           quickFind: true,
           activityIds: [
