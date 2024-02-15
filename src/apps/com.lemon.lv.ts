@@ -33,5 +33,14 @@ export default defineAppConfig({
         '[vid="gallery_layout_below_category_view"] >3 [text="立即下载"] -n LynxFlattenUI[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/14122865',
     },
+    {
+      key: 2,
+      name: '功能类-恢复创作',
+      desc: '自动点击[立即恢复]按钮',
+      activityIds: 'com.vega.main.MainActivity',
+      quickFind: true,
+      rules: '[vid="tv_title_resume_design"] +2 [vid="tvResumeNow"]',
+      snapshotUrls: 'https://i.gkd.li/import/14292755',
+    },
   ],
 });
