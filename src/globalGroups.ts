@@ -3,15 +3,40 @@ import type { RawGlobalGroup } from './types';
 import { OPEN_AD_ORDER } from './utils';
 
 const diabledAppIds = [
-  'com.android.systemui', // 通知栏界面
+  'com.android.systemui', // 通知栏界面/下拉开关/控制中心
   'com.android.settings', // 系统设置
-
-  'com.miui.aod', // miui 锁屏界面
-  'miui.systemui.plugin', // miui 状态栏界面
-
+  'com.android.mms', // 短信/信息
+  'com.android.phone', // 拨号
+  'com.android.incallui', // 通话
+  'com.android.contacts', // 联系人/电话簿
+  'com.android.providers.Telephony', // 电话和短信存储
+  'com.android.phone.recorder', // 录音
+  'com.android.soundrecorder', // 录音机
+  'com.android.server.telecom', // 来电拒接短信服务
   // 在一些常见的应用中禁用
   'com.tencent.mm', // 微信
   'li.songe.gkd',
+
+  'com.google.ar.core', // 谷歌AR服务
+  'com.google.android.syncadapters.calendar', // 谷歌日历同步
+
+  // 小米系
+  'com.miui.aod', // miui 锁屏界面
+  'miui.systemui.plugin', // miui 状态栏界面
+  'com.miui.securityadd', // 系统服务组件
+  // 华为系
+  'com.huawei.android.launcher', // 桌面
+  'com.huawei.mediacontroller', // 音频播控中心
+  // 荣耀系
+  'com.hihonor.android.launcher', // 桌面
+  // OPPO 系
+  'com.oppo.launcher', // 桌面
+  // VIVO 系
+  'com.bbk.launcher2', // 桌面
+  // 一加系
+  'net.oneplus.launcher', // 桌面
+  // 三星系
+  'com.sec.android.app.launcher', // 桌面
 
   // https://github.com/gkd-kit/gkd/issues/451
   'mark.via',
