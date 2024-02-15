@@ -70,9 +70,10 @@
 
 - [快照-0](https://i.gkd.li/import/13115167)
 - [快照-1](https://i.gkd.li/import/13327933)
-- [快照-2](https://i.gkd.li/import/13296280)
-- [快照-3](https://i.gkd.li/import/13625336)
-- [快照-4](https://i.gkd.li/import/13627881)
+- [快照-2](https://i.gkd.li/import/14291964)
+- [快照-3](https://i.gkd.li/import/13296280)
+- [快照-4](https://i.gkd.li/import/13625336)
+- [快照-5](https://i.gkd.li/import/13627881)
 
 ## 局部广告-帖子内"进吧逛逛"弹窗
 

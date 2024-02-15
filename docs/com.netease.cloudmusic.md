@@ -2,7 +2,7 @@
 
 存在 12 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
 
-## 分段广告-有二次确认弹窗
+## 分段广告-卡片广告
 
 默认禁用 - 点击[X]-点击[直接关闭]/[不感兴趣]
 
