@@ -227,7 +227,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/13296280',
         },
         {
-          key: 2,
+          key: 3,
           activityIds: [
             'com.baidu.tieba.pb.pb.main.PbActivity',
             'com.baidu.tieba.tblauncher.MainTabActivity',
