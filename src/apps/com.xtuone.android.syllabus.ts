@@ -25,5 +25,14 @@ export default defineAppConfig({
       rules: '[id="com.xtuone.android.syllabus:id/dialog_ad_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13166501',
     },
+    {
+      key: 4,
+      name: '更新提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '@[vid="update_cancel"] + [vid="go_to_update"]',
+      snapshotUrls: 'https://i.gkd.li/import/14292875',
+    },
   ],
 });
