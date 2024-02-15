@@ -68,8 +68,7 @@ export default defineAppConfig({
         {
           key: 0,
           name: '升级软件后的"开启推送"弹窗',
-          matches:
-            '@[id="com.xiaomi.market:id/dialog_cancel"] - LinearLayout > [id="com.xiaomi.market:id/btn_start_push"]',
+          matches: '[vid="dialog_cancel"]',
           snapshotUrls: 'https://i.gkd.li/import/12714980',
         },
         {
