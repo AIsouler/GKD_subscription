@@ -368,7 +368,7 @@
 | 钱包                   | [com.vivo.wallet](/docs/com.vivo.wallet.md)                                                                                                                       | 1      |
 | 汽车之家               | [com.cubic.autohome](/docs/com.cubic.autohome.md)                                                                                                                 | 2      |
 | 起点读书               | [com.qidian.QDReader](/docs/com.qidian.QDReader.md)                                                                                                               | 9      |
-| 七猫免费小说           | [com.kmxs.reader](/docs/com.kmxs.reader.md)                                                                                                                       | 11     |
+| 七猫免费小说           | [com.kmxs.reader](/docs/com.kmxs.reader.md)                                                                                                                       | 10     |
 | 奇妙应用               | [com.magicalstory.AppStore](/docs/com.magicalstory.AppStore.md)                                                                                                   | 3      |
 | 亲宝宝                 | [com.dw.btime](/docs/com.dw.btime.md)                                                                                                                             | 3      |
 | 青创网                 | [com.m17qcc.mm](/docs/com.m17qcc.mm.md)                                                                                                                           | 1      |
@@ -592,7 +592,7 @@
 | 邮储银行               | [com.yitong.mbank.psbc](/docs/com.yitong.mbank.psbc.md)                                                                                                           | 3      |
 | 有道翻译官             | [com.youdao.translator](/docs/com.youdao.translator.md)                                                                                                           | 1      |
 | 有道云笔记             | [com.youdao.note](/docs/com.youdao.note.md)                                                                                                                       | 1      |
-| 优酷视频               | [com.youku.phone](/docs/com.youku.phone.md)                                                                                                                       | 3      |
+| 优酷视频               | [com.youku.phone](/docs/com.youku.phone.md)                                                                                                                       | 2      |
 | 游民星空               | [com.gamersky](/docs/com.gamersky.md)                                                                                                                             | 1      |
 | 优衣库                 | [com.yek.android.uniqlo](/docs/com.yek.android.uniqlo.md)                                                                                                         | 2      |
 | 阅读                   | [com.heytap.reader](/docs/com.heytap.reader.md)                                                                                                                   | 3      |

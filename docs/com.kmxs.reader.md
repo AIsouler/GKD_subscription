@@ -1,10 +1,6 @@
 # 七猫免费小说
 
-存在 11 规则组 - [com.kmxs.reader](/src/apps/com.kmxs.reader.ts)
-
-## 青少年模式
-
-默认禁用
+存在 10 规则组 - [com.kmxs.reader](/src/apps/com.kmxs.reader.ts)
 
 ## 更新提示
 
