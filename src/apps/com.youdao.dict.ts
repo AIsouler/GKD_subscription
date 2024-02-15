@@ -80,6 +80,14 @@ export default defineAppConfig({
             'https://i.gkd.li/import/14064647',
           ],
         },
+        {
+          key: 3,
+          name: '首页-礼包弹窗',
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          quickFind: true,
+          matches: '[vid="image"] + [vid="close"]',
+          snapshotUrls: 'https://i.gkd.li/import/14296482',
+        },
       ],
     },
     {
