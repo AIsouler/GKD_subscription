@@ -1,6 +1,6 @@
 # 剪映
 
-存在 2 规则组 - [com.lemon.lv](/src/apps/com.lemon.lv.ts)
+存在 3 规则组 - [com.lemon.lv](/src/apps/com.lemon.lv.ts)
 
 ## 局部广告-导出界面底部广告
 
@@ -16,3 +16,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/14122865)
+
+## 功能类-恢复创作
+
+默认禁用 - 自动点击[立即恢复]按钮
+
+- [快照-0](https://i.gkd.li/import/14292755)
