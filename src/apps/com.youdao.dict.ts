@@ -114,5 +114,16 @@ export default defineAppConfig({
         '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/import/13627912',
     },
+    {
+      key: 7,
+      name: '功能类-点击显示释义',
+      activityIds:
+        'com.youdao.dict_flutter_android_bridge.WordBookFlutterActivity',
+      rules: '[desc="点击显示释义"] > View[index=3][visibleToUser=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/14292588', // 点击显示释义前
+        'https://i.gkd.li/import/14292587', // 点击显示释义后
+      ],
+    },
   ],
 });
