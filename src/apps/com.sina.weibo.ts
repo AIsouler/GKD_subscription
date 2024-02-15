@@ -199,10 +199,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          activityIds: [
-            'com.sina.weibo.MainTabActivity',
-            'com.sina.weibo.utils.WeiboDialog$CustomDialog',
-          ],
+          actionMaximum: 1,
           matches: '@[text="以后再说"] + * + [text="去开启"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13218093',
@@ -211,7 +208,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          activityIds: 'com.sina.weibo.MainTabActivity',
+          actionMaximumKey: 0,
           matches:
             '@[id="com.sina.weibo:id/btn_close"] +2 [text="使用您的位置信息"]',
           snapshotUrls: 'https://i.gkd.li/import/13255595',
