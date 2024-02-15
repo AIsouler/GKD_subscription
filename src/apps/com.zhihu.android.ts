@@ -161,9 +161,29 @@ export default defineAppConfig({
           matches: '[text*="广告"] +2 [text="×"]',
           snapshotUrls: 'https://i.gkd.li/import/14220104',
         },
+        {
+          key: 3,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          quickFind: true,
+          matches: '@[vid="menu"][visibleToUser=true] < * - * > [text^="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/14296163',
+        },
       ],
     },
-
+    {
+      key: 15,
+      name: '局部广告-悬浮小广告',
+      rules: [
+        {
+          key: 0,
+          name: '发现页面-右侧年卡折扣悬浮窗',
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          quickFind: true,
+          matches: '@[vid="activity_close"] + * > [vid="activity_img"]',
+          snapshotUrls: 'https://i.gkd.li/import/14296251',
+        },
+      ],
+    },
     {
       enable: false,
       key: 101,
