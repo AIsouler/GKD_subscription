@@ -1,6 +1,6 @@
 # 拼多多
 
-存在 17 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 18 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
 ## 更新提示
 
@@ -24,6 +24,7 @@
 - [快照-0](https://i.gkd.li/import/12642032)
 - [快照-1](https://i.gkd.li/import/12642038)
 - [快照-2](https://i.gkd.li/import/13308175)
+- [快照-3](https://i.gkd.li/import/14310581)
 
 ## 全屏广告-红包弹窗
 
@@ -116,3 +117,11 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/14109435)
+
+## 全屏广告-看视频得现金弹窗
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/532b339f-066c-4b35-9ca7-cb3821dcea5f)
+
+- [快照-0](https://i.gkd.li/import/14305741)
