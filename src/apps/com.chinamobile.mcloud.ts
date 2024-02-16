@@ -10,10 +10,22 @@ export default defineAppConfig({
       name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
+      actionMaximumKey: 0,
       resetMatch: 'app',
-      rules:
-        '@[id="com.chinamobile.mcloud:id/bn_cancel"] + [id="com.chinamobile.mcloud:id/upgrade_title"]',
-      snapshotUrls: 'https://i.gkd.li/import/12774833',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[id="com.chinamobile.mcloud:id/bn_cancel"] + [id="com.chinamobile.mcloud:id/upgrade_title"]',
+          snapshotUrls: 'https://i.gkd.li/import/12774833',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches: '@[vid="bn_cancel"] + * > [vid="upgrade_title"]',
+          snapshotUrls: 'https://i.gkd.li/import/14297700',
+        },
+      ],
     },
     {
       key: 2,
