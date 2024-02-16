@@ -41,4 +41,6 @@
 默认禁用 - 点击X-点击不感兴趣
 
 - [快照-0](https://i.gkd.li/import/13830821)
-- [快照-1](https://i.gkd.li/import/13830858)
+- [快照-1](https://i.gkd.li/import/14312501)
+- [快照-2](https://i.gkd.li/import/13830858)
+- [快照-3](https://i.gkd.li/import/14312349)

@@ -6,7 +6,7 @@
 | AcFun                  | [tv.acfundanmaku.video](/docs/tv.acfundanmaku.video.md)                                                                                                           | 1      |
 | AppShare               | [info.muge.appshare](/docs/info.muge.appshare.md)                                                                                                                 | 5      |
 | BUFF                   | [com.netease.buff](/docs/com.netease.buff.md)                                                                                                                     | 1      |
-| Blued                  | [com.soft.blued](/docs/com.soft.blued.md)                                                                                                                         | 2      |
+| Blued                  | [com.soft.blued](/docs/com.soft.blued.md)                                                                                                                         | 3      |
 | CFMOTO                 | [com.lxt.cfmoto](/docs/com.lxt.cfmoto.md)                                                                                                                         | 1      |
 | CSDN                   | [net.csdn.csdnplus](/docs/net.csdn.csdnplus.md)                                                                                                                   | 6      |
 | CTM Buddy              | [com.ctm](/docs/com.ctm.md)                                                                                                                                       | 2      |
@@ -157,6 +157,7 @@
 | 车旺大卡               | [com.vehicles.activities](/docs/com.vehicles.activities.md)                                                                                                       | 1      |
 | 春木漫画               | [com.galaxy.qbyd](/docs/com.galaxy.qbyd.md)                                                                                                                       | 1      |
 | 春雨医生               | [me.chunyu.ChunyuDoctor](/docs/me.chunyu.ChunyuDoctor.md)                                                                                                         | 1      |
+| 初音社                 | [mikuclub.app](/docs/mikuclub.app.md)                                                                                                                             | 1      |
 | 刺猬猫阅读             | [com.kuangxiangciweimao.novel](/docs/com.kuangxiangciweimao.novel.md)                                                                                             | 1      |
 | 次元城动画             | [net.duohuo.cyc](/docs/net.duohuo.cyc.md)                                                                                                                         | 1      |
 | 次元城动漫             | [com.jarworld.bleach.bvn.sjm.cyc](/docs/com.jarworld.bleach.bvn.sjm.cyc.md)                                                                                       | 1      |
@@ -296,7 +297,7 @@
 | 快看漫画               | [com.kuaikan.comic](/docs/com.kuaikan.comic.md)                                                                                                                   | 2      |
 | 快科技                 | [com.kkeji.news.client](/docs/com.kkeji.news.client.md)                                                                                                           | 1      |
 | 快手                   | [com.smile.gifmaker](/docs/com.smile.gifmaker.md)                                                                                                                 | 4      |
-| 快手极速版             | [com.kuaishou.nebula](/docs/com.kuaishou.nebula.md)                                                                                                               | 1      |
+| 快手极速版             | [com.kuaishou.nebula](/docs/com.kuaishou.nebula.md)                                                                                                               | 2      |
 | 快牙                   | [com.dewmobile.kuaiya](/docs/com.dewmobile.kuaiya.md)                                                                                                             | 1      |
 | 夸克浏览器             | [com.quark.browser](/docs/com.quark.browser.md)                                                                                                                   | 4      |
 | 酷安                   | [com.coolapk.market](/docs/com.coolapk.market.md)                                                                                                                 | 4      |
@@ -355,12 +356,13 @@
 | 南方航空               | [com.csair.mbp](/docs/com.csair.mbp.md)                                                                                                                           | 1      |
 | 南网在线               | [com.csg.palmhall](/docs/com.csg.palmhall.md)                                                                                                                     | 2      |
 | 柠檬解析               | [com.xhgd.jx](/docs/com.xhgd.jx.md)                                                                                                                               | 1      |
+| 柠檬听书               | [com.rocoplayer.app.nm](/docs/com.rocoplayer.app.nm.md)                                                                                                           | 2      |
 | 牛客                   | [com.nowcoder.app.florida](/docs/com.nowcoder.app.florida.md)                                                                                                     | 1      |
 | 牛牛视频               | [com.schunshang.bij.niuniu](/docs/com.schunshang.bij.niuniu.md)                                                                                                   | 1      |
 | 欧乐影院               | [com.xiaohu.olevodmobile](/docs/com.xiaohu.olevodmobile.md)                                                                                                       | 1      |
 | 胖乖生活               | [com.qiekj.user](/docs/com.qiekj.user.md)                                                                                                                         | 2      |
 | 澎湃新闻               | [com.wondertek.paper](/docs/com.wondertek.paper.md)                                                                                                               | 1      |
-| 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 17     |
+| 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 18     |
 | 皮皮搞笑               | [cn.xiaochuankeji.zuiyouLite](/docs/cn.xiaochuankeji.zuiyouLite.md)                                                                                               | 2      |
 | 皮皮喵                 | [com.gentle.ppcat](/docs/com.gentle.ppcat.md)                                                                                                                     | 1      |
 | 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 6      |
@@ -468,7 +470,7 @@
 | 同花顺                 | [com.hexin.plat.android](/docs/com.hexin.plat.android.md)                                                                                                         | 2      |
 | 头条搜索极速版         | [com.ss.android.article.lite](/docs/com.ss.android.article.lite.md)                                                                                               | 7      |
 | 途虎养车               | [cn.TuHu.android](/docs/cn.TuHu.android.md)                                                                                                                       | 2      |
-| 图凌                   | [com.chan.cwallpaper](/docs/com.chan.cwallpaper.md)                                                                                                               | 1      |
+| 图凌                   | [com.chan.cwallpaper](/docs/com.chan.cwallpaper.md)                                                                                                               | 2      |
 | 图图影视               | [com.jsguohua.youquanmall.tt](/docs/com.jsguohua.youquanmall.tt.md)                                                                                               | 1      |
 | vivo 官网              | [com.vivo.space](/docs/com.vivo.space.md)                                                                                                                         | 2      |
 | vivo浏览器             | [com.vivo.browser](/docs/com.vivo.browser.md)                                                                                                                     | 1      |
@@ -508,6 +510,7 @@
 | 我的荣耀               | [com.hihonor.phoneservice](/docs/com.hihonor.phoneservice.md)                                                                                                     | 1      |
 | 我的听书               | [com.github.eprendre.tingshu](/docs/com.github.eprendre.tingshu.md)                                                                                               | 2      |
 | 五寸方                 | [com.hxzd.wcf](/docs/com.hxzd.wcf.md)                                                                                                                             | 1      |
+| 无界趣连               | [com.wujie.connect](/docs/com.wujie.connect.md)                                                                                                                   | 1      |
 | 无线魔盒               | [cn.com.ruijie.magicbox](/docs/cn.com.ruijie.magicbox.md)                                                                                                         | 1      |
 | 无忧行                 | [com.cmi.jegotrip](/docs/com.cmi.jegotrip.md)                                                                                                                     | 2      |
 | 下厨房                 | [com.xiachufang](/docs/com.xiachufang.md)                                                                                                                         | 2      |
