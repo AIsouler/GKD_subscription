@@ -19,14 +19,15 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          quickFind: true,
           key: 0,
           matches:
-            '[id$="tt_splash_skip_btn"] <<n [id="com.coolapk.market:id/ad_container"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
           snapshotUrls: [
             'https://i.gkd.li/import/12503773',
             'https://i.gkd.li/import/13247610',
             'https://i.gkd.li/import/13264779',
+            'https://i.gkd.li/import/13826359',
+            'https://i.gkd.li/import/13827095',
           ],
         },
         {
@@ -40,16 +41,6 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13247733', // 误触
             'https://i.gkd.li/import/13247782', // 可能误触
             'https://i.gkd.li/import/13296816', // snapshot of excludeMatches
-          ],
-        },
-        {
-          key: 2,
-          quickFind: true,
-          matches:
-            '@View[clickable=true] <(2,3) FrameLayout <2 FrameLayout <<n FrameLayout[id="com.coolapk.market:id/ad_container"]',
-          snapshotUrls: [
-            'https://i.gkd.li/import/13826359',
-            'https://i.gkd.li/import/13827095',
           ],
         },
       ],
