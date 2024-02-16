@@ -12,13 +12,14 @@ export default defineAppConfig({
         {
           key: 0,
           name: '腾讯广告',
+          actionDelay: 100, // 缺失此字段会造成触发两次点击才能关闭广告的结果
           activityIds: [
             'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
             'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
           ],
           excludeActivityIds: 'com.magicalstory.AppStore.search.searchActivity', // 排除搜索页，搜索页的规则见 key: 1
           matches:
-            '[visibleToUser=true] - [vid^="banner"] >n FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[visibleToUser=true] < FrameLayout +2 *[visibleToUser=true]',
+            '[visibleToUser=true] - [vid="bannerLayout"] >7 FrameLayout[childCount=5] > FrameLayout[index=2]',
           snapshotUrls: [
             'https://i.gkd.li/import/13413482',
             'https://i.gkd.li/import/13416979',
