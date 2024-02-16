@@ -66,7 +66,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="以后再说"] +2 [text="立即升级"]',
+      rules: 'LinearLayout[childCount=3] > [text="以后再说"][index=0]',
       snapshotUrls: [
         'https://i.gkd.li/import/12534016',
         'https://i.gkd.li/import/13328599',
