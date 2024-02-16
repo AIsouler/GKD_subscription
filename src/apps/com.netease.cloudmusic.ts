@@ -17,6 +17,8 @@ export default defineAppConfig({
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
             'com.netease.cloudmusic.activity.MainActivity',
           ],
+          excludeActivityIds:
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触
           matches: '[vid="adTagView"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/a603ceca-7e89-4b1f-9e17-508c583b32d8',
