@@ -299,5 +299,20 @@ export default defineAppConfig({
         'ViewGroup[vid="pdd"] >n ViewGroup[childCount=3] > @ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/14109435',
     },
+    {
+      key: 18,
+      name: '全屏广告-看视频得现金弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '[vid="pdd"] > FrameLayout > ViewGroup > ViewGroup > ViewGroup > ViewGroup[childCount=3] > ViewGroup[index=0] > ImageView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/532b339f-066c-4b35-9ca7-cb3821dcea5f',
+          snapshotUrls: 'https://i.gkd.li/import/14305741',
+        },
+      ],
+    },
   ],
 });
