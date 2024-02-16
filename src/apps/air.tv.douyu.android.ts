@@ -65,8 +65,11 @@ export default defineAppConfig({
         {
           key: 5,
           matches:
-            'RelativeLayout[visibleToUser=true] > ImageView[clickable=true][index=1]',
-          snapshotUrls: 'https://i.gkd.li/import/13948990',
+            'ViewGroup[childCount=8] > ViewGroup[index=5] >4 RelativeLayout[visibleToUser=true] > ImageView[clickable=true][index=1]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13948990',
+            'https://i.gkd.li/import/14310474', // 避免在此页面误触
+          ],
         },
       ],
     },
