@@ -9,7 +9,6 @@ export default defineAppConfig({
       key: 1,
       name: '青少年模式',
       quickFind: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="cn.xiaochuankeji.zuiyouLite:id/young_close_btn"]',
