@@ -63,7 +63,6 @@ export default defineAppConfig({
       key: 3,
       name: '更新提示-关闭更新弹窗',
       quickFind: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'LinearLayout[childCount=3] > [text="以后再说"][index=0]',
