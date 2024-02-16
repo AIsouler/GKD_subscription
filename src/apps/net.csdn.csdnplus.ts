@@ -101,7 +101,6 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      quickFind: true,
       name: '分段广告-底部广告',
       desc: '点击X-点击不感兴趣',
       rules: [
@@ -109,15 +108,22 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'net.csdn.csdnplus.mvvm.ui.activity.BlogDetailActivity',
           matches:
-            '@ImageView[clickable=true] <<2 ViewGroup <<2 ViewGroup - FrameLayout <<6 FrameLayout[id="net.csdn.csdnplus:id/fl_template_container"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13830821',
+            '[vid$="_container"] > FrameLayout[childCount=3] >(2,3) ViewGroup[childCount=2] >2 ViewGroup[childCount=2] > ImageView[visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13830821',
+            'https://i.gkd.li/import/14312501',
+          ],
         },
         {
           preKeys: 0,
           key: 1,
+          quickFind: true,
           activityIds: 'net.csdn.csdnplus.mvvm.ui.activity.BlogDetailActivity',
-          matches: 'FrameLayout[id="android:id/content"] [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13830858',
+          matches: '@LinearLayout[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13830858',
+            'https://i.gkd.li/import/14312349',
+          ],
         },
       ],
     },
