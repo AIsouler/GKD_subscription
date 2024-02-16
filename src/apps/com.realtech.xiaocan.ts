@@ -44,16 +44,6 @@ export default defineAppConfig({
             'View[childCount=3] > View + ImageView + ImageView[clickable=true][childCount=0]',
           snapshotUrls: 'https://i.gkd.li/import/13694864',
         },
-        {
-          key: 1,
-          name: '签到后抽奖弹窗',
-          activityIds: 'com.realtech.xiaocan.MainActivity',
-          matches:
-            '[id="android:id/content"] >5 View[childCount=6] > ImageView[index=5][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/2d3008c8-0ef3-4165-bd2c-325f4b602f17',
-          snapshotUrls: 'https://i.gkd.li/import/14290847',
-        },
       ],
     },
     {
@@ -62,7 +52,7 @@ export default defineAppConfig({
       desc: '自动点击[关闭]按钮',
       activityIds: 'com.realtech.xiaocan.MainActivity',
       rules:
-        'View[childCount=6][desc!=""] > View[index=4] + ImageView[index=5][clickable=true]',
+        '[id="android:id/content"] >5 View[childCount=6] > ImageView[index=5][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/14290847',
     },
   ],
