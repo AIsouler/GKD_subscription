@@ -19,8 +19,6 @@ export default defineAppConfig({
       name: '全屏广告-VIP弹窗',
       desc: '直接关闭所有底部半屏弹窗',
       quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
       activityIds: [
         'com.luna.biz.main.main.MainActivity',
         'com.luna.biz.ad.AdActivity',
