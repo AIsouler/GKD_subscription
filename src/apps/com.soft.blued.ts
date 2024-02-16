@@ -49,5 +49,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告-会员活动弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.blued.android.core.ui.TransparentActivity',
+          quickFind: true,
+          matches: '[vid="blued_ad_layout"] + [vid="img_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/14310618',
+        },
+      ],
+    },
   ],
 });
