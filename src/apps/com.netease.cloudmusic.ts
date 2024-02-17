@@ -18,7 +18,7 @@ export default defineAppConfig({
             'com.netease.cloudmusic.activity.MainActivity',
           ],
           excludeActivityIds:
-            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触，评论区广告规则见groups key2
           matches: '[vid="adTagView"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/a603ceca-7e89-4b1f-9e17-508c583b32d8',
@@ -96,7 +96,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '评论区广告',
+          name: '评论区广告1',
           quickFind: true,
           activityIds:
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
@@ -120,6 +120,18 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/ed4bb569-b3e1-4644-a586-f01d95c150e9',
           snapshotUrls: 'https://i.gkd.li/import/14276854',
+        },
+        {
+          key: 3,
+          name: '评论区广告2',
+          quickFind: true,
+          activityIds:
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
+          matches:
+            '[vid="commentVHRootId"][visibleToUser=true] - [vid="commentVHRootId"] [vid="closeAction"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2933d8b0-7731-46bb-a644-836da1886958',
+          snapshotUrls: 'https://i.gkd.li/import/14318169',
         },
       ],
     },
