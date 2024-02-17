@@ -117,12 +117,30 @@ export default defineAppConfig({
             'ImageView[childCount=0] <<2 RelativeLayout + FrameLayout + RelativeLayout > RelativeLayout > RelativeLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/13426421',
         },
+        {
+          key: 6,
+          quickFind: true,
+          matches: '[id="com.tencent.qqlive:id/feed_icon"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/42013a93-fb12-4747-92e0-95f5028eb8e5',
+          snapshotUrls: 'https://i.gkd.li/import/14318802',
+        },
         // 以下是配合本规则组内其他key使用的规则，反馈界面的规则都是一样的
+        {
+          preKeys: 6,
+          key: 96,
+          quickFind: true,
+          matches:
+            '[id="com.tencent.qqlive:id/ad_feed_back_dislike"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8746fdc8-828e-42bb-9160-8e67b7af2dc7',
+          snapshotUrls: 'https://i.gkd.li/import/14318811',
+        },
         {
           key: 97,
           name: '广告反馈卡片-点击不感兴趣',
           activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
-          matches: 'LinearLayout > [text="不感兴趣"]',
+          matches: '@FrameLayout[clickable=true] >3 [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13695084',
         },
         {
