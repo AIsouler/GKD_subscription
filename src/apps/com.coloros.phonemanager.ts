@@ -19,5 +19,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.coloros.phonemanager.clear.ClearMainActivity',
+          matches: '[vid="ad_close"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/4d8b27a4-f129-479e-871b-bc6f664072ae',
+          snapshotUrls: 'https://i.gkd.li/import/14317524',
+        },
+      ],
+    },
   ],
 });
