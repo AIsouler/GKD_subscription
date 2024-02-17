@@ -168,7 +168,7 @@ export default defineAppConfig({
     {
       key: 4,
       name: '全屏广告-视频播放时的广告',
-      desc: '自动点击 跳过广告',
+      desc: '自动点击 跳过/关闭广告',
       activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
       rules: [
         {
@@ -200,22 +200,21 @@ export default defineAppConfig({
           key: 3,
           name: '居中广告',
           matches:
-            'FrameLayout[childCount=4] > ImageView + FrameLayout + FrameLayout + ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13695067',
+            'ViewGroup[childCount>10] > FrameLayout[index=10] >4 ImageView[clickable=true][visibleToUser=true][index=1 || index=3]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13695067',
+            'https://i.gkd.li/import/13946107',
+            'https://i.gkd.li/import/14001277',
+          ],
         },
         {
           key: 4,
           name: '居中广告',
-          matches:
-            '[id="com.tencent.qqlive:id/arg"] > FrameLayout[clickable=true] + ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13946107',
-        },
-        {
-          key: 5,
-          name: '居中广告',
-          matches:
-            'RelativeLayout[childCount=2] < LinearLayout <2 FrameLayout[childCount=2] < LinearLayout + ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/14001277',
+          quickFind: true,
+          matches: '[id="com.tencent.qqlive:id/pause_ad_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c8f55e94-30ad-440d-b4d8-06fb19f0c17e',
+          snapshotUrls: 'https://i.gkd.li/import/14318385',
         },
       ],
     },
