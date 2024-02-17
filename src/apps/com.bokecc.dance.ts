@@ -21,5 +21,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-视频播放前的广告',
+      desc: '5秒后点击关闭广告',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.bokecc.dance.player.DancePlayActivity',
+          matches: '[text="关闭广告"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f70ca3e3-762c-47ba-aed8-c9e8d5955b7e',
+          snapshotUrls: 'https://i.gkd.li/import/14318204',
+        },
+      ],
+    },
   ],
 });
