@@ -28,12 +28,14 @@
 - [示例-0](https://m.gkd.li/57941037/827ebe8b-f3c6-4068-8d31-11d5b2578680)
 - [示例-1](https://m.gkd.li/57941037/3d0a500b-8f73-4da9-8e05-88f39c7cb58f)
 - [示例-2](https://m.gkd.li/57941037/ed4bb569-b3e1-4644-a586-f01d95c150e9)
+- [示例-3](https://m.gkd.li/57941037/2933d8b0-7731-46bb-a644-836da1886958)
 
 - [快照-0](https://i.gkd.li/import/12745666)
 - [快照-1](https://i.gkd.li/import/14275571)
 - [快照-2](https://i.gkd.li/import/14275955)
 - [快照-3](https://i.gkd.li/import/14070500)
 - [快照-4](https://i.gkd.li/import/14276854)
+- [快照-5](https://i.gkd.li/import/14318169)
 
 ## 全屏广告-看广告免费听歌弹窗
 
