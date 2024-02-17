@@ -315,10 +315,13 @@ export default defineAppConfig({
         {
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
-            '[vid="pdd"] > FrameLayout > ViewGroup > ViewGroup > ViewGroup > ViewGroup[childCount=3] > ViewGroup[index=0] > ImageView',
+            '[vid="pdd"] > FrameLayout > ViewGroup > ViewGroup > ViewGroup > ViewGroup[childCount=3] > ViewGroup[index=0] > ImageView[clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/532b339f-066c-4b35-9ca7-cb3821dcea5f',
-          snapshotUrls: 'https://i.gkd.li/import/14305741',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14305741',
+            'https://i.gkd.li/import/14317199',
+          ],
         },
       ],
     },
