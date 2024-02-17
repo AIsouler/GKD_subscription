@@ -36,5 +36,30 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告-广告弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.bokecc.dance.activity.MainActivity',
+          matches: '[vid="iv_bottom"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e866b196-04f3-454a-9eb3-a766fed952ba',
+          snapshotUrls: 'https://i.gkd.li/import/14318249',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.bokecc.dance.player.DancePlayActivity',
+          matches: '[vid="iv_cancel"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/45eb8c79-f683-4fcd-a2c4-0c9d1ff9d998',
+          snapshotUrls: 'https://i.gkd.li/import/14318261',
+        },
+      ],
+    },
   ],
 });
