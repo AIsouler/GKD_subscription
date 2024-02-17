@@ -11,6 +11,7 @@
 | CSDN                   | [net.csdn.csdnplus](/docs/net.csdn.csdnplus.md)                                                                                                                   | 6      |
 | CTM Buddy              | [com.ctm](/docs/com.ctm.md)                                                                                                                                       | 2      |
 | Cellular-Z             | [make.more.r2d2.cellular_z](/docs/make.more.r2d2.cellular_z.md)                                                                                                   | 2      |
+| Cimoc                  | [com.cimoc.haleydu](/docs/com.cimoc.haleydu.md)                                                                                                                   | 1      |
 | ClrvAI                 | [com.panaceasoft.pswallpaper](/docs/com.panaceasoft.pswallpaper.md)                                                                                               | 1      |
 | ECOVACS HOME           | [com.eco.global.app](/docs/com.eco.global.app.md)                                                                                                                 | 1      |
 | EMobile7               | [com.weaver.emobile7](/docs/com.weaver.emobile7.md)                                                                                                               | 1      |
@@ -91,7 +92,7 @@
 | NP管理器               | [npgl.jsitcx.xlpqi](/docs/npgl.jsitcx.xlpqi.md)                                                                                                                   | 2      |
 | OPPO软件商店           | [com.heytap.market](/docs/com.heytap.market.md)                                                                                                                   | 1      |
 | OPPO商城               | [com.oppo.store](/docs/com.oppo.store.md)                                                                                                                         | 2      |
-| OPPO手机管家           | [com.coloros.phonemanager](/docs/com.coloros.phonemanager.md)                                                                                                     | 1      |
+| OPPO手机管家           | [com.coloros.phonemanager](/docs/com.coloros.phonemanager.md)                                                                                                     | 2      |
 | OurPlay加速器          | [com.excean.splay](/docs/com.excean.splay.md)                                                                                                                     | 1      |
 | PU口袋校园             | [com.xyhui](/docs/com.xyhui.md)                                                                                                                                   | 3      |
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                                                                                       | 3      |
@@ -436,9 +437,10 @@
 | 随便扫                 | [com.jim.qrcode](/docs/com.jim.qrcode.md)                                                                                                                         | 1      |
 | 随身行                 | [com.wenhua.bamboo](/docs/com.wenhua.bamboo.md)                                                                                                                   | 1      |
 | 随手记                 | [com.mymoney](/docs/com.mymoney.md)                                                                                                                               | 1      |
+| 速搜视频               | [com.jiutian.jiutianapp.sss](/docs/com.jiutian.jiutianapp.sss.md)                                                                                                 | 1      |
 | 速映影院               | [com.duoduo.cimoc.su](/docs/com.duoduo.cimoc.su.md)                                                                                                               | 3      |
 | 钛马星                 | [com.tima.carnet.m.main](/docs/com.tima.carnet.m.main.md)                                                                                                         | 2      |
-| 糖豆                   | [com.bokecc.dance](/docs/com.bokecc.dance.md)                                                                                                                     | 1      |
+| 糖豆                   | [com.bokecc.dance](/docs/com.bokecc.dance.md)                                                                                                                     | 3      |
 | 糖心Vlog               | [com.flutter3.ctangxin.vf0egg](/docs/com.flutter3.ctangxin.vf0egg.md)                                                                                             | 4      |
 | 淘宝                   | [com.taobao.taobao](/docs/com.taobao.taobao.md)                                                                                                                   | 15     |
 | 淘粉吧                 | [com.leixun.taofen8](/docs/com.leixun.taofen8.md)                                                                                                                 | 1      |
@@ -468,6 +470,7 @@
 | tita搜索               | [so.tita](/docs/so.tita.md)                                                                                                                                       | 2      |
 | 同程旅行               | [com.tongcheng.android](/docs/com.tongcheng.android.md)                                                                                                           | 1      |
 | 同花顺                 | [com.hexin.plat.android](/docs/com.hexin.plat.android.md)                                                                                                         | 2      |
+| 通讯录与拨号           | [com.android.contacts](/docs/com.android.contacts.md)                                                                                                             | 1      |
 | 头条搜索极速版         | [com.ss.android.article.lite](/docs/com.ss.android.article.lite.md)                                                                                               | 7      |
 | 途虎养车               | [cn.TuHu.android](/docs/cn.TuHu.android.md)                                                                                                                       | 2      |
 | 图凌                   | [com.chan.cwallpaper](/docs/com.chan.cwallpaper.md)                                                                                                               | 2      |
