@@ -8,11 +8,14 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       matchTime: 10000,
-      quickFind: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules: '@View[clickable=true] <<n [vid="lyContainer"]',
-      snapshotUrls: 'https://i.gkd.li/import/14031922',
+      rules:
+        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+      snapshotUrls: [
+        'https://i.gkd.li/import/14031922',
+        'https://i.gkd.li/import/14322264',
+      ],
     },
     {
       key: 1,
