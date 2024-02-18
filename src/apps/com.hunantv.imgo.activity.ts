@@ -78,5 +78,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-视频播放时的广告',
+      desc: '点击[关闭广告]',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.mgtv.ui.videoplay.MGVideoPlayActivity',
+          matches: '[text="关闭广告"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/386d0906-f81f-43d2-af7f-adc3ab0ea5a6',
+          snapshotUrls: 'https://i.gkd.li/import/14322017',
+        },
+      ],
+    },
   ],
 });
