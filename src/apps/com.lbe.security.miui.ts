@@ -14,5 +14,19 @@ export default defineAppConfig({
       rules: '[text="仅在使用中允许"]',
       snapshotUrls: 'https://i.gkd.li/import/13761264',
     },
+    {
+      key: 2,
+      name: '通知提示-请求发送通知弹窗',
+      desc: '点击拒绝',
+      rules: [
+        {
+          quickFind: true,
+          matches: '[text$="发送通知"] <2 * +2 * > [text="拒绝"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/0487a113-5b57-402e-96ca-1f351e121d82',
+          snapshotUrls: 'https://i.gkd.li/import/14321882',
+        },
+      ],
+    },
   ],
 });
