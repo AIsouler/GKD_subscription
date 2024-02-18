@@ -26,5 +26,20 @@ export default defineAppConfig({
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
       snapshotUrls: 'https://i.gkd.li/import/12701029',
     },
+    {
+      key: 4,
+      name: '全屏广告-视频播放时的广告',
+      desc: '点击[关闭广告]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.youku.ui.activity.DetailActivity',
+          matches: '[text="关闭广告"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/529c75b6-1a97-4765-856b-dd4d4c810207',
+          snapshotUrls: 'https://i.gkd.li/import/14321401',
+        },
+      ],
+    },
   ],
 });
