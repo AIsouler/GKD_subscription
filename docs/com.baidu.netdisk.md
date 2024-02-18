@@ -1,6 +1,6 @@
 # 百度网盘
 
-存在 11 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
+存在 12 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
 
 ## 全屏广告-活动弹窗
 
@@ -50,6 +50,12 @@
 默认禁用 - 自动点击关闭
 
 - [快照-0](https://i.gkd.li/import/12923936)
+
+## 评价提示
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14317054)
 
 ## 全屏广告-看视频免费享极速下载弹窗
 
