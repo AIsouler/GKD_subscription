@@ -373,6 +373,22 @@ type RawAppRuleProps = {
  *  top: 'width*0.0852',
  * }
  * ```
+ * 
+ * 相对坐标计算公式，以width属性为例（选择目标节点某一个属性即可）
+ * K为系数，需要计算出具体数值或使用字符串类型填写数学表达式
+ * W为鼠标悬停在快照截图上时左边的数值，H为鼠标悬停在快照截图上时右边的数值
+
+ * right : 'width * K',
+ * K = ( |需要点击的节点W-目标节点right| ) / 目标节点width
+
+ * left : 'width * K',
+ * K = ( |需要点击的节点W-目标节点left| ) / 目标节点width
+
+ * top : 'width * K',
+ * K = ( |需要点击的节点H-目标节点top| ) / 目标节点width
+
+ * bottom : 'width * K',
+ * K = ( |需要点击的节点H-目标节点bottom| ) / 目标节点width
  */
 export type Position = {
   /**
