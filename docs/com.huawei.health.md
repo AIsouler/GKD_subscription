@@ -1,6 +1,6 @@
 # 华为运动健康
 
-存在 5 规则组 - [com.huawei.health](/src/apps/com.huawei.health.ts)
+存在 6 规则组 - [com.huawei.health](/src/apps/com.huawei.health.ts)
 
 ## 开屏广告
 
@@ -31,3 +31,11 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13587206)
+
+## 功能类-请求开启“实时推送步数”弹窗
+
+默认禁用 - 点击取消
+
+- [示例-0](https://m.gkd.li/57941037/7e9b7131-35ae-49dd-badf-13b6dae3aa96)
+
+- [快照-0](https://i.gkd.li/import/14321121)
