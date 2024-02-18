@@ -32,12 +32,39 @@ export default defineAppConfig({
       desc: '点击[关闭广告]',
       rules: [
         {
+          key: 0,
           quickFind: true,
           activityIds: 'com.youku.ui.activity.DetailActivity',
           matches: '[text="关闭广告"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/529c75b6-1a97-4765-856b-dd4d4c810207',
           snapshotUrls: 'https://i.gkd.li/import/14321401',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.youku.ui.activity.DetailActivity',
+          matches: '[vid="xadsdk_pause_ad_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/42773084-a7db-4e70-878d-6a5eacd5ecb2',
+          snapshotUrls: 'https://i.gkd.li/import/14321469',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          name: '视频播放时的广告',
+          quickFind: true,
+          activityIds: 'com.youku.ui.activity.DetailActivity',
+          matches: '[vid="novelad_corner_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8994fdc0-fce0-4a06-8bc5-2ff23fc3afe5',
+          snapshotUrls: 'https://i.gkd.li/import/14321461',
         },
       ],
     },
