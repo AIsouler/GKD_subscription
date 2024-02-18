@@ -16,8 +16,8 @@ export default defineAppConfig({
             'com.mobile.businesshall.ui.common.RecommendPopupActivity',
           matches: '[vid="img_close_btn"][clickable=true][visibleToUser=true]',
           exampleUrls:
-            'https://m.gkd.li/57941037/39a38afb-dcf9-4dbc-b3f1-af522dd33544',
-          snapshotUrls: 'https://i.gkd.li/import/14318769',
+            'https://m.gkd.li/57941037/a3ad68fc-4a2e-45e2-87d3-97ece1fceaa4',
+          snapshotUrls: 'https://i.gkd.li/import/14321032',
         },
       ],
     },
