@@ -67,5 +67,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '功能类-请求开启“实时推送步数”弹窗',
+      desc: '点击取消',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.huawei.health.MainActivity',
+          matches:
+            '[text*="实时推送步数"] <2 * < * +2 * >4 [text="取消"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7e9b7131-35ae-49dd-badf-13b6dae3aa96',
+          snapshotUrls: 'https://i.gkd.li/import/14321121',
+        },
+      ],
+    },
   ],
 });
