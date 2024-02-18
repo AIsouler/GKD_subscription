@@ -7,10 +7,19 @@ export default defineAppConfig({
     {
       key: 0,
       name: '青少年模式',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'Button[text=`开启青少年模式`] + * > Button[text!=null]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '[text="体验一下"] + [text="关闭"][clickable=true][text.length=2]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d2b6ee77-ae06-4873-a106-db4ce2324777',
+          snapshotUrls: 'https://i.gkd.li/import/14321107',
+        },
+      ],
     },
     {
       key: 1,
