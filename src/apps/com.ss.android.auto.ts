@@ -88,19 +88,19 @@ export default defineAppConfig({
     {
       key: 5,
       name: '局部广告-评论区信息流广告',
-      desc: '像正常内容的广告',
+      desc: '点击关闭',
       quickFind: true,
       activityIds: [
         'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
         'com.ss.android.auto.ugc.video.activity.UgcLongPostActivity',
         'com.ss.android.auto.ugc.video.activity.UgcNewDetailActivity',
       ],
-      rules:
-        'FrameLayout > RelativeLayout > @ImageView[clickable=true] - LinearLayout > [text="广告"]',
+      rules: '@ImageView[clickable=true] - LinearLayout > [text="广告"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12811459',
         'https://i.gkd.li/import/12825865',
         'https://i.gkd.li/import/12900666',
+        'https://i.gkd.li/import/14321293',
       ],
     },
     {
