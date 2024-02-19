@@ -177,7 +177,7 @@ export default defineAppConfig({
     },
     {
       key: 13,
-      name: '全屏广告-添加快捷方式到桌面',
+      name: '功能类-添加快捷方式到桌面',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -195,6 +195,16 @@ export default defineAppConfig({
           matches:
             '[text="添加抖音商城到桌面"] +2 LinearLayout > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/import/13669682',
+        },
+        {
+          name: '搜索组件',
+          quickFind: true,
+          activityIds:
+            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+          matches: '[text="暂不开启"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b06cba6d-cb80-4999-8c0b-309d86f7a7a3',
+          snapshotUrls: 'https://i.gkd.li/import/14325749',
         },
       ],
     },
