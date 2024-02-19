@@ -179,6 +179,13 @@ export default defineAppConfig({
           matches: '@[vid="menu"][visibleToUser=true] < * - * > [text^="广告"]',
           snapshotUrls: 'https://i.gkd.li/import/14296163',
         },
+        {
+          key: 4,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          quickFind: true,
+          matches: '@ViewGroup[clickable=true] <3 * < * -2 * >2 [text$="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/14332161',
+        },
       ],
     },
     {
