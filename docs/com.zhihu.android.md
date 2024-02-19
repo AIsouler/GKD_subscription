@@ -8,6 +8,7 @@
 
 - [示例-0](https://m.gkd.li/57941037/f6498773-af55-4ba9-96fa-4c0597523d55)
 - [示例-1](https://m.gkd.li/57941037/65e9f31a-e80f-4996-9621-1b8fd92940d6)
+- [示例-2](https://m.gkd.li/57941037/689c77eb-9026-44db-b22e-d890961a0ad6)
 
 - [快照-0](https://i.gkd.li/import/13849671)
 - [快照-1](https://i.gkd.li/import/12647525)
@@ -15,7 +16,8 @@
 - [快照-3](https://i.gkd.li/import/13849442)
 - [快照-4](https://i.gkd.li/import/14178979)
 - [快照-5](https://i.gkd.li/import/14192451)
-- [快照-6](https://i.gkd.li/import/13849689)
+- [快照-6](https://i.gkd.li/import/14321041)
+- [快照-7](https://i.gkd.li/import/13849689)
 
 ## 通知提示-推送通知弹窗
 
