@@ -48,6 +48,7 @@ jobs:
           tags: true
 
       - name: Create Release
+        id: create_release
         if: ${{ steps.commit.outcome == 'success' }}
         uses: actions/create-release@v1
         env:
@@ -56,3 +57,14 @@ jobs:
           tag_name: v${{ steps.version.outputs.version }}
           release_name: Release ${{ steps.version.outputs.version }}
           body_path: ./CHANGELOG.md
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/AIsouler_gkd.json5
+          asset_name: AIsouler_gkd_${{ steps.version.outputs.version }}.json5
+          asset_content_type: application/json
