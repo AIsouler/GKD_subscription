@@ -29,5 +29,14 @@ export default defineAppConfig({
       rules: '[text="发现新版本"] +3 [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/import/14333103',
     },
+    {
+      key: 3,
+      name: '通知提示-请求开启推送通知弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '[text="开启推送通知"] +2 * > [text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/14333362',
+    },
   ],
 });
