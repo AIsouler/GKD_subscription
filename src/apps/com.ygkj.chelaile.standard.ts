@@ -31,5 +31,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 1,
+      name: '更新提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          matches:
+            '[id="com.ygkj.chelaile.standard:id/cll_interstitial_close"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/31613a9d-202a-4359-bc99-274dddb180ce',
+          snapshotUrls: 'https://i.gkd.li/import/14325666',
+        },
+      ],
+    },
   ],
 });
