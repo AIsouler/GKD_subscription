@@ -131,9 +131,11 @@ export default defineAppConfig({
       key: 5,
       name: '通知提示-公告弹窗',
       desc: '点击[收到]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
       rules: [
         {
-          quickFind: true,
           activityIds: 'info.muge.appshare.view.main.MainActivity',
           matches: '[vid="tvSure"][clickable=true]',
           exampleUrls:
