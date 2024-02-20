@@ -18,15 +18,24 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
-      activityIds: [
-        'com.zhengnengliang.precepts.ui.activity.MainActivity',
-        'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton',
-      ],
-      rules: '[text="点此去广告"] + ImageButton[clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12739767',
-        'https://i.gkd.li/import/12727705', // activityId: 'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton'
+      name: '全屏广告-广告弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: [
+            'com.zhengnengliang.precepts.ui.activity.MainActivity',
+            'com.zhengnengliang.precepts.ui.dialog.DialogTwoButton',
+          ],
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] >2 ImageView[visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/0b140d85-0556-46aa-a648-600ae349f88b',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14338307',
+            'https://i.gkd.li/import/12739767',
+            'https://i.gkd.li/import/12727705',
+          ],
+        },
       ],
     },
   ],
