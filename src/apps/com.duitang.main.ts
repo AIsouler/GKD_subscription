@@ -71,9 +71,15 @@ export default defineAppConfig({
       desc: '点击X',
       rules: [
         {
-          activityIds: 'com.duitang.main.business.display.ImageActivity',
+          activityIds: [
+            'com.duitang.main.business.display.ImageActivity',
+            'com.duitang.main.business.main.NAMainActivity',
+          ],
           matches: '[id="com.duitang.main:id/popUpbtnClose"]',
-          snapshotUrls: 'https://i.gkd.li/import/13997011',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13997011',
+            'https://i.gkd.li/import/14332109',
+          ],
         },
       ],
     },
