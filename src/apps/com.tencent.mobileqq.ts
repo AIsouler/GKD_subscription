@@ -559,6 +559,8 @@ export default defineAppConfig({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
+          name: '迷你窝弹窗',
           quickFind: true,
           action: 'back',
           activityIds:
@@ -567,6 +569,16 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/882ab889-a145-4951-9a44-1dc192490c79',
           snapshotUrls: 'https://i.gkd.li/import/14188980',
+        },
+        {
+          key: 1,
+          name: '个性装扮弹窗',
+          activityIds:
+            'com.tencent.mobileqq.profilecard.activity.FriendProfileCardActivity',
+          matches: '[desc="关闭浮层"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c56c0d50-48b7-4649-9460-d40b73d3594e',
+          snapshotUrls: 'https://i.gkd.li/import/14345395',
         },
       ],
     },
