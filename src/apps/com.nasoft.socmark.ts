@@ -9,6 +9,7 @@ export default defineAppConfig({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
+      quickFind: true,
       rules: '@[text="取消"] + [text="更新"]',
       snapshotUrls: 'https://i.gkd.li/import/14332576',
     },
