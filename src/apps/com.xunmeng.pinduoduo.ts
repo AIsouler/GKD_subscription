@@ -266,8 +266,11 @@ export default defineAppConfig({
         {
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
-            '[id="com.xunmeng.pinduoduo:id/pdd"][childCount=1] >4 ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/import/13972251',
+            '[id="com.xunmeng.pinduoduo:id/pdd"][childCount=1] >4 ImageView[id=null][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13972251',
+            'https://i.gkd.li/import/14341073', // clickable=true避免在此页面误触
+          ],
         },
       ],
     },
