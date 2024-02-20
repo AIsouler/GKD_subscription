@@ -78,5 +78,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '通知提示-请求开启通知弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="消息通知显示消息内容"] +3 [vid="img_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/14332334',
+    },
+    {
+      key: 6,
+      name: '局部广告-帖子详情页卡片广告',
+      activityIds:
+        'cn.soulapp.android.component.square.post.base.detail.PostDetailActivity',
+      quickFind: true,
+      rules: '@ImageView[visibleToUser=true] <2 * < [vid="tvAdClose"]',
+      snapshotUrls: 'https://i.gkd.li/import/14332294',
+    },
   ],
 });
