@@ -13,12 +13,33 @@ export default defineAppConfig({
           activityIds: 'cn.wps.yun.ui.IndexActivity',
           quickFind: true,
           matches:
-            '[id="cn.wps.yun:id/rootGroup"][childCount=5] >  [id="cn.wps.yun:id/moreIconRight"]',
+            '[id="cn.wps.yun:id/rootGroup"][childCount=5] >  [text^="实用技巧"] +3 [id="cn.wps.yun:id/moreIconRight"]',
           exampleUrls:
             'https://m.gkd.li/47232102/bc97cb52-aad0-4114-a548-5831edbe342d',
-          snapshotUrls: 'https://i.gkd.li/import/13495062',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13495062',
+            'https://i.gkd.li/import/14333322', // 限定 [text^="实用技巧"] 防止误触
+          ],
         },
       ],
+    },
+    {
+      key: 2,
+      name: '更新提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '[text="发现新版本"] +3 [text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/14333103',
+    },
+    {
+      key: 3,
+      name: '通知提示-请求开启推送通知弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '[text="开启推送通知"] +2 * > [text="取消"]',
+      snapshotUrls: 'https://i.gkd.li/import/14333362',
     },
   ],
 });
