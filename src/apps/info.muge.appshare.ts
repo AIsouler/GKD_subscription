@@ -127,5 +127,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '通知提示-公告弹窗',
+      desc: '点击[收到]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'info.muge.appshare.view.main.MainActivity',
+          matches: '[vid="tvSure"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8b782da0-1501-4839-a19b-92209b4d2723',
+          snapshotUrls: 'https://i.gkd.li/import/14345476',
+        },
+      ],
+    },
   ],
 });
