@@ -91,5 +91,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 13,
+      name: '评价提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          matches: '@[vid="close"] +2 * > [text="喜欢就给个好评吧"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/da412e0f-47db-4cc0-8821-184c6ba42882',
+          snapshotUrls: 'https://i.gkd.li/import/14343547',
+        },
+      ],
+    },
   ],
 });
