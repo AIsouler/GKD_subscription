@@ -41,13 +41,18 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
+            'com.eastmoney.android.fund.activity.FundSplashActivity',
+          ],
           matches:
             '@ImageView[visibleToUser=true] < FrameLayout - ImageView < FrameLayout <<4 [vid="container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/21743bbb-010a-410c-8ce1-57710d37722d',
-          snapshotUrls: 'https://i.gkd.li/import/14149452',
+          snapshotUrls: [
+            'https://i.gkd.li/import/14149452',
+            'https://i.gkd.li/import/14332091',
+          ],
         },
       ],
     },
