@@ -270,5 +270,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 21,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          name: '投屏页面广告',
+          quickFind: true,
+          activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
+          matches: '@[clickable=true] - [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f',
+          snapshotUrls: 'https://i.gkd.li/import/14358913',
+        },
+      ],
+    },
   ],
 });
