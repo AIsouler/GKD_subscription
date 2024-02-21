@@ -10,17 +10,25 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
+          quickFind: true,
           activityIds: 'top.cycdm.cycapp.MainActivity',
           matches:
-            '[id="net.duohuo.cyc:id/ksad_tk_view"] >4 ViewGroup[index=1] >3 ViewGroup[index=0][childCount=1]',
-          snapshotUrls: 'https://i.gkd.li/import/13972796',
+            '@ViewGroup[clickable=true][childCount=1] < ViewGroup +2 ViewGroup[childCount=2] > [text="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13972796',
+            'https://i.gkd.li/import/14358701',
+            'https://i.gkd.li/import/14358706',
+          ],
         },
         {
           key: 1,
           quickFind: true,
           activityIds: 'top.cycdm.cycapp.MainActivity',
-          matches: '@ViewGroup[childCount=4] > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13972792',
+          matches: '@[clickable=true] > [text="跳过"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13972792',
+            'https://i.gkd.li/import/14358630',
+          ],
         },
       ],
     },
