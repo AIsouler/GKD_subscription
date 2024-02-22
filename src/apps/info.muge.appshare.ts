@@ -45,13 +45,14 @@ export default defineAppConfig({
           key: 0,
           quickFind: true,
           matches:
-            '@FrameLayout[index=2] <3 FrameLayout[childCount=5] <<n [id="info.muge.appshare:id/adContainer"]',
+            'ImageView < @FrameLayout[index=2][desc=null] <3 FrameLayout[childCount=5] <<(6,7) [id="info.muge.appshare:id/adContainer"]',
           exampleUrls:
             'https://m.gkd.li/57941037/c19bb8e3-abae-46ee-bfe9-d7846cd868bc',
           snapshotUrls: [
             'https://i.gkd.li/import/14160820',
             'https://i.gkd.li/import/13712716',
             'https://i.gkd.li/import/13761259',
+            'https://i.gkd.li/i/14368768', // 避免在此页面误触
           ],
         },
       ],
