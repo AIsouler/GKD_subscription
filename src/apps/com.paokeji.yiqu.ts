@@ -100,5 +100,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告-广告弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[text="反馈"] + View[childCount=2][text=""]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6f12fd12-b956-474a-834c-8ebba00efbff',
+          snapshotUrls: 'https://i.gkd.li/i/14362119',
+        },
+      ],
+    },
   ],
 });
