@@ -1,6 +1,6 @@
 # Soul
 
-存在 5 规则组 - [cn.soulapp.android](/src/apps/cn.soulapp.android.ts)
+存在 7 规则组 - [cn.soulapp.android](/src/apps/cn.soulapp.android.ts)
 
 ## 开屏广告
 
@@ -30,3 +30,16 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13693361)
+
+## 通知提示-请求开启通知弹窗
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14332334)
+
+## 局部广告-帖子详情页卡片广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14332294)
+- [快照-1](https://i.gkd.li/import/14359616)

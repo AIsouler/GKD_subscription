@@ -65,6 +65,7 @@
 - [快照-4](https://i.gkd.li/import/14206988)
 - [快照-5](https://i.gkd.li/import/14220104)
 - [快照-6](https://i.gkd.li/import/14296163)
+- [快照-7](https://i.gkd.li/import/14332161)
 
 ## 局部广告-悬浮小广告
 

@@ -1,6 +1,6 @@
 # 米游社
 
-存在 3 规则组 - [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts)
+存在 4 规则组 - [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts)
 
 ## 青少年模式
 
@@ -21,3 +21,16 @@
 
 - [快照-0](https://i.gkd.li/import/13721772)
 - [快照-1](https://i.gkd.li/import/13721776)
+
+## 功能类-原神自动签到
+
+默认禁用 - 点击签到-关闭弹窗-返回
+
+- [示例-0](https://m.gkd.li/57941037/6654679e-58a9-4d6c-85a3-11bd2f82c15e)
+- [示例-1](https://m.gkd.li/57941037/b02eca70-f7d3-4169-99d6-9906c534392a)
+- [示例-2](https://m.gkd.li/57941037/c232ba4c-d50e-4887-85ab-91739928119e)
+
+- [快照-0](https://i.gkd.li/i/14369790)
+- [快照-1](https://i.gkd.li/i/14371469)
+- [快照-2](https://i.gkd.li/i/14371439)
+- [快照-3](https://i.gkd.li/i/14371469)
