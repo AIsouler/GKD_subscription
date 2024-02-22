@@ -37,13 +37,14 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '局部广告-软件详情页卡片广告',
+      name: '局部广告-卡片广告',
       desc: '点击关闭',
-      activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
       rules: [
         {
           key: 0,
+          name: '软件详情页卡片广告',
           quickFind: true,
+          activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
           matches:
             'ImageView < @FrameLayout[index=2][desc=null] <3 FrameLayout[childCount=5] <<(6,7) [id="info.muge.appshare:id/adContainer"]',
           exampleUrls:
@@ -54,6 +55,17 @@ export default defineAppConfig({
             'https://i.gkd.li/import/13761259',
             'https://i.gkd.li/i/14368768', // 避免在此页面误触
           ],
+        },
+        {
+          key: 1,
+          name: '搜索页卡片广告',
+          quickFind: true,
+          activityIds: 'info.muge.appshare.view.search.app.SearchAppActivity',
+          matches:
+            'ImageView < @FrameLayout[index=2][desc=null] <3 FrameLayout[childCount=5] <<7 [vid="adView"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/9f0e824f-b48e-42f7-9d1a-82642e409d12',
+          snapshotUrls: 'https://i.gkd.li/i/14368946',
         },
       ],
     },
