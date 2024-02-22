@@ -90,11 +90,23 @@ export default defineAppConfig({
     {
       key: 6,
       name: '局部广告-帖子详情页卡片广告',
-      activityIds:
-        'cn.soulapp.android.component.square.post.base.detail.PostDetailActivity',
       quickFind: true,
-      rules: '@ImageView[visibleToUser=true] <2 * < [vid="tvAdClose"]',
-      snapshotUrls: 'https://i.gkd.li/import/14332294',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'cn.soulapp.android.component.square.post.base.detail.PostDetailActivity',
+          matches: '@ImageView[visibleToUser=true] <2 * < [vid="tvAdClose"]',
+          snapshotUrls: 'https://i.gkd.li/import/14332294',
+        },
+        {
+          key: 1,
+          activityIds:
+            'cn.soulapp.android.component.square.post.base.detail.PostDetailActivity',
+          matches: '@[clickable=true][visibleToUser=true] >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/14359616',
+        },
+      ],
     },
   ],
 });
