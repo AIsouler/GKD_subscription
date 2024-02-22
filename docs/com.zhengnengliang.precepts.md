@@ -9,9 +9,12 @@
 - [快照-0](https://i.gkd.li/import/12727650)
 - [快照-1](https://i.gkd.li/import/12715352)
 
-## 全屏广告-弹窗广告
+## 全屏广告-广告弹窗
 
-默认禁用
+默认禁用 - 点击关闭
 
-- [快照-0](https://i.gkd.li/import/12739767)
-- [快照-1](https://i.gkd.li/import/12727705)
+- [示例-0](https://m.gkd.li/57941037/0b140d85-0556-46aa-a648-600ae349f88b)
+
+- [快照-0](https://i.gkd.li/import/14338307)
+- [快照-1](https://i.gkd.li/import/12739767)
+- [快照-2](https://i.gkd.li/import/12727705)

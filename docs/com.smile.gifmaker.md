@@ -1,6 +1,6 @@
 # 快手
 
-存在 4 规则组 - [com.smile.gifmaker](/src/apps/com.smile.gifmaker.ts)
+存在 5 规则组 - [com.smile.gifmaker](/src/apps/com.smile.gifmaker.ts)
 
 ## 青少年模式
 
@@ -30,3 +30,11 @@
 - [快照-0](https://i.gkd.li/import/12708707)
 - [快照-1](https://i.gkd.li/import/14001536)
 - [快照-2](https://i.gkd.li/import/14232217)
+
+## 评价提示
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/da412e0f-47db-4cc0-8821-184c6ba42882)
+
+- [快照-0](https://i.gkd.li/import/14343547)

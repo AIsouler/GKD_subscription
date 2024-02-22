@@ -1,6 +1,6 @@
 # 腾讯视频
 
-存在 7 规则组 - [com.tencent.qqlive](/src/apps/com.tencent.qqlive.ts)
+存在 8 规则组 - [com.tencent.qqlive](/src/apps/com.tencent.qqlive.ts)
 
 ## 开屏广告
 
@@ -78,3 +78,11 @@
 
 - [快照-0](https://i.gkd.li/import/12700139)
 - [快照-1](https://i.gkd.li/import/13670465)
+
+## 局部广告-卡片广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f)
+
+- [快照-0](https://i.gkd.li/import/14358913)

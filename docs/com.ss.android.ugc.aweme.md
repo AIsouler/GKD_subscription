@@ -83,12 +83,15 @@
 - [快照-2](https://i.gkd.li/import/14160675)
 - [快照-3](https://i.gkd.li/import/13372725)
 
-## 全屏广告-添加快捷方式到桌面
+## 功能类-添加快捷方式到桌面
 
 默认禁用
 
+- [示例-0](https://m.gkd.li/57941037/b06cba6d-cb80-4999-8c0b-309d86f7a7a3)
+
 - [快照-0](https://i.gkd.li/import/13338556)
 - [快照-1](https://i.gkd.li/import/13669682)
+- [快照-2](https://i.gkd.li/import/14325749)
 
 ## 全屏广告-视频播放中途插入的打招呼界面
 
