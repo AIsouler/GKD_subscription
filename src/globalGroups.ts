@@ -39,9 +39,11 @@ const diabledAppIds = [
   'com.sec.android.app.launcher', // 桌面
 
   // https://github.com/gkd-kit/gkd/issues/451
-  'mark.via',
-  'com.mycompany.app.soulbrowser',
-  'com.mmbox.xbrowser',
+  'mark.via', // via浏览器
+  'mark.via.gp', // via浏览器Google Play版
+  'com.mmbox.xbrowser', // X浏览器
+  'com.mmbox.xbrowser.pro', // X浏览器Google Play版
+  'com.mycompany.app.soulbrowser', // soul浏览器
 ];
 
 // 如果应用规则已有开屏广告一类的规则, 则在全局规则禁用此应用
