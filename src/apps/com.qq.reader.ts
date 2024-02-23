@@ -28,5 +28,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '更新提示-内测邀请弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          matches: '[vid="upgrade_dialog_close_btn"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/03e35d57-5f40-4ccb-911a-5f9061eab46e',
+          snapshotUrls: 'https://i.gkd.li/i/14376088',
+        },
+      ],
+    },
   ],
 });
