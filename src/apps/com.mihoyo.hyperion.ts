@@ -79,5 +79,42 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '功能类-星穹铁道自动签到',
+      desc: '点击签到-关闭弹窗-返回',
+      activityIds: 'com.mihoyo.hyperion.web2.MiHoYoWebActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击签到',
+          matches:
+            '[text="《崩坏：星穹铁道》签到福利"] >4 View[childCount=10] > View + TextView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/a9f426c4-3184-4525-b283-ad77d6f83d02',
+          snapshotUrls: 'https://i.gkd.li/i/14376296',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '关闭签到后的弹窗',
+          matches:
+            '[text="《崩坏：星穹铁道》签到福利"] >3 TextView[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3babb231-30a7-4891-9c4a-c11946838741',
+          snapshotUrls: 'https://i.gkd.li/i/14371787',
+        },
+        {
+          preKeys: 1,
+          key: 2,
+          name: '返回上一个页面',
+          matches:
+            '[text="《崩坏：星穹铁道》签到福利"] > View > View[index=0] >3 TextView[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d8031907-105b-4d37-8542-b71e854b3b8a',
+          snapshotUrls: 'https://i.gkd.li/i/14371790',
+        },
+      ],
+    },
   ],
 });
