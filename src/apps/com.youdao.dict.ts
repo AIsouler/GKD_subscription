@@ -93,10 +93,16 @@ export default defineAppConfig({
     {
       key: 4,
       name: '全屏广告-VIP弹窗',
-      activityIds: 'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
-      rules: '@ImageView[id="com.youdao.dict:id/iv_close"]',
       quickFind: true,
-      snapshotUrls: 'https://i.gkd.li/import/13263706',
+      activityIds: [
+        'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
+        'com.youdao.dict.vip.activity.SecondShowNewUserSevenDayVipActivity',
+      ],
+      rules: 'ImageView[id="com.youdao.dict:id/iv_close"][clickable=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/13263706',
+        'https://i.gkd.li/i/14381735',
+      ],
     },
     {
       key: 5,
