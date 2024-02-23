@@ -43,8 +43,6 @@ export default defineAppConfig({
       key: 4,
       name: '功能类-原神自动签到',
       desc: '点击签到-关闭弹窗-返回',
-      actionMaximum: 1,
-      resetMatch: 'app',
       activityIds: 'com.mihoyo.hyperion.web2.MiHoYoWebActivity',
       rules: [
         {
