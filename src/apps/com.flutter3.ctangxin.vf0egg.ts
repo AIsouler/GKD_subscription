@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             'FrameLayout > View > View > View > View > @View[clickable=true && desc.length=2] + ImageView[childCount=1]',
-          snapshotUrls: 'https://i.gkd.li/import/12836857',
+          snapshotUrls: 'https://i.gkd.li/i/12836857',
         },
       ],
     },
@@ -33,7 +33,7 @@ export default defineAppConfig({
           action: 'back',
           matches:
             'FrameLayout > View > View > View[index=0] > View > ImageView[childCount=1] + View[clickable=true && desc=null]',
-          snapshotUrls: 'https://i.gkd.li/import/12836891',
+          snapshotUrls: 'https://i.gkd.li/i/12836891',
         },
       ],
     },
@@ -47,7 +47,7 @@ export default defineAppConfig({
         {
           action: 'back',
           matches: '[desc="公告"] +2 [desc="取消"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12836854',
+          snapshotUrls: 'https://i.gkd.li/i/12836854',
         },
       ],
     },

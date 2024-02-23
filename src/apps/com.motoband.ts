@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@View[clickable=true] <3 * <2 * < [vid="splash_container_half_size"]',
-      snapshotUrls: 'https://i.gkd.li/import/13849831',
+      snapshotUrls: 'https://i.gkd.li/i/13849831',
     },
   ],
 });

@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[vid="tv_update"] + * > [text="不再提示"]',
-          snapshotUrls: 'https://i.gkd.li/import/13832253',
+          snapshotUrls: 'https://i.gkd.li/i/13832253',
         },
       ],
     },

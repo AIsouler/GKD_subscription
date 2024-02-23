@@ -16,7 +16,7 @@ export default defineAppConfig({
             'ViewGroup > ViewGroup > [text="广告"]',
             'ViewGroup[childCount=3] > TextView + TextView + ImageView[clickable=true]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13520475',
+          snapshotUrls: 'https://i.gkd.li/i/13520475',
         },
         {
           key: 1,
@@ -26,7 +26,7 @@ export default defineAppConfig({
             'ViewGroup > ViewGroup > [text="广告"]',
             '@ViewGroup > [text="跳过"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13546700',
+          snapshotUrls: 'https://i.gkd.li/i/13546700',
         },
         {
           key: 2,
@@ -36,7 +36,7 @@ export default defineAppConfig({
             'ViewGroup > ViewGroup > [text="广告"]',
             'ViewGroup > @ViewGroup[childCount=1] > ImageView[childCount=0]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13546701',
+          snapshotUrls: 'https://i.gkd.li/i/13546701',
         },
         {
           key: 3,
@@ -44,7 +44,7 @@ export default defineAppConfig({
           activityIds: 'com.ys.resemble.ui.login.splash.SplashADSetActivity',
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13520477',
+          snapshotUrls: 'https://i.gkd.li/i/13520477',
         },
       ],
     },

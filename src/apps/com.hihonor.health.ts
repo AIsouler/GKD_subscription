@@ -13,7 +13,7 @@ export default defineAppConfig({
           activityIds: 'com.hihonor.health.main.MainActivity',
           quickFind: true,
           matches: '[id="com.hihonor.health:id/iv_close_filled"]',
-          snapshotUrls: 'https://i.gkd.li/import/13759407',
+          snapshotUrls: 'https://i.gkd.li/i/13759407',
         },
       ],
     },

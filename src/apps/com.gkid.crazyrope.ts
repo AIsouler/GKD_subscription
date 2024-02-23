@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.gkid.crazyrope:id/btn_close"][text="暂不需要"]',
-          snapshotUrls: 'https://i.gkd.li/import/12916419',
+          snapshotUrls: 'https://i.gkd.li/i/12916419',
         },
       ],
     },
@@ -28,8 +28,8 @@ export default defineAppConfig({
         '[id="com.gkid.crazyrope:id/tv_close"][text="关闭广告"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/13262845',
-        'https://i.gkd.li/import/13262844',
+        'https://i.gkd.li/i/13262845',
+        'https://i.gkd.li/i/13262844',
       ],
     },
   ],

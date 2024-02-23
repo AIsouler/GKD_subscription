@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.fbank.mobile:id/iv_dumiao"]',
-          snapshotUrls: 'https://i.gkd.li/import/13797434',
+          snapshotUrls: 'https://i.gkd.li/i/13797434',
         },
       ],
     },

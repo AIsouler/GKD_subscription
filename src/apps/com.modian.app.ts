@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.modian.app:id/banner_view"] + [id="com.modian.app:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13610188',
+          snapshotUrls: 'https://i.gkd.li/i/13610188',
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.jsmcc:id/cancelVersionTV"]',
-          snapshotUrls: 'https://i.gkd.li/import/13327322',
+          snapshotUrls: 'https://i.gkd.li/i/13327322',
         },
       ],
     },

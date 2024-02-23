@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.dewmobile.kuaiya.act.MainActivity',
           matches:
             'ImageView - FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13477048',
+          snapshotUrls: 'https://i.gkd.li/i/13477048',
         },
       ],
     },

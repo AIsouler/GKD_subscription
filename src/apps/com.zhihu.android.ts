@@ -21,7 +21,7 @@ export default defineAppConfig({
           key: 0,
           quickFind: true,
           matches: '@ImageView[clickable=true] -n [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13849671',
+          snapshotUrls: 'https://i.gkd.li/i/13849671',
         },
         {
           key: 1,
@@ -30,8 +30,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/f6498773-af55-4ba9-96fa-4c0597523d55',
           snapshotUrls: [
-            'https://i.gkd.li/import/12647525',
-            'https://i.gkd.li/import/14178516', //activityId: com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity
+            'https://i.gkd.li/i/12647525',
+            'https://i.gkd.li/i/14178516', //activityId: com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity
           ],
         },
         {
@@ -39,8 +39,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '@ImageView[clickable=true] -(2,3) * > [text*="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13849442',
-            'https://i.gkd.li/import/14178979',
+            'https://i.gkd.li/i/13849442',
+            'https://i.gkd.li/i/14178979',
           ],
           exampleUrls:
             'https://m.gkd.li/57941037/65e9f31a-e80f-4996-9621-1b8fd92940d6',
@@ -49,7 +49,7 @@ export default defineAppConfig({
           key: 3,
           quickFind: true,
           matches: '@ViewGroup[clickable=true] <4 * -3 * >2 [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/14192451',
+          snapshotUrls: 'https://i.gkd.li/i/14192451',
         },
         {
           key: 4,
@@ -59,14 +59,14 @@ export default defineAppConfig({
             '[vid="dot_text_layout"] + [vid="menu_container"] > [vid="menu"]',
           exampleUrls:
             'https://m.gkd.li/57941037/689c77eb-9026-44db-b22e-d890961a0ad6',
-          snapshotUrls: 'https://i.gkd.li/import/14321041',
+          snapshotUrls: 'https://i.gkd.li/i/14321041',
         },
         {
           key: 90,
           preKeys: [0, 1, 2, 3, 4],
           quickFind: true,
           matches: '@[clickable=true] >3 [text$="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13849689',
+          snapshotUrls: 'https://i.gkd.li/i/13849689',
         },
       ],
     },
@@ -84,7 +84,7 @@ export default defineAppConfig({
             '[id="com.zhihu.android:id/guide_title"] - [id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/25cfef06-fe50-4250-bf45-1f6210f95063',
-          snapshotUrls: 'https://i.gkd.li/import/12647583',
+          snapshotUrls: 'https://i.gkd.li/i/12647583',
         },
       ],
     },
@@ -100,7 +100,7 @@ export default defineAppConfig({
             'RelativeLayout[childCount=2] > ImageView[index=1][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/335dee89-4b55-40f1-8316-b7b4f86a8ee6',
-          snapshotUrls: 'https://i.gkd.li/import/12647421',
+          snapshotUrls: 'https://i.gkd.li/i/12647421',
         },
       ],
     },
@@ -115,7 +115,7 @@ export default defineAppConfig({
             '[id="com.zhihu.android:id/image"] < RelativeLayout + [id="com.zhihu.android:id/dismiss"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9eb78a95-c2dc-4a8b-9b86-f9d0fc0ed6fd',
-          snapshotUrls: 'https://i.gkd.li/import/12707676',
+          snapshotUrls: 'https://i.gkd.li/i/12707676',
         },
       ],
     },
@@ -130,7 +130,7 @@ export default defineAppConfig({
           matches: '[vid="ad_container"] [vid="img_close_focus"]',
           exampleUrls:
             'https://m.gkd.li/101449500/11c26ab8-0b01-4345-8ea8-d4e97233b723',
-          snapshotUrls: 'https://i.gkd.li/import/14156887',
+          snapshotUrls: 'https://i.gkd.li/i/14156887',
         },
       ],
     },
@@ -148,10 +148,10 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/0443d5cb-aa24-4447-afd7-58c5a09af835',
           snapshotUrls: [
-            'https://i.gkd.li/import/14178980',
-            'https://i.gkd.li/import/14206949',
-            'https://i.gkd.li/import/14232195', // text="创作者小助手"
-            'https://i.gkd.li/import/14235024', // text="知乎游戏"
+            'https://i.gkd.li/i/14178980',
+            'https://i.gkd.li/i/14206949',
+            'https://i.gkd.li/i/14232195', // text="创作者小助手"
+            'https://i.gkd.li/i/14235024', // text="知乎游戏"
           ],
         },
         {
@@ -163,28 +163,28 @@ export default defineAppConfig({
             '@ImageView[clickable=true][visibleToUser=true] + * > [text*="广告"]',
           exampleUrls:
             'https://m.gkd.li/45487685/c7d89c48-91d1-4658-b22e-d2626117be8b',
-          snapshotUrls: 'https://i.gkd.li/import/14206988',
+          snapshotUrls: 'https://i.gkd.li/i/14206988',
         },
         {
           key: 2,
           activityIds:
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
           matches: '[text*="广告"] +2 [text="×"]',
-          snapshotUrls: 'https://i.gkd.li/import/14220104',
+          snapshotUrls: 'https://i.gkd.li/i/14220104',
         },
         {
           key: 3,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           quickFind: true,
           matches: '@[vid="menu"][visibleToUser=true] < * - * > [text^="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/14296163',
+          snapshotUrls: 'https://i.gkd.li/i/14296163',
         },
         {
           key: 4,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           quickFind: true,
           matches: '@ViewGroup[clickable=true] <3 * < * -2 * >2 [text$="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/14332161',
+          snapshotUrls: 'https://i.gkd.li/i/14332161',
         },
       ],
     },
@@ -198,7 +198,7 @@ export default defineAppConfig({
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           quickFind: true,
           matches: '@[vid="activity_close"] + * > [vid="activity_img"]',
-          snapshotUrls: 'https://i.gkd.li/import/14296251',
+          snapshotUrls: 'https://i.gkd.li/i/14296251',
         },
       ],
     },
@@ -216,8 +216,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/6f6e5fd0-98a8-4a92-be02-7f34e3c5b8bd',
           snapshotUrls: [
-            'https://i.gkd.li/import/12647688',
-            'https://i.gkd.li/import/12707687', // 使用 [visibleToUser=true] 进行限定，防止在控件不可见时提前触发规则
+            'https://i.gkd.li/i/12647688',
+            'https://i.gkd.li/i/12707687', // 使用 [visibleToUser=true] 进行限定，防止在控件不可见时提前触发规则
           ],
         },
       ],

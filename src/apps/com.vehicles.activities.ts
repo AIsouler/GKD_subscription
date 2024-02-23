@@ -18,16 +18,16 @@ export default defineAppConfig({
           ],
           matches: '[id*="iv_close" || id*="iv_cancle"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13952578',
-            'https://i.gkd.li/import/13952509',
-            'https://i.gkd.li/import/13952532',
+            'https://i.gkd.li/i/13952578',
+            'https://i.gkd.li/i/13952509',
+            'https://i.gkd.li/i/13952532',
           ],
         },
         {
           activityIds:
             'com.sinoiov.cwza.discovery.activity.DrivingDynamicsActivity',
           matches: '[id="android:id/content"] >5 ImageView[visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13952519',
+          snapshotUrls: 'https://i.gkd.li/i/13952519',
         },
       ],
     },

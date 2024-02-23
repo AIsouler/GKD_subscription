@@ -15,13 +15,13 @@ export default defineAppConfig({
         {
           matches: '[text^="跳过"][text.length<10]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13264387',
-            'https://i.gkd.li/import/13264381',
+            'https://i.gkd.li/i/13264387',
+            'https://i.gkd.li/i/13264381',
           ],
         },
         {
           matches: '@ImageView - [text="|"]',
-          snapshotUrls: 'https://i.gkd.li/import/13264377',
+          snapshotUrls: 'https://i.gkd.li/i/13264377',
         },
       ],
     },
@@ -33,7 +33,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@FrameLayout - FrameLayout >2 [text="京东"]',
-          snapshotUrls: 'https://i.gkd.li/import/13264383',
+          snapshotUrls: 'https://i.gkd.li/i/13264383',
         },
       ],
     },
@@ -47,7 +47,7 @@ export default defineAppConfig({
           activityIds: 'com.androlua.LuaActivity',
           matches:
             'ImageView < FrameLayout -2 FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13635499',
+          snapshotUrls: 'https://i.gkd.li/i/13635499',
         },
       ],
     },
@@ -61,7 +61,7 @@ export default defineAppConfig({
           activityIds: 'com.androlua.LuaActivity',
           matches:
             '[id="com.chunqiu.ah:id/buttonPanel"] [text="我已知晓"][id="android:id/button2"]',
-          snapshotUrls: 'https://i.gkd.li/import/13852430',
+          snapshotUrls: 'https://i.gkd.li/i/13852430',
         },
       ],
     },
@@ -74,7 +74,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.androlua.LuaActivity',
           matches: '[id="com.chunqiu.ah:id/buttonPanel"] [text="不再提示"]',
-          snapshotUrls: 'https://i.gkd.li/import/13852447',
+          snapshotUrls: 'https://i.gkd.li/i/13852447',
         },
       ],
     },
@@ -88,7 +88,7 @@ export default defineAppConfig({
           activityIds: 'com.androlua.LuaActivity',
           matches:
             '@ImageView[visibleToUser=true] < * +3 * > [text="查看详情"]',
-          snapshotUrls: 'https://i.gkd.li/import/13852448',
+          snapshotUrls: 'https://i.gkd.li/i/13852448',
         },
       ],
     },
@@ -102,7 +102,7 @@ export default defineAppConfig({
           activityIds: 'com.androlua.LuaActivity',
           matches:
             '[id="com.chunqiu.ah:id/ksad_container"] >n View[id="logoBox"] > TextView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13852535',
+          snapshotUrls: 'https://i.gkd.li/i/13852535',
         },
         {
           key: 1,
@@ -110,9 +110,9 @@ export default defineAppConfig({
           matches:
             '[id="android:id/content"] FrameLayout[childCount<=5] > FrameLayout[childCount=1] > ImageView[visibleToUser=true][index=0]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13852695',
-            'https://i.gkd.li/import/13852670',
-            'https://i.gkd.li/import/13852669',
+            'https://i.gkd.li/i/13852695',
+            'https://i.gkd.li/i/13852670',
+            'https://i.gkd.li/i/13852669',
           ],
         },
       ],

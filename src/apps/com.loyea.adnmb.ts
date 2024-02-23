@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: 'LinearLayout > Button[text="确定"]',
-      snapshotUrls: 'https://i.gkd.li/import/13623450',
+      snapshotUrls: 'https://i.gkd.li/i/13623450',
     },
   ],
 });

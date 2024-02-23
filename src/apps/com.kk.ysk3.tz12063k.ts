@@ -15,7 +15,7 @@ export default defineAppConfig({
           matches: '[text="朕知道了"][clickable=true][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/c93d9be8-559a-46aa-8416-f52a7c99df4b',
-          snapshotUrls: 'https://i.gkd.li/import/14321907',
+          snapshotUrls: 'https://i.gkd.li/i/14321907',
         },
       ],
     },

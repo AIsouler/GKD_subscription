@@ -16,7 +16,7 @@ export default defineAppConfig({
             '[text="广告"]',
             '[id="com.cctv.cctv5ultimate:id/iv_close"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13405159',
+          snapshotUrls: 'https://i.gkd.li/i/13405159',
         },
       ],
     },

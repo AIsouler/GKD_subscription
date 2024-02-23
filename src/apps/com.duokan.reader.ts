@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
       rules: '[id="com.duokan.reader:id/store_feed_layer_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13248773',
+      snapshotUrls: 'https://i.gkd.li/i/13248773',
     },
     {
       key: 3,
@@ -23,7 +23,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.duokan.reader:id/reading_stop_read_recommend_stop"]',
-          snapshotUrls: 'https://i.gkd.li/import/13413412',
+          snapshotUrls: 'https://i.gkd.li/i/13413412',
         },
       ],
     },
@@ -35,7 +35,7 @@ export default defineAppConfig({
       activityIds: 'com.duokan.reader.DkMainActivity',
       rules:
         '@ImageView < FrameLayout[id="com.duokan.reader:id/reading__app_ad_view__close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13497902',
+      snapshotUrls: 'https://i.gkd.li/i/13497902',
     },
     {
       key: 5,
@@ -56,8 +56,8 @@ export default defineAppConfig({
         },
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/13498048',
-        'https://i.gkd.li/import/13497990',
+        'https://i.gkd.li/i/13498048',
+        'https://i.gkd.li/i/13497990',
       ],
     },
     {
@@ -72,7 +72,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.duokan.reader:id/general__common_dialog_view__button_frame"] >2 [text="以后再说"]',
-          snapshotUrls: 'https://i.gkd.li/import/14007573',
+          snapshotUrls: 'https://i.gkd.li/i/14007573',
         },
       ],
     },

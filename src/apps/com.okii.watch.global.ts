@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.okii.watch.global:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13630943',
+      snapshotUrls: 'https://i.gkd.li/i/13630943',
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineAppConfig({
         matches: '[id="com.okii.watch.global:id/photo_sensitive_close"]',
         exampleUrls:
           'https://m.gkd.li/57941037/8a5030a1-2b24-4a8a-a944-29d0eaabf936',
-        snapshotUrls: 'https://i.gkd.li/import/13630944',
+        snapshotUrls: 'https://i.gkd.li/i/13630944',
       },
     },
   ],

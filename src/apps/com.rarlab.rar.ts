@@ -11,7 +11,7 @@ export default defineAppConfig({
       desc: '自动点击"放弃"',
       activityIds: 'com.rarlab.rar.MainActivity',
       rules: '[text="订购"] + [text="放弃"]',
-      snapshotUrls: 'https://i.gkd.li/import/12781596',
+      snapshotUrls: 'https://i.gkd.li/i/12781596',
     },
   ],
 });

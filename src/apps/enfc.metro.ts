@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           activityIds: 'enfc.metro.session.web.rn.RPReactActivity',
           matches: '@View[clickable=true] - * [text="扭动手机"]',
-          snapshotUrls: 'https://i.gkd.li/import/13988597',
+          snapshotUrls: 'https://i.gkd.li/i/13988597',
         },
       ],
     },

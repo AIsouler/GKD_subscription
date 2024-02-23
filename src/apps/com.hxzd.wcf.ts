@@ -15,7 +15,7 @@ export default defineAppConfig({
           matches: '[id="com.hxzd.wcf:id/btn_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/88897f2d-647e-47f8-8e43-1fe349b3442d',
-          snapshotUrls: 'https://i.gkd.li/import/14155547',
+          snapshotUrls: 'https://i.gkd.li/i/14155547',
         },
       ],
     },

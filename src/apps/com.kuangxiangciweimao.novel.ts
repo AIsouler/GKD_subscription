@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.kuangxiangciweimao.novel:id/mTasksView"]',
-      snapshotUrls: 'https://i.gkd.li/import/13056248',
+      snapshotUrls: 'https://i.gkd.li/i/13056248',
     },
   ],
 });

@@ -16,7 +16,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.mm.android.lchg:id/btn_cancel"][text*="稍后再说"]',
-          snapshotUrls: 'https://i.gkd.li/import/13540871',
+          snapshotUrls: 'https://i.gkd.li/i/13540871',
         },
       ],
     },

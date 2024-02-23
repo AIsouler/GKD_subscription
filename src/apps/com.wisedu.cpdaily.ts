@@ -13,7 +13,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="com.wisedu.cpdaily:id/btn_update"] + [id="com.wisedu.cpdaily:id/tv_ignore"]',
-      snapshotUrls: 'https://i.gkd.li/import/13643565',
+      snapshotUrls: 'https://i.gkd.li/i/13643565',
     },
   ],
 });

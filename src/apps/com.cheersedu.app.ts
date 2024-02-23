@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.cheersedu.app:id/iv_version_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13315712',
+      snapshotUrls: 'https://i.gkd.li/i/13315712',
     },
   ],
 });

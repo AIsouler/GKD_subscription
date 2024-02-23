@@ -11,7 +11,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.netease.mkey.activity.NtSecActivity',
       rules: '[id="com.netease.mkey:id/tv_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13421302',
+      snapshotUrls: 'https://i.gkd.li/i/13421302',
     },
   ],
 });

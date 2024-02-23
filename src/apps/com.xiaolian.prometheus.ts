@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '@[vid="close_rel"] - * > [text="发现新版本"]',
-      snapshotUrls: 'https://i.gkd.li/import/14292788',
+      snapshotUrls: 'https://i.gkd.li/i/14292788',
     },
     {
       key: 2,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaolian.home.ui.HomeActivity',
       quickFind: true,
       rules: '@[vid="close_img"] + [text="关注"]',
-      snapshotUrls: 'https://i.gkd.li/import/14292789',
+      snapshotUrls: 'https://i.gkd.li/i/14292789',
     },
   ],
 });

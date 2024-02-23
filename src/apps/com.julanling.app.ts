@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.julanling.dgq.main.view.MainFragmentActivity',
       rules:
         'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
-      snapshotUrls: 'https://i.gkd.li/import/13523567',
+      snapshotUrls: 'https://i.gkd.li/i/13523567',
     },
   ],
 });

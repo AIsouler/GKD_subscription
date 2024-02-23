@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '@FlattenUIImage + LynxAdComponentView',
-          snapshotUrls: 'https://i.gkd.li/import/12911010',
+          snapshotUrls: 'https://i.gkd.li/i/12911010',
         },
         {
           key: 1,
@@ -21,7 +21,7 @@ export default defineAppConfig({
             '[vid="exportAdContainer"] FrameLayout[childCount=7] > FlattenUIImage[index=6]',
           exampleUrls:
             'https://m.gkd.li/57941037/bc46565b-16ac-4415-8165-13d075f28fcf',
-          snapshotUrls: 'https://i.gkd.li/import/14149461',
+          snapshotUrls: 'https://i.gkd.li/i/14149461',
         },
       ],
     },
@@ -31,7 +31,7 @@ export default defineAppConfig({
       activityIds: 'com.vega.libcutsame.select.view.CutSameSelectMediaActivity',
       rules:
         '[vid="gallery_layout_below_category_view"] >3 [text="立即下载"] -n LynxFlattenUI[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/14122865',
+      snapshotUrls: 'https://i.gkd.li/i/14122865',
     },
     {
       key: 2,
@@ -40,7 +40,7 @@ export default defineAppConfig({
       activityIds: 'com.vega.main.MainActivity',
       quickFind: true,
       rules: '[vid="tv_title_resume_design"] +2 [vid="tvResumeNow"]',
-      snapshotUrls: 'https://i.gkd.li/import/14292755',
+      snapshotUrls: 'https://i.gkd.li/i/14292755',
     },
   ],
 });

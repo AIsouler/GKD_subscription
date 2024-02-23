@@ -16,9 +16,9 @@ export default defineAppConfig({
       ],
       rules: '[text="CAS安全认证"] >n [text="登录"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12745239',
-        'https://i.gkd.li/import/12745240',
-        'https://i.gkd.li/import/12745241',
+        'https://i.gkd.li/i/12745239',
+        'https://i.gkd.li/i/12745240',
+        'https://i.gkd.li/i/12745241',
       ],
     },
   ],

@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[text="了解更多"] + ViewGroup[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12911014',
+          snapshotUrls: 'https://i.gkd.li/i/12911014',
         },
       ],
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'ViewGroup[desc="原图未勾选"][clickable=true][childCount=2]',
-          snapshotUrls: 'https://i.gkd.li/import/12911013',
+          snapshotUrls: 'https://i.gkd.li/i/12911013',
         },
       ],
     },

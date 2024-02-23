@@ -21,7 +21,7 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             '@Image < View + View + View > View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13218286',
+          snapshotUrls: 'https://i.gkd.li/i/13218286',
         },
       ],
     },
@@ -31,7 +31,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_iv_novel_back"]',
-      snapshotUrls: 'https://i.gkd.li/import/13229127',
+      snapshotUrls: 'https://i.gkd.li/i/13229127',
     },
     {
       key: 3,
@@ -40,7 +40,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13256447',
+      snapshotUrls: 'https://i.gkd.li/i/13256447',
     },
     {
       key: 4,
@@ -51,7 +51,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',
-      snapshotUrls: 'https://i.gkd.li/import/13256505',
+      snapshotUrls: 'https://i.gkd.li/i/13256505',
     },
   ],
 });

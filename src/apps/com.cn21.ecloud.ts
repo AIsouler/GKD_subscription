@@ -12,8 +12,8 @@ export default defineAppConfig({
       rules:
         '[id="com.cn21.ecloud:id/content_frame"] >n FrameLayout >n @ImageView[desc=null] - View < View[childCount=2]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12865481',
-        'https://i.gkd.li/import/12865488',
+        'https://i.gkd.li/i/12865481',
+        'https://i.gkd.li/i/12865488',
       ],
     },
     {
@@ -24,7 +24,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.cn21.ecloud:id/ivCancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13399488',
+      snapshotUrls: 'https://i.gkd.li/i/13399488',
     },
   ],
 });

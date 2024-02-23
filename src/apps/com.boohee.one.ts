@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@[id="com.boohee.one:id/tv_ignore"] + [id="com.boohee.one:id/tv_update"]',
-      snapshotUrls: 'https://i.gkd.li/import/12716918',
+      snapshotUrls: 'https://i.gkd.li/i/12716918',
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default defineAppConfig({
       activityIds: 'com.sensorsdata.sf.ui.view.DialogActivity',
       rules:
         'LinearLayout[childCount=2] > @ImageView[id=null][clickable=true] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/12716970',
+      snapshotUrls: 'https://i.gkd.li/i/12716970',
     },
     {
       enable: true,
@@ -32,7 +32,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.boohee.one:id/img_close_push"]',
-      snapshotUrls: 'https://i.gkd.li/import/12716950',
+      snapshotUrls: 'https://i.gkd.li/i/12716950',
     },
   ],
 });

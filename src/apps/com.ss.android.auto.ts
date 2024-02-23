@@ -22,8 +22,8 @@ export default defineAppConfig({
             'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] - LinearLayout > [text="广告"]',
           // 貌似快照存在延迟导致屏幕与节点不对应
           snapshotUrls: [
-            'https://i.gkd.li/import/12660816',
-            'https://i.gkd.li/import/13959610',
+            'https://i.gkd.li/i/12660816',
+            'https://i.gkd.li/i/13959610',
           ],
         },
         {
@@ -31,15 +31,15 @@ export default defineAppConfig({
           preKeys: 0,
           name: '点击"不感兴趣"1', // 懂车帝v7.8.4样式
           matches: '@ViewGroup[clickable=true] TextView[text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13538627',
+          snapshotUrls: 'https://i.gkd.li/i/13538627',
         },
         {
           preKeys: 0,
           name: '点击"不感兴趣"2', // 懂车帝v7.7.4样式、v7.8.0样式
           matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12711589',
-            'https://i.gkd.li/import/13959613', //v7.8.0样式
+            'https://i.gkd.li/i/12711589',
+            'https://i.gkd.li/i/13959613', //v7.8.0样式
           ],
         },
       ],
@@ -53,7 +53,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@TextView[text="以后再说"] - FrameLayout >2 TextView[text$="升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/13534445',
+      snapshotUrls: 'https://i.gkd.li/i/13534445',
     },
     {
       key: 3,
@@ -69,10 +69,10 @@ export default defineAppConfig({
       rules:
         'FrameLayout > RelativeLayout[childCount=2] > RelativeLayout + ImageView[clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12798338',
-        'https://i.gkd.li/import/13535531',
-        'https://i.gkd.li/import/13535933',
-        'https://i.gkd.li/import/13535932',
+        'https://i.gkd.li/i/12798338',
+        'https://i.gkd.li/i/13535531',
+        'https://i.gkd.li/i/13535933',
+        'https://i.gkd.li/i/13535932',
       ],
     },
     {
@@ -83,7 +83,7 @@ export default defineAppConfig({
         'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
       rules:
         'FrameLayout > RelativeLayout > @ImageView[clickable=true] + [text="广告"]',
-      snapshotUrls: 'https://i.gkd.li/import/12811597',
+      snapshotUrls: 'https://i.gkd.li/i/12811597',
     },
     {
       key: 5,
@@ -97,10 +97,10 @@ export default defineAppConfig({
       ],
       rules: '@ImageView[clickable=true] - LinearLayout > [text="广告"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12811459',
-        'https://i.gkd.li/import/12825865',
-        'https://i.gkd.li/import/12900666',
-        'https://i.gkd.li/import/14321293',
+        'https://i.gkd.li/i/12811459',
+        'https://i.gkd.li/i/12825865',
+        'https://i.gkd.li/i/12900666',
+        'https://i.gkd.li/i/14321293',
       ],
     },
     {
@@ -111,8 +111,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '@TextView[clickable=true] + [text*="推送通知"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12840664',
-        'https://i.gkd.li/import/14060897',
+        'https://i.gkd.li/i/12840664',
+        'https://i.gkd.li/i/14060897',
       ],
     },
     {
@@ -122,7 +122,7 @@ export default defineAppConfig({
       activityIds: 'com.ss.android.auto.activity.ConcernDetailActivity',
       rules:
         'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] -2 [text="广告"]',
-      snapshotUrls: 'https://i.gkd.li/import/13686928',
+      snapshotUrls: 'https://i.gkd.li/i/13686928',
     },
     {
       key: 8,
@@ -133,7 +133,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.ss.android.auto.activity.ConcernDetailActivity',
           matches: 'FrameLayout[childCount=8] > TextView[text=""]',
-          snapshotUrls: 'https://i.gkd.li/import/14034740',
+          snapshotUrls: 'https://i.gkd.li/i/14034740',
         },
       ],
     },

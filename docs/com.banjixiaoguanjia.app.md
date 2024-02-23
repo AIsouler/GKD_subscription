@@ -6,5 +6,5 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12904612)
-- [快照-1](https://i.gkd.li/import/12906196)
+- [快照-0](https://i.gkd.li/i/12904612)
+- [快照-1](https://i.gkd.li/i/12906196)

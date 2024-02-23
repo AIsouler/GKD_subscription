@@ -19,9 +19,9 @@ export default defineAppConfig({
           matches:
             'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12783466',
-            'https://i.gkd.li/import/13334850',
-            'https://i.gkd.li/import/13446735',
+            'https://i.gkd.li/i/12783466',
+            'https://i.gkd.li/i/13334850',
+            'https://i.gkd.li/i/13446735',
           ],
         },
       ],
@@ -38,7 +38,7 @@ export default defineAppConfig({
             'ViewGroup[childCount=2] > [text="广告"]',
             'ViewGroup[childCount=3] > TextView + TextView + ImageView[clickable=true]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13625303',
+          snapshotUrls: 'https://i.gkd.li/i/13625303',
         },
       ],
     },

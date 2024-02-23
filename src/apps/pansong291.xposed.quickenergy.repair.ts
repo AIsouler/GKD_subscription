@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           activityIds: ['pansong291.xposed.quickenergy.ui.MainActivity'],
           matches: ['[id="android:id/button2"]'],
-          snapshotUrls: ['https://i.gkd.li/import/13445477'],
+          snapshotUrls: ['https://i.gkd.li/i/13445477'],
         },
       ],
     },

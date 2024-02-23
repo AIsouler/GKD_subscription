@@ -15,7 +15,7 @@
 
 ## 开始
 
-首先我们需要给需要添加规则的APP打快照, 也就是把APP的广告截图节点信息给保存下来 <https://i.gkd.li/import/12505276> (如何获取这个链接将在审查快照这一步说明)
+首先我们需要给需要添加规则的APP打快照, 也就是把APP的广告截图节点信息给保存下来 <https://i.gkd.li/i/12505276> (如何获取这个链接将在审查快照这一步说明)
 
 首先打开APP-主页 -允许无障碍授权
 
@@ -69,7 +69,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 可以看到第一个项目就是我们刚刚在 WPS 打的快照, 点击这个项目右侧的 `查看` 按钮
 
-我们就能在电脑上审查 <https://i.gkd.li/import/12505286> 这个快照
+我们就能在电脑上审查 <https://i.gkd.li/i/12505286> 这个快照
 
 ## 审查快照
 
@@ -96,7 +96,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 点击执行选择器确定按钮, 发现提示 `无点击目标`, 这是为什么呢, 我们对这个页面再打一个快照看看
 
-<https://i.gkd.li/import/12505350> 鼠标移动到截图里的广告关闭按钮上去点击后查看节点树和属性面板
+<https://i.gkd.li/i/12505350> 鼠标移动到截图里的广告关闭按钮上去点击后查看节点树和属性面板
 
 发现这个图标按钮的属性id已经变成了 `cn.wps.moffice_eng:id/nativeclose`, 于是我们需要扩展一下刚刚的选择器, 确保两个按钮都能选中
 
@@ -106,7 +106,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 ![2023-09-03_15-24-55](https://github.com/gkd-kit/subscription/assets/38517192/113219f1-164c-40c9-bf76-a9b2a3f66503)
 
-可以看到点击成功了, 但是出现了另外一个弹窗了, 叫你选择关闭原因, 这时我们直接点击网页端的快照按钮得到新快照 <https://i.gkd.li/import/12505365>
+可以看到点击成功了, 但是出现了另外一个弹窗了, 叫你选择关闭原因, 这时我们直接点击网页端的快照按钮得到新快照 <https://i.gkd.li/i/12505365>
 
 点击截图里的 `关闭当前广告`, 查看属性面板, 编写测试选择器 `[text="关闭当前广告"]`, 去执行 执行选择器
 
@@ -133,13 +133,13 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
       rules: [
         {
           matches: '[text="关闭当前广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
+          snapshotUrls: 'https://i.gkd.li/i/12505365',//获取链接的方法在上一步有说明
         },
         {
           matches: '[id$="/nativeclose"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12505350',
-            'https://i.gkd.li/import/12505286',
+            'https://i.gkd.li/i/12505350',
+            'https://i.gkd.li/i/12505286',
           ],
         },
       ],
@@ -196,13 +196,13 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="关闭当前广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12505365',
+          snapshotUrls: 'https://i.gkd.li/i/12505365',
         },
         {
           matches: '[id$="/nativeclose"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12505350',
-            'https://i.gkd.li/import/12505286',
+            'https://i.gkd.li/i/12505350',
+            'https://i.gkd.li/i/12505286',
           ],
         },
       ],

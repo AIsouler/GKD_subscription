@@ -17,7 +17,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="开启钱包扩展服务"] +2 [id="com.huawei.wallet:id/linear_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13441814',
+          snapshotUrls: 'https://i.gkd.li/i/13441814',
         },
       ],
     },

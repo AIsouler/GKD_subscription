@@ -21,8 +21,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/7535a849-b4a7-4dd5-a6c1-4d3def042d70',
           snapshotUrls: [
-            'https://i.gkd.li/import/14175556', // id="youqu.android.todesk:id/ivAdClose"
-            'https://i.gkd.li/import/13228546', // id="youqu.android.todesk:id/llClose"
+            'https://i.gkd.li/i/14175556', // id="youqu.android.todesk:id/ivAdClose"
+            'https://i.gkd.li/i/13228546', // id="youqu.android.todesk:id/llClose"
           ],
         },
       ],

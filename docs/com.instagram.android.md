@@ -6,9 +6,9 @@
 
 默认禁用 - 但是步骤较多, 影响app使用
 
-- [快照-0](https://i.gkd.li/import/12798562)
-- [快照-1](https://i.gkd.li/import/12798571)
-- [快照-2](https://i.gkd.li/import/12829448)
-- [快照-3](https://i.gkd.li/import/12798590)
-- [快照-4](https://i.gkd.li/import/12829464)
-- [快照-5](https://i.gkd.li/import/12829492)
+- [快照-0](https://i.gkd.li/i/12798562)
+- [快照-1](https://i.gkd.li/i/12798571)
+- [快照-2](https://i.gkd.li/i/12829448)
+- [快照-3](https://i.gkd.li/i/12798590)
+- [快照-4](https://i.gkd.li/i/12829464)
+- [快照-5](https://i.gkd.li/i/12829492)

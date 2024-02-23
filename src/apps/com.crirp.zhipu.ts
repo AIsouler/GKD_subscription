@@ -16,7 +16,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/13725305',
+          snapshotUrls: 'https://i.gkd.li/i/13725305',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id$="/cancel_tv"]',
-          snapshotUrls: 'https://i.gkd.li/import/13725337',
+          snapshotUrls: 'https://i.gkd.li/i/13725337',
         },
       ],
     },

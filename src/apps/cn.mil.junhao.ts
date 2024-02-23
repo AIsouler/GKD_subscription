@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '[vid="splash_adv_ship"]',
-      snapshotUrls: 'https://i.gkd.li/import/13806892',
+      snapshotUrls: 'https://i.gkd.li/i/13806892',
     },
     {
       key: 1,
@@ -20,14 +20,14 @@ export default defineAppConfig({
       activityIds: 'com.mediacloud.app.nav2.AppHome21Style',
       rules:
         '[vid="fragment_containerx"] > FrameLayout > ImageView[index=2][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13806894',
+      snapshotUrls: 'https://i.gkd.li/i/13806894',
     },
     {
       key: 2,
       name: '功能类-意见反馈浮窗',
       activityIds: 'com.mediacloud.app.nav2.AppHome21Style',
       rules: '[vid="float_feedback"] > ImageView[index=2][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13806896',
+      snapshotUrls: 'https://i.gkd.li/i/13806896',
     },
   ],
 });

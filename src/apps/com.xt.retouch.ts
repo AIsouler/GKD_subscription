@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.xt.retouch:id/market_feedback_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13062637',
+      snapshotUrls: 'https://i.gkd.li/i/13062637',
     },
   ],
 });

@@ -10,17 +10,17 @@
 
 默认禁用 - 点击取消
 
-- [快照-0](https://i.gkd.li/import/13249469)
+- [快照-0](https://i.gkd.li/i/13249469)
 
 ## 更新提示
 
 默认禁用 - 点击取消
 
-- [快照-0](https://i.gkd.li/import/13292512)
-- [快照-1](https://i.gkd.li/import/13455360)
+- [快照-0](https://i.gkd.li/i/13292512)
+- [快照-1](https://i.gkd.li/i/13455360)
 
 ## 全屏广告-弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13292571)
+- [快照-0](https://i.gkd.li/i/13292571)

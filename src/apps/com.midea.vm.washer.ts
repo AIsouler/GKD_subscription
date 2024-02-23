@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="跳过"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13407199',
+      snapshotUrls: 'https://i.gkd.li/i/13407199',
     },
   ],
 });

@@ -14,7 +14,7 @@ export default defineAppConfig({
             'com.elinkway.infinitemovies.ui.activity.NewMainActivity',
           quickFind: true,
           matches: '[id="com.le123.ysdq:id/ad_close_iv"]',
-          snapshotUrls: 'https://i.gkd.li/import/13635244',
+          snapshotUrls: 'https://i.gkd.li/i/13635244',
         },
       ],
     },

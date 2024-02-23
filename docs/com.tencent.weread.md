@@ -6,12 +6,12 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12642247)
-- [快照-1](https://i.gkd.li/import/13233735)
-- [快照-2](https://i.gkd.li/import/14190089)
+- [快照-0](https://i.gkd.li/i/12642247)
+- [快照-1](https://i.gkd.li/i/13233735)
+- [快照-2](https://i.gkd.li/i/14190089)
 
 ## 青少年模式
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13233668)
+- [快照-0](https://i.gkd.li/i/13233668)

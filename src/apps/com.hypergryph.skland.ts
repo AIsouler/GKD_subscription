@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="青少年模式"] +n [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13197012',
+      snapshotUrls: 'https://i.gkd.li/i/13197012',
     },
   ],
 });

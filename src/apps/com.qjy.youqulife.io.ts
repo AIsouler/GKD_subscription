@@ -15,7 +15,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[text="广告"] <2 ViewGroup -n ViewGroup > ViewGroup > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13378653',
+          snapshotUrls: 'https://i.gkd.li/i/13378653',
         },
       ],
     },

@@ -12,7 +12,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ct.client.activity.UserGuideActivity',
       rules: '[id="com.ct.client:id/tvSkip"]',
-      snapshotUrls: ['https://i.gkd.li/import/12508971'],
+      snapshotUrls: ['https://i.gkd.li/i/12508971'],
     },
     {
       key: 2,
@@ -23,9 +23,9 @@ export default defineAppConfig({
       quickFind: true,
       rules: 'LinearLayout > [text="取消升级"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12819594',
-        'https://i.gkd.li/import/13316168',
-        'https://i.gkd.li/import/13695096',
+        'https://i.gkd.li/i/12819594',
+        'https://i.gkd.li/i/13316168',
+        'https://i.gkd.li/i/13695096',
       ],
     },
     {
@@ -37,7 +37,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'ImageView[id="com.ct.client:id/close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12819676'],
+          snapshotUrls: ['https://i.gkd.li/i/12819676'],
         },
       ],
     },
@@ -49,7 +49,7 @@ export default defineAppConfig({
         'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
       ],
       rules: 'Image[text="tishi-close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12913804'],
+      snapshotUrls: ['https://i.gkd.li/i/12913804'],
     },
     {
       key: 5,
@@ -60,7 +60,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       // quickFind: true, 实机测试使用无法跳过
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13043522',
+      snapshotUrls: 'https://i.gkd.li/i/13043522',
     },
     {
       key: 6,
@@ -73,14 +73,14 @@ export default defineAppConfig({
           matches: '[id="com.ct.client:id/close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/3a14e0ac-ce6a-411d-9f92-e50da5165119',
-          snapshotUrls: 'https://i.gkd.li/import/14133742',
+          snapshotUrls: 'https://i.gkd.li/i/14133742',
         },
         {
           activityIds: 'com.ct.client.activity.MainActivity',
           matches: '[id="com.ct.client:id/ivFloatClose"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a97bf7a2-6e35-4922-ad0d-8677fca79f7c',
-          snapshotUrls: 'https://i.gkd.li/import/13043345',
+          snapshotUrls: 'https://i.gkd.li/i/13043345',
         },
       ],
     },

@@ -18,13 +18,13 @@ export default defineAppConfig({
           name: '更新弹窗-1',
           matches:
             '@[id="com.autonavi.minimap:id/iv_close"] + * > [text^="立即升级"]',
-          snapshotUrls: 'https://i.gkd.li/import/13379094',
+          snapshotUrls: 'https://i.gkd.li/i/13379094',
         },
         {
           key: 2,
           name: '更新弹窗-2',
           matches: '@[text="取消"] + * + [text="去下载"]',
-          snapshotUrls: 'https://i.gkd.li/import/13379426',
+          snapshotUrls: 'https://i.gkd.li/i/13379426',
         },
       ],
     },
@@ -36,7 +36,7 @@ export default defineAppConfig({
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules:
         '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/13473388',
+      snapshotUrls: 'https://i.gkd.li/i/13473388',
     },
     {
       key: 10,
@@ -44,7 +44,7 @@ export default defineAppConfig({
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules:
         'RelativeLayout[desc="弹窗"] > [id="com.autonavi.minimap:id/msgbox_popup_clear"]',
-      snapshotUrls: 'https://i.gkd.li/import/12642830',
+      snapshotUrls: 'https://i.gkd.li/i/12642830',
     },
     {
       enable: false,
@@ -57,10 +57,10 @@ export default defineAppConfig({
       rules:
         'ImageView[visibleToUser=true][width<90][height<90] < @ViewGroup -(2) ViewGroup > ViewGroup > View[text*="签到"||text*="成长值"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12642842',
-        'https://i.gkd.li/import/12642845',
-        'https://i.gkd.li/import/12818770', // 限定 ImageView[visibleToUser=true]，防止控件不可见时触发规则
-        'https://i.gkd.li/import/13764540', // 限定 ImageView[width<90][height<90]，避免在此误触
+        'https://i.gkd.li/i/12642842',
+        'https://i.gkd.li/i/12642845',
+        'https://i.gkd.li/i/12818770', // 限定 ImageView[visibleToUser=true]，防止控件不可见时触发规则
+        'https://i.gkd.li/i/13764540', // 限定 ImageView[width<90][height<90]，避免在此误触
       ],
     },
     {
@@ -70,7 +70,7 @@ export default defineAppConfig({
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules:
         '@ImageView < [desc="关闭"][clickable=true] - ViewGroup > ViewGroup > ViewGroup > View[text="立即领取"]',
-      snapshotUrls: ['https://i.gkd.li/import/12642857'],
+      snapshotUrls: ['https://i.gkd.li/i/12642857'],
     },
   ],
 });

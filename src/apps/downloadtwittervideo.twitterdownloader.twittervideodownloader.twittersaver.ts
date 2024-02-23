@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="downloadtwittervideo.twitterdownloader.twittervideodownloader.twittersaver:id/tv_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/13748858',
+          snapshotUrls: 'https://i.gkd.li/i/13748858',
         },
       ],
     },

@@ -17,7 +17,7 @@ export default defineAppConfig({
           matches:
             '[id="com.cf.dubaji:id/dlg_action_positive"][text="立即更新"]',
           action: 'back',
-          snapshotUrls: 'https://i.gkd.li/import/13198107',
+          snapshotUrls: 'https://i.gkd.li/i/13198107',
         },
       ],
     },

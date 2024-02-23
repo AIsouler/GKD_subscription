@@ -6,23 +6,23 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12909632)
+- [快照-0](https://i.gkd.li/i/12909632)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12838294)
-- [快照-1](https://i.gkd.li/import/12838293)
+- [快照-0](https://i.gkd.li/i/12838294)
+- [快照-1](https://i.gkd.li/i/12838293)
 
 ## 未分类-进入飞行模式-提示弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12750185)
+- [快照-0](https://i.gkd.li/i/12750185)
 
 ## 局部广告-首页右侧悬浮广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12783264)
+- [快照-0](https://i.gkd.li/i/12783264)

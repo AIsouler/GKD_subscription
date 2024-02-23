@@ -13,13 +13,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.byted.pangle:id/tt_bu_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12904612',
+          snapshotUrls: 'https://i.gkd.li/i/12904612',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '@LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/12906196',
+          snapshotUrls: 'https://i.gkd.li/i/12906196',
         },
       ],
     },

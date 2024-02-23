@@ -8,4 +8,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/5c2f4dfe-d7ff-415d-81f0-bca6b5b628cb)
 
-- [快照-0](https://i.gkd.li/import/14214392)
+- [快照-0](https://i.gkd.li/i/14214392)

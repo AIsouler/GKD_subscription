@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.qingdaonews.bus:id/iv_native_dislike"]',
-          snapshotUrls: 'https://i.gkd.li/import/13467193',
+          snapshotUrls: 'https://i.gkd.li/i/13467193',
         },
       ],
     },

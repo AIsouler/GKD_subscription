@@ -17,9 +17,9 @@ export default defineAppConfig({
           matches:
             'ImageView[id^="com.ygkj.chelaile.standard:id/cll_all_pic_close"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13062991',
-            'https://i.gkd.li/import/13062984',
-            'https://i.gkd.li/import/13464325',
+            'https://i.gkd.li/i/13062991',
+            'https://i.gkd.li/i/13062984',
+            'https://i.gkd.li/i/13464325',
           ],
         },
         {
@@ -27,7 +27,7 @@ export default defineAppConfig({
           activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
           matches:
             '[id="com.ygkj.chelaile.standard:id/cll_line_single_ad_close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13625374',
+          snapshotUrls: 'https://i.gkd.li/i/13625374',
         },
       ],
     },
@@ -43,7 +43,7 @@ export default defineAppConfig({
             '[id="com.ygkj.chelaile.standard:id/cll_interstitial_close"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/31613a9d-202a-4359-bc99-274dddb180ce',
-          snapshotUrls: 'https://i.gkd.li/import/14325666',
+          snapshotUrls: 'https://i.gkd.li/i/14325666',
         },
       ],
     },

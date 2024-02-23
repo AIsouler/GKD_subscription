@@ -6,11 +6,11 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12865481)
-- [快照-1](https://i.gkd.li/import/12865488)
+- [快照-0](https://i.gkd.li/i/12865481)
+- [快照-1](https://i.gkd.li/i/12865488)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13399488)
+- [快照-0](https://i.gkd.li/i/13399488)

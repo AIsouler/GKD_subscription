@@ -17,7 +17,7 @@ export default defineAppConfig({
           matches:
             '[id="com.sjm.zhuanzhuan.mcy:id/tv_new_version"] < LinearLayoutCompat +n [text="立即升级"]',
           action: 'back',
-          snapshotUrls: 'https://i.gkd.li/import/13392514',
+          snapshotUrls: 'https://i.gkd.li/i/13392514',
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           matches: 'TextView[text="立即更新"]',
           action: 'back',
-          snapshotUrls: 'https://i.gkd.li/import/13327271',
+          snapshotUrls: 'https://i.gkd.li/i/13327271',
         },
       ],
     },

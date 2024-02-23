@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.sjmly.sjmtask.xsh.MainActivity',
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1][index=2] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13761173',
+          snapshotUrls: 'https://i.gkd.li/i/13761173',
         },
       ],
     },

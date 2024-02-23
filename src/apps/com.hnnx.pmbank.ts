@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[text="是否下载最新版客户端？"] <<n [id="android:id/parentPanel"] Button[text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/13536762',
+      snapshotUrls: 'https://i.gkd.li/i/13536762',
     },
   ],
 });

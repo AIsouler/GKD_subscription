@@ -6,22 +6,22 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12840733)
+- [快照-0](https://i.gkd.li/i/12840733)
 
 ## 局部广告-课程表界面广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12999642)
+- [快照-0](https://i.gkd.li/i/12999642)
 
 ## 全屏广告-弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13166501)
+- [快照-0](https://i.gkd.li/i/13166501)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14292875)
+- [快照-0](https://i.gkd.li/i/14292875)

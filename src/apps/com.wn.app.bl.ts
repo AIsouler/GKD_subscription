@@ -15,7 +15,7 @@ export default defineAppConfig({
           matches: '@[desc="我知道了"][clickable=true] + [desc="了解更多"]',
           exampleUrls:
             'https://m.gkd.li/57941037/405a7072-bae5-4db7-8743-608ab3750c1c',
-          snapshotUrls: 'https://i.gkd.li/import/14228688',
+          snapshotUrls: 'https://i.gkd.li/i/14228688',
         },
       ],
     },

@@ -8,10 +8,10 @@
 
 - [示例-0](https://m.gkd.li/47232102/0dae9f4b-8432-4cf4-b648-07ae17cdece2)
 
-- [快照-0](https://i.gkd.li/import/13554797)
+- [快照-0](https://i.gkd.li/i/13554797)
 
 ## 功能类-开启相册同步弹窗
 
 默认禁用 - 点击忽略
 
-- [快照-0](https://i.gkd.li/import/13637185)
+- [快照-0](https://i.gkd.li/i/13637185)

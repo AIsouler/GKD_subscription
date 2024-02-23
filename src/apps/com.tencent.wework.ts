@@ -21,8 +21,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/64bdd899-9a30-4816-bafc-a9e2a0d09ec6',
           snapshotUrls: [
-            'https://i.gkd.li/import/14151095',
-            'https://i.gkd.li/import/14151131', // 已领取的红包、自己的红包
+            'https://i.gkd.li/i/14151095',
+            'https://i.gkd.li/i/14151131', // 已领取的红包、自己的红包
           ],
         },
         {
@@ -36,8 +36,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/52525cdb-0746-483c-b1ba-2282f3a8b8ed',
           snapshotUrls: [
-            'https://i.gkd.li/import/14151108',
-            'https://i.gkd.li/import/14151215',
+            'https://i.gkd.li/i/14151108',
+            'https://i.gkd.li/i/14151215',
           ],
         },
         {
@@ -49,7 +49,7 @@ export default defineAppConfig({
           matches: 'LinearLayout[childCount=3] > LinearLayout TextView',
           exampleUrls:
             'https://m.gkd.li/57941037/2a69cf93-1d10-48c4-8456-663197c6feca',
-          snapshotUrls: 'https://i.gkd.li/import/14151120',
+          snapshotUrls: 'https://i.gkd.li/i/14151120',
         },
       ],
     },

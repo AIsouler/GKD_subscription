@@ -18,7 +18,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@FrameLayout > [id="com.alibaba.android.rimet:id/icft_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13325125',
+          snapshotUrls: 'https://i.gkd.li/i/13325125',
         },
       ],
     },
@@ -36,7 +36,7 @@ export default defineAppConfig({
           matches:
             '@FrameLayout[id="com.alibaba.android.rimet:id/layout_close"] -2 TextView[text="文件即将过期请备份"]',
           action: 'clickCenter',
-          snapshotUrls: 'https://i.gkd.li/import/13325125',
+          snapshotUrls: 'https://i.gkd.li/i/13325125',
         },
       ],
     },
@@ -54,8 +54,8 @@ export default defineAppConfig({
           matches:
             'CheckBox[id="com.alibaba.android.rimet:id/cb_send_origin"][text="原图"][checked=false]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13309648', //未选中 [checked=false]
-            'https://i.gkd.li/import/13309845', //已选中 [checked=true]
+            'https://i.gkd.li/i/13309648', //未选中 [checked=false]
+            'https://i.gkd.li/i/13309845', //已选中 [checked=true]
           ],
         },
       ],
@@ -72,12 +72,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '@Button[text*="暂不更新"] + Button[text*="更新"]',
-          snapshotUrls: 'https://i.gkd.li/import/13402478',
+          snapshotUrls: 'https://i.gkd.li/i/13402478',
         },
         {
           matches:
             'TextView[id="com.alibaba.android.rimet:id/dialog_close_button"]',
-          snapshotUrls: 'https://i.gkd.li/import/13772151',
+          snapshotUrls: 'https://i.gkd.li/i/13772151',
         },
       ],
     },
@@ -93,7 +93,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.alibaba.android.rimet:id/btn_login"]',
-          snapshotUrls: 'https://i.gkd.li/import/13433981',
+          snapshotUrls: 'https://i.gkd.li/i/13433981',
         },
       ],
     },

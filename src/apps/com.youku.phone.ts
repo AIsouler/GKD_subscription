@@ -14,8 +14,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text="青少年模式"] +(3) [text="我知道了"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12701050',
-        'https://i.gkd.li/import/13498556',
+        'https://i.gkd.li/i/12701050',
+        'https://i.gkd.li/i/13498556',
       ],
     },
     {
@@ -24,7 +24,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
-      snapshotUrls: 'https://i.gkd.li/import/12701029',
+      snapshotUrls: 'https://i.gkd.li/i/12701029',
     },
     {
       key: 4,
@@ -38,7 +38,7 @@ export default defineAppConfig({
           matches: '[text="关闭广告"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/529c75b6-1a97-4765-856b-dd4d4c810207',
-          snapshotUrls: 'https://i.gkd.li/import/14321401',
+          snapshotUrls: 'https://i.gkd.li/i/14321401',
         },
         {
           key: 1,
@@ -47,7 +47,7 @@ export default defineAppConfig({
           matches: '[vid="xadsdk_pause_ad_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/42773084-a7db-4e70-878d-6a5eacd5ecb2',
-          snapshotUrls: 'https://i.gkd.li/import/14321469',
+          snapshotUrls: 'https://i.gkd.li/i/14321469',
         },
       ],
     },
@@ -64,7 +64,7 @@ export default defineAppConfig({
           matches: '[vid="novelad_corner_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/8994fdc0-fce0-4a06-8bc5-2ff23fc3afe5',
-          snapshotUrls: 'https://i.gkd.li/import/14321461',
+          snapshotUrls: 'https://i.gkd.li/i/14321461',
         },
       ],
     },

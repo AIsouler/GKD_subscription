@@ -16,8 +16,8 @@ export default defineAppConfig({
         '@View[clickable=true][id=null][visibleToUser=true] +n TextView[clickable=true]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/13239194',
-        'https://i.gkd.li/import/13723967',
+        'https://i.gkd.li/i/13239194',
+        'https://i.gkd.li/i/13723967',
       ],
     },
   ],

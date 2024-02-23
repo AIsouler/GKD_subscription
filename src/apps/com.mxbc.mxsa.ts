@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '[id="com.mxbc.mxsa:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12929345',
+          snapshotUrls: 'https://i.gkd.li/i/12929345',
         },
       ],
     },

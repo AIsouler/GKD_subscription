@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.baiji.jianshu.ui.splash.SplashScreenActivity',
           matches: '[id="com.jianshu.haruki:id/dialog_lucky_prize_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13327286',
+          snapshotUrls: 'https://i.gkd.li/i/13327286',
         },
       ],
     },

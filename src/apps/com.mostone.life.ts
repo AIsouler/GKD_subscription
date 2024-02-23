@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '[id="android:id/content"] >n FrameLayout[childCount=4] > View',
-      snapshotUrls: 'https://i.gkd.li/import/13832104',
+      snapshotUrls: 'https://i.gkd.li/i/13832104',
     },
   ],
 });

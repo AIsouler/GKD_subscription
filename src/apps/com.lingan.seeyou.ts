@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds:
             'com.lingan.seeyou.ui.activity.community.topicdetail.TopicDetailActivity',
           matches: '[id="com.lingan.seeyou:id/v_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/14034770',
+          snapshotUrls: 'https://i.gkd.li/i/14034770',
         },
       ],
     },

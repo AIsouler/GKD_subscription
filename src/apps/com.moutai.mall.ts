@@ -14,8 +14,8 @@ export default defineAppConfig({
       rules:
         '[id="com.moutai.mall:id/ivPic"] + ViewGroup + [id="com.moutai.mall:id/vClose"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12745130', // activityId: 'com.moutai.mall.MainActivity'
-        'https://i.gkd.li/import/12745153', // activityId: 'com.moutai.mall.module.splash.SplashActivity'
+        'https://i.gkd.li/i/12745130', // activityId: 'com.moutai.mall.MainActivity'
+        'https://i.gkd.li/i/12745153', // activityId: 'com.moutai.mall.module.splash.SplashActivity'
       ],
     },
     {
@@ -27,7 +27,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',
-      snapshotUrls: 'https://i.gkd.li/import/12745142',
+      snapshotUrls: 'https://i.gkd.li/i/12745142',
     },
   ],
 });

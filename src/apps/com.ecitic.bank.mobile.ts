@@ -12,8 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '@[text="暂不更新"] + [text="立即更新"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12701217',
-        'https://i.gkd.li/import/12701250', // activityId: 'com.miui.home.launcher.Launcher'
+        'https://i.gkd.li/i/12701217',
+        'https://i.gkd.li/i/12701250', // activityId: 'com.miui.home.launcher.Launcher'
       ],
     },
     {
@@ -26,8 +26,8 @@ export default defineAppConfig({
       rules:
         '[id="com.ecitic.bank.mobile:id/id_cordova_view"] + [id="com.ecitic.bank.mobile:id/close_product_send"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13402746',
-        'https://i.gkd.li/import/12701230',
+        'https://i.gkd.li/i/13402746',
+        'https://i.gkd.li/i/12701230',
       ],
     },
     {
@@ -37,14 +37,14 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] + [text="立即开启"]',
-      snapshotUrls: 'https://i.gkd.li/import/13399102',
+      snapshotUrls: 'https://i.gkd.li/i/13399102',
     },
     {
       key: 4,
       name: '局部广告-理财产品悬浮广告',
       activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
       rules: '@[clickable=true] +2 [text="恭喜您关注到宝藏基金"]',
-      snapshotUrls: 'https://i.gkd.li/import/14208637',
+      snapshotUrls: 'https://i.gkd.li/i/14208637',
     },
   ],
 });

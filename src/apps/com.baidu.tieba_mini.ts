@@ -12,13 +12,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'LinearLayout > [text="广告"] + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12905039',
+          snapshotUrls: 'https://i.gkd.li/i/12905039',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '[text="屏蔽广告"]',
-          snapshotUrls: ['https://i.gkd.li/import/12904633'],
+          snapshotUrls: ['https://i.gkd.li/i/12904633'],
         },
       ],
     },

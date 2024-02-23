@@ -6,23 +6,23 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12695751)
+- [快照-0](https://i.gkd.li/i/12695751)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13198016)
+- [快照-0](https://i.gkd.li/i/13198016)
 
 ## 权限提示-请求读取剪贴板权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13198020)
+- [快照-0](https://i.gkd.li/i/13198020)
 
 ## 通知提示-请求通知弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13438810)
-- [快照-1](https://i.gkd.li/import/13626746)
+- [快照-0](https://i.gkd.li/i/13438810)
+- [快照-1](https://i.gkd.li/i/13626746)

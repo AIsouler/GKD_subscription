@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[vid="activate_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/14293734',
+      snapshotUrls: 'https://i.gkd.li/i/14293734',
     },
     {
       key: 1,
@@ -25,7 +25,7 @@ export default defineAppConfig({
           matches: '[vid="ivClose"]',
           exampleUrls:
             'https://m.gkd.li/57941037/8150c450-bcf8-4e8b-8236-4c3abebbeef3',
-          snapshotUrls: 'https://i.gkd.li/import/14308433',
+          snapshotUrls: 'https://i.gkd.li/i/14308433',
         },
       ],
     },

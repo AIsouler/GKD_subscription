@@ -19,24 +19,24 @@ export default defineAppConfig({
           matches: '[text*="跳过"][text.length<=10]',
           excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12893573',
-            'https://i.gkd.li/import/12923776',
-            'https://i.gkd.li/import/13195662',
-            'https://i.gkd.li/import/12818335',
-            'https://i.gkd.li/import/13206298', // 使用 excludeMatches 防止提前触发规则
-            'https://i.gkd.li/import/13207736', // TODO 一整块图片，无法跳过
+            'https://i.gkd.li/i/12893573',
+            'https://i.gkd.li/i/12923776',
+            'https://i.gkd.li/i/13195662',
+            'https://i.gkd.li/i/12818335',
+            'https://i.gkd.li/i/13206298', // 使用 excludeMatches 防止提前触发规则
+            'https://i.gkd.li/i/13207736', // TODO 一整块图片，无法跳过
           ],
         },
         {
           key: 1,
           matches: '[id$="tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12999739',
+          snapshotUrls: 'https://i.gkd.li/i/12999739',
         },
         {
           key: 2,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
-          snapshotUrls: 'https://i.gkd.li/import/14046124',
+          snapshotUrls: 'https://i.gkd.li/i/14046124',
         },
       ],
     },
@@ -48,7 +48,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.netease.mail:id/tv_ignore_this_version"][text="暂不更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/12664070',
+      snapshotUrls: 'https://i.gkd.li/i/12664070',
     },
     {
       key: 2,
@@ -59,16 +59,16 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.netease.mail:id/ad_vip"]',
-          snapshotUrls: 'https://i.gkd.li/import/12999833',
+          snapshotUrls: 'https://i.gkd.li/i/12999833',
         },
         {
           preKeys: 0,
           key: 1,
           matches: '[id="com.netease.mail:id/ll_delete"]',
-          snapshotUrls: 'https://i.gkd.li/import/12999841',
+          snapshotUrls: 'https://i.gkd.li/i/12999841',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/12664070',
+      snapshotUrls: 'https://i.gkd.li/i/12664070',
     },
     {
       key: 5,
@@ -78,7 +78,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         'TextView[text="恭喜您获得以下成就"] - TextView[text=""][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13876817',
+      snapshotUrls: 'https://i.gkd.li/i/13876817',
     },
   ],
 });

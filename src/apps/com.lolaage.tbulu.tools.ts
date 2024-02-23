@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.lolaage.tbulu.tools:id/tvFullUpgrade"] + [id="com.lolaage.tbulu.tools:id/tvCancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/12882550',
+      snapshotUrls: 'https://i.gkd.li/i/12882550',
     },
     {
       key: 2,
@@ -25,8 +25,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13627861',
-            'https://i.gkd.li/import/13650732',
+            'https://i.gkd.li/i/13627861',
+            'https://i.gkd.li/i/13650732',
           ],
         },
       ],

@@ -6,10 +6,10 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13212320)
+- [快照-0](https://i.gkd.li/i/13212320)
 
 ## 更新提示
 
 默认禁用 - 点击取消
 
-- [快照-0](https://i.gkd.li/import/13446421)
+- [快照-0](https://i.gkd.li/i/13446421)

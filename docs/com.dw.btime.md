@@ -6,16 +6,16 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12889448)
+- [快照-0](https://i.gkd.li/i/12889448)
 
 ## 局部广告-横幅广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12889450)
+- [快照-0](https://i.gkd.li/i/12889450)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12911011)
+- [快照-0](https://i.gkd.li/i/12911011)

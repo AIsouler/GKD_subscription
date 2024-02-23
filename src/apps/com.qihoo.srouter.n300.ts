@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[vid="app_update_later_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13800011',
+      snapshotUrls: 'https://i.gkd.li/i/13800011',
     },
   ],
 });

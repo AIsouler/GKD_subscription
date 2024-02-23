@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches:
             '[text="给应用评分"] +(2) RelativeLayout > [text="下次再说"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12661907',
-            'https://i.gkd.li/import/12661924',
+            'https://i.gkd.li/i/12661907',
+            'https://i.gkd.li/i/12661924',
           ],
         },
       ],

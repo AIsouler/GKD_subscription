@@ -14,7 +14,7 @@ export default defineAppConfig({
             '[id="com.qinlin.edoor:id/reaper_ad_source_layout"]',
             '[id="com.qinlin.edoor:id/close"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/12707733',
+          snapshotUrls: 'https://i.gkd.li/i/12707733',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@[id="com.qinlin.edoor:id/iv_close"] - LinearLayout >n [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13771774',
+          snapshotUrls: 'https://i.gkd.li/i/13771774',
         },
       ],
     },
@@ -38,7 +38,7 @@ export default defineAppConfig({
       name: '全屏广告-开门有奖弹窗',
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: '[desc="开门有奖"] +2 [desc="立即领取"] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/12707736',
+      snapshotUrls: 'https://i.gkd.li/i/12707736',
     },
     {
       enable: false,
@@ -46,14 +46,14 @@ export default defineAppConfig({
       name: '全屏广告-获得金币弹窗',
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: ['[desc="获得金币"] +3 [desc="开心收下"] + ImageView'],
-      snapshotUrls: ['https://i.gkd.li/import/12707738'],
+      snapshotUrls: ['https://i.gkd.li/i/12707738'],
     },
     {
       key: 12,
       name: '全屏广告-开门成功后广告弹窗',
       desc: '来自"腾讯广告sdk"',
       rules: '[vid="interact_ad_root"] >2 [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13932707',
+      snapshotUrls: 'https://i.gkd.li/i/13932707',
     },
   ],
 });

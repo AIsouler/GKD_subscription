@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '@[text="以后再说"] +2 [text="立即更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/13798537',
+      snapshotUrls: 'https://i.gkd.li/i/13798537',
     },
   ],
 });

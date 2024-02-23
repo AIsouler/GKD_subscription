@@ -13,8 +13,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: 'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13223669', //com.hd.smartVillage.modules.main.MainActivity
-        'https://i.gkd.li/import/13293000', //com.hd.smartVillage.modules.h5service.H5WebActivity
+        'https://i.gkd.li/i/13223669', //com.hd.smartVillage.modules.main.MainActivity
+        'https://i.gkd.li/i/13293000', //com.hd.smartVillage.modules.h5service.H5WebActivity
       ],
     },
     {
@@ -27,7 +27,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         'TextView[id="com.hd.smartVillage:id/tv_upgrade_cancel"][text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/13223642',
+      snapshotUrls: 'https://i.gkd.li/i/13223642',
     },
   ],
 });

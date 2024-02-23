@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text^="腾讯会议新版本"] +3 * > [text="下次安装"]',
-      snapshotUrls: 'https://i.gkd.li/import/14332625',
+      snapshotUrls: 'https://i.gkd.li/i/14332625',
     },
   ],
 });

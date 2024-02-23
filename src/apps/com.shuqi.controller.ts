@@ -9,14 +9,14 @@ export default defineAppConfig({
       name: '局部广告-内部右侧浮动广告',
       activityIds: 'com.shuqi.home.MainActivity',
       rules: '[id="com.shuqi.controller:id/promotion_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12513811',
+      snapshotUrls: 'https://i.gkd.li/i/12513811',
     },
     {
       key: 1,
       name: '全屏广告-关闭打卡红包弹窗',
       activityIds: 'com.shuqi.common',
       rules: '[id="com.shuqi.controller:id/bottomCloseImg"]',
-      snapshotUrls: 'https://i.gkd.li/import/12513822',
+      snapshotUrls: 'https://i.gkd.li/i/12513822',
     },
     {
       key: 2,
@@ -27,7 +27,7 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'com.shuqi.android.ui.dialog',
           matches: '[id="com.shuqi.controller:id/right_close_ad_text"]',
-          snapshotUrls: 'https://i.gkd.li/import/12513893',
+          snapshotUrls: 'https://i.gkd.li/i/12513893',
         },
         {
           key: 1,
@@ -36,21 +36,21 @@ export default defineAppConfig({
             '[text*="优惠券"]',
             '[id="com.shuqi.controller:id/close_btn"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/12513908',
+          snapshotUrls: 'https://i.gkd.li/i/12513908',
         },
         {
           key: 2,
           activityIds: 'com.shuqi.reader.ShuqiReaderActivity',
           matches:
             '@ImageView[clickable=true] - RelativeLayout [id="com.shuqi.controller:id/noah_tv_stencil_native_source"]',
-          snapshotUrls: 'https://i.gkd.li/import/12513860',
+          snapshotUrls: 'https://i.gkd.li/i/12513860',
         },
         {
           key: 3,
           activityIds: 'com.shuqi.reader.ShuqiReaderActivity',
           matches:
             '[id="com.shuqi.controller:id/banner_container_ad"] >n RelativeLayout + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12901429',
+          snapshotUrls: 'https://i.gkd.li/i/12901429',
         },
       ],
     },
@@ -62,11 +62,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.shuqi.controller:id/remove_current_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/12513959',
+          snapshotUrls: 'https://i.gkd.li/i/12513959',
         },
         {
           matches: '[id="com.shuqi.controller:id/ad_close_but"]',
-          snapshotUrls: 'https://i.gkd.li/import/12513944',
+          snapshotUrls: 'https://i.gkd.li/i/12513944',
         },
       ],
     },

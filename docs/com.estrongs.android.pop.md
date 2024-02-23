@@ -6,13 +6,13 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12509667)
-- [快照-1](https://i.gkd.li/import/12509669)
+- [快照-0](https://i.gkd.li/i/12509667)
+- [快照-1](https://i.gkd.li/i/12509669)
 
 ## 局部广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12674919)
-- [快照-1](https://i.gkd.li/import/12818281)
-- [快照-2](https://i.gkd.li/import/13842299)
+- [快照-0](https://i.gkd.li/i/12674919)
+- [快照-1](https://i.gkd.li/i/12818281)
+- [快照-2](https://i.gkd.li/i/13842299)

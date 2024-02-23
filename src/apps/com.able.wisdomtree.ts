@@ -16,9 +16,9 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: 'TextView[id="com.able.wisdomtree:id/negativeButton"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13458779',
-        'https://i.gkd.li/import/13623441',
-        'https://i.gkd.li/import/13695447',
+        'https://i.gkd.li/i/13458779',
+        'https://i.gkd.li/i/13623441',
+        'https://i.gkd.li/i/13695447',
       ],
     },
     {
@@ -32,8 +32,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text="更新"] -n [text="忽略"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13458796',
-        'https://i.gkd.li/import/13797285',
+        'https://i.gkd.li/i/13458796',
+        'https://i.gkd.li/i/13797285',
       ],
     },
   ],

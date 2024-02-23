@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.mcdonalds.gma.cn:id/tv_cancel"][text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/13259242',
+      snapshotUrls: 'https://i.gkd.li/i/13259242',
     },
     {
       enable: false,
@@ -23,7 +23,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.mcdonalds.gma.cn.activity.MainActivity',
           matches: '[id="com.mcdonalds.gma.cn:id/iv_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13465873',
+          snapshotUrls: 'https://i.gkd.li/i/13465873',
         },
       ],
     },

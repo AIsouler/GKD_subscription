@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
           matches: '[id="cn.com.langeasy.LangEasyLexis:id/bb_checkin"]',
-          snapshotUrls: 'https://i.gkd.li/import/13610321',
+          snapshotUrls: 'https://i.gkd.li/i/13610321',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
         {
           activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
           matches: '[id="cn.com.langeasy.LangEasyLexis:id/close_float_button"]',
-          snapshotUrls: 'https://i.gkd.li/import/13759025',
+          snapshotUrls: 'https://i.gkd.li/i/13759025',
         },
       ],
     },

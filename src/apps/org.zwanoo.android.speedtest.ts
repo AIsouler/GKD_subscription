@@ -14,7 +14,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="org.zwanoo.android.speedtest:id/suite_completed_close_ad_button"]',
-          snapshotUrls: 'https://i.gkd.li/import/12893175',
+          snapshotUrls: 'https://i.gkd.li/i/12893175',
         },
       ],
     },

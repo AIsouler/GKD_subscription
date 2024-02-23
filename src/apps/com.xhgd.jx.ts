@@ -14,7 +14,7 @@ export default defineAppConfig({
           key: 0,
           name: '腾讯SDK',
           matches: 'FrameLayout[childCount=4] > FrameLayout[index=1]',
-          snapshotUrls: 'https://i.gkd.li/import/13762226',
+          snapshotUrls: 'https://i.gkd.li/i/13762226',
         },
       ],
     },

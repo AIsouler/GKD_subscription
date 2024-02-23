@@ -16,9 +16,9 @@ export default defineAppConfig({
           matches:
             'ImageView - RelativeLayout >(3-n) [id="com.zjwh.android_wh_physicalfitness:id/iv_close"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12673231',
-            'https://i.gkd.li/import/12673523',
-            'https://i.gkd.li/import/13166472', // com.zjwh.android_wh_physicalfitness.ui.AdActivity
+            'https://i.gkd.li/i/12673231',
+            'https://i.gkd.li/i/12673523',
+            'https://i.gkd.li/i/13166472', // com.zjwh.android_wh_physicalfitness.ui.AdActivity
           ],
         },
       ],
@@ -32,7 +32,7 @@ export default defineAppConfig({
         {
           matches:
             '@[text="跳过"][clickable=true] +(3) RelativeLayout >(2) [text="点击跳转至第三方页面"]',
-          snapshotUrls: ['https://i.gkd.li/import/12673349'],
+          snapshotUrls: ['https://i.gkd.li/i/12673349'],
         },
       ],
     },
@@ -48,15 +48,15 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.kwad.dy.sdk:id/ksad_splash_root_container"] >n ViewGroup > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12673495',
+          snapshotUrls: 'https://i.gkd.li/i/12673495',
         },
         {
           key: 1,
           matches:
             '[id="com.kwad.dy.sdk:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[clickable=true] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/12826112',
-            'https://i.gkd.li/import/12826124',
+            'https://i.gkd.li/i/12826112',
+            'https://i.gkd.li/i/12826124',
           ],
         },
         {
@@ -64,8 +64,8 @@ export default defineAppConfig({
           matches:
             '[id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"] >n ViewGroup > @ViewGroup[childCount=1] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/13228216',
-            'https://i.gkd.li/import/13601132', //com.zjwh.android_wh_physicalfitness.ui.AdActivity
+            'https://i.gkd.li/i/13228216',
+            'https://i.gkd.li/i/13601132', //com.zjwh.android_wh_physicalfitness.ui.AdActivity
           ],
         },
       ],
@@ -78,7 +78,7 @@ export default defineAppConfig({
       resetMatch: 'activity',
       matchTime: 10000,
       rules: '@ImageView - RelativeLayout[childCount=9]',
-      snapshotUrls: 'https://i.gkd.li/import/13554229',
+      snapshotUrls: 'https://i.gkd.li/i/13554229',
     },
     {
       key: 9,
@@ -88,7 +88,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.zjwh.android_wh_physicalfitness:id/ad_flag_source_layout"] + [id="com.zjwh.android_wh_physicalfitness:id/iv_close"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/12673476'],
+          snapshotUrls: ['https://i.gkd.li/i/12673476'],
         },
       ],
     },

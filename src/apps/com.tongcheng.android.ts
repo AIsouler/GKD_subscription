@@ -13,14 +13,14 @@ export default defineAppConfig({
           key: 0,
           matches:
             'ViewGroup[childCount=2] > ImageView + ViewGroup[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13167070',
+          snapshotUrls: 'https://i.gkd.li/i/13167070',
         },
         {
           preKeys: 0,
           key: 1,
           matches:
             '@* > * > [id="com.tongcheng.android:id/tv_home_banner_pop_up"][text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/13167149',
+          snapshotUrls: 'https://i.gkd.li/i/13167149',
         },
       ],
     },

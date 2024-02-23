@@ -13,9 +13,9 @@ export default defineAppConfig({
       rules:
         '@[id="com.yaerxing.fkst:id/iv_close"] < LinearLayout - LinearLayout > [id="com.yaerxing.fkst:id/btn_update"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12715037',
-        'https://i.gkd.li/import/12715047',
-        'https://i.gkd.li/import/12715053',
+        'https://i.gkd.li/i/12715037',
+        'https://i.gkd.li/i/12715047',
+        'https://i.gkd.li/i/12715053',
       ],
     },
   ],

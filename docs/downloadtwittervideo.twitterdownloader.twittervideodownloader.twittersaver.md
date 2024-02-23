@@ -6,4 +6,4 @@
 
 默认禁用 - 自动点击 LATER
 
-- [快照-0](https://i.gkd.li/import/13748858)
+- [快照-0](https://i.gkd.li/i/13748858)

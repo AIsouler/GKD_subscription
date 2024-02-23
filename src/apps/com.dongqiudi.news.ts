@@ -15,9 +15,9 @@ export default defineAppConfig({
           matches:
             '[id="com.byted.pangle:id/tt_splash_skip_btn"||text^="跳过"&&id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12620568',
-            'https://i.gkd.li/import/12620577',
-            'https://i.gkd.li/import/12621997',
+            'https://i.gkd.li/i/12620568',
+            'https://i.gkd.li/i/12620577',
+            'https://i.gkd.li/i/12621997',
           ],
         },
         {
@@ -26,8 +26,8 @@ export default defineAppConfig({
           matches:
             '[id="com.dongqiudi.news:id/ad_skip_time"] + [id="com.dongqiudi.news:id/scale_iv"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12620583',
-            'https://i.gkd.li/import/12621953',
+            'https://i.gkd.li/i/12620583',
+            'https://i.gkd.li/i/12621953',
           ],
         },
       ],
@@ -40,7 +40,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="青少年模式"] + [id="com.dongqiudi.news:id/tv_know"]',
-      snapshotUrls: 'https://i.gkd.li/import/12621980',
+      snapshotUrls: 'https://i.gkd.li/i/12621980',
     },
     {
       key: 2,
@@ -50,7 +50,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
-      snapshotUrls: 'https://i.gkd.li/import/12620586',
+      snapshotUrls: 'https://i.gkd.li/i/12620586',
     },
     {
       enable: false,
@@ -65,19 +65,19 @@ export default defineAppConfig({
           name: '首页信息流广告-反馈理由',
           matches:
             'TextView[text="诱导点击"][id="com.dongqiudi.news:id/text_item"]',
-          snapshotUrls: 'https://i.gkd.li/import/12620656',
+          snapshotUrls: 'https://i.gkd.li/i/12620656',
         },
         {
           key: 1,
           matches:
             'TextView[id="com.dongqiudi.news:id/ads_label"] +(n) ImageView[id="com.dongqiudi.news:id/feedback_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12620654',
+          snapshotUrls: 'https://i.gkd.li/i/12620654',
         },
         {
           key: 2,
           matches:
             'TextView[id="com.dongqiudi.news:id/ads_title"] +(2) RelativeLayout > ImageView[id="com.dongqiudi.news:id/feedback_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12620788',
+          snapshotUrls: 'https://i.gkd.li/i/12620788',
         },
       ],
     },
@@ -88,7 +88,7 @@ export default defineAppConfig({
       activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
       rules: '[id="com.dongqiudi.news:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13260467',
+      snapshotUrls: 'https://i.gkd.li/i/13260467',
     },
     {
       key: 8,
@@ -101,23 +101,23 @@ export default defineAppConfig({
           name: '腾讯广告SDK',
           matches:
             'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
-          snapshotUrls: 'https://i.gkd.li/import/13626900',
+          snapshotUrls: 'https://i.gkd.li/i/13626900',
         },
         {
           name: '快手广告磁力智投SDK',
           matches:
             'ViewGroup[childCount=1] > @ViewGroup[clickable=true][childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13627105',
+          snapshotUrls: 'https://i.gkd.li/i/13627105',
         },
         {
           name: '字节广告穿山甲SDK-1',
           matches: 'View[text="反馈"] -2 @View > Image',
-          snapshotUrls: 'https://i.gkd.li/import/13627106',
+          snapshotUrls: 'https://i.gkd.li/i/13627106',
         },
         {
           name: '字节广告穿山甲SDK-2', //合并key3
           matches: 'FrameLayout[desc^="webview-close"] > View[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12620588',
+          snapshotUrls: 'https://i.gkd.li/i/12620588',
         },
       ],
     },

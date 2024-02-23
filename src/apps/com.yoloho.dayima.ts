@@ -14,7 +14,7 @@ export default defineAppConfig({
           name: '腾讯SDK',
           matches:
             '[id="android:id/content"] >n FrameLayout[index=2] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13800255',
+          snapshotUrls: 'https://i.gkd.li/i/13800255',
         },
       ],
     },

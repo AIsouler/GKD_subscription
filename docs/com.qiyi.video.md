@@ -4,8 +4,8 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/13160866)
-- [快照-1](https://i.gkd.li/import/13379565)
+- [快照-0](https://i.gkd.li/i/13160866)
+- [快照-1](https://i.gkd.li/i/13379565)
 
 ## 青少年模式
 
@@ -13,30 +13,30 @@
 
 - [示例-0](https://m.gkd.li/6328439/d69e92f8-8304-4296-909a-11730e408a16)
 
-- [快照-0](https://i.gkd.li/import/13546555)
+- [快照-0](https://i.gkd.li/i/13546555)
 
 ## 局部广告-我的页面顶部广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12495050)
+- [快照-0](https://i.gkd.li/i/12495050)
 
 ## 通知提示-开启推送通知弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12838152)
+- [快照-0](https://i.gkd.li/i/12838152)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12838158)
-- [快照-1](https://i.gkd.li/import/13684912)
+- [快照-0](https://i.gkd.li/i/12838158)
+- [快照-1](https://i.gkd.li/i/13684912)
 
 ## 全屏广告-播放页-插入广告
 
 默认禁用 - 视频播放前或播放中途插入的广告。默认关闭。
 
-- [快照-0](https://i.gkd.li/import/13536669)
-- [快照-1](https://i.gkd.li/import/13536703)
+- [快照-0](https://i.gkd.li/i/13536669)
+- [快照-1](https://i.gkd.li/i/13536703)

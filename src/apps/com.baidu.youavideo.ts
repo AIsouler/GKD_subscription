@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.baidu.youavideo:id/tv_upgrade"] < LinearLayout +2 [id="com.baidu.youavideo:id/img_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12597916'],
+          snapshotUrls: ['https://i.gkd.li/i/12597916'],
         },
       ],
     },
@@ -29,7 +29,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/img_operation_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12970088'],
+          snapshotUrls: ['https://i.gkd.li/i/12970088'],
         },
       ],
     },
@@ -44,7 +44,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/tv_next_time"]',
-          snapshotUrls: ['https://i.gkd.li/import/12970094'],
+          snapshotUrls: ['https://i.gkd.li/i/12970094'],
         },
       ],
     },
@@ -58,7 +58,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.baidu.youavideo:id/tv_confirm_pay"] -5 [id="com.baidu.youavideo:id/img_close_dialog"]',
-          snapshotUrls: ['https://i.gkd.li/import/12970094'],
+          snapshotUrls: ['https://i.gkd.li/i/12970094'],
         },
       ],
     },
@@ -77,7 +77,7 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"] ',
-          snapshotUrls: ['https://i.gkd.li/import/13048700'],
+          snapshotUrls: ['https://i.gkd.li/i/13048700'],
         },
         {
           key: 1,
@@ -85,8 +85,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/3aa0e107-e31f-4e5a-8969-1fcd8310281d',
           snapshotUrls: [
-            'https://i.gkd.li/import/14133595',
-            'https://i.gkd.li/import/14217352',
+            'https://i.gkd.li/i/14133595',
+            'https://i.gkd.li/i/14217352',
           ],
         },
       ],
@@ -100,7 +100,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13413819',
+      snapshotUrls: 'https://i.gkd.li/i/13413819',
     },
     {
       key: 8,
@@ -109,14 +109,14 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13711475',
+      snapshotUrls: 'https://i.gkd.li/i/13711475',
     },
     {
       key: 9,
       name: '局部广告-广告卡片',
       quickFind: true,
       rules: '[vid="iv_close"][visibleToUser=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13874124',
+      snapshotUrls: 'https://i.gkd.li/i/13874124',
     },
   ],
 });

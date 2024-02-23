@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@[id="com.steampy.app:id/imgClose"] - RelativeLayout [id="com.steampy.app:id/tv_update"]',
-      snapshotUrls: 'https://i.gkd.li/import/13695519',
+      snapshotUrls: 'https://i.gkd.li/i/13695519',
     },
   ],
 });

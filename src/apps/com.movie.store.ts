@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds:
             'com.github.tvbox.osc.ui.activity.mobile.MobileHomeActivity',
           matches: '[text="广告"] +2 View > View + TextView',
-          snapshotUrls: 'https://i.gkd.li/import/13476107',
+          snapshotUrls: 'https://i.gkd.li/i/13476107',
         },
       ],
     },

@@ -6,11 +6,11 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12726844)
-- [快照-1](https://i.gkd.li/import/12726801)
+- [快照-0](https://i.gkd.li/i/12726844)
+- [快照-1](https://i.gkd.li/i/12726801)
 
 ## 通知提示-请求通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12726829)
+- [快照-0](https://i.gkd.li/i/12726829)

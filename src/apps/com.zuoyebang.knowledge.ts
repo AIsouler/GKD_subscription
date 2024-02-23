@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.zuoyebang.knowledge:id/cancel_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13695522',
+      snapshotUrls: 'https://i.gkd.li/i/13695522',
     },
     {
       key: 3,
@@ -22,7 +22,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: 'TextView[id="com.zuoyebang.knowledge:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/import/13043228',
+      snapshotUrls: 'https://i.gkd.li/i/13043228',
     },
   ],
 });

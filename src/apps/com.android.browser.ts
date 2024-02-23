@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             '@ImageView[id!=null][clickable=true] -2 [text="个性推荐获得更丰富内容"]',
-          snapshotUrls: 'https://i.gkd.li/import/12829403',
+          snapshotUrls: 'https://i.gkd.li/i/12829403',
         },
       ],
     },
@@ -30,8 +30,8 @@ export default defineAppConfig({
           matches:
             '@[id!=null][desc="负反馈"][visibleToUser=true] -n * > * > [text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12894221',
-            'https://i.gkd.li/import/12893649',
+            'https://i.gkd.li/i/12894221',
+            'https://i.gkd.li/i/12893649',
           ],
         },
         {
@@ -39,8 +39,8 @@ export default defineAppConfig({
           key: 1,
           matches: '@FrameLayout > ViewGroup > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12894234',
-            'https://i.gkd.li/import/13196059',
+            'https://i.gkd.li/i/12894234',
+            'https://i.gkd.li/i/13196059',
           ],
         },
       ],
@@ -56,8 +56,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/b0d601cf-6cd1-411c-8555-bd4a8ee3335c',
           snapshotUrls: [
-            'https://i.gkd.li/import/14256707',
-            'https://i.gkd.li/import/14256761', // visibleToUser=true防止误触此界面
+            'https://i.gkd.li/i/14256707',
+            'https://i.gkd.li/i/14256761', // visibleToUser=true防止误触此界面
           ],
         },
       ],

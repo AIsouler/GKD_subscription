@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'activity',
       matchTime: 10000,
       rules: '[id="com.dmzj.manhua:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13542503',
+      snapshotUrls: 'https://i.gkd.li/i/13542503',
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineAppConfig({
       matchTime: 10000,
       rules:
         '@[id="com.dmzj.manhua:id/ivAdClose"] - [id="com.dmzj.manhua:id/ivFloatAd"]',
-      snapshotUrls: 'https://i.gkd.li/import/13542506',
+      snapshotUrls: 'https://i.gkd.li/i/13542506',
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text$="青少年模式"] + [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13796869',
+      snapshotUrls: 'https://i.gkd.li/i/13796869',
     },
     {
       key: 5,
@@ -20,7 +20,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="开启推送通知"] +2 * > [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13691081',
+      snapshotUrls: 'https://i.gkd.li/i/13691081',
     },
     {
       key: 6,
@@ -31,7 +31,7 @@ export default defineAppConfig({
       activityIds: 'com.sup.android.base.MainActivity',
       rules:
         'FrameLayout > RelativeLayout > @ImageView[clickable=true] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/13624220',
+      snapshotUrls: 'https://i.gkd.li/i/13624220',
     },
     {
       key: 7,
@@ -44,7 +44,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="发现新版本"] +2 * > [text="我再想想"]',
-          snapshotUrls: 'https://i.gkd.li/import/13858490',
+          snapshotUrls: 'https://i.gkd.li/i/13858490',
         },
       ],
     },
@@ -59,7 +59,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.sup.android.superb:id/a1i"]',
-          snapshotUrls: 'https://i.gkd.li/import/14005608',
+          snapshotUrls: 'https://i.gkd.li/i/14005608',
         },
       ],
     },
@@ -74,7 +74,7 @@ export default defineAppConfig({
           matches: '[id="com.sup.android.superb:id/afa"]',
           exampleUrls:
             'https://m.gkd.li/57941037/246d1d0b-d493-4d40-bbb7-9c04ae6b457d',
-          snapshotUrls: 'https://i.gkd.li/import/14151026',
+          snapshotUrls: 'https://i.gkd.li/i/14151026',
         },
       ],
     },

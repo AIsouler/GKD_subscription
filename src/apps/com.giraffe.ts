@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.giraffe:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/14000409',
+          snapshotUrls: 'https://i.gkd.li/i/14000409',
         },
       ],
     },

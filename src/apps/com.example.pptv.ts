@@ -15,12 +15,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13669401',
+          snapshotUrls: 'https://i.gkd.li/i/13669401',
         },
         {
           key: 1,
           matches: '[id="com.example.pptv:id/view_count_shake"]',
-          snapshotUrls: 'https://i.gkd.li/import/13761160',
+          snapshotUrls: 'https://i.gkd.li/i/13761160',
         },
       ],
     },
@@ -31,7 +31,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '@[text="我知道了"] - * > [text="未成年模式"]',
-      snapshotUrls: 'https://i.gkd.li/import/13761159',
+      snapshotUrls: 'https://i.gkd.li/i/13761159',
     },
   ],
 });

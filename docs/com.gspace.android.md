@@ -6,13 +6,13 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12705339)
-- [快照-1](https://i.gkd.li/import/12910419)
-- [快照-2](https://i.gkd.li/import/12910935)
-- [快照-3](https://i.gkd.li/import/12910420)
+- [快照-0](https://i.gkd.li/i/12705339)
+- [快照-1](https://i.gkd.li/i/12910419)
+- [快照-2](https://i.gkd.li/i/12910935)
+- [快照-3](https://i.gkd.li/i/12910420)
 
 ## 全屏广告-Youtube播放视频跳过广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12709006)
+- [快照-0](https://i.gkd.li/i/12709006)

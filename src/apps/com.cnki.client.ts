@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.cnki.client:id/update_undo"]',
-      snapshotUrls: 'https://i.gkd.li/import/12854857',
+      snapshotUrls: 'https://i.gkd.li/i/12854857',
     },
   ],
 });

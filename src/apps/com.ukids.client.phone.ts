@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           quickFind: true,
           matches: '[id="com.ukids.client.phone:id/dialog_dismiss_btn_two"]',
-          snapshotUrls: ['https://i.gkd.li/import/13400238'],
+          snapshotUrls: ['https://i.gkd.li/i/13400238'],
         },
       ],
     },

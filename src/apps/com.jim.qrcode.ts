@@ -14,8 +14,8 @@ export default defineAppConfig({
       ],
       rules: 'TextView[text.length>0] < FrameLayout + FrameLayout > ImageView',
       snapshotUrls: [
-        'https://i.gkd.li/import/12606861',
-        'https://i.gkd.li/import/12606862',
+        'https://i.gkd.li/i/12606861',
+        'https://i.gkd.li/i/12606862',
       ],
     },
   ],

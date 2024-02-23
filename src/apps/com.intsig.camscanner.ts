@@ -18,7 +18,7 @@ export default defineAppConfig({
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
       rules:
         '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12668813',
+      snapshotUrls: 'https://i.gkd.li/i/12668813',
     },
   ],
 });

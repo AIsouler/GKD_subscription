@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'LinearLayoutCompat @[text="取消"] + [text="更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/13561226',
+      snapshotUrls: 'https://i.gkd.li/i/13561226',
     },
   ],
 });

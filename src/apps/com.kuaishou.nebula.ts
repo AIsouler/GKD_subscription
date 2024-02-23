@@ -10,7 +10,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.kuaishou.nebula:id/positive"][text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13196316',
+      snapshotUrls: 'https://i.gkd.li/i/13196316',
     },
     {
       key: 2,
@@ -18,7 +18,7 @@ export default defineAppConfig({
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       quickFind: true,
       rules: '@[vid="close_btn"] + [text="朋友推荐"]',
-      snapshotUrls: 'https://i.gkd.li/import/14310639',
+      snapshotUrls: 'https://i.gkd.li/i/14310639',
     },
   ],
 });

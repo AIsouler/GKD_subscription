@@ -14,7 +14,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="cn.emagsoftware.gamehall:id/btn_update"] -2 [id="cn.emagsoftware.gamehall:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/import/13448894',
+      snapshotUrls: 'https://i.gkd.li/i/13448894',
     },
   ],
 });

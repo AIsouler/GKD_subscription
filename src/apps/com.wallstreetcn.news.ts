@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="广告" || text="活动"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13262717',
+          snapshotUrls: 'https://i.gkd.li/i/13262717',
         },
       ],
     },

@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'Button[text="前往开启"] - Button[text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/13627649',
+          snapshotUrls: 'https://i.gkd.li/i/13627649',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
         {
           matches:
             '@ImageView[clickable=true] +(1,2) TextView[text="开启推送通知"]',
-          snapshotUrls: 'https://i.gkd.li/import/13837961',
+          snapshotUrls: 'https://i.gkd.li/i/13837961',
         },
       ],
     },

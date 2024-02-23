@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="残忍拒绝"] + [text*="好评"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13226140',
+      snapshotUrls: 'https://i.gkd.li/i/13226140',
     },
   ],
 });

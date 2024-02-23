@@ -13,7 +13,7 @@ export default defineAppConfig({
       activityIds: 'com.vdian.android.wdb.main.ui.activity.MainTabsActivity',
       rules:
         'FrameLayout > FrameLayout > RelativeLayout > ImageView[clickable=true][index=1]',
-      snapshotUrls: 'https://i.gkd.li/import/13646151',
+      snapshotUrls: 'https://i.gkd.li/i/13646151',
     },
   ],
 });

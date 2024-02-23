@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           matches:
             '@ImageView[id=`com.youdao.translator:id/close_iv`] + [id="com.youdao.translator:id/native_ad_flag_tv"]',
-          snapshotUrls: 'https://i.gkd.li/import/13259910',
+          snapshotUrls: 'https://i.gkd.li/i/13259910',
         },
       ],
     },

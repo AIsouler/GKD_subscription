@@ -15,7 +15,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.guodongbaohe.app.activity.AdvertisementTwoActivity',
       rules: 'LinearLayout[id="com.guodongbaohe.app:id/close_dialog_lv"]',
-      snapshotUrls: 'https://i.gkd.li/import/13577877',
+      snapshotUrls: 'https://i.gkd.li/i/13577877',
     },
   ],
 });

@@ -13,7 +13,7 @@ export default defineAppConfig({
           activityIds: 'com.duoduo.cimoc.su.MainActivity',
           matches:
             'ViewGroup[childCount=4] <2 ViewGroup[childCount=2] + * > ViewGroup[visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13999281',
+          snapshotUrls: 'https://i.gkd.li/i/13999281',
         },
       ],
     },
@@ -26,7 +26,7 @@ export default defineAppConfig({
           activityIds: 'com.duoduo.cimoc.su.MainActivity',
           matches:
             '@TextView[clickable=true] <2 View[childCount=2] -2 [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13999283',
+          snapshotUrls: 'https://i.gkd.li/i/13999283',
         },
       ],
     },
@@ -40,8 +40,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount=4] > FrameLayout > ImageView[visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13999284',
-            'https://i.gkd.li/import/13999376',
+            'https://i.gkd.li/i/13999284',
+            'https://i.gkd.li/i/13999376',
           ],
         },
       ],

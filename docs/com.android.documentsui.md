@@ -6,10 +6,10 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13801468)
+- [快照-0](https://i.gkd.li/i/13801468)
 
 ## 功能类-使用此文件夹
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13916082)
+- [快照-0](https://i.gkd.li/i/13916082)

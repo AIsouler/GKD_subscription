@@ -14,7 +14,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳"]',
-      snapshotUrls: 'https://i.gkd.li/import/12705270',
+      snapshotUrls: 'https://i.gkd.li/i/12705270',
     },
     {
       key: 0,
@@ -27,8 +27,8 @@ export default defineAppConfig({
       rules:
         'LinearLayout[id=`tv.danmaku.bili:id/ad_tint_frame`] > ImageView[id="tv.danmaku.bili:id/close"][desc=`关闭`]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12785461',
-        'https://i.gkd.li/import/12775156',
+        'https://i.gkd.li/i/12785461',
+        'https://i.gkd.li/i/12775156',
       ],
     },
     {
@@ -39,7 +39,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13746766',
+      snapshotUrls: 'https://i.gkd.li/i/13746766',
     },
     {
       key: 2,
@@ -52,12 +52,12 @@ export default defineAppConfig({
         {
           key: 1,
           matches: '[id=`tv.danmaku.bili:id/ad_goods_mark_big`]',
-          snapshotUrls: 'https://i.gkd.li/import/12700222',
+          snapshotUrls: 'https://i.gkd.li/i/12700222',
         },
         {
           preKeys: 1,
           matches: '[text="不感兴趣"][id^="tv.danmaku.bili:id/reason"]',
-          snapshotUrls: 'https://i.gkd.li/import/12700243',
+          snapshotUrls: 'https://i.gkd.li/i/12700243',
         },
       ],
     },
@@ -80,10 +80,10 @@ export default defineAppConfig({
           matches:
             'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12642260', // n = 2
-            'https://i.gkd.li/import/12705266', // n = 3
-            'https://i.gkd.li/import/12776568', // id="tv.danmaku.bili:id/more_layout"
-            'https://i.gkd.li/import/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
+            'https://i.gkd.li/i/12642260', // n = 2
+            'https://i.gkd.li/i/12705266', // n = 3
+            'https://i.gkd.li/i/12776568', // id="tv.danmaku.bili:id/more_layout"
+            'https://i.gkd.li/i/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
           ],
         },
         {
@@ -93,8 +93,8 @@ export default defineAppConfig({
           matches:
             '[id="tv.danmaku.bili:id/dislike_reasons"] @RelativeLayout > [text*="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12642261', // 屏蔽广告菜单弹窗
-            'https://i.gkd.li/import/13495649',
+            'https://i.gkd.li/i/12642261', // 屏蔽广告菜单弹窗
+            'https://i.gkd.li/i/13495649',
           ],
         },
       ],
@@ -111,10 +111,10 @@ export default defineAppConfig({
           key: 1,
           matches: '[id="tv.danmaku.bili:id/update_btn_cancel"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
-            'https://i.gkd.li/import/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
-            'https://i.gkd.li/import/13228977',
-            'https://i.gkd.li/import/13334963',
+            'https://i.gkd.li/i/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
+            'https://i.gkd.li/i/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
+            'https://i.gkd.li/i/13228977',
+            'https://i.gkd.li/i/13334963',
           ],
         },
       ],
@@ -132,9 +132,9 @@ export default defineAppConfig({
       ],
       rules: ['[id="tv.danmaku.bili:id/toast_x"]'],
       snapshotUrls: [
-        'https://i.gkd.li/import/12892611',
-        'https://i.gkd.li/import/13308344',
-        'https://i.gkd.li/import/13538048', // activityIds: 'com.bilibili.video.videodetail.VideoDetailsActivity',
+        'https://i.gkd.li/i/12892611',
+        'https://i.gkd.li/i/13308344',
+        'https://i.gkd.li/i/13538048', // activityIds: 'com.bilibili.video.videodetail.VideoDetailsActivity',
       ],
       exampleUrls: [
         'https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb',
@@ -149,7 +149,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
       rules: '[id="tv.danmaku.bili:id/shopping_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13200549',
+      snapshotUrls: 'https://i.gkd.li/i/13200549',
     },
     {
       enable: false,
@@ -161,8 +161,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13229159',
-        'https://i.gkd.li/import/13614090',
+        'https://i.gkd.li/i/13229159',
+        'https://i.gkd.li/i/13614090',
       ],
     },
     {
@@ -178,7 +178,7 @@ export default defineAppConfig({
           actionCd: 500,
           matches:
             'RelativeLayout[desc^="广告"] > ViewGroup[childCount=3] > FrameLayout[index=2]',
-          snapshotUrls: 'https://i.gkd.li/import/14083540',
+          snapshotUrls: 'https://i.gkd.li/i/14083540',
         },
         {
           key: 3,
@@ -187,7 +187,7 @@ export default defineAppConfig({
           actionCd: 500,
           matches:
             'ViewGroup[desc^="广告"] >2 ViewGroup[childCount=3] > FrameLayout[index=2]',
-          snapshotUrls: 'https://i.gkd.li/import/14059876',
+          snapshotUrls: 'https://i.gkd.li/i/14059876',
         },
         {
           preKeys: [0],
@@ -196,10 +196,10 @@ export default defineAppConfig({
           name: '点击[不感兴趣]',
           matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13742257',
-            'https://i.gkd.li/import/13256605',
-            'https://i.gkd.li/import/14155801',
-            'https://i.gkd.li/import/13742257',
+            'https://i.gkd.li/i/13742257',
+            'https://i.gkd.li/i/13256605',
+            'https://i.gkd.li/i/14155801',
+            'https://i.gkd.li/i/13742257',
           ],
         },
         {
@@ -211,9 +211,9 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/acd89b46-45fc-459f-8d17-3913d98dcbad',
           snapshotUrls: [
-            'https://i.gkd.li/import/13945597',
-            'https://i.gkd.li/import/14155272',
-            'https://i.gkd.li/import/14059882',
+            'https://i.gkd.li/i/13945597',
+            'https://i.gkd.li/i/14155272',
+            'https://i.gkd.li/i/14059882',
           ],
         },
         {
@@ -224,7 +224,7 @@ export default defineAppConfig({
           matches: '@[clickable=true] > [text="up主不感兴趣"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9c2f42d7-c262-4e06-b3c6-40f0908e7a94',
-          snapshotUrls: 'https://i.gkd.li/import/13625309',
+          snapshotUrls: 'https://i.gkd.li/i/13625309',
         },
       ],
     },
@@ -238,7 +238,7 @@ export default defineAppConfig({
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules:
         '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13448905',
+      snapshotUrls: 'https://i.gkd.li/i/13448905',
     },
   ],
 });

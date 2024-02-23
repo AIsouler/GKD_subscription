@@ -17,7 +17,7 @@ export default defineAppConfig({
           exampleUrls: [
             'https://m.gkd.li/83610194/2a9a1179-3a50-4317-900a-42c8197517ed',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/13422624'],
+          snapshotUrls: ['https://i.gkd.li/i/13422624'],
         },
       ],
     },
@@ -36,7 +36,7 @@ export default defineAppConfig({
           exampleUrls: [
             'https://m.gkd.li/83610194/a5cbd7ce-79b4-49da-ba01-2b7db907d1f1',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/13422767'],
+          snapshotUrls: ['https://i.gkd.li/i/13422767'],
         },
       ],
     },
@@ -55,7 +55,7 @@ export default defineAppConfig({
           exampleUrls: [
             'https://m.gkd.li/83610194/92feb979-d75a-4ee5-a880-da2e4250d1e3',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/13423009'],
+          snapshotUrls: ['https://i.gkd.li/i/13423009'],
         },
       ],
     },
@@ -76,7 +76,7 @@ export default defineAppConfig({
           exampleUrls: [
             'https://m.gkd.li/83610194/d53cc0cb-2a3e-4398-a415-3b8083edd328',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/13422844'],
+          snapshotUrls: ['https://i.gkd.li/i/13422844'],
         },
         {
           matches:
@@ -84,7 +84,7 @@ export default defineAppConfig({
           exampleUrls: [
             'https://m.gkd.li/83610194/90048fce-fe89-4ac7-9ae6-fe3d7b99aeaf',
           ],
-          snapshotUrls: ['https://i.gkd.li/import/13422874'],
+          snapshotUrls: ['https://i.gkd.li/i/13422874'],
         },
       ],
     },
@@ -102,7 +102,7 @@ export default defineAppConfig({
         {
           matches:
             'RelativeLayout > Button[text="確定"][id="com.picacomic.fregata:id/button_dialog_custom_positive"]',
-          snapshotUrls: 'https://i.gkd.li/import/13466492',
+          snapshotUrls: 'https://i.gkd.li/i/13466492',
         },
       ],
     },

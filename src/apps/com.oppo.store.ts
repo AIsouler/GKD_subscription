@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="下次再说"] -n [text="发现新版本"]',
-      snapshotUrls: 'https://i.gkd.li/import/13295202',
+      snapshotUrls: 'https://i.gkd.li/i/13295202',
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.oppo.store.MainActivity',
       rules: 'ImageView[id="com.oppo.store:id/dialog_delete"][desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/import/13295201',
+      snapshotUrls: 'https://i.gkd.li/i/13295201',
     },
   ],
 });

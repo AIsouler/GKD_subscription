@@ -18,9 +18,9 @@ export default defineAppConfig({
           ],
           matches: '@Image < View < View TextView[text = "反馈"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12859523',
-            'https://i.gkd.li/import/12859545',
-            'https://i.gkd.li/import/13670598',
+            'https://i.gkd.li/i/12859523',
+            'https://i.gkd.li/i/12859545',
+            'https://i.gkd.li/i/13670598',
           ],
         },
         {
@@ -29,7 +29,7 @@ export default defineAppConfig({
           activityIds: 'com.jincheng.supercaculator.activity.SplashActivity',
           matches:
             'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13261870',
+          snapshotUrls: 'https://i.gkd.li/i/13261870',
         },
         {
           key: 2,
@@ -38,7 +38,7 @@ export default defineAppConfig({
             'com.jincheng.supercaculator.activity.basic.CalculatorActivity',
           matches:
             'ImageView -2 FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13378847',
+          snapshotUrls: 'https://i.gkd.li/i/13378847',
         },
       ],
     },

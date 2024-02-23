@@ -11,14 +11,14 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '[id="android:id/content"] >2 [vid="button_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/14179064',
+      snapshotUrls: 'https://i.gkd.li/i/14179064',
     },
     {
       key: 2,
       name: '局部广告-皮肤页-底部VIP弹窗',
       activityIds: 'com.baidu.input.ImeAppMainActivity',
       rules: '[desc="开会员，全部皮肤免费用"] +5 View[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/14179107',
+      snapshotUrls: 'https://i.gkd.li/i/14179107',
     },
   ],
 });

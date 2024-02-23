@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@LinearLayout > [id="com.tencent.docs:id/tv_gdt_ad_text"]',
-      snapshotUrls: 'https://i.gkd.li/import/13198082',
+      snapshotUrls: 'https://i.gkd.li/i/13198082',
     },
     {
       key: 1,
@@ -21,14 +21,14 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[desc="暂不更新"] + [desc="现在更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/13198091',
+      snapshotUrls: 'https://i.gkd.li/i/13198091',
     },
     {
       key: 2,
       name: '局部广告-广告卡片',
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: '[desc="限时购买"] + ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13198097',
+      snapshotUrls: 'https://i.gkd.li/i/13198097',
     },
     {
       key: 3,
@@ -36,7 +36,7 @@ export default defineAppConfig({
       actionDelay: 200,
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: 'View[childCount=2] > @TextView[id=null][clickable=true] + View',
-      snapshotUrls: 'https://i.gkd.li/import/13242404',
+      snapshotUrls: 'https://i.gkd.li/i/13242404',
     },
   ],
 });

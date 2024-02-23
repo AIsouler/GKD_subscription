@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds: 'com.x.istar.view.main.MainActivity',
       rules: '[text="关闭广告"][vid="btn_negative"]',
-      snapshotUrls: 'https://i.gkd.li/import/13974606',
+      snapshotUrls: 'https://i.gkd.li/i/13974606',
     },
   ],
 });

@@ -16,12 +16,12 @@ export default defineAppConfig({
         {
           matches:
             'ImageView[width<90][height<90] < @ViewGroup[clickable=true] <<n [id="com.juduoduo.app:id/ksad_tk_view"]',
-          snapshotUrls: 'https://i.gkd.li/import/13705650',
+          snapshotUrls: 'https://i.gkd.li/i/13705650',
         },
         {
           matches:
             '[id="com.juduoduo.app:id/ksad_tk_view"] @ViewGroup[clickable=true] > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13705662',
+          snapshotUrls: 'https://i.gkd.li/i/13705662',
         },
       ],
     },

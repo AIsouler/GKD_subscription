@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="进入青少年模式"] + [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13498610',
+      snapshotUrls: 'https://i.gkd.li/i/13498610',
     },
   ],
 });

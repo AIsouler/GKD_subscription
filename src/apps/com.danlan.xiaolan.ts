@@ -15,13 +15,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.danlan.xiaolan:id/ad_container"] >n [id="com.danlan.xiaolan:id/img_close"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13421613',
+          snapshotUrls: 'https://i.gkd.li/i/13421613',
         },
         {
           preKeys: [0],
           key: 1,
           matches: '@LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13421622',
+          snapshotUrls: 'https://i.gkd.li/i/13421622',
         },
       ],
     },
@@ -34,13 +34,13 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.danlan.xiaolan:id/img_close"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13421923',
+          snapshotUrls: 'https://i.gkd.li/i/13421923',
         },
         {
           preKeys: [0],
           key: 1,
           matches: '@LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/13422170',
+          snapshotUrls: 'https://i.gkd.li/i/13422170',
         },
       ],
     },

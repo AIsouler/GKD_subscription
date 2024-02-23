@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches:
             '[id="run.xbud.android:id/ksad_tk_view"] >n @ViewGroup[clickable=true] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/12777133',
-            'https://i.gkd.li/import/12777134',
+            'https://i.gkd.li/i/12777133',
+            'https://i.gkd.li/i/12777134',
           ],
         },
         {
@@ -25,7 +25,7 @@ export default defineAppConfig({
           activityIds: 'run.xbud.android.mvp.ui.other.MainActivity',
           matches:
             'ImageView - LinearLayout < FrameLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13296371',
+          snapshotUrls: 'https://i.gkd.li/i/13296371',
         },
         {
           key: 2,
@@ -33,7 +33,7 @@ export default defineAppConfig({
           activityIds: 'run.xbud.android.mvp.ui.other.MainActivity',
           matches:
             'ImageView -n FrameLayout > FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13296398',
+          snapshotUrls: 'https://i.gkd.li/i/13296398',
         },
         {
           key: 3,
@@ -42,7 +42,7 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13414538',
+          snapshotUrls: 'https://i.gkd.li/i/13414538',
         },
         {
           key: 4,
@@ -50,7 +50,7 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[id="com.byted.pangle:id/tt_reward_full_count_down_after"]',
-          snapshotUrls: 'https://i.gkd.li/import/13414544',
+          snapshotUrls: 'https://i.gkd.li/i/13414544',
         },
       ],
     },

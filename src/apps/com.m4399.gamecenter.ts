@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.bbk.launcher2.Launcher',
           matches:
             '[id="com.m4399.gamecenter:id/image"] + [id="com.m4399.gamecenter:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13297551',
+          snapshotUrls: 'https://i.gkd.li/i/13297551',
         },
         {
           key: 1,
@@ -24,7 +24,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@[id="com.m4399.gamecenter:id/close"] + [id="com.m4399.gamecenter:id/image"]',
-          snapshotUrls: 'https://i.gkd.li/import/13297466',
+          snapshotUrls: 'https://i.gkd.li/i/13297466',
         },
       ],
     },

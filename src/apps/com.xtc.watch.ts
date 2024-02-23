@@ -15,8 +15,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id="com.xtc.watch:id/iv_close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13197390',
-        'https://i.gkd.li/import/13063274',
+        'https://i.gkd.li/i/13197390',
+        'https://i.gkd.li/i/13063274',
       ],
     },
     {
@@ -30,7 +30,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: ['[id="com.xtc.watch:id/iv_notify_permission_close"]'],
-          snapshotUrls: ['https://i.gkd.li/import/13059965'],
+          snapshotUrls: ['https://i.gkd.li/i/13059965'],
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
           matches: '[id="com.xueqiu.fund:id/image_cancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/c43d58ab-a18c-4249-bc35-1c7aeab4c3ff',
-          snapshotUrls: 'https://i.gkd.li/import/14163901',
+          snapshotUrls: 'https://i.gkd.li/i/14163901',
         },
       ],
     },

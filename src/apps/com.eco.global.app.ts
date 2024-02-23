@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'ImageView[id="com.eco.global.app:id/adview_jump"]',
-      snapshotUrls: 'https://i.gkd.li/import/13538616',
+      snapshotUrls: 'https://i.gkd.li/i/13538616',
     },
   ],
 });

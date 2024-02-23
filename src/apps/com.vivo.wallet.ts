@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@Button[text*="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/13440881',
+          snapshotUrls: 'https://i.gkd.li/i/13440881',
         },
       ],
     },

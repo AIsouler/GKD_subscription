@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '@View <3 FrameLayout[childCount=4] <2 FrameLayout[childCount=2] < FrameLayout < [vid="splashAdContainer"]',
-          snapshotUrls: 'https://i.gkd.li/import/13926823',
+          snapshotUrls: 'https://i.gkd.li/i/13926823',
         },
       ],
     },

@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.cmcc.cmvideo:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/import/12498307',
+      snapshotUrls: 'https://i.gkd.li/i/12498307',
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
       rules: '[id="com.cmcc.cmvideo:id/iv_right_bottom_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12498315',
+      snapshotUrls: 'https://i.gkd.li/i/12498315',
     },
     {
       key: 3,
@@ -30,7 +30,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.cmcc.cmvideo:id/btn_update_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13276116',
+      snapshotUrls: 'https://i.gkd.li/i/13276116',
     },
     {
       key: 4,
@@ -40,7 +40,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.cmcc.cmvideo:id/base_dialog_left_btn"][text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13276127',
+      snapshotUrls: 'https://i.gkd.li/i/13276127',
     },
     {
       key: 5,
@@ -49,8 +49,8 @@ export default defineAppConfig({
       rules:
         '@[id="com.cmcc.cmvideo:id/iv_big_close"] + [id="com.cmcc.cmvideo:id/sdv_big_pic"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13276111',
-        'https://i.gkd.li/import/13276122',
+        'https://i.gkd.li/i/13276111',
+        'https://i.gkd.li/i/13276122',
       ],
     },
   ],

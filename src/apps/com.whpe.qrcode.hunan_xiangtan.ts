@@ -15,7 +15,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@[id="com.whpe.qrcode.hunan_xiangtan:id/iv_close"] +n * >n [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13476265',
+          snapshotUrls: 'https://i.gkd.li/i/13476265',
         },
       ],
     },

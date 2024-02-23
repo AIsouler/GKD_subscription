@@ -16,7 +16,7 @@ export default defineAppConfig({
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
           exampleUrls:
             'https://m.gkd.li/57941037/15464fe7-8f80-468d-8972-011cab0ec377',
-          snapshotUrls: 'https://i.gkd.li/import/14228338',
+          snapshotUrls: 'https://i.gkd.li/i/14228338',
         },
       ],
     },
@@ -32,7 +32,7 @@ export default defineAppConfig({
             'View[childCount=6] >2 View[childCount=8] > View[childCount=4] > [text="反馈"] + View[index=3]',
           exampleUrls:
             'https://m.gkd.li/57941037/3cb59a01-f1ab-4244-b455-3824a5724811',
-          snapshotUrls: 'https://i.gkd.li/import/14228332',
+          snapshotUrls: 'https://i.gkd.li/i/14228332',
         },
       ],
     },

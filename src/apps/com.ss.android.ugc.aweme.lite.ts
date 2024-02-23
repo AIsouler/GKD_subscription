@@ -15,14 +15,14 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'Button[desc="开启青少年模式"] + Button[text="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/import/13111607',
+          snapshotUrls: 'https://i.gkd.li/i/13111607',
         },
         {
           actionMaximumKey: 0,
           matches:
             'Button[text="开启青少年模式"] + LinearLayout > Button[text="关闭"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13542867', //新版本
+            'https://i.gkd.li/i/13542867', //新版本
           ],
         },
       ],
@@ -38,7 +38,7 @@ export default defineAppConfig({
             'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
           matches:
             '[text="不再提示"] + @ECCustomUiImage[clickable=true] +n LynxFlattenUI[text^="立即体验"]',
-          snapshotUrls: 'https://i.gkd.li/import/13684791',
+          snapshotUrls: 'https://i.gkd.li/i/13684791',
         },
       ],
     },
@@ -51,7 +51,7 @@ export default defineAppConfig({
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
       rules:
         '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme.lite:id/close"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13650523',
+      snapshotUrls: 'https://i.gkd.li/i/13650523',
     },
     {
       key: 9,
@@ -65,7 +65,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.ss.android.ugc.aweme.lite:id/gl7"] > [id="com.ss.android.ugc.aweme.lite:id/h5q"]',
-          snapshotUrls: 'https://i.gkd.li/import/13888485',
+          snapshotUrls: 'https://i.gkd.li/i/13888485',
         },
       ],
     },
@@ -80,8 +80,8 @@ export default defineAppConfig({
           matches:
             '[id="com.ss.android.ugc.aweme.lite:id/amh"][desc^="未选中"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13946092', //未勾选原图
-            'https://i.gkd.li/import/13946033', //已勾选原图
+            'https://i.gkd.li/i/13946092', //未勾选原图
+            'https://i.gkd.li/i/13946033', //已勾选原图
           ],
         },
       ],

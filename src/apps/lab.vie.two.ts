@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[desc="账号注册说明"] +2 [desc="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13379070',
+      snapshotUrls: 'https://i.gkd.li/i/13379070',
     },
   ],
 });

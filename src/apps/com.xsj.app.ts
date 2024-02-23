@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches:
             'ImageView -2 FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13625504',
-            'https://i.gkd.li/import/13761165',
+            'https://i.gkd.li/i/13625504',
+            'https://i.gkd.li/i/13761165',
           ],
         },
         {
@@ -24,7 +24,7 @@ export default defineAppConfig({
           activityIds: 'com.qq.e.ads.ADActivity',
           matches:
             'FrameLayout[childCount=3] > TextView[text!=""] + @ImageView[clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13670176',
+          snapshotUrls: 'https://i.gkd.li/i/13670176',
         },
       ],
     },
@@ -35,7 +35,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[desc="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13875711',
+      snapshotUrls: 'https://i.gkd.li/i/13875711',
     },
   ],
 });

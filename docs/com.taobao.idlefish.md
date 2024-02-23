@@ -6,16 +6,16 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13538351)
+- [快照-0](https://i.gkd.li/i/13538351)
 
 ## 权限提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13620277)
+- [快照-0](https://i.gkd.li/i/13620277)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13832272)
+- [快照-0](https://i.gkd.li/i/13832272)

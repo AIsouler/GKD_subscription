@@ -6,10 +6,10 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13761821)
+- [快照-0](https://i.gkd.li/i/13761821)
 
 ## 全屏广告-弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13761825)
+- [快照-0](https://i.gkd.li/i/13761825)

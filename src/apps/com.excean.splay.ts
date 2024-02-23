@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="发现新版本"] +n * > [text="忽略"]',
-      snapshotUrls: 'https://i.gkd.li/import/12684551',
+      snapshotUrls: 'https://i.gkd.li/i/12684551',
     },
   ],
 });

@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[text="取消"] < * + * > [text="立即下载"]',
-          snapshotUrls: 'https://i.gkd.li/import/13998612',
+          snapshotUrls: 'https://i.gkd.li/i/13998612',
         },
       ],
     },

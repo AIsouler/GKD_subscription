@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.hpbr.directhires:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13774242',
+          snapshotUrls: 'https://i.gkd.li/i/13774242',
         },
       ],
     },

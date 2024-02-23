@@ -11,7 +11,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.mxbc.ohsa.modules.main.MainAbilityShellActivity',
           matches: 'UIComponentContainer > [id="Id_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13728113',
+          snapshotUrls: 'https://i.gkd.li/i/13728113',
         },
       ],
     },

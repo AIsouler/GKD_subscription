@@ -4,14 +4,14 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/13827755)
+- [快照-0](https://i.gkd.li/i/13827755)
 
 ## 全屏广告-广告弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13695604)
-- [快照-1](https://i.gkd.li/import/13762212)
-- [快照-2](https://i.gkd.li/import/13762195)
-- [快照-3](https://i.gkd.li/import/13762196)
-- [快照-4](https://i.gkd.li/import/13695668)
+- [快照-0](https://i.gkd.li/i/13695604)
+- [快照-1](https://i.gkd.li/i/13762212)
+- [快照-2](https://i.gkd.li/i/13762195)
+- [快照-3](https://i.gkd.li/i/13762196)
+- [快照-4](https://i.gkd.li/i/13695668)

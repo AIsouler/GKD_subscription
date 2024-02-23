@@ -14,7 +14,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.chinatower.tthd:id/fl_content_container"] + [id="com.chinatower.tthd:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13694901',
+          snapshotUrls: 'https://i.gkd.li/i/13694901',
         },
       ],
     },

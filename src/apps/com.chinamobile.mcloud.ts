@@ -17,13 +17,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@[id="com.chinamobile.mcloud:id/bn_cancel"] + [id="com.chinamobile.mcloud:id/upgrade_title"]',
-          snapshotUrls: 'https://i.gkd.li/import/12774833',
+          snapshotUrls: 'https://i.gkd.li/i/12774833',
         },
         {
           key: 1,
           quickFind: true,
           matches: '@[vid="bn_cancel"] + * > [vid="upgrade_title"]',
-          snapshotUrls: 'https://i.gkd.li/import/14297700',
+          snapshotUrls: 'https://i.gkd.li/i/14297700',
         },
       ],
     },
@@ -37,13 +37,13 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.chinamobile.mcloud:id/rl_container"] + [id="com.chinamobile.mcloud:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13627826',
+          snapshotUrls: 'https://i.gkd.li/i/13627826',
         },
         {
           key: 1,
           activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
           matches: '[text="马上领取"] +n View > Image[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13627832',
+          snapshotUrls: 'https://i.gkd.li/i/13627832',
         },
       ],
     },
@@ -57,7 +57,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.chinamobile.mcloud:id/iv_logo"] + [id="com.chinamobile.mcloud:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13627834',
+          snapshotUrls: 'https://i.gkd.li/i/13627834',
         },
       ],
     },
@@ -69,7 +69,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[text="开启自动备份"] +n [id="com.chinamobile.mcloud:id/tv_skip"]',
-      snapshotUrls: 'https://i.gkd.li/import/13627830',
+      snapshotUrls: 'https://i.gkd.li/i/13627830',
     },
   ],
 });

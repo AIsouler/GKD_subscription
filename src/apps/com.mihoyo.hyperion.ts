@@ -13,8 +13,8 @@ export default defineAppConfig({
       rules:
         'TextView[id="com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode"] + TextView[id="com.mihoyo.hyperion:id/tv_dialog_i_know"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12675547',
-        'https://i.gkd.li/import/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
+        'https://i.gkd.li/i/12675547',
+        'https://i.gkd.li/i/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
       ],
     },
     {
@@ -25,7 +25,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'TextView[id="com.mihoyo.hyperion:id/mUpgradeDialogCancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/12675513',
+      snapshotUrls: 'https://i.gkd.li/i/12675513',
     },
     {
       key: 3,
@@ -35,8 +35,8 @@ export default defineAppConfig({
       rules:
         'TextView[id="com.mihoyo.hyperion:id/signTv"][text="打卡"][visibleToUser=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13721772', // 未打卡
-        'https://i.gkd.li/import/13721776', // 已打卡
+        'https://i.gkd.li/i/13721772', // 未打卡
+        'https://i.gkd.li/i/13721776', // 已打卡
       ],
     },
     {

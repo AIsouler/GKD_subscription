@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: '@ImageView[id="com.hpbr.bosszhipin:id/iv_cancle"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13440781',
-            'https://i.gkd.li/import/13623476',
+            'https://i.gkd.li/i/13440781',
+            'https://i.gkd.li/i/13623476',
           ],
         },
       ],

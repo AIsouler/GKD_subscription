@@ -6,6 +6,6 @@
 
 默认禁用 - 自动点击"登录"按钮
 
-- [快照-0](https://i.gkd.li/import/12745239)
-- [快照-1](https://i.gkd.li/import/12745240)
-- [快照-2](https://i.gkd.li/import/12745241)
+- [快照-0](https://i.gkd.li/i/12745239)
+- [快照-1](https://i.gkd.li/i/12745240)
+- [快照-2](https://i.gkd.li/i/12745241)

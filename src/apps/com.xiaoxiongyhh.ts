@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.uzmap.pkg.EntranceActivity',
           matches:
             'View[childCount=2] > ImageView + Button[childCount=0][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13401975',
+          snapshotUrls: 'https://i.gkd.li/i/13401975',
         },
       ],
     },

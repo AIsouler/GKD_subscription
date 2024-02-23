@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.netease.yanxuan.module.mainpage.activity.MainPageActivity',
       rules: '[id="com.netease.yanxuan:id/trans_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/12840641',
+      snapshotUrls: 'https://i.gkd.li/i/12840641',
     },
   ],
 });

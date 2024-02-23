@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.mi.health:id/nextView"][text="下次再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13258813',
+      snapshotUrls: 'https://i.gkd.li/i/13258813',
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="开启后台无限制"] + [id="com.mi.health:id/close_icon"]',
-      snapshotUrls: 'https://i.gkd.li/import/13495035',
+      snapshotUrls: 'https://i.gkd.li/i/13495035',
     },
     {
       key: 3,
@@ -34,7 +34,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.mi.health:id/cardview"] + [id="com.mi.health:id/dialog_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13537836',
+          snapshotUrls: 'https://i.gkd.li/i/13537836',
         },
       ],
     },
@@ -48,12 +48,12 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text^="发现新版本"] < * + * >n [text="放弃更新"]',
-          snapshotUrls: 'https://i.gkd.li/import/13537840',
+          snapshotUrls: 'https://i.gkd.li/i/13537840',
         },
         {
           matches:
             '[text="立即更新"] + [id="com.mi.health:id/tv_negative"][text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/13626328',
+          snapshotUrls: 'https://i.gkd.li/i/13626328',
         },
       ],
     },

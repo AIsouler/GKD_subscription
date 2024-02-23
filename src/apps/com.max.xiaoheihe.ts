@@ -18,7 +18,7 @@ export default defineAppConfig({
             '[text="签到成功!"]',
             '[id="com.max.xiaoheihe:id/tv_confirm"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13421535',
+          snapshotUrls: 'https://i.gkd.li/i/13421535',
         },
       ],
     },

@@ -6,33 +6,33 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12706097)
+- [快照-0](https://i.gkd.li/i/12706097)
 
 ## 全屏广告-首页弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12706102)
-- [快照-1](https://i.gkd.li/import/13761641)
+- [快照-0](https://i.gkd.li/i/12706102)
+- [快照-1](https://i.gkd.li/i/13761641)
 
 ## 局部广告-首页信息流广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12706115)
+- [快照-0](https://i.gkd.li/i/12706115)
 
 ## 全屏广告-运动购页面-广告弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12706111)
-- [快照-1](https://i.gkd.li/import/13766358)
+- [快照-0](https://i.gkd.li/i/12706111)
+- [快照-1](https://i.gkd.li/i/13766358)
 
 ## 全屏广告-请求开启通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13761671)
+- [快照-0](https://i.gkd.li/i/13761671)
 
 ## 更新提示
 
@@ -40,4 +40,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/6b0091e9-1bf1-49bd-be5c-e6997bc9accb)
 
-- [快照-0](https://i.gkd.li/import/14126005)
+- [快照-0](https://i.gkd.li/i/14126005)

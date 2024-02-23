@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.ddsy.songyao:id/iv_coupon_bottom"] + [id="com.ddsy.songyao:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13048720',
+          snapshotUrls: 'https://i.gkd.li/i/13048720',
         },
       ],
     },

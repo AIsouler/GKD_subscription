@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'co.notix.interstitial.InterstitialActivity',
       rules: '[vid="tv_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13842558',
+      snapshotUrls: 'https://i.gkd.li/i/13842558',
     },
   ],
 });

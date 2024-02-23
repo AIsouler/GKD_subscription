@@ -14,7 +14,7 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.baseus.intelligent.view.home.MainActivity',
           matches: '@[text="取消"] + [text="前往设置"]',
-          snapshotUrls: 'https://i.gkd.li/import/13827653',
+          snapshotUrls: 'https://i.gkd.li/i/13827653',
         },
         {
           preKeys: 0,
@@ -22,7 +22,7 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.baseus.intelligent.view.home.MainActivity',
           matches: '@[text="取消"] + [text="授权"]',
-          snapshotUrls: 'https://i.gkd.li/import/13827986',
+          snapshotUrls: 'https://i.gkd.li/i/13827986',
         },
       ],
     },

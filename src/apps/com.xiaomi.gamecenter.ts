@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.gamecenter.ui.MainTabActivity',
       rules:
         '[id="com.xiaomi.gamecenter:id/ad_view"] + [id="com.xiaomi.gamecenter:id/close_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/12715800',
+      snapshotUrls: 'https://i.gkd.li/i/12715800',
     },
   ],
 });

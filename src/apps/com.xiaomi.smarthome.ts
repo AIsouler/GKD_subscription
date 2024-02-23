@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           matches:
             'RelativeLayout[childCount=2] > ImageView[id!=null] + ImageView[clickable=true][id!=null]',
-          snapshotUrls: ['https://i.gkd.li/import/12639658'],
+          snapshotUrls: ['https://i.gkd.li/i/12639658'],
         },
       ],
     },
@@ -23,7 +23,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      snapshotUrls: 'https://i.gkd.li/import/12639671',
+      snapshotUrls: 'https://i.gkd.li/i/12639671',
       rules:
         '[text*="检测到"&&text*="升级"] < ViewGroup + ViewGroup > Button > [text = "取消"]',
     },

@@ -11,8 +11,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text="青少年守护模式"] - [id="com.qq.ac.android:id/close_btn"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12707752',
-        'https://i.gkd.li/import/13195636',
+        'https://i.gkd.li/i/12707752',
+        'https://i.gkd.li/i/13195636',
       ],
     },
     {
@@ -21,7 +21,7 @@ export default defineAppConfig({
       activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
       rules:
         '[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12707756'],
+      snapshotUrls: ['https://i.gkd.li/i/12707756'],
     },
   ],
 });

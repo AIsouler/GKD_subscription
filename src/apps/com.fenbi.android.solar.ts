@@ -17,7 +17,7 @@ export default defineAppConfig({
             '[id="com.fenbi.android.solar:id/text_upgrade"]',
             '[id="com.fenbi.android.solar:id/img_close"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13246056',
+          snapshotUrls: 'https://i.gkd.li/i/13246056',
         },
       ],
     },
@@ -34,7 +34,7 @@ export default defineAppConfig({
           matches: '[id="com.fenbi.android.solar:id/tv_cancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7864769f-542c-4f76-8b90-4d030b53651b',
-          snapshotUrls: 'https://i.gkd.li/import/14136539',
+          snapshotUrls: 'https://i.gkd.li/i/14136539',
         },
       ],
     },

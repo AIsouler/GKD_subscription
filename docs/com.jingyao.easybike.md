@@ -6,49 +6,49 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13228735)
-- [快照-1](https://i.gkd.li/import/13402675)
+- [快照-0](https://i.gkd.li/i/13228735)
+- [快照-1](https://i.gkd.li/i/13402675)
 
 ## 定位提示-请求定位权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13228677)
+- [快照-0](https://i.gkd.li/i/13228677)
 
 ## 全屏广告-应用内活动、广告弹窗（大部分）
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12650028)
-- [快照-1](https://i.gkd.li/import/12650090)
-- [快照-2](https://i.gkd.li/import/13331231)
+- [快照-0](https://i.gkd.li/i/12650028)
+- [快照-1](https://i.gkd.li/i/12650090)
+- [快照-2](https://i.gkd.li/i/13331231)
 
 ## 全屏广告-哈啰智能电动车-广告弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12650163)
+- [快照-0](https://i.gkd.li/i/12650163)
 
 ## 局部广告-右侧悬浮广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12650071)
+- [快照-0](https://i.gkd.li/i/12650071)
 
 ## 全屏广告-骑行订单完成-广告弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12684673)
+- [快照-0](https://i.gkd.li/i/12684673)
 
 ## 全屏广告-骑行卡-优惠券弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12739316)
+- [快照-0](https://i.gkd.li/i/12739316)
 
 ## 功能类-新人教学弹窗
 
 默认禁用 - 点击跳过
 
-- [快照-0](https://i.gkd.li/import/13837543)
+- [快照-0](https://i.gkd.li/i/13837543)

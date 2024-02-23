@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '@View[clickable=true] <3 * <2 * < FrameLayout[id="com.superrhino.rarering:id/fl_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13853858',
+          snapshotUrls: 'https://i.gkd.li/i/13853858',
         },
       ],
     },

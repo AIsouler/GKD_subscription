@@ -13,7 +13,7 @@ export default defineAppConfig({
           key: 1,
           matches:
             'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13274336',
+          snapshotUrls: 'https://i.gkd.li/i/13274336',
         },
         {
           key: 2,
@@ -22,10 +22,10 @@ export default defineAppConfig({
             '[id="android:id/content"] >2 FrameLayout[childCount=3||childCount=2] > FrameLayout[childCount=5||childCount=6||childCount=8] > FrameLayout[childCount=1] > ImageView[text=null][visibleToUser=true]', // 非广告页面下没有这种节点,不会误触
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13302326',
-            'https://i.gkd.li/import/13313576',
-            'https://i.gkd.li/import/13313624',
-            'https://i.gkd.li/import/13313576',
+            'https://i.gkd.li/i/13302326',
+            'https://i.gkd.li/i/13313576',
+            'https://i.gkd.li/i/13313624',
+            'https://i.gkd.li/i/13313576',
           ],
         },
         {
@@ -33,14 +33,14 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text="反馈"] -2 @View - Image',
-          snapshotUrls: 'https://i.gkd.li/import/12925052',
+          snapshotUrls: 'https://i.gkd.li/i/12925052',
         },
         {
           key: 4,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text="反馈"] -4 @View < View[childCount=7]',
-          snapshotUrls: 'https://i.gkd.li/import/12925095',
+          snapshotUrls: 'https://i.gkd.li/i/12925095',
         },
       ],
     },

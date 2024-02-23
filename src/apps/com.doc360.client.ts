@@ -11,7 +11,7 @@ export default defineAppConfig({
       activityIds: 'com.doc360.client.activity.ReadRoomActivity',
       rules:
         '@FrameLayout[desc^="dislike"] <<n [id="com.doc360.client:id/fl_ad_container"]',
-      snapshotUrls: 'https://i.gkd.li/import/13485051',
+      snapshotUrls: 'https://i.gkd.li/i/13485051',
     },
   ],
 });

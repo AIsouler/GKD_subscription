@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="关闭广告"]',
-      snapshotUrls: 'https://i.gkd.li/import/14275367',
+      snapshotUrls: 'https://i.gkd.li/i/14275367',
     },
   ],
 });

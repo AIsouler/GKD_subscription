@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '@[vid="tv_ok"] - [vid="tv_open_child_model"]',
-      snapshotUrls: 'https://i.gkd.li/import/13847804',
+      snapshotUrls: 'https://i.gkd.li/i/13847804',
     },
   ],
 });

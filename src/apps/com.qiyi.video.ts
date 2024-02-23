@@ -13,8 +13,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '@LinearLayout > [text="关闭"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13160866',
-        'https://i.gkd.li/import/13379565',
+        'https://i.gkd.li/i/13160866',
+        'https://i.gkd.li/i/13379565',
       ],
     },
     {
@@ -28,7 +28,7 @@ export default defineAppConfig({
           matches: '[id="com.qiyi.video:id/confirm_btn"][text="我知道了"]',
           exampleUrls:
             'https://m.gkd.li/6328439/d69e92f8-8304-4296-909a-11730e408a16',
-          snapshotUrls: 'https://i.gkd.li/import/13546555',
+          snapshotUrls: 'https://i.gkd.li/i/13546555',
         },
       ],
     },
@@ -37,7 +37,7 @@ export default defineAppConfig({
       name: '局部广告-我的页面顶部广告',
       quickFind: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
-      snapshotUrls: 'https://i.gkd.li/import/12495050',
+      snapshotUrls: 'https://i.gkd.li/i/12495050',
       rules: [
         '@[id="com.qiyi.video:id/unused_res_a"][clickable=true] > [id="com.qiyi.video:id/close"]',
       ],
@@ -49,7 +49,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      snapshotUrls: 'https://i.gkd.li/import/12838152',
+      snapshotUrls: 'https://i.gkd.li/i/12838152',
       rules: ['[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]'],
     },
     {
@@ -61,8 +61,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12838158',
-        'https://i.gkd.li/import/13684912', //activityIds: 'org.qiyi.android.search.view.PhoneSearchActivity',
+        'https://i.gkd.li/i/12838158',
+        'https://i.gkd.li/i/13684912', //activityIds: 'org.qiyi.android.search.view.PhoneSearchActivity',
       ],
     },
     {
@@ -76,8 +76,8 @@ export default defineAppConfig({
           matches:
             '@RelativeLayout[id="com.qiyi.video:id/unused_res_a"] > TextView[text="关闭广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13536669',
-            'https://i.gkd.li/import/13536703',
+            'https://i.gkd.li/i/13536669',
+            'https://i.gkd.li/i/13536703',
           ],
         },
       ],

@@ -6,19 +6,19 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12642387)
+- [快照-0](https://i.gkd.li/i/12642387)
 
 ## 功能类-自选页面缩写提示信息
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12642387)
+- [快照-0](https://i.gkd.li/i/12642387)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13546927)
+- [快照-0](https://i.gkd.li/i/13546927)
 
 ## 全屏广告-广告弹窗
 
@@ -26,8 +26,8 @@
 
 - [示例-0](https://m.gkd.li/57941037/21743bbb-010a-410c-8ce1-57710d37722d)
 
-- [快照-0](https://i.gkd.li/import/14149452)
-- [快照-1](https://i.gkd.li/import/14332091)
+- [快照-0](https://i.gkd.li/i/14149452)
+- [快照-1](https://i.gkd.li/i/14332091)
 
 ## 评价提示-好评弹窗
 
@@ -35,4 +35,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/d791a2f9-ae86-4389-8ee7-36a87f11b60d)
 
-- [快照-0](https://i.gkd.li/import/14179508)
+- [快照-0](https://i.gkd.li/i/14179508)

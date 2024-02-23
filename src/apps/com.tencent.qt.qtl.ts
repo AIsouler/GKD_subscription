@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.tencent.qt.qtl:id/btn_update_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13611286',
+      snapshotUrls: 'https://i.gkd.li/i/13611286',
     },
   ],
 });

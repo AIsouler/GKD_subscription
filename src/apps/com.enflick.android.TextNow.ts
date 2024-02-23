@@ -16,12 +16,12 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.enflick.android.TextNow:id/btn_dismiss"][text="Not Now"]',
-          snapshotUrls: 'https://i.gkd.li/import/13630460',
+          snapshotUrls: 'https://i.gkd.li/i/13630460',
         },
         {
           preKeys: 0,
           matches: '[id="android:id/button2"][text="SKIP"]',
-          snapshotUrls: 'https://i.gkd.li/import/13630463',
+          snapshotUrls: 'https://i.gkd.li/i/13630463',
         },
       ],
     },
@@ -33,8 +33,8 @@ export default defineAppConfig({
       rules:
         '@ImageView[clickable=true] <2 [id="com.enflick.android.TextNow:id/calling_banner"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13657279',
-        'https://i.gkd.li/import/13657280',
+        'https://i.gkd.li/i/13657279',
+        'https://i.gkd.li/i/13657280',
       ],
     },
   ],

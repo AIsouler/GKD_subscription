@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.lenovo.club.app:id/tv_title"][text="发现新版本"] < LinearLayout [text="下次再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13498778',
+      snapshotUrls: 'https://i.gkd.li/i/13498778',
     },
   ],
 });

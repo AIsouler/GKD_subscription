@@ -15,8 +15,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '@View[clickable=true] <n * <2 * < [vid="flCSJAdContainer"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13988957',
-            'https://i.gkd.li/import/13989178',
+            'https://i.gkd.li/i/13988957',
+            'https://i.gkd.li/i/13989178',
           ],
         },
       ],

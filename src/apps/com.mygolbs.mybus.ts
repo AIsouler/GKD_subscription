@@ -19,10 +19,10 @@ export default defineAppConfig({
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] RelativeLayout[childCount=4] > TextView[text.length>0] + ImageView + ImageView[clickable=true][id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12790521',
-            'https://i.gkd.li/import/12790706',
-            'https://i.gkd.li/import/12790841',
-            'https://i.gkd.li/import/12790887',
+            'https://i.gkd.li/i/12790521',
+            'https://i.gkd.li/i/12790706',
+            'https://i.gkd.li/i/12790841',
+            'https://i.gkd.li/i/12790887',
           ],
         },
         {
@@ -30,45 +30,45 @@ export default defineAppConfig({
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=2||childCount=3] > View[childCount=4] > View[childCount=1] > Image[text=""]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12790656',
-            'https://i.gkd.li/import/12790903',
+            'https://i.gkd.li/i/12790656',
+            'https://i.gkd.li/i/12790903',
           ],
         },
         {
           name: '点击右上角x关闭图标-2',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=5] > View[childCount=2][index=4] > View[childCount=1] > Image[text=""]',
-          snapshotUrls: 'https://i.gkd.li/import/12790610',
+          snapshotUrls: 'https://i.gkd.li/i/12790610',
         },
         {
           name: '点击右上角x关闭图标-3',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=2] > View[childCount=6][index=0] > View[childCount=1][index=3] > Image[text=""]',
-          snapshotUrls: 'https://i.gkd.li/import/12790941',
+          snapshotUrls: 'https://i.gkd.li/i/12790941',
         },
         {
           name: '点击右下角x关闭按钮',
           matches:
             '[text="广告"] <3 View + @View[clickable=true] >2 [text="×"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12791122',
+          snapshotUrls: 'https://i.gkd.li/i/12791122',
         },
         {
           name: '点击不感兴趣',
           matches:
             '@LinearLayout[clickable=true][childCount<=2] > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12790671',
-            'https://i.gkd.li/import/12790551',
-            'https://i.gkd.li/import/12790616',
-            'https://i.gkd.li/import/12790707',
-            'https://i.gkd.li/import/12790717',
+            'https://i.gkd.li/i/12790671',
+            'https://i.gkd.li/i/12790551',
+            'https://i.gkd.li/i/12790616',
+            'https://i.gkd.li/i/12790707',
+            'https://i.gkd.li/i/12790717',
           ],
         },
         {
           name: '点击暂不领取',
           matches:
             '[id="com.mygolbs.mybus:id/ll_ad"] [id="com.mygolbs.mybus:id/btn_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/12791579',
+          snapshotUrls: 'https://i.gkd.li/i/12791579',
         },
       ],
     },
@@ -85,8 +85,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount=2] > FrameLayout[childCount>4] > FrameLayout[index=1][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12790762',
-            'https://i.gkd.li/import/14219270',
+            'https://i.gkd.li/i/12790762',
+            'https://i.gkd.li/i/14219270',
           ],
         },
       ],
@@ -99,7 +99,7 @@ export default defineAppConfig({
         {
           name: '点击右侧x关闭按钮',
           matches: '[id="com.mygolbs.mybus:id/ad_close2"]',
-          snapshotUrls: 'https://i.gkd.li/import/12790841',
+          snapshotUrls: 'https://i.gkd.li/i/12790841',
         },
       ],
     },
@@ -117,7 +117,7 @@ export default defineAppConfig({
             '[id="com.mygolbs.mybus:id/message"][text$="请开启通知权限"]',
             '[id="com.mygolbs.mybus:id/view_neg"] > [id="com.mygolbs.mybus:id/negativeButton"][text="取消"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/12715980',
+          snapshotUrls: 'https://i.gkd.li/i/12715980',
         },
       ],
     },
@@ -129,7 +129,7 @@ export default defineAppConfig({
       activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
       rules:
         '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
-      snapshotUrls: 'https://i.gkd.li/import/12716035',
+      snapshotUrls: 'https://i.gkd.li/i/12716035',
     },
   ],
 });

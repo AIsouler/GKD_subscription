@@ -16,7 +16,7 @@ export default defineAppConfig({
           matches: ['[text="更新 Telegram"]', '[text="请稍后提醒我"] - View'],
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/13847837',
+      snapshotUrls: 'https://i.gkd.li/i/13847837',
     },
   ],
 });

@@ -8,22 +8,22 @@
 
 - [示例-0](https://m.gkd.li/57941037/67cfc2f8-a108-4382-976a-0da7d13764e9)
 
-- [快照-0](https://i.gkd.li/import/14179162)
+- [快照-0](https://i.gkd.li/i/14179162)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14208545)
+- [快照-0](https://i.gkd.li/i/14208545)
 
 ## 定位提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14208572)
+- [快照-0](https://i.gkd.li/i/14208572)
 
 ## 通知提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14208621)
+- [快照-0](https://i.gkd.li/i/14208621)

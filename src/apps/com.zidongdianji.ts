@@ -18,7 +18,7 @@ export default defineAppConfig({
           key: 1,
           activityIds: 'com.autoclicker.clicker.MainActivity',
           matches: 'Image < @View + View > View > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13761239',
+          snapshotUrls: 'https://i.gkd.li/i/13761239',
         },
       ],
     },

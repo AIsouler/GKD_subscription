@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: ['com.dianping.main.guide.SplashActivity'],
       rules:
         'FrameLayout[id="android:id/content"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc="关闭"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12727011',
+      snapshotUrls: 'https://i.gkd.li/i/12727011',
     },
     {
       key: 2,
@@ -23,7 +23,7 @@ export default defineAppConfig({
           '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',
         action: 'clickCenter', // clickNode无响应
       },
-      snapshotUrls: 'https://i.gkd.li/import/12727070',
+      snapshotUrls: 'https://i.gkd.li/i/12727070',
     },
     {
       key: 3,
@@ -32,7 +32,7 @@ export default defineAppConfig({
       activityIds: ['com.dianping.v1.NovaMainActivity'],
       rules:
         '[id="com.dianping.v1:id/float_image"] + [id="com.dianping.v1:id/close"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12727366',
+      snapshotUrls: 'https://i.gkd.li/i/12727366',
     },
     {
       key: 4,
@@ -43,7 +43,7 @@ export default defineAppConfig({
           activityIds: 'com.dianping.v1.NovaMainActivity',
           quickFind: true,
           matches: '[id="com.dianping.v1:id/operate_cross_icon"]',
-          snapshotUrls: 'https://i.gkd.li/import/13538340',
+          snapshotUrls: 'https://i.gkd.li/i/13538340',
         },
       ],
     },
@@ -57,8 +57,8 @@ export default defineAppConfig({
           matches:
             '@[desc="reculike_delete"][clickable=true][visibleToUser=true] +3 [childCount=2]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13759369',
-            'https://i.gkd.li/import/14332054', // 限定 +3 [childCount=2] 防止误触
+            'https://i.gkd.li/i/13759369',
+            'https://i.gkd.li/i/14332054', // 限定 +3 [childCount=2] 防止误触
           ],
         },
         {
@@ -67,8 +67,8 @@ export default defineAppConfig({
           activityIds: 'com.dianping.v1.NovaMainActivity',
           matches: '@[clickable=true] > [text="重复出现"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14238381',
-            'https://i.gkd.li/import/14269115',
+            'https://i.gkd.li/i/14238381',
+            'https://i.gkd.li/i/14269115',
           ],
         },
       ],

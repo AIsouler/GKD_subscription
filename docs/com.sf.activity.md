@@ -6,11 +6,11 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12642445)
-- [快照-1](https://i.gkd.li/import/13291144)
+- [快照-0](https://i.gkd.li/i/12642445)
+- [快照-1](https://i.gkd.li/i/13291144)
 
 ## 功能类-专属月报弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12642441)
+- [快照-0](https://i.gkd.li/i/12642441)

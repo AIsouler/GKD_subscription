@@ -13,13 +13,13 @@ export default defineAppConfig({
           key: 0,
           matches:
             '[id="com.tuying.kuimg.rjm:id/ksad_tk_view"] >n @ViewGroup[childCount=1][clickable=true] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13166088',
+          snapshotUrls: 'https://i.gkd.li/i/13166088',
         },
         {
           key: 1,
           matches:
             '[id="com.tuying.kuimg.rjm:id/ksad_tk_view"] >n @ViewGroup > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13166086',
+          snapshotUrls: 'https://i.gkd.li/i/13166086',
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
           matches: '[vid="feed_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/fc08493c-dec2-4534-9f61-3627aa337b30',
-          snapshotUrls: 'https://i.gkd.li/import/14258190',
+          snapshotUrls: 'https://i.gkd.li/i/14258190',
         },
       ],
     },

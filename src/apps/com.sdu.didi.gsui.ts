@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.sdu.didi.gsui.main.MainActivity',
           matches: '[id="com.sdu.didi.gsui:id/main_dialog_banner_image_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13958887',
+          snapshotUrls: 'https://i.gkd.li/i/13958887',
         },
       ],
     },

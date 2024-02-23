@@ -11,12 +11,12 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'View < [desc^="dislike"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13233916',
+          snapshotUrls: 'https://i.gkd.li/i/13233916',
         },
         {
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13234048',
+          snapshotUrls: 'https://i.gkd.li/i/13234048',
         },
       ],
     },

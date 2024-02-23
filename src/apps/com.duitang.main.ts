@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.duitang.main:id/teenGuideKnown"]',
-          snapshotUrls: 'https://i.gkd.li/import/13202230',
+          snapshotUrls: 'https://i.gkd.li/i/13202230',
         },
       ],
     },
@@ -30,11 +30,11 @@ export default defineAppConfig({
           quickFind: true,
           matches: '[vid="adOptionEntry"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14232228',
-            'https://i.gkd.li/import/14232332',
-            'https://i.gkd.li/import/14232347',
-            'https://i.gkd.li/import/14232348',
-            'https://i.gkd.li/import/14232368',
+            'https://i.gkd.li/i/14232228',
+            'https://i.gkd.li/i/14232332',
+            'https://i.gkd.li/i/14232347',
+            'https://i.gkd.li/i/14232348',
+            'https://i.gkd.li/i/14232368',
           ],
         },
         {
@@ -43,8 +43,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '[vid="adClose"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14232218',
-            'https://i.gkd.li/import/14232352',
+            'https://i.gkd.li/i/14232218',
+            'https://i.gkd.li/i/14232352',
           ],
         },
       ],
@@ -60,7 +60,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[vid="scoreDuitangCancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/14273094',
+          snapshotUrls: 'https://i.gkd.li/i/14273094',
         },
       ],
     },
@@ -77,8 +77,8 @@ export default defineAppConfig({
           ],
           matches: '[id="com.duitang.main:id/popUpbtnClose"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13997011',
-            'https://i.gkd.li/import/14332109',
+            'https://i.gkd.li/i/13997011',
+            'https://i.gkd.li/i/14332109',
           ],
         },
       ],
@@ -91,7 +91,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '@[vid="dialogNegative"] +2 [text="打开通知"]',
-      snapshotUrls: 'https://i.gkd.li/import/14273121',
+      snapshotUrls: 'https://i.gkd.li/i/14273121',
     },
   ],
 });

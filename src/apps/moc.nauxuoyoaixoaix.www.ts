@@ -17,18 +17,18 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id$="tt_splash_skip_btn"] <<n [vid="adsFl"]',
-          snapshotUrls: 'https://i.gkd.li/import/13476862',
+          snapshotUrls: 'https://i.gkd.li/i/13476862',
         },
         {
           key: 1,
           matches: ['[vid="adsFl"]', '[text^="跳过"][text.length<=10]'],
-          snapshotUrls: 'https://i.gkd.li/import/13625367',
+          snapshotUrls: 'https://i.gkd.li/i/13625367',
         },
         {
           key: 2,
           matches:
             '@View <3 FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < [vid="adsFl"]',
-          snapshotUrls: 'https://i.gkd.li/import/13820450',
+          snapshotUrls: 'https://i.gkd.li/i/13820450',
         },
       ],
     },

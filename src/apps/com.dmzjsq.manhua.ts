@@ -12,14 +12,14 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12885087',
+          snapshotUrls: 'https://i.gkd.li/i/12885087',
         },
         {
           key: 1,
           activityIds: 'com.dmzj.manhua.ui.home.HomeTabsActivitys',
           matches:
             'ImageView < FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12893731',
+          snapshotUrls: 'https://i.gkd.li/i/12893731',
         },
       ],
     },

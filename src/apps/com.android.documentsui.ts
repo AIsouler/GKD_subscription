@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '功能类-允许第三方应用访问文件夹',
       activityIds: 'com.android.documentsui.picker.PickActivity',
       rules: '[text="取消"] + [text="允许"]',
-      snapshotUrls: 'https://i.gkd.li/import/13801468',
+      snapshotUrls: 'https://i.gkd.li/i/13801468',
     },
     {
       key: 2,
@@ -19,7 +19,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.android.documentsui.picker.PickActivity',
           matches: '[text="使用此文件夹"]',
-          snapshotUrls: 'https://i.gkd.li/import/13916082',
+          snapshotUrls: 'https://i.gkd.li/i/13916082',
         },
       ],
     },

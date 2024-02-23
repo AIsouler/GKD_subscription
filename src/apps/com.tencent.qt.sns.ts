@@ -12,7 +12,7 @@ export default defineAppConfig({
       quickFind: true,
       matchTime: 10000,
       rules: '[id="com.tencent.qt.sns:id/closebtn"]',
-      snapshotUrls: 'https://i.gkd.li/import/13497978',
+      snapshotUrls: 'https://i.gkd.li/i/13497978',
     },
     {
       key: 2,
@@ -24,8 +24,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[text="版本更新"] +4 LinearLayout > [text="取消"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13497984',
-        'https://i.gkd.li/import/13713478',
+        'https://i.gkd.li/i/13497984',
+        'https://i.gkd.li/i/13713478',
       ],
     },
   ],

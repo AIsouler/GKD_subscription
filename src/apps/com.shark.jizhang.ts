@@ -14,8 +14,8 @@ export default defineAppConfig({
           matches:
             '[id="com.shark.jizhang:id/buy_later_view"||id="com.shark.jizhang:id/tv_count_down"] - [id="com.shark.jizhang:id/close_view"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12518500',
-            'https://i.gkd.li/import/12518517',
+            'https://i.gkd.li/i/12518500',
+            'https://i.gkd.li/i/12518517',
           ],
         },
       ],

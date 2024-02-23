@@ -6,4 +6,4 @@
 
 点击跳过
 
-- [快照-0](https://i.gkd.li/import/13853858)
+- [快照-0](https://i.gkd.li/i/13853858)

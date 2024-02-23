@@ -15,8 +15,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '[text="广告"] - [vid="close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12668574',
-            'https://i.gkd.li/import/13800055',
+            'https://i.gkd.li/i/12668574',
+            'https://i.gkd.li/i/13800055',
           ],
         },
         {
@@ -25,15 +25,15 @@ export default defineAppConfig({
           quickFind: true,
           matches: '[vid="close_pop"][text="收起广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12668583',
-            'https://i.gkd.li/import/13800056',
+            'https://i.gkd.li/i/12668583',
+            'https://i.gkd.li/i/13800056',
           ],
         },
         {
           key: 2,
           activityIds: 'com.youdao.dict.activity.MainActivity',
           matches: '[id="com.youdao.dict:id/home_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/14009705',
+          snapshotUrls: 'https://i.gkd.li/i/14009705',
         },
       ],
     },
@@ -51,8 +51,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close_bt"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12893419',
-            'https://i.gkd.li/import/13263801',
+            'https://i.gkd.li/i/12893419',
+            'https://i.gkd.li/i/13263801',
           ],
         },
         {
@@ -64,7 +64,7 @@ export default defineAppConfig({
           ],
           quickFind: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12893450',
+          snapshotUrls: 'https://i.gkd.li/i/12893450',
         },
         {
           key: 2,
@@ -76,8 +76,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '[vid="skip_bottom_view"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13931202',
-            'https://i.gkd.li/import/14064647',
+            'https://i.gkd.li/i/13931202',
+            'https://i.gkd.li/i/14064647',
           ],
         },
         {
@@ -86,7 +86,7 @@ export default defineAppConfig({
           activityIds: 'com.youdao.dict.activity.MainActivity',
           quickFind: true,
           matches: '[vid="image"] + [vid="close"]',
-          snapshotUrls: 'https://i.gkd.li/import/14296482',
+          snapshotUrls: 'https://i.gkd.li/i/14296482',
         },
       ],
     },
@@ -100,7 +100,7 @@ export default defineAppConfig({
       ],
       rules: 'ImageView[id="com.youdao.dict:id/iv_close"][clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13263706',
+        'https://i.gkd.li/i/13263706',
         'https://i.gkd.li/i/14381735',
       ],
     },
@@ -113,8 +113,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13540941',
-        'https://i.gkd.li/import/14256301',
+        'https://i.gkd.li/i/13540941',
+        'https://i.gkd.li/i/14256301',
       ],
     },
     {
@@ -126,7 +126,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13627912',
+      snapshotUrls: 'https://i.gkd.li/i/13627912',
     },
     {
       key: 7,
@@ -135,8 +135,8 @@ export default defineAppConfig({
         'com.youdao.dict_flutter_android_bridge.WordBookFlutterActivity',
       rules: '[desc="点击显示释义"] > View[index=3][visibleToUser=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/14292588', // 点击显示释义前
-        'https://i.gkd.li/import/14292587', // 点击显示释义后
+        'https://i.gkd.li/i/14292588', // 点击显示释义前
+        'https://i.gkd.li/i/14292587', // 点击显示释义后
       ],
     },
   ],

@@ -6,24 +6,24 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12701217)
-- [快照-1](https://i.gkd.li/import/12701250)
+- [快照-0](https://i.gkd.li/i/12701217)
+- [快照-1](https://i.gkd.li/i/12701250)
 
 ## 全屏广告-弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13402746)
-- [快照-1](https://i.gkd.li/import/12701230)
+- [快照-0](https://i.gkd.li/i/13402746)
+- [快照-1](https://i.gkd.li/i/12701230)
 
 ## 通知提示-请求开通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13399102)
+- [快照-0](https://i.gkd.li/i/13399102)
 
 ## 局部广告-理财产品悬浮广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14208637)
+- [快照-0](https://i.gkd.li/i/14208637)

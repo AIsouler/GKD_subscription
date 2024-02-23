@@ -6,5 +6,5 @@
 
 默认禁用 - 点击X
 
-- [快照-0](https://i.gkd.li/import/13958838)
-- [快照-1](https://i.gkd.li/import/14005508)
+- [快照-0](https://i.gkd.li/i/13958838)
+- [快照-1](https://i.gkd.li/i/14005508)

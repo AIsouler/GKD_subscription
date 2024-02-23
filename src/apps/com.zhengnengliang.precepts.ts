@@ -12,8 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '@[text="取消"] +2 [text="升级"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12727650',
-        'https://i.gkd.li/import/12715352',
+        'https://i.gkd.li/i/12727650',
+        'https://i.gkd.li/i/12715352',
       ],
     },
     {
@@ -31,9 +31,9 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/0b140d85-0556-46aa-a648-600ae349f88b',
           snapshotUrls: [
-            'https://i.gkd.li/import/14338307',
-            'https://i.gkd.li/import/12739767',
-            'https://i.gkd.li/import/12727705',
+            'https://i.gkd.li/i/14338307',
+            'https://i.gkd.li/i/12739767',
+            'https://i.gkd.li/i/12727705',
           ],
         },
       ],

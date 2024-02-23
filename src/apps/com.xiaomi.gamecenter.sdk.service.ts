@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="升级提示"] < * + [vid="btn_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/14188929',
+      snapshotUrls: 'https://i.gkd.li/i/14188929',
     },
   ],
 });

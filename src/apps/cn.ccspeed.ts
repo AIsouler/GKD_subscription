@@ -18,7 +18,7 @@ export default defineAppConfig({
         {
           matches:
             'FrameLayout[id="cn.ccspeed:id/float_layout"] > ImageView - ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13539299',
+          snapshotUrls: 'https://i.gkd.li/i/13539299',
         },
       ],
     },

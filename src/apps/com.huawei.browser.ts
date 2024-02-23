@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches: '[id$="/hiad_skip_text"]',
           action: 'clickCenter',
           snapshotUrls: [
-            'https://i.gkd.li/import/12681995',
-            'https://i.gkd.li/import/13403785',
+            'https://i.gkd.li/i/12681995',
+            'https://i.gkd.li/i/13403785',
           ],
         },
       ],
@@ -30,7 +30,7 @@ export default defineAppConfig({
           matches: '[id="com.huawei.browser:id/close_push_guide_window"]',
           exampleUrls:
             'https://m.gkd.li/87047583/3982b64a-15a7-4c0c-b179-2ed82d6ea18e',
-          snapshotUrls: 'https://i.gkd.li/import/13692404',
+          snapshotUrls: 'https://i.gkd.li/i/13692404',
         },
       ],
     },
@@ -44,7 +44,7 @@ export default defineAppConfig({
             'com.huawei.browser.customtab.EmuiBrowserCustomTabActivity',
           matches:
             'View[id="root"] > View[index=1] > View[id="logo-close-btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13997759',
+          snapshotUrls: 'https://i.gkd.li/i/13997759',
         },
       ],
     },

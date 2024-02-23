@@ -17,9 +17,9 @@ export default defineAppConfig({
           matches: '[id$="hiad_skip_text"]',
           action: 'clickCenter',
           snapshotUrls: [
-            'https://i.gkd.li/import/12667766',
-            'https://i.gkd.li/import/13215012',
-            'https://i.gkd.li/import/13228290',
+            'https://i.gkd.li/i/12667766',
+            'https://i.gkd.li/i/13215012',
+            'https://i.gkd.li/i/13228290',
           ],
         },
       ],
@@ -31,7 +31,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.huawei.health:id/item_banner_ad_close_icon"]',
-          snapshotUrls: ['https://i.gkd.li/import/12667814'],
+          snapshotUrls: ['https://i.gkd.li/i/12667814'],
         },
       ],
     },
@@ -44,7 +44,7 @@ export default defineAppConfig({
           activityIds: 'com.huawei.watchface.api.WebViewActivity',
           matches:
             'View[childCount=2] > View + View[childCount=1] > Image[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13546292',
+          snapshotUrls: 'https://i.gkd.li/i/13546292',
         },
       ],
     },
@@ -53,7 +53,7 @@ export default defineAppConfig({
       name: '功能类-请求开启个性化推荐弹窗',
       activityIds: 'com.huawei.watchface.api.WebViewActivity',
       rules: '[text="开启个性化推荐"] +2 [text="开启"] + Button',
-      snapshotUrls: 'https://i.gkd.li/import/13546292',
+      snapshotUrls: 'https://i.gkd.li/i/13546292',
     },
     {
       enable: false,
@@ -63,7 +63,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.huawei.health.MainActivity',
           matches: '[id="com.huawei.health:id/marketing_close_icon"]',
-          snapshotUrls: 'https://i.gkd.li/import/13587206',
+          snapshotUrls: 'https://i.gkd.li/i/13587206',
         },
       ],
     },
@@ -79,7 +79,7 @@ export default defineAppConfig({
             '[text*="实时推送步数"] <2 * < * +2 * >4 [text="取消"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/7e9b7131-35ae-49dd-badf-13b6dae3aa96',
-          snapshotUrls: 'https://i.gkd.li/import/14321121',
+          snapshotUrls: 'https://i.gkd.li/i/14321121',
         },
       ],
     },
