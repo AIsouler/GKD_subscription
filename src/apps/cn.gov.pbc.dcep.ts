@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="upgrade_dialog_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13840408',
+      snapshotUrls: 'https://i.gkd.li/i/13840408',
     },
   ],
 });

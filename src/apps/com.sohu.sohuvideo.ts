@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@[id="com.sohu.sohuvideo:id/ivClose"] + LinearLayout [text="新版本上线啦"]',
-      snapshotUrls: 'https://i.gkd.li/import/13435504',
+      snapshotUrls: 'https://i.gkd.li/i/13435504',
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@[id="com.sohu.sohuvideo:id/tv_ok"] -2 LinearLayout > [text="设置青少年模式"]',
-      snapshotUrls: 'https://i.gkd.li/import/13448876',
+      snapshotUrls: 'https://i.gkd.li/i/13448876',
     },
   ],
 });

@@ -17,7 +17,7 @@ export default defineAppConfig({
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
           exampleUrls:
             'https://m.gkd.li/57941037/6f4561e5-b998-43f9-8848-b6b43d045a3d',
-          snapshotUrls: 'https://i.gkd.li/import/14189228',
+          snapshotUrls: 'https://i.gkd.li/i/14189228',
         },
         {
           key: 1,
@@ -36,7 +36,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[text="下次再说"] +(2) [text="立即更新"]',
-          snapshotUrls: ['https://i.gkd.li/import/12686632'],
+          snapshotUrls: ['https://i.gkd.li/i/12686632'],
         },
       ],
     },
@@ -52,8 +52,8 @@ export default defineAppConfig({
           matches:
             '[id="com.jd.app.reader:id/mCardView"] + [id="com.jd.app.reader:id/mCloseBtn"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12686577',
-            'https://i.gkd.li/import/12686664', // activityId: 'com.miui.home.launcher.Launcher'
+            'https://i.gkd.li/i/12686577',
+            'https://i.gkd.li/i/12686664', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
       ],
@@ -64,8 +64,8 @@ export default defineAppConfig({
       activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',
       rules: '[id$="ad_read_close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12881810',
-        'https://i.gkd.li/import/12893631',
+        'https://i.gkd.li/i/12881810',
+        'https://i.gkd.li/i/12893631',
       ],
     },
   ],

@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.ping.cimoc.ui.activity.MainActivity',
       rules:
         'ImageView < FrameLayout + FrameLayout > FrameLayout[childCount=1] > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/13187751',
+      snapshotUrls: 'https://i.gkd.li/i/13187751',
     },
   ],
 });

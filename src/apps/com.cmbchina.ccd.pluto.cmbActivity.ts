@@ -15,9 +15,9 @@ export default defineAppConfig({
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_sure_tips"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_cancel_tips"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12647025',
-        'https://i.gkd.li/import/12727203',
-        'https://i.gkd.li/import/13345771', //
+        'https://i.gkd.li/i/12647025',
+        'https://i.gkd.li/i/12727203',
+        'https://i.gkd.li/i/13345771', //
       ],
     },
     {
@@ -31,8 +31,8 @@ export default defineAppConfig({
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/lly_pop_shell"] > [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_cf_view_close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12647000',
-        'https://i.gkd.li/import/13360282',
+        'https://i.gkd.li/i/12647000',
+        'https://i.gkd.li/i/13360282',
       ],
     },
     {
@@ -52,8 +52,8 @@ export default defineAppConfig({
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/img_floating_ad_cmb"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/img_close_floating_ad_cmb"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12647039', // 信用卡页面
-            'https://i.gkd.li/import/12647052', // 我的页面
+            'https://i.gkd.li/i/12647039', // 信用卡页面
+            'https://i.gkd.li/i/12647052', // 我的页面
           ],
         },
         {
@@ -66,8 +66,8 @@ export default defineAppConfig({
           matches:
             '@[vid="img_cmb_drag_pendant_close"] + [vid="img_cmb_drag_pendant_bg"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12647127',
-            'https://i.gkd.li/import/14209121',
+            'https://i.gkd.li/i/12647127',
+            'https://i.gkd.li/i/14209121',
           ],
         },
         {
@@ -75,7 +75,7 @@ export default defineAppConfig({
           activityIds: 'com.cmbchina.ccd.pluto.cmbActivity.CMBRootActivityV2',
           matches:
             '[id="com.cmbchina.ccd.pluto.cmbActivity:id/view_cat"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/view_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13402782',
+          snapshotUrls: 'https://i.gkd.li/i/13402782',
         },
       ],
     },
@@ -90,7 +90,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.cmbchina.ccd.pluto.cmbActivity:id/btn_open_notify"] + [id="com.cmbchina.ccd.pluto.cmbActivity:id/iv_delete"]',
-      snapshotUrls: ['https://i.gkd.li/import/12647068'],
+      snapshotUrls: ['https://i.gkd.li/i/12647068'],
     },
     {
       key: 5,
@@ -99,7 +99,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="定位服务"] +n * > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/14209071',
+      snapshotUrls: 'https://i.gkd.li/i/14209071',
     },
   ],
 });

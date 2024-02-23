@@ -14,12 +14,12 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13727905',
+          snapshotUrls: 'https://i.gkd.li/i/13727905',
         },
         {
           matches:
             '@View <3 FrameLayout[childCount=4] <2 FrameLayout[childCount=2] < [vid="ad_view"]',
-          snapshotUrls: 'https://i.gkd.li/import/13867880',
+          snapshotUrls: 'https://i.gkd.li/i/13867880',
         },
       ],
     },
@@ -35,8 +35,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView[width<90][height<90]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13728018',
-            'https://i.gkd.li/import/13867878',
+            'https://i.gkd.li/i/13728018',
+            'https://i.gkd.li/i/13867878',
           ],
         },
       ],
@@ -52,7 +52,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@ImageView[clickable=true][width<90][height<90] -3 ImageView <<n [id="com.xiaoenai.app:id/view_ad_tpl"]',
-          snapshotUrls: 'https://i.gkd.li/import/13728026',
+          snapshotUrls: 'https://i.gkd.li/i/13728026',
         },
       ],
     },

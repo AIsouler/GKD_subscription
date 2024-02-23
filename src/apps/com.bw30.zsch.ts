@@ -14,7 +14,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.bw30.zsch:id/tv_cancel"]',
-      snapshotUrls: ['https://i.gkd.li/import/13068699'],
+      snapshotUrls: ['https://i.gkd.li/i/13068699'],
     },
   ],
 });

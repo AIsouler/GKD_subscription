@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="开启青少年模式"] + [text="知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/14321697',
+      snapshotUrls: 'https://i.gkd.li/i/14321697',
     },
     {
       key: 2,
@@ -23,7 +23,7 @@ export default defineAppConfig({
           activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           quickFind: true,
           matches: '[text^="新人限时开通"] +3 [text="放弃优惠"]',
-          snapshotUrls: 'https://i.gkd.li/import/14321698',
+          snapshotUrls: 'https://i.gkd.li/i/14321698',
         },
         {
           key: 1,
@@ -31,7 +31,7 @@ export default defineAppConfig({
           activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           matches:
             '[id="android:id/content"] > ViewGroup[childCount=3] > ImageView + ImageView + ImageView[clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/14321700',
+          snapshotUrls: 'https://i.gkd.li/i/14321700',
         },
       ],
     },
@@ -45,8 +45,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout > RelativeLayout > @ImageView[vid!=null][clickable=true][visibleToUser=true] +(2,3) ImageView[vid!=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14321713',
-            'https://i.gkd.li/import/14321718',
+            'https://i.gkd.li/i/14321713',
+            'https://i.gkd.li/i/14321718',
           ],
         },
         {
@@ -55,7 +55,7 @@ export default defineAppConfig({
           activityIds: 'com.kugou.android.app.MediaActivity',
           quickFind: true,
           matches: '[text="是否取消？"] +4 * > [text="确认"]',
-          snapshotUrls: 'https://i.gkd.li/import/14321724',
+          snapshotUrls: 'https://i.gkd.li/i/14321724',
         },
       ],
     },

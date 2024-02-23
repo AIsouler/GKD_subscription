@@ -13,9 +13,9 @@ export default defineAppConfig({
       quickFind: true,
       rules: '[id="com.tmall.wireless:id/update_button_cancel"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13162603', //com.tmall.wireless.splash.TMSplashActivity
-        'https://i.gkd.li/import/13258201', //com.tmall.wireless.maintab.module.TMMainTabActivity
-        'https://i.gkd.li/import/13399536', //com.tmall.wireless.webview.TMCommonWebViewActivity
+        'https://i.gkd.li/i/13162603', //com.tmall.wireless.splash.TMSplashActivity
+        'https://i.gkd.li/i/13258201', //com.tmall.wireless.maintab.module.TMMainTabActivity
+        'https://i.gkd.li/i/13399536', //com.tmall.wireless.webview.TMCommonWebViewActivity
       ],
     },
     {
@@ -30,9 +30,9 @@ export default defineAppConfig({
       rules:
         'Image[id=null][clickable=false] < View + Image[id=null][clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13222394', //com.tmall.wireless.maintab.module.TMMainTabActivity
-        'https://i.gkd.li/import/13222500', //com.tmall.wireless.turboweb.container.TurboWebViewActivity
-        'https://i.gkd.li/import/13222510', //com.tmall.wireless.webview.TMCommonWebViewActivity
+        'https://i.gkd.li/i/13222394', //com.tmall.wireless.maintab.module.TMMainTabActivity
+        'https://i.gkd.li/i/13222500', //com.tmall.wireless.turboweb.container.TurboWebViewActivity
+        'https://i.gkd.li/i/13222510', //com.tmall.wireless.webview.TMCommonWebViewActivity
       ],
     },
     {
@@ -42,7 +42,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'View[text="开启系统通知"] - View[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13258215',
+      snapshotUrls: 'https://i.gkd.li/i/13258215',
     },
   ],
 });

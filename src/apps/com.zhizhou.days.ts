@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[desc^="webview-close"] > View[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12727499',
+          snapshotUrls: 'https://i.gkd.li/i/12727499',
         },
         {
           key: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: ['[text="广告"]', '@Image < View + [text="反馈"]'],
-          snapshotUrls: 'https://i.gkd.li/import/12739678',
+          snapshotUrls: 'https://i.gkd.li/i/12739678',
         },
         {
           key: 10,
@@ -30,7 +30,7 @@ export default defineAppConfig({
           activityIds: 'com.zhizhou.days.activity.MainActivity',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView[visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12727528',
+          snapshotUrls: 'https://i.gkd.li/i/12727528',
         },
         {
           key: 11,
@@ -42,8 +42,8 @@ export default defineAppConfig({
           matches:
             'ImageView - FrameLayout > FrameLayout > FrameLayout > ImageView[visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12739703',
-            'https://i.gkd.li/import/12727546', // activityId: 'com.huawei.android.launcher.unihome.UniHomeLauncher'
+            'https://i.gkd.li/i/12739703',
+            'https://i.gkd.li/i/12727546', // activityId: 'com.huawei.android.launcher.unihome.UniHomeLauncher'
           ],
         },
       ],
@@ -56,7 +56,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="以后再说"] + [text="马上评价"]',
-      snapshotUrls: 'https://i.gkd.li/import/12744951',
+      snapshotUrls: 'https://i.gkd.li/i/12744951',
     },
   ],
 });

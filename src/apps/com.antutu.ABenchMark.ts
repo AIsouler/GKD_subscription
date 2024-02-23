@@ -10,7 +10,7 @@ export default defineAppConfig({
       name: '局部广告-广告卡片',
       activityIds: 'com.android.module.app.ui.test.activity.ActivityTestResult',
       rules: '[text="广告"] + TextView + View > TextView',
-      snapshotUrls: 'https://i.gkd.li/import/13234012',
+      snapshotUrls: 'https://i.gkd.li/i/13234012',
     },
   ],
 });

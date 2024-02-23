@@ -6,11 +6,11 @@
 
 点击跳过
 
-- [快照-0](https://i.gkd.li/import/13930391)
+- [快照-0](https://i.gkd.li/i/13930391)
 
 ## 分段广告-卡片广告
 
 默认禁用 - 点击X-点击不感兴趣
 
-- [快照-0](https://i.gkd.li/import/13930398)
-- [快照-1](https://i.gkd.li/import/13930399)
+- [快照-0](https://i.gkd.li/i/13930398)
+- [快照-1](https://i.gkd.li/i/13930399)

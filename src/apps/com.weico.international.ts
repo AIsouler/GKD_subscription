@@ -20,8 +20,8 @@ export default defineAppConfig({
           name: '点击不感兴趣',
           matches: '@View > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12505755',
-            'https://i.gkd.li/import/12505764',
+            'https://i.gkd.li/i/12505755',
+            'https://i.gkd.li/i/12505764',
           ],
         },
         {
@@ -29,9 +29,9 @@ export default defineAppConfig({
           name: '点击广告卡片右上角[x]',
           matches: '[id="com.weico.international:id/item_timeline_ad_action"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12505753',
-            'https://i.gkd.li/import/12505763',
-            'https://i.gkd.li/import/12857202',
+            'https://i.gkd.li/i/12505753',
+            'https://i.gkd.li/i/12505763',
+            'https://i.gkd.li/i/12857202',
           ],
         },
       ],

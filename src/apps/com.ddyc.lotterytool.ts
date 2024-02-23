@@ -15,7 +15,7 @@ export default defineAppConfig({
       activityIds: 'com.ddyc.lotterytool.module.main.MainActivity',
       rules:
         'ImageView - ImageButton[id="com.ddyc.lotterytool:id/arg"][text=null]',
-      snapshotUrls: 'https://i.gkd.li/import/13324555',
+      snapshotUrls: 'https://i.gkd.li/i/13324555',
     },
     {
       enable: false,
@@ -25,7 +25,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text^="开启推送通知"] +2 LinearLayout [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13325888',
+      snapshotUrls: 'https://i.gkd.li/i/13325888',
     },
   ],
 });

@@ -4,11 +4,11 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/12774851)
+- [快照-0](https://i.gkd.li/i/12774851)
 
 ## 更新提示-版本升级弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12843615)
-- [快照-1](https://i.gkd.li/import/12843614)
+- [快照-0](https://i.gkd.li/i/12843615)
+- [快照-1](https://i.gkd.li/i/12843614)

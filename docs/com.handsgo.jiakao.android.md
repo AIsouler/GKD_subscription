@@ -8,17 +8,17 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13475994)
+- [快照-0](https://i.gkd.li/i/13475994)
 
 ## 全屏广告-弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13476039)
-- [快照-1](https://i.gkd.li/import/13523033)
+- [快照-0](https://i.gkd.li/i/13476039)
+- [快照-1](https://i.gkd.li/i/13523033)
 
 ## 通知提示-请求开启通知权限弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13520296)
+- [快照-0](https://i.gkd.li/i/13520296)

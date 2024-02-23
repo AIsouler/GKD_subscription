@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="tw.com.gamer.android.animad:id/agree_button"][text="同意"]',
-          snapshotUrls: 'https://i.gkd.li/import/13808757',
+          snapshotUrls: 'https://i.gkd.li/i/13808757',
         },
       ],
     },

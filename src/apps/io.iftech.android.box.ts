@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
-      snapshotUrls: 'https://i.gkd.li/import/14204126',
+      snapshotUrls: 'https://i.gkd.li/i/14204126',
     },
     {
       key: 1,
@@ -21,7 +21,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="新版本"] +(2) [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706195',
+      snapshotUrls: 'https://i.gkd.li/i/12706195',
     },
     {
       key: 2,
@@ -33,34 +33,34 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             '@Image[text=""] < View +(n) View >(2) TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12706209',
+          snapshotUrls: 'https://i.gkd.li/i/12706209',
         },
         {
           name: '优量汇',
           activityIds: 'io.iftech.android.box.main.HomeActivity',
           matches: 'ImageView - FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/import/12706209',
+          snapshotUrls: 'https://i.gkd.li/i/12706209',
         },
         {
           name: '百青藤',
           activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
           matches:
             '[id="io.iftech.android.box:id/anythink_myoffer_btn_close_id"]',
-          snapshotUrls: 'https://i.gkd.li/import/12706228',
+          snapshotUrls: 'https://i.gkd.li/i/12706228',
         },
         {
           name: '百青藤',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout + ImageView + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12706236',
+          snapshotUrls: 'https://i.gkd.li/i/12706236',
         },
         {
           name: '百青藤',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout > RelativeLayout > ImageView + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12706240',
+          snapshotUrls: 'https://i.gkd.li/i/12706240',
         },
       ],
     },
@@ -71,7 +71,7 @@ export default defineAppConfig({
       activityIds: 'io.iftech.android.box.main.HomeActivity',
       rules:
         '@[id="io.iftech.android.box:id/ivClose"] + [text^="限时"][text$="特惠"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706226',
+      snapshotUrls: 'https://i.gkd.li/i/12706226',
     },
   ],
 });

@@ -20,9 +20,9 @@ export default defineAppConfig({
           matches:
             '[id="com.babycloud.hanju:id/unified_ad_close"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13628282',
-            'https://i.gkd.li/import/13670721',
-            'https://i.gkd.li/import/13849929',
+            'https://i.gkd.li/i/13628282',
+            'https://i.gkd.li/i/13670721',
+            'https://i.gkd.li/i/13849929',
           ],
         },
       ],
@@ -37,10 +37,10 @@ export default defineAppConfig({
           matches:
             '@RelativeLayout[childCount=1] [vid*="skip_tv" || vid*="close_iv"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13800123',
-            'https://i.gkd.li/import/13972345',
-            'https://i.gkd.li/import/14048532',
-            'https://i.gkd.li/import/14048302',
+            'https://i.gkd.li/i/13800123',
+            'https://i.gkd.li/i/13972345',
+            'https://i.gkd.li/i/14048532',
+            'https://i.gkd.li/i/14048302',
           ],
         },
       ],

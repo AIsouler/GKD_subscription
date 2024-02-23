@@ -9,5 +9,5 @@
 - [示例-0](https://m.gkd.li/57941037/687f8201-8b15-491e-9c51-f3af0dc00260)
 - [示例-1](https://m.gkd.li/57941037/c65e146e-4f2a-42f0-b233-4e04152d851d)
 
-- [快照-0](https://i.gkd.li/import/14228685)
-- [快照-1](https://i.gkd.li/import/14296913)
+- [快照-0](https://i.gkd.li/i/14228685)
+- [快照-1](https://i.gkd.li/i/14296913)

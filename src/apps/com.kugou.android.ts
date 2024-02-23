@@ -14,9 +14,9 @@ export default defineAppConfig({
         {
           matches: '[desc="跳过"||desc="GdtCountDownView"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12775410',
-            'https://i.gkd.li/import/13426030',
-            'https://i.gkd.li/import/13468987',
+            'https://i.gkd.li/i/12775410',
+            'https://i.gkd.li/i/13426030',
+            'https://i.gkd.li/i/13468987',
           ],
         },
       ],
@@ -31,7 +31,7 @@ export default defineAppConfig({
             'ViewGroup[childCount=2] > ImageView + FrameLayout > LinearLayout > ImageView',
           exampleUrls:
             'https://m.gkd.li/87047583/9e150986-2103-4130-a12f-12ed2b07ef90',
-          snapshotUrls: 'https://i.gkd.li/import/13558426',
+          snapshotUrls: 'https://i.gkd.li/i/13558426',
         },
       ],
     },
@@ -44,7 +44,7 @@ export default defineAppConfig({
             'RelativeLayout[childCount=2] > View + RelativeLayout[childCount=2] > @ImageView + RelativeLayout',
           exampleUrls:
             'https://m.gkd.li/87047583/84c1379f-5eb1-4982-b27b-35e267594101',
-          snapshotUrls: 'https://i.gkd.li/import/13548005',
+          snapshotUrls: 'https://i.gkd.li/i/13548005',
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
             '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13328194',
+          snapshotUrls: 'https://i.gkd.li/i/13328194',
         },
         {
           key: 2,
@@ -23,7 +23,7 @@ export default defineAppConfig({
 
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13391833',
+          snapshotUrls: 'https://i.gkd.li/i/13391833',
         },
       ],
     },
@@ -33,7 +33,7 @@ export default defineAppConfig({
       activityIds: 'com.fileunzip.zxwknight.activity.MainActivity',
       rules:
         '@[id="com.fileunzip.zxwknight:id/ziputil_dialog_imageview"] +n [text="升级到专业版"]',
-      snapshotUrls: 'https://i.gkd.li/import/13328212',
+      snapshotUrls: 'https://i.gkd.li/i/13328212',
     },
   ],
 });

@@ -17,23 +17,23 @@ export default defineAppConfig({
           matches:
             'LinearLayout > FrameLayout > FrameLayout > ImageView[id=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12854650',
-            'https://i.gkd.li/import/12854723',
+            'https://i.gkd.li/i/12854650',
+            'https://i.gkd.li/i/12854723',
           ],
         },
         {
           matches: 'TextView[text$="s"] + TextView[text$="跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/12877535'],
+          snapshotUrls: ['https://i.gkd.li/i/12877535'],
         },
         {
           matches:
             'TextView[text*="应用名称"] < LinearLayout -2n FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/import/12854664',
+          snapshotUrls: 'https://i.gkd.li/i/12854664',
         },
         {
           matches:
             'ImageView[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12877540',
+          snapshotUrls: 'https://i.gkd.li/i/12877540',
         },
       ],
     },

@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="继续安装"]',
-          snapshotUrls: 'https://i.gkd.li/import/13269875',
+          snapshotUrls: 'https://i.gkd.li/i/13269875',
         },
       ],
     },
@@ -35,8 +35,8 @@ export default defineAppConfig({
             '[text="不同意"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13474517',
-            'https://i.gkd.li/import/13476592', // activityIds: 'com.miui.permcenter.permissions.SystemAppPermissionDialogActivity',
+            'https://i.gkd.li/i/13474517',
+            'https://i.gkd.li/i/13476592', // activityIds: 'com.miui.permcenter.permissions.SystemAppPermissionDialogActivity',
           ],
         },
       ],
@@ -55,8 +55,8 @@ export default defineAppConfig({
             '[text="退出"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13474504', // app版本v5
-            'https://i.gkd.li/import/13476770', // app版本v8
+            'https://i.gkd.li/i/13474504', // app版本v5
+            'https://i.gkd.li/i/13476770', // app版本v8
           ],
         },
       ],

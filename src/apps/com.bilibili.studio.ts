@@ -16,15 +16,15 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[text="开启设置"] - TextView[text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/12867401', // 创作页面
+          snapshotUrls: 'https://i.gkd.li/i/12867401', // 创作页面
         },
         {
           matches: 'ImageView[id="com.bilibili.studio:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12908880', // 模板页面
+          snapshotUrls: 'https://i.gkd.li/i/12908880', // 模板页面
         },
         {
           matches: 'ImageView[id="com.bilibili.studio:id/iv_push_tips_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12908886', // 我的页面
+          snapshotUrls: 'https://i.gkd.li/i/12908886', // 我的页面
         },
       ],
     },
@@ -49,7 +49,7 @@ export default defineAppConfig({
           matches: '[id="com.bilibili.studio:id/update_btn_cancel"]',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/13496049',
+      snapshotUrls: 'https://i.gkd.li/i/13496049',
     },
   ],
 });

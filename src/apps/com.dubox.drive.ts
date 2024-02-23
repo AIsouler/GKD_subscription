@@ -14,11 +14,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[id="com.dubox.drive:id/tv_skip"]',
-          snapshotUrls: 'https://i.gkd.li/import/13200574',
+          snapshotUrls: 'https://i.gkd.li/i/13200574',
         },
         {
           matches: ['[id="inmobi-ad"]', '[id="com.dubox.drive:id/ivClose"]'],
-          snapshotUrls: 'https://i.gkd.li/import/13688384',
+          snapshotUrls: 'https://i.gkd.li/i/13688384',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.dubox.drive.ui.MainActivity',
       rules: 'ImageView[id="com.dubox.drive:id/ivClose"]',
-      snapshotUrls: 'https://i.gkd.li/import/13200577',
+      snapshotUrls: 'https://i.gkd.li/i/13200577',
     },
     {
       key: 2,
@@ -39,7 +39,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[text="Authorize"] - [id="com.dubox.drive:id/dialog_button_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13688406',
+      snapshotUrls: 'https://i.gkd.li/i/13688406',
     },
   ],
 });

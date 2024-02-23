@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: '[id$="/ivDis"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12617201',
-            'https://i.gkd.li/import/12655061',
+            'https://i.gkd.li/i/12617201',
+            'https://i.gkd.li/i/12655061',
           ],
         },
       ],

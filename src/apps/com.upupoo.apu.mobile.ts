@@ -13,8 +13,8 @@ export default defineAppConfig({
       rules:
         'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
       snapshotUrls: [
-        'https://i.gkd.li/import/13830230',
-        'https://i.gkd.li/import/14052232',
+        'https://i.gkd.li/i/13830230',
+        'https://i.gkd.li/i/14052232',
       ],
     },
     {
@@ -27,7 +27,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[desc="青少年模式"] +3 [desc="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/import/14052188',
+          snapshotUrls: 'https://i.gkd.li/i/14052188',
         },
       ],
     },

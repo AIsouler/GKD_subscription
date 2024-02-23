@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.wm.dmall.MainActivity',
       rules: '[id="com.wm.dmall:id/advert_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/13197627'],
+      snapshotUrls: ['https://i.gkd.li/i/13197627'],
     },
     {
       key: 2,
@@ -22,8 +22,8 @@ export default defineAppConfig({
         '[id="com.wm.dmall:id/close_iV"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/13197634',
-        'https://i.gkd.li/import/13246242', //id误触
+        'https://i.gkd.li/i/13197634',
+        'https://i.gkd.li/i/13246242', //id误触
       ],
     },
     {
@@ -38,7 +38,7 @@ export default defineAppConfig({
           '[id="com.wm.dmall:id/update_confirm_btn"]',
           '[id="com.wm.dmall:id/close_btn"]',
         ],
-        snapshotUrls: ['https://i.gkd.li/import/13234668'],
+        snapshotUrls: ['https://i.gkd.li/i/13234668'],
       },
     },
     {
@@ -51,7 +51,7 @@ export default defineAppConfig({
           '[id="com.wm.dmall:id/coupon_activity"][text="去使用"]',
           '[id="com.wm.dmall:id/iv_close"]',
         ],
-        snapshotUrls: ['https://i.gkd.li/import/13331283'],
+        snapshotUrls: ['https://i.gkd.li/i/13331283'],
       },
     },
   ],

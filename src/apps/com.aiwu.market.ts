@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[vid="hintTextView2"] + [vid="confirmView"]',
-          snapshotUrls: 'https://i.gkd.li/import/14032203',
+          snapshotUrls: 'https://i.gkd.li/i/14032203',
         },
       ],
     },

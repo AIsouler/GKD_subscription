@@ -17,8 +17,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/47232102/bc97cb52-aad0-4114-a548-5831edbe342d',
           snapshotUrls: [
-            'https://i.gkd.li/import/13495062',
-            'https://i.gkd.li/import/14333322', // 限定 [text^="实用技巧"] 防止误触
+            'https://i.gkd.li/i/13495062',
+            'https://i.gkd.li/i/14333322', // 限定 [text^="实用技巧"] 防止误触
           ],
         },
       ],
@@ -30,7 +30,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="发现新版本"] +3 [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/14333103',
+      snapshotUrls: 'https://i.gkd.li/i/14333103',
     },
     {
       key: 3,
@@ -39,7 +39,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="开启推送通知"] +2 * > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/14333362',
+      snapshotUrls: 'https://i.gkd.li/i/14333362',
     },
   ],
 });

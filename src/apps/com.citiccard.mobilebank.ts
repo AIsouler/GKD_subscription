@@ -12,11 +12,11 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.citiccard.mobilebank:id/btn_skip"]',
-          snapshotUrls: ['https://i.gkd.li/import/12684908'],
+          snapshotUrls: ['https://i.gkd.li/i/12684908'],
         },
         {
           matches: '[id="com.citiccard.mobilebank:id/jump"]',
-          snapshotUrls: ['https://i.gkd.li/import/13049013'],
+          snapshotUrls: ['https://i.gkd.li/i/13049013'],
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.citiccard.mobilebank:id/iv_bill_home_cancel"]',
-          snapshotUrls: ['https://i.gkd.li/import/13049284'],
+          snapshotUrls: ['https://i.gkd.li/i/13049284'],
         },
       ],
     },
@@ -46,7 +46,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.citiccard.mobilebank:id/ll_app_upgrade_content"] + [id="com.citiccard.mobilebank:id/iv_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/13049283'],
+          snapshotUrls: ['https://i.gkd.li/i/13049283'],
         },
       ],
     },

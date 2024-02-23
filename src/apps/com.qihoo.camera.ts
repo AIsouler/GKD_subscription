@@ -21,7 +21,7 @@ export default defineAppConfig({
             'ViewGroup > @ImageView[clickable=true] -n TextView[text="云收藏"]',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/13630755',
+      snapshotUrls: 'https://i.gkd.li/i/13630755',
     },
   ],
 });

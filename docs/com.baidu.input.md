@@ -6,10 +6,10 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14179064)
+- [快照-0](https://i.gkd.li/i/14179064)
 
 ## 局部广告-皮肤页-底部VIP弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14179107)
+- [快照-0](https://i.gkd.li/i/14179107)

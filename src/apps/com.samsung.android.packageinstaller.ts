@@ -13,17 +13,17 @@ export default defineAppConfig({
         {
           key: 1,
           matches: ['[text *="略过"]'],
-          snapshotUrls: ['https://i.gkd.li/import/13255641'],
+          snapshotUrls: ['https://i.gkd.li/i/13255641'],
         },
         {
           key: 0,
           matches: ['[text^="是否打开反恶意软件"]', '[text="取消"]'],
-          snapshotUrls: ['https://i.gkd.li/import/13233686'],
+          snapshotUrls: ['https://i.gkd.li/i/13233686'],
         },
         {
           key: 2,
           matches: ['[text^="打开应用程序保护?"]', '[text="取消"]'],
-          snapshotUrls: ['https://i.gkd.li/import/13650528'],
+          snapshotUrls: ['https://i.gkd.li/i/13650528'],
         },
       ],
     },

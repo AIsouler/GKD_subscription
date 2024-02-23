@@ -6,4 +6,4 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12715800)
+- [快照-0](https://i.gkd.li/i/12715800)

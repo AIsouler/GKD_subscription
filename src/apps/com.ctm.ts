@@ -11,7 +11,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ctm.home.page.MainActivity',
       rules: '[id="com.ctm:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13350575',
+      snapshotUrls: 'https://i.gkd.li/i/13350575',
     },
     {
       key: 2,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.ctm.home.page.MainActivity',
       rules: '[id="com.ctm:id/btn_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13350612',
+      snapshotUrls: 'https://i.gkd.li/i/13350612',
     },
   ],
 });

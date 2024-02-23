@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'yt.com.module.home.MainActivity',
       rules:
         '[id="com.shinyv.cnr:id/iv_ad"] + [id="com.shinyv.cnr:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12817933',
+      snapshotUrls: 'https://i.gkd.li/i/12817933',
     },
   ],
 });

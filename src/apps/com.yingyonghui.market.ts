@@ -16,7 +16,7 @@ export default defineAppConfig({
             'ViewGroup[childCount=2] > ImageView + [text="广告"]',
             'ViewGroup[childCount=3] > TextView + TextView + ImageView',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13538316',
+          snapshotUrls: 'https://i.gkd.li/i/13538316',
         },
       ],
     },

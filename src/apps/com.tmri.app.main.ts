@@ -15,8 +15,8 @@ export default defineAppConfig({
         {
           matches: 'ImageButton[id="com.tmri.app.main:id/btn_cancel"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13315944', //com.tmri.app.ui.activity.main.MainTabHostNewActivity
-            'https://i.gkd.li/import/13779215', //com.tmri.app.ui.activity.main.TmriNewActivity
+            'https://i.gkd.li/i/13315944', //com.tmri.app.ui.activity.main.MainTabHostNewActivity
+            'https://i.gkd.li/i/13779215', //com.tmri.app.ui.activity.main.TmriNewActivity
           ],
         },
       ],

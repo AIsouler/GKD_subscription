@@ -13,7 +13,7 @@ export default defineAppConfig({
       activityIds: 'com.qcymall.earphonesetup.v2ui.activity.V2MainActivity',
       actionMaximum: 1,
       rules: '[vid="close_img_banner"]',
-      snapshotUrls: 'https://i.gkd.li/import/13874219',
+      snapshotUrls: 'https://i.gkd.li/i/13874219',
     },
   ],
 });

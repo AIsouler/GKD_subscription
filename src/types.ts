@@ -62,7 +62,7 @@ type RawCommonProps = {
    *
    * v1.4.1 版本后生成的快照时将标识每个节点是否可 quickFind, 网页审查工具属性面板顶部会注明这个标识
    *
-   * [![image](https://github.com/gkd-kit/subscription/assets/38517192/80cdbad1-fa8d-4415-81a1-cecaa7d69e33)](https://i.gkd.li/import/13316168)
+   * [![image](https://github.com/gkd-kit/subscription/assets/38517192/80cdbad1-fa8d-4415-81a1-cecaa7d69e33)](https://i.gkd.li/i/13316168)
    *
    */
   quickFind?: boolean;
@@ -364,8 +364,8 @@ type RawAppRuleProps = {
  * ```
  *
  * 示例2-点击目标节点的右上区域
- * - https://i.gkd.li/import/14112390
- * - https://i.gkd.li/import/14319672
+ * - https://i.gkd.li/i/14112390
+ * - https://i.gkd.li/i/14319672
  * - https://github.com/gkd-kit/gkd/assets/38517192/2cac0614-5eba-48a1-9149-4e564cb79945
  * ```json5
  * {

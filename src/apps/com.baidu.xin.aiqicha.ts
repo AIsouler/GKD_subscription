@@ -13,8 +13,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.baidu.xin.aiqicha:id/update_cancel"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12755738',
-        'https://i.gkd.li/import/12755762', // activityId: 'com.miui.home.launcher.Launcher'
+        'https://i.gkd.li/i/12755738',
+        'https://i.gkd.li/i/12755762', // activityId: 'com.miui.home.launcher.Launcher'
       ],
     },
     {
@@ -31,7 +31,7 @@ export default defineAppConfig({
           matches: '[id="com.baidu.xin.aiqicha:id/notice_dialog_cancel_iv"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9c26bb3a-d770-429a-b211-46b97a47f5f0',
-          snapshotUrls: 'https://i.gkd.li/import/12755733',
+          snapshotUrls: 'https://i.gkd.li/i/12755733',
         },
         {
           key: 1,
@@ -40,7 +40,7 @@ export default defineAppConfig({
             '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
           exampleUrls:
             'https://m.gkd.li/57941037/92a1bd1b-91c5-42a8-830b-9b721815d9a4',
-          snapshotUrls: 'https://i.gkd.li/import/12755756',
+          snapshotUrls: 'https://i.gkd.li/i/12755756',
         },
       ],
     },

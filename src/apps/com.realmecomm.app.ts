@@ -14,7 +14,7 @@ export default defineAppConfig({
           matches: '[text="签到"][clickable=true][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/18a5751c-0bbd-475d-be6a-5803307111cb',
-          snapshotUrls: 'https://i.gkd.li/import/14321155',
+          snapshotUrls: 'https://i.gkd.li/i/14321155',
         },
       ],
     },

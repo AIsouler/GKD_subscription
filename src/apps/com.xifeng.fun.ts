@@ -14,10 +14,10 @@ export default defineAppConfig({
           matches:
             '[id="android:id/content"] >2 FrameLayout[childCount>2] >(1,2) FrameLayout[childCount>4] >2 ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/14050836',
-            'https://i.gkd.li/import/14235476',
-            'https://i.gkd.li/import/14235478',
-            'https://i.gkd.li/import/14235479',
+            'https://i.gkd.li/i/14050836',
+            'https://i.gkd.li/i/14235476',
+            'https://i.gkd.li/i/14235478',
+            'https://i.gkd.li/i/14235479',
           ],
         },
       ],
@@ -33,7 +33,7 @@ export default defineAppConfig({
           matches: '[desc="我知道了"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/971c3631-a9cc-4aec-992e-6cf1166eea1b',
-          snapshotUrls: 'https://i.gkd.li/import/14235411',
+          snapshotUrls: 'https://i.gkd.li/i/14235411',
         },
       ],
     },

@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.pandabus.android.zb:id/iv_native_dislike"]',
-      snapshotUrls: 'https://i.gkd.li/import/13400177',
+      snapshotUrls: 'https://i.gkd.li/i/13400177',
     },
   ],
 });

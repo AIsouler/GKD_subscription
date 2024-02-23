@@ -6,23 +6,23 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13195753)
-- [快照-1](https://i.gkd.li/import/13222356)
-- [快照-2](https://i.gkd.li/import/13256145)
-- [快照-3](https://i.gkd.li/import/13255627)
-- [快照-4](https://i.gkd.li/import/13250418)
+- [快照-0](https://i.gkd.li/i/13195753)
+- [快照-1](https://i.gkd.li/i/13222356)
+- [快照-2](https://i.gkd.li/i/13256145)
+- [快照-3](https://i.gkd.li/i/13255627)
+- [快照-4](https://i.gkd.li/i/13250418)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13246890)
-- [快照-1](https://i.gkd.li/import/13741680)
+- [快照-0](https://i.gkd.li/i/13246890)
+- [快照-1](https://i.gkd.li/i/13741680)
 
 ## 分段广告-信息流广告
 
 默认禁用 - 长按"赞助"/"广告"标识的卡片-点"不感兴趣"
 
-- [快照-0](https://i.gkd.li/import/13455503)
-- [快照-1](https://i.gkd.li/import/13470690)
-- [快照-2](https://i.gkd.li/import/13455500)
+- [快照-0](https://i.gkd.li/i/13455503)
+- [快照-1](https://i.gkd.li/i/13470690)
+- [快照-2](https://i.gkd.li/i/13455500)

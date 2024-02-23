@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[vid="v_open"] + [vid="v_not"]',
-          snapshotUrls: 'https://i.gkd.li/import/13997956',
+          snapshotUrls: 'https://i.gkd.li/i/13997956',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.pwrd.dls.marble.moudle.homepage.HomePageActivity',
           matches: '[id="com.allhistory.dls.marble:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13997954',
+          snapshotUrls: 'https://i.gkd.li/i/13997954',
         },
       ],
     },

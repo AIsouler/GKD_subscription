@@ -14,8 +14,8 @@ export default defineAppConfig({
       rules:
         '[id="com.huatu.handheld_huatu:id/main_img_adv_bg"] + [id="com.huatu.handheld_huatu:id/main_img_close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12715702', // activityId: 'com.huatu.handheld_huatu.view.MainPopDialog'
-        'https://i.gkd.li/import/12744973', // activityId: 'com.huatu.handheld_huatu.business.main.MainTabActivity'
+        'https://i.gkd.li/i/12715702', // activityId: 'com.huatu.handheld_huatu.view.MainPopDialog'
+        'https://i.gkd.li/i/12744973', // activityId: 'com.huatu.handheld_huatu.business.main.MainTabActivity'
       ],
     },
     {
@@ -26,7 +26,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/12715719',
+      snapshotUrls: 'https://i.gkd.li/i/12715719',
     },
   ],
 });

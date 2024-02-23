@@ -22,7 +22,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds: 'com.ucpro.BrowserActivity',
       rules: '@Button[text="取消"] + Button[text="去设置"]',
-      snapshotUrls: 'https://i.gkd.li/import/13249469',
+      snapshotUrls: 'https://i.gkd.li/i/13249469',
     },
     {
       key: 3,
@@ -35,12 +35,12 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '@Button[text="取消"] + Button[text="更新"]',
-          snapshotUrls: 'https://i.gkd.li/import/13292512',
+          snapshotUrls: 'https://i.gkd.li/i/13292512',
         },
         {
           key: 1,
           matches: '@Button[text="取消"] + Button[text="确定"]',
-          snapshotUrls: 'https://i.gkd.li/import/13455360',
+          snapshotUrls: 'https://i.gkd.li/i/13455360',
         },
       ],
     },
@@ -51,7 +51,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       activityIds: 'com.ucpro.BrowserActivity',
       rules: 'ImageView[id="com.quark.browser:id/close_img"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13292571',
+      snapshotUrls: 'https://i.gkd.li/i/13292571',
     },
   ],
 });

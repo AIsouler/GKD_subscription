@@ -17,8 +17,8 @@ export default defineAppConfig({
           resetMatch: 'app',
           matches: '[id="com.tencent.weread:id/open_notification_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12642247',
-            'https://i.gkd.li/import/13233735',
+            'https://i.gkd.li/i/12642247',
+            'https://i.gkd.li/i/13233735',
           ],
         },
         {
@@ -28,7 +28,7 @@ export default defineAppConfig({
           resetMatch: 'app',
           matches:
             '[text="开启推送通知"] +3 [clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/14190089',
+          snapshotUrls: 'https://i.gkd.li/i/14190089',
         },
       ],
     },
@@ -40,7 +40,7 @@ export default defineAppConfig({
       matchTime: 30000,
       resetMatch: 'app',
       rules: '[text="设置青少年模式"] - LinearLayout >2 [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13233668',
+      snapshotUrls: 'https://i.gkd.li/i/13233668',
     },
   ],
 });

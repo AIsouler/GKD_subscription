@@ -6,8 +6,8 @@
 
 默认禁用 - 点击广告卡片x关闭按钮-关闭反馈理由弹窗
 
-- [快照-0](https://i.gkd.li/import/12640358)
-- [快照-1](https://i.gkd.li/import/12640359)
-- [快照-2](https://i.gkd.li/import/12640362)
-- [快照-3](https://i.gkd.li/import/12640374)
-- [快照-4](https://i.gkd.li/import/12640406)
+- [快照-0](https://i.gkd.li/i/12640358)
+- [快照-1](https://i.gkd.li/i/12640359)
+- [快照-2](https://i.gkd.li/i/12640362)
+- [快照-3](https://i.gkd.li/i/12640374)
+- [快照-4](https://i.gkd.li/i/12640406)

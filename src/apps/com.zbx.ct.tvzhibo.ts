@@ -14,14 +14,14 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '@Image[text.length=0] < View -n [text="反馈"]',
-          snapshotUrls: 'https://i.gkd.li/import/13739951',
+          snapshotUrls: 'https://i.gkd.li/i/13739951',
         },
         {
           key: 1,
           name: '腾讯SDK',
           activityIds: 'com.tvmain.mvp.view.activity.TvMainActivity',
           matches: '@ImageView < FrameLayout <n FrameLayout + TextView',
-          snapshotUrls: 'https://i.gkd.li/import/13766516',
+          snapshotUrls: 'https://i.gkd.li/i/13766516',
         },
       ],
     },
@@ -38,8 +38,8 @@ export default defineAppConfig({
           ],
           matches: '[id="com.zbx.ct.tvzhibo:id/iv_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13740079',
-            'https://i.gkd.li/import/13740126',
+            'https://i.gkd.li/i/13740079',
+            'https://i.gkd.li/i/13740126',
           ],
         },
       ],
@@ -52,7 +52,7 @@ export default defineAppConfig({
           activityIds: 'com.tvmain.mvp.view.activity.VodPlayerActivity',
           matches:
             '@ImageView[text.length=null] < FrameLayout <n FrameLayout +n ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13739932',
+          snapshotUrls: 'https://i.gkd.li/i/13739932',
         },
       ],
     },

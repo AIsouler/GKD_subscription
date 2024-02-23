@@ -16,7 +16,7 @@ export default defineAppConfig({
             'Button[text="以后再说"][id^="com.greenpoint.android.mc10086.activity:id/dialog_btn"]',
           exampleUrls:
             'https://m.gkd.li/57941037/65ee49f0-f3f2-4ef8-9f76-e832b0551b86',
-          snapshotUrls: 'https://i.gkd.li/import/12534264',
+          snapshotUrls: 'https://i.gkd.li/i/12534264',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.greenpoint.android.mc10086.activity:id/ad_image"] < RelativeLayout + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
-          snapshotUrls: ['https://i.gkd.li/import/12662361'],
+          snapshotUrls: ['https://i.gkd.li/i/12662361'],
         },
       ],
     },
@@ -43,14 +43,14 @@ export default defineAppConfig({
         {
           matches: '[text*="开启推送通知"] +(2) LinearLayout > [text="取消"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12662213',
-            'https://i.gkd.li/import/13327880',
+            'https://i.gkd.li/i/12662213',
+            'https://i.gkd.li/i/13327880',
           ],
         },
         {
           quickFind: true,
           matches: '[text="授权提醒"] +3 [text="拒绝"]',
-          snapshotUrls: ['https://i.gkd.li/import/13775652'],
+          snapshotUrls: ['https://i.gkd.li/i/13775652'],
         },
       ],
     },
@@ -64,8 +64,8 @@ export default defineAppConfig({
           matches:
             '[text*="获取您的"] < LinearLayout +(2) LinearLayout >(2) [text="不允许"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12662251',
-            'https://i.gkd.li/import/13775651',
+            'https://i.gkd.li/i/12662251',
+            'https://i.gkd.li/i/13775651',
           ],
         },
       ],
@@ -78,7 +78,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.greenpoint.android.mc10086.activity:id/drag_img"] + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
-          snapshotUrls: ['https://i.gkd.li/import/12662265'],
+          snapshotUrls: ['https://i.gkd.li/i/12662265'],
         },
       ],
     },
@@ -92,7 +92,7 @@ export default defineAppConfig({
         {
           matches:
             '@[id="com.greenpoint.android.mc10086.activity:id/close_img"][desc="关闭"] - RelativeLayout >(2) [text$="好评"]',
-          snapshotUrls: ['https://i.gkd.li/import/12662345'],
+          snapshotUrls: ['https://i.gkd.li/i/12662345'],
         },
       ],
     },

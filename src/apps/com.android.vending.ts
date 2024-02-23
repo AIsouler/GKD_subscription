@@ -13,7 +13,7 @@ export default defineAppConfig({
           activityIds:
             'com.google.android.finsky.protectdialogs.activity.PlayProtectDialogsActivity',
           matches: '@View[clickable=true] > [text="不发送"]',
-          snapshotUrls: 'https://i.gkd.li/import/14035144',
+          snapshotUrls: 'https://i.gkd.li/i/14035144',
         },
       ],
     },

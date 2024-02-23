@@ -16,8 +16,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [vid="splash_container"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13840775',
-            'https://i.gkd.li/import/13944086',
+            'https://i.gkd.li/i/13840775',
+            'https://i.gkd.li/i/13944086',
           ],
         },
       ],

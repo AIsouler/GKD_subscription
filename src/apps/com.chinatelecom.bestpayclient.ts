@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.chinatelecom.bestpayclient:id/bupdate_tv_bottom_tip"]',
-      snapshotUrls: 'https://i.gkd.li/import/13391544',
+      snapshotUrls: 'https://i.gkd.li/i/13391544',
     },
     {
       key: 3,
@@ -28,7 +28,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             'Image < @View[clickable=true][index=1] <<n Dialog <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13402692',
+          snapshotUrls: 'https://i.gkd.li/i/13402692',
         },
         {
           key: 1,
@@ -37,7 +37,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.chinatelecom.bestpayclient:id/iv_dialog_close_one"]',
-          snapshotUrls: 'https://i.gkd.li/import/13455790',
+          snapshotUrls: 'https://i.gkd.li/i/13455790',
         },
         {
           key: 2,
@@ -46,7 +46,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@Image[clickable=true][text!=null] < View[childCount=2] <<n FrameLayout[id="com.chinatelecom.bestpayclient:id/h5_pc_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13626324',
+          snapshotUrls: 'https://i.gkd.li/i/13626324',
         },
         {
           key: 3,
@@ -55,7 +55,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@View[clickable=true][text=""] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13455929',
+          snapshotUrls: 'https://i.gkd.li/i/13455929',
         },
         {
           key: 4,
@@ -64,8 +64,8 @@ export default defineAppConfig({
           matches:
             '[id="com.chinatelecom.bestpayclient:id/h5_pc_container"] >n View[childCount=3] > @*[clickable=true] + * + *[childCount=0]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13696322',
-            'https://i.gkd.li/import/13696323',
+            'https://i.gkd.li/i/13696322',
+            'https://i.gkd.li/i/13696323',
           ],
         },
       ],
@@ -79,7 +79,7 @@ export default defineAppConfig({
       activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
       rules:
         '[id="com.chinatelecom.bestpayclient:id/best_h5_container"] View[childCount=2] > @View[clickable=true] +  View[clickable=true] > Image[text!=null]',
-      snapshotUrls: 'https://i.gkd.li/import/13402711',
+      snapshotUrls: 'https://i.gkd.li/i/13402711',
     },
     {
       key: 5,
@@ -90,8 +90,8 @@ export default defineAppConfig({
       activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
       rules: 'View > View[index=1][clickable=true][childCount=1] > Image',
       snapshotUrls: [
-        'https://i.gkd.li/import/13543032',
-        'https://i.gkd.li/import/13625037', //修改规则，避免在此误触
+        'https://i.gkd.li/i/13543032',
+        'https://i.gkd.li/i/13625037', //修改规则，避免在此误触
       ],
     },
   ],

@@ -13,7 +13,7 @@ export default defineAppConfig({
           activityIds: 'com.mxchip.petmarvel.device.panel.DevicePanelActivity',
           matches:
             'View[childCount=19] > View[index=1] > Image[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13989316',
+          snapshotUrls: 'https://i.gkd.li/i/13989316',
         },
       ],
     },

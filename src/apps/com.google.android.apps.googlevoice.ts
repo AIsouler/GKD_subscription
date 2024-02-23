@@ -23,8 +23,8 @@ export default defineAppConfig({
             '[id="com.google.android.apps.googlevoice:id/skip_button"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13314255',
-            'https://i.gkd.li/import/13437190',
+            'https://i.gkd.li/i/13314255',
+            'https://i.gkd.li/i/13437190',
           ],
         },
       ],

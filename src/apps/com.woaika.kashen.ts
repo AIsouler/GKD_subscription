@@ -18,7 +18,7 @@ export default defineAppConfig({
           matches: '[id="android:id/button2"][text="暂不"]',
           exampleUrls:
             'https://m.gkd.li/57941037/ae172e3f-42e2-4de2-8bd5-de7eb624c359',
-          snapshotUrls: 'https://i.gkd.li/import/14070846',
+          snapshotUrls: 'https://i.gkd.li/i/14070846',
         },
       ],
     },
@@ -35,7 +35,7 @@ export default defineAppConfig({
           matches: '[vid="tvPermissionDescDialogConfirm"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6faf1f01-5b77-414b-91d8-98dcb5673f7c',
-          snapshotUrls: 'https://i.gkd.li/import/14070836',
+          snapshotUrls: 'https://i.gkd.li/i/14070836',
         },
       ],
     },

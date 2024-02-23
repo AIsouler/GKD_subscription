@@ -18,8 +18,8 @@ export default defineAppConfig({
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13691104',
-            'https://i.gkd.li/import/13691103',
+            'https://i.gkd.li/i/13691104',
+            'https://i.gkd.li/i/13691103',
           ],
         },
       ],

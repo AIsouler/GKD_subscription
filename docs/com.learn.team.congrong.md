@@ -6,4 +6,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/b390043b-3d13-451e-b8aa-15c2a0157071)
 
-- [快照-0](https://i.gkd.li/import/14325697)
+- [快照-0](https://i.gkd.li/i/14325697)

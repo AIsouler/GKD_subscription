@@ -15,9 +15,9 @@ export default defineAppConfig({
           matches:
             '@ViewGroup[clickable=true][childCount=1] < ViewGroup +2 ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13972796',
-            'https://i.gkd.li/import/14358701',
-            'https://i.gkd.li/import/14358706',
+            'https://i.gkd.li/i/13972796',
+            'https://i.gkd.li/i/14358701',
+            'https://i.gkd.li/i/14358706',
           ],
         },
         {
@@ -26,8 +26,8 @@ export default defineAppConfig({
           activityIds: 'top.cycdm.cycapp.MainActivity',
           matches: '@[clickable=true] > [text="跳过"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13972792',
-            'https://i.gkd.li/import/14358630',
+            'https://i.gkd.li/i/13972792',
+            'https://i.gkd.li/i/14358630',
           ],
         },
       ],

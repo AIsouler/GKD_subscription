@@ -16,7 +16,7 @@ export default defineAppConfig({
             '@ImageView[index=3] <4 View[childCount=4] <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/dabbfdcb-77fb-4298-aa63-899cbdbf1ceb',
-          snapshotUrls: 'https://i.gkd.li/import/14133497',
+          snapshotUrls: 'https://i.gkd.li/i/14133497',
         },
       ],
     },
@@ -32,7 +32,7 @@ export default defineAppConfig({
             '@ImageView[visibleToUser=true] < FrameLayout <2 FrameLayout[childCount=4] <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/3ed9ad25-083f-4d69-b944-360a6bc2233f',
-          snapshotUrls: 'https://i.gkd.li/import/14133546',
+          snapshotUrls: 'https://i.gkd.li/i/14133546',
         },
       ],
     },

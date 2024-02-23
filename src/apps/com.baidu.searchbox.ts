@@ -13,18 +13,18 @@ export default defineAppConfig({
         {
           activityIds: 'com.baidu.searchbox.MainActivity',
           matches: '[text^="看视频"] -2 ImageView[index=4]',
-          snapshotUrls: 'https://i.gkd.li/import/13806848',
+          snapshotUrls: 'https://i.gkd.li/i/13806848',
         },
         {
           activityIds: 'com.baidu.searchbox.MainActivity',
           matches:
             '[id="android:id/content"] >2 LinearLayout[childCount=2] > ImageView[index=1]',
-          snapshotUrls: 'https://i.gkd.li/import/13988536',
+          snapshotUrls: 'https://i.gkd.li/i/13988536',
         },
         {
           activityIds: 'com.baidu.searchbox.MainActivity',
           matches: 'ViewGroup[childCount=7] > ImageView[index=1]',
-          snapshotUrls: 'https://i.gkd.li/import/14034223',
+          snapshotUrls: 'https://i.gkd.li/i/14034223',
         },
       ],
     },

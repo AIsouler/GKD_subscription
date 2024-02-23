@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           matches:
             '@ImageView[clickable=true] <2 [id="cn.samsclub.app:id/advertising_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13609106',
+          snapshotUrls: 'https://i.gkd.li/i/13609106',
         },
       ],
     },
@@ -26,7 +26,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.samsclub.app:id/tips_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13609113',
+          snapshotUrls: 'https://i.gkd.li/i/13609113',
         },
       ],
     },
@@ -37,7 +37,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="cn.samsclub.app:id/fragment_home_window_delete_iv"]',
-          snapshotUrls: 'https://i.gkd.li/import/13609113',
+          snapshotUrls: 'https://i.gkd.li/i/13609113',
         },
       ],
     },

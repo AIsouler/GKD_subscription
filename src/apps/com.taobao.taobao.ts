@@ -29,11 +29,11 @@ export default defineAppConfig({
           ],
           matches: '[desc^="限时福利"] < FrameLayout + [desc="关闭按钮"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12642792', // activityId: com.taobao.tao.welcome.Welcome
-            'https://i.gkd.li/import/13180826', // activityId: com.taobao.tao.TBMainActivity
-            'https://i.gkd.li/import/12648734', // activityId: com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
-            'https://i.gkd.li/import/12648746', // activityId: com.taobao.android.detail.wrapper.activity.DetailActivity
-            'https://i.gkd.li/import/13198239', //com.alibaba.triver.container.TriverMainActivity
+            'https://i.gkd.li/i/12642792', // activityId: com.taobao.tao.welcome.Welcome
+            'https://i.gkd.li/i/13180826', // activityId: com.taobao.tao.TBMainActivity
+            'https://i.gkd.li/i/12648734', // activityId: com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
+            'https://i.gkd.li/i/12648746', // activityId: com.taobao.android.detail.wrapper.activity.DetailActivity
+            'https://i.gkd.li/i/13198239', //com.alibaba.triver.container.TriverMainActivity
           ],
         },
         {
@@ -45,8 +45,8 @@ export default defineAppConfig({
           ],
           matches: '[desc="淘气值冲刺成功"] < FrameLayout + [desc="关闭按钮"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13198052', //com.taobao.tao.welcome.Welcome
-            'https://i.gkd.li/import/13249418', //com.taobao.tao.TBMainActivity
+            'https://i.gkd.li/i/13198052', //com.taobao.tao.welcome.Welcome
+            'https://i.gkd.li/i/13249418', //com.taobao.tao.TBMainActivity
           ],
         },
       ],
@@ -57,8 +57,8 @@ export default defineAppConfig({
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12642795',
-        'https://i.gkd.li/import/13197877',
+        'https://i.gkd.li/i/12642795',
+        'https://i.gkd.li/i/13197877',
       ],
     },
     {
@@ -71,7 +71,7 @@ export default defineAppConfig({
           activityIds: 'com.taobao.browser.BrowserActivity',
           matches:
             'View[childCount=2] > @Image[text!=""][clickable=true] + View',
-          snapshotUrls: 'https://i.gkd.li/import/13521702',
+          snapshotUrls: 'https://i.gkd.li/i/13521702',
         },
       ],
     },
@@ -85,11 +85,11 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text^="开启系统通知"] + Image[clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13197594', //com.taobao.tao.welcome.Welcome
-        'https://i.gkd.li/import/13222946', //com.taobao.android.order.bundle.TBOrderDetailActivity
-        'https://i.gkd.li/import/13438404', //com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
-        'https://i.gkd.li/import/13446901',
-        'https://i.gkd.li/import/13455424', //com.taobao.tao.TBMainActivity
+        'https://i.gkd.li/i/13197594', //com.taobao.tao.welcome.Welcome
+        'https://i.gkd.li/i/13222946', //com.taobao.android.order.bundle.TBOrderDetailActivity
+        'https://i.gkd.li/i/13438404', //com.taobao.android.tbabilitykit.pop.StdPopContainerActivity
+        'https://i.gkd.li/i/13446901',
+        'https://i.gkd.li/i/13455424', //com.taobao.tao.TBMainActivity
       ],
     },
     {
@@ -104,8 +104,8 @@ export default defineAppConfig({
       ],
       rules: 'TextView[text="去首页"] + TextView[text="退出"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13197553',
-        'https://i.gkd.li/import/13197546',
+        'https://i.gkd.li/i/13197553',
+        'https://i.gkd.li/i/13197546',
       ],
     },
     {
@@ -114,7 +114,7 @@ export default defineAppConfig({
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules:
         'View[id=null] > [text="立即参加"] + TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12642813',
+      snapshotUrls: 'https://i.gkd.li/i/12642813',
     },
     {
       enable: false,
@@ -122,7 +122,7 @@ export default defineAppConfig({
       name: '全屏广告-视频页面签到弹窗',
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
-      snapshotUrls: 'https://i.gkd.li/import/12642798',
+      snapshotUrls: 'https://i.gkd.li/i/12642798',
     },
     {
       key: 12,
@@ -133,8 +133,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.taobao.taobao:id/update_imageview_cancel_v2"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13336760',
-        'https://i.gkd.li/import/13695520',
+        'https://i.gkd.li/i/13336760',
+        'https://i.gkd.li/i/13695520',
       ],
     },
     {
@@ -145,7 +145,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules: '@[text="关闭"] < * <3 * < * + * >3 [text$="小额免密支付"]',
-      snapshotUrls: 'https://i.gkd.li/import/13438414',
+      snapshotUrls: 'https://i.gkd.li/i/13438414',
     },
     {
       enable: false,
@@ -157,7 +157,7 @@ export default defineAppConfig({
         {
           action: 'clickCenter',
           matches: 'View[text="立即添加"] + View[text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/13598578',
+          snapshotUrls: 'https://i.gkd.li/i/13598578',
         },
       ],
     },
@@ -178,7 +178,7 @@ export default defineAppConfig({
           '[id="android:id/button2"][text="否"]',
         ],
       },
-      snapshotUrls: 'https://i.gkd.li/import/13588165',
+      snapshotUrls: 'https://i.gkd.li/i/13588165',
     },
     {
       key: 16,
@@ -193,21 +193,21 @@ export default defineAppConfig({
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches:
             '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
-          snapshotUrls: 'https://i.gkd.li/import/13628020',
+          snapshotUrls: 'https://i.gkd.li/i/13628020',
         },
         {
           key: 1,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches:
             '[text="根据相关法律法规要求，请尽快完成花呗升级"] <<n FrameLayout FrameLayout @[text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/13691864',
+          snapshotUrls: 'https://i.gkd.li/i/13691864',
         },
         {
           key: 2,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches:
             '[id="com.taobao.taobao:id/flybird_userinfo"] + * [text="暂不升级，继续付款"]',
-          snapshotUrls: 'https://i.gkd.li/import/13898735',
+          snapshotUrls: 'https://i.gkd.li/i/13898735',
         },
       ],
     },
@@ -220,7 +220,7 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.taobao.tao.welcome.Welcome',
           matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
-          snapshotUrls: 'https://i.gkd.li/import/14060521',
+          snapshotUrls: 'https://i.gkd.li/i/14060521',
         },
       ],
     },
@@ -236,7 +236,7 @@ export default defineAppConfig({
             '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a35c954d-5162-463c-aee3-b72b9c2d6625',
-          snapshotUrls: 'https://i.gkd.li/import/14155537',
+          snapshotUrls: 'https://i.gkd.li/i/14155537',
         },
       ],
     },

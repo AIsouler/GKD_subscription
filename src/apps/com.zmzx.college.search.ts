@@ -14,7 +14,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'ImageView[id="com.zmzx.college.search:id/siv_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12867853',
+      snapshotUrls: 'https://i.gkd.li/i/12867853',
     },
     {
       key: 2,
@@ -30,8 +30,8 @@ export default defineAppConfig({
           ],
           matches: 'ImageView[id="com.zmzx.college.search:id/iv_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12867751',
-            'https://i.gkd.li/import/12894813',
+            'https://i.gkd.li/i/12867751',
+            'https://i.gkd.li/i/12894813',
           ],
         },
         {
@@ -40,7 +40,7 @@ export default defineAppConfig({
           activityIds: 'com.bbk.launcher2.Launcher',
           matches:
             '[text="广告"] <2 ViewGroup -3 ViewGroup > @ViewGroup[clickable=true] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13346628',
+          snapshotUrls: 'https://i.gkd.li/i/13346628',
         },
         {
           key: 2,
@@ -51,7 +51,7 @@ export default defineAppConfig({
             'ViewGroup > ViewGroup > ViewGroup[childCount=2] > ImageView + [text="广告"]',
             'ViewGroup > ViewGroup > @ViewGroup[childCount=1][clickable=true] > ImageView[childCount=0]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13451304',
+          snapshotUrls: 'https://i.gkd.li/i/13451304',
         },
         {
           key: 3,
@@ -60,7 +60,7 @@ export default defineAppConfig({
             'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
           matches:
             '[id="com.zmzx.college.search:id/ad_flag_source_layout"] + [id="com.zmzx.college.search:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13522998',
+          snapshotUrls: 'https://i.gkd.li/i/13522998',
         },
         {
           key: 4,
@@ -68,7 +68,7 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
           matches: '@Image < View +3 View > View > TextView[text$="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13523288',
+          snapshotUrls: 'https://i.gkd.li/i/13523288',
         },
         {
           key: 5,
@@ -78,7 +78,7 @@ export default defineAppConfig({
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           matches:
             '@[clickable=true] > [id="com.zmzx.college.search:id/tt_reward_full_count_down_after_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12893408',
+          snapshotUrls: 'https://i.gkd.li/i/12893408',
         },
       ],
     },
@@ -92,7 +92,7 @@ export default defineAppConfig({
           activityIds:
             'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
           matches: '[vid="close_m_image_left_text_right_app_compliance"]',
-          snapshotUrls: 'https://i.gkd.li/import/13849755',
+          snapshotUrls: 'https://i.gkd.li/i/13849755',
         },
         {
           key: 1,
@@ -101,7 +101,7 @@ export default defineAppConfig({
             'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
           matches:
             '[id^="com.zmzx.college.search:id/ad_flag_source"] - * > [id="com.zmzx.college.search:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13063381',
+          snapshotUrls: 'https://i.gkd.li/i/13063381',
         },
       ],
     },
@@ -115,8 +115,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.zmzx.college.search:id/update_close"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13063373',
-        'https://i.gkd.li/import/13623469',
+        'https://i.gkd.li/i/13063373',
+        'https://i.gkd.li/i/13623469',
       ],
     },
     {
@@ -131,7 +131,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="开启推送通知"] - [id="com.zmzx.college.search:id/siv_dialog_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13440939',
+          snapshotUrls: 'https://i.gkd.li/i/13440939',
         },
       ],
     },
@@ -144,7 +144,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13476308',
+      snapshotUrls: 'https://i.gkd.li/i/13476308',
     },
     {
       key: 8,
@@ -154,7 +154,7 @@ export default defineAppConfig({
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       ],
       rules: '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after"]',
-      snapshotUrls: ['https://i.gkd.li/import/13929945'],
+      snapshotUrls: ['https://i.gkd.li/i/13929945'],
     },
     {
       key: 9,
@@ -164,7 +164,7 @@ export default defineAppConfig({
         'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
       ],
       rules: '[id="com.zmzx.college.search:id/iv_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/13929981'],
+      snapshotUrls: ['https://i.gkd.li/i/13929981'],
     },
     {
       key: 10,
@@ -175,7 +175,7 @@ export default defineAppConfig({
       ],
       rules:
         '[id="com.zmzx.college.search:id/close_m_image_left_text_right_app_compliance"]',
-      snapshotUrls: ['https://i.gkd.li/import/13929965'],
+      snapshotUrls: ['https://i.gkd.li/i/13929965'],
     },
   ],
 });

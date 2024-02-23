@@ -15,7 +15,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.fcbox.hivebox:id/fl_content_container"] + [id="com.fcbox.hivebox:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13459000',
+          snapshotUrls: 'https://i.gkd.li/i/13459000',
         },
       ],
     },

@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="child_mode_cancel_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13849807',
+      snapshotUrls: 'https://i.gkd.li/i/13849807',
     },
   ],
 });

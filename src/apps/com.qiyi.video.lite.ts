@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '[text*="关闭"] <2 LinearLayout',
-      snapshotUrls: 'https://i.gkd.li/import/13797162',
+      snapshotUrls: 'https://i.gkd.li/i/13797162',
     },
   ],
 });

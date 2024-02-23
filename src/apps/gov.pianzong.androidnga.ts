@@ -17,11 +17,11 @@ export default defineAppConfig({
         '[id="gov.pianzong.androidnga:id/ksad_skip_view_skip"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/12476484',
-        'https://i.gkd.li/import/12706127', // activityIds: 'com.miui.home.launcher.Launcher',
-        'https://i.gkd.li/import/12864707', // activityIds: 'gov.pianzong.androidnga.activity.LoadingActivity',
-        'https://i.gkd.li/import/12911882', // activityIds: 'gov.pianzong.androidnga.activity.WarmstartActivity'
-        'https://i.gkd.li/import/13798686', // id="gov.pianzong.androidnga:id/ksad_skip_view_skip"
+        'https://i.gkd.li/i/12476484',
+        'https://i.gkd.li/i/12706127', // activityIds: 'com.miui.home.launcher.Launcher',
+        'https://i.gkd.li/i/12864707', // activityIds: 'gov.pianzong.androidnga.activity.LoadingActivity',
+        'https://i.gkd.li/i/12911882', // activityIds: 'gov.pianzong.androidnga.activity.WarmstartActivity'
+        'https://i.gkd.li/i/13798686', // id="gov.pianzong.androidnga:id/ksad_skip_view_skip"
       ],
     },
     {
@@ -29,7 +29,7 @@ export default defineAppConfig({
       name: '局部广告-首页-推荐-广告卡片',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
-      snapshotUrls: 'https://i.gkd.li/import/12482727',
+      snapshotUrls: 'https://i.gkd.li/i/12482727',
     },
     {
       key: 2,
@@ -40,17 +40,17 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'Image[text="ams_icon_single_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12655805'],
+          snapshotUrls: ['https://i.gkd.li/i/12655805'],
         },
         {
           matches:
             'TextView[text!=null] - ImageView < LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView[id=null]',
-          snapshotUrls: ['https://i.gkd.li/import/12706140'],
+          snapshotUrls: ['https://i.gkd.li/i/12706140'],
         },
         {
           matches:
             '[text="广告"] - [id="gov.pianzong.androidnga:id/iv_information_ad_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/13303236'],
+          snapshotUrls: ['https://i.gkd.li/i/13303236'],
         },
       ],
     },
@@ -59,7 +59,7 @@ export default defineAppConfig({
       name: '局部广告-社区-顶部广告',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
-      snapshotUrls: ['https://i.gkd.li/import/12706132'],
+      snapshotUrls: ['https://i.gkd.li/i/12706132'],
     },
     {
       key: 4,
@@ -72,7 +72,7 @@ export default defineAppConfig({
           matches: '[id="gov.pianzong.androidnga:id/iv_homedialog_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/346f4485-82a7-4cf3-aab3-1fe6c9bb23af',
-          snapshotUrls: 'https://i.gkd.li/import/14126934',
+          snapshotUrls: 'https://i.gkd.li/i/14126934',
         },
       ],
     },

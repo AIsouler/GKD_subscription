@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.ss.android.ugc.aweme.mobile:id/teen_mode_title"] +n [id="com.ss.android.ugc.aweme.mobile:id/bt_i_know"]',
-      snapshotUrls: 'https://i.gkd.li/import/13255513',
+      snapshotUrls: 'https://i.gkd.li/i/13255513',
     },
   ],
 });

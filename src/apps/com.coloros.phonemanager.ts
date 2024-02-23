@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           matches:
             '@[text="取消"] < [id="com.coloros.phonemanager:id/buttonPanel"] > [text="更新"]',
-          snapshotUrls: 'https://i.gkd.li/import/13194979',
+          snapshotUrls: 'https://i.gkd.li/i/13194979',
         },
       ],
     },
@@ -30,7 +30,7 @@ export default defineAppConfig({
           matches: '[vid="ad_close"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/4d8b27a4-f129-479e-871b-bc6f664072ae',
-          snapshotUrls: 'https://i.gkd.li/import/14317524',
+          snapshotUrls: 'https://i.gkd.li/i/14317524',
         },
       ],
     },

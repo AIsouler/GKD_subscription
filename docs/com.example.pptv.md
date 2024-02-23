@@ -4,11 +4,11 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/13669401)
-- [快照-1](https://i.gkd.li/import/13761160)
+- [快照-0](https://i.gkd.li/i/13669401)
+- [快照-1](https://i.gkd.li/i/13761160)
 
 ## 青少年模式
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13761159)
+- [快照-0](https://i.gkd.li/i/13761159)

@@ -14,18 +14,18 @@ export default defineAppConfig({
         {
           quickFind: true,
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: ['https://i.gkd.li/import/12673680'],
+          snapshotUrls: ['https://i.gkd.li/i/12673680'],
         },
         {
           quickFind: true,
           matches:
             '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid="fl_third_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/13826577',
+          snapshotUrls: 'https://i.gkd.li/i/13826577',
         },
         {
           // 无法使用 quickFind
           matches: '[id$="tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13224627',
+          snapshotUrls: 'https://i.gkd.li/i/13224627',
         },
       ],
     },
@@ -41,8 +41,8 @@ export default defineAppConfig({
           matches:
             '[id="net.csdn.csdnplus:id/update"] -2 [id="net.csdn.csdnplus:id/cancel"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12673693',
-            'https://i.gkd.li/import/12673654',
+            'https://i.gkd.li/i/12673693',
+            'https://i.gkd.li/i/12673654',
           ],
         },
       ],
@@ -57,8 +57,8 @@ export default defineAppConfig({
           key: 1,
           matches: '[text="广告"] + [id="net.csdn.csdnplus:id/iv_more"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12673738',
-            'https://i.gkd.li/import/13224538',
+            'https://i.gkd.li/i/12673738',
+            'https://i.gkd.li/i/13224538',
           ],
         },
         {
@@ -67,8 +67,8 @@ export default defineAppConfig({
           matches:
             '@[clickable=true] > [id="net.csdn.csdnplus:id/img_feedback_title"][text="重复推荐该广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12673787',
-            'https://i.gkd.li/import/13224551',
+            'https://i.gkd.li/i/12673787',
+            'https://i.gkd.li/i/13224551',
           ],
         },
       ],
@@ -81,7 +81,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
-      snapshotUrls: 'https://i.gkd.li/import/13251085',
+      snapshotUrls: 'https://i.gkd.li/i/13251085',
     },
     {
       enable: false,
@@ -96,7 +96,7 @@ export default defineAppConfig({
           '[text="开启推送通知"]',
           '[id="net.csdn.csdnplus:id/iv_close"]',
         ],
-        snapshotUrls: ['https://i.gkd.li/import/12673638'],
+        snapshotUrls: ['https://i.gkd.li/i/12673638'],
       },
     },
     {
@@ -110,8 +110,8 @@ export default defineAppConfig({
           matches:
             '[vid$="_container"] > FrameLayout[childCount=3] >(2,3) ViewGroup[childCount=2] >2 ViewGroup[childCount=2] > ImageView[visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13830821',
-            'https://i.gkd.li/import/14312501',
+            'https://i.gkd.li/i/13830821',
+            'https://i.gkd.li/i/14312501',
           ],
         },
         {
@@ -121,8 +121,8 @@ export default defineAppConfig({
           activityIds: 'net.csdn.csdnplus.mvvm.ui.activity.BlogDetailActivity',
           matches: '@LinearLayout[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13830858',
-            'https://i.gkd.li/import/14312349',
+            'https://i.gkd.li/i/13830858',
+            'https://i.gkd.li/i/14312349',
           ],
         },
       ],

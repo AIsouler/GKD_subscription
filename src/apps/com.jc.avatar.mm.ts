@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.jc.avatar.mm.MainActivity',
       rules:
         'ImageView -2 FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
-      snapshotUrls: 'https://i.gkd.li/import/13188475',
+      snapshotUrls: 'https://i.gkd.li/i/13188475',
     },
   ],
 });

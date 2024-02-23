@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       rules:
         '[vid="tv_next"][text="下一条"] <<n LinearLayout - [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/14141561',
+      snapshotUrls: 'https://i.gkd.li/i/14141561',
     },
   ],
 });

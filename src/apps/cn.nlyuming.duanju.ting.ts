@@ -15,7 +15,7 @@ export default defineAppConfig({
             '[id="android:id/content"] >5 FrameLayout[childCount=3] >2 ImageView[visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/3041769f-b644-460b-b0de-9c2a84518849',
-          snapshotUrls: 'https://i.gkd.li/import/14321891',
+          snapshotUrls: 'https://i.gkd.li/i/14321891',
         },
       ],
     },

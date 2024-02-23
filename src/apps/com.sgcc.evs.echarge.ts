@@ -17,8 +17,8 @@ export default defineAppConfig({
           ],
           matches: '[id="com.sgcc.evs.echarge:id/iv_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13958838', //com.evs.echarge.dev.ui.advertisement.SplashActivity
-            'https://i.gkd.li/import/14005508', //com.evs.echarge.dev.ui.MainActivity
+            'https://i.gkd.li/i/13958838', //com.evs.echarge.dev.ui.advertisement.SplashActivity
+            'https://i.gkd.li/i/14005508', //com.evs.echarge.dev.ui.MainActivity
           ],
         },
       ],

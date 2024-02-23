@@ -16,7 +16,7 @@ export default defineAppConfig({
           activityIds:
             'bubei.tingshu.listen.book.detail.activity.DetailActivity',
           matches: '[id="bubei.tingshu:id/closeIcon"][desc="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/13348489',
+          snapshotUrls: 'https://i.gkd.li/i/13348489',
         },
       ],
     },
@@ -28,7 +28,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="发现新版本"] +2 * > [text="暂不升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/13545953',
+      snapshotUrls: 'https://i.gkd.li/i/13545953',
     },
   ],
 });

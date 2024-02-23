@@ -15,7 +15,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
-      snapshotUrls: 'https://i.gkd.li/import/13197374',
+      snapshotUrls: 'https://i.gkd.li/i/13197374',
     },
   ],
 });

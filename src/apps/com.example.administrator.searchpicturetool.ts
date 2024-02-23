@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[text="取消"] + [text="立即升级"]',
-          snapshotUrls: 'https://i.gkd.li/import/13989147',
+          snapshotUrls: 'https://i.gkd.li/i/13989147',
         },
       ],
     },

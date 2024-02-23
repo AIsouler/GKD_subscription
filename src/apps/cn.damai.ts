@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="cn.damai:id/homepage_advert_pb"]',
-      snapshotUrls: 'https://i.gkd.li/import/12472623',
+      snapshotUrls: 'https://i.gkd.li/i/12472623',
     },
     {
       key: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
           activityIds: 'cn.damai.homepage.MainActivity',
           matches:
             '[id="cn.damai:id/homepage_popup_window_image"] + [id="cn.damai:id/homepage_popup_window_close_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/13627900',
+          snapshotUrls: 'https://i.gkd.li/i/13627900',
         },
       ],
     },

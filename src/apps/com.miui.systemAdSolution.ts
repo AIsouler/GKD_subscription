@@ -15,8 +15,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.miui.systemAdSolution:id/no_interest"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13227328', // com.android.thememanager.module.detail.view.ThemeDetailActivity
-        'https://i.gkd.li/import/13255751', // com.android.thememanager.ThemeResourceProxyTabActivity
+        'https://i.gkd.li/i/13227328', // com.android.thememanager.module.detail.view.ThemeDetailActivity
+        'https://i.gkd.li/i/13255751', // com.android.thememanager.ThemeResourceProxyTabActivity
       ],
     },
   ],

@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="关闭"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/import/13407227',
+      snapshotUrls: 'https://i.gkd.li/i/13407227',
     },
   ],
 });

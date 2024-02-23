@@ -18,7 +18,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.buyanchuantong.buyanshufa:id/next_page_imageview"][text^="点击跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13425296',
+          snapshotUrls: 'https://i.gkd.li/i/13425296',
         },
       ],
     },

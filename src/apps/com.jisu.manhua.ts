@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.jisu.manhua:id/iv_promotion"] + [id="com.jisu.manhua:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13688186',
+          snapshotUrls: 'https://i.gkd.li/i/13688186',
         },
       ],
     },

@@ -18,8 +18,8 @@ export default defineAppConfig({
           quickFind: true,
           matches: '@[focusable=true] + [text="今日不再出现"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12745042',
-            'https://i.gkd.li/import/13247655',
+            'https://i.gkd.li/i/12745042',
+            'https://i.gkd.li/i/13247655',
           ],
         },
         {
@@ -29,8 +29,8 @@ export default defineAppConfig({
           matches:
             'ViewGroup[childCount=1] > @ViewGroup[childCount=1] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/import/13247655',
-            'https://i.gkd.li/import/13247655',
+            'https://i.gkd.li/i/13247655',
+            'https://i.gkd.li/i/13247655',
           ],
         },
         {
@@ -40,7 +40,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.sgcc.wsgw.cn:id/news_remind_laytout"] >n [id="com.sgcc.wsgw.cn:id/btn_remind_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12745042'],
+          snapshotUrls: ['https://i.gkd.li/i/12745042'],
         },
       ],
     },
@@ -52,7 +52,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@ImageView < ViewGroup -3 [text="有新版本啦!"]',
-      snapshotUrls: 'https://i.gkd.li/import/13501638',
+      snapshotUrls: 'https://i.gkd.li/i/13501638',
     },
   ],
 });

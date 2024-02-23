@@ -16,9 +16,9 @@ export default defineAppConfig({
           quickFind: true,
           matches: '[text^="跳过"][text.length<=10]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12843368',
-            'https://i.gkd.li/import/13363222',
-            'https://i.gkd.li/import/13363246',
+            'https://i.gkd.li/i/12843368',
+            'https://i.gkd.li/i/13363222',
+            'https://i.gkd.li/i/13363246',
           ],
         },
         {
@@ -26,9 +26,9 @@ export default defineAppConfig({
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
           snapshotUrls: [
-            'https://i.gkd.li/import/13694858',
-            'https://i.gkd.li/import/13794403',
-            'https://i.gkd.li/import/12854728',
+            'https://i.gkd.li/i/13694858',
+            'https://i.gkd.li/i/13794403',
+            'https://i.gkd.li/i/12854728',
           ],
         },
       ],
@@ -42,7 +42,7 @@ export default defineAppConfig({
           activityIds: 'com.realtech.xiaocan.MainActivity',
           matches:
             'View[childCount=3] > View + ImageView + ImageView[clickable=true][childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13694864',
+          snapshotUrls: 'https://i.gkd.li/i/13694864',
         },
       ],
     },
@@ -53,7 +53,7 @@ export default defineAppConfig({
       activityIds: 'com.realtech.xiaocan.MainActivity',
       rules:
         '[id="android:id/content"] >5 View[childCount=6] > ImageView[index=5][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/14290847',
+      snapshotUrls: 'https://i.gkd.li/i/14290847',
     },
   ],
 });

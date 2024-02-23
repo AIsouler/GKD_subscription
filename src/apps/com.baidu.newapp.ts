@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[text="立即更新"] + [text="暂不升级"]',
-          snapshotUrls: 'https://i.gkd.li/import/13360280',
+          snapshotUrls: 'https://i.gkd.li/i/13360280',
         },
       ],
     },

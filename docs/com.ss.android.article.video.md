@@ -6,22 +6,22 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12472628)
+- [快照-0](https://i.gkd.li/i/12472628)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13328430)
+- [快照-0](https://i.gkd.li/i/13328430)
 
 ## 通知提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13456568)
+- [快照-0](https://i.gkd.li/i/13456568)
 
 ## 全屏广告-红包弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13620299)
+- [快照-0](https://i.gkd.li/i/13620299)

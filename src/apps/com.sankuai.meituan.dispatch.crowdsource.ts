@@ -14,7 +14,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.sankuai.meituan.dispatch.crowdsource:id/image_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13694935',
+          snapshotUrls: 'https://i.gkd.li/i/13694935',
         },
       ],
     },

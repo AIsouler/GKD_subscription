@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '[id=`com.google.android.apps.photos:id/negative_button`][text=`以后再说`]',
-          snapshotUrls: 'https://i.gkd.li/import/13218940',
+          snapshotUrls: 'https://i.gkd.li/i/13218940',
         },
       ],
     },
@@ -31,7 +31,7 @@ export default defineAppConfig({
             'com.google.android.apps.photos.cloudstorage.paidfeatures.PaidFeaturesActivity',
           matches:
             '@[desc="转到上一层级"] < ViewGroup[id="com.google.android.apps.photos:id/toolbar"]',
-          snapshotUrls: 'https://i.gkd.li/import/13774247',
+          snapshotUrls: 'https://i.gkd.li/i/13774247',
         },
       ],
     },

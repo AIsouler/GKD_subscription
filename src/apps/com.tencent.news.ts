@@ -19,9 +19,9 @@ export default defineAppConfig({
           matches:
             'FrameLayout[id="android:id/content"][childCount=1] >n [text="广告"] +n [id="com.tencent.news:id/dislike_streamAd_more"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12755834',
-            'https://i.gkd.li/import/12755852', // 使用 FrameLayout[id="android:id/content"][childCount=1] 进行限定，防止点击"更多"按钮后继续触发规则
-            'https://i.gkd.li/import/12755914', // activityId: 'com.miui.home.launcher.Launcher'
+            'https://i.gkd.li/i/12755834',
+            'https://i.gkd.li/i/12755852', // 使用 FrameLayout[id="android:id/content"][childCount=1] 进行限定，防止点击"更多"按钮后继续触发规则
+            'https://i.gkd.li/i/12755914', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
         {
@@ -30,7 +30,7 @@ export default defineAppConfig({
           name: '点击"不感兴趣"按钮',
           matches:
             '[id="com.tencent.news:id/dislike_reason_view"] >n [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/12755852',
+          snapshotUrls: 'https://i.gkd.li/i/12755852',
         },
       ],
     },
@@ -42,7 +42,7 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'com.tencent.news.activity.SplashActivity',
           matches: '@[text="关闭"] + [text="查看活动详情"]',
-          snapshotUrls: 'https://i.gkd.li/import/12755872',
+          snapshotUrls: 'https://i.gkd.li/i/12755872',
         },
         // 在这个规则组中继续添加广告、活动弹窗
       ],
@@ -55,7 +55,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="开启通知"] + [text="先不了"]',
-      snapshotUrls: 'https://i.gkd.li/import/12755824',
+      snapshotUrls: 'https://i.gkd.li/i/12755824',
     },
   ],
 });

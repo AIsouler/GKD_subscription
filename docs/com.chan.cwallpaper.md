@@ -4,7 +4,7 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/14293734)
+- [快照-0](https://i.gkd.li/i/14293734)
 
 ## 全屏广告-会员回馈弹窗
 
@@ -12,4 +12,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/8150c450-bcf8-4e8b-8236-4c3abebbeef3)
 
-- [快照-0](https://i.gkd.li/import/14308433)
+- [快照-0](https://i.gkd.li/i/14308433)

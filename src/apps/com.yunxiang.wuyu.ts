@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[desc^="人生嘛"] +4 ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13455634',
+      snapshotUrls: 'https://i.gkd.li/i/13455634',
     },
     {
       key: 3,
@@ -26,7 +26,7 @@ export default defineAppConfig({
           name: '"x"型',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +n ViewGroup [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13455628',
+          snapshotUrls: 'https://i.gkd.li/i/13455628',
         },
         {
           name: '"跳过"型',
@@ -34,7 +34,7 @@ export default defineAppConfig({
             'TextView[text="广告"]',
             '@ViewGroup > TextView[text="跳过"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13455629',
+          snapshotUrls: 'https://i.gkd.li/i/13455629',
         },
       ],
     },

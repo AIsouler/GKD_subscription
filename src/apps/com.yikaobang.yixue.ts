@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@ImageView[id="com.yikaobang.yixue:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13425853',
+          snapshotUrls: 'https://i.gkd.li/i/13425853',
         },
       ],
     },

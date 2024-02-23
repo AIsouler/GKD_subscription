@@ -11,7 +11,7 @@ export default defineAppConfig({
       matchTime: 10000,
       rules:
         '[text$="抽奖送大礼"] < WebView - [id="cisdom.com.bigteaapp:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13228579',
+      snapshotUrls: 'https://i.gkd.li/i/13228579',
     },
   ],
 });

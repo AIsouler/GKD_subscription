@@ -15,7 +15,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@ImageView <n ViewGroup -2 ViewGroup > ViewGroup > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12843281',
+          snapshotUrls: 'https://i.gkd.li/i/12843281',
         },
         {
           key: 1,
@@ -25,14 +25,14 @@ export default defineAppConfig({
             'ViewGroup[childCount=2] > ImageView + [text="广告"]',
             'ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13521143',
+          snapshotUrls: 'https://i.gkd.li/i/13521143',
         },
         {
           key: 2,
           name: '快手广告-3',
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches: '[text="广告"] <2 ViewGroup -3 ViewGroup >2 [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/13521140',
+          snapshotUrls: 'https://i.gkd.li/i/13521140',
         },
         {
           key: 3,
@@ -40,7 +40,7 @@ export default defineAppConfig({
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/12843282',
+          snapshotUrls: 'https://i.gkd.li/i/12843282',
         },
         {
           key: 4,
@@ -52,9 +52,9 @@ export default defineAppConfig({
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12843345',
-            'https://i.gkd.li/import/12843333',
-            'https://i.gkd.li/import/13400656', // com.qq.e.ads.ADActivity
+            'https://i.gkd.li/i/12843345',
+            'https://i.gkd.li/i/12843333',
+            'https://i.gkd.li/i/13400656', // com.qq.e.ads.ADActivity
           ],
         },
         {
@@ -63,7 +63,7 @@ export default defineAppConfig({
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           quickFind: true,
           matches: '@Image < View +n View > View > View > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/12843323',
+          snapshotUrls: 'https://i.gkd.li/i/12843323',
         },
       ],
     },
@@ -77,7 +77,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[desc^="必读通告"] +n [desc="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/12843280',
+      snapshotUrls: 'https://i.gkd.li/i/12843280',
     },
     {
       key: 11,
@@ -87,7 +87,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.sigmob.sdk.base.common.TransparentAdActivity',
           matches: '[id="close_btn"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13887500',
+          snapshotUrls: 'https://i.gkd.li/i/13887500',
         },
       ],
     },

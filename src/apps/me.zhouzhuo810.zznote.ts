@@ -15,10 +15,10 @@ export default defineAppConfig({
         '@LinearLayout > [text*="跳过"]',
       ],
       snapshotUrls: [
-        'https://i.gkd.li/import/12798528',
-        'https://i.gkd.li/import/12912217',
-        'https://i.gkd.li/import/13059838',
-        'https://i.gkd.li/import/13800235', //@LinearLayout > [text*="跳过"]
+        'https://i.gkd.li/i/12798528',
+        'https://i.gkd.li/i/12912217',
+        'https://i.gkd.li/i/13059838',
+        'https://i.gkd.li/i/13800235', //@LinearLayout > [text*="跳过"]
       ],
     },
   ],

@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="青少年保护功能提示"] +3 [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13448882',
+      snapshotUrls: 'https://i.gkd.li/i/13448882',
     },
   ],
 });

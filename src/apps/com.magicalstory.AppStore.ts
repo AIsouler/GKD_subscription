@@ -21,12 +21,12 @@ export default defineAppConfig({
           matches:
             '[visibleToUser=true] - [vid="bannerLayout"] >7 FrameLayout[childCount=5] > FrameLayout[index=2]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13413482',
-            'https://i.gkd.li/import/13416979',
-            'https://i.gkd.li/import/13527698',
-            'https://i.gkd.li/import/13759492', // 限定 visibleToUser, 防止误触
-            'https://i.gkd.li/import/14273176', // 限定 visibleToUser, 防止误触
-            'https://i.gkd.li/import/14273317', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/i/13413482',
+            'https://i.gkd.li/i/13416979',
+            'https://i.gkd.li/i/13527698',
+            'https://i.gkd.li/i/13759492', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/i/14273176', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/i/14273317', // 限定 visibleToUser, 防止误触
           ],
         },
         {
@@ -36,8 +36,8 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView < FrameLayout +2 *[visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13185746',
-            'https://i.gkd.li/import/13695554',
+            'https://i.gkd.li/i/13185746',
+            'https://i.gkd.li/i/13695554',
           ],
         },
         {
@@ -45,7 +45,7 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.magicalstory.AppStore.main.MainActivity',
           matches: '[id="com.magicalstory.AppStore:id/button_close_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/13443417',
+          snapshotUrls: 'https://i.gkd.li/i/13443417',
         },
       ],
     },
@@ -60,7 +60,7 @@ export default defineAppConfig({
         {
           matches:
             '[text*="隐藏"][id="com.magicalstory.AppStore:id/btn_selectNegative"]',
-          snapshotUrls: 'https://i.gkd.li/import/13437553',
+          snapshotUrls: 'https://i.gkd.li/i/13437553',
         },
       ],
     },
@@ -73,7 +73,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.magicalstory.AppStore:id/tv_update"] <2 * + * > [id="com.magicalstory.AppStore:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13459373',
+      snapshotUrls: 'https://i.gkd.li/i/13459373',
     },
   ],
 });

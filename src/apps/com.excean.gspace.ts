@@ -16,13 +16,13 @@ export default defineAppConfig({
           name: '类型1',
           matches:
             'FrameLayout[childCount=2] > LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13302890',
+          snapshotUrls: 'https://i.gkd.li/i/13302890',
         },
         {
           name: '类型2',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
-          snapshotUrls: 'https://i.gkd.li/import/13447122',
+          snapshotUrls: 'https://i.gkd.li/i/13447122',
         },
       ],
     },

@@ -13,7 +13,7 @@ export default defineAppConfig({
       activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
       rules:
         '[text="去开启"] - [id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13331268',
+      snapshotUrls: 'https://i.gkd.li/i/13331268',
     },
     {
       key: 2,
@@ -23,7 +23,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/13511386',
+      snapshotUrls: 'https://i.gkd.li/i/13511386',
     },
     {
       key: 3,
@@ -35,7 +35,7 @@ export default defineAppConfig({
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
           matches:
             '[text="首页弹窗"] >n View + TextView + Image[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13761130',
+          snapshotUrls: 'https://i.gkd.li/i/13761130',
         },
       ],
     },
@@ -48,7 +48,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
           matches: '[id="com.sinovatech.unicom.ui:id/home_xuanfu_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13930543',
+          snapshotUrls: 'https://i.gkd.li/i/13930543',
         },
       ],
     },

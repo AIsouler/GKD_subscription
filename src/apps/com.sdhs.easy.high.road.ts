@@ -16,7 +16,7 @@ export default defineAppConfig({
             '[desc^="logoad"]',
             '[desc^="dislike"] > View[clickable=true]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13670340',
+          snapshotUrls: 'https://i.gkd.li/i/13670340',
         },
       ],
     },

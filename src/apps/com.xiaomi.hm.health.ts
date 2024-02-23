@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.xiaomi.hm.health.activity.ChannelMainTabActivity',
       rules: 'ImageView[id="com.xiaomi.hm.health:id/close_icon"]',
-      snapshotUrls: 'https://i.gkd.li/import/13695424',
+      snapshotUrls: 'https://i.gkd.li/i/13695424',
     },
   ],
 });

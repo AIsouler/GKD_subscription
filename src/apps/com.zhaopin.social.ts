@@ -12,14 +12,14 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[id="com.zhaopin.social:id/update"] + [id="com.zhaopin.social:id/ignore"]',
-      snapshotUrls: ['https://i.gkd.li/import/12706186'],
+      snapshotUrls: ['https://i.gkd.li/i/12706186'],
     },
     {
       key: 2,
       name: '局部广告-我的页面卡片广告',
       activityIds: 'com.zhaopin.social.homepage.ZSC_MainTabActivity',
       rules: '[id="com.zhaopin.social:id/rl_banner_close"][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/import/12706181'],
+      snapshotUrls: ['https://i.gkd.li/i/12706181'],
     },
     {
       key: 3,
@@ -27,7 +27,7 @@ export default defineAppConfig({
       activityIds: ['com.zhaopin.social.homepage.ZSC_MainTabActivity'],
       rules:
         'ImageView[clickable=true&&focusable=true] < FrameLayout + FrameLayout > ImageView[clickable=false&&focusable=false]',
-      snapshotUrls: 'https://inspect.gkd.li/import/13063442',
+      snapshotUrls: 'https://i.gkd.li/i/13063442',
     },
     {
       enable: false,
@@ -39,7 +39,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="com.zhaopin.social:id/message_pushlayout_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13063427',
+      snapshotUrls: 'https://i.gkd.li/i/13063427',
     },
   ],
 });

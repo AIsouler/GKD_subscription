@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="android:id/content"] >2 [id="com.huodao.hdphone:id/dialog_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13927567',
+          snapshotUrls: 'https://i.gkd.li/i/13927567',
         },
       ],
     },

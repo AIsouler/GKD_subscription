@@ -12,9 +12,9 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[text="更新提示"] <<2 * +2 * >2 [text="取消"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12684250',
-        'https://i.gkd.li/import/12727457',
-        'https://i.gkd.li/import/12684244',
+        'https://i.gkd.li/i/12684250',
+        'https://i.gkd.li/i/12727457',
+        'https://i.gkd.li/i/12684244',
       ],
     },
     {
@@ -30,8 +30,8 @@ export default defineAppConfig({
           matches:
             'LinearLayout[childCount=2] > @RelativeLayout[clickable=true][childCount=1] > ImageView[childCount=0]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12739581',
-            'https://i.gkd.li/import/13670025',
+            'https://i.gkd.li/i/12739581',
+            'https://i.gkd.li/i/13670025',
           ],
         },
       ],
@@ -48,12 +48,12 @@ export default defineAppConfig({
         {
           matches:
             '[text^="打开消息通知"] + [text="去开启"] + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/12684278'],
+          snapshotUrls: ['https://i.gkd.li/i/12684278'],
         },
         {
           matches:
             '[text^="打开消息通知"] + FrameLayout > [text="去开启"] < FrameLayout + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/import/12684351'],
+          snapshotUrls: ['https://i.gkd.li/i/12684351'],
         },
       ],
     },

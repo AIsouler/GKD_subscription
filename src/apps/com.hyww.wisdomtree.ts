@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches:
             '[id="android:id/content"] >n RelativeLayout[childCount<=3] > ImageView[clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13799876',
-            'https://i.gkd.li/import/13852024',
+            'https://i.gkd.li/i/13799876',
+            'https://i.gkd.li/i/13852024',
           ],
         },
       ],
@@ -30,7 +30,7 @@ export default defineAppConfig({
           name: '信息流广告',
           quickFind: true,
           matches: '[vid="time_line_type"] <<n * > * > [vid="rl_down"]',
-          snapshotUrls: 'https://i.gkd.li/import/13852023',
+          snapshotUrls: 'https://i.gkd.li/i/13852023',
         },
       ],
     },

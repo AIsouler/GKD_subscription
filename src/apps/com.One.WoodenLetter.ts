@@ -11,7 +11,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text^="新版本"] <2 * +2 * > [text="忽略"]',
-      snapshotUrls: 'https://i.gkd.li/import/14332536',
+      snapshotUrls: 'https://i.gkd.li/i/14332536',
     },
   ],
 });

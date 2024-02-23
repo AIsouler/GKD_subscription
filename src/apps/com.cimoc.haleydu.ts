@@ -17,9 +17,9 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/fe71e192-83bd-4db7-aed4-a01851b6f0bd',
           snapshotUrls: [
-            'https://i.gkd.li/import/14318224',
-            'https://i.gkd.li/import/14318235',
-            'https://i.gkd.li/import/14318236',
+            'https://i.gkd.li/i/14318224',
+            'https://i.gkd.li/i/14318235',
+            'https://i.gkd.li/i/14318236',
           ],
         },
       ],

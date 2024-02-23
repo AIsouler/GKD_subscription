@@ -13,7 +13,7 @@ export default defineAppConfig({
         {
           activityIds: 'cn.honor.qinxuan.MainActivity',
           matches: '[id="cn.honor.qinxuan:id/iv_close_dlg"]',
-          snapshotUrls: 'https://i.gkd.li/import/13930613',
+          snapshotUrls: 'https://i.gkd.li/i/13930613',
         },
       ],
     },

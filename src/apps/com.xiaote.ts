@@ -14,7 +14,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.xiaote:id/ad_close"][text*="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/import/14035706',
+          snapshotUrls: 'https://i.gkd.li/i/14035706',
         },
       ],
     },

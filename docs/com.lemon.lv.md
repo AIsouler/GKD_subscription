@@ -8,17 +8,17 @@
 
 - [示例-0](https://m.gkd.li/57941037/bc46565b-16ac-4415-8165-13d075f28fcf)
 
-- [快照-0](https://i.gkd.li/import/12911010)
-- [快照-1](https://i.gkd.li/import/14149461)
+- [快照-0](https://i.gkd.li/i/12911010)
+- [快照-1](https://i.gkd.li/i/14149461)
 
 ## 局部广告-选择素材界面上方广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14122865)
+- [快照-0](https://i.gkd.li/i/14122865)
 
 ## 功能类-恢复创作
 
 默认禁用 - 自动点击[立即恢复]按钮
 
-- [快照-0](https://i.gkd.li/import/14292755)
+- [快照-0](https://i.gkd.li/i/14292755)

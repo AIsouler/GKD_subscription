@@ -16,7 +16,7 @@ export default defineAppConfig({
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13055837',
+          snapshotUrls: 'https://i.gkd.li/i/13055837',
         },
         {
           key: 1,
@@ -25,7 +25,7 @@ export default defineAppConfig({
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             '[id="client.android.yixiaotong:id/ksad_tk_view"] >n ViewGroup + ViewGroup > @ViewGroup > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13060116',
+          snapshotUrls: 'https://i.gkd.li/i/13060116',
         },
         {
           key: 2,
@@ -35,7 +35,7 @@ export default defineAppConfig({
             'ViewGroup[childCount=2] > ImageView + [text="广告"]',
             'ViewGroup[childCount=1] > @ViewGroup[childCount=1] > ImageView[childCount=0]',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13625511',
+          snapshotUrls: 'https://i.gkd.li/i/13625511',
         },
       ],
     },
@@ -50,7 +50,7 @@ export default defineAppConfig({
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             'ImageView - FrameLayout - FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13451010',
+          snapshotUrls: 'https://i.gkd.li/i/13451010',
         },
         {
           key: 1,
@@ -59,7 +59,7 @@ export default defineAppConfig({
             'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             '[id="client.android.yixiaotong:id/ksad_container"] >n @TextView + View > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13450887',
+          snapshotUrls: 'https://i.gkd.li/i/13450887',
         },
       ],
     },
@@ -74,7 +74,7 @@ export default defineAppConfig({
         'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
       rules:
         '@TextView[clickable=true][text=""] + View [text="广告"] <<n [id="client.android.yixiaotong:id/ksad_container"]',
-      snapshotUrls: 'https://i.gkd.li/import/13448963',
+      snapshotUrls: 'https://i.gkd.li/i/13448963',
     },
   ],
 });

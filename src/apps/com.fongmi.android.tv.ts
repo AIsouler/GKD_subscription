@@ -15,7 +15,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.fongmi.android.tv:id/buttonPanel"] >2 [text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/14035154',
+          snapshotUrls: 'https://i.gkd.li/i/14035154',
         },
       ],
     },

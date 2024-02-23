@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.reddit.frontpage:id/cancel_button"]',
-          snapshotUrls: 'https://i.gkd.li/import/13649914',
+          snapshotUrls: 'https://i.gkd.li/i/13649914',
         },
       ],
     },
@@ -29,7 +29,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.reddit.launch.main.MainActivity',
           matches: 'Button[text="Cancel"] + Button[text="Continue"]',
-          snapshotUrls: 'https://i.gkd.li/import/13649992',
+          snapshotUrls: 'https://i.gkd.li/i/13649992',
         },
       ],
     },

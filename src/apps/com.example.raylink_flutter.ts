@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[desc="立即升级"] + [desc="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13659530',
+      snapshotUrls: 'https://i.gkd.li/i/13659530',
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.example.raylink_flutter.MainActivity',
           matches: '[vid="raylink_desktop_dialog_msg_bottombtn_left_tv"]',
-          snapshotUrls: 'https://i.gkd.li/import/14047538',
+          snapshotUrls: 'https://i.gkd.li/i/14047538',
         },
       ],
     },

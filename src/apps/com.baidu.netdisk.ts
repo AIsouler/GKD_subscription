@@ -17,7 +17,7 @@ export default defineAppConfig({
           activityIds: 'com.baidu.netdisk.ui.MainActivity',
           matches:
             '[id="com.baidu.netdisk:id/cl_content"] - [id="com.baidu.netdisk:id/iv_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12642505'],
+          snapshotUrls: ['https://i.gkd.li/i/12642505'],
         },
         {
           key: 2,
@@ -25,7 +25,7 @@ export default defineAppConfig({
           activityIds: 'com.baidu.netdisk.business.guide.dialog.lifeproduct.', // LifeV10GuideDialog
           matches:
             '[id="com.baidu.netdisk:id/view_content_bg2"] - [id="com.baidu.netdisk:id/iv_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12923937'],
+          snapshotUrls: ['https://i.gkd.li/i/12923937'],
         },
       ],
     },
@@ -35,7 +35,7 @@ export default defineAppConfig({
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706544',
+      snapshotUrls: 'https://i.gkd.li/i/12706544',
     },
     {
       key: 3,
@@ -44,7 +44,7 @@ export default defineAppConfig({
       quickFind: true,
       rules:
         '[id="com.baidu.netdisk:id/vf_content"] + [id="com.baidu.netdisk:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706544',
+      snapshotUrls: 'https://i.gkd.li/i/12706544',
     },
     {
       key: 4,
@@ -52,7 +52,7 @@ export default defineAppConfig({
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules: '@TextView + [text="专属福利"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706549',
+      snapshotUrls: 'https://i.gkd.li/i/12706549',
     },
     {
       key: 5,
@@ -62,7 +62,7 @@ export default defineAppConfig({
         'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
       rules:
         '@ImageView[id="com.baidu.netdisk:id/close_btn"] + ImageView[id="com.baidu.netdisk:id/bg_image"]',
-      snapshotUrls: 'https://i.gkd.li/import/12648987',
+      snapshotUrls: 'https://i.gkd.li/i/12648987',
     },
     {
       key: 6,
@@ -71,8 +71,8 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="立即更新"] -n [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
-      snapshotUrls: 'https://i.gkd.li/import/12863984',
+      rules: '[text="立即更新"] -n [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/i/13069049）
+      snapshotUrls: 'https://i.gkd.li/i/12863984',
     },
     {
       key: 7,
@@ -83,7 +83,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'View[desc="续费"] + ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/12924036',
+          snapshotUrls: 'https://i.gkd.li/i/12924036',
         },
       ],
     },
@@ -96,8 +96,8 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]', //单独使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
-      snapshotUrls: ['https://i.gkd.li/import/12923936'],
+      rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]', //单独使用ID会导致误触（例如删除确认https://i.gkd.li/i/13069049）
+      snapshotUrls: ['https://i.gkd.li/i/12923936'],
     },
     {
       key: 9,
@@ -105,7 +105,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="喜欢“百度网盘”吗？"] +n [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/14317054',
+      snapshotUrls: 'https://i.gkd.li/i/14317054',
     },
     {
       enable: false,
@@ -116,7 +116,7 @@ export default defineAppConfig({
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules:
         'ViewGroup > [id="com.baidu.netdisk:id/background_image"] +n [id="com.baidu.netdisk:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12783106',
+      snapshotUrls: 'https://i.gkd.li/i/12783106',
     },
     {
       key: 11,
@@ -128,7 +128,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.baidu.netdisk:id/tv_title"][text^="恭喜获得"] -3 ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13806852',
+          snapshotUrls: 'https://i.gkd.li/i/13806852',
         },
       ],
     },
@@ -143,7 +143,7 @@ export default defineAppConfig({
             '[vid="float_btn_close"][clickable=true][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/470eec82-ed99-4f50-beba-2587e525cfdf',
-          snapshotUrls: 'https://i.gkd.li/import/14278618',
+          snapshotUrls: 'https://i.gkd.li/i/14278618',
         },
       ],
     },

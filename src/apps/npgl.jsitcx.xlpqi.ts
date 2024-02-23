@@ -13,7 +13,7 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text$="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/import/12799926',
+          snapshotUrls: 'https://i.gkd.li/i/12799926',
         },
         {
           key: 1,
@@ -22,8 +22,8 @@ export default defineAppConfig({
           matches:
             '@Image[id=null][text=""] < View + View +n [text="反馈"] +n View > View > TextView[text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12799942',
-            'https://i.gkd.li/import/12800095',
+            'https://i.gkd.li/i/12799942',
+            'https://i.gkd.li/i/12800095',
           ],
         },
       ],
@@ -40,23 +40,23 @@ export default defineAppConfig({
           key: 0,
           matches: '@Image < View + View >2 Image',
           snapshotUrls: [
-            'https://i.gkd.li/import/12799977',
-            'https://i.gkd.li/import/12800107',
+            'https://i.gkd.li/i/12799977',
+            'https://i.gkd.li/i/12800107',
           ],
         },
         {
           key: 1,
           matches: 'Image < View < View +n View > Image[visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12800034',
-            'https://i.gkd.li/import/12800162', // 限定 Image[visibleToUser=true]，防止点击不可见节点
+            'https://i.gkd.li/i/12800034',
+            'https://i.gkd.li/i/12800162', // 限定 Image[visibleToUser=true]，防止点击不可见节点
           ],
         },
         {
           preKeys: [0, 1],
           key: 2,
           matches: '@LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/import/12799995',
+          snapshotUrls: 'https://i.gkd.li/i/12799995',
         },
       ],
     },

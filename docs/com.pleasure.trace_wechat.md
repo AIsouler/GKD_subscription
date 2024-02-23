@@ -6,11 +6,11 @@
 
 默认禁用 - 需点击二次弹窗确认
 
-- [快照-0](https://i.gkd.li/import/13479466)
-- [快照-1](https://i.gkd.li/import/13479469)
+- [快照-0](https://i.gkd.li/i/13479466)
+- [快照-1](https://i.gkd.li/i/13479469)
 
 ## 全屏广告-"字节"广告弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13479468)
+- [快照-0](https://i.gkd.li/i/13479468)

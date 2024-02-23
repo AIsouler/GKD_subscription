@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: 'LinearLayout[childCount=2] > @[text="取消"] + [text="确认"]',
-      snapshotUrls: 'https://i.gkd.li/import/13392027',
+      snapshotUrls: 'https://i.gkd.li/i/13392027',
     },
     {
       enable: false,
@@ -20,7 +20,7 @@ export default defineAppConfig({
       name: '功能类-自动识别解析链接',
       activityIds: 'com.one.downloadtools.ui.activity.HomeActivity',
       rules: '@[text="识别解析"] -2 * > [text^="检测到你复制链接"]',
-      snapshotUrls: 'https://i.gkd.li/import/13392085',
+      snapshotUrls: 'https://i.gkd.li/i/13392085',
     },
     {
       enable: false,
@@ -28,7 +28,7 @@ export default defineAppConfig({
       name: '全屏广告-开通会员弹窗',
       activityIds: 'com.one.downloadtools.ui.activity.HomeActivity',
       rules: '[text^="开通会员"] < * +n * > [text="暂不"]',
-      snapshotUrls: 'https://i.gkd.li/import/13392112',
+      snapshotUrls: 'https://i.gkd.li/i/13392112',
     },
   ],
 });

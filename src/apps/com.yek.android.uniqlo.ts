@@ -10,7 +10,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.yek.android.uniqlo.uiux.Home.activity.HomeActivity',
       rules: 'ImageView[id="com.yek.android.uniqlo:id/pop_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13212320',
+      snapshotUrls: 'https://i.gkd.li/i/13212320',
     },
     {
       key: 2,
@@ -23,7 +23,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@TextView[text="取消"] + TextView[text="确定"]',
-          snapshotUrls: 'https://i.gkd.li/import/13446421',
+          snapshotUrls: 'https://i.gkd.li/i/13446421',
         },
       ],
     },

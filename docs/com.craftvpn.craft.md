@@ -6,4 +6,4 @@
 
 点击X
 
-- [快照-0](https://i.gkd.li/import/13914788)
+- [快照-0](https://i.gkd.li/i/13914788)

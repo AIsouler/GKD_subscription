@@ -14,7 +14,7 @@ export default defineAppConfig({
           matches: '[text^="关闭广告"] + View >2 Image[text=""]',
           exampleUrls:
             'https://m.gkd.li/57941037/2fa2793e-187e-44e6-91e4-6a5a355568c6',
-          snapshotUrls: 'https://i.gkd.li/import/14306002',
+          snapshotUrls: 'https://i.gkd.li/i/14306002',
         },
       ],
     },

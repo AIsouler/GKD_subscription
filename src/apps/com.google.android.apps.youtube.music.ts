@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.google.android.apps.youtube.music.activities.MusicActivity',
       rules: '[id="com.google.android.apps.youtube.music:id/skip_ad_text"]',
-      snapshotUrls: 'https://i.gkd.li/import/13196056',
+      snapshotUrls: 'https://i.gkd.li/i/13196056',
     },
   ],
 });

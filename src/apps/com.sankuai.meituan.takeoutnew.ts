@@ -12,8 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13415044',
-        'https://i.gkd.li/import/13276882',
+        'https://i.gkd.li/i/13415044',
+        'https://i.gkd.li/i/13276882',
       ],
     },
     {
@@ -41,7 +41,7 @@ export default defineAppConfig({
           name: '领取外卖神卷-点击底部"x"',
           matches:
             '@ImageView[clickable=true] - FrameLayout > FrameLayout > FrameLayout TextView[text="点我领取"]',
-          snapshotUrls: 'https://i.gkd.li/import/13175526',
+          snapshotUrls: 'https://i.gkd.li/i/13175526',
         },
       ],
     },

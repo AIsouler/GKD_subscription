@@ -10,7 +10,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="no_update_tv"]',
-      snapshotUrls: 'https://i.gkd.li/import/14296122',
+      snapshotUrls: 'https://i.gkd.li/i/14296122',
     },
   ],
 });

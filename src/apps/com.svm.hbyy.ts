@@ -14,7 +14,7 @@ export default defineAppConfig({
             '[text="打开或下载第三方应用"]',
             'FrameLayout[childCount=3] + FrameLayout > ImageView',
           ],
-          snapshotUrls: 'https://i.gkd.li/import/13185377',
+          snapshotUrls: 'https://i.gkd.li/i/13185377',
         },
       ],
     },

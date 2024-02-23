@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.tipsoon.android.activity.MainActivity',
           matches:
             '[id="com.tipsoon.android:id/cardview"] + [id="com.tipsoon.android:id/img_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13426997',
+          snapshotUrls: 'https://i.gkd.li/i/13426997',
         },
       ],
     },

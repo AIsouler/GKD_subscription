@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[desc="Interstitial close button"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/14292691',
+      snapshotUrls: 'https://i.gkd.li/i/14292691',
     },
   ],
 });

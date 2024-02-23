@@ -6,7 +6,7 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13499502)
+- [快照-0](https://i.gkd.li/i/13499502)
 
 ## 开屏广告
 
@@ -14,4 +14,4 @@
 
 - [示例-0](https://m.gkd.li/57941037/63a72bd6-72be-410c-86ab-09ba7a4fa318)
 
-- [快照-0](https://i.gkd.li/import/14167393)
+- [快照-0](https://i.gkd.li/i/14167393)

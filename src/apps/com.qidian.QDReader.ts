@@ -15,11 +15,11 @@ export default defineAppConfig({
         {
           matches:
             '[text$="新版本"] +2 * >2 [id="com.qidian.QDReader:id/cancel"]',
-          snapshotUrls: ['https://i.gkd.li/import/12641026'],
+          snapshotUrls: ['https://i.gkd.li/i/12641026'],
         },
         {
           matches: '[id="com.qidian.QDReader:id/upgrade_dialog_close_btn"]',
-          snapshotUrls: ['https://i.gkd.li/import/13116821'],
+          snapshotUrls: ['https://i.gkd.li/i/13116821'],
         },
       ],
     },
@@ -32,9 +32,9 @@ export default defineAppConfig({
       rules:
         '[id="com.qidian.QDReader:id/btnEnterTeen"] + [id="com.qidian.QDReader:id/btnCancel"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12640241',
-        'https://i.gkd.li/import/12709168',
-        'https://i.gkd.li/import/12905817',
+        'https://i.gkd.li/i/12640241',
+        'https://i.gkd.li/i/12709168',
+        'https://i.gkd.li/i/12905817',
       ],
     },
     {
@@ -49,10 +49,10 @@ export default defineAppConfig({
       rules:
         '[id="com.qidian.QDReader:id/imgBKT"] + [id="com.qidian.QDReader:id/imgClose"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12640195',
-        'https://i.gkd.li/import/12640158',
-        'https://i.gkd.li/import/12818198',
-        'https://i.gkd.li/import/13469004', // .ui.activity.BookLastPageNewActivity
+        'https://i.gkd.li/i/12640195',
+        'https://i.gkd.li/i/12640158',
+        'https://i.gkd.li/i/12818198',
+        'https://i.gkd.li/i/13469004', // .ui.activity.BookLastPageNewActivity
       ],
     },
     {
@@ -64,7 +64,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '@[id="com.qidian.QDReader:id/ivClose"] + [text^="开启推送"]',
-      snapshotUrls: 'https://i.gkd.li/import/12640242',
+      snapshotUrls: 'https://i.gkd.li/i/12640242',
     },
     {
       key: 5,
@@ -77,7 +77,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.qidian.QDReader:id/ivAd"] + [id="com.qidian.QDReader:id/ivAdClose"]',
-          snapshotUrls: 'https://i.gkd.li/import/12717032',
+          snapshotUrls: 'https://i.gkd.li/i/12717032',
         },
         {
           key: 1,
@@ -85,7 +85,7 @@ export default defineAppConfig({
           activityIds: 'com.qidian.QDReader.ui.activity.QDBookDetailActivity',
           matches:
             '[id="com.qidian.QDReader:id/floatingView"] + [id="com.qidian.QDReader:id/ivAdClose"]',
-          snapshotUrls: 'https://i.gkd.li/import/13459031',
+          snapshotUrls: 'https://i.gkd.li/i/13459031',
         },
       ],
     },
@@ -96,7 +96,7 @@ export default defineAppConfig({
       desc: '自动点击"登录"',
       activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
       rules: '[id="scanLogin"]',
-      snapshotUrls: 'https://i.gkd.li/import/12903081',
+      snapshotUrls: 'https://i.gkd.li/i/12903081',
     },
     {
       enable: false,
@@ -105,7 +105,7 @@ export default defineAppConfig({
       desc: '自动点击"x"',
       activityIds: 'com.qidian.QDReader.flutter.DailyReadingMainPageActivity',
       rules: 'View[desc="更多游戏"] - ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13406169',
+      snapshotUrls: 'https://i.gkd.li/i/13406169',
     },
     {
       key: 12,
@@ -116,7 +116,7 @@ export default defineAppConfig({
       resetMatch: 'activity',
       matchTime: 10000,
       rules: 'View[desc="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13606901',
+      snapshotUrls: 'https://i.gkd.li/i/13606901',
     },
     {
       key: 13,
@@ -129,7 +129,7 @@ export default defineAppConfig({
             'com.qidian.QDReader.ui.activity.hongbao_square.NewHongBaoSquareActivity',
           matches:
             '[id="com.qidian.QDReader:id/rootView"] > [id="com.qidian.QDReader:id/btnHongbaoClose"]',
-          snapshotUrls: 'https://i.gkd.li/import/13918466',
+          snapshotUrls: 'https://i.gkd.li/i/13918466',
         },
       ],
     },

@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.cloudpower.netsale.activity:id/tvw_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/14005533',
+          snapshotUrls: 'https://i.gkd.li/i/14005533',
         },
       ],
     },

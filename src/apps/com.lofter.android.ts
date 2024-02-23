@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
-      snapshotUrls: 'https://i.gkd.li/import/14204158',
+      snapshotUrls: 'https://i.gkd.li/i/14204158',
     },
   ],
 });

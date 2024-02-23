@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.shanghaionstar:id/jump_view"]',
-      snapshotUrls: 'https://i.gkd.li/import/13071523',
+      snapshotUrls: 'https://i.gkd.li/i/13071523',
     },
   ],
 });

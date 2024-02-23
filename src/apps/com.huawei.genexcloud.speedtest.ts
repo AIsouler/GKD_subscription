@@ -17,7 +17,7 @@ export default defineAppConfig({
           matches: '[id="com.huawei.genexcloud.speedtest:id/btn_cancle"]',
           exampleUrls:
             'https://m.gkd.li/57941037/03083d39-1d4c-4af7-8ba1-77201b2a87f2',
-          snapshotUrls: 'https://i.gkd.li/import/14061490',
+          snapshotUrls: 'https://i.gkd.li/i/14061490',
         },
       ],
     },

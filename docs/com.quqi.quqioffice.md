@@ -6,8 +6,8 @@
 
 默认禁用 - 在线私人云看图片自动弹出自动播放可跳过广告
 
-- [快照-0](https://i.gkd.li/import/12854650)
-- [快照-1](https://i.gkd.li/import/12854723)
-- [快照-2](https://i.gkd.li/import/12877535)
-- [快照-3](https://i.gkd.li/import/12854664)
-- [快照-4](https://i.gkd.li/import/12877540)
+- [快照-0](https://i.gkd.li/i/12854650)
+- [快照-1](https://i.gkd.li/i/12854723)
+- [快照-2](https://i.gkd.li/i/12877535)
+- [快照-3](https://i.gkd.li/i/12854664)
+- [快照-4](https://i.gkd.li/i/12877540)

@@ -15,7 +15,7 @@ export default defineAppConfig({
           activityIds: 'net.duohuo.magappx.main.IndexTabActivity',
           quickFind: true,
           matches: '[id="com.badmintoncn.bbs:id/iv_close_ad"]',
-          snapshotUrls: 'https://i.gkd.li/import/13635224',
+          snapshotUrls: 'https://i.gkd.li/i/13635224',
         },
       ],
     },

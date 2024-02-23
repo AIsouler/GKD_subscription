@@ -16,7 +16,7 @@ export default defineAppConfig({
         {
           matches:
             '@View < View[childCount=2] < View[childCount=1] < View[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/import/13914788',
+          snapshotUrls: 'https://i.gkd.li/i/13914788',
         },
       ],
     },

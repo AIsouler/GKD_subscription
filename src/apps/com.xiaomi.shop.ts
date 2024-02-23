@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.xiaomi.shop.plugin.homepage.utils.AdDialog',
       rules:
         'LinearLayout[childCount=2] > ImageView[id=null] + ImageView[id=null][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/import/12649330'],
+      snapshotUrls: ['https://i.gkd.li/i/12649330'],
     },
   ],
 });

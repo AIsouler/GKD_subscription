@@ -8,5 +8,5 @@
 
 - [示例-0](https://m.gkd.li/57941037/e6a94c34-6580-4bf5-8c44-16c9c9534be4)
 
-- [快照-0](https://i.gkd.li/import/14032794)
-- [快照-1](https://i.gkd.li/import/14256643)
+- [快照-0](https://i.gkd.li/i/14032794)
+- [快照-1](https://i.gkd.li/i/14256643)

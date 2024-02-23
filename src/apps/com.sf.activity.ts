@@ -15,12 +15,12 @@ export default defineAppConfig({
           key: 0,
           matches:
             '@[text="取消"] < ViewGroup - ScrollView >(2) [text*="新版本"]',
-          snapshotUrls: 'https://i.gkd.li/import/12642445',
+          snapshotUrls: 'https://i.gkd.li/i/12642445',
         },
         {
           key: 1,
           matches: '@[desc="取消"] - ViewGroup >n [text="立即升级"]',
-          snapshotUrls: 'https://i.gkd.li/import/13291144',
+          snapshotUrls: 'https://i.gkd.li/i/13291144',
         },
       ],
     },
@@ -29,7 +29,7 @@ export default defineAppConfig({
       name: '功能类-专属月报弹窗',
       activityIds: 'com.sf.activity.MainActivity',
       rules: ['[id="MonthReportDialogCloseBtn"] > ImageView'],
-      snapshotUrls: 'https://i.gkd.li/import/12642441',
+      snapshotUrls: 'https://i.gkd.li/i/12642441',
     },
   ],
 });

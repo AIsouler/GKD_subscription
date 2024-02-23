@@ -10,7 +10,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="温馨提示"] +2 [text="确定"]',
-      snapshotUrls: 'https://i.gkd.li/import/14304132',
+      snapshotUrls: 'https://i.gkd.li/i/14304132',
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineAppConfig({
           activityIds: 'com.e4a.runtime.android.mainActivity',
           matches:
             'ImageView - LinearLayout - FrameLayout > FrameLayout[index=2][childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/14304134',
+          snapshotUrls: 'https://i.gkd.li/i/14304134',
         },
       ],
     },

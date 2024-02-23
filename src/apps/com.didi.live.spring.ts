@@ -16,7 +16,7 @@ export default defineAppConfig({
           matches: '[vid="dialog_hall_iv_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/0d0a2a0a-b9de-4f30-9e25-a0e3b3c111d6',
-          snapshotUrls: 'https://i.gkd.li/import/14341955',
+          snapshotUrls: 'https://i.gkd.li/i/14341955',
         },
       ],
     },

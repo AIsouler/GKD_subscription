@@ -6,5 +6,5 @@
 
 默认禁用 - 点击准确率灵敏度不太高
 
-- [快照-0](https://i.gkd.li/import/12667539)
-- [快照-1](https://i.gkd.li/import/12667549)
+- [快照-0](https://i.gkd.li/i/12667539)
+- [快照-1](https://i.gkd.li/i/12667549)

@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '局部广告-广告卡片',
       activityIds: 'com.jxedt.ui.activitys.exercise.OrderExerciseActivity',
       rules: '[id="com.jxedt:id/img_question_banner_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13195641',
+      snapshotUrls: 'https://i.gkd.li/i/13195641',
     },
     {
       key: 3,
@@ -20,7 +20,7 @@ export default defineAppConfig({
           activityIds: 'com.jxedt.ui.activitys.NewHomeActivity',
           quickFind: true,
           matches: '[id="com.jxedt:id/img_dialog_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13476741',
+          snapshotUrls: 'https://i.gkd.li/i/13476741',
         },
       ],
     },

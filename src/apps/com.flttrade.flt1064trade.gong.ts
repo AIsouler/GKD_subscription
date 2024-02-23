@@ -17,9 +17,9 @@ export default defineAppConfig({
             '[id="android:id/content"] >(4,5) @FrameLayout[index=1] > ImageView',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/13759472',
-            'https://i.gkd.li/import/13798323', //第二条 >5
-            'https://i.gkd.li/import/13798327', //第二条 >4
+            'https://i.gkd.li/i/13759472',
+            'https://i.gkd.li/i/13798323', //第二条 >5
+            'https://i.gkd.li/i/13798327', //第二条 >4
           ],
         },
       ],

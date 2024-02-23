@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@ImageView[id="com.lucky.luckyclient:id/dismiss_btn"] - LinearLayout > ImageView[id="com.lucky.luckyclient:id/update_btn"]',
-      snapshotUrls: 'https://i.gkd.li/import/12846499',
+      snapshotUrls: 'https://i.gkd.li/i/12846499',
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineAppConfig({
       activityIds: 'com.lucky.luckyclient.preview2.OrderPreviewActivity2',
       quickFind: true,
       rules: '[id="com.lucky.luckyclient:id/close_iv"][visibleToUser=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12922834',
+      snapshotUrls: 'https://i.gkd.li/i/12922834',
     },
     {
       key: 3,
@@ -34,7 +34,7 @@ export default defineAppConfig({
         matches: '[id="com.lucky.luckyclient:id/webcontent"]',
         action: 'back',
       },
-      snapshotUrls: 'https://i.gkd.li/import/13164114',
+      snapshotUrls: 'https://i.gkd.li/i/13164114',
     },
   ],
 });

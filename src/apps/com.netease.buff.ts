@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="暂不更新"]',
-      snapshotUrls: 'https://i.gkd.li/import/13310265',
+      snapshotUrls: 'https://i.gkd.li/i/13310265',
     },
   ],
 });

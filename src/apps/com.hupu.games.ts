@@ -20,9 +20,9 @@ export default defineAppConfig({
           matches:
             '@[id="com.hupu.games:id/shield_view"] >2 [id="com.hupu.games:id/tv_tag"][text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12511005',
-            'https://i.gkd.li/import/13258026',
-            'https://i.gkd.li/import/13259692',
+            'https://i.gkd.li/i/12511005',
+            'https://i.gkd.li/i/13258026',
+            'https://i.gkd.li/i/13259692',
           ],
         },
         {
@@ -31,9 +31,9 @@ export default defineAppConfig({
           matches:
             '@[clickable=true] > [id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12511010',
-            'https://i.gkd.li/import/12534848',
-            'https://i.gkd.li/import/13259699',
+            'https://i.gkd.li/i/12511010',
+            'https://i.gkd.li/i/12534848',
+            'https://i.gkd.li/i/13259699',
           ],
         },
       ],

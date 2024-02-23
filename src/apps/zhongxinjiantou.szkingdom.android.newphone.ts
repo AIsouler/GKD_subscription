@@ -18,7 +18,7 @@ export default defineAppConfig({
             '[id="zhongxinjiantou.szkingdom.android.newphone:id/tv_notify_confirm_off"][text="放弃通知"]',
           exampleUrls:
             'https://m.gkd.li/57941037/642582b1-f0f1-446c-b3f4-287eac62d108',
-          snapshotUrls: 'https://i.gkd.li/import/12924466',
+          snapshotUrls: 'https://i.gkd.li/i/12924466',
         },
       ],
     },

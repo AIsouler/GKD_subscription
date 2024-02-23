@@ -13,7 +13,7 @@ export default defineAppConfig({
           activityIds: 'com.miui.gamebooster.GameBoosterRichWebActivity',
           matches:
             '[id="com.miui.securityadd:id/webViewContainer"] [text="活动图片"] +2 Image[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13914659',
+          snapshotUrls: 'https://i.gkd.li/i/13914659',
         },
       ],
     },

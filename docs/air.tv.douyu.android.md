@@ -6,7 +6,7 @@
 
 默认禁用 - 关闭青少年模式提醒弹窗
 
-- [快照-0](https://i.gkd.li/import/12472598)
+- [快照-0](https://i.gkd.li/i/12472598)
 
 ## 更新提示
 
@@ -16,11 +16,11 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12892825)
-- [快照-1](https://i.gkd.li/import/13037239)
-- [快照-2](https://i.gkd.li/import/12892825)
-- [快照-3](https://i.gkd.li/import/13056107)
-- [快照-4](https://i.gkd.li/import/13056107)
-- [快照-5](https://i.gkd.li/import/13056107)
-- [快照-6](https://i.gkd.li/import/13948990)
-- [快照-7](https://i.gkd.li/import/14310474)
+- [快照-0](https://i.gkd.li/i/12892825)
+- [快照-1](https://i.gkd.li/i/13037239)
+- [快照-2](https://i.gkd.li/i/12892825)
+- [快照-3](https://i.gkd.li/i/13056107)
+- [快照-4](https://i.gkd.li/i/13056107)
+- [快照-5](https://i.gkd.li/i/13056107)
+- [快照-6](https://i.gkd.li/i/13948990)
+- [快照-7](https://i.gkd.li/i/14310474)

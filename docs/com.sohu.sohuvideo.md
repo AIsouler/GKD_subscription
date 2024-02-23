@@ -6,10 +6,10 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13435504)
+- [快照-0](https://i.gkd.li/i/13435504)
 
 ## 青少年模式
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13448876)
+- [快照-0](https://i.gkd.li/i/13448876)

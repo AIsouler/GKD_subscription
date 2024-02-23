@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.lantern.start.main.activity.HomeMainActivity',
           matches: '[vid="interstitial_close_iv"]',
-          snapshotUrls: 'https://i.gkd.li/import/14032794',
+          snapshotUrls: 'https://i.gkd.li/i/14032794',
         },
         {
           activityIds:
@@ -22,7 +22,7 @@ export default defineAppConfig({
           matches: '[text="反馈"] + View[visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/e6a94c34-6580-4bf5-8c44-16c9c9534be4',
-          snapshotUrls: 'https://i.gkd.li/import/14256643',
+          snapshotUrls: 'https://i.gkd.li/i/14256643',
         },
       ],
     },

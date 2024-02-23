@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] + [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/12715139',
+      snapshotUrls: 'https://i.gkd.li/i/12715139',
     },
     {
       enable: false,
@@ -23,7 +23,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '[text^="开启消息通知"] +2 [id="cn.xuexi.android:id/layout_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/12715160',
+      snapshotUrls: 'https://i.gkd.li/i/12715160',
     },
   ],
 });

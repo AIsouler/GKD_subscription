@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.cmi.jegotrip:id/ig_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13631904',
+          snapshotUrls: 'https://i.gkd.li/i/13631904',
         },
       ],
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
       activityIds: 'com.cmi.jegotrip.ui.BottomTabsActivity',
       rules:
         '[text="申请定位权限说明"] < LinearLayout +2 LinearLayout [id="com.cmi.jegotrip:id/btn_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/13232766',
+      snapshotUrls: 'https://i.gkd.li/i/13232766',
     },
   ],
 });

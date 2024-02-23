@@ -15,8 +15,8 @@ export default defineAppConfig({
           matches:
             '[id="com.zzw.october:id/interact_ad_root"] >n ImageView[id="com.zzw.october:id/iv_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12842675',
-            'https://i.gkd.li/import/12869369',
+            'https://i.gkd.li/i/12842675',
+            'https://i.gkd.li/i/12869369',
           ],
         },
       ],

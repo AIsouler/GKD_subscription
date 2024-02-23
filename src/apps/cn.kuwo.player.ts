@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           activityIds: 'cn.kuwo.player.activities.MainActivity',
           matches: '[id="cn.kuwo.player:id/iv_business_personal_dia_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13974483',
+          snapshotUrls: 'https://i.gkd.li/i/13974483',
         },
       ],
     },

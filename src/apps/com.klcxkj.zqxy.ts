@@ -16,8 +16,8 @@ export default defineAppConfig({
           ],
           matches: '[id="com.klcxkj.zqxy:id/anythink_myoffer_btn_close_id"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13195649',
-            'https://i.gkd.li/import/12781415',
+            'https://i.gkd.li/i/13195649',
+            'https://i.gkd.li/i/12781415',
           ],
         },
         {
@@ -30,13 +30,13 @@ export default defineAppConfig({
           matches:
             'FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView[width<90][height<90]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12781461', //腾讯-1，原'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-            'https://i.gkd.li/import/13488673',
-            'https://i.gkd.li/import/13546464', //腾讯-2，原'ImageView <(1,2) FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-            'https://i.gkd.li/import/13071301',
-            'https://i.gkd.li/import/13274836',
-            'https://i.gkd.li/import/13274836', //腾讯-3，原'ImageView -n FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-            'https://i.gkd.li/import/13707849', //腾讯-4
+            'https://i.gkd.li/i/12781461', //腾讯-1，原'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/i/13488673',
+            'https://i.gkd.li/i/13546464', //腾讯-2，原'ImageView <(1,2) FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/i/13071301',
+            'https://i.gkd.li/i/13274836',
+            'https://i.gkd.li/i/13274836', //腾讯-3，原'ImageView -n FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/i/13707849', //腾讯-4
           ],
         },
         {
@@ -52,7 +52,7 @@ export default defineAppConfig({
           name: '吉欣广告',
           activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
           matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13274838',
+          snapshotUrls: 'https://i.gkd.li/i/13274838',
         },
       ],
     },
@@ -67,7 +67,7 @@ export default defineAppConfig({
           ],
           matches:
             '[id="com.klcxkj.zqxy:id/bathing_adv_layout"] >n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: ['https://i.gkd.li/import/13488870'],
+          snapshotUrls: ['https://i.gkd.li/i/13488870'],
         },
       ],
     },

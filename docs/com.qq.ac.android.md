@@ -6,11 +6,11 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12707752)
-- [快照-1](https://i.gkd.li/import/13195636)
+- [快照-0](https://i.gkd.li/i/12707752)
+- [快照-1](https://i.gkd.li/i/13195636)
 
 ## 局部广告-漫画阅读页面-左侧悬浮广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12707756)
+- [快照-0](https://i.gkd.li/i/12707756)

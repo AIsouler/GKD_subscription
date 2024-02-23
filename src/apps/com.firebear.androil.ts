@@ -17,15 +17,15 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/12712742',
+          snapshotUrls: 'https://i.gkd.li/i/12712742',
         },
         {
           matches:
             '@View <2 * <2 * < [id="com.firebear.androil:id/adContainerLay"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13088169',
-            'https://i.gkd.li/import/12855707',
-            'https://i.gkd.li/import/13927561',
+            'https://i.gkd.li/i/13088169',
+            'https://i.gkd.li/i/12855707',
+            'https://i.gkd.li/i/13927561',
           ],
         },
       ],
@@ -42,21 +42,21 @@ export default defineAppConfig({
           name: '点击右上角x',
           matches: '[text="反馈"] +2 View > Image',
           snapshotUrls: [
-            'https://i.gkd.li/import/12754919',
-            'https://i.gkd.li/import/13324698',
+            'https://i.gkd.li/i/12754919',
+            'https://i.gkd.li/i/13324698',
           ],
         },
         {
           key: 1,
           name: '点击右上角[数字s|跳过]',
           matches: '[text="广告"] + View >4 [text="| 跳过"]',
-          snapshotUrls: ['https://i.gkd.li/import/12864214'],
+          snapshotUrls: ['https://i.gkd.li/i/12864214'],
         },
         {
           key: 2,
           name: '点击右上角x (2)',
           matches: '[id="com.byted.pangle.m:id/tt_reward_full_count_down"]',
-          snapshotUrls: ['https://i.gkd.li/import/13175439'],
+          snapshotUrls: ['https://i.gkd.li/i/13175439'],
         },
       ],
     },
@@ -68,7 +68,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules:
         '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',
-      snapshotUrls: 'https://i.gkd.li/import/12755032',
+      snapshotUrls: 'https://i.gkd.li/i/12755032',
     },
   ],
 });

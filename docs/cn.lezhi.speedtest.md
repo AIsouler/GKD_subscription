@@ -4,12 +4,12 @@
 
 ## 开屏广告
 
-- [快照-0](https://i.gkd.li/import/13544242)
-- [快照-1](https://i.gkd.li/import/13626049)
-- [快照-2](https://i.gkd.li/import/13885906)
+- [快照-0](https://i.gkd.li/i/13544242)
+- [快照-1](https://i.gkd.li/i/13626049)
+- [快照-2](https://i.gkd.li/i/13885906)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12727619)
+- [快照-0](https://i.gkd.li/i/12727619)

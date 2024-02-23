@@ -18,9 +18,9 @@ export default defineAppConfig({
           matches:
             '[id="com.soft.blued:id/fl_main"] [id="com.soft.blued:id/img_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12777097',
-            'https://i.gkd.li/import/13694950',
-            'https://i.gkd.li/import/13699455', // activityIds: 'com.soft.blued.ui.home.HomeActivity',
+            'https://i.gkd.li/i/12777097',
+            'https://i.gkd.li/i/13694950',
+            'https://i.gkd.li/i/13699455', // activityIds: 'com.soft.blued.ui.home.HomeActivity',
           ],
         },
         {
@@ -30,7 +30,7 @@ export default defineAppConfig({
           matches: '[id="com.soft.blued:id/ad_option"]',
           exampleUrls:
             'https://m.gkd.li/57941037/65ee5632-c54b-4ef6-95e9-e57582ff7017',
-          snapshotUrls: 'https://i.gkd.li/import/14149470',
+          snapshotUrls: 'https://i.gkd.li/i/14149470',
         },
       ],
     },
@@ -45,7 +45,7 @@ export default defineAppConfig({
           matches: '[id="com.soft.blued:id/iv_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/37ea59cf-9606-4cd6-a74a-84f353f07975',
-          snapshotUrls: 'https://i.gkd.li/import/14157519',
+          snapshotUrls: 'https://i.gkd.li/i/14157519',
         },
       ],
     },
@@ -58,7 +58,7 @@ export default defineAppConfig({
           activityIds: 'com.blued.android.core.ui.TransparentActivity',
           quickFind: true,
           matches: '[vid="blued_ad_layout"] + [vid="img_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/14310618',
+          snapshotUrls: 'https://i.gkd.li/i/14310618',
         },
       ],
     },

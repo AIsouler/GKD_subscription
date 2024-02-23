@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[id="tv.danmaku.bilibilihd:id/count_down"]',
-      snapshotUrls: 'https://i.gkd.li/import/13031261',
+      snapshotUrls: 'https://i.gkd.li/i/13031261',
     },
     {
       key: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text*="青少年模式"] + [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/import/13166639',
+      snapshotUrls: 'https://i.gkd.li/i/13166639',
     },
   ],
 });

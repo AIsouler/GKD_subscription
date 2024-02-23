@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '@Image < View +3 View > View > TextView[text$="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13400643',
+          snapshotUrls: 'https://i.gkd.li/i/13400643',
         },
         {
           key: 10,
@@ -23,7 +23,7 @@ export default defineAppConfig({
             'com.sodalife.sodax.libraries.ads.gromore.GroMoreSplashActivity',
           matches:
             'ViewGroup[childCount=2] > ViewGroup + ViewGroup[clickable=true][childCount=1]',
-          snapshotUrls: 'https://i.gkd.li/import/13400653',
+          snapshotUrls: 'https://i.gkd.li/i/13400653',
         },
       ],
     },

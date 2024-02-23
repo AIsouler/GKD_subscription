@@ -11,7 +11,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.youloft.icloser.view.dialog.VipRetainPacketDialog',
       rules: '[id="com.youloft.icloser:id/tv_later_buy"]',
-      snapshotUrls: 'https://i.gkd.li/import/13067183',
+      snapshotUrls: 'https://i.gkd.li/i/13067183',
     },
     {
       key: 2,
@@ -19,7 +19,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.youloft.icloser.activity.MainActivity',
       rules: '[id="com.youloft.icloser:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13164387',
+      snapshotUrls: 'https://i.gkd.li/i/13164387',
     },
   ],
 });

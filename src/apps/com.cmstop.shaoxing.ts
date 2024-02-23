@@ -12,7 +12,7 @@ export default defineAppConfig({
       matchTime: 10000,
       resetMatch: 'app',
       rules: '[id="com.cmstop.shaoxing:id/roundProgressBar"]',
-      snapshotUrls: 'https://i.gkd.li/import/13611775',
+      snapshotUrls: 'https://i.gkd.li/i/13611775',
     },
   ],
 });

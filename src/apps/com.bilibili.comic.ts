@@ -14,8 +14,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: '[id="com.bilibili.comic:id/tv_know"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13063676',
-        'https://i.gkd.li/import/13262801',
+        'https://i.gkd.li/i/13063676',
+        'https://i.gkd.li/i/13262801',
       ],
     },
   ],

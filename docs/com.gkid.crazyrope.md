@@ -6,11 +6,11 @@
 
 默认禁用 - 点击不需要
 
-- [快照-0](https://i.gkd.li/import/12916419)
+- [快照-0](https://i.gkd.li/i/12916419)
 
 ## 分段广告-浮窗广告
 
 默认禁用 - 二步确认
 
-- [快照-0](https://i.gkd.li/import/13262845)
-- [快照-1](https://i.gkd.li/import/13262844)
+- [快照-0](https://i.gkd.li/i/13262845)
+- [快照-1](https://i.gkd.li/i/13262844)

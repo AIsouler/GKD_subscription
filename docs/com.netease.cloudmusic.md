@@ -9,17 +9,17 @@
 - [示例-0](https://m.gkd.li/57941037/a603ceca-7e89-4b1f-9e17-508c583b32d8)
 - [示例-1](https://m.gkd.li/57941037/b14cda2e-27e5-4a91-8037-3ccbf1f9d0da)
 
-- [快照-0](https://i.gkd.li/import/14277140)
-- [快照-1](https://i.gkd.li/import/13859634)
-- [快照-2](https://i.gkd.li/import/12829964)
-- [快照-3](https://i.gkd.li/import/12829953)
-- [快照-4](https://i.gkd.li/import/13927753)
-- [快照-5](https://i.gkd.li/import/13526986)
-- [快照-6](https://i.gkd.li/import/13526711)
-- [快照-7](https://i.gkd.li/import/12829967)
-- [快照-8](https://i.gkd.li/import/14277137)
-- [快照-9](https://i.gkd.li/import/13859635)
-- [快照-10](https://i.gkd.li/import/13526712)
+- [快照-0](https://i.gkd.li/i/14277140)
+- [快照-1](https://i.gkd.li/i/13859634)
+- [快照-2](https://i.gkd.li/i/12829964)
+- [快照-3](https://i.gkd.li/i/12829953)
+- [快照-4](https://i.gkd.li/i/13927753)
+- [快照-5](https://i.gkd.li/i/13526986)
+- [快照-6](https://i.gkd.li/i/13526711)
+- [快照-7](https://i.gkd.li/i/12829967)
+- [快照-8](https://i.gkd.li/i/14277137)
+- [快照-9](https://i.gkd.li/i/13859635)
+- [快照-10](https://i.gkd.li/i/13526712)
 
 ## 局部广告-卡片广告
 
@@ -30,87 +30,87 @@
 - [示例-2](https://m.gkd.li/57941037/ed4bb569-b3e1-4644-a586-f01d95c150e9)
 - [示例-3](https://m.gkd.li/57941037/2933d8b0-7731-46bb-a644-836da1886958)
 
-- [快照-0](https://i.gkd.li/import/12745666)
-- [快照-1](https://i.gkd.li/import/14275571)
-- [快照-2](https://i.gkd.li/import/14275955)
-- [快照-3](https://i.gkd.li/import/14070500)
-- [快照-4](https://i.gkd.li/import/14276854)
-- [快照-5](https://i.gkd.li/import/14318169)
+- [快照-0](https://i.gkd.li/i/12745666)
+- [快照-1](https://i.gkd.li/i/14275571)
+- [快照-2](https://i.gkd.li/i/14275955)
+- [快照-3](https://i.gkd.li/i/14070500)
+- [快照-4](https://i.gkd.li/i/14276854)
+- [快照-5](https://i.gkd.li/i/14318169)
 
 ## 全屏广告-看广告免费听歌弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12843383)
+- [快照-0](https://i.gkd.li/i/12843383)
 
 ## 全屏广告-弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13188737)
-- [快照-1](https://i.gkd.li/import/13229016)
-- [快照-2](https://i.gkd.li/import/13684724)
-- [快照-3](https://i.gkd.li/import/13962214)
+- [快照-0](https://i.gkd.li/i/13188737)
+- [快照-1](https://i.gkd.li/i/13229016)
+- [快照-2](https://i.gkd.li/i/13684724)
+- [快照-3](https://i.gkd.li/i/13962214)
 
 ## 全屏广告-VIP弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13189055)
-- [快照-1](https://i.gkd.li/import/13260416)
-- [快照-2](https://i.gkd.li/import/13996787)
-- [快照-3](https://i.gkd.li/import/13228955)
-- [快照-4](https://i.gkd.li/import/13230603)
-- [快照-5](https://i.gkd.li/import/13230605)
-- [快照-6](https://i.gkd.li/import/14268181)
-- [快照-7](https://i.gkd.li/import/13391498)
-- [快照-8](https://i.gkd.li/import/14045917)
+- [快照-0](https://i.gkd.li/i/13189055)
+- [快照-1](https://i.gkd.li/i/13260416)
+- [快照-2](https://i.gkd.li/i/13996787)
+- [快照-3](https://i.gkd.li/i/13228955)
+- [快照-4](https://i.gkd.li/i/13230603)
+- [快照-5](https://i.gkd.li/i/13230605)
+- [快照-6](https://i.gkd.li/i/14268181)
+- [快照-7](https://i.gkd.li/i/13391498)
+- [快照-8](https://i.gkd.li/i/14045917)
 
 ## 更新提示
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13233790)
-- [快照-1](https://i.gkd.li/import/13197457)
-- [快照-2](https://i.gkd.li/import/13228878)
+- [快照-0](https://i.gkd.li/i/13233790)
+- [快照-1](https://i.gkd.li/i/13197457)
+- [快照-2](https://i.gkd.li/i/13228878)
 
 ## 局部广告-播放界面广告
 
 默认禁用 - 右上角VIP小悬浮、巨幅卡片式广告
 
-- [快照-0](https://i.gkd.li/import/13402634)
-- [快照-1](https://i.gkd.li/import/13402635)
-- [快照-2](https://i.gkd.li/import/13402636)
-- [快照-3](https://i.gkd.li/import/13527105)
-- [快照-4](https://i.gkd.li/import/14045424)
+- [快照-0](https://i.gkd.li/i/13402634)
+- [快照-1](https://i.gkd.li/i/13402635)
+- [快照-2](https://i.gkd.li/i/13402636)
+- [快照-3](https://i.gkd.li/i/13527105)
+- [快照-4](https://i.gkd.li/i/14045424)
 
 ## 局部广告-发现页顶部视频广告
 
 默认禁用 - 自动点击跳过。
 
-- [快照-0](https://i.gkd.li/import/13768367)
+- [快照-0](https://i.gkd.li/i/13768367)
 
 ## 全屏广告-免费听弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13804534)
+- [快照-0](https://i.gkd.li/i/13804534)
 
 ## 功能类-功能升级弹窗
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/13804541)
-- [快照-1](https://i.gkd.li/import/13804544)
+- [快照-0](https://i.gkd.li/i/13804541)
+- [快照-1](https://i.gkd.li/i/13804544)
 
 ## 全屏广告-播放页赞赏好音乐弹窗
 
 默认禁用 - 点击X
 
-- [快照-0](https://i.gkd.li/import/13848913)
+- [快照-0](https://i.gkd.li/i/13848913)
 
 ## 全屏广告-音乐回忆弹窗
 
 默认禁用 - 点击X
 
-- [快照-0](https://i.gkd.li/import/14036940)
+- [快照-0](https://i.gkd.li/i/14036940)

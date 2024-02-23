@@ -17,8 +17,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/47a8c072-ee52-4e1e-a4bc-526643756d47',
           snapshotUrls: [
-            'https://i.gkd.li/import/14353263',
-            'https://i.gkd.li/import/14345580',
+            'https://i.gkd.li/i/14353263',
+            'https://i.gkd.li/i/14345580',
           ],
         },
         {
@@ -29,8 +29,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/a52ba4bb-0838-4c08-b771-78205786b016',
           snapshotUrls: [
-            'https://i.gkd.li/import/14203087',
-            'https://i.gkd.li/import/14354395',
+            'https://i.gkd.li/i/14203087',
+            'https://i.gkd.li/i/14354395',
           ],
         },
         {
@@ -42,8 +42,8 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/46e28728-570e-4fef-9c38-d561813d1c63',
           snapshotUrls: [
-            'https://i.gkd.li/import/14203600',
-            'https://i.gkd.li/import/14203327',
+            'https://i.gkd.li/i/14203600',
+            'https://i.gkd.li/i/14203327',
           ],
         },
       ],

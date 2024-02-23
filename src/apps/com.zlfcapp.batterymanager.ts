@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           quickFind: true,
           matches: '@View[clickable=true] <<n [vid="splash_container"]',
-          snapshotUrls: 'https://i.gkd.li/import/13960341',
+          snapshotUrls: 'https://i.gkd.li/i/13960341',
         },
       ],
     },

@@ -11,7 +11,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="新版本"] +(n) LinearLayout > TextView[text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/import/12642297',
+      snapshotUrls: 'https://i.gkd.li/i/12642297',
     },
   ],
 });

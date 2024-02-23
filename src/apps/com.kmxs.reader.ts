@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.kmxs.reader:id/tv_update_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/import/12641338',
+      snapshotUrls: 'https://i.gkd.li/i/12641338',
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineAppConfig({
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules:
         '[id="com.kmxs.reader:id/ll_ad_native_banner"] > [id="com.kmxs.reader:id/iv_ad_direct_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12640296'],
+      snapshotUrls: ['https://i.gkd.li/i/12640296'],
     },
     {
       key: 3,
@@ -34,9 +34,9 @@ export default defineAppConfig({
             '[id="com.kmxs.reader:id/ad_direct_close"]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/import/12640303',
-            'https://i.gkd.li/import/13362269',
-            'https://i.gkd.li/import/13362272',
+            'https://i.gkd.li/i/12640303',
+            'https://i.gkd.li/i/13362269',
+            'https://i.gkd.li/i/13362272',
           ],
         },
       ],
@@ -48,7 +48,7 @@ export default defineAppConfig({
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules:
         '@TextView[id=null] < View +(2) TextView[text^="已连签"&&text*="天"]',
-      snapshotUrls: ['https://i.gkd.li/import/12640320'],
+      snapshotUrls: ['https://i.gkd.li/i/12640320'],
     },
     {
       enable: false,
@@ -60,7 +60,7 @@ export default defineAppConfig({
           '[id="com.kmxs.reader:id/red_packet_img"] + [id="com.kmxs.reader:id/close_red_packet"]',
         action: 'clickCenter',
       },
-      snapshotUrls: ['https://i.gkd.li/import/12640287'],
+      snapshotUrls: ['https://i.gkd.li/i/12640287'],
     },
     {
       key: 8,
@@ -68,7 +68,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/13489942'],
+      snapshotUrls: ['https://i.gkd.li/i/13489942'],
     },
     {
       enable: false,
@@ -83,9 +83,9 @@ export default defineAppConfig({
           name: '点击跳过',
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
-            'https://i.gkd.li/import/13459157',
-            'https://i.gkd.li/import/13459172',
-            'https://i.gkd.li/import/13459174',
+            'https://i.gkd.li/i/13459157',
+            'https://i.gkd.li/i/13459172',
+            'https://i.gkd.li/i/13459174',
           ],
         },
         {
@@ -94,7 +94,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13459182',
+          snapshotUrls: 'https://i.gkd.li/i/13459182',
         },
       ],
     },
@@ -110,7 +110,7 @@ export default defineAppConfig({
           name: '点击"x"',
           matches:
             'RelativeLayout > RelativeLayout + ImageView + ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/13472957',
+          snapshotUrls: 'https://i.gkd.li/i/13472957',
         },
       ],
     },
@@ -126,7 +126,7 @@ export default defineAppConfig({
           name: '点击"x"',
           matches:
             'FrameLayout[childCount=10] > FrameLayout[index=3] > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/import/13472955',
+          snapshotUrls: 'https://i.gkd.li/i/13472955',
         },
       ],
     },
@@ -138,7 +138,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.kmxs.reader:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13941276',
+          snapshotUrls: 'https://i.gkd.li/i/13941276',
         },
       ],
     },

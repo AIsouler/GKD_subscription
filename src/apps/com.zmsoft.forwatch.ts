@@ -15,7 +15,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             '@[id="com.zmsoft.forwatch:id/ad_close"] - * >n [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/import/13545995',
+          snapshotUrls: 'https://i.gkd.li/i/13545995',
         },
       ],
     },

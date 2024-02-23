@@ -18,14 +18,14 @@ export default defineAppConfig({
           quickFind: true,
           name: '全局规则-1',
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/import/13987038',
+          snapshotUrls: 'https://i.gkd.li/i/13987038',
         },
         {
           key: 1,
           name: '字节广告SDK',
           matches:
             'TextView - @View[clickable=true] <n FrameLayout <2 FrameLayout[childCount=2]', // 字节开屏通用规则
-          snapshotUrls: 'https://i.gkd.li/import/13978978',
+          snapshotUrls: 'https://i.gkd.li/i/13978978',
         },
         {
           key: 2,
@@ -48,7 +48,7 @@ export default defineAppConfig({
             '[id="make.more.r2d2.cellular_z:id/tv_alert_title"][text="发现新版本"]',
             '[id="make.more.r2d2.cellular_z:id/btn_alert_left"][text="取消"]',
           ], //防止误触其它取消按钮
-          snapshotUrls: 'https://i.gkd.li/import/13608563',
+          snapshotUrls: 'https://i.gkd.li/i/13608563',
         },
       ],
     },

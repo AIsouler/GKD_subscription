@@ -12,8 +12,8 @@ export default defineAppConfig({
       activityIds: 'com.vivo.space.ui.VivoSpaceTabActivity',
       rules: 'Image[text=""] + [text=""][clickable=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13218155',
-        'https://i.gkd.li/import/13292907',
+        'https://i.gkd.li/i/13218155',
+        'https://i.gkd.li/i/13292907',
       ],
     },
     {
@@ -27,7 +27,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'Button[id="com.vivo.space:id/vbutton_title"][text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/import/13771581',
+          snapshotUrls: 'https://i.gkd.li/i/13771581',
         },
       ],
     },

@@ -12,7 +12,7 @@ export default defineAppConfig({
         'com.vmall.client.splash.fragment.SplashActivity',
       ],
       rules: '[id="com.hihonor.vmall:id/gift_close_iv"]',
-      snapshotUrls: 'https://i.gkd.li/import/13060881',
+      snapshotUrls: 'https://i.gkd.li/i/13060881',
     },
     {
       key: 2,
@@ -25,7 +25,7 @@ export default defineAppConfig({
         {
           matches:
             '[text="开启消息通知"] - [id="com.hihonor.vmall:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13959029',
+          snapshotUrls: 'https://i.gkd.li/i/13959029',
         },
       ],
     },

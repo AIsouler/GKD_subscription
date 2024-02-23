@@ -6,11 +6,11 @@
 
 默认禁用 - 点击X
 
-- [快照-0](https://i.gkd.li/import/13931051)
+- [快照-0](https://i.gkd.li/i/13931051)
 
 ## 全屏广告-首页弹窗广告
 
 默认禁用 - 点击X
 
-- [快照-0](https://i.gkd.li/import/13930990)
-- [快照-1](https://i.gkd.li/import/14001254)
+- [快照-0](https://i.gkd.li/i/13930990)
+- [快照-1](https://i.gkd.li/i/14001254)

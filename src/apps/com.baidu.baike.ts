@@ -13,7 +13,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text^="打开推送通知"] +2 [text="不允许"]',
-      snapshotUrls: 'https://i.gkd.li/import/12755717',
+      snapshotUrls: 'https://i.gkd.li/i/12755717',
     },
   ],
 });

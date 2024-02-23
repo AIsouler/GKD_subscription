@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.fenbi.android.servant:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12999725',
+          snapshotUrls: 'https://i.gkd.li/i/12999725',
         },
       ],
     },

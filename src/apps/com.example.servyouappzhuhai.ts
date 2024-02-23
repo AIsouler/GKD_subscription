@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.example.servyouappzhuhai:id/btn_dialog_negtive"]',
-          snapshotUrls: 'https://i.gkd.li/import/13440721',
+          snapshotUrls: 'https://i.gkd.li/i/13440721',
         },
       ],
     },

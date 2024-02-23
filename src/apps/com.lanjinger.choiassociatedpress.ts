@@ -14,7 +14,7 @@ export default defineAppConfig({
       quickFind: true,
       activityIds: 'com.lanjinger.choiassociatedpress.main.OperateActivity',
       rules: '@ImageView[id$="iv_back"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/13749206',
+      snapshotUrls: 'https://i.gkd.li/i/13749206',
     },
   ],
 });

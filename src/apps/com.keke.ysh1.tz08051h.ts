@@ -18,7 +18,7 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             'TextView[text="可可影视"] < LinearLayout >n @TextView[text*="知道了"]',
-          snapshotUrls: 'https://i.gkd.li/import/13548412',
+          snapshotUrls: 'https://i.gkd.li/i/13548412',
         },
       ],
     },

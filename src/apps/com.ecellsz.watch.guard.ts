@@ -12,7 +12,7 @@ export default defineAppConfig({
       actionMaximum: 1,
       quickFind: true,
       rules: 'View[clickable=true] <<n [vid="splash_container"]',
-      snapshotUrls: 'https://i.gkd.li/import/14039510',
+      snapshotUrls: 'https://i.gkd.li/i/14039510',
     },
   ],
 });

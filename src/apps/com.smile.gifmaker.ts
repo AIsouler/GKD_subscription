@@ -17,7 +17,7 @@ export default defineAppConfig({
         {
           matches:
             '[id="com.smile.gifmaker:id/set_teenage_mode"] + [id="com.smile.gifmaker:id/positive"]',
-          snapshotUrls: 'https://i.gkd.li/import/12708609',
+          snapshotUrls: 'https://i.gkd.li/i/12708609',
         },
       ],
     },
@@ -33,15 +33,15 @@ export default defineAppConfig({
           matches:
             '@ImageView[id=null][clickable=true] + ViewGroup > [text!=null] + [text!=null]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12708649',
-            'https://i.gkd.li/import/12708660',
+            'https://i.gkd.li/i/12708649',
+            'https://i.gkd.li/i/12708660',
           ],
         },
         {
           name: '限时高额奖励弹窗',
           matches:
             '@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup >2 [text="立即领取"]',
-          snapshotUrls: ['https://i.gkd.li/import/12708681'],
+          snapshotUrls: ['https://i.gkd.li/i/12708681'],
         },
       ],
     },
@@ -56,8 +56,8 @@ export default defineAppConfig({
           matches:
             '[id="com.smile.gifmaker:id/pendant_mask_bg"] + [id="com.smile.gifmaker:id/pendant_close"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12708671',
-            'https://i.gkd.li/import/12708676', // 执行规则后，控件隐藏，使用 visibleToUser=true 进行限定，防止反复触发规则
+            'https://i.gkd.li/i/12708671',
+            'https://i.gkd.li/i/12708676', // 执行规则后，控件隐藏，使用 visibleToUser=true 进行限定，防止反复触发规则
           ],
         },
       ],
@@ -72,7 +72,7 @@ export default defineAppConfig({
           key: 0,
           name: '消息页面-你可能感兴趣的人',
           matches: '[id="com.smile.gifmaker:id/close_pymk"]',
-          snapshotUrls: 'https://i.gkd.li/import/12708707',
+          snapshotUrls: 'https://i.gkd.li/i/12708707',
         },
         {
           key: 1,
@@ -80,14 +80,14 @@ export default defineAppConfig({
           quickFind: true,
           matches:
             'ViewGroup[childCount=3] > [text="隐藏"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/14001536',
+          snapshotUrls: 'https://i.gkd.li/i/14001536',
         },
         {
           key: 2,
           name: '朋友推荐弹窗',
           quickFind: true,
           matches: '[text="朋友推荐"] + [vid="close_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/14232217',
+          snapshotUrls: 'https://i.gkd.li/i/14232217',
         },
       ],
     },
@@ -102,7 +102,7 @@ export default defineAppConfig({
           matches: '@[vid="close"] +2 * > [text="喜欢就给个好评吧"]',
           exampleUrls:
             'https://m.gkd.li/57941037/da412e0f-47db-4cc0-8821-184c6ba42882',
-          snapshotUrls: 'https://i.gkd.li/import/14343547',
+          snapshotUrls: 'https://i.gkd.li/i/14343547',
         },
       ],
     },

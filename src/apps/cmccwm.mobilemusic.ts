@@ -17,7 +17,7 @@ export default defineAppConfig({
           action: 'back',
           matches:
             '[id="cmccwm.mobilemusic.libraries_feature:id/tv_title"][text="发现新版本"]',
-          snapshotUrls: 'https://i.gkd.li/import/13448898',
+          snapshotUrls: 'https://i.gkd.li/i/13448898',
         },
       ],
     },

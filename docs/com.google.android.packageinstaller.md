@@ -6,8 +6,8 @@
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/14046939)
-- [快照-1](https://i.gkd.li/import/14047571)
-- [快照-2](https://i.gkd.li/import/14047854)
-- [快照-3](https://i.gkd.li/import/14047514)
-- [快照-4](https://i.gkd.li/import/14047969)
+- [快照-0](https://i.gkd.li/i/14046939)
+- [快照-1](https://i.gkd.li/i/14047571)
+- [快照-2](https://i.gkd.li/i/14047854)
+- [快照-3](https://i.gkd.li/i/14047514)
+- [快照-4](https://i.gkd.li/i/14047969)

@@ -12,7 +12,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       rules: '[text="允许通知"] + [text="不，谢谢"]',
-      snapshotUrls: 'https://i.gkd.li/import/13646187',
+      snapshotUrls: 'https://i.gkd.li/i/13646187',
     },
     {
       key: 4,
@@ -25,7 +25,7 @@ export default defineAppConfig({
           matches: '[text="关闭所有标签页?"] + * > [text="确定"]',
           exampleUrls:
             'https://m.gkd.li/57941037/487f4236-676c-4fb3-bcac-17b4644edd46',
-          snapshotUrls: 'https://i.gkd.li/import/14325653',
+          snapshotUrls: 'https://i.gkd.li/i/14325653',
         },
       ],
     },

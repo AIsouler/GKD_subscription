@@ -14,22 +14,22 @@ export default defineAppConfig({
         {
           key: 0,
           matches: 'LinearLayout[childCount=2] > [text="安装"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/import/14046939',
+          snapshotUrls: 'https://i.gkd.li/i/14046939',
         },
         {
           key: 2,
           matches: 'LinearLayout[childCount=2] > [text="更新"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14047571',
-            'https://i.gkd.li/import/14047854', // 重叠情况的快照
+            'https://i.gkd.li/i/14047571',
+            'https://i.gkd.li/i/14047854', // 重叠情况的快照
           ],
         },
         {
           key: 3,
           matches: 'LinearLayout[childCount=2] > [text="完成"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/import/14047514',
-            'https://i.gkd.li/import/14047969',
+            'https://i.gkd.li/i/14047514',
+            'https://i.gkd.li/i/14047969',
           ],
         },
       ],

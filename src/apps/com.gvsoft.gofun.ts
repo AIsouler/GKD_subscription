@@ -19,7 +19,7 @@ export default defineAppConfig({
             '[id="com.gvsoft.gofun:id/cardView"] + [id="com.gvsoft.gofun:id/iv_close"]',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/import/13497777',
+      snapshotUrls: 'https://i.gkd.li/i/13497777',
     },
   ],
 });

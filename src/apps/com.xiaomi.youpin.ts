@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           matches:
             '@Image <2 View[childCount=2] < [id="app"] < [text="有品"] < * < [id="android:id/content"]',
-          snapshotUrls: ['https://i.gkd.li/import/12836727'],
+          snapshotUrls: ['https://i.gkd.li/i/12836727'],
         },
       ],
     },
@@ -27,7 +27,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.xiaomi.youpin:id/ypd_alert_close_image"]',
-          snapshotUrls: ['https://i.gkd.li/import/12836775'],
+          snapshotUrls: ['https://i.gkd.li/i/12836775'],
         },
       ],
     },

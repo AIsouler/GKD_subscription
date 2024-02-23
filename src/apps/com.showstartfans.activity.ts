@@ -14,7 +14,7 @@ export default defineAppConfig({
             'com.showstartfans.activity.activitys.maintab.newmain.MainNewActivity',
           quickFind: true,
           matches: '[id="com.showstartfans.activity:id/img_close_coupon"]',
-          snapshotUrls: 'https://i.gkd.li/import/13670432',
+          snapshotUrls: 'https://i.gkd.li/i/13670432',
         },
       ],
     },

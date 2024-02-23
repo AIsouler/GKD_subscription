@@ -17,8 +17,8 @@ export default defineAppConfig({
       ],
       rules: '[id="com.smk:id/iv_close_ad"]',
       snapshotUrls: [
-        'https://i.gkd.li/import/13402584',
-        'https://i.gkd.li/import/13425013', // activityIds: 'com.smk.activity.LaunchActivity',
+        'https://i.gkd.li/i/13402584',
+        'https://i.gkd.li/i/13425013', // activityIds: 'com.smk.activity.LaunchActivity',
       ],
     },
   ],

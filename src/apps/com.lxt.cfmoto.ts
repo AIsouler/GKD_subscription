@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.cfmoto.oilmoto.ui.MainCfActivity',
           matches:
             'RelativeLayout[childCount=2] > [id="com.lxt.cfmoto:id/image"] + [id="com.lxt.cfmoto:id/closeClick"]',
-          snapshotUrls: 'https://i.gkd.li/import/13401967',
+          snapshotUrls: 'https://i.gkd.li/i/13401967',
         },
       ],
     },
