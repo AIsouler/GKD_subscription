@@ -30,7 +30,7 @@ https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=gkd-kit/subscription&_v=22)
+![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=22)
 
 ## Star History
 
