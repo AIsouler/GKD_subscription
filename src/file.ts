@@ -130,7 +130,7 @@ export async function* walk(dirPath: string) {
 
 export const validSnapshotUrl = (s: string) => {
   const u = new URL(s);
-  return u.pathname.startsWith('/import/') || u.pathname.startsWith('/i/');
+  return u.pathname.startsWith('/i/');
 };
 
 export const checkConfig = (newConfig: RawSubscription) => {
@@ -284,7 +284,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
             groupKey: g.key,
           });
           throw new Error(
-            `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/i/12506571 or https://i.gkd.li/i/14362119`,
+            `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/i/12506571`,
           );
         }
       });
@@ -299,7 +299,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
               ruleKey: r.key,
             });
             throw new Error(
-              `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/i/12506571 or https://i.gkd.li/i/14362119`,
+              `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/i/12506571`,
             );
           }
         });
