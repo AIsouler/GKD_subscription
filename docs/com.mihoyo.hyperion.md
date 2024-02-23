@@ -1,6 +1,6 @@
 # 米游社
 
-存在 4 规则组 - [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts)
+存在 5 规则组 - [com.mihoyo.hyperion](/src/apps/com.mihoyo.hyperion.ts)
 
 ## 青少年模式
 
@@ -34,3 +34,15 @@
 - [快照-1](https://i.gkd.li/i/14371469)
 - [快照-2](https://i.gkd.li/i/14371439)
 - [快照-3](https://i.gkd.li/i/14371469)
+
+## 功能类-星穹铁道自动签到
+
+默认禁用 - 点击签到-关闭弹窗-返回
+
+- [示例-0](https://m.gkd.li/57941037/a9f426c4-3184-4525-b283-ad77d6f83d02)
+- [示例-1](https://m.gkd.li/57941037/3babb231-30a7-4891-9c4a-c11946838741)
+- [示例-2](https://m.gkd.li/57941037/d8031907-105b-4d37-8542-b71e854b3b8a)
+
+- [快照-0](https://i.gkd.li/i/14376296)
+- [快照-1](https://i.gkd.li/i/14371787)
+- [快照-2](https://i.gkd.li/i/14371790)
