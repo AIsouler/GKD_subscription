@@ -98,7 +98,7 @@
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                                                                                       | 3      |
 | QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 6      |
 | QQ邮箱                 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md)                                                                                                   | 3      |
-| QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 2      |
+| QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 3      |
 | UC浏览器               | [com.UCMobile](/docs/com.UCMobile.md)                                                                                                                             | 4      |
 | UPUPOO动态壁纸         | [com.upupoo.apu.mobile](/docs/com.upupoo.apu.mobile.md)                                                                                                           | 2      |
 | U净                    | [com.midea.vm.washer](/docs/com.midea.vm.washer.md)                                                                                                               | 1      |
@@ -350,7 +350,7 @@
 | 米家                   | [com.xiaomi.smarthome](/docs/com.xiaomi.smarthome.md)                                                                                                             | 2      |
 | 蜜雪冰城               | [com.mxbc.mxsa](/docs/com.mxbc.mxsa.md)                                                                                                                           | 1      |
 | 蜜雪冰城鸿蒙版         | [com.mxbc.ohsa](/docs/com.mxbc.ohsa.md)                                                                                                                           | 1      |
-| 米游社                 | [com.mihoyo.hyperion](/docs/com.mihoyo.hyperion.md)                                                                                                               | 4      |
+| 米游社                 | [com.mihoyo.hyperion](/docs/com.mihoyo.hyperion.md)                                                                                                               | 5      |
 | 蜜源                   | [com.jf.my](/docs/com.jf.my.md)                                                                                                                                   | 2      |
 | 摩点                   | [com.modian.app](/docs/com.modian.app.md)                                                                                                                         | 1      |
 | 摩托邦                 | [com.motoband](/docs/com.motoband.md)                                                                                                                             | 1      |

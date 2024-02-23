@@ -19,13 +19,9 @@
 默认禁用 - 点击关闭
 
 - [示例-0](https://m.gkd.li/57941037/c19bb8e3-abae-46ee-bfe9-d7846cd868bc)
-- [示例-1](https://m.gkd.li/57941037/9f0e824f-b48e-42f7-9d1a-82642e409d12)
 
-- [快照-0](https://i.gkd.li/i/14160820)
-- [快照-1](https://i.gkd.li/i/13712716)
-- [快照-2](https://i.gkd.li/i/13761259)
-- [快照-3](https://i.gkd.li/i/14368768)
-- [快照-4](https://i.gkd.li/i/14368946)
+- [快照-0](https://i.gkd.li/i/14382413)
+- [快照-1](https://i.gkd.li/i/14368946)
 
 ## 功能类-自动签到
 
