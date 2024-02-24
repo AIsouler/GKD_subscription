@@ -190,6 +190,7 @@ export default defineAppConfig({
       name: '功能类-付款后自动点击完成',
       rules: [
         {
+          key: 0,
           quickFind: true,
           activityIds:
             'com.sankuai.waimai.platform.machpro.container.WMMPActivity',
@@ -198,6 +199,13 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/257a3a0d-966b-4c16-89d9-abf9acaef9a9',
           snapshotUrls: 'https://i.gkd.li/i/14163717',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.meituan.android.hybridcashier.HybridCashierActivity',
+          matches: '[text="支付成功"] >n [text="完成"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14392284',
         },
       ],
     },
