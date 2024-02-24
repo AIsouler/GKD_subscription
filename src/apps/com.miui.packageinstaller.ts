@@ -57,7 +57,7 @@ export default defineAppConfig({
           name: '点击"继续"',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
           quickFind: true,
-          matches: '@[text="取消"] - * >2 [text="继续"]',
+          matches: '[text="取消"] - @*[clickable=true] >2 [text="继续"]',
           snapshotUrls: 'https://i.gkd.li/i/14392314',
         },
 
