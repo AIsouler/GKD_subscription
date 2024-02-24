@@ -63,6 +63,7 @@
 | 10000社区              | [dxwt.questionnaire.ui](/docs/dxwt.questionnaire.ui.md)                                                                                                           | 1      |
 | 123云盘                | [com.mfcloudcalculate.networkdisk](/docs/com.mfcloudcalculate.networkdisk.md)                                                                                     | 2      |
 | 1号会员店              | [com.thestore.main](/docs/com.thestore.main.md)                                                                                                                   | 1      |
+| 2345天气王             | [com.tianqi2345](/docs/com.tianqi2345.md)                                                                                                                         | 2      |
 | 360家庭防火墙          | [com.qihoo.srouter.n300](/docs/com.qihoo.srouter.n300.md)                                                                                                         | 1      |
 | 360摄像机              | [com.qihoo.camera](/docs/com.qihoo.camera.md)                                                                                                                     | 1      |
 | 365时政                | [cn.net.shizheng.study](/docs/cn.net.shizheng.study.md)                                                                                                           | 1      |
@@ -485,7 +486,7 @@
 | 图凌                   | [com.chan.cwallpaper](/docs/com.chan.cwallpaper.md)                                                                                                               | 2      |
 | 图图影视               | [com.jsguohua.youquanmall.tt](/docs/com.jsguohua.youquanmall.tt.md)                                                                                               | 1      |
 | vivo 官网              | [com.vivo.space](/docs/com.vivo.space.md)                                                                                                                         | 2      |
-| vivo浏览器             | [com.vivo.browser](/docs/com.vivo.browser.md)                                                                                                                     | 1      |
+| vivo浏览器             | [com.vivo.browser](/docs/com.vivo.browser.md)                                                                                                                     | 2      |
 | vivo应用商店           | [com.bbk.appstore](/docs/com.bbk.appstore.md)                                                                                                                     | 1      |
 | 挖财记账               | [com.wacai365](/docs/com.wacai365.md)                                                                                                                             | 3      |
 | 歪麦霸王餐             | [com.waimaiii.waimaiii](/docs/com.waimaiii.waimaiii.md)                                                                                                           | 2      |
@@ -511,7 +512,7 @@
 | 维护大师               | [com.example.maintenancemaster](/docs/com.example.maintenancemaster.md)                                                                                           | 1      |
 | 微视                   | [com.tencent.weishi](/docs/com.tencent.weishi.md)                                                                                                                 | 1      |
 | 微拾                   | [com.pleasure.trace_wechat](/docs/com.pleasure.trace_wechat.md)                                                                                                   | 2      |
-| 微信                   | [com.tencent.mm](/docs/com.tencent.mm.md)                                                                                                                         | 21     |
+| 微信                   | [com.tencent.mm](/docs/com.tencent.mm.md)                                                                                                                         | 23     |
 | 微信读书               | [com.tencent.weread](/docs/com.tencent.weread.md)                                                                                                                 | 2      |
 | 微音乐                 | [com.zhouyu.music](/docs/com.zhouyu.music.md)                                                                                                                     | 3      |
 | 微音乐                 | [com.wzsykj.wei](/docs/com.wzsykj.wei.md)                                                                                                                         | 1      |
@@ -540,7 +541,7 @@
 | 小飞机网盘             | [com.xiaofeiji.app.disk](/docs/com.xiaofeiji.app.disk.md)                                                                                                         | 1      |
 | 小黑盒                 | [com.max.xiaoheihe](/docs/com.max.xiaoheihe.md)                                                                                                                   | 1      |
 | 小红帽                 | [com.didi.live.spring](/docs/com.didi.live.spring.md)                                                                                                             | 1      |
-| 小红书                 | [com.xingin.xhs](/docs/com.xingin.xhs.md)                                                                                                                         | 3      |
+| 小红书                 | [com.xingin.xhs](/docs/com.xingin.xhs.md)                                                                                                                         | 4      |
 | 小卖部逆袭记           | [com.dz.xmbnxj](/docs/com.dz.xmbnxj.md)                                                                                                                           | 1      |
 | 小米换机               | [com.miui.huanji](/docs/com.miui.huanji.md)                                                                                                                       | 1      |
 | 小米浏览器             | [com.android.browser](/docs/com.android.browser.md)                                                                                                               | 3      |
@@ -578,6 +579,7 @@
 | 喜马拉雅极速版         | [com.ximalaya.ting.lite](/docs/com.ximalaya.ting.lite.md)                                                                                                         | 5      |
 | 心动日常               | [com.youloft.icloser](/docs/com.youloft.icloser.md)                                                                                                               | 2      |
 | 醒图                   | [com.xt.retouch](/docs/com.xt.retouch.md)                                                                                                                         | 1      |
+| 星芽免费短剧           | [com.jz.xydj](/docs/com.jz.xydj.md)                                                                                                                               | 1      |
 | 星野                   | [com.xingye.app](/docs/com.xingye.app.md)                                                                                                                         | 2      |
 | 星影视频               | [com.xsj.app](/docs/com.xsj.app.md)                                                                                                                               | 2      |
 | 星影视频               | [cn.nlyuming.duanju.ting](/docs/cn.nlyuming.duanju.ting.md)                                                                                                       | 1      |
