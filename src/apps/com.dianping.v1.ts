@@ -72,6 +72,16 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14269115',
           ],
         },
+        {
+          preKeys: 0,
+          key: 2,
+          quickFind: true,
+          activityIds: 'com.dianping.v1.NovaMainActivity',
+          matches: '[text$="重复出现"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/010c0314-e89b-468f-8143-691925a308a6',
+          snapshotUrls: 'https://i.gkd.li/i/14393256',
+        },
       ],
     },
   ],
