@@ -45,19 +45,20 @@ export default defineAppConfig({
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
           ],
-          matches:
-            '[text="取消安装"] < LinearLayout - @FrameLayout > LinearLayout > [text="继续安装"]',
+          matches: ['[text="取消安装"]', '[text="继续安装"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12818034',
             'https://i.gkd.li/i/12818054',
+            'https://i.gkd.li/i/12889120',
           ],
         },
         {
           key: 1,
-          name: '点击"继续安装"',
+          name: '点击"继续"',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
-          matches: '@[text="继续安装"] + [text="取消安装"]',
-          snapshotUrls: 'https://i.gkd.li/i/12889120',
+          quickFind: true,
+          matches: '[text="取消"] - @*[clickable=true] >2 [text="继续"]',
+          snapshotUrls: 'https://i.gkd.li/i/14392314',
         },
 
         // 需勾选"已了解此应用未经安全检测"才能继续安装
@@ -134,11 +135,11 @@ export default defineAppConfig({
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
           ],
-          matches:
-            '[text="取消更新"] < LinearLayout - @FrameLayout > LinearLayout > [text="继续更新"]',
+          matches: ['[text="取消更新"]', '[text="继续更新"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12817988',
             'https://i.gkd.li/i/12910080',
+            'https://i.gkd.li/i/14392274',
           ],
         },
         {
