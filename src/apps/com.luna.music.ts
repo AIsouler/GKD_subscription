@@ -77,14 +77,16 @@ export default defineAppConfig({
     {
       key: 8,
       quickFind: true,
-      name: '全屏广告-看广告获取听歌时长',
+      name: '功能类-看广告获取听歌时长',
       desc: '点击领取成功-点击坚持退出',
       rules: [
         {
           key: 0,
-          matches:
-            '[id="com.luna.music:id/exciting_video_fragment_container"] >4 [text="领取成功，关闭，按钮"]',
-          snapshotUrls: 'https://i.gkd.li/i/13945430',
+          matches: '@[text*="领取成功"][clickable=true] - [text="反馈"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13945430',
+            'https://i.gkd.li/i/14391770',
+          ],
         },
         {
           preKeys: 0,
