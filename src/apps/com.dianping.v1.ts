@@ -64,6 +64,7 @@ export default defineAppConfig({
         {
           preKeys: 0,
           key: 1,
+          action: 'clickCenter',
           activityIds: 'com.dianping.v1.NovaMainActivity',
           matches: '@[clickable=true] > [text="重复出现"]',
           snapshotUrls: [
