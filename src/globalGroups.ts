@@ -15,7 +15,8 @@ const diabledAppIds = [
   'com.android.server.telecom', // 来电拒接短信服务
   // 在一些常见的应用中禁用
   'com.tencent.mm', // 微信
-  'li.songe.gkd',
+  'li.songe.gkd', // GKD
+  'com.eg.android.AlipayGphone', //支付宝
 
   'com.google.ar.core', // 谷歌AR服务
   'com.google.android.syncadapters.calendar', // 谷歌日历同步
