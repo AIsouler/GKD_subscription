@@ -556,5 +556,15 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 25,
+      name: '订阅号消息-推荐文章',
+      desc: '自动点击“x”',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
+      rules:
+        'View[childCount=2] > View[desc$="推​荐​"][childCount=3] > ImageView[index=2][clickable=true][visibleToUser=true]',
+      snapshotUrls: 'https://i.gkd.li/i/14392392',
+    },
   ],
 });
