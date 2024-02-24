@@ -50,7 +50,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '分段广告-信息流广告',
       desc: '长按"赞助"/"广告"标识的卡片-点"不感兴趣"',
@@ -63,17 +62,22 @@ export default defineAppConfig({
           name: '长按"赞助"/"广告"卡片',
           matches:
             '@FrameLayout[clickable=true] > LinearLayout TextView[text="赞助"||text="广告"][visibleToUser=true]',
+          excludeMatches: 'RecyclerView > LinearLayout > [text^="不喜欢"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13455503',
             'https://i.gkd.li/i/13470690',
+            'https://i.gkd.li/i/14392171', // 使用 excludeMatches 防止反复触发规则
           ],
         },
         {
           preKeys: 0,
           name: '点"不感兴趣"',
           matches:
-            'RecyclerView > @LinearLayout > TextView[text="不喜欢该内容"]',
-          snapshotUrls: 'https://i.gkd.li/i/13455500',
+            'RecyclerView > @LinearLayout[index=0] > TextView[text^="不喜欢"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13455500',
+            'https://i.gkd.li/i/14392187',
+          ],
         },
       ],
     },
