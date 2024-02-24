@@ -134,11 +134,11 @@ export default defineAppConfig({
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
           ],
-          matches:
-            '[text="取消更新"] < LinearLayout - @FrameLayout > LinearLayout > [text="继续更新"]',
+          matches: ['[text="取消更新"]', '[text="继续更新"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12817988',
             'https://i.gkd.li/i/12910080',
+            'https://i.gkd.li/i/14392274',
           ],
         },
         {
