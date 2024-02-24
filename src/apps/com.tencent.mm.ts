@@ -544,5 +544,27 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 24,
+      name: '全屏广告-小程序-青桔单车-弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+          matches: 'WebView > View > View > View[childCount=2] > View + Image',
+          snapshotUrls: 'https://i.gkd.li/i/14392363',
+        },
+      ],
+    },
+    {
+      key: 25,
+      name: '局部广告-订阅号消息-推荐文章',
+      desc: '自动点击“x”',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
+      rules:
+        'View[childCount=2] > View[desc$="推​荐​"][childCount=3] > ImageView[index=2][clickable=true][visibleToUser=true]',
+      snapshotUrls: 'https://i.gkd.li/i/14392392',
+    },
   ],
 });
