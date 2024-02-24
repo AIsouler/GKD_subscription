@@ -558,7 +558,7 @@ export default defineAppConfig({
     },
     {
       key: 25,
-      name: '订阅号消息-推荐文章',
+      name: '局部广告-订阅号消息-推荐文章',
       desc: '自动点击“x”',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
