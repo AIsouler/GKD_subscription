@@ -77,5 +77,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-优惠券弹窗',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.xingin.reactnative.ui.XhsReactTranslucentActivity',
+          quickFind: true,
+          matches:
+            '@ImageView[visibleToUser=true] < * -2 * > [text="你有新人券待领取"]',
+          snapshotUrls: 'https://i.gkd.li/i/14391484',
+        },
+      ],
+    },
   ],
 });
