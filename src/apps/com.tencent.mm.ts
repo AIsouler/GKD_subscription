@@ -544,5 +544,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 24,
+      name: '全屏广告-小程序-青桔单车-弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+          matches: 'WebView > View > View > View[childCount=2] > View + Image',
+          snapshotUrls: 'https://i.gkd.li/i/14392363',
+        },
+      ],
+    },
   ],
 });
