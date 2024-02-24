@@ -186,6 +186,14 @@ export default defineAppConfig({
           matches: '@ViewGroup[clickable=true] <3 * < * -2 * >2 [text$="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14332161',
         },
+        {
+          key: 5,
+          activityIds:
+            'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
+          matches:
+            'View[childCount=3] > @Image[index=1][clickable=true][visibleToUser=true] + [text$="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14391614',
+        },
       ],
     },
     {
