@@ -1,6 +1,6 @@
 # 微信
 
-存在 21 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 23 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 分段广告-朋友圈广告
 
@@ -180,3 +180,15 @@
 
 - [快照-0](https://i.gkd.li/i/14113750)
 - [快照-1](https://i.gkd.li/i/14157089)
+
+## 全屏广告-小程序-青桔单车-弹窗广告
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/i/14392363)
+
+## 局部广告-订阅号消息-推荐文章
+
+默认禁用 - 自动点击“x”
+
+- [快照-0](https://i.gkd.li/i/14392392)
