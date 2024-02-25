@@ -151,6 +151,15 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 6,
+      name: '评价提示-请求好评弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '@ImageView[clickable=true] +3 * > [text="五星好评"]',
+      snapshotUrls: 'https://i.gkd.li/i/14395093',
+    },
+    {
       enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
