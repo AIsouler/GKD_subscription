@@ -16,6 +16,15 @@ export default defineAppConfig({
           matches: '[text="广告"] +2 View > View + TextView',
           snapshotUrls: 'https://i.gkd.li/i/13476107',
         },
+        {
+          key: 1,
+          activityIds:
+            'com.github.tvbox.osc.ui.activity.mobile.MobileHomeActivity',
+          matches: '[desc$="dislike"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/df960a4d-764d-4a9e-bb1e-f0ab325e4cb0',
+          snapshotUrls: 'https://i.gkd.li/i/14396706',
+        },
       ],
     },
   ],
