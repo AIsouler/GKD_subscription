@@ -34,5 +34,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-文章底部广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'android.zhibo8.ui.contollers.detail.DetailActivity',
+          quickFind: true,
+          matches:
+            '@[vid="iv_tip"][clickable=true][visibleToUser=true] - * > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14395379',
+        },
+      ],
+    },
   ],
 });
