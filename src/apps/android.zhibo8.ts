@@ -43,8 +43,11 @@ export default defineAppConfig({
           activityIds: 'android.zhibo8.ui.contollers.detail.DetailActivity',
           quickFind: true,
           matches:
-            '@[vid="iv_tip"][clickable=true][visibleToUser=true] - * > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14395379',
+            '@[vid="iv_tip"][clickable=true][visibleToUser=true] -(1,2) * > [text="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14395379',
+            'https://i.gkd.li/i/14395389',
+          ],
         },
       ],
     },
