@@ -34,5 +34,44 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-文章底部广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'android.zhibo8.ui.contollers.detail.DetailActivity',
+          quickFind: true,
+          matches:
+            '@[vid="iv_tip"][clickable=true][visibleToUser=true] -(1,2) * > [text="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14395379',
+            'https://i.gkd.li/i/14395389',
+          ],
+        },
+        {
+          key: 1,
+          preKeys: 0,
+          activityIds: 'android.zhibo8.ui.contollers.detail.DetailActivity',
+          quickFind: true,
+          matches: '@[clickable=true][visibleToUser=true] >3 [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/14395415',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '更新提示',
+      rules: [
+        {
+          key: 0,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          quickFind: true,
+          matches: '@[vid="iv_cancel"] - * >4 [text="发现新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/14395465',
+        },
+      ],
+    },
   ],
 });
