@@ -27,6 +27,15 @@ export default defineAppConfig({
             'https://m.gkd.li/57941037/7802b75c-f75a-4375-9f10-26b822ccc4f1',
           snapshotUrls: 'https://i.gkd.li/i/14370332',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[text="反馈"] < View + View > [text$="跳过"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/541565b5-6f3e-412d-ad1c-731bab1ee2e8',
+          snapshotUrls: 'https://i.gkd.li/i/14406445',
+        },
       ],
     },
   ],
