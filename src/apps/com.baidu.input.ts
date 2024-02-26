@@ -4,6 +4,22 @@ export default defineAppConfig({
   name: '百度输入法',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1cddb43c-9ddc-4fb0-a781-66f167035d2b',
+          snapshotUrls: 'https://i.gkd.li/i/14406395',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-创作祝福弹窗',
       quickFind: true,
