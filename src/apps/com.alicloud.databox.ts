@@ -68,5 +68,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '功能类-[开启相册自动备份功能]弹窗',
+      desc: '关闭弹窗',
+      rules: [
+        {
+          activityIds: 'com.alicloud.databox.MainActivity',
+          matches:
+            '[vid="webContainer"] >5 View[childCount=4] > TextView[index=3][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14414446',
+        },
+      ],
+    },
   ],
 });
