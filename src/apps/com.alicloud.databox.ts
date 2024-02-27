@@ -81,5 +81,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '功能类-扫描二维码登录时自动点击登录',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.taobao.login4android.scan.QrScanActivity',
+          matches: '[text="确认并登录"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14414503', // 该页面不允许截图所以快照页面是黑屏，但不影响编写规则
+        },
+      ],
+    },
   ],
 });
