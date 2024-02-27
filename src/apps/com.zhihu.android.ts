@@ -167,10 +167,15 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          activityIds:
+          activityIds: [
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
-          matches: '[text*="广告"] +2 [text="×"]',
-          snapshotUrls: 'https://i.gkd.li/i/14220104',
+            'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
+          ],
+          matches: '[text*="广告"] +(1,2) [text="×"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14220104',
+            'https://i.gkd.li/i/14421277',
+          ],
         },
         {
           key: 3,
