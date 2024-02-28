@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.ss.android.ugc.aweme',
   name: '抖音',
+  deprecatedKeys: [2],
   groups: [
     {
       key: 0,
@@ -26,46 +27,55 @@ export default defineAppConfig({
       name: '局部广告-关闭用户推荐',
       rules: [
         {
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[id="com.ss.android.ugc.aweme:id/desc"][text="减少此类推荐"]',
-          snapshotUrls: 'https://i.gkd.li/i/12520962',
-        },
-        {
+          key: 0,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[text="换一个"] - FrameLayout[clickable=true] > ImageView[clickable=true]',
           snapshotUrls: ['https://i.gkd.li/i/12520943'],
         },
         {
+          preKeys: 0,
+          key: 1,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '[id="com.ss.android.ugc.aweme:id/desc"][text="减少此类推荐"]',
+          snapshotUrls: 'https://i.gkd.li/i/12520962',
+        },
+        {
+          key: 2,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[text="你可能感兴趣"] < LinearLayout + [text="隐藏"][clickable=true]',
           snapshotUrls: ['https://i.gkd.li/i/12675396'],
         },
         {
+          key: 3,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: '[text="朋友推荐"] +(2) @FrameLayout > [desc="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/12675129',
         },
         {
+          key: 4,
           activityIds:
             'com.ss.android.ugc.aweme.friends.ui.RawAddFriendsActivity',
           matches:
             '[text="朋友推荐"] < LinearLayout + FrameLayout > [desc="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12675245',
         },
-      ],
-    },
-    {
-      key: 2,
-      quickFind: true,
-      activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
-      name: '全屏广告-关闭朋友推荐弹窗',
-      rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12525387',
-        'https://i.gkd.li/i/12525389',
+        {
+          key: 5,
+          activityIds: [
+            'com.ss.android.ugc.aweme.main.MainActivity',
+            'com.miui.home.launcher.Launcher',
+          ],
+          name: '全屏广告-关闭朋友推荐弹窗',
+          matches:
+            '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12525387',
+            'https://i.gkd.li/i/12525389',
+          ],
+        },
       ],
     },
     {
@@ -91,6 +101,7 @@ export default defineAppConfig({
     {
       key: 5,
       name: '全屏广告-广告弹窗',
+      activityIds: 'com.android.launcher.Launcher',
       quickFind: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
@@ -219,6 +230,7 @@ export default defineAppConfig({
       key: 15,
       name: '全屏广告-关闭商城推荐',
       desc: '点击"不感兴趣"',
+      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
       snapshotUrls: 'https://i.gkd.li/i/13800207',
     },
