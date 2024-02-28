@@ -235,14 +235,19 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      quickFind: true,
-      name: '全屏广告-下单成功邀请好友弹窗',
+      name: '功能类-下单成功邀请好友弹窗',
       desc: '点击X',
       rules: [
         {
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
-          matches: '[id="com.xunmeng.pinduoduo:id/pdd"] >7 [text="关闭弹窗"]',
-          snapshotUrls: 'https://i.gkd.li/i/13927594',
+          matches: [
+            '[text$="赶快邀请好友来拼单吧"]',
+            '[text="关闭弹窗"][clickable=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13927594',
+            'https://i.gkd.li/i/14434154',
+          ],
         },
       ],
     },
