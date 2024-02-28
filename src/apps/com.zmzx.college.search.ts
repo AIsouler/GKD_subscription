@@ -6,6 +6,32 @@ export default defineAppConfig({
   deprecatedKeys: [4],
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12867875',
+        },
+        {
+          key: 1,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.8981',
+            top: 'width * 0.1574',
+          },
+          matches: '[id="android:id/content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/45daad88-68a3-41b9-933a-943eeae0e4ff',
+          snapshotUrls: 'https://i.gkd.li/i/14434685',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 1,
       name: '通知提示-请求推送通知弹窗',
