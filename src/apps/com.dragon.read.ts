@@ -3,7 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.dragon.read',
   name: '番茄免费小说',
-  deprecatedKeys: [-1, 11],
+  deprecatedKeys: [-1, 11, 13],
   groups: [
     {
       key: 0,
@@ -63,7 +63,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-优惠券弹窗',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -82,6 +82,16 @@ export default defineAppConfig({
           matches:
             '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
           snapshotUrls: 'https://i.gkd.li/i/12878266',
+        },
+        {
+          key: 2,
+          name: '抽奖赢好礼',
+          quickFind: true,
+          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          matches: '@LynxFlattenUI[clickable=true] - [text="前往抽奖"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/77c4098a-818f-4d0f-8492-e98818d0da27',
+          snapshotUrls: 'https://i.gkd.li/i/14292475',
         },
       ],
     },
@@ -180,11 +190,20 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13191156',
     },
     {
-      key: 13,
-      name: '全屏广告-福利页面弹窗',
-      activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-      rules: '@LynxFlattenUI[clickable=true] - [text="前往抽奖"]',
-      snapshotUrls: 'https://i.gkd.li/i/14292475',
+      key: 14,
+      name: '全屏广告-会员福利弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches:
+            '@ImageView[clickable=true] +2 [text="恭喜获得限时会员福利"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/00f23cee-4271-45fc-9a45-988ae20d0dde',
+          snapshotUrls: 'https://i.gkd.li/i/14430326',
+        },
+      ],
     },
   ],
 });
