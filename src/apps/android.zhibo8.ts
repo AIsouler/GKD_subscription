@@ -7,23 +7,29 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '局部广告-信息流广告',
+      name: '分段广告-信息流广告',
+      desc: '点击[关闭]-点击[不感兴趣]',
       quickFind: true,
-      activityIds: 'android.zhibo8.ui.contollers.main.MainActivity',
+      activityIds: [
+        'android.zhibo8.ui.contollers.main.MainActivity',
+        'android.zhibo8.ui.contollers.detail.DetailActivity',
+      ],
       rules: [
         {
           key: 0,
-          name: '点击[查看详情]右侧x',
-          matches:
-            '@[id="android.zhibo8:id/iv_tip"] - [id="android.zhibo8:id/tv_app_download_2"]',
-          snapshotUrls: 'https://i.gkd.li/i/12841134',
+          name: '点击关闭',
+          matches: '@[vid="iv_tip"][clickable=true] -2 * > [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b67e6d84-0373-4985-82da-c8443904c8f0',
+          snapshotUrls: 'https://i.gkd.li/i/14428863',
         },
         {
-          key: 1, //不重叠不需要preKeys
-          name: '点击[不感兴趣]',
-          matches:
-            '@LinearLayout > [id="android.zhibo8:id/tv_title"][text="不感兴趣"]', // issues/1656, 直接指向text可能不工作
-          snapshotUrls: 'https://i.gkd.li/i/12841135',
+          key: 1,
+          name: '点击不感兴趣',
+          matches: '@[clickable=true] >3 [text="不感兴趣"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/cb130039-0338-4225-91f0-eae4669ed0dc',
+          snapshotUrls: 'https://i.gkd.li/i/14428912',
         },
         {
           key: 2,
@@ -36,7 +42,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '局部广告-文章底部广告',
+      name: '分段广告-文章底部广告',
       rules: [
         {
           key: 0,
