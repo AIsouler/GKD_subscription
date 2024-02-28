@@ -24,7 +24,6 @@ export default defineAppConfig({
             'https://i.gkd.li/i/13195662',
             'https://i.gkd.li/i/12818335',
             'https://i.gkd.li/i/13206298', // 使用 excludeMatches 防止提前触发规则
-            'https://i.gkd.li/i/13207736', // TODO 一整块图片，无法跳过
           ],
         },
         {
@@ -37,6 +36,19 @@ export default defineAppConfig({
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
           snapshotUrls: 'https://i.gkd.li/i/14046124',
+        },
+        {
+          key: 3,
+          quickFind: true,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.9016',
+            top: 'width * 0.1557',
+          },
+          matches: '[id="com.netease.mail:id/ad_view"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/222f6870-d9e3-4e6c-950e-dc40920c52e7',
+          snapshotUrls: 'https://i.gkd.li/i/13207736',
         },
       ],
     },
