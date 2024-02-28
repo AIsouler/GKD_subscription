@@ -18,14 +18,14 @@ export default defineAppConfig({
         {
           key: 0,
           matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12745084',
+          snapshotUrls: 'https://i.gkd.li/i/12745084',
         },
         {
           key: 1,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
-            'https://i.gkd.li/import/12745095',
-            'https://i.gkd.li/import/13387320',
+            'https://i.gkd.li/i/12745095',
+            'https://i.gkd.li/i/13387320',
           ],
         },
         {
