@@ -10,6 +10,8 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionCdKey: 0,
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
@@ -21,9 +23,21 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          actionCdKey: 0,
           matches:
             '[childCount=0][visibleToUser=true][(text.length<10&&(text*="跳过"||text*="跳过"||text*="skip"||text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || (vid*="count" && vid*="down" && vid!*="download") || desc*="跳过" || desc*="skip"]',
+        },
+        {
+          key: 2,
+          quickFind: true,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.9007',
+            top: 'width * 0.1603',
+          },
+          matches: '[id="com.jd.app.reader:id/animation_view"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ab677b66-4681-4672-a1d6-3b5938e7f374',
+          snapshotUrls: 'https://i.gkd.li/i/13264389',
         },
       ],
     },
