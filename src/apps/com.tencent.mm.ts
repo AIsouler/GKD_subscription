@@ -590,11 +590,13 @@ export default defineAppConfig({
         {
           key: 0,
           name: '点击[广告]',
+          actionCd: 3000,
           action: 'clickCenter',
           position: {
             left: 'width * 0.8796',
             top: 'width * 0.0574',
           },
+          excludeMatches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
           matches:
             'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]',
           exampleUrls:
@@ -610,9 +612,7 @@ export default defineAppConfig({
             left: 'width * 0.5308',
             top: 'width * 0.3419',
           },
-          excludeMatches:
-            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]', // 排除key 0
-          matches: '[desc="订阅号消息"] +3 View[clickable=true]',
+          matches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/147a847a-e556-403d-8da0-2ba7233caaec',
           snapshotUrls: 'https://i.gkd.li/i/14434906',
@@ -626,12 +626,13 @@ export default defineAppConfig({
             left: 'width * 0.1864',
             top: 'width * 0.3419',
           },
-          excludeMatches:
-            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]', // 排除key 0
-          matches: '[desc="订阅号消息"] +2 View[clickable=true]',
+          matches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/489ecd00-5aa1-421e-bcf5-c1b73601f8df',
-          snapshotUrls: 'https://i.gkd.li/i/14434903',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14434903',
+            'https://i.gkd.li/i/14436385',
+          ],
         },
         {
           preKeys: 2,
@@ -642,9 +643,7 @@ export default defineAppConfig({
             left: 'width * 0.8580',
             top: 'width * 0.1197',
           },
-          excludeMatches:
-            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]', // 排除key 0
-          matches: '[desc="订阅号消息"] +2 View[clickable=true]',
+          matches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/2c3ce057-dd99-493b-9486-3a056b74223d',
           snapshotUrls: 'https://i.gkd.li/i/14434902',
