@@ -580,5 +580,76 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 27,
+      name: '分段广告-订阅号广告',
+      desc: '点击[广告]-点击[不感兴趣]-点击[与我无关]-点击[确定]',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击[广告]',
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.8796',
+            top: 'width * 0.0574',
+          },
+          matches:
+            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/efe1849c-3333-4004-9eb1-abe93a3256b6',
+          snapshotUrls: 'https://i.gkd.li/i/14434907',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '点击[不感兴趣]',
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.5308',
+            top: 'width * 0.3419',
+          },
+          excludeMatches:
+            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]', // 排除key 0
+          matches: '[desc="订阅号消息"] +3 View[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/147a847a-e556-403d-8da0-2ba7233caaec',
+          snapshotUrls: 'https://i.gkd.li/i/14434906',
+        },
+        {
+          preKeys: 1,
+          key: 2,
+          name: '点击[与我无关]',
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.1864',
+            top: 'width * 0.3419',
+          },
+          excludeMatches:
+            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]', // 排除key 0
+          matches: '[desc="订阅号消息"] +2 View[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/489ecd00-5aa1-421e-bcf5-c1b73601f8df',
+          snapshotUrls: 'https://i.gkd.li/i/14434903',
+        },
+        {
+          preKeys: 2,
+          key: 3,
+          name: '点击[确定]',
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.8580',
+            top: 'width * 0.1197',
+          },
+          excludeMatches:
+            'View[visibleToUser=true] - View > [desc="广告"][visibleToUser=true]', // 排除key 0
+          matches: '[desc="订阅号消息"] +2 View[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2c3ce057-dd99-493b-9486-3a056b74223d',
+          snapshotUrls: 'https://i.gkd.li/i/14434902',
+        },
+      ],
+    },
   ],
 });
