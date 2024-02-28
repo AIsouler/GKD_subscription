@@ -6,6 +6,44 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionCdKey: -1,
+      actionMaximumKey: -1,
+      rules: [
+        {
+          key: 0,
+          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/12745084',
+        },
+        {
+          key: 1,
+          matches: '[text*="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12745095',
+            'https://i.gkd.li/import/13387320',
+          ],
+        },
+        {
+          key: 2,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.8778',
+            top: 'width * 0.1667',
+          },
+          matches:
+            '[id$="spalsh_ad_view"] >4 [id$="native_container"] >2 [id$="id/contentView"]', // 避免选中其他开屏广告节点
+          exampleUrls:
+            'https://m.gkd.li/57941037/485963ab-07b1-412a-a932-badc50cb2688',
+          snapshotUrls: 'https://i.gkd.li/i/13399391',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '青少年模式',
       quickFind: true,
