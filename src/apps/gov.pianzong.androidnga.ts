@@ -76,5 +76,25 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '局部广告-评论区底部广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.9325',
+            top: 'width * 0.04203',
+          },
+          activityIds:
+            'gov.pianzong.androidnga.activity.forumdetail.ArticleDetailActivity',
+          matches: '[id="advertisementBottom"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/93c2431c-065c-421e-9fd4-112e65ef6ae2',
+          snapshotUrls: 'https://i.gkd.li/i/12893508',
+        },
+      ],
+    },
   ],
 });
