@@ -89,10 +89,13 @@ export default defineAppConfig({
           key: 0,
           name: '点击签到',
           matches:
-            '[text="《崩坏：星穹铁道》签到福利"] >4 View[childCount=10] > View + TextView',
+            '[text="《崩坏：星穹铁道》签到福利"] >4 View > View + TextView',
           exampleUrls:
             'https://m.gkd.li/57941037/a9f426c4-3184-4525-b283-ad77d6f83d02',
-          snapshotUrls: 'https://i.gkd.li/i/14376296',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14376296',
+            'https://i.gkd.li/i/14432972',
+          ],
         },
         {
           preKeys: 0,
