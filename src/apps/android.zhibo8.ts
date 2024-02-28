@@ -18,10 +18,14 @@ export default defineAppConfig({
         {
           key: 0,
           name: '点击关闭',
-          matches: '@[vid="iv_tip"][clickable=true] -2 * > [text="广告"]',
+          matches:
+            '@[id$="iv_tip"][clickable=true] -2 * > [text="广告"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/b67e6d84-0373-4985-82da-c8443904c8f0',
-          snapshotUrls: 'https://i.gkd.li/i/14428863',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14428863',
+            'https://i.gkd.li/i/13786148',
+          ],
         },
         {
           key: 1,
@@ -30,13 +34,6 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/cb130039-0338-4225-91f0-eae4669ed0dc',
           snapshotUrls: 'https://i.gkd.li/i/14428912',
-        },
-        {
-          key: 2,
-          name: '点击"广告"右侧的x',
-          matches:
-            '[text="广告"] <3 LinearLayout +2 [visibleToUser=true][id="android.zhibo8:id/iv_tip"]',
-          snapshotUrls: 'https://i.gkd.li/i/13786148',
         },
       ],
     },
