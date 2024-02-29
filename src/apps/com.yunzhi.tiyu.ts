@@ -39,5 +39,32 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '分段广告-首页卡片广告',
+      desc: '点击关闭-点击[不感兴趣]',
+      rules: [
+        {
+          key: 0,
+          name: '点击关闭',
+          activityIds: 'com.yunzhi.tiyu.module.MainActivity',
+          matches: '@View[visibleToUser=true] +2 View >3 [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/369a65c8-4207-441b-a20d-2f5e402ea983',
+          snapshotUrls: 'https://i.gkd.li/i/14446375',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '点击[不感兴趣]',
+          quickFind: true,
+          activityIds: 'com.yunzhi.tiyu.module.MainActivity',
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1e5bff7e-b82b-458e-9179-364e6bf2c1da',
+          snapshotUrls: 'https://i.gkd.li/i/14446216',
+        },
+      ],
+    },
   ],
 });
