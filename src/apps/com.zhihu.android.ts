@@ -216,6 +216,39 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 16,
+      name: '更新提示',
+      rules: [
+        {
+          key: 0,
+          name: '勾选[不再提醒]',
+          matchTime: 10000,
+          quickFind: true,
+          resetMatch: 'app',
+          actionMaximum: 1,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.0718',
+            top: 'width * 0.3026',
+          },
+          matches: '@[vid="parentPanel"] >4 [text*="内测"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/728ea1cd-ca19-4de9-9e7e-eb2a3513f965',
+          snapshotUrls: 'https://i.gkd.li/i/14445502',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '点击[取消]',
+          quickFind: true,
+          matches: '@[text="取消"] + [text="去应用市场"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/728ea1cd-ca19-4de9-9e7e-eb2a3513f965',
+          snapshotUrls: 'https://i.gkd.li/i/14445502',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 101,
       name: '功能类-自动展开回答',
