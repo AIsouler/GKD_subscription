@@ -582,7 +582,7 @@ export default defineAppConfig({
     },
     {
       key: 27,
-      name: '分段广告-订阅号广告',
+      name: '分段广告-订阅号消息页面广告',
       desc: '点击[广告]-点击[不感兴趣]-点击[与我无关]-点击[确定]',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -647,6 +647,42 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/2c3ce057-dd99-493b-9486-3a056b74223d',
           snapshotUrls: 'https://i.gkd.li/i/14434902',
+        },
+      ],
+    },
+    {
+      key: 28,
+      name: '分段广告-订阅号消息页面视频推荐',
+      desc: '点击[X]-点击[不喜欢此类视频]-点击[确定]',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击[X]',
+          matches:
+            '[desc="订阅号消息"] +3 View >2 [visibleToUser=true] - View >3 ImageView[index=2][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b777c0b1-f8ed-4712-afd6-2e1a72243475',
+          snapshotUrls: 'https://i.gkd.li/i/14436176',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '点击[不喜欢此类视频]',
+          matches: '[desc="不喜欢此类视频"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/39e8b378-9b55-4838-92af-b28f04402ca4',
+          snapshotUrls: 'https://i.gkd.li/i/14444654',
+        },
+        {
+          preKeys: 1,
+          key: 2,
+          name: '点击[确定]',
+          matches: '[desc="确定"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/590eb619-9987-4edf-98a8-17146ffeda10',
+          snapshotUrls: 'https://i.gkd.li/i/14436190',
         },
       ],
     },
