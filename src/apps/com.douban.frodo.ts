@@ -22,7 +22,11 @@ export default defineAppConfig({
           matches: '[id="com.douban.frodo:id/_ad_image_"]',
           exampleUrls:
             'https://m.gkd.li/57941037/1c36c96b-95b7-4299-8e88-b4fdc85d3518',
-          snapshotUrls: 'https://i.gkd.li/i/13575257',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13575257',
+            'https://i.gkd.li/i/13575547',
+            'https://i.gkd.li/i/13601755',
+          ],
         },
       ],
     },
