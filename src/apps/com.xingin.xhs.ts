@@ -37,15 +37,12 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches:
-            '@ImageView[clickable=true] <2 FrameLayout +3 FrameLayout > Button[text="立即安装"]',
-          snapshotUrls: 'https://i.gkd.li/i/13246890',
-        },
-        {
-          actionMaximumKey: 0,
-          matches:
-            '@ImageView[clickable=true] <2 FrameLayout +3 FrameLayout > Button[text="立即参与内测"]',
-          snapshotUrls: 'https://i.gkd.li/i/13741680',
+          matches: '@ImageView <2 * + * > [text="NEW"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13246890',
+            'https://i.gkd.li/i/13741680',
+            'https://i.gkd.li/i/14445193',
+          ],
         },
       ],
     },
