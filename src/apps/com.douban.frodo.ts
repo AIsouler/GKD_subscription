@@ -6,6 +6,27 @@ export default defineAppConfig({
   deprecatedKeys: [0, 7, 12],
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.8833',
+            top: 'width * 0.1388',
+          },
+          matches: '[id="com.douban.frodo:id/_ad_image_"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1c36c96b-95b7-4299-8e88-b4fdc85d3518',
+          snapshotUrls: 'https://i.gkd.li/i/13575257',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 1,
       name: '功能类-不分享/同步作品短评',
