@@ -218,29 +218,26 @@ export default defineAppConfig({
     {
       key: 16,
       name: '更新提示',
+      matchTime: 10000,
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
       rules: [
         {
           key: 0,
           name: '勾选[不再提醒]',
-          matchTime: 10000,
-          quickFind: true,
-          resetMatch: 'app',
-          actionMaximum: 1,
-          action: 'clickCenter',
-          position: {
-            left: 'width * 0.0718',
-            top: 'width * 0.3026',
-          },
-          matches: '@[vid="parentPanel"] >4 [text*="内测"]',
+          matches: 'CheckBox[text="不再提醒"][checked=false][clickable=true]', // checked=false 区别勾选前后
           exampleUrls:
             'https://m.gkd.li/57941037/728ea1cd-ca19-4de9-9e7e-eb2a3513f965',
-          snapshotUrls: 'https://i.gkd.li/i/14445502',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14445502', // 勾选前
+            'https://i.gkd.li/i/14445815', // 勾选后
+          ],
         },
         {
           preKeys: 0,
           key: 1,
           name: '点击[取消]',
-          quickFind: true,
           matches: '@[text="取消"] + [text="去应用市场"]',
           exampleUrls:
             'https://m.gkd.li/57941037/728ea1cd-ca19-4de9-9e7e-eb2a3513f965',
