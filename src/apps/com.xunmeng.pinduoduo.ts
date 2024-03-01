@@ -39,7 +39,7 @@ export default defineAppConfig({
         {
           key: 1,
           name: '首页优惠弹窗2',
-          activityIds: [], // 暂时用[]，后续补充activityIds
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             'View[id=null] > TextView + View > View +(4) View[clickable=true] > Image[id=null]',
           snapshotUrls: 'https://i.gkd.li/i/12642019',
@@ -76,13 +76,6 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '下单后追加订单',
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          matches: '@[text="关闭弹窗"][clickable=true] + [text$="下单成功"]',
-          snapshotUrls: 'https://i.gkd.li/i/13308175',
-        },
-        {
-          key: 3,
           name: '抽免单活动3',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
@@ -249,7 +242,10 @@ export default defineAppConfig({
       desc: '点击X',
       rules: [
         {
-          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
+          activityIds: [
+            'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
+            'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          ],
           matches: [
             '[text^="查看订单详情"]',
             '[text="关闭弹窗"][clickable=true]',
@@ -258,6 +254,7 @@ export default defineAppConfig({
             'https://i.gkd.li/i/13927594',
             'https://i.gkd.li/i/14434154',
             'https://i.gkd.li/i/14456017',
+            'https://i.gkd.li/i/13308175',
           ],
         },
       ],
