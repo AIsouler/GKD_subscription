@@ -124,6 +124,16 @@ export default defineAppConfig({
             '[id="com.xunmeng.pinduoduo:id/pdd"] View[childCount=3][clickable=false] > Image[index=0]',
           snapshotUrls: 'https://i.gkd.li/i/13944160',
         },
+        {
+          key: 3,
+          name: '刮奖弹窗',
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches: '@ImageView[clickable=true] + * >4 [text="去刮奖"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f9f73d28-a124-41ba-9781-261a3af281c6',
+          snapshotUrls: 'https://i.gkd.li/i/14456101',
+        },
       ],
     },
     {
