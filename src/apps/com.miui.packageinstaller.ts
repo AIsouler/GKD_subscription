@@ -16,6 +16,8 @@ export default defineAppConfig({
             left: 'width * 0.8743',
             top: 'width * 0.1202',
           },
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
           matches: '[text="安装来源不可信"] + [vid="title_des"]',
           exampleUrls:
             'https://m.gkd.li/57941037/e30144c7-c895-4950-a91d-9ce56a8570c8',
