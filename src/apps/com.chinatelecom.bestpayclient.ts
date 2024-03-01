@@ -110,5 +110,30 @@ export default defineAppConfig({
         'https://i.gkd.li/i/13625037', //修改规则，避免在此误触
       ],
     },
+    {
+      key: 6,
+      name: '功能类-自动签到',
+      desc: '点击[立即打卡]-关闭弹窗',
+      rules: [
+        {
+          key: 0,
+          action: 'clickCenter',
+          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+          matches: '[text^="已连续签到"] +12 * >2 Image[visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8fd8a0ce-90a3-460b-9882-33fdb55cbca4',
+          snapshotUrls: 'https://i.gkd.li/i/14459643',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+          matches: '[text="明日签到可得惊喜盲盒"] <2 View + View > Image',
+          exampleUrls:
+            'https://m.gkd.li/57941037/31296e53-7d32-405b-b8ae-25855a02291d',
+          snapshotUrls: 'https://i.gkd.li/i/14459494',
+        },
+      ],
+    },
   ],
 });
