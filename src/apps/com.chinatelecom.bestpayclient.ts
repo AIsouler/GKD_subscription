@@ -76,10 +76,26 @@ export default defineAppConfig({
       name: '局部广告-悬浮窗小广告',
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-      rules:
-        '[id="com.chinatelecom.bestpayclient:id/best_h5_container"] View[childCount=2] > @View[clickable=true] +  View[clickable=true] > Image[text!=null]',
-      snapshotUrls: 'https://i.gkd.li/i/13402711',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
+          matches:
+            '[id="com.chinatelecom.bestpayclient:id/best_h5_container"] View[childCount=2] > @View[clickable=true] + View[clickable=true] > Image[text!=null]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/4457a342-5750-45d8-ad8e-233dd1da3de3',
+          snapshotUrls: 'https://i.gkd.li/i/13402711',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
+          matches: '[vid="iv_market_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/14326e73-6c7c-4659-8493-d4b196746b2a',
+          snapshotUrls: 'https://i.gkd.li/i/14456159',
+        },
+      ],
     },
     {
       key: 5,
