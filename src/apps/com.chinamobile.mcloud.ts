@@ -35,14 +35,13 @@ export default defineAppConfig({
           key: 0,
           activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
           quickFind: true,
-          matches:
-            '[id="com.chinamobile.mcloud:id/rl_container"] + [id="com.chinamobile.mcloud:id/iv_close"]',
+          matches: '[id="com.chinamobile.mcloud:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13627826',
         },
         {
           key: 1,
           activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
-          matches: '[text="马上领取"] +n View > Image[clickable=true]',
+          matches: '[text="马上领取"] +3 View > Image[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13627832',
         },
       ],
