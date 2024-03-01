@@ -125,7 +125,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/13944160',
         },
         {
-          key: 3,
+          key: 4,
           name: '刮奖弹窗',
           quickFind: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
