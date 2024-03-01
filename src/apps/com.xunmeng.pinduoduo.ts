@@ -241,12 +241,13 @@ export default defineAppConfig({
         {
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
           matches: [
-            '[text$="赶快邀请好友来拼单吧"]',
+            '[text^="查看订单详情"]',
             '[text="关闭弹窗"][clickable=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13927594',
             'https://i.gkd.li/i/14434154',
+            'https://i.gkd.li/i/14456017',
           ],
         },
       ],
