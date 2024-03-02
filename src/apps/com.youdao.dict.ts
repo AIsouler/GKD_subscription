@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '分段广告-单词页面卡片式广告',
       rules: [
         {
           key: 0,
@@ -20,6 +20,7 @@ export default defineAppConfig({
           ],
         },
         {
+          preKeys: 0,
           key: 1,
           activityIds: 'com.youdao.dict.activity.MainActivity',
           quickFind: true,
@@ -28,12 +29,6 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12668583',
             'https://i.gkd.li/i/13800056',
           ],
-        },
-        {
-          key: 2,
-          activityIds: 'com.youdao.dict.activity.MainActivity',
-          matches: '[id="com.youdao.dict:id/home_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/14009705',
         },
       ],
     },
@@ -137,6 +132,34 @@ export default defineAppConfig({
       snapshotUrls: [
         'https://i.gkd.li/i/14292588', // 点击显示释义前
         'https://i.gkd.li/i/14292587', // 点击显示释义后
+      ],
+    },
+    {
+      key: 8,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          name: '右下角悬浮卡片',
+          quickFind: true,
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          matches: '[vid="aivClose"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e365b983-15c7-4ac7-acd7-9d7be4c45160',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14468564',
+            'https://i.gkd.li/i/14468628', // visibleToUser=true 防止在此页面选中屏幕外节点
+          ],
+        },
+        {
+          key: 1,
+          name: '主页卡片广告',
+          quickFind: true,
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          matches: '[vid="home_ad_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14009705',
+        },
       ],
     },
   ],
