@@ -20,30 +20,33 @@ export default defineAppConfig({
         {
           key: 0,
           quickFind: true,
-          matches: '@ImageView[clickable=true] -n [text="广告"]',
+          matches: '@ImageView[clickable=true] -4 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13849671',
         },
         {
           key: 1,
+          quickFind: true,
           matches:
-            '@ImageView[id=null][clickable=true] -2 ViewGroup > [text$="广告"]',
+            '@ImageView[id=null][clickable=true] -(2,3) * > [text*="广告"]',
           exampleUrls:
             'https://m.gkd.li/57941037/f6498773-af55-4ba9-96fa-4c0597523d55',
           snapshotUrls: [
             'https://i.gkd.li/i/12647525',
-            'https://i.gkd.li/i/14178516', //activityId: com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity
+            'https://i.gkd.li/i/14178516',
+            'https://i.gkd.li/i/13849442',
+            'https://i.gkd.li/i/14178979',
           ],
         },
         {
           key: 2,
           quickFind: true,
-          matches: '@ImageView[clickable=true] -(2,3) * > [text*="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13849442',
-            'https://i.gkd.li/i/14178979',
-          ],
+          matches: '@ImageView[clickable=true] < * - * > [text*="广告"]',
           exampleUrls:
-            'https://m.gkd.li/57941037/65e9f31a-e80f-4996-9621-1b8fd92940d6',
+            'https://m.gkd.li/57941037/c52e22c6-987e-46c2-a4ca-e1182972ed94',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14321041',
+            'https://i.gkd.li/i/14468152',
+          ],
         },
         {
           key: 3,
@@ -52,18 +55,8 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/14192451',
         },
         {
-          key: 4,
-          quickFind: true,
-          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches:
-            '[vid="dot_text_layout"] + [vid="menu_container"] > [vid="menu"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/689c77eb-9026-44db-b22e-d890961a0ad6',
-          snapshotUrls: 'https://i.gkd.li/i/14321041',
-        },
-        {
           key: 90,
-          preKeys: [0, 1, 2, 3, 4],
+          preKeys: [0, 1, 2, 3],
           quickFind: true,
           matches: '@[clickable=true] >3 [text$="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13849689',
