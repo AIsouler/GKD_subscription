@@ -61,5 +61,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 13,
+      name: '功能类-电量已低于20%',
+      desc: '点击[知道了]',
+      rules: [
+        {
+          quickFind: true,
+          matches: '@[text="知道了"] + [text="省电模式"]',
+          snapshotUrls: 'https://i.gkd.li/i/14468423',
+        },
+      ],
+    },
   ],
 });
