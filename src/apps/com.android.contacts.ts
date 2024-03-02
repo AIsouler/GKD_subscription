@@ -21,5 +21,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      desc: '点击[取消]',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@[text="取消"] +2 [text="更新"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/803695f8-48e1-43e8-8841-ec0288393489',
+          snapshotUrls: 'https://i.gkd.li/i/14469082',
+        },
+      ],
+    },
   ],
 });
