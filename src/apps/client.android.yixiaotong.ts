@@ -42,12 +42,15 @@ export default defineAppConfig({
     {
       key: 2,
       name: '局部广告-卡片式广告',
+      activityIds: [
+        'client.android.yixiaotong.v3.ui.V3MainActivity',
+        'client.android.yixiaotong.v3.ui.appcontrol.bath.BathControlActivity',
+        'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
+      ],
       rules: [
         {
           key: 0,
           name: '腾讯广告',
-          activityIds:
-            'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             'ImageView - FrameLayout - FrameLayout[childCount=1] > ImageView[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/i/13451010',
@@ -55,11 +58,34 @@ export default defineAppConfig({
         {
           key: 1,
           name: '快手广告',
-          activityIds:
-            'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
           matches:
             '[id="client.android.yixiaotong:id/ksad_container"] >n @TextView + View > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13450887',
+        },
+        {
+          key: 2,
+          matches:
+            'FrameLayout[childCount=3] > FrameLayout > ImageView[visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ad8a1bbf-61b5-4a7e-8e16-5e0092f04b8c',
+          snapshotUrls: 'https://i.gkd.li/i/14469848',
+        },
+        {
+          key: 3,
+          quickFind: true,
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.9585',
+            top: 'width * 0.0424',
+          },
+          matches: '[vid="native_ad_tpbt_image_iv"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ed6c2c12-ac17-40cc-9842-3dbc2a477d15',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14469800',
+            'https://i.gkd.li/i/14469876',
+            'https://i.gkd.li/i/14469878',
+          ],
         },
       ],
     },
