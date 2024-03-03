@@ -12,86 +12,47 @@ export default defineAppConfig({
         {
           key: 1,
           name: '腾讯广告-1',
-          activityIds: 'com.xyhui.start.PUMainActivity',
-          matches:
-            'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12643276',
-            'https://i.gkd.li/i/12868503',
-            'https://i.gkd.li/i/12646420',
-            'https://i.gkd.li/i/13259194',
-          ],
-        },
-        {
-          key: 2,
-          name: '腾讯广告-2',
           activityIds: [
             'com.xyhui.start.PUMainActivity',
             'com.xyhui.start.LoadingActivity',
             'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity',
           ],
           matches:
-            'ImageView - FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            '[id="android:id/content"] >(4,5) FrameLayout[index=1] > ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/i/12642482',
-            'https://i.gkd.li/i/12646519',
-            'https://i.gkd.li/i/12868369',
-            'https://i.gkd.li/i/12646541', // 华为手机的快照，activityId = 'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity'
+            'https://i.gkd.li/i/14472097',
+            'https://i.gkd.li/i/14472098',
+            'https://i.gkd.li/i/12646541',
             'https://i.gkd.li/i/13695488',
           ],
         },
         {
-          key: 3,
-          name: '腾讯广告-3',
-          activityIds: 'com.xyhui.start.PUMainActivity',
-          matches:
-            'ImageView - LinearLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/i/12793180',
-        },
-        {
-          key: 4,
-          name: '腾讯广告-4',
-          activityIds: [
-            'com.xyhui.start.PUMainActivity',
-            'com.xyhui.start.LoadingActivity',
-          ],
-          matches:
-            'ImageView - LinearLayout - FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12646347',
-            'https://i.gkd.li/i/12793157',
-            'https://i.gkd.li/i/12793177',
-            'https://i.gkd.li/i/12868157', // com.xyhui.start.LoadingActivity
-            'https://i.gkd.li/i/13348807', // com.bbk.launcher2.Launcher
-          ],
-        },
-        {
-          key: 5,
+          key: 2,
           name: '快手广告',
+          quickFind: true,
           activityIds: 'com.xyhui.start.LoadingActivity',
           matches:
-            '[text="广告"] <n * < * < ViewGroup - ViewGroup >n @ViewGroup > ImageView',
+            'ImageView < @ViewGroup[clickable=true] < * <2 * + * >3 [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13259196',
             'https://i.gkd.li/i/13259198',
           ],
         },
         {
-          key: 6,
+          key: 3,
           name: '字节广告',
+          quickFind: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: [
-            '[desc^="logo-union"] > [desc^="logoad"] > [text="广告"]',
-            '[desc^="webview-close"] > View',
-          ],
+          matches: 'View[clickable=true] < FrameLayout +4 * >2 [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/i/13259183',
         },
         {
-          key: 7,
+          key: 4,
           name: '美数广告',
+          quickFind: true,
           activityIds: 'com.meishu.sdk.activity.SdkInterstitialActivity',
-          matches: ['[id="com.xyhui:id/ms_activity_sdk_interstitial_cacel"]'],
+          matches: '[id="com.xyhui:id/ms_activity_sdk_interstitial_cacel"]',
           snapshotUrls: 'https://i.gkd.li/i/13458692',
         },
       ],
