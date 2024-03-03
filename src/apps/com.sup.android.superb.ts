@@ -78,5 +78,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '局部广告-卡片广告',
+      desc: '点击[关闭广告]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.sup.android.base.MainActivity',
+          matches: '[text="关闭广告"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/af1e7624-540b-4646-b812-3b748966e903',
+          snapshotUrls: 'https://i.gkd.li/i/14471869',
+        },
+      ],
+    },
   ],
 });
