@@ -106,18 +106,33 @@ export default defineAppConfig({
       key: 7,
       name: '定位提示',
       desc: '首页/外卖界面-"打开位置开关弹窗"-点击右侧x关闭',
-      activityIds: [
-        'com.meituan.android.pt.homepage.activity.MainActivity',
-        'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
-      ],
       rules: [
-        '[id ="com.sankuai.meituan:id/location_close"]',
-        '[id ="com.sankuai.meituan:id/location_layer_close"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/12874657',
-        'https://i.gkd.li/i/12910210',
-        'https://i.gkd.li/i/12910211',
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches: '[vid="location_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/da856996-b128-486a-a6d4-964183b0c719',
+          snapshotUrls: 'https://i.gkd.li/i/14472663',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
+          matches: '[id="com.sankuai.meituan:id/location_layer_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3071d3a4-f8ca-4c6f-8aa2-cf9573dbed3d',
+          snapshotUrls: 'https://i.gkd.li/i/12910211',
+        },
+        {
+          key: 2,
+          activityIds: 'com.sankuai.meituan.MPMainActivity',
+          matches: '[text="定位服务尚未开启"] +3 TextView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3bb08a42-5d88-4f9d-8cbe-cb913e136ec6',
+          snapshotUrls: 'https://i.gkd.li/i/14472614',
+        },
       ],
     },
     {
