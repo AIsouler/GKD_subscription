@@ -12,11 +12,20 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           quickFind: true,
           matches: '[text="体验一下"] + [text="关闭"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/d2b6ee77-ae06-4873-a106-db4ce2324777',
           snapshotUrls: 'https://i.gkd.li/i/14321107',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches: '[text="开启青少年模式"] + * > [text="关闭"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/29534293-f3c7-4187-a36f-47e37fef2f42',
+          snapshotUrls: 'https://i.gkd.li/i/14473006',
         },
       ],
     },
