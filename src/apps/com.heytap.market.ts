@@ -21,7 +21,7 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 1,
+      key: 2,
       name: '局部广告-右下角广告悬浮卡片',
       desc: '点击关闭',
       rules: [
