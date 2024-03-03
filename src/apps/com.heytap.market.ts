@@ -20,5 +20,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 1,
+      name: '局部广告-右下角广告悬浮卡片',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.heytap.cdo.client.cards.page.main.maintab.MainTabActivity',
+          matches: '@[desc="关闭"] <2 [vid="view_id_float_ad"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/51493144-2758-4bc7-b2b7-cc85c04c6cc1',
+          snapshotUrls: 'https://i.gkd.li/i/14469932',
+        },
+      ],
+    },
   ],
 });
