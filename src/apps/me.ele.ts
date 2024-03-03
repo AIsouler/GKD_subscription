@@ -53,6 +53,16 @@ export default defineAppConfig({
           matches: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12650713',
         },
+        {
+          key: 2,
+          name: '红包弹窗3',
+          quickFind: true,
+          matches:
+            '@ViewGroup[index=2][clickable=true] <3 ViewGroup < ViewGroup < ViewGroup[vid="id_magex_mist_view"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/25425b3a-309d-464d-bbb5-091715675fcd',
+          snapshotUrls: 'https://i.gkd.li/i/14472929',
+        },
       ],
     },
     {
