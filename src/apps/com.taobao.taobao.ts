@@ -240,5 +240,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 19,
+      name: '功能类-关闭小额免密支付开关',
+      desc: '在支付的时候出现',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: '@[checked=true] < * - [text="开通淘宝小额免密支付"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3ae78555-c0a5-4f76-8096-c4d1593ebb77',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14471853', // 关闭前
+            'https://i.gkd.li/i/14471858', // 关闭后
+          ],
+        },
+      ],
+    },
   ],
 });
