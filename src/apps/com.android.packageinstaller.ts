@@ -11,6 +11,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
+          name: '点击[继续安装]',
           activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
           matches: '[text="继续安装"]',
           snapshotUrls: [
@@ -20,9 +21,11 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          name: '点击[完成]',
           activityIds: [
             'com.android.packageinstaller.NewInstallInstalling',
             'com.android.packageinstaller.InstallSuccess',
+            'com.android.packageinstaller.oplus.InstallAppProgress',
           ],
           matches: '[text="完成"]',
           snapshotUrls: [
@@ -30,10 +33,12 @@ export default defineAppConfig({
             'https://i.gkd.li/i/13766420',
             'https://i.gkd.li/i/13962438',
             'https://i.gkd.li/i/14138323',
+            'https://i.gkd.li/i/14471862',
           ],
         },
         {
           key: 2,
+          name: '点击[安装]',
           quickFind: true,
           activityIds: 'com.android.packageinstaller.DeleteStagedFileOnResult',
           matches: '[vid="confirm_bottom_button_layout"]',
