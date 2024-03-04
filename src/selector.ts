@@ -2,7 +2,7 @@ import { CommonSelector } from '@gkd-kit/selector';
 
 export const parseSelector = (source: string) => {
   const selector = CommonSelector.Companion.parse(source);
-  selector.propertyNames.forEach((name) => {
+  selector.propertyNames.forEach((name: string) => {
     if (!allowPropertyNames.has(name)) {
       throw new Error(`Property ${name} is not allowed in selector`);
     }
