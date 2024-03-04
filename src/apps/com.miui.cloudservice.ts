@@ -30,5 +30,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 1,
+      name: '更新提示',
+      desc: '点击[以后再说]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: [
+        {
+          matches: '@[text="以后再说"] + [text="立即升级"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/789b4472-f989-4d32-aff2-6b657b6e0deb',
+          snapshotUrls: 'https://i.gkd.li/i/14476801',
+        },
+      ],
+    },
   ],
 });
