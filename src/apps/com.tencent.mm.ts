@@ -19,6 +19,22 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: -1,
+          name: '点击广告卡片右上角',
+          action: 'clickCenter',
+          position: {
+            left: 'width * 0.0569',
+            top: 'width * 0.9083',
+          },
+          quickFind: true,
+          excludeMatches:
+            '@LinearLayout[clickable=true] > [text="广告" || text="Sponsored" || text="廣告"]',
+          matches: '@RelativeLayout >7 [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/829e1b0b-9fa2-4a31-9c36-542ad6bd7b6e',
+          snapshotUrls: 'https://i.gkd.li/i/14476135',
+        },
+        {
           key: 0,
           name: '点击广告卡片右上角',
           matches:
@@ -31,7 +47,7 @@ export default defineAppConfig({
         },
         // 以下是只出现二段的情况
         {
-          preKeys: 0,
+          preKeys: [-1, 0],
           key: 1,
           name: '点击关闭',
           quickFind: true,
@@ -42,7 +58,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [-1, 0],
           key: 2,
           name: '点击"Close the ad"',
           quickFind: true,
@@ -50,7 +66,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/14207480',
         },
         {
-          preKeys: 0,
+          preKeys: [-1, 0],
           key: 3,
           name: '点击"關閉此廣告"',
           quickFind: true,
@@ -61,7 +77,7 @@ export default defineAppConfig({
         // 预留key
         // 以下是出现三段的情况
         {
-          preKeys: 0,
+          preKeys: [-1, 0],
           key: 50,
           name: '点击"关闭该广告"',
           matches: '@LinearLayout[clickable=true] > [text="关闭该广告"]',
@@ -76,7 +92,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/12663984',
         },
         {
-          preKeys: 0,
+          preKeys: [-1, 0],
           key: 52,
           name: '点击"Close the ad"',
           matches: '@LinearLayout[clickable=true] > [text="Close the ad"]',
