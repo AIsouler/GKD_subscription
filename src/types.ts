@@ -143,9 +143,24 @@ type RawCommonProps = {
    *
    * @default 0
    *
+   * @version 1.7.0
    */
   order?: Integer;
 
+  /**
+   * 单位: 毫秒
+   *
+   * 在开始匹配后的一段时间内, 不管界面没有通知变化, 主动使此规则参与屏幕查询
+   *
+   * GKD 借助 [onAccessibilityEvent](https://developer.android.com/reference/android/accessibilityservice/AccessibilityService#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)) 感知界面变化
+   *
+   * 但是某些基于 flutter/webview 开发的应用/页面在变化时并不会通知系统去触发 onAccessibilityEvent, 但是屏幕上的节点信息确实产生变化
+   *
+   * 唯一的办法是在开始匹配的一定时间内主动查询屏幕节点
+   *
+   * @version 1.7.0
+   */
+  forcedTime?: Integer;
   /**
    * 当前 规则/规则组 的快照链接, 增强订阅可维护性
    */
