@@ -69,5 +69,8 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --cache --fix"
     ]
+  },
+  "dependencies": {
+    "@gkd-kit/api": "^0.0.2"
   }
 }

@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@gkd-kit/api':
+    specifier: ^0.0.2
+    version: 0.0.2
+
 devDependencies:
   '@commitlint/cli':
     specifier: ^18.4.4
@@ -505,6 +510,10 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@gkd-kit/api@0.0.2:
+    resolution: {integrity: sha512-ZOJsdx8LmW+sltfAveXW9IGd5g/2L3m4+yVlR//iVJ5rp01Tv8L/m0KCOHk8DgAl+iEivDk1razsOlY4hm+jSA==}
+    dev: false
 
   /@gkd-kit/selector@0.0.18:
     resolution: {integrity: sha512-5aDHh45pkRLd82d+TLE5vbaz64PkcYZABOuqCXhsEQW8PtNMT05sTTW6WQeM+RH/IjGvULz/p9Hl8vpVm2bPCg==}
