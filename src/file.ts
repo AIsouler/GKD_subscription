@@ -3,13 +3,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import type PkgT from '../package.json';
 import { parseSelector } from './selector';
+import type { RawAppAddProp } from './types';
 import type {
-  RawApp,
   RawAppGroup,
   RawGlobalGroup,
   IArray,
   RawSubscription,
-} from './types';
+} from '@gkd-kit/api';
 import JSON5 from 'json5';
 
 // 定义一个将 IArray<T> 类型转换为 T[] 类型的函数
@@ -206,7 +206,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
 
   // 检查组和规则的重复键
   const apps = newConfig.apps || [];
-  apps.forEach((app) => {
+  apps.forEach((app: RawAppAddProp) => {
     const deprecatedKeys = app.deprecatedKeys || [];
     const keys = new Set<number>();
     const oldGroups = oldConfig.apps?.find((a) => a.id == app.id)?.groups || [];
@@ -377,7 +377,7 @@ export const checkAndDeleteFiles = async (): Promise<void> => {
 };
 
 // 导出一个异步函数，用于更新应用的 Markdown 文件
-export const updateAppMd = async (app: RawApp) => {
+export const updateAppMd = async (app: RawAppAddProp) => {
   // 生成应用的 Markdown 文本内容
   const appHeadMdText = [
     `# ${app.name}`,
@@ -509,7 +509,7 @@ const getGlobalDiffLog = (
 
 // 定义一个类型，表示应用的变更日志
 type AppDiff = {
-  app: RawApp;
+  app: RawAppAddProp;
   addGroups: RawAppGroup[];
   changeGroups: RawAppGroup[];
   removeGroups: RawAppGroup[];

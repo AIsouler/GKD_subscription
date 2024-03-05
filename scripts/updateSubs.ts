@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import url from 'node:url';
-import type { RawApp } from '../src/types';
+import type { RawApp } from '@gkd-kit/api';
 import { tryRun } from '../src/utils';
 
 // 使用命令更新内存订阅

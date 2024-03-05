@@ -1,4 +1,4 @@
-import type { RawCategory } from './types';
+import type { RawCategory } from '@gkd-kit/api';
 
 const categories: RawCategory[] = [
   {
