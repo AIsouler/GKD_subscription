@@ -702,5 +702,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 29,
+      name: '功能类-解锁 Windows 微信',
+      desc: '点击[解锁]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.mm.plugin.webwx.ui.WebWXUnlockUI',
+          matches: '[text="解锁"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/85bb6dcd-0d04-46c1-af14-6e4b57ff4dca',
+          snapshotUrls: 'https://i.gkd.li/i/14490116',
+        },
+      ],
+    },
   ],
 });
