@@ -140,12 +140,32 @@ export default defineAppConfig({
     {
       enable: false,
       key: 13,
-      name: '功能类-小额免密支付弹窗',
-      desc: '点击关闭',
-      quickFind: true,
-      activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-      rules: '@[text="关闭"] < * <3 * < * + * >3 [text$="小额免密支付"]',
-      snapshotUrls: 'https://i.gkd.li/i/13438414',
+      name: '功能类-关闭小额免密支付',
+      desc: '在支付前/后出现',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches:
+            '[text="关闭"] < @[clickable=true] <3 * < * + * >3 [text$="小额免密支付"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2322af2e-52e2-4059-9757-f26940f4b2fc',
+          snapshotUrls: 'https://i.gkd.li/i/13438414',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: '@[checked=true] < * - [text="开通淘宝小额免密支付"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3ae78555-c0a5-4f76-8096-c4d1593ebb77',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14471853', // 关闭前
+            'https://i.gkd.li/i/14471858', // 关闭后
+          ],
+        },
+      ],
     },
     {
       enable: false,
@@ -237,24 +257,6 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/a35c954d-5162-463c-aee3-b72b9c2d6625',
           snapshotUrls: 'https://i.gkd.li/i/14155537',
-        },
-      ],
-    },
-    {
-      key: 19,
-      name: '功能类-关闭小额免密支付开关',
-      desc: '在支付的时候出现',
-      rules: [
-        {
-          quickFind: true,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches: '@[checked=true] < * - [text="开通淘宝小额免密支付"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3ae78555-c0a5-4f76-8096-c4d1593ebb77',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14471853', // 关闭前
-            'https://i.gkd.li/i/14471858', // 关闭后
-          ],
         },
       ],
     },
