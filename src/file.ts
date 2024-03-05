@@ -342,6 +342,40 @@ export const checkConfig = (newConfig: RawSubscription) => {
   }
 };
 
+// 导出一个异步函数，用于检查是否存在冗余的应用 Markdown 文件
+export const checkAndDeleteFiles = async (): Promise<void> => {
+  const currentDir = process.cwd();
+
+  const docsDir = path.join(currentDir, 'docs');
+  const srcAppsDir = path.join(currentDir, 'src/apps');
+
+  try {
+    const files = await fs.readdir(docsDir);
+
+    for (const file of files) {
+      if (file.endsWith('.md')) {
+        const tsFileName = file.replace('.md', '.ts');
+        const tsFilePath = path.join(srcAppsDir, tsFileName);
+
+        try {
+          await fs.access(tsFilePath, fs.constants.F_OK);
+        } catch (error) {
+          // Check if error object has code property and it's ENOENT
+          if (error && (error as NodeJS.ErrnoException).code === 'ENOENT') {
+            const mdFilePath = path.join(docsDir, file);
+            await fs.unlink(mdFilePath);
+            console.log(`Deleted ${file}`);
+          } else {
+            throw error; // Propagate other errors
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error occurred:', error);
+  }
+};
+
 // 导出一个异步函数，用于更新应用的 Markdown 文件
 export const updateAppMd = async (app: RawApp) => {
   // 生成应用的 Markdown 文本内容
