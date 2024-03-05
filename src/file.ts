@@ -72,8 +72,8 @@ const pkg: typeof PkgT = JSON.parse(
 const pkgKeys = Object.keys(pkg);
 
 // 定义保存规则配置的文件路径和版本文件路径
-const gkdFp = process.cwd() + '/dist/aoguai_gkd.json5';
-const versionFp = process.cwd() + '/dist/aoguai_gkd.version.json';
+const gkdFp = process.cwd() + '/dist/AIsouler_gkd.json5';
+const versionFp = process.cwd() + '/dist/AIsouler_gkd.version.json';
 
 // 解析已保存的规则配置，并将结果赋值给 oldConfig 变量
 const oldConfig: RawSubscription = JSON5.parse(
