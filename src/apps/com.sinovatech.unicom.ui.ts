@@ -33,9 +33,11 @@ export default defineAppConfig({
           key: 0,
           name: '首页弹窗',
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
-          matches:
-            '[text="首页弹窗"] >n View + TextView + Image[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13761130',
+          matches: '[text="首页弹窗"] >3 Image[clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13761130',
+            'https://i.gkd.li/i/14504242',
+          ],
         },
       ],
     },
