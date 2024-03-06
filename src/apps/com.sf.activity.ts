@@ -44,6 +44,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
+          name: '本月礼包',
           activityIds: 'com.sf.activity.MainActivity',
           matches: '[id="BmsAdDialogViewCloseButton"]',
           exampleUrls:
