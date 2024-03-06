@@ -133,8 +133,8 @@ const globalGroups: RawGlobalGroup[] = [
     name: '青少年模式',
     order: utils.YOUNG_ORDER,
     matchTime: 10000,
-    resetMatch: 'app',
     actionMaximum: 1,
+    resetMatch: 'app',
     actionCdKey: 0,
     actionMaximumKey: 0,
     rules: [
