@@ -27,9 +27,30 @@ export default defineAppConfig({
     {
       key: 2,
       name: '功能类-专属月报弹窗',
-      activityIds: 'com.sf.activity.MainActivity',
-      rules: ['[id="MonthReportDialogCloseBtn"] > ImageView'],
-      snapshotUrls: 'https://i.gkd.li/i/12642441',
+      rules: [
+        {
+          activityIds: 'com.sf.activity.MainActivity',
+          matches: '[id="MonthReportDialogCloseBtn"] > ImageView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/83023ed5-f143-4355-9fff-e078011dfa4a',
+          snapshotUrls: 'https://i.gkd.li/i/12642441',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '全屏广告-广告弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.sf.activity.MainActivity',
+          matches: '[id="BmsAdDialogViewCloseButton"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6baf1ea4-9424-4360-b28b-7907b0d7aa4a',
+          snapshotUrls: 'https://i.gkd.li/i/14502128',
+        },
+      ],
     },
   ],
 });
