@@ -1,8 +1,9 @@
 import apps from './rawApps';
 import type { RawGlobalGroup } from '@gkd-kit/api';
-import { OPEN_AD_ORDER } from './utils';
+import * as utils from './utils';
 
-const diabledAppIds = [
+// 全局禁用
+const diabledAppIds: string[] = [
   'com.android.systemui', // 通知栏界面/下拉开关/控制中心
   'com.android.settings', // 系统设置
   'com.android.mms', // 短信/信息
@@ -55,22 +56,38 @@ const diabledAppIds = [
   'com.mycompany.app.soulbrowser', // soul浏览器
 ];
 
-// 如果应用规则已有开屏广告一类的规则, 则在全局规则禁用此应用
-diabledAppIds.push(
-  ...apps
+// 如果应用规则已有全局规则中的某一类的规则, 则在对应全局规则禁用此应用
+function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
+  return apps
     .filter((a) =>
-      a.groups.some((g) => g.name.startsWith('开屏广告') && g.enable !== false),
+      a.groups.filter((g: { name: string }) =>
+        g.name.startsWith(groupNamePrefix),
+      ),
     )
-    .map((a) => a.id),
-);
+    .map((a) => a.id);
+}
+
+// 设置单独禁用
+const uniqueAppIdsAD = new Set([
+  ...diabledAppIds,
+  ...filterAppsByGroup(apps, '开屏广告'),
+]);
+const uniqueAppIdsUP = new Set([
+  ...diabledAppIds,
+  ...filterAppsByGroup(apps, '更新提示'),
+]);
+const uniqueAppIdsYM = new Set([
+  ...diabledAppIds,
+  ...filterAppsByGroup(apps, '青少年模式'),
+]);
 
 const globalGroups: RawGlobalGroup[] = [
   {
     key: 0,
     name: '开屏广告',
-    order: OPEN_AD_ORDER,
-    actionMaximum: 2,
+    order: utils.OPEN_AD_ORDER,
     matchTime: 10000,
+    actionMaximum: 2,
     resetMatch: 'app',
     actionCdKey: 0,
     actionMaximumKey: 0,
@@ -81,12 +98,58 @@ const globalGroups: RawGlobalGroup[] = [
         matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
-        key: -1,
+        key: 1,
         matches:
           '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text*="skip" || text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || desc*="跳过" || desc*="skip" || (vid*="count" && vid*="down" && vid!*="countdown" && vid!*="load" && vid!*="add" && vid!*="ead")]',
       },
     ],
-    apps: diabledAppIds.map((id) => ({ id, enable: false })),
+    apps: [...uniqueAppIdsAD].map((id) => ({ id, enable: false })),
+  },
+  {
+    key: 1,
+    name: '更新提示',
+    order: utils.UPDATE_ORDER,
+    matchTime: 10000,
+    actionMaximum: 1,
+    resetMatch: 'app',
+    actionCdKey: 0,
+    actionMaximumKey: 0,
+    rules: [
+      {
+        key: 0,
+        matches:
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][text$="新版本" || text$="更新" || text$="升级" || text$="体验" || text$="升級" || text$="體驗" || text$="Update" || text$="Upgrade" || text$="Experience"] <n * > [name!$=".CheckBox"][childCount=0][visibleToUser=true][text^="不再" || text$="再说" || text$="拒绝" || text$="再想想" || text^="忽略" || text^="暂不" || text^="放弃" || text^="取消" || text$="不要" || text$="再說" || text$="暫不" || text$="拒絕" || text$="Later" || text^="Ignore" || text^="Not now" || text^="Cancel"]',
+      },
+      {
+        key: 1,
+        matches:
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][desc$="新版本" || desc$="更新" || desc$="升级" || desc$="体验" || desc$="升級" || desc$="體驗" || desc$="Update" || desc$="Upgrade" || desc$="Experience"] <n * > [name!$=".CheckBox"][childCount=0][visibleToUser=true][desc^="不再" || desc$="再说" || desc$="拒绝" || desc$="再想想" || desc^="忽略" || desc^="暂不" || desc^="放弃" || desc^="取消" || desc$="不要" || desc$="再說" || desc$="暫不" || desc$="拒絕" || desc$="Later" || desc^="Ignore" || desc^="Not now" || desc^="Cancel"]',
+      },
+    ],
+    apps: [...uniqueAppIdsUP].map((id) => ({ id, enable: false })),
+  },
+  {
+    key: 2,
+    name: '青少年模式',
+    order: utils.YOUNG_ORDER,
+    matchTime: 10000,
+    resetMatch: 'app',
+    actionMaximum: 1,
+    actionCdKey: 0,
+    actionMaximumKey: 0,
+    rules: [
+      {
+        key: 0,
+        matches:
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][((text*="青少年" || text*="未成年") && text*="模式" || text*="儿童模式") || ((desc*="青少年" || desc*="未成年") && desc*="模式")] <n * > [name!$=".CheckBox"][childCount=0][visibleToUser=true][text*="知道了" || text*="关闭" || desc*="知道了" || desc*="关闭"]',
+      },
+      {
+        key: 1,
+        matches:
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][((text*="青少年" || text*="未成年") && text*="模式") || ((desc*="青少年" || desc*="未成年") && desc*="模式")] <n * > * >n [name!$=".CheckBox"][childCount=0][visibleToUser=true][text*="知道了" || text*="关闭" || desc*="知道了" || desc*="关闭"]',
+      },
+    ],
+    apps: [...uniqueAppIdsYM].map((id) => ({ id, enable: false })),
   },
 ];
 export default globalGroups;
