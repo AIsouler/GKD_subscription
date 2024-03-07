@@ -63,7 +63,7 @@ function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
       (a) =>
         a.groups.filter((g: { name: string }) =>
           g.name.startsWith(groupNamePrefix),
-        ).length === 1,
+        ).length > 0,
     )
     .map((a) => a.id);
 }
