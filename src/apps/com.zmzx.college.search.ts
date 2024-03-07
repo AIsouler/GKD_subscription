@@ -67,21 +67,20 @@ export default defineAppConfig({
         {
           key: 1,
           name: '快手广告-1',
-          activityIds: 'com.bbk.launcher2.Launcher',
-          matches:
-            '[text="广告"] <2 ViewGroup -3 ViewGroup > @ViewGroup[clickable=true] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/13346628',
-        },
-        {
-          key: 2,
-          name: '快手广告-2',
-          activityIds:
+          activityIds: [
+            'com.bbk.launcher2.Launcher',
             'com.zmzx.college.search.activity.main.activity.MainActivity',
-          matches: [
-            'ViewGroup > ViewGroup > ViewGroup[childCount=2] > ImageView + [text="广告"]',
-            'ViewGroup > ViewGroup > @ViewGroup[childCount=1][clickable=true] > ImageView[childCount=0]',
+            'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/13451304',
+          matches: [
+            'ViewGroup[childCount=2] [text="广告"]',
+            'ViewGroup @ViewGroup[clickable=true][childCount=1] > ImageView',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13346628',
+            'https://i.gkd.li/i/13451304',
+            'https://i.gkd.li/i/14519779',
+          ],
         },
         {
           key: 3,
