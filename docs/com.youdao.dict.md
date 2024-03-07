@@ -1,6 +1,6 @@
 # 网易有道词典
 
-存在 7 规则组 - [com.youdao.dict](/src/apps/com.youdao.dict.ts)
+存在 8 规则组 - [com.youdao.dict](/src/apps/com.youdao.dict.ts)
 
 ## 分段广告-单词页面卡片式广告
 
@@ -58,3 +58,12 @@
 - [快照-0](https://i.gkd.li/i/14468564)
 - [快照-1](https://i.gkd.li/i/14468628)
 - [快照-2](https://i.gkd.li/i/14009705)
+
+## 功能类-关闭单词页面[去复习]提示
+
+默认禁用 - 使用返回关闭
+
+- [示例-0](https://m.gkd.li/57941037/ab107cc2-98e1-44a2-a15a-0ee0d4925255)
+
+- [快照-0](https://i.gkd.li/i/14524540)
+- [快照-1](https://i.gkd.li/i/14524817)
