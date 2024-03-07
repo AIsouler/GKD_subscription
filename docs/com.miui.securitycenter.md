@@ -1,6 +1,6 @@
 # 小米手机管家
 
-存在 3 规则组 - [com.miui.securitycenter](/src/apps/com.miui.securitycenter.ts)
+存在 4 规则组 - [com.miui.securitycenter](/src/apps/com.miui.securitycenter.ts)
 
 ## 功能类-自动继续安装
 
@@ -21,3 +21,9 @@
 
 - [快照-0](https://i.gkd.li/i/13474504)
 - [快照-1](https://i.gkd.li/i/13476770)
+
+## 功能类-电量已低于20%
+
+默认禁用 - 点击[知道了]
+
+- [快照-0](https://i.gkd.li/i/14468423)

@@ -14,4 +14,5 @@
 - [快照-3](https://i.gkd.li/i/13766420)
 - [快照-4](https://i.gkd.li/i/13962438)
 - [快照-5](https://i.gkd.li/i/14138323)
-- [快照-6](https://i.gkd.li/i/14228348)
+- [快照-6](https://i.gkd.li/i/14471862)
+- [快照-7](https://i.gkd.li/i/14228348)

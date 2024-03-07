@@ -1,6 +1,6 @@
 # 小米云服务
 
-存在 1 规则组 - [com.miui.cloudservice](/src/apps/com.miui.cloudservice.ts)
+存在 2 规则组 - [com.miui.cloudservice](/src/apps/com.miui.cloudservice.ts)
 
 ## 全屏广告-广告弹窗
 
@@ -11,3 +11,11 @@
 
 - [快照-0](https://i.gkd.li/i/12847374)
 - [快照-1](https://i.gkd.li/i/14320937)
+
+## 更新提示
+
+默认禁用 - 点击[以后再说]
+
+- [示例-0](https://m.gkd.li/57941037/789b4472-f989-4d32-aff2-6b657b6e0deb)
+
+- [快照-0](https://i.gkd.li/i/14476801)

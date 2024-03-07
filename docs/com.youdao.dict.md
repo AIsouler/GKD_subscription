@@ -1,8 +1,8 @@
 # 网易有道词典
 
-存在 6 规则组 - [com.youdao.dict](/src/apps/com.youdao.dict.ts)
+存在 7 规则组 - [com.youdao.dict](/src/apps/com.youdao.dict.ts)
 
-## 局部广告-卡片式广告
+## 分段广告-单词页面卡片式广告
 
 默认禁用
 
@@ -10,7 +10,6 @@
 - [快照-1](https://i.gkd.li/i/13800055)
 - [快照-2](https://i.gkd.li/i/12668583)
 - [快照-3](https://i.gkd.li/i/13800056)
-- [快照-4](https://i.gkd.li/i/14009705)
 
 ## 全屏广告
 
@@ -49,3 +48,13 @@
 
 - [快照-0](https://i.gkd.li/i/14292588)
 - [快照-1](https://i.gkd.li/i/14292587)
+
+## 局部广告-卡片广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/e365b983-15c7-4ac7-acd7-9d7be4c45160)
+
+- [快照-0](https://i.gkd.li/i/14468564)
+- [快照-1](https://i.gkd.li/i/14468628)
+- [快照-2](https://i.gkd.li/i/14009705)
