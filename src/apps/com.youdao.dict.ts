@@ -162,5 +162,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      name: '功能类-关闭单词页面[去复习]提示',
+      desc: '使用返回关闭',
+      rules: [
+        {
+          action: 'back',
+          quickFind: true,
+          activityIds: 'com.youdao.dict.activity.DictQueryActivity',
+          matches: '[text="已收藏单词一周，快去复习吧"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ab107cc2-98e1-44a2-a15a-0ee0d4925255',
+          snapshotUrls: 'https://i.gkd.li/i/14524540',
+        },
+      ],
+    },
   ],
 });
