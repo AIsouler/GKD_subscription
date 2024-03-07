@@ -1,24 +1,26 @@
 # 微信
 
-存在 23 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 27 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 分段广告-朋友圈广告
 
 默认禁用 - 点击广告卡片右上角,直接关闭/出现菜单,确认关闭
 
 - [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79)
+- [示例-1](https://m.gkd.li/57941037/829e1b0b-9fa2-4a31-9c36-542ad6bd7b6e)
 
-- [快照-0](https://i.gkd.li/i/13000395)
-- [快照-1](https://i.gkd.li/i/12905837)
-- [快照-2](https://i.gkd.li/i/13791200)
-- [快照-3](https://i.gkd.li/i/12907642)
-- [快照-4](https://i.gkd.li/i/13926578)
-- [快照-5](https://i.gkd.li/i/14207480)
-- [快照-6](https://i.gkd.li/i/13791202)
-- [快照-7](https://i.gkd.li/i/12642584)
-- [快照-8](https://i.gkd.li/i/12663984)
-- [快照-9](https://i.gkd.li/i/12905838)
-- [快照-10](https://i.gkd.li/i/12905846)
+- [快照-0](https://i.gkd.li/i/14476135)
+- [快照-1](https://i.gkd.li/i/13000395)
+- [快照-2](https://i.gkd.li/i/12905837)
+- [快照-3](https://i.gkd.li/i/13791200)
+- [快照-4](https://i.gkd.li/i/12907642)
+- [快照-5](https://i.gkd.li/i/13926578)
+- [快照-6](https://i.gkd.li/i/14207480)
+- [快照-7](https://i.gkd.li/i/13791202)
+- [快照-8](https://i.gkd.li/i/12642584)
+- [快照-9](https://i.gkd.li/i/12663984)
+- [快照-10](https://i.gkd.li/i/12905838)
+- [快照-11](https://i.gkd.li/i/12905846)
 
 ## 功能类-电脑微信快捷自动登录
 
@@ -192,3 +194,46 @@
 默认禁用 - 自动点击“x”
 
 - [快照-0](https://i.gkd.li/i/14392392)
+
+## 功能类-付款后自动点击完成
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/a5177d9d-6745-443f-baf5-af57153430d8)
+
+- [快照-0](https://i.gkd.li/i/14399355)
+
+## 分段广告-订阅号消息页面广告
+
+默认禁用 - 点击[广告]-点击[不感兴趣]-点击[与我无关]-点击[确定]
+
+- [示例-0](https://m.gkd.li/57941037/efe1849c-3333-4004-9eb1-abe93a3256b6)
+- [示例-1](https://m.gkd.li/57941037/147a847a-e556-403d-8da0-2ba7233caaec)
+- [示例-2](https://m.gkd.li/57941037/489ecd00-5aa1-421e-bcf5-c1b73601f8df)
+- [示例-3](https://m.gkd.li/57941037/2c3ce057-dd99-493b-9486-3a056b74223d)
+
+- [快照-0](https://i.gkd.li/i/14434907)
+- [快照-1](https://i.gkd.li/i/14434906)
+- [快照-2](https://i.gkd.li/i/14434903)
+- [快照-3](https://i.gkd.li/i/14436385)
+- [快照-4](https://i.gkd.li/i/14434902)
+
+## 分段广告-订阅号消息页面视频推荐
+
+默认禁用 - 点击[X]-点击[不喜欢此类视频]-点击[确定]
+
+- [示例-0](https://m.gkd.li/57941037/b777c0b1-f8ed-4712-afd6-2e1a72243475)
+- [示例-1](https://m.gkd.li/57941037/39e8b378-9b55-4838-92af-b28f04402ca4)
+- [示例-2](https://m.gkd.li/57941037/590eb619-9987-4edf-98a8-17146ffeda10)
+
+- [快照-0](https://i.gkd.li/i/14436176)
+- [快照-1](https://i.gkd.li/i/14444654)
+- [快照-2](https://i.gkd.li/i/14436190)
+
+## 功能类-解锁 Windows 微信
+
+默认禁用 - 点击[解锁]
+
+- [示例-0](https://m.gkd.li/57941037/85bb6dcd-0d04-46c1-af14-6e4b57ff4dca)
+
+- [快照-0](https://i.gkd.li/i/14490116)

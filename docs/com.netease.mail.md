@@ -4,14 +4,16 @@
 
 ## 开屏广告
 
+- [示例-0](https://m.gkd.li/57941037/222f6870-d9e3-4e6c-950e-dc40920c52e7)
+
 - [快照-0](https://i.gkd.li/i/12893573)
 - [快照-1](https://i.gkd.li/i/12923776)
 - [快照-2](https://i.gkd.li/i/13195662)
 - [快照-3](https://i.gkd.li/i/12818335)
 - [快照-4](https://i.gkd.li/i/13206298)
-- [快照-5](https://i.gkd.li/i/13207736)
-- [快照-6](https://i.gkd.li/i/12999739)
-- [快照-7](https://i.gkd.li/i/14046124)
+- [快照-5](https://i.gkd.li/i/12999739)
+- [快照-6](https://i.gkd.li/i/14046124)
+- [快照-7](https://i.gkd.li/i/13207736)
 
 ## 更新提示
 
