@@ -135,14 +135,12 @@ const globalGroups: RawGlobalGroup[] = [
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
-    actionCdKey: 0,
-    actionMaximumKey: 0,
     rules: [
       {
         key: 0,
         matches: [
           '[name!$=".CheckBox"][childCount=0][visibleToUser=true][((text*="青少年" || text*="未成年") && text*="模式" || text*="儿童模式") || ((desc*="青少年" || desc*="未成年") && desc*="模式")]',
-          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][text*="知道了" || text*="关闭" || desc*="知道了" || desc*="关闭"]',
+          '[name!$=".CheckBox"][childCount=0][visibleToUser=true][text*="知道了" || text*="关闭" || text="我已知晓" || desc*="知道了" || desc*="关闭"]',
         ],
       },
     ],
