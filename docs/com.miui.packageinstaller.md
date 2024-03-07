@@ -1,6 +1,14 @@
 # 应用包管理组件
 
-存在 3 规则组 - [com.miui.packageinstaller](/src/apps/com.miui.packageinstaller.ts)
+存在 4 规则组 - [com.miui.packageinstaller](/src/apps/com.miui.packageinstaller.ts)
+
+## 功能类-安装来源不可信
+
+默认禁用 - 点击[授权本次安装]
+
+- [示例-0](https://m.gkd.li/57941037/e30144c7-c895-4950-a91d-9ce56a8570c8)
+
+- [快照-0](https://i.gkd.li/i/14456398)
 
 ## 功能类-自动第三方安装应用
 

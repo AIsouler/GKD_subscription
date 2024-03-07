@@ -1,6 +1,6 @@
 # 阿里云盘
 
-存在 4 规则组 - [com.alicloud.databox](/src/apps/com.alicloud.databox.ts)
+存在 6 规则组 - [com.alicloud.databox](/src/apps/com.alicloud.databox.ts)
 
 ## 功能类-自动签到
 
@@ -28,3 +28,15 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/i/13806865)
+
+## 功能类-[开启相册自动备份功能]弹窗
+
+默认禁用 - 关闭弹窗
+
+- [快照-0](https://i.gkd.li/i/14414446)
+
+## 功能类-扫描二维码登录时自动点击登录
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/i/14414503)
