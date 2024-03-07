@@ -59,10 +59,11 @@ const diabledAppIds: string[] = [
 // 如果应用规则已有全局规则中的某一类的规则, 则在对应全局规则禁用此应用
 function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
   return apps
-    .filter((a) =>
-      a.groups.filter((g: { name: string }) =>
-        g.name.startsWith(groupNamePrefix),
-      ),
+    .filter(
+      (a) =>
+        a.groups.filter((g: { name: string }) =>
+          g.name.startsWith(groupNamePrefix),
+        ).length === 1,
     )
     .map((a) => a.id);
 }
