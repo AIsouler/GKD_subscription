@@ -170,11 +170,17 @@ export default defineAppConfig({
         {
           action: 'back',
           quickFind: true,
-          activityIds: 'com.youdao.dict.activity.DictQueryActivity',
+          activityIds: [
+            'com.youdao.dict.activity.DictQueryActivity',
+            'com.youdao.dict.activity.MainActivity',
+          ],
           matches: '[text="已收藏单词一周，快去复习吧"]',
           exampleUrls:
             'https://m.gkd.li/57941037/ab107cc2-98e1-44a2-a15a-0ee0d4925255',
-          snapshotUrls: 'https://i.gkd.li/i/14524540',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14524540',
+            'https://i.gkd.li/i/14524817',
+          ],
         },
       ],
     },
