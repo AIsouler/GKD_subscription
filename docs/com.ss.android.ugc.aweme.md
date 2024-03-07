@@ -1,31 +1,28 @@
 # 抖音
 
-存在 15 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
+存在 14 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
 ## 青少年模式
 
 默认禁用
 
 - [示例-0](https://m.gkd.li/57941037/d2b6ee77-ae06-4873-a106-db4ce2324777)
+- [示例-1](https://m.gkd.li/57941037/29534293-f3c7-4187-a36f-47e37fef2f42)
 
 - [快照-0](https://i.gkd.li/i/14321107)
+- [快照-1](https://i.gkd.li/i/14473006)
 
 ## 局部广告-关闭用户推荐
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/i/12520962)
-- [快照-1](https://i.gkd.li/i/12520943)
+- [快照-0](https://i.gkd.li/i/12520943)
+- [快照-1](https://i.gkd.li/i/12520962)
 - [快照-2](https://i.gkd.li/i/12675396)
 - [快照-3](https://i.gkd.li/i/12675129)
 - [快照-4](https://i.gkd.li/i/12675245)
-
-## 全屏广告-关闭朋友推荐弹窗
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/i/12525387)
-- [快照-1](https://i.gkd.li/i/12525389)
+- [快照-5](https://i.gkd.li/i/12525387)
+- [快照-6](https://i.gkd.li/i/12525389)
 
 ## 更新提示-关闭更新弹窗
 

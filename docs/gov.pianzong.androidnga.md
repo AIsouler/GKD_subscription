@@ -1,6 +1,6 @@
 # NGA玩家社区
 
-存在 5 规则组 - [gov.pianzong.androidnga](/src/apps/gov.pianzong.androidnga.ts)
+存在 6 规则组 - [gov.pianzong.androidnga](/src/apps/gov.pianzong.androidnga.ts)
 
 ## 开屏广告
 
@@ -37,3 +37,11 @@
 - [示例-0](https://m.gkd.li/57941037/346f4485-82a7-4cf3-aab3-1fe6c9bb23af)
 
 - [快照-0](https://i.gkd.li/i/14126934)
+
+## 局部广告-评论区底部广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/93c2431c-065c-421e-9fd4-112e65ef6ae2)
+
+- [快照-0](https://i.gkd.li/i/12893508)
