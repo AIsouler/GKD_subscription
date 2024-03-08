@@ -721,5 +721,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 30,
+      name: '全屏广告-文档页面-腾讯文档APP弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
+          matches:
+            '@TextView[clickable=true] + * > [text="腾讯文档"] + [text^="使用 APP"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2228f99e-e0a1-4915-864f-d60e3d8580a6',
+          snapshotUrls: 'https://i.gkd.li/i/14533286',
+        },
+      ],
+    },
   ],
 });
