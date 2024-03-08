@@ -165,11 +165,14 @@ export default defineAppConfig({
     {
       key: 9,
       name: '功能类-关闭单词页面[去复习]提示',
-      desc: '使用返回关闭',
+      desc: '通过点击提示框以外的其他地方关闭',
       rules: [
         {
-          action: 'back',
           quickFind: true,
+          position: {
+            left: 'width * 0.7231',
+            top: 'width * -1.0673',
+          },
           activityIds: [
             'com.youdao.dict.activity.DictQueryActivity',
             'com.youdao.dict.activity.MainActivity',
