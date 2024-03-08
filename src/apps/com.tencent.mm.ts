@@ -589,10 +589,14 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',
-          matches: '[vid="kinda_button_impl_wrapper"][clickable=true]',
+          matches:
+            '@[vid="kinda_button_impl_wrapper"][clickable=true] > [text="完成"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a5177d9d-6745-443f-baf5-af57153430d8',
-          snapshotUrls: 'https://i.gkd.li/i/14399355',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14399355',
+            'https://i.gkd.li/i/14532946', // 避免在此页面误触
+          ],
         },
       ],
     },
