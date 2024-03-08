@@ -14,7 +14,6 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          action: 'clickCenter',
           position: {
             left: 'width * 0.8833',
             top: 'width * 0.1388',

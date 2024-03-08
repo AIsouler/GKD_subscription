@@ -12,7 +12,6 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          action: 'clickCenter',
           position: {
             left: 'width * 0.8676',
             top: 'width * -1.9094',

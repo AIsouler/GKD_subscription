@@ -21,7 +21,6 @@ export default defineAppConfig({
         {
           key: -1,
           name: '点击广告卡片右上角',
-          action: 'clickCenter',
           position: {
             left: 'width * 0.0569',
             top: 'width * 0.9083',
@@ -611,7 +610,6 @@ export default defineAppConfig({
           key: 0,
           name: '点击[广告]',
           actionCd: 3000,
-          action: 'clickCenter',
           position: {
             left: 'width * 0.8796',
             top: 'width * 0.0574',
@@ -627,7 +625,6 @@ export default defineAppConfig({
           preKeys: 0,
           key: 1,
           name: '点击[不感兴趣]',
-          action: 'clickCenter',
           position: {
             left: 'width * 0.5308',
             top: 'width * 0.3419',
@@ -641,7 +638,6 @@ export default defineAppConfig({
           preKeys: 1,
           key: 2,
           name: '点击[与我无关]',
-          action: 'clickCenter',
           position: {
             left: 'width * 0.1864',
             top: 'width * 0.3419',
@@ -658,7 +654,6 @@ export default defineAppConfig({
           preKeys: 2,
           key: 3,
           name: '点击[确定]',
-          action: 'clickCenter',
           position: {
             left: 'width * 0.8580',
             top: 'width * 0.1197',

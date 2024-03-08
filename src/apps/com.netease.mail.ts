@@ -40,7 +40,6 @@ export default defineAppConfig({
         {
           key: 3,
           quickFind: true,
-          action: 'clickCenter',
           position: {
             left: 'width * 0.9016',
             top: 'width * 0.1557',

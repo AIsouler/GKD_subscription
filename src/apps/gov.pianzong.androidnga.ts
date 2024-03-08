@@ -82,7 +82,6 @@ export default defineAppConfig({
       desc: '点击关闭',
       rules: [
         {
-          action: 'clickCenter',
           position: {
             left: 'width * 0.9325',
             top: 'width * 0.04203',
