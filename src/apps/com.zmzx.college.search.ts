@@ -21,7 +21,6 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          action: 'clickCenter',
           position: {
             left: 'width * 0.8981',
             top: 'width * 0.1574',
