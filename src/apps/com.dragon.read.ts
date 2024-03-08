@@ -31,6 +31,14 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12908734',
           ],
         },
+        {
+          key: 3,
+          quickFind: true,
+          matches: '[text="关闭此条广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/cf9d0574-dc89-4f03-ba01-eb9bcc97925f',
+          snapshotUrls: 'https://i.gkd.li/i/14540281',
+        },
       ],
     },
     {
