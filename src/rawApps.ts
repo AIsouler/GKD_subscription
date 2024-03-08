@@ -25,6 +25,7 @@ for await (const tsFp of walk(process.cwd() + '/src/apps')) {
       )} `,
     );
   }
+  delete appConfig.deprecatedKeys;
   appConfig.groups?.forEach((g) => {
     if (!g.name.startsWith('开屏广告')) {
       g.enable = false;
