@@ -332,6 +332,7 @@
 | 联想                   | [com.lenovo.club.app](/docs/com.lenovo.club.app.md)                                                                                                               | 1      |
 | 联想浏览器HD           | [com.lenovo.browser.hd](/docs/com.lenovo.browser.hd.md)                                                                                                           | 2      |
 | 联想应用中心           | [com.lenovo.leos.appstore](/docs/com.lenovo.leos.appstore.md)                                                                                                     | 2      |
+| 邻里邦                 | [cn.timesneighborhood.app.c](/docs/cn.timesneighborhood.app.c.md)                                                                                                 | 1      |
 | 录音机                 | [com.android.soundrecorder](/docs/com.android.soundrecorder.md)                                                                                                   | 1      |
 | 绿洲                   | [com.sina.oasis](/docs/com.sina.oasis.md)                                                                                                                         | 1      |
 | 麦当劳                 | [com.mcdonalds.gma.cn](/docs/com.mcdonalds.gma.cn.md)                                                                                                             | 2      |
@@ -650,7 +651,7 @@
 | 涨乐财富通             | [com.lphtsccft](/docs/com.lphtsccft.md)                                                                                                                           | 3      |
 | 掌上穿越火线           | [com.tencent.qt.sns](/docs/com.tencent.qt.sns.md)                                                                                                                 | 2      |
 | 掌上道聚城             | [com.tencent.djcity](/docs/com.tencent.djcity.md)                                                                                                                 | 2      |
-| 掌上公交               | [com.mygolbs.mybus](/docs/com.mygolbs.mybus.md)                                                                                                                   | 5      |
+| 掌上公交               | [com.mygolbs.mybus](/docs/com.mygolbs.mybus.md)                                                                                                                   | 6      |
 | 掌上生活               | [com.cmbchina.ccd.pluto.cmbActivity](/docs/com.cmbchina.ccd.pluto.cmbActivity.md)                                                                                 | 5      |
 | 掌上英雄联盟           | [com.tencent.qt.qtl](/docs/com.tencent.qt.qtl.md)                                                                                                                 | 1      |
 | 掌通家园               | [com.seebaby](/docs/com.seebaby.md)                                                                                                                               | 2      |
@@ -662,7 +663,7 @@
 | 正气                   | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md)                                                                                               | 2      |
 | 直播吧                 | [android.zhibo8](/docs/android.zhibo8.md)                                                                                                                         | 3      |
 | 知到                   | [com.able.wisdomtree](/docs/com.able.wisdomtree.md)                                                                                                               | 2      |
-| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 11     |
+| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 12     |
 | 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 9      |
 | 智慧生活               | [com.huawei.smarthome](/docs/com.huawei.smarthome.md)                                                                                                             | 1      |
 | 智慧树                 | [com.hyww.wisdomtree](/docs/com.hyww.wisdomtree.md)                                                                                                               | 2      |
