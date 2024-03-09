@@ -5,6 +5,35 @@ export default defineAppConfig({
   name: '掌上公交',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f1099ff6-38aa-4393-8cf5-418ab8ffd20e',
+          snapshotUrls: 'https://i.gkd.li/i/12745634',
+        },
+        {
+          key: 1,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8b0c3f96-ae36-4799-87c2-1ea37c3d2d4c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12790485',
+            'https://i.gkd.li/i/14546388',
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '分段广告-广告卡片',
       activityIds: [
@@ -75,19 +104,31 @@ export default defineAppConfig({
     {
       key: 2,
       name: '全屏广告-广告弹窗',
-      activityIds: [
-        'com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity',
-        'com.mygolbs.mybus.NewHomePageActivity',
-      ],
       rules: [
         {
+          key: 0,
           name: '点击右上角x关闭图标',
+          activityIds: [
+            'com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity',
+            'com.mygolbs.mybus.NewHomePageActivity',
+          ],
           matches:
             'FrameLayout[childCount=2] > FrameLayout[childCount>4] > FrameLayout[index=1][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12790762',
             'https://i.gkd.li/i/14219270',
           ],
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            'ImageView[childCount=0] < LinearLayout < @LinearLayout[clickable=true] - * > [text="反馈"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ec768f05-5431-4684-af40-a7987dff2ec6',
+          snapshotUrls: 'https://i.gkd.li/i/14546373',
         },
       ],
     },
