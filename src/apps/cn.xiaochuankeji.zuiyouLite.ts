@@ -17,8 +17,12 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/i/12745084',
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12745084',
+            'https://i.gkd.li/i/14546304',
+          ],
         },
         {
           key: 1,
