@@ -223,5 +223,33 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 16,
+      name: '分段广告-扫码乘车后出现的广告',
+      desc: '点击[展开更多]-点击[对该内容不感兴趣]',
+      quickFind: true,
+      activityIds:
+        'com.alipay.android.phone.wallet.aptrip.ui.activity.result.ResultPageActivityV2',
+      rules: [
+        {
+          key: 0,
+          name: '点击[展开更多]',
+          matches: '@[desc="展开更多选项"] - * >2 [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d7c12df8-a92e-45be-a462-bef23ca9b5fc',
+          snapshotUrls: 'https://i.gkd.li/i/14546044',
+        },
+        {
+          key: 1,
+          preKeys: [0],
+          name: '点击[对该内容不感兴趣]',
+          matches:
+            '@RelativeLayout[clickable=true] >2 [text="对该内容不感兴趣"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7008e1da-738c-4790-9f12-6a5155d42c47',
+          snapshotUrls: 'https://i.gkd.li/i/14546047',
+        },
+      ],
+    },
   ],
 });
