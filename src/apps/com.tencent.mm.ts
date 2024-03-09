@@ -382,17 +382,15 @@ export default defineAppConfig({
         {
           key: 0,
           matches: [
-            'RelativeLayout[childCount=1][clickable=true] > [text="提瓦特小助手"]',
-            'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
+            'ImageView[childCount=0][visibleToUser=true] < FrameLayout < @FrameLayout[visibleToUser=true] <2 * - * >5 [text="查看详情"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/12926021',
         },
         {
           key: 1,
-          matches: [
-            'FrameLayout > FrameLayout > FrameLayout > TextView[text="广告"]',
-            'FrameLayout[childCount=6] + FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView',
-          ],
+          quickFind: true,
+          matches:
+            'ImageView[childCount=0][visibleToUser=true] < FrameLayout < @FrameLayout[visibleToUser=true] <2 * - * >4 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13459614',
         },
       ],

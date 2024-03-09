@@ -52,8 +52,9 @@ export default defineAppConfig({
         {
           key: 1,
           name: '消息页面-顶部惊喜礼包',
+          quickFind: true,
           matches:
-            '[text*="惊喜礼包"] + FrameLayout + ImageView[clickable=true]',
+            '@ImageView[childCount=0][visibleToUser=true] - FrameLayout - [text*="惊喜礼包"]',
           snapshotUrls: 'https://i.gkd.li/i/13426912',
         },
         {

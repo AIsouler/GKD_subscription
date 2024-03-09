@@ -49,7 +49,7 @@ export default defineAppConfig({
           name: '首页优惠弹窗3',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
-            '@ImageView < ViewGroup[clickable=true][visibleToUser=true] < ViewGroup + ViewGroup >n [text="开心收下"]',
+            'ImageView < @ViewGroup[clickable=true][visibleToUser=true] < ViewGroup + ViewGroup >7 [text="开心收下"]',
           snapshotUrls: 'https://i.gkd.li/i/13761182',
         },
       ],
