@@ -4,49 +4,60 @@ import * as utils from './utils';
 
 // 全局禁用
 const diabledAppIds: string[] = [
-  'com.android.systemui', // 通知栏界面/下拉开关/控制中心
-  'com.android.settings', // 系统设置
-  'com.android.mms', // 短信/信息
-  'com.android.phone', // 拨号
-  'com.android.incallui', // 通话
-  'com.android.contacts', // 联系人/电话簿
-  'com.android.providers.Telephony', // 电话和短信存储
-  'com.android.phone.recorder', // 录音
-  'com.android.soundrecorder', // 录音机
-  'com.android.server.telecom', // 来电拒接短信服务
-
-  // 排除软件包安装程序
-  'com.android.packageinstaller',
-  'com.google.android.packageinstaller', // Google Play
-  'com.miui.packageinstaller', // 小米系
-  'com.samsung.android.packageinstaller', // 三星系
-  'com.oplus.appdetail', // 一加系
-
-  // 在一些常见的应用中禁用
+  // 在一些非系统应用中禁用
   'com.tencent.mm', // 微信
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝
-
-  'com.google.ar.core', // 谷歌AR服务
-  'com.google.android.syncadapters.calendar', // 谷歌日历同步
-
-  // 小米系
-  'com.miui.aod', // miui 锁屏界面
-  'miui.systemui.plugin', // miui 状态栏界面
-  'com.miui.securityadd', // 系统服务组件
-  // 华为系
-  'com.huawei.android.launcher', // 桌面
-  'com.huawei.mediacontroller', // 音频播控中心
-  // 荣耀系
-  'com.hihonor.android.launcher', // 桌面
-  // OPPO 系
-  'com.oppo.launcher', // 桌面
-  // VIVO 系
-  'com.bbk.launcher2', // 桌面
-  // 一加系
-  'net.oneplus.launcher', // 桌面
-  // 三星系
-  'com.sec.android.app.launcher', // 桌面
+  'com.tencent.wetype', // 微信输入法
+  'com.tmri.app.main', // 交管12123
+  'com.github.android', // GitHub
+  'org.telegram.messenger', // Telegram
+  'com.twitter.android', // X(推特)
+  'com.aistra.hail', // 雹
+  'com.heyanle.easybangumi4', // 纯纯看番
+  'com.perol.pixez', // PixEz
+  'com.perol.play.pixez', // PixEz Google Play版
+  'com.magicalstory.videos', // 奇妙影视
+  'com.guozhigq.pilipala', // PiliPala
+  'com.salt.music', // Salt Player
+  'com.xuncorp.qinalt.music', // 青盐云听
+  'com.github.wgh136.pica_comic', // Pica Comic
+  'com.yenaly.han1meviewer', // Han1meViewer
+  'ru.zdevs.zarchiver', // ZArchiver
+  'ru.zdevs.zarchiver.pro', // ZArchiver Pro
+  'me.zhanghai.android.files', // 质感文件
+  'com.xjcheng.musictageditor', // 音乐标签
+  'com.lalilu.lmusic', // LMusic
+  'com.ktls.fileinfo', // 存储空间清理
+  'idm.internet.download.manager', // 1DM
+  'idm.internet.download.manager.plus', // 1DM+
+  'com.mxtech.videoplayer', // MX播放器
+  'com.mxtech.videoplayer.pro', // MX播放器专业版
+  'com.github.kr328.clash', // Clash for Android
+  'com.x8bit.bitwarden', // Bitwarden
+  'org.localsend.localsend_app', // LocalSend
+  'moe.shizuku.privileged.api', // Shizuku
+  'com.ktls.automation', // 自动点击工具
+  'com.deepl.mobiletranslator', // DeepL
+  'com.accessibilitymanager', // 无障碍管理器
+  'me.tasy5kg.cutegif', // 小萌GIF
+  'com.absinthe.libchecker', // LibChecker
+  'com.github.metacubex.clash.meta', // Clash Meta for Android
+  'io.github.jd1378.otphelper', // 短信验证码自动复制
+  'com.valvesoftware.android.steam.community', // Steam
+  'io.legado.app.release', // 阅读
+  'com.getsurfboard', // Surfboard
+  'moe.nb4a', // NekoBox
+  'com.v2ray.ang', // v2rayNG
+  'com.xiaoyv.bangumi', // Bangumi for Android
+  'com.funny.translation', // 译站
+  'com.looker.droidify', // Droid-ify
+  'app.eleven.com.fastfiletransfer', // 文件闪传
+  'com.idaodan.clean.master', // 雪豹速清
+  'com.samsung.agc.gcam84', // 相机
+  'xxx.pornhub.fuck', // JavDB
+  'com.wsw.cospa', // 异次元
+  'app.mihon', // Mihon
 
   // https://github.com/gkd-kit/gkd/issues/451
   'mark.via', // via浏览器
