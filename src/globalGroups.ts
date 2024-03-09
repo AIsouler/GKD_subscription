@@ -1,5 +1,5 @@
 import apps from './rawApps';
-import type { RawGlobalGroup } from '@gkd-kit/api';
+import { RawGlobalGroup } from '@gkd-kit/api';
 import * as utils from './utils';
 
 // 全局禁用

@@ -3,8 +3,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import type PkgT from '../package.json';
 import { parseSelector } from './selector';
-import type { RawAppAddProp } from './types';
-import type {
+import { RawApp } from './types';
+import {
   RawAppGroup,
   RawGlobalGroup,
   IArray,
@@ -206,7 +206,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
 
   // 检查组和规则的重复键
   const apps = newConfig.apps || [];
-  apps.forEach((app: RawAppAddProp) => {
+  apps.forEach((app: RawApp) => {
     const deprecatedKeys = app.deprecatedKeys || [];
     const keys = new Set<number>();
     const oldGroups = oldConfig.apps?.find((a) => a.id == app.id)?.groups || [];
@@ -377,7 +377,7 @@ export const checkAndDeleteFiles = async (): Promise<void> => {
 };
 
 // 导出一个异步函数，用于更新应用的 Markdown 文件
-export const updateAppMd = async (app: RawAppAddProp) => {
+export const updateAppMd = async (app: RawApp) => {
   // 生成应用的 Markdown 文本内容
   const appHeadMdText = [
     `# ${app.name}`,
@@ -509,7 +509,7 @@ const getGlobalDiffLog = (
 
 // 定义一个类型，表示应用的变更日志
 type AppDiff = {
-  app: RawAppAddProp;
+  app: RawApp;
   addGroups: RawAppGroup[];
   changeGroups: RawAppGroup[];
   removeGroups: RawAppGroup[];

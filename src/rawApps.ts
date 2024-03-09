@@ -4,17 +4,15 @@ import url from 'node:url';
 import picocolors from 'picocolors';
 import { pinyin } from 'pinyin-pro';
 import { walk } from './file';
-import type { RawAppAddProp } from './types';
+import { RawApp } from './types';
 import { OPEN_AD_ORDER } from './utils';
 
-const rawApps: RawAppAddProp[] = [];
+const rawApps: RawApp[] = [];
 for await (const tsFp of walk(process.cwd() + '/src/apps')) {
   if (!tsFp.endsWith('.ts')) {
     throw new Error('invalid typescript app config file: ' + tsFp);
   }
-  const mod: { default: RawAppAddProp } = await import(
-    url.pathToFileURL(tsFp).href
-  );
+  const mod: { default: RawApp } = await import(url.pathToFileURL(tsFp).href);
   const appConfig = mod.default;
   if (path.basename(tsFp, '.ts') != appConfig.id) {
     throw new Error(
