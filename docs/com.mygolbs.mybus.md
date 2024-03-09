@@ -1,6 +1,15 @@
 # 掌上公交
 
-存在 5 规则组 - [com.mygolbs.mybus](/src/apps/com.mygolbs.mybus.ts)
+存在 6 规则组 - [com.mygolbs.mybus](/src/apps/com.mygolbs.mybus.ts)
+
+## 开屏广告
+
+- [示例-0](https://m.gkd.li/57941037/f1099ff6-38aa-4393-8cf5-418ab8ffd20e)
+- [示例-1](https://m.gkd.li/57941037/8b0c3f96-ae36-4799-87c2-1ea37c3d2d4c)
+
+- [快照-0](https://i.gkd.li/i/12745634)
+- [快照-1](https://i.gkd.li/i/12790485)
+- [快照-2](https://i.gkd.li/i/14546388)
 
 ## 分段广告-广告卡片
 
@@ -26,8 +35,11 @@
 
 默认禁用
 
+- [示例-0](https://m.gkd.li/57941037/ec768f05-5431-4684-af40-a7987dff2ec6)
+
 - [快照-0](https://i.gkd.li/i/12790762)
 - [快照-1](https://i.gkd.li/i/14219270)
+- [快照-2](https://i.gkd.li/i/14546373)
 
 ## 局部广告-顶栏小广告
 
