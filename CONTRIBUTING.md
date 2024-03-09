@@ -86,7 +86,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 了解完了之后, 编写的选择器也很简单 `[id="com.mopub.ad.xiaomi:id/nativeclose"]`
 
 接下来测试这个选择器能否选中这个图标按钮, 点击审查工具的 选择器查询, 输入刚刚这个规则, 然后点击查询
-`这里点击右侧的分享-生成链接-zip才能获取快照链接（以/import/开头）`
+`这里点击右侧的分享-生成链接-zip才能获取快照链接（以/i/开头）`
 
 ![image](https://github.com/gkd-kit/subscription/assets/38517192/3aea04fd-da91-4f43-a79e-e40fdad4a5d4)
 
