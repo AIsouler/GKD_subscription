@@ -246,10 +246,12 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '功能类-下单成功邀请好友弹窗',
-      desc: '点击X',
+      name: '全屏广告-下单后出现的弹窗',
+      desc: '点击关闭',
       rules: [
         {
+          key: 0,
+          name: '邀请好友弹窗',
           activityIds: [
             'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
             'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
@@ -264,6 +266,18 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14456017',
             'https://i.gkd.li/i/13308175',
           ],
+        },
+        {
+          key: 1,
+          name: '拼单返现弹窗',
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches: [
+            '[text="拼单返现"]',
+            'WebView[text="拼多多"] >3 View[index=0] > Image[clickable=true][visibleToUser=true][childCount=0]',
+          ],
+          exampleUrls:
+            'https://m.gkd.li/57941037/abc035bb-0d18-4711-b64c-a5319dd2191d',
+          snapshotUrls: 'https://i.gkd.li/i/14549422',
         },
       ],
     },
