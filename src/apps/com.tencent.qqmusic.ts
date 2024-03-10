@@ -89,5 +89,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 7,
+      name: '全屏广告-推荐开启高品质音质弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
+          matches:
+            '[text^="推荐您开启臻品音质"] -3 [desc="关闭"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/5efa87c2-5097-4c3f-b36d-2cb3bb768e8a',
+          snapshotUrls: 'https://i.gkd.li/i/14549936',
+        },
+      ],
+    },
   ],
 });
