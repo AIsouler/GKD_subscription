@@ -614,12 +614,13 @@ export default defineAppConfig({
           },
           excludeMatches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
           matches:
-            'View[visibleToUser=true] - View > [desc="广告"||desc=null][visibleToUser=true]',
+            'View[visibleToUser=true] - View[desc!="常​看​的​号​"] > [desc="广告"||desc=null][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/9fc6137e-b615-46cf-b22e-20c62e398f45',
           snapshotUrls: [
             'https://i.gkd.li/i/14544716',
             'https://i.gkd.li/i/14545735',
+            'https://i.gkd.li/i/14548771', // 避免在此页面误触
           ],
         },
         {
