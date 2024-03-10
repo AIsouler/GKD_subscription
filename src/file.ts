@@ -342,40 +342,6 @@ export const checkConfig = (newConfig: RawSubscription) => {
   }
 };
 
-// 导出一个异步函数，用于检查是否存在冗余的应用 Markdown 文件
-export const checkAndDeleteFiles = async (): Promise<void> => {
-  const currentDir = process.cwd();
-
-  const docsDir = path.join(currentDir, 'docs');
-  const srcAppsDir = path.join(currentDir, 'src/apps');
-
-  try {
-    const files = await fs.readdir(docsDir);
-
-    for (const file of files) {
-      if (file.endsWith('.md')) {
-        const tsFileName = file.replace('.md', '.ts');
-        const tsFilePath = path.join(srcAppsDir, tsFileName);
-
-        try {
-          await fs.access(tsFilePath, fs.constants.F_OK);
-        } catch (error) {
-          // Check if error object has code property and it's ENOENT
-          if (error && (error as NodeJS.ErrnoException).code === 'ENOENT') {
-            const mdFilePath = path.join(docsDir, file);
-            await fs.unlink(mdFilePath);
-            console.log(`Deleted ${file}`);
-          } else {
-            throw error; // Propagate other errors
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.error('Error occurred:', error);
-  }
-};
-
 // 导出一个异步函数，用于更新应用的 Markdown 文件
 export const updateAppMd = async (app: RawApp) => {
   // 生成应用的 Markdown 文本内容
@@ -441,6 +407,40 @@ export const updateAppMd = async (app: RawApp) => {
 
   const appMdText = [appHeadMdText, groupMdText].join('\n\n').trim() + '\n';
   await fs.writeFile(process.cwd() + `/docs/${app.id}.md`, appMdText, 'utf-8');
+};
+
+// 导出一个异步函数，用于检查是否存在冗余的应用 Markdown 文件
+export const checkAndDeleteFiles = async (): Promise<void> => {
+  const currentDir = process.cwd();
+
+  const docsDir = path.join(currentDir, 'docs');
+  const srcAppsDir = path.join(currentDir, 'src/apps');
+
+  try {
+    const files = await fs.readdir(docsDir);
+
+    for (const file of files) {
+      if (file.endsWith('.md')) {
+        const tsFileName = file.replace('.md', '.ts');
+        const tsFilePath = path.join(srcAppsDir, tsFileName);
+
+        try {
+          await fs.access(tsFilePath, fs.constants.F_OK);
+        } catch (error) {
+          // Check if error object has code property and it's ENOENT
+          if (error && (error as NodeJS.ErrnoException).code === 'ENOENT') {
+            const mdFilePath = path.join(docsDir, file);
+            await fs.unlink(mdFilePath);
+            console.log(`Deleted ${file}`);
+          } else {
+            throw error; // Propagate other errors
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error occurred:', error);
+  }
 };
 
 // 定义一个函数，用于获取应用组的变更日志
@@ -639,20 +639,32 @@ export const updateReadMeMd = async (
       ].join('\n\n') + '\n'; // 拼接变更日志文本并换行
 
     await fs.writeFile(process.cwd() + '/CHANGELOG.md', changeLogText); // 将变更日志写入 CHANGELOG.md 文件
+    await checkAndDeleteFiles(); // 调用检查是否存在冗余的应用 MD 文件
   }
 
   if (changeCount > 0) {
     // 如果存在变更
     // 构建应用列表文本
     const appListText =
-      '| 名称 | ID | 规则组 |\n| - | - | - |\n' + // 表格标题
-      newConfig
-        .apps!.map((app) => {
-          // 遍历新配置中的应用列表
-          const groups = app.groups || []; // 获取应用的规则组列表
-          return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`; // 构建应用信息行
-        })
-        .join('\n'); // 拼接应用信息行
+      [
+        '## 应用规则\n\n| 名称 | ID | 规则组 |\n| - | - | - |\n' + // 表格标题
+          newConfig
+            .apps!.map((app) => {
+              // 遍历新配置中的应用列表
+              const groups = app.groups || []; // 获取应用的规则组列表
+              return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`; // 构建应用信息行
+            })
+            .join('\n') + // 拼接应用信息行
+          '\n\n---\n\n' + // 拼接应用变更详情信息
+          '## 全局规则\n\n| 全局规则 | 名称 | 规则组 |\n| - | - | - |\n' + // 表格标题 // 全局规则表格标题
+          newConfig
+            .globalGroups!.map((a) => {
+              // 遍历新配置中的应用列表
+              return `| 全局规则 | ${a.name} | ${a.rules.length} |`; // 构建全局规则信息行
+            })
+            .join('\n'), // 拼接全局规则变更详情信息
+      ].join('\n\n') + '\n'; // 拼接变更日志文本并换行
+
     const appListTemplateMd = await fs.readFile(
       process.cwd() + '/AppListTemplate.md', // 读取应用列表模板文件
       'utf-8', // 指定文件编码格式
