@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '局部广告-阅读页面底部广告',
+      name: '局部广告-阅读页面广告',
       activityIds: [
         'com.dragon.read.ad.banner.ui',
         'com.dragon.read.reader.ReaderActivity',
@@ -38,6 +38,14 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/cf9d0574-dc89-4f03-ba01-eb9bcc97925f',
           snapshotUrls: 'https://i.gkd.li/i/14540281',
+        },
+        {
+          key: 4,
+          matches:
+            'HorizontalAndVerticalScrollView > FrameLayout[childCount=13] >8 @FrameLayout[index=2][clickable=true] > ImageView',
+          exampleUrls:
+            'https://m.gkd.li/57941037/0129e5a7-ead1-4b92-a008-708632e5a927',
+          snapshotUrls: 'https://i.gkd.li/i/14548657',
         },
       ],
     },
