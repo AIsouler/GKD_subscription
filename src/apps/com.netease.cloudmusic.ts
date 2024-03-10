@@ -96,7 +96,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '评论区广告1',
+          name: '评论区广告',
           quickFind: true,
           activityIds:
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
@@ -120,18 +120,6 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/ed4bb569-b3e1-4644-a586-f01d95c150e9',
           snapshotUrls: 'https://i.gkd.li/i/14276854',
-        },
-        {
-          key: 3,
-          name: '评论区广告2',
-          quickFind: true,
-          activityIds:
-            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
-          matches:
-            '[vid="commentVHRootId"][visibleToUser=true] - [vid="commentVHRootId"] [vid="closeAction"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/2933d8b0-7731-46bb-a644-836da1886958',
-          snapshotUrls: 'https://i.gkd.li/i/14318169',
         },
       ],
     },
@@ -362,6 +350,35 @@ export default defineAppConfig({
           matches:
             '@ImageView[index=1] <2 ViewGroup[childCount=2] <<n [id="com.netease.cloudmusic:id/dsl_dialog_root"]',
           snapshotUrls: 'https://i.gkd.li/i/14036940',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '分段广告-评论区广告',
+      desc: '点击[关闭]-点击[不感兴趣]',
+      quickFind: true,
+      activityIds:
+        'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击[关闭]',
+          matches:
+            // 通过广告下方评论visibleToUser=true防止误触
+            '[vid="commentVHRootId"][visibleToUser=true] - [vid="commentVHRootId"] [vid="closeAction"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2f9d5dee-c9f3-4a64-8ccd-f154c1901a12',
+          snapshotUrls: 'https://i.gkd.li/i/14549836',
+        },
+        {
+          key: 1,
+          preKeys: [0],
+          name: '点击[不感兴趣]',
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3750b512-4970-48ee-bc04-0c0e597702c2',
+          snapshotUrls: 'https://i.gkd.li/i/14549856',
         },
       ],
     },
