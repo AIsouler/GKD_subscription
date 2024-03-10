@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '小米手机管家',
   groups: [
     {
-      enable: false,
       key: 10,
       name: '功能类-自动继续安装',
       desc: 'USB安装应用,点击继续安装',
@@ -19,7 +18,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '功能类-禁止获取定位',
       desc: '关闭"允许联网及定位"后，每次打开手机管家都会出现',
@@ -42,7 +40,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 12,
       name: '功能类-忽略体检分数',
       desc: '退出时忽略体检优化分数',

@@ -22,7 +22,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12715291',
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
       matchTime: 10000,

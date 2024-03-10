@@ -30,7 +30,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642307',
     },
     {
-      enable: false,
       key: 3,
       name: '全屏广告-美食大礼包弹窗',
       quickFind: true,
@@ -39,7 +38,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642310',
     },
     {
-      enable: false,
       key: 4,
       name: '全屏广告-酒店提前订弹窗',
       quickFind: true,
@@ -48,7 +46,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642319',
     },
     {
-      enable: false,
       key: 5,
       name: '定位提示-请求定位弹窗',
       quickFind: true,
@@ -75,7 +72,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 6,
       name: '全屏广告-打车界面弹窗广告',
       quickFind: true,
@@ -91,7 +87,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '更新提示',
       quickFind: true,
@@ -102,7 +97,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12909385',
     },
     {
-      enable: false,
       key: 8,
       name: '通知提示-请求打开通知权限弹窗',
       desc: '点击关闭',
@@ -115,7 +109,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13258995',
     },
     {
-      enable: false,
       key: 9,
       name: '功能类-通勤卡添加至桌面',
       desc: '点击取消',

@@ -22,7 +22,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '全屏广告-首页红包弹窗',
       desc: '自动点击x按钮',
@@ -46,7 +45,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '局部广告-首页左侧红包悬浮控件',
       desc: '自动点击x按钮',

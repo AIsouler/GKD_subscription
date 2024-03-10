@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '懂车帝',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '分段广告-首页推荐卡片广告',
       desc: '需二次点击关闭原因',

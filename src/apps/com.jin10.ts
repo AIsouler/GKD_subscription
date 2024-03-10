@@ -28,7 +28,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/12706047'],
     },
     {
-      enable: false,
       key: 10,
       name: '局部广告-会员页面顶部广告',
       activityIds: ['com.jin10.lgd.biz.MainActivity'],

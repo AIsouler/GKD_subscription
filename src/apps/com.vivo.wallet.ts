@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '钱包',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '通知提示-请求通知权限授权弹窗',
       quickFind: true,

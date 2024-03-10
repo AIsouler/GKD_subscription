@@ -6,7 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
-      enable: false,
       key: 1,
       name: '局部广告-消息列表上方广告',
       quickFind: true,
@@ -23,7 +22,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '功能类-文件即将过期提示',
       quickFind: true,
@@ -42,7 +40,6 @@ export default defineAppConfig({
     },
     {
       name: '功能类-自动点击原图',
-      enable: false,
       key: 3,
       actionMaximum: 1,
       quickFind: true,
@@ -61,7 +58,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '更新提示',
       quickFind: true,
@@ -82,7 +78,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 5,
       name: '功能类-扫码自动登录桌面版',
       quickFind: true,

@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '雨见',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '更新提示',
       quickFind: true,

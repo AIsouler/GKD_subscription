@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '小猿口算',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '评价提示',
       quickFind: true,

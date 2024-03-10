@@ -24,7 +24,6 @@ export default defineAppConfig({
       name: '全屏广告-今日要闻弹窗',
       key: 2,
       desc: '点击不再提示',
-      enable: false,
       quickFind: true,
       activityIds: 'com.ruipeng.zipu.ui.main.uniauto.UniautoHomeActivity',
       rules: [

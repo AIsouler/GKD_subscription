@@ -22,7 +22,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642459',
     },
     {
-      enable: false,
       key: 3,
       name: '全屏广告-签到弹窗',
       activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',

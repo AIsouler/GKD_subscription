@@ -88,7 +88,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 8,
       name: '通知提示-开启消息通知弹窗',
       desc: '自动点击关闭',
@@ -108,7 +107,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/14317054',
     },
     {
-      enable: false,
       key: 10,
       name: '全屏广告-看视频免费享极速下载弹窗',
       desc: '自动点击x按钮',

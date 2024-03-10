@@ -28,7 +28,6 @@ export default defineAppConfig({
         'com.sigmob.sdk.base.common.TransparentAdActivity',
         'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
       ],
-
       rules: [
         {
           matches: '[id="ad_area"] [id="close_btn"]',

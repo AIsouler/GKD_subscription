@@ -50,7 +50,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '更新提示',
       matchTime: 10000,
@@ -61,7 +60,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12882371',
     },
     {
-      enable: false,
       key: 4,
       name: '功能类-开启WPS云服务',
       desc: '自动点击不开启',

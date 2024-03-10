@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '比亚迪王朝',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '更新提示',
       matchTime: 10000,

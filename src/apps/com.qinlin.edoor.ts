@@ -33,7 +33,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '全屏广告-开门有奖弹窗',
       activityIds: 'com.qinlin.edoor.MainActivity',
@@ -41,7 +40,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12707736',
     },
     {
-      enable: false,
       key: 11,
       name: '全屏广告-获得金币弹窗',
       activityIds: 'com.qinlin.edoor.MainActivity',

@@ -60,7 +60,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 6,
       name: '局部广告-评论区博主内容推荐',
       desc: '评论区同一博主其他博文推荐',
@@ -129,7 +128,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 9,
       name: '通知提示-请求开启通知弹窗',
       desc: '自动点击暂不开启',
@@ -142,7 +140,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/12705979'],
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-请求开启通知提示信息',
       desc: '自动点击x按钮',
@@ -155,7 +152,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/12705986'],
     },
     {
-      enable: false,
       key: 11,
       name: '局部广告-首页顶部签到卡片',
       desc: '自动点击x按钮',

@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '飞书',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '功能类-桌面端登录确认',
       quickFind: true,
@@ -16,7 +15,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13494960',
     },
     {
-      enable: false,
       key: 10,
       name: '功能类-自动查看原图',
       desc: '查看图片时自动点击"查看原图"',
@@ -27,7 +25,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12840528',
     },
     {
-      enable: false,
       key: 11,
       name: '功能类-自动发送原图',
       desc: '发送图片时自动勾选"原图"',

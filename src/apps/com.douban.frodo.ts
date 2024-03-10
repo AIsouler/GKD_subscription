@@ -30,7 +30,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '功能类-不分享/同步作品短评',
       desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
@@ -73,7 +72,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '分段广告-信息流广告',
       desc: '首页动态/推荐,小组讨论列表,帖子底部,点击广告关闭后出现关闭原因底部菜单-点击不感兴趣',

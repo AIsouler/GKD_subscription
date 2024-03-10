@@ -102,7 +102,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '定位提示',
       desc: '首页/外卖界面-"打开位置开关弹窗"-点击右侧x关闭',
@@ -136,7 +135,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 8,
       name: '通知提示-请求开启通知权限弹窗',
       desc: '点击跳过',

@@ -69,7 +69,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '更新提示',
       desc: '自动点击以后再说。',

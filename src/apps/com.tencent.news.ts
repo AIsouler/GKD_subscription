@@ -48,7 +48,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
       matchTime: 10000,

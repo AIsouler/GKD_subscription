@@ -140,7 +140,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '评价提示',
       quickFind: true,

@@ -6,7 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [7],
   groups: [
     {
-      enable: false,
       key: 1,
       name: '局部广告-购物车页面砸金蛋',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -14,7 +13,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642266',
     },
     {
-      enable: false,
       key: 2,
       name: '局部广告-我的页面悬浮广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -39,7 +37,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '局部广告-首页右侧浮层广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -52,7 +49,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '通知提示-请求打开通知',
       matchTime: 10000,
@@ -120,7 +116,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 6,
       name: '局部广告-首页底部横幅广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -132,7 +127,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '功能类-京东账号登录授权',
       desc: '自动点击"确认登录"',
@@ -141,7 +135,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12901734',
     },
     {
-      enable: false,
       key: 11,
       name: '局部广告-支付页面产品推荐',
       desc: '自动点击右上角"x"',
@@ -151,7 +144,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13191146',
     },
     {
-      enable: false,
       key: 12,
       name: '全屏广告-购物车页面支付成功广告弹窗',
       desc: '自动点击正下方的"x"',

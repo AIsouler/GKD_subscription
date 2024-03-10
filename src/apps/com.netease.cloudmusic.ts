@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '网易云音乐',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '分段广告-卡片广告',
       desc: '点击[X]-点击[直接关闭]/[不感兴趣]',
@@ -164,7 +163,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 5,
       name: '全屏广告-VIP弹窗',
       quickFind: true,
@@ -249,7 +247,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '局部广告-播放界面广告',
       desc: '右上角VIP小悬浮、巨幅卡片式广告',

@@ -32,7 +32,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '局部广告-消息页面顶部横幅广告',
       desc: '点击关闭',
@@ -78,7 +77,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '分段广告-好友动态-广告卡片',
       rules: [
@@ -172,7 +170,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '局部广告-顶部SVIP广告',
       desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
@@ -188,7 +185,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 5,
       name: '局部广告-动态页好友热播',
       desc: '好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭',
@@ -250,7 +246,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 8,
       name: '功能类-消息页面顶部"无法接收新消息通知"',
       desc: '消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x',
@@ -267,7 +262,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12914734',
     },
     {
-      enable: false,
       key: 10,
       name: '功能类-自动勾选原图',
       desc: '发送图片时自动勾选原图',
@@ -285,7 +279,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '功能类-自动查看原图',
       desc: '查看图片时自动点击原图',
@@ -297,7 +290,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 12,
       name: '局部广告-QQ小世界评论区广告',
       desc: '点击广告-弹出原因框-关闭此条广告',
@@ -351,7 +343,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 15,
       name: '局部广告-好友动态页面"为你推荐"',
       quickFind: true,
@@ -394,7 +385,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 18,
       name: '更新提示-消息页面-顶部',
       matchTime: 10000,
@@ -417,7 +407,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 19,
       name: '更新提示-内测邀请弹窗',
       matchTime: 10000,

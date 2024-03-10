@@ -30,7 +30,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13063442',
     },
     {
-      enable: false,
       key: 4,
       name: '通知提示-开启消息通知弹窗',
       desc: '自动点击关闭',

@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '必剪',
   groups: [
     {
-      enable: false,
       key: 0,
       name: '通知提示-通知权限请求',
       desc: '会出现在创作、模板、我的页面，自动点击不开启',

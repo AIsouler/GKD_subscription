@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '一起来涂色',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '分段广告-底部穿山甲广告',
       desc: '点击广告卡片x关闭按钮-关闭反馈理由弹窗',

@@ -17,7 +17,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '更新提示-设备固件升级提示弹窗',
       matchTime: 10000,

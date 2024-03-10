@@ -19,7 +19,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '全屏广告-弹窗广告',
       activityIds: [

@@ -87,7 +87,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '全屏广告-应用内广告弹窗',
       desc: '⚠ 此规则容易误触，因此默认关闭。',
@@ -164,7 +163,6 @@ export default defineAppConfig({
         {
           key: 30,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-
           matches:
             'ImageView < @ViewGroup[visibleToUser=true] < ViewGroup +n ViewGroup > [text="广告"]',
           snapshotUrls: [
@@ -200,7 +198,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '分段广告-"下载页"广告卡片',
       desc: '需选二次弹窗关闭原因',

@@ -40,7 +40,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/12914450'],
     },
     {
-      enable: false,
       key: 4,
       name: '更新提示',
       matchTime: 10000,
@@ -51,7 +50,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/13042207'],
     },
     {
-      enable: false,
       key: 5,
       name: '通知提示',
       desc: '自动点击关闭',

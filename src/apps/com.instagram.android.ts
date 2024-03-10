@@ -6,7 +6,6 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      enable: false,
       name: '分段广告-信息流广告',
       desc: '但是步骤较多, 影响app使用',
       quickFind: true,

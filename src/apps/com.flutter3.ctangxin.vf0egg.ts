@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '糖心Vlog',
   groups: [
     {
-      enable: false,
       key: 0,
       name: '开屏广告',
       desc: '虚假按钮，实际点击无法跳过，规则暂时保留',

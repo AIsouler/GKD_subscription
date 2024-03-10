@@ -7,7 +7,6 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-购买会员弹窗广告',
-      enable: false,
       quickFind: true,
       activityIds: 'com.youloft.icloser.view.dialog.VipRetainPacketDialog',
       rules: '[id="com.youloft.icloser:id/tv_later_buy"]',

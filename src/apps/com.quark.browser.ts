@@ -14,7 +14,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '功能类-设置默认浏览器提示',
       desc: '点击取消',

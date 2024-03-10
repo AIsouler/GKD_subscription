@@ -18,7 +18,6 @@ export default defineAppConfig({
       key: 2,
       name: '全屏广告-超值换购弹窗',
       desc: '关闭超值换购弹窗',
-      enable: false,
       activityIds: 'com.lucky.luckyclient.preview2.OrderPreviewActivity2',
       quickFind: true,
       rules: '[id="com.lucky.luckyclient:id/close_iv"][visibleToUser=true]',
@@ -28,7 +27,6 @@ export default defineAppConfig({
       key: 3,
       name: '全屏广告-优惠卷领取提示',
       desc: '按下返回键关闭优惠卷领取提示',
-      enable: false,
       activityIds: 'com.luckin.client.main.FirstActivity',
       rules: {
         matches: '[id="com.lucky.luckyclient:id/webcontent"]',

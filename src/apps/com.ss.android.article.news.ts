@@ -40,7 +40,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
       matchTime: 10000,
@@ -59,7 +58,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '全屏广告-竖屏视频广告',
       desc: '点击右上角[更多]图标按钮,点击不感兴趣',
@@ -92,7 +90,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 12,
       name: '分段广告-信息流广告',
       desc: '点击右上角x按钮,点击不感兴趣',
@@ -137,7 +134,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 13,
       name: '局部广告-底部话题推荐弹窗',
       activityIds: ['com.ss.android.article.news.activity.MainActivity'],
@@ -151,7 +147,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 14,
       name: '功能类-自动观看广告视频',
       desc: '自动观看广告并等待30s后关闭',

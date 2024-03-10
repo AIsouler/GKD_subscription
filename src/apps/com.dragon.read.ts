@@ -186,7 +186,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/14395093',
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-请求通知权限弹窗',
       desc: '自动点击"取消"',

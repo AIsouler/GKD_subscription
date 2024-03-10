@@ -42,7 +42,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '全屏广告-签到弹窗',
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
@@ -51,7 +50,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/12640320'],
     },
     {
-      enable: false,
       key: 99,
       name: '局部广告-右侧悬浮红包',
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
@@ -71,7 +69,6 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/i/13489942'],
     },
     {
-      enable: false,
       key: 5,
       name: '全屏广告-字节视频广告',
       desc: '此规则有概率误触或失效，请谨慎选择开启。',
@@ -99,7 +96,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 6,
       name: '全屏广告-百度',
       desc: '此规则有概率误触或失效，请谨慎选择开启。',
@@ -115,7 +111,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '全屏广告-腾讯',
       desc: '此规则有概率误触或失效，请谨慎选择开启。',

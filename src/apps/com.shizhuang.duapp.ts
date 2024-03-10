@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '得物',
   groups: [
     {
-      enable: false,
       key: 4,
       name: '功能类-截屏分享',
       desc: '关闭截屏时app弹出的分享弹窗',

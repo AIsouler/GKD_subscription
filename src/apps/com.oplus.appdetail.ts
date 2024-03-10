@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '应用安装器',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '功能类-自动安装应用',
       rules: [

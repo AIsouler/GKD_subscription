@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '下载工具箱',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '通知提示-公告弹窗',
       actionMaximum: 1,
@@ -15,7 +14,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13392027',
     },
     {
-      enable: false,
       key: 2,
       name: '功能类-自动识别解析链接',
       activityIds: 'com.one.downloadtools.ui.activity.HomeActivity',
@@ -23,7 +21,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13392085',
     },
     {
-      enable: false,
       key: 3,
       name: '全屏广告-开通会员弹窗',
       activityIds: 'com.one.downloadtools.ui.activity.HomeActivity',

@@ -64,7 +64,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-推送通知弹窗',
       desc: '点击x按钮',
@@ -82,7 +81,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '全屏广告-会员页面月卡红包',
       desc: '点击关闭',
@@ -239,7 +237,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 101,
       name: '功能类-自动展开回答',
       desc: '自动点击展开',

@@ -50,7 +50,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '通知提示-开启通知提醒',
       matchTime: 10000,

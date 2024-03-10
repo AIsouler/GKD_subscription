@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '书法字典大全',
   groups: [
     {
-      enable: false,
       key: 3,
       name: '分段广告-信息流广告',
       quickFind: true,

@@ -56,7 +56,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13546292',
     },
     {
-      enable: false,
       key: 4,
       name: '局部广告-底部横幅广告',
       rules: [

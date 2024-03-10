@@ -6,7 +6,6 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      enable: false,
       name: '全屏广告-广告弹窗',
       desc: '关闭促销弹窗，也许有用呢',
       activityIds: 'com.thestore.main.app.home.HomeActivity',

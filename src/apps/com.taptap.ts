@@ -22,7 +22,6 @@ export default defineAppConfig({
         {
           key: 0,
           activityIds: 'com.taptap.other.basic.impl.TapMainActivity',
-
           matches:
             '[id="com.taptap.app.middle:id/decision_layout_mask"] + @[id="com.taptap.app.game:id/app_menu"][visibleToUser=true]',
           snapshotUrls: [

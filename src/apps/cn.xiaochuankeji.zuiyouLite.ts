@@ -59,7 +59,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '分段广告-信息流广告',
       quickFind: true,
