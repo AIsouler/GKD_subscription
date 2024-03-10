@@ -319,9 +319,18 @@ export default defineAppConfig({
       name: '通知提示-请求开启消息通知弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        'ViewGroup[vid="pdd"] >n ViewGroup[childCount=3] > @ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/14109435',
+      rules: [
+        {
+          matches:
+            'FrameLayout > ViewGroup[vid="pdd"] > ViewGroup > ViewGroup > ViewGroup[childCount=3 || childCount=2] >(1,2) ImageView[clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8f376a1e-750f-4677-af82-473f3522b67c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14109435',
+            'https://i.gkd.li/i/14549423',
+          ],
+        },
+      ],
     },
     {
       key: 18,
