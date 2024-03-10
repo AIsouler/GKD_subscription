@@ -733,7 +733,7 @@ export default defineAppConfig({
     },
     {
       key: 31,
-      name: '局部广告-订阅号消息页面-推荐阅读',
+      name: '分段广告-订阅号消息页面-推荐阅读',
       desc: '点击关闭',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -745,6 +745,18 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/101449500/5b815528-1ca2-4016-930e-a3cfb4e5e7ea',
           snapshotUrls: 'https://i.gkd.li/i/14548701',
+        },
+        {
+          key: 1,
+          preKeys: 0,
+          matches: '[desc="不看此类内容"]',
+          snapshotUrls: 'https://i.gkd.li/i/14549566',
+        },
+        {
+          key: 2,
+          preKeys: 1,
+          matches: '[desc="确定"]',
+          snapshotUrls: 'https://i.gkd.li/i/14549567',
         },
       ],
     },
