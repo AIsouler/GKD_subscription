@@ -6,7 +6,6 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      enable: false,
       name: '功能类-跳过实体号码链接',
       quickFind: true,
       matchTime: 10000,

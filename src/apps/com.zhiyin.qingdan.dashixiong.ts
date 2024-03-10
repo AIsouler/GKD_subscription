@@ -68,7 +68,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-公告弹窗',
       desc: '自动点击"我知道了"',

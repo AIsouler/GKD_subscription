@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: 'RAR',
   groups: [
     {
-      enable: false,
       key: 10,
       name: '全屏广告-订购 RAR 弹窗',
       desc: '自动点击"放弃"',

@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: 'JavDB',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '通知提示-公告弹窗',
       matchTime: 10000,

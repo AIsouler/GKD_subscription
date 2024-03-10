@@ -128,7 +128,6 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      enable: false,
       quickFind: true,
       name: '功能类-设置无声进入抖音弹窗',
       desc: '点击[拒绝]',
@@ -137,7 +136,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13256087',
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-请求开启通知提示信息',
       desc: '自动点击“暂不”',
@@ -159,7 +157,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '功能类-自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
@@ -173,7 +170,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 12,
       name: '全屏广告-休息提醒',
       quickFind: true,

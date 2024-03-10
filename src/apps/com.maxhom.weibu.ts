@@ -66,7 +66,6 @@ export default defineAppConfig({
       key: 5,
       name: '定位提示-漂流瓶-定位弹窗',
       desc: '自动点击取消',
-      enable: false,
       quickFind: true,
       activityIds: [
         'com.maxhom.weibu.tool.home.activity.ToolBottleActivity',

@@ -167,7 +167,6 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      enable: false,
       name: '分段广告-卡片式广告',
       quickFind: true,
       rules: [
@@ -203,7 +202,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '全屏广告-首页-专辑订阅推荐弹窗',
       quickFind: true,

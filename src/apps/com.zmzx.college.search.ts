@@ -33,7 +33,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '通知提示-请求推送通知弹窗',
       quickFind: true,
@@ -125,7 +124,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 5,
       name: '更新提示',
       quickFind: true,
@@ -139,7 +137,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 6,
       name: '通知提示-申请开启推送通知弹窗',
       quickFind: true,

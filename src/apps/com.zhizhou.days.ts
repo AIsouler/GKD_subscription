@@ -49,7 +49,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '评价提示-应用评价弹窗',
       matchTime: 10000,

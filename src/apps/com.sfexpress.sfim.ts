@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '丰声',
   groups: [
     {
-      enable: false,
       key: 10,
       name: '功能类-CAS安全认证-自动登录',
       desc: '自动点击"登录"按钮',

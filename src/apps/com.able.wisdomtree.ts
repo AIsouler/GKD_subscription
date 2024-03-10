@@ -6,7 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [1],
   groups: [
     {
-      enable: false,
       key: 2,
       name: '通知提示-消息推送通知',
       desc: '自动点击暂不开启。',
@@ -22,7 +21,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '更新提示',
       desc: '自动点击忽略',

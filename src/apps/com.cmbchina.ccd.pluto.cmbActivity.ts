@@ -80,7 +80,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '通知提示-消息页面通知开关',
       desc: '点击x按钮，不开启系统通知',

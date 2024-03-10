@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '蓝岛',
   groups: [
     {
-      enable: false,
       key: 5,
       name: '通知提示-通知弹窗',
       matchTime: 10000,

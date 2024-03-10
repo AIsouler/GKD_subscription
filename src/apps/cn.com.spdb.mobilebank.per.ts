@@ -6,7 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
-      enable: false,
       key: 1,
       name: '通知提示-系统通知请求',
       desc: '自动点击关闭。',

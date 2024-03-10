@@ -54,7 +54,6 @@ export default defineAppConfig({
     {
       key: 3,
       name: '更新提示',
-      enable: false,
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -80,7 +79,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 5,
       name: '功能类-root提示',
       desc: '点击确认',

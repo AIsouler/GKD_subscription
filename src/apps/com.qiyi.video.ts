@@ -67,7 +67,6 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      enable: false,
       name: '全屏广告-播放页-插入广告',
       desc: '视频播放前或播放中途插入的广告。默认关闭。',
       activityIds: 'org.iqiyi.video.activity.PlayerActivity',

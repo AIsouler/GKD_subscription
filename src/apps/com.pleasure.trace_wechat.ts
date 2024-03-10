@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '微拾',
   groups: [
     {
-      enable: false,
       key: 5,
       name: '分段广告-我的页面卡片式广告',
       desc: '需点击二次弹窗确认',

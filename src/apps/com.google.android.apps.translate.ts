@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: 'Google翻译',
   groups: [
     {
-      enable: false,
       key: 4,
       name: '功能类-登录弹窗',
       desc: '登录备份翻译记录',

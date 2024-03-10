@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: 'Gmail',
   groups: [
     {
-      enable: false,
       key: 2,
       name: '分段广告-信息流广告',
       rules: [

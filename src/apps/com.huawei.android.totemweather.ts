@@ -26,7 +26,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '局部广告-卡片式广告',
       quickFind: true,

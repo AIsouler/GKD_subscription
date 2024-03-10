@@ -18,7 +18,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '更新提示',
       quickFind: true,

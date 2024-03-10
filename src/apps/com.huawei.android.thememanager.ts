@@ -135,7 +135,6 @@ export default defineAppConfig({
     {
       key: 7,
       name: '全屏广告-首页活动弹窗',
-      enable: false,
       activityIds: [
         'com.huawei.android.thememanager.HwThemeManagerActivity',
         'com.huawei.android.launcher.unihome.UniHomeLauncher',

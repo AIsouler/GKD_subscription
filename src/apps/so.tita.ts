@@ -88,7 +88,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '未分类-观看视频去除广告提示弹窗',
       activityIds: 'so.tita.view.activity.HomeActivity',

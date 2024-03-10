@@ -66,7 +66,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 2,
       name: '分段广告-信息流广告',
       desc: '推荐帖子列表,评论区列表,关闭时弹窗选原因',
@@ -134,7 +133,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12496934',
     },
     {
-      enable: false,
       key: 8,
       name: '分段广告-帖子底部内容推荐卡片',
       desc: '关闭时弹窗选原因',
@@ -242,7 +240,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 11,
       name: '局部广告-帖子内"进吧逛逛"弹窗',
       actionMaximum: 1,
@@ -255,7 +252,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 12,
       name: '功能类-贴吧内签到并关闭弹窗',
       resetMatch: 'activity',

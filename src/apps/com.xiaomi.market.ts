@@ -26,7 +26,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13197334',
     },
     {
-      enable: false,
       key: 10,
       name: '功能类-忽略升级',
       quickFind: true,

@@ -6,7 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
-      enable: false,
       key: 1,
       name: '更新提示',
       quickFind: true,

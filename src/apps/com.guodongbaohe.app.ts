@@ -6,7 +6,6 @@ export default defineAppConfig({
   groups: [
     // key0-5作为开屏、更新、消息提醒等通用规则
     {
-      enable: false,
       key: 6,
       name: '全屏广告-弹窗广告',
       matchTime: 10000,

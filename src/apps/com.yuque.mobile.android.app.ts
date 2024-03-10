@@ -18,7 +18,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '功能类-自动原图',
       desc: '如果没有勾选原图, 则勾选',

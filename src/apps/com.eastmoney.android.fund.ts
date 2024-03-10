@@ -15,7 +15,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642387',
     },
     {
-      enable: false,
       key: 2,
       name: '功能类-自选页面缩写提示信息',
       activityIds:

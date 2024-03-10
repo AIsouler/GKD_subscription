@@ -15,7 +15,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12715483',
     },
     {
-      enable: false,
       key: 10,
       name: '全屏广告-新人专享优惠弹窗',
       activityIds: 'cn.speedtest.lite.main.MainActivity',

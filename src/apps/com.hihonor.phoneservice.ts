@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '我的荣耀',
   groups: [
     {
-      enable: false,
       key: 10,
       name: '定位提示-请求位置权限提示信息',
       activityIds: 'com.hihonor.phoneservice.main.MainActivity',

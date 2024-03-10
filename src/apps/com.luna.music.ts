@@ -46,7 +46,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '功能类-看广告视频拿VIP',
       desc: '30s广告后点击"跳过"',

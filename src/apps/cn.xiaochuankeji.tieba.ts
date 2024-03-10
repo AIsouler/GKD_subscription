@@ -51,7 +51,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 10,
       name: '通知提示-系统通知弹窗',
       desc: '系统通知弹窗，点击暂不开启',

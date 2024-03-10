@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '不背单词',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '功能类-自动签到',
       quickFind: true,
@@ -21,7 +20,6 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      enable: false,
       name: '功能类-右下角年度报告弹窗',
       desc: '点击关闭',
       quickFind: true,

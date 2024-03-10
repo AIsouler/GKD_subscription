@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: 'Reddit',
   groups: [
     {
-      enable: false,
       key: 3,
       name: '更新提示-社区消息',
       quickFind: true,
@@ -24,7 +23,6 @@ export default defineAppConfig({
       name: '功能类-NSFW 内容提示',
       desc: '自动点击 continue',
       quickFind: true,
-      enable: false,
       rules: [
         {
           activityIds: 'com.reddit.launch.main.MainActivity',

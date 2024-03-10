@@ -13,7 +13,6 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      enable: false,
       activityIds: 'com.icbc.activity.main.MainActivity',
       rules: '[id="com.icbc:id/tv_time"][text*="跳过"][text.length<=6]',
       snapshotUrls: 'https://i.gkd.li/i/13330431',

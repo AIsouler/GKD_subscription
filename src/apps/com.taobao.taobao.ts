@@ -14,7 +14,6 @@ export default defineAppConfig({
       rules: '[id="com.taobao.taobao:id/close"]',
     },
     {
-      enable: false,
       key: 1,
       name: '全屏广告-限时福利弹窗',
       rules: [
@@ -76,7 +75,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 8,
       name: '通知提示',
       desc: '自动点击关闭',
@@ -93,7 +91,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 9,
       name: '功能类-各级页面添加到首页弹窗',
       desc: '自动点击退出',
@@ -117,7 +114,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12642813',
     },
     {
-      enable: false,
       key: 11,
       name: '全屏广告-视频页面签到弹窗',
       activityIds: 'com.taobao.tao.welcome.Welcome',
@@ -138,7 +134,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 13,
       name: '功能类-关闭小额免密支付',
       desc: '在支付前/后出现',
@@ -168,7 +163,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 14,
       name: '功能类-将小组件添加到手机桌面',
       desc: '点击取消',
@@ -182,7 +176,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 15,
       name: '权限提示-开启悬浮窗权限',
       desc: '点击“否”',

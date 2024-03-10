@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '小天才',
   groups: [
     {
-      enable: false,
       key: 2,
       name: '更新提示-通知提示',
       desc: '已知包括APP升级提醒与开启通知提醒，自动点击关闭',
@@ -20,7 +19,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '通知提示-请求开启通知提醒弹窗',
       matchTime: 10000,

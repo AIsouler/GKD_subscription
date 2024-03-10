@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '黑阈',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '权限提示-权限不足弹窗',
       desc: '点击取消',

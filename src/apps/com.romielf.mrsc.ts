@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '每日赛车',
   groups: [
     {
-      enable: false,
       key: 1,
       name: '局部广告-新闻页面摇一摇广告',
       desc: '点击准确率灵敏度不太高',

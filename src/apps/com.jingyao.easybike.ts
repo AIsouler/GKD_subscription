@@ -6,7 +6,6 @@ export default defineAppConfig({
   groups: [
     // 预留 key 0-8
     {
-      enable: false,
       key: 8,
       name: '通知提示-请求通知权限弹窗',
       matchTime: 10000,
@@ -20,7 +19,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 9,
       name: '定位提示-请求定位权限弹窗',
       quickFind: true,

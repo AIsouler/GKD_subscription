@@ -5,7 +5,6 @@ export default defineAppConfig({
   name: '支付宝',
   groups: [
     {
-      enable: false,
       key: 0,
       name: '更新提示-关闭花呗升级弹窗',
       matchTime: 10000,
@@ -46,7 +45,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 1,
       name: '定位提示-请求定位权限弹窗',
       quickFind: true,
@@ -80,7 +78,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 3,
       name: '更新提示-版本更新弹窗',
       matchTime: 10000,
@@ -112,7 +109,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 4,
       name: '功能类-设置支付宝小组件',
       desc: '点击关闭',

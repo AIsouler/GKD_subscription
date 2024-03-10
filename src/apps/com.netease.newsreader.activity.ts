@@ -35,7 +35,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12639869',
     },
     {
-      enable: false,
       key: 4,
       name: '分段广告-首页信息流广告',
       desc: '点击广告卡片x关闭按钮-关闭反馈理由弹窗',

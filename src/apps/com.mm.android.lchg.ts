@@ -6,7 +6,6 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      enable: false,
       name: '更新提示',
       desc: '点击稍后再说',
       matchTime: 10000,

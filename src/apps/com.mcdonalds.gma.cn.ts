@@ -15,7 +15,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13259242',
     },
     {
-      enable: false,
       key: 2,
       name: '全屏广告-优惠券弹窗',
       desc: '自动关闭',

@@ -16,7 +16,6 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      enable: false,
       name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,

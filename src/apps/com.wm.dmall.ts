@@ -44,7 +44,6 @@ export default defineAppConfig({
     {
       key: 4,
       name: '全屏广告-优惠劵提示',
-      enable: false,
       quickFind: true,
       rules: {
         matches: [
