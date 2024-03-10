@@ -164,12 +164,20 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 8,
       name: '局部广告-商品详情页视频讲解窗口',
-      activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
-      rules: '[id="com.xunmeng.pinduoduo:id/iv_float_window_close"] > TextView',
-      snapshotUrls: 'https://i.gkd.li/i/13178326',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            '[vid="iv_float_window_close"] > TextView[text=""][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/560162d0-940d-413a-8f2e-e40c21c976e2',
+          snapshotUrls: 'https://i.gkd.li/i/14549415',
+        },
+      ],
     },
     {
       enable: false,
