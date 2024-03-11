@@ -32,5 +32,22 @@ export default defineAppConfig({
       rules: '[text="立即升级"] -2 [text="暂不升级"]',
       snapshotUrls: 'https://i.gkd.li/i/13832272',
     },
+    {
+      key: 4,
+      name: '全屏广告-红包弹窗',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.taobao.idlefish.maincontainer.activity.MainActivity',
+          matches:
+            'WebView[text="Rax App"] > [id="root"] >6 View[index=2][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14551046',
+        },
+      ],
+    },
   ],
 });
