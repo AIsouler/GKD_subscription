@@ -98,7 +98,10 @@ export default defineAppConfig({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           ],
           matches: '[id$="tt_reward_full_count_down"]',
-          snapshotUrls: 'https://i.gkd.li/i/13929945',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12893408',
+            'https://i.gkd.li/i/13929945',
+          ],
         },
       ],
     },
