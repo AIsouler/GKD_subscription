@@ -82,6 +82,7 @@ function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
 // 设置单独禁用
 const uniqueAppIdsAD = new Set([
   ...diabledAppIds,
+  'com.taptap', // TapTap
   ...filterAppsByGroup(apps, '开屏广告'),
 ]);
 const uniqueAppIdsUP = new Set([
