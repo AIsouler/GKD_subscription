@@ -6,11 +6,10 @@
 
 - [示例-0](https://m.gkd.li/57941037/485963ab-07b1-412a-a932-badc50cb2688)
 
-- [快照-0](https://i.gkd.li/i/12745084)
-- [快照-1](https://i.gkd.li/i/14546304)
-- [快照-2](https://i.gkd.li/i/12745095)
-- [快照-3](https://i.gkd.li/i/13387320)
-- [快照-4](https://i.gkd.li/i/13399391)
+- [快照-0](https://i.gkd.li/i/14546304)
+- [快照-1](https://i.gkd.li/i/12745095)
+- [快照-2](https://i.gkd.li/i/13387320)
+- [快照-3](https://i.gkd.li/i/13399391)
 
 ## 青少年模式
 

@@ -4,11 +4,13 @@
 
 ## 开屏广告
 
+- [示例-0](https://m.gkd.li/57941037/de316c34-dac0-4ee6-91e7-164432e49a1f)
+
 - [快照-0](https://i.gkd.li/i/12620568)
-- [快照-1](https://i.gkd.li/i/12620577)
-- [快照-2](https://i.gkd.li/i/12621997)
-- [快照-3](https://i.gkd.li/i/12620583)
-- [快照-4](https://i.gkd.li/i/12621953)
+- [快照-1](https://i.gkd.li/i/12621997)
+- [快照-2](https://i.gkd.li/i/12620583)
+- [快照-3](https://i.gkd.li/i/12621953)
+- [快照-4](https://i.gkd.li/i/12620577)
 
 ## 青少年模式
 
