@@ -1,10 +1,6 @@
 # TapTap
 
-存在 4 规则组 - [com.taptap](/src/apps/com.taptap.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/i/13946250)
+存在 3 规则组 - [com.taptap](/src/apps/com.taptap.ts)
 
 ## 局部广告-游戏浏览页面推荐广告
 
