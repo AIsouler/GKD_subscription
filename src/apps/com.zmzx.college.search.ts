@@ -3,7 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.zmzx.college.search',
   name: '大学搜题酱',
-  deprecatedKeys: [4],
+  deprecatedKeys: [4, 8, 9, 10],
   groups: [
     {
       key: 0,
@@ -43,7 +43,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '全屏广告-广告弹窗',
       rules: [
         {
           key: 0,
@@ -53,12 +53,14 @@ export default defineAppConfig({
             'com.zmzx.college.search.activity.main.activity.MainActivity',
             'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
             'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
+            'com.zmzx.college.search.activity.common.CommonCacheHybridActivity',
           ],
           matches: '[id="com.zmzx.college.search:id/iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12867751',
             'https://i.gkd.li/i/12894813',
             'https://i.gkd.li/i/13522998',
+            'https://i.gkd.li/i/14554866',
           ],
         },
         {
@@ -91,25 +93,31 @@ export default defineAppConfig({
           key: 4,
           name: '字节广告-2',
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
-          matches:
-            '@[clickable=true] > [id="com.zmzx.college.search:id/tt_reward_full_count_down_after_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12893408',
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          ],
+          matches: '[id$="tt_reward_full_count_down"]',
+          snapshotUrls: 'https://i.gkd.li/i/13929945',
         },
       ],
     },
     {
       key: 3,
-      name: '局部广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
+            'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
+          ],
           matches: '[vid="close_m_image_left_text_right_app_compliance"]',
-          snapshotUrls: 'https://i.gkd.li/i/13849755',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13849755',
+            'https://i.gkd.li/i/13929965',
+          ],
         },
         {
           key: 1,
@@ -162,35 +170,23 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/13476308',
     },
     {
-      key: 8,
-      name: '局部广告-教材内弹窗广告1',
-      quickFind: true,
-      activityIds: [
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      key: 11,
+      name: '全屏广告-邀好友得开学好礼',
+      desc: '使用返回关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          action: 'back',
+          activityIds:
+            'com.zmzx.college.search.activity.common.CommonCacheHybridActivity',
+          matches: '[text="邀好友得开学好礼"] <<n [vid="webview_root_layout"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d625fcaa-4cf3-4c92-9b27-10542b0262bb',
+          snapshotUrls: 'https://i.gkd.li/i/14555042',
+        },
       ],
-      rules: '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after"]',
-      snapshotUrls: ['https://i.gkd.li/i/13929945'],
-    },
-    {
-      key: 9,
-      name: '局部广告-教材内弹窗广告2',
-      quickFind: true,
-      activityIds: [
-        'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
-      ],
-      rules: '[id="com.zmzx.college.search:id/iv_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/13929981'],
-    },
-    {
-      key: 10,
-      name: '局部广告-教材内底部广告',
-      quickFind: true,
-      activityIds: [
-        'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
-      ],
-      rules:
-        '[id="com.zmzx.college.search:id/close_m_image_left_text_right_app_compliance"]',
-      snapshotUrls: ['https://i.gkd.li/i/13929965'],
     },
   ],
 });
