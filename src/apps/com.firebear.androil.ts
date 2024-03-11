@@ -7,12 +7,11 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionCdKey: 0,
       actionMaximumKey: 0,
-      quickFind: true,
       rules: [
         {
           key: 0,
@@ -20,8 +19,9 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/12712742',
         },
         {
+          key: 1,
           matches:
-            '@View <2 * <2 * < [id="com.firebear.androil:id/adContainerLay"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13088169',
             'https://i.gkd.li/i/12855707',

@@ -7,12 +7,14 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches: '[text^="跳过"][text.length<10]',
           snapshotUrls: [
             'https://i.gkd.li/i/13264387',
@@ -20,6 +22,7 @@ export default defineAppConfig({
           ],
         },
         {
+          key: 1,
           matches: '@ImageView - [text="|"]',
           snapshotUrls: 'https://i.gkd.li/i/13264377',
         },

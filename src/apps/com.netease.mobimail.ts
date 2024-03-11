@@ -3,17 +3,19 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.netease.mobimail',
   name: '网易邮箱',
+  deprecatedKeys: [2],
   groups: [
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
           matches:
             '[text*="跳过"][text.length<=10][id!="com.netease.mobimail:id/ad_skip"]',
           snapshotUrls: [
@@ -24,7 +26,8 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/12686093',
         },
         {
@@ -52,13 +55,6 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/12683511',
         },
       ],
-    },
-    {
-      key: 2,
-      name: '开屏广告-切回时的开屏广告',
-      activityIds: 'com.netease.mail.biz.main.MainITabActivity',
-      rules: '@LinearLayout > TextView[text^="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/i/12685745',
     },
   ],
 });

@@ -12,12 +12,8 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
-          matches: [
-            '[id="com.huawei.android.totemweather:id/rl_splash_container"]',
-            '[text.length<=4][text^="跳过"]', // 无法使用 quickFind
-          ],
           action: 'clickCenter', // 根据 https://github.com/gkd-kit/subscription/pull/1180#issuecomment-1767735683 反馈，此处使用 clickCenter 事件。
+          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12928975',
             'https://i.gkd.li/i/13226636',

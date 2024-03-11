@@ -7,10 +7,10 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      resetMatch: 'app',
-      actionMaximum: 1,
-      matchTime: 10000,
       quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules:
         '@View[clickable=true] <2 [id="com.antfortune.wealth:id/welcome_page"]',
       snapshotUrls: 'https://i.gkd.li/i/12776577',

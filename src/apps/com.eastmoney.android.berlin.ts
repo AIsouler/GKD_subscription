@@ -18,7 +18,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: true,
       key: 10,
       name: '通知提示-请求通知权限提示信息',
       matchTime: 10000,

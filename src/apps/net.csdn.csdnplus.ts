@@ -7,25 +7,25 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
-          quickFind: true,
+          key: 0,
           matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: ['https://i.gkd.li/i/12673680'],
+          snapshotUrls: 'https://i.gkd.li/i/12673680',
         },
         {
-          quickFind: true,
+          key: 1,
           matches:
-            '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid="fl_third_ad"]',
-          snapshotUrls: 'https://i.gkd.li/i/13826577',
-        },
-        {
-          // 无法使用 quickFind
-          matches: '[id$="tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/i/13224627',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13826577',
+            'https://i.gkd.li/i/13224627',
+          ],
         },
       ],
     },

@@ -12,8 +12,9 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
+          quickFind: true,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/b390043b-3d13-451e-b8aa-15c2a0157071',
           snapshotUrls: 'https://i.gkd.li/i/14325697',

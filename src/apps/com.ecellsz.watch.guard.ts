@@ -7,11 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
-      matchTime: 10000,
-      resetMatch: 'app',
-      actionMaximum: 1,
       quickFind: true,
-      rules: 'View[clickable=true] <<n [vid="splash_container"]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules:
+        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
       snapshotUrls: 'https://i.gkd.li/i/14039510',
     },
   ],

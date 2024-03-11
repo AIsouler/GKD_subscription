@@ -8,13 +8,13 @@ export default defineAppConfig({
       key: 0,
       name: '开屏广告',
       quickFind: true,
-      matchTime: 15000,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           matches: '[id="com.tencent.ysdkcore:id/com_tencent_ysdk_icon_h5_xx"]',
-          snapshotUrls: ['https://i.gkd.li/i/13276317'],
+          snapshotUrls: 'https://i.gkd.li/i/13276317',
         },
       ],
     },

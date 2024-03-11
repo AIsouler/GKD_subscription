@@ -10,13 +10,17 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: {
-        matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
-        action: 'clickCenter',
-      },
-      snapshotUrls: [
-        'https://i.gkd.li/i/12814007',
-        'https://i.gkd.li/i/12819351',
+      rules: [
+        {
+          action: 'clickCenter',
+          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/0fdba1cd-ea19-4e7e-9a1e-14781fdb5242',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12814007',
+            'https://i.gkd.li/i/12819351',
+          ],
+        },
       ],
     },
   ],

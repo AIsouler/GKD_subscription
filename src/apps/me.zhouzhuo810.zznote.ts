@@ -10,15 +10,23 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
-        '[id="me.zhouzhuo810.zznote:id/native_ad_container"] + [id^="me.zhouzhuo810.zznote:id/btn_next"]',
-        '@LinearLayout > [text*="跳过"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/12798528',
-        'https://i.gkd.li/i/12912217',
-        'https://i.gkd.li/i/13059838',
-        'https://i.gkd.li/i/13800235', //@LinearLayout > [text*="跳过"]
+        {
+          key: 0,
+          matches: '[id="me.zhouzhuo810.zznote:id/btn_next_2"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b20641b8-e7c6-44d6-82b4-5e501e8a491d',
+          snapshotUrls: 'https://i.gkd.li/i/12798528',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches: '@LinearLayout > [text*="跳过"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c23cca9b-b4fa-4533-9a1d-4bb4bc9e4b86',
+          snapshotUrls: 'https://i.gkd.li/i/13800235',
+        },
       ],
     },
   ],

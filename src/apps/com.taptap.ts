@@ -3,17 +3,8 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.taptap',
   name: 'TapTap',
+  deprecatedKeys: [1],
   groups: [
-    {
-      key: 1,
-      name: '开屏广告', //占位,避免和全局开屏广告规则误触
-      rules: [
-        {
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: ['https://i.gkd.li/i/13946250'],
-        },
-      ],
-    },
     {
       key: 2,
       name: '局部广告-游戏浏览页面推荐广告',

@@ -30,19 +30,19 @@ export default defineAppConfig({
     {
       key: 3,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
           matches: '@View[clickable=true] <2 * <2 * < [vid="flTTContainer"]',
           snapshotUrls: 'https://i.gkd.li/i/14021540',
         },
         {
-          key: 3,
-          quickFind: true,
+          key: 1,
           matches: '[text^="跳过"][text.length<=6]',
           snapshotUrls: 'https://i.gkd.li/i/13399124',
         },

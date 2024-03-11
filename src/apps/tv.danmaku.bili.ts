@@ -8,7 +8,6 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
-      desc: '开屏广告,任意界面切回APP开屏广告',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

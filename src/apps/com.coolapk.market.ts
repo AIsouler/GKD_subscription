@@ -8,10 +8,10 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionCdKey: 0,
       actionMaximumKey: 0,
       excludeActivityIds: [
         'com.coolapk.market.view.search.', // 在搜索页面禁用
@@ -21,7 +21,7 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12503773',
             'https://i.gkd.li/i/13247610',
@@ -31,7 +31,6 @@ export default defineAppConfig({
           ],
         },
         {
-          quickFind: true,
           key: 1,
           matches: '[text^="跳过"][text.length<=4]',
           excludeMatches: '[id="com.coolapk.market:id/item_view"]',

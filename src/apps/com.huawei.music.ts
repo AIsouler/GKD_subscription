@@ -12,9 +12,9 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
           action: 'clickCenter',
-          snapshotUrls: ['https://i.gkd.li/i/12745222'],
+          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
+          snapshotUrls: 'https://i.gkd.li/i/12745222',
         },
       ],
     },
@@ -41,7 +41,7 @@ export default defineAppConfig({
       key: 2,
       name: '分段广告-广告反馈下拉窗',
       quickFind: true,
-      activityIds: ['com.huawei.openalliance.ad.activity.FeedbackActivity'],
+      activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
       rules: [
         {
           matches:
@@ -61,12 +61,12 @@ export default defineAppConfig({
       key: 3,
       name: '局部广告-播放界面直播浮窗',
       quickFind: true,
-      activityIds: ['com.android.mediacenter.MainActivity'],
+      activityIds: 'com.android.mediacenter.MainActivity',
       rules: [
         {
           matches:
             'TextView[id="com.huawei.music:id/live_info"] < LinearLayout -2 [id="com.huawei.music:id/close_button"]',
-          snapshotUrls: ['https://i.gkd.li/i/13067649'],
+          snapshotUrls: 'https://i.gkd.li/i/13067649',
         },
       ],
     },
@@ -74,7 +74,7 @@ export default defineAppConfig({
       key: 4,
       name: '局部广告-播放（音乐、视频）页面广告',
       quickFind: true,
-      activityIds: ['com.android.mediacenter.MainActivity'],
+      activityIds: 'com.android.mediacenter.MainActivity',
       rules: [
         {
           matches:
@@ -91,13 +91,11 @@ export default defineAppConfig({
       key: 5,
       name: '局部广告-评论区广告',
       quickFind: true,
-      activityIds: [
-        'com.android.mediacenter.comment.ui.CommentListMainActivity',
-      ],
+      activityIds: 'com.android.mediacenter.comment.ui.CommentListMainActivity',
       rules: [
         {
           matches: '[id="com.huawei.music:id/ad_icon"]',
-          snapshotUrls: ['https://i.gkd.li/i/13067937'],
+          snapshotUrls: 'https://i.gkd.li/i/13067937',
         },
       ],
     },
@@ -105,7 +103,7 @@ export default defineAppConfig({
       key: 6,
       name: '分段广告-视频播放页广告反馈',
       quickFind: true,
-      activityIds: ['com.android.mediacenter.MainActivity'],
+      activityIds: 'com.android.mediacenter.MainActivity',
       rules: [
         {
           matches: 'TextView[text="不感兴趣"][id$="title"][visibleToUser=true]',
@@ -120,7 +118,7 @@ export default defineAppConfig({
       key: 7,
       name: '局部广告-播放器上滑广告',
       quickFind: true,
-      activityIds: ['com.android.mediacenter.MainActivity'],
+      activityIds: 'com.android.mediacenter.MainActivity',
       rules: [
         {
           matches:

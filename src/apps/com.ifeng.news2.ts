@@ -49,7 +49,6 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: true,
       key: 10,
       name: '定位提示-请求位置权限弹窗',
       desc: '自动点击取消',

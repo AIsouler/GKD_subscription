@@ -7,15 +7,14 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionCdKey: 0,
       actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
           matches: '[text*="跳过"][text.length<=10]',
           excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
           snapshotUrls: [
@@ -28,18 +27,12 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          matches: '[id$="tt_splash_skip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/i/12999739',
-        },
-        {
-          key: 2,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14046124',
         },
         {
-          key: 3,
-          quickFind: true,
+          key: 2,
           position: {
             left: 'width * 0.9016',
             top: 'width * 0.1557',

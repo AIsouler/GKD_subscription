@@ -19,36 +19,28 @@ export default defineAppConfig({
     {
       key: 2,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"]',
-          snapshotUrls: 'https://i.gkd.li/i/14018247',
-        },
-        // 该应用存在特殊开屏广告，被全局规则排除，以下为之前的开屏广告规则
-        {
-          key: 1,
-          quickFind: true,
-          matches:
-            '[id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"] >n [text^="跳过"][text.length<=4]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12846434',
-            'https://i.gkd.li/i/13059834',
+            'https://i.gkd.li/i/14018247',
+            'https://i.gkd.li/i/13259303',
+            'https://i.gkd.li/i/13695497',
           ],
         },
         {
-          key: 2,
-          quickFind: true,
-          matches:
-            '[id$="tt_splash_skip_btn"] <<n [id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"]',
+          key: 1,
+          matches: '[text^="跳过"][text.length<=4]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13259303',
-            'https://i.gkd.li/i/13695497',
+            'https://i.gkd.li/i/12846434',
+            'https://i.gkd.li/i/13059834',
           ],
         },
       ],
