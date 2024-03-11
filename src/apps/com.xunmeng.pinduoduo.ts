@@ -10,6 +10,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
@@ -132,33 +133,56 @@ export default defineAppConfig({
     {
       key: 5,
       name: '全屏广告-多多买菜抽奖弹窗',
-      activityIds: ['com.xunmeng.pinduoduo.activity.NewPageActivity'],
+      desc: '点击关闭',
       rules: [
-        'View[childCount=1] > Button[id=null][text="关闭弹窗"][clickable=true]',
-      ], //添加父节点条件。原规则会与退换货选择货物弹窗冲突。https://i.gkd.li/i/13830730
-      snapshotUrls: ['https://i.gkd.li/i/12642053'],
+        {
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            'View[childCount=1] > Button[id=null][text="关闭弹窗"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b6b638d0-9e99-4e4a-89ea-f2539a46cf56',
+          snapshotUrls: 'https://i.gkd.li/i/12642053',
+        },
+      ],
     },
     {
       key: 6,
       name: '局部广告-多多视频悬浮窗广告',
-      activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
+      desc: '点击关闭',
+      activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
-        '@TextView[id=null][clickable=true] + Image[id=null][text="webp"]',
-        '@TextView[id=null][clickable=true] + View > Image[text="webp"]',
+        {
+          key: 0,
+          matches:
+            '@TextView[id=null][clickable=true] + Image[id=null][text="webp"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/bfe9f8d5-2c13-4dbf-a0b3-a8347068afa6',
+          snapshotUrls: 'https://i.gkd.li/i/12642058',
+        },
+        {
+          key: 1,
+          matches:
+            '@TextView[id=null][clickable=true] + View > Image[text="webp"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/bfe9f8d5-2c13-4dbf-a0b3-a8347068afa6',
+          snapshotUrls: 'https://i.gkd.li/i/12642058',
+        },
       ],
-      snapshotUrls: ['https://i.gkd.li/i/12642058'],
     },
     {
       key: 7,
       name: '全屏广告-多多视频每日签到弹窗',
-      activityIds: ['com.xunmeng.pinduoduo.ui.activity.HomeActivity'],
+      desc: '点击关闭',
       rules: [
-        '@ImageView[id=null] < ViewGroup < ViewGroup +(2) ViewGroup >(n) [text^="每日签到"]',
-        'ViewGroup[childCount=5] > @ViewGroup[index=0][clickable=true] +3 ViewGroup >2 [text="分享现金红包至拼小圈"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/12700615',
-        'https://i.gkd.li/i/13804657', //规则2
+        {
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            'ImageView < ViewGroup < @ViewGroup[clickable=true] +2 * >7 [text="领取今日现金"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/29876836-b365-48c0-b129-4560ca193776',
+          snapshotUrls: 'https://i.gkd.li/i/13804657',
+        },
       ],
     },
     {
@@ -189,7 +213,7 @@ export default defineAppConfig({
           key: 0,
           name: '自动签到',
           action: 'clickCenter',
-          matches: ['FrameLayout > TextView[text="领取今日现金"]'],
+          matches: 'FrameLayout > TextView[text="领取今日现金"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13201422', //com.xunmeng.pinduoduo.ui.activity.HomeActivity
             'https://i.gkd.li/i/13372677', //com.bbk.launcher2.Launcher
@@ -200,7 +224,7 @@ export default defineAppConfig({
           preKeys: [0],
           name: '在签到后关闭弹窗',
           action: 'clickCenter',
-          matches: ['FrameLayout > TextView[text="明日继续来领"]'],
+          matches: 'FrameLayout > TextView[text="明日继续来领"]',
           snapshotUrls: 'https://i.gkd.li/i/13205634',
         },
       ],
