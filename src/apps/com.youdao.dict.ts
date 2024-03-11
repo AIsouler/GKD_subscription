@@ -160,6 +160,16 @@ export default defineAppConfig({
           matches: '[vid="home_ad_close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14009705',
         },
+        {
+          key: 2,
+          name: '单词页面下方广告',
+          quickFind: true,
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          matches: '[vid="course_four_course_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/4045988d-93bb-4aad-80dd-f14da296a214',
+          snapshotUrls: 'https://i.gkd.li/i/14559287',
+        },
       ],
     },
     {
