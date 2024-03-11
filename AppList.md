@@ -1,5 +1,7 @@
 # 适配 APP 列表
 
+## 应用规则
+
 | 名称                   | ID                                                                                                                                                                | 规则组 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | APKPure                | [com.apkpure.aegon](/docs/com.apkpure.aegon.md)                                                                                                                   | 4      |
@@ -104,7 +106,7 @@
 | OurPlay加速器          | [com.excean.splay](/docs/com.excean.splay.md)                                                                                                                     | 1      |
 | PU口袋校园             | [com.xyhui](/docs/com.xyhui.md)                                                                                                                                   | 3      |
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                                                                                       | 3      |
-| QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 6      |
+| QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 7      |
 | QQ邮箱                 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md)                                                                                                   | 3      |
 | QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 3      |
 | UC浏览器               | [com.UCMobile](/docs/com.UCMobile.md)                                                                                                                             | 4      |
@@ -424,7 +426,7 @@
 | 软件包安装程序         | [com.google.android.packageinstaller](/docs/com.google.android.packageinstaller.md)                                                                               | 1      |
 | 软件包安装程序         | [com.android.packageinstaller](/docs/com.android.packageinstaller.md)                                                                                             | 1      |
 | 瑞幸咖啡               | [com.lucky.luckyclient](/docs/com.lucky.luckyclient.md)                                                                                                           | 3      |
-| 扫描全能王             | [com.intsig.camscanner](/docs/com.intsig.camscanner.md)                                                                                                           | 2      |
+| 扫描全能王             | [com.intsig.camscanner](/docs/com.intsig.camscanner.md)                                                                                                           | 1      |
 | 森空岛                 | [com.hypergryph.skland](/docs/com.hypergryph.skland.md)                                                                                                           | 1      |
 | 闪电侠                 | [app.esou](/docs/app.esou.md)                                                                                                                                     | 1      |
 | 山姆会员商店           | [cn.samsclub.app](/docs/cn.samsclub.app.md)                                                                                                                       | 3      |
@@ -513,18 +515,18 @@
 | 网易有道词典           | [com.youdao.dict](/docs/com.youdao.dict.md)                                                                                                                       | 8      |
 | 网易邮箱               | [com.netease.mobimail](/docs/com.netease.mobimail.md)                                                                                                             | 3      |
 | 网易邮箱大师           | [com.netease.mail](/docs/com.netease.mail.md)                                                                                                                     | 4      |
-| 网易云音乐             | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md)                                                                                                         | 12     |
+| 网易云音乐             | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md)                                                                                                         | 13     |
 | 完美校园               | [com.newcapec.mobile.ncp](/docs/com.newcapec.mobile.ncp.md)                                                                                                       | 2      |
 | 万能遥控               | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md)                                                                                   | 2      |
 | 万年历                 | [com.youloft.calendar](/docs/com.youloft.calendar.md)                                                                                                             | 1      |
 | 微博                   | [com.sina.weibo](/docs/com.sina.weibo.md)                                                                                                                         | 17     |
 | 微博极速版             | [com.sina.weibolite](/docs/com.sina.weibolite.md)                                                                                                                 | 2      |
-| 微博轻享版             | [com.weico.international](/docs/com.weico.international.md)                                                                                                       | 1      |
+| 微博轻享版             | [com.weico.international](/docs/com.weico.international.md)                                                                                                       | 2      |
 | 微店                   | [com.koudai.weidian.buyer](/docs/com.koudai.weidian.buyer.md)                                                                                                     | 1      |
 | 维护大师               | [com.example.maintenancemaster](/docs/com.example.maintenancemaster.md)                                                                                           | 1      |
 | 微视                   | [com.tencent.weishi](/docs/com.tencent.weishi.md)                                                                                                                 | 1      |
 | 微拾                   | [com.pleasure.trace_wechat](/docs/com.pleasure.trace_wechat.md)                                                                                                   | 2      |
-| 微信                   | [com.tencent.mm](/docs/com.tencent.mm.md)                                                                                                                         | 28     |
+| 微信                   | [com.tencent.mm](/docs/com.tencent.mm.md)                                                                                                                         | 29     |
 | 微信读书               | [com.tencent.weread](/docs/com.tencent.weread.md)                                                                                                                 | 2      |
 | 微音乐                 | [com.zhouyu.music](/docs/com.zhouyu.music.md)                                                                                                                     | 3      |
 | 微音乐                 | [com.wzsykj.wei](/docs/com.wzsykj.wei.md)                                                                                                                         | 1      |
@@ -703,3 +705,13 @@
 | 最右                   | [cn.xiaochuankeji.tieba](/docs/cn.xiaochuankeji.tieba.md)                                                                                                         | 4      |
 | 作业帮家长版           | [com.zuoyebang.knowledge](/docs/com.zuoyebang.knowledge.md)                                                                                                       | 2      |
 | 作业精灵               | [com.pcncn.jj](/docs/com.pcncn.jj.md)                                                                                                                             | 1      |
+
+---
+
+## 全局规则
+
+| 全局规则 | 名称       | 规则组 |
+| -------- | ---------- | ------ |
+| 全局规则 | 开屏广告   | 2      |
+| 全局规则 | 更新提示   | 1      |
+| 全局规则 | 青少年模式 | 1      |
