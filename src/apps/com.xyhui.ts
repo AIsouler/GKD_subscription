@@ -6,19 +6,40 @@ export default defineAppConfig({
   deprecatedKeys: [4],
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2285d166-e042-4217-8e78-9b58414d16aa',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14560058',
+            'https://i.gkd.li/i/14560214',
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 1,
           name: '腾讯广告-1',
+          quickFind: true,
           activityIds: [
             'com.xyhui.start.PUMainActivity',
             'com.xyhui.start.LoadingActivity',
             'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity',
           ],
           matches:
-            '[id="android:id/content"] >(4,5) FrameLayout[index=1] > ImageView',
+            ' [id="android:id/content"] >(4,5) FrameLayout[index=1] > @ImageView <<n [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14472097',
             'https://i.gkd.li/i/14472098',
@@ -54,6 +75,15 @@ export default defineAppConfig({
           activityIds: 'com.meishu.sdk.activity.SdkInterstitialActivity',
           matches: '[id="com.xyhui:id/ms_activity_sdk_interstitial_cacel"]',
           snapshotUrls: 'https://i.gkd.li/i/13458692',
+        },
+        {
+          key: 5,
+          quickFind: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[text="反馈"] + @View[visibleToUser=true] > Image <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/14560546',
         },
       ],
     },
