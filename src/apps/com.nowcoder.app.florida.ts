@@ -10,13 +10,12 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionCdKey: 0,
-      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
+          quickFind: true,
           matches:
-            '@View <2 FrameLayout[childCount=3] <2 FrameLayout[childCount=2] < FrameLayout[childCount=1] < [vid="fl_splash_container"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13855443',
         },
       ],

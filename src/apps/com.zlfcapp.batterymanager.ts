@@ -13,7 +13,8 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          matches: '@View[clickable=true] <<n [vid="splash_container"]',
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13960341',
         },
       ],

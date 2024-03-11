@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: 'TextView[id$="tv_close_time"&&text^="关闭"]',
-          snapshotUrls: ['https://i.gkd.li/i/12644260'],
+          snapshotUrls: 'https://i.gkd.li/i/12644260',
         },
       ],
     },
@@ -24,7 +24,7 @@ export default defineAppConfig({
         {
           matches:
             '[text*="确定要退出"] < LinearLayout +n LinearLayout > TextView[id$="tv_exit_sure"]',
-          snapshotUrls: ['https://i.gkd.li/i/12645513'],
+          snapshotUrls: 'https://i.gkd.li/i/12645513',
         },
       ],
     },

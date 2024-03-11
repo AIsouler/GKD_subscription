@@ -7,13 +7,13 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          activityIds: [
-            'com.qq.e.ads.PortraitADActivity',
-            'com.qq.e.ads.LandscapeADActivity',
-          ],
           matches: '@FrameLayout - LinearLayout [text$="惊喜奖励"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12777048',
@@ -22,23 +22,16 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          activityIds: 'com.qq.e.ads.PortraitADActivity',
           matches: '[text="放弃奖励离开"]',
           snapshotUrls: 'https://i.gkd.li/i/12777058',
         },
         {
           key: 2,
-          activityIds: 'com.qq.e.ads.PortraitADActivity',
           matches: '@ImageView - WebView > [text="优量汇-插屏视频endcard"]',
           snapshotUrls: 'https://i.gkd.li/i/12777051',
         },
         {
           key: 3,
-          activityIds: [
-            'com.qq.e.ads.PortraitADActivity',
-            'com.gentle.ppcat.MainActivity',
-            'com.hihonor.android.launcher.drawer.DrawerLauncher',
-          ],
           matches: '[desc="关闭喵"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12777059',

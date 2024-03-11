@@ -26,7 +26,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionCd: 100,
       resetMatch: 'app',
-      activityIds: ['com.example.flutter3_frame.MainActivity'],
+      activityIds: 'com.example.flutter3_frame.MainActivity',
       rules: [
         {
           action: 'back',
@@ -41,7 +41,7 @@ export default defineAppConfig({
       name: '全屏广告-公告弹窗',
       matchTime: 10000,
       resetMatch: 'app',
-      activityIds: ['com.example.flutter3_frame.MainActivity'],
+      activityIds: 'com.example.flutter3_frame.MainActivity',
       rules: [
         {
           action: 'back',
@@ -49,18 +49,6 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/12836854',
         },
       ],
-    },
-    {
-      // key1、2的延迟工具，matchDelay如在key1、2，有时候开屏广告时切了后台，
-      // 后台恢复时，界面上的弹窗就得等6.5s了
-      key: 3,
-      name: '全屏广告-延迟工具(协助key1、2)',
-      desc: '5s开屏广告后主动触发匹配',
-      matchDelay: 6500, // 时间太小会导致低性能手机赶不上
-      matchTime: 10000,
-      resetMatch: 'app',
-      quickFind: true,
-      rules: 'TextView[text="xxxxx"]',
     },
   ],
 });

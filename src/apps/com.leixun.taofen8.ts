@@ -14,7 +14,7 @@ export default defineAppConfig({
         {
           quickFind: true,
           matches:
-            '@View[clickable=true] <<n [id="com.leixun.taofen8:id/fl_advert_container"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13937324',
         },
       ],

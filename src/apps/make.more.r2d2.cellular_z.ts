@@ -10,26 +10,23 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       matchTime: 10000,
-      actionCdKey: 0,
       actionMaximumKey: 0,
       rules: [
         {
           key: 0,
           quickFind: true,
-          name: '全局规则-1',
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13987038',
         },
         {
           key: 1,
-          name: '字节广告SDK',
+          quickFind: true,
           matches:
-            'TextView - @View[clickable=true] <n FrameLayout <2 FrameLayout[childCount=2]', // 字节开屏通用规则
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]', // 字节开屏通用规则
           snapshotUrls: 'https://i.gkd.li/i/13978978',
         },
         {
           key: 2,
-          name: '全局规则-2',
           matches:
             '[childCount=0][visibleToUser=true][(text.length<10&&(text*="跳过"||text*="跳過"||text*="skip"||text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || (vid*="count" && vid*="down" && vid!*="download") || desc*="跳过" || desc*="skip"]',
         },

@@ -10,6 +10,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
@@ -27,7 +28,7 @@ export default defineAppConfig({
           key: 1,
           matches:
             '[id="com.cyl.musiccy.ou:id/ksad_splash_root_container"] [childCount=3] > @ImageView[clickable=true] - [text="|"]',
-          snapshotUrls: ['https://i.gkd.li/i/12775919'],
+          snapshotUrls: 'https://i.gkd.li/i/12775919',
         },
       ],
     },

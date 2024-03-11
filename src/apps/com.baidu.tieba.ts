@@ -8,14 +8,14 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
-          name: '"跳过+倒计时"型',
           matches: 'TextView[text^="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/i/12775906',
@@ -26,14 +26,12 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '"圆圈跳过"型-来自穿山甲SDK',
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13322227',
         },
         {
           key: 2,
-          quickFind: true,
-          name: '"x+关闭"型',
           matches:
             'TextView[text="广告"] - @LinearLayout[clickable=true] > [text="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/13168386',

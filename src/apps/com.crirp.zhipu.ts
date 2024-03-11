@@ -6,11 +6,10 @@ export default defineAppConfig({
   deprecatedKeys: [3],
   groups: [
     {
-      name: '开屏广告',
       key: 1,
-      enable: true,
-      matchTime: 10000,
+      name: '开屏广告',
       quickFind: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

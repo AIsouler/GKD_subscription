@@ -6,13 +6,14 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/1cddb43c-9ddc-4fb0-a781-66f167035d2b',
           snapshotUrls: 'https://i.gkd.li/i/14406395',

@@ -7,16 +7,20 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
-          matches: '[id="com.byted.pangle:id/tt_splash_skip_btn"]',
+          key: 0,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13188653',
         },
         {
-          quickFind: true,
+          key: 1,
           matches:
             '@View[clickable=true] < RelativeLayout <2 FrameLayout < FrameLayout < FrameLayout <4 FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13197655',

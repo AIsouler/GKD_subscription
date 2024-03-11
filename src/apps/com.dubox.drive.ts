@@ -11,13 +11,16 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches: 'TextView[id="com.dubox.drive:id/tv_skip"]',
           snapshotUrls: 'https://i.gkd.li/i/13200574',
         },
         {
-          matches: ['[id="inmobi-ad"]', '[id="com.dubox.drive:id/ivClose"]'],
+          key: 1,
+          matches: '@[id="com.dubox.drive:id/ivClose"] - * >2 [id="inmobi-ad"]',
           snapshotUrls: 'https://i.gkd.li/i/13688384',
         },
       ],

@@ -24,7 +24,6 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/i/12716970',
     },
     {
-      enable: true,
       key: 10,
       name: '通知提示-请求开启通知权限弹窗',
       desc: '自动点击x按钮',
