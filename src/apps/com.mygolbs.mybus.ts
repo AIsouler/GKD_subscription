@@ -111,12 +111,14 @@ export default defineAppConfig({
           activityIds: [
             'com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity',
             'com.mygolbs.mybus.NewHomePageActivity',
+            'com.mygolbs.mybus.RTimeActivity',
           ],
           matches:
             'FrameLayout[childCount=2] > FrameLayout[childCount>4] > FrameLayout[index=1][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12790762',
             'https://i.gkd.li/i/14219270',
+            'https://i.gkd.li/i/14572506',
           ],
         },
         {
