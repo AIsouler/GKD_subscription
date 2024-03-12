@@ -1,8 +1,6 @@
 # 淘宝
 
-存在 15 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
-
-## 开屏广告
+存在 14 规则组 - [com.taobao.taobao](/src/apps/com.taobao.taobao.ts)
 
 ## 全屏广告-限时福利弹窗
 

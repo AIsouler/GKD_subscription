@@ -19,9 +19,9 @@
 https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 ```
 
-当前版本: v29
+当前版本: v30
 
-当前订阅文件已适配 701 个 APP, 共有 1619 规则组
+当前订阅文件已适配 698 个 APP, 共有 1612 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -37,7 +37,7 @@ https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=29)
+![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=30)
 
 ## Star History
 

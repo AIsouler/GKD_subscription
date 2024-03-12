@@ -1,6 +1,6 @@
 # 网易邮箱
 
-存在 3 规则组 - [com.netease.mobimail](/src/apps/com.netease.mobimail.ts)
+存在 2 规则组 - [com.netease.mobimail](/src/apps/com.netease.mobimail.ts)
 
 ## 开屏广告
 
@@ -17,7 +17,3 @@
 
 - [快照-0](https://i.gkd.li/i/12683488)
 - [快照-1](https://i.gkd.li/i/12683511)
-
-## 开屏广告-切回时的开屏广告
-
-- [快照-0](https://i.gkd.li/i/12685745)
