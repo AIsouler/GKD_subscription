@@ -234,10 +234,26 @@ export default defineAppConfig({
       resetMatch: 'app',
       actionMaximum: 1,
       quickFind: true,
-      activityIds: 'com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity',
-      rules:
-        '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
-      snapshotUrls: 'https://i.gkd.li/i/13842643',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity',
+          matches:
+            '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/05606ba5-1a89-470c-bcca-bd52561a634d',
+          snapshotUrls: 'https://i.gkd.li/i/13842643',
+        },
+        {
+          key: 1,
+          activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+          matches: '@RelativeLayout[clickable=true] + * >3 [text="立即预约"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c8131a06-837a-4c42-9a70-9e8a7fe21334',
+          snapshotUrls: 'https://i.gkd.li/i/14567294',
+        },
+      ],
     },
     {
       key: 20,
