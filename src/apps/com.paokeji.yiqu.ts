@@ -116,5 +116,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '功能类-漫画页链接断开提示',
+      desc: '点击[点我重试]',
+      actionMaximum: 3,
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.aster.comic.app.view.reader.ReaderActivity',
+          matches: '@[clickable=true] > [text="点我重试"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d71c73bb-289f-4205-a253-fcd8bd32f196',
+          snapshotUrls: 'https://i.gkd.li/i/14572053',
+        },
+      ],
+    },
   ],
 });
