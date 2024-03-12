@@ -23,12 +23,12 @@ export default defineAppConfig({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
+      activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
       rules: [
         {
           matches:
             '[id="com.greenpoint.android.mc10086.activity:id/ad_image"] < RelativeLayout + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
-          snapshotUrls: ['https://i.gkd.li/i/12662361'],
+          snapshotUrls: 'https://i.gkd.li/i/12662361',
         },
       ],
     },
@@ -50,7 +50,7 @@ export default defineAppConfig({
         {
           quickFind: true,
           matches: '[text="授权提醒"] +3 [text="拒绝"]',
-          snapshotUrls: ['https://i.gkd.li/i/13775652'],
+          snapshotUrls: 'https://i.gkd.li/i/13775652',
         },
       ],
     },
@@ -58,7 +58,7 @@ export default defineAppConfig({
       key: 11,
       name: '权限提示-请求获取剪贴板权限弹窗',
       desc: '请求获取剪贴板权限弹窗，点击不允许',
-      activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
+      activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
       rules: [
         {
           matches:
@@ -73,12 +73,21 @@ export default defineAppConfig({
     {
       key: 12,
       name: '局部广告-右侧悬浮小图标',
-      activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
+      quickFind: true,
+      activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
       rules: [
         {
+          key: 0,
           matches:
-            '[id="com.greenpoint.android.mc10086.activity:id/drag_img"] + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
-          snapshotUrls: ['https://i.gkd.li/i/12662265'],
+            '[id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/12662265',
+        },
+        {
+          key: 1,
+          matches: '[vid="close_btn_bottom"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/276c7811-52f7-4379-8782-f9fb0b6cec1c',
+          snapshotUrls: 'https://i.gkd.li/i/14570369',
         },
       ],
     },
@@ -92,7 +101,7 @@ export default defineAppConfig({
         {
           matches:
             '@[id="com.greenpoint.android.mc10086.activity:id/close_img"][desc="关闭"] - RelativeLayout >(2) [text$="好评"]',
-          snapshotUrls: ['https://i.gkd.li/i/12662345'],
+          snapshotUrls: 'https://i.gkd.li/i/12662345',
         },
       ],
     },
