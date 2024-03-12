@@ -1,0 +1,24 @@
+import { defineAppConfig } from '../types';
+
+export default defineAppConfig({
+  id: 'com.cmcc.hebao',
+  name: '和包',
+  groups: [
+    {
+      key: 1,
+      name: '全屏广告-广告弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.cmcc.wallet.mocam.activity.home.WalletHomeActivity',
+          matches:
+            '@[clickable=true] > [text="dialog-delete"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/cb33c5b5-dd2e-4aa9-80d1-f7013f150305',
+          snapshotUrls: 'https://i.gkd.li/i/14567338',
+        },
+      ],
+    },
+  ],
+});
