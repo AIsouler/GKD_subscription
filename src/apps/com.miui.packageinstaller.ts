@@ -28,6 +28,7 @@ export default defineAppConfig({
       key: 9,
       name: '功能类-自动第三方安装应用',
       desc: '自动允许第三方应用调用安装，安装应用',
+      quickFind: true,
       rules: [
         {
           key: 0,
@@ -54,6 +55,7 @@ export default defineAppConfig({
       key: 10,
       name: '功能类-自动安装应用',
       desc: '启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
+      quickFind: true,
       rules: [
         // 正常安装
         {
@@ -143,6 +145,7 @@ export default defineAppConfig({
     {
       key: 11,
       name: '功能类-自动更新应用',
+      quickFind: true,
       rules: [
         // 正常更新
         {
