@@ -143,13 +143,17 @@ export default defineAppConfig({
           key: 0,
           name: '右下角悬浮卡片',
           quickFind: true,
-          activityIds: 'com.youdao.dict.activity.MainActivity',
+          activityIds: [
+            'com.youdao.dict.activity.MainActivity',
+            'com.youdao.dict.activity.DictQueryActivity',
+          ],
           matches: '[vid="aivClose"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/e365b983-15c7-4ac7-acd7-9d7be4c45160',
           snapshotUrls: [
             'https://i.gkd.li/i/14468564',
             'https://i.gkd.li/i/14468628', // visibleToUser=true 防止在此页面选中屏幕外节点
+            'https://i.gkd.li/i/14567234',
           ],
         },
         {
