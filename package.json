@@ -24,7 +24,7 @@
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
     "@commitlint/types": "^19.0.3",
-    "@gkd-kit/selector": "0.0.21",
+    "@gkd-kit/selector": "0.0.22",
     "@types/lodash": "^4.14.202",
     "@types/node": "^20.11.24",
     "@typescript-eslint/eslint-plugin": "7.1.0",
