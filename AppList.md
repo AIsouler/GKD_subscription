@@ -14,6 +14,7 @@
 | CTM Buddy              | [com.ctm](/docs/com.ctm.md)                                                                                                                                       | 2      |
 | Cellular-Z             | [make.more.r2d2.cellular_z](/docs/make.more.r2d2.cellular_z.md)                                                                                                   | 2      |
 | Cimoc                  | [com.cimoc.haleydu](/docs/com.cimoc.haleydu.md)                                                                                                                   | 1      |
+| Clousx6                | [com.example.robortx.clousx6F](/docs/com.example.robortx.clousx6F.md)                                                                                             | 1      |
 | ClrvAI                 | [com.panaceasoft.pswallpaper](/docs/com.panaceasoft.pswallpaper.md)                                                                                               | 1      |
 | ECOVACS HOME           | [com.eco.global.app](/docs/com.eco.global.app.md)                                                                                                                 | 1      |
 | EMobile7               | [com.weaver.emobile7](/docs/com.weaver.emobile7.md)                                                                                                               | 1      |
@@ -258,6 +259,7 @@
 | 韩小圈                 | [com.babycloud.hanju](/docs/com.babycloud.hanju.md)                                                                                                               | 2      |
 | 好看视频               | [com.baidu.haokan](/docs/com.baidu.haokan.md)                                                                                                                     | 1      |
 | 好游快爆               | [com.xmcy.hykb](/docs/com.xmcy.hykb.md)                                                                                                                           | 2      |
+| 和包                   | [com.cmcc.hebao](/docs/com.cmcc.hebao.md)                                                                                                                         | 1      |
 | 黑阈                   | [me.piebridge.brevent](/docs/me.piebridge.brevent.md)                                                                                                             | 1      |
 | 河南农信               | [com.hnnx.pmbank](/docs/com.hnnx.pmbank.md)                                                                                                                       | 1      |
 | 恒大智慧社区           | [com.hd.smartVillage](/docs/com.hd.smartVillage.md)                                                                                                               | 2      |
@@ -284,7 +286,7 @@
 | 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                                                                                 | 3      |
 | 简单搜索               | [com.baidu.searchcraft](/docs/com.baidu.searchcraft.md)                                                                                                           | 1      |
 | 简书                   | [com.jianshu.haruki](/docs/com.jianshu.haruki.md)                                                                                                                 | 1      |
-| 简讯                   | [com.tipsoon.android](/docs/com.tipsoon.android.md)                                                                                                               | 1      |
+| 简讯                   | [com.tipsoon.android](/docs/com.tipsoon.android.md)                                                                                                               | 2      |
 | 剪映                   | [com.lemon.lv](/docs/com.lemon.lv.md)                                                                                                                             | 3      |
 | 交管12123              | [com.tmri.app.main](/docs/com.tmri.app.main.md)                                                                                                                   | 1      |
 | 交通银行               | [com.bankcomm.Bankcomm](/docs/com.bankcomm.Bankcomm.md)                                                                                                           | 2      |
@@ -354,7 +356,7 @@
 | 萌妹                   | [com.jc.avatar.mm](/docs/com.jc.avatar.mm.md)                                                                                                                     | 1      |
 | 喵次元                 | [com.sjm.zhuanzhuan.mcy](/docs/com.sjm.zhuanzhuan.mcy.md)                                                                                                         | 1      |
 | 喵喵折                 | [com.henzanapp.miaomiaozhe](/docs/com.henzanapp.miaomiaozhe.md)                                                                                                   | 1      |
-| 喵趣漫画               | [com.paokeji.yiqu](/docs/com.paokeji.yiqu.md)                                                                                                                     | 4      |
+| 喵趣漫画               | [com.paokeji.yiqu](/docs/com.paokeji.yiqu.md)                                                                                                                     | 5      |
 | 喵物次元               | [com.sjm.xiaodesecond.mw](/docs/com.sjm.xiaodesecond.mw.md)                                                                                                       | 1      |
 | 咪咕快游               | [cn.emagsoftware.gamehall](/docs/cn.emagsoftware.gamehall.md)                                                                                                     | 1      |
 | 咪咕视频               | [com.cmcc.cmvideo](/docs/com.cmcc.cmvideo.md)                                                                                                                     | 5      |
@@ -423,6 +425,7 @@
 | 软件包安装程序         | [com.google.android.packageinstaller](/docs/com.google.android.packageinstaller.md)                                                                               | 1      |
 | 软件包安装程序         | [com.android.packageinstaller](/docs/com.android.packageinstaller.md)                                                                                             | 1      |
 | 瑞幸咖啡               | [com.lucky.luckyclient](/docs/com.lucky.luckyclient.md)                                                                                                           | 3      |
+| 三星阅读               | [com.mci.smagazine](/docs/com.mci.smagazine.md)                                                                                                                   | 1      |
 | 扫描全能王             | [com.intsig.camscanner](/docs/com.intsig.camscanner.md)                                                                                                           | 1      |
 | 森空岛                 | [com.hypergryph.skland](/docs/com.hypergryph.skland.md)                                                                                                           | 1      |
 | 闪电侠                 | [app.esou](/docs/app.esou.md)                                                                                                                                     | 1      |
