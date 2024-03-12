@@ -8,12 +8,13 @@ export default defineAppConfig({
     {
       key: 0,
       name: '青少年模式',
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
           matches: '[text="体验一下"] + [text="关闭"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/d2b6ee77-ae06-4873-a106-db4ce2324777',
@@ -21,11 +22,17 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          quickFind: true,
           matches: '[text="开启青少年模式"] + * > [text="关闭"]',
           exampleUrls:
             'https://m.gkd.li/57941037/29534293-f3c7-4187-a36f-47e37fef2f42',
           snapshotUrls: 'https://i.gkd.li/i/14473006',
+        },
+        {
+          key: 2,
+          matches: '@[desc="关闭"] +2 [text="开启青少年模式"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/adeb1ebc-8aec-4bb1-b279-d86e2e9b0b74',
+          snapshotUrls: 'https://i.gkd.li/i/14567078',
         },
       ],
     },
