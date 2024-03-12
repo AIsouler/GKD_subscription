@@ -5,6 +5,23 @@ export default defineAppConfig({
   name: '简讯',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7ba2a5cd-12e8-4ac3-a867-8d0f81247d93',
+          snapshotUrls: 'https://i.gkd.li/i/14568317',
+        },
+      ],
+    },
+    {
       key: 0,
       name: '全屏广告-弹窗广告',
       rules: [
