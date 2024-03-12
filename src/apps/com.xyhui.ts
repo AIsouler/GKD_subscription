@@ -46,14 +46,13 @@ export default defineAppConfig({
         {
           key: 1,
           name: '腾讯广告-1',
-          quickFind: true,
           activityIds: [
             'com.xyhui.start.PUMainActivity',
             'com.xyhui.start.LoadingActivity',
             'com.huawei.permissioncontroller.hwcust.appjump.AppJumpActivity',
           ],
           matches:
-            ' [id="android:id/content"] >(4,5) FrameLayout[index=1] > @ImageView <<n [id="android:id/content"]',
+            ' [id="android:id/content"] >(4,5) FrameLayout[index=1] > @ImageView',
           snapshotUrls: [
             'https://i.gkd.li/i/14472097',
             'https://i.gkd.li/i/14472098',
@@ -92,11 +91,9 @@ export default defineAppConfig({
         },
         {
           key: 5,
-          quickFind: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches:
-            '[text="反馈"] + @View[visibleToUser=true] > Image <<n [id="android:id/content"]',
+          matches: '[text="反馈"] + @View[visibleToUser=true] > Image',
           snapshotUrls: 'https://i.gkd.li/i/14560546',
         },
       ],
