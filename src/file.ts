@@ -545,13 +545,26 @@ export const updateReadMeMd = async (
   await Promise.all(
     newConfig.apps!.map(async (app) => {
       // 遍历新配置中的应用列表
-      const oldApp = oldConfig.apps!.find((a) => a.id == app.id); // 查找旧配置中相同 ID 的应用对象
-      if (oldApp && !_.isEqual(oldApp, app)) {
+      const oldApp = oldConfig.apps!.find((a) => a.id === app.id); // 查找旧配置中相同 ID 的应用对象
+      if (!oldApp) {
+        // 如果在旧配置中找不到相同 ID 的应用对象，则将其加入变更日志中
+        changeCount++; // 变更计数器加一
+        await updateAppMd(app); // 调用更新应用 Markdown 文件的函数
+        const appDiffLog = getAppDiffLog([], app.groups); // 传入空的旧应用组列表
+        if (
+          appDiffLog.addGroups.length +
+            appDiffLog.changeGroups.length +
+            appDiffLog.removeGroups.length >
+          0
+        ) {
+          appDiffs.push({ app, ...appDiffLog }); // 将应用变更日志添加到数组中
+        }
+      } else if (!_.isEqual(oldApp, app)) {
         // 如果找到旧应用且新旧应用对象不相等
         changeCount++; // 变更计数器加一
         await updateAppMd(app); // 调用更新应用 Markdown 文件的函数
         // 获取应用组的变更日志，传入旧的应用组列表和新的应用组列表以及旧的全局应用组列表和新的全局应用组列表
-        const appDiffLog = getAppDiffLog(oldApp?.groups, app.groups);
+        const appDiffLog = getAppDiffLog(oldApp.groups, app.groups);
         if (
           appDiffLog.addGroups.length +
             appDiffLog.changeGroups.length +
