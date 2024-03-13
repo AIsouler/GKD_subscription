@@ -128,15 +128,14 @@ export default defineAppConfig({
         'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
         'com.bilibili.video.videodetail.VideoDetailsActivity',
       ],
-      rules: ['[id="tv.danmaku.bili:id/toast_x"]'],
+      rules: '[id="tv.danmaku.bili:id/toast_x"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12892611',
         'https://i.gkd.li/i/13308344',
         'https://i.gkd.li/i/13538048', // activityIds: 'com.bilibili.video.videodetail.VideoDetailsActivity',
       ],
-      exampleUrls: [
+      exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb',
-      ],
     },
     {
       key: 8,
@@ -170,24 +169,21 @@ export default defineAppConfig({
         {
           key: 0,
           name: '点击广告卡片右下角菜单按钮',
+          quickFind: true,
           actionMaximum: 1,
-          actionCd: 500,
           matches:
-            'RelativeLayout[desc^="广告"] > ViewGroup[childCount=3] > FrameLayout[index=2]',
-          snapshotUrls: 'https://i.gkd.li/i/14083540',
+            '[desc^="广告"] >(1,2) ViewGroup[childCount=3] > FrameLayout[vid="more"][index=2]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14083540',
+            'https://i.gkd.li/i/14059876',
+            'https://i.gkd.li/i/14588315',
+          ],
         },
-        {
-          key: 3,
-          name: '点击巨幅广告卡片右下角菜单按钮',
-          actionMaximum: 1,
-          actionCd: 500,
-          matches:
-            'ViewGroup[desc^="广告"] >2 ViewGroup[childCount=3] > FrameLayout[index=2]',
-          snapshotUrls: 'https://i.gkd.li/i/14059876',
-        },
+
+        //预留key
         {
           preKeys: [0],
-          key: 1,
+          key: 50,
           quickFind: true,
           name: '点击[不感兴趣]',
           matches: '@[clickable=true] > [text="不感兴趣"]',
@@ -199,8 +195,8 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 3],
-          key: 4,
+          preKeys: [0],
+          key: 51,
           name: '点击[相似内容过多]',
           quickFind: true,
           matches: '@[clickable=true] > [text="相似内容过多"]',
@@ -214,7 +210,7 @@ export default defineAppConfig({
         },
         {
           preKeys: [0],
-          key: 5,
+          key: 52,
           name: '点击[up主不感兴趣]',
           quickFind: true,
           matches: '@[clickable=true] > [text="up主不感兴趣"]',
