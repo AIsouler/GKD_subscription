@@ -106,12 +106,12 @@ export default defineAppConfig({
     {
       key: 3,
       name: '局部广告-首页、推荐列表顶部卡片式广告',
+      matchTime: 10000,
+      actionMaximum: 1,
       activityIds: [
         'com.baidu.tieba.tblauncher.MainTabActivity',
         'com.baidu.tieba.frs.FrsActivity',
       ],
-      matchTime: 10000,
-      actionMaximum: 1,
       rules: [
         {
           key: 1,
@@ -269,6 +269,22 @@ export default defineAppConfig({
           matches:
             'WebView[text="签到弹窗"] > View > View > TextView[text=""][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13776424',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '局部广告-帖子底部话题卡片',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
+          matches: '@ImageView[clickable=true] -2 [text="进入话题查看更多"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2fa193f8-5e0e-4f85-b828-eb3e22cb60a3',
+          snapshotUrls: 'https://i.gkd.li/i/14586847',
         },
       ],
     },
