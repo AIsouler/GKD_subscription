@@ -201,5 +201,31 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '全屏广告-开学福利弹窗',
+      desc: '点击[不要再提醒我]-点击关闭',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.youdao.dict.activity.MainActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[text="不要再提醒我"][checked=false]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f665b390-2ef6-47be-8246-99632b24c5de',
+          snapshotUrls: 'https://i.gkd.li/i/14586448',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          matches: '[vid="dialog_close_btn"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f665b390-2ef6-47be-8246-99632b24c5de',
+          snapshotUrls: 'https://i.gkd.li/i/14586448',
+        },
+      ],
+    },
   ],
 });
