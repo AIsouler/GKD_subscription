@@ -1,6 +1,6 @@
 # 百度贴吧
 
-存在 10 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
+存在 11 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
 
 ## 开屏广告
 
@@ -89,3 +89,11 @@
 
 - [快照-0](https://i.gkd.li/i/13776801)
 - [快照-1](https://i.gkd.li/i/13776424)
+
+## 局部广告-帖子底部话题卡片
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/2fa193f8-5e0e-4f85-b828-eb3e22cb60a3)
+
+- [快照-0](https://i.gkd.li/i/14586847)
