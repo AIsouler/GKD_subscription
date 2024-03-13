@@ -271,5 +271,24 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 18,
+      name: '全屏广告-低价秒杀券弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          position: {
+            left: 'width * 0.5051',
+            top: 'width * 2.0649',
+          },
+          activityIds: 'com.ss.android.ugc.aweme.live.LiveDummyActivity',
+          matches: '[text="恭喜获得低价秒杀券"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ef703cd7-99af-4e10-8345-9860ed160b8b',
+          snapshotUrls: 'https://i.gkd.li/i/14585377',
+        },
+      ],
+    },
   ],
 });
