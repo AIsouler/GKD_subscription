@@ -140,7 +140,7 @@
 | 百度输入法             | [com.baidu.input](/docs/com.baidu.input.md)                                                                                                                       | 3      |
 | 百度贴吧               | [com.baidu.tieba](/docs/com.baidu.tieba.md)                                                                                                                       | 11     |
 | 百度网盘               | [com.baidu.netdisk](/docs/com.baidu.netdisk.md)                                                                                                                   | 12     |
-| 百度网盘-三星版本      | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md)                                                                                                   | 4      |
+| 百度网盘-三星版本      | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md)                                                                                                   | 5      |
 | 百分网游戏盒子         | [com.byfen.market](/docs/com.byfen.market.md)                                                                                                                     | 3      |
 | 班级小管家             | [com.banjixiaoguanjia.app](/docs/com.banjixiaoguanjia.app.md)                                                                                                     | 1      |
 | 宝宝生活记录           | [com.bluemobile.flutterbabylife](/docs/com.bluemobile.flutterbabylife.md)                                                                                         | 1      |
@@ -398,6 +398,7 @@
 | 青创网                 | [com.m17qcc.mm](/docs/com.m17qcc.mm.md)                                                                                                                           | 1      |
 | 青岛公交查询           | [com.qingdaonews.bus](/docs/com.qingdaonews.bus.md)                                                                                                               | 1      |
 | 轻松阅                 | [io.sbyd.app](/docs/io.sbyd.app.md)                                                                                                                               | 1      |
+| 青藤之恋               | [com.wepie.ivy](/docs/com.wepie.ivy.md)                                                                                                                           | 1      |
 | 蜻蜓FM                 | [fm.qingting.qtradio](/docs/fm.qingting.qtradio.md)                                                                                                               | 1      |
 | 蜻蜓点金               | [zhongxinjiantou.szkingdom.android.newphone](/docs/zhongxinjiantou.szkingdom.android.newphone.md)                                                                 | 1      |
 | 亲邻开门               | [com.qinlin.edoor](/docs/com.qinlin.edoor.md)                                                                                                                     | 5      |
@@ -436,7 +437,7 @@
 | 深(新)度搜索           | [com.bz.yilianlife.sd](/docs/com.bz.yilianlife.sd.md)                                                                                                             | 1      |
 | 什么值得买             | [com.smzdm.client.android](/docs/com.smzdm.client.android.md)                                                                                                     | 4      |
 | 识货                   | [com.hupu.shihuo](/docs/com.hupu.shihuo.md)                                                                                                                       | 3      |
-| 十六番旅行             | [com.fan.app](/docs/com.fan.app.md)                                                                                                                               | 2      |
+| 十六番旅行             | [com.fan.app](/docs/com.fan.app.md)                                                                                                                               | 3      |
 | 石墨文档               | [chuxin.shimo.shimowendang](/docs/chuxin.shimo.shimowendang.md)                                                                                                   | 1      |
 | 实用大师               | [com.practical.master.toolsme](/docs/com.practical.master.toolsme.md)                                                                                             | 1      |
 | 实用工具箱             | [com.hj119.sygjx](/docs/com.hj119.sygjx.md)                                                                                                                       | 1      |
