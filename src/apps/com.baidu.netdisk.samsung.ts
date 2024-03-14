@@ -6,6 +6,32 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      rules: [
+        {
+          key: 0,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e88a7ab4-0aeb-4472-a49b-3252da21ae33',
+          snapshotUrls: 'https://i.gkd.li/i/12738323',
+        },
+        {
+          key: 1,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7f1babd6-7da3-4733-aca9-80ddf3c0a84e',
+          snapshotUrls: 'https://i.gkd.li/i/14596658',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击右上角x图标按钮',
