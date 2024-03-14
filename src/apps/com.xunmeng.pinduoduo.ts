@@ -132,16 +132,27 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '全屏广告-多多买菜抽奖弹窗',
+      name: '全屏广告-多多买菜弹窗',
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches:
             'View[childCount=1] > Button[id=null][text="关闭弹窗"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/b6b638d0-9e99-4e4a-89ea-f2539a46cf56',
           snapshotUrls: 'https://i.gkd.li/i/12642053',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '@ViewGroup[clickable=true][visibleToUser=true] - * > [index=2] >2 [text="连领7天 今日可领"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/059c82cd-cc70-4611-b3ab-c3c6c7e35f22',
+          snapshotUrls: 'https://i.gkd.li/i/14596990',
         },
       ],
     },
