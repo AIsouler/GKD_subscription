@@ -46,6 +46,16 @@ export default defineAppConfig({
             'https://m.gkd.li/57941037/1decf3eb-ef21-4e67-9fd9-ce8727a9b9b5',
           snapshotUrls: 'https://i.gkd.li/i/14228348',
         },
+        {
+          key: 3,
+          name: '勾选[已了解此应用未经检测，可能存在风险]',
+          quickFind: true,
+          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
+          matches: '[vid="checkbox"][checked=false]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/332c6590-da4b-463d-99e1-b43a81800fd3',
+          snapshotUrls: 'https://i.gkd.li/i/14595443',
+        },
       ],
     },
   ],
