@@ -209,12 +209,13 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '[id="com.alipay.mobile.nebula:id/h5_pc_container"] View[childCount=1] > View[childCount=2] > View + Image[text=""]',
+            '[id="com.alipay.mobile.nebula:id/h5_pc_container"] View[childCount=1] > View[childCount=2] > View > Image < View + Image[text=""]',
           exampleUrls:
             'https://m.gkd.li/57941037/bfc87673-cba3-4a5b-ba77-210de8244604',
           snapshotUrls: [
             'https://i.gkd.li/i/14112224',
             'https://i.gkd.li/i/14176001', //不加text=""误触
+            'https://i.gkd.li/i/14602610', // 使用 View > Image < View 防止误触
           ],
         },
       ],
