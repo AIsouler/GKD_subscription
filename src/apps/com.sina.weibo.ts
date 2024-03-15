@@ -274,7 +274,7 @@ export default defineAppConfig({
     {
       key: 18,
       name: '评价提示-APP评分弹窗',
-      desc: '点击"x"',
+      desc: '点击关闭',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
