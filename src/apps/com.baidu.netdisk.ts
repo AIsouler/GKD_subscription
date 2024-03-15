@@ -101,9 +101,10 @@ export default defineAppConfig({
     {
       key: 9,
       name: '评价提示',
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="喜欢“百度网盘”吗？"] +n [text="以后再说"]',
+      rules: '[vid="view_score_style"] > [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/14317054',
     },
     {

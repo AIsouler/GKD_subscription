@@ -31,6 +31,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '评价提示-APP评分弹窗',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

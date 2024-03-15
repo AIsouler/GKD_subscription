@@ -63,6 +63,7 @@ export default defineAppConfig({
     {
       key: 6,
       name: '评价提示',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
