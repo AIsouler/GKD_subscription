@@ -174,9 +174,9 @@ export default defineAppConfig({
       activityIds:
         'com.taobao.android.detail2.core.framework.floatwindow.permission.PermissionActivity',
       quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'activity',
       matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: {
         matches: [
           '[id="android:id/message"][text*="悬浮窗权限"]',

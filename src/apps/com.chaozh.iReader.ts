@@ -10,6 +10,8 @@ export default defineAppConfig({
       name: '权限提示',
       quickFind: true,
       matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           matches: 'Button[text="前往开启"] - Button[text="取消"]',
