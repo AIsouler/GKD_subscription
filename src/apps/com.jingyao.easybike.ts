@@ -22,6 +22,8 @@ export default defineAppConfig({
       key: 9,
       name: '定位提示-请求定位权限弹窗',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules:
         '[text="系统定位服务已关闭"] < FrameLayout +n FrameLayout >2 [text="取消"]',

@@ -7,6 +7,8 @@ export default defineAppConfig({
     {
       key: 10,
       name: '定位提示-请求位置权限提示信息',
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.hihonor.phoneservice.main.MainActivity',
       rules:
         '[text^="开启定位权限"] + [id="com.hihonor.phoneservice:id/iv_close"]',

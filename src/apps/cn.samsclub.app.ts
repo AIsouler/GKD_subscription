@@ -22,6 +22,8 @@ export default defineAppConfig({
     {
       key: 1,
       name: '定位提示-关闭「系统位置服务未打开」通知条',
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'cn.samsclub.app.ui.MainActivity',
       rules: [
         {

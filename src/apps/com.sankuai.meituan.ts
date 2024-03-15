@@ -105,6 +105,9 @@ export default defineAppConfig({
       key: 7,
       name: '定位提示',
       desc: '首页/外卖界面-"打开位置开关弹窗"-点击右侧x关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,

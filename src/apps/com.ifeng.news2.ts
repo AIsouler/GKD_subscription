@@ -52,6 +52,8 @@ export default defineAppConfig({
       key: 10,
       name: '定位提示-请求位置权限弹窗',
       desc: '自动点击取消',
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.ifeng.news2.activity.IfengTabMainActivity',
       rules:
         '[text*="请求您的位置"] + [id="com.ifeng.news2:id/permission_cancel"]',

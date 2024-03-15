@@ -49,22 +49,28 @@ export default defineAppConfig({
       key: 5,
       name: '定位提示-请求定位弹窗',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
       activityIds: [
         'com.baidu.mapframework.widget.BMBaseDialog',
         'com.baidu.baidumaps.MapsActivity',
       ],
       rules: [
         {
+          key: 0,
           matches:
             '[text^="开启位置服务"] + RelativeLayout > [id="com.baidu.BaiduMap:id/tv_notip_btn"]',
           snapshotUrls: 'https://i.gkd.li/i/12660884',
         },
         {
+          key: 1,
           matches:
             '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
           snapshotUrls: 'https://i.gkd.li/i/12660883',
         },
         {
+          key: 2,
           matches:
             'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/12909299',
