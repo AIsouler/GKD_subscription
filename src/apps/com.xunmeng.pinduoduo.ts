@@ -83,6 +83,15 @@ export default defineAppConfig({
             '[text="多多免单"] >5 View[childCount=2] > Image[index=0][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14310581',
         },
+        {
+          key: 3,
+          name: '抽免单活动4',
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '@ImageView[visibleToUser=true] < * +2 * >3 [text="立即抽免单"]',
+          snapshotUrls: 'https://i.gkd.li/i/14614135',
+        },
       ],
     },
     {
