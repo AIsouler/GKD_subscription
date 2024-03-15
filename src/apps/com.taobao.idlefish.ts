@@ -17,6 +17,7 @@ export default defineAppConfig({
       key: 2,
       name: '权限提示',
       actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.taobao.idlefish.maincontainer.activity.MainActivity',
       rules:
         '@Button[text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',

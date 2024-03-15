@@ -27,6 +27,8 @@ export default defineAppConfig({
       key: 10,
       name: '权限提示-请求读取剪贴板权限弹窗',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '@[text="暂不允许"] + [text="允许"]',
       snapshotUrls: 'https://i.gkd.li/i/13198020',
