@@ -171,15 +171,18 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '功能类-自动点击"翻译帖子"',
+      name: '功能类-自动点击翻译',
       rules: [
         {
           quickFind: true,
           activityIds: 'com.twitter.tweetdetail.TweetDetailActivity',
-          matches: '[vid="translation_link"][text="翻译帖子"]',
+          matches: '[vid="translation_link"][text^="翻译"]',
           exampleUrls:
             'https://m.gkd.li/57941037/40ece44f-883f-429a-aa0c-17dac15a50e4',
-          snapshotUrls: 'https://i.gkd.li/i/14189817',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14189817',
+            'https://i.gkd.li/i/14615911',
+          ],
         },
       ],
     },
