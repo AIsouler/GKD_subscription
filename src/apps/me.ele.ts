@@ -143,16 +143,18 @@ export default defineAppConfig({
       name: '定位提示',
       desc: '自动点击X',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
       rules: [
         {
           key: 0,
-          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
           matches: '[text="去开启"] + [id="me.ele:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/13710588',
         },
         {
           key: 1,
-          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
           matches: '[text="去开启"] + [id="me.ele:id/close_tips"]',
           snapshotUrls: 'https://i.gkd.li/i/13710585',
         },

@@ -48,6 +48,8 @@ export default defineAppConfig({
       key: 1,
       name: '定位提示-请求定位权限弹窗',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules:
         '@[id="com.alipay.mobile.antui:id/closeButton"] - [id="com.alipay.mobile.antui:id/textAndButtonLayout"] [id="com.alipay.mobile.antui:id/tipTextView"][text^="开启定位权限"]',

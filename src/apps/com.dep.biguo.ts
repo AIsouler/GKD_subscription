@@ -24,6 +24,8 @@ export default defineAppConfig({
     {
       key: 10,
       name: '定位提示-请求定位权限弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.dep.biguo.mvp.ui.activity.MainActivity',
       rules: '[text*="定位权限"] +2 [text="拒绝"]',
       snapshotUrls: 'https://i.gkd.li/i/12708770',
