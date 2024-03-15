@@ -1,18 +1,6 @@
 # 抖音
 
-存在 16 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
-
-## 青少年模式
-
-默认禁用
-
-- [示例-0](https://m.gkd.li/57941037/d2b6ee77-ae06-4873-a106-db4ce2324777)
-- [示例-1](https://m.gkd.li/57941037/29534293-f3c7-4187-a36f-47e37fef2f42)
-- [示例-2](https://m.gkd.li/57941037/adeb1ebc-8aec-4bb1-b279-d86e2e9b0b74)
-
-- [快照-0](https://i.gkd.li/i/14321107)
-- [快照-1](https://i.gkd.li/i/14473006)
-- [快照-2](https://i.gkd.li/i/14567078)
+存在 15 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
 ## 局部广告-关闭用户推荐
 
