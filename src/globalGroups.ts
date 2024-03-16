@@ -131,10 +131,9 @@ const globalGroups: RawGlobalGroup[] = [
           '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text*="skip" || text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || desc*="跳过" || desc*="skip" || (vid*="count" && vid*="down" && vid!*="countdown" && vid!*="load" && vid!*="add" && vid!*="ead" && vid!*="time")]',
       },
     ],
-    apps: [...diabledAppIdsAD].map(
-      (id) => ({ id, enable: false }),
-      [...enabledAppIdsAD].map((id) => ({ id, enable: true })),
-    ),
+    apps: [...diabledAppIdsAD]
+      .map((id) => ({ id, enable: false }))
+      .concat([...enabledAppIdsAD].map((id) => ({ id, enable: true }))),
   },
   {
     key: 1,
@@ -155,10 +154,9 @@ const globalGroups: RawGlobalGroup[] = [
         ],
       },
     ],
-    apps: [...diabledAppIdsUP].map(
-      (id) => ({ id, enable: false }),
-      [...enabledAppIdsUP].map((id) => ({ id, enable: true })),
-    ),
+    apps: [...diabledAppIdsUP]
+      .map((id) => ({ id, enable: false }))
+      .concat([...enabledAppIdsUP].map((id) => ({ id, enable: true }))),
   },
   {
     key: 2,
@@ -176,10 +174,9 @@ const globalGroups: RawGlobalGroup[] = [
         ],
       },
     ],
-    apps: [...diabledAppIdsYM].map(
-      (id) => ({ id, enable: false }),
-      [...enabledAppIdsYM].map((id) => ({ id, enable: true })),
-    ),
+    apps: [...diabledAppIdsYM]
+      .map((id) => ({ id, enable: false }))
+      .concat([...enabledAppIdsYM].map((id) => ({ id, enable: true }))),
   },
 ];
 export default globalGroups;
