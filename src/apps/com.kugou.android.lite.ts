@@ -59,5 +59,14 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '更新提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      rules: '@ImageView - * > [text="立即升级"]',
+      snapshotUrls: 'https://i.gkd.li/i/14622566',
+    },
   ],
 });
