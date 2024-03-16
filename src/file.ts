@@ -690,6 +690,7 @@ export const updateReadMeMd = async (
 
   const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
   const readMeMdText = mdTemplate
+    .replaceAll('--APP_SIZE--', newConfig.apps!.length.toString())
     .replaceAll(
       '--GROUP_SIZE--',
       newConfig

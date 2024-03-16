@@ -21,7 +21,7 @@ https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 
 当前版本: v--VERSION--
 
-当前订阅文件已适配 --APP_SIZE-- 个 APP, 共有 --GROUP_SIZE-- 规则组
+当前订阅文件已适配 --APP_SIZE-- 个应用，共有 --GROUP_SIZE-- 应用规则组，--GLOBALGROUP_SIZE-- 全局规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
