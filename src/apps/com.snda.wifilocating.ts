@@ -26,5 +26,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-连接WiFi后弹出的广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.wifitutu.ui.tools.SpeedUpBActivity',
+          quickFind: true,
+          matches: '[vid="native_express_close_proxy"]',
+          snapshotUrls: 'https://i.gkd.li/i/14622506',
+        },
+      ],
+    },
   ],
 });
