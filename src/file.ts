@@ -699,9 +699,7 @@ export const updateReadMeMd = async (
     )
     .replaceAll(
       '--GLOBALGROUP_SIZE--',
-      newConfig
-        .globalGroups!.reduce((p, c) => p + (c.rules?.length || 0), 0)
-        .toString(),
+      newConfig.globalGroups!.length.toString(),
     )
     .replaceAll('--VERSION--', (newConfig.version || 0).toString());
   await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
