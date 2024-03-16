@@ -9,6 +9,12 @@ const diabledAppIds: string[] = [
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝
   'com.tencent.wetype', // 微信输入法
+  'com.miui.huanji', // 小米换机
+  'com.miui.weather2', // 小米天气
+  'com.miui.calculator', // 小米计算器
+  'com.android.soundrecorder', // 小米录音机
+  'com.android.email', // 小米电子邮件
+  'com.miui.screenrecorder', // 小米屏幕录制
   'com.tmri.app.main', // 交管12123
   'com.github.android', // GitHub
   'org.telegram.messenger', // Telegram
