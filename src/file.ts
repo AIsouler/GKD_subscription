@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import isEqual from 'lodash/isEqual';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import type PkgT from '../package.json';
@@ -38,13 +38,14 @@ const orderdStringify = (
   replacer?: (this: any, key: string, value: any) => any,
   space?: string | number,
 ) => {
-  const map = new Map<string, unknown>();
-  keys.forEach((k) => {
-    if (obj[k] === undefined) return;
-    map.set(k, obj[k]);
-  });
+  const filteredEntries: [string, unknown][] = [];
+  for (const key of keys) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      filteredEntries.push([key, obj[key]]);
+    }
+  }
   return (
-    JSON.stringify(Object.fromEntries(map.entries()), replacer, space) + '\n'
+    JSON.stringify(Object.fromEntries(filteredEntries), replacer, space) + '\n'
   );
 };
 
@@ -55,13 +56,14 @@ const orderdStringify5 = (
   replacer?: (this: any, key: string, value: any) => any,
   space?: string | number,
 ) => {
-  const map = new Map<string, unknown>();
-  keys.forEach((k) => {
-    if (obj[k] === undefined) return;
-    map.set(k, obj[k]);
-  });
+  const filteredEntries: [string, unknown][] = [];
+  for (const key of keys) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      filteredEntries.push([key, obj[key]]);
+    }
+  }
   return (
-    JSON5.stringify(Object.fromEntries(map.entries()), replacer, space) + '\n'
+    JSON5.stringify(Object.fromEntries(filteredEntries), replacer, space) + '\n'
   );
 };
 
@@ -90,7 +92,7 @@ export const writeConfig = async (config: RawSubscription) => {
   newConfig.version = oldConfig.version || 0;
   checkConfig(newConfig); // 检查配置的有效性
 
-  const hasUpdate = !_.isEqual(newConfig, oldConfig); // 检查是否有更新
+  const hasUpdate = !isEqual(newConfig, oldConfig); // 检查是否有更新
   if (!hasUpdate) {
     console.log('暂无规则变化'); // 若无更新，则输出提示信息
     return; // 并返回
@@ -158,7 +160,7 @@ export const validSnapshotUrl = (s: string) => {
 export const checkConfig = (newConfig: RawSubscription) => {
   // 检查分类是否重复
   const categories = newConfig.categories || [];
-  categories.forEach((c) => {
+  for (const c of categories) {
     if (
       categories.some(
         (c2) => (c2.key == c.key || c2.name == c.name) && c2 !== c,
@@ -171,11 +173,11 @@ export const checkConfig = (newConfig: RawSubscription) => {
       });
       throw new Error('invalid duplicated category');
     }
-  });
+  }
 
   // 检查全局组是否存在重复
   const globalGroups = newConfig.globalGroups || [];
-  globalGroups.forEach((g) => {
+  for (const g of globalGroups) {
     if (globalGroups.some((g2) => g2.key == g.key && g2 !== g)) {
       console.error({
         configName: newConfig.name,
@@ -185,7 +187,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
       throw new Error('invalid deprecated global group key');
     }
     // 检查规则选择器语法
-    g.rules.forEach((r) => {
+    for (const r of g.rules) {
       [r.matches, r.excludeMatches]
         .map((m) => iArrayToArray(m))
         .flat()
@@ -201,18 +203,18 @@ export const checkConfig = (newConfig: RawSubscription) => {
             throw e;
           }
         });
-    });
-  });
+    }
+  }
 
   // 检查组和规则的重复键
   const apps = newConfig.apps || [];
-  apps.forEach((app: RawApp) => {
-    const deprecatedKeys = app.deprecatedKeys || [];
+  for (const app of apps) {
+    const deprecatedKeys = (app as RawApp).deprecatedKeys || [];
     const keys = new Set<number>();
     const oldGroups = oldConfig.apps?.find((a) => a.id == app.id)?.groups || [];
-    app.groups?.forEach((g) => {
+    for (const g of app.groups || []) {
       const oldGroup = oldGroups.find((og) => og.key == g.key);
-      if (!oldGroup || !_.isEqual(oldGroup, g)) {
+      if (!oldGroup || !isEqual(oldGroup, g)) {
         // 检查新增/变动的规则组是否能被分类
         if (
           !categories.some(
@@ -258,7 +260,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
 
       // 检查重复规则键
       const ruleKeys = new Set<number>();
-      iArrayToArray(g.rules).forEach((r) => {
+      for (const r of iArrayToArray(g.rules)) {
         if (typeof r == 'object' && r.key !== undefined) {
           if (ruleKeys.has(r.key)) {
             console.error({
@@ -272,7 +274,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
           }
           ruleKeys.add(r.key);
         }
-      });
+      }
 
       // 检查规则选择器语法
       const rules = iArrayToArray(g.rules).map((r) => {
@@ -281,7 +283,7 @@ export const checkConfig = (newConfig: RawSubscription) => {
         }
         return r;
       });
-      rules.forEach((r) => {
+      for (const r of rules) {
         [r.matches, r.excludeMatches]
           .map((m) => iArrayToArray(m))
           .flat()
@@ -298,10 +300,10 @@ export const checkConfig = (newConfig: RawSubscription) => {
               throw e;
             }
           });
-      });
+      }
 
       // 检查快照 URL 的有效性
-      iArrayToArray(g.snapshotUrls).forEach((u) => {
+      for (const u of iArrayToArray(g.snapshotUrls)) {
         if (!validSnapshotUrl(u)) {
           console.error({
             appId: app.id,
@@ -311,25 +313,25 @@ export const checkConfig = (newConfig: RawSubscription) => {
             `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/i/12506571`,
           );
         }
-      });
-      iArrayToArray(g.rules).forEach((r, ruleIndex) => {
-        if (typeof r == 'string') return;
-        iArrayToArray(r.snapshotUrls).forEach((u) => {
+      }
+      for (const [ruleIndex, r] of iArrayToArray(g.rules).entries()) {
+        if (typeof r == 'string') continue;
+        for (const u of iArrayToArray(r.snapshotUrls)) {
           if (!validSnapshotUrl(u)) {
             console.error({
               appId: app.id,
               groupKey: g.key,
-              ruleIndex: ruleIndex,
+              ruleIndex,
               ruleKey: r.key,
             });
             throw new Error(
               `invalid snapshotUrls: ${u}\nit should like https://i.gkd.li/i/12506571`,
             );
           }
-        });
-      });
-    });
-  });
+        }
+      }
+    }
+  }
 
   // 检查新配置中是否包含了未在排序键中声明的属性
   const newKeys = Object.keys(newConfig) as (keyof RawSubscription)[];
@@ -347,10 +349,9 @@ export const updateAppMd = async (app: RawApp) => {
   // 生成应用的 Markdown 文本内容
   const appHeadMdText = [
     `# ${app.name}`,
-    `存在 ${app.groups?.length || 0} 规则组 - [${app.id}](/src/apps/${
-      app.id
-    }.ts)`,
+    `存在 ${app.groups?.length || 0} 规则组 - [${app.id}](/src/apps/${app.id}.ts)`,
   ].join('\n\n');
+
   const groupMdText = (app.groups || [])
     .map((group) => {
       const groupNameMdText = [
@@ -459,7 +460,7 @@ const getAppDiffLog = (
     const oldGroup = oldGroups.find((og) => og.key == ng.key); // 查找对应的旧应用组
     if (oldGroup) {
       // 如果找到了对应的旧应用组
-      if (!_.isEqual(oldGroup, ng)) {
+      if (!isEqual(oldGroup, ng)) {
         // 检查新旧应用组对象是否相等
         changeGroups.push(ng); // 如果不相等，则将新应用组添加到变更列表中
       }
@@ -491,7 +492,7 @@ const getGlobalDiffLog = (
     const oldGroup = oldGlobalGroups.find((og) => og.key == ng.key); // 查找对应的旧全局应用组
     if (oldGroup) {
       // 如果找到了对应的旧全局应用组
-      if (!_.isEqual(oldGroup, ng)) {
+      if (!isEqual(oldGroup, ng)) {
         // 检查新旧全局应用组对象是否相等
         changeGlobalGroups.push(ng); // 如果不相等，则将新全局应用组添加到变更列表中
       }
@@ -523,12 +524,12 @@ type GlobalDiff = {
 };
 
 export const updateReadMeMd = async (
-  newConfig: RawSubscription, // 新配置对象
-  oldConfig: RawSubscription, // 旧配置对象
+  newConfig: RawSubscription,
+  oldConfig: RawSubscription,
 ) => {
-  let changeCount = 0; // 变更计数器，用于记录变更次数
-  const appDiffs: AppDiff[] = []; // 存储应用变更日志的数组
-  const globaldiffs: GlobalDiff[] = []; // 存储全局规则变更日志的数组
+  let changeCount = 0;
+  const appDiffs: AppDiff[] = [];
+  const globaldiffs: GlobalDiff[] = [];
   const globalDiffLog = getGlobalDiffLog(
     oldConfig.globalGroups,
     newConfig.globalGroups,
@@ -539,47 +540,51 @@ export const updateReadMeMd = async (
       globalDiffLog.removeGlobalGroups.length >
     0
   ) {
-    globaldiffs.push({ ...globalDiffLog }); // 将全局规则变更日志添加到数组中
+    globaldiffs.push({ ...globalDiffLog });
   }
-  // 获取应用组的变更日志，传入旧的应用组列表和新的应用组列表以及旧的全局应用组列表和新的全局应用组列表
-  await Promise.all(
-    newConfig.apps!.map(async (app) => {
-      // 遍历新配置中的应用列表
-      const oldApp = oldConfig.apps!.find((a) => a.id === app.id); // 查找旧配置中相同 ID 的应用对象
-      if (!oldApp) {
-        // 如果在旧配置中找不到相同 ID 的应用对象，则将其加入变更日志中
-        changeCount++; // 变更计数器加一
-        await updateAppMd(app); // 调用更新应用 Markdown 文件的函数
-        const appDiffLog = getAppDiffLog([], app.groups); // 传入空的旧应用组列表
-        if (
-          appDiffLog.addGroups.length +
-            appDiffLog.changeGroups.length +
-            appDiffLog.removeGroups.length >
-          0
-        ) {
-          appDiffs.push({ app, ...appDiffLog }); // 将应用变更日志添加到数组中
-        }
-      } else if (!_.isEqual(oldApp, app)) {
-        // 如果找到旧应用且新旧应用对象不相等
-        changeCount++; // 变更计数器加一
-        await updateAppMd(app); // 调用更新应用 Markdown 文件的函数
-        // 获取应用组的变更日志，传入旧的应用组列表和新的应用组列表以及旧的全局应用组列表和新的全局应用组列表
-        const appDiffLog = getAppDiffLog(oldApp.groups, app.groups);
-        if (
-          appDiffLog.addGroups.length +
-            appDiffLog.changeGroups.length +
-            appDiffLog.removeGroups.length >
-          0
-        ) {
-          appDiffs.push({ app, ...appDiffLog }); // 将应用变更日志添加到数组中
-        }
+
+  // 遍历新配置中的每个应用程序
+  for (const app of oldConfig.apps || []) {
+    // 查找新配置中具有相同 ID 的应用程序
+    const newApp = newConfig.apps!.find((a) => a.id === app.id);
+    // 如果在旧配置中找不到相同 ID 的应用程序
+    if (!newApp) {
+      // 增加变更计数
+      changeCount++;
+      // 更新应用程序的 Markdown 文件
+      await updateAppMd(app);
+      // 获取应用程序组的差异日志
+      const appDiffLog = getAppDiffLog(app.groups, []);
+      // 如果有新增、修改或删除的组，则将其记录到应用程序差异中
+      if (
+        appDiffLog.addGroups.length +
+          appDiffLog.changeGroups.length +
+          appDiffLog.removeGroups.length >
+        0
+      ) {
+        appDiffs.push({ app, ...appDiffLog });
       }
-    }),
-  );
+    } else if (!isEqual(newApp, app)) {
+      // 如果旧应用程序与新应用程序不相等
+      // 增加变更计数
+      changeCount++;
+      // 更新应用程序的 Markdown 文件
+      await updateAppMd(app);
+      // 获取应用程序组的差异日志
+      const appDiffLog = getAppDiffLog(app.groups, newApp.groups);
+      // 如果有新增、修改或删除的组，则将其记录到应用程序差异中
+      if (
+        appDiffLog.addGroups.length +
+          appDiffLog.changeGroups.length +
+          appDiffLog.removeGroups.length >
+        0
+      ) {
+        appDiffs.push({ app, ...appDiffLog });
+      }
+    }
+  }
 
   if (appDiffs.length > 0 || globaldiffs.length > 0) {
-    // 如果存在应用变更日志
-    // 计算新增规则组数量和变动规则组数量以及移除规则组数量
     const addGroupsCount = appDiffs.reduce((p, c) => p + c.addGroups.length, 0);
     const changeGroupsCount = appDiffs.reduce(
       (p, c) => p + c.changeGroups.length,
@@ -602,102 +607,101 @@ export const updateReadMeMd = async (
       0,
     );
 
-    // 构建变更日志文本
     const changeLogText =
       [
-        '# v' + newConfig.version, // 版本号标题
+        `# v${newConfig.version}`,
         [
-          `更新 ${appDiffs.length} 应用`, // 更新应用数量
-          addGroupsCount ? `新增 ${addGroupsCount} 规则` : '', // 新增规则组数量
-          changeGroupsCount ? `变动 ${changeGroupsCount} 规则` : '', // 变动规则组数量
-          removeGroupsCount ? `移除 ${removeGroupsCount} 规则` : '', // 移除规则组数量
-          addGlobalGroupsCount ? `新增 ${addGlobalGroupsCount} 全局规则` : '', // 新增全局规则数量
+          `更新 ${appDiffs.length} 应用`,
+          addGroupsCount ? `新增 ${addGroupsCount} 规则` : '',
+          changeGroupsCount ? `变动 ${changeGroupsCount} 规则` : '',
+          removeGroupsCount ? `移除 ${removeGroupsCount} 规则` : '',
+          addGlobalGroupsCount ? `新增 ${addGlobalGroupsCount} 全局规则` : '',
           changeGlobalGroupsCount
             ? `变动 ${changeGlobalGroupsCount} 全局规则`
-            : '', // 变动全局规则数量
+            : '',
           removeGlobalGroupsCount
             ? `移除 ${removeGlobalGroupsCount} 全局规则`
-            : '', // 移除全局规则数量
+            : '',
         ]
           .filter((s) => s)
-          .join(',\x20'), // 过滤空字符串并拼接成更新信息文本
-        '## 更新详情', // 更新详情标题
-        '|APP|新增|变动|移除|\n|-|-|-|-|\n' + // 表格标题
+          .join(', '),
+        '## 更新详情',
+        '|APP|新增|变动|移除|\n|-|-|-|-|\n' +
           appDiffs
             .map((a) =>
               [
                 '',
                 a.app.name,
-                a.addGroups.map((g) => '<li>' + g.name).join(''), // 新增规则组列表
-                a.changeGroups.map((g) => '<li>' + g.name).join(''), // 变动规则组列表
-                a.removeGroups.map((g) => '<li>' + g.name).join(''), // 移除规则组列表
+                a.addGroups.map((g) => '<li>' + g.name).join(''),
+                a.changeGroups.map((g) => '<li>' + g.name).join(''),
+                a.removeGroups.map((g) => '<li>' + g.name).join(''),
                 '',
               ].join('|'),
             )
             .join('\n') +
-          '\n\n---\n\n' + // 拼接应用变更详情信息
-          '|全局规则|新增|变动|移除|\n|-|-|-|-|\n' + // 全局规则表格标题
+          '\n\n---\n\n' +
+          '|全局规则|新增|变动|移除|\n|-|-|-|-|\n' +
           globaldiffs
             .map((a) =>
               [
                 '',
                 '-',
-                a.addGlobalGroups.map((g) => '<li>' + g.name).join(''), // 新增全局规则列表
-                a.changeGlobalGroups.map((g) => '<li>' + g.name).join(''), // 变动全局规则列表
-                a.removeGlobalGroups.map((g) => '<li>' + g.name).join(''), // 移除全局规则列表
+                a.addGlobalGroups.map((g) => '<li>' + g.name).join(''),
+                a.changeGlobalGroups.map((g) => '<li>' + g.name).join(''),
+                a.removeGlobalGroups.map((g) => '<li>' + g.name).join(''),
                 '',
               ].join('|'),
             )
-            .join('\n'), // 拼接全局规则变更详情信息
-      ].join('\n\n') + '\n'; // 拼接变更日志文本并换行
+            .join('\n'),
+      ].join('\n\n') + '\n';
 
-    await fs.writeFile(process.cwd() + '/CHANGELOG.md', changeLogText); // 将变更日志写入 CHANGELOG.md 文件
-    await checkAndDeleteFiles(); // 调用检查是否存在冗余的应用 MD 文件
+    await fs.writeFile(process.cwd() + '/CHANGELOG.md', changeLogText);
+    await checkAndDeleteFiles();
   }
 
   if (changeCount > 0) {
-    // 如果存在变更
-    // 构建应用列表文本
     const appListText =
       [
-        '## 应用规则\n\n| 名称 | ID | 规则组 |\n| - | - | - |\n' + // 表格标题
+        `## 应用规则(共 ${newConfig.apps!.length.toString()} 组)\n\n| 名称 | ID | 规则组 |\n| - | - | - |\n` +
           newConfig
             .apps!.map((app) => {
-              // 遍历新配置中的应用列表
-              const groups = app.groups || []; // 获取应用的规则组列表
-              return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`; // 构建应用信息行
+              const groups = app.groups || [];
+              return `| ${app.name} | [${app.id}](/docs/${app.id}.md) | ${groups.length} |`;
             })
-            .join('\n') + // 拼接应用信息行
-          '\n\n---\n\n' + // 拼接应用变更详情信息
-          '## 全局规则\n\n| 全局规则 | 名称 | 规则组 |\n| - | - | - |\n' + // 表格标题 // 全局规则表格标题
+            .join('\n') +
+          '\n\n---\n\n' +
+          `## 全局规则(共 ${newConfig.globalGroups!.length.toString()} 组)\n\n| 全局规则 | 名称 | 规则组 |\n| - | - | - |\n` +
           newConfig
             .globalGroups!.map((a) => {
-              // 遍历新配置中的应用列表
-              return `| 全局规则 | ${a.name} | ${a.rules.length} |`; // 构建全局规则信息行
+              return `| 全局规则 | ${a.name} | ${a.rules.length} |`;
             })
-            .join('\n'), // 拼接全局规则变更详情信息
-      ].join('\n\n') + '\n'; // 拼接变更日志文本并换行
+            .join('\n'),
+      ].join('\n\n') + '\n';
 
     const appListTemplateMd = await fs.readFile(
-      process.cwd() + '/AppListTemplate.md', // 读取应用列表模板文件
-      'utf-8', // 指定文件编码格式
+      process.cwd() + '/AppListTemplate.md',
+      'utf-8',
     );
     await fs.writeFile(
-      process.cwd() + '/AppList.md', // 将应用列表写入 AppList.md 文件
-      appListTemplateMd.replaceAll('--APP_LIST--', appListText), // 替换应用列表模板中的占位符为应用列表内容
+      process.cwd() + '/AppList.md',
+      appListTemplateMd.replaceAll('--APP_LIST--', appListText),
     );
   }
 
-  // 构建 README 内容
   const mdTemplate = await fs.readFile(process.cwd() + '/Template.md', 'utf-8');
   const readMeMdText = mdTemplate
-    .replaceAll('--APP_SIZE--', newConfig.apps!.length.toString()) // 替换应用数量占位符
     .replaceAll(
       '--GROUP_SIZE--',
       newConfig
         .apps!.reduce((p, c) => p + (c.groups?.length || 0), 0)
-        .toString(), // 替换规则组数量占位符
+        .toString(),
     )
-    .replaceAll('--VERSION--', (newConfig.version || 0).toString()); // 替换版本号占位符
-  await fs.writeFile(process.cwd() + '/README.md', readMeMdText); // 将 README 内容写入 README.md 文件
+    .replaceAll(
+      '--GLOBALGROUP_SIZE--',
+      newConfig
+        .globalGroups!.reduce((p, c) => p + (c.rules?.length || 0), 0)
+        .toString(),
+    )
+    .replaceAll('--VERSION--', (newConfig.version || 0).toString());
+  await fs.writeFile(process.cwd() + '/README.md', readMeMdText);
 };
