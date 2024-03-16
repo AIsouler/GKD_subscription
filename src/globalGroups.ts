@@ -64,6 +64,9 @@ const diabledAppIds: string[] = [
   'com.mmbox.xbrowser', // X浏览器
   'com.mmbox.xbrowser.pro', // X浏览器Google Play版
   'com.mycompany.app.soulbrowser', // soul浏览器
+
+  // https://github.com/gkd-kit/gkd/issues/560
+  'com.android.deskclock', // 时钟
 ];
 
 // 如果应用规则已有全局规则中的某一类的规则, 则在对应全局规则禁用此应用
