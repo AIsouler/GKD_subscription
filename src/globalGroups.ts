@@ -79,20 +79,35 @@ function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
 }
 
 // 设置单独禁用
-const uniqueAppIdsAD = new Set([
+const diabledAppIdsAD = new Set([
   ...diabledAppIds,
   'com.taptap', // TapTap
   ...filterAppsByGroup(apps, '开屏广告'),
 ]);
-const uniqueAppIdsUP = new Set([
+const diabledAppIdsUP = new Set([
   ...diabledAppIds,
   ...filterAppsByGroup(apps, '更新提示'),
 ]);
-const uniqueAppIdsYM = new Set([
+const diabledAppIdsYM = new Set([
   ...diabledAppIds,
   'xxx.pornhub.fuck', // JavDB
   ...filterAppsByGroup(apps, '青少年模式'),
 ]);
+
+// 系统软件全局启用
+const enabledAppIds: string[] = [
+  // 在一些系统软件中启用
+];
+
+// 设置系统软件单独启用
+const enabledAppIdsAD = new Set([
+  ...enabledAppIds,
+  'com.bbk.theme', // i 主题
+  'com.sec.android.app.samsungapps', // 三星应用商店
+  'com.bbk.appstore', // vivo应用商店
+]);
+const enabledAppIdsUP = new Set([...enabledAppIds]);
+const enabledAppIdsYM = new Set([...enabledAppIds]);
 
 const globalGroups: RawGlobalGroup[] = [
   {
@@ -116,7 +131,10 @@ const globalGroups: RawGlobalGroup[] = [
           '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text*="skip" || text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || desc*="跳过" || desc*="skip" || (vid*="count" && vid*="down" && vid!*="countdown" && vid!*="load" && vid!*="add" && vid!*="ead" && vid!*="time")]',
       },
     ],
-    apps: [...uniqueAppIdsAD].map((id) => ({ id, enable: false })),
+    apps: [...diabledAppIdsAD].map(
+      (id) => ({ id, enable: false }),
+      [...enabledAppIdsAD].map((id) => ({ id, enable: true })),
+    ),
   },
   {
     key: 1,
@@ -137,7 +155,10 @@ const globalGroups: RawGlobalGroup[] = [
         ],
       },
     ],
-    apps: [...uniqueAppIdsUP].map((id) => ({ id, enable: false })),
+    apps: [...diabledAppIdsUP].map(
+      (id) => ({ id, enable: false }),
+      [...enabledAppIdsUP].map((id) => ({ id, enable: true })),
+    ),
   },
   {
     key: 2,
@@ -155,7 +176,10 @@ const globalGroups: RawGlobalGroup[] = [
         ],
       },
     ],
-    apps: [...uniqueAppIdsYM].map((id) => ({ id, enable: false })),
+    apps: [...diabledAppIdsYM].map(
+      (id) => ({ id, enable: false }),
+      [...enabledAppIdsYM].map((id) => ({ id, enable: true })),
+    ),
   },
 ];
 export default globalGroups;
