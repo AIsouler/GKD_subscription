@@ -534,13 +534,17 @@ export const updateReadMeMd = async (
     oldConfig.globalGroups,
     newConfig.globalGroups,
   );
-  if (
+
+  // 计算全局差异的数量
+  const globalDiffCount =
     globalDiffLog.addGlobalGroups.length +
-      globalDiffLog.changeGlobalGroups.length +
-      globalDiffLog.removeGlobalGroups.length >
-    0
-  ) {
+    globalDiffLog.changeGlobalGroups.length +
+    globalDiffLog.removeGlobalGroups.length;
+
+  // 如果全局差异的数量大于 0，则将其添加到 globaldiffs 中，并增加 changeCount
+  if (globalDiffCount > 0) {
     globaldiffs.push({ ...globalDiffLog });
+    changeCount += globalDiffCount;
   }
 
   // 遍历新配置中的每个应用程序
