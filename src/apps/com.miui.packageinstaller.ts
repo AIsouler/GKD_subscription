@@ -127,6 +127,7 @@ export default defineAppConfig({
         {
           key: 6,
           name: '点击"完成"',
+          forcedTime: 30000, // 安装/更新时间过长会导致后续规则不触发
           activityIds: [
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
             'com.miui.packageInstaller.InstallProgressActivity',
@@ -193,6 +194,7 @@ export default defineAppConfig({
         {
           key: 3,
           name: '点击"完成"',
+          forcedTime: 30000, // 安装/更新时间过长会导致后续规则不触发
           activityIds: [
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
             'com.miui.packageInstaller.InstallProgressActivity',
