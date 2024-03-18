@@ -288,5 +288,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 14,
+      name: '全屏广告-会员弹窗',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
+          matches:
+            '[text="会员弹窗"] >3 Image[clickable=true][index=2][text!=null]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/dd2f2a00-e9d3-47fa-986d-09ae6180d932',
+          snapshotUrls: 'https://i.gkd.li/i/14630806',
+        },
+      ],
+    },
   ],
 });
