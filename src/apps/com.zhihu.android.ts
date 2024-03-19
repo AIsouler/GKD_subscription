@@ -3,7 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.zhihu.android',
   name: '知乎',
-  deprecatedKeys: [0, 1, 2, 3, 4, 5, 7, 8, 9],
+  deprecatedKeys: [0, 1, 2, 3, 4, 5, 7, 8, 9, 11],
   groups: [
     {
       key: 6,
@@ -85,32 +85,37 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 11,
-      name: '全屏广告-会员页面月卡红包',
-      desc: '点击关闭',
-      rules: [
-        {
-          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches:
-            'RelativeLayout[childCount=2] > ImageView[index=1][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/335dee89-4b55-40f1-8316-b7b4f86a8ee6',
-          snapshotUrls: 'https://i.gkd.li/i/12647421',
-        },
-      ],
-    },
-    {
       key: 12,
-      name: '全屏广告-会员页面广告弹窗',
+      name: '全屏广告-广告弹窗',
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
+          name: '会员页广告弹窗',
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches:
-            '[id="com.zhihu.android:id/image"] < RelativeLayout + [id="com.zhihu.android:id/dismiss"]',
+          matches: '[id="com.zhihu.android:id/dismiss"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9eb78a95-c2dc-4a8b-9b86-f9d0fc0ed6fd',
           snapshotUrls: 'https://i.gkd.li/i/12707676',
+        },
+        {
+          key: 1,
+          name: '首页广告弹窗',
+          quickFind: true,
+          activityIds: 'com.zhihu.android.app.ui.activity.AdAlphaVideoActivity',
+          matches: '[vid="tv_ad_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/a5c471b6-dbc7-4150-be52-3ae4a28806e0',
+          snapshotUrls: 'https://i.gkd.li/i/14648128',
+        },
+        {
+          key: 2,
+          name: '会员页红包弹窗',
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          matches: '[id="com.zhihu.android:id/floating_close_btn"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/335dee89-4b55-40f1-8316-b7b4f86a8ee6',
+          snapshotUrls: 'https://i.gkd.li/i/12647421',
         },
       ],
     },
