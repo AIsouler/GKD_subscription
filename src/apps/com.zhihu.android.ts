@@ -20,8 +20,12 @@ export default defineAppConfig({
         {
           key: 0,
           quickFind: true,
-          matches: '@ImageView[clickable=true] -4 [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/13849671',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] <n * > [text="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13849671',
+            'https://i.gkd.li/i/14645530',
+          ],
         },
         {
           key: 1,
