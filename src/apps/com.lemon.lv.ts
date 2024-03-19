@@ -6,22 +6,24 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '局部广告-导出界面底部广告',
-      desc: '关闭完成导出后的下方广告',
+      name: '分段广告-导出界面底部广告',
+      desc: '点击[关闭]-点击[不感兴趣]',
+      quickFind: true,
       activityIds: 'com.vega.export.edit.view.ExportActivity',
       rules: [
         {
           key: 0,
-          matches: '@FlattenUIImage + LynxAdComponentView',
-          snapshotUrls: 'https://i.gkd.li/i/12911010',
+          name: '点击[关闭]',
+          matches:
+            'LynxAdComponentView < * > @FlattenUIImage <<n [vid="exportAdContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/14648627',
         },
         {
+          preKeys: [0],
           key: 1,
-          matches:
-            '[vid="exportAdContainer"] FrameLayout[childCount=7] > FlattenUIImage[index=6]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/bc46565b-16ac-4415-8165-13d075f28fcf',
-          snapshotUrls: 'https://i.gkd.li/i/14149461',
+          name: '点击[不感兴趣]',
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/14648626',
         },
       ],
     },
