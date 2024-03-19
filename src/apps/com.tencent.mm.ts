@@ -13,41 +13,33 @@ export default defineAppConfig({
         'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
         'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
       ],
-      exampleUrls: [
+      exampleUrls:
         'https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79',
-      ],
       rules: [
         {
-          key: -1,
+          key: 0,
           name: '点击广告卡片右上角',
           position: {
             left: 'width * 0.0569',
             top: 'width * 0.9083',
           },
-          quickFind: true,
-          excludeMatches:
-            '@LinearLayout[clickable=true] > [text="广告" || text="Sponsored" || text="廣告"]',
-          matches: '@RelativeLayout >7 [text="广告"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/829e1b0b-9fa2-4a31-9c36-542ad6bd7b6e',
-          snapshotUrls: 'https://i.gkd.li/i/14476135',
-        },
-        {
-          key: 0,
-          name: '点击广告卡片右上角',
           matches:
-            '@LinearLayout[clickable=true] > [text="广告" || text="Sponsored" || text="廣告"]',
+            '@RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout',
           snapshotUrls: [
+            'https://i.gkd.li/i/14476135',
             'https://i.gkd.li/i/13000395', // text="广告"
             'https://i.gkd.li/i/12905837', // text="Sponsored"
             'https://i.gkd.li/i/13791200', // text="廣告"
+            'https://i.gkd.li/i/14647413',
           ],
         },
-        // 以下是只出现二段的情况
+
+        // 预留key
+        // 第二段
         {
-          preKeys: [-1, 0],
-          key: 1,
-          name: '点击关闭',
+          preKeys: [0],
+          key: 25,
+          name: '点击[关闭]',
           quickFind: true,
           matches: '[text^="关闭"][clickable=true]',
           snapshotUrls: [
@@ -56,58 +48,74 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [-1, 0],
-          key: 2,
-          name: '点击"Close the ad"',
+          preKeys: [0],
+          key: 26,
+          name: '点击[Close the ad]',
           quickFind: true,
           matches: '[text="Close the ad"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14207480',
         },
         {
-          preKeys: [-1, 0],
-          key: 3,
-          name: '点击"關閉此廣告"',
+          preKeys: [0],
+          key: 27,
+          name: '点击[關閉此廣告]',
           quickFind: true,
           matches: '[text="關閉此廣告"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13791202',
         },
-
-        // 预留key
-        // 以下是出现三段的情况
         {
-          preKeys: [-1, 0],
-          key: 50,
-          name: '点击"关闭该广告"',
-          matches: '@LinearLayout[clickable=true] > [text="关闭该广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/12642584',
+          preKeys: [0],
+          key: 28,
+          name: '点击[关闭该广告]',
+          quickFind: true,
+          matches:
+            '@LinearLayout[index=1][clickable=true] <2 * < * - [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12642584',
+            'https://i.gkd.li/i/14647839',
+          ],
         },
         {
-          // 第三段
-          preKeys: 50,
-          key: 51,
-          name: '点击"直接关闭"',
-          matches: '[text="直接关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/12663984',
-        },
-        {
-          preKeys: [-1, 0],
-          key: 52,
-          name: '点击"Close the ad"',
+          preKeys: [0],
+          key: 29,
+          name: '点击[Close the ad]',
+          quickFind: true,
           matches: '@LinearLayout[clickable=true] > [text="Close the ad"]',
           snapshotUrls: 'https://i.gkd.li/i/12905838',
         },
+
+        // 预留key
+        // 第三段
         {
-          // 第三段
-          preKeys: 52,
-          key: 53,
+          preKeys: [28],
+          key: 50,
+          name: '点击[关闭]',
+          matches: '[text*="关闭"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12663984',
+            'https://i.gkd.li/i/14647940',
+          ],
+        },
+        {
+          preKeys: [29],
+          key: 51,
           name: '点击"Close"',
           matches: '[text="Close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12905846',
         },
+
+        // 预留key
+        // 第四段
+        {
+          preKeys: [50],
+          key: 75,
+          name: '点击[确认]',
+          matches: '[text="确认"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14647940',
+        },
       ],
     },
     {
-      // Key1,2,3,4,11 均为授权类的规则
       key: 1,
       name: '功能类-电脑微信快捷自动登录',
       quickFind: true,
@@ -147,7 +155,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
-      activityIds: ['com.tencent.mm.plugin.base.stub.UIEntryStub'],
+      activityIds: 'com.tencent.mm.plugin.base.stub.UIEntryStub',
       rules: 'Button[text="拒绝"] - Button[text="允许"]',
       snapshotUrls: 'https://i.gkd.li/i/12663602',
     },
@@ -158,7 +166,7 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
-      activityIds: ['com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI'],
+      activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
       rules: [
         {
           matches: '[text="微信读书网页版"] +3 Button[text="登 录"]',
@@ -283,6 +291,7 @@ export default defineAppConfig({
           key: 1,
           // preKeys: [1], 取消 preKeys 提高点击成功率
           name: '点击不感兴趣',
+          action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://i.gkd.li/i/12745280 中成功点击 [与我无关]
           matches:
             'View > [id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
@@ -291,7 +300,6 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12722331', // 使用 [id="feedbackTagContainer"][visibleToUser=true] 进行限定，防止反馈界面未出现就触发规则
             'https://i.gkd.li/i/14006203', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
           ],
-          action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://i.gkd.li/i/12745280 中成功点击 [与我无关]
         },
         {
           key: 2,
