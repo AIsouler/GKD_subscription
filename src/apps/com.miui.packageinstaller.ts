@@ -208,5 +208,63 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 12,
+      name: '功能类-澎湃-自动安装/更新',
+      desc: '不完整，缺失自动点击完成部分。启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
+      quickFind: true,
+      rules: [
+        // 正常安装
+        {
+          key: 0,
+          name: '点击【继续更新】/【继续】',
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          matches: '@FrameLayout > LinearLayout > [text*="继续"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14083552', //继续更新,
+            'https://i.gkd.li/i/14083554', //继续
+          ],
+        },
+
+        // 需授权安装
+        {
+          key: 1,
+          name: '点击【无视风险安装】',
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          matches: '[text="无视风险安装"]',
+          snapshotUrls: 'https://i.gkd.li/i/14653062',
+        },
+        {
+          key: 2,
+          preKeys: 1,
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          name: '点击【继续】',
+          matches: '[text="继续"]',
+          snapshotUrls: 'https://i.gkd.li/i/14653087',
+        },
+        {
+          key: 3,
+          preKeys: 2,
+          name: '点击右上角三点展开菜单',
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          matches:
+            '@LinearLayout[index=0] > [vid="action_menu_item_child_icon"]',
+          snapshotUrls: 'https://i.gkd.li/i/14654045',
+        },
+        {
+          key: 4,
+          preKeys: 3,
+          name: '授权本次安装',
+          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          matches: '@[clickable=true] > [text="单次授权安装"]',
+          snapshotUrls: 'https://i.gkd.li/i/14653096',
+        },
+        //完成快照缺失，无法编写
+      ],
+    },
   ],
 });
