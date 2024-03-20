@@ -71,6 +71,22 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14310474', // 避免在此页面误触
           ],
         },
+        {
+          key: 6,
+          matches:
+            '[id="android:id/content"] > RelativeLayout >4 FrameLayout + ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14668232',
+            'https://i.gkd.li/i/14668248',
+            'https://i.gkd.li/i/14667860',
+          ],
+        },
+        {
+          key: 7,
+          quickFind: true,
+          matches: '@ImageView[visibleToUser=true] -2 * >3 [text="推荐"]',
+          snapshotUrls: 'https://i.gkd.li/i/14668232',
+        },
       ],
     },
   ],
