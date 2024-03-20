@@ -5,6 +5,24 @@ export default defineAppConfig({
   name: '大姨妈',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14665571',
+            'https://i.gkd.li/i/13800282',
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-广告弹窗',
       matchTime: 10000,
