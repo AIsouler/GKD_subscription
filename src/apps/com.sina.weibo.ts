@@ -198,7 +198,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: '@[text="以后再说"] + * + [text="去开启"]',
+          matches: '@[text="以后再说"] +2 [text="去开启"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13218093',
             'https://i.gkd.li/i/13003311',
