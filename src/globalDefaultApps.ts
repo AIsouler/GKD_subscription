@@ -60,6 +60,7 @@ export const blackListAppIDs: string[] = [
   'app.rikka.savecopy', // 保存副本
   'com.rosan.dhizuku', // Dhizuku
   'com.rosan.accounts', // Accounts
+  'com.dv.adm', // ADM
 
   // 系统自带非系统应用
   // 小米
