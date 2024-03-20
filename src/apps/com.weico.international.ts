@@ -7,19 +7,27 @@ export default defineAppConfig({
     {
       key: -1,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
-          quickFind: true,
+          order: -1,
           matches: '@[clickable=true] + * > [text="跳过"][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/e1253f77-cfdd-42ea-b6c2-05732a9e347a',
           snapshotUrls: [
             'https://i.gkd.li/i/14549281',
             'https://i.gkd.li/i/14549328', // 小窗模式下全局规则触发无效
+          ],
+        },
+        {
+          key: 1,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14661654',
+            'https://i.gkd.li/i/14661622',
           ],
         },
       ],
