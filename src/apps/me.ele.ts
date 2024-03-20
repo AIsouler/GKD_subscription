@@ -176,5 +176,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 10,
+      name: '评价提示-底部调研邀请卡片',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'me.ele.foodchannel.page.WMChannelNativeActivity',
+          matches: '[text*="小调研"] - [vid="iv_cancel"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/350d8f4d-8ab0-4572-8ff0-450ab4729d53',
+          snapshotUrls: 'https://i.gkd.li/i/14630370',
+        },
+      ],
+    },
   ],
 });
