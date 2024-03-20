@@ -1,6 +1,6 @@
 # 适配 APP 列表
 
-## 应用规则(共 707 组)
+## 应用规则(共 708 组)
 
 | 名称                   | ID                                                                                                                                                                | 规则组 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -180,7 +180,7 @@
 | 大师兄影视             | [com.zhiyin.qingdan.dashixiong](/docs/com.zhiyin.qingdan.dashixiong.md)                                                                                           | 3      |
 | 大淘客联盟             | [com.dataoke.union](/docs/com.dataoke.union.md)                                                                                                                   | 1      |
 | 大学搜题酱             | [com.zmzx.college.search](/docs/com.zmzx.college.search.md)                                                                                                       | 8      |
-| 大姨妈                 | [com.yoloho.dayima](/docs/com.yoloho.dayima.md)                                                                                                                   | 1      |
+| 大姨妈                 | [com.yoloho.dayima](/docs/com.yoloho.dayima.md)                                                                                                                   | 2      |
 | 大众点评               | [com.dianping.v1](/docs/com.dianping.v1.md)                                                                                                                       | 5      |
 | 得力e+                 | [com.delicloud.app.smartoffice](/docs/com.delicloud.app.smartoffice.md)                                                                                           | 1      |
 | 得物                   | [com.shizhuang.duapp](/docs/com.shizhuang.duapp.md)                                                                                                               | 1      |
@@ -214,7 +214,7 @@
 | e充电                  | [com.sgcc.evs.echarge](/docs/com.sgcc.evs.echarge.md)                                                                                                             | 1      |
 | e高速                  | [com.sdhs.easy.high.road](/docs/com.sdhs.easy.high.road.md)                                                                                                       | 1      |
 | 鄂汇办                 | [cn.cty.hbzw](/docs/cn.cty.hbzw.md)                                                                                                                               | 1      |
-| 饿了么                 | [me.ele](/docs/me.ele.md)                                                                                                                                         | 8      |
+| 饿了么                 | [me.ele](/docs/me.ele.md)                                                                                                                                         | 9      |
 | 二柄                   | [com.diershoubing.erbing](/docs/com.diershoubing.erbing.md)                                                                                                       | 2      |
 | 返利                   | [com.fanli.android.apps](/docs/com.fanli.android.apps.md)                                                                                                         | 1      |
 | 番茄免费小说           | [com.dragon.read](/docs/com.dragon.read.md)                                                                                                                       | 10     |
@@ -388,7 +388,7 @@
 | 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 18     |
 | 皮皮搞笑               | [cn.xiaochuankeji.zuiyouLite](/docs/cn.xiaochuankeji.zuiyouLite.md)                                                                                               | 3      |
 | 皮皮喵                 | [com.gentle.ppcat](/docs/com.gentle.ppcat.md)                                                                                                                     | 1      |
-| 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 7      |
+| 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 8      |
 | 浦发银行               | [cn.com.spdb.mobilebank.per](/docs/cn.com.spdb.mobilebank.per.md)                                                                                                 | 1      |
 | 普益基金               | [com.pywm.fund](/docs/com.pywm.fund.md)                                                                                                                           | 1      |
 | 钱包                   | [com.vivo.wallet](/docs/com.vivo.wallet.md)                                                                                                                       | 1      |
@@ -448,6 +448,7 @@
 | 手机性能排行           | [com.nasoft.socmark](/docs/com.nasoft.socmark.md)                                                                                                                 | 1      |
 | 手机知网               | [com.cnki.client](/docs/com.cnki.client.md)                                                                                                                       | 1      |
 | 书法字典大全           | [com.zivn.cloudbrush3](/docs/com.zivn.cloudbrush3.md)                                                                                                             | 1      |
+| 水果派                 | [com.ruYUVE.bgGRHf](/docs/com.ruYUVE.bgGRHf.md)                                                                                                                   | 1      |
 | 水果派                 | [com.oneshareclap.malaysian](/docs/com.oneshareclap.malaysian.md)                                                                                                 | 1      |
 | 顺丰速运               | [com.sf.activity](/docs/com.sf.activity.md)                                                                                                                       | 3      |
 | 顺易充                 | [com.longshine.nanwang.electric.charge](/docs/com.longshine.nanwang.electric.charge.md)                                                                           | 1      |
@@ -631,7 +632,7 @@
 | 影视工场               | [com.flttrade.flt1064trade.gong](/docs/com.flttrade.flt1064trade.gong.md)                                                                                         | 1      |
 | 萤石云视频             | [com.videogo](/docs/com.videogo.md)                                                                                                                               | 1      |
 | 应用安装器             | [com.oplus.appdetail](/docs/com.oplus.appdetail.md)                                                                                                               | 1      |
-| 应用包管理组件         | [com.miui.packageinstaller](/docs/com.miui.packageinstaller.md)                                                                                                   | 4      |
+| 应用包管理组件         | [com.miui.packageinstaller](/docs/com.miui.packageinstaller.md)                                                                                                   | 5      |
 | 应用汇                 | [com.yingyonghui.market](/docs/com.yingyonghui.market.md)                                                                                                         | 1      |
 | 应用商店               | [com.sec.android.app.samsungapps](/docs/com.sec.android.app.samsungapps.md)                                                                                       | 1      |
 | 一起来涂色             | [com.xingluo.allcolor](/docs/com.xingluo.allcolor.md)                                                                                                             | 1      |
