@@ -5,6 +5,21 @@ export default defineAppConfig({
   name: '皮皮虾',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/14667409',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '青少年模式',
       actionMaximum: 1,
