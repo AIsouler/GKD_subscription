@@ -14,7 +14,7 @@ export default defineAppConfig({
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[text="换一个"] - FrameLayout[clickable=true] > ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12520943'],
+          snapshotUrls: 'https://i.gkd.li/i/12520943',
         },
         {
           preKeys: 0,
@@ -29,7 +29,7 @@ export default defineAppConfig({
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '[text="你可能感兴趣"] < LinearLayout + [text="隐藏"][clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12675396'],
+          snapshotUrls: 'https://i.gkd.li/i/12675396',
         },
         {
           key: 3,
@@ -51,13 +51,19 @@ export default defineAppConfig({
             'com.ss.android.ugc.aweme.main.MainActivity',
             'com.miui.home.launcher.Launcher',
           ],
-          name: '全屏广告-关闭朋友推荐弹窗',
           matches:
             '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12525387',
             'https://i.gkd.li/i/12525389',
           ],
+        },
+        {
+          key: 6,
+          quickFind: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches: '@[text="不感兴趣"] - * [text*="也关注了"]',
+          snapshotUrls: 'https://i.gkd.li/i/14661956',
         },
       ],
     },
