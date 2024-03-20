@@ -108,6 +108,7 @@ export const openAdBlackListAppIDs = new Set([
 ]);
 export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
+  'info.muge.appshare', // AppShare
   ...filterAppsByGroup(apps, '更新提示'),
 ]);
 export const yongBlackListAppIDs = new Set([
