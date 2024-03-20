@@ -597,17 +597,18 @@ export default defineAppConfig({
     },
     {
       key: 26,
-      name: '功能类-付款后自动点击完成',
+      name: '功能类-付款后自动点击完成/返回商家',
       rules: [
         {
           quickFind: true,
           activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',
           matches:
-            '@[vid="kinda_button_impl_wrapper"][clickable=true] > [text="完成"]',
+            '[text="完成" || text="返回商家"] <2 [vid="kinda_button_impl_wrapper"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a5177d9d-6745-443f-baf5-af57153430d8',
           snapshotUrls: [
             'https://i.gkd.li/i/14399355',
+            'https://i.gkd.li/i/14662147',
             'https://i.gkd.li/i/14532946', // 避免在此页面误触
           ],
         },
