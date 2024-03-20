@@ -261,7 +261,6 @@ export default defineAppConfig({
       key: 7,
       name: '功能类-自动选中发送原图',
       desc: '图片和视频选择器-自动选中底部中间的发送原图',
-      quickFind: true,
       activityIds: [
         'com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI',
         'com.tencent.mm.plugin.gallery.ui.ImagePreviewUI',
@@ -269,12 +268,20 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
+          quickFind: true,
+          excludeVersionNames: '8.0.15',
           matches: '@ImageButton[desc="未选中,原图,复选框"] + [text="原图"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12686641', // 未选中
             'https://i.gkd.li/i/12840865', // 未选中
             'https://i.gkd.li/i/12686640', // 已选中
           ],
+        },
+        {
+          key: 2,
+          versionNames: '8.0.15',
+          matches: '@[desc="未选中,原图,复选框"] + [text="原图"]',
+          snapshotUrls: 'https://i.gkd.li/i/14661734',
         },
       ],
     },
@@ -322,11 +329,27 @@ export default defineAppConfig({
     {
       key: 9,
       name: '功能类-自动查看原图',
-      desc: '自动点击底部左侧[查看原图（*M）]按钮',
-      quickFind: true,
+      desc: '自动点击底部左侧[查看原图]按钮',
       activityIds: 'com.tencent.mm.ui.chatting.gallery.ImageGalleryUI',
-      rules: 'Button[text^="查看原图"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13523031',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          excludeVersionNames: '8.0.15',
+          matches: 'Button[text^="查看原图"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6bb9e68a-43f5-4482-96b1-899cc86fef32',
+          snapshotUrls: 'https://i.gkd.li/i/13523031',
+        },
+        {
+          key: 1,
+          versionNames: '8.0.15',
+          matches: '[text^="查看原图"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1a946d04-8a2d-4570-bd8c-38ab112f43a9',
+          snapshotUrls: 'https://i.gkd.li/i/14661736',
+        },
+      ],
     },
     {
       key: 10,
