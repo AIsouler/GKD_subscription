@@ -66,6 +66,17 @@ export default defineAppConfig({
             'https://m.gkd.li/57941037/8994fdc0-fce0-4a06-8bc5-2ff23fc3afe5',
           snapshotUrls: 'https://i.gkd.li/i/14321461',
         },
+        {
+          key: 1,
+          name: '历史记录页面广告',
+          quickFind: true,
+          activityIds:
+            'com.youku.android.youkuhistory.activity.HistoryActivity',
+          matches: '[vid="novel_banner_ad_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7a160f41-b101-40dc-b875-533623228406',
+          snapshotUrls: 'https://i.gkd.li/i/14670383',
+        },
       ],
     },
   ],
