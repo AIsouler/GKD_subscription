@@ -129,7 +129,6 @@ export const openAdWhiteListAppIDs = new Set([
   'com.sec.android.app.samsungapps', // 三星应用商店
   'com.bbk.appstore', // vivo应用商店
   'com.miui.systemAdSolution', // 小米智能服务
-  'com.heytap.market', // oppo软件商店
 ]);
 export const updateWhiteListAppIDs = new Set([...whiteListAppIDs]);
 export const yongWhiteListAppIDs = new Set([...whiteListAppIDs]);
