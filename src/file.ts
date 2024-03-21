@@ -529,7 +529,7 @@ export const updateReadMeMd = async (
 ) => {
   let changeCount = 0;
   const appDiffs: AppDiff[] = [];
-  const globaldiffs: GlobalDiff[] = [];
+  const globalDiffs: GlobalDiff[] = [];
   const globalDiffLog = getGlobalDiffLog(
     oldConfig.globalGroups,
     newConfig.globalGroups,
@@ -541,24 +541,23 @@ export const updateReadMeMd = async (
     globalDiffLog.changeGlobalGroups.length +
     globalDiffLog.removeGlobalGroups.length;
 
-  // 如果全局差异的数量大于 0，则将其添加到 globaldiffs 中，并增加 changeCount
+  // 如果全局差异的数量大于 0，则将其添加到 globalDiffs 中，并增加 changeCount
   if (globalDiffCount > 0) {
-    globaldiffs.push({ ...globalDiffLog });
+    globalDiffs.push({ ...globalDiffLog });
     changeCount += globalDiffCount;
   }
 
   // 遍历新配置中的每个应用程序
-  for (const app of oldConfig.apps || []) {
-    // 查找新配置中具有相同 ID 的应用程序
-    const newApp = newConfig.apps!.find((a) => a.id === app.id);
-    // 如果在旧配置中找不到相同 ID 的应用程序
-    if (!newApp) {
+  for (const newApp of newConfig.apps || []) {
+    // 查找旧配置中具有相同 ID 的应用程序
+    const oldApp = oldConfig.apps?.find((a) => a.id === newApp.id);
+    if (!oldApp || !isEqual(newApp, oldApp)) {
       // 增加变更计数
       changeCount++;
       // 更新应用程序的 Markdown 文件
-      await updateAppMd(app);
+      await updateAppMd(newApp);
       // 获取应用程序组的差异日志
-      const appDiffLog = getAppDiffLog(app.groups, []);
+      const appDiffLog = getAppDiffLog(newApp.groups, oldApp?.groups || []);
       // 如果有新增、修改或删除的组，则将其记录到应用程序差异中
       if (
         appDiffLog.addGroups.length +
@@ -566,29 +565,12 @@ export const updateReadMeMd = async (
           appDiffLog.removeGroups.length >
         0
       ) {
-        appDiffs.push({ app, ...appDiffLog });
-      }
-    } else if (!isEqual(newApp, app)) {
-      // 如果旧应用程序与新应用程序不相等
-      // 增加变更计数
-      changeCount++;
-      // 更新应用程序的 Markdown 文件
-      await updateAppMd(app);
-      // 获取应用程序组的差异日志
-      const appDiffLog = getAppDiffLog(app.groups, newApp.groups);
-      // 如果有新增、修改或删除的组，则将其记录到应用程序差异中
-      if (
-        appDiffLog.addGroups.length +
-          appDiffLog.changeGroups.length +
-          appDiffLog.removeGroups.length >
-        0
-      ) {
-        appDiffs.push({ app, ...appDiffLog });
+        appDiffs.push({ app: newApp, ...appDiffLog });
       }
     }
   }
 
-  if (appDiffs.length > 0 || globaldiffs.length > 0) {
+  if (appDiffs.length > 0 || globalDiffs.length > 0) {
     const addGroupsCount = appDiffs.reduce((p, c) => p + c.addGroups.length, 0);
     const changeGroupsCount = appDiffs.reduce(
       (p, c) => p + c.changeGroups.length,
@@ -598,15 +580,15 @@ export const updateReadMeMd = async (
       (p, c) => p + c.removeGroups.length,
       0,
     );
-    const addGlobalGroupsCount = globaldiffs.reduce(
+    const addGlobalGroupsCount = globalDiffs.reduce(
       (p, c) => p + c.addGlobalGroups.length,
       0,
     );
-    const changeGlobalGroupsCount = globaldiffs.reduce(
+    const changeGlobalGroupsCount = globalDiffs.reduce(
       (p, c) => p + c.changeGlobalGroups.length,
       0,
     );
-    const removeGlobalGroupsCount = globaldiffs.reduce(
+    const removeGlobalGroupsCount = globalDiffs.reduce(
       (p, c) => p + c.removeGlobalGroups.length,
       0,
     );
@@ -645,7 +627,7 @@ export const updateReadMeMd = async (
             .join('\n') +
           '\n\n---\n\n' +
           '|全局规则|新增|变动|移除|\n|-|-|-|-|\n' +
-          globaldiffs
+          globalDiffs
             .map((a) =>
               [
                 '',
