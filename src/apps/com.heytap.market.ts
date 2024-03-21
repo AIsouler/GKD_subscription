@@ -5,6 +5,20 @@ export default defineAppConfig({
   name: 'OPPO软件商店',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          matches: '@[clickable=true] > [text="跳过"]', // 全局规则无效，必须点击clickable=true的节点才能跳过
+          snapshotUrls: 'https://i.gkd.li/i/14668997',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '更新提示',
       quickFind: true,
