@@ -19,6 +19,7 @@ export default defineAppConfig({
         {
           key: 0,
           name: '点击广告卡片右上角',
+          actionCd: 3000,
           position: {
             left: 'width * 0.0569',
             top: 'width * 0.9083',
