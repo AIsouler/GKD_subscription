@@ -1,9 +1,10 @@
 # 适配 APP 列表
 
-## 应用规则(共 708 组)
+## 应用规则(共 710 组)
 
 | 名称                   | ID                                                                                                                                                                | 规则组 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 5EPlay                 | [com.fiveplay](/docs/com.fiveplay.md)                                                                                                                             | 1      |
 | APKPure                | [com.apkpure.aegon](/docs/com.apkpure.aegon.md)                                                                                                                   | 4      |
 | AcFun                  | [tv.acfundanmaku.video](/docs/tv.acfundanmaku.video.md)                                                                                                           | 1      |
 | AppShare               | [info.muge.appshare](/docs/info.muge.appshare.md)                                                                                                                 | 6      |
@@ -101,7 +102,7 @@
 | MX 播放器              | [com.mxtech.videoplayer.ad](/docs/com.mxtech.videoplayer.ad.md)                                                                                                   | 1      |
 | NGA玩家社区            | [gov.pianzong.androidnga](/docs/gov.pianzong.androidnga.md)                                                                                                       | 6      |
 | NP管理器               | [npgl.jsitcx.xlpqi](/docs/npgl.jsitcx.xlpqi.md)                                                                                                                   | 2      |
-| OPPO软件商店           | [com.heytap.market](/docs/com.heytap.market.md)                                                                                                                   | 2      |
+| OPPO软件商店           | [com.heytap.market](/docs/com.heytap.market.md)                                                                                                                   | 3      |
 | OPPO商城               | [com.oppo.store](/docs/com.oppo.store.md)                                                                                                                         | 2      |
 | OPPO手机管家           | [com.coloros.phonemanager](/docs/com.coloros.phonemanager.md)                                                                                                     | 2      |
 | OurPlay加速器          | [com.excean.splay](/docs/com.excean.splay.md)                                                                                                                     | 1      |
@@ -331,6 +332,7 @@
 | 乐看视频               | [com.zhl.bmi](/docs/com.zhl.bmi.md)                                                                                                                               | 1      |
 | 乐校通                 | [client.android.yixiaotong](/docs/client.android.yixiaotong.md)                                                                                                   | 3      |
 | 两步路户外助手         | [com.lolaage.tbulu.tools](/docs/com.lolaage.tbulu.tools.md)                                                                                                       | 2      |
+| 联通视频彩铃           | [com.iflytek.womusicclient](/docs/com.iflytek.womusicclient.md)                                                                                                   | 1      |
 | 联通云盘               | [com.chinaunicom.bol.cloudapp](/docs/com.chinaunicom.bol.cloudapp.md)                                                                                             | 1      |
 | 联通智家               | [com.woapp.hebei](/docs/com.woapp.hebei.md)                                                                                                                       | 1      |
 | 联想                   | [com.lenovo.club.app](/docs/com.lenovo.club.app.md)                                                                                                               | 1      |
