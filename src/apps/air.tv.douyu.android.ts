@@ -33,10 +33,11 @@ export default defineAppConfig({
         {
           key: 0,
           matches:
-            'ImageView < ViewGroup + @ViewGroup[childCount=1] > ImageView', //添加childCount=1避免"全屏播放-设置"误触
+            'ImageView < ViewGroup + @ViewGroup[childCount=1][clickable=true] > ImageView',
           snapshotUrls: [
             'https://i.gkd.li/i/12892825',
-            'https://i.gkd.li/i/13037239',
+            'https://i.gkd.li/i/13037239', //添加childCount=1避免"全屏播放-设置"误触
+            'https://i.gkd.li/i/14692807', //clickable=true防止在此页面误触
           ],
         },
         {
