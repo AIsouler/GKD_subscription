@@ -70,8 +70,10 @@ export default defineAppConfig({
           key: 1,
           name: '历史记录页面广告',
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.youku.android.youkuhistory.activity.HistoryActivity',
+            'com.soku.searchsdk.activity.SearchActivity',
+          ],
           matches: '[vid="novel_banner_ad_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7a160f41-b101-40dc-b875-533623228406',
