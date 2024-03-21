@@ -51,27 +51,27 @@ export default defineAppConfig({
     {
       key: 4,
       name: '通知提示-请求打开通知',
-      matchTime: 10000,
+      desc: '点击关闭',
+      quickFind: true,
+      //matchTime: 10000, 该弹窗可能在多个页面出现
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
-          matches: 'TextView[text="开启消息通知"] +n ImageView[clickable=true]',
+          key: 0,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] <n * > [text="开启消息通知"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12839864', //com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew
-            'https://i.gkd.li/i/13772299', //com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity
-            'https://i.gkd.li/i/13917163', //com.jingdong.app.mall.MainFrameActivity
+            'https://i.gkd.li/i/13917163',
+            'https://i.gkd.li/i/13463618',
+            'https://i.gkd.li/i/14692570',
           ],
         },
         {
-          matches:
-            'TextView[text ^="打开系统通知"] - FrameLayout[clickable=true]',
+          key: 1,
+          matches: '@[clickable=true] + [text^="打开系统通知"]',
           snapshotUrls: 'https://i.gkd.li/i/12839865',
-        },
-        {
-          quickFind: true,
-          matches: '[id="com.jingdong.app.mall:id/btn_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13463618',
         },
       ],
     },
