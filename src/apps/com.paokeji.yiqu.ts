@@ -109,10 +109,20 @@ export default defineAppConfig({
           key: 0,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] + View[childCount=2][text=""]',
+          matches: '[text="反馈"] + @View[childCount=2] > [text="跳过"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6f12fd12-b956-474a-834c-8ebba00efbff',
           snapshotUrls: 'https://i.gkd.li/i/14362119',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            'Image[text=""] < @View +4 [text="反馈"] + * >2 [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/9bf34f1f-f1a1-4fb8-a84a-96cb8e1c2669',
+          snapshotUrls: 'https://i.gkd.li/i/14717730',
         },
       ],
     },
