@@ -22,10 +22,24 @@ export default defineAppConfig({
       quickFind: true,
       activityIds:
         'com.tencent.qqmusiclite.activity.player.MusicPlayerActivity',
-      rules: '[id="com.miui.player:id/ad_skip_text"][text="关闭"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13304347', // 倒计时
-        'https://i.gkd.li/i/13304344', // 可关闭
+      rules: [
+        {
+          key: 0,
+          matches: '[id="com.miui.player:id/ad_skip_text"][text="关闭"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/d923ba1b-3098-49b0-8593-c84dbaa16612',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13304347', // 倒计时
+            'https://i.gkd.li/i/13304344', // 可关闭
+          ],
+        },
+        {
+          key: 1,
+          matches: '[text="广告｜跳过"]', // 不使用vid="ad_skip_text"，避免和key 0冲突
+          exampleUrls:
+            'https://m.gkd.li/57941037/2ae1ca24-fb50-48ff-9343-e5607b512127',
+          snapshotUrls: 'https://i.gkd.li/i/14711960',
+        },
       ],
     },
     {
