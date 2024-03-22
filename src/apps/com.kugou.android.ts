@@ -75,5 +75,31 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-[开启音乐DJ]弹窗',
+      desc: '勾选[今日不再提醒]-点击[关闭]',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          matches: '@[checked=false] + [text="今日不再提醒"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/69f564e9-464a-488b-a181-f1085176b49f',
+          snapshotUrls: 'https://i.gkd.li/i/14722457',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '@ImageView - * > [text="今日不再提醒"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/69f564e9-464a-488b-a181-f1085176b49f',
+          snapshotUrls: 'https://i.gkd.li/i/14722457',
+        },
+      ],
+    },
   ],
 });
