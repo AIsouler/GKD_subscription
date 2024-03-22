@@ -182,5 +182,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 16,
+      name: '功能类-[关联抖音账号]弹窗',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          matches: '@[desc="关闭"] + [text^="关联"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c938001e-f39b-4ece-ad0e-2c93ba41aa94',
+          snapshotUrls: 'https://i.gkd.li/i/14717889',
+        },
+      ],
+    },
   ],
 });
