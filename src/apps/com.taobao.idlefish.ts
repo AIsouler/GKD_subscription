@@ -50,5 +50,32 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '分段广告-搜索结果页广告',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
+          matches: '@[clickable=true] > [desc$="广告"]',
+          excludeMatches: '@[clickable=true] > [desc^="反馈成功"]',
+          action: 'longClick',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14723597',
+            'https://i.gkd.li/i/14723718', // excludeMatches
+          ],
+        },
+        {
+          key: 1,
+          preKeys: 0,
+          activityIds:
+            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
+          matches:
+            '[desc^="不喜欢该商品"] > ImageView[index=1][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14723632',
+        },
+      ],
+    },
   ],
 });
