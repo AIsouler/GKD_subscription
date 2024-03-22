@@ -21,14 +21,14 @@
     "updateSubs": "tsx ./scripts/updateSubs.ts"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "@commitlint/types": "^19.0.3",
     "@gkd-kit/selector": "0.0.22",
-    "@types/lodash": "^4.14.202",
-    "@types/node": "^20.11.24",
-    "@typescript-eslint/eslint-plugin": "7.1.0",
-    "@typescript-eslint/parser": "7.1.0",
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "7.3.1",
+    "@typescript-eslint/parser": "7.3.1",
     "dayjs": "^1.11.10",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "9.1.0",
@@ -41,7 +41,7 @@
     "pinyin-pro": "3.19.6",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "author": "AIsouler",
   "license": "MIT",
@@ -71,6 +71,6 @@
     ]
   },
   "dependencies": {
-    "@gkd-kit/api": "^0.0.2"
+    "@gkd-kit/api": "^0.0.4"
   }
 }
