@@ -61,5 +61,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告-[看广告免费听歌]弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '[desc="看广告，免费听会员歌"] +2 [desc="关闭"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/dfd70c7c-3200-493e-9afa-404de5fcd2ff',
+          snapshotUrls: 'https://i.gkd.li/i/14722104',
+        },
+      ],
+    },
   ],
 });
