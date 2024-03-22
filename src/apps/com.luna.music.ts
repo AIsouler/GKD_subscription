@@ -103,5 +103,22 @@ export default defineAppConfig({
       rules: '[text="立得全天畅听"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14237527',
     },
+    {
+      key: 10,
+      name: '评价提示-评分弹窗',
+      desc: '使用返回关闭弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          action: 'back',
+          matches: '[text="为汽水音乐评分"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/a7e53af0-8b84-4619-b369-69b949ab2ce4',
+          snapshotUrls: 'https://i.gkd.li/i/14720841',
+        },
+      ],
+    },
   ],
 });
