@@ -20,27 +20,11 @@ export default defineAppConfig({
           key: 0,
           name: '点击广告卡片右上角',
           matches:
-            '@LinearLayout[clickable=true] > [text="广告" || text="Sponsored" || text="廣告"]',
+            'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13000395', // text="广告"
-            'https://i.gkd.li/i/12905837', // text="Sponsored"
-            'https://i.gkd.li/i/13791200', // text="廣告"
-          ],
-        },
-        {
-          key: 1,
-          name: '点击广告卡片右上角',
-          actionCd: 3000,
-          position: {
-            left: 'width * 0.0569',
-            top: 'width * 0.9083',
-          },
-          excludeMatches:
-            '@LinearLayout[clickable=true] > [text="广告" || text="Sponsored" || text="廣告"]',
-          matches:
-            '@RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14476135',
+            'https://i.gkd.li/i/13000395',
+            'https://i.gkd.li/i/12905837',
+            'https://i.gkd.li/i/13791200',
             'https://i.gkd.li/i/14647413',
           ],
         },
@@ -48,7 +32,7 @@ export default defineAppConfig({
         // 预留key
         // 第二段
         {
-          preKeys: [0, 1],
+          preKeys: [0],
           key: 25,
           name: '点击[关闭]',
           quickFind: true,
@@ -59,7 +43,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 1],
+          preKeys: [0],
           key: 26,
           name: '点击[Close the ad]',
           quickFind: true,
@@ -67,7 +51,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/14207480',
         },
         {
-          preKeys: [0, 1],
+          preKeys: [0],
           key: 27,
           name: '点击[關閉此廣告]',
           quickFind: true,
@@ -75,7 +59,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/13791202',
         },
         {
-          preKeys: [0, 1],
+          preKeys: [0],
           key: 28,
           name: '点击[关闭该广告]',
           quickFind: true,
@@ -87,7 +71,7 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: [0, 1],
+          preKeys: [0],
           key: 29,
           name: '点击[Close the ad]',
           quickFind: true,
