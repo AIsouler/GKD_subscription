@@ -69,5 +69,21 @@ export default defineAppConfig({
         '@ImageView < [desc="关闭"][clickable=true] - ViewGroup > ViewGroup > ViewGroup > View[text="立即领取"]',
       snapshotUrls: ['https://i.gkd.li/i/12642857'],
     },
+    {
+      key: 13,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            'ViewGroup > ViewGroup > [desc="关闭"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/071a07d2-c760-4f15-9359-f54bf51b6205',
+          snapshotUrls: 'https://i.gkd.li/i/14715295',
+        },
+      ],
+    },
   ],
 });
