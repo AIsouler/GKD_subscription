@@ -20,5 +20,23 @@ export default defineAppConfig({
       rules: 'ImageView[id="com.android.thememanager:id/cancel"][desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13215038',
     },
+    {
+      key: 3,
+      name: '局部广告-右下角悬浮窗广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.android.thememanager.ThemeResourceTabActivity',
+          matches: '[vid="close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/41ff6d56-e583-4e6e-9fb3-4efafaeedbd5',
+          snapshotUrls: 'https://i.gkd.li/i/14722559',
+        },
+      ],
+    },
   ],
 });
