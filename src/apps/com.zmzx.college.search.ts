@@ -86,7 +86,7 @@ export default defineAppConfig({
           name: '字节广告-1',
           activityIds:
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
-          matches: '@Image < View +3 View > View > TextView[text$="广告"]',
+          matches: 'Image < @View +3 View > View > TextView[text$="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13523288',
         },
         {
@@ -102,6 +102,15 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12893408',
             'https://i.gkd.li/i/13929945',
           ],
+        },
+        {
+          key: 5,
+          quickFind: true,
+          activityIds:
+            'com.zmzx.college.search.activity.main.activity.MainActivity',
+          matches:
+            'ImageView < @ViewGroup[clickable=true] < * <3 * + * >3 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14730751',
         },
       ],
     },
