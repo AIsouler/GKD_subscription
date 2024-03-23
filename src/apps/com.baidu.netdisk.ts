@@ -119,15 +119,17 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      quickFind: true,
       name: '全屏广告-幸运券包弹窗',
       desc: '自动点击关闭',
+      quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
         {
-          matches:
-            '[id="com.baidu.netdisk:id/tv_title"][text^="恭喜获得"] -3 ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13806852',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13806852',
+            'https://i.gkd.li/i/14730106',
+          ],
         },
       ],
     },
