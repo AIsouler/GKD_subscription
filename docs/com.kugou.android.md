@@ -1,6 +1,6 @@
 # 酷狗音乐
 
-存在 3 规则组 - [com.kugou.android](/src/apps/com.kugou.android.ts)
+存在 5 规则组 - [com.kugou.android](/src/apps/com.kugou.android.ts)
 
 ## 开屏广告
 
@@ -26,3 +26,21 @@
 - [示例-0](https://m.gkd.li/87047583/84c1379f-5eb1-4982-b27b-35e267594101)
 
 - [快照-0](https://i.gkd.li/i/13548005)
+
+## 全屏广告-[看广告免费听歌]弹窗
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/dfd70c7c-3200-493e-9afa-404de5fcd2ff)
+
+- [快照-0](https://i.gkd.li/i/14722104)
+
+## 全屏广告-[开启音乐DJ]弹窗
+
+默认禁用 - 勾选[今日不再提醒]-点击[关闭]
+
+- [示例-0](https://m.gkd.li/57941037/69f564e9-464a-488b-a181-f1085176b49f)
+- [示例-1](https://m.gkd.li/57941037/69f564e9-464a-488b-a181-f1085176b49f)
+
+- [快照-0](https://i.gkd.li/i/14722457)
+- [快照-1](https://i.gkd.li/i/14722457)
