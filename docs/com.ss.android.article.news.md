@@ -1,6 +1,6 @@
 # 今日头条
 
-存在 8 规则组 - [com.ss.android.article.news](/src/apps/com.ss.android.article.news.ts)
+存在 9 规则组 - [com.ss.android.article.news](/src/apps/com.ss.android.article.news.ts)
 
 ## 更新提示
 
@@ -71,3 +71,11 @@
 默认禁用 - 点击X
 
 - [快照-0](https://i.gkd.li/i/13828331)
+
+## 功能类-[关联抖音账号]弹窗
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/c938001e-f39b-4ece-ad0e-2c93ba41aa94)
+
+- [快照-0](https://i.gkd.li/i/14717889)
