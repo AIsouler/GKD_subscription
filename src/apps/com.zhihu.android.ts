@@ -59,8 +59,14 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/14192451',
         },
         {
+          key: 4,
+          quickFind: true,
+          matches: '@ViewGroup[clickable=true] <3 * < * -3 * >2 [text*="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14730741',
+        },
+        {
           key: 90,
-          preKeys: [0, 1, 2, 3],
+          preKeys: [0, 1, 2, 3, 4],
           quickFind: true,
           matches: '@[clickable=true] >3 [text$="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13849689',
