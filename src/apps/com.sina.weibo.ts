@@ -255,6 +255,19 @@ export default defineAppConfig({
           ],
         },
         {
+          key: 2,
+          position: {
+            left: 'width * 0.9537',
+            top: 'width * 0.0611',
+          },
+          activityIds: 'com.sina.weibo.MainTabActivity',
+          matches:
+            'LinearLayout[visibleToUser=true][childCount=6] > @ViewGroup > ViewGroup > FrameLayout > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/14729705',
+        },
+
+        // 预留key
+        {
           preKeys: 0,
           key: 90,
           name: '点击"不感兴趣"',
@@ -268,6 +281,14 @@ export default defineAppConfig({
           matches:
             '@LinearLayout[index=1][clickable=true] >2 [text="不想看到此类内容"]',
           snapshotUrls: 'https://i.gkd.li/i/13958782',
+        },
+        {
+          preKeys: [2],
+          key: 92,
+          quickFind: true,
+          activityIds: 'com.sina.weibo.MainTabActivity',
+          matches: '@[clickable=true] >2 [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/14730274',
         },
       ],
     },
