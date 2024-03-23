@@ -171,12 +171,11 @@ export default defineAppConfig({
           name: '点击广告卡片右下角菜单按钮',
           quickFind: true,
           actionMaximum: 1,
-          matches:
-            '[desc^="广告"] >(1,2) ViewGroup[childCount=3] > FrameLayout[vid="more"][index=2]',
+          matches: '[vid="ad_tint_frame"] >2 [vid="more"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14083540',
-            'https://i.gkd.li/i/14059876',
             'https://i.gkd.li/i/14588315',
+            'https://i.gkd.li/i/14729855',
           ],
         },
 
