@@ -77,8 +77,8 @@
 - [示例-1](https://m.gkd.li/57941037/9c2f42d7-c262-4e06-b3c6-40f0908e7a94)
 
 - [快照-0](https://i.gkd.li/i/14083540)
-- [快照-1](https://i.gkd.li/i/14059876)
-- [快照-2](https://i.gkd.li/i/14588315)
+- [快照-1](https://i.gkd.li/i/14588315)
+- [快照-2](https://i.gkd.li/i/14729855)
 - [快照-3](https://i.gkd.li/i/13742257)
 - [快照-4](https://i.gkd.li/i/13256605)
 - [快照-5](https://i.gkd.li/i/14155801)

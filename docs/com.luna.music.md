@@ -1,6 +1,6 @@
 # 汽水音乐
 
-存在 5 规则组 - [com.luna.music](/src/apps/com.luna.music.ts)
+存在 6 规则组 - [com.luna.music](/src/apps/com.luna.music.ts)
 
 ## 开屏广告
 
@@ -39,3 +39,11 @@
 默认禁用 - 点击【立得全天畅听】
 
 - [快照-0](https://i.gkd.li/i/14237527)
+
+## 评价提示-评分弹窗
+
+默认禁用 - 使用返回关闭弹窗
+
+- [示例-0](https://m.gkd.li/57941037/a7e53af0-8b84-4619-b369-69b949ab2ce4)
+
+- [快照-0](https://i.gkd.li/i/14720841)
