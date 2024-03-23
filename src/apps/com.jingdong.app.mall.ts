@@ -8,9 +8,15 @@ export default defineAppConfig({
     {
       key: 1,
       name: '局部广告-购物车页面砸金蛋',
-      activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-      rules: '[id="com.jd.lib.cart.feature:id/iv_egg_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12642266',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: '[id="com.jd.lib.cart.feature:id/iv_egg_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14731003',
+        },
+      ],
     },
     {
       key: 2,
@@ -40,7 +46,7 @@ export default defineAppConfig({
       key: 3,
       name: '局部广告-首页右侧浮层广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-      rules: 'RelativeLayout >n * > [desc^="关闭浮层"]',
+      rules: '[desc="关闭浮层icon"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13165659',
         'https://i.gkd.li/i/12837870',
@@ -87,6 +93,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          quickFind: true,
           activityIds:
             'com.jd.lib.cashier.complete.view.CashierCompleteActivity',
           matches:
