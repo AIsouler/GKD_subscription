@@ -1,6 +1,6 @@
 # 高德地图
 
-存在 5 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
+存在 6 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
 
 ## 更新提示
 
@@ -35,3 +35,11 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/i/12642857)
+
+## 局部广告-卡片广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/071a07d2-c760-4f15-9359-f54bf51b6205)
+
+- [快照-0](https://i.gkd.li/i/14715295)
