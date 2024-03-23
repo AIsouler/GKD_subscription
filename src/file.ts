@@ -446,73 +446,65 @@ export const checkAndDeleteFiles = async (): Promise<void> => {
 
 // 定义一个函数，用于获取应用组的变更日志
 const getAppDiffLog = (
-  oldGroups: RawAppGroup[] = [],
-  newGroups: RawAppGroup[] = [],
+  oldGroups: RawAppGroup[] = [], // 旧应用组列表，默认为空数组
+  newGroups: RawAppGroup[] = [], // 新应用组列表，默认为空数组
 ) => {
-  // 使用 Set 数据结构存储旧应用组的 key，方便查找
-  const oldGroupKeys = new Set(oldGroups.map((og) => og.key));
-
-  // 使用 Set 数据结构存储新应用组的 key，方便查找
-  const newGroupKeys = new Set(newGroups.map((ng) => ng.key));
-
-  // 计算被移除的应用组列表
-  const removeGroups = oldGroups.filter((og) => !newGroupKeys.has(og.key));
-
-  // 计算新增的应用组列表
-  const addGroups = newGroups.filter((ng) => !oldGroupKeys.has(ng.key));
-
-  // 计算变更的应用组列表
-  const changeGroups = newGroups.filter(
-    (ng) =>
-      oldGroupKeys.has(ng.key) &&
-      !isEqual(
-        ng,
-        oldGroups.find((og) => og.key === ng.key),
-      ),
+  // 根据旧应用组列表和新应用组列表，计算出被移除的应用组列表
+  const removeGroups = oldGroups.filter(
+    (og) => !newGroups.find((ng) => ng.key == og.key),
   );
-
+  const addGroups: RawAppGroup[] = []; // 存储新增的应用组列表
+  const changeGroups: RawAppGroup[] = []; // 存储变更的应用组列表
+  // 遍历新应用组列表
+  newGroups.forEach((ng) => {
+    const oldGroup = oldGroups.find((og) => og.key == ng.key); // 查找对应的旧应用组
+    if (oldGroup) {
+      // 如果找到了对应的旧应用组
+      if (!isEqual(oldGroup, ng)) {
+        // 检查新旧应用组对象是否相等
+        changeGroups.push(ng); // 如果不相等，则将新应用组添加到变更列表中
+      }
+    } else {
+      // 如果未找到对应的旧应用组
+      addGroups.push(ng); // 将新应用组添加到新增列表中
+    }
+  });
   return {
-    addGroups,
-    changeGroups,
-    removeGroups,
+    addGroups, // 返回新增的应用组列表
+    changeGroups, // 返回变更的应用组列表
+    removeGroups, // 返回被移除的应用组列表
   };
 };
 
 // 定义一个函数，用于获取全局规则的变更日志
 const getGlobalDiffLog = (
-  oldGlobalGroups: RawGlobalGroup[] = [],
-  newGlobalGroups: RawGlobalGroup[] = [],
+  oldGlobalGroups: RawGlobalGroup[] = [], // 旧全局应用组列表，默认为空数组
+  newGlobalGroups: RawGlobalGroup[] = [], // 新全局应用组列表，默认为空数组
 ) => {
-  // 使用 Set 数据结构存储旧全局应用组的 key，方便查找
-  const oldGlobalGroupKeys = new Set(oldGlobalGroups.map((og) => og.key));
-
-  // 使用 Set 数据结构存储新全局应用组的 key，方便查找
-  const newGlobalGroupKeys = new Set(newGlobalGroups.map((ng) => ng.key));
-
-  // 计算被移除的全局应用组列表
+  // 根据旧全局应用组列表和新全局应用组列表，计算出被移除的全局应用组列表
   const removeGlobalGroups = oldGlobalGroups.filter(
-    (og) => !newGlobalGroupKeys.has(og.key),
+    (og) => !newGlobalGroups.find((ng) => ng.key == og.key),
   );
-
-  // 计算新增的全局应用组列表
-  const addGlobalGroups = newGlobalGroups.filter(
-    (ng) => !oldGlobalGroupKeys.has(ng.key),
-  );
-
-  // 计算变更的全局应用组列表
-  const changeGlobalGroups = newGlobalGroups.filter(
-    (ng) =>
-      oldGlobalGroupKeys.has(ng.key) &&
-      !isEqual(
-        ng,
-        oldGlobalGroups.find((og) => og.key === ng.key),
-      ),
-  );
-
+  const addGlobalGroups: RawGlobalGroup[] = []; // 存储新增的全局应用组列表
+  const changeGlobalGroups: RawGlobalGroup[] = []; // 存储变更的全局应用组列表
+  // 遍历新全局应用组列表
+  newGlobalGroups.forEach((ng) => {
+    const oldGroup = oldGlobalGroups.find((og) => og.key == ng.key); // 查找对应的旧全局应用组
+    if (oldGroup) {
+      // 如果找到了对应的旧全局应用组
+      if (!isEqual(oldGroup, ng)) {
+        // 检查新旧全局应用组对象是否相等
+        changeGlobalGroups.push(ng); // 如果不相等，则将新全局应用组添加到变更列表中
+      }
+    } else {
+      // 如果未找到对应的旧全局应用组
+      addGlobalGroups.push(ng); // 将新全局应用组添加到新增列表中
+    }
+  });
   return {
-    addGlobalGroups,
-    changeGlobalGroups,
-    removeGlobalGroups,
+    addGlobalGroups, // 返回新增的全局应用组列表
+    changeGlobalGroups, // 返回变更的全局应用组列表
+    removeGlobalGroups, // 返回被移除的全局应用组列表
   };
 };
 
@@ -565,7 +557,10 @@ export const updateReadMeMd = async (
       // 更新应用程序的 Markdown 文件
       await updateAppMd(newApp);
       // 获取应用程序组的差异日志
-      const appDiffLog = getAppDiffLog(newApp.groups, oldApp?.groups || []);
+      const appDiffLog = getAppDiffLog(
+        oldApp ? oldApp.groups : [],
+        newApp.groups,
+      );
       // 如果有新增、修改或删除的组，则将其记录到应用程序差异中
       if (
         appDiffLog.addGroups.length +
