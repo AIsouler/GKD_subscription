@@ -265,5 +265,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 19,
+      name: '权限提示-请求访问通讯录弹窗',
+      desc: '点击[拒绝]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          matches: '[text$="想访问你的通讯录"] +2 * >2 [text="拒绝"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8f70418d-92f0-4264-83fd-a680350c478e',
+          snapshotUrls: 'https://i.gkd.li/i/14735280',
+        },
+      ],
+    },
   ],
 });
