@@ -23,6 +23,12 @@ export default defineAppConfig({
             '[text^="互动广告"] + @LinearLayout[clickable=true] > ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12755799',
         },
+        {
+          key: 2,
+          matches:
+            '[id="android:id/content"] >2 FrameLayout[childCount=4] > @LinearLayout[clickable=true] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/14735621',
+        },
       ],
     },
   ],
