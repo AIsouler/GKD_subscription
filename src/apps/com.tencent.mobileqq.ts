@@ -187,7 +187,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '局部广告-动态页好友热播',
+      name: '分段广告-动态页好友热播',
       desc: '好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭',
       activityIds: [
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -292,7 +292,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '局部广告-QQ小世界评论区广告',
+      name: '分段广告-QQ小世界评论区广告',
       desc: '点击广告-弹出原因框-关闭此条广告',
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
@@ -345,7 +345,7 @@ export default defineAppConfig({
     },
     {
       key: 15,
-      name: '局部广告-好友动态页面"为你推荐"',
+      name: '分段广告-好友动态页面"为你推荐"',
       quickFind: true,
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
@@ -684,6 +684,26 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030',
           snapshotUrls: 'https://i.gkd.li/i/14235163',
+        },
+      ],
+    },
+    {
+      key: 30,
+      name: '局部广告-动态页-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          position: {
+            left: 'width * 0.9534',
+            top: 'width * 0.0805',
+          },
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches:
+            '@View[clickable=false] <<3 LinearLayout <<n LinearLayout[childCount=4] <<3 FrameLayout + * >2 [text="动态"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/940f4965-0058-4101-ab62-20d131e9c1d1',
+          snapshotUrls: 'https://i.gkd.li/i/14732983',
         },
       ],
     },
