@@ -3,7 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.tencent.mm',
   name: '微信',
-  deprecatedKeys: [12, 20],
+  deprecatedKeys: [12, 20, 27],
   groups: [
     {
       key: 0,
@@ -610,78 +610,6 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14662147',
             'https://i.gkd.li/i/14532946', // 避免在此页面误触
           ],
-        },
-      ],
-    },
-    {
-      key: 27,
-      name: '分段广告-订阅号消息页面广告',
-      desc: '点击[广告]-点击[不感兴趣]-点击[与我无关]-点击[确定]',
-      activityIds:
-        'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
-      rules: [
-        {
-          key: 0,
-          name: '点击[广告]',
-          actionCd: 3000,
-          forcedTime: 3000,
-          position: {
-            left: 'width * 0.8805',
-            top: 'width * 0.0583',
-          },
-          excludeMatches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
-          matches:
-            'View[visibleToUser=true] - View[desc!="常​看​的​号​"] > View[desc="广告"||desc=null][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/9fc6137e-b615-46cf-b22e-20c62e398f45',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14544716',
-            'https://i.gkd.li/i/14545735',
-            'https://i.gkd.li/i/14548771', // 避免在此页面误触
-            'https://i.gkd.li/i/14549306', // 避免在此页面误触
-          ],
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          name: '点击[不感兴趣]',
-          forcedTime: 3000,
-          position: {
-            left: 'width * 0.5271',
-            top: 'width * 0.3419',
-          },
-          matches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/e69e887e-5093-4f2a-ad2e-15b3f0a92481',
-          snapshotUrls: 'https://i.gkd.li/i/14544688',
-        },
-        {
-          preKeys: 1,
-          key: 2,
-          name: '点击[与我无关]',
-          forcedTime: 3000,
-          position: {
-            left: 'width * 0.1864',
-            top: 'width * 0.3419',
-          },
-          matches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/ffc05f2d-e8ab-4f0d-a937-23c71f92e8b8',
-          snapshotUrls: 'https://i.gkd.li/i/14544684',
-        },
-        {
-          preKeys: 2,
-          key: 3,
-          name: '点击[确定]',
-          forcedTime: 3000,
-          position: {
-            left: 'width * 0.8641',
-            top: 'width * 0.1209',
-          },
-          matches: '[desc="订阅号消息"] +(2, 3) View[clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c49a8bd0-c947-48b5-9381-d56f13257061',
-          snapshotUrls: 'https://i.gkd.li/i/14544683',
         },
       ],
     },
