@@ -156,16 +156,13 @@ export default defineAppConfig({
     {
       key: 9,
       name: '全屏广告-订单完成后的红包弹窗',
-      desc: '直接关闭整个模块',
+      desc: '点击关闭',
       quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
       rules: [
         {
-          action: 'back',
           activityIds:
             'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
-          matches: '[id="com.sankuai.meituan:id/module_container"]',
+          matches: '@ImageView[clickable=true] - * >3 [text="开心收下"]',
           snapshotUrls: 'https://i.gkd.li/i/13695703',
         },
       ],
