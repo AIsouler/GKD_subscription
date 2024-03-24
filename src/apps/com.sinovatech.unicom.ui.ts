@@ -32,6 +32,7 @@ export default defineAppConfig({
         {
           key: 0,
           name: '首页弹窗',
+          forcedTime: 10000,
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
           matches: '[text="首页弹窗"] >3 Image[clickable=true]',
           snapshotUrls: [
