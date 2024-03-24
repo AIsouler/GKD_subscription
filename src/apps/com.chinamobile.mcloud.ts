@@ -37,11 +37,13 @@ export default defineAppConfig({
           activityIds: [
             'com.chinamobile.mcloud.client.ui.MenuActivity',
             'com.chinamobile.mcloud.client.ui.CustomScanActivity',
+            'com.mcloud.login.ui.ConfirmLoginTvActivity',
           ],
           matches: '[id="com.chinamobile.mcloud:id/iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13627826',
             'https://i.gkd.li/i/14549523',
+            'https://i.gkd.li/i/14732062',
           ],
         },
         {
