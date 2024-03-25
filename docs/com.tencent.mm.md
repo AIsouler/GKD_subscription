@@ -1,6 +1,6 @@
 # 微信
 
-存在 30 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 29 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 分段广告-朋友圈广告
 
@@ -212,23 +212,6 @@
 - [快照-0](https://i.gkd.li/i/14399355)
 - [快照-1](https://i.gkd.li/i/14662147)
 - [快照-2](https://i.gkd.li/i/14532946)
-
-## 分段广告-订阅号消息页面广告
-
-默认禁用 - 点击[广告]-点击[不感兴趣]-点击[与我无关]-点击[确定]
-
-- [示例-0](https://m.gkd.li/57941037/9fc6137e-b615-46cf-b22e-20c62e398f45)
-- [示例-1](https://m.gkd.li/57941037/e69e887e-5093-4f2a-ad2e-15b3f0a92481)
-- [示例-2](https://m.gkd.li/57941037/ffc05f2d-e8ab-4f0d-a937-23c71f92e8b8)
-- [示例-3](https://m.gkd.li/57941037/c49a8bd0-c947-48b5-9381-d56f13257061)
-
-- [快照-0](https://i.gkd.li/i/14544716)
-- [快照-1](https://i.gkd.li/i/14545735)
-- [快照-2](https://i.gkd.li/i/14548771)
-- [快照-3](https://i.gkd.li/i/14549306)
-- [快照-4](https://i.gkd.li/i/14544688)
-- [快照-5](https://i.gkd.li/i/14544684)
-- [快照-6](https://i.gkd.li/i/14544683)
 
 ## 分段广告-订阅号消息页面视频推荐
 
