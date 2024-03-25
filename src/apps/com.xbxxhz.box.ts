@@ -28,6 +28,16 @@ export default defineAppConfig({
             'https://m.gkd.li/57941037/1fa3e6e6-ce24-42a6-a4af-911eed7392e1',
           snapshotUrls: 'https://i.gkd.li/i/14459191',
         },
+        {
+          key: 2,
+          quickFind: true,
+          activityIds: 'com.mango.appfile.print_finish.PrintFinishAct',
+          matches:
+            'ImageView < @FrameLayout +2 FrameLayout >2 [text="打开或下载第三方应用"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b0c3be3a-64a7-477e-a022-8a503ebd2cf6',
+          snapshotUrls: 'https://i.gkd.li/i/14741407',
+        },
       ],
     },
   ],
