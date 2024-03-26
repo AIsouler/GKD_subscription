@@ -47,6 +47,15 @@ export default defineAppConfig({
           matches: '[vid="button_close_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/14668408',
         },
+        {
+          key: 3,
+          quickFind: true,
+          activityIds:
+            'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
+          matches:
+            'ImageView < @FrameLayout <<n [vid="banner"] +2 [vid="title_browse"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14758809',
+        },
       ],
     },
     {
