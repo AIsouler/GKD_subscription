@@ -68,8 +68,6 @@ export default defineAppConfig({
           name: '稀有龙鹅卡掉落/瓜分现金',
           matches:
             'RelativeLayout[childCount=2] > ImageView + RelativeLayout[childCount=2] > ImageView',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3922e10b-ed7e-41c0-955c-88189876548d',
           snapshotUrls: [
             'https://i.gkd.li/i/14155603',
             'https://i.gkd.li/i/14217033',
@@ -148,6 +146,7 @@ export default defineAppConfig({
       name: '全屏广告-频道页面广告',
       rules: [
         {
+          key: 0,
           name: '弹窗广告',
           quickFind: true,
           activityIds: [
@@ -162,6 +161,7 @@ export default defineAppConfig({
           ],
         },
         {
+          key: 1,
           name: '右侧悬浮广告',
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
@@ -276,6 +276,7 @@ export default defineAppConfig({
       key: 10,
       name: '功能类-自动勾选原图',
       desc: '发送图片时自动勾选原图',
+      quickFind: true,
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
         'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
@@ -293,11 +294,13 @@ export default defineAppConfig({
       key: 11,
       name: '功能类-自动查看原图',
       desc: '查看图片时自动点击原图',
-      activityIds: 'com.tencent.richframework.gallery.QQGalleryActivity',
-      rules: '[desc="查看原图"][checked=false]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12840632', // 点击原图前
-        'https://i.gkd.li/i/12840633', // 点击原图后
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.richframework.gallery.QQGalleryActivity',
+          matches: '[text^="查看原图"]',
+          snapshotUrls: 'https://i.gkd.li/i/14757735',
+        },
       ],
     },
     {
@@ -385,6 +388,7 @@ export default defineAppConfig({
     {
       key: 17,
       name: '更新提示',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -392,20 +396,12 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches:
-            '@[desc="关闭"] - ViewGroup > [text="立即体验"||text="立即升级"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13188721',
-            'https://i.gkd.li/i/13386719',
-            'https://i.gkd.li/i/13459507',
-          ],
+          matches: '@[desc="关闭"] - * > [text="发现新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/13386719',
         },
         {
           key: 1,
-          quickFind: true,
           matches: '@[text="稍后处理"] +2 [text="立即升级"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/9deea40b-338d-4290-9098-3d1431d585ff',
           snapshotUrls: 'https://i.gkd.li/i/14724108',
         },
       ],
@@ -413,6 +409,7 @@ export default defineAppConfig({
     {
       key: 18,
       name: '更新提示-消息页面-顶部',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -420,12 +417,10 @@ export default defineAppConfig({
         {
           key: 0,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          matches:
-            '[text*="版本更新" || text*="点击下载"] + ImageView[clickable=true]',
+          matches: '@ImageView[clickable=true] <n * > [text*="版本更新"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13188722',
             'https://i.gkd.li/i/13255493', //desc值为null快照
-            'https://i.gkd.li/i/13843140', //关系选择器为-2快照
+            'https://i.gkd.li/i/13843140',
             'https://i.gkd.li/i/14138340',
             'https://i.gkd.li/i/13931212',
           ],
@@ -435,14 +430,14 @@ export default defineAppConfig({
     {
       key: 19,
       name: '更新提示-内测邀请弹窗',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules: [
         {
           key: 0,
-          matches: '@ImageView[desc="关闭"] <2 * >2 [text="QQ测试版"]',
+          matches: '@[desc="关闭"] - * > [text="QQ测试版"]',
           snapshotUrls: 'https://i.gkd.li/i/13526551',
         },
       ],
