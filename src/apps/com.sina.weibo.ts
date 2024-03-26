@@ -262,8 +262,11 @@ export default defineAppConfig({
           },
           activityIds: 'com.sina.weibo.MainTabActivity',
           matches:
-            'LinearLayout[visibleToUser=true][childCount=6] > @ViewGroup > ViewGroup > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/14729705',
+            'LinearLayout + LinearLayout[visibleToUser=true][childCount=6] > @ViewGroup > ViewGroup > FrameLayout > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14729705',
+            'https://i.gkd.li/i/14753916', // 避免在此页面误触
+          ],
         },
 
         // 预留key
