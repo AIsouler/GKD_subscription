@@ -222,27 +222,37 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          name: 'PC 登录确认',
+          name: '点击登录',
           activityIds: [
             'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
             'com.tencent.mobileqq.activity.DevlockQuickLoginActivity',
+            'com.tencent.mobileqq.activity.DevLockQuickVerifyActivity',
           ],
           matches:
-            'TextView[text="登录确认"||text="一键验证"] <n * +n * >n Button[text*="登录"]',
+            'Button[text*="登录"][clickable=true][visibleToUser=true][text.length<10]',
           snapshotUrls: [
             'https://i.gkd.li/i/13623520',
             'https://i.gkd.li/i/12789287',
             'https://i.gkd.li/i/13063027',
+            'https://i.gkd.li/i/13166314',
           ],
         },
         {
           key: 2,
-          name: 'QQ 互联登录确认',
-          activityIds: [
-            'com.tencent.mobileqq.activity.DevLockQuickVerifyActivity',
-          ],
-          matches: 'Button[text="拒绝"] - Button[text="登录"]',
-          snapshotUrls: ['https://i.gkd.li/i/13166314'],
+          name: '点击同意',
+          activityIds:
+            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
+          matches: 'Button[text="同意"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14752498',
+        },
+        {
+          preKeys: [2],
+          key: 3,
+          name: '点击确认',
+          activityIds:
+            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
+          matches: 'Button[text="确认"]',
+          snapshotUrls: 'https://i.gkd.li/i/14752519',
         },
       ],
     },
