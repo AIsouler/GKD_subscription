@@ -112,7 +112,7 @@
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                                                                                       | 3      |
 | QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 7      |
 | QQ邮箱                 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md)                                                                                                   | 3      |
-| QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 3      |
+| QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 4      |
 | UC浏览器               | [com.UCMobile](/docs/com.UCMobile.md)                                                                                                                             | 4      |
 | UPUPOO动态壁纸         | [com.upupoo.apu.mobile](/docs/com.upupoo.apu.mobile.md)                                                                                                           | 2      |
 | VIVO 电子书            | [com.chaozh.iReader](/docs/com.chaozh.iReader.md)                                                                                                                 | 2      |
@@ -408,7 +408,7 @@
 | 蜻蜓FM                 | [fm.qingting.qtradio](/docs/fm.qingting.qtradio.md)                                                                                                               | 1      |
 | 蜻蜓点金               | [zhongxinjiantou.szkingdom.android.newphone](/docs/zhongxinjiantou.szkingdom.android.newphone.md)                                                                 | 1      |
 | 亲邻开门               | [com.qinlin.edoor](/docs/com.qinlin.edoor.md)                                                                                                                     | 5      |
-| 汽水音乐               | [com.luna.music](/docs/com.luna.music.md)                                                                                                                         | 6      |
+| 汽水音乐               | [com.luna.music](/docs/com.luna.music.md)                                                                                                                         | 7      |
 | 企业微信               | [com.tencent.wework](/docs/com.tencent.wework.md)                                                                                                                 | 1      |
 | 企查查                 | [com.android.icredit](/docs/com.android.icredit.md)                                                                                                               | 1      |
 | 全民K歌                | [com.tencent.karaoke](/docs/com.tencent.karaoke.md)                                                                                                               | 2      |
@@ -650,7 +650,7 @@
 | 有道翻译官             | [com.youdao.translator](/docs/com.youdao.translator.md)                                                                                                           | 1      |
 | 有道云笔记             | [com.youdao.note](/docs/com.youdao.note.md)                                                                                                                       | 1      |
 | 优酷视频               | [com.youku.phone](/docs/com.youku.phone.md)                                                                                                                       | 4      |
-| 游民星空               | [com.gamersky](/docs/com.gamersky.md)                                                                                                                             | 1      |
+| 游民星空               | [com.gamersky](/docs/com.gamersky.md)                                                                                                                             | 2      |
 | 优衣库                 | [com.yek.android.uniqlo](/docs/com.yek.android.uniqlo.md)                                                                                                         | 2      |
 | 阅读                   | [com.heytap.reader](/docs/com.heytap.reader.md)                                                                                                                   | 3      |
 | 越牛新闻               | [com.cmstop.shaoxing](/docs/com.cmstop.shaoxing.md)                                                                                                               | 1      |
