@@ -50,5 +50,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-签到成功弹窗',
+      desc: '点击[确定]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.gamersky.main.activity.LibMainActivity',
+          matches: '[text="签到成功！"] < * > [text="确定"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/696e417a-3100-43a2-a401-f4f80dfa9f47',
+          snapshotUrls: 'https://i.gkd.li/i/14761502',
+        },
+      ],
+    },
   ],
 });
