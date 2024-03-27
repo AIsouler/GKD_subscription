@@ -62,6 +62,8 @@ export const blackListAppIDs: string[] = [
   'com.rosan.accounts', // Accounts
   'com.dv.adm', // ADM
   'com.assistant.ongoingclear', // 固定通知隐藏
+  'org.koitharu.kotatsu', // Kotatsu
+  'me.ash.reader', // Read You
 
   // 系统自带非系统应用
   // 小米
