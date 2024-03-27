@@ -61,6 +61,7 @@ export const blackListAppIDs: string[] = [
   'com.rosan.dhizuku', // Dhizuku
   'com.rosan.accounts', // Accounts
   'com.dv.adm', // ADM
+  'com.assistant.ongoingclear', // 固定通知隐藏
 
   // 系统自带非系统应用
   // 小米
