@@ -26,23 +26,24 @@ export default defineAppConfig({
       ],
       rules: [
         {
-          action: 'back',
+          key: 0,
           matches:
-            '[id="com.luna.music:id/design_bottom_sheet"] [id="com.luna.music:id/bullet_container"]',
+            '@UIView[clickable=true] <n * > FlattenUIText[text="看视频免费听"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
+            'https://i.gkd.li/i/13660652',
             'https://i.gkd.li/i/13533797',
-            'https://i.gkd.li/i/13613296', // matches中添加[id="com.luna.music:id/design_bottom_sheet"], 避免在此误触
-            'https://i.gkd.li/i/13613498', // matches中添加[id="com.luna.music:id/design_bottom_sheet"], 避免在此误触
-            'https://i.gkd.li/i/13613850', // 单独matches: '[id="com.luna.music:id/design_bottom_sheet"]', 会误触
-            'https://i.gkd.li/i/13660652', // activityIds: 'com.luna.biz.ad.AdActivity',
+            'https://i.gkd.li/i/13613296', // 避免在此页面误触
           ],
         },
         {
-          name: '右小角小悬浮窗',
+          key: 1,
           matches:
-            '[id="com.luna.music:id/fl_pendant_container"] > [id="com.luna.music:id/view_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13674376',
+            '@UIView[clickable=true] <n * > FlattenUIText[text="当前已享"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14767233',
+            'https://i.gkd.li/i/13613296', // 避免在此页面误触
+          ],
         },
       ],
     },
@@ -66,10 +67,11 @@ export default defineAppConfig({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
+          key: 1,
           name: '点击"坚持退出"',
           quickFind: true,
-          matches: '[id="com.byted.pangle:id/tt_negtive"][text="坚持退出"]',
+          matches: '[text="坚持退出"]',
           snapshotUrls: 'https://i.gkd.li/i/13613184',
         },
       ],
@@ -79,19 +81,21 @@ export default defineAppConfig({
       quickFind: true,
       name: '功能类-看广告获取听歌时长',
       desc: '点击领取成功-点击坚持退出',
+      activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
       rules: [
         {
           key: 0,
           matches: '@[text*="领取成功"][clickable=true] - [text="反馈"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13945430',
+            'https://i.gkd.li/i/14767236',
             'https://i.gkd.li/i/14391770',
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
+          key: 1,
           matches: '[text="坚持退出"]',
-          snapshotUrls: 'https://i.gkd.li/i/13945459',
+          snapshotUrls: 'https://i.gkd.li/i/14767235',
         },
       ],
     },
@@ -117,6 +121,22 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/a7e53af0-8b84-4619-b369-69b949ab2ce4',
           snapshotUrls: 'https://i.gkd.li/i/14720841',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '局部广告-悬浮窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.luna.biz.main.main.MainActivity',
+          matches:
+            '[id="com.luna.music:id/fl_pendant_container"] > [id="com.luna.music:id/view_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8a427d5f-680b-4562-9cf3-90b1db82df0f',
+          snapshotUrls: 'https://i.gkd.li/i/13674376',
         },
       ],
     },
