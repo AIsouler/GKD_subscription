@@ -109,17 +109,6 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14070500', // 通过广告下方评论visibleToUser=true防止在此页面误触
           ],
         },
-        {
-          key: 2,
-          name: '搜索页广告',
-          quickFind: true,
-          activityIds:
-            'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
-          matches: '[vid="adTagView"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/ed4bb569-b3e1-4644-a586-f01d95c150e9',
-          snapshotUrls: 'https://i.gkd.li/i/14276854',
-        },
       ],
     },
     {
