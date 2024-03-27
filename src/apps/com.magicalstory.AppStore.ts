@@ -11,37 +11,32 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '腾讯广告',
-          actionDelay: 100, // 缺失此字段会造成触发两次点击才能关闭广告的结果
+          name: '软件详情页',
+          quickFind: true,
+          actionDelay: 300, // 没有此字段会导致误触
           activityIds: [
             'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
             'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
           ],
-          excludeActivityIds: 'com.magicalstory.AppStore.search.searchActivity', // 排除搜索页，搜索页的规则见 key: 1
           matches:
-            '[visibleToUser=true] - [vid="bannerLayout"] >7 FrameLayout[childCount=5] > FrameLayout[index=2]',
+            '@ImageView < FrameLayout <3 [childCount=5] <<n [vid="bannerLayout"] + [vid="itemUser"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13413482',
-            'https://i.gkd.li/i/13416979',
-            'https://i.gkd.li/i/13527698',
-            'https://i.gkd.li/i/13759492', // 限定 visibleToUser, 防止误触
-            'https://i.gkd.li/i/14273176', // 限定 visibleToUser, 防止误触
-            'https://i.gkd.li/i/14273317', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/i/14771070',
+            'https://i.gkd.li/i/14771175',
+            'https://i.gkd.li/i/14771110', // 限定 visibleToUser, 防止误触
           ],
         },
         {
           key: 1,
-          name: '腾讯广告-搜索页面',
+          name: '搜索页面',
           activityIds: 'com.magicalstory.AppStore.search.searchActivity',
           matches:
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView < FrameLayout +2 *[visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13185746',
-            'https://i.gkd.li/i/13695554',
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/14771429',
         },
         {
           key: 2,
+          name: '首页',
           quickFind: true,
           activityIds: 'com.magicalstory.AppStore.main.MainActivity',
           matches: '[vid="button_close_ad"]',
@@ -49,11 +44,13 @@ export default defineAppConfig({
         },
         {
           key: 3,
+          name: '评论区顶部',
           quickFind: true,
+          actionDelay: 300, // 没有此字段会导致误触
           activityIds:
             'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
           matches:
-            'ImageView < @FrameLayout <<n [vid="banner"] +2 [vid="title_browse"][visibleToUser=true]',
+            '@ImageView < FrameLayout <<n [vid="banner"] +2 [vid="title_browse"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14758809',
         },
       ],
