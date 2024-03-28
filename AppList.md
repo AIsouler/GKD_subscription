@@ -1,6 +1,6 @@
 # 适配 APP 列表
 
-## 应用规则(共 714 组)
+## 应用规则(共 717 组)
 
 | 名称                   | ID                                                                                                                                                                | 规则组 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -24,7 +24,7 @@
 | Gmail                  | [com.google.android.gm](/docs/com.google.android.gm.md)                                                                                                           | 1      |
 | Gspace                 | [com.gspace.android](/docs/com.gspace.android.md)                                                                                                                 | 2      |
 | HMS Core               | [com.huawei.hwid](/docs/com.huawei.hwid.md)                                                                                                                       | 1      |
-| Instagram              | [com.instagram.android](/docs/com.instagram.android.md)                                                                                                           | 1      |
+| Instagram              | [com.instagram.android](/docs/com.instagram.android.md)                                                                                                           | 2      |
 | JavDB                  | [xxx.pornhub.fuck](/docs/xxx.pornhub.fuck.md)                                                                                                                     | 1      |
 | Jump                   | [com.vgjump.jump](/docs/com.vgjump.jump.md)                                                                                                                       | 1      |
 | Keep                   | [com.gotokeep.keep](/docs/com.gotokeep.keep.md)                                                                                                                   | 6      |
@@ -575,7 +575,7 @@
 | 小米商城               | [com.xiaomi.shop](/docs/com.xiaomi.shop.md)                                                                                                                       | 1      |
 | 小米社区               | [com.xiaomi.vipaccount](/docs/com.xiaomi.vipaccount.md)                                                                                                           | 4      |
 | 小米手机管家           | [com.miui.securitycenter](/docs/com.miui.securitycenter.md)                                                                                                       | 4      |
-| 小米应用商店           | [com.xiaomi.market](/docs/com.xiaomi.market.md)                                                                                                                   | 5      |
+| 小米应用商店           | [com.xiaomi.market](/docs/com.xiaomi.market.md)                                                                                                                   | 6      |
 | 小米音乐               | [com.miui.player](/docs/com.miui.player.md)                                                                                                                       | 8      |
 | 小米有品               | [com.xiaomi.youpin](/docs/com.xiaomi.youpin.md)                                                                                                                   | 2      |
 | 小米游戏服务           | [com.xiaomi.gamecenter.sdk.service](/docs/com.xiaomi.gamecenter.sdk.service.md)                                                                                   | 1      |
@@ -609,6 +609,7 @@
 | 星芽免费短剧           | [com.jz.xydj](/docs/com.jz.xydj.md)                                                                                                                               | 1      |
 | 星野                   | [com.xingye.app](/docs/com.xingye.app.md)                                                                                                                         | 2      |
 | 星影视频               | [com.xsj.app](/docs/com.xsj.app.md)                                                                                                                               | 2      |
+| 星影视频               | [cn.ylkj.xingying](/docs/cn.ylkj.xingying.md)                                                                                                                     | 1      |
 | 星影视频               | [cn.nlyuming.duanju.ting](/docs/cn.nlyuming.duanju.ting.md)                                                                                                       | 1      |
 | 新小财神影视           | [com.miaoying.appmy.cs](/docs/com.miaoying.appmy.cs.md)                                                                                                           | 3      |
 | 熊猫记账               | [com.uanmi.miaojiaccount](/docs/com.uanmi.miaojiaccount.md)                                                                                                       | 1      |
@@ -661,6 +662,8 @@
 | 云闪付                 | [com.unionpay](/docs/com.unionpay.md)                                                                                                                             | 9      |
 | 云听                   | [com.shinyv.cnr](/docs/com.shinyv.cnr.md)                                                                                                                         | 1      |
 | 云运动                 | [com.yunzhi.tiyu](/docs/com.yunzhi.tiyu.md)                                                                                                                       | 3      |
+| 云·星穹铁道            | [com.miHoYo.cloudgames.hkrpg](/docs/com.miHoYo.cloudgames.hkrpg.md)                                                                                               | 1      |
+| 云·原神                | [com.miHoYo.cloudgames.ys](/docs/com.miHoYo.cloudgames.ys.md)                                                                                                     | 1      |
 | 鱼泡网                 | [io.dcloud.H576E6CC7](/docs/io.dcloud.H576E6CC7.md)                                                                                                               | 2      |
 | 语雀                   | [com.yuque.mobile.android.app](/docs/com.yuque.mobile.android.app.md)                                                                                             | 2      |
 | 涨乐财富通             | [com.lphtsccft](/docs/com.lphtsccft.md)                                                                                                                           | 3      |
@@ -678,7 +681,7 @@
 | 正气                   | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md)                                                                                               | 2      |
 | 直播吧                 | [android.zhibo8](/docs/android.zhibo8.md)                                                                                                                         | 3      |
 | 知到                   | [com.able.wisdomtree](/docs/com.able.wisdomtree.md)                                                                                                               | 2      |
-| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 13     |
+| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 15     |
 | 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 8      |
 | 智慧生活               | [com.huawei.smarthome](/docs/com.huawei.smarthome.md)                                                                                                             | 1      |
 | 智慧树                 | [com.hyww.wisdomtree](/docs/com.hyww.wisdomtree.md)                                                                                                               | 2      |
