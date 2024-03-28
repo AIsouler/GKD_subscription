@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@gkd-kit/api':
-    specifier: ^0.0.4
-    version: 0.0.4
+    specifier: ^0.0.5
+    version: 0.0.5
 
 devDependencies:
   '@commitlint/cli':
@@ -511,8 +511,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@gkd-kit/api@0.0.4:
-    resolution: {integrity: sha512-bLq2vWd9vbXBWgRJlvWCcXcLb/qbDZIfvqSAf/jqcqvfxxsxY89pJhy+lN5F6oOeKfRb7lxOTC0FOjs0XaxdsA==}
+  /@gkd-kit/api@0.0.5:
+    resolution: {integrity: sha512-eKHkqcjlhUiQgg1WUepq7CNxVR/Q3PQWr8TMmfbYTqeq0pO7ABYNDuGkOptR+u2jQ1Qr+8bbX/ODfdB6jK8UfQ==}
     dev: false
 
   /@gkd-kit/selector@0.0.25:

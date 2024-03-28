@@ -71,6 +71,6 @@
     ]
   },
   "dependencies": {
-    "@gkd-kit/api": "^0.0.4"
+    "@gkd-kit/api": "^0.0.5"
   }
 }
