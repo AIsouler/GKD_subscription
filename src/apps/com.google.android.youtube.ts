@@ -7,12 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '全屏广告-视频播放-跳过广告',
+      quickFind: true,
       activityIds: [
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
         'com.google.android.youtube',
       ],
-      quickFind: true,
       rules: [
         {
           key: 0,
@@ -34,14 +34,21 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-视频播放-赞助商广告',
-      activityIds:
+      quickFind: true,
+      activityIds: [
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
-      rules:
-        'ImageView[desc="更多选项"||desc^="More"] + @ImageView[desc="关闭广告面板"||desc^="Close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12877346',
-        'https://i.gkd.li/i/13797491',
-        'https://i.gkd.li/i/13705106',
+        'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+      ],
+      rules: [
+        {
+          matches:
+            '@[desc="关闭广告面板" || desc="Close ad panel"] <<n [vid="panel_header"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13797491',
+            'https://i.gkd.li/i/13705106',
+            'https://i.gkd.li/i/14784199',
+          ],
+        },
       ],
     },
     {
