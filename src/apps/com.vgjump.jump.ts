@@ -7,16 +7,21 @@ export default defineAppConfig({
     {
       key: 0,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
-          quickFind: true,
+          key: 0,
+          matches: '[text="跳过"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14790888',
+        },
+        {
+          key: 1,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/722ac7cf-f0ef-4cae-9351-60150b5425d9',
           snapshotUrls: 'https://i.gkd.li/i/14446438',
         },
       ],
