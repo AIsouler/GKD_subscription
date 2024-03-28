@@ -10,7 +10,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击"继续安装"',
+          name: '点击[继续安装]',
           activityIds:
             'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
           matches:
@@ -25,17 +25,13 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '点击"完成"',
+          name: '点击[完成]',
           activityIds: 'com.oplus.appdetail.model.finish.InstallFinishActivity',
-          matches: '[id="com.oplus.appdetail:id/launch_button"][text="完成"]',
-          snapshotUrls: 'https://i.gkd.li/i/13038664',
-        },
-        {
-          key: 2,
-          name: '点击"完成"',
-          activityIds: 'com.oplus.appdetail.model.finish.InstallFinishActivity',
-          matches: '[id="com.oplus.appdetail:id/done_button"][text="完成"]',
-          snapshotUrls: 'https://i.gkd.li/i/13054849',
+          matches: '[text="完成"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13038664',
+            'https://i.gkd.li/i/13054849',
+          ],
         },
       ],
     },
