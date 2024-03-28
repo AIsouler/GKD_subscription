@@ -6,19 +6,21 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '分段广告-卡片广告',
+      activityIds: 'com.autoclicker.clicker.MainActivity',
       rules: [
         {
-          key: 0,
-          activityIds: 'com.bytedance.sdk.openadsdk.core.dislike.ui',
+          key: 1,
           matches:
-            '@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]',
+            'Image < @View[visibleToUser=true] + View > View > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14782886',
         },
         {
-          key: 1,
-          activityIds: 'com.autoclicker.clicker.MainActivity',
-          matches: 'Image < @View + View > View > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/13761239',
+          preKeys: [1],
+          key: 2,
+          quickFind: true,
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/14783475',
         },
       ],
     },
