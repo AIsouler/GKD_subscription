@@ -140,13 +140,26 @@ export default defineAppConfig({
     {
       key: 8,
       name: '局部广告-直播间卡片广告',
-      desc: '直播间底部售卖卡片-点击右上角x',
+      desc: '点击关闭',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
-      rules: '[id="tv.danmaku.bili:id/shopping_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13200549',
+      rules: [
+        {
+          key: 0,
+          name: '直播间底部售卖卡片',
+          matches: '[id="tv.danmaku.bili:id/shopping_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13200549',
+        },
+        {
+          key: 1,
+          name: '[关注]弹窗',
+          quickFind: true,
+          matches: '@[vid="close"] -2 * >2 [text="关注"]',
+          snapshotUrls: 'https://i.gkd.li/i/14782965',
+        },
+      ],
     },
     {
       key: 9,
