@@ -46,5 +46,28 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-自动点击[查看翻译]',
+      quickFind: true,
+      activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[text="查看翻译"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e92702d8-8349-4718-aa4d-664bf3d2f6e5',
+          snapshotUrls: 'https://i.gkd.li/i/14093211',
+        },
+        {
+          key: 1,
+          excludeMatches: '[text="查看翻译"]',
+          matches: '[text$="查看翻译"][desc!=null]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7d6da15b-1c3f-4160-a2d3-d8223bc55132',
+          snapshotUrls: 'https://i.gkd.li/i/14784095',
+        },
+      ],
+    },
   ],
 });
