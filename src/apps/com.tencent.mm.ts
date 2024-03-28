@@ -28,6 +28,18 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14647413',
           ],
         },
+        {
+          key: 1,
+          quickFind: true,
+          position: {
+            left: 'width * 0.9223',
+            top: 'width * 0.0349',
+          },
+          excludeMatches:
+            'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true]',
+          matches: '@LinearLayout >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14783802',
+        },
 
         // 预留key
         // 第二段
@@ -59,7 +71,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/13791202',
         },
         {
-          preKeys: [0],
+          preKeys: [0, 1],
           key: 28,
           name: '点击[关闭该广告]',
           quickFind: true,
@@ -68,6 +80,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/i/12642584',
             'https://i.gkd.li/i/14647839',
+            'https://i.gkd.li/i/14783820',
           ],
         },
         {
@@ -89,6 +102,7 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/i/12663984',
             'https://i.gkd.li/i/14647940',
+            'https://i.gkd.li/i/14783534',
           ],
         },
         {
