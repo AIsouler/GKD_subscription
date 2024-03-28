@@ -1,6 +1,6 @@
 # 汽水音乐
 
-存在 6 规则组 - [com.luna.music](/src/apps/com.luna.music.ts)
+存在 7 规则组 - [com.luna.music](/src/apps/com.luna.music.ts)
 
 ## 开屏广告
 
@@ -11,12 +11,11 @@
 默认禁用 - 直接关闭所有底部半屏弹窗
 
 - [快照-0](https://i.gkd.li/i/13533795)
-- [快照-1](https://i.gkd.li/i/13533797)
-- [快照-2](https://i.gkd.li/i/13613296)
-- [快照-3](https://i.gkd.li/i/13613498)
-- [快照-4](https://i.gkd.li/i/13613850)
-- [快照-5](https://i.gkd.li/i/13660652)
-- [快照-6](https://i.gkd.li/i/13674376)
+- [快照-1](https://i.gkd.li/i/13660652)
+- [快照-2](https://i.gkd.li/i/13533797)
+- [快照-3](https://i.gkd.li/i/13613296)
+- [快照-4](https://i.gkd.li/i/14767233)
+- [快照-5](https://i.gkd.li/i/13613296)
 
 ## 功能类-看广告视频拿VIP
 
@@ -30,9 +29,9 @@
 
 默认禁用 - 点击领取成功-点击坚持退出
 
-- [快照-0](https://i.gkd.li/i/13945430)
+- [快照-0](https://i.gkd.li/i/14767236)
 - [快照-1](https://i.gkd.li/i/14391770)
-- [快照-2](https://i.gkd.li/i/13945459)
+- [快照-2](https://i.gkd.li/i/14767235)
 
 ## 功能类-看视频免费听弹窗
 
@@ -47,3 +46,11 @@
 - [示例-0](https://m.gkd.li/57941037/a7e53af0-8b84-4619-b369-69b949ab2ce4)
 
 - [快照-0](https://i.gkd.li/i/14720841)
+
+## 局部广告-悬浮窗广告
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/8a427d5f-680b-4562-9cf3-90b1db82df0f)
+
+- [快照-0](https://i.gkd.li/i/13674376)
