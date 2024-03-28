@@ -91,5 +91,20 @@ export default defineAppConfig({
       rules: '[id="com.xiaomi.market:id/close_float_recommend"]',
       snapshotUrls: 'https://i.gkd.li/i/13624971',
     },
+    {
+      key: 13,
+      name: '功能类-自动点击[查看全部升级]',
+      desc: '应用升级页面',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+          matches: '@[clickable=true] > [text^="查看全部升级"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8549db1e-17a5-44e3-b657-1d2d712efd2a',
+          snapshotUrls: 'https://i.gkd.li/i/14782814',
+        },
+      ],
+    },
   ],
 });
