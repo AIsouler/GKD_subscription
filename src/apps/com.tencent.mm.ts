@@ -593,7 +593,8 @@ export default defineAppConfig({
         {
           key: 0,
           activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
-          matches: 'WebView > View > View > View[childCount=2] > View + Image',
+          matches:
+            'WebView > View[childCount=15] > View > View[childCount=2] > View > Image < * + Image',
           snapshotUrls: 'https://i.gkd.li/i/14392363',
         },
       ],
