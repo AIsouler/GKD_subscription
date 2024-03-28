@@ -9,7 +9,7 @@ const subsConfig: RawSubscription = {
   name: 'AIsouler的GKD订阅',
   author: 'AIsouler',
   supportUri: 'https://github.com/AIsouler/GKD_subscription',
-  checkUpdateUrl: './AIsouler_gkd.version.json',
+  checkUpdateUrl: './AIsouler_gkd.version.json5',
   globalGroups,
   categories,
   apps,
