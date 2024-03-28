@@ -8,7 +8,10 @@ export default defineAppConfig({
       key: 1,
       name: '分段广告-主页信息流广告',
       desc: '点击右上角关闭,点击我不喜欢',
-      activityIds: 'com.twitter.app.main.MainActivity',
+      activityIds: [
+        'com.twitter.app.main.MainActivity',
+        'com.twitter.app.profiles.ProfileActivity',
+      ],
       actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
       quickFind: true,
       rules: [
@@ -16,23 +19,30 @@ export default defineAppConfig({
           key: 0,
           name: '视频广告-点击右上角关闭',
           matches:
-            '@[id="com.twitter.android:id/tweet_curation_action"] <2 LinearLayout + LinearLayout >n [id="com.twitter.android:id/upper_video_attribution"][text="视频将在广告后播放"]',
-          snapshotUrls: 'https://i.gkd.li/i/12798795',
+            '@[vid="tweet_curation_action"] <2 * + * >3 [text="视频将在广告后播放"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12798795',
+            'https://i.gkd.li/i/14782884',
+          ],
         },
         {
           key: 1,
           name: '推荐广告-点击右上角关闭',
-          matches:
-            '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
-          snapshotUrls: 'https://i.gkd.li/i/12813235',
+          matches: '@[vid="tweet_curation_action"] <2 * + * > [text="推荐"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12813235',
+            'https://i.gkd.li/i/14782897',
+          ],
         },
         {
           preKeys: [0, 1],
           key: 10,
           name: '点击[我不喜欢这个广告]',
-          matches:
-            '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text="我不喜欢这个广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/12798810',
+          matches: '@ViewGroup[clickable=true] > [text="我不喜欢这个广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12798810',
+            'https://i.gkd.li/i/14782902',
+          ],
         },
       ],
     },
