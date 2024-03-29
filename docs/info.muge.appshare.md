@@ -1,6 +1,6 @@
 # AppShare
 
-存在 6 规则组 - [info.muge.appshare](/src/apps/info.muge.appshare.ts)
+存在 7 规则组 - [info.muge.appshare](/src/apps/info.muge.appshare.ts)
 
 ## 开屏广告
 
@@ -55,3 +55,11 @@
 - [示例-0](https://m.gkd.li/57941037/8b782da0-1501-4839-a19b-92209b4d2723)
 
 - [快照-0](https://i.gkd.li/i/14345476)
+
+## 功能类-自动点击[使用浏览器打开]
+
+默认禁用 - 下载文件页面
+
+- [示例-0](https://m.gkd.li/57941037/aae3c59c-8eac-452c-984e-84ee9b97e986)
+
+- [快照-0](https://i.gkd.li/i/14792822)
