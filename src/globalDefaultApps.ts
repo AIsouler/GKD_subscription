@@ -1,8 +1,8 @@
 import apps from './rawApps';
 
-// 全局禁用
+// 全局规则黑名单
+// 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
-  // 在一些非系统应用中禁用
   'com.tencent.mm', // 微信
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝
@@ -92,7 +92,7 @@ export const blackListAppIDs: string[] = [
   'com.mycompany.app.soulbrowser', // soul浏览器
 ];
 
-// 如果应用规则已有全局规则中的某一类的规则, 则在对应全局规则禁用此应用
+// 如果某应用的规则中已有全局规则中的某一类的规则, 则在此应用禁用对应全局规则
 function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
   return apps
     .filter(
@@ -104,29 +104,34 @@ function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
     .map((a) => a.id);
 }
 
-// 设置单独禁用
+// 在应用中单独禁用某个全局规则
+// 开屏广告黑名单
 export const openAdBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'com.taptap', // TapTap
   ...filterAppsByGroup(apps, '开屏广告'),
 ]);
+
+// 更新提示黑名单
 export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'info.muge.appshare', // AppShare
   ...filterAppsByGroup(apps, '更新提示'),
 ]);
+
+// 青少年模式黑名单
 export const yongBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'xxx.pornhub.fuck', // JavDB
   ...filterAppsByGroup(apps, '青少年模式'),
 ]);
 
-// 系统软件全局启用
-export const whiteListAppIDs: string[] = [
-  // 在一些系统软件中启用
-];
+// 全局规则白名单（由于系统应用默认禁用全局规则，所以对系统应用启用白名单模式）
+// 在一些系统软件中启用所有全局规则
+export const whiteListAppIDs: string[] = [];
 
-// 设置系统软件单独启用
+// 在应用中单独启用某个全局规则
+// 开屏广告白名单
 export const openAdWhiteListAppIDs = new Set([
   ...whiteListAppIDs,
   'com.bbk.theme', // i 主题
@@ -137,5 +142,9 @@ export const openAdWhiteListAppIDs = new Set([
   'com.xiaomi.market', // 小米应用商店
   'com.miui.player', // 小米音乐
 ]);
+
+// 更新提示白名单
 export const updateWhiteListAppIDs = new Set([...whiteListAppIDs]);
+
+// 青少年模式白名单
 export const yongWhiteListAppIDs = new Set([...whiteListAppIDs]);
