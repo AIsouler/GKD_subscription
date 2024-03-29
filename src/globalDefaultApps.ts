@@ -64,6 +64,7 @@ export const blackListAppIDs: string[] = [
   'com.assistant.ongoingclear', // 固定通知隐藏
   'org.koitharu.kotatsu', // Kotatsu
   'me.ash.reader', // Read You
+  'com.huanchengfly.tieba.post', // 贴吧Lite
 
   // 系统自带非系统应用
   // 小米
