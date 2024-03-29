@@ -145,5 +145,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 6,
+      name: '功能类-自动点击[使用浏览器打开]',
+      desc: '下载文件页面',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'info.muge.appshare.view.browser.DownloadBrowserActivity',
+          matches: '[text="浏览器打开"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/aae3c59c-8eac-452c-984e-84ee9b97e986',
+          snapshotUrls: 'https://i.gkd.li/i/14792822',
+        },
+      ],
+    },
   ],
 });
