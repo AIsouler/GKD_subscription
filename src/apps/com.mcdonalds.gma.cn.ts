@@ -26,5 +26,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '功能类-关闭[开通免密支付]弹窗',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.mcd.order.activity.OrderDetailActivity',
+          matches: '@[vid="iv_close"] - * >2 [text*="免密支付"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/4b26dc9e-06d9-43a2-a105-6fb711c9aedb',
+          snapshotUrls: 'https://i.gkd.li/i/14798873',
+        },
+      ],
+    },
   ],
 });
