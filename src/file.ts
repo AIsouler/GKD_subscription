@@ -118,7 +118,7 @@ export const writeConfig = async (config: RawSubscription) => {
   // 更新 gkd.version.json5 文件
   await fs.writeFile(
     versionFp,
-    JSON.stringify(
+    JSON5.stringify(
       { id: newConfig.id, version: newConfig.version },
       undefined,
       2,
