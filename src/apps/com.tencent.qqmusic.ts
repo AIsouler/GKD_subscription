@@ -40,10 +40,12 @@ export default defineAppConfig({
     {
       key: 2,
       name: '全屏广告-首页-底部广告弹窗',
-      quickFind: true,
       activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
       rules: 'View[id="js_close_btn"][desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/13115121',
+      snapshotUrls: [
+        'https://i.gkd.li/i/13115121',
+        'https://i.gkd.li/i/14798904',
+      ],
     },
     {
       key: 3,
