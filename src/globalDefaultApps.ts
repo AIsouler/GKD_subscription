@@ -65,6 +65,7 @@ export const blackListAppIDs: string[] = [
   'org.koitharu.kotatsu', // Kotatsu
   'me.ash.reader', // Read You
   'com.huanchengfly.tieba.post', // 贴吧Lite
+  'com.example.c001apk', // c001apk
 
   // 系统自带非系统应用
   // 小米
