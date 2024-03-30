@@ -627,21 +627,25 @@ export const updateReadMeMd = async (
                 '',
               ].join('|'),
             )
-            .join('\n') +
-          '\n\n---\n\n' +
-          '|全局规则|新增|变动|移除|\n|-|-|-|-|\n' +
-          globalDiffs
-            .map((a) =>
-              [
-                '',
-                '-',
-                a.addGlobalGroups.map((g) => '<li>' + g.name).join(''),
-                a.changeGlobalGroups.map((g) => '<li>' + g.name).join(''),
-                a.removeGlobalGroups.map((g) => '<li>' + g.name).join(''),
-                '',
-              ].join('|'),
-            )
             .join('\n'),
+        [
+          globalDiffs.length > 0
+            ? '\n\n---\n\n' +
+              '|全局规则|新增|变动|移除|\n|-|-|-|-|\n' +
+              globalDiffs
+                .map((a) =>
+                  [
+                    '',
+                    '-',
+                    a.addGlobalGroups.map((g) => '<li>' + g.name).join(''),
+                    a.changeGlobalGroups.map((g) => '<li>' + g.name).join(''),
+                    a.removeGlobalGroups.map((g) => '<li>' + g.name).join(''),
+                    '',
+                  ].join('|'),
+                )
+                .join('\n')
+            : '',
+        ],
       ].join('\n\n') + '\n';
 
     await fs.writeFile(process.cwd() + '/CHANGELOG.md', changeLogText);
