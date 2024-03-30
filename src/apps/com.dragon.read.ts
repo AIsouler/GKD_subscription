@@ -42,12 +42,13 @@ export default defineAppConfig({
         {
           key: 4,
           matches:
-            'HorizontalAndVerticalScrollView > FrameLayout[childCount=13] >(7,8) @FrameLayout[index=2][clickable=true] > ImageView',
+            'HorizontalAndVerticalScrollView > FrameLayout[childCount>=13] >(7,8,9) @FrameLayout[index=2][clickable=true] > ImageView',
           exampleUrls:
             'https://m.gkd.li/57941037/0129e5a7-ead1-4b92-a008-708632e5a927',
           snapshotUrls: [
             'https://i.gkd.li/i/14548657',
             'https://i.gkd.li/i/14622531',
+            'https://i.gkd.li/i/14810480',
           ],
         },
       ],
