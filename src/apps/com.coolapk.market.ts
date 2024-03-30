@@ -105,7 +105,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       quickFind: true,
       snapshotUrls: 'https://i.gkd.li/i/12503762',
-      rules: '[text=`立即更新`] - [text=`取消`]',
+      rules: '[text="立即更新"] - [text="取消"]',
     },
     {
       key: 3,
