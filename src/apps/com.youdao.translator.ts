@@ -13,7 +13,7 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '@ImageView[id=`com.youdao.translator:id/close_iv`] + [id="com.youdao.translator:id/native_ad_flag_tv"]',
+            '@ImageView[id="com.youdao.translator:id/close_iv"] + [id="com.youdao.translator:id/native_ad_flag_tv"]',
           snapshotUrls: 'https://i.gkd.li/i/13259910',
         },
       ],

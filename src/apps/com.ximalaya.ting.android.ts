@@ -232,7 +232,7 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          matches: '[id=`com.ximalaya.ting.android:id/cancel_btn`]',
+          matches: '[id="com.ximalaya.ting.android:id/cancel_btn"]',
           exampleUrls:
             'https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df',
           snapshotUrls: 'https://i.gkd.li/i/13389145',

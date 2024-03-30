@@ -15,7 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '[id=`com.google.android.apps.photos:id/negative_button`][text=`以后再说`]',
+            '[id="com.google.android.apps.photos:id/negative_button"][text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13218940',
         },
       ],

@@ -12,7 +12,7 @@ export default defineAppConfig({
         {
           activityIds: 'com.didi.sdk.app.MainActivity',
           matches:
-            'ImageView[id=`com.sdu.didi.psnger:id/second_entrance_img`] + @ImageView[id=`com.sdu.didi.psnger:id/left_close_img`]',
+            'ImageView[id="com.sdu.didi.psnger:id/second_entrance_img"] + @ImageView[id="com.sdu.didi.psnger:id/left_close_img"]',
           snapshotUrls: 'https://i.gkd.li/i/13760846',
         },
       ],

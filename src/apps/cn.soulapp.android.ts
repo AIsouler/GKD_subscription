@@ -13,7 +13,7 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          action: 'clickCenter', // 在极少数情况下, 即使节点是 clickable 的, APP 也不会响应节点点击事件, 此时需要手动设置 `clickCenter`
+          action: 'clickCenter', // 在极少数情况下, 即使节点是 clickable 的, APP 也不会响应节点点击事件, 此时需要手动设置 clickCenter
           matches: '[id="cn.soulapp.android:id/c_ad_skip_view_btn"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12833280',
@@ -39,7 +39,7 @@ export default defineAppConfig({
       key: 2,
       name: '局部广告-广场页卡片广告',
       quickFind: true,
-      activityIds: ['cn.soulapp.android.component.startup.main.MainActivity'],
+      activityIds: 'cn.soulapp.android.component.startup.main.MainActivity',
       rules: [
         {
           matches:

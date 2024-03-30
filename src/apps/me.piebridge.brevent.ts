@@ -15,8 +15,8 @@ export default defineAppConfig({
       rules: [
         {
           matches: [
-            '[id="android:id/message"][text^=`黑阈服务权限不足`]',
-            '[text=`取消`][id^=`android:id/button`]',
+            '[id="android:id/message"][text^="黑阈服务权限不足"]',
+            '[text="取消"][id^="android:id/button"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13218439',
         },
