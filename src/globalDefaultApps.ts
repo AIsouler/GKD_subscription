@@ -136,7 +136,6 @@ export const whiteListAppIDs: string[] = [];
 export const openAdWhiteListAppIDs = new Set([
   ...whiteListAppIDs,
   'com.bbk.theme', // i 主题
-  'com.sec.android.app.samsungapps', // 三星应用商店
   'com.bbk.appstore', // vivo应用商店
   'com.miui.systemAdSolution', // 小米智能服务
   'com.huawei.appmarket', // 华为应用市场
