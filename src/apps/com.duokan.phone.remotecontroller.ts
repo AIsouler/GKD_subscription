@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds:
         'com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2',
       rules:
-        'ImageView[id=`com.duokan.phone.remotecontroller:id/image_close_banner`]',
+        'ImageView[id="com.duokan.phone.remotecontroller:id/image_close_banner"]',
     },
     {
       key: 4,

@@ -12,7 +12,7 @@ export default defineAppConfig({
       rules: [
         {
           matches:
-            '@[id=`com.smile.gifmaker:id/positive`] + [id=`com.smile.gifmaker:id/set_teenage_mode`]',
+            '@[id="com.smile.gifmaker:id/positive"] + [id="com.smile.gifmaker:id/set_teenage_mode"]',
         },
         {
           matches:
