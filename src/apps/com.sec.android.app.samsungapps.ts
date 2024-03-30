@@ -5,6 +5,21 @@ export default defineAppConfig({
   name: '应用商店',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14810528',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '功能类-[您是否年满 18 岁？]弹窗',
       desc: '点击[是]',
