@@ -40,5 +40,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '功能类-加速成功后自动点击返回',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.wifitutu.ui.tools.SpeedUpActivity',
+          matches: '[vid="success_desc"] + [vid="back_layout"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/90a4d16d-b39b-4068-882b-d22acca2b632',
+          snapshotUrls: 'https://i.gkd.li/i/14811531',
+        },
+      ],
+    },
   ],
 });
