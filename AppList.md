@@ -117,7 +117,7 @@
 | UPUPOO动态壁纸         | [com.upupoo.apu.mobile](/docs/com.upupoo.apu.mobile.md)                                                                                                           | 2      |
 | VIVO 电子书            | [com.chaozh.iReader](/docs/com.chaozh.iReader.md)                                                                                                                 | 2      |
 | WiFi万能钥匙           | [com.wifitutu](/docs/com.wifitutu.md)                                                                                                                             | 1      |
-| WiFi万能钥匙           | [com.snda.wifilocating](/docs/com.snda.wifilocating.md)                                                                                                           | 2      |
+| WiFi万能钥匙           | [com.snda.wifilocating](/docs/com.snda.wifilocating.md)                                                                                                           | 3      |
 | WiFi智能钥匙           | [com.bjsk.intelligent](/docs/com.bjsk.intelligent.md)                                                                                                             | 1      |
 | X(推特)                | [com.twitter.android](/docs/com.twitter.android.md)                                                                                                               | 7      |
 | 爱企查                 | [com.baidu.xin.aiqicha](/docs/com.baidu.xin.aiqicha.md)                                                                                                           | 2      |
@@ -380,7 +380,7 @@
 | 默往                   | [com.mostone.life](/docs/com.mostone.life.md)                                                                                                                     | 1      |
 | 魔音MORIN              | [com.feiyu.morin](/docs/com.feiyu.morin.md)                                                                                                                       | 2      |
 | 暮瑟                   | [com.maxhom.weibu](/docs/com.maxhom.weibu.md)                                                                                                                     | 3      |
-| 南方航空               | [com.csair.mbp](/docs/com.csair.mbp.md)                                                                                                                           | 1      |
+| 南方航空               | [com.csair.mbp](/docs/com.csair.mbp.md)                                                                                                                           | 2      |
 | 南网在线               | [com.csg.palmhall](/docs/com.csg.palmhall.md)                                                                                                                     | 2      |
 | 柠檬解析               | [com.xhgd.jx](/docs/com.xhgd.jx.md)                                                                                                                               | 1      |
 | 柠檬听书               | [com.rocoplayer.app.nm](/docs/com.rocoplayer.app.nm.md)                                                                                                           | 2      |
@@ -640,7 +640,7 @@
 | 应用安装器             | [com.oplus.appdetail](/docs/com.oplus.appdetail.md)                                                                                                               | 1      |
 | 应用包管理组件         | [com.miui.packageinstaller](/docs/com.miui.packageinstaller.md)                                                                                                   | 5      |
 | 应用汇                 | [com.yingyonghui.market](/docs/com.yingyonghui.market.md)                                                                                                         | 1      |
-| 应用商店               | [com.sec.android.app.samsungapps](/docs/com.sec.android.app.samsungapps.md)                                                                                       | 1      |
+| 应用商店               | [com.sec.android.app.samsungapps](/docs/com.sec.android.app.samsungapps.md)                                                                                       | 2      |
 | 一起来涂色             | [com.xingluo.allcolor](/docs/com.xingluo.allcolor.md)                                                                                                             | 1      |
 | 一淘                   | [com.taobao.etao](/docs/com.taobao.etao.md)                                                                                                                       | 3      |
 | 亿通行                 | [enfc.metro](/docs/enfc.metro.md)                                                                                                                                 | 1      |
