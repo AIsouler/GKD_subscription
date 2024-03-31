@@ -66,8 +66,9 @@ export default defineAppConfig({
         {
           key: 0,
           name: '升级软件后的"开启推送"弹窗',
+          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
           matches: '[vid="dialog_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/12714980',
+          snapshotUrls: 'https://i.gkd.li/i/14814456',
         },
         {
           key: 1,
