@@ -24,11 +24,20 @@ export default defineAppConfig({
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
-          matches: [
-            '[id=null][text^="立即" || text^="领取" || text^="了解"][text.length=4]',
-            '[id="android:id/content"] >2 FrameLayout[childCount=3||childCount=2||childCount=4] > FrameLayout[childCount=5||childCount=6||childCount=8] > FrameLayout[childCount=1] > ImageView[text=null][visibleToUser=true]',
+          key: 0,
+          matches:
+            '[id="android:id/content"] >n FrameLayout[childCount>5] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13405131',
+            'https://i.gkd.li/i/14814345',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/13405131',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          matches:
+            'ImageView < @ViewGroup[clickable=true] <<n ViewGroup +n ViewGroup [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14814374',
         },
       ],
     },
@@ -39,20 +48,53 @@ export default defineAppConfig({
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
-          key: 0,
-          matches: ['[id="com.nowcasting.activity:id/jad_feed_close"]'],
-          snapshotUrls: 'https://i.gkd.li/i/13690826',
-        },
-        {
           key: 1,
-          matches: ['[id="com.nowcasting.activity:id/ll_close"]'],
+          matches: '[id="com.nowcasting.activity:id/ll_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13690822',
         },
         {
           preKeys: 1,
           key: 2,
-          matches: ['[id="com.nowcasting.activity:id/ll_uninterested"]'],
+          matches: '[id="com.nowcasting.activity:id/ll_uninterested"]',
           snapshotUrls: 'https://i.gkd.li/i/13690830',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      quickFind: true,
+      activityIds: 'com.nowcasting.activity.WeatherActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[id="com.nowcasting.activity:id/jad_feed_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13690826',
+        },
+        {
+          key: 1,
+          matches:
+            '@FrameLayout[visibleToUser=true] +2 * > [text="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14814348',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '功能类-点击收起顶部工具栏',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.nowcasting.activity.WeatherActivity',
+          matches:
+            'ViewGroup[childCount=2][visibleToUser=true] > [vid="fl_arrow"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/5bdf4f45-d66d-441e-a2ce-f32d5fc40796',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14814347', // 收起前
+            'https://i.gkd.li/i/14814412', // 收起后
+          ],
         },
       ],
     },
