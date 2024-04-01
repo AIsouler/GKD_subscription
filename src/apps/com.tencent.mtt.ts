@@ -11,10 +11,17 @@ export default defineAppConfig({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches: '@LinearLayout[clickable=true] > TextView[text="跳过"]',
           snapshotUrls: 'https://i.gkd.li/i/12472630',
+        },
+        {
+          key: 1,
+          matches: '@View[clickable=true] +2 * >3 [text="向上滑动查看"]',
+          snapshotUrls: 'https://i.gkd.li/i/14819586',
         },
       ],
     },
