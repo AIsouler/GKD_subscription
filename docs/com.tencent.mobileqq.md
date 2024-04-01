@@ -1,6 +1,6 @@
 # QQ
 
-存在 29 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
+存在 28 规则组 - [com.tencent.mobileqq](/src/apps/com.tencent.mobileqq.ts)
 
 ## 开屏广告
 
@@ -34,19 +34,21 @@
 - [快照-2](https://i.gkd.li/i/14138572)
 - [快照-3](https://i.gkd.li/i/13761147)
 - [快照-4](https://i.gkd.li/i/13849730)
-- [快照-5](https://i.gkd.li/i/12749584)
-- [快照-6](https://i.gkd.li/i/13627967)
-- [快照-7](https://i.gkd.li/i/12840889)
-- [快照-8](https://i.gkd.li/i/13831867)
-- [快照-9](https://i.gkd.li/i/14138571)
+- [快照-5](https://i.gkd.li/i/12840889)
+- [快照-6](https://i.gkd.li/i/13831867)
+- [快照-7](https://i.gkd.li/i/14138571)
 
-## 全屏广告-频道页面广告
+## 全屏广告-弹窗广告
 
 默认禁用
 
+- [示例-0](https://m.gkd.li/57941037/11e8f456-4c88-431a-ad58-f626bee61df9)
+
 - [快照-0](https://i.gkd.li/i/13206663)
 - [快照-1](https://i.gkd.li/i/12642081)
-- [快照-2](https://i.gkd.li/i/12708844)
+- [快照-2](https://i.gkd.li/i/14822290)
+- [快照-3](https://i.gkd.li/i/12914978)
+- [快照-4](https://i.gkd.li/i/12914886)
 
 ## 局部广告-顶部SVIP广告
 
@@ -63,9 +65,9 @@
 默认禁用 - 好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭
 
 - [快照-0](https://i.gkd.li/i/12721427)
-- [快照-1](https://i.gkd.li/i/12894359)
+- [快照-1](https://i.gkd.li/i/14822579)
 - [快照-2](https://i.gkd.li/i/12721433)
-- [快照-3](https://i.gkd.li/i/12894375)
+- [快照-3](https://i.gkd.li/i/14822576)
 
 ## 功能类-扫一扫登录确认
 
@@ -84,11 +86,12 @@
 
 - [快照-0](https://i.gkd.li/i/12855441)
 
-## 局部广告-我的等级页面浮窗广告
+## 局部广告-浮窗广告
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/i/12914734)
+- [快照-1](https://i.gkd.li/i/12708844)
 
 ## 功能类-自动勾选原图
 
@@ -118,13 +121,6 @@
 
 - [快照-0](https://i.gkd.li/i/12877215)
 - [快照-1](https://i.gkd.li/i/12919195)
-
-## 全屏广告-黄钻页面弹窗广告
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/i/12914978)
-- [快照-1](https://i.gkd.li/i/12914886)
 
 ## 分段广告-好友动态页面"为你推荐"
 
@@ -256,3 +252,5 @@
 - [示例-0](https://m.gkd.li/57941037/940f4965-0058-4101-ab62-20d131e9c1d1)
 
 - [快照-0](https://i.gkd.li/i/14732983)
+- [快照-1](https://i.gkd.li/i/12749584)
+- [快照-2](https://i.gkd.li/i/13627967)
