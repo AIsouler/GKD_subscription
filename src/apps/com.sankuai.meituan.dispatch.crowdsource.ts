@@ -23,5 +23,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-[保级成功]弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.meituan.banma.usercenter.activity.UserGradeUpgradeKNBActivity',
+          matches: '[vid="btn_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/11dd0efd-5872-47de-a307-c3dd0c0009a9',
+          snapshotUrls: 'https://i.gkd.li/i/14822280',
+        },
+      ],
+    },
   ],
 });
