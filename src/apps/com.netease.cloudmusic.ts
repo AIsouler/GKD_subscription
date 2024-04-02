@@ -368,5 +368,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 14,
+      name: '功能类-扫码后自动点击[授权登录]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.netease.cloudmusic.module.login.LoginPermissionActivity',
+          matches: '[text="授权登录"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f2aa603b-d1d1-4f92-86ae-e311e79a011d',
+          snapshotUrls: 'https://i.gkd.li/i/14830218',
+        },
+      ],
+    },
   ],
 });
