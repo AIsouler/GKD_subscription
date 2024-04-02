@@ -56,7 +56,7 @@
   "volta": {
     "node": "20.12.0"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.6",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
