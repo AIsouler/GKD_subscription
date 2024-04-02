@@ -66,6 +66,8 @@ export const blackListAppIDs: string[] = [
   'me.ash.reader', // Read You
   'com.huanchengfly.tieba.post', // 贴吧Lite
   'com.example.c001apk', // c001apk
+  'dev.anilbeesetti.nextplayer', // Next Player
+  'org.kde.kdeconnect_tp', // KDE Connect
 
   // 系统自带非系统应用
   // 小米
