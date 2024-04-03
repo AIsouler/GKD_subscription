@@ -1,6 +1,6 @@
 # 网易云音乐
 
-存在 13 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
+存在 14 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
 
 ## 分段广告-卡片广告
 
@@ -120,3 +120,11 @@
 
 - [快照-0](https://i.gkd.li/i/14549836)
 - [快照-1](https://i.gkd.li/i/14549856)
+
+## 功能类-扫码后自动点击[授权登录]
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/f2aa603b-d1d1-4f92-86ae-e311e79a011d)
+
+- [快照-0](https://i.gkd.li/i/14830218)

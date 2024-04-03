@@ -80,7 +80,7 @@
 | 4399游戏盒             | [com.m4399.gamecenter](/docs/com.m4399.gamecenter.md)                                                                                                             | 1      |
 | 777影视                | [com.changyou.app.qi](/docs/com.changyou.app.qi.md)                                                                                                               | 1      |
 | 7天澳門統考            | [com.daysko.safp](/docs/com.daysko.safp.md)                                                                                                                       | 3      |
-| 99手游加速器           | [com.excean.na](/docs/com.excean.na.md)                                                                                                                           | 2      |
+| 99手游加速器           | [com.excean.na](/docs/com.excean.na.md)                                                                                                                           | 3      |
 | AC匿名版               | [com.dfsly.bbs](/docs/com.dfsly.bbs.md)                                                                                                                           | 2      |
 | AH视频                 | [com.chunqiu.ah](/docs/com.chunqiu.ah.md)                                                                                                                         | 7      |
 | Android 系统文件选择器 | [com.google.android.documentsui](/docs/com.google.android.documentsui.md)                                                                                         | 1      |
@@ -527,7 +527,7 @@
 | 网易有道词典           | [com.youdao.dict](/docs/com.youdao.dict.md)                                                                                                                       | 9      |
 | 网易邮箱               | [com.netease.mobimail](/docs/com.netease.mobimail.md)                                                                                                             | 2      |
 | 网易邮箱大师           | [com.netease.mail](/docs/com.netease.mail.md)                                                                                                                     | 4      |
-| 网易云音乐             | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md)                                                                                                         | 13     |
+| 网易云音乐             | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md)                                                                                                         | 14     |
 | 完美世界电竞           | [com.pwrd.steam.esports](/docs/com.pwrd.steam.esports.md)                                                                                                         | 1      |
 | 完美校园               | [com.newcapec.mobile.ncp](/docs/com.newcapec.mobile.ncp.md)                                                                                                       | 2      |
 | 万能遥控               | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md)                                                                                   | 2      |
