@@ -7,22 +7,26 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      forcedTime: 10000,
       activityIds: [
         'com.excelliance.kxqp.splash.SplashActivity',
         'com.excelliance.kxqp.gs.main.MainActivity',
       ],
       rules: [
         {
-          name: '类型1',
+          key: 0,
           matches:
             'FrameLayout[childCount=2] > LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView',
           snapshotUrls: 'https://i.gkd.li/i/13302890',
         },
         {
-          name: '类型2',
+          key: 1,
           matches:
-            'ImageView - LinearLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
-          snapshotUrls: 'https://i.gkd.li/i/13447122',
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13447122',
+            'https://i.gkd.li/i/14862348',
+          ],
         },
       ],
     },
