@@ -47,5 +47,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-热门应用推荐弹窗',
+      desc: '点击[直接进入]',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.huawei.appgallery.upgraderecommendation.ui.UpgradeRecommendActivity',
+          matches: '[text="直接进入"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/89e6f2eb-b543-4dd8-88ce-6e888d0d8c8a',
+          snapshotUrls: 'https://i.gkd.li/i/14861810',
+        },
+      ],
+    },
   ],
 });
