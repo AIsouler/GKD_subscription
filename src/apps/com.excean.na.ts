@@ -35,23 +35,25 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      quickFind: true,
       name: '全屏广告-首页弹窗广告',
       desc: '点击X',
       rules: [
         {
-          name: '版本:v1.5.3',
+          key: 0,
           activityIds: 'com.excelliance.kxqp.ui.MainActivity',
           matches:
-            '@ImageView[visibleToUser=true] <<5 [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/i/13930990',
+            '[id="android:id/content"] >3 FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13930990',
+            'https://i.gkd.li/i/14001254',
+          ],
         },
         {
-          name: '版本:v1.5.5',
-          activityIds: 'com.excelliance.kxqp.ui.MainActivity',
-          matches:
-            '@ImageView[visibleToUser=true] < FrameLayout +2 FrameLayout[childCount=2] TextView[text="立即下载"]',
-          snapshotUrls: 'https://i.gkd.li/i/14001254',
+          key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: 'Image < @View +5 * > [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/14855686',
         },
       ],
     },
