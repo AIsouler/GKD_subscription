@@ -21,12 +21,16 @@ export default defineAppConfig({
         {
           key: 0,
           name: '腾讯广告',
-          activityIds: 'com.lolaage.tbulu.tools.ui.activity.WelcomeActivity',
+          activityIds: [
+            'com.lolaage.tbulu.tools.ui.activity.WelcomeActivity',
+            'com.lolaage.tbulu.tools.ui.activity.main.MainActivity',
+          ],
           matches:
-            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
           snapshotUrls: [
             'https://i.gkd.li/i/13627861',
             'https://i.gkd.li/i/13650732',
+            'https://i.gkd.li/i/14866147',
           ],
         },
       ],
