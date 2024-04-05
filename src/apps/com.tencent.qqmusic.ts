@@ -108,5 +108,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 8,
+      name: '评价提示-好评弹窗',
+      desc: '点击关闭',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@[vid="close_btn"] - * > [text*="好评"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/65146157-9200-4a1a-b1cc-4a3ca70de351',
+          snapshotUrls: 'https://i.gkd.li/i/14881903',
+        },
+      ],
+    },
   ],
 });
