@@ -1,6 +1,6 @@
 # 中国移动云盘
 
-存在 4 规则组 - [com.chinamobile.mcloud](/src/apps/com.chinamobile.mcloud.ts)
+存在 5 规则组 - [com.chinamobile.mcloud](/src/apps/com.chinamobile.mcloud.ts)
 
 ## 更新提示
 
@@ -29,3 +29,9 @@
 默认禁用 - 点击关闭
 
 - [快照-0](https://i.gkd.li/i/13627830)
+
+## 通知提示
+
+默认禁用 - 点击关闭
+
+- [快照-0](https://i.gkd.li/i/14882447)

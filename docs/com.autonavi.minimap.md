@@ -1,6 +1,6 @@
 # 高德地图
 
-存在 7 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
+存在 8 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
 
 ## 更新提示
 
@@ -53,3 +53,11 @@
 
 - [快照-0](https://i.gkd.li/i/14800704)
 - [快照-1](https://i.gkd.li/i/14809993)
+
+## 功能类-一键点亮角落
+
+默认禁用 - 点击[一键点亮]
+
+- [示例-0](https://m.gkd.li/57941037/1fd33208-e81d-4da6-a23c-4d562a8e0ae0)
+
+- [快照-0](https://i.gkd.li/i/14881505)
