@@ -1,7 +1,7 @@
 {
   "name": "@aisouler/gkd_subscription",
   "type": "module",
-  "version": "1.51.0",
+  "version": "1.52.0",
   "main": "./dist/AIsouler_gkd.json5",
   "unpkg": "./dist/AIsouler_gkd.json5",
   "jsdelivr": "./dist/AIsouler_gkd.json5",
