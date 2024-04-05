@@ -113,5 +113,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 15,
+      name: '功能类-一键点亮角落',
+      desc: '点击[一键点亮]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '[text="一键点亮"] <2 @[clickable=true] <<n [vid="mapInteractiveRelativeLayout"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1fd33208-e81d-4da6-a23c-4d562a8e0ae0',
+          snapshotUrls: 'https://i.gkd.li/i/14881505',
+        },
+      ],
+    },
   ],
 });
