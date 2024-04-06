@@ -7,12 +7,12 @@ export default defineAppConfig({
     {
       key: 1,
       name: '局部广告-卡片式广告',
+      quickFind: true,
       rules: [
         {
           key: 0,
           name: '首页卡片广告',
           activityIds: 'com.gamersky.main.activity.LibMainActivity',
-          quickFind: true,
           matches: '[text="广告"] < * + [id="com.gamersky:id/delete"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13451220',
@@ -25,17 +25,19 @@ export default defineAppConfig({
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
           matches:
-            'WebView >2 View[childCount=2] > View[index=1] > View[clickable=true][visibleToUser=true]',
+            'WebView >2 View[childCount=2] > View[index=1] > @View[clickable=true][visibleToUser=true][childCount=0] <<n [vid="contentWebView"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13451258',
             'https://i.gkd.li/i/14622935',
+            'https://i.gkd.li/i/14892583', // 避免误触
           ],
         },
         {
           key: 2,
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
-          matches: 'View[childCount=2] > [text="广告"] + View[clickable=true]',
+          matches:
+            'View[childCount=2] > [text="广告"] + @View[clickable=true] <<n [id="com.gamersky:id/contentWebView"]',
           snapshotUrls: 'https://i.gkd.li/i/13635579',
         },
         {
@@ -43,7 +45,6 @@ export default defineAppConfig({
           name: '评论区卡片广告',
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
-          quickFind: true,
           matches:
             '@[id="com.gamersky:id/close"][clickable=true][visibleToUser=true] - * > [id="com.gamersky:id/badge"]',
           snapshotUrls: 'https://i.gkd.li/i/13759484',
