@@ -13,10 +13,18 @@
 
 **仅启用 `开屏广告` 一类规则，其它所有规则均需手动打开，规则类别里可以批量开启某一类规则**
 
-订阅链接：
+**订阅链接：**
+
+- gitmirror源
 
 ```txt
 https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
+```
+
+- jsDelivr源
+
+```txt
+https://cdn.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.json5
 ```
 
 当前版本: v--VERSION--
