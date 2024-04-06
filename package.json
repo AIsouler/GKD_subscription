@@ -26,7 +26,7 @@
     "@commitlint/types": "^19.0.3",
     "@gkd-kit/selector": "0.0.25",
     "@types/lodash": "^4.17.0",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.5",
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
     "dayjs": "^1.11.10",
@@ -40,8 +40,8 @@
     "picocolors": "^1.0.0",
     "pinyin-pro": "3.19.6",
     "prettier": "^3.2.5",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
   },
   "author": "AIsouler",
   "license": "MIT",

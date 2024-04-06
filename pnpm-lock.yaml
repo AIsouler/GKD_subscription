@@ -26,7 +26,7 @@ devDependencies:
     specifier: ^4.17.0
     version: 4.17.0
   '@types/node':
-    specifier: ^20.11.30
+    specifier: ^20.12.5
     version: 20.12.5
   '@typescript-eslint/eslint-plugin':
     specifier: 7.5.0
@@ -68,10 +68,10 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   tsx:
-    specifier: ^4.7.1
+    specifier: ^4.7.2
     version: 4.7.2
   typescript:
-    specifier: ^5.4.3
+    specifier: ^5.4.4
     version: 5.4.4
 
 packages:
