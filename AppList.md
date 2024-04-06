@@ -1,6 +1,6 @@
 # 适配 APP 列表
 
-## 应用规则(共 720 组)
+## 应用规则(共 722 组)
 
 | 名称                   | ID                                                                                                                                                                | 规则组 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -143,7 +143,7 @@
 | 百度输入法             | [com.baidu.input](/docs/com.baidu.input.md)                                                                                                                       | 3      |
 | 百度贴吧               | [com.baidu.tieba](/docs/com.baidu.tieba.md)                                                                                                                       | 12     |
 | 百度网盘               | [com.baidu.netdisk](/docs/com.baidu.netdisk.md)                                                                                                                   | 6      |
-| 百度网盘-三星版本      | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md)                                                                                                   | 5      |
+| 百度网盘-三星版本      | [com.baidu.netdisk.samsung](/docs/com.baidu.netdisk.samsung.md)                                                                                                   | 6      |
 | 百分网游戏盒子         | [com.byfen.market](/docs/com.byfen.market.md)                                                                                                                     | 3      |
 | 班级小管家             | [com.banjixiaoguanjia.app](/docs/com.banjixiaoguanjia.app.md)                                                                                                     | 1      |
 | 宝宝生活记录           | [com.bluemobile.flutterbabylife](/docs/com.bluemobile.flutterbabylife.md)                                                                                         | 1      |
@@ -393,7 +393,7 @@
 | 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 18     |
 | 皮皮搞笑               | [cn.xiaochuankeji.zuiyouLite](/docs/cn.xiaochuankeji.zuiyouLite.md)                                                                                               | 3      |
 | 皮皮喵                 | [com.gentle.ppcat](/docs/com.gentle.ppcat.md)                                                                                                                     | 1      |
-| 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 8      |
+| 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 9      |
 | 浦发银行               | [cn.com.spdb.mobilebank.per](/docs/cn.com.spdb.mobilebank.per.md)                                                                                                 | 1      |
 | 普益基金               | [com.pywm.fund](/docs/com.pywm.fund.md)                                                                                                                           | 1      |
 | 钱包                   | [com.vivo.wallet](/docs/com.vivo.wallet.md)                                                                                                                       | 1      |
@@ -427,6 +427,7 @@
 | 人民日报               | [com.facetech.konking](/docs/com.facetech.konking.md)                                                                                                             | 1      |
 | 人人视频               | [com.example.pptv](/docs/com.example.pptv.md)                                                                                                                     | 2      |
 | 人卫                   | [com.pmph.irenwei](/docs/com.pmph.irenwei.md)                                                                                                                     | 1      |
+| 荣耀快服务             | [com.hihonor.servicecenter](/docs/com.hihonor.servicecenter.md)                                                                                                   | 1      |
 | 荣耀亲选               | [cn.honor.qinxuan](/docs/cn.honor.qinxuan.md)                                                                                                                     | 1      |
 | 荣耀商城               | [com.hihonor.vmall](/docs/com.hihonor.vmall.md)                                                                                                                   | 2      |
 | 荣耀应用市场           | [com.hihonor.appmarket](/docs/com.hihonor.appmarket.md)                                                                                                           | 3      |
@@ -531,6 +532,7 @@
 | 网易云音乐             | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md)                                                                                                         | 14     |
 | 完美世界电竞           | [com.pwrd.steam.esports](/docs/com.pwrd.steam.esports.md)                                                                                                         | 1      |
 | 完美校园               | [com.newcapec.mobile.ncp](/docs/com.newcapec.mobile.ncp.md)                                                                                                       | 2      |
+| 万能小组件 Top Widgets | [com.growing.topwidgets](/docs/com.growing.topwidgets.md)                                                                                                         | 1      |
 | 万能遥控               | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md)                                                                                   | 2      |
 | 万年历                 | [com.youloft.calendar](/docs/com.youloft.calendar.md)                                                                                                             | 1      |
 | 微博                   | [com.sina.weibo](/docs/com.sina.weibo.md)                                                                                                                         | 17     |
@@ -684,7 +686,7 @@
 | 正气                   | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md)                                                                                               | 2      |
 | 直播吧                 | [android.zhibo8](/docs/android.zhibo8.md)                                                                                                                         | 3      |
 | 知到                   | [com.able.wisdomtree](/docs/com.able.wisdomtree.md)                                                                                                               | 2      |
-| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 15     |
+| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 16     |
 | 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 8      |
 | 智慧生活               | [com.huawei.smarthome](/docs/com.huawei.smarthome.md)                                                                                                             | 1      |
 | 智慧树                 | [com.hyww.wisdomtree](/docs/com.hyww.wisdomtree.md)                                                                                                               | 2      |
