@@ -27,8 +27,8 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches:
-            '@UIView[clickable=true] <n * > FlattenUIText[text="看视频免费听"]',
+          action: 'back', // 使用点击方式有概率无效
+          matches: 'FlattenUIText[text="看视频免费听"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
             'https://i.gkd.li/i/13660652',
@@ -38,8 +38,8 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          matches:
-            '@UIView[clickable=true] <n * > FlattenUIText[text="当前已享"]',
+          action: 'back', // 使用点击方式有概率无效
+          matches: 'FlattenUIText[text="当前已享"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14767233',
             'https://i.gkd.li/i/13613296', // 避免在此页面误触
