@@ -309,5 +309,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 20,
+      name: '功能类-[0元下单权益]弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches:
+            '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3575bbbc-717b-466d-b863-443a15629ef6',
+          snapshotUrls: 'https://i.gkd.li/i/14893122',
+        },
+      ],
+    },
   ],
 });
