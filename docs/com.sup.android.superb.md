@@ -1,6 +1,10 @@
 # 皮皮虾
 
-存在 7 规则组 - [com.sup.android.superb](/src/apps/com.sup.android.superb.ts)
+存在 9 规则组 - [com.sup.android.superb](/src/apps/com.sup.android.superb.ts)
+
+## 开屏广告
+
+- [快照-0](https://i.gkd.li/i/14667409)
 
 ## 青少年模式
 
@@ -47,3 +51,10 @@
 - [示例-0](https://m.gkd.li/57941037/af1e7624-540b-4646-b812-3b748966e903)
 
 - [快照-0](https://i.gkd.li/i/14471869)
+
+## 分段广告-信息流广告
+
+默认禁用 - 点击展开-点击[不感兴趣]
+
+- [快照-0](https://i.gkd.li/i/14886478)
+- [快照-1](https://i.gkd.li/i/14886477)
