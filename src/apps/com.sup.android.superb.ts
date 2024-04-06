@@ -108,5 +108,26 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 11,
+      name: '分段广告-信息流广告',
+      desc: '点击展开-点击[不感兴趣]',
+      activityIds: 'com.sup.android.base.MainActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            'RecyclerView > FrameLayout[id!=null] >6 ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14886478',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          quickFind: true,
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/14886477',
+        },
+      ],
+    },
   ],
 });
