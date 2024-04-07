@@ -15,6 +15,12 @@
 
 **订阅链接：**
 
+- npmmirror源（推荐）
+
+```txt
+https://registry.npmmirror.com/@aisouler/gkd_subscription/latest/files/dist/AIsouler_gkd.json5
+```
+
 - gitmirror源
 
 ```txt
