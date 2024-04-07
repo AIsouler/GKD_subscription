@@ -21,6 +21,7 @@ export default defineAppConfig({
         {
           key: 0,
           name: '腾讯广告',
+          forcedTime: 10000,
           activityIds: [
             'com.lolaage.tbulu.tools.ui.activity.WelcomeActivity',
             'com.lolaage.tbulu.tools.ui.activity.main.MainActivity',
