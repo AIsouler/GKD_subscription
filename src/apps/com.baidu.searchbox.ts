@@ -37,10 +37,14 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          matches: '[vid="obfuscated"] + [desc="关闭"]',
+          matches:
+            '[id="android:id/content"] > RelativeLayout > [vid="obfuscated"] + [desc="关闭"]',
           exampleUrls:
             'https://m.gkd.li/57941037/f2712b2e-7327-4068-bcff-92646b3400bd',
-          snapshotUrls: 'https://i.gkd.li/i/14730100',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14730100',
+            'https://i.gkd.li/i/14896700', // 避免误触
+          ],
         },
       ],
     },
