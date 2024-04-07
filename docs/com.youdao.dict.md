@@ -55,12 +55,14 @@
 
 - [示例-0](https://m.gkd.li/57941037/e365b983-15c7-4ac7-acd7-9d7be4c45160)
 - [示例-1](https://m.gkd.li/57941037/4045988d-93bb-4aad-80dd-f14da296a214)
+- [示例-2](https://m.gkd.li/57941037/0c033574-4bae-4bcc-bcf9-901ce8b5061b)
 
 - [快照-0](https://i.gkd.li/i/14468564)
 - [快照-1](https://i.gkd.li/i/14468628)
 - [快照-2](https://i.gkd.li/i/14567234)
 - [快照-3](https://i.gkd.li/i/14009705)
 - [快照-4](https://i.gkd.li/i/14559287)
+- [快照-5](https://i.gkd.li/i/14895765)
 
 ## 功能类-关闭单词页面[去复习]提示
 
