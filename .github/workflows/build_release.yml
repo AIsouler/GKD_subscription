@@ -69,3 +69,13 @@ jobs:
           asset_path: ./dist/AIsouler_gkd.json5
           asset_name: AIsouler_gkd_${{ steps.version.outputs.version }}.json5
           asset_content_type: application/json
+
+      - name: Publish package
+        if: ${{ steps.commit.outcome == 'success' }}
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          pnpm publish
+
+      - name: sync npmmirror
+        if: ${{ steps.commit.outcome == 'success' }}
+        run: curl -X PUT 'https://registry-direct.npmmirror.com/AIsouler/GKD_subscription/sync'
