@@ -174,6 +174,16 @@ export default defineAppConfig({
             'https://m.gkd.li/57941037/4045988d-93bb-4aad-80dd-f14da296a214',
           snapshotUrls: 'https://i.gkd.li/i/14559287',
         },
+        {
+          key: 3,
+          name: '单词页面下方学习技巧',
+          quickFind: true,
+          activityIds: 'com.youdao.dict.activity.MainActivity',
+          matches: '[vid="course_one_course_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/0c033574-4bae-4bcc-bcf9-901ce8b5061b',
+          snapshotUrls: 'https://i.gkd.li/i/14895765',
+        },
       ],
     },
     {
