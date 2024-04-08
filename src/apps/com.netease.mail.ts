@@ -15,8 +15,8 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          matches: '[text*="跳过"][text.length<=10]',
           excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
+          matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/i/12893573',
             'https://i.gkd.li/i/12923776',
@@ -37,10 +37,12 @@ export default defineAppConfig({
             left: 'width * 0.9016',
             top: 'width * 0.1557',
           },
+          excludeMatches: '[text*="跳过"][text.length<=10]',
           matches: '[id="com.netease.mail:id/ad_view"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/222f6870-d9e3-4e6c-950e-dc40920c52e7',
-          snapshotUrls: 'https://i.gkd.li/i/13207736',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13207736',
+            'https://i.gkd.li/i/14900326', // 使用 excludeMatches 防止提前触发规则
+          ],
         },
       ],
     },
