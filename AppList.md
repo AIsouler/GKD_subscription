@@ -1,6 +1,6 @@
 # 适配 APP 列表
 
-## 应用规则(共 722 组)
+## 应用规则(共 724 组)
 
 | 名称                   | ID                                                                                                                                                                | 规则组 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -285,6 +285,7 @@
 | 虎扑                   | [com.hupu.games](/docs/com.hupu.games.md)                                                                                                                         | 1      |
 | 虎牙直播               | [com.duowan.kiwi](/docs/com.duowan.kiwi.md)                                                                                                                       | 5      |
 | i 视频                 | [com.android.VideoPlayer](/docs/com.android.VideoPlayer.md)                                                                                                       | 1      |
+| i 主题                 | [com.bbk.theme](/docs/com.bbk.theme.md)                                                                                                                           | 2      |
 | i茅台                  | [com.moutai.mall](/docs/com.moutai.mall.md)                                                                                                                       | 2      |
 | 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                                                                                 | 4      |
 | 简单搜索               | [com.baidu.searchcraft](/docs/com.baidu.searchcraft.md)                                                                                                           | 1      |
@@ -296,7 +297,7 @@
 | 交易猫                 | [com.jym.mall](/docs/com.jym.mall.md)                                                                                                                             | 1      |
 | 驾校一点通             | [com.jxedt](/docs/com.jxedt.md)                                                                                                                                   | 2      |
 | 街猫                   | [com.hello.pet](/docs/com.hello.pet.md)                                                                                                                           | 1      |
-| 解压专家               | [com.fileunzip.zxwknight](/docs/com.fileunzip.zxwknight.md)                                                                                                       | 3      |
+| 解压专家               | [com.fileunzip.zxwknight](/docs/com.fileunzip.zxwknight.md)                                                                                                       | 4      |
 | 集换社                 | [com.jihuanshe](/docs/com.jihuanshe.md)                                                                                                                           | 1      |
 | 京东                   | [com.jingdong.app.mall](/docs/com.jingdong.app.mall.md)                                                                                                           | 9      |
 | 京东到家               | [com.jingdong.pdj](/docs/com.jingdong.pdj.md)                                                                                                                     | 2      |
@@ -329,6 +330,7 @@
 | 酷我音乐               | [cn.kuwo.player](/docs/cn.kuwo.player.md)                                                                                                                         | 1      |
 | 蓝岛                   | [com.loyea.adnmb](/docs/com.loyea.adnmb.md)                                                                                                                       | 1      |
 | 懒人听书               | [bubei.tingshu](/docs/bubei.tingshu.md)                                                                                                                           | 2      |
+| 蓝豚豚                 | [com.app.lantt.xs](/docs/com.app.lantt.xs.md)                                                                                                                     | 1      |
 | 乐橙                   | [com.mm.android.lc](/docs/com.mm.android.lc.md)                                                                                                                   | 1      |
 | 乐橙含光               | [com.mm.android.lchg](/docs/com.mm.android.lchg.md)                                                                                                               | 1      |
 | 乐康守护               | [com.ecellsz.watch.guard](/docs/com.ecellsz.watch.guard.md)                                                                                                       | 1      |
