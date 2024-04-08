@@ -28,6 +28,7 @@ export default defineAppConfig({
     {
       key: 2,
       name: '全屏广告-升级专业版弹窗',
+      quickFind: true,
       activityIds: [
         'com.fileunzip.zxwknight.activity.MainActivity',
         'com.fileunzip.zxwknight.activity.VideoPlayActivity',
@@ -67,6 +68,22 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/57e29faf-2806-4166-a21d-839f1479960d',
           snapshotUrls: 'https://i.gkd.li/i/14885425',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '更新提示',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@[vid="ziputil_dialog_imageview"] + [text="有新版本啦"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/a428a59c-5cdd-47e9-bfc5-492b43ed169a',
+          snapshotUrls: 'https://i.gkd.li/i/14900121',
         },
       ],
     },
