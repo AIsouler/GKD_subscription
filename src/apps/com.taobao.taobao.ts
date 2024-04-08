@@ -19,8 +19,7 @@ export default defineAppConfig({
             'com.taobao.android.detail.wrapper.activity.DetailActivity',
             'com.alibaba.triver.container.TriverMainActivity',
           ],
-          matches:
-            '@[desc="关闭按钮"] - [id="com.taobao.taobao:id/poplayer_native_state_id"]',
+          matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12642792',
             'https://i.gkd.li/i/13180826',
@@ -29,6 +28,7 @@ export default defineAppConfig({
             'https://i.gkd.li/i/13198239',
             'https://i.gkd.li/i/13198052',
             'https://i.gkd.li/i/13249418',
+            'https://i.gkd.li/i/14905372',
           ],
         },
       ],
