@@ -116,13 +116,13 @@ export default defineAppConfig({
       key: 12,
       name: '更新提示',
       quickFind: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.taobao.taobao:id/update_imageview_cancel_v2"]',
+      rules: '[vid="update_imageview_cancel_v2"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13336760',
         'https://i.gkd.li/i/13695520',
+        'https://i.gkd.li/i/14899863',
       ],
     },
     {
