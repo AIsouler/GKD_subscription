@@ -1,6 +1,6 @@
 # 解压专家
 
-存在 3 规则组 - [com.fileunzip.zxwknight](/src/apps/com.fileunzip.zxwknight.ts)
+存在 4 规则组 - [com.fileunzip.zxwknight](/src/apps/com.fileunzip.zxwknight.ts)
 
 ## 全屏广告-弹窗广告
 
@@ -27,3 +27,11 @@
 - [快照-0](https://i.gkd.li/i/14472568)
 - [快照-1](https://i.gkd.li/i/14885425)
 - [快照-2](https://i.gkd.li/i/14885425)
+
+## 更新提示
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/a428a59c-5cdd-47e9-bfc5-492b43ed169a)
+
+- [快照-0](https://i.gkd.li/i/14900121)
