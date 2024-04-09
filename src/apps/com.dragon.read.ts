@@ -130,53 +130,40 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '分段广告',
+      name: '分段广告-阅读页面广告',
       quickFind: true,
+      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
+          key: 2,
+          name: '点击[继续阅读下一页]',
+          order: -1,
+          matches: '[text="继续阅读下一页"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13674556',
+            'https://i.gkd.li/i/13843155',
+          ],
+        },
+        {
           key: 0,
-          name: '阅读页面广告弹窗-点击反馈按钮',
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          // 有反馈原规则'[text="反馈"][clickable=true]'不触发删除[clickable=true]才能点击；有反馈原规则点击屏外节点，导致无法执行下一步，遂添加[visibleToUser=true]
-          matches: '[text="反馈"][visibleToUser=true]',
+          name: '点击[反馈]按钮',
+          matches: '[text="反馈"][visibleToUser=true][name$="UIText"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13520160',
-            'https://i.gkd.li/i/13843155',
+            'https://i.gkd.li/i/13816453',
           ],
         },
         {
           preKeys: 0,
           key: 1,
-          name: '阅读页面广告弹窗-点击不感兴趣',
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches: '@ViewGroup[clickable=true] > [text="不感兴趣"]',
+          name: '点击[不感兴趣]',
+          matches: '[text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13520219',
             'https://i.gkd.li/i/13674550',
+            'https://i.gkd.li/i/13816454',
+            'https://i.gkd.li/i/14913207',
           ],
-        },
-        {
-          key: 2,
-          name: '阅读页面广告弹窗-点击下一页',
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches:
-            '[id="com.dragon.read:id/readFlowNonRoundEntranceLayout"] [id="com.dragon.read:id/relativeRight"]',
-          snapshotUrls: 'https://i.gkd.li/i/13674556',
-        },
-        {
-          key: 3,
-          name: '阅读页面广告弹窗-点击反馈',
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches: '[text="看视频免广告"] - [text="反馈"]',
-          snapshotUrls: 'https://i.gkd.li/i/13816453',
-        },
-        {
-          preKeys: 3,
-          key: 4,
-          name: '阅读页面广告弹窗-点击不感兴趣',
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches: 'ViewGroup[childCount=2] > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/13816454',
         },
       ],
     },
