@@ -77,16 +77,26 @@ export default defineAppConfig({
       key: 10,
       name: '通知提示-推送通知弹窗',
       desc: '点击x按钮',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches:
             '[id="com.zhihu.android:id/guide_title"] - [id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/25cfef06-fe50-4250-bf45-1f6210f95063',
           snapshotUrls: 'https://i.gkd.li/i/12647583',
+        },
+        {
+          key: 1,
+          matches: '@[vid="btn_close"] +2 [text$="内容推送"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1d1fee24-3ba0-4cf1-a0d5-696f4f62a5e0',
+          snapshotUrls: 'https://i.gkd.li/i/14917866',
         },
       ],
     },
