@@ -164,7 +164,7 @@
 | 不厌书法               | [com.buyanchuantong.buyanshufa](/docs/com.buyanchuantong.buyanshufa.md)                                                                                           | 1      |
 | 彩虹多多               | [com.ddyc.lotterytool](/docs/com.ddyc.lotterytool.md)                                                                                                             | 2      |
 | 财联社                 | [com.lanjinger.choiassociatedpress](/docs/com.lanjinger.choiassociatedpress.md)                                                                                   | 1      |
-| 菜鸟                   | [com.cainiao.wireless](/docs/com.cainiao.wireless.md)                                                                                                             | 7      |
+| 菜鸟                   | [com.cainiao.wireless](/docs/com.cainiao.wireless.md)                                                                                                             | 8      |
 | 彩云天气               | [com.nowcasting.activity](/docs/com.nowcasting.activity.md)                                                                                                       | 5      |
 | 超级课程表             | [com.xtuone.android.syllabus](/docs/com.xtuone.android.syllabus.md)                                                                                               | 4      |
 | 车来了                 | [com.ygkj.chelaile.standard](/docs/com.ygkj.chelaile.standard.md)                                                                                                 | 2      |
@@ -205,7 +205,7 @@
 | 动漫之家社区           | [com.dmzjsq.manhua](/docs/com.dmzjsq.manhua.md)                                                                                                                   | 1      |
 | 懂球帝                 | [com.dongqiudi.news](/docs/com.dongqiudi.news.md)                                                                                                                 | 6      |
 | 豆瓣                   | [com.douban.frodo](/docs/com.douban.frodo.md)                                                                                                                     | 10     |
-| 抖音                   | [com.ss.android.ugc.aweme](/docs/com.ss.android.ugc.aweme.md)                                                                                                     | 16     |
+| 抖音                   | [com.ss.android.ugc.aweme](/docs/com.ss.android.ugc.aweme.md)                                                                                                     | 17     |
 | 抖音                   | [com.ss.android.ugc.aweme.mobile](/docs/com.ss.android.ugc.aweme.mobile.md)                                                                                       | 3      |
 | 抖音极速版             | [com.ss.android.ugc.aweme.lite](/docs/com.ss.android.ugc.aweme.lite.md)                                                                                           | 5      |
 | 斗鱼                   | [air.tv.douyu.android](/docs/air.tv.douyu.android.md)                                                                                                             | 3      |
@@ -572,7 +572,7 @@
 | 小恩爱                 | [com.xiaoenai.app](/docs/com.xiaoenai.app.md)                                                                                                                     | 3      |
 | 小鹅通                 | [com.xiaoe.client](/docs/com.xiaoe.client.md)                                                                                                                     | 1      |
 | 小飞机网盘             | [com.xiaofeiji.app.disk](/docs/com.xiaofeiji.app.disk.md)                                                                                                         | 1      |
-| 小黑盒                 | [com.max.xiaoheihe](/docs/com.max.xiaoheihe.md)                                                                                                                   | 1      |
+| 小黑盒                 | [com.max.xiaoheihe](/docs/com.max.xiaoheihe.md)                                                                                                                   | 2      |
 | 小红帽                 | [com.didi.live.spring](/docs/com.didi.live.spring.md)                                                                                                             | 1      |
 | 小红书                 | [com.xingin.xhs](/docs/com.xingin.xhs.md)                                                                                                                         | 4      |
 | 小卖部逆袭记           | [com.dz.xmbnxj](/docs/com.dz.xmbnxj.md)                                                                                                                           | 1      |
@@ -688,7 +688,7 @@
 | 正气                   | [com.zhengnengliang.precepts](/docs/com.zhengnengliang.precepts.md)                                                                                               | 2      |
 | 直播吧                 | [android.zhibo8](/docs/android.zhibo8.md)                                                                                                                         | 3      |
 | 知到                   | [com.able.wisdomtree](/docs/com.able.wisdomtree.md)                                                                                                               | 2      |
-| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 16     |
+| 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 17     |
 | 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 8      |
 | 智慧生活               | [com.huawei.smarthome](/docs/com.huawei.smarthome.md)                                                                                                             | 1      |
 | 智慧树                 | [com.hyww.wisdomtree](/docs/com.hyww.wisdomtree.md)                                                                                                               | 2      |
