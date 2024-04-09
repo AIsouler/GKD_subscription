@@ -69,6 +69,27 @@ export const blackListAppIDs: string[] = [
   'dev.anilbeesetti.nextplayer', // Next Player
   'org.kde.kdeconnect_tp', // KDE Connect
   'xyz.adproqwq.GKDTool', // GKDTool
+  'com.alibaba.aliyun', // 阿里云
+
+  'com.canghai.haoka',
+  'com.xy.td',
+  'com.bug.hookvip',
+  'one.yufz.hmspush',
+  'io.github.huskydg.magisk',
+  'xzr.konabess',
+  'org.lsposed.manager',
+  'com.microsoft.office.officehub',
+  'bin.mt.plus',
+  'tw.nekomimi.nekogram',
+  'io.github.qauxv',
+  'com.rezvorck.tiktokplugin',
+  'com.zhiliaoapp.musically',
+  'com.github.tianma8023.xposed.smscode',
+  'Han.GJZS',
+  'org.adblockplus.adblockplussbrowser',
+  'com.viewblocker.jrsen',
+  'com.tsng.hidemyapplist',
+  'com.pittvandewitt.wavelet',
 
   // 系统自带非系统应用
   // 小米
@@ -87,6 +108,25 @@ export const blackListAppIDs: string[] = [
   'com.miui.compass', // 指南针
   'com.duokan.phone.remotecontroller', // 万能遥控
   'com.mfashiongallery.emag', // 小米画报
+
+  //三星
+  'com.samsung.android.app.cameraassistant',
+  'com.samsung.android.app.galaxyraw',
+  'com.samsung.android.appbooster',
+  'com.android.samsung.utilityapp',
+  'com.samsung.android.goodlock',
+  'com.samsung.android.thermalguardian',
+  'com.samsung.android.calendar',
+  'com.samsung.android.app.notes',
+  'com.jv.samsungeshop',
+  'com.samsung.android.app.sreminder',
+  'com.samsung.android.app.watchmanager',
+  'com.samsung.android.app.reminder',
+  'com.adguard.android.contentblocker',
+  'com.sec.android.app.music',
+  'com.sec.android.app.voicenote',
+  'com.futuremark.dmandroid.application',
+  'com.sec.android.app.clockpackage',
 
   // https://github.com/gkd-kit/gkd/issues/451
   'mark.via', // via浏览器
