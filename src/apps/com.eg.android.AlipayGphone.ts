@@ -325,5 +325,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 21,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+          matches:
+            'View[childCount=3] > @TextView[text=""][clickable=true][visibleToUser=true] + * > [text!=null]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/5df9b6fb-7455-492c-a726-fb6a42266a02',
+          snapshotUrls: 'https://i.gkd.li/i/14907533',
+        },
+      ],
+    },
   ],
 });
