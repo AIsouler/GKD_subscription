@@ -4,7 +4,6 @@ export default defineAppConfig({
   id: 'com.max.xiaoheihe',
   name: '小黑盒',
   groups: [
-    // { key: 0 }, 开屏广告 占位
     {
       key: 1,
       name: '功能类-签到成功弹窗',
@@ -19,6 +18,23 @@ export default defineAppConfig({
             '[id="com.max.xiaoheihe:id/tv_confirm"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13421535',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          name: '收藏帖子后底部推荐关注卡片',
+          quickFind: true,
+          activityIds:
+            'com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+          matches: '[vid="iv_notify_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b7c25b6e-cc77-4bcc-a477-23b3de74c61f',
+          snapshotUrls: 'https://i.gkd.li/i/14914139',
         },
       ],
     },
