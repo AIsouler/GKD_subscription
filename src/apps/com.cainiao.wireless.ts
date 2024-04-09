@@ -100,5 +100,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      name: '功能类-询问[是否要查询包裹]弹窗',
+      desc: '点击[立即查看]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches: '@[text="立即查看"] < * - * >2 [text="您是否要查询包裹"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/eb48e137-66c3-4777-b65e-8f4f6b3bc4ee',
+          snapshotUrls: 'https://i.gkd.li/i/14913359',
+        },
+      ],
+    },
   ],
 });
