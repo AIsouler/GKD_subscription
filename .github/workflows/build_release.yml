@@ -78,4 +78,10 @@ jobs:
 
       - name: sync npmmirror
         if: ${{ steps.commit.outcome == 'success' }}
-        run: curl -X PUT 'https://registry-direct.npmmirror.com/AIsouler/GKD_subscription/sync'
+        run: curl -X PUT 'https://registry-direct.npmmirror.com/@aisouler/gkd_subscription/sync'
+
+      - name: sync jsDelivr
+        if: ${{ steps.commit.outcome == 'success' }}
+        run: |
+          curl -X PUT 'https://purge.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.json5'
+          curl -X PUT 'https://purge.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.version.json5'
