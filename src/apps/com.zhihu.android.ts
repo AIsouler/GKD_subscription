@@ -78,7 +78,6 @@ export default defineAppConfig({
       name: '通知提示-推送通知弹窗',
       desc: '点击x按钮',
       quickFind: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
