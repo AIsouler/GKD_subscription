@@ -167,6 +167,7 @@ export const updateBlackListAppIDs = new Set([
 export const yongBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'xxx.pornhub.fuck', // JavDB
+  'com.netease.cloudmusic', // 网易云音乐 全局规则在 https://i.gkd.li/i/14931708 误触
   ...filterAppsByGroup(apps, '青少年模式'),
 ]);
 
