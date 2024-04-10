@@ -54,7 +54,7 @@
     "url": "git+https://github.com/AIsouler/GKD_subscription.git"
   },
   "volta": {
-    "node": "20.12.1"
+    "node": "20.12.2"
   },
   "packageManager": "pnpm@8.15.6",
   "commitlint": {
