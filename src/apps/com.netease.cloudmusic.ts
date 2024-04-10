@@ -18,7 +18,7 @@ export default defineAppConfig({
             'com.netease.cloudmusic.activity.MainActivity',
           ],
           excludeActivityIds:
-            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触，评论区广告规则见groups key2
+            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触，评论区广告规则见groups key 13
           matches: '[vid="adTagView"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/a603ceca-7e89-4b1f-9e17-508c583b32d8',
@@ -83,6 +83,7 @@ export default defineAppConfig({
       key: 2,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
+      quickFind: true,
       rules: [
         {
           key: 0,
@@ -93,22 +94,6 @@ export default defineAppConfig({
           exampleUrls:
             'https://m.gkd.li/57941037/827ebe8b-f3c6-4068-8d31-11d5b2578680',
           snapshotUrls: 'https://i.gkd.li/i/12745666',
-        },
-        {
-          key: 1,
-          name: '评论区广告',
-          quickFind: true,
-          activityIds:
-            'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
-          matches:
-            '@[vid="adTagView"] <n [vid="commentAdContainer"] + [vid="commentVHRootId"][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3d0a500b-8f73-4da9-8e05-88f39c7cb58f',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14275571',
-            'https://i.gkd.li/i/14275955',
-            'https://i.gkd.li/i/14070500', // 通过广告下方评论visibleToUser=true防止在此页面误触
-          ],
         },
       ],
     },
@@ -327,21 +312,35 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击[关闭]',
+          name: '点击关闭',
           matches:
             // 通过广告下方评论visibleToUser=true防止误触
             '[vid="commentVHRootId"][visibleToUser=true] - [vid="commentVHRootId"] [vid="closeAction"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/2f9d5dee-c9f3-4a64-8ccd-f154c1901a12',
           snapshotUrls: 'https://i.gkd.li/i/14549836',
         },
         {
+          key: 2,
+          name: '点击关闭',
+          matches:
+            '[vid="commentVHRootId"][visibleToUser=true] - [vid="commentAdContainer"] >n [vid="adTagView"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14275571',
+            'https://i.gkd.li/i/14275955',
+            'https://i.gkd.li/i/14070500', // 通过广告下方评论visibleToUser=true防止在此页面误触
+          ],
+        },
+        {
+          preKeys: [2],
+          key: 98,
+          name: '点击[直接关闭]',
+          matches: '[text="直接关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/14932659',
+        },
+        {
           preKeys: [0],
-          key: 1,
+          key: 99,
           name: '点击[不感兴趣]',
           matches: '@[clickable=true] > [text="不感兴趣"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3750b512-4970-48ee-bc04-0c0e597702c2',
           snapshotUrls: 'https://i.gkd.li/i/14549856',
         },
       ],
