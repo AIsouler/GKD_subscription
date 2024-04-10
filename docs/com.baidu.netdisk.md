@@ -2,7 +2,7 @@
 
 存在 6 规则组 - [com.baidu.netdisk](/src/apps/com.baidu.netdisk.ts)
 
-## 全屏广告-广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用 - 点击关闭
 

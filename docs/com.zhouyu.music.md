@@ -2,7 +2,7 @@
 
 存在 3 规则组 - [com.zhouyu.music](/src/apps/com.zhouyu.music.ts)
 
-## 全屏广告-广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 

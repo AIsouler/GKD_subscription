@@ -2,7 +2,7 @@
 
 存在 1 规则组 - [com.xiaomi.mico](/src/apps/com.xiaomi.mico.ts)
 
-## 全屏广告-首页广告弹窗
+## 全屏广告-首页弹窗广告
 
 默认禁用
 

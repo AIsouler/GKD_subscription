@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.huatu.handheld_huatu](/src/apps/com.huatu.handheld_huatu.ts)
 
-## 全屏广告-首页广告弹窗
+## 全屏广告-首页弹窗广告
 
 默认禁用
 
