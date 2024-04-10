@@ -182,7 +182,6 @@ export const openAdWhiteListAppIDs = new Set([
   'com.bbk.appstore', // vivo应用商店
   'com.miui.systemAdSolution', // 小米智能服务
   'com.huawei.appmarket', // 华为应用市场
-  'com.xiaomi.market', // 小米应用商店
   'com.miui.player', // 小米音乐
 ]);
 
