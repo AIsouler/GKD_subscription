@@ -8,19 +8,33 @@ export default defineAppConfig({
       key: 8,
       name: '功能类-安装来源不可信',
       desc: '点击[授权本次安装]',
+      quickFind: true,
+      activityIds: [
+        'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+        'com.miui.packageInstaller.NewPackageInstallerActivity',
+      ],
       rules: [
         {
-          quickFind: true,
+          key: 0,
           position: {
             left: 'width * 0.8743',
             top: 'width * 0.1202',
           },
-          activityIds:
-            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
-          matches: '[text="安装来源不可信"] + [vid="title_des"]',
+          matches: 'LinearLayoutCompat > [text*="授权本次安装"]',
           exampleUrls:
             'https://m.gkd.li/57941037/e30144c7-c895-4950-a91d-9ce56a8570c8',
           snapshotUrls: 'https://i.gkd.li/i/14456398',
+        },
+        {
+          key: 1,
+          position: {
+            left: 'width * 0.6663',
+            top: 'width * 0.1012',
+          },
+          matches: 'ViewGroup > [text*="授权本次安装"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/4bcc94e7-17cb-4887-9e1d-067cf823b109',
+          snapshotUrls: 'https://i.gkd.li/i/14925748',
         },
       ],
     },
