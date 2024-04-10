@@ -2,7 +2,7 @@
 
 存在 5 规则组 - [com.duokan.reader](/src/apps/com.duokan.reader.ts)
 
-## 全屏广告-首页广告弹窗
+## 全屏广告-首页弹窗广告
 
 默认禁用
 

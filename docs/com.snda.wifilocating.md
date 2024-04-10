@@ -2,14 +2,13 @@
 
 存在 3 规则组 - [com.snda.wifilocating](/src/apps/com.snda.wifilocating.ts)
 
-## 全屏广告-"好看"页面广告弹窗
+## 全屏广告-弹窗广告
 
-默认禁用 - 点击X
-
-- [示例-0](https://m.gkd.li/57941037/e6a94c34-6580-4bf5-8c44-16c9c9534be4)
+默认禁用 - 点击关闭
 
 - [快照-0](https://i.gkd.li/i/14032794)
 - [快照-1](https://i.gkd.li/i/14256643)
+- [快照-2](https://i.gkd.li/i/14927523)
 
 ## 全屏广告-连接WiFi后弹出的广告
 

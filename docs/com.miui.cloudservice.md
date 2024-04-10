@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.miui.cloudservice](/src/apps/com.miui.cloudservice.ts)
 
-## 全屏广告-广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 

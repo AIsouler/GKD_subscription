@@ -2,7 +2,7 @@
 
 存在 2 规则组 - [com.moutai.mall](/src/apps/com.moutai.mall.ts)
 
-## 全屏广告-首页广告弹窗
+## 全屏广告-首页弹窗广告
 
 默认禁用
 

@@ -1,6 +1,6 @@
 # 百度贴吧
 
-存在 11 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
+存在 12 规则组 - [com.baidu.tieba](/src/apps/com.baidu.tieba.ts)
 
 ## 开屏广告
 
@@ -54,7 +54,7 @@
 - [快照-0](https://i.gkd.li/i/12775882)
 - [快照-1](https://i.gkd.li/i/12775914)
 
-## 全屏广告-广告弹窗
+## 全屏广告-弹窗广告
 
 默认禁用
 
@@ -97,3 +97,11 @@
 - [示例-0](https://m.gkd.li/57941037/2fa193f8-5e0e-4f85-b828-eb3e22cb60a3)
 
 - [快照-0](https://i.gkd.li/i/14586847)
+
+## 全屏广告-会员弹窗
+
+默认禁用 - 点击关闭
+
+- [示例-0](https://m.gkd.li/57941037/dd2f2a00-e9d3-47fa-986d-09ae6180d932)
+
+- [快照-0](https://i.gkd.li/i/14630806)
