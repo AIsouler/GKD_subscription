@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '全屏广告-"字节"广告弹窗',
+      name: '全屏广告-"字节"弹窗广告',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: '[text="反馈"] -2 @View > Image',

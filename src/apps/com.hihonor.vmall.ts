@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '全屏广告-应用内广告弹窗',
+      name: '全屏广告-应用内弹窗广告',
       activityIds: [
         'com.vmall.client.base.fragment.VmallWapActivity',
         'com.vmall.client.splash.fragment.SplashActivity',

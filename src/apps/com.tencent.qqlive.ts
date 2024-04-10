@@ -230,7 +230,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '全屏广告-首页-广告弹窗',
+      name: '全屏广告-首页-弹窗广告',
       resetMatch: 'app',
       actionMaximum: 1,
       quickFind: true,

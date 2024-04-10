@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       activityIds: 'yt.com.module.home.MainActivity',
       rules:
         '[id="com.shinyv.cnr:id/iv_ad"] + [id="com.shinyv.cnr:id/iv_close"]',

@@ -88,7 +88,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-应用内广告弹窗',
+      name: '全屏广告-应用内弹窗广告',
       desc: '⚠ 此规则容易误触，因此默认关闭。',
       rules: [
         {

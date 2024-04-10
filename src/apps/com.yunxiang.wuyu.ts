@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

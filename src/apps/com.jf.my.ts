@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       activityIds: 'com.jf.my.main.ui.dialog.HomeRedPackageDialog',
       rules: '[id="com.jf.my:id/iv_back"]',
       snapshotUrls: 'https://i.gkd.li/i/12840619',

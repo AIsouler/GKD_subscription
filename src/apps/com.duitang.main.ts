@@ -67,7 +67,7 @@ export default defineAppConfig({
     {
       key: 4,
       quickFind: true,
-      name: '全屏广告-图片页广告弹窗',
+      name: '全屏广告-图片页弹窗广告',
       desc: '点击X',
       rules: [
         {

@@ -473,12 +473,12 @@ export default defineAppConfig({
     },
     {
       key: 21,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       activityIds: 'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
       rules: [
         {
           key: 0,
-          name: '元梦之星广告弹窗',
+          name: '元梦之星弹窗广告',
           matches:
             'ViewGroup[childCount=2] > ViewGroup[childCount=3][index=1] > ViewGroup[clickable=true][visibleToUser=true][index=1][childCount=0]',
           snapshotUrls: 'https://i.gkd.li/i/13797876',

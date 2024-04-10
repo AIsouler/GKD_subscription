@@ -16,7 +16,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击左上角x关闭',
       activityIds:
         'com.shizhuang.duapp.modules.rn.mini.MiniReactActivity$MiniUITranslucentReactActivity',

@@ -22,7 +22,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -50,7 +50,7 @@ export default defineAppConfig({
         },
         {
           key: 3,
-          name: '超市便利-广告弹窗',
+          name: '超市便利-弹窗广告',
           activityIds:
             'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
           matches:
@@ -178,7 +178,7 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '全屏广告-视频页广告弹窗',
+      name: '全屏广告-视频页弹窗广告',
       desc: '点击X',
       rules: [
         {

@@ -31,7 +31,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '全屏广告-应用内活动、广告弹窗（大部分）',
+      name: '全屏广告-应用内活动、弹窗广告（大部分）',
       activityIds: [
         'com.hellobike.ads.widget.insert.dialog.HBAdvertDialog',
         'com.hellobike.atlas.business.portal.PortalActivity',
@@ -46,48 +46,48 @@ export default defineAppConfig({
     },
     {
       key: 11,
-      name: '全屏广告-哈啰智能电动车-广告弹窗',
+      name: '全屏广告-哈啰智能电动车-弹窗广告',
       quickFind: true,
       activityIds: [
         'com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity',
       ],
       rules:
         '[id="com.jingyao.easybike:id/lottie_view"] < ViewGroup + [id="com.jingyao.easybike:id/btn_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/12650163'],
+      snapshotUrls: 'https://i.gkd.li/i/12650163',
     },
     {
       key: 12,
       name: '局部广告-右侧悬浮广告',
       quickFind: true,
-      activityIds: ['com.hellobike.atlas.business.portal.PortalActivity'],
+      activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
-      snapshotUrls: ['https://i.gkd.li/i/12650071'],
+      snapshotUrls: 'https://i.gkd.li/i/12650071',
     },
     {
       key: 13,
-      name: '全屏广告-骑行订单完成-广告弹窗',
-      activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],
+      name: '全屏广告-骑行订单完成-弹窗广告',
+      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
       rules:
         '[text="订单完成"] >(2) View[childCount=2] > Image[id=null][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/i/12684673'],
+      snapshotUrls: 'https://i.gkd.li/i/12684673',
     },
     {
       key: 14,
       name: '全屏广告-骑行卡-优惠券弹窗',
-      activityIds: ['com.hellobike.atlas.business.portal.PortalActivity'],
+      activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules: '[desc="去使用"] + Button[text=null][visibleToUser=true]',
-      snapshotUrls: ['https://i.gkd.li/i/12739316'],
+      snapshotUrls: 'https://i.gkd.li/i/12739316',
     },
     {
       key: 15,
       quickFind: true,
       name: '功能类-新人教学弹窗',
       desc: '点击跳过',
-      activityIds: ['com.alipay.mobile.nebulacore.ui.H5Activity'],
+      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
       rules:
         '@View[text="跳过"] <2 View <2 View <<n FrameLayout[id="com.jingyao.easybike:id/h5_pc_container"]',
-      snapshotUrls: ['https://i.gkd.li/i/13837543'],
+      snapshotUrls: 'https://i.gkd.li/i/13837543',
     },
   ],
 });

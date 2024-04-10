@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '@[id=null][clickable=true] + View >n View [text$="广告"]',
       snapshotUrls: [

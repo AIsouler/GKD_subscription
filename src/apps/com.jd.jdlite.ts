@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       activityIds: 'com.jd.jdlite.MainFrameActivity',
       rules: '@[desc="关闭页面"] - FrameLayout >n [text="极速版弹窗"]',
       snapshotUrls: 'https://i.gkd.li/i/12727396',
