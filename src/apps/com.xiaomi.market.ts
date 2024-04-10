@@ -6,20 +6,21 @@ export default defineAppConfig({
   groups: [
     {
       key: 0,
-      name: '全屏广告-首页悬浮窗广告',
-      activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
-      quickFind: true,
-      rules: {
-        matches: [
-          '[id="com.xiaomi.market:id/webview_container"]',
-          'Button[text.length=2][text="关闭"]',
-        ],
-      },
-      snapshotUrls: 'https://i.gkd.li/i/13248808',
+      name: '全屏广告-弹窗广告',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
+          matches:
+            '@Button[text="关闭"] <<n [id="com.xiaomi.market:id/webview"]',
+          snapshotUrls: 'https://i.gkd.li/i/13248808',
+        },
+      ],
     },
     {
       key: 9,
-      name: '局部广告-应用升级界面顶部广告横幅',
+      name: '局部广告-卡片广告',
       quickFind: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
@@ -28,30 +29,21 @@ export default defineAppConfig({
     {
       key: 10,
       name: '功能类-忽略升级',
-      quickFind: true,
       desc: '应用升级界面-自动点击忽略',
-      exampleUrls:
-        'https://github.com/gkd-kit/subscription/assets/45487685/a3a61df9-7757-428e-b4fe-a960e09a0bbe',
+      quickFind: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: [
         {
-          key: 0,
-          matches:
-            '[id="com.xiaomi.market:id/fold_text"][text^="查看全部升级"]',
-          snapshotUrls: 'https://i.gkd.li/i/12674261',
-        },
-        {
           key: 1,
-          matches:
-            '[id="com.xiaomi.market:id/expandable_textview"] + [id="com.xiaomi.market:id/expand_button"][desc="更多"]',
-          snapshotUrls: 'https://i.gkd.li/i/12674264',
+          excludeMatches: '[text="忽略本次"][visibleToUser=true]',
+          matches: '[vid="expand_button"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14931577',
         },
         {
           preKeys: [1],
           key: 2,
-          matches:
-            '@[id="com.xiaomi.market:id/ignore_this"][text="忽略本次"] + [id="com.xiaomi.market:id/ignore_permanently"][text="永久忽略"]',
-          snapshotUrls: 'https://i.gkd.li/i/12674269',
+          matches: '[text="忽略本次"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14931578',
         },
       ],
     },
@@ -83,7 +75,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '局部广告-个性化推荐弹窗',
+      name: '局部广告-个性化推荐卡片',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
