@@ -13,7 +13,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -35,7 +35,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-支付宝提现广告弹窗',
+      name: '全屏广告-支付宝提现弹窗广告',
       desc: '点击右上角圆形x',
       quickFind: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',

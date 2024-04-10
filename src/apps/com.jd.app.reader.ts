@@ -73,7 +73,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-阅读页面广告弹窗',
+      name: '全屏广告-阅读页面弹窗广告',
       activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',
       rules: '[id$="ad_read_close"]',
       snapshotUrls: [

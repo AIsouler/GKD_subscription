@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.onethingcloud.android.MainActivity',
       rules:
         '[id="android:id/content"] >(3,4) View[childCount=2] >2 View[childCount=3] > ImageView[index=2][clickable=true]',

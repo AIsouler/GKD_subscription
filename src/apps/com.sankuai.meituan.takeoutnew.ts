@@ -18,7 +18,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告-美食广告弹窗',
+      name: '全屏广告-美食弹窗广告',
       activityIds: 'com.sankuai.waimai.platform.mach.dialog.DynamicDialog',
       rules: [
         '@[desc="关闭"][clickable=true] > ImageView', // 1686969062508
@@ -26,7 +26,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-付款后广告弹窗',
+      name: '全屏广告-付款后弹窗广告',
       activityIds:
         'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
       rules: [

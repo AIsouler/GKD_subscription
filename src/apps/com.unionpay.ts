@@ -119,7 +119,7 @@ export default defineAppConfig({
     },
     {
       key: 14,
-      name: '全屏广告-我的页面-广告弹窗',
+      name: '全屏广告-我的页面-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.unionpay.activity.UPActivityMain',

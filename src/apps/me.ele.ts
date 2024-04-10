@@ -116,7 +116,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '全屏广告-付款后广告弹窗',
+      name: '全屏广告-付款后弹窗广告',
       quickFind: true,
       activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
       rules: 'bb Button[text="关闭"]',

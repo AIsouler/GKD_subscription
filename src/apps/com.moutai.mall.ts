@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       activityIds: [
         'com.moutai.mall.MainActivity',
         'com.moutai.mall.module.splash.SplashActivity',

@@ -15,14 +15,14 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '[id="com.jin10:id/iv_body"] + [id="com.jin10:id/iv_close"]',
       snapshotUrls: ['https://i.gkd.li/i/12706045'],
     },
     {
       key: 3,
-      name: '全屏广告-快讯页面广告弹窗',
+      name: '全屏广告-快讯页面弹窗广告',
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '@[id="com.jin10:id/iv_close"] + [id="com.jin10:id/iv_pic"]',
       snapshotUrls: ['https://i.gkd.li/i/12706047'],

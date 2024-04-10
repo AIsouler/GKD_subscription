@@ -153,7 +153,7 @@ export default defineAppConfig({
     },
     {
       key: 9,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       rules: [

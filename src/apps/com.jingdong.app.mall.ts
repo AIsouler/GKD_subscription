@@ -83,7 +83,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -156,7 +156,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '全屏广告-购物车页面支付成功广告弹窗',
+      name: '全屏广告-购物车页面支付成功弹窗广告',
       desc: '自动点击正下方的"x"',
       quickFind: true,
       rules: [

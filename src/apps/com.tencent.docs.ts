@@ -32,7 +32,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       actionDelay: 200,
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: 'View[childCount=2] > @TextView[id=null][clickable=true] + View',

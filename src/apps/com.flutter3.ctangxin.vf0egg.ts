@@ -21,7 +21,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '全屏广告-广告弹窗', // 目前已叠加了三层广告
+      name: '全屏广告-弹窗广告', // 目前已叠加了三层广告
       //matchDelay: 6500, // 待无法跳过的5s开屏广告过后，能够主动执行匹配
       matchTime: 10000,
       actionCd: 100,

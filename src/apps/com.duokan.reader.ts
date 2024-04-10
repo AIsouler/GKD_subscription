@@ -6,7 +6,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '全屏广告-首页广告弹窗',
+      name: '全屏广告-首页弹窗广告',
       quickFind: true,
       activityIds: 'com.duokan.reader.DkMainActivity',
       rules: '[id="com.duokan.reader:id/store_feed_layer_close"]',

@@ -101,12 +101,12 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击关闭',
       rules: [
         {
           key: 0,
-          name: '会员页广告弹窗',
+          name: '会员页弹窗广告',
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: '[id="com.zhihu.android:id/dismiss"]',
           exampleUrls:
@@ -115,7 +115,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '首页广告弹窗',
+          name: '首页弹窗广告',
           quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.AdAlphaVideoActivity',
           matches: '[vid="tv_ad_close"]',

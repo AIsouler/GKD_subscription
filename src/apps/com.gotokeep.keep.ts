@@ -41,7 +41,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '全屏广告-运动购页面-广告弹窗',
+      name: '全屏广告-运动购页面-弹窗广告',
       rules: [
         {
           key: 0,

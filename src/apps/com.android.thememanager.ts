@@ -14,7 +14,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       quickFind: true,
       activityIds: 'com.android.thememanager.ThemeResourceTabActivity',
       rules: 'ImageView[id="com.android.thememanager:id/cancel"][desc="关闭"]',

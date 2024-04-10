@@ -48,7 +48,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '全屏广告-开门成功后广告弹窗',
+      name: '全屏广告-开门成功后弹窗广告',
       desc: '来自"腾讯广告sdk"',
       rules: '[vid="interact_ad_root"] >2 [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13932707',

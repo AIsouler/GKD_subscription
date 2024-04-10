@@ -17,7 +17,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '全屏广告-发现页广告弹窗',
+      name: '全屏广告-发现页弹窗广告',
       activityIds: 'com.sensorsdata.sf.ui.view.DialogActivity',
       rules:
         'LinearLayout[childCount=2] > @ImageView[id=null][clickable=true] + ImageView',
