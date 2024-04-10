@@ -94,16 +94,20 @@ export default defineAppConfig({
         {
           key: 1,
           quickFind: true,
-          activityIds:
+          activityIds: [
             'com.jd.lib.cashier.complete.view.CashierCompleteActivity',
-          matches:
-            '[id="com.jingdong.app.mall:id/webview"] + [id="com.jingdong.app.mall:id/close"][desc="关闭页面"]',
-          snapshotUrls: 'https://i.gkd.li/i/13218034',
+            'com.jd.lib.jshop.jshop.JshopMainShopActivity',
+          ],
+          matches: '[vid="webview"] + [vid="close"][desc="关闭页面"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13218034',
+            'https://i.gkd.li/i/14927060',
+          ],
         },
         {
           key: 2,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-          matches: '@[desc="关闭按钮"] <n * >n *[desc="弹窗"]',
+          matches: '@[desc="关闭按钮"] <n * >n [desc="弹窗"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13241883',
             'https://i.gkd.li/i/132599029',
