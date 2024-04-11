@@ -8,6 +8,7 @@ export default defineAppConfig({
       key: 1,
       name: '局部广告-主题详情底部广告',
       desc: '注意如果使用ADB禁用了MIUI广告组件,点击此按钮会无反应,可关闭此规则,避免过多相同点击记录',
+      quickFind: true,
       rules:
         '[id="com.android.thememanager:id/ad_close_btn"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/i/13227330',
