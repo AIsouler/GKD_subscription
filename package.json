@@ -38,7 +38,7 @@
     "lint-staged": "^15.2.2",
     "lodash": "^4.17.21",
     "picocolors": "^1.0.0",
-    "pinyin-pro": "3.19.7",
+    "pinyin-pro": "3.20.0",
     "prettier": "^3.2.5",
     "tsx": "^4.7.2",
     "typescript": "^5.4.4"
