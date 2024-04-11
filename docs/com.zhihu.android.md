@@ -6,20 +6,16 @@
 
 默认禁用 - 点击关闭-点击内容不感兴趣
 
-- [示例-0](https://m.gkd.li/57941037/f6498773-af55-4ba9-96fa-4c0597523d55)
-- [示例-1](https://m.gkd.li/57941037/c52e22c6-987e-46c2-a4ca-e1182972ed94)
-
 - [快照-0](https://i.gkd.li/i/13849671)
 - [快照-1](https://i.gkd.li/i/14645530)
-- [快照-2](https://i.gkd.li/i/12647525)
-- [快照-3](https://i.gkd.li/i/14178516)
-- [快照-4](https://i.gkd.li/i/13849442)
-- [快照-5](https://i.gkd.li/i/14178979)
-- [快照-6](https://i.gkd.li/i/14321041)
-- [快照-7](https://i.gkd.li/i/14468152)
-- [快照-8](https://i.gkd.li/i/14192451)
-- [快照-9](https://i.gkd.li/i/14730741)
-- [快照-10](https://i.gkd.li/i/13849689)
+- [快照-2](https://i.gkd.li/i/14178516)
+- [快照-3](https://i.gkd.li/i/13849442)
+- [快照-4](https://i.gkd.li/i/14178979)
+- [快照-5](https://i.gkd.li/i/14321041)
+- [快照-6](https://i.gkd.li/i/14468152)
+- [快照-7](https://i.gkd.li/i/14192451)
+- [快照-8](https://i.gkd.li/i/14730741)
+- [快照-9](https://i.gkd.li/i/13849689)
 
 ## 通知提示-推送通知弹窗
 
@@ -34,10 +30,6 @@
 ## 全屏广告-弹窗广告
 
 默认禁用 - 点击关闭
-
-- [示例-0](https://m.gkd.li/57941037/9eb78a95-c2dc-4a8b-9b86-f9d0fc0ed6fd)
-- [示例-1](https://m.gkd.li/57941037/a5c471b6-dbc7-4150-be52-3ae4a28806e0)
-- [示例-2](https://m.gkd.li/57941037/335dee89-4b55-40f1-8316-b7b4f86a8ee6)
 
 - [快照-0](https://i.gkd.li/i/12707676)
 - [快照-1](https://i.gkd.li/i/14648128)
@@ -55,19 +47,18 @@
 
 默认禁用 - 点击关闭
 
-- [示例-0](https://m.gkd.li/57941037/0443d5cb-aa24-4447-afd7-58c5a09af835)
-- [示例-1](https://m.gkd.li/45487685/c7d89c48-91d1-4658-b22e-d2626117be8b)
-
 - [快照-0](https://i.gkd.li/i/14178980)
 - [快照-1](https://i.gkd.li/i/14206949)
-- [快照-2](https://i.gkd.li/i/14232195)
-- [快照-3](https://i.gkd.li/i/14235024)
-- [快照-4](https://i.gkd.li/i/14206988)
-- [快照-5](https://i.gkd.li/i/14220104)
-- [快照-6](https://i.gkd.li/i/14421277)
-- [快照-7](https://i.gkd.li/i/14296163)
-- [快照-8](https://i.gkd.li/i/14332161)
-- [快照-9](https://i.gkd.li/i/14391614)
+- [快照-2](https://i.gkd.li/i/14206988)
+- [快照-3](https://i.gkd.li/i/14220104)
+- [快照-4](https://i.gkd.li/i/14421277)
+- [快照-5](https://i.gkd.li/i/14296163)
+- [快照-6](https://i.gkd.li/i/14332161)
+- [快照-7](https://i.gkd.li/i/14391614)
+- [快照-8](https://i.gkd.li/i/14235024)
+- [快照-9](https://i.gkd.li/i/14944631)
+- [快照-10](https://i.gkd.li/i/14232195)
+- [快照-11](https://i.gkd.li/i/14232195)
 
 ## 局部广告-悬浮小广告
 

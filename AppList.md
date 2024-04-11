@@ -430,7 +430,7 @@
 | 人人视频               | [com.example.pptv](/docs/com.example.pptv.md)                                                                                                                     | 2      |
 | 人卫                   | [com.pmph.irenwei](/docs/com.pmph.irenwei.md)                                                                                                                     | 1      |
 | 荣耀快服务             | [com.hihonor.servicecenter](/docs/com.hihonor.servicecenter.md)                                                                                                   | 1      |
-| 荣耀亲选               | [cn.honor.qinxuan](/docs/cn.honor.qinxuan.md)                                                                                                                     | 1      |
+| 荣耀亲选               | [cn.honor.qinxuan](/docs/cn.honor.qinxuan.md)                                                                                                                     | 2      |
 | 荣耀商城               | [com.hihonor.vmall](/docs/com.hihonor.vmall.md)                                                                                                                   | 2      |
 | 荣耀应用市场           | [com.hihonor.appmarket](/docs/com.hihonor.appmarket.md)                                                                                                           | 3      |
 | 荣耀运动健康           | [com.hihonor.health](/docs/com.hihonor.health.md)                                                                                                                 | 1      |
@@ -534,7 +534,7 @@
 | 网易云音乐             | [com.netease.cloudmusic](/docs/com.netease.cloudmusic.md)                                                                                                         | 12     |
 | 完美世界电竞           | [com.pwrd.steam.esports](/docs/com.pwrd.steam.esports.md)                                                                                                         | 1      |
 | 完美校园               | [com.newcapec.mobile.ncp](/docs/com.newcapec.mobile.ncp.md)                                                                                                       | 2      |
-| 万能小组件 Top Widgets | [com.growing.topwidgets](/docs/com.growing.topwidgets.md)                                                                                                         | 1      |
+| 万能小组件 Top Widgets | [com.growing.topwidgets](/docs/com.growing.topwidgets.md)                                                                                                         | 2      |
 | 万能遥控               | [com.duokan.phone.remotecontroller](/docs/com.duokan.phone.remotecontroller.md)                                                                                   | 2      |
 | 万年历                 | [com.youloft.calendar](/docs/com.youloft.calendar.md)                                                                                                             | 1      |
 | 微博                   | [com.sina.weibo](/docs/com.sina.weibo.md)                                                                                                                         | 17     |
