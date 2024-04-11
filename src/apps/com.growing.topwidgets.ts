@@ -8,14 +8,31 @@ export default defineAppConfig({
       key: 1,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
+      quickFind: true,
+      activityIds: 'com.growing.topwidgets.home.MainActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@ImageView < * - * > [text="立即打开"]',
+          snapshotUrls: 'https://i.gkd.li/i/14892835',
+        },
+        {
+          key: 1,
+          matches: '@ImageView < * - * > [text="查看详情"]',
+          snapshotUrls: 'https://i.gkd.li/i/14945536',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.growing.topwidgets.home.MainActivity',
-          matches: '@ImageView < * - * > [text="立即打开"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/90c3b791-0aec-4c48-b417-de4604cdcff2',
-          snapshotUrls: 'https://i.gkd.li/i/14892835',
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches: '@ImageView[clickable=true] - * >2 [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/14945552',
         },
       ],
     },
