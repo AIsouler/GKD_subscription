@@ -17,5 +17,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '通知提示',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@[vid="iv_close"] < * > [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/14946137',
+        },
+      ],
+    },
   ],
 });
