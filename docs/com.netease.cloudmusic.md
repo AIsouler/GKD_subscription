@@ -1,6 +1,6 @@
 # 网易云音乐
 
-存在 12 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
+存在 11 规则组 - [com.netease.cloudmusic](/src/apps/com.netease.cloudmusic.ts)
 
 ## 分段广告-卡片广告
 
@@ -29,13 +29,6 @@
 
 - [快照-0](https://i.gkd.li/i/12745666)
 
-## 全屏广告-看广告免费听歌弹窗
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/i/12843383)
-- [快照-1](https://i.gkd.li/i/13804534)
-
 ## 全屏广告-弹窗广告
 
 默认禁用
@@ -54,13 +47,16 @@
 - [快照-0](https://i.gkd.li/i/13189055)
 - [快照-1](https://i.gkd.li/i/13260416)
 - [快照-2](https://i.gkd.li/i/13996787)
-- [快照-3](https://i.gkd.li/i/13228955)
-- [快照-4](https://i.gkd.li/i/13230603)
-- [快照-5](https://i.gkd.li/i/13230605)
-- [快照-6](https://i.gkd.li/i/14268181)
-- [快照-7](https://i.gkd.li/i/13391498)
-- [快照-8](https://i.gkd.li/i/14045917)
-- [快照-9](https://i.gkd.li/i/14926722)
+- [快照-3](https://i.gkd.li/i/13230605)
+- [快照-4](https://i.gkd.li/i/14268181)
+- [快照-5](https://i.gkd.li/i/13391498)
+- [快照-6](https://i.gkd.li/i/14045917)
+- [快照-7](https://i.gkd.li/i/14926722)
+- [快照-8](https://i.gkd.li/i/13228955)
+- [快照-9](https://i.gkd.li/i/14956768)
+- [快照-10](https://i.gkd.li/i/13230603)
+- [快照-11](https://i.gkd.li/i/13804534)
+- [快照-12](https://i.gkd.li/i/12843383)
 
 ## 更新提示
 
