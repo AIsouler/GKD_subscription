@@ -7,6 +7,7 @@ export default defineAppConfig({
     {
       key: 1,
       name: '更新提示',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -33,6 +34,28 @@ export default defineAppConfig({
             'https://i.gkd.li/i/13650732',
             'https://i.gkd.li/i/14866147',
           ],
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.lolaage.tbulu.tools.ui.activity.main.MainActivity',
+          matches: '[vid="ivClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/14952807',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '通知提示-[发送通知]弹窗',
+      desc: '点击[取消]',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[text="发送通知"] + * >3 [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/14952803',
         },
       ],
     },
