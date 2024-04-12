@@ -109,6 +109,14 @@ export default defineAppConfig({
           matches: '[id="com.zhihu.android:id/floating_close_btn"]',
           snapshotUrls: 'https://i.gkd.li/i/12647421',
         },
+        {
+          key: 3,
+          action: 'clickCenter',
+          activityIds:
+            'com.zhihu.android.creatorcenter.CreatorCenterHostActivity',
+          matches: 'View[text="关闭"] > @[text="关闭"] <<n [vid="webview_bg"]',
+          snapshotUrls: 'https://i.gkd.li/i/14955183',
+        },
       ],
     },
     {
