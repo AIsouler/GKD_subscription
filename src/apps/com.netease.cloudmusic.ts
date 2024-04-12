@@ -3,7 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.netease.cloudmusic',
   name: '网易云音乐',
-  deprecatedKeys: [9, 11, 12],
+  deprecatedKeys: [3, 9, 11, 12],
   groups: [
     {
       key: 1,
@@ -98,18 +98,6 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 3,
-      name: '全屏广告-看广告免费听歌弹窗',
-      quickFind: true,
-      activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-      rules:
-        '@ImageView[clickable=true] + * >(1,2) [text="VIP歌曲免费听30分钟"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12843383',
-        'https://i.gkd.li/i/13804534',
-      ],
-    },
-    {
       key: 4,
       name: '全屏广告-弹窗广告',
       rules: [
@@ -154,64 +142,54 @@ export default defineAppConfig({
       key: 5,
       name: '全屏广告-VIP弹窗',
       quickFind: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds:
+          action: 'back',
+          activityIds: [
             'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-          matches:
-            'ImageView <<n @ViewGroup[clickable=true] <2 ViewGroup < ViewGroup + ScrollView [text="会员套餐"]',
+            'com.netease.cloudmusic.activity.MainActivity',
+          ],
+          matches: ['[text="支付宝"]', '[text^="确认协议并"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13189055',
             'https://i.gkd.li/i/13260416',
             'https://i.gkd.li/i/13996787',
+            'https://i.gkd.li/i/13230605',
+            'https://i.gkd.li/i/14268181',
+            'https://i.gkd.li/i/13391498',
+            'https://i.gkd.li/i/14045917',
+            'https://i.gkd.li/i/14926722',
           ],
         },
         {
           key: 1,
-          name: '专属优惠-VIP续费弹窗',
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches: '@ImageView - ViewGroup > [text="解锁千万级会员曲库"]',
-          snapshotUrls: 'https://i.gkd.li/i/13228955',
-        },
-        {
-          key: 2,
-          name: '解锁更高音质',
-          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
-          matches: '@ImageView -2 ViewGroup [text="解锁更高音质"]',
-          snapshotUrls: 'https://i.gkd.li/i/13230603',
-        },
-        {
-          key: 3,
-          name: '黑胶过期-VIP续费弹窗',
-          activityIds:
-            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-          matches:
-            '@ViewGroup[clickable=true][childCount=1] -(3,4) ViewGroup[childCount=19] > [text="黑胶VIP连续包季"]',
+          action: 'back',
+          activityIds: [
+            'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
+          ],
+          matches: '[text$="千万级会员曲库"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13230605',
-            'https://i.gkd.li/i/14268181',
+            'https://i.gkd.li/i/13228955',
+            'https://i.gkd.li/i/14956768',
           ],
         },
         {
-          key: 4,
-          name: '搭配会员音效-VIP支付弹窗',
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches:
-            '[text*="搭配会员音效"] + @ViewGroup[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/13391498',
+          key: 2,
+          action: 'back',
+          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
+          matches: '[text="搭配沉浸环绕声，享受空间音感"]',
+          snapshotUrls: 'https://i.gkd.li/i/13230603',
         },
         {
-          key: 5,
-          name: '搭配高清臻音-VIP支付弹窗',
-          activityIds:
-            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-          matches: '@ImageView[index=4] +5 ViewGroup [text*="确认协议并支付"]',
+          key: 6,
+          action: 'back',
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '[text="VIP歌曲免费听30分钟"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/14045917',
-            'https://i.gkd.li/i/14926722',
+            'https://i.gkd.li/i/13804534',
+            'https://i.gkd.li/i/12843383',
           ],
         },
       ],
