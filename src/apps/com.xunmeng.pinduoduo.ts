@@ -413,5 +413,22 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 19,
+      name: '全屏广告-[个性化推荐]弹窗',
+      desc: '点击[取消]',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches: ['[text="个性化推荐未开启"]', '[text="取消"]'],
+          exampleUrls:
+            'https://m.gkd.li/57941037/0dd45b10-e323-4ab0-8135-19f45115487a',
+          snapshotUrls: 'https://i.gkd.li/i/14964851',
+        },
+      ],
+    },
   ],
 });
