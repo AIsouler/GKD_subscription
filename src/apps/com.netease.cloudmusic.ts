@@ -285,8 +285,10 @@ export default defineAppConfig({
       name: '分段广告-评论区广告',
       desc: '点击[关闭]-点击[不感兴趣]',
       quickFind: true,
-      activityIds:
+      activityIds: [
         'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity',
+        'com.netease.cloudmusic.music.biz.comment.activity.ReplyCommentActivity2',
+      ],
       rules: [
         {
           key: 0,
@@ -305,6 +307,8 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14275571',
             'https://i.gkd.li/i/14275955',
             'https://i.gkd.li/i/14070500', // 通过广告下方评论visibleToUser=true防止在此页面误触
+            'https://i.gkd.li/i/14964827',
+            'https://i.gkd.li/i/14964828',
           ],
         },
         {
@@ -312,7 +316,10 @@ export default defineAppConfig({
           key: 98,
           name: '点击[直接关闭]',
           matches: '[text="直接关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/14932659',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14932659',
+            'https://i.gkd.li/i/14964832',
+          ],
         },
         {
           preKeys: [0],
