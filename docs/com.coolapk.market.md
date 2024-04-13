@@ -25,10 +25,11 @@
 - [快照-3](https://i.gkd.li/i/12774771)
 - [快照-4](https://i.gkd.li/i/13257987)
 - [快照-5](https://i.gkd.li/i/14959519)
-- [快照-6](https://i.gkd.li/i/12472633)
-- [快照-7](https://i.gkd.li/i/12655713)
-- [快照-8](https://i.gkd.li/i/12660759)
-- [快照-9](https://i.gkd.li/i/12706437)
+- [快照-6](https://i.gkd.li/i/14964859)
+- [快照-7](https://i.gkd.li/i/12472633)
+- [快照-8](https://i.gkd.li/i/12655713)
+- [快照-9](https://i.gkd.li/i/12660759)
+- [快照-10](https://i.gkd.li/i/12706437)
 
 ## 更新提示
 

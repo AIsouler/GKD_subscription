@@ -1,6 +1,6 @@
 # 小米手机管家
 
-存在 4 规则组 - [com.miui.securitycenter](/src/apps/com.miui.securitycenter.ts)
+存在 5 规则组 - [com.miui.securitycenter](/src/apps/com.miui.securitycenter.ts)
 
 ## 功能类-自动继续安装
 
@@ -27,3 +27,13 @@
 默认禁用 - 点击[知道了]
 
 - [快照-0](https://i.gkd.li/i/14468423)
+
+## 功能类-高敏感权限自动确定
+
+默认禁用 - 勾选[我已知晓可能存在的风险]-10s后点击[确定]
+
+- [示例-0](https://m.gkd.li/57941037/e9672ccd-8dd1-4060-bdbe-52bb355d404f)
+- [示例-1](https://m.gkd.li/57941037/1f2a118a-db2a-448d-a95d-f10d746b72e3)
+
+- [快照-0](https://i.gkd.li/i/14965657)
+- [快照-1](https://i.gkd.li/i/14965656)
