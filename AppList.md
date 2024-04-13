@@ -360,7 +360,7 @@
 | 蚂蚁加速器             | [com.android.tnaant](/docs/com.android.tnaant.md)                                                                                                                 | 1      |
 | 每日赛车               | [com.romielf.mrsc](/docs/com.romielf.mrsc.md)                                                                                                                     | 1      |
 | 每日英语听力           | [com.eusoft.ting.en](/docs/com.eusoft.ting.en.md)                                                                                                                 | 1      |
-| 美团                   | [com.sankuai.meituan](/docs/com.sankuai.meituan.md)                                                                                                               | 10     |
+| 美团                   | [com.sankuai.meituan](/docs/com.sankuai.meituan.md)                                                                                                               | 9      |
 | 美团外卖               | [com.sankuai.meituan.takeoutnew](/docs/com.sankuai.meituan.takeoutnew.md)                                                                                         | 3      |
 | 美团众包               | [com.sankuai.meituan.dispatch.crowdsource](/docs/com.sankuai.meituan.dispatch.crowdsource.md)                                                                     | 2      |
 | 美图秀秀               | [com.mt.mtxx.mtxx](/docs/com.mt.mtxx.mtxx.md)                                                                                                                     | 2      |
@@ -393,7 +393,7 @@
 | 欧乐影院               | [com.xiaohu.olevodmobile](/docs/com.xiaohu.olevodmobile.md)                                                                                                       | 1      |
 | 胖乖生活               | [com.qiekj.user](/docs/com.qiekj.user.md)                                                                                                                         | 2      |
 | 澎湃新闻               | [com.wondertek.paper](/docs/com.wondertek.paper.md)                                                                                                               | 1      |
-| 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 18     |
+| 拼多多                 | [com.xunmeng.pinduoduo](/docs/com.xunmeng.pinduoduo.md)                                                                                                           | 19     |
 | 皮皮搞笑               | [cn.xiaochuankeji.zuiyouLite](/docs/cn.xiaochuankeji.zuiyouLite.md)                                                                                               | 3      |
 | 皮皮喵                 | [com.gentle.ppcat](/docs/com.gentle.ppcat.md)                                                                                                                     | 1      |
 | 皮皮虾                 | [com.sup.android.superb](/docs/com.sup.android.superb.md)                                                                                                         | 9      |
@@ -581,7 +581,7 @@
 | 小米浏览器             | [com.android.browser](/docs/com.android.browser.md)                                                                                                               | 3      |
 | 小米商城               | [com.xiaomi.shop](/docs/com.xiaomi.shop.md)                                                                                                                       | 1      |
 | 小米社区               | [com.xiaomi.vipaccount](/docs/com.xiaomi.vipaccount.md)                                                                                                           | 4      |
-| 小米手机管家           | [com.miui.securitycenter](/docs/com.miui.securitycenter.md)                                                                                                       | 4      |
+| 小米手机管家           | [com.miui.securitycenter](/docs/com.miui.securitycenter.md)                                                                                                       | 5      |
 | 小米应用商店           | [com.xiaomi.market](/docs/com.xiaomi.market.md)                                                                                                                   | 6      |
 | 小米音乐               | [com.miui.player](/docs/com.miui.player.md)                                                                                                                       | 8      |
 | 小米有品               | [com.xiaomi.youpin](/docs/com.xiaomi.youpin.md)                                                                                                                   | 2      |

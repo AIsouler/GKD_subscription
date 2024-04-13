@@ -1,6 +1,6 @@
 # 美团
 
-存在 10 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
+存在 9 规则组 - [com.sankuai.meituan](/src/apps/com.sankuai.meituan.ts)
 
 ## 更新提示
 
@@ -19,6 +19,8 @@
 - [快照-2](https://i.gkd.li/i/12646768)
 - [快照-3](https://i.gkd.li/i/13694877)
 - [快照-4](https://i.gkd.li/i/12739204)
+- [快照-5](https://i.gkd.li/i/13695703)
+- [快照-6](https://i.gkd.li/i/14964911)
 
 ## 评价提示-订单调查弹窗
 
@@ -51,12 +53,6 @@
 默认禁用 - 点击跳过
 
 - [快照-0](https://i.gkd.li/i/13439134)
-
-## 全屏广告-订单完成后的红包弹窗
-
-默认禁用 - 点击关闭
-
-- [快照-0](https://i.gkd.li/i/13695703)
 
 ## 全屏广告-新人返场特惠
 
