@@ -29,10 +29,17 @@ export default defineAppConfig({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           quickFind: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches: '@ImageView[clickable=true] - * >2 [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/i/14945552',
+        },
+        {
+          key: 1,
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/14964868',
         },
       ],
     },
