@@ -36,15 +36,25 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '局部广告-个人页顶部广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
+          key: 0,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
             'ViewGroup[childCount=2] > ImageView + FrameLayout > LinearLayout > ImageView',
           exampleUrls:
             'https://m.gkd.li/87047583/9e150986-2103-4130-a12f-12ed2b07ef90',
           snapshotUrls: 'https://i.gkd.li/i/13558426',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '@[desc="关闭"] <n * > [text^="豪华VIP"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/adb9a250-d23d-48ef-b1a5-5e828d56cb97',
+          snapshotUrls: 'https://i.gkd.li/i/14964889',
         },
       ],
     },
