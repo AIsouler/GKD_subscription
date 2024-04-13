@@ -7,16 +7,12 @@ export default defineAppConfig({
     {
       key: 0,
       name: '青少年模式',
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '@[id="com.smile.gifmaker:id/positive"] + [id="com.smile.gifmaker:id/set_teenage_mode"]',
-        },
-        {
-          matches:
-            '[id="com.smile.gifmaker:id/set_teenage_mode"] + [id="com.smile.gifmaker:id/positive"]',
+          matches: '[text="开启青少年模式"] + [text="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/12708609',
         },
       ],
