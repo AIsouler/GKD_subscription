@@ -70,5 +70,31 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 14,
+      name: '功能类-高敏感权限自动确定',
+      desc: '勾选[我已知晓可能存在的风险]-10s后点击[确定]',
+      quickFind: true,
+      activityIds:
+        'com.miui.permcenter.privacymanager.SpecialPermissionInterceptActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[checked=false] + [text="我已知晓可能存在的风险，并自愿承担可能导致的后果"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e9672ccd-8dd1-4060-bdbe-52bb355d404f',
+          snapshotUrls: 'https://i.gkd.li/i/14965657',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[text="确定"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1f2a118a-db2a-448d-a95d-f10d746b72e3',
+          snapshotUrls: 'https://i.gkd.li/i/14965656',
+        },
+      ],
+    },
   ],
 });
