@@ -31,6 +31,13 @@ export default defineAppConfig({
           matches: '[vid="wf_interstitial_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/14927523',
         },
+        {
+          key: 3,
+          activityIds: 'com.wifitutu.ui.main.MainActivity',
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/14964913',
+        },
       ],
     },
     {
