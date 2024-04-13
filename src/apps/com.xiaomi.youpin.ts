@@ -7,14 +7,16 @@ export default defineAppConfig({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      activityIds: [
-        'com.xiaomi.youpin.globalpopwindow.popwindow.PopWindowActivity',
-      ],
       rules: [
         {
+          activityIds:
+            'com.xiaomi.youpin.globalpopwindow.popwindow.PopWindowActivity',
           matches:
-            '@Image <2 View[childCount=2] < [id="app"] < [text="有品"] < * < [id="android:id/content"]',
-          snapshotUrls: ['https://i.gkd.li/i/12836727'],
+            'WebView[text="有品"] > View > View[childCount=2] > Image[index=1][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14964897',
+            'https://i.gkd.li/i/12836727',
+          ],
         },
       ],
     },
@@ -27,7 +29,7 @@ export default defineAppConfig({
       rules: [
         {
           matches: '[id="com.xiaomi.youpin:id/ypd_alert_close_image"]',
-          snapshotUrls: ['https://i.gkd.li/i/12836775'],
+          snapshotUrls: 'https://i.gkd.li/i/12836775',
         },
       ],
     },
