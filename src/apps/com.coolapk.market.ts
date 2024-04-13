@@ -71,9 +71,12 @@ export default defineAppConfig({
         {
           preKeys: [1],
           key: 2,
-          name: '去广告/免广告-点击关闭',
-          matches: '[text*="广告"] <n * > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/14964859',
+          name: '点击[不感兴趣]/[关闭]',
+          matches: '@[text="不感兴趣" || text="关闭"] <n * > [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14959519',
+            'https://i.gkd.li/i/14964859',
+          ],
         },
         {
           preKeys: [1, 2],
@@ -86,13 +89,6 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12660759',
             'https://i.gkd.li/i/12706437',
           ],
-        },
-        {
-          preKeys: [1],
-          key: 4,
-          name: '去广告/免广告-点击关闭',
-          matches: '[text*="广告"] <n * > [text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/14959519',
         },
       ],
     },
