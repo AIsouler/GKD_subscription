@@ -12,8 +12,11 @@ export default defineAppConfig({
       resetMatch: 'app',
       rules: [
         {
-          matches: '[text="开启青少年模式"] + [text="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/i/12708609',
+          matches: ['[text="开启青少年模式"]', '[text="我知道了"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/12708609',
+            'https://i.gkd.li/i/14969798',
+          ],
         },
       ],
     },
