@@ -247,11 +247,21 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.ss.android.ugc.aweme.live.LiveDummyActivity',
-          matches: '[text="去首页商城，查订单更方便"] +2 [text="知道了"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/385f4262-d744-4482-887c-be2e1f0c0943',
-          snapshotUrls: 'https://i.gkd.li/i/14533732',
+          activityIds: [
+            'com.ss.android.ugc.aweme.live.LiveDummyActivity',
+            'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
+            'com.bytedance.android.shopping.store.tabkit.container.TabKitActivity',
+          ],
+          matches: [
+            'FlattenUIText[text*="首页商城"]',
+            'FlattenUIText[text="去看看"]',
+            'FlattenUIText[text="知道了"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14533732',
+            'https://i.gkd.li/i/14969825',
+            'https://i.gkd.li/i/14969835',
+          ],
         },
       ],
     },
