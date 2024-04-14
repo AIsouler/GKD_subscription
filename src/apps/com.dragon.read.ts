@@ -204,10 +204,11 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches:
-            '@ImageView[clickable=true] +2 [text="恭喜获得限时会员福利"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/00f23cee-4271-45fc-9a45-988ae20d0dde',
-          snapshotUrls: 'https://i.gkd.li/i/14430326',
+            '@ImageView[clickable=true][visibleToUser=true] <n * > [text="领取限时福利"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14430326',
+            'https://i.gkd.li/i/14969861',
+          ],
         },
       ],
     },
