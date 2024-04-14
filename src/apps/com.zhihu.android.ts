@@ -213,12 +213,12 @@ export default defineAppConfig({
     },
     {
       key: 15,
-      name: '局部广告-悬浮小广告',
+      name: '局部广告-悬浮广告',
+      quickFind: true,
       rules: [
         {
           key: 0,
           name: '发现页面-右侧年卡折扣悬浮窗',
-          quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: '@[vid="activity_close"] + * > [vid="activity_img"]',
           snapshotUrls: 'https://i.gkd.li/i/14296251',
@@ -226,11 +226,18 @@ export default defineAppConfig({
         {
           key: 1,
           name: '首页-右侧悬浮窗广告',
-          quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] + * >2 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14635636',
+        },
+        {
+          key: 2,
+          name: '回答页-底部关注悬浮窗',
+          activityIds:
+            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
+          matches: '[vid="close_img"]',
+          snapshotUrls: 'https://i.gkd.li/i/14970008',
         },
       ],
     },
