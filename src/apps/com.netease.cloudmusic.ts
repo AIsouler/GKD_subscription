@@ -192,6 +192,13 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12843383',
           ],
         },
+        {
+          key: 7,
+          action: 'back',
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '[vid="view_button_main"][text*="立即续费"]',
+          snapshotUrls: 'https://i.gkd.li/i/14969806',
+        },
       ],
     },
     {
