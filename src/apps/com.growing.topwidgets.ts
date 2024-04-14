@@ -38,8 +38,11 @@ export default defineAppConfig({
         {
           key: 1,
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/14964868',
+            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14964868',
+            'https://i.gkd.li/i/14969910', // 避免误触
+          ],
         },
       ],
     },
