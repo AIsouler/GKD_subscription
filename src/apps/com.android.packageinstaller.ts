@@ -42,8 +42,6 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.android.packageinstaller.DeleteStagedFileOnResult',
           matches: '[vid="confirm_bottom_button_layout"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1decf3eb-ef21-4e67-9fd9-ce8727a9b9b5',
           snapshotUrls: 'https://i.gkd.li/i/14228348',
         },
         {
@@ -52,9 +50,19 @@ export default defineAppConfig({
           quickFind: true,
           activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
           matches: '[vid="checkbox"][checked=false]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/332c6590-da4b-463d-99e1-b43a81800fd3',
           snapshotUrls: 'https://i.gkd.li/i/14595443',
+        },
+        {
+          key: 4,
+          quickFind: true,
+          position: {
+            left: 'width * 0.7185',
+            top: 'width * 0.1157',
+          },
+          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
+          excludeMatches: ['[text="继续安装"]', '[text="完成"]'],
+          matches: '[vid="buttons_panel"]',
+          snapshotUrls: 'https://i.gkd.li/i/14969116',
         },
       ],
     },
