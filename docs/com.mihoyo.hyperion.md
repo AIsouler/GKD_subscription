@@ -32,8 +32,9 @@
 
 - [快照-0](https://i.gkd.li/i/14369790)
 - [快照-1](https://i.gkd.li/i/14371469)
-- [快照-2](https://i.gkd.li/i/14371439)
-- [快照-3](https://i.gkd.li/i/14371469)
+- [快照-2](https://i.gkd.li/i/14967627)
+- [快照-3](https://i.gkd.li/i/14371439)
+- [快照-4](https://i.gkd.li/i/14371469)
 
 ## 功能类-星穹铁道自动签到
 
@@ -46,4 +47,5 @@
 - [快照-0](https://i.gkd.li/i/14376296)
 - [快照-1](https://i.gkd.li/i/14432972)
 - [快照-2](https://i.gkd.li/i/14371787)
-- [快照-3](https://i.gkd.li/i/14371790)
+- [快照-3](https://i.gkd.li/i/14967631)
+- [快照-4](https://i.gkd.li/i/14371790)
