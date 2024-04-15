@@ -5,6 +5,22 @@ export default defineAppConfig({
   name: 'QQ阅读',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: [
+        {
+          key: 0,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/14978239',
+        },
+      ],
+    },
+    {
       key: 2,
       name: '青少年模式',
       quickFind: true,
