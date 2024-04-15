@@ -272,6 +272,20 @@ export default defineAppConfig({
       ],
     },
     {
+      key: 17,
+      name: '功能类-热榜页自动点击[展开更多]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          matches: '@[clickable=true] >2 [text="展开更多"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/09616b29-8a83-4f0f-9f8e-0100fa61738d',
+          snapshotUrls: 'https://i.gkd.li/i/14974198',
+        },
+      ],
+    },
+    {
       key: 101,
       name: '功能类-自动展开回答',
       desc: '自动点击展开',
