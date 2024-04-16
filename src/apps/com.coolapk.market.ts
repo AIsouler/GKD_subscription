@@ -59,6 +59,7 @@ export default defineAppConfig({
         {
           key: 1,
           name: '点击右上角x按钮',
+          excludeMatches: '[text="回复"] + [text="发布"]', // 避免在编辑评论时误触图片右上角关闭按钮
           matches: '[id="com.coolapk.market:id/close_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12707506',
@@ -66,6 +67,7 @@ export default defineAppConfig({
             'https://i.gkd.li/i/12642148',
             'https://i.gkd.li/i/12774771',
             'https://i.gkd.li/i/13257987',
+            'https://i.gkd.li/i/14996359', // 避免误触
           ],
         },
         {
