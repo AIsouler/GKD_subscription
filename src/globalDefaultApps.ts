@@ -90,6 +90,7 @@ export const blackListAppIDs: string[] = [
   'com.viewblocker.jrsen',
   'com.tsng.hidemyapplist',
   'com.pittvandewitt.wavelet',
+  'one.yufz.onebox',
 
   // 系统自带非系统应用
   // 小米
