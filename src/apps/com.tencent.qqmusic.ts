@@ -124,5 +124,26 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 9,
+      name: '分段广告-评论区广告',
+      desc: '点击右下角展开-点击[不感兴趣]',
+      activityIds:
+        'com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar',
+      rules: [
+        {
+          key: 0,
+          matches:
+            'RecyclerView > ViewGroup > ViewGroup[childCount=6] > @ViewGroup[clickable=true][childCount=1] > ViewGroup > View',
+          snapshotUrls: 'https://i.gkd.li/i/15010210',
+        },
+        {
+          preKeys: [0],
+          quickFind: true,
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/15010226',
+        },
+      ],
+    },
   ],
 });
