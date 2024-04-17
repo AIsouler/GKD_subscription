@@ -1,6 +1,10 @@
 # QQ阅读
 
-存在 4 规则组 - [com.qq.reader](/src/apps/com.qq.reader.ts)
+存在 5 规则组 - [com.qq.reader](/src/apps/com.qq.reader.ts)
+
+## 开屏广告
+
+- [快照-0](https://i.gkd.li/i/14978239)
 
 ## 青少年模式
 

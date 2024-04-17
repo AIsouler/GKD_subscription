@@ -1,6 +1,6 @@
 # 知乎
 
-存在 8 规则组 - [com.zhihu.android](/src/apps/com.zhihu.android.ts)
+存在 9 规则组 - [com.zhihu.android](/src/apps/com.zhihu.android.ts)
 
 ## 分段广告-信息流广告
 
@@ -79,6 +79,14 @@
 - [快照-0](https://i.gkd.li/i/14445502)
 - [快照-1](https://i.gkd.li/i/14445815)
 - [快照-2](https://i.gkd.li/i/14445502)
+
+## 功能类-热榜页自动点击[展开更多]
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/57941037/09616b29-8a83-4f0f-9f8e-0100fa61738d)
+
+- [快照-0](https://i.gkd.li/i/14974198)
 
 ## 功能类-自动展开回答
 
