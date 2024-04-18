@@ -12,7 +12,7 @@ export default defineAppConfig({
       activityIds: 'com.miui.permcenter.install.AdbInstallActivity',
       rules: [
         {
-          matches: '[text="继续安装"]',
+          matches: '[id="android:id/button2"]',
           snapshotUrls: 'https://i.gkd.li/i/13269875',
         },
       ],
