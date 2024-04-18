@@ -413,7 +413,7 @@ export default defineAppConfig({
             'com.tencent.mm.plugin.finder.ui.',
             'com.tencent.mm.ui.LauncherUI',
           ],
-          matches: '[text*="青少年模式"] +(2,3) [text="我知道了"]',
+          matches: '[text*="青少年模式"] <n * > [text="我知道了"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13538145',
             'https://i.gkd.li/i/13575195',
