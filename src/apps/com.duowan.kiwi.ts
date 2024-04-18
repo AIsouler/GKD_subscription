@@ -7,12 +7,15 @@ export default defineAppConfig({
     {
       key: 1,
       name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
       quickFind: true,
-      rules:
-        '[id="com.duowan.kiwi:id/hyui_dialog_button_positive"][text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/12908790',
+      matchTime: 10000,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      rules: '[text*="青少年模式"] + * > [text="我知道了"]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/12908790',
+        'https://i.gkd.li/i/15025239',
+      ],
     },
     {
       key: 2,
