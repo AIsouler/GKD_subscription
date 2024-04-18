@@ -49,12 +49,15 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          quickFind: true,
           activityIds: 'com.kugou.android.app.MediaActivity',
-          matches: '@[desc="关闭"] <n * > [text^="豪华VIP"]',
+          matches:
+            'TextView[text!=null] <2 ViewGroup[childCount=6] > ImageView[desc="关闭"]',
           exampleUrls:
             'https://m.gkd.li/57941037/adb9a250-d23d-48ef-b1a5-5e828d56cb97',
-          snapshotUrls: 'https://i.gkd.li/i/14964889',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14964889',
+            'https://i.gkd.li/i/15024041',
+          ],
         },
       ],
     },
