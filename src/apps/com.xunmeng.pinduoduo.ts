@@ -312,9 +312,16 @@ export default defineAppConfig({
             '[text="拼单返现"]',
             'WebView[text="拼多多"] >3 View[index=0] > Image[clickable=true][visibleToUser=true][childCount=0]',
           ],
-          exampleUrls:
-            'https://m.gkd.li/57941037/abc035bb-0d18-4711-b64c-a5319dd2191d',
           snapshotUrls: 'https://i.gkd.li/i/14549422',
+        },
+        {
+          key: 2,
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
+          matches: [
+            '[text="赶快邀请好友来拼单吧"]',
+            '[text$="下单成功"] + Image[visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/15025702',
         },
       ],
     },
