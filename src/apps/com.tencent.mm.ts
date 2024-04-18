@@ -451,16 +451,14 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '8.0.44以下',
           quickFind: true,
           activityIds:
             'com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI',
-          matches: '[text="展开更早的消息"] < [id="com.tencent.mm:id/aqc"]',
+          matches: '@[clickable=true] > [text="展开更早的消息"]',
           snapshotUrls: 'https://i.gkd.li/i/13790550',
         },
         {
           key: 1,
-          name: '8.0.44',
           matches: '[desc="展开更早的消息"]',
           snapshotUrls: 'https://i.gkd.li/i/13790949',
         },
