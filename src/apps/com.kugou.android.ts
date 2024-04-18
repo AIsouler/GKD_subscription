@@ -59,6 +59,14 @@ export default defineAppConfig({
             'https://i.gkd.li/i/15024041',
           ],
         },
+        {
+          key: 2,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '[desc="关闭广告"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/8bd6dafc-e610-4c0d-a486-02a11535e610',
+          snapshotUrls: 'https://i.gkd.li/i/15024812',
+        },
       ],
     },
     {
