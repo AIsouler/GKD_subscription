@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 2,
-      name: '局部广告-游戏浏览页面推荐广告',
+      name: '分段广告-游戏浏览页面推荐广告',
       desc: '自动点击"对此内容不感兴趣"',
       rules: [
         {
