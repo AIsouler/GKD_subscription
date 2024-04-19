@@ -35,16 +35,27 @@ export default defineAppConfig({
             'https://i.gkd.li/i/13218134',
           ],
         },
+        {
+          key: 4,
+          quickFind: true,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '@[clickable=true] > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/15041019',
+        },
       ],
     },
     {
       key: 2,
       name: '全屏广告-首页-底部弹窗广告',
       activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
-      rules: 'View[id="js_close_btn"][desc="关闭"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13115121',
-        'https://i.gkd.li/i/14798904',
+      rules: [
+        {
+          matches: 'View[id="js_close_btn"][desc="关闭"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13115121',
+            'https://i.gkd.li/i/14798904',
+          ],
+        },
       ],
     },
     {
@@ -55,17 +66,25 @@ export default defineAppConfig({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      rules: '[text="抢先体验"] -2 [text="不再提醒"]',
-      snapshotUrls: 'https://i.gkd.li/i/13178485',
+      rules: [
+        {
+          matches: '[text="抢先体验"] -2 [text="不再提醒"]',
+          snapshotUrls: 'https://i.gkd.li/i/13178485',
+        },
+      ],
     },
     {
       key: 4,
       name: '全屏广告-免流弹窗',
       desc: '点击[流量够用]',
-      activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-      quickFind: true,
-      rules: '[text="流量够用"]',
-      snapshotUrls: 'https://i.gkd.li/i/13197868',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[text="流量够用"]',
+          snapshotUrls: 'https://i.gkd.li/i/13197868',
+        },
+      ],
     },
     {
       key: 5,
@@ -74,7 +93,7 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
-          matches: '[id="com.tencent.qqmusic:id/c5i"] >5 [desc="关闭按钮"]',
+          matches: '@[desc="关闭按钮"] <n * > [desc^="看广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13806773',
         },
       ],
@@ -102,8 +121,6 @@ export default defineAppConfig({
             'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
           matches:
             '[text^="推荐您开启臻品音质"] -3 [desc="关闭"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/5efa87c2-5097-4c3f-b36d-2cb3bb768e8a',
           snapshotUrls: 'https://i.gkd.li/i/14549936',
         },
       ],
@@ -118,8 +135,6 @@ export default defineAppConfig({
       rules: [
         {
           matches: '@[vid="close_btn"] - * > [text*="好评"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/65146157-9200-4a1a-b1cc-4a3ca70de351',
           snapshotUrls: 'https://i.gkd.li/i/14881903',
         },
       ],
@@ -139,6 +154,7 @@ export default defineAppConfig({
         },
         {
           preKeys: [0],
+          key: 99,
           quickFind: true,
           matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/15010226',
