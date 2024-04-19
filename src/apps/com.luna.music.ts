@@ -78,10 +78,13 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      quickFind: true,
       name: '功能类-看广告获取听歌时长',
       desc: '点击领取成功-点击坚持退出',
-      activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+      quickFind: true,
+      activityIds: [
+        'com.ss.android.excitingvideo.ExcitingVideoActivity',
+        'com.luna.biz.ad.AdActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -89,13 +92,17 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/i/14767236',
             'https://i.gkd.li/i/14391770',
+            'https://i.gkd.li/i/15033124',
           ],
         },
         {
           preKeys: [0],
           key: 1,
           matches: '[text="坚持退出"]',
-          snapshotUrls: 'https://i.gkd.li/i/14767235',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14767235',
+            'https://i.gkd.li/i/15033126',
+          ],
         },
       ],
     },
