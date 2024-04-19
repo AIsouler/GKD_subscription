@@ -31,7 +31,6 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '首页优惠弹窗1',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             'FrameLayout > FrameLayout > RelativeLayout[childCount=2] > @ImageView[id!=null][clickable=true][visibleToUser=true] + ImageView',
@@ -39,7 +38,6 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          name: '首页优惠弹窗2',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             'View[id=null] > TextView + View > View +(4) View[clickable=true] > Image[id=null]',
@@ -47,11 +45,18 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '首页优惠弹窗3',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true][visibleToUser=true] < ViewGroup + ViewGroup >7 [text="开心收下"]',
           snapshotUrls: 'https://i.gkd.li/i/13761182',
+        },
+        {
+          key: 3,
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '@ImageView[visibleToUser=true] < * < * +2 * [text="去抢购"]',
+          snapshotUrls: 'https://i.gkd.li/i/15032649',
         },
       ],
     },
