@@ -6,8 +6,6 @@
 
 默认禁用
 
-- [示例-0](https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b)
-
 - [快照-0](https://i.gkd.li/i/12505350)
 - [快照-1](https://i.gkd.li/i/12505286)
 - [快照-2](https://i.gkd.li/i/12505365)
@@ -35,7 +33,7 @@
 - [快照-2](https://i.gkd.li/i/12882678)
 - [快照-3](https://i.gkd.li/i/12882554)
 
-## 局部广告-文档末尾广告
+## 分段广告-文档末尾广告
 
 默认禁用
 

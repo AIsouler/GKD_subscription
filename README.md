@@ -33,9 +33,9 @@ https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 https://cdn.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.json5
 ```
 
-当前版本: v62
+当前版本: v63
 
-当前订阅文件已适配 726 个应用，共有 1697 应用规则组，3 全局规则组
+当前订阅文件已适配 724 个应用，共有 1693 应用规则组，3 全局规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
@@ -51,7 +51,7 @@ https://cdn.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.jso
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=62)
+![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=63)
 
 ## Star History
 
