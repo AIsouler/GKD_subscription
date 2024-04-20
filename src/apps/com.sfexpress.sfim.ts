@@ -6,9 +6,11 @@ export default defineAppConfig({
   groups: [
     {
       key: 10,
-      name: '功能类-登录确认',
-      desc: '自动点击"登录"按钮',
+      name: '功能类-自动确认登录',
+      desc: '自动点击[登录]按钮',
       quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
