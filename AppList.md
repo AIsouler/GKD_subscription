@@ -627,7 +627,7 @@
 | 学小易                 | [com.xuexiaoyi.xxy](/docs/com.xuexiaoyi.xxy.md)                                                                                                                   | 2      |
 | 学习强国               | [cn.xuexi.android](/docs/cn.xuexi.android.md)                                                                                                                     | 2      |
 | 学习通                 | [com.chaoxing.mobile](/docs/com.chaoxing.mobile.md)                                                                                                               | 1      |
-| 迅雷                   | [com.xunlei.downloadprovider](/docs/com.xunlei.downloadprovider.md)                                                                                               | 7      |
+| 迅雷                   | [com.xunlei.downloadprovider](/docs/com.xunlei.downloadprovider.md)                                                                                               | 9      |
 | 迅游手游加速器         | [cn.wsds.gamemaster](/docs/cn.wsds.gamemaster.md)                                                                                                                 | 2      |
 | 央视体育               | [com.cctv.cctv5ultimate](/docs/com.cctv.cctv5ultimate.md)                                                                                                         | 1      |
 | 央视新闻               | [cn.cntvnews](/docs/cn.cntvnews.md)                                                                                                                               | 2      |

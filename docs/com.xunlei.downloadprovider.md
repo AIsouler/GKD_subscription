@@ -1,6 +1,13 @@
 # 迅雷
 
-存在 7 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
+存在 9 规则组 - [com.xunlei.downloadprovider](/src/apps/com.xunlei.downloadprovider.ts)
+
+## 开屏广告
+
+- [快照-0](https://i.gkd.li/i/15048443)
+- [快照-1](https://i.gkd.li/i/15048416)
+- [快照-2](https://i.gkd.li/i/15048354)
+- [快照-3](https://i.gkd.li/i/15048376)
 
 ## 分段广告-视频详情页广告
 
@@ -76,5 +83,13 @@
 - [快照-0](https://i.gkd.li/i/12707698)
 - [快照-1](https://i.gkd.li/i/13448909)
 - [快照-2](https://i.gkd.li/i/12882928)
-- [快照-3](https://i.gkd.li/i/12882939)
-- [快照-4](https://i.gkd.li/i/13259268)
+- [快照-3](https://i.gkd.li/i/13259268)
+
+## 局部广告-卡片广告
+
+默认禁用 - 点击关闭
+
+- [快照-0](https://i.gkd.li/i/12882939)
+- [快照-1](https://i.gkd.li/i/15048352)
+- [快照-2](https://i.gkd.li/i/15048355)
+- [快照-3](https://i.gkd.li/i/15048357)
