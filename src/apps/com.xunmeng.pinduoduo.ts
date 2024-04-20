@@ -404,8 +404,12 @@ export default defineAppConfig({
         {
           key: 1,
           quickFind: true,
-          matches: '@ImageView[clickable=true] + * >2 [text="开启通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/15004580',
+          action: 'back',
+          matches: '[text="及时获取物流消息"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15004580',
+            'https://i.gkd.li/i/15048085',
+          ],
         },
       ],
     },
