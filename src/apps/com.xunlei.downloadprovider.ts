@@ -6,6 +6,38 @@ export default defineAppConfig({
   deprecatedKeys: [11],
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      rules: [
+        {
+          key: 0,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15048443',
+            'https://i.gkd.li/i/15048416',
+          ],
+        },
+        {
+          key: 1,
+          position: {
+            left: 'width * 0.9055',
+            top: 'width * 0.1611',
+          },
+          excludeMatches: '[text*="跳过"]',
+          matches: '[vid="native_container"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15048354',
+            'https://i.gkd.li/i/15048376', // 防止在此页面提前触发规则
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '分段广告-视频详情页广告',
       rules: [
@@ -32,9 +64,9 @@ export default defineAppConfig({
           matches:
             '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13625418', // activityId: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-            'https://i.gkd.li/i/12707717', // activityId: 'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-            'https://i.gkd.li/i/12707702', // activityId: 'com.xunlei.downloadprovider.feedback.view'
+            'https://i.gkd.li/i/13625418',
+            'https://i.gkd.li/i/12707717',
+            'https://i.gkd.li/i/12707702',
           ],
         },
         {
@@ -287,14 +319,6 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/12882928',
         },
         {
-          key: 2,
-          name: '"下载页"2',
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches:
-            '[text="立即开通"] + [id="com.xunlei.downloadprovider:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12882939',
-        },
-        {
           key: 3,
           name: '"首页"',
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
@@ -304,6 +328,24 @@ export default defineAppConfig({
         },
       ],
     },
-    // key = 11 已被使用，后续不可再使用
+    {
+      key: 12,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches:
+            '[((text$="领取" || text^="立即") && text.length<5) || text^="此云盘为您的私人云盘"] <n * > [vid="close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12882939',
+            'https://i.gkd.li/i/15048352',
+            'https://i.gkd.li/i/15048355',
+            'https://i.gkd.li/i/15048357',
+          ],
+        },
+      ],
+    },
   ],
 });
