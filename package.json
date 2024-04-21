@@ -38,8 +38,8 @@
     "./dist"
   ],
   "dependencies": {
-    "@commitlint/cli": "19.2.1",
-    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/cli": "19.2.2",
+    "@commitlint/config-conventional": "19.2.2",
     "@commitlint/types": "19.0.3",
     "@eslint/eslintrc": "^3.0.2",
     "@eslint/js": "^9.0.0",
