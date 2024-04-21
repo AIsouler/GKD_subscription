@@ -1,4 +1,3 @@
-
 import { batchImportApps } from '@gkd-kit/tools';
 
 const apps = await batchImportApps(`${import.meta.dirname}/apps`);
