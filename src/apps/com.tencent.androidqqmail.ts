@@ -23,7 +23,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '英文版邮箱广告-点击Ads',
-          matches: ['[id="com.tencent.androidqqmail:id/advertise_view_ad"]'],
+          matches: '[id="com.tencent.androidqqmail:id/advertise_view_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/12842757',
         },
         {
@@ -43,9 +43,11 @@ export default defineGkdApp({
           preKeys: [0, 1], // https://github.com/gkd-kit/subscription/issues/1776
           key: 9,
           name: '点击[不感兴趣]',
-          matches:
-            '[text="赞助商提供的广告"] < FrameLayout + @FrameLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/12775862',
+          matches: '[text="不感兴趣"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12775862',
+            'https://i.gkd.li/i/15051479',
+          ],
         },
       ],
     },
@@ -59,7 +61,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: '[text="立刻开启"] - [text="以后再说"]',
-          snapshotUrls: ['https://i.gkd.li/i/13043069'],
+          snapshotUrls: 'https://i.gkd.li/i/13043069',
         },
       ],
     },
