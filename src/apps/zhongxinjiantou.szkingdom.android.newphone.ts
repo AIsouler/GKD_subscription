@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'zhongxinjiantou.szkingdom.android.newphone',
   name: '蜻蜓点金',
   groups: [

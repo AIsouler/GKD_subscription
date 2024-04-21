@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'io.iftech.android.box',
   name: '小组件盒子',
   groups: [
@@ -29,7 +29,7 @@ export default defineAppConfig({
       name: '全屏广告-弹窗广告',
       rules: [
         {
-          name: '穿山甲',
+          key: 0,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
@@ -37,27 +37,27 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/12706209',
         },
         {
-          name: '优量汇',
+          key: 1,
           activityIds: 'io.iftech.android.box.main.HomeActivity',
           matches: 'ImageView - FrameLayout > ImageView[id=null]',
           snapshotUrls: 'https://i.gkd.li/i/12706209',
         },
         {
-          name: '百青藤',
+          key: 2,
           activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
           matches:
             '[id="io.iftech.android.box:id/anythink_myoffer_btn_close_id"]',
           snapshotUrls: 'https://i.gkd.li/i/12706228',
         },
         {
-          name: '百青藤',
+          key: 3,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout + ImageView + ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12706236',
         },
         {
-          name: '百青藤',
+          key: 4,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout > RelativeLayout > ImageView + ImageView',

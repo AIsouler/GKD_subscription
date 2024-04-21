@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.tencent.qqlive',
   name: '腾讯视频',
-  deprecatedKeys: [5, 19],
   groups: [
     {
       key: 0,
@@ -208,7 +207,7 @@ export default defineAppConfig({
         },
         {
           key: 3,
-          name: '居中广告',
+          name: '居中广告-1',
           matches:
             'ViewGroup[childCount>10] > FrameLayout[index=10] >4 ImageView[clickable=true][visibleToUser=true][index=1 || index=3]',
           snapshotUrls: [
@@ -219,7 +218,7 @@ export default defineAppConfig({
         },
         {
           key: 4,
-          name: '居中广告',
+          name: '居中广告-2',
           quickFind: true,
           matches: '[id="com.tencent.qqlive:id/pause_ad_close"]',
           exampleUrls:

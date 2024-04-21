@@ -1,7 +1,9 @@
-import subsConfig from '../src/config';
-import { checkConfig } from '../src/file';
-import picocolors from 'picocolors';
+import subscription from '../src/subscription';
+import { checkSubscription } from '@gkd-kit/tools';
+import { checkDeprecatedGroupKeys } from '../src/appDeprecatedKeys';
 
-checkConfig(subsConfig);
+checkSubscription(subscription);
 
-console.log(picocolors.green('校验成功, 合法订阅'));
+checkDeprecatedGroupKeys(subscription.apps!);
+
+export default subscription;
