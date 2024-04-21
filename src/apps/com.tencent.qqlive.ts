@@ -207,7 +207,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          name: '居中广告',
+          name: '居中广告-1',
           matches:
             'ViewGroup[childCount>10] > FrameLayout[index=10] >4 ImageView[clickable=true][visibleToUser=true][index=1 || index=3]',
           snapshotUrls: [
@@ -218,7 +218,7 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          name: '居中广告',
+          name: '居中广告-2',
           quickFind: true,
           matches: '[id="com.tencent.qqlive:id/pause_ad_close"]',
           exampleUrls:
