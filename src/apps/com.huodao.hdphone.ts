@@ -17,5 +17,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.huodao.hdphone.mvp.view.main.NewMainActivity',
+          matches: '[vid="iv_recycle_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/dc1534ca-9ab1-4d7b-8da4-6c7992882c94',
+          snapshotUrls: 'https://i.gkd.li/i/15052025',
+        },
+      ],
+    },
   ],
 });
