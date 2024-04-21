@@ -165,7 +165,7 @@ export default defineGkdApp({
         // 正常更新
         {
           key: 0,
-          name: '点击"继续更新"',
+          name: '点击"继续更新"-1',
           activityIds: [
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
@@ -179,7 +179,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '点击"继续更新"',
+          name: '点击"继续更新"-2',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
           matches: '@[text="继续更新"] + [text="取消更新"]',
           snapshotUrls: [

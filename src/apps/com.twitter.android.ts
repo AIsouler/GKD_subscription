@@ -58,7 +58,7 @@ export default defineGkdApp({
       actionCd: 3000,
       rules: [
         {
-          name: '点击右上角关闭',
+          name: '点击右上角关闭-1',
           key: 0,
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] +n [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
@@ -68,7 +68,7 @@ export default defineGkdApp({
           ],
         },
         {
-          name: '点击右上角关闭',
+          name: '点击右上角关闭-2',
           key: 1,
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text$="推荐"]',
@@ -120,7 +120,7 @@ export default defineGkdApp({
       actionCd: 3000,
       rules: [
         {
-          name: '点击右上角关闭',
+          name: '点击右上角关闭-1',
           key: 0,
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] +n [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
@@ -130,7 +130,7 @@ export default defineGkdApp({
           ],
         },
         {
-          name: '点击右上角关闭',
+          name: '点击右上角关闭-2',
           key: 1,
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text$="推荐"]',
