@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.flutter3.ctangxin.vf0egg', // 注意 appId 有随机后缀, 每个版本都变，需修改为你自己的 appId
   name: '糖心Vlog',
   groups: [

@@ -1,4 +1,7 @@
-import apps from './rawApps';
+
+import { batchImportApps } from '@gkd-kit/tools';
+
+const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则

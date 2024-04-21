@@ -1,9 +1,0 @@
-# 布丁扫描
-
-存在 1 规则组 - [com.wibo.bigbang.ocr](/src/apps/com.wibo.bigbang.ocr.ts)
-
-## 更新提示
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/i/13360281)

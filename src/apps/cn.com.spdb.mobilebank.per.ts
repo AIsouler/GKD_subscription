@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'cn.com.spdb.mobilebank.per',
   name: '浦发银行',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 1,
