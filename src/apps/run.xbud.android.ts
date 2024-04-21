@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'run.xbud.android',
   name: '小步点',
   groups: [

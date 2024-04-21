@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.banjixiaoguanjia.app',
   name: '班级小管家',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 1,

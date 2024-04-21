@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'cn.net.shizheng.study',
   name: '365时政',
   groups: [

@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.dianping.v1',
   name: '大众点评',
   groups: [

@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.tuying.kuimg.rjm',
   name: '热剧猫',
   groups: [

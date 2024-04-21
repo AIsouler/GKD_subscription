@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.dewmobile.kuaiya',
   name: '快牙',
   groups: [

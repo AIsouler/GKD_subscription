@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.dragon.read',
   name: '番茄免费小说',
-  deprecatedKeys: [-1, 11, 13],
   groups: [
     {
       key: 0,

@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.baidu.xin.aiqicha',
   name: '爱企查',
-  deprecatedKeys: [0, 11],
   groups: [
     {
       key: 1,

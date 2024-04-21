@@ -1,5 +1,5 @@
-import { defineAppConfig } from '../types';
-export default defineAppConfig({
+import { defineGkdApp } from '@gkd-kit/define';
+export default defineGkdApp({
   id: 'com.x2era.xcloud.app',
   name: 'Fa米家',
   groups: [

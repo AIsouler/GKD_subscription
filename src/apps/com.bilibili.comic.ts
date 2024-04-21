@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.bilibili.comic',
   name: '哔哩哔哩漫画',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 1,

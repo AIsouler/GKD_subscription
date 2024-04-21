@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.xunlei.downloadprovider',
   name: '迅雷',
-  deprecatedKeys: [11],
   groups: [
     {
       key: 0,
@@ -43,7 +42,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 0,
-          name: '点击右上角x按钮',
+          name: '点击关闭-1',
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
           quickFind: true,
@@ -71,7 +70,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          name: '点击关闭按钮',
+          name: '点击关闭-2',
           activityIds: 'com.xunlei.downloadprovider.feedback.view',
           quickFind: true,
           matches: '[id="com.xunlei.downloadprovider:id/ad_ima_skip"]',
@@ -79,7 +78,7 @@ export default defineAppConfig({
         },
         {
           key: 3,
-          name: '点击右上角x按钮',
+          name: '点击关闭-3',
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
           quickFind: true,

@@ -1,5 +1,5 @@
-import { defineAppConfig } from '../types';
-export default defineAppConfig({
+import { defineGkdApp } from '@gkd-kit/define';
+export default defineGkdApp({
   id: 'com.mci.smagazine',
   name: '三星阅读',
   groups: [

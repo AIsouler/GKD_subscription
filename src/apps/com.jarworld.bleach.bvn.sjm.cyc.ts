@@ -1,6 +1,6 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.jarworld.bleach.bvn.sjm.cyc',
   name: '次元城动漫',
   groups: [

@@ -37,7 +37,7 @@ https://cdn.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.jso
 
 当前订阅文件已适配 --APP_SIZE-- 个应用，共有 --GROUP_SIZE-- 应用规则组，--GLOBALGROUP_SIZE-- 全局规则组
 
-查看 [适配 APP 列表](./AppList.md)
+查看 [适配 APP 列表](./dist/README.md)
 
 查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List) By [@adproqwq](https://github.com/adproqwq)
 

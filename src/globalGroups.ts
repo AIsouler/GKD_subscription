@@ -1,12 +1,15 @@
-import { RawGlobalGroup } from '@gkd-kit/api';
-import * as utils from './utils';
+import { defineGkdGlobalGroups } from '@gkd-kit/define';
 import * as appList from './globalDefaultApps';
 
-const globalGroups: RawGlobalGroup[] = [
+export const OPEN_AD_ORDER = -10; // 开屏广告
+export const UPDATE_PROMPT_ORDER = -9; // 更新提示
+export const YOUTH_MODE_ORDER = -8; // 青少年模式
+
+export default defineGkdGlobalGroups([
   {
     key: 0,
     name: '开屏广告',
-    order: utils.OPEN_AD_ORDER,
+    order: OPEN_AD_ORDER,
     matchTime: 10000,
     actionMaximum: 2,
     resetMatch: 'app',
@@ -33,7 +36,7 @@ const globalGroups: RawGlobalGroup[] = [
   {
     key: 1,
     name: '更新提示',
-    order: utils.UPDATE_ORDER,
+    order: UPDATE_PROMPT_ORDER,
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
@@ -56,7 +59,7 @@ const globalGroups: RawGlobalGroup[] = [
   {
     key: 2,
     name: '青少年模式',
-    order: utils.YOUNG_ORDER,
+    order: YOUTH_MODE_ORDER,
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
@@ -75,5 +78,5 @@ const globalGroups: RawGlobalGroup[] = [
         [...appList.yongWhiteListAppIDs].map((id) => ({ id, enable: true })),
       ),
   },
-];
-export default globalGroups;
+]);
+

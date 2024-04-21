@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'cn.com.livelab',
   name: '纷玩岛',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 1,

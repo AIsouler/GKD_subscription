@@ -1,9 +1,8 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.ai.obc.cbn.app',
   name: '中国广电',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 2,

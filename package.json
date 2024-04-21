@@ -1,10 +1,35 @@
 {
   "name": "@aisouler/gkd_subscription",
-  "type": "module",
   "version": "1.64.0",
-  "main": "./dist/AIsouler_gkd.json5",
-  "unpkg": "./dist/AIsouler_gkd.json5",
-  "jsdelivr": "./dist/AIsouler_gkd.json5",
+  "type": "module",
+  "gkd": {
+    "outDir": "dist",
+    "file": "AIsouler_gkd.json5",
+    "versionFile": "AIsouler_gkd.version.json5",
+    "changelog": "CHANGELOG.md",
+    "README.md": "README.md"
+  },
+  "scripts": {
+    "postinstall": "simple-git-hooks",
+    "format": "prettier --cache --write ./**/*.{js,cjs,mjs,ts,jsx,tsx,json}",
+    "lint": "eslint --cache --fix ./**/*.{js,cjs,mjs,ts,jsx,tsx}",
+    "check": "tsc --noEmit && tsx ./scripts/check.ts",
+    "build": "tsc --noEmit && tsx ./scripts/build.ts"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged",
+    "commit-msg": "pnpm exec commitlint --config commitlint.config.ts --edit ${1}",
+    "pre-push": "pnpm run check"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}": [
+      "prettier --cache --write",
+      "eslint --cache --fix"
+    ],
+    "*.json": [
+      "prettier --cache --write"
+    ]
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -12,65 +37,35 @@
   "files": [
     "./dist"
   ],
-  "scripts": {
-    "prepare": "husky install",
-    "format": "prettier --cache --write .",
-    "lint": "eslint --cache --fix ./**/*.{js,ts,jsx,tsx}",
-    "build": "tsc --noEmit && tsx ./scripts/build.ts",
-    "check": "tsc --noEmit && tsx ./scripts/check.ts",
-    "updateSubs": "tsx ./scripts/updateSubs.ts"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
-    "@commitlint/types": "^19.0.3",
-    "@gkd-kit/selector": "0.0.25",
-    "@types/lodash": "^4.17.0",
-    "@types/node": "^20.12.5",
+  "dependencies": {
+    "@commitlint/cli": "19.2.1",
+    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/types": "19.0.3",
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.0.0",
+    "@gkd-kit/api": "0.0.5",
+    "@gkd-kit/define": "0.0.1",
+    "@gkd-kit/tools": "0.2.0",
+    "@types/node": "20.12.5",
     "@typescript-eslint/eslint-plugin": "7.7.0",
     "@typescript-eslint/parser": "7.7.0",
-    "dayjs": "^1.11.10",
-    "eslint": "^9.0.0",
+    "eslint": "9.0.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-define-config": "2.1.0",
-    "husky": "^9.0.11",
-    "json5": "^2.2.3",
-    "lint-staged": "^15.2.2",
-    "lodash": "^4.17.21",
-    "picocolors": "^1.0.0",
-    "pinyin-pro": "3.20.2",
-    "prettier": "^3.2.5",
-    "tsx": "^4.7.2",
-    "typescript": "^5.4.4"
-  },
-  "author": "AIsouler",
-  "license": "MIT",
-  "homepage": "https://github.com/AIsouler/GKD_subscription#readme",
-  "bugs": {
-    "url": "https://github.com/AIsouler/GKD_subscription/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AIsouler/GKD_subscription.git"
+    "eslint-plugin-unused-imports": "3.1.0",
+    "json5": "2.2.3",
+    "lint-staged": "15.2.2",
+    "prettier": "3.2.5",
+    "simple-git-hooks": "2.11.1",
+    "tsx": "4.7.2",
+    "typescript": "5.4.4"
   },
   "volta": {
     "node": "20.12.2"
   },
   "packageManager": "pnpm@9.0.4",
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*": [
-      "prettier --cache --write --ignore-unknown"
-    ],
-    "*.{js,ts,jsx,tsx}": [
-      "eslint --cache --fix"
-    ]
-  },
-  "dependencies": {
-    "@gkd-kit/api": "^0.0.5"
+  "engineStrict": true,
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -24,7 +24,7 @@ jobs:
 
       - id: version
         run: |
-          version=$(pnpm exec tsx ./scripts/showVersion.ts)
+          version=$(node -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion());")
           echo "version=${version}" >> "$GITHUB_OUTPUT"
 
       - name: Git commit
@@ -32,8 +32,6 @@ jobs:
         run: |
           git config --local user.email github-actions[bot]@users.noreply.github.com
           git config --local user.name github-actions[bot]
-          git config --global core.autocrlf true
-          git config --global core.safecrlf false
           git status
           git add .
           git commit -a -m "chore: v${{steps.version.outputs.version}}"
@@ -56,7 +54,7 @@ jobs:
         with:
           tag_name: v${{ steps.version.outputs.version }}
           release_name: Release ${{ steps.version.outputs.version }}
-          body_path: ./CHANGELOG.md
+          body_path: ./dist/CHANGELOG.md
 
       - name: Upload Release Asset
         id: upload-release-asset
@@ -71,14 +69,14 @@ jobs:
           asset_content_type: application/json
 
       - name: Publish package
-        if: ${{ steps.commit.outcome == 'success' }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-          pnpm publish
-
-      - name: sync npmmirror
-        if: ${{ steps.commit.outcome == 'success' }}
-        run: curl -X PUT 'https://registry-direct.npmmirror.com/@aisouler/gkd_subscription/sync'
+          node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
+          pnpm publish --no-git-checks --publish-branch=custom
+          node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
 
       - name: sync jsDelivr
         if: ${{ steps.commit.outcome == 'success' }}
