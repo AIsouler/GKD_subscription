@@ -21,7 +21,10 @@ export default defineGkdApp({
           quickFind: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches: '@[vid="close_btn"] <n * > [text="朋友推荐"]',
-          snapshotUrls: 'https://i.gkd.li/i/14310639',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14310639',
+            'https://i.gkd.li/i/15061832',
+          ],
         },
       ],
     },
