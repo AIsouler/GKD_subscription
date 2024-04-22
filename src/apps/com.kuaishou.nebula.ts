@@ -15,10 +15,15 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-朋友推荐弹窗',
-      activityIds: 'com.yxcorp.gifshow.HomeActivity',
-      quickFind: true,
-      rules: '@[vid="close_btn"] + [text="朋友推荐"]',
-      snapshotUrls: 'https://i.gkd.li/i/14310639',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.yxcorp.gifshow.HomeActivity',
+          matches: '@[vid="close_btn"] <n * > [text="朋友推荐"]',
+          snapshotUrls: 'https://i.gkd.li/i/14310639',
+        },
+      ],
     },
     {
       key: 3,
