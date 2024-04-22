@@ -6,18 +6,16 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-开屏公告提示',
+      name: '通知提示-公告弹窗',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.salmon.film.main.ui.MainActivity'],
+      activityIds: 'com.salmon.film.main.ui.MainActivity',
       rules: [
         {
           key: 1,
-          name: '网址更新',
-          quickFind: true,
-          matches:
-            'TextView[text="可可影视"] < LinearLayout >n @TextView[text*="知道了"]',
+          matches: '[text="朕知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/13548412',
         },
       ],
