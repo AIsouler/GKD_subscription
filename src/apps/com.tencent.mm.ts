@@ -231,36 +231,61 @@ export default defineGkdApp({
     {
       key: 6,
       name: '分段广告-订阅号文章广告',
-      desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用"订阅号文章广告反馈"规则',
+      desc: '点击[广告]按钮-点击[关闭此广告]/[不感兴趣]-点击[与我无关]',
+      forcedTime: 3000,
       activityIds: [
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
         'com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI',
       ],
+      // 使用id作为特征节点适配多语言，不使用 preKeys 提高点击成功率
       rules: [
+        // 第一段
         {
           key: 1,
-          name: '广告类型1',
+          name: '点击[广告]按钮',
+          // 防止在第二段、第三段、出现时触发，防止在文章末尾广告关闭后触发
+          excludeMatches: [
+            '[id="fullCardFeedbackTitle" || id="dislike" || id="isdismatch"][visibleToUser=true]',
+          ],
           matches: [
-            'View[id="ad_container"] > View[childCount=1] >n @View > [id=null][text^="广告"][visibleToUser=true]',
+            'View[childCount=1] > @[id="feedbackTagContainer"][clickable=true][visibleToUser=true] > [id^="feedback"][visibleToUser=true]',
           ],
           snapshotUrls: [
+            'https://i.gkd.li/i/12700183', // id^="feedback"
             'https://i.gkd.li/i/12642232', // ui.TmplWebViewMMUI
             'https://i.gkd.li/i/13199281', // ui.TmplWebViewTooLMpUI
             'https://i.gkd.li/i/12646837', // 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
-            'https://i.gkd.li/i/12678937', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
-            'https://i.gkd.li/i/12714427', // 优化规则，使用 View[id="ad_container"] 作为特征节点
             'https://i.gkd.li/i/14006180', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
+            'https://i.gkd.li/i/14834975', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
+            'https://i.gkd.li/i/15061339', // 使用excludeMatches防止在文章末尾广告关闭后误触
           ],
         },
+        // 第二段
         {
-          key: 2,
-          name: '广告类型2',
-          matches:
-            'View[childCount=1] > @[id="feedbackTagContainer"][visibleToUser=true] > [id="feedbackTag"]',
+          key: 25,
+          name: '点击[关闭此广告]',
+          matches: '[id="closeBtn"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14834975',
+        },
+        {
+          key: 26,
+          name: '点击[不感兴趣]',
+          excludeMatches: '[id="fullCardFeedbackTitle"][visibleToUser=true]',
+          matches: '[id="dislike"][clickable=true][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12700183',
-            'https://i.gkd.li/i/12701503', // 事件完成后，采用[childCount=1]进行限定，防止频繁触发规则
-            'https://i.gkd.li/i/12714424',
+            'https://i.gkd.li/i/14006203',
+            'https://i.gkd.li/i/14834966',
+            'https://i.gkd.li/i/15061424', // 使用excludeMatches防止在文章末尾广告关闭后误触
+          ],
+        },
+        // 第三段
+        {
+          key: 50,
+          name: '点击[与我无关]',
+          matches: '[id="isdismatch"][clickable=true][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14006206',
+            'https://i.gkd.li/i/14834959',
           ],
         },
       ],
@@ -290,47 +315,6 @@ export default defineGkdApp({
           versionNames: '8.0.15',
           matches: '@[desc="未选中,原图,复选框"] + [text="原图"]',
           snapshotUrls: 'https://i.gkd.li/i/14661734',
-        },
-      ],
-    },
-    {
-      key: 8,
-      name: '分段广告-订阅号文章广告反馈',
-      desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合"订阅号文章广告"规则使用',
-      activityIds: [
-        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
-        'com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI',
-      ],
-      rules: [
-        {
-          key: 1,
-          // preKeys: [1], 取消 preKeys 提高点击成功率
-          name: '点击不感兴趣',
-          action: 'clickCenter', // 使用 clickCenter 事件点击，期望在快照 https://i.gkd.li/i/12745280 中成功点击 [与我无关]
-          matches:
-            'View > [id="feedbackTagContainer"][visibleToUser=true] + [id^="menu"] > [id="dislike"][text="不感兴趣"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12642234',
-            'https://i.gkd.li/i/12722301',
-            'https://i.gkd.li/i/12722331', // 使用 [id="feedbackTagContainer"][visibleToUser=true] 进行限定，防止反馈界面未出现就触发规则
-            'https://i.gkd.li/i/14006203', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
-          ],
-        },
-        {
-          key: 2,
-          // preKeys: [2], 取消 preKeys 提高点击成功率
-          name: '点击与我无关',
-          matches: 'View > [id^="menu"] > [id="isdismatch"][text="与我无关"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12642238',
-            'https://i.gkd.li/i/14006206', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
-          ],
-        },
-        {
-          key: 3,
-          name: '点击关闭此广告',
-          matches: 'TextView[id="closeBtn"][text="关闭此广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/12700191',
         },
       ],
     },
