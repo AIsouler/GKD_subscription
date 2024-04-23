@@ -29,5 +29,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.cosmos.album.album3.XXAlbumMainActivity',
+          matches: '@ImageView[clickable=true] - * > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/15076408',
+        },
+      ],
+    },
   ],
 });
