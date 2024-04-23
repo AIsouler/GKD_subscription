@@ -19,7 +19,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-我的页面悬浮广告',
+      name: '局部广告-悬浮广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -39,12 +39,13 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          matches: '[desc="关闭浮层icon"]',
+          matches: '[desc="关闭浮层icon"][clickable=true][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13165659',
             'https://i.gkd.li/i/12837870',
             'https://i.gkd.li/i/13072091',
             'https://i.gkd.li/i/12837870',
+            'https://i.gkd.li/i/15077913', // 防止误触
           ],
         },
       ],
