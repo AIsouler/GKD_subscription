@@ -36,10 +36,14 @@ export default defineGkdApp({
           key: 1,
           quickFind: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
-          matches: '@ImageView[clickable=true] -2 [text$="免费红包"]',
+          matches:
+            '@ImageView[clickable=true] - ViewGroup[childCount=3] <n * >n [text*="红包"]',
           exampleUrls:
             'https://m.gkd.li/101449500/f7bbd1db-f519-4ff9-96cb-4cb5b2f483a2',
-          snapshotUrls: 'https://i.gkd.li/i/14879912',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14879912',
+            'https://i.gkd.li/i/15061662',
+          ],
         },
       ],
     },
