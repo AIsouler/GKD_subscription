@@ -55,8 +55,11 @@ export default defineGkdApp({
           quickFind: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
-            '@ImageView[visibleToUser=true] < * < * +2 * [text="去抢购"]',
-          snapshotUrls: 'https://i.gkd.li/i/15032649',
+            '@ImageView[visibleToUser=true] < * < * +(1,2) * [text="去抢购"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15032649',
+            'https://i.gkd.li/i/15076322',
+          ],
         },
       ],
     },
