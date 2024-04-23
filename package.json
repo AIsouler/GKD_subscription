@@ -38,7 +38,7 @@
     "./dist"
   ],
   "dependencies": {
-    "@commitlint/cli": "19.2.2",
+    "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
     "@commitlint/types": "19.0.3",
     "@eslint/eslintrc": "^3.0.2",
