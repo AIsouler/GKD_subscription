@@ -326,5 +326,40 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 20,
+      name: '功能类-超话自动签到',
+      enable: false,
+      quickFind: true,
+      rules: [
+        {
+          name: '超话签到',
+          key: 0,
+          activityIds: 'com.sina.weibo.supergroup.SGPageActivity',
+          matches:
+            '[text="管理"] <<(11,12) [vid="footerMenuView"] -2 [vid="smartRefreshLayout"] >7 [text="签到" || text="Sign in"] < [vid="right_button"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15092970', // 未关注超话防止误触
+            'https://i.gkd.li/i/15092999', // 已关注超话
+          ],
+        },
+        {
+          name: '不接收超话签到提醒推送',
+          key: 1,
+          activityIds: 'com.sina.weibo.supergroup.pagepop.PagePopActivity',
+          matches: '@[checked=true] + [text="接收本超话签到提醒推送"]',
+          snapshotUrls: 'https://i.gkd.li/i/15093012',
+        },
+        {
+          name: '关闭签到成功弹窗',
+          key: 2,
+          preKeys: [1],
+          activityIds: 'com.sina.weibo.supergroup.pagepop.PagePopActivity',
+          matches:
+            '[text^="连续签到"] <<7 [vid="ll_base_v2"] +2 [vid="fl_bg"] > [vid="iv_close_v2"]',
+          snapshotUrls: 'https://i.gkd.li/i/15093012',
+        },
+      ],
+    },
   ],
 });
