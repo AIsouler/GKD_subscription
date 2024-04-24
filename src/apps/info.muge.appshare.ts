@@ -40,20 +40,21 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '软件详情页/搜索页卡片广告',
+          name: '软件详情页卡片广告',
           quickFind: true,
-          activityIds: [
-            'info.muge.appshare.view.app.detail.AppDetailActivity',
-            'info.muge.appshare.view.search.app.SearchAppActivity',
-          ],
+          activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
           matches:
-            'ImageView < @FrameLayout[index=2][desc=null] <3 FrameLayout[childCount=5] <<(6,7) [vid^="ad"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c19bb8e3-abae-46ee-bfe9-d7846cd868bc',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14382413',
-            'https://i.gkd.li/i/14368946',
-          ],
+            'FrameLayout[childCount=5] > @FrameLayout[visibleToUser=true] > ImageView <<n [vid="adContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/14382413',
+        },
+        {
+          key: 1,
+          name: '搜索页卡片广告',
+          quickFind: true,
+          activityIds: 'info.muge.appshare.view.search.app.SearchAppActivity',
+          matches:
+            'FrameLayout[childCount=5] > @FrameLayout[visibleToUser=true] > ImageView <<n [vid="adView"]',
+          snapshotUrls: 'https://i.gkd.li/i/14368946',
         },
       ],
     },
@@ -89,7 +90,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '@View[clickable=true] < FrameLayout[desc*="dislike"] <3 * < * <3 FrameLayout[childCount=3] <<n [id="info.muge.appshare:id/adContainer"]',
+            'FrameLayout[childCount=3] >3 [desc^="dislike"] > @View[clickable=true] <<n [id="info.muge.appshare:id/adContainer"]',
           exampleUrls:
             'https://m.gkd.li/57941037/3bc12aa2-7673-4261-9e3d-7e1605b22847',
           snapshotUrls: 'https://i.gkd.li/i/13758909',
@@ -97,7 +98,7 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '@View[index=1] <2 View[childCount=3] <2 * < * <2 * <<n FrameLayout <3 FrameLayout[childCount=3] <<n [id="info.muge.appshare:id/adContainer"]',
+            'FrameLayout[childCount=3] >2 WebView >6 @View[visibleToUser=true] > Image <<n [vid="adContainer"]',
           exampleUrls:
             'https://m.gkd.li/57941037/fefece63-2ec2-413c-a292-4583d58478fe',
           snapshotUrls: 'https://i.gkd.li/i/14160959',
