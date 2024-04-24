@@ -43,6 +43,8 @@ https://cdn.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.jso
 
 查看 [GKD基础使用、规则编写教程](https://github.com/Snoopy1866/blogs/tree/main/software/gkd) By [@Snoopy1866](https://github.com/Snoopy1866)
 
+您可以使用 [GKD订阅模板](https://github.com/gkd-kit/subscription-template) 快速构建自己的订阅
+
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 感谢以下项目
