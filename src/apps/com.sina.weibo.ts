@@ -326,5 +326,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 21,
+      name: '全屏广告-连续签到',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.sina.weibo.feed.MPDialogActivity',
+          matches:
+            '@TextView[text=""] - View[childCount=24][index=0] <<5 [vid="container"]',
+          snapshotUrls: 'https://i.gkd.li/i/15097492',
+        },
+      ],
+    },
   ],
 });
