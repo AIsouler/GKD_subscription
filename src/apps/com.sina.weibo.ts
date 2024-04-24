@@ -339,8 +339,8 @@ export default defineGkdApp({
           matches:
             '[text="管理"] <<(11,12) [vid="footerMenuView"] -2 [vid="smartRefreshLayout"] >7 [text="签到" || text="Sign in"] < [vid="right_button"]',
           snapshotUrls: [
+            'https://i.gkd.li/i/15092999',
             'https://i.gkd.li/i/15092970', // 未关注超话防止误触
-            'https://i.gkd.li/i/15092999', // 已关注超话
           ],
         },
         {
@@ -348,16 +348,21 @@ export default defineGkdApp({
           key: 1,
           activityIds: 'com.sina.weibo.supergroup.pagepop.PagePopActivity',
           matches: '@[checked=true] + [text="接收本超话签到提醒推送"]',
-          snapshotUrls: 'https://i.gkd.li/i/15093012',
+          snapshotUrls: 'https://i.gkd.li/i/15103524',
         },
         {
           name: '关闭签到成功弹窗',
           key: 2,
-          preKeys: [1],
-          activityIds: 'com.sina.weibo.supergroup.pagepop.PagePopActivity',
+          activityIds: [
+            'com.sina.weibo.supergroup.pagepop.PagePopActivity',
+            'com.sina.weibo.supergroup.SGPageActivity',
+          ],
           matches:
-            '[text^="连续签到"] <<7 [vid="ll_base_v2"] +2 [vid="fl_bg"] > [vid="iv_close_v2"]',
-          snapshotUrls: 'https://i.gkd.li/i/15093012',
+            '[text^="连续签到"] <<7 [vid="ll_base_v2"] +(1,2) [vid="fl_bg"] > [vid="iv_close_v2"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15103524', // 首日签到
+            'https://i.gkd.li/i/15103536', // 第2日签到
+          ],
         },
       ],
     },
