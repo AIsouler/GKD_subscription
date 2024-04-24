@@ -258,16 +258,22 @@ export default defineGkdApp({
           name: '贴吧页签到',
           activityIds: 'com.baidu.tieba.forum.ForumActivity',
           matches:
-            'WebView[text="frs"] > View > View > View > View > TextView[text="签到"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13776801',
+            'WebView[text="frs"] > View > View > View > View > TextView[text="签到"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13776801',
+            'https://i.gkd.li/i/15087289',
+          ],
         },
         {
           key: 1,
-          name: '签到成功-弹窗',
+          name: '关闭签到成功弹窗',
           activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
           matches:
-            'WebView[text="签到弹窗"] > View > View > TextView[text=""][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13776424',
+            'WebView[text="签到弹窗"] > View > View > TextView[text=""][index=2][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13776424',
+            'https://i.gkd.li/i/15087327',
+          ],
         },
       ],
     },
