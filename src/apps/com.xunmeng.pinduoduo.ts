@@ -66,11 +66,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-活动弹窗',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
-          name: '抽免单活动1',
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches:
             'TextView[text="免单特权"] < View < View +(5) View[clickable=true] > Image[id=null]',
@@ -78,7 +77,6 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '抽免单活动2',
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches:
             'TextView[text$="抽免单"] -(2) Image[id=null][clickable=true]',
@@ -86,7 +84,6 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: '抽免单活动3',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '[text="多多免单"] >5 View[childCount=2] > Image[index=0][clickable=true][visibleToUser=true]',
@@ -94,12 +91,19 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          name: '抽免单活动4',
           quickFind: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ImageView[visibleToUser=true] < * +2 * >3 [text="立即抽免单"]',
           snapshotUrls: 'https://i.gkd.li/i/14614135',
+        },
+        {
+          key: 4,
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            '@ViewGroup[clickable=true] - ViewGroup[childCount=3] >2 [text="其他"]',
+          snapshotUrls: 'https://i.gkd.li/i/15103543',
         },
       ],
     },
