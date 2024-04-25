@@ -65,10 +65,11 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
-        '[text^="开启系统通知"] + @Image[clickable=true] <<n [id="com.taobao.taobao:id/poplayer_inner_view"]',
+        '[text^="开启系统通知"] + @Image[visibleToUser=true] <<n [vid="poplayer_inner_view"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13446901',
         'https://i.gkd.li/i/13455424',
+        'https://i.gkd.li/i/15104645',
       ],
     },
     {
