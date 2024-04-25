@@ -199,5 +199,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 17,
+      name: '功能类-[下次打开APP默认进入发现频道]弹窗',
+      desc: '点击取消',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          matches: '[text^="下次打开APP默认进入"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/6166519d-d38d-49c0-b54b-72c25670aa24',
+          snapshotUrls: 'https://i.gkd.li/i/15102876',
+        },
+      ],
+    },
   ],
 });
