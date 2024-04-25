@@ -63,7 +63,7 @@
   "volta": {
     "node": "20.12.2"
   },
-  "packageManager": "pnpm@9.0.5",
+  "packageManager": "pnpm@9.0.6",
   "engineStrict": true,
   "engines": {
     "node": ">=20"
