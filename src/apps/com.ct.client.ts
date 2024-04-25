@@ -48,11 +48,19 @@ export default defineGkdApp({
       name: '全屏广告-浮窗广告',
       desc: '会出现在首页、查询办理页面',
       quickFind: true,
-      activityIds: 'com.ct.client.common.ConfirmDialogActivity',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: [
+        'com.ct.client.common.ConfirmDialogActivity',
+        'com.ct.client.activity.MainActivity',
+      ],
       rules: [
         {
-          matches: 'ImageView[id="com.ct.client:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12819676',
+          matches: '[vid="rlActivity"] > [vid="close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12819676',
+            'https://i.gkd.li/i/15104434',
+          ],
         },
       ],
     },
