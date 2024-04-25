@@ -53,6 +53,7 @@ export default defineGkdApp({
         {
           key: 3,
           quickFind: true,
+          forcedTime: 3000,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ImageView[visibleToUser=true] < * < * +(1,2) * [text="去抢购"]',
