@@ -358,17 +358,14 @@ export default defineGkdApp({
         {
           actionDelay: 800, // 过早点击首次大概率跳不过
           matches: [
-            'FrameLayout > TextView + FrameLayout > TextView[text="广告"]',
-            'FrameLayout > TextView + FrameLayout > TextView[text="跳过"]',
+            '[text="广告"][visibleToUser=true]',
+            '[text="跳过"][visibleToUser=true]',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/i/12701979',
-            'https://i.gkd.li/i/12777076',
-            'https://i.gkd.li/i/12785012',
             'https://i.gkd.li/i/12785183',
             'https://i.gkd.li/i/13306883',
-            'https://i.gkd.li/i/12785246',
             'https://i.gkd.li/i/13407275',
+            'https://i.gkd.li/i/15108441',
           ],
         },
       ],
