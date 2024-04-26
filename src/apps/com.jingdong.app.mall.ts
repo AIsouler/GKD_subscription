@@ -124,7 +124,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-首页底部横幅广告',
+      name: '局部广告-横幅广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -142,6 +142,12 @@ export default defineGkdApp({
           quickFind: true,
           matches: '@ViewGroup[clickable=true] - * > [text="去续费"]',
           snapshotUrls: 'https://i.gkd.li/i/15047238',
+        },
+        {
+          key: 2,
+          matches:
+            '[desc="吸顶楼层"] > [desc="关闭按钮"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15112953',
         },
       ],
     },
