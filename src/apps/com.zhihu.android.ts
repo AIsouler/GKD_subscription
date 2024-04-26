@@ -74,7 +74,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '@[vid="btn_close"] +2 [text$="内容推送"]',
+          matches: ['[text$="内容推送"]', '[vid="btn_close"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/1d1fee24-3ba0-4cf1-a0d5-696f4f62a5e0',
           snapshotUrls: 'https://i.gkd.li/i/14917866',
@@ -126,7 +126,7 @@ export default defineGkdApp({
         {
           quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches: '[vid="ad_container"] [vid="img_close_focus"]',
+          matches: ['[vid="ad_container"]', '[vid="img_close_focus"]'],
           exampleUrls:
             'https://m.gkd.li/101449500/11c26ab8-0b01-4345-8ea8-d4e97233b723',
           snapshotUrls: 'https://i.gkd.li/i/14156887',
@@ -219,7 +219,7 @@ export default defineGkdApp({
           key: 0,
           name: '发现页面-右侧年卡折扣悬浮窗',
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches: '@[vid="activity_close"] + * > [vid="activity_img"]',
+          matches: ['[vid="activity_img"]', '[vid="activity_close"]'],
           snapshotUrls: 'https://i.gkd.li/i/14296251',
         },
         {
@@ -263,7 +263,7 @@ export default defineGkdApp({
           preKeys: 0,
           key: 1,
           name: '点击[取消]',
-          matches: '@[text="取消"] + [text="去应用市场"]',
+          matches: ['[text="去应用市场"]', '[text="取消"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/728ea1cd-ca19-4de9-9e7e-eb2a3513f965',
           snapshotUrls: 'https://i.gkd.li/i/14445502',
