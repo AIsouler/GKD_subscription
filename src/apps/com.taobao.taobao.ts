@@ -236,5 +236,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 19,
+      name: '局部广告-商品详情页直播悬浮窗',
+      desc: '点击关闭',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds:
+            'com.taobao.android.detail.wrapper.activity.DetailActivity',
+          matches: '[vid="view_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15124094',
+        },
+      ],
+    },
   ],
 });
