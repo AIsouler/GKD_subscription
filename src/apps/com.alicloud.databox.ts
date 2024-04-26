@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '功能类-自动签到',
+      quickFind: true,
       activityIds: [
         'com.alicloud.databox.MainActivity',
         'com.alicloud.databox.navigation.NavigationFragmentContainerActivity',
@@ -15,20 +16,25 @@ export default defineGkdApp({
         {
           key: 0,
           name: '自动点击签到',
-          quickFind: true,
           matches: '[id="com.alicloud.databox:id/tvTaskAction"][text="领取"]',
           snapshotUrls: 'https://i.gkd.li/i/12929318',
         },
         {
-          key: 1,
           preKeys: [0],
-          name: '在签到后，关闭弹窗',
-          quickFind: true,
-          matches: '[id="com.alicloud.databox:id/ivClose"]',
+          key: 1,
+          name: '关闭弹窗-1',
+          matches: '[vid="ivClose"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13038304',
-            'https://i.gkd.li/i/14235221', // com.alicloud.databox.navigation.NavigationFragmentContainerActivity
+            'https://i.gkd.li/i/14235221',
           ],
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          name: '关闭弹窗-2',
+          matches: '[vid="ivClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/15119433',
         },
       ],
     },
