@@ -65,7 +65,8 @@ export default defineGkdApp({
         {
           key: 1,
           name: '开启通知栏提醒',
-          matches: 'Button[text="立即开启"] - Button[text="不了，谢谢"]',
+          matchTime: 10000,
+          matches: ['[text="开启通知栏提醒"]', '[text="不了，谢谢"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13197306',
             'https://i.gkd.li/i/13691701',
@@ -88,6 +89,7 @@ export default defineGkdApp({
       key: 13,
       name: '功能类-自动点击[查看全部升级]',
       desc: '应用升级页面',
+      actionMaximum: 1,
       rules: [
         {
           quickFind: true,
