@@ -142,7 +142,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-浏览器扫码微信登录自动授权',
+      name: '功能类-自动授权登录',
       desc: '自动允许使用头像昵称等',
       quickFind: true,
       matchTime: 10000,
@@ -150,22 +150,18 @@ export default defineGkdApp({
       resetMatch: 'activity',
       activityIds: [
         'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
+        'com.tencent.mm.plugin.base.stub.UIEntryStub',
         'com.tencent.mm.ui.LauncherUI',
       ],
-      rules: 'Button[text="拒绝"] - Button[text="允许"]',
-      snapshotUrls: 'https://i.gkd.li/i/13065462',
-    },
-    {
-      key: 3,
-      name: '功能类-第三方APP申请使用授权弹窗',
-      desc: '自动点击允许,但由于此界面可以额外新建昵称头像,默认不启用',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'activity',
-      activityIds: 'com.tencent.mm.plugin.base.stub.UIEntryStub',
-      rules: 'Button[text="拒绝"] - Button[text="允许"]',
-      snapshotUrls: 'https://i.gkd.li/i/12663602',
+      rules: [
+        {
+          matches: ['[text^="获取你的"]', '[text="允许"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/12663602',
+            'https://i.gkd.li/i/13065462',
+          ],
+        },
+      ],
     },
     {
       key: 4,
@@ -393,7 +389,7 @@ export default defineGkdApp({
             'com.tencent.mm.plugin.finder.ui.',
             'com.tencent.mm.ui.LauncherUI',
           ],
-          matches: '[text*="青少年模式"] <n * > [text="我知道了"]',
+          matches: ['[text*="青少年模式"]', '[text="我知道了"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13538145',
             'https://i.gkd.li/i/13575195',
@@ -475,7 +471,7 @@ export default defineGkdApp({
           quickFind: true,
           activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',
           matches:
-            '[text="完成" || text="返回商家"] <2 [vid="kinda_button_impl_wrapper"]',
+            '[vid="kinda_button_impl_wrapper"][desc="完成" || desc="返回商家"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a5177d9d-6745-443f-baf5-af57153430d8',
           snapshotUrls: [
@@ -543,9 +539,10 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          quickFind: true,
           activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
           matches:
-            '@TextView[clickable=true] + * > [text="腾讯文档"] + [text^="使用 APP"]',
+            '@TextView[clickable=true] + * > [text^="使用 APP"] <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/2228f99e-e0a1-4915-864f-d60e3d8580a6',
           snapshotUrls: 'https://i.gkd.li/i/14533286',
@@ -592,7 +589,7 @@ export default defineGkdApp({
         {
           quickFind: true,
           activityIds: 'com.tencent.mm.pluginsdk.permission.PermissionActivity',
-          matches: '@[text="取消"] < * < * - * >3 [text="权限申请"]',
+          matches: ['[text="权限申请"]', '[text="取消"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/43632b72-d389-4fe7-9708-dac78e900679',
           snapshotUrls: 'https://i.gkd.li/i/14645385',
