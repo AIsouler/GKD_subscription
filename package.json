@@ -1,6 +1,6 @@
 {
   "name": "@aisouler/gkd_subscription",
-  "version": "0.0.68",
+  "version": "0.0.69",
   "type": "module",
   "gkd": {
     "outDir": "dist",
