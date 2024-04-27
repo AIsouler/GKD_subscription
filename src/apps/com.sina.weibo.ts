@@ -344,11 +344,17 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
           key: 1,
+          name: '取消勾选[接收本超话签到提醒推送]',
+          activityIds: 'com.sina.weibo.supergroup.pagepop.PagePopActivity',
+          matches: '@[checked=true] < * > [text="接收本超话签到提醒推送"]',
+          snapshotUrls: 'https://i.gkd.li/i/15103524',
+        },
+        {
+          key: 2,
           name: '关闭签到成功弹窗',
           activityIds: 'com.sina.weibo.supergroup.pagepop.PagePopActivity',
-          matches: '[vid="iv_close_v2"]', // 直接关闭不会关注推荐
+          matches: ['[text^="连续签到"]', '[vid="iv_close_v2"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/15103524',
             'https://i.gkd.li/i/15136825',
