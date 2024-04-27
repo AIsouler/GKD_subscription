@@ -105,5 +105,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ct.client.activity.MainActivity',
+          matches: '[vid="ivFloatClose"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/5dd9c9e3-f290-4b73-abdd-dc5e97a99772',
+          snapshotUrls: 'https://i.gkd.li/i/15137220',
+        },
+      ],
+    },
   ],
 });
