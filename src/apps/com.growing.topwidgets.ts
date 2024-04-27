@@ -21,6 +21,11 @@ export default defineGkdApp({
           matches: '@ImageView < * - * > [text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/14945536',
         },
+        {
+          key: 2,
+          matches: '[vid="ms_item_pre_render_large_iamge_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15137361',
+        },
       ],
     },
     {
