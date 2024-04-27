@@ -127,7 +127,7 @@ export default defineGkdApp({
           key: 3,
           activityIds: 'com.sina.weibo.feed.MPDialogActivity',
           matches:
-            '[text^="今日签到"] <n * + @TextView[clickable=true] <<n [vid="container"]',
+            '[text^="今日签到"] <n * + @TextView[visibleToUser=true] <<n [vid="container"]',
           snapshotUrls: 'https://i.gkd.li/i/14969848',
         },
         {
