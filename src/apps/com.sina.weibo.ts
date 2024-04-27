@@ -127,7 +127,7 @@ export default defineGkdApp({
           key: 3,
           activityIds: 'com.sina.weibo.feed.MPDialogActivity',
           matches:
-            '[text^="今日签到"] <n * + @TextView[clickable=true] <<n [vid="container"]',
+            '[text^="今日签到"] <n * + @TextView[visibleToUser=true] <<n [vid="container"]',
           snapshotUrls: 'https://i.gkd.li/i/14969848',
         },
         {
@@ -323,19 +323,6 @@ export default defineGkdApp({
           activityIds: 'com.sina.weibo.photoalbum.imageviewer.ImageViewer',
           matches: '@LinearLayout >3 [vid="tv_dialog_item"][text^="原图"]',
           snapshotUrls: 'https://i.gkd.li/i/13929119',
-        },
-      ],
-    },
-    {
-      key: 21,
-      name: '全屏广告-连续签到',
-      rules: [
-        {
-          quickFind: true,
-          activityIds: 'com.sina.weibo.feed.MPDialogActivity',
-          matches:
-            '@TextView[text=""] - View[childCount=24][index=0] <<5 [vid="container"]',
-          snapshotUrls: 'https://i.gkd.li/i/15097492',
         },
       ],
     },
