@@ -164,6 +164,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12914886',
           ],
         },
+        {
+          key: 4,
+          quickFind: true,
+          activityIds:
+            'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
+          matches:
+            'ViewGroup[childCount=6] > @ViewGroup[index=2][clickable=true][visibleToUser=true] <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/15136939',
+        },
       ],
     },
     {
@@ -610,12 +619,9 @@ export default defineGkdApp({
         {
           key: 1,
           name: '个性装扮弹窗',
-          activityIds:
-            'com.tencent.mobileqq.profilecard.activity.FriendProfileCardActivity',
-          matches: '[desc="关闭浮层"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c56c0d50-48b7-4649-9460-d40b73d3594e',
-          snapshotUrls: 'https://i.gkd.li/i/14345395',
+          activityIds: 'cooperation.vip.ad.UserLeadingActivity',
+          matches: '[desc="关闭"][visibleToUser=true]', // 右侧关闭按钮无效
+          snapshotUrls: 'https://i.gkd.li/i/15137056',
         },
       ],
     },
