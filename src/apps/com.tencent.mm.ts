@@ -56,10 +56,13 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 26,
-          name: '点击[Close the ad]',
+          name: '点击[Close]',
           quickFind: true,
-          matches: '[text="Close the ad"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14207480',
+          matches: '[text*="Close"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14207480',
+            'https://i.gkd.li/i/15137016',
+          ],
         },
         {
           preKeys: [0],
