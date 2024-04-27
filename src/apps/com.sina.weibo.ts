@@ -335,8 +335,11 @@ export default defineGkdApp({
           key: 0,
           name: '点击签到',
           activityIds: 'com.sina.weibo.supergroup.SGPageActivity',
-          excludeMatches: ['[text="关注"]', '[text="Follow"]'],
-          matches: '[text="签到" || text="Sign in"] < [vid="right_button"]',
+          // excludeMatches: ['[text="关注"]', '[text="Follow"]'], 此写法会导致误触
+          matches: [
+            'ViewGroup[childCount=2] > [text="管理"][visibleToUser=true]',
+            '[text="签到" || text="Sign in"] < [vid="right_button"][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/15092999',
             'https://i.gkd.li/i/15092970', // 未关注超话防止误触
