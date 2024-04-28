@@ -178,7 +178,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-多多视频悬浮窗广告',
+      name: '局部广告-悬浮广告',
       desc: '点击关闭',
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
@@ -197,6 +197,15 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/bfe9f8d5-2c13-4dbf-a0b3-a8347068afa6',
           snapshotUrls: 'https://i.gkd.li/i/12642058',
+        },
+        {
+          key: 2,
+          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          matches:
+            'RelativeLayout[childCount=2] > RelativeLayout + @FrameLayout[childCount=1][clickable=true][visibleToUser=true] > ImageView[childCount=0][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e1d297dd-b555-4c2c-b7f6-2756aadb6006',
+          snapshotUrls: 'https://i.gkd.li/i/15140800',
         },
       ],
     },
