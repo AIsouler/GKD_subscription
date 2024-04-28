@@ -30,6 +30,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           activityIds:
             'com.zhuanzhuan.module.reach.channel.impl.uicode.ReachDialogActivity',
           matches:
@@ -37,6 +38,16 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/2549c1c7-b3ff-49c0-8bcb-d981427c710a',
           snapshotUrls: 'https://i.gkd.li/i/14927441',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.zhuanzhuan.module.reach.channel.impl.uicode.ReachDialogActivity',
+          matches:
+            '[id="android:id/content"] > ViewGroup[childCount=3] > FrameLayout > ViewGroup[childCount=2] > ImageView[index=1]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/034904f5-3f09-48ae-8057-85fbf0152ec4',
+          snapshotUrls: 'https://i.gkd.li/i/15140820',
         },
       ],
     },
