@@ -301,6 +301,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          forcedTime: 5000,
           activityIds: [
             'com.baidu.tieba.tblauncher.MainTabActivity',
             'com.baidu.tbadk.browser.TBWebContainerActivity',
