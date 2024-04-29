@@ -280,13 +280,18 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          activityIds:
+          activityIds: [
             'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          ],
           matches:
-            'View[childCount=3] > @TextView[text=""][clickable=true][visibleToUser=true] + * > [text!=null]',
+            'View[childCount=3] > @TextView[text=""][clickable=true][visibleToUser=true] + * > [text!=null] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/5df9b6fb-7455-492c-a726-fb6a42266a02',
-          snapshotUrls: 'https://i.gkd.li/i/14907533',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14907533',
+            'https://i.gkd.li/i/15144834',
+          ],
         },
       ],
     },
