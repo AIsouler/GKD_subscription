@@ -12,7 +12,7 @@ interface RawDeprecatedKeysSetting {
   name: string;
 
   /**
-   * 废弃的key值
+   * 废弃的key值，不可使用
    */
   deprecatedKeys: number[];
 }
