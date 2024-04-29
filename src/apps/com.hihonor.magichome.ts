@@ -13,7 +13,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '未分类-推荐服务声明',
+      name: '其他-推荐服务声明',
       desc: '推荐服务声明弹窗。默认点击"取消"按钮',
       activityIds: 'com.hihonor.magichome.business.MainActivity',
       rules:

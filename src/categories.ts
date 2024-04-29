@@ -53,6 +53,6 @@ export default defineGkdCategories([
   },
   {
     key: 11,
-    name: '未分类', // 不知道怎么分类就往这放
+    name: '其他', // 分类不明确
   },
 ]);

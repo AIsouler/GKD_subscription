@@ -29,7 +29,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '未分类-进入飞行模式-提示弹窗',
+      name: '其他-进入飞行模式-提示弹窗',
       quickFind: true,
       activityIds: 'com.umetrip.android.msky.homepage.activity.UmeHomeActivity',
       rules:
