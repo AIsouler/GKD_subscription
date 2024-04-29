@@ -32,6 +32,7 @@ export default defineGkdApp({
             'me.ele.application.ui.Launcher.LauncherActivity',
             'me.ele.application.ui.GeneralSettingsActivity',
             'me.ele.shopdetailv2.ShopDetailV2Activity',
+            'me.ele.foodchannel.page.WMChannelNativeActivity',
           ],
           matches:
             'ViewGroup[childCount=2] > @ImageView[index=1][clickable=true] <<n [id="me.ele:id/id_magex_mistview"]',
@@ -42,6 +43,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13362974',
             'https://i.gkd.li/i/13376008',
             'https://i.gkd.li/i/13710581',
+            'https://i.gkd.li/i/15148480',
           ],
         },
         {
