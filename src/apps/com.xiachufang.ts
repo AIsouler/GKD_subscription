@@ -46,7 +46,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '未分类-厨房问卷',
+      name: '其他-厨房问卷',
       rules: [
         {
           key: 1,

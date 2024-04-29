@@ -78,7 +78,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '未分类-获得成就弹窗',
+      name: '其他-获得成就弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

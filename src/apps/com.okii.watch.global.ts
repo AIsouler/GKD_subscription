@@ -16,7 +16,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '未分类-手表安全守护弹窗',
+      name: '其他-手表安全守护弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
