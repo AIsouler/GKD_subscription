@@ -278,8 +278,10 @@ export default defineGkdApp({
       key: 21,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
+      quickFind: true,
       rules: [
         {
+          key: 0,
           activityIds: [
             'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
@@ -292,6 +294,16 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14907533',
             'https://i.gkd.li/i/15144834',
           ],
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            'View[childCount=3] >4 View[childCount=6] > @TextView[index=2][clickable=true][visibleToUser=true] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/2d714755-efe9-4c63-8187-7f9b7a5a199c',
+          snapshotUrls: 'https://i.gkd.li/i/15144844',
         },
       ],
     },
