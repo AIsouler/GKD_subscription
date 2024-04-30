@@ -173,6 +173,14 @@ export default defineGkdApp({
           matches: '[text="立即限免体验"]',
           snapshotUrls: 'https://i.gkd.li/i/15125892',
         },
+        {
+          key: 6,
+          quickFind: true,
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches:
+            'View[childCount=4] > @TextView[index=2][visibleToUser=true] <<n [vid="popLayerWebViewContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/15160018',
+        },
       ],
     },
     {
