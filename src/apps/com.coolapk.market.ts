@@ -58,7 +58,10 @@ export default defineGkdApp({
         {
           key: 1,
           name: '点击右上角x按钮',
-          excludeMatches: '[text="回复"] + [text="发布"]', // 避免在编辑评论时误触图片右上角关闭按钮
+          excludeMatches: [
+            '[text="回复"] + [text="发布"]',
+            '[text="创建收藏单"][visibleToUser=true]',
+          ],
           matches: '[id="com.coolapk.market:id/close_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12707506',
@@ -67,6 +70,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12774771',
             'https://i.gkd.li/i/13257987',
             'https://i.gkd.li/i/14996359', // 避免误触
+            'https://i.gkd.li/i/15159886', // 避免误触
           ],
         },
         {
