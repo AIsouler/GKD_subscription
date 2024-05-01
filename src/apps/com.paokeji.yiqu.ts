@@ -31,7 +31,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告',
+      name: '全屏广告',
       activityIds: [
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
         'com.aster.comic.app.view.MainActivity',
@@ -40,10 +40,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '腾讯SDK',
+          name: '腾讯SDK-1',
           actionDelay: 350, //防误触
           matches:
-            '[id="android:id/content"] >(-n+4) FrameLayout > FrameLayout[childCount=1] > ImageView[index=0 && id!=null]',
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
           snapshotUrls: [
             'https://i.gkd.li/i/13830354',
             'https://i.gkd.li/i/13842716',
@@ -92,6 +92,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13829312', //规则3
             'https://i.gkd.li/i/13837855', //规则2
           ],
+        },
+        {
+          key: 4,
+          name: '腾讯SDK-2',
+          actionDelay: 350, //防误触
+          matches:
+            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/15173845',
         },
       ],
     },
