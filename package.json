@@ -1,6 +1,6 @@
 {
   "name": "@aisouler/gkd_subscription",
-  "version": "0.0.71",
+  "version": "0.0.72",
   "type": "module",
   "gkd": {
     "outDir": "dist",
@@ -57,7 +57,7 @@
     "lint-staged": "15.2.2",
     "prettier": "3.2.5",
     "simple-git-hooks": "2.11.1",
-    "tsx": "4.8.1",
+    "tsx": "4.8.2",
     "typescript": "5.4.5"
   },
   "volta": {
