@@ -236,7 +236,7 @@ export default defineGkdApp({
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
         'com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI',
       ],
-      // 使用id作为特征节点适配多语言，不使用 preKeys 提高点击成功率
+      // 不使用 preKeys 提高点击成功率
       rules: [
         // 第一段
         {
@@ -244,47 +244,50 @@ export default defineGkdApp({
           name: '点击[广告]按钮',
           // 防止在第二段、第三段、出现时触发，防止在文章末尾广告关闭后触发
           excludeMatches: [
-            '[id="fullCardFeedbackTitle" || id="dislike" || id="isdismatch"][visibleToUser=true]',
+            '[text="不感兴趣" || text="与我无关" || text="感谢你的反馈"][visibleToUser=true]',
           ],
-          matches: [
-            'View[childCount=1] > @[id="feedbackTagContainer"][clickable=true][visibleToUser=true] > [id^="feedback"][visibleToUser=true]',
-          ],
+          matches: '[text="广告"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12700183', // id^="feedback"
             'https://i.gkd.li/i/12642232', // ui.TmplWebViewMMUI
             'https://i.gkd.li/i/13199281', // ui.TmplWebViewTooLMpUI
-            'https://i.gkd.li/i/12646837', // 事件完成后，反馈按钮仍然存在，使用 View[childCount=1] 进行限定，防止频繁触发规则
             'https://i.gkd.li/i/14006180', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
             'https://i.gkd.li/i/14834975', // 文章未浏览至页面底部，广告反馈按钮不可见，使用 [visibleToUser=true] 进行限定，防止打开文章就频繁触发规则
-            'https://i.gkd.li/i/15061339', // 使用excludeMatches防止在文章末尾广告关闭后误触
+            'https://i.gkd.li/i/15198464', // 使用excludeMatches防止在文章末尾广告关闭后误触
+            'https://i.gkd.li/i/15198413', // 无id
+            'https://i.gkd.li/i/15198455', // 无id
           ],
         },
         // 第二段
         {
           key: 25,
           name: '点击[关闭此广告]',
-          matches: '[id="closeBtn"][clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14834975',
+          matches: '[text="关闭此广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14834975',
+            'https://i.gkd.li/i/15198422', // 无id
+          ],
         },
         {
           key: 26,
           name: '点击[不感兴趣]',
-          excludeMatches: '[id="fullCardFeedbackTitle"][visibleToUser=true]',
-          matches: '[id="dislike"][clickable=true][visibleToUser=true]',
+          excludeMatches: '[text="感谢你的反馈"][visibleToUser=true]',
+          matches: '[text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14006203',
             'https://i.gkd.li/i/14834966',
             'https://i.gkd.li/i/15061424', // 使用excludeMatches防止在文章末尾广告关闭后误触
+            'https://i.gkd.li/i/15198459', // 无id
           ],
         },
         // 第三段
         {
           key: 50,
           name: '点击[与我无关]',
-          matches: '[id="isdismatch"][clickable=true][visibleToUser=true]',
+          matches: '[text="与我无关"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14006206',
             'https://i.gkd.li/i/14834959',
+            'https://i.gkd.li/i/15198461', // 无id
           ],
         },
       ],
