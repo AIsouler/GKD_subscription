@@ -22,7 +22,7 @@ importers:
         version: 3.0.2
       '@eslint/js':
         specifier: ^9.1.1
-        version: 9.1.1
+        version: 9.2.0
       '@gkd-kit/api':
         specifier: 0.0.5
         version: 0.0.5
@@ -313,6 +313,10 @@ packages:
 
   '@eslint/js@9.1.1':
     resolution: {integrity: sha512-5WoDz3Y19Bg2BnErkZTp0en+c/i9PvgFS7MBe1+m60HjFr0hrphlAGp4yzI7pxpt4xShln4ZyYp4neJm8hmOkQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.2.0':
+    resolution: {integrity: sha512-ESiIudvhoYni+MdsI8oD7skpprZ89qKocwRM2KEvhhBJ9nl5MRh7BXU5GTod7Mdygq+AUl+QzId6iWJKR/wABA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@gkd-kit/api@0.0.5':
@@ -1511,6 +1515,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.1.1': {}
+
+  '@eslint/js@9.2.0': {}
 
   '@gkd-kit/api@0.0.5': {}
 
