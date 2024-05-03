@@ -105,6 +105,16 @@ export default defineGkdApp({
             '@ViewGroup[clickable=true] - ViewGroup[childCount=3] >2 [text="其他"]',
           snapshotUrls: 'https://i.gkd.li/i/15103543',
         },
+        {
+          key: 5,
+          quickFind: true,
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
+          matches: [
+            '[text="即将售罄"]',
+            '@[clickable=true] > [text="先去逛逛"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/15197527',
+        },
       ],
     },
     {
