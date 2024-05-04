@@ -476,7 +476,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.mm',
     name: '微信',
-    deprecatedKeys: [3, 8, 12, 13, 14, 16, 20, 21, 23, 24, 27, 33],
+    deprecatedKeys: [3, 6, 8, 12, 13, 14, 16, 20, 21, 23, 24, 27, 33],
   },
   {
     id: 'com.tencent.mobileqq',
