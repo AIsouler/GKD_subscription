@@ -19,5 +19,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-发送图片时自动勾选[原图]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches: '@[checked=false] + [text="原图"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/57b4e39f-ba48-4e57-a5de-3a461a583e60',
+          snapshotUrls: 'https://i.gkd.li/i/15209768',
+        },
+      ],
+    },
   ],
 });
