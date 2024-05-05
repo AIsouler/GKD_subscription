@@ -132,16 +132,20 @@ export default defineGkdApp({
           key: 1,
           activityIds: 'info.muge.appshare.view.main.MainActivity',
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView',
           exampleUrls:
             'https://m.gkd.li/57941037/13a69193-a276-4115-97dd-bd7a4b49fbee',
-          snapshotUrls: 'https://i.gkd.li/i/15209619',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15209619',
+            'https://i.gkd.li/i/15211765',
+          ],
         },
         {
           key: 2,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '@View[visibleToUser=true] + [text="反馈"]',
+          matches:
+            '[text="反馈"] -4 @View[visibleToUser=true] > Image[text=""]',
           exampleUrls:
             'https://m.gkd.li/57941037/155fdf95-1f5a-4bf3-a8e7-161e6bfe7bbf',
           snapshotUrls: 'https://i.gkd.li/i/15209618',
