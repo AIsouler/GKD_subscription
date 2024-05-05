@@ -110,10 +110,13 @@ export default defineGkdApp({
           quickFind: true,
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
           matches: [
-            '[text="即将售罄"]',
+            '[text="继续拼单"]',
             '@[clickable=true] > [text="先去逛逛"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/15197527',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15197527',
+            'https://i.gkd.li/i/15211473',
+          ],
         },
       ],
     },
