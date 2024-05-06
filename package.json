@@ -57,7 +57,7 @@
     "lint-staged": "15.2.2",
     "prettier": "3.2.5",
     "simple-git-hooks": "2.11.1",
-    "tsx": "4.9.1",
+    "tsx": "4.9.3",
     "typescript": "5.4.5"
   },
   "volta": {
