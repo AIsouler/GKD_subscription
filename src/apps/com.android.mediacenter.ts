@@ -40,7 +40,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-推荐广告卡片',
+      name: '局部广告-推荐卡片广告',
       desc: '点击卡片右上角[广告],点击不感兴趣[直接关闭]',
       quickFind: true,
       rules: [

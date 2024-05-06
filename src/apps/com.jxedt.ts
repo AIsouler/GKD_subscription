@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '局部广告-广告卡片',
+      name: '局部广告-卡片广告',
       activityIds: 'com.jxedt.ui.activitys.exercise.OrderExerciseActivity',
       rules: '[id="com.jxedt:id/img_question_banner_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13195641',

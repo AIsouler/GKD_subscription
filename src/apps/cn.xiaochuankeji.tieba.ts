@@ -30,7 +30,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-评论区广告卡片',
+      name: '分段广告-评论区卡片广告',
       activityIds:
         'cn.xiaochuankeji.tieba.ui.post.postdetail.PostDetailActivity',
       rules: [

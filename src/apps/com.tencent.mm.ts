@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-朋友圈广告',
-      desc: '点击广告卡片右上角,直接关闭/出现菜单,确认关闭',
+      desc: '点击卡片广告右上角,直接关闭/出现菜单,确认关闭',
       activityIds: [
         'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
         'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
@@ -17,7 +17,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击广告卡片右上角',
+          name: '点击卡片广告右上角',
           matches:
             'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true]',
           snapshotUrls: [

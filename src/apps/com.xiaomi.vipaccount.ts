@@ -16,7 +16,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-评论区广告卡片',
+      name: '局部广告-评论区卡片广告',
       activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
       rules: '[text="closeGray"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642459',

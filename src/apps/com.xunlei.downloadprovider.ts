@@ -230,7 +230,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '分段广告-"下载页"广告卡片',
+      name: '分段广告-"下载页"卡片广告',
       desc: '需选二次弹窗关闭原因',
       quickFind: true,
       rules: [

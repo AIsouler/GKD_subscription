@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-我的-广告卡片',
+      name: '局部广告-我的-卡片广告',
       quickFind: true,
       matchTime: 10000,
       resetMatch: 'activity',

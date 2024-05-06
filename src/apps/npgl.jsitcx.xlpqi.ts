@@ -30,7 +30,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-广告卡片',
+      name: '分段广告-卡片广告',
       activityIds: [
         'flc.ast.HomeActivity',
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',

@@ -59,7 +59,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-顶部广告卡片',
+      name: '局部广告-顶部卡片广告',
       rules: [
         {
           key: 0,

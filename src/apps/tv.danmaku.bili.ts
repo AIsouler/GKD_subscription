@@ -41,7 +41,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-动态推荐广告卡片',
+      name: '局部广告-动态推荐卡片广告',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
       quickFind: true,
       matchDelay: 5000,
@@ -73,7 +73,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击广告卡片右侧菜单图标',
+          name: '点击卡片广告右侧菜单图标',
           matches:
             'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
           snapshotUrls: [
@@ -180,7 +180,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击广告卡片右下角菜单按钮',
+          name: '点击卡片广告右下角菜单按钮',
           quickFind: true,
           actionMaximum: 1,
           matches: '[vid="ad_tint_frame"] >2 [vid="more"]',
