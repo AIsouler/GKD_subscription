@@ -112,10 +112,13 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-广告卡片',
+      name: '局部广告-卡片广告',
       quickFind: true,
-      rules: '[vid="iv_close"][visibleToUser=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13874124',
+      rules: '[vid="riv_banner"] < * > [vid="iv_close"][visibleToUser=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/13874124',
+        'https://i.gkd.li/i/15220559', // 避免误触
+      ],
     },
   ],
 });
