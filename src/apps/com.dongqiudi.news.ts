@@ -64,7 +64,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '分段广告-首页信息流广告',
-      desc: '点击广告卡片x关闭按钮-关闭反馈理由弹窗',
+      desc: '点击卡片广告x关闭按钮-关闭反馈理由弹窗',
       activityIds: 'com.dongqiudi.news.MainActivity',
       quickFind: true,
       rules: [

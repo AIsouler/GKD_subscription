@@ -20,7 +20,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-支付完成界面广告卡片',
+      name: '分段广告-支付完成界面卡片广告',
       quickFind: true,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [

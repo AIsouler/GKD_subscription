@@ -25,7 +25,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-广告卡片',
+      name: '局部广告-卡片广告',
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: '[desc="限时购买"] + ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13198097',

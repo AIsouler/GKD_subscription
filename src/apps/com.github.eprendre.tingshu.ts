@@ -14,7 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '搜索结果底部/播放页面广告卡片',
+          name: '搜索结果底部/播放页面卡片广告',
           activityIds: 'com.github.eprendre.tingshu.ui.play.PlayerActivity',
           matches:
             'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',

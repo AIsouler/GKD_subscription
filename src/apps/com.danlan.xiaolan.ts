@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       quickFind: true,
-      name: '分段广告-"附近的人"页面广告卡片',
+      name: '分段广告-"附近的人"页面卡片广告',
       activityIds: 'com.soft.blued.ui.home.HomeActivity',
       rules: [
         {
@@ -27,7 +27,7 @@ export default defineGkdApp({
     {
       key: 3,
       quickFind: true,
-      name: '分段广告-"来访"页面广告卡片',
+      name: '分段广告-"来访"页面卡片广告',
       activityIds: 'com.blued.android.core.ui.TerminalActivity',
       rules: [
         {

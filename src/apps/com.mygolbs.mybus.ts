@@ -35,7 +35,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '分段广告-广告卡片',
+      name: '分段广告-卡片广告',
       activityIds: [
         'com.mygolbs.mybus.RTimeActivity',
         'com.mygolbs.mybus.NewHomePageActivity',

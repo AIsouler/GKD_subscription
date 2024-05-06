@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-广告卡片',
-      desc: '关闭广告卡片',
+      name: '局部广告-卡片广告',
+      desc: '关闭卡片广告',
       quickFind: true,
       activityIds: [
         'youqu.android.todesk.activity.WelcomeActivity',

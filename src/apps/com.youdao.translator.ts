@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-翻译界面-结果下方广告',
-      desc: '点击广告卡片右上角x',
+      desc: '点击卡片广告右上角x',
       quickFind: true,
       activityIds: ['com.youdao.translator.activity.trans.TransResultActivity'],
       rules: [

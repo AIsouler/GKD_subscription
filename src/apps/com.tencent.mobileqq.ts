@@ -75,7 +75,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-好友动态-广告卡片',
+      name: '分段广告-好友动态-卡片广告',
       rules: [
         {
           key: 0,
@@ -178,7 +178,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '局部广告-顶部SVIP广告',
-      desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
+      desc: '消息界面-搜索框和消息记录之间的卡片广告,点击关闭右侧x',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules:
         'LinearLayout > TextView[text*="SVIP"||text*="超级会员"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',

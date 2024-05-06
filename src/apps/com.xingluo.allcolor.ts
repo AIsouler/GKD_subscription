@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-底部穿山甲广告',
-      desc: '点击广告卡片x关闭按钮-关闭反馈理由弹窗',
+      desc: '点击卡片广告x关闭按钮-关闭反馈理由弹窗',
       activityIds: [
         'com.cccgame.android.MainActivity',
         'com.bytedance.sdk.openadsdk.core.dislike.ui.c',

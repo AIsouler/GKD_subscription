@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-信息流广告',
-      desc: '点击广告卡片右上角x图标,点击[不感兴趣]',
+      desc: '点击卡片广告右上角x图标,点击[不感兴趣]',
       quickFind: true,
       activityIds: [
         'com.weico.international.activity.MainFragmentActivity',
@@ -16,7 +16,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击广告卡片右上角x图标',
+          name: '点击卡片广告右上角x图标',
           matches: '[vid="item_timeline_ad_action"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12738110',

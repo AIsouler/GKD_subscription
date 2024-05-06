@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-打车页面右上角红包广告',
-      desc: '点击广告卡片左上角x',
+      desc: '点击卡片广告左上角x',
       rules: [
         {
           activityIds: 'com.didi.sdk.app.MainActivity',

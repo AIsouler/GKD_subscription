@@ -45,7 +45,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击广告卡片右上角[x]',
+          name: '点击卡片广告右上角[x]',
           matches: '[vid="item_timeline_ad_action"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12857202',

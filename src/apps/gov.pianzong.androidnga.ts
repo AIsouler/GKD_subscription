@@ -26,7 +26,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-首页-推荐-广告卡片',
+      name: '局部广告-首页-推荐-卡片广告',
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
       snapshotUrls: 'https://i.gkd.li/i/12482727',
