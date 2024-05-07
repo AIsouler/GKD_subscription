@@ -112,6 +112,17 @@ export default defineGkdApp({
             'https://m.gkd.li/57941037/77c4098a-818f-4d0f-8492-e98818d0da27',
           snapshotUrls: 'https://i.gkd.li/i/14292475',
         },
+        {
+          key: 3,
+          name: '签到弹窗',
+          quickFind: true,
+          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          matches:
+            '@LynxFlattenUI[clickable=true][visibleToUser=true][text=""] -27 FlattenUIText[text^="立即签到"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/96afbb4f-afd5-4f64-948d-15fc7bb14075',
+          snapshotUrls: 'https://i.gkd.li/i/15223416',
+        },
       ],
     },
     {
