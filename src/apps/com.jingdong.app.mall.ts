@@ -149,6 +149,12 @@ export default defineGkdApp({
             '[desc="吸顶楼层"] > [desc="关闭按钮"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15112953',
         },
+        {
+          key: 3,
+          quickFind: true,
+          matches: '[id="com.jd.lib.cart.feature:id/plus_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15229577',
+        },
       ],
     },
     {
