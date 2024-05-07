@@ -243,5 +243,29 @@ export default defineGkdApp({
         '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13448905',
     },
+    {
+      key: 12,
+      name: '全屏广告-会员弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          actionMaximum: 1,
+          forcedTime: 3000,
+          activityIds: [
+            'tv.danmaku.bili.MainActivityV2',
+            'com.bilibili.vip.web.VipWebActivity',
+          ],
+          matches:
+            'WebView[text="会员中心"] >4 [text="大会员服务协议"] +2 * >2 @TextView[visibleToUser=true] <<n [vid="webview"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/60eee9aa-8799-4097-8ddf-2783afd49586',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15219142',
+            'https://i.gkd.li/i/15220560',
+          ],
+        },
+      ],
+    },
   ],
 });
