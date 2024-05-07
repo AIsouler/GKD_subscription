@@ -289,13 +289,14 @@ export default defineGkdApp({
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           ],
           matches:
-            'View[childCount=3] > @TextView[text=""][clickable=true][visibleToUser=true] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
+            'WebView[text="基金"] >(2,3) View[childCount=3] > @TextView[text=""][clickable=true][visibleToUser=true] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/5df9b6fb-7455-492c-a726-fb6a42266a02',
           snapshotUrls: [
             'https://i.gkd.li/i/14907533',
             'https://i.gkd.li/i/15144834',
             'https://i.gkd.li/i/15220394',
+            'https://i.gkd.li/i/15231403', // 避免误触
           ],
         },
         {
