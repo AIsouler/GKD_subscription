@@ -149,12 +149,15 @@ export default defineGkdApp({
         {
           key: 2,
           quickFind: true,
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          activityIds: [
+            'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.activity.PlayerActivity',
+          ],
           matches:
-            '@ImageView[index=1][clickable=true] <2 ViewGroup[childCount=2] <<n [vid="dsl_dialog_root"]',
+            'ViewGroup[childCount=2] > @ImageView[index=1][clickable=true][visibleToUser=true] <<n [vid="dsl_dialog_root"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13684724',
             'https://i.gkd.li/i/14036940',
+            'https://i.gkd.li/i/15244091',
           ],
         },
         {
