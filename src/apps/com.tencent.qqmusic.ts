@@ -102,7 +102,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-VIP弹窗',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
@@ -115,8 +115,11 @@ export default defineGkdApp({
           activityIds:
             'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
           matches:
-            '@View[clickable=true][desc="关闭"] + * > [text^="正在试听"]',
-          snapshotUrls: 'https://i.gkd.li/i/15209764',
+            '@View[clickable=true][desc="关闭"] +2 * >2 [desc$="确认协议并开通" || desc="立即开通会员"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15209764',
+            'https://i.gkd.li/i/15261116',
+          ],
         },
       ],
     },
