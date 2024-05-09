@@ -524,4 +524,9 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '哔哩哔哩',
     deprecatedKeys: [3, 5],
   },
+  {
+    id: 'com.chunqiu.ah',
+    name: 'AH视频',
+    deprecatedKeys: [3, 5, 6],
+  },
 ];
