@@ -61,7 +61,7 @@
     "typescript": "5.4.5"
   },
   "volta": {
-    "node": "20.13.0"
+    "node": "20.13.1"
   },
   "packageManager": "pnpm@9.1.0",
   "engineStrict": true,
