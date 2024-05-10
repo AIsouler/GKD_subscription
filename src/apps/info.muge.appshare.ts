@@ -28,8 +28,15 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '[text*="跳过"][text.length<=10]',
+          matches: '[text*="跳过"][visibleToUser=true][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/14553551',
+        },
+        {
+          key: 2,
+          order: -1,
+          matches:
+            '@ImageView[clickable=true] < * >2 [text*="跳过"][visibleToUser=true][text.length<10]',
+          snapshotUrls: 'https://i.gkd.li/i/15269380',
         },
       ],
     },
