@@ -150,11 +150,10 @@ export default defineGkdApp({
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: [
-        'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
         'com.tencent.mm.plugin.base.stub.UIEntryStub',
         'com.tencent.mm.ui.LauncherUI',
+        'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
       ],
       rules: [
         {
@@ -162,6 +161,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12663602',
             'https://i.gkd.li/i/13065462',
+            'https://i.gkd.li/i/15271716',
           ],
         },
       ],
