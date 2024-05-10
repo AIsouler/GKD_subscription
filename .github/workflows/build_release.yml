@@ -79,9 +79,3 @@ jobs:
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
-
-      - name: sync jsDelivr
-        if: ${{ steps.commit.outcome == 'success' }}
-        run: |
-          curl -X PUT 'https://purge.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.json5'
-          curl -X PUT 'https://purge.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.version.json5'

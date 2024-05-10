@@ -15,22 +15,8 @@
 
 **订阅链接：**
 
-- npmmirror源（推荐）
-
 ```txt
 https://registry.npmmirror.com/@aisouler/gkd_subscription/latest/files/dist/AIsouler_gkd.json5
-```
-
-- gitmirror源
-
-```txt
-https://raw.gitmirror.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
-```
-
-- jsDelivr源
-
-```txt
-https://cdn.jsdelivr.net/gh/AIsouler/GKD_subscription@main/dist/AIsouler_gkd.json5
 ```
 
 当前版本: v--VERSION--
