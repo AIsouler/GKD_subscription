@@ -8,8 +8,8 @@ export default defineGkdApp({
       key: 1,
       name: '通知提示-通知权限弹窗',
       quickFind: true,
-      actionMaximum: 1,
       matchTime: 30000,
+      actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
@@ -31,8 +31,8 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       quickFind: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
@@ -89,6 +89,23 @@ export default defineGkdApp({
           matches:
             '@ImageView[visibleToUser=true] < * -2 * > [text="你有新人券待领取"]',
           snapshotUrls: 'https://i.gkd.li/i/14391484',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '评价提示-评分弹窗',
+      desc: '返回关闭弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          matches: '[text="您对小红书的评分如何?"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/9727815d-b881-4904-bbdc-19ade426977e',
+          snapshotUrls: 'https://i.gkd.li/i/15281458',
         },
       ],
     },
