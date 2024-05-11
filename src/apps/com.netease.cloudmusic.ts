@@ -124,6 +124,13 @@ export default defineGkdApp({
           matches: '[vid="adTagView"]',
           snapshotUrls: 'https://i.gkd.li/i/15047096',
         },
+        {
+          key: 2,
+          quickFind: true,
+          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
+          matches: '[vid="iv_ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15282417',
+        },
       ],
     },
     {
