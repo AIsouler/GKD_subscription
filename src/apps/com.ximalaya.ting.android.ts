@@ -224,12 +224,12 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '通知提示-请求推送通知',
+      name: '权限提示-通知权限',
       desc: '取消推送通知',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules: [
         {
           matches: '[id="com.ximalaya.ting.android:id/cancel_btn"]',

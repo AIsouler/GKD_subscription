@@ -34,21 +34,23 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示-请求推送通知弹窗',
+      name: '权限提示-通知权限',
       desc: '请求推送通知弹窗，点击取消',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: '[text*="开启推送通知"] +(2) LinearLayout > [text="取消"]',
+          key: 0,
+          matches: ['[text*="开启推送通知"]', '[text="取消"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12662213',
             'https://i.gkd.li/i/13327880',
           ],
         },
         {
-          quickFind: true,
+          key: 1,
           matches: '[text="授权提醒"] +3 [text="拒绝"]',
           snapshotUrls: 'https://i.gkd.li/i/13775652',
         },

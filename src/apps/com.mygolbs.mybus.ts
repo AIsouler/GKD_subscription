@@ -160,17 +160,14 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示-请求通知权限弹窗',
+      name: '权限提示-通知权限',
       desc: '自动点击"取消"',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: [
-            '[id="com.mygolbs.mybus:id/message"][text$="请开启通知权限"]',
-            '[id="com.mygolbs.mybus:id/view_neg"] > [id="com.mygolbs.mybus:id/negativeButton"][text="取消"]',
-          ],
+          matches: ['[text$="请开启通知权限"]', '[text="取消"]'],
           snapshotUrls: 'https://i.gkd.li/i/12715980',
         },
       ],

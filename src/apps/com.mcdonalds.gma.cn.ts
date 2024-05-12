@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-开启通知服务',
+      name: '权限提示-通知权限',
       desc: '选择[取消]',
       matchTime: 10000,
       actionMaximum: 1,

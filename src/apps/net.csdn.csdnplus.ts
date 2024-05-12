@@ -85,7 +85,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示-请求推送通知弹窗',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

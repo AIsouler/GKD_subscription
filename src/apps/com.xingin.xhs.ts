@@ -6,22 +6,24 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-通知权限弹窗',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 30000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           matches: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13195753', //com.xingin.xhs.index.v2.IndexActivityV2
-            'https://i.gkd.li/i/13222356', //com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity
-            'https://i.gkd.li/i/13256145', //com.huawei.android.launcher.unihome.UniHomeLauncher
-            'https://i.gkd.li/i/13255627', //com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity
+            'https://i.gkd.li/i/13195753',
+            'https://i.gkd.li/i/13222356',
+            'https://i.gkd.li/i/13256145',
+            'https://i.gkd.li/i/13255627',
           ],
         },
         {
+          key: 1,
           matches: '@ImageView <2 FrameLayout - [text^="打开通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13250418',
         },

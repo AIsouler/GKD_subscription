@@ -8,12 +8,12 @@ export default defineGkdApp({
       key: 1,
       name: '通知提示-公告弹窗',
       desc: '点击[知道了]',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
           matches:
             '[desc="公告"] + * + @[desc="知道了"] <<n [id="android:id/content"]',
           exampleUrls:

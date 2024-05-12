@@ -104,7 +104,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '通知提示',
+      name: '权限提示-通知权限',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',

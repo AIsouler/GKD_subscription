@@ -47,21 +47,23 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示-请求打开系统通知提示信息',
-      desc: '自动点击提示信息的x按钮',
+      name: '权限提示-通知权限',
+      desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           matches:
             '[text^="打开消息通知"] + [text="去开启"] + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12684278'],
+          snapshotUrls: 'https://i.gkd.li/i/12684278',
         },
         {
+          key: 1,
           matches:
             '[text^="打开消息通知"] + FrameLayout > [text="去开启"] < FrameLayout + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12684351'],
+          snapshotUrls: 'https://i.gkd.li/i/12684351',
         },
       ],
     },

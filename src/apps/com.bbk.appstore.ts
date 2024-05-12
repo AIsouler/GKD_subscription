@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -18,7 +18,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13198101',
         },
         {
-          actionMaximumKey: 0,
+          key: 1,
           matches: ['[text*="通知"]', '[text="取消"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13198234',

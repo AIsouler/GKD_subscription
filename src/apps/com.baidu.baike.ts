@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '通知提示-请求通知权限弹窗',
+      name: '权限提示-通知权限',
       desc: '自动点击"不允许"',
       matchTime: 10000,
       actionMaximum: 1,

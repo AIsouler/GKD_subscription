@@ -15,24 +15,24 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-系统推送弹窗',
-      desc: '检测到未开启系统推送-点击暂不开启',
+      name: '权限提示-通知权限',
+      desc: '点击暂不开启',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[text*="开启系统推送"] - ImageView < * < * < FrameLayout + FrameLayout >(3) Button[text="暂不开启"]',
-      snapshotUrls: 'https://i.gkd.li/i/12639800',
-    },
-    {
-      key: 3,
-      name: '通知提示-系统推送提示信息',
-      desc: '点击顶部提醒右侧x按钮',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text^="打开推送"] +(2) RelativeLayout > ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/12639869',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[text*="开启系统推送"] - ImageView < * < * < FrameLayout + FrameLayout >(3) Button[text="暂不开启"]',
+          snapshotUrls: 'https://i.gkd.li/i/12639800',
+        },
+        {
+          key: 1,
+          matches: '[text^="打开推送"] +(2) RelativeLayout > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/12639869',
+        },
+      ],
     },
     {
       key: 4,

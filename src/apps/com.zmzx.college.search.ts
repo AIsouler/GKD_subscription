@@ -31,16 +31,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '通知提示-请求推送通知弹窗',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: 'ImageView[id="com.zmzx.college.search:id/siv_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12867853',
-    },
-    {
       key: 2,
       name: '全屏广告-弹窗广告',
       rules: [
@@ -145,7 +135,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '通知提示-申请开启推送通知弹窗',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

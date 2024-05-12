@@ -6,11 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '通知提示-通知权限授权弹窗',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
           matches: '@ImageView[id="com.hpbr.bosszhipin:id/iv_cancle"]',

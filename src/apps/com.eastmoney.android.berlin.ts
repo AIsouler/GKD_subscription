@@ -19,13 +19,13 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示-请求通知权限提示信息',
+      name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
         '[id="com.eastmoney.android.berlin:id/push_on_notify_on"] + [id="com.eastmoney.android.berlin:id/push_on_notify_delete"]',
-      snapshotUrls: ['https://i.gkd.li/i/12706065'],
+      snapshotUrls: 'https://i.gkd.li/i/12706065',
     },
   ],
 });

@@ -83,12 +83,12 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '通知提示-请求开启消息通知弹窗',
+      name: '权限提示-通知权限',
       desc: '点击关闭',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules: [
         {
           matches:

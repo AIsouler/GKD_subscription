@@ -59,7 +59,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-公告',
+      name: '通知提示-公告弹窗',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,

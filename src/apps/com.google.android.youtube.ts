@@ -71,12 +71,16 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '通知提示-开启推送通知提示弹窗',
+      name: '权限提示-通知权限',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="开启通知"] < * < * +2 * >2 [text="不用了"]',
-      snapshotUrls: 'https://i.gkd.li/i/14194155',
+      rules: [
+        {
+          matches: ['[text="开启通知"]', '[text="不用了"]'],
+          snapshotUrls: 'https://i.gkd.li/i/14194155',
+        },
+      ],
     },
   ],
 });

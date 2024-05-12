@@ -44,13 +44,13 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '通知提示-开启推送通知弹窗',
+      name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
       snapshotUrls: 'https://i.gkd.li/i/12838152',
-      rules: ['[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]'],
+      rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]',
     },
     {
       key: 4,

@@ -33,7 +33,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '通知提示',
+      name: '权限提示-通知权限',
       desc: '点击[暂不设置]',
       quickFind: true,
       resetMatch: 'app',

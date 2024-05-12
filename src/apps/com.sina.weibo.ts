@@ -141,27 +141,26 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '通知提示-请求开启通知弹窗',
+      name: '权限提示-通知权限',
       desc: '自动点击暂不开启',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
-      rules:
-        '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705979',
-    },
-    {
-      key: 10,
-      name: '通知提示-请求开启通知提示信息',
-      desc: '自动点击x按钮',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      quickFind: true,
-      rules:
-        '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705986',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
+          snapshotUrls: 'https://i.gkd.li/i/12705979',
+        },
+        {
+          key: 1,
+          matches:
+            '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
+          snapshotUrls: 'https://i.gkd.li/i/12705986',
+        },
+      ],
     },
     {
       key: 11,

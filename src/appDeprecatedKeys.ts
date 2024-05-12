@@ -512,7 +512,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.zmzx.college.search',
     name: '大学搜题酱',
-    deprecatedKeys: [4, 8, 9, 10],
+    deprecatedKeys: [1, 4, 8, 9, 10],
   },
   {
     id: 'me.ele',
@@ -533,5 +533,15 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.unionpay',
     name: '云闪付',
     deprecatedKeys: [11],
+  },
+  {
+    id: 'com.netease.newsreader.activity',
+    name: '网易新闻',
+    deprecatedKeys: [3],
+  },
+  {
+    id: 'com.sina.weibo',
+    name: '微博',
+    deprecatedKeys: [10],
   },
 ];

@@ -44,11 +44,11 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '通知提示-请求开启通知弹窗',
+      name: '权限提示-通知权限',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules:
         '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',
       snapshotUrls: 'https://i.gkd.li/i/13256505',
