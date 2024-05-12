@@ -90,8 +90,11 @@ export default defineGkdApp({
           key: 29,
           name: '点击[Close the ad]',
           quickFind: true,
-          matches: '@LinearLayout[clickable=true] > [text="Close the ad"]',
-          snapshotUrls: 'https://i.gkd.li/i/12905838',
+          matches: '@LinearLayout[clickable=true] > [text*="Close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12905838',
+            'https://i.gkd.li/i/15284966',
+          ],
         },
 
         // 预留key
