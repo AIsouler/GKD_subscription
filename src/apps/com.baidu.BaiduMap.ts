@@ -109,9 +109,8 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      rules:
-        '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13258995',
+      rules: '[vid="push_close"]',
+      snapshotUrls: 'https://i.gkd.li/i/15284736',
     },
     {
       key: 9,
