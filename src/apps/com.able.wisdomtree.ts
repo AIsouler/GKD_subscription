@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '通知提示-消息推送通知',
+      name: '权限提示-通知权限',
       desc: '自动点击暂不开启。',
       quickFind: true,
       matchTime: 10000,

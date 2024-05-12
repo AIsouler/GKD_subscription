@@ -23,7 +23,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '通知提示-开启资讯通知弹窗',
+      name: '权限提示-通知权限',
       desc: '关闭资讯通知后，总是弹窗让打开',
       rules: [
         {

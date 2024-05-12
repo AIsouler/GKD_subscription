@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-请求消息通知弹窗',
+      name: '权限提示-通知权限',
       desc: '点击取消',
       quickFind: true,
       matchTime: 10000,

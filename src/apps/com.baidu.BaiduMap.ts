@@ -103,7 +103,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '通知提示-请求打开通知权限弹窗',
+      name: '权限提示-通知权限',
       desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,

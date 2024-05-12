@@ -49,7 +49,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '通知提示-请求通知权限提示弹窗',
+      name: '权限提示-通知权限',
       desc: '自动点击关闭按钮',
       quickFind: true,
       actionMaximum: 1,

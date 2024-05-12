@@ -6,15 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-关闭开启通知弹窗',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: 'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
       snapshotUrls: [
-        'https://i.gkd.li/i/13223669', //com.hd.smartVillage.modules.main.MainActivity
-        'https://i.gkd.li/i/13293000', //com.hd.smartVillage.modules.h5service.H5WebActivity
+        'https://i.gkd.li/i/13223669',
+        'https://i.gkd.li/i/13293000',
       ],
     },
     {

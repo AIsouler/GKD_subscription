@@ -16,12 +16,15 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-请求发送通知弹窗',
+      name: '权限提示-通知权限',
       desc: '点击拒绝',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           quickFind: true,
-          matches: '[text$="发送通知"] <2 * +2 * > [text="拒绝"]',
+          matches: ['[text$="发送通知"]', '[text="拒绝"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/0487a113-5b57-402e-96ca-1f351e121d82',
           snapshotUrls: 'https://i.gkd.li/i/14321882',

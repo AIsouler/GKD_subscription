@@ -6,19 +6,23 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示',
+      name: '权限提示-通知权限',
       quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches:
             'TextView[text^="打开通知"] +2 [id="com.jd.jrapp:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13249998',
         },
         {
-          matches: 'View[text="开启并订阅通知"] < View + View[clickable=true]',
+          key: 1,
+          matches:
+            '@View - * > [text="开启并订阅通知"] <<n [id="com.jd.jrapp:id/webview"]',
           snapshotUrls: 'https://i.gkd.li/i/13255656',
         },
       ],

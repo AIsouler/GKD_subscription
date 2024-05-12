@@ -49,7 +49,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示-请求通知弹窗',
+      name: '权限提示-通知权限',
       desc: '自动点击“以后再说”',
       quickFind: true,
       matchTime: 10000,

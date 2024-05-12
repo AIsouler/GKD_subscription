@@ -6,11 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-请求通知提示弹窗',
+      name: '权限提示-通知权限',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules: '[id="com.mem.MacaoLife:id/cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13350665',
     },

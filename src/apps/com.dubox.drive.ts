@@ -35,11 +35,11 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '通知提示',
+      name: '权限提示-通知权限',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
       rules:
         '[text="Authorize"] - [id="com.dubox.drive:id/dialog_button_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13688406',

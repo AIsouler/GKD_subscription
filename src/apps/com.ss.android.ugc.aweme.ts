@@ -118,20 +118,20 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '通知提示-请求开启通知提示信息',
+      name: '权限提示-通知权限',
       desc: '自动点击“暂不”',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
       rules: [
         {
-          name: '顶部卡片',
+          key: 0,
           matches:
             '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >(2) [text="开启朋友通知"]',
           snapshotUrls: 'https://i.gkd.li/i/12675129',
         },
         {
-          name: '半幅弹窗',
+          key: 1,
           matches: '[text="及时获得消息提醒"] +2 [text="暂不开启"]',
           snapshotUrls: 'https://i.gkd.li/i/13669790',
         },

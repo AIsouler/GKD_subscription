@@ -57,7 +57,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '通知提示-请求通知权限提示信息',
+      name: '权限提示-通知权限',
       desc: '点击顶部提醒左侧x按钮',
       matchTime: 10000,
       actionMaximum: 1,

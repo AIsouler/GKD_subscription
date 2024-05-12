@@ -39,7 +39,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '通知提示-推送通知弹窗',
+      name: '权限提示-通知权限',
       desc: '自动点击"暂不"',
       quickFind: true,
       matchTime: 10000,
