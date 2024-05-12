@@ -81,9 +81,15 @@ export default defineGkdApp({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          activityIds: [
+            'com.tencent.qqmusic.activity.AppStarterActivity',
+            'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
+          ],
           matches: '[text="流量够用"]',
-          snapshotUrls: 'https://i.gkd.li/i/13197868',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13197868',
+            'https://i.gkd.li/i/15285647',
+          ],
         },
       ],
     },
