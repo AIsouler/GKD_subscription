@@ -137,10 +137,10 @@ export default defineGkdApp({
       key: 14,
       name: '局部广告-信息流广告',
       desc: '点击关闭',
+      quickFind: true,
       rules: [
         {
           key: 0,
-          quickFind: true,
           activityIds:
             'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
@@ -157,7 +157,8 @@ export default defineGkdApp({
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
             'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
           ],
-          matches: '@[text="×"] <n * > [text*="广告"]',
+          matches:
+            '@[text="×"][visibleToUser=true] <n * > [text*="广告"] <<n [vid="web_frame"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14220104',
             'https://i.gkd.li/i/14421277',
@@ -165,21 +166,18 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: '@[vid="menu"][visibleToUser=true] < * - * > [text^="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14296163',
         },
         {
           key: 4,
-          quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: '@ViewGroup[clickable=true] <3 * < * -2 * >2 [text$="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14332161',
         },
         {
           key: 5,
-          quickFind: true,
           activityIds: [
             'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
@@ -193,7 +191,6 @@ export default defineGkdApp({
         },
         {
           key: 6,
-          quickFind: true,
           activityIds:
             'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
@@ -206,12 +203,19 @@ export default defineGkdApp({
         },
         {
           key: 7,
-          quickFind: true,
           activityIds:
             'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] <n * > [text="创作者小助手"][index=1]',
           snapshotUrls: 'https://i.gkd.li/i/14232195',
+        },
+        {
+          key: 8,
+          activityIds:
+            'com.zhihu.android.mix.activity.ContentMixProfileActivity',
+          matches:
+            '@[text="×"][visibleToUser=true] <n * > [text="查看详情"] <<n [vid="view_content"]',
+          snapshotUrls: 'https://i.gkd.li/i/15285359',
         },
       ],
     },
