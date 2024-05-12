@@ -17,9 +17,15 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-弹窗广告',
       quickFind: true,
-      activityIds: 'com.android.thememanager.ThemeResourceTabActivity',
+      activityIds: [
+        'com.android.thememanager.ThemeResourceTabActivity',
+        'com.android.thememanager.ThemeResourceProxyTabActivity',
+      ],
       rules: 'ImageView[id="com.android.thememanager:id/cancel"][desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/13215038',
+      snapshotUrls: [
+        'https://i.gkd.li/i/13215038',
+        'https://i.gkd.li/i/15286330',
+      ],
     },
     {
       key: 3,
@@ -31,11 +37,17 @@ export default defineGkdApp({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.android.thememanager.ThemeResourceTabActivity',
+          activityIds: [
+            'com.android.thememanager.ThemeResourceTabActivity',
+            'com.android.thememanager.ThemeResourceProxyTabActivity',
+          ],
           matches: '[vid="close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/41ff6d56-e583-4e6e-9fb3-4efafaeedbd5',
-          snapshotUrls: 'https://i.gkd.li/i/14722559',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14722559',
+            'https://i.gkd.li/i/15286334',
+          ],
         },
       ],
     },
