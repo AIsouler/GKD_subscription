@@ -80,5 +80,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '局部广告-“我的”界面广告卡片',
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          activityIds: 'com.wifitutu.ui.main.MainActivity',
+          matches: '@* - [vid="native_express_ad_logo_tv"]',
+          snapshotUrls: 'https://i.gkd.li/i/15284730',
+        },
+      ],
+    },
   ],
 });
