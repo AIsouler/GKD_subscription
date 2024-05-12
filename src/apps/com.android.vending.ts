@@ -21,14 +21,21 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-[体验 Google Play Pass]弹窗',
       desc: '点击[以后再说]',
+      quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          position: {
+            left: 'width * 0.5',
+            top: 'width * 1.5',
+          },
           activityIds: 'com.google.android.finsky.activities.MainActivity',
-          matches: '[text^="体验 Google Play Pass"] +3 * > [text="以后再说"]',
-          snapshotUrls: 'https://i.gkd.li/i/14958783',
+          matches: '[text="体验 Google Play Pass，免费试用 1 个月"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14958783',
+            'https://i.gkd.li/i/15286041',
+          ],
         },
       ],
     },
