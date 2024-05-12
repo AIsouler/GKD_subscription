@@ -32,11 +32,18 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14553551',
         },
         {
+          // 该开屏广告需要点击坐标在跳过按钮下半部分内才能跳过
           key: 2,
           order: -1,
-          matches:
-            '@ImageView[clickable=true] < * >2 [text*="跳过"][visibleToUser=true][text.length<10]',
-          snapshotUrls: 'https://i.gkd.li/i/15269380',
+          position: {
+            left: 'width * 0.0826',
+            top: 'width * 0.1',
+          },
+          matches: '[vid="splash_full_tk_play_card_view"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15269380',
+            'https://i.gkd.li/i/15285908',
+          ],
         },
       ],
     },
