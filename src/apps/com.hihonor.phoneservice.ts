@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '定位提示-请求位置权限提示信息',
+      name: '权限提示-定位权限',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.hihonor.phoneservice.main.MainActivity',

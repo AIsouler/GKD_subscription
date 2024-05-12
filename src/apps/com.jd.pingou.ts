@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '定位提示-底部申请定位浮窗',
+      name: '权限提示-定位权限',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.jd.jdlite.MainFrameActivity',

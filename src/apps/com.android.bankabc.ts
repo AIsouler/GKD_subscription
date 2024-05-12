@@ -38,7 +38,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '定位提示',
+      name: '权限提示-定位权限',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',

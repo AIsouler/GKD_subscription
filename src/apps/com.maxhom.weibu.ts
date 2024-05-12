@@ -64,7 +64,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '定位提示-漂流瓶-定位弹窗',
+      name: '权限提示-定位权限',
       desc: '自动点击取消',
       quickFind: true,
       actionMaximum: 1,

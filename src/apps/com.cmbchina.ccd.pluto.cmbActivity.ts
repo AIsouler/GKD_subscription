@@ -92,7 +92,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '定位提示-请求开启定位权限弹窗',
+      name: '权限提示-定位权限',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',

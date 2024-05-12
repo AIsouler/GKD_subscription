@@ -529,4 +529,9 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: 'AH视频',
     deprecatedKeys: [3, 5, 6],
   },
+  {
+    id: 'com.unionpay',
+    name: '云闪付',
+    deprecatedKeys: [11],
+  },
 ];
