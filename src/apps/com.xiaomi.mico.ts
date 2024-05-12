@@ -19,8 +19,12 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
-      rules: '@[text="取消"] < * - * >2 [text*="开启位置服务"]',
-      snapshotUrls: 'https://i.gkd.li/i/15284753',
+      rules: [
+        {
+          matches: ['[text*="开启位置服务"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/15284753',
+        },
+      ],
     },
   ],
 });
