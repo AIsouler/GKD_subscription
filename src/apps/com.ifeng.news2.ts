@@ -50,7 +50,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '定位提示-请求位置权限弹窗',
+      name: '权限提示-定位权限',
       desc: '自动点击取消',
       actionMaximum: 1,
       resetMatch: 'app',

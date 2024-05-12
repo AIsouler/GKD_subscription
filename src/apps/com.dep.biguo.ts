@@ -23,7 +23,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '定位提示-请求定位权限弹窗',
+      name: '权限提示-定位权限',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dep.biguo.mvp.ui.activity.MainActivity',
