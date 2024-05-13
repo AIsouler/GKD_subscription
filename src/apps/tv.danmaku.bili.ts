@@ -247,17 +247,29 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-会员弹窗',
       desc: '点击关闭',
+      quickFind: true,
+      forcedTime: 10000,
+      actionMaximum: 1,
+      actionMaximumKey: 0,
       rules: [
         {
-          quickFind: true,
-          actionMaximum: 1,
-          forcedTime: 3000,
+          key: 0,
+          order: -1, // 避免触发 key1 造成误触
+          activityIds: 'com.bilibili.vip.web.VipWebActivity',
+          matches:
+            'WebView[text="会员中心"] >4 [text="大会员服务协议"] +2 * >2 @TextView[visibleToUser=true][index=1] <<n [vid="webview"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/5392d5f5-004b-422b-b55b-ea07fa8a2c2c',
+          snapshotUrls: 'https://i.gkd.li/i/15289942',
+        },
+        {
+          key: 1,
           activityIds: [
             'tv.danmaku.bili.MainActivityV2',
             'com.bilibili.vip.web.VipWebActivity',
           ],
           matches:
-            'WebView[text="会员中心"] >4 [text="大会员服务协议"] +2 * >2 @TextView[visibleToUser=true] <<n [vid="webview"]',
+            'WebView[text="会员中心"] >4 [text="大会员服务协议"] +2 * >2 @TextView[visibleToUser=true][index=0] <<n [vid="webview"]',
           exampleUrls:
             'https://m.gkd.li/57941037/60eee9aa-8799-4097-8ddf-2783afd49586',
           snapshotUrls: [
