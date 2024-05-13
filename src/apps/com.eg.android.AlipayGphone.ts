@@ -311,5 +311,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 22,
+      name: '其他-蚂蚁理财社区-[加入同路人]弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverTransActivity$Main',
+          matches:
+            '@TextView[clickable=true][text=""] < * > [text="立即加入"] <<n [id="com.alipay.mobile.nebula:id/h5_trans_web_content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/e6332999-1c2b-49f0-84e1-780424a5cf2a',
+          snapshotUrls: 'https://i.gkd.li/i/15289022',
+        },
+      ],
+    },
   ],
 });
