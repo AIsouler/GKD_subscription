@@ -409,12 +409,15 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '@[desc="关闭"] - * > [text="发现新版本"]',
-          snapshotUrls: 'https://i.gkd.li/i/13386719',
+          matches: '@[desc="关闭"] <2 * >2 Button[text^="立即"][text.length=4]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13386719',
+            'https://i.gkd.li/i/13526551',
+          ],
         },
         {
           key: 1,
-          matches: '@[text="稍后处理"] +2 [text="立即升级"]',
+          matches: ['[text="立即升级"]', '[text="稍后处理"]'],
           snapshotUrls: 'https://i.gkd.li/i/14724108',
         },
       ],
@@ -437,21 +440,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14138340',
             'https://i.gkd.li/i/13931212',
           ],
-        },
-      ],
-    },
-    {
-      key: 19,
-      name: '更新提示-内测邀请弹窗',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: '@[desc="关闭"] - * > [text="QQ测试版"]',
-          snapshotUrls: 'https://i.gkd.li/i/13526551',
         },
       ],
     },
