@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '分段广告-我的页面卡片式广告',
+      name: '分段广告-我的页面卡片广告',
       desc: '需点击二次弹窗确认',
       quickFind: true,
       activityIds: 'com.camellia.trace.activity.MainActivity',

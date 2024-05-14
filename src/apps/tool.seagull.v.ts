@@ -6,11 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
-          name: '卡片式广告-1',
+          name: '卡片广告-1',
           activityIds: 'io.github.trojan_gfw.igniter.MainActivity',
           matches:
             'View[childCount=2] > @Button[clickable=true] - View > View > View > Image',

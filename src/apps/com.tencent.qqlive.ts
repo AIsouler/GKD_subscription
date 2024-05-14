@@ -44,7 +44,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '分段广告-卡片式广告',
+      name: '分段广告-卡片广告',
       rules: [
         {
           key: 0,

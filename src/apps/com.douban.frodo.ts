@@ -165,7 +165,7 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '分段广告-搜索页/帖子内容与评论区中间的卡片式广告',
+      name: '分段广告-搜索页/帖子内容与评论区中间的卡片广告',
       desc: '部分有二次弹窗',
       actionMaximum: 1,
       resetMatch: 'activity',

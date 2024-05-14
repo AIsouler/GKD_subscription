@@ -40,7 +40,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片式广告',
+      name: '局部广告-卡片广告',
       activityIds: [
         'client.android.yixiaotong.v3.ui.V3MainActivity',
         'client.android.yixiaotong.v3.ui.appcontrol.bath.BathControlActivity',

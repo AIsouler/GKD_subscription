@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '分段广告-播放界面卡片式广告',
+      name: '分段广告-播放界面卡片广告',
       desc: '需点击二次弹窗关闭原因',
       quickFind: true,
       activityIds: [

@@ -23,7 +23,7 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '局部广告-卡片广告',
       quickFind: true,
       rules: [
         {
