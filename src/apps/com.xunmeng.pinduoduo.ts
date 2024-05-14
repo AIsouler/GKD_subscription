@@ -292,14 +292,14 @@ export default defineGkdApp({
         {
           matches: [
             'TextView[text="正在直播"]',
-            '@ImageView[desc="返回"] <4 ViewGroup <<3 FrameLayout[id="android:id/content"]',
+            '@ImageView[desc="返回"] <4 ViewGroup <<n FrameLayout[id="android:id/content"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13446291',
         },
         {
           matches: [
             'TextView[text="查看更多低价商品"]',
-            '@ImageView[desc="返回"] <4 ViewGroup <<3 FrameLayout[id="android:id/content"]',
+            '@ImageView[desc="返回"] <4 ViewGroup <<n FrameLayout[id="android:id/content"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13791119',
         },

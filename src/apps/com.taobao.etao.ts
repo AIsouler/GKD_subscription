@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="更新提示"] <<2 * +2 * >2 [text="取消"]',
+      rules: '@[text="取消"] < * > [text="好,升级"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12684250',
         'https://i.gkd.li/i/12727457',

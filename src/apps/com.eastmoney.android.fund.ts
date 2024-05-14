@@ -45,7 +45,7 @@ export default defineGkdApp({
             'com.eastmoney.android.fund.activity.FundSplashActivity',
           ],
           matches:
-            '@ImageView[visibleToUser=true] < FrameLayout - ImageView < FrameLayout <<4 [vid="container"]',
+            '@ImageView[visibleToUser=true] < FrameLayout - ImageView < FrameLayout <<n [vid="container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/21743bbb-010a-410c-8ce1-57710d37722d',
           snapshotUrls: [
