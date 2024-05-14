@@ -300,13 +300,13 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '巨幅卡片式广告1',
+          name: '巨幅卡片广告1',
           matches: '[text^="跳过广告"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13527105',
         },
         {
           key: 2,
-          name: '巨幅卡片式广告2',
+          name: '巨幅卡片广告2',
           matches:
             '@TextView[index=2] <3 ViewGroup[childCount=3] <<n [id="com.netease.cloudmusic:id/container"]',
           snapshotUrls: 'https://i.gkd.li/i/14045424',

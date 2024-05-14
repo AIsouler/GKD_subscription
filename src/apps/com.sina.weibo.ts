@@ -31,7 +31,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '局部广告-博文内容区与评论区中间卡片式广告',
+      name: '局部广告-博文内容区与评论区中间卡片广告',
       desc: '点击右上角x',
       quickFind: true,
       rules: [

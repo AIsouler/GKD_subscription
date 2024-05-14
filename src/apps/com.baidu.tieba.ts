@@ -81,9 +81,9 @@ export default defineGkdApp({
             'LinearLayout[clickable=true][childCount=1] > @FrameLayout[clickable=true][childCount=1][desc=null] > ImageView',
           ],
           snapshotUrls: [
-            'https://i.gkd.li/i/12775913', // 此3条应算卡片式广告
-            'https://i.gkd.li/i/13043133', // 此3条应算卡片式广告
-            'https://i.gkd.li/i/13054256', // 此3条应算卡片式广告
+            'https://i.gkd.li/i/12775913', // 此3条应算卡片广告
+            'https://i.gkd.li/i/13043133', // 此3条应算卡片广告
+            'https://i.gkd.li/i/13054256', // 此3条应算卡片广告
             'https://i.gkd.li/i/12775930',
             'https://i.gkd.li/i/12840951',
             'https://i.gkd.li/i/12775916',
@@ -104,7 +104,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-首页、推荐列表顶部卡片式广告',
+      name: '局部广告-首页、推荐列表顶部卡片广告',
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: [

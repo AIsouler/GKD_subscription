@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.qihoo.jia.playpage.RecordPlayActivity',
       rules: [
         {
-          name: '视频下方卡片式广告',
+          name: '视频下方卡片广告',
           matches:
             'ViewGroup[childCount=2] > ImageView[clickable=true] + ImageView[clickable=true]',
         },

@@ -49,7 +49,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-推荐页卡片式广告',
+      name: '分段广告-推荐页卡片广告',
       rules: [
         {
           key: 0,

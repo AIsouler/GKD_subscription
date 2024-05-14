@@ -62,7 +62,7 @@ export default defineGkdApp({
     // key = 3已弃用
     {
       key: 4,
-      name: '分段广告-视频底部与评论区中间卡片式广告',
+      name: '分段广告-视频底部与评论区中间卡片广告',
       desc: '需点击二次弹窗 屏蔽原因',
       quickFind: true,
       activityIds: [

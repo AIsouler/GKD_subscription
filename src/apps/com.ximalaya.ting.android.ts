@@ -167,7 +167,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '分段广告-卡片式广告',
+      name: '分段广告-卡片广告',
       quickFind: true,
       rules: [
         {

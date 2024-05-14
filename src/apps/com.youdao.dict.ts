@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-单词页面卡片式广告',
+      name: '分段广告-单词页面卡片广告',
       rules: [
         {
           key: 0,
