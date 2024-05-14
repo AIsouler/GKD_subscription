@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
@@ -17,8 +17,10 @@ export default defineGkdApp({
             'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
             'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
           ],
-          matches:
-            '@ImageView < FrameLayout[childCount=1] <3 [childCount=5] <<n [vid="bannerLayout"] + [vid="itemUser"][visibleToUser=true]',
+          matches: [
+            '[vid="itemUser"][visibleToUser=true]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView <<n [vid="bannerLayout"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14771070',
             'https://i.gkd.li/i/14771175',
@@ -48,8 +50,10 @@ export default defineGkdApp({
           actionDelay: 300, // 没有此字段会导致误触
           activityIds:
             'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
-          matches:
-            '@ImageView < FrameLayout[childCount=1] <<n [vid="banner"] +2 [vid="title_browse"][visibleToUser=true]',
+          matches: [
+            '[vid="title_browse"][visibleToUser=true]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView <<n [vid="banner"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14758809',
             'https://i.gkd.li/i/14783076',
