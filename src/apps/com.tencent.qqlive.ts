@@ -105,7 +105,7 @@ export default defineGkdApp({
           key: 5,
           name: '点击右下角关闭',
           matches:
-            'ImageView[childCount=0] <<2 RelativeLayout + FrameLayout + RelativeLayout > RelativeLayout > RelativeLayout > ImageView',
+            'ImageView[childCount=0] < * < RelativeLayout + FrameLayout + RelativeLayout > RelativeLayout > RelativeLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/i/13426421',
         },
         {
