@@ -27,8 +27,12 @@ export default defineGkdApp({
           key: 2,
           quickFind: true,
           activityIds: 'com.zm.wfsdk.core.activity.WfInterstitialActivity',
-          matches: '[vid="wf_interstitial_close_iv"]',
-          snapshotUrls: 'https://i.gkd.li/i/14927523',
+          matches:
+            '@[vid="wf_interstitial_close_iv"] < * >5 [vid="wf_interstitial_action_tv"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14927523',
+            'https://i.gkd.li/i/15320417',
+          ],
         },
         {
           key: 3,
