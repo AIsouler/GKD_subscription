@@ -218,5 +218,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 18,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          matches:
+            '[id="android:id/content"] > FrameLayout[childCount=3] > ImageView[clickable=true][visibleToUser=true][index=2]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/096c3d85-08b0-4566-865d-31eb0079ad6e',
+          snapshotUrls: 'https://i.gkd.li/i/15314921',
+        },
+      ],
+    },
   ],
 });
