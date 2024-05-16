@@ -277,6 +277,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15220560',
           ],
         },
+        {
+          key: 2,
+          activityIds: 'com.bilibili.vip.web.VipWebActivity',
+          matches:
+            'WebView[text="大会员"] >3 View[childCount=4] >3 View[childCount=1] > View[childCount=1] > @Image[visibleToUser=true][childCount=0][text=""] <<n [vid="webview"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/f56c6392-c473-4988-af41-00adedbf3905',
+          snapshotUrls: 'https://i.gkd.li/i/15328394',
+        },
       ],
     },
   ],
