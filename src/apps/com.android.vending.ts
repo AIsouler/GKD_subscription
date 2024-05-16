@@ -19,13 +19,15 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-[体验 Google Play Pass]弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击[以后再说]',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
+          name: '体验 Google Play Pass',
           position: {
             left: 'width * 0.5',
             top: 'width * 1.5',
@@ -36,6 +38,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14958783',
             'https://i.gkd.li/i/15286041',
           ],
+        },
+        {
+          key: 1,
+          name: '隆重推出 Google Play Points 计划',
+          matches: '[text="以后再说"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15335350',
         },
       ],
     },
