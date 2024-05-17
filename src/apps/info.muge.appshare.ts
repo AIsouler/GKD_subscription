@@ -136,8 +136,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            'RelativeLayout[childCount=2] > RelativeLayout > View[clickable=true]',
+          quickFind: true,
+          matches: 'View[vid="v_jump"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/6b1d7b37-edd7-499f-a8b0-ecba24ef2c44',
           snapshotUrls: 'https://i.gkd.li/i/14181146',
