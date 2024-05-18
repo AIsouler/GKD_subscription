@@ -72,10 +72,15 @@ export default defineGkdApp({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'LinearLayout[childCount=3] > [text="以后再说"][index=0]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12534016',
-        'https://i.gkd.li/i/13328599',
+      rules: [
+        {
+          matches: ['[text="立即升级"]', '[text="以后再说"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/12534016',
+            'https://i.gkd.li/i/13328599',
+            'https://i.gkd.li/i/15359995',
+          ],
+        },
       ],
     },
     {
