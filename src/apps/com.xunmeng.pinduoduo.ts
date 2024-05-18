@@ -45,10 +45,13 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          action: 'back',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          matches:
-            'ImageView < @ViewGroup[clickable=true][visibleToUser=true] < ViewGroup + ViewGroup >7 [text="开心收下"]',
-          snapshotUrls: 'https://i.gkd.li/i/13761182',
+          matches: '[text="开心收下"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13761182',
+            'https://i.gkd.li/i/15360330',
+          ],
         },
         {
           key: 3,
