@@ -13,27 +13,28 @@ export default defineGkdApp({
         'com.hupu.games.main.MainActivity',
         'com.hupu.android.bbs.detail.PostDetailActivity',
         'com.hupu.topic.TopicActivity',
+        'com.hupu.android.bbs.page.rating.ratingDetail.RatingDetailActivity',
       ],
       rules: [
         {
           key: 0,
-          matches:
-            '@[id="com.hupu.games:id/shield_view"] >2 [id="com.hupu.games:id/tv_tag"][text="广告"]',
+          matches: '[vid="shield_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12511005',
             'https://i.gkd.li/i/13258026',
             'https://i.gkd.li/i/13259692',
+            'https://i.gkd.li/i/15360331',
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
-          matches:
-            '@[clickable=true] > [id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
+          matches: '@[clickable=true] > [text="屏蔽该广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12511010',
             'https://i.gkd.li/i/12534848',
             'https://i.gkd.li/i/13259699',
+            'https://i.gkd.li/i/15360360',
           ],
         },
       ],
