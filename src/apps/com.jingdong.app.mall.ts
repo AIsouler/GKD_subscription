@@ -84,8 +84,11 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-          matches: 'FrameLayout > [desc="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/13165721',
+          matches: '@FrameLayout[clickable=true] > [desc="关闭"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13165721',
+            'https://i.gkd.li/i/15364514',
+          ],
         },
         {
           key: 1,
