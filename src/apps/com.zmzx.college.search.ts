@@ -61,7 +61,7 @@ export default defineGkdApp({
             'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
           ],
           matches:
-            'ImageView < @ViewGroup[clickable=true] <<n ViewGroup +n ViewGroup[childCount=2] [text="广告"]',
+            'ImageView < @ViewGroup[clickable=true] < ViewGroup <n * + ViewGroup >3 [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13451304',
             'https://i.gkd.li/i/14519779',
@@ -89,6 +89,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12893408',
             'https://i.gkd.li/i/13929945',
           ],
+        },
+        {
+          key: 5,
+          quickFind: true,
+          activityIds: 'com.mercury.sdk.activity.InterstitialPortraitActivity',
+          matches: '[vid="iv_itr_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15360368',
         },
       ],
     },
