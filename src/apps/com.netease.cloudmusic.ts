@@ -145,43 +145,22 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches: '@ImageView[visibleToUser=true] - * > [text="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13229016',
-            'https://i.gkd.li/i/13962214',
-          ],
-        },
-        {
-          key: 2,
-          quickFind: true,
+          action: 'back',
           activityIds: [
             'com.netease.cloudmusic.activity.MainActivity',
             'com.netease.cloudmusic.activity.PlayerActivity',
           ],
-          matches:
-            'ViewGroup[childCount=2] > @ImageView[index=1][clickable=true][visibleToUser=true] <<n [vid="dsl_dialog_root"]',
+          matches: '[vid="dsl_dialog_root"]',
           snapshotUrls: [
+            'https://i.gkd.li/i/13804534',
+            'https://i.gkd.li/i/13848913',
+            'https://i.gkd.li/i/13962214',
             'https://i.gkd.li/i/14036940',
+            'https://i.gkd.li/i/15047126',
+            'https://i.gkd.li/i/15125892',
             'https://i.gkd.li/i/15244091',
+            'https://i.gkd.li/i/13230603',
           ],
-        },
-        {
-          key: 4,
-          quickFind: true,
-          action: 'back',
-          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
-          matches: '[text="赞赏功能全新升级啦"]',
-          snapshotUrls: 'https://i.gkd.li/i/13848913',
-        },
-        {
-          key: 5,
-          quickFind: true,
-          action: 'back',
-          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
-          matches: '[text="立即限免体验"]',
-          snapshotUrls: 'https://i.gkd.li/i/15125892',
         },
         {
           key: 6,
@@ -220,36 +199,10 @@ export default defineGkdApp({
         {
           key: 1,
           action: 'back',
-          activityIds: [
-            'com.netease.cloudmusic.activity.MainActivity',
+          activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
-          ],
-          matches: '[text$="千万级会员曲库"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13228955',
-            'https://i.gkd.li/i/14956768',
-          ],
-        },
-        {
-          key: 2,
-          action: 'back',
-          activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
-          matches: '[text="搭配沉浸环绕声，享受空间音感"]',
-          snapshotUrls: 'https://i.gkd.li/i/13230603',
-        },
-        {
-          key: 6,
-          action: 'back',
-          activityIds: [
-            'com.netease.cloudmusic.activity.MainActivity',
-            'com.netease.cloudmusic.activity.PlayerActivity',
-          ],
-          matches: '[text*="免费听30分钟"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12843383',
-            'https://i.gkd.li/i/13804534',
-            'https://i.gkd.li/i/15047126',
-          ],
+          matches: '[text^="邀您开通VIP"]',
+          snapshotUrls: 'https://i.gkd.li/i/14956768',
         },
         {
           key: 7,
