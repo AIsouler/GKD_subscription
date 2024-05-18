@@ -549,18 +549,27 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          excludeMatches:
+            'Button[desc="使用密码"] < * <2 * >6 [vid="kinda_button_impl_wrapper"][desc="支付"]',
           matches: '[vid="kinda_button_impl_wrapper"][desc="立即支付"]',
           exampleUrls:
             'https://m.gkd.li/57941037/13fd1e89-6d75-4efe-90d6-91687de8c9b1',
-          snapshotUrls: 'https://i.gkd.li/i/15144571',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15144571',
+            'https://i.gkd.li/i/15360745',
+          ],
         },
         {
           preKeys: [0],
           key: 1,
-          matches: '[vid="kinda_button_impl_wrapper"][desc="支付"]',
+          matches:
+            'Button[desc="使用密码"] < * <2 * >6 [vid="kinda_button_impl_wrapper"][desc="支付"]',
           exampleUrls:
             'https://m.gkd.li/57941037/69380aa0-e6d2-4ea4-8ee7-6a1e45889e6c',
-          snapshotUrls: 'https://i.gkd.li/i/15144570',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15144570',
+            'https://i.gkd.li/i/15360744',
+          ],
         },
       ],
     },
