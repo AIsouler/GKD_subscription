@@ -17,8 +17,6 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
-      actionMaximum: 1,
-      resetMatch: 'activity',
       rules: [
         {
           key: 0,
@@ -34,9 +32,11 @@ export default defineGkdApp({
           name: '首页1',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           quickFind: true,
-          matches:
-            '[id="com.chinatelecom.bestpayclient:id/iv_dialog_close_one"]',
-          snapshotUrls: 'https://i.gkd.li/i/13455790',
+          matches: '[vid="iv_dialog_close_one"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13455790',
+            'https://i.gkd.li/i/15369212',
+          ],
         },
         {
           key: 2,
