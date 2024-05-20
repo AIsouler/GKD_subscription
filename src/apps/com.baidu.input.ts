@@ -10,12 +10,17 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15376423',
+        },
+        {
+          key: 1,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1cddb43c-9ddc-4fb0-a781-66f167035d2b',
           snapshotUrls: 'https://i.gkd.li/i/14406395',
         },
       ],
