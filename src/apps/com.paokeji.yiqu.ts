@@ -147,6 +147,13 @@ export default defineGkdApp({
           matches: '@LinearLayout[clickable=true] - * > [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/i/14847142',
         },
+        {
+          key: 3,
+          activityIds: 'com.aster.comic.app.view.MainActivity',
+          matches:
+            '[id="android:id/content"] >2 FrameLayout[childCount=9] >3 FrameLayout[childCount=2] > @FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/15374245',
+        },
       ],
     },
     {
