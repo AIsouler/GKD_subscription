@@ -17,5 +17,15 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12749906',
       ],
     },
+    {
+      key: 1,
+      name: '更新提示-智能更新弹窗（英语）',
+      quickFind: true,
+      rules: [
+        '[vid="alertTitle"][text="Install automatically?"]',
+        '[id="android:id/button2"][text="No"]',
+      ],
+      snapshotUrls: ['https://i.gkd.li/i/15386869'],
+    },
   ],
 });
