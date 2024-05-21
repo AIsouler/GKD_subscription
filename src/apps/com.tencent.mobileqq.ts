@@ -726,6 +726,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13627967',
           ],
         },
+        {
+          key: 2,
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches:
+            'FrameLayout[childCount=7] > FrameLayout[childCount=2] > @ImageView[childCount=0] <<n [vid="root"]',
+          snapshotUrls: 'https://i.gkd.li/i/15388608',
+        },
       ],
     },
   ],
