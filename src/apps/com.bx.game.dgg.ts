@@ -31,6 +31,13 @@ export default defineGkdApp({
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +2 * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15362927',
         },
+        {
+          key: 3,
+          activityIds: 'com.bx.game.dgg.MainActivity',
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/15400143',
+        },
       ],
     },
     {
