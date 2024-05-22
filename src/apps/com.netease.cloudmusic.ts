@@ -150,6 +150,7 @@ export default defineGkdApp({
             'com.netease.cloudmusic.activity.MainActivity',
             'com.netease.cloudmusic.activity.PlayerActivity',
           ],
+          excludeMatches: '[text="当前场景"]',
           matches: '[vid="dsl_dialog_root"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13804534',
@@ -160,6 +161,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15125892',
             'https://i.gkd.li/i/15244091',
             'https://i.gkd.li/i/13230603',
+            'https://i.gkd.li/i/15404777', // 避免误触
           ],
         },
         {
