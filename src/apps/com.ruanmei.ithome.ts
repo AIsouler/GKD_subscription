@@ -6,10 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-资讯页信息流广告',
-      activityIds: 'com.ruanmei.ithome.ui.MainActivity',
-      rules: '[id="hongbaotips"] +n @View > [text="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/13167193',
+      name: '局部广告-卡片广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ruanmei.ithome.ui.MainActivity',
+          matches: '@[text="关闭"][visibleToUser=true] <<n [vid="ll_web"]',
+          snapshotUrls: 'https://i.gkd.li/i/15413491',
+        },
+      ],
     },
     {
       key: 2,
@@ -35,6 +43,21 @@ export default defineGkdApp({
           key: 2,
           matches: '[vid="rl_dislike"]',
           snapshotUrls: 'https://i.gkd.li/i/14734987',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ruanmei.ithome.ui.MainActivity',
+          matches: '[vid="btn_dialog_upgrade_ignore"]',
+          snapshotUrls: 'https://i.gkd.li/i/15413494',
         },
       ],
     },
