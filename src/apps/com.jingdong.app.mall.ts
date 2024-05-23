@@ -97,7 +97,7 @@ export default defineGkdApp({
             'com.jd.lib.cashier.complete.view.CashierCompleteActivity',
             'com.jd.lib.jshop.jshop.JshopMainShopActivity',
           ],
-          matches: '[vid="webview"] + [vid="close"][desc="关闭页面"]',
+          matches: '[vid="close"][desc="关闭页面"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13218034',
             'https://i.gkd.li/i/14927060',
@@ -106,21 +106,14 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-          matches: '@[desc="关闭按钮"] <n * >n [desc="弹窗"]',
+          excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]',
+          matches:
+            '[desc="关闭页面" || desc="关闭按钮"][clickable=true][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13241883',
-            'https://i.gkd.li/i/132599029',
-          ],
-        },
-        {
-          key: 3,
-          quickFind: true,
-          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
-          matches: 'RelativeLayout > ImageView[desc="关闭页面"]',
-          excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]',
-          snapshotUrls: [
             'https://i.gkd.li/i/13258996',
             'https://i.gkd.li/i/13336847', // 增加excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]', 避免在该快照误触
+            'https://i.gkd.li/i/15416926',
           ],
         },
       ],
