@@ -110,5 +110,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '局部广告-卡片广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.alicloud.databox.transferpage.TransferListActivity',
+          matches: '[vid="close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15433289',
+        },
+      ],
+    },
   ],
 });
