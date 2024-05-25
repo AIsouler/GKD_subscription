@@ -180,5 +180,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 10,
+      name: '全屏广告-签到弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches:
+            '[id="android:id/content"] > FrameLayout > FrameLayout > ViewGroup[childCount=2] > ViewGroup > ViewGroup[clickable=true][childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/i/15443191',
+        },
+      ],
+    },
   ],
 });
