@@ -107,6 +107,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13710591',
           ],
         },
+        {
+          key: 4,
+          activityIds: 'me.ele.pha.shell.ui.ElePhaActivity',
+          matches:
+            'WebView >4 View[childCount=2] > @View[clickable=true] > Image[childCount=0] <<n [vid="pha_view_pager_root_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/15443153',
+        },
       ],
     },
     {
