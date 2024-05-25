@@ -12,31 +12,11 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          action: 'clickCenter',
-          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
-          snapshotUrls: 'https://i.gkd.li/i/12745222',
+          matches: '[vid="hiad_skip_text"]',
+          snapshotUrls: 'https://i.gkd.li/i/15443502',
         },
       ],
     },
-    // 若开启播放器时恰好首页在展示首页横幅广告，则在播放器下拉的推荐页面中会误触此规则导致点击广告（https://i.gkd.li/i/13068854）
-    // {
-    //   key: 1,
-    //   name: '首页横幅广告',
-    //   quickFind: true,
-    //   activityIds: [
-    //     'com.huawei.android.launcher.unihome.UniHomeLauncher',
-    //     'com.android.mediacenter.MainActivity',
-    //   ],
-    //   rules: [
-    //     {
-    //       matches: 'TextView[id="com.huawei.music:id/ad_banner_tag"&&visibleToUser=true]',
-    //       snapshotUrls: [
-    //         'https://i.gkd.li/i/13068287',
-    //         'https://i.gkd.li/i/13067243',
-    //       ],
-    //     },
-    //   ],
-    // },
     {
       key: 2,
       name: '分段广告-广告反馈下拉窗',
