@@ -10,12 +10,25 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           quickFind: true,
           activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
           matches: '[vid="anythink_myoffer_btn_close_id"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/7fce3088-53c6-41e0-8b22-67acc1934984',
           snapshotUrls: 'https://i.gkd.li/i/15443189',
+        },
+        {
+          key: 1,
+          activityIds: 'com.banshenghuo.mobile.ofdm.MainActivity',
+          matches:
+            '[id="android:id/content"] FrameLayout[index=1][childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/15444005',
+        },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[text="反馈"] -n @View[index=0] > Image',
+          snapshotUrls: 'https://i.gkd.li/i/15444017',
         },
       ],
     },
