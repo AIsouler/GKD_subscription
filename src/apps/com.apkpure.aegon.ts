@@ -19,8 +19,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-更新与已安装界面-查看更多',
-      desc: '在更新界面自动点击查看更多按钮，展开所有应用',
+      name: '功能类-更新与已安装界面-点击[查看更多]',
+      quickFind: true,
       rules: [
         {
           activityIds: [
@@ -29,8 +29,8 @@ export default defineGkdApp({
             'com.apkpure.aegon.cms.activity.CommonActivity',
             'com.apkpure.aegon.main.activity.AppMoreActivity',
           ],
-          matches: 'ViewGroup > [text="查看更多"]',
-          snapshotUrls: 'https://i.gkd.li/i/13466329',
+          matches: '@ViewGroup[clickable=true] > [text="查看更多"]',
+          snapshotUrls: 'https://i.gkd.li/i/15469126',
         },
       ],
     },
