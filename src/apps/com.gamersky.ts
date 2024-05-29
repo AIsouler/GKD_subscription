@@ -13,7 +13,7 @@ export default defineGkdApp({
           key: 0,
           name: '首页卡片广告',
           activityIds: 'com.gamersky.main.activity.LibMainActivity',
-          matches: '[text="广告"] < * + [id="com.gamersky:id/delete"]',
+          matches: ['[text="广告"]', '[id="com.gamersky:id/delete"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13451220',
             'https://i.gkd.li/i/13635580',
@@ -37,16 +37,21 @@ export default defineGkdApp({
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
           matches:
-            'View[childCount=2] > [text="广告"] + @View[clickable=true] <<n [id="com.gamersky:id/contentWebView"]',
-          snapshotUrls: 'https://i.gkd.li/i/13635579',
+            '[text="广告"] < * > @[text=""][clickable=true][index=1] <<n [vid="contentWebView"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13635579',
+            'https://i.gkd.li/i/15477470',
+          ],
         },
         {
           key: 3,
           name: '评论区卡片广告',
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
-          matches:
-            '@[id="com.gamersky:id/close"][clickable=true][visibleToUser=true] - * > [id="com.gamersky:id/badge"]',
+          matches: [
+            '[id="com.gamersky:id/badge"]',
+            '[id="com.gamersky:id/close"]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/13759484',
         },
       ],
@@ -62,7 +67,7 @@ export default defineGkdApp({
         {
           quickFind: true,
           activityIds: 'com.gamersky.main.activity.LibMainActivity',
-          matches: '[text="签到成功！"] < * > [text="确定"]',
+          matches: ['[text="签到成功！"]', '[text="确定"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/696e417a-3100-43a2-a401-f4f80dfa9f47',
           snapshotUrls: 'https://i.gkd.li/i/14761502',
