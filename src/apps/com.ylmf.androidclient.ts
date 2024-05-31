@@ -51,16 +51,13 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14738909',
         },
         {
-          preKeys: [3],
-          key: 2,
           name: '返回',
+          key: 4,
+          preKeys: [3],
           action: 'back',
+          matches: 'ImageView[vid="iv_menu_back"]',
           activityIds: 'com.main.world.equity.activity.SignInRewardActivity',
-          matches: '[text="签到规则"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/9d445e18-91dc-4e6c-a765-3a1593230d7b',
-          snapshotUrls: 'https://i.gkd.li/i/14738907',
-        },
+        }
       ],
     },
     {
