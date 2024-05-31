@@ -12,8 +12,17 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          name: '点击[生活]',
+          key: 0,
+          quickFind: true,
+          matches: 'TextView[text="生活"]',
+          activityIds: 'com.ylmf.androidclient.UI.MainBossActivity',
+          exampleUrls: 'https://m.gkd.li/152465495/41fd5bf8-cfef-45bf-8031-35fc768f70c5',
+        },
+        {
           key: 0,
           name: '点击[签到]',
+          preKeys: [0],
           activityIds: 'com.ylmf.androidclient.UI.MainBossActivity',
           matches: '@[clickable=true] >2 [text="签到"]',
           exampleUrls:
@@ -24,21 +33,29 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          name: '点击[在签到页面内签到]',
+          key: 2,
+          preKeys: [1],
+          quickFind: true,
+          activityIds: 'com.main.world.equity.activity.SignInRewardActivity',
+          matches: 'ImageView[id="com.ylmf.androidclient:id/iv_sign_in_btn"]',
+        },
+        {
+          preKeys: [2],
           key: 1,
           name: '点击[我知道了]',
-          activityIds: 'com.main.world.equity.activity.SignInActivity',
+          activityIds: 'com.main.world.equity.activity.SignInRewardActivity',
           matches: '[text="我知道了"]',
           exampleUrls:
             'https://m.gkd.li/57941037/fd597dc2-b926-44fa-acaf-ec7cfa41813a',
           snapshotUrls: 'https://i.gkd.li/i/14738909',
         },
         {
-          preKeys: [1],
+          preKeys: [3],
           key: 2,
           name: '返回',
           action: 'back',
-          activityIds: 'com.main.world.equity.activity.SignInActivity',
+          activityIds: 'com.main.world.equity.activity.SignInRewardActivity',
           matches: '[text="签到规则"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9d445e18-91dc-4e6c-a765-3a1593230d7b',
