@@ -118,11 +118,17 @@ export default defineGkdApp({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.android.mediacenter.PageActivity',
+          activityIds: [
+            'com.android.mediacenter.PageActivity',
+            'com.android.mediacenter.MainActivity',
+          ],
           matches: '[vid="campaign_dialog_close_image_view"]',
           exampleUrls:
             'https://m.gkd.li/57941037/00c83449-9809-4de8-9c7c-c6ce1b9fa2c3',
-          snapshotUrls: 'https://i.gkd.li/i/14193738',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14193738',
+            'https://i.gkd.li/i/15523958',
+          ],
         },
       ],
     },
