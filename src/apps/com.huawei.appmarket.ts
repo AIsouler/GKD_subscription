@@ -65,5 +65,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.huawei.appmarket.MarketActivity',
+          matches: '[vid="close_icon"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/13a31ae0-10c8-49bc-9154-363498237eff',
+          snapshotUrls: 'https://i.gkd.li/i/15523964',
+        },
+      ],
+    },
   ],
 });
