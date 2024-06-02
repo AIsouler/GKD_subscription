@@ -250,7 +250,6 @@ export default defineGkdApp({
       quickFind: true,
       forcedTime: 10000,
       actionMaximum: 1,
-      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
@@ -285,6 +284,24 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/f56c6392-c473-4988-af41-00adedbf3905',
           snapshotUrls: 'https://i.gkd.li/i/15328394',
+        },
+        {
+          key: 3,
+          activityIds: 'tv.danmaku.bili.MainActivityV2',
+          matches:
+            '[text="会员中心"] >3 View > View[childCount=2] > View[childCount=1] > @TextView[clickable=true] <<n [vid="webview"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/4384e301-8a79-427e-88d6-7fb8e422c6e8',
+          snapshotUrls: 'https://i.gkd.li/i/15523824',
+        },
+        {
+          key: 4,
+          activityIds: 'tv.danmaku.bili.MainActivityV2',
+          matches:
+            'ComposeView > View[childCount=7] > @View[clickable=true][childCount=0] <<n [vid="vip_panel"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/a78a7719-b148-4df2-a225-f7a24be0c413',
+          snapshotUrls: 'https://i.gkd.li/i/15523975',
         },
       ],
     },
