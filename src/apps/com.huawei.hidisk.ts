@@ -26,6 +26,14 @@ export default defineGkdApp({
             'https://m.gkd.li/57941037/dd870248-a785-4fd7-81bb-8366c3169340',
           snapshotUrls: 'https://i.gkd.li/i/14881775',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.huawei.android.hicloud.ui.activity.GuideWebViewActivity',
+          matches:
+            'View[childCount=3] > @View[clickable=true][index=0] <<n [vid="guid_webview_mian"]',
+          snapshotUrls: 'https://i.gkd.li/i/15523963',
+        },
       ],
     },
   ],
