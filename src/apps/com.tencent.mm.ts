@@ -37,13 +37,16 @@ export default defineGkdApp({
           excludeMatches:
             'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true]',
           matches: '@LinearLayout >2 [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14783802',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14783802',
+            'https://i.gkd.li/i/15531539',
+          ],
         },
 
         // 预留key
         // 第二段
         {
-          preKeys: [0],
+          preKeys: [0, 1],
           key: 25,
           name: '点击[关闭]',
           quickFind: true,
@@ -51,6 +54,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12907642', // text="关闭该广告"
             'https://i.gkd.li/i/13926578', // text="关闭广告"
+            'https://i.gkd.li/i/15531274',
           ],
         },
         {
