@@ -106,15 +106,21 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-关闭应用信息页开启自启动后出现的提示',
-      desc: '点击[知道了]',
+      name: '功能类-应用信息页-自启动提示',
+      desc: '点击[知道了]/[关闭]',
       quickFind: true,
+      activityIds: 'com.miui.appmanager.ApplicationsDetailsActivity',
       rules: [
         {
+          key: 0,
           action: 'back',
-          activityIds: 'com.miui.appmanager.ApplicationsDetailsActivity',
           matches: '[text^="开启自启动"]',
           snapshotUrls: 'https://i.gkd.li/i/15524706',
+        },
+        {
+          key: 1,
+          matches: ['[text^="关闭自启动后将导致"]', '[text="关闭"]'],
+          snapshotUrls: 'https://i.gkd.li/i/15531343',
         },
       ],
     },
