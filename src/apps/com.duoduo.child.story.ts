@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
-      desc: '关闭视频上方广告',
+      desc: '点击关闭',
       rules: [
         {
           quickFind: true,
