@@ -29,7 +29,8 @@ export default defineGkdApp({
             'com.apkpure.aegon.cms.activity.CommonActivity',
             'com.apkpure.aegon.main.activity.AppMoreActivity',
           ],
-          matches: '@ViewGroup[clickable=true] > [text="查看更多"][visibleToUser=true]',
+          matches:
+            '@ViewGroup[clickable=true] > [text="查看更多"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15469126',
         },
       ],
@@ -48,13 +49,15 @@ export default defineGkdApp({
         {
           name: '点击三点图标',
           key: 0,
-          matches: '@ImageView - RelativeLayout >3 [text="AD"][visibleToUser=true]',
+          matches:
+            '@ImageView - RelativeLayout >3 [text="AD"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13466329',
         },
         {
           name: '点击关闭',
           preKeys: 0,
-          matches: '@LinearLayout[clickable=true] >2 [text="关闭"][visibleToUser=true]',
+          matches:
+            '@LinearLayout[clickable=true] >2 [text="关闭"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13466610',
         },
       ],
