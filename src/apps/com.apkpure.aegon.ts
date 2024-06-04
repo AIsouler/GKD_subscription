@@ -57,8 +57,8 @@ export default defineGkdApp({
           name: '点击关闭',
           preKeys: 0,
           matches:
-            '@LinearLayout[clickable=true] >2 [text="关闭"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13466610',
+            '@LinearLayout[clickable=true] >n [text="关闭"][visibleToUser=true]',
+          snapshotUrls: ['https://i.gkd.li/i/13466610','https://i.gkd.li/i/15542026'],
         },
       ],
     },
