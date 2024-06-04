@@ -58,7 +58,10 @@ export default defineGkdApp({
           preKeys: 0,
           matches:
             '@LinearLayout[clickable=true] >n [text="关闭"][visibleToUser=true]',
-          snapshotUrls: ['https://i.gkd.li/i/13466610','https://i.gkd.li/i/15542026'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13466610',
+            'https://i.gkd.li/i/15542026',
+          ],
         },
       ],
     },
