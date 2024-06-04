@@ -30,7 +30,7 @@ export default defineGkdGlobalGroups([
         key: 2,
         quickFind: true,
         matches:
-          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
     apps: [...appList.openAdBlackListAppIDs]
