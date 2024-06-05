@@ -61,8 +61,12 @@ export default defineGkdApp({
           excludeMatches: [
             '[text="回复"] + [text="发布"]',
             '[text="创建收藏单"][visibleToUser=true]',
+            '[vid="submit_view"][text="发布"]',
           ],
-          matches: '[id="com.coolapk.market:id/close_view"]',
+          matches: [
+            '[text*="广告"][visibleToUser=true]',
+            '[id="com.coolapk.market:id/close_view"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12707506',
             'https://i.gkd.li/i/12642094',
@@ -71,6 +75,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13257987',
             'https://i.gkd.li/i/14996359', // 避免误触
             'https://i.gkd.li/i/15159886', // 避免误触
+            'https://i.gkd.li/i/15587119', // 避免误触
           ],
         },
         {
