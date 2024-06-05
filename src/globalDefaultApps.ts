@@ -76,6 +76,7 @@ export const blackListAppIDs: string[] = [
   'xyz.nextalone.nagram', // Nagram
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
+  'com.android.chrome', // Chrome
 
   'com.canghai.haoka',
   'com.xy.td',
