@@ -19,7 +19,10 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[text="领取"][clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/15573070',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15573070', // 签到前
+            'https://i.gkd.li/i/15573233', // 签到后
+          ],
         },
         {
           preKeys: [0],
