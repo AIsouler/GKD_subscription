@@ -14,8 +14,12 @@ export default defineGkdApp({
         {
           quickFind: true,
           activityIds: 'com.ruanmei.ithome.ui.MainActivity',
-          matches: '@[text="关闭"][visibleToUser=true] <<n [vid="ll_web"]',
-          snapshotUrls: 'https://i.gkd.li/i/15413491',
+          matches:
+            '@[text="关闭"][visibleToUser=true] <<n [vid="ll_web"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15413491',
+            'https://i.gkd.li/i/15603266', // 避免误触
+          ],
         },
       ],
     },
