@@ -13,11 +13,11 @@ body:
       options:
         - label: 搜索检查是否已经存在请求相同功能的问题/讨论，以避免重复创建issue
           required: true
-        - label: 确认知晓并同意维护者直接关闭不符合规范的issue
+        - label: 我确认知晓并同意维护者直接关闭不符合规范的issue
           required: true
-        - label: 确保提供正确的快照, 否则我同意维护者直接关闭issue
+        - label: 我确保提供正确的快照, 否则我同意维护者直接关闭issue
           required: true
-        - label: 确保已阅读[#120](https://github.com/AIsouler/GKD_subscription/issues/120)，并确认需适配的快照不在不予适配的范围内，否则我同意维护者直接关闭问题
+        - label: 我确保已阅读[#120](https://github.com/AIsouler/GKD_subscription/issues/120)，并确认需适配的快照不在不予适配的范围内，否则我同意维护者直接关闭问题
           required: true
   - type: textarea
     id: feature-description
