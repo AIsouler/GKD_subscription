@@ -34,5 +34,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '更新提示',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: ['[text="立即更新"]', '[text="以后再说"]'],
+          snapshotUrls: 'https://i.gkd.li/i/15751656',
+        },
+      ],
+    },
   ],
 });
