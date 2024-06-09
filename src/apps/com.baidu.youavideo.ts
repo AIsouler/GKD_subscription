@@ -74,18 +74,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"] ',
+          matches: '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"]',
           snapshotUrls: ['https://i.gkd.li/i/13048700'],
         },
         {
           key: 1,
           matches: '[id="com.baidu.youavideo:id/iv_close"]',
+          excludeMatches: '[vid="tv_title"][text$="权限"]',
           exampleUrls:
             'https://m.gkd.li/57941037/3aa0e107-e31f-4e5a-8969-1fcd8310281d',
           snapshotUrls: [
             'https://i.gkd.li/i/14133595',
             'https://i.gkd.li/i/14217352',
+            'https://i.gkd.li/i/15750684', // 排除权限申请弹窗的规则触发
           ],
         },
       ],
