@@ -77,7 +77,7 @@ export const blackListAppIDs: string[] = [
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
   'com.android.chrome', // Chrome
-  'com.google.android.youtube', // YouTube
+  'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
 
   'com.canghai.haoka',
   'com.xy.td',
