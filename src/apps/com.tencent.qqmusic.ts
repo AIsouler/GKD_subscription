@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
-      activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
         {
           key: 1,
@@ -41,6 +40,14 @@ export default defineGkdApp({
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches: '@[clickable=true] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15041019',
+        },
+        {
+          key: 5,
+          quickFind: true,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches:
+            '@ViewGroup[childCount=1][clickable=true] <<n RecyclerView >2 [text="最近播放"]',
+          snapshotUrls: 'https://i.gkd.li/i/15756931',
         },
       ],
     },
