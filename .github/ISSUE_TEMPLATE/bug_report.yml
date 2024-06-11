@@ -36,7 +36,7 @@ body:
         快照是一个 zip 文件, 快照链接是类似 "https://i.gkd.li/i/XXXXXXXX" 的文本, 按照如下方式可获得快照信息
 
         按照下面的截图示例来获取界面快照, 上传文件或者生成链接并粘贴到下面的输入框\
-        ![img](https://user-images.githubusercontent.com/45487685/270372181-9e05a475-6664-4e1b-adc7-1e3973fff01f.png)\
+        ![img](https://raw.githubusercontent.com/AIsouler/GKD_subscription/e08028b4a4464640f39927059b9b502760111e8e/Snapshot.png)\
         此外需提供 [主页-点击记录] 的截图\
     validations:
       required: true
