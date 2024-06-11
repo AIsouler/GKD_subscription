@@ -18,6 +18,8 @@ body:
           required: true
         - label: 我确认知晓并同意维护者直接关闭不符合规范的issue
           required: true
+        - label: 我确保已阅读[#120](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
+          required: true
         - label: 我确保提供下列BUG描述及其复现步骤, 否则我同意维护者直接关闭issue
           required: true
         - label: 我确保提供 误触/不执行规则 的界面的快照, 否则我同意维护者直接关闭issue
