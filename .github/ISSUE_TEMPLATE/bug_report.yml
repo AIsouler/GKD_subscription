@@ -16,9 +16,13 @@ body:
         - label: |
             检查这个问题是否属于 [本项目维护的规则](https://github.com/AIsouler/GKD_subscription) 导致的
           required: true
-        - label: 确认知晓并同意维护者直接关闭不符合规范的issue
+        - label: 我确认知晓并同意维护者直接关闭不符合规范的issue
           required: true
-        - label: 确保提供下列BUG描述及其复现步骤, 否则我同意维护者直接关闭issue
+        - label: 我确保已阅读[#120](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
+          required: true
+        - label: 我确保提供下列BUG描述及其复现步骤, 否则我同意维护者直接关闭issue
+          required: true
+        - label: 我确保提供 误触/不执行规则 的界面的快照, 否则我同意维护者直接关闭issue
           required: true
   - type: textarea
     id: feature-description
@@ -32,7 +36,7 @@ body:
         快照是一个 zip 文件, 快照链接是类似 "https://i.gkd.li/i/XXXXXXXX" 的文本, 按照如下方式可获得快照信息
 
         按照下面的截图示例来获取界面快照, 上传文件或者生成链接并粘贴到下面的输入框\
-        ![img](https://user-images.githubusercontent.com/45487685/270372181-9e05a475-6664-4e1b-adc7-1e3973fff01f.png)\
+        ![img](https://raw.githubusercontent.com/AIsouler/GKD_subscription/e08028b4a4464640f39927059b9b502760111e8e/Snapshot.png)\
         此外需提供 [主页-点击记录] 的截图\
     validations:
       required: true

@@ -5,8 +5,30 @@ export default defineGkdApp({
   name: '宝宝树孕育',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      rules: [
+        {
+          key: 0,
+          quickFind: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12614757',
+        },
+        {
+          key: 1,
+          matches:
+            '[id="android:id/content"] >3 FrameLayout[childCount=5] > FrameLayout > RelativeLayout > View[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15566228',
+        },
+      ],
+    },
+    {
       key: 2,
-      name: '全屏广告-弹出广告(偶发)',
+      name: '全屏广告-弹窗广告',
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {
@@ -18,7 +40,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-首页右侧悬浮广告(偶发)',
+      name: '局部广告-首页右侧悬浮广告',
       activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
       rules: [
         {

@@ -75,6 +75,9 @@ export const blackListAppIDs: string[] = [
   'com.alicloud.databox', // 阿里云盘 开屏广告在 https://i.gkd.li/i/15144565 误触导致自动签到规则执行中断
   'xyz.nextalone.nagram', // Nagram
   'com.openai.chatgpt', // ChatGPT
+  'org.telegram.group', // Turrit
+  'com.android.chrome', // Chrome
+  'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -189,7 +192,6 @@ export const openAdWhiteListAppIDs = new Set([
   ...whiteListAppIDs,
   'com.bbk.theme', // i 主题
   'com.bbk.appstore', // vivo应用商店
-  'com.huawei.appmarket', // 华为应用市场
   'com.miui.player', // 小米音乐
   'com.tencent.southpole.appstore', // 黑鲨应用市场
   'com.vivo.space', // vivo 官网

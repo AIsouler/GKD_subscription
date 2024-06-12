@@ -63,6 +63,13 @@ export default defineGkdApp({
           matches: '[desc="关闭广告"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15024812',
         },
+        {
+          key: 3,
+          quickFind: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '@ImageView[clickable=true] <n * > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/15520336',
+        },
       ],
     },
     {

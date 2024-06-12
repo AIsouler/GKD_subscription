@@ -5,6 +5,20 @@ export default defineGkdApp({
   name: '华为应用市场',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      quickFind: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[vid="clock_layout"]',
+          snapshotUrls: 'https://i.gkd.li/i/15523957',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '更新提示',
       matchTime: 10000,
@@ -62,6 +76,21 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/89e6f2eb-b543-4dd8-88ce-6e888d0d8c8a',
           snapshotUrls: 'https://i.gkd.li/i/14861810',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.huawei.appmarket.MarketActivity',
+          matches: '[vid="close_icon"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/13a31ae0-10c8-49bc-9154-363498237eff',
+          snapshotUrls: 'https://i.gkd.li/i/15523964',
         },
       ],
     },
