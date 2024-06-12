@@ -80,8 +80,8 @@ export default defineGkdApp({
               snapshotUrls: 'https://i.gkd.li/i/14738944',
             },
           ],
-        }
-      ]
+        },
+      ],
     },
   ],
 });
