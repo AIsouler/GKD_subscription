@@ -10,14 +10,16 @@ export default defineGkdApp({
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: [
+        'com.ylmf.androidclient.UI.MainBossActivity',
+        'com.main.world.equity.activity.SignInActivity',
+        'com.main.world.equity.activity.SignInRewardActivity',
+      ],
       rules: [
         {
           key: 0,
-          name: '点击[签到]',
-          activityIds: 'com.ylmf.androidclient.UI.MainBossActivity',
+          name: '点击[签到]-1',
           matches: '@[clickable=true] >2 [text="签到"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/09c2ac32-9364-4a1f-9f49-c05c5695d5a0',
           snapshotUrls: [
             'https://i.gkd.li/i/14738911', // 签到前
             'https://i.gkd.li/i/14738906', // 签到后
@@ -25,24 +27,31 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
+          key: 3,
+          name: '点击[签到]-2',
+          matches: '[vid="iv_sign_in_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/15510753',
+        },
+        {
+          preKeys: [0, 3],
           key: 1,
           name: '点击[我知道了]',
-          activityIds: 'com.main.world.equity.activity.SignInActivity',
           matches: '[text="我知道了"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/fd597dc2-b926-44fa-acaf-ec7cfa41813a',
-          snapshotUrls: 'https://i.gkd.li/i/14738909',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14738909',
+            'https://i.gkd.li/i/15510873',
+          ],
         },
         {
           preKeys: [1],
           key: 2,
           name: '返回',
           action: 'back',
-          activityIds: 'com.main.world.equity.activity.SignInActivity',
           matches: '[text="签到规则"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/9d445e18-91dc-4e6c-a765-3a1593230d7b',
-          snapshotUrls: 'https://i.gkd.li/i/14738907',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14738907',
+            'https://i.gkd.li/i/15509322',
+          ],
         },
       ],
     },
