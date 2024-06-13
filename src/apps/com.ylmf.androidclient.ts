@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.ylmf.androidclient',
-  name: '115',
+  name: '115生活',
   groups: [
     {
       key: 1,
