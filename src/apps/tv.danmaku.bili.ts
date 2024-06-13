@@ -296,12 +296,18 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          activityIds: 'tv.danmaku.bili.MainActivityV2',
+          activityIds: [
+            'tv.danmaku.bili.MainActivityV2',
+            'com.bilibili.vip.web.VipWebActivity',
+          ],
           matches:
             'ComposeView > View[childCount=7] > @View[clickable=true][childCount=0] <<n [vid="vip_panel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a78a7719-b148-4df2-a225-f7a24be0c413',
-          snapshotUrls: 'https://i.gkd.li/i/15523975',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15523975',
+            'https://i.gkd.li/i/15814146',
+          ],
         },
       ],
     },
