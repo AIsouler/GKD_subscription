@@ -121,6 +121,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15211473',
           ],
         },
+        {
+          key: 6,
+          activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
+          matches:
+            '[text="百亿补贴"] > View[childCount=2] > Image[childCount=0][text="  "]',
+          snapshotUrls: 'https://i.gkd.li/i/15846032',
+        },
       ],
     },
     {
