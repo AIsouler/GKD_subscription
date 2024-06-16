@@ -131,5 +131,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '功能类-移动网络下自动点击播放视频',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
+          matches: '[text^="当前处于移动网络"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/ea612e44-12a9-405f-aa03-60a19cebef57',
+          snapshotUrls: 'https://i.gkd.li/i/15857381',
+        },
+      ],
+    },
   ],
 });
