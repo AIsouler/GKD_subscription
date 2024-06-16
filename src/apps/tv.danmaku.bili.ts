@@ -311,5 +311,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 13,
+      name: '全屏广告-分享稿件弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
+          matches: '[vid="poster_share_cancel"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/80e5730d-6634-4a0a-9c58-c57f7ad5e58c',
+          snapshotUrls: 'https://i.gkd.li/i/15858057',
+        },
+      ],
+    },
   ],
 });
