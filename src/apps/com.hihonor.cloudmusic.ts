@@ -24,5 +24,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      quickFind: true,
+      rules: [
+        {
+          action: 'back',
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '[vid="dsl_dialog_root"]',
+          snapshotUrls: 'https://i.gkd.li/i/15860430',
+        },
+      ],
+    },
   ],
 });
