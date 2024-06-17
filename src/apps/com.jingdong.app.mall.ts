@@ -105,7 +105,10 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          activityIds: [
+            'com.jingdong.app.mall.MainFrameActivity',
+            'com.jd.lib.jshop.jshop.JshopMainShopActivity',
+          ],
           excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]',
           matches:
             '[desc="关闭页面" || desc="关闭按钮"][clickable=true][visibleToUser=true]',
@@ -114,6 +117,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13258996',
             'https://i.gkd.li/i/13336847', // 增加excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]', 避免在该快照误触
             'https://i.gkd.li/i/15416926',
+            'https://i.gkd.li/i/15862131',
           ],
         },
       ],
