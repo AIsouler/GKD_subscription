@@ -123,9 +123,11 @@ export default defineGkdApp({
       desc: '点击[展开]',
       rules: [
         {
+          quickFind: true,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-          matches: 'View[desc="展开"]',
+          matches:
+            '@[clickable=true] > View[desc="展开"] <<n LinearLayout[vid="layout_root"]',
           snapshotUrls: 'https://i.gkd.li/i/15879126',
         },
       ],
@@ -139,7 +141,7 @@ export default defineGkdApp({
           quickFind: true,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-          matches: '[id="com.cainiao.wireless:id/iv_banner_close"]',
+          matches: '[vid="iv_banner_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15879126',
         },
       ],
