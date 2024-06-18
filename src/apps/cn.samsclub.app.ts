@@ -17,6 +17,10 @@ export default defineGkdApp({
             '@ImageView[clickable=true] <2 [id="cn.samsclub.app:id/advertising_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13609106',
         },
+        {
+          matches: '@ImageView[id="cn.samsclub.app:id/close_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/15879369',
+        },
       ],
     },
     {
