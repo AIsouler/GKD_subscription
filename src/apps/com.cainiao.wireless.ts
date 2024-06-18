@@ -117,5 +117,32 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 10,
+      name: '功能类-包裹页面-自动展开更多物流信息',
+      desc: '点击[展开]',
+      rules: [
+        {
+          activityIds:
+            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
+          matches: 'View[desc="展开"]',
+          snapshotUrls: 'https://i.gkd.li/i/15879126',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '局部广告-包裹页面-物流信息底部横条广告',
+      desc: '点击右上角关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
+          matches: '[id="com.cainiao.wireless:id/iv_banner_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15879126',
+        },
+      ],
+    },
   ],
 });
