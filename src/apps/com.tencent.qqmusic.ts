@@ -43,10 +43,9 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          quickFind: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches:
-            '@ViewGroup[childCount=1][clickable=true] <<n RecyclerView >2 [text="最近播放"]',
+            'RecyclerView > LinearLayout[childCount=3] >5 ViewGroup[childCount=3] > @ViewGroup[clickable=true] >2 ImageView[text=null][desc=null]',
           snapshotUrls: 'https://i.gkd.li/i/15756931',
         },
       ],
