@@ -65,6 +65,14 @@ export default defineGkdApp({
           matches: '[vid="iv_banner_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15879126',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches:
+            'View[desc="具体活动详情见落地页"] -n FrameLayout[width=88][height=88]',
+          snapshotUrls: 'https://i.gkd.li/i/15894098',
+        },
       ],
     },
     {
