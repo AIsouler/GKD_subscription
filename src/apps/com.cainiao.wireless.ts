@@ -118,6 +118,22 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 91,
+      name: '功能类-询问[是否要查询包裹]弹窗',
+      desc: '点击[关闭]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches: '@[id="com.cainiao.wireless:id/gg_dialog_base_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/eb48e137-66c3-4777-b65e-8f4f6b3bc4ee',
+          snapshotUrls: 'https://i.gkd.li/i/14913359',
+        },
+      ],
+    },
+    {
       key: 10,
       name: '功能类-包裹页面-自动展开更多物流信息',
       desc: '点击[展开]',
