@@ -141,7 +141,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'activity',
       activityIds: [
-        '.plugin.webwx.ui.ExtDeviceWXLoginUI',
+        'com.tencent.mm.plugin.webwx.ui.ExtDeviceWXLoginUI',
         'com.tencent.mm.ui.LauncherUI',
       ],
       rules: 'TextView[text="取消登录"] - Button[text="登录"]',
