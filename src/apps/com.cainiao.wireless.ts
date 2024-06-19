@@ -126,7 +126,7 @@ export default defineGkdApp({
     },
     {
       key: 91,
-      name: '功能类-询问[是否要查询包裹]弹窗',
+      name: '功能类-关闭[是否要查询包裹]弹窗',
       desc: '点击[关闭]',
       rules: [
         {
