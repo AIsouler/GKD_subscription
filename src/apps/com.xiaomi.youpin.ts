@@ -42,7 +42,7 @@ export default defineGkdApp({
           activityIds: 'com.xiaomi.youpin.activity.YouPinMainTabActivity',
           matches: '[id="com.xiaomi.youpin:id/iv_float_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15879481',
-        }
+        },
       ],
     },
   ],
