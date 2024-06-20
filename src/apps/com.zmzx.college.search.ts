@@ -185,5 +185,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '分段广告-底部卡片广告',
+      desc: '点击关闭-点击不感兴趣',
+      quickFind: true,
+      activityIds:
+        'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@[desc$="dislike"] <<n [vid="rlBottomADContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/15902162',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/15902298',
+        },
+      ],
+    },
   ],
 });
