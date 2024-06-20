@@ -34,8 +34,12 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="订阅感兴趣的通知"] +2 LinearLayout [text="暂不开启"]',
-      snapshotUrls: 'https://i.gkd.li/i/13399195',
+      rules: [
+        {
+          matches: ['[text="订阅感兴趣的通知"]', '[text="暂不开启"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13399195',
+        },
+      ],
     },
     {
       key: 8,
