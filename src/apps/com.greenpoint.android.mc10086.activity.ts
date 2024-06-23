@@ -62,7 +62,10 @@ export default defineGkdApp({
       desc: '请求获取剪贴板权限弹窗，点击不允许',
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
+      activityIds: [
+        'com.mc10086.cmcc.view.tabs.AppTabFragment',
+        'com.mc10086.cmcc.base.StartPageActivity',
+      ],
       rules: [
         {
           matches:
@@ -70,6 +73,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12662251',
             'https://i.gkd.li/i/13775651',
+            'https://i.gkd.li/i/15944173',
           ],
         },
       ],
