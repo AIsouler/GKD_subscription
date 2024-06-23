@@ -20,5 +20,13 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-接受通知弹窗',
+      quickFind: true,
+      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+      rules: '[text*="接收通知"] <n * <<2 RecyclerView + * > [text="暂时不要"]',
+      snapshotUrls: 'https://i.gkd.li/i/15944175',
+    },
   ],
 });
