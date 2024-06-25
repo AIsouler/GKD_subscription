@@ -40,5 +40,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '权限提示-设备信息权限',
+      desc: '点击【不允许】',
+      quickFind: true,
+      resetMatch: 'app',
+      actionMaximum: 1,
+      activityIds: 'com.mcdonalds.gma.cn.activity.LaunchActivity',
+      rules: '[text$="获取您的设备信息"] + * > [text="不允许"]',
+      exampleUrls:
+        'https://m.gkd.li/101449500/121c7e65-780e-41aa-acf8-34c491d4be41',
+      snapshotUrls: 'https://i.gkd.li/i/15944357',
+    },
   ],
 });
