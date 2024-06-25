@@ -33,17 +33,22 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
+      quickFind: true,
       rules: [
         {
           key: 0,
-          name: '首页弹窗',
           forcedTime: 10000,
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
-          matches: '[text="首页弹窗"] >3 Image[clickable=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13761130',
-            'https://i.gkd.li/i/14504242',
-          ],
+          matches:
+            '[text="首页弹窗"] >2 View > @Image[clickable=true][text!=null] <<n [vid="main_fragment_layout"]',
+          snapshotUrls: 'https://i.gkd.li/i/14504242',
+        },
+        {
+          key: 1,
+          activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+          matches:
+            '@TextView[id="home_popup_close"][childCount=0][clickable=true] <<n [vid="main_fragment_layout_haoka"]',
+          snapshotUrls: 'https://i.gkd.li/i/15971964',
         },
       ],
     },
