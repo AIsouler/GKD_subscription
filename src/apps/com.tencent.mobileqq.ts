@@ -174,6 +174,17 @@ export default defineGkdApp({
             'ViewGroup[childCount=6] > @ViewGroup[index=2][clickable=true][visibleToUser=true] <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/15136939',
         },
+        {
+          key: 5,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds:
+            'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
+          matches:
+            'RelativeLayout >3 ViewGroup[childCount=2] > ViewGroup[childCount=3] > ViewGroup[clickable=true][childCount=0][text=null]',
+          snapshotUrls: 'https://i.gkd.li/i/15981784',
+        },
       ],
     },
     {
