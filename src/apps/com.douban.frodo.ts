@@ -7,19 +7,25 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
+      quickFind: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
-          quickFind: true,
+          key: 0,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/15981630',
+        },
+        {
+          key: 1,
           position: {
             left: 'width * 0.8833',
             top: 'width * 0.1388',
           },
           matches: '[id="com.douban.frodo:id/_ad_image_"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1c36c96b-95b7-4299-8e88-b4fdc85d3518',
           snapshotUrls: [
             'https://i.gkd.li/i/13575257',
             'https://i.gkd.li/i/13575547',
