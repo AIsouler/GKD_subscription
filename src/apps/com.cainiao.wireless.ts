@@ -36,14 +36,45 @@ export default defineGkdApp({
             'View[clickable=true] > @[text="关闭"] + [text="活动"] <<n [vid="browser_fragment_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/14033859',
         },
+        {
+          key: 3,
+          quickFind: true,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches: '[vid="dialog_full_image_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13842492',
+        },
+        {
+          key: 4,
+          quickFind: true,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches:
+            '@[text="关闭"] + [text="活动"] <<n [vid="browser_fragment_layout"]',
+          snapshotUrls: 'https://i.gkd.li/i/14033859',
+        },
       ],
     },
     {
       key: 2,
-      name: '局部广告-包裹页面-地图底部横条广告',
-      activityIds: 'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-      rules: 'View[desc="立即查看"] +2 ImageView[id=null]',
-      snapshotUrls: 'https://i.gkd.li/i/12914450',
+      name: '局部广告-卡片广告',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
+          matches: 'View[desc="立即查看"] +2 ImageView[id=null]',
+          snapshotUrls: 'https://i.gkd.li/i/12914450',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds:
+            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
+          matches: '[vid="iv_banner_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15879126',
+        },
+      ],
     },
     {
       key: 4,
@@ -79,29 +110,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 7,
-      name: '全屏广告-今日手气红包',
-      desc: '点击右上角X',
-      quickFind: true,
-      activityIds:
-        'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
-      rules: '[vid="dialog_full_image_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13842492',
-    },
-    {
-      key: 8,
-      name: '全屏广告-发现页新装试用弹窗',
-      desc: '点击X',
-      rules: [
-        {
-          activityIds:
-            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
-          matches: 'View[childCount=2][clickable=true] > [text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/14033859',
-        },
-      ],
-    },
-    {
       key: 9,
       name: '功能类-询问[是否要查询包裹]弹窗',
       desc: '点击[立即查看]',
@@ -128,20 +136,6 @@ export default defineGkdApp({
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
           matches:
             '@[clickable=true] > View[desc="展开"] <<n LinearLayout[vid="layout_root"]',
-          snapshotUrls: 'https://i.gkd.li/i/15879126',
-        },
-      ],
-    },
-    {
-      key: 11,
-      name: '局部广告-包裹页面-物流信息底部横条广告',
-      desc: '点击右上角关闭',
-      rules: [
-        {
-          quickFind: true,
-          activityIds:
-            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-          matches: '[vid="iv_banner_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15879126',
         },
       ],
