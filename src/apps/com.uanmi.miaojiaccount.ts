@@ -14,7 +14,7 @@ export default defineGkdApp({
         {
           quickFind: true,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/d0f2f014-49e7-4f00-b207-c90e870693ea',
           snapshotUrls: 'https://i.gkd.li/i/14511621',
