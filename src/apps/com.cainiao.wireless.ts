@@ -74,6 +74,23 @@ export default defineGkdApp({
           matches: '[vid="iv_banner_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15879126',
         },
+        {
+          key: 2,
+          quickFind: true,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches:
+            'FrameLayout[childCount=8] > @FrameLayout[clickable=true][childCount=0][text=null] <<n [vid="layout_root"]',
+          snapshotUrls: 'https://i.gkd.li/i/16024305',
+        },
+        {
+          key: 3,
+          quickFind: true,
+          activityIds:
+            'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
+          matches: '[vid="home_task_action_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16024305',
+        },
       ],
     },
     {
