@@ -22,7 +22,7 @@ export default defineGkdApp({
           key: 1,
           quickFind: true,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]', // 字节开屏通用规则
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]', // 字节开屏通用规则
           snapshotUrls: 'https://i.gkd.li/i/13978978',
         },
         {

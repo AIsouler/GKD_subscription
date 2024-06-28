@@ -23,7 +23,7 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7d338956-f006-4775-a418-2ae6dc21ef9a',
           snapshotUrls: 'https://i.gkd.li/i/14204175',

@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       actionMaximum: 1,
       rules:
-        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13830230',
         'https://i.gkd.li/i/14052232',
