@@ -319,5 +319,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
+          matches:
+            '@FrameLayout[clickable=true] <n RelativeLayout + * [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/163e225e-209b-40a0-a98e-e2b627df529c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16038470',
+            'https://i.gkd.li/i/16038471',
+            'https://i.gkd.li/i/16038472',
+          ],
+        },
+      ],
+    },
   ],
 });
