@@ -35,6 +35,7 @@ export default defineGkdApp({
           activityIds: [
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
             'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.music.biz.voice.player.revisionV1.ProgramPlayerActivityV1',
           ],
           excludeActivityIds:
             'com.netease.cloudmusic.music.biz.comment.activity.CommentActivity', // 排除评论区，避免节点被遮罩时误触，评论区广告规则见groups key 13
@@ -46,6 +47,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13859634',
             'https://i.gkd.li/i/12829964',
             'https://i.gkd.li/i/12829953',
+            'https://i.gkd.li/i/16047087',
           ],
         },
         {
@@ -78,12 +80,14 @@ export default defineGkdApp({
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
             'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
             'com.netease.cloudmusic.activity.MainActivity',
+            'com.netease.cloudmusic.music.biz.voice.player.revisionV1.ProgramPlayerActivityV1',
           ],
           matches: '[text="直接关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12829967',
-            'https://i.gkd.li/i/14277137',
             'https://i.gkd.li/i/13859635',
+            'https://i.gkd.li/i/14277137',
+            'https://i.gkd.li/i/16047089',
           ],
         },
         {
