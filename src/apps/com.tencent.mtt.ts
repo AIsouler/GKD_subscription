@@ -43,21 +43,14 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
-          name: '点击[屏蔽此广告]',
-          matches: '@ViewGroup > [desc="屏蔽此广告"]',
+          name: '点击[屏蔽此广告]/[直接关闭]',
+          matches:
+            '@ViewGroup[childCount=1 || childCount=3] > [desc="屏蔽此广告" || desc="直接关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12907654',
             'https://i.gkd.li/i/12907651',
-          ],
-        },
-        {
-          preKeys: 1,
-          key: 2,
-          name: '点击[不感兴趣]',
-          matches: '@ViewGroup > [desc="不感兴趣"]',
-          snapshotUrls: [
             'https://i.gkd.li/i/12907655',
             'https://i.gkd.li/i/12907653',
           ],
@@ -75,7 +68,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12909822',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           matches: '[id="com.tencent.mtt:id/reward_dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12908955',
