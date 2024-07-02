@@ -25,11 +25,23 @@ export default defineGkdApp({
             left: 'width * 0.8833',
             top: 'width * 0.1388',
           },
+          excludeMatches: '[id="com.douban.frodo:id/_ad_image_"][width=1200]',
           matches: '[id="com.douban.frodo:id/_ad_image_"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13575257',
             'https://i.gkd.li/i/13575547',
+          ],
+        },
+        {
+          key: 2,
+          position: {
+            left: 'width * 0.8666',
+            top: 'width * 0.1625',
+          },
+          matches: '[id="com.douban.frodo:id/_ad_image_"][width=1200]',
+          snapshotUrls: [
             'https://i.gkd.li/i/13601755',
+            'https://i.gkd.li/i/16054268',
           ],
         },
       ],
