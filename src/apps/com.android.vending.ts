@@ -45,6 +45,13 @@ export default defineGkdApp({
           matches: '[text="以后再说"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15335350',
         },
+        {
+          key: 2,
+          quickFind: true,
+          activityIds: 'com.google.android.finsky.activities.MainActivity',
+          matches: ['[text*="推荐内容"]', '[text="不用了"]'],
+          snapshotUrls: 'https://i.gkd.li/i/16079813',
+        },
       ],
     },
   ],
