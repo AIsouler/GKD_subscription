@@ -109,15 +109,28 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '局部广告-首页右侧抽奖小广告',
-      activityIds: [
-        'com.meituan.android.pt.homepage.activity.MainActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: 'FrameLayout > @ImageView + ImageView[desc="资质与规则"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12639815',
-        'https://i.gkd.li/i/12639734',
+      name: '局部广告-悬浮广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.meituan.android.pt.homepage.activity.MainActivity',
+            'com.miui.home.launcher.Launcher',
+          ],
+          matches: 'FrameLayout > @ImageView + ImageView[desc="资质与规则"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12639815',
+            'https://i.gkd.li/i/12639734',
+          ],
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds:
+            'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
+          matches: '[vid="marking_sidebar_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16079638',
+        },
       ],
     },
     {
