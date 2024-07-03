@@ -47,7 +47,6 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
           activityIds: 'com.google.android.finsky.activities.MainActivity',
           matches: ['[text*="推荐内容"]', '[text="不用了"]'],
           snapshotUrls: 'https://i.gkd.li/i/16079813',
