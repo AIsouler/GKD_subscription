@@ -30,8 +30,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1(@gkd-kit/api@0.1.0)
       '@gkd-kit/tools':
-        specifier: 0.2.0
-        version: 0.2.0(@gkd-kit/api@0.1.0)(json5@2.2.3)
+        specifier: 0.3.0
+        version: 0.3.0(@gkd-kit/api@0.1.0)(json5@2.2.3)
       '@types/node':
         specifier: 20.14.9
         version: 20.14.9
@@ -66,8 +66,8 @@ importers:
         specifier: 2.11.1
         version: 2.11.1
       tsx:
-        specifier: 4.16.0
-        version: 4.16.0
+        specifier: 4.16.1
+        version: 4.16.1
       typescript:
         specifier: 5.5.3
         version: 5.5.3
@@ -327,14 +327,17 @@ packages:
     peerDependencies:
       '@gkd-kit/api': '*'
 
-  '@gkd-kit/selector@0.0.25':
-    resolution: {integrity: sha512-bW3nFcvKZH5I/DasukPcKEbnSCrEI1ioup9+mUUTj0RoPwPBZri/MRKIu8fQg2WWfZ3D38otpwO1ilG7fJI/cA==}
+  '@gkd-kit/selector@0.2.2':
+    resolution: {integrity: sha512-tZ20wrGOL8zJF7CsJZbp5tGhsQEqPo+YkbASIrBaK/ey5OcUzWWwtNixsWc2StrdYZaqAwsvl6KRX5WE288N7A==}
 
-  '@gkd-kit/tools@0.2.0':
-    resolution: {integrity: sha512-M49dhnzmzGobAmCJ6rXl157aZWQc0FGtcoBPp9Bm96u7q/0BqNoNjNGE8hm4Z0hxLvqB/EUegJYfI+uxNr11CA==}
+  '@gkd-kit/tools@0.3.0':
+    resolution: {integrity: sha512-xVuKYqdp0KeDpSBgAUx9HAHjpp/YeHjDsW54vjMIZEZfCnbJkbPgCySRtkyZL7Ui1zk65MP4ZaTFUZzoutMfnQ==}
     peerDependencies:
       '@gkd-kit/api': '*'
       json5: '*'
+
+  '@gkd-kit/wasm_matches@0.0.1':
+    resolution: {integrity: sha512-PUYa98MXyumiIVuYHozbYThhPnYwrdvEwyL+tBmneonIq1Vm2CmeUfk3FbJXxaMQE2/3JBa7utfk0HAu/03xDQ==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -429,8 +432,8 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn@8.12.0:
-    resolution: {integrity: sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==}
+  acorn@8.12.1:
+    resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -1214,8 +1217,8 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  tsx@4.16.0:
-    resolution: {integrity: sha512-MPgN+CuY+4iKxGoJNPv+1pyo5YWZAQ5XfsyobUG+zoKG7IkvCPLZDEyoIb8yLS2FcWci1nlxAqmvPlFWD5AFiQ==}
+  tsx@4.16.1:
+    resolution: {integrity: sha512-UAKkKOFMJI4M3U4xTJuoqECBMydJbqwNuACoMvwHjqDhbQyo/SYd8ZYNCpF5F8rAjcdKrO+z9CbvBlBiFKhBLA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1515,13 +1518,16 @@ snapshots:
     dependencies:
       '@gkd-kit/api': 0.1.0
 
-  '@gkd-kit/selector@0.0.25': {}
+  '@gkd-kit/selector@0.2.2': {}
 
-  '@gkd-kit/tools@0.2.0(@gkd-kit/api@0.1.0)(json5@2.2.3)':
+  '@gkd-kit/tools@0.3.0(@gkd-kit/api@0.1.0)(json5@2.2.3)':
     dependencies:
       '@gkd-kit/api': 0.1.0
-      '@gkd-kit/selector': 0.0.25
+      '@gkd-kit/selector': 0.2.2
+      '@gkd-kit/wasm_matches': 0.0.1
       json5: 2.2.3
+
+  '@gkd-kit/wasm_matches@0.0.1': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
@@ -1633,11 +1639,11 @@ snapshots:
       jsonparse: 1.3.1
       through: 2.3.8
 
-  acorn-jsx@5.3.2(acorn@8.12.0):
+  acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
-      acorn: 8.12.0
+      acorn: 8.12.1
 
-  acorn@8.12.0: {}
+  acorn@8.12.1: {}
 
   ajv@6.12.6:
     dependencies:
@@ -1903,8 +1909,8 @@ snapshots:
 
   espree@10.1.0:
     dependencies:
-      acorn: 8.12.0
-      acorn-jsx: 5.3.2(acorn@8.12.0)
+      acorn: 8.12.1
+      acorn-jsx: 5.3.2(acorn@8.12.1)
       eslint-visitor-keys: 4.0.0
 
   esquery@1.5.0:
@@ -2363,7 +2369,7 @@ snapshots:
     dependencies:
       typescript: 5.5.3
 
-  tsx@4.16.0:
+  tsx@4.16.1:
     dependencies:
       esbuild: 0.21.5
       get-tsconfig: 4.7.5
