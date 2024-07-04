@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-谷歌广告',
       desc: '点击关闭',
+      forcedTime: 10000,
       rules: [
         {
           activityIds: 'com.google.android.gms.ads.AdActivity',
