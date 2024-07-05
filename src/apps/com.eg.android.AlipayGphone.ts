@@ -328,5 +328,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 23,
+      name: '全屏广告-[银行卡还款服务升级]弹窗',
+      desc: '点击[放弃升级，直接付款]',
+      rules: [
+        {
+          quickFind: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches: '@[clickable=true] >2 [text="放弃升级，直接付款"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1b788a34-68f6-43c0-8be4-e13cb8221852',
+          snapshotUrls: 'https://i.gkd.li/i/16106615',
+        },
+      ],
+    },
   ],
 });
