@@ -326,7 +326,10 @@ export default defineGkdApp({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
+          activityIds: [
+            'com.baidu.tieba.pb.pb.main.PbActivity',
+            'com.baidu.tieba.forum.ForumActivity',
+          ],
           matches:
             '@FrameLayout[clickable=true] <n RelativeLayout + * [text="广告"]',
           exampleUrls:
@@ -335,6 +338,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16038470',
             'https://i.gkd.li/i/16038471',
             'https://i.gkd.li/i/16038472',
+            'https://i.gkd.li/i/16107627',
           ],
         },
       ],
