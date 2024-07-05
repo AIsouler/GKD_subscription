@@ -544,4 +544,9 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '微博',
     deprecatedKeys: [10],
   },
+  {
+    id: 'com.jingyao.easybike',
+    name: '哈啰',
+    deprecatedKeys: [11, 13, 14],
+  },
 ];
