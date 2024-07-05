@@ -80,7 +80,6 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          name: '全屏广告-骑行卡-优惠券弹窗',
           activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
           matches: '[desc="去使用"] + Button[text=null][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12739316',
