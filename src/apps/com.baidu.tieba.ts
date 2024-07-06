@@ -323,6 +323,7 @@ export default defineGkdApp({
       key: 15,
       name: '局部广告-信息流广告',
       desc: '点击关闭',
+      forcedTime: 10000,
       rules: [
         {
           quickFind: true,
