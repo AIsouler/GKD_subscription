@@ -23,8 +23,11 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '@LinearLayout > [text*="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/i/13800235',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13800235',
+            'https://i.gkd.li/i/16115850',
+          ],
         },
       ],
     },
