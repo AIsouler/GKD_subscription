@@ -70,6 +70,15 @@ export default defineGkdApp({
           matches: '@ImageView[clickable=true] <n * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15520336',
         },
+        {
+          key: 4,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            'RelativeLayout > @RelativeLayout[clickable=true] > [desc="关闭"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c8c92512-d1cf-43ab-9934-05934b9c4059',
+          snapshotUrls: 'https://i.gkd.li/i/16114590',
+        },
       ],
     },
     {
