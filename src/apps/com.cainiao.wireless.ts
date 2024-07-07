@@ -10,14 +10,12 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          quickFind: true,
+          forcedTime: 10000,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-          quickFind: true,
-          matches: '[id="com.cainiao.wireless:id/draw_dialog_iv_close"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12914371',
-            'https://i.gkd.li/i/13692758',
-          ],
+          matches: '[vid="draw_dialog_iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16118156',
         },
         {
           key: 1,
@@ -52,6 +50,14 @@ export default defineGkdApp({
           matches:
             '@[text="关闭"] + [text="活动"] <<n [vid="browser_fragment_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/14033859',
+        },
+        {
+          key: 5,
+          quickFind: true,
+          activityIds:
+            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
+          matches: '[vid="cn_bottom_sheet_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16118155',
         },
       ],
     },
