@@ -29,6 +29,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16115850',
           ],
         },
+        {
+          key: 2,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/16118464',
+        },
       ],
     },
   ],
