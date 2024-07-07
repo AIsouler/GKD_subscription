@@ -330,6 +330,7 @@ export default defineGkdApp({
           activityIds: [
             'com.baidu.tieba.pb.pb.main.PbActivity',
             'com.baidu.tieba.forum.ForumActivity',
+            'com.baidu.tieba.tblauncher.MainTabActivity',
           ],
           matches:
             '@FrameLayout[clickable=true] <n RelativeLayout + * [text="广告"]',
@@ -340,6 +341,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16038471',
             'https://i.gkd.li/i/16038472',
             'https://i.gkd.li/i/16107627',
+            'https://i.gkd.li/i/16118151',
           ],
         },
       ],
