@@ -29,7 +29,7 @@ export default defineGkdApp({
           key: 2,
           quickFind: true,
           activityIds: 'cn.ms.pages.ActivityLingPai',
-          matches: ['text="广告"', '[text="跳过"]'],
+          matches: ['[text="广告"]', '[text="跳过"]'],
           snapshotUrls: 'https://i.gkd.li/i/16136271',
         },
         {
