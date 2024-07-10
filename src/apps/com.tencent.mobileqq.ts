@@ -710,10 +710,10 @@ export default defineGkdApp({
       key: 30,
       name: '局部广告-动态页-卡片广告',
       desc: '点击关闭',
-      quickFind: true,
       rules: [
         {
           key: 0,
+          quickFind: true,
           position: {
             left: 'width * 0.9534',
             top: 'width * 0.0805',
@@ -727,6 +727,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          quickFind: true,
           activityIds: [
             'com.tencent.mobileqq.activity.SplashActivity',
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -741,8 +742,11 @@ export default defineGkdApp({
           key: 2,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
-            'FrameLayout[childCount=7] > FrameLayout[childCount=2] > @ImageView[childCount=0] <<n [vid="root"]',
-          snapshotUrls: 'https://i.gkd.li/i/15388608',
+            'FrameLayout[childCount=7] > FrameLayout[childCount=2] > @ImageView[childCount=0]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15388608',
+            'https://i.gkd.li/i/16154341',
+          ],
         },
       ],
     },
