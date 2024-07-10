@@ -23,6 +23,17 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14696860',
           ],
         },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds:
+            'com.mfcloudcalculate.networkdisk.activity.EmptyActivity',
+          matches:
+            'ImageView < @ViewGroup[clickable=true] < ViewGroup <n ViewGroup + ViewGroup [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/cf43eaec-45f8-4e1a-bd3b-6a88fd055d29',
+          snapshotUrls: 'https://i.gkd.li/i/16154340',
+        },
       ],
     },
     {
