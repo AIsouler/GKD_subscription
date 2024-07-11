@@ -196,11 +196,11 @@ export default defineGkdApp({
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
           ],
-          matches:
-            '[id="com.miui.packageinstaller:id/install_checked"][checked=false][text="已了解此安装包未经安全检测"]',
+          matches: '[text="已了解此安装包未经安全检测"][checked=false]',
           snapshotUrls: [
             'https://i.gkd.li/i/13024730', // 未勾选
             'https://i.gkd.li/i/13024731', // 已勾选
+            'https://i.gkd.li/i/16171390',
           ],
         },
 
