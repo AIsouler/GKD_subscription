@@ -297,10 +297,13 @@ export default defineGkdApp({
       rules: [
         {
           quickFind: true,
-          matches: '[text$="想访问你的通讯录"] +2 * >2 [text="拒绝"]',
+          matches: ['[text*="通讯录"]', '[text="拒绝"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/8f70418d-92f0-4264-83fd-a680350c478e',
-          snapshotUrls: 'https://i.gkd.li/i/14735280',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14735280',
+            'https://i.gkd.li/i/16171391',
+          ],
         },
       ],
     },
