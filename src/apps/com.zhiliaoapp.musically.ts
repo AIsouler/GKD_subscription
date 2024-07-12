@@ -33,5 +33,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            'FrameLayout[childCount=1] >3 FrameLayout[childCount=3] > ImageView[clickable=true][childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/i/16188665',
+        },
+      ],
+    },
   ],
 });
