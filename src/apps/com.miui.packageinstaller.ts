@@ -90,7 +90,6 @@ export default defineGkdApp({
           key: 1,
           name: '点击"继续"',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
-          quickFind: true,
           matches: '[text="取消"] - @*[clickable=true] >2 [text="继续"]',
           snapshotUrls: 'https://i.gkd.li/i/14392314',
         },
@@ -117,24 +116,28 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12889135',
         },
         {
-          preKeys: 3,
           key: 4,
           name: '勾选"已了解此应用存在高风险"',
           activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
-          matches:
-            '[id="com.miui.packageinstaller:id/install_checked"][checked=false]',
+          matches: '[text^="已了解此"][checked=false]',
           snapshotUrls: [
             'https://i.gkd.li/i/12889137', // 未勾选
             'https://i.gkd.li/i/12889148', // 已勾选
+            'https://i.gkd.li/i/16171390',
           ],
         },
         {
-          preKeys: 4,
           key: 5,
           name: '点击"仍然安装"',
-          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
-          matches: '@[text="仍然安装"] + [text="取消安装"]',
-          snapshotUrls: 'https://i.gkd.li/i/12889148',
+          activityIds: [
+            'com.miui.packageInstaller.NewInstallerPrepareActivity',
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          ],
+          matches: '[text="仍然安装"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12889148',
+            'https://i.gkd.li/i/16187625',
+          ],
         },
 
         // 安装完成
@@ -150,9 +153,9 @@ export default defineGkdApp({
           matches:
             '[id="com.miui.packageinstaller:id/done_layout"] > [text="完成"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12818044', // com.miui.packageInstaller.ui.normalmode.InstallProgressActivity
-            'https://i.gkd.li/i/13229404', // com.miui.packageInstaller.InstallProgressActivity
-            'https://i.gkd.li/i/13501872', // com.miui.packageInstaller.ui.securemode.PureInstallProgressActivity
+            'https://i.gkd.li/i/12818044',
+            'https://i.gkd.li/i/13229404',
+            'https://i.gkd.li/i/13501872',
           ],
         },
       ],
@@ -200,7 +203,6 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13024730', // 未勾选
             'https://i.gkd.li/i/13024731', // 已勾选
-            'https://i.gkd.li/i/16171390',
           ],
         },
 
