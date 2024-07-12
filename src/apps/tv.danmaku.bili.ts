@@ -11,8 +11,12 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="tv.danmaku.bili:id/count_down"][text^="跳"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705270',
+      rules: [
+        {
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/16187624',
+        },
+      ],
     },
     {
       key: 0,
