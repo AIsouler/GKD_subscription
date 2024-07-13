@@ -49,12 +49,12 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: 'com.kugou.android.app.MediaActivity',
-          matches:
-            'TextView[text!=null] <2 ViewGroup[childCount>4] > ImageView[desc="关闭"]',
+          matches: 'TextView[text!=null] <n ViewGroup > ImageView[desc="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964889',
             'https://i.gkd.li/i/15024041',
             'https://i.gkd.li/i/15468481',
+            'https://i.gkd.li/i/16200618',
           ],
         },
         {
@@ -75,8 +75,6 @@ export default defineGkdApp({
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
             'RelativeLayout > @RelativeLayout[clickable=true] > [desc="关闭"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c8c92512-d1cf-43ab-9934-05934b9c4059',
           snapshotUrls: 'https://i.gkd.li/i/16114590',
         },
       ],
