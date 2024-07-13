@@ -18,5 +18,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.allsaints.ad.sjy.reward.SRewardLoadingActivity',
+          matches: '@[vid="close"] - [text="看广告免费听 VIP 歌曲"]',
+          snapshotUrls: 'https://i.gkd.li/i/16200623',
+        },
+      ],
+    },
   ],
 });
