@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-主页广告',
       fastQuery: true,
-      activityIds: ['com.videogo.main.MainTabActivity'],
+      activityIds: 'com.videogo.main.MainTabActivity',
       rules: [
         {
           key: 0,
@@ -19,6 +19,21 @@ export default defineGkdApp({
           preKeys: 0,
           matches: '[id="com.videogo:id/ad_closead_nointerest"]',
           snapshotUrls: 'https://i.gkd.li/i/13255697',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '全屏广告-在线值守广告',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          matches: 'TextView[text="了解并试用服务"]',
+          snapshotUrls: 'https://i.gkd.li/i/15338834',
         },
       ],
     },

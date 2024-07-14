@@ -47,7 +47,6 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -108,10 +107,17 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@TextView[clickable=true] + [text*="推送通知"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12840664',
-        'https://i.gkd.li/i/14060897',
+      rules: [
+        {
+          name: '调用返回',
+          action: 'back',
+          matches: 'TextView[text*="推送通知"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12840664',
+            'https://i.gkd.li/i/14060897',
+            'https://i.gkd.li/i/14546563',
+          ],
+        },
       ],
     },
     {
@@ -133,6 +139,20 @@ export default defineGkdApp({
           activityIds: 'com.ss.android.auto.activity.ConcernDetailActivity',
           matches: 'FrameLayout[childCount=8] > TextView[text=""]',
           snapshotUrls: 'https://i.gkd.li/i/14034740',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '评价提示',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          matches: '[text="去评价"]',
+          snapshotUrls: 'https://i.gkd.li/i/14810042',
         },
       ],
     },
