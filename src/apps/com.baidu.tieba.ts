@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -214,7 +214,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '评论区左侧悬浮广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: 'LinearLayout[childCount=2] > @ImageView + [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13296280',
@@ -240,7 +240,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: '[vid="tip_close"]',
           exampleUrls:
@@ -285,7 +285,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: '@ImageView[clickable=true] -2 [text="进入话题查看更多"]',
           exampleUrls:
@@ -326,7 +326,7 @@ export default defineGkdApp({
       forcedTime: 10000,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.baidu.tieba.pb.pb.main.PbActivity',
             'com.baidu.tieba.forum.ForumActivity',

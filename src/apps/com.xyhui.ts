@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -62,7 +62,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '快手广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xyhui.start.LoadingActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true] < * <2 * + * >3 [text="广告"]',
@@ -74,7 +74,7 @@ export default defineGkdApp({
         {
           key: 3,
           name: '字节广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: 'View[clickable=true] < FrameLayout +4 * >2 [text="反馈"]',
@@ -83,7 +83,7 @@ export default defineGkdApp({
         {
           key: 4,
           name: '美数广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.meishu.sdk.activity.SdkInterstitialActivity',
           matches: '[id="com.xyhui:id/ms_activity_sdk_interstitial_cacel"]',
           snapshotUrls: 'https://i.gkd.li/i/13458692',
@@ -100,7 +100,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-首页-右侧浮窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.xyhui.start.PUMainActivity',
         'com.xyhui.start.LoadingActivity',
@@ -117,7 +117,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'ImageView[id="com.xyhui:id/closeIv"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12908853',

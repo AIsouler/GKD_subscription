@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击[朕知道了]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.salmon.film.main.ui.MainActivity',
           matches: '[text="朕知道了"][clickable=true][visibleToUser=true]',
           exampleUrls:

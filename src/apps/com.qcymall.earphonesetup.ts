@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-我的-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'activity',
       activityIds: 'com.qcymall.earphonesetup.v2ui.activity.V2MainActivity',

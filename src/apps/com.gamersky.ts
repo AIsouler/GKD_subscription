@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -65,7 +65,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.gamersky.main.activity.LibMainActivity',
           matches: ['[text="签到成功！"]', '[text="确定"]'],
           exampleUrls:

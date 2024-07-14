@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-优惠卷提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ddsy.songyao.activity.SplashActivity',
       rules: [
         {

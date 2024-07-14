@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.blued.android.core.ui.TerminalActivity',
             'com.soft.blued.ui.home.HomeActivity',
@@ -25,7 +25,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.soft.blued.ui.home.HomeActivity',
           matches: '[id="com.soft.blued:id/ad_option"]',
           exampleUrls:
@@ -41,7 +41,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.blued.android.core.ui.TerminalActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.soft.blued:id/iv_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/37ea59cf-9606-4cd6-a74a-84f353f07975',
@@ -56,7 +56,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.blued.android.core.ui.TransparentActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="blued_ad_layout"] + [vid="img_close"]',
           snapshotUrls: 'https://i.gkd.li/i/14310618',
         },

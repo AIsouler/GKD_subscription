@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.bankcomm.module.biz.home.MainActivity',
             'com.hihonor.android.launcher.unihome.UniHomeLauncher',

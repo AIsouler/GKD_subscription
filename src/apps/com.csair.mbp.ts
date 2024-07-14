@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-首页弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.csair.mbp.CSMBPActivity',
       rules: '[id="com.csair.mbp:id/close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/13197497',
@@ -16,7 +16,7 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-长辈版弹窗',
       desc: '点击[暂不开启]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

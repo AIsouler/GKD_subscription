@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-通知权限',
       desc: '点击放弃通知',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

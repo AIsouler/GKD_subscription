@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-加速页分享抽奖浮窗',
       activityIds: 'cn.ccspeed.app.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'activity',
       actionMaximum: 1,

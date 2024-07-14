@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds:
@@ -45,7 +45,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:

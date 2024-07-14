@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 8,
       name: '功能类-安装来源不可信',
       desc: '点击[授权本次安装]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
         'com.miui.packageInstaller.NewPackageInstallerActivity',
@@ -42,7 +42,7 @@ export default defineGkdApp({
       key: 9,
       name: '功能类-自动第三方安装应用',
       desc: '自动允许第三方应用调用安装，安装应用',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -69,7 +69,7 @@ export default defineGkdApp({
       key: 10,
       name: '功能类-自动安装应用',
       desc: '启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         // 正常安装
         {
@@ -163,7 +163,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-自动更新应用',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         // 正常更新
         {
@@ -228,7 +228,7 @@ export default defineGkdApp({
       key: 12,
       name: '功能类-澎湃-自动安装/更新',
       desc: '不完整，缺失自动点击完成部分。启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         // 正常安装
         {

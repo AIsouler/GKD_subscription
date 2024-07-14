@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -37,7 +37,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.lolaage.tbulu.tools.ui.activity.main.MainActivity',
           matches: '[vid="ivClose"]',
           snapshotUrls: 'https://i.gkd.li/i/14952807',
@@ -48,7 +48,7 @@ export default defineGkdApp({
       key: 3,
       name: '权限提示-通知权限',
       desc: '点击[取消]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

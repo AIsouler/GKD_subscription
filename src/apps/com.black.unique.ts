@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.black.unique.feature.home.HomeActivity',
       rules: [
         {
@@ -19,7 +19,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text^="开启通知"] +2 [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/14622639',
     },

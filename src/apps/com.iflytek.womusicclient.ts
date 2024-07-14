@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'android.womusic.com.songcomponent.MainActivity',
           matches: '[vid="iv_img"] + [vid="btn_close"]',
           exampleUrls:

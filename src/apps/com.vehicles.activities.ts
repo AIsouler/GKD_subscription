@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           name: '卡片弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.sinoiov.cwza.discovery.activity.SpyDetailFragmentActivity',
             'com.vehicles.activities.activity.MainActivity',

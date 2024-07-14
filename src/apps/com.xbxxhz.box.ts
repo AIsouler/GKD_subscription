@@ -12,7 +12,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '红包弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.mango.login.main.MainAct',
           matches: '[vid="dg_dialog_frag_ads_popup_x"][clickable=true]',
           exampleUrls:
@@ -30,7 +30,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.mango.appfile.print_finish.PrintFinishAct',
           matches:
             'ImageView < @FrameLayout +2 FrameLayout >2 [text="打开或下载第三方应用"]',

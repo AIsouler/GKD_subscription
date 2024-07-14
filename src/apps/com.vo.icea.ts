@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 5,
       name: '分段广告-播放界面卡片广告',
       desc: '需点击二次弹窗关闭原因',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.vo.icea.MainActivity',
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -40,7 +40,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '类型0',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.byted.pangle:id/tt_reward_full_count_down"]',
           snapshotUrls: 'https://i.gkd.li/i/13511052',
         },

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-自动签到',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -35,7 +35,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.kurogame.kjq.MainActivity',
           matches: '[vid="close"]',
           exampleUrls:

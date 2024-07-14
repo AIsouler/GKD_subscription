@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.tmall.wireless:id/update_button_cancel"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13162603', //com.tmall.wireless.splash.TMSplashActivity

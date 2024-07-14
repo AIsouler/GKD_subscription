@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '@[vid="iv_close"] + * >2 [text="上一条"]',
           exampleUrls:
             'https://m.gkd.li/57941037/a59e4c30-29e3-4d7e-9c05-f7e844ff6ac3',

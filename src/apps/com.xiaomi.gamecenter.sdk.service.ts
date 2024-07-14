@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="升级提示"] < * + [vid="btn_close"]',

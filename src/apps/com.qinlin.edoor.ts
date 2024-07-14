@@ -25,7 +25,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '穿山甲SDK',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[id="com.qinlin.edoor:id/iv_close"] - LinearLayout >n [text*="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13771774',

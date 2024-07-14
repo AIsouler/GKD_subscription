@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
             'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
@@ -25,7 +25,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.mfcloudcalculate.networkdisk.activity.EmptyActivity',
           matches:
@@ -39,7 +39,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

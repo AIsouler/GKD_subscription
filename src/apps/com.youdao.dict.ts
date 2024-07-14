@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.youdao.dict.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="广告"] - [vid="close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12668574',
@@ -22,7 +22,7 @@ export default defineGkdApp({
           preKeys: 0,
           key: 1,
           activityIds: 'com.youdao.dict.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="close_pop"][text="收起广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12668583',
@@ -42,7 +42,7 @@ export default defineGkdApp({
             'com.youdao.dict.activity.MainActivity',
             'com.youdao.dict.activity.DictSplashActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close_bt"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12893419',
@@ -56,7 +56,7 @@ export default defineGkdApp({
             'com.youdao.dict.edu.main.MainPopDialog',
             'com.youdao.dict.activity.MainActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12893450',
         },
@@ -67,7 +67,7 @@ export default defineGkdApp({
             'com.youdao.dict.activity.DictSplashActivity',
             'com.youdao.dict.activity.DictHotBootSplashActivity',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="skip_bottom_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13931202',
@@ -78,7 +78,7 @@ export default defineGkdApp({
           key: 3,
           name: '首页-礼包弹窗',
           activityIds: 'com.youdao.dict.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="image"] + [vid="close"]',
           snapshotUrls: 'https://i.gkd.li/i/14296482',
         },
@@ -87,7 +87,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-VIP弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
         'com.youdao.dict.vip.activity.SecondShowNewUserSevenDayVipActivity',
@@ -101,7 +101,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '评价提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -114,7 +114,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -141,7 +141,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '右下角悬浮卡片',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.youdao.dict.activity.MainActivity',
             'com.youdao.dict.activity.DictQueryActivity',
@@ -158,7 +158,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '主页卡片广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.youdao.dict.activity.MainActivity',
           matches: '[vid="home_ad_close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14009705',
@@ -166,7 +166,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '单词页面下方广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.youdao.dict.activity.MainActivity',
           matches: '[vid="course_four_course_close"]',
           exampleUrls:
@@ -176,7 +176,7 @@ export default defineGkdApp({
         {
           key: 3,
           name: '单词页面下方学习技巧',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.youdao.dict.activity.MainActivity',
           matches: '[vid="course_one_course_close"]',
           exampleUrls:
@@ -191,7 +191,7 @@ export default defineGkdApp({
       desc: '通过点击提示框以外的其他地方关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           position: {
             left: 'width * 0.7231',
             top: 'width * -1.0673',
@@ -214,7 +214,7 @@ export default defineGkdApp({
       key: 10,
       name: '全屏广告-开学福利弹窗',
       desc: '点击[不要再提醒我]-点击关闭',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.youdao.dict.activity.MainActivity',

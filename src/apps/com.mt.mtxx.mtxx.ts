@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -20,7 +20,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.mt.mtxx.mtxx.MainActivity',
           matches: '[vid="iv_close"][clickable=true][visibleToUser=true]',
           exampleUrls:
@@ -36,7 +36,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.cosmos.album.album3.XXAlbumMainActivity',
           matches: '@ImageView[clickable=true] - * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15076408',

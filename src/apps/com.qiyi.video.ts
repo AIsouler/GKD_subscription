@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -35,7 +35,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-我的页面顶部广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'org.qiyi.android.video.MainActivity',
       snapshotUrls: 'https://i.gkd.li/i/12495050',
       rules: [
@@ -48,14 +48,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       snapshotUrls: 'https://i.gkd.li/i/12838152',
       rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]',
     },
     {
       key: 4,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

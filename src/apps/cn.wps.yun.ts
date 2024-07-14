@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'cn.wps.yun.ui.IndexActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="cn.wps.yun:id/rootGroup"][childCount=5] >  [text^="实用技巧"] +3 [id="cn.wps.yun:id/moreIconRight"]',
           exampleUrls:
@@ -28,7 +28,7 @@ export default defineGkdApp({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="发现新版本"] +3 [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/14333103',
     },
@@ -37,7 +37,7 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="开启推送通知"] +2 * > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/14333362',
     },

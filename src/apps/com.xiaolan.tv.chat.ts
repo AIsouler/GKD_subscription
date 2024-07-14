@@ -25,7 +25,7 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-看视频领奖励广告',
       desc: '点击关闭-点击[放弃奖励离开]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.qq.e.ads.PortraitADActivity',
       rules: [
         {

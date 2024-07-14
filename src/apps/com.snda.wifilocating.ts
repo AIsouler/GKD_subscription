@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.lantern.start.main.activity.HomeMainActivity',
           matches: '[vid="interstitial_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/14032794',
@@ -25,7 +25,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zm.wfsdk.core.activity.WfInterstitialActivity',
           matches:
             '@[vid="wf_interstitial_close_iv"] < * >5 [vid="wf_interstitial_action_tv"]',
@@ -51,7 +51,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.wifitutu.ui.tools.SpeedUpBActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="native_express_close_proxy"]',
           snapshotUrls: 'https://i.gkd.li/i/14622506',
         },
@@ -62,7 +62,7 @@ export default defineGkdApp({
       name: '功能类-加速成功后自动点击返回',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.wifitutu.ui.tools.SpeedUpActivity',
           matches: '[vid="success_desc"] + [vid="back_layout"]',
           exampleUrls:
@@ -77,7 +77,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.wifitutu.ui.main.MainActivity',
           matches: '[vid="img_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15284722',
@@ -90,7 +90,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.wifitutu.ui.main.MainActivity',
           matches: '@* - [vid="native_express_ad_logo_tv"]',
           snapshotUrls: 'https://i.gkd.li/i/15284730',

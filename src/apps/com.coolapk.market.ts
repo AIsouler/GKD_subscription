@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -47,7 +47,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-卡片广告',
       desc: '点击卡片右上角按钮->免广告-点击关闭->选择关闭原因-点击不感兴趣',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.coolapk.market.view.main.MainActivity', // 缺少快照
         'com.coolapk.market.view.base.SimpleAlphaActivity', // 缺少快照
@@ -108,7 +108,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       snapshotUrls: 'https://i.gkd.li/i/12503762',
       rules: '[text="立即更新"] - [text="取消"]',
     },
@@ -118,7 +118,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="去开启"] - [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13296465',
     },

@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '@[clickable=true] > [text="跳过"]', // 全局规则无效，必须点击clickable=true的节点才能跳过
           snapshotUrls: 'https://i.gkd.li/i/14668997',
         },
@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -40,7 +40,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.heytap.cdo.client.cards.page.main.maintab.MainTabActivity',
           matches: '@[desc="关闭"] <2 [vid="view_id_float_ad"]',

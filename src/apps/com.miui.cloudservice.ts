@@ -21,7 +21,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '会员打折弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.miui.cloudservice.ad.AdPopupActivity',
           matches: '[vid="ad_popup_close_iv"]',
           exampleUrls:
@@ -36,7 +36,7 @@ export default defineGkdApp({
       desc: '点击[以后再说]',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '@[text="以后再说"] + [text="立即升级"]',

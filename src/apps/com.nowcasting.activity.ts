@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-VIP弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
@@ -34,7 +34,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches:
             'ImageView < @ViewGroup[clickable=true] <<n ViewGroup +n ViewGroup [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14814374',
@@ -44,7 +44,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '分段广告-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
@@ -64,7 +64,7 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.nowcasting.activity.WeatherActivity',
       rules: [
         {
@@ -85,7 +85,7 @@ export default defineGkdApp({
       name: '功能类-点击收起顶部工具栏',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.nowcasting.activity.WeatherActivity',
           matches:
             'ViewGroup[childCount=2][visibleToUser=true] > [vid="fl_arrow"][visibleToUser=true]',

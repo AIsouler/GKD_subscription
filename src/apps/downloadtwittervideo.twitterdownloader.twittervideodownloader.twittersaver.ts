@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 3,
       name: '评价提示-评分弹窗',
       desc: '自动点击 LATER ',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

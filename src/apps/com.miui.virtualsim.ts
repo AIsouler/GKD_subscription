@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '全屏广告-弹窗广告',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.mobile.businesshall.ui.common.RecommendPopupActivity',
           matches: '[vid="img_close_btn"]',

@@ -18,7 +18,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.jxedt.ui.activitys.NewHomeActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.jxedt:id/img_dialog_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13476741',
         },

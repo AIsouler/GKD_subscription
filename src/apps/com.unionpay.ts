@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '@[text="稍候再说"] + [text="立即更新"]',
@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-支付完成界面卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.unionpay.activity.react.UPActivityReactNative',
       rules: [
         {
@@ -44,7 +44,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           position: {
             left: 'width * 0.8893',
             top: 'width * 0.4607',
@@ -61,7 +61,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -85,7 +85,7 @@ export default defineGkdApp({
       key: 12,
       name: '权限提示-通知权限',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -124,7 +124,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-领取优惠弹窗',
       desc: '点击X',
       rules: [

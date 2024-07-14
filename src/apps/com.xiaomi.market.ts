@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
           matches:
             '@Button[text="关闭"] <<n [id="com.xiaomi.market:id/webview"]',
@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '局部广告-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
       snapshotUrls: 'https://i.gkd.li/i/13197334',
@@ -30,7 +30,7 @@ export default defineGkdApp({
       key: 10,
       name: '功能类-忽略升级',
       desc: '应用升级界面-自动点击忽略',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: [
         {
@@ -51,7 +51,7 @@ export default defineGkdApp({
       key: 11,
       name: '权限提示-通知权限',
       desc: '自动点击关闭按钮',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -77,7 +77,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-个性化推荐卡片',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -92,7 +92,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
           matches: '@[clickable=true] > [text^="查看全部升级"]',
           exampleUrls:

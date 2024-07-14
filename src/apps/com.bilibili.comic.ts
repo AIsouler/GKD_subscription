@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 15000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-推荐流广告',
       desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.hupu.games.main.MainActivity',
         'com.hupu.android.bbs.detail.PostDetailActivity',

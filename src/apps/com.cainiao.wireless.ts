@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           forcedTime: 10000,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
@@ -27,7 +27,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches:
@@ -36,7 +36,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches: '[vid="dialog_full_image_close"]',
@@ -44,7 +44,7 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches:
@@ -53,7 +53,7 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
           matches: '[vid="cn_bottom_sheet_close"]',
@@ -74,7 +74,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
           matches: '[vid="iv_banner_close"]',
@@ -82,7 +82,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches:
@@ -91,7 +91,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches: '[vid="home_task_action_close"]',
@@ -105,7 +105,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="确认"] - [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/13042207',
     },
@@ -116,14 +116,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.cainiao.wireless:id/gg_dialog_base_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13068573',
     },
     {
       key: 6,
       name: '评价提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] + [text="好评"]',
@@ -138,7 +138,7 @@ export default defineGkdApp({
       desc: '点击[立即查看]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches: '@[text="立即查看"] < * - * >2 [text="您是否要查询包裹"]',
@@ -154,7 +154,7 @@ export default defineGkdApp({
       desc: '点击[展开]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
           matches:

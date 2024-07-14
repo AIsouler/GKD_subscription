@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -72,7 +72,7 @@ export default defineGkdApp({
       desc: '点击取消',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.huawei.health.MainActivity',
           matches:
             '[text*="实时推送步数"] <2 * < * +2 * >4 [text="取消"][clickable=true]',

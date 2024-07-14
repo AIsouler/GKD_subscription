@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '功能类-自动点击查看原图',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.tencent.mobileqq.richmediabrowser.AIOGalleryActivity',
           matches: '[text^="查看原图"]',
@@ -24,7 +24,7 @@ export default defineGkdApp({
       name: '功能类-发送图片时自动勾选[原图]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches: '@[checked=false] + [text="原图"]',
           exampleUrls:

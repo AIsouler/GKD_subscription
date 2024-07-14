@@ -29,7 +29,7 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-浮窗广告',
       desc: '会出现在更多页面、播放页面',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: [

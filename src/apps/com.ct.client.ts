@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -24,7 +24,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-软件更新/安装后的用户引导',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ct.client.activity.UserGuideActivity',
       rules: '[id="com.ct.client:id/tvSkip"]',
       snapshotUrls: 'https://i.gkd.li/i/12508971',
@@ -35,7 +35,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'LinearLayout > [text="取消升级"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12819594',
@@ -47,7 +47,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-浮窗广告',
       desc: '会出现在首页、查询办理页面',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -67,7 +67,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-弹窗广告',
-      // quickFind: true, 实机测试使用无法跳过
+      // fastQuery: true, 实机测试使用无法跳过
       activityIds: 'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
       rules: 'Image[text="tishi-close"]',
       snapshotUrls: 'https://i.gkd.li/i/12913804',
@@ -79,7 +79,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      // quickFind: true, 实机测试使用无法跳过
+      // fastQuery: true, 实机测试使用无法跳过
       rules: [
         {
           key: 0,
@@ -88,7 +88,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ct.client.activity.MainActivity',
           matches: '[text^="开启消息通知"] <n * > [vid="ivClose"]',
           snapshotUrls: 'https://i.gkd.li/i/15209597',
@@ -101,7 +101,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ct.client.MainActivity',
           matches: '[id="com.ct.client:id/close"]',
           exampleUrls:
@@ -125,7 +125,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ct.client.activity.MainActivity',
           matches: '[vid="ivFloatClose"]',
           exampleUrls:

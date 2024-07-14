@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text="更新"] -2 [text="取消"]',
@@ -27,7 +27,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.coloros.gallery3d.app.MainActivity',
       rules: '[text="开启相册自动同步，保障相册数据安全"] + [text="忽略"]',
       snapshotUrls: 'https://i.gkd.li/i/13637185',

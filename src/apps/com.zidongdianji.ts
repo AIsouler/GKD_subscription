@@ -18,7 +18,7 @@ export default defineGkdApp({
         {
           preKeys: [1],
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/14783475',
         },

@@ -12,7 +12,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '右侧悬浮小卡片',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.torch.open.homeimpl.HomeActivity',
           matches: '[vid="btn_close"][clickable=true][visibleToUser=true]',
           exampleUrls:
@@ -25,7 +25,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-个性化推荐弹窗',
       desc: '点击[取消]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

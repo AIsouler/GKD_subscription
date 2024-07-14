@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-信息流广告',
       desc: '点击[关闭]-点击[不感兴趣]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'android.zhibo8.ui.contollers.main.MainActivity',
         'android.zhibo8.ui.contollers.detail.DetailActivity',
@@ -35,7 +35,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

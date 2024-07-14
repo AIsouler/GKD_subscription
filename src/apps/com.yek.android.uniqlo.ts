@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.yek.android.uniqlo.uiux.Home.activity.HomeActivity',
       rules: 'ImageView[id="com.yek.android.uniqlo:id/pop_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13212320',
@@ -16,7 +16,7 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       desc: '点击取消',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

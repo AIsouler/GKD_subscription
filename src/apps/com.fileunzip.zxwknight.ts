@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-升级专业版弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.fileunzip.zxwknight.activity.MainActivity',
         'com.fileunzip.zxwknight.activity.VideoPlayActivity',
@@ -43,7 +43,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-软件推广',
       desc: '全能保险箱',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -74,7 +74,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

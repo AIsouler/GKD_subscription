@@ -14,7 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15102179',
         },
@@ -50,7 +50,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.mxchip.petmarvel.MainActivity',
           matches: '[vid="iv_close"]',
           exampleUrls:

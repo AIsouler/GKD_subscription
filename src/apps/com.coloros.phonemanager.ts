@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -25,7 +25,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.coloros.phonemanager.clear.ClearMainActivity',
           matches: '[vid="ad_close"][clickable=true]',
           exampleUrls:

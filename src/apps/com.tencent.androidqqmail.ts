@@ -17,7 +17,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-列表卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
       rules: [
         {
@@ -57,7 +57,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text="立刻开启"] - [text="以后再说"]',

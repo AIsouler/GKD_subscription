@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
@@ -24,7 +24,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.duowan.kiwi:id/ad_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12901045',
@@ -33,7 +33,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.duowan.kiwi:id/game_header_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13395604',
@@ -57,7 +57,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -85,7 +85,7 @@ export default defineGkdApp({
       key: 5,
       name: '功能类-root提示',
       desc: '点击确认',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

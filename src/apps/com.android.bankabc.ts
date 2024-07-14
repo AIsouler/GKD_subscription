@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -30,7 +30,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="upgrade_bottom"] > [vid="negativeTextView"]',
@@ -39,7 +39,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="允许获取位置信息"] +n * > [text="取消"]',
@@ -48,7 +48,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="iv_notification_reminder_dialog_close"]',

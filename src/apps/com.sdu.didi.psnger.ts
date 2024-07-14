@@ -25,7 +25,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="iv_upgrade_btn_ignore"]',
           exampleUrls:
             'https://m.gkd.li/57941037/ba2a4ef6-d63d-4d67-ab89-222085ea3b3f',

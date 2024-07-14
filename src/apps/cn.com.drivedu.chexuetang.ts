@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

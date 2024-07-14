@@ -20,7 +20,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '@[vid="bn_cancel"] + * > [vid="upgrade_title"]',
           snapshotUrls: 'https://i.gkd.li/i/14297700',
         },
@@ -32,7 +32,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.chinamobile.mcloud.client.ui.MenuActivity',
             'com.chinamobile.mcloud.client.ui.CustomScanActivity',
@@ -60,7 +60,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.chinamobile.mcloud:id/iv_logo"] + [id="com.chinamobile.mcloud:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13627834',
@@ -71,7 +71,7 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-请求开启自动备份弹窗',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.chinamobile.mcloud.client.ui.MenuActivity',
       rules:
         '[text="开启自动备份"] +n [id="com.chinamobile.mcloud:id/tv_skip"]',
@@ -81,7 +81,7 @@ export default defineGkdApp({
       key: 5,
       name: '权限提示-通知权限',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

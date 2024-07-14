@@ -9,7 +9,7 @@ export default defineGkdApp({
       // 尚不明确安装、更新、重叠三种情况混合时的activityid，故去掉activityIds字段
       key: 1,
       name: '功能类-自动安装/更新软件',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

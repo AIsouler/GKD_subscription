@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '@FrameLayout - LinearLayout >2 [text$="惊喜奖励"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12777048',
@@ -22,7 +22,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="放弃奖励离开"]',
           snapshotUrls: 'https://i.gkd.li/i/15008493',
         },

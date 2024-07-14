@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="child_mode_cancel_button"]',

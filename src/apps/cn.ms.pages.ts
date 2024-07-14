@@ -19,7 +19,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'cn.ms.pages.ActivityLingPai',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +n ViewGroup [text="广告"]',
@@ -27,7 +27,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'cn.ms.pages.ActivityLingPai',
           matches: ['[text="广告"]', '[text="跳过"]'],
           snapshotUrls: 'https://i.gkd.li/i/16136271',
@@ -58,7 +58,7 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="坚持退出"]',
           exampleUrls:
             'https://m.gkd.li/57941037/f09986f3-6dc6-4067-9136-ac6aa0afad3f',

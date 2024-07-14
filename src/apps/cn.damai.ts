@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           action: 'clickCenter',
           matches: '[vid="homepage_advert_pb"]',
           exampleUrls:

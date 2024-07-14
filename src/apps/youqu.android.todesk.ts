@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-卡片广告',
       desc: '关闭卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'youqu.android.todesk.activity.WelcomeActivity',
         'youqu.android.todesk.activity.MainActivity', //新增activityIds

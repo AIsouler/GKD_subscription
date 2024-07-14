@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-询问是否是美国居民弹窗',
       desc: '点击[我不是美国居民]-点击[确认]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'mobile.droid.ctrader.views.main.MainActivity',
       rules: [
         {

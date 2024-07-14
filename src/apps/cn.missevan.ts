@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '青少年模式',
       desc: '点击：知道了',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="cn.missevan:id/iKnowTextView"][text="我知道了"]',

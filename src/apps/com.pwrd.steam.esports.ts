@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="开启推送通知"] + [vid="tv_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6bb3a2b3-5511-4655-9e4a-c0eb6bae27ad',

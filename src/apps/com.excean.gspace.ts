@@ -31,7 +31,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.excelliance.kxqp.gs.main.MainActivity',
           matches: '[vid="close_render_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/15284762',

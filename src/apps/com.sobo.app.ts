@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sobo.app.MainActivity',
           matches:
             '@ImageView[index=3] <4 View[childCount=4] <<n [id="android:id/content"]',
@@ -26,7 +26,7 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sobo.app.MainActivity',
           matches:
             '@ImageView[visibleToUser=true] < FrameLayout <2 FrameLayout[childCount=4] <<n [id="android:id/content"]',

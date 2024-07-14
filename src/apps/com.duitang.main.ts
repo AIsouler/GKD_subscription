@@ -27,7 +27,7 @@ export default defineGkdApp({
             'com.duitang.main.business.',
             'com.duitang.main.activity.',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="adOptionEntry"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14232228',
@@ -40,7 +40,7 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: 'com.duitang.main.business.',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="adClose"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14232218',
@@ -56,7 +56,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[vid="scoreDuitangCancel"]',
@@ -66,7 +66,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-图片页弹窗广告',
       desc: '点击X',
       rules: [
@@ -89,7 +89,7 @@ export default defineGkdApp({
       desc: '点击[x]',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '@[vid="dialogNegative"] +2 [text="打开通知"]',
       snapshotUrls: 'https://i.gkd.li/i/14273121',
     },

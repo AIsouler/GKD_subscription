@@ -9,7 +9,7 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -26,7 +26,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text*="开启通知"] < FrameLayout + FrameLayout >2 [text="取消"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13228735',
@@ -36,7 +36,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
@@ -64,7 +64,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity',
           matches:
@@ -89,7 +89,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-右侧悬浮广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
@@ -97,7 +97,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-新人教学弹窗',
       desc: '点击跳过',
       activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',

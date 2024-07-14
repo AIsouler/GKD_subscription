@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.qennnsad.aknkaksd.presentation.ui.MainContainerActivity',
           matches: '[vid="dialog_hall_iv_close"]',

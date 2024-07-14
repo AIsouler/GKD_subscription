@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       desc: '点击"以后再说"',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
@@ -27,7 +27,7 @@ export default defineGkdApp({
       desc: '5秒后点击关闭广告',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.bokecc.dance.player.DancePlayActivity',
           matches: '[text="关闭广告"][clickable=true][visibleToUser=true]',
           exampleUrls:
@@ -43,7 +43,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.bokecc.dance.activity.MainActivity',
           matches: '[vid="iv_bottom"][visibleToUser=true]',
           exampleUrls:
@@ -52,7 +52,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.bokecc.dance.player.DancePlayActivity',
           matches: '[vid="iv_cancel"][clickable=true][visibleToUser=true]',
           exampleUrls:

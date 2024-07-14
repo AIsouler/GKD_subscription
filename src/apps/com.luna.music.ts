@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -33,7 +33,7 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-VIP弹窗',
       desc: '直接关闭所有底部半屏弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.luna.biz.main.main.MainActivity',
         'com.luna.biz.ad.AdActivity',
@@ -84,7 +84,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '点击"坚持退出"',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="坚持退出"]',
           snapshotUrls: 'https://i.gkd.li/i/13613184',
         },
@@ -102,7 +102,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '@[text*="领取成功"][clickable=true] - [text="反馈"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14767236',
@@ -118,7 +118,7 @@ export default defineGkdApp({
         {
           preKeys: [0, 2],
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="坚持退出"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14767235',
@@ -144,7 +144,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           action: 'back',
           matches: '[text="为汽水音乐评分"]',
           exampleUrls:
@@ -159,7 +159,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.luna.biz.main.main.MainActivity',
           matches:
             '[id="com.luna.music:id/fl_pendant_container"] > [id="com.luna.music:id/view_close"]',

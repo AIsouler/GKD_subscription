@@ -31,7 +31,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '漫画章节之间的广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
           matches: '[vid="iv_del"]',
           exampleUrls:

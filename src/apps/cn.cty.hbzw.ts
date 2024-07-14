@@ -16,7 +16,7 @@ export default defineGkdApp({
             left: 'width * 0.8676',
             top: 'width * -1.9094',
           },
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="iv_ad_image"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9cf76d31-3b11-45dc-be9c-c2e9cbf26c23',

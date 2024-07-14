@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '@ImageView[clickable=true] <2 LinearLayout <3 ViewGroup < [vid="ll_main"]',
       snapshotUrls: 'https://i.gkd.li/i/15914347',

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 10,
       name: '功能类-自动确认登录',
       desc: '自动点击[登录]按钮',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

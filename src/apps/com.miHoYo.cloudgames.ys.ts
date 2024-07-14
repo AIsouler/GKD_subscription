@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '功能类-自动点击[使用流量进行游戏]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.mihoyo.cloudgame.main.MiHoYoCloudMainActivity',
           matches: '[text="使用流量进行游戏"]',
           exampleUrls:

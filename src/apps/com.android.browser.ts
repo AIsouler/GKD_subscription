@@ -19,7 +19,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-主页信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.android.browser.BrowserActivity',
         'com.android.browser.flow.view.FeedbackDialog',

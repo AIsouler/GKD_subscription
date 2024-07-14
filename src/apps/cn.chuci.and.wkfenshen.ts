@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'cn.chuci.and.wkfenshen.ActMain',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: [
             '[id="cn.chuci.and.wkfenshen:id/dialog_local_buy_btn"]',
             '[id="cn.chuci.and.wkfenshen:id/action_close"]',

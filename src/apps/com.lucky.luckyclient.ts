@@ -19,7 +19,7 @@ export default defineGkdApp({
       name: '全屏广告-超值换购弹窗',
       desc: '关闭超值换购弹窗',
       activityIds: 'com.lucky.luckyclient.preview2.OrderPreviewActivity2',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.lucky.luckyclient:id/close_iv"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/i/12922834',
     },

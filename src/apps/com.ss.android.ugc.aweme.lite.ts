@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '青少年模式',
       desc: '点击"我知道了"/"关闭"',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -45,7 +45,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '全屏广告-朋友推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
@@ -55,7 +55,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      quickFind: true,
+      fastQuery: true,
       name: '权限提示-通知权限',
       desc: '点击暂不开启',
       matchTime: 10000,
@@ -71,7 +71,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-选择图片时自动勾选原图',
       rules: [
         {

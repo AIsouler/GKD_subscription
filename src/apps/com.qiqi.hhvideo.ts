@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text="开启青少年模式"] + [text="我已知晓"]',

@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.oplus.weather.main.view.WeatherMainActivity',
           matches: '[vid="feed_close"]',
           exampleUrls:

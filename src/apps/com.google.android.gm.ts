@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '分段广告-信息流广告',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           key: -1,
           name: '点击广告扩展-1',
           matches:
@@ -17,7 +17,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13255698',
         },
         {
-          quickFind: true,
+          fastQuery: true,
           key: 0,
           name: '点击广告扩展-2',
           matches: '[id="com.google.android.gm:id/basic_ad_teaser_info_icon"]',
@@ -27,7 +27,7 @@ export default defineGkdApp({
           preKeys: [-1, 0],
           key: 1,
           name: '广告中心-点击屏蔽',
-          matches: 'Button[text="屏蔽此广告"||text^="Block"]', // TODO quickFind 优化改进 Button[text="屏蔽此广告"] <<n [id="com.google.android.gm:id/my_ad_center_dialog"]
+          matches: 'Button[text="屏蔽此广告"||text^="Block"]', // TODO fastQuery 优化改进 Button[text="屏蔽此广告"] <<n [id="com.google.android.gm:id/my_ad_center_dialog"]
           snapshotUrls: [
             'https://i.gkd.li/i/13255700',
             'https://i.gkd.li/i/13724271',
@@ -46,7 +46,7 @@ export default defineGkdApp({
         {
           preKeys: 2,
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           name: '关闭弹窗',
           matches: '[id="com.google.android.gm:id/my_ad_center_close_icon"]',
           snapshotUrls: 'https://i.gkd.li/i/13263279',

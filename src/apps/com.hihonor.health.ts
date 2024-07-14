@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.hihonor.health.main.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.hihonor.health:id/iv_close_filled"]',
           snapshotUrls: 'https://i.gkd.li/i/13759407',
         },

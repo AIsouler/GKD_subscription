@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text^="通知分类"] +n ImageView[id="com.hupu.shihuo:id/ivClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13704887',
     },
@@ -31,7 +31,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text="发现新版本"] +2 ViewGroup > [text="以后再说"]',

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -32,7 +32,7 @@ export default defineGkdApp({
       desc: '点击[暂时不要]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: ['[text="接收通知"]', '[text="暂时不要"]'],
           snapshotUrls: 'https://i.gkd.li/i/15944175',

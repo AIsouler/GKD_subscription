@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       rules:
         '[text$="抽奖送大礼"] < WebView - [id="cisdom.com.bigteaapp:id/close"]',

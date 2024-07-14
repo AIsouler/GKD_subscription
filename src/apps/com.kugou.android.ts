@@ -65,7 +65,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches: '@ImageView[clickable=true] <n * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15520336',
@@ -110,7 +110,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-[开启音乐DJ]弹窗',
       desc: '勾选[今日不再提醒]-点击[关闭]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

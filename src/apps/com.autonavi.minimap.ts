@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -92,7 +92,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '[欢迎]弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
           matches:
             'ViewGroup[childCount=6] >4 ViewGroup[childCount=5] > @ImageView + View[text!=null] <<n [vid="fragment_container"]',
@@ -103,7 +103,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '签到弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
           matches: '[vid="main_map_msg_dialog_close"]',
           exampleUrls:
@@ -118,7 +118,7 @@ export default defineGkdApp({
       desc: '点击[一键点亮]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
           matches:
             '[text="一键点亮"] <2 @[clickable=true] <<n [vid="mapInteractiveRelativeLayout"]',

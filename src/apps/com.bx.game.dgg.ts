@@ -18,14 +18,14 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
           matches: '[vid="anythink_myoffer_btn_close_id"]',
           snapshotUrls: 'https://i.gkd.li/i/15362931',
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.bx.game.dgg.MainActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +2 * > [text="广告"]',

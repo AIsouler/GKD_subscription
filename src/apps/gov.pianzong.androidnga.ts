@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '开屏广告',
       matchTime: 10000,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       rules: [
         '[id="gov.pianzong.androidnga:id/iv_tg_ad"]',
@@ -67,7 +67,7 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.hihonor.android.launcher.unihome.UniHomeLauncher',
           matches: '[id="gov.pianzong.androidnga:id/iv_homedialog_close"]',
           exampleUrls:

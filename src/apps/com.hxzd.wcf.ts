@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.hxzd.wcf.ui.MainActivity',
           matches: '[id="com.hxzd.wcf:id/btn_close"]',
           exampleUrls:

@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '分段广告',
       desc: '点击X-点击不感兴趣',
       rules: [

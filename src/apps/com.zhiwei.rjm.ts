@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zhiwei.rjm.MainActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true] < * +2 ViewGroup > [text="广告"]',
