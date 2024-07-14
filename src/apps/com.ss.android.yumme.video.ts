@@ -8,8 +8,8 @@ export default defineGkdApp({
       key: 1,
       name: '青少年模式',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
@@ -23,15 +23,15 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           matches: ['[text="立即升级"]', '[text="以后再说"]'],
           snapshotUrls: [
-            'https://i.gkd.li/import/12534016',
-            'https://i.gkd.li/import/13328599',
+            'https://i.gkd.li/i/12534016',
+            'https://i.gkd.li/i/13328599',
           ],
         },
       ],

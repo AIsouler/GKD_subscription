@@ -36,6 +36,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
@@ -47,8 +48,7 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 2,
-          actionMaximumKey: 0,
+          key: 1,
           matches: 'Button[text="立即安装"] + Button[text="稍后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/15283162',
         },

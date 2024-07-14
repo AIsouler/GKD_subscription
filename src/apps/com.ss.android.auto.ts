@@ -47,7 +47,6 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       fastQuery: true,
-      matchTime: 20000, //有时从通知点入，文章阅读返回后弹出
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -147,16 +146,13 @@ export default defineGkdApp({
       key: 9,
       name: '评价提示',
       fastQuery: true,
-      matchTime: 20000, //有时从通知点入，文章阅读返回后弹出
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           action: 'back',
-          matches: '[text="\"轻点星级评分\""]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14810042',
-          ],
+          matches: '[text="去评价"]',
+          snapshotUrls: 'https://i.gkd.li/i/14810042',
         },
       ],
     },

@@ -20,11 +20,11 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '通知提示',
-      key: 0,
+      key: 2,
+      name: '权限提示-通知权限',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
