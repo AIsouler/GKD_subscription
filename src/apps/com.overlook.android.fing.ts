@@ -13,6 +13,6 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text="關閉"]',
       snapshotUrls: 'https://i.gkd.li/i/15521827',
-    }
-  ]
+    },
+  ],
 });
