@@ -26,7 +26,7 @@ export default defineGkdCategories([
   {
     key: 5,
     name: '权限提示',
-    // 各种权限请求
+    // 各种权限请求，如定位权限、通知权限等
   },
   {
     key: 6,
