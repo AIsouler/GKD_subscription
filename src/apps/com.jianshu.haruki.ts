@@ -35,7 +35,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
+      key: 3,
       name: '局部广告-首页信息流广告',
       desc: '点击关闭',
       fastQuery: true,
