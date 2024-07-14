@@ -70,11 +70,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches:
             '@[id="cn.soulapp.android:id/img_close"] -2 RelativeLayout > [text="升级到最新版本"]',
           snapshotUrls: 'https://i.gkd.li/i/13693361',
+        },
+        {
+          key: 1,
+          matches: '[text="升级体验"] - [text="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/15034131',
         },
       ],
     },

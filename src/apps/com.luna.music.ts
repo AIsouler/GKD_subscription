@@ -30,6 +30,20 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 1,
+      name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@[text="稍后再说"] + [text="立即升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/14790279',
+        },
+      ],
+    },
+    {
       key: 2,
       name: '全屏广告-VIP弹窗',
       desc: '直接关闭所有底部半屏弹窗',
