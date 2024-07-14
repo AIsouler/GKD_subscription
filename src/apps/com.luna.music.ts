@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,17 +14,34 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
+          name: '穿山甲SDK',
+          matches: 
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14232395',
         },
         {
           key: 1,
+          name: '全局-1',
+          fastQuery: true,
           matches: '[text^="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/15087528',
             'https://i.gkd.li/i/15148298', // 避免误触
           ],
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '更新提示',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '@[text="稍后再说"] + [text="立即升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/14790279',
         },
       ],
     },
@@ -43,6 +59,8 @@ export default defineGkdApp({
           key: 0,
           action: 'back', // 使用点击方式有概率无效
           matches: 'FlattenUIText[text="看视频免费听"]',
+          // 原方案预留
+          //'[id="com.luna.music:id/design_bottom_sheet"] [id="com.luna.music:id/bullet_container"]'
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
             'https://i.gkd.li/i/13660652',

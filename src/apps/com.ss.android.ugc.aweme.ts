@@ -326,5 +326,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 21,
+      name: '定位提示',
+      desc: '直接关闭所有类似形状窗口',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          name: '弹窗',
+          action: 'back',
+          matches: '[id="com.ss.android.ugc.aweme:id/rootview"]',
+          snapshotUrls: 'https://i.gkd.li/import/13755373',
+        },
+        {
+          name: '顶部横条',
+          activityIds: 'com.ss.android.ugc.aweme.search.activity.SearchResultActivity'，
+          matches: '@ImageView[clickable=true] - [text^="开启定位"]',
+          snapshotUrls: 'https://i.gkd.li/import/13755718',
+        }
+      ]
+    }
   ],
 });

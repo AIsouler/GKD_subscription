@@ -46,6 +46,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14445193',
           ],
         },
+        {
+          key: 2,
+          actionMaximumKey: 0,
+          matches: 'Button[text="立即安装"] + Button[text="稍后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/15283162',
+        },
       ],
     },
     {

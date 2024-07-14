@@ -22,5 +22,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '全屏广告-在线值守广告',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          matches: 'TextView[text="了解并试用服务"]',
+          snapshotUrls: 'https://i.gkd.li/i/15338834',
+        },
+      ],
+    },
   ],
 });

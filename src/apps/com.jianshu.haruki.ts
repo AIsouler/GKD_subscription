@@ -19,5 +19,34 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          matches: '[text="升级到最新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/15989275',
+        },
+      ],
+    },
+    {
+      enable: false,
+      key: 2,
+      name: '局部广告-首页信息流广告',
+      desc: '来自腾讯广告SDK',
+      fastQuery: true,
+      rules: [
+        {
+          matches: 'ImageView[vid="nativeAdClose"]',
+          activityIds: 'com.baiji.jianshu.MainActivity',
+          snapshotUrls: 'https://i.gkd.li/i/16201541',
+        },
+      ],
+    },
   ],
 });

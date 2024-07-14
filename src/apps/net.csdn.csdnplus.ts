@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: '开屏广告', //全局已适配，本条可删
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -20,6 +20,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          name: '穿山甲SDK',
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           snapshotUrls: [

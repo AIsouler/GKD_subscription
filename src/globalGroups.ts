@@ -18,16 +18,19 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
+        name: '全局-1',
         fastQuery: true,
         matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
         key: 1,
+        name: '全局-2',
         matches:
           '[childCount=0][visibleToUser=true][((text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text.length<10) || ((desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*") && desc.length<10) || id~="(?is).*tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*" && text!~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]")]',
       },
       {
         key: 2,
+        name: '全局-3穿山甲SDK',
         fastQuery: true,
         matches:
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',

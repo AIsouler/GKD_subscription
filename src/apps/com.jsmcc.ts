@@ -19,5 +19,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      name: '通知提示',
+      key: 0,
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          matches: 'ImageView[vid="notice_dia"]',
+          snapshotUrls: 'https://i.gkd.li/i/16215987',
+        },
+      ],
+    },
   ],
 });

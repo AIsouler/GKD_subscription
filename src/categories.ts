@@ -54,4 +54,8 @@ export default defineGkdCategories([
     key: 10,
     name: '其他', // 分类不明确
   },
+  {
+    key: 11,
+    name: '定位提示',
+  },
 ]);
