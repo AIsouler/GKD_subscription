@@ -13,7 +13,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-使用此文件夹',
       rules: [
         {

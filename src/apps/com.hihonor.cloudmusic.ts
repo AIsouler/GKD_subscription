@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-推荐页卡片广告',
       desc: '点击[关闭]-点击[直接关闭]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
       rules: [
         {
@@ -28,7 +28,7 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           action: 'back',

@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'c.b.a',
           matches:
             'View[childCount=2] > View[childCount=1] + @Button[childCount=0] <<n [vid="alayout"]',

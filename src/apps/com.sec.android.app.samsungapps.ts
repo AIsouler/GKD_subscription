@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -25,7 +25,7 @@ export default defineGkdApp({
       desc: '点击[是]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sec.android.app.samsungapps.SearchResultActivity',
           matches:
             '[text="您是否年满 18 岁？"] +4 @[clickable=true] > [text="是"]',

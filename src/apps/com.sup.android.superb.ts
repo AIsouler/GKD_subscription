@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14667409',
@@ -24,14 +24,14 @@ export default defineGkdApp({
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text$="青少年模式"] + [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/13796869',
     },
     {
       key: 5,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="开启推送通知"] +2 * > [text="以后再说"]',
@@ -50,7 +50,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      quickFind: true,
+      fastQuery: true,
       name: '更新提示',
       desc: '点击我再想想',
       matchTime: 10000,
@@ -67,7 +67,7 @@ export default defineGkdApp({
       key: 8,
       name: '评价提示',
       desc: '点击取消',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -87,7 +87,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sup.android.base.MainActivity',
           matches: '[id="com.sup.android.superb:id/afa"]',
           exampleUrls:
@@ -102,7 +102,7 @@ export default defineGkdApp({
       desc: '点击[关闭广告]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sup.android.base.MainActivity',
           matches: '[text="关闭广告"][clickable=true]',
           exampleUrls:
@@ -126,7 +126,7 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/14886477',
         },

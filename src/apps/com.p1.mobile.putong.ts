@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '@[text="我知道了"] + [text="开启青少年模式"]',
@@ -18,7 +18,7 @@ export default defineGkdApp({
       name: '更新提示',
       desc: '点击[取消]',
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: [
@@ -35,7 +35,7 @@ export default defineGkdApp({
       key: 3,
       name: '权限提示-通知权限',
       desc: '点击[暂不设置]',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: [

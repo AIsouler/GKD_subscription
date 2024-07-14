@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
       rules:
         '@[id="cn.TuHu.android:id/imgClose"] - [id="cn.TuHu.android:id/rlContent"] > [id="cn.TuHu.android:id/img_jump"]',
@@ -15,7 +15,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      quickFind: true,
+      fastQuery: true,
       name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,

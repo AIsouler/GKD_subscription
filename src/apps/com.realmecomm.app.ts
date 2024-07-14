@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '功能类-自动签到',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.android.realme2.home.view.MainActivity',
           matches: '[text="签到"][clickable=true][visibleToUser=true]',
           exampleUrls:

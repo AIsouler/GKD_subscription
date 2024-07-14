@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-导出界面底部广告',
       desc: '点击[关闭]-点击[不感兴趣]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.vega.export.edit.view.ExportActivity',
       rules: [
         {
@@ -40,7 +40,7 @@ export default defineGkdApp({
       name: '功能类-恢复创作',
       desc: '自动点击[立即恢复]按钮',
       activityIds: 'com.vega.main.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '[vid="tv_title_resume_design"] +2 [vid="tvResumeNow"]',
       snapshotUrls: 'https://i.gkd.li/i/14292755',
     },

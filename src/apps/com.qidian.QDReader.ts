@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -26,7 +26,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -62,7 +62,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '@[id="com.qidian.QDReader:id/ivClose"] + [text^="开启推送"]',
       snapshotUrls: 'https://i.gkd.li/i/12640242',
     },
@@ -74,7 +74,7 @@ export default defineGkdApp({
           key: 0,
           name: '书架页面右侧悬浮广告',
           activityIds: 'com.qidian.QDReader.ui.activity.MainGroupActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.qidian.QDReader:id/ivAd"] + [id="com.qidian.QDReader:id/ivAdClose"]',
           snapshotUrls: 'https://i.gkd.li/i/12717032',
@@ -118,7 +118,7 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-红包弹窗',
       desc: '点击X',
       rules: [
@@ -136,7 +136,7 @@ export default defineGkdApp({
       name: '功能类-移动网络下自动点击播放视频',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
           matches: '[text^="当前处于移动网络"]',
           exampleUrls:

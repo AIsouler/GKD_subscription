@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -18,7 +18,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-发现通讯录好友弹窗',
       desc: '点击[暂时不要]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -40,7 +40,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: '[text^="你还没有开启位置权限"] +2 * > [text="以后再说"]',
           exampleUrls:

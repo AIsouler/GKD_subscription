@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-超级补贴日弹窗',
       desc: '点击X',
       rules: [
@@ -23,7 +23,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.huodao.hdphone.mvp.view.main.NewMainActivity',
           matches: '[vid="iv_recycle_close"]',
           exampleUrls:

@@ -36,7 +36,7 @@ export default defineGkdApp({
       key: 10,
       name: '权限提示-通知权限',
       desc: '请求推送通知弹窗，点击取消',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -81,7 +81,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-右侧悬浮小图标',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -112,7 +112,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '评价提示-请求好评弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

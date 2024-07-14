@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击[取消]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.sec.android.app.music.common.activity.MusicMainActivity',
           matches: [

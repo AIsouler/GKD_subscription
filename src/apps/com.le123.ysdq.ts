@@ -12,7 +12,7 @@ export default defineGkdApp({
           key: 0,
           activityIds:
             'com.elinkway.infinitemovies.ui.activity.NewMainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.le123.ysdq:id/ad_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/13635244',
         },

@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '更新提示',
       matchTime: 10000,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       rules: [
         {

@@ -83,7 +83,7 @@ export default defineGkdApp({
         },
         {
           key: 7,
-          quickFind: true,
+          fastQuery: true,
           matches: '@ImageView[visibleToUser=true] -2 * >3 [text="推荐"]',
           snapshotUrls: 'https://i.gkd.li/i/14668232',
         },

@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '@[id="com.xmcy.hykb:id/iv_inner_button_close"] - RelativeLayout >n [id="com.xmcy.hykb:id/text_update_tip"]',
       snapshotUrls: [
@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xmcy.hykb.app.ui.main.MainActivity',
       rules: '[id="com.xmcy.hykb:id/dialog_home_notice_image_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13259427',

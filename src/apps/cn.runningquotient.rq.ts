@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-自动签到',
       desc: '点击右侧[签到福利]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

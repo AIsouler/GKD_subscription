@@ -72,7 +72,7 @@ export default defineGkdApp({
       key: 10,
       name: '更新提示',
       desc: '自动点击以后再说。',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

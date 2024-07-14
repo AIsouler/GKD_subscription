@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -52,7 +52,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '软件详情页卡片广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
           matches:
             'FrameLayout[childCount=5] > @FrameLayout[visibleToUser=true] > ImageView <<n [vid="adContainer"]',
@@ -61,7 +61,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '搜索页卡片广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'info.muge.appshare.view.search.app.SearchAppActivity',
           matches:
             'FrameLayout[childCount=5] > @FrameLayout[visibleToUser=true] > ImageView <<n [vid="adView"]',
@@ -71,7 +71,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-自动签到',
       matchTime: 10000,
       actionMaximum: 1,
@@ -95,7 +95,7 @@ export default defineGkdApp({
       key: 3,
       name: '分段广告-软件详情页广告',
       desc: '点击关闭-点击不感兴趣',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
       rules: [
         {
@@ -133,7 +133,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: 'View[vid="v_jump"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/6b1d7b37-edd7-499f-a8b0-ecba24ef2c44',
@@ -172,7 +172,7 @@ export default defineGkdApp({
       desc: '点击[收到]',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'info.muge.appshare.view.main.MainActivity',
@@ -189,7 +189,7 @@ export default defineGkdApp({
       desc: '下载文件页面',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'info.muge.appshare.view.browser.DownloadBrowserActivity',
           matches: '[text="浏览器打开"]',

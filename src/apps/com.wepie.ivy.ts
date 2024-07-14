@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '评价提示-好评弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

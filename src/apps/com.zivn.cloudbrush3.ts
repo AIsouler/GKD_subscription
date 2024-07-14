@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '分段广告-信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.zivn.cloudbrush3.app.HomeActivity',
       rules: [
         {

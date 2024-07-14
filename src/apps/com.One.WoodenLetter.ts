@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text^="新版本"] <2 * +2 * > [text="忽略"]',
       snapshotUrls: 'https://i.gkd.li/i/14332536',
     },

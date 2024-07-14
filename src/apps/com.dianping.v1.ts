@@ -41,7 +41,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.dianping.v1.NovaMainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.dianping.v1:id/operate_cross_icon"]',
           snapshotUrls: 'https://i.gkd.li/i/13538340',
         },
@@ -75,7 +75,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.dianping.v1.NovaMainActivity',
           matches: '[text$="重复出现"][clickable=true]',
           exampleUrls:

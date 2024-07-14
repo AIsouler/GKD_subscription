@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -20,7 +20,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-视频推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
       snapshotUrls: 'https://i.gkd.li/i/12701029',
@@ -32,7 +32,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.youku.ui.activity.DetailActivity',
           matches: '[text="关闭广告"][visibleToUser=true]',
           exampleUrls:
@@ -41,7 +41,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.youku.ui.activity.DetailActivity',
           matches: '[vid="xadsdk_pause_ad_close"]',
           exampleUrls:
@@ -58,7 +58,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '视频播放时的广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.youku.ui.activity.DetailActivity',
           matches: '[vid="novelad_corner_close"]',
           exampleUrls:
@@ -68,7 +68,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '历史记录/搜索页面广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.youku.android.youkuhistory.activity.HistoryActivity',
             'com.soku.searchsdk.activity.SearchActivity',

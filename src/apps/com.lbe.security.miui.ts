@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '自动点击"仅在使用中允许"',
       activityIds:
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="仅在使用中允许"]',
       snapshotUrls: 'https://i.gkd.li/i/13761264',
     },
@@ -23,7 +23,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: ['[text$="发送通知"]', '[text="拒绝"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/0487a113-5b57-402e-96ca-1f351e121d82',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-首页活动悬浮广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cmb.pb.app.mainframe.container.PBMainActivity',
       rules: '[vid="float_window"] > [vid="ivCancle"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14208669',
@@ -34,7 +34,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[desc="关闭"] - * > [text*="开启"][text*="定位"]',

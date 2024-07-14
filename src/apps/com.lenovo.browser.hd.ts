@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[text="发现新版本"] - * > [id="com.lenovo.browser.hd:id/fl_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13401982',
@@ -18,7 +18,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

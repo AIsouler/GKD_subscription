@@ -12,7 +12,7 @@ export default defineGkdApp({
           key: 0,
           name: '首页弹窗广告',
           activityIds: 'com.fcbox.hivebox.business.main.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.fcbox.hivebox:id/fl_content_container"] + [id="com.fcbox.hivebox:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13459000',

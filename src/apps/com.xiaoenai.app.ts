@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -52,7 +52,7 @@ export default defineGkdApp({
       rules: [
         {
           name: '字节广告SDK',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@ImageView[clickable=true][width<90][height<90] -3 ImageView <<n [id="com.xiaoenai.app:id/view_ad_tpl"]',
           snapshotUrls: 'https://i.gkd.li/i/13728026',

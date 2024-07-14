@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-出站后摇一摇广告',
       desc: '点击跳过',
       rules: [

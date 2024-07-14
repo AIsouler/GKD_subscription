@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-卡片广告',
       desc: '该广告的第二段需开启“智能服务”的对应规则才能关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

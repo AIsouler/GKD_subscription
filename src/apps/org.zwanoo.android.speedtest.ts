@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: 'com.ookla.mobile4.screens.main.MainViewActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="org.zwanoo.android.speedtest:id/suite_completed_close_ad_button"]',
           snapshotUrls: 'https://i.gkd.li/i/12893175',

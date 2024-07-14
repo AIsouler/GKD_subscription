@@ -11,7 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           action: 'back',
@@ -30,7 +30,7 @@ export default defineGkdApp({
       rules: [
         {
           name: '收藏帖子后底部推荐关注卡片',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
           matches: '[vid="iv_notify_close"]',

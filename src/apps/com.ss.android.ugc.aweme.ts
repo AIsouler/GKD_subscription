@@ -59,7 +59,7 @@ export default defineGkdApp({
         },
         {
           key: 6,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: '@[text="不感兴趣"] - * [text*="也关注了"]',
           snapshotUrls: 'https://i.gkd.li/i/14661956',
@@ -69,7 +69,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示-关闭更新弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -95,7 +95,7 @@ export default defineGkdApp({
       key: 5,
       name: '全屏广告-弹窗广告',
       activityIds: 'com.android.launcher.Launcher',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
       snapshotUrls: 'https://i.gkd.li/i/12769137',
@@ -104,7 +104,7 @@ export default defineGkdApp({
       key: 6,
       name: '评价提示-去商店评分',
       desc: '点击[取消]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] +2 [text="五星好评"]',
@@ -114,7 +114,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-设置无声进入抖音弹窗',
       desc: '点击[拒绝]',
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
@@ -127,7 +127,7 @@ export default defineGkdApp({
       desc: '自动点击“暂不”',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -146,7 +146,7 @@ export default defineGkdApp({
       key: 11,
       name: '功能类-自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
       rules: '[text="原图"][desc="未选中/复选框 原图"]',
@@ -158,7 +158,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '全屏广告-休息提醒',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '@[text="取消"] + [text*="提醒我"]',
@@ -193,7 +193,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '商城快捷方式',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.ss.android.ugc.aweme.main.MainActivity',
             'com.ss.android.ugc.aweme.live.LiveDummyActivity',
@@ -208,7 +208,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '搜索组件',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
           matches: '[text="暂不开启"][clickable=true]',
@@ -233,7 +233,7 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-拍同款弹窗',
       desc: '点击不感兴趣',
       rules: [
@@ -250,7 +250,7 @@ export default defineGkdApp({
       desc: '点击[知道了]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.ss.android.ugc.aweme.live.LiveDummyActivity',
             'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
@@ -275,7 +275,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           position: {
             left: 'width * 0.5051',
             top: 'width * 2.0649',
@@ -296,7 +296,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: ['[text*="通讯录"]', '[text="拒绝"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/8f70418d-92f0-4264-83fd-a680350c478e',
@@ -310,7 +310,7 @@ export default defineGkdApp({
     {
       key: 20,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

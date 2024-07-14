@@ -18,7 +18,7 @@ export default defineGkdApp({
       name: '功能类-退出软件时点击"退出程序"',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.example.raylink_flutter.MainActivity',
           matches: '[vid="raylink_desktop_dialog_msg_bottombtn_left_tv"]',
           snapshotUrls: 'https://i.gkd.li/i/14047538',

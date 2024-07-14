@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -23,7 +23,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -33,7 +33,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -54,7 +54,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-首页右下角卡片悬浮窗',
       desc: '点击X',
       rules: [

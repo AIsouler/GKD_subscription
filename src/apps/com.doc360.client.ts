@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.doc360.client.activity.ReadRoomActivity',
       rules:
         '@FrameLayout[desc^="dislike"] <<n [id="com.doc360.client:id/fl_ad_container"]',

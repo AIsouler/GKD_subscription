@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-[升级云空间]弹窗',
       desc: '点击[放弃]/[以后再说]',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.huawei.android.hicloud.ui.activity.BackupNotificationActivity',
       rules: [

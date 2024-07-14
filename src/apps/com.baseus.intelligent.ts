@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-定位请求',
       desc: '点击取消-点击取消',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.baseus.intelligent.view.home.MainActivity',

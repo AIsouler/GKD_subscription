@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       // 该广告不止在开屏时出现
       // matchTime: 10000,
       // actionMaximum: 1,

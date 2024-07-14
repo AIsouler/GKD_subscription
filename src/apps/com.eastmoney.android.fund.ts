@@ -39,7 +39,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
             'com.eastmoney.android.fund.activity.FundSplashActivity',

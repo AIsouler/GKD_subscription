@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -36,7 +36,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-信息流广告',
       desc: '出现在主页,搜索页',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.google.android.material.bottomsheet.BottomSheetDialog',
         'com.weico.international.activity.MainFragmentActivity',

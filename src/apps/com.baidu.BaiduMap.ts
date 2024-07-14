@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-地图上方黄页横幅',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
@@ -23,7 +23,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-打车界面右侧悬浮球',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
       snapshotUrls: 'https://i.gkd.li/i/12642307',
@@ -31,7 +31,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-美食大礼包弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642310',
@@ -39,7 +39,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-酒店提前订弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642319',
@@ -47,7 +47,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -79,7 +79,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-打车界面弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
@@ -94,7 +94,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -108,7 +108,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[vid="push_close"]',
       snapshotUrls: 'https://i.gkd.li/i/15284736',
     },
@@ -116,7 +116,7 @@ export default defineGkdApp({
       key: 9,
       name: '功能类-通勤卡添加至桌面',
       desc: '点击取消',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       rules: [
         {

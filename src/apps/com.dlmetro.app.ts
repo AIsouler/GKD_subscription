@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.bwton.metro.tabindicator.business.MainTabActivity',
           matches: '[vid="iv_close"]',
           exampleUrls:

@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: ['com.ukids.client.phone.parent.ParentClientHomeActivity'],
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.ukids.client.phone:id/dialog_dismiss_btn_two"]',
           snapshotUrls: ['https://i.gkd.li/i/13400238'],
         },

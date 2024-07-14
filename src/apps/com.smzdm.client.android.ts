@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-弹窗广告',
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '[id="com.smzdm.client.android:id/dialog_home_close"]',
@@ -18,7 +18,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.smzdm.client.android:id/tv_version"] +2 [id="com.smzdm.client.android:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13198016',
@@ -26,7 +26,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-请求读取剪贴板权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
@@ -36,7 +36,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

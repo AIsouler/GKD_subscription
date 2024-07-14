@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
           matches: '[vid="anythink_myoffer_btn_close_id"]',
           snapshotUrls: 'https://i.gkd.li/i/15443189',

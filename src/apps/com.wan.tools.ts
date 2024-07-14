@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '通知提示-公告弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'LinearLayout[childCount=2] > @[text="取消"] + [text="确认"]',
       snapshotUrls: 'https://i.gkd.li/i/13392027',
     },

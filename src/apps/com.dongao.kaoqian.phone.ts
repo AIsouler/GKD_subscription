@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="tv_welcome_guide"]',
           snapshotUrls: 'https://i.gkd.li/i/14809185',
         },

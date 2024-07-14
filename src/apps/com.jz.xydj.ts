@@ -12,7 +12,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '底部卡片广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.jz.jzdj.ui.activity.shortvideo.ShortVideoActivity2',
           matches: '[vid="ad_close"][clickable=true]',
           exampleUrls:

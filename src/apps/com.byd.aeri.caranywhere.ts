@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: [
             '[id="com.byd.aeri.caranywhere:id/tv_determine"][text="立即安装"]',
             '[id="com.byd.aeri.caranywhere:id/tv_cancel"]',

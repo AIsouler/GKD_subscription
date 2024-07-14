@@ -11,7 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13197374',
     },

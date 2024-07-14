@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.meituan.banma.main.activity.MainActivity',
             'com.meituan.banma.main.activity.ImageAdActivity',
@@ -29,7 +29,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.meituan.banma.usercenter.activity.UserGradeUpgradeKNBActivity',
           matches: '[vid="btn_close"]',

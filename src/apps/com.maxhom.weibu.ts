@@ -47,7 +47,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-漂流瓶页面提示弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.maxhom.weibu.tool.home.activity.ToolBottleActivity',
         'com.maxhom.weibu.tool.home.activity.NewMainActivity',
@@ -66,7 +66,7 @@ export default defineGkdApp({
       key: 5,
       name: '权限提示-定位权限',
       desc: '自动点击取消',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [

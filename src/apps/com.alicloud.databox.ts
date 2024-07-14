@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '功能类-自动签到',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -61,7 +61,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text^="立即了解"] -3 View[clickable=true]',
@@ -87,7 +87,7 @@ export default defineGkdApp({
       name: '功能类-扫描二维码登录时自动点击登录',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.taobao.login4android.scan.QrScanActivity',
@@ -102,7 +102,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.alicloud.databox.MainActivity',
           matches: ['[text="容量使用超限"]', '[vid="layout_close"]'],
           exampleUrls:
@@ -114,7 +114,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示-社区消息',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -22,7 +22,7 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-NSFW 内容提示',
       desc: '自动点击 continue',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.reddit.launch.main.MainActivity',

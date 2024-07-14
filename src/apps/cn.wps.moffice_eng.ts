@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-首页文档列表广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.StartPublicActivity',
         'cn.wps.moffice.documentmanager.PreStartActivity',
@@ -36,7 +36,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.AfterLoginActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
@@ -50,7 +50,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -62,7 +62,7 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-开启WPS云服务',
       desc: '自动点击不开启',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.cloud.roaming.login.core.QingLoginActivity',
         'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
@@ -87,7 +87,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '分段广告-文档末尾广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cn.wps.moffice.writer.multiactivity.Writer',
       rules: [
         {
@@ -107,14 +107,14 @@ export default defineGkdApp({
     {
       key: 6,
       name: '局部广告-首页底部广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13804525',
     },
     {
       key: 7,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-首页底部升级会员卡片',
       rules: [
         {
@@ -127,7 +127,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '全屏广告-体验超级会员弹窗',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',

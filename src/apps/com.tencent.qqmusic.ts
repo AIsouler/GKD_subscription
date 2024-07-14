@@ -36,7 +36,7 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches: '@[clickable=true] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15041019',
@@ -72,7 +72,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text="抢先体验"] -2 [text="不再提醒"]',
@@ -86,7 +86,7 @@ export default defineGkdApp({
       desc: '点击[流量够用]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.tencent.qqmusic.activity.AppStarterActivity',
             'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
@@ -154,7 +154,7 @@ export default defineGkdApp({
       key: 8,
       name: '评价提示-好评弹窗',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -180,7 +180,7 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 99,
-          quickFind: true,
+          fastQuery: true,
           matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/15010226',
         },

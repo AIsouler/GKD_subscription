@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -44,7 +44,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -54,7 +54,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -66,7 +66,7 @@ export default defineGkdApp({
       name: '分段广告-首页信息流广告',
       desc: '点击卡片广告x关闭按钮-关闭反馈理由弹窗',
       activityIds: 'com.dongqiudi.news.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           preKeys: [1, 2],
@@ -94,7 +94,7 @@ export default defineGkdApp({
       name: '全屏广告-首页弹窗广告',
       desc: '点击底部"x"关闭',
       activityIds: 'com.dongqiudi.news.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.dongqiudi.news:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13260467',
     },

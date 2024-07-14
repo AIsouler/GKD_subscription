@@ -13,7 +13,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-右下角领福利悬浮窗',
       desc: '点击X',
       rules: [

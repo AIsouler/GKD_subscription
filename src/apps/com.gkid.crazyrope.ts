@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-会员提示',
       desc: '点击不需要',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.gkid.crazyrope.ui.member.MemberDiscountsActivity',
       rules: [
         {
@@ -21,7 +21,7 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-浮窗广告',
       desc: '二步确认',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.gkid.crazyrope.ui.drillcommon.DrillActivity',
       rules: [
         '[id="com.gkid.crazyrope:id/iv_close"]',

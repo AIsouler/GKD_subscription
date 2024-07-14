@@ -23,7 +23,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sjm.xiaodesecond.mw.MainActivity',
           matches: '@[clickable=true] > [text="跳过"]',
           exampleUrls:
@@ -35,7 +35,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sjm.xiaodesecond.mw.MainActivity',
           matches:
             '@ViewGroup[clickable=true][childCount=1] < ViewGroup +2 ViewGroup[childCount=2] > [text="广告"]',

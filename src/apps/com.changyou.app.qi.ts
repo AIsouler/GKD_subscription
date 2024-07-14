@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.changyou.app.qi.MainActivity',
           matches: '[vid="ksad_auto_close_btn"]',
           exampleUrls:

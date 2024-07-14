@@ -18,7 +18,7 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
-        quickFind: true,
+        fastQuery: true,
         matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
@@ -28,7 +28,7 @@ export default defineGkdGlobalGroups([
       },
       {
         key: 2,
-        quickFind: true,
+        fastQuery: true,
         matches:
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },

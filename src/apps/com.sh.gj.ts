@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.sh.gj.MainActivity',
             'com.sh.gj.activity.LineDetailActivity',
@@ -33,7 +33,7 @@ export default defineGkdApp({
       desc: '点击[确认退出]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sh.gj.MainActivity',
           matches: '[text="确认退出"]',
           exampleUrls:

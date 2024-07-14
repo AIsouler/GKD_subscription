@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -45,7 +45,7 @@ export default defineGkdApp({
           name: '点击关闭-1',
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
           snapshotUrls: 'https://i.gkd.li/i/12707701',
@@ -59,7 +59,7 @@ export default defineGkdApp({
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
             'com.xunlei.downloadprovider.feedback.view',
           ],
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
           snapshotUrls: [
@@ -72,7 +72,7 @@ export default defineGkdApp({
           key: 2,
           name: '点击关闭-2',
           activityIds: 'com.xunlei.downloadprovider.feedback.view',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.xunlei.downloadprovider:id/ad_ima_skip"]',
           snapshotUrls: 'https://i.gkd.li/i/12882988',
         },
@@ -81,7 +81,7 @@ export default defineGkdApp({
           name: '点击关闭-3',
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/play_detail_ad_title"] + [id="com.xunlei.downloadprovider:id/close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/13228423',
@@ -92,7 +92,7 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-视频详情页直播推荐',
       desc: '自动点击"减少推荐"',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -184,7 +184,7 @@ export default defineGkdApp({
           key: 23,
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
           snapshotUrls: 'https://i.gkd.li/i/13597068',
@@ -232,7 +232,7 @@ export default defineGkdApp({
       key: 4,
       name: '分段广告-"下载页"卡片广告',
       desc: '需选二次弹窗关闭原因',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -274,7 +274,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-搜索页面顶部广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
       rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
@@ -283,7 +283,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -293,7 +293,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-会员续费广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -333,7 +333,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
             '[((text$="领取" || text^="立即") && text.length<5) || text^="此云盘为您的私人云盘"] <n * > [vid="close"]',
@@ -350,7 +350,7 @@ export default defineGkdApp({
       key: 13,
       name: '权限提示-通知权限',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

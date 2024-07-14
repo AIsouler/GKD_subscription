@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.realme.securitycheck.SecurityCheckActivity',
           matches: '[vid="ad_contain"] >5 [vid="close"][clickable=true]',
           exampleUrls:

@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.hihonor.android.totemweather.WeatherHome',
           matches: '[vid="ad_cancel"][visibleToUser=true]',
           exampleUrls:

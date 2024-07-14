@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:
@@ -24,7 +24,7 @@ export default defineGkdApp({
       name: '局部广告-悬浮窗广告',
       desc: '关闭广告悬浮窗',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/img_operation_close"]',
@@ -39,7 +39,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="com.baidu.youavideo:id/tv_next_time"]',
@@ -52,7 +52,7 @@ export default defineGkdApp({
       name: '全屏广告-会员充值提示',
       desc: '点击x关闭充值提示',
       activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches:
@@ -65,7 +65,7 @@ export default defineGkdApp({
       key: 6,
       name: '全屏广告-弹窗广告',
       desc: '点击x关闭广告提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.baidu.youavideo.home.view.HomeActivity',
         'com.baidu.youavideo.preview.ui.hometimeline.TimelinePreviewActivity',
@@ -97,7 +97,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13413819',
@@ -106,7 +106,7 @@ export default defineGkdApp({
       key: 8,
       name: '局部广告-照片页底部浮窗广告',
       activityIds: 'com.baidu.youavideo.home.view.HomeActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13711475',
@@ -114,7 +114,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '局部广告-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       rules: '[vid="riv_banner"] < * > [vid="iv_close"][visibleToUser=true]',
       snapshotUrls: [
         'https://i.gkd.li/i/13874124',

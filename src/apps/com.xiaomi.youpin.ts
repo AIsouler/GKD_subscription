@@ -38,7 +38,7 @@ export default defineGkdApp({
       name: '局部广告-主页贴片广告',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xiaomi.youpin.activity.YouPinMainTabActivity',
           matches: '[vid="iv_float_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15879481',

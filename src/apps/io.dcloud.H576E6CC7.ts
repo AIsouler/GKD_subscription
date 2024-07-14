@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yupao.entry.MainActivity',
           matches: '[vid="ad_close"]',
           exampleUrls:
@@ -28,7 +28,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yupao.entry.MainActivity',
           matches:
             'ImageView < @FrameLayout <3 FrameLayout <2 FrameLayout - FrameLayout >2 [text="摇动或点击了解更多"]',
@@ -44,7 +44,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yupao.entry.MainActivity',
           matches: '[vid="close"]',
           exampleUrls:

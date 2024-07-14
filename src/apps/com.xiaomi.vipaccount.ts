@@ -32,7 +32,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-公告板弹窗',
       activityIds: 'com.xiaomi.vipaccount.ui.home.page.HomeFrameActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '[desc="公告版弹窗"] +2 [id="com.xiaomi.vipaccount:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/13400617',
     },

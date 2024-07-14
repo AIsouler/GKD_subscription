@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-评论区上方卡片广告',
       desc: '点击X',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds:

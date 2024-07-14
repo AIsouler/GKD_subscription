@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -28,7 +28,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知/链接蓝牙附件设备',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.enflick.android.TextNow.activities.MainActivity',

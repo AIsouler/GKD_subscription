@@ -18,7 +18,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches: '@[vid="close_btn"] <n * > [text="朋友推荐"]',
           snapshotUrls: [
@@ -34,7 +34,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches:
             '@ImageView[clickable=true] - ViewGroup[childCount=3] <n * >n [text*="红包"]',
@@ -53,7 +53,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches: '[vid="close_icon"][visibleToUser=true]',
           exampleUrls:

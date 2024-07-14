@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '全屏广告-弹窗广告',
       desc: '点击右上角x',
       activityIds: 'com.zhl.bmi.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         '@ImageView < FrameLayout[childCount=1] <(2,3) FrameLayout <(1,2) FrameLayout < FrameLayout < [id="android:id/content"]',
       ],

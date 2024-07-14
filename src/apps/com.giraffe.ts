@@ -11,7 +11,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       matchTime: 10000,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[id="com.giraffe:id/iv_close"]',

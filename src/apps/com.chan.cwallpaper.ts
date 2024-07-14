@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[vid="activate_button"]',
       snapshotUrls: 'https://i.gkd.li/i/14293734',
     },
@@ -20,7 +20,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.chan.cwallpaper.module.main.MainActivity',
           matches: '[vid="ivClose"]',
           exampleUrls:

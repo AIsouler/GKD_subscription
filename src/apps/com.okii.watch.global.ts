@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.okii.watch.global:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13630943',
     },
@@ -20,7 +20,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: {
         activityIds: 'com.xtc.widget.phone.popup.activity.CustomActivity13',
         matches: '[id="com.okii.watch.global:id/photo_sensitive_close"]',

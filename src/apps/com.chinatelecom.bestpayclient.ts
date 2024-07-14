@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -22,7 +22,7 @@ export default defineGkdApp({
           key: 0,
           name: '权益页',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             'Image < @View[clickable=true][index=1] <<n Dialog <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13402692',
@@ -31,7 +31,7 @@ export default defineGkdApp({
           key: 1,
           name: '首页1',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="iv_dialog_close_one"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13455790',
@@ -42,7 +42,7 @@ export default defineGkdApp({
           key: 2,
           name: '首页2',
           activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[text="甜橙信用卡"] >2  View[childCount=2] > @Image[clickable=true][text!=null] <<n [id="com.chinatelecom.bestpayclient:id/h5_pc_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13626324',
@@ -51,7 +51,7 @@ export default defineGkdApp({
           key: 3,
           name: '借贷页',
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@View[clickable=true][text=""] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13455929',
@@ -86,7 +86,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           matches: '[vid="iv_market_close"]',
           exampleUrls:

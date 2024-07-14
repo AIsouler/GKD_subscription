@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '更新提示-版本升级弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

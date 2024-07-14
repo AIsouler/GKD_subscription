@@ -30,7 +30,7 @@ export default defineGkdApp({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '@[vid="update_cancel"] + [vid="go_to_update"]',
       snapshotUrls: 'https://i.gkd.li/i/14292875',
     },

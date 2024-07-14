@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -58,7 +58,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.androlua.LuaActivity',
           matches: '[text="我已知晓"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13852430',
@@ -71,7 +71,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.androlua.LuaActivity',
           matches:
             '@FrameLayout[childCount=1] <3 FrameLayout[childCount=3] +2 * >2 [text="了解更多"]',
@@ -112,7 +112,7 @@ export default defineGkdApp({
       key: 4,
       name: '通知提示-公告弹窗',
       desc: '点击[不再提示]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

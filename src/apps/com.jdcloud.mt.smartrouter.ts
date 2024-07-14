@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[vid="iv_close"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/26521f31-ee9b-4bab-8275-fab75a76c96e',

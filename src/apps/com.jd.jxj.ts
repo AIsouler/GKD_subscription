@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.jd.jxj.modules.main.SlidingTabActivity',
           matches: '[vid="popup_close_imgid"]',
           exampleUrls:

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -32,7 +32,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -50,7 +50,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['net.csdn.csdnplus.activity.MainActivity'],
       rules: [
         {
@@ -79,14 +79,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
       snapshotUrls: 'https://i.gkd.li/i/13251085',
     },
     {
       key: 10,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -116,7 +116,7 @@ export default defineGkdApp({
         {
           preKeys: 0,
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'net.csdn.csdnplus.mvvm.ui.activity.BlogDetailActivity',
           matches: '@LinearLayout[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: [

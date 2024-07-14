@@ -11,7 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.guodongbaohe.app.activity.AdvertisementTwoActivity',
       rules: 'LinearLayout[id="com.guodongbaohe.app:id/close_dialog_lv"]',
       snapshotUrls: 'https://i.gkd.li/i/13577877',

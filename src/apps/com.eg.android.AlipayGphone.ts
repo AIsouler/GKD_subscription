@@ -17,7 +17,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.alipay.android.msp.ui.views.MspContainerActivity',
             'com.alipay.android.msp.ui.views.MspUniRenderActivity',
@@ -33,7 +33,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
             '[text*="花呗服务"]',
@@ -49,7 +49,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
@@ -61,7 +61,7 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -83,7 +83,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示-版本更新弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -117,7 +117,7 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-设置支付宝小组件',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules: [
         {
@@ -146,7 +146,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-支付后自动点击完成',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
@@ -175,7 +175,7 @@ export default defineGkdApp({
       desc: '点击"30天不再提醒"',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: ['[text="同意协议并开通"]', '[text="30天不再提醒"]'],
           exampleUrls:
@@ -191,7 +191,7 @@ export default defineGkdApp({
       key: 16,
       name: '分段广告-扫码乘车后出现的广告',
       desc: '点击[展开更多]-点击[对该内容不感兴趣]',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.alipay.android.phone.wallet.aptrip.ui.activity.result.ResultPageActivityV2',
       rules: [
@@ -223,7 +223,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: '@[checked=true] < * - [text$="免密支付"]',
           exampleUrls:
@@ -239,7 +239,7 @@ export default defineGkdApp({
       key: 19,
       name: '分段广告-服务消息页面-卡片广告',
       desc: '点击[关闭]-点击[不感兴趣]',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.alipay.android.phone.messageboxapp.ui.MsgBoxTabActivity',
       rules: [
@@ -266,7 +266,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches:
             '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
@@ -280,7 +280,7 @@ export default defineGkdApp({
       key: 21,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -317,7 +317,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverTransActivity$Main',
           matches:
@@ -334,7 +334,7 @@ export default defineGkdApp({
       desc: '点击[放弃升级，直接付款]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches: '@[clickable=true] >2 [text="放弃升级，直接付款"]',

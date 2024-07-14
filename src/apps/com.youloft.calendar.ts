@@ -12,7 +12,7 @@ export default defineGkdApp({
           key: 0,
           name: '万年历页面-右侧悬浮广告',
           activityIds: 'com.youloft.calendar.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.youloft.calendar:id/ad_iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13348416',
         },

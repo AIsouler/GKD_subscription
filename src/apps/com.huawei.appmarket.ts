@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -24,7 +24,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '@[text="以后再说"] + [text="立即更新"]',
       snapshotUrls: 'https://i.gkd.li/i/13228520',
     },
@@ -34,7 +34,7 @@ export default defineGkdApp({
       desc: '点击"知道了"',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: 'ScrollView >2 [text="知道了"]',
@@ -47,7 +47,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '功能类-应用更新页面-点击[查看更多]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -65,7 +65,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-热门应用推荐弹窗',
       desc: '点击[直接进入]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -85,7 +85,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.huawei.appmarket.MarketActivity',
           matches: '[vid="close_icon"]',
           exampleUrls:

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 3,
@@ -47,14 +47,14 @@ export default defineGkdApp({
         {
           key: 0,
           name: '首页特惠广告',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.baidu.netdisk:id/banner_item_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12706544',
         },
         {
           key: 1,
           name: '首页热门广告',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.baidu.netdisk:id/vf_content"] + [id="com.baidu.netdisk:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/12706544',
@@ -76,7 +76,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="立即更新"] -2 [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/i/13069049）
@@ -89,14 +89,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]', //单独使用ID会导致误触（例如删除确认https://i.gkd.li/i/13069049）
       snapshotUrls: 'https://i.gkd.li/i/12923936',
     },
     {
       key: 9,
       name: '评价提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="view_score_style"] > [text="以后再说"]',

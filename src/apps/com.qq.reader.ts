@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
@@ -23,7 +23,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[id="com.qq.reader:id/tv_i_know"]',
@@ -35,7 +35,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.qq.reader.activity.MainActivity',
           matches: '[id="com.qq.reader:id/operating_activity_close"]',
           exampleUrls:
@@ -49,7 +49,7 @@ export default defineGkdApp({
       name: '更新提示-内测邀请弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[vid="upgrade_dialog_close_btn"][clickable=true]',
@@ -63,7 +63,7 @@ export default defineGkdApp({
       key: 5,
       name: '分段广告-阅读页面广告',
       desc: '点击关闭-点击[关闭本条广告]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.qq.reader.activity.ReaderPageActivity',
       rules: [
         {

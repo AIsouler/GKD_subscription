@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-自动安装应用',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -39,7 +39,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '点击[安装]',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.android.packageinstaller.DeleteStagedFileOnResult',
           matches: '[vid="confirm_bottom_button_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/14228348',
@@ -47,14 +47,14 @@ export default defineGkdApp({
         {
           key: 3,
           name: '勾选[已了解此应用未经检测，可能存在风险]',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
           matches: '[vid="checkbox"][checked=false]',
           snapshotUrls: 'https://i.gkd.li/i/14595443',
         },
         {
           key: 4,
-          quickFind: true,
+          fastQuery: true,
           position: {
             left: 'width * 0.7185',
             top: 'width * 0.1157',

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -60,7 +60,7 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-邮件列表广告',
       activityIds: ['com.netease.mail.biz.main.MainITabActivity'],
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

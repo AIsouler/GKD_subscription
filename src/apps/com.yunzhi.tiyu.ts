@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           exampleUrls:
@@ -58,7 +58,7 @@ export default defineGkdApp({
           preKeys: 0,
           key: 1,
           name: '点击[不感兴趣]',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yunzhi.tiyu.module.MainActivity',
           matches: '@[clickable=true] > [text="不感兴趣"]',
           exampleUrls:

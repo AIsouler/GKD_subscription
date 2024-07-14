@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '播放列表-右侧悬浮广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'bubei.tingshu.listen.book.detail.activity.DetailActivity',
           matches: '[id="bubei.tingshu:id/closeIcon"][desc="关闭"]',
@@ -25,7 +25,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="发现新版本"] +2 * > [text="暂不升级"]',
       snapshotUrls: 'https://i.gkd.li/i/13545953',
     },

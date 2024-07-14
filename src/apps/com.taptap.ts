@@ -37,7 +37,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -54,7 +54,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '青少年模式-首页顶部横幅提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text*="青少年模式"] + [vid="iv_close"]',

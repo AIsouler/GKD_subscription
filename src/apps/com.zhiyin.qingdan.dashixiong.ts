@@ -13,7 +13,7 @@ export default defineGkdApp({
           key: 0,
           name: '快手广告-1',
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@ImageView <n ViewGroup -2 ViewGroup > ViewGroup > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12843281',
@@ -52,7 +52,7 @@ export default defineGkdApp({
           key: 5,
           name: '字节广告',
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '@Image < View +n View > View > View > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12843323',
         },
@@ -68,7 +68,7 @@ export default defineGkdApp({
       key: 10,
       name: '通知提示-公告弹窗',
       desc: '点击[我知道了]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -81,7 +81,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches:
             'WebView[text="快手"] >3 View[childCount=5] >2 @TextView[clickable=true][text=""] <<n [vid="ksad_container"]',

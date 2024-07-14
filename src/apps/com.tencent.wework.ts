@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           name: '点击别人发的红包',
           activityIds:
             'com.tencent.wework.msg.controller.ExternalContactMessageListActivity',

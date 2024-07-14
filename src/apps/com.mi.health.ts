@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.mi.health:id/nextView"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13258813',
     },
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.xiaomi.fitness.main.MainActivity',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="开启后台无限制"] + [id="com.mi.health:id/close_icon"]',
       snapshotUrls: 'https://i.gkd.li/i/13495035',
     },
@@ -31,7 +31,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.xiaomi.fitness.main.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.mi.health:id/cardview"] + [id="com.mi.health:id/dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13537836',
@@ -44,7 +44,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           matches: '[text^="发现新版本"] < * + * >n [text="放弃更新"]',

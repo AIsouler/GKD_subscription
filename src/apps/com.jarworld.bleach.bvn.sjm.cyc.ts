@@ -14,7 +14,7 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.jarworld.bleach.bvn.sjm.cyc.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13626949',
         },

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -17,7 +17,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-浮窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.mem.life.ui.home.HomeActivity',
       rules: '[id="com.mem.MacaoLife:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/13350685',

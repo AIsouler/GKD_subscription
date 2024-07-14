@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-截屏分享',
       desc: '关闭截屏时app弹出的分享弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.shizhuang.duapp.modules.product_detail.detailv4.ui.ProductDetailActivityV4',
       rules:
