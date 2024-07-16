@@ -189,6 +189,7 @@ export default defineGkdApp({
           activityIds: [
             'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
             'com.netease.cloudmusic.activity.MainActivity',
+            '.activity.PlayListActivity',
           ],
           matches: ['[text="支付宝"]', '[text^="确认协议并"]'],
           snapshotUrls: [
@@ -200,6 +201,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13391498',
             'https://i.gkd.li/i/14045917',
             'https://i.gkd.li/i/14926722',
+            'https://i.gkd.li/i/16242200',
           ],
         },
         {
