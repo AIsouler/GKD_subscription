@@ -52,5 +52,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-好友推荐弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches: '@ImageView[clickable=true] - [text="关注你的好友"]',
+          exampleUrls: 'https://e.gkd.li/32069d2d-032c-4278-9ead-a48a464ecdd0',
+          snapshotUrls: 'https://i.gkd.li/i/16247893',
+        },
+      ],
+    },
   ],
 });
