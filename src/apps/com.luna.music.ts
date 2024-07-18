@@ -73,6 +73,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13613296', // 避免在此页面误触
           ],
         },
+        {
+          key: 2,
+          activityIds: 'com.luna.biz.main.main.MainActivity',
+          matches:
+            '@LynxFlattenUI[clickable=true] -2 FlattenUIText[text="立即抢购"]',
+          snapshotUrls: 'https://i.gkd.li/i/16278152',
+        },
       ],
     },
     {
