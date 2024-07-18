@@ -55,27 +55,21 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          name: '底部半屏弹窗',
           action: 'back', // 使用点击方式有概率无效
-          matches: 'FlattenUIText[text="看视频免费听"]',
+          matches: 'FlattenUIText[text="开会员听整月" || text="购买汽水会员"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
             'https://i.gkd.li/i/13660652',
             'https://i.gkd.li/i/13533797',
-            'https://i.gkd.li/i/13613296', // 避免在此页面误触
-          ],
-        },
-        {
-          key: 1,
-          action: 'back', // 使用点击方式有概率无效
-          matches: 'FlattenUIText[text="当前已享"]',
-          snapshotUrls: [
             'https://i.gkd.li/i/14767233',
+            'https://i.gkd.li/i/16280954',
             'https://i.gkd.li/i/13613296', // 避免在此页面误触
           ],
         },
         {
           key: 2,
-          activityIds: 'com.luna.biz.main.main.MainActivity',
+          name: '全屏弹窗',
           matches:
             '@LynxFlattenUI[clickable=true] -2 FlattenUIText[text="立即抢购"]',
           snapshotUrls: 'https://i.gkd.li/i/16278152',
