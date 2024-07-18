@@ -37,6 +37,7 @@ export default defineGkdApp({
       name: '分段广告-信息流广告',
       desc: '出现在主页,搜索页',
       fastQuery: true,
+      forcedTime: 10000,
       activityIds: [
         'com.google.android.material.bottomsheet.BottomSheetDialog',
         'com.weico.international.activity.MainFragmentActivity',
