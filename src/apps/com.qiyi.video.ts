@@ -34,12 +34,20 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-我的页面顶部广告',
+      name: '局部广告-顶部卡片广告',
       fastQuery: true,
-      activityIds: 'org.qiyi.android.video.MainActivity',
-      snapshotUrls: 'https://i.gkd.li/i/12495050',
       rules: [
-        '@[id="com.qiyi.video:id/unused_res_a"][clickable=true] > [id="com.qiyi.video:id/close"]',
+        {
+          activityIds: [
+            'org.qiyi.android.video.MainActivity',
+            'org.qiyi.video.PhoneCloudRecordActivity',
+          ],
+          matches: '@[vid="unused_res_a"][clickable=true] > [vid="close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12495050',
+            'https://i.gkd.li/i/16301287',
+          ],
+        },
       ],
     },
     {
