@@ -79,11 +79,12 @@ export default defineGkdApp({
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
           ],
-          matches: ['[text="取消安装"]', '[text="继续安装"]'],
+          matches: '[text="继续安装"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12818034',
             'https://i.gkd.li/i/12818054',
             'https://i.gkd.li/i/12889120',
+            'https://i.gkd.li/i/16322775',
           ],
         },
         {
