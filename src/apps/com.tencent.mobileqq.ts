@@ -445,7 +445,8 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          matches: '@ImageView[clickable=true] <n * > [text*="版本更新" || text*="有新版本"]',
+          matches:
+            '@ImageView[clickable=true] <n * > [text*="版本更新" || text*="有新版本"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13255493', //desc值为null快照
             'https://i.gkd.li/i/13843140',
