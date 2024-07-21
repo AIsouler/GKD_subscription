@@ -41,9 +41,26 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          name: '快手广告SDK-局部广告',
           matches: 'ImageView[vid="nativeAdClose"]',
           activityIds: 'com.baiji.jianshu.MainActivity',
           snapshotUrls: 'https://i.gkd.li/i/16201541',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      rules: [
+        {
+          name: '腾讯广告SDK-全屏弹窗',
+          matches:
+            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16324561',
+            'https://i.gkd.li/i/16324634',
+          ],
         },
       ],
     },
