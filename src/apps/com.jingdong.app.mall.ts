@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: '京东',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          excludeActivityIds: 'com.jd.lib.search.view.Activity.SearchActivity',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16323111',
+            'https://i.gkd.li/i/16323115', // 防止误触
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '局部广告-购物车页面砸金蛋',
       desc: '点击关闭',
