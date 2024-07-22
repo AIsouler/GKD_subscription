@@ -187,7 +187,7 @@ export default defineGkdApp({
           key: 2,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
-            '[text*="花呗" && text*="升级"]',
+            '[text*="花呗升级" || text*="花呗服务"]',
             '@[clickable=true] >n [text="暂不升级，继续付款" || text="关闭"]',
           ],
           snapshotUrls: [
