@@ -11,9 +11,12 @@ export default defineGkdApp({
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules:
-        '[vid="tv_next"][text="下一条"] <<n LinearLayout - [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14141561',
+      rules: [
+        {
+          matches: ['[text="下一条"]', '[vid="iv_close"]'],
+          snapshotUrls: 'https://i.gkd.li/i/14141561',
+        },
+      ],
     },
   ],
 });

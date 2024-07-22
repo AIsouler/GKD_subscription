@@ -174,7 +174,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '@[clickable=true] > [text="Not now"] <<n [vid="half_cover_recycler_view_holder"]',
+            '@[clickable=true] > [visibleToUser=true][text="Not now"] <<n [vid="half_cover_recycler_view_holder"]',
           snapshotUrls: 'https://i.gkd.li/i/13930126',
         },
       ],

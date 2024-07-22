@@ -52,7 +52,7 @@ export default defineGkdApp({
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
           matches:
-            '[text="广告"] < * > @[text=""][clickable=true][index=1] <<n [vid="contentWebView"]',
+            '[text="广告"] < * > @[clickable=true][text=""][index=1] <<n [vid="contentWebView"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13635579',
             'https://i.gkd.li/i/15477470',

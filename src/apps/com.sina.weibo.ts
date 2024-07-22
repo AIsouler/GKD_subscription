@@ -113,7 +113,7 @@ export default defineGkdApp({
           key: 1,
           activityIds: 'com.sina.weibo.feed.MPDialogActivity',
           matches:
-            'View[childCount=2] > @TextView[clickable=true] - View >n [text="元"] <<n [id="com.sina.weibo:id/container"]',
+            'View[childCount=2] > @TextView[clickable=true] - View >n [visibleToUser=true][text="元"] <<n [id="com.sina.weibo:id/container"]',
           snapshotUrls: 'https://i.gkd.li/i/13670266',
         },
         {

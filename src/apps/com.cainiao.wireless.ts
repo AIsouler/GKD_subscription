@@ -31,7 +31,7 @@ export default defineGkdApp({
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches:
-            'View[clickable=true] > @[text="关闭"] + [text="活动"] <<n [vid="browser_fragment_layout"]',
+            'View[clickable=true] > @[text="关闭"] + [visibleToUser=true][text="活动"] <<n [vid="browser_fragment_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/14033859',
         },
         {
@@ -48,7 +48,7 @@ export default defineGkdApp({
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches:
-            '@[text="关闭"] + [text="活动"] <<n [vid="browser_fragment_layout"]',
+            '@[text="关闭"] + [visibleToUser=true][text="活动"] <<n [vid="browser_fragment_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/14033859',
         },
         {

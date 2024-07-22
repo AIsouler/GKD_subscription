@@ -65,10 +65,10 @@ export default defineGkdApp({
           actionDelay: 350, //防误触
           matches: [
             '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after"]',
-            '[text="反馈"] <<n View + View[childCount=1]',
-            '[text*="跳过" && text.length<=6] <2 @View -(3-n) View < View',
-            '[text="反馈"] -n @View[index<=1] > Image[text.length=0]',
-            '[text="反馈"] <<n View - View[childCount=1]',
+            '[visibleToUser=true][text="反馈"] <<n View + View[childCount=1]',
+            '[visibleToUser=true][text*="跳过" && text.length<=6] <2 @View -(3-n) View < View',
+            '[visibleToUser=true][text="反馈"] -n @View[index<=1] > Image[text.length=0]',
+            '[visibleToUser=true][text="反馈"] <<n View - View[childCount=1]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13830798', //规则2

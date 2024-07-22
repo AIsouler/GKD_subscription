@@ -20,7 +20,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       activityIds: 'com.taobao.idlefish.maincontainer.activity.MainActivity',
       rules:
-        '@Button[text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',
+        '@Button[visibleToUser=true][text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',
       snapshotUrls: 'https://i.gkd.li/i/13620277',
     },
     {

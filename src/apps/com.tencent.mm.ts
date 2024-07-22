@@ -491,7 +491,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
           matches:
-            '@TextView[clickable=true] + * > [text^="使用 APP"] <<n [id="android:id/content"]',
+            '@TextView[clickable=true] + * > [visibleToUser=true][text^="使用 APP"] <<n [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/2228f99e-e0a1-4915-864f-d60e3d8580a6',
           snapshotUrls: 'https://i.gkd.li/i/14533286',

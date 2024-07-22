@@ -24,7 +24,8 @@ export default defineGkdApp({
           key: 1,
           activityIds:
             'cn.runningquotient.rq.page.common_page.CommonContainerActivity',
-          matches: '@[text="我知道了"] <<n [vid="common_h5_container"]',
+          matches:
+            '@[visibleToUser=true][text="我知道了"] <<n [vid="common_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/i/16105938',
         },
         {

@@ -113,7 +113,8 @@ export default defineGkdApp({
           action: 'clickCenter',
           activityIds:
             'com.zhihu.android.creatorcenter.CreatorCenterHostActivity',
-          matches: 'View[text="关闭"] > @[text="关闭"] <<n [vid="webview_bg"]',
+          matches:
+            'View[text="关闭"] > @[visibleToUser=true][text="关闭"] <<n [vid="webview_bg"]',
           snapshotUrls: 'https://i.gkd.li/i/14955183',
         },
       ],
@@ -158,7 +159,7 @@ export default defineGkdApp({
             'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
           ],
           matches:
-            '@[text="×"][visibleToUser=true] <n * > [text*="广告"] <<n [vid="web_frame"]',
+            '@[text="×"][visibleToUser=true] <n * > [visibleToUser=true][text*="广告"] <<n [vid="web_frame"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14220104',
             'https://i.gkd.li/i/14421277',
@@ -183,7 +184,7 @@ export default defineGkdApp({
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
           ],
           matches:
-            '@Image[clickable=true][visibleToUser=true] <2 * > [text$="广告"] <<n [vid="view_content"]',
+            '@Image[clickable=true][visibleToUser=true] <2 * > [visibleToUser=true][text$="广告"] <<n [vid="view_content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14391614',
             'https://i.gkd.li/i/15282584',
@@ -214,7 +215,7 @@ export default defineGkdApp({
           activityIds:
             'com.zhihu.android.mix.activity.ContentMixProfileActivity',
           matches:
-            '@[text="×"][visibleToUser=true] <n * > [text="查看详情"] <<n [vid="view_content"]',
+            '@[text="×"][visibleToUser=true] <n * > [visibleToUser=true][text="查看详情"] <<n [vid="view_content"]',
           snapshotUrls: 'https://i.gkd.li/i/15285359',
         },
       ],

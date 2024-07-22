@@ -29,7 +29,7 @@ export default defineGkdApp({
           key: 0,
           name: '信息流广告',
           fastQuery: true,
-          matches: '[vid="time_line_type"] <<n * > * > [vid="rl_down"]',
+          matches: '@[vid="rl_down"] <<n [vid="tt_ad_content"]',
           snapshotUrls: 'https://i.gkd.li/i/13852023',
         },
       ],
