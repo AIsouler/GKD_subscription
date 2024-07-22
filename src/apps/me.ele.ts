@@ -138,8 +138,11 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
       rules:
-        '@ViewGroup[childCount=0][clickable=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
-      snapshotUrls: 'https://i.gkd.li/i/13710588',
+        '@ViewGroup[childCount=0][clickable=true][visibleToUser=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/13710588',
+        'https://i.gkd.li/i/16326917', // 防止误触
+      ],
     },
     {
       key: 8,
