@@ -11,11 +11,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/50a53595-1cd9-4dc0-ab13-f79a5e9a702c',
           snapshotUrls: 'https://i.gkd.li/i/16322789',
+        },
+        {
+          key: 1,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/16333782',
         },
       ],
     },
