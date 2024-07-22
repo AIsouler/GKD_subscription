@@ -7,14 +7,17 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      matchRoot: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          fastQuery: true,
           activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
-          matches:
-            '@Button[text="关闭"] <<n [id="com.xiaomi.market:id/webview"]',
-          snapshotUrls: 'https://i.gkd.li/i/13248808',
+          matches: '@Button[clickable=true][text="关闭"] <<n [vid="webview"]',
+          snapshotUrls: 'https://i.gkd.li/i/16323123',
         },
       ],
     },
