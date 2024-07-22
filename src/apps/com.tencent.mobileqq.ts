@@ -637,7 +637,7 @@ export default defineGkdApp({
           activityIds:
             'com.tencent.mobileqq.activity.TeamWorkDocEditBrowserActivity',
           matches:
-            '@TextView[clickable=true] + * > [text^="使用 APP"] <<n [vid="webview"]',
+            '@TextView[clickable=true] + * > [visibleToUser=true][text^="使用 APP"] <<n [vid="webview"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6efc2dfd-79f3-43b5-bf20-f59a88295ddb',
           snapshotUrls: 'https://i.gkd.li/i/14188983',

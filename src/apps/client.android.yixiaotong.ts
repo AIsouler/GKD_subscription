@@ -97,7 +97,7 @@ export default defineGkdApp({
       activityIds:
         'client.android.yixiaotong.v3.ui.appcontrol.bath.BathDetailActivity',
       rules:
-        '@TextView[clickable=true][text=""] + View [text="广告"] <<n [id="client.android.yixiaotong:id/ksad_container"]',
+        '@TextView[clickable=true][text=""] + View [visibleToUser=true][text="广告"] <<n [id="client.android.yixiaotong:id/ksad_container"]',
       snapshotUrls: 'https://i.gkd.li/i/13448963',
     },
   ],

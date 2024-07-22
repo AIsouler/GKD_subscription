@@ -59,7 +59,7 @@ export default defineGkdApp({
           key: 1,
           name: '点击不感兴趣',
           matches:
-            '@View[clickable=true] > [text="不感兴趣"] <<n [vid="design_bottom_sheet"]',
+            '@View[clickable=true] > [visibleToUser=true][text="不感兴趣"] <<n [vid="design_bottom_sheet"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12505755',
             'https://i.gkd.li/i/12505764',

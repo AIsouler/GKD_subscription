@@ -27,7 +27,7 @@ export default defineGkdApp({
           preKeys: 0,
           name: '点击[不感兴趣]',
           matches:
-            '@View[clickable=true][childCount=1] > TextView[text="不感兴趣"||text$="interest"] <<n [vid="design_bottom_sheet"]',
+            '@View[clickable=true][childCount=1] > TextView[visibleToUser=true][text="不感兴趣"||text$="interest"] <<n [vid="design_bottom_sheet"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12738132',
             'https://i.gkd.li/i/13727657',

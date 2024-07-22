@@ -22,7 +22,7 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '@View - * > [text="开启并订阅通知"] <<n [id="com.jd.jrapp:id/webview"]',
+            '@View - * > [visibleToUser=true][text="开启并订阅通知"] <<n [id="com.jd.jrapp:id/webview"]',
           snapshotUrls: 'https://i.gkd.li/i/13255656',
         },
       ],

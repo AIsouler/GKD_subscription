@@ -24,7 +24,7 @@ export default defineGkdApp({
           activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           fastQuery: true,
           matches:
-            'Image < @View[clickable=true][index=1] <<n Dialog <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
+            'Dialog >3 View[childCount=2] > @View[clickable=true] > Image[childCount=0] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13402692',
         },
         {

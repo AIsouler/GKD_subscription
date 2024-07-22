@@ -19,7 +19,7 @@ export default defineGkdApp({
             'com.sfexpress.sfim.microservice.commonservice.ui.MicroAppContainerActivity',
             'com.sfexpress.sfim.sdkuikit.widget.dialog.NoticeDialog',
           ],
-          matches: '@[text="登录"] <<n [vid="flContainer"]',
+          matches: '@[visibleToUser=true][text="登录"] <<n [vid="flContainer"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12745239',
             'https://i.gkd.li/i/12745240',

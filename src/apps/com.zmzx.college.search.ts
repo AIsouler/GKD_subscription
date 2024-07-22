@@ -178,7 +178,8 @@ export default defineGkdApp({
           action: 'back',
           activityIds:
             'com.zmzx.college.search.activity.common.CommonCacheHybridActivity',
-          matches: '[text="邀好友得开学好礼"] <<n [vid="webview_root_layout"]',
+          matches:
+            '[visibleToUser=true][text="邀好友得开学好礼"] <<n [vid="webview_root_layout"]',
           exampleUrls:
             'https://m.gkd.li/57941037/d625fcaa-4cf3-4c92-9b27-10542b0262bb',
           snapshotUrls: 'https://i.gkd.li/i/14555042',

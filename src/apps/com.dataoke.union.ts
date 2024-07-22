@@ -12,9 +12,12 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[text="取消"] <<n [id="com.dataoke.union:id/parentPanel"] [text^="你还没有打开通知哦"]',
-      snapshotUrls: 'https://i.gkd.li/i/13446826',
+      rules: [
+        {
+          matches: ['[text^="你还没有打开通知哦"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13446826',
+        },
+      ],
     },
   ],
 });
