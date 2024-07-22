@@ -13,11 +13,11 @@ body:
       options:
         - label: 我确保提供 误触/不执行规则 的界面的快照, 否则我同意维护者直接关闭issue
           required: true
-        - label: 我确保使用的是[最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest)
+        - label: 我确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest)和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
           required: true
-        - label: 检查这个问题是否属于[本项目维护的规则](https://github.com/AIsouler/GKD_subscription) 导致的
+        - label: 检查这个问题是否属于 [本项目维护的规则](https://github.com/AIsouler/GKD_subscription)导致的
           required: true
-        - label: 我确保已阅读[#120](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
+        - label: 我确保已阅读 [#120](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
           required: true
   - type: textarea
     id: feature-description
