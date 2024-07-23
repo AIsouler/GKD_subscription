@@ -24,7 +24,7 @@ export default defineGkdSubscription({
   version: 0,
   author: 'AIsouler',
   checkUpdateUrl: './AIsouler_gkd.version.json5',
-  supportUri: 'https://github.com/AIsouler/GKD_subscription',
+  supportUri: 'https://github.com/AIsouler/GKD_subscription/issues/new/choose',
   categories,
   globalGroups,
   apps: rawApps,
