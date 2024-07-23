@@ -15,7 +15,7 @@ body:
           required: true
         - label: 我确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
           required: true
-        - label: 我确保已阅读 [#120](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
+        - label: 我确保已阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
           required: true
   - type: textarea
     id: feature-description
