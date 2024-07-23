@@ -58,10 +58,13 @@ export default defineGkdApp({
           name: '红包弹窗3',
           fastQuery: true,
           matches:
-            '@ViewGroup[index=2][clickable=true] <3 ViewGroup < ViewGroup < ViewGroup[vid="id_magex_mist_view"]',
+            '@ViewGroup[index=2][clickable=true][childCount=0] <3 ViewGroup < ViewGroup < ViewGroup[vid="id_magex_mist_view"]',
           exampleUrls:
             'https://m.gkd.li/57941037/25425b3a-309d-464d-bbb5-091715675fcd',
-          snapshotUrls: 'https://i.gkd.li/i/14472929',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14472929',
+            'https://i.gkd.li/i/16346727', // 误触 add [childCount=0]
+          ],
         },
       ],
     },
