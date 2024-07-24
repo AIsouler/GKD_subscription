@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -17,16 +18,8 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
-      name: '全屏广告-美食弹窗广告',
-      activityIds: 'com.sankuai.waimai.platform.mach.dialog.DynamicDialog',
-      rules: [
-        '@[desc="关闭"][clickable=true] > ImageView', // 1686969062508
-      ],
-    },
-    {
       key: 3,
-      name: '全屏广告-付款后弹窗广告',
+      name: '全屏广告-弹窗广告',
       activityIds:
         'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
       rules: [
@@ -42,6 +35,22 @@ export default defineGkdApp({
           matches:
             '@ImageView[clickable=true] - FrameLayout > FrameLayout > FrameLayout TextView[text="点我领取"]',
           snapshotUrls: 'https://i.gkd.li/i/13175526',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '局部广告-直播悬浮窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="正在讲解"]',
+          exampleUrls: 'https://e.gkd.li/d7119268-6710-4bf4-a46c-eaefa4105791',
+          snapshotUrls: 'https://i.gkd.li/i/16359035',
         },
       ],
     },
