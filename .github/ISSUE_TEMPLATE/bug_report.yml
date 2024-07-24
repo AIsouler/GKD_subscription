@@ -11,9 +11,9 @@ body:
       label: 一些验证
       description: 在提交问题之前，请确保您完成以下操作
       options:
-        - label: 我确保提供 误触/不执行规则 的界面的快照, 否则我同意维护者直接关闭issue
+        - label: 我确保 **提供 误触/不执行规则 的界面的快照**, 否则我同意维护者直接关闭issue
           required: true
-        - label: 我确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
+        - label: 我确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD（包括beta版）](https://github.com/gkd-kit/gkd/releases/latest)
           required: true
         - label: 检查这个问题是否属于 [本项目维护的规则](https://github.com/AIsouler/GKD_subscription) 导致的
           required: true
