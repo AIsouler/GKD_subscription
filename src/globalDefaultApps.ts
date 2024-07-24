@@ -198,6 +198,7 @@ export const openAdWhiteListAppIDs = new Set([
   'com.vivo.space', // vivo 官网
   'com.hihonor.appmarket', // 荣耀应用市场
   'com.heytap.browser', // 一加浏览器
+  'com.heytap.themestore', // oppo主题商店
 ]);
 
 // 更新提示白名单
