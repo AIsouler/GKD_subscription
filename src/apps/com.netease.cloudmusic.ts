@@ -33,7 +33,6 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           activityIds: [
-            'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
             'com.netease.cloudmusic.activity.MainActivity',
             'com.netease.cloudmusic.music.biz.voice.player.revisionV1.ProgramPlayerActivityV1',
           ],
@@ -43,7 +42,6 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/a603ceca-7e89-4b1f-9e17-508c583b32d8',
           snapshotUrls: [
-            'https://i.gkd.li/i/14277140',
             'https://i.gkd.li/i/13859634',
             'https://i.gkd.li/i/12829964',
             'https://i.gkd.li/i/12829953',
@@ -78,7 +76,6 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: [
             'com.netease.cloudmusic.module.ad.feedback.AdFeedbackBottomSheet',
-            'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
             'com.netease.cloudmusic.activity.MainActivity',
             'com.netease.cloudmusic.music.biz.voice.player.revisionV1.ProgramPlayerActivityV1',
           ],
@@ -86,7 +83,6 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12829967',
             'https://i.gkd.li/i/13859635',
-            'https://i.gkd.li/i/14277137',
             'https://i.gkd.li/i/16047089',
           ],
         },
@@ -225,7 +221,6 @@ export default defineGkdApp({
       key: 6,
       name: '更新提示',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -388,6 +383,32 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/39e34e7d-eae3-4a54-9794-97c2528d13fb',
           snapshotUrls: 'https://i.gkd.li/i/14926750',
+        },
+      ],
+    },
+    {
+      key: 16,
+      name: '分段广告-搜索页广告',
+      desc: '该规则触发时会导致输入法收起',
+      fastQuery: true,
+      activityIds:
+        'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[vid="adTagView" || vid="adTagViewNew"][clickable=true]',
+          exampleUrls: 'https://e.gkd.li/afb3fc72-7a69-489a-ac5a-7a70f5685667',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16357208',
+            'https://i.gkd.li/i/16357111',
+          ],
+        },
+        {
+          preKeys: [0],
+          key: 90,
+          matches: '[text="直接关闭"]',
+          exampleUrls: 'https://e.gkd.li/1e2b2822-01dd-455f-8991-1b746c61c07c',
+          snapshotUrls: 'https://i.gkd.li/i/16357210',
         },
       ],
     },
