@@ -549,4 +549,9 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '哈啰',
     deprecatedKeys: [11, 13, 14],
   },
+  {
+    id: 'com.sankuai.meituan.takeoutnew',
+    name: '美团外卖',
+    deprecatedKeys: [2],
+  },
 ];
