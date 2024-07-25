@@ -163,6 +163,14 @@ export default defineGkdApp({
           matches: '[text="反馈"] + @View > Image[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/i/15711106',
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.kwad.sdk.api.proxy.app.KsRewardVideoActivity',
+          matches:
+            '@[id="com.kwad.dy.sdk:id/ksad_end_close_btn"] - [text="免费获取"]',
+          snapshotUrls: 'https://i.gkd.li/i/16369203',
+        },
       ],
     },
     {
