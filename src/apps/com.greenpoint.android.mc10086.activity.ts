@@ -138,5 +138,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '权限提示-通讯录权限申请弹窗',
+      desc: '点击取消',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.cmccit.paycenter.PayCenterActivity',
+          matches: ['[text="通讯录权限申请"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/7d332325-497f-47a4-a322-729ffa5dd121',
+          snapshotUrls: 'https://i.gkd.li/i/16369235',
+        },
+      ],
+    },
   ],
 });
