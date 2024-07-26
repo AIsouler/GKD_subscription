@@ -137,6 +137,24 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13799878',
           ],
         },
+        {
+          key: 2,
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches:
+            'TextView[text="广告"] <n ViewGroup -2 ViewGroup > @ViewGroup',
+          snapshotUrls: 'https://i.gkd.li/i/12879452',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
+          matches: '[vid="close_btn"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/71c2dc44-a976-4910-8e44-26e39865406e',
+          snapshotUrls: 'https://i.gkd.li/i/16388890',
+        },
 
         // 字节广告
         {
@@ -218,13 +236,6 @@ export default defineGkdApp({
             'ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView[childCount=0]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13761275',
-        },
-        {
-          key: 2,
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches:
-            'TextView[text="广告"] <n ViewGroup -2 ViewGroup > @ViewGroup',
-          snapshotUrls: 'https://i.gkd.li/i/12879452',
         },
       ],
     },
