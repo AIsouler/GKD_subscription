@@ -137,5 +137,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 9,
+      name: '功能类-自动签到',
+      fastQuery: true,
+      activityIds: 'cn.wps.moffice.main.push.explore.PushTipsWebActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[visibleToUser=true][text="签到"] <<n [vid="push_tips_ptr_super_webview"]',
+          exampleUrls: 'https://e.gkd.li/c83fe3b0-74f2-45af-9f8d-6b70c622b424',
+          snapshotUrls: 'https://i.gkd.li/i/16382069',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches:
+            '[text="签到成功"] -2 View[childCount=1] > @Image[text!=null][childCount=0] <<n [vid="push_tips_ptr_super_webview"]',
+          exampleUrls: 'https://e.gkd.li/c8c2f3cb-9bde-4a01-8eb6-145cf668993f',
+          snapshotUrls: 'https://i.gkd.li/i/16382075',
+        },
+      ],
+    },
   ],
 });
