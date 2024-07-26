@@ -131,6 +131,13 @@ export default defineGkdApp({
           matches: '[vid="iv_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15282417',
         },
+        {
+          key: 3,
+          activityIds:
+            'com.netease.cloudmusic.music.biz.search.activity.SearchActivity',
+          matches: '[vid="adCloseIV"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/16385547',
+        },
       ],
     },
     {
