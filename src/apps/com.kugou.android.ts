@@ -40,7 +40,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          forcedTime: 5000,
+          forcedTime: 10000,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
             'ViewGroup[childCount=2] > ImageView + @FrameLayout[clickable=true] > LinearLayout > ImageView',
@@ -72,6 +72,7 @@ export default defineGkdApp({
         },
         {
           key: 4,
+          forcedTime: 10000,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
             'RelativeLayout > @RelativeLayout[clickable=true] > [desc="关闭"]',
