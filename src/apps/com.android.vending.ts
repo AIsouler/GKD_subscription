@@ -42,8 +42,16 @@ export default defineGkdApp({
         {
           key: 1,
           name: '隆重推出 Google Play Points 计划',
-          matches: '[text="以后再说"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/15335350',
+          position: {
+            left: 'width * 0.5',
+            top: 'width * 1.625',
+          },
+          activityIds: 'com.google.android.finsky.activities.MainActivity',
+          matches: '[text="隆重推出 Google Play Points 计划"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15335350',
+            'https://i.gkd.li/i/16397947',
+          ],
         },
         {
           key: 2,
