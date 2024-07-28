@@ -171,6 +171,14 @@ export default defineGkdApp({
             '@[id="com.kwad.dy.sdk:id/ksad_end_close_btn"] - [text="免费获取"]',
           snapshotUrls: 'https://i.gkd.li/i/16369203',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: 'com.kwad.sdk.api.proxy.app.KsRewardVideoActivity',
+          matches: '@ViewGroup[clickable=true] +3 ViewGroup > [text*="广告"]',
+          exampleUrls: 'https://e.gkd.li/fda39464-2b00-486b-ba47-2afca753674a',
+          snapshotUrls: 'https://i.gkd.li/i/16401930',
+        },
       ],
     },
     {
