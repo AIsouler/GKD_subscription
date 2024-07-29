@@ -32,6 +32,16 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14047969',
           ],
         },
+        {
+          key: 4,
+          position: {
+            left: 'width * 1.4975',
+            top: 'height * 0.5',
+          },
+          excludeMatches: '[text="更新"][clickable=true]',
+          matches: ['[text="要更新此应用吗？"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/16406316',
+        },
       ],
     },
     {
