@@ -37,6 +37,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
+      matchRoot: true,
       rules: [
         {
           key: 0,
