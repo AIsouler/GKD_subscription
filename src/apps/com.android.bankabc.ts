@@ -36,16 +36,20 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="upgrade_bottom"] > [vid="negativeTextView"]',
+          matches: '[vid="upgrade_checkbox"][checked=false]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14208545',
+            'https://i.gkd.li/i/16410094',
+          ],
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[vid="negativeTextView"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14208545',
         },
         {
-          key: 1,
-          matches: '[vid="upgrade_checkbox"][checked=false]',
-          snapshotUrls: 'https://i.gkd.li/i/16410094',
-        },
-        {
-          preKeys: [1],
+          preKeys: [0],
           key: 2,
           matches: '[vid="iv_negative"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16410094',
