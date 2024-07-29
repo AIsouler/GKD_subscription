@@ -34,5 +34,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '其他-安全警告弹窗',
+      desc: '点击取消',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
+          matches: ['[text^="出于安全考虑"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/e501f0cf-c531-40eb-a747-31377d35c971',
+          snapshotUrls: 'https://i.gkd.li/i/16406317',
+        },
+      ],
+    },
   ],
 });
