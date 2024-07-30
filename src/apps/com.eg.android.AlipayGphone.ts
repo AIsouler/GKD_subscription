@@ -117,15 +117,25 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-设置支付宝小组件',
       desc: '点击关闭',
-      fastQuery: true,
-      activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
             '[text="设置支付宝小组件"]',
             '@[clickable=true] > [text="关闭"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13327349',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+          matches:
+            '[text="添加会员小组件"] < View +3 View[childCount=2] > [text="近期不再提醒我"]',
+          exampleUrls: 'https://e.gkd.li/de3df4c8-6ab4-45a0-aec5-0fbdfa75e823',
+          snapshotUrls: 'https://i.gkd.li/i/16427922',
         },
       ],
     },
