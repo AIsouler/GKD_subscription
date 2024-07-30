@@ -248,6 +248,15 @@ export default defineGkdApp({
           matches: '[vid="close_img"]',
           snapshotUrls: 'https://i.gkd.li/i/14970008',
         },
+        {
+          key: 3,
+          activityIds:
+            'com.zhihu.android.mix.activity.ContentMixProfileActivity',
+          matches:
+            'View[childCount=3] > @View[clickable=true][childCount=1][text=""] > Image[childCount=0][text=""] <<n [vid="view_content"]',
+          exampleUrls: 'https://e.gkd.li/6b9afb50-47a3-4426-a157-9b170b57c616',
+          snapshotUrls: 'https://i.gkd.li/i/16422471',
+        },
       ],
     },
     {
