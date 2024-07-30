@@ -89,14 +89,27 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-VIP弹窗',
       fastQuery: true,
-      activityIds: [
-        'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
-        'com.youdao.dict.vip.activity.SecondShowNewUserSevenDayVipActivity',
-      ],
-      rules: 'ImageView[id="com.youdao.dict:id/iv_close"][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13263706',
-        'https://i.gkd.li/i/14381735',
+      rules: [
+        {
+          key: 0,
+          activityIds: [
+            'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
+            'com.youdao.dict.vip.activity.SecondShowNewUserSevenDayVipActivity',
+          ],
+          matches:
+            'ImageView[id="com.youdao.dict:id/iv_close"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13263706',
+            'https://i.gkd.li/i/14381735',
+          ],
+        },
+        {
+          key: 1,
+          activityIds: 'com.youdao.feature_ai.AiMainActivity',
+          matches: '[vid="aiv_guide_cancel"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7bfd334a-38a0-4251-966c-1df55c168425',
+          snapshotUrls: 'https://i.gkd.li/i/16426631',
+        },
       ],
     },
     {
