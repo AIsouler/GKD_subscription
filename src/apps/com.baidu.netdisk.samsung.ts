@@ -71,6 +71,23 @@ export default defineGkdApp({
             '@TextView[text=""][clickable=true] - TextView[text="去使用"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12738449',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.baidu.netdisk.ui.transfer.TransferListTabActivity',
+          matches:
+            '[vid="close_probationary_guide_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ab41b402-c4d0-439a-96f3-23029434aec4',
+          snapshotUrls: 'https://i.gkd.li/i/16423129',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.baidu.netdisk.ui.transfer.TransferListTabActivity',
+          matches: '[vid="youa_guide_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ab41b402-c4d0-439a-96f3-23029434aec4',
+          snapshotUrls: 'https://i.gkd.li/i/16423129',
+        },
       ],
     },
     {
