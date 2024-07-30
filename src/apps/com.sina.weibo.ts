@@ -366,7 +366,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 21,
+      key: 22,
       name: '功能类-超话一键签到',
       desc: '点击[一键签到]',
       rules: [
