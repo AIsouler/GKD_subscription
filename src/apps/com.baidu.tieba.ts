@@ -298,23 +298,22 @@ export default defineGkdApp({
       key: 14,
       name: '全屏广告-会员弹窗',
       desc: '点击关闭',
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
-          forcedTime: 5000,
+          forcedTime: 10000,
           activityIds: [
             'com.baidu.tieba.tblauncher.MainTabActivity',
             'com.baidu.tbadk.browser.TBWebContainerActivity',
           ],
           matches:
-            'WebView[text="会员弹窗" || text="一键签到"] >3 TextView + Image[text!=null][childCount=0][visibleToUser=true]',
+            'WebView[text="会员弹窗" || text="一键签到"] >(3,4) TextView + Image[text!=null][childCount=0][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/dd2f2a00-e9d3-47fa-986d-09ae6180d932',
           snapshotUrls: [
             'https://i.gkd.li/i/14630806',
             'https://i.gkd.li/i/15119439',
             'https://i.gkd.li/i/15119451',
+            'https://i.gkd.li/i/16426630',
           ],
         },
       ],
