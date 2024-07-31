@@ -39,9 +39,18 @@ export default defineGkdApp({
             left: 'width * 1.4975',
             top: 'height * 0.5',
           },
-          excludeMatches: '[text="更新"][clickable=true]',
-          matches: ['[text="要更新此应用吗？"]', '[text="取消"]'],
-          snapshotUrls: 'https://i.gkd.li/i/16406316',
+          excludeMatches: [
+            '[text="更新"][clickable=true]',
+            '[text="安装"][clickable=true]',
+          ],
+          matches: [
+            '[text="要更新此应用吗？" || text="要安装此应用吗？"]',
+            '[text="取消"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/16406316',
+            'https://i.gkd.li/i/16435642',
+          ],
         },
       ],
     },
