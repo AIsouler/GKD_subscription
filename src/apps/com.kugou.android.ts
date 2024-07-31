@@ -41,6 +41,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           forcedTime: 10000,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
