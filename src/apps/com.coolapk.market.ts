@@ -122,5 +122,25 @@ export default defineGkdApp({
       rules: '[text="去开启"] - [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13296465',
     },
+    {
+      key: 4,
+      name: '局部广告-[大家还下载了]应用推荐',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.view.search.SuperSearchResultActivity',
+            '.view.node.DynamicNodePageActivity',
+          ],
+          matches: '[text="大家还下载了"] + [vid="close_view"]',
+          exampleUrls: 'https://e.gkd.li/0cfa8038-dc74-46c3-9e06-998965d73711',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16448265',
+            'https://i.gkd.li/i/16448385',
+          ],
+        },
+      ],
+    },
   ],
 });
