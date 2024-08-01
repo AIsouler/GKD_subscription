@@ -30,8 +30,11 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: '[id="cn.soulapp.android:id/btn_sure"]',
-          snapshotUrls: 'https://i.gkd.li/i/12834093',
+          matches: 'TextView[text="查看青少年模式"] + TextView[text$="知道了"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12834093',
+            'https://i.gkd.li/i/16445117',
+          ],
         },
       ],
     },
