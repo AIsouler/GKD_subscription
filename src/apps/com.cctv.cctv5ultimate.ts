@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '央视体育',
   groups: [
     {
-      key: 0,
+      key: -1,
       name: '开屏广告',
       matchTime: 10000,
       actionMaximum: 1,
