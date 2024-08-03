@@ -5,6 +5,20 @@ export default defineGkdApp({
   name: '央视体育',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e7aba372-237c-4438-897c-67b6488c3aa4',
+          snapshotUrls: 'https://i.gkd.li/i/16476925',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
