@@ -24,8 +24,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches:
-            '[childCount=0][visibleToUser=true][(text.length<10&&(text*="跳过"||text*="跳過"||text*="skip"||text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || (vid*="count" && vid*="down" && vid!*="download") || desc*="跳过" || desc*="skip"]',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f96cc8d8-602e-4d96-a8f3-19088656121b',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16486468',
+            'https://i.gkd.li/i/16486469',
+          ],
         },
       ],
     },
