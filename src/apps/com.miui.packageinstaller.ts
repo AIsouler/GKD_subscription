@@ -250,7 +250,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-澎湃-自动安装/更新',
-      desc: '不完整，缺失自动点击完成部分。启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
+      desc: '启用后安装高风险应用将自动完成，请自行评估风险决定是否启用',
       fastQuery: true,
       rules: [
         // 正常安装
@@ -302,7 +302,16 @@ export default defineGkdApp({
           matches: '@[clickable=true] > [text="单次授权安装"]',
           snapshotUrls: 'https://i.gkd.li/i/14653096',
         },
-        //完成快照缺失，无法编写
+        // 完成
+        {
+          key: 5,
+          name: '点击[完成]',
+          activityIds:
+            'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
+          matches: '[text="完成"]',
+          exampleUrls: 'https://e.gkd.li/0011622b-580a-4810-81a4-b4a1181d121d',
+          snapshotUrls: 'https://i.gkd.li/i/16487274',
+        },
       ],
     },
   ],
