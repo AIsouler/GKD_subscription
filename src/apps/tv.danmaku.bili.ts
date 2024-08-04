@@ -13,8 +13,11 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/16187624',
+          matches: '[vid="count_down" || vid="skip"][visibleToUser=true]', // [text*="跳过"] 可能会误触搜索框
+          snapshotUrls: [
+            'https://i.gkd.li/i/16187624',
+            'https://i.gkd.li/i/16484445',
+          ],
         },
       ],
     },
