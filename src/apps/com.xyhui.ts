@@ -33,8 +33,9 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          matches: '[id="com.xyhui:id/ms_skipView"]',
-          snapshotUrls: 'https://i.gkd.li/i/13197417',
+          action: 'clickCenter',
+          matches: '[vid="ms_skipView"]',
+          snapshotUrls: 'https://i.gkd.li/i/16486847',
         },
       ],
     },
