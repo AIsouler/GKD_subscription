@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -14,7 +15,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           exampleUrls:
@@ -23,12 +23,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches:
-            '[childCount=0][visibleToUser=true][(text.length<10&&(text*="跳过"||text*="跳过"||text*="skip"||text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || (vid*="count" && vid*="down" && vid!*="download") || desc*="跳过" || desc*="skip"]',
+          matches: '[vid="mJumpBtn"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/28a83ffc-ba28-4d0e-8f28-b48a4a542f23',
+          snapshotUrls: 'https://i.gkd.li/i/16486457',
         },
         {
           key: 2,
-          fastQuery: true,
           position: {
             left: 'width * 0.9007',
             top: 'width * 0.1603',
@@ -56,18 +56,13 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      activityIds: [
-        'com.jingdong.app.reader.main.ui.JdMainActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
       rules: [
         {
-          matches:
-            '[id="com.jd.app.reader:id/mCardView"] + [id="com.jd.app.reader:id/mCloseBtn"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12686577',
-            'https://i.gkd.li/i/12686664', // activityId: 'com.miui.home.launcher.Launcher'
-          ],
+          fastQuery: true,
+          activityIds: 'com.jingdong.app.reader.main.ui.JdMainActivity',
+          matches: '[vid="mCloseBtn"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ac85ef54-5180-4740-b12d-608b37ad5502',
+          snapshotUrls: 'https://i.gkd.li/i/16486458',
         },
       ],
     },
