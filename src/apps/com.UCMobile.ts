@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,6 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13188653',
@@ -22,8 +22,20 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '@View[clickable=true] < RelativeLayout <2 FrameLayout < FrameLayout < FrameLayout <4 FrameLayout < [id="android:id/content"]',
+            '[id="android:id/content"] > FrameLayout[childCount=4] >3 FrameLayout[childCount=4] > RelativeLayout[childCount=1] > View[childCount=0][text=null][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13197655',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          position: {
+            left: 'width * 0.9',
+            top: 'width * 0.1676',
+          },
+          activityIds: 'com.uc.browser.InnerUCMobile',
+          matches: '[id="com.UCMobile.adn_jingdong_sdk:id/animation_view"]',
+          exampleUrls: 'https://e.gkd.li/92da64ad-5b08-4343-bec2-bb6a7e0bb92d',
+          snapshotUrls: 'https://i.gkd.li/i/16494884',
         },
       ],
     },
