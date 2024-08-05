@@ -18,5 +18,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
+          matches: '[vid="lottery_popup_view_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/8ae44849-08d0-4e7f-a3e1-a277a4e22315',
+          snapshotUrls: 'https://i.gkd.li/i/16493556',
+        },
+      ],
+    },
   ],
 });
