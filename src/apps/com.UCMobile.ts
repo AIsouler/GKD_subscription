@@ -32,7 +32,6 @@ export default defineGkdApp({
             left: 'width * 0.9',
             top: 'width * 0.1676',
           },
-          activityIds: 'com.uc.browser.InnerUCMobile',
           matches: '[id="com.UCMobile.adn_jingdong_sdk:id/animation_view"]',
           exampleUrls: 'https://e.gkd.li/92da64ad-5b08-4343-bec2-bb6a7e0bb92d',
           snapshotUrls: 'https://i.gkd.li/i/16494884',
