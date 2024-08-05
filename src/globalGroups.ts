@@ -12,9 +12,8 @@ export default defineGkdGlobalGroups([
     order: OPEN_AD_ORDER,
     matchRoot: true,
     matchTime: 10000,
-    actionMaximum: 2,
+    actionMaximum: 1,
     resetMatch: 'app',
-    actionCdKey: 0,
     actionMaximumKey: 0,
     rules: [
       {
