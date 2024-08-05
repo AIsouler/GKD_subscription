@@ -78,10 +78,11 @@ export default defineGkdApp({
           name: '邀请好友提现弹窗',
           activityIds: 'com.meituan.msc.modules.container.MSCActivity',
           matches:
-            'WebView > View > View[childCount=1] >(1,2) View[childCount=2] > View + Image[text=""][childCount=0]',
+            'WebView > View > View[childCount=1] >(1,2) View[childCount=2] > View + Image[text=""][childCount=0][left>0]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964911',
             'https://i.gkd.li/i/15400951',
+            'https://i.gkd.li/i/16487898', // 避免误触 add [left>0]
           ],
         },
       ],
