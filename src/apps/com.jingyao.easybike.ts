@@ -54,12 +54,10 @@ export default defineGkdApp({
             'com.hellobike.ads.widget.insert.dialog.HBAdvertDialog',
             'com.hellobike.atlas.business.portal.PortalActivity',
           ],
-          matches:
-            'FrameLayout[id="com.jingyao.easybike:id/hbDialogLayout"] + ImageView[id="com.jingyao.easybike:id/actionDialogClose"][clickable=true]',
+          matches: '[vid="actionDialogClose"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12650028',
             'https://i.gkd.li/i/12650090',
-            'https://i.gkd.li/i/13331231',
+            'https://i.gkd.li/i/16503613',
           ],
         },
         {
