@@ -44,12 +44,16 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-弹窗广告',
-      activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
-      rules:
-        '@[id="com.cmcc.cmvideo:id/iv_big_close"] + [id="com.cmcc.cmvideo:id/sdv_big_pic"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13276111',
-        'https://i.gkd.li/i/13276122',
+      rules: [
+        {
+          fastQuery: true,
+          matchRoot: true,
+          activityIds:
+            'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
+          matches: '[vid="iv_big_close"]',
+          exampleUrls: 'https://e.gkd.li/ece7eb54-9b9b-40e2-9402-fc350f4734bb',
+          snapshotUrls: 'https://i.gkd.li/i/16503612',
+        },
       ],
     },
   ],
