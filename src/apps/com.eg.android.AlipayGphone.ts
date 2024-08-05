@@ -59,19 +59,29 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知权限',
-      actionMaximum: 1,
-      resetMatch: 'app',
       fastQuery: true,
       rules: [
         {
           key: 0,
-          name: '首页底部提示',
-          matches: '@[desc="关闭"] - * >n [text^="开启通知权限"]',
-          snapshotUrls: 'https://i.gkd.li/i/13194955',
+          name: '底部悬浮提示',
+          activityIds: [
+            'com.alipay.android.phone.messageboxapp.ui.MsgBoxTabActivity',
+            'com.eg.android.AlipayGphone.AlipayLogin',
+          ],
+          matches: [
+            '[text^="开启通知权限" || text^="开通推送通知"][visibleToUser=true]',
+            '[id="com.alipay.mobile.antui:id/closeButton"][desc="关闭"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13194955',
+            'https://i.gkd.li/i/16494085',
+          ],
         },
         {
           key: 1,
           name: '消息页弹窗提示',
+          activityIds:
+            'com.alipay.mobile.rome.pushservice.integration.PushOpenGuideActivity',
           matches: '[text="选择通知接收范围"] +3 * > [text="暂时不用"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13669620',
