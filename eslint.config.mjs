@@ -1,38 +1,22 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import typescriptEslintParser from '@typescript-eslint/parser';
-import js from '@eslint/js';
+import eslint from '@eslint/js';
+import tsEslint from 'typescript-eslint';
+import unusedImports from 'eslint-plugin-unused-imports';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-export default [
-  js.configs.recommended,
-  ...compat.extends('plugin:@typescript-eslint/recommended'),
-  ...compat.extends('prettier'),
+export default tsEslint.config(
+  eslint.configs.recommended,
+  ...tsEslint.configs.recommended,
+  eslintConfigPrettier,
   {
     plugins: {
-      typescriptEslint: typescriptEslint,
-    },
-    languageOptions: {
-      parser: typescriptEslintParser,
+      'unused-imports': unusedImports,
     },
     rules: {
-      '@typescript-eslint/ban-ts-comment': 'off',
-      '@typescript-eslint/no-empty-function': 'off',
-      '@typescript-eslint/no-unused-vars': 'off',
-      '@typescript-eslint/no-non-null-assertion': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
-      'no-empty': 'off',
-      'prefer-const': 'off',
       quotes: ['error', 'single', { allowTemplateLiterals: false }],
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      'unused-imports/no-unused-imports': 'error',
+      'unused-imports/no-unused-vars': 'error',
     },
-    ignores: ['dist/*'],
   },
-];
+);
