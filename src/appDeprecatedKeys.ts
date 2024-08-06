@@ -18,22 +18,21 @@ interface RawDeprecatedKeysSetting {
 }
 
 export const checkDeprecatedGroupKeys = (apps: RawApp[]) => {
-  apps.forEach((a) => {
-    appDeprecatedKeys.forEach((d) => {
-      if (a.id === d.id) {
-        a.groups.forEach((g) => {
-          if (d.deprecatedKeys.indexOf(g.key.valueOf()) !== -1) {
-            console.error({
-              configName: a.name,
-              appId: a.id,
-              groupName: g.name,
-              groupKey: g.key,
-            });
-            throw new Error('invalid deprecated group key');
-          }
-        });
-      }
-    });
+  apps.forEach((app) => {
+    const deprecatedKeys = appDeprecatedKeysMap.get(app.id);
+    if (deprecatedKeys) {
+      app.groups.forEach(({ key, name }) => {
+        if (deprecatedKeys.includes(key)) {
+          console.error({
+            configName: app.name,
+            appId: app.id,
+            groupName: name,
+            groupKey: key,
+          });
+          throw new Error('invalid deprecated group key');
+        }
+      });
+    }
   });
 };
 
@@ -555,3 +554,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     deprecatedKeys: [2],
   },
 ];
+
+const map: Map<string, number[]> = new Map();
+
+appDeprecatedKeys.forEach(({ id, deprecatedKeys }) => {
+  map.set(id, deprecatedKeys);
+});
+
+const appDeprecatedKeysMap = map;
