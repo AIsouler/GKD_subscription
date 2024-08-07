@@ -36,11 +36,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.qq.reader.activity.MainActivity',
-          matches: '[id="com.qq.reader:id/operating_activity_close"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/17b6444c-e275-4ee4-b1d7-bd7369e08e55',
-          snapshotUrls: 'https://i.gkd.li/i/14140100',
+          activityIds: [
+            'com.qq.reader.activity.MainActivity',
+            'com.qq.reader.activity.MainFlutterActivity',
+          ],
+          matches: '[vid="operating_activity_close_view"]',
+          exampleUrls: 'https://e.gkd.li/29b1cea7-6984-4d51-b1a0-f5ffd1b0d727',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14140100',
+            'https://i.gkd.li/i/16517211',
+          ],
         },
       ],
     },
