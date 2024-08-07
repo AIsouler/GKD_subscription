@@ -29,7 +29,7 @@ export default defineGkdApp({
           activityIds:
             'com.huawei.android.hicloud.ui.activity.GuideWebViewActivity',
           matches:
-            '@[clickable=true] + [text^="equityDistri"] <<n [vid="guid_webview_mian"]',
+            '@[clickable=true] + [visibleToUser=true][text^="equityDistri"] <<n [vid="guid_webview_mian"]',
           exampleUrls: 'https://e.gkd.li/a541bce4-3fb3-412a-8c51-d93f4eb78848',
           snapshotUrls: [
             'https://i.gkd.li/i/15523963',
