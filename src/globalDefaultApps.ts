@@ -1,4 +1,5 @@
 import { batchImportApps } from '@gkd-kit/tools';
+import { RawApp } from '@gkd-kit/api';
 
 const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 
@@ -147,7 +148,7 @@ export const blackListAppIDs: string[] = [
 ];
 
 // 如果某应用的规则中已有全局规则中的某一类的规则, 则在此应用禁用对应全局规则
-function filterAppsByGroup(apps: any[], groupNamePrefix: string): string[] {
+function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
   return apps
     .filter(
       (a) =>
