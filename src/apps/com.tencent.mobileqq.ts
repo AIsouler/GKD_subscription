@@ -752,5 +752,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 31,
+      name: '局部广告-QQ聊天页面关键词广告',
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.mobileqq.activity.ChatActivity',
+          matches: [
+            '[text="跳过"][clickable=true][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/16549500',
+        },
+      ],
+    },
   ],
 });
