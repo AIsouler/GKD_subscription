@@ -761,7 +761,8 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.tencent.mobileqq.activity.ChatActivity',
           matches: [
-            '[text="跳过"][clickable=true][visibleToUser=true]',
+            '[id="android:id/content"] >3 FrameLayout[childCount=2] >2 FrameLayout[childCount=2] >3 FrameLayout[childCount=2] > [text="跳过"]',
+            '[id="android:id/content"] >3 FrameLayout[childCount=2] >2 FrameLayout[childCount=2] >3 FrameLayout[childCount=2] > [text="关闭"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/16549500',
         },
