@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '百度地图',
   groups: [
     {
-      key: 0,
+      key: -1,
       name: '开屏广告',
       fastQuery: true,
       matchTime: 10000,
