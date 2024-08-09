@@ -76,6 +76,13 @@ export default defineGkdApp({
           ],
           snapshotUrls: 'https://i.gkd.li/i/13759484',
         },
+        {
+          key: 4,
+          activityIds: 'com.gamersky.main.activity.LibMainActivity',
+          matches: '[vid="recommended_reviews_or_rating_close_img"]',
+          exampleUrls: 'https://e.gkd.li/f214c099-c22a-4c20-abc0-4cdddc2fe614',
+          snapshotUrls: 'https://i.gkd.li/i/16556122',
+        },
       ],
     },
     {
