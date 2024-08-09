@@ -589,15 +589,22 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '开福袋浮层广告',
+          name: '关键词广告',
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.tencent.mobileqq.profilecard.activity.FriendProfileCardActivity',
+            'com.tencent.mobileqq.activity.ChatActivity',
+            'com.tencent.mobileqq.activity.SplashActivity',
+          ],
           matches:
-            'FrameLayout > FrameLayout > FrameLayout[childCount=2] > TextView[text="跳过"]',
+            'FrameLayout[childCount=2] >2 FrameLayout[childCount=2] >3 FrameLayout[childCount=2] > [text="跳过" || text="关闭"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/4cf5bc02-d2c3-4ca4-833e-522a194e3131',
-          snapshotUrls: 'https://i.gkd.li/i/14183188',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14183188',
+            'https://i.gkd.li/i/16549500',
+            'https://i.gkd.li/i/16555184',
+          ],
         },
       ],
     },
@@ -749,24 +756,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15388608',
             'https://i.gkd.li/i/16154341',
           ],
-        },
-      ],
-    },
-    {
-      key: 31,
-      name: '局部广告-QQ聊天页面关键词广告',
-      actionMaximum: 1,
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.tencent.mobileqq.activity.ChatActivity',
-          matches: [
-            '[id="android:id/content"] >3 FrameLayout[childCount=2] >2 FrameLayout[childCount=2] >3 FrameLayout[childCount=2] > [text="跳过" || text="关闭"]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/16549500',
-            'https://i.gkd.li/i/16555184',
-          ]
         },
       ],
     },
