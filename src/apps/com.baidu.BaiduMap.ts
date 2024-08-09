@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: '百度地图',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f03b3648-757a-48e3-bd3b-098f8293edbf',
+          snapshotUrls: 'https://i.gkd.li/i/16556555',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '局部广告-地图上方黄页横幅',
       fastQuery: true,
