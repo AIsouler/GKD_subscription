@@ -11,21 +11,28 @@ export default defineGkdApp({
       activityIds: [
         'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
         'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
+        'com.tencent.mm.plugin.profile.ui.ContactInfoUI',
       ],
-      exampleUrls:
-        'https://github.com/gkd-kit/subscription/assets/38517192/c9ae4bba-a748-4755-b5e4-c7ad3d489a79',
+      exampleUrls: 'https://e.gkd.li/d1941064-d4e9-4bb2-99ab-ba30e0ce8126',
       rules: [
         {
-          key: 0,
-          name: '点击卡片广告右上角',
+          key: -1,
+          fastQuery: true,
           matches:
-            'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true]',
+            '@LinearLayout[clickable=true] > [text="广告" || text="廣告" || text="Sponsored"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d1941064-d4e9-4bb2-99ab-ba30e0ce8126',
           snapshotUrls: [
             'https://i.gkd.li/i/13000395',
             'https://i.gkd.li/i/12905837',
             'https://i.gkd.li/i/13791200',
-            'https://i.gkd.li/i/14647413',
+            'https://i.gkd.li/i/16568338',
           ],
+        },
+        {
+          key: 0,
+          matches:
+            'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true][childCount=0]',
+          snapshotUrls: 'https://i.gkd.li/i/14647413',
         },
         {
           key: 1,
@@ -34,9 +41,7 @@ export default defineGkdApp({
             left: 'width * 0.9223',
             top: 'width * 0.0349',
           },
-          excludeMatches:
-            'RelativeLayout >5 LinearLayout[childCount=2] > TextView[text!=null] + LinearLayout[visibleToUser=true][clickable=true]',
-          matches: '@LinearLayout >2 [text="广告"]',
+          matches: '@LinearLayout >2 [text="广告"][visibleToUser=false]',
           snapshotUrls: [
             'https://i.gkd.li/i/14783802',
             'https://i.gkd.li/i/15531539',
@@ -46,7 +51,7 @@ export default defineGkdApp({
         // 预留key
         // 第二段
         {
-          preKeys: [0, 1],
+          preKeys: [-1, 0, 1],
           key: 25,
           name: '点击[关闭]',
           fastQuery: true,
@@ -58,7 +63,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          preKeys: [-1, 0],
           key: 26,
           name: '点击[Close]',
           fastQuery: true,
@@ -69,7 +74,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          preKeys: [-1, 0],
           key: 27,
           name: '点击[關閉此廣告]',
           fastQuery: true,
@@ -77,7 +82,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13791202',
         },
         {
-          preKeys: [0, 1],
+          preKeys: [-1, 0, 1],
           key: 28,
           name: '点击[关闭该广告]',
           fastQuery: true,
@@ -90,7 +95,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          preKeys: [-1, 0],
           key: 29,
           name: '点击[Close the ad]',
           fastQuery: true,
