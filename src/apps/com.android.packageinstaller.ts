@@ -30,6 +30,7 @@ export default defineGkdApp({
             'com.android.packageinstaller.NewInstallInstalling',
             'com.android.packageinstaller.InstallSuccess',
             'com.android.packageinstaller.oplus.InstallAppProgress',
+            'com.android.packageinstaller.FlymePackageInstallerActivity',
           ],
           matches: '[text="完成"]',
           snapshotUrls: [
@@ -38,6 +39,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13962438',
             'https://i.gkd.li/i/14138323',
             'https://i.gkd.li/i/14471862',
+            'https://i.gkd.li/i/16550273',
           ],
         },
         {
