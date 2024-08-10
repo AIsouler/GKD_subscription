@@ -13,7 +13,6 @@ export default defineGkdApp({
         'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
         'com.tencent.mm.plugin.profile.ui.ContactInfoUI',
       ],
-      exampleUrls: 'https://e.gkd.li/d1941064-d4e9-4bb2-99ab-ba30e0ce8126',
       rules: [
         {
           key: -1,
