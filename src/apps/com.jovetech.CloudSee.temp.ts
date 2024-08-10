@@ -19,5 +19,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.jovision.saas.ui.activity.main.MainActivity',
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView[childCount=0][text=null]',
+          exampleUrls: 'https://e.gkd.li/92d3c1a3-3990-4f2c-b564-6f79f69f9b14',
+          snapshotUrls: 'https://i.gkd.li/i/16567977',
+        },
+      ],
+    },
   ],
 });
