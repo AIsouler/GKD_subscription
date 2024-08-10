@@ -30,80 +30,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '全屏广告',
-      activityIds: [
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
-        'com.aster.comic.app.view.MainActivity',
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-      ],
-      rules: [
-        {
-          key: 0,
-          name: '腾讯SDK-1',
-          actionDelay: 350, //防误触
-          matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13830354',
-            'https://i.gkd.li/i/13842716',
-            'https://i.gkd.li/i/13842966',
-          ],
-        },
-        {
-          key: 1,
-          name: '字节SDK',
-          matches: 'FrameLayout[desc*="close"] > View',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13839432',
-            'https://i.gkd.li/i/13839519',
-          ],
-        },
-        {
-          key: 2,
-          name: '穿山甲SDK',
-          actionDelay: 350, //防误触
-          matches: [
-            '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after"]',
-            '[visibleToUser=true][text="反馈"] <<n View + View[childCount=1]',
-            '[visibleToUser=true][text*="跳过" && text.length<=6] <2 @View -(3-n) View < View',
-            '[visibleToUser=true][text="反馈"] -n @View[index<=1] > Image[text.length=0]',
-            '[visibleToUser=true][text="反馈"] <<n View - View[childCount=1]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13830798', //规则2
-            'https://i.gkd.li/i/13810767', //规则1
-            'https://i.gkd.li/i/13829749', //规则3
-            'https://i.gkd.li/i/13809737', //规则4 index=0
-            'https://i.gkd.li/i/13809578', //规则4 index=1
-            'https://i.gkd.li/i/13810150', //规则5
-          ],
-        },
-        {
-          key: 3,
-          name: '快手SDK',
-          matches: [
-            '[text*="跳过"] <n *[clickable=true]',
-            '[vid="ksad_auto_close_btn"]',
-            '[vid="ksad_video_container"] < * >n ViewGroup[index=1] >n @ViewGroup[clickable=true] > ImageView',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13809629', //规则1
-            'https://i.gkd.li/i/13829312', //规则3
-            'https://i.gkd.li/i/13837855', //规则2
-          ],
-        },
-        {
-          key: 4,
-          name: '腾讯SDK-2',
-          actionDelay: 350, //防误触
-          matches:
-            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/15173845',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '更新提示',
       desc: '点击"暂不"',
@@ -128,16 +54,22 @@ export default defineGkdApp({
           key: 0,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] + @View[childCount=2] > [text="跳过"]',
-          snapshotUrls: 'https://i.gkd.li/i/14362119',
+          matches: '[text="反馈"] + @View[childCount=2] > [text*="跳过"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13829749',
+            'https://i.gkd.li/i/14362119',
+          ],
         },
         {
           key: 1,
-          activityIds:
+          activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+            'com.aster.comic.app.view.MainActivity',
+          ],
           matches:
             '[text="反馈"] -(2,4) @View[childCount=1][visibleToUser=true] > Image[childCount=0][text=""]',
           snapshotUrls: [
+            'https://i.gkd.li/i/13809578',
             'https://i.gkd.li/i/14717730',
             'https://i.gkd.li/i/16062358',
           ],
@@ -176,8 +108,62 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.kwad.sdk.api.proxy.app.KsRewardVideoActivity',
           matches: '@ViewGroup[clickable=true] +3 ViewGroup > [text*="广告"]',
-          exampleUrls: 'https://e.gkd.li/fda39464-2b00-486b-ba47-2afca753674a',
           snapshotUrls: 'https://i.gkd.li/i/16401930',
+        },
+        {
+          key: 7,
+          name: '腾讯SDK-1',
+          activityIds: [
+            'com.aster.comic.app.view.MainActivity',
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
+          ],
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13830354',
+            'https://i.gkd.li/i/13842716',
+            'https://i.gkd.li/i/13842966',
+          ],
+        },
+        {
+          key: 8,
+          name: '腾讯SDK-2',
+          activityIds: 'com.aster.comic.app.view.MainActivity',
+          matches:
+            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/15173845',
+        },
+        {
+          key: 9,
+          name: '字节SDK',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: 'FrameLayout[desc*="close"] > View',
+          snapshotUrls: 'https://i.gkd.li/i/13839519',
+        },
+        {
+          key: 10,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[id="com.byted.pangle.m:id/tt_reward_full_count_down"]',
+          snapshotUrls: 'https://i.gkd.li/i/13810767',
+        },
+        {
+          key: 11,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            'Image[childCount=0][text=""] < @View + View > [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/13810150',
+        },
+        {
+          key: 12,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
+          matches: ['[text*="广告"]', '[text="跳过"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13809629',
         },
       ],
     },
