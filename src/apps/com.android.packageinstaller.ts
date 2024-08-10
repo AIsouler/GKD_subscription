@@ -12,11 +12,15 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击[继续安装]',
-          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
+          activityIds: [
+            'com.android.packageinstaller.PackageInstallerActivity',
+            'com.android.packageinstaller.FlymePackageInstallerActivity',
+          ],
           matches: '[text="继续安装"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13206444',
             'https://i.gkd.li/i/14046749',
+            'https://i.gkd.li/i/16550275',
           ],
         },
         {
