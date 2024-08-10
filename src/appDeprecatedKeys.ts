@@ -553,6 +553,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '美团外卖',
     deprecatedKeys: [2],
   },
+  {
+    id: 'com.paokeji.yiqu',
+    name: '喵趣漫画',
+    deprecatedKeys: [1],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
