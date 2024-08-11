@@ -80,6 +80,8 @@ export const blackListAppIDs: string[] = [
   'com.android.chrome', // Chrome
   'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
   'com.xunmeng.pinduoduo', // 拼多多
+  'com.byyoung.setting', //爱玩机工具箱
+  'com.mixplorer', // MiX文件管理器
 
   'com.canghai.haoka',
   'com.xy.td',
