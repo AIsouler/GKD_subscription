@@ -28,5 +28,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.crgt.ilife.ui.main.MainPageView',
+          matches: '[vid="iv_close"]',
+          exampleUrls: 'https://e.gkd.li/43ccfd78-67d7-4dba-a25f-a2f5d62f9c40',
+          snapshotUrls: 'https://i.gkd.li/i/16581549',
+        },
+      ],
+    },
   ],
 });
