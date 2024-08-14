@@ -68,5 +68,77 @@ export default defineGkdApp({
       rules: '@ImageView - * > [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/i/14622566',
     },
+    {
+      name: '自动签到',
+      key: 5,
+      fastQuery: true,
+      matchTime: 20000,
+      snapshotUrls: [
+        'https://i.gkd.li/i/16386628',
+        'https://i.gkd.li/i/16386629',
+        'https://i.gkd.li/i/16554695'
+      ],
+      rules: [
+        {
+          matches: [
+            '@LinearLayout[clickable=true] > TextView[text="听歌领VIP"]'
+          ]
+        }
+      ]
+    },
+    {
+      name: '听歌弹出广告',
+      key: 6,
+      matchTime: 10000,
+      snapshotUrls: [
+        'https://i.gkd.li/i/16407631'
+      ],
+      rules: [
+        {
+          matches: [
+            'TextView[text$="跳过" && text.length=5]'
+          ]
+        }
+      ]
+    },
+    {
+      name: '自动签到2',
+      key: 7,
+      matchTime: 20000,
+      snapshotUrls: [
+        'https://i.gkd.li/i/16594001'
+      ],
+      rules: [
+        {
+          matches: [
+            'TextView[text="小时VIP"] <n FrameLayout + ImageView'
+          ]
+        }
+      ]
+    },
+    {
+      name: '搜索下广告',
+      key: 8,
+      matchTime: 10000,
+      snapshotUrls: [
+        'https://i.gkd.li/i/16594197'
+      ],
+      rules: [
+        {
+          name: '点x',
+          key: 0,
+          matches: [
+            'TextView[text="最近搜索"] < FrameLayout < LinearLayout + FrameLayout > ImageView'
+          ]
+        },
+        {
+          name: '确认关闭',
+          key: 1,
+          matches: [
+            'Button[text="确认关闭"]'
+          ]
+        }
+      ]
+    }
   ],
 });
