@@ -95,42 +95,38 @@ export default defineGkdApp({
       key: 12,
       name: '分段广告-信息流广告',
       desc: '点击右上角x按钮,点击不感兴趣',
+      fastQuery: true,
+      activityIds: [
+        'com.ss.android.article.news.activity.MainActivity',
+        'com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity',
+      ],
       rules: [
         {
-          name: '点击右上角x按钮',
           key: 0,
-          activityIds: [
-            'com.ss.android.article.news.activity.MainActivity',
-            'com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity',
-          ],
+          name: '点击右上角x按钮',
           matches: 'UIView[text^="不感兴趣"][visibleToUser=true]',
-          action: 'clickCenter',
           snapshotUrls: [
-            'https://i.gkd.li/i/12733098',
-            'https://i.gkd.li/i/12755264',
             'https://i.gkd.li/i/12836272',
-            'https://i.gkd.li/i/12840162',
             'https://i.gkd.li/i/13093576',
-            'https://i.gkd.li/i/12733098',
-          ],
-          exampleUrls: [
-            'https://user-images.githubusercontent.com/44717382/273436460-cf007525-81ce-418b-ac05-3bfd75a627fe.gif', //这是 https://i.gkd.li/i/12840162
+            'https://i.gkd.li/i/16624480',
           ],
         },
         {
-          name: '点击不感兴趣',
-          preKeys: 0,
+          preKeys: [0],
+          key: 2,
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          matches: '@[clickable=true] >2 [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/16624395',
+        },
+        {
+          preKeys: [0, 2],
           key: 1,
-          activityIds: [
-            'com.ss.android.article.news.activity.MainActivity',
-            'com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity',
-          ],
-          matches:
-            '@ViewGroup[clickable=true] > ImageView + TextView[text="不感兴趣"]',
-          action: 'clickCenter',
+          name: '点击不感兴趣',
+          matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12733152',
             'https://i.gkd.li/i/12755265',
+            'https://i.gkd.li/i/16624474',
           ],
         },
       ],
@@ -138,13 +134,13 @@ export default defineGkdApp({
     {
       key: 13,
       name: '局部广告-底部话题推荐弹窗',
-      activityIds: ['com.ss.android.article.news.activity.MainActivity'],
+      activityIds: 'com.ss.android.article.news.activity.MainActivity',
       rules: [
         {
           name: '话题谈论',
           matches:
             'FlattenUIText[text="参与讨论"] + FlattenUIImage[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12706699'],
+          snapshotUrls: 'https://i.gkd.li/i/12706699',
         },
       ],
     },
