@@ -26,6 +26,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/14158b1c-88f3-4e5c-bbc1-193186e77b07',
           snapshotUrls: 'https://i.gkd.li/i/16620123',
         },
+        {
+          key: 2,
+          activityIds: 'com.google.android.gms.ads.AdActivity',
+          matches:
+            'WebView >2 View[childCount=3] >2 View[childCount=2] > View[childCount=2] > View[childCount=1] > Button[clickable=true]',
+          exampleUrls: 'https://e.gkd.li/0be64275-23d1-4b13-b444-6e0c67fdd8fc',
+          snapshotUrls: 'https://i.gkd.li/i/16621030',
+        },
       ],
     },
   ],
