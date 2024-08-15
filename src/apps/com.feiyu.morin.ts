@@ -13,18 +13,28 @@ export default defineGkdApp({
           name: '腾讯广告',
           activityIds: 'com.feiyu.morin.view.main.MainActivity',
           matches:
-            'ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/i/13521556',
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView[childCount=0][text=null]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13521556',
+            'https://i.gkd.li/i/16621748',
+          ],
         },
         {
           key: 1,
           name: '快手广告',
+          fastQuery: true,
           activityIds: 'com.feiyu.morin.view.main.MainActivity',
-          matches: [
-            'ViewGroup[childCount=2] > ImageView + [text="广告"]',
-            '@ViewGroup > [text="跳过"]',
-          ],
+          matches: ['[text="广告"]', '@ViewGroup > [text="跳过"]'],
           snapshotUrls: 'https://i.gkd.li/i/13546184',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.feiyu.morin.view.main.MainActivity',
+          matches:
+            '@ViewGroup[clickable=true][childCount=1] < ViewGroup +2 ViewGroup > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/52f8dddd-3604-4144-96ce-804c66e77a19',
+          snapshotUrls: 'https://i.gkd.li/i/16621747',
         },
       ],
     },
