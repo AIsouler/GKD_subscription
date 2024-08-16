@@ -132,6 +132,15 @@ export default defineGkdApp({
           matches: '[vid="marking_sidebar_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16079638',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity',
+          matches: '@ImageView[visibleToUser=true] - [text^="收藏店铺领"]',
+          exampleUrls: 'https://e.gkd.li/20bbae61-859b-478d-9032-8213c79dec39',
+          snapshotUrls: 'https://i.gkd.li/i/16632959',
+        },
       ],
     },
     {
