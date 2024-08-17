@@ -82,6 +82,7 @@ export const blackListAppIDs: string[] = [
   'com.xunmeng.pinduoduo', // 拼多多
   'com.byyoung.setting', //爱玩机工具箱
   'com.mixplorer', // MiX文件管理器
+  'com.xjs.ehviewer', // Ehviewer
 
   'com.canghai.haoka',
   'com.xy.td',
