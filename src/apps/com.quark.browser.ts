@@ -33,13 +33,12 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '@Button[text="取消"] + Button[text="更新"]',
-          snapshotUrls: 'https://i.gkd.li/i/13292512',
-        },
-        {
-          key: 1,
-          matches: '@Button[text="取消"] + Button[text="确定"]',
-          snapshotUrls: 'https://i.gkd.li/i/13455360',
+          matches: ['[text*="版本更新" || text^="优化升级"]', '[text="取消"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13292512',
+            'https://i.gkd.li/i/13455360',
+            'https://i.gkd.li/i/16643051', // 避免误触
+          ],
         },
       ],
     },
