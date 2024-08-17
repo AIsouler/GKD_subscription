@@ -446,10 +446,11 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           action: 'back',
-          matches: '[text="及时获取物流消息"]',
+          matches: '[text="及时获取物流消息" || text="开启通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15004580',
             'https://i.gkd.li/i/15048085',
+            'https://i.gkd.li/i/16643295',
           ],
         },
       ],
