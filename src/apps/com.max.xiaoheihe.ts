@@ -40,5 +40,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '功能类-自动点击查看原图',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+          matches: '[text^="查看原图"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38',
+          snapshotUrls: 'https://i.gkd.li/i/16646832',
+        },
+      ],
+    },
   ],
 });
