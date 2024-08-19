@@ -58,13 +58,14 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
-          matches: '[text^="立即了解"] -3 View[clickable=true]',
+          matches:
+            '[text^="立即了解"] -3 @View[clickable=true] <<n [vid="webContainer"]',
           snapshotUrls: 'https://i.gkd.li/i/13806865',
         },
       ],
