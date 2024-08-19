@@ -7,14 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
+      fastQuery: true,
       activityIds: 'com.cn21.ecloud.activity.MainPageActivity',
       rules: [
         {
           matches:
-            '[id="com.cn21.ecloud:id/content_frame"] >(5,7) View[childCount=2] > ImageView[childCount=0][clickable=true]',
+            'FrameLayout > View[childCount=1] > View[childCount=1] >(1,4) View[childCount=2][desc=null] > @ImageView[clickable=true][visibleToUser=true] <<n [vid="content_frame"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12865481',
             'https://i.gkd.li/i/12865488',
+            'https://i.gkd.li/i/16653930',
+            'https://i.gkd.li/i/16647901', // 防止误触
           ],
         },
       ],
