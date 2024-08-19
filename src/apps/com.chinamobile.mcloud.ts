@@ -10,18 +10,11 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionMaximumKey: 0,
       rules: [
-        {
-          key: 0,
-          matches:
-            '@[id="com.chinamobile.mcloud:id/bn_cancel"] + [id="com.chinamobile.mcloud:id/upgrade_title"]',
-          snapshotUrls: 'https://i.gkd.li/i/12774833',
-        },
         {
           key: 1,
           fastQuery: true,
-          matches: '@[vid="bn_cancel"] + * > [vid="upgrade_title"]',
+          matches: ['[text="发现新版本"]', '[vid="bn_cancel"]'],
           snapshotUrls: 'https://i.gkd.li/i/14297700',
         },
       ],
