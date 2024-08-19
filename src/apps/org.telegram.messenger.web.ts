@@ -7,16 +7,19 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      matchTime: 10000,
-      resetMatch: 'app',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: ['[text="更新 Telegram"]', '[text="请稍后提醒我"] - View'],
+          matches: [
+            '[text="更新 Telegram"]',
+            '@View[clickable=true] + [text="请稍后提醒我"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/13847837',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/i/13847837',
     },
   ],
 });
