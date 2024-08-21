@@ -463,10 +463,16 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           fastQuery: true,
+          activityIds: [
+            'com.tencent.mobileqq.activity.SplashActivity',
+            'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+          ],
           matches: 'ViewGroup[childCount=6] > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/13695087',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13695087',
+            'https://i.gkd.li/i/16685300',
+          ],
         },
         {
           key: 1,
@@ -477,8 +483,8 @@ export default defineGkdApp({
         {
           preKeys: [0, 1],
           key: 2,
-          activityIds: 'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
           fastQuery: true,
+          activityIds: 'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
           matches: '@LinearLayout > [text="关闭此条广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13699701',
         },
