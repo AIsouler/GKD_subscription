@@ -13,16 +13,14 @@ export default defineGkdApp({
           fastQuery: true,
           matches:
             '[id="com.jdd.motorfans:id/ad_content"] >n [id="com.jdd.motorfans:id/iv_close"]',
-          exampleUrls:
-            'https://user-images.githubusercontent.com/44717382/270852019-b0296eaa-a378-49b3-877b-acefca2a7d58.gif',
           snapshotUrls: [
-            'https://i.gkd.li/i/12733646', // com.jdd.motorfans.MTMainActivity
-            'https://i.gkd.li/i/12798654', // com.jdd.motorfans.modules.detail.DetailActivity2
-            'https://i.gkd.li/i/12878843', // com.jdd.motorfans.search.SearchMainActivity
-            'https://i.gkd.li/i/12913956', // com.jdd.motorfans.modules.base.FragmentContainerActivity
-            'https://i.gkd.li/i/13188861', // com.jdd.motorfans.message.ChatDetailActivity
-            'https://i.gkd.li/i/12840710', // com.miui.home.launcher.Launcher
-            'https://i.gkd.li/i/13188928', // com.tencent.mm.ui.LauncherUI
+            'https://i.gkd.li/i/12733646',
+            'https://i.gkd.li/i/12798654',
+            'https://i.gkd.li/i/12878843',
+            'https://i.gkd.li/i/12913956',
+            'https://i.gkd.li/i/13188861',
+            'https://i.gkd.li/i/12840710',
+            'https://i.gkd.li/i/13188928',
             'https://i.gkd.li/i/14546613',
           ],
         },
@@ -36,37 +34,49 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-信息流广告',
-      activityIds: ['com.jdd.motorfans.MTMainActivity'],
+      activityIds: 'com.jdd.motorfans.MTMainActivity',
       rules: [
         {
-          name: '点x按钮',
           key: 0,
+          name: '点x按钮',
           matches:
             '[id="com.jdd.motorfans:id/recyclerView"] > FrameLayout[id="com.jdd.motorfans:id/container"] > FrameLayout[childCount=3] > ImageView[clickable=true][id=null] + ImageView[clickable=true][id=null]', //虽然在审查页面能匹配上，但是在“执行选择器”功能下一直处于搜索中，先添加后到真机测试
-          snapshotUrls: ['https://i.gkd.li/i/12826382'],
+          snapshotUrls: 'https://i.gkd.li/i/12826382',
         },
         {
+          preKeys: [0],
           name: '点击不感兴趣',
-          preKeys: 0,
-          matches: [
+          matches:
             'TextView[id="com.jdd.motorfans:id/beizi_dislike_item_multi_one_title"][text*="不感兴趣"]',
-          ],
-          snapshotUrls: ['https://i.gkd.li/i/12829069'],
+          snapshotUrls: 'https://i.gkd.li/i/12829069',
         },
       ],
     },
     {
       key: 3,
       name: '全屏广告-文章内容页面弹窗广告',
-      activityIds: [
+      activityIds:
         'com.jdd.motorfans.modules.zone.search.ZoneInsideSearchActivity',
-      ],
       rules: [
         {
-          name: '点x按钮',
           key: 0,
+          name: '点x按钮',
           matches: '[id="com.jdd.motorfans:id/iv_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/12888087'],
+          snapshotUrls: 'https://i.gkd.li/i/12888087',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.jdd.motorfans.MTMainActivity',
+          matches: '[vid="close_b_t_a_i_b_no_compliance"]',
+          exampleUrls: 'https://e.gkd.li/daf8ea52-a935-4e58-9e27-c5cb28fa9cf0',
+          snapshotUrls: 'https://i.gkd.li/i/16685033',
         },
       ],
     },
