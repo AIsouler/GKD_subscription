@@ -228,7 +228,10 @@ export const openAdWhiteListAppIDs = new Set([
 ]);
 
 // 更新提示白名单
-export const updateWhiteListAppIDs = new Set([...whiteListAppIDs]);
+export const updateWhiteListAppIDs = new Set([
+  ...whiteListAppIDs,
+  'com.hihonor.phoneservice', // 我的荣耀
+]);
 
 // 青少年模式白名单
 export const yongWhiteListAppIDs = new Set([...whiteListAppIDs]);
