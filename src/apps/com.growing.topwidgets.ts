@@ -38,7 +38,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] <(2,3) * >(2,3) [text="反馈"]',
+            '@ImageView[clickable=true][visibleToUser=true] <(2,3,4) * >(2,3,4) [text="反馈"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14945552',
             'https://i.gkd.li/i/15286451',
