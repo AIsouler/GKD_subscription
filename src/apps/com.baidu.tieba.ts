@@ -163,7 +163,7 @@ export default defineGkdApp({
           matches:
             'View[childCount=3] > @View[clickable=true][childCount=1] > Image',
           snapshotUrls: [
-            'https://i.gkd.li/i/13060891', // activityIds: com.baidu.tbadk.browser.TBWebContainerActivity
+            'https://i.gkd.li/i/13060891',
             'https://i.gkd.li/i/13222361', // childCount=1否则误触这里
           ],
         },
@@ -178,10 +178,17 @@ export default defineGkdApp({
           matches:
             '@TextView[clickable=true && text=null] - FrameLayout TextView[text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13168383', // activityIds: com.baidu.tieba.tblauncher.MainTabActivity
-            'https://i.gkd.li/i/13322120', // activityIds: com.miui.home.launcher.Launcher
-            'https://i.gkd.li/i/13328246', // activityIds: com.baidu.tieba.LogoActivity
+            'https://i.gkd.li/i/13168383',
+            'https://i.gkd.li/i/13322120',
+            'https://i.gkd.li/i/13328246',
           ],
+        },
+        {
+          key: 2,
+          activityIds: 'com.baidu.tieba.tblauncher.MainTabActivity',
+          matches: '@TextView[visibleToUser=true][text=""] -2 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/ac3d88b7-31a2-441f-a4c8-8a73eaec24b9',
+          snapshotUrls: 'https://i.gkd.li/i/16703244',
         },
       ],
     },
