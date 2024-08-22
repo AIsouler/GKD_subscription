@@ -8,6 +8,8 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-卡片广告',
       fastQuery: true,
+      matchRoot: true,
+      forcedTime: 10000,
       activityIds: 'com.autoclicker.clicker.MainActivity',
       rules: [
         {
