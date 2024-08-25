@@ -72,6 +72,18 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14217033',
           ],
         },
+        {
+          key: 4,
+          name: '首页-顶部局部广告-找到组织啦',
+          fastQuery: true,
+          matches: '[id="com.tencent.mobileqq:id/ywt"][clickable=true]',
+          action: 'clickCenter',
+          position: {
+            top: 90,
+            right: 50,
+          },
+          snapshotUrls: ['https://i.gkd.li/i/16739528'],
+        },
       ],
     },
     {
