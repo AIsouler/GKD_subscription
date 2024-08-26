@@ -35,5 +35,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
+          matches: '[vid="iv_close"]',
+          exampleUrls: 'https://e.gkd.li/abb06a51-6b92-4734-8a60-d0ef87b3364d',
+          snapshotUrls: 'https://i.gkd.li/i/16742915',
+        },
+      ],
+    },
   ],
 });
