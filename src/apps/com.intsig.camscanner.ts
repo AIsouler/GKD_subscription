@@ -14,7 +14,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-免费试用',
+      name: '开屏广告-免费试用',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
