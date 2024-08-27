@@ -9,10 +9,7 @@ export default defineGkdApp({
       name: '全屏广告-解锁高级功能',
       desc: '点击“不”',
       fastQuery: true,
-      activityIds: [
-        '.MainActivity',
-        'me.iwf.photopicker.PhotoPickerActivity',
-      ],
+      activityIds: ['.MainActivity', 'me.iwf.photopicker.PhotoPickerActivity'],
       rules: [
         {
           matches: ['[text="解锁高级功能"]', '[text="不"]'],
