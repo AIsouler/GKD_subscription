@@ -11,7 +11,8 @@ export default defineGkdApp({
       activityIds: [],
       rules: [
         {
-          matches: 'Button[text="不"&&parent.parent.parent.getChild(0).getChild(0).getChild(0).text="解锁高级功能"]',
+          matches:
+            'Button[text="不"&&parent.parent.parent.getChild(0).getChild(0).getChild(0).text="解锁高级功能"]',
           action: 'clickNode',
           snapshotUrls: 'https://i.gkd.li/i/16759977',
         },
