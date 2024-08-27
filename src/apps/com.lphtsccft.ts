@@ -23,8 +23,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="升级体验"] +2 LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12699308',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          matches: '[text*="升级体验"] +2 LinearLayout > [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/12699308',
+        },
+        {
+          key: 1,
+          matches: '[vid="iv_update_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16760030',
+        },
+      ],
     },
     {
       key: 3,
