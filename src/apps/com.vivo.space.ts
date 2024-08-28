@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: 'vivo 官网',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[vid="timer"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e531ea4e-874f-4da4-bcf1-f585887f753c',
+          snapshotUrls: 'https://i.gkd.li/i/16775800',
+        },
+      ],
+    },
+    {
       key: 3,
       name: '全屏广告-活动广告',
       matchTime: 10000,
