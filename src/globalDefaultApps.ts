@@ -97,6 +97,7 @@ export const blackListAppIDs: string[] = [
   'com.microsoft.office.onenote', // Microsoft OneNote
   'com.sonkins.tguitar', // Guitar Tuner
   'com.eumlab.android.prometronome', // Pro Metronome
+  'cn.edu.buaa.wxwork', // 智慧北航
 
   'com.canghai.haoka',
   'com.xy.td',
