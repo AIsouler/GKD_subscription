@@ -226,10 +226,13 @@ export default defineGkdApp({
           key: 2,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
-            'RelativeLayout[childCount=2] > RelativeLayout + @FrameLayout[childCount=1][clickable=true][visibleToUser=true] > ImageView[childCount=0][visibleToUser=true]',
+            'RelativeLayout[childCount=2] > RelativeLayout + @FrameLayout[childCount=1][clickable=true][visibleToUser=true][text=null][vid="pdd"] > ImageView[childCount=0][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/e1d297dd-b555-4c2c-b7f6-2756aadb6006',
-          snapshotUrls: 'https://i.gkd.li/i/15140800',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15140800',
+            'https://i.gkd.li/i/16776452', // 避免误触
+          ],
         },
       ],
     },
