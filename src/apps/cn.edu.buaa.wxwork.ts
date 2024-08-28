@@ -8,10 +8,8 @@ export default defineGkdApp({
       key: 0,
       name: '功能类-扫码后自动确认登录',
       desc: '点击[确认登录]',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: [
         'com.tencent.wework.common.web.JsWebActivity',
         'com.tencent.wework.launch.WwMainActivity',
