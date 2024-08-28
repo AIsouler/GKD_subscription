@@ -78,11 +78,25 @@ export const blackListAppIDs: string[] = [
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
   'com.android.chrome', // Chrome
+  'org.mozilla.firefox', // Firefox
   'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
   'com.xunmeng.pinduoduo', // 拼多多
   'com.byyoung.setting', //爱玩机工具箱
   'com.mixplorer', // MiX文件管理器
   'com.xjs.ehviewer', // Ehviewer
+  'rikka.appops', // App Ops
+  'com.vrem.wifianalyzer', // WiFiAnalyzer
+  'remix.myplayer', // APlayer
+  'com.arn.scrobble', // Pano Scrobbler
+  'org.videolan.vlc', // VLC
+  'org.geogebra.android.calculator.suite', // GeoGebra
+  'com.azure.authenticator', // Microsoft Authenticator
+  'com.microsoft.office.officehub', // Microsoft Office
+  'com.microsoft.office.officehubrow', // Microsoft Office (Google Play版)
+  'com.microsoft.office.outlook', // Microsoft Outlook
+  'com.microsoft.office.onenote', // Microsoft OneNote
+  'com.sonkins.tguitar', // Guitar Tuner
+  'com.eumlab.android.prometronome', // Pro Metronome
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -91,7 +105,6 @@ export const blackListAppIDs: string[] = [
   'io.github.huskydg.magisk',
   'xzr.konabess',
   'org.lsposed.manager',
-  'com.microsoft.office.officehub',
   'bin.mt.plus',
   'tw.nekomimi.nekogram',
   'io.github.qauxv',
@@ -115,7 +128,6 @@ export const blackListAppIDs: string[] = [
   'icu.nullptr.nativetest',
   'io.github.vvb2060.mahoshojo',
   'com.samsung.android.memoryguardian',
-  'com.microsoft.office.outlook',
   'com.music.khkj',
   'Hook.JiuWu.Xp',
   'me.weishu.kernelsu',
@@ -145,8 +157,9 @@ export const blackListAppIDs: string[] = [
   'com.miui.compass', // 指南针
   'com.duokan.phone.remotecontroller', // 万能遥控
   'com.mfashiongallery.emag', // 小米画报
+  'com.miui.thirdappassistant', // 三方应用异常分析
 
-  //三星
+  // 三星
   'com.samsung.android.app.cameraassistant',
   'com.samsung.android.app.galaxyraw',
   'com.samsung.android.appbooster',
