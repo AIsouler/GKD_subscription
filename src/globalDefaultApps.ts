@@ -235,7 +235,6 @@ export const openAdWhiteListAppIDs = new Set([
   'com.bbk.appstore', // vivo应用商店
   'com.miui.player', // 小米音乐
   'com.tencent.southpole.appstore', // 黑鲨应用市场
-  'com.vivo.space', // vivo 官网
   'com.heytap.browser', // 一加浏览器
   'com.heytap.themestore', // oppo主题商店
 ]);
