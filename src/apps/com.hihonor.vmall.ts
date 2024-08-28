@@ -23,6 +23,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            'com.vmall.client.messageCenter.fragment.MessageCenterActivity',
+            'com.vmall.client.base.fragment.VmallWapActivity',
+          ],
           matches: [
             '[text="开启消息通知"]',
             '[vid="notification_close" || vid="iv_close"]',
