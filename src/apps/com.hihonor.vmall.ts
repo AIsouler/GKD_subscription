@@ -16,16 +16,21 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      fastQuery: true,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[text="开启消息通知"] - [id="com.hihonor.vmall:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13959029',
+          matches: [
+            '[text="开启消息通知"]',
+            '[vid="notification_close" || vid="iv_close"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13959029',
+            'https://i.gkd.li/i/16776398',
+          ],
         },
       ],
     },
