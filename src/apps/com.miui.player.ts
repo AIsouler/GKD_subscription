@@ -96,5 +96,14 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 13,
+      name: '局部广告-首页卡片广告',
+      fastQuery: true,
+      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+      rules: '[id="com.miui.player:id/ad_close"]',
+      exampleUrls: 'https://e.gkd.li/32ad4d0f-8992-45b0-9e1f-82ce2cc58dcb',
+      snapshotUrls: 'https://i.gkd.li/i/16773614',
+    },
   ],
 });
