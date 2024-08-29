@@ -437,7 +437,7 @@ export default defineGkdApp({
     },
     {
       key: 28,
-      name: '分段广告-订阅号消息页面视频推荐',
+      name: '分段广告-订阅号消息-视频推荐',
       desc: '点击[X]-点击[不喜欢此类视频]-点击[确定]',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -504,7 +504,7 @@ export default defineGkdApp({
     },
     {
       key: 31,
-      name: '分段广告-订阅号消息页面-推荐阅读',
+      name: '分段广告-订阅号消息-推荐阅读',
       desc: '点击关闭',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -578,6 +578,46 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/15144570',
             'https://i.gkd.li/i/15360744',
+          ],
+        },
+      ],
+    },
+    {
+      key: 35,
+      name: '分段广告-订阅号消息内容-广告',
+      desc: '点击下拉框-[不感兴趣]-[与我无关]',
+      activityIds:
+        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[id="feedbackTagContainer"][visibleToUser=true][clickable=true] > TextView[text="广告"]', // 某些微信版本上该节点的`clickable=false`
+          exampleUrls: [
+            'https://e.gkd.li/e73bb653-cc79-455c-958b-38aff6687c37',
+            'https://e.gkd.li/5915f80b-66b9-4441-9d36-3caa3fe1be58',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/16796663', // 内容尾部广告
+            'https://i.gkd.li/i/16796725', // 内容中部广告
+          ],
+        },
+        {
+          key: 1,
+          preKeys: 0,
+          matches: '[text="不感兴趣"][clickable=true]', // 为确保能够关闭尾部广告，此处点击“不感兴趣”而非“关闭此广告”
+          snapshotUrls: [
+            'https://i.gkd.li/i/16796666', // 内容尾部广告
+            'https://i.gkd.li/i/16796729', // 内容中部广告
+          ],
+        },
+        {
+          key: 2,
+          preKeys: 1,
+          matches: '[text="与我无关"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16796674', // 内容尾部广告
+            'https://i.gkd.li/i/16796732', // 内容中部广告
           ],
         },
       ],
