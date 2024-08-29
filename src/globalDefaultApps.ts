@@ -140,6 +140,21 @@ export const blackListAppIDs: string[] = [
   'com.yangyanghuzhou.heijuan',
   'com.sec.android.app.sbrowser',
   'com.samsung.android.game.gamelab',
+  'com.Twilight.tools',
+  'com.miui.securitymanager',
+  'com.mipay.wallet',
+  'com.google.android.documentsui',
+  'com.android.settings',
+  'com.miui.creation',
+  'com.xiaomi.scanner',
+  'com.miui.gallery',
+  'com.yozo.office',
+  'com.miui.video',
+  'com.xiaomi.wpslauncher',
+  'com.sevtinge.hyperceiler',
+  'com.dna.tools',
+  'flar2.devcheck',
+  'com.gstarmc.android',
 
   // 系统自带非系统应用
   // 小米
