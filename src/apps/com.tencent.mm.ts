@@ -437,7 +437,7 @@ export default defineGkdApp({
     },
     {
       key: 28,
-      name: '分段广告-订阅号消息页面视频推荐',
+      name: '分段广告-订阅号消息-视频推荐',
       desc: '点击[X]-点击[不喜欢此类视频]-点击[确定]',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -504,7 +504,7 @@ export default defineGkdApp({
     },
     {
       key: 31,
-      name: '分段广告-订阅号消息页面-推荐阅读',
+      name: '分段广告-订阅号消息-推荐阅读',
       desc: '点击关闭',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
@@ -592,7 +592,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            'TextView[text="广告"] <<n [id="feedbackTagContainer"][visibleToUser=true]',
+            '@[id="feedbackTagContainer"][visibleToUser=true] > TextView[text="广告"]',
           exampleUrls: [
             'https://e.gkd.li/e73bb653-cc79-455c-958b-38aff6687c37',
             'https://e.gkd.li/5915f80b-66b9-4441-9d36-3caa3fe1be58',
