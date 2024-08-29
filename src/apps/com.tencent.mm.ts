@@ -592,7 +592,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '@[id="feedbackTagContainer"][visibleToUser=true] > TextView[text="广告"]',
+            '@[id="feedbackTagContainer"][visibleToUser=true][clickable=true] > TextView[text="广告"]', // 某些微信版本上该节点的`clickable=false`
           exampleUrls: [
             'https://e.gkd.li/e73bb653-cc79-455c-958b-38aff6687c37',
             'https://e.gkd.li/5915f80b-66b9-4441-9d36-3caa3fe1be58',
@@ -605,7 +605,7 @@ export default defineGkdApp({
         {
           key: 1,
           preKeys: 0,
-          matches: '[id="dislike"]', // 为确保能够关闭尾部广告，此处点击“不感兴趣”而非“关闭此广告”
+          matches: '[text="不感兴趣"][clickable=true]', // 为确保能够关闭尾部广告，此处点击“不感兴趣”而非“关闭此广告”
           snapshotUrls: [
             'https://i.gkd.li/i/16796666', // 内容尾部广告
             'https://i.gkd.li/i/16796729', // 内容中部广告
@@ -614,7 +614,7 @@ export default defineGkdApp({
         {
           key: 2,
           preKeys: 1,
-          matches: '[id="isdismatch"]',
+          matches: '[text="与我无关"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/16796674', // 内容尾部广告
             'https://i.gkd.li/i/16796732', // 内容中部广告
