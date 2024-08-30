@@ -214,7 +214,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'me.ele.android.emagex.container.EMagexActivity',
           matches:
-            'ViewGroup[childCount=6] > @ViewGroup[clickable=true][index=3] <<n [vid="id_magex_mist_view"]',
+            'ViewGroup[childCount=6] > @ViewGroup[clickable=true][index=3][text=null][childCount=0] <<n [vid="id_magex_mist_view"]',
           exampleUrls: 'https://e.gkd.li/4eae2f9e-18c2-4302-b1dc-79db779a1e50',
           snapshotUrls: 'https://i.gkd.li/i/16775881',
         },
