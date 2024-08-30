@@ -47,5 +47,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
+          matches:
+            'RelativeLayout[childCount=6] > RelativeLayout[childCount=4] + ImageView[clickable=true][index=3][text=null]',
+          exampleUrls: 'https://e.gkd.li/4ab8665e-026f-4101-8299-0300708c91c1',
+          snapshotUrls: 'https://i.gkd.li/i/16812335',
+        },
+      ],
+    },
   ],
 });
