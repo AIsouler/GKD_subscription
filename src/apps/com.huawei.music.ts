@@ -134,10 +134,11 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '局部广告-"我的"页面卡片广告',
+      name: '局部广告-卡片广告',
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.android.mediacenter.MainActivity',
           matches:
@@ -145,6 +146,14 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/b205c209-07c9-49e1-b72d-f9b31d9bc2d9',
           snapshotUrls: 'https://i.gkd.li/i/14193767',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.android.mediacenter.MainActivity',
+          matches: '[vid="ad_close"]',
+          exampleUrls: 'https://e.gkd.li/586d860f-7f7c-41c7-af0f-bc17ac695a1a',
+          snapshotUrls: 'https://i.gkd.li/i/16812666',
         },
       ],
     },
