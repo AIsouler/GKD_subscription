@@ -123,6 +123,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           activityIds: [
             'com.jingdong.app.mall.MainFrameActivity',
             'com.jd.lib.jshop.jshop.JshopMainShopActivity',
