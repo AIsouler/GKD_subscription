@@ -129,7 +129,7 @@ export default defineGkdApp({
           ],
           excludeMatches: [
             'ImageView[desc="关闭页面"] - [text="优惠券"]',
-            'TextView[text="退换/售后"]',
+            'TextView[text="退换/售后"][id=null]',
           ],
           matches:
             '[desc="关闭页面" || desc="关闭按钮"][clickable=true][visibleToUser=true]',
