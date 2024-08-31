@@ -42,6 +42,15 @@ export default defineGkdApp({
           matches: '[vid="ivClose"]',
           snapshotUrls: 'https://i.gkd.li/i/14952807',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[text="反馈"] -4 View[childCount=1] > Image[childCount=0][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/0ed488e1-f0d8-4c5f-a507-af9c2cedd2a1',
+          snapshotUrls: 'https://i.gkd.li/i/16812345',
+        },
       ],
     },
     {

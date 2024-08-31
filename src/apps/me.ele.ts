@@ -205,20 +205,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 11,
-      name: '功能类-下单后自动领取吃货豆',
-      desc: '点击[立即领]',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'me.ele.android.emagex.container.EMagexActivity',
-          matches:
-            'ViewGroup[childCount=6] > @ViewGroup[clickable=true][index=3] <<n [vid="id_magex_mist_view"]',
-          exampleUrls: 'https://e.gkd.li/4eae2f9e-18c2-4302-b1dc-79db779a1e50',
-          snapshotUrls: 'https://i.gkd.li/i/16775881',
-        },
-      ],
-    },
   ],
 });
