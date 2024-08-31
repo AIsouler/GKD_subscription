@@ -123,11 +123,15 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           activityIds: [
             'com.jingdong.app.mall.MainFrameActivity',
             'com.jd.lib.jshop.jshop.JshopMainShopActivity',
           ],
-          excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]',
+          excludeMatches: [
+            'ImageView[desc="关闭页面"] - [text="优惠券"]',
+            'TextView[text="退换/售后"][id=null]',
+          ],
           matches:
             '[desc="关闭页面" || desc="关闭按钮"][clickable=true][visibleToUser=true]',
           snapshotUrls: [
@@ -136,6 +140,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13336847', // 增加excludeMatches: 'ImageView[desc="关闭页面"] - [text="优惠券"]', 避免在该快照误触
             'https://i.gkd.li/i/15416926',
             'https://i.gkd.li/i/15862131',
+            'https://i.gkd.li/i/16818580', // 增加excludeMatches: 'TextView[text="退换/售后"]', 避免在刚刚打开该快照页面时误触（此时activityId并未改变）
           ],
         },
       ],
