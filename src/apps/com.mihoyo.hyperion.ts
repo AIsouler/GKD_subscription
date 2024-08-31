@@ -125,5 +125,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '全屏广告-游戏版本活动',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mihoyo.hyperion.main.popup.HomePopupDialogActivity',
+          matches: '[vid="closeIv"]',
+          exampleUrls: 'https://e.gkd.li/5c54c1cc-95ae-420d-b3af-37e8553a6327',
+          snapshotUrls: 'https://i.gkd.li/i/16818949',
+        },
+      ],
+    },
   ],
 });
