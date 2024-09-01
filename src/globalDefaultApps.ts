@@ -142,7 +142,6 @@ export const blackListAppIDs: string[] = [
   'com.samsung.android.game.gamelab',
   'com.Twilight.tools',
   'com.miui.securitymanager',
-  'com.mipay.wallet',
   'com.google.android.documentsui',
   'com.android.settings',
   'com.miui.creation',
