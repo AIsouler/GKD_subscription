@@ -22,8 +22,8 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '首页右下角浮窗',
+      key: 2,
+      name: '局部广告-首页右下角浮窗',
       desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,
