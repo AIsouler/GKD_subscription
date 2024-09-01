@@ -11,11 +11,20 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           matches: '[vid="tobid_splash_skip_ll"]',
           exampleUrls: 'https://e.gkd.li/03b70de9-9e1d-4362-83df-08a95c2c224f',
           snapshotUrls: 'https://i.gkd.li/i/16451775',
+        },
+        {
+          key: 1,
+          matches:
+            'ImageView[desc="skip_button"] + ViewGroup > TextView[text="跳过"]',
+          exampleUrls: 'https://e.gkd.li/625debfb-faa5-438a-a5ba-5175233ea1d2',
+          snapshotUrls: 'https://i.gkd.li/i/16828285',
         },
       ],
     },
