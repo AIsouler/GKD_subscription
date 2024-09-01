@@ -17,6 +17,13 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/03b70de9-9e1d-4362-83df-08a95c2c224f',
           snapshotUrls: 'https://i.gkd.li/i/16451775',
         },
+        {
+          quickFind: true,
+          activityIds: 'com.nn.accelerator.box.activity.WelcomeActivity',
+          matches:
+            'ImageView[desc="skip_button"] + ViewGroup > TextView[text="跳过"]', // 左上角圆形跳过
+          snapshotUrls: 'https://i.gkd.li/i/16828285',
+        },
       ],
     },
   ],
