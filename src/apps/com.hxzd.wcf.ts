@@ -11,11 +11,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.hxzd.wcf.ui.MainActivity',
-          matches: '[id="com.hxzd.wcf:id/btn_close"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/88897f2d-647e-47f8-8e43-1fe349b3442d',
-          snapshotUrls: 'https://i.gkd.li/i/14155547',
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: ['com.hxzd.wcf.ui.MainActivity', '.ui.SplashActivity'],
+          matches: '[vid="btn_close"]',
+          exampleUrls: 'https://e.gkd.li/be986139-cdbd-4dc7-a52f-6cb1e1a8061c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14155547',
+            'https://i.gkd.li/i/16828682',
+          ],
         },
       ],
     },
