@@ -60,7 +60,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-评论区博主内容推荐',
+      name: '分段广告-评论区博主内容推荐',
       desc: '评论区同一博主其他博文推荐',
       fastQuery: true,
       rules: [
@@ -75,7 +75,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           activityIds: [
             'com.sina.weibo.utils.WeiboDialog$CustomDialog',
             'com.sina.weibo.feed.DetailWeiboActivity',
@@ -241,14 +241,13 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      fastQuery: true,
       name: '分段广告-信息流广告',
       desc: '点击X-点击"不感兴趣"/"不想看到此类内容"',
-      activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+      fastQuery: true,
       rules: [
         {
           key: 0,
-          name: '点击关闭',
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
           matches: '[text="广告"] + [id="com.sina.weibo:id/iv_close_icon"]',
           snapshotUrls: 'https://i.gkd.li/i/13852321',
         },
@@ -275,22 +274,37 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14753916', // 避免在此页面误触
           ],
         },
+        {
+          key: 3,
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          matches: [
+            '[vid="left_img_ad_tag"][visibleToUser=true]',
+            '[vid="close"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/039f312b-0d6a-4316-9737-ead761e8e194',
+          snapshotUrls: 'https://i.gkd.li/i/16828094',
+        },
 
         // 预留key
         {
           preKeys: 0,
           key: 90,
           name: '点击"不感兴趣"',
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
           matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13852322',
         },
         {
-          preKeys: [0, 1],
+          preKeys: [0, 1, 3],
           key: 91,
           name: '点击"不想看到此类内容"',
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
           matches:
             '@LinearLayout[index=1][clickable=true] >2 [text="不想看到此类内容"]',
-          snapshotUrls: 'https://i.gkd.li/i/13958782',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13958782',
+            'https://i.gkd.li/i/16785777',
+          ],
         },
         {
           preKeys: [2],
@@ -380,6 +394,33 @@ export default defineGkdApp({
           ],
           exampleUrls: 'https://e.gkd.li/3fad288d-ba21-44ed-8ebe-f9b4cbde1d3c',
           snapshotUrls: 'https://i.gkd.li/i/16420751',
+        },
+      ],
+    },
+    {
+      key: 23,
+      name: '功能类-关闭猪手提示',
+      desc: '点击[取消]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainTabActivity',
+          matches: ['[text^="猪手超话自动签到失败"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/92e08aea-ae70-4ea8-be65-442f8e2e423d',
+          snapshotUrls: 'https://i.gkd.li/i/16827119',
+        },
+      ],
+    },
+    {
+      key: 24,
+      name: '功能类-关闭点赞时的验证',
+      rules: [
+        {
+          activityIds: '.geetest.GeetCheckActivityForNet',
+          matches:
+            'Button[text^="关闭验证"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7a8ed873-a6e8-4260-9f5c-3ff05d5788db',
+          snapshotUrls: 'https://i.gkd.li/i/16827853',
         },
       ],
     },
