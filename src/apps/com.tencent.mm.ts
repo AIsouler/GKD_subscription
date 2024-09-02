@@ -642,5 +642,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 36,
+      name: '功能类-自动点击[查看原视频]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.chatting.gallery.ImageGalleryUI',
+          matches: '[text^="查看原视频"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5332aff9-05bb-4b44-b832-5e2d9b1c1270',
+          snapshotUrls: 'https://i.gkd.li/i/16833732',
+        },
+      ],
+    },
   ],
 });
