@@ -397,5 +397,32 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 23,
+      name: '功能类-关闭猪手提示',
+      desc: '点击[取消]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainTabActivity',
+          matches: ['[text^="猪手超话自动签到失败"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/92e08aea-ae70-4ea8-be65-442f8e2e423d',
+          snapshotUrls: 'https://i.gkd.li/i/16827119',
+        },
+      ],
+    },
+    {
+      key: 24,
+      name: '功能类-关闭点赞时的验证',
+      rules: [
+        {
+          activityIds: '.geetest.GeetCheckActivityForNet',
+          matches:
+            'Button[text^="关闭验证"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7a8ed873-a6e8-4260-9f5c-3ff05d5788db',
+          snapshotUrls: 'https://i.gkd.li/i/16827853',
+        },
+      ],
+    },
   ],
 });
