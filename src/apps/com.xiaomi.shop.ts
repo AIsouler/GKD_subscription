@@ -40,5 +40,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.activity.MainTabActivity',
+          matches:
+            '[text^="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/16832586',
+        },
+      ],
+    },
   ],
 });
