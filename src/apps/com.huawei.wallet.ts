@@ -35,5 +35,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '分段广告-首页卡片广告',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: '.view.MainActivity',
+          matches: '[vid="ad_sign_text_and_feedback"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/11edaf9a-f54c-489c-99e0-78da25a5cc9b',
+          snapshotUrls: 'https://i.gkd.li/i/16833449',
+        },
+        {
+          preKeys: [0],
+          activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
+          matches: '[text="直接关闭"]',
+          exampleUrls: 'https://e.gkd.li/f0d67fb4-ccdb-443b-8e4e-9dff2242a84f',
+          snapshotUrls: 'https://i.gkd.li/i/16833452',
+        },
+      ],
+    },
   ],
 });
