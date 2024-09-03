@@ -64,10 +64,15 @@ export default defineGkdApp({
           key: 2,
           name: '快手广告',
           fastQuery: true,
-          activityIds: 'com.xyhui.start.LoadingActivity',
+          activityIds: [
+            'com.xyhui.start.PUMainActivity',
+            'com.xyhui.start.LoadingActivity',
+          ],
           matches:
-            'ImageView < @ViewGroup[clickable=true] < * <2 * + * >3 [text="广告"]',
+            'ImageView < @ViewGroup[clickable=true] < * <2 * +n * >(1,3) [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/1d51a37a-0444-4850-983c-3646b494204a',
           snapshotUrls: [
+            'https://i.gkd.li/i/16837806',
             'https://i.gkd.li/i/13259196',
             'https://i.gkd.li/i/13259198',
           ],
