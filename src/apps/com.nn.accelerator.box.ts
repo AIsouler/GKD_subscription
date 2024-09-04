@@ -28,5 +28,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '全屏广告-活动通知',
+      fastQuery: true,
+      rules: [
+        {
+          key: 1,
+          matches: '[id="com.nn.accelerator.box:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16869245',
+        },
+      ],
+    },
   ],
 });
