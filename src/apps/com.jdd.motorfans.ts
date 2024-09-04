@@ -73,10 +73,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.jdd.motorfans.MTMainActivity',
+          activityIds: [
+            'com.jdd.motorfans.MTMainActivity',
+            '.modules.detail.DetailActivity2',
+          ],
           matches: '[vid="close_b_t_a_i_b_no_compliance"]',
           exampleUrls: 'https://e.gkd.li/daf8ea52-a935-4e58-9e27-c5cb28fa9cf0',
-          snapshotUrls: 'https://i.gkd.li/i/16685033',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16685033',
+            'https://i.gkd.li/i/16859608',
+          ],
         },
       ],
     },
