@@ -17,12 +17,22 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-开屏优惠券领取/使用',
+      name: '功能类-首页优惠券弹窗自动点击领取/使用',
       fastQuery: true,
-      rules: '[id="com.steampy.app:id/coupon_right"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/16860018',
-        'https://i.gkd.li/i/16860017',
+      matchTime: 10000,
+      rules: [
+        {
+          activityIds: '.activity.common.MainActivity',
+          matches: '[vid="coupon_right"]',
+          exampleUrls: [
+            'https://e.gkd.li/2e87decb-54ba-4f8b-9330-f037c220d2d9',
+            'https://e.gkd.li/b2e256c2-c606-430c-afa9-3cd02f4d56c2',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/16860018',
+            'https://i.gkd.li/i/16860017',
+          ],
+        },
       ],
     },
   ],
