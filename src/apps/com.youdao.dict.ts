@@ -39,11 +39,11 @@ export default defineGkdApp({
         {
           key: 0,
           name: '首页-弹窗广告',
+          fastQuery: true,
           activityIds: [
             'com.youdao.dict.activity.MainActivity',
             'com.youdao.dict.activity.DictSplashActivity',
           ],
-          fastQuery: true,
           matches: '@ImageView[id="com.youdao.dict:id/iv_close_bt"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12893419',
@@ -53,22 +53,25 @@ export default defineGkdApp({
         {
           key: 1,
           name: '学习页面-弹窗广告',
+          fastQuery: true,
           activityIds: [
             'com.youdao.dict.edu.main.MainPopDialog',
             'com.youdao.dict.activity.MainActivity',
           ],
-          fastQuery: true,
-          matches: '@ImageView[id="com.youdao.dict:id/iv_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12893450',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12893450',
+            'https://i.gkd.li/i/16859556',
+          ],
         },
         {
           key: 2,
           name: '抽奖机会-弹窗广告',
+          fastQuery: true,
           activityIds: [
             'com.youdao.dict.activity.DictSplashActivity',
             'com.youdao.dict.activity.DictHotBootSplashActivity',
           ],
-          fastQuery: true,
           matches: '[vid="skip_bottom_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13931202',
@@ -77,9 +80,9 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          fastQuery: true,
           name: '首页-礼包弹窗',
           activityIds: 'com.youdao.dict.activity.MainActivity',
-          fastQuery: true,
           matches: '[vid="image"] + [vid="close"]',
           snapshotUrls: 'https://i.gkd.li/i/14296482',
         },
