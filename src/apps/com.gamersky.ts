@@ -24,6 +24,12 @@ export default defineGkdApp({
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/16333782',
         },
+        {
+          key: 2,
+          matches: '[vid="iv_notification_fragment_news"]',
+          exampleUrls: 'https://e.gkd.li/4b7fd3fe-8467-49e3-93af-64515416911c',
+          snapshotUrls: 'https://i.gkd.li/i/16860311',
+        },
       ],
     },
     {
