@@ -12,11 +12,30 @@ export default defineGkdApp({
       matchTime: 15000,
       resetMatch: 'app',
       rules: [
+		{
+		  matches: [
+            '[text^="跳过"][text.length<=5]'
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/16893223'
+          ]
+		}
+      ]
+    },
+	{
+	  key: 2,
+      name: '功能类-每日签到',
+      desc: '点击[签到]',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          matches: ['[text^="跳过"][text.length<=5]'],
-          snapshotUrls: ['https://i.gkd.li/i/16893223'],
+          activityIds: '.activity.frame.MainFrameActivity',
+          matches: 'Button[text="签到"]',
+          snapshotUrls: 'https://i.gkd.li/i/16897712',
         },
       ],
-    },
-  ],
+	}
+  ]
 });
