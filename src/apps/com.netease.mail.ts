@@ -15,14 +15,12 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          excludeMatches: '[id="com.netease.mail:id/ad_skip"][clickable=false]',
-          matches: '[text*="跳过"][text.length<=10]',
+          excludeMatches: '[vid="ad_skip"][clickable=false]',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12893573',
-            'https://i.gkd.li/i/12923776',
             'https://i.gkd.li/i/13195662',
-            'https://i.gkd.li/i/12818335',
-            'https://i.gkd.li/i/13206298', // 使用 excludeMatches 防止提前触发规则
+            'https://i.gkd.li/i/16883928',
+            'https://i.gkd.li/i/14900326', // 使用 excludeMatches 防止提前触发规则
           ],
         },
         {
@@ -37,11 +35,11 @@ export default defineGkdApp({
             left: 'width * 0.9016',
             top: 'width * 0.1557',
           },
-          excludeMatches: '[text*="跳过"][text.length<=10]',
-          matches: '[id="com.netease.mail:id/ad_view"]',
+          matches: '[id="com.netease.mail:id/animation_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13207736',
-            'https://i.gkd.li/i/14900326', // 使用 excludeMatches 防止提前触发规则
+            'https://i.gkd.li/i/14900326', // 防止提前触发规则
+            'https://i.gkd.li/i/16892947', // 防止提前触发规则
           ],
         },
       ],
