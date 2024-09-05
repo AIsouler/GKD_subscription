@@ -16,6 +16,15 @@ export default defineGkdApp({
           matches: ['[text^="跳过"][text.length<=5]'],
           snapshotUrls: ['https://i.gkd.li/i/16893223'],
         },
+        {
+          activityIds: 'com.kuangxiangciweimao.novel.activity.WelcomeActivity',
+          matches: 'FrameLayout +n View',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16899063',
+            'https://i.gkd.li/i/16899066',
+            'https://i.gkd.li/i/16899125',
+          ],
+        },
       ],
     },
     {
