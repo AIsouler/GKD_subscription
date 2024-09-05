@@ -5,13 +5,18 @@ export default defineGkdApp({
   name: '刺猬猫阅读',
   groups: [
     {
-      key: 0,
       name: '开屏广告',
-      matchTime: 10000,
+      key: 0,
       actionMaximum: 1,
+      order: -10,
+      matchTime: 15000,
       resetMatch: 'app',
-      rules: '[id="com.kuangxiangciweimao.novel:id/mTasksView"]',
-      snapshotUrls: 'https://i.gkd.li/i/13056248',
+      rules: [
+        {
+          matches: ['[text^="跳过"][text.length<=5]'],
+          snapshotUrls: ['https://i.gkd.li/i/16893223'],
+        },
+      ],
     },
   ],
 });
