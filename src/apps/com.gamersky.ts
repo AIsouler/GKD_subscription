@@ -26,9 +26,12 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          matches: '[vid="iv_notification_fragment_news"]',
+          matches: '[vid="ms_skipView"]', // vid="iv_notification_fragment_news" 并非跳过节点，只是位置相同
           exampleUrls: 'https://e.gkd.li/4b7fd3fe-8467-49e3-93af-64515416911c',
-          snapshotUrls: 'https://i.gkd.li/i/16860311',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16860311',
+            'https://i.gkd.li/i/16902939', // 防止误触
+          ],
         },
       ],
     },
