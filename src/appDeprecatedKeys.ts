@@ -215,7 +215,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.baidu.tieba',
     name: '百度贴吧',
-    deprecatedKeys: [4],
+    deprecatedKeys: [4, 8],
   },
   {
     id: 'com.baidu.xin.aiqicha',
