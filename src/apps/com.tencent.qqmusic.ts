@@ -137,7 +137,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '全屏广告-推荐开启高品质音质弹窗',
+      name: '全屏广告-高品质音质弹窗',
       desc: '点击关闭',
       rules: [
         {
@@ -147,6 +147,15 @@ export default defineGkdApp({
           matches:
             '[text^="推荐您开启臻品音质"] -3 [desc="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14549936',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
+          matches:
+            '[id="android:id/content"] >4 FrameLayout[childCount=6] > FrameLayout[childCount=1][text=null][index=1] > ImageView[visibleToUser=true][childCount=0]',
+          exampleUrls: 'https://e.gkd.li/bde2d326-6b44-4d4d-b8f6-8bfeb97d7e29',
+          snapshotUrls: 'https://i.gkd.li/i/16914135',
         },
       ],
     },
