@@ -87,6 +87,21 @@ export default defineGkdApp({
           matches: '@ImageView[visibleToUser=true] -2 * >3 [text="推荐"]',
           snapshotUrls: 'https://i.gkd.li/i/14668232',
         },
+        {
+          key: 8,
+          fastQuery: true,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + ViewGroup >2 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/cfd83f2b-580d-4659-8966-eb5f4fe21ecd',
+          snapshotUrls: 'https://i.gkd.li/i/16939767',
+        },
+        {
+          key: 9,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] - RelativeLayout > RelativeLayout > RelativeLayout[childCount=2] > ViewPager[childCount=2] > FrameLayout[childCount=1][id=null] >3 ImageView[childCount=0][id=null][text=null]',
+          exampleUrls: 'https://e.gkd.li/cfd83f2b-580d-4659-8966-eb5f4fe21ecd',
+          snapshotUrls: 'https://i.gkd.li/i/16939767',
+        },
       ],
     },
   ],
