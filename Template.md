@@ -11,11 +11,13 @@
 
 ## 说明
 
-**仅启用 `开屏广告` 一类规则，其它所有规则均需手动打开，规则类别里可以批量开启某一类规则**
+- **仅启用 `开屏广告` 一类规则，其它所有规则均需手动打开，规则类别里可以批量开启某一类规则**
+
+- **已适配的规则需要等待发布更新才能生效，在 `GKD订阅界面`下拉就能检测是否有更新，也可以在此 [点击查看更新日志](https://github.com/AIsouler/GKD_subscription/releases)**
 
 **订阅链接：**
 
-- npmmirror源（国内）
+- npmmirror源（大陆用户推荐）
 
 ```txt
 https://registry.npmmirror.com/@aisouler/gkd_subscription/latest/files/dist/AIsouler_gkd.json5
