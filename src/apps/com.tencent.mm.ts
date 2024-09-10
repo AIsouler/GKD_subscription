@@ -655,5 +655,27 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 37,
+      name: '全屏广告-小程序弹窗广告',
+      desc: '点击关闭',
+      matchTime: 20000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+          matches:
+            '@ImageView[visibleToUser=true][childCount=0][text=null] < FrameLayout[childCount=1] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] - FrameLayout >4 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/d2b12af6-c204-4da7-8553-4765ef8b8c31',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13459614',
+            'https://i.gkd.li/i/16943989',
+            'https://i.gkd.li/i/16920797',
+          ],
+        },
+      ],
+    },
   ],
 });
