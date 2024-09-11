@@ -36,8 +36,15 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            'ImageView < @ViewGroup[clickable=true] <<n ViewGroup +n ViewGroup [text="广告"]',
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] < ViewGroup <5 ViewGroup + ViewGroup [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14814374',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches: '[vid="entrance_image"] + [vid="close"]',
+          exampleUrls: 'https://e.gkd.li/bd53a023-f83a-45ae-b58e-c7369f29bb2e',
+          snapshotUrls: 'https://i.gkd.li/i/16965108',
         },
       ],
     },

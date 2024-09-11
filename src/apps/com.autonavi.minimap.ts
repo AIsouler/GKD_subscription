@@ -111,7 +111,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
           matches:
-            '@ImageView < ViewGroup[clickable=true] -2 * > View[text^="高德购票" && text$="优惠"] <<n [vid="mapInteractiveRelativeLayout"]',
+            '@ImageView[childCount=0] < ViewGroup[clickable=true] -2 * > View[text^="高德购票" && text$="优惠"] <<n [vid="mapInteractiveRelativeLayout"]',
           exampleUrls: 'https://e.gkd.li/59408741-4847-4395-ace5-b1e14ee24cec',
           snapshotUrls: 'https://i.gkd.li/i/16960157',
         },
