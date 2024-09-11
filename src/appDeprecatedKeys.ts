@@ -558,6 +558,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '喵趣漫画',
     deprecatedKeys: [1],
   },
+  {
+    id: 'com.huawei.android.thememanager',
+    name: '华为主题',
+    deprecatedKeys: [3],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
