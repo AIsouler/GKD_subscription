@@ -558,23 +558,26 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          excludeMatches:
-            'Button[desc="使用密码"] < * <2 * >6 [vid="kinda_button_impl_wrapper"][desc="支付"]',
-          matches: '[vid="kinda_button_impl_wrapper"][desc="立即支付"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/13fd1e89-6d75-4efe-90d6-91687de8c9b1',
+          excludeMatches: [
+            'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
+            '[text="请验证指纹" || text="使用指纹"] <<n [vid="container_layout"]',
+          ],
+          matches:
+            '[vid="kinda_button_impl_wrapper"][desc$="支付"][desc.length<5]',
           snapshotUrls: [
             'https://i.gkd.li/i/15144571',
             'https://i.gkd.li/i/15360745',
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/16962643',
+            'https://i.gkd.li/i/16962673',
           ],
         },
         {
           preKeys: [0],
           key: 1,
           matches:
-            'Button[desc="使用密码"] < * <2 * >6 [vid="kinda_button_impl_wrapper"][desc="支付"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/69380aa0-e6d2-4ea4-8ee7-6a1e45889e6c',
+            'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15144570',
             'https://i.gkd.li/i/15360744',
