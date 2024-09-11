@@ -560,7 +560,7 @@ export default defineGkdApp({
           key: 0,
           excludeMatches: [
             'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
-            '[text="请验证指纹" || text="使用指纹"] <<n [vid="container_layout"]',
+            '[visibleToUser=true][text="请验证指纹" || text="使用指纹"] <<n [vid="container_layout"]',
           ],
           matches:
             '[vid="kinda_button_impl_wrapper"][desc$="支付"][desc.length<5]',
