@@ -143,5 +143,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 16,
+      name: '局部广告-公交路线页面广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            'ViewGroup[desc="图片"][childCount=2] > @ViewGroup[clickable=true] > ImageView <<n [vid="route_view_group"]',
+          exampleUrls: 'https://e.gkd.li/132266f7-b7b8-4cac-9549-bcbe4314c893',
+          snapshotUrls: 'https://i.gkd.li/i/16960367',
+        },
+      ],
+    },
   ],
 });
