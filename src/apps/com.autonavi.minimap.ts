@@ -97,6 +97,24 @@ export default defineGkdApp({
             'https://m.gkd.li/57941037/071a07d2-c760-4f15-9359-f54bf51b6205',
           snapshotUrls: 'https://i.gkd.li/i/14715295',
         },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            'ViewGroup[desc="图片"][childCount=2] > @ViewGroup[clickable=true] > ImageView[childCount=0] <<n [vid="tab_container_id"]',
+          exampleUrls: 'https://e.gkd.li/132266f7-b7b8-4cac-9549-bcbe4314c893',
+          snapshotUrls: 'https://i.gkd.li/i/16960367',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            'ImageView < @ViewGroup[clickable=true] -2 * > View[text^="高德购票" && text$="优惠"] <<n [vid="mapInteractiveRelativeLayout"]',
+          exampleUrls: 'https://e.gkd.li/59408741-4847-4395-ace5-b1e14ee24cec',
+          snapshotUrls: 'https://i.gkd.li/i/16960157',
+        },
       ],
     },
     {
