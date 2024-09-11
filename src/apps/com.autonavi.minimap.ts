@@ -158,5 +158,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 17,
+      name: '局部广告-公交路线详情页面门票广告',
+      desc: '点击"x"',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            'ImageView < @ViewGroup[clickable=true] -2 * > View[text^="高德购票" && text$="优惠"] <<n [vid="fragment_container"]',
+          exampleUrls: 'https://e.gkd.li/59408741-4847-4395-ace5-b1e14ee24cec',
+          snapshotUrls: 'https://i.gkd.li/i/16960157',
+        },
+      ],
+    },
   ],
 });
