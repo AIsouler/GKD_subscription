@@ -661,7 +661,6 @@ export default defineGkdApp({
       desc: '点击关闭',
       matchTime: 20000,
       actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
