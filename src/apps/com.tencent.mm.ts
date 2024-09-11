@@ -666,6 +666,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+          excludeMatches: '[text="跳过"][visibleToUser=true]', // 防止提前触发导致失效
           matches:
             '@ImageView[visibleToUser=true][childCount=0][text=null] < FrameLayout[childCount=1] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] - FrameLayout >4 [text="广告"]',
           exampleUrls: 'https://e.gkd.li/d2b12af6-c204-4da7-8553-4765ef8b8c31',
@@ -674,6 +675,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16943989',
             'https://i.gkd.li/i/16920797',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16958795',
         },
       ],
     },
