@@ -10,12 +10,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: [
             'dev.xesam.chelaile.app.module.func.SplashActivity',
             'dev.xesam.chelaile.app.module.PanelHostActivity',
           ],
           matches:
-            'ImageView[id^="com.ygkj.chelaile.standard:id/cll_all_pic_close"][visibleToUser=true]',
+            'ImageView[id="com.ygkj.chelaile.standard:id/cll_all_pic_close_1"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13062991',
             'https://i.gkd.li/i/13062984',
@@ -24,10 +25,26 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
+          fastQuery: true,
+          activityIds: [
+            'dev.xesam.chelaile.app.module.PanelHostActivity',
+            'dev.xesam.chelaile.app.module.line.TimeTableActivity',
+          ],
+          matches: '[vid="cll_line_single_ad_close"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13625374',
+            'https://i.gkd.li/i/16956570',
+          ],
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           matches:
-            '[id="com.ygkj.chelaile.standard:id/cll_line_single_ad_close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13625374',
+            'FrameLayout[childCount=2] > FrameLayout[childCount=2] > FrameLayout[childCount=3] > FrameLayout[childCount=1] > @ImageView[visibleToUser=true][childCount=0][text=null] <<n [vid="cll_line_detail_widgets_container"]',
+          exampleUrls: 'https://e.gkd.li/5442e403-7934-4fbf-b837-71d4ed8581cb',
+          snapshotUrls: 'https://i.gkd.li/i/16956583',
         },
       ],
     },
