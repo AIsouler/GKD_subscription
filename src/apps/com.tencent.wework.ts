@@ -53,5 +53,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '分段广告-顶部卡片广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.tencent.wework.launch.WwMainActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - ViewFlipper < RelativeLayout < LinearLayout < LinearLayout < RecyclerView < FrameLayout <2 ViewGroup - RelativeLayout >4 [text="工作台"]',
+          exampleUrls: 'https://e.gkd.li/e0c4aa4a-fd8b-4440-920b-f96eec60baa1',
+          snapshotUrls: 'https://i.gkd.li/i/16977927',
+        },
+        {
+          preKeys: [0],
+          fastQuery: true,
+          activityIds: 'com.tencent.wework.launch.WwMainActivity',
+          matches: '[text="关闭"]',
+          exampleUrls: 'https://e.gkd.li/e4a71c0c-c0ce-4822-ae69-4a3330a28a84',
+          snapshotUrls: 'https://i.gkd.li/i/16977929',
+        },
+      ],
+    },
   ],
 });
