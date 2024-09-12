@@ -91,5 +91,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '分段广告-首页卡片广告',
+      fastQuery: true,
+      activityIds: 'com.youku.v2.HomePageEntry',
+      rules: [
+        {
+          key: 0,
+          matches: '[vid="novel_banner_ad_feed_back"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6ae8cc7b-1302-4f10-b544-8d8265a69610',
+          snapshotUrls: 'https://i.gkd.li/i/16925043',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="就是不感兴趣"]',
+          exampleUrls: 'https://e.gkd.li/be57974c-6656-4619-aed8-c61421f6a748',
+          snapshotUrls: 'https://i.gkd.li/i/16977036',
+        },
+      ],
+    },
   ],
 });
