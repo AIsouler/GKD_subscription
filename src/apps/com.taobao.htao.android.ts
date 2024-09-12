@@ -18,5 +18,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '其他-关闭切换站点提示',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: [
+            '[vid="change_country_layout"]',
+            '[vid="uik_mdButtonClose"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/2b0af049-98c9-43b2-8ae5-a40bf6833e95',
+          snapshotUrls: 'https://i.gkd.li/i/16976226',
+        },
+      ],
+    },
   ],
 });
