@@ -561,7 +561,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.huawei.android.thememanager',
     name: '华为主题',
-    deprecatedKeys: [3],
+    deprecatedKeys: [3, 4, 5, 6],
   },
 ];
 
