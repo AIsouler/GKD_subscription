@@ -14,13 +14,14 @@ export default defineGkdApp({
           activityIds: [
             'dev.xesam.chelaile.app.module.func.SplashActivity',
             'dev.xesam.chelaile.app.module.PanelHostActivity',
+            'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           ],
           matches:
-            'ImageView[id="com.ygkj.chelaile.standard:id/cll_all_pic_close_1"][visibleToUser=true]',
+            '@[vid="cll_all_pic_close_1"][visibleToUser=true] < FrameLayout +(1,2) LinearLayout[childCount=2] > [text$="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13062991',
-            'https://i.gkd.li/i/13062984',
             'https://i.gkd.li/i/13464325',
+            'https://i.gkd.li/i/16987313',
           ],
         },
         {
@@ -29,11 +30,14 @@ export default defineGkdApp({
           activityIds: [
             'dev.xesam.chelaile.app.module.PanelHostActivity',
             'dev.xesam.chelaile.app.module.line.TimeTableActivity',
+            'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           ],
-          matches: '[vid="cll_line_single_ad_close"][visibleToUser=true]',
+          matches:
+            '[vid="cll_line_single_ad_close" || vid="cll_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13625374',
             'https://i.gkd.li/i/16956570',
+            'https://i.gkd.li/i/16987313',
           ],
         },
         {
@@ -45,6 +49,16 @@ export default defineGkdApp({
             'FrameLayout[childCount=2] > FrameLayout[childCount=2] > FrameLayout[childCount=3] > FrameLayout[childCount=1] > @ImageView[visibleToUser=true][childCount=0][text=null] <<n [vid="cll_line_detail_widgets_container"]',
           exampleUrls: 'https://e.gkd.li/5442e403-7934-4fbf-b837-71d4ed8581cb',
           snapshotUrls: 'https://i.gkd.li/i/16956583',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds:
+            'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
+          matches:
+            '@[vid="close_ad_text_link_layout"][visibleToUser=true] - LinearLayout[childCount=2] > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/26c77ba0-8be5-4966-b806-3a566fee8413',
+          snapshotUrls: 'https://i.gkd.li/i/16987313',
         },
       ],
     },
