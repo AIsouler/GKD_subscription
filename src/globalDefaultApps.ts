@@ -79,6 +79,9 @@ export const blackListAppIDs: string[] = [
   'org.telegram.group', // Turrit
   'com.android.chrome', // Chrome
   'org.mozilla.firefox', // Firefox
+  'org.mozilla.firefox_beta', // Firefox Beta
+  'org.mozilla.fenix', // Firefox Nightly
+  'org.mozilla.focus', // Firefox Focus
   'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
   'com.xunmeng.pinduoduo', // 拼多多
   'com.byyoung.setting', //爱玩机工具箱
@@ -173,6 +176,9 @@ export const blackListAppIDs: string[] = [
   'com.duokan.phone.remotecontroller', // 万能遥控
   'com.mfashiongallery.emag', // 小米画报
   'com.miui.thirdappassistant', // 三方应用异常分析
+
+  'com.xiaomi.wpslauncher', // WPS Office PC
+  'com.xiaomi.cajlauncher', // CAJViewer PC
 
   // 三星
   'com.samsung.android.app.cameraassistant',
