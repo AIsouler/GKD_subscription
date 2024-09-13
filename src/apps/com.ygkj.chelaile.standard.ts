@@ -18,6 +18,7 @@ export default defineGkdApp({
           ],
           matches:
             '@[vid="cll_all_pic_close_1"][visibleToUser=true] < FrameLayout +(1,2) LinearLayout[childCount=2] > [text$="广告"]',
+          exampleUrls: 'https://e.gkd.li/7957cdea-6238-4a2b-94bf-8960544258bc',
           snapshotUrls: [
             'https://i.gkd.li/i/13062991',
             'https://i.gkd.li/i/13464325',
@@ -33,11 +34,13 @@ export default defineGkdApp({
             'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           ],
           matches:
-            '[vid="cll_line_single_ad_close" || vid="cll_close"][visibleToUser=true]',
+            '[vid="cll_line_single_ad_close" || vid="cll_close" || vid="cll_card_single_ad_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7d7b7d94-eb64-41a5-a5c2-c8418d6371a1',
           snapshotUrls: [
             'https://i.gkd.li/i/13625374',
             'https://i.gkd.li/i/16956570',
             'https://i.gkd.li/i/16987313',
+            'https://i.gkd.li/i/16988894',
           ],
         },
         {
