@@ -7,13 +7,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      desc: '关闭青少年模式提醒弹窗',
+      desc: '点击[我知道了]',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        'TextView[id="com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode"] + TextView[id="com.mihoyo.hyperion:id/tv_dialog_i_know"]',
+      fastQuery: true,
+      rules: '[vid="tv_dialog_go_to_teenage_mode"] + [vid="tv_dialog_i_know"]',
+      exampleUrls: 'https://e.gkd.li/db8bb97e-f0f0-4f85-a262-14dd760f812b',
       snapshotUrls: [
-        'https://i.gkd.li/i/12675547',
+        'https://i.gkd.li/i/17002129',
         'https://i.gkd.li/i/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
       ],
     },
