@@ -307,7 +307,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '功能类-自动勾选原图',
-      desc: '发送图片时自动勾选原图',
+      desc: '发送图片时自动勾选原图，可手动取消勾选',
       actionMaximum: 1,
       fastQuery: true,
       activityIds: [
