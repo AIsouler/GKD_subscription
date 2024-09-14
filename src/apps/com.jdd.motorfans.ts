@@ -29,6 +29,14 @@ export default defineGkdApp({
           matches: '@ImageView - RelativeLayout > TextView[text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12826288',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.jdd.motorfans.MTMainActivity',
+          matches: '[vid="iv_right_top_close"]',
+          exampleUrls: 'https://e.gkd.li/0f4b8d7d-fda4-43ee-b892-3a85d6dae278',
+          snapshotUrls: 'https://i.gkd.li/i/17002101',
+        },
       ],
     },
     {
