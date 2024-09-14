@@ -20,13 +20,18 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] <n * >n [text*="广告"]',
+            '@ImageView[clickable=true][visibleToUser=true] -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n * >n [text*="广告"][childCount=0][id=null][desc=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/13849671',
             'https://i.gkd.li/i/14645530',
             'https://i.gkd.li/i/14178516',
             'https://i.gkd.li/i/13849442',
             'https://i.gkd.li/i/14178979',
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/17002118',
+            'https://i.gkd.li/i/17002119',
+            'https://i.gkd.li/i/17002120',
           ],
         },
         {
