@@ -7,13 +7,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '青少年模式',
-      desc: '关闭青少年模式提醒弹窗',
+      desc: '点击[我知道了]',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        'TextView[id="com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode"] + TextView[id="com.mihoyo.hyperion:id/tv_dialog_i_know"]',
+      fastQuery: true,
+      rules: '[vid="tv_dialog_go_to_teenage_mode"] + [vid="tv_dialog_i_know"]',
+      exampleUrls: 'https://e.gkd.li/db8bb97e-f0f0-4f85-a262-14dd760f812b',
       snapshotUrls: [
-        'https://i.gkd.li/i/12675547',
+        'https://i.gkd.li/i/17002129',
         'https://i.gkd.li/i/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
       ],
     },
@@ -141,15 +143,24 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-游戏版本活动',
+      name: '分段广告-游戏版本活动',
       desc: '点击关闭',
+      fastQuery: true,
+      activityIds: '.main.HyperionMainActivity',
+      exampleUrls: 'https://e.gkd.li/197dfb66-6b42-4fbd-b60c-4d801a8c729c',
       rules: [
         {
-          fastQuery: true,
-          activityIds: '.main.HyperionMainActivity',
+          key: 0,
+          name: '点击关闭',
           matches: '[vid="bottomBarBgIv"] + * > [vid="close"][clickable=true]',
-          exampleUrls: 'https://e.gkd.li/eb0dd2e4-02cc-41ff-a435-7a25f0ebb8b3',
-          snapshotUrls: 'https://i.gkd.li/i/16975915',
+          snapshotUrls: 'https://i.gkd.li/i/16996311',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          name: '点击确定',
+          matches: '[vid="rootLayout"] > [vid="confirmTv"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/16996319',
         },
       ],
     },
