@@ -172,8 +172,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
-          matches:
-            '@ImageView[clickable=true] -2 [text="授权蓝牙"] <<n [vid="map_widget_container"]',
+          matches: '@ImageView[clickable=true] -2 [text="授权蓝牙"]',
           exampleUrls: 'https://e.gkd.li/8aef9184-d2b6-4c49-b729-82e6e76decdc',
           snapshotUrls: 'https://i.gkd.li/i/17002003',
         },
