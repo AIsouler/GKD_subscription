@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: '向日葵远程控制',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[vid="tobid_splash_skip_text"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f41b0367-9161-4329-987d-b2d0ad9ec233',
+          snapshotUrls: 'https://i.gkd.li/i/17004919',
+        },
+      ],
+    },
+    {
       key: 0,
       name: '全屏广告-瓜子会员弹窗',
       desc: '点击右上角[关闭]',
