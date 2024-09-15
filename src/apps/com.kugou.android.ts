@@ -135,5 +135,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][index=1] <2 FrameLayout[childCount=2] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout - FrameLayout >8 [desc="底部导航"] + [text="我的"]',
+          exampleUrls: 'https://e.gkd.li/2b240676-4dac-4375-b238-2d570962efd1',
+          snapshotUrls: 'https://i.gkd.li/i/17004903',
+        },
+      ],
+    },
   ],
 });
