@@ -15,6 +15,10 @@
 
 - **已适配的规则需要等待发布更新才能生效，在 `GKD订阅界面`下拉就能检测是否有更新，也可以在此 [点击查看更新日志](https://github.com/AIsouler/GKD_subscription/releases)**
 
+---
+
+## 订阅
+
 **订阅链接：**
 
 - npmmirror源（大陆用户推荐）
@@ -37,7 +41,9 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List) By [@adproqwq](https://github.com/adproqwq)
 
-查看 [GKD基础使用、规则编写教程](https://github.com/Snoopy1866/blogs/tree/main/software/gkd) By [@Snoopy1866](https://github.com/Snoopy1866)
+在 [GKD官网](https://gkd.li/) 查看 [GKD基础使用教程](https://gkd.li/guide/) 、[常见问题](https://gkd.li/guide/faq) 以及 [API说明](https://gkd.li/api/)
+
+查看 [规则编写教程](https://github.com/Snoopy1866/blogs/blob/main/software/gkd/gkd-rule-tutorial/gkd-rule-tutorial.md) By [@Snoopy1866](https://github.com/Snoopy1866)
 
 您可以使用 [GKD订阅模板](https://github.com/gkd-kit/subscription-template) 快速构建自己的订阅
 
