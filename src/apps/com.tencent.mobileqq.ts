@@ -772,8 +772,7 @@ export default defineGkdApp({
           name: '好友动态详情页广告',
           activityIds: 'com.qzone.reborn.base.QZoneTransparentShellActivity',
           fastQuery: true,
-          matches:
-            '[id="com.tencent.mobileqq.qzone_df_impl:id/gzw"][desc="关闭广告"][clickable=true]',
+          matches: '@[desc="关闭广告"][visibleToUser=true] -3 [text^="活动"]',
           exampleUrls: 'https://e.gkd.li/b78a3e44-3bd9-445d-9199-e989269c2be3',
           snapshotUrls: 'https://i.gkd.li/i/17009847',
         },
