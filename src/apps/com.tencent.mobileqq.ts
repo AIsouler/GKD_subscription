@@ -85,6 +85,7 @@ export default defineGkdApp({
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
           ],
           matches: 'View[desc="广告"] + ImageView[clickable=true]',
+          exampleUrls: 'https://e.gkd.li/21ede3d4-b1b7-4e85-b4d3-2c4876420a71',
           snapshotUrls: [
             'https://i.gkd.li/i/12847842',
             'https://i.gkd.li/i/13787345',
@@ -765,6 +766,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15388608',
             'https://i.gkd.li/i/16154341',
           ],
+        },
+        {
+          key: 3,
+          name: '好友动态详情页广告',
+          activityIds: 'com.qzone.reborn.base.QZoneTransparentShellActivity',
+          fastQuery: true,
+          matches: '@[desc="关闭广告"][visibleToUser=true] -3 [text^="活动"]',
+          exampleUrls: 'https://e.gkd.li/b78a3e44-3bd9-445d-9199-e989269c2be3',
+          snapshotUrls: 'https://i.gkd.li/i/17009847',
         },
       ],
     },
