@@ -53,15 +53,27 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
-      activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
       rules: [
         {
+          key: 0,
           forcedTime: 5000,
+          activityIds:
+            'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
           matches: 'View[id="js_close_btn"][desc="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13115121',
             'https://i.gkd.li/i/14798904',
           ],
+        },
+        {
+          key: 1,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.AppStarterActivity',
+          matches: '[desc="关闭弹窗"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/47107dd3-b19a-4486-a0d1-6d9aa62ee722',
+          snapshotUrls: 'https://i.gkd.li/i/17057551',
         },
       ],
     },
