@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: '喜马拉雅',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7ef0b1fb-aaa0-475d-b6b4-e927776adb27',
+          snapshotUrls: 'https://i.gkd.li/i/17068586',
+        },
+      ],
+    },
+    {
       key: 0,
       name: '局部广告-首页右侧浮动广告',
       fastQuery: true,
