@@ -134,7 +134,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/14800704',
             'https://i.gkd.li/i/17079025', // add @ImageView[clickable=true]避免在此误触
-            ],
+          ],
         },
         {
           key: 1,
