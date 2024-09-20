@@ -670,12 +670,14 @@ export default defineGkdApp({
       name: '全屏广告-小程序弹窗广告',
       desc: '点击关闭',
       matchTime: 20000,
-      actionMaximum: 1,
+      // actionMaximum: 1,
+      actionCd: 300, // 有时候需要点击多次
+      actionDelay: 300, // 过早触发有概率无效
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
-          excludeMatches: '[text="跳过"][visibleToUser=true]', // 防止提前触发导致失效
+          excludeMatches: '[text="跳过"][visibleToUser=true]', // 防止提前触发
           matches:
             '@ImageView[visibleToUser=true][childCount=0][text=null] < FrameLayout[childCount=1] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] - FrameLayout >4 [text="广告"]',
           exampleUrls: 'https://e.gkd.li/d2b12af6-c204-4da7-8553-4765ef8b8c31',
