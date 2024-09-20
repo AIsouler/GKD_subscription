@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: 'i 主题',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/57b7401d-4aeb-4480-9ea7-62a58da28eed',
+          snapshotUrls: 'https://i.gkd.li/i/17072382',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-推广弹窗',
       desc: '点击关闭',
