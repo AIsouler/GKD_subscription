@@ -37,6 +37,13 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/0f4b8d7d-fda4-43ee-b892-3a85d6dae278',
           snapshotUrls: 'https://i.gkd.li/i/17002101',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.jdd.motorfans.MTMainActivity',
+          matches: 'RelativeLayout > ImageView[id="com.jdd.motorfans:id/ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/17078108',
+        },
       ],
     },
     {
