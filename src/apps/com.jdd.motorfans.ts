@@ -41,7 +41,7 @@ export default defineGkdApp({
           key: 3,
           fastQuery: true,
           activityIds: 'com.jdd.motorfans.MTMainActivity',
-          matches: 'RelativeLayout > ImageView[id="com.jdd.motorfans:id/ad_close"]',
+          matches: '[vid="ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/17078108',
         },
       ],
