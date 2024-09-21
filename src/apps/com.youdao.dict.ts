@@ -195,11 +195,16 @@ export default defineGkdApp({
           key: 3,
           name: '单词页面下方学习技巧',
           fastQuery: true,
-          activityIds: 'com.youdao.dict.activity.MainActivity',
+          activityIds: [
+            'com.youdao.dict.activity.MainActivity',
+            '.activity.DictQueryActivity',
+          ],
           matches: '[vid="course_one_course_close"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/0c033574-4bae-4bcc-bcf9-901ce8b5061b',
-          snapshotUrls: 'https://i.gkd.li/i/14895765',
+          exampleUrls: 'https://e.gkd.li/61aa8078-fe01-43ee-8989-1ab824f9a0d3',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14895765',
+            'https://i.gkd.li/i/17082441',
+          ],
         },
       ],
     },
