@@ -230,9 +230,10 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-首页-弹窗广告',
-      resetMatch: 'app',
-      actionMaximum: 1,
       fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -251,6 +252,14 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/c8131a06-837a-4c42-9a70-9e8a7fe21334',
           snapshotUrls: 'https://i.gkd.li/i/14567294',
+        },
+        {
+          key: 2,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
+          exampleUrls: 'https://e.gkd.li/8b128ebc-ce9c-4345-8094-769f9afa8cd6',
+          snapshotUrls: 'https://i.gkd.li/i/17088095',
         },
       ],
     },
