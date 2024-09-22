@@ -18,10 +18,9 @@ export default defineGkdApp({
       ],
       snapshotUrls: [
         'https://i.gkd.li/i/12476484',
-        'https://i.gkd.li/i/12706127', // activityIds: 'com.miui.home.launcher.Launcher',
-        'https://i.gkd.li/i/12864707', // activityIds: 'gov.pianzong.androidnga.activity.LoadingActivity',
-        'https://i.gkd.li/i/12911882', // activityIds: 'gov.pianzong.androidnga.activity.WarmstartActivity'
-        'https://i.gkd.li/i/13798686', // id="gov.pianzong.androidnga:id/ksad_skip_view_skip"
+        'https://i.gkd.li/i/12864707',
+        'https://i.gkd.li/i/12911882',
+        'https://i.gkd.li/i/13798686',
       ],
     },
     {
