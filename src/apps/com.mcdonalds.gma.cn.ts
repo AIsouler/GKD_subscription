@@ -7,12 +7,27 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-通知权限',
-      desc: '选择[取消]',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.mcdonalds.gma.cn:id/tv_cancel"][text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/13259242',
+      desc: '点击[取消]',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.MainActivity',
+          matches: ['[text*="开启通知服务"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/64df0999-cd85-48c3-871f-5e65e9131d6e',
+          snapshotUrls: 'https://i.gkd.li/i/13259242',
+        },
+        {
+          key: 1,
+          activityIds: 'com.mcd.order.activity.OrderDetailActivity',
+          matches: '@[vid="v_cancel"] + [vid="v_open"]',
+          exampleUrls: 'https://e.gkd.li/123fc7d2-b2a3-41fb-8e4c-50f625b195c4',
+          snapshotUrls: 'https://i.gkd.li/i/17092374',
+        },
+      ],
     },
     {
       key: 2,
