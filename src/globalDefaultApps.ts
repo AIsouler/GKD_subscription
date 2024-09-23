@@ -101,6 +101,9 @@ export const blackListAppIDs: string[] = [
   'com.sonkins.tguitar', // Guitar Tuner
   'com.eumlab.android.prometronome', // Pro Metronome
   'cn.edu.buaa.wxwork', // 智慧北航
+  'io.github.muntashirakon.AppManager', // App Manager
+  'moe.shizuku.redirectstorage', // 存储空间隔离
+  'web1n.stopapp', // 小黑屋
 
   'com.canghai.haoka',
   'com.xy.td',

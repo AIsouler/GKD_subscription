@@ -597,8 +597,9 @@ export default defineGkdApp({
       name: '分段广告-订阅号消息内容-广告',
       desc: '点击下拉框-[不感兴趣]-[与我无关]',
       activityIds: [
-        'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
-        'com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI',
+        '.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
+        '.plugin.webview.ui.tools.fts.MMSosWebViewUI',
+        '.plugin.webview.ui.tools.MMWebViewUI',
       ],
       rules: [
         {
@@ -617,6 +618,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12642232', // ui.TmplWebViewMMUI
             'https://i.gkd.li/i/13199281', // ui.TmplWebViewTooLMpUI
             'https://i.gkd.li/i/14006180', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
+            'https://i.gkd.li/i/17093010', // com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI
             'https://i.gkd.li/i/15198464', // 使用excludeMatches防止在文章末尾广告关闭后误触
             'https://i.gkd.li/i/16796663', // 内容尾部广告
             'https://i.gkd.li/i/16796725', // 内容中部广告
