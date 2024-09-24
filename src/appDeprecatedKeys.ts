@@ -563,6 +563,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '华为主题',
     deprecatedKeys: [3, 4, 5, 6],
   },
+  {
+    id: 'com.ximalaya.ting.android',
+    name: '喜马拉雅',
+    deprecatedKeys: [9],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
