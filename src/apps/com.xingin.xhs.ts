@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: '小红书',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[vid="splash_count_down_view"]',
+          exampleUrls: 'https://e.gkd.li/6ed22307-ce1d-479e-8a8d-a6fe4ffa614c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17109105',
+            'https://i.gkd.li/i/17108010', // 全局规则在此误触
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '权限提示-通知权限',
       fastQuery: true,
