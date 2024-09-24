@@ -595,7 +595,7 @@ export default defineGkdApp({
     {
       key: 35,
       name: '分段广告-订阅号消息内容-广告',
-      desc: '点击下拉框-[不感兴趣]-[与我无关]',
+      desc: '点击下拉框-[关闭此广告]/[不感兴趣]-[与我无关]',
       activityIds: [
         '.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
         '.plugin.webview.ui.tools.fts.MMSosWebViewUI',
@@ -619,25 +619,42 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13199281', // ui.TmplWebViewTooLMpUI
             'https://i.gkd.li/i/14006180', // com.tencent.mm.plugin.webview.ui.tools.fts.MMSosWebViewUI
             'https://i.gkd.li/i/17093010', // com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI
-            'https://i.gkd.li/i/15198464', // 使用excludeMatches防止在文章末尾广告关闭后误触
             'https://i.gkd.li/i/16796663', // 内容尾部广告
             'https://i.gkd.li/i/16796725', // 内容中部广告
             'https://i.gkd.li/i/16798663', // clickable=false，使用clickable=true避免误触
             'https://i.gkd.li/i/15198455', // 无id
           ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/15198464', // 防止在文章末尾广告关闭后误触
+          ],
         },
         {
-          // 第二段
+          // 第二段-有“关闭此广告”按钮，则直接关闭该广告
+          preKeys: [0],
+          key: 20,
+          matches: '[text="关闭此广告"][clickable=true][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16796729', // 内容中部广告
+            'https://i.gkd.li/i/17113565', // 在某些情况下，点击“不感兴趣”会导致无法执行下一步操作，因此点击“关闭此广告”
+          ],
+        },
+        {
+          // 第二段-无“关闭此广告”按钮，则点击“不感兴趣”，需继续执行第三段
           preKeys: [0],
           key: 25,
-          excludeMatches: '[text="感谢你的反馈"][visibleToUser=true]',
+          excludeMatches: [
+            '[text="感谢你的反馈"][visibleToUser=true]',
+            '[text="关闭此广告"][clickable=true][visibleToUser=true]',
+          ],
           matches: '[text="不感兴趣"][clickable=true][visibleToUser=true]', // 为确保能够关闭尾部广告，此处点击“不感兴趣”而非“关闭此广告”
           snapshotUrls: [
             'https://i.gkd.li/i/16796666', // 内容尾部广告
-            'https://i.gkd.li/i/16796729', // 内容中部广告
-            'https://i.gkd.li/i/15061424', // 使用excludeMatches防止在文章末尾广告关闭后误触
             'https://i.gkd.li/i/16798661', // clickable=false，使用clickable=true避免误触
             'https://i.gkd.li/i/15198459', // 无id
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/15061424', // 使用excludeMatches防止在文章末尾广告关闭后误触'
+            'https://i.gkd.li/i/16796729', // 内容中部广告，若同时存在“关闭此广告”与“不感兴趣”，则点击前者
           ],
         },
         {
