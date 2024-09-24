@@ -104,6 +104,11 @@ export const blackListAppIDs: string[] = [
   'io.github.muntashirakon.AppManager', // App Manager
   'moe.shizuku.redirectstorage', // 存储空间隔离
   'web1n.stopapp', // 小黑屋
+  'com.shatyuka.zhiliao', // 知了
+  'com.adobe.reader', // Adobe Acrobat
+  'org.wikipedia', // 维基百科
+  'org.kiwix.kiwixmobile', // Kiwix
+  'com.brakefield.painter', // Infinte Painter
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -182,6 +187,7 @@ export const blackListAppIDs: string[] = [
 
   'com.xiaomi.wpslauncher', // WPS Office PC
   'com.xiaomi.cajlauncher', // CAJViewer PC
+  'com.mi.car.padapp', // 小米汽车扩展屏
 
   // 三星
   'com.samsung.android.app.cameraassistant',
