@@ -101,8 +101,9 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '分段广告-首页-推荐列表广告',
+      name: '分段广告-信息流广告',
       desc: '点击关闭-点击屏蔽',
+      fastQuery: true,
       activityIds: [
         'com.ximalaya.ting.android.host.activity.MainActivity',
         'com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
@@ -110,26 +111,21 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
-          matches: '[id="com.ximalaya.ting.android:id/xm_ad_close_real"]',
-          snapshotUrls: 'https://i.gkd.li/i/12506253',
-        },
-        {
-          key: 1,
           matches:
-            '[id="com.ximalaya.ting.android:id/main_ad_dynamic_lay"] >(4) ImageView + ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12701374',
-        },
-        {
-          preKeys: [0, 1],
-          name: '点击关闭原因"屏蔽"',
-          fastQuery: true,
-          matches:
-            '@[name="android.widget.RelativeLayout" || name="android.widget.LinearLayout"] > [text="屏蔽"]',
+            '[vid="xm_ad_close_real" || vid="main_close_layout"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12506258',
+            'https://i.gkd.li/i/17112326',
+            'https://i.gkd.li/i/17112313',
+          ],
+        },
+        {
+          preKeys: [0],
+          matches: '@[clickable=true] > [text="屏蔽" || text="直接关闭"]',
+          snapshotUrls: [
             'https://i.gkd.li/i/13260487',
-            'https://i.gkd.li/i/13275928', //没有id
+            'https://i.gkd.li/i/13275928',
+            'https://i.gkd.li/i/17111444',
+            'https://i.gkd.li/i/17111452',
           ],
         },
       ],
@@ -179,42 +175,6 @@ export default defineGkdApp({
       rules:
         '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/i/12869426',
-    },
-    {
-      key: 9,
-      name: '分段广告-卡片广告',
-      fastQuery: true,
-      rules: [
-        {
-          key: 0,
-          name: '我的页面-点击卡片右上角关闭按钮',
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches:
-            '[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13194838',
-            'https://i.gkd.li/i/13296565', // [visibleToUser=true]
-          ],
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          name: '我的页面-点击不感兴趣',
-          activityIds:
-            'com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
-          matches:
-            '[id="com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_un_interest"]',
-          snapshotUrls: 'https://i.gkd.li/i/13194839',
-        },
-        {
-          key: 2,
-          name: '有声书分类页面-点击卡片右上角关闭按钮',
-          activityIds:
-            'com.ximalaya.ting.android.host.activity.SplashAdActivity',
-          matches: '[id="com.ximalaya.ting.android:id/main_iv_dislike"]',
-          snapshotUrls: 'https://i.gkd.li/i/13334685',
-        },
-      ],
     },
     {
       key: 10,
