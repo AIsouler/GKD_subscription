@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -21,6 +20,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           position: {
             left: 'width * 0.8833',
             top: 'width * 0.1388',
@@ -34,6 +34,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           position: {
             left: 'width * 0.8666',
             top: 'width * 0.1625',
