@@ -15,7 +15,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           exampleUrls:

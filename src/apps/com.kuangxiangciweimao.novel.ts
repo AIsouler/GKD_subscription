@@ -26,7 +26,6 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           exampleUrls: 'https://e.gkd.li/8359b29b-b99e-4b6e-b748-a10a9f17005c',

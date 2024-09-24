@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,6 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16322789',
         },
@@ -26,6 +26,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           matches: '[vid="ms_skipView"]', // vid="iv_notification_fragment_news" 并非跳过节点，只是位置相同
           exampleUrls: 'https://e.gkd.li/4b7fd3fe-8467-49e3-93af-64515416911c',
           snapshotUrls: [

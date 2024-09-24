@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -25,12 +24,14 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           matches: '[text*="跳过"][visibleToUser=true][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/14553551',
         },
         {
           // 该开屏广告需要点击坐标在跳过按钮下半部分内才能跳过
           key: 2,
+          fastQuery: true,
           position: {
             left: 'width * 0.5',
             top: 'width * 0.6984',

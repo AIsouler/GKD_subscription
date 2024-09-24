@@ -12,7 +12,6 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           snapshotUrls: 'https://i.gkd.li/i/13937324',

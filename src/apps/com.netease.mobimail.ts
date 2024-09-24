@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,6 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           matches:
             '[text*="跳过"][text.length<=10][id!="com.netease.mobimail:id/ad_skip"]',
           snapshotUrls: [
@@ -31,6 +31,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           matches: '[id="com.netease.mobimail:id/ad_skip"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12667519',
