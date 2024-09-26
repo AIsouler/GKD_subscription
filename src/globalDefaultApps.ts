@@ -109,6 +109,9 @@ export const blackListAppIDs: string[] = [
   'org.wikipedia', // 维基百科
   'org.kiwix.kiwixmobile', // Kiwix
   'com.brakefield.painter', // Infinte Painter
+  'me.iacn.biliroaming', // 哔哩漫游
+  'com.termux', // Termux
+  'oss.krtirtho.spotube', // Spotube
 
   'com.canghai.haoka',
   'com.xy.td',
