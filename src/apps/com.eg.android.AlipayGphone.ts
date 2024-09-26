@@ -376,5 +376,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 24,
+      name: '开屏广告-小程序开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$XRiverLite1',
+          matches:
+            '@View[id=null][text=null][childCount=0][visibleToUser=true] < ViewGroup[id=null][text=null][childCount=1][index=parent.childCount.minus(1)] <7 ViewGroup <2 ViewGroup < ViewGroup < LinearLayout < RelativeLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/a243e31f-f1b5-4689-8d1a-c53250be651e',
+          snapshotUrls: 'https://i.gkd.li/i/17141999',
+        },
+      ],
+    },
   ],
 });
