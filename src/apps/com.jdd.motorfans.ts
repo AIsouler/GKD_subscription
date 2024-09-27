@@ -91,12 +91,14 @@ export default defineGkdApp({
           activityIds: [
             'com.jdd.motorfans.MTMainActivity',
             '.modules.detail.DetailActivity2',
+            '.cars.MotorDetailActivity2',
           ],
           matches: '[vid="close_b_t_a_i_b_no_compliance"]',
           exampleUrls: 'https://e.gkd.li/daf8ea52-a935-4e58-9e27-c5cb28fa9cf0',
           snapshotUrls: [
             'https://i.gkd.li/i/16685033',
             'https://i.gkd.li/i/16859608',
+            'https://i.gkd.li/i/17162753',
           ],
         },
       ],
