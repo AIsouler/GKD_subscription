@@ -124,5 +124,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 16,
+      name: '功能类-自动允许分享文件',
+      desc: '允许应用通过分享获取手机文件',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.miui.wakepath.ui.ConfirmStartActivity',
+          matches: ['[text="分享文件"]', '[text="允许"]'],
+          exampleUrls: 'https://e.gkd.li/02c752e7-3dd9-47dc-819b-e8246de29b6a',
+          snapshotUrls: 'https://i.gkd.li/i/17174152',
+        },
+      ],
+    },
   ],
 });
