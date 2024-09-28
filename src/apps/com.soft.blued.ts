@@ -36,16 +36,24 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-购买动态投放弹窗',
-      desc: '点击X',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      fastQuery: true,
       rules: [
         {
+          key: 0,
           activityIds: 'com.blued.android.core.ui.TerminalActivity',
-          fastQuery: true,
           matches: '[id="com.soft.blued:id/iv_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/37ea59cf-9606-4cd6-a74a-84f353f07975',
           snapshotUrls: 'https://i.gkd.li/i/14157519',
+        },
+        {
+          key: 1,
+          activityIds: '.ui.home.HomeActivity',
+          matches: '[vid="nearby_common_guide_close_iv"]',
+          exampleUrls: 'https://e.gkd.li/04e78fd8-9d78-48d7-b1f0-eddde80f5c52',
+          snapshotUrls: 'https://i.gkd.li/i/17172243',
         },
       ],
     },
