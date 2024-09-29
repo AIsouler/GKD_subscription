@@ -42,6 +42,7 @@ export default defineGkdGlobalGroups([
       },
       {
         key: 2,
+        action: 'clickCenter',
         matches:
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]', // 字节SDK
       },
