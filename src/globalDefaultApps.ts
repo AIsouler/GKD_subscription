@@ -168,6 +168,7 @@ export const blackListAppIDs: string[] = [
   'com.dna.tools',
   'flar2.devcheck',
   'com.gstarmc.android',
+  'com.github.capntrips.kernelflasher',
 
   // 系统自带非系统应用
   // 小米
