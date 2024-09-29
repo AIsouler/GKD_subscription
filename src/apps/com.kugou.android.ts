@@ -88,13 +88,25 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
           matches:
-            'RelativeLayout[childCount=2] > View + RelativeLayout[childCount=2] > @ImageView + RelativeLayout',
-          exampleUrls:
-            'https://m.gkd.li/87047583/84c1379f-5eb1-4982-b27b-35e267594101',
+            '@ImageView[clickable=true][visibleToUser=true] + RelativeLayout >2 [text*="豪华VIP已过期"]',
+          exampleUrls: 'https://e.gkd.li/cab683ac-801d-4089-8b5d-548954761c08',
           snapshotUrls: 'https://i.gkd.li/i/13548005',
+        },
+        {
+          key: 1,
+          activityIds: '.app.MediaActivity',
+          matches:
+            'WebView[text="开通会员"] >7 @TextView[clickable=true][childCount=0] +2 [text="当前歌曲支持蝰蛇全景声"]',
+          exampleUrls: 'https://e.gkd.li/86e4a797-5366-4579-81ee-bc5354e95568',
+          snapshotUrls: 'https://i.gkd.li/i/17177377',
         },
       ],
     },
