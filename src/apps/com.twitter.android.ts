@@ -28,10 +28,11 @@ export default defineGkdApp({
         {
           key: 1,
           name: '推荐广告-点击右上角关闭',
-          matches: '@[vid="tweet_curation_action"] <2 * + * > [text="推荐"]',
+          matches: '@[vid="tweet_curation_action"] <2 * + * > [text$="推荐"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12813235',
             'https://i.gkd.li/i/14782897',
+            'https://i.gkd.li/i/17182889',
           ],
         },
         {
