@@ -256,5 +256,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 13,
+      name: '局部广告-直播讲解悬浮窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="正在讲解"]',
+          exampleUrls: 'https://e.gkd.li/42b1d2c5-ca75-4a89-adca-9e5c4f489165',
+          snapshotUrls: 'https://i.gkd.li/i/17182888',
+        },
+      ],
+    },
   ],
 });
