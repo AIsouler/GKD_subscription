@@ -37,11 +37,13 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches: '@ImageView[clickable=true] < * - * > [text*="广告"]',
+          matches:
+            '@ImageView[clickable=true] < * - * > [text*="广告" || text$="商品介绍"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14296163',
             'https://i.gkd.li/i/14321041',
             'https://i.gkd.li/i/14468152',
+            'https://i.gkd.li/i/17237944',
           ],
         },
         {
@@ -64,8 +66,12 @@ export default defineGkdApp({
             'com.zhihu.android.ContentActivity',
             'com.zhihu.android.app.ui.activity.MainActivity',
           ],
-          matches: '@[clickable=true] >3 [text$="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/13849689',
+          matches:
+            '@[clickable=true] >3 [text$="不感兴趣" || text^="屏蔽作者"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13849689',
+            'https://i.gkd.li/i/17237940',
+          ],
         },
       ],
     },
