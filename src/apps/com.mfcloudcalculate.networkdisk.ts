@@ -34,6 +34,15 @@ export default defineGkdApp({
             'https://m.gkd.li/57941037/cf43eaec-45f8-4e1a-bd3b-6a88fd055d29',
           snapshotUrls: 'https://i.gkd.li/i/16154340',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
+          matches:
+            '[text="反馈"] -4 View[childCount=1] > Image[childCount=0][text=""]',
+          exampleUrls: 'https://e.gkd.li/2ec6e71f-93b4-4ac4-a464-26d2a859445f',
+          snapshotUrls: 'https://i.gkd.li/i/17247801',
+        },
       ],
     },
     {
