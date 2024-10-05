@@ -49,5 +49,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-开启[自动抵扣]开关',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.activity.scan.AfterPayUseAct',
+          matches:
+            '@[vid="switchView"][checked=false] - [vid="tv_automatic_use"]',
+          exampleUrls: 'https://e.gkd.li/85bbfba2-5011-4f48-a08a-45386836ebd6',
+          snapshotUrls: 'https://i.gkd.li/i/17260785',
+        },
+      ],
+    },
   ],
 });
