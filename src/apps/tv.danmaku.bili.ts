@@ -328,5 +328,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '局部广告-搜索结果广告',
+      desc: '点击不感兴趣',
+      fastQuery: true,
+      matchDelay: 5000,
+      activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
+      rules: [
+        {
+          key: 1,
+          matches:
+            '[id="tv.danmaku.bili:id/desc"][vid="desc"][clickable=false] < * -1 *[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17269053',
+        },
+        {
+          preKeys: 1,
+          matches: '[text="不感兴趣"] < *',
+          snapshotUrls: 'https://i.gkd.li/i/17269055',
+        },
+      ],
+    },
   ],
 });
