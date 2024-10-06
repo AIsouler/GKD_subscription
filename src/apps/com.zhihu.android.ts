@@ -59,7 +59,17 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14730741',
         },
         {
-          preKeys: [0, 2, 3, 4],
+          key: 5,
+          activityIds:
+            '.feature.short_container_feature.ui.ShortContainerHostActivity',
+          matches: '@[vid="remove"] - [vid="subtitle"][text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17268845',
+            'https://i.gkd.li/i/17268869',
+          ],
+        },
+        {
+          preKeys: [0, 2, 3, 4, 5],
           key: 90,
           activityIds: [
             'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
@@ -67,10 +77,11 @@ export default defineGkdApp({
             'com.zhihu.android.app.ui.activity.MainActivity',
           ],
           matches:
-            '@[clickable=true] >3 [text$="不感兴趣" || text^="屏蔽作者"]',
+            '@[clickable=true] >(1,3) [text$="不感兴趣" || text^="屏蔽作者"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13849689',
             'https://i.gkd.li/i/17237940',
+            'https://i.gkd.li/i/17268849',
           ],
         },
       ],

@@ -112,6 +112,11 @@ export const blackListAppIDs: string[] = [
   'me.iacn.biliroaming', // 哔哩漫游
   'com.termux', // Termux
   'oss.krtirtho.spotube', // Spotube
+  'com.merxury.blocker', // Blocker
+  'moe.minamigo.miuigms', // MIUIGMS
+  'mufanc.tools.applock', // AppLock
+  'com.gankes.tsbattery', // TSBattery
+  'com.oasisfeng.nevo.xposed', // 女娲石
   'com.reddit.frontpage', // Reddit
 
   'com.canghai.haoka',
