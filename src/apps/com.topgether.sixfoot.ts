@@ -27,5 +27,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'Pro.biz.home.ProMainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null] < FrameLayout[childCount=1] - LinearLayout > [text="下载应用"]',
+          exampleUrls: 'https://e.gkd.li/32475c6e-888a-4048-b7ed-5b3bc3c1c580',
+          snapshotUrls: 'https://i.gkd.li/i/17268235',
+        },
+      ],
+    },
   ],
 });
