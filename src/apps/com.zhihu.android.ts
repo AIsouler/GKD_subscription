@@ -76,10 +76,8 @@ export default defineGkdApp({
             'com.zhihu.android.ContentActivity',
             'com.zhihu.android.app.ui.activity.MainActivity',
           ],
-          matches: [
-            '@[clickable=true] >3 [text$="不感兴趣" || text^="屏蔽作者"]',
-            '@[clickable=true] > [text="屏蔽作者"]',
-          ],
+          matches:
+            '@[clickable=true] >(1,3) [text$="不感兴趣" || text^="屏蔽作者"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13849689',
             'https://i.gkd.li/i/17237940',
