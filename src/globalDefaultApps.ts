@@ -117,6 +117,7 @@ export const blackListAppIDs: string[] = [
   'mufanc.tools.applock', // AppLock
   'com.gankes.tsbattery', // TSBattery
   'com.oasisfeng.nevo.xposed', // 女娲石
+  'com.reddit.frontpage', // Reddit
 
   'com.canghai.haoka',
   'com.xy.td',
