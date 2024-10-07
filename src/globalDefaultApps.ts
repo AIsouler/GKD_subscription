@@ -112,6 +112,7 @@ export const blackListAppIDs: string[] = [
   'me.iacn.biliroaming', // 哔哩漫游
   'com.termux', // Termux
   'oss.krtirtho.spotube', // Spotube
+  'com.ghostflying.locationreportenabler', // LocationReportEnabler
 
   'com.canghai.haoka',
   'com.xy.td',
