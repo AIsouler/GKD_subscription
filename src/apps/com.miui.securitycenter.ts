@@ -138,5 +138,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 17,
+      name: '功能类-自动关闭SIM卡安全保护验证提示',
+      desc: '点击[确定]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.miui.simlock.activity.SuccessDialogActivity',
+            'com.miui.simlock.activity.SuccessDialogNormalActivity',
+          ],
+          matches: ['[text="SIM卡安全保护验证成功"]', '[text="确定"]'],
+          exampleUrls: 'https://e.gkd.li/2274c673-a2a9-43ad-a5ab-74598787ec0f',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17276599',
+            'https://i.gkd.li/i/17276586',
+          ],
+        },
+      ],
+    },
   ],
 });
