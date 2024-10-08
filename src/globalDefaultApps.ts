@@ -118,6 +118,7 @@ export const blackListAppIDs: string[] = [
   'com.gankes.tsbattery', // TSBattery
   'com.oasisfeng.nevo.xposed', // 女娲石
   'com.reddit.frontpage', // Reddit
+  'com.ghostflying.locationreportenabler', // LocationReportEnabler
 
   'com.canghai.haoka',
   'com.xy.td',

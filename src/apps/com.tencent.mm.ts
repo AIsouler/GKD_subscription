@@ -609,7 +609,7 @@ export default defineGkdApp({
             '[text="不感兴趣" || text="与我无关" || text="感谢你的反馈"][visibleToUser=true]',
           ],
           matches:
-            '@[clickable=true][visibleToUser=true] > TextView[text="广告"][visibleToUser=true]', // 某些微信版本上该节点的`clickable=false`
+            '@[clickable=true][visibleToUser=true] > TextView[text^="广告"][visibleToUser=true]', // 某些微信版本上该节点的`clickable=false`
           exampleUrls: [
             'https://e.gkd.li/e73bb653-cc79-455c-958b-38aff6687c37',
             'https://e.gkd.li/5915f80b-66b9-4441-9d36-3caa3fe1be58',
@@ -623,6 +623,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16796725', // 内容中部广告
             'https://i.gkd.li/i/16798663', // clickable=false，使用clickable=true避免误触
             'https://i.gkd.li/i/15198455', // 无id
+            'https://i.gkd.li/i/17276697', // text="广告 "，有空格
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/15198464', // 防止在文章末尾广告关闭后误触
