@@ -17,7 +17,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.wps.multiwindow.main.HomeActivity',
           matches: [
-            '[text*="自启动权限"] <<n [vid="parentPanel"]',
+            '[text^="检测到您的自启动权限未开启"]',
             '[text="取消"][clickable=true]',
           ],
           exampleUrls: 'https://e.gkd.li/1eacdaf8-1405-44d8-a9b9-228e913c5180',
