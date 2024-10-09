@@ -91,9 +91,16 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          activityIds: 'com.aster.comic.app.view.MainActivity',
-          matches: '[text="反馈"] + @View > Image[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/i/15711106',
+          activityIds: [
+            'com.aster.comic.app.view.MainActivity',
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          ],
+          matches:
+            '[text="反馈"] + View[childCount=1] > Image[childCount=0][text=""]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15711106',
+            'https://i.gkd.li/i/17301509',
+          ],
         },
         {
           key: 5,
