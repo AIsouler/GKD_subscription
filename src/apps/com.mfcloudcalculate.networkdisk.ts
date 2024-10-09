@@ -43,6 +43,17 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/2ec6e71f-93b4-4ac4-a464-26d2a859445f',
           snapshotUrls: 'https://i.gkd.li/i/17247801',
         },
+        {
+          key: 3,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.MainActivity',
+          matches:
+            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView[childCount=0][text=null]',
+          exampleUrls: 'https://e.gkd.li/49cef679-3efb-4719-9af9-8f3a4c311191',
+          snapshotUrls: 'https://i.gkd.li/i/17306992',
+        },
       ],
     },
     {
