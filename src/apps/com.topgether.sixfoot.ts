@@ -36,9 +36,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'Pro.biz.home.ProMainActivity',
           matches:
-            '@ImageView[childCount=0][text=null] < FrameLayout[childCount=1] - LinearLayout > [text="下载应用"]',
+            '@ImageView[childCount=0][text=null] < FrameLayout[childCount=1] - LinearLayout > [text="下载应用" || text="立即申请"]',
           exampleUrls: 'https://e.gkd.li/32475c6e-888a-4048-b7ed-5b3bc3c1c580',
-          snapshotUrls: 'https://i.gkd.li/i/17268235',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17268235',
+            'https://i.gkd.li/i/17303774',
+          ],
         },
       ],
     },
