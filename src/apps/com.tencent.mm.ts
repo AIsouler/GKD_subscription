@@ -565,29 +565,12 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          excludeMatches: [
-            'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
-            '[visibleToUser=true][text="请验证指纹" || text="使用指纹"] <<n [vid="container_layout"]',
-          ],
-          matches:
-            '[vid="kinda_button_impl_wrapper"][desc$="支付"][desc.length<5]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/15144571',
-            'https://i.gkd.li/i/15360745',
-          ],
-          excludeSnapshotUrls: [
-            'https://i.gkd.li/i/16962643',
-            'https://i.gkd.li/i/16962673',
-          ],
-        },
-        {
-          preKeys: [0],
-          key: 1,
           matches:
             'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15144570',
-            'https://i.gkd.li/i/15360744',
+            'https://i.gkd.li/i/15144571',
+            'https://i.gkd.li/i/15360745',
           ],
         },
       ],
