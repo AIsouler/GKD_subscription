@@ -138,13 +138,26 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-首页底部浮窗广告',
-      fastQuery: true,
-      activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
-      rules:
-        '@ViewGroup[childCount=0][clickable=true][visibleToUser=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13710588',
-        'https://i.gkd.li/i/16326917', // 防止误触
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+          matches:
+            '@ViewGroup[childCount=0][clickable=true][visibleToUser=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13710588',
+            'https://i.gkd.li/i/16326917', // 防止误触
+          ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.application.ui.Launcher.LauncherActivity',
+          matches: '[vid="iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f706b801-44ee-4009-8082-75c9d4139065',
+          snapshotUrls: 'https://i.gkd.li/i/17321305',
+        },
       ],
     },
     {
