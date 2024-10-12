@@ -84,14 +84,14 @@ export default defineGkdApp({
       rules: [
         {
           position: {
-            left: 'width * 0.9325',
-            top: 'width * 0.04203',
+            left: 'width * 0.9629',
+            top: 'width * 0.0472',
           },
           activityIds:
             'gov.pianzong.androidnga.activity.forumdetail.ArticleDetailActivity',
           matches: '[id="advertisementBottom"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/89720906-4480-45cd-bc29-4cda7691f3fc',
-          snapshotUrls: 'https://i.gkd.li/i/12893508',
+          exampleUrls: 'https://e.gkd.li/589a4441-4be0-4ebc-90f5-d0dc5cfc84ff',
+          snapshotUrls: 'https://i.gkd.li/i/17348441',
           excludeSnapshotUrls: 'https://i.gkd.li/i/17348415', // visibleToUser=true 防止误触
         },
       ],
