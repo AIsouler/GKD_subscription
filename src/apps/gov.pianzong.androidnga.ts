@@ -89,10 +89,10 @@ export default defineGkdApp({
           },
           activityIds:
             'gov.pianzong.androidnga.activity.forumdetail.ArticleDetailActivity',
-          matches: '[id="advertisementBottom"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/93c2431c-065c-421e-9fd4-112e65ef6ae2',
+          matches: '[id="advertisementBottom"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/89720906-4480-45cd-bc29-4cda7691f3fc',
           snapshotUrls: 'https://i.gkd.li/i/12893508',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17348415', // visibleToUser=true 防止误触
         },
       ],
     },
