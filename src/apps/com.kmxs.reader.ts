@@ -15,11 +15,22 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-阅读页面底部广告',
-      activityIds: 'org.geometerplus.android.fbreader.FBReader',
-      rules:
-        '[id="com.kmxs.reader:id/ll_ad_native_banner"] > [id="com.kmxs.reader:id/iv_ad_direct_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/12640296'],
+      name: '分段广告-阅读页面广告',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'org.geometerplus.android.fbreader.FBReader',
+          matches: '[vid="ad_direct_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17355000',
+        },
+        {
+          preKeys: [0],
+          activityIds: 'org.geometerplus.android.fbreader.FBReader',
+          matches: '[text="直接关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/17354753',
+        },
+      ],
     },
     {
       key: 3,
