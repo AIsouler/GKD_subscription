@@ -223,5 +223,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '功能类-支付订单后点击[完成]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            '.bundle.cashierfinish.view.CashierUserContentCompleteActivity',
+          matches: '[vid="lib_cashier_finish_back_page_text"]',
+          exampleUrls: 'https://e.gkd.li/ab886df0-2b34-4804-be7d-742a06fadda9',
+          snapshotUrls: 'https://i.gkd.li/i/17358003',
+        },
+      ],
+    },
   ],
 });
