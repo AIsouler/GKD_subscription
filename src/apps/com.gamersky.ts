@@ -44,11 +44,16 @@ export default defineGkdApp({
         {
           key: 0,
           name: '首页卡片广告',
-          activityIds: 'com.gamersky.main.activity.LibMainActivity',
-          matches: ['[text="广告"]', '[id="com.gamersky:id/delete"]'],
+          activityIds: [
+            'com.gamersky.main.activity.LibMainActivity',
+            '.common.activity.LibDetailContentDetailActivity',
+          ],
+          matches:
+            '@[vid="delete" || id="com.gamersky:id/close"] - LinearLayout > [text="广告" || id="com.gamersky:id/badge"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13451220',
             'https://i.gkd.li/i/13635580',
+            'https://i.gkd.li/i/13759484',
+            'https://i.gkd.li/i/17356753',
           ],
         },
         {
@@ -59,7 +64,6 @@ export default defineGkdApp({
           matches:
             'WebView >2 View[childCount=2] > View[index=1] > @View[clickable=true][visibleToUser=true][childCount=0] <<n [vid="contentWebView"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13451258',
             'https://i.gkd.li/i/14622935',
             'https://i.gkd.li/i/14892583', // 避免误触
           ],
@@ -69,22 +73,12 @@ export default defineGkdApp({
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
           matches:
-            '[text="广告"] < * > @[clickable=true][text=""][index=1] <<n [vid="contentWebView"]',
+            '@[clickable=true][visibleToUser=true][text=""] - [text="广告"] <<n [vid="nested_view_group" || vid="contentWebView"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13635579',
             'https://i.gkd.li/i/15477470',
+            'https://i.gkd.li/i/17356753',
           ],
-        },
-        {
-          key: 3,
-          name: '评论区卡片广告',
-          activityIds:
-            'com.gamersky.common.activity.LibDetailContentDetailActivity',
-          matches: [
-            '[id="com.gamersky:id/badge"]',
-            '[id="com.gamersky:id/close"]',
-          ],
-          snapshotUrls: 'https://i.gkd.li/i/13759484',
         },
         {
           key: 4,
