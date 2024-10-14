@@ -568,6 +568,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '喜马拉雅',
     deprecatedKeys: [9],
   },
+  {
+    id: 'com.zjwh.android_wh_physicalfitness',
+    name: '运动世界校园',
+    deprecatedKeys: [2, 3, 4, 9],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
