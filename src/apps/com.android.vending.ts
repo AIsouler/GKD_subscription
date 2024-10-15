@@ -6,14 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-谷歌发送应用安全检查',
-      desc: '点击不发送',
+      name: '功能类-Play保护机制弹窗',
+      desc: '点击[不发送]/[拒绝]',
       rules: [
         {
           activityIds:
             'com.google.android.finsky.protectdialogs.activity.PlayProtectDialogsActivity',
-          matches: '@View[clickable=true] > [text="不发送"]',
-          snapshotUrls: 'https://i.gkd.li/i/14035144',
+          matches:
+            '[text*="保护机制"] +3 @View[clickable=true] > [text="不发送" || text="拒绝"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14035144',
+            'https://i.gkd.li/i/17375098',
+          ],
         },
       ],
     },
