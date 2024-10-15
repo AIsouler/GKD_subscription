@@ -73,7 +73,7 @@ export default defineGkdApp({
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
           matches:
-            '@[clickable=true][visibleToUser=true][text=""] - [text="广告"] <<n [vid="nested_view_group" || vid="contentWebView"]',
+            '@[clickable=true][visibleToUser=true][text=""] - [childCount=0][text="广告"] <<n [vid="nested_view_group" || vid="contentWebView"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13635579',
             'https://i.gkd.li/i/15477470',
