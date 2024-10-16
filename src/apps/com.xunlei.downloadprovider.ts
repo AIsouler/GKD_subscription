@@ -168,7 +168,7 @@ export default defineGkdApp({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
-            'Image[text=""] < @View + View +n View > View > TextView[text$="广告"][text.length<=10]',
+            '@Image[childCount=0][text=""] < View[childCount=1] + View[childCount=1] +n View[childCount=2] > View[childCount=1] > TextView[text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12868667',
             'https://i.gkd.li/i/12881946',
