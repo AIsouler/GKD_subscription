@@ -29,18 +29,15 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 3,
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] -2 @View - Image',
-          snapshotUrls: 'https://i.gkd.li/i/12925052',
-        },
-        {
           key: 4,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] -4 @View < View[childCount=7]',
-          snapshotUrls: 'https://i.gkd.li/i/12925095',
+          matches:
+            '@Image[childCount=0][text=""] < View[childCount=1] + View[childCount=1][text=""] +n View >(1,2) View[childCount=1] > [text$="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12925095',
+            'https://i.gkd.li/i/12925052',
+          ],
         },
       ],
     },
