@@ -85,6 +85,15 @@ export default defineGkdApp({
             '@[text="跳过"][clickable=true] +3 RelativeLayout >2 [text="点击跳转至第三方页面"]',
           snapshotUrls: 'https://i.gkd.li/i/12673349',
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.activity.HomeActivity',
+          matches:
+            '@ImageView[childCount=0] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          exampleUrls: 'https://e.gkd.li/2debed48-37f2-43ec-8b0f-3a5e06c23ed1',
+          snapshotUrls: 'https://i.gkd.li/i/17378546',
+        },
       ],
     },
   ],
