@@ -14,12 +14,6 @@ export default defineGkdApp({
       ],
       rules: [
         {
-          preKeys: [1, 2, 3, 4],
-          name: '穿山甲广告-反馈理由',
-          matches: '[id="com.byted.pangle:id/tt_item_tv"][text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/12640358',
-        },
-        {
           key: 1,
           matches: ['[text="广告"] < * - View < * - View > Image[id=null]'],
           snapshotUrls: ['https://i.gkd.li/i/12640359'],
@@ -44,6 +38,12 @@ export default defineGkdApp({
             '@Image[id=null] < View - View > View + View > TextView[text="广告"]',
           ],
           snapshotUrls: ['https://i.gkd.li/i/12640406'],
+        },
+        {
+          preKeys: [1, 2, 3, 4],
+          name: '穿山甲广告-反馈理由',
+          matches: '[id="com.byted.pangle:id/tt_item_tv"][text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/12640358',
         },
       ],
     },

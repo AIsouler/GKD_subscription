@@ -100,20 +100,16 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13372542',
         },
         {
-          key: 8,
-          name: '字节广告-2',
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] -2 @View - Image',
-          snapshotUrls: 'https://i.gkd.li/i/12925052',
-        },
-        {
           key: 9,
           name: '字节广告-3',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] -4 @View < View[childCount=7]',
-          snapshotUrls: 'https://i.gkd.li/i/12925095',
+          matches:
+            '@Image[childCount=0][text=""] < View[childCount=1] + View +n View > View[childCount=1] > TextView[text$="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12925052',
+            'https://i.gkd.li/i/12925095',
+          ],
         },
       ],
     },
