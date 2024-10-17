@@ -44,6 +44,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          forcedTime: 10000,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
