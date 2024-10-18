@@ -184,13 +184,13 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '分段广告-首页推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
+      name: '分段广告-首页推荐视频卡片广告',
+      fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
           key: 0,
           name: '点击卡片广告右下角菜单按钮',
-          fastQuery: true,
           actionMaximum: 1,
           matches: '[vid="ad_tint_frame"] >2 [vid="more"]',
           snapshotUrls: [
@@ -199,40 +199,32 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14729855',
           ],
         },
+        {
+          key: 1,
+          actionMaximum: 1,
+          matches: '[vid="inline_more"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d3d37b4e-cda3-4ba6-8af3-7b45ac8efc10',
+          snapshotUrls: 'https://i.gkd.li/i/17428126',
+        },
 
         //预留key
         {
-          preKeys: [0],
+          preKeys: [0, 1],
           key: 50,
-          fastQuery: true,
-          name: '点击[不感兴趣]',
-          matches: '@[clickable=true] > [text="不感兴趣"]',
+          name: '点击[不感兴趣]/[相似内容过多]',
+          matches:
+            '@[clickable=true] > [text="相似内容过多" || text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13742257',
-            'https://i.gkd.li/i/13256605',
             'https://i.gkd.li/i/14155801',
-            'https://i.gkd.li/i/13742257',
-          ],
-        },
-        {
-          preKeys: [0],
-          key: 51,
-          name: '点击[相似内容过多]',
-          fastQuery: true,
-          matches: '@[clickable=true] > [text="相似内容过多"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/acd89b46-45fc-459f-8d17-3913d98dcbad',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13945597',
             'https://i.gkd.li/i/14155272',
-            'https://i.gkd.li/i/14059882',
+            'https://i.gkd.li/i/17428471',
           ],
         },
         {
           preKeys: [0],
           key: 52,
           name: '点击[up主不感兴趣]',
-          fastQuery: true,
           matches: '@[clickable=true] > [text="up主不感兴趣"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9c2f42d7-c262-4e06-b3c6-40f0908e7a94',
