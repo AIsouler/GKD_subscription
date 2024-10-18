@@ -69,8 +69,7 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          matches:
-            '[vid="activity_icon_bar"] > [text="广告"] + ImageView[clickable=true]',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/17426322',
           exampleUrls: 'https://e.gkd.li/ca2dae5b-10d8-458e-9d83-fe04652ff074',
         },
