@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: '@LinearLayout > [id="com.tencent.docs:id/tv_gdt_ad_text"]',
       snapshotUrls: 'https://i.gkd.li/i/13198082',
     },

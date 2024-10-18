@@ -10,6 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: '[desc="Interstitial close button"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14292691',
     },
