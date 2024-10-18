@@ -1,0 +1,25 @@
+name: Issue Close Question
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  issue-close-require:
+    permissions:
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: needs more info
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'close-issues'
+          labels: 'need info'
+          inactive-day: 3
+          body: |
+            由于该 Issue 3 天未收到回应，现已被自动关闭，若有任何问题，可评论回复。
+
+            This issue has been closed automatically because it has not had recent activity for 3 days. If you have any questions, please comment here.
