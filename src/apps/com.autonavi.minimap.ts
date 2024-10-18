@@ -54,10 +54,27 @@ export default defineGkdApp({
     {
       key: 10,
       name: '局部广告-首页上方消息提醒',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: 'com.autonavi.map.activity.NewMapActivity',
-      rules:
-        'RelativeLayout[desc="弹窗"] > [id="com.autonavi.minimap:id/msgbox_popup_clear"]',
-      snapshotUrls: 'https://i.gkd.li/i/12642830',
+      rules: [
+        {
+          key: 1,
+          matches:
+            'RelativeLayout[desc="弹窗"] > [id="com.autonavi.minimap:id/msgbox_popup_clear"]',
+          snapshotUrls: 'https://i.gkd.li/i/12642830',
+          exampleUrls: 'https://e.gkd.li/a7f72c58-0b31-4b87-9839-567d4d74350a',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches:
+            '[vid="activity_icon_bar"] > [text="广告"] + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17426322',
+          exampleUrls: 'https://e.gkd.li/ca2dae5b-10d8-458e-9d83-fe04652ff074',
+        },
+      ],
     },
     {
       key: 11,
