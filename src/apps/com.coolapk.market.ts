@@ -11,6 +11,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       excludeActivityIds: [
         'com.coolapk.market.view.search.', // 在搜索页面禁用
         'com.coolapk.market.view.feed.', // 在动态页面禁用

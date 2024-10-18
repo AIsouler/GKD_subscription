@@ -11,6 +11,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 1,
+      priorityTime: 10000,
       rules: [
         {
           key: 1,

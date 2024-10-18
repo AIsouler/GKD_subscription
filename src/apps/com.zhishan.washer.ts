@@ -10,6 +10,7 @@ export default defineGkdApp({
       matchTime: 20000,
       actionMaximum: 2, // 该广告可能会出现两次
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           fastQuery: true,

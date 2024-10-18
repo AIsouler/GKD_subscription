@@ -9,8 +9,9 @@ export default defineGkdApp({
       name: '开屏广告',
       fastQuery: true,
       matchTime: 10000,
-      resetMatch: 'app',
       actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           matches: '[vid="view_skip_button"][visibleToUser=true]',

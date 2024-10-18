@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       excludeActivityIds: [
         'com.tencent.mobileqq.activity.ChatActivity', // 在聊天界面禁用
         'com.tencent.mobileqq.search.activity.UniteSearchActivity', // 在搜索页面禁用
@@ -365,6 +366,7 @@ export default defineGkdApp({
       name: '开屏广告-QQ小程序开屏广告',
       desc: '点击右下角跳过',
       actionMaximum: 1,
+      priorityTime: 10000,
       activityIds: [
         'com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI',
         'com.tencent.mobileqq.activity.miniaio.MiniChatActivity',

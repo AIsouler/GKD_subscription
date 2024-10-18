@@ -7,10 +7,11 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
+      priorityTime: 10000,
       rules: '[id="tv.danmaku.bilibilihd:id/count_down"]',
       snapshotUrls: 'https://i.gkd.li/i/13031261',
     },
