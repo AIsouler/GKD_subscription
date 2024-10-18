@@ -25,6 +25,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
-            你好 ${{ github.event.issue.user.login }}。由于您的 Issue 缺少必要的快照信息。请在评论中提供更多信息，以便我们更好地帮助您。谢谢！
+            你好 ${{ github.event.issue.user.login }}，由于您的 Issue 缺少必要的快照信息，请在评论中提供更多信息，以便我们更好地帮助您，谢谢！
 
             Hello ${{ github.event.issue.user.login }}. Due to the lack of necessary snapshot information in your Issue, please provide more information in the comment so that we can better assist you. Thank you!
