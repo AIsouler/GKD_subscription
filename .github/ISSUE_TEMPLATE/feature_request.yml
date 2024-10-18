@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ##在提交问题之前，请确保您完成以下操作
+        ## 在提交问题之前，请确保您完成以下操作
         1. 我确保 **提供正确的快照（不要提供截图，截图没有任何作用）**
         2. 我确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
         3. 我确保已阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/120)
