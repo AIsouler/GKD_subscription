@@ -1,11 +1,11 @@
 {
-  "name": "@aisouler/gkd_subscription",
-  "version": "0.0.144",
+  "name": "gkd-mrlc",
+  "version": "1.0.0",
   "type": "module",
   "gkd": {
     "outDir": "dist",
-    "file": "AIsouler_gkd.json5",
-    "versionFile": "AIsouler_gkd.version.json5",
+    "file": "gkd.json5",
+    "versionFile": "gkd.version.json5",
     "changelog": "CHANGELOG.md",
     "README.md": "README.md"
   },

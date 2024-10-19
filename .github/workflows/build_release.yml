@@ -67,8 +67,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/AIsouler_gkd.json5
-          asset_name: AIsouler_gkd_${{ steps.version.outputs.version }}.json5
+          asset_path: ./dist/gkd.json5
+          asset_name: gkd_${{ steps.version.outputs.version }}.json5
           asset_content_type: application/json
 
       - name: Publish package
