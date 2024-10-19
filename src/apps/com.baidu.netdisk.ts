@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       name: '开屏广告',
-      key: 1,
+      key: 0,
       quickFind: true,
       actionMaximum: 1,
       matchTime: 10000,
