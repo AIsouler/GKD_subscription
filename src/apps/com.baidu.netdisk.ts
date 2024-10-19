@@ -5,6 +5,22 @@ export default defineGkdApp({
   name: '百度网盘',
   groups: [
     {
+      name: '开屏广告',
+      key: 1,
+      quickFind: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 2,
+          action: 'clickCenter',
+          matches: ['TextView[text*="跳过"][text.length<=10]'],
+          snapshotUrls: ['https://i.gkd.li/i/17405893'],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',

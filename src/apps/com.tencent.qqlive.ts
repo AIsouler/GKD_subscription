@@ -5,19 +5,18 @@ export default defineGkdApp({
   name: '腾讯视频',
   groups: [
     {
-      key: 0,
       name: '开屏广告',
-      fastQuery: true,
-      matchTime: 10000,
+      key: 0,
+      quickFind: true,
       actionMaximum: 1,
+      matchTime: 10000,
       resetMatch: 'app',
-      priorityTime: 10000,
       rules: [
         {
           key: 0,
           action: 'clickCenter',
-          matches: 'TextView[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/i/14049316',
+          matches: ['TextView[text*="跳过"][text.length<=10]'],
+          snapshotUrls: ['https://i.gkd.li/i/17409509'],
         },
       ],
     },
