@@ -19,12 +19,13 @@ apps.forEach((appConfig) => {
 });
 
 export default defineGkdSubscription({
-  id: 222,
-  name: 'mrlc的GKD订阅',
+  id: 1,
   version: 0,
-  author: 'mrlc',
-  checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com/AIsouler/GKD_subscription/issues/new/choose',
+  name: 'MrlcのGKD订阅',
+  author: 'Mrlc',
+  supportUri: 'https://github.com/mrlctate/gkd-subscription',
+  checkUpdateUrl:
+    'https://registry.npmmirror.com/gkd-mrlc/latest/files/dist/gkd.version.json5',
   categories,
   globalGroups,
   apps: rawApps,
