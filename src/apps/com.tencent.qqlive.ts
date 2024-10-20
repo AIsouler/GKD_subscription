@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          key: 0,
+          key: 1,
           action: 'clickCenter',
           matches: ['TextView[text*="跳过"][text.length<=10]'],
           snapshotUrls: ['https://i.gkd.li/i/17409509'],
