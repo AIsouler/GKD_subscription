@@ -20,11 +20,12 @@ apps.forEach((appConfig) => {
 
 export default defineGkdSubscription({
   id: 222,
-  name: 'Mrlc的GKD订阅',
+  name: 'MrlcのGKD订阅',
   version: 0,
   author: 'Mrlc',
   checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com/AIsouler/GKD_subscription/issues/new/choose',
+  supportUri:
+    'https://registry.npmmirror.com/gkd-mrlc/latest/files/dist/gkd.json5',
   categories,
   globalGroups,
   apps: rawApps,
