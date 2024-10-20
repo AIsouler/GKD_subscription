@@ -53,7 +53,6 @@
     "gkd-mrlc": "^1.0.0",
     "json5": "2.2.3",
     "lint-staged": "15.2.10",
-    "node": "^22.10.0",
     "prettier": "3.3.3",
     "simple-git-hooks": "2.11.1",
     "tsx": "4.19.1",
@@ -61,7 +60,7 @@
     "typescript-eslint": "8.10.0"
   },
   "volta": {
-    "node": "20.13.1"
+    "node": "20.18.0"
   },
   "packageManager": "pnpm@9.11.0",
   "engineStrict": true,

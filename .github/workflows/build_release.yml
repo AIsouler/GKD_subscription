@@ -12,9 +12,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v4.0.0
         with:
-          node-version: 22
+          version: latest
+          run_install: true
 
       - uses: actions/setup-node@v4
         with:
