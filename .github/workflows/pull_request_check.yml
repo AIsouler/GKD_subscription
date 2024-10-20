@@ -34,7 +34,8 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          vnode-version: 22
+          version: latest
+          run_install: true
 
       - uses: actions/setup-node@v4
         with:
