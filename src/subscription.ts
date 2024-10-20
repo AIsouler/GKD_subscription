@@ -23,9 +23,8 @@ export default defineGkdSubscription({
   version: 0,
   name: 'MrlcのGKD订阅',
   author: 'Mrlc',
+  checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/mrlctate/gkd-subscription',
-  checkUpdateUrl:
-    'https://registry.npmmirror.com/gkd-mrlc/latest/files/dist/gkd.version.json5',
   categories,
   globalGroups,
   apps: rawApps,
