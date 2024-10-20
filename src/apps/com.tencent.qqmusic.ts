@@ -74,6 +74,16 @@ export default defineGkdApp({
             'RecyclerView > LinearLayout[childCount=3] >5 ViewGroup[childCount=3] > @ViewGroup[clickable=true] >2 ImageView[text=null][desc=null]',
           snapshotUrls: 'https://i.gkd.li/i/15756931',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.AppStarterActivity',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/17450309',
+        },
       ],
     },
     {
