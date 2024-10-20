@@ -12,15 +12,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
-        with:
-          version: latest
-          run_install: true
-
       - uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          cache: pnpm
+          node-version: 22
+
+      - uses: pnpm/action-setup@v4
+
+      - run: pnpm install
 
       - run: pnpm run build
 
@@ -53,7 +51,7 @@ jobs:
       - name: Create Release
         id: create_release
         if: ${{ steps.commit.outcome == 'success' }}
-        uses: actions/create-release@v1.1.4
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -61,9 +59,10 @@ jobs:
           release_name: Release ${{ steps.version.outputs.version }}
           body_path: ./dist/CHANGELOG.md
 
-      - name: Upload Release
-        if: ${{ steps.commit.outcome == 'success' }}
-        uses: actions/upload-release-asset@v1.0.2
+      - name: Upload Release Asset
+        id: upload-release-asset
+        if: ${{ steps.create_release.outcome == 'success' }}
+        uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -75,7 +74,7 @@ jobs:
       - name: Publish package
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
+        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           pnpm publish --no-git-checks
