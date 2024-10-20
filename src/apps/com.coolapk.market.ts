@@ -46,14 +46,14 @@ export default defineGkdApp({
     },
     {
       key: 0,
-      name: '分段广告-卡片广告',
+      name: '分段广告-信息流广告',
       desc: '点击卡片右上角按钮->免广告-点击关闭->选择关闭原因-点击不感兴趣',
       fastQuery: true,
       activityIds: [
-        'com.coolapk.market.view.main.MainActivity', // 缺少快照
-        'com.coolapk.market.view.base.SimpleAlphaActivity', // 缺少快照
+        'com.coolapk.market.view.main.MainActivity',
         'com.coolapk.market.view.node.DynamicNodePageActivity',
         'com.coolapk.market.view.feed.FeedDetailActivityV8',
+        'com.bytedance.sdk.openadsdk.core.dislike.ui.f',
       ],
       rules: [
         {
@@ -65,8 +65,8 @@ export default defineGkdApp({
             '[vid="submit_view"][text="发布"]',
           ],
           matches: [
-            '[text*="广告"][visibleToUser=true]',
-            '[id="com.coolapk.market:id/close_view"]',
+            '[text*="广告" || text="推广"][visibleToUser=true]',
+            '[vid="close_view"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/12707506',
@@ -74,6 +74,9 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12642148',
             'https://i.gkd.li/i/12774771',
             'https://i.gkd.li/i/13257987',
+            'https://i.gkd.li/i/17450282',
+          ],
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/14996359', // 避免误触
             'https://i.gkd.li/i/15159886', // 避免误触
             'https://i.gkd.li/i/15587119', // 避免误触
