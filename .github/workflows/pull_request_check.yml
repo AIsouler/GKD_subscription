@@ -32,15 +32,12 @@ jobs:
             exit 1
           fi
 
-      - uses: pnpm/action-setup@v4.0.0
-        with:
-          version: latest
-          run_install: true
-
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
           cache: pnpm
+
+      - uses: pnpm/action-setup@v4
 
       - run: pnpm run check
 
