@@ -32,12 +32,14 @@ jobs:
             exit 1
           fi
 
+      - uses: pnpm/action-setup@v4
+        with:
+          vnode-version: 22
+
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
           cache: pnpm
-
-      - uses: pnpm/action-setup@v4
 
       - run: pnpm run check
 
