@@ -175,10 +175,11 @@ export default defineGkdApp({
           activityIds:
             'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
           matches:
-            '@View[clickable=true][desc="关闭"] +2 * >2 [desc$="确认协议并开通" || desc="立即开通会员"]',
+            '@View[clickable=true][desc="关闭"] + View > [text^="正在试听" || text$="已到期" || text$="已过期"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15209764',
             'https://i.gkd.li/i/15261116',
+            'https://i.gkd.li/i/17459008',
           ],
         },
       ],
