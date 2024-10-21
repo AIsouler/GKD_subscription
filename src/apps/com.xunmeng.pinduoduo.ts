@@ -493,5 +493,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 20,
+      name: '其他-登录提现页面点击[跳过]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.login.LoginActivity',
+          matches: ['[text="已获得现金"]', '[text="跳过"]'],
+          exampleUrls: 'https://e.gkd.li/4197b363-3492-4f87-a9dd-109da67bb3bf',
+          snapshotUrls: 'https://i.gkd.li/i/17450614',
+        },
+      ],
+    },
   ],
 });
