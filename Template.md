@@ -1,5 +1,7 @@
 # @Mrlc/GKD-Mrlc
 
+---
+
 ## 声明
 
 - **本仓库仅供本人学习使用，其他人的任何行为均与本人无关**
@@ -7,7 +9,7 @@
 
 ## 更新策略
 
-同步[AIsouler](https://github.com/AIsouler/GKD_subscription)订阅更新为主
+- **同步[AIsouler](https://github.com/AIsouler/GKD_subscription)订阅更新为主
 
 ## 说明
 
