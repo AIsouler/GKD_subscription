@@ -33,7 +33,7 @@ https://registry.npmmirror.com/gkd-mrlc/latest/files/dist/gkd.json5
 https://raw.githubusercontent.com/mrlctate/gkd-mrlc/main/dist/gkd.json5
 ```
 
-- 当前版本: v9
+- 当前版本: v10
 
 - 当前订阅文件已适配 796 个应用，共有 1889 应用规则组，3 全局规则组
 
