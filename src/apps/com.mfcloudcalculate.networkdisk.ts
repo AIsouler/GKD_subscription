@@ -100,5 +100,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: 'WEB端版本-更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '@ImageView[clickable=true] - [desc="立即查看"]',
+          exampleUrls: 'https://e.gkd.li/7ead8b8b-c622-4b9e-bc7f-2946df5b17ed',
+          snapshotUrls: 'https://i.gkd.li/i/17469994',
+        },
+      ],
+    },
   ],
 });

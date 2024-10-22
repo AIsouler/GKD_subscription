@@ -10,6 +10,7 @@
     "README.md": "README.md"
   },
   "main": "./dist/gkd.json5",
+  "unpkg": "./dist/gkd.json5",
   "scripts": {
     "postinstall": "simple-git-hooks",
     "format": "prettier --cache --write ./**/*.{js,cjs,mjs,ts,jsx,tsx,json}",
