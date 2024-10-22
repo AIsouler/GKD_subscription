@@ -101,7 +101,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 4,
+      key: 5,
       name: 'WEB端版本-更新提示',
       matchTime: 10000,
       actionMaximum: 1,
