@@ -240,6 +240,7 @@ export default defineGkdApp({
       name: '功能类-扫一扫登录确认',
       desc: '自动点击登录。包括 PC 登录确认、QQ 互联登录确认。',
       fastQuery: true,
+      actionMaximum: 1,
       rules: [
         {
           key: 1,
