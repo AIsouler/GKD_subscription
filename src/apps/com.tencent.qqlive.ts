@@ -258,8 +258,16 @@ export default defineGkdApp({
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
-          exampleUrls: 'https://e.gkd.li/8b128ebc-ce9c-4345-8094-769f9afa8cd6',
-          snapshotUrls: 'https://i.gkd.li/i/17088095',
+          exampleUrls: 'https://e.gkd.li/3f248280-61c1-440c-8fb8-90ca93acf53e',
+          snapshotUrls: 'https://i.gkd.li/i/17476569',
+        },
+        {
+          key: 3,
+          activityIds: '.ona.activity.VideoDetailActivity',
+          matches:
+            '@View[clickable=true] +4 LinearLayout > [text="看广告免费看剧"]',
+          exampleUrls: 'https://e.gkd.li/32d11736-1fcf-43f9-81b8-cb947bf50022',
+          snapshotUrls: 'https://i.gkd.li/i/17474943',
         },
       ],
     },
@@ -298,6 +306,22 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f',
           snapshotUrls: 'https://i.gkd.li/i/14358913',
+        },
+      ],
+    },
+    {
+      key: 22,
+      name: '局部广告-免费看弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches: '@ImageView[clickable=true] + [text="免费看"]',
+          exampleUrls: 'https://e.gkd.li/48f84ee3-f6ef-4059-b43b-0b6cfa83ddb9',
+          snapshotUrls: 'https://i.gkd.li/i/17474933',
         },
       ],
     },
