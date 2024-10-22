@@ -101,8 +101,8 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
-      name: 'WEB端版本-更新提示',
+      key: 4,
+      name: '更新提示-WEB端版本更新',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
