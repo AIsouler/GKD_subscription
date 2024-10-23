@@ -25,7 +25,7 @@ https://registry.npmmirror.com/gkd-mrlc/latest/files
 GitHub源
 
 ```txt
-https://raw.githubusercontent.com/mrlctate/gkd-mrlc/main/dist/gkd.json5
+https://raw.githubusercontent.com/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.json5
 ```
 
 **当前版本: v--VERSION--**
