@@ -6,21 +6,6 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '开屏广告',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          matches: '[vid="clock_layout"]',
-          snapshotUrls: 'https://i.gkd.li/i/15523957',
-        },
-      ],
-    },
-    {
-      key: 2,
       name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
@@ -30,7 +15,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/13228520',
     },
     {
-      key: 3,
+      key: 2,
       name: '青少年模式',
       desc: '点击"知道了"',
       actionMaximum: 1,
@@ -46,7 +31,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 4,
+      key: 3,
       name: '功能类-应用更新页面-点击[查看更多]',
       fastQuery: true,
       actionMaximum: 1,
@@ -63,7 +48,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
+      key: 4,
       name: '全屏广告-热门应用推荐弹窗',
       desc: '点击[直接进入]',
       fastQuery: true,
@@ -81,7 +66,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 6,
+      key: 5,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
       rules: [

@@ -294,15 +294,7 @@ export const whiteListAppIDs: string[] = [];
 
 // 在应用中单独启用某个全局规则
 // 开屏广告白名单
-export const openAdWhiteListAppIDs = new Set([
-  ...whiteListAppIDs,
-  'com.bbk.theme', // i 主题
-  'com.bbk.appstore', // vivo应用商店
-  'com.huawei.appmarket', // 华为应用市场
-  'com.miui.player', // 小米音乐
-  'com.tencent.southpole.appstore', // 黑鲨应用市场
-  'com.vivo.space', // vivo 官网
-]);
+export const openAdWhiteListAppIDs = new Set([...whiteListAppIDs]);
 
 // 全屏广告白名单
 export const fullAdWhiteListAppIDs = new Set([...whiteListAppIDs]);

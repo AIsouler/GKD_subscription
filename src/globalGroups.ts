@@ -2,8 +2,8 @@ import { defineGkdGlobalGroups } from '@gkd-kit/define';
 import * as appList from './globalDefaultApps';
 
 export const OPEN_AD_ORDER = -10; // 开屏广告
-export const UPDATE_ORDER = -9; // 更新提示
-export const YOUNG_ORDER = -8; // 青少年模式
+export const UPDATE_PROMPT_ORDER = -9; // 更新提示
+export const YOUTH_MODE_ORDER = -8; // 青少年模式
 export const REVIEW_PROMPT_ORDER = -7; // 评价提示
 export const NOTIFICATION_PROMPT_ORDER = -6; // 通知提示
 export const LOCATION_PROMPT_ORDER = -5; // 定位提示
@@ -28,9 +28,44 @@ const PA_commonDescPatterns =
 
 export default defineGkdGlobalGroups([
   {
+    key: 0,
+    name: '开屏广告',
+    order: OPEN_AD_ORDER,
+    fastQuery: true,
+    matchRoot: true,
+    matchTime: 10000,
+    actionMaximum: 2,
+    resetMatch: 'app',
+    actionCdKey: 0,
+    actionMaximumKey: 0,
+    rules: [
+      {
+        key: -1,
+        matches: `[childCount<7] > ${COMMON_PREFIX}[(text.length<10&&(text*="跳过"||text*="跳過"||text~="(?is).*skip.*"))||id~="(?is).*tt_splash_skip_btn"||vid~="(?is).*skip.*"||(vid~="(?is).*count.*"&&vid~="(?is).*down.*"&&vid!~="(?is).*load.*"&&vid!~="(?is).*hour.*"&&vid!~="(?is).*minute.*"&&vid!~="(?is).*add.*"&&vid!~="(?is).*ead.*")||desc*="跳过"||desc~="(?is).*skip.*"]`,
+      },
+      {
+        key: 0,
+        quickFind: true,
+        matches:
+          '[text*="跳过"][text.length<10][visibleToUser=true][height>0&&width>0]',
+      },
+      {
+        key: 2,
+        quickFind: true,
+        matches:
+          'FrameLayout[visibleToUser=true][height>0&&width>0][childCount>=2] > FrameLayout[visibleToUser=true][height>0&&width>0][childCount>2] > @View[clickable=true][height>0&&width>0][visibleToUser=true] + TextView[clickable=true][height>0&&width>0][visibleToUser=true]', // 字节 SDK
+      },
+    ],
+    apps: [...appList.openAdBlackListAppIDs]
+      .map((id) => ({ id, enable: false }))
+      .concat(
+        [...appList.openAdWhiteListAppIDs].map((id) => ({ id, enable: true })),
+      ),
+  },
+  {
     key: 1,
     name: '更新提示',
-    order: UPDATE_ORDER,
+    order: UPDATE_PROMPT_ORDER,
     fastQuery: true,
     matchTime: 10000,
     actionMaximum: 2,
@@ -56,7 +91,7 @@ export default defineGkdGlobalGroups([
   {
     key: 2,
     name: '青少年模式',
-    order: YOUNG_ORDER,
+    order: YOUTH_MODE_ORDER,
     fastQuery: true,
     actionMaximum: 2,
     matchTime: 10000,
