@@ -6,6 +6,8 @@ const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
+  'com.tencent.qqlive', // 腾讯视频
+  'com.baidu.netdisk', //百度网盘
   'com.tencent.mm', // 微信
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝
@@ -296,14 +298,11 @@ export const whiteListAppIDs: string[] = [];
 // 开屏广告白名单
 export const openAdWhiteListAppIDs = new Set([
   ...whiteListAppIDs,
-  'com.bbk.theme', // i 主题
   'com.bbk.appstore', // vivo应用商店
-  'com.huawei.appmarket', // 华为应用市场
   'com.miui.player', // 小米音乐
   'com.tencent.southpole.appstore', // 黑鲨应用市场
-  'com.vivo.space', // vivo 官网
-  'com.tencent.qqlive', // 腾讯视频
-  'com.baidu.netdisk', //百度网盘
+  'com.heytap.browser', // 一加浏览器
+  'com.heytap.themestore', // oppo主题商店
 ]);
 
 // 全屏广告白名单
