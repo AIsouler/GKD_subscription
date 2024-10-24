@@ -89,14 +89,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          actionCd: 500,
           activityIds:
             'com.google.android.apps.youtube.app.watchwhile.MainActivity',
           matches:
-            '@Button[desc^="翻译成中文"][clickable=true][visibleToUser=true] <<n [vid="results"]',
+            '@Button[desc^="翻译成中文"][clickable=true][visibleToUser=true] <<n [vid="results" || vid="section_list"]',
           exampleUrls: 'https://e.gkd.li/e9d6eaa8-9fbf-4b16-8f0c-50239597c687',
           snapshotUrls: [
             'https://i.gkd.li/i/17068544', // 翻译前
             'https://i.gkd.li/i/17068647', // 翻译后
+            'https://i.gkd.li/i/17501400',
           ],
         },
       ],
