@@ -143,7 +143,6 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: [
         'com.tencent.mm.plugin.webwx.ui.ExtDeviceWXLoginUI',
         'com.tencent.mm.ui.LauncherUI',
@@ -183,7 +182,6 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
       rules: [
         {
@@ -305,7 +303,6 @@ export default defineGkdApp({
       matchTime: 10000,
       forcedTime: 10000,
       // actionMaximum: 1, // 经常需要点2次，首次点击过早大概率跳不过
-      // resetMatch: 'activity',
       priorityTime: 10000,
       activityIds: [
         'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
@@ -333,7 +330,6 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
       activityIds: 'com.tencent.mm.ui.LauncherUI',
       rules: '[text="打开网页版文件传输助手"] + * > Button[text="打开"]',
       snapshotUrls: 'https://i.gkd.li/i/12793745',

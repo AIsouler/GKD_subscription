@@ -13,7 +13,7 @@ body:
     id: bug-description
     attributes:
       label: |
-        请输入 误触界面 的快照或者生成的链接，也可在后面补充其它信息
+        请输入 误触界面 的快照或者生成的链接，并说明是哪一条规则误触，也可在后面补充其它信息
       description: |
         快照是一个 zip 文件，快照链接是类似 "https://i.gkd.li/i/XXXXXXXX" 的文本，按照如下方式可获得快照信息
 

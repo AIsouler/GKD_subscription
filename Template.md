@@ -10,11 +10,9 @@
 
 同步[AIsouler](https://github.com/AIsouler/GKD_subscription)订阅更新为主
 
-## 说明
+## 订阅
 
 **仅启用 `开屏广告` 一类规则，其它所有规则均需手动打开，规则类别里可以批量开启某一类规则**
-
-## 订阅链接：
 
 npmmirror源（大陆用户推荐）
 
@@ -28,9 +26,9 @@ GitHub源
 https://raw.githubusercontent.com/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.json5
 ```
 
-**当前版本: v--VERSION--**
+当前版本: v--VERSION--
 
-**当前订阅文件已适配 --APP_SIZE-- 个应用，共有 --GROUP_SIZE-- 应用规则组，--GLOBALGROUP_SIZE-- 全局规则组**
+当前订阅文件已适配 --APP_SIZE-- 个应用，共有 --GROUP_SIZE-- 应用规则组，--GLOBALGROUP_SIZE-- 全局规则组
 
 查看 [适配 APP 列表](./dist/README.md)
 

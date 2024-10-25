@@ -83,6 +83,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/49cef679-3efb-4719-9af9-8f3a4c311191',
           snapshotUrls: 'https://i.gkd.li/i/17306992',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches: '@ImageView[clickable=true] - [text="反馈"]',
+          exampleUrls: 'https://e.gkd.li/af430910-56e0-4b19-b23f-b120ce19fdc0',
+          snapshotUrls: 'https://i.gkd.li/i/17456625',
+        },
       ],
     },
     {
@@ -102,7 +110,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '更新提示-WEB端版本更新',
+      name: '更新提示-WEB端版本更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
