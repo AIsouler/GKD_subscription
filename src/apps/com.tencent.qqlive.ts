@@ -5,8 +5,8 @@ export default defineGkdApp({
   name: '腾讯视频',
   groups: [
     {
-      name: '开屏广告',
       key: 0,
+      name: '开屏广告',
       quickFind: true,
       actionMaximum: 1,
       matchTime: 10000,
@@ -15,7 +15,9 @@ export default defineGkdApp({
         {
           key: 1,
           action: 'clickCenter',
-          matches: ['TextView[text*="跳过"][text.length<=10]'],
+          matches: [
+            'TextView[text*="跳过"][text.length<10][visibleToUser=true][height>0&&width>0]',
+          ],
           snapshotUrls: ['https://i.gkd.li/i/17409509'],
         },
       ],
@@ -26,17 +28,17 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
+      rules: 'TextView[text*="青少年模式"] +3 TextView[text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/12700145',
     },
     {
       key: 2,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[text^="有新版本"] + FrameLayout + LinearLayout + [text="暂不升级"]',
+      rules: 'TextView[text*="有新版本啦!"] +3 TextView[text="暂不升级"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12700486',
         'https://i.gkd.li/i/13799951',
@@ -45,6 +47,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '分段广告-卡片广告',
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -176,6 +179,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
+      fastQuery: true,
       name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过/关闭广告',
       activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
@@ -183,7 +187,6 @@ export default defineGkdApp({
         {
           key: 0,
           name: '全屏广告',
-          fastQuery: true,
           matches:
             '@[text$="跳过广告"][clickable=true] < LinearLayout > [text="VIP可关闭该广告"]',
           snapshotUrls: [
@@ -228,7 +231,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 6,
+      key: 5,
       name: '全屏广告-首页-弹窗广告',
       fastQuery: true,
       matchTime: 10000,
@@ -237,8 +240,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds:
-            'com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity',
+          activityIds: '.redpacket.rain.OpenRedPacketActivity',
           matches:
             '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
           exampleUrls:
@@ -247,14 +249,22 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
+          activityIds: '.ona.activity.VideoDetailActivity',
+          matches: '@[clickable=true] - [text="广告"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f',
+          snapshotUrls: 'https://i.gkd.li/i/14358913',
+        },
+        {
+          key: 2,
+          activityIds: '.ona.activity.SplashHomeActivity',
           matches: '@RelativeLayout[clickable=true] + * >3 [text="立即预约"]',
           exampleUrls:
             'https://m.gkd.li/57941037/c8131a06-837a-4c42-9a70-9e8a7fe21334',
           snapshotUrls: 'https://i.gkd.li/i/14567294',
         },
         {
-          key: 2,
+          key: 3,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
@@ -262,17 +272,24 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/17476569',
         },
         {
-          key: 3,
-          activityIds: '.ona.activity.VideoDetailActivity',
+          key: 4,
+          activityIds: '.ona.activity.SplashHomeActivity',
           matches:
-            '@View[clickable=true] +4 LinearLayout > [text="看广告免费看剧"]',
-          exampleUrls: 'https://e.gkd.li/32d11736-1fcf-43f9-81b8-cb947bf50022',
-          snapshotUrls: 'https://i.gkd.li/i/17474943',
+            'TextView[text*="腾讯视频VIP片免费看"] +3 TextView[text="暂不需要，稍后领取"]',
+          exampleUrls: 'https://e.gkd.li/4efdb351-8ba9-451e-9c62-cd0549544624',
+          snapshotUrls: 'https://i.gkd.li/i/17525567',
+        },
+        {
+          key: 5,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches: '@ImageView[clickable=true] + [text="免费看"]',
+          exampleUrls: 'https://e.gkd.li/48f84ee3-f6ef-4059-b43b-0b6cfa83ddb9',
+          snapshotUrls: 'https://i.gkd.li/i/17474933',
         },
       ],
     },
     {
-      key: 20,
+      key: 6,
       name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,
@@ -281,7 +298,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
           snapshotUrls: 'https://i.gkd.li/i/12700139',
         },
@@ -289,39 +305,6 @@ export default defineGkdApp({
           key: 1,
           matches: '@ImageView + * > [text^="开启通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13670465',
-        },
-      ],
-    },
-    {
-      key: 21,
-      name: '局部广告-卡片广告',
-      desc: '点击关闭',
-      rules: [
-        {
-          key: 0,
-          name: '投屏页面广告',
-          fastQuery: true,
-          activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
-          matches: '@[clickable=true] - [text="广告"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f',
-          snapshotUrls: 'https://i.gkd.li/i/14358913',
-        },
-      ],
-    },
-    {
-      key: 22,
-      name: '局部广告-免费看弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: '.ona.activity.SplashHomeActivity',
-          matches: '@ImageView[clickable=true] + [text="免费看"]',
-          exampleUrls: 'https://e.gkd.li/48f84ee3-f6ef-4059-b43b-0b6cfa83ddb9',
-          snapshotUrls: 'https://i.gkd.li/i/17474933',
         },
       ],
     },

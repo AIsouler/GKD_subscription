@@ -482,11 +482,6 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: 'QQ',
     deprecatedKeys: [6, 14, 19],
   },
-  {
-    id: 'com.tencent.qqlive',
-    name: '腾讯视频',
-    deprecatedKeys: [5, 19],
-  },
   { id: 'com.xunlei.downloadprovider', name: '迅雷', deprecatedKeys: [11] },
   {
     id: 'com.xyhui',
