@@ -13,7 +13,7 @@
         {
           key: 1,
           action: 'clickCenter',
-          matches: ['TextView[text*="跳过"][text.length<=4]'],
+          matches: ['TextView[text*="跳过"][text.length<=10]'],
           snapshotUrls: ['https://i.gkd.li/i/17409509'],
         },
       ],
@@ -65,7 +65,7 @@
           name: '个人中心页卡片广告',
           activityIds: ['.activity.SplashHomeActivity','.ona.offline.client.group.DownloadGroupActivity'],
           matches:
-            'ViewGroup > TextView + LinearLayout[childCount=2] + ImageView[clickable=true]',
+            'ViewGroup[clickable=true] > ViewGroup > @ImageView[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12700175',
             'https://i.gkd.li/i/13759380',
@@ -75,7 +75,7 @@
           key: 3,
           name: '个人中心页顶部背景广告',
           activityIds: '.ona.activity.SplashHomeActivity',
-          matches: 'RelativeLayout[childCount=5] > @ImageView[clickable=true][childCount=0]',
+          matches: 'RelativeLayout > FrameLayout + @ImageView[clickable=true] + ImageView + ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12777344',
         },
         {
