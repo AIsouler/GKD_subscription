@@ -573,6 +573,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '运动世界校园',
     deprecatedKeys: [2, 3, 4, 9],
   },
+  {
+    id: 'com.xunmeng.pinduoduo',
+    name: '拼多多',
+    deprecatedKeys: [3, 4, 5, 7, 13, 14, 15, 18],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
