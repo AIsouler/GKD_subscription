@@ -32,14 +32,17 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          excludeMatches: '[id="com.coolapk.market:id/item_view"]',
-          matches: '[text^="跳过"][text.length<=4]',
+          matches: [
+            '[id="com.coolapk.market:id/ad_container"][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
             'https://i.gkd.li/i/13211392',
-            'https://i.gkd.li/i/13247733', // 误触
-            'https://i.gkd.li/i/13247782', // 可能误触
-            'https://i.gkd.li/i/13296816', // snapshot of excludeMatches
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/13247733',
+            'https://i.gkd.li/i/13296816',
           ],
         },
       ],
