@@ -10,14 +10,21 @@ body:
         3. 检查这个问题是否属于 [本项目维护的规则](https://github.com/AIsouler/GKD_subscription) 导致的
         4. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
   - type: textarea
-    id: bug-description
+    id: bug-1
     attributes:
       label: |
-        请输入 误触界面 的快照或者生成的链接，并说明是哪一条规则误触，也可在后面补充其它信息
+        请输入 误触界面 的快照或者生成的链接，也可在后面补充其它信息
       description: |
         快照是一个 zip 文件，快照链接是类似 "https://i.gkd.li/i/XXXXXXXX" 的文本，按照如下方式可获得快照信息
 
         按照下面的截图示例来获取界面快照，上传文件或者生成链接并粘贴到下面的输入框\
         ![img](https://raw.githubusercontent.com/AIsouler/GKD_subscription/e08028b4a4464640f39927059b9b502760111e8e/Snapshot.png)
+    validations:
+      required: true
+  - type: textarea
+    id: bug-2
+    attributes:
+      label: |
+        请说明是哪一条规则误触，可文字说明，也可提供触发记录界面的截图
     validations:
       required: true
