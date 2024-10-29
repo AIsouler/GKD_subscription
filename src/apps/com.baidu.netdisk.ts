@@ -21,9 +21,7 @@ export default defineGkdApp({
         {
           key: 1,
           action: 'clickCenter',
-          matches: [
-            'TextView[text^="点击跳转"] <2 RelativeLayout + View[vid="ms_skipView"]',
-          ],
+          matches: ['View[vid="ms_skipView"]'],
           snapshotUrls: ['https://i.gkd.li/i/17546726'],
         },
       ],

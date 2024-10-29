@@ -485,7 +485,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.mobileqq',
     name: 'QQ',
-    deprecatedKeys: [6, 14, 19],
+    deprecatedKeys: [0],
   },
   { id: 'com.xunlei.downloadprovider', name: '迅雷', deprecatedKeys: [11] },
   {
