@@ -143,6 +143,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     deprecatedKeys: [0],
   },
   {
+    id: 'com.tencent.qqlive',
+    name: '腾讯视频',
+    deprecatedKeys: [0],
+  },
+  {
     id: 'com.alibaba.android.rimet',
     name: '钉钉',
     deprecatedKeys: [0],
@@ -201,6 +206,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.baidu.netdisk.samsung',
     name: '百度网盘-三星版本',
     deprecatedKeys: [0, 3, 4],
+  },
+  {
+    id: 'com.baidu.netdisk',
+    name: '百度网盘',
+    deprecatedKeys: [0],
   },
   {
     id: 'com.baidu.searchbox',

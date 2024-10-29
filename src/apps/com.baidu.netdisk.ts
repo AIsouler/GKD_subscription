@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       name: '开屏广告',
-      key: 0,
+      key: 1,
       fastQuery: true,
       actionMaximum: 1,
       matchTime: 10000,
@@ -29,7 +29,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
+      key: 2,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
       fastQuery: true,
@@ -46,7 +46,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
+      key: 3,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
       fastQuery: true,
@@ -109,7 +109,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 3,
+      key: 4,
       name: '更新提示',
       fastQuery: true,
       actionMaximum: 1,
@@ -118,7 +118,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/16118181',
     },
     {
-      key: 4,
+      key: 5,
       name: '权限提示-通知权限',
       desc: '自动点击关闭',
       matchTime: 10000,
@@ -129,7 +129,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12923936',
     },
     {
-      key: 5,
+      key: 6,
       name: '评价提示',
       fastQuery: true,
       actionMaximum: 1,

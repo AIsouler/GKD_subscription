@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '腾讯视频',
   groups: [
     {
-      key: 0,
+      key: 1,
       name: '开屏广告',
       fastQuery: true,
       actionMaximum: 1,
@@ -21,7 +21,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
+      key: 2,
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -29,19 +29,19 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12700145',
     },
     {
-      key: 2,
+      key: 3,
       name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text*="有新版本啦!"] +3 TextView[text="暂不升级"]',
+      rules: 'TextView[text*="新版本"] +3 TextView[text="暂不升级"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12700486',
         'https://i.gkd.li/i/13799951',
       ],
     },
     {
-      key: 3,
+      key: 4,
       name: '分段广告-卡片广告',
       fastQuery: true,
       rules: [
@@ -50,8 +50,11 @@ export default defineGkdApp({
           name: '首页顶部卡片广告',
           activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
           matches:
-            'RelativeLayout[clickable=true] >2 @ImageView[clickable=true][index=4]',
-          snapshotUrls: ['https://i.gkd.li/i/17534256'],
+            'RelativeLayout[clickable=true] >2 ImageView +(3,4) ImageView[clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17542913',
+            'https://i.gkd.li/i/17534256',
+          ],
         },
         {
           key: 1,
@@ -166,7 +169,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 4,
+      key: 5,
       fastQuery: true,
       name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过/关闭广告',
@@ -216,7 +219,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
+      key: 6,
       name: '全屏广告-首页-弹窗广告',
       fastQuery: true,
       matchTime: 10000,
@@ -239,21 +242,21 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: '.ona.activity.SplashHomeActivity',
-          matches: '@RelativeLayout[clickable=true] + * >3 [text="立即预约"]',
+          matches:
+            'TextView[text="立即预约"] <3 @RelativeLayout[clickable=true] + RelativeLayout',
           snapshotUrls: 'https://i.gkd.li/i/14567294',
         },
         {
           key: 3,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
+            '[text="立即免费领取"] <2 LinearLayout +3 ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/17476569',
         },
         {
           key: 4,
           activityIds: '.ona.activity.SplashHomeActivity',
-          matches:
-            'TextView[text*="腾讯视频VIP片免费看"] +3 TextView[text="暂不需要，稍后领取"]',
+          matches: '[text="暂不需要，稍后领取"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17525567',
         },
         {
@@ -266,7 +269,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 6,
+      key: 7,
       name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,
