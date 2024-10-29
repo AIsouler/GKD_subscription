@@ -1,4 +1,5 @@
-name: APP 适配
+name: 请求适配
+title: "[Feature] "
 description: 请求增加适配 APP 规则
 body:
   - type: markdown
