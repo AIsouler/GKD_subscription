@@ -203,11 +203,6 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     deprecatedKeys: [0, 3, 4],
   },
   {
-    id: 'com.baidu.netdisk',
-    name: '百度网盘',
-    deprecatedKeys: [3, 4, 5, 7, 10, 11],
-  },
-  {
     id: 'com.baidu.searchbox',
     name: '百度',
     deprecatedKeys: [0],

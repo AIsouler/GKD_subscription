@@ -34,7 +34,7 @@ export default defineGkdGlobalGroups([
     fastQuery: true,
     matchRoot: true,
     matchTime: 10000,
-    actionMaximum: 2,
+    actionMaximum: 1,
     resetMatch: 'app',
     actionCdKey: 0,
     actionMaximumKey: 0,
@@ -47,7 +47,7 @@ export default defineGkdGlobalGroups([
         key: 0,
         quickFind: true,
         matches:
-          '[text*="跳过"][text.length<10][visibleToUser=true][height>0&&width>0]',
+          '[text^="跳过"][text.length<=4][clickable=true][visibleToUser=true]',
       },
       {
         key: 2,
@@ -67,8 +67,9 @@ export default defineGkdGlobalGroups([
     name: '更新提示',
     order: UPDATE_PROMPT_ORDER,
     fastQuery: true,
+    matchRoot: true,
     matchTime: 10000,
-    actionMaximum: 2,
+    actionMaximum: 1,
     resetMatch: 'app',
     actionCdKey: 0,
     actionMaximumKey: 0,

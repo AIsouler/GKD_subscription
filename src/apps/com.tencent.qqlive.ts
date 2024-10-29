@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchTime: 10000,
       resetMatch: 'app',
@@ -15,9 +15,7 @@ export default defineGkdApp({
         {
           key: 1,
           action: 'clickCenter',
-          matches: [
-            'TextView[text*="跳过"][text.length<10][visibleToUser=true][height>0&&width>0]',
-          ],
+          matches: ['TextView[text*="跳过"][text.length<=10]'],
           snapshotUrls: ['https://i.gkd.li/i/17409509'],
         },
       ],
@@ -27,14 +25,12 @@ export default defineGkdApp({
       name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: 'TextView[text*="青少年模式"] +3 TextView[text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/12700145',
     },
     {
       key: 2,
       name: '更新提示',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -54,12 +50,8 @@ export default defineGkdApp({
           name: '首页顶部卡片广告',
           activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
           matches:
-            'FrameLayout - RelativeLayout > RelativeLayout > FrameLayout + ImageView[clickable=true][childCount=0][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12700299',
-            'https://i.gkd.li/i/12700302',
-            'https://i.gkd.li/i/13685929', // 限定 visibleToUser=true 防止误触
-          ],
+            'RelativeLayout[clickable=true] >2 @ImageView[clickable=true][index=4]',
+          snapshotUrls: ['https://i.gkd.li/i/17534256'],
         },
         {
           key: 1,
@@ -76,7 +68,7 @@ export default defineGkdApp({
             'com.tencent.qqlive.ona.offline.client.group.DownloadGroupActivity',
           ],
           matches:
-            'ViewGroup > TextView + LinearLayout[childCount=2] + ImageView[clickable=true]',
+            'ViewGroup[clickable=true] >2 TextView + LinearLayout + ImageView[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12700175',
             'https://i.gkd.li/i/13759380',
@@ -115,8 +107,6 @@ export default defineGkdApp({
           key: 6,
           fastQuery: true,
           matches: '[id="com.tencent.qqlive:id/feed_icon"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/42013a93-fb12-4747-92e0-95f5028eb8e5',
           snapshotUrls: 'https://i.gkd.li/i/14318802',
         },
         // 以下是配合本规则组内其他key使用的规则，反馈界面的规则都是一样的
@@ -126,8 +116,6 @@ export default defineGkdApp({
           fastQuery: true,
           matches:
             '[id="com.tencent.qqlive:id/ad_feed_back_dislike"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/8746fdc8-828e-42bb-9160-8e67b7af2dc7',
           snapshotUrls: 'https://i.gkd.li/i/14318811',
         },
         {
@@ -222,10 +210,7 @@ export default defineGkdApp({
         {
           key: 4,
           name: '居中广告-2',
-          fastQuery: true,
           matches: '[id="com.tencent.qqlive:id/pause_ad_close"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c8f55e94-30ad-440d-b4d8-06fb19f0c17e',
           snapshotUrls: 'https://i.gkd.li/i/14318385',
         },
       ],
@@ -238,29 +223,23 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
-        {
-          key: 0,
-          activityIds: '.redpacket.rain.OpenRedPacketActivity',
-          matches:
-            '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/05606ba5-1a89-470c-bcca-bd52561a634d',
-          snapshotUrls: 'https://i.gkd.li/i/13842643',
-        },
+        // {
+        //   key: 0,
+        //   activityIds: '.redpacket.rain.OpenRedPacketActivity',
+        //   matches:
+        //     '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
+        //   snapshotUrls: 'https://i.gkd.li/i/13842643',
+        // },
         {
           key: 1,
           activityIds: '.ona.activity.VideoDetailActivity',
           matches: '@[clickable=true] - [text="广告"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f',
           snapshotUrls: 'https://i.gkd.li/i/14358913',
         },
         {
           key: 2,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches: '@RelativeLayout[clickable=true] + * >3 [text="立即预约"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c8131a06-837a-4c42-9a70-9e8a7fe21334',
           snapshotUrls: 'https://i.gkd.li/i/14567294',
         },
         {
@@ -268,7 +247,6 @@ export default defineGkdApp({
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
-          exampleUrls: 'https://e.gkd.li/3f248280-61c1-440c-8fb8-90ca93acf53e',
           snapshotUrls: 'https://i.gkd.li/i/17476569',
         },
         {
@@ -276,14 +254,13 @@ export default defineGkdApp({
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             'TextView[text*="腾讯视频VIP片免费看"] +3 TextView[text="暂不需要，稍后领取"]',
-          exampleUrls: 'https://e.gkd.li/4efdb351-8ba9-451e-9c62-cd0549544624',
           snapshotUrls: 'https://i.gkd.li/i/17525567',
         },
         {
           key: 5,
           activityIds: '.ona.activity.SplashHomeActivity',
-          matches: '@ImageView[clickable=true] + [text="免费看"]',
-          exampleUrls: 'https://e.gkd.li/48f84ee3-f6ef-4059-b43b-0b6cfa83ddb9',
+          matches:
+            'FrameLayout > ImageView + @ImageView[clickable=true] + TextView',
           snapshotUrls: 'https://i.gkd.li/i/17474933',
         },
       ],
@@ -303,7 +280,8 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '@ImageView + * > [text^="开启通知"]',
+          matches:
+            '@ImageView[clickable=true] + LinearLayout > [text^="开启通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13670465',
         },
       ],
