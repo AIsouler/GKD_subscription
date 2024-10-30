@@ -463,11 +463,6 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     deprecatedKeys: [0, 2],
   },
   {
-    id: 'com.taobao.taobao',
-    name: '淘宝',
-    deprecatedKeys: [0],
-  },
-  {
     id: 'com.taptap',
     name: 'TapTap',
     deprecatedKeys: [1],
