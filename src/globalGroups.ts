@@ -36,8 +36,6 @@ export default defineGkdGlobalGroups([
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
-    actionCdKey: 0,
-    actionMaximumKey: 0,
     rules: [
       {
         key: -1,
@@ -45,13 +43,13 @@ export default defineGkdGlobalGroups([
       },
       {
         key: 0,
-        quickFind: true,
+        fastQuery: true,
         matches:
-          '[text^="跳过"][text.length<=4][clickable=true][visibleToUser=true]',
+          '[text*="跳过"][text.length<=10][clickable=true][visibleToUser=true]',
       },
       {
         key: 2,
-        quickFind: true,
+        fastQuery: true,
         matches:
           'FrameLayout[visibleToUser=true][height>0&&width>0][childCount>=2] > FrameLayout[visibleToUser=true][height>0&&width>0][childCount>2] > @View[clickable=true][height>0&&width>0][visibleToUser=true] + TextView[clickable=true][height>0&&width>0][visibleToUser=true]', // 字节 SDK
       },

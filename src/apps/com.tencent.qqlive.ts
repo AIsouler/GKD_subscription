@@ -283,8 +283,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches:
-            '@ImageView[clickable=true] + LinearLayout > [text^="开启通知"]',
+          matches: '@ImageView + * > [text^="开启通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13670465',
         },
       ],

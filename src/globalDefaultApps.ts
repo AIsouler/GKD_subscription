@@ -6,8 +6,6 @@ const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
-  'com.tencent.qqlive', // 腾讯视频
-  'com.baidu.netdisk', //百度网盘
   'com.tencent.mm', // 微信
   'li.songe.gkd', // GKD
   'com.eg.android.AlipayGphone', //支付宝

@@ -251,11 +251,11 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          preKeys: [2],
           key: 4,
           name: '钱包页&天气页-点击[关闭此条广告]',
           matches:
-            'TextView[text="关闭此条广告"] <2 LinearLayout[clickable=true]',
+            'TextView[text="关闭此条广告"] < LinearLayout[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/17555042',
         },
       ],
@@ -718,12 +718,21 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '功能类-首页点击打卡进入时自动打卡',
+      name: '功能类-QQ自动进入打卡页立即打卡',
+      desc: '点击打卡-进入-立即打卡',
+      fastQuery: true,
+      activityIds: ['.activity.SplashActivity', '.activity.QQBrowserActivity'],
       rules: [
         {
-          activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
+          key: 1,
+          name: '进入[打卡]',
+          matches: '[text^="打卡"] < LinearLayout[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17566121',
+        },
+        {
+          key: 2,
+          name: '点[立即打卡]',
           matches: '[text="立即打卡"][clickable=true]',
-          exampleUrls: 'https://e.gkd.li/61ffa315-ab3b-4bda-bb2d-8b369bbc4ee3',
           snapshotUrls: 'https://i.gkd.li/i/17552369',
         },
       ],
