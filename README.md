@@ -1,4 +1,4 @@
-# Mrlc/GKD-Mrlc
+# Mrlctate/GKD-Mrlc
 
 ## 声明
 
@@ -26,7 +26,7 @@ GitHub源
 https://raw.githubusercontent.com/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.json5
 ```
 
-当前版本: v22
+当前版本: v23
 
 当前订阅文件已适配 797 个应用，共有 1891 应用规则组，7 全局规则组
 
@@ -39,8 +39,6 @@ https://raw.githubusercontent.com/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.jso
 在 [GKD官网](https://gkd.li/) 查看 [GKD基础使用教程](https://gkd.li/guide/) 、[常见问题](https://gkd.li/guide/faq) 以及 [API说明](https://gkd.li/api/)
 
 查看 [规则编写教程](https://github.com/Snoopy1866/blogs/blob/main/software/gkd/gkd-rule-tutorial/gkd-rule-tutorial.md) 
-
-使用 [GKDTool](https://rules.adproqwq.xyz)工具 By [@adproqwq](https://github.com/adproqwq) [GKDTool_Vue](https://github.com/adproqwq/GKDTool_Vue)
 
 ## 贡献
 
