@@ -250,7 +250,7 @@ export default defineGkdApp({
           key: 3,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
-            '[text="立即免费领取"] <2 LinearLayout +3 ImageView[clickable=true]',
+            '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
           snapshotUrls: 'https://i.gkd.li/i/17476569',
         },
         {

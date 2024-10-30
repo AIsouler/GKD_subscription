@@ -255,7 +255,7 @@ export default defineGkdApp({
           key: 4,
           name: '钱包页&天气页-点击[关闭此条广告]',
           matches:
-            'TextView[text="关闭此条广告"] < LinearLayout[clickable=true]',
+            '@LinearLayout[clickable=true] > TextView[text="关闭此条广告"]',
           snapshotUrls: 'https://i.gkd.li/i/17555042',
         },
       ],
@@ -726,7 +726,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '进入[打卡]',
-          matches: '[text^="打卡"] < LinearLayout[clickable=true]',
+          matches: '@LinearLayout[clickable=true] > TextView[text^="打卡"]',
           snapshotUrls: 'https://i.gkd.li/i/17566121',
         },
         {

@@ -36,22 +36,37 @@ export default defineGkdGlobalGroups([
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
+    actionMaximumKey: 0,
+    priorityTime: 10000,
     rules: [
       {
-        key: -1,
-        matches: `[childCount<7] > ${COMMON_PREFIX}[(text.length<10&&(text*="跳过"||text*="跳過"||text~="(?is).*skip.*"))||id~="(?is).*tt_splash_skip_btn"||vid~="(?is).*skip.*"||(vid~="(?is).*count.*"&&vid~="(?is).*down.*"&&vid!~="(?is).*load.*"&&vid!~="(?is).*hour.*"&&vid!~="(?is).*minute.*"&&vid!~="(?is).*add.*"&&vid!~="(?is).*ead.*")||desc*="跳过"||desc~="(?is).*skip.*"]`,
+        key: 0,
+        excludeMatches: [
+          // 防止在应用的搜索框、搜索页面误触
+          '[text*="搜索"][text.length<6][visibleToUser=true]',
+          '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
+        ],
+        matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
-        key: 0,
-        fastQuery: true,
+        key: 1,
+        excludeMatches: [
+          // 防止在应用的搜索框、搜索页面误触
+          '[text*="搜索"][text.length<6][visibleToUser=true]',
+          '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
+        ],
         matches:
-          '[text*="跳过"][text.length<=10][clickable=true][visibleToUser=true]',
+          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || id$="tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*timing.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*" && text!~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]") || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+        excludeSnapshotUrls: [
+          // 避免误触
+          'https://i.gkd.li/i/16742932', // vid!~="(?is).*timing.*"
+        ],
       },
       {
         key: 2,
-        fastQuery: true,
+        action: 'clickCenter',
         matches:
-          'FrameLayout[visibleToUser=true][height>0&&width>0][childCount>=2] > FrameLayout[visibleToUser=true][height>0&&width>0][childCount>2] > @View[clickable=true][height>0&&width>0][visibleToUser=true] + TextView[clickable=true][height>0&&width>0][visibleToUser=true]', // 字节 SDK
+          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]', // 字节SDK
       },
     ],
     apps: [...appList.openAdBlackListAppIDs]
