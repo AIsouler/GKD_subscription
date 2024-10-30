@@ -226,13 +226,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
-        // {
-        //   key: 0,
-        //   activityIds: '.redpacket.rain.OpenRedPacketActivity',
-        //   matches:
-        //     '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
-        //   snapshotUrls: 'https://i.gkd.li/i/13842643',
-        // },
+        {
+          key: 0,
+          activityIds: '.redpacket.rain.OpenRedPacketActivity',
+          matches:
+            '@ImageView[clickable=true] < ViewGroup[childCount=5] < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/13842643',
+        },
         {
           key: 1,
           activityIds: '.ona.activity.VideoDetailActivity',
