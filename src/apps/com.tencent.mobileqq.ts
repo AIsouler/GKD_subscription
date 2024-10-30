@@ -725,15 +725,23 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          name: '进入[打卡]',
+          name: '点击[打卡]',
           matches: '@LinearLayout[clickable=true] > TextView[text^="打卡"]',
           snapshotUrls: 'https://i.gkd.li/i/17566121',
         },
         {
           key: 2,
-          name: '点[立即打卡]',
-          matches: '[text="立即打卡"][clickable=true]',
+          name: '点击[立即打卡]',
+          matches:
+            '@Button[text="立即打卡"][clickable=true] + TextView[text^="已有"]',
           snapshotUrls: 'https://i.gkd.li/i/17552369',
+        },
+        {
+          key: 3,
+          name: '点击[返回]',
+          matches:
+            '[text="分享"] <<n FrameLayout + RelativeLayout >3 TextView[desc="返回"]',
+          snapshotUrls: 'https://i.gkd.li/i/17568038',
         },
       ],
     },
