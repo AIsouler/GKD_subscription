@@ -35,6 +35,17 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16902939', // 防止误触
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          position: {
+            left: 'width * 0.9041',
+            top: 'width * 0.1598',
+          },
+          matches: '[vid="animation_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6bca4f19-320d-42e4-affb-4667a8112653',
+          snapshotUrls: 'https://i.gkd.li/i/17565808',
+        },
       ],
     },
     {
