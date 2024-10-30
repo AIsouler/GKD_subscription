@@ -737,6 +737,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/17552369',
         },
         {
+          preKeys: [2],
           key: 3,
           name: '点击[返回]',
           matches:
