@@ -12,7 +12,8 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules: '@[vid="close" || vid="ll_close"] [text*="跳过"][text.length<=10][visibleToUser=true]',
+      rules:
+        '@[vid="close" || vid="ll_close"] [text*="跳过"][text.length<=10][visibleToUser=true]',
       snapshotUrls: [
         'https://i.gkd.li/i/17576743',
         'https://i.gkd.li/i/17578451',
