@@ -154,7 +154,6 @@ export const blackListAppIDs: string[] = [
   'Hook.JiuWu.Xp',
   'me.weishu.kernelsu',
   'com.franco.kernel',
-  'com.molink.john.hummingbird',
   'com.samsung.android.themedesigner',
   'com.samsung.android.game.gamehome',
   'com.tencent.tmgp.sgame',
