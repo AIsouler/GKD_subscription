@@ -122,14 +122,17 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity',
+        'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
+        'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+        '.activity.QPublicFragmentActivity',
+        '.activity.QPublicTransFragmentActivity',
+      ],
       rules: [
         {
           key: 0,
-          fastQuery: true,
-          activityIds: [
-            'com.tencent.mobileqq.activity.SplashActivity',
-            'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
-          ],
           matches:
             'ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]',
           snapshotUrls: [
@@ -140,15 +143,14 @@ export default defineGkdApp({
         {
           key: 1,
           name: '钱包页面-卡片广告',
-          activityIds: 'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
-          matches: '[desc="弹窗推荐活动"] + [desc="关闭"]',
+          matches: '[desc="弹窗推荐活动"] + [desc="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14822290',
         },
         {
           key: 2,
           name: '大会员&黄钻页面-弹窗广告',
-          activityIds: '.activity.QPublicFragmentActivity',
-          matches: 'Button[desc="关闭广告弹窗"]',
+          matches:
+            '@Button[desc="关闭广告弹窗"][clickable=false] - Button[desc!=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/17554067',
             'https://i.gkd.li/i/17554023',
@@ -157,7 +159,6 @@ export default defineGkdApp({
         {
           key: 3,
           name: '账号信息-弹窗广告',
-          activityIds: '.activity.QPublicFragmentActivity',
           matches: 'ViewGroup[desc="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/17554539',
         },
@@ -172,7 +173,6 @@ export default defineGkdApp({
         {
           key: 5,
           fastQuery: true,
-          activityIds: '.activity.QPublicTransFragmentActivity',
           matches:
             'ViewGroup[childCount=6] > ViewGroup[clickable=true][index=2]',
           snapshotUrls: 'https://i.gkd.li/i/15136939',
@@ -182,7 +182,6 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: '.activity.QPublicTransFragmentActivity',
           matches:
             'ViewGroup[childCount=3] > ViewGroup[childCount=6] + ViewGroup[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/15981784',
@@ -720,7 +719,6 @@ export default defineGkdApp({
       key: 26,
       name: '功能类-QQ自动进入打卡页立即打卡',
       desc: '点击打卡-进入-立即打卡',
-      fastQuery: true,
       activityIds: ['.activity.SplashActivity', '.activity.QQBrowserActivity'],
       rules: [
         {
@@ -732,16 +730,14 @@ export default defineGkdApp({
         {
           key: 2,
           name: '点击[立即打卡]',
-          matches:
-            '@Button[text="立即打卡"][clickable=true] + TextView[text^="已有"]',
+          matches: '[text="立即打卡"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/17552369',
         },
         {
           preKeys: [2],
-          key: 3,
           name: '点击[返回]',
-          matches:
-            '[text="分享"] <<n FrameLayout + RelativeLayout >3 TextView[desc="返回"]',
+          matches: 'TextView[desc="返回"][clickable=true]',
+          // 'Button[text="分享"] <<n FrameLayout + RelativeLayout >3 TextView[desc="返回"]',
           snapshotUrls: 'https://i.gkd.li/i/17568038',
         },
       ],
