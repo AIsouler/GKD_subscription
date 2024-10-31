@@ -652,7 +652,8 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
           matches: [
-            'TextView[text="入群申请中"] <2 RelativeLayout - RelativeLayout > TextView[text="关闭"][clickable=true]',
+            'TextView[text="入群申请中"][visibleToUser=true]',
+            'TextView[text="关闭"][visibleToUser=true]',
           ],
           exampleUrls:
             'https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030',
