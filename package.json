@@ -1,6 +1,6 @@
 {
   "name": "gkd-mrlc",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "type": "module",
   "gkd": {
     "outDir": "dist",
