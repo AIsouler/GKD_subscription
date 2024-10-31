@@ -59,7 +59,7 @@ export default defineGkdApp({
           name: '底部半屏弹窗',
           action: 'back', // 使用点击方式有概率无效
           matches:
-            'FlattenUIText[text="开会员听整月" || text="购买汽水会员" || text="试听中，开通VIP听全曲"]',
+            'FlattenUIText[text="开会员听整月" || text="购买汽水会员" || text="试听中，开通VIP听全曲" || text*="看视频全天免费听"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
             'https://i.gkd.li/i/13660652',
@@ -67,8 +67,9 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14767233',
             'https://i.gkd.li/i/16280954',
             'https://i.gkd.li/i/16342691',
-            'https://i.gkd.li/i/13613296', // 避免在此页面误触
+            'https://i.gkd.li/i/17580823',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/13613296',
         },
         {
           key: 2,
