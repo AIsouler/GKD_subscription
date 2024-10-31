@@ -205,7 +205,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '分段广告-钱包页&天气页&动态页好友热播',
+      name: '分段广告-钱包页&天气页&动态页',
       fastQuery: true,
       activityIds: [
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -216,7 +216,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击[好友热播]卡片右上角菜单按钮',
+          name: '点击[好友热播]卡片右上角按钮',
           matches: '@Button[clickable=true] - [text="好友热播"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12721427',
@@ -231,8 +231,8 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: '钱包页-点击[广告]卡片右上角按钮',
-          matches: 'TextView[text="广告"][clickable=true]',
+          name: '钱包页-点击卡片[广告]按钮',
+          matches: 'ViewGroup > TextView[text="广告"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/17554961',
             'https://i.gkd.li/i/17583129',
@@ -240,6 +240,13 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          name: '钱包页-点击页底[广告]按钮',
+          matches:
+            '@View[clickable=true] >2 TextView[text="广告"][clickable=false]',
+          snapshotUrls: ['https://i.gkd.li/i/17555956'],
+        },
+        {
+          key: 4,
           name: '天气页-点击[广告]卡片右上角按钮',
           matches:
             '@LinearLayout[clickable=true] > TextView[text="广告"][clickable=false]',
@@ -255,7 +262,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [2, 3],
+          preKeys: [2, 3, 4],
           name: '钱包页&天气页-点击[关闭此条广告]',
           matches:
             '@LinearLayout[clickable=true] > TextView[text="关闭此条广告"]',
