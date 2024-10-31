@@ -129,6 +129,7 @@ export default defineGkdApp({
         'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
         '.activity.QPublicFragmentActivity',
         '.activity.QPublicTransFragmentActivity',
+        '.activity.QQBrowserActivity',
       ],
       rules: [
         {
@@ -158,14 +159,13 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          name: '账号信息-弹窗广告',
+          name: '等级页-弹窗广告',
           matches: 'ViewGroup[desc="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/17554539',
         },
         {
           key: 4,
           name: '会员页面-弹窗广告',
-          activityIds: '.activity.QQBrowserActivity',
           matches:
             'TextView[text="QQ等级规则"] + View > TextView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12914734',
@@ -231,17 +231,22 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: '钱包页&天气页-点击[广告]卡片右上角菜单按钮',
-          matches: 'TextView[text="广告"] <(1,2) *[clickable=true]',
+          name: '钱包页-点击[广告]卡片右上角按钮',
+          matches: 'TextView[text="广告"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/17554961',
-            'https://i.gkd.li/i/17555956',
-            'https://i.gkd.li/i/17555697',
+            'https://i.gkd.li/i/17583129',
           ],
         },
         {
-          preKeys: [0],
           key: 3,
+          name: '天气页-点击[广告]卡片右上角按钮',
+          matches:
+            '@LinearLayout[clickable=true] > TextView[text="广告"][clickable=false]',
+          snapshotUrls: ['https://i.gkd.li/i/17555697'],
+        },
+        {
+          preKeys: [0],
           name: '点击[减少好友热播]',
           matches: '@[clickable=true] >2 [text="减少好友热播"]',
           snapshotUrls: [
@@ -250,8 +255,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [2],
-          key: 4,
+          preKeys: [2, 3],
           name: '钱包页&天气页-点击[关闭此条广告]',
           matches:
             '@LinearLayout[clickable=true] > TextView[text="关闭此条广告"]',
@@ -723,6 +727,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
+          actionMaximum: 1,
           name: '点击[打卡]',
           matches: '@LinearLayout[clickable=true] > TextView[text^="打卡"]',
           snapshotUrls: 'https://i.gkd.li/i/17566121',
@@ -735,6 +740,7 @@ export default defineGkdApp({
         },
         {
           preKeys: [2],
+          forcedTime: 350,
           name: '点击[返回]',
           matches: 'TextView[desc="返回"][clickable=true]',
           // 'Button[text="分享"] <<n FrameLayout + RelativeLayout >3 TextView[desc="返回"]',
