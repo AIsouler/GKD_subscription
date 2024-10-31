@@ -26,9 +26,12 @@ export default defineGkdApp({
           key: 3,
           fastQuery: true,
           action: 'back',
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
+          activityIds: [
+            '.ui.activity.HomeActivity',
+            '.ui.activity.MainFrameActivity',
+          ],
           matches:
-            '[text="开心收下" || text="去抢购" || text="立即抽免单" || text="去刮奖" || text="立即领取" || text="去领大额金币" || text="送你大额现金" || text^="红包助手"][visibleToUser=true]',
+            '[text="开心收下" || text="去抢购" || text="立即抽免单" || text="去刮奖" || text="立即领取" || text="去领大额金币" || text="送你大额现金" || text*="红包助手"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13625441',
             'https://i.gkd.li/i/13761182',
@@ -40,6 +43,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15032649',
             'https://i.gkd.li/i/15076322',
             'https://i.gkd.li/i/17564786',
+            'https://i.gkd.li/i/17585645',
           ],
         },
         {
