@@ -13,9 +13,9 @@
 
 - **已适配的规则需要等待发布更新才能生效，在 `GKD订阅界面`下拉就能检测是否有更新，也可以在此 [点击查看更新日志](https://github.com/AIsouler/GKD_subscription/releases)**
 
-- **请求适配或报告误触 -> [点击反馈](https://github.com/AIsouler/GKD_subscription/issues/new/choose)**
+- **请求适配或报告问题 -> [点击反馈](https://github.com/AIsouler/GKD_subscription/issues/new/choose)**
 
-- **问题讨论 -> [点击查看或开启讨论](https://github.com/AIsouler/GKD_subscription/discussions)**
+- **交流讨论 -> [点击查看或开启讨论](https://github.com/AIsouler/GKD_subscription/discussions)**
 
 - **欢迎贡献规则，提交pr前请确认您已仔细阅读 [API说明](https://gkd.li/api/)**
 
