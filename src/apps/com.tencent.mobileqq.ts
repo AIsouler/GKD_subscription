@@ -206,7 +206,6 @@ export default defineGkdApp({
     {
       key: 6,
       name: '分段广告-钱包页&天气页&动态页',
-      fastQuery: true,
       activityIds: [
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
         'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
@@ -242,7 +241,7 @@ export default defineGkdApp({
           key: 3,
           name: '钱包页-点击页底[广告]按钮',
           matches:
-            '@View[clickable=true] >2 TextView[text="广告"][clickable=false]',
+            'View[id="bottomAms"] >2 @View[index=2] >2 TextView[text="广告"]',
           snapshotUrls: ['https://i.gkd.li/i/17555956'],
         },
         {
@@ -651,7 +650,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.activity.QQBrowserActivity',
-          matches: 'TextView[text="关闭"][clickable=true]',
+          matches:
+            'RelativeLayout[childCount=2] > TextView[text="关闭"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030',
           snapshotUrls: 'https://i.gkd.li/i/14235163',
