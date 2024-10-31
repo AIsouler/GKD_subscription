@@ -142,8 +142,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [98],
-          key: 99,
+          preKeys: [4, 98],
           name: '广告反馈卡片-确认原因',
           fastQuery: true,
           activityIds: [
