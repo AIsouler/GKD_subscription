@@ -650,11 +650,8 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
-          matches: [
-            'TextView[text="入群申请中"][visibleToUser=true]',
-            'TextView[text="关闭"][visibleToUser=true]',
-          ],
+          activityIds: '.activity.QQBrowserActivity',
+          matches: 'TextView[text="关闭"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030',
           snapshotUrls: 'https://i.gkd.li/i/14235163',
@@ -735,7 +732,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          actionMaximum: 1,
+          forcedTime: 500,
           name: '点击[打卡]',
           matches: '@LinearLayout[clickable=true] > TextView[text^="打卡"]',
           snapshotUrls: 'https://i.gkd.li/i/17566121',
@@ -748,7 +745,7 @@ export default defineGkdApp({
         },
         {
           preKeys: [2],
-          forcedTime: 350,
+          forcedTime: 300,
           name: '点击[返回]',
           matches: 'TextView[desc="返回"][clickable=true]',
           // 'Button[text="分享"] <<n FrameLayout + RelativeLayout >3 TextView[desc="返回"]',

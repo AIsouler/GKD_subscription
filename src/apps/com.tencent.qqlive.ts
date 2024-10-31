@@ -104,7 +104,7 @@ export default defineGkdApp({
           name: '点击右上角[广告]-2',
           activityIds: ['.ona.activity.SplashHomeActivity'],
           matches:
-            'FrameLayout[clickable=true] > FrameLayout[clickable=false] > ImageView[clickable=true]',
+            'RelativeLayout[clickable=true] > RelativeLayout[clickable=false] > ImageView[clickable=true]',
           snapshotUrls: ['https://i.gkd.li/i/17586123'],
         },
         {
