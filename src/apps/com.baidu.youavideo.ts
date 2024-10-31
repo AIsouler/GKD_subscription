@@ -49,15 +49,17 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-会员充值提示',
-      desc: '点击x关闭充值提示',
-      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
-      fastQuery: true,
+      name: '全屏广告-会员弹窗',
+      desc: '点击关闭',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.vip.ui.VipPayWebDialogActivity',
           matches:
-            '[id="com.baidu.youavideo:id/tv_confirm_pay"] -5 [id="com.baidu.youavideo:id/img_close_dialog"]',
-          snapshotUrls: ['https://i.gkd.li/i/12970094'],
+            '[text^="恭喜获得会员"] - View[text=""] > @Image[text!=null][visibleToUser=true] <<n [vid="fl_web_view"]',
+          exampleUrls: 'https://e.gkd.li/c149b068-7f00-4173-9000-a41fa1603ba7',
+          snapshotUrls: 'https://i.gkd.li/i/17576805',
         },
       ],
     },
