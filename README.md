@@ -26,7 +26,7 @@ GitHub源
 https://raw.githubusercontent.com/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.json5
 ```
 
-当前版本: v26
+当前版本: v27
 
 当前订阅文件已适配 797 个应用，共有 1891 应用规则组，7 全局规则组
 
