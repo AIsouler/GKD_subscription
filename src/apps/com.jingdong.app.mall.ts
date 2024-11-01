@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -19,6 +18,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/16323111',
             'https://i.gkd.li/i/16323115', // 防止误触
+            'https://i.gkd.li/i/17602356', // 京东v13.6.1 "跳过" 节点不支持fastQuery
           ],
         },
       ],
