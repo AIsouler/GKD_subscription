@@ -93,7 +93,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-闲鱼币任务-功能测试',
+      name: '功能类-闲鱼币任务——功能测试',
       desc: '自动完成一些闲鱼币任务',
       activityIds: '.webview.WebHybridActivity',
       rules: [
@@ -102,81 +102,83 @@ export default defineGkdApp({
           name: '点击x[关闭]-弹窗',
           matches:
             'View[childCount=3] > Image + View[childCount=2] + Image[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17606064',
         },
         {
           key: 2,
-          forcedTime: 6000,
-          name: '点击[赚骰子]-有领取奖励',
-          matches:
-            '@View[childCount=2][clickable=true] > Image + View[text="领"]',
+          actionDelay: 7000,
+          name: '点击[扱骰子寻宝]',
+          matches: '@View[id="mapDiceBtn"] > View[text.length=2]',
+          snapshotUrls: 'https://i.gkd.li/i/17606060',
         },
         {
           key: 3,
-          actionMaximum: 1,
-          name: '签到',
-          matches: 'View[childCount=6] + View[text="签到"][clickable=true]',
+          forcedTime: 7000,
+          name: '点击[赚骰子]-领取奖励',
+          matches:
+            'View[childCount=5] > @View[childCount=2] +3 View[id="mapDiceBtn"] > View[text.length=1]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17606487',
+            'https://i.gkd.li/i/17606060',
+          ],
         },
         {
           key: 4,
+          actionMaximum: 1,
+          name: '签到',
+          matches: 'View[childCount=6] + View[text="签到"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17606057',
+        },
+        {
+          key: 5,
           forcedTime: 600,
           name: '领取任务',
           matches:
             'View[clickable=false] > View[index=9 || index=5][text="领取奖励"]',
-        },
-        {
-          preKeys: [4],
-          key: 5,
-          forcedTime: 300,
-          name: '点击[关闭底部弹窗]-前判断',
-          matches:
-            'View[index=4] > @View[index=0][clickable=false] > View[index=9 || index=5][text!="领取奖励"]', //没有text="领取奖励"
+          snapshotUrls: [
+            'https://i.gkd.li/i/17606051',
+            'https://i.gkd.li/i/17606057',
+          ],
         },
         {
           preKeys: [5],
           key: 6,
           name: '点击[关闭底部弹窗]',
-          matches: 'View[id="taskWrap"] > Image + View[clickable=true]',
+          //没有领取奖励关闭
+          matches:
+            'View[id="taskWrap"] > @View[index=1][clickable=true] +3 View[index=4] >2 View[index=9 || index=5][text="去完成"]',
+          snapshotUrls: 'https://i.gkd.li/i/17606054',
         },
         {
-          preKeys: [6],
           key: 7,
-          forcedTime: 6000,
-          name: '点击[扱骰子寻宝]',
-          matches: '@View[id="mapDiceBtn"] > View[text!="赚"]',
-        },
-        {
-          key: 8,
           name: '点击[全部收下]',
           matches: 'View[text^="全部收下"]',
+          snapshotUrls: 'https://i.gkd.li/i/17606050',
         },
       ],
     },
     {
       key: 8,
-      name: '功能类-背包使用道具-功能测试',
+      name: '功能类-背包使用道具——功能测试',
       desc: '自动使用背包道具',
       activityIds: '.webview.WebHybridActivity',
       rules: [
         {
           key: 1,
           forcedTime: 6000,
-          name: '点击[背包]-前判断',
-          matches: 'View[id="mapDiceBtn"] > View[text="赚"]',
+          name: '点击[背包]',
+          matches:
+            'View[childCount=5] > View + View[childCount=1] > Image < View +2 View > Image',
+          snapshotUrls: 'https://i.gkd.li/i/17606060',
         },
         {
           preKeys: [1],
           key: 2,
-          name: '点击[背包]',
-          matches:
-            'View[childCount=5] > View[index=3][id=null][clickable=true] > Image[clickable=false]',
-        },
-        {
-          preKeys: [2],
-          key: 3,
           forcedTime: 500,
           name: '点击[道具]',
           matches:
             'View > View[index=1 || index=0] > View[index=1][text!="加点卡"] + View[index=2][text="使用"]',
+          snapshotUrls: 'https://i.gkd.li/i/17606047',
         },
       ],
     },

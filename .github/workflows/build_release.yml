@@ -83,4 +83,4 @@ jobs:
         if: ${{ steps.commit.outcome == 'success' }}
         run: |
           curl -X PUT 'https://registry-direct.npmmirror.com/gkd-melc/sync'
-          curl -X PUT 'https://purge.jsdelivr.net/npm/gkd-mrlc/dist'
+          # curl -X PUT 'https://purge.jsdelivr.net/npm/gkd-mrlc/dist'
