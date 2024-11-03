@@ -25,7 +25,7 @@ export default defineGkdGlobalGroups([
           '[text*="搜索"][text.length<6][visibleToUser=true]',
           '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
         ],
-        matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+        matches: '[text^="跳过"][text.length<=6][visibleToUser=true]',
       },
       {
         key: 1,
