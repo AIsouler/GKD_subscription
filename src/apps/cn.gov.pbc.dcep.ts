@@ -10,8 +10,9 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="upgrade_dialog_cancel"]',
+      rules: '[vid="upgrade_dialog_cancel"][text!="退出应用"]',
       snapshotUrls: 'https://i.gkd.li/i/13840408',
+      excludeSnapshotUrls: 'https://i.gkd.li/i/17607391',
     },
   ],
 });
