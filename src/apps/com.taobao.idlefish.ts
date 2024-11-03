@@ -94,7 +94,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-闲鱼币任务——功能测试',
-      desc: '自动完成一些闲鱼币任务',
+      desc: '自动[领取奖励-扱骰子]',
       activityIds: '.webview.WebHybridActivity',
       rules: [
         {
@@ -106,14 +106,14 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          matchTime: 6000,
+          actionCd: 6000,
           name: '点击[扱骰子寻宝]',
           matches: '@View[id="mapDiceBtn"] > View[text.length=2]',
           snapshotUrls: 'https://i.gkd.li/i/17606060',
         },
         {
           key: 3,
-          matchTime: 6000,
+          actionCd: 6000,
           name: '点击[赚骰子]-有领取奖励',
           matches:
             'View[childCount=5] > @View[childCount=2] +3 View[id="mapDiceBtn"] > View[text.length=1]',
@@ -121,17 +121,15 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          actionMaximum: 1,
           name: '签到',
           matches: 'View[childCount=6] + View[text="签到"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/17606057',
         },
         {
           key: 5,
-          matchTime: 600,
+          actionCd: 1000,
           name: '领取任务',
-          matches:
-            'View[clickable=false] > View[index=9 || index=5][text="领取奖励"]',
+          matches: 'View[index=9 || index=5][text="领取奖励"]',
           snapshotUrls: [
             'https://i.gkd.li/i/17606051',
             'https://i.gkd.li/i/17606057',
@@ -157,12 +155,12 @@ export default defineGkdApp({
     {
       key: 8,
       name: '功能类-背包使用道具——功能测试',
-      desc: '自动使用背包道具',
+      desc: '自动[使用背包道具]',
       activityIds: '.webview.WebHybridActivity',
       rules: [
         {
           key: 1,
-          matchTime: 6000,
+          actionCd: 6000,
           name: '点击[背包]',
           matches:
             'View[childCount=5] > View[index=1][childCount=1] > Image < View +2 View > @Image < View + View > [text="赚"]',
@@ -174,7 +172,7 @@ export default defineGkdApp({
         {
           preKeys: [1],
           key: 2,
-          matchTime: 300,
+          actionCd: 200,
           name: '点击[道具]',
           matches:
             'View > View[index=1 || index=0] > View[index=1][text!="加点卡"] + View[index=2][text="使用"]',
