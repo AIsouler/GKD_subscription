@@ -160,7 +160,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          actionCd: 6000,
+          matchTime: 6000,
           name: '点击[背包]',
           matches:
             'View[childCount=5] > View[index=1][childCount=1] > Image < View +2 View > @Image < View + View > [text="赚"]',
@@ -172,7 +172,6 @@ export default defineGkdApp({
         {
           preKeys: [1],
           key: 2,
-          actionCd: 200,
           name: '点击[道具]',
           matches:
             'View > View[index=1 || index=0] > View[index=1][text!="加点卡"] + View[index=2][text="使用"]',
