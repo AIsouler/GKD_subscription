@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '开屏广告',
       matchRoot: true,
       fastQuery: true,
-      matchTime: 10000,
+      //matchTime: 10000, 从桌面小组件进入哔哩哔哩观看视频后，退出返回到哔哩哔哩首页时会跳出开屏广告
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
