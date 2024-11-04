@@ -102,24 +102,12 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: '.MainActivity',
-          matches: '@View[clickable=true] - [desc="立即更新"]',
+          matches: '@[clickable=true] - [desc^="立即"]',
           exampleUrls: 'https://e.gkd.li/02cf5d37-8808-4abb-abf9-81f7ba8a8375',
-          snapshotUrls: 'https://i.gkd.li/i/17456852',
-        },
-      ],
-    },
-    {
-      key: 4,
-      name: '更新提示-WEB端版本更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: '.MainActivity',
-          matches: '@ImageView[clickable=true] - [desc="立即查看"]',
-          exampleUrls: 'https://e.gkd.li/7ead8b8b-c622-4b9e-bc7f-2946df5b17ed',
-          snapshotUrls: 'https://i.gkd.li/i/17469994',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17456852',
+            'https://i.gkd.li/i/17469994',
+          ],
         },
       ],
     },

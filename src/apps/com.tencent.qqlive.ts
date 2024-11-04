@@ -274,6 +274,13 @@ export default defineGkdApp({
             'FrameLayout > ImageView + @ImageView[clickable=true] + TextView',
           snapshotUrls: 'https://i.gkd.li/i/17474933',
         },
+        {
+          key: 3,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches: '[text="暂不需要，稍后领取"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3256ed8e-752c-426d-9d64-26c9fdea9b09',
+          snapshotUrls: 'https://i.gkd.li/i/17542869',
+        },
       ],
     },
     {

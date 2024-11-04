@@ -271,7 +271,50 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-消息页面顶部-新消息通知',
+      name: '功能类-扫一扫登录确认',
+      desc: '自动点击登录。包括 PC 登录确认、QQ 互联登录确认。',
+      fastQuery: true,
+      actionMaximum: 1,
+      rules: [
+        {
+          key: 1,
+          name: '点击登录',
+          activityIds: [
+            'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
+            'com.tencent.mobileqq.activity.DevlockQuickLoginActivity',
+            'com.tencent.mobileqq.activity.DevLockQuickVerifyActivity',
+          ],
+          matches:
+            'Button[text*="登录"][clickable=true][visibleToUser=true][text.length<10]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13623520',
+            'https://i.gkd.li/i/12789287',
+            'https://i.gkd.li/i/13063027',
+            'https://i.gkd.li/i/13166314',
+          ],
+        },
+        {
+          key: 2,
+          name: '点击同意',
+          activityIds:
+            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
+          matches: 'Button[text="同意"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14752498',
+        },
+        {
+          preKeys: [2],
+          key: 3,
+          name: '点击确认',
+          activityIds:
+            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
+          matches: 'Button[text="确认"]',
+          snapshotUrls: 'https://i.gkd.li/i/14752519',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '功能类-消息页面顶部"无法接收新消息通知"',
       desc: '消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: 'RelativeLayout > [text^="当前无法接收"] + ImageView',
@@ -417,13 +460,14 @@ export default defineGkdApp({
           key: 0,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
-            '@ImageView[clickable=true] <n * > [text*="版本更新" || text*="有新版本"]',
+            '@ImageView[clickable=true][text=null] <n * > [text*="版本更新" || text*="新版本"][text.length<15]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13255493', //desc值为null快照
+            'https://i.gkd.li/i/13255493',
             'https://i.gkd.li/i/13843140',
             'https://i.gkd.li/i/14138340',
             'https://i.gkd.li/i/13931212',
-            'https://i.gkd.li/i/16323755', // add [text*="有新版本"]
+            'https://i.gkd.li/i/16323755',
+            'https://i.gkd.li/i/17529150',
           ],
         },
       ],
@@ -732,7 +776,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          forcedTime: 500,
+          actionDelay: 500,
           name: '点击[打卡]',
           matches: '@LinearLayout[clickable=true] > TextView[text^="打卡"]',
           snapshotUrls: 'https://i.gkd.li/i/17566121',
@@ -745,7 +789,7 @@ export default defineGkdApp({
         },
         {
           preKeys: [2],
-          forcedTime: 300,
+          actionDelay: 300,
           name: '点击[返回]',
           matches: 'TextView[desc="返回"][clickable=true]',
           // 'Button[text="分享"] <<n FrameLayout + RelativeLayout >3 TextView[desc="返回"]',

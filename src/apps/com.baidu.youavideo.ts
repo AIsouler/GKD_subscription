@@ -49,45 +49,41 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-会员充值提示',
-      desc: '点击x关闭充值提示',
-      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
-      fastQuery: true,
+      name: '全屏广告-会员弹窗',
+      desc: '点击关闭',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.vip.ui.VipPayWebDialogActivity',
           matches:
-            '[id="com.baidu.youavideo:id/tv_confirm_pay"] -5 [id="com.baidu.youavideo:id/img_close_dialog"]',
-          snapshotUrls: ['https://i.gkd.li/i/12970094'],
+            '[text^="恭喜获得会员"] - View[text=""] > @Image[text!=null][visibleToUser=true] <<n [vid="fl_web_view"]',
+          exampleUrls: 'https://e.gkd.li/c149b068-7f00-4173-9000-a41fa1603ba7',
+          snapshotUrls: 'https://i.gkd.li/i/17576805',
         },
       ],
     },
     {
       key: 6,
       name: '全屏广告-弹窗广告',
-      desc: '点击x关闭广告提示',
-      fastQuery: true,
-      activityIds: [
-        'com.baidu.youavideo.home.view.HomeActivity',
-        'com.baidu.youavideo.preview.ui.hometimeline.TimelinePreviewActivity',
-        'com.baidu.youavideo.preview.ui.search.SearchPreviewActivity',
-      ],
+      desc: '点击关闭',
       rules: [
         {
-          key: 0,
-          matches: '[id="com.baidu.youavideo:id/dialog_home_pop_close_button"]',
-          snapshotUrls: ['https://i.gkd.li/i/13048700'],
-        },
-        {
           key: 1,
-          matches: '[id="com.baidu.youavideo:id/iv_close"]',
-          excludeMatches: '[vid="tv_title"][text$="权限"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3aa0e107-e31f-4e5a-8969-1fcd8310281d',
+          fastQuery: true,
+          activityIds: [
+            '.preview.ui.search.SearchPreviewActivity',
+            '.preview.ui.hometimeline.TimelinePreviewActivity',
+            '.preview.ui.album.AlbumPreviewActivity',
+          ],
+          matches: '[vid="fl_ad"] - [vid="iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6b628b65-214f-4dc0-b0b8-805ea566464b',
           snapshotUrls: [
             'https://i.gkd.li/i/14133595',
             'https://i.gkd.li/i/14217352',
-            'https://i.gkd.li/i/15750684', // 排除权限申请弹窗的规则触发
+            'https://i.gkd.li/i/17580816',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/15750684',
         },
       ],
     },

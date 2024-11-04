@@ -9,7 +9,7 @@ const parseReadMeMd = async () => {
   const groupSizeMatch = readmeContent.match(/\|应用规则\|(\d+)\|/);
   const globalGroupSizeMatch = readmeContent.match(/\|全局规则\|(\d+)\|/);
   const appSizeMatch = readmeContent.match(/\|应用\|(\d+)\|/);
-  const versionMatch = readmeContent.match(/v(\d+)/);
+  const versionMatch = readmeContent.match(/v(2)/); //\d+
 
   const APP_SIZE = appSizeMatch ? appSizeMatch[1] : '';
   const GROUP_SIZE = groupSizeMatch ? groupSizeMatch[1] : '';
