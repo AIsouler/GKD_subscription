@@ -119,6 +119,7 @@ export const blackListAppIDs: string[] = [
   'com.oasisfeng.nevo.xposed', // 女娲石
   'com.reddit.frontpage', // Reddit
   'com.ghostflying.locationreportenabler', // LocationReportEnabler
+  'com.zyc.zcontrol', // ZControl
 
   'com.canghai.haoka',
   'com.xy.td',
