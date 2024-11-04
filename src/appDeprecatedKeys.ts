@@ -583,6 +583,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '米游社',
     deprecatedKeys: [4, 5],
   },
+  {
+    id: 'com.miui.packageinstaller',
+    name: '应用包管理组件',
+    deprecatedKeys: [8, 9, 10, 11, 12],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
