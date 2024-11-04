@@ -578,6 +578,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '拼多多',
     deprecatedKeys: [3, 4, 5, 7, 13, 14, 15, 18],
   },
+  {
+    id: 'com.mihoyo.hyperion',
+    name: '米游社',
+    deprecatedKeys: [4, 5],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
