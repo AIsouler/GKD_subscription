@@ -104,7 +104,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17601295', // 崩坏3签到后
             'https://i.gkd.li/i/17601347', // 绝区零签到后
             'https://i.gkd.li/i/17611621', // 原神签到后
-            'https://i.gkd.li/i/17611617', // 星穹铁道签到后
+            'https://i.gkd.li/i/17611617', // 星穹铁道签到后 无法排除匹配
           ],
         },
         {
@@ -112,7 +112,7 @@ export default defineGkdApp({
           key: 1,
           name: '关闭签到后的弹窗',
           matches:
-            '@TextView[visibleToUser=true][text=""] - View >2 [text*="签到成功"]',
+            '@TextView[visibleToUser=true][text=""] - View[childCount=2] >2 [text*="签到成功"]',
           exampleUrls: 'https://e.gkd.li/ef30277a-bd5d-444a-a9d5-ce63406d1269',
           snapshotUrls: [
             'https://i.gkd.li/i/17601273', // 崩坏3
@@ -139,13 +139,14 @@ export default defineGkdApp({
           name: '从签到页返回',
           excludeMatches: '[text="不用了"][visibleToUser=true]',
           matches:
-            '[text$="每日签到" || text$="签到福利"] > View >3 View[index=0][childCount=1] > TextView[clickable=true][childCount=0][text=""]',
+            '[text$="每日签到" || text$="签到福利"] > View >3 View[index=0][childCount=1] > TextView[childCount=0][text=""][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/cc68f623-5dc7-4703-9768-28826c4f16f6',
           snapshotUrls: [
             'https://i.gkd.li/i/17601295', // 崩坏3
             'https://i.gkd.li/i/17601347', // 绝区零
             'https://i.gkd.li/i/17611621', // 原神
             'https://i.gkd.li/i/17611617', // 星穹铁道
+            'https://i.gkd.li/i/17629453', // 返回节点 clickable=false
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/17601283', // 崩坏3
