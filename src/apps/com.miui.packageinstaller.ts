@@ -29,6 +29,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '功能类-自动安装/更新应用',
+      desc: '该规则仅适配关闭小米系统[安全守护]的情况',
       fastQuery: true,
       rules: [
         {
@@ -45,6 +46,7 @@ export default defineGkdApp({
         },
         {
           // preKeys: [0], 有概率不触发
+          key: 1,
           name: '点击[完成]',
           activityIds:
             'com.miui.packageInstaller.ui.normalmode.InstallProgressActivity',
