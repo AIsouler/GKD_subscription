@@ -14,9 +14,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          matches: '[vid="tv_main_splash_skip"][visibleToUser=true]',
+          matches:
+            '[vid="tv_main_splash_skip" || vid="tv_skip"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/9a9b71b2-0c52-4623-b53b-6dd07d0cbe7c',
-          snapshotUrls: 'https://i.gkd.li/i/17580273',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17580273',
+            'https://i.gkd.li/i/17656103',
+          ],
         },
       ],
     },
