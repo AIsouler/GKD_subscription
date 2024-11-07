@@ -79,11 +79,17 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: '.ui.activity.HomeActivity',
+          activityIds: [
+            '.ui.activity.HomeActivity',
+            '.ui.activity.MainFrameActivity',
+          ],
           matches:
-            '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <3 [parent=null]',
+            '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <(2,3) [parent=null]',
           exampleUrls: 'https://e.gkd.li/f74b5f58-e518-4e33-bbb4-0bf28e2b79d8',
-          snapshotUrls: 'https://i.gkd.li/i/17528782',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17528782',
+            'https://i.gkd.li/i/17655498',
+          ],
         },
       ],
     },
