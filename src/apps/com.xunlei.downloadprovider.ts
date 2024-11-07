@@ -275,7 +275,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-会员续费广告',
+      name: '全屏广告-会员广告',
       fastQuery: true,
       rules: [
         {
@@ -316,6 +316,13 @@ export default defineGkdApp({
             '[text="支付优惠卡"] >3 View[childCount=2] >2 View[childCount=9] > @View[clickable=true][visibleToUser=true][childCount=0][index=0][desc!=null] <<n [vid="refreshLayout"]',
           exampleUrls: 'https://e.gkd.li/ade9ca8a-b7a5-4a22-8c1f-d14423a34136',
           snapshotUrls: 'https://i.gkd.li/i/16914136',
+        },
+        {
+          key: 5,
+          activityIds: '.download.center.DownloadCenterActivity',
+          matches: ['[text="开通超级会员"]', '[vid="close_btn"]'],
+          exampleUrls: 'https://e.gkd.li/6448cedc-2bad-4aa5-846c-9ad82c310545',
+          snapshotUrls: 'https://i.gkd.li/i/17658831',
         },
       ],
     },
