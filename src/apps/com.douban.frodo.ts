@@ -47,16 +47,16 @@ export default defineGkdApp({
           ],
         },
         {
-        key: 3,
-        fastQuery: true,
-        excludeMatches: [
-          // 防止在应用的搜索框、搜索页面误触
-          '[text*="搜索"][text.length<6][visibleToUser=true]',
-          '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
-        ],
-        matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-        snapshotUrls: 'https://i.gkd.li/i/17687115',
-      },
+          key: 3,
+          fastQuery: true,
+          excludeMatches: [
+            // 防止在应用的搜索框、搜索页面误触
+            '[text*="搜索"][text.length<6][visibleToUser=true]',
+            '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
+          ],
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17687115',
+        },
       ],
     },
     {
