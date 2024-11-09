@@ -26,11 +26,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="升级版本"] +n [desc="关闭"][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12685000',
-        'https://i.gkd.li/i/12840104',
-        'https://i.gkd.li/i/13316081',
+      rules: [
+        {
+          activityIds: [
+            'com.bytedance.ies.outertest.cn.OuterTestGuideDialogActivity',
+            'com.ss.android.article.base.feature.ugc.story.StoryVideoActivity',
+          ],
+          matches:
+            '@[desc="关闭"] -(2,3) [text*="版本更新" || text*="升级版本"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13316081',
+            'https://i.gkd.li/i/17681710',
+          ],
+        },
       ],
     },
     {
@@ -185,11 +193,11 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      fastQuery: true,
       name: '局部广告-底部热榜弹窗',
       desc: '点击X',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches: 'FrameLayout[childCount=8] > FlattenUIImage[index=7]',
           snapshotUrls: 'https://i.gkd.li/i/13828331',
@@ -240,12 +248,23 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: 'com.ss.android.article.news.activity.MainActivity',
+          activityIds: '.activity.MainActivity',
           matches:
             '[id="android:id/content"] > FrameLayout[childCount=3] > ImageView[clickable=true][visibleToUser=true][index=2]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/096c3d85-08b0-4566-865d-31eb0079ad6e',
+          exampleUrls: 'https://e.gkd.li/c3889d29-7260-4ab1-8070-75a6a68e4e2c',
           snapshotUrls: 'https://i.gkd.li/i/15314921',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.MainActivity',
+          matches:
+            '@FlattenUIImage[text=""] -10 FlattenUIText[text="恭喜获得惊喜奖励"]',
+          exampleUrls: 'https://e.gkd.li/057d40f6-f94e-4b54-857f-b5b11de245a5',
+          snapshotUrls: 'https://i.gkd.li/i/17681713',
         },
       ],
     },
