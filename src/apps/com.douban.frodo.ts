@@ -26,8 +26,7 @@ export default defineGkdApp({
             left: 'width * 0.8833',
             top: 'width * 0.1388',
           },
-          excludeMatches: '[id="com.douban.frodo:id/_ad_image_"][width=1200]',
-          matches: '[id="com.douban.frodo:id/_ad_image_"]',
+          matches: '[id="com.douban.frodo:id/_ad_image_"][width!=1200]',
           snapshotUrls: [
             'https://i.gkd.li/i/13575257',
             'https://i.gkd.li/i/13575547',
