@@ -173,11 +173,15 @@ export default defineGkdApp({
             'com.alipay.android.msp.ui.views.MspContainerActivity',
             'com.alipay.android.phone.businesscommon.ucdp.nfc.activity.NResPageActivity',
           ],
-          matches: ['[text="支付成功" || text="充值成功"]', '[text="完成"]'],
+          matches: [
+            '[text="支付成功" || text="充值成功" || text="提交成功"]',
+            '[text="完成"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14008852',
             'https://i.gkd.li/i/16328809',
             'https://i.gkd.li/i/17503266',
+            'https://i.gkd.li/i/17686972',
           ],
         },
       ],
