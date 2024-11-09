@@ -46,6 +46,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16054268',
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17687115',
+        },
       ],
     },
     {
