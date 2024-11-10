@@ -12,8 +12,8 @@ export default defineGkdApp({
         {
           key: 0,
           name: '快手广告-1',
-          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           fastQuery: true,
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches:
             '@ImageView <n ViewGroup -2 ViewGroup > ViewGroup > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12843281',
@@ -21,12 +21,14 @@ export default defineGkdApp({
         {
           key: 1,
           name: '快手广告-2',
+          fastQuery: true,
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches: '@ImageView[clickable=true] <3 * -2 * >2 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13521143',
         },
         {
           key: 2,
+          fastQuery: true,
           name: '快手广告-3',
           activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches: ['[text="广告"]', '[text="跳过"]'],
@@ -35,12 +37,13 @@ export default defineGkdApp({
         {
           key: 3,
           name: '腾讯广告-1',
+          fastQuery: true,
           activityIds: [
             'com.zhiyin.qingdan.dashixiong.MainActivity',
             'com.qq.e.ads.ADActivity',
           ],
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12843282',
             'https://i.gkd.li/i/12843345',
@@ -51,8 +54,8 @@ export default defineGkdApp({
         {
           key: 5,
           name: '字节广告',
-          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           fastQuery: true,
+          activityIds: 'com.zhiyin.qingdan.dashixiong.MainActivity',
           matches: '@Image < View +n View > View > View > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12843323',
         },

@@ -104,22 +104,19 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
-          name: '点击右上角x关闭图标',
+          fastQuery: true,
           activityIds: [
             'com.mygolbs.mybus.mapsearch.poisearch.PoiSearchActivity',
-            'com.mygolbs.mybus.NewHomePageActivity',
-            'com.mygolbs.mybus.RTimeActivity',
             'com.mygolbs.mybus.LoginActivity',
           ],
           matches:
-            'FrameLayout[childCount=2] > FrameLayout[childCount>4] > FrameLayout[index=1][visibleToUser=true]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12790762',
-            'https://i.gkd.li/i/14219270',
-            'https://i.gkd.li/i/14572506',
             'https://i.gkd.li/i/14587392',
           ],
         },
@@ -143,6 +140,20 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/f7dc0b47-b37f-409a-aebe-4aaa844aa897',
           snapshotUrls: 'https://i.gkd.li/i/14587397',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: [
+            'com.mygolbs.mybus.NewHomePageActivity',
+            'com.mygolbs.mybus.RTimeActivity',
+          ],
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14219270',
+            'https://i.gkd.li/i/14572506',
+          ],
         },
       ],
     },

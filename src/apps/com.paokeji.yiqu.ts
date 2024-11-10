@@ -85,9 +85,10 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          fastQuery: true,
           activityIds: 'com.aster.comic.app.view.MainActivity',
           matches:
-            '[id="android:id/content"] >2 FrameLayout[childCount=9] >3 FrameLayout[childCount=2] > @FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/15374245',
         },
         {
@@ -121,24 +122,25 @@ export default defineGkdApp({
         {
           key: 7,
           name: '腾讯SDK-1',
+          fastQuery: true,
           activityIds: [
             'com.aster.comic.app.view.MainActivity',
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
           ],
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13830354',
-            'https://i.gkd.li/i/13842716',
             'https://i.gkd.li/i/13842966',
           ],
         },
         {
           key: 8,
           name: '腾讯SDK-2',
+          fastQuery: true,
           activityIds: 'com.aster.comic.app.view.MainActivity',
           matches:
-            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/15173845',
         },
         {

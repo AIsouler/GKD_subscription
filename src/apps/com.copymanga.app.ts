@@ -7,34 +7,31 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      activityIds: [
-        'com.copymanga.app.MainActivity',
-        'com.reaper.flutter.reaper_flutter_plugin.activity.ReaperSplashActivity',
-      ],
       actionDelay: 400,
       rules: [
         {
           key: 0,
           name: '快手广告-1',
+          fastQuery: true,
           activityIds: 'com.copymanga.app.MainActivity',
           matches: [
-            'ViewGroup > [text="广告"]',
-            'ViewGroup[childCount=3] > TextView + TextView + ImageView[clickable=true]',
+            '[text="广告"]',
+            '@ImageView[clickable=true] - [text="|"] - [text$="s"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13259085',
         },
         {
           key: 1,
           name: '快手广告-2',
+          fastQuery: true,
           activityIds: [
             'com.copymanga.app.MainActivity',
             'com.kwad.components.ad.interstitial',
           ],
           matches:
-            '[text="广告"] <2 ViewGroup -(2,3) ViewGroup > ViewGroup[clickable=true][visibleToUser=true]',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13625486',
-            'https://i.gkd.li/i/12504486',
             'https://i.gkd.li/i/12504488',
             'https://i.gkd.li/i/13344156',
           ],
@@ -42,6 +39,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '快手广告-3',
+          fastQuery: true,
           activityIds: 'com.copymanga.app.MainActivity',
           matches: [
             'ViewGroup > [text="广告"]',
@@ -52,9 +50,10 @@ export default defineGkdApp({
         {
           key: 3,
           name: '腾讯广告-1',
+          fastQuery: true,
           activityIds: 'com.copymanga.app.MainActivity',
           matches:
-            'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12504520',
             'https://i.gkd.li/i/12661019',
@@ -67,13 +66,16 @@ export default defineGkdApp({
         {
           key: 4,
           name: '腾讯广告-2',
+          fastQuery: true,
           matches:
-            'ImageView <2 FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/13246786',
         },
         {
           key: 5,
           name: '腾讯广告-3',
+          fastQuery: true,
+          activityIds: 'com.copymanga.app.MainActivity',
           matches:
             '[id="com.copymanga.app:id/interact_ad_root"] > [id="com.copymanga.app:id/iv_close"]',
           snapshotUrls: [
@@ -84,19 +86,19 @@ export default defineGkdApp({
         {
           key: 6,
           name: '腾讯广告-4',
+          fastQuery: true,
           matches:
-            'ImageView - ImageView - FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/13233178',
         },
         {
           key: 7,
           name: '字节广告-1',
+          fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: [
-            '[desc^="logoad"] > [text="广告"]',
-            '[desc^="webview-close"] > View[clickable=true]',
-          ],
+          matches:
+            '@View[clickable=true] < FrameLayout[desc*="close"] +4 FrameLayout[desc!=null] >2 [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/i/13372542',
         },
         {

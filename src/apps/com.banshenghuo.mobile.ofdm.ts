@@ -18,9 +18,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           activityIds: 'com.banshenghuo.mobile.ofdm.MainActivity',
           matches:
-            '[id="android:id/content"] FrameLayout[index=1][childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/15444005',
         },
         {

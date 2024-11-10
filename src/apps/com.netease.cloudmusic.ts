@@ -153,6 +153,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           action: 'back',
           activityIds: [
             'com.netease.cloudmusic.activity.MainActivity',

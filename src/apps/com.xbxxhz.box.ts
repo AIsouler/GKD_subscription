@@ -33,7 +33,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.mango.appfile.print_finish.PrintFinishAct',
           matches:
-            'ImageView < @FrameLayout +2 FrameLayout >2 [text="打开或下载第三方应用"]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           exampleUrls:
             'https://m.gkd.li/57941037/b0c3be3a-64a7-477e-a022-8a503ebd2cf6',
           snapshotUrls: 'https://i.gkd.li/i/14741407',

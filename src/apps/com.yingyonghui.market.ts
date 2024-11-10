@@ -11,10 +11,11 @@ export default defineGkdApp({
         {
           key: 0,
           name: '快手广告',
+          fastQuery: true,
           activityIds: 'com.yingyonghui.market.ui.MainActivity',
           matches: [
-            'ViewGroup[childCount=2] > ImageView + [text="广告"]',
-            'ViewGroup[childCount=3] > TextView + TextView + ImageView',
+            '[text="广告"]',
+            '@ImageView[clickable=true] - [text="|"] - [text$="s"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13538316',
         },
