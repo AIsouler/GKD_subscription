@@ -6,12 +6,21 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-首页弹窗',
-      activityIds:
-        'com.boc.bocsoft.mobile.bocmobile.buss.system.main.ui.MainActivity',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/17691747',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.boc.bocsoft.mobile.bocmobile.buss.system.main.ui.MainActivity',
+          matches: '@[desc="关闭"] > [vid="btn_action"]',
+          exampleUrls: 'https://e.gkd.li/988dbaff-68b3-499a-8736-a6e5b3364ed9',
+          snapshotUrls: 'https://i.gkd.li/i/17691747',
+        },
+      ],
     },
   ],
 });
