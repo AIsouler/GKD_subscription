@@ -120,6 +120,7 @@ export const blackListAppIDs: string[] = [
   'com.reddit.frontpage', // Reddit
   'com.ghostflying.locationreportenabler', // LocationReportEnabler
   'com.zyc.zcontrol', // ZControl
+  'org.nobody.multitts', // MultiTTS
 
   'com.canghai.haoka',
   'com.xy.td',
