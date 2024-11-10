@@ -39,21 +39,18 @@ export default defineGkdApp({
         //字节穿山甲广告SDK: key0-4
         {
           key: 0,
-          name: '类型0',
           fastQuery: true,
           matches: '[id="com.byted.pangle:id/tt_reward_full_count_down"]',
           snapshotUrls: 'https://i.gkd.li/i/13511052',
         },
         {
           key: 1,
-          name: '类型1',
+          fastQuery: true,
           matches:
-            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13511645',
             'https://i.gkd.li/i/13511059',
             'https://i.gkd.li/i/13511065',
-            'https://i.gkd.li/i/13511708',
           ],
         },
         {
@@ -70,6 +67,24 @@ export default defineGkdApp({
           name: '类型3',
           matches: '[text="反馈"] < View [text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13446063',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text="查看详情" || text="了解更多" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          exampleUrls: 'https://e.gkd.li/396d9536-af27-4470-9d80-0a11456fc9ea',
+          snapshotUrls: 'https://i.gkd.li/i/17691639',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
+          exampleUrls: 'https://e.gkd.li/c5d254c2-97cb-4ab1-a271-d409b9841e94',
+          snapshotUrls: 'https://i.gkd.li/i/13511708',
         },
       ],
     },

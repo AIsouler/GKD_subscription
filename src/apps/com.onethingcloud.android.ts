@@ -14,7 +14,6 @@ export default defineGkdApp({
             '[id="android:id/content"] >(3,4) View[childCount=2] >2 View[childCount=2 || childCount=3] > ImageView[index=parent.childCount.minus(1)][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12841171',
-            'https://i.gkd.li/i/14035418', // 误触快照
             'https://i.gkd.li/i/14766665',
             'https://i.gkd.li/i/16438609',
           ],

@@ -29,14 +29,16 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
           name: '快手广告',
+          fastQuery: true,
           activityIds: 'com.github.eprendre.tingshu.ui.SplashActivity',
           matches: [
-            'ViewGroup[childCount=2] > [text="广告"]',
-            'ViewGroup[childCount=3] > TextView + TextView + ImageView[clickable=true]',
+            '[text="广告"]',
+            '@ImageView[clickable=true] - [text="|"] - [text$="s"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13625303',
         },

@@ -17,10 +17,9 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          matches: [
-            '[text^="立即" || text^="查看" || text^="领取"][text.length=4]', // 立即抢购,立即下载,立即申请,查看详情,领取优惠
-            '[id="android:id/content"] >2 FrameLayout[childCount=3||childCount=2] > FrameLayout[childCount=5||childCount=6||childCount=8] > FrameLayout[childCount=1] > ImageView[text=null][visibleToUser=true]', // 非广告页面下没有这种节点,不会误触
-          ],
+          fastQuery: true,
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13302326',
             'https://i.gkd.li/i/13313576',

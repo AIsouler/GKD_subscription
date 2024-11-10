@@ -7,20 +7,23 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
+      desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
-          name: '腾讯SDK',
+          key: 0,
+          fastQuery: true,
           matches:
-            'FrameLayout[childCount=3] + FrameLayout[childCount=1][index=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/13463241',
         },
         {
+          key: 1,
+          fastQuery: true,
           matches:
-            'ImageView < @ViewGroup[clickable=true] < ViewGroup <<n FrameLayout[id="com.ants360.yicamera:id/ksad_tk_view"] ',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +3 ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13543175',
         },
       ],
