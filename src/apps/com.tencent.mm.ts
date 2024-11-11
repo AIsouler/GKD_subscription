@@ -275,7 +275,7 @@ export default defineGkdApp({
       key: 9,
       name: '功能类-自动查看原图',
       desc: '自动点击底部左侧[查看原图]按钮',
-      activityIds: 'com.tencent.mm.ui.chatting.gallery.ImageGalleryUI',
+      activityIds: ['.ui.chatting.gallery.ImageGalleryUI', '.ui.LauncherUI'],
       rules: [
         {
           key: 0,
@@ -284,7 +284,10 @@ export default defineGkdApp({
           matches: 'Button[text^="查看原图"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/6bb9e68a-43f5-4482-96b1-899cc86fef32',
-          snapshotUrls: 'https://i.gkd.li/i/13523031',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13523031',
+            'https://i.gkd.li/i/17698956',
+          ],
         },
         {
           key: 1,
