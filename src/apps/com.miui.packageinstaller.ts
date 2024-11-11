@@ -36,13 +36,17 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击[安装]/[更新]',
-          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          activityIds: [
+            'com.miui.packageInstaller.NewInstallerPrepareActivity',
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          ],
           matches:
             '@FrameLayout[clickable=true] > LinearLayout[childCount=1] > [text^="继续"][text.length=4]',
           exampleUrls: 'https://e.gkd.li/bd3e2764-4978-44ed-93d3-f176c23c3ec4',
           snapshotUrls: [
             'https://i.gkd.li/i/16487278',
             'https://i.gkd.li/i/16487282',
+            'https://i.gkd.li/i/17691996',
           ],
         },
         {
