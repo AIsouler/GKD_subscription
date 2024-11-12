@@ -39,16 +39,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13746766',
-    },
-    {
       key: 2,
       name: '局部广告-动态推荐卡片广告',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',

@@ -521,7 +521,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'tv.danmaku.bili',
     name: '哔哩哔哩',
-    deprecatedKeys: [3, 5],
+    deprecatedKeys: [1, 3, 5],
   },
   {
     id: 'com.chunqiu.ah',
