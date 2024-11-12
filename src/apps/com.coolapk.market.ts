@@ -51,6 +51,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-信息流广告',
       desc: '点击卡片右上角按钮->免广告-点击关闭->选择关闭原因-点击不感兴趣',
+      matchRoot: true,
       fastQuery: true,
       activityIds: [
         'com.coolapk.market.view.main.MainActivity',
