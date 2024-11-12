@@ -20,20 +20,10 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
-        excludeMatches: [
-          // 防止在应用的搜索框、搜索页面误触
-          '[text*="搜索"][text.length<6][visibleToUser=true]',
-          '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
-        ],
         matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
         key: 1,
-        excludeMatches: [
-          // 防止在应用的搜索框、搜索页面误触
-          '[text*="搜索"][text.length<6][visibleToUser=true]',
-          '[(text.length<6 && text*="搜索") || vid~="(?is).*search.*" || (desc.length<6 && desc*="搜索")][visibleToUser=true]',
-        ],
         matches:
           '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || id$="tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*timing.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*" && text!~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]") || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         excludeSnapshotUrls: [
