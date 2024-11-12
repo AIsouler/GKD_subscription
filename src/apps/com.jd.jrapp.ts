@@ -5,6 +5,21 @@ export default defineGkdApp({
   name: '京东金融',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          matches: '[text^="跳过广告"][text.length<=5]',
+          snapshotUrls: 'https://i.gkd.li/i/17720149',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '权限提示-通知权限',
       fastQuery: true,
