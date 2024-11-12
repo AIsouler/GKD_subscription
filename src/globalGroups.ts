@@ -10,8 +10,8 @@ export default defineGkdGlobalGroups([
     key: 0,
     name: '开屏广告',
     order: OPEN_AD_ORDER,
-    fastQuery: true,
     matchRoot: true,
+    fastQuery: true,
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
@@ -20,10 +20,12 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
+        excludeMatches: '[text*="搜索"][text.length<6][visibleToUser=true]', // 防止在应用的搜索页面误触
         matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
         key: 1,
+        excludeMatches: '[text*="搜索"][text.length<6][visibleToUser=true]', // 防止在应用的搜索页面误触
         matches:
           '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || id$="tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*timing.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*" && text!~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]") || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         excludeSnapshotUrls: [
