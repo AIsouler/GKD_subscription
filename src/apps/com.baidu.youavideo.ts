@@ -85,6 +85,17 @@ export default defineGkdApp({
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/15750684',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.home.view.HomeActivity',
+          matches: '[vid="dialog_home_pop_close_button"]',
+          exampleUrls: 'https://e.gkd.li/c83b5006-1b0d-478e-ab0a-d2f3f4957162',
+          snapshotUrls: 'https://i.gkd.li/i/17732139',
+        },
       ],
     },
     {
