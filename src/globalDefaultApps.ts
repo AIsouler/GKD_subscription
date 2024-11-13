@@ -177,6 +177,14 @@ export const blackListAppIDs: string[] = [
   'flar2.devcheck',
   'com.gstarmc.android',
   'com.github.capntrips.kernelflasher',
+  'com.google.android.googlequicksearchbox',
+  'qyz.onedesign',
+  'com.samsung.android.app.repaircal',
+  'com.yhchat.app',
+  'com.skyhand.sinahelper',
+  'com.rong862.bear',
+  'be.mygod.vpnhotspot',
+  'com.samsung.android.bixby.agent',
 
   // 系统自带非系统应用
   // 小米
