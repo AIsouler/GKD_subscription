@@ -487,7 +487,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '腾讯视频',
     deprecatedKeys: [5, 19],
   },
-  { id: 'com.xunlei.downloadprovider', name: '迅雷', deprecatedKeys: [11] },
+  {
+    id: 'com.xunlei.downloadprovider',
+    name: '迅雷',
+    deprecatedKeys: [5, 11],
+  },
   {
     id: 'com.xyhui',
     name: 'PU口袋校园',

@@ -256,15 +256,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
-      name: '局部广告-搜索页面顶部广告',
-      fastQuery: true,
-      activityIds:
-        'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
-      rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12882892',
-    },
-    {
       key: 6,
       name: '更新提示',
       fastQuery: true,
@@ -333,6 +324,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
@@ -343,6 +335,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15048355',
             'https://i.gkd.li/i/15048357',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.search.ui.search.SearchOperateActivity',
+          matches: '[vid="search_banner_ad_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d9e25fc3-249f-4fb9-8606-606ed0c9c893',
+          snapshotUrls: 'https://i.gkd.li/i/17725350',
         },
       ],
     },
