@@ -9,6 +9,7 @@ export default defineGkdGlobalGroups([
   {
     key: 0,
     name: '开屏广告',
+    desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
     matchRoot: true,
     fastQuery: true,
@@ -53,6 +54,7 @@ export default defineGkdGlobalGroups([
   {
     key: 1,
     name: '更新提示',
+    desc: '关闭应用的更新弹窗',
     order: UPDATE_PROMPT_ORDER,
     fastQuery: true,
     matchTime: 10000,
@@ -81,6 +83,7 @@ export default defineGkdGlobalGroups([
   {
     key: 2,
     name: '青少年模式',
+    desc: '关闭应用的青少年模式弹窗',
     order: YOUTH_MODE_ORDER,
     fastQuery: true,
     matchTime: 10000,
