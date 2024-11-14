@@ -17,7 +17,7 @@
 
 - **交流讨论 -> [点击查看或开启讨论](https://github.com/AIsouler/GKD_subscription/discussions)**
 
-- **欢迎贡献规则，提交pr前请确认您已仔细阅读 [API说明](https://gkd.li/api/)**
+- **欢迎贡献规则，提交pr前请确认您已仔细阅读 [API说明](https://gkd.li/api/)，规则编写可参考 [个人收集的通用规则以及适用场景](./Selectors.md)，让规则写起来更轻松！**
 
 ## 订阅
 
@@ -54,8 +54,6 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 - 查看 [规则编写教程](https://github.com/Snoopy1866/blogs/blob/main/software/gkd/gkd-rule-tutorial/gkd-rule-tutorial.md) By [@Snoopy1866](https://github.com/Snoopy1866)
 
 - 使用 [GKD网页审查工具增强脚本](https://github.com/adproqwq/MakeGKDInspectBetter) 可以高度自定义从网页复制出来的规则，提高规则编写效率
-
-- 查看 [个人收集的通用规则以及适用场景](./Selectors.md)
 
 ## 感谢以下项目
 
