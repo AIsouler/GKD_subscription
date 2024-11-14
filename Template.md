@@ -55,6 +55,8 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 - 使用 [GKD网页审查工具增强脚本](https://github.com/adproqwq/MakeGKDInspectBetter) 可以高度自定义从网页复制出来的规则，提高规则编写效率
 
+- 查看 [个人收集的通用规则以及适用场景](./Selectors.md)
+
 ## 感谢以下项目
 
 [gkd-kit/subscription](https://github.com/gkd-kit/subscription)
