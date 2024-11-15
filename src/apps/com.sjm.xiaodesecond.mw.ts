@@ -48,7 +48,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.MainActivity',
           matches:
-            '        @ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <(2,3) FrameLayout[childCount=4] +(1,2) FrameLayout[childCount=2] >2 [text^="立即" || text="去逛逛"]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <(2,3) FrameLayout[childCount=4] +(1,2) FrameLayout[childCount=2] >2 [text^="立即" || text="去逛逛"]',
           exampleUrls: 'https://e.gkd.li/0b695e8c-c998-49bb-a416-27cf0f3a8f30',
           snapshotUrls: 'https://i.gkd.li/i/14345580',
         },
