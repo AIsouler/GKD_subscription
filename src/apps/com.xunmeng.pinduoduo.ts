@@ -91,6 +91,17 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17655498',
           ],
         },
+        {
+          key: 8,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.ui.activity.HomeActivity',
+          matches:
+            '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <2 FrameLayout <2 [parent=null]',
+          exampleUrls: 'https://e.gkd.li/e5428072-9ee3-47e9-87ad-d8b47e24f173',
+          snapshotUrls: 'https://i.gkd.li/i/17773799',
+        },
       ],
     },
     {
