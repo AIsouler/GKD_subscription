@@ -80,9 +80,13 @@ matches: [
 - 选择器-1 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/13264383](https://i.gkd.li/i/13264383?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVtwYXJlbnQuY2hpbGRDb3VudD4zXSArbiBGcmFtZUxheW91dCA-KDEsMikgW3RleHRePSLnq4vljbMiIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i5LqG6Kej5pu05aSaIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
+
 [https://i.gkd.li/i/13852448](https://i.gkd.li/i/13852448?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVtwYXJlbnQuY2hpbGRDb3VudD4zXSArbiBGcmFtZUxheW91dCA-KDEsMikgW3RleHRePSLnq4vljbMiIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i5LqG6Kej5pu05aSaIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
+
 [https://i.gkd.li/i/14318236](https://i.gkd.li/i/14318236?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVtwYXJlbnQuY2hpbGRDb3VudD4zXSArbiBGcmFtZUxheW91dCA-KDEsMikgW3RleHRePSLnq4vljbMiIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i5LqG6Kej5pu05aSaIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
+
 [https://i.gkd.li/i/15400143](https://i.gkd.li/i/15400143?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVtwYXJlbnQuY2hpbGRDb3VudD4zXSArbiBGcmFtZUxheW91dCA-KDEsMikgW3RleHRePSLnq4vljbMiIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i5LqG6Kej5pu05aSaIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
 
 ```txt
@@ -93,9 +97,13 @@ matches: [
 - 选择器-2 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/13348663](https://i.gkd.li/i/13348663?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSA8MiBGcmFtZUxheW91dFtjaGlsZENvdW50PTVdICsgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA-IFt0ZXh0Xj0i56uL5Y2zIiB8fCB0ZXh0PSLmn6XnnIvor6bmg4UiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5Y676YCb6YCbIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
+
 [https://i.gkd.li/i/13343675](https://i.gkd.li/i/13343675?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSA8MiBGcmFtZUxheW91dFtjaGlsZENvdW50PTVdICsgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA-IFt0ZXh0Xj0i56uL5Y2zIiB8fCB0ZXh0PSLmn6XnnIvor6bmg4UiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5Y676YCb6YCbIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
+
 [https://i.gkd.li/i/16670372](https://i.gkd.li/i/16670372?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSA8MiBGcmFtZUxheW91dFtjaGlsZENvdW50PTVdICsgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA-IFt0ZXh0Xj0i56uL5Y2zIiB8fCB0ZXh0PSLmn6XnnIvor6bmg4UiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5Y676YCb6YCbIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
+
 [https://i.gkd.li/i/17689929](https://i.gkd.li/i/17689929?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSA8MiBGcmFtZUxheW91dFtjaGlsZENvdW50PTVdICsgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA-IFt0ZXh0Xj0i56uL5Y2zIiB8fCB0ZXh0PSLmn6XnnIvor6bmg4UiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5Y676YCb6YCbIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
 
 ```txt
@@ -105,6 +113,7 @@ matches: [
 - 选择器-3 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/14345580](https://i.gkd.li/i/14345580?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSA8KDIsMykgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD00XSArKDEsMikgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA-MiBbdGV4dF49Iueri-WNsyIgfHwgdGV4dD0i5Y676YCb6YCbIl0)
 
 ```txt
@@ -114,8 +123,11 @@ matches: [
 - 选择器-4 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/13246786](https://i.gkd.li/i/13246786?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSAtIEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ-Ml0gPjMgW3RleHRePSLnq4vljbMiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5p-l55yL6K-m5oOFIl0)
+
 [https://i.gkd.li/i/14783306](https://i.gkd.li/i/14783306?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSAtIEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ-Ml0gPjMgW3RleHRePSLnq4vljbMiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5p-l55yL6K-m5oOFIl0)
+
 [https://i.gkd.li/i/15173845](https://i.gkd.li/i/15173845?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSAtIEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ-Ml0gPjMgW3RleHRePSLnq4vljbMiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5p-l55yL6K-m5oOFIl0)
 
 ```txt
@@ -136,6 +148,7 @@ matches: [
 - 选择器-1 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/17689928](https://i.gkd.li/i/17689928?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bdmlzaWJsZVRvVXNlcj10cnVlXSA8IEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ9MV0gPDIgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA8MiBGcmFtZUxheW91dFtjaGlsZENvdW50PTJdIDwyIEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ9Ml0gLSBGcmFtZUxheW91dCA-IFt0ZXh0Xj0i5omt5Yqo5oiW54K55Ye7Il0)
 
 ```txt
@@ -145,6 +158,7 @@ matches: [
 - 选择器-2 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/13328126](https://i.gkd.li/i/13328126?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bdmlzaWJsZVRvVXNlcj10cnVlXSA8IEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ9MV0gPDMgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0zXSA8IEZyYW1lTGF5b3V0W2NoaWxkQ291bnQ9Ml0gKzUgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD00XSA-IFt0ZXh0Xj0i5omt5Yqo5oiW54K55Ye7Il0)
 
 ```txt
@@ -162,6 +176,7 @@ matches: [
 - 选择器，关闭按钮在左上角，```广告``` 字样在左下角 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/15362927](https://i.gkd.li/i/15362927?gkd=SW1hZ2VWaWV3W2NoaWxkQ291bnQ9MF1bdGV4dD1udWxsXSA8IEBWaWV3R3JvdXBbY2hpbGRDb3VudD0xXVtjbGlja2FibGU9dHJ1ZV1bdmlzaWJsZVRvVXNlcj10cnVlXSA8IFZpZXdHcm91cCArbiBWaWV3R3JvdXBbY2hpbGRDb3VudD0yXSA-IFt0ZXh0PSLlub_lkYoiXQ)
 
 ```txt
@@ -171,6 +186,7 @@ ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][vi
 - matches数组，下方倒计时和关闭按钮用竖线隔开 **（可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/13625303](https://i.gkd.li/i/13625303?gkd=QEltYWdlVmlld1tjbGlja2FibGU9dHJ1ZV0gLSBbdGV4dD0ifCJdIC0gW3RleHQkPSJzIl0)
 
 ```txt
@@ -193,6 +209,7 @@ matches: [
 - 选择器-1 **（可覆盖 95% 的情况，不可快速查询！）**
 
 示例：
+
 [https://i.gkd.li/i/13632639](https://i.gkd.li/i/13632639?gkd=QEltYWdlW2NoaWxkQ291bnQ9MF1bdGV4dD0iIl1bd2lkdGg8NjAgJiYgaGVpZ2h0PDYwXSA8IFZpZXdbY2hpbGRDb3VudD0xXSArIFZpZXcgK24gVmlldyA-IFZpZXdbY2hpbGRDb3VudD0xXSA-IFRleHRWaWV3W3RleHQkPSLlub_lkYoiXQ)
 
 ```txt
