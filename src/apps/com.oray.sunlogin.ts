@@ -74,5 +74,19 @@ export default defineGkdApp({
       rules: '[text="是否确认退出向日葵？"] + LinearLayout > [vid="button_ok"]',
       snapshotUrls: 'https://i.gkd.li/i/13927148',
     },
+    {
+      key: 4,
+      name: '全屏广告-远程控制结束后的广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.application.Main',
+          matches: '@[vid="close"][visibleToUser=true] - [vid="ll_remote_end"]',
+          exampleUrls: 'https://e.gkd.li/104ba188-b4cd-4922-b27e-f654085eb163',
+          snapshotUrls: 'https://i.gkd.li/i/17782893',
+        },
+      ],
+    },
   ],
 });
