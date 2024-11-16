@@ -592,6 +592,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '应用包管理组件',
     deprecatedKeys: [8, 9, 10, 11, 12],
   },
+  {
+    id: 'com.miui.player',
+    name: '小米音乐',
+    deprecatedKeys: [4, 10],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
