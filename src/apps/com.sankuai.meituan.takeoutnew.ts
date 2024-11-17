@@ -54,5 +54,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '开屏广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity',
+          matches: '[text="跳过"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17788997',
+            'https://i.gkd.li/i/17789000',
+          ],
+        },
+      ],
+    },
   ],
 });
