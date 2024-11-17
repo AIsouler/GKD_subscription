@@ -60,7 +60,8 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity',
+          activityIds:
+            'com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity',
           matches: '[text="跳过"]',
           snapshotUrls: [
             'https://i.gkd.li/i/17788997',
