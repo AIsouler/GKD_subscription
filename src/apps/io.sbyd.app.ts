@@ -17,10 +17,9 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          matches: [
-            '[text^="立即" || text^="查看" || text^="领取"][text.length=4]', // 立即抢购,立即下载,立即申请,查看详情,领取优惠
-            '[id="android:id/content"] >2 FrameLayout[childCount=3||childCount=2] > FrameLayout[childCount=5||childCount=6||childCount=8] > FrameLayout[childCount=1] > ImageView[text=null][visibleToUser=true]', // 非广告页面下没有这种节点,不会误触
-          ],
+          fastQuery: true,
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13302326',
             'https://i.gkd.li/i/13313576',
@@ -29,18 +28,15 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 3,
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] -2 @View - Image',
-          snapshotUrls: 'https://i.gkd.li/i/12925052',
-        },
-        {
           key: 4,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[text="反馈"] -4 @View < View[childCount=7]',
-          snapshotUrls: 'https://i.gkd.li/i/12925095',
+          matches:
+            '@Image[childCount=0][text=""] < View[childCount=1] + View[childCount=1][text=""] +n View >(1,2) View[childCount=1] > [text$="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12925095',
+            'https://i.gkd.li/i/12925052',
+          ],
         },
       ],
     },

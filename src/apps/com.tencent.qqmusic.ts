@@ -5,11 +5,38 @@ export default defineGkdApp({
   name: 'QQ音乐',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bde5c1a5-3259-45d3-a6b8-8482f7818c6f',
+          snapshotUrls: 'https://i.gkd.li/i/17056504',
+        },
+        {
+          key: 1,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6537da92-f5f6-4ee8-9219-5f39f7c5e8a2',
+          snapshotUrls: 'https://i.gkd.li/i/17068758',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '局部广告-卡片广告',
       rules: [
         {
           key: 1,
+          fastQuery: true,
           activityIds:
             'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
           matches: '[text^="广告"] + [text="跳过"][clickable=true]',
@@ -17,8 +44,9 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '[text="广告"] +n [desc="关闭"]',
+          matches: '@[desc="关闭"][clickable=true] -(1,2) [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13206534', //歌单页
             'https://i.gkd.li/i/13797001', //我的页
@@ -26,6 +54,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          fastQuery: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches:
             '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"||text="摇动点击广告跳转"]',
@@ -48,6 +77,16 @@ export default defineGkdApp({
             'RecyclerView > LinearLayout[childCount=3] >5 ViewGroup[childCount=3] > @ViewGroup[clickable=true] >2 ImageView[text=null][desc=null]',
           snapshotUrls: 'https://i.gkd.li/i/15756931',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.AppStarterActivity',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/17450309',
+        },
       ],
     },
     {
@@ -56,13 +95,17 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          forcedTime: 5000,
+          matchTime: 10000,
           activityIds:
             'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
-          matches: 'View[id="js_close_btn"][desc="关闭"]',
+          matches: '@View[clickable=true][visibleToUser=true][desc="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13115121',
+            'https://i.gkd.li/i/14549936',
             'https://i.gkd.li/i/14798904',
+            'https://i.gkd.li/i/15209764',
+            'https://i.gkd.li/i/15261116',
+            'https://i.gkd.li/i/17459008',
           ],
         },
         {
@@ -134,17 +177,6 @@ export default defineGkdApp({
           matches: '[id="android:id/content"] >4 ViewGroup[childCount=0]',
           snapshotUrls: 'https://i.gkd.li/i/13806782',
         },
-        {
-          key: 1,
-          activityIds:
-            'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
-          matches:
-            '@View[clickable=true][desc="关闭"] +2 * >2 [desc$="确认协议并开通" || desc="立即开通会员"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/15209764',
-            'https://i.gkd.li/i/15261116',
-          ],
-        },
       ],
     },
     {
@@ -152,14 +184,6 @@ export default defineGkdApp({
       name: '全屏广告-高品质音质弹窗',
       desc: '点击关闭',
       rules: [
-        {
-          key: 0,
-          activityIds:
-            'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
-          matches:
-            '[text^="推荐您开启臻品音质"] -3 [desc="关闭"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14549936',
-        },
         {
           key: 1,
           activityIds:

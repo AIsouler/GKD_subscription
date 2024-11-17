@@ -13,16 +13,17 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.jarworld.bleach.bvn.sjm.cyc.MainActivity',
           fastQuery: true,
+          activityIds: 'com.jarworld.bleach.bvn.sjm.cyc.MainActivity',
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13626949',
         },
         {
           key: 1,
+          fastQuery: true,
           activityIds: 'com.jarworld.bleach.bvn.sjm.cyc.MainActivity',
           matches:
-            '[id="com.jarworld.bleach.bvn.sjm.cyc:id/ksad_container"] ViewGroup[childCount=1] > @ViewGroup[clickable=true][childCount=1] > ImageView',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13626950',
         },
         {

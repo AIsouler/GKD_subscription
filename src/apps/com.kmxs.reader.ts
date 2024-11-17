@@ -15,11 +15,22 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-阅读页面底部广告',
-      activityIds: 'org.geometerplus.android.fbreader.FBReader',
-      rules:
-        '[id="com.kmxs.reader:id/ll_ad_native_banner"] > [id="com.kmxs.reader:id/iv_ad_direct_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/12640296'],
+      name: '分段广告-阅读页面广告',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'org.geometerplus.android.fbreader.FBReader',
+          matches: '[vid="ad_direct_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17355000',
+        },
+        {
+          preKeys: [0],
+          activityIds: 'org.geometerplus.android.fbreader.FBReader',
+          matches: '[text="直接关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/17354753',
+        },
+      ],
     },
     {
       key: 3,
@@ -58,14 +69,6 @@ export default defineGkdApp({
         action: 'clickCenter',
       },
       snapshotUrls: ['https://i.gkd.li/i/12640287'],
-    },
-    {
-      key: 8,
-      name: '局部广告-书架顶部广告',
-      fastQuery: true,
-      activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
-      rules: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/13489942'],
     },
     {
       key: 5,
@@ -121,6 +124,27 @@ export default defineGkdApp({
           matches:
             'FrameLayout[childCount=10] > FrameLayout[index=3] > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/i/13472955',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '局部广告-卡片广告',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
+          matches: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13489942',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'org.geometerplus.android.fbreader.FBReader',
+          matches: '[vid="iv_ad_direct_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/9217fd14-1ca6-49b8-8f8b-bff7a98745dd',
+          snapshotUrls: 'https://i.gkd.li/i/17574170',
         },
       ],
     },

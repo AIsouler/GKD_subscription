@@ -5,6 +5,25 @@ export default defineGkdApp({
   name: '凤凰新闻',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/63006672-75df-47c0-96d5-e26551974a98',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17643592',
+            'https://i.gkd.li/i/17644109',
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: '分段广告-信息流广告',
       activityIds: 'com.ifeng.news2.activity.IfengTabMainActivity',

@@ -487,7 +487,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '腾讯视频',
     deprecatedKeys: [5, 19],
   },
-  { id: 'com.xunlei.downloadprovider', name: '迅雷', deprecatedKeys: [11] },
+  {
+    id: 'com.xunlei.downloadprovider',
+    name: '迅雷',
+    deprecatedKeys: [5, 11],
+  },
   {
     id: 'com.xyhui',
     name: 'PU口袋校园',
@@ -521,7 +525,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'tv.danmaku.bili',
     name: '哔哩哔哩',
-    deprecatedKeys: [3, 5],
+    deprecatedKeys: [1, 3, 5],
   },
   {
     id: 'com.chunqiu.ah',
@@ -562,6 +566,36 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.huawei.android.thememanager',
     name: '华为主题',
     deprecatedKeys: [3, 4, 5, 6],
+  },
+  {
+    id: 'com.ximalaya.ting.android',
+    name: '喜马拉雅',
+    deprecatedKeys: [9],
+  },
+  {
+    id: 'com.zjwh.android_wh_physicalfitness',
+    name: '运动世界校园',
+    deprecatedKeys: [2, 3, 4, 9],
+  },
+  {
+    id: 'com.xunmeng.pinduoduo',
+    name: '拼多多',
+    deprecatedKeys: [3, 4, 5, 7, 13, 14, 15, 18],
+  },
+  {
+    id: 'com.mihoyo.hyperion',
+    name: '米游社',
+    deprecatedKeys: [4, 5],
+  },
+  {
+    id: 'com.miui.packageinstaller',
+    name: '应用包管理组件',
+    deprecatedKeys: [8, 9, 10, 11, 12],
+  },
+  {
+    id: 'com.miui.player',
+    name: '小米音乐',
+    deprecatedKeys: [4, 10],
   },
 ];
 

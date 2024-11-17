@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
@@ -152,6 +153,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           action: 'back',
           activityIds: [
             'com.netease.cloudmusic.activity.MainActivity',
@@ -271,8 +273,15 @@ export default defineGkdApp({
           key: 2,
           name: '巨幅卡片广告2',
           matches:
-            '@TextView[index=2] <3 ViewGroup[childCount=3] <<n [id="com.netease.cloudmusic:id/container"]',
+            '@TextView[text!=null][clickable=true][visibleToUser=true] - ViewGroup > [text*="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14045424',
+        },
+        {
+          key: 3,
+          name: '巨幅卡片广告3',
+          matches:
+            '[vid="iv_ad_close"][clickable=true][visibleToUser=true][focusable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15282417',
         },
       ],
     },

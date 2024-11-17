@@ -12,6 +12,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
@@ -121,20 +122,18 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-应用内弹窗广告',
-      desc: '⚠ 此规则容易误触，因此默认关闭。',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: [
             'com.xunlei.downloadprovider.frame.MainTabActivity',
             'com.xunlei.downloadprovider.launch.LaunchActivity',
           ],
-          matches: '@[text="关闭"] +n * >n [text*="广告"]',
+          matches: ['@[text="关闭"]', '[text*="广告"]'],
           snapshotUrls: [
-            'https://i.gkd.li/i/12868648',
-            'https://i.gkd.li/i/12879372',
-            'https://i.gkd.li/i/12882366',
             'https://i.gkd.li/i/12892871',
             'https://i.gkd.li/i/13799878',
           ],
@@ -143,8 +142,14 @@ export default defineGkdApp({
           key: 2,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
-            'TextView[text="广告"] <n ViewGroup -2 ViewGroup > @ViewGroup',
-          snapshotUrls: 'https://i.gkd.li/i/12879452',
+            'ImageView < @ViewGroup[visibleToUser=true] < ViewGroup +n ViewGroup > [text="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12879452',
+            'https://i.gkd.li/i/12882199', // n = 1
+            'https://i.gkd.li/i/12881911', // n = 2
+            'https://i.gkd.li/i/12892912', // 点击目标为具备 clickable=true 的 ViewGroup，防止在这个快照中点击到下落的礼物
+            'https://i.gkd.li/i/12881976', // 限定 visibleToUser=true，防止在这个快照中误触
+          ],
         },
         {
           key: 3,
@@ -164,8 +169,7 @@ export default defineGkdApp({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
-            'Image[text=""] < @View + View +n View > View > TextView[text$="广告"][text.length<=10]',
-          actionDelay: 1000,
+            '@Image[childCount=0][text=""][width<60 && height<60] < View[childCount=1] + View +n View > View[childCount=1] > TextView[text$="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12868667',
             'https://i.gkd.li/i/12881946',
@@ -176,67 +180,34 @@ export default defineGkdApp({
         // 腾讯广告
         {
           key: 20,
+          fastQuery: true,
           activityIds: [
             'com.xunlei.downloadprovider.frame.MainTabActivity',
             'com.xunlei.downloadprovider.launch.LaunchActivity',
           ],
-          matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12882132',
             'https://i.gkd.li/i/12901374',
+            'https://i.gkd.li/i/12882237',
           ],
         },
         {
-          key: 21,
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches:
-            'ImageView < FrameLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12882166',
-        },
-        {
-          key: 22,
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches:
-            'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12882237',
-        },
-        {
           key: 23,
+          fastQuery: true,
           activityIds:
             'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-          fastQuery: true,
           matches:
             '[id="com.xunlei.downloadprovider:id/hermes_ad_banner_negative"]',
           snapshotUrls: 'https://i.gkd.li/i/13597068',
         },
-
-        // 快手广告
-        {
-          key: 30,
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches:
-            'ImageView < @ViewGroup[visibleToUser=true] < ViewGroup +n ViewGroup > [text="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12882199', // n = 1
-            'https://i.gkd.li/i/12881911', // n = 2
-            'https://i.gkd.li/i/12892912', // 点击目标为具备 clickable=true 的 ViewGroup，防止在这个快照中点击到下落的礼物
-            'https://i.gkd.li/i/12881976', // 限定 visibleToUser=true，防止在这个快照中误触
-          ],
-        },
-        {
-          key: 31,
-          activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches:
-            '[text="广告"] <2 ViewGroup -2 ViewGroup >n [text="跳过"] + ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12881976',
-        },
         {
           key: 32,
+          fastQuery: true,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
-          matches: [
-            'ViewGroup[childCount=2] > ImageView + TextView[text="广告"]',
-            'ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView[childCount=0]',
-          ],
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[clickable=true] < ViewGroup <n ViewGroup + ViewGroup >3 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13761275',
         },
       ],
@@ -277,21 +248,12 @@ export default defineGkdApp({
           ],
           matches: '[id="com.xunlei.downloadprovider:id/close_ad"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/128818775',
+            'https://i.gkd.li/i/12881877',
             'https://i.gkd.li/i/13198070',
             'https://i.gkd.li/i/13484249',
           ],
         },
       ],
-    },
-    {
-      key: 5,
-      name: '局部广告-搜索页面顶部广告',
-      fastQuery: true,
-      activityIds:
-        'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
-      rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12882892',
     },
     {
       key: 6,
@@ -305,7 +267,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '全屏广告-会员续费广告',
+      name: '全屏广告-会员广告',
       fastQuery: true,
       rules: [
         {
@@ -347,6 +309,13 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/ade9ca8a-b7a5-4a22-8c1f-d14423a34136',
           snapshotUrls: 'https://i.gkd.li/i/16914136',
         },
+        {
+          key: 5,
+          activityIds: '.download.center.DownloadCenterActivity',
+          matches: ['[text="开通超级会员"]', '[vid="close_btn"]'],
+          exampleUrls: 'https://e.gkd.li/6448cedc-2bad-4aa5-846c-9ad82c310545',
+          snapshotUrls: 'https://i.gkd.li/i/17658831',
+        },
       ],
     },
     {
@@ -355,6 +324,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
@@ -365,6 +335,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15048355',
             'https://i.gkd.li/i/15048357',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.search.ui.search.SearchOperateActivity',
+          matches: '[vid="search_banner_ad_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d9e25fc3-249f-4fb9-8606-606ed0c9c893',
+          snapshotUrls: 'https://i.gkd.li/i/17725350',
         },
       ],
     },

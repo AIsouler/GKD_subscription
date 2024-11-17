@@ -9,9 +9,10 @@ export default defineGkdApp({
       name: '开屏广告',
       matchRoot: true,
       fastQuery: true,
-      matchTime: 10000,
+      //matchTime: 10000, 从桌面小组件进入哔哩哔哩观看视频后，退出返回到哔哩哔哩首页时会跳出开屏广告
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           matches: '[vid="count_down" || vid="skip"][visibleToUser=true]', // [text*="跳过"] 可能会误触搜索框
@@ -36,16 +37,6 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12785461',
         'https://i.gkd.li/i/12775156',
       ],
-    },
-    {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: 'TextView[text*="青少年模式"] +n TextView[text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13746766',
     },
     {
       key: 2,
@@ -104,7 +95,6 @@ export default defineGkdApp({
         },
       ],
     },
-    // key = 5已弃用
     {
       key: 6,
       name: '更新提示',
@@ -183,13 +173,13 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '分段广告-首页推荐视频卡片广告', // 流程与 key=4 视频底部广告 基本一致
+      name: '分段广告-首页推荐视频卡片广告',
+      fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
           key: 0,
           name: '点击卡片广告右下角菜单按钮',
-          fastQuery: true,
           actionMaximum: 1,
           matches: '[vid="ad_tint_frame"] >2 [vid="more"]',
           snapshotUrls: [
@@ -198,40 +188,32 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14729855',
           ],
         },
+        {
+          key: 1,
+          actionMaximum: 1,
+          matches: '[vid="inline_more"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d3d37b4e-cda3-4ba6-8af3-7b45ac8efc10',
+          snapshotUrls: 'https://i.gkd.li/i/17428126',
+        },
 
         //预留key
         {
-          preKeys: [0],
+          preKeys: [0, 1],
           key: 50,
-          fastQuery: true,
-          name: '点击[不感兴趣]',
-          matches: '@[clickable=true] > [text="不感兴趣"]',
+          name: '点击[不感兴趣]/[相似内容过多]',
+          matches:
+            '@[clickable=true] > [text="相似内容过多" || text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13742257',
-            'https://i.gkd.li/i/13256605',
             'https://i.gkd.li/i/14155801',
-            'https://i.gkd.li/i/13742257',
-          ],
-        },
-        {
-          preKeys: [0],
-          key: 51,
-          name: '点击[相似内容过多]',
-          fastQuery: true,
-          matches: '@[clickable=true] > [text="相似内容过多"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/acd89b46-45fc-459f-8d17-3913d98dcbad',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13945597',
             'https://i.gkd.li/i/14155272',
-            'https://i.gkd.li/i/14059882',
+            'https://i.gkd.li/i/17428471',
           ],
         },
         {
           preKeys: [0],
           key: 52,
           name: '点击[up主不感兴趣]',
-          fastQuery: true,
           matches: '@[clickable=true] > [text="up主不感兴趣"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9c2f42d7-c262-4e06-b3c6-40f0908e7a94',
@@ -325,6 +307,59 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/80e5730d-6634-4a0a-9c58-c57f7ad5e58c',
           snapshotUrls: 'https://i.gkd.li/i/15858057',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '分段广告-搜索结果广告',
+      desc: '点击右下角[菜单]-点击[不感兴趣]',
+      fastQuery: true,
+      activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
+      rules: [
+        {
+          key: 1,
+          matches:
+            '@[vid="more"][clickable=true][visibleToUser=true] -3 [vid="tag_layout"] > [vid="ad_tag_with_dot"]',
+          exampleUrls: 'https://e.gkd.li/e5dd30e7-e8dd-42bc-8953-23368e65cca4',
+          snapshotUrls: 'https://i.gkd.li/i/17269053',
+        },
+        {
+          preKeys: [1],
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          exampleUrls: 'https://e.gkd.li/5e6e4b69-ba97-473d-9f62-631c296da589',
+          snapshotUrls: 'https://i.gkd.li/i/17269055',
+        },
+      ],
+    },
+    {
+      key: 15,
+      name: '分段广告-视频详情页下方推广',
+      desc: '关闭[广告/推广/直播]',
+      fastQuery: true,
+      activityIds: 'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[vid="more"] -(3,5) [vid="ad_desc" || vid="live_lottie_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/219c40c4-debf-40d8-889a-7eb39c87126c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17675629',
+            'https://i.gkd.li/i/17675894',
+          ],
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches:
+            '@[clickable=true] > [text="不感兴趣" || text="相似内容过多"]',
+          exampleUrls: 'https://e.gkd.li/23937c2d-379c-4fb5-aaee-7295bcf0afca',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17676025',
+            'https://i.gkd.li/i/17676149',
+            'https://i.gkd.li/i/17677147',
+          ],
         },
       ],
     },

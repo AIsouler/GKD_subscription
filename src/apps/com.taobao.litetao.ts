@@ -10,6 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules:
         '[id="com.taobao.litetao:id/root_layout"] > TextView[text^="还剩"&&text$="秒"]',
       snapshotUrls: 'https://i.gkd.li/i/12774851',

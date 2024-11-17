@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
@@ -230,9 +231,10 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-首页-弹窗广告',
-      resetMatch: 'app',
-      actionMaximum: 1,
       fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -251,6 +253,21 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/c8131a06-837a-4c42-9a70-9e8a7fe21334',
           snapshotUrls: 'https://i.gkd.li/i/14567294',
+        },
+        {
+          key: 2,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
+          exampleUrls: 'https://e.gkd.li/8b128ebc-ce9c-4345-8094-769f9afa8cd6',
+          snapshotUrls: 'https://i.gkd.li/i/17088095',
+        },
+        {
+          key: 3,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches: '[text="暂不需要，稍后领取"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3256ed8e-752c-426d-9d64-26c9fdea9b09',
+          snapshotUrls: 'https://i.gkd.li/i/17542869',
         },
       ],
     },
@@ -289,6 +306,24 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/1b7518c9-4ca7-4905-8929-6f0130abf19f',
           snapshotUrls: 'https://i.gkd.li/i/14358913',
+        },
+      ],
+    },
+    {
+      key: 22,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="免费看"]',
+          exampleUrls: 'https://e.gkd.li/5f6447c1-39f6-4711-a907-fdf36f502ec6',
+          snapshotUrls: 'https://i.gkd.li/i/17542913',
         },
       ],
     },

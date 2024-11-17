@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       excludeActivityIds: [
         'com.tencent.mobileqq.activity.ChatActivity', // 在聊天界面禁用
         'com.tencent.mobileqq.search.activity.UniteSearchActivity', // 在搜索页面禁用
@@ -239,6 +240,7 @@ export default defineGkdApp({
       name: '功能类-扫一扫登录确认',
       desc: '自动点击登录。包括 PC 登录确认、QQ 互联登录确认。',
       fastQuery: true,
+      actionMaximum: 1,
       rules: [
         {
           key: 1,
@@ -365,6 +367,7 @@ export default defineGkdApp({
       name: '开屏广告-QQ小程序开屏广告',
       desc: '点击右下角跳过',
       actionMaximum: 1,
+      priorityTime: 10000,
       activityIds: [
         'com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI',
         'com.tencent.mobileqq.activity.miniaio.MiniChatActivity',
@@ -448,13 +451,14 @@ export default defineGkdApp({
           key: 0,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
-            '@ImageView[clickable=true] <n * > [text*="版本更新" || text*="有新版本"]',
+            '@ImageView[clickable=true][text=null] <n * > [text*="版本更新" || text*="新版本"][text.length<15]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13255493', //desc值为null快照
+            'https://i.gkd.li/i/13255493',
             'https://i.gkd.li/i/13843140',
             'https://i.gkd.li/i/14138340',
             'https://i.gkd.li/i/13931212',
-            'https://i.gkd.li/i/16323755', // add [text*="有新版本"]
+            'https://i.gkd.li/i/16323755',
+            'https://i.gkd.li/i/17529150',
           ],
         },
       ],

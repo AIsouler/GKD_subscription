@@ -62,13 +62,20 @@ export default defineGkdApp({
           key: 4,
           fastQuery: true,
           position: {
-            left: 'width * 0.7185',
-            top: 'width * 0.1157',
+            left: 'width * 1.5394',
+            top: 'height * 0.5',
           },
-          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
-          excludeMatches: ['[text="继续安装"]', '[text="完成"]'],
-          matches: '[vid="buttons_panel"]',
-          snapshotUrls: 'https://i.gkd.li/i/14969116',
+          activityIds: [
+            '.PackageInstallerActivity',
+            '.DeleteStagedFileOnResult',
+          ],
+          excludeMatches: '[text="继续安装" || text="完成"]',
+          matches:
+            'LinearLayout[childCount=1] > Button[text="取消"][childCount=0]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14969116',
+            'https://i.gkd.li/i/17158050',
+          ],
         },
       ],
     },

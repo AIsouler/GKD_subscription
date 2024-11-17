@@ -10,11 +10,11 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
-          fastQuery: true,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           exampleUrls:
             'https://m.gkd.li/57941037/470c6262-62ca-45c5-908c-8435d7b0e86f',
           snapshotUrls: [

@@ -238,10 +238,13 @@ export default defineGkdApp({
           activityIds:
             'com.sankuai.waimai.platform.machpro.container.WMMPActivity',
           matches: [
-            '[text="商家已接单"][visibleToUser=true]',
+            '[text="商家已接单" || text="等待商家接单"][visibleToUser=true]',
             '[text="完成"][visibleToUser=true]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/14163717',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14163717',
+            'https://i.gkd.li/i/17158063',
+          ],
         },
         {
           key: 1,
@@ -250,6 +253,22 @@ export default defineGkdApp({
           matches:
             '[text="支付成功"] >5 @[clickable=true][text="完成"] <<n [vid="mil_container"]',
           snapshotUrls: 'https://i.gkd.li/i/14392284',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '局部广告-直播讲解悬浮窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="正在讲解"]',
+          exampleUrls: 'https://e.gkd.li/42b1d2c5-ca75-4a89-adca-9e5c4f489165',
+          snapshotUrls: 'https://i.gkd.li/i/17182888',
         },
       ],
     },

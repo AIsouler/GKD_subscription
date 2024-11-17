@@ -7,18 +7,26 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
+          key: 0,
+          fastQuery: true,
           excludeActivityIds: 'com.jd.lib.search.view.Activity.SearchActivity',
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/16323111',
-            'https://i.gkd.li/i/16323115', // 防止误触
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/16323111',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16323115',
+        },
+        {
+          key: 1,
+          excludeActivityIds: 'com.jd.lib.search.view.Activity.SearchActivity',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17602356', // "跳过" 节点不支持fastQuery
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16323115',
         },
       ],
     },
@@ -220,6 +228,20 @@ export default defineGkdApp({
           activityIds: 'com.jd.lib.productdetail.ProductDetailActivity',
           matches: '[text="继续逛"]',
           snapshotUrls: 'https://i.gkd.li/i/15047243',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '功能类-支付订单后点击[完成]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            '.bundle.cashierfinish.view.CashierUserContentCompleteActivity',
+          matches: '[vid="lib_cashier_finish_back_page_text"]',
+          exampleUrls: 'https://e.gkd.li/ab886df0-2b34-4804-be7d-742a06fadda9',
+          snapshotUrls: 'https://i.gkd.li/i/17358003',
         },
       ],
     },

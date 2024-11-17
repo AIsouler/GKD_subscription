@@ -7,21 +7,21 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           snapshotUrls: 'https://i.gkd.li/i/14546304',
         },
         {
           key: 1,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/i/12745095',
@@ -30,12 +30,13 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           position: {
             left: 'width * 0.8778',
             top: 'width * 0.1667',
           },
           matches:
-            '[id$="spalsh_ad_view"] >4 [id$="native_container"] >2 [id$="id/contentView"]', // 避免选中其他开屏广告节点
+            '[id$="spalsh_ad_view"] >4 [id$="native_container"] >2 [id="cn.xiaochuankeji.zuiyouLite:id/contentView"]', // 避免选中其他开屏广告节点
           exampleUrls:
             'https://m.gkd.li/57941037/485963ab-07b1-412a-a932-badc50cb2688',
           snapshotUrls: 'https://i.gkd.li/i/13399391',

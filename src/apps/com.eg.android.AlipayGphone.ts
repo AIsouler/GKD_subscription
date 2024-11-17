@@ -169,10 +169,20 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches:
-            '[id="com.alipay.android.app:id/rl_nav_bar"] > [id="com.alipay.android.app:id/nav_right_textview"]',
-          snapshotUrls: 'https://i.gkd.li/i/14008852',
+          activityIds: [
+            'com.alipay.android.msp.ui.views.MspContainerActivity',
+            'com.alipay.android.phone.businesscommon.ucdp.nfc.activity.NResPageActivity',
+          ],
+          matches: [
+            '[text="支付成功" || text="充值成功" || text="提交成功"]',
+            '[text="完成"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14008852',
+            'https://i.gkd.li/i/16328809',
+            'https://i.gkd.li/i/17503266',
+            'https://i.gkd.li/i/17686972',
+          ],
         },
       ],
     },
@@ -256,12 +266,13 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches: '@[checked=true] < * - [text$="免密支付"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1e3a5f01-c42b-4d41-9d7d-21ff96c0075f',
+          matches:
+            '@[checked=true] < FrameLayout - [text*="免密"][text$="支付"]',
+          exampleUrls: 'https://e.gkd.li/7c789099-9b6f-40a2-bc3b-c73b30891cf0',
           snapshotUrls: [
             'https://i.gkd.li/i/14630824', // 关闭前
             'https://i.gkd.li/i/14630825', // 关闭后
+            'https://i.gkd.li/i/17107841',
           ],
         },
       ],
@@ -372,6 +383,25 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/1b788a34-68f6-43c0-8be4-e13cb8221852',
           snapshotUrls: 'https://i.gkd.li/i/16106615',
+        },
+      ],
+    },
+    {
+      key: 24,
+      name: '开屏广告-小程序开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$XRiverLite1',
+          matches:
+            '@View[id=null][text=null][childCount=0][visibleToUser=true] < ViewGroup[id=null][text=null][childCount=1][index=parent.childCount.minus(1)] <7 ViewGroup <2 ViewGroup < ViewGroup < LinearLayout < RelativeLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/a243e31f-f1b5-4689-8d1a-c53250be651e',
+          snapshotUrls: 'https://i.gkd.li/i/17141999',
         },
       ],
     },

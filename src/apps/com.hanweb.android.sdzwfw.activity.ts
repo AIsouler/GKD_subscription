@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: '[text*="关闭"][text.length<=10]',
       snapshotUrls: 'https://i.gkd.li/i/13407227',
     },

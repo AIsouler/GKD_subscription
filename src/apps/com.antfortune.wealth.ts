@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules:
         '@View[clickable=true] <2 [id="com.antfortune.wealth:id/welcome_page"]',
       snapshotUrls: 'https://i.gkd.li/i/12776577',

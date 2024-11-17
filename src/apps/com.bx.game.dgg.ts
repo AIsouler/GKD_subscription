@@ -28,14 +28,15 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.bx.game.dgg.MainActivity',
           matches:
-            'ImageView < @ViewGroup[clickable=true] < ViewGroup +2 * > [text="广告"]',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15362927',
         },
         {
           key: 3,
+          fastQuery: true,
           activityIds: 'com.bx.game.dgg.MainActivity',
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>3] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/15400143',
         },
       ],

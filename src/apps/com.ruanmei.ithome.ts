@@ -11,6 +11,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           excludeMatches: '[vid="iv_search_back"][visibleToUser=true]',
@@ -26,19 +27,27 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      fastQuery: true,
       rules: [
         {
-          fastQuery: true,
+          key: 0,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           activityIds: 'com.ruanmei.ithome.ui.MainActivity',
           matches:
-            '@[visibleToUser=true][text="关闭"] <<n [vid="ll_web"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/15413491',
-            'https://i.gkd.li/i/15603266', // 避免误触
+            '@[visibleToUser=true][text="关闭"] <<n [vid="ll_web"][visibleToUser=true] + [vid="shadowLayout"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15413491',
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/15603266',
+            'https://i.gkd.li/i/17516358',
           ],
+        },
+        {
+          key: 1,
+          activityIds: 'com.ruanmei.ithome.ui.NewsInfoV8Activity',
+          matches: '[vid="iv_dislike"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/16972394',
         },
       ],
     },

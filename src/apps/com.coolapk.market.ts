@@ -7,11 +7,11 @@ export default defineGkdApp({
     {
       key: -1,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       excludeActivityIds: [
         'com.coolapk.market.view.search.', // 在搜索页面禁用
         'com.coolapk.market.view.feed.', // 在动态页面禁用
@@ -20,7 +20,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/12503773',
             'https://i.gkd.li/i/13247610',
@@ -31,28 +31,33 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '[text^="跳过"][text.length<=4]',
-          excludeMatches: '[id="com.coolapk.market:id/item_view"]',
+          fastQuery: true,
+          matches: [
+            '[id="com.coolapk.market:id/ad_container"][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
             'https://i.gkd.li/i/13211392',
-            'https://i.gkd.li/i/13247733', // 误触
-            'https://i.gkd.li/i/13247782', // 可能误触
-            'https://i.gkd.li/i/13296816', // snapshot of excludeMatches
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/13247733',
+            'https://i.gkd.li/i/13296816',
           ],
         },
       ],
     },
     {
       key: 0,
-      name: '分段广告-卡片广告',
+      name: '分段广告-信息流广告',
       desc: '点击卡片右上角按钮->免广告-点击关闭->选择关闭原因-点击不感兴趣',
+      matchRoot: true,
       fastQuery: true,
       activityIds: [
-        'com.coolapk.market.view.main.MainActivity', // 缺少快照
-        'com.coolapk.market.view.base.SimpleAlphaActivity', // 缺少快照
+        'com.coolapk.market.view.main.MainActivity',
         'com.coolapk.market.view.node.DynamicNodePageActivity',
         'com.coolapk.market.view.feed.FeedDetailActivityV8',
+        'com.bytedance.sdk.openadsdk.core.dislike.ui.f',
       ],
       rules: [
         {
@@ -64,8 +69,8 @@ export default defineGkdApp({
             '[vid="submit_view"][text="发布"]',
           ],
           matches: [
-            '[text*="广告"][visibleToUser=true]',
-            '[id="com.coolapk.market:id/close_view"]',
+            '[text*="广告" || text="推广"][visibleToUser=true]',
+            '[vid="close_view"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/12707506',
@@ -73,6 +78,9 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12642148',
             'https://i.gkd.li/i/12774771',
             'https://i.gkd.li/i/13257987',
+            'https://i.gkd.li/i/17450282',
+          ],
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/14996359', // 避免误触
             'https://i.gkd.li/i/15159886', // 避免误触
             'https://i.gkd.li/i/15587119', // 避免误触

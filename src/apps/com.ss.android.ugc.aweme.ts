@@ -316,12 +316,20 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: ['[text*="青少年模式"]', '[text="关闭" || desc="关闭"]'],
+          excludeActivityIds: '.setting.ui.SettingCommonProtocolActivity',
+          matches: [
+            '[text*="青少年" || text*="未成年"][text*="模式"]',
+            '[text="关闭" || desc="关闭"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14321107',
             'https://i.gkd.li/i/14473006',
             'https://i.gkd.li/i/14567078',
-            'https://i.gkd.li/i/14917848', // 避免误触
+            'https://i.gkd.li/i/17726070',
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/14917848',
+            'https://i.gkd.li/i/17610958',
           ],
         },
       ],

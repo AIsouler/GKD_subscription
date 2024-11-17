@@ -1,35 +1,24 @@
-name: APP 适配
+name: 请求适配
+title: "[Feature] "
 description: 请求增加适配 APP 规则
 body:
   - type: markdown
     attributes:
       value: |
-        请按照此模版填写 APP 适配规则需求信息
-  - type: checkboxes
-    id: checkboxes
-    attributes:
-      label: 一些验证
-      description: 在提交问题之前，请确保您完成以下操作
-      options:
-        - label: 我确保 **提供正确的快照（不要提供截图，截图没有任何作用）**，否则我同意维护者直接关闭issue
-          required: true
-        - label: 我确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD（包括beta版）](https://github.com/gkd-kit/gkd/releases/latest)
-          required: true
-        - label: 我确保已阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/120)，否则我同意维护者直接关闭issue
-          required: true
+        ## 在提交问题之前，请您确保完成以下操作
+        1. ### 确保 **提供需要适配界面的快照（不要提供截图，截图没有任何作用）**
+        2. 确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
+        3. 确保已阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/480)
+        4. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
   - type: textarea
     id: feature-description
     attributes:
       label: |
-        请输入需要添加规则的界面的快照或者生成的链接，也可在后面补充其它信息
-        请注意:
-        1. 不提供快照或者仅提供截图的 issue 将被自动关闭
-        2. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
+        请提供 需要适配界面 的快照（不要提供截图！！！），也可补充说明
       description: |
         快照是一个 zip 文件，快照链接是类似 "https://i.gkd.li/i/XXXXXXXX" 的文本，按照如下方式可获得快照信息
 
-        按照下面的截图示例来获取界面快照，上传文件或者生成链接并粘贴到下面的输入框\
-        ![img](https://raw.githubusercontent.com/AIsouler/GKD_subscription/e08028b4a4464640f39927059b9b502760111e8e/Snapshot.png)\
-        如果是需要多个点击如 [点击关闭按钮->出现关闭弹窗->点击关闭原因] 这种类型，则需要填写每个点击界面的快照
+        按照下面的截图示例来获取界面快照，上传文件或者生成链接并粘贴到下面的输入框，如果是需要多个点击如 [点击关闭按钮->出现关闭弹窗->点击关闭原因] 这种类型，则需要填写每个点击界面的快照\
+        ![img](https://raw.githubusercontent.com/AIsouler/GKD_subscription/refs/heads/main/Snapshot.png)
     validations:
       required: true

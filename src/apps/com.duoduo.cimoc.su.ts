@@ -7,12 +7,13 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.duoduo.cimoc.su.MainActivity',
           matches:
-            'ViewGroup[childCount=4] <2 ViewGroup[childCount=2] + * > ViewGroup[visibleToUser=true]',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13999281',
         },
       ],

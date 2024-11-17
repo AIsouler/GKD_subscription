@@ -7,20 +7,21 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
           matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
           snapshotUrls: 'https://i.gkd.li/i/14232395',
         },
         {
           key: 1,
+          fastQuery: true,
           matches: '[text^="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/15087528',
@@ -58,7 +59,7 @@ export default defineGkdApp({
           name: '底部半屏弹窗',
           action: 'back', // 使用点击方式有概率无效
           matches:
-            'FlattenUIText[text="开会员听整月" || text="购买汽水会员" || text="试听中，开通VIP听全曲"]',
+            'FlattenUIText[text="开会员听整月" || text="购买汽水会员" || text="试听中，开通VIP听全曲" || text*="看视频全天免费听"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
             'https://i.gkd.li/i/13660652',
@@ -66,8 +67,9 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14767233',
             'https://i.gkd.li/i/16280954',
             'https://i.gkd.li/i/16342691',
-            'https://i.gkd.li/i/13613296', // 避免在此页面误触
+            'https://i.gkd.li/i/17580823',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/13613296',
         },
         {
           key: 2,

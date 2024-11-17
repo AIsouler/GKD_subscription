@@ -6,12 +6,24 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-主题详情底部广告',
-      desc: '注意如果使用ADB禁用了MIUI广告组件,点击此按钮会无反应,可关闭此规则,避免过多相同点击记录',
+      name: '分段广告-信息流广告',
+      desc: '该广告的第二段需开启[智能服务]的对应规则才能关闭',
       fastQuery: true,
-      rules:
-        '[id="com.android.thememanager:id/ad_close_btn"][visibleToUser=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13227330',
+      rules: [
+        {
+          activityIds: [
+            '.ThemeResourceProxyTabActivity',
+            '.module.detail.view.ThemeDetailActivity',
+            '.v9.WallpaperSubjectActivity',
+          ],
+          matches: '[vid="ad_close_btn"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17143445',
+            'https://i.gkd.li/i/17143447',
+            'https://i.gkd.li/i/17675601',
+          ],
+        },
+      ],
     },
     {
       key: 2,

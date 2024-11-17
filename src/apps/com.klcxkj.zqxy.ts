@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
@@ -23,20 +24,16 @@ export default defineGkdApp({
         {
           key: 1,
           name: '腾讯广告',
-          activityIds: [
-            'com.klcxkj.zqxy.ui.main.MainActivity',
-            'com.klcxkj.zqxy.ui.device.apartment.ble.BathingBleActivity',
-          ],
+          fastQuery: true,
+          activityIds: 'com.klcxkj.zqxy.ui.main.MainActivity',
           matches:
-            'FrameLayout[childCount>1] > FrameLayout[childCount=1] > ImageView[width<90][height<90]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text^="打开或下载" || text="进入小程序" || text="领取优惠" || text="跳转微信" || text^="下载或打开"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12781461', //腾讯-1，原'ImageView -(1,2) FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/i/12781461',
             'https://i.gkd.li/i/13488673',
-            'https://i.gkd.li/i/13546464', //腾讯-2，原'ImageView <(1,2) FrameLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'https://i.gkd.li/i/13546464',
             'https://i.gkd.li/i/13071301',
-            'https://i.gkd.li/i/13274836',
-            'https://i.gkd.li/i/13274836', //腾讯-3，原'ImageView -n FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-            'https://i.gkd.li/i/13707849', //腾讯-4
+            'https://i.gkd.li/i/13707849',
           ],
         },
         {
@@ -53,6 +50,15 @@ export default defineGkdApp({
           activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
           matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13274838',
+        },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: '.ui.device.apartment.ble.BathingBleActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <3 FrameLayout[childCount=3] < FrameLayout[childCount=2] +5 FrameLayout[childCount=4] > [text^="扭动或点击"]',
+          exampleUrls: 'https://e.gkd.li/d31ed6be-1211-4d34-855c-3f454f8f4b3f',
+          snapshotUrls: 'https://i.gkd.li/i/13274836',
         },
       ],
     },

@@ -101,6 +101,26 @@ export const blackListAppIDs: string[] = [
   'com.sonkins.tguitar', // Guitar Tuner
   'com.eumlab.android.prometronome', // Pro Metronome
   'cn.edu.buaa.wxwork', // 智慧北航
+  'io.github.muntashirakon.AppManager', // App Manager
+  'moe.shizuku.redirectstorage', // 存储空间隔离
+  'web1n.stopapp', // 小黑屋
+  'com.shatyuka.zhiliao', // 知了
+  'com.adobe.reader', // Adobe Acrobat
+  'org.wikipedia', // 维基百科
+  'org.kiwix.kiwixmobile', // Kiwix
+  'com.brakefield.painter', // Infinte Painter
+  'me.iacn.biliroaming', // 哔哩漫游
+  'com.termux', // Termux
+  'oss.krtirtho.spotube', // Spotube
+  'com.merxury.blocker', // Blocker
+  'moe.minamigo.miuigms', // MIUIGMS
+  'mufanc.tools.applock', // AppLock
+  'com.gankes.tsbattery', // TSBattery
+  'com.oasisfeng.nevo.xposed', // 女娲石
+  'com.reddit.frontpage', // Reddit
+  'com.ghostflying.locationreportenabler', // LocationReportEnabler
+  'com.zyc.zcontrol', // ZControl
+  'org.nobody.multitts', // MultiTTS
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -136,7 +156,6 @@ export const blackListAppIDs: string[] = [
   'Hook.JiuWu.Xp',
   'me.weishu.kernelsu',
   'com.franco.kernel',
-  'com.molink.john.hummingbird',
   'com.samsung.android.themedesigner',
   'com.samsung.android.game.gamehome',
   'com.tencent.tmgp.sgame',
@@ -157,6 +176,15 @@ export const blackListAppIDs: string[] = [
   'com.dna.tools',
   'flar2.devcheck',
   'com.gstarmc.android',
+  'com.github.capntrips.kernelflasher',
+  'com.google.android.googlequicksearchbox',
+  'qyz.onedesign',
+  'com.samsung.android.app.repaircal',
+  'com.yhchat.app',
+  'com.skyhand.sinahelper',
+  'com.rong862.bear',
+  'be.mygod.vpnhotspot',
+  'com.samsung.android.bixby.agent',
 
   // 系统自带非系统应用
   // 小米
@@ -179,6 +207,7 @@ export const blackListAppIDs: string[] = [
 
   'com.xiaomi.wpslauncher', // WPS Office PC
   'com.xiaomi.cajlauncher', // CAJViewer PC
+  'com.mi.car.padapp', // 小米汽车扩展屏
 
   // 三星
   'com.samsung.android.app.cameraassistant',
