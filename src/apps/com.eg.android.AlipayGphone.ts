@@ -326,6 +326,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          matchRoot: true,
+          forcedTime: 10000,
           activityIds: [
             'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
