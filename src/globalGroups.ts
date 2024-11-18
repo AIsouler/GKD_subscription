@@ -42,7 +42,7 @@ export default defineGkdGlobalGroups([
         key: 2,
         action: 'clickCenter',
         matches:
-          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]', // 字节SDK
+          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]', // 字节SDK
       },
     ],
     apps: [...appList.openAdBlackListAppIDs]
