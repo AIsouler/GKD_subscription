@@ -735,6 +735,7 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
+          matchRoot: true,
           position: {
             left: 'width * 0.9534',
             top: 'width * 0.0805',
