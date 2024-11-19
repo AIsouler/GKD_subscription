@@ -9,9 +9,9 @@
 
 ## 说明
 
-- **仅启用 `开屏广告` 一类规则，其它所有规则均需手动打开，规则类别里可以批量开启某一类规则**
+- **仅启用 `开屏广告` 一类规则，其它所有规则均需手动打开，规则类别里可以批量开启某一类规则，建议按需开启规则，不要无脑开启规则，规则开启越多耗电就越多 -> [点击查看耗电说明](https://gkd.li/guide/faq#power)**
 
-- **已适配的规则需要等待发布更新才能生效，在 `GKD订阅界面`下拉就能检测是否有更新，也可以在此 [点击查看更新日志](https://github.com/AIsouler/GKD_subscription/releases)**
+- **已适配的规则需要等待发布更新才能生效，在 `GKD订阅界面`下拉就能检测是否有更新 -> [点击查看更新日志](https://github.com/AIsouler/GKD_subscription/releases)**
 
 - **请求适配或报告问题 -> [点击反馈](https://github.com/AIsouler/GKD_subscription/issues/new/choose)**
 
