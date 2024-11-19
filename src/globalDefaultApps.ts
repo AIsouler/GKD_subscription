@@ -121,6 +121,7 @@ export const blackListAppIDs: string[] = [
   'com.ghostflying.locationreportenabler', // LocationReportEnabler
   'com.zyc.zcontrol', // ZControl
   'org.nobody.multitts', // MultiTTS
+  'deltazero.amarok', // Amarok 更新提示在 https://i.gkd.li/i/17812411 误触
 
   'com.canghai.haoka',
   'com.xy.td',
