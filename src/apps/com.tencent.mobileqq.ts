@@ -798,5 +798,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 32,
+      name: '局部广告-说说详情广告',
+      activityIds: ['com.qzone.reborn.base.QZoneShellActivity'],
+      desc: 'QQ空间说说详情页局部广告',
+      rules: [
+        {
+          matches: '[id="com.tencent.mobileqq.qzone_df_impl:id/g_x"]',
+          exampleUrls: 'https://e.gkd.li/731f8c85-1f0b-4c09-92c9-53508917e854',
+          snapshotUrls: 'https://i.gkd.li/i/17815694',
+        },
+      ],
+    },
   ],
 });
