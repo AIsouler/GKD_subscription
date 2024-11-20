@@ -775,11 +775,18 @@ export default defineGkdApp({
         {
           key: 3,
           name: '好友动态详情页广告',
-          activityIds: 'com.qzone.reborn.base.QZoneTransparentShellActivity',
+          activityIds: [
+            'com.qzone.reborn.base.QZoneTransparentShellActivity',
+            'com.qzone.reborn.base.QZoneShellActivity',
+          ],
           fastQuery: true,
-          matches: '@[desc="关闭广告"][visibleToUser=true] -3 [text^="活动"]',
+          matches:
+            '@[desc="关闭广告"][visibleToUser=true] <4 RelativeLayout <2 LinearLayout <2 LinearLayout < FrameLayout <(4,5) RecyclerView < FrameLayout - FrameLayout >2 [text="详情"]',
           exampleUrls: 'https://e.gkd.li/b78a3e44-3bd9-445d-9199-e989269c2be3',
-          snapshotUrls: 'https://i.gkd.li/i/17009847',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17009847',
+            'https://i.gkd.li/i/17815694',
+          ],
         },
       ],
     },
@@ -795,19 +802,6 @@ export default defineGkdApp({
             '@CompoundButton[checked=true] - RelativeLayout > [text="你的QQ好友关系"]',
           exampleUrls: 'https://e.gkd.li/4d69a243-6a57-47ca-bc25-0a5353d80179',
           snapshotUrls: 'https://i.gkd.li/i/16929347',
-        },
-      ],
-    },
-    {
-      key: 32,
-      name: '局部广告-说说详情广告',
-      activityIds: ['com.qzone.reborn.base.QZoneShellActivity'],
-      desc: 'QQ空间说说详情页局部广告',
-      rules: [
-        {
-          matches: '[id="com.tencent.mobileqq.qzone_df_impl:id/g_x"]',
-          exampleUrls: 'https://e.gkd.li/731f8c85-1f0b-4c09-92c9-53508917e854',
-          snapshotUrls: 'https://i.gkd.li/i/17815694',
         },
       ],
     },
