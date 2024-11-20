@@ -254,6 +254,7 @@ function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
 export const openAdBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'com.taptap', // TapTap
+  'com.sankuai.meituan', // 美团 误触 https://i.gkd.li/i/17827264
   ...filterAppsByGroup(apps, '开屏广告'),
 ]);
 
