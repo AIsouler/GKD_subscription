@@ -782,7 +782,7 @@ export default defineGkdApp({
           ],
           fastQuery: true,
           matches:
-            '@[desc="关闭广告"][visibleToUser=true] <4 RelativeLayout <2 LinearLayout <2 LinearLayout < FrameLayout <(4,5) RecyclerView < FrameLayout - FrameLayout >2 [text="详情"]',
+            '@[desc="关闭广告"][visibleToUser=true] <4 RelativeLayout <2 LinearLayout <2 LinearLayout < FrameLayout <(n) RecyclerView < FrameLayout - FrameLayout >2 [text="详情"]',
           exampleUrls: 'https://e.gkd.li/b78a3e44-3bd9-445d-9199-e989269c2be3',
           snapshotUrls: [
             'https://i.gkd.li/i/17009847',
