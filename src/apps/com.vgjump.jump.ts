@@ -38,7 +38,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.ui.my.favorite.FavoriteActivity',
-          matches: 'ViewGroup[vid="clNotificationGuide"] > ImageView[vid="ivClose"][visibleToUser=true][clickable=true]',
+          matches:
+            'ViewGroup[vid="clNotificationGuide"] > ImageView[vid="ivClose"][visibleToUser=true][clickable=true]',
           exampleUrls: 'https://e.gkd.li/14fe147b-a993-43d3-9477-7dd3be7d2e54',
           snapshotUrls: 'https://i.gkd.li/i/17828834',
         },
