@@ -366,6 +366,7 @@ export default defineGkdApp({
       key: 13,
       name: '开屏广告-QQ小程序开屏广告',
       desc: '点击右下角跳过',
+      fastQuery: true,
       actionMaximum: 1,
       priorityTime: 10000,
       activityIds: [
