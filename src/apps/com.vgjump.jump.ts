@@ -30,5 +30,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '通知提示-开启推送通知提醒',
+      desc: '点击x',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.my.favorite.FavoriteActivity',
+          matches:
+            'ViewGroup[vid="clNotificationGuide"] > ImageView[vid="ivClose"][visibleToUser=true][clickable=true]',
+          exampleUrls: 'https://e.gkd.li/14fe147b-a993-43d3-9477-7dd3be7d2e54',
+          snapshotUrls: 'https://i.gkd.li/i/17828834',
+        },
+      ],
+    },
   ],
 });
