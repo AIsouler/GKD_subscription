@@ -35,7 +35,9 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '@[desc="取消"] - ViewGroup >n [text="立即升级"]',
+          fastQuery: true,
+          matches:
+            '@Button[desc="取消"] - ViewGroup >3 [text="立即升级"] <2 Button <2 ViewGroup < ViewGroup <3 ViewGroup <2 ViewGroup < ViewGroup <2 ViewGroup < ViewGroup < FrameLayout < [id="com.sf.activity:id/rnRootLayout"]',
           snapshotUrls: 'https://i.gkd.li/i/13291144',
         },
       ],
@@ -43,6 +45,9 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-专属月报弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.sf.activity.MainActivity',
@@ -57,13 +62,17 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds: 'com.sf.activity.MainActivity',
-          matches: '[id="BmsAdDialogViewCloseButton"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/6baf1ea4-9424-4360-b28b-7907b0d7aa4a',
+          matches:
+            '@Button[id="BmsAdDialogViewCloseButton"] <2 ViewGroup < ViewGroup <2 ViewGroup < ViewGroup <2 ViewGroup < ViewGroup < FrameLayout < [vid="rnRootLayout"]',
+          exampleUrls: 'https://e.gkd.li/3be50f7b-5696-47c9-95cc-ef46f8531967',
           snapshotUrls: [
             'https://i.gkd.li/i/14502128',
             'https://i.gkd.li/i/17869485',
