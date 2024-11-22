@@ -29,7 +29,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '功能类-自动安装/更新应用',
-      desc: '该规则仅适配关闭小米系统[安全守护]的情况',
+      desc: '该规则仅适配关闭[应用安全验证]和[安全守护]的情况，可在安装页面右上角设置里关闭，关闭后的风险自行承担',
       matchRoot: true,
       fastQuery: true,
       rules: [
