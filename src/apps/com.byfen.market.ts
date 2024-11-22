@@ -10,6 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       priorityTime: 10000,
       rules: [
         {
@@ -20,6 +21,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13298944',
             'https://i.gkd.li/i/13800021',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/350a83a9-8330-4e7c-b1b7-bb0881b7ac6c',
+          snapshotUrls: 'https://i.gkd.li/i/17860124',
         },
       ],
     },
