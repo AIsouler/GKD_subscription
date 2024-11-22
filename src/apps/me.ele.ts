@@ -34,8 +34,10 @@ export default defineGkdApp({
             'me.ele.shopdetailv2.ShopDetailV2Activity',
             'me.ele.foodchannel.page.WMChannelNativeActivity',
           ],
-          matches:
-            'ViewGroup[childCount=2] > @ImageView[index=1][clickable=true] <<n [id="me.ele:id/id_magex_mistview"]',
+          anyMatches: [
+            '@ImageView[childCount=0][clickable=true][index=parent.childCount.minus(1)] - ViewGroup[childCount=2] < ViewGroup[childCount=2] < [vid="id_magex_mistview"]',
+            '@ImageView[childCount=0][clickable=true][index=parent.childCount.minus(1)] - ViewGroup[childCount=2] < [vid="id_magex_mistview"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12650238',
             'https://i.gkd.li/i/13294893',
@@ -45,12 +47,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13710581',
             'https://i.gkd.li/i/15148480',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17858192',
         },
         {
           key: 1,
           name: '红包弹窗2',
           activityIds: 'me.ele.newretail.pack.ui.activity.PackActivity',
-          matches: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
+          matches: '[desc$="今日红包"] +n [desc$="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12650713',
         },
         {
@@ -58,12 +61,12 @@ export default defineGkdApp({
           name: '红包弹窗3',
           fastQuery: true,
           matches:
-            '@ViewGroup[index=2][clickable=true][childCount=0] <3 ViewGroup < ViewGroup < ViewGroup[vid="id_magex_mist_view"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/25425b3a-309d-464d-bbb5-091715675fcd',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14472929',
+            '@ViewGroup[index=2][clickable=true][childCount=0][index=parent.childCount.minus(1)] <3 ViewGroup[childCount=3] < ViewGroup[childCount=1] < ViewGroup[vid="id_magex_mist_view"]',
+          exampleUrls: 'https://e.gkd.li/a933d63b-14b2-4c91-bdd9-0ba578da6bff',
+          snapshotUrls: 'https://i.gkd.li/i/14472929',
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/16346727', // 误触 add [childCount=0]
+            'https://i.gkd.li/i/17858192',
           ],
         },
       ],
