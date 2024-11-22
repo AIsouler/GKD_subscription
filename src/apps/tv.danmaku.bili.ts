@@ -191,9 +191,11 @@ export default defineGkdApp({
         {
           key: 1,
           actionMaximum: 1,
-          matches: '[vid="inline_more"][visibleToUser=true]',
+          matches:
+            '@[vid="inline_more"][visibleToUser=true] <4 ViewGroup - FrameLayout > [vid="corner_hint_container"]',
           exampleUrls: 'https://e.gkd.li/d3d37b4e-cda3-4ba6-8af3-7b45ac8efc10',
           snapshotUrls: 'https://i.gkd.li/i/17428126',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17848536',
         },
 
         //预留key
