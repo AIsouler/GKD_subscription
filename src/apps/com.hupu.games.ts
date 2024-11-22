@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '分段广告-推荐流广告',
+      name: '分段广告-信息流广告',
       desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
       fastQuery: true,
       activityIds: [
@@ -29,12 +29,13 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 1,
-          matches: '@[clickable=true] > [text="屏蔽该广告"]',
+          matches: '@[clickable=true] > [text="屏蔽该广告" || text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12511010',
             'https://i.gkd.li/i/12534848',
             'https://i.gkd.li/i/13259699',
             'https://i.gkd.li/i/15360360',
+            'https://i.gkd.li/i/17869227',
           ],
         },
       ],
