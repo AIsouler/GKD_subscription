@@ -60,12 +60,14 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '本月礼包',
           activityIds: 'com.sf.activity.MainActivity',
           matches: '[id="BmsAdDialogViewCloseButton"]',
           exampleUrls:
             'https://m.gkd.li/57941037/6baf1ea4-9424-4360-b28b-7907b0d7aa4a',
-          snapshotUrls: 'https://i.gkd.li/i/14502128',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14502128',
+            'https://i.gkd.li/i/17869485',
+          ],
         },
       ],
     },
