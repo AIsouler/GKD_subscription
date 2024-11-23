@@ -30,22 +30,6 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/13228520',
     },
     {
-      key: 2,
-      name: '青少年模式',
-      desc: '点击"知道了"',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: [
-        {
-          matches: 'ScrollView >2 [text="知道了"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/461e8848-e8ed-4daf-b5f4-4b1aaa72e9a8',
-          snapshotUrls: 'https://i.gkd.li/i/14219285',
-        },
-      ],
-    },
-    {
       key: 3,
       name: '功能类-应用更新页面-点击[查看更多]',
       fastQuery: true,

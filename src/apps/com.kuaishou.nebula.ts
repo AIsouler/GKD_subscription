@@ -21,14 +21,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.kuaishou.nebula:id/positive"][text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13196316',
-    },
-    {
       key: 2,
       name: '全屏广告-朋友推荐弹窗',
       rules: [

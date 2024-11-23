@@ -160,13 +160,15 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      snapshotUrls: 'https://i.gkd.li/i/12506209',
-      rules: {
-        matches: [
-          '[text*="青少年模式"][id="com.ximalaya.ting.android:id/host_btn_set"]',
-          '[id="com.ximalaya.ting.android:id/host_dialog_close"]',
-        ],
-      },
+      rules: [
+        {
+          matches: [
+            '[text*="青少年模式"][id="com.ximalaya.ting.android:id/host_btn_set"]',
+            '[id="com.ximalaya.ting.android:id/host_dialog_close"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/12506209',
+        },
+      ],
     },
     {
       key: 8,

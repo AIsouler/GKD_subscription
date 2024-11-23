@@ -21,15 +21,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 0,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text$="青少年模式"] +n [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/12472628',
-    },
-    {
       key: 1,
       name: '更新提示',
       fastQuery: true,

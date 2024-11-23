@@ -5,22 +5,6 @@ export default defineGkdApp({
   name: '快手',
   groups: [
     {
-      key: 0,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: ['[text="开启青少年模式"]', '[text="我知道了"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/12708609',
-            'https://i.gkd.li/i/14969798',
-          ],
-        },
-      ],
-    },
-    {
       key: 10,
       name: '全屏广告-首页红包弹窗',
       desc: '自动点击x按钮',

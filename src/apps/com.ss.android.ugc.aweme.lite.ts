@@ -5,29 +5,6 @@ export default defineGkdApp({
   name: '抖音极速版',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      desc: '点击"我知道了"/"关闭"',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: 'Button[desc="开启青少年模式"] + Button[text="我知道了"]',
-          snapshotUrls: 'https://i.gkd.li/i/13111607',
-        },
-        {
-          actionMaximumKey: 0,
-          matches:
-            'Button[text="开启青少年模式"] + LinearLayout > Button[text="关闭"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13542867', //新版本
-          ],
-        },
-      ],
-    },
-    {
       key: 2,
       name: '功能类-功能体验邀请弹窗',
       rules: [

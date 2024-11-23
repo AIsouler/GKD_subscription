@@ -5,21 +5,6 @@ export default defineGkdApp({
   name: '米游社',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      desc: '点击[我知道了]',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '[vid="tv_dialog_go_to_teenage_mode"] + [vid="tv_dialog_i_know"]',
-      exampleUrls: 'https://e.gkd.li/db8bb97e-f0f0-4f85-a262-14dd760f812b',
-      snapshotUrls: [
-        'https://i.gkd.li/i/17002129',
-        'https://i.gkd.li/i/12775850', // activityId: 'com.mihoyo.hyperion.splash.SplashActivity'
-      ],
-    },
-    {
       key: 2,
       name: '更新提示',
       desc: '关闭版本更新提示弹窗',

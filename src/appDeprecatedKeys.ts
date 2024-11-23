@@ -40,7 +40,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'air.tv.douyu.android',
     name: '斗鱼',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'android.zhibo8',
@@ -115,12 +115,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'cn.xiaochuankeji.tieba',
     name: '最右',
-    deprecatedKeys: [0, 11],
+    deprecatedKeys: [0, 2, 11],
   },
   {
     id: 'cn.xiaochuankeji.zuiyouLite',
     name: '皮皮搞笑',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'cn.yonghui.hyd',
@@ -320,7 +320,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.cmcc.cmvideo',
     name: '咪咕视频',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'com.cn21.ecloud',
@@ -485,7 +485,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.qqlive',
     name: '腾讯视频',
-    deprecatedKeys: [5, 19],
+    deprecatedKeys: [1, 5, 19],
   },
   {
     id: 'com.xunlei.downloadprovider',
@@ -505,7 +505,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.youku.phone',
     name: '优酷视频',
-    deprecatedKeys: [1],
+    deprecatedKeys: [1, 2],
   },
   {
     id: 'com.zhihu.android',
@@ -585,7 +585,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.mihoyo.hyperion',
     name: '米游社',
-    deprecatedKeys: [4, 5],
+    deprecatedKeys: [1, 4, 5],
   },
   {
     id: 'com.miui.packageinstaller',
@@ -596,6 +596,126 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.miui.player',
     name: '小米音乐',
     deprecatedKeys: [4, 10],
+  },
+  {
+    id: 'cn.soulapp.android',
+    name: 'Soul',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.dongqiudi.news',
+    name: '懂球帝',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.duitang.main',
+    name: '堆糖',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.duowan.kiwi',
+    name: '虎牙直播',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.example.pptv',
+    name: '人人视频',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.gotokeep.keep',
+    name: 'Keep',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.huawei.appmarket',
+    name: '华为应用市场',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.hunantv.imgo.activity',
+    name: '芒果TV',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.kuaikan.comic',
+    name: '快看漫画',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.kuaishou.nebula',
+    name: '快手极速版',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.kugou.android.lite',
+    name: '酷狗概念版',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.p1.mobile.putong',
+    name: '探探',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qiyi.video',
+    name: '爱奇艺',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qq.ac.android',
+    name: '腾讯动漫',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qq.reader',
+    name: 'QQ阅读',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.smile.gifmaker',
+    name: '快手',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.sohu.sohuvideo',
+    name: '搜狐视频',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.ss.android.article.video',
+    name: '西瓜视频',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.ss.android.ugc.aweme.lite',
+    name: '抖音极速版',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.ss.android.ugc.aweme.mobile',
+    name: '抖音',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.ss.android.yumme.video',
+    name: '抖音精选',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.tencent.weread',
+    name: '微信读书',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.xingye.app',
+    name: '星野',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'tv.danmaku.bilibilihd',
+    name: '哔哩哔哩HD',
+    deprecatedKeys: [1],
   },
 ];
 

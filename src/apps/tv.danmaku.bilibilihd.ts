@@ -16,16 +16,6 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/13031261',
     },
     {
-      key: 1,
-      name: '青少年模式',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text*="青少年模式"] + [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13166639',
-    },
-    {
       key: 2,
       name: '分段广告-首页、视频播放页广告',
       desc: '点击[更多]-点击[不感兴趣]',

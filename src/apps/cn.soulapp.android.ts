@@ -24,22 +24,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: 'TextView[text="查看青少年模式"] + TextView[text$="知道了"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12834093',
-            'https://i.gkd.li/i/16445117',
-          ],
-        },
-      ],
-    },
-    {
       key: 2,
       name: '局部广告-广场页卡片广告',
       fastQuery: true,
