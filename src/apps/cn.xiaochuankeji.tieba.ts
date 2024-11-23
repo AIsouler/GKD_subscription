@@ -57,19 +57,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
-      name: '青少年模式',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[text$="青少年模式"] + [text$="知道了"]',
-          snapshotUrls: 'https://i.gkd.li/i/12660929',
-        },
-      ],
-    },
-    {
       key: 3,
       name: '分段广告-评论区卡片广告',
       activityIds:

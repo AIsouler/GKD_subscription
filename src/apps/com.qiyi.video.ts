@@ -19,21 +19,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[id="com.qiyi.video:id/confirm_btn"][text="我知道了"]',
-          exampleUrls:
-            'https://m.gkd.li/6328439/d69e92f8-8304-4296-909a-11730e408a16',
-          snapshotUrls: 'https://i.gkd.li/i/13546555',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '局部广告-顶部卡片广告',
       fastQuery: true,

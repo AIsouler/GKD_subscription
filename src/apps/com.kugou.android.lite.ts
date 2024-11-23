@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '酷狗概念版',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text="开启青少年模式"] + [text="知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/14321697',
-    },
-    {
       key: 2,
       name: '全屏广告-VIP弹窗',
       rules: [

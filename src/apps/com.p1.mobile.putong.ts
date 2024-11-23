@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '探探',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      rules: '@[text="我知道了"] + [text="开启青少年模式"]',
-      snapshotUrls: 'https://i.gkd.li/i/14332010',
-    },
-    {
       key: 2,
       name: '更新提示',
       desc: '点击[取消]',

@@ -29,15 +29,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.qq.reader:id/tv_i_know"]',
-      snapshotUrls: 'https://i.gkd.li/i/13194867',
-    },
-    {
       key: 3,
       name: '局部广告-右下角悬浮卡片广告',
       desc: '点击关闭',

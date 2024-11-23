@@ -5,19 +5,6 @@ export default defineGkdApp({
   name: '优酷视频',
   groups: [
     {
-      key: 2,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text="青少年模式"] +(3) [text="我知道了"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12701050',
-        'https://i.gkd.li/i/13498556',
-      ],
-    },
-    {
       key: 3,
       name: '全屏广告-视频推荐弹窗',
       fastQuery: true,

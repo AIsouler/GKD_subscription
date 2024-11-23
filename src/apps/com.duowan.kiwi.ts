@@ -5,19 +5,6 @@ export default defineGkdApp({
   name: '虎牙直播',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      rules: '[text*="青少年模式"] + * > [text="我知道了"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12908790',
-        'https://i.gkd.li/i/15025239',
-      ],
-    },
-    {
       key: 2,
       name: '局部广告-直播间悬浮广告',
       activityIds: 'com.duowan.kiwi.liveroom.ChannelPage',

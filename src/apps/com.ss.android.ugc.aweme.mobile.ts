@@ -5,16 +5,6 @@ export default defineGkdApp({
   name: '抖音',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules:
-        '[id="com.ss.android.ugc.aweme.mobile:id/teen_mode_title"] +n [id="com.ss.android.ugc.aweme.mobile:id/bt_i_know"]',
-      snapshotUrls: 'https://i.gkd.li/i/13255513',
-    },
-    {
       key: 2,
       name: '功能类-发现通讯录好友弹窗',
       desc: '点击[暂时不要]',

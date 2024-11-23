@@ -44,18 +44,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="cn.xiaochuankeji.zuiyouLite:id/young_close_btn"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12745083',
-        'https://i.gkd.li/i/13446652', //activityIds: 'cn.xiaochuankeji.zuiyouLite.ui.main.MainTest',
-      ],
-    },
-    {
       key: 2,
       name: '分段广告-信息流广告',
       fastQuery: true,

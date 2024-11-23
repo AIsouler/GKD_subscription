@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '咪咕视频',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.cmcc.cmvideo:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/i/12498307',
-    },
-    {
       key: 2,
       name: '局部广告-右下角小广告',
       fastQuery: true,

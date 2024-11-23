@@ -5,19 +5,6 @@ export default defineGkdApp({
   name: '堆糖',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      desc: '关闭青少年模式提醒弹窗',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[id="com.duitang.main:id/teenGuideKnown"]',
-          snapshotUrls: 'https://i.gkd.li/i/13202230',
-        },
-      ],
-    },
-    {
       name: '局部广告-信息流广告',
       key: 2,
       rules: [

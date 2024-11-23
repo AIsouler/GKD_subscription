@@ -42,16 +42,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text*="青少年模式"] + [id="com.dongqiudi.news:id/tv_know"]',
-      snapshotUrls: 'https://i.gkd.li/i/12621980',
-    },
-    {
       key: 2,
       name: '更新提示',
       fastQuery: true,

@@ -28,15 +28,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 2,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      matchTime: 30000,
-      resetMatch: 'app',
-      rules: '[text="设置青少年模式"] - LinearLayout >2 [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13233668',
-    },
   ],
 });

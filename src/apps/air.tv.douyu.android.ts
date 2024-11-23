@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '斗鱼',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      desc: '关闭青少年模式提醒弹窗',
-      snapshotUrls: 'https://i.gkd.li/i/12472598',
-      rules: [
-        '[text="开启青少年模式"] + [text="我知道了"]', // 1686970236642
-      ],
-    },
-    {
       key: 2,
       name: '更新提示',
       matchTime: 10000,

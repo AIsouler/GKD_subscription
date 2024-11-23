@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: 'Keep',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text$="未成年人模式"] +2 @[clickable=true] > [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/12706097',
-    },
-    {
       key: 2,
       name: '全屏广告-首页弹窗广告',
       desc: '点击关闭',
