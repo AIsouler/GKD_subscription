@@ -19,12 +19,15 @@ export default defineGkdApp({
           ],
           matches: [
             '[vid="itemUser"][visibleToUser=true]',
-            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView <<n [vid="bannerLayout"]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[childCount=0][visibleToUser=true] <<n [vid="bannerLayout"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/14771070',
             'https://i.gkd.li/i/14771175',
+          ],
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/14771110', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/i/17879219', // 限定 visibleToUser, 防止误触
           ],
         },
         {
