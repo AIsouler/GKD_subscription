@@ -24,10 +24,12 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'tv.danmaku.bili.MainActivityV2',
-          matches:
-            '@[vid="more"] <3 ViewGroup - [vid="ad_tag_v2"][visibleToUser=true]',
+          matches: '@[vid="more"][visibleToUser=true] - [vid="desc_content"]',
           exampleUrls: 'https://e.gkd.li/c947945b-db14-4873-8245-269d5bd7c496',
-          snapshotUrls: 'https://i.gkd.li/i/17726316',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17726316',
+            'https://i.gkd.li/i/17891830',
+          ],
         },
         {
           key: 1,
@@ -51,6 +53,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/17726321',
             'https://i.gkd.li/i/17726285',
+            'https://i.gkd.li/i/17892061',
           ],
         },
       ],
