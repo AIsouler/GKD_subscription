@@ -73,9 +73,9 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[text*="隐藏"][id="com.magicalstory.AppStore:id/btn_selectNegative"]',
-          snapshotUrls: 'https://i.gkd.li/i/13437553',
+          activityIds: '.main.MainActivity',
+          matches: '[text="隐藏"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17892865',
         },
       ],
     },
