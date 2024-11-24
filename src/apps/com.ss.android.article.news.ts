@@ -118,7 +118,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '分段广告-信息流广告',
-      desc: '点击右上角x按钮,点击不感兴趣',
+      desc: '点击右上角x按钮,点击[不感兴趣]',
       fastQuery: true,
       activityIds: [
         'com.ss.android.article.news.activity.MainActivity',
@@ -137,20 +137,15 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
-          key: 2,
-          activityIds: 'com.ss.android.article.news.activity.MainActivity',
-          matches: '@[clickable=true] >2 [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/16624395',
-        },
-        {
-          preKeys: [0, 2],
           key: 1,
           name: '点击不感兴趣',
-          matches: '@[clickable=true] > [text="不感兴趣"]',
+          matches: '@[clickable=true] >(1,2) [text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12733152',
             'https://i.gkd.li/i/12755265',
             'https://i.gkd.li/i/16624474',
+            'https://i.gkd.li/i/16624395',
+            'https://i.gkd.li/i/17893117',
           ],
         },
       ],
