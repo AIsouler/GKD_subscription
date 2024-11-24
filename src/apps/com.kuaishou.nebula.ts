@@ -28,7 +28,8 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
-          matches: '@[vid="close_btn"] <n * > [text="朋友推荐"]',
+          matches:
+            '[vid="popup_view" || vid="content_wrapper"] > [vid="close_btn"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14310639',
             'https://i.gkd.li/i/15061832',
@@ -45,7 +46,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches:
-            '@ImageView[clickable=true] - ViewGroup[childCount=3] <n * >n [text*="红包"]',
+            '@ImageView[clickable=true] <(2,3) ViewGroup >(1,4) [text*="红包"]',
           exampleUrls:
             'https://m.gkd.li/101449500/f7bbd1db-f519-4ff9-96cb-4cb5b2f483a2',
           snapshotUrls: [

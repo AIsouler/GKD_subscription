@@ -58,7 +58,7 @@ export default defineGkdApp({
           activityIds:
             'com.mfcloudcalculate.networkdisk.activity.EmptyActivity',
           matches:
-            'ImageView < @ViewGroup[clickable=true] < ViewGroup <n ViewGroup + ViewGroup [text="广告"]',
+            'ImageView < @ViewGroup[clickable=true] < ViewGroup <7 ViewGroup + ViewGroup [text="广告"]',
           exampleUrls:
             'https://m.gkd.li/57941037/cf43eaec-45f8-4e1a-bd3b-6a88fd055d29',
           snapshotUrls: 'https://i.gkd.li/i/16154340',

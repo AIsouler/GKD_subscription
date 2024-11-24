@@ -214,7 +214,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] <n * > [text="领取限时福利"]',
+            '@ImageView[clickable=true][visibleToUser=true] +5 [text="领取限时福利"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14430326',
             'https://i.gkd.li/i/14969861',

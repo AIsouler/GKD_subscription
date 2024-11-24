@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '航旅纵横',
   groups: [
     {
-      key: 8,
-      name: '全屏广告-弹窗广告',
-      fastQuery: true,
-      activityIds: 'com.ume.lib_weex.view.WeexActivity',
-      rules:
-        'View[desc="立即预订"] <n FrameLayout <n FrameLayout <n FrameLayout <n ViewPager <n FrameLayout + FrameLayout > ImageView[id=null]',
-      snapshotUrls: 'https://i.gkd.li/i/12909632',
-    },
-    {
       key: 9,
       name: '更新提示',
       matchTime: 10000,

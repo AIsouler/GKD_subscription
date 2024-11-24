@@ -54,13 +54,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
-            'TextView[text!=null] <n ViewGroup > @ImageView[desc="关闭"][visibleToUser=true][clickable=true] <<n [id="android:id/list"]',
+            '@ImageView[desc="关闭"][visibleToUser=true][clickable=true] <n ViewGroup < LinearLayout <3 [id="android:id/list"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964889',
             'https://i.gkd.li/i/15024041',
             'https://i.gkd.li/i/15468481',
             'https://i.gkd.li/i/16200618',
-            'https://i.gkd.li/i/17088057', // 避免误触
           ],
         },
         {
@@ -73,7 +72,7 @@ export default defineGkdApp({
           key: 3,
           fastQuery: true,
           activityIds: 'com.kugou.android.app.MediaActivity',
-          matches: '@ImageView[clickable=true] <n * > [text="广告"]',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15520336',
         },
         {

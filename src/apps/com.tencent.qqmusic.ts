@@ -160,8 +160,10 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
-          matches: '@[desc="关闭按钮"] <n * > [desc^="看广告"]',
+          matches:
+            '@ViewGroup[desc="关闭按钮"] - [desc^="看广告"] <2 ViewGroup < ViewGroup < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13806773',
         },
       ],
