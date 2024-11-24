@@ -91,7 +91,7 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           activityIds: 'com.ct.client.activity.MainActivity',
-          matches: '[text^="开启消息通知"] <n * > [vid="ivClose"]',
+          matches: '[text^="开启消息通知"] - [vid="ivClose"]',
           snapshotUrls: 'https://i.gkd.li/i/15209597',
         },
       ],

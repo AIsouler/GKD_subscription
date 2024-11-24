@@ -717,6 +717,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '哔哩哔哩HD',
     deprecatedKeys: [1],
   },
+  {
+    id: 'com.umetrip.android.msky.app',
+    name: '航旅纵横',
+    deprecatedKeys: [8],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();

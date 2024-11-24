@@ -100,7 +100,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[text="立即更新" || text="马上体验"] <n * > [text*="稍后"]',
+          matches: [
+            '[text="立即更新" || text="马上体验"]',
+            '[text^="稍后"][text.length=4]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13327095',
             'https://i.gkd.li/i/15010554',

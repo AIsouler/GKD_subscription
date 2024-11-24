@@ -19,8 +19,10 @@ export default defineGkdApp({
         {
           key: 1,
           name: '腾讯SDK',
+          fastQuery: true,
           activityIds: 'com.tvmain.mvp.view.activity.TvMainActivity',
-          matches: '@ImageView < FrameLayout <n FrameLayout + TextView',
+          matches:
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13766516',
         },
       ],

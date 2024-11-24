@@ -328,7 +328,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.xunlei.downloadprovider.frame.MainTabActivity',
           matches:
-            '[((text$="领取" || text^="立即") && text.length<5) || text^="此云盘为您的私人云盘"] <n * > [vid="close"]',
+            '[text="立即领取" || text="点击领取" || text^="此云盘为您的私人云盘"] + [vid="close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12882939',
             'https://i.gkd.li/i/15048352',

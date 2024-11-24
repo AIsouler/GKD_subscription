@@ -189,7 +189,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: '@[vid="iv_close" || text="跳过"] <n * > [text^="开启通知"]',
+          matches: '@[vid="iv_close" || text="跳过"] -(1,2) [text^="开启通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13439134',
             'https://i.gkd.li/i/15047918',

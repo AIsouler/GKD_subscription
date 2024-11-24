@@ -90,7 +90,7 @@ export default defineGkdApp({
           preKeys: [1],
           key: 2,
           name: '点击[不感兴趣]/[关闭]',
-          matches: '@[text="不感兴趣" || text="关闭"] <n * > [text*="广告"]',
+          matches: '[text="不感兴趣" || text="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14959519',
             'https://i.gkd.li/i/14964859',
