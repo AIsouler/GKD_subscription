@@ -277,6 +277,7 @@ export default defineGkdApp({
       key: 12,
       name: '功能类-贴吧内签到并关闭弹窗',
       fastQuery: true,
+      actionMaximum: 1,
       rules: [
         {
           key: 0,
@@ -297,7 +298,7 @@ export default defineGkdApp({
           action: 'back',
           activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
           matches:
-            '@WebView[text="签到弹窗" || text="补签"][visibleToUser=true] < WebView < FrameLayout < LinearLayout < RelativeLayout < [id="android:id/content"]',
+            '@WebView[text="签到弹窗"][visibleToUser=true] < WebView < FrameLayout < LinearLayout < RelativeLayout < [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15087327',
             'https://i.gkd.li/i/15881225',
