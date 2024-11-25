@@ -89,5 +89,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '功能类-安装来源不可信',
+      desc: '点击[授权本次安装]',
+      rules: [
+        {
+          fastQuery: true,
+          position: {
+            left: 'width * 0.3511',
+            top: 'height * 0.5',
+          },
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          matches: '[text$="授权本次安装"]',
+          exampleUrls: 'https://e.gkd.li/e470baf2-56dc-4e3c-8da0-9747eeec602f',
+          snapshotUrls: 'https://i.gkd.li/i/17898736',
+        },
+      ],
+    },
   ],
 });
