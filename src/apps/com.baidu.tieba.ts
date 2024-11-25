@@ -276,16 +276,19 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-贴吧内签到并关闭弹窗',
+      fastQuery: true,
       rules: [
         {
           key: 0,
           name: '贴吧页签到',
           activityIds: 'com.baidu.tieba.forum.ForumActivity',
-          matches:
-            'WebView[text="frs"] > View > View > View > View > TextView[text="签到"][visibleToUser=true]',
+          anyMatches: [
+            '@TextView[text="签到"][visibleToUser=true] <3 View < View <2 View < View < WebView < WebView < FrameLayout < ViewGroup <2 FrameLayout < FrameLayout < [id="android:id/content"]',
+            '@TextView[text="签到"][visibleToUser=true] <5 View < View <2 View < WebView < WebView < FrameLayout < ViewGroup <2 FrameLayout < FrameLayout < [id="android:id/content"]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/i/13776801',
             'https://i.gkd.li/i/15087289',
+            'https://i.gkd.li/i/17902156',
           ],
         },
         {
@@ -293,9 +296,9 @@ export default defineGkdApp({
           name: '关闭签到成功弹窗',
           action: 'back',
           activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
-          matches: 'WebView[text="签到弹窗"]',
+          matches:
+            '@WebView[text="签到弹窗" || text="补签"][visibleToUser=true] < WebView < FrameLayout < LinearLayout < RelativeLayout < [id="android:id/content"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13776424',
             'https://i.gkd.li/i/15087327',
             'https://i.gkd.li/i/15881225',
           ],
