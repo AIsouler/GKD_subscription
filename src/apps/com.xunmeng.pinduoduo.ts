@@ -84,11 +84,12 @@ export default defineGkdApp({
             '.ui.activity.MainFrameActivity',
           ],
           matches:
-            '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <(2,3) [parent=null]',
+            'ImageView[childCount=0] < ViewGroup[childCount=1] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup <(1,2) ViewGroup < ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(1,2,3) [parent=null]',
           exampleUrls: 'https://e.gkd.li/f74b5f58-e518-4e33-bbb4-0bf28e2b79d8',
           snapshotUrls: [
             'https://i.gkd.li/i/17528782',
             'https://i.gkd.li/i/17655498',
+            'https://i.gkd.li/i/17893977',
           ],
         },
         {
