@@ -1,6 +1,9 @@
 name: build_release
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 18 * * *' # 每天凌晨2点40分自动执行
 
 jobs:
   build_release:
