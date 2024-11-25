@@ -205,10 +205,10 @@ export const blackListAppIDs: string[] = [
   'com.duokan.phone.remotecontroller', // 万能遥控
   'com.mfashiongallery.emag', // 小米画报
   'com.miui.thirdappassistant', // 三方应用异常分析
-
   'com.xiaomi.wpslauncher', // WPS Office PC
   'com.xiaomi.cajlauncher', // CAJViewer PC
   'com.mi.car.padapp', // 小米汽车扩展屏
+  'com.android.calendar', // 日历
 
   // 三星
   'com.samsung.android.app.cameraassistant',
