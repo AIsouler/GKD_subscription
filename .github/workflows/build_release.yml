@@ -3,7 +3,7 @@ name: build_release
 on:
   schedule:
     - cron: '0 19 */3 * *'
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   build_release:
