@@ -1,6 +1,9 @@
 name: build_release
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '0 19 */3 * *'
+  workflow_dispatch
 
 jobs:
   build_release:
@@ -11,6 +14,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Check for changes in src directory
+        id: changes
+        run: |
+          git diff --exit-code src || echo "Changes detected in 'src' directory."
+
+      - name: Terminate if no changes detected
+        if: steps.changes.outcome != 'success'
+        run: |
+          echo "No changes in 'src' directory, terminating the workflow."
+          exit 1
 
       - uses: actions/setup-node@v4
         with:
@@ -58,18 +72,6 @@ jobs:
           tag_name: v${{ steps.version.outputs.version }}
           release_name: Release ${{ steps.version.outputs.version }}
           body_path: ./dist/CHANGELOG.md
-
-      - name: Upload Release Asset
-        id: upload-release-asset
-        if: ${{ steps.create_release.outcome == 'success' }}
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/AIsouler_gkd.json5
-          asset_name: AIsouler_gkd_${{ steps.version.outputs.version }}.json5
-          asset_content_type: application/json
 
       - name: Publish package
         env:
