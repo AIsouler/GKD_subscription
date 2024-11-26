@@ -108,5 +108,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 16,
+      name: '功能类-备案信息弹窗',
+      desc: '点击[继续安装]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          matches: ['[text$="备案信息"]', '[text="继续安装"]'],
+          exampleUrls: 'https://e.gkd.li/d5bc4b1a-e363-4aab-9240-e6d914730935',
+          snapshotUrls: 'https://i.gkd.li/i/17908298',
+        },
+      ],
+    },
   ],
 });
