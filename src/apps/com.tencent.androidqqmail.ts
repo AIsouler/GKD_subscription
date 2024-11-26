@@ -41,13 +41,21 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12775857',
         },
         {
-          preKeys: [0, 1], // https://github.com/gkd-kit/subscription/issues/1776
+          key: 2,
+          fastQuery: true,
+          matches: '[vid="btn_advertise_click_area"]',
+          exampleUrls: 'https://e.gkd.li/acce3df3-9773-4b42-b468-4724a7851efe',
+          snapshotUrls: 'https://i.gkd.li/i/17908070',
+        },
+        {
+          preKeys: [0, 1, 2], // https://github.com/gkd-kit/subscription/issues/1776
           key: 9,
           name: '点击[不感兴趣]',
           matches: '[text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12775862',
             'https://i.gkd.li/i/15051479',
+            'https://i.gkd.li/i/17908078',
           ],
         },
       ],
