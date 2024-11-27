@@ -10,18 +10,40 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.version.outputs.version }}
+      changes_detected: ${{ steps.changes.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Check for changes in src directory
+      - name: Get previous tag or default to changed=true
+        id: previous_tag
+        run: |
+          prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
+
+          if [ "$prev_tag" == "none" ]; then
+            echo "No tags found. Setting changed=true by default."
+            echo "changed=true" >> $GITHUB_ENV
+          else
+            echo "Previous tag: $prev_tag"
+            echo "previous_tag=$prev_tag" >> $GITHUB_ENV
+          fi
+
+      - name: Check for changes between previous tag and latest commit in src directory
         id: changes
         run: |
-          git diff --exit-code src || echo "Changes detected in 'src' directory."
+          if [ "$prev_tag" != "none" ]; then
+            if git diff --exit-code ${{ env.previous_tag }} HEAD -- src; then
+              echo "No changes detected in 'src' directory between ${{ env.previous_tag }} and the latest commit."
+              echo "changed=false" >> $GITHUB_ENV
+            else
+              echo "Changes detected in 'src' directory between ${{ env.previous_tag }} and the latest commit."
+              echo "changed=true" >> $GITHUB_ENV
+            fi
+          fi
 
       - name: Terminate if no changes detected
-        if: steps.changes.outcome != 'success'
+        if: env.changed != 'true'
         run: |
           echo "No changes in 'src' directory, terminating the workflow."
           exit 1
