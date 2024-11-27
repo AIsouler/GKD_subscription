@@ -452,7 +452,7 @@ export default defineGkdApp({
           key: 0,
           activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
           matches:
-            '@ImageView[clickable=true][text=null] <n * > [text*="版本更新" || text*="新版本"][text.length<15]',
+            '@ImageView[clickable=true][text=null][visibleToUser=true] - [text*="版本更新" || text="点击下载" || text="立即安装" || text="点击更新"][text.length<15]',
           snapshotUrls: [
             'https://i.gkd.li/i/13255493',
             'https://i.gkd.li/i/13843140',
@@ -461,6 +461,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16323755',
             'https://i.gkd.li/i/17529150',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17920550',
         },
       ],
     },
