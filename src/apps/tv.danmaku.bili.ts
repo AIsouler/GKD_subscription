@@ -181,7 +181,7 @@ export default defineGkdApp({
           key: 0,
           name: '点击卡片广告右下角菜单按钮',
           actionMaximum: 1,
-          matches: '[vid="ad_tint_frame"] >2 [vid="more"]',
+          matches: '@[vid="more"] - [vid="desc_content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14083540',
             'https://i.gkd.li/i/14588315',
@@ -204,22 +204,14 @@ export default defineGkdApp({
           key: 50,
           name: '点击[不感兴趣]/[相似内容过多]',
           matches:
-            '@[clickable=true] > [text="相似内容过多" || text="不感兴趣"]',
+            '@[clickable=true] > [text="相似内容过多" || text="不感兴趣" || text="up主不感兴趣"]',
           snapshotUrls: [
+            'https://i.gkd.li/i/13625309',
             'https://i.gkd.li/i/13742257',
             'https://i.gkd.li/i/14155801',
             'https://i.gkd.li/i/14155272',
             'https://i.gkd.li/i/17428471',
           ],
-        },
-        {
-          preKeys: [0],
-          key: 52,
-          name: '点击[up主不感兴趣]',
-          matches: '@[clickable=true] > [text="up主不感兴趣"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/9c2f42d7-c262-4e06-b3c6-40f0908e7a94',
-          snapshotUrls: 'https://i.gkd.li/i/13625309',
         },
       ],
     },
