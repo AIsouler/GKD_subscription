@@ -48,6 +48,16 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/ce574950-4233-477e-b0cc-a4b0d18df249',
           snapshotUrls: 'https://i.gkd.li/i/17828834',
         },
+        {
+          fastQuery: true,
+          activityIds: '.ui.game.detail.GameDetailActivity',
+          matches: [
+            '[vid="clRoot"][visibleToUser=true]',
+            '[vid="tvClose"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/cf2fa921-b694-4fc3-9af9-f8ef45bac455',
+          snapshotUrls: 'https://i.gkd.li/i/17949205',
+        },
       ],
     },
   ],
