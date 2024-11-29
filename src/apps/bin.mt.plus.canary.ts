@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'LinearLayoutCompat @[text="取消"] + [text="更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/13561226',
+      rules: [
+        {
+          activityIds: 'bin.mt.plus.Main',
+          matches: '@[text="取消"] + [text="更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/13561226',
+        },
+      ],
     },
   ],
 });

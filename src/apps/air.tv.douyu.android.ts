@@ -5,14 +5,6 @@ export default defineGkdApp({
   name: '斗鱼',
   groups: [
     {
-      key: 2,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text="立即升级"] - [text="忽略"][clickable=true]',
-    },
-    {
       key: 3,
       name: '局部广告-直播间广告',
       activityIds: [

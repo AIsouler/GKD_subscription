@@ -40,7 +40,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'air.tv.douyu.android',
     name: '斗鱼',
-    deprecatedKeys: [0, 1],
+    deprecatedKeys: [0, 1, 2],
   },
   {
     id: 'android.zhibo8',
@@ -60,7 +60,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'client.android.yixiaotong',
     name: '乐校通',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 3],
   },
   {
     id: 'cmb.pb',
