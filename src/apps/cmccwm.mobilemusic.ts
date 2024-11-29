@@ -14,8 +14,8 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
-          matches:
-            '[id="cmccwm.mobilemusic.libraries_feature:id/tv_title"][text="发现新版本"]',
+          activityIds: '.ui.base.MainActivity',
+          matches: '[text="发现新版本"]',
           snapshotUrls: 'https://i.gkd.li/i/13448898',
         },
       ],
