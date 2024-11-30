@@ -67,11 +67,7 @@ export default defineGkdApp({
             '.ui.game.detail.GameDetailActivity',
             '.ui.content.detail.ContentDetailActivity',
           ],
-          matches: [
-            '[vid="clADSDKContainer"][visibleToUser=true]',
-            '[vid="clADMid"][visibleToUser=true]',
-            '[vid="ivSDKClose"][visibleToUser=true]',
-          ],
+          matches: '[vid="ivSDKClose"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d68c487b-ce63-4d9f-afc3-cc94b3490a33',
           snapshotUrls: [
             'https://i.gkd.li/i/17949888',
