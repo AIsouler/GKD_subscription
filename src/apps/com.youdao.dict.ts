@@ -8,17 +8,15 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-单词页面卡片广告',
       fastQuery: true,
-      activityIds: [
-        'com.youdao.dict.activity.MainActivity',
-        '.activity.DictQueryActivity',
-      ],
+      activityIds: ['.activity.MainActivity', '.activity.DictQueryActivity'],
       rules: [
         {
           key: 0,
-          matches: '[text="广告"] - [vid="close"]',
+          matches: ['[text="广告"]', '[vid="close"][visibleToUser=true]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13800055',
             'https://i.gkd.li/i/16278151',
+            'https://i.gkd.li/i/17963902',
           ],
         },
         {
@@ -28,6 +26,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13800056',
             'https://i.gkd.li/i/16278150',
+            'https://i.gkd.li/i/17963904',
           ],
         },
       ],
