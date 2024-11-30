@@ -314,15 +314,21 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '@[vid="more"][clickable=true][visibleToUser=true] -3 [vid="tag_layout"] > [vid="ad_tag_with_dot"]',
+            '@[vid="more"][clickable=true][visibleToUser=true] -(3,4) [vid="tag_layout"]',
           exampleUrls: 'https://e.gkd.li/e5dd30e7-e8dd-42bc-8953-23368e65cca4',
-          snapshotUrls: 'https://i.gkd.li/i/17269053',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17269053',
+            'https://i.gkd.li/i/17964354',
+          ],
         },
         {
           preKeys: [1],
           matches: '@[clickable=true] > [text="不感兴趣"]',
           exampleUrls: 'https://e.gkd.li/5e6e4b69-ba97-473d-9f62-631c296da589',
-          snapshotUrls: 'https://i.gkd.li/i/17269055',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17269055',
+            'https://i.gkd.li/i/17964356',
+          ],
         },
       ],
     },
