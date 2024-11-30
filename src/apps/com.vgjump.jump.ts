@@ -56,5 +56,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.ui.game.detail.GameDetailActivity',
+            '.ui.content.detail.ContentDetailActivity',
+          ],
+          matches: '[vid="ivSDKClose"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d68c487b-ce63-4d9f-afc3-cc94b3490a33',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17949888',
+            'https://i.gkd.li/i/17949885',
+          ],
+        },
+      ],
+    },
   ],
 });
