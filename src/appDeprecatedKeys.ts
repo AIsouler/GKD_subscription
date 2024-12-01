@@ -727,6 +727,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '中国军号',
     deprecatedKeys: [1],
   },
+  {
+    id: 'com.alicloud.databox',
+    name: '阿里云盘',
+    deprecatedKeys: [2],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();

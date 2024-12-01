@@ -33,8 +33,10 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.MainActivity',
       rules: [
         {
           key: 0,
@@ -62,19 +64,31 @@ export default defineGkdApp({
       key: 3,
       name: '权限提示-定位权限',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="允许获取位置信息"] +n * > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/14208572',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[text="允许获取位置信息"] +n * > [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/14208572',
+        },
+      ],
     },
     {
       key: 4,
       name: '权限提示-通知权限',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="iv_notification_reminder_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14208621',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[vid="iv_notification_reminder_dialog_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14208621',
+        },
+      ],
     },
   ],
 });
