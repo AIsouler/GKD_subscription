@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.MainActivity',
           matches: [
             '[vid="alertTitle"][text="开启智能更新" || text="Install automatically?"]',
             '[id="android:id/button2"][text="暂不开启" || text="No"]',

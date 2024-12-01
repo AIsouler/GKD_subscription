@@ -14,6 +14,8 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds:
+            'com.pwrd.dls.marble.other.notification.NotificationDialogActivity',
           matches: '[vid="v_open"] + [vid="v_not"]',
           snapshotUrls: 'https://i.gkd.li/i/13997956',
         },
@@ -21,13 +23,16 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      fastQuery: true,
       name: '局部广告-左下角参与答题卡片',
-      desc: '点击X',
+      desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.pwrd.dls.marble.moudle.homepage.HomePageActivity',
-          matches: '[id="com.allhistory.dls.marble:id/iv_close"]',
+          matches: ['[vid="iv_board"]', '[vid="iv_close"]'],
           snapshotUrls: 'https://i.gkd.li/i/13997954',
         },
       ],

@@ -8,11 +8,15 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-热门推荐关闭',
       desc: '关闭应用推广',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.apkpure.aegon.main.activity.MainTabActivity',
           matches:
-            '[text="精选必备好应用"] + [name="android.widget.RelativeLayout"] > [name="android.widget.ImageView"]',
+            '@RelativeLayout[clickable=true][visibleToUser=true] - [text="精选必备好应用"] <2 RelativeLayout < LinearLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13466647',
         },
       ],

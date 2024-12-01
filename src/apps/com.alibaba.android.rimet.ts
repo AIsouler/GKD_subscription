@@ -38,10 +38,10 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '功能类-自动点击原图',
       key: 3,
-      actionMaximum: 1,
+      name: '功能类-自动点击原图',
       fastQuery: true,
+      actionMaximum: 1,
       activityIds:
         'com.alibaba.android.dingtalk.photoui.activitys.AlbumActivity',
       rules: [

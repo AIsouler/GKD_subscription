@@ -8,11 +8,15 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-VIP弹窗',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.android.icredit.ui.MainMenuActivity',
           matches:
-            '[text$="限时返场" || text="首单有礼"] >2 View[childCount=2] > Image[visibleToUser=true]',
+            '@Image[childCount=0][visibleToUser=true] <2 View < View < WebView[text$="限时返场" || text="首单有礼"] < WebView < LinearLayout < LinearLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/eb232325-12e4-495f-a9f3-5f853d5e66f9',
           snapshotUrls: [

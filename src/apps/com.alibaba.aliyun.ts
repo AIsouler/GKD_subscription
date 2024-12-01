@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="打开手机消息通知"] + * >2 [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13446162',
+      rules: [
+        {
+          activityIds: '.biz.home.mine.activity.KFeeCenterActivity',
+          matches: '[text^="打开手机消息通知"] + * >2 [text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13446162',
+        },
+      ],
     },
   ],
 });

@@ -23,10 +23,11 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
+      activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules: [
         {
           key: 1,
@@ -47,10 +48,15 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-截屏分享',
       desc: '关闭截屏时app弹出的分享弹窗',
-      activityIds: 'com.autonavi.map.activity.NewMapActivity',
-      rules:
-        '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/13473388',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView <<n [id="com.autonavi.minimap:id/fragment_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13473388',
+        },
+      ],
     },
     {
       key: 10,
