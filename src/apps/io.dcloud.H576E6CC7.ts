@@ -45,8 +45,9 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          matchTime: 10000,
           activityIds: 'com.yupao.entry.MainActivity',
-          matches: '[vid="close"]',
+          matches: '@[vid="close"][visibleToUser=true] - [vid="flItemContent"]',
           exampleUrls:
             'https://m.gkd.li/57941037/42273686-b44a-4964-80a5-84b55e6ad75c',
           snapshotUrls: 'https://i.gkd.li/i/14731764',

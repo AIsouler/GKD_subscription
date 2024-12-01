@@ -44,13 +44,14 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-看视频得奖励广告',
+      fastQuery: true,
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: [
         {
           key: 0,
           matches:
-            '[id="android:id/content"] >2 FrameLayout[childCount=3] >2 FrameLayout[childCount=3] >3 RelativeLayout[clickable=true]',
+            '@RelativeLayout[childCount=0][clickable=true] < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/fd1ff96e-6d17-4738-a2f1-3648169ce53c',
           snapshotUrls: 'https://i.gkd.li/i/16136235',
@@ -58,7 +59,6 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 1,
-          fastQuery: true,
           matches: '[text="坚持退出"]',
           exampleUrls:
             'https://m.gkd.li/57941037/f09986f3-6dc6-4067-9136-ac6aa0afad3f',

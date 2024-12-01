@@ -6,8 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      fastQuery: true,
       name: '全屏广告-酷我会员日弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'cn.kuwo.player.activities.MainActivity',

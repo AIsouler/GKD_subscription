@@ -189,7 +189,7 @@ export default defineGkdApp({
       key: 9,
       fastQuery: true,
       name: '通知提示-获取订单信息通知',
-      desc: '点击X',
+      desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -10,9 +10,10 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'io.microshow.fm.ui.activity.MainActivity',
           matches:
-            '[id="android:id/content"] > RelativeLayout > FrameLayout[childCount=2] > Button[clickable=true][visibleToUser=true]',
+            '@Button[childCount=0][clickable=true][visibleToUser=true] <2 FrameLayout < RelativeLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14953007',
         },
       ],

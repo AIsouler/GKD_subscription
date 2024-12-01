@@ -722,6 +722,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '航旅纵横',
     deprecatedKeys: [8],
   },
+  {
+    id: 'cn.mil.junhao',
+    name: '中国军号',
+    deprecatedKeys: [1],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();

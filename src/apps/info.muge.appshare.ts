@@ -73,8 +73,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      fastQuery: true,
       name: '功能类-自动签到',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

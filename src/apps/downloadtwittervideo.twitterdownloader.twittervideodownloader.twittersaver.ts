@@ -7,15 +7,19 @@ export default defineGkdApp({
     {
       key: 3,
       name: '评价提示-评分弹窗',
-      desc: '自动点击 LATER ',
+      desc: '点击 LATER ',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="downloadtwittervideo.twitterdownloader.twittervideodownloader.twittersaver:id/tv_cancel"]',
+          activityIds:
+            'downloadtwittervideo.twitterdownloader.twittervideodownloader.twittersaver',
+          matches: [
+            '[text="Love it"][visibleToUser=true]',
+            '[text="LATER"][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/13748858',
         },
       ],

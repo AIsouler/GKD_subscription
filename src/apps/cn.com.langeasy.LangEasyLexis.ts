@@ -10,6 +10,7 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
@@ -24,6 +25,8 @@ export default defineGkdApp({
       desc: '点击关闭',
       fastQuery: true,
       matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',

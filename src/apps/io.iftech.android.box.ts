@@ -21,8 +21,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="新版本"] +(2) [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12706195',
+      rules: [
+        {
+          activityIds: '.main.HomeActivity',
+          matches: '[text*="新版本"] +2 [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706195',
+        },
+      ],
     },
     {
       key: 2,
