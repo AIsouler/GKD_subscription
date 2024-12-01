@@ -15,7 +15,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13043221',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           matches: '@LinearLayout > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13049609',

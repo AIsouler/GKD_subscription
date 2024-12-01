@@ -8,16 +8,13 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-权限不足弹窗',
       desc: '点击取消',
-      activityIds: ['me.piebridge.brevent.ui.BreventActivity'],
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: [
-            '[id="android:id/message"][text^="黑阈服务权限不足"]',
-            '[text="取消"][id^="android:id/button"]',
-          ],
+          activityIds: 'me.piebridge.brevent.ui.BreventActivity',
+          matches: ['[text^="黑阈服务权限不足"]', '[text="取消"]'],
           snapshotUrls: 'https://i.gkd.li/i/13218439',
         },
       ],

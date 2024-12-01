@@ -22,11 +22,19 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="用户已升级"] < * + [desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/13218347',
+      rules: [
+        {
+          activityIds:
+            'ctrip.android.publicproduct.home.view.CtripHomeActivity',
+          matches:
+            '@ImageView[desc="关闭"][clickable=true][visibleToUser=true] <3 FrameLayout < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/13218347',
+        },
+      ],
     },
     {
       key: 2,

@@ -10,8 +10,8 @@ export default defineGkdApp({
       desc: '点击右侧x',
       rules: [
         {
-          activityIds: 'cn.wps.yun.ui.IndexActivity',
           fastQuery: true,
+          activityIds: 'cn.wps.yun.ui.IndexActivity',
           matches:
             '[id="cn.wps.yun:id/rootGroup"][childCount=5] >  [text^="实用技巧"] +3 [id="cn.wps.yun:id/moreIconRight"]',
           exampleUrls:
@@ -26,20 +26,32 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text="发现新版本"] +3 [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/14333103',
+      rules: [
+        {
+          activityIds: '.ui.IndexActivity',
+          matches: '[text="发现新版本"] +3 [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/14333103',
+        },
+      ],
     },
     {
       key: 3,
       name: '权限提示-通知权限',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text="开启推送通知"] +2 * > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/14333362',
+      rules: [
+        {
+          activityIds: '.ui.IndexActivity',
+          matches: '[text="开启推送通知"] +2 * > [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/14333362',
+        },
+      ],
     },
   ],
 });

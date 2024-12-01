@@ -7,9 +7,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      activityIds: 'org.daimhim.zzzfun.ui.home.video.VideoDetailsActivity',
-      rules: 'ImageView -2 ImageView + FrameLayout > ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/13402608',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'org.daimhim.zzzfun.ui.home.video.VideoDetailsActivity',
+          matches:
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/13402608',
+        },
+      ],
     },
   ],
 });

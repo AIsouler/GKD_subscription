@@ -8,10 +8,10 @@ export default defineGkdApp({
       key: 1,
       name: '其他-动画疯年龄限制',
       desc: '点击同意',
-      activityIds: 'tw.com.gamer.android.animad.VideoActivity',
-      fastQuery: true,
       rules: [
         {
+          fastQuery: true,
+          activityIds: 'tw.com.gamer.android.animad.VideoActivity',
           matches:
             '[id="tw.com.gamer.android.animad:id/agree_button"][text="同意"]',
           snapshotUrls: 'https://i.gkd.li/i/13808757',
