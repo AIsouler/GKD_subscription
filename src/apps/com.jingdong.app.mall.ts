@@ -157,6 +157,18 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16818580', // 增加excludeMatches: 'TextView[text="退换/售后"]', 避免在刚刚打开该快照页面时误触（此时activityId并未改变）
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          action: 'back',
+          activityIds: '.MainFrameActivity',
+          matches: '[text^="惊喜福利来袭"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/580d3cb5-503e-47a9-ba88-056e91c2f084',
+          snapshotUrls: 'https://i.gkd.li/i/17974166',
+        },
       ],
     },
     {
