@@ -10,8 +10,10 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.BottomTabsActivity',
           matches: '[id="com.cmi.jegotrip:id/ig_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13631904',
         },
@@ -24,10 +26,16 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.cmi.jegotrip.ui.BottomTabsActivity',
-      rules:
-        '[text="申请定位权限说明"] < LinearLayout +2 LinearLayout [id="com.cmi.jegotrip:id/btn_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/13232766',
+      rules: [
+        {
+          activityIds: 'com.cmi.jegotrip.ui.BottomTabsActivity',
+          matches: [
+            '[text="申请定位权限说明"]',
+            '[id="com.cmi.jegotrip:id/btn_cancel"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/13232766',
+        },
+      ],
     },
     {
       key: 4,

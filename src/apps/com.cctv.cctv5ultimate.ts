@@ -23,9 +23,12 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: 'com.cctv.cctv5ultimate.activity.MainActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.cctv.cctv5ultimate.activity.MainActivity',
           matches: [
             '[text="广告"]',
             '[id="com.cctv.cctv5ultimate:id/iv_close"]',

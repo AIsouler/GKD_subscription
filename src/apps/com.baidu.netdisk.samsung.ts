@@ -100,6 +100,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.baidu.netdisk.ui.MainActivity',
           matches: '[vid="view_score_style"] > [text="以后再说"]',
           exampleUrls:
             'https://m.gkd.li/57941037/167a8392-23c8-4e84-a55f-4f91e7e560d8',

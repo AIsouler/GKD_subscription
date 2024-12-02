@@ -7,13 +7,18 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '自动点击关闭',
+      desc: '点击关闭',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
-      snapshotUrls: 'https://i.gkd.li/i/13197374',
+      rules: [
+        {
+          activityIds: '.main.ui.MainTabActivity',
+          matches: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/13197374',
+        },
+      ],
     },
   ],
 });

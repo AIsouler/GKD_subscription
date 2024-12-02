@@ -11,9 +11,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: 'com.crgt.ilife.ui.main.MainPageView',
           matches:
-            'FrameLayout[childCount=2] > FrameLayout[childCount=2] > FrameLayout[childCount=3] > @FrameLayout[childCount=1] > ImageView[childCount=0][text=null]',
+            'FrameLayout[childCount=2] > FrameLayout[childCount=2] > FrameLayout[childCount=3] > @FrameLayout[childCount=1][visibleToUser=true] > ImageView[childCount=0][text=null] <<n [vid="home_banner"]',
           exampleUrls: 'https://e.gkd.li/3026504f-acb7-4f58-b171-ab664b2caf27',
           snapshotUrls: 'https://i.gkd.li/i/16450332',
         },
@@ -32,9 +33,12 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.crgt.ilife.ui.main.MainPageView',
           matches: '[vid="iv_close"]',
           exampleUrls: 'https://e.gkd.li/43ccfd78-67d7-4dba-a25f-a2f5d62f9c40',

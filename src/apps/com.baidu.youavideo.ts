@@ -13,6 +13,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          activityIds: '.home.view.HomeActivity',
           matches:
             '[id="com.baidu.youavideo:id/tv_upgrade"] < LinearLayout +2 [id="com.baidu.youavideo:id/img_close"]',
           snapshotUrls: ['https://i.gkd.li/i/12597916'],
@@ -23,12 +24,12 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-悬浮窗广告',
       desc: '关闭广告悬浮窗',
-      activityIds: ['com.baidu.youavideo.home.view.HomeActivity'],
-      fastQuery: true,
       rules: [
         {
+          fastQuery: true,
+          activityIds: '.home.view.HomeActivity',
           matches: '[id="com.baidu.youavideo:id/img_operation_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/12970088'],
+          snapshotUrls: 'https://i.gkd.li/i/12970088',
         },
       ],
     },
@@ -42,8 +43,9 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          activityIds: '.home.view.HomeActivity',
           matches: '[id="com.baidu.youavideo:id/tv_next_time"]',
-          snapshotUrls: ['https://i.gkd.li/i/12970094'],
+          snapshotUrls: 'https://i.gkd.li/i/12970094',
         },
       ],
     },
@@ -101,31 +103,44 @@ export default defineGkdApp({
     {
       key: 7,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13413819',
+      rules: [
+        {
+          activityIds: '.app.ui.HomeActivity',
+          matches:
+            '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13413819',
+        },
+      ],
     },
     {
       key: 8,
       name: '局部广告-照片页底部浮窗广告',
-      activityIds: 'com.baidu.youavideo.home.view.HomeActivity',
-      fastQuery: true,
-      rules:
-        '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13711475',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.youavideo.home.view.HomeActivity',
+          matches:
+            '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13711475',
+        },
+      ],
     },
     {
       key: 9,
       name: '局部广告-卡片广告',
-      fastQuery: true,
-      rules: '[vid="riv_banner"] < * > [vid="iv_close"][visibleToUser=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13874124',
-        'https://i.gkd.li/i/15220559', // 避免误触
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[vid="riv_banner"] + [vid="iv_close"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13874124',
+            'https://i.gkd.li/i/15220559', // 避免误触
+          ],
+        },
       ],
     },
   ],

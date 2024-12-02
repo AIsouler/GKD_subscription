@@ -27,8 +27,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id = "com.bankcomm.Bankcomm:id/tvNotNow" && text = "暂不更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/12842484',
+      rules: [
+        {
+          activityIds: 'com.bankcomm.module.biz.webcontainer.BCMHtml5Activity',
+          matches:
+            '[id = "com.bankcomm.Bankcomm:id/tvNotNow" && text = "暂不更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/12842484',
+        },
+      ],
     },
     {
       key: 2,

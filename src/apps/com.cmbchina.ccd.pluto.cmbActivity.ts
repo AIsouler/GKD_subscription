@@ -11,12 +11,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_sure_tips"] - [id="com.cmbchina.ccd.pluto.cmbActivity:id/bt_cancel_tips"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12647025',
-        'https://i.gkd.li/i/12727203',
-        'https://i.gkd.li/i/13345771', //
+      rules: [
+        {
+          activityIds: [
+            '.CMBRootActivityV2',
+            '.secplugin.activity.login.fingerprint.cmbR6VH0R',
+          ],
+          matches: '[text="暂不更新"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12647025',
+            'https://i.gkd.li/i/12727203',
+            'https://i.gkd.li/i/13345771',
+          ],
+        },
       ],
     },
     {
