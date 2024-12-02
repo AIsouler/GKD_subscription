@@ -45,13 +45,15 @@ export default defineGkdApp({
       key: 2,
       name: '通知提示-[温馨提示]弹窗',
       desc: '点击[我知道了]',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.bx.game.dgg.MainActivity',
-          matches: '[desc="我知道了"]',
+          matches:
+            '@Button[desc="我知道了"][visibleToUser=true] < View <2 View < View < View < View < View < FrameLayout < [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/8a825661-5595-4577-835c-2a0b2d41bc14',
           snapshotUrls: 'https://i.gkd.li/i/15362930',

@@ -26,22 +26,38 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-软件更新/安装后的用户引导',
       fastQuery: true,
-      activityIds: 'com.ct.client.activity.UserGuideActivity',
-      rules: '[id="com.ct.client:id/tvSkip"]',
-      snapshotUrls: 'https://i.gkd.li/i/12508971',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.ct.client.activity.UserGuideActivity',
+          matches: '[id="com.ct.client:id/tvSkip"]',
+          snapshotUrls: 'https://i.gkd.li/i/12508971',
+        },
+      ],
     },
     {
       key: 2,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: 'LinearLayout > [text="取消升级"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12819594',
-        'https://i.gkd.li/i/13316168',
-        'https://i.gkd.li/i/13695096',
+      rules: [
+        {
+          activityIds: [
+            '.activity.MainActivity',
+            '.activity.SplashActivity',
+            '.common.ConfirmDialogActivity',
+          ],
+          matches: 'LinearLayout > [text="取消升级"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12819594',
+            'https://i.gkd.li/i/13316168',
+            'https://i.gkd.li/i/13695096',
+          ],
+        },
       ],
     },
     {
@@ -51,12 +67,12 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.ct.client.common.ConfirmDialogActivity',
-        'com.ct.client.activity.MainActivity',
-      ],
       rules: [
         {
+          activityIds: [
+            'com.ct.client.common.ConfirmDialogActivity',
+            'com.ct.client.activity.MainActivity',
+          ],
           matches: '[vid="rlActivity"] > [vid="close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12819676',

@@ -11,8 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.chinatelecom.bestpayclient:id/bupdate_tv_bottom_tip"]',
-      snapshotUrls: 'https://i.gkd.li/i/13391544',
+      rules: [
+        {
+          activityIds: '.ui.MainActivity',
+          matches:
+            '[id="com.chinatelecom.bestpayclient:id/bupdate_tv_bottom_tip"]',
+          snapshotUrls: 'https://i.gkd.li/i/13391544',
+        },
+      ],
     },
     {
       key: 3,
@@ -21,8 +27,8 @@ export default defineGkdApp({
         {
           key: 0,
           name: '权益页',
-          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           fastQuery: true,
+          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           matches:
             'Dialog >3 View[childCount=2] > @View[clickable=true] > Image[childCount=0] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13402692',
@@ -30,8 +36,11 @@ export default defineGkdApp({
         {
           key: 1,
           name: '首页1',
-          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
           matches: '[vid="iv_dialog_close_one"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13455790',
@@ -41,8 +50,11 @@ export default defineGkdApp({
         {
           key: 2,
           name: '首页2',
-          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
           matches:
             '[text="甜橙信用卡"] >2  View[childCount=2] > @Image[clickable=true][text!=null] <<n [id="com.chinatelecom.bestpayclient:id/h5_pc_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13626324',
@@ -98,14 +110,19 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-年底积分活动弹窗',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
-      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
-      rules: 'View > View[index=1][clickable=true][childCount=1] > Image',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13543032',
-        'https://i.gkd.li/i/13625037', //修改规则，避免在此误触
+      rules: [
+        {
+          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+          matches:
+            'View[childCount=2] > @View[index=1][clickable=true][childCount=1] > Image[childCount=0] <<n [id="com.chinatelecom.bestpayclient:id/h5_pc_container"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13543032',
+            'https://i.gkd.li/i/13625037', //修改规则，避免在此误触
+          ],
+        },
       ],
     },
     {

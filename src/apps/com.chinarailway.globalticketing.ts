@@ -14,8 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.MobileTicket.ui.activity.MainActivity',
-          matches:
-            '[text^="开启定位权限"] +2 [vid="fl_close"] > [vid="img_close"]',
+          matches: ['[text^="开启定位权限"]', '[vid="img_close"]'],
           exampleUrls: 'https://e.gkd.li/95c8443e-babc-4d96-a3cd-00692c2acf30',
           snapshotUrls: 'https://i.gkd.li/i/16987292',
         },

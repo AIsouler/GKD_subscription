@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,14 +16,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12614757',
         },
         {
           key: 1,
           matches:
-            '[id="android:id/content"] >3 FrameLayout[childCount=5] > FrameLayout > RelativeLayout > View[clickable=true]',
+            '@View[childCount=0][clickable=true][visibleToUser=true] < RelativeLayout < FrameLayout + RelativeLayout >2 [text^="摇一摇"]',
           snapshotUrls: 'https://i.gkd.li/i/15566228',
         },
       ],

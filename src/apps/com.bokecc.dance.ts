@@ -10,11 +10,12 @@ export default defineGkdApp({
       desc: '点击"以后再说"',
       fastQuery: true,
       matchTime: 10000,
-      resetMatch: 'app',
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.bokecc.dance:id/tv_cancel"]',
+          activityIds: '.activity.MainActivity',
+          matches: '[text="以后再说"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9156698c-76bb-4921-a39d-96a20c45260b',
           snapshotUrls: 'https://i.gkd.li/i/14071977',

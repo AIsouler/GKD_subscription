@@ -7,13 +7,19 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           name: '快手广告',
           activityIds: 'com.deep.search.MainActivity',
-          matches:
-            '@ImageView[clickable=true] <3 ViewGroup -2 ViewGroup >n [text="广告"]',
+          matches: [
+            '[text="广告"]',
+            '@ImageView[clickable=true] - [text="|"] - [text$="s"]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/13766176',
         },
       ],

@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.SmartMainProxyActivity',
           matches: '[vid="ivCancelDlg"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17872852',
         },

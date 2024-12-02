@@ -10,10 +10,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.cnki.view:id/update_undo"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12755689', // activityId: 'com.cnki.view.core.navigator.main.HomeActivity'
-        'https://i.gkd.li/i/12755700', // activityId: 'com.cnki.view.core.tramp.main.SplashActivity'
+      rules: [
+        {
+          activityIds: [
+            'com.cnki.view.core.navigator.main.HomeActivity',
+            'com.cnki.view.core.tramp.main.SplashActivity',
+          ],
+          matches: '[id="com.cnki.view:id/update_undo"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12755689',
+            'https://i.gkd.li/i/12755700',
+          ],
+        },
       ],
     },
   ],

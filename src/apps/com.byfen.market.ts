@@ -35,9 +35,12 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.byfen.market.ui.activity.MainActivity',
           matches: '[vid="idIvClose"][clickable=true]',
           exampleUrls:
@@ -50,11 +53,12 @@ export default defineGkdApp({
       key: 2,
       name: '更新提示',
       desc: '点击[忽略更新]',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: '.ui.activity.MainActivity',
           matches: '[text="忽略更新"][clickable=true][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/e92b10b8-b0f8-4dc3-95bf-172829996600',

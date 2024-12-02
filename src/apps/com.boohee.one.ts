@@ -10,9 +10,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.boohee.one:id/tv_ignore"] + [id="com.boohee.one:id/tv_update"]',
-      snapshotUrls: 'https://i.gkd.li/i/12716918',
+      rules: [
+        {
+          activityIds: 'com.boohee.library.update.UpdateDialogActivity',
+          matches:
+            '@[id="com.boohee.one:id/tv_ignore"] + [id="com.boohee.one:id/tv_update"]',
+          snapshotUrls: 'https://i.gkd.li/i/12716918',
+        },
+      ],
     },
     {
       key: 2,
@@ -25,12 +30,17 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '自动点击x按钮',
+      desc: '点击关闭',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.boohee.one:id/img_close_push"]',
-      snapshotUrls: 'https://i.gkd.li/i/12716950',
+      rules: [
+        {
+          activityIds: '.app.account.ui.activity.MsgCategoryActivityV2',
+          matches: '[id="com.boohee.one:id/img_close_push"]',
+          snapshotUrls: 'https://i.gkd.li/i/12716950',
+        },
+      ],
     },
   ],
 });

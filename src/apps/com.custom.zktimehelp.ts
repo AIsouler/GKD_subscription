@@ -6,7 +6,10 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告',
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

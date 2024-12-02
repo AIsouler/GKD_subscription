@@ -41,6 +41,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.MainActivity',
           matches: '[desc="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/13063206',
         },
@@ -90,9 +91,9 @@ export default defineGkdApp({
           ],
           matches: '[id="ad_area"] [id="close_btn"][clickable=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13759345',
             'https://i.gkd.li/i/12775925',
             'https://i.gkd.li/i/12775924',
+            'https://i.gkd.li/i/13759345',
           ],
         },
         {
