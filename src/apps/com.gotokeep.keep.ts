@@ -8,17 +8,17 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-首页弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds:
             'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
-          matches:
-            '[id="com.gotokeep.keep:id/layoutLottie"] +(1,2) [id="com.gotokeep.keep:id/imgCloseHomePageDialog"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12706102',
-            'https://i.gkd.li/i/13761641',
-          ],
+          matches: '[id="com.gotokeep.keep:id/imgCloseHomePageDialog"]',
+          snapshotUrls: 'https://i.gkd.li/i/13761641',
         },
       ],
     },

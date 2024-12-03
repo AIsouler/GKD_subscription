@@ -59,7 +59,6 @@ export default defineGkdApp({
       desc: '书影音-作品-状态-不分享/同步短评(5s后可手动)',
       fastQuery: true,
       matchTime: 5000,
-      resetMatch: 'activity',
       activityIds: 'com.douban.frodo.subject.activity.RatingActivity',
       rules: [
         {
@@ -179,6 +178,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.activity.SplashActivity',
           matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
           snapshotUrls: 'https://i.gkd.li/i/12548314',
         },
@@ -263,6 +263,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: [
+            '.activity.BetaApkDialogActivity',
+            '.activity.SplashActivity',
+          ],
           matches: ['[text="新版试用邀请"]', '@[text="取消"] + [text="下载"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13228832',

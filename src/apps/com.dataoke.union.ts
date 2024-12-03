@@ -14,6 +14,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.dtk.plat_home_lib.index.activity.IndexActivity',
           matches: ['[text^="你还没有打开通知哦"]', '[text="取消"]'],
           snapshotUrls: 'https://i.gkd.li/i/13446826',
         },

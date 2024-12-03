@@ -385,7 +385,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.danlan.xiaolan',
     name: 'Blued极速版',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'com.douban.frodo',
@@ -731,6 +731,21 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.alicloud.databox',
     name: '阿里云盘',
     deprecatedKeys: [2],
+  },
+  {
+    id: 'com.duokan.phone.remotecontroller',
+    name: '万能遥控',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.fenbi.android.solar',
+    name: '小猿搜题',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.guwendao.gwd',
+    name: '古文岛',
+    deprecatedKeys: [1],
   },
 ];
 

@@ -20,16 +20,22 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-浮窗广告',
-      desc: '二步确认',
+      desc: '点击关闭-点击关闭广告',
       fastQuery: true,
-      activityIds: 'com.gkid.crazyrope.ui.drillcommon.DrillActivity',
+      activityIds: '.ui.drillcommon.DrillActivity',
       rules: [
-        '[id="com.gkid.crazyrope:id/iv_close"]',
-        '[id="com.gkid.crazyrope:id/tv_close"][text="关闭广告"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/13262845',
-        'https://i.gkd.li/i/13262844',
+        {
+          key: 0,
+          matches: '[id="com.gkid.crazyrope:id/iv_close"]',
+          exampleUrls: 'https://e.gkd.li/398c08eb-ebfb-4cf6-9349-0b0ad4b575c9',
+          snapshotUrls: 'https://i.gkd.li/i/13262845',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="关闭广告"]',
+          exampleUrls: 'https://e.gkd.li/3d27d844-b552-4a0c-800b-3dc5790fb8c0',
+          snapshotUrls: 'https://i.gkd.li/i/13262844',
+        },
       ],
     },
   ],

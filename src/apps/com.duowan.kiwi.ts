@@ -29,14 +29,16 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           matches:
             '[id="com.duowan.kiwi:id/popup_banner"] >2 [id="com.duowan.kiwi:id/ui_count_down"]',
           snapshotUrls: ['https://i.gkd.li/i/13417245'],
         },
         {
           key: 3,
+          fastQuery: true,
           matches:
-            '[id="com.duowan.kiwi:id/miniapp_content_container"] FrameLayout > ViewGroup[childCount=2] > @ViewGroup[clickable=true] > ImageView',
+            '@ViewGroup[clickable=true][visibleToUser=true] <2 ViewGroup < FrameLayout <2 FrameLayout < [id="com.duowan.kiwi:id/miniapp_content_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13401266',
         },
       ],
@@ -50,6 +52,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.homepage.Homepage',
           matches: '@ImageView[id="com.duowan.kiwi:id/upgrade_cancel"]',
           snapshotUrls: 'https://i.gkd.li/i/13440833',
         },
@@ -58,10 +61,14 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds: 'com.duowan.kiwi.homepage.Homepage',
+          activityIds: '.homepage.Homepage',
           matches:
             '[id="com.duowan.kiwi:id/animation_view"] + [id="com.duowan.kiwi:id/v_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13625453',
@@ -70,14 +77,19 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-root提示',
+      name: '其他-root提示',
       desc: '点击确认',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="您的设备已经被ROOT"] + LinearLayout [text="确认"]',
-      snapshotUrls: 'https://i.gkd.li/i/13536744',
+      rules: [
+        {
+          activityIds: '.homepage.Homepage',
+          matches: '[text^="您的设备已经被ROOT"] + LinearLayout [text="确认"]',
+          snapshotUrls: 'https://i.gkd.li/i/13536744',
+        },
+      ],
     },
   ],
 });

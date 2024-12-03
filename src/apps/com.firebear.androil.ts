@@ -67,9 +67,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/12755032',
+      rules: [
+        {
+          activityIds: '.app.home.MainActivity',
+          matches:
+            '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/12755032',
+        },
+      ],
     },
   ],
 });

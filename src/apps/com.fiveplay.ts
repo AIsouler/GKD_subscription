@@ -14,6 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          activityIds: '.sihp_homepage.module.main.Main2Activity',
           matches: '@[vid="iv_close"] - * > [text="打开消息推送"]',
           exampleUrls:
             'https://m.gkd.li/57941037/020e18ab-1bf1-4639-b32a-777719881dcb',
@@ -31,6 +32,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          activityIds: '.sihp_homepage.module.main.Main2Activity',
           matches: '[id="com.fiveplay:id/iv_ad_float_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16825082',
         },

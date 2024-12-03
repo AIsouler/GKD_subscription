@@ -11,10 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      activityIds: 'com.guodongbaohe.app.activity.AdvertisementTwoActivity',
-      rules: 'LinearLayout[id="com.guodongbaohe.app:id/close_dialog_lv"]',
-      snapshotUrls: 'https://i.gkd.li/i/13577877',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.guodongbaohe.app.activity.AdvertisementTwoActivity',
+          matches: 'LinearLayout[id="com.guodongbaohe.app:id/close_dialog_lv"]',
+          snapshotUrls: 'https://i.gkd.li/i/13577877',
+        },
+      ],
     },
   ],
 });

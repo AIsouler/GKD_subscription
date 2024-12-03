@@ -7,10 +7,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-主页推荐关注弹窗',
-      activityIds: ['com.dianping.main.guide.SplashActivity'],
-      rules:
-        'FrameLayout[id="android:id/content"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc="关闭"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12727011',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.dianping.main.guide.SplashActivity',
+          matches:
+            'FrameLayout[id="android:id/content"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc="关闭"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12727011',
+        },
+      ],
     },
     {
       key: 2,
@@ -18,12 +25,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: {
-        matches:
-          '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',
-        action: 'clickCenter', // clickNode无响应
-      },
-      snapshotUrls: 'https://i.gkd.li/i/12727070',
+      rules: [
+        {
+          matches:
+            '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',
+          action: 'clickCenter', // clickNode无响应
+          snapshotUrls: 'https://i.gkd.li/i/12727070',
+        },
+      ],
     },
     {
       key: 3,

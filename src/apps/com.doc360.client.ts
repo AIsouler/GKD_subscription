@@ -7,11 +7,16 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-信息流广告',
-      fastQuery: true,
-      activityIds: 'com.doc360.client.activity.ReadRoomActivity',
-      rules:
-        '@FrameLayout[desc^="dislike"] <<n [id="com.doc360.client:id/fl_ad_container"]',
-      snapshotUrls: 'https://i.gkd.li/i/13485051',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.doc360.client.activity.ReadRoomActivity',
+          matches:
+            '@View[clickable=true] < FrameLayout[desc^="dislike"] -2 FrameLayout >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/13485051',
+        },
+      ],
     },
   ],
 });
