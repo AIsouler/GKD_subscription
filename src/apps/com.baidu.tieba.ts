@@ -260,11 +260,12 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '局部广告-帖子内[进吧逛逛]悬浮窗',
+      name: '局部广告-[帖子内/吧内]底部悬浮窗',
       fastQuery: true,
       actionMaximum: 1,
       rules: [
         {
+          key: 0,
           activityIds: '.pb.pb.main.PbActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] <2 LinearLayout - * > [text$="热议中" || text^="猜你喜欢" || text*="进吧逛逛"]',
@@ -274,6 +275,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16619736',
             'https://i.gkd.li/i/16647874',
           ],
+        },
+        {
+          key: 1,
+          activityIds: '.forum.ForumActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] <2 LinearLayout - * > [text^="关注本吧"]',
+          exampleUrls: 'https://e.gkd.li/756c02b5-a72c-4ca4-a05c-a33202e8ecd6',
+          snapshotUrls: 'https://i.gkd.li/i/17992981',
         },
       ],
     },
