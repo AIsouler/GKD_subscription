@@ -55,12 +55,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@[text="以后再说"] + [text="优先体验"]',
-      snapshotUrls: 'https://i.gkd.li/i/12716477',
+      rules: [
+        {
+          activityIds: '.update',
+          matches: '@[text="以后再说"] + [text="优先体验"]',
+          snapshotUrls: 'https://i.gkd.li/i/12716477',
+        },
+      ],
     },
     {
       key: 2,
@@ -127,7 +132,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-阅读页面关注作者弹窗',
+      name: '全屏广告-阅读页面关注作者弹窗',
       fastQuery: true,
       rules: [
         {
@@ -180,30 +185,45 @@ export default defineGkdApp({
     {
       key: 6,
       name: '评价提示-请求好评弹窗',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@ImageView[clickable=true] +3 * > [text="五星好评"]',
-      snapshotUrls: 'https://i.gkd.li/i/14395093',
+      rules: [
+        {
+          activityIds: '.pages.main.MainFragmentActivity',
+          matches: '@ImageView[clickable=true] +3 * > [text="五星好评"]',
+          snapshotUrls: 'https://i.gkd.li/i/14395093',
+        },
+      ],
     },
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '自动点击"取消"',
+      desc: '点击"取消"',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
-      snapshotUrls: 'https://i.gkd.li/i/12716592',
+      rules: [
+        {
+          activityIds: '.widget.ConfirmDialogBuilder',
+          matches: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
+          snapshotUrls: 'https://i.gkd.li/i/12716592',
+        },
+      ],
     },
     {
       key: 12,
       name: '全屏广告',
-      desc: '点击右上角"关闭"',
-      fastQuery: true,
-      activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-      rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13191156',
+      desc: '点击"关闭"',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches:
+            'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13191156',
+        },
+      ],
     },
     {
       key: 14,

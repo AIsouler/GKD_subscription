@@ -9,13 +9,6 @@ export default defineGkdApp({
       name: '全屏广告-关闭花呗升级弹窗',
       rules: [
         {
-          key: 0,
-          activityIds:
-            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
-          matches: 'View[childCount=3] > @Image - View[text="花呗服务升级"]',
-          snapshotUrls: 'https://i.gkd.li/i/12737055',
-        },
-        {
           key: 1,
           fastQuery: true,
           activityIds: [
@@ -52,9 +45,13 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
-      rules: '@[desc="关闭"] - * >4 [text*="开启定位权限"]',
-      snapshotUrls: 'https://i.gkd.li/i/12792688',
+      rules: [
+        {
+          activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
+          matches: '@[desc="关闭"] - * >4 [text*="开启定位权限"]',
+          snapshotUrls: 'https://i.gkd.li/i/12792688',
+        },
+      ],
     },
     {
       key: 2,
@@ -100,6 +97,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: [
+            'com.alipay.mobile.alipassapp.alkb.kb.ALPMainPage',
+            '.AlipayLogin',
+          ],
           matches: [
             '[text="立即更新" || text="马上体验"]',
             '[text^="稍后"][text.length=4]',
@@ -111,6 +112,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: [
+            'com.alipay.mobile.about.ui.AboutAlipayActivity',
+            '.AlipayLogin',
+          ],
           matches:
             '[text="版本更新"||text^="Version"] - [id="com.alipay.mobile.antui:id/btn_close"]',
           snapshotUrls: [
@@ -120,6 +125,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          activityIds: '.AlipayLogin',
           matches:
             '[text="立即升级最新版支付宝客户端"] < LinearLayout + [id="com.alipay.mobile.advertisement:id/announcementview_righticon"]',
           snapshotUrls: 'https://i.gkd.li/i/13490797',

@@ -5,17 +5,11 @@ export default defineGkdApp({
   name: '古文岛',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
+      key: 2,
+      name: '全屏广告-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="应用升级提醒"] +n LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12776605',
-    },
-    {
-      key: 2,
-      name: '全屏广告-弹窗广告',
       activityIds: 'com.guwendao.gwd.MainActivity',
       rules: [
         {

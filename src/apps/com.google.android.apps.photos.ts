@@ -6,27 +6,27 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '更新提示-取消更新',
+      name: '更新提示',
       desc: '点击[以后再说]',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
-          matches:
-            '[id="com.google.android.apps.photos:id/negative_button"][text="以后再说"]',
+          activityIds: '.update.treatment.UpdateAppTreatmentPromoPageActivity',
+          matches: '[text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13218940',
         },
       ],
     },
     {
       key: 1,
-      fastQuery: true,
       name: '全屏广告-优惠提示',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds:
             'com.google.android.apps.photos.cloudstorage.paidfeatures.PaidFeaturesActivity',
           matches:

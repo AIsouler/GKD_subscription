@@ -11,9 +11,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules:
-        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
-      snapshotUrls: 'https://i.gkd.li/i/14039510',
+      rules: [
+        {
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
+          snapshotUrls: 'https://i.gkd.li/i/14039510',
+        },
+      ],
     },
   ],
 });

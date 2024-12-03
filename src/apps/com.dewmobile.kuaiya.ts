@@ -11,9 +11,10 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯广告',
+          fastQuery: true,
           activityIds: 'com.dewmobile.kuaiya.act.MainActivity',
           matches:
-            'ImageView - FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[childCount=0][visibleToUser=true] <<n [id="com.dewmobile.kuaiya:id/sdk_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13477048',
         },
       ],

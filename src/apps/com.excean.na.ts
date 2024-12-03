@@ -22,11 +22,11 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      fastQuery: true,
       name: '局部广告-卡片广告',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.excelliance.kxqp.ui.activity.GameLaunchActivity',
           matches: '[id="com.excean.na:id/iv_close_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/13931051',
@@ -36,7 +36,10 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

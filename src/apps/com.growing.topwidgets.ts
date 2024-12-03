@@ -47,12 +47,13 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           matches:
-            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14964868',
-            'https://i.gkd.li/i/14969910', // 避免误触
-          ],
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
+          snapshotUrls: 'https://i.gkd.li/i/14964868',
         },
       ],
     },

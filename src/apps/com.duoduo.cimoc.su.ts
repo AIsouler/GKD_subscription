@@ -8,6 +8,9 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-首页弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
@@ -24,9 +27,10 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.duoduo.cimoc.su.MainActivity',
           matches:
-            '@TextView[clickable=true] <2 View[childCount=2] -2 [text="广告"]',
+            '@TextView[clickable=true] <2 View[childCount=2] -2 [visibleToUser=true][text="广告"] <<n [vid="ksad_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13999283',
         },
       ],
@@ -37,9 +41,10 @@ export default defineGkdApp({
       desc: '关闭视频播放页、搜索页广告',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.duoduo.cimoc.su.MainActivity',
           matches:
-            'FrameLayout[childCount=4] > FrameLayout > ImageView[visibleToUser=true]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout > [text="查看详情"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13999284',
             'https://i.gkd.li/i/13999376',

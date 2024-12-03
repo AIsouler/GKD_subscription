@@ -5,8 +5,9 @@ export default defineGkdApp({
   name: '堆糖',
   groups: [
     {
-      name: '局部广告-信息流广告',
       key: 2,
+      name: '局部广告-信息流广告',
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -14,22 +15,13 @@ export default defineGkdApp({
             'com.duitang.main.business.',
             'com.duitang.main.activity.',
           ],
-          fastQuery: true,
-          matches: '[vid="adOptionEntry"][visibleToUser=true]',
+          matches: '[vid="adOptionEntry" || vid="adClose"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14232228',
             'https://i.gkd.li/i/14232332',
             'https://i.gkd.li/i/14232347',
             'https://i.gkd.li/i/14232348',
             'https://i.gkd.li/i/14232368',
-          ],
-        },
-        {
-          key: 1,
-          activityIds: 'com.duitang.main.business.',
-          fastQuery: true,
-          matches: '[vid="adClose"][visibleToUser=true]',
-          snapshotUrls: [
             'https://i.gkd.li/i/14232218',
             'https://i.gkd.li/i/14232352',
           ],
@@ -40,12 +32,13 @@ export default defineGkdApp({
       key: 3,
       name: '评价提示',
       desc: '点击[下次再说]',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: '.business.main.NAMainActivity',
           matches: '[vid="scoreDuitangCancel"]',
           snapshotUrls: 'https://i.gkd.li/i/14273094',
         },
@@ -53,11 +46,11 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      fastQuery: true,
       name: '全屏广告-图片页弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: [
             'com.duitang.main.business.display.ImageActivity',
             'com.duitang.main.business.main.NAMainActivity',
@@ -73,12 +66,18 @@ export default defineGkdApp({
     {
       key: 5,
       name: '权限提示-通知权限',
-      desc: '点击[x]',
+      desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@[vid="dialogNegative"] +2 [text="打开通知"]',
-      snapshotUrls: 'https://i.gkd.li/i/14273121',
+      rules: [
+        {
+          activityIds: '.business.main.NAMainActivity',
+          matches: '@[vid="dialogNegative"] +2 [text="打开通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/14273121',
+        },
+      ],
     },
   ],
 });

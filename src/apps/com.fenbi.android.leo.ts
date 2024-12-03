@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="残忍拒绝"] + [text*="好评"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/i/13226140',
+      rules: [
+        {
+          activityIds: '.imgsearch.sdk.activity.NewCheckCameraActivity',
+          matches: '@[text="残忍拒绝"] + [text*="好评"][text.length<=10]',
+          snapshotUrls: 'https://i.gkd.li/i/13226140',
+        },
+      ],
     },
   ],
 });

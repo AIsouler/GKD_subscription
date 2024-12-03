@@ -6,11 +6,12 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-设为默认应用提示',
+      name: '其他-设为默认应用提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
+      activityIds: '.activities.MainActivity',
       rules: [
         {
           key: 0,
@@ -19,7 +20,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13630460',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           matches: '[id="android:id/button2"][text="SKIP"]',
           snapshotUrls: 'https://i.gkd.li/i/13630463',
         },
@@ -31,12 +32,16 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.enflick.android.TextNow.activities.MainActivity',
-      rules:
-        '@ImageView[clickable=true] <2 [id="com.enflick.android.TextNow:id/calling_banner"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13657279',
-        'https://i.gkd.li/i/13657280',
+      rules: [
+        {
+          activityIds: 'com.enflick.android.TextNow.activities.MainActivity',
+          matches:
+            '@ImageView[clickable=true] <2 [id="com.enflick.android.TextNow:id/calling_banner"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13657279',
+            'https://i.gkd.li/i/13657280',
+          ],
+        },
       ],
     },
   ],

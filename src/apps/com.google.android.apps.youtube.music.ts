@@ -7,10 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-播放界面广告',
-      activityIds:
-        'com.google.android.apps.youtube.music.activities.MusicActivity',
-      rules: '[id="com.google.android.apps.youtube.music:id/skip_ad_text"]',
-      snapshotUrls: 'https://i.gkd.li/i/13196056',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.music.activities.MusicActivity',
+          matches:
+            '[id="com.google.android.apps.youtube.music:id/skip_ad_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13196056',
+        },
+      ],
     },
   ],
 });

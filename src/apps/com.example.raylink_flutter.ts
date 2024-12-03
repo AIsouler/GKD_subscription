@@ -10,8 +10,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc="立即升级"] + [desc="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13659530',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[desc="立即升级"] + [desc="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13659530',
+        },
+      ],
     },
     {
       key: 2,
