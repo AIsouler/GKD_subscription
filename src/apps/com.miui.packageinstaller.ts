@@ -123,5 +123,41 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 17,
+      name: '功能类-无视风险继续安装',
+      fastQuery: true,
+      activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@[clickable=true] >2 [text="无视风险继续安装"]',
+          exampleUrls: 'https://e.gkd.li/46f06948-5ec1-4054-8aa3-a8f39e5d1f26',
+          snapshotUrls: 'https://i.gkd.li/i/18002566',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[text="继续"]',
+          exampleUrls: 'https://e.gkd.li/375fc2ec-841a-4af6-be99-9391ebeb7dc5',
+          snapshotUrls: 'https://i.gkd.li/i/18002704',
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          matches:
+            '@[clickable=true][desc="更多"] > [vid="action_menu_item_child_icon"]',
+          exampleUrls: 'https://e.gkd.li/de8fb9c9-ea4e-4c03-93bd-047bf31cd4c8',
+          snapshotUrls: 'https://i.gkd.li/i/18002708',
+        },
+        {
+          preKeys: [2],
+          key: 3,
+          matches: '@[clickable=true] > [text="单次安装授权"]',
+          exampleUrls: 'https://e.gkd.li/0e8afdd7-04d3-46fd-9095-b61123d041b2',
+          snapshotUrls: 'https://i.gkd.li/i/18002712',
+        },
+      ],
+    },
   ],
 });
