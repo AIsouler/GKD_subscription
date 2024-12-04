@@ -47,19 +47,9 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules:
-        '[id="com.netease.mail:id/tv_ignore_this_version"][text="暂不更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/12664070',
-    },
-    {
       key: 2,
       name: '全屏广告-邮件列表广告',
-      activityIds: ['com.netease.mail.biz.main.MainITabActivity'],
+      activityIds: 'com.netease.mail.biz.main.MainITabActivity',
       fastQuery: true,
       rules: [
         {
@@ -68,13 +58,12 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12999833',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           matches: '[id="com.netease.mail:id/ll_delete"]',
           snapshotUrls: 'https://i.gkd.li/i/12999841',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/i/12664070',
     },
     {
       key: 5,
@@ -82,9 +71,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        'TextView[text="恭喜您获得以下成就"] - TextView[text=""][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13876817',
+      rules: [
+        {
+          fastQuery: true,
+          matches:
+            'TextView[text="恭喜您获得以下成就"] - @TextView[clickable=true][text=""] <<n [vid="browser_fragment_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13876817',
+        },
+      ],
     },
   ],
 });

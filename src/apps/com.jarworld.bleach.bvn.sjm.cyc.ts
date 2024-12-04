@@ -28,11 +28,10 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           activityIds: 'com.kwad.sdk.api.proxy.app.KsRewardVideoActivity',
-          matches: [
-            'WebView > View > View > [text="广告"]',
-            'ViewGroup[childCount=2] > @ViewGroup[childCount=1] > ImageView[childCount=0]',
-          ],
+          matches:
+            'ViewGroup[childCount=2] > ViewGroup[childCount=2] > @ViewGroup[clickable=true][childCount=1][visibleToUser=true] > ImageView[childCount=0] <<n [id="com.jarworld.bleach.bvn.sjm.cyc:id/ksad_js_reward_card"]',
           snapshotUrls: 'https://i.gkd.li/i/13635410',
         },
       ],

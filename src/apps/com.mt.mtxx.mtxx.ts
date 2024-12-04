@@ -11,13 +11,20 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="升级新版客户端"] - [text="取消"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13238352',
+      rules: [
+        {
+          matches: '[text="升级新版客户端"] - [text="取消"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13238352',
+        },
+      ],
     },
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,

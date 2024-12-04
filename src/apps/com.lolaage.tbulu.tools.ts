@@ -11,9 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="com.lolaage.tbulu.tools:id/tvFullUpgrade"] + [id="com.lolaage.tbulu.tools:id/tvCancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/12882550',
+      rules: [
+        {
+          activityIds: '.upgrade',
+          matches:
+            '[id="com.lolaage.tbulu.tools:id/tvFullUpgrade"] + [id="com.lolaage.tbulu.tools:id/tvCancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/12882550',
+        },
+      ],
     },
     {
       key: 2,
@@ -65,6 +70,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.activity.main.MainActivity',
           matches: '[text="发送通知"] + * >3 [text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/14952803',
         },

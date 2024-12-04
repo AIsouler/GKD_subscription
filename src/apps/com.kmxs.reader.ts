@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '七猫免费小说',
   groups: [
     {
-      key: -2,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.kmxs.reader:id/tv_update_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/12641338',
-    },
-    {
       key: 2,
       name: '分段广告-阅读页面广告',
       fastQuery: true,
@@ -39,10 +30,7 @@ export default defineGkdApp({
       activityIds: 'org.geometerplus.android.fbreader.FBReader',
       rules: [
         {
-          matches: [
-            '[text$="广告"]',
-            '[id="com.kmxs.reader:id/ad_direct_close"]',
-          ],
+          matches: '[id="com.kmxs.reader:id/ad_direct_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12640303',
             'https://i.gkd.li/i/13362269',
@@ -73,13 +61,13 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-字节视频广告',
-      desc: '此规则有概率误触或失效，请谨慎选择开启。',
-      activityIds:
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      desc: '点击关闭',
+      actionDelay: 300,
       rules: [
         {
           key: 0,
-          name: '点击跳过',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text*="跳过"][text.length<=10]',
           snapshotUrls: [
             'https://i.gkd.li/i/13459157',
@@ -89,40 +77,27 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '点击"x"',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           fastQuery: true,
           matches:
             '[id="com.byted.pangle:id/tt_reward_full_count_down_after_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13459182',
         },
-      ],
-    },
-    {
-      key: 6,
-      name: '全屏广告-百度',
-      desc: '此规则有概率误触或失效，请谨慎选择开启。',
-      activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
-      rules: [
         {
-          key: 0,
-          name: '点击"x"',
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
-            'RelativeLayout > RelativeLayout + ImageView + ImageView[clickable=true]',
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] <3 RelativeLayout[childCount=4] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13472957',
         },
-      ],
-    },
-    {
-      key: 7,
-      name: '全屏广告-腾讯',
-      desc: '此规则有概率误触或失效，请谨慎选择开启。',
-      activityIds: 'com.qq.e.ads.PortraitADActivity',
-      rules: [
         {
-          key: 0,
-          name: '点击"x"',
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.qq.e.ads.PortraitADActivity',
           matches:
-            'FrameLayout[childCount=10] > FrameLayout[index=3] > FrameLayout > ImageView',
+            '@ImageView[visibleToUser=true][childCount=0] < FrameLayout[childCount=1] < FrameLayout[childCount=1] + FrameLayout >3 [text^="摇动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/13472955',
         },
       ],
@@ -150,11 +125,14 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      fastQuery: true,
       name: '全屏广告-今日专属推荐弹窗',
-      desc: '点击X',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           matches: '[id="com.kmxs.reader:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/13941276',
         },

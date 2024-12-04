@@ -7,15 +7,22 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
-      activityIds: [
-        'com.huatu.handheld_huatu.view.MainPopDialog',
-        'com.huatu.handheld_huatu.business.main.MainTabActivity',
-      ],
-      rules:
-        '[id="com.huatu.handheld_huatu:id/main_img_adv_bg"] + [id="com.huatu.handheld_huatu:id/main_img_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12715702', // activityId: 'com.huatu.handheld_huatu.view.MainPopDialog'
-        'https://i.gkd.li/i/12744973', // activityId: 'com.huatu.handheld_huatu.business.main.MainTabActivity'
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            'com.huatu.handheld_huatu.view.MainPopDialog',
+            'com.huatu.handheld_huatu.business.main.MainTabActivity',
+          ],
+          matches:
+            '[id="com.huatu.handheld_huatu:id/main_img_adv_bg"] + [id="com.huatu.handheld_huatu:id/main_img_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12715702',
+            'https://i.gkd.li/i/12744973',
+          ],
+        },
       ],
     },
     {
@@ -24,8 +31,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715719',
+      rules: [
+        {
+          activityIds: '.business.main.MainTabActivity',
+          matches: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715719',
+        },
+      ],
     },
   ],
 });

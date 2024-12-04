@@ -44,6 +44,7 @@ export default defineGkdApp({
       ],
       rules: [
         {
+          key: 1,
           name: '点击底部中间x关闭图标',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] RelativeLayout[childCount=4] > TextView[text.length>0] + ImageView + ImageView[clickable=true][id=null]',
@@ -55,6 +56,7 @@ export default defineGkdApp({
           ],
         },
         {
+          key: 2,
           name: '点击右上/下角x关闭图标',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=2||childCount=3] > View[childCount=4] > View[childCount=1] > Image[text=""]',
@@ -64,24 +66,28 @@ export default defineGkdApp({
           ],
         },
         {
+          key: 3,
           name: '点击右上角x关闭图标-2',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=5] > View[childCount=2][index=4] > View[childCount=1] > Image[text=""]',
           snapshotUrls: 'https://i.gkd.li/i/12790610',
         },
         {
+          key: 4,
           name: '点击右上角x关闭图标-3',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=2] > View[childCount=6][index=0] > View[childCount=1][index=3] > Image[text=""]',
           snapshotUrls: 'https://i.gkd.li/i/12790941',
         },
         {
+          key: 5,
           name: '点击右下角x关闭按钮',
           matches:
             '[text="广告"] <3 View + @View[clickable=true] >2 [text="×"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12791122',
         },
         {
+          preKeys: [1, 2, 3, 4, 5],
           name: '点击不感兴趣',
           matches:
             '@LinearLayout[clickable=true][childCount<=2] > [text="不感兴趣"]',
@@ -92,12 +98,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12790707',
             'https://i.gkd.li/i/12790717',
           ],
-        },
-        {
-          name: '点击暂不领取',
-          matches:
-            '[id="com.mygolbs.mybus:id/ll_ad"] [id="com.mygolbs.mybus:id/btn_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/12791579',
         },
       ],
     },
@@ -178,6 +178,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.defines.CustomDialog',
           matches: ['[text$="请开启通知权限"]', '[text="取消"]'],
           snapshotUrls: 'https://i.gkd.li/i/12715980',
         },
@@ -186,11 +187,15 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-签到成功弹窗',
-      desc: '自动点击x按钮',
-      activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
-      rules:
-        '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
-      snapshotUrls: 'https://i.gkd.li/i/12716035',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
+          matches:
+            '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
+          snapshotUrls: 'https://i.gkd.li/i/12716035',
+        },
+      ],
     },
   ],
 });

@@ -29,6 +29,9 @@ export default defineGkdApp({
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
       fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           action: 'back',

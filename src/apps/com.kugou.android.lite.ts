@@ -7,21 +7,25 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           name: '新人限时优惠弹窗',
-          activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           fastQuery: true,
+          activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           matches: '[text^="新人限时开通"] +3 [text="放弃优惠"]',
           snapshotUrls: 'https://i.gkd.li/i/14321698',
         },
         {
           key: 1,
           name: '组队抽奖弹窗',
+          fastQuery: true,
           activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           matches:
-            '[id="android:id/content"] > ViewGroup[childCount=3] > ImageView + ImageView + ImageView[clickable=true][visibleToUser=true]',
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] <3 ViewGroup[childCount=3] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14321700',
         },
       ],
@@ -53,11 +57,16 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@ImageView - * > [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/14622566',
+      rules: [
+        {
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '@ImageView - * > [text="立即升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/14622566',
+        },
+      ],
     },
     {
       key: 5,

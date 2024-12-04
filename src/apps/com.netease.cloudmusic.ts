@@ -165,6 +165,7 @@ export default defineGkdApp({
           matches: '[vid="dsl_dialog_root"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13804534',
+            'https://i.gkd.li/i/13804541',
             'https://i.gkd.li/i/13848913',
             'https://i.gkd.li/i/13962214',
             'https://i.gkd.li/i/14036940',
@@ -237,11 +238,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.activity.MainActivity',
           matches: ['[text*="新版本"]', '[text="近期不再提示"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13233790',
-            'https://i.gkd.li/i/13197457',
-            'https://i.gkd.li/i/13228878',
             'https://i.gkd.li/i/15092457', // 避免误触
           ],
         },
@@ -297,27 +297,6 @@ export default defineGkdApp({
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
           matches: '[id="com.netease.cloudmusic:id/skipBannerAd"]',
           snapshotUrls: 'https://i.gkd.li/i/13768367',
-        },
-      ],
-    },
-    {
-      key: 10,
-      name: '功能类-功能升级弹窗',
-      rules: [
-        {
-          key: 0,
-          name: '"我的"升级-下次再说',
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches: '[text="下次再说"] < ViewGroup',
-          snapshotUrls: 'https://i.gkd.li/i/13804541',
-        },
-        {
-          key: 1,
-          name: '"社区广场"升级-点击右上角x',
-          activityIds:
-            'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
-          matches: '[text="社区广场全新升级"] + ViewGroup > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/13804544',
         },
       ],
     },

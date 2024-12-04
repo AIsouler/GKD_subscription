@@ -11,10 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ideal.flyerteacafes.ui.HomeActivity',
-      rules:
-        '@[id="com.ideal.flyerteacafes:id/close"] - FrameLayout > [id="com.ideal.flyerteacafes:id/tv_time_down"]',
-      snapshotUrls: 'https://i.gkd.li/i/13466119',
+      rules: [
+        {
+          activityIds: 'com.ideal.flyerteacafes.ui.HomeActivity',
+          matches:
+            '@[id="com.ideal.flyerteacafes:id/close"] - FrameLayout > [id="com.ideal.flyerteacafes:id/iv_adv_tip"]',
+          snapshotUrls: 'https://i.gkd.li/i/13466119',
+        },
+      ],
     },
   ],
 });

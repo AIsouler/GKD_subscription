@@ -10,8 +10,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="新版本"] +(n) LinearLayout > TextView[text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12642297',
+      rules: [
+        {
+          activityIds: 'miuix.appcompat.app.m',
+          matches: '[text*="新版本"] +(n) LinearLayout > TextView[text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/12642297',
+        },
+      ],
     },
   ],
 });

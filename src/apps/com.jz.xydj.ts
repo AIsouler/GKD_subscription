@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
-      desc: '[ChangeMe]本规则由GKD网页端审查工具生成',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,

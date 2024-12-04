@@ -7,13 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.onethingcloud.android.MainActivity',
           matches:
-            '[id="android:id/content"] >(3,4) View[childCount=2] >2 View[childCount=2 || childCount=3] > ImageView[index=parent.childCount.minus(1)][clickable=true]',
+            '@ImageView[clickable=true][visibleToUser=true][index=parent.childCount.minus(1)] <(2,3) View < View < View < View < FrameLayout < [id="android:id/content"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12841171',
             'https://i.gkd.li/i/14766665',
             'https://i.gkd.li/i/16438609',
           ],

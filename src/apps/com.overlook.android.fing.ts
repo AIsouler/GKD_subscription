@@ -6,13 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '功能类-教程弹窗',
+      name: '其他-教程弹窗',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="關閉"]',
-      snapshotUrls: 'https://i.gkd.li/i/15521827',
+      rules: [
+        {
+          activityIds: '.ui.main.SplashActivity',
+          matches: '[text="關閉"]',
+          snapshotUrls: 'https://i.gkd.li/i/15521827',
+        },
+      ],
     },
   ],
 });

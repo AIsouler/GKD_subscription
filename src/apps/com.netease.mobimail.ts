@@ -47,13 +47,12 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.netease.mail.biz.main.MainITabActivity',
-          matches: '[id="com.netease.mobimail:id/ad_vip"]',
-          snapshotUrls: 'https://i.gkd.li/i/12683488',
-        },
-        {
-          activityIds: 'com.netease.mail.biz.main.MainITabActivity',
-          matches: '[id="com.netease.mobimail:id/ll_delete"]',
-          snapshotUrls: 'https://i.gkd.li/i/12683511',
+          matches:
+            '[id="com.netease.mobimail:id/ad_vip" || id="com.netease.mobimail:id/ll_delete"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12683488',
+            'https://i.gkd.li/i/12683511',
+          ],
         },
       ],
     },

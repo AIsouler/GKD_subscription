@@ -11,10 +11,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13223669',
-        'https://i.gkd.li/i/13293000',
+      rules: [
+        {
+          activityIds: [
+            '.modules.main.MainActivity',
+            '.modules.h5service.H5WebActivity',
+          ],
+          matches:
+            'View[id="com.hd.smartVillage:id/notificationSettingCloseBtn"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13223669',
+            'https://i.gkd.li/i/13293000',
+          ],
+        },
       ],
     },
     {
@@ -24,9 +33,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        'TextView[id="com.hd.smartVillage:id/tv_upgrade_cancel"][text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/13223642',
+      rules: [
+        {
+          activityIds: '.modules.main.MainActivity',
+          matches: 'TextView[id="com.hd.smartVillage:id/tv_upgrade_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13223642',
+        },
+      ],
     },
   ],
 });

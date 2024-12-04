@@ -39,6 +39,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.luna.biz.ad.AdActivity',
           matches: '@[text="稍后再说"] + [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/i/14790279',
         },
@@ -150,10 +151,15 @@ export default defineGkdApp({
     {
       key: 9,
       name: '功能类-看视频免费听弹窗',
-      desc: '点击【立得全天畅听】',
-      activityIds: 'com.luna.biz.main.main.MainActivity',
-      rules: '[text="立得全天畅听"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/14237527',
+      desc: '点击[立得全天畅听]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.luna.biz.main.main.MainActivity',
+          matches: 'FlattenUIText[text="立得全天畅听"]',
+          snapshotUrls: 'https://i.gkd.li/i/14237527',
+        },
+      ],
     },
     {
       key: 10,

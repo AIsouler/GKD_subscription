@@ -7,10 +7,10 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-评论区上方卡片广告',
-      desc: '点击X',
-      fastQuery: true,
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds:
             'com.lingan.seeyou.ui.activity.community.topicdetail.TopicDetailActivity',
           matches: '[id="com.lingan.seeyou:id/v_close"]',

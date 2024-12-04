@@ -37,16 +37,9 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 4,
-          name: '字节广告',
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches:
-            '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-        },
-        {
           key: 5,
           name: '吉欣广告',
+          fastQuery: true,
           activityIds: 'com.klcxkj.zqxy.ui.splash.SplashActivity',
           matches: '@ViewGroup < ViewGroup +2 ViewGroup > [text="吉欣广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13274838',
@@ -68,12 +61,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: [
+          activityIds:
             'com.klcxkj.zqxy.ui.device.drink.ble.DrinkingBleActivity',
-          ],
           matches:
-            '[id="com.klcxkj.zqxy:id/bathing_adv_layout"] >n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: ['https://i.gkd.li/i/13488870'],
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠"]',
+          snapshotUrls: 'https://i.gkd.li/i/13488870',
         },
       ],
     },

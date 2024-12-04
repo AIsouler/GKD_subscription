@@ -7,10 +7,18 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-活动弹窗',
-      activityIds: 'com.baicizhan.main.activity.MainTabActivity',
-      rules:
-        '[text="反馈"] + ImageView + ImageView[childCount=0][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13415075',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.baicizhan.main.activity.MainTabActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] -2 [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/13415075',
+        },
+      ],
     },
     {
       key: 3,
@@ -19,8 +27,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="抢先体验"] - [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/13488652',
+      rules: [
+        {
+          activityIds: 'com.baicizhan.main.activity.MainTabActivity',
+          matches: '[text="抢先体验"] - [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/13488652',
+        },
+      ],
     },
   ],
 });

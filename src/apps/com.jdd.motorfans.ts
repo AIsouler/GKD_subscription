@@ -11,6 +11,13 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
+          activityIds: [
+            '.MTMainActivity',
+            '.modules.detail.DetailActivity2',
+            '.search.SearchMainActivity',
+            '.modules.base.FragmentContainerActivity',
+            '.message.ChatDetailActivity',
+          ],
           matches:
             '[id="com.jdd.motorfans:id/ad_content"] >n [id="com.jdd.motorfans:id/iv_close"]',
           snapshotUrls: [
@@ -19,8 +26,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12878843',
             'https://i.gkd.li/i/12913956',
             'https://i.gkd.li/i/13188861',
-            'https://i.gkd.li/i/12840710',
-            'https://i.gkd.li/i/13188928',
             'https://i.gkd.li/i/14546613',
           ],
         },
@@ -53,7 +58,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点x按钮',
+          name: '点关闭按钮',
           matches:
             '[id="com.jdd.motorfans:id/recyclerView"] > FrameLayout[id="com.jdd.motorfans:id/container"] > FrameLayout[childCount=3] > ImageView[clickable=true][id=null] + ImageView[clickable=true][id=null]', //虽然在审查页面能匹配上，但是在“执行选择器”功能下一直处于搜索中，先添加后到真机测试
           snapshotUrls: 'https://i.gkd.li/i/12826382',

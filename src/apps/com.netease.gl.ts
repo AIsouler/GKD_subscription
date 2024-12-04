@@ -10,9 +10,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.netease.gl:id/iv_close"] +2 LinearLayout >n [id="com.netease.gl:id/btn_update"]',
-      snapshotUrls: 'https://i.gkd.li/i/12883135',
+      rules: [
+        {
+          activityIds: '.serviceupdate.widget.DialogUpdate',
+          matches:
+            '@[id="com.netease.gl:id/iv_close"] +2 LinearLayout >n [id="com.netease.gl:id/btn_update"]',
+          snapshotUrls: 'https://i.gkd.li/i/12883135',
+        },
+      ],
     },
     {
       key: 2,
@@ -33,8 +38,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[id="com.netease.gl:id/iv_close"] + [text="开启推送"]',
-      snapshotUrls: 'https://i.gkd.li/i/13072071',
+      rules: [
+        {
+          activityIds: '.compfeed.widget.CommonWebPopupDialog',
+          matches: '@[id="com.netease.gl:id/iv_close"] + [text="开启推送"]',
+          snapshotUrls: 'https://i.gkd.li/i/13072071',
+        },
+      ],
     },
   ],
 });

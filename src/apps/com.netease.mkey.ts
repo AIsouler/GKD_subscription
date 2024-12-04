@@ -6,12 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '功能类-一键迁移至新版将军令',
-      matchTime: 10000,
+      name: '其他-一键迁移至新版将军令',
       fastQuery: true,
-      activityIds: 'com.netease.mkey.activity.NtSecActivity',
-      rules: '[id="com.netease.mkey:id/tv_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/13421302',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.netease.mkey.activity.NtSecActivity',
+          matches: '[id="com.netease.mkey:id/tv_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13421302',
+        },
+      ],
     },
   ],
 });

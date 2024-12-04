@@ -8,6 +8,9 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
@@ -23,10 +26,14 @@ export default defineGkdApp({
       name: '权限提示-定位权限',
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.hihonor.phoneservice.main.MainActivity',
-      rules:
-        '[text^="开启定位权限"] + [id="com.hihonor.phoneservice:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12783134',
+      rules: [
+        {
+          activityIds: 'com.hihonor.phoneservice.main.MainActivity',
+          matches:
+            '[text^="开启定位权限"] + [id="com.hihonor.phoneservice:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12783134',
+        },
+      ],
     },
   ],
 });

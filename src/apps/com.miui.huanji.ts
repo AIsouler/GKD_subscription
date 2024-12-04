@@ -7,11 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@[text="下次再说"] + [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/14332463',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '@[text="下次再说"] + [text="立即升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/14332463',
+        },
+      ],
     },
   ],
 });
