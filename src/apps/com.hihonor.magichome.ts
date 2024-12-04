@@ -24,13 +24,18 @@ export default defineGkdApp({
       key: 12,
       name: '更新提示',
       desc: '点击以后再说',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        'TextView[text="立即更新"] -2 [id="com.hihonor.magichome:id/negative_btn"][text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/12916700',
+      rules: [
+        {
+          activityIds: '.business.MainActivity',
+          matches:
+            'TextView[text="立即更新"] -2 [id="com.hihonor.magichome:id/negative_btn"][text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/12916700',
+        },
+      ],
     },
   ],
 });

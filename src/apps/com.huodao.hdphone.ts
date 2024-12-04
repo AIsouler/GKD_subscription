@@ -6,13 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      fastQuery: true,
       name: '全屏广告-超级补贴日弹窗',
-      desc: '点击X',
+      desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="android:id/content"] >2 [id="com.huodao.hdphone:id/dialog_close"]',
+          matches: '[vid="iv_adv"] + [vid="dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13927567',
         },
       ],

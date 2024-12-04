@@ -60,7 +60,7 @@ export default defineGkdApp({
             'com.feiyu.morin.view.main.PlayerBottomControlActivity',
           ],
           matches:
-            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout > [text="下载应用" || text="立即下载"]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13521680',
             'https://i.gkd.li/i/13625476',

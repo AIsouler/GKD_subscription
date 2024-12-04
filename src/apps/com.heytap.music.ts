@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.allsaints.music.MainActivity',
           matches: '@ImageView[clickable=true] + [text="检测到新版本"]',
           snapshotUrls: 'https://i.gkd.li/i/14987173',
         },

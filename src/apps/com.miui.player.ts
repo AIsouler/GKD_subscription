@@ -59,6 +59,9 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -79,12 +82,16 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-年度报告邀请函弹窗',
+      name: '其他-年度报告邀请函弹窗',
       desc: '点击关闭',
-      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-      fastQuery: true,
-      rules: '[id="com.miui.player:id/iv_close_dialog_button"]',
-      snapshotUrls: ['https://i.gkd.li/i/13623503'],
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[id="com.miui.player:id/iv_close_dialog_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13623503',
+        },
+      ],
     },
     {
       key: 12,
@@ -103,11 +110,15 @@ export default defineGkdApp({
     {
       key: 13,
       name: '局部广告-首页卡片广告',
-      fastQuery: true,
-      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-      rules: '[id="com.miui.player:id/ad_close"]',
-      exampleUrls: 'https://e.gkd.li/32ad4d0f-8992-45b0-9e1f-82ce2cc58dcb',
-      snapshotUrls: 'https://i.gkd.li/i/16773614',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[id="com.miui.player:id/ad_close"]',
+          exampleUrls: 'https://e.gkd.li/32ad4d0f-8992-45b0-9e1f-82ce2cc58dcb',
+          snapshotUrls: 'https://i.gkd.li/i/16773614',
+        },
+      ],
     },
   ],
 });

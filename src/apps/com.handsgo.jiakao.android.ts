@@ -33,9 +33,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: 'com.handsgo.jiakao.android.main.activity.MainActivity',
           matches:
-            '@[id="com.handsgo.jiakao.android:id/ivDelete"] + [id="com.handsgo.jiakao.android:id/ivRemote"]',
+            '[id="com.handsgo.jiakao.android:id/ivDelete"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13475994',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.main.activity.MainActivity',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/adsdk__ids_component_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a3ff6d58-4902-4ff4-a1dd-dbdb4a9ae38a',
           snapshotUrls: 'https://i.gkd.li/i/13475994',
         },
       ],
@@ -43,6 +53,9 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

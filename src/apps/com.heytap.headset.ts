@@ -8,11 +8,16 @@ export default defineGkdApp({
       key: 0,
       name: '更新提示',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="tv_app_upgrade_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/14971296',
+      rules: [
+        {
+          activityIds: '.component.about.FindAppUpgradeActivity',
+          matches: '[vid="tv_app_upgrade_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/14971296',
+        },
+      ],
     },
   ],
 });

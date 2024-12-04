@@ -7,12 +7,14 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-VIP弹窗广告',
-      fastQuery: true,
-      activityIds: 'com.nowcasting.activity.WeatherActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[text="开心收下"] + [id="com.nowcasting.activity:id/iv_close"]',
+          fastQuery: true,
+          activityIds: 'com.nowcasting.activity.WeatherActivity',
+          matches: '[id="com.nowcasting.activity:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13405130',
         },
       ],
@@ -34,14 +36,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          fastQuery: true,
           matches:
             'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] < ViewGroup <5 ViewGroup + ViewGroup [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14814374',
         },
         {
           key: 2,
-          fastQuery: true,
           matches: '[vid="entrance_image"] + [vid="close"]',
           exampleUrls: 'https://e.gkd.li/bd53a023-f83a-45ae-b58e-c7369f29bb2e',
           snapshotUrls: 'https://i.gkd.li/i/16965108',
@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13690822',
         },
         {
-          preKeys: 1,
+          preKeys: [1],
           key: 2,
           matches: '[id="com.nowcasting.activity:id/ll_uninterested"]',
           snapshotUrls: 'https://i.gkd.li/i/13690830',

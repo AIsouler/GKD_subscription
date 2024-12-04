@@ -122,15 +122,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 8,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@[text="以后再说"] + [text="立即更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/12727318',
-    },
-    {
       key: 9,
       name: '权限提示-通知权限',
       matchTime: 10000,

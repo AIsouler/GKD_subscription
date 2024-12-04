@@ -12,7 +12,7 @@ export default defineGkdApp({
         {
           matches:
             '[desc="Advertisement"] + View >(2) View + Button[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12642204'],
+          snapshotUrls: 'https://i.gkd.li/i/12642204',
         },
       ],
     },

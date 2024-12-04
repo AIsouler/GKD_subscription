@@ -7,15 +7,22 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
-      activityIds: [
-        'com.moutai.mall.MainActivity',
-        'com.moutai.mall.module.splash.SplashActivity',
-      ],
-      rules:
-        '[id="com.moutai.mall:id/ivPic"] + ViewGroup + [id="com.moutai.mall:id/vClose"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12745130', // activityId: 'com.moutai.mall.MainActivity'
-        'https://i.gkd.li/i/12745153', // activityId: 'com.moutai.mall.module.splash.SplashActivity'
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            'com.moutai.mall.MainActivity',
+            'com.moutai.mall.module.splash.SplashActivity',
+          ],
+          matches:
+            '[id="com.moutai.mall:id/ivPic"] + ViewGroup + [id="com.moutai.mall:id/vClose"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12745130',
+            'https://i.gkd.li/i/12745153',
+          ],
+        },
       ],
     },
     {
@@ -24,9 +31,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',
-      snapshotUrls: 'https://i.gkd.li/i/12745142',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches:
+            '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/12745142',
+        },
+      ],
     },
   ],
 });

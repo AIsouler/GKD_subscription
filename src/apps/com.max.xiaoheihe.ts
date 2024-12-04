@@ -8,10 +8,10 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-签到成功弹窗',
       desc: '返回关闭弹窗',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           action: 'back',

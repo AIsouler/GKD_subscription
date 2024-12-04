@@ -7,13 +7,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      activityIds: 'com.lanjinger.choiassociatedpress.main.OperateActivity',
-      rules: '@ImageView[id$="iv_back"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13749206',
+      rules: [
+        {
+          activityIds: 'com.lanjinger.choiassociatedpress.main.OperateActivity',
+          matches: '@ImageView[id$="iv_back"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13749206',
+        },
+      ],
     },
   ],
 });

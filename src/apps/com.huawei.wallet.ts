@@ -8,10 +8,10 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-钱包扩展服务提示',
       desc: '点击关闭',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           matches:

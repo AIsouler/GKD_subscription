@@ -420,7 +420,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.kmxs.reader',
     name: '七猫免费小说',
-    deprecatedKeys: [0],
+    deprecatedKeys: [-2, 0, 6, 7],
   },
   {
     id: 'com.magicalstory.AppStore',
@@ -435,7 +435,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.netease.cloudmusic',
     name: '网易云音乐',
-    deprecatedKeys: [3, 9, 11, 12],
+    deprecatedKeys: [3, 9, 10, 11, 12],
   },
   {
     id: 'com.netease.mobimail',
@@ -540,7 +540,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.netease.newsreader.activity',
     name: '网易新闻',
-    deprecatedKeys: [3],
+    deprecatedKeys: [1, 3],
   },
   {
     id: 'com.sina.weibo',
@@ -565,7 +565,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.huawei.android.thememanager',
     name: '华为主题',
-    deprecatedKeys: [3, 4, 5, 6],
+    deprecatedKeys: [3, 4, 5, 6, 8],
   },
   {
     id: 'com.ximalaya.ting.android',
@@ -585,7 +585,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.mihoyo.hyperion',
     name: '米游社',
-    deprecatedKeys: [1, 4, 5],
+    deprecatedKeys: [1, 2, 4, 5],
   },
   {
     id: 'com.miui.packageinstaller',
@@ -745,6 +745,46 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.guwendao.gwd',
     name: '古文岛',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.huawei.music',
+    name: '华为音乐',
+    deprecatedKeys: [2, 4, 5, 6, 7],
+  },
+  {
+    id: 'com.icbc',
+    name: '中国工商银行',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.jd.app.reader',
+    name: '京东读书',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.jsmcc',
+    name: '中国移动江苏',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.kuaiduizuoye.scan',
+    name: '快对',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.maidu.gkld',
+    name: '公考雷达',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.miaoying.appmy.cs',
+    name: '新小财神影视',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.netease.mail',
+    name: '网易邮箱大师',
     deprecatedKeys: [1],
   },
 ];

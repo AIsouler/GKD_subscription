@@ -22,12 +22,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@[text="以后再说"] + [text="立即更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/13228520',
+      rules: [
+        {
+          activityIds: '.MarketActivity',
+          matches: '@[text="以后再说"] + [text="立即更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/13228520',
+        },
+      ],
     },
     {
       key: 3,

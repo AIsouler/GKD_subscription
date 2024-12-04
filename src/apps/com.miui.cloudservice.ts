@@ -34,11 +34,12 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       desc: '点击[以后再说]',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: '.ui.MiCloudMainActivity',
           matches: '@[text="以后再说"] + [text="立即升级"]',
           exampleUrls:
             'https://m.gkd.li/57941037/789b4472-f989-4d32-aff2-6b657b6e0deb',

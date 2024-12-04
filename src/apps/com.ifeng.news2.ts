@@ -70,13 +70,18 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-定位权限',
-      desc: '自动点击取消',
+      desc: '点击取消',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ifeng.news2.activity.IfengTabMainActivity',
-      rules:
-        '[text*="请求您的位置"] + [id="com.ifeng.news2:id/permission_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705531',
+      rules: [
+        {
+          activityIds: 'com.ifeng.news2.activity.IfengTabMainActivity',
+          matches:
+            '[text*="请求您的位置"] + [id="com.ifeng.news2:id/permission_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/12705531',
+        },
+      ],
     },
   ],
 });

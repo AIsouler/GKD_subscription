@@ -40,11 +40,16 @@ export default defineGkdApp({
     {
       key: 3,
       name: '其他-关闭[发现新截图]提示',
-      fastQuery: true,
-      activityIds: '.mainmenu.mainactivity.MainActivity',
-      rules: 'RelativeLayout[vid="rl_screenshot"] + ImageView[vid="iv_esc"]',
-      exampleUrls: 'https://e.gkd.li/c66080aa-1758-4a69-9752-aa1373d7f2b5',
-      snapshotUrls: 'https://i.gkd.li/i/16975714',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.mainmenu.mainactivity.MainActivity',
+          matches:
+            'RelativeLayout[vid="rl_screenshot"] + ImageView[vid="iv_esc"]',
+          exampleUrls: 'https://e.gkd.li/c66080aa-1758-4a69-9752-aa1373d7f2b5',
+          snapshotUrls: 'https://i.gkd.li/i/16975714',
+        },
+      ],
     },
   ],
 });
