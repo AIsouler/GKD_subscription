@@ -17,7 +17,7 @@ export default defineGkdApp({
             'com.zhihu.android.ContentActivity',
           ],
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n * >n [text*="广告"][childCount=0][id=null][desc=null]',
+            '@[clickable=true][visibleToUser=true] -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n * >n [text*="广告"][childCount=0][id=null][desc=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/13849671',
             'https://i.gkd.li/i/14645530',
@@ -27,6 +27,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14178980',
             'https://i.gkd.li/i/14206949',
             'https://i.gkd.li/i/14206988',
+            'https://i.gkd.li/i/18008867',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/17002118',
