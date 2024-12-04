@@ -56,7 +56,7 @@ FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visib
 matches: [
     '[text*="内测" || text*="测试版" || text*="新版" || text*="更新" || text*="升级" || text*="体验" || text*="內測" || text*="測試版" || text*="升級" || text*="體驗" || text*="Update" || text*="Upgrade" || text*="Experience"][text!*="自动" && text!*="自動" && text!*="成功" && text!*="失败" && text!*="失敗" && text!*="检查更新" && text!*="检测更新" && text!*="卸载"][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
     '[text*="更新" || text*="下载" || text*="安装" || text*="升级" || text*="查看" || text*="体验" || text*="确定" || text*="确认"][text.length<6][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
-    '[text*="不再提醒" || text$="再说" || text$="拒绝" || text$="再想想" || text*="再看看" || text^="忽略" || text^="暂不" || text^="放弃" || text^="取消" || text$="不要" || text$="再說" || text$="暫不" || text$="拒絕" || text*="稍后" || text^="关闭" || text$="Later" || text^="Ignore" || text^="Not now" || text^="Cancel" || vid="iv_close" || vid="iv_cancel" || vid="close" || vid="Close" || vid="img_close" || vid="btn_close" || vid="ivCancel" || vid="ivClose" || vid="imgClose" || vid="iv_negative"][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
+    '[text*="不再提醒" || text$="再说" || text$="拒绝" || text$="再想想" || text*="再看看" || text^="忽略" || text^="暂不" || text^="放弃" || text^="取消" || text$="不要" || text$="再說" || text$="暫不" || text$="拒絕" || text*="稍后" || text^="关闭" || text$="Later" || text^="Ignore" || text^="Not now" || text^="Cancel" || vid="iv_close" || vid="iv_cancel" || vid="close" || vid="Close" || vid="img_close" || vid="btn_close" || vid="ivCancel" || vid="cancel" || vid="Cancel" || vid="ivClose" || vid="imgClose" || vid="iv_negative"][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
 ],
 ```
 
@@ -239,3 +239,27 @@ matches: [
 |                                                               |                                                               |                                                               |                                                               |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | ![img](https://e.gkd.li/f058df20-ae01-435b-a0e5-82474944d768) | ![img](https://e.gkd.li/189a48f8-0733-4d08-acec-aa4ad8cc0bb2) | ![img](https://e.gkd.li/7524bc17-8ff6-4fe1-95dd-3b9c4ae0a4e8) | ![img](https://e.gkd.li/27282270-d731-4cd8-a644-0c2b2029dac2) |
+
+## 卡片广告
+
+- 选择器-1 **（可快速查询！）**
+
+```txt
+@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠"]
+```
+
+示例：
+
+[https://i.gkd.li/i/14469848](https://i.gkd.li/i/14469848?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3Zpc2libGVUb1VzZXI9dHJ1ZV0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdIC0gTGluZWFyTGF5b3V0W2NoaWxkQ291bnQ9Ml0gPiBbdGV4dD0i5LiL6L295bqU55SoIiB8fCB0ZXh0PSLnq4vljbPkuIvovb0iIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIl0)
+
+[https://i.gkd.li/i/13999284](https://i.gkd.li/i/13999284?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3Zpc2libGVUb1VzZXI9dHJ1ZV0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdIC0gTGluZWFyTGF5b3V0W2NoaWxkQ291bnQ9Ml0gPiBbdGV4dD0i5LiL6L295bqU55SoIiB8fCB0ZXh0PSLnq4vljbPkuIvovb0iIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIl0)
+
+[https://i.gkd.li/i/13521680](https://i.gkd.li/i/13521680?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3Zpc2libGVUb1VzZXI9dHJ1ZV0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdIC0gTGluZWFyTGF5b3V0W2NoaWxkQ291bnQ9Ml0gPiBbdGV4dD0i5LiL6L295bqU55SoIiB8fCB0ZXh0PSLnq4vljbPkuIvovb0iIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIl0)
+
+[https://i.gkd.li/i/13488870](https://i.gkd.li/i/13488870?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3Zpc2libGVUb1VzZXI9dHJ1ZV0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdIC0gTGluZWFyTGF5b3V0W2NoaWxkQ291bnQ9Ml0gPiBbdGV4dD0i5LiL6L295bqU55SoIiB8fCB0ZXh0PSLnq4vljbPkuIvovb0iIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIl0)
+
+示例图：
+
+|                                                               |                                                               |                                                               |                                                               |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![img](https://e.gkd.li/8ae02b37-765b-46bd-a206-74e3f0b1714b) | ![img](https://e.gkd.li/e254a7b5-796a-4fb4-afe5-82fa4af84dc9) | ![img](https://e.gkd.li/9b9b3d63-ffaa-4a49-9bb5-e2e16aa85484) | ![img](https://e.gkd.li/fbf15dce-2355-4d60-b6b3-70d3eaf92abf) |
