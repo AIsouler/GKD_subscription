@@ -19,7 +19,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13434468',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           matches: '@LinearLayout > [text*="关闭此广告"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13498631',
         },

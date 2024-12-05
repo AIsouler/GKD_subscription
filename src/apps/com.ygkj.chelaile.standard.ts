@@ -73,6 +73,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
           matches:
             '[id="com.ygkj.chelaile.standard:id/cll_interstitial_close"][clickable=true]',
           exampleUrls:

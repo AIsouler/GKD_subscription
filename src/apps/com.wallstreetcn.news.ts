@@ -25,10 +25,10 @@ export default defineGkdApp({
       key: 10,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      activityIds: ['com.wallstreetcn.news.ProxyMainActivity'],
-      fastQuery: true,
       rules: [
         {
+          fastQuery: true,
+          activityIds: 'com.wallstreetcn.news.ProxyMainActivity',
           matches:
             '[text="广告" || text="活动"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13262717',

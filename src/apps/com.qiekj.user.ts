@@ -44,6 +44,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.MainActivity',
           matches:
             '[id="com.qiekj.user:id/btn_cancelUpdate"][text*="暂不更新"]',
           snapshotUrls: 'https://i.gkd.li/i/13435011',

@@ -23,6 +23,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -69,6 +70,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.activity.MainActivity',
       rules: [
         {
           key: 0,
@@ -90,15 +92,6 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.ugc.detail.activity.TikTokActivity',
       rules: [
         {
-          key: -1,
-          preKeys: 0,
-          actionCd: 35000, //APP更新后点击不感兴趣不会跳过当前视频了，所以需要冷却一下等下一次重新跳过广告视频
-          name: '点击不感兴趣',
-          matches:
-            '@LinearLayout[clickable=true] > RelativeLayout + TextView[text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/12679277',
-        },
-        {
           key: 0,
           name: '点击右上角[更多]图标按钮',
           matches: 'ImageView[clickable=true][desc="更多"]',
@@ -112,6 +105,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13186082',
             'https://i.gkd.li/i/13930050',
           ],
+        },
+        {
+          key: -1,
+          preKeys: [0],
+          actionCd: 35000, //APP更新后点击不感兴趣不会跳过当前视频了，所以需要冷却一下等下一次重新跳过广告视频
+          name: '点击不感兴趣',
+          matches:
+            '@LinearLayout[clickable=true] > RelativeLayout + TextView[text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/12679277',
         },
       ],
     },
@@ -153,9 +155,9 @@ export default defineGkdApp({
     {
       key: 13,
       name: '局部广告-底部话题推荐弹窗',
-      activityIds: 'com.ss.android.article.news.activity.MainActivity',
       rules: [
         {
+          activityIds: 'com.ss.android.article.news.activity.MainActivity',
           name: '话题谈论',
           matches:
             'FlattenUIText[text="参与讨论"] + FlattenUIImage[clickable=true]',
@@ -178,6 +180,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13402468',
         },
         {
+          preKeys: [0],
           name: '等待30s点击"关闭"',
           actionDelay: 30000,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
@@ -192,7 +195,6 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches: 'FrameLayout[childCount=8] > FlattenUIImage[index=7]',
           snapshotUrls: 'https://i.gkd.li/i/13828331',

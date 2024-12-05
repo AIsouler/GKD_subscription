@@ -11,10 +11,10 @@ export default defineGkdApp({
         {
           key: 0,
           name: '快手广告',
-          activityIds: 'com.whpe.qrcode.hunan_xiangtan.MainActivity',
           fastQuery: true,
+          activityIds: 'com.whpe.qrcode.hunan_xiangtan.MainActivity',
           matches:
-            '@[id="com.whpe.qrcode.hunan_xiangtan:id/iv_close"] +n * >n [text="广告"]',
+            '[id="com.whpe.qrcode.hunan_xiangtan:id/interact_ad_root"] > [id="com.whpe.qrcode.hunan_xiangtan:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13476265',
         },
       ],

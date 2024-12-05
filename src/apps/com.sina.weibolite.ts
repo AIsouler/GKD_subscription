@@ -43,8 +43,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.sina.weibolite:id/ed_btn_negative"]',
-      snapshotUrls: 'https://i.gkd.li/i/13727728',
+      rules: [
+        {
+          activityIds: 'com.weico.international.activity.MainFragmentActivity',
+          matches: '[id="com.sina.weibolite:id/ed_btn_negative"]',
+          snapshotUrls: 'https://i.gkd.li/i/13727728',
+        },
+      ],
     },
   ],
 });

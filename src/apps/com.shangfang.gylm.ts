@@ -7,12 +7,17 @@ export default defineGkdApp({
     {
       key: 2,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.shangfang.gylm:id/iv_upgrade_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13643599',
+      rules: [
+        {
+          activityIds: '.mvp.ui.home.activity.UpdateActivityV2',
+          matches: '[id="com.shangfang.gylm:id/iv_upgrade_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13643599',
+        },
+      ],
     },
   ],
 });

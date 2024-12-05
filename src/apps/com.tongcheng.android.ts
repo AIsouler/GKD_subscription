@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13167070',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           matches:
             '@* > * > [id="com.tongcheng.android:id/tv_home_banner_pop_up"][text="关闭"]',

@@ -19,6 +19,9 @@ export default defineGkdApp({
         {
           key: 10,
           name: '双十一广告',
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           activityIds:
             'com.sodalife.sodax.libraries.ads.gromore.GroMoreSplashActivity',
           matches:

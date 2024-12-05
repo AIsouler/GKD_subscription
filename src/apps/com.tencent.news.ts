@@ -8,10 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-信息流广告',
       desc: '自动点击"更多"->"不感兴趣"',
-      activityIds: [
-        'com.tencent.news.activity.SplashActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
+      activityIds: 'com.tencent.news.activity.SplashActivity',
       rules: [
         {
           key: 0,
@@ -21,7 +18,6 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12755834',
             'https://i.gkd.li/i/12755852', // 使用 FrameLayout[id="android:id/content"][childCount=1] 进行限定，防止点击"更多"按钮后继续触发规则
-            'https://i.gkd.li/i/12755914', // activityId: 'com.miui.home.launcher.Launcher'
           ],
         },
         {
@@ -44,7 +40,6 @@ export default defineGkdApp({
           matches: '@[text="关闭"] + [text="查看活动详情"]',
           snapshotUrls: 'https://i.gkd.li/i/12755872',
         },
-        // 在这个规则组中继续添加广告、活动弹窗
       ],
     },
     {
@@ -53,8 +48,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="开启通知"] + [text="先不了"]',
-      snapshotUrls: 'https://i.gkd.li/i/12755824',
+      rules: [
+        {
+          activityIds: '.activity.SplashActivity',
+          matches: '[text="开启通知"] + [text="先不了"]',
+          snapshotUrls: 'https://i.gkd.li/i/12755824',
+        },
+      ],
     },
   ],
 });

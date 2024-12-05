@@ -7,6 +7,9 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -20,9 +23,10 @@ export default defineGkdApp({
         {
           key: 1,
           name: '百度广告',
+          fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
-            '@ImageView[clickable=true] - RelativeLayout > RelativeLayout > ImageView + ImageView',
+            '@ImageView[clickable=true][childCount=0] - RelativeLayout >3 [text^="摇动手机"]',
           snapshotUrls: 'https://i.gkd.li/i/13761232',
         },
       ],

@@ -23,13 +23,20 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-活动广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      activityIds: 'com.vivo.space.ui.VivoSpaceTabActivity',
-      rules: 'Image[text=""] + [text=""][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13218155',
-        'https://i.gkd.li/i/13292907',
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.vivo.space.ui.VivoSpaceTabActivity',
+          matches:
+            'View[childCount=2] > @[index=1][clickable=true][visibleToUser=true][childCount=0] <<n [id="com.vivo.space:id/floating_window_web"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13218155',
+            'https://i.gkd.li/i/13292907',
+          ],
+        },
       ],
     },
     {
@@ -42,6 +49,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.VivoSpaceTabActivity',
           matches: 'Button[id="com.vivo.space:id/vbutton_title"][text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/13771581',
         },

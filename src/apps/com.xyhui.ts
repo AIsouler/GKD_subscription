@@ -121,27 +121,36 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-首页-右侧浮窗广告',
       fastQuery: true,
-      activityIds: [
-        'com.xyhui.start.PUMainActivity',
-        'com.xyhui.start.LoadingActivity',
-      ],
-      rules: 'ImageView[id="com.xyhui:id/deleteIv"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12846543',
-        'https://i.gkd.li/i/12868119',
+      rules: [
+        {
+          activityIds: [
+            'com.xyhui.start.PUMainActivity',
+            'com.xyhui.start.LoadingActivity',
+          ],
+          matches: 'ImageView[id="com.xyhui:id/deleteIv"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12846543',
+            'https://i.gkd.li/i/12868119',
+          ],
+        },
       ],
     },
     {
       key: 3,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: 'ImageView[id="com.xyhui:id/closeIv"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12908853',
-        'https://i.gkd.li/i/12908865',
+      rules: [
+        {
+          activityIds: ['.start.PUMainActivity', '.start.LoadingActivity'],
+          matches: 'ImageView[id="com.xyhui:id/closeIv"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12908853',
+            'https://i.gkd.li/i/12908865',
+          ],
+        },
       ],
     },
   ],

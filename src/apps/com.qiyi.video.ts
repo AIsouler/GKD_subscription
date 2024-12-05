@@ -12,10 +12,14 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules: '@LinearLayout > [text="关闭"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13160866',
-        'https://i.gkd.li/i/13379565',
+      rules: [
+        {
+          matches: '@LinearLayout > [text="关闭"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13160866',
+            'https://i.gkd.li/i/13379565',
+          ],
+        },
       ],
     },
     {
@@ -39,12 +43,17 @@ export default defineGkdApp({
     {
       key: 3,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      snapshotUrls: 'https://i.gkd.li/i/12838152',
-      rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]',
+      rules: [
+        {
+          activityIds: 'org.qiyi.android.video.MainActivity',
+          matches: '[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]',
+          snapshotUrls: 'https://i.gkd.li/i/12838152',
+        },
+      ],
     },
     {
       key: 4,
@@ -53,19 +62,27 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12838158',
-        'https://i.gkd.li/i/13684912', //activityIds: 'org.qiyi.android.search.view.PhoneSearchActivity',
+      rules: [
+        {
+          activityIds: [
+            'org.qiyi.android.video.MainActivity',
+            'org.qiyi.android.search.view.PhoneSearchActivity',
+          ],
+          matches: '[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12838158',
+            'https://i.gkd.li/i/13684912',
+          ],
+        },
       ],
     },
     {
       key: 5,
       name: '全屏广告-播放页-插入广告',
-      desc: '视频播放前或播放中途插入的广告。默认关闭。',
-      activityIds: 'org.iqiyi.video.activity.PlayerActivity',
+      desc: '视频播放前或播放中途插入的广告',
       rules: [
         {
+          activityIds: 'org.iqiyi.video.activity.PlayerActivity',
           matches:
             '@RelativeLayout[id="com.qiyi.video:id/unused_res_a"] > TextView[text="关闭广告"]',
           snapshotUrls: [

@@ -23,10 +23,15 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-首页右侧浮动广告',
-      fastQuery: true,
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      rules: '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
-      snapshotUrls: ['https://i.gkd.li/i/12472620'],
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          matches:
+            '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
+          snapshotUrls: 'https://i.gkd.li/i/12472620',
+        },
+      ],
     },
     {
       key: 1,
@@ -59,22 +64,12 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-播放页面-底部推荐列表-夹杂广告',
+      name: '分段广告-播放页面-底部推荐列表-夹杂广告',
       desc: '点击关闭-点击屏蔽',
       fastQuery: true,
       rules: [
         {
-          activityIds: [
-            'com.ximalaya.ting.android.main.dialog',
-            'com.ximalaya.ting.android.host.activity.MainActivity',
-          ],
-          matches: '@[clickable=true] > [text="屏蔽"] + [text="关闭当前广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12506269',
-            'https://i.gkd.li/i/13296565', //com.ximalaya.ting.android.host.activity.MainActivity
-          ],
-        },
-        {
+          key: 1,
           activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
           matches:
             '@[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true] > [id="com.ximalaya.ting.android:id/main_mark_text"][text="广告"]',
@@ -84,20 +79,38 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13314183', // 原规则clickable=false容易误触"橱窗"'[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
           ],
         },
+        {
+          preKeys: [1],
+          key: 2,
+          activityIds: [
+            'com.ximalaya.ting.android.main.dialog',
+            'com.ximalaya.ting.android.host.activity.MainActivity',
+          ],
+          matches: '@[clickable=true] > [text="屏蔽"] + [text="关闭当前广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12506269',
+            'https://i.gkd.li/i/13296565',
+          ],
+        },
       ],
     },
     {
       key: 3,
       name: '局部广告-播放页面-播放前广告',
-      fastQuery: true,
-      activityIds: [
-        'com.ximalaya.ting.android.host.activity.MainActivity',
-        'com.ximalaya.ting.android.framework.view.dialog',
-      ],
-      rules: '[id="com.ximalaya.ting.android:id/main_play_ad_close_real"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12506250',
-        'https://i.gkd.li/i/12520626',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.ximalaya.ting.android.host.activity.MainActivity',
+            'com.ximalaya.ting.android.framework.view.dialog',
+          ],
+          matches:
+            '[id="com.ximalaya.ting.android:id/main_play_ad_close_real"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12506250',
+            'https://i.gkd.li/i/12520626',
+          ],
+        },
       ],
     },
     {
@@ -134,9 +147,9 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-热播推荐广告',
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: [
         {
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
           matches: '[text="热播推荐"] + ImageView + ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12506270',
           // 点击后出现 com.ximalaya.ting.android.main.dialog 弹窗
@@ -144,24 +157,15 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 6,
-      name: '更新提示',
-      desc: '点击关闭',
+      key: 7,
+      name: '青少年模式',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.ximalaya.ting.android:id/host_tv_update_later"]',
-      snapshotUrls: 'https://i.gkd.li/i/12506287',
-    },
-    {
-      key: 7,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: '.host.activity.MainActivity',
           matches: [
             '[text*="青少年模式"][id="com.ximalaya.ting.android:id/host_btn_set"]',
             '[id="com.ximalaya.ting.android:id/host_dialog_close"]',
@@ -173,11 +177,15 @@ export default defineGkdApp({
     {
       key: 8,
       name: '局部广告-评论区广告',
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      fastQuery: true,
-      rules:
-        '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12869426',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          matches:
+            '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12869426',
+        },
+      ],
     },
     {
       key: 10,
@@ -186,19 +194,27 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      rules:
-        '[text="你可能感兴趣的专辑"] + [id="com.ximalaya.ting.android:id/main_iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13251713',
+      rules: [
+        {
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          matches:
+            '[text="你可能感兴趣的专辑"] + [id="com.ximalaya.ting.android:id/main_iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13251713',
+        },
+      ],
     },
     {
       key: 11,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-      rules:
-        '@[id="com.ximalaya.ting.android:id/host_close_firework"] +2 [id="com.ximalaya.ting.android:id/host_firework_ad_tag"]',
-      snapshotUrls: 'https://i.gkd.li/i/13263421',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          matches:
+            '@[id="com.ximalaya.ting.android:id/host_close_firework"] +2 [id="com.ximalaya.ting.android:id/host_firework_ad_tag"]',
+          snapshotUrls: 'https://i.gkd.li/i/13263421',
+        },
+      ],
     },
     {
       key: 12,

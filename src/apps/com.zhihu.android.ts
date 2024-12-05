@@ -266,6 +266,10 @@ export default defineGkdApp({
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
+      activityIds: [
+        '.app.ui.activity.MainActivity',
+        '.feature.short_container_feature.ui.ShortContainerHostActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -279,7 +283,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           name: '点击[取消]',
           matches: ['[text="去应用市场"]', '[text="取消"]'],
@@ -309,6 +313,7 @@ export default defineGkdApp({
       desc: '自动点击展开',
       rules: [
         {
+          fastQuery: true,
           activityIds:
             'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
           matches:

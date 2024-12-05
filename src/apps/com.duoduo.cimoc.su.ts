@@ -44,7 +44,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.duoduo.cimoc.su.MainActivity',
           matches:
-            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠"]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13999284',
             'https://i.gkd.li/i/13999376',

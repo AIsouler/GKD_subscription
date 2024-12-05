@@ -7,18 +7,22 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      activityIds: 'com.tuying.kuimg.rjm.MainActivity',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
+          activityIds: 'com.tuying.kuimg.rjm.MainActivity',
           matches:
-            '[id="com.tuying.kuimg.rjm:id/ksad_tk_view"] >n @ViewGroup[childCount=1][clickable=true] > ImageView',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13166088',
         },
         {
           key: 1,
-          matches:
-            '[id="com.tuying.kuimg.rjm:id/ksad_tk_view"] >n @ViewGroup > [text="跳过"]',
+          activityIds: 'com.tuying.kuimg.rjm.MainActivity',
+          matches: ['[text="广告"]', '@ViewGroup > [text="跳过"]'],
           snapshotUrls: 'https://i.gkd.li/i/13166086',
         },
       ],

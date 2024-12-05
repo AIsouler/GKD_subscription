@@ -7,10 +7,12 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
-          name: '天降福利',
           activityIds: 'com.uzmap.pkg.EntranceActivity',
           matches:
             'View[childCount=2] > ImageView + Button[childCount=0][clickable=true]',

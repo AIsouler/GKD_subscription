@@ -8,9 +8,16 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-视频推荐弹窗',
       fastQuery: true,
-      activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
-      rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
-      snapshotUrls: 'https://i.gkd.li/i/12701029',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
+          matches: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
+          snapshotUrls: 'https://i.gkd.li/i/12701029',
+        },
+      ],
     },
     {
       key: 4,

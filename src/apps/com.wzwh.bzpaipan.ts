@@ -7,11 +7,15 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告',
-      fastQuery: true,
-      activityIds: 'com.qq.e.ads.PortraitADActivity',
-      rules:
-        '@ImageView[clickable=true] < LinearLayout[childCount=1] <2 FrameLayout[childCount=2] < [id="android:id/content"][childCount=1]',
-      snapshotUrls: 'https://i.gkd.li/i/13162912',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.qq.e.ads.PortraitADActivity',
+          matches:
+            '@ImageView[clickable=true] < LinearLayout[childCount=1] <2 FrameLayout[childCount=2] < [id="android:id/content"][childCount=1]',
+          snapshotUrls: 'https://i.gkd.li/i/13162912',
+        },
+      ],
     },
   ],
 });

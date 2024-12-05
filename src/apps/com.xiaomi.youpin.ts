@@ -28,6 +28,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.globalpopwindow.popwindow.PopWindowActivity',
           matches: '[id="com.xiaomi.youpin:id/ypd_alert_close_image"]',
           snapshotUrls: 'https://i.gkd.li/i/12836775',
         },

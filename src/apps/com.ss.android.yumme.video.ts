@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.main.MainActivity',
           matches: ['[text="立即升级"]', '[text="以后再说"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12534016',
@@ -30,6 +31,7 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: 'TextView[text="去商店评分"]',
           snapshotUrls: 'https://i.gkd.li/i/15858132',
         },

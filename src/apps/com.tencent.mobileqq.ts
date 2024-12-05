@@ -99,13 +99,13 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14138572',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 2,
+          fastQuery: true,
           activityIds: [
             'com.tencent.mobileqq.activity.SplashActivity',
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
           ],
-          fastQuery: true,
           matches: '@[clickable=true] > * > ImageView + [text="隐藏此条动态"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13761147',
@@ -115,11 +115,11 @@ export default defineGkdApp({
         {
           preKeys: [0, 1],
           key: 4,
+          fastQuery: true,
           activityIds: [
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
             'com.tencent.mobileqq.activity.SplashActivity',
           ],
-          fastQuery: true,
           matches: '@[clickable=true] >(1,2) ImageView + [text="关闭此条广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12840889',
@@ -192,16 +192,21 @@ export default defineGkdApp({
     {
       key: 4,
       name: '局部广告-顶部SVIP广告',
-      desc: '消息界面-搜索框和消息记录之间的卡片广告,点击关闭右侧x',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules:
-        'LinearLayout > TextView[text*="SVIP"||text*="超级会员"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12706907',
-        'https://i.gkd.li/i/13107298',
-        'https://i.gkd.li/i/12793359',
-        'https://i.gkd.li/i/12855048',
-        'https://i.gkd.li/i/13228108',
+      desc: '消息界面-搜索框和消息记录之间的卡片广告,点击右侧关闭',
+      fastQuery: true,
+      rules: [
+        {
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches:
+            '@[index=parent.childCount.minus(1)][name$="ImageView"||name$="Button"][id!=null][clickable=true] - FrameLayout[childCount<=2] - TextView[text*="SVIP"||text*="超级会员"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12706907',
+            'https://i.gkd.li/i/13107298',
+            'https://i.gkd.li/i/12793359',
+            'https://i.gkd.li/i/12855048',
+            'https://i.gkd.li/i/13228108',
+          ],
+        },
       ],
     },
     {
@@ -312,18 +317,22 @@ export default defineGkdApp({
       name: '功能类-自动勾选原图',
       desc: '发送图片时自动勾选原图，可手动取消勾选',
       actionMaximum: 1,
-      fastQuery: true,
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
-        'com.tencent.mobileqq.activity.photo.album.NewPhotoListActivity',
-      ],
-      rules: '@CheckBox[checked=false] + [text="原图"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12705556', // 未勾选原图
-        'https://i.gkd.li/i/12705559', // 已勾选原图
-        'https://i.gkd.li/i/13295142',
-        'https://i.gkd.li/i/13476247',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.tencent.mobileqq.activity.SplashActivity',
+            'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
+            'com.tencent.mobileqq.activity.photo.album.NewPhotoListActivity',
+          ],
+          matches: '@CheckBox[checked=false] + [text="原图"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12705556', // 未勾选原图
+            'https://i.gkd.li/i/12705559', // 已勾选原图
+            'https://i.gkd.li/i/13295142',
+            'https://i.gkd.li/i/13476247',
+          ],
+        },
       ],
     },
     {
@@ -355,7 +364,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12847819',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           matches:
             '@LinearLayout[clickable=true] > TextView[text="关闭此条广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12847821',
@@ -405,7 +414,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           matches:
             '@LinearLayout[id!=null][clickable=true] > LinearLayout > [text="减少此类推荐"]',
@@ -427,6 +436,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.activity.SplashActivity',
           matches: '@[desc="关闭"] <2 * >2 Button[text^="立即"][text.length=4]',
           snapshotUrls: [
             'https://i.gkd.li/i/13386719',
@@ -435,6 +445,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: '.upgrade.activity.UpgradeActivity',
           matches: ['[text="立即升级"]', '[text="稍后处理"]'],
           snapshotUrls: 'https://i.gkd.li/i/14724108',
         },
@@ -534,7 +545,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14019384',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           fastQuery: true,
           activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
@@ -546,15 +557,13 @@ export default defineGkdApp({
           activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
           matches: [
             // 限定
-            'ViewGroup[desc="返回"]',
-            'ViewGroup[desc="首页"]',
-            'ViewGroup[desc="分享"]',
+            'ViewGroup[desc="返回"] +2 ViewGroup[desc="首页"] + ViewGroup[desc="分享"]',
             'ViewGroup[childCount=6] > ViewGroup[childCount=2][clickable=true][visibleToUser=true]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/14549503',
         },
         {
-          preKeys: 2,
+          preKeys: [2],
           key: 3,
           activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
           matches:
@@ -704,11 +713,16 @@ export default defineGkdApp({
     {
       key: 28,
       name: '全屏广告-账号信息页面-新人SVIP领取弹窗',
-      activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
-      rules: '[childCount=3] > [desc*="活动"] + [desc^="关闭"][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/14217758',
-        'https://i.gkd.li/i/14217783',
+      rules: [
+        {
+          activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
+          matches:
+            '[childCount=3] > [desc*="活动"] + [desc^="关闭"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14217758',
+            'https://i.gkd.li/i/14217783',
+          ],
+        },
       ],
     },
     {

@@ -24,34 +24,31 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '穿山甲SDK',
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.MainActivity',
+          matches: [
+            '[text="广告" || vid="interact_ad_root"]',
+            '[vid="iv_close"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13771774',
+            'https://i.gkd.li/i/13932707',
+          ],
+        },
+        {
+          key: 1,
+          activityIds: '.MainActivity',
           matches:
-            '@[id="com.qinlin.edoor:id/iv_close"] - LinearLayout >n [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/13771774',
+            '@ImageView[clickable=true] - [desc="立即领取" || desc="开心收下"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12707736',
+            'https://i.gkd.li/i/12707738',
+          ],
         },
       ],
-    },
-    {
-      key: 10,
-      name: '全屏广告-开门有奖弹窗',
-      activityIds: 'com.qinlin.edoor.MainActivity',
-      rules: '[desc="开门有奖"] +2 [desc="立即领取"] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/12707736',
-    },
-    {
-      key: 11,
-      name: '全屏广告-获得金币弹窗',
-      activityIds: 'com.qinlin.edoor.MainActivity',
-      rules: ['[desc="获得金币"] +3 [desc="开心收下"] + ImageView'],
-      snapshotUrls: ['https://i.gkd.li/i/12707738'],
-    },
-    {
-      key: 12,
-      name: '全屏广告-开门成功后弹窗广告',
-      desc: '来自"腾讯广告sdk"',
-      rules: '[vid="interact_ad_root"] >2 [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13932707',
     },
   ],
 });

@@ -27,11 +27,16 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[text^="有新版本"] + FrameLayout + LinearLayout + [text="暂不升级"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12700486',
-        'https://i.gkd.li/i/13799951',
+      rules: [
+        {
+          activityIds: '.ona.update.trunk.client.TrunkUpdateActivity',
+          matches:
+            '[text^="有新版本"] + FrameLayout + LinearLayout + [text="暂不升级"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12700486',
+            'https://i.gkd.li/i/13799951',
+          ],
+        },
       ],
     },
     {
@@ -110,7 +115,7 @@ export default defineGkdApp({
         },
         // 以下是配合本规则组内其他key使用的规则，反馈界面的规则都是一样的
         {
-          preKeys: 6,
+          preKeys: [6],
           key: 96,
           fastQuery: true,
           matches:
@@ -269,10 +274,10 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      activityIds: '.ona.activity.SplashHomeActivity',
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
           snapshotUrls: 'https://i.gkd.li/i/12700139',
         },

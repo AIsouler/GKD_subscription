@@ -11,9 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.steampy.app:id/imgClose"] - RelativeLayout [id="com.steampy.app:id/tv_update"]',
-      snapshotUrls: 'https://i.gkd.li/i/13695519',
+      rules: [
+        {
+          activityIds: '.activity.common.MainActivity',
+          matches:
+            '@[id="com.steampy.app:id/imgClose"] - RelativeLayout [id="com.steampy.app:id/tv_update"]',
+          snapshotUrls: 'https://i.gkd.li/i/13695519',
+        },
+      ],
     },
     {
       key: 2,

@@ -10,6 +10,7 @@ export default defineGkdApp({
       desc: '点击卡片广告左上角x',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.didi.sdk.app.MainActivity',
           matches:
             'ImageView[id="com.sdu.didi.psnger:id/second_entrance_img"] + @ImageView[id="com.sdu.didi.psnger:id/left_close_img"]',
@@ -26,6 +27,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          activityIds: 'com.didi.sdk.app.MainActivity',
           matches: '[vid="iv_upgrade_btn_ignore"]',
           exampleUrls:
             'https://m.gkd.li/57941037/ba2a4ef6-d63d-4d67-ab89-222085ea3b3f',

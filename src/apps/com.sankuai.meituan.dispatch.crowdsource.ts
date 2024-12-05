@@ -25,7 +25,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-[保级成功]弹窗',
+      name: '其他-[保级成功]弹窗',
       desc: '点击关闭',
       rules: [
         {

@@ -14,6 +14,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.xtc.widget.phone.popup.activity.CustomActivity14',
           matches: [
             '[text="App功能更新了"]',
             '[id="com.xtc.watch:id/iv_close"]',
@@ -41,6 +42,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: '.view.home.activity.XtcHomeActivity',
           matches: '[id="com.xtc.watch:id/iv_notify_permission_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13059965',
         },
