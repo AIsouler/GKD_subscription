@@ -47,25 +47,19 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
-      name: '局部广告-首页会员广告',
-      activityIds:
-        'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
-      rules:
-        'ImageView < @Button < ViewGroup +3 Button[desc*="YouTube Premium"]',
-      snapshotUrls: 'https://i.gkd.li/i/12877357',
-    },
-    {
       key: 3,
-      name: '全屏广告-订阅浮窗广告',
+      name: '全屏广告-会员广告',
       rules: [
         {
           fastQuery: true,
           activityIds:
             'com.google.android.apps.youtube.app.watchwhile.MainActivity',
           matches:
-            'ViewGroup[desc="免费试用 1 个月"] < * - * > @ViewGroup[visibleToUser=true][text="不用了，谢谢"] <<n [vid="bottom_ui_container"]', // 缺少英文快照
-          snapshotUrls: 'https://i.gkd.li/i/13797512',
+            '@[desc="不用了，谢谢" || desc="关闭"][visibleToUser=true] <<n [vid="bottom_ui_container" || vid="custom"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13797512',
+            'https://i.gkd.li/i/18017075',
+          ],
         },
       ],
     },
