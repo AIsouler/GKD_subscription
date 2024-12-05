@@ -43,6 +43,7 @@ export default defineGkdApp({
           activityIds: [
             '.ui.my.favorite.FavoriteActivity',
             '.ui.game.detail.GameDetailActivity',
+            '.ui.content.msg.MsgIndexActivity',
           ],
           matches: [
             '[text="开启推送通知"][visibleToUser=true]',
@@ -52,6 +53,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/17828834',
             'https://i.gkd.li/i/17949205',
+            'https://i.gkd.li/i/18022146',
           ],
         },
       ],
