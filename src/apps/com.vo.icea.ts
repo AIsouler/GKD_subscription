@@ -8,7 +8,6 @@ export default defineGkdApp({
       key: 5,
       name: '分段广告-播放界面卡片广告',
       desc: '需点击二次弹窗关闭原因',
-      fastQuery: true,
       activityIds: [
         'com.vo.icea.MainActivity',
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -21,8 +20,9 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13510973',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           name: '原因选"不感兴趣"',
+          fastQuery: true,
           matches: '@LinearLayout[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13510972',
         },
@@ -34,18 +34,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.vo.icea.MainActivity',
       rules: [
-        //字节穿山甲广告SDK: key0-4
         {
           key: 0,
           fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[id="com.byted.pangle:id/tt_reward_full_count_down"]',
           snapshotUrls: 'https://i.gkd.li/i/13511052',
         },
         {
           key: 1,
           fastQuery: true,
+          activityIds: '.MainActivity',
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
@@ -56,6 +57,8 @@ export default defineGkdApp({
         {
           key: 2,
           name: '类型2',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text="反馈"] -n View > Image[text=""][width<60]',
           snapshotUrls: [
             'https://i.gkd.li/i/13511052',
@@ -65,6 +68,8 @@ export default defineGkdApp({
         {
           key: 3,
           name: '类型3',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: '[text="反馈"] < View [text*="跳过"][text.length<=10]',
           snapshotUrls: 'https://i.gkd.li/i/13446063',
         },

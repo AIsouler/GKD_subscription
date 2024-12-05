@@ -10,9 +10,14 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id$="com.x2era.xcloud.app:id/iv_cancel"]',
+          activityIds: '.MainActivity',
+          matches: [
+            '[id="com.x2era.xcloud.app:id/tv_upgrade"]',
+            '[id="com.x2era.xcloud.app:id/iv_cancel"]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/13420706',
         },
       ],

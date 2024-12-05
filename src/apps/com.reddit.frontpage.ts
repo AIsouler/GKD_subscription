@@ -14,17 +14,17 @@ export default defineGkdApp({
           activityIds: 'com.reddit.launch.main.MainActivity',
           matches:
             '[vid="sheet_container"] > [vid="cancel_button"][text="Not Now"][clickable=true]',
+          exampleUrls: 'https://e.gkd.li/b640f2c9-4564-420f-8a2f-20f461032f3d',
           snapshotUrls: [
             'https://i.gkd.li/i/13649914',
             'https://i.gkd.li/i/17269009',
           ],
-          exampleUrls: 'https://e.gkd.li/b640f2c9-4564-420f-8a2f-20f461032f3d',
         },
       ],
     },
     {
       key: 4,
-      name: '功能类-NSFW 内容提示',
+      name: '其他-NSFW 内容提示',
       desc: '自动点击 continue',
       fastQuery: true,
       rules: [

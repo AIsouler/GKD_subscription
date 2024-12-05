@@ -10,18 +10,31 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',
-      snapshotUrls: 'https://i.gkd.li/i/13538351',
+      rules: [
+        {
+          activityIds:
+            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
+          matches:
+            '@ImageView[clickable=true][desc=null] < [desc^="开启系统通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/13538351',
+        },
+      ],
     },
     {
       key: 2,
-      name: '权限提示',
+      name: '权限提示-手机信息权限',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.taobao.idlefish.maincontainer.activity.MainActivity',
-      rules:
-        '@Button[visibleToUser=true][text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',
-      snapshotUrls: 'https://i.gkd.li/i/13620277',
+      rules: [
+        {
+          activityIds: '.maincontainer.activity.MainActivity',
+          matches: ['[text*="手机信息权限"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/81e3e4d8-f297-4476-b22c-73f0b97879ee',
+          snapshotUrls: 'https://i.gkd.li/i/13620277',
+        },
+      ],
     },
     {
       key: 3,
@@ -30,13 +43,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="立即升级"] -2 [text="暂不升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/13832272',
+      rules: [
+        {
+          activityIds: '.maincontainer.activity.MainActivity',
+          matches: '[text="立即升级"] -2 [text="暂不升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/13832272',
+        },
+      ],
     },
     {
       key: 4,
       name: '全屏广告-红包弹窗',
       desc: '点击关闭',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -56,19 +75,17 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          action: 'longClick',
           activityIds:
             'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
-          matches: '@[clickable=true] > [desc$="广告"]',
           excludeMatches: '@[clickable=true] > [desc^="反馈成功"]',
-          action: 'longClick',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14723597',
-            'https://i.gkd.li/i/14723718', // excludeMatches
-          ],
+          matches: '@[clickable=true] > [desc$="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/14723597',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/14723718',
         },
         {
+          preKeys: [0],
           key: 1,
-          preKeys: 0,
           activityIds:
             'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
           matches:

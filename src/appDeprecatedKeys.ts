@@ -460,12 +460,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.ss.android.ugc.aweme',
     name: '抖音',
-    deprecatedKeys: [0, 2],
+    deprecatedKeys: [0, 2, 5],
   },
   {
     id: 'com.taobao.taobao',
     name: '淘宝',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 10, 11],
   },
   {
     id: 'com.taptap',
@@ -535,7 +535,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.unionpay',
     name: '云闪付',
-    deprecatedKeys: [11],
+    deprecatedKeys: [1, 11, 14],
   },
   {
     id: 'com.netease.newsreader.activity',
@@ -570,7 +570,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.ximalaya.ting.android',
     name: '喜马拉雅',
-    deprecatedKeys: [9],
+    deprecatedKeys: [6, 9],
   },
   {
     id: 'com.zjwh.android_wh_physicalfitness',
@@ -720,7 +720,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.umetrip.android.msky.app',
     name: '航旅纵横',
-    deprecatedKeys: [8],
+    deprecatedKeys: [8, 9],
   },
   {
     id: 'cn.mil.junhao',
@@ -791,6 +791,41 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.google.android.youtube',
     name: 'youtube',
     deprecatedKeys: [2],
+  },
+  {
+    id: 'com.qinlin.edoor',
+    name: '亲邻开门',
+    deprecatedKeys: [10, 11, 12],
+  },
+  {
+    id: 'com.quark.browser',
+    name: '夸克浏览器',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.taobao.etao',
+    name: '一淘',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.wm.dmall',
+    name: '多点',
+    deprecatedKeys: [4],
+  },
+  {
+    id: 'com.ximalaya.ting.lite',
+    name: '喜马拉雅极速版',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.yunzhi.tiyu',
+    name: '云运动',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.zhengnengliang.precepts',
+    name: '正气',
+    deprecatedKeys: [1],
   },
 ];
 

@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13255684',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           matches: '[id="com.videogo:id/ad_closead_nointerest"]',
           snapshotUrls: 'https://i.gkd.li/i/13255697',
         },
@@ -32,6 +32,7 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
+          activityIds: '.main.MainTabActivity',
           matches: 'TextView[text="了解并试用服务"]',
           snapshotUrls: 'https://i.gkd.li/i/15338834',
         },

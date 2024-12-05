@@ -5,20 +5,6 @@ export default defineGkdApp({
   name: '云闪付',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: [
-        {
-          matches: '@[text="稍候再说"] + [text="立即更新"]',
-          snapshotUrls: 'https://i.gkd.li/i/12727278',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '分段广告-支付完成界面卡片广告',
       fastQuery: true,
@@ -30,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13070564',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           matches: '[text="关闭广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13070974',
@@ -68,11 +54,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.activity.UPActivityMain',
           matches: '[id="com.unionpay:id/view_locate_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13634882',
         },
         {
           key: 1,
+          activityIds: ['.activity.UPActivityMain', '.base.UPDialog'],
           matches: ['[text*="访问您的位置信息"]', '[text="不允许"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12695773',
@@ -91,6 +79,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.base.UPDialog',
           matches:
             '[text="开启消息通知"] < * + [id="com.unionpay:id/view_alert_cancel"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12695736',
@@ -113,25 +102,15 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 14,
-      name: '全屏广告-我的页面-弹窗广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      activityIds: 'com.unionpay.activity.UPActivityMain',
-      rules:
-        '[id="com.unionpay:id/container"] + [id="com.unionpay:id/image"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13440341',
-    },
-    {
       key: 15,
-      fastQuery: true,
       name: '全屏广告-领取优惠弹窗',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.unionpay.cordova.UPActivityCordovaWeb',
           matches:
-            '[id="com.unionpay:id/view_content_container"] View[text="关闭按钮"][clickable=true]',
+            '@View[clickable=true][text="关闭按钮"] <<n [vid="view_content_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13848688',
         },
       ],

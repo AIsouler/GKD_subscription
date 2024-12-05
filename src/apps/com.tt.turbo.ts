@@ -7,10 +7,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[desc="取消"] + [desc="更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/14292907',
+      rules: [
+        {
+          matches: '@[desc="取消"] + [desc="更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/14292907',
+        },
+      ],
     },
   ],
 });

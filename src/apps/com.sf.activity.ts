@@ -26,6 +26,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.MainActivity',
       rules: [
         {
           key: 0,
@@ -37,14 +38,14 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '@Button[desc="取消"] - ViewGroup >3 [text="立即升级"] <2 Button <2 ViewGroup < ViewGroup <3 ViewGroup <2 ViewGroup < ViewGroup <2 ViewGroup < ViewGroup < FrameLayout < [id="com.sf.activity:id/rnRootLayout"]',
+            '@Button[desc="取消"] - ViewGroup >3 [visibleToUser=true][text="立即升级"] <<n [id="com.sf.activity:id/rnRootLayout"]',
           snapshotUrls: 'https://i.gkd.li/i/13291144',
         },
       ],
     },
     {
       key: 2,
-      name: '功能类-专属月报弹窗',
+      name: '其他-专属月报弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -11,9 +11,19 @@ export default defineGkdApp({
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
+      activityIds: '.xiao.MainActivity',
       rules: [
         {
-          matches: ['[text="下一条"]', '[vid="iv_close"]'],
+          key: 0,
+          matches: '[vid="cb_ignore"][checked=false]',
+          exampleUrls: 'https://e.gkd.li/b92e4e94-fafc-47b1-9774-3126cfaed981',
+          snapshotUrls: 'https://i.gkd.li/i/14141561',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[vid="iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/b92e4e94-fafc-47b1-9774-3126cfaed981',
           snapshotUrls: 'https://i.gkd.li/i/14141561',
         },
       ],

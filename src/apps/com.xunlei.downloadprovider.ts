@@ -54,24 +54,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12707701',
         },
         {
-          preKeys: [0],
-          key: 1,
-          name: '点击不感兴趣',
-          activityIds: [
-            'com.xunlei.downloadprovider.frame.MainTabActivity',
-            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
-            'com.xunlei.downloadprovider.feedback.view',
-          ],
-          fastQuery: true,
-          matches:
-            '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13625418',
-            'https://i.gkd.li/i/12707717',
-            'https://i.gkd.li/i/12707702',
-          ],
-        },
-        {
           key: 2,
           name: '点击关闭-2',
           activityIds: 'com.xunlei.downloadprovider.feedback.view',
@@ -88,6 +70,24 @@ export default defineGkdApp({
           matches:
             '[id="com.xunlei.downloadprovider:id/play_detail_ad_title"] + [id="com.xunlei.downloadprovider:id/close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/13228423',
+        },
+        {
+          preKeys: [0, 2, 3],
+          key: 1,
+          name: '点击不感兴趣',
+          fastQuery: true,
+          activityIds: [
+            'com.xunlei.downloadprovider.frame.MainTabActivity',
+            'com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity',
+            'com.xunlei.downloadprovider.feedback.view',
+          ],
+          matches:
+            '[id="com.xunlei.downloadprovider:id/feedback_not_interested_layout"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13625418',
+            'https://i.gkd.li/i/12707717',
+            'https://i.gkd.li/i/12707702',
+          ],
         },
       ],
     },
@@ -262,8 +262,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.xunlei.downloadprovider:id/x_upgrade_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/13228920',
+      rules: [
+        {
+          activityIds: 'com.xunlei.upgrade.XUpgradeActivity',
+          matches: '[id="com.xunlei.downloadprovider:id/x_upgrade_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13228920',
+        },
+      ],
     },
     {
       key: 10,
@@ -356,6 +361,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.xunlei.uikit.activity.TransformActivity',
           matches: ['[text="是否打开系统通知"]', '[vid="btn_close"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/bf1ee4f5-126c-46c7-bac1-5e41ec4546e3',

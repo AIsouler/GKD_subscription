@@ -31,7 +31,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '[id="com.picacomic.fregata:id/button_dialog_announcement_negative"][text="確定"]',
+            '[id="com.picacomic.fregata:id/button_dialog_announcement_positive"]',
           exampleUrls:
             'https://m.gkd.li/83610194/a5cbd7ce-79b4-49da-ba01-2b7db907d1f1',
           snapshotUrls: 'https://i.gkd.li/i/13422767',
@@ -45,10 +45,9 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
-      activityIds: 'com.picacomic.fregata.activities.MainActivity',
       rules: [
         {
+          activityIds: 'com.picacomic.fregata.activities.MainActivity',
           matches: '[id="com.picacomic.fregata:id/imageButton_banner_close"]',
           exampleUrls:
             'https://m.gkd.li/83610194/92feb979-d75a-4ee5-a880-da2e4250d1e3',
@@ -63,10 +62,11 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       activityIds: 'com.picacomic.fregata.activities.MainActivity',
       rules: [
         {
+          key: 0,
           matches:
             '[id="com.picacomic.fregata:id/textView_profile_punch_in"][text="打嗶卡"]',
           exampleUrls:
@@ -74,6 +74,8 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13422844',
         },
         {
+          preKeys: [0],
+          key: 1,
           matches:
             '[id="com.picacomic.fregata:id/button_dialog_custom_positive"][text="確定"]',
           exampleUrls:
@@ -89,10 +91,9 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
-      activityIds: 'com.picacomic.fregata.activities.ComicViewerActivity',
       rules: [
         {
+          activityIds: 'com.picacomic.fregata.activities.ComicViewerActivity',
           matches:
             'RelativeLayout > Button[text="確定"][id="com.picacomic.fregata:id/button_dialog_custom_positive"]',
           snapshotUrls: 'https://i.gkd.li/i/13466492',

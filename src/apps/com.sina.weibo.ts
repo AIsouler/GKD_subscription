@@ -9,30 +9,49 @@ export default defineGkdApp({
       name: '全屏广告-兴趣领域推荐',
       desc: '出现在长久未登录的账户再次登录时',
       fastQuery: true,
-      activityIds: 'com.sina.weibo.account.interest.InterestActivity',
-      rules:
-        '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"][text="跳过"]',
-      snapshotUrls: 'https://i.gkd.li/i/12531405',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.sina.weibo.account.interest.InterestActivity',
+          matches:
+            '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"][text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/12531405',
+        },
+      ],
     },
     {
       key: 4,
       name: '全屏广告-精选博主推荐',
       desc: '出现在长久未登录的账户再次登录时',
       fastQuery: true,
-      activityIds: 'com.sina.weibo.account.recommend.RecommendActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
-        '[id="com.sina.weibo:id/tv_option"&&text="取消勾选"]',
-        '[id="com.sina.weibo:id/new_next_btn"&&text="进入微博（已选0个）"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/12531433',
-        'https://i.gkd.li/i/12531434',
+        {
+          key: 1,
+          activityIds: '.account.recommend.RecommendActivity',
+          matches: '[text="取消勾选"]',
+          exampleUrls: 'https://e.gkd.li/a0602466-0f1e-4ab9-8a0d-27a4364d1ff8',
+          snapshotUrls: 'https://i.gkd.li/i/12531433',
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          activityIds:
+            'com.oplusos.systemui.volume.VolumeDialogImplEx$CustomDialog',
+          matches: '[text="跳过"]',
+          exampleUrls: 'https://e.gkd.li/c20bec5d-f4e1-4765-9ba0-ca645b27e434',
+          snapshotUrls: 'https://i.gkd.li/i/12531434',
+        },
       ],
     },
     {
       key: 5,
       name: '局部广告-博文内容区与评论区中间卡片广告',
-      desc: '点击右上角x',
+      desc: '点击右上角关闭',
       fastQuery: true,
       rules: [
         {
@@ -66,7 +85,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: ['com.sina.weibo.feed.DetailWeiboActivity'],
+          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
           matches:
             'RelativeLayout[visibleToUser=true] - RelativeLayout >n @[id="com.sina.weibo:id/ll_close"] > [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
           snapshotUrls: [
@@ -91,11 +110,15 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-首页顶部话题分享窗口',
-      fastQuery: true,
-      activityIds: 'com.sina.weibo.MainTabActivity',
-      rules:
-        '[id="com.sina.weibo:id/tvGuide"] + [id="com.sina.weibo:id/v_close"] + [id="com.sina.weibo:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705972',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.sina.weibo.MainTabActivity',
+          matches:
+            '[id="com.sina.weibo:id/tvGuide"] + [id="com.sina.weibo:id/v_close"] + [id="com.sina.weibo:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12705972',
+        },
+      ],
     },
     {
       key: 8,
@@ -147,18 +170,19 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '自动点击暂不开启',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
+          activityIds: '.notifyguidev2.NotifyGuideV2Activity',
           matches:
             '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
           snapshotUrls: 'https://i.gkd.li/i/12705979',
         },
         {
           key: 1,
+          activityIds: '.MainTabActivity',
           matches:
             '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
           snapshotUrls: 'https://i.gkd.li/i/12705986',
@@ -170,10 +194,17 @@ export default defineGkdApp({
       name: '局部广告-首页顶部签到卡片',
       desc: '自动点击x按钮',
       fastQuery: true,
-      activityIds: 'com.sina.weibo.MainTabActivity',
-      rules:
-        '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12749876',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.sina.weibo.MainTabActivity',
+          matches:
+            '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12749876',
+        },
+      ],
     },
     {
       key: 13,
@@ -228,6 +259,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: ['.MainTabActivity', '.utils.WeiboDialog$CustomDialog'],
           matches: '@[text="以后再说"] +2 [text="去开启"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13218093',
@@ -236,6 +268,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: '.MainTabActivity',
           matches:
             '@[id="com.sina.weibo:id/btn_close"] +2 [text="使用您的位置信息"]',
           snapshotUrls: 'https://i.gkd.li/i/13255595',
@@ -324,15 +357,20 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="不了，谢谢"] +4 [text="喜欢，给好评"]',
-      snapshotUrls: 'https://i.gkd.li/i/13620220',
+      rules: [
+        {
+          activityIds: '.MainTabActivity',
+          matches: '@[text="不了，谢谢"] +4 [text="喜欢，给好评"]',
+          snapshotUrls: 'https://i.gkd.li/i/13620220',
+        },
+      ],
     },
     {
       key: 19,
-      fastQuery: true,
       name: '功能类-自动点击查看原图',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.sina.weibo.photoalbum.imageviewer.ImageViewer',
           matches: '@LinearLayout >3 [vid="tv_dialog_item"][text^="原图"]',
           snapshotUrls: 'https://i.gkd.li/i/13929119',

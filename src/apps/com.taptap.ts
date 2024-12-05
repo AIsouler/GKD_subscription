@@ -7,7 +7,8 @@ export default defineGkdApp({
     {
       key: 2,
       name: '分段广告-游戏浏览页面推荐广告',
-      desc: '自动点击"对此内容不感兴趣"',
+      desc: '点击[]对此内容不感兴趣]',
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -29,7 +30,7 @@ export default defineGkdApp({
           matches: '@LinearLayout > [text="对此内容不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12840904',
-            'https://i.gkd.li/i/13258679', //other.basic.impl.TapMainActivity
+            'https://i.gkd.li/i/13258679',
           ],
         },
       ],
@@ -42,6 +43,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.upgrade.library.dialog.UpgradeDialogAct',
           matches: '@[vid="btn_dismiss"] -2 * >2 [text="发现新版本"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13387479',
@@ -57,8 +59,12 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="青少年模式"] + [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14209309',
+      rules: [
+        {
+          matches: '[text*="青少年模式"] + [vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14209309',
+        },
+      ],
     },
   ],
 });

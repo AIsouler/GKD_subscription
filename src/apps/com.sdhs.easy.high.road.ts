@@ -11,11 +11,10 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯广告',
+          fastQuery: true,
           activityIds: 'com.sdhs.easy.main.activity.MainActivity',
-          matches: [
-            '[desc^="logoad"]',
-            '[desc^="dislike"] > View[clickable=true]',
-          ],
+          matches:
+            '[desc^="dislike"] > @View[clickable=true][visibleToUser=true] <<n [id="com.sdhs.easy.high.road:id/express_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13670340',
         },
       ],

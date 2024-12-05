@@ -122,10 +122,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13540941',
-        'https://i.gkd.li/i/14256301',
+      rules: [
+        {
+          activityIds: [
+            '.activity.MainActivity',
+            '.activity.DictQueryActivity',
+          ],
+          matches: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13540941',
+            'https://i.gkd.li/i/14256301',
+          ],
+        },
       ],
     },
     {
@@ -135,19 +143,28 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13627912',
+      rules: [
+        {
+          activityIds: '.activity.MainActivity',
+          matches:
+            '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13627912',
+        },
+      ],
     },
     {
       key: 7,
       name: '功能类-点击显示释义',
       activityIds:
         'com.youdao.dict_flutter_android_bridge.WordBookFlutterActivity',
-      rules: '[desc="点击显示释义"] > View[index=3][visibleToUser=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/14292588', // 点击显示释义前
-        'https://i.gkd.li/i/14292587', // 点击显示释义后
+      rules: [
+        {
+          matches: '[desc="点击显示释义"] > View[index=3][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14292588', // 点击显示释义前
+            'https://i.gkd.li/i/14292587', // 点击显示释义后
+          ],
+        },
       ],
     },
     {

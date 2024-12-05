@@ -10,11 +10,14 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '"首页商城"体验邀请弹窗',
+          name: '[首页商城]体验邀请弹窗',
+          fastQuery: true,
           activityIds:
             'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
-          matches:
-            '[text="不再提示"] + @ECCustomUiImage[clickable=true] +n LynxFlattenUI[text^="立即体验"]',
+          matches: [
+            'UIText[text^="立即体验"]',
+            'FlattenUIText[text="不再提示"][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/13684791',
         },
       ],
@@ -25,37 +28,40 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
-      rules:
-        '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme.lite:id/close"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13650523',
+      rules: [
+        {
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme.lite:id/close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13650523',
+        },
+      ],
     },
     {
       key: 9,
-      fastQuery: true,
       name: '权限提示-通知权限',
       desc: '点击暂不开启',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="com.ss.android.ugc.aweme.lite:id/gl7"] > [id="com.ss.android.ugc.aweme.lite:id/h5q"]',
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches: '[text="及时获得消息提醒"] +2 [text="暂不开启"]',
           snapshotUrls: 'https://i.gkd.li/i/13888485',
         },
       ],
     },
     {
       key: 10,
-      fastQuery: true,
       name: '功能类-选择图片时自动勾选原图',
       rules: [
         {
+          fastQuery: true,
           activityIds:
             'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
-          matches:
-            '[id="com.ss.android.ugc.aweme.lite:id/amh"][desc^="未选中"]',
+          matches: '[text="原图"][desc^="未选中"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13946092', //未勾选原图
             'https://i.gkd.li/i/13946033', //已勾选原图

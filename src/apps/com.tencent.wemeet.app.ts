@@ -7,11 +7,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text^="腾讯会议新版本"] +3 * > [text="下次安装"]',
-      snapshotUrls: 'https://i.gkd.li/i/14332625',
+      rules: [
+        {
+          activityIds: '.StartupActivity',
+          matches: '[text^="腾讯会议新版本"] +3 * > [text="下次安装"]',
+          snapshotUrls: 'https://i.gkd.li/i/14332625',
+        },
+      ],
     },
   ],
 });

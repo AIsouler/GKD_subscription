@@ -7,10 +7,14 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-漫画阅读页面-左侧悬浮广告',
-      activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
-      rules:
-        '[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12707756',
+      rules: [
+        {
+          activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
+          matches:
+            '[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12707756',
+        },
+      ],
     },
     {
       key: 3,

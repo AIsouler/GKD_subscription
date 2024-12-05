@@ -10,8 +10,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc^="人生嘛"] +4 ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13455634',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[desc="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/i/13455634',
+        },
+      ],
     },
     {
       key: 3,
@@ -23,12 +28,14 @@ export default defineGkdApp({
       activityIds: 'com.yunxiang.wuyu.MainActivity',
       rules: [
         {
+          key: 1,
           name: '"x"型',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +n ViewGroup [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13455628',
         },
         {
+          key: 2,
           name: '"跳过"型',
           matches: [
             'TextView[text="广告"]',

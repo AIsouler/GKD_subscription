@@ -24,12 +24,16 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-右侧悬浮广告',
-      activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',
-      rules:
-        '@[id="com.xinhang.mobileclient:id/iv_close"] + [id="com.xinhang.mobileclient:id/iv_advert"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13024863',
-        'https://i.gkd.li/i/13024872',
+      rules: [
+        {
+          activityIds: 'com.xinhang.mobileclient.home.activity.HomeActivity',
+          matches:
+            '@[id="com.xinhang.mobileclient:id/iv_close"] + [id="com.xinhang.mobileclient:id/iv_advert"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13024863',
+            'https://i.gkd.li/i/13024872',
+          ],
+        },
       ],
     },
   ],

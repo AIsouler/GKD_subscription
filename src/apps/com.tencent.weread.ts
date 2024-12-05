@@ -14,6 +14,10 @@ export default defineGkdApp({
         {
           key: 0,
           matchTime: 30000,
+          activityIds: [
+            '.module.bottomSheet.BottomSheetForFragment',
+            '.WeReadFragmentActivity',
+          ],
           matches: '[id="com.tencent.weread:id/open_notification_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12642247',
@@ -22,6 +26,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: '.WeReadFragmentActivity',
           matches:
             '[text="开启推送通知"] +3 [clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14190089',

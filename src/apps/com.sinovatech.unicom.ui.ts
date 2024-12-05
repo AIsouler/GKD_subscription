@@ -10,14 +10,18 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.sinovatech.unicom.basic.ui.activity.MainActivity',
-        'com.sinovatech.unicom.basic.ui.activity.WelcomeClient',
-      ],
-      rules: '[text="去开启"] - [vid="custom_dialog_cancel_button"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13331268',
-        'https://i.gkd.li/i/14751210',
+      rules: [
+        {
+          activityIds: [
+            'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+            'com.sinovatech.unicom.basic.ui.activity.WelcomeClient',
+          ],
+          matches: '[text="去开启"] - [vid="custom_dialog_cancel_button"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13331268',
+            'https://i.gkd.li/i/14751210',
+          ],
+        },
       ],
     },
     {
@@ -27,13 +31,22 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
-      snapshotUrls: 'https://i.gkd.li/i/13511386',
+      rules: [
+        {
+          activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+          matches:
+            '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13511386',
+        },
+      ],
     },
     {
       key: 3,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -54,11 +67,11 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      fastQuery: true,
       name: '局部广告-首页右下角卡片悬浮窗',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
           matches: '[id="com.sinovatech.unicom.ui:id/home_xuanfu_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13930543',

@@ -6,11 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      fastQuery: true,
       name: '全屏广告-弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.sdu.didi.gsui.main.MainActivity',
           matches: '[id="com.sdu.didi.gsui:id/main_dialog_banner_image_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13958887',

@@ -6,9 +6,12 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      fastQuery: true,
       name: '全屏广告-首页弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: [
@@ -17,8 +20,8 @@ export default defineGkdApp({
           ],
           matches: '[id="com.sgcc.evs.echarge:id/iv_close"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13958838', //com.evs.echarge.dev.ui.advertisement.SplashActivity
-            'https://i.gkd.li/i/14005508', //com.evs.echarge.dev.ui.MainActivity
+            'https://i.gkd.li/i/13958838',
+            'https://i.gkd.li/i/14005508',
           ],
         },
       ],

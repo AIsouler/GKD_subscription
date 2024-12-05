@@ -7,12 +7,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      desc: '关闭促销弹窗，也许有用呢',
-      activityIds: 'com.thestore.main.app.home.HomeActivity',
+      desc: '关闭弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.thestore.main.home.feature:id/ad"] > TextView',
-          //TextView有id类似".../j"担心这个id是随机的，所以用了TextView而不是id
+          activityIds: 'com.thestore.main.app.home.HomeActivity',
+          matches:
+            '@TextView[clickable=true][childCount=0] <2 RelativeLayout[childCount=2] < FrameLayout < [parent=null]',
           snapshotUrls: 'https://i.gkd.li/i/13163686',
         },
       ],

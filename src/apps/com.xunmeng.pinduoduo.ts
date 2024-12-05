@@ -13,6 +13,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
+          activityIds: '.ui.activity.HomeActivity',
           matches: '@Image[clickable=true][text="webp"] +5 [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/i/13195645',
         },
@@ -248,6 +249,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.activity.HomeActivity',
           matches:
             '[text="青少年模式"] < FrameLayout +5 ViewGroup [text="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/13809053',
@@ -262,6 +264,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.ui.activity.HomeActivity',
           matches:
             'FrameLayout > ViewGroup[vid="pdd"] > ViewGroup > ViewGroup[childCount<3] > ViewGroup[childCount=3 || childCount=2] >(1,2) ImageView[clickable=true][visibleToUser=true]',
           snapshotUrls: [
@@ -274,6 +277,10 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           action: 'back',
+          activityIds: [
+            '.ui.activity.HomeActivity',
+            '.activity.NewPageActivity',
+          ],
           matches: '[text="及时获取物流消息" || text="开启通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15004580',

@@ -7,12 +7,15 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
-      activityIds: ['cn.thepaper.paper.ui.main.MainActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: 'cn.thepaper.paper.ui.main.MainActivity',
           matches:
-            '[id="com.wondertek.paper:id/second_num"] <2 [id="com.wondertek.paper:id/relative_layout"] + [id="com.wondertek.paper:id/close_photo"]',
-          snapshotUrls: ['https://i.gkd.li/i/12899226'],
+            '[id="com.wondertek.paper:id/relative_layout"] + [id="com.wondertek.paper:id/close_photo"]',
+          snapshotUrls: 'https://i.gkd.li/i/12899226',
         },
       ],
     },

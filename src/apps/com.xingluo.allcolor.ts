@@ -15,29 +15,27 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          matches: ['[text="广告"] < * - View < * - View > Image[id=null]'],
-          snapshotUrls: ['https://i.gkd.li/i/12640359'],
+          matches:
+            '@Image[childCount=0][visibleToUser=true] < View[childCount=1] + View[childCount=2] >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/12640359',
         },
         {
           key: 2,
-          matches: [
-            '@Image[id=null] < View -(2) View > View > View > TextView[text="广告"]',
-          ],
-          snapshotUrls: ['https://i.gkd.li/i/12640362'],
+          matches:
+            '@Image[id=null] < View -2 View > View > View > TextView[text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/12640362',
         },
         {
           key: 3,
-          matches: [
-            '@View[id=null] < FrameLayout[desc^="dislike"] + FrameLayout >(2) TextView[text="广告"]',
-          ],
-          snapshotUrls: ['https://i.gkd.li/i/12640374'],
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] + FrameLayout >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/12640374',
         },
         {
           key: 4,
-          matches: [
+          matches:
             '@Image[id=null] < View - View > View + View > TextView[text="广告"]',
-          ],
-          snapshotUrls: ['https://i.gkd.li/i/12640406'],
+          snapshotUrls: 'https://i.gkd.li/i/12640406',
         },
         {
           preKeys: [1, 2, 3, 4],

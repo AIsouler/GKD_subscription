@@ -54,12 +54,16 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-消息页面热门活动卡片',
-      fastQuery: true,
-      activityIds: 'com.taobao.tao.welcome.Welcome',
-      rules: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12642795',
-        'https://i.gkd.li/i/13197877',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.taobao.tao.welcome.Welcome',
+          matches: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12642795',
+            'https://i.gkd.li/i/13197877',
+          ],
+        },
       ],
     },
     {
@@ -83,43 +87,41 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[text^="开启系统通知"] + @Image[visibleToUser=true] <<n [vid="poplayer_inner_view"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13446901',
-        'https://i.gkd.li/i/13455424',
-        'https://i.gkd.li/i/15104645',
+      rules: [
+        {
+          activityIds: [
+            'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
+            'com.taobao.tao.TBMainActivity',
+            'com.taobao.tao.welcome.Welcome',
+          ],
+          matches:
+            '[text^="开启系统通知"] + @Image[visibleToUser=true] <<n [vid="poplayer_inner_view"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13446901',
+            'https://i.gkd.li/i/13455424',
+            'https://i.gkd.li/i/15104645',
+          ],
+        },
       ],
     },
     {
       key: 9,
       name: '功能类-各级页面添加到首页弹窗',
-      desc: '自动点击退出',
-      fastQuery: true,
-      activityIds: [
-        'com.taobao.themis.container.app.TMSActivity',
-        'com.alibaba.triver.container.TriverMainActivity',
+      desc: '点击退出',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.taobao.themis.container.app.TMSActivity',
+            'com.alibaba.triver.container.TriverMainActivity',
+          ],
+          matches: 'TextView[text="去首页"] + TextView[text="退出"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13197553',
+            'https://i.gkd.li/i/13197546',
+          ],
+        },
       ],
-      rules: 'TextView[text="去首页"] + TextView[text="退出"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13197553',
-        'https://i.gkd.li/i/13197546',
-      ],
-    },
-    {
-      key: 10,
-      name: '全屏广告-视频页面活动弹窗',
-      activityIds: 'com.taobao.tao.welcome.Welcome',
-      rules:
-        'View[id=null] > [text="立即参加"] + TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12642813',
-    },
-    {
-      key: 11,
-      name: '全屏广告-视频页面签到弹窗',
-      activityIds: 'com.taobao.tao.welcome.Welcome',
-      rules: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
-      snapshotUrls: 'https://i.gkd.li/i/12642798',
     },
     {
       key: 12,
@@ -127,11 +129,19 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="update_imageview_cancel_v2"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13336760',
-        'https://i.gkd.li/i/13695520',
-        'https://i.gkd.li/i/14899863',
+      rules: [
+        {
+          activityIds: [
+            'com.taobao.android.detail.wrapper.activity.DetailActivity',
+            'com.taobao.android.order.bundle.TBOrderListActivity',
+          ],
+          matches: '[vid="update_imageview_cancel_v2"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13336760',
+            'https://i.gkd.li/i/13695520',
+            'https://i.gkd.li/i/14899863',
+          ],
+        },
       ],
     },
     {
@@ -178,19 +188,16 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '权限提示-开启悬浮窗权限',
-      desc: '点击“否”',
+      name: '权限提示-悬浮窗权限',
+      desc: '点击[否]',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds:
-        'com.taobao.android.detail2.core.framework.floatwindow.permission.PermissionActivity',
       rules: [
         {
-          matches: [
-            '[id="android:id/message"][text*="悬浮窗权限"]',
-            '[id="android:id/button2"][text="否"]',
-          ],
+          activityIds:
+            'com.taobao.android.detail2.core.framework.floatwindow.permission.PermissionActivity',
+          matches: ['[text*="悬浮窗权限"]', '[text="否"]'],
           snapshotUrls: 'https://i.gkd.li/i/13588165',
         },
       ],
@@ -232,7 +239,7 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '功能类-"「0元下单」权益"弹窗',
+      name: '其他-[「0元下单」权益]弹窗',
       desc: '点击关闭',
       rules: [
         {

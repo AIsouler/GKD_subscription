@@ -38,6 +38,9 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -51,11 +54,17 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-签到成功弹窗',
-      desc: '自动点击[关闭]按钮',
-      activityIds: 'com.realtech.xiaocan.MainActivity',
-      rules:
-        '[id="android:id/content"] >5 View[childCount=6] > ImageView[index=5][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/14290847',
+      desc: '点击[关闭]按钮',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.realtech.xiaocan.MainActivity',
+          matches:
+            '[id="android:id/content"] >5 View[childCount=6] > ImageView[index=5][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14290847',
+        },
+      ],
     },
   ],
 });

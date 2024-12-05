@@ -11,27 +11,23 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13415044',
-        'https://i.gkd.li/i/13276882',
+      rules: [
+        {
+          activityIds: 'com.sankuai.waimai.business.page.homepage.MainActivity',
+          matches:
+            '[id="com.sankuai.meituan.takeoutnew:id/wm_upgrade_force_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13415044',
+        },
       ],
     },
     {
       key: 3,
       name: '全屏广告-弹窗广告',
-      activityIds:
-        'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
       rules: [
         {
-          key: 0,
-          name: '美团买药弹窗-点击[暂时放弃]',
-          matches:
-            '[text="送亲友"] <2 FrameLayout[childCount=2] > [text="暂时放弃"][clickable=true]',
-        },
-        {
           key: 1,
-          name: '领取外卖神卷-点击底部"x"',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
           matches:
             '@ImageView[clickable=true] - FrameLayout > FrameLayout > FrameLayout TextView[text="点我领取"]',
           snapshotUrls: 'https://i.gkd.li/i/13175526',

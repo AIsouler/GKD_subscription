@@ -25,11 +25,15 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: 'com.tencent.djcity.activities.homepage.MainActivity',
           matches:
-            '[vid="main_container"] >7 View[childCount=7] > View[childCount=2] > View[index=1] > ImageView',
+            '[vid="main_container"] >7 View[childCount=7] > View[childCount=2] > @View[index=1][childCount=1][clickable=true] > ImageView[childCount=0] <<n [vid="main_container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/151fd8a5-8c44-4368-a8ba-3563df44e492',
           snapshotUrls: 'https://i.gkd.li/i/14229532',
@@ -40,6 +44,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-"签到成功"弹窗',
       desc: '点击"好的"',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

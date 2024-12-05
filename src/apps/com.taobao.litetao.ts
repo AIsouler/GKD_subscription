@@ -11,9 +11,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules:
-        '[id="com.taobao.litetao:id/root_layout"] > TextView[text^="还剩"&&text$="秒"]',
-      snapshotUrls: 'https://i.gkd.li/i/12774851',
+      rules: [
+        {
+          matches:
+            '[id="com.taobao.litetao:id/root_layout"] > TextView[text^="还剩"&&text$="秒"]',
+          snapshotUrls: 'https://i.gkd.li/i/12774851',
+        },
+      ],
     },
     {
       key: 1,
@@ -21,10 +25,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id = "com.taobao.litetao:id/update_imageview_cancel_v2"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12843615',
-        'https://i.gkd.li/i/12843614',
+      rules: [
+        {
+          activityIds: [
+            'com.taobao.ltao.maintab.MainFrameActivity',
+            '.launcher.ALiFlutterActivityCompat',
+          ],
+          matches: '[id = "com.taobao.litetao:id/update_imageview_cancel_v2"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12843615',
+            'https://i.gkd.li/i/12843614',
+          ],
+        },
       ],
     },
   ],

@@ -9,11 +9,10 @@ export default defineGkdApp({
       name: '局部广告-卡片广告',
       rules: [
         {
+          name: '云收藏弹窗广告',
           actionMaximum: 1,
           activityIds: 'com.qihoo.jia.playpage.RecordPlayActivity',
-          name: '云收藏弹窗广告',
-          matches:
-            'ViewGroup > @ImageView[clickable=true] -n TextView[text="云收藏"]',
+          matches: '@ImageView[clickable=true] +4 TextView[text="去开通"]',
           snapshotUrls: 'https://i.gkd.li/i/13630755',
         },
       ],

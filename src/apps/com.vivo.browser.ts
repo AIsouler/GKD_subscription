@@ -24,9 +24,14 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-免流提示',
-      activityIds: 'com.vivo.browser.pendant.PendantActivity',
-      rules: '[id="com.vivo.browser:id/dialog_button_right"][text="继续浏览"]',
-      snapshotUrls: 'https://i.gkd.li/i/12847431',
+      rules: [
+        {
+          activityIds: 'com.vivo.browser.pendant.PendantActivity',
+          matches:
+            '[id="com.vivo.browser:id/dialog_button_right"][text="继续浏览"]',
+          snapshotUrls: 'https://i.gkd.li/i/12847431',
+        },
+      ],
     },
     {
       key: 2,

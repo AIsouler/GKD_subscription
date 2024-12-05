@@ -11,11 +11,15 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules:
-        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13830230',
-        'https://i.gkd.li/i/14052232',
+      rules: [
+        {
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13830230',
+            'https://i.gkd.li/i/14052232',
+          ],
+        },
       ],
     },
     {
@@ -27,6 +31,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
+          activityIds: '.MainActivity',
           matches: '[desc="青少年模式"] +3 [desc="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/14052188',
         },

@@ -7,14 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
           name: '快手广告',
-          activityIds: 'com.qjy.youqulife.io.MainActivity',
           fastQuery: true,
-          matches:
-            '[text="广告"] <2 ViewGroup -n ViewGroup > ViewGroup > [text="跳过"]',
+          activityIds: 'com.qjy.youqulife.io.MainActivity',
+          matches: ['[text="广告"] ', '[text="跳过"]'],
           snapshotUrls: 'https://i.gkd.li/i/13378653',
         },
       ],

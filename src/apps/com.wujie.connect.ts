@@ -7,10 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="no_update_tv"]',
-      snapshotUrls: 'https://i.gkd.li/i/14296122',
+      rules: [
+        {
+          matches: '[vid="no_update_tv"]',
+          snapshotUrls: 'https://i.gkd.li/i/14296122',
+        },
+      ],
     },
   ],
 });

@@ -11,8 +11,12 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.pandabus.android.zb:id/iv_native_dislike"]',
-      snapshotUrls: 'https://i.gkd.li/i/13400177',
+      rules: [
+        {
+          matches: '[id="com.pandabus.android.zb:id/iv_native_dislike"]',
+          snapshotUrls: 'https://i.gkd.li/i/13400177',
+        },
+      ],
     },
   ],
 });

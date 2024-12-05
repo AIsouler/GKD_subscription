@@ -11,9 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.sohu.sohuvideo:id/ivClose"] + LinearLayout [text="新版本上线啦"]',
-      snapshotUrls: 'https://i.gkd.li/i/13435504',
+      rules: [
+        {
+          activityIds: '.ui.homepage.MainActivity',
+          matches:
+            '@[id="com.sohu.sohuvideo:id/ivClose"] + LinearLayout [text="新版本上线啦"]',
+          snapshotUrls: 'https://i.gkd.li/i/13435504',
+        },
+      ],
     },
   ],
 });

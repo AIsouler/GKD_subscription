@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.xt.retouch:id/market_feedback_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13062637',
+      rules: [
+        {
+          activityIds: '.uilauncher.MainActivity',
+          matches: '[id="com.xt.retouch:id/market_feedback_dialog_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13062637',
+        },
+      ],
     },
   ],
 });

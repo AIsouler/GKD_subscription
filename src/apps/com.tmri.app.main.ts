@@ -13,6 +13,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            'com.tmri.app.ui.activity.main.MainTabHostNewActivity',
+            'com.tmri.app.ui.activity.main.TmriNewActivity',
+          ],
           matches: 'ImageButton[id="com.tmri.app.main:id/btn_cancel"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13315944',
@@ -43,6 +47,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.tmri.app.ui.activity.main.MainTabHostNewActivity',
           matches: ['[text="立即更新"]', '[text="以后再说"]'],
           snapshotUrls: 'https://i.gkd.li/i/15751656',
         },

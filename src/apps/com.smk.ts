@@ -11,14 +11,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: [
-        'com.smk.activity.MainActivity',
-        'com.smk.activity.LaunchActivity',
-      ],
-      rules: '[id="com.smk:id/iv_close_ad"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13402584',
-        'https://i.gkd.li/i/13425013', // activityIds: 'com.smk.activity.LaunchActivity',
+      rules: [
+        {
+          activityIds: [
+            'com.smk.activity.MainActivity',
+            'com.smk.activity.LaunchActivity',
+          ],
+          matches: '[id="com.smk:id/iv_close_ad"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13402584',
+            'https://i.gkd.li/i/13425013',
+          ],
+        },
       ],
     },
   ],

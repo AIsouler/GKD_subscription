@@ -51,8 +51,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.wifitutu.ui.tools.SpeedUpBActivity',
           fastQuery: true,
+          activityIds: 'com.wifitutu.ui.tools.SpeedUpBActivity',
           matches: '[vid="native_express_close_proxy"]',
           snapshotUrls: 'https://i.gkd.li/i/14622506',
         },
@@ -93,7 +93,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           activityIds: 'com.wifitutu.ui.main.MainActivity',
-          matches: '@* - [vid="native_express_ad_logo_tv"]',
+          matches: '[vid="native_express_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15284730',
         },
       ],

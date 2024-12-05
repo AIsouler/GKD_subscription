@@ -5,18 +5,6 @@ export default defineGkdApp({
   name: '正气',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@[text="取消"] +2 [text="升级"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12727650',
-        'https://i.gkd.li/i/12715352',
-      ],
-    },
-    {
       key: 2,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',

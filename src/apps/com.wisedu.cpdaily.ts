@@ -11,9 +11,14 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      rules:
-        '[id="com.wisedu.cpdaily:id/btn_update"] + [id="com.wisedu.cpdaily:id/tv_ignore"]',
-      snapshotUrls: 'https://i.gkd.li/i/13643565',
+      rules: [
+        {
+          activityIds: 'com.wisorg.wisedu.home.ui.HomeActivity',
+          matches:
+            '[id="com.wisedu.cpdaily:id/btn_update"] + [id="com.wisedu.cpdaily:id/tv_ignore"]',
+          snapshotUrls: 'https://i.gkd.li/i/13643565',
+        },
+      ],
     },
   ],
 });

@@ -7,16 +7,25 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12614559',
-        'https://i.gkd.li/i/12673132',
-        'https://i.gkd.li/i/13292635',
+      rules: [
+        {
+          activityIds: [
+            'com.meituan.android.upgrade.ui.f',
+            'com.meituan.android.upgrade.UpgradeDialogActivity',
+            'com.meituan.android.pt.homepage.activity.MainActivity',
+          ],
+          matches:
+            'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12614559',
+            'https://i.gkd.li/i/12673132',
+            'https://i.gkd.li/i/13292635',
+          ],
+        },
       ],
     },
     {
@@ -90,19 +99,24 @@ export default defineGkdApp({
     {
       key: 3,
       name: '评价提示-订单调查弹窗',
-      matchTime: 10000,
-      actionMaximum: 1,
       fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          key: 1,
           name: '我的页面-小调查',
           action: 'back',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
           matches: 'TextView[text="小调查"]',
           snapshotUrls: 'https://i.gkd.li/i/12639723',
         },
         {
+          key: 2,
           name: '订单详情页匿名调查',
           action: 'back',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
           matches: '[id="com.sankuai.meituan:id/questionnaireTitle"]',
           snapshotUrls: 'https://i.gkd.li/i/13682336',
         },
@@ -189,6 +203,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
           matches: '@[vid="iv_close" || text="跳过"] -(1,2) [text^="开启通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13439134',
@@ -200,11 +215,15 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-新人返场特惠',
-      desc: '点击右上角返回',
-      activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
-      matchTime: 10000,
-      rules: '[id="shareNav"] > [text=""]',
-      snapshotUrls: 'https://i.gkd.li/i/13800691',
+      desc: '点击左上角返回',
+      rules: [
+        {
+          matchTime: 10000,
+          activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
+          matches: '[id="shareNav"] > [text=""]',
+          snapshotUrls: 'https://i.gkd.li/i/13800691',
+        },
+      ],
     },
     {
       key: 11,

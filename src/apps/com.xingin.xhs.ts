@@ -80,6 +80,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: [
+            '.index.v2.IndexActivityV2',
+            'com.xingin.update.UpdateDialogActivity',
+          ],
           matches: '@ImageView <2 * + * > [text="NEW"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13246890',
@@ -89,6 +93,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          activityIds: '.index.v2.IndexActivityV2',
           matches: 'Button[text="立即安装"] + Button[text="稍后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/15283162',
         },
@@ -105,9 +110,9 @@ export default defineGkdApp({
           key: 0,
           action: 'longClick',
           name: '长按"赞助"/"广告"卡片',
+          excludeMatches: 'RecyclerView > LinearLayout > [text^="不喜欢"]',
           matches:
             '@FrameLayout[clickable=true] > LinearLayout TextView[text="赞助"||text="广告"][visibleToUser=true]',
-          excludeMatches: 'RecyclerView > LinearLayout > [text^="不喜欢"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13455503',
             'https://i.gkd.li/i/13470690',
@@ -115,7 +120,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           name: '点"不感兴趣"',
           matches:
             'RecyclerView > @LinearLayout[index=0] > TextView[text^="不喜欢"]',
@@ -132,8 +137,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.xingin.reactnative.ui.XhsReactTranslucentActivity',
           fastQuery: true,
+          activityIds: 'com.xingin.reactnative.ui.XhsReactTranslucentActivity',
           matches:
             '@ImageView[visibleToUser=true] < * -2 * > [text="你有新人券待领取"]',
           snapshotUrls: 'https://i.gkd.li/i/14391484',
@@ -150,6 +155,7 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
+          activityIds: 'com.xingin.lurker.appscore.ui.AppScoreDialogActivity',
           matches: '[text="您对小红书的评分如何?"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9727815d-b881-4904-bbdc-19ade426977e',

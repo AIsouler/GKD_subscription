@@ -10,8 +10,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[id="com.seebaby:id/btn_later"] + [text$="新版本"]',
-      snapshotUrls: ['https://i.gkd.li/i/12705351'],
+      rules: [
+        {
+          activityIds: '.login.ui.activity.LauncherActivity',
+          matches: '@[id="com.seebaby:id/btn_later"] + [text$="新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/12705351',
+        },
+      ],
     },
     {
       key: 2,
@@ -26,21 +31,21 @@ export default defineGkdApp({
           matches:
             '[id="com.seebaby:id/tv_ad_detail"] + [id="com.seebaby:id/ic_delad"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12705353', // activityId: 'com.seebaby.login.ui.activity.LauncherActivity'
-            'https://i.gkd.li/i/12705363', // activityIds: 'com.seebaby.parent.article.ui.activity.NativeArticleDetailActivity'
+            'https://i.gkd.li/i/12705353',
+            'https://i.gkd.li/i/12705363',
           ],
         },
         {
           key: 2,
           matches:
             '[id="com.seebaby:id/ad_tv_advertiser"] + [id="com.seebaby:id/ad_iv_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/12705372'],
+          snapshotUrls: 'https://i.gkd.li/i/12705372',
         },
         {
           preKeys: [1, 2],
           key: 3,
           matches: '[id="com.seebaby:id/tv_un_instrest"]',
-          snapshotUrls: ['https://i.gkd.li/i/12705358'],
+          snapshotUrls: 'https://i.gkd.li/i/12705358',
         },
       ],
     },

@@ -11,18 +11,26 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      rules:
-        '[id="com.redfinger.app:id/btn_update"] + [id="com.redfinger.app:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13761821',
+      rules: [
+        {
+          activityIds: '.activity.MainActivity',
+          matches:
+            '[id="com.redfinger.app:id/btn_update"] + [id="com.redfinger.app:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13761821',
+        },
+      ],
     },
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds: 'com.redfinger.app.activity.MainActivity',
           fastQuery: true,
+          activityIds: 'com.redfinger.app.activity.MainActivity',
           matches: '[id="com.redfinger.app:id/rl_screen_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13761825',
         },

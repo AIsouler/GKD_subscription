@@ -11,9 +11,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules:
-        'RelativeLayout[childCount=3] > ImageView + @ImageView[clickable=true][visibleToUser=true] + FrameLayout[childCount>0]',
-      snapshotUrls: 'https://i.gkd.li/i/12775855',
+      rules: [
+        {
+          matches:
+            'RelativeLayout[childCount=3] > ImageView + @ImageView[clickable=true][visibleToUser=true] + FrameLayout[childCount>0]',
+          snapshotUrls: 'https://i.gkd.li/i/12775855',
+        },
+      ],
     },
     {
       key: 0,
@@ -63,12 +67,13 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
           matches: '[text="立刻开启"] - [text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13043069',
         },

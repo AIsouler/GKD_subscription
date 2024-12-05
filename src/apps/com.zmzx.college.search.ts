@@ -78,7 +78,8 @@ export default defineGkdApp({
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           ],
-          matches: '[id$="tt_reward_full_count_down"]',
+          matches:
+            '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12893408',
             'https://i.gkd.li/i/13929945',
@@ -128,10 +129,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.zmzx.college.search:id/update_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13063373',
-        'https://i.gkd.li/i/13623469',
+      rules: [
+        {
+          activityIds: [
+            '.activity.main.activity.MainActivity',
+            '.activity.init.InitActivity',
+          ],
+          matches: '[id="com.zmzx.college.search:id/update_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13063373',
+            'https://i.gkd.li/i/13623469',
+          ],
+        },
       ],
     },
     {
@@ -143,6 +152,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.activity.main.activity.MainActivity',
           matches:
             '[text="开启推送通知"] - [id="com.zmzx.college.search:id/siv_dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13440939',
@@ -152,13 +162,18 @@ export default defineGkdApp({
     {
       key: 7,
       name: '评价提示-请求好评弹窗',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13476308',
+      rules: [
+        {
+          activityIds: '.activity.camerasdk.ZybCameraSDKActivity',
+          matches:
+            '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13476308',
+        },
+      ],
     },
     {
       key: 11,

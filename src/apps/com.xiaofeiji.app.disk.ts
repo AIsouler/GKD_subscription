@@ -6,9 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      fastQuery: true,
       name: '分段广告',
-      desc: '点击X-点击不感兴趣',
+      desc: '点击关闭-点击不感兴趣',
       rules: [
         {
           key: 0,
@@ -17,10 +16,11 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13857392',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
+          fastQuery: true,
           activityIds: 'com.xiaofeiji.app.disk.MainActivity',
-          matches: '[id="android:id/content"] >5 [text="不感兴趣"]',
+          matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13857537',
         },
       ],

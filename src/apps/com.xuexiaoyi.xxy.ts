@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-首页-底部广告',
+      name: '分段广告-首页-底部广告',
       activityIds: [
         'com.xuexiaoyi.entrance.main.MainActivity',
         'com.xuexiaoyi.platform.base.arch.RouterFragmentActivity',
@@ -15,9 +15,8 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击在下方的X',
-          matches: [
+          matches:
             'View[text="广告"&&longClickable=null] < View <n View <n View > View > Image[text.length=0]', // longClickable=null为了与 key:3 区别防止误触
-          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13068836',
             'https://i.gkd.li/i/13375502',
@@ -27,9 +26,8 @@ export default defineGkdApp({
         {
           key: 1,
           name: '点击在上方的X-类型1',
-          matches: [
+          matches:
             'Image[text.length>=20] < View < View + View > Image[text.length=0]',
-          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13068811',
             'https://i.gkd.li/i/13202990',
@@ -42,10 +40,9 @@ export default defineGkdApp({
         {
           key: 2,
           name: '点击在上方的X-类型2',
-          matches: [
+          matches:
             '[text.length>=2&&text.length<=6] < FrameLayout -n FrameLayout > View',
-          ],
-          snapshotUrls: ['https://i.gkd.li/i/13266689'],
+          snapshotUrls: 'https://i.gkd.li/i/13266689',
         },
         {
           key: 3,
@@ -71,13 +68,18 @@ export default defineGkdApp({
     {
       key: 10,
       name: '更新提示',
-      desc: '自动点击以后再说。',
+      desc: '点击以后再说',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="立即体验"] + [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13203105',
+      rules: [
+        {
+          activityIds: 'com.xuexiaoyi.entrance.main.MainActivity',
+          matches: '[text="立即体验"] + [text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13203105',
+        },
+      ],
     },
   ],
 });

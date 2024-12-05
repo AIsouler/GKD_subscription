@@ -11,9 +11,9 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.psychiatrygarden.activity.HomePageNewActivity',
       rules: [
         {
+          activityIds: 'com.psychiatrygarden.activity.HomePageNewActivity',
           matches: '@ImageView[id="com.yikaobang.yixue:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/13425853',
         },
