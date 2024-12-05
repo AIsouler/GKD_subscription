@@ -787,6 +787,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '网易邮箱大师',
     deprecatedKeys: [1],
   },
+  {
+    id: 'com.google.android.youtube',
+    name: 'youtube',
+    deprecatedKeys: [2],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
