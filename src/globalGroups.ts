@@ -8,7 +8,7 @@ export const YOUTH_MODE_ORDER = -8; // 青少年模式
 export default defineGkdGlobalGroups([
   {
     key: 0,
-    name: '开屏广告',
+    name: '开屏广告-全局',
     desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
     matchRoot: true,
@@ -49,7 +49,7 @@ export default defineGkdGlobalGroups([
   },
   {
     key: 1,
-    name: '更新提示',
+    name: '更新提示-全局',
     desc: '关闭应用的更新弹窗',
     order: UPDATE_PROMPT_ORDER,
     fastQuery: true,
@@ -78,7 +78,7 @@ export default defineGkdGlobalGroups([
   },
   {
     key: 2,
-    name: '青少年模式',
+    name: '青少年模式-全局',
     desc: '关闭应用的青少年模式弹窗',
     order: YOUTH_MODE_ORDER,
     fastQuery: true,
