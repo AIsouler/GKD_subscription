@@ -245,7 +245,7 @@ matches: [
 - 选择器-1 **（可快速查询！）**
 
 ```txt
-@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠"]
+@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序"]
 ```
 
 示例：
@@ -263,3 +263,19 @@ matches: [
 |                                                               |                                                               |                                                               |                                                               |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | ![img](https://e.gkd.li/8ae02b37-765b-46bd-a206-74e3f0b1714b) | ![img](https://e.gkd.li/e254a7b5-796a-4fb4-afe5-82fa4af84dc9) | ![img](https://e.gkd.li/9b9b3d63-ffaa-4a49-9bb5-e2e16aa85484) | ![img](https://e.gkd.li/fbf15dce-2355-4d60-b6b3-70d3eaf92abf) |
+
+- 选择器-2 **（可快速查询！）**
+
+```txt
+@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] + FrameLayout >2 [text="广告"]
+```
+
+[https://i.gkd.li/i/13233916](https://i.gkd.li/i/13233916?gkd=QFZpZXdbY2xpY2thYmxlPXRydWVdW2NoaWxkQ291bnQ9MF1bdmlzaWJsZVRvVXNlcj10cnVlXSA8IEZyYW1lTGF5b3V0W2Rlc2NePSJkaXNsaWtlIl0gKyBGcmFtZUxheW91dCA-MiBbdGV4dD0i5bm_5ZGKIl0)
+
+[https://i.gkd.li/i/12640374](https://i.gkd.li/i/12640374?gkd=QFZpZXdbY2xpY2thYmxlPXRydWVdW2NoaWxkQ291bnQ9MF1bdmlzaWJsZVRvVXNlcj10cnVlXSA8IEZyYW1lTGF5b3V0W2Rlc2NePSJkaXNsaWtlIl0gKyBGcmFtZUxheW91dCA-MiBbdGV4dD0i5bm_5ZGKIl0)
+
+示例图：
+
+|                                                               |                                                               |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![img](https://e.gkd.li/93ca48cc-beae-43ee-8d57-ce3dba14e9f5) | ![img](https://e.gkd.li/81548c89-372f-4676-b473-8378fec75d22) |
