@@ -232,6 +232,16 @@ export default defineGkdApp({
           matches: '[text="暂不开启"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14325749',
         },
+        {
+          key: 3,
+          name: '火花桌面小组件',
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          action: 'back',
+          matches: '[text="添加火花桌面小组件"]',
+          exampleUrls: 'https://e.gkd.li/c3980f6b-5459-45fe-b317-5bdc561319dc',
+          snapshotUrls: 'https://i.gkd.li/i/18009276',
+        },
       ],
     },
     {
