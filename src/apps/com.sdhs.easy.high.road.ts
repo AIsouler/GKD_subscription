@@ -14,7 +14,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.sdhs.easy.main.activity.MainActivity',
           matches:
-            '[desc^="dislike"] > @View[clickable=true][visibleToUser=true] <<n [id="com.sdhs.easy.high.road:id/express_container"]',
+            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] -2 FrameLayout >3 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13670340',
         },
       ],
