@@ -14,6 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 5,
+          name: '右下方悬浮广告-1',
           matches:
             'ViewGroup[childCount=8] > ViewGroup[index=5] >4 RelativeLayout[visibleToUser=true] > ImageView[clickable=true][index=1]',
           snapshotUrls: [
@@ -23,16 +24,14 @@ export default defineGkdApp({
         },
         {
           key: 6,
+          name: '视频下方横幅广告-1',
           matches:
-            '[id="android:id/content"] > RelativeLayout >4 FrameLayout + ImageView[clickable=true][childCount=0][visibleToUser=true][index=parent.childCount.minus(1)]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14668232',
-            'https://i.gkd.li/i/14668248',
-            'https://i.gkd.li/i/14667860',
-          ],
+            '[id="android:id/content"] > RelativeLayout >2 FrameLayout > ViewGroup[childCount=4] > ImageView[clickable=true][childCount=0][visibleToUser=true][index=parent.childCount.minus(1)]',
+          snapshotUrls: 'https://i.gkd.li/i/14667860',
         },
         {
           key: 7,
+          name: '右下方悬浮广告-2',
           fastQuery: true,
           matches:
             '@ImageView[visibleToUser=true][childCount=0] -(1,2) * >3 [text="推荐"]',
@@ -43,6 +42,7 @@ export default defineGkdApp({
         },
         {
           key: 8,
+          name: '右下方悬浮广告-3',
           fastQuery: true,
           matches:
             '@ImageView[clickable=true][visibleToUser=true] + ViewGroup >2 [text="广告"]',
@@ -51,11 +51,24 @@ export default defineGkdApp({
         },
         {
           key: 9,
+          name: '右下方悬浮广告-4',
           fastQuery: true,
           matches:
             '@ImageView[clickable=true][visibleToUser=true][childCount=0][index=1] <2 ViewGroup[childCount=2] < FrameLayout < FrameLayout < [vid="big_live_actions_layout"]',
           exampleUrls: 'https://e.gkd.li/cfd83f2b-580d-4659-8966-eb5f4fe21ecd',
           snapshotUrls: 'https://i.gkd.li/i/16939767',
+        },
+        {
+          key: 10,
+          name: '视频下方横幅广告-2',
+          fastQuery: true,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - FrameLayout >2 [text="去看看" || text="立即匹配"]',
+          exampleUrls: 'https://e.gkd.li/942ee7a5-43e1-4709-b967-7af1a6900e4c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14668232',
+            'https://i.gkd.li/i/18032754',
+          ],
         },
       ],
     },
