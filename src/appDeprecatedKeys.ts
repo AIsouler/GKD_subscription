@@ -827,6 +827,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '正气',
     deprecatedKeys: [1],
   },
+  {
+    id: 'com.qiekj.user',
+    name: '胖乖生活',
+    deprecatedKeys: [0],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
