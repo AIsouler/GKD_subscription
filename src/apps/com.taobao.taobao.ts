@@ -239,7 +239,7 @@ export default defineGkdApp({
     },
     {
       key: 18,
-      name: '其他-[「0元下单」权益]弹窗',
+      name: '全屏广告-[「0元下单」权益]弹窗',
       desc: '点击关闭',
       rules: [
         {

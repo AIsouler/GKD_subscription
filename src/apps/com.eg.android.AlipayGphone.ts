@@ -313,8 +313,8 @@ export default defineGkdApp({
     },
     {
       key: 20,
-      name: '功能类-[0元下单权益]弹窗',
-      desc: '点击关闭',
+      name: '全屏广告-[0元下单权益]弹窗',
+      desc: '支付完成后出现',
       rules: [
         {
           fastQuery: true,
