@@ -211,8 +211,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '分段广告-动态页好友热播',
-      desc: '好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭',
+      name: '分段广告-动态页[好友热播/为你推荐]',
       fastQuery: true,
       activityIds: [
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -221,20 +220,24 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击[好友热播]卡片右上角菜单按钮',
-          matches: '@Button[clickable=true] - [text="好友热播"]',
+          matches:
+            '@[clickable=true][visibleToUser=true][childCount=0] - [text="好友热播" || text="为你推荐"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12721427',
+            'https://i.gkd.li/i/12929620',
+            'https://i.gkd.li/i/13387606',
             'https://i.gkd.li/i/14822579',
           ],
         },
         {
           preKeys: [0],
           key: 1,
-          name: '点击[减少好友热播]',
-          matches: '@[clickable=true] >2 [text="减少好友热播"]',
+          matches:
+            '@[clickable=true] >2 [text="减少好友热播" || text="减少此类推荐"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12721433',
+            'https://i.gkd.li/i/12929619',
+            'https://i.gkd.li/i/13387605',
             'https://i.gkd.li/i/14822576',
           ],
         },
@@ -282,14 +285,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14752519',
         },
       ],
-    },
-    {
-      key: 8,
-      name: '功能类-消息页面顶部"无法接收新消息通知"',
-      desc: '消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: 'RelativeLayout > [text^="当前无法接收"] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/12855441',
     },
     {
       key: 9,
@@ -392,35 +387,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12877215',
             'https://i.gkd.li/i/12919195',
             'https://i.gkd.li/i/15130235',
-          ],
-        },
-      ],
-    },
-    {
-      key: 15,
-      name: '分段广告-好友动态页面"为你推荐"',
-      fastQuery: true,
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          matches: '@ImageView[clickable=true] - [text="为你推荐"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12929620',
-            'https://i.gkd.li/i/13387606',
-          ],
-        },
-        {
-          preKeys: [0],
-          key: 1,
-          matches:
-            '@LinearLayout[id!=null][clickable=true] > LinearLayout > [text="减少此类推荐"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12929619',
-            'https://i.gkd.li/i/13387605',
           ],
         },
       ],

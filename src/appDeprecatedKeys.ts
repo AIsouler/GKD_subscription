@@ -480,7 +480,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.mobileqq',
     name: 'QQ',
-    deprecatedKeys: [6, 14, 19],
+    deprecatedKeys: [6, 8, 15, 14, 19],
   },
   {
     id: 'com.tencent.qqlive',
