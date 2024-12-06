@@ -169,17 +169,6 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          key: 0,
-          name: '点击右上角x关闭',
-          activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
-          matches:
-            'View[childCount=3] > @View[clickable=true][childCount=1] > Image',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13060891',
-            'https://i.gkd.li/i/13222361', // childCount=1否则误触这里
-          ],
-        },
-        {
           key: 1,
           name: '点击正下方x关闭',
           activityIds: [
@@ -188,7 +177,7 @@ export default defineGkdApp({
             '.LogoActivity',
           ],
           matches:
-            '@TextView[clickable=true && text=null] - FrameLayout TextView[text="广告"]',
+            '@TextView[id="com.baidu.tieba:id/obfuscated"][clickable=true][childCount=0][visibleToUser=true] - FrameLayout[childCount=2][getChild(1).text="广告"] < RelativeLayout[childCount=2] < [parent=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/13168383',
             'https://i.gkd.li/i/13322120',
@@ -197,10 +186,17 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          activityIds: '.tblauncher.MainTabActivity',
-          matches: '@TextView[visibleToUser=true][text=""] -2 [text="广告"]',
+          activityIds: [
+            '.tblauncher.MainTabActivity',
+            'com.baidu.tbadk.browser.TBWebContainerActivity',
+          ],
+          matches:
+            'WebView[text!=null] > View[childCount=1] > View[childCount=3] > @[visibleToUser=true][index=2]',
           exampleUrls: 'https://e.gkd.li/ac3d88b7-31a2-441f-a4c8-8a73eaec24b9',
-          snapshotUrls: 'https://i.gkd.li/i/16703244',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13060891',
+            'https://i.gkd.li/i/16703244',
+          ],
         },
       ],
     },
