@@ -71,6 +71,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 1,
           fastQuery: true,
           activityIds: '.ui.activity.home.MyDeviceAct',
           matches: [
@@ -79,6 +80,14 @@ export default defineGkdApp({
           ],
           exampleUrls: 'https://e.gkd.li/bccff301-de1c-4d70-8b99-f9acf8e04efa',
           snapshotUrls: 'https://i.gkd.li/i/18032031',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.tianmu.biz.activity.InterstitialActivity',
+          matches: '[vid="tianmu_widget_iv_close"]',
+          exampleUrls: 'https://e.gkd.li/3f3d3462-7121-4f37-8252-1ef82e74f626',
+          snapshotUrls: 'https://i.gkd.li/i/18033023',
         },
       ],
     },
