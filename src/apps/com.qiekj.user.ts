@@ -65,5 +65,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.activity.home.MyDeviceAct',
+          matches: [
+            '[text*="广告"][visibleToUser=true]',
+            '[text="关闭"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/bccff301-de1c-4d70-8b99-f9acf8e04efa',
+          snapshotUrls: 'https://i.gkd.li/i/18032031',
+        },
+      ],
+    },
   ],
 });
