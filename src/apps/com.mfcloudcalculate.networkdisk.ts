@@ -92,6 +92,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/af430910-56e0-4b19-b23f-b120ce19fdc0',
           snapshotUrls: 'https://i.gkd.li/i/17456625',
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          exampleUrls: 'https://e.gkd.li/069fb571-ab57-42a7-a360-79b44efc2790',
+          snapshotUrls: 'https://i.gkd.li/i/18032004',
+        },
       ],
     },
     {
