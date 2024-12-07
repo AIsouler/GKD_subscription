@@ -26,12 +26,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds: 'cn.damai.homepage.MainActivity',
-          matches:
-            '[id="cn.damai:id/homepage_popup_window_image"] + [id="cn.damai:id/homepage_popup_window_close_btn"]',
+          matches: '[id="cn.damai:id/homepage_popup_window_close_btn"]',
           snapshotUrls: 'https://i.gkd.li/i/13627900',
         },
       ],

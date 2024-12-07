@@ -26,10 +26,10 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-广场页卡片广告',
-      fastQuery: true,
-      activityIds: 'cn.soulapp.android.component.startup.main.MainActivity',
       rules: [
         {
+          fastQuery: true,
+          activityIds: 'cn.soulapp.android.component.startup.main.MainActivity',
           matches:
             '[id="cn.soulapp.android:id/sl_ad_root"] >n [id="cn.soulapp.android:id/fl_tag_container"]',
           snapshotUrls: 'https://i.gkd.li/i/12838000',
@@ -39,12 +39,13 @@ export default defineGkdApp({
     {
       key: 3,
       name: '评价提示-app评分',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: '.component.chat.ConversationActivity',
           matches:
             '[id="cn.soulapp.android:id/score_message"] +3 [id="cn.soulapp.android:id/cancel"]',
           snapshotUrls: 'https://i.gkd.li/i/13425057',
@@ -59,6 +60,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      activityIds: '.component.startup.main.MainActivity',
       rules: [
         {
           key: 0,
@@ -77,10 +79,16 @@ export default defineGkdApp({
       key: 5,
       name: '权限提示-通知权限',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="消息通知显示消息内容"] +3 [vid="img_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14332334',
+      rules: [
+        {
+          activityIds: '.component.startup.main.MainActivity',
+          matches: '[text="消息通知显示消息内容"] +3 [vid="img_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14332334',
+        },
+      ],
     },
     {
       key: 6,

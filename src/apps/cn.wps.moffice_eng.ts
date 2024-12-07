@@ -36,15 +36,19 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
-      activityIds: [
-        'cn.wps.moffice.main.AfterLoginActivity',
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-      ],
-      rules: '[id="cn.wps.moffice_eng:id/afterlogin_cancel"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13259097',
-        'https://i.gkd.li/i/12882712',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'cn.wps.moffice.main.AfterLoginActivity',
+            'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
+          ],
+          matches: '[id="cn.wps.moffice_eng:id/afterlogin_cancel"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13259097',
+            'https://i.gkd.li/i/12882712',
+          ],
+        },
       ],
     },
     {
@@ -54,13 +58,17 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="cn.wps.moffice_eng:id/close_new_func_guide_dialog_imageView"]',
-      snapshotUrls: 'https://i.gkd.li/i/12882371',
+      rules: [
+        {
+          matches:
+            '[id="cn.wps.moffice_eng:id/close_new_func_guide_dialog_imageView"]',
+          snapshotUrls: 'https://i.gkd.li/i/12882371',
+        },
+      ],
     },
     {
       key: 4,
-      name: '功能类-开启WPS云服务',
+      name: '功能类-关闭[开启WPS云服务]弹窗',
       desc: '自动点击不开启',
       fastQuery: true,
       activityIds: [
@@ -70,6 +78,7 @@ export default defineGkdApp({
       ],
       rules: [
         {
+          key: 1,
           matches:
             '[id="cn.wps.moffice_eng:id/cloud_protocol_dialog_not_start_btn"]',
           snapshotUrls: [
@@ -79,6 +88,7 @@ export default defineGkdApp({
           ],
         },
         {
+          key: 2,
           matches: '[id="cn.wps.moffice_eng:id/dialog_button_positive"]',
           snapshotUrls: 'https://i.gkd.li/i/12882554',
         },
@@ -97,7 +107,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13513911',
         },
         {
-          preKeys: 1,
+          preKeys: [1],
           key: 2,
           matches: '[text="关闭当前广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13513914',
@@ -107,29 +117,28 @@ export default defineGkdApp({
     {
       key: 6,
       name: '局部广告-首页底部广告',
-      fastQuery: true,
-      activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
-      rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13804525',
-    },
-    {
-      key: 7,
-      fastQuery: true,
-      name: '局部广告-首页底部升级会员卡片',
       rules: [
         {
+          key: 1,
+          fastQuery: true,
+          matchTime: 10000,
           activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
-          matches: '[id="cn.wps.moffice_eng:id/phone_message_close_button"]',
-          snapshotUrls: 'https://i.gkd.li/i/13945839',
+          matches:
+            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13804525',
+            'https://i.gkd.li/i/17893252',
+            'https://i.gkd.li/i/18047731',
+          ],
         },
       ],
     },
     {
       key: 8,
       name: '全屏广告-体验超级会员弹窗',
-      fastQuery: true,
       rules: [
         {
+          fastQuery: true,
           activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
           matches:
             'View[childCount=3] > Image[text!=null] +2 @TextView[clickable=true] <<n [vid="push_tips_ptr_super_webview"]',

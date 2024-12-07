@@ -32,15 +32,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 1,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules:
-        '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >2 [id="cn.lezhi.speedtest:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12727619',
-    },
   ],
 });

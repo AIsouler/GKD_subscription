@@ -86,7 +86,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13931265',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           activityIds: 'info.muge.appshare.view.main.MainActivity',
           matches: '[id="info.muge.appshare:id/tvClose"][text="确定"]',
           snapshotUrls: 'https://i.gkd.li/i/13931279',
@@ -178,9 +178,10 @@ export default defineGkdApp({
       key: 5,
       name: '通知提示-公告弹窗',
       desc: '点击[收到]',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           activityIds: 'info.muge.appshare.view.main.MainActivity',

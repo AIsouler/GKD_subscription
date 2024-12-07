@@ -11,21 +11,11 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules:
-        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
-      snapshotUrls: 'https://i.gkd.li/i/14204126',
-    },
-    {
-      key: 1,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
-          activityIds: '.main.HomeActivity',
-          matches: '[text*="新版本"] +2 [text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/i/12706195',
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
+          snapshotUrls: 'https://i.gkd.li/i/14204126',
         },
       ],
     },
@@ -73,10 +63,17 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-会员限时优惠弹窗',
-      activityIds: 'io.iftech.android.box.main.HomeActivity',
-      rules:
-        '@[id="io.iftech.android.box:id/ivClose"] + [text^="限时"][text$="特惠"]',
-      snapshotUrls: 'https://i.gkd.li/i/12706226',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'io.iftech.android.box.main.HomeActivity',
+          matches:
+            '@[id="io.iftech.android.box:id/ivClose"] + [text^="限时"][text$="特惠"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706226',
+        },
+      ],
     },
   ],
 });

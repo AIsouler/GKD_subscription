@@ -25,6 +25,7 @@ export default defineGkdApp({
           ],
         },
         {
+          preKeys: [0],
           key: 1,
           name: '点击不感兴趣',
           matches: '@[clickable=true] >3 [text="不感兴趣"]',

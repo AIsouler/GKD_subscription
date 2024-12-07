@@ -29,9 +29,13 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-首页-推荐-卡片广告',
-      activityIds: 'com.donews.nga.activitys.MainActivity',
-      rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
-      snapshotUrls: 'https://i.gkd.li/i/12482727',
+      rules: [
+        {
+          activityIds: 'com.donews.nga.activitys.MainActivity',
+          matches: '[id="gov.pianzong.androidnga:id/iv_close_ad"]',
+          snapshotUrls: 'https://i.gkd.li/i/12482727',
+        },
+      ],
     },
     {
       key: 2,
@@ -41,37 +45,46 @@ export default defineGkdApp({
         'gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity',
       rules: [
         {
+          key: 1,
           matches: 'Image[text="ams_icon_single_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/12655805'],
+          snapshotUrls: 'https://i.gkd.li/i/12655805',
         },
         {
+          key: 2,
           matches:
             'TextView[text!=null] - ImageView < LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView[id=null]',
-          snapshotUrls: ['https://i.gkd.li/i/12706140'],
+          snapshotUrls: 'https://i.gkd.li/i/12706140',
         },
         {
+          key: 3,
           matches:
             '[text="广告"] - [id="gov.pianzong.androidnga:id/iv_information_ad_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/13303236'],
+          snapshotUrls: 'https://i.gkd.li/i/13303236',
         },
       ],
     },
     {
       key: 3,
       name: '局部广告-社区-顶部广告',
-      activityIds: 'com.donews.nga.activitys.MainActivity',
-      rules: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
-      snapshotUrls: ['https://i.gkd.li/i/12706132'],
+      rules: [
+        {
+          activityIds: 'com.donews.nga.activitys.MainActivity',
+          matches: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
+          snapshotUrls: ['https://i.gkd.li/i/12706132'],
+        },
+      ],
     },
     {
       key: 4,
       name: '全屏广告-弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.hihonor.android.launcher.unihome.UniHomeLauncher',
-          matches: '[id="gov.pianzong.androidnga:id/iv_homedialog_close"]',
+          matches: '[vid="iv_homedialog_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/346f4485-82a7-4cf3-aab3-1fe6c9bb23af',
           snapshotUrls: 'https://i.gkd.li/i/14126934',

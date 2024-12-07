@@ -33,7 +33,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13930398',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           activityIds: 'cn.wsds.gamemaster.ui.gamedetails.ActivityGameDetails',
           matches: '[text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13930399',
