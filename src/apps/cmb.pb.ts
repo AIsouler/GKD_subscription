@@ -47,9 +47,13 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            '.app.h5container.webviewcontainer.PBWebContainerActivity',
+            '.app.search.PBSearchWebActivity',
+            'com.pb.marketing.PopupWindowActivity',
+          ],
           matches: '@[desc="关闭"] - * > [text*="开启"][text*="定位"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12706029',
             'https://i.gkd.li/i/13248893',
             'https://i.gkd.li/i/13897345',
             'https://i.gkd.li/i/14208717',

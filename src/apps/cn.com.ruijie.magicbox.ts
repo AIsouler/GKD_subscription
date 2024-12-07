@@ -11,9 +11,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
-        '@ImageView[id="cn.com.ruijie.magicbox:id/imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',
+        {
+          activityIds: 'cn.com.ruijie.wifibox.activity.MainActivity',
+          matches:
+            '@ImageView[id="cn.com.ruijie.magicbox:id/imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/12642359',
+        },
       ],
-      snapshotUrls: 'https://i.gkd.li/i/12642359',
     },
   ],
 });

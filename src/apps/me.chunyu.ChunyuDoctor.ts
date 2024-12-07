@@ -13,6 +13,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            '.Activities.MainActivity',
+            '.Activities.WelcomeActivity',
+          ],
           matches:
             '[text="给应用评分"] +(2) RelativeLayout > [text="下次再说"]',
           snapshotUrls: [

@@ -51,13 +51,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击"x"',
+          name: '点击关闭',
           matches: '[id="cn.xiaochuankeji.zuiyouLite:id/ad_remove"]',
           snapshotUrls: 'https://i.gkd.li/i/13387116',
         },
         {
-          preKeys: 0,
-          name: '点击"不喜欢广告主"',
+          preKeys: [0],
+          name: '点击[不喜欢广告主]',
           matches: '@LinearLayout[clickable=true] > [text="不喜欢广告主"]',
           snapshotUrls: 'https://i.gkd.li/i/13387155',
         },

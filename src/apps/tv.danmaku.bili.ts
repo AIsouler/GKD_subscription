@@ -26,16 +26,20 @@ export default defineGkdApp({
     {
       key: 0,
       name: '局部广告-评论区顶部公告横幅',
-      fastQuery: true,
-      excludeActivityIds: [
-        'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3', // 直播间
-        'tv.danmaku.bili.MainActivityV2', // 主页
-      ],
-      rules:
-        'LinearLayout[id="tv.danmaku.bili:id/ad_tint_frame"] > ImageView[id="tv.danmaku.bili:id/close"][desc="关闭"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12785461',
-        'https://i.gkd.li/i/12775156',
+      rules: [
+        {
+          fastQuery: true,
+          excludeActivityIds: [
+            'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+            'tv.danmaku.bili.MainActivityV2',
+          ],
+          matches:
+            'LinearLayout[id="tv.danmaku.bili:id/ad_tint_frame"] > ImageView[id="tv.danmaku.bili:id/close"][desc="关闭"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12785461',
+            'https://i.gkd.li/i/12775156',
+          ],
+        },
       ],
     },
     {
@@ -58,7 +62,6 @@ export default defineGkdApp({
         },
       ],
     },
-    // key = 3已弃用
     {
       key: 4,
       name: '分段广告-视频底部与评论区中间卡片广告',
@@ -76,20 +79,20 @@ export default defineGkdApp({
           matches:
             'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12642260', // n = 2
-            'https://i.gkd.li/i/12705266', // n = 3
-            'https://i.gkd.li/i/12776568', // id="tv.danmaku.bili:id/more_layout"
-            'https://i.gkd.li/i/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
+            'https://i.gkd.li/i/12642260',
+            'https://i.gkd.li/i/12705266',
+            'https://i.gkd.li/i/12776568',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           name: '点击屏蔽广告',
           matches:
             '[id="tv.danmaku.bili:id/dislike_reasons"] @RelativeLayout > [text*="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12642261', // 屏蔽广告菜单弹窗
+            'https://i.gkd.li/i/12642261',
             'https://i.gkd.li/i/13495649',
           ],
         },
@@ -100,16 +103,29 @@ export default defineGkdApp({
       name: '更新提示',
       fastQuery: true,
       actionMaximum: 1,
-      matchDelay: 5000,
+      resetMatch: 'app',
+      activityIds: [
+        'com.bilibili.app.preferences.BiliPreferencesActivity',
+        'tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity',
+        '.MainActivityV2',
+      ],
       rules: [
         {
           key: 1,
+          matches: '[text="忽略此版本的更新"][checked=false]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12649689',
+            'https://i.gkd.li/i/13212209',
+            'https://i.gkd.li/i/13228977',
+          ],
+        },
+        {
+          preKeys: [1],
           matches: '[id="tv.danmaku.bili:id/update_btn_cancel"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12649689', // com.bilibili.app.preferences.BiliPreferencesActivity
-            'https://i.gkd.li/i/13212209', // tv.danmaku.bili.ui.splash.ad.page.HotSplashActivity
+            'https://i.gkd.li/i/12649689',
+            'https://i.gkd.li/i/13212209',
             'https://i.gkd.li/i/13228977',
-            'https://i.gkd.li/i/13334963',
           ],
         },
       ],
@@ -121,18 +137,20 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      activityIds: [
-        'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
-        'com.bilibili.video.videodetail.VideoDetailsActivity',
+      rules: [
+        {
+          activityIds: [
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+            'com.bilibili.video.videodetail.VideoDetailsActivity',
+          ],
+          matches: '[id="tv.danmaku.bili:id/toast_x"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12892611',
+            'https://i.gkd.li/i/13308344',
+            'https://i.gkd.li/i/13538048',
+          ],
+        },
       ],
-      rules: '[id="tv.danmaku.bili:id/toast_x"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12892611',
-        'https://i.gkd.li/i/13308344',
-        'https://i.gkd.li/i/13538048', // activityIds: 'com.bilibili.video.videodetail.VideoDetailsActivity',
-      ],
-      exampleUrls:
-        'https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb',
     },
     {
       key: 8,
@@ -167,10 +185,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13229159',
-        'https://i.gkd.li/i/13614090',
+      rules: [
+        {
+          activityIds: [
+            '.MainActivityV2',
+            'com.bilibili.video.story.StoryTransparentActivity',
+          ],
+          matches: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13229159',
+            'https://i.gkd.li/i/13614090',
+          ],
+        },
       ],
     },
     {
@@ -224,10 +250,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
-      rules:
-        '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
-      snapshotUrls: 'https://i.gkd.li/i/13448905',
+      rules: [
+        {
+          activityIds: 'tv.danmaku.bili.MainActivityV2',
+          matches:
+            '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13448905',
+        },
+      ],
     },
     {
       key: 12,

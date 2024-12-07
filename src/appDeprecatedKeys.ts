@@ -110,7 +110,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'cn.wps.moffice_eng',
     name: 'WPS',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 7],
   },
   {
     id: 'cn.xiaochuankeji.tieba',
@@ -831,6 +831,16 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.qiekj.user',
     name: '胖乖生活',
     deprecatedKeys: [0],
+  },
+  {
+    id: 'cn.lezhi.speedtest',
+    name: '网速管家',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'io.iftech.android.box',
+    name: '小组件盒子',
+    deprecatedKeys: [1],
   },
 ];
 

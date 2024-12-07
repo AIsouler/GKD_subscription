@@ -38,7 +38,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '@Image < View + View >2 Image',
+          matches:
+            '@Image[childCount=0][visibleToUser=true][width<80 && height<80] < View[childCount=1] +n View[childCount=2] >(2,3) [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12799977',
             'https://i.gkd.li/i/12800107',
@@ -46,11 +47,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: 'Image < View < View +n View > Image[visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12800034',
-            'https://i.gkd.li/i/12800162', // 限定 Image[visibleToUser=true]，防止点击不可见节点
-          ],
+          matches:
+            '@Image[childCount=0][visibleToUser=true][width<80 && height<80] < View[childCount=1] -3 View >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/12800034',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/12800162', // 限定 Image[visibleToUser=true]，防止点击不可见节点
         },
         {
           preKeys: [0, 1],

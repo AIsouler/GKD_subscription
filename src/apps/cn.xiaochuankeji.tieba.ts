@@ -50,6 +50,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.home.setting.SettingActivity',
           matches:
             '[id="cn.xiaochuankeji.tieba:id/btn_ok"][text^="马上升级"] + [id="cn.xiaochuankeji.tieba:id/btn_cancel"][text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/12660882',
@@ -84,19 +85,21 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.ui.home.page.PageMainActivity',
       rules: [
         {
+          key: 1,
           matches:
             '[id="cn.xiaochuankeji.tieba:id/confirm"][text="打开通知"] + [id="cn.xiaochuankeji.tieba:id/cancel"][text="暂不开启"]',
           snapshotUrls: 'https://i.gkd.li/i/12660823',
         },
         {
+          key: 2,
           matches:
             '[text^="开启通知"] +(2) [id="cn.xiaochuankeji.tieba:id/tips_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12660851',
         },
       ],
     },
-    // key 11 已弃用
   ],
 });

@@ -17,10 +17,8 @@ export default defineGkdApp({
           name: '右下方悬浮广告-1',
           matches:
             'ViewGroup[childCount=8] > ViewGroup[index=5] >4 RelativeLayout[visibleToUser=true] > ImageView[clickable=true][index=1]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13948990',
-            'https://i.gkd.li/i/14310474', // 避免在此页面误触
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/13948990',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/14310474',
         },
         {
           key: 6,

@@ -11,9 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="cn.emagsoftware.gamehall:id/btn_update"] -2 [id="cn.emagsoftware.gamehall:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/i/13448894',
+      rules: [
+        {
+          activityIds: 'com.migugame.home_module.ui.activity.HomeActivity',
+          matches:
+            '[id="cn.emagsoftware.gamehall:id/btn_update"] -2 [id="cn.emagsoftware.gamehall:id/btn_cancle"]',
+          snapshotUrls: 'https://i.gkd.li/i/13448894',
+        },
+      ],
     },
   ],
 });
