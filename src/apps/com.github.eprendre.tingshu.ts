@@ -21,7 +21,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.ui.play.PlayerActivity',
           matches:
-            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout - LinearLayout > [text="立即下载" || text="下载应用"]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序"]',
           exampleUrls: 'https://e.gkd.li/d3d33d4f-4c15-45a0-9e86-0c1ca2ecc7c9',
           snapshotUrls: [
             'https://i.gkd.li/i/13334850',
@@ -45,6 +45,31 @@ export default defineGkdApp({
             '@ImageView[clickable=true] - [text="|"] - [text$="s"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/13625303',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '分段广告-播放页卡片广告',
+      desc: '点击关闭-点击不感兴趣',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.ui.play.PlayerActivity',
+          matches:
+            '@[desc="close"][visibleToUser=true] + [desc="ad_logo"] <<n [vid="ad_container"]',
+          exampleUrls: 'https://e.gkd.li/357bf940-7a93-4769-8c6d-480985b72901',
+          snapshotUrls: 'https://i.gkd.li/i/17892446',
+        },
+        {
+          preKeys: [1],
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          exampleUrls: 'https://e.gkd.li/7ce6d9c4-c77a-4655-91c2-97e1987f0914',
+          snapshotUrls: 'https://i.gkd.li/i/17892449',
         },
       ],
     },
