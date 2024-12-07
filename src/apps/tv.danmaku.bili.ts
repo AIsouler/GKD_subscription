@@ -151,10 +151,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '[关注]弹窗',
-          fastQuery: true,
-          matches: '@[vid="close"] -2 * >2 [text="关注"]',
-          snapshotUrls: 'https://i.gkd.li/i/14782965',
+          name: '[关注/投喂]弹窗',
+          matches: '@[vid="close"] - [vid="up_avatar" || vid="gift_icon"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14782965',
+            'https://i.gkd.li/i/18046573',
+          ],
         },
       ],
     },
