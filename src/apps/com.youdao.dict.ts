@@ -33,7 +33,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -84,6 +84,14 @@ export default defineGkdApp({
           activityIds: 'com.youdao.dict.activity.MainActivity',
           matches: '[vid="image"] + [vid="close"]',
           snapshotUrls: 'https://i.gkd.li/i/14296482',
+        },
+        {
+          key: 4,
+          activityIds: '.activity.DictQueryActivity',
+          matches:
+            '@[vid="iv_cancel"][visibleToUser=true] - [vid="fl_video_container"]',
+          exampleUrls: 'https://e.gkd.li/342a587e-bf0d-42e9-8c16-3c0b53240e5a',
+          snapshotUrls: 'https://i.gkd.li/i/18051512',
         },
       ],
     },
