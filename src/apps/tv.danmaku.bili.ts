@@ -44,7 +44,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-动态推荐卡片广告',
+      name: '分段广告-动态推荐卡片广告',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
       fastQuery: true,
       matchDelay: 5000,
@@ -56,7 +56,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12700222',
         },
         {
-          preKeys: 1,
+          preKeys: [1],
           matches: '[text="不感兴趣"][id^="tv.danmaku.bili:id/reason"]',
           snapshotUrls: 'https://i.gkd.li/i/12700243',
         },
