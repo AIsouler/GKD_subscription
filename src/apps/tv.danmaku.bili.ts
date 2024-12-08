@@ -47,7 +47,6 @@ export default defineGkdApp({
       name: '分段广告-动态推荐卡片广告',
       desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
       fastQuery: true,
-      matchDelay: 5000,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: [
         {
