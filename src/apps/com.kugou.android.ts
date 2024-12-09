@@ -156,15 +156,17 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][index=1] <2 FrameLayout[childCount=2] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout - FrameLayout >8 [desc="底部导航"] + [text="我的"]',
+            'ViewGroup > FrameLayout >2 FrameLayout[childCount=2] > FrameLayout > FrameLayout[childCount=2] > ImageView[index=1][clickable=true][childCount=0][width<80&&height<80]',
           exampleUrls: 'https://e.gkd.li/2b240676-4dac-4375-b238-2d570962efd1',
-          snapshotUrls: 'https://i.gkd.li/i/17004903',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17004903',
+            'https://i.gkd.li/i/18057265',
+          ],
         },
       ],
     },
