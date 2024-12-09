@@ -91,13 +91,15 @@ export default defineGkdApp({
           activityIds: [
             '.MainFrameActivity',
             'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
+            'com.jd.lib.message.messagecenter3.MessageCenterActivity',
           ],
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] -(9,12) [text="开启消息通知"]',
+            '@ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true] -n [text="开启消息通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13917163',
             'https://i.gkd.li/i/13463618',
             'https://i.gkd.li/i/14692570',
+            'https://i.gkd.li/i/18060234',
           ],
         },
         {
