@@ -63,13 +63,27 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/17892446',
         },
         {
-          preKeys: [1],
+          key: 2,
           fastQuery: true,
-          activityIds:
+          activityIds: '.ui.play.PlayerActivity',
+          matches:
+            '@[text="反馈"] <2 View + View >3 [visibleToUser=true][text="广告"] <<n [vid="ad_container"]',
+          exampleUrls: 'https://e.gkd.li/664d87f3-9571-4f48-ae01-4cd2a2634bc4',
+          snapshotUrls: 'https://i.gkd.li/i/18057482',
+        },
+        {
+          preKeys: [1, 2],
+          fastQuery: true,
+          activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
+            '.ui.play.PlayerActivity',
+          ],
           matches: '@[clickable=true] > [text="不感兴趣"]',
           exampleUrls: 'https://e.gkd.li/7ce6d9c4-c77a-4655-91c2-97e1987f0914',
-          snapshotUrls: 'https://i.gkd.li/i/17892449',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17892449',
+            'https://i.gkd.li/i/18057440',
+          ],
         },
       ],
     },
