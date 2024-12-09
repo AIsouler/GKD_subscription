@@ -82,7 +82,6 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -90,8 +89,7 @@ export default defineGkdApp({
           key: 0,
           activityIds: [
             '.MainFrameActivity',
-            'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
-            'com.jd.lib.message.messagecenter3.MessageCenterActivity',
+            'com.jd.lib.message.messagecenter',
           ],
           matches:
             '@ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true] -n [text="开启消息通知"]',
@@ -104,8 +102,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          activityIds:
-            'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
+          activityIds: 'com.jd.lib.message.messagecenter',
           matches: '@[clickable=true] + [text^="打开系统通知"]',
           snapshotUrls: 'https://i.gkd.li/i/12839865',
         },
