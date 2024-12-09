@@ -72,7 +72,16 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/18057482',
         },
         {
-          preKeys: [1, 2],
+          key: 3,
+          fastQuery: true,
+          activityIds: '.ui.play.PlayerActivity',
+          matches:
+            '@Image[childCount=0][visibleToUser=true][width<60 && height<60] < View[childCount=1] +2 View > View[childCount=2] >2 [visibleToUser=true][text="广告"] <<n [vid="ad_container"]',
+          exampleUrls: 'https://e.gkd.li/a2408a2d-7d84-4658-b660-ce8a4c849190',
+          snapshotUrls: 'https://i.gkd.li/i/18058170',
+        },
+        {
+          preKeys: [1, 2, 3],
           fastQuery: true,
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
@@ -83,6 +92,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/17892449',
             'https://i.gkd.li/i/18057440',
+            'https://i.gkd.li/i/18058170',
           ],
         },
       ],
