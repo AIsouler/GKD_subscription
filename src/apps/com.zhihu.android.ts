@@ -90,26 +90,16 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '点击x按钮',
+      desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionMaximumKey: 0,
       rules: [
         {
-          key: 0,
-          matches:
-            '[id="com.zhihu.android:id/guide_title"] - [id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/25cfef06-fe50-4250-bf45-1f6210f95063',
-          snapshotUrls: 'https://i.gkd.li/i/12647583',
-        },
-        {
           key: 1,
+          activityIds: '.app.ui.activity.MainActivity',
           matches: ['[text$="内容推送"]', '[vid="btn_close"]'],
-          exampleUrls:
-            'https://m.gkd.li/57941037/1d1fee24-3ba0-4cf1-a0d5-696f4f62a5e0',
-          snapshotUrls: 'https://i.gkd.li/i/14917866',
+          snapshotUrls: 'https://i.gkd.li/i/18057057',
         },
       ],
     },
