@@ -178,5 +178,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '全屏广告-签到弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          position: {
+            left: 'width * 0.9287',
+            top: 'width * 0.8935',
+          },
+          activityIds: '.app.flexowebview.uploadvideo.ContributeWebActivity',
+          matches:
+            '@FrameLayout > WebView > WebView[text="金币中心"] > View[id="body"] > TextView[id="root"][childCount=0]',
+          exampleUrls: 'https://e.gkd.li/f2a44161-d0a2-421d-a5e7-26fcf005daf2',
+          snapshotUrls: 'https://i.gkd.li/i/18071067',
+        },
+      ],
+    },
   ],
 });
