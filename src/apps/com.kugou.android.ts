@@ -108,6 +108,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/86e4a797-5366-4579-81ee-bc5354e95568',
           snapshotUrls: 'https://i.gkd.li/i/17177377',
         },
+        {
+          key: 2,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@[text="退出页面"][visibleToUser=true] + View > [text="你的会员已过期"]',
+          exampleUrls: 'https://e.gkd.li/f32ed6b7-e396-45a5-9849-f8a8ae99cb99',
+          snapshotUrls: 'https://i.gkd.li/i/18070974',
+        },
       ],
     },
     {
