@@ -76,9 +76,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.ui.play.PlayerActivity',
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60 && height<60] < View[childCount=1] +2 View > View[childCount=2] >2 [visibleToUser=true][text="广告"] <<n [vid="ad_container"]',
+            '@Image[childCount=0][visibleToUser=true][width<50 && height<50] < View[childCount=1] <n View >4 [visibleToUser=true][text="广告"] <<n [vid="ad_container"]',
           exampleUrls: 'https://e.gkd.li/a2408a2d-7d84-4658-b660-ce8a4c849190',
-          snapshotUrls: 'https://i.gkd.li/i/18058170',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18058170',
+            'https://i.gkd.li/i/18095619',
+          ],
         },
         {
           preKeys: [1, 2, 3],
