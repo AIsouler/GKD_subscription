@@ -15,11 +15,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.onethingcloud.android.MainActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][index=parent.childCount.minus(1)] <(2,3) View < View < View < View < FrameLayout < [id="android:id/content"]',
+            '@ImageView[clickable=true][visibleToUser=true][index=parent.childCount.minus(1)] <(2,3) View[getChild(0).text=null] < View < View[childCount=2] < View < FrameLayout < [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14766665',
             'https://i.gkd.li/i/16438609',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/18094505',
         },
       ],
     },
