@@ -101,6 +101,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/069fb571-ab57-42a7-a360-79b44efc2790',
           snapshotUrls: 'https://i.gkd.li/i/18032004',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: '.activity.LauncherActivity',
+          matches: '[vid="tv_ad_free_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/61a32cd3-d8b5-42c6-8f56-23b63cf9fed6',
+          snapshotUrls: 'https://i.gkd.li/i/18094588',
+        },
       ],
     },
     {
