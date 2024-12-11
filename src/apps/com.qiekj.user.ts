@@ -67,6 +67,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/343016ff-dd8f-4a19-8e3c-63520b087e98',
           snapshotUrls: 'https://i.gkd.li/i/12903095',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] + RelativeLayout >2 [text="反馈"]',
+          exampleUrls: 'https://e.gkd.li/501c8360-a261-40fb-b361-f1c6493289d7',
+          snapshotUrls: 'https://i.gkd.li/i/18094642',
+        },
       ],
     },
   ],
