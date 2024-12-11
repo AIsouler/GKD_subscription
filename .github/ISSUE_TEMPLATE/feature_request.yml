@@ -1,5 +1,5 @@
 name: 请求适配
-title: "[Feature] "
+title: '[Feature] '
 description: 请求增加适配 APP 规则
 body:
   - type: markdown
@@ -11,6 +11,7 @@ body:
         3. 确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
         4. 确保已阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/480)
         5. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
+        6. 一个issue内可提供多个快照，没必要对同一个应用开启多个issue
   - type: textarea
     id: feature-description
     attributes:
