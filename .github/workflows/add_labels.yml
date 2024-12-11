@@ -1,30 +1,41 @@
-name: Add Labels
+name: Issue Content Checker
 
 on:
   issues:
     types: [opened]
 
 jobs:
-  add-labels:
+  check-issue-content:
     runs-on: ubuntu-latest
-    if: |
-      contains(github.event.issue.body, 'i.gkd.li/i/') == false &&
-      contains(github.event.issue.body, '.zip') == false
     steps:
-      - name: Add labels
+      - name: Add labels and comment based on issue content
+        id: process-issue
         uses: actions-cool/issues-helper@v3
         with:
-          actions: 'add-labels'
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
-          labels: 'need info'
-      - name: Create comment
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'create-comment'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            你好 ${{ github.event.issue.user.login }}，请在评论中提供必要的快照，以便我们更好地帮助您，谢谢！
-
-            Hello ${{ github.event.issue.user.login }}. Please provide necessary snapshots in the comments so that we can better assist you. Thank you!
+          actions: |
+            - type: condition
+              condition: "!contains(github.event.issue.body, 'i.gkd.li/i/') && !contains(github.event.issue.body, '.zip')"
+              do: |
+                - type: add-labels
+                  labels: 'need info'
+                - type: create-comment
+                  body: |
+                    你好 ${{ github.event.issue.user.login }}，检测到您没有提供快照，请补充必要的快照！
+            - type: condition
+              condition: "contains(toLowerCase(github.event.issue.body), 'uploading')"
+              do: |
+                - type: add-labels
+                  labels: 'need info'
+                - type: create-comment
+                  body: |
+                    你好 ${{ github.event.issue.user.login }}，检测到您的文件上传失败，请在上传时等待文件前面的 Uploading 消失后再提交！
+            - type: condition
+              condition: "contains(github.event.issue.body, 'i.gkd.li/snapshot/')"
+              do: |
+                - type: add-labels
+                  labels: 'need info'
+                - type: create-comment
+                  body: |
+                    你好 ${{ github.event.issue.user.login }}，检测到您提供了他人无法访问的链接，请提供快照页面右上角生成的分享链接！
