@@ -109,6 +109,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/61a32cd3-d8b5-42c6-8f56-23b63cf9fed6',
           snapshotUrls: 'https://i.gkd.li/i/18094588',
         },
+        {
+          key: 7,
+          fastQuery: true,
+          activityIds: 'com.meishu.sdk.activity.SdkInterstitialActivity',
+          matches:
+            '[vid="ms_activity_sdk_interstitial_cacel"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e2e7b175-20f6-4e12-a24a-504364a8b765',
+          snapshotUrls: 'https://i.gkd.li/i/18095705',
+        },
       ],
     },
     {
