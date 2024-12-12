@@ -17,7 +17,7 @@ jobs:
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'close-issues'
-          labels: 'need info'
+          labels: 'invalid'
           inactive-day: 3
           body: |
             由于该 Issue 3 天未收到回应，现已被自动关闭，若有任何问题，可评论回复。
