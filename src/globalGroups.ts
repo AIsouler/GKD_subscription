@@ -14,7 +14,7 @@ export default defineGkdGlobalGroups([
     matchRoot: true,
     fastQuery: true,
     matchTime: 10000,
-    actionMaximum: 1,
+    actionMaximum: 2,
     resetMatch: 'app',
     actionMaximumKey: 0,
     priorityTime: 10000,
