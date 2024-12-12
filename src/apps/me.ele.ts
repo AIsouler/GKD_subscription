@@ -13,11 +13,16 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.afollestad.materialdialogs.MaterialDialog',
+          activityIds: [
+            'com.afollestad.materialdialogs.MaterialDialog',
+            '.application.ui.Launcher.LauncherActivity',
+          ],
           matches: ['[text*="更新应用版本"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/7a0ade81-d2f3-4174-ba6e-9976b8e7ecf5',
           snapshotUrls: [
             'https://i.gkd.li/i/12650280',
             'https://i.gkd.li/i/13206819',
+            'https://i.gkd.li/i/18096620',
           ],
         },
       ],
