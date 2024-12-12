@@ -412,5 +412,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 22,
+      name: '全屏广告-汽水音乐VIP',
+      desc: '点击关闭',
+      activityIds: [
+        '.dsp.MusicLunaActivity',
+        '.dsp.playpage.singlepage.subpage.MusicDspSubPlayerActivity',
+      ],
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          matches:
+            'ScrollView - @ImageView[index=1][childCount=0][visibleToUser=true][width<100][height<100] <2 View < View < ViewGroup < ViewGroup < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/4c57ee77-2189-4b3b-be0b-430fac8853c2',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18100285',
+            'https://i.gkd.li/i/18100454',
+            'https://i.gkd.li/i/18100477',
+          ],
+        },
+      ],
+    },
   ],
 });
