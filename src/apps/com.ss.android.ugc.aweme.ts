@@ -423,8 +423,9 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           matches:
-            '@ImageView[width<100][height<100][visibleToUser=true] + ScrollView',
+            'ScrollView - @ImageView[index=1][childCount=0][visibleToUser=true][width<100][height<100] <2 View < View < ViewGroup < ViewGroup < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/4c57ee77-2189-4b3b-be0b-430fac8853c2',
           snapshotUrls: [
             'https://i.gkd.li/i/18100285',
