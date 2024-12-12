@@ -1,4 +1,4 @@
-name: Issue Close Question
+name: Issue Close
 
 on:
   schedule:
@@ -17,7 +17,7 @@ jobs:
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'close-issues'
-          labels: 'invalid'
+          labels: 'invalid,need info'
           inactive-day: 3
           body: |
-            由于该 Issue 3 天未收到回应，现已被自动关闭，若有任何问题，可评论回复。
+            由于该 issue 3天未收到回应，现已被自动关闭，若有任何问题，可评论回复。

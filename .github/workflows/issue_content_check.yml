@@ -1,4 +1,4 @@
-name: Issue Content Checker
+name: Issue Content Check
 
 on:
   issues:
