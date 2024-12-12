@@ -60,17 +60,25 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
-      activityIds: '.component.startup.main.MainActivity',
+      activityIds: [
+        '.component.startup.main.MainActivity',
+        '.component.chat.ConversationActivity',
+      ],
       rules: [
         {
           key: 0,
           matches:
             '@[id="cn.soulapp.android:id/img_close"] -2 RelativeLayout > [text="升级到最新版本"]',
-          snapshotUrls: 'https://i.gkd.li/i/13693361',
+          exampleUrls: 'https://e.gkd.li/b8aedb39-1ef1-4b41-80da-0948614d9c7f',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13693361',
+            'https://i.gkd.li/i/18096443',
+          ],
         },
         {
           key: 1,
           matches: '[text="升级体验"] - [text="关闭"]',
+          exampleUrls: 'https://e.gkd.li/8980a9a6-5ea3-4d61-afdb-e22ffbf1cbde',
           snapshotUrls: 'https://i.gkd.li/i/15034131',
         },
       ],
