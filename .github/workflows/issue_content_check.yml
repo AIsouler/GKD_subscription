@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Add invalid label
         if: |
-          contains(github.event.issue.body, 'i.gkd.li/i/') == false &&
-          contains(github.event.issue.body, '.zip') == false &&
-          contains(github.event.issue.body, 'Uploading') == true &&
+          (contains(github.event.issue.body, 'i.gkd.li/i/') == false &&
+          contains(github.event.issue.body, '.zip') == false) ||
+          contains(github.event.issue.body, 'Uploading') == true ||
           contains(github.event.issue.body, 'i.gkd.li/snapshot/') == true
         uses: actions-cool/issues-helper@v3
         with:
