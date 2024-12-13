@@ -30,10 +30,8 @@ export default defineGkdApp({
           fastQuery: true,
           matches: '[vid="ms_skipView"]', // vid="iv_notification_fragment_news" 并非跳过节点，只是位置相同
           exampleUrls: 'https://e.gkd.li/4b7fd3fe-8467-49e3-93af-64515416911c',
-          snapshotUrls: [
-            'https://i.gkd.li/i/16860311',
-            'https://i.gkd.li/i/16902939', // 防止误触
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/16860311',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16902939',
         },
         {
           key: 3,
@@ -55,30 +53,27 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '首页卡片广告',
           activityIds: [
-            'com.gamersky.main.activity.LibMainActivity',
+            '.main.activity.LibMainActivity',
             '.common.activity.LibDetailContentDetailActivity',
           ],
-          matches:
-            '@[vid="delete" || id="com.gamersky:id/close"] - LinearLayout > [text="广告" || id="com.gamersky:id/badge"]',
+          matches: [
+            '[text="广告"][visibleToUser=true]',
+            '[vid="delete"][visibleToUser=true]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/i/13635580',
-            'https://i.gkd.li/i/13759484',
-            'https://i.gkd.li/i/17356753',
+            'https://i.gkd.li/i/18122883',
+            'https://i.gkd.li/i/18122884',
           ],
         },
         {
           key: 1,
-          name: '正文底部卡片广告',
           activityIds:
             'com.gamersky.common.activity.LibDetailContentDetailActivity',
           matches:
             'WebView >2 View[childCount=2] > View[index=1] > @View[clickable=true][visibleToUser=true][childCount=0] <<n [vid="contentWebView"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14622935',
-            'https://i.gkd.li/i/14892583', // 避免误触
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/14622935',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/14892583',
         },
         {
           key: 2,
