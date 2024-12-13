@@ -43,13 +43,16 @@ export default defineGkdApp({
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
             'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
+            '.activity.LauncherActivity',
           ],
-          matches: '[id$="iv_ad_free_gif"] + * > [text="关闭"]',
+          matches:
+            '[vid="tv_ad_free_close" || vid="tv_ad_free_colse"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/4cafd5fd-b5ed-4df1-b9f2-f443f53a7166',
           snapshotUrls: [
             'https://i.gkd.li/i/13546173',
             'https://i.gkd.li/i/14696860',
+            'https://i.gkd.li/i/18121213',
           ],
         },
         {
@@ -104,10 +107,14 @@ export default defineGkdApp({
         {
           key: 6,
           fastQuery: true,
-          activityIds: '.activity.LauncherActivity',
-          matches: '[vid="tv_ad_free_close"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/61a32cd3-d8b5-42c6-8f56-23b63cf9fed6',
-          snapshotUrls: 'https://i.gkd.li/i/18094588',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: [
+            '[text="反馈"][visibleToUser=true]',
+            '[text="跳过"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/1326c88b-81e0-4f78-b301-778d29e10433',
+          snapshotUrls: 'https://i.gkd.li/i/18121205',
         },
         {
           key: 7,
