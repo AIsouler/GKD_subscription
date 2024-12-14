@@ -9,52 +9,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Add invalid label
-        if: |
-          (contains(github.event.issue.body, 'i.gkd.li/i/') == false &&
-          contains(github.event.issue.body, '.zip') == false) ||
-          contains(github.event.issue.body, 'Uploading') == true ||
-          contains(github.event.issue.body, 'i.gkd.li/snapshot/') == true
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'add-labels'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.number }}
-          labels: 'invalid'
-
-      - name: Comment for missing snapshots
+      - name: Add label and comment for missing snapshots
         if: |
           contains(github.event.issue.body, 'i.gkd.li/') == false &&
           contains(github.event.issue.body, '.zip') == false
         uses: actions-cool/issues-helper@v3
         with:
-          actions: 'create-comment'
+          actions: add-labels,create-comment
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
+          labels: 'invalid'
           body: |
             你好 ${{ github.event.issue.user.login }}，检测到您没有提供快照，请补充必要的快照！
 
             可在下方评论区补充
 
-      - name: Comment for uploading failed
+      - name: Add label and comment for uploading failed
         if: contains(github.event.issue.body, 'Uploading') == true
         uses: actions-cool/issues-helper@v3
         with:
-          actions: 'create-comment'
+          actions: add-labels,create-comment
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
+          labels: 'invalid'
           body: |
             你好 ${{ github.event.issue.user.login }}，检测到您的文件上传失败，请在上传时等待文件前面的 Uploading 消失后再提交！
 
             可在下方评论区补充
 
-      - name: Comment for inaccessible snapshot links
+      - name: Add label and comment for inaccessible snapshot links
         if: contains(github.event.issue.body, 'i.gkd.li/snapshot/') == true
         uses: actions-cool/issues-helper@v3
         with:
-          actions: 'create-comment'
+          actions: add-labels,create-comment
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
+          labels: 'invalid'
           body: |
             你好 ${{ github.event.issue.user.login }}，检测到您提供了他人无法访问的链接，请提供快照页面右上角生成的分享链接！
 
