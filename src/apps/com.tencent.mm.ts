@@ -353,16 +353,14 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: [
-            'com.tencent.mm.plugin.finder.ui.',
-            'com.tencent.mm.ui.LauncherUI',
-          ],
+          activityIds: ['.plugin.finder.', '.ui.LauncherUI'],
           matches: ['[text*="青少年模式"]', '[text="我知道了"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13538145',
             'https://i.gkd.li/i/13575195',
             'https://i.gkd.li/i/14735456',
             'https://i.gkd.li/i/14896723',
+            'https://i.gkd.li/i/18135103',
           ],
         },
       ],
