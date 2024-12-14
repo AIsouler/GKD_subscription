@@ -82,13 +82,11 @@ export default defineGkdApp({
       desc: '视频播放前或播放中途插入的广告',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'org.iqiyi.video.activity.PlayerActivity',
-          matches:
-            '@RelativeLayout[id="com.qiyi.video:id/unused_res_a"] > TextView[text="关闭广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13536669',
-            'https://i.gkd.li/i/13536703',
-          ],
+          matches: '@[clickable=true] > [text^="关闭广告"]',
+          exampleUrls: 'https://e.gkd.li/04622996-5a6d-4577-a1cb-adcae37f62b6',
+          snapshotUrls: 'https://i.gkd.li/i/18134230',
         },
       ],
     },
