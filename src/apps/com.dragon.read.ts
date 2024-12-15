@@ -15,8 +15,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          matches: '@ImageView - LinearLayout TextView[text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/12908734',
+          fastQuery: true,
+          matches:
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12908734',
+            'https://i.gkd.li/i/18138903',
+          ],
         },
         {
           key: 2,
