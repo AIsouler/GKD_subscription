@@ -67,7 +67,7 @@ export default defineGkdApp({
           ],
           matches: [
             'TextView[text^="开启推送通知"]',
-            'ImageView[vid$="_close"]',
+            '[vid="iv_close" || id="com.smzdm.client.android:id/ib_close"][visibleToUser=true]',
           ],
           exampleUrls: [
             'https://e.gkd.li/2e979f31-7498-497f-a4ed-b82b884e2d8d',
