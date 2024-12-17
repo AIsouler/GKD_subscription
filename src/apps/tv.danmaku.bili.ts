@@ -131,13 +131,14 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '局部广告-视频悬浮广告',
+      name: '局部广告-视频页广告',
       desc: '领取大会员月卡,B站免流星卡',
       fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
       rules: [
         {
+          key: 1,
+          matchTime: 10000,
+          actionMaximum: 1,
           activityIds: [
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
             'com.bilibili.video.videodetail.VideoDetailsActivity',
@@ -148,6 +149,16 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13308344',
             'https://i.gkd.li/i/13538048',
           ],
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+          matches:
+            '@[vid="close"][visibleToUser=true] - [text$="免费领B站大会员"]',
+          exampleUrls: 'https://e.gkd.li/cd934dfc-666e-4562-8b77-aac95f73694e',
+          snapshotUrls: 'https://i.gkd.li/i/18165189',
         },
       ],
     },
@@ -391,6 +402,22 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17676149',
             'https://i.gkd.li/i/17677147',
           ],
+        },
+      ],
+    },
+    {
+      key: 16,
+      name: '功能类-自动关闭故事模式',
+      desc: '播放视频时退出竖屏模式',
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+          matches: '[vid="story_ctrl_router"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4bfd6131-d4be-46be-affb-73338b01f49c',
+          snapshotUrls: 'https://i.gkd.li/i/18164075',
         },
       ],
     },
