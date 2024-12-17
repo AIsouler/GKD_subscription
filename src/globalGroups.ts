@@ -11,7 +11,6 @@ export default defineGkdGlobalGroups([
     name: '开屏广告-全局',
     desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
-    matchRoot: true,
     fastQuery: true,
     matchTime: 10000,
     actionMaximum: 2,
