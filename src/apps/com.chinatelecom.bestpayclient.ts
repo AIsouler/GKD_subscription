@@ -40,11 +40,13 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
-          matches: '[vid="iv_dialog_close_one"]',
+          activityIds: '.ui.MainActivity',
+          matches:
+            '[vid="iv_dialog_close_one" || vid="iv_sky_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13455790',
             'https://i.gkd.li/i/15369212',
+            'https://i.gkd.li/i/18160066',
           ],
         },
         {
