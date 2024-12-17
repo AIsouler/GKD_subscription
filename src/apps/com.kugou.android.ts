@@ -199,5 +199,30 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '功能类-自动关闭速听模式',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: '.app.MediaActivity',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@[desc="关闭"][visibleToUser=true] < RelativeLayout < RelativeLayout + FrameLayout >3 ViewGroup[desc="速听卡片"] >2 [text="喜欢"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e24dda6a-c5fa-4c93-9026-cda7a4d9e205',
+          snapshotUrls: 'https://i.gkd.li/i/18164732',
+        },
+        {
+          preKeys: [1],
+          matches:
+            '@FrameLayout[clickable=true][visibleToUser=true] < RelativeLayout - [desc="暂停"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ffb25ec5-35b0-47ff-9387-54c757c90f29',
+          snapshotUrls: 'https://i.gkd.li/i/18165065',
+        },
+      ],
+    },
   ],
 });
