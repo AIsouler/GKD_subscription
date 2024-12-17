@@ -5,12 +5,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## 在提交问题之前，请您确保完成以下操作
-        ## 在提交问题之前，请您确保完成以下操作
-        ## 在提交问题之前，请您确保完成以下操作
+        ## 在提交问题之前，请您务必完成以下操作！！！
+        ## 在提交问题之前，请您务必完成以下操作！！！
+        ## 在提交问题之前，请您务必完成以下操作！！！
 
-        1. 确保 **提供 误触/出现问题 界面的快照（不要提供截图，截图没有任何作用），并说明是哪一条规则 误触/出现问题**
-        2. 确保使用的是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
+        1. **提供 误触/出现问题 界面的快照（不要提供截图，截图没有任何作用），并说明是哪一条规则 误触/出现问题**
+        2. 检查使用的是否是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
         3. 检查这个问题是否属于 [本项目维护的规则](https://github.com/AIsouler/GKD_subscription) 导致的
         4. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
 
