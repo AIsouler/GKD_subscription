@@ -16,6 +16,7 @@ export default defineGkdGlobalGroups([
     matchTime: 10000,
     actionMaximum: 2,
     resetMatch: 'app',
+    actionCdKey: 0,
     actionMaximumKey: 0,
     priorityTime: 10000,
     rules: [
