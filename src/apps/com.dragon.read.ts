@@ -66,9 +66,12 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: '.update',
+          activityIds: ['.update', '.pages.main.MainFragmentActivity'],
           matches: '@[text="以后再说"] + [text="优先体验"]',
-          snapshotUrls: 'https://i.gkd.li/i/12716477',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12716477',
+            'https://i.gkd.li/i/18175292',
+          ],
         },
       ],
     },
