@@ -13,9 +13,8 @@ export default defineGkdGlobalGroups([
     order: OPEN_AD_ORDER,
     fastQuery: true,
     matchTime: 10000,
-    actionMaximum: 2,
+    actionMaximum: 1,
     resetMatch: 'app',
-    actionCdKey: 0,
     actionMaximumKey: 0,
     priorityTime: 10000,
     rules: [
