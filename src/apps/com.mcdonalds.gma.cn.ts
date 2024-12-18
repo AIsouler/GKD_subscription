@@ -37,9 +37,6 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           activityIds: '.activity.MainActivity',
           matches: '[vid="iv_ad_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/6a95fcb7-3f9c-43f8-80bb-bdd034c81252',
