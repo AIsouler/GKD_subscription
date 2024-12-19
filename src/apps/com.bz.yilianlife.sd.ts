@@ -5,22 +5,6 @@ export default defineGkdApp({
   name: '深(新)度搜索',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 2, // https://github.com/AIsouler/GKD_subscription/issues/590
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/7cf40ba9-6b54-4868-9c5e-8a6759326011',
-          snapshotUrls: 'https://i.gkd.li/i/18095106',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
