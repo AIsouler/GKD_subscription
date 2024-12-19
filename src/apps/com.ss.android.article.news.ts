@@ -27,8 +27,10 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           activityIds: [
             'com.bytedance.ies.outertest.cn.OuterTestGuideDialogActivity',
             'com.ss.android.article.base.feature.ugc.story.StoryVideoActivity',
@@ -39,6 +41,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13316081',
             'https://i.gkd.li/i/17681710',
           ],
+        },
+        {
+          key: 1,
+          activityIds: '.activity.MainActivity',
+          matches: '[text="以后再说"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/79b75132-9d6f-4e4c-a95b-56dbaca1965d',
+          snapshotUrls: 'https://i.gkd.li/i/18194356',
         },
       ],
     },
