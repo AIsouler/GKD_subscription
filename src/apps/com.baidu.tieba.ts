@@ -396,8 +396,11 @@ export default defineGkdApp({
           key: 2,
           activityIds: '.tblauncher.MainTabActivity',
           matches:
-            '@[clickable=true][vid="obfuscated"][visibleToUser=true] < LinearLayout <4 RelativeLayout +3 LinearLayout >4 [text="小游戏"]',
-          snapshotUrls: 'https://i.gkd.li/i/17943902',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] < LinearLayout[childCount=1] <4 RelativeLayout +3 LinearLayout >4 [text="小游戏"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17943902',
+            'https://i.gkd.li/i/18217417',
+          ],
         },
       ],
     },
