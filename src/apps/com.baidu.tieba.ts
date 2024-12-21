@@ -368,7 +368,7 @@ export default defineGkdApp({
           key: 0,
           activityIds: '.pb.pb.main.PbActivity',
           matches:
-            '@[clickable=true][vid="obfuscated"][visibleToUser=true] <(1,2) RelativeLayout <(1,4) RelativeLayout[childCount>1] >(3,4) [text="广告"]',
+            '@[clickable=true][visibleToUser=true] <(1,2) RelativeLayout <(1,4) RelativeLayout[childCount>1] >(3,4) [text="广告"]',
           exampleUrls: 'https://e.gkd.li/337a7e8b-500f-4a0b-ae08-018c5222d4da',
           snapshotUrls: [
             'https://i.gkd.li/i/16595124',
@@ -430,10 +430,11 @@ export default defineGkdApp({
           key: 1,
           activityIds: ['.tblauncher.MainTabActivity', '.forum.ForumActivity'],
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][vid="obfuscated"] - [text="你可能感兴趣的吧" || text^="本吧的人都在逛"]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - [text="你可能感兴趣的吧" || text^="本吧的人都在逛"]',
           snapshotUrls: [
             'https://i.gkd.li/i/16914357',
             'https://i.gkd.li/i/17944680',
+            'https://i.gkd.li/i/18218517',
           ],
         },
       ],
