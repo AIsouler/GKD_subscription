@@ -13,11 +13,11 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: [
-            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
-            'com.zhihu.android.ContentActivity',
+            '.feature.short_container_feature.ui.ShortContainerHostActivity',
+            '.ContentActivity',
           ],
           matches:
-            '@[clickable=true][visibleToUser=true] -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n * >n [text*="广告"][childCount=0][id=null][desc=null]',
+            '@[clickable=true][visibleToUser=true] -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n ViewGroup >n [text*="广告"][childCount=0][id=null][desc=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/13849671',
             'https://i.gkd.li/i/14645530',
@@ -37,9 +37,9 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          activityIds: '.app.ui.activity.MainActivity',
           matches:
-            '@ImageView[clickable=true] < * - * > [text*="广告" || text$="商品介绍"]',
+            '@ImageView[clickable=true][childCount=0] < FrameLayout[childCount=1] - * > [text*="广告" || text$="商品介绍"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14296163',
             'https://i.gkd.li/i/14321041',
@@ -49,15 +49,23 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches: '@ViewGroup[clickable=true] <4 * -3 * >2 [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14192451',
+          activityIds: ['.app.ui.activity.MainActivity', '.ContentActivity'],
+          matches:
+            '@ViewGroup[clickable=true][childCount=1] <4 ViewGroup -(2,3) ViewGroup[childCount>1] >(1,2) [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14192451',
+            'https://i.gkd.li/i/18217217',
+          ],
         },
         {
           key: 4,
-          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches: '@ViewGroup[clickable=true] <3 * < * -3 * >2 [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14730741',
+          activityIds: '.app.ui.activity.MainActivity',
+          matches:
+            '@ViewGroup[clickable=true][childCount=1] <3 ViewGroup < ViewGroup -(2,3) ViewGroup >2 [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14332161',
+            'https://i.gkd.li/i/14730741',
+          ],
         },
         {
           key: 5,
@@ -73,9 +81,9 @@ export default defineGkdApp({
           preKeys: [0, 2, 3, 4, 5],
           key: 90,
           activityIds: [
-            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
-            'com.zhihu.android.ContentActivity',
-            'com.zhihu.android.app.ui.activity.MainActivity',
+            '.feature.short_container_feature.ui.ShortContainerHostActivity',
+            '.ContentActivity',
+            '.app.ui.activity.MainActivity',
           ],
           matches:
             '@[clickable=true] >(1,3) [text$="不感兴趣" || text^="屏蔽作者"]',
@@ -165,11 +173,11 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: [
-            'com.zhihu.android.mix.activity.ContentMixProfileActivity',
-            'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
+            '.mix.activity.ContentMixProfileActivity',
+            '.mixshortcontainer.MixShortContainerActivity',
           ],
           matches:
-            '@[text="×"][visibleToUser=true] <n * > [visibleToUser=true][text*="广告" || text="查看详情"] <<n [vid="web_frame" || vid="view_content"]',
+            '@[text="×"][visibleToUser=true] <n View > [visibleToUser=true][text*="广告" || text="查看详情"] <<n [vid="web_frame" || vid="view_content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14220104',
             'https://i.gkd.li/i/14421277',
@@ -177,19 +185,13 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 4,
-          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
-          matches: '@ViewGroup[clickable=true] <3 * < * -2 * >2 [text$="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14332161',
-        },
-        {
           key: 5,
           activityIds: [
-            'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
-            'com.zhihu.android.mix.activity.ContentMixProfileActivity',
+            '.mixshortcontainer.MixShortContainerActivity',
+            '.mix.activity.ContentMixProfileActivity',
           ],
           matches:
-            '@Image[clickable=true][visibleToUser=true] <2 * > [visibleToUser=true][text$="广告"] <<n [vid="view_content"]',
+            '@Image[clickable=true][visibleToUser=true] <2 View > [visibleToUser=true][text$="广告"] <<n [vid="view_content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14391614',
             'https://i.gkd.li/i/15282584',
@@ -198,15 +200,15 @@ export default defineGkdApp({
         {
           key: 6,
           activityIds:
-            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
+            '.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true]  -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n * > [text*="知乎" || text="创作者小助手"][childCount=0][id=null][desc=null]',
+            '@ImageView[clickable=true][visibleToUser=true]  -(1,2) TextView[childCount=0][id=null][text=null][desc=null] <n ViewGroup > [text*="知乎" || text="创作者小助手"][childCount=0][id=null][desc=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/14235024',
             'https://i.gkd.li/i/14944631',
             'https://i.gkd.li/i/14232195',
-            'https://i.gkd.li/i/14232195', // 避免误触
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/14232195',
         },
       ],
     },
