@@ -36,5 +36,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-[大家还下载了]弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.detail.activity.ContentDetailActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] - [vid="tv_detail_related_other_opp_title_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/de1b9cc4-c47e-456a-b975-5eefaedb5e42',
+          snapshotUrls: 'https://i.gkd.li/i/18209149',
+        },
+      ],
+    },
   ],
 });
