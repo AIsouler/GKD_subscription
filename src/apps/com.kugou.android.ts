@@ -44,7 +44,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           forcedTime: 10000,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches:
             'ViewGroup[childCount=2] > ImageView + @FrameLayout[clickable=true] > LinearLayout > ImageView <<n [id="android:id/list"]',
           snapshotUrls: 'https://i.gkd.li/i/16434752',
@@ -52,7 +52,7 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches:
             '@ImageView[desc="关闭"][visibleToUser=true][clickable=true] <n ViewGroup < LinearLayout <3 [id="android:id/list"]',
           snapshotUrls: [
@@ -64,24 +64,33 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches: '[desc="关闭广告"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15024812',
         },
         {
           key: 3,
           fastQuery: true,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches: '@ImageView[clickable=true] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15520336',
         },
         {
           key: 4,
           forcedTime: 10000,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches:
             'RelativeLayout > @RelativeLayout[clickable=true] > [desc="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/16114590',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@ImageButton[clickable=true][childCount=0][visibleToUser=true] - LinearLayout > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/fcb3e4d2-73bf-49b5-9157-08cac0c11584',
+          snapshotUrls: 'https://i.gkd.li/i/18207953',
         },
       ],
     },
