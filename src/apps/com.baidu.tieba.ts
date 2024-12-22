@@ -406,11 +406,12 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '局部广告-贴吧推广',
+      name: '局部广告-感兴趣的吧推广',
       desc: '关闭首页、吧内其他贴吧的推广',
       rules: [
         {
           key: 1,
+          fastQuery: true,
           activityIds: ['.tblauncher.MainTabActivity', '.forum.ForumActivity'],
           matches:
             '@ImageView[childCount=0][clickable=true][visibleToUser=true] - [text="你可能感兴趣的吧" || text^="本吧的人都在逛"]',
