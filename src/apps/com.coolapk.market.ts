@@ -32,10 +32,8 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          matches: [
-            '[id="com.coolapk.market:id/ad_container"][visibleToUser=true]',
-            '[text*="跳过"][text.length<10][visibleToUser=true]',
-          ],
+          excludeMatches: '[id="com.coolapk.market:id/item_view"]',
+          matches: '[text*="跳过"][text.length<5][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
             'https://i.gkd.li/i/13211392',
