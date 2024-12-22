@@ -122,6 +122,7 @@ export const blackListAppIDs: string[] = [
   'com.zyc.zcontrol', // ZControl
   'org.nobody.multitts', // MultiTTS
   'deltazero.amarok', // Amarok 更新提示在 https://i.gkd.li/i/17812411 误触
+  'com.quark.browser', // 夸克浏览器 开屏广告误触 https://i.gkd.li/i/18221460
 
   'com.canghai.haoka',
   'com.xy.td',
