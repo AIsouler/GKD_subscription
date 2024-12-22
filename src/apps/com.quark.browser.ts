@@ -23,12 +23,12 @@ export default defineGkdApp({
       key: 3,
       name: '更新提示',
       desc: '点击取消',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: 'com.ucpro.BrowserActivity',
           matches: ['[text*="版本更新" || text^="优化升级"]', '[text="取消"]'],
           snapshotUrls: [
