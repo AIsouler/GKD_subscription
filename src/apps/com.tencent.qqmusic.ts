@@ -39,14 +39,16 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds:
             'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
-          matches: '[text^="广告"] + [text="跳过"][clickable=true]',
+          matches:
+            '[text^="广告"] + [text="跳过"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13985169', // 播放界面
         },
         {
           key: 2,
           fastQuery: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '@[desc="关闭"][clickable=true] -(1,2) [text="广告"]',
+          matches:
+            '@[desc="关闭"][clickable=true] -(1,2) [text="广告"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13206534', //歌单页
             'https://i.gkd.li/i/13797001', //我的页
@@ -57,7 +59,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches:
-            '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"||text="摇动点击广告跳转"]',
+            '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"||text="摇动点击广告跳转"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13206982',
             'https://i.gkd.li/i/13218134',
@@ -67,14 +69,16 @@ export default defineGkdApp({
           key: 4,
           fastQuery: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '@[clickable=true] > [text="广告"]',
+          matches:
+            '@[clickable=true][visibleToUser=true] > [text="广告"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15041019',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/18219557',
         },
         {
           key: 5,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches:
-            'RecyclerView > LinearLayout[childCount=3] >5 ViewGroup[childCount=3] > @ViewGroup[clickable=true] >2 ImageView[text=null][desc=null]',
+            'RecyclerView > LinearLayout[childCount=3] >5 ViewGroup[childCount=3] > @ViewGroup[clickable=true] >2 ImageView[text=null][desc=null][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15756931',
         },
         {
@@ -84,7 +88,8 @@ export default defineGkdApp({
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: '.activity.AppStarterActivity',
-          matches: '@ImageView[clickable=true] - [text="广告"]',
+          matches:
+            '@ImageView[clickable=true] - [text="广告"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17450309',
         },
       ],
