@@ -123,6 +123,7 @@ export const blackListAppIDs: string[] = [
   'org.nobody.multitts', // MultiTTS
   'deltazero.amarok', // Amarok 更新提示在 https://i.gkd.li/i/17812411 误触
   'com.quark.browser', // 夸克浏览器 开屏广告误触 https://i.gkd.li/i/18221460
+  'bin.mt.plus', // MT管理器
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -131,7 +132,6 @@ export const blackListAppIDs: string[] = [
   'io.github.huskydg.magisk',
   'xzr.konabess',
   'org.lsposed.manager',
-  'bin.mt.plus',
   'tw.nekomimi.nekogram',
   'io.github.qauxv',
   'com.rezvorck.tiktokplugin',
@@ -273,6 +273,27 @@ export const yongBlackListAppIDs = new Set([
   'com.netease.cloudmusic', // 网易云音乐 全局规则在 https://i.gkd.li/i/14931708 误触
   'com.zhihu.android', // 知乎 全局规则在 https://i.gkd.li/i/14964990 误触
   'com.luna.music', // 汽水音乐 全局规则在 https://i.gkd.li/i/15124801 误触
+  'com.baidu.tieba', // 百度贴吧
+  'com.android.bankabc', // 中国农业银行
+  'com.autonavi.minimap', // 高德地图
+  'com.baidu.netdisk', // 百度网盘
+  'com.jingdong.app.mall', // 京东
+  'com.max.xiaoheihe', // 小黑盒
+  'com.MobileTicket', // 铁路12306
+  'com.sinovatech.unicom.ui', // 中国联通
+  'com.sdu.didi.psnger', // 滴滴出行
+  'com.sankuai.meituan', // 美团
+  'com.taobao.idlefish', // 闲鱼
+  'com.tencent.mobileqq', // QQ
+  'com.alibaba.android.rimet', // 钉钉
+  'com.taptap', // TapTap
+  'com.coolapk.market', // 酷安
+  'com.xunlei.downloadprovider', // 迅雷
+  'com.taobao.taobao', // 淘宝
+  'com.xingin.xhs', // 小红书
+  'com.ct.client', // 中国电信
+  'me.ele', // 饿了么
+  'com.tencent.qqmusic', // QQ音乐
   ...filterAppsByGroup(apps, '青少年模式'),
 ]);
 
