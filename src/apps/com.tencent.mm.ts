@@ -725,6 +725,7 @@ export default defineGkdApp({
       name: '功能类-语音通话呼入10秒后自动点击接听',
       rules: [
         {
+          matchTime: 15000,
           actionDelay: 10000,
           activityIds: '.plugin.voip.ui.VideoActivity',
           matches: 'Button[desc="接听"][visibleToUser=true]',
