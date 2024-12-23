@@ -71,7 +71,10 @@ export default defineGkdApp({
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches:
             '@[clickable=true][visibleToUser=true] > [text="广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/15041019',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15041019',
+            'https://i.gkd.li/i/18227243',
+          ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/18219557',
         },
         {
@@ -84,13 +87,17 @@ export default defineGkdApp({
         {
           key: 6,
           fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           activityIds: '.activity.AppStarterActivity',
           matches:
             '@ImageView[clickable=true] - [text="广告"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17450309',
+        },
+        {
+          key: 7,
+          fastQuery: true,
+          activityIds: '.activity.AppStarterActivity',
+          matches: '[text="广告 | 关闭"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/18227204',
         },
       ],
     },
