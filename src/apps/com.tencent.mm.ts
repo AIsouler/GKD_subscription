@@ -720,5 +720,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 39,
+      name: '功能类-语音通话呼入10秒后自动点击接听',
+      rules: [
+        {
+          actionDelay: 10000,
+          activityIds: '.plugin.voip.ui.VideoActivity',
+          matches: 'Button[desc="接听"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/fbfea6ba-ce43-4641-a919-9c21fa49dc73',
+          snapshotUrls: 'https://i.gkd.li/i/18225086',
+        },
+      ],
+    },
   ],
 });
