@@ -28,6 +28,12 @@ export default defineGkdApp({
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
           snapshotUrls: 'https://i.gkd.li/i/14446438',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          matches: '[vid="adsail_skipView"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/18236114',
+        },
       ],
     },
     {
