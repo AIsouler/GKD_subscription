@@ -794,7 +794,8 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+          activityIds:
+            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
           matches: '@[desc="关闭"] - [text="推荐你试试这些玩法"]',
           exampleUrls: 'https://e.gkd.li/6cf71a22-0e21-4877-86a7-69d84353ad5a',
           snapshotUrls: 'https://i.gkd.li/i/18236745',
