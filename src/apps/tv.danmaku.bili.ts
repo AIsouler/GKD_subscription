@@ -274,42 +274,27 @@ export default defineGkdApp({
       name: '全屏广告-会员弹窗',
       desc: '点击关闭',
       fastQuery: true,
-      forcedTime: 10000,
       actionMaximum: 1,
+      forcedTime: 10000,
       rules: [
         {
           key: 1,
+          action: 'clickCenter',
           activityIds: [
             'tv.danmaku.bili.MainActivityV2',
             'com.bilibili.vip.web.VipWebActivity',
+            'com.bilibili.module.vip.web.VipWebActivity',
           ],
           matches:
-            'WebView[text="会员中心"] >4 [text="大会员服务协议"] +2 * >2 @TextView[visibleToUser=true][index=parent.childCount.minus(1)] <<n [vid="webview"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/60eee9aa-8799-4097-8ddf-2783afd49586',
+            '@[index=parent.childCount.minus(1)][height<150][visibleToUser=true] <(1,2) View <(1,2) View <(4,5) View < View < View < WebView[text="会员中心" || text="大会员"] < WebView < [vid="webview"]',
+          exampleUrls: 'https://e.gkd.li/ac6dd8ae-f18e-4f48-9184-39e4dbd832ba',
           snapshotUrls: [
             'https://i.gkd.li/i/15219142',
             'https://i.gkd.li/i/15220560',
             'https://i.gkd.li/i/15289942',
+            'https://i.gkd.li/i/15328394',
+            'https://i.gkd.li/i/18236032',
           ],
-        },
-        {
-          key: 2,
-          activityIds: 'com.bilibili.vip.web.VipWebActivity',
-          matches:
-            'WebView[text="大会员"] >3 View[childCount=4] >3 View[childCount=1] > View[childCount=1] > @Image[visibleToUser=true][childCount=0][text=""] <<n [vid="webview"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/f56c6392-c473-4988-af41-00adedbf3905',
-          snapshotUrls: 'https://i.gkd.li/i/15328394',
-        },
-        {
-          key: 3,
-          activityIds: 'tv.danmaku.bili.MainActivityV2',
-          matches:
-            '[text="会员中心"] >3 View > View[childCount=2] > View[childCount=1] > @TextView[clickable=true] <<n [vid="webview"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/4384e301-8a79-427e-88d6-7fb8e422c6e8',
-          snapshotUrls: 'https://i.gkd.li/i/15523824',
         },
         {
           key: 4,
