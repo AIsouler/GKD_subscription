@@ -798,5 +798,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 32,
+      name: '功能类-开启推荐，发现可能认识的人',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
+          matches: '@ImageView - [text="开启"] - [text="开启推荐，发现可能认识的人。"]',
+          exampleUrls: 'https://e.gkd.li/7922ab73-cc99-4559-b18c-5ab54dd9633a',
+          snapshotUrls: 'https://i.gkd.li/i/18237415',
+        },
+      ],
+    },
   ],
 });
