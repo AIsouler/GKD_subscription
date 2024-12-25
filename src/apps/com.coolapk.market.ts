@@ -13,8 +13,9 @@ export default defineGkdApp({
       actionMaximumKey: 0,
       priorityTime: 10000,
       excludeActivityIds: [
-        'com.coolapk.market.view.search.', // 在搜索页面禁用
-        'com.coolapk.market.view.feed.', // 在动态页面禁用
+        '.view.search.', // 在搜索页面禁用
+        '.view.feed.', // 在动态页面禁用
+        '.view.node.DynamicNodePageActivity',
       ],
       rules: [
         {
@@ -32,7 +33,8 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          excludeMatches: '[id="com.coolapk.market:id/item_view"]',
+          excludeMatches:
+            '[id="com.coolapk.market:id/item_view" || vid="card_view"]',
           matches: '[text*="跳过"][text.length<5][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
@@ -41,6 +43,7 @@ export default defineGkdApp({
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/13247733',
             'https://i.gkd.li/i/13296816',
+            'https://i.gkd.li/i/18245546',
           ],
         },
       ],
