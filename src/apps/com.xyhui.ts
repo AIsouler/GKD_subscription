@@ -115,6 +115,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14766902',
           ],
         },
+        {
+          key: 7,
+          fastQuery: true,
+          activityIds: '.lut.act.LutMainActivity',
+          matches:
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/240494b6-026f-49f7-a77d-986e70077218',
+          snapshotUrls: 'https://i.gkd.li/i/18245369',
+        },
       ],
     },
     {
