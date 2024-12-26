@@ -31,7 +31,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.ruanmei.ithome.ui.MainActivity',
