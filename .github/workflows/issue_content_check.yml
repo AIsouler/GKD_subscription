@@ -20,9 +20,10 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           labels: 'invalid'
           body: |
-            你好 ${{ github.event.issue.user.login }}，检测到您没有提供快照，请补充必要的快照！
+            你好 ${{ github.event.issue.user.login }}，检测到您没有提供快照，请补充必要的快照，不要提供截图，截图没有任何作用，快照获取方式如下图！
 
             可在下方评论区补充
+            ![img](https://raw.githubusercontent.com/AIsouler/GKD_subscription/refs/heads/main/Snapshot.png)
 
       - name: Add label and comment for uploading failed
         if: contains(github.event.issue.body, 'Uploading') == true
