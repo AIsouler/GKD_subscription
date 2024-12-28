@@ -73,7 +73,7 @@ export const blackListAppIDs: string[] = [
   'org.kde.kdeconnect_tp', // KDE Connect
   'xyz.adproqwq.GKDTool', // GKDTool
   'com.alibaba.aliyun', // 阿里云
-  'com.alicloud.databox', // 阿里云盘 开屏广告在 https://i.gkd.li/i/15144565 误触导致自动签到规则执行中断
+  'com.alicloud.databox', // 阿里云盘
   'xyz.nextalone.nagram', // Nagram
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
@@ -82,7 +82,7 @@ export const blackListAppIDs: string[] = [
   'org.mozilla.firefox_beta', // Firefox Beta
   'org.mozilla.fenix', // Firefox Nightly
   'org.mozilla.focus', // Firefox Focus
-  'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
+  'com.google.android.youtube', // YouTube
   'com.xunmeng.pinduoduo', // 拼多多
   'com.byyoung.setting', //爱玩机工具箱
   'com.mixplorer', // MiX文件管理器
