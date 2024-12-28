@@ -32,7 +32,11 @@ export default defineGkdGlobalGroups([
         excludeMatches:
           '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜"][text.length>3 && text.length<6][visibleToUser=true]',
         matches:
-          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || vid~="(?is).*skip.*" || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+        excludeSnapshotUrls: [
+          // 避免误触
+          'https://i.gkd.li/i/18265000', // text!="取消"
+        ],
       },
       {
         key: 2,
