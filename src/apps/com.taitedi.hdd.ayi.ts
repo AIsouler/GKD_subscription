@@ -1,6 +1,6 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.taitedi.hdd.ayi',
   name: '爱其意',
   groups: [
