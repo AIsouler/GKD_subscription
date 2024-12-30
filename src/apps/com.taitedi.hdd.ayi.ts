@@ -5,8 +5,8 @@ export default defineGkdApp({
   name: '爱其意',
   groups: [
     {
-      key: 1,
-      name: '首页-开屏广告',
+      key: 0,
+      name: '开屏广告',
       exampleUrls: [
         'https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b',
       ],
