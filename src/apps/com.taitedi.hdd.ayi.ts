@@ -15,13 +15,13 @@ export default defineGkdApp({
       ],
       rules: [
 		{
-          matches: '[View[desc="我知道了"]]',
+          matches: 'View[desc="我知道了"]',
           snapshotUrls: [
             'https://i.gkd.li/i/18261037'
           ],
         },
         {
-          matches: '[ImageView[height=28][width=28][name="android.widget.ImageView"]]',
+          matches: 'ImageView[height=28][width=28][name="android.widget.ImageView"]',
           snapshotUrls: 'https://i.gkd.li/i/18259775',
         },
       ],
