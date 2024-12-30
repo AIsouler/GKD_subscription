@@ -11,8 +11,7 @@ export default defineGkdApp({
         'https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b',
       ],
       activityIds: [
-	   '.MainActivity',
-        null,
+	   '.MainActivity'
       ],
       rules: [
 		{
