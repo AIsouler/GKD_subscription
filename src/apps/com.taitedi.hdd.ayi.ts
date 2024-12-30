@@ -1,4 +1,4 @@
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineAppConfig({
   id: 'com.taitedi.hdd.ayi',
