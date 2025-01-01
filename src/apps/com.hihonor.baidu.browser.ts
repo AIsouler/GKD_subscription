@@ -12,10 +12,9 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      activityIds: ['com.baidu.searchbox.MainActivity'],
       rules: [
         {
-          matches: 'TextView[text~=\'跳过 \\\\d\']',
+          matches: 'TextView[text^="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/18279202',
         },
       ],
