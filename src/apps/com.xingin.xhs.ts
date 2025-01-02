@@ -77,13 +77,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      activityIds: [
+        '.index.v2.IndexActivityV2',
+        'com.xingin.update.UpdateDialogActivity',
+      ],
       rules: [
         {
           key: 0,
-          activityIds: [
-            '.index.v2.IndexActivityV2',
-            'com.xingin.update.UpdateDialogActivity',
-          ],
           matches: '@ImageView <2 * + * > [text="NEW"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13246890',
@@ -93,9 +93,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          activityIds: '.index.v2.IndexActivityV2',
           matches: 'Button[text="立即安装"] + Button[text="稍后再说"]',
-          snapshotUrls: 'https://i.gkd.li/i/15283162',
+          exampleUrls: 'https://e.gkd.li/7064a569-fcdd-44e2-b4d1-c55e093f4a02',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15283162',
+            'https://i.gkd.li/i/18289347',
+          ],
         },
       ],
     },
