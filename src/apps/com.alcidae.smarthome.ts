@@ -10,15 +10,17 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-	  snapshotUrls: 'https://i.gkd.li/i/18291310',
+      snapshotUrls: 'https://i.gkd.li/i/18291310',
       rules: [
-		{
+        {
           activityIds: 'com.danale.video.mainpage.main.MainActivity',
-          matches: '@LinearLayout[childCount=2] + @ImageButton[id="com.alcidae.smarthome:id/ibtn_close"][visibleToUser=true][clickable=true] <<n FrameLayout[id="android:id/content"]',
+          matches:
+            '@LinearLayout[childCount=2] + @ImageButton[id="com.alcidae.smarthome:id/ibtn_close"][visibleToUser=true][clickable=true] <<n FrameLayout[id="android:id/content"]',
         },
         {
           activityIds: 'com.danale.video.mainpage.main.MainActivity',
-          matches: '@TextView[text="不再提醒"] - @CheckBox[id="com.alcidae.smarthome:id/cb_not_show"][visibleToUser=true] < LinearLayout[childCount=2] <<n FrameLayout',
+          matches:
+            '@TextView[text="不再提醒"] - @CheckBox[id="com.alcidae.smarthome:id/cb_not_show"][visibleToUser=true] < LinearLayout[childCount=2] <<n FrameLayout',
         },
       ],
     },
@@ -32,10 +34,10 @@ export default defineGkdApp({
       rules: [
         {
           matches: [
-            'TextView[id="com.alcidae.smarthome:id/danale_info_dialog_cancel_btn"][text="取消"]'
-          ]
-        }
-      ]
-    }
+            'TextView[id="com.alcidae.smarthome:id/danale_info_dialog_cancel_btn"][text="取消"]',
+          ],
+        },
+      ],
+    },
   ],
 });
