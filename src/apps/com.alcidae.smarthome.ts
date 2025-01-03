@@ -5,8 +5,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-首页通知弹窗',
-      desc: '点击[不再提醒]',
+      name: '全屏广告-首页通知弹窗',
+      desc: '点击[不再提醒]并关闭弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -25,10 +25,10 @@ export default defineGkdApp({
     {
       name: '通知提示',
       key: 4,
-	  desc: '拒绝开启通知'
-      snapshotUrls: [
-        'https://i.gkd.li/i/18059150'
-      ],
+      desc: '拒绝开启通知',
+      matchTime: 10000,
+      actionMaximum: 1,
+      snapshotUrls: 'https://i.gkd.li/i/18059150',
       rules: [
         {
           matches: [
