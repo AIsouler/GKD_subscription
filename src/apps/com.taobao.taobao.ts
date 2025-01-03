@@ -211,22 +211,22 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '全屏广告-花呗升级报送征信',
+      name: '全屏广告-花呗推荐弹窗',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       rules: [
         {
           key: 2,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
-            '[text*="花呗升级" || text*="花呗服务"]',
-            '@[clickable=true] >n [text="暂不升级，继续付款" || text="关闭"]',
+            '[text*="花呗升级" || text*="花呗服务" || text$="开通花呗"][visibleToUser=true]',
+            '@[clickable=true] >n [text="暂不升级，继续付款" || text="关闭"][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13691864',
             'https://i.gkd.li/i/13628020',
             'https://i.gkd.li/i/13898735',
+            'https://i.gkd.li/i/18296345',
           ],
         },
       ],
