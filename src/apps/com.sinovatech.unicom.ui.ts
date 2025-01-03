@@ -60,8 +60,11 @@ export default defineGkdApp({
           key: 1,
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
           matches:
-            '@TextView[childCount=0][clickable=true][id="home_popup_close"] <<n [vid="main_fragment_layout_haoka"]',
-          snapshotUrls: 'https://i.gkd.li/i/15971964',
+            'WebView[text!=null] > View[id="app"] >2 View[childCount>3] > View[childCount=1] > @TextView[childCount=0][visibleToUser=true][text=""][width<150&&height<150] <<n [vid="main_fragment_layout" || vid="main_fragment_layout_haoka"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15971964',
+            'https://i.gkd.li/i/18290899',
+          ],
         },
       ],
     },
