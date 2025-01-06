@@ -37,6 +37,7 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
+          forcedTime: 10000, // https://github.com/AIsouler/GKD_subscription/issues/677
           activityIds: '.activity.MainActivity',
           matches: '[vid="iv_ad_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/6a95fcb7-3f9c-43f8-80bb-bdd034c81252',
