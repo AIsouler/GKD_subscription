@@ -188,6 +188,20 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 9,
+      name: '功能-免流提示',
+	    desc: '关闭【开免流送会员】弹窗',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          matches:
+            '[id="com.ximalaya.ting.android:id/host_iv_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/18326083',
+        },
+      ],
+    },
+    {
       key: 10,
       name: '全屏广告-首页-专辑订阅推荐弹窗',
       fastQuery: true,
