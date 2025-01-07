@@ -236,17 +236,13 @@ export default defineGkdApp({
     {
       key: 13,
       name: '全屏广告-免流提示',
-      desc: '关闭【开免流送会员】弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      desc: '关闭[开免流送会员]弹窗',
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches:
-            '[id="com.ximalaya.ting.android:id/host_iv_close"][visibleToUser=true]',
+          activityIds: '.host.activity.MainActivity',
+          matches: '[vid="host_iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/2a7e189b-b935-4bbd-9672-c18f2bf454e9',
           snapshotUrls: 'https://i.gkd.li/i/18326083',
         },
       ],
