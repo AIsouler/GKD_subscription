@@ -188,24 +188,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 9,
-      name: '全屏广告-免流提示',
-      desc: '关闭【开免流送会员】弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches:
-            '[id="com.ximalaya.ting.android:id/host_iv_close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/18326083',
-        },
-      ],
-    },
-    {
       key: 10,
       name: '全屏广告-首页-专辑订阅推荐弹窗',
       fastQuery: true,
@@ -248,6 +230,24 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df',
           snapshotUrls: 'https://i.gkd.li/i/13389145',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '全屏广告-免流提示',
+      desc: '关闭【开免流送会员】弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+          matches:
+            '[id="com.ximalaya.ting.android:id/host_iv_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/18326083',
         },
       ],
     },
