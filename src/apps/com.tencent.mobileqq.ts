@@ -245,7 +245,7 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: '功能类-扫一扫登录确认',
+      name: '功能类-登录授权',
       desc: '自动点击登录。包括 PC 登录确认、QQ 互联登录确认。',
       fastQuery: true,
       actionMaximum: 1,
@@ -258,8 +258,10 @@ export default defineGkdApp({
             'com.tencent.mobileqq.activity.DevlockQuickLoginActivity',
             'com.tencent.mobileqq.activity.DevLockQuickVerifyActivity',
           ],
-          matches:
+          matches: [
+            '[text="登录确认" || text="一键验证"][visibleToUser=true]',
             'Button[text*="登录"][clickable=true][visibleToUser=true][text.length<10]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13623520',
             'https://i.gkd.li/i/12789287',
