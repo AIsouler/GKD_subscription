@@ -7,10 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示-动态通知弹窗',
-      desc: '点击【暂不开启】',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      desc: '点击[暂不开启]',
       rules: [
         {
           fastQuery: true,
