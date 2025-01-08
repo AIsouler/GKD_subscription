@@ -184,15 +184,12 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '自动点击暂不开启',
       fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds: '.notifyguidev2.NotifyGuideV2Activity',
-          matches:
-            '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
-          snapshotUrls: 'https://i.gkd.li/i/12705979',
+          matches: '[text="暂不开启"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/18342279',
         },
         {
           key: 1,
