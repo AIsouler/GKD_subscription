@@ -5,20 +5,6 @@ export default defineGkdApp({
   name: '微博',
   groups: [
     {
-      key: 1,
-      name: '通知提示-动态通知弹窗',
-      desc: '点击[暂不开启]',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: '.notifyguidev2.NotifyGuideV2Activity',
-          matches: 'TextView[vid="bt_cancel"][text="暂不开启"]',
-          exampleUrls: 'https://e.gkd.li/27ca2408-ffaf-4d4b-94cf-343f46b866fe',
-          snapshotUrls: 'https://i.gkd.li/i/18342279',
-        },
-      ],
-    },
-    {
       key: 3,
       name: '全屏广告-兴趣领域推荐',
       desc: '出现在长久未登录的账户再次登录时',
@@ -184,15 +170,12 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '自动点击暂不开启',
       fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds: '.notifyguidev2.NotifyGuideV2Activity',
-          matches:
-            '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
-          snapshotUrls: 'https://i.gkd.li/i/12705979',
+          matches: '[text="暂不开启"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/18342279',
         },
         {
           key: 1,
