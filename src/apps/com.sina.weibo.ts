@@ -5,6 +5,23 @@ export default defineGkdApp({
   name: '微博',
   groups: [
     {
+      key: 1,
+      name: '通知提示-动态通知弹窗',
+      desc: '点击【暂不开启】',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.notifyguidev2.NotifyGuideV2Activity',
+          matches: 'TextView[vid="bt_cancel"][text="暂不开启"]',
+          exampleUrls: 'https://e.gkd.li/27ca2408-ffaf-4d4b-94cf-343f46b866fe',
+          snapshotUrls: 'https://i.gkd.li/i/18342279',
+        },
+      ],
+    },
+    {
       key: 3,
       name: '全屏广告-兴趣领域推荐',
       desc: '出现在长久未登录的账户再次登录时',
