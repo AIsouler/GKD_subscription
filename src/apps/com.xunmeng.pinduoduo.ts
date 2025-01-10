@@ -111,7 +111,7 @@ export default defineGkdApp({
           resetMatch: 'app',
           activityIds: '.ui.activity.HomeActivity',
           matches:
-            'FrameLayout[desc="拍照搜索"] > FrameLayout > FrameLayout > RelativeLayout[childCount=2] > @ImageView[clickable=true][visibleToUser=true] + ImageView',
+            '@ImageView[index=0][vid="pdd"][childCount=0][visibleToUser=true][width<120&&height<120] < RelativeLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [parent=null]',
           exampleUrls: 'https://e.gkd.li/64f35ab7-37e1-4060-aa91-468116a42cae',
           snapshotUrls: 'https://i.gkd.li/i/18375615',
         },
