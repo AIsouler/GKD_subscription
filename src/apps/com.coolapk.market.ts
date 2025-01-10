@@ -46,6 +46,16 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18245546',
           ],
         },
+        {
+          key: 2,
+          position: {
+            left: 'width * 0.8506',
+            top: 'width * 0.1784',
+          },
+          matches: '[vid="main_splash_ad"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/48815af8-5660-40f3-850a-0b86b83ac44b',
+          snapshotUrls: 'https://i.gkd.li/i/18361947',
+        },
       ],
     },
     {
