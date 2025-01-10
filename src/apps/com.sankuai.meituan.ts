@@ -18,8 +18,7 @@ export default defineGkdApp({
             'com.meituan.android.upgrade.UpgradeDialogActivity',
             'com.meituan.android.pt.homepage.activity.MainActivity',
           ],
-          matches:
-            'ImageView[vid="update_logo"] + Button[vid="btn_close"]',
+          matches: 'ImageView[vid="update_logo"] + Button[vid="btn_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12614559',
             'https://i.gkd.li/i/12673132',
