@@ -18,12 +18,12 @@ export default defineGkdApp({
             'com.meituan.android.upgrade.UpgradeDialogActivity',
             'com.meituan.android.pt.homepage.activity.MainActivity',
           ],
-          matches:
-            'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
+          matches: 'ImageView[vid="update_logo"] + Button[vid="btn_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12614559',
             'https://i.gkd.li/i/12673132',
             'https://i.gkd.li/i/13292635',
+            'https://i.gkd.li/i/18375410',
           ],
         },
       ],
@@ -59,10 +59,11 @@ export default defineGkdApp({
         {
           key: 3,
           name: '超市便利-弹窗广告',
+          fastQuery: true,
           activityIds:
             'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
           matches:
-            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13694877',
         },
         {
