@@ -19,11 +19,12 @@ export default defineGkdApp({
             'com.meituan.android.pt.homepage.activity.MainActivity',
           ],
           matches:
-            'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
+            'ImageView[vid="update_logo"] + Button[vid="btn_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12614559',
             'https://i.gkd.li/i/12673132',
             'https://i.gkd.li/i/13292635',
+            'https://i.gkd.li/i/18375410',
           ],
         },
       ],
@@ -62,8 +63,10 @@ export default defineGkdApp({
           activityIds:
             'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
           matches:
-            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true]',
+            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13694877',
+          // 添加属性[visibleToUser=true]，避免在GKD读取activityId为null，触发所有规则匹配时误触
+          excludeSnapshotUrls: 'https://i.gkd.li/i/18375191',
         },
         {
           key: 4,
