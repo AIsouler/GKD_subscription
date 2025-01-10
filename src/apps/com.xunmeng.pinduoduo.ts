@@ -104,6 +104,17 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/e5428072-9ee3-47e9-87ad-d8b47e24f173',
           snapshotUrls: 'https://i.gkd.li/i/17773799',
         },
+        {
+          key: 9,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.ui.activity.HomeActivity',
+          matches:
+            'FrameLayout[desc="拍照搜索"] > FrameLayout > FrameLayout > RelativeLayout[childCount=2] > @ImageView[clickable=true][visibleToUser=true] + ImageView',
+          exampleUrls: 'https://e.gkd.li/64f35ab7-37e1-4060-aa91-468116a42cae',
+          snapshotUrls: 'https://i.gkd.li/i/18375615',
+        },
       ],
     },
     {
