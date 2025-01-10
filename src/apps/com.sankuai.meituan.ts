@@ -59,13 +59,12 @@ export default defineGkdApp({
         {
           key: 3,
           name: '超市便利-弹窗广告',
+          fastQuery: true,
           activityIds:
             'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
           matches:
-            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true][visibleToUser=true]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13694877',
-          // 添加属性[visibleToUser=true]，避免在GKD读取activityId为null，触发所有规则匹配时误触
-          excludeSnapshotUrls: 'https://i.gkd.li/i/18375191',
         },
         {
           key: 4,
