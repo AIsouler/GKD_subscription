@@ -280,8 +280,10 @@ export default defineGkdApp({
           activityIds: [
             '.ui.activity.HomeActivity',
             '.activity.NewPageActivity',
+            '.ui.activity.MainFrameActivity',
           ],
-          matches: '[text="及时获取物流消息" || text="开启通知" || text="允许通知"]',
+          matches:
+            '[text="及时获取物流消息" || text="开启通知" || text="允许通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15004580',
             'https://i.gkd.li/i/15048085',
