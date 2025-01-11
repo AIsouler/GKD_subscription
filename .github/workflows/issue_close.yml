@@ -2,7 +2,7 @@ name: Issue Close
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 16 * * *'
 
 permissions:
   contents: read
