@@ -161,7 +161,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 ## 提交代码
 
-如果你要添加的 APP 不存在本项目, 那么需要在 [apps](src/apps) 目录下新建文件 `xxx.ts`, `xxx` 是 `appId` 比如 WPS 是 `cn.wps.moffice_eng.ts`
+如果你要添加的 APP 不存在本项目, 那么需要在 [apps](./src/apps) 目录下新建文件 `xxx.ts`, `xxx` 是 `appId` 比如 WPS 是 `cn.wps.moffice_eng.ts`
 
 这个文件的初始内容是
 
