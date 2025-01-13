@@ -36,12 +36,11 @@ export default defineGkdApp({
       name: '通知提示-订阅感兴趣的通知',
       desc: '点击"暂不开启"',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: ['[text="订阅感兴趣的通知"]', '[text="暂不开启"]'],
+          matches: '@[vid="close"][text^="暂不"] + [vid="open"][text="去开启"]',
           snapshotUrls: 'https://i.gkd.li/i/13399195',
         },
       ],
@@ -51,13 +50,12 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '自动点击"暂不"',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: 'tv.danmaku.bili.MainActivityV2',
-          matches: ['[text="打开推送通知"]', '[text="暂不"]'],
+          matches: '@[vid="close"][text$="暂不"] + [vid="open"][text="去开启"]',
           snapshotUrls: 'https://i.gkd.li/i/15907493',
         },
       ],
