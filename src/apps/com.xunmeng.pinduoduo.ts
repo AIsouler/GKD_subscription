@@ -104,6 +104,17 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/e5428072-9ee3-47e9-87ad-d8b47e24f173',
           snapshotUrls: 'https://i.gkd.li/i/17773799',
         },
+        {
+          key: 9,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.ui.activity.HomeActivity',
+          matches:
+            '@ImageView[index=0][vid="pdd"][childCount=0][visibleToUser=true][width<120&&height<120] < RelativeLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [parent=null]',
+          exampleUrls: 'https://e.gkd.li/64f35ab7-37e1-4060-aa91-468116a42cae',
+          snapshotUrls: 'https://i.gkd.li/i/18375615',
+        },
       ],
     },
     {
@@ -280,12 +291,15 @@ export default defineGkdApp({
           activityIds: [
             '.ui.activity.HomeActivity',
             '.activity.NewPageActivity',
+            '.ui.activity.MainFrameActivity',
           ],
-          matches: '[text="及时获取物流消息" || text="开启通知"]',
+          matches:
+            '[text="及时获取物流消息" || text="开启通知" || text="允许通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15004580',
             'https://i.gkd.li/i/15048085',
             'https://i.gkd.li/i/16643295',
+            'https://i.gkd.li/i/18371979',
           ],
         },
       ],
