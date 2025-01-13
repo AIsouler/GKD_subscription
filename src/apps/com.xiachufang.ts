@@ -35,7 +35,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.xiachufang.activity.recipe.RecipeDetailActivity',
           matches:
-            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序"]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序" || text="了解更多"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13484117',
         },
         {
