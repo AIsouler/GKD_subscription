@@ -16,6 +16,7 @@ body:
         5. 阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/480)
         6. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
         7. 一个issue内可提供多个快照，没必要对同一个应用开启多个issue
+        8. 上传文件时请等待文件名前面的 Uploading 消失后再提交，否则文件将会上传失败
   - type: textarea
     id: feature-description
     attributes:
