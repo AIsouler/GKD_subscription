@@ -36,13 +36,24 @@ export default defineGkdApp({
       name: '通知提示-订阅感兴趣的通知',
       desc: '点击"暂不开启"',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: ['[text="订阅感兴趣的通知"]', '[text="暂不开启"]'],
-          snapshotUrls: 'https://i.gkd.li/i/13399195',
+          activityIds: [
+            'com.android.launcher.Launcher',
+            'com.bilibili.bplus.im.communication.HomeCommunicationActivity',
+          ],
+          matches:
+            '[text="订阅感兴趣的通知"] +2 * > @[text^="暂不"] + [text="去开启"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13399195',
+            'https://i.gkd.li/i/18392097',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/4d0bfc81-05fb-498d-8c84-0c99c2abd97a',
+            'https://e.gkd.li/283c2be2-80d7-43ab-976c-0896e678fc49',
+          ],
         },
       ],
     },
@@ -51,14 +62,15 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '自动点击"暂不"',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: 'tv.danmaku.bili.MainActivityV2',
-          matches: ['[text="打开推送通知"]', '[text="暂不"]'],
+          matches:
+            '[text="打开推送通知"] +2 * > @[text^="暂不"] + [text="去开启"]',
           snapshotUrls: 'https://i.gkd.li/i/15907493',
+          exampleUrls: 'https://e.gkd.li/e67d6d21-f09b-44b0-bf91-8b9fa0670e27',
         },
       ],
     },
