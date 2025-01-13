@@ -225,12 +225,12 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[text^="开启通知权限" || text="打开推送通知"]  +(3,4) @[text="取消"] +2 [text="去开启"]',
-          exampleUrls: [
-            'https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df',
-            'https://e.gkd.li/ab40c096-d024-4b7c-9c6f-245beafd373a',
+          activityIds: '.host.activity.MainActivity',
+          matches: [
+            '[text*="通知权限"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
           ],
+          exampleUrls: 'https://e.gkd.li/ab40c096-d024-4b7c-9c6f-245beafd373a',
           snapshotUrls: [
             'https://i.gkd.li/i/13389145',
             'https://i.gkd.li/i/18391977',
