@@ -17,13 +17,13 @@
 
 首先我们需要给需要添加规则的APP打快照, 也就是把APP的广告截图节点信息给保存下来 <https://i.gkd.li/i/12505276> (如何获取这个链接将在审查快照这一步说明)
 
-首先打开APP-主页 -允许无障碍授权
+首先打开APP-主页-允许无障碍授权
 
 Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 Android>=11, 需要额外开启 高级设置-截屏服务
 
 有 2 种方式打快照
 
-- 通过悬浮窗按钮: 高级设置/主页-允许悬浮窗授权 - 然后回到APP开启悬浮窗服务, 此时界面会出现一个截屏按钮, 点击这个按钮即可打快照
+- 通过悬浮窗按钮: 在高级设置中开启悬浮窗服务, 此时界面会出现一个截屏按钮, 点击这个按钮即可打快照
 - 网页端审查工具: 打开网页端审查工具连接设备-点击快照按钮即可打快照, 网页端审查工具的使用在下面说明
 
 我们以 WPS 为例子, WPS 首页文档列表有一个广告, 我们先给 WPS 打一个快照, 然后使用 网页审查工具 编写测试规则订阅 关闭这个广告
@@ -37,7 +37,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 </details>
 
-如果你没有电脑, 可以点击快照-分享-此时会分享一个zip文件, 截图和节点信息全在里面, 可以分享到某个云盘或者保存到本地, 然后在 [subscription/issues/new](https://github.com/gkd-kit/subscription/issues/new) 上传这个 zip 或者填写分享链接, 然后提出问题, 项目维护者会帮助你处理这个快照
+如果你没有电脑, 可以点击快照-分享-此时会分享一个zip文件, 截图和节点信息全在里面, 可以分享到某个云盘或者保存到本地, 然后在 [GKD_subscription/issues/new](https://github.com/AIsouler/GKD_subscription/issues) 上传这个 zip 或者填写分享链接, 然后提出问题, 项目维护者会帮助你处理这个快照
 
 <details close>
   <summary>截图: 分享快照</summary>
@@ -48,9 +48,9 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 有电脑, 接下来我们将使用 网页审查工具 <https://github.com/gkd-kit/inspect>
 
-首先让 Android 设备 和 电脑 处于同一个局域网(连接同一个WIFI), 也可以 Android 开热点, 然后电脑连接这个热点
+首先让 Android 设备 和 电脑 处于同一个局域网(连接同一个WIFI), 也可以 Android 设备开热点, 然后电脑连接这个热点
 
-打开 APP 主页-设置-高级设置-HTTP服务, 此时 HTTP 服务底部出现一条地址 `http://192.168.1.3:8888`
+打开 APP -设置-高级设置-HTTP服务, 此时 HTTP 服务底部出现一条地址 `http://192.168.1.3:8888`
 
 <details close>
   <summary>示例: HTTP服务</summary>
@@ -61,9 +61,9 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 安装油猴脚本 <https://github.com/gkd-kit/network-extension>, 因为浏览器不允许 https 去连接 http 域名, 可以通过油猴脚本绕过这个限制
 
-浏览器打开 <https://i.gkd.li/>, 然后在这个网站启用油猴脚本的注入功能, 然后点击右上角 Android 小图标去连接设备
+浏览器打开 <https://i.gkd.li/>, 然后在这个网站启用油猴脚本的注入功能, 然后点击右上角 `连接设备` 图标去连接设备
 
-在设置页面左上角输入上诉地址 `http://192.168.1.3:8888`, 然后点击 `刷新连接`, 即可成功连接设备
+在设置页面左上角输入上述地址 `http://192.168.1.3:8888`, 然后点击 `刷新连接`, 即可成功连接设备
 
 ![image](https://github.com/gkd-kit/subscription/assets/38517192/d3a956ca-f54b-4d9d-a2ae-3792b5a18aa4)
 
@@ -85,12 +85,13 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 了解完了之后, 编写的选择器也很简单 `[id="com.mopub.ad.xiaomi:id/nativeclose"]`
 
-接下来测试这个选择器能否选中这个图标按钮, 点击审查工具的 选择器查询, 输入刚刚这个规则, 然后点击查询
-`这里点击右侧的分享-生成链接-zip才能获取快照链接（以/i/开头）`
+接下来测试这个选择器能否选中这个图标按钮, 点击审查工具的 选择器查询, 输入刚刚这个规则, 然后点击查询。
+
+这里点击右侧的 `分享`-`复制链接-快照` 才能获取快照链接（以/i/开头）
 
 ![image](https://github.com/gkd-kit/subscription/assets/38517192/3aea04fd-da91-4f43-a79e-e40fdad4a5d4)
 
-很明显这个选择器是有效的, 那么我们去真机测试这个选择器到底行8行
+很明显这个选择器是有效的, 那么我们去真机测试这个选择器到底行 8 行
 
 回到刚刚的设备连接页面, 点击顶部的 `执行选择器` 按钮, 然后手机回到 WPS 界面等待出现广告
 
@@ -116,7 +117,7 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 ## 编写订阅
 
-订阅规则各个属性作用可以查看 [types.ts](https://github.com/gkd-kit/subscription/blob/main/src/types.ts)
+订阅规则各个属性作用可以查看 [API 文档](https://gkd.li/api/)
 
 打开浏览器设备连接页面-点击修改内存订阅, 输入如下内容, 然后点击确认
 
@@ -160,14 +161,14 @@ Android>=11 的无障碍可以自己截屏, 所以如果你的设备不满足 An
 
 ## 提交代码
 
-如果你要添加 APP 不存在本项目, 那么需要在 [apps](https://github.com/gkd-kit/subscription/tree/main/src/apps) 目录下新建文件 xxx.ts, xxx 是 appId 比如 WPS 是 cn.wps.moffice_eng.ts
+如果你要添加的 APP 不存在本项目, 那么需要在 [apps](src/apps) 目录下新建文件 `xxx.ts`, `xxx` 是 `appId` 比如 WPS 是 `cn.wps.moffice_eng.ts`
 
 这个文件的初始内容是
 
 ```ts
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'cn.wps.moffice_eng',
   name: 'WPS',
   groups: [],
@@ -177,9 +178,9 @@ export default defineAppConfig({
 然后在的 group 节点后添加你的规则及其快照链接, 文件内容变成
 
 ```ts
-import { defineAppConfig } from '../types';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'cn.wps.moffice_eng',
   name: 'WPS',
   groups: [
