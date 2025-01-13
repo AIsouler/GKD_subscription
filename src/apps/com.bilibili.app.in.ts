@@ -40,8 +40,19 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            'com.android.launcher.Launcher',
+            'com.bilibili.bplus.im.communication.HomeCommunicationActivity',
+          ],
           matches: '@[vid="close"][text^="暂不"] + [vid="open"][text="去开启"]',
-          snapshotUrls: 'https://i.gkd.li/i/13399195',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13399195',
+            'https://i.gkd.li/i/18392097',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/4d0bfc81-05fb-498d-8c84-0c99c2abd97a',
+            'https://e.gkd.li/283c2be2-80d7-43ab-976c-0896e678fc49',
+          ],
         },
       ],
     },
@@ -57,6 +68,7 @@ export default defineGkdApp({
           activityIds: 'tv.danmaku.bili.MainActivityV2',
           matches: '@[vid="close"][text$="暂不"] + [vid="open"][text="去开启"]',
           snapshotUrls: 'https://i.gkd.li/i/15907493',
+          exampleUrls: 'https://e.gkd.li/e67d6d21-f09b-44b0-bf91-8b9fa0670e27',
         },
       ],
     },
