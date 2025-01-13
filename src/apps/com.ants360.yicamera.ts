@@ -28,5 +28,38 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '通知提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.xiaoyi.yiplayer.ui.PlayerActivity',
+          matches: [
+            '[text="开启通知"][visibleToUser=true]',
+            '[text="暂不开启"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/1cb1471e-94a5-430f-ac2f-b031413a067e',
+          snapshotUrls: 'https://i.gkd.li/i/18395740',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches:
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序" || text="了解更多"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6aa7df81-4915-4c32-94c6-ae3b8518566b',
+          snapshotUrls: 'https://i.gkd.li/i/18392764',
+        },
+      ],
+    },
   ],
 });
