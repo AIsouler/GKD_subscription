@@ -226,7 +226,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '[text^="开启通知权限" || text="打开推送通知"]  +(2,3) * + @[text="取消"] +1 * + [text="去开启"]',
+            '[text^="开启通知权限" || text="打开推送通知"]  +(3,4) @[text="取消"] +2 [text="去开启"]',
           exampleUrls: [
             'https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df',
             'https://e.gkd.li/ab40c096-d024-4b7c-9c6f-245beafd373a',
