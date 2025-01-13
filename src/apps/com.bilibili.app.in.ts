@@ -36,13 +36,15 @@ export default defineGkdApp({
       name: '通知提示-订阅感兴趣的通知',
       desc: '点击"暂不开启"',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
+          activityIds:
+            'com.bilibili.bplus.im.communication.HomeCommunicationActivity',
           matches: ['[text="订阅感兴趣的通知"]', '[text="暂不开启"]'],
-          snapshotUrls: 'https://i.gkd.li/i/13399195',
+          exampleUrls: 'https://e.gkd.li/283c2be2-80d7-43ab-976c-0896e678fc49',
+          snapshotUrls: 'https://i.gkd.li/i/18392097',
         },
       ],
     },
@@ -58,6 +60,7 @@ export default defineGkdApp({
         {
           activityIds: 'tv.danmaku.bili.MainActivityV2',
           matches: ['[text="打开推送通知"]', '[text="暂不"]'],
+          exampleUrls: 'https://e.gkd.li/e67d6d21-f09b-44b0-bf91-8b9fa0670e27',
           snapshotUrls: 'https://i.gkd.li/i/15907493',
         },
       ],
