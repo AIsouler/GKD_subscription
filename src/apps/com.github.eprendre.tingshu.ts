@@ -21,7 +21,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.ui.play.PlayerActivity',
           matches:
-            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序"]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序" || text="了解更多"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d3d33d4f-4c15-45a0-9e86-0c1ca2ecc7c9',
           snapshotUrls: [
             'https://i.gkd.li/i/13334850',
