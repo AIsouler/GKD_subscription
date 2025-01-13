@@ -226,7 +226,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '@[id="com.ximalaya.ting.android:id/cancel_btn"] + [id="com.ximalaya.ting.android:id/btn_separator_border_1"] + [id="com.ximalaya.ting.android:id/ok_btn"]',
+            '@[id="com.ximalaya.ting.android:id/cancel_btn"] +2 [id="com.ximalaya.ting.android:id/ok_btn"]',
           exampleUrls: [
             'https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df',
             'https://e.gkd.li/ab40c096-d024-4b7c-9c6f-245beafd373a',
