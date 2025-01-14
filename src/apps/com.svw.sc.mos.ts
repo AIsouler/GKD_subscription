@@ -10,6 +10,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
@@ -18,6 +19,14 @@ export default defineGkdApp({
           matches: '[vid="iv_appstart_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/0acf720d-1752-449f-bbe6-357896f1bb2e',
           snapshotUrls: 'https://i.gkd.li/i/17528776',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.main.ui.mine.ui.MedalDialogActivity',
+          matches: '[vid="imv_share_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/01611ed2-11f7-4ffe-93d7-f07878196ada',
+          snapshotUrls: 'https://i.gkd.li/i/18399174',
         },
       ],
     },
