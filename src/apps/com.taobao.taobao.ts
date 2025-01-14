@@ -100,13 +100,14 @@ export default defineGkdApp({
             'com.taobao.android.tbabilitykit.pop.StdPopContainerActivity',
             'com.taobao.tao.TBMainActivity',
             'com.taobao.tao.welcome.Welcome',
+            'com.taobao.tao.welcome.Welcome',
           ],
-          matches:
-            '[text^="开启系统通知"] + @Image[visibleToUser=true] <<n [vid="poplayer_inner_view"]',
+          matches: ['[text*="通知"]', 'Image[visibleToUser=true]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13446901',
             'https://i.gkd.li/i/13455424',
             'https://i.gkd.li/i/15104645',
+            'https://i.gkd.li/i/18407606',
           ],
         },
       ],
