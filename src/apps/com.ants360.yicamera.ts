@@ -56,8 +56,8 @@ export default defineGkdApp({
           activityIds: '.activity.MainActivity',
           matches:
             '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序" || text="了解更多"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/6aa7df81-4915-4c32-94c6-ae3b8518566b',
-          snapshotUrls: 'https://i.gkd.li/i/18392764',
+          exampleUrls: 'https://e.gkd.li/c9e67d26-d65f-4e24-9f62-cc29f29cff9b',
+          snapshotUrls: 'https://i.gkd.li/i/18406158',
         },
       ],
     },
