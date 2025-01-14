@@ -198,7 +198,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '全屏广告-弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
@@ -216,6 +216,16 @@ export default defineGkdApp({
             'WebView > View > View > View > View > @TextView[clickable=true][visibleToUser=true][text=""] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
           exampleUrls: 'https://e.gkd.li/ebbd606a-0e21-4fc5-b0c3-49e4d87d065c',
           snapshotUrls: 'https://i.gkd.li/i/16812751',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '@[text*="跳过"] + [visibleToUser=true][text^="账单分期还"] <<n [id="com.alipay.mobile.nebula:id/h5_pc_container"]',
+          exampleUrls: 'https://e.gkd.li/cc064c84-75a9-4447-b01b-9d5597515093',
+          snapshotUrls: 'https://i.gkd.li/i/18409779',
         },
       ],
     },
