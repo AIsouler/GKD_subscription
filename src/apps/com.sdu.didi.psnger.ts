@@ -52,5 +52,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-[升级一键付款]弹窗',
+      desc: '点击[跳过]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.didi.sdk.app.MainActivity',
+          matches: [
+            '[text="升级一键付款"][visibleToUser=true]',
+            '[text="跳过"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/effbc440-02c9-40a6-b72e-a7df401c985c',
+          snapshotUrls: 'https://i.gkd.li/i/18409807',
+        },
+      ],
+    },
   ],
 });
