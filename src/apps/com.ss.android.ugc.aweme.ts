@@ -145,22 +145,23 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '点击[暂不]',
+      desc: '点击[暂不]/[以后再说]',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: '.main.MainActivity',
       rules: [
         {
-          key: 0,
-          matches:
-            '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >2 [text="开启朋友通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/12675129',
-        },
-        {
           key: 1,
-          matches: '[text="及时获得消息提醒"] +2 [text="暂不开启"]',
-          snapshotUrls: 'https://i.gkd.li/i/13669790',
+          matches: [
+            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒"][visibleToUser=true]',
+            '[text="以后再说" || text="暂不开启"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13669790',
+            'https://i.gkd.li/i/18417891',
+            'https://i.gkd.li/i/18419574',
+          ],
         },
       ],
     },
