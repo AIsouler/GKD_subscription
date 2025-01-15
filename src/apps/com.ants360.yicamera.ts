@@ -8,13 +8,13 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/13463241',
@@ -22,9 +22,20 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           matches:
             'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +3 ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13543175',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches: '@[vid="ivClose"] - [text="专属福利"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a7ba5126-27dd-450d-abf9-c3a8b6938727',
+          snapshotUrls: 'https://i.gkd.li/i/18410909',
         },
       ],
     },
