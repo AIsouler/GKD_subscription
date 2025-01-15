@@ -153,9 +153,14 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >2 [text="开启朋友通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/12675129',
+          matches: [
+            '[text="开启朋友通知" || text="开启朋友的消息通知"]',
+            '[text^="暂不"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/12675129',
+            'https://i.gkd.li/i/18417891',
+          ],
         },
         {
           key: 1,
