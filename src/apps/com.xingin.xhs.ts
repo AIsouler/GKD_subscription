@@ -62,10 +62,23 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds:
-            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity',
-          matches: '[vid="mNegativeImageView"]',
+            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity', //此界面为英文app权限提示界面
+          matches:
+            'FrameLayout[id="android:id/content"] > FrameLayout[vid="rootFrameLayout"][childCount=2] > @ImageView ',
           exampleUrls: 'https://e.gkd.li/01c3cb0b-80b1-4e70-a330-6f4afb7ddf44',
           snapshotUrls: 'https://i.gkd.li/i/16918033',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds:
+            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity', //此界面为中文app权限提示界面
+          matches: [
+            '@TextView[text^="打开通知"]',
+            '@ImageView[vid="f99"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/a5cc0b89-20a4-4eca-a09a-3500b92f8528',
+          snapshotUrls: 'https://i.gkd.li/i/18417785',
         },
       ],
     },
