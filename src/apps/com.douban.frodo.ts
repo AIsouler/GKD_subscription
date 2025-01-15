@@ -180,8 +180,11 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: '.activity.SplashActivity',
-          matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
-          snapshotUrls: 'https://i.gkd.li/i/12548314',
+          matches: [
+            '[text^="喜欢豆瓣吗"][visibleToUser=true]',
+            '[text="下次再说"][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/18424257',
         },
       ],
     },
