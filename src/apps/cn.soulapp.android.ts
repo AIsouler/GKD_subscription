@@ -45,10 +45,19 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: '.component.chat.ConversationActivity',
-          matches:
-            '[id="cn.soulapp.android:id/score_message"] +3 [id="cn.soulapp.android:id/cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/13425057',
+          activityIds: [
+            '.component.chat.ConversationActivity',
+            '.component.startup.main.MainActivity',
+          ],
+          matches: [
+            '[vid="score_message"][visibleToUser=true]',
+            '[vid="cancel"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/4f67640e-836c-4b17-9870-5bb8b8547462',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13425057',
+            'https://i.gkd.li/i/18423888',
+          ],
         },
       ],
     },
