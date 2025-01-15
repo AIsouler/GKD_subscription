@@ -459,5 +459,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 25,
+      name: '功能类-关主页自动切换到[关注的人]TAB',
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.flowbusiness.commonpage.FlowCommonPageActivity',
+          matches: '@[clickable=true] >2 [text="关注的人"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6ef5bbf7-bb11-4cbb-b46b-bdc7c333a617',
+          snapshotUrls: 'https://i.gkd.li/i/18423013',
+        },
+      ],
+    },
   ],
 });
