@@ -123,13 +123,14 @@ export default defineGkdApp({
         {
           key: 2,
           name: '小组-帖子列表信息流广告',
-          matches: '[text="广告"][vid*="ad"][visibleToUser=true]',
+          matches: '[text!=null] + [text="广告"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12723569',
             'https://i.gkd.li/i/13347455',
             'https://i.gkd.li/i/13692895',
             'https://i.gkd.li/i/16369005',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/18422533',
         },
         {
           name: '点击不感兴趣',
