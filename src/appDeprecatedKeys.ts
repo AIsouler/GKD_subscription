@@ -390,7 +390,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.douban.frodo',
     name: '豆瓣',
-    deprecatedKeys: [0, 7, 12],
+    deprecatedKeys: [0, 1, 2, 4, 7, 9, 12],
   },
   {
     id: 'com.dragon.read',
