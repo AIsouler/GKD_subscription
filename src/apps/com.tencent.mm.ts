@@ -255,7 +255,7 @@ export default defineGkdApp({
           fastQuery: true,
           excludeVersionNames: '8.0.15',
           matches:
-            '@ImageButton[desc="未选中,原图,复选框"][visibleToUser=true] + [text="原图"]',
+            '@[desc="未选中,原图,复选框"][visibleToUser=true] <n RelativeLayout > [text="原图"]',
           exampleUrls: [
             'https://e.gkd.li/32dc0943-e85f-416d-bb01-6ed610d4bdd8',
             'https://e.gkd.li/93d41161-ab69-4c2d-83bb-637d7292f5e6',
@@ -263,6 +263,9 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/16987145', // 未选中
             'https://i.gkd.li/i/16987144', // 未选中
+            'https://i.gkd.li/i/18413281',
+          ],
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/16987141', // 已选中
             'https://i.gkd.li/i/16987147', // 已选中
           ],
