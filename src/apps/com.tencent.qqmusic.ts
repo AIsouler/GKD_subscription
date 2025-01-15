@@ -264,5 +264,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 11,
+      name: '其他-播放页[猜你也会喜欢]推荐',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.business.playernew.view.NewPlayerActivity',
+          matches:
+            '@ImageView[childCount=0][clickable=true] -2 [text="猜你也会喜欢"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/40846baf-4638-4740-970a-30924cbd9414',
+          snapshotUrls: 'https://i.gkd.li/i/18410610',
+        },
+      ],
+    },
   ],
 });
