@@ -145,7 +145,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '点击[暂不]',
+      desc: '点击[暂不] 或 [以后再说]',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -166,6 +166,15 @@ export default defineGkdApp({
           key: 1,
           matches: '[text="及时获得消息提醒"] +2 [text="暂不开启"]',
           snapshotUrls: 'https://i.gkd.li/i/13669790',
+        },
+        {
+          key: 2,
+          matches: [
+            'TextView[text^="打开私信通知"]',
+            'TextView[text="以后再说"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/0ef98b19-7233-4b17-9fea-ec1502ba0aa7',
+          snapshotUrls: 'https://i.gkd.li/i/18419574',
         },
       ],
     },
