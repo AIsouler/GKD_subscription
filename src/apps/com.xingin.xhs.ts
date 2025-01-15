@@ -35,7 +35,6 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-通知权限',
       fastQuery: true,
-      matchTime: 30000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -45,12 +44,16 @@ export default defineGkdApp({
             '.index.v2.IndexActivityV2',
             '.notification.NotificationAuthorizationTranslucentActivity',
             'com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity',
+            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity',
           ],
-          matches: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] - LinearLayout > [text^="打开通知" || text^="Enable notifications"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13195753',
             'https://i.gkd.li/i/13222356',
             'https://i.gkd.li/i/13255627',
+            'https://i.gkd.li/i/16918033',
+            'https://i.gkd.li/i/18417785',
           ],
         },
         {
@@ -58,14 +61,6 @@ export default defineGkdApp({
           activityIds: '.index.v2.IndexActivityV2',
           matches: '@ImageView <2 FrameLayout - [text^="打开通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13250418',
-        },
-        {
-          key: 2,
-          activityIds:
-            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity',
-          matches: '[vid="mNegativeImageView"]',
-          exampleUrls: 'https://e.gkd.li/01c3cb0b-80b1-4e70-a330-6f4afb7ddf44',
-          snapshotUrls: 'https://i.gkd.li/i/16918033',
         },
       ],
     },
