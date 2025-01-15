@@ -49,8 +49,10 @@ export default defineGkdApp({
             '.component.chat.ConversationActivity',
             '.component.startup.main.MainActivity',
           ],
-          matches:
-            '[id="cn.soulapp.android:id/score_message"] +3 [id="cn.soulapp.android:id/cancel"]',
+          matches: [
+            '[vid="score_message"][visibleToUser=true]',
+            '[vid="cancel"][visibleToUser=true]',
+          ],
           exampleUrls: 'https://e.gkd.li/4f67640e-836c-4b17-9870-5bb8b8547462',
           snapshotUrls: [
             'https://i.gkd.li/i/13425057',
