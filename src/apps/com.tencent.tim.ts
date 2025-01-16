@@ -27,6 +27,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-发送图片时自动勾选[原图]',
+      actionMaximum: 1,
       rules: [
         {
           fastQuery: true,
