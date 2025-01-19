@@ -116,10 +116,13 @@ export default defineGkdApp({
           key: 0,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
           matches: '@FrameLayout[clickable=true] > [desc="关闭"]',
+          excludeMatches:
+            '[text="确定" || text="加入购物车" || text*="购买" || text*="下单"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13165721',
             'https://i.gkd.li/i/15364514',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/18455760', //避免在activityIds为null时误触
         },
         {
           key: 1,
