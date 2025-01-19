@@ -25,11 +25,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'tv.danmaku.bili.MainActivityV2',
-          matches: [
-            '[text="鼓励一下"]',
-            '[text="我要反馈"]',
-            '[text="下次再说"]',
-          ],
+          matches: ['[text="鼓励一下"]', '[text="下次再说"]'],
           snapshotUrls: 'https://i.gkd.li/i/13180746',
         },
       ],
