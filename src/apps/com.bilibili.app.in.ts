@@ -20,13 +20,12 @@ export default defineGkdApp({
       key: 6,
       name: '评价提示-APP评分',
       fastQuery: true,
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           activityIds: 'tv.danmaku.bili.MainActivityV2',
-          matches: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',
+          matches: ['[text="鼓励一下"]', '[text="下次再说"]'],
           snapshotUrls: 'https://i.gkd.li/i/13180746',
         },
       ],
