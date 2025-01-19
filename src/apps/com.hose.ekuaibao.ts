@@ -6,11 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
+      matchTime: 10000,
+      actionMaximum: 2,
+      resetMatch: 'app',
       name: '局部广告-首页横幅广告',
-      activityIds: 'com.hose.ekuaibao.view.activity.EkbProActivity',
-      rules:
-        'View[childCount=2] > TextView + TextView[text="不感兴趣"][clickable=true]',
-      snapshotUrls: ['https://i.gkd.li/i/12649616'],
+      rules: '[text="不感兴趣"][visibleToUser=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/12649616',
+        'https://i.gkd.li/i/18455642',
+      ],
     },
   ],
 });
