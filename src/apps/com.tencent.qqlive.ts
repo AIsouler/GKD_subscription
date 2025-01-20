@@ -205,22 +205,26 @@ export default defineGkdApp({
         {
           key: 3,
           name: '居中广告-1',
+          fastQuery: true,
           matches:
-            'ViewGroup[childCount>10] > FrameLayout[index=10] >4 ImageView[clickable=true][visibleToUser=true][index=1 || index=3]',
+            '@ImageView[clickable=true][childCount=0] - * >(3,4) [text^="摇动或点击"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13695067',
-            'https://i.gkd.li/i/13946107',
-            'https://i.gkd.li/i/14001277',
+            'https://i.gkd.li/i/18476380',
+            'https://i.gkd.li/i/18476384',
           ],
         },
         {
           key: 4,
           name: '居中广告-2',
           fastQuery: true,
-          matches: '[id="com.tencent.qqlive:id/pause_ad_close"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/c8f55e94-30ad-440d-b4d8-06fb19f0c17e',
-          snapshotUrls: 'https://i.gkd.li/i/14318385',
+          matches:
+            '@ImageView[clickable=true][childCount=0] +2 [text="下载应用" || text="了解详情"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4bf0ff94-239d-4b43-900f-a375b44922e0',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13946107',
+            'https://i.gkd.li/i/14318385',
+            'https://i.gkd.li/i/18476383',
+          ],
         },
       ],
     },
