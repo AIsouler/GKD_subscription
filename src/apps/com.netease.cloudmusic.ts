@@ -240,10 +240,18 @@ export default defineGkdApp({
           key: 0,
           activityIds: '.activity.MainActivity',
           matches: ['[text*="新版本"]', '[text="近期不再提示"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13233790',
-            'https://i.gkd.li/i/15092457', // 避免误触
+          snapshotUrls: 'https://i.gkd.li/i/13233790',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/15092457',
+        },
+        {
+          key: 1,
+          activityIds: '.activity.MainActivity',
+          matches: [
+            '[vid="updateVersionTitle"][visibleToUser=true]',
+            '[vid="md_dialog_cm_close_btn"][visibleToUser=true]',
           ],
+          exampleUrls: 'https://e.gkd.li/8827aa5a-a105-4910-981c-d9ecc036a87d',
+          snapshotUrls: 'https://i.gkd.li/i/18492805',
         },
       ],
     },
