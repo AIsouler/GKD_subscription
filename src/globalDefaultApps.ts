@@ -263,6 +263,7 @@ export const openAdBlackListAppIDs = new Set([
 export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'info.muge.appshare', // AppShare
+  'com.jingdong.app.mall', // 京东
   ...filterAppsByGroup(apps, '更新提示'),
 ]);
 
