@@ -374,12 +374,22 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          activityIds: '.activity.MainActivity',
           matches: '@ImageView[clickable=true] +7 [text="查看我的勋章"]',
           exampleUrls:
             'https://m.gkd.li/57941037/39e34e7d-eae3-4a54-9794-97c2528d13fb',
           snapshotUrls: 'https://i.gkd.li/i/14926750',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches:
+            'ImageView[visibleToUser=true][childCount=0] < @ViewGroup[clickable=true][childCount=1] + [text$="获得该徽章"]',
+          exampleUrls: 'https://e.gkd.li/0d44b836-c0d8-4cdc-82d9-175eef8cdfc4',
+          snapshotUrls: 'https://i.gkd.li/i/18492801',
         },
       ],
     },
