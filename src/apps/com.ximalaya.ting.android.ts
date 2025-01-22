@@ -35,9 +35,9 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-播放页面-播放控制区域的广告',
+      name: '局部广告-播放页广告',
       fastQuery: true,
-      activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
+      activityIds: '.host.activity.MainActivity',
       rules: [
         {
           key: 0,
@@ -59,6 +59,14 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/6328439/ea870e6f-07c9-4167-ab62-03e52838110b',
           snapshotUrls: 'https://i.gkd.li/i/13546642',
+        },
+        {
+          key: 3,
+          name: '小说推广',
+          matches:
+            '@[visibleToUser=true] < ViewGroup[childCount=1] - ViewGroup[childCount=6] > [text="广告"] ',
+          exampleUrls: 'https://e.gkd.li/bbf93e2c-08b8-4155-b82c-89a629a62737',
+          snapshotUrls: 'https://i.gkd.li/i/18500523',
         },
       ],
     },
