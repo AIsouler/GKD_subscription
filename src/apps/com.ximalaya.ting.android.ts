@@ -247,5 +247,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '局部广告-小说推广',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.host.activity.MainActivity',
+          matches:
+            '@[visibleToUser=true] < ViewGroup[childCount=1] - ViewGroup[childCount=6] > [text="广告"] ',
+          exampleUrls: 'https://e.gkd.li/bbf93e2c-08b8-4155-b82c-89a629a62737',
+          snapshotUrls: 'https://i.gkd.li/i/18500523',
+        },
+      ],
+    },
   ],
 });
