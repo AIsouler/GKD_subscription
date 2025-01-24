@@ -50,5 +50,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '开门弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      activityIds: 'com.qinlin.edoor.MainActivity',
+      rules: [
+        {
+          matches: '[id="com.qinlin.edoor:id/ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/18529948',
+        },
+        {
+          matches: '[name="android.widget.Button"]',
+          snapshotUrls: 'https://i.gkd.li/i/18530006',
+        },
+      ],
+    },
   ],
 });
