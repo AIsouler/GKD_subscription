@@ -58,9 +58,10 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          fastQuery: true,
           activityIds: '.MainActivity',
           matches:
-            '[desc="top_close_button"] > [name="android.widget.ImageView"][clickable=false]',
+            '@[desc="top_close_button"] < ViewGroup <2 ViewGroup + ViewGroup >3 [text="广告"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/a9dc3648-339a-4925-91dd-730346711b0e',
           snapshotUrls: 'https://i.gkd.li/i/18532541',
         },
