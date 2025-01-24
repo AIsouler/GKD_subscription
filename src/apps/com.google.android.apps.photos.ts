@@ -15,8 +15,11 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: '.update.treatment.UpdateAppTreatmentPromoPageActivity',
-          matches: '[text="以后再说"]',
-          snapshotUrls: 'https://i.gkd.li/i/13218940',
+          matches: '[text="以后再说" || text="Not now"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13218940',
+            'https://i.gkd.li/i/18522070',
+          ],
         },
       ],
     },
