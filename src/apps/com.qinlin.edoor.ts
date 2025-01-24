@@ -57,6 +57,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/76e82ec7-70e5-47cb-91c2-4d00f33ef8ad',
           snapshotUrls: 'https://i.gkd.li/i/18529948',
         },
+        {
+          key: 3,
+          actionMaximum: 1,
+          activityIds: '.MainActivity',
+          matches:
+            '[desc="top_close_button"] > [name="android.widget.ImageView"][clickable=false]',
+          exampleUrls: 'https://e.gkd.li/a9dc3648-339a-4925-91dd-730346711b0e',
+          snapshotUrls: 'https://i.gkd.li/i/18532541',
+        },
       ],
     },
     {
