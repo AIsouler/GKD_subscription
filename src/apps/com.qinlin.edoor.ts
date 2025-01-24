@@ -51,7 +51,6 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          matchTime: 10000,
           activityIds: '.MainActivity',
           matches: '[vid="ad_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/76e82ec7-70e5-47cb-91c2-4d00f33ef8ad',
@@ -59,7 +58,6 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          actionMaximum: 1,
           activityIds: '.MainActivity',
           matches:
             '[desc="top_close_button"] > [name="android.widget.ImageView"][clickable=false]',
@@ -74,7 +72,6 @@ export default defineGkdApp({
       desc: '点击[好的]',
       rules: [
         {
-          matchTime: 10000,
           activityIds: '.MainActivity',
           matches: '[desc^="开门成功"] > [desc="好 的"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d8e9be78-a9d4-48f9-a6ee-9ed384a190b3',
