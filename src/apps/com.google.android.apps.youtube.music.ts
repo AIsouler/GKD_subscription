@@ -32,5 +32,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '通知提示-隐私提醒',
+      desc: '点击[OK]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activities.MusicActivity',
+          matches: [
+            '[text="Privacy check-up"][visibleToUser=true]',
+            '[text="Ok"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/bffc2f66-8538-4970-9b7b-9da2e4a397ab',
+          snapshotUrls: 'https://i.gkd.li/i/18546896',
+        },
+      ],
+    },
   ],
 });
