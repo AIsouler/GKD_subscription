@@ -403,6 +403,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18306839',
           ],
         },
+        {
+          preKeys: [1],
+          key: 2,
+          matches: '[vid="close_dislike"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/80514576-3656-4dcc-89f5-5992803c8e77',
+          snapshotUrls: 'https://i.gkd.li/i/18587456',
+        },
       ],
     },
     {
