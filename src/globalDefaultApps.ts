@@ -124,6 +124,8 @@ export const blackListAppIDs: string[] = [
   'deltazero.amarok', // Amarok 更新提示在 https://i.gkd.li/i/17812411 误触
   'com.quark.browser', // 夸克浏览器 开屏广告误触 https://i.gkd.li/i/18221460
   'bin.mt.plus', // MT管理器
+  'com.pikcloud.pikpak', // PikPak
+  'com.deepseek.chat', // DeepSeek
 
   'com.canghai.haoka',
   'com.xy.td',
