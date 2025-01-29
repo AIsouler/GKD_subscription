@@ -47,10 +47,19 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           activityIds: '.AlipayLogin',
           matches: '@[desc="取消"] + [text*="位置权限"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/caa96cc4-9943-40d8-8cb6-8c89aa60b20f',
           snapshotUrls: 'https://i.gkd.li/i/18549931',
+        },
+        {
+          key: 1,
+          activityIds: '.AlipayLogin',
+          matches:
+            '@[desc="关闭"] - LinearLayout >2 [text^="定位到"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c153cd53-16a1-4d77-bf99-9cac8821ccf8',
+          snapshotUrls: 'https://i.gkd.li/i/18551258',
         },
       ],
     },
