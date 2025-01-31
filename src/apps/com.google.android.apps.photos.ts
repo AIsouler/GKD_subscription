@@ -11,14 +11,17 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
-          activityIds: '.update.treatment.UpdateAppTreatmentPromoPageActivity',
-          matches: '[text="以后再说" || text="Not now"][visibleToUser=true]',
+          activityIds: [
+            '.update.treatment.UpdateAppTreatmentPromoPageActivity',
+            '.home.HomeActivity',
+          ],
+          matches: '[text="以后再说" || text="Not now"]', // [visibleToUser=true] https://github.com/AIsouler/GKD_subscription/issues/754
           snapshotUrls: [
             'https://i.gkd.li/i/13218940',
             'https://i.gkd.li/i/18522070',
+            'https://i.gkd.li/i/18608917',
           ],
         },
       ],
