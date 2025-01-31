@@ -5,6 +5,22 @@ export default defineGkdApp({
   name: '下厨房',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[vid="skip_container"][visibleToUser=true]', // https://github.com/AIsouler/GKD_subscription/issues/749
+          exampleUrls: 'https://e.gkd.li/5f3509d5-0b0b-4d79-b0e6-275a591ef2f5',
+          snapshotUrls: 'https://i.gkd.li/i/18587428',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '局部广告-卡片广告',
       rules: [
