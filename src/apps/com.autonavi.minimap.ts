@@ -138,6 +138,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/59408741-4847-4395-ace5-b1e14ee24cec',
           snapshotUrls: 'https://i.gkd.li/i/16960157',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '@[clickable=true] > [visibleToUser=true][text="关闭"] <<n [vid="ajx_view_container"]',
+          exampleUrls: 'https://e.gkd.li/018aa83b-3f0a-46b4-b084-a5e7a397ca68',
+          snapshotUrls: 'https://i.gkd.li/i/18627401',
+        },
       ],
     },
     {
