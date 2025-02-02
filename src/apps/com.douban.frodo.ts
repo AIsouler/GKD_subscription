@@ -190,6 +190,17 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/f8b1e031-3ec1-422c-9214-8350195642cd',
           snapshotUrls: 'https://i.gkd.li/i/13328126',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.subject.structure.activity.MovieActivity',
+          matches: [
+            '[text="广告"][visibleToUser=true]',
+            '[vid="close"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/208939d0-9d7f-4a44-8e7d-5070478c15df',
+          snapshotUrls: 'https://i.gkd.li/i/18631520',
+        },
       ],
     },
     {
