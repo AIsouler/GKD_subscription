@@ -436,5 +436,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 23,
+      name: '其他-个性化推荐弹窗',
+      desc: '点击[稍后再说]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: [
+            '[text*="个性化推荐"][visibleToUser=true]',
+            '[text="稍后再说"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/987234ad-de0f-40d8-b7dd-d3c600609949',
+          snapshotUrls: 'https://i.gkd.li/i/18633134',
+        },
+      ],
+    },
   ],
 });
