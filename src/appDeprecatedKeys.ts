@@ -460,7 +460,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.ss.android.ugc.aweme',
     name: '抖音',
-    deprecatedKeys: [0, 2, 5],
+    deprecatedKeys: [0, 2, 4, 5, 6],
   },
   {
     id: 'com.taobao.taobao',

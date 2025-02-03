@@ -27,55 +27,6 @@ export default defineGkdApp({
       name: '局部广告-关闭用户推荐',
       rules: [
         {
-          key: 0,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[text="换一个"] - FrameLayout[clickable=true] > ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12520943',
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[id="com.ss.android.ugc.aweme:id/desc"][text="减少此类推荐"]',
-          snapshotUrls: 'https://i.gkd.li/i/12520962',
-        },
-        {
-          key: 2,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[text="你可能感兴趣"] < LinearLayout + [text="隐藏"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12675396',
-        },
-        {
-          key: 3,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '[text="朋友推荐"] +(2) @FrameLayout > [desc="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/12675129',
-        },
-        {
-          key: 4,
-          activityIds:
-            'com.ss.android.ugc.aweme.friends.ui.RawAddFriendsActivity',
-          matches:
-            '[text="朋友推荐"] < LinearLayout + FrameLayout > [desc="关闭"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12675245',
-        },
-        {
-          key: 5,
-          activityIds: [
-            'com.ss.android.ugc.aweme.main.MainActivity',
-            'com.miui.home.launcher.Launcher',
-          ],
-          matches:
-            '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12525387',
-            'https://i.gkd.li/i/12525389',
-          ],
-        },
-        {
           key: 6,
           fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
@@ -99,33 +50,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13328599',
             'https://i.gkd.li/i/15359995',
           ],
-        },
-      ],
-    },
-    {
-      key: 4,
-      name: '局部广告-首页左上角广告',
-      rules: [
-        {
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
-          snapshotUrls: 'https://i.gkd.li/i/12749276',
-        },
-      ],
-    },
-    {
-      key: 6,
-      name: '评价提示-去商店评分',
-      desc: '点击[取消]',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: '.main.MainActivity',
-          matches: '@[text="取消"] +2 [text="五星好评"]',
-          snapshotUrls: 'https://i.gkd.li/i/13053628',
         },
       ],
     },
@@ -169,22 +93,24 @@ export default defineGkdApp({
       key: 11,
       name: '功能类-自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
+      actionMaximum: 1,
       rules: [
         {
           fastQuery: true,
           activityIds:
-            'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
-          matches: '[text="原图"][desc="未选中/复选框 原图"]',
+            '.ecommerce.im.choosemedia.ECommerceIMMediaChooseActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="原图"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12846036', // 未选中
-            'https://i.gkd.li/i/12846040', // 已选中
+            'https://i.gkd.li/i/18637952', // 未选中
+            'https://i.gkd.li/i/18637948', // 已选中
           ],
         },
       ],
     },
     {
       key: 12,
-      name: '全屏广告-休息提醒',
+      name: '其他-休息提醒',
       fastQuery: true,
       rules: [
         {
@@ -192,15 +118,8 @@ export default defineGkdApp({
           matches: '@[text="取消"] + [text*="提醒我"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13241564',
-            'https://i.gkd.li/i/13372604',
             'https://i.gkd.li/i/14160675',
           ],
-        },
-        {
-          key: 2,
-          activityIds: '.main.MainActivity',
-          matches: '[text="管理使用时间"] + Button[text="忽略提醒"]',
-          snapshotUrls: 'https://i.gkd.li/i/13372725',
         },
       ],
     },
@@ -211,15 +130,6 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
-        {
-          key: 0,
-          name: '搜索快捷方式',
-          activityIds:
-            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
-          action: 'back',
-          matches: 'ViewGroup[desc="添加搜索到桌面"]',
-          snapshotUrls: 'https://i.gkd.li/i/13338556',
-        },
         {
           key: 1,
           name: '商城快捷方式',
@@ -264,7 +174,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
-            'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
+            '@[desc="关闭"] + ViewGroup > [text$="打个招呼"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13379307',
         },
       ],
@@ -372,12 +282,13 @@ export default defineGkdApp({
           excludeActivityIds: '.setting.ui.SettingCommonProtocolActivity',
           matches: [
             '[text*="青少年" || text*="未成年"][text*="模式"]',
-            '[text="关闭"]',
+            '[text="关闭" || text="不再提醒"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/14321107',
             'https://i.gkd.li/i/14473006',
             'https://i.gkd.li/i/17726070',
+            'https://i.gkd.li/i/18638030',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/14917848',
