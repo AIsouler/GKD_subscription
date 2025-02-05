@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0, // 全局规则概率误触 https://github.com/AIsouler/GKD_subscription/issues/285
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -16,16 +15,35 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="tobid_splash_skip_ll"]',
+          fastQuery: true,
+          matches: '[vid="tobid_splash_skip_ll" || vid="ms_skipView"]',
           exampleUrls: 'https://e.gkd.li/03b70de9-9e1d-4362-83df-08a95c2c224f',
-          snapshotUrls: 'https://i.gkd.li/i/16451775',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16451775',
+            'https://i.gkd.li/i/18668837',
+          ],
         },
         {
           key: 1,
+          fastQuery: true,
           matches:
             'ImageView[desc="skip_button"] + ViewGroup > TextView[text="跳过"]',
           exampleUrls: 'https://e.gkd.li/625debfb-faa5-438a-a5ba-5175233ea1d2',
           snapshotUrls: 'https://i.gkd.li/i/16828285',
+        },
+        {
+          key: 2,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
+          exampleUrls: 'https://e.gkd.li/d5777afa-927b-4d6d-be67-e92fd2f206cd',
+          snapshotUrls: 'https://i.gkd.li/i/18668718',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          matches: '@View[clickable=true] - [text="互动广告"]',
+          exampleUrls: 'https://e.gkd.li/d32ca677-f0c4-49e4-8dfe-f105a9ab1cb9',
+          snapshotUrls: 'https://i.gkd.li/i/18668852',
         },
       ],
     },
