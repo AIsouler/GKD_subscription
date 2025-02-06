@@ -247,5 +247,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '局部广告-播放界面-领取福利',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.host.activity.MainActivity',
+          matches: [
+            '[text="去领取"]',
+            '[vid="main_buy_view_yellow_zone_btn_close"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/390f49b2-344c-42cf-b53d-9a23edd7fe19',
+          snapshotUrls: 'https://i.gkd.li/i/18683999',
+        },
+      ],
+    },
   ],
 });
