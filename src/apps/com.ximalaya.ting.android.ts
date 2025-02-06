@@ -40,33 +40,18 @@ export default defineGkdApp({
       activityIds: '.host.activity.MainActivity',
       rules: [
         {
-          key: 0,
-          name: '暂停按钮下方的广告',
-          matches:
-            '[id="com.ximalaya.ting.android:id/x_play_ad_banner_close_real"]',
-          snapshotUrls: 'https://i.gkd.li/i/12506218',
-        },
-        {
-          key: 1,
-          name: '喜马小游戏广告',
-          matches: '[id="com.ximalaya.ting.android:id/host_game_close_tv"]',
-          snapshotUrls: 'https://i.gkd.li/i/12927110',
-        },
-        {
-          key: 2,
-          name: '体验会员广告',
-          matches: '[id="com.ximalaya.ting.android:id/main_iv_close"]',
-          exampleUrls:
-            'https://m.gkd.li/6328439/ea870e6f-07c9-4167-ab62-03e52838110b',
-          snapshotUrls: 'https://i.gkd.li/i/13546642',
-        },
-        {
           key: 3,
-          name: '小说推广',
           matches:
             '@[visibleToUser=true] < ViewGroup[childCount=1] - ViewGroup[childCount=6] > [text="广告"] ',
           exampleUrls: 'https://e.gkd.li/bbf93e2c-08b8-4155-b82c-89a629a62737',
           snapshotUrls: 'https://i.gkd.li/i/18500523',
+        },
+        {
+          key: 4,
+          matches:
+            '[vid="main_buy_view_yellow_zone_btn_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bf820eed-00ad-47a0-9581-8cdb3d76bde5',
+          snapshotUrls: 'https://i.gkd.li/i/18683999',
         },
       ],
     },
