@@ -15,9 +15,12 @@ export default defineGkdApp({
         {
           activityIds: '.view.BaseActivity',
           matches:
-            '@ImageView[index=3][childCount=0][clickable=true][visibleToUser=true][text=null][id=null] <4 RelativeLayout[childCount=8] < RelativeLayout[childCount=1] < [parent=null]',
+            '@ImageView[index=3][childCount=0][clickable=true][visibleToUser=true][text=null][id=null] <4 RelativeLayout[childCount>7] < RelativeLayout[childCount=1] < [parent=null]',
           exampleUrls: 'https://e.gkd.li/42ac7c76-362c-4f47-b4d8-ab9677246165',
-          snapshotUrls: 'https://i.gkd.li/i/17632595',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17632595',
+            'https://i.gkd.li/i/18699720',
+          ],
         },
       ],
     },
