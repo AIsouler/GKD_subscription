@@ -80,6 +80,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18703827',
           ],
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@FrameLayout <2 FrameLayout <2 FrameLayout <2 FrameLayout - FrameLayout > [text="扭动或点击立刻开玩"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a2685f57-ec36-44a1-9529-f10d7fb481ef',
+          snapshotUrls: 'https://i.gkd.li/i/18704056',
+        },
       ],
     },
     {
