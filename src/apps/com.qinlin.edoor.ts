@@ -70,10 +70,18 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches:
+          matches: [
             '@ViewGroup < ViewGroup < ViewGroup + ViewGroup >5 [text="扭一扭或点击了解更多"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/517cc207-1e6c-4416-bbd1-193326879b68',
-          snapshotUrls: 'https://i.gkd.li/i/18703139',
+            '@ViewGroup < ViewGroup < ViewGroup + ViewGroup >3 [text^="扭一扭或点击广告"][visibleToUser=true]',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/517cc207-1e6c-4416-bbd1-193326879b68',
+            'https://e.gkd.li/e60379ac-ee45-4f0f-bb18-5d1ffa4d9210',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/18703139',
+            'https://i.gkd.li/i/18703827',
+          ],
         },
       ],
     },
