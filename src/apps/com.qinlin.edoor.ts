@@ -65,6 +65,30 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/a9dc3648-339a-4925-91dd-730346711b0e',
           snapshotUrls: 'https://i.gkd.li/i/18532541',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '@ViewGroup + ViewGroup > [text="反馈"]',
+          exampleUrls: [
+            'https://e.gkd.li/517cc207-1e6c-4416-bbd1-193326879b68',
+            'https://e.gkd.li/e60379ac-ee45-4f0f-bb18-5d1ffa4d9210',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/18703139',
+            'https://i.gkd.li/i/18703827',
+          ],
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          exampleUrls: 'https://e.gkd.li/a2685f57-ec36-44a1-9529-f10d7fb481ef',
+          snapshotUrls: 'https://i.gkd.li/i/18704056',
+        },
       ],
     },
     {
