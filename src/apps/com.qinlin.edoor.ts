@@ -65,6 +65,16 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/a9dc3648-339a-4925-91dd-730346711b0e',
           snapshotUrls: 'https://i.gkd.li/i/18532541',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@ViewGroup < ViewGroup < ViewGroup + ViewGroup >5 [text="扭一扭或点击了解更多"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/517cc207-1e6c-4416-bbd1-193326879b68',
+          snapshotUrls: 'https://i.gkd.li/i/18703139',
+        },
       ],
     },
     {
