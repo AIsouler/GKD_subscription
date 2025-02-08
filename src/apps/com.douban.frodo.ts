@@ -159,6 +159,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/735decb0-7f08-4c7d-8199-a38faf213f77',
           snapshotUrls: 'https://i.gkd.li/i/18424859',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
+          matches: '[vid="venue_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/86f2589d-87eb-4b9a-83aa-4248b905f7b2',
+          snapshotUrls: 'https://i.gkd.li/i/18717693',
+        },
       ],
     },
     {
@@ -201,6 +209,17 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/208939d0-9d7f-4a44-8e7d-5070478c15df',
           snapshotUrls: 'https://i.gkd.li/i/18631520',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: '.subject.structure.activity.MovieActivity',
+          matches: [
+            '[text="你发现了一枚徽章"][visibleToUser=true]',
+            '[vid="confirmLayout"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/ca74a922-fb47-4fc8-8111-b6a66c2465ff',
+          snapshotUrls: 'https://i.gkd.li/i/18717771',
+        },
       ],
     },
     {
@@ -225,6 +244,23 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13228832',
             'https://i.gkd.li/i/13659160',
           ],
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '其他-标记看过的影视弹窗',
+      desc: '点击[取消]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.subject.structure.activity.MovieActivity',
+          matches: [
+            '[text="标记看过的影视"][visibleToUser=true]',
+            '[vid="cancelLayout"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/8067419c-a902-4750-9e1e-655bfc5c7342',
+          snapshotUrls: 'https://i.gkd.li/i/18717798',
         },
       ],
     },
