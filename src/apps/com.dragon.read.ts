@@ -17,23 +17,20 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠"]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠" || text*="查看"][text.length<5]',
           snapshotUrls: [
             'https://i.gkd.li/i/12908734',
+            'https://i.gkd.li/i/14540281',
             'https://i.gkd.li/i/18138903',
           ],
         },
         {
           key: 2,
-          matches:
-            'HorizontalAndVerticalScrollView > FrameLayout[childCount=14] > [index=9] >5 ImageView[clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/d2f7c62c-be88-4668-b276-68bb53edfaad',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14193836',
-            'https://i.gkd.li/i/13520314',
-            'https://i.gkd.li/i/12908734',
-          ],
+          fastQuery: true,
+          activityIds: '.reader.ui.ReaderActivity',
+          matches: '[id="com.dragon.read:id/close_button"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3de0d5d9-0c02-4fe7-b5e8-b9fdb6688f8e',
+          snapshotUrls: 'https://i.gkd.li/i/13520314',
         },
         {
           key: 3,
@@ -53,6 +50,18 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14548657',
             'https://i.gkd.li/i/14622531',
             'https://i.gkd.li/i/14810480',
+          ],
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.reader.ui.ReaderActivity',
+          matches:
+            '@[clickable=true] >(1,2) [text="继续阅读下一页"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/b571222b-4ac1-4ba8-9a2c-4439c531d6e4',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13674556',
+            'https://i.gkd.li/i/13843155',
           ],
         },
       ],
@@ -78,17 +87,18 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-首页右侧悬浮广告',
-      activityIds: [
-        'com.dragon.read.pages.main.MainFragmentActivity',
-        'com.dragon.read.ad.openingscreenad.OpeningScreenADActivity',
-      ],
       rules: [
         {
+          fastQuery: true,
+          activityIds: [
+            'com.dragon.read.pages.main.MainFragmentActivity',
+            'com.dragon.read.ad.openingscreenad.OpeningScreenADActivity',
+          ],
           matches:
-            '[id="android:id/content"] > FrameLayout[childCount=1] > RelativeLayout[childCount=1] >2 ImageView[id!=null][clickable=true]',
+            '@ImageView[clickable=true][childCount=0][index=0][visibleToUser=true] < [childCount=3] < RelativeLayout < FrameLayout <2 [id="android:id/content"][childCount=3]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12716506', //relativeLayout和ImageView之间是RelativeLayoutRelativeLayout
-            'https://i.gkd.li/i/13318796', //relativeLayout和ImageView之间是ViewGroup
+            'https://i.gkd.li/i/12716506',
+            'https://i.gkd.li/i/13318796',
           ],
         },
       ],
@@ -158,16 +168,6 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
-          key: 2,
-          name: '点击[继续阅读下一页]',
-          order: -1,
-          matches: '[text="继续阅读下一页"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13674556',
-            'https://i.gkd.li/i/13843155',
-          ],
-        },
-        {
           key: 0,
           name: '点击[反馈]按钮',
           matches: '[text="反馈"][visibleToUser=true][name$="UIText"]',
@@ -177,15 +177,23 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          key: 3,
+          matches:
+            '@ImageView[clickable=true][childCount=0][visibleToUser=true] < FrameLayout - LinearLayout >2 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/c172db67-a489-488b-a5f5-35aa9657c444',
+          snapshotUrls: 'https://i.gkd.li/i/18724040',
+        },
+        {
+          preKeys: [0, 3],
           key: 1,
-          name: '点击[不感兴趣]',
-          matches: '[text="不感兴趣"]',
+          name: '点击[不感兴趣]/[关闭此广告]',
+          matches: '[text="不感兴趣" || text="关闭此广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13520219',
             'https://i.gkd.li/i/13674550',
             'https://i.gkd.li/i/13816454',
             'https://i.gkd.li/i/14913207',
+            'https://i.gkd.li/i/18724041',
           ],
         },
       ],
