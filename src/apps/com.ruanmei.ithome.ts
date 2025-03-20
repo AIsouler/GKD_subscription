@@ -60,8 +60,10 @@ export default defineGkdApp({
         {
           key: 0,
           action: 'longClick',
-          matches: '@[longClickable=true] >4 [text="广告 "]',
+          matches:
+            '@[longClickable=true] >4 [text="广告 "][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14734964',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/19340823',
         },
         {
           preKeys: [0],
