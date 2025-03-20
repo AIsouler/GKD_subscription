@@ -333,5 +333,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 21,
+      name: '功能类-关闭截图后的弹窗',
+      rules: [
+        {
+          fastQuery: true,
+          action: 'back', // 点击取消会导致 MIUI 截图悬浮窗收起
+          activityIds: '.activity.NewPageActivity',
+          matches: '[text="搜索图片同款商品"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/19340768',
+        },
+      ],
+    },
   ],
 });
