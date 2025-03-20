@@ -212,6 +212,7 @@ export const blackListAppIDs: string[] = [
   'com.xiaomi.cajlauncher', // CAJViewer PC
   'com.mi.car.padapp', // 小米汽车扩展屏
   'com.android.calendar', // 日历
+  'com.mi.earphone', // 小米耳机
 
   // 三星
   'com.samsung.android.app.cameraassistant',
