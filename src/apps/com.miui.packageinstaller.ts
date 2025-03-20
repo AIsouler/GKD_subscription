@@ -52,7 +52,7 @@ export default defineGkdApp({
           ],
         },
         {
-          // preKeys: [0], 有概率不触发
+          preKeys: [0],
           key: 1,
           name: '点击[完成]',
           activityIds:
@@ -68,7 +68,10 @@ export default defineGkdApp({
       name: '功能类-自动允许应用安装软件',
       fastQuery: true,
       actionMaximum: 1,
-      activityIds: 'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+      activityIds: [
+        'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+        'com.miui.packageInstaller.NewInstallerPrepareActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -81,6 +84,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/16487366',
             'https://i.gkd.li/i/16487389',
+            'https://i.gkd.li/i/18937578',
           ],
         },
         {
@@ -88,7 +92,10 @@ export default defineGkdApp({
           name: '点击[允许]',
           matches: '[text="允许"]',
           exampleUrls: 'https://e.gkd.li/4f4ce827-6b74-4b55-8fed-5e009acd4bbd',
-          snapshotUrls: 'https://i.gkd.li/i/16487365',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16487365',
+            'https://i.gkd.li/i/18937576',
+          ],
         },
       ],
     },
