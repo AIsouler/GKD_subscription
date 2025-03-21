@@ -40,5 +40,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.autoclicker.clicker.MainActivity',
+          matches: '[vid="img_native_ad_default_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e6b14a8f-6533-4601-92b8-f5032fc18234',
+          snapshotUrls: 'https://i.gkd.li/i/19381476',
+        },
+      ],
+    },
   ],
 });
