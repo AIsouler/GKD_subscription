@@ -57,9 +57,12 @@ export default defineGkdApp({
           key: 1,
           activityIds: '.AlipayLogin',
           matches:
-            '@[desc="关闭"] - LinearLayout >2 [text^="定位到"][visibleToUser=true]',
+            '@[desc="关闭"] - LinearLayout >2 [text^="定位到" || text^="开启定位权限"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/c153cd53-16a1-4d77-bf99-9cac8821ccf8',
-          snapshotUrls: 'https://i.gkd.li/i/18551258',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18551258',
+            'https://i.gkd.li/i/19267032',
+          ],
         },
       ],
     },
