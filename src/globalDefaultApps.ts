@@ -126,6 +126,7 @@ export const blackListAppIDs: string[] = [
   'bin.mt.plus', // MT管理器
   'com.pikcloud.pikpak', // PikPak
   'com.deepseek.chat', // DeepSeek
+  'com.yjllq.kito', // 可拓浏览器
 
   'com.canghai.haoka',
   'com.xy.td',
