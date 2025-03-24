@@ -28,8 +28,10 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[visibleToUser=true][text=null][index=parent.childCount.minus(1)]',
+          anyMatches: [
+            '@View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null][visibleToUser=true]',
+          ],
           exampleUrls:
             'https://m.gkd.li/57941037/63a72bd6-72be-410c-86ab-09ba7a4fa318',
           snapshotUrls: 'https://i.gkd.li/i/14167393',
