@@ -16,7 +16,7 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches: '[text*="跳过"][text.length<=10]',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/07c9f980-aa0f-4044-a58d-299a2a358857',
           snapshotUrls: 'https://i.gkd.li/i/13497656',
@@ -30,6 +30,13 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/3b5cba55-7024-4d3e-a21c-7b1d540515bc',
           snapshotUrls: 'https://i.gkd.li/i/14511463',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches: '[vid="ms_skipView"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/376e2139-881a-497b-a2af-625802c7c049',
+          snapshotUrls: 'https://i.gkd.li/i/19442209',
         },
       ],
     },
