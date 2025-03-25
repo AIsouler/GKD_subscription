@@ -69,11 +69,13 @@ export default defineGkdApp({
           activityIds: [
             'org.qiyi.android.video.MainActivity',
             'org.qiyi.android.search.view.PhoneSearchActivity',
+            '.qysplashscreen.hotlaunch.HotSplashScreenActivity',
           ],
           matches: '[id="com.qiyi.video:id/cancel_btn"][text="暂不升级"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12838158',
             'https://i.gkd.li/i/13684912',
+            'https://i.gkd.li/i/19049372',
           ],
         },
       ],

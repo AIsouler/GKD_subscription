@@ -439,5 +439,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 25,
+      name: '全屏广告-付款后的免密支付开通广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      fastQuery: true,
+      rules: [
+        {
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: ['TextView[text *="免密支付"]', 'TextView[text="不感兴趣"]'],
+          snapshotUrls: 'https://i.gkd.li/i/19449399',
+        },
+      ],
+    },
   ],
 });

@@ -38,7 +38,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告-首页弹窗广告',
       desc: '点击关闭',
       rules: [
         {
@@ -52,6 +52,23 @@ export default defineGkdApp({
             '@ImageView[clickable=true] < RelativeLayout + RelativeLayout >5 [desc^="广告"] + [text="立即领取"]',
           exampleUrls: 'https://e.gkd.li/00628604-fab9-432c-a70b-343c8c889c23',
           snapshotUrls: 'https://i.gkd.li/i/16357287',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '全屏广告-机票页弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          activityIds: 'ctrip.business.planthome.CtripPlantHomeActivity',
+          matches:
+            '@ImageView[clickable=true][vid="a"][width<120][height<120] <<n FrameLayout[id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/6170a942-3fc9-42d8-9ecd-c48b2f453c98',
+          snapshotUrls: 'https://i.gkd.li/i/19050401',
         },
       ],
     },
