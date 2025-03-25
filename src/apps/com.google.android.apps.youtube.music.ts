@@ -24,6 +24,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: '.activities.MusicActivity',
           matches:
@@ -33,6 +34,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18542111',
             'https://i.gkd.li/i/18727504',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.activities.MusicActivity',
+          matches: '[text="No thanks"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/eb519d7d-8d6c-4196-bf23-ea8c0511cfa9',
+          snapshotUrls: 'https://i.gkd.li/i/19442247',
         },
       ],
     },
