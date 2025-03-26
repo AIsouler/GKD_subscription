@@ -32,7 +32,7 @@ export default defineGkdApp({
             '.ui.activity.MainFrameActivity',
           ],
           matches:
-            '[text="开心收下" || text="去抢购" || text="立即抽免单" || text="去刮奖" || text="立即领取" || text="去领大额金币" || text="送你大额现金" || text*="红包助手" || text="刮刮卡发来的消息通知"][visibleToUser=true]',
+            '[text="开心收下" || text="去抢购" || text="立即抽免单" || text="去刮奖" || text="立即领取" || text="去领大额金币" || text="送你大额现金" || text*="红包助手" || text="刮刮卡发来的消息通知" || text="立即充值"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13625441',
             'https://i.gkd.li/i/13761182',
@@ -46,6 +46,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17564786',
             'https://i.gkd.li/i/17585645',
             'https://i.gkd.li/i/17625608',
+            'https://i.gkd.li/i/18481318',
           ],
         },
         {
@@ -68,12 +69,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15197527',
             'https://i.gkd.li/i/15211473',
           ],
-        },
-        {
-          key: 6,
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          matches: '[text="上滑看视频得现金"] - [text="webp"]',
-          snapshotUrls: 'https://i.gkd.li/i/13809053',
         },
         {
           key: 7,
