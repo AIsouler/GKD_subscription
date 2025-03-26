@@ -292,10 +292,11 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-关闭免密支付开关',
+      name: '全屏广告-关闭免密支付广告',
       actionMaximum: 1,
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches:
@@ -306,6 +307,17 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14630825', // 关闭后
             'https://i.gkd.li/i/17107841',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: [
+            '[text^="开通"][text$="免密支付"][visibleToUser=true]',
+            '@[clickable=true] > [text="关闭"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/c8388cd5-a97f-4683-9ef1-2caa0a24de91',
+          snapshotUrls: 'https://i.gkd.li/i/19449399',
         },
       ],
     },
