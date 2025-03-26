@@ -37,7 +37,10 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.app.mainv2.view.MainActivity',
-          matches: '[text="写评价"][visibleToUser=true]',
+          matches: [
+            '[text="写评价"][visibleToUser=true]',
+            '[vid="close_iv"][visibleToUser=true]',
+          ],
           exampleUrls: 'https://e.gkd.li/8bd038b0-c555-4ac5-b1c0-c31c351cd788',
           snapshotUrls: 'https://i.gkd.li/i/19442188',
         },
