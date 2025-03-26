@@ -17,7 +17,7 @@ export default defineGkdApp({
             '.update.treatment.UpdateAppTreatmentPromoPageActivity',
             '.home.HomeActivity',
           ],
-          matches: '[text="以后再说" || text="Not now"]', // [visibleToUser=true] https://github.com/AIsouler/GKD_subscription/issues/754
+          matches: '[text="以后再说" || text="Not now"][visibleToUser=true]', // https://github.com/AIsouler/GKD_subscription/issues/754
           snapshotUrls: [
             'https://i.gkd.li/i/13218940',
             'https://i.gkd.li/i/18522070',
