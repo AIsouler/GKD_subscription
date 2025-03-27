@@ -41,21 +41,21 @@
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
-    "@eslint/js": "9.22.0",
-    "@gkd-kit/api": "0.6.0",
+    "@eslint/js": "9.23.0",
+    "@gkd-kit/api": "0.7.0",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "0.6.0",
-    "@types/node": "22.13.10",
-    "eslint": "9.22.0",
+    "@types/node": "22.13.14",
+    "eslint": "9.23.0",
     "eslint-config-prettier": "10.1.1",
     "eslint-plugin-unused-imports": "4.1.4",
     "json5": "2.2.3",
     "lint-staged": "15.5.0",
     "prettier": "3.5.3",
-    "simple-git-hooks": "2.11.1",
+    "simple-git-hooks": "2.12.1",
     "tsx": "4.19.3",
     "typescript": "5.8.2",
-    "typescript-eslint": "8.27.0"
+    "typescript-eslint": "8.28.0"
   },
   "volta": {
     "node": "20.13.1"
