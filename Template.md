@@ -12,7 +12,7 @@
 
 ## 赞助
 
-如果这个项目对你有帮助，欢迎在 [爱发电](https://ifdian.net/a/AIsouler) 支持我！
+- **如果这个项目对你有帮助，欢迎在 [爱发电](https://ifdian.net/a/AIsouler) 支持我！**
 
 ## 说明
 
