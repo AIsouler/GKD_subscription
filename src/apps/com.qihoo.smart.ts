@@ -22,5 +22,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.qihoo.main.flutter.SmartHomeFlutterActivity',
+          matches: '[vid="sh_app_upgrade_dialog_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/19a460f5-5fe0-41b1-8def-65e23804a8fd',
+          snapshotUrls: 'https://i.gkd.li/i/19499314',
+        },
+      ],
+    },
   ],
 });
