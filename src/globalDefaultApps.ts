@@ -127,6 +127,10 @@ export const blackListAppIDs: string[] = [
   'com.pikcloud.pikpak', // PikPak
   'com.deepseek.chat', // DeepSeek
   'com.yjllq.kito', // 可拓浏览器
+  'com.fuck.android.rimet', // 锤锤
+  'cn.tinyhai.ban_uninstall', // 禁止卸载
+  'cc.aoeiuv020.iamnotdisabled.hook', // 非残！
+  'cc.aoeiuv020.iamnotdisabled', // 我残？
 
   'com.canghai.haoka',
   'com.xy.td',
