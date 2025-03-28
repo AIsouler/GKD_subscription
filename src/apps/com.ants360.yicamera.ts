@@ -47,13 +47,19 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.xiaoyi.yiplayer.ui.PlayerActivity',
+          activityIds: [
+            'com.xiaoyi.yiplayer.ui.PlayerActivity',
+            '.activity.MainActivity',
+          ],
           matches: [
             '[text="开启通知"][visibleToUser=true]',
             '[text="暂不开启"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/1cb1471e-94a5-430f-ac2f-b031413a067e',
-          snapshotUrls: 'https://i.gkd.li/i/18395740',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18395740',
+            'https://i.gkd.li/i/19503517',
+          ],
         },
       ],
     },
