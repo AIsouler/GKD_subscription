@@ -131,6 +131,13 @@ export const blackListAppIDs: string[] = [
   'cn.tinyhai.ban_uninstall', // 禁止卸载
   'cc.aoeiuv020.iamnotdisabled.hook', // 非残！
   'cc.aoeiuv020.iamnotdisabled', // 我残？
+  'io.github.jqssun.gpssetter', // GPS Setter
+  'me.hoshino.novpndetect', // NoVPNDetect
+  'com.xchat', //XChat
+  'com.kooritea.fcmfix', // fcmfix
+  'nep.timeline.re_telegram', // Re:Telegram
+  'com.fankes.tsbattery', // TSBattery
+  'top.trangle.mbga', // MBGA
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -244,6 +251,8 @@ export const blackListAppIDs: string[] = [
   'com.mmbox.xbrowser', // X浏览器
   'com.mmbox.xbrowser.pro', // X浏览器Google Play版
   'com.mycompany.app.soulbrowser', // soul浏览器
+
+  'com.google.android.contactkeys', // Android System Key Verifier
 ];
 
 // 如果某应用的规则中已有全局规则中的某一类的规则, 则在此应用禁用对应全局规则
