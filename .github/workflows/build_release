@@ -1,0 +1,100 @@
+名称：build_release
+
+开：
+  时间表：
+    - cron： '0 19 */3 * *'
+  workflow_dispatch：
+
+工作机会：
+  build_release：
+    运行时间：ubuntu-latest
+    输出：
+      版本： ${{ steps.version.outputs.version }}
+      changes_detected： ${{ steps.changes.outputs.changed }}
+    步骤：
+      - 用途：作/checkout@v4
+        替换为：
+          获取深度： 0
+
+      - name：获取上一个标签或默认为 changed=true
+        编号： previous_tag
+        运行： |
+prev_tag=$（git describe --tags --abbrev=0 2>/dev/null || echo “none”）
+if [ “$prev_tag” == “none” ];然后
+echo “未找到标签。默认情况下设置 changed=true。
+echo “changed=true” >> $GITHUB_ENV
+还
+echo “上一个标签：$prev_tag”
+echo “previous_tag=$prev_tag” >> $GITHUB_ENV
+fi
+      - name：检查 src 目录中的 previous tag 和 latest commit 之间的变化
+        id： 更改
+        运行： |
+if [ “$prev_tag” ！= “none” ];然后
+if git diff --exit-code ${{ env.previous_tag }} HEAD -- src;然后
+echo “在 'src' 目录中未检测到 ${{ env.previous_tag }} 与最新提交之间的更改。”
+echo “changed=false” >> $GITHUB_ENV
+还
+echo “在 'src' 目录中检测到 ${{ env.previous_tag }} 与最新提交之间的更改。”
+echo “changed=true” >> $GITHUB_ENV
+fi
+fi
+      - name：如果未检测到更改，则终止
+        如果： env.changed ！= 'true'
+        运行： |
+echo “'src' 目录中没有更改，正在终止工作流程。”
+1 号出口
+      - 使用： actions/setup-node@v4
+        替换为：
+          节点版本：22
+
+      - 用途：pnpm/action-setup@v4
+
+      - 运行：pnpm install
+
+      - 运行：pnpm run build
+
+      - id： 版本
+        运行： |
+version=$（node -e “import（'@gkd-kit/tools'）.then（（m） => m.stdoutGkdVersion（））;）
+echo “version=${version}” >> “$GITHUB_OUTPUT”
+      - 编号：update_pkg_version
+        运行： node -e “import（'@gkd-kit/tools'）.then（（m） => m.updatePkgVersion（））;”
+
+      - 名称：Git 提交
+        id：提交
+        运行： |
+git config --local user.email github-actions[bot]@users.noreply.github.com
+git config --local user.name github-actions[机器人]
+Git 状态
+git add 的 .
+git commit -a -m “杂务：v${{steps.version.outputs.version}}”
+        出错时继续：true
+
+      - 名称：Git 推送
+        如果： ${{ steps.commit.outcome == '成功' }}
+        用途：ad-m/github-push-action@master
+        替换为：
+          github_token：${{ secrets。GITHUB_TOKEN }}
+          分支： ${{ github.ref }}
+          标签： true
+
+      - name： 创建发布
+        编号： create_release
+        如果： ${{ steps.commit.outcome == '成功' }}
+        用途： actions/create-release@v1
+        环境：
+          GITHUB_TOKEN：${{ secrets。GITHUB_TOKEN }}
+        替换为：
+          tag_name： v${{ steps.version.outputs.version }}
+          release_name：发布 ${{ steps.version.outputs.version }}
+          body_path：./dist/CHANGELOG.md
+
+      - name：发布包
+        环境：
+          NPM_TOKEN：${{ secrets。NPM_TOKEN }}
+        如果： ${{ steps.commit.outcome == '成功' && env.NPM_TOKEN ！= '' }}
+        运行： |
+pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+pnpm publish --no-git-checks
+node -e “import（'@gkd-kit/tools'）.then（（m） => m.syncNpmmirror（））;”
