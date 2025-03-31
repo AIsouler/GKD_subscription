@@ -38,10 +38,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: '.MainActivity',
-          matches: '[vid="dialog_de"][visibleToUser=true]',
+          activityIds: ['.MainActivity', '.LaunchActivity'],
+          anyMatches: [
+            '[vid="dialog_de"][visibleToUser=true]',
+            '[text="以后再说"][visibleToUser=true]',
+          ],
           exampleUrls: 'https://e.gkd.li/f80b0ecb-a704-495d-9afc-c1ffcba2108f',
-          snapshotUrls: 'https://i.gkd.li/i/19485921',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19485921',
+            'https://i.gkd.li/i/19535009',
+          ],
         },
       ],
     },
