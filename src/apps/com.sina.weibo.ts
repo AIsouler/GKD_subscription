@@ -56,21 +56,21 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             '[id="com.sina.weibo:id/left_img_container"] + LinearLayout >2 [id="com.sina.weibo:id/close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12673043',
         },
         {
           key: 1,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             '[id="com.sina.weibo:id/left_video_container"] + LinearLayout >2 [id="com.sina.weibo:id/close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13635551',
         },
         {
           key: 3,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             '[id="com.sina.weibo:id/tvTrendsTitle"] + [id="com.sina.weibo:id/iv_ad_x"]',
           snapshotUrls: 'https://i.gkd.li/i/13787207',
@@ -85,7 +85,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             'RelativeLayout[visibleToUser=true] - RelativeLayout >n @[id="com.sina.weibo:id/ll_close"] > [id="com.sina.weibo:id/tv_tips"] + [id="com.sina.weibo:id/iv_close_icon"]',
           snapshotUrls: [
@@ -97,7 +97,7 @@ export default defineGkdApp({
           preKeys: [0],
           activityIds: [
             'com.sina.weibo.utils.WeiboDialog$CustomDialog',
-            'com.sina.weibo.feed.DetailWeiboActivity',
+            'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           ],
           matches: 'TextView[text="不感兴趣"]',
           snapshotUrls: [
@@ -232,14 +232,14 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             '@[id="com.sina.weibo:id/close_layout"] - LinearLayout [id="com.sina.weibo:id/btnFollow"]',
           snapshotUrls: 'https://i.gkd.li/i/13482954',
         },
         {
           key: 4,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             '[text*="一键转发"] < LinearLayout +2 [id="com.sina.weibo:id/tv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13482960',
@@ -280,13 +280,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches: '[vid="ll_close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13852321',
         },
         {
           key: 1,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches: '[vid="corner_marker_view"] >2 [vid="right_top_tag"]',
           snapshotUrls: 'https://i.gkd.li/i/14210775',
         },
@@ -306,7 +306,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches: [
             '[vid="left_img_ad_tag"][visibleToUser=true]',
             '[vid="close"][visibleToUser=true]',
@@ -320,7 +320,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 90,
           name: '点击"不感兴趣"',
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches: '[text="不感兴趣"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13852322',
         },
@@ -328,7 +328,7 @@ export default defineGkdApp({
           preKeys: [0, 1, 3],
           key: 91,
           name: '点击"不想看到此类内容"',
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: 'com.sina.weibo.feed.detailrefactor.DetailPageActivity',
           matches:
             '@LinearLayout[index=1][clickable=true] >2 [text="不想看到此类内容"]',
           snapshotUrls: [
