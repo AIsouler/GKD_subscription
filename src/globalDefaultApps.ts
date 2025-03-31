@@ -1,8 +1,3 @@
-import { batchImportApps } from '@gkd-kit/tools';
-import { RawApp } from '@gkd-kit/api';
-
-const apps = await batchImportApps(`${import.meta.dirname}/apps`);
-
 // 全局规则黑名单
 // 在一些非系统应用中禁用所有全局规则
 export const blackListAppIDs: string[] = [
@@ -258,25 +253,12 @@ export const blackListAppIDs: string[] = [
   'com.google.android.contactkeys', // Android System Key Verifier
 ];
 
-// 如果某应用的规则中已有全局规则中的某一类的规则, 则在此应用禁用对应全局规则
-function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
-  return apps
-    .filter(
-      (a) =>
-        a.groups.filter((g: { name: string }) =>
-          g.name.startsWith(groupNamePrefix),
-        ).length > 0,
-    )
-    .map((a) => a.id);
-}
-
 // 在应用中单独禁用某个全局规则
 // 开屏广告黑名单
 export const openAdBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'com.taptap', // TapTap
   'com.sankuai.meituan', // 美团 误触 https://i.gkd.li/i/17827264
-  ...filterAppsByGroup(apps, '开屏广告'),
 ]);
 
 // 更新提示黑名单
@@ -284,7 +266,6 @@ export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'info.muge.appshare', // AppShare
   'com.jingdong.app.mall', // 京东
-  ...filterAppsByGroup(apps, '更新提示'),
 ]);
 
 // 青少年模式黑名单
@@ -315,7 +296,6 @@ export const yongBlackListAppIDs = new Set([
   'com.ct.client', // 中国电信
   'me.ele', // 饿了么
   'com.tencent.qqmusic', // QQ音乐
-  ...filterAppsByGroup(apps, '青少年模式'),
 ]);
 
 // 全局规则白名单（由于系统应用默认禁用全局规则，所以对系统应用启用白名单模式）

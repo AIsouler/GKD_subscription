@@ -18,6 +18,7 @@ export default defineGkdGlobalGroups([
     actionCdKey: 0,
     actionMaximumKey: 0,
     priorityTime: 10000,
+    disableIfAppGroupMatch: '开屏广告',
     rules: [
       {
         key: 0,
@@ -57,6 +58,7 @@ export default defineGkdGlobalGroups([
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
+    disableIfAppGroupMatch: '更新提示',
     rules: [
       {
         key: 0,
@@ -86,6 +88,7 @@ export default defineGkdGlobalGroups([
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
+    disableIfAppGroupMatch: '青少年模式',
     rules: [
       {
         key: 0,
