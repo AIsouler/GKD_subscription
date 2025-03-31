@@ -63,10 +63,16 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: [
+            'com.sina.weibo.feed.DetailWeiboActivity',
+            '.feed.detailrefactor.DetailPageActivity',
+          ],
           matches:
-            '[id="com.sina.weibo:id/left_video_container"] + LinearLayout >2 [id="com.sina.weibo:id/close"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13635551',
+            '[vid="left_video_container"] + LinearLayout >2 [vid="close"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13635551',
+            'https://i.gkd.li/i/19525985',
+          ],
         },
         {
           key: 3,
