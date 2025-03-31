@@ -12,13 +12,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: '.app.orderdetail.view.OrderDetailActivity',
+          activityIds: [
+            '.app.orderdetail.view.OrderDetailActivity',
+            '.app.p_address.city.view.SelectCityActivity',
+          ],
           matches: [
-            '[text^="开启消息通知"][visibleToUser=true]',
-            '[vid="tv_cancel"][visibleToUser=true]',
+            '[text*="开启消息通知"][visibleToUser=true]',
+            '[vid="tv_cancel" || vid="iv_close"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/8dd09677-8a02-4496-8611-c37b70e981d7',
-          snapshotUrls: 'https://i.gkd.li/i/19442163',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19442163',
+            'https://i.gkd.li/i/19460300',
+          ],
         },
         {
           key: 1,
