@@ -286,9 +286,15 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
+          activityIds: [
+            'com.sina.weibo.feed.DetailWeiboActivity',
+            '.feed.detailrefactor.DetailPageActivity',
+          ],
           matches: '[vid="ll_close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13852321',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13852321',
+            'https://i.gkd.li/i/19526000',
+          ],
         },
         {
           key: 1,
