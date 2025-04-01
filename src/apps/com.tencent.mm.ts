@@ -171,11 +171,15 @@ export default defineGkdApp({
             'com.tencent.mm.ui.LauncherUI',
             'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
           ],
-          matches: ['[text^="获取你的"]', '[text="允许"]'],
+          matches: [
+            '[text^="获取你的" || text^="取得你的" || text^="你的昵称"]',
+            '[text="允许" || text="允許"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12663602',
             'https://i.gkd.li/i/13065462',
             'https://i.gkd.li/i/15271716',
+            'https://i.gkd.li/i/19496823',
           ],
         },
       ],
