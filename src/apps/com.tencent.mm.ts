@@ -286,22 +286,15 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          excludeVersionNames: '8.0.15',
-          matches: 'Button[text^="查看原图"][clickable=true]',
+          matches:
+            'Button[text^="查看原图" || text^="查看原圖"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/6bb9e68a-43f5-4482-96b1-899cc86fef32',
           snapshotUrls: [
             'https://i.gkd.li/i/13523031',
             'https://i.gkd.li/i/17698956',
+            'https://i.gkd.li/i/19515095',
           ],
-        },
-        {
-          key: 1,
-          versionNames: '8.0.15',
-          matches: '[text^="查看原图"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/1a946d04-8a2d-4570-bd8c-38ab112f43a9',
-          snapshotUrls: 'https://i.gkd.li/i/14661736',
         },
       ],
     },
