@@ -81,6 +81,13 @@ export default defineGkdApp({
             '[id="com.sina.weibo:id/tvTrendsTitle"] + [id="com.sina.weibo:id/iv_ad_x"]',
           snapshotUrls: 'https://i.gkd.li/i/13787207',
         },
+        {
+          key: 4,
+          activityIds: '.feed.detailrefactor.DetailPageActivity',
+          matches: '@[vid="closeButton"] > [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6952c2d1-65b5-4419-adb6-ba0f6349801e',
+          snapshotUrls: 'https://i.gkd.li/i/19538265',
+        },
       ],
     },
     {
