@@ -450,7 +450,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.sina.weibo',
     name: '微博',
-    deprecatedKeys: [12, 15, 16, 21],
+    deprecatedKeys: [3, 4, 6, 7, 11, 13, 12, 15, 16, 21],
   },
   {
     id: 'com.snda.wifilocating',
