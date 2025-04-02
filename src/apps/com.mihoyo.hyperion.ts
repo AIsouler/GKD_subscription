@@ -71,8 +71,9 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击签到',
-          matches: [
-            'TextView[text^="签到"][text.length=4][visibleToUser=true] <<n View >n TextView[text$="第1天"][index=2 || text^="×"]'
+          anyMatches: [
+            'TextView[text^="签到"][visibleToUser=true] <<n WebView[text*="原神" || text*="崩坏3" || text*="绝区零"] >n @TextView[text^="第"][index=2]',
+            'TextView[text^="签到"][visibleToUser=true] <<n WebView[text*="崩坏：星穹铁道" || text*="崩坏学园2" || text*="未定事件薄"] >n @TextView[text^="×"][text$="天"]'
           ],
           exampleUrls: 'https://e.gkd.li/53d22dc7-b368-46c0-85d2-fe132b0832a9',
           snapshotUrls: [
@@ -86,7 +87,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17601295', // 崩坏3签到后
             'https://i.gkd.li/i/17601347', // 绝区零签到后
             'https://i.gkd.li/i/17611621', // 原神签到后
-            'https://i.gkd.li/i/17611617', // 星穹铁道签到后
+            'https://i.gkd.li/i/17611617', // 星穹铁道签到后 无法排除匹配
           ],
         },
         {
