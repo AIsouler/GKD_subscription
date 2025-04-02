@@ -40,5 +40,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          position: {
+            left: 'width * 0.3509',
+            top: 'width * 1.4046',
+          },
+          activityIds: '.lib.ForceUpdateActivity',
+          matches:
+            '@LinearLayout[childCount=0] < [id="android:id/content"][childCount=1] < [vid="action_bar_root"]',
+          snapshotUrls: 'https://i.gkd.li/i/19547338',
+        },
+      ],
+    },
   ],
 });
