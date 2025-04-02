@@ -104,16 +104,14 @@ export default defineGkdApp({
       activityIds: [
         '.feed.DetailWeiboActivity',
         '.feed.detailrefactor.DetailPageActivity',
-        '.story.gallery.feed.StoryFeedCommentsActivity2',
       ],
       rules: [
         {
           key: 0,
-          matches: '[vid="ll_close"][visibleToUser=true]',
+          matches: '@[vid="ll_close"] > [text="广告"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13852321',
             'https://i.gkd.li/i/19526000',
-            'https://i.gkd.li/i/19552278',
           ],
         },
         {
@@ -145,7 +143,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16785777',
             'https://i.gkd.li/i/14730274',
             'https://i.gkd.li/i/19551451',
-            'https://i.gkd.li/i/19552282',
           ],
         },
       ],
@@ -274,6 +271,35 @@ export default defineGkdApp({
           matches: '@[clickable=true] >2 [text="关注的人"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/6ef5bbf7-bb11-4cbb-b46b-bdc7c333a617',
           snapshotUrls: 'https://i.gkd.li/i/18423013',
+        },
+      ],
+    },
+    {
+      key: 26,
+      name: '分段广告-评论区博主内容推荐',
+      desc: '点击关闭-点击[不感兴趣]/[不想看到此类内容]',
+      fastQuery: true,
+      activityIds: [
+        '.feed.detailrefactor.DetailPageActivity',
+        '.story.gallery.feed.StoryFeedCommentsActivity2',
+      ],
+      rules: [
+        {
+          key: 0,
+          matches: '@[vid="ll_close"] > [text="推荐"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19551850',
+            'https://i.gkd.li/i/19552278',
+          ],
+        },
+        {
+          preKeys: [0],
+          matchRoot: true,
+          matches: '[text="不感兴趣"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19551857',
+            'https://i.gkd.li/i/19552282',
+          ],
         },
       ],
     },
