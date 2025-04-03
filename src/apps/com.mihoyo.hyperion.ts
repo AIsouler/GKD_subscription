@@ -64,23 +64,29 @@ export default defineGkdApp({
     {
       key: 8,
       name: '功能类-米游自动签到全家桶',
-      desc: '包含崩坏3、绝区零、原神、星穹铁道',
+      desc: '包含崩坏3、绝区零、原神、星穹铁道、崩坏学园、未定事件簿',
       forcedTime: 10000,
       activityIds: '.web2.MiHoYoWebActivity',
       rules: [
         {
           key: 0,
           name: '点击签到',
-          anyMatches: [
-            '[text$="每日签到"] >4 View[childCount=11] > @View[childCount=3][visibleToUser=true] > Image[index=0][text!=null]',
-            '[text="《崩坏：星穹铁道》签到福利"] >4 View > View + TextView[visibleToUser=true]', // 星穹铁道
+          excludeMatches: [
+            'TextView[text^="请在此绑定"][visibleToUser=true]' // 防止提前匹配造成无效点击
           ],
+          anyMatches: [
+            'WebView[text*="签到"] >4 View[childCount=10] > View[childCount>=3] + TextView[index>0]', // 适用星穹铁道、崩坏学园、未定事件簿
+            'WebView[text*="签到"] >4 View[childCount=11] > @View[childCount=3] > TextView[index=2]'  // 适用原神、绝区零、崩坏3
+          ],
+          actionMaximum: 2, // 限制点击次数，以防星穹铁道、崩坏学园、未定事件簿签到成功后无限匹配（若有多个帐号切换签到需求，删掉即可）
           exampleUrls: 'https://e.gkd.li/53d22dc7-b368-46c0-85d2-fe132b0832a9',
           snapshotUrls: [
             'https://i.gkd.li/i/17601269', // 崩坏3签到前
             'https://i.gkd.li/i/17601338', // 绝区零签到前
             'https://i.gkd.li/i/17611619', // 原神签到前
             'https://i.gkd.li/i/17611613', // 星穹铁道签到前
+            'https://i.gkd.li/i/19581365', // 崩坏学园签到前
+            'https://i.gkd.li/i/19581444', // 未获取帐号信息前禁止匹配
             'https://i.gkd.li/i/14967627', // 签到节点 clickable=false
           ],
           excludeSnapshotUrls: [
@@ -88,6 +94,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17601347', // 绝区零签到后
             'https://i.gkd.li/i/17611621', // 原神签到后
             'https://i.gkd.li/i/17611617', // 星穹铁道签到后 无法排除匹配
+            'https://i.gkd.li/i/19581359', // 崩坏学园签到后
           ],
         },
         {
