@@ -22,9 +22,9 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
-        // 防止在应用的搜索页面误触
+        // 防止误触
         excludeMatches:
-          '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜"][text.length>3 && text.length<6][visibleToUser=true]',
+          '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜" || text*="退款详情"][text.length>3 && text.length<6][visibleToUser=true]',
         anyMatches: [
           '[text*="跳过" || text*="跳過" || text*="skip" || text*="Skip" || text*="SKIP"][text.length<10][visibleToUser=true]',
           '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
@@ -33,6 +33,8 @@ export default defineGkdGlobalGroups([
           // 避免误触
           'https://i.gkd.li/i/17108010', // text!="帮助"
           'https://i.gkd.li/i/18265000', // text!="取消"
+          'https://i.gkd.li/i/19580463', // text*="退款详情"
+          'https://i.gkd.li/i/19580951', // text*="退款详情"
         ],
       },
       {
