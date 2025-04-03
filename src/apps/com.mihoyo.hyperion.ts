@@ -71,7 +71,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击签到',
-          excludeMatches: '[text="请在此绑定你的角色"][visibleToUser=true]', // 未绑定角色前排除匹配
+          excludeMatches: '[text^="请在此绑定你的"][visibleToUser=true]', // 未绑定角色前排除匹配
           anyMatches: [
             'WebView[text*="签到"] >4 View[childCount=11] > @View[childCount=3][visibleToUser=true] > Image[index=0][text!=null]', // 崩坏3、绝区零、原神
             'WebView[text*="签到"] >4 View[childCount=10] > View + TextView[childCount=0][visibleToUser=true]', // 星穹铁道、崩坏学园2、未定事件簿
@@ -92,6 +92,9 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17611621', // 原神签到后
             'https://i.gkd.li/i/19581359', // 崩坏学园2签到后
             'https://i.gkd.li/i/17611617', // 星穹铁道签到后 无法排除匹配
+            'https://i.gkd.li/i/19586048', // 未绑定角色前排除匹配
+            'https://i.gkd.li/i/19586142', // 未绑定角色前排除匹配
+            'https://i.gkd.li/i/19587714', // 未绑定角色前排除匹配
           ],
         },
         {
