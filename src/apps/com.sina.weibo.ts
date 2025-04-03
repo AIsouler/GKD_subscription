@@ -9,28 +9,7 @@ export default defineGkdApp({
       name: '局部广告-卡片广告',
       desc: '点击右上角关闭',
       fastQuery: true,
-      rules: [
-        {
-          key: 1,
-          activityIds: [
-            'com.sina.weibo.feed.DetailWeiboActivity',
-            '.feed.detailrefactor.DetailPageActivity',
-          ],
-          matches:
-            '[vid="left_video_container"] + LinearLayout >2 [vid="close"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13635551',
-            'https://i.gkd.li/i/19525985',
-          ],
-        },
-        {
-          key: 4,
-          activityIds: '.feed.detailrefactor.DetailPageActivity',
-          matches: '@[vid="closeButton"] > [text="广告"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/6952c2d1-65b5-4419-adb6-ba0f6349801e',
-          snapshotUrls: 'https://i.gkd.li/i/19538265',
-        },
-      ],
+      rules: [],
     },
     {
       key: 8,
@@ -122,15 +101,24 @@ export default defineGkdApp({
         {
           key: 3,
           matches: [
-            '[vid="left_img_ad_tag"][visibleToUser=true]',
+            '[vid="left_img_ad_container"][visibleToUser=true]',
             '[vid="close"][visibleToUser=true]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/16828094',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13635551',
+            'https://i.gkd.li/i/19525985',
+          ],
+        },
+        {
+          key: 4,
+          matches: '@[vid="closeButton"] > [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6952c2d1-65b5-4419-adb6-ba0f6349801e',
+          snapshotUrls: 'https://i.gkd.li/i/19538265',
         },
 
         // 预留key
         {
-          preKeys: [0, 1, 3],
+          preKeys: [0, 1, 3, 4],
           key: 90,
           matchRoot: true,
           anyMatches: [
