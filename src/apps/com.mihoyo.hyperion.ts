@@ -71,9 +71,10 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击签到',
+          excludeMatches: '[text="请在此绑定你的角色"][visibleToUser=true]', // 未绑定角色前排除匹配
           anyMatches: [
-            '[text$="每日签到"] >4 View[childCount=11] > @View[childCount=3][visibleToUser=true] > Image[index=0][text!=null]',
-            '[text="《崩坏：星穹铁道》签到福利"] >4 View > View + TextView[visibleToUser=true]', // 星穹铁道
+            'WebView[text*="签到"] >4 View[childCount=11] > @View[childCount=3][visibleToUser=true] > Image[index=0][text!=null]', // 崩坏3、绝区零、原神
+            'WebView[text*="签到"] >4 View[childCount=10] > View + TextView[childCount=0][visibleToUser=true]', // 星穹铁道、崩坏学园2、未定事件簿
           ],
           exampleUrls: 'https://e.gkd.li/53d22dc7-b368-46c0-85d2-fe132b0832a9',
           snapshotUrls: [
@@ -82,11 +83,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17611619', // 原神签到前
             'https://i.gkd.li/i/17611613', // 星穹铁道签到前
             'https://i.gkd.li/i/14967627', // 签到节点 clickable=false
+            'https://i.gkd.li/i/19586048', // 崩坏学园2签到前
+            'https://i.gkd.li/i/19586142', // 未定事件簿签到前
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/17601295', // 崩坏3签到后
             'https://i.gkd.li/i/17601347', // 绝区零签到后
             'https://i.gkd.li/i/17611621', // 原神签到后
+            'https://i.gkd.li/i/19581359', // 崩坏学园2签到后
             'https://i.gkd.li/i/17611617', // 星穹铁道签到后 无法排除匹配
           ],
         },
@@ -122,7 +126,7 @@ export default defineGkdApp({
           name: '从签到页返回',
           excludeMatches: '[text="不用了"][visibleToUser=true]',
           matches:
-            '[text$="每日签到" || text$="签到福利"] > View >3 View[index=0][childCount=1] > TextView[childCount=0][text=""][visibleToUser=true]',
+            'WebView[text*="签到"] > View >3 View[index=0][childCount=1] > TextView[childCount=0][text=""][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/cc68f623-5dc7-4703-9768-28826c4f16f6',
           snapshotUrls: [
             'https://i.gkd.li/i/17601295', // 崩坏3
