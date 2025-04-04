@@ -68,10 +68,11 @@ export default defineGkdApp({
           key: 3,
           activityIds: ['.app.ui.activity.MainActivity', '.ContentActivity'],
           matches:
-            '@ViewGroup[clickable=true][childCount=1] <4 ViewGroup -(2,3) ViewGroup[childCount>1] >(1,2) [text*="广告"]',
+            '@ViewGroup[clickable=true][childCount=1] <(2,4) ViewGroup -(2,3) ViewGroup[childCount>1] >(1,2) [text*="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14192451',
             'https://i.gkd.li/i/18217217',
+            'https://i.gkd.li/i/19591989',
           ],
         },
         {
