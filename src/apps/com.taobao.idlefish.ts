@@ -69,31 +69,55 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 5,
-      name: '分段广告-搜索结果页广告',
-      rules: [
-        {
-          key: 0,
-          action: 'longClick',
-          activityIds:
-            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
-          excludeMatches: '@[clickable=true] > [desc^="反馈成功"]',
-          matches: '@[clickable=true] > [desc$="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14723597',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/14723718',
-        },
-        {
-          preKeys: [0],
-          key: 1,
-          activityIds:
-            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
-          matches:
-            '[desc^="不喜欢该商品"] > ImageView[index=1][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14723632',
-        },
-      ],
-    },
+    // 该规则可能会出现多次触发一段后才能触发二段的情况，影响正常使用
+    // {
+    //   key: 5,
+    //   name: '分段广告-信息流广告',
+    //   forcedTime: 100000,
+    //   activityIds: [
+    //     'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
+    //     'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
+    //     '.search_implement.SearchResultActivity',
+    //     '.maincontainer.activity.MainActivity',
+    //   ],
+    //   rules: [
+    //     {
+    //       key: 0,
+    //       action: 'longClick',
+    //       matches:
+    //         '@View[longClickable=true][desc$="广告"][visibleToUser=true] > [desc!=null][visibleToUser=true]',
+    //       snapshotUrls: 'https://i.gkd.li/i/19593497',
+    //       excludeSnapshotUrls: 'https://i.gkd.li/i/19604467',
+    //     },
+    //     {
+    //       key: 1,
+    //       fastQuery: true,
+    //       action: 'longClick',
+    //       matches: '@[longClickable=true] >3 [text="广告"][visibleToUser=true]',
+    //       exampleUrls: 'https://e.gkd.li/ca42e088-6fae-4402-a000-06418bf054cf',
+    //       snapshotUrls: 'https://i.gkd.li/i/19603954',
+    //     },
+    //     {
+    //       key: 2,
+    //       fastQuery: true,
+    //       action: 'longClick',
+    //       activityIds: '.maincontainer.activity.MainActivity',
+    //       matches:
+    //         '@[longClickable=true][childCount=0][visibleToUser=true] < FrameLayout > [text="广告"][visibleToUser=true]',
+    //       exampleUrls: 'https://e.gkd.li/738c623e-58fe-45a1-9a28-957f0f812c72',
+    //       snapshotUrls: 'https://i.gkd.li/i/19604324',
+    //     },
+    //     {
+    //       preKeys: [0, 1, 2],
+    //       matches: '[desc="引起不适"][visibleToUser=true]',
+    //       snapshotUrls: [
+    //         'https://i.gkd.li/i/19593500',
+    //         'https://i.gkd.li/i/19603913',
+    //         'https://i.gkd.li/i/19604317',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       key: 6,
       name: '功能类-自动点击[查看原图]',
