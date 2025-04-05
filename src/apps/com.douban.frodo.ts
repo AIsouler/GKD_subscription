@@ -68,6 +68,7 @@ export default defineGkdApp({
             '.activity.SplashActivity',
             '.subject.structure.activity.MovieActivity',
             '.group.activity.GroupTopicActivity',
+            '.fangorns.topic.TopicsActivity',
           ],
           matches:
             '[vid="ad_header_new"] > [vid="menu_item"][visibleToUser=true]',
@@ -75,6 +76,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18424402',
             'https://i.gkd.li/i/18424418',
             'https://i.gkd.li/i/18424924',
+            'https://i.gkd.li/i/19615325',
           ],
         },
         {
@@ -108,6 +110,7 @@ export default defineGkdApp({
             '.subject.structure.activity.MovieActivity',
             '.group.activity.GroupDetailActivity',
             '.group.activity.GroupTopicActivity',
+            '.fangorns.topic.TopicsActivity',
           ],
           matches: '@[clickable=true] > [text="不感兴趣"]',
           snapshotUrls: [
@@ -116,6 +119,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18424568',
             'https://i.gkd.li/i/18424674',
             'https://i.gkd.li/i/18424711',
+            'https://i.gkd.li/i/19615333',
           ],
         },
       ],
