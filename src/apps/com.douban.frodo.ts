@@ -104,7 +104,15 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/18424747',
         },
         {
-          preKeys: [1, 2, 3],
+          key: 4,
+          activityIds: '.group.activity.GroupTopicActivity',
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] -2 FrameLayout >2 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/11d3ea75-c640-4b91-942e-3bf83b2e5f5e',
+          snapshotUrls: 'https://i.gkd.li/i/19621152',
+        },
+        {
+          preKeys: [1, 2, 3, 4],
           activityIds: [
             '.activity.SplashActivity',
             '.subject.structure.activity.MovieActivity',
@@ -120,6 +128,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18424674',
             'https://i.gkd.li/i/18424711',
             'https://i.gkd.li/i/19615333',
+            'https://i.gkd.li/i/19621163',
           ],
         },
       ],
