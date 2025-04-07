@@ -33,12 +33,22 @@ export default defineGkdApp({
       ],
       rules: [
         {
+          key: 0,
           fastQuery: true,
           matches: '[text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13227328',
             'https://i.gkd.li/i/13255751',
             'https://i.gkd.li/i/14946925',
+          ],
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          fastQuery: true,
+          matches: '[text="广告密集"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19636920',
           ],
         },
       ],
