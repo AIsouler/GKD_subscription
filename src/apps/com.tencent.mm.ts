@@ -16,19 +16,15 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          anyMatches: [
-            '@LinearLayout[clickable=true] > [text="广告" || text="廣告" || text="Sponsored"][visibleToUser=true]', //1
-            '[name$="RecyclerView"||name$="ListView"] >(1,2) RelativeLayout >(3,4) LinearLayout > LinearLayout > LinearLayout[childCount=2] > LinearLayout[index=1][clickable=true][visibleToUser=true][childCount=0]', //2
+          fastQuery: true,
+          matches: [
+            '@LinearLayout[clickable=true] > [text="广告" || text="廣告" || text="Sponsored"][visibleToUser=true]',
           ],
           snapshotUrls: [
-            //1
             'https://i.gkd.li/i/13000395',
             'https://i.gkd.li/i/12905837',
             'https://i.gkd.li/i/13791200',
             'https://i.gkd.li/i/16568338',
-            //2
-            'https://i.gkd.li/i/14647413',
-            'https://i.gkd.li/i/19633571',
           ],
         },
         {
@@ -42,6 +38,15 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/14783802',
             'https://i.gkd.li/i/15531539',
+          ],
+        },
+        {
+          key: 2,
+          matches:
+            '[name$="RecyclerView"||name$="ListView"] >(1,2) RelativeLayout >(3,4) LinearLayout > LinearLayout > LinearLayout[childCount=2] > LinearLayout[index=1][clickable=true][visibleToUser=true][childCount=0]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14647413',
+            'https://i.gkd.li/i/19633571',
           ],
         },
 
