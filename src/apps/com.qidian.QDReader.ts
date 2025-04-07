@@ -15,9 +15,13 @@ export default defineGkdApp({
         {
           fastQuery: true,
           action: 'clickCenter',
-          matches: '[vid="splash_skip_button"][visibleToUser=true]',
+          matches:
+            '([text*="跳过"][text.length<10][visibleToUser=true]) || ([vid="splash_skip_button"][visibleToUser=true])',
           exampleUrls: 'https://e.gkd.li/3e2357fd-dced-4929-85e0-a9a06ce5fea0',
-          snapshotUrls: 'https://i.gkd.li/i/19580847',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19580847',
+            'https://i.gkd.li/i/19633020',
+          ],
         },
       ],
     },
