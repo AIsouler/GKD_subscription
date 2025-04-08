@@ -22,6 +22,7 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
+        action: 'clickCenter',
         // 防止误触
         excludeMatches:
           '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜" || text*="退款详情"][text.length>3 && text.length<6][visibleToUser=true]',
@@ -39,6 +40,7 @@ export default defineGkdGlobalGroups([
       },
       {
         key: 1, // 字节SDK
+        action: 'clickCenter',
         anyMatches: [
           '@View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
           'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][text=null][visibleToUser=true] + TextView[index=parent.childCount.minus(1)][text=null][visibleToUser=true]',
