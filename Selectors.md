@@ -10,7 +10,7 @@
 
 ```txt
 anyMatches: [
-  '[text*="跳过" || text*="跳過" || text*="skip" || text*="Skip" || text*="SKIP"][text.length<10][visibleToUser=true]', // 可快速查询
+  '[text*="跳过"][text.length<10][visibleToUser=true]', // 可快速查询
   '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]', // 不可快速查询
 ],
 ```
