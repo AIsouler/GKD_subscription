@@ -43,7 +43,7 @@ export default defineGkdApp({
         {
           key: 2,
           matches:
-            '[name$="RecyclerView"||name$="ListView"] >(1,2) RelativeLayout >(3,4) LinearLayout > LinearLayout > LinearLayout[childCount=2] > LinearLayout[index=1][clickable=true][visibleToUser=true][childCount=0]',
+            '[name$="RecyclerView"||name$="ListView"] >(1,2) RelativeLayout >3 LinearLayout > LinearLayout > LinearLayout[childCount=2] > LinearLayout[index=1][clickable=true][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14647413',
             'https://i.gkd.li/i/19633571',
@@ -53,7 +53,7 @@ export default defineGkdApp({
         // 预留key
         // 第二段
         {
-          preKeys: [0, 1],
+          preKeys: [0, 1, 2],
           key: 25,
           name: '点击[关闭]',
           fastQuery: true,
