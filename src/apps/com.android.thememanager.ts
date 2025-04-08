@@ -14,6 +14,7 @@ export default defineGkdApp({
           activityIds: [
             '.ThemeResourceProxyTabActivity',
             '.module.detail.view.ThemeDetailActivity',
+            '.module.detail.view.WidgetDetailActivity',
             '.v9.WallpaperSubjectActivity',
           ],
           matches: '[vid="ad_close_btn"][visibleToUser=true]',
@@ -21,6 +22,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17143445',
             'https://i.gkd.li/i/17143447',
             'https://i.gkd.li/i/17675601',
+            'https://i.gkd.li/i/19637669',
           ],
         },
       ],
