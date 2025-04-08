@@ -83,7 +83,8 @@ export default defineGkdApp({
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/19004649',
-            'https://i.gkd.li/i/19004661',
+            'https://i.gkd.li/i/19643258',
+            'https://i.gkd.li/i/19643262',
             'https://i.gkd.li/i/19534649',
           ],
         },
@@ -136,6 +137,21 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16448265',
             'https://i.gkd.li/i/16448385',
           ],
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.view.search.SuperSearchResultActivity',
+          matches:
+            '@[desc="关闭"] <<n [vid="item_view"] <<n [vid="to_native_ad_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/efd366d9-1c66-4c35-b164-6f91a623e2f2',
+          snapshotUrls: 'https://i.gkd.li/i/19643150',
         },
       ],
     },
