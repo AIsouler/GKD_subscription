@@ -47,9 +47,7 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches: '[text="广告密集"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/19636920',
-          ],
+          snapshotUrls: ['https://i.gkd.li/i/19636920'],
         },
       ],
     },
