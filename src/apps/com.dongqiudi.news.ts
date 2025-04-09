@@ -139,5 +139,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 9,
+      name: '权限提示-通知权限',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches: '[vid="notification_button_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/81cea4de-9288-4ec8-97ea-7c4a9b19fd08',
+          snapshotUrls: 'https://i.gkd.li/i/19666282',
+        },
+      ],
+    },
   ],
 });
