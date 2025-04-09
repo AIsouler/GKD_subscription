@@ -34,10 +34,14 @@ export default defineGkdApp({
             left: 'width * 0.9223',
             top: 'height * 0.5',
           },
-          matches: '@LinearLayout >2 [text="广告"][visibleToUser=false]',
+          anyMatches: [
+            '@LinearLayout >2 [text="广告"][visibleToUser=false]',
+            'RecyclerView >2 RelativeLayout >3 LinearLayout > LinearLayout > @LinearLayout[childCount=2] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14783802',
             'https://i.gkd.li/i/15531539',
+            'https://i.gkd.li/i/19665911',
           ],
         },
         {
