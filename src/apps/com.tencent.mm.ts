@@ -261,14 +261,17 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches:
-            'Button[text^="查看原图" || text^="查看原圖"][clickable=true]',
+          anyMatches: [
+            'Button[text^="查看"][clickable=true][visibleToUser=true]',
+            'Button[clickable=true][text^="查看"][visibleToUser=true]',
+          ],
           exampleUrls:
             'https://m.gkd.li/57941037/6bb9e68a-43f5-4482-96b1-899cc86fef32',
           snapshotUrls: [
             'https://i.gkd.li/i/13523031',
             'https://i.gkd.li/i/17698956',
             'https://i.gkd.li/i/19515095',
+            'https://i.gkd.li/i/19645122', // 无法快速查询
           ],
         },
       ],
