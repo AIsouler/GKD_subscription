@@ -24,5 +24,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '通知提示-网络代理提示弹窗',
+      desc: '点击[继续使用]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches: '[text="继续使用"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/22674cc8-5a46-49a0-9654-e77c0f13823e',
+          snapshotUrls: 'https://i.gkd.li/i/19652606',
+        },
+      ],
+    },
   ],
 });
