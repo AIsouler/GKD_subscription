@@ -323,18 +323,20 @@ export default defineGkdApp({
       key: 17,
       name: '青少年模式',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           activityIds: ['.plugin.finder.', '.ui.LauncherUI'],
-          matches: ['[text*="青少年模式"]', '[text="我知道了"]'],
+          matches:
+            '@[text="我知道了"][index=parent.childCount.minus(1)] <n LinearLayout > [text^="为呵护未成年人健康成长"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13538145',
             'https://i.gkd.li/i/13575195',
             'https://i.gkd.li/i/14735456',
             'https://i.gkd.li/i/14896723',
             'https://i.gkd.li/i/18135103',
+            'https://i.gkd.li/i/19683937',
           ],
         },
       ],
