@@ -31,6 +31,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14661622',
           ],
         },
+        {
+          key: 2,
+          matches: ['@[clickable=true] + * > [text="跳过"][visibleToUser=false]'],
+          order: -1,
+          snapshotUrls: [
+            'https://i.gkd.li/i/18792649',
+          ],
+        },
       ],
     },
     {
