@@ -31,12 +31,14 @@ export default defineGkdApp({
           activityIds: [
             '.app.mainv2.view.MainActivity',
             '.app.orderdetail.view.OrderDetailActivity',
+            '.app.payresult_v2.view.OrderPaySuccessActivity',
           ],
           matches: '[vid="iv_notification_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/8b4acc85-dacd-4ffc-a866-71e5b78c82b2',
           snapshotUrls: [
             'https://i.gkd.li/i/19442191',
             'https://i.gkd.li/i/19624918',
+            'https://i.gkd.li/i/19676244',
           ],
         },
       ],
