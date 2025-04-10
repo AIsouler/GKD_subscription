@@ -17,10 +17,11 @@ export default defineGkdApp({
         {
           key: 0,
           order: -1,
-          matches: '@[clickable=true] + * > [text="跳过"][visibleToUser=true]',
+          matches: '@[clickable=true][visibleToUser=true] + * > [text="跳过"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14549281',
             'https://i.gkd.li/i/14549328', // 小窗模式下全局规则触发无效
+            'https://i.gkd.li/i/18792649', // visibleToUser=false
           ],
         },
         {
