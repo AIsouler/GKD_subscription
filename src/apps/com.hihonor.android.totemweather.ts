@@ -10,12 +10,16 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds: 'com.hihonor.android.totemweather.WeatherHome',
-          matches: '[vid="ad_cancel"][visibleToUser=true]',
+          activityIds: '.WeatherHome',
+          matches: '[vid="ad_cancel" || vid="btn_close"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/764769ff-b571-498a-ac57-f4b1ae331056',
-          snapshotUrls: 'https://i.gkd.li/i/14193808',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14193808',
+            'https://i.gkd.li/i/19659583',
+          ],
         },
       ],
     },
