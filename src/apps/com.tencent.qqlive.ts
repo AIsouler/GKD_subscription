@@ -72,10 +72,12 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          activityIds: '.ona.activity.SplashHomeActivity',
           matches:
-            '@ImageView[text=null][desc=null][clickable=true][visibleToUser=true][width<250 && height<150] - RelativeLayout >2 [text="了解详情"]',
-          snapshotUrls: 'https://i.gkd.li/i/19666328',
+            '@ImageView[text=null][desc=null][childCount=0][clickable=true][visibleToUser=true][width<250 && height<150] - * >(1,2) [text*="应用" || text*="立即" || text*="下载" || text*="了解" || text*="查看" || text*="详情" || text="去微信看看"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19666328',
+            'https://i.gkd.li/i/19693394',
+          ],
         },
         {
           preKeys: [0, 1, 2],
