@@ -135,6 +135,18 @@ export const blackListAppIDs: string[] = [
   'top.trangle.mbga', // MBGA
   'cc.microblock.TGStickerProvider', // TGStickerProvider
   'xyz.xfqlittlefan.notdeveloper', // 我不是开发者
+  'com.zhenxi.hunter', // Hunter
+  'com.reveny.nativecheck', // Native Detector
+  'cn.lyric.getter', // 酒域-歌词获取
+  'io.github.vvb2060.keyattestation', // 密钥认证
+  'com.google.android.hmal', // 隐藏应用列表（@pumPCin fork）
+  'com.adguard.android', // AdGuard
+  'com.spotify.music', // Spotify
+  'jp.pxv.android', // pixiv
+  'com.fankes.apperrorstracking', // 异常跟踪
+  'com.fankes.epperrorsdemo', // 异常示例
+  'com.fankes.miui.notify', // MIUI 原生通知图标
+  'com.simo.ssl.killer', // SSL Killer
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -199,6 +211,16 @@ export const blackListAppIDs: string[] = [
   'com.rong862.bear',
   'be.mygod.vpnhotspot',
   'com.samsung.android.bixby.agent',
+  'com.reveny.vbmetafix.service',
+  'com.google.android.gms',
+  'com.android.vending',
+  'com.android.camera',
+  'com.android.traceur',
+  'com.android.mms',
+  'com.google.android.accessibility.switchaccess',
+  'com.miui.voiceassist',
+  'com.android.fileexplorer',
+  'com.miui.miservice',
 
   // 系统自带非系统应用
   // 小米
