@@ -36,13 +36,14 @@ export default defineGkdApp({
           },
           anyMatches: [
             '@LinearLayout >2 [text="广告"][visibleToUser=false]',
-            'RecyclerView >2 RelativeLayout >3 LinearLayout > LinearLayout > @LinearLayout[childCount=2] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
+            'RecyclerView > FrameLayout[childCount=1] > RelativeLayout > FrameLayout > LinearLayout > LinearLayout > LinearLayout > @LinearLayout[childCount=2][getChild(0).getChild(0).text!=null] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/14783802',
             'https://i.gkd.li/i/15531539',
             'https://i.gkd.li/i/19665911',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/19717709',
         },
         {
           key: 2,
