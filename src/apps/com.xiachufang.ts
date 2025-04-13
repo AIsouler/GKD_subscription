@@ -13,10 +13,22 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          key: 0,
           fastQuery: true,
           matches: '[vid="skip_container"][visibleToUser=true]', // https://github.com/AIsouler/GKD_subscription/issues/749
           exampleUrls: 'https://e.gkd.li/5f3509d5-0b0b-4d79-b0e6-275a591ef2f5',
           snapshotUrls: 'https://i.gkd.li/i/18587428',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '([text*="跳过"][text.length<10][visibleToUser=true]) || ([visibleToUser=true][text*="跳过"][text.length<10])',
+          exampleUrls: 'https://e.gkd.li/5c6579f4-77bb-4970-851f-087c2f86d6ad',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19724959', // 无法快速查询
+            'https://i.gkd.li/i/19724417',
+          ],
         },
       ],
     },
