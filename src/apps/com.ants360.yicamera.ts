@@ -8,30 +8,22 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
       rules: [
         {
           key: 0,
-          fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/13463241',
         },
         {
           key: 1,
-          fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           matches:
             'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +3 ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13543175',
         },
         {
           key: 2,
-          fastQuery: true,
           activityIds: '.activity.MainActivity',
           matches: '@[vid="ivClose"] - [text="专属福利"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/a7ba5126-27dd-450d-abf9-c3a8b6938727',
@@ -39,21 +31,16 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches: '[vid="iv_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/1af231f8-bb98-450e-83d1-5bd067802de3',
-          snapshotUrls: 'https://i.gkd.li/i/19514818',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19514818',
+            'https://i.gkd.li/i/19722625',
+          ],
         },
         {
           key: 4,
-          fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[clickable=true][childCount=0][visibleToUser=true] + RelativeLayout >2 [text="反馈"]',
@@ -65,14 +52,13 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知权限',
-      matchTime: 10000,
-      actionMaximum: 1,
       rules: [
         {
           fastQuery: true,
           activityIds: [
             'com.xiaoyi.yiplayer.ui.PlayerActivity',
             '.activity.MainActivity',
+            '.activity.camera.LandscapePlayerActivity',
           ],
           matches: [
             '[text="开启通知"][visibleToUser=true]',
@@ -82,6 +68,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/18395740',
             'https://i.gkd.li/i/19503517',
+            'https://i.gkd.li/i/19722627',
           ],
         },
       ],
