@@ -5,45 +5,6 @@ export default defineGkdApp({
   name: '懂球帝',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          anyMatches: [
-            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][text=null] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
-            'FrameLayout > FrameLayout[childCount>2] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][text=null][visibleToUser=true]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/12620568',
-            'https://i.gkd.li/i/12621997',
-          ],
-        },
-        {
-          key: 1,
-          name: '另一种倒计时广告', // 此广告要点击文字相邻的图片,如果直接点击文字会无反应或者触发广告跳转
-          matches:
-            '[id="com.dongqiudi.news:id/ad_skip_time"] + [id="com.dongqiudi.news:id/scale_iv"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12620583',
-            'https://i.gkd.li/i/12621953',
-          ],
-        },
-        {
-          key: 2,
-          matches: '[text^="跳过"][childCount=0][text.length<10]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/de316c34-dac0-4ee6-91e7-164432e49a1f',
-          snapshotUrls: 'https://i.gkd.li/i/12620577',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '更新提示',
       fastQuery: true,

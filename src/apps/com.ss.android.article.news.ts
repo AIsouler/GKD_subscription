@@ -5,22 +5,6 @@ export default defineGkdApp({
   name: '今日头条',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/cf8b05a1-6406-4453-b498-f305b387f5c6',
-          snapshotUrls: 'https://i.gkd.li/i/17610127',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新提示',
       fastQuery: true,

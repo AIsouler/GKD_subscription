@@ -333,6 +333,7 @@ export const openAdWhiteListAppIDs = new Set([
   'com.tencent.southpole.appstore', // 黑鲨应用市场
   'com.heytap.browser', // 一加浏览器
   'com.heytap.themestore', // oppo主题商店
+  'com.bbk.theme', // vivo主题商店
 ]);
 
 // 更新提示白名单
