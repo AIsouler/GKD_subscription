@@ -36,14 +36,16 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-风险应用提示',
+      name: '其他-风险应用提示',
       desc: '点击忽略',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.oplus.phonemanager.virusdetect.VirusDialogActivity',
-          matches:
-            '@Button[text = "忽略"] < * +2 * > Button[text = "立即处理"]',
+          matches: [
+            '[text$="风险应用"][visibleToUser=true]',
+            '[text="忽略"][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/19749344',
         },
       ],
