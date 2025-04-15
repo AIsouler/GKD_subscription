@@ -5,22 +5,6 @@ export default defineGkdApp({
   name: '悠洗',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 20000,
-      actionMaximum: 2, // 该广告可能会出现两次
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/47344324-7c76-47d3-82de-30c8f905ad8f',
-          snapshotUrls: 'https://i.gkd.li/i/17002073',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',

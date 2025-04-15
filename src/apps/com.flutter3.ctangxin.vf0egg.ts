@@ -5,22 +5,6 @@ export default defineGkdApp({
   name: '糖心Vlog',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      desc: '虚假按钮，实际点击无法跳过，规则暂时保留',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          matches:
-            'FrameLayout > View > View > View > View > @View[clickable=true && desc.length=2] + ImageView[childCount=1]',
-          snapshotUrls: 'https://i.gkd.li/i/12836857',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告', // 目前已叠加了三层广告
       //matchDelay: 6500, // 待无法跳过的5s开屏广告过后，能够主动执行匹配
