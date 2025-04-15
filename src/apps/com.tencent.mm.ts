@@ -707,5 +707,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 40,
+      name: '功能类-长按语音转文字',
+      desc: '长按语音-弹出菜单-点击转文字',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.LauncherUI',
+          matches: '@[clickable=true] >2 [text="转文字"]',
+          snapshotUrls: 'https://i.gkd.li/i/14538322',
+        },
+      ],
+    },
   ],
 });
