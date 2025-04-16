@@ -686,7 +686,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: '.ui.LauncherUI',
+          activityIds: ['.ui.LauncherUI','.ui.chatting.ChattingUI'],
           matches: '@[clickable=true] > [text="转文字"]',
           snapshotUrls: 'https://i.gkd.li/i/18135057',
           excludeSnapshotUrls: 'https://i.gkd.li/i/18135054',
@@ -709,14 +709,15 @@ export default defineGkdApp({
     },
     {
       key: 40,
-      name: '功能类-长按语音转文字',
-      desc: '长按语音-弹出菜单-点击转文字',
+      name: '功能类-点击语音条菜单里的转文字',
+      desc: '点击 长按语音条后弹出的菜单 中的转文字',
       rules: [
         {
           fastQuery: true,
-          activityIds: '.ui.LauncherUI',
+          activityIds: ['.ui.LauncherUI','.ui.chatting.ChattingUI'],
           matches: '@[clickable=true] >2 [text="转文字"]',
-          snapshotUrls: 'https://i.gkd.li/i/14538322',
+          exampleUrls: 'https://e.gkd.li/c35fafc8-9d96-4178-9aac-f16394d2c666',
+          snapshotUrls: 'https://i.gkd.li/i/19774491',
         },
       ],
     },
