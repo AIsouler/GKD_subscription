@@ -38,5 +38,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '评价提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
+          matches: [
+            '[text="给个好评"][visibleToUser=true]',
+            '[vid="close_btn"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/7d8f15f0-1f71-4538-8fde-144ebd81dead',
+          snapshotUrls: 'https://i.gkd.li/i/19788008',
+        },
+      ],
+    },
   ],
 });
