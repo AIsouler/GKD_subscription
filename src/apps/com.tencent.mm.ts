@@ -717,7 +717,10 @@ export default defineGkdApp({
           activityIds: ['.ui.LauncherUI', '.ui.chatting.ChattingUI'],
           matches: '@[clickable=true] >2 [text="转文字"]',
           exampleUrls: 'https://e.gkd.li/c35fafc8-9d96-4178-9aac-f16394d2c666',
-          snapshotUrls: 'https://i.gkd.li/i/19774491',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19774491',
+            'https://i.gkd.li/i/19792042',
+          ],
         },
       ],
     },
