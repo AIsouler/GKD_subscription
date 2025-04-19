@@ -6,7 +6,31 @@ on:
   workflow_dispatch:
 
 jobs:
+  check_changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.changes.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: changes
+        run: |
+          prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
+          if [ "$prev_tag" == "none" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            if git diff --exit-code $prev_tag HEAD -- src; then
+              echo "No changes detected in 'src' directory between $prev_tag and the latest commit."
+              echo "changed=false" >> $GITHUB_OUTPUT
+            else
+              echo "changed=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+
   build_release:
+    needs: check_changes
+    if: ${{ needs.check_changes.outputs.changed == 'true' }}
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.version.outputs.version }}
@@ -15,38 +39,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Get previous tag or default to changed=true
-        id: previous_tag
-        run: |
-          prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
-
-          echo "Previous tag: $prev_tag"
-          echo "previous_tag=$prev_tag" >> $GITHUB_ENV
-          
-          if [ "$prev_tag" == "none" ]; then
-            echo "No tags found. Setting changed=true by default."
-            echo "changed=true" >> $GITHUB_ENV
-          fi
-
-      - name: Check for changes between previous tag and latest commit in src directory
-        id: changes
-        run: |
-          if [ "${{ env.previous_tag }}" != "none" ]; then
-            if git diff --exit-code ${{ env.previous_tag }} HEAD -- src; then
-              echo "No changes detected in 'src' directory between ${{ env.previous_tag }} and the latest commit."
-              echo "changed=false" >> $GITHUB_ENV
-            else
-              echo "Changes detected in 'src' directory between ${{ env.previous_tag }} and the latest commit."
-              echo "changed=true" >> $GITHUB_ENV
-            fi
-          fi
-
-      - name: Terminate if no changes detected
-        if: env.changed != 'true'
-        run: |
-          echo "No changes in 'src' directory, terminating the workflow."
-          exit 1
 
       - uses: actions/setup-node@v4
         with:
