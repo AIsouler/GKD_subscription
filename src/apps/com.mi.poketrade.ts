@@ -28,12 +28,20 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: '.MainActivity',
           matches:
             '@ImageView[clickable=true][childCount=0][visibleToUser=true] <2 View[getChild(5).desc="Subscribe"] < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/19371ab4-5b1a-4efb-925a-883252fd50d0',
           snapshotUrls: 'https://i.gkd.li/i/19643520',
+        },
+        {
+          key: 1,
+          activityIds: '.MainActivity',
+          matches: '[desc="Back"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a7e15182-89fc-4b38-9acc-fdbbe81908f0',
+          snapshotUrls: 'https://i.gkd.li/i/19825695',
         },
       ],
     },
