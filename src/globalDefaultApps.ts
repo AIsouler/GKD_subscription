@@ -286,6 +286,16 @@ export const openAdBlackListAppIDs = new Set([
 // 更新提示黑名单
 export const updateBlackListAppIDs = new Set([
   ...blackListAppIDs,
+
+  // 全局规则默认不匹配系统应用，但有的用户喜欢无脑开启规则，容易造成误触，故在此手动禁用
+  'com.miui.packageinstaller', // 应用包管理组件
+  'com.android.packageinstaller', // 软件包安装程序
+  'com.google.android.packageinstaller', // 软件包安装程序
+  'com.oplus.appdetail', // 应用安装器
+  'com.samsung.android.packageinstaller', // 软件包安装程序
+
+  //-----------------------------------------------------
+
   'info.muge.appshare', // AppShare
   'com.jingdong.app.mall', // 京东
 ]);
