@@ -5,6 +5,23 @@ export default defineGkdApp({
   name: '央视频',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          // https://github.com/AIsouler/GKD_subscription/issues/880
+          fastQuery: true,
+          matches:
+            '@[clickable=true] > [text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/19859692',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '局部广告-悬浮广告',
       desc: '点击关闭',
