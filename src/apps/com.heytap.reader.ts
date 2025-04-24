@@ -10,6 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
           matches:
             '[id="com.zhangyue.commonplugin:id/dialog_welfare_card_close"]',
           exampleUrls: 'https://e.gkd.li/76f226bb-fcd4-439a-9eed-520a9c35a0c0',
