@@ -7,17 +7,13 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
           matches:
             '[id="com.zhangyue.commonplugin:id/dialog_welfare_card_close"]',
-          exampleUrls:
-            'https://m.gkd.li/6328439/4feb19d4-f90f-4ed5-b025-9c2a6e4fc479',
-          snapshotUrls: 'https://i.gkd.li/i/13387130',
+          exampleUrls: 'https://e.gkd.li/76f226bb-fcd4-439a-9eed-520a9c35a0c0',
+          snapshotUrls: 'https://i.gkd.li/i/19890575',
         },
       ],
     },
