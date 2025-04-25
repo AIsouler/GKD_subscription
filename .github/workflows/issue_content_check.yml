@@ -1,4 +1,4 @@
-name: Issue Content Check
+name: issue_content_check
 
 on:
   issues:
