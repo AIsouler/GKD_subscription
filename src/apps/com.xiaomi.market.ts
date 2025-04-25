@@ -15,6 +15,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          action: 'clickCenter', // clickNode 可能无效
           activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
           matches: '@Button[clickable=true][text="关闭"] <<n [vid="webview"]',
           snapshotUrls: 'https://i.gkd.li/i/16323123',
