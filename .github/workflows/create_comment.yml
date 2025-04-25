@@ -1,4 +1,4 @@
-name: Create Comment When Add Labels
+name: create_comment
 
 on:
   issues:
@@ -16,4 +16,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
-            你好 ${{ github.event.issue.user.login }}，请及时回复，否则你的 issue 将在3天后自动关闭！
+            你好 ${{ github.event.issue.user.login }}，请及时回复，否则你的 issue 将会被关闭！
