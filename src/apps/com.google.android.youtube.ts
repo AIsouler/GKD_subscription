@@ -101,5 +101,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '其他-关闭播放器辅助功能弹窗',
+      desc: '点击[Dismiss]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches: '[text="Dismiss"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/aa8f2617-fd6d-43a8-951d-1bd6efc504d3',
+          snapshotUrls: 'https://i.gkd.li/i/19930694',
+        },
+      ],
+    },
   ],
 });
