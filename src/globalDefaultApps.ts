@@ -148,6 +148,7 @@ export const blackListAppIDs: string[] = [
   'com.fankes.miui.notify', // MIUI 原生通知图标
   'com.simo.ssl.killer', // SSL Killer
   'net.afdian.afdian', // 爱发电
+  'org.thoughtcrime.securesms', // Signal
 
   'com.canghai.haoka',
   'com.xy.td',
