@@ -149,6 +149,7 @@ export const blackListAppIDs: string[] = [
   'com.simo.ssl.killer', // SSL Killer
   'net.afdian.afdian', // 爱发电
   'org.thoughtcrime.securesms', // Signal 全局规则误触 https://i.gkd.li/i/19952277
+  'com.example.piliplus', // PiliPlus
 
   'com.canghai.haoka',
   'com.xy.td',
