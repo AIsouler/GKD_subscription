@@ -46,6 +46,7 @@ export const blackListAppIDs: string[] = [
   'com.getsurfboard', // Surfboard
   'moe.nb4a', // NekoBox
   'com.v2ray.ang', // v2rayNG
+  'com.v2ray.v2fly', // v2flyNG
   'com.xiaoyv.bangumi', // Bangumi for Android
   'com.funny.translation', // 译站
   'com.looker.droidify', // Droid-ify
