@@ -43,12 +43,13 @@ export default defineGkdApp({
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
           ],
           matches:
-            '@FrameLayout[clickable=true] > LinearLayout[childCount=1] > [text^="继续"][text.length=4]',
+            '@FrameLayout[clickable=true] > LinearLayout[childCount=1] > [text^="继续" || text^="仍然"][text.length=4][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/bd3e2764-4978-44ed-93d3-f176c23c3ec4',
           snapshotUrls: [
             'https://i.gkd.li/i/16487278',
             'https://i.gkd.li/i/16487282',
             'https://i.gkd.li/i/17691996',
+            'https://i.gkd.li/i/20053957',
           ],
         },
         {
