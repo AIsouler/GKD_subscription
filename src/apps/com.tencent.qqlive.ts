@@ -130,12 +130,13 @@ export default defineGkdApp({
           name: '居中广告-2',
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][childCount=0] +2 [text="下载应用" || text="了解详情"][visibleToUser=true]',
+            '@ImageView[clickable=true][childCount=0] +2 [text^="摇动或点击" || text*="应用" || text*="立即" || text*="下载" || text*="了解" || text*="查看" || text*="详情" || text="去微信看看"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/4bf0ff94-239d-4b43-900f-a375b44922e0',
           snapshotUrls: [
             'https://i.gkd.li/i/13946107',
             'https://i.gkd.li/i/14318385',
             'https://i.gkd.li/i/18476383',
+            'https://i.gkd.li/i/20038310',
           ],
         },
       ],
