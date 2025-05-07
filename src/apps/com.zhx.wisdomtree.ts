@@ -25,6 +25,33 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/486eae02-6c25-4e2a-b6a4-7997a8887eac',
           snapshotUrls: 'https://i.gkd.li/i/20062094',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'net.hyww.wisdomtree.parent.common.MainActivity',
+          matches:
+            '@[vid="rl_down"] <<n [vid="tt_ad_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/46522b87-512c-47ab-9a57-c333eca6a789',
+          snapshotUrls: 'https://i.gkd.li/i/20074571',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@View[childCount=1][visibleToUser=true] < View[childCount=1][visibleToUser=true] + View[childCount=1][visibleToUser=true] > [text="反馈"]',
+          exampleUrls: 'https://e.gkd.li/708daddf-5d9b-4cc9-977f-ba48c3f33ba3',
+          snapshotUrls: 'https://i.gkd.li/i/20074568',
+        },
       ],
     },
   ],
