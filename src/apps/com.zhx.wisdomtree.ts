@@ -34,6 +34,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/46522b87-512c-47ab-9a57-c333eca6a789',
           snapshotUrls: 'https://i.gkd.li/i/20074571',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'net.hyww.wisdomtree.core.act.FragmentSingleAct',
+          matches:
+            'FrameLayout[childCount=1] > FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[id=null][text=null][width<50 && height<50] <<n [vid="fl_csj_banner_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ee6796d4-ba24-4d34-8ef2-07969d102715',
+          snapshotUrls: 'https://i.gkd.li/i/20074641',
+        },
       ],
     },
     {
