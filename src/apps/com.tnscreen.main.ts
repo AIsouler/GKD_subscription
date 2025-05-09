@@ -35,6 +35,12 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/be4513a1-fdf8-4889-a65d-55e2e0664afc',
           snapshotUrls: 'https://i.gkd.li/i/18371332',
         },
+        {
+          activityIds: 'com.tcl.tcast.snapshot.view.ShotPicActivity',
+          matches: 'FrameLayout[id="android:id/content"] >5 ImageView',
+          exampleUrls: 'https://e.gkd.li/93834d55-142f-4371-ae5b-db65b168db7f',
+          snapshotUrls: 'https://i.gkd.li/i/20123436',
+        }
       ],
     },
   ],
