@@ -23,5 +23,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '分段广告-卡片广告',
+      fastQuery: true,
+      activityIds: '.WeatherHome',
+      rules: [
+        {
+          key: 0,
+          matches: '[vid="ads_tag"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7f9ea2fc-bb89-4aeb-b569-9ddbbd95452b',
+          snapshotUrls: 'https://i.gkd.li/i/20116008',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="不感兴趣"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/38517cb1-c930-40cb-8c95-a4e1ecd57323',
+          snapshotUrls: 'https://i.gkd.li/i/20116013',
+        },
+      ],
+    },
   ],
 });
