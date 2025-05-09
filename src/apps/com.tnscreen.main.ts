@@ -28,6 +28,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
@@ -36,6 +37,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/18371332',
         },
         {
+          key: 1,
           activityIds: 'com.tcl.tcast.snapshot.view.ShotPicActivity',
           matches: 'FrameLayout[id="android:id/content"] >5 ImageView',
           exampleUrls: 'https://e.gkd.li/93834d55-142f-4371-ae5b-db65b168db7f',
