@@ -44,11 +44,12 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: '.main.MainActivity',
-          matches: ['[text="立即升级"]', '[text="以后再说"]'],
+          matches: ['[text*="立即升级"]', '[text="以后再说"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12534016',
             'https://i.gkd.li/i/13328599',
             'https://i.gkd.li/i/15359995',
+            'https://i.gkd.li/i/20139600',
           ],
         },
       ],
