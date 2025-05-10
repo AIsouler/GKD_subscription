@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -15,9 +14,16 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          action: 'clickCenter',
+          fastQuery: true,
+          action: 'clickCenter', // 该快照action: 'click' 无效
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/20139575',
+        },
+        {
+          key: 1,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/20139739',
         },
       ],
     },
