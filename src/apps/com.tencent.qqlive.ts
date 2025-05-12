@@ -196,6 +196,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/afb17212-1dcb-4d07-a9ce-b4f775ccd6fc',
           snapshotUrls: 'https://i.gkd.li/i/19666714',
         },
+        {
+          key: 6,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches:
+            'TextView[text^="暂不需要"] < @View[clickable=true] <6 View < ComposeView < FrameLayout <2 FrameLayout < FrameLayout <2 FrameLayout <2 [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/4f48767f-9cfa-4507-89ab-eb24f483d05e',
+          snapshotUrls: 'https://i.gkd.li/i/20148077',
+        },
       ],
     },
     {
