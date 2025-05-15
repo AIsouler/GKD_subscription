@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: '懂球帝',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          // 点击方式为 clickNode 时会误触广告，更改点击方式为 clickCenter https://github.com/AIsouler/GKD_subscription/issues/905
+          fastQuery: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/74db13f0-d87d-41a3-bbbb-1b075d8ae7d6',
+          snapshotUrls: 'https://i.gkd.li/i/20218520',
+        },
+      ],
+    },
+    {
       key: 2,
       name: '更新提示',
       fastQuery: true,
