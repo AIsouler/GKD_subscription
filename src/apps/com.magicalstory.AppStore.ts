@@ -96,5 +96,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '局部广告-首页横幅广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches:
+            '[vid="item_broadcast"] >2 [vid="button_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c885f80c-9fd5-4fcc-9117-e8fed04ee300',
+          snapshotUrls: 'https://i.gkd.li/i/20259691',
+        },
+      ],
+    },
   ],
 });
