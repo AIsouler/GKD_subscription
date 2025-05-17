@@ -10,15 +10,35 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       priorityTime: 10000,
       rules: [
         {
           // 点击方式为 clickNode 时会误触广告，更改点击方式为 clickCenter https://github.com/AIsouler/GKD_subscription/issues/905
+          key: 0,
           fastQuery: true,
           action: 'clickCenter',
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/74db13f0-d87d-41a3-bbbb-1b075d8ae7d6',
           snapshotUrls: 'https://i.gkd.li/i/20218520',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@View[clickable=true] - [text="互动广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3b636c88-23de-4e2a-86fd-2846a0f0274b',
+          snapshotUrls: 'https://i.gkd.li/i/20262129',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2] >(7,8,9,10) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/940ce4e2-da5f-4a43-b319-4131a22cb1e0',
+          snapshotUrls: 'https://i.gkd.li/i/20262130',
         },
       ],
     },
