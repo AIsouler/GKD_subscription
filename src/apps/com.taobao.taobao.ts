@@ -52,9 +52,12 @@ export default defineGkdApp({
           resetMatch: 'app',
           activityIds: 'com.taobao.tao.welcome.Welcome',
           matches:
-            '@ImageView[desc="图片"][childCount=0][clickable=true][visibleToUser=true] <<n [vid="poplayer_native_state_id"]',
+            '@ImageView[desc="图片"][childCount=0][clickable=true][visibleToUser=true][width<180&&height<180] <<n [vid="poplayer_native_state_id"]',
           exampleUrls: 'https://e.gkd.li/5c77eaf1-b4dc-48c9-96af-131ae9644ffa',
-          snapshotUrls: 'https://i.gkd.li/i/18218537',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18218537',
+            'https://i.gkd.li/i/20277438',
+          ],
         },
         {
           key: 2,
