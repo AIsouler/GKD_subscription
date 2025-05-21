@@ -495,7 +495,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.xyhui',
     name: 'PU口袋校园',
-    deprecatedKeys: [4],
+    deprecatedKeys: [3, 4],
   },
   {
     id: 'com.youdao.dict',
