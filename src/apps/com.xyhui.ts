@@ -107,23 +107,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 3,
-      name: '更新提示',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: ['.start.PUMainActivity', '.start.LoadingActivity'],
-          matches: 'ImageView[id="com.xyhui:id/closeIv"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12908853',
-            'https://i.gkd.li/i/12908865',
-          ],
-        },
-      ],
-    },
   ],
 });
