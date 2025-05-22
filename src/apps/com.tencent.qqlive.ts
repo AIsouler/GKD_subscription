@@ -212,18 +212,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionMaximumKey: 0,
-      activityIds: '.ona.activity.SplashHomeActivity',
       rules: [
         {
-          key: 0,
-          matches: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
-          snapshotUrls: 'https://i.gkd.li/i/12700139',
-        },
-        {
-          key: 1,
-          matches: '@ImageView + * > [text^="开启通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/13670465',
+          fastQuery: true,
+          activityIds: '.ona.activity.SplashHomeActivity',
+          matches: '@[clickable=true] - [text*="开启通知"]',
+          exampleUrls: 'https://e.gkd.li/d16d04cb-8838-455c-9bc5-acebc936637b',
+          snapshotUrls: 'https://i.gkd.li/i/20368590',
         },
       ],
     },
