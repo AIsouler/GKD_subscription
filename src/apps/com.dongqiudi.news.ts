@@ -87,17 +87,27 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-首页弹窗广告',
+      name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           activityIds: 'com.dongqiudi.news.MainActivity',
           matches: '[id="com.dongqiudi.news:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13260467',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[text="反馈"] +(1,2) View[childCount=1] > Image[childCount=0][text=""][width<60 && height<60]',
+          exampleUrls: 'https://e.gkd.li/87e47cae-fa83-4d25-879c-728a1519ee55',
+          snapshotUrls: 'https://i.gkd.li/i/20403710',
         },
       ],
     },
