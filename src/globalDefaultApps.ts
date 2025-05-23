@@ -153,6 +153,18 @@ export const blackListAppIDs: string[] = [
   'com.example.piliplus', // PiliPlus
   'com.mtphotosapp', // MT Photos 全局规则误触 https://i.gkd.li/i/20023048
   'com.predidit.kazumi', // Kazumi
+  'com.github.catfriend1.syncthingandroid', // Syncthing-Fork
+  'org.fcitx.fcitx5.android', // 小企鹅输入法
+  'org.fcitx.fcitx5.android.plugin.clipcoard_filter', // 小企鹅输入法（剪贴板过滤器插件）
+  'org.fcitx.fcitx5.android.plugin.rime', // 小企鹅输入法（中州韵插件）
+  'org.fcitx.fcitx5.android.plugin.anthy', // 小企鹅输入法（Anthy 插件）
+  'org.fdroid.fdroid', // F-Droid
+  'org.fdroid.fdroid.privileged', // F-Droid 特权扩展
+  'com.digibites.accubattery', // AccuBattery
+  'com.domosekai.cardreader', // 读卡识途
+  'com.noctuasoftware.stellarium_free', // Stellarium
+  'net.osmand', // OSMAnd
+  'com.google.android.apps.maps', // Google 地图
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -161,6 +173,7 @@ export const blackListAppIDs: string[] = [
   'io.github.huskydg.magisk',
   'xzr.konabess',
   'org.lsposed.manager',
+  'org.lsposed.daemon',
   'tw.nekomimi.nekogram',
   'io.github.qauxv',
   'com.rezvorck.tiktokplugin',
@@ -279,6 +292,7 @@ export const blackListAppIDs: string[] = [
   'com.mycompany.app.soulbrowser', // soul浏览器
 
   'com.google.android.contactkeys', // Android System Key Verifier
+  'com.google.android.safetycore', // Android System SafetyCore
 ];
 
 // 在应用中单独禁用某个全局规则
