@@ -129,5 +129,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '分段广告-首页卡片广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[vid="ad_more"]',
+          exampleUrls: 'https://e.gkd.li/e7d3d6c3-d8be-4e0f-ac02-e5df2a0615b3',
+          snapshotUrls: 'https://i.gkd.li/i/20420265',
+        },
+        {
+          preKeys: [0],
+          key: 20,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[text="不感兴趣"][vid="ad_close"]',
+          exampleUrls: 'https://e.gkd.li/6ca7beba-98b8-4892-b275-1a116d040115',
+          snapshotUrls: 'https://i.gkd.li/i/20420322',
+        },
+      ],
+    },
   ],
 });
