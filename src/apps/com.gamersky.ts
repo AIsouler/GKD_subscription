@@ -61,12 +61,13 @@ export default defineGkdApp({
             '.common.activity.LibDetailContentDetailActivity',
           ],
           matches: [
-            '[text="广告"][visibleToUser=true]',
-            '[vid="delete"][visibleToUser=true]',
+            '[text="广告" || vid="badge"][visibleToUser=true]',
+            '[vid="delete" || vid="close"][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/18122883',
             'https://i.gkd.li/i/18122884',
+            'https://i.gkd.li/i/20422031',
           ],
         },
         {
