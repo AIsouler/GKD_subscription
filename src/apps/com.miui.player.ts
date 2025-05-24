@@ -109,14 +109,23 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-首页卡片广告',
+      name: '局部广告-主界面卡片广告',
       rules: [
         {
+          key: 1,
           fastQuery: true,
           activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-          matches: '[id="com.miui.player:id/ad_close"]',
+          matches: '[text=null][vid="ad_close"]',
           exampleUrls: 'https://e.gkd.li/32ad4d0f-8992-45b0-9e1f-82ce2cc58dcb',
           snapshotUrls: 'https://i.gkd.li/i/16773614',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[vid="banner_divider"] - * > [vid="close_banner"]',
+          exampleUrls: 'https://e.gkd.li/d9b74767-84b6-4668-8a9b-261bd938a8a3',
+          snapshotUrls: 'https://i.gkd.li/i/20420253',
         },
       ],
     },
