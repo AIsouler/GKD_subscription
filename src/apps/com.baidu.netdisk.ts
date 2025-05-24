@@ -27,49 +27,20 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14822799',
           ],
         },
-        {
-          key: 4,
-          name: '相册页面激活无限空间弹窗',
-          activityIds:
-            'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
-          matches:
-            '@ImageView[id="com.baidu.netdisk:id/close_btn"] + ImageView[id="com.baidu.netdisk:id/bg_image"]',
-          snapshotUrls: 'https://i.gkd.li/i/12648987',
-        },
       ],
     },
     {
       key: 2,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
         {
-          key: 0,
-          name: '首页特惠广告',
-          fastQuery: true,
-          matches: '[id="com.baidu.netdisk:id/banner_item_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12706544',
-        },
-        {
           key: 1,
-          name: '首页热门广告',
           fastQuery: true,
-          matches:
-            '[id="com.baidu.netdisk:id/vf_content"] + [id="com.baidu.netdisk:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12706544',
-        },
-        {
-          key: 2,
-          name: '[我的]页面限时福利',
-          matches: '@TextView + [text="专属福利"]',
-          snapshotUrls: 'https://i.gkd.li/i/12706549',
-        },
-        {
-          key: 3,
-          name: '续费横幅提示',
-          matches: 'View[desc="续费"] + ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12924036',
+          activityIds: '.video.VideoPlayerActivity',
+          matches: '[vid="rl_ad_root"] > [vid="iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5e0625e3-ef3b-4a71-a222-54728c2274b0',
+          snapshotUrls: 'https://i.gkd.li/i/20414230',
         },
       ],
     },
