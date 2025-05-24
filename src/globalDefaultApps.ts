@@ -155,7 +155,7 @@ export const blackListAppIDs: string[] = [
   'com.predidit.kazumi', // Kazumi
   'com.github.catfriend1.syncthingandroid', // Syncthing-Fork
   'org.fcitx.fcitx5.android', // 小企鹅输入法
-  'org.fcitx.fcitx5.android.plugin.clipcoard_filter', // 小企鹅输入法（剪贴板过滤器插件）
+  'org.fcitx.fcitx5.android.plugin.clipboard_filter', // 小企鹅输入法（剪贴板过滤器插件）
   'org.fcitx.fcitx5.android.plugin.rime', // 小企鹅输入法（中州韵插件）
   'org.fcitx.fcitx5.android.plugin.anthy', // 小企鹅输入法（Anthy 插件）
   'org.fdroid.fdroid', // F-Droid
