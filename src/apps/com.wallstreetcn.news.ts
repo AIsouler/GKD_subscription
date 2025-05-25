@@ -14,10 +14,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          matches: '[text="广告"] +2 [text^="关闭"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/40e483a8-61e7-45a0-ac44-df1f472e2863',
-          snapshotUrls: 'https://i.gkd.li/i/14525329',
+          matches:
+            '@[vid="iv_jump_parent" || vid="iv_jump"] -2 [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/94576b14-ad13-4fae-8d49-6b6d1b5096a7',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14525329',
+            'https://i.gkd.li/i/20430632',
+          ],
         },
       ],
     },
