@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '开屏广告', // 该软件开屏广告非常特殊，需使用clickCenter并在设置里开启[shizuku模拟点击]才能跳过
-      desc: '该规则需要在高级设置中开启[shizuku模拟点击]才能生效',
+      name: '开屏广告', // 该软件开屏广告非常特殊，需使用clickCenter并在设置里开启[强制点击]才能跳过
+      desc: '该规则需要在高级设置中开启[强制点击]才能生效',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
