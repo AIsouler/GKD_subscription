@@ -318,7 +318,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 101,
+      key: 18,
       name: '功能类-自动展开回答',
       desc: '自动点击展开',
       rules: [
@@ -334,6 +334,22 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12647688',
             'https://i.gkd.li/i/12707687', // 使用 [visibleToUser=true] 进行限定，防止在控件不可见时提前触发规则
           ],
+        },
+      ],
+    },
+    {
+      key: 19,
+      name: '评价提示-评论区氛围评价卡片',
+      desc: '点击关闭',
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.comment.ui.activity.CommentListActivity',
+          matches:
+            '@ViewGroup[clickable=true] - [text^="你对该内容下的评论氛围是否满意"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/60674332-41a3-4a31-907e-7af6c23182bf',
+          snapshotUrls: 'https://i.gkd.li/i/20473238',
         },
       ],
     },
