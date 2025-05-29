@@ -205,12 +205,13 @@ export default defineGkdApp({
           activityIds: '.host.activity.MainActivity',
           matches: [
             '[text*="通知权限"][visibleToUser=true]',
-            '[text="取消"][visibleToUser=true]',
+            '[text="取消" || text="暂不开启"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/ab40c096-d024-4b7c-9c6f-245beafd373a',
           snapshotUrls: [
             'https://i.gkd.li/i/13389145',
             'https://i.gkd.li/i/18391977',
+            'https://i.gkd.li/i/20499323',
           ],
         },
       ],
