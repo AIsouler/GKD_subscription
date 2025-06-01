@@ -113,5 +113,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '功能类-扫码自动确认登录',
+      fastQuery: true,
+      actionMaximum: 1,
+      activityIds: '.MainActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[desc="我已阅读并同意"] - @View[clickable=true][text=null][visibleToUser=true][width<100 && height<100] <7 View[childCount=11] < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/b84f0579-952b-4c6c-9706-dc300eb4a555',
+          snapshotUrls: 'https://i.gkd.li/i/20521452',
+        },
+        {
+          preKeys: [0],
+          matches:
+            '@View[desc="确认登录"][visibleToUser=true] <5 View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/b84f0579-952b-4c6c-9706-dc300eb4a555',
+          snapshotUrls: 'https://i.gkd.li/i/20521452',
+        },
+      ],
+    },
   ],
 });
