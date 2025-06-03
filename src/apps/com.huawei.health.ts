@@ -81,7 +81,7 @@ export default defineGkdApp({
           activityIds: 'com.huawei.health.MainActivity',
           matches: [
             '[text*="实时推送步数" || text*="通知栏实时显示步数" || text*="是否开启计步功能"][visibleToUser=true]',
-            '[text="取消"][visibleToUser=true]',
+            '[text*="取消"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/12af7c3a-3d53-43f0-880e-130135bad1a3',
           snapshotUrls: [
