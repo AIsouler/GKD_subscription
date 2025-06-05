@@ -38,10 +38,13 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           activityIds: '.MainActivity',
-          matches: '[desc="Back"][visibleToUser=true]',
+          matches:
+            '@View[desc="Back"][visibleToUser=true] < ImageView[desc*="VIP"] < View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/a7e15182-89fc-4b38-9acc-fdbbe81908f0',
           snapshotUrls: 'https://i.gkd.li/i/19825695',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/20598704',
         },
       ],
     },
