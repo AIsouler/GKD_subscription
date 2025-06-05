@@ -45,18 +45,24 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '评价提示-下单后的评价弹窗',
+      name: '评价提示',
       desc: '点击关闭',
       rules: [
         {
           fastQuery: true,
           activityIds: '.app.mainv2.view.MainActivity',
           matches: [
-            '[text="写评价"][visibleToUser=true]',
-            '[vid="close_iv"][visibleToUser=true]',
+            '[text="写评价" || text="您对饭团外卖的评价如何"][visibleToUser=true]',
+            '[vid="close_iv" || vid="iv_dialog_close"][visibleToUser=true]',
           ],
-          exampleUrls: 'https://e.gkd.li/8bd038b0-c555-4ac5-b1c0-c31c351cd788',
-          snapshotUrls: 'https://i.gkd.li/i/19442188',
+          exampleUrls: [
+            'https://e.gkd.li/8bd038b0-c555-4ac5-b1c0-c31c351cd788',
+            'https://e.gkd.li/43231b54-3fd3-4c1d-9217-8721f86153ba',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/19442188',
+            'https://i.gkd.li/i/20598853',
+          ],
         },
       ],
     },
