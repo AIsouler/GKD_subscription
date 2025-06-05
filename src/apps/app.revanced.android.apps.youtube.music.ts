@@ -10,10 +10,18 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          matches:
+          anyMatches: [
             '@Button[desc="No thanks"][visibleToUser=true] <<n [vid="custom"]',
-          exampleUrls: 'https://e.gkd.li/f07c01d7-9db2-43dd-9a89-ccb3d2a6200e',
-          snapshotUrls: 'https://i.gkd.li/i/20448377',
+            '[text="No thanks"][visibleToUser=true]',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/f07c01d7-9db2-43dd-9a89-ccb3d2a6200e',
+            'https://e.gkd.li/d1fbcb9c-bcc8-466e-9e94-63c4c7a22fd2',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/20448377',
+            'https://i.gkd.li/i/20598829',
+          ],
         },
       ],
     },
