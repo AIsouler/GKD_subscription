@@ -56,11 +56,13 @@ export default defineGkdApp({
           activityIds: [
             'com.youdao.dict.edu.main.MainPopDialog',
             'com.youdao.dict.activity.MainActivity',
+            '.activity.DictQueryActivity',
           ],
           matches: '[vid="iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12893450',
             'https://i.gkd.li/i/16859556',
+            'https://i.gkd.li/i/20602998',
           ],
         },
         {
