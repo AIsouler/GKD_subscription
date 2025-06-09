@@ -123,9 +123,15 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          activityIds: '.app.ui.activity.MainActivity',
+          activityIds: [
+            '.app.ui.activity.MainActivity',
+            '.mix.activity.ContentMixProfileActivity',
+          ],
           matches: ['[text$="内容推送"]', '[vid="btn_close"]'],
-          snapshotUrls: 'https://i.gkd.li/i/18057057',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18057057',
+            'https://i.gkd.li/i/20647853',
+          ],
         },
       ],
     },
