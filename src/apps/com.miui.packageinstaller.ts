@@ -132,11 +132,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+            'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          ],
           matches: ['[text$="备案信息"]', '[text="继续安装"]'],
           exampleUrls: 'https://e.gkd.li/d5bc4b1a-e363-4aab-9240-e6d914730935',
-          snapshotUrls: 'https://i.gkd.li/i/17908298',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17908298',
+            'https://i.gkd.li/i/20642970',
+          ],
         },
       ],
     },
