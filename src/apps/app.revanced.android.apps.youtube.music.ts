@@ -9,6 +9,7 @@ export default defineGkdApp({
       name: '全屏广告-会员广告',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           anyMatches: [
             '@Button[desc="No thanks"][visibleToUser=true] <<n [vid="custom"]',
@@ -22,6 +23,16 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20448377',
             'https://i.gkd.li/i/20598829',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.music.activities.MusicActivity',
+          matches:
+            'ScrollView[getChild(0).getChild(1).desc="Get your Recap"] - @Button[desc="Close"] <4 ViewGroup < [vid="custom"]',
+          exampleUrls: 'https://e.gkd.li/2048d5b5-514f-46fa-9970-d442b1656fb0',
+          snapshotUrls: 'https://i.gkd.li/i/20648224',
         },
       ],
     },
