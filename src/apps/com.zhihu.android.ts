@@ -209,10 +209,11 @@ export default defineGkdApp({
             '.mix.activity.ContentMixProfileActivity',
           ],
           matches:
-            '@Image[clickable=true][visibleToUser=true] <2 View > [visibleToUser=true][text$="广告"] <<n [vid="view_content"]',
+            '@Image[visibleToUser=true] <2 View > [visibleToUser=true][text$="广告"] <<n [vid="view_content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14391614',
             'https://i.gkd.li/i/15282584',
+            'https://i.gkd.li/i/20648888',
           ],
         },
         {
