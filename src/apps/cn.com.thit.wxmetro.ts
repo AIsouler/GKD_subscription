@@ -11,11 +11,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.bwton.metro.bwtadui.business.popup.PopDialogFixActivity',
+            'com.bwton.metro.tabindicator.business.MainTabActivity',
+          ],
           matches: '[vid="iv_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/398fe885-755b-4929-82f6-92a14157bac7',
-          snapshotUrls: 'https://i.gkd.li/i/20655916',
+          snapshotUrls: [
+            'https://i.gkd.li/i/20655916',
+            'https://i.gkd.li/i/20665105',
+          ],
         },
       ],
     },
