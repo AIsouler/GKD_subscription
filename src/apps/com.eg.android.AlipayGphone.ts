@@ -252,7 +252,7 @@ export default defineGkdApp({
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
             '[text="同意协议并开通" || text*="开通花呗"]',
-            '[text="30天不再提醒"||text="不感兴趣"]',
+            '[text="30天不再提醒" || text="不感兴趣"]',
           ],
           exampleUrls:
             'https://m.gkd.li/57941037/8daecaeb-35f0-4f3a-8d5a-a19098a992d5',
