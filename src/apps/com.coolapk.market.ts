@@ -115,9 +115,11 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: '.view.main.MainActivity',
           matches: '[text="去开启"] - [text="以后再说"]',
-          snapshotUrls: 'https://i.gkd.li/i/13296465',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13296465',
+            'https://i.gkd.li/i/20708984',
+          ],
         },
       ],
     },
