@@ -123,7 +123,7 @@ export default defineGkdApp({
           key: 90,
           matchRoot: true,
           anyMatches: [
-            '[text="不感兴趣"][clickable=true]',
+            '[text$="不感兴趣"][clickable=true]',
             '@LinearLayout[clickable=true] >2 [text="不感兴趣" || text="不想看到此类内容"]',
           ],
           snapshotUrls: [
@@ -132,6 +132,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16785777',
             'https://i.gkd.li/i/14730274',
             'https://i.gkd.li/i/19551451',
+            'https://i.gkd.li/i/20710958',
           ],
         },
       ],
