@@ -104,14 +104,18 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过/关闭广告',
-      activityIds: 'com.tencent.qqlive.ona.activity.VideoDetailActivity',
+      activityIds: '.ona.activity.VideoDetailActivity',
       rules: [
         {
           key: 2,
           name: '全屏广告2',
           fastQuery: true,
-          matches: '@[text$="关闭广告"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13526547',
+          matches:
+            '[text$="关闭广告" || text="关闭VIP热剧推荐"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13526547',
+            'https://i.gkd.li/i/20691266',
+          ],
         },
         {
           key: 3,
@@ -287,6 +291,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          actionDelay: 1000,
           fastQuery: true,
           activityIds: '.ona.activity.VideoDetailActivity',
           matches:
