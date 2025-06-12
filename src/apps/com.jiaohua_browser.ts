@@ -29,6 +29,8 @@ export default defineGkdApp({
           action: 'clickCenter',
           matches:
             '[text="AD"] <<7 [name="android.view.ViewGroup"] + [name="android.view.ViewGroup"] > [name="android.widget.TextView"][text=""][clickable=false][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/002589d0-660e-4658-8e20-42c1ac8710fc',
+          snapshotUrls: 'https://i.gkd.li/i/20713583',
         },
       ],
     },
@@ -37,7 +39,6 @@ export default defineGkdApp({
       name: '功能类-路线选择',
       desc: '选择路线，优先顺畅>普通>缓慢',
       actionMaximum: 1,
-      enable: false,
       rules: [
         {
           fastQuery: true,
@@ -47,8 +48,16 @@ export default defineGkdApp({
             '[text="请选择线路"] +(2,3,4,5,6) [name="android.view.ViewGroup"] > [text="普通"]',
             '[text="请选择线路"] +(2,3,4,5,6) [name="android.view.ViewGroup"] > [text="缓慢"]',
           ],
-          exampleUrls: 'https://e.gkd.li/68004e70-6b78-41f2-b329-ff600038db94',
-          snapshotUrls: 'https://i.gkd.li/i/20711163',
+          exampleUrls: [
+            'https://e.gkd.li/68004e70-6b78-41f2-b329-ff600038db94',
+            'https://e.gkd.li/66403e39-475b-447d-a708-db10be74eba8',
+            'https://e.gkd.li/930e1df4-5f1d-4a4d-bf78-6f1d8c5715de',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/20711163',
+            'https://i.gkd.li/i/20713674',
+            'https://i.gkd.li/i/20713715',
+          ],
         },
       ],
     },
@@ -58,7 +67,6 @@ export default defineGkdApp({
       actionMaximum: 6,
       actionDelay: 500,
       actionCd: 500,
-      enable: false,
       rules: [
         {
           fastQuery: true,
