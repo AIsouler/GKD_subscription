@@ -175,16 +175,28 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-搜索栏上方广告',
+      name: '局部广告-卡片广告',
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
+          name: '搜索栏上方广告',
           fastQuery: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: ['[vid="ad_container"]', '[vid="img_close_focus"]'],
           exampleUrls:
             'https://m.gkd.li/101449500/11c26ab8-0b01-4345-8ea8-d4e97233b723',
           snapshotUrls: 'https://i.gkd.li/i/14156887',
+        },
+        {
+          key: 1,
+          name: '评论区广告',
+          fastQuery: true,
+          activityIds: '.comment.ui.activity.CommentListActivity',
+          matches:
+            '@ViewGroup[childCount=1][clickable=true][visibleToUser=true][getChild(0).name$="SvgView"] - [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/d81b6bc4-f4f9-466d-8edb-7af27c707ca5',
+          snapshotUrls: 'https://i.gkd.li/i/20711018',
         },
       ],
     },
