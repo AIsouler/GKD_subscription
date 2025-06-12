@@ -265,5 +265,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '功能类-支付订单后跳过开通[刷脸支付]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.wangyin.payment.jdpaysdk.counter.ui.pay.CounterActivity',
+          action: 'back',
+          matches: '[text="开启刷脸支付"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bad5489e-0ec6-4039-8e4e-52b4b444f019',
+          snapshotUrls: 'https://i.gkd.li/i/20709175',
+        },
+      ],
+    },
   ],
 });
