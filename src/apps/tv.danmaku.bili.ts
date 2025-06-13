@@ -259,6 +259,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18306849',
           ],
         },
+        {
+          preKeys: [50],
+          key: 70,
+          matches:
+            '@FrameLayout[clickable=true] > [text="此类内容过多"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/2aba6082-1047-464e-959c-82ee62e492aa',
+          snapshotUrls: 'https://i.gkd.li/i/20718890',
+        },
       ],
     },
     {
