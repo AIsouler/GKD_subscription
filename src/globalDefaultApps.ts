@@ -165,6 +165,8 @@ export const blackListAppIDs: string[] = [
   'com.noctuasoftware.stellarium_free', // Stellarium
   'net.osmand', // OSMAnd
   'com.google.android.apps.maps', // Google 地图
+  'com.jiaohua_browser', // JMComic2
+  'com.picacomic.fregata', // PicACG
 
   'com.canghai.haoka',
   'com.xy.td',
