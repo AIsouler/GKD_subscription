@@ -107,7 +107,7 @@ export default defineGkdGlobalGroups([
         key: 0,
         matches: [
           '[text*="青少年" || text*="未成年" || text*="儿童"][text*="模式" || text*="守护"][text.length<15][childCount=0][visibleToUser=true]',
-          '[text*="知道了" || text*="关闭" || text*="我已知晓" || text*="已满"][text.length<8][childCount=0][visibleToUser=true]',
+          '[text*="知道了" || text*="关闭" || text*="我已知晓" || text*="已满" || text*="不再提醒"][text.length<8][childCount=0][visibleToUser=true]',
         ],
       },
     ],
