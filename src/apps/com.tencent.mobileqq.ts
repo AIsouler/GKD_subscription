@@ -260,13 +260,14 @@ export default defineGkdApp({
           ],
           matches: [
             '[text="登录确认" || text="一键验证"][visibleToUser=true]',
-            'Button[text*="登录"][clickable=true][visibleToUser=true][text.length<10]',
+            'Button[text="登录" || text="确认" || text^="允许登录"][clickable=true][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13623520',
             'https://i.gkd.li/i/12789287',
             'https://i.gkd.li/i/13063027',
             'https://i.gkd.li/i/13166314',
+            'https://i.gkd.li/i/20737651',
           ],
         },
         {
