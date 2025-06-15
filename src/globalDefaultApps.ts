@@ -167,6 +167,7 @@ export const blackListAppIDs: string[] = [
   'com.google.android.apps.maps', // Google 地图
   'com.jiaohua_browser', // JMComic2
   'com.picacomic.fregata', // PicACG
+  'com.rosan.installer.x.revived', // installerX Revived
 
   'com.canghai.haoka',
   'com.xy.td',
