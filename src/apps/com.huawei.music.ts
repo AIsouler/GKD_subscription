@@ -63,5 +63,27 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 10,
+      name: '分段广告-首页横幅广告',
+      fastQuery: true,
+      rules: [
+        {
+          key: 1,
+          activityIds: 'com.android.mediacenter.MainActivity',
+          matches: '[vid="ad_more_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c64216a4-46bc-461d-9973-9ffcfab2fd51',
+          snapshotUrls: 'https://i.gkd.li/i/20745787',
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
+          matches: '[text="直接关闭"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/9c4da3cf-897d-4b4a-bda0-e5e35af19b1d',
+          snapshotUrls: 'https://i.gkd.li/i/20745789',
+        },
+      ],
+    },
   ],
 });
