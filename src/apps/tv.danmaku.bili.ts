@@ -387,8 +387,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            '@[vid="more" || id="tv.danmaku.bili.adbiz:id/more"] -(3,5) [vid="ad_desc" || vid="live_lottie_layout" || id="tv.danmaku.bili.adbiz:id/ad_mark"][visibleToUser=true]',
+          anyMatches: [
+            '@[vid="more"] -(3,5) [vid="ad_desc" || vid="live_lottie_layout"][visibleToUser=true]',
+            '[id="tv.danmaku.bili.adbiz:id/more"][visibleToUser=true]',
+          ],
           exampleUrls: [
             'https://e.gkd.li/219c40c4-debf-40d8-889a-7eb39c87126c',
             'https://e.gkd.li/dc54e6ee-24df-49a8-874a-f381326122c3',
@@ -398,6 +400,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17675894',
             'https://i.gkd.li/i/18306858',
             'https://i.gkd.li/i/20739380',
+            'https://i.gkd.li/i/20744764',
           ],
         },
         {
