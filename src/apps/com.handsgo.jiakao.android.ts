@@ -49,9 +49,9 @@ export default defineGkdApp({
           activityIds: 'com.handsgo.jiakao.android.main.activity.MainActivity',
           matches: [
             '[vid="adsdk__ids_cta_layout"][visibleToUser=true]',
-            '[vid="close"][visibleToUser=true]https://i.gkd.li/i/20745398',
+            '[vid="close"][visibleToUser=true]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/13523033',
+          snapshotUrls: 'https://i.gkd.li/i/20745398',
         },
         {
           key: 2,
