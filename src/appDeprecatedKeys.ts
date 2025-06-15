@@ -842,6 +842,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '小组件盒子',
     deprecatedKeys: [1],
   },
+  {
+    id: 'com.tencent.qqmusic',
+    name: 'QQ音乐',
+    deprecatedKeys: [10],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
