@@ -176,9 +176,12 @@ export default defineGkdApp({
         {
           preKeys: [2],
           key: 3,
-          matches: '@[clickable=true] > [text="单次安装授权"]',
+          matches: '@[clickable=true] >(1,2) [text="单次安装授权"]',
           exampleUrls: 'https://e.gkd.li/0e8afdd7-04d3-46fd-9095-b61123d041b2',
-          snapshotUrls: 'https://i.gkd.li/i/18002712',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18002712',
+            'https://i.gkd.li/i/20746863',
+          ],
         },
       ],
     },
