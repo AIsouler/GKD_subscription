@@ -6,8 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '功能类-自动继续安装',
-      desc: 'USB安装应用,点击继续安装',
+      name: '功能类-USB安装应用,自动点击[继续安装]',
       rules: [
         {
           fastQuery: true,
