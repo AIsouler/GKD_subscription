@@ -58,6 +58,12 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 爱发电：<https://ifdian.net/a/AIsouler>
 
+## 交流群
+
+- TG群组：<https://t.me/+8L4eHePgYEZmY2M9>
+
+- 企鹅群：343615129
+
 ## 其他
 
 - 在 [GKD官网](https://gkd.li/) 查看 [GKD基础使用教程](https://gkd.li/guide/) 、[常见问题](https://gkd.li/guide/faq) 以及 [API文档](https://gkd.li/api/)
@@ -65,8 +71,6 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 - 查看 [规则编写教程](https://github.com/Snoopy1866/notebook/blob/main/04%20Others/GKD%20%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E6%95%99%E7%A8%8B/gkd-rule-tutorial.md) By [@Snoopy1866](https://github.com/Snoopy1866)
 
 - 使用 [GKD网页审查工具增强脚本](https://github.com/adproqwq/MakeGKDInspectBetter) 可以高度自定义从网页复制出来的规则，提高规则编写效率
-
-- TG群组：<https://t.me/+8L4eHePgYEZmY2M9>
 
 ## 感谢以下项目
 
