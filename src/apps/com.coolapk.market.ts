@@ -63,7 +63,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: ['[vid="coolapk_card_view"]', '[vid="close_view"]'],
+          matches:
+            '@[vid="close_view"] <<n [vid="coolapk_card_view"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/19004644',
             'https://i.gkd.li/i/19004652',
@@ -74,6 +75,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14996359',
             'https://i.gkd.li/i/15159886',
             'https://i.gkd.li/i/15587119',
+            'https://i.gkd.li/i/20768037',
           ],
         },
         {
