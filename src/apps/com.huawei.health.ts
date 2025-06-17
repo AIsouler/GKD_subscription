@@ -75,20 +75,32 @@ export default defineGkdApp({
       key: 5,
       name: '其他-请求开启[实时推送步数]弹窗',
       desc: '点击取消',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
+          key: 0,
           activityIds: 'com.huawei.health.MainActivity',
           matches: [
-            '[text*="实时推送步数" || text*="通知栏实时显示步数" || text*="是否开启计步功能"][visibleToUser=true]',
+            '[text*="实时推送步数" || text*="通知栏实时显示步数"][visibleToUser=true]',
             '[text*="取消"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/12af7c3a-3d53-43f0-880e-130135bad1a3',
           snapshotUrls: [
             'https://i.gkd.li/i/14321121',
             'https://i.gkd.li/i/16494762',
-            'https://i.gkd.li/i/20499245',
           ],
+        },
+        {
+          key: 1,
+          matches: [
+            '[text*="是否开启计步功能"][visibleToUser=true]',
+            '[text*="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/ab4e3797-40e6-4d1e-96b2-c098e78cf848',
+          snapshotUrls: 'https://i.gkd.li/i/20499245',
         },
       ],
     },
