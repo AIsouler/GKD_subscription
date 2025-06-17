@@ -59,6 +59,7 @@ export default defineGkdApp({
         '.view.feed.FeedDetailActivityV8',
         '.view.main.MainActivity',
         '.view.node.DynamicNodePageActivity',
+        '.view.base.SimpleAlphaActivity',
       ],
       rules: [
         {
@@ -70,6 +71,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19004652',
             'https://i.gkd.li/i/19004663',
             'https://i.gkd.li/i/19005176',
+            'https://i.gkd.li/i/20776874',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/14996359',
@@ -89,6 +91,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19643258',
             'https://i.gkd.li/i/19643262',
             'https://i.gkd.li/i/19534649',
+            'https://i.gkd.li/i/20776872',
           ],
         },
       ],
