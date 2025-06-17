@@ -5,6 +5,22 @@ export default defineGkdApp({
   name: '华为音乐',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/20773821',
+        },
+      ],
+    },
+    {
       key: 3,
       name: '局部广告-播放界面直播浮窗',
       fastQuery: true,
