@@ -33,5 +33,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.huawei.video.content.impl.explore.main.activity.MainActivity',
+          matches: '[vid="advert_dialog_close_image_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c842b073-bbea-4a37-a45b-4d2a86cfa6c5',
+          snapshotUrls: 'https://i.gkd.li/i/20775878',
+        },
+      ],
+    },
   ],
 });
