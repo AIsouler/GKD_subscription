@@ -168,6 +168,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.MainActivity',
           matches: '[desc="进入拷贝漫画"]',
           snapshotUrls: 'https://i.gkd.li/i/13233179',
         },
