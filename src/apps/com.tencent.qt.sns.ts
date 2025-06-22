@@ -28,8 +28,14 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.tencent.gamehelper.ui.main.MainActivity',
-          matches: '[text="版本更新"] +4 LinearLayout > [text="取消"]',
-          snapshotUrls: 'https://i.gkd.li/i/13713478',
+          matches: [
+            '[text="版本更新" || text="现在升级"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13713478',
+            'https://i.gkd.li/i/20851162',
+          ],
         },
       ],
     },
