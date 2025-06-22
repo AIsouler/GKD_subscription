@@ -40,12 +40,21 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds:
             'com.huawei.browser.customtab.EmuiBrowserCustomTabActivity',
           matches:
             'View[id="root"] > View[index=1] > @View[visibleToUser=true][id="logo-close-btn"] <<n [vid="web_view_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13997759',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.download.DownloadRecordsActivity',
+          matches: '[vid="group_header_close_button"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f5b1576c-372d-4376-b122-129cd0249d85',
+          snapshotUrls: 'https://i.gkd.li/i/20852584',
         },
       ],
     },
