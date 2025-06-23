@@ -30,9 +30,12 @@ export default defineGkdApp({
           activityIds:
             'com.google.android.apps.youtube.music.activities.MusicActivity',
           matches:
-            'ScrollView[getChild(0).getChild(1).desc="Get your Recap"] - @Button[desc="Close"] <4 ViewGroup < [vid="custom"]',
+            '@Button[desc="Close"][clickable=true][visibleToUser=true][width<150&&height<150] <<n [vid="custom"]',
           exampleUrls: 'https://e.gkd.li/2048d5b5-514f-46fa-9970-d442b1656fb0',
-          snapshotUrls: 'https://i.gkd.li/i/20648224',
+          snapshotUrls: [
+            'https://i.gkd.li/i/20648224',
+            'https://i.gkd.li/i/20856350',
+          ],
         },
       ],
     },
