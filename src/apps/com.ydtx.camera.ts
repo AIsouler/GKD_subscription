@@ -15,24 +15,14 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][visibleToUser=true][top<600]',
           exampleUrls: 'https://e.gkd.li/a2e4b32b-dfee-4626-9612-6df0cb530f9e',
           snapshotUrls: [
             'https://i.gkd.li/i/20882921',
-            'https://i.gkd.li/i/20882935',
+            'https://i.gkd.li/i/20896758',
           ],
-        },
-        {
-          // 跳过按钮在左下角时有概率误触，原因未知，误触后返回可跳过广告
-          preKeys: [0],
-          fastQuery: true,
-          action: 'back',
-          matches: '[text="反馈" || text^="立即"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/659e3f23-4765-41bf-bb4e-e4c20575ca0a',
-          snapshotUrls: [
-            'https://i.gkd.li/i/20883058',
-            'https://i.gkd.li/i/20883138',
-          ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/20882935', // 左下角的跳过按钮是一个假按钮，点击会误触广告
         },
         {
           key: 1, // 字节SDK
