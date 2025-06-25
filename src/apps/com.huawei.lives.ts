@@ -21,5 +21,45 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '权限提示-通知权限',
+      desc: '点击[取消]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.MainActivity',
+          matches: [
+            '[text*="消息通知"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/756362f5-7d43-4993-8ed9-962615a5a278',
+          snapshotUrls: 'https://i.gkd.li/i/20903425',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '权限提示-信息共享权限',
+      desc: '点击[取消]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.MainActivity',
+          matches: [
+            '[text^="开启服务号三方商家服务推荐向您提供更感兴趣的内容"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/1fc31176-b989-4041-9b1d-759ee737133f',
+          snapshotUrls: 'https://i.gkd.li/i/20903428',
+        },
+      ],
+    },
   ],
 });
