@@ -11,11 +11,25 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       priorityTime: 10000,
       rules: [
         {
+          key: 0,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16335136',
+        },
+        {
+          key: 1,
+          position: {
+            left: 'width * 0.8731',
+            top: 'width * 0.1352',
+          },
+          matches:
+            '@FrameLayout[childCount=2] > [vid="ll_top_right"][childCount=0]',
+          exampleUrls: 'https://e.gkd.li/6fca95f1-d672-4d1d-bcf5-e71f1865dd52',
+          snapshotUrls: 'https://i.gkd.li/i/20903074',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16335136',
         },
       ],
     },
