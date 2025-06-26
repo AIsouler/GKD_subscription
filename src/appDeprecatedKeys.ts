@@ -847,6 +847,11 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: 'QQ音乐',
     deprecatedKeys: [10],
   },
+  {
+    id: 'com.tongcheng.android',
+    name: '同程旅行',
+    deprecatedKeys: [1],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();
