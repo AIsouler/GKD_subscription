@@ -69,5 +69,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '权限提示-NFC权限',
+      desc: '点击取消',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.huawei.nfc.carrera.ui.swipe.SetDefaultPayServiceActivity',
+          matches: [
+            '[text*="是否每次使用华为钱包都自动开启 NFC"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/87466a06-2169-4808-971e-d347cd40ac66',
+          snapshotUrls: 'https://i.gkd.li/i/20918311',
+        },
+      ],
+    },
   ],
 });
