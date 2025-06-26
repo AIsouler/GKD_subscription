@@ -50,6 +50,19 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/cdc28230-6ea7-4cf7-bef4-a31f7e36eed1',
           snapshotUrls: 'https://i.gkd.li/i/19050401',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds:
+            'ctrip.android.publicproduct.home.business.activity.CtripHomeActivity',
+          matches:
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<120 && height<120] < RelativeLayout[childCount=1] < RelativeLayout[childCount=2] < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/065da3a4-b746-4ec7-a681-a6fd687c5f70',
+          snapshotUrls: 'https://i.gkd.li/i/20921664',
+        },
       ],
     },
   ],
