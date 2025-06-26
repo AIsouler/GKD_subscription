@@ -37,17 +37,18 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          activityIds: 'com.jdd.motorfans.MTMainActivity',
-          matches: '[vid="iv_right_top_close"]',
+          activityIds: [
+            'com.jdd.motorfans.MTMainActivity',
+            '.modules.detail.DetailActivity2',
+          ],
+          matches:
+            '[vid="iv_right_top_close" || vid="ad_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/0f4b8d7d-fda4-43ee-b892-3a85d6dae278',
-          snapshotUrls: 'https://i.gkd.li/i/17002101',
-        },
-        {
-          key: 3,
-          fastQuery: true,
-          activityIds: 'com.jdd.motorfans.MTMainActivity',
-          matches: '[vid="ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/17078108',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17002101',
+            'https://i.gkd.li/i/17078108',
+            'https://i.gkd.li/i/20918047',
+          ],
         },
       ],
     },
