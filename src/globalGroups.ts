@@ -24,18 +24,19 @@ export default defineGkdGlobalGroups([
         key: 0,
         // 防止误触
         excludeMatches:
-          '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜" || text*="退款详情" || text*="Submit"][text.length>3 && text.length<7][visibleToUser=true]',
+          '([text*="搜索" || text^="猜你想" || text^="猜你喜欢" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit"][visibleToUser=true])',
         anyMatches: [
           '[text*="跳过"][text.length<10][visibleToUser=true]',
-          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         ],
         excludeSnapshotUrls: [
           // 避免误触
           'https://i.gkd.li/i/17108010', // text!="帮助"
           'https://i.gkd.li/i/18265000', // text!="取消"
-          'https://i.gkd.li/i/19580463', // text*="退款详情"
-          'https://i.gkd.li/i/19580951', // text*="退款详情"
-          'https://i.gkd.li/i/19952277', // text*="Submit"
+          'https://i.gkd.li/i/19580951', // text="退款详情"
+          'https://i.gkd.li/i/19952277', // text="Submit"
+          'https://i.gkd.li/i/20946730', // text="设置"
+          'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
         ],
       },
       {
