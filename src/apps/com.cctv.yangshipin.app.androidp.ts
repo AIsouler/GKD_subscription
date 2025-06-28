@@ -13,11 +13,10 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
-          // https://github.com/AIsouler/GKD_subscription/issues/880
           fastQuery: true,
-          matches:
-            '@[clickable=true] > [text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/19859692',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/19859692', // 被全局规则排除
+          excludeSnapshotUrls: 'https://i.gkd.li/i/20949002',
         },
       ],
     },
