@@ -44,6 +44,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          forcedTime: 10000,
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
