@@ -19,5 +19,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '权限提示-定位权限',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.main.HkMainActivity',
+          matches:
+            '@[vid="close_open"] -2 [text*="开启定位"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/82022058-fadc-43de-baca-d254249b6c51',
+          snapshotUrls: 'https://i.gkd.li/i/20961130',
+        },
+      ],
+    },
   ],
 });
