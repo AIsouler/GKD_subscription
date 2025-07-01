@@ -17,15 +17,23 @@ export default defineGkdApp({
         {
           key: 0,
           order: -1,
-          matches: '@[clickable=true][visibleToUser=true] + * > [text="跳过"]',
+          anyMatches: [
+            '@[clickable=true][visibleToUser=true] + ViewGroup > [text="跳过"]',
+            '@[clickable=true] - [text*="跳过"][text.length<10][visibleToUser=true]', // https://github.com/AIsouler/GKD_subscription/issues/1024
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14549281',
             'https://i.gkd.li/i/14549328', // 小窗模式下全局规则触发无效
             'https://i.gkd.li/i/18792649', // visibleToUser=false
+            'https://i.gkd.li/i/20990401',
           ],
         },
         {
           key: 1,
+          excludeMatches: [
+            '@[clickable=true] - [text*="跳过"][text.length<10][visibleToUser=true]',
+            '@[clickable=true][visibleToUser=true] + ViewGroup > [text="跳过"]',
+          ],
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14661654',
