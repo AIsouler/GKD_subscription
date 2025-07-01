@@ -8,17 +8,15 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-单词页面卡片广告',
       fastQuery: true,
-      activityIds: [
-        'com.youdao.dict.activity.MainActivity',
-        '.activity.DictQueryActivity',
-      ],
+      activityIds: ['.activity.MainActivity', '.activity.DictQueryActivity'],
       rules: [
         {
           key: 0,
-          matches: '[text="广告"] - [vid="close"]',
+          matches: ['[text="广告"]', '[vid="close"][visibleToUser=true]'],
           snapshotUrls: [
             'https://i.gkd.li/i/13800055',
             'https://i.gkd.li/i/16278151',
+            'https://i.gkd.li/i/17963902',
           ],
         },
         {
@@ -28,13 +26,14 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13800056',
             'https://i.gkd.li/i/16278150',
+            'https://i.gkd.li/i/17963904',
           ],
         },
       ],
     },
     {
       key: 2,
-      name: '全屏广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -57,11 +56,13 @@ export default defineGkdApp({
           activityIds: [
             'com.youdao.dict.edu.main.MainPopDialog',
             'com.youdao.dict.activity.MainActivity',
+            '.activity.DictQueryActivity',
           ],
           matches: '[vid="iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12893450',
             'https://i.gkd.li/i/16859556',
+            'https://i.gkd.li/i/20602998',
           ],
         },
         {
@@ -85,6 +86,14 @@ export default defineGkdApp({
           activityIds: 'com.youdao.dict.activity.MainActivity',
           matches: '[vid="image"] + [vid="close"]',
           snapshotUrls: 'https://i.gkd.li/i/14296482',
+        },
+        {
+          key: 4,
+          activityIds: '.activity.DictQueryActivity',
+          matches:
+            '@[vid="iv_cancel"][visibleToUser=true] - [vid="fl_video_container"]',
+          exampleUrls: 'https://e.gkd.li/342a587e-bf0d-42e9-8c16-3c0b53240e5a',
+          snapshotUrls: 'https://i.gkd.li/i/18051512',
         },
       ],
     },
@@ -123,10 +132,18 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13540941',
-        'https://i.gkd.li/i/14256301',
+      rules: [
+        {
+          activityIds: [
+            '.activity.MainActivity',
+            '.activity.DictQueryActivity',
+          ],
+          matches: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13540941',
+            'https://i.gkd.li/i/14256301',
+          ],
+        },
       ],
     },
     {
@@ -136,19 +153,28 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13627912',
+      rules: [
+        {
+          activityIds: '.activity.MainActivity',
+          matches:
+            '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13627912',
+        },
+      ],
     },
     {
       key: 7,
       name: '功能类-点击显示释义',
       activityIds:
         'com.youdao.dict_flutter_android_bridge.WordBookFlutterActivity',
-      rules: '[desc="点击显示释义"] > View[index=3][visibleToUser=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/14292588', // 点击显示释义前
-        'https://i.gkd.li/i/14292587', // 点击显示释义后
+      rules: [
+        {
+          matches: '[desc="点击显示释义"] > View[index=3][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14292588', // 点击显示释义前
+            'https://i.gkd.li/i/14292587', // 点击显示释义后
+          ],
+        },
       ],
     },
     {
@@ -160,31 +186,22 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: [
-            'com.youdao.dict.activity.MainActivity',
-            'com.youdao.dict.activity.DictQueryActivity',
+            '.activity.MainActivity',
+            '.activity.DictQueryActivity',
           ],
           matches:
-            '[vid="aivClose" || vid="course_one_course_close"][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/e365b983-15c7-4ac7-acd7-9d7be4c45160',
+            '[vid="aivClose" || vid="course_one_course_close" || vid="home_ad_close" || vid="course_four_course_close" || vid="promotion_close_zone"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/df92c524-c732-4c16-9266-326056c9acf8',
           snapshotUrls: [
             'https://i.gkd.li/i/14468564',
-            'https://i.gkd.li/i/14468628', // visibleToUser=true 防止在此页面选中屏幕外节点
             'https://i.gkd.li/i/14567234',
             'https://i.gkd.li/i/14895765',
-            'https://i.gkd.li/i/17082441',
-          ],
-        },
-        {
-          key: 1,
-          activityIds: 'com.youdao.dict.activity.MainActivity',
-          matches:
-            '[vid="home_ad_close" || vid="course_four_course_close" || vid="promotion_close_zone"][visibleToUser=true]',
-          snapshotUrls: [
             'https://i.gkd.li/i/14009705',
             'https://i.gkd.li/i/14559287',
+            'https://i.gkd.li/i/17082441',
             'https://i.gkd.li/i/17115693',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/14468628', // visibleToUser=true 防止在此页面选中屏幕外节点
         },
       ],
     },

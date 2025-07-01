@@ -11,12 +11,11 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
-      activityIds: 'com.buyanchuantong.buyanshufa.SplashActivity',
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="com.buyanchuantong.buyanshufa:id/next_page_imageview"][text^="点击跳过"]',
+          activityIds: 'com.buyanchuantong.buyanshufa.SplashActivity',
+          matches: '[text^="点击跳过"]',
           snapshotUrls: 'https://i.gkd.li/i/13425296',
         },
       ],

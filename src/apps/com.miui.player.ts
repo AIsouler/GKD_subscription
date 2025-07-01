@@ -59,6 +59,9 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -79,12 +82,16 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-年度报告邀请函弹窗',
+      name: '其他-年度报告邀请函弹窗',
       desc: '点击关闭',
-      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-      fastQuery: true,
-      rules: '[id="com.miui.player:id/iv_close_dialog_button"]',
-      snapshotUrls: ['https://i.gkd.li/i/13623503'],
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[id="com.miui.player:id/iv_close_dialog_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13623503',
+        },
+      ],
     },
     {
       key: 12,
@@ -102,12 +109,48 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '局部广告-首页卡片广告',
-      fastQuery: true,
-      activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
-      rules: '[id="com.miui.player:id/ad_close"]',
-      exampleUrls: 'https://e.gkd.li/32ad4d0f-8992-45b0-9e1f-82ce2cc58dcb',
-      snapshotUrls: 'https://i.gkd.li/i/16773614',
+      name: '局部广告-主界面卡片广告',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[vid="ad_close"][text=null]',
+          exampleUrls: 'https://e.gkd.li/32ad4d0f-8992-45b0-9e1f-82ce2cc58dcb',
+          snapshotUrls: 'https://i.gkd.li/i/16773614',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[vid="banner_divider"] - * > [vid="close_banner"]',
+          exampleUrls: 'https://e.gkd.li/d9b74767-84b6-4668-8a9b-261bd938a8a3',
+          snapshotUrls: 'https://i.gkd.li/i/20420253',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '分段广告-首页卡片广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[vid="ad_more"]',
+          exampleUrls: 'https://e.gkd.li/e7d3d6c3-d8be-4e0f-ac02-e5df2a0615b3',
+          snapshotUrls: 'https://i.gkd.li/i/20420265',
+        },
+        {
+          preKeys: [0],
+          key: 20,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.MainActivity',
+          matches: '[vid="ad_close"][text="不感兴趣"]',
+          exampleUrls: 'https://e.gkd.li/6ca7beba-98b8-4892-b275-1a116d040115',
+          snapshotUrls: 'https://i.gkd.li/i/20420322',
+        },
+      ],
     },
   ],
 });

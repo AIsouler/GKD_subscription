@@ -13,28 +13,10 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
-          matches: '[vid="hiad_skip_text"]',
-          snapshotUrls: 'https://i.gkd.li/i/15443502',
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: '分段广告-广告反馈下拉窗',
-      fastQuery: true,
-      activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
-      rules: [
-        {
-          matches:
-            'TextView[id="com.huawei.music:id/label_title"][text="直接关闭"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13067574',
-            'https://i.gkd.li/i/13067572',
-            'https://i.gkd.li/i/13067571',
-            'https://i.gkd.li/i/13067659',
-            'https://i.gkd.li/i/13067665',
-            'https://i.gkd.li/i/13067820',
-          ],
+          fastQuery: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/20773821',
         },
       ],
     },
@@ -48,67 +30,6 @@ export default defineGkdApp({
           matches:
             'TextView[id="com.huawei.music:id/live_info"] < LinearLayout -2 [id="com.huawei.music:id/close_button"]',
           snapshotUrls: 'https://i.gkd.li/i/13067649',
-        },
-      ],
-    },
-    {
-      key: 4,
-      name: '局部广告-播放（音乐、视频）页面广告',
-      fastQuery: true,
-      activityIds: 'com.android.mediacenter.MainActivity',
-      rules: [
-        {
-          matches:
-            'TextView[id="com.huawei.music:id/ad_icon"&&visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13067956',
-            'https://i.gkd.li/i/13067978',
-            'https://i.gkd.li/i/13067387',
-          ],
-        },
-      ],
-    },
-    {
-      key: 5,
-      name: '局部广告-评论区广告',
-      fastQuery: true,
-      activityIds: 'com.android.mediacenter.comment.ui.CommentListMainActivity',
-      rules: [
-        {
-          matches: '[id="com.huawei.music:id/ad_icon"]',
-          snapshotUrls: 'https://i.gkd.li/i/13067937',
-        },
-      ],
-    },
-    {
-      key: 6,
-      name: '分段广告-视频播放页广告反馈',
-      fastQuery: true,
-      activityIds: 'com.android.mediacenter.MainActivity',
-      rules: [
-        {
-          matches: 'TextView[text="不感兴趣"][id$="title"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13067986',
-            'https://i.gkd.li/i/13067981',
-          ],
-        },
-      ],
-    },
-    {
-      key: 7,
-      name: '局部广告-播放器上滑广告',
-      fastQuery: true,
-      activityIds: 'com.android.mediacenter.MainActivity',
-      rules: [
-        {
-          matches:
-            'ViewGroup > TextView[text="广告"][id$="ad_icon"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13068935',
-            'https://i.gkd.li/i/13194163', // 避免在此规则误触
-            'https://i.gkd.li/i/13263590', // visibleToUser
-          ],
         },
       ],
     },
@@ -155,6 +76,28 @@ export default defineGkdApp({
           matches: '[vid="ad_close"]',
           exampleUrls: 'https://e.gkd.li/586d860f-7f7c-41c7-af0f-bc17ac695a1a',
           snapshotUrls: 'https://i.gkd.li/i/16812666',
+        },
+      ],
+    },
+    {
+      key: 10,
+      name: '分段广告-首页横幅广告',
+      fastQuery: true,
+      rules: [
+        {
+          key: 1,
+          activityIds: 'com.android.mediacenter.MainActivity',
+          matches: '[vid="ad_more_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c64216a4-46bc-461d-9973-9ffcfab2fd51',
+          snapshotUrls: 'https://i.gkd.li/i/20745787',
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
+          matches: '[text="直接关闭"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/9c4da3cf-897d-4b4a-bda0-e5e35af19b1d',
+          snapshotUrls: 'https://i.gkd.li/i/20745789',
         },
       ],
     },

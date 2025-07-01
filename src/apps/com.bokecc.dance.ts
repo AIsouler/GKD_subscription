@@ -10,11 +10,12 @@ export default defineGkdApp({
       desc: '点击"以后再说"',
       fastQuery: true,
       matchTime: 10000,
-      resetMatch: 'app',
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.bokecc.dance:id/tv_cancel"]',
+          activityIds: '.activity.MainActivity',
+          matches: '[text="以后再说"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9156698c-76bb-4921-a39d-96a20c45260b',
           snapshotUrls: 'https://i.gkd.li/i/14071977',
@@ -58,6 +59,32 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/45eb8c79-f683-4fcd-a2c4-0c9d1ff9d998',
           snapshotUrls: 'https://i.gkd.li/i/14318261',
+        },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[text="反馈"] +(1,2) View[childCount=1] > Image[childCount=0][text=""][width<60 && height<60]',
+          exampleUrls: 'https://e.gkd.li/d3e73052-1459-4b3b-baf2-a3620226985f',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18627429',
+            'https://i.gkd.li/i/18627432',
+          ],
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches: ['[text="广告"]', '[vid="iv_close"]'],
+          exampleUrls: 'https://e.gkd.li/717ad9b7-dce7-4284-9360-4f9923ebacd7',
+          snapshotUrls: 'https://i.gkd.li/i/18627427',
         },
       ],
     },

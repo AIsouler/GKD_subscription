@@ -14,10 +14,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          matches: '[text="广告"] +2 [text^="关闭"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/40e483a8-61e7-45a0-ac44-df1f472e2863',
-          snapshotUrls: 'https://i.gkd.li/i/14525329',
+          matches:
+            '@[vid="iv_jump_parent" || vid="iv_jump"] -2 [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/94576b14-ad13-4fae-8d49-6b6d1b5096a7',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14525329',
+            'https://i.gkd.li/i/20430632',
+          ],
         },
       ],
     },
@@ -25,10 +28,10 @@ export default defineGkdApp({
       key: 10,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      activityIds: ['com.wallstreetcn.news.ProxyMainActivity'],
-      fastQuery: true,
       rules: [
         {
+          fastQuery: true,
+          activityIds: 'com.wallstreetcn.news.ProxyMainActivity',
           matches:
             '[text="广告" || text="活动"] + [id="com.wallstreetcn.news:id/close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13262717',

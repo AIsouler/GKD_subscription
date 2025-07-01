@@ -5,39 +5,6 @@ export default defineGkdApp({
   name: 'QQ阅读',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          snapshotUrls: 'https://i.gkd.li/i/14978239',
-        },
-        {
-          key: 1,
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/347b9148-02d8-4806-bafe-3aee9e4094af',
-          snapshotUrls: 'https://i.gkd.li/i/16642890',
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="com.qq.reader:id/tv_i_know"]',
-      snapshotUrls: 'https://i.gkd.li/i/13194867',
-    },
-    {
       key: 3,
       name: '局部广告-右下角悬浮卡片广告',
       desc: '点击关闭',
@@ -60,11 +27,13 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示-内测邀请弹窗',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: 'com.tencent.upgrade.ui.UpgradeDialogActivity',
           matches: '[vid="upgrade_dialog_close_btn"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/03e35d57-5f40-4ccb-911a-5f9061eab46e',

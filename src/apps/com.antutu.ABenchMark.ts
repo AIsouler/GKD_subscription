@@ -7,9 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-卡片广告',
-      activityIds: 'com.android.module.app.ui.test.activity.ActivityTestResult',
-      rules: '[text="广告"] + TextView + View > TextView',
-      snapshotUrls: 'https://i.gkd.li/i/13234012',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.android.module.app.ui.test.activity.ActivityTestResult',
+          matches:
+            '[text="广告"] +2 View > @TextView[childCount=0][index=1][clickable=true][visibleToUser=true] <<n [id="com.antutu.ABenchMark:id/ksad_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13234012',
+        },
+      ],
     },
   ],
 });

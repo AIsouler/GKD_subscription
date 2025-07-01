@@ -44,7 +44,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           forcedTime: 10000,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches:
             'ViewGroup[childCount=2] > ImageView + @FrameLayout[clickable=true] > LinearLayout > ImageView <<n [id="android:id/list"]',
           snapshotUrls: 'https://i.gkd.li/i/16434752',
@@ -52,37 +52,45 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches:
-            'TextView[text!=null] <n ViewGroup > @ImageView[desc="关闭"][visibleToUser=true][clickable=true] <<n [id="android:id/list"]',
+            '@ImageView[desc="关闭"][visibleToUser=true][clickable=true] <n ViewGroup < LinearLayout <3 [id="android:id/list"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964889',
             'https://i.gkd.li/i/15024041',
             'https://i.gkd.li/i/15468481',
             'https://i.gkd.li/i/16200618',
-            'https://i.gkd.li/i/17088057', // 避免误触
           ],
         },
         {
           key: 2,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches: '[desc="关闭广告"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15024812',
         },
         {
           key: 3,
           fastQuery: true,
-          activityIds: 'com.kugou.android.app.MediaActivity',
-          matches: '@ImageView[clickable=true] <n * > [text="广告"]',
+          activityIds: '.app.MediaActivity',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/15520336',
         },
         {
           key: 4,
           forcedTime: 10000,
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches:
             'RelativeLayout > @RelativeLayout[clickable=true] > [desc="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/16114590',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@ImageButton[clickable=true][childCount=0][visibleToUser=true] - LinearLayout > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/fcb3e4d2-73bf-49b5-9157-08cac0c11584',
+          snapshotUrls: 'https://i.gkd.li/i/18207953',
         },
       ],
     },
@@ -108,6 +116,14 @@ export default defineGkdApp({
             'WebView[text="开通会员"] >7 @TextView[clickable=true][childCount=0] +2 [text="当前歌曲支持蝰蛇全景声"]',
           exampleUrls: 'https://e.gkd.li/86e4a797-5366-4579-81ee-bc5354e95568',
           snapshotUrls: 'https://i.gkd.li/i/17177377',
+        },
+        {
+          key: 2,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@[text="退出页面"][visibleToUser=true] + View > [text="你的会员已过期"]',
+          exampleUrls: 'https://e.gkd.li/f32ed6b7-e396-45a5-9849-f8a8ae99cb99',
+          snapshotUrls: 'https://i.gkd.li/i/18070974',
         },
       ],
     },
@@ -157,15 +173,63 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][index=1] <2 FrameLayout[childCount=2] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout - FrameLayout >8 [desc="底部导航"] + [text="我的"]',
+            'ViewGroup > FrameLayout >2 FrameLayout[childCount=2] > FrameLayout > FrameLayout[childCount=2] > ImageView[index=1][clickable=true][childCount=0][width<80&&height<80]',
           exampleUrls: 'https://e.gkd.li/2b240676-4dac-4375-b238-2d570962efd1',
-          snapshotUrls: 'https://i.gkd.li/i/17004903',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17004903',
+            'https://i.gkd.li/i/18057265',
+          ],
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '全屏广告-签到弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          position: {
+            left: 'width * 0.9287',
+            top: 'width * 0.8935',
+          },
+          activityIds: '.app.flexowebview.uploadvideo.ContributeWebActivity',
+          matches:
+            '@FrameLayout > WebView > WebView[text="金币中心"] > View[id="body"] > TextView[id="root"][childCount=0]',
+          exampleUrls: 'https://e.gkd.li/f2a44161-d0a2-421d-a5e7-26fcf005daf2',
+          snapshotUrls: 'https://i.gkd.li/i/18071067',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '功能类-自动关闭速听模式',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: '.app.MediaActivity',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@[desc="关闭"][visibleToUser=true] < RelativeLayout < RelativeLayout + FrameLayout >3 ViewGroup[desc="速听卡片"] >2 [text="喜欢"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e24dda6a-c5fa-4c93-9026-cda7a4d9e205',
+          snapshotUrls: 'https://i.gkd.li/i/18164732',
+        },
+        {
+          preKeys: [1],
+          matches:
+            '@FrameLayout[clickable=true][visibleToUser=true] < RelativeLayout - [desc="暂停"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ffb25ec5-35b0-47ff-9387-54c757c90f29',
+          snapshotUrls: 'https://i.gkd.li/i/18165065',
         },
       ],
     },

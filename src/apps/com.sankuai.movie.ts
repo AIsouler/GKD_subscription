@@ -6,16 +6,16 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      matchTime: 10000,
+      name: '权限提示-开启通知弹窗',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text^="更新"] +(3) LinearLayout > [text="取消"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12649942',
-        'https://i.gkd.li/i/12649938',
-        'https://i.gkd.li/i/13799885',
+      rules: [
+        {
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] - * > [text="开启通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/18455375',
+        },
       ],
     },
   ],

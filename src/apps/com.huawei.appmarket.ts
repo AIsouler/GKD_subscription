@@ -22,26 +22,15 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '@[text="以后再说"] + [text="立即更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/13228520',
-    },
-    {
-      key: 2,
-      name: '青少年模式',
-      desc: '点击"知道了"',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
-          matches: 'ScrollView >2 [text="知道了"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/461e8848-e8ed-4daf-b5f4-4b1aaa72e9a8',
-          snapshotUrls: 'https://i.gkd.li/i/14219285',
+          activityIds: '.MarketActivity',
+          matches: '@[text="以后再说"] + [text="立即更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/13228520',
         },
       ],
     },
@@ -92,6 +81,51 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/13a31ae0-10c8-49bc-9154-363498237eff',
           snapshotUrls: 'https://i.gkd.li/i/15523964',
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '权限提示-通知权限',
+      desc: '点击[以后再说]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.huawei.appgallery.jointmessage.jointmessage.impl.activity.NotificationSwitchDialogActivity',
+          matches: '[text="以后再说"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/1a0531ef-a18c-483d-8ac9-b50c96c6431d',
+          snapshotUrls: 'https://i.gkd.li/i/18328929',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '功能类-自动安装应用',
+      fastQuery: true,
+      activityIds:
+        'com.huawei.appgallery.systeminstalldistservice.riskcheck.ui.activity.InstallDistActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[vid="hidden_card_checkbox"][checked=false][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/2de4eb7c-964e-4b24-ab5f-1460c7993a0b',
+          snapshotUrls: 'https://i.gkd.li/i/18492709',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[text="继续安装"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6b79c349-8071-4598-a337-20a2f02df2f7',
+          snapshotUrls: 'https://i.gkd.li/i/18492712',
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          matches: '[text="完成"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/445fc7d4-8ee3-4f29-a79b-cd4c0d4fd11f',
+          snapshotUrls: 'https://i.gkd.li/i/18492760',
         },
       ],
     },

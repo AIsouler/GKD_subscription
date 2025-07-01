@@ -15,8 +15,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/13188653',
         },
         {
@@ -69,18 +72,25 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@ImageView - LinearLayout >n [text="开启消息通知"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12880812',
-        'https://i.gkd.li/i/12880802',
+      rules: [
+        {
+          activityIds: 'com.uc.browser.InnerUCMobile',
+          matches: '@ImageView - LinearLayout >n [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/12880812',
+        },
       ],
     },
     {
       key: 11,
-      name: '功能类-请求添加桌面快捷方式权限弹窗',
-      activityIds: 'com.uc.browser.InnerUCMobile',
-      rules: '@ImageView + [text^="添加"][text$="到桌面"]',
-      snapshotUrls: 'https://i.gkd.li/i/12880983',
+      name: '其他-请求添加桌面快捷方式弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.uc.browser.InnerUCMobile',
+          matches: '@ImageView + [text^="添加"][text$="到桌面"]',
+          snapshotUrls: 'https://i.gkd.li/i/12880983',
+        },
+      ],
     },
   ],
 });

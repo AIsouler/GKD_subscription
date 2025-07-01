@@ -48,26 +48,26 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-插屏广告',
-      activityIds: [
-        'com.ksf.yyx.MainActivity',
-        'com.sigmob.sdk.base.common.TransparentAdActivity',
-        // 'com.miui.wakepath.ui.ConfirmStartActivity', //抓到activityIds为小米的 不确定是否正常
-        // 'com.miui.home.launcher.Launcher',
-      ],
+      desc: '点击关闭',
       rules: [
         {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.MainActivity',
           matches: '[id="com.ksf.yyx:id/ksad_container"] [text="跳过"]',
           snapshotUrls: 'https://i.gkd.li/i/12775922',
         },
         {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.MainActivity',
           matches:
-            '[id="com.ksf.yyx:id/ksad_container"] TextView[text="广告"] <2 ViewGroup -n ViewGroup[childCount=1] > @ViewGroup[childCount=1 && clickable=true] > ImageView',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12775923',
-            'https://i.gkd.li/i/12998899',
-          ],
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/12775923',
         },
         {
+          key: 3,
+          activityIds: 'com.sigmob.sdk.base.common.TransparentAdActivity',
           matches: '[id="ad_area"] [id="close_btn"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12775925',
@@ -75,25 +75,15 @@ export default defineGkdApp({
           ],
         },
         {
-          action: 'clickCenter',
+          key: 4,
+          fastQuery: true,
+          activityIds: '.MainActivity',
           matches:
-            '[text^="去"][text$="看看"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12775921',
             'https://i.gkd.li/i/12776903',
           ],
-        },
-        {
-          action: 'clickCenter',
-          matches:
-            'TextView[text="查看详情"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout > FrameLayout > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12789196',
-        },
-        {
-          action: 'clickCenter',
-          matches:
-            'TextView[text="立即下载"] < FrameLayout <2 FrameLayout[childCount=2] -n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12789928',
         },
       ],
     },

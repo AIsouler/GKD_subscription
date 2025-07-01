@@ -7,6 +7,9 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -51,12 +54,13 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯广告',
+          fastQuery: true,
           activityIds: [
             'com.feiyu.morin.view.main.MainActivity',
             'com.feiyu.morin.view.main.PlayerBottomControlActivity',
           ],
           matches:
-            'ImageView + LinearLayout + LinearLayout + FrameLayout[childCount=1] > ImageView[childCount=0]',
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text="下载应用" || text="立即下载" || text="查看详情" || text="领取优惠" || text="进入小程序" || text="了解更多"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13521680',
             'https://i.gkd.li/i/13625476',

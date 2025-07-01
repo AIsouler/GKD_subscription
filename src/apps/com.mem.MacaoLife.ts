@@ -11,16 +11,25 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.mem.MacaoLife:id/cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/13350665',
+      rules: [
+        {
+          activityIds: 'com.mem.life.ui.launch.LaunchActivity',
+          matches: '[id="com.mem.MacaoLife:id/cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13350665',
+        },
+      ],
     },
     {
       key: 2,
       name: '局部广告-浮窗广告',
-      fastQuery: true,
-      activityIds: 'com.mem.life.ui.home.HomeActivity',
-      rules: '[id="com.mem.MacaoLife:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13350685',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mem.life.ui.home.HomeActivity',
+          matches: '[id="com.mem.MacaoLife:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13350685',
+        },
+      ],
     },
   ],
 });

@@ -10,11 +10,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.eastmoney.android.berlin:id/tv_update_next_time"] + [id="com.eastmoney.android.berlin:id/tv_update_now"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12706070', //com.eastmoney.android.module.launcher.internal.home.HomeActivity
-        'https://i.gkd.li/i/13399156', //com.bbk.launcher2.Launcher
+      rules: [
+        {
+          activityIds:
+            'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
+          matches: '[id="com.eastmoney.android.berlin:id/tv_update_next_time"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706070',
+        },
       ],
     },
     {
@@ -23,9 +25,15 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '[id="com.eastmoney.android.berlin:id/push_on_notify_on"] + [id="com.eastmoney.android.berlin:id/push_on_notify_delete"]',
-      snapshotUrls: 'https://i.gkd.li/i/12706065',
+      rules: [
+        {
+          activityIds:
+            'com.eastmoney.android.module.launcher.internal.home.HomeActivity',
+          matches:
+            '[id="com.eastmoney.android.berlin:id/push_on_notify_delete"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706065',
+        },
+      ],
     },
   ],
 });

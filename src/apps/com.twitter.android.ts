@@ -8,12 +8,12 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-主页信息流广告',
       desc: '点击右上角关闭,点击我不喜欢',
+      actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
+      fastQuery: true,
       activityIds: [
         'com.twitter.app.main.MainActivity',
         'com.twitter.app.profiles.ProfileActivity',
       ],
-      actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
-      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -39,10 +39,12 @@ export default defineGkdApp({
           preKeys: [0, 1],
           key: 10,
           name: '点击[我不喜欢这个广告]',
-          matches: '@ViewGroup[clickable=true] > [text="我不喜欢这个广告"]',
+          matches:
+            '@ViewGroup[clickable=true] > [text="我不喜欢这个广告" || text^="屏蔽"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12798810',
             'https://i.gkd.li/i/14782902',
+            'https://i.gkd.li/i/20239421',
           ],
         },
       ],
@@ -64,8 +66,8 @@ export default defineGkdApp({
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] +n [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12825969', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://i.gkd.li/i/12847584', // com.twitter.android.search.implementation.results.SearchActivity
+            'https://i.gkd.li/i/12825969',
+            'https://i.gkd.li/i/12847584',
           ],
         },
         {
@@ -74,8 +76,8 @@ export default defineGkdApp({
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text$="推荐"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12882676', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://i.gkd.li/i/12904603', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/i/12882676',
+            'https://i.gkd.li/i/12904603',
           ],
         },
         {
@@ -92,21 +94,21 @@ export default defineGkdApp({
           matches:
             '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"||text^="屏蔽"||text^="Block"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12828815', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://i.gkd.li/i/12847600', // com.twitter.android.search.implementation.results.SearchActivity
-            'https://i.gkd.li/i/12904602', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/i/12828815',
+            'https://i.gkd.li/i/12847600',
+            'https://i.gkd.li/i/12904602',
             'https://i.gkd.li/i/13680783', // 兼容英文
           ],
         },
         {
-          preKeys: 10,
+          preKeys: [10],
           key: 11,
           name: '二次确认-点击屏蔽',
           matches:
             '[text="取消"||text^="Cancel"] + [text="屏蔽"||text^="Block"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12828832', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://i.gkd.li/i/12904601', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/i/12828832',
+            'https://i.gkd.li/i/12904601',
             'https://i.gkd.li/i/13680798', // 兼容英文
           ],
         },
@@ -117,7 +119,7 @@ export default defineGkdApp({
       name: '分段广告-用户资料页信息流广告',
       desc: '点击右上角关闭,点击我不喜欢',
       fastQuery: true,
-      activityIds: ['com.twitter.app.profiles.ProfileActivity'],
+      activityIds: 'com.twitter.app.profiles.ProfileActivity',
       actionCd: 3000,
       rules: [
         {
@@ -126,8 +128,8 @@ export default defineGkdApp({
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] +n [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text="推荐"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12825969', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://i.gkd.li/i/12847584', // com.twitter.android.search.implementation.results.SearchActivity
+            'https://i.gkd.li/i/12825969',
+            'https://i.gkd.li/i/12847584',
           ],
         },
         {
@@ -136,8 +138,8 @@ export default defineGkdApp({
           matches:
             '@[id="com.twitter.android:id/tweet_curation_action"] <2 * + [id="com.twitter.android:id/tweet_auto_playable_content_parent"] > [id="com.twitter.android:id/tweet_promoted_badge_bottom"][text$="推荐"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12882676', // com.twitter.tweetdetail.TweetDetailActivity
-            'https://i.gkd.li/i/12904603', // com.twitter.app.profiles.ProfileActivity
+            'https://i.gkd.li/i/12882676',
+            'https://i.gkd.li/i/12904603',
           ],
         },
         {
@@ -159,6 +161,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.twitter.app.main.MainActivity',
           matches: '[id="com.twitter.android:id/app_rating_button_never"]',
           snapshotUrls: 'https://i.gkd.li/i/13774150',
         },
@@ -174,6 +177,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.twitter.app.main.MainActivity',
           matches:
             '@[clickable=true] > [visibleToUser=true][text="Not now"] <<n [vid="half_cover_recycler_view_holder"]',
           snapshotUrls: 'https://i.gkd.li/i/13930126',

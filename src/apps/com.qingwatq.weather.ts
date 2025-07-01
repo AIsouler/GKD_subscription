@@ -10,6 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: 'com.qingwatq.weather.home.HomeActivity',
           matches:
             '[id="com.qingwatq.weather:id/titleArea"] + [id="com.qingwatq.weather:id/closeImg"]',

@@ -5,32 +5,6 @@ export default defineGkdApp({
   name: '喵趣漫画',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          matches: '[text="跳过"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14753912',
-        },
-        {
-          key: 1,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14031922',
-            'https://i.gkd.li/i/14322264',
-          ],
-        },
-      ],
-    },
-    {
       key: 2,
       name: '更新提示',
       desc: '点击"暂不"',
@@ -40,6 +14,8 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
+          activityIds:
+            'com.aster.comic.app.view.bookdetails.BookdetailsActivity',
           matches: '[id="com.paokeji.yiqu:id/btnCancel"]',
           exampleUrls:
             'https://m.gkd.li/57941037/2ce54292-bfc6-41c6-b2e5-e7d8302fc522',

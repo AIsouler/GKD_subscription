@@ -31,13 +31,25 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-优惠券弹窗',
-      desc: '自动关闭',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
-          activityIds: 'com.mcdonalds.gma.cn.activity.MainActivity',
-          matches: '[id="com.mcdonalds.gma.cn:id/iv_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13465873',
+          key: 1,
+          fastQuery: true,
+          forcedTime: 10000, // https://github.com/AIsouler/GKD_subscription/issues/677
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="iv_ad_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6a95fcb7-3f9c-43f8-80bb-bdd034c81252',
+          snapshotUrls: 'https://i.gkd.li/i/17967920',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.mcd.order.activity.OrderActivity',
+          matches: '[vid="recommend_product_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/8f3670e7-a0c9-47a5-b708-163a94ac2a8f',
+          snapshotUrls: 'https://i.gkd.li/i/17967943',
         },
       ],
     },
@@ -58,15 +70,19 @@ export default defineGkdApp({
     {
       key: 4,
       name: '权限提示-设备信息权限',
-      desc: '点击【不允许】',
+      desc: '点击[不允许]',
       fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'com.mcdonalds.gma.cn.activity.LaunchActivity',
-      rules: '[text$="获取您的设备信息"] + * > [text="不允许"]',
-      exampleUrls:
-        'https://m.gkd.li/101449500/121c7e65-780e-41aa-acf8-34c491d4be41',
-      snapshotUrls: 'https://i.gkd.li/i/15944357',
+      rules: [
+        {
+          activityIds: 'com.mcdonalds.gma.cn.activity.LaunchActivity',
+          matches: '[text$="获取您的设备信息"] + * > [text="不允许"]',
+          exampleUrls:
+            'https://m.gkd.li/101449500/121c7e65-780e-41aa-acf8-34c491d4be41',
+          snapshotUrls: 'https://i.gkd.li/i/15944357',
+        },
+      ],
     },
   ],
 });

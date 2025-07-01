@@ -105,12 +105,17 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text="确认"] - [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/13042207',
+      rules: [
+        {
+          activityIds: '.homepage.view.activity.HomePageActivity',
+          matches: '[text="确认"] - [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/13042207',
+        },
+      ],
     },
     {
       key: 5,

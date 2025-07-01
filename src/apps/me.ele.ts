@@ -11,11 +11,20 @@ export default defineGkdApp({
       // matchTime: 10000, 部分更新提示不在10s内
       actionMaximum: 1,
       resetMatch: 'app',
-      // matchDelay: 3000, 想不起来为啥加的了，先删掉
-      rules: ['[text*="更新应用版本"]', '[text="取消"]'],
-      snapshotUrls: [
-        'https://i.gkd.li/i/12650280',
-        'https://i.gkd.li/i/13206819',
+      rules: [
+        {
+          activityIds: [
+            'com.afollestad.materialdialogs.MaterialDialog',
+            '.application.ui.Launcher.LauncherActivity',
+          ],
+          matches: ['[text*="更新应用版本"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/7a0ade81-d2f3-4174-ba6e-9976b8e7ecf5',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12650280',
+            'https://i.gkd.li/i/13206819',
+            'https://i.gkd.li/i/18096620',
+          ],
+        },
       ],
     },
     {
@@ -34,8 +43,10 @@ export default defineGkdApp({
             'me.ele.shopdetailv2.ShopDetailV2Activity',
             'me.ele.foodchannel.page.WMChannelNativeActivity',
           ],
-          matches:
-            'ViewGroup[childCount=2] > @ImageView[index=1][clickable=true] <<n [id="me.ele:id/id_magex_mistview"]',
+          anyMatches: [
+            '@ImageView[childCount=0][clickable=true][index=parent.childCount.minus(1)] - ViewGroup[childCount=2] < ViewGroup[childCount=2] < [vid="id_magex_mistview"]',
+            '@ImageView[childCount=0][clickable=true][index=parent.childCount.minus(1)] - ViewGroup[childCount=2] < [vid="id_magex_mistview"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12650238',
             'https://i.gkd.li/i/13294893',
@@ -45,12 +56,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13710581',
             'https://i.gkd.li/i/15148480',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17858192',
         },
         {
           key: 1,
           name: '红包弹窗2',
           activityIds: 'me.ele.newretail.pack.ui.activity.PackActivity',
-          matches: '[desc$="今日红包"] +(n) [desc$="关闭"][clickable=true]',
+          matches: '[desc$="今日红包"] +n [desc$="关闭"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12650713',
         },
         {
@@ -58,12 +70,12 @@ export default defineGkdApp({
           name: '红包弹窗3',
           fastQuery: true,
           matches:
-            '@ViewGroup[index=2][clickable=true][childCount=0] <3 ViewGroup < ViewGroup < ViewGroup[vid="id_magex_mist_view"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/25425b3a-309d-464d-bbb5-091715675fcd',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14472929',
+            '@ViewGroup[index=2][clickable=true][childCount=0][index=parent.childCount.minus(1)] <3 ViewGroup[childCount=3] < ViewGroup[childCount=1] < ViewGroup[vid="id_magex_mist_view"]',
+          exampleUrls: 'https://e.gkd.li/a933d63b-14b2-4c91-bdd9-0ba578da6bff',
+          snapshotUrls: 'https://i.gkd.li/i/14472929',
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/16346727', // 误触 add [childCount=0]
+            'https://i.gkd.li/i/17858192',
           ],
         },
       ],
@@ -122,18 +134,28 @@ export default defineGkdApp({
     {
       key: 5,
       name: '全屏广告-付款后弹窗广告',
-      fastQuery: true,
-      activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
-      rules: 'bb Button[text="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/13205301',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
+          matches:
+            'View[childCount=2] > View[childCount=2] > @Button[text="关闭"][clickable=true] <<n [id="me.ele:id/inside_web_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/13205301',
+        },
+      ],
     },
     {
       key: 6,
       name: '全屏广告-吃货卡续费弹窗',
-      fastQuery: true,
-      activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
-      rules: '@View + View >2 [text="买校园版超级吃货卡"]',
-      snapshotUrls: 'https://i.gkd.li/i/13295007',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
+          matches:
+            '@View[clickable=true] + View >2 [visibleToUser=true][text*="立即续费"] <<n [id="me.ele:id/inside_web_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/13295007',
+        },
+      ],
     },
     {
       key: 7,
@@ -145,10 +167,8 @@ export default defineGkdApp({
           activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
           matches:
             '@ViewGroup[childCount=0][clickable=true][visibleToUser=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13710588',
-            'https://i.gkd.li/i/16326917', // 防止误触
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/13710588',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16326917',
         },
         {
           key: 1,
@@ -184,14 +204,15 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      fastQuery: true,
       name: '通知提示-获取订单信息通知',
-      desc: '点击X',
+      desc: '点击关闭',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.message.ui.PushMessageGuideActivity',
           matches:
             '@View[visibleToUser=true] < * <2 [id="me.ele:id/frame_bottom_bg"]',
           snapshotUrls: 'https://i.gkd.li/i/13931205',

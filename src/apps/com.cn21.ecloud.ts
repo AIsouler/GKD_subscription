@@ -8,9 +8,12 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-首页弹窗广告',
       fastQuery: true,
-      activityIds: 'com.cn21.ecloud.activity.MainPageActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.cn21.ecloud.activity.MainPageActivity',
           matches:
             'FrameLayout > View[childCount=1] > View[childCount=1] >(1,4) View[childCount=2][desc=null] > @ImageView[clickable=true][visibleToUser=true] <<n [vid="content_frame"]',
           snapshotUrls: [
@@ -28,8 +31,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.cn21.ecloud:id/ivCancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/13399488',
+      rules: [
+        {
+          activityIds: '.activity.MainPageActivity',
+          matches: '[id="com.cn21.ecloud:id/ivCancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13399488',
+        },
+      ],
     },
   ],
 });

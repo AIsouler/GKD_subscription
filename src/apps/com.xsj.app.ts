@@ -35,8 +35,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13875711',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[desc="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/i/13875711',
+        },
+      ],
     },
   ],
 });

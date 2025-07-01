@@ -13,14 +13,18 @@ export default defineGkdApp({
       actionMaximumKey: 0,
       priorityTime: 10000,
       excludeActivityIds: [
-        'com.coolapk.market.view.search.', // 在搜索页面禁用
-        'com.coolapk.market.view.feed.', // 在动态页面禁用
+        '.view.search.', // 在搜索页面禁用
+        '.view.feed.', // 在动态页面禁用
+        '.view.node.DynamicNodePageActivity',
       ],
       rules: [
         {
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/12503773',
             'https://i.gkd.li/i/13247610',
@@ -32,10 +36,9 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          matches: [
-            '[id="com.coolapk.market:id/ad_container"][visibleToUser=true]',
-            '[text*="跳过"][text.length<10][visibleToUser=true]',
-          ],
+          excludeMatches:
+            '[id="com.coolapk.market:id/item_view" || vid="card_view"]',
+          matches: '[text*="跳过"][text.length<5][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
             'https://i.gkd.li/i/13211392',
@@ -43,6 +46,7 @@ export default defineGkdApp({
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/13247733',
             'https://i.gkd.li/i/13296816',
+            'https://i.gkd.li/i/18245546',
           ],
         },
       ],
@@ -50,62 +54,44 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-信息流广告',
-      desc: '点击卡片右上角按钮->免广告-点击关闭->选择关闭原因-点击不感兴趣',
-      matchRoot: true,
       fastQuery: true,
       activityIds: [
-        'com.coolapk.market.view.main.MainActivity',
-        'com.coolapk.market.view.node.DynamicNodePageActivity',
-        'com.coolapk.market.view.feed.FeedDetailActivityV8',
-        'com.bytedance.sdk.openadsdk.core.dislike.ui.f',
+        '.view.feed.FeedDetailActivityV8',
+        '.view.main.MainActivity',
+        '.view.node.DynamicNodePageActivity',
+        '.view.base.SimpleAlphaActivity',
       ],
       rules: [
         {
-          key: 1,
-          name: '点击右上角x按钮',
-          excludeMatches: [
-            '[text="回复"] + [text="发布"]',
-            '[text="创建收藏单"][visibleToUser=true]',
-            '[vid="submit_view"][text="发布"]',
-          ],
-          matches: [
-            '[text*="广告" || text="推广"][visibleToUser=true]',
-            '[vid="close_view"]',
-          ],
+          key: 0,
+          matches:
+            '@[vid="close_view"] <<n [vid="coolapk_card_view"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12707506',
-            'https://i.gkd.li/i/12642094',
-            'https://i.gkd.li/i/12642148',
-            'https://i.gkd.li/i/12774771',
-            'https://i.gkd.li/i/13257987',
-            'https://i.gkd.li/i/17450282',
+            'https://i.gkd.li/i/19004644',
+            'https://i.gkd.li/i/19004652',
+            'https://i.gkd.li/i/19004663',
+            'https://i.gkd.li/i/19005176',
+            'https://i.gkd.li/i/20776874',
           ],
           excludeSnapshotUrls: [
-            'https://i.gkd.li/i/14996359', // 避免误触
-            'https://i.gkd.li/i/15159886', // 避免误触
-            'https://i.gkd.li/i/15587119', // 避免误触
+            'https://i.gkd.li/i/14996359',
+            'https://i.gkd.li/i/15159886',
+            'https://i.gkd.li/i/15587119',
+            'https://i.gkd.li/i/20768037',
           ],
         },
         {
-          preKeys: [1],
-          key: 2,
-          name: '点击[不感兴趣]/[关闭]',
-          matches: '@[text="不感兴趣" || text="关闭"] <n * > [text*="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14959519',
-            'https://i.gkd.li/i/14964859',
+          preKeys: [0],
+          anyMatches: [
+            '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
+            '[text="不感兴趣"][clickable=true][visibleToUser=true]',
           ],
-        },
-        {
-          preKeys: [1, 2],
-          key: 3,
-          name: '选择关闭原因-点击不感兴趣',
-          matches: '@LinearLayout > TextView[text="不感兴趣"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12472633',
-            'https://i.gkd.li/i/12655713',
-            'https://i.gkd.li/i/12660759',
-            'https://i.gkd.li/i/12706437',
+            'https://i.gkd.li/i/19004649',
+            'https://i.gkd.li/i/19643258',
+            'https://i.gkd.li/i/19643262',
+            'https://i.gkd.li/i/19534649',
+            'https://i.gkd.li/i/20776872',
           ],
         },
       ],
@@ -113,22 +99,38 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      matchTime: 10000,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      snapshotUrls: 'https://i.gkd.li/i/12503762',
-      rules: '[text="立即更新"] - [text="取消"]',
+      rules: [
+        {
+          action: 'back',
+          activityIds: '.view.main.MainActivity',
+          matches: '[text="立即更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/15511206',
+        },
+      ],
     },
     {
       key: 3,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text="去开启"] - [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13296465',
+      rules: [
+        {
+          activityIds: [
+            '.view.main.MainActivity',
+            '.view.splash.SplashActivity',
+          ],
+          matches: '[text="去开启"] - [text="以后再说"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13296465',
+            'https://i.gkd.li/i/20708984',
+          ],
+        },
+      ],
     },
     {
       key: 4,
@@ -147,6 +149,21 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16448265',
             'https://i.gkd.li/i/16448385',
           ],
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.view.search.SuperSearchResultActivity',
+          matches:
+            '@[desc="关闭"] <<n [vid="item_view"] <<n [vid="to_native_ad_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/efd366d9-1c66-4c35-b164-6f91a623e2f2',
+          snapshotUrls: 'https://i.gkd.li/i/19643150',
         },
       ],
     },

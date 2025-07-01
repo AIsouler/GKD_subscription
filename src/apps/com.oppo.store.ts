@@ -12,16 +12,29 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="下次再说"] -n [text="发现新版本"]',
-      snapshotUrls: 'https://i.gkd.li/i/13295202',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '@[text="下次再说"] -3 [text="发现新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/13295202',
+        },
+      ],
     },
     {
       key: 2,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: 'com.oppo.store.MainActivity',
-      rules: 'ImageView[id="com.oppo.store:id/dialog_delete"][desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/13295201',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.oppo.store.MainActivity',
+          matches:
+            'ImageView[id="com.oppo.store:id/dialog_delete"][desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/13295201',
+        },
+      ],
     },
   ],
 });

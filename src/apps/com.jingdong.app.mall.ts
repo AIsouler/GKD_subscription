@@ -82,22 +82,27 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '点击关闭',
       fastQuery: true,
-      //matchTime: 10000, 该弹窗可能在多个页面出现
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
+          activityIds: [
+            '.MainFrameActivity',
+            'com.jd.lib.message.messagecenter',
+          ],
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] <n * > [text="开启消息通知"]',
+            '@ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true] -n [text="开启消息通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13917163',
             'https://i.gkd.li/i/13463618',
             'https://i.gkd.li/i/14692570',
+            'https://i.gkd.li/i/18060234',
           ],
         },
         {
           key: 1,
+          activityIds: 'com.jd.lib.message.messagecenter',
           matches: '@[clickable=true] + [text^="打开系统通知"]',
           snapshotUrls: 'https://i.gkd.li/i/12839865',
         },
@@ -111,10 +116,13 @@ export default defineGkdApp({
           key: 0,
           activityIds: 'com.jingdong.app.mall.MainFrameActivity',
           matches: '@FrameLayout[clickable=true] > [desc="关闭"]',
+          excludeMatches:
+            '[text="确定" || text="加入购物车" || text*="购买" || text*="下单"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13165721',
             'https://i.gkd.li/i/15364514',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/18455760', //避免在activityIds为null时误触
         },
         {
           key: 1,
@@ -150,6 +158,18 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15862131',
             'https://i.gkd.li/i/16818580', // 增加excludeMatches: 'TextView[text="退换/售后"]', 避免在刚刚打开该快照页面时误触（此时activityId并未改变）
           ],
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          action: 'back',
+          activityIds: '.MainFrameActivity',
+          matches: '[text^="惊喜福利来袭"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/580d3cb5-503e-47a9-ba88-056e91c2f084',
+          snapshotUrls: 'https://i.gkd.li/i/17974166',
         },
       ],
     },
@@ -242,6 +262,24 @@ export default defineGkdApp({
           matches: '[vid="lib_cashier_finish_back_page_text"]',
           exampleUrls: 'https://e.gkd.li/ab886df0-2b34-4804-be7d-742a06fadda9',
           snapshotUrls: 'https://i.gkd.li/i/17358003',
+        },
+      ],
+    },
+    {
+      key: 15,
+      name: '功能类-支付订单后跳过开通[刷脸支付]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.wangyin.payment.jdpaysdk.counter.ui.pay.CounterActivity',
+          action: 'back',
+          matches: '[text="开启刷脸支付"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bad5489e-0ec6-4039-8e4e-52b4b444f019',
+          snapshotUrls: 'https://i.gkd.li/i/20709175',
         },
       ],
     },

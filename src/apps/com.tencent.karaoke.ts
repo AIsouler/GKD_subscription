@@ -11,8 +11,9 @@ export default defineGkdApp({
         {
           key: 0,
           name: '动态页面-卡片广告',
+          fastQuery: true,
           activityIds: 'com.tencent.karaoke.module.main.ui.MainTabActivity',
-          matches: 'RelativeLayout > [text="广告"] + ImageView',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13334798',
         },
       ],
@@ -27,7 +28,7 @@ export default defineGkdApp({
           activityIds:
             'com.tencent.karaoke.module.splash.ui.SplashBaseActivity',
           matches:
-            '[desc$="霸屏的按钮"] < ViewGroup + ViewGroup[childCount=1] > ViewGroup[childCount=0]',
+            'ViewGroup[childCount=0] < @ViewGroup[clickable=true][childCount=1] - ViewGroup > [desc*="双十一"]',
           snapshotUrls: 'https://i.gkd.li/i/13363281',
         },
       ],

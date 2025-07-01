@@ -30,19 +30,29 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-选择素材界面上方广告',
-      activityIds: 'com.vega.libcutsame.select.view.CutSameSelectMediaActivity',
-      rules:
-        '[vid="gallery_layout_below_category_view"] >3 [text="立即下载"] -n LynxFlattenUI[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/14122865',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.vega.libcutsame.select.view.CutSameSelectMediaActivity',
+          matches:
+            '@LynxFlattenUI[clickable=true][visibleToUser=true] +6 [text="立即下载"]',
+          snapshotUrls: 'https://i.gkd.li/i/14122865',
+        },
+      ],
     },
     {
       key: 2,
       name: '功能类-恢复创作',
       desc: '自动点击[立即恢复]按钮',
-      activityIds: 'com.vega.main.MainActivity',
-      fastQuery: true,
-      rules: '[vid="tv_title_resume_design"] +2 [vid="tvResumeNow"]',
-      snapshotUrls: 'https://i.gkd.li/i/14292755',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.vega.main.MainActivity',
+          matches: '[vid="tv_title_resume_design"] +2 [vid="tvResumeNow"]',
+          snapshotUrls: 'https://i.gkd.li/i/14292755',
+        },
+      ],
     },
   ],
 });

@@ -10,11 +10,11 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
           matches:
             '[id="com.zhangyue.commonplugin:id/dialog_welfare_card_close"]',
-          exampleUrls:
-            'https://m.gkd.li/6328439/4feb19d4-f90f-4ed5-b025-9c2a6e4fc479',
-          snapshotUrls: 'https://i.gkd.li/i/13387130',
+          exampleUrls: 'https://e.gkd.li/76f226bb-fcd4-439a-9eed-520a9c35a0c0',
+          snapshotUrls: 'https://i.gkd.li/i/19890575',
         },
       ],
     },
@@ -23,8 +23,8 @@ export default defineGkdApp({
       name: '局部广告-首页浮窗广告',
       rules: [
         {
-          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
           fastQuery: true,
+          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
           matches: '[id="com.heytap.reader:id/float_delete"]',
           exampleUrls:
             'https://m.gkd.li/6328439/860371ea-1f09-4f82-8ed6-1436eca4a50d',
@@ -37,8 +37,11 @@ export default defineGkdApp({
       name: '局部广告-今日推荐',
       rules: [
         {
-          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
           matches: '[id="com.heytap.reader:id/iv_float_read_continue_close"]',
           exampleUrls:
             'https://m.gkd.li/6328439/3ee7210c-970e-4c9a-acb6-9254245c27a0',

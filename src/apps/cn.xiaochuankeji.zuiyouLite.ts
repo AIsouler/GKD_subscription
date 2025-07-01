@@ -15,8 +15,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/14546304',
         },
         {
@@ -44,18 +47,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="cn.xiaochuankeji.zuiyouLite:id/young_close_btn"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12745083',
-        'https://i.gkd.li/i/13446652', //activityIds: 'cn.xiaochuankeji.zuiyouLite.ui.main.MainTest',
-      ],
-    },
-    {
       key: 2,
       name: '分段广告-信息流广告',
       fastQuery: true,
@@ -63,13 +54,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '点击"x"',
+          name: '点击关闭',
           matches: '[id="cn.xiaochuankeji.zuiyouLite:id/ad_remove"]',
           snapshotUrls: 'https://i.gkd.li/i/13387116',
         },
         {
-          preKeys: 0,
-          name: '点击"不喜欢广告主"',
+          preKeys: [0],
+          name: '点击[不喜欢广告主]',
           matches: '@LinearLayout[clickable=true] > [text="不喜欢广告主"]',
           snapshotUrls: 'https://i.gkd.li/i/13387155',
         },

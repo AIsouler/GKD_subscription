@@ -8,10 +8,10 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-钱包扩展服务提示',
       desc: '点击关闭',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           matches:
@@ -53,6 +53,37 @@ export default defineGkdApp({
           matches: '[text="直接关闭"]',
           exampleUrls: 'https://e.gkd.li/f0d67fb4-ccdb-443b-8e4e-9dff2242a84f',
           snapshotUrls: 'https://i.gkd.li/i/16833452',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '功能类-支付成功后点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.huawei.nfc.carrera.ui.swipe.SwipeResultActivity',
+          matches: '[vid="btn_completed"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/984fd805-ad50-4ffc-adce-fffe42109e98',
+          snapshotUrls: 'https://i.gkd.li/i/18146717',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '权限提示-NFC权限',
+      desc: '点击取消',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.huawei.nfc.carrera.ui.swipe.SetDefaultPayServiceActivity',
+          matches: [
+            '[text*="是否每次使用华为钱包都自动开启 NFC"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/87466a06-2169-4808-971e-d347cd40ac66',
+          snapshotUrls: 'https://i.gkd.li/i/20918311',
         },
       ],
     },

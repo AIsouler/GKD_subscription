@@ -10,18 +10,31 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',
-      snapshotUrls: 'https://i.gkd.li/i/13538351',
+      rules: [
+        {
+          activityIds:
+            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
+          matches:
+            '@ImageView[clickable=true][desc=null] < [desc^="开启系统通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/13538351',
+        },
+      ],
     },
     {
       key: 2,
-      name: '权限提示',
+      name: '权限提示-手机信息权限',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.taobao.idlefish.maincontainer.activity.MainActivity',
-      rules:
-        '@Button[visibleToUser=true][text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',
-      snapshotUrls: 'https://i.gkd.li/i/13620277',
+      rules: [
+        {
+          activityIds: '.maincontainer.activity.MainActivity',
+          matches: ['[text*="手机信息权限"]', '[text="取消"]'],
+          exampleUrls: 'https://e.gkd.li/81e3e4d8-f297-4476-b22c-73f0b97879ee',
+          snapshotUrls: 'https://i.gkd.li/i/13620277',
+        },
+      ],
     },
     {
       key: 3,
@@ -30,13 +43,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="立即升级"] -2 [text="暂不升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/13832272',
+      rules: [
+        {
+          activityIds: '.maincontainer.activity.MainActivity',
+          matches: '[text="立即升级"] -2 [text="暂不升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/13832272',
+        },
+      ],
     },
     {
       key: 4,
       name: '全屏广告-红包弹窗',
       desc: '点击关闭',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -50,33 +69,55 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 5,
-      name: '分段广告-搜索结果页广告',
-      rules: [
-        {
-          key: 0,
-          activityIds:
-            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
-          matches: '@[clickable=true] > [desc$="广告"]',
-          excludeMatches: '@[clickable=true] > [desc^="反馈成功"]',
-          action: 'longClick',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14723597',
-            'https://i.gkd.li/i/14723718', // excludeMatches
-          ],
-        },
-        {
-          key: 1,
-          preKeys: 0,
-          activityIds:
-            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
-          matches:
-            '[desc^="不喜欢该商品"] > ImageView[index=1][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14723632',
-        },
-      ],
-    },
+    // 该规则可能会出现多次触发一段后才能触发二段的情况，影响正常使用
+    // {
+    //   key: 5,
+    //   name: '分段广告-信息流广告',
+    //   forcedTime: 100000,
+    //   activityIds: [
+    //     'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
+    //     'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
+    //     '.search_implement.SearchResultActivity',
+    //     '.maincontainer.activity.MainActivity',
+    //   ],
+    //   rules: [
+    //     {
+    //       key: 0,
+    //       action: 'longClick',
+    //       matches:
+    //         '@View[longClickable=true][desc$="广告"][visibleToUser=true] > [desc!=null][visibleToUser=true]',
+    //       snapshotUrls: 'https://i.gkd.li/i/19593497',
+    //       excludeSnapshotUrls: 'https://i.gkd.li/i/19604467',
+    //     },
+    //     {
+    //       key: 1,
+    //       fastQuery: true,
+    //       action: 'longClick',
+    //       matches: '@[longClickable=true] >3 [text="广告"][visibleToUser=true]',
+    //       exampleUrls: 'https://e.gkd.li/ca42e088-6fae-4402-a000-06418bf054cf',
+    //       snapshotUrls: 'https://i.gkd.li/i/19603954',
+    //     },
+    //     {
+    //       key: 2,
+    //       fastQuery: true,
+    //       action: 'longClick',
+    //       activityIds: '.maincontainer.activity.MainActivity',
+    //       matches:
+    //         '@[longClickable=true][childCount=0][visibleToUser=true] < FrameLayout > [text="广告"][visibleToUser=true]',
+    //       exampleUrls: 'https://e.gkd.li/738c623e-58fe-45a1-9a28-957f0f812c72',
+    //       snapshotUrls: 'https://i.gkd.li/i/19604324',
+    //     },
+    //     {
+    //       preKeys: [0, 1, 2],
+    //       matches: '[desc="引起不适"][visibleToUser=true]',
+    //       snapshotUrls: [
+    //         'https://i.gkd.li/i/19593500',
+    //         'https://i.gkd.li/i/19603913',
+    //         'https://i.gkd.li/i/19604317',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       key: 6,
       name: '功能类-自动点击[查看原图]',

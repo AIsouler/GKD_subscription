@@ -11,8 +11,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[id="com.yujian.ResideMenuDemo:id/btn_selectOther"]',
-      snapshotUrls: 'https://i.gkd.li/i/13224234',
+      rules: [
+        {
+          activityIds: 'cn.yujian.MainActivity',
+          matches:
+            'TextView[id="com.yujian.ResideMenuDemo:id/btn_selectOther"]',
+          snapshotUrls: 'https://i.gkd.li/i/13224234',
+        },
+      ],
     },
   ],
 });

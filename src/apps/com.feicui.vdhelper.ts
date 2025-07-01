@@ -7,7 +7,10 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
-      activityIds: ['com.ys.resemble.ui.MainActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.ys.resemble.ui.MainActivity',
       rules: [
         {
           key: 0,

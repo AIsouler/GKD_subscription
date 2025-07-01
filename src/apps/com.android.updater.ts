@@ -13,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: ['.MainActivity', '.UpdateActivity'],
           matches: [
             '[vid="alertTitle"][text="开启智能更新" || text="Install automatically?"]',
             '[id="android:id/button2"][text="暂不开启" || text="No"]',
@@ -20,6 +21,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/15386937',
             'https://i.gkd.li/i/15386869',
+            'https://i.gkd.li/i/18469146',
           ],
         },
       ],

@@ -16,9 +16,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          excludeActivityIds: [
+            'com.xingin.alioth.search.GlobalSearchActivity',
+            'com.xingin.growth.ob.FloatingObPageActivity',
+          ],
+          excludeMatches:
+            '[text="首页" || text="选择兴趣推荐更精准"][visibleToUser=true]',
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/9733ada7-4961-4a9f-b48d-3398ecd05508',
           snapshotUrls: 'https://i.gkd.li/i/17452158',
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/19035037',
+            'https://i.gkd.li/i/20585457',
+          ],
         },
         {
           key: 1,
@@ -35,7 +45,6 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-通知权限',
       fastQuery: true,
-      matchTime: 30000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -45,12 +54,16 @@ export default defineGkdApp({
             '.index.v2.IndexActivityV2',
             '.notification.NotificationAuthorizationTranslucentActivity',
             'com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity',
+            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity',
           ],
-          matches: '@ImageView <2 FrameLayout >2 [text^="打开通知"]',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] - LinearLayout > [text^="打开通知" || text^="Enable notifications"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13195753',
             'https://i.gkd.li/i/13222356',
             'https://i.gkd.li/i/13255627',
+            'https://i.gkd.li/i/16918033',
+            'https://i.gkd.li/i/18417785',
           ],
         },
         {
@@ -58,14 +71,6 @@ export default defineGkdApp({
           activityIds: '.index.v2.IndexActivityV2',
           matches: '@ImageView <2 FrameLayout - [text^="打开通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13250418',
-        },
-        {
-          key: 2,
-          activityIds:
-            'com.xingin.authorization.NotificationAuthorizationTranslucentActivity',
-          matches: '[vid="mNegativeImageView"]',
-          exampleUrls: 'https://e.gkd.li/01c3cb0b-80b1-4e70-a330-6f4afb7ddf44',
-          snapshotUrls: 'https://i.gkd.li/i/16918033',
         },
       ],
     },
@@ -77,6 +82,10 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      activityIds: [
+        '.index.v2.IndexActivityV2',
+        'com.xingin.update.UpdateDialogActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -90,7 +99,11 @@ export default defineGkdApp({
         {
           key: 1,
           matches: 'Button[text="立即安装"] + Button[text="稍后再说"]',
-          snapshotUrls: 'https://i.gkd.li/i/15283162',
+          exampleUrls: 'https://e.gkd.li/7064a569-fcdd-44e2-b4d1-c55e093f4a02',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15283162',
+            'https://i.gkd.li/i/18289347',
+          ],
         },
       ],
     },
@@ -105,9 +118,9 @@ export default defineGkdApp({
           key: 0,
           action: 'longClick',
           name: '长按"赞助"/"广告"卡片',
+          excludeMatches: 'RecyclerView > LinearLayout > [text^="不喜欢"]',
           matches:
             '@FrameLayout[clickable=true] > LinearLayout TextView[text="赞助"||text="广告"][visibleToUser=true]',
-          excludeMatches: 'RecyclerView > LinearLayout > [text^="不喜欢"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13455503',
             'https://i.gkd.li/i/13470690',
@@ -115,7 +128,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           name: '点"不感兴趣"',
           matches:
             'RecyclerView > @LinearLayout[index=0] > TextView[text^="不喜欢"]',
@@ -132,8 +145,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.xingin.reactnative.ui.XhsReactTranslucentActivity',
           fastQuery: true,
+          activityIds: 'com.xingin.reactnative.ui.XhsReactTranslucentActivity',
           matches:
             '@ImageView[visibleToUser=true] < * -2 * > [text="你有新人券待领取"]',
           snapshotUrls: 'https://i.gkd.li/i/14391484',
@@ -150,6 +163,7 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
+          activityIds: 'com.xingin.lurker.appscore.ui.AppScoreDialogActivity',
           matches: '[text="您对小红书的评分如何?"]',
           exampleUrls:
             'https://m.gkd.li/57941037/9727815d-b881-4904-bbdc-19ade426977e',

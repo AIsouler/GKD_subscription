@@ -19,5 +19,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-关闭安装应用后的安全检测',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.SecurityCheckActivity',
+          matches: '[vid="finish"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f8a626f2-36dd-4e3a-9ceb-70877c27330c',
+          snapshotUrls: 'https://i.gkd.li/i/20592226',
+        },
+      ],
+    },
   ],
 });

@@ -13,6 +13,8 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds:
+            'cn.com.servyou.servyouzhuhai.activity.main.imps.MainActivity',
           matches: '[id="com.example.servyouappzhuhai:id/btn_dialog_negtive"]',
           snapshotUrls: 'https://i.gkd.li/i/13440721',
         },

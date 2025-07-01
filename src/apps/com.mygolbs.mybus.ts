@@ -5,35 +5,6 @@ export default defineGkdApp({
   name: '掌上公交',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/f1099ff6-38aa-4393-8cf5-418ab8ffd20e',
-          snapshotUrls: 'https://i.gkd.li/i/12745634',
-        },
-        {
-          key: 1,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/8b0c3f96-ae36-4799-87c2-1ea37c3d2d4c',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12790485',
-            'https://i.gkd.li/i/14546388',
-          ],
-        },
-      ],
-    },
-    {
       key: 1,
       name: '分段广告-卡片广告',
       activityIds: [
@@ -44,6 +15,7 @@ export default defineGkdApp({
       ],
       rules: [
         {
+          key: 1,
           name: '点击底部中间x关闭图标',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] RelativeLayout[childCount=4] > TextView[text.length>0] + ImageView + ImageView[clickable=true][id=null]',
@@ -55,6 +27,7 @@ export default defineGkdApp({
           ],
         },
         {
+          key: 2,
           name: '点击右上/下角x关闭图标',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=2||childCount=3] > View[childCount=4] > View[childCount=1] > Image[text=""]',
@@ -64,24 +37,28 @@ export default defineGkdApp({
           ],
         },
         {
+          key: 3,
           name: '点击右上角x关闭图标-2',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=5] > View[childCount=2][index=4] > View[childCount=1] > Image[text=""]',
           snapshotUrls: 'https://i.gkd.li/i/12790610',
         },
         {
+          key: 4,
           name: '点击右上角x关闭图标-3',
           matches:
             '[id="com.mygolbs.mybus:id/ad_frameLayout"] View[childCount=2] > View[childCount=6][index=0] > View[childCount=1][index=3] > Image[text=""]',
           snapshotUrls: 'https://i.gkd.li/i/12790941',
         },
         {
+          key: 5,
           name: '点击右下角x关闭按钮',
           matches:
             '[text="广告"] <3 View + @View[clickable=true] >2 [text="×"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12791122',
         },
         {
+          preKeys: [1, 2, 3, 4, 5],
           name: '点击不感兴趣',
           matches:
             '@LinearLayout[clickable=true][childCount<=2] > [text="不感兴趣"]',
@@ -92,12 +69,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12790707',
             'https://i.gkd.li/i/12790717',
           ],
-        },
-        {
-          name: '点击暂不领取',
-          matches:
-            '[id="com.mygolbs.mybus:id/ll_ad"] [id="com.mygolbs.mybus:id/btn_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/12791579',
         },
       ],
     },
@@ -178,6 +149,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.defines.CustomDialog',
           matches: ['[text$="请开启通知权限"]', '[text="取消"]'],
           snapshotUrls: 'https://i.gkd.li/i/12715980',
         },
@@ -186,11 +158,15 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-签到成功弹窗',
-      desc: '自动点击x按钮',
-      activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
-      rules:
-        '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
-      snapshotUrls: 'https://i.gkd.li/i/12716035',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.mygolbs.mybus.guligold.SignSuccessActivity',
+          matches:
+            '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
+          snapshotUrls: 'https://i.gkd.li/i/12716035',
+        },
+      ],
     },
   ],
 });

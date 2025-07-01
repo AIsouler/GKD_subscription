@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="打开推送通知"] +2 [text="不允许"]',
-      snapshotUrls: 'https://i.gkd.li/i/12755717',
+      rules: [
+        {
+          activityIds: '.component.push.NotificationEnableDialog',
+          matches: '[text^="打开推送通知"] +2 [text="不允许"]',
+          snapshotUrls: 'https://i.gkd.li/i/12755717',
+        },
+      ],
     },
   ],
 });

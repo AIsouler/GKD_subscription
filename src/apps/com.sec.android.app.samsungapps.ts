@@ -15,14 +15,17 @@ export default defineGkdApp({
       rules: [
         {
           action: 'clickCenter',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14810528',
+          matches: '[vid="skip"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14810528',
+            'https://i.gkd.li/i/18329468',
+          ],
         },
       ],
     },
     {
       key: 1,
-      name: '功能类-[您是否年满 18 岁？]弹窗',
+      name: '其他-[您是否年满 18 岁？]弹窗',
       desc: '点击[是]',
       rules: [
         {
@@ -33,6 +36,21 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/cee78493-fbe1-46a0-8dcf-a8b1f1f61f19',
           snapshotUrls: 'https://i.gkd.li/i/14473690',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '全屏广告-[大家还下载了]弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.detail.activity.ContentDetailActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] - [vid="tv_detail_related_other_opp_title_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/de1b9cc4-c47e-456a-b975-5eefaedb5e42',
+          snapshotUrls: 'https://i.gkd.li/i/18209149',
         },
       ],
     },

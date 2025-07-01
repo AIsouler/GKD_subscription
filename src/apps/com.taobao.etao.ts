@@ -5,21 +5,11 @@ export default defineGkdApp({
   name: '一淘',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
+      key: 2,
+      name: '全屏广告-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="取消"] < * > [text="好,升级"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12684250',
-        'https://i.gkd.li/i/12727457',
-        'https://i.gkd.li/i/12684244',
-      ],
-    },
-    {
-      key: 2,
-      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
@@ -49,18 +39,19 @@ export default defineGkdApp({
       key: 10,
       name: '权限提示-通知权限',
       desc: '点击关闭',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
+          activityIds: 'com.taobao.sns.app.message.MessageActivity',
           matches:
             '[text^="打开消息通知"] + [text="去开启"] + ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12684278',
         },
         {
           key: 1,
+          activityIds: '.mine.MetaXMineActivity',
           matches:
             '[text^="打开消息通知"] + FrameLayout > [text="去开启"] < FrameLayout + ImageView[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12684351',

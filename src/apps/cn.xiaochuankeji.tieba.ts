@@ -24,8 +24,11 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/15858023',
         },
         {
@@ -50,22 +53,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.home.setting.SettingActivity',
           matches:
             '[id="cn.xiaochuankeji.tieba:id/btn_ok"][text^="马上升级"] + [id="cn.xiaochuankeji.tieba:id/btn_cancel"][text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/12660882',
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: '青少年模式',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          matches: '[text$="青少年模式"] + [text$="知道了"]',
-          snapshotUrls: 'https://i.gkd.li/i/12660929',
         },
       ],
     },
@@ -97,19 +88,21 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.ui.home.page.PageMainActivity',
       rules: [
         {
+          key: 1,
           matches:
             '[id="cn.xiaochuankeji.tieba:id/confirm"][text="打开通知"] + [id="cn.xiaochuankeji.tieba:id/cancel"][text="暂不开启"]',
           snapshotUrls: 'https://i.gkd.li/i/12660823',
         },
         {
+          key: 2,
           matches:
             '[text^="开启通知"] +(2) [id="cn.xiaochuankeji.tieba:id/tips_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12660851',
         },
       ],
     },
-    // key 11 已弃用
   ],
 });

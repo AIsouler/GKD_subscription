@@ -8,41 +8,50 @@ export const YOUTH_MODE_ORDER = -8; // 青少年模式
 export default defineGkdGlobalGroups([
   {
     key: 0,
-    name: '开屏广告',
+    name: '开屏广告-全局',
     desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
-    matchRoot: true,
     fastQuery: true,
     matchTime: 10000,
-    actionMaximum: 1,
+    actionMaximum: 2,
     resetMatch: 'app',
+    actionCdKey: 0,
     actionMaximumKey: 0,
     priorityTime: 10000,
+    disableIfAppGroupMatch: '开屏广告',
     rules: [
       {
         key: 0,
-        // 防止在应用的搜索页面误触
+        // 防止误触
         excludeMatches:
-          '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜"][text.length>3 && text.length<6][visibleToUser=true]',
-        matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-      },
-      {
-        key: 1,
-        // 防止在应用的搜索页面误触
-        excludeMatches:
-          '[text*="搜索" || text^="猜你" || text="历史记录" || text$="在搜"][text.length>3 && text.length<6][visibleToUser=true]',
-        matches:
-          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || id$="tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*timing.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*" && text!~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]") || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '([text*="搜索" || text^="猜你想" || text^="猜你喜欢" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit"][visibleToUser=true])',
+        anyMatches: [
+          '[text*="跳过"][text.length<10][visibleToUser=true]',
+          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+        ],
         excludeSnapshotUrls: [
           // 避免误触
-          'https://i.gkd.li/i/16742932', // vid!~="(?is).*timing.*"
+          'https://i.gkd.li/i/17108010', // text!="帮助"
+          'https://i.gkd.li/i/18265000', // text!="取消"
+          'https://i.gkd.li/i/19580951', // text="退款详情"
+          'https://i.gkd.li/i/19952277', // text="Submit"
+          'https://i.gkd.li/i/20946730', // text="设置"
+          'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
         ],
       },
       {
-        key: 2,
-        action: 'clickCenter',
-        matches:
-          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]', // 字节SDK
+        key: 1, // 字节SDK
+        anyMatches: [
+          '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+          'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+        ],
+        snapshotUrls: [
+          'https://i.gkd.li/i/19685971', // +(1,2)
+          'https://i.gkd.li/i/19701216', // +(1,2)
+          'https://i.gkd.li/i/20262130',
+          'https://i.gkd.li/i/20768349',
+          'https://i.gkd.li/i/20883248', // >(n+6)
+        ],
       },
     ],
     apps: [...appList.openAdBlackListAppIDs]
@@ -53,24 +62,30 @@ export default defineGkdGlobalGroups([
   },
   {
     key: 1,
-    name: '更新提示',
+    name: '更新提示-全局',
     desc: '关闭应用的更新弹窗',
     order: UPDATE_PROMPT_ORDER,
     fastQuery: true,
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
+    disableIfAppGroupMatch: '更新提示',
     rules: [
       {
         key: 0,
+        excludeMatches:
+          '[text*="全部"][text*="更新" || text*="忽略"][text.length<7][visibleToUser=true]',
         matches: [
-          '[text*="内测" || text*="测试版" || text*="新版" || text*="更新" || text*="升级" || text*="体验" || text*="內測" || text*="測試版" || text*="升級" || text*="體驗" || text*="Update" || text*="Upgrade" || text*="Experience"][text!*="自动" && text!*="自動" && text!*="成功" && text!*="失败" && text!*="失敗" && text!*="检查更新" && text!*="检测更新" && text!*="卸载"][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
-          '[text*="更新" || text*="下载" || text*="安装" || text*="升级" || text*="查看" || text*="体验" || text*="确定" || text*="确认"][text.length<6][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
-          '[text*="不再提醒" || text$="再说" || text$="拒绝" || text$="再想想" || text*="再看看" || text^="忽略" || text^="暂不" || text^="放弃" || text^="取消" || text$="不要" || text$="再說" || text$="暫不" || text$="拒絕" || text*="稍后" || text^="关闭" || text$="Later" || text^="Ignore" || text^="Not now" || text^="Cancel" || vid="iv_close" || vid="iv_cancel" || vid="img_close" || vid="iv_upgrade_close" || vid="btn_close" || vid="update_undo" || vid="upgrade_dialog_close_btn" || vid="ivCancel" || vid="ivClose" || vid="imgClose" || vid="iv_negative" || vid="iv_close_update_dialog"][name!$=".CheckBox"][childCount=0][visibleToUser=true]',
+          '[text*="内测" || text*="测试版" || text*="新版" || text*="更新" || text*="升级" || text*="体验" || text*="內測" || text*="測試版" || text*="升級" || text*="體驗" || text*="Update" || text*="Upgrade" || text*="Experience"][text!*="自动" && text!*="自動" && text!*="成功" && text!*="失败" && text!*="失敗" && text!*="检查更新" && text!*="检测更新" && text!*="卸载"][childCount=0][visibleToUser=true]',
+          '[text*="更新" || text*="下载" || text*="安装" || text*="升级" || text*="查看" || text*="体验" || text*="确定" || text*="确认"][text.length<6][childCount=0][visibleToUser=true]',
+          '([text*="不再提醒" || text$="再说" || text$="拒绝" || text$="再想想" || text*="再看看" || text^="忽略" || text^="暂不" || text^="放弃" || text^="取消" || text$="不要" || text$="再說" || text$="暫不" || text$="拒絕" || text*="稍后" || text^="关闭" || text$="Later" || text^="Ignore" || text^="Not now" || text^="Cancel"][!(text*="取消"&&text*="忽略")][text.length<6][childCount=0][visibleToUser=true]) || ([vid="closeIv" || vid="iv_close" || vid="iv_cancel" || vid="close" || vid="Close" || vid="img_close" || vid="btn_close" || vid="ivCancel" || vid="tvCancel" || vid="cancel" || vid="Cancel" || vid="ivClose" || vid="imgClose" || vid="iv_negative" || vid="update_close_icon"][childCount=0][visibleToUser=true])',
         ],
         excludeSnapshotUrls: [
           // 避免误触
           'https://i.gkd.li/i/17710149', // text!*="卸载"
+          'https://i.gkd.li/i/19605413', // [!(text*="取消"&&text*="忽略")][text.length<6]
+          'https://i.gkd.li/i/19918544',
+          'https://i.gkd.li/i/20033908',
         ],
       },
     ],
@@ -82,19 +97,20 @@ export default defineGkdGlobalGroups([
   },
   {
     key: 2,
-    name: '青少年模式',
+    name: '青少年模式-全局',
     desc: '关闭应用的青少年模式弹窗',
     order: YOUTH_MODE_ORDER,
     fastQuery: true,
     matchTime: 10000,
     actionMaximum: 1,
     resetMatch: 'app',
+    disableIfAppGroupMatch: '青少年模式',
     rules: [
       {
         key: 0,
         matches: [
           '[text*="青少年" || text*="未成年" || text*="儿童"][text*="模式" || text*="守护"][text.length<15][childCount=0][visibleToUser=true]',
-          '[text*="知道了" || text*="关闭" || text*="我已知晓" || text*="已满"][text.length<8][childCount=0][visibleToUser=true]',
+          '[text*="知道了" || text*="我已知晓" || text*="已满" || text*="不再提醒"][text.length<8][childCount=0][visibleToUser=true]',
         ],
       },
     ],

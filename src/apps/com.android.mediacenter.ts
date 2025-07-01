@@ -21,10 +21,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12901417',
             'https://i.gkd.li/i/12908742',
           ],
-          exampleUrls: [
-            'https://github.com/gkd-kit/inspect/assets/38517192/6c34cd13-cfda-4462-99ed-2a2534a6fdf5',
-            'https://github.com/gkd-kit/inspect/assets/38517192/c71bb14d-cd1f-4f9e-8ee9-6a1e11e56901',
-          ],
         },
       ],
     },
@@ -36,8 +32,6 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.android.mediacenter:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12914026',
-      exampleUrls:
-        'https://github.com/gkd-kit/inspect/assets/38517192/433dd71c-4fe5-41c9-a2da-dd3ac29f8dd4',
     },
     {
       key: 2,
@@ -51,8 +45,6 @@ export default defineGkdApp({
           activityIds: 'com.android.mediacenter.MainActivity',
           matches: '[id="com.android.mediacenter:id/ad_more_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/12914077',
-          exampleUrls:
-            'https://github.com/gkd-kit/inspect/assets/38517192/37ee4a9b-2518-41e6-8227-7b204ed1bf61',
         },
         {
           key: 1,
@@ -61,8 +53,6 @@ export default defineGkdApp({
           matches:
             '[id="com.android.mediacenter:id/label_title"][text="直接关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/12914078',
-          exampleUrls:
-            'https://github.com/gkd-kit/inspect/assets/38517192/d098a194-80ff-49a1-b80e-191f7574a816',
         },
       ],
     },

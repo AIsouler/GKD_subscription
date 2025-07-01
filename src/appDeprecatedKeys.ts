@@ -40,7 +40,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'air.tv.douyu.android',
     name: '斗鱼',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1, 2],
   },
   {
     id: 'android.zhibo8',
@@ -60,7 +60,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'client.android.yixiaotong',
     name: '乐校通',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 3],
   },
   {
     id: 'cmb.pb',
@@ -110,17 +110,17 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'cn.wps.moffice_eng',
     name: 'WPS',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 7],
   },
   {
     id: 'cn.xiaochuankeji.tieba',
     name: '最右',
-    deprecatedKeys: [0, 11],
+    deprecatedKeys: [0, 2, 11],
   },
   {
     id: 'cn.xiaochuankeji.zuiyouLite',
     name: '皮皮搞笑',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'cn.yonghui.hyd',
@@ -320,7 +320,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.cmcc.cmvideo',
     name: '咪咕视频',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'com.cn21.ecloud',
@@ -385,12 +385,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.danlan.xiaolan',
     name: 'Blued极速版',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 1],
   },
   {
     id: 'com.douban.frodo',
     name: '豆瓣',
-    deprecatedKeys: [0, 7, 12],
+    deprecatedKeys: [0, 1, 2, 4, 7, 9, 12],
   },
   {
     id: 'com.dragon.read',
@@ -420,7 +420,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.kmxs.reader',
     name: '七猫免费小说',
-    deprecatedKeys: [0],
+    deprecatedKeys: [-2, 0, 6, 7],
   },
   {
     id: 'com.magicalstory.AppStore',
@@ -435,7 +435,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.netease.cloudmusic',
     name: '网易云音乐',
-    deprecatedKeys: [3, 9, 11, 12],
+    deprecatedKeys: [3, 9, 10, 11, 12],
   },
   {
     id: 'com.netease.mobimail',
@@ -450,7 +450,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.sina.weibo',
     name: '微博',
-    deprecatedKeys: [12, 15, 16, 21],
+    deprecatedKeys: [3, 4, 6, 7, 11, 13, 12, 15, 16, 21],
   },
   {
     id: 'com.snda.wifilocating',
@@ -460,12 +460,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.ss.android.ugc.aweme',
     name: '抖音',
-    deprecatedKeys: [0, 2],
+    deprecatedKeys: [0, 2, 4, 5, 6],
   },
   {
     id: 'com.taobao.taobao',
     name: '淘宝',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 10, 11],
   },
   {
     id: 'com.taptap',
@@ -480,12 +480,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.mobileqq',
     name: 'QQ',
-    deprecatedKeys: [6, 14, 19],
+    deprecatedKeys: [6, 8, 15, 14, 19],
   },
   {
     id: 'com.tencent.qqlive',
     name: '腾讯视频',
-    deprecatedKeys: [5, 19],
+    deprecatedKeys: [1, 5, 19],
   },
   {
     id: 'com.xunlei.downloadprovider',
@@ -495,7 +495,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.xyhui',
     name: 'PU口袋校园',
-    deprecatedKeys: [4],
+    deprecatedKeys: [3, 4],
   },
   {
     id: 'com.youdao.dict',
@@ -505,7 +505,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.youku.phone',
     name: '优酷视频',
-    deprecatedKeys: [1],
+    deprecatedKeys: [1, 2],
   },
   {
     id: 'com.zhihu.android',
@@ -535,12 +535,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.unionpay',
     name: '云闪付',
-    deprecatedKeys: [11],
+    deprecatedKeys: [1, 11, 14],
   },
   {
     id: 'com.netease.newsreader.activity',
     name: '网易新闻',
-    deprecatedKeys: [3],
+    deprecatedKeys: [1, 3],
   },
   {
     id: 'com.sina.weibo',
@@ -565,12 +565,12 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.huawei.android.thememanager',
     name: '华为主题',
-    deprecatedKeys: [3, 4, 5, 6],
+    deprecatedKeys: [3, 4, 5, 6, 8],
   },
   {
     id: 'com.ximalaya.ting.android',
     name: '喜马拉雅',
-    deprecatedKeys: [9],
+    deprecatedKeys: [6, 9],
   },
   {
     id: 'com.zjwh.android_wh_physicalfitness',
@@ -585,7 +585,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.mihoyo.hyperion',
     name: '米游社',
-    deprecatedKeys: [4, 5],
+    deprecatedKeys: [1, 2, 4, 5],
   },
   {
     id: 'com.miui.packageinstaller',
@@ -596,6 +596,261 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     id: 'com.miui.player',
     name: '小米音乐',
     deprecatedKeys: [4, 10],
+  },
+  {
+    id: 'cn.soulapp.android',
+    name: 'Soul',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.dongqiudi.news',
+    name: '懂球帝',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.duitang.main',
+    name: '堆糖',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.duowan.kiwi',
+    name: '虎牙直播',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.example.pptv',
+    name: '人人视频',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.gotokeep.keep',
+    name: 'Keep',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.huawei.appmarket',
+    name: '华为应用市场',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.hunantv.imgo.activity',
+    name: '芒果TV',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.kuaikan.comic',
+    name: '快看漫画',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.kuaishou.nebula',
+    name: '快手极速版',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.kugou.android.lite',
+    name: '酷狗概念版',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.p1.mobile.putong',
+    name: '探探',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qiyi.video',
+    name: '爱奇艺',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qq.ac.android',
+    name: '腾讯动漫',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qq.reader',
+    name: 'QQ阅读',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.smile.gifmaker',
+    name: '快手',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.sohu.sohuvideo',
+    name: '搜狐视频',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.ss.android.article.video',
+    name: '西瓜视频',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.ss.android.ugc.aweme.lite',
+    name: '抖音极速版',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.ss.android.ugc.aweme.mobile',
+    name: '抖音',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.ss.android.yumme.video',
+    name: '抖音精选',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.tencent.weread',
+    name: '微信读书',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.xingye.app',
+    name: '星野',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'tv.danmaku.bilibilihd',
+    name: '哔哩哔哩HD',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.umetrip.android.msky.app',
+    name: '航旅纵横',
+    deprecatedKeys: [8, 9],
+  },
+  {
+    id: 'cn.mil.junhao',
+    name: '中国军号',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.alicloud.databox',
+    name: '阿里云盘',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.duokan.phone.remotecontroller',
+    name: '万能遥控',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.fenbi.android.solar',
+    name: '小猿搜题',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.guwendao.gwd',
+    name: '古文岛',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.huawei.music',
+    name: '华为音乐',
+    deprecatedKeys: [2, 4, 5, 6, 7],
+  },
+  {
+    id: 'com.icbc',
+    name: '中国工商银行',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.jd.app.reader',
+    name: '京东读书',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.jsmcc',
+    name: '中国移动江苏',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.kuaiduizuoye.scan',
+    name: '快对',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.maidu.gkld',
+    name: '公考雷达',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.miaoying.appmy.cs',
+    name: '新小财神影视',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.netease.mail',
+    name: '网易邮箱大师',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.google.android.youtube',
+    name: 'youtube',
+    deprecatedKeys: [2],
+  },
+  {
+    id: 'com.qinlin.edoor',
+    name: '亲邻开门',
+    deprecatedKeys: [10, 11, 12],
+  },
+  {
+    id: 'com.quark.browser',
+    name: '夸克浏览器',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.taobao.etao',
+    name: '一淘',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.wm.dmall',
+    name: '多点',
+    deprecatedKeys: [4],
+  },
+  {
+    id: 'com.ximalaya.ting.lite',
+    name: '喜马拉雅极速版',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.yunzhi.tiyu',
+    name: '云运动',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.zhengnengliang.precepts',
+    name: '正气',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.qiekj.user',
+    name: '胖乖生活',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'cn.lezhi.speedtest',
+    name: '网速管家',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'io.iftech.android.box',
+    name: '小组件盒子',
+    deprecatedKeys: [1],
+  },
+  {
+    id: 'com.tencent.qqmusic',
+    name: 'QQ音乐',
+    deprecatedKeys: [10],
+  },
+  {
+    id: 'com.tongcheng.android',
+    name: '同程旅行',
+    deprecatedKeys: [1],
   },
 ];
 

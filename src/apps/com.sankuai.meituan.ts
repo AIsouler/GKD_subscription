@@ -7,16 +7,25 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12614559',
-        'https://i.gkd.li/i/12673132',
-        'https://i.gkd.li/i/13292635',
+      rules: [
+        {
+          activityIds: [
+            'com.meituan.android.upgrade.ui.f',
+            'com.meituan.android.upgrade.UpgradeDialogActivity',
+            'com.meituan.android.pt.homepage.activity.MainActivity',
+          ],
+          matches: 'ImageView[vid="update_logo"] + Button[vid="btn_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12614559',
+            'https://i.gkd.li/i/12673132',
+            'https://i.gkd.li/i/13292635',
+            'https://i.gkd.li/i/18375410',
+          ],
+        },
       ],
     },
     {
@@ -50,10 +59,11 @@ export default defineGkdApp({
         {
           key: 3,
           name: '超市便利-弹窗广告',
+          fastQuery: true,
           activityIds:
             'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
           matches:
-            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13694877',
         },
         {
@@ -78,11 +88,14 @@ export default defineGkdApp({
           name: '邀请好友提现弹窗',
           activityIds: 'com.meituan.msc.modules.container.MSCActivity',
           matches:
-            'WebView > View > View[childCount=1] >(1,2) View[childCount=2] > View + Image[text=""][childCount=0][left>0]',
+            'WebView > View > View[childCount=1] >(1,2) View[childCount=2] > View + Image[text=""][childCount=0][left>0][width<200]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964911',
             'https://i.gkd.li/i/15400951',
+          ],
+          excludeSnapshotUrls: [
             'https://i.gkd.li/i/16487898', // 避免误触 add [left>0]
+            'https://i.gkd.li/i/20553947', // 避免误触 add [width<200]
           ],
         },
       ],
@@ -90,19 +103,24 @@ export default defineGkdApp({
     {
       key: 3,
       name: '评价提示-订单调查弹窗',
-      matchTime: 10000,
-      actionMaximum: 1,
       fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          key: 1,
           name: '我的页面-小调查',
           action: 'back',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
           matches: 'TextView[text="小调查"]',
           snapshotUrls: 'https://i.gkd.li/i/12639723',
         },
         {
+          key: 2,
           name: '订单详情页匿名调查',
           action: 'back',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
           matches: '[id="com.sankuai.meituan:id/questionnaireTitle"]',
           snapshotUrls: 'https://i.gkd.li/i/13682336',
         },
@@ -189,7 +207,8 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: '@[vid="iv_close" || text="跳过"] <n * > [text^="开启通知"]',
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches: '@[vid="iv_close" || text="跳过"] -(1,2) [text^="开启通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13439134',
             'https://i.gkd.li/i/15047918',
@@ -200,11 +219,15 @@ export default defineGkdApp({
     {
       key: 10,
       name: '全屏广告-新人返场特惠',
-      desc: '点击右上角返回',
-      activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
-      matchTime: 10000,
-      rules: '[id="shareNav"] > [text=""]',
-      snapshotUrls: 'https://i.gkd.li/i/13800691',
+      desc: '点击左上角返回',
+      rules: [
+        {
+          matchTime: 10000,
+          activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
+          matches: '[id="shareNav"] > [text=""]',
+          snapshotUrls: 'https://i.gkd.li/i/13800691',
+        },
+      ],
     },
     {
       key: 11,

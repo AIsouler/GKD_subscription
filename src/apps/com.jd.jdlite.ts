@@ -7,9 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页弹窗广告',
-      activityIds: 'com.jd.jdlite.MainFrameActivity',
-      rules: '@[desc="关闭页面"] - FrameLayout >n [text="极速版弹窗"]',
-      snapshotUrls: 'https://i.gkd.li/i/12727396',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.jd.jdlite.MainFrameActivity',
+          matches: '@[desc="关闭页面"] - FrameLayout >n [text="极速版弹窗"]',
+          snapshotUrls: 'https://i.gkd.li/i/12727396',
+        },
+      ],
     },
     {
       key: 10,
@@ -17,9 +24,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@ImageView[clickable=true] - LinearLayout > [text="开启消息通知"]',
-      snapshotUrls: 'https://i.gkd.li/i/13062969',
+      rules: [
+        {
+          activityIds: '.MainFrameActivity',
+          matches:
+            '@ImageView[clickable=true] - LinearLayout > [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/13062969',
+        },
+      ],
     },
   ],
 });

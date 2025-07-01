@@ -5,24 +5,16 @@ export default defineGkdApp({
   name: '探探',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      rules: '@[text="我知道了"] + [text="开启青少年模式"]',
-      snapshotUrls: 'https://i.gkd.li/i/14332010',
-    },
-    {
       key: 2,
       name: '更新提示',
       desc: '点击[取消]',
-      matchTime: 10000,
       fastQuery: true,
-      resetMatch: 'app',
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: '.core.newui.main.NewMainAct',
           matches:
             '@[vid="buttonDefaultNeutral"][clickable=true] > [text="取消"]',
           exampleUrls:
@@ -36,10 +28,12 @@ export default defineGkdApp({
       name: '权限提示-通知权限',
       desc: '点击[暂不设置]',
       fastQuery: true,
-      resetMatch: 'app',
+      matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: '.core.ui.seepage.likers.FakeLikersAct',
           matches: '[text="打开通知"] + [text="暂不设置"]',
           exampleUrls:
             'https://m.gkd.li/57941037/137e9907-9767-4acf-b803-034182346ef3',

@@ -114,19 +114,29 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
-      snapshotUrls: 'https://i.gkd.li/i/12909385',
+      rules: [
+        {
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
+          snapshotUrls: 'https://i.gkd.li/i/12909385',
+        },
+      ],
     },
     {
       key: 8,
       name: '权限提示-通知权限',
       desc: '点击关闭',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[vid="push_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/15284736',
+      rules: [
+        {
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[vid="push_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15284736',
+        },
+      ],
     },
     {
       key: 9,

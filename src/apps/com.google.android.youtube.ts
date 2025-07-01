@@ -7,27 +7,22 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-视频播放-跳过广告',
-      fastQuery: true,
-      activityIds: [
-        'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
-        'com.google.android.apps.youtube.app.watchwhile.MainActivity',
-        'com.google.android.youtube',
-      ],
       rules: [
         {
+          fastQuery: true,
           key: 0,
-          name: '类型1',
-          matches: '[id="com.google.android.youtube:id/skip_ad_button_text"]',
+          activityIds: [
+            'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+            'com.google.android.youtube',
+          ],
+          matches:
+            '[vid="skip_ad_button" || id="com.google.android.youtube:id/modern_skip_ad_text"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13797491',
             'https://i.gkd.li/i/12565261',
+            'https://i.gkd.li/i/13705106',
           ],
-        },
-        {
-          key: 1,
-          name: '类型2',
-          matches: '[id="com.google.android.youtube:id/modern_skip_ad_text"]',
-          snapshotUrls: ['https://i.gkd.li/i/13705106'],
         },
       ],
     },
@@ -52,22 +47,23 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
-      name: '局部广告-首页会员广告',
-      activityIds:
-        'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
-      rules:
-        'ImageView < @Button < ViewGroup +3 Button[desc*="YouTube Premium"]',
-      snapshotUrls: 'https://i.gkd.li/i/12877357',
-    },
-    {
       key: 3,
-      name: '全屏广告-订阅浮窗广告',
-      activityIds:
-        'com.google.android.apps.youtube.app.watchwhile.MainActivity',
-      rules:
-        'ViewGroup[desc="免费试用 1 个月"] < * - * > ViewGroup[text="不用了，谢谢"]', // 缺少英文快照
-      snapshotUrls: 'https://i.gkd.li/i/13797512',
+      name: '全屏广告-会员广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '@[desc="不用了，谢谢" || desc="关闭" || desc="Close" || desc="No thanks"][visibleToUser=true] <<n [vid="bottom_ui_container" || vid="custom"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13797512',
+            'https://i.gkd.li/i/18017075',
+            'https://i.gkd.li/i/18549944',
+            'https://i.gkd.li/i/19578085',
+          ],
+        },
+      ],
     },
     {
       key: 4,
@@ -77,6 +73,8 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
           matches: ['[text="开启通知"]', '[text="不用了"]'],
           snapshotUrls: 'https://i.gkd.li/i/14194155',
         },
@@ -100,6 +98,21 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17068647', // 翻译后
             'https://i.gkd.li/i/17501400',
           ],
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '其他-关闭播放器辅助功能弹窗',
+      desc: '点击[Dismiss]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches: '[text="Dismiss"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/aa8f2617-fd6d-43a8-951d-1bd6efc504d3',
+          snapshotUrls: 'https://i.gkd.li/i/19930694',
         },
       ],
     },

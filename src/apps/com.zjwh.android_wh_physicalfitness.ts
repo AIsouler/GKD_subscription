@@ -5,21 +5,6 @@ export default defineGkdApp({
   name: '运动世界校园',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/c1fa3f37-1617-4d0a-86d3-07fdd154766f',
-          snapshotUrls: 'https://i.gkd.li/i/12673495',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',

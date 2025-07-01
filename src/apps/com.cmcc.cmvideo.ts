@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '咪咕视频',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.cmcc.cmvideo:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/i/12498307',
-    },
-    {
       key: 2,
       name: '局部广告-右下角小广告',
       fastQuery: true,
@@ -24,29 +15,40 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.cmcc.cmvideo:id/btn_update_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13276116',
+      rules: [
+        {
+          matches: '[id="com.cmcc.cmvideo:id/btn_update_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13276116',
+        },
+      ],
     },
     {
       key: 4,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.cmcc.cmvideo:id/base_dialog_left_btn"][text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13276127',
+      rules: [
+        {
+          matches: '[text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13276127',
+        },
+      ],
     },
     {
       key: 5,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           matchRoot: true,
           activityIds:
             'com.cmcc.cmvideo.main.application.CompatibleMainActivity',

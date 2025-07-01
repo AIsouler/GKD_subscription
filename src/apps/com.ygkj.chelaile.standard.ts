@@ -73,6 +73,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
           matches:
             '[id="com.ygkj.chelaile.standard:id/cll_interstitial_close"][clickable=true]',
           exampleUrls:
@@ -88,12 +89,21 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds:
             'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           matches:
-            'RelativeLayout[childCount=6] > RelativeLayout[childCount=4] + ImageView[clickable=true][index=3][text=null]',
+            '@ImageView[clickable=true][childCount=0][width<100&&height<100][visibleToUser=true] - RelativeLayout >2 [text="反馈"]',
           exampleUrls: 'https://e.gkd.li/4ab8665e-026f-4101-8299-0300708c91c1',
           snapshotUrls: 'https://i.gkd.li/i/16812335',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          snapshotUrls: 'https://i.gkd.li/i/20502977',
         },
       ],
     },

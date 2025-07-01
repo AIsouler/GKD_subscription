@@ -46,11 +46,14 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: 'com.google.android.finsky.activities.MainActivity',
-          matches: '[text="以后再说" || text="不用了"][visibleToUser=true]',
+          matches:
+            '[text="以后再说" || text="不用了" || text="No thanks" || text="Not now"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14958783',
             'https://i.gkd.li/i/16079813',
             'https://i.gkd.li/i/17622043',
+            'https://i.gkd.li/i/18135816',
+            'https://i.gkd.li/i/18609168',
           ],
         },
       ],

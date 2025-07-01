@@ -15,8 +15,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           exampleUrls:
             'https://m.gkd.li/57941037/6f4561e5-b998-43f9-8848-b6b43d045a3d',
           snapshotUrls: 'https://i.gkd.li/i/14189228',
@@ -43,21 +46,11 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '更新提示',
+      key: 2,
+      name: '全屏广告-首页弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: [
-        {
-          matches: '@[text="下次再说"] +(2) [text="立即更新"]',
-          snapshotUrls: ['https://i.gkd.li/i/12686632'],
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: '全屏广告-首页弹窗广告',
       rules: [
         {
           fastQuery: true,
@@ -71,11 +64,15 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-阅读页面弹窗广告',
-      activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',
-      rules: '[id$="ad_read_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12881810',
-        'https://i.gkd.li/i/12893631',
+      rules: [
+        {
+          activityIds: 'com.jd.read.engine.activity.EngineReaderActivity',
+          matches: '[id$="ad_read_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12881810',
+            'https://i.gkd.li/i/12893631',
+          ],
+        },
       ],
     },
   ],

@@ -10,6 +10,7 @@ export default defineGkdApp({
       desc: '点击[确定]',
       rules: [
         {
+          key: 0,
           activityIds: 'com.xiaolan.tv.chat.MainActivity',
           matches: '[desc="确定"][visibleToUser=true]',
           exampleUrls:

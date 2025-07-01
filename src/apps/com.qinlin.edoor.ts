@@ -24,34 +24,85 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '穿山甲SDK',
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.MainActivity',
+          matches: [
+            '[text="广告" || vid="interact_ad_root"]',
+            '[vid="iv_close"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13771774',
+            'https://i.gkd.li/i/13932707',
+          ],
+        },
+        {
+          key: 1,
+          activityIds: '.MainActivity',
           matches:
-            '@[id="com.qinlin.edoor:id/iv_close"] - LinearLayout >n [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/13771774',
+            '@ImageView[clickable=true] - [desc="立即领取" || desc="开心收下"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12707736',
+            'https://i.gkd.li/i/12707738',
+          ],
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches: '[vid="ad_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/76e82ec7-70e5-47cb-91c2-4d00f33ef8ad',
+          snapshotUrls: 'https://i.gkd.li/i/18529948',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@[desc="top_close_button"] < ViewGroup <2 ViewGroup + ViewGroup >3 [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a9dc3648-339a-4925-91dd-730346711b0e',
+          snapshotUrls: 'https://i.gkd.li/i/18532541',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '@ViewGroup + ViewGroup > [text="反馈"]',
+          exampleUrls: [
+            'https://e.gkd.li/517cc207-1e6c-4416-bbd1-193326879b68',
+            'https://e.gkd.li/e60379ac-ee45-4f0f-bb18-5d1ffa4d9210',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/18703139',
+            'https://i.gkd.li/i/18703827',
+          ],
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          exampleUrls: 'https://e.gkd.li/a2685f57-ec36-44a1-9529-f10d7fb481ef',
+          snapshotUrls: 'https://i.gkd.li/i/18704056',
         },
       ],
     },
     {
-      key: 10,
-      name: '全屏广告-开门有奖弹窗',
-      activityIds: 'com.qinlin.edoor.MainActivity',
-      rules: '[desc="开门有奖"] +2 [desc="立即领取"] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/12707736',
-    },
-    {
-      key: 11,
-      name: '全屏广告-获得金币弹窗',
-      activityIds: 'com.qinlin.edoor.MainActivity',
-      rules: ['[desc="获得金币"] +3 [desc="开心收下"] + ImageView'],
-      snapshotUrls: ['https://i.gkd.li/i/12707738'],
-    },
-    {
-      key: 12,
-      name: '全屏广告-开门成功后弹窗广告',
-      desc: '来自"腾讯广告sdk"',
-      rules: '[vid="interact_ad_root"] >2 [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13932707',
+      key: 3,
+      name: '通知提示-开门成功提示',
+      desc: '点击[好的]',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[desc^="开门成功"] > [desc="好 的"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d8e9be78-a9d4-48f9-a6ee-9ed384a190b3',
+          snapshotUrls: 'https://i.gkd.li/i/18530006',
+        },
+      ],
     },
   ],
 });

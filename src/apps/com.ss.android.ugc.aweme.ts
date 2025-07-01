@@ -5,58 +5,27 @@ export default defineGkdApp({
   name: '抖音',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          excludeActivityIds: '.search.activity.SearchResultActivity',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/202942ce-259c-4b9d-b3b3-06afbac8145f',
+          snapshotUrls: 'https://i.gkd.li/i/13216121',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17811608',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '局部广告-关闭用户推荐',
       rules: [
-        {
-          key: 0,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[text="换一个"] - FrameLayout[clickable=true] > ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12520943',
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[id="com.ss.android.ugc.aweme:id/desc"][text="减少此类推荐"]',
-          snapshotUrls: 'https://i.gkd.li/i/12520962',
-        },
-        {
-          key: 2,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '[text="你可能感兴趣"] < LinearLayout + [text="隐藏"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12675396',
-        },
-        {
-          key: 3,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '[text="朋友推荐"] +(2) @FrameLayout > [desc="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/12675129',
-        },
-        {
-          key: 4,
-          activityIds:
-            'com.ss.android.ugc.aweme.friends.ui.RawAddFriendsActivity',
-          matches:
-            '[text="朋友推荐"] < LinearLayout + FrameLayout > [desc="关闭"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12675245',
-        },
-        {
-          key: 5,
-          activityIds: [
-            'com.ss.android.ugc.aweme.main.MainActivity',
-            'com.miui.home.launcher.Launcher',
-          ],
-          matches:
-            '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12525387',
-            'https://i.gkd.li/i/12525389',
-          ],
-        },
         {
           key: 6,
           fastQuery: true,
@@ -74,71 +43,50 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: ['[text="立即升级"]', '[text="以后再说"]'],
+          activityIds: '.main.MainActivity',
+          matches: ['[text*="立即升级"]', '[text="以后再说"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12534016',
             'https://i.gkd.li/i/13328599',
             'https://i.gkd.li/i/15359995',
+            'https://i.gkd.li/i/20139600',
           ],
         },
       ],
     },
     {
-      key: 4,
-      name: '局部广告-首页左上角广告',
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-      rules:
-        'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
-      snapshotUrls: 'https://i.gkd.li/i/12749276',
-    },
-    {
-      key: 5,
-      name: '全屏广告-弹窗广告',
-      activityIds: 'com.android.launcher.Launcher',
-      fastQuery: true,
-      rules:
-        '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
-      snapshotUrls: 'https://i.gkd.li/i/12769137',
-    },
-    {
-      key: 6,
-      name: '评价提示-去商店评分',
-      desc: '点击[取消]',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '@[text="取消"] +2 [text="五星好评"]',
-      snapshotUrls: 'https://i.gkd.li/i/13053628',
-      exampleUrls:
-        'https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008',
-    },
-    {
       key: 7,
-      fastQuery: true,
       name: '功能类-设置无声进入抖音弹窗',
       desc: '点击[拒绝]',
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-      rules: '@[text="拒绝"] + [text="去设置"]',
-      snapshotUrls: 'https://i.gkd.li/i/13256087',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches: '@[text="拒绝"] + [text="去设置"]',
+          snapshotUrls: 'https://i.gkd.li/i/13256087',
+        },
+      ],
     },
     {
       key: 10,
       name: '权限提示-通知权限',
-      desc: '自动点击“暂不”',
+      desc: '点击[暂不]/[以后再说]',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
+      activityIds: '.main.MainActivity',
       rules: [
         {
-          key: 0,
-          matches:
-            '@[text="暂不"][focusable=true] < LinearLayout - LinearLayout >(2) [text="开启朋友通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/12675129',
-        },
-        {
           key: 1,
-          matches: '[text="及时获得消息提醒"] +2 [text="暂不开启"]',
-          snapshotUrls: 'https://i.gkd.li/i/13669790',
+          matches: [
+            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒"][visibleToUser=true]',
+            '[text="以后再说" || text="暂不开启"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13669790',
+            'https://i.gkd.li/i/18417891',
+            'https://i.gkd.li/i/18419574',
+          ],
         },
       ],
     },
@@ -146,31 +94,33 @@ export default defineGkdApp({
       key: 11,
       name: '功能类-自动勾选原图',
       desc: '聊天发送图片时自动勾选原图',
-      fastQuery: true,
-      activityIds:
-        'com.ss.android.ugc.aweme.im.sdk.media.choose.MediaChooseActivity',
-      rules: '[text="原图"][desc="未选中/复选框 原图"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12846036', // 未选中
-        'https://i.gkd.li/i/12846040', // 已选中
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            '.ecommerce.im.choosemedia.ECommerceIMMediaChooseActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="原图"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18637952', // 未选中
+            'https://i.gkd.li/i/18637948', // 已选中
+          ],
+        },
       ],
     },
     {
       key: 12,
-      name: '全屏广告-休息提醒',
+      name: '其他-休息提醒',
       fastQuery: true,
       rules: [
         {
+          key: 1,
           matches: '@[text="取消"] + [text*="提醒我"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13241564',
-            'https://i.gkd.li/i/13372604',
             'https://i.gkd.li/i/14160675',
           ],
-        },
-        {
-          matches: '[text="管理使用时间"] + Button[text="忽略提醒"]',
-          snapshotUrls: 'https://i.gkd.li/i/13372725',
         },
       ],
     },
@@ -181,15 +131,6 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
-        {
-          key: 0,
-          name: '搜索快捷方式',
-          activityIds:
-            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
-          action: 'back',
-          matches: 'ViewGroup[desc="添加搜索到桌面"]',
-          snapshotUrls: 'https://i.gkd.li/i/13338556',
-        },
         {
           key: 1,
           name: '商城快捷方式',
@@ -214,30 +155,52 @@ export default defineGkdApp({
           matches: '[text="暂不开启"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14325749',
         },
+        {
+          key: 3,
+          name: '火花桌面小组件',
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          action: 'back',
+          matches: '[text="添加火花桌面小组件"]',
+          exampleUrls: 'https://e.gkd.li/c3980f6b-5459-45fe-b317-5bdc561319dc',
+          snapshotUrls: 'https://i.gkd.li/i/18009276',
+        },
       ],
     },
     {
       key: 14,
       name: '全屏广告-视频播放中途插入的打招呼界面',
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-      rules: 'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
-      snapshotUrls: 'https://i.gkd.li/i/13379307',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '@[desc="关闭"] + ViewGroup > [text$="打个招呼"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13379307',
+        },
+      ],
     },
     {
       key: 15,
       name: '全屏广告-关闭商城推荐',
       desc: '点击"不感兴趣"',
-      activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-      rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
-      snapshotUrls: 'https://i.gkd.li/i/13800207',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches:
+            '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
+          snapshotUrls: 'https://i.gkd.li/i/13800207',
+        },
+      ],
     },
     {
       key: 16,
-      fastQuery: true,
       name: '局部广告-拍同款弹窗',
       desc: '点击不感兴趣',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: '@LynxFlattenUI[text="不感兴趣"] +4 [text="拍同款"]',
           snapshotUrls: 'https://i.gkd.li/i/13996724',
@@ -297,6 +260,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          activityIds: '.main.MainActivity',
           matches: ['[text*="通讯录"]', '[text="拒绝"]'],
           exampleUrls:
             'https://m.gkd.li/57941037/8f70418d-92f0-4264-83fd-a680350c478e',
@@ -319,13 +283,13 @@ export default defineGkdApp({
           excludeActivityIds: '.setting.ui.SettingCommonProtocolActivity',
           matches: [
             '[text*="青少年" || text*="未成年"][text*="模式"]',
-            '[text="关闭" || desc="关闭"]',
+            '[text="关闭" || text="不再提醒"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/14321107',
             'https://i.gkd.li/i/14473006',
-            'https://i.gkd.li/i/14567078',
             'https://i.gkd.li/i/17726070',
+            'https://i.gkd.li/i/18638030',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/14917848',
@@ -342,6 +306,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.search.activity.SearchResultActivity',
       rules: [
         {
           key: 0,
@@ -357,6 +322,46 @@ export default defineGkdApp({
             'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
           matches: '@ImageView[clickable=true] - [text^="开启定位"]',
           snapshotUrls: 'https://i.gkd.li/i/13755718',
+        },
+      ],
+    },
+    {
+      key: 22,
+      name: '全屏广告-汽水音乐VIP',
+      desc: '点击关闭',
+      activityIds: [
+        '.dsp.MusicLunaActivity',
+        '.dsp.playpage.singlepage.subpage.MusicDspSubPlayerActivity',
+      ],
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          matches:
+            'ScrollView - @ImageView[index=1][childCount=0][visibleToUser=true][width<100][height<100] <2 View < View < ViewGroup < ViewGroup < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/4c57ee77-2189-4b3b-be0b-430fac8853c2',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18100285',
+            'https://i.gkd.li/i/18100454',
+            'https://i.gkd.li/i/18100477',
+          ],
+        },
+      ],
+    },
+    {
+      key: 23,
+      name: '其他-个性化推荐弹窗',
+      desc: '点击[稍后再说]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: [
+            '[text*="个性化推荐"][visibleToUser=true]',
+            '[text="稍后再说"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/987234ad-de0f-40d8-b7dd-d3c600609949',
+          snapshotUrls: 'https://i.gkd.li/i/18633134',
         },
       ],
     },

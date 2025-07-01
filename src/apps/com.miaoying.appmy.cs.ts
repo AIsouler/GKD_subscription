@@ -11,13 +11,21 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[desc="我知道了"] + [desc="了解更多"]',
-      snapshotUrls: 'https://i.gkd.li/i/12522872',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '@[desc="我知道了"] + [desc="了解更多"]',
+          snapshotUrls: 'https://i.gkd.li/i/12522872',
+        },
+      ],
     },
     {
       key: 0,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       actionDelay: 750,
       activityIds: 'com.miaoying.appmy.cs.MainActivity',
       rules: [
@@ -47,19 +55,14 @@ export default defineGkdApp({
             'TextView[text=null] - FrameLayout > ImageView + FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12565522',
         },
+        {
+          key: 3,
+          name: '全屏广告-弹窗广告2',
+          activityIds: 'com.sigmob.sdk.base.common.TransparentAdActivity',
+          matches: '[id="close_btn"][text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/12565375',
+        },
       ],
-    },
-    {
-      key: 1,
-      actionDelay: 500,
-      name: '全屏广告-弹窗广告2',
-      desc: '点击右上角文字[跳过],此广告相同节点存在两种卡片,一种能准确关闭,另外一种(出现较少)节点位置与实际位置不同故不能关闭,如误触可关闭',
-      activityIds: 'com.sigmob.sdk.base.common.TransparentAdActivity',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12565375',
-        'https://i.gkd.li/i/12565408', // 节点位置错误的快照
-      ],
-      rules: '[id="close_btn"][text="跳过"]',
     },
   ],
 });

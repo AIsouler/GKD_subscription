@@ -14,6 +14,7 @@ export default defineGkdApp({
           activityIds: [
             '.ThemeResourceProxyTabActivity',
             '.module.detail.view.ThemeDetailActivity',
+            '.module.detail.view.WidgetDetailActivity',
             '.v9.WallpaperSubjectActivity',
           ],
           matches: '[vid="ad_close_btn"][visibleToUser=true]',
@@ -21,6 +22,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17143445',
             'https://i.gkd.li/i/17143447',
             'https://i.gkd.li/i/17675601',
+            'https://i.gkd.li/i/19637669',
           ],
         },
       ],
@@ -29,14 +31,21 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: [
-        'com.android.thememanager.ThemeResourceTabActivity',
-        'com.android.thememanager.ThemeResourceProxyTabActivity',
-      ],
-      rules: 'ImageView[id="com.android.thememanager:id/cancel"][desc="关闭"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13215038',
-        'https://i.gkd.li/i/15286330',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            'com.android.thememanager.ThemeResourceTabActivity',
+            'com.android.thememanager.ThemeResourceProxyTabActivity',
+          ],
+          matches: 'ImageView[vid="cancel"][desc="关闭"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13215038',
+            'https://i.gkd.li/i/15286330',
+          ],
+        },
       ],
     },
     {

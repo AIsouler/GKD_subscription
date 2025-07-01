@@ -13,6 +13,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
+          activityIds: '.ui.activity.HomeActivity',
           matches: '@Image[clickable=true][text="webp"] +5 [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/i/13195645',
         },
@@ -31,7 +32,7 @@ export default defineGkdApp({
             '.ui.activity.MainFrameActivity',
           ],
           matches:
-            '[text="开心收下" || text="去抢购" || text="立即抽免单" || text="去刮奖" || text="立即领取" || text="去领大额金币" || text="送你大额现金" || text*="红包助手" || text="刮刮卡发来的消息通知"][visibleToUser=true]',
+            '[text="开心收下" || text="去抢购" || text="立即抽免单" || text="去刮奖" || text="立即领取" || text="去领大额金币" || text="送你大额现金" || text*="红包助手" || text="刮刮卡发来的消息通知" || text="立即充值"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13625441',
             'https://i.gkd.li/i/13761182',
@@ -45,6 +46,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17564786',
             'https://i.gkd.li/i/17585645',
             'https://i.gkd.li/i/17625608',
+            'https://i.gkd.li/i/18481318',
           ],
         },
         {
@@ -69,12 +71,6 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 6,
-          activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          matches: '[text="上滑看视频得现金"] - [text="webp"]',
-          snapshotUrls: 'https://i.gkd.li/i/13809053',
-        },
-        {
           key: 7,
           matchTime: 10000,
           actionMaximum: 1,
@@ -84,11 +80,12 @@ export default defineGkdApp({
             '.ui.activity.MainFrameActivity',
           ],
           matches:
-            '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [vid="pdd"][childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <(2,3) [parent=null]',
+            'ImageView[childCount=0] < ViewGroup[childCount=1] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup <(1,2) ViewGroup < ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(1,2,3) [parent=null]',
           exampleUrls: 'https://e.gkd.li/f74b5f58-e518-4e33-bbb4-0bf28e2b79d8',
           snapshotUrls: [
             'https://i.gkd.li/i/17528782',
             'https://i.gkd.li/i/17655498',
+            'https://i.gkd.li/i/17893977',
           ],
         },
         {
@@ -101,6 +98,17 @@ export default defineGkdApp({
             '@ViewGroup[childCount=1][clickable=true] < ViewGroup[childCount=2] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] < [childCount=1] <2 FrameLayout <2 [parent=null]',
           exampleUrls: 'https://e.gkd.li/e5428072-9ee3-47e9-87ad-d8b47e24f173',
           snapshotUrls: 'https://i.gkd.li/i/17773799',
+        },
+        {
+          key: 9,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.ui.activity.HomeActivity',
+          matches:
+            '@ImageView[index=0][vid="pdd"][childCount=0][visibleToUser=true][width<120&&height<120] < RelativeLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [parent=null]',
+          exampleUrls: 'https://e.gkd.li/64f35ab7-37e1-4060-aa91-468116a42cae',
+          snapshotUrls: 'https://i.gkd.li/i/18375615',
         },
       ],
     },
@@ -247,6 +255,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.ui.activity.HomeActivity',
           matches:
             '[text="青少年模式"] < FrameLayout +5 ViewGroup [text="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/13809053',
@@ -261,6 +270,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.ui.activity.HomeActivity',
           matches:
             'FrameLayout > ViewGroup[vid="pdd"] > ViewGroup > ViewGroup[childCount<3] > ViewGroup[childCount=3 || childCount=2] >(1,2) ImageView[clickable=true][visibleToUser=true]',
           snapshotUrls: [
@@ -273,11 +283,18 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           action: 'back',
-          matches: '[text="及时获取物流消息" || text="开启通知"]',
+          activityIds: [
+            '.ui.activity.HomeActivity',
+            '.activity.NewPageActivity',
+            '.ui.activity.MainFrameActivity',
+          ],
+          matches:
+            '[text="及时获取物流消息" || text="开启通知" || text="允许通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15004580',
             'https://i.gkd.li/i/15048085',
             'https://i.gkd.li/i/16643295',
+            'https://i.gkd.li/i/18371979',
           ],
         },
       ],
@@ -308,6 +325,19 @@ export default defineGkdApp({
           matches: ['[text="已获得现金"]', '[text="跳过"]'],
           exampleUrls: 'https://e.gkd.li/4197b363-3492-4f87-a9dd-109da67bb3bf',
           snapshotUrls: 'https://i.gkd.li/i/17450614',
+        },
+      ],
+    },
+    {
+      key: 21,
+      name: '功能类-关闭截图后的弹窗',
+      rules: [
+        {
+          fastQuery: true,
+          action: 'back', // 点击取消会导致 MIUI 截图悬浮窗收起
+          activityIds: '.activity.NewPageActivity',
+          matches: '[text="搜索图片同款商品"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/19340768',
         },
       ],
     },

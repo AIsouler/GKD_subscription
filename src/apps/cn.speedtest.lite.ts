@@ -10,17 +10,29 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="cn.speedtest.lite:id/iv_close"] - [id="cn.speedtest.lite:id/ll_main_pane"] >2 [id="cn.speedtest.lite:id/tv_upgrade_content"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715483',
+      rules: [
+        {
+          activityIds: '.main.MainActivity',
+          matches:
+            '@[id="cn.speedtest.lite:id/iv_close"] - [id="cn.speedtest.lite:id/ll_main_pane"] >2 [id="cn.speedtest.lite:id/tv_upgrade_content"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715483',
+        },
+      ],
     },
     {
       key: 10,
       name: '全屏广告-新人专享优惠弹窗',
-      activityIds: 'cn.speedtest.lite.main.MainActivity',
-      rules:
-        '@[id="cn.speedtest.lite:id/iv_close"] - RelativeLayout >n [id="cn.speedtest.lite:id/ad_banner"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715511',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'cn.speedtest.lite.main.MainActivity',
+          matches:
+            '@[id="cn.speedtest.lite:id/iv_close"] - RelativeLayout >n [id="cn.speedtest.lite:id/ad_banner"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715511',
+        },
+      ],
     },
   ],
 });

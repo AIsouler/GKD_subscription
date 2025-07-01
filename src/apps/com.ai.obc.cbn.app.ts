@@ -12,6 +12,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            '.ui.other.activity.MainActivity',
+            '.ui.main.fragment.MainFragment$7$1',
+          ],
           matches: '[id$="/ivDis"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12617201',

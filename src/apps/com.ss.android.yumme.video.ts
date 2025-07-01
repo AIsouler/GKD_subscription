@@ -5,21 +5,6 @@ export default defineGkdApp({
   name: '抖音精选',
   groups: [
     {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          action: 'back',
-          matches: 'Button[text="开启青少年模式"]',
-          snapshotUrls: 'https://i.gkd.li/i/15858125',
-        },
-      ],
-    },
-    {
       key: 2,
       name: '更新提示',
       fastQuery: true,
@@ -28,6 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.main.MainActivity',
           matches: ['[text="立即升级"]', '[text="以后再说"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/12534016',
@@ -45,6 +31,7 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: 'TextView[text="去商店评分"]',
           snapshotUrls: 'https://i.gkd.li/i/15858132',
         },

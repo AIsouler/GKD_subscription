@@ -62,5 +62,29 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '分段广告-小说阅读页面广告',
+      fastQuery: true,
+      activityIds: 'com.duokan.shop.mibrowser.reading.SdkReaderActivity',
+      rules: [
+        {
+          key: 0,
+          excludeMatches:
+            '[vid="reading__close_ad_view__subtitle_tv"][visibleToUser=true]',
+          matches: '[vid="reading__app_ad_view__close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5deac756-01a5-4ee0-a26f-9fb659115f78',
+          snapshotUrls: 'https://i.gkd.li/i/19718114',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/19718162',
+        },
+        {
+          preKeys: [0],
+          matches:
+            '[vid="reading__close_ad_view__subtitle_tv"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6e2c9635-4084-47e1-b255-4bc9728a7528',
+          snapshotUrls: 'https://i.gkd.li/i/19718162',
+        },
+      ],
+    },
   ],
 });

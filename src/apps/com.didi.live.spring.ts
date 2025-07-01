@@ -8,9 +8,12 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds:
             'com.qennnsad.aknkaksd.presentation.ui.MainContainerActivity',
           matches: '[vid="dialog_hall_iv_close"]',

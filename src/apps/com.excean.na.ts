@@ -5,28 +5,12 @@ export default defineGkdApp({
   name: '99手游加速器',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          snapshotUrls: 'https://i.gkd.li/i/14835263',
-        },
-      ],
-    },
-    {
       key: 1,
-      fastQuery: true,
       name: '局部广告-卡片广告',
-      desc: '点击X',
+      desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.excelliance.kxqp.ui.activity.GameLaunchActivity',
           matches: '[id="com.excean.na:id/iv_close_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/13931051',
@@ -36,7 +20,10 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      desc: '点击X',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

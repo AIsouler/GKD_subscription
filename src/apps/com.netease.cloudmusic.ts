@@ -17,10 +17,12 @@ export default defineGkdApp({
           key: 0,
           excludeActivityIds:
             'com.netease.cloudmusic.music.biz.setting.activity.SettingActivity',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"||text*="Skip"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/15092772',
             'https://i.gkd.li/i/15092814', // 避免误触
+            'https://i.gkd.li/i/17892200', // 'Skip' for English users.
           ],
         },
       ],
@@ -163,6 +165,7 @@ export default defineGkdApp({
           matches: '[vid="dsl_dialog_root"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13804534',
+            'https://i.gkd.li/i/13804541',
             'https://i.gkd.li/i/13848913',
             'https://i.gkd.li/i/13962214',
             'https://i.gkd.li/i/14036940',
@@ -192,11 +195,14 @@ export default defineGkdApp({
           key: 0,
           action: 'back',
           activityIds: [
-            'com.netease.cloudmusic.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
-            'com.netease.cloudmusic.activity.MainActivity',
+            '.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
+            '.activity.MainActivity',
             '.activity.PlayListActivity',
           ],
-          matches: ['[text="支付宝"]', '[text^="确认协议并"]'],
+          matches: [
+            '[text="支付宝"][visibleToUser=true]',
+            '[text^="确认协议并" || text^="正在试听"][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13189055',
             'https://i.gkd.li/i/13260416',
@@ -207,6 +213,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14045917',
             'https://i.gkd.li/i/14926722',
             'https://i.gkd.li/i/16242200',
+            'https://i.gkd.li/i/19958685',
           ],
         },
         {
@@ -235,13 +242,20 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          activityIds: '.activity.MainActivity',
           matches: ['[text*="新版本"]', '[text="近期不再提示"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13233790',
-            'https://i.gkd.li/i/13197457',
-            'https://i.gkd.li/i/13228878',
-            'https://i.gkd.li/i/15092457', // 避免误触
+          snapshotUrls: 'https://i.gkd.li/i/13233790',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/15092457',
+        },
+        {
+          key: 1,
+          activityIds: '.activity.MainActivity',
+          matches: [
+            '[vid="updateVersionTitle"][visibleToUser=true]',
+            '[vid="md_dialog_cm_close_btn"][visibleToUser=true]',
           ],
+          exampleUrls: 'https://e.gkd.li/8827aa5a-a105-4910-981c-d9ecc036a87d',
+          snapshotUrls: 'https://i.gkd.li/i/18492805',
         },
       ],
     },
@@ -295,27 +309,6 @@ export default defineGkdApp({
           activityIds: 'com.netease.cloudmusic.activity.MainActivity',
           matches: '[id="com.netease.cloudmusic:id/skipBannerAd"]',
           snapshotUrls: 'https://i.gkd.li/i/13768367',
-        },
-      ],
-    },
-    {
-      key: 10,
-      name: '功能类-功能升级弹窗',
-      rules: [
-        {
-          key: 0,
-          name: '"我的"升级-下次再说',
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches: '[text="下次再说"] < ViewGroup',
-          snapshotUrls: 'https://i.gkd.li/i/13804541',
-        },
-        {
-          key: 1,
-          name: '"社区广场"升级-点击右上角x',
-          activityIds:
-            'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
-          matches: '[text="社区广场全新升级"] + ViewGroup > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/13804544',
         },
       ],
     },
@@ -393,12 +386,22 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches: '@ImageView[clickable=true] <n * > [text="查看我的勋章"]',
+          activityIds: '.activity.MainActivity',
+          matches: '@ImageView[clickable=true] +7 [text="查看我的勋章"]',
           exampleUrls:
             'https://m.gkd.li/57941037/39e34e7d-eae3-4a54-9794-97c2528d13fb',
           snapshotUrls: 'https://i.gkd.li/i/14926750',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches:
+            'ImageView[visibleToUser=true][childCount=0] < @ViewGroup[clickable=true][childCount=1] + [text$="获得该徽章"]',
+          exampleUrls: 'https://e.gkd.li/0d44b836-c0d8-4cdc-82d9-175eef8cdfc4',
+          snapshotUrls: 'https://i.gkd.li/i/18492801',
         },
       ],
     },

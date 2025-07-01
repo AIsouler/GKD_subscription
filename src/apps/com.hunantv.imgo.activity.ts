@@ -5,15 +5,6 @@ export default defineGkdApp({
   name: '芒果TV',
   groups: [
     {
-      key: 0,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules:
-        '[id="com.hunantv.imgo.activity:id/llSetAgeMode"] + [id="com.hunantv.imgo.activity:id/btnIknow"]',
-      snapshotUrls: 'https://i.gkd.li/i/12832447',
-    },
-    {
       key: 1,
       name: '分段广告-首页推荐广告',
       activityIds: 'com.hunantv.imgo.activity.MainActivity',
@@ -35,6 +26,9 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,

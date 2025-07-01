@@ -15,8 +15,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13842826',
             'https://i.gkd.li/i/13939089',
@@ -73,8 +76,8 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      fastQuery: true,
       name: '功能类-自动签到',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -82,14 +85,17 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'info.muge.appshare.view.main.MainActivity',
-          matches: '[id="info.muge.appshare:id/tvSign"][text="签到"]',
+          matches: '[text="签到"]',
           snapshotUrls: 'https://i.gkd.li/i/13931265',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           activityIds: 'info.muge.appshare.view.main.MainActivity',
-          matches: '[id="info.muge.appshare:id/tvClose"][text="确定"]',
-          snapshotUrls: 'https://i.gkd.li/i/13931279',
+          matches: '[text="确定" || text="我知道了"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13931279',
+            'https://i.gkd.li/i/20259829',
+          ],
         },
       ],
     },
@@ -178,9 +184,10 @@ export default defineGkdApp({
       key: 5,
       name: '通知提示-公告弹窗',
       desc: '点击[收到]',
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           activityIds: 'info.muge.appshare.view.main.MainActivity',

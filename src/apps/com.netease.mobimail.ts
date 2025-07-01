@@ -26,8 +26,11 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/12686093',
         },
         {
@@ -47,13 +50,12 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.netease.mail.biz.main.MainITabActivity',
-          matches: '[id="com.netease.mobimail:id/ad_vip"]',
-          snapshotUrls: 'https://i.gkd.li/i/12683488',
-        },
-        {
-          activityIds: 'com.netease.mail.biz.main.MainITabActivity',
-          matches: '[id="com.netease.mobimail:id/ll_delete"]',
-          snapshotUrls: 'https://i.gkd.li/i/12683511',
+          matches:
+            '[id="com.netease.mobimail:id/ad_vip" || id="com.netease.mobimail:id/ll_delete"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12683488',
+            'https://i.gkd.li/i/12683511',
+          ],
         },
       ],
     },

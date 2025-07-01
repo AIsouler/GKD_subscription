@@ -11,8 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.cheersedu.app:id/iv_version_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13315712',
+      rules: [
+        {
+          activityIds: '.main.MainActivity',
+          matches: '[id="com.cheersedu.app:id/iv_version_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13315712',
+        },
+      ],
     },
   ],
 });

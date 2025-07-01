@@ -14,8 +14,9 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.MainActivity',
           matches:
-            '[desc="公告"] + * + @[desc="知道了"] <<n [id="android:id/content"]',
+            '@Button[desc="知道了"][visibleToUser=true] <3 View < View < View < View < FrameLayout < [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/ae1792dd-210b-4ac2-bfce-c2081ed03498',
           snapshotUrls: 'https://i.gkd.li/i/14559882',

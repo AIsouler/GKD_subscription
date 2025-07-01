@@ -20,7 +20,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12777097',
             'https://i.gkd.li/i/13694950',
-            'https://i.gkd.li/i/13699455', // activityIds: 'com.soft.blued.ui.home.HomeActivity',
+            'https://i.gkd.li/i/13699455',
           ],
         },
         {
@@ -60,11 +60,14 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-会员活动弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           activityIds: 'com.blued.android.core.ui.TransparentActivity',
-          fastQuery: true,
           matches: '[vid="blued_ad_layout"] + [vid="img_close"]',
           snapshotUrls: 'https://i.gkd.li/i/14310618',
         },

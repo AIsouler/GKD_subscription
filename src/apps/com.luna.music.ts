@@ -15,8 +15,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/14232395',
         },
         {
@@ -39,6 +42,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.luna.biz.ad.AdActivity',
           matches: '@[text="稍后再说"] + [text="立即升级"]',
           snapshotUrls: 'https://i.gkd.li/i/14790279',
         },
@@ -58,8 +62,11 @@ export default defineGkdApp({
           key: 0,
           name: '底部半屏弹窗',
           action: 'back', // 使用点击方式有概率无效
+          excludeMatches:
+            'FlattenUIText[text="立得全天畅听" || text="立即解锁 今日畅听"][visibleToUser=true]',
           matches:
-            'FlattenUIText[text="开会员听整月" || text="购买汽水会员" || text="试听中，开通VIP听全曲" || text*="看视频全天免费听"][visibleToUser=true]',
+            'FlattenUIText[text="开会员听整月" || text="购买汽水会员" || text*="免费听"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/43099439-a0ab-4da0-a686-5c960df92607',
           snapshotUrls: [
             'https://i.gkd.li/i/13533795',
             'https://i.gkd.li/i/13660652',
@@ -68,8 +75,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16280954',
             'https://i.gkd.li/i/16342691',
             'https://i.gkd.li/i/17580823',
+            'https://i.gkd.li/i/18183749',
           ],
-          excludeSnapshotUrls: 'https://i.gkd.li/i/13613296',
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/13613296',
+            'https://i.gkd.li/i/14237527',
+            'https://i.gkd.li/i/18242457',
+          ],
         },
         {
           key: 2,
@@ -150,10 +162,22 @@ export default defineGkdApp({
     {
       key: 9,
       name: '功能类-看视频免费听弹窗',
-      desc: '点击【立得全天畅听】',
-      activityIds: 'com.luna.biz.main.main.MainActivity',
-      rules: '[text="立得全天畅听"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/14237527',
+      desc: '点击[立得全天畅听/立即解锁 今日畅听]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.luna.biz.main.main.MainActivity',
+            'com.luna.biz.ad.view.container.AdActivity',
+          ],
+          matches:
+            'FlattenUIText[text="立得全天畅听" || text="立即解锁 今日畅听"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14237527',
+            'https://i.gkd.li/i/18242457',
+          ],
+        },
+      ],
     },
     {
       key: 10,

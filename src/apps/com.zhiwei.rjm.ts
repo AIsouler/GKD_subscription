@@ -12,6 +12,9 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           activityIds: 'com.zhiwei.rjm.MainActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true] < * +2 ViewGroup > [text="广告"]',
@@ -29,8 +32,10 @@ export default defineGkdApp({
         {
           key: 0,
           name: '视频播放页卡片广告',
+          fastQuery: true,
           activityIds: 'com.zhiwei.rjm.MainActivity',
-          matches: '@TextView[clickable=true] <2 View + View > [text="广告"]',
+          matches:
+            '@TextView[clickable=true] <2 View + View > [visibleToUser=true][text="广告"] <<n [vid="ksad_container"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7bfe06a0-d91a-40cf-879e-1c03beac7a35',
           snapshotUrls: 'https://i.gkd.li/i/14430539',

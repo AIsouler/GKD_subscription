@@ -17,7 +17,7 @@ export default defineGkdApp({
             'com.vehicles.activities.activity.MainActivity',
             'com.sinoiov.cwza.discovery.activity.TrackDetailActivity',
           ],
-          matches: '[id*="iv_close" || id*="iv_cancle"]',
+          matches: '[vid="iv_close" || vid="iv_cancle"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13952578',
             'https://i.gkd.li/i/13952509',

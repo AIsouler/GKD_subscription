@@ -5,43 +5,6 @@ export default defineGkdApp({
   name: 'PU口袋校园',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14560058',
-            'https://i.gkd.li/i/14560214',
-          ],
-        },
-        {
-          key: 1,
-          fastQuery: true,
-          matches: '[text^="跳过"][text.length<=10]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12642486',
-            'https://i.gkd.li/i/12846496',
-            'https://i.gkd.li/i/12868232',
-          ],
-        },
-        {
-          key: 2,
-          fastQuery: true,
-          action: 'clickCenter',
-          matches: '[vid="ms_skipView"]',
-          snapshotUrls: 'https://i.gkd.li/i/16486847',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告',
       rules: [
@@ -115,33 +78,33 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14766902',
           ],
         },
+        {
+          key: 7,
+          fastQuery: true,
+          activityIds: '.lut.act.LutMainActivity',
+          matches:
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/240494b6-026f-49f7-a77d-986e70077218',
+          snapshotUrls: 'https://i.gkd.li/i/18245369',
+        },
       ],
     },
     {
       key: 2,
       name: '局部广告-首页-右侧浮窗广告',
       fastQuery: true,
-      activityIds: [
-        'com.xyhui.start.PUMainActivity',
-        'com.xyhui.start.LoadingActivity',
-      ],
-      rules: 'ImageView[id="com.xyhui:id/deleteIv"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12846543',
-        'https://i.gkd.li/i/12868119',
-      ],
-    },
-    {
-      key: 3,
-      name: '更新提示',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: 'ImageView[id="com.xyhui:id/closeIv"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12908853',
-        'https://i.gkd.li/i/12908865',
+      rules: [
+        {
+          activityIds: [
+            'com.xyhui.start.PUMainActivity',
+            'com.xyhui.start.LoadingActivity',
+          ],
+          matches: 'ImageView[id="com.xyhui:id/deleteIv"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12846543',
+            'https://i.gkd.li/i/12868119',
+          ],
+        },
       ],
     },
   ],

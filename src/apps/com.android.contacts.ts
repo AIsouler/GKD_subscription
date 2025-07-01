@@ -8,10 +8,12 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          fastQuery: true,
           activityIds:
             'com.mobile.businesshall.ui.common.RecommendPopupActivity',
           matches: '[vid="img_close_btn"][clickable=true][visibleToUser=true]',

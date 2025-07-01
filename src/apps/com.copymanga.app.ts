@@ -168,6 +168,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.MainActivity',
           matches: '[desc="进入拷贝漫画"]',
           snapshotUrls: 'https://i.gkd.li/i/13233179',
         },
@@ -175,13 +176,14 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '权限提示-通知权限',
+      name: '通知提示-公告弹窗',
       matchTime: 30000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: '[desc="系统提示"] +n [desc="确定"]',
+          activityIds: '.MainActivity',
+          matches: '[desc="系统提示"] +2 [desc="确定"]',
           exampleUrls:
             'https://m.gkd.li/57941037/7577dafa-9e3e-44de-bd20-c52f8a30e9c6',
           snapshotUrls: 'https://i.gkd.li/i/13233180',

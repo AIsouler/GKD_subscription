@@ -7,27 +7,36 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
       matchRoot: true,
+      fastQuery: true,
       actionMaximum: 1,
       matchTime: 10000,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
+          action: 'clickCenter', // clickNode 可能无效
           activityIds: 'com.xiaomi.market.ui.FloatWebActivity',
-          matches: '@Button[clickable=true][text="关闭"] <<n [vid="webview"]',
-          snapshotUrls: 'https://i.gkd.li/i/16323123',
+          matches:
+            '@Button[text="关闭" || desc="关闭"][clickable=true][visibleToUser=true] <<n [vid="webview"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16323123',
+            'https://i.gkd.li/i/20946336',
+          ],
         },
       ],
     },
     {
       key: 9,
       name: '局部广告-卡片广告',
-      fastQuery: true,
-      activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
-      rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
-      snapshotUrls: 'https://i.gkd.li/i/13197334',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+          matches: '[id="com.xiaomi.market:id/iv_close_tip"]',
+          snapshotUrls: 'https://i.gkd.li/i/13197334',
+        },
+      ],
     },
     {
       key: 10,
@@ -61,19 +70,21 @@ export default defineGkdApp({
         {
           key: 0,
           name: '升级软件后的"开启推送"弹窗',
-          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
-          matches: '[vid="dialog_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/14814456',
+          activityIds: '.ui.UpdateListActivity',
+          matches:
+            '[vid="dialog_cancel" || text="不再提醒"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14814456',
+            'https://i.gkd.li/i/19643114',
+          ],
         },
         {
           key: 1,
           name: '开启通知栏提醒',
           matchTime: 10000,
+          activityIds: '.business_ui.main.MarketTabActivity',
           matches: ['[text="开启通知栏提醒"]', '[text="不了，谢谢"]'],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13197306',
-            'https://i.gkd.li/i/13691701',
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/13691701',
         },
       ],
     },
@@ -84,9 +95,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.xiaomi.market.business_ui.main.MarketTabActivity',
-      rules: '[id="com.xiaomi.market:id/close_float_recommend"]',
-      snapshotUrls: 'https://i.gkd.li/i/13624971',
+      rules: [
+        {
+          activityIds: 'com.xiaomi.market.business_ui.main.MarketTabActivity',
+          matches: '[id="com.xiaomi.market:id/close_float_recommend"]',
+          snapshotUrls: 'https://i.gkd.li/i/13624971',
+        },
+      ],
     },
     {
       key: 13,

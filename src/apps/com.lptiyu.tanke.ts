@@ -23,19 +23,22 @@ export default defineGkdApp({
         {
           key: 1,
           name: '腾讯广告-2',
+          fastQuery: true,
           activityIds: 'com.lptiyu.tanke.activities.main.MainActivity',
-          matches: 'ImageView - FrameLayout > FrameLayout > ImageView',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/13070801',
         },
         {
           key: 2,
           name: '快手广告-1',
+          fastQuery: true,
           activityIds: [
             'com.lptiyu.tanke.activities.splash.SplashActivity',
             'com.lptiyu.tanke.activities.school_run_record_detail.RunRecordDetailActivity',
           ],
           matches:
-            '[text="广告"] <2 ViewGroup -n ViewGroup > @ViewGroup[childCount=1] > ImageView',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13218232',
             'https://i.gkd.li/i/13536714',
@@ -44,8 +47,8 @@ export default defineGkdApp({
         {
           key: 3,
           name: '快手广告-2',
-          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
           fastQuery: true,
+          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
           matches:
             '[text="广告"] <2 ViewGroup - ViewGroup > ViewGroup > [text="跳过"]',
           snapshotUrls: 'https://i.gkd.li/i/13476172',
@@ -53,8 +56,8 @@ export default defineGkdApp({
         {
           key: 4,
           name: '快手广告-3',
-          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
           fastQuery: true,
+          activityIds: 'com.lptiyu.tanke.activities.splash.SplashActivity',
           matches:
             '[id="com.lptiyu.tanke:id/ksad_splash_circle_skip_left_view"]',
           snapshotUrls: 'https://i.gkd.li/i/13625386',

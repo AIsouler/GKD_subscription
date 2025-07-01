@@ -25,6 +25,7 @@ export default defineGkdApp({
           ],
         },
         {
+          preKeys: [0],
           key: 1,
           name: '点击不感兴趣',
           matches: '@[clickable=true] >3 [text="不感兴趣"]',
@@ -41,8 +42,28 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: ['[text="发现新版本"]', '[vid="iv_cancel"]'],
-          snapshotUrls: 'https://i.gkd.li/i/14395465',
+          activityIds: '.ui.contollers.main.MainActivity',
+          matches: ['[text="发现新版本"]', '[text$="不再提醒"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14395465',
+            'https://i.gkd.li/i/17825255',
+          ],
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '权限提示-通知权限',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[vid="pushsetting_close_iv"]',
+          exampleUrls: 'https://e.gkd.li/e28aa1f2-8088-4f78-bee9-2d5832637671',
+          snapshotUrls: 'https://i.gkd.li/i/17825298',
         },
       ],
     },

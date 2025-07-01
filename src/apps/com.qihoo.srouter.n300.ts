@@ -7,11 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[vid="app_update_later_button"]',
-      snapshotUrls: 'https://i.gkd.li/i/13800011',
+      rules: [
+        {
+          activityIds: 'com.ifenglian.superapp.ui.firewall.SAMainActivity',
+          matches: '[vid="app_update_later_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13800011',
+        },
+      ],
     },
   ],
 });

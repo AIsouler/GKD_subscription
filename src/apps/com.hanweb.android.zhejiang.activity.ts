@@ -7,8 +7,8 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      resetMatch: 'app',
       fastQuery: true,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13520598',
         },
         {
-          preKeys: 1,
+          preKeys: [1],
           key: 2,
           matches:
             '[text="版本更新"] - [id="com.hanweb.android.zhejiang.activity:id/rl_back"]',

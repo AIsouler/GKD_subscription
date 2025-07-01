@@ -7,14 +7,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.ddyc.lotterytool.module.main.MainActivity',
-      rules:
-        'ImageView - ImageButton[id="com.ddyc.lotterytool:id/arg"][text=null]',
-      snapshotUrls: 'https://i.gkd.li/i/13324555',
+      rules: [
+        {
+          matches:
+            '@ImageButton[clickable=true][childCount=0] < LinearLayout < FrameLayout < [parent=null]',
+          snapshotUrls: 'https://i.gkd.li/i/13324555',
+        },
+      ],
     },
     {
       key: 2,
@@ -22,8 +25,12 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="开启推送通知"] +2 LinearLayout [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13325888',
+      rules: [
+        {
+          matches: '[text^="开启推送通知"] +2 LinearLayout [text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13325888',
+        },
+      ],
     },
   ],
 });

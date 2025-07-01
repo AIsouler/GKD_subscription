@@ -12,16 +12,23 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
-      rules: '[vid="activate_button"]',
-      snapshotUrls: 'https://i.gkd.li/i/14293734',
+      rules: [
+        {
+          matches: '[vid="activate_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/14293734',
+        },
+      ],
     },
     {
       key: 1,
       name: '全屏广告-会员回馈弹窗',
       desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.chan.cwallpaper.module.main.MainActivity',
           matches: '[vid="ivClose"]',
           exampleUrls:

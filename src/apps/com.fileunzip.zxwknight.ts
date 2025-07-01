@@ -7,6 +7,9 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
@@ -29,15 +32,20 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-升级专业版弹窗',
-      fastQuery: true,
-      activityIds: [
-        'com.fileunzip.zxwknight.activity.MainActivity',
-        'com.fileunzip.zxwknight.activity.VideoPlayActivity',
-      ],
-      rules: '@[vid="ziputil_dialog_imageview"] < * > [text="升级到专业版"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13328212',
-        'https://i.gkd.li/i/14885336',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.fileunzip.zxwknight.activity.MainActivity',
+            'com.fileunzip.zxwknight.activity.VideoPlayActivity',
+          ],
+          matches:
+            '@[vid="ziputil_dialog_imageview"] < * > [text="升级到专业版"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13328212',
+            'https://i.gkd.li/i/14885336',
+          ],
+        },
       ],
     },
     {

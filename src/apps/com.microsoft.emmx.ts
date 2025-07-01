@@ -11,8 +11,13 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      rules: '[text="允许通知"] + [text="不，谢谢"]',
-      snapshotUrls: 'https://i.gkd.li/i/13646187',
+      rules: [
+        {
+          activityIds: 'org.chromium.chrome.browser.ChromeTabbedActivity',
+          matches: '[text="允许通知"] + [text="不，谢谢"]',
+          snapshotUrls: 'https://i.gkd.li/i/13646187',
+        },
+      ],
     },
     {
       key: 4,

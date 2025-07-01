@@ -29,10 +29,8 @@ export default defineGkdApp({
             'io.github.trojan_gfw.igniter.MainActivity',
             'com.google.android.gms.ads.AdActivity',
           ],
-          matches: [
-            '[id="mys-wrapper"] + View >n Image',
-            '@View[clickable=true] > [text="关闭"]',
-          ],
+          matches:
+            '[desc="OPEN" || desc="開啟"] - @View[clickable=true][visibleToUser=true] > [text="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13426255',
             'https://i.gkd.li/i/13459399',
@@ -42,10 +40,8 @@ export default defineGkdApp({
           key: 1,
           name: '谷歌广告-2',
           activityIds: 'com.google.android.gms.ads.AdActivity',
-          matches: [
-            '[id="mys-wrapper"] + View >n Image',
-            '[id="mys-wrapper"] >n View > View > Button',
-          ],
+          matches:
+            '@Button[clickable=true][childCount=0] < View[childCount=1] <2 View[childCount=2] - View >3 [desc="開啟"]',
           snapshotUrls: 'https://i.gkd.li/i/13476799',
         },
         {

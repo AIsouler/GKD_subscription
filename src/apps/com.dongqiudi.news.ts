@@ -14,42 +14,33 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          // 点击方式为 clickNode 时会误触广告，更改点击方式为 clickCenter https://github.com/AIsouler/GKD_subscription/issues/905
           key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12620568',
-            'https://i.gkd.li/i/12621997',
-          ],
+          fastQuery: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/74db13f0-d87d-41a3-bbbb-1b075d8ae7d6',
+          snapshotUrls: 'https://i.gkd.li/i/20218520',
         },
         {
           key: 1,
-          name: '另一种倒计时广告', // 此广告要点击文字相邻的图片,如果直接点击文字会无反应或者触发广告跳转
+          fastQuery: true,
           matches:
-            '[id="com.dongqiudi.news:id/ad_skip_time"] + [id="com.dongqiudi.news:id/scale_iv"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12620583',
-            'https://i.gkd.li/i/12621953',
-          ],
+            '@View[clickable=true] - [text="互动广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3b636c88-23de-4e2a-86fd-2846a0f0274b',
+          snapshotUrls: 'https://i.gkd.li/i/20262129',
         },
         {
           key: 2,
-          matches: '[text^="跳过"][childCount=0][text.length<10]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/de316c34-dac0-4ee6-91e7-164432e49a1f',
-          snapshotUrls: 'https://i.gkd.li/i/12620577',
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/940ce4e2-da5f-4a43-b319-4131a22cb1e0',
+          snapshotUrls: 'https://i.gkd.li/i/20262130',
         },
       ],
-    },
-    {
-      key: 1,
-      name: '青少年模式',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text*="青少年模式"] + [id="com.dongqiudi.news:id/tv_know"]',
-      snapshotUrls: 'https://i.gkd.li/i/12621980',
     },
     {
       key: 2,
@@ -58,8 +49,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
-      snapshotUrls: 'https://i.gkd.li/i/12620586',
+      rules: [
+        {
+          activityIds: '.DownloadActivity',
+          matches: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
+          snapshotUrls: 'https://i.gkd.li/i/12620586',
+        },
+      ],
     },
     {
       key: 4,
@@ -91,12 +87,29 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '全屏广告-首页弹窗广告',
-      desc: '点击底部"x"关闭',
-      activityIds: 'com.dongqiudi.news.MainActivity',
-      fastQuery: true,
-      rules: '[id="com.dongqiudi.news:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13260467',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.dongqiudi.news.MainActivity',
+          matches: '[id="com.dongqiudi.news:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13260467',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[text="反馈"] +(1,2) View[childCount=1] > Image[childCount=0][text=""][width<60 && height<60]',
+          exampleUrls: 'https://e.gkd.li/87e47cae-fa83-4d25-879c-728a1519ee55',
+          snapshotUrls: 'https://i.gkd.li/i/20403710',
+        },
+      ],
     },
     {
       key: 8,
@@ -106,26 +119,49 @@ export default defineGkdApp({
       activityIds: 'com.dongqiudi.news.MainActivity',
       rules: [
         {
+          key: 1,
           name: '腾讯广告SDK',
+          fastQuery: true,
           matches:
-            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/13626900',
         },
         {
+          key: 2,
           name: '快手广告磁力智投SDK',
+          fastQuery: true,
           matches:
-            'ViewGroup[childCount=1] > @ViewGroup[clickable=true][childCount=1] > ImageView',
+            'ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13627105',
         },
         {
+          key: 3,
           name: '字节广告穿山甲SDK-1',
           matches: 'View[text="反馈"] -2 @View > Image',
           snapshotUrls: 'https://i.gkd.li/i/13627106',
         },
         {
+          key: 4,
           name: '字节广告穿山甲SDK-2', //合并key3
           matches: 'FrameLayout[desc^="webview-close"] > View[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12620588',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '权限提示-通知权限',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches: '[vid="notification_button_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/81cea4de-9288-4ec8-97ea-7c4a9b19fd08',
+          snapshotUrls: 'https://i.gkd.li/i/19666282',
         },
       ],
     },

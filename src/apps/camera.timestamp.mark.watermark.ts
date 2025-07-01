@@ -10,8 +10,10 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'com.google.android.gms.ads.AdActivity',
-          matches: '[desc="Interstitial close button"][visibleToUser=true]',
+          matches:
+            '@ImageButton[desc="Interstitial close button"][visibleToUser=true] < FrameLayout <2 RelativeLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/1ab940d5-88b8-4088-81fe-9cb72c4cbd53',
           snapshotUrls: 'https://i.gkd.li/i/17058992',
         },

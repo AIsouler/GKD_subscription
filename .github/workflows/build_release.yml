@@ -1,12 +1,40 @@
 name: build_release
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '0 19 * * *'
+  workflow_dispatch:
 
 jobs:
+  check_changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.changes.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: changes
+        run: |
+          prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
+          if [ "$prev_tag" == "none" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            if git diff --exit-code $prev_tag HEAD -- src; then
+              echo "No changes detected in 'src' directory between $prev_tag and the latest commit."
+              echo "changed=false" >> $GITHUB_OUTPUT
+            else
+              echo "changed=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+
   build_release:
+    needs: check_changes
+    if: ${{ needs.check_changes.outputs.changed == 'true' }}
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.version.outputs.version }}
+      changes_detected: ${{ steps.changes.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,9 +54,6 @@ jobs:
         run: |
           version=$(node -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion());")
           echo "version=${version}" >> "$GITHUB_OUTPUT"
-
-      - id: update_pkg_version
-        run: node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
 
       - name: Git commit
         id: commit
@@ -59,23 +84,12 @@ jobs:
           release_name: Release ${{ steps.version.outputs.version }}
           body_path: ./dist/CHANGELOG.md
 
-      - name: Upload Release Asset
-        id: upload-release-asset
-        if: ${{ steps.create_release.outcome == 'success' }}
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/AIsouler_gkd.json5
-          asset_name: AIsouler_gkd_${{ steps.version.outputs.version }}.json5
-          asset_content_type: application/json
-
       - name: Publish package
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"

@@ -23,10 +23,11 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
+      activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules: [
         {
           key: 1,
@@ -47,10 +48,15 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-截屏分享',
       desc: '关闭截屏时app弹出的分享弹窗',
-      activityIds: 'com.autonavi.map.activity.NewMapActivity',
-      rules:
-        '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/13473388',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView <<n [id="com.autonavi.minimap:id/fragment_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13473388',
+        },
+      ],
     },
     {
       key: 10,
@@ -131,6 +137,15 @@ export default defineGkdApp({
             '@ImageView[childCount=0] < ViewGroup[clickable=true] -2 * > View[text^="高德购票" && text$="优惠"] <<n [vid="mapInteractiveRelativeLayout"]',
           exampleUrls: 'https://e.gkd.li/59408741-4847-4395-ace5-b1e14ee24cec',
           snapshotUrls: 'https://i.gkd.li/i/16960157',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '@[clickable=true] > [visibleToUser=true][text="关闭"] <<n [vid="ajx_view_container"]',
+          exampleUrls: 'https://e.gkd.li/018aa83b-3f0a-46b4-b084-a5e7a397ca68',
+          snapshotUrls: 'https://i.gkd.li/i/18627401',
         },
       ],
     },

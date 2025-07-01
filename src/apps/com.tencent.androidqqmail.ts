@@ -5,17 +5,6 @@ export default defineGkdApp({
   name: 'QQ邮箱',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      priorityTime: 10000,
-      rules:
-        'RelativeLayout[childCount=3] > ImageView + @ImageView[clickable=true][visibleToUser=true] + FrameLayout[childCount>0]',
-      snapshotUrls: 'https://i.gkd.li/i/12775855',
-    },
-    {
       key: 0,
       name: '分段广告-列表卡片广告',
       fastQuery: true,
@@ -41,13 +30,21 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12775857',
         },
         {
-          preKeys: [0, 1], // https://github.com/gkd-kit/subscription/issues/1776
+          key: 2,
+          fastQuery: true,
+          matches: '[vid="btn_advertise_click_area"]',
+          exampleUrls: 'https://e.gkd.li/acce3df3-9773-4b42-b468-4724a7851efe',
+          snapshotUrls: 'https://i.gkd.li/i/17908070',
+        },
+        {
+          preKeys: [0, 1, 2], // https://github.com/gkd-kit/subscription/issues/1776
           key: 9,
           name: '点击[不感兴趣]',
           matches: '[text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12775862',
             'https://i.gkd.li/i/15051479',
+            'https://i.gkd.li/i/17908078',
           ],
         },
       ],
@@ -55,12 +52,13 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
+          activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
           matches: '[text="立刻开启"] - [text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/i/13043069',
         },

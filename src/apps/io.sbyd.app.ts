@@ -11,8 +11,9 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
+          fastQuery: true,
           matches:
-            'TextView < LinearLayout[childCount=2] < FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/13274336',
         },
         {

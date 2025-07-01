@@ -23,7 +23,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 1,
+          preKeys: [1],
           key: 2,
           actionDelay: 300, //测试时没有delay点击失效
           matches:
@@ -34,13 +34,13 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 1,
+          preKeys: [1],
           key: 3,
           actionDelay: 300,
           fastQuery: true,
           matches:
             '[id="com.sgcc.wsgw.cn:id/news_remind_laytout"] >n [id="com.sgcc.wsgw.cn:id/btn_remind_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/12745042'],
+          snapshotUrls: 'https://i.gkd.li/i/12745042',
         },
       ],
     },
@@ -51,8 +51,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@ImageView < ViewGroup -3 [text="有新版本啦!"]',
-      snapshotUrls: 'https://i.gkd.li/i/13501638',
+      rules: [
+        {
+          activityIds: 'com.sgcc.wsgw.rnbundle.activity.HomeReactActivity',
+          matches: '@ImageView < ViewGroup -3 [text="有新版本啦!"]',
+          snapshotUrls: 'https://i.gkd.li/i/13501638',
+        },
+      ],
     },
   ],
 });

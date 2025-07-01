@@ -7,11 +7,12 @@ export default defineGkdApp({
     {
       key: 0,
       name: '权限提示-通知权限',
-      desc: '会出现在创作、模板、我的页面，自动点击不开启',
+      desc: '点击[不开启]',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: 'com.bcut.homepage.widget.MainActivity',
       rules: [
         {
           key: 0,
@@ -42,16 +43,16 @@ export default defineGkdApp({
         {
           key: 0,
           name: '勾选"忽略"',
-          matches:
-            '[id="com.bilibili.studio:id/update_cbx_ignore_version"][checked=false]',
+          matches: '[text="忽略此版本的更新"][checked=false]',
+          snapshotUrls: 'https://i.gkd.li/i/13496049',
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           name: '点击"以后再说"',
           matches: '[id="com.bilibili.studio:id/update_btn_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13496049',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/i/13496049',
     },
   ],
 });

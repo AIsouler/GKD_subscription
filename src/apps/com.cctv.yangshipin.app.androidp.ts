@@ -13,9 +13,10 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/8f722fca-4f50-4d5e-bbb6-14276f973404',
-          snapshotUrls: 'https://i.gkd.li/i/16479226',
+          snapshotUrls: 'https://i.gkd.li/i/19859692', // 被全局规则排除
+          excludeSnapshotUrls: 'https://i.gkd.li/i/20949002',
         },
       ],
     },
@@ -43,6 +44,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          forcedTime: 10000,
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
@@ -50,6 +52,25 @@ export default defineGkdApp({
           matches: '[vid="iv_close"]',
           exampleUrls: 'https://e.gkd.li/abb06a51-6b92-4734-8a60-d0ef87b3364d',
           snapshotUrls: 'https://i.gkd.li/i/16742915',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '评价提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.videolite.android.ui.HomeActivity',
+          matches: [
+            '[text="给个好评"][visibleToUser=true]',
+            '[vid="close_btn"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/7d8f15f0-1f71-4538-8fde-144ebd81dead',
+          snapshotUrls: 'https://i.gkd.li/i/19788008',
         },
       ],
     },

@@ -5,37 +5,24 @@ export default defineGkdApp({
   name: '驾考宝典',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      priorityTime: 10000,
-      rules: [
-        {
-          key: 0,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[visibleToUser=true][text=null]',
-          snapshotUrls: 'https://i.gkd.li/i/14812686',
-        },
-        {
-          key: 1,
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/16283385',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '局部广告-悬浮广告',
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: 'com.handsgo.jiakao.android.main.activity.MainActivity',
           matches:
-            '@[id="com.handsgo.jiakao.android:id/ivDelete"] + [id="com.handsgo.jiakao.android:id/ivRemote"]',
+            '[id="com.handsgo.jiakao.android:id/ivDelete"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13475994',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.main.activity.MainActivity',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/adsdk__ids_component_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a3ff6d58-4902-4ff4-a1dd-dbdb4a9ae38a',
           snapshotUrls: 'https://i.gkd.li/i/13475994',
         },
       ],
@@ -43,10 +30,12 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          name: '字节广告',
           fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -56,12 +45,22 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '课程广告',
           fastQuery: true,
           activityIds: 'com.handsgo.jiakao.android.main.activity.MainActivity',
+          matches: [
+            '[vid="adsdk__ids_cta_layout"][visibleToUser=true]',
+            '[vid="close"][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/20745398',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.main.activity.MainActivity',
           matches:
-            '[id="com.handsgo.jiakao.android:id/adsdk__ids_cta_layout"] - * > [id="com.handsgo.jiakao.android:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13523033',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          exampleUrls: 'https://e.gkd.li/5370968e-fded-4be0-8fa4-b7997f8a861a',
+          snapshotUrls: 'https://i.gkd.li/i/20745379',
         },
       ],
     },

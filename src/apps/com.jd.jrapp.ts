@@ -11,16 +11,17 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      actionMaximumKey: 0,
       rules: [
         {
           key: 0,
+          activityIds: '.bm.mainbox.main.MainActivity',
           matches:
             'TextView[text^="打开通知"] +2 [id="com.jd.jrapp:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13249998',
         },
         {
           key: 1,
+          activityIds: '.bm.common.web.ui.WebActivity',
           matches:
             '@View - * > [visibleToUser=true][text="开启并订阅通知"] <<n [id="com.jd.jrapp:id/webview"]',
           snapshotUrls: 'https://i.gkd.li/i/13255656',
@@ -34,9 +35,14 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
-      snapshotUrls: 'https://i.gkd.li/i/13628364',
+      rules: [
+        {
+          activityIds: '.bm.mainbox.main.MainActivity',
+          matches:
+            '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/13628364',
+        },
+      ],
     },
     {
       key: 3,
@@ -45,8 +51,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@ImageView[clickable=true] - [text$="满意度打几分？"]',
-      snapshotUrls: 'https://i.gkd.li/i/13804561',
+      rules: [
+        {
+          activityIds: '.dy.api.JRDynamicPickerActivity',
+          matches: '@ImageView[clickable=true] - [text$="满意度打几分？"]',
+          snapshotUrls: 'https://i.gkd.li/i/13804561',
+        },
+      ],
     },
   ],
 });

@@ -14,6 +14,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: '.screen.activity.MarketOptionActivity',
           matches: '@Button[text="稍后再说"] +2 Button[text="马上开启"]',
           snapshotUrls: 'https://i.gkd.li/i/13407555',
         },
