@@ -563,7 +563,7 @@ export default defineGkdApp({
     },
     {
       key: 35,
-      name: '分段广告-订阅号文章内广告',
+      name: '分段广告-公众号文章内广告',
       desc: '注意⚠️：该规则有概率误触，请谨慎开启',
       activityIds: [
         '.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
