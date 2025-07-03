@@ -258,5 +258,34 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '功能类-关闭广告声音',
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches: 'LynxFlattenUI[text="开启声音"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7dcb8002-607b-4a0a-8ef7-cfa351fcc388',
+          snapshotUrls: 'https://i.gkd.li/i/20989168',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/20991240',
+        },
+      ],
+    },
+    {
+      key: 16,
+      name: '功能类-观看广告后点击获得听书时长旁边的关闭按钮',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@LynxFlattenUI[clickable=true] -2 [text="获得听书时长"] -n FlattenUIText[text="广告"]',
+          exampleUrls: 'https://e.gkd.li/8f6a6b4b-b189-48b8-a068-d66514b244e3',
+          snapshotUrls: 'https://i.gkd.li/i/20989165',
+        },
+      ],
+    },
   ],
 });
