@@ -163,11 +163,18 @@ export const blackListAppIDs: string[] = [
   'com.digibites.accubattery', // AccuBattery
   'com.domosekai.cardreader', // 读卡识途
   'com.noctuasoftware.stellarium_free', // Stellarium
-  'net.osmand', // OSMAnd
+  'net.osmand', // OsmAnd
+  'net.osmand.plus', // OsmAnd+
   'com.google.android.apps.maps', // Google 地图
   'com.jiaohua_browser', // JMComic2
   'com.picacomic.fregata', // PicACG
   'com.rosan.installer.x.revived', // installerX Revived
+  'com.android.gpstest', // GPSTest
+  'com.positron_it.zlib', // Z-Lib
+  'org.sunsetware.phocid', // Phocid
+  'com.twifucker.hachidori', // Hachidori
+  'me.neko.fckvip', // Fuck for VIP
+  'gr.nikolasspyr.integritycheck', // Play Integrity API Checker
 
   'com.canghai.haoka',
   'com.xy.td',
