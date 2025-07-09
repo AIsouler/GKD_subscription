@@ -42,6 +42,7 @@ export default defineGkdApp({
       activityIds: [
         '.ona.activity.SplashHomeActivity',
         '.ona.activity.VideoDetailActivity',
+        '.ona.activity.origin.OriginIconHomeActivity',
       ],
       rules: [
         {
@@ -67,6 +68,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19667496',
             'https://i.gkd.li/i/19667620',
             'https://i.gkd.li/i/19667647',
+            'https://i.gkd.li/i/21139117',
           ],
         },
         {
@@ -80,13 +82,28 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0, 1, 2],
+          key: 3,
+          matches:
+            '[desc="poster_inner_round_cell"] >5 RelativeLayout[childCount=5] > ImageView[clickable=true][childCount=0][visibleToUser=true][index=parent.childCount.minus(1)][width<180 && height<80]',
+          exampleUrls: 'https://e.gkd.li/18c89ee9-fcd5-43eb-805a-ac9e223e3cdc',
+          snapshotUrls: 'https://i.gkd.li/i/21139064',
+        },
+        {
+          key: 4,
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true][width<60 && height<60] -4 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/1d81db1b-a722-4800-b6b7-4e5edb470984',
+          snapshotUrls: 'https://i.gkd.li/i/21139431',
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4],
           key: 50,
           fastQuery: true,
           matches: '[text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/19667198',
             'https://i.gkd.li/i/19667244',
+            'https://i.gkd.li/i/21139034',
           ],
         },
         {
@@ -282,6 +299,14 @@ export default defineGkdApp({
             '@ImageView[id=null][text=null][desc=null][clickable=true][visibleToUser=true][width<150&&height<150] <2 FrameLayout[desc="float_widget_activity"] < FrameLayout <3 FrameLayout <3 [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/8cac3233-7ead-4f5e-9126-51a195788276',
           snapshotUrls: 'https://i.gkd.li/i/19667028',
+        },
+        {
+          key: 2,
+          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
+          matches:
+            '@RelativeLayout[clickable=true][childCount=2] < [desc="float_attent_banner_float_view_id"]',
+          exampleUrls: 'https://e.gkd.li/ad4ea4f1-22e7-4e9b-b194-8cdddda5c069',
+          snapshotUrls: 'https://i.gkd.li/i/21139028',
         },
       ],
     },
