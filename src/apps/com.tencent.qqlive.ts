@@ -43,6 +43,7 @@ export default defineGkdApp({
         '.ona.activity.SplashHomeActivity',
         '.ona.activity.VideoDetailActivity',
         '.ona.activity.origin.OriginIconHomeActivity',
+        '.kmm.VideoDetailKmmActivityBk',
       ],
       rules: [
         {
@@ -69,6 +70,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19667620',
             'https://i.gkd.li/i/19667647',
             'https://i.gkd.li/i/21139117',
+            'https://i.gkd.li/i/21152861',
           ],
         },
         {
@@ -91,15 +93,24 @@ export default defineGkdApp({
         {
           key: 4,
           matches:
-            '@View[clickable=true][childCount=0][visibleToUser=true][width<60 && height<60] -4 [text="广告"]',
+            '@View[clickable=true][childCount=0][visibleToUser=true][width<60 && height<60] -(4,5) [text="广告"]',
           exampleUrls: 'https://e.gkd.li/1d81db1b-a722-4800-b6b7-4e5edb470984',
-          snapshotUrls: 'https://i.gkd.li/i/21139431',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21139431',
+            'https://i.gkd.li/i/21152859',
+          ],
         },
         {
-          preKeys: [0, 1, 2, 3, 4],
+          key: 5,
+          matches:
+            'View[childCount=0][width<180 && height<80] < @View[clickable=true][childCount=1][visibleToUser=true] +2 [text*="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/21152960',
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4, 5],
           key: 50,
           fastQuery: true,
-          matches: '[text="不感兴趣"][visibleToUser=true]',
+          matches: '[text="直接关闭"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/19667198',
             'https://i.gkd.li/i/19667244',
@@ -113,6 +124,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/19667102',
             'https://i.gkd.li/i/19666759',
+            'https://i.gkd.li/i/21152903',
           ],
         },
       ],
@@ -121,7 +133,10 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过/关闭广告',
-      activityIds: '.ona.activity.VideoDetailActivity',
+      activityIds: [
+        '.ona.activity.VideoDetailActivity',
+        '.kmm.VideoDetailKmmActivityBk',
+      ],
       rules: [
         {
           key: 2,
@@ -132,6 +147,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13526547',
             'https://i.gkd.li/i/20691266',
+            'https://i.gkd.li/i/21152927',
           ],
         },
         {
