@@ -84,10 +84,15 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          matches: '[vid="iv_homedialog_close"]',
+          activityIds: 'com.donews.nga.activitys.MainActivity',
+          matches:
+            '[vid="iv_homedialog_close" || vid="iv_close"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/346f4485-82a7-4cf3-aab3-1fe6c9bb23af',
-          snapshotUrls: 'https://i.gkd.li/i/14126934',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14126934',
+            'https://i.gkd.li/i/21158044',
+          ],
         },
       ],
     },
