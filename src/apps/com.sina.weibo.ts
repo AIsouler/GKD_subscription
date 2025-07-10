@@ -7,9 +7,17 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-卡片广告',
-      desc: '点击右上角关闭',
-      fastQuery: true,
-      rules: [],
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.feed.DetailWeiboActivity',
+          matches:
+            'ImageView[childCount=0] < @FrameLayout[clickable=true][childCount=1][visibleToUser=true][width<50&&height<50] < FrameLayout + FrameLayout > View[desc!=null] <<n LinearLayout + [vid="detail_middle_tab"]',
+          exampleUrls: 'https://e.gkd.li/fc3b2c98-4540-4ec1-94b2-24abf90212c9',
+          snapshotUrls: 'https://i.gkd.li/i/21166775',
+        },
+      ],
     },
     {
       key: 8,
