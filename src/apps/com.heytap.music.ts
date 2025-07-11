@@ -26,9 +26,18 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.allsaints.ad.sjy.reward.SRewardLoadingActivity',
-          matches: '@[vid="close"] - [text="看广告免费听 VIP 歌曲"]',
-          snapshotUrls: 'https://i.gkd.li/i/16200623',
+          activityIds: [
+            'com.allsaints.ad.sjy.reward.SRewardLoadingActivity',
+            'com.allsaints.music.MainActivity',
+          ],
+          matches: [
+            '[vid="btnFreeListening"][visibleToUser=true]',
+            '[vid="close"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/16200623',
+            'https://i.gkd.li/i/21175600',
+          ],
         },
       ],
     },
