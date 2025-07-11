@@ -176,6 +176,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20038310',
           ],
         },
+        {
+          key: 5,
+          fastQuery: true,
+          matches:
+            '@View[clickable=true][childCount=0][width<100 && height<100] <8 View < DetachableComposeView < FrameLayout <2 [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/b0f4982a-ac12-481c-bccb-f8b7a8b14c46',
+          snapshotUrls: 'https://i.gkd.li/i/21175698',
+        },
       ],
     },
     {
