@@ -36,6 +36,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          action: 'clickCenter',
           activityIds: [
             'com.android.thememanager.ThemeResourceTabActivity',
             'com.android.thememanager.ThemeResourceProxyTabActivity',
