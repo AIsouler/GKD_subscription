@@ -26,5 +26,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '分段广告',
+      desc: '有的广告即使点击跳过后仍然会强制进入，此规则用于处理这种情况',
+      activityIds: 'com.wangmai.appsdkdex.WMPortraitActivity',
+      exampleUrls: 'https://e.gkd.li/c1299341-66bf-4702-885c-3fbe5d648675',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[id="com.wangmai.allmodules:id/wm_image_clear"]',
+          snapshotUrls: 'https://i.gkd.li/i/21202940',
+        },
+      ],
+    },
   ],
 });
