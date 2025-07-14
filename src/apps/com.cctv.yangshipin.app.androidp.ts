@@ -26,6 +26,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
@@ -34,6 +35,15 @@ export default defineGkdApp({
           matches: '[vid="lottery_popup_view_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/8ae44849-08d0-4e7f-a3e1-a277a4e22315',
           snapshotUrls: 'https://i.gkd.li/i/16493556',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.tencent.videolite.android.business.videolive.VideoLiveActivity',
+          matches: '[vid="product_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/1dcd9a1c-4994-4d6f-8611-fcfbcfa184bd',
+          snapshotUrls: 'https://i.gkd.li/i/21209009',
         },
       ],
     },
@@ -71,6 +81,22 @@ export default defineGkdApp({
           ],
           exampleUrls: 'https://e.gkd.li/7d8f15f0-1f71-4538-8fde-144ebd81dead',
           snapshotUrls: 'https://i.gkd.li/i/19788008',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '全屏广告-底部关注弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tencent.videolite.android.business.videolive.VideoLiveActivity',
+          matches:
+            '@[vid="close"] <<n [vid="follow_float_container"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/b4006011-8b13-431b-9af3-f4390898d12c',
+          snapshotUrls: 'https://i.gkd.li/i/21208995',
         },
       ],
     },
