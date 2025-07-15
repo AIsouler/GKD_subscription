@@ -8,12 +8,13 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示-固件更新弹窗',
       desc: '点击[以后再说]',
+      matchRoot: true, // https://github.com/AIsouler/GKD_subscription/issues/1051
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
           activityIds: '.main.MainActivityNew',
           matches: [
             '[text="发现新固件"][visibleToUser=true]',
