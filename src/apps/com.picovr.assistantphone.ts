@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      matchRoot: true, // https://github.com/AIsouler/GKD_subscription/issues/1052
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
