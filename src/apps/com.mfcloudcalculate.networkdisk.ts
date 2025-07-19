@@ -136,5 +136,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '全屏广告-相册自动备份弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<100 && height<100] +2 [desc="开启相册自动备份"]',
+          exampleUrls: 'https://e.gkd.li/e86a59e7-9329-4931-9bdd-5f6b4f896294',
+          snapshotUrls: 'https://i.gkd.li/i/21326468',
+        },
+      ],
+    },
   ],
 });
