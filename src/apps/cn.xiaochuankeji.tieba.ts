@@ -63,6 +63,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '分段广告-评论区卡片广告',
+      fastQuery: true,
       activityIds:
         'cn.xiaochuankeji.tieba.ui.post.postdetail.PostDetailActivity',
       rules: [
@@ -75,9 +76,11 @@ export default defineGkdApp({
         {
           preKeys: [1],
           key: 2,
-          matches:
-            '[id="cn.xiaochuankeji.tieba:id/iv_dislike_reason"] + LinearLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/12661028',
+          matches: '@[clickable=true] >2 [text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12661028',
+            'https://i.gkd.li/i/21334232',
+          ],
         },
       ],
     },
