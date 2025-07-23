@@ -13,12 +13,24 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          key: 0,
           fastQuery: true,
+          excludeMatches: '[vid="skip_parent_view"][visibleToUser=true]',
           matches:
             'LinearLayout[childCount>0] + LinearLayout[vid="welcome_ad_view_skip"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d14f7876-892f-4a25-aa1f-0f7500be52cb',
           snapshotUrls: 'https://i.gkd.li/i/18368988',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/18370963', // LinearLayout[childCount>0] 防止提前触发
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/18370963', // LinearLayout[childCount>0] 防止提前触发
+            'https://i.gkd.li/i/21383354',
+          ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches: '[vid="skip_parent_view"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/243c2920-9761-41c6-a142-9f6f53ab78fe',
+          snapshotUrls: 'https://i.gkd.li/i/21383354',
         },
       ],
     },
