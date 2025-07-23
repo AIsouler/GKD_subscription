@@ -107,7 +107,14 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/21152960',
         },
         {
-          preKeys: [0, 1, 2, 3, 4, 5],
+          key: 6,
+          matches:
+            '@View[clickable=true][visibleToUser=true][childCount=0] - View[childCount=1] > [text="去微信看看"]',
+          exampleUrls: 'https://e.gkd.li/e4e6aca1-e7cb-4346-980b-638f26f61864',
+          snapshotUrls: 'https://i.gkd.li/i/21379340',
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4, 5, 6],
           key: 50,
           fastQuery: true,
           matches: '[text="直接关闭"][visibleToUser=true]',
