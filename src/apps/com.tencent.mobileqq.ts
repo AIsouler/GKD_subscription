@@ -617,13 +617,6 @@ export default defineGkdApp({
             'https://m.gkd.li/57941037/882ab889-a145-4951-9a44-1dc192490c79',
           snapshotUrls: 'https://i.gkd.li/i/14188980',
         },
-        {
-          key: 1,
-          name: '个性装扮弹窗',
-          activityIds: 'cooperation.vip.ad.UserLeadingActivity',
-          matches: '[desc="关闭"][visibleToUser=true]', // 右侧关闭按钮无效
-          snapshotUrls: 'https://i.gkd.li/i/15137056',
-        },
       ],
     },
     {
