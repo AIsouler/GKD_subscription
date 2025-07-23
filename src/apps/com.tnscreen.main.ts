@@ -10,6 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 2, // https://github.com/AIsouler/GKD_subscription/issues/694
       resetMatch: 'app',
+      actionMaximumKey: 0,
       priorityTime: 10000,
       rules: [
         {
