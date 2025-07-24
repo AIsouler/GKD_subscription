@@ -15,7 +15,7 @@ export default defineGkdApp({
             left: 'width/2',
             top: 'height/2'
           },
-          matches: '@Button[clickable=true][visibleToUser] - TextView < View',
+          matches: '@Button[clickable=true] - TextView < View',
           exampleUrls: 'https://e.gkd.li/df4c585e-acd7-49b5-af76-e53175ffb42c',
           snapshotUrls: 'https://i.gkd.li/i/21399047',
         },
