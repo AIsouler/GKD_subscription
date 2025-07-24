@@ -109,9 +109,13 @@ export default defineGkdApp({
         {
           key: 6,
           matches:
-            '@View[clickable=true][visibleToUser=true][childCount=0] - View[childCount=1] > [text="去微信看看"]',
+            'DetachableComposeView >2 ScrollView > View[childCount=4][visibleToUser=true] > View + TextView[childCount=1][text!=null][getChild(0).width<120][getChild(0).height<80] + View[childCount=1][getChild(0).text!=null] + View[clickable=true][childCount=0]',
           exampleUrls: 'https://e.gkd.li/e4e6aca1-e7cb-4346-980b-638f26f61864',
-          snapshotUrls: 'https://i.gkd.li/i/21379340',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21379340',
+            'https://i.gkd.li/i/21410460',
+            'https://i.gkd.li/i/21410716',
+          ],
         },
         {
           preKeys: [0, 1, 2, 3, 4, 5, 6],
