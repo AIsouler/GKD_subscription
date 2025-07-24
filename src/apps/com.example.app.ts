@@ -13,7 +13,7 @@ export default defineGkdApp({
           activityIds: '.MainActivity',
           position: {
             left: 'width/2',
-            top: 'height/2'
+            top: 'height/2',
           },
           matches: '@Button[clickable=true] - TextView < View',
           exampleUrls: 'https://e.gkd.li/df4c585e-acd7-49b5-af76-e53175ffb42c',
