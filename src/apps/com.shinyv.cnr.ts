@@ -20,5 +20,16 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-开屏广告',
+      rules: [
+        {
+          activityIds: '.StartActivity_',
+          matches: '[text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/21404751',
+        },
+      ],
+    },
   ],
 });
