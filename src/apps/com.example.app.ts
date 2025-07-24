@@ -8,6 +8,9 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告',
       desc: '关闭选择线路后的全屏广告',
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
       rules: [
         {
           activityIds: '.MainActivity',
