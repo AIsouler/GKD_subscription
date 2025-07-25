@@ -42,9 +42,15 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.luna.biz.ad.AdActivity',
+          activityIds: [
+            'com.luna.biz.ad.AdActivity',
+            'com.luna.biz.main.main.MainActivity',
+          ],
           matches: '@[text="稍后再说"] + [text="立即升级"]',
-          snapshotUrls: 'https://i.gkd.li/i/14790279',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14790279',
+            'https://i.gkd.li/i/21427972',
+          ],
         },
       ],
     },
