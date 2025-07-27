@@ -5,6 +5,23 @@ export default defineGkdApp({
   name: '酷狗概念版',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          action: 'clickCenter',
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/94c7fc27-891f-4206-b933-f26661041b99',
+          snapshotUrls: 'https://i.gkd.li/i/21451911',
+        },
+      ],
+    },
+    {
       key: 2,
       name: '全屏广告-VIP弹窗',
       matchTime: 10000,
