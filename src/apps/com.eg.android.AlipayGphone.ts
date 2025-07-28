@@ -471,5 +471,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 26,
+      name: '局部广告-直播悬浮窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          position: {
+            left: 'width * 0.8893',
+            top: 'width * 0.1230',
+          },
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '[id="com.alipay.mobile.beevideo:id/fl_bee_player_view_container"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3698e238-f39b-47ce-b0df-e2e47c15b400',
+          snapshotUrls: 'https://i.gkd.li/i/21467483',
+        },
+      ],
+    },
   ],
 });
