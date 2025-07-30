@@ -33,6 +33,12 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/c1299341-66bf-4702-885c-3fbe5d648675',
           snapshotUrls: 'https://i.gkd.li/i/21202940',
         },
+        {
+          fastQuery: true,
+          matches: '[id="com.wangmai.allmodules:id/wm_splash_jump_tv"]',
+          exampleUrls: 'https://e.gkd.li/7ffc3e0d-3027-46ed-8833-96b638cbc4b3',
+          snapshotUrls: 'https://i.gkd.li/i/21502192',
+        },
       ],
     },
   ],
