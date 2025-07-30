@@ -62,8 +62,6 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 - TG群组：<https://t.me/+8L4eHePgYEZmY2M9>
 
-- 企鹅群：343615129
-
 ## 其他
 
 - 在 [GKD官网](https://gkd.li/) 查看 [GKD基础使用教程](https://gkd.li/guide/) 、[常见问题](https://gkd.li/guide/faq) 以及 [API文档](https://gkd.li/api/)
