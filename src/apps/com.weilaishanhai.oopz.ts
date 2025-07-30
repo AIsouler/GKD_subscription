@@ -7,8 +7,9 @@ export default defineGkdApp({
     {
       key: 1,
       name: '开屏广告',
+      desc: '该软件部分开屏广告存在虚假跳过按钮，若点击会误触广告，因此该规则无法适配所有情况',
       matchTime: 10000,
-      actionMaximum: 1,
+      actionMaximum: 2,
       resetMatch: 'app',
       priorityTime: 10000,
       rules: [
@@ -22,6 +23,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21202366',
             'https://i.gkd.li/i/21202363',
             'https://i.gkd.li/i/21202366',
+            'https://i.gkd.li/i/21503107',
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/21202513', // 虚假跳过按钮 https://github.com/AIsouler/GKD_subscription/issues/1043
         },
