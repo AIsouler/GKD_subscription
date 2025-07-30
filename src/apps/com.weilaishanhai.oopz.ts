@@ -39,6 +39,19 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/7ffc3e0d-3027-46ed-8833-96b638cbc4b3',
           snapshotUrls: 'https://i.gkd.li/i/21502192',
         },
+        {
+          fastQuery: true,
+          matches: '[id="cj.mobile.wm.allmodules:id/wm_splash_jump_tv"]', // 与上面那条的后半部分一样....
+          exampleUrls: 'https://e.gkd.li/9121689e-87da-44b8-997b-f276bfc6f975',
+          snapshotUrls: 'https://i.gkd.li/i/21502971',
+        },
+        {
+          fastQuery: true,
+          matches:
+            '[id="com.weilaishanhai.oopz:id/anythink_myoffer_splash_skip"]',
+          exampleUrls: 'https://e.gkd.li/4c9eb5c0-7525-46a6-895b-9704f4f79100',
+          snapshotUrls: 'https://i.gkd.li/i/21502992',
+        },
       ],
     },
   ],
