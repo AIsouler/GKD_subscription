@@ -33,6 +33,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/c1299341-66bf-4702-885c-3fbe5d648675',
           snapshotUrls: 'https://i.gkd.li/i/21202940',
         },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'cn.jy.ad.sdk.activity.AdDetailActivity',
+          matches:
+            '@View[clickable=true][childCount=0][width<120 && height<120] < RelativeLayout[childCount=1] <2 RelativeLayout[childCount=2] < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/cd81effe-cd18-4e17-92e1-599ea4400126',
+          snapshotUrls: 'https://i.gkd.li/i/21502302',
+        },
       ],
     },
   ],
