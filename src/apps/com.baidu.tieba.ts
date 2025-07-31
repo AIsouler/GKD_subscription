@@ -124,7 +124,21 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16596210',
         },
         {
-          preKeys: [0, 1, 2, 3],
+          key: 4,
+          activityIds: [
+            '.tblauncher.MainTabActivity',
+            '.pb.pb.main.PbActivity',
+          ],
+          matches:
+            'ImageView[childCount=0] < @FrameLayout[clickable=true][childCount=1][visibleToUser=true][width<100 && height<100] <4 RelativeLayout + FrameLayout >9 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/0ac82700-02f3-40c6-bf45-b21e365ac84c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21524232',
+            'https://i.gkd.li/i/21529443',
+          ],
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4],
           activityIds: [
             '.tblauncher.MainTabActivity',
             '.pb.pb.main.PbActivity',
