@@ -715,7 +715,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'tv.danmaku.bilibilihd',
     name: '哔哩哔哩HD',
-    deprecatedKeys: [1],
+    deprecatedKeys: [1, 4],
   },
   {
     id: 'com.umetrip.android.msky.app',

@@ -62,42 +62,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 4,
-      name: '分段广告-视频底部与评论区中间卡片广告',
-      desc: '需点击二次弹窗 屏蔽原因',
-      fastQuery: true,
-      activityIds: [
-        'com.bilibili.video.videodetail.VideoDetailsActivity',
-        'com.bilibili.ship.theseus.all.UnitedBizDetailsActivity',
-        'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          name: '点击卡片广告右侧菜单图标',
-          matches:
-            'FrameLayout[id="tv.danmaku.bili:id/ad_tint_frame"] >n [id^="tv.danmaku.bili:id/more"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12642260',
-            'https://i.gkd.li/i/12705266',
-            'https://i.gkd.li/i/12776568',
-          ],
-          excludeSnapshotUrls: 'https://i.gkd.li/i/12707070', // 由于 activityId 切换延迟导致规则仍然运行, 使用 FrameLayout 避免误触
-        },
-        {
-          preKeys: [0],
-          key: 1,
-          name: '点击屏蔽广告',
-          matches:
-            '[id="tv.danmaku.bili:id/dislike_reasons"] @RelativeLayout > [text*="不感兴趣"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12642261',
-            'https://i.gkd.li/i/13495649',
-          ],
-        },
-      ],
-    },
-    {
       key: 6,
       name: '更新提示',
       fastQuery: true,
@@ -390,6 +354,7 @@ export default defineGkdApp({
           anyMatches: [
             '@[vid="more"] -(3,5) [vid="ad_desc" || vid="live_lottie_layout"][visibleToUser=true]',
             '[id="tv.danmaku.bili.adbiz:id/more" || id="tv.danmaku.bili.adbiz:id/more_layout"][visibleToUser=true]',
+            '@[vid="more"] <4 [vid="ad_tint_frame"][visibleToUser=true]',
           ],
           exampleUrls: [
             'https://e.gkd.li/219c40c4-debf-40d8-889a-7eb39c87126c',
@@ -402,6 +367,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20739380',
             'https://i.gkd.li/i/20744764',
             'https://i.gkd.li/i/20794380',
+            'https://i.gkd.li/i/21552836',
           ],
         },
         {
