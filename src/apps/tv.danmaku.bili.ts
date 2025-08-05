@@ -164,11 +164,13 @@ export default defineGkdApp({
           activityIds: [
             '.MainActivityV2',
             'com.bilibili.video.story.StoryTransparentActivity',
+            'com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity',
           ],
           matches: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13229159',
             'https://i.gkd.li/i/13614090',
+            'https://i.gkd.li/i/21578494',
           ],
         },
       ],
