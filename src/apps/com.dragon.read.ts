@@ -289,21 +289,15 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '点评弹窗-点击取消',
+      name: '评价提示-点评此书弹窗',
+      desc: '点击[取消]',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches: [
-            '[text="点评此书"]',
-            '[text="取消"][clickable=true]'
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/21589381'
-          ],
-          activityIds: [
-            '.reader.ui.ReaderActivity'
-          ],
+          activityIds: '.reader.ui.ReaderActivity',
+          matches: ['[text="点评此书"]', '[text="取消"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/21589381',
         },
       ],
     },
