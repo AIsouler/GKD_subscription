@@ -318,7 +318,7 @@ export default defineGkdApp({
           ],
           activityIds: [
             '.pages.main.MainFragmentActivity'
-          ]
+          ],
         },
       ],
     },
