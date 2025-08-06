@@ -310,12 +310,17 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: '.pages.main.MainFragmentActivity',
-          matches: ['@[text="取消"] +2 [text="去开启"]'],
-          snapshotUrls: 'https://i.gkd.li/i/21589667',
+          matches: [
+            '@[text="取消"] +2 [text="去开启"]'
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/21589667'
+          ],
+          activityIds: [
+            '.pages.main.MainFragmentActivity'
+          ]
         },
       ],
     },
-
   ],
 });
