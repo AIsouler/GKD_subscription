@@ -301,5 +301,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 18,
+      name: '新版推送提醒',
+      fastQuery: true,
+      actionMaximum: 1,
+      matchTime: 10000,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.pages.main.MainFragmentActivity',
+          matches: ['@[text="取消"] +2 [text="去开启"]'],
+          snapshotUrls: 'https://i.gkd.li/i/21589667',
+        },
+      ],
+    },
+
   ],
 });
