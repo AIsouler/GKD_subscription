@@ -318,15 +318,9 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: [
-            '[id="com.dragon.read:id/ns"]'
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/21623147'
-          ],
-          activityIds: [
-            '.reader.ui.ReaderActivity'
-          ],
+          matches: ['[id="com.dragon.read:id/ns"]'],
+          snapshotUrls: ['https://i.gkd.li/i/21623147'],
+          activityIds: ['.reader.ui.ReaderActivity'],
         },
       ],
     },
