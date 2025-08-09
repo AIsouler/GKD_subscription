@@ -311,5 +311,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 18,
+      name: '局部广告-新版阅读页面下方横幅广告',
+      fastQuery: true,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: [
+            '[id="com.dragon.read:id/ns"]'
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/21623147'
+          ],
+          activityIds: [
+            '.reader.ui.ReaderActivity'
+          ],
+        },
+      ],
+    },
+
   ],
 });
