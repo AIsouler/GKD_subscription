@@ -731,5 +731,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 41,
+      name: '功能类-自动接龙',
+      desc: '手动点接龙后点击加号再点击发送',
+      fastQuery: true,
+      activityIds: '.plugin.groupsolitaire.ui.GroupSolitatireEditUI',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@[desc="添加"] -n LinearLayout > [text^="由"][text*="发起接龙"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5f446d2a-432f-4dca-9bb7-81eba83713c6',
+          snapshotUrls: 'https://i.gkd.li/i/21705413',
+        },
+        {
+          preKeys: [0],
+          matches:
+            '@[text="发送"] < LinearLayout < LinearLayout < LinearLayout - [vid="actionbar_up_indicator"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/30f0f903-0a1a-422e-991c-02b7cbedc2da',
+          snapshotUrls: 'https://i.gkd.li/i/21705384',
+        },
+      ],
+    },
   ],
 });
