@@ -11,6 +11,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
+      ignoreGlobalGroupMatch: true,
       rules: [
         {
           fastQuery: true,
