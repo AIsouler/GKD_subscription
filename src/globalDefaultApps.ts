@@ -74,6 +74,7 @@ export const blackListAppIDs: string[] = [
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
   'com.android.chrome', // Chrome
+  'com.microsoft.emmx', // Edge
   'org.mozilla.firefox', // Firefox
   'org.mozilla.firefox_beta', // Firefox Beta
   'org.mozilla.fenix', // Firefox Nightly
