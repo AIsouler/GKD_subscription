@@ -122,7 +122,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13455424',
             'https://i.gkd.li/i/15104645',
             'https://i.gkd.li/i/18407606',
-            'https://i.gkd.li/i/21789921',//未能解决
+            'https://i.gkd.li/i/21789921', //未能解决
           ],
         },
       ],
