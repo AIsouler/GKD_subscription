@@ -116,12 +116,13 @@ export default defineGkdApp({
             'com.taobao.tao.welcome.Welcome',
           ],
           matches:
-            '@Image[visibleToUser=true][text!=null] +2 View > [visibleToUser=true][text="消息通知" || text="发货通知"] <<n [vid="poplayer_inner_view"]',
+            '@Image[visibleToUser=true][text!=null] +2 View > [visibleToUser=true][text="消息通知" || text="发货通知"] <<n [id="com.taobao.taobao:id/poplayer_inner_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13446901',
             'https://i.gkd.li/i/13455424',
             'https://i.gkd.li/i/15104645',
             'https://i.gkd.li/i/18407606',
+            'https://i.gkd.li/i/21789921',//未能解决
           ],
         },
       ],
