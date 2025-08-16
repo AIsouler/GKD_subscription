@@ -1,6 +1,8 @@
 import subscription from '../src/subscription';
-import { checkSubscription } from '@gkd-kit/tools';
+import { checkSubscription, checkApiVersion } from '@gkd-kit/tools';
 import { checkDeprecatedGroupKeys } from '../src/appDeprecatedKeys';
+
+await checkApiVersion();
 
 checkSubscription(subscription);
 
