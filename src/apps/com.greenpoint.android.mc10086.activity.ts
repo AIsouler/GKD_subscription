@@ -16,6 +16,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          action: 'clickCenter', // https://github.com/AIsouler/GKD_subscription/issues/1109
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16335136',
         },
