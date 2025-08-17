@@ -96,6 +96,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/e2e7b175-20f6-4e12-a24a-504364a8b765',
           snapshotUrls: 'https://i.gkd.li/i/18095705',
         },
+        {
+          key: 8,
+          fastQuery: true,
+          action: 'back',
+          activityIds: '.MainActivity',
+          matches:
+            '[desc="开通前请阅读"] -8 @ImageView[clickable=true][childCount=0][visibleToUser=true] < View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/21820334',
+        },
       ],
     },
     {
