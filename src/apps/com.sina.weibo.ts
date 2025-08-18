@@ -11,11 +11,17 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: '.feed.DetailWeiboActivity',
+          activityIds: [
+            '.feed.DetailWeiboActivity',
+            '.feed.detailrefactor.DetailPageActivity',
+          ],
           matches:
-            'ImageView[childCount=0] < @FrameLayout[clickable=true][childCount=1][visibleToUser=true][width<50&&height<50] < FrameLayout + FrameLayout > View[desc!=null] <<n LinearLayout + [vid="detail_middle_tab"]',
+            'RelativeLayout >7 FrameLayout[childCount=4] > FrameLayout[childCount=1] > @[name$="FrameLayout" || name$="ImageView"][clickable=true][childCount<2][visibleToUser=true][width<50&&height<50] <<n [vid="view_recycler" || vid="tweet_list"]',
           exampleUrls: 'https://e.gkd.li/fc3b2c98-4540-4ec1-94b2-24abf90212c9',
-          snapshotUrls: 'https://i.gkd.li/i/21166775',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21166775',
+            'https://i.gkd.li/i/21828269',
+          ],
         },
       ],
     },
