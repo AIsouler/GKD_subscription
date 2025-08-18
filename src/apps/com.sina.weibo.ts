@@ -301,5 +301,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 27,
+      name: '分段广告-评论区荐读',
+      fastQuery: true,
+      activityIds: '.feed.detailrefactor.DetailPageActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@[vid="ll_close"] > [text="荐读"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bab872e2-6967-49f5-8443-46af8f225d8f',
+          snapshotUrls: 'https://i.gkd.li/i/21828298',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="对此内容不感兴趣"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4d35d427-f6ab-42bf-a369-65c5b602fcdf',
+          snapshotUrls: 'https://i.gkd.li/i/21828292',
+        },
+      ],
+    },
   ],
 });
