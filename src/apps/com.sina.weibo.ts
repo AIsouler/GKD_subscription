@@ -98,6 +98,7 @@ export default defineGkdApp({
       activityIds: [
         '.feed.DetailWeiboActivity',
         '.feed.detailrefactor.DetailPageActivity',
+        '.feed.SubCommentActiity',
       ],
       rules: [
         {
@@ -106,6 +107,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13852321',
             'https://i.gkd.li/i/19526000',
+            'https://i.gkd.li/i/21828244',
           ],
         },
         {
@@ -147,6 +149,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14730274',
             'https://i.gkd.li/i/19551451',
             'https://i.gkd.li/i/20710958',
+            'https://i.gkd.li/i/21828246',
           ],
         },
       ],
