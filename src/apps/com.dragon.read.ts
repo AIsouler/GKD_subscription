@@ -277,7 +277,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
-          matches: 'LynxFlattenUI[text="开启声音"][visibleToUser=true]',
+          matches: 'LynxFlattenUI[text="关闭声音"]||LynxFlattenUI[text="开启声音"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/7dcb8002-607b-4a0a-8ef7-cfa351fcc388',
           snapshotUrls: 'https://i.gkd.li/i/20989168',
           excludeSnapshotUrls: 'https://i.gkd.li/i/20991240',
