@@ -276,6 +276,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          matchRoot: true,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
           matches: 'LynxFlattenUI[text="开启声音"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/7dcb8002-607b-4a0a-8ef7-cfa351fcc388',
@@ -309,6 +310,20 @@ export default defineGkdApp({
           activityIds: '.reader.ui.ReaderActivity',
           matches: ['[text="点评此书"]', '[text="取消"][clickable=true]'],
           snapshotUrls: 'https://i.gkd.li/i/21589381',
+        },
+      ],
+    },
+    {
+      key: 18,
+      name: '功能类-观看广告后点击领取奖励',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@[text="领取奖励"][clickable=true] + FlattenUIText[text="领取奖励"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/36d56a8d-7a3e-4bba-9c2b-59dfda1f1813',
+          snapshotUrls: 'https://i.gkd.li/i/21848210',
         },
       ],
     },
