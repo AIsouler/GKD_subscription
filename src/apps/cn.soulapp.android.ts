@@ -146,5 +146,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '全屏广告-推荐页领金币',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds: '.component.startup.main.MainActivity',
+          matches: '[vid="tslAdLayout"] [vid="tv_cancel"]',
+          exampleUrls: 'https://e.gkd.li/f721ac73-f66c-45ca-8660-0c3e57845fd9',
+          snapshotUrls: 'https://i.gkd.li/i/21900487',
+        },
+      ],
+    },
   ],
 });
