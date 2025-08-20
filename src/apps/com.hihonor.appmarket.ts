@@ -69,5 +69,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '通知提示-个性化内容推荐提示',
+      desc: '点击取消',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.module.main.MainActivity',
+          matches: [
+            '[text*="个性化的内容推荐"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/12825cd1-cd11-40eb-80e3-45d93c9ad058',
+          snapshotUrls: 'https://i.gkd.li/i/21884571',
+        },
+      ],
+    },
   ],
 });
