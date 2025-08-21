@@ -400,7 +400,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.eg.android.AlipayGphone',
     name: '支付宝',
-    deprecatedKeys: [10, 15, 18],
+    deprecatedKeys: [10, 15, 18, 20],
   },
   {
     id: 'com.handsgo.jiakao.android',
