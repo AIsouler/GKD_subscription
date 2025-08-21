@@ -244,20 +244,21 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告-"下次支付用花呗"弹窗',
-      desc: '点击"30天不再提醒"',
+      name: '全屏广告-支付后的推荐弹窗',
+      desc: '点击关闭',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
-            '[text="同意协议并开通" || text*="开通花呗"]',
-            '[text="30天不再提醒" || text="不感兴趣"]',
+            '[text$="推荐你"][visibleToUser=true]',
+            '@[clickable=true] > [text="关闭"]',
           ],
           exampleUrls:
             'https://m.gkd.li/57941037/8daecaeb-35f0-4f3a-8d5a-a19098a992d5',
           snapshotUrls: [
             'https://i.gkd.li/i/14060628',
+            'https://i.gkd.li/i/14893122',
             'https://i.gkd.li/i/15050300',
             'https://i.gkd.li/i/20684144',
           ],
@@ -347,22 +348,6 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/64c8c27d-23de-43b1-a87b-e2107b644eb1',
           snapshotUrls: 'https://i.gkd.li/i/14787585',
-        },
-      ],
-    },
-    {
-      key: 20,
-      name: '全屏广告-[0元下单权益]弹窗',
-      desc: '支付完成后出现',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches:
-            '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/3575bbbc-717b-466d-b863-443a15629ef6',
-          snapshotUrls: 'https://i.gkd.li/i/14893122',
         },
       ],
     },
