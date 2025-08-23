@@ -99,32 +99,34 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14138572',
         },
         {
-          preKeys: [0],
-          key: 2,
+          key: 5,
+          fastQuery: true,
+          activityIds:
+            'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+          matches:
+            '@[desc="更多"][clickable=true] > [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/60125725-39d4-4d43-a79d-dcfa7384d357',
+          snapshotUrls: 'https://i.gkd.li/i/21947672',
+        },
+        {
+          preKeys: [0, 1, 5],
           fastQuery: true,
           activityIds: [
             'com.tencent.mobileqq.activity.SplashActivity',
             'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
+            'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
           ],
-          matches: '@[clickable=true] > * > ImageView + [text="隐藏此条动态"]',
+          anyMatches: [
+            '@[clickable=true] > * > ImageView + [text="隐藏此条动态"]',
+            '@[clickable=true] >(1,2) ImageView + [text="关闭此条广告"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13761147',
             'https://i.gkd.li/i/13849730',
-          ],
-        },
-        {
-          preKeys: [0, 1],
-          key: 4,
-          fastQuery: true,
-          activityIds: [
-            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-            'com.tencent.mobileqq.activity.SplashActivity',
-          ],
-          matches: '@[clickable=true] >(1,2) ImageView + [text="关闭此条广告"]',
-          snapshotUrls: [
             'https://i.gkd.li/i/12840889',
             'https://i.gkd.li/i/13831867',
             'https://i.gkd.li/i/14138571',
+            'https://i.gkd.li/i/21947698',
           ],
         },
       ],
