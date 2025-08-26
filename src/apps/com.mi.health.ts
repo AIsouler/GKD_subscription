@@ -14,7 +14,8 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.xiaomi.fitness.baseui.common.CommonBaseActivity',
-          matches: 'Button[text="我要吐槽"] + @Button[text="下次再说"] + Button[text="五星好评"]',
+          matches:
+            'Button[text="我要吐槽"] + @Button[text="下次再说"] + Button[text="五星好评"]',
           snapshotUrls: 'https://i.gkd.li/i/21979253',
         },
       ],
