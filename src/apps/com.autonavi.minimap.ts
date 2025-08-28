@@ -27,20 +27,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.autonavi.map.activity.NewMapActivity',
       rules: [
         {
           key: 1,
-          name: '更新弹窗-1',
-          matches:
-            '@[id="com.autonavi.minimap:id/iv_close"] + * > [text^="立即升级"]',
-          snapshotUrls: 'https://i.gkd.li/i/13379094',
-        },
-        {
-          key: 2,
-          name: '更新弹窗-2',
-          matches: '@[text="取消"] + * + [text="去下载"]',
-          snapshotUrls: 'https://i.gkd.li/i/13379426',
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches: [
+            '[text="版本升级" || id="com.autonavi.minimap:id/update_viewpager"][visibleToUser=true]',
+            '[text="取消" || id="com.autonavi.minimap:id/iv_close"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13379094',
+            'https://i.gkd.li/i/13379426',
+            'https://i.gkd.li/i/21981032',
+          ],
         },
       ],
     },
