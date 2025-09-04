@@ -12,6 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: [
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
@@ -24,6 +25,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21480268',
             'https://i.gkd.li/i/21487176',
           ],
+        },
+        {
+          key: 1,
+          activityIds: '.MainActivity',
+          matches:
+            '@Image[childCount=0][width<80 && height<80] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22092803',
         },
       ],
     },
