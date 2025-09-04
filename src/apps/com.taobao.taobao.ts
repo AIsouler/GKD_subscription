@@ -242,7 +242,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13691864',
             'https://i.gkd.li/i/13628020',
             'https://i.gkd.li/i/13898735',
-            'https://i.gkd.li/i/18296345',
           ],
         },
       ],
@@ -257,22 +256,6 @@ export default defineGkdApp({
           activityIds: 'com.taobao.tao.welcome.Welcome',
           matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
           snapshotUrls: 'https://i.gkd.li/i/14060521',
-        },
-      ],
-    },
-    {
-      key: 18,
-      name: '全屏广告-[「0元下单」权益]弹窗',
-      desc: '点击关闭',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches:
-            '[text="关闭"] < @FrameLayout[clickable=true] <3 FrameLayout[childCount=3] < * + FrameLayout[childCount=3] [text*="0元下单"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/a35c954d-5162-463c-aee3-b72b9c2d6625',
-          snapshotUrls: 'https://i.gkd.li/i/14155537',
         },
       ],
     },
@@ -302,6 +285,27 @@ export default defineGkdApp({
           matches: '[text="确认授权"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e6250a9c-3fee-4470-8c7c-1d28ea63d2a5',
           snapshotUrls: 'https://i.gkd.li/i/18271783',
+        },
+      ],
+    },
+    {
+      key: 21,
+      name: '全屏广告-支付后的推荐弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: [
+            '[text$="推荐你"][visibleToUser=true]',
+            '@[clickable=true] > [text="关闭"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/1646b159-a3ca-4cd8-9519-729e70acb72a',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14155537',
+            'https://i.gkd.li/i/18296345',
+            'https://i.gkd.li/i/22113615',
+          ],
         },
       ],
     },
