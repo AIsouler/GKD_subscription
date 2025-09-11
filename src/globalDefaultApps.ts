@@ -377,6 +377,7 @@ export const openAdWhiteListAppIDs = new Set([
   'com.heytap.themestore', // oppo主题商店
   'com.bbk.theme', // vivo主题商店
   'com.vivo.game', // vivo游戏中心 https://i.gkd.li/i/20097148
+  'com.meizu.media.video', // 魅族视频
 ]);
 
 // 更新提示白名单
