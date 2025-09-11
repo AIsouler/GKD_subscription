@@ -108,12 +108,14 @@ export default defineGkdApp({
             'com.youdao.dict.vip.activity.RecallSevenDayVipActivity',
             'com.youdao.dict.vip.activity.SecondShowNewUserSevenDayVipActivity',
             '.activity.DictQueryActivity',
+            '.vip.activity.FirstShowNewUserSevenDayVipActivity',
           ],
           matches: 'ImageView[vid="iv_close"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13263706',
             'https://i.gkd.li/i/14381735',
             'https://i.gkd.li/i/16929322',
+            'https://i.gkd.li/i/22275220',
           ],
         },
         {
