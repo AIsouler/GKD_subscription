@@ -5,27 +5,6 @@ export default defineGkdApp({
   name: '微博',
   groups: [
     {
-      key: 5,
-      name: '局部广告-卡片广告',
-      desc: '点击关闭',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: [
-            '.feed.DetailWeiboActivity',
-            '.feed.detailrefactor.DetailPageActivity',
-          ],
-          matches:
-            'RelativeLayout >7 FrameLayout[childCount=4] > FrameLayout[childCount=1] > @[name$="FrameLayout" || name$="ImageView"][clickable=true][childCount<2][visibleToUser=true][width<50&&height<50] <<n [vid="view_recycler" || vid="tweet_list"]',
-          exampleUrls: 'https://e.gkd.li/fc3b2c98-4540-4ec1-94b2-24abf90212c9',
-          snapshotUrls: [
-            'https://i.gkd.li/i/21166775',
-            'https://i.gkd.li/i/21828269',
-          ],
-        },
-      ],
-    },
-    {
       key: 8,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
@@ -132,10 +111,26 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/6952c2d1-65b5-4419-adb6-ba0f6349801e',
           snapshotUrls: 'https://i.gkd.li/i/19538265',
         },
+        {
+          key: 5,
+          matches: '[vid="iv_ad_x"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/58baa39c-c447-4664-8a39-c058497b9495',
+          snapshotUrls: 'https://i.gkd.li/i/22275086',
+        },
+        {
+          key: 6,
+          matches:
+            'RelativeLayout >7 FrameLayout[childCount=4] > FrameLayout[childCount=1] > @[name$="FrameLayout" || name$="ImageView"][clickable=true][childCount<2][visibleToUser=true][width<50&&height<50] <<n [vid="view_recycler" || vid="tweet_list"]',
+          exampleUrls: 'https://e.gkd.li/fc3b2c98-4540-4ec1-94b2-24abf90212c9',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21166775',
+            'https://i.gkd.li/i/21828269',
+          ],
+        },
 
         // 预留key
         {
-          preKeys: [0, 1, 3, 4],
+          preKeys: [0, 1, 3, 4, 5, 6],
           key: 90,
           matchRoot: true,
           anyMatches: [
