@@ -85,8 +85,11 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'info.muge.appshare.view.main.MainActivity',
-          matches: '[text="签到"]',
-          snapshotUrls: 'https://i.gkd.li/i/13931265',
+          matches: '[vid="tvSign" || vid="llDaySign"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13931265',
+            'https://i.gkd.li/i/22274868',
+          ],
         },
         {
           preKeys: [0],
