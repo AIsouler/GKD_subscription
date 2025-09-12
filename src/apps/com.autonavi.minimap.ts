@@ -98,14 +98,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 12,
-      name: '全屏广告-加油页面优惠券弹窗',
-      activityIds: 'com.autonavi.map.activity.NewMapActivity',
-      rules:
-        '@ImageView < [desc="关闭"][clickable=true] - ViewGroup > ViewGroup > ViewGroup > View[text="立即领取"]',
-      snapshotUrls: ['https://i.gkd.li/i/12642857'],
-    },
-    {
       key: 13,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
@@ -150,7 +142,7 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告',
       desc: '点击关闭',
       rules: [
         {
@@ -176,6 +168,15 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/e059109b-f4bb-4ed6-81a8-6010b51ebfd5',
           snapshotUrls: 'https://i.gkd.li/i/14809993',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+          matches:
+            '@ViewGroup[clickable=true] > View[visibleToUser=true][text^="关闭"] <<n [vid="mapInteractiveRelativeLayout"]',
+          exampleUrls: 'https://e.gkd.li/0a4e847f-b1b0-4667-982a-43f313305139',
+          snapshotUrls: 'https://i.gkd.li/i/22287641',
         },
       ],
     },
