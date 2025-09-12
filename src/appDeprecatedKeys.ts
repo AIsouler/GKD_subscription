@@ -170,7 +170,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.autonavi.minimap',
     name: '高德地图',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 12],
   },
   {
     id: 'com.babycloud.hanju',
