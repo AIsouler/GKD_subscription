@@ -264,7 +264,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          action: 'clickCenter',
+          //action: 'clickCenter', 此种点击方式在部分应用版本会造成误触，需点击 clickable=true 节点
           activityIds: [
             'tv.danmaku.bili.MainActivityV2',
             'com.bilibili.vip.web.VipWebActivity',
@@ -279,6 +279,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15289942',
             'https://i.gkd.li/i/15328394',
             'https://i.gkd.li/i/18236032',
+            'https://i.gkd.li/i/22310507',
           ],
         },
         {
