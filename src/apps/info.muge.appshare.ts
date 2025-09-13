@@ -93,11 +93,15 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
-          activityIds: 'info.muge.appshare.view.main.MainActivity',
-          matches: '[text="确定" || text="我知道了"]',
+          activityIds: [
+            'info.muge.appshare.view.main.MainActivity',
+            '.view.task.daysign.DaySignActivity',
+          ],
+          matches: '[text="确定" || text="我知道了" || vid="ivBack"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13931279',
             'https://i.gkd.li/i/20259829',
+            'https://i.gkd.li/i/22310596',
           ],
         },
       ],
