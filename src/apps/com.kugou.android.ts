@@ -121,9 +121,12 @@ export default defineGkdApp({
           key: 2,
           activityIds: '.app.MediaActivity',
           matches:
-            '@[text="退出页面"][visibleToUser=true] + View > [text="你的会员已过期"]',
+            '@[clickable=true][childCount=0] < View <(1,2) View <(1,2) View < WebView < WebView < FrameLayout < FrameLayout < RelativeLayout < RelativeLayout < FrameLayout[id!="android:id/content"] < FrameLayout < [parent=null]',
           exampleUrls: 'https://e.gkd.li/f32ed6b7-e396-45a5-9849-f8a8ae99cb99',
-          snapshotUrls: 'https://i.gkd.li/i/18070974',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18070974',
+            'https://i.gkd.li/i/22310624',
+          ],
         },
       ],
     },
