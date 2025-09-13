@@ -70,6 +70,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18587159',
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.taobao.themis.container.app.TMSActivity',
+          matches:
+            '[text="规则"] +2 @View[childCount=1][clickable=true] > Image[childCount=0][text!=null] <<n [vid="tms_tab_content_view"]',
+          exampleUrls: 'https://e.gkd.li/dbf9ea95-3674-4cb2-8a88-dfb96c24e71b',
+          snapshotUrls: 'https://i.gkd.li/i/22308745',
+        },
       ],
     },
     {
@@ -93,11 +102,20 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '商品详情右侧悬浮广告',
+          fastQuery: true,
           activityIds: 'com.taobao.browser.BrowserActivity',
           matches:
-            'View[childCount=2] > @Image[text!=""][clickable=true] + View',
+            '@Image[childCount=0][clickable=true][text!=null] < View <2 View < WebView < o0 <2 WebView < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13521702',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.taobao.themis.container.app.TMSActivity',
+          matches:
+            '@Image[childCount=0][clickable=true][text!=null] <2 View < View < View <9 View < WebView < m0 <2 WebView < RelativeLayout < [vid="tms_tab_content_view"]',
+          exampleUrls: 'https://e.gkd.li/45f8b78d-bc6a-4c1a-994d-6b5bce2c96a0',
+          snapshotUrls: 'https://i.gkd.li/i/22291107',
         },
       ],
     },
