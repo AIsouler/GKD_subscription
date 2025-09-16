@@ -126,10 +126,14 @@ export default defineGkdApp({
             '.plugin.webwx.ui.ExtDeviceWXLoginUI',
             '.ui.LauncherUI',
           ],
-          matches: 'TextView[text="取消登录"] - Button[text="登录"]',
+          matches: [
+            '[text="登录 Windows 微信" || text^="Log in to Weixin for"][visibleToUser=true]',
+            '[text="登录" || text="Log In"][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13522625',
             'https://i.gkd.li/i/13522577',
+            'https://i.gkd.li/i/22356438',
           ],
         },
       ],
