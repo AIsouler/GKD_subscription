@@ -33,40 +33,36 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13054849',
           ],
         },
+      ],
+    },
+    {
+      key: 2,
+      name: '功能类-安装中高风险应用',
+      fastQuery: true,
+      activityIds: '.model.guide.ui.InstallGuideActivity',
+      rules: [
         {
-          key: 2,
-          name: '点击[查看详情]',
-          activityIds:
-            'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
-          matches: '[id="com.oplus.appdetail:id/tv_result_desc"]',
-          actionMaximum: 1,
-          resetMatch: 'app',
+          key: 0,
           position: {
-            right: 'width*0.27',
-            top: 'height/2',
+            left: 'width * 0.726',
+            top: 'height * 0.5',
           },
-          snapshotUrls: [
-            'https://i.gkd.li/i/22377287', //中高风险应用
-          ],
+          matches: '[text="不建议安装此应用；若仍需安装，可查看详情"]',
+          exampleUrls: 'https://e.gkd.li/8697d1e8-fa9c-4b5b-92b9-559f55672047',
+          snapshotUrls: 'https://i.gkd.li/i/22377287',
         },
         {
-          key: 3,
-          name: '勾选[已悉知应用风险]',
-          activityIds:
-            'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
-          matches:
-            '[id="com.oplus.appdetail:id/coui_security_alert_dialog_checkbox"]',
-          preKeys: [2],
-          actionMaximum: 1,
-          actionDelay: 200,
-          resetMatch: 'app',
-          position: {
-            left: 'width*0.1',
-            top: 'height/2',
-          },
-          snapshotUrls: [
-            'https://i.gkd.li/i/22377327', //中高风险应用
-          ],
+          preKeys: [0],
+          key: 1,
+          matches: '[text="已知悉应用风险"][checked=false]',
+          exampleUrls: 'https://e.gkd.li/45246cef-1ef5-49bf-8b7f-09377bde823a',
+          snapshotUrls: 'https://i.gkd.li/i/22377327',
+        },
+        {
+          preKeys: [1],
+          matches: '[text="仍然安装"]',
+          exampleUrls: 'https://e.gkd.li/45246cef-1ef5-49bf-8b7f-09377bde823a',
+          snapshotUrls: 'https://i.gkd.li/i/22377327',
         },
       ],
     },
