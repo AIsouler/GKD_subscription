@@ -40,7 +40,7 @@ export default defineGkdApp({
             'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
           matches: '[id="com.oplus.appdetail:id/tv_result_desc"]',
           actionMaximum: 1,
-          resetMatch:'app',
+          resetMatch: 'app',
           position: {
             right: 'width*0.27',
             top: 'height/2',
@@ -58,8 +58,8 @@ export default defineGkdApp({
             '[id="com.oplus.appdetail:id/coui_security_alert_dialog_checkbox"]',
           preKeys: [2],
           actionMaximum: 1,
-          actionDelay:200,
-          resetMatch:'app',
+          actionDelay: 200,
+          resetMatch: 'app',
           position: {
             left: 'width*0.1',
             top: 'height/2',
