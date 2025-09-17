@@ -35,5 +35,36 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-安装中高风险应用',
+      fastQuery: true,
+      activityIds: '.model.guide.ui.InstallGuideActivity',
+      rules: [
+        {
+          key: 0,
+          position: {
+            left: 'width * 0.726',
+            top: 'height * 0.5',
+          },
+          matches: '[text="不建议安装此应用；若仍需安装，可查看详情"]',
+          exampleUrls: 'https://e.gkd.li/8697d1e8-fa9c-4b5b-92b9-559f55672047',
+          snapshotUrls: 'https://i.gkd.li/i/22377287',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[text="已知悉应用风险"][checked=false]',
+          exampleUrls: 'https://e.gkd.li/45246cef-1ef5-49bf-8b7f-09377bde823a',
+          snapshotUrls: 'https://i.gkd.li/i/22377327',
+        },
+        {
+          preKeys: [1],
+          matches: '[text="仍然安装"]',
+          exampleUrls: 'https://e.gkd.li/45246cef-1ef5-49bf-8b7f-09377bde823a',
+          snapshotUrls: 'https://i.gkd.li/i/22377327',
+        },
+      ],
+    },
   ],
 });
