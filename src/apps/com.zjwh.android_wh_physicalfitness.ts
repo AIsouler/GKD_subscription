@@ -104,7 +104,7 @@ export default defineGkdApp({
           matches:
             '[vid="ad_container"] > [vid="animator_area"] > [vid="ad_close_area"] > @ImageView',
           snapshotUrls: [
-            'https://i.gkd.li/snapshot/1758085756174',
+            'https://i.gkd.li/i/22376459',
           ],
         },
       ],
