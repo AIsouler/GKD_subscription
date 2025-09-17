@@ -36,21 +36,24 @@ export default defineGkdApp({
         {
           key: 2,
           name: '点击[查看详情]',
-          activityIds: 'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
+          activityIds:
+            'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
           matches: '[id="com.oplus.appdetail:id/tv_result_desc"]',
           position: {
             right: 'width*0.27',
             top: 'height/2',
           },
           snapshotUrls: [
-            'https://i.gkd.li/i/22377287',  //中高风险应用
+            'https://i.gkd.li/i/22377287', //中高风险应用
           ],
         },
         {
           key: 3,
           name: '勾选[已悉知应用风险]',
-          activityIds: 'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
-          matches: '[id="com.oplus.appdetail:id/coui_security_alert_dialog_checkbox"]',
+          activityIds:
+            'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
+          matches:
+            '[id="com.oplus.appdetail:id/coui_security_alert_dialog_checkbox"]',
           preKeys: [2],
           actionMaximum: 1,
           position: {
@@ -58,7 +61,7 @@ export default defineGkdApp({
             top: 'height/2',
           },
           snapshotUrls: [
-            'https://i.gkd.li/i/22377327',  //中高风险应用
+            'https://i.gkd.li/i/22377327', //中高风险应用
             'https://i.gkd.li/i/22378227',
           ],
         },
