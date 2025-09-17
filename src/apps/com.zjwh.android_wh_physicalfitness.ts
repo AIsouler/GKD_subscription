@@ -88,6 +88,26 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/17358027',
         },
       ],
-    },
+    },{
+      key: 2,
+      name: '首页弹窗广告',
+      desc: '',
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          key: 0,
+          name: '首页弹窗广告',
+          activityIds: [
+            'com.zjwh.android_wh_physicalfitness.mvi.home.HomeActivity',
+          ],
+          matches:
+            '[vid="ad_container"] > [vid="animator_area"] > [vid="ad_close_area"] > @ImageView',
+          snapshotUrls: [
+            'https://i.gkd.li/snapshot/1758085756174',
+          ],
+        },
+      ],
+    }
   ],
 });
