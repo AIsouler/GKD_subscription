@@ -47,15 +47,16 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: [
-            'com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+            '.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
             '.module.bbs.post.ui.activitys.PicturePostPageActivity',
           ],
-          matches: '[text^="查看原图"][visibleToUser=true]',
+          matches: '[vid="tv_original"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38',
           snapshotUrls: [
             'https://i.gkd.li/i/16646832',
             'https://i.gkd.li/i/17574462',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22377026',
         },
       ],
     },
