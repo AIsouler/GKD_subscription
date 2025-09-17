@@ -13,13 +13,14 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '优量汇广告',
+          fastQuery: true,
           activityIds: [
-            'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
-            'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
+            '.activity.HomeActivity',
+            '.ui.AdActivity',
+            '.mvi.home.HomeActivity',
           ],
           matches:
-            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close"][clickable=true]',
+            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12673231',
             'https://i.gkd.li/i/12673523',
@@ -28,7 +29,6 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '腾讯SDK',
           fastQuery: true,
           activityIds: '.activity.HomeActivity',
           matches:
@@ -38,7 +38,6 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: '快手SDK',
           fastQuery: true,
           activityIds: ['.activity.HomeActivity', '.ui.AdActivity'],
           matches:
@@ -52,7 +51,6 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          name: '百度SDK',
           fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
@@ -62,7 +60,6 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          name: '百青藤广告',
           activityIds:
             'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
           matches:
