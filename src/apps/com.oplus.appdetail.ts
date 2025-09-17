@@ -43,7 +43,7 @@ export default defineGkdApp({
             top: 'height/2',
           },
           snapshotUrls: [
-            'https://i.gkd.li/i/22377287',
+            'https://i.gkd.li/i/22377287',  //中高风险应用
           ],
         },
         {
@@ -51,13 +51,15 @@ export default defineGkdApp({
           name: '勾选[已悉知应用风险]',
           activityIds: 'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
           matches: '[id="com.oplus.appdetail:id/coui_security_alert_dialog_checkbox"]',
-          prekey: 2,
+          preKeys: [2],
+          actionMaximum: 1,
           position: {
             left: 'width*0.1',
             top: 'height/2',
           },
           snapshotUrls: [
-            'https://i.gkd.li/i/22377327',
+            'https://i.gkd.li/i/22377327',  //中高风险应用
+            'https://i.gkd.li/i/22378227',
           ],
         },
       ],
