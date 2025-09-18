@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 7,
-      name: '首页-全屏广告',
+      name: '全屏广告-首页',
       rules: [
         {
           fastQuery: true,
