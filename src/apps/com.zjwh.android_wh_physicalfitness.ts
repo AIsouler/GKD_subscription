@@ -71,7 +71,7 @@ export default defineGkdApp({
       ],
     },{
       key: 7,
-      name: '首页-全屏广告',
+      name: '全屏广告',
       desc: '点击关闭',
       rules: [
         {
