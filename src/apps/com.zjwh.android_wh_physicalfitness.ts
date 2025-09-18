@@ -70,7 +70,7 @@ export default defineGkdApp({
         },
       ],
     },{
-      key: 2,
+      key: 7,
       name: '首页-弹窗广告',
       desc: '点击关闭',
       rules: [
