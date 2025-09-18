@@ -12,7 +12,6 @@ lerna-debug.log*
 
 .idea
 .DS_Store
-desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
