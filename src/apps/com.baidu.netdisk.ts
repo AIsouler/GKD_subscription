@@ -103,5 +103,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '分段广告-关闭安全备份',
+      desc: '点击暂不开启',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.netdisk.ui.NewQuickSettingsActivity',
+          matches: '[text*="开启安全备份"] + @[text*="暂不开启"]',
+          snapshotUrls: 'https://i.gkd.li/i/22401064',
+        },
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.netdisk.ui.NewQuickSettingsActivity',
+          matches: '[text*="自动备份"] +2 @[text*="暂不开启"]',
+          snapshotUrls: 'https://i.gkd.li/i/22401070',
+        },
+      ],
+    },
   ],
 });
