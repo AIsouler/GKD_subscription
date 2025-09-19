@@ -18,11 +18,12 @@ export default defineGkdApp({
             '.mvi.home.HomeActivity',
           ],
           matches:
-            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close"][clickable=true]',
+            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close" || desc="top_close_button"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12673231',
             'https://i.gkd.li/i/12673523',
             'https://i.gkd.li/i/13166472',
+            'https://i.gkd.li/i/22427117',
           ],
         },
         {
