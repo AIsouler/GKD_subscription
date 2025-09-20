@@ -16,6 +16,7 @@ export default defineGkdApp({
             '.activity.HomeActivity',
             '.ui.AdActivity',
             '.mvi.home.HomeActivity',
+            '.mvi.setting.SettingActivity',
           ],
           matches:
             '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close"][clickable=true]',
@@ -23,6 +24,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12673231',
             'https://i.gkd.li/i/12673523',
             'https://i.gkd.li/i/13166472',
+            'https://i.gkd.li/i/22437128',
           ],
         },
         {
@@ -37,14 +39,19 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          activityIds: ['.activity.HomeActivity', '.ui.AdActivity'],
+          activityIds: [
+            '.activity.HomeActivity',
+            '.ui.AdActivity',
+            '.mvi.home.HomeActivity',
+          ],
           matches:
-            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] < ViewGroup +(3,5) ViewGroup[childCount=2] > [text="广告"]',
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1][visibleToUser=true] < ViewGroup <n ViewGroup <n ViewGroup  >n [text="广告"]',
           exampleUrls: 'https://e.gkd.li/cb21dc41-bcca-47ec-ae0a-df9aedde48b5',
           snapshotUrls: [
             'https://i.gkd.li/i/12826124',
             'https://i.gkd.li/i/13228216',
             'https://i.gkd.li/i/13601132',
+            'https://i.gkd.li/i/22427117',
           ],
         },
         {
