@@ -16,14 +16,16 @@ export default defineGkdApp({
             '.activity.HomeActivity',
             '.ui.AdActivity',
             '.mvi.home.HomeActivity',
+            '.mvi.setting.SettingActivity',
           ],
           matches:
-            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close" || desc="top_close_button"][clickable=true]',
+            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close" || vid="ad_close_area" || desc="top_close_button"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12673231',
             'https://i.gkd.li/i/12673523',
             'https://i.gkd.li/i/13166472',
             'https://i.gkd.li/i/22427117',
+            'https://i.gkd.li/i/22437128',
           ],
         },
         {
