@@ -17,6 +17,7 @@ export default defineGkdApp({
             '.app.orderdetail.view.OrderDetailActivity',
             '.app.p_address.city.view.SelectCityActivity',
             '.app.payresult_v2.view.OrderPaySuccessActivity',
+            '.app.main.view.MainActivityV2',
           ],
           matches: [
             '[text*="开启消息通知" || text*="开启系统通知"][visibleToUser=true]',
@@ -30,6 +31,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19624918',
             'https://i.gkd.li/i/19676244',
             'https://i.gkd.li/i/20633831',
+            'https://i.gkd.li/i/22441592',
           ],
         },
       ],
