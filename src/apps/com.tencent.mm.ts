@@ -30,6 +30,7 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
+          actionDelay: 300,
           position: {
             left: 'width * 0.9223',
             top: 'height * 0.5',
