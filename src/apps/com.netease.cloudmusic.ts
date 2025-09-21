@@ -192,6 +192,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
+          // 试听VIP音乐弹窗
           key: 0,
           action: 'back',
           activityIds: [
@@ -217,6 +218,7 @@ export default defineGkdApp({
           ],
         },
         {
+          // “我喜欢的音乐”界面弹窗
           key: 1,
           action: 'back',
           activityIds:
@@ -225,11 +227,18 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14956768',
         },
         {
+          // 会员过期后重新开通弹窗
           key: 7,
           action: 'back',
-          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-          matches: '[vid="view_button_main"][text*="立即续费"]',
-          snapshotUrls: 'https://i.gkd.li/i/14969806',
+          activityIds: [
+            'com.netease.cloudmusic.activity.MainActivity',
+            '.music.biz.rn.activity.LayerReactNativeActivity',
+          ],
+          matches: '[text*="立即续费" || text*="自动续费"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14969806',
+            'https://i.gkd.li/i/22448900',
+          ],
         },
       ],
     },
