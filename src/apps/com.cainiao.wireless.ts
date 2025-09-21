@@ -59,6 +59,13 @@ export default defineGkdApp({
           matches: '[vid="cn_bottom_sheet_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16118155',
         },
+        {
+          key: 6,
+          activityIds: '.homepage.view.activity.HomePageActivity',
+          matches:
+            '[vid~=".+_ad_.*container.*"] >n @ImageView[clickable=true && visibleToUser=true && id=null] +n [desc*="红包"]',
+          snapshotUrls: 'https://i.gkd.li/i/22441306',
+        },
       ],
     },
     {
