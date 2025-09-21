@@ -10,7 +10,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       name: '功能类-打开应用自动扫一扫',
-      desc: '仅触发一次',
+      desc: '仅开屏触发一次',
       rules: [
         {
           fastQuery: true,
