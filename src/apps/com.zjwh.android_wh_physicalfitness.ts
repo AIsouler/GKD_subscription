@@ -17,6 +17,7 @@ export default defineGkdApp({
             '.ui.AdActivity',
             '.mvi.home.HomeActivity',
             '.mvi.setting.SettingActivity',
+            '.mvi.notice.NoticeDetailActivity',
           ],
           matches:
             '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close"][clickable=true]',
@@ -25,6 +26,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12673523',
             'https://i.gkd.li/i/13166472',
             'https://i.gkd.li/i/22437128',
+            'https://i.gkd.li/i/22449070',
           ],
         },
         {
