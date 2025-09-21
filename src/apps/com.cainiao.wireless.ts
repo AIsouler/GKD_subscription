@@ -59,6 +59,14 @@ export default defineGkdApp({
           matches: '[vid="cn_bottom_sheet_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16118155',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: '.homepage.view.activity.HomePageActivity',
+          matches:
+            '[desc="恭喜你获得"] - @ImageView[id=null][text=null][clickable=true][visibleToUser=true][width<150&&height<150] <2 FrameLayout <2 FrameLayout < FrameLayout < [vid="fl_guide_ad_get_reward_dialog_dx_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/22441306',
+        },
       ],
     },
     {
