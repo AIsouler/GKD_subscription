@@ -202,7 +202,7 @@ export default defineGkdApp({
           ],
           matches: [
             '[text="支付宝"][visibleToUser=true]',
-            '[text^="确认协议并" || text^="正在试听"][visibleToUser=true]',
+            '[text^="确认协议并" || text^="正在试听" || text="立即开通"][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13189055',
@@ -215,6 +215,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14926722',
             'https://i.gkd.li/i/16242200',
             'https://i.gkd.li/i/19958685',
+            'https://i.gkd.li/i/22457612',
           ],
         },
         {
