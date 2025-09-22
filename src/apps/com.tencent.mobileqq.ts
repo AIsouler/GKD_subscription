@@ -407,11 +407,15 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: '.activity.SplashActivity',
+          activityIds: [
+            '.activity.SplashActivity',
+            '.upgrade.ui.dialog.UpgradeActivity',
+          ],
           matches: '@[desc="关闭"] <2 * >2 Button[text^="立即"][text.length=4]',
           snapshotUrls: [
             'https://i.gkd.li/i/13386719',
             'https://i.gkd.li/i/13526551',
+            'https://i.gkd.li/i/22455760',
           ],
         },
         {
