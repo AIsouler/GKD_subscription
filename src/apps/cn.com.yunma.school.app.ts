@@ -8,7 +8,6 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-打开应用后自动点击右上角扫一扫',
       desc: '仅开屏后触发一次',
-      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
