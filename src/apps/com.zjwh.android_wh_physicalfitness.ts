@@ -12,17 +12,6 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          activityIds: [
-            '.activity.HomeActivity',
-            '.ui.AdActivity',
-            '.mvi.home.HomeActivity',
-            '.mvi.setting.SettingActivity',
-            '.mvi.notice.NoticeDetailActivity',
-            '.mvi.notice.NoticeListActivity',
-            '.mvi.me.reduction.ReductionCommitRecordListActivity',
-            '.mvi.run.ExerciseLogActivity',
-            '.mvi.WebViewActivity',
-          ],
           matches:
             '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close"][clickable=true]',
           snapshotUrls: [
