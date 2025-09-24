@@ -105,5 +105,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '分段广告-卡片广告',
+      desc: '点击关闭-不感兴趣',
+      fastQuery: true,
+      activityIds: '.mvi.home.HomeActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            'Image[childCount=0 && id=null && visibleToUser=true] < @View[childCount=1] +n * TextView[text*="下载"]',
+          snapshotUrls: 'https://i.gkd.li/i/22514469',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/22514499',
+        },
+      ],
+    },
   ],
 });
