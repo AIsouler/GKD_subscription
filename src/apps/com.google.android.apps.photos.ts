@@ -29,16 +29,26 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '全屏广告-优惠提示',
+      name: '全屏广告-会员广告',
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds:
             'com.google.android.apps.photos.cloudstorage.paidfeatures.PaidFeaturesActivity',
           matches:
             '@[desc="转到上一层级"] < ViewGroup[id="com.google.android.apps.photos:id/toolbar"]',
           snapshotUrls: 'https://i.gkd.li/i/13774247',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.home.HomeActivity',
+          matches:
+            '[vid="spark_container"] > [vid="close_button"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/581cad00-a5fa-4f42-b31f-84a2d5c89afc',
+          snapshotUrls: 'https://i.gkd.li/i/22482732',
         },
       ],
     },
