@@ -126,5 +126,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '通知提示-公告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '@ImageView[vid="dialog_close"] +n [text*="公告"]',
+          snapshotUrls: 'https://i.gkd.li/i/22526467',
+        },
+      ],
+    },
   ],
 });
