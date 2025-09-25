@@ -240,6 +240,13 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/cc064c84-75a9-4447-b01b-9d5597515093',
           snapshotUrls: 'https://i.gkd.li/i/18409779',
         },
+        {
+          key: 3,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches: 'Image[text="关闭弹屏"]',
+          snapshotUrls: 'https://i.gkd.li/i/22531246',
+        },
       ],
     },
     {
