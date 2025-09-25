@@ -105,5 +105,40 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 11,
+      name: '分段广告-卡片广告',
+      desc: '点击关闭-不感兴趣',
+      activityIds: '.mvi.home.HomeActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] - View >3 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/22514469',
+        },
+        {
+          preKeys: [0],
+          fastQuery: true,
+          matches: '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22514499',
+        },
+      ],
+    },
+    {
+      key: 12,
+      name: '通知提示-公告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '@ImageView[vid="dialog_close"] +n [text*="公告"]',
+          snapshotUrls: 'https://i.gkd.li/i/22526467',
+        },
+      ],
+    },
   ],
 });
