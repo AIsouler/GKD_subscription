@@ -247,7 +247,7 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           anyMatches: [
-            '@ImageButton[desc="未选中,原图,复选框"][visibleToUser=true] + [text="原图"]',
+            '@[desc="未选中,原图,复选框"][visibleToUser=true] + [text="原图"]',
             '@[desc="未选中,原图,复选框"][visibleToUser=true]',
           ],
           exampleUrls: [
