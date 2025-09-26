@@ -22,6 +22,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14393039',
           ],
         },
+        {
+          key: 1,
+          activityIds: 'com.xiaomi.shop2.activity.MainActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] - * >5 Image[text="3D model"]',
+          snapshotUrls: 'https://i.gkd.li/i/22550140',
+        },
       ],
     },
     {
