@@ -423,10 +423,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+          activityIds: [
+            'com.bilibili.video.story.StoryVideoActivity',
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+          ],
           matches: '@LinearLayout[clickable=true] > [text="展开更多评论"]',
           exampleUrls: 'https://e.gkd.li/e7b7167e-7623-4079-9f16-fd253f303074',
-          snapshotUrls: 'https://i.gkd.li/i/22572375',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22572375',
+            'https://i.gkd.li/i/22573433',
+          ],
         },
       ],
     },
