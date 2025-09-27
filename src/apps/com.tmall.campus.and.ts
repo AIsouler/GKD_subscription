@@ -22,5 +22,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tmall.campus.scancode.activity.ToolsCaptureActivity',
+          matches: '[vid="iv_close_ad"]',
+          snapshotUrls: 'https://i.gkd.li/i/22558370',
+        },
+      ],
+    },
   ],
 });
