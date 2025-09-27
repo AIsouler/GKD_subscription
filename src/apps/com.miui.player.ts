@@ -75,8 +75,11 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
-          matches: '[id=null][desc="关闭弹框按钮"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12700955',
+          matches: '[id=null][desc~=".*关闭.*按钮.*"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12700955',
+            'https://i.gkd.li/i/22562104',
+          ],
         },
       ],
     },
