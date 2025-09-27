@@ -417,5 +417,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 17,
+      name: '功能类-自动点击评论区的[展开更多评论]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+          matches: '@LinearLayout[clickable=true] > [text="展开更多评论"]',
+          exampleUrls: 'https://e.gkd.li/e7b7167e-7623-4079-9f16-fd253f303074',
+          snapshotUrls: 'https://i.gkd.li/i/22572375',
+        },
+      ],
+    },
   ],
 });
