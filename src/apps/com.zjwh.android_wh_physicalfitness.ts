@@ -94,14 +94,22 @@ export default defineGkdApp({
       key: 10,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
+      activityIds: '.mvi.home.HomeActivity',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds: '.mvi.home.HomeActivity',
           matches:
             'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] < ViewGroup[childCount=1] <n ViewGroup <n ViewGroup - ViewGroup >3 [text="广告"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/ca109fa3-5a7a-400d-911b-36dd8ac42656',
           snapshotUrls: 'https://i.gkd.li/i/22387192',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@Image[childCount=0] < [childCount=1] <n * - * >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: 'https://i.gkd.li/i/22585927',
         },
       ],
     },
