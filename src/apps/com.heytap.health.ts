@@ -8,11 +8,17 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       desc: '点击[以后再说]',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.heytap.health.settings.me.upgrade.UpgradeActivity',
-          matches: '@[text="以后再说"] < * +n * > [text="下载与更新"]',
+          matches: [
+            '[text="检测到新版本"][visibleToUser=true]',
+            '[text="以后再说"][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/22657352',
         },
       ],
@@ -25,7 +31,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.heytap.health.main.MainActivity',
           matches:
-            '[vid="home_card_operation_space"] @[vid="close"][clickable=true]',
+            '[vid="adapter_act_root_view"] > [vid="close"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/22657359',
         },
       ],
