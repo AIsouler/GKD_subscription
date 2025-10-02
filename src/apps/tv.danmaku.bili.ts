@@ -336,8 +336,7 @@ export default defineGkdApp({
         },
         {
           preKeys: [1],
-          matches:
-            '@[clickable=true] > [text="不感兴趣" || text="对该场直播不感兴趣"]',
+          matches: '@[clickable=true] > [text$="不感兴趣"]',
           exampleUrls: 'https://e.gkd.li/5e6e4b69-ba97-473d-9f62-631c296da589',
           snapshotUrls: [
             'https://i.gkd.li/i/17269055',
