@@ -17,5 +17,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-卡片广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.heytap.health.main.MainActivity',
+          matches:
+            '[vid="home_card_operation_space"] @[vid="close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22657359',
+        },
+      ],
+    },
   ],
 });
