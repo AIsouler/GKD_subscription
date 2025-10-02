@@ -45,6 +45,25 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12642307',
     },
     {
+      key: 11,
+      name: '局部广告-公共交通导航界面卡片广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[vid="banner_ad_close_icon"]',
+          snapshotUrls: 'https://i.gkd.li/i/22656085',
+        },
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches:
+            '[vid="rl_bus_detail_endnode_pano_talos"] >n @ImageView[childCount=0] < ViewGroup[childCount=1] + * > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/22616267',
+        },
+      ],
+    },
+    {
       key: 3,
       name: '全屏广告-美食大礼包弹窗',
       fastQuery: true,
