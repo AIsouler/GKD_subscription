@@ -61,6 +61,18 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12642319',
     },
     {
+      key: 10,
+      name: '全屏广告-导航结束弹窗广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[text$="秒后关闭"] - @[vid="img_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/22616256',
+        },
+      ],
+    },
+    {
       key: 5,
       name: '权限提示-定位权限',
       fastQuery: true,
