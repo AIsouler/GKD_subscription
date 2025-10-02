@@ -21,77 +21,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '局部广告-地图上方黄页横幅',
-      fastQuery: true,
-      activityIds: [
-        'com.baidu.baidumaps.MapsActivity',
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-        'com.lbe.security.ui.CountdownDialogActivity',
-      ],
-      rules: 'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12642301',
-        'https://i.gkd.li/i/12801465',
-        'https://i.gkd.li/i/12909281',
-      ],
-    },
-    {
-      key: 2,
-      name: '局部广告-打车界面右侧悬浮球',
-      fastQuery: true,
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
-      snapshotUrls: 'https://i.gkd.li/i/12642307',
-    },
-    {
-      key: 11,
-      name: '局部广告-公共交通导航界面卡片广告',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.baidu.baidumaps.MapsActivity',
-          matches: '[vid="banner_ad_close_icon"]',
-          snapshotUrls: 'https://i.gkd.li/i/22656085',
-        },
-        {
-          fastQuery: true,
-          activityIds: 'com.baidu.baidumaps.MapsActivity',
-          matches:
-            '[vid="rl_bus_detail_endnode_pano_talos"] >n @ImageView[childCount=0] < ViewGroup[childCount=1] + * > [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/22616267',
-        },
-      ],
-    },
-    {
-      key: 3,
-      name: '全屏广告-美食大礼包弹窗',
-      fastQuery: true,
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12642310',
-    },
-    {
-      key: 4,
-      name: '全屏广告-酒店提前订弹窗',
-      fastQuery: true,
-      activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12642319',
-    },
-    {
-      key: 10,
-      name: '全屏广告-导航结束弹窗广告',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.baidu.baidumaps.MapsActivity',
-          matches: '[text$="秒后关闭"] - @[vid="img_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/22616256',
-        },
-      ],
-    },
-    {
       key: 5,
       name: '权限提示-定位权限',
       fastQuery: true,
@@ -121,21 +50,6 @@ export default defineGkdApp({
             'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/12909299',
         },
-      ],
-    },
-    {
-      key: 6,
-      name: '全屏广告-打车界面弹窗广告',
-      fastQuery: true,
-      activityIds: [
-        'com.baidu.baidumaps.MapsActivity',
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-      ],
-      rules:
-        'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12909300',
-        'https://i.gkd.li/i/12930699',
       ],
     },
     {
@@ -183,6 +97,39 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13439258',
             'https://i.gkd.li/i/16920986', // 防止误触
           ],
+        },
+      ],
+    },
+    {
+      key: 10,
+      name: '全屏广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[vid="img_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22616256',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches: '[vid="banner_ad_close_icon"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22656085',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] + ViewGroup > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/22616267',
         },
       ],
     },
