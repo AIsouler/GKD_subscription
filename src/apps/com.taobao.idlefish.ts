@@ -119,6 +119,17 @@ export default defineGkdApp({
     //   ],
     // },
     {
+      key: 7,
+      name: '功能类-关闭小额免密支付',
+      rules: [
+        {
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: '@CheckBox[checked=true] < * - [text~="开通.*免密支付"]',
+          snapshotUrls: 'https://i.gkd.li/i/22656242',
+        },
+      ],
+    },
+    {
       key: 6,
       name: '功能类-自动点击[查看原图]',
       rules: [
