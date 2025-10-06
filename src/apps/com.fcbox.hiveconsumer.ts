@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 7,
-      name: '全屏广告-优惠券过期弹窗',
+      name: '全屏广告',
       desc: '点击关闭',
       rules: [
         {
@@ -15,6 +15,18 @@ export default defineGkdApp({
             'kt.com.fcbox.hiveconsumer.app.business.main.MainActivity',
           matches: '[text*="优惠券"] + @[vid="img_close"]',
           snapshotUrls: 'https://i.gkd.li/i/22455763',
+        },
+        {
+          fastQuery: true,
+          activityIds: [
+            'kt.com.fcbox.hiveconsumer.app.business.main.MainActivity',
+            'kt.com.fcbox.hiveconsumer.app.business.membership.MemberCenterActivityV2',
+          ],
+          matches: '[vid="ivClose"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22724047',
+            'https://i.gkd.li/i/22724105',
+          ],
         },
       ],
     },
