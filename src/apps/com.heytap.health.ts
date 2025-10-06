@@ -35,5 +35,31 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '通知提示-健康周报',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: ['[text="您的健康周报已生成"]', '[text="关闭"]'],
+          snapshotUrls: 'https://i.gkd.li/i/22724032',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '全屏广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: '[vid="image_operation"] + [vid="close"]',
+          snapshotUrls: 'https://i.gkd.li/i/22724039',
+        },
+      ],
+    },
   ],
 });
