@@ -139,8 +139,12 @@ export default defineGkdApp({
         {
           preKeys: [0, 1],
           fastQuery: true,
-          matches: '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/22514499',
+          matches:
+            '@[clickable=true] >(1,2) [text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22514499',
+            'https://i.gkd.li/i/22691590',
+          ],
         },
       ],
     },
