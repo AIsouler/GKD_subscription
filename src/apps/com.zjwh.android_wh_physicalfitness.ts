@@ -124,12 +124,20 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] - View >3 [text="广告"]',
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] - View >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22514469',
         },
         {
-          preKeys: [0],
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] <n * + * >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: 'https://i.gkd.li/i/22691578',
+        },
+        {
+          preKeys: [0, 1],
           fastQuery: true,
           matches: '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/22514499',
