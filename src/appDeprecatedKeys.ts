@@ -845,7 +845,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.qqmusic',
     name: 'QQ音乐',
-    deprecatedKeys: [10],
+    deprecatedKeys: [7, 10],
   },
   {
     id: 'com.tongcheng.android',
