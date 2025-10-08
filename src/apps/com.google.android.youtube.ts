@@ -103,6 +103,31 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 7,
+      name: '功能类-关闭视频播放结束后的推荐视频',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '[text="Suggested video" || text="推荐视频"] <<2 * + @[vid="close_button"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22757392', // 英文界面
+            'https://i.gkd.li/i/22762876', // 中文界面
+          ],
+        },
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '[desc^="Related videos and playlists"] < * -n * >3 @[vid="engagement_close_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/22757397',
+        },
+      ],
+    },
+    {
       key: 6,
       name: '其他-关闭播放器辅助功能弹窗',
       desc: '点击[Dismiss]',
