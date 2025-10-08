@@ -125,7 +125,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知权限',
+      name: '权限提示-通知推送',
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
@@ -136,11 +136,16 @@ export default defineGkdApp({
           activityIds: [
             '.app.ui.activity.MainActivity',
             '.mix.activity.ContentMixProfileActivity',
+            '.app.ui.activity.HostActivity',
           ],
-          matches: ['[text$="内容推送"]', '[vid="btn_close"]'],
+          matches: [
+            '[text$="内容推送" || text="开启私信通知"]',
+            '[vid="btn_close"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/18057057',
             'https://i.gkd.li/i/20647853',
+            'https://i.gkd.li/i/22762314',
           ],
         },
       ],
