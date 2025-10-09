@@ -394,5 +394,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 25,
+      name: '局部广告-游戏直播间浮标广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.live.LivePlayActivity',
+          matches:
+            '@View[clickable=true][width<80&&height<80] +2 View >4 [text="立即查看"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7c97fdc7-9de0-403d-9817-e43da0eb8a31',
+          snapshotUrls: 'https://i.gkd.li/i/22743677',
+        },
+      ],
+    },
   ],
 });
