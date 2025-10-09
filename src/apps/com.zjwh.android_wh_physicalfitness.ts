@@ -140,7 +140,7 @@ export default defineGkdApp({
           key: 2,
           fastQuery: true,
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] + * >2 [text="广告"] <<n [vid="fl_native"]',
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] + * >2 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22798099',
         },
         {
