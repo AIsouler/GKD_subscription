@@ -402,7 +402,8 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.live.LivePlayActivity',
           matches:
-            '@View[width<80&&height<80][clickable=true] <n View <<3 [vid="qpz"]',
+            '@View[clickable=true][width<80&&height<80] +2 View >4 [text="立即查看"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7c97fdc7-9de0-403d-9817-e43da0eb8a31',
           snapshotUrls: 'https://i.gkd.li/i/22743677',
         },
       ],
