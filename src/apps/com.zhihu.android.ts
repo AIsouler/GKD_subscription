@@ -125,7 +125,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '权限提示-通知推送',
+      name: '权限提示-通知权限',
       desc: '点击关闭',
       fastQuery: true,
       actionMaximum: 1,
