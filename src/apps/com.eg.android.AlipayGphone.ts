@@ -483,5 +483,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 27,
+      name: '功能类-余额宝转出自动勾选[7日内不再提示]',
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      rules: [
+        {
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches: [
+            '[text^="该笔为你快速转出"]',
+            '@CheckBox + [text="7日内不再提示"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/22798330', // 勾选前
+            'https://i.gkd.li/i/22798432', // 勾选后
+          ],
+        },
+      ],
+    },
   ],
 });
