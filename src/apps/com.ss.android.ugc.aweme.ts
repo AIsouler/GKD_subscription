@@ -408,5 +408,39 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 26,
+      name: '功能类-自动领取别人发的红包',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches:
+            'FrameLayout[getChild(0).desc$="的头像"] + ViewGroup >3 @FrameLayout > [text="抖音红包"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6c963e99-1a74-40a5-bf84-a9353c27acdb',
+          snapshotUrls: 'https://i.gkd.li/i/22761277',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22849224', // 自己发的不领取
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          fastQuery: true,
+          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
+          matches:
+            '@FrameLayout[clickable=true][width=height] -2 [text="大吉大利"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e8b822c1-c289-4802-85a4-994093024b24',
+          snapshotUrls: 'https://i.gkd.li/i/22761510',
+        },
+        {
+          preKeys: [1],
+          fastQuery: true,
+          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
+          matches: '[vid="iv_back"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f92c1412-8111-40bc-8188-24f2c004c55c',
+          snapshotUrls: 'https://i.gkd.li/i/22761554',
+        },
+      ],
+    },
   ],
 });
