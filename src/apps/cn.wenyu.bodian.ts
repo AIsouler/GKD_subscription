@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '开屏广告',
       matchTime: 10000,
-      actionMaximum: 1,
+      actionMaximum: 2,
       resetMatch: 'app',
       priorityTime: 10000,
       rules: [
