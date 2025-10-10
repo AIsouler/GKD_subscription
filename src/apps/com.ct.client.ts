@@ -155,6 +155,8 @@ export default defineGkdApp({
       key: 8,
       name: '功能类-英文版未登录时自动一键登录',
       desc: '仅在使用该卡移动数据时可用',
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           // 点击“Login”
