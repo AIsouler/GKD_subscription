@@ -92,7 +92,7 @@ export default defineGkdApp({
           activityIds:
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
           matches:
-            '@Image[childCount=0] < View[childCount=1] < View[childCount=1] <<n * + * >2 [text="广告"]',
+            '@Image[childCount=0][text=""] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/22863858',
         },
       ],
