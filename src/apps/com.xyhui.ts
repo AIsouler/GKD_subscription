@@ -104,11 +104,13 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: [
+            '.lut.act.LutMainActivity',
             'com.xyhui.start.PUMainActivity',
             'com.xyhui.start.LoadingActivity',
           ],
           matches: 'ImageView[id="com.xyhui:id/deleteIv"]',
           snapshotUrls: [
+            'https://i.gkd.li/i/22863860',
             'https://i.gkd.li/i/12846543',
             'https://i.gkd.li/i/12868119',
           ],
