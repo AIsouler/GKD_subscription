@@ -10,9 +10,11 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       priorityTime: 10000,
       rules: [
         {
+          key: 0,
           fastQuery: true,
           matches:
             '[vid="tobid_splash_skip_text" || vid="ms_skipView"][visibleToUser=true]',
@@ -21,6 +23,19 @@ export default defineGkdApp({
             'https://i.gkd.li/i/17004919',
             'https://i.gkd.li/i/22056539',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22861457',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true] +2 LinearLayout >2 [vid="sig_ad_privacy_ll"]',
+          snapshotUrls: 'https://i.gkd.li/i/22863334',
         },
       ],
     },
