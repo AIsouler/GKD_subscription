@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.zjwh.android_wh_physicalfitness',
-  name: '运动世界校园',
+  name: '运动世界',
   groups: [
     {
       key: 1,
@@ -100,11 +100,12 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           matches:
-            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <<n * - * >3 [text="广告"][visibleToUser=true]',
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <<n * >4 [text="广告"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/ca109fa3-5a7a-400d-911b-36dd8ac42656',
           snapshotUrls: [
             'https://i.gkd.li/i/22387192',
             'https://i.gkd.li/i/22656913',
+            'https://i.gkd.li/i/22863607',
           ],
         },
         {
