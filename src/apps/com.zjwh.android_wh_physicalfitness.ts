@@ -144,7 +144,14 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/22798099',
         },
         {
-          preKeys: [0, 1, 2],
+          key: 3,
+          fastQuery: true,
+          matches:
+            '@TextView[text="···"][visibleToUser=true] +n * >2 [childCount=0][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: 'https://i.gkd.li/i/22861405',
+        },
+        {
+          preKeys: [0, 1, 2, 3],
           fastQuery: true,
           matches:
             '@[clickable=true] >(1,2) [text="不感兴趣"][visibleToUser=true]',
