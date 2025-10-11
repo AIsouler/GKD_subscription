@@ -327,5 +327,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 19,
+      name: '功能类-取消倒计时后自动进入直播间',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@[text="取消"] -2 [text$="后进入直播间"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/dc542a83-f5d2-4c88-9467-bbc6cc46ee04',
+          snapshotUrls: 'https://i.gkd.li/i/22861016',
+        },
+      ],
+    },
   ],
 });
