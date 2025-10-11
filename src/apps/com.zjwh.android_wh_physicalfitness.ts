@@ -126,32 +126,22 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] - View >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
-          snapshotUrls: 'https://i.gkd.li/i/22514469',
+            '@Image[childCount=0][width<70&&height<70][id=null][text=""][desc=null] < View[childCount=1][parent.childCount!=2] <n View <n View >n [childCount=0][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22514469',
+            'https://i.gkd.li/i/22691578',
+            'https://i.gkd.li/i/22798099',
+          ],
         },
         {
           key: 1,
-          fastQuery: true,
-          matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] <n * + * >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
-          snapshotUrls: 'https://i.gkd.li/i/22691578',
-        },
-        {
-          key: 2,
-          fastQuery: true,
-          matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] + * >2 [childCount=0][text="广告"] <<n [vid="fl_native"]',
-          snapshotUrls: 'https://i.gkd.li/i/22798099',
-        },
-        {
-          key: 3,
           fastQuery: true,
           matches:
             '@TextView[text="···"][visibleToUser=true] +n * >2 [childCount=0][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22861405',
         },
         {
-          preKeys: [0, 1, 2, 3],
+          preKeys: [0, 1],
           fastQuery: true,
           matches:
             '@[clickable=true] >(1,2) [text="不感兴趣"][visibleToUser=true]',
