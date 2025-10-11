@@ -126,21 +126,21 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] - View >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] - View >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22514469',
         },
         {
           key: 1,
           fastQuery: true,
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] <n * + * >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] <n * + * >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22691578',
         },
         {
           key: 2,
           fastQuery: true,
           matches:
-            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] + * >2 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
+            '@Image[childCount=0][visibleToUser=true][width<60&&height<60] < View[childCount=1] + * >2 [childCount=0][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22798099',
         },
         {
