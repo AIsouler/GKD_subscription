@@ -70,6 +70,15 @@ export default defineGkdApp({
             '@LinearLayout > [id="com.lptiyu.tanke:id/skip_parent_view"]',
           snapshotUrls: 'https://i.gkd.li/i/13166361',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds:
+            '.activities.school_run_record_detail.RunRecordDetailActivity',
+          matches: '[vid="ad_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5eff1f56-ea35-43f0-9789-644bd4213eed',
+          snapshotUrls: 'https://i.gkd.li/i/22863742',
+        },
       ],
     },
   ],
