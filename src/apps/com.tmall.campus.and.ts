@@ -41,5 +41,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-打开应用自动点击扫一扫',
+      desc: '仅开屏后触发一次',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tmall.campus.and.main.MainActivity',
+          matches: '[vid="iv_top_scan"]',
+          snapshotUrls: 'https://i.gkd.li/i/22871147',
+        },
+      ],
+    },
   ],
 });
