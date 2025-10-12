@@ -95,6 +95,13 @@ export default defineGkdApp({
             '@Image[childCount=0][text=""] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/22863858',
         },
+        {
+          key: 9,
+          fastQuery: true,
+          activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+          matches: '[vid="anythink_myoffer_btn_close_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/22868736',
+        },
       ],
     },
     {
