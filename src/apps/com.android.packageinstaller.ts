@@ -54,9 +54,16 @@ export default defineGkdApp({
           key: 3,
           name: '勾选[已了解此应用未经检测，可能存在风险]',
           fastQuery: true,
-          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
-          matches: '[vid="checkbox"][checked=false]',
-          snapshotUrls: 'https://i.gkd.li/i/14595443',
+          activityIds: [
+            'com.android.packageinstaller.PackageInstallerActivity',
+            '.PackageInterceptActivity',
+          ],
+          matches:
+            '[vid="checkbox" || vid="deleted_file_state_cb"][checked=false]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14595443',
+            'https://i.gkd.li/i/22870985',
+          ],
         },
         {
           key: 4,
