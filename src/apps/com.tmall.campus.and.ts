@@ -29,10 +29,15 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.tmall.campus.scancode.activity.ToolsCaptureActivity',
+            'com.tmall.campus.bizwebview.ui.CampusWebActivity',
+          ],
           matches: '[vid="iv_close_ad"]',
-          snapshotUrls: 'https://i.gkd.li/i/22558370',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22558370',
+            'https://i.gkd.li/i/22871032',
+          ],
         },
       ],
     },
