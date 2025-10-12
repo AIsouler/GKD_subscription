@@ -21,5 +21,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches:
+            '@TextView[width<130&&height<130][clickable=true] + * > [text="开会员享专属曲库"]',
+          snapshotUrls: 'https://i.gkd.li/i/22867851',
+        },
+      ],
+    },
   ],
 });
