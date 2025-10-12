@@ -38,9 +38,9 @@ https://registry.npmmirror.com/@aisouler/gkd_subscription/latest/files/dist/AIso
 https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 ```
 
-- 当前版本: v313
+- 当前版本: v314
 
-- 当前订阅文件已适配 824 个应用，共有 1902 应用规则组，3 全局规则组
+- 当前订阅文件已适配 824 个应用，共有 1904 应用规则组，3 全局规则组
 
 - 查看 [适配 APP 列表](./dist/README.md)
 
@@ -76,7 +76,7 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=313)
+![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=314)
 
 ## Star History
 
