@@ -77,11 +77,13 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '分段广告-卡片广告',
       fastQuery: true,
+      activityIds: '.application.Main',
       rules: [
         {
-          activityIds: 'com.oray.sunlogin.application.Main',
+          key: 0,
+          action: 'clickCenter', // clickNode 可能无效
           matches:
             '[id="com.oray.sunlogin:id/fl_close_advertise" || vid="iv_dislike"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/2cad526b-1691-45e9-826b-eb92299cb8ee',
@@ -89,6 +91,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13207785',
             'https://i.gkd.li/i/17159821',
           ],
+        },
+        {
+          preKeys: [0],
+          matches: '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/55f927c7-edb5-4324-a73a-ad6dfa090eb6',
+          snapshotUrls: 'https://i.gkd.li/i/22865433',
         },
       ],
     },
