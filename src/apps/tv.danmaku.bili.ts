@@ -437,5 +437,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 18,
+      name: '功能类-自动领取会员经验',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.bilibili.vip.web.VipWebActivity',
+          matches:
+            '[text^="专属等级加速包"] +n @TextView[childCount=0][text="领取"] <<n [vid="webview"]',
+        },
+      ],
+      snapshotUrls: [
+        'https://i.gkd.li/i/22886723', // 领取前
+        'https://i.gkd.li/i/22886739', // 领取后
+      ],
+    },
   ],
 });
