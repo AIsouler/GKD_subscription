@@ -80,5 +80,21 @@ export default defineGkdApp({
         'https://i.gkd.li/i/22886739', // 领取后
       ],
     },
+    {
+      key: 10,
+      name: '功能类-自动关闭故事模式',
+      desc: '播放视频时退出竖屏模式',
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+          matches: '[vid="story_ctrl_router"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4bfd6131-d4be-46be-affb-73338b01f49c',
+          snapshotUrls: 'https://i.gkd.li/i/18164075',
+        },
+      ],
+    },
   ],
 });
