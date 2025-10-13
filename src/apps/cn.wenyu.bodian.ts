@@ -33,5 +33,26 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          activityIds: '.MainActivity',
+          matches: 'ImageView[desc="广告"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/b57e1862-ef27-4b2d-9cf4-c4c1a1a5262e',
+          snapshotUrls: 'https://i.gkd.li/i/22878974',
+        },
+        {
+          key: 1,
+          activityIds: '.MainActivity',
+          matches:
+            '[desc$="广告"] > ImageView[index=1][width=height][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5f249d6e-ac2d-4fda-a53c-039c8091ce63',
+          snapshotUrls: 'https://i.gkd.li/i/22878992',
+        },
+      ],
+    },
   ],
 });
