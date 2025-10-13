@@ -177,6 +177,7 @@ export const blackListAppIDs: string[] = [
   'me.neko.fckvip', // Fuck for VIP
   'gr.nikolasspyr.integritycheck', // Play Integrity API Checker
   'com.luckyzyx.luckytool', // 全局规则误触 https://i.gkd.li/i/21339859
+  'ai.x.grok', // Grok
 
   'com.canghai.haoka',
   'com.xy.td',
