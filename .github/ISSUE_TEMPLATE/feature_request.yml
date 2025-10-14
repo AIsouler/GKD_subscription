@@ -10,7 +10,7 @@ body:
         1. **提供需要适配界面的快照（不要提供截图，截图没有任何作用，不要使用截屏快照），快照获取方式如下图**
         2. 如果是需要点击多次才能关闭的情况，那么必须提供每一次点击页面的快照
         3. 检查全局规则是否开启
-        4. 检查使用的是否是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
+        4. 检查使用的是否是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases)
         5. 阅读 [不予适配情况合集](https://github.com/AIsouler/GKD_subscription/issues/480)
         6. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
   - type: textarea
