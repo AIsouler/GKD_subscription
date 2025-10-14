@@ -41,7 +41,6 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
           'https://i.gkd.li/i/21617520', // text!*="视频"
           'https://i.gkd.li/i/22634992', // text$="登录"
-          'https://i.gkd.li/i/17108010',
         ],
       },
       {
