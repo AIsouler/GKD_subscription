@@ -94,7 +94,6 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
-          action: 'clickCenter', // clickNode 可能无效
           matches: '[text="不感兴趣"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/55f927c7-edb5-4324-a73a-ad6dfa090eb6',
           snapshotUrls: 'https://i.gkd.li/i/22865433',
