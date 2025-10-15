@@ -119,5 +119,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 14,
+      name: '功能类-移动数据更新弹窗点击继续',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
+          matches:
+            '@[text="继续"] <n * - * >4 [text^="您在使用数据网络，升级应用可能产生流量费用"]',
+          snapshotUrls: 'https://i.gkd.li/i/22927652',
+        },
+      ],
+    },
   ],
 });
