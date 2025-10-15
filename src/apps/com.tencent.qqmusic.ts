@@ -135,12 +135,17 @@ export default defineGkdApp({
           fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
-          resetMatch: 'app',
-          activityIds: '.activity.AppStarterActivity',
+          activityIds: [
+            '.activity.AppStarterActivity',
+            '.business.playernew.view.NewPlayerActivity',
+          ],
           matches:
-            '@ImageView[childCount=0][visibleToUser=true][width<120 && height<120] <3 FrameLayout[childCount=3] <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+            '@ImageView[childCount=0][visibleToUser=true][width<130 && height<130] <n FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/881cddd2-e4ec-472e-8bf8-00f26f61cbc4',
-          snapshotUrls: 'https://i.gkd.li/i/18439138',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18439138',
+            'https://i.gkd.li/i/22924866',
+          ],
         },
         {
           key: 3,
