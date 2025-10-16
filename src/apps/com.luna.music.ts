@@ -218,5 +218,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '其他-关闭[更多直播]推荐',
+      desc: '直播间出现[更多直播]时点击右上角关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.luna.biz.live.plugin.LunaDefaultLivePlayerActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] <n RelativeLayout + FrameLayout >4 [text="更多直播"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/148466b5-9769-4b79-b648-f2cf7719e3e7',
+          snapshotUrls: 'https://i.gkd.li/i/22922565',
+        },
+      ],
+    },
   ],
 });
