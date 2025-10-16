@@ -79,6 +79,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/dbf9ea95-3674-4cb2-8a88-dfb96c24e71b',
           snapshotUrls: 'https://i.gkd.li/i/22308745',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.taobao.search.uniform.SearchActivity',
+          matches:
+            '@TextView[clickable=true][width<160 && height<160] - [childCount=0][text="开心收下"] <<n [vid="poplayer_inner_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/22949963',
+        },
       ],
     },
     {
