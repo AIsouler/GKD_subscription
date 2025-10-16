@@ -503,5 +503,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 28,
+      name: '功能类-自动领取会员积分',
+      desc: '点击[全部领取]',
+      rules: [
+        {
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '@[text="全部领取"] < [childCount=1] <2 View <<2 * - * >2 [text="我的积分"]',
+          snapshotUrls: 'https://i.gkd.li/i/22951439',
+        },
+      ],
+    },
   ],
 });
