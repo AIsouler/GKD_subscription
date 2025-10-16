@@ -90,7 +90,6 @@ export default defineGkdApp({
         },
         {
           key: 7,
-          fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
