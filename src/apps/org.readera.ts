@@ -12,11 +12,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.MainActivity',
-          matches: [
-            '[text="ReadEra 书籍阅读器 - 不含广告的免费应用"]',
-            '[text="如果您喜欢我们的工作，请支持我们:"]',
-            '[desc="关闭"]',
-          ],
+          matches:
+            '[desc="关闭"][clickable=true][childCount=0] < FrameLayout + LinearLayout >3 [text*="通过社交网络分享这款应用"]',
           snapshotUrls: 'https://i.gkd.li/i/22950138',
         },
       ],
