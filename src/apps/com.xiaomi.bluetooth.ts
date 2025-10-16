@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.xiaomi.bluetooth',
-  name: '小米蓝牙框架 (Bluetooth Extension)',
+  name: '小米蓝牙扩展 (Bluetooth Extension)',
   groups: [
     {
       key: 1,
