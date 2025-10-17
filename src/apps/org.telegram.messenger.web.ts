@@ -30,6 +30,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'org.telegram.ui.LaunchActivity',
           matches: '@ImageView[clickable=true] - * >2 [text^="添加您的生日"]',
+          snapshotUrls: 'https://i.gkd.li/i/22971075',
         },
       ],
     },
