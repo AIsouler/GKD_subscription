@@ -520,5 +520,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 29,
+      name: '全屏广告-添加桌面小组件弹窗',
+      desc: '点击[近期不再提醒我]',
+      rules: [
+        {
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches: '[text="去添加"] + [text="近期不再提醒我"]',
+          snapshotUrls: [
+            // 弹窗中的文字和图片每隔几秒切换
+            'https://i.gkd.li/i/22984695',
+            'https://i.gkd.li/i/22984696',
+            'https://i.gkd.li/i/22984697',
+          ],
+        },
+      ],
+    },
   ],
 });
