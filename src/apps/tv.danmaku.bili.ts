@@ -128,26 +128,28 @@ export default defineGkdApp({
     },
     {
       key: 8,
-      name: '局部广告-直播间卡片广告',
+      name: '局部广告-直播间悬浮窗广告',
       desc: '点击关闭',
       fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
       activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
       rules: [
         {
           key: 0,
-          name: '直播间底部售卖卡片',
-          matches: '[id="tv.danmaku.bili:id/shopping_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13200549',
+          matches:
+            '[id="tv.danmaku.bili:id/shopping_close" || vid="live_game_card_close"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13200549',
+            'https://i.gkd.li/i/22990081',
+          ],
         },
         {
           key: 1,
-          name: '[关注/投喂]弹窗',
-          matches: '@[vid="close"] - [vid="up_avatar" || vid="gift_icon"]',
+          matches:
+            '@[vid="close" || vid="iv_close"] - [vid="up_avatar" || vid="gift_icon" || vid="follow_container"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14782965',
             'https://i.gkd.li/i/18046573',
+            'https://i.gkd.li/i/22990105',
           ],
         },
       ],
