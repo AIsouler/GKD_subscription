@@ -10,11 +10,12 @@ export default defineGkdApp({
       matchRoot: true,
       fastQuery: true,
       //matchTime: 10000, 从桌面小组件进入哔哩哔哩观看视频后，退出返回到哔哩哔哩首页时会跳出开屏广告
-      actionMaximum: 1,
+      actionMaximum: 2, // 可能连续出现两次 https://github.com/AIsouler/GKD_subscription/issues/1280
       resetMatch: 'app',
       priorityTime: 10000,
       rules: [
         {
+          actionCd: 500,
           matches: '[vid="count_down" || vid="skip"][visibleToUser=true]', // [text*="跳过"] 可能会误触搜索框
           snapshotUrls: [
             'https://i.gkd.li/i/16187624',
