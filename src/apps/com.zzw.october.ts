@@ -83,5 +83,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '局部广告-浮标广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.zzw.october.MainActivity',
+          matches: '[vid="channel_banner_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23003170',
+        },
+      ],
+    },
   ],
 });
