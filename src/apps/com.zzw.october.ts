@@ -27,6 +27,21 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/2033b8e2-8234-486d-ba8a-e7d140215d88',
           snapshotUrls: 'https://i.gkd.li/i/18235996',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.beizi.ad.v2.activity.BeiZiNewInterstitialActivity',
+          matches: '[vid="beizi_interstitial_ad_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23003165',
+        },
+        {
+          // 点击广告进入的详情页
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.beizi.ad.AdActivity',
+          matches: '[vid="close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23002976',
+        },
       ],
     },
     {
