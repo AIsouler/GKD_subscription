@@ -33,5 +33,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.mainnesting.view.MainNestingActivity',
+          matches: '[vid="image_cancel"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5229142b-49d5-4985-ab75-104e46ede45e',
+          snapshotUrls: 'https://i.gkd.li/i/22995479',
+        },
+      ],
+    },
   ],
 });
