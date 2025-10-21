@@ -42,6 +42,14 @@ export default defineGkdApp({
           matches: '[vid="close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/23002976',
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.octopus.ad.AdActivity',
+          matches:
+            '@ImageView[clickable=true][width<90 && height<90] - [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/23021515',
+        },
       ],
     },
     {
