@@ -187,7 +187,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '@[vid="more"] <<n [vid="tool_container" || vid="ad_tint_frame"][visibleToUser=true]',
+            '@[vid="more" || id="tv.danmaku.bili.adbiz:id/more"] <<n [vid="tool_container" || vid="ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14083540',
             'https://i.gkd.li/i/14588315',
@@ -195,6 +195,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18274379',
             'https://i.gkd.li/i/18306851',
             'https://i.gkd.li/i/19537979',
+            'https://i.gkd.li/i/23012670',
           ],
         },
         {
