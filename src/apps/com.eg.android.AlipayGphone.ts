@@ -399,6 +399,14 @@ export default defineGkdApp({
             'https://m.gkd.li/57941037/2d714755-efe9-4c63-8187-7f9b7a5a199c',
           snapshotUrls: 'https://i.gkd.li/i/15144844',
         },
+        {
+          key: 2,
+          name: '余额宝广告',
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches: '@TextView[width<50 && height<50] -n [text="去看看"]',
+          snapshotUrls: 'https://i.gkd.li/i/23054580',
+        },
       ],
     },
     {
