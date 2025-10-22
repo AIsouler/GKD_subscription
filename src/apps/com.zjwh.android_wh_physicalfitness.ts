@@ -193,5 +193,32 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 13,
+      name: '权限提示-不开启可选权限',
+      desc: '点击[暂不开启，继续跑步]',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: [
+            '[text="必要权限未开启！"] + [text^="请先开启必要权限"]',
+            '[text="暂不开启继续跑步"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23054372',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: [
+            '[text="提示!"] + [text^="当前必要权限不完整"]',
+            '[text="暂不开启，继续跑步"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23054373',
+        },
+      ],
+    },
   ],
 });
