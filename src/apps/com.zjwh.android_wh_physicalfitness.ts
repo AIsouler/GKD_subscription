@@ -134,6 +134,13 @@ export default defineGkdApp({
             '@Image[childCount=0] < [childCount=1] <n * - * >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22585927',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '[vid="ksad_ad_dislike"]',
+          snapshotUrls: 'https://i.gkd.li/i/23054142',
+        },
       ],
     },
     {
