@@ -526,5 +526,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 29,
+      name: '功能类-访问被拒绝时点击[返回]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches: [
+            '[text="访问被拒绝"][visibleToUser=true]',
+            '[id="com.alipay.mobile.antui:id/back_button"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/c1ddb8bf-084b-4109-b777-96c02858d266',
+          snapshotUrls: 'https://i.gkd.li/i/23046994',
+        },
+      ],
+    },
   ],
 });
