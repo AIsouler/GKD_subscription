@@ -134,6 +134,13 @@ export default defineGkdApp({
             '@Image[childCount=0] < [childCount=1] <n * - * >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22585927',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '[vid="ksad_ad_dislike"]',
+          snapshotUrls: 'https://i.gkd.li/i/23054142',
+        },
       ],
     },
     {
@@ -183,6 +190,33 @@ export default defineGkdApp({
           activityIds: '.mvi.home.HomeActivity',
           matches: '@ImageView[vid="dialog_close"] +n [text*="公告"]',
           snapshotUrls: 'https://i.gkd.li/i/22526467',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '权限提示-不开启可选权限',
+      desc: '点击[暂不开启，继续跑步]',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: [
+            '[text="必要权限未开启！"] + [text^="请先开启必要权限"]',
+            '[text="暂不开启继续跑步"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23054372',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: [
+            '[text="提示!"] + [text^="当前必要权限不完整"]',
+            '[text="暂不开启，继续跑步"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23054373',
         },
       ],
     },
