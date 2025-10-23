@@ -536,9 +536,10 @@ export default defineGkdApp({
     },
     {
       key: 29,
-      name: '功能类-访问被拒绝时点击[返回]',
+      name: '功能类-无法访问时点击返回',
       rules: [
         {
+          key: 1,
           fastQuery: true,
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
@@ -548,6 +549,15 @@ export default defineGkdApp({
           ],
           exampleUrls: 'https://e.gkd.li/c1ddb8bf-084b-4109-b777-96c02858d266',
           snapshotUrls: 'https://i.gkd.li/i/23046994',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          action: 'back',
+          matches: '[text="人气太旺啦，请稍后再试"]',
+          snapshotUrls: 'https://i.gkd.li/i/23096413',
         },
       ],
     },
