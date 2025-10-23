@@ -161,5 +161,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 18,
+      name: '功能类-禁止后台运行弹窗',
+      desc: '点击确定',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.miui.powercenter.legacypowerrank.PowerDetailActivity',
+          matches: [
+            '[text="应用在后台被终止运行，可能会影响应用正常使用。"]',
+            '[text="确定"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23096094',
+        },
+      ],
+    },
   ],
 });
