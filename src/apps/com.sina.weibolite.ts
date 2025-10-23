@@ -12,6 +12,7 @@ export default defineGkdApp({
       activityIds: [
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',
+        'com.weico.international.ui.detail.StatusDetailV3Activity',
       ],
       rules: [
         {
@@ -21,10 +22,11 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12738110',
             'https://i.gkd.li/i/14996673',
+            'https://i.gkd.li/i/23097171',
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           name: '点击[不感兴趣]',
           matches:
             '@View[clickable=true][childCount=1] > TextView[visibleToUser=true][text="不感兴趣"||text$="interest"] <<n [vid="design_bottom_sheet"]',
