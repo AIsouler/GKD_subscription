@@ -36,12 +36,12 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          excludeMatches:
-            '[id="com.coolapk.market:id/item_view" || vid="card_view"]',
-          matches: '[text*="跳过"][text.length<5][visibleToUser=true]',
+          matches:
+            '[id!="com.coolapk.market:id/item_view" && vid!="card_view"] > [text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
             'https://i.gkd.li/i/13211392',
+            'https://i.gkd.li/i/23097140',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/13247733',
