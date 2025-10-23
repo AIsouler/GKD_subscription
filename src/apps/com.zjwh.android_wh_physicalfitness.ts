@@ -119,19 +119,20 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           matches:
-            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <<n * >4 [text="广告"][visibleToUser=true]',
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <<n * >4 [text="广告"]',
           exampleUrls: 'https://e.gkd.li/ca109fa3-5a7a-400d-911b-36dd8ac42656',
           snapshotUrls: [
             'https://i.gkd.li/i/22387192',
             'https://i.gkd.li/i/22656913',
             'https://i.gkd.li/i/22863607',
+            'https://i.gkd.li/i/23087561',
           ],
         },
         {
           key: 1,
           fastQuery: true,
           matches:
-            '@Image[childCount=0] < [childCount=1] <n * - * >3 [visibleToUser=true][text="广告"] <<n [vid="fl_native"]',
+            '@Image[childCount=0] < [childCount=1] <n * - * >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/22585927',
         },
         {
