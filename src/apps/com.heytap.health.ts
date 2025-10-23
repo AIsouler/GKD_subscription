@@ -61,5 +61,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '其他-不开启微信运动同步',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.heytap.health.main.MainActivity',
+          matches: '[text^="开启微信运动同步"] + [text="忽略"]',
+          snapshotUrls: 'https://i.gkd.li/i/23087769',
+        },
+      ],
+    },
   ],
 });
