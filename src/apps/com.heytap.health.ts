@@ -63,7 +63,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-不开启微信运动同步',
+      name: '权限提示-微信运动同步',
       rules: [
         {
           fastQuery: true,
