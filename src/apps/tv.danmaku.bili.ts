@@ -137,10 +137,11 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '[id="tv.danmaku.bili:id/shopping_close" || vid="live_game_card_close"][visibleToUser=true]',
+            '[id="tv.danmaku.bili:id/shopping_close" || vid="live_game_card_close" || vid="match_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13200549',
             'https://i.gkd.li/i/22990081',
+            'https://i.gkd.li/i/23098023',
           ],
         },
         {
