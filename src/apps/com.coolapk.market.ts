@@ -109,15 +109,25 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           action: 'back',
+          fastQuery: true,
+          activityIds: '.view.main.MainActivity',
+          matches: '[text="立即更新"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15511206',
+        },
+        {
+          key: 1,
+          matchTime: 10000,
           activityIds: '.view.main.MainActivity',
           matches: '[text="立即更新"]',
-          snapshotUrls: 'https://i.gkd.li/i/15511206',
+          exampleUrls: 'https://e.gkd.li/19b5d743-3632-4c64-8e51-b55c85070512',
+          snapshotUrls: 'https://i.gkd.li/i/23096630',
         },
       ],
     },
