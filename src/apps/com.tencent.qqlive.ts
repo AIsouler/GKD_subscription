@@ -301,11 +301,12 @@ export default defineGkdApp({
             '.ona.activity.origin.OriginIconHomeActivity',
           ],
           matches:
-            '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<250 && height<150] <3 RelativeLayout < FrameLayout <2 FrameLayout < FrameLayout <2 ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(4,5) [id="android:id/content"]',
+            '@[name$="ImageView" || name$="FrameLayout" ][childCount<2][clickable=true][visibleToUser=true][width<250 && height<150] <3 RelativeLayout < FrameLayout <2 FrameLayout < FrameLayout <2 ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(4,5) [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/0ea465ad-e4e4-4af5-92a4-2d71e44845f4',
           snapshotUrls: [
             'https://i.gkd.li/i/19667104',
             'https://i.gkd.li/i/21327634',
+            'https://i.gkd.li/i/23121852',
           ],
         },
         {
