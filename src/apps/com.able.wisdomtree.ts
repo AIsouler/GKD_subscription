@@ -53,5 +53,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '通知提示-课程提醒',
+      desc: '点击[已绑定，不再提示]',
+      rules: [
+        {
+          fastQuery: true,
+          matches: [
+            '[text="课程提醒"][visibleToUser=true]',
+            '[text="已绑定，不再提示"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/cceb9974-935d-496b-9b26-431864364433',
+          snapshotUrls: 'https://i.gkd.li/i/23122012',
+        },
+      ],
+    },
   ],
 });
