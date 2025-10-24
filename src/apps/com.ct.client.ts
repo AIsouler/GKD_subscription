@@ -151,5 +151,46 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '功能类-英文版未登录时自动一键登录',
+      desc: '仅在使用该卡移动数据时可用',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          // 点击“Login”
+          key: 0,
+          fastQuery: true,
+          activityIds: '.international.homepage.InternationalHomePageActivity',
+          matches: '[text="Login"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22843837', // 登录前
+            'https://i.gkd.li/i/22846926', // 登录后
+          ],
+        },
+        {
+          // 勾选同意用户协议
+          key: 1,
+          preKeys: [0],
+          fastQuery: true,
+          activityIds: '.international.login.InternationalLoginActivity',
+          matches:
+            '@CheckBox[checked=false] + [text^="I agree that I have read and accepted"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22843889', // 勾选前
+            'https://i.gkd.li/i/22843896', // 勾选后
+          ],
+        },
+        {
+          // 点击一键登录
+          preKeys: [1],
+          fastQuery: true,
+          activityIds: '.international.login.InternationalLoginActivity',
+          matches: '[text="Login with Current Number"]',
+          snapshotUrls: 'https://i.gkd.li/i/22843896',
+        },
+      ],
+    },
   ],
 });

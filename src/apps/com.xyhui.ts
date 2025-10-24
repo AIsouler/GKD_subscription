@@ -87,6 +87,21 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/240494b6-026f-49f7-a77d-986e70077218',
           snapshotUrls: 'https://i.gkd.li/i/18245369',
         },
+        {
+          key: 8,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
+          matches:
+            '@Image[childCount=0][text=""] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22863858',
+        },
+        {
+          key: 9,
+          fastQuery: true,
+          activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+          matches: '[vid="anythink_myoffer_btn_close_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/22868736',
+        },
       ],
     },
     {
@@ -96,11 +111,13 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: [
+            '.lut.act.LutMainActivity',
             'com.xyhui.start.PUMainActivity',
             'com.xyhui.start.LoadingActivity',
           ],
           matches: 'ImageView[id="com.xyhui:id/deleteIv"]',
           snapshotUrls: [
+            'https://i.gkd.li/i/22863860',
             'https://i.gkd.li/i/12846543',
             'https://i.gkd.li/i/12868119',
           ],

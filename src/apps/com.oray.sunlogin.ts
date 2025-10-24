@@ -10,13 +10,32 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       priorityTime: 10000,
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          matches: '[vid="tobid_splash_skip_text"][visibleToUser=true]',
+          matches:
+            '[vid="tobid_splash_skip_text" || vid="ms_skipView"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/f41b0367-9161-4329-987d-b2d0ad9ec233',
-          snapshotUrls: 'https://i.gkd.li/i/17004919',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17004919',
+            'https://i.gkd.li/i/22056539',
+          ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22861457',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true] +2 LinearLayout >2 [vid="sig_ad_privacy_ll"]',
+          snapshotUrls: 'https://i.gkd.li/i/22863334',
         },
       ],
     },
@@ -58,17 +77,31 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-卡片广告',
+      name: '分段广告-卡片广告',
       fastQuery: true,
+      activityIds: '.application.Main',
       rules: [
         {
-          activityIds: 'com.oray.sunlogin.application.Main',
+          key: 0,
+          action: 'clickCenter', // clickNode 可能无效
           matches:
             '[id="com.oray.sunlogin:id/fl_close_advertise" || vid="iv_dislike"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/2cad526b-1691-45e9-826b-eb92299cb8ee',
           snapshotUrls: [
             'https://i.gkd.li/i/13207785',
             'https://i.gkd.li/i/17159821',
+          ],
+        },
+        {
+          preKeys: [0],
+          anyMatches: [
+            '@[clickable=true] > [text="不感兴趣"][clickable=false][visibleToUser=true]',
+            '[text="不感兴趣"][clickable=true][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/55f927c7-edb5-4324-a73a-ad6dfa090eb6',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22865433',
+            'https://i.gkd.li/i/22941348',
           ],
         },
       ],

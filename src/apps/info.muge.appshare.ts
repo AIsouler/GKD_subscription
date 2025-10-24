@@ -81,16 +81,16 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: 'info.muge.appshare.view.main.MainActivity',
       rules: [
         {
           key: 0,
-          activityIds: 'info.muge.appshare.view.main.MainActivity',
-          matches: '[text="签到"]',
+          matches: '[text="签到"][vid="tvSign"]',
           snapshotUrls: 'https://i.gkd.li/i/13931265',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22319703', // 避免点击首页签到按钮
         },
         {
           preKeys: [0],
-          activityIds: 'info.muge.appshare.view.main.MainActivity',
           matches: '[text="确定" || text="我知道了"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13931279',

@@ -170,7 +170,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.autonavi.minimap',
     name: '高德地图',
-    deprecatedKeys: [0],
+    deprecatedKeys: [0, 12],
   },
   {
     id: 'com.babycloud.hanju',
@@ -400,7 +400,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.eg.android.AlipayGphone',
     name: '支付宝',
-    deprecatedKeys: [10, 15, 18],
+    deprecatedKeys: [10, 15, 18, 20],
   },
   {
     id: 'com.handsgo.jiakao.android',
@@ -465,7 +465,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.taobao.taobao',
     name: '淘宝',
-    deprecatedKeys: [0, 10, 11],
+    deprecatedKeys: [0, 10, 11, 18],
   },
   {
     id: 'com.taptap',
@@ -480,7 +480,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.mobileqq',
     name: 'QQ',
-    deprecatedKeys: [6, 8, 15, 14, 19],
+    deprecatedKeys: [6, 8, 9, 15, 14, 19, 21, 23],
   },
   {
     id: 'com.tencent.qqlive',
@@ -545,7 +545,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.sina.weibo',
     name: '微博',
-    deprecatedKeys: [10],
+    deprecatedKeys: [5, 10],
   },
   {
     id: 'com.jingyao.easybike',
@@ -715,7 +715,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'tv.danmaku.bilibilihd',
     name: '哔哩哔哩HD',
-    deprecatedKeys: [1],
+    deprecatedKeys: [1, 4],
   },
   {
     id: 'com.umetrip.android.msky.app',
@@ -845,7 +845,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.tencent.qqmusic',
     name: 'QQ音乐',
-    deprecatedKeys: [10],
+    deprecatedKeys: [7, 10],
   },
   {
     id: 'com.tongcheng.android',

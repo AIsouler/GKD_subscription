@@ -47,6 +47,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '点击[屏蔽此广告]/[直接关闭]',
+          forcedTime: 10000,
           matches:
             '@ViewGroup[childCount=1 || childCount=3] > [desc="屏蔽此广告" || desc="直接关闭"]',
           snapshotUrls: [

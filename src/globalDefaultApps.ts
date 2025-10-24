@@ -74,6 +74,7 @@ export const blackListAppIDs: string[] = [
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
   'com.android.chrome', // Chrome
+  'com.microsoft.emmx', // Edge
   'org.mozilla.firefox', // Firefox
   'org.mozilla.firefox_beta', // Firefox Beta
   'org.mozilla.fenix', // Firefox Nightly
@@ -163,11 +164,20 @@ export const blackListAppIDs: string[] = [
   'com.digibites.accubattery', // AccuBattery
   'com.domosekai.cardreader', // 读卡识途
   'com.noctuasoftware.stellarium_free', // Stellarium
-  'net.osmand', // OSMAnd
+  'net.osmand', // OsmAnd
+  'net.osmand.plus', // OsmAnd+
   'com.google.android.apps.maps', // Google 地图
   'com.jiaohua_browser', // JMComic2
   'com.picacomic.fregata', // PicACG
   'com.rosan.installer.x.revived', // installerX Revived
+  'com.android.gpstest', // GPSTest
+  'com.positron_it.zlib', // Z-Lib
+  'org.sunsetware.phocid', // Phocid
+  'com.twifucker.hachidori', // Hachidori
+  'me.neko.fckvip', // Fuck for VIP
+  'gr.nikolasspyr.integritycheck', // Play Integrity API Checker
+  'com.luckyzyx.luckytool', // 全局规则误触 https://i.gkd.li/i/21339859
+  'ai.x.grok', // Grok 全局规则误触 https://i.gkd.li/i/22884434
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -368,6 +378,8 @@ export const openAdWhiteListAppIDs = new Set([
   'com.heytap.themestore', // oppo主题商店
   'com.bbk.theme', // vivo主题商店
   'com.vivo.game', // vivo游戏中心 https://i.gkd.li/i/20097148
+  'com.meizu.media.video', // 魅族视频
+  'com.hihonor.vmall', // 荣耀商城
 ]);
 
 // 更新提示白名单

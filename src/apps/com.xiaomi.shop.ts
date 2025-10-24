@@ -8,19 +8,31 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: [
             'com.xiaomi.shop2.activity.MainActivity',
             'com.xiaomi.shop.plugin.homepage.utils.AdDialog',
           ],
           matches:
-            '[id="android:id/content"] > RelativeLayout > LinearLayout[childCount=2] > ImageView[index=1][clickable=true]',
+            '@ImageView[clickable=true][childCount=0][visibleToUser=true] <2 LinearLayout[childCount=2] < RelativeLayout < [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12649330',
             'https://i.gkd.li/i/14393039',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.xiaomi.shop2.activity.MainActivity',
+          matches:
+            '@ImageView[clickable=true][childCount=0][visibleToUser=true] <2 FrameLayout[childCount=2] < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/22550140',
         },
       ],
     },

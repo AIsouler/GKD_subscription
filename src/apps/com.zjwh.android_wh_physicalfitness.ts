@@ -2,33 +2,32 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.zjwh.android_wh_physicalfitness',
-  name: '运动世界校园',
+  name: '运动世界',
   groups: [
     {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      matchTime: 10000,
-      actionMaximum: 1,
       rules: [
         {
           key: 0,
-          name: '优量汇广告',
-          activityIds: [
-            'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
-            'com.zjwh.android_wh_physicalfitness.ui.AdActivity',
-          ],
+          fastQuery: true,
           matches:
-            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close"][clickable=true]',
+            '[id="com.zjwh.android_wh_physicalfitness:id/iv_close" || vid="ad_close"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12673231',
             'https://i.gkd.li/i/12673523',
             'https://i.gkd.li/i/13166472',
+            'https://i.gkd.li/i/22437128',
+            'https://i.gkd.li/i/22449070',
+            'https://i.gkd.li/i/22495266',
+            'https://i.gkd.li/i/22495298',
+            'https://i.gkd.li/i/22495361',
+            'https://i.gkd.li/i/22508959',
           ],
         },
         {
           key: 1,
-          name: '腾讯SDK',
           fastQuery: true,
           activityIds: '.activity.HomeActivity',
           matches:
@@ -38,31 +37,36 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: '快手SDK',
           fastQuery: true,
-          activityIds: ['.activity.HomeActivity', '.ui.AdActivity'],
+          activityIds: [
+            '.activity.HomeActivity',
+            '.ui.AdActivity',
+            '.mvi.home.HomeActivity',
+          ],
           matches:
-            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] < ViewGroup +(3,5) ViewGroup[childCount=2] > [text="广告"]',
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1][visibleToUser=true] < ViewGroup <n ViewGroup <n ViewGroup  >n [text="广告"]',
           exampleUrls: 'https://e.gkd.li/cb21dc41-bcca-47ec-ae0a-df9aedde48b5',
           snapshotUrls: [
             'https://i.gkd.li/i/12826124',
             'https://i.gkd.li/i/13228216',
             'https://i.gkd.li/i/13601132',
+            'https://i.gkd.li/i/22427117',
           ],
         },
         {
           key: 3,
-          name: '百度SDK',
           fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
-            '@ImageView[clickable=true] - RelativeLayout > [text="反馈"]',
+            '@ImageView[clickable=true][width<110 && height<110] - RelativeLayout >(1,2) [text="反馈"]',
           exampleUrls: 'https://e.gkd.li/6882bcf4-1aa1-47e1-b7ad-299d4aa7bfd9',
-          snapshotUrls: 'https://i.gkd.li/i/13554229',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13554229',
+            'https://i.gkd.li/i/22960459',
+          ],
         },
         {
           key: 4,
-          name: '百青藤广告',
           activityIds:
             'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
           matches:
@@ -86,6 +90,147 @@ export default defineGkdApp({
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           exampleUrls: 'https://e.gkd.li/f640d0c2-197d-45ef-98ff-58a04920bd2d',
           snapshotUrls: 'https://i.gkd.li/i/17358027',
+        },
+        {
+          key: 7,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][width<80 && height<80] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22946236',
+        },
+        {
+          key: 8,
+          fastQuery: true,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches:
+            '@ImageView[clickable=true][width<100 && height<100] <2 RelativeLayout < RelativeLayout < RelativeLayout < RelativeLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/22946242',
+        },
+      ],
+    },
+    {
+      key: 10,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      activityIds: '.mvi.home.HomeActivity',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <<n * >4 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/ca109fa3-5a7a-400d-911b-36dd8ac42656',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22387192',
+            'https://i.gkd.li/i/22656913',
+            'https://i.gkd.li/i/22863607',
+            'https://i.gkd.li/i/23087561',
+          ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@Image[childCount=0] < [childCount=1] <n * - * >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: 'https://i.gkd.li/i/22585927',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '[vid="ksad_ad_dislike"]',
+          snapshotUrls: 'https://i.gkd.li/i/23054142',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '分段广告-卡片广告',
+      desc: '点击关闭-不感兴趣',
+      activityIds: '.mvi.home.HomeActivity',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          matches:
+            '@Image[childCount=0][width<70&&height<70][id=null][text=""][desc=null] < View[childCount=1][parent.childCount!=2] <n View <n View >n [childCount=0][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22514469',
+            'https://i.gkd.li/i/22691578',
+            'https://i.gkd.li/i/22798099',
+          ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@TextView[text="···"][visibleToUser=true] +n * >2 [childCount=0][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: 'https://i.gkd.li/i/22861405',
+        },
+        {
+          preKeys: [0, 1],
+          fastQuery: true,
+          matches:
+            '@[clickable=true] >(1,2) [text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22514499',
+            'https://i.gkd.li/i/22691590',
+          ],
+        },
+      ],
+    },
+    {
+      key: 12,
+      name: '通知提示-公告',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '@ImageView[vid="dialog_close"] +n [text*="公告"]',
+          snapshotUrls: 'https://i.gkd.li/i/22526467',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '权限提示-不开启可选权限',
+      desc: '点击[暂不开启，继续跑步]',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: [
+            '[text="必要权限未开启！" || text^="当前必要权限不完整"]',
+            '[text^="暂不开启"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23054372',
+            'https://i.gkd.li/i/23054373',
+          ],
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '权限提示-定位权限',
+      desc: '点击取消',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: [
+            '[text="定位服务未开启"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/3be509e1-0663-4989-b763-6d68d88979fe',
+          snapshotUrls: 'https://i.gkd.li/i/23096707',
         },
       ],
     },

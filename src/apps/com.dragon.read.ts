@@ -17,11 +17,12 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠" || text*="查看"][text.length<5]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠" || text*="查看" || text^="立即"][text.length<5]',
           snapshotUrls: [
             'https://i.gkd.li/i/12908734',
             'https://i.gkd.li/i/14540281',
             'https://i.gkd.li/i/18138903',
+            'https://i.gkd.li/i/21623147',
           ],
         },
         {
@@ -216,14 +217,24 @@ export default defineGkdApp({
       key: 10,
       name: '权限提示-通知权限',
       desc: '点击"取消"',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          activityIds: '.widget.ConfirmDialogBuilder',
-          matches: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
-          snapshotUrls: 'https://i.gkd.li/i/12716592',
+          activityIds: [
+            '.widget.ConfirmDialogBuilder',
+            '.pages.main.MainFragmentActivity',
+          ],
+          matches: [
+            '[text="开启推送提醒"][visibleToUser=true]',
+            '[text="取消"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/12716592',
+            'https://i.gkd.li/i/21589667',
+          ],
         },
       ],
     },
@@ -255,6 +266,78 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14430326',
             'https://i.gkd.li/i/14969861',
           ],
+        },
+      ],
+    },
+    {
+      key: 15,
+      name: '功能类-关闭广告声音',
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          matchRoot: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches: 'LynxFlattenUI[text="开启声音"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7dcb8002-607b-4a0a-8ef7-cfa351fcc388',
+          snapshotUrls: 'https://i.gkd.li/i/20989168',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/20991240',
+        },
+      ],
+    },
+    {
+      key: 16,
+      name: '功能类-观看广告后点击获得听书时长旁边的关闭按钮',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@LynxFlattenUI[clickable=true] -2 [text="获得听书时长"] -n FlattenUIText[text="广告"]',
+          exampleUrls: 'https://e.gkd.li/8f6a6b4b-b189-48b8-a068-d66514b244e3',
+          snapshotUrls: 'https://i.gkd.li/i/20989165',
+        },
+      ],
+    },
+    {
+      key: 17,
+      name: '评价提示-点评此书弹窗',
+      desc: '点击[取消]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.reader.ui.ReaderActivity',
+          matches: ['[text="点评此书"]', '[text="取消"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/21589381',
+        },
+      ],
+    },
+    {
+      key: 18,
+      name: '功能类-观看广告后点击领取奖励',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@[text="领取奖励"][clickable=true] + FlattenUIText[text="领取奖励"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/36d56a8d-7a3e-4bba-9c2b-59dfda1f1813',
+          snapshotUrls: 'https://i.gkd.li/i/21848210',
+        },
+      ],
+    },
+    {
+      key: 19,
+      name: '功能类-取消倒计时后自动进入直播间',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@[text="取消"] -2 [text$="后进入直播间"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/dc542a83-f5d2-4c88-9467-bbc6cc46ee04',
+          snapshotUrls: 'https://i.gkd.li/i/22861016',
         },
       ],
     },

@@ -135,12 +135,17 @@ export default defineGkdApp({
           fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
-          resetMatch: 'app',
-          activityIds: '.activity.AppStarterActivity',
+          activityIds: [
+            '.activity.AppStarterActivity',
+            '.business.playernew.view.NewPlayerActivity',
+          ],
           matches:
-            '@ImageView[childCount=0][visibleToUser=true][width<120 && height<120] <3 FrameLayout[childCount=3] <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+            '@ImageView[childCount=0][visibleToUser=true][width<130 && height<130] <n FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/881cddd2-e4ec-472e-8bf8-00f26f61cbc4',
-          snapshotUrls: 'https://i.gkd.li/i/18439138',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18439138',
+            'https://i.gkd.li/i/22924866',
+          ],
         },
         {
           key: 3,
@@ -152,6 +157,27 @@ export default defineGkdApp({
           matches:
             '@ImageView[childCount=0][visibleToUser=true][width<120 && height<120] < FrameLayout < FrameLayout < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/20745872',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.AppStarterActivity',
+          matches:
+            '@ViewGroup[childCount=0][clickable=true][visibleToUser=true][width<150 && height<150] < ViewGroup[childCount=1] < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/f1c596e5-36b6-485b-aa55-a235d57bddf9',
+          snapshotUrls: 'https://i.gkd.li/i/22699207',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.activity.AppStarterActivity',
+          matches:
+            '@ImageView[childCount=0][visibleToUser=true][width<150 && height<150] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/eb920de7-7f15-4398-b9a9-99ece0ab4ed6',
+          snapshotUrls: 'https://i.gkd.li/i/22699223',
         },
       ],
     },
@@ -225,22 +251,6 @@ export default defineGkdApp({
           matches: '[desc$="不再提示"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e3d904e1-dfe5-4d12-b8c8-b1eead8459c9',
           snapshotUrls: 'https://i.gkd.li/i/18428240',
-        },
-      ],
-    },
-    {
-      key: 7,
-      name: '全屏广告-高品质音质弹窗',
-      desc: '点击关闭',
-      rules: [
-        {
-          key: 1,
-          activityIds:
-            'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
-          matches:
-            '[id="android:id/content"] >4 FrameLayout[childCount=6] > FrameLayout[childCount=1][text=null][index=1] > ImageView[visibleToUser=true][childCount=0]',
-          exampleUrls: 'https://e.gkd.li/bde2d326-6b44-4d4d-b8f6-8bfeb97d7e29',
-          snapshotUrls: 'https://i.gkd.li/i/16914135',
         },
       ],
     },

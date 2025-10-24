@@ -96,6 +96,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/e2e7b175-20f6-4e12-a24a-504364a8b765',
           snapshotUrls: 'https://i.gkd.li/i/18095705',
         },
+        {
+          key: 8,
+          fastQuery: true,
+          action: 'back',
+          activityIds: '.MainActivity',
+          matches:
+            '[desc="开通前请阅读"] -8 @ImageView[clickable=true][childCount=0][visibleToUser=true] < View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/21820334',
+        },
       ],
     },
     {
@@ -133,6 +142,23 @@ export default defineGkdApp({
             '@View[desc="确认登录"][visibleToUser=true] <5 View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/b84f0579-952b-4c6c-9706-dc300eb4a555',
           snapshotUrls: 'https://i.gkd.li/i/20521452',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '全屏广告-相册自动备份弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<100 && height<100] +2 [desc="开启相册自动备份"]',
+          exampleUrls: 'https://e.gkd.li/e86a59e7-9329-4931-9bdd-5f6b4f896294',
+          snapshotUrls: 'https://i.gkd.li/i/21326468',
         },
       ],
     },

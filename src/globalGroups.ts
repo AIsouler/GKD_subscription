@@ -24,11 +24,13 @@ export default defineGkdGlobalGroups([
         key: 0,
         // 防止误触
         excludeMatches:
-          '([text*="搜索" || text^="猜你想" || text^="猜你喜欢" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit"][visibleToUser=true])',
+          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])',
         anyMatches: [
           '[text*="跳过"][text.length<10][visibleToUser=true]',
-          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*")) || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '@View[clickable=true][childCount=0] - [text="互动广告"][visibleToUser=true]',
+          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && text!="帮助" && text!="取消") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         ],
+        snapshotUrls: 'https://i.gkd.li/i/21617612', // 互动开屏广告
         excludeSnapshotUrls: [
           // 避免误触
           'https://i.gkd.li/i/17108010', // text!="帮助"
@@ -37,6 +39,11 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/19952277', // text="Submit"
           'https://i.gkd.li/i/20946730', // text="设置"
           'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
+          'https://i.gkd.li/i/21617520', // text!*="视频"
+          'https://i.gkd.li/i/22634992', // text$="登录"
+          'https://i.gkd.li/i/23051921', // [text^="选择"][text*="偏好"]
+          'https://i.gkd.li/i/23052289', // text="选好了"  text*="行业"
+          'https://i.gkd.li/i/23122415', // text="书签"
         ],
       },
       {

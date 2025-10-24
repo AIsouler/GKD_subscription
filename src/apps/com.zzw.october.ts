@@ -27,6 +27,29 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/2033b8e2-8234-486d-ba8a-e7d140215d88',
           snapshotUrls: 'https://i.gkd.li/i/18235996',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.beizi.ad.v2.activity.BeiZiNewInterstitialActivity',
+          matches: '[vid="beizi_interstitial_ad_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23003165',
+        },
+        {
+          // 点击广告进入的详情页
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.beizi.ad.AdActivity',
+          matches: '[vid="close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23002976',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.octopus.ad.AdActivity',
+          matches:
+            '@ImageView[clickable=true][width<90 && height<90] - [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/23021515',
+        },
       ],
     },
     {
@@ -65,6 +88,18 @@ export default defineGkdApp({
           matches: '[text="暂不领取"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/fe4b163a-bb6c-4337-b095-4bdf1219e9b2',
           snapshotUrls: 'https://i.gkd.li/i/19485920',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '局部广告-浮标广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.zzw.october.MainActivity',
+          matches: '[vid="channel_banner_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23003170',
         },
       ],
     },

@@ -14,8 +14,14 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.xiaomi.fitness.baseui.common.CommonBaseActivity',
-          matches: '[id="com.mi.health:id/nextView"][text="下次再说"]',
-          snapshotUrls: 'https://i.gkd.li/i/13258813',
+          matches: [
+            '[text="评分"][visibleToUser=true]',
+            '[text="下次再说"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13258813',
+            'https://i.gkd.li/i/21979253',
+          ],
         },
       ],
     },

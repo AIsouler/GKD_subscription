@@ -365,5 +365,82 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 24,
+      name: '全屏广告-视频推荐广告',
+      desc: '通过返回操作跳过广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: 'FlattenUIText[text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/20035670',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          action: 'back',
+          activityIds: '.main.MainActivity',
+          matches: [
+            '([text$="广告"][vid="desc"][visibleToUser=true]) || (ImageView[childCount=0] + [text="应用" || text="购物" || text="游戏"][visibleToUser=true])',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/21142063',
+            'https://i.gkd.li/i/21142589',
+            'https://i.gkd.li/i/21142249',
+            'https://i.gkd.li/i/21142871',
+          ],
+        },
+      ],
+    },
+    {
+      key: 25,
+      name: '局部广告-游戏直播间浮标广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.live.LivePlayActivity',
+          matches:
+            '@View[clickable=true][width<80&&height<80] +2 View >4 [text="立即查看"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7c97fdc7-9de0-403d-9817-e43da0eb8a31',
+          snapshotUrls: 'https://i.gkd.li/i/22743677',
+        },
+      ],
+    },
+    {
+      key: 26,
+      name: '功能类-自动领取别人发的红包',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches:
+            'FrameLayout[getChild(0).desc$="的头像"] + ViewGroup >3 @FrameLayout > [text="抖音红包"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6c963e99-1a74-40a5-bf84-a9353c27acdb',
+          snapshotUrls: 'https://i.gkd.li/i/22761277',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22849224', // 自己发的不领取
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          fastQuery: true,
+          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
+          matches:
+            '@FrameLayout[clickable=true][width=height] -2 [text="大吉大利"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e8b822c1-c289-4802-85a4-994093024b24',
+          snapshotUrls: 'https://i.gkd.li/i/22761510',
+        },
+        {
+          preKeys: [1],
+          fastQuery: true,
+          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
+          matches: '[vid="iv_back"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f92c1412-8111-40bc-8188-24f2c004c55c',
+          snapshotUrls: 'https://i.gkd.li/i/22761554',
+        },
+      ],
+    },
   ],
 });

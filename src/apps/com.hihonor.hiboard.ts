@@ -13,14 +13,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            '[vid="ll_ad_flag_layout"] > [vid="iv_close"][visibleToUser=true]',
+          matches: '[vid="ll_ad_flag_layout"] > [vid="iv_close"]',
           exampleUrls: 'https://e.gkd.li/3ca8edb5-ba16-406c-8319-7bc5389f6e31',
           snapshotUrls: 'https://i.gkd.li/i/19670830',
         },
         {
           preKeys: [0],
-          matches: '[text="不感兴趣"][visibleToUser=true]',
+          matches: '[text="不感兴趣"]',
           exampleUrls: 'https://e.gkd.li/eaea2f1e-741a-4171-9cc1-8a2c86848d93',
           snapshotUrls: 'https://i.gkd.li/i/19670664',
         },

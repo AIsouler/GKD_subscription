@@ -5,13 +5,6 @@ export default defineGkdApp({
   name: '微博',
   groups: [
     {
-      key: 5,
-      name: '局部广告-卡片广告',
-      desc: '点击右上角关闭',
-      fastQuery: true,
-      rules: [],
-    },
-    {
       key: 8,
       name: '全屏广告-弹窗广告',
       fastQuery: true,
@@ -84,6 +77,7 @@ export default defineGkdApp({
       activityIds: [
         '.feed.DetailWeiboActivity',
         '.feed.detailrefactor.DetailPageActivity',
+        '.feed.SubCommentActiity',
       ],
       rules: [
         {
@@ -92,6 +86,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13852321',
             'https://i.gkd.li/i/19526000',
+            'https://i.gkd.li/i/21828244',
           ],
         },
         {
@@ -116,10 +111,26 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/6952c2d1-65b5-4419-adb6-ba0f6349801e',
           snapshotUrls: 'https://i.gkd.li/i/19538265',
         },
+        {
+          key: 5,
+          matches: '[vid="iv_ad_x"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/58baa39c-c447-4664-8a39-c058497b9495',
+          snapshotUrls: 'https://i.gkd.li/i/22275086',
+        },
+        {
+          key: 6,
+          matches:
+            'RelativeLayout >7 FrameLayout[childCount=4] > FrameLayout[childCount=1] > @[name$="FrameLayout" || name$="ImageView"][clickable=true][childCount<2][visibleToUser=true][width<50&&height<50] <<n [vid="view_recycler" || vid="tweet_list"]',
+          exampleUrls: 'https://e.gkd.li/fc3b2c98-4540-4ec1-94b2-24abf90212c9',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21166775',
+            'https://i.gkd.li/i/21828269',
+          ],
+        },
 
         // 预留key
         {
-          preKeys: [0, 1, 3, 4],
+          preKeys: [0, 1, 3, 4, 5, 6],
           key: 90,
           matchRoot: true,
           anyMatches: [
@@ -133,6 +144,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14730274',
             'https://i.gkd.li/i/19551451',
             'https://i.gkd.li/i/20710958',
+            'https://i.gkd.li/i/21828246',
           ],
         },
       ],
@@ -290,6 +302,26 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19551857',
             'https://i.gkd.li/i/19552282',
           ],
+        },
+      ],
+    },
+    {
+      key: 27,
+      name: '分段广告-评论区荐读',
+      fastQuery: true,
+      activityIds: '.feed.detailrefactor.DetailPageActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@[vid="ll_close"] > [text="荐读"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bab872e2-6967-49f5-8443-46af8f225d8f',
+          snapshotUrls: 'https://i.gkd.li/i/21828298',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="对此内容不感兴趣"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4d35d427-f6ab-42bf-a369-65c5b602fcdf',
+          snapshotUrls: 'https://i.gkd.li/i/21828292',
         },
       ],
     },

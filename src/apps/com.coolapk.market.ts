@@ -36,12 +36,12 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          excludeMatches:
-            '[id="com.coolapk.market:id/item_view" || vid="card_view"]',
-          matches: '[text*="跳过"][text.length<5][visibleToUser=true]',
+          matches:
+            '[id!="com.coolapk.market:id/item_view" && vid!="card_view"] > [text*="跳过"][text.length<10][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12917990',
             'https://i.gkd.li/i/13211392',
+            'https://i.gkd.li/i/23097140',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/13247733',
@@ -60,6 +60,7 @@ export default defineGkdApp({
         '.view.main.MainActivity',
         '.view.node.DynamicNodePageActivity',
         '.view.base.SimpleAlphaActivity',
+        '.view.search.SuperSearchResultActivity',
       ],
       rules: [
         {
@@ -72,6 +73,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19004663',
             'https://i.gkd.li/i/19005176',
             'https://i.gkd.li/i/20776874',
+            'https://i.gkd.li/i/21693917',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/14996359',
@@ -82,8 +84,9 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
+          key: 1,
           anyMatches: [
-            '@[clickable=true] > [text="不感兴趣"][visibleToUser=true]',
+            '@[clickable=true] >(1,2) [text="不感兴趣"][visibleToUser=true]',
             '[text="不感兴趣"][clickable=true][visibleToUser=true]',
           ],
           snapshotUrls: [
@@ -92,22 +95,39 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19643262',
             'https://i.gkd.li/i/19534649',
             'https://i.gkd.li/i/20776872',
+            'https://i.gkd.li/i/21693916',
+            'https://i.gkd.li/i/23046625',
           ],
+        },
+        {
+          preKeys: [1], // 疑似酷安旧版本bug，点击不感兴趣后会再出现一个弹窗
+          matches: '[text="不感兴趣"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/21036817',
         },
       ],
     },
     {
       key: 1,
       name: '更新提示',
-      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
       rules: [
         {
+          key: 0,
           action: 'back',
+          fastQuery: true,
+          activityIds: '.view.main.MainActivity',
+          matches: '[text="立即更新"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15511206',
+        },
+        {
+          key: 1,
+          matchTime: 10000,
           activityIds: '.view.main.MainActivity',
           matches: '[text="立即更新"]',
-          snapshotUrls: 'https://i.gkd.li/i/15511206',
+          exampleUrls: 'https://e.gkd.li/19b5d743-3632-4c64-8e51-b55c85070512',
+          snapshotUrls: 'https://i.gkd.li/i/23096630',
         },
       ],
     },

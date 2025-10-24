@@ -6,19 +6,16 @@ body:
     attributes:
       value: |
         ## 在提交问题之前，请您务必完成以下操作，否则你的issue可能会根据情况直接被关闭！！！
-        ## 在提交问题之前，请您务必完成以下操作，否则你的issue可能会根据情况直接被关闭！！！
-        ## 在提交问题之前，请您务必完成以下操作，否则你的issue可能会根据情况直接被关闭！！！
 
         1. **提供 误触/出现问题 界面的快照（不要提供截图，截图没有任何作用，不要使用截屏快照），并说明是哪一条规则 误触/出现问题，快照获取方式如下图**
         2. 如果是需要点击多次才能关闭的情况，那么必须提供每一次点击页面的快照
-        3. 检查使用的是否是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases/latest)
+        3. 检查使用的是否是 [最新版订阅](https://github.com/AIsouler/GKD_subscription/releases/latest) 和 [最新版GKD](https://github.com/gkd-kit/gkd/releases)
         4. 检查这个问题是否属于 [本项目维护的规则](https://github.com/AIsouler/GKD_subscription) 导致的
         5. 如果你的issue被受理，受理者提出的问题、要求，应在3日内予以回复，否则会被关闭
-        6. 上传文件时请等待文件名前面的 Uploading 消失后再提交，否则文件将会上传失败
 
         #### 检查问题是否属于以下几种之一，如果属于请说明是哪一种（误触问题可忽略这条）
         1. 规则不生效，但是截取快照时生效/回到桌面（不杀后台）再进入软件后生效
-        2. 规则触发了（有点击提示），但实际并不能生效（没有达到预期行为）
+        2. 规则触发了（有点击提示），但实际并不能生效
   - type: textarea
     id: bug-1
     attributes:

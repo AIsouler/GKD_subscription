@@ -42,9 +42,15 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.luna.biz.ad.AdActivity',
+          activityIds: [
+            'com.luna.biz.ad.AdActivity',
+            'com.luna.biz.main.main.MainActivity',
+          ],
           matches: '@[text="稍后再说"] + [text="立即升级"]',
-          snapshotUrls: 'https://i.gkd.li/i/14790279',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14790279',
+            'https://i.gkd.li/i/21427972',
+          ],
         },
       ],
     },
@@ -209,6 +215,21 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/8a427d5f-680b-4562-9cf3-90b1db82df0f',
           snapshotUrls: 'https://i.gkd.li/i/13674376',
+        },
+      ],
+    },
+    {
+      key: 12,
+      name: '其他-关闭[更多直播]推荐',
+      desc: '直播间出现[更多直播]时点击右上角关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.luna.biz.live.plugin.LunaDefaultLivePlayerActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] <n RelativeLayout + FrameLayout >4 [text="更多直播"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/148466b5-9769-4b79-b648-f2cf7719e3e7',
+          snapshotUrls: 'https://i.gkd.li/i/22922565',
         },
       ],
     },

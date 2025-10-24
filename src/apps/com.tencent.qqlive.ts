@@ -42,6 +42,8 @@ export default defineGkdApp({
       activityIds: [
         '.ona.activity.SplashHomeActivity',
         '.ona.activity.VideoDetailActivity',
+        '.ona.activity.origin.OriginIconHomeActivity',
+        '.kmm.VideoDetailKmmActivityBk',
       ],
       rules: [
         {
@@ -67,6 +69,8 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19667496',
             'https://i.gkd.li/i/19667620',
             'https://i.gkd.li/i/19667647',
+            'https://i.gkd.li/i/21139117',
+            'https://i.gkd.li/i/21152861',
           ],
         },
         {
@@ -80,13 +84,48 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0, 1, 2],
+          key: 3,
+          matches:
+            '[desc="poster_inner_round_cell"] >5 RelativeLayout[childCount=5] > ImageView[clickable=true][childCount=0][visibleToUser=true][index=parent.childCount.minus(1)][width<180 && height<80]',
+          exampleUrls: 'https://e.gkd.li/18c89ee9-fcd5-43eb-805a-ac9e223e3cdc',
+          snapshotUrls: 'https://i.gkd.li/i/21139064',
+        },
+        {
+          key: 4,
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true][width<60 && height<60] -(4,5) [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/1d81db1b-a722-4800-b6b7-4e5edb470984',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21139431',
+            'https://i.gkd.li/i/21152859',
+          ],
+        },
+        {
+          key: 5,
+          matches:
+            'View[childCount=0][width<180 && height<80] < @View[clickable=true][childCount=1][visibleToUser=true] +2 [text*="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/21152960',
+        },
+        {
+          key: 6,
+          matches:
+            'DetachableComposeView >2 ScrollView > View[childCount=4][visibleToUser=true] > View + TextView[childCount=1][text!=null][getChild(0).width<120][getChild(0).height<80] + View[childCount=1][getChild(0).text!=null] + View[clickable=true][childCount=0]',
+          exampleUrls: 'https://e.gkd.li/e4e6aca1-e7cb-4346-980b-638f26f61864',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21379340',
+            'https://i.gkd.li/i/21410460',
+            'https://i.gkd.li/i/21410716',
+          ],
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4, 5, 6],
           key: 50,
           fastQuery: true,
-          matches: '[text="不感兴趣"][visibleToUser=true]',
+          matches: '[text="直接关闭"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/19667198',
             'https://i.gkd.li/i/19667244',
+            'https://i.gkd.li/i/21139034',
           ],
         },
         {
@@ -96,6 +135,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/19667102',
             'https://i.gkd.li/i/19666759',
+            'https://i.gkd.li/i/21152903',
           ],
         },
       ],
@@ -104,7 +144,10 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-视频播放时的广告',
       desc: '自动点击 跳过/关闭广告',
-      activityIds: '.ona.activity.VideoDetailActivity',
+      activityIds: [
+        '.ona.activity.VideoDetailActivity',
+        '.kmm.VideoDetailKmmActivityBk',
+      ],
       rules: [
         {
           key: 2,
@@ -115,6 +158,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13526547',
             'https://i.gkd.li/i/20691266',
+            'https://i.gkd.li/i/21152927',
           ],
         },
         {
@@ -142,6 +186,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18476383',
             'https://i.gkd.li/i/20038310',
           ],
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          matches:
+            '@View[clickable=true][childCount=0][width<100 && height<100] <8 View < DetachableComposeView < FrameLayout <2 [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/b0f4982a-ac12-481c-bccb-f8b7a8b14c46',
+          snapshotUrls: 'https://i.gkd.li/i/21175698',
         },
       ],
     },
@@ -244,11 +296,32 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          activityIds: '.ona.activity.SplashHomeActivity',
+          activityIds: [
+            '.ona.activity.SplashHomeActivity',
+            '.ona.activity.origin.OriginIconHomeActivity',
+          ],
           matches:
-            '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<250 && height<150] <3 RelativeLayout < FrameLayout <2 FrameLayout < FrameLayout <2 ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <5 [id="android:id/content"]',
+            '@[name$="ImageView" || name$="FrameLayout" ][childCount<2][clickable=true][visibleToUser=true][width<250 && height<150] <3 RelativeLayout < FrameLayout <2 FrameLayout < FrameLayout <2 ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(4,5) [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/0ea465ad-e4e4-4af5-92a4-2d71e44845f4',
-          snapshotUrls: 'https://i.gkd.li/i/19667104',
+          snapshotUrls: [
+            'https://i.gkd.li/i/19667104',
+            'https://i.gkd.li/i/21327634',
+            'https://i.gkd.li/i/23121852',
+          ],
+        },
+        {
+          key: 2,
+          activityIds: [
+            '.ona.activity.VideoDetailActivity',
+            '.kmm.VideoDetailKmmActivityBk',
+          ],
+          matches:
+            'RelativeLayout > ComposeView > View > View[clickable=true][childCount=0][visibleToUser=true][index=parent.childCount.minus(1)]',
+          exampleUrls: 'https://e.gkd.li/23606b5d-a8e9-4848-9b5a-059e7ecb08af',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22870972',
+            'https://i.gkd.li/i/22894605',
+          ],
         },
       ],
     },
@@ -282,6 +355,14 @@ export default defineGkdApp({
             '@ImageView[id=null][text=null][desc=null][clickable=true][visibleToUser=true][width<150&&height<150] <2 FrameLayout[desc="float_widget_activity"] < FrameLayout <3 FrameLayout <3 [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/8cac3233-7ead-4f5e-9126-51a195788276',
           snapshotUrls: 'https://i.gkd.li/i/19667028',
+        },
+        {
+          key: 2,
+          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
+          matches:
+            '@RelativeLayout[clickable=true][childCount=2] < [desc="float_attent_banner_float_view_id"]',
+          exampleUrls: 'https://e.gkd.li/ad4ea4f1-22e7-4e9b-b194-8cdddda5c069',
+          snapshotUrls: 'https://i.gkd.li/i/21139028',
         },
       ],
     },
