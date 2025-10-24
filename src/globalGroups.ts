@@ -41,7 +41,7 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
           'https://i.gkd.li/i/21617520', // text!*="视频"
           'https://i.gkd.li/i/22634992', // text$="登录"
-          'https://i.gkd.li/i/23051921', // [text*="选择"][text*="偏好"]
+          'https://i.gkd.li/i/23051921', // [text^="选择"][text*="偏好"]
           'https://i.gkd.li/i/23052289', // text="选好了"  text*="行业"
           'https://i.gkd.li/i/23122415', // text="书签"
         ],
