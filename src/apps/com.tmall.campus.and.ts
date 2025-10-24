@@ -56,5 +56,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '权限提示-通知权限',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: ['[text="获取通知权限"]', '[text="再想想"]'],
+          snapshotUrls: 'https://i.gkd.li/i/23124558',
+        },
+      ],
+    },
   ],
 });
