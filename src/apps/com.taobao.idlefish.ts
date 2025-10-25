@@ -70,7 +70,7 @@ export default defineGkdApp({
           activityIds:
             'com.taobao.idlefish.search_implement.SearchResultActivity',
           matches:
-            '@TextView[width<250 && height<250] - [text="收下红包"] <<n [vid="fish_layer_container_id"]',
+            '@TextView[width<250 && height<250] - [childCount=0][text="收下红包"] <<n [vid="fish_layer_container_id"]',
           snapshotUrls: 'https://i.gkd.li/i/23125419',
         },
       ],
