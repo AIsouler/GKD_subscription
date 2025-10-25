@@ -100,9 +100,8 @@ export default defineGkdApp({
             'com.taobao.tao.TBMainActivity',
           ],
           matches:
-            '@LinearLayout[clickable=true] + * ->1 [desc.length>0 || text.length>0] +(n+1) FrameLayout > TextView[text="퀺"]',
+            '[desc.length>0 || text.length>0] + @LinearLayout[clickable=true] + FrameLayout > TextView[text="퀺"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12642795',
             'https://i.gkd.li/i/13197877',
             'https://i.gkd.li/i/23140899',
           ],
