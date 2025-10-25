@@ -76,8 +76,11 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
-          matches: '[id="com.sinovatech.unicom.ui:id/home_xuanfu_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13930543',
+          matches: '[vid="home_xuanfu_close" || vid="home_drag_view_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13930543',
+            'https://i.gkd.li/i/23141106',
+          ],
         },
       ],
     },
