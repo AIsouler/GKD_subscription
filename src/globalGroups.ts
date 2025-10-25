@@ -24,7 +24,7 @@ export default defineGkdGlobalGroups([
         key: 0,
         // 防止误触
         excludeMatches:
-          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])',
+          '([text*="搜索" || text="历史记录" || text$="在搜" || text$="在讨论"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])',
         anyMatches: [
           '[text*="跳过"][text.length<10][visibleToUser=true]',
           '@View[clickable=true][childCount=0] - [text="互动广告"][visibleToUser=true]',
@@ -44,6 +44,7 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/23051921', // [text^="选择"][text*="偏好"]
           'https://i.gkd.li/i/23052289', // text="选好了"  text*="行业"
           'https://i.gkd.li/i/23122415', // text="书签"
+          'https://i.gkd.li/i/23141429', // text$="在讨论"
         ],
       },
       {
