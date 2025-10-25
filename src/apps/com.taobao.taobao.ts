@@ -95,11 +95,15 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.taobao.tao.welcome.Welcome',
-          matches: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
+          activityIds: [
+            'com.taobao.tao.welcome.Welcome',
+            'com.taobao.tao.TBMainActivity',
+          ],
+          matches:
+            '[desc.length>0 || text.length>0] + @LinearLayout[clickable=true] + FrameLayout > TextView[text="퀺"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12642795',
             'https://i.gkd.li/i/13197877',
+            'https://i.gkd.li/i/23140899',
           ],
         },
       ],
