@@ -102,6 +102,21 @@ export default defineGkdApp({
           matches: '[vid="anythink_myoffer_btn_close_id"]',
           snapshotUrls: 'https://i.gkd.li/i/22868736',
         },
+        {
+          key: 10,
+          fastQuery: true,
+          activityIds: '.lut.act.LutMainActivity',
+          matches: '@[text="关闭"] < * +n * > [text*="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/23125533',
+        },
+        {
+          key: 11,
+          fastQuery: true,
+          activityIds: '.lut.act.LutMainActivity',
+          matches:
+            '@ImageView[width<140 && height<140] - * > [text^="请允许"][text$="安装应用"]',
+          snapshotUrls: 'https://i.gkd.li/i/23125594',
+        },
       ],
     },
     {
