@@ -55,9 +55,6 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-红包弹窗',
       desc: '点击关闭',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -66,6 +63,15 @@ export default defineGkdApp({
           matches:
             'WebView[text="Rax App"] > [id="root"] >6 View[index=2][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14551046',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.taobao.idlefish.search_implement.SearchResultActivity',
+          matches:
+            '@TextView[width<250 && height<250] - [childCount=0][text="收下红包"] <<n [vid="fish_layer_container_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/23125419',
         },
       ],
     },
