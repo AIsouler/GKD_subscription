@@ -7,22 +7,14 @@ export default defineGkdApp({
     {
       key: 5,
       name: '评价提示-评论区满意度评价',
-      fastQuery: true,
       rules: [
-        {
-          key: 0,
-          activityIds: 'com.bilibili.video.story.StoryVideoActivity',
-          matches:
-            '[text="对当前的评论区满意吗？"] + [id="com.bilibili.app.in:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13115189',
-        },
         {
           key: 1,
           fastQuery: true,
           activityIds:
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           matches:
-            '@View[childCount=0][width<180 && height<180] - [text="你觉得评论氛围是否友好？"] <<n [vid="compose_view"]',
+            '@View[childCount=0][width<180 && height<180] - [childCount=0][text="你觉得评论氛围是否友好？"] <<n [vid="compose_view"]',
           snapshotUrls: 'https://i.gkd.li/i/23125454',
         },
       ],
