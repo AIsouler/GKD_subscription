@@ -12,6 +12,9 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.activity.ClassActivity',
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           matches:
             '@[text="确认"][clickable=true] < * - [text^="系统检查到你离开了考试页面"] <n Dialog <n * <<3 [vid="pp_about_content"]',
           snapshotUrls: 'https://i.gkd.li/i/23150673',
