@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.oplus.appdetail',
-  name: '应用安装器',
+  name: 'OPPO/一加应用安装器',
   groups: [
     {
       key: 1,
@@ -11,16 +11,20 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击[继续安装]',
-          activityIds:
+          activityIds: [
             'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
+            '.modelv2.parsing.PackageParsingV2Activity',
+          ],
           excludeMatches:
             '[id="com.oplus.appdetail:id/view_scanning_and_tip_view_tv_title"][text^="正在扫描"]',
           matches:
-            '[id="com.oplus.appdetail:id/view_bottom_guide_continue_install_btn"]',
+            '[id="com.oplus.appdetail:id/view_bottom_guide_continue_install_btn" || text="继续安装"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13038560', // 使用 excludeMatches，扫描病毒阶段不进行点击
             'https://i.gkd.li/i/13054204',
             'https://i.gkd.li/i/13038570',
+            'https://i.gkd.li/i/23146291',
+            'https://i.gkd.li/i/23146289',
           ],
         },
         {
