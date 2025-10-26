@@ -74,5 +74,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '权限提示-应用使用情况',
+      desc: '点击[暂不]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.sleep.SleepHistoryActivity',
+          matches: [
+            '[text^="授权“OPPO 健康”应用访问应用使用情况"]',
+            '[text="暂不"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23146074',
+        },
+      ],
+    },
   ],
 });
