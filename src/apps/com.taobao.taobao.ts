@@ -248,10 +248,15 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
+          activityIds: [
             'com.taobao.android.detail2.core.framework.floatwindow.permission.PermissionActivity',
-          matches: ['[text*="悬浮窗权限"]', '[text="否"]'],
-          snapshotUrls: 'https://i.gkd.li/i/13588165',
+            'com.taobao.taolive.sdk.permisson.PermissionActivity',
+          ],
+          matches: ['[text*="悬浮窗权限"]', '[text="否" || text="暂不"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13588165',
+            'https://i.gkd.li/i/23146078',
+          ],
         },
       ],
     },
