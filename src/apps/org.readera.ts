@@ -12,8 +12,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.MainActivity',
-          matches:
-            '[desc="关闭"][clickable=true][childCount=0] < FrameLayout + LinearLayout >3 [text*="通过社交网络分享这款应用"]',
+          action: 'back',
+          matches: '[text*="通过社交网络分享这款应用"]',
           snapshotUrls: 'https://i.gkd.li/i/22950138',
         },
       ],
