@@ -26,5 +26,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '功能类-流量更新点击继续下载',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.android.updater.UpdateActivity',
+          matches: [
+            '[text^="您当前正在使用数据网络，继续下载可能会产生流量费用"]',
+            '[text="继续下载"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23182185',
+        },
+      ],
+    },
   ],
 });
