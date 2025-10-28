@@ -554,5 +554,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 30,
+      name: '其他-滑动验证时返回',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Main',
+          matches:
+            '[childCount=0][text="为保障您的正常访问请进行验证"] <<n [id="com.alipay.multiplatform.phone.xriver_integration:id/h5_trans_progress_rl"]',
+          exampleUrls: 'https://e.gkd.li/f2571f51-3a8c-4e47-a7c5-3363375c1b78',
+          snapshotUrls: 'https://i.gkd.li/i/23158302',
+        },
+      ],
+    },
   ],
 });
