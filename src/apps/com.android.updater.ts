@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '更新提示-智能更新弹窗',
+      name: '功能类-不开启自动更新',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
