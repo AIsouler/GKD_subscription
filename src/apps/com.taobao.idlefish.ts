@@ -53,7 +53,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '全屏广告-红包弹窗',
+      name: '全屏广告',
       desc: '点击关闭',
       rules: [
         {
@@ -72,6 +72,16 @@ export default defineGkdApp({
           matches:
             '@TextView[width<250 && height<250] - [childCount=0][text="收下红包"] <<n [vid="fish_layer_container_id"]',
           snapshotUrls: 'https://i.gkd.li/i/23125419',
+        },
+        {
+          key: 2,
+          name: '夜市氛围广告',
+          fastQuery: true,
+          activityIds:
+            'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity',
+          matches:
+            '@TextView[width<210 && height<210][clickable=true] <<n WebView[childCount!=0][text="夜市氛围弹框"] <<n [vid="fish_layer_container_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/23183586',
         },
       ],
     },
