@@ -14,8 +14,11 @@ export default defineGkdApp({
           activityIds:
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           matches:
-            '@View[childCount=0][width<180 && height<180] - [childCount=0][text="你觉得评论氛围是否友好？"] <<n [vid="compose_view"]',
-          snapshotUrls: 'https://i.gkd.li/i/23125454',
+            '@View[childCount=0][width<180 && height<180] - [childCount=0][text~="你.+评论.*氛围.+？"] <<n [vid="compose_view"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23125454',
+            'https://i.gkd.li/i/23182150',
+          ],
         },
       ],
     },
