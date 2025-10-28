@@ -386,6 +386,7 @@ export const openAdWhiteListAppIDs = new Set([
 export const updateWhiteListAppIDs = new Set([
   ...whiteListAppIDs,
   'com.hihonor.phoneservice', // 我的荣耀
+  'com.sankuai.meituan', // 美团 https://i.gkd.li/i/23165455
 ]);
 
 // 青少年模式白名单
