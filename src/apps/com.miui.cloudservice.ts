@@ -47,5 +47,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '权限提示-通知权限',
+      rules: [
+        {
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.ui.MiCloudMainActivity',
+          matches: [
+            '[text$="开启“通知”权限。"]',
+            '[text="取消"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23165486',
+        },
+      ],
+    },
   ],
 });
