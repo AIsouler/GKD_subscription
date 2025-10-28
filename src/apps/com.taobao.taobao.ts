@@ -344,5 +344,35 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 22,
+      name: '局部广告-搜索页广告',
+      desc: '自动隐藏猜你想搜、热榜',
+      rules: [
+        {
+          key: 0,
+          name: '猜你想搜',
+          fastQuery: true,
+          activityIds: 'com.taobao.search.uniform.SearchActivity',
+          matches: '[vid="hideBtn"][desc="隐藏"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23165368', // 隐藏前
+            'https://i.gkd.li/i/23165384', // 隐藏后
+          ],
+        },
+        {
+          key: 1,
+          name: '热榜',
+          fastQuery: true,
+          activityIds: 'com.taobao.search.uniform.SearchActivity',
+          matches:
+            '@[desc="隐藏榜单"][clickable=true] <<n [vid="dynamic_container"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23165418', // 隐藏前
+            'https://i.gkd.li/i/23165427', // 隐藏后
+          ],
+        },
+      ],
+    },
   ],
 });
