@@ -41,5 +41,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-不开启流量自动更新',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.android.updater.UpdateActivity',
+          matches: ['[text="开启数据网络自动下载"]', '[text="不开启"]'],
+          snapshotUrls: 'https://i.gkd.li/i/23182175',
+        },
+      ],
+    },
   ],
 });
