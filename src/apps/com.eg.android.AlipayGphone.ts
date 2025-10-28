@@ -560,6 +560,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          action: 'back',
           activityIds:
             'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Main',
           matches:
