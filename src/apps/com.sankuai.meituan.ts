@@ -14,16 +14,16 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: [
-            'com.meituan.android.upgrade.ui.f',
             'com.meituan.android.upgrade.UpgradeDialogActivity',
             'com.meituan.android.pt.homepage.activity.MainActivity',
           ],
-          matches: 'ImageView[vid="update_logo"] + Button[vid="btn_close"]',
+          matches: [
+            '[vid="update_logo" || text="立即升级"]',
+            '[vid="btn_close" || text="暂不升级"]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/i/12614559',
-            'https://i.gkd.li/i/12673132',
-            'https://i.gkd.li/i/13292635',
             'https://i.gkd.li/i/18375410',
+            'https://i.gkd.li/i/23165455',
           ],
         },
       ],
