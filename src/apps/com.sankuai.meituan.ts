@@ -159,6 +159,21 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/20bbae61-859b-478d-9032-8213c79dec39',
           snapshotUrls: 'https://i.gkd.li/i/16632959',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.sankuai.waimai.store.drug.home.NewDrugHomeActivity',
+          matches:
+            '@ImageView[width<80 && height<80][clickable=true] <n * < [vid="novel_float_view_new"]',
+          snapshotUrls: 'https://i.gkd.li/i/23165473',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.sankuai.waimai.store.drug.home.NewDrugHomeActivity',
+          matches: '[vid="live_float_view_container"] > [vid="close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/23165473',
+        },
       ],
     },
     {
