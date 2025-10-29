@@ -142,7 +142,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 3,
+      key: 5,
       name: '权限提示-通知权限',
       rules: [
         {
