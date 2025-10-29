@@ -141,5 +141,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '权限提示-通知权限',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.pu.activity.act.ActivityApplyResult',
+          matches: ['[text^="打开系统消息通知"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/23206833',
+        },
+      ],
+    },
   ],
 });
