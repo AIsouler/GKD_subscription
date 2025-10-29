@@ -71,5 +71,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '评价提示-客服',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.xiaomi.miot.store.mirn.RNMainActivity',
+          matches:
+            'ImageView < @ViewGroup[clickable=true] - [text^="请对"][text$="进行评价"]',
+        },
+      ],
+    },
   ],
 });
