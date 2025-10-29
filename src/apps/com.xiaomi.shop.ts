@@ -80,6 +80,7 @@ export default defineGkdApp({
           activityIds: 'com.xiaomi.miot.store.mirn.RNMainActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true] - [text^="请对"][text$="进行评价"]',
+          snapshotUrls: 'https://i.gkd.li/i/23206873',
         },
       ],
     },
