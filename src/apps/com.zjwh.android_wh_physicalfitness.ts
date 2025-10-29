@@ -194,9 +194,17 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           activityIds: '.mvi.home.HomeActivity',
           matches: '@ImageView[vid="dialog_close"] +n [text*="公告"]',
           snapshotUrls: 'https://i.gkd.li/i/22526467',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.mvi.home.HomeActivity',
+          matches: '[vid="iv"] + [vid="iv_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/23205159',
         },
       ],
     },
