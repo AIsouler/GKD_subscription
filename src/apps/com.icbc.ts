@@ -53,27 +53,20 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '功能类-未登录时自动登录',
+      name: '功能类-未登录时自动点击登录',
       desc: '仅限老年版和英文版可用',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          key: 0,
-          name: '英文版',
           fastQuery: true,
           activityIds: '.activity.main.MainActivity',
           matches:
-            '@[clickable=true] > [text="Click to log in"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/23227516',
-        },
-        {
-          key: 1,
-          name: '老年版',
-          fastQuery: true,
-          activityIds: '.activity.main.MainActivity',
-          matches: '[text="点击登录"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/23227551',
+            '[vid="rl_remit_login_button_background"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23227516',
+            'https://i.gkd.li/i/23227551',
+          ],
         },
       ],
     },
