@@ -39,9 +39,34 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.icbc.activity.web.ICBCWebView',
+          activityIds: [
+            '.activity.web.ICBCWebView',
+            '.activity.main.MainActivity',
+          ],
           matches: '[vid="iv_close_task_center"]',
-          snapshotUrls: 'https://i.gkd.li/i/22616307',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22616307',
+            'https://i.gkd.li/i/23227312',
+          ],
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '功能类-未登录时自动点击登录',
+      desc: '仅限老年版和英文版可用',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.main.MainActivity',
+          matches:
+            '[vid="rl_remit_login_button_background"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23227516',
+            'https://i.gkd.li/i/23227551',
+          ],
         },
       ],
     },
