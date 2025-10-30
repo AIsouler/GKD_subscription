@@ -39,9 +39,15 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.icbc.activity.web.ICBCWebView',
+          activityIds: [
+            '.activity.web.ICBCWebView',
+            '.activity.main.MainActivity',
+          ],
           matches: '[vid="iv_close_task_center"]',
-          snapshotUrls: 'https://i.gkd.li/i/22616307',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22616307',
+            'https://i.gkd.li/i/23227312',
+          ],
         },
       ],
     },
