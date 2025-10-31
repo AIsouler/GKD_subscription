@@ -232,17 +232,17 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '邀请好友弹窗',
           activityIds: [
             'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
             'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           ],
-          matches: 'Button[text="关闭弹窗"][clickable=true]',
+          matches: 'Button[text="关闭弹窗" || desc="关闭弹窗"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13927594',
             'https://i.gkd.li/i/14434154',
             'https://i.gkd.li/i/14456017',
             'https://i.gkd.li/i/13308175',
+            'https://i.gkd.li/i/23256823',
           ],
         },
       ],
@@ -339,17 +339,6 @@ export default defineGkdApp({
           activityIds: '.activity.NewPageActivity',
           matches: '[text="搜索图片同款商品"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/19340768',
-        },
-      ],
-    },
-    {
-      key: 22,
-      name: '功能类-关闭拼单成功后的弹窗',
-      rules: [
-        {
-          activityIds: '.activity.NewPageMaskActivity',
-          matches: '[desc="关闭弹窗"]',
-          snapshotUrls: 'https://i.gkd.li/i/23256823',
         },
       ],
     },
