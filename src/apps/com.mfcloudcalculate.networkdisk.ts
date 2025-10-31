@@ -105,6 +105,14 @@ export default defineGkdApp({
             '[desc="开通前请阅读"] -8 @ImageView[clickable=true][childCount=0][visibleToUser=true] < View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/21820334',
         },
+        {
+          key: 9,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@[id="cj.mobile.wm.allmodules:id/wm_pop_pic_close"] +n * > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/23253580',
+        },
       ],
     },
     {
