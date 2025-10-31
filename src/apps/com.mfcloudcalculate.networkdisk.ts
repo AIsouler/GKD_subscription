@@ -107,8 +107,10 @@ export default defineGkdApp({
         },
         {
           key: 9,
+          fastQuery: true,
           activityIds: '.MainActivity',
-          matches: '[id="cj.mobile.wm.allmodules:id/wm_pop_pic_close"]',
+          matches:
+            '@[id="cj.mobile.wm.allmodules:id/wm_pop_pic_close"] +n * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/23253580',
         },
       ],
