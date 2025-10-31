@@ -128,12 +128,16 @@ export default defineGkdApp({
           activityIds: [
             'com.alipay.mobile.about.ui.AboutAlipayActivity',
             '.AlipayLogin',
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Main',
           ],
-          matches:
-            '[text="版本更新"||text^="Version"] - [id="com.alipay.mobile.antui:id/btn_close"]',
+          matches: [
+            '[text="版本更新" || text^="Version"]',
+            '[id="com.alipay.mobile.antui:id/btn_close" || id="com.alipay.mobile.accountauthbiz:id/close_dialog_button"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13490805',
             'https://i.gkd.li/i/13580594',
+            'https://i.gkd.li/i/23236828',
           ],
         },
         {
