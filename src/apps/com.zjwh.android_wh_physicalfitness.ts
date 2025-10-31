@@ -123,6 +123,7 @@ export default defineGkdApp({
         },
         {
           key: 10,
+          fastQuery: true,
           activityIds: '.mvi.me.VipPayActivity',
           matches:
             '@[desc="top_close_button"][clickable=true] < * + * > [text="广告"]',
