@@ -62,9 +62,15 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: '.main.MainActivity',
+          activityIds: [
+            '.main.MainActivity',
+            'com.tmall.campus.launcher.SplashActivity',
+          ],
           matches: ['[text="获取通知权限"]', '[text="再想想"]'],
-          snapshotUrls: 'https://i.gkd.li/i/23124558',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23124558',
+            'https://i.gkd.li/i/23254348',
+          ],
         },
       ],
     },
