@@ -118,13 +118,14 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.mvi.home.HomeActivity',
           matches:
-            '@Image[text=""][childCount=0][width<70 && height<70] < View[childCount=1] + * >2 [text="淘宝精选广告"] <<n [vid="fl_native"]',
+            '@Image[text=""][childCount=0][width<70 && height<70] < View[childCount=1] + * >2 [childCount=0][text="淘宝精选广告"] <<n [vid="fl_native"]',
           snapshotUrls: 'https://i.gkd.li/i/23254520',
         },
         {
           key: 10,
           activityIds: '.mvi.me.VipPayActivity',
-          matches: '[desc="top_close_button"][clickable=true]',
+          matches:
+            '@[desc="top_close_button"][clickable=true] < * + * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/23255102',
         },
       ],
