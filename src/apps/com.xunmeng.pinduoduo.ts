@@ -342,5 +342,16 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 22,
+      name: '功能类-关闭拼单成功后的弹窗',
+      rules: [
+        {
+          activityIds: '.activity.NewPageMaskActivity',
+          matches: '[desc="关闭弹窗"]',
+          snapshotUrls: 'https://i.gkd.li/i/23256823',
+        },
+      ],
+    },
   ],
 });
