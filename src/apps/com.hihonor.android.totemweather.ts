@@ -27,19 +27,26 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-卡片广告',
       fastQuery: true,
-      activityIds: '.WeatherHome',
+      activityIds: ['.WeatherHome', '.secondpage.activity.SecondPageActivity'],
       rules: [
         {
           key: 0,
-          matches: '[vid="ads_tag"][visibleToUser=true]',
+          matches:
+            '[vid="ads_tag" || vid="ad_flag_close_view"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/7f9ea2fc-bb89-4aeb-b569-9ddbbd95452b',
-          snapshotUrls: 'https://i.gkd.li/i/20116008',
+          snapshotUrls: [
+            'https://i.gkd.li/i/20116008',
+            'https://i.gkd.li/i/23259843',
+          ],
         },
         {
           preKeys: [0],
           matches: '[text="不感兴趣"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/38517cb1-c930-40cb-8c95-a4e1ecd57323',
-          snapshotUrls: 'https://i.gkd.li/i/20116013',
+          snapshotUrls: [
+            'https://i.gkd.li/i/20116013',
+            'https://i.gkd.li/i/23253602',
+          ],
         },
       ],
     },
