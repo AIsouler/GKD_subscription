@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.hihonor.android.totemweather',
-  name: '天气',
+  name: '荣耀天气',
   groups: [
     {
       key: 1,
