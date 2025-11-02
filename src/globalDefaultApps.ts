@@ -287,7 +287,6 @@ export const blackListAppIDs: string[] = [
   'com.samsung.android.thermalguardian',
   'com.samsung.android.calendar',
   'com.samsung.android.app.notes',
-  'com.jv.samsungeshop',
   'com.samsung.android.app.sreminder',
   'com.samsung.android.app.watchmanager',
   'com.samsung.android.app.reminder',
