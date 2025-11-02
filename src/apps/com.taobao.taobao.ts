@@ -40,7 +40,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12648734',
             'https://i.gkd.li/i/12648746',
-            'https://i.gkd.li/i/13198052',
+            'https://i.gkd.li/i/14060521',
             'https://i.gkd.li/i/14905372',
           ],
         },
@@ -92,15 +92,8 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.taobao.android.detail.alittdetail.TTDetailActivity',
           matches:
-            '@Image[width<140 && height<140][clickable=true] - TextView[text.length>0] <n [childCount<6] <<n WebView[vid="poplayer_inner_view"]',
+            '@Image[width<140 && height<140][clickable=true][text!=null][childCount=0] - TextView[text.length>0] <n [childCount<6] <<n WebView[vid="poplayer_inner_view"]',
           snapshotUrls: 'https://i.gkd.li/i/23289412',
-        },
-        {
-          key: 6,
-          fastQuery: true,
-          activityIds: 'com.taobao.tao.welcome.Welcome',
-          matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
-          snapshotUrls: 'https://i.gkd.li/i/14060521',
         },
       ],
     },
