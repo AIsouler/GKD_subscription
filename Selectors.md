@@ -12,7 +12,7 @@
 anyMatches: [
   '[text*="跳过"][text.length<10][visibleToUser=true]',
   '@View[clickable=true][childCount=0] - [text="互动广告"][visibleToUser=true]',
-  '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && text!="帮助" && text!="取消" && text!*="退出") || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+  '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
 ],
 ```
 
