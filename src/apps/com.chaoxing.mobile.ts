@@ -61,5 +61,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 11,
+      name: '功能类-电脑端登录自动确认',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.chaoxing.mobile.webapp.ui.WebAppViewerActivity',
+          matches:
+            'TextView[text="登录"] < @View[clickable=true][desc="登录"] < * - * > View[childCount=0][text="电脑端学习通登录确认"] <<n [vid="web_view_fragment_refresh_layout"]',
+          snapshotUrls: 'https://i.gkd.li/i/23280198',
+        },
+      ],
+    },
   ],
 });
