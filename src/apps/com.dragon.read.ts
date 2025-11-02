@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: '番茄免费小说',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          actionDelay: 1000, // 过早点击可能导致应用闪退
+          matches:
+            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e36d701f-bcee-48d5-99da-1c5301101d9e',
+          snapshotUrls: 'https://i.gkd.li/i/23282793',
+        },
+      ],
+    },
+    {
       key: 0,
       name: '局部广告-阅读页面广告',
       activityIds: [
