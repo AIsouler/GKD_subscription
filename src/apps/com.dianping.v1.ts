@@ -71,7 +71,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           action: 'clickCenter',
           activityIds: 'com.dianping.v1.NovaMainActivity',
@@ -82,7 +82,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 2,
           fastQuery: true,
           activityIds: 'com.dianping.v1.NovaMainActivity',
@@ -90,6 +90,22 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/010c0314-e89b-468f-8143-691925a308a6',
           snapshotUrls: 'https://i.gkd.li/i/14393256',
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '功能类-选择地图时自动点击[更多]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.dianping.nova.picasso.DPPicassoBoxActivity',
+          matches: [
+            '[text="请选择地图"][visibleToUser=true]',
+            '@[clickable=true] > [text^="更多"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/ce751918-dab2-4670-a608-9edbcb3bdc0e',
+          snapshotUrls: 'https://i.gkd.li/i/23289239',
         },
       ],
     },
