@@ -58,5 +58,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '功能类-不开启生物识别支付',
+      desc: '点击[以后再说]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.finsky.billing.acquire.SheetUiBuilderHostActivity',
+          matches: [
+            '[text="要使用指纹或人脸验证购买交易吗？"]',
+            '[text="以后再说"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23289407',
+        },
+      ],
+    },
   ],
 });
