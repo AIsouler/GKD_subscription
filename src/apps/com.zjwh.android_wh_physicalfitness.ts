@@ -169,16 +169,11 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.mvi.home.HomeActivity',
           matches:
-            '@ImageView[width<70 && height<70][childCount=0] < FrameLayout[childCount=1] - LinearLayout > [text="查看详情"]',
-          snapshotUrls: 'https://i.gkd.li/i/23289399',
-        },
-        {
-          key: 4,
-          fastQuery: true,
-          activityIds: '.mvi.home.HomeActivity',
-          matches:
-            '@ImageView[width<70 && height<70][childCount=0] < FrameLayout[childCount=1] - FrameLayout[childCount=1] > TextView[childCount=0][text.length>0] <<n [vid="fl_native"]',
-          snapshotUrls: 'https://i.gkd.li/i/23289402',
+            '@ImageView[width<70 && height<70][childCount=0] < FrameLayout[childCount=1] - * > TextView[childCount=0][text.length>0] <<n [vid="fl_native"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23289399',
+            'https://i.gkd.li/i/23289402',
+          ],
         },
       ],
     },
