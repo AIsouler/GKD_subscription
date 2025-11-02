@@ -87,6 +87,14 @@ export default defineGkdApp({
             '@TextView[clickable=true][width<160 && height<160] - [childCount=0][text="开心收下"] <<n [vid="poplayer_inner_view"]',
           snapshotUrls: 'https://i.gkd.li/i/22949963',
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.taobao.android.detail.alittdetail.TTDetailActivity',
+          matches:
+            '@Image[width<140 && height<140][clickable=true] - TextView[text.length>0] <n [childCount<6] <<n WebView[vid="poplayer_inner_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/23289412',
+        },
       ],
     },
     {
