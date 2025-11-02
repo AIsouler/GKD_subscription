@@ -95,6 +95,13 @@ export default defineGkdApp({
             '@Image[width<140 && height<140][clickable=true] - TextView[text.length>0] <n [childCount<6] <<n WebView[vid="poplayer_inner_view"]',
           snapshotUrls: 'https://i.gkd.li/i/23289412',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: 'com.taobao.tao.welcome.Welcome',
+          matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/14060521',
+        },
       ],
     },
     {
@@ -286,19 +293,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13628020',
             'https://i.gkd.li/i/13898735',
           ],
-        },
-      ],
-    },
-    {
-      key: 17,
-      name: '全屏广告-抢天降补贴弹窗',
-      desc: '点击X',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.taobao.tao.welcome.Welcome',
-          matches: '@[desc="关闭按钮"] - [vid="poplayer_native_state_id"]',
-          snapshotUrls: 'https://i.gkd.li/i/14060521',
         },
       ],
     },
