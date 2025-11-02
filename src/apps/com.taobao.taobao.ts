@@ -144,6 +144,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/45f8b78d-bc6a-4c1a-994d-6b5bce2c96a0',
           snapshotUrls: 'https://i.gkd.li/i/22291107',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.taobao.android.detail.alittdetail.TTDetailActivity',
+          matches:
+            '@FrameLayout[desc="关闭"][clickable=true] <<n [vid="ll_dinamicx_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/23289445',
+        },
       ],
     },
     {
