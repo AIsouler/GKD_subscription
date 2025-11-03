@@ -119,6 +119,14 @@ export default defineGkdApp({
             '@ImageView[width<140 && height<140] - * > [text^="请允许"][text$="安装应用"]',
           snapshotUrls: 'https://i.gkd.li/i/23125594',
         },
+        {
+          key: 12,
+          fastQuery: true,
+          activityIds:
+            'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
+          matches: '[vid="sdm_myoffer_btn_close_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/23293759',
+        },
       ],
     },
     {
