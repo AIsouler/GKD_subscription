@@ -17,7 +17,7 @@ export default defineGkdApp({
             'com.xyhui.start.LoadingActivity',
           ],
           matches:
-            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text="查看详情" || text="了解更多" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text$="详情" || text^="了解" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14472097',
             'https://i.gkd.li/i/13695488',
@@ -73,7 +73,7 @@ export default defineGkdApp({
             '.lut.act.LutMainActivity',
           ],
           matches:
-            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信" || text^="扭动"]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14472098',
             'https://i.gkd.li/i/14766902',
@@ -101,9 +101,16 @@ export default defineGkdApp({
         {
           key: 9,
           fastQuery: true,
-          activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
-          matches: '[vid="anythink_myoffer_btn_close_id"]',
-          snapshotUrls: 'https://i.gkd.li/i/22868736',
+          activityIds: [
+            'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+            'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
+          ],
+          matches:
+            '[vid="anythink_myoffer_btn_close_id" || vid="sdm_myoffer_btn_close_id"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22868736',
+            'https://i.gkd.li/i/23293759',
+          ],
         },
         {
           key: 10,
@@ -119,14 +126,6 @@ export default defineGkdApp({
           matches:
             '@ImageView[width<140 && height<140] - * > [text^="请允许"][text$="安装应用"]',
           snapshotUrls: 'https://i.gkd.li/i/23125594',
-        },
-        {
-          key: 12,
-          fastQuery: true,
-          activityIds:
-            'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
-          matches: '[vid="sdm_myoffer_btn_close_id"]',
-          snapshotUrls: 'https://i.gkd.li/i/23293759',
         },
       ],
     },
