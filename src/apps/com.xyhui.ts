@@ -162,5 +162,55 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '功能类-打开应用自动进入部落',
+      desc: '点击我的-我的部落-已通过-部落详情（如果有多个则点击第一个，仅开屏时触发一次）',
+      rules: [
+        // 部分规则不使用 preKeys，因为中途可能会有广告打断
+        {
+          key: 0,
+          name: '点击导航栏[我的]',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.lut.act.LutMainActivity',
+          matches:
+            '@ViewGroup[clickable=true][visibleToUser=true] > [text="我的"] <<n [vid="mCustomTabView"]',
+          snapshotUrls: 'https://i.gkd.li/i/23303536',
+        },
+        {
+          key: 1,
+          name: '点击[我的部落]',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.lut.act.LutMainActivity',
+          matches:
+            '@LinearLayout[vid="itemView"][visibleToUser=true] > [text="我的部落"]',
+          snapshotUrls: 'https://i.gkd.li/i/23303537',
+        },
+        {
+          key: 2,
+          name: '点击[已通过]',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.lut.tribe.act.MyLutTribeAct',
+          matches:
+            '@RelativeLayout[clickable=true][visibleToUser=true] > [text="已通过"]',
+          snapshotUrls: 'https://i.gkd.li/i/23303538',
+        },
+        {
+          preKeys: [2],
+          name: '进入部落详情',
+          fastQuery: true,
+          activityIds: 'com.lut.tribe.act.MyLutTribeAct',
+          matches:
+            '@LinearLayout[clickable=true][visibleToUser=true] < [vid="mRecyclerView"]',
+          snapshotUrls: 'https://i.gkd.li/i/23303539',
+        },
+      ],
+    },
   ],
 });
