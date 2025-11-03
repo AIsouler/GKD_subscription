@@ -472,7 +472,8 @@ export default defineGkdApp({
             'com.bilibili.lib.ui.ComposeActivity', // 动态：评论图片
             'com.bilibili.column.ui.detail.image.ColumnImageViewerActivity', // 专栏图片
           ],
-          matches: '[(id="tv.danmaku.bili:id/view_origin" || id="tv.danmaku.bili:id/image_raw") && text^="查看原图"]',
+          matches:
+            '[(id="tv.danmaku.bili:id/view_origin" || id="tv.danmaku.bili:id/image_raw") && text^="查看原图"]',
         },
       ],
       exampleUrls: [
