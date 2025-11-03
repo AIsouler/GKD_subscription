@@ -452,11 +452,36 @@ export default defineGkdApp({
           activityIds: 'com.bilibili.vip.web.VipWebActivity',
           matches:
             '[text^="专属等级加速包"] +n @TextView[childCount=0][text="领取"] <<n [vid="webview"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22886723', // 领取前
+            'https://i.gkd.li/i/22886739', // 领取后
+          ],
         },
       ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/22886723', // 领取前
-        'https://i.gkd.li/i/22886739', // 领取后
+    },
+    {
+      key: 19,
+      name: '功能类-自动点击查看原图',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.bilibili.video.story.StoryTransparentActivity', // 视频：竖屏模式
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity', // 视频：详情页模式
+            'com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2', // 动态：图片
+            'com.bilibili.lib.ui.ComposeActivity', // 动态：评论图片
+            'com.bilibili.column.ui.detail.image.ColumnImageViewerActivity', // 专栏图片
+          ],
+          matches: '[text^="查看原图"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c0ffc9cb-fac0-4b5c-9645-3674942b5c7d',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23304237', // 视频：竖屏模式
+            'https://i.gkd.li/i/23304245', // 视频：详情页模式
+            'https://i.gkd.li/i/23305280', // 动态：帖内图片
+            'https://i.gkd.li/i/23305281', // 动态：评论图片
+            'https://i.gkd.li/i/23305275', // 专栏图片
+          ],
+        },
       ],
     },
   ],
