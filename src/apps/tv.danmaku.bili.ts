@@ -459,5 +459,36 @@ export default defineGkdApp({
         'https://i.gkd.li/i/22886739', // 领取后
       ],
     },
+    {
+      key: 19,
+      name: '功能类-自动点击查看原图',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.bilibili.video.story.StoryTransparentActivity', // 视频：竖屏模式
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity', // 视频：详情页模式
+            'com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2', // 动态：图片
+            'com.bilibili.lib.ui.ComposeActivity', // 动态：评论图片
+            'com.bilibili.column.ui.detail.image.ColumnImageViewerActivity', // 专栏图片
+          ],
+          matches: '[(id="tv.danmaku.bili:id/view_origin" || id="tv.danmaku.bili:id/image_raw") && text^="查看原图"]',
+        },
+      ],
+      exampleUrls: [
+        'https://e.gkd.li/c0ffc9cb-fac0-4b5c-9645-3674942b5c7d',
+        'https://e.gkd.li/64f52637-9000-4793-97bc-2eccfdd0a3e2',
+        'https://e.gkd.li/dd2d4f04-d55e-4a1a-9a9a-753aaf5c79cf',
+        'https://e.gkd.li/10203860-b56f-476f-bd7f-155b567bb194',
+        'https://e.gkd.li/1d3f59ba-a043-4837-801b-7e7adff3e8ce',
+      ],
+      snapshotUrls: [
+        'https://i.gkd.li/i/23304237', // 视频：竖屏模式
+        'https://i.gkd.li/i/23304245', // 视频：详情页模式
+        'https://i.gkd.li/i/23305280', // 动态：帖内图片
+        'https://i.gkd.li/i/23305281', // 动态：评论图片
+        'https://i.gkd.li/i/23305275', // 专栏图片
+      ],
+    },
   ],
 });
