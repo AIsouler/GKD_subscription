@@ -72,9 +72,6 @@ export default defineGkdApp({
         },
         {
           key: 7,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           activityIds: [
             '.ui.activity.HomeActivity',
             '.ui.activity.MainFrameActivity',
