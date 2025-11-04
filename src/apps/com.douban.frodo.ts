@@ -27,32 +27,30 @@ export default defineGkdApp({
           fastQuery: true,
           position: {
             left: 'width * 0.875',
-            top: 'height * 0.062',
+            top: 'width * 0.17', // height可能会变化，不建议使用
           },
           matches:
-            '[vid="ad_view"][visibleToUser=true][width!=1200 && width!=1216]',
+            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1216]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13575257',
-            'https://i.gkd.li/i/13575547',
-            'https://i.gkd.li/i/18423724',
-          ],
-          excludeSnapshotUrls: [
             'https://i.gkd.li/i/13601755',
             'https://i.gkd.li/i/16054268',
-            'https://i.gkd.li/i/23283060',
+            'https://i.gkd.li/i/23324118',
+            'https://i.gkd.li/i/23324139',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23283060',
         },
         {
           key: 2,
           fastQuery: true,
           position: {
-            left: 'width * 0.86',
-            top: 'height * 0.075',
+            left: 'width * 0.875',
+            top: 'width * 0.137', // height可能会变化，不建议使用
           },
-          matches: '[vid="ad_view"][visibleToUser=true][width=1200]',
+          matches: '[vid="ad_view"][visibleToUser=true][width<1200]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13601755',
-            'https://i.gkd.li/i/16054268',
+            'https://i.gkd.li/i/13575257',
+            'https://i.gkd.li/i/13575547',
+            'https://i.gkd.li/i/18423724',
           ],
         },
         {
@@ -68,7 +66,7 @@ export default defineGkdApp({
           fastQuery: true,
           position: {
             left: 'width * 0.868',
-            top: 'height * 0.05',
+            top: 'width * 0.09', // height可能会变化，不建议使用
           },
           matches: '[vid="ad_view"][visibleToUser=true][width=1216]',
           snapshotUrls: 'https://i.gkd.li/i/23283060',
