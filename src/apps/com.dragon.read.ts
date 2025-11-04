@@ -305,15 +305,18 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-观看广告后点击获得听书时长旁边的关闭按钮',
+      name: '功能类-观看广告后点击[获得听书时长/领取成功]旁边的关闭按钮',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
           matches:
-            '@LynxFlattenUI[clickable=true] -2 [text="获得听书时长"] -n FlattenUIText[text="广告"]',
+            '@LynxFlattenUI[clickable=true] -2 [text="获得听书时长" || text="领取成功"] -n FlattenUIText[text="广告"]',
           exampleUrls: 'https://e.gkd.li/8f6a6b4b-b189-48b8-a068-d66514b244e3',
-          snapshotUrls: 'https://i.gkd.li/i/20989165',
+          snapshotUrls: [
+            'https://i.gkd.li/i/20989165',
+            'https://i.gkd.li/i/23325310',
+          ],
         },
       ],
     },
