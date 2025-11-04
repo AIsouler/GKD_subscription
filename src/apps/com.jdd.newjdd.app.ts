@@ -7,9 +7,9 @@ export default defineGkdApp({
     {
       key: 1,
       name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      // matchTime: 10000, // 可能出现多次 https://github.com/AIsouler/GKD_subscription/issues/1376
+      // actionMaximum: 1,
+      // resetMatch: 'app',
       priorityTime: 10000,
       rules: [
         {
