@@ -90,7 +90,7 @@ matches: [
 
 ```txt
 
-@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text="查看详情" || text="了解更多" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]
+@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]
 ```
 
 - 选择器-2 **（可快速查询！）**
@@ -106,7 +106,7 @@ matches: [
 [https://i.gkd.li/i/17689929](https://i.gkd.li/i/17689929?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXSA8MiBGcmFtZUxheW91dFtjaGlsZENvdW50PTVdICsgRnJhbWVMYXlvdXRbY2hpbGRDb3VudD0yXSA-IFt0ZXh0Xj0i56uL5Y2zIiB8fCB0ZXh0PSLmn6XnnIvor6bmg4UiIHx8IHRleHQ9IuS6huino-abtOWkmiIgfHwgdGV4dD0i5Y676YCb6YCbIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
 
 ```txt
-@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text="查看详情" || text="了解更多" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]
+@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text$="详情" || text^="了解" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]
 ```
 
 - 选择器-3 **（可快速查询！）**
