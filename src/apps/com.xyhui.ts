@@ -15,12 +15,14 @@ export default defineGkdApp({
           activityIds: [
             'com.xyhui.start.PUMainActivity',
             'com.xyhui.start.LoadingActivity',
+            '.lut.act.LutMainActivity',
           ],
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^="立即" || text$="详情" || text^="了解" || text="去逛逛" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14472097',
             'https://i.gkd.li/i/13695488',
+            'https://i.gkd.li/i/23325238',
           ],
         },
         {
@@ -126,6 +128,15 @@ export default defineGkdApp({
           matches:
             '@ImageView[width<140 && height<140] - * > [text^="请允许"][text$="安装应用"]',
           snapshotUrls: 'https://i.gkd.li/i/23125594',
+        },
+        {
+          key: 12,
+          name: '京东广告',
+          fastQuery: true,
+          activityIds: '.lut.act.LutMainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
+          snapshotUrls: 'https://i.gkd.li/i/23325124',
         },
       ],
     },
