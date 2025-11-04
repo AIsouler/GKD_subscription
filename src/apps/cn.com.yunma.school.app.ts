@@ -19,5 +19,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-用水自动点击开始',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.yunma.baseextend.ui.WebActivity',
+          matches:
+            '@TextView[text="开始"][childCount=0] < View[childCount=1] <<n WebView[text="立即用水"] <<2 [vid="web_parent_layout_id"]',
+          snapshotUrls: 'https://i.gkd.li/i/23327551',
+        },
+      ],
+    },
   ],
 });
