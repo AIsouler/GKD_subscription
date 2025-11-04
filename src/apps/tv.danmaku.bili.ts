@@ -417,10 +417,16 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.bilibili.video.story.StoryVideoActivity',
+          activityIds: [
+            'com.bilibili.video.story.StoryVideoActivity',
+            'com.bilibili.video.story.StoryTransparentActivity',
+          ],
           matches: '[vid="story_ctrl_router"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/4bfd6131-d4be-46be-affb-73338b01f49c',
-          snapshotUrls: 'https://i.gkd.li/i/18164075',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18164075',
+            'https://i.gkd.li/i/23325994',
+          ],
         },
       ],
     },
@@ -432,12 +438,14 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: [
             'com.bilibili.video.story.StoryVideoActivity',
+            'com.bilibili.video.story.StoryTransparentActivity',
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           ],
           matches: '@LinearLayout[clickable=true] > [text="展开更多评论"]',
           exampleUrls: 'https://e.gkd.li/e7b7167e-7623-4079-9f16-fd253f303074',
           snapshotUrls: [
             'https://i.gkd.li/i/22572375',
+            'https://i.gkd.li/i/23325508',
             'https://i.gkd.li/i/22573433',
           ],
         },
@@ -466,7 +474,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: [
-            'com.bilibili.video.story.StoryTransparentActivity', // 视频：竖屏模式
+            'com.bilibili.video.story.StoryVideoActivity', // 视频：竖屏模式1
+            'com.bilibili.video.story.StoryTransparentActivity', // 视频：竖屏模式2
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity', // 视频：详情页模式
             'com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2', // 动态：图片
             'com.bilibili.lib.ui.ComposeActivity', // 动态：评论图片
@@ -475,7 +484,8 @@ export default defineGkdApp({
           matches: '[text^="查看原图"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/c0ffc9cb-fac0-4b5c-9645-3674942b5c7d',
           snapshotUrls: [
-            'https://i.gkd.li/i/23304237', // 视频：竖屏模式
+            'https://i.gkd.li/i/23325552', // 视频：竖屏模式1
+            'https://i.gkd.li/i/23304237', // 视频：竖屏模式2
             'https://i.gkd.li/i/23304245', // 视频：详情页模式
             'https://i.gkd.li/i/23305280', // 动态：帖内图片
             'https://i.gkd.li/i/23305281', // 动态：评论图片
