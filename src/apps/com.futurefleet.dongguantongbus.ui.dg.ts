@@ -19,5 +19,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.yd.saas.base.inner.interstitial.YdInterstitialActivity',
+          matches: '[vid="iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/d4e02a98-f4e7-492f-9317-717454d74fd5',
+          snapshotUrls: 'https://i.gkd.li/i/23357205',
+        },
+      ],
+    },
   ],
 });
