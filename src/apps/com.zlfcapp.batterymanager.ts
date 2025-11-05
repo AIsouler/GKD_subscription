@@ -58,6 +58,47 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/fc18c202-23c9-4b77-bbe6-9674427a53df',
           snapshotUrls: 'https://i.gkd.li/i/19955070',
         },
+        {
+          key: 5,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '* << @View[id="72c46f"]',
+          exampleUrls: 'https://e.gkd.li/a5f1c567-8cca-47e2-be35-0972f32486d0',
+          snapshotUrls: 'https://i.gkd.li/i/23362716',
+        },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
+          matches:
+            '@FrameLayout - FrameLayout >3 TextView[text="去哪儿旅行"||text="小米应用商店"]',
+          exampleUrls: [
+            'https://e.gkd.li/b6f0c1c3-b42e-4443-a1dc-299299cf8b5f',
+            'https://e.gkd.li/d4b4f127-677a-47d2-81df-b4fa5d7e046d',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23362866',
+            'https://i.gkd.li/i/23363372',
+          ],
+        },
+        {
+          key: 7,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@ImageView <<8 FrameLayout -2 FrameLayout[childCount=0][index=1]',
+          exampleUrls: 'https://e.gkd.li/279d959b-bc63-45f4-a2c4-22054c4cd3f7',
+          snapshotUrls: 'https://i.gkd.li/i/23363218',
+        },
+        {
+          key: 8,
+          fastQuery: true,
+          activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
+          matches:
+            '@FrameLayout - FrameLayout > LinearLayout > TextView[text="抖音商城"]',
+          exampleUrls: 'https://e.gkd.li/2de28d35-4f2d-46c5-ab3e-d108013a10d0',
+          snapshotUrls: 'https://i.gkd.li/i/23363256',
+        },
       ],
     },
   ],
