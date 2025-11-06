@@ -308,7 +308,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.bilibili.vip.web.VipWebActivity',
           matches:
-            '@TextView[width<130 && height<130] - TextView[childCount=0][id="dialog-canvas"] <<n View <4 [childCount!=0][id="app"] <<n [vid="webview"]',
+            '@TextView[width<130 && height<130] - TextView[childCount=0][id="dialog-canvas"] <<n [vid="webview"]',
           snapshotUrls: 'https://i.gkd.li/i/23385023',
         },
       ],
@@ -467,14 +467,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.bilibili.vip.web.VipWebActivity',
           matches:
-            '[text^="专属等级加速包"] +n @TextView[childCount=0][text="领取"] <<n [vid="webview"]',
-          excludeMatches: [
-            'TextView[childCount=0][id="dialog-canvas"] <<n View <4 [childCount!=0][id="app"] <<n [vid="webview"]', // 误触 https://i.gkd.li/i/23385023
-          ],
+            'TextView[childCount=0][text!=null][index=parent.childCount.minus(1)] -2 View >3 [text^="专属等级加速包"] +2 @TextView[childCount=0][text="领取"] <<n [vid="webview"]',
           snapshotUrls: [
             'https://i.gkd.li/i/22886723', // 领取前
             'https://i.gkd.li/i/22886739', // 领取后
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23385023',
         },
       ],
     },
