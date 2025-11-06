@@ -122,7 +122,7 @@ export default defineGkdApp({
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
-            '@FrameLayout[childCount=0][index=0][desc=null][text=null][width>1000 && height>2000] <<n FrameLayout[childCount=1][index=0][width>1000 && height>2000] +n FrameLayout[childCount=1][index=2][width>1000 && height>2000] [text="穿山甲"]',
+            '@FrameLayout[childCount=0][index=0][desc=null][text=null][width>1000 && height>2000] <<n FrameLayout[childCount=1][index=0][width>1000 && height>2000] +n FrameLayout[childCount=1][index=2][width>1000 && height>2000] >n [text="穿山甲"]',
           exampleUrls: 'https://e.gkd.li/36baadc4-bba2-4b21-af1a-bc6a13550456',
           snapshotUrls: 'https://i.gkd.li/i/23382996',
         },
