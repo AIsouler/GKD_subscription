@@ -62,7 +62,8 @@ export default defineGkdApp({
           key: 5,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '* << @View[id="72c46f"]',
+          matches:
+            '@Image[childCount=0][width<50 && height<50] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/a5f1c567-8cca-47e2-be35-0972f32486d0',
           snapshotUrls: 'https://i.gkd.li/i/23362716',
         },
@@ -71,7 +72,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
-            '@FrameLayout - FrameLayout >3 TextView[text="去哪儿旅行"||text="小米应用商店"]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           exampleUrls: [
             'https://e.gkd.li/b6f0c1c3-b42e-4443-a1dc-299299cf8b5f',
             'https://e.gkd.li/d4b4f127-677a-47d2-81df-b4fa5d7e046d',
@@ -83,10 +84,11 @@ export default defineGkdApp({
         },
         {
           key: 7,
+          fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
-            '@ImageView <<8 FrameLayout -2 FrameLayout[childCount=0][index=1]',
+            '@ImageView[childCount=0] < ViewGroup[childCount=1] < ViewGroup[childCount=1] < ViewGroup[childCount=1] < ViewGroup[childCount=1] + ViewGroup >4 [text="反馈"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/279d959b-bc63-45f4-a2c4-22054c4cd3f7',
           snapshotUrls: 'https://i.gkd.li/i/23363218',
         },
@@ -95,7 +97,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
-            '@FrameLayout - FrameLayout > LinearLayout > TextView[text="抖音商城"]',
+            '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <3 FrameLayout[childCount=3] < FrameLayout[childCount=2] +5 FrameLayout[childCount=4] > [text^="扭动或点击"]',
           exampleUrls: 'https://e.gkd.li/2de28d35-4f2d-46c5-ab3e-d108013a10d0',
           snapshotUrls: 'https://i.gkd.li/i/23363256',
         },
