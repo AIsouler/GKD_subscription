@@ -303,6 +303,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15814146',
           ],
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.bilibili.vip.web.VipWebActivity',
+          matches:
+            '@TextView[width<130 && height<130] - TextView[childCount=0][id="dialog-canvas"] <<n View <4 [childCount!=0][id="app"] <<n [vid="webview"]',
+          snapshotUrls: 'https://i.gkd.li/i/23385023',
+        },
       ],
     },
     {
