@@ -8,9 +8,6 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告',
       desc: '点击关闭',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
