@@ -30,5 +30,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '其他-图片保存成功弹窗',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.ExternalPhotoPageActivity',
+          matches: ['[text="图片已经保存到相册"]', '[text="确定"]'],
+          snapshotUrls: 'https://i.gkd.li/i/23383772',
+        },
+      ],
+    },
   ],
 });
