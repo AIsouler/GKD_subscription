@@ -468,6 +468,9 @@ export default defineGkdApp({
           activityIds: 'com.bilibili.vip.web.VipWebActivity',
           matches:
             '[text^="专属等级加速包"] +n @TextView[childCount=0][text="领取"] <<n [vid="webview"]',
+          excludeMatches: [
+            'TextView[childCount=0][id="dialog-canvas"] <<n View <4 [childCount!=0][id="app"] <<n [vid="webview"]', // 误触 https://i.gkd.li/i/23385023
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/22886723', // 领取前
             'https://i.gkd.li/i/22886739', // 领取后
