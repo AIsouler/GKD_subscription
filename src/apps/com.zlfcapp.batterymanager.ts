@@ -103,6 +103,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/40867ce9-51c9-4d9e-b134-20c01b2308ce',
           snapshotUrls: 'https://i.gkd.li/i/23394091',
         },
+        {
+          key: 9,
+          fastQuery: true,
+          activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
+          matches:
+            '@ImageView < FrameLayout[childCount=1][index=1] +4 FrameLayout[childCount=1][index=5] >2 [text^="下载" || text^="点击"]',
+          exampleUrls: 'https://e.gkd.li/a292504e-89c9-4d46-83d4-7f26bd4b0ba4',
+          snapshotUrls: 'https://i.gkd.li/i/23395077',
+        },
       ],
     },
     {
