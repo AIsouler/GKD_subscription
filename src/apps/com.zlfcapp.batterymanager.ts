@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告-普通弹窗',
       desc: '点击关闭',
       rules: [
         {
@@ -60,15 +60,6 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches:
-            '@Image[childCount=0][width<50 && height<50] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/a5f1c567-8cca-47e2-be35-0972f32486d0',
-          snapshotUrls: 'https://i.gkd.li/i/23362716',
-        },
-        {
-          key: 6,
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
@@ -83,7 +74,7 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 7,
+          key: 6,
           fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -93,13 +84,56 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/23363218',
         },
         {
-          key: 8,
+          key: 7,
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
             '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <3 FrameLayout[childCount=3] < FrameLayout[childCount=2] +5 FrameLayout[childCount=4] > [text^="扭动或点击"]',
           exampleUrls: 'https://e.gkd.li/2de28d35-4f2d-46c5-ab3e-d108013a10d0',
           snapshotUrls: 'https://i.gkd.li/i/23363256',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '全屏广告-穿山甲弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][desc=null][text=""][id=null][visibleToUser=true][width<50 && height<50] <<n View[childCount=1][index=1][id="59dbac"] - View[childCount=1][index=0][id="4caff7"] > [text="反馈"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/74f11734-5819-4ba8-bb1b-34043cfe3f09',
+          snapshotUrls: 'https://i.gkd.li/i/23382707',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][width<50 && height<50] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a5f1c567-8cca-47e2-be35-0972f32486d0',
+          snapshotUrls: 'https://i.gkd.li/i/23362716',
+        },
+        {
+          key: 2,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@FrameLayout[childCount=0][index=0][desc=null][text=null][width>1000 && height>2000] <<n FrameLayout[childCount=1][index=0][width>1000 && height>2000] +n FrameLayout[childCount=1][index=2][width>1000 && height>2000] [text="穿山甲"]',
+          exampleUrls: 'https://e.gkd.li/36baadc4-bba2-4b21-af1a-bc6a13550456',
+          snapshotUrls: 'https://i.gkd.li/i/23382996',
+        },
+        {
+          key: 3,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@View[id="b8f10a"][childCount=0] < View[id="400387"] <n View[id="d0c6ca"] <n View[id="98d133"][childCount=4] <<n WebView[text="穿山甲"][childCount=1][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/08760351-3507-4239-9cdc-a83709f7a475',
+          snapshotUrls: 'https://i.gkd.li/i/23383183',
         },
       ],
     },
