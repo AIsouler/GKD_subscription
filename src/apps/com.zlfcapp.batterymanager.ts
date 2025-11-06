@@ -94,6 +94,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/2de28d35-4f2d-46c5-ab3e-d108013a10d0',
           snapshotUrls: 'https://i.gkd.li/i/23363256',
         },
+        {
+          key: 8,
+          fastQuery: true,
+          activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
+          matches:
+            '@ImageView[childCount=0][index=0][width>50 && height>50] < FrameLayout[childCount=1][index=1] - LinearLayout[childCount=2][index=0] < FrameLayout[childCount=2][index=1] - ImageView[childCount=0][index=0] < FrameLayout[childCount=2][index=1] - FrameLayout[childCount=1][index=0] < FrameLayout[childCount=2][index=5] - FrameLayout[childCount=4][index=4] > [text^="扭动" || text^="点击"]',
+          exampleUrls: 'https://e.gkd.li/40867ce9-51c9-4d9e-b134-20c01b2308ce',
+          snapshotUrls: 'https://i.gkd.li/i/23394091',
+        },
       ],
     },
     {
