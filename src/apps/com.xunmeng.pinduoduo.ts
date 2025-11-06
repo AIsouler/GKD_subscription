@@ -110,6 +110,12 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/64f35ab7-37e1-4060-aa91-468116a42cae',
           snapshotUrls: 'https://i.gkd.li/i/18375615',
         },
+        {
+          key: 10,
+          activityIds: '.activity.NewPageActivity',
+          matches: '[desc="关闭按钮"]',
+          snapshotUrls: 'https://i.gkd.li/i/23383792',
+        },
       ],
     },
     {
