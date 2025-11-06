@@ -67,10 +67,12 @@ export default defineGkdApp({
           exampleUrls: [
             'https://e.gkd.li/b6f0c1c3-b42e-4443-a1dc-299299cf8b5f',
             'https://e.gkd.li/d4b4f127-677a-47d2-81df-b4fa5d7e046d',
+            'https://e.gkd.li/18471c18-9545-4bb3-94c8-8ec4f8d3fae9',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/23362866',
             'https://i.gkd.li/i/23363372',
+            'https://i.gkd.li/i/23385272',
           ],
         },
         {
