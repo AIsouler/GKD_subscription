@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告-普通弹窗',
       desc: '点击关闭',
       rules: [
         {
@@ -60,15 +60,6 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          activityIds:
-            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches:
-            '@Image[childCount=0][width<50 && height<50] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/a5f1c567-8cca-47e2-be35-0972f32486d0',
-          snapshotUrls: 'https://i.gkd.li/i/23362716',
-        },
-        {
-          key: 6,
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
@@ -76,14 +67,16 @@ export default defineGkdApp({
           exampleUrls: [
             'https://e.gkd.li/b6f0c1c3-b42e-4443-a1dc-299299cf8b5f',
             'https://e.gkd.li/d4b4f127-677a-47d2-81df-b4fa5d7e046d',
+            'https://e.gkd.li/18471c18-9545-4bb3-94c8-8ec4f8d3fae9',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/23362866',
             'https://i.gkd.li/i/23363372',
+            'https://i.gkd.li/i/23385272',
           ],
         },
         {
-          key: 7,
+          key: 6,
           fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -93,7 +86,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/23363218',
         },
         {
-          key: 8,
+          key: 7,
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
