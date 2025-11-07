@@ -28,6 +28,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13446735',
           ],
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.ui.play.PlayerActivity',
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] < ViewGroup[childCount=1] <2 ViewGroup - ViewGroup >2 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/055cfec1-d022-4e46-83f3-bc4c2860f919',
+          snapshotUrls: 'https://i.gkd.li/i/23407169',
+        },
       ],
     },
     {
