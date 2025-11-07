@@ -43,15 +43,21 @@ export default defineGkdApp({
       key: 1,
       name: '权限提示-定位权限',
       fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds: '.AlipayLogin',
+          activityIds: [
+            '.AlipayLogin',
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity$App',
+            'com.alipay.mobile.beehive.cityselect.ui.CeilingHomeCitySelectActivity',
+          ],
           matches: '@[desc="取消"] + [text*="位置权限"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/caa96cc4-9943-40d8-8cb6-8c89aa60b20f',
-          snapshotUrls: 'https://i.gkd.li/i/18549931',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18549931',
+            'https://i.gkd.li/i/23415365',
+            'https://i.gkd.li/i/23415366',
+          ],
         },
         {
           key: 1,
