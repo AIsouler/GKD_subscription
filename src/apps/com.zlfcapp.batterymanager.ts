@@ -60,6 +60,15 @@ export default defineGkdApp({
         },
         {
           key: 5,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][width<50 && height<50] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a5f1c567-8cca-47e2-be35-0972f32486d0',
+          snapshotUrls: 'https://i.gkd.li/i/23362716',
+        },
+        {
+          key: 6,
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
@@ -76,7 +85,7 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 6,
+          key: 7,
           fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -86,7 +95,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/23363218',
         },
         {
-          key: 7,
+          key: 8,
           fastQuery: true,
           activityIds: 'com.zlfcapp.batterymanager.mvvm.main.MainActivity',
           matches:
