@@ -101,6 +101,17 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/2de28d35-4f2d-46c5-ab3e-d108013a10d0',
           snapshotUrls: 'https://i.gkd.li/i/23363256',
         },
+        {
+          key: 9,
+          name: 'ByteDanceTapTap广告',
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@ImageView[text=null][desc=null][childCount=0][index=0][width<50 && height<50] < FrameLayout[childCount=1][index=2] <3 FrameLayout[childCount=5][index=2] +2 FrameLayout[childCount=2][index=4][visibleToUser=true] >2 TextView[text^="立即"]',
+          exampleUrls: 'https://e.gkd.li/dfe1a138-94df-4eaa-ba99-37ea2753cd66',
+          snapshotUrls: 'https://i.gkd.li/i/23413937',
+        },
       ],
     },
   ],
