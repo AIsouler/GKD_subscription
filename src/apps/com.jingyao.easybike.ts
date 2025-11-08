@@ -62,17 +62,16 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matchTime: 10000,
-          actionMaximum: 1,
-          resetMatch: 'app',
           activityIds: [
             'com.hellobike.ads.widget.insert.dialog.HBAdvertDialog',
             'com.hellobike.atlas.business.portal.PortalActivity',
+            'com.hellobike.hitch.business.homenew.HitchHomeActivity',
           ],
           matches: '[vid="actionDialogClose"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12650090',
             'https://i.gkd.li/i/16503613',
+            'https://i.gkd.li/i/23407810',
           ],
         },
         {
@@ -99,6 +98,16 @@ export default defineGkdApp({
           activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
           matches: '[desc="去使用"] + Button[text=null][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12739316',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds:
+            'com.hellobike.moped.platform.offline.web.OhoRealmWebActivity',
+          matches:
+            '@Image[childCount=0][text!=null] - View[childCount=1] > Image[childCount=0][text!=null] <<n [vid="webContainer"]',
+          exampleUrls: 'https://e.gkd.li/c6364646-6d3c-4b2e-80b9-0b356d4cd8b7',
+          snapshotUrls: 'https://i.gkd.li/i/23415363',
         },
       ],
     },
