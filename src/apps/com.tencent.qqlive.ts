@@ -118,7 +118,15 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0, 1, 2, 3, 4, 5, 6],
+          key: 7,
+          fastQuery: true,
+          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
+          matches:
+            '@View[clickable=true][childCount=0] <2 View < View < View < View < [name*="KMMChannelNormalFragment"] < FrameLayout <4 ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <5 [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/23431044',
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4, 5, 6, 7],
           key: 50,
           fastQuery: true,
           matches: '[text="直接关闭"][visibleToUser=true]',
