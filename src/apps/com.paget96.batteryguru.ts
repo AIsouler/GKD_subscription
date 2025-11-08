@@ -6,15 +6,24 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片广告',
-      desc: '点击[移除广告]',
+      name: '全屏广告-免费订阅',
+      desc: '点击关闭',
       rules: [
         {
-          fastQuery: true,
-          activityIds: 'activities.MainActivity',
-          matches: '[vid="remove_ads"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/81d94f93-2308-4401-a151-771e5a94b79a',
-          snapshotUrls: 'https://i.gkd.li/i/17538140',
+          matchRoot: true,
+          position: {
+            left: 'width/2',
+            top: 'height/2',
+          },
+          activityIds: [
+            'com.paget96.batteryguru.activities.IntroActivity',
+            'com.google.android.gms.ads.AdActivity',
+            'activities.MainActivity',
+          ],
+          matches:
+            '@Button[text=""][clickable=true][visibleToUser=true][childCount=0][index=0]',
+          exampleUrls: 'https://e.gkd.li/83bc035c-8e6c-48d7-a84f-c8dcee9b4b4b',
+          snapshotUrls: 'https://i.gkd.li/i/23416244',
         },
       ],
     },
