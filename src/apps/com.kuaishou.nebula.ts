@@ -71,5 +71,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '分段广告-悬浮广告',
+      fastQuery: true,
+      activityIds: 'com.yxcorp.gifshow.HomeActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[vid="close_pendant"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/8f56e57f-b2d7-457c-8376-6351568ec14a',
+          snapshotUrls: 'https://i.gkd.li/i/23431963',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="确定"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/89294dbb-4398-4561-91b7-4943ec7c98c7',
+          snapshotUrls: 'https://i.gkd.li/i/23431964',
+        },
+      ],
+    },
   ],
 });
