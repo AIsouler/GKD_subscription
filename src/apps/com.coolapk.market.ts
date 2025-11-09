@@ -100,7 +100,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [1], // 疑似酷安旧版本bug，点击不感兴趣后会再出现一个弹窗
+          preKeys: [0, 1], // 疑似酷安旧版本bug，点击不感兴趣后会再出现一个弹窗
           matches: '[text="不感兴趣"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/21036817',
         },
