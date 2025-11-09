@@ -15,13 +15,15 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
-          matches: '[vid="tv_tiaoguo" || vid="iv_tg_ad"]',
+          matches:
+            '[vid="tv_tiaoguo" || vid="iv_tg_ad" || vid="tv_skip"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d7520bc7-588b-4654-b6aa-d2736ac200bf',
           snapshotUrls: [
+            'https://i.gkd.li/i/13798686',
             'https://i.gkd.li/i/17082872',
             'https://i.gkd.li/i/17082897',
             'https://i.gkd.li/i/17082899',
-            'https://i.gkd.li/i/13798686',
+            'https://i.gkd.li/i/23432463',
           ],
         },
       ],
