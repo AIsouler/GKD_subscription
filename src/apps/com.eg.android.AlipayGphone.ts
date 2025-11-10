@@ -580,5 +580,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 31,
+      name: '其他-开通刷脸支付弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: ['[text="开通刷脸支付"]', '[text="关闭"]'],
+          snapshotUrls: 'https://i.gkd.li/i/23455533',
+        },
+      ],
+    },
   ],
 });
