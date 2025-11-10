@@ -510,7 +510,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
-          matches: '[vid="rating_dialog_close"]',
+          matches: '[vid="rating_dialog_close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/23440560',
         },
       ],
