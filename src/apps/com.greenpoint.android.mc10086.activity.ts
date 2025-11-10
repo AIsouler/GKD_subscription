@@ -176,7 +176,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '权限提示-位置权限',
+      name: '权限提示-定位权限',
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
