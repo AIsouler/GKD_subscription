@@ -198,8 +198,11 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '@TextView[text="···"][visibleToUser=true] +n * >2 [childCount=0][text="广告"] <<n [vid="fl_native"]',
-          snapshotUrls: 'https://i.gkd.li/i/22861405',
+            '@TextView[text="···"][visibleToUser=true] <n * >3 [childCount=0][text="广告"] <<n [vid="fl_native"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22861405',
+            'https://i.gkd.li/i/23451517',
+          ],
         },
         {
           preKeys: [0, 1],
