@@ -503,5 +503,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 20,
+      name: '评价提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
+          matches: '[vid="rating_dialog_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23440560',
+        },
+      ],
+    },
   ],
 });
