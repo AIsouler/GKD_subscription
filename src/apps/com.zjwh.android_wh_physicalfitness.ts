@@ -88,13 +88,18 @@ export default defineGkdApp({
         {
           key: 6,
           fastQuery: true,
-          activityIds: ['.activity.HomeActivity', '.mvi.home.HomeActivity'],
+          activityIds: [
+            '.activity.HomeActivity',
+            '.mvi.home.HomeActivity',
+            '.mvi.notice.NoticeListActivity',
+          ],
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           exampleUrls: 'https://e.gkd.li/f640d0c2-197d-45ef-98ff-58a04920bd2d',
           snapshotUrls: [
             'https://i.gkd.li/i/17358027',
             'https://i.gkd.li/i/23206013',
+            'https://i.gkd.li/i/23455815',
           ],
         },
         {
