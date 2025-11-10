@@ -589,7 +589,10 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
-          matches: ['[text="开通刷脸支付"]', '[text="关闭"]'],
+          matches: [
+            '[text="开通刷脸支付"]',
+            '@[clickable=true] > [text="关闭"]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/23455533',
         },
       ],
