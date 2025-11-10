@@ -174,5 +174,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '权限提示-位置权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
+          matches: [
+            '[text^="位置权限" || text$="定位权限"]',
+            '[text="取消"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23445705',
+        },
+      ],
+    },
   ],
 });
