@@ -536,10 +536,11 @@ export default defineGkdApp({
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches:
-            '@[text="全部领取"] < [childCount=1] <n View <<2 * - * >2 [text="我的积分"]',
+            '@[text^="全部领取"] < [childCount=1] <n View <<2 * - * >2 [text="我的积分"]',
           snapshotUrls: [
             'https://i.gkd.li/i/22951439',
             'https://i.gkd.li/i/22960401',
+            'https://i.gkd.li/i/23455621',
           ],
         },
       ],
