@@ -232,8 +232,7 @@ export default defineGkdApp({
           name: '会员开通界面弹窗',
           fastQuery: true,
           activityIds: '.music.biz.rn.activity.CashierRNActivity',
-          matches:
-            '@ViewGroup[width<130 && height<130][clickable=true][childCount=1] - ViewGroup >2 [text$="VIP可畅享千万曲库"]',
+          matches: '@ViewGroup[clickable=true] > [text="忍痛离开"]',
           snapshotUrls: 'https://i.gkd.li/i/23455243',
         },
         {
