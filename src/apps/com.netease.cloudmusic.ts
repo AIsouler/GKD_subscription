@@ -228,6 +228,15 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14956768',
         },
         {
+          key: 2,
+          name: '会员开通界面弹窗',
+          fastQuery: true,
+          activityIds: '.music.biz.rn.activity.CashierRNActivity',
+          matches:
+            '@ViewGroup[width<130 && height<130][clickable=true][childCount=1] - ViewGroup >2 [text$="VIP可畅享千万曲库"]',
+          snapshotUrls: 'https://i.gkd.li/i/23455243',
+        },
+        {
           key: 7,
           name: '会员过期后重新开通弹窗',
           action: 'back',
