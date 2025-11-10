@@ -156,8 +156,11 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches:
-            '@CheckBox[checked=true] < * - [text*="免密支付"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/22656242',
+            '@CheckBox[clickable=true][checked=true] < * - [text$="免密支付"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23455398', // 关闭前
+            'https://i.gkd.li/i/23455378', // 关闭后
+          ],
         },
       ],
     },
