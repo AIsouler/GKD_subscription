@@ -37,6 +37,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/055cfec1-d022-4e46-83f3-bc4c2860f919',
           snapshotUrls: 'https://i.gkd.li/i/23407169',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.ui.play.PlayerActivity',
+          matches:
+            '@[id="cj.mobile.wm.allmodules:id/wm_express_close_iv"] - LinearLayout > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/0174efc4-5eb6-4224-a213-e5c46d421a16',
+          snapshotUrls: 'https://i.gkd.li/i/23475820',
+        },
       ],
     },
     {
