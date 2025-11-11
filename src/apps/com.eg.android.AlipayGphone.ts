@@ -536,10 +536,11 @@ export default defineGkdApp({
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches:
-            '@[text="全部领取"] < [childCount=1] <n View <<2 * - * >2 [text="我的积分"]',
+            '@[text^="全部领取"] < [childCount=1] <n View <<2 * - * >2 [text="我的积分"]',
           snapshotUrls: [
             'https://i.gkd.li/i/22951439',
             'https://i.gkd.li/i/22960401',
+            'https://i.gkd.li/i/23455621',
           ],
         },
       ],
@@ -577,6 +578,22 @@ export default defineGkdApp({
             '[childCount=0][text="为保障您的正常访问请进行验证"] <<n [id="com.alipay.multiplatform.phone.xriver_integration:id/h5_trans_progress_rl"]',
           exampleUrls: 'https://e.gkd.li/f2571f51-3a8c-4e47-a7c5-3363375c1b78',
           snapshotUrls: 'https://i.gkd.li/i/23158302',
+        },
+      ],
+    },
+    {
+      key: 31,
+      name: '其他-开通刷脸支付弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: [
+            '[text="开通刷脸支付"]',
+            '@[clickable=true] > [text="关闭"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23455533',
         },
       ],
     },
