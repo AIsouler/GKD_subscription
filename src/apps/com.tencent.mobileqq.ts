@@ -339,6 +339,7 @@ export default defineGkdApp({
           activityIds: [
             '.activity.SplashActivity',
             '.upgrade.ui.dialog.UpgradeActivity',
+            '.upgrade.activity.UpgradeActivity',
           ],
           matches:
             '@[desc="关闭"] <2 * >2 Button[text^="立即" || text="马上升级"][text.length=4]',
