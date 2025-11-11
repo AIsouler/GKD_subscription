@@ -35,7 +35,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '功能类-允许白描共享整个屏幕',
+      name: '功能类-自动允许白描共享整个屏幕',
       fastQuery: true,
       activityIds:
         '.mediaprojection.permission.MediaProjectionPermissionActivity',
