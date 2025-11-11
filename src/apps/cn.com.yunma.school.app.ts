@@ -32,5 +32,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+          matches: '[vid="anythink_myoffer_btn_close_id"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3ddc6da8-7bbf-43f8-8d79-1fabe1180fea',
+          snapshotUrls: 'https://i.gkd.li/i/23475779',
+        },
+      ],
+    },
   ],
 });
