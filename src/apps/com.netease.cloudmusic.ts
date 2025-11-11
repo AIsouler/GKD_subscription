@@ -192,8 +192,8 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
-          // 试听VIP音乐弹窗
           key: 0,
+          name: '试听VIP音乐弹窗',
           action: 'back',
           activityIds: [
             '.music.biz.rn.activity.MainProcessLayerReactNativeActivity',
@@ -219,8 +219,8 @@ export default defineGkdApp({
           ],
         },
         {
-          // “我喜欢的音乐”界面弹窗
           key: 1,
+          name: '“我喜欢的音乐”界面弹窗',
           action: 'back',
           activityIds:
             'com.netease.cloudmusic.music.biz.rn.activity.LayerReactNativeActivity',
@@ -228,8 +228,16 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14956768',
         },
         {
-          // 会员过期后重新开通弹窗
+          key: 2,
+          name: '会员开通界面弹窗',
+          fastQuery: true,
+          activityIds: '.music.biz.rn.activity.CashierRNActivity',
+          matches: '@ViewGroup[clickable=true] > [text="忍痛离开"]',
+          snapshotUrls: 'https://i.gkd.li/i/23455243',
+        },
+        {
           key: 7,
+          name: '会员过期后重新开通弹窗',
           action: 'back',
           activityIds: [
             'com.netease.cloudmusic.activity.MainActivity',
