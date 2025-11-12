@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           activityIds: 'com.google.android.gms.ads.AdActivity',
-          matches: '[desc="Interstitial close button"]',
+          matches: '[desc="Interstitial close button"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/23497601',
         },
       ],
