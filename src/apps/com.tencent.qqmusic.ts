@@ -179,6 +179,12 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/eb920de7-7f15-4398-b9a9-99ece0ab4ed6',
           snapshotUrls: 'https://i.gkd.li/i/22699223',
         },
+        {
+          key: 6,
+          activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
+          matches: '[desc="关闭弹窗，按钮"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23495699',
+        },
       ],
     },
     {
