@@ -125,10 +125,16 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: '.activity.AppStarterActivity',
-          matches: '[desc="关闭弹窗"][clickable=true][visibleToUser=true]',
+          activityIds: [
+            '.activity.AppStarterActivity',
+            'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
+          ],
+          matches: '[desc^="关闭弹窗"][clickable=true][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/47107dd3-b19a-4486-a0d1-6d9aa62ee722',
-          snapshotUrls: 'https://i.gkd.li/i/17057551',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17057551',
+            'https://i.gkd.li/i/23495699',
+          ],
         },
         {
           key: 2,
@@ -178,12 +184,6 @@ export default defineGkdApp({
             '@ImageView[childCount=0][visibleToUser=true][width<150 && height<150] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/eb920de7-7f15-4398-b9a9-99ece0ab4ed6',
           snapshotUrls: 'https://i.gkd.li/i/22699223',
-        },
-        {
-          key: 6,
-          activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
-          matches: '[desc="关闭弹窗，按钮"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/23495699',
         },
       ],
     },
