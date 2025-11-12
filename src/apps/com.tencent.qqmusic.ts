@@ -125,10 +125,16 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: '.activity.AppStarterActivity',
-          matches: '[desc="关闭弹窗"][clickable=true][visibleToUser=true]',
+          activityIds: [
+            '.activity.AppStarterActivity',
+            'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
+          ],
+          matches: '[desc^="关闭弹窗"][clickable=true][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/47107dd3-b19a-4486-a0d1-6d9aa62ee722',
-          snapshotUrls: 'https://i.gkd.li/i/17057551',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17057551',
+            'https://i.gkd.li/i/23495699',
+          ],
         },
         {
           key: 2,
