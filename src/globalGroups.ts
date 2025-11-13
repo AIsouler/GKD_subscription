@@ -83,7 +83,7 @@ export default defineGkdGlobalGroups([
       {
         key: 0,
         excludeMatches:
-          '[text*="全部"][text*="更新" || text*="忽略"][text.length<7][visibleToUser=true]',
+          '([text*="全部"][text*="更新" || text*="忽略"][text.length<7][visibleToUser=true]) || ([text^="继续" || text^="仍然"][text.length<6][visibleToUser=true])',
         matches: [
           '[text*="内测" || text*="测试版" || text*="新版" || text*="更新" || text*="升级" || text*="体验" || text*="內測" || text*="測試版" || text*="升級" || text*="體驗" || text*="Update" || text*="Upgrade" || text*="Experience"][text!*="自动" && text!*="自動" && text!*="成功" && text!*="失败" && text!*="失敗" && text!*="检查更新" && text!*="检测更新" && text!*="卸载"][childCount=0][visibleToUser=true]',
           '[text*="更新" || text*="下载" || text*="安装" || text*="升级" || text*="查看" || text*="体验" || text*="确定" || text*="确认"][text.length<6][childCount=0][visibleToUser=true]',
@@ -95,6 +95,12 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/19605413', // [!(text*="取消"&&text*="忽略")][text.length<6]
           'https://i.gkd.li/i/19918544',
           'https://i.gkd.li/i/20033908',
+
+          // [text^="继续" || text^="仍然"][text.length<6][visibleToUser=true]
+          'https://i.gkd.li/i/16487278',
+          'https://i.gkd.li/i/16487282',
+          'https://i.gkd.li/i/16550275',
+          'https://i.gkd.li/i/20053957',
         ],
       },
     ],
