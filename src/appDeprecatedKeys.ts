@@ -395,7 +395,7 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'com.dragon.read',
     name: '番茄免费小说',
-    deprecatedKeys: [11, 13],
+    deprecatedKeys: [11, 12, 13, 14],
   },
   {
     id: 'com.eg.android.AlipayGphone',

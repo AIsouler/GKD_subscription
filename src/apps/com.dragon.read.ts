@@ -124,7 +124,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告',
       rules: [
         {
           key: 0,
@@ -164,6 +164,34 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/96afbb4f-afd5-4f64-948d-15fc7bb14075',
           snapshotUrls: 'https://i.gkd.li/i/15223416',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: '.reader.ui.ReaderActivity',
+          matches:
+            'AwemeLynxVideoUI +n FlattenUIText[text="关闭"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6d33c17b-85de-4977-aa7f-b45e2a917a12',
+          snapshotUrls: 'https://i.gkd.li/i/23549149',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches:
+            'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13191156',
+        },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] +5 [text="领取限时福利"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14430326',
+            'https://i.gkd.li/i/14969861',
+          ],
         },
       ],
     },
@@ -252,37 +280,6 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12716592',
             'https://i.gkd.li/i/21589667',
-          ],
-        },
-      ],
-    },
-    {
-      key: 12,
-      name: '全屏广告',
-      desc: '点击"关闭"',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches:
-            'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13191156',
-        },
-      ],
-    },
-    {
-      key: 14,
-      name: '全屏广告-会员福利弹窗',
-      desc: '点击关闭',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches:
-            '@ImageView[clickable=true][visibleToUser=true] +5 [text="领取限时福利"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14430326',
-            'https://i.gkd.li/i/14969861',
           ],
         },
       ],
