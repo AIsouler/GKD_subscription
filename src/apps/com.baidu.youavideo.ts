@@ -5,6 +5,45 @@ export default defineGkdApp({
   name: '一刻相册',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          excludeActivityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity',
+          anyMatches: [
+            '[text*="跳过"][text.length<10][visibleToUser=true]',
+            '[text.length<10][text*="跳过"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/5185bf9d-70f7-4841-991e-55b1b6768e97',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23549481',
+            'https://i.gkd.li/i/23549490', // 无法快速查询
+          ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23549097',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23549504',
+            'https://i.gkd.li/i/23549553',
+          ],
+        },
+      ],
+    },
+    {
       key: 2,
       name: '更新提示-软件升级提醒',
       matchTime: 10000,
