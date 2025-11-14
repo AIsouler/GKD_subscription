@@ -551,8 +551,10 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverTransActivity$Main',
+          ],
           matches: [
             '[text="访问被拒绝" || text="人气太旺啦，请稍后再试"][visibleToUser=true]',
             '[id="com.alipay.mobile.antui:id/back_button"][visibleToUser=true]',
@@ -561,6 +563,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/23046994',
             'https://i.gkd.li/i/23096790',
+            'https://i.gkd.li/i/23549719',
           ],
         },
       ],
