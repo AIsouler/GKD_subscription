@@ -18,13 +18,13 @@ anyMatches: [
 
 ### 字节开屏广告
 
-右上角是圆形跳过按钮，被一个黄色圆圈包围 **（不可快速查询！）**
+右上角是圆形跳过按钮，被一个黄色圆圈包围 **（第一个选择器可快速查询，第二个选择器不可快速查询！）**
 
 - 选择器
 
 ```txt
 anyMatches: [
-  '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+  '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
   'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
 ],
 ```
@@ -37,7 +37,7 @@ anyMatches: [
 
 ### 排除匹配
 
-由于上面有两个选择器都匹配 ```跳过``` 字样，虽然开屏广告规则限制了 ```匹配时间、匹配次数、以及文本长度``` ，但还是可能存在误触的情况，特别是在应用的搜索页，所以可使用以下选择器来排除匹配应用的搜索页面或其他误触页面 **（可快速查询！）**
+由于上面有两个选择器都匹配 `跳过` 字样，虽然开屏广告规则限制了 `匹配时间、匹配次数、以及文本长度` ，但还是可能存在误触的情况，特别是在应用的搜索页，所以可使用以下选择器来排除匹配应用的搜索页面或其他误触页面 **（可快速查询！）**
 
 - 选择器
 
@@ -45,7 +45,7 @@ anyMatches: [
 ([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])
 ```
 
-之所以限制文本长度 ```[text.length>3 && text.length<6]``` ，是因为有部分应用在加载开屏广告时会把首页的节点也加载出来，而大部分应用的首页顶部都会有一个搜索框，可能也会有“搜索”两个字，如果排除匹配内包含了 ```vid*="search"``` 和 ```text="搜索"``` ，那么这种情况下无法跳过开屏广告，并且 ```vid*="search"``` 不支持快速查询，所以去掉了 ```vid*="search"``` 和 ```text="搜索"``` ，使得排除匹配选择器只能匹配上大部分应用搜索页存在的文本：```搜索记录``` 、```搜索历史``` 、```搜索发现``` 、```历史记录``` 、```最近搜索``` 、```最近在搜``` 、```大家都在搜``` 等等，这样就能实现仅排除匹配应用的搜索页，而不排除匹配应用的首页，避免出现上述无法跳过开屏广告的情况
+之所以限制文本长度 `[text.length>3 && text.length<6]` ，是因为有部分应用在加载开屏广告时会把首页的节点也加载出来，而大部分应用的首页顶部都会有一个搜索框，可能也会有“搜索”两个字，如果排除匹配内包含了 `vid*="search"` 和 `text="搜索"` ，那么这种情况下无法跳过开屏广告，并且 `vid*="search"` 不支持快速查询，所以去掉了 `vid*="search"` 和 `text="搜索"` ，使得排除匹配选择器只能匹配上大部分应用搜索页存在的文本：`搜索记录` 、`搜索历史` 、`搜索发现` 、`历史记录` 、`最近搜索` 、`最近在搜` 、`大家都在搜` 等等，这样就能实现仅排除匹配应用的搜索页，而不排除匹配应用的首页，避免出现上述无法跳过开屏广告的情况
 
 ## 更新提示（全局规则）
 
@@ -57,6 +57,12 @@ matches: [
   '[text*="更新" || text*="下载" || text*="安装" || text*="升级" || text*="查看" || text*="体验" || text*="确定" || text*="确认"][text.length<6][childCount=0][visibleToUser=true]',
   '([text*="不再提醒" || text$="再说" || text$="拒绝" || text$="再想想" || text*="再看看" || text^="忽略" || text^="暂不" || text^="放弃" || text^="取消" || text$="不要" || text$="再說" || text$="暫不" || text$="拒絕" || text*="稍后" || text^="关闭" || text$="Later" || text^="Ignore" || text^="Not now" || text^="Cancel"][!(text*="取消"&&text*="忽略")][text.length<6][childCount=0][visibleToUser=true]) || ([vid="closeIv" || vid="iv_close" || vid="iv_cancel" || vid="close" || vid="Close" || vid="img_close" || vid="btn_close" || vid="ivCancel" || vid="tvCancel" || vid="cancel" || vid="Cancel" || vid="ivClose" || vid="imgClose" || vid="iv_negative" || vid="update_close_icon"][childCount=0][visibleToUser=true])',
 ],
+```
+
+- 排除匹配，防止在一些安装页面误触 **（可快速查询！）**
+
+```txt
+([text*="全部"][text*="更新" || text*="忽略"][text.length<7][visibleToUser=true]) || ([text^="继续" || text^="仍然" || text*="权限"][text.length<6][visibleToUser=true]) || ([text*="来源"][visibleToUser=true])
 ```
 
 ## 青少年模式（全局规则）
@@ -142,7 +148,7 @@ matches: [
 
 ### 京东广告
 
-底部有 ```扭动或点击``` 字样，下方有圆形波浪
+底部有 `扭动或点击` 字样，下方有圆形波浪
 
 - 选择器-1 **（可快速查询！）**
 
@@ -172,7 +178,7 @@ matches: [
 
 ### 快手广告
 
-- 选择器，关闭按钮在左上角，```广告``` 字样在左下角 **（可快速查询！）**
+- 选择器，关闭按钮在左上角，`广告` 字样在左下角 **（可快速查询！）**
 
 示例：
 
@@ -203,7 +209,7 @@ matches: [
 
 ### 字节广告
 
-有 ```反馈``` 字样
+有 `反馈` 字样
 
 - 选择器-1 **（可覆盖 95% 的情况，不可快速查询！）**
 
