@@ -73,11 +73,16 @@ export default defineGkdApp({
         {
           key: 6,
           fastQuery: true,
-          activityIds:
+          activityIds: [
             '.activities.school_run_record_detail.RunRecordDetailActivity',
+            '.activities.main.MainActivity',
+          ],
           matches: '[vid="ad_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/5eff1f56-ea35-43f0-9789-644bd4213eed',
-          snapshotUrls: 'https://i.gkd.li/i/22863742',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22863742',
+            'https://i.gkd.li/i/23549297',
+          ],
         },
       ],
     },
