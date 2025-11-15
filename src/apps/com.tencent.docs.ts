@@ -14,8 +14,13 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
-          matches: '@LinearLayout > [id="com.tencent.docs:id/tv_gdt_ad_text"]',
-          snapshotUrls: 'https://i.gkd.li/i/13198082',
+          key: 0,
+          matches:
+            '@LinearLayout[clickable=true] - [text^="互动广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13198082',
+            'https://i.gkd.li/i/23557410',
+          ],
         },
       ],
     },
