@@ -69,5 +69,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 11,
+      name: '全屏广告-提现后-借贷弹窗-x掉',
+      rules: [
+        {
+          fastQuery: false,
+          activityIds:
+            'com.ss.android.ugc.aweme.live.LiveDummyHybridTransparentActivity',
+          matches: '[text="同意协议并查看额度"] < * - * < * -4 Image[index=0]',
+          snapshotUrls: 'https://i.gkd.li/i/23558501',
+        },
+      ],
+    },
   ],
 });
