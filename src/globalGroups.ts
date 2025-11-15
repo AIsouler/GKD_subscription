@@ -24,19 +24,25 @@ export default defineGkdGlobalGroups([
         key: 0,
         // 防止误触
         excludeMatches:
-          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])',
+          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])',
         anyMatches: [
-          '[text*="跳过"][text.length<10][visibleToUser=true]',
-          '@View[clickable=true][childCount=0] - [text="互动广告"][visibleToUser=true]',
-          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '[text*="跳过"][text.length<10][width<350 && height<200][visibleToUser=true]',
+          '@[name$="View" || name$="LinearLayout"][clickable=true][childCount<2][width<300 && height<150] - [text="互动广告"][visibleToUser=true]',
+          '[childCount=0][visibleToUser=true][width<350 && height<200][(text.length<10 && (text*="跳过" || text*="跳 过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         ],
-        snapshotUrls: 'https://i.gkd.li/i/21617612', // 互动开屏广告
+        snapshotUrls: [
+          // 互动开屏广告
+          'https://i.gkd.li/i/21617612',
+          'https://i.gkd.li/i/23557410',
+
+          // text*="跳 过"
+          'https://i.gkd.li/i/13421452',
+        ],
         excludeSnapshotUrls: [
           // 避免误触
           'https://i.gkd.li/i/15079224', // !(text*="退出")
           'https://i.gkd.li/i/17108010', // !(text="帮助")
           'https://i.gkd.li/i/18265000', // !(text="取消")
-          'https://i.gkd.li/i/19580951', // text="退款详情"
           'https://i.gkd.li/i/19952277', // text="Submit"
           'https://i.gkd.li/i/20946730', // text="设置"
           'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
