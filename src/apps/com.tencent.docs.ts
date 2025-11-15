@@ -14,10 +14,12 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
+          key: 0,
           matches: '@LinearLayout > [id="com.tencent.docs:id/tv_gdt_ad_text"]',
           snapshotUrls: 'https://i.gkd.li/i/13198082',
         },
         {
+          key: 1,
           activityIds: '.DocsFlutterActivity',
           matches: '@LinearLayout[childCount=1] > ImageView',
           snapshotUrls: 'https://i.gkd.li/i/23557410',
