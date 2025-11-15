@@ -17,6 +17,11 @@ export default defineGkdApp({
           matches: '@LinearLayout > [id="com.tencent.docs:id/tv_gdt_ad_text"]',
           snapshotUrls: 'https://i.gkd.li/i/13198082',
         },
+        {
+          activityIds: '.DocsFlutterActivity',
+          matches: '@LinearLayout[childCount=1] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/23557410',
+        },
       ],
     },
     {
