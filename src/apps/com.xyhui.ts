@@ -118,8 +118,11 @@ export default defineGkdApp({
           key: 10,
           fastQuery: true,
           activityIds: '.lut.act.LutMainActivity',
-          matches: '@[text="关闭"] < * +n * > [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/23125533',
+          matches: '@[text="关闭"] < * +n * >(1,2) [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23125533',
+            'https://i.gkd.li/i/23577305',
+          ],
         },
         {
           key: 11,
