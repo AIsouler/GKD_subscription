@@ -18,5 +18,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '权限提示-通知权限',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches: [
+            '[text^="开启通知权限"]',
+            '@[clickable=true] >2 [text="别再烦我"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23577888',
+        },
+      ],
+    },
   ],
 });
