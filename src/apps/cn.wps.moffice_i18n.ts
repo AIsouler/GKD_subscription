@@ -16,6 +16,14 @@ export default defineGkdApp({
             '@ImageView[clickable=true][width<90 && height<90] < LinearLayout + [text="确定退出吗？"]',
           snapshotUrls: 'https://i.gkd.li/i/23577702',
         },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches:
+            '@ImageView[clickable=true][width<90 && height<90] <n [childCount=2] <n [childCount=2] < [vid="TANGRAM_VIEW_CONTAINER_ID"]',
+          snapshotUrls: 'https://i.gkd.li/i/23578206',
+        },
       ],
     },
     {
