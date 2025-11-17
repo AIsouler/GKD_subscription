@@ -95,6 +95,14 @@ export default defineGkdApp({
             '@Image[width<140 && height<140][clickable=true][text!=null][childCount=0] - TextView[text.length>0] <n [childCount<6] <<n WebView[vid="poplayer_inner_view"]',
           snapshotUrls: 'https://i.gkd.li/i/23289412',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: 'com.taobao.tao.TBMainActivity',
+          matches:
+            '@Image[clickable=true][width<130 && height<130] - [text^="本月本店仅限"] <<n [vid="poplayer_inner_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/23567053',
+        },
       ],
     },
     {
