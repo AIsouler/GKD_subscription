@@ -19,6 +19,13 @@ export default defineGkdApp({
           matches: '[vid="ad_dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15374440',
         },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.activity.index.IndexActivity',
+          matches: ['[text^="小组件"]', '[text="以后再说"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/23567064',
+        },
       ],
     },
   ],
