@@ -150,6 +150,13 @@ export default defineGkdApp({
             '@ImageView[width<100 && height<100] <<4 * + * >4 [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/i/23567050',
         },
+        {
+          key: 14,
+          fastQuery: true,
+          activityIds: 'com.beizi.ad.v2.activity.BeiZiNewInterstitialActivity',
+          matches: '[vid="beizi_interstitial_ad_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/23577343',
+        },
       ],
     },
     {
