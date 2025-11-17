@@ -116,19 +116,19 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-首页底部广告',
+      name: '局部广告',
       rules: [
         {
           key: 1,
           fastQuery: true,
-          matchTime: 10000,
           activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
           matches:
-            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv"][visibleToUser=true]',
+            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv" || vid="iv_item_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13804525',
             'https://i.gkd.li/i/17893252',
             'https://i.gkd.li/i/18047731',
+            'https://i.gkd.li/i/23577590',
           ],
         },
       ],
