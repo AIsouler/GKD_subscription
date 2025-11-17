@@ -82,18 +82,18 @@ export default defineGkdApp({
         {
           key: 4,
           fastQuery: true,
-          activityIds: 'com.taobao.search.uniform.SearchActivity',
+          activityIds: [
+            'com.taobao.search.uniform.SearchActivity',
+            'com.taobao.android.detail.alittdetail.TTDetailActivity',
+            'com.taobao.tao.TBMainActivity',
+          ],
           matches:
-            '@TextView[clickable=true][width<160 && height<160] - [childCount=0][text="开心收下"] <<n [vid="poplayer_inner_view"]',
-          snapshotUrls: 'https://i.gkd.li/i/22949963',
-        },
-        {
-          key: 5,
-          fastQuery: true,
-          activityIds: 'com.taobao.android.detail.alittdetail.TTDetailActivity',
-          matches:
-            '@Image[width<140 && height<140][clickable=true][text!=null][childCount=0] - TextView[text.length>0] <n [childCount<6] <<n WebView[vid="poplayer_inner_view"]',
-          snapshotUrls: 'https://i.gkd.li/i/23289412',
+            '@[clickable=true][childCount=0][width<150 && height<150][index=parent.childCount.minus(1)] - TextView[text.length>0] <n View <<n WebView[vid="poplayer_inner_view"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/22949963',
+            'https://i.gkd.li/i/23289412',
+            'https://i.gkd.li/i/23567053',
+          ],
         },
       ],
     },
