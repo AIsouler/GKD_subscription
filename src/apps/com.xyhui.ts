@@ -138,6 +138,15 @@ export default defineGkdApp({
             '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/23325124',
         },
+        {
+          key: 13,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
+          matches:
+            '@ImageView[width<100 && height<100] <<4 * + * >4 [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/23567050',
+        },
       ],
     },
     {
