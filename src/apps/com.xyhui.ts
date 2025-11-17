@@ -106,20 +106,25 @@ export default defineGkdApp({
           activityIds: [
             'com.anythink.basead.ui.ATPortraitTranslucentActivity',
             'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
+            'com.beizi.ad.v2.activity.BeiZiNewInterstitialActivity',
           ],
           matches:
-            '[vid="anythink_myoffer_btn_close_id" || vid="sdm_myoffer_btn_close_id"]',
+            '[vid="anythink_myoffer_btn_close_id" || vid="sdm_myoffer_btn_close_id" || vid="beizi_interstitial_ad_close_iv"]',
           snapshotUrls: [
             'https://i.gkd.li/i/22868736',
             'https://i.gkd.li/i/23293759',
+            'https://i.gkd.li/i/23577343',
           ],
         },
         {
           key: 10,
           fastQuery: true,
           activityIds: '.lut.act.LutMainActivity',
-          matches: '@[text="关闭"] < * +n * > [text*="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/23125533',
+          matches: '@[text="关闭"] < * +n * >(1,2) [text*="广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23125533',
+            'https://i.gkd.li/i/23577305',
+          ],
         },
         {
           key: 11,
@@ -137,6 +142,15 @@ export default defineGkdApp({
           matches:
             '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           snapshotUrls: 'https://i.gkd.li/i/23325124',
+        },
+        {
+          key: 13,
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
+          matches:
+            '@ImageView[width<100 && height<100] <<4 * + * >4 [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/23567050',
         },
       ],
     },
