@@ -1,0 +1,22 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'cn.wps.moffice_i18n',
+  name: 'WPS Office Lite',
+  groups: [
+    {
+      key: 1,
+      name: '全屏广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.func.pdf.OverseaPayActivity',
+          matches:
+            '@ImageView[clickable=true][width<90 && height<90] < LinearLayout + [text="确定退出吗？"]',
+          snapshotUrls: 'https://i.gkd.li/i/23577702',
+        },
+      ],
+    },
+  ],
+});
