@@ -230,13 +230,12 @@ export default defineGkdApp({
         {
           key: 2,
           name: '会员开通界面弹窗',
-          fastQuery: true,
           activityIds: '.music.biz.rn.activity.CashierRNActivity',
           matches: '@ViewGroup[clickable=true] > [text="忍痛离开"]',
           snapshotUrls: 'https://i.gkd.li/i/23455243',
         },
         {
-          key: 7,
+          key: 3,
           name: '会员过期后重新开通弹窗',
           action: 'back',
           activityIds: [
@@ -248,6 +247,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14969806',
             'https://i.gkd.li/i/22448900',
           ],
+        },
+        {
+          key: 4,
+          activityIds: '.music.biz.rn.activity.LayerReactNativeActivity',
+          matches:
+            'ViewGroup[childCount=0] < @ViewGroup[clickable=true][childCount=1][visibleToUser=true][width=height][id=null][text=null][desc=null] <2 ViewGroup[childCount=4] < ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/407857dd-3537-4e51-9c51-2d32910bf70b',
+          snapshotUrls: 'https://i.gkd.li/i/23602564',
         },
       ],
     },

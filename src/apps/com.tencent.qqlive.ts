@@ -120,13 +120,24 @@ export default defineGkdApp({
         {
           key: 7,
           fastQuery: true,
-          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
           matches:
             '@View[clickable=true][childCount=0] <2 View < View < View < View < [name*="KMMChannelNormalFragment"] < FrameLayout <4 ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <5 [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/23431044',
         },
         {
-          preKeys: [0, 1, 2, 3, 4, 5, 6, 7],
+          key: 8,
+          fastQuery: true,
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <4 RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <3 RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [id="android:id/content"]',
+        },
+        {
+          key: 9,
+          matches:
+            'DetachableComposeView >2 ScrollView > View[childCount=1][getChild(0).text.length>0] + View[clickable=true][childCount=0][visibleToUser=true][width=height]',
+          snapshotUrls: 'https://i.gkd.li/i/23599723',
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
           key: 50,
           fastQuery: true,
           matches: '[text="直接关闭"][visibleToUser=true]',
