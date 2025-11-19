@@ -22,12 +22,15 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击[继续安装]',
-          matches: '[text="继续安装"]',
+          matches:
+            '[text="继续安装"][focusable=true || parent.focusable=true || parent.parent.focusable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13206444',
             'https://i.gkd.li/i/14046749',
             'https://i.gkd.li/i/16550275',
+            'https://i.gkd.li/i/23621117',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23621105',
         },
         {
           key: 1,
@@ -45,7 +48,6 @@ export default defineGkdApp({
         {
           key: 2,
           name: '点击[安装]',
-          activityIds: '.DeleteStagedFileOnResult',
           matches: '[vid="confirm_bottom_button_layout"]',
           snapshotUrls: 'https://i.gkd.li/i/14228348',
         },
