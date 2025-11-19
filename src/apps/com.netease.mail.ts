@@ -17,7 +17,8 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           excludeMatches: '[vid="ad_skip"][clickable=false]',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13195662',
             'https://i.gkd.li/i/16883928',

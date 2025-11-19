@@ -14,7 +14,8 @@ export default defineGkdApp({
       priorityTime: 10000,
       rules: [
         {
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/983cc392-1b01-4172-bc1d-2df001baeb3d',
           snapshotUrls: 'https://i.gkd.li/i/16490985',
         },
