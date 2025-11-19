@@ -16,19 +16,9 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15102179',
-        },
-        {
-          key: 1,
-          position: {
-            left: 'width * 0.8379',
-            top: 'width * 0.2055',
-          },
-          excludeActivityIds:
-            '[text*="跳过"][text.length<10][visibleToUser=true]',
-          matches: 'FrameLayout[depth=0]',
-          snapshotUrls: 'https://i.gkd.li/i/14717741',
         },
         {
           key: 2,
