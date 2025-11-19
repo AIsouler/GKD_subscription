@@ -342,6 +342,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/22894605',
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
+          matches: '[text="关闭广告"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/17ea1473-f4b9-4622-b6ed-60486d6208f1',
+          snapshotUrls: 'https://i.gkd.li/i/23619869',
+        },
       ],
     },
     {
