@@ -99,11 +99,21 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches: '@[text*="跳过"] + [text*="广告"]',
           exampleUrls: 'https://e.gkd.li/64dd159b-bff5-4dff-a4b9-d63f5b34acb7',
           snapshotUrls: 'https://i.gkd.li/i/16407631',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<160 && height<160] <2 ViewGroup[childCount=3] < FrameLayout < LinearLayout < LinearLayout <2 LinearLayout < FrameLayout < FrameLayout <2 FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/0776da1e-3ff6-4fba-a7e9-de8fa1fe5344',
+          snapshotUrls: 'https://i.gkd.li/i/23619626',
         },
       ],
     },
