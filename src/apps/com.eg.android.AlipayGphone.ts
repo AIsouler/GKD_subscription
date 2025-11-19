@@ -601,5 +601,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 32,
+      name: '功能类-确认清理已选中的缓存',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+          matches: [
+            '[text="是否确认清理已选中的缓存"][visibleToUser=true]',
+            '[text="确定"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/4dfc8429-e633-4cab-8f0e-7cf1f86f98ce',
+          snapshotUrls: 'https://i.gkd.li/i/23619464',
+        },
+      ],
+    },
   ],
 });
