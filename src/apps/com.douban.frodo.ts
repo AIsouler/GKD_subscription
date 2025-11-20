@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: -1,
       name: '开屏广告',
       matchTime: 10000,
-      actionMaximum: 1,
+      actionMaximum: 2,
       resetMatch: 'app',
       actionMaximumKey: 0,
       priorityTime: 10000,
@@ -30,12 +30,13 @@ export default defineGkdApp({
             top: 'width * 0.17', // height可能会变化，不建议使用
           },
           matches:
-            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1216 && width!=1440]',
+            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1440]',
           snapshotUrls: [
             'https://i.gkd.li/i/13601755',
             'https://i.gkd.li/i/16054268',
             'https://i.gkd.li/i/23324118',
             'https://i.gkd.li/i/23324139',
+            'https://i.gkd.li/i/23652259',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/23283060',
