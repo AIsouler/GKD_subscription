@@ -19,7 +19,7 @@ export default defineGkdApp({
       rules: [
         {
           excludeMatches: '[vid="root"]', // 在聊天界面禁用，若排除EditText[vid="input"]则滑动消息时会造成误触
-          matches: 'TextView[text^="跳过"][text.length<=10][vid!="title"]',
+          matches: 'TextView[text^="跳过"][text.length<=10][!(vid="title")]',
           snapshotUrls: [
             'https://i.gkd.li/i/13093155',
             'https://i.gkd.li/i/13207731',

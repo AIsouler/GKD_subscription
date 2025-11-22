@@ -56,9 +56,9 @@ export default defineGkdApp({
             'FrameLayout + RelativeLayout > RelativeLayout > ImageView + ImageView[desc=null][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12642270',
-            'https://i.gkd.li/i/12774910', // 使用 [desc!="返回"] 进行限定，防止在进入商品详情页时点击返回按钮
-            'https://i.gkd.li/i/15110548', // 避免误触
+            'https://i.gkd.li/i/12774910',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/15110548',
         },
         {
           key: 1,
