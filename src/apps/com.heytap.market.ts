@@ -29,9 +29,15 @@ export default defineGkdApp({
       rules: [
         {
           action: 'back',
-          activityIds: 'com.heytap.upgrade.ui.UpgradeActivity',
+          activityIds: [
+            'com.heytap.upgrade.ui.UpgradeActivity',
+            'com.heytap.cdo.client.cards.page.main.maintab.MainTabActivity',
+          ],
           matches: '[text="发现软件商店新版本"]',
-          snapshotUrls: 'https://i.gkd.li/i/13455965',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13455965',
+            'https://i.gkd.li/i/23688317',
+          ],
         },
       ],
     },
