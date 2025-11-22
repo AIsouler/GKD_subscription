@@ -17,7 +17,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           matches:
-            '[text*="跳过"][text.length<=10][id!="com.netease.mobimail:id/ad_skip"]',
+            '[text*="跳过"][text.length<=10][!(id="com.netease.mobimail:id/ad_skip")]',
           snapshotUrls: [
             'https://i.gkd.li/i/12686132',
             'https://i.gkd.li/i/13328441',

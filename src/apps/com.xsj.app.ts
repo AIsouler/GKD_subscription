@@ -22,9 +22,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           activityIds: 'com.qq.e.ads.ADActivity',
           matches:
-            'FrameLayout[childCount=3] > TextView[text!=""] + @ImageView[clickable=true][visibleToUser=true]',
+            '@ImageView[clickable=true][childCount=0] - [text*="送福利啦"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/13670176',
         },
       ],

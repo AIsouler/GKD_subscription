@@ -78,7 +78,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '[id!="why_this_ad_btn"] -2 View[id="mys-wrapper"] + View >2 Button[clickable=true]',
+            '[!(id="why_this_ad_btn")] -2 View[id="mys-wrapper"] + View >2 Button[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12642993',
             'https://i.gkd.li/i/12643229',
