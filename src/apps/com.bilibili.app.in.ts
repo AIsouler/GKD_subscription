@@ -56,17 +56,19 @@ export default defineGkdApp({
     {
       key: 8,
       name: '权限提示-通知权限',
-      desc: '自动点击"暂不"',
       fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           activityIds: 'tv.danmaku.bili.MainActivityV2',
           matches: ['[text="打开推送通知"]', '[text="暂不"]'],
           exampleUrls: 'https://e.gkd.li/e67d6d21-f09b-44b0-bf91-8b9fa0670e27',
           snapshotUrls: 'https://i.gkd.li/i/15907493',
+        },
+        {
+          activityIds: 'com.bilibili.vip.web.VipWebActivity',
+          matches:
+            '@Image < View + [id="subscribeContainer"] > [text="权益更新时推送通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/23714120',
         },
       ],
     },
@@ -99,18 +101,6 @@ export default defineGkdApp({
           matches: '[vid="story_ctrl_router"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/4bfd6131-d4be-46be-affb-73338b01f49c',
           snapshotUrls: 'https://i.gkd.li/i/18164075',
-        },
-      ],
-    },
-    {
-      key: 11,
-      name: '通知提示-大会员权益提醒',
-      rules: [
-        {
-          activityIds: 'com.bilibili.vip.web.VipWebActivity',
-          matches:
-            '@Image < View + [id="subscribeContainer"] > [text="权益更新时推送通知"]',
-          snapshotUrls: 'https://i.gkd.li/i/23714120',
         },
       ],
     },
