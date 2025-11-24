@@ -102,5 +102,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 11,
+      name: '通知提示-大会员权益提醒',
+      rules: [
+        {
+          activityIds: 'com.bilibili.vip.web.VipWebActivity',
+          matches:
+            '@Image < View + [id="subscribeContainer"] > [text="权益更新时推送通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/23714120',
+        },
+      ],
+    },
   ],
 });
