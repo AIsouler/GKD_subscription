@@ -169,5 +169,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 10,
+      name: '评价提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches: [
+            '[text="喜欢WPS Office吗？"]',
+            '[text="以后再说"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23714159',
+        },
+      ],
+    },
   ],
 });
