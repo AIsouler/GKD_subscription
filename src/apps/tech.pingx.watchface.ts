@@ -9,9 +9,10 @@ export default defineGkdApp({
       name: '通知提示-公告',
       rules: [
         {
+          fastQuery: true,
           activityIds: 'io.dcloud.PandoraEntryActivity',
           matches: [
-            '[text~=".*请勿.*电子书.*"]',
+            '[text*="请勿"][text*="电子书"]',
             '[text="确定"][clickable=true]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/23714166',
