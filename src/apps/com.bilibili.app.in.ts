@@ -56,15 +56,20 @@ export default defineGkdApp({
     {
       key: 8,
       name: '权限提示-通知权限',
-      fastQuery: true,
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           activityIds: 'tv.danmaku.bili.MainActivityV2',
           matches: ['[text="打开推送通知"]', '[text="暂不"]'],
           exampleUrls: 'https://e.gkd.li/e67d6d21-f09b-44b0-bf91-8b9fa0670e27',
           snapshotUrls: 'https://i.gkd.li/i/15907493',
         },
         {
+          key: 1,
           activityIds: 'com.bilibili.vip.web.VipWebActivity',
           matches:
             '@Image < View + [id="subscribeContainer"] > [text="权益更新时推送通知"]',
