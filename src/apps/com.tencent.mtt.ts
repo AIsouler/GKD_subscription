@@ -21,8 +21,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '@View[clickable=true] +2 * >3 [text="向上滑动查看"]',
-          snapshotUrls: 'https://i.gkd.li/i/14819586',
+          matches:
+            '@View[clickable=true][childCount=0] +2 * >3 [text^="向上滑动"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14819586',
+            'https://i.gkd.li/i/23743205',
+          ],
         },
       ],
     },
