@@ -33,5 +33,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '局部广告-拍卖提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'org.telegram.ui.LaunchActivity',
+          matches:
+            '@ImageView[clickable=true][width<140 && height<140] - * >2 [text$="Auction is live!"]',
+          snapshotUrls: 'https://i.gkd.li/i/23725025',
+        },
+      ],
+    },
   ],
 });
