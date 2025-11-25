@@ -24,7 +24,7 @@ export default defineGkdGlobalGroups([
         key: 0,
         // 防止误触
         excludeMatches:
-          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="Submit" || text*="阅读并同意" || text$="选好了" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text$="设置" || text^="选择" || text*="登录" || text^="下一步" || text^="完成"][text.length<10][visibleToUser=true])',
+          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="Submit" || text*="阅读并同意" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text$="设置" || text^="选择" || text*="登录" || text$="选好了" || text^="下一步" || text^="完成"][text.length<10][visibleToUser=true])',
         anyMatches: [
           '@[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true] <<n [parent=null]',
           '@[name$="View" || name$="LinearLayout"][clickable=true][childCount<2][width<300 && height<150] - [text="互动广告"][visibleToUser=true]',
