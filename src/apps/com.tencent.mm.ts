@@ -563,25 +563,26 @@ export default defineGkdApp({
     {
       key: 34,
       name: '功能类-付款时自动点击[支付]',
-      fastQuery: true,
       actionMaximum: 1,
-      activityIds: [
-        '.framework.app.UIPageFragmentActivity',
-        '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
-      ],
       rules: [
         {
           key: 0,
-          anyMatches: [
+          fastQuery: true,
+          activityIds: '.framework.app.UIPageFragmentActivity',
+          matches:
             'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
-            '[desc^="付款方式"] + Button[desc="支付"][visibleToUser=true]',
-          ],
           snapshotUrls: [
             'https://i.gkd.li/i/15144570',
             'https://i.gkd.li/i/15144571',
             'https://i.gkd.li/i/15360745',
-            'https://i.gkd.li/i/23746748',
           ],
+        },
+        {
+          key: 1,
+          activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
+          matches:
+            '[desc^="付款方式"] + Button[desc="支付"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23746748',
         },
       ],
     },
