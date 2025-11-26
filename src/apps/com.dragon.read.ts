@@ -16,7 +16,7 @@ export default defineGkdApp({
           fastQuery: true,
           actionDelay: 1000, // 过早点击可能导致应用闪退
           matches:
-            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][visibleToUser=true]',
+            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e36d701f-bcee-48d5-99da-1c5301101d9e',
           snapshotUrls: 'https://i.gkd.li/i/23282793',
         },
@@ -192,6 +192,19 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14430326',
             'https://i.gkd.li/i/14969861',
           ],
+        },
+        {
+          key: 7,
+          fastQuery: true,
+          position: {
+            left: 'width * 0.9123',
+            top: 'width * 0.067',
+          },
+          activityIds: '.reader.ui.ReaderActivity',
+          matches:
+            'View[id=null][text=null][desc=null][childCount=0] < [id="com.dragon.read.awemevideo:id/fullvideo_videoview"][childCount=1][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c29c5647-e2ee-460f-87aa-8717779645ec',
+          snapshotUrls: 'https://i.gkd.li/i/23621776',
         },
       ],
     },

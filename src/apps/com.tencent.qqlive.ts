@@ -44,6 +44,7 @@ export default defineGkdApp({
         '.ona.activity.VideoDetailActivity',
         '.ona.activity.origin.OriginIconHomeActivity',
         '.kmm.VideoDetailKmmActivityBk',
+        '.ona.activity.HomeActivity',
       ],
       rules: [
         {
@@ -128,13 +129,20 @@ export default defineGkdApp({
           key: 8,
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <4 RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <3 RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [id="android:id/content"]',
+            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <n RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <(2,3) RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23625987',
+            'https://i.gkd.li/i/23625990',
+          ],
         },
         {
           key: 9,
           matches:
             'DetachableComposeView >2 ScrollView > View[childCount=1][getChild(0).text.length>0] + View[clickable=true][childCount=0][visibleToUser=true][width=height]',
-          snapshotUrls: 'https://i.gkd.li/i/23599723',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23599723',
+            'https://i.gkd.li/i/23625826',
+          ],
         },
         {
           preKeys: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -341,6 +349,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/22870972',
             'https://i.gkd.li/i/22894605',
           ],
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
+          matches: '[text="关闭广告"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/17ea1473-f4b9-4622-b6ed-60486d6208f1',
+          snapshotUrls: 'https://i.gkd.li/i/23619869',
         },
       ],
     },

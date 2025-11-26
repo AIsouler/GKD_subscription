@@ -16,12 +16,14 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           action: 'clickCenter', // 该快照action: 'click' 无效
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/20139575',
         },
         {
           key: 1,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/20139739',
         },
       ],

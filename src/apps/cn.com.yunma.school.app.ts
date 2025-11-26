@@ -25,6 +25,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          matchRoot: true, // 背景动画会持续产生无障碍事件
           activityIds: 'com.yunma.baseextend.ui.WebActivity',
           matches:
             '@TextView[text="开始"][childCount=0] < View[childCount=1] <<n WebView[text="立即用水"] <<2 [vid="web_parent_layout_id"]',

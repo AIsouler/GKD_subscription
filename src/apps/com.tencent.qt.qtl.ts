@@ -15,7 +15,8 @@ export default defineGkdApp({
       rules: [
         {
           action: 'clickCenter',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/8e923c51-48e7-431c-abf8-e564761b772e',
           snapshotUrls: 'https://i.gkd.li/i/16568456',
         },

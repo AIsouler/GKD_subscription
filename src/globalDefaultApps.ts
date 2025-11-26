@@ -379,6 +379,7 @@ export const openAdWhiteListAppIDs = new Set([
   'com.vivo.game', // vivo游戏中心 https://i.gkd.li/i/20097148
   'com.meizu.media.video', // 魅族视频
   'com.hihonor.vmall', // 荣耀商城
+  'com.miui.systemAdSolution', // 智能服务
 ]);
 
 // 更新提示白名单

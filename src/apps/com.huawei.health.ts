@@ -24,17 +24,6 @@ export default defineGkdApp({
         },
       ],
     },
-    // {
-    //   key: 1,
-    //   name: '局部广告-“我的”页会员广告',
-    //   rules: [
-    //     {
-    //       activityIds: 'com.huawei.health.MainActivity',
-    //       matches: '[id="com.huawei.health:id/item_banner_ad_close_icon"]',
-    //       snapshotUrls: 'https://i.gkd.li/i/12667814',
-    //     },
-    //   ],
-    // },
     {
       key: 2,
       name: '全屏广告-弹窗广告',
@@ -50,24 +39,29 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '功能类-请求开启个性化推荐弹窗',
+      name: '其他-个性化推荐弹窗',
       rules: [
         {
           activityIds: 'com.huawei.watchface.api.WebViewActivity',
-          matches: '[text="开启个性化推荐"] +2 [text="开启"] + Button',
+          matches:
+            '[text="开启个性化推荐"] +2 [text="开启"] + Button[clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13546292',
         },
       ],
     },
     {
       key: 4,
-      name: '局部广告-底部横幅广告',
+      name: '局部广告',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.huawei.health.MainActivity',
-          matches: '[id="com.huawei.health:id/marketing_close_icon"]',
-          snapshotUrls: 'https://i.gkd.li/i/13587206',
+          matches:
+            '[id="com.huawei.health:id/marketing_close_icon" || vid="close_button_layout"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13587206',
+            'https://i.gkd.li/i/23763115',
+          ],
         },
       ],
     },
