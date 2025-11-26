@@ -579,6 +579,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          matchRoot: true,
           activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
           matches:
             '[desc^="付款方式"] + Button[desc="支付"][visibleToUser=true]',
