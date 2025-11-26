@@ -501,9 +501,10 @@ export default defineGkdApp({
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches:
-            '[id="com.alipay.mobile.beevideo:id/fl_bee_player_view_container"][visibleToUser=true]',
+            '@[id="com.alipay.mobile.beevideo:id/fl_bee_player_view_container"][childCount=2] > [id="com.alipay.mobile.beevideo:id/rl_player_poster"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/3698e238-f39b-47ce-b0df-e2e47c15b400',
           snapshotUrls: 'https://i.gkd.li/i/21467483',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23763580',
         },
       ],
     },
