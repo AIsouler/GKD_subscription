@@ -123,12 +123,13 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
           matches:
-            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv" || vid="iv_item_close"][visibleToUser=true]',
+            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv" || vid="iv_item_close" || vid="iv_cloud_sync_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13804525',
             'https://i.gkd.li/i/17893252',
             'https://i.gkd.li/i/18047731',
             'https://i.gkd.li/i/23577590',
+            'https://i.gkd.li/i/23786789',
           ],
         },
       ],
@@ -181,6 +182,19 @@ export default defineGkdApp({
             '[text="以后再说"][clickable=true]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/23714159',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '全屏广告-开启云同步提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'cn.wps.moffice.plugin.cloudPage.newpage.NewCloudSettingNewActivity',
+          matches: '[vid="cloud_popup_close_view"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23786698',
         },
       ],
     },
