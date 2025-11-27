@@ -450,6 +450,7 @@ export default defineGkdApp({
             'com.bilibili.video.story.StoryVideoActivity',
             'com.bilibili.video.story.StoryTransparentActivity',
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+            'com.bilibili.ship.theseus.playlist.UnitedPlaylistActivity',
           ],
           matches: '@LinearLayout[clickable=true] > [text="展开更多评论"]',
           exampleUrls: 'https://e.gkd.li/e7b7167e-7623-4079-9f16-fd253f303074',
@@ -457,6 +458,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/22572375',
             'https://i.gkd.li/i/23325508',
             'https://i.gkd.li/i/22573433',
+            'https://i.gkd.li/i/23786106',
           ],
         },
       ],
@@ -488,6 +490,7 @@ export default defineGkdApp({
             'com.bilibili.video.story.StoryVideoActivity', // 视频：竖屏模式1
             'com.bilibili.video.story.StoryTransparentActivity', // 视频：竖屏模式2
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity', // 视频：详情页模式
+            'com.bilibili.ship.theseus.playlist.UnitedPlaylistActivity', // 视频：播放列表（稍后再看/收藏夹）
             'com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2', // 动态：图片
             'com.bilibili.lib.ui.ComposeActivity', // 动态：评论图片
             'com.bilibili.column.ui.detail.image.ColumnImageViewerActivity', // 专栏图片
@@ -498,6 +501,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23325552', // 视频：竖屏模式1
             'https://i.gkd.li/i/23304237', // 视频：竖屏模式2
             'https://i.gkd.li/i/23304245', // 视频：详情页模式
+            'https://i.gkd.li/i/23786065', // 视频：播放列表（稍后再看/收藏夹）
             'https://i.gkd.li/i/23305280', // 动态：帖内图片
             'https://i.gkd.li/i/23305281', // 动态：评论图片
             'https://i.gkd.li/i/23305275', // 专栏图片
