@@ -19,5 +19,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '评价提示-通话质量评价',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingFeedbackMeetingExperienceActivity',
+          matches: [
+            '[text="通话品质如何"]',
+            '[vid="closeBtn"][clickable=true]',
+          ],
+        },
+      ],
+    },
   ],
 });
