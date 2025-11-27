@@ -137,5 +137,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '局部广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '@ImageView[clickable=true][width<100 && height<100] <<n [vid="panel_header"]',
+          snapshotUrls: 'https://i.gkd.li/i/23787178',
+        },
+      ],
+    },
   ],
 });
