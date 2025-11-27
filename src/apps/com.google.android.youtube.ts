@@ -162,7 +162,7 @@ export default defineGkdApp({
             'com.google.android.apps.youtube.app.watchwhile.MainActivity',
           matches:
             '@[vid="overflow_button"][clickable=true] <<n [vid="collapsible_ad_cta_overlay_container"]',
-          snapshotUrls: 'https://i.gkd.li/i/23772964',
+          snapshotUrls: 'https://i.gkd.li/i/23790199',
         },
         {
           key: 2,
