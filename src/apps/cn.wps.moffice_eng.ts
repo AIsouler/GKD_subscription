@@ -192,7 +192,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds:
             'cn.wps.moffice.plugin.cloudPage.newpage.NewCloudSettingNewActivity',
-          matches: '[vid="cloud_popup_close_view"]',
+          matches: '[vid="cloud_popup_close_view"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/23786698',
         },
       ],
