@@ -35,9 +35,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: [
             'cn.wps.moffice.main.AfterLoginActivity',
@@ -48,6 +49,22 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13259097',
             'https://i.gkd.li/i/12882712',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches:
+            'View[childCount=3] > Image[text!=null] +2 @TextView[clickable=true] <<n [vid="push_tips_ptr_super_webview"]',
+          snapshotUrls: 'https://i.gkd.li/i/13945835',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'cn.wps.moffice.plugin.cloudPage.newpage.NewCloudSettingNewActivity',
+          matches: '[vid="cloud_popup_close_view"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23786698',
         },
       ],
     },
@@ -135,19 +152,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 8,
-      name: '全屏广告-体验超级会员弹窗',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
-          matches:
-            'View[childCount=3] > Image[text!=null] +2 @TextView[clickable=true] <<n [vid="push_tips_ptr_super_webview"]',
-          snapshotUrls: 'https://i.gkd.li/i/13945835',
-        },
-      ],
-    },
-    {
       key: 9,
       name: '功能类-自动签到',
       fastQuery: true,
@@ -182,19 +186,6 @@ export default defineGkdApp({
             '[text="以后再说"][clickable=true]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/23714159',
-        },
-      ],
-    },
-    {
-      key: 11,
-      name: '全屏广告-开启云同步提示',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds:
-            'cn.wps.moffice.plugin.cloudPage.newpage.NewCloudSettingNewActivity',
-          matches: '[vid="cloud_popup_close_view"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/23786698',
         },
       ],
     },
