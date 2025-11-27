@@ -31,6 +31,7 @@ export default defineGkdApp({
             '[text="通话品质如何"]',
             '[vid="closeBtn"][clickable=true]',
           ],
+          snapshotUrls: 'https://i.gkd.li/i/23786665',
         },
       ],
     },
@@ -44,6 +45,7 @@ export default defineGkdApp({
             'com.tencent.wemeet.sdk.meeting.premeeting.home.HomeActivity',
           matches:
             '@Button[clickable=true][childCount=1] > ImageView[childCount=0][width<80 && height<80] <<n [vid="operatingBannerContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/23786670',
         },
       ],
     },
