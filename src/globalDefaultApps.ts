@@ -330,6 +330,7 @@ export const updateBlackListAppIDs = new Set([
 
   'info.muge.appshare', // AppShare
   'com.jingdong.app.mall', // 京东
+  'com.netease.uuremote', // UU远程（不更新会强制退出）
 ]);
 
 // 青少年模式黑名单
