@@ -34,5 +34,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '局部广告-卡片广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tencent.wemeet.sdk.meeting.premeeting.home.HomeActivity',
+          matches:
+            '@Button[clickable=true][childCount=1] > ImageView[childCount=0][width<80 && height<80] <<n [vid="operatingBannerContainer"]',
+        },
+      ],
+    },
   ],
 });
