@@ -180,6 +180,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23289402',
           ],
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds:
+            'com.zjwh.android_wh_physicalfitness.mvi.home.HomeActivity',
+          matches:
+            '@[id="com.kwad.dy.sdk:id/ksad_ad_dislike"][clickable=true] - * >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/23773011',
+        },
       ],
     },
     {
