@@ -184,6 +184,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23762864',
           ],
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.xpan.pan.activity.XPanFileBrowserActivity',
+          matches: '[vid="btn_ad_feedback"]',
+          snapshotUrls: 'https://i.gkd.li/i/23795248',
+        },
       ],
     },
     {
