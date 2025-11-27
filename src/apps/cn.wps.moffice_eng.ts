@@ -184,5 +184,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 11,
+      name: '全屏广告-开启云同步提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'cn.wps.moffice.plugin.cloudPage.newpage.NewCloudSettingNewActivity',
+          matches: '[vid="cloud_popup_close_view"]',
+        },
+      ],
+    },
   ],
 });
