@@ -580,6 +580,7 @@ export default defineGkdApp({
         {
           key: 1,
           matchRoot: true,
+          forcedTime: 100000, // https://github.com/AIsouler/GKD_subscription/issues/1486
           activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
           matches:
             '[desc^="付款方式"] + Button[desc="支付"][visibleToUser=true]',
