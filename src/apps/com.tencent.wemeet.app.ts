@@ -49,5 +49,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingPictureActivity',
+          matches: '[vid="btnClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/23787037',
+        },
+      ],
+    },
   ],
 });
