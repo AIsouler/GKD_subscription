@@ -347,5 +347,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 33,
+      name: '功能类-自动解锁 Windows QQ',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds:
+            'com.tencent.biz.qrcode.activity.UnlockPCQuickVerifyActivity',
+          matches: '[text="解锁"]',
+          snapshotUrls: 'https://i.gkd.li/i/15360265',
+        },
+      ],
+    },
   ],
 });
