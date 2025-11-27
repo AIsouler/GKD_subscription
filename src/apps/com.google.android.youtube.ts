@@ -151,5 +151,29 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 9,
+      name: '分段广告-播放页广告',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '@[vid="overflow_button"][clickable=true] <<n [vid="collapsible_ad_cta_overlay_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/23772964',
+        },
+        {
+          key: 2,
+          preKeys: [1],
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches: '@[clickable=true] > [text="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/23772979',
+        },
+      ],
+    },
   ],
 });
