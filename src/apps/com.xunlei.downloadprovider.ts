@@ -109,9 +109,12 @@ export default defineGkdApp({
           activityIds:
             'com.xunlei.web.XLWebViewActivity$XLWebViewActivityImpl2',
           matches:
-            '[text="支付优惠卡"] >3 View[childCount=2] >2 View[childCount=9] > @View[clickable=true][visibleToUser=true][childCount=0][index=0][desc!=null] <<n [vid="refreshLayout"]',
+            '[text="老用户专属惊喜价"] + View > @[desc^="javascript"][clickable=true][childCount=0][width<120&&height<120][visibleToUser=true] <<n [vid="refreshLayout"]',
           exampleUrls: 'https://e.gkd.li/ade9ca8a-b7a5-4a22-8c1f-d14423a34136',
-          snapshotUrls: 'https://i.gkd.li/i/16914136',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16914136',
+            'https://i.gkd.li/i/23833175',
+          ],
         },
         {
           key: 4,
