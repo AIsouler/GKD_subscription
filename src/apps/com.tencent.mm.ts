@@ -210,10 +210,7 @@ export default defineGkdApp({
           key: 2,
           name: '点击红包-开',
           matchRoot: true,
-          activityIds: [
-            '.plugin.luckymoney.ui.LuckyMoneyNotHookReceiveUI',
-            '.plugin.luckymoney.ui.LuckyMoneyNewReceiveUI',
-          ],
+          activityIds: '.plugin.luckymoney.ui.LuckyMoney',
           matches: '@Button[desc="开"] -3 LinearLayout >2 [text$="红包"]',
           snapshotUrls: [
             'https://i.gkd.li/i/18134828',
@@ -224,11 +221,12 @@ export default defineGkdApp({
         {
           preKeys: [1, 2],
           name: '从红包结算界面返回',
-          activityIds: '.plugin.luckymoney.ui.LuckyMoneyDetailUI',
+          activityIds: '.plugin.luckymoney.ui.LuckyMoney',
           matches: '@ImageView[desc="返回"] +2 LinearLayout >8 [text$="红包"]',
           snapshotUrls: [
             'https://i.gkd.li/i/18134829',
             'https://i.gkd.li/i/18135031',
+            'https://i.gkd.li/i/23825631',
           ],
         },
       ],
