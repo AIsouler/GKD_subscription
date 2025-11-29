@@ -16,7 +16,7 @@ apps.forEach((appConfig) => {
 });
 
 export default defineGkdSubscription({
-  id: 666,
+  id: 997508,
   name: '张开金的GKD订阅',
   version: 0,
   author: 'AIsouler',
