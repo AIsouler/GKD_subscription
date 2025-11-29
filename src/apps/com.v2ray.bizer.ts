@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '通知提示-公告弹窗',
       desc: '点击 X 关闭弹窗',
-      matchTime: 10000,
+      matchTime: 1000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
