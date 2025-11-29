@@ -85,8 +85,8 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '其他-年度报告邀请函弹窗',
-      desc: '点击关闭',
+      name: '全屏广告-弹窗广告（部分误触）',
+      desc: '注意：会关闭年度报告邀请函弹窗',
       rules: [
         {
           fastQuery: true,
