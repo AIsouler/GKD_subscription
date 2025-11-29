@@ -124,10 +124,7 @@ export default defineGkdApp({
           key: 1,
           name: '商城快捷方式',
           fastQuery: true,
-          activityIds: [
-            'com.ss.android.ugc.aweme.main.MainActivity',
-            'com.ss.android.ugc.aweme.live.LiveDummyActivity',
-          ],
+          activityIds: ['.main.MainActivity', '.live.LiveDummyActivity'],
           matches:
             '[text="添加抖音商城到桌面"] +2 LinearLayout > [text="不感兴趣"]',
           snapshotUrls: [
@@ -139,8 +136,7 @@ export default defineGkdApp({
           key: 2,
           name: '搜索组件',
           fastQuery: true,
-          activityIds:
-            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+          activityIds: '.search.activity.SearchResultActivity',
           matches: '[text="暂不开启"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14325749',
         },
@@ -163,20 +159,24 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '[text="不感兴趣"][visibleToUser=true]',
+          activityIds: '.main.MainActivity',
+          anyMatches: [
+            'FlattenUIText[text="不感兴趣"][visibleToUser=true]',
+            '@[text="不感兴趣"] - FrameLayout >2 [text*="也关注了"][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13800207',
             'https://i.gkd.li/i/13996724',
             'https://i.gkd.li/i/14661956',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23833191',
         },
         {
           key: 1,
           fastQuery: true,
           activityIds: [
-            'com.ss.android.ugc.aweme.live.LiveDummyActivity',
-            'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
+            '.live.LiveDummyActivity',
+            '.commerce.sdk.MallContainerActivity',
             'com.bytedance.android.shopping.store.tabkit.container.TabKitActivity',
           ],
           matches: [
@@ -259,8 +259,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '顶部横条',
-          activityIds:
-            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+          activityIds: '.search.activity.SearchResultActivity',
           matches: '@ImageView[clickable=true] - [text^="开启定位"]',
           snapshotUrls: 'https://i.gkd.li/i/13755718',
         },
