@@ -38,5 +38,29 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: '.login.view.dialog.UpdateHintDialog',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[vid="cb_ignore_version"][checked=false][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4833b753-6fcd-4caf-b57a-1a27fdfecd0a',
+          snapshotUrls: 'https://i.gkd.li/i/23833318',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23833319',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="暂不更新"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23833318',
+        },
+      ],
+    },
   ],
 });
