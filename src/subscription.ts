@@ -17,7 +17,7 @@ apps.forEach((appConfig) => {
 
 export default defineGkdSubscription({
   id: 666,
-  name: 'AIsouler的GKD订阅-禁止传播',
+  name: '张开金的GKD订阅',
   version: 0,
   author: 'AIsouler',
   checkUpdateUrl: './AIsouler_gkd.version.json5',
