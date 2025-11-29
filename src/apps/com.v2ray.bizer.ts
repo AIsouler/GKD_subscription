@@ -21,5 +21,4 @@ export default defineGkdApp({
       ],
     },
   ],
-},
-);
+});
