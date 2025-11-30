@@ -66,6 +66,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/6cf71a22-0e21-4877-86a7-69d84353ad5a',
           snapshotUrls: 'https://i.gkd.li/i/18236745',
         },
+        {
+          key: 2,
+          name: '消息页面顶部广告',
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
+          matches:
+            '@ImageView[desc="关闭"][clickable=true][childCount=0] -2 [text$="试用超级会员"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23837678',
+        },
       ],
     },
     {
