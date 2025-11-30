@@ -28,5 +28,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '全屏广告-播放暂停',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'org.iqiyi.video.activity.PlayerActivity',
+          matches:
+            '@ImageView[id="com.qiyi.video.pad:id/unused_res_a"] - TextView[text^="关闭广告"]',
+          exampleUrls: 'https://e.gkd.li/471a67f0-5926-4caa-a070-2b4635b5052a',
+          snapshotUrls: 'https://i.gkd.li/i/23837894',
+        },
+      ],
+    },
   ],
 });
