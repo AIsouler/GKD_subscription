@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '全屏广告-普通弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击关闭',
       rules: [
         {
