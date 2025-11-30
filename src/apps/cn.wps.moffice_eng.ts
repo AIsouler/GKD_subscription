@@ -35,9 +35,10 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: [
             'cn.wps.moffice.main.AfterLoginActivity',
@@ -48,6 +49,22 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13259097',
             'https://i.gkd.li/i/12882712',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches:
+            'View[childCount=3] > Image[text!=null] +2 @TextView[clickable=true] <<n [vid="push_tips_ptr_super_webview"]',
+          snapshotUrls: 'https://i.gkd.li/i/13945835',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'cn.wps.moffice.plugin.cloudPage.newpage.NewCloudSettingNewActivity',
+          matches: '[vid="cloud_popup_close_view"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23786698',
         },
       ],
     },
@@ -116,33 +133,21 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告-首页底部广告',
+      name: '局部广告',
       rules: [
         {
           key: 1,
           fastQuery: true,
-          matchTime: 10000,
           activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
           matches:
-            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv"][visibleToUser=true]',
+            '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close" || vid="phone_message_close_button" || vid="close_home_ad_banner_iv" || vid="iv_item_close" || vid="iv_cloud_sync_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13804525',
             'https://i.gkd.li/i/17893252',
             'https://i.gkd.li/i/18047731',
+            'https://i.gkd.li/i/23577590',
+            'https://i.gkd.li/i/23786789',
           ],
-        },
-      ],
-    },
-    {
-      key: 8,
-      name: '全屏广告-体验超级会员弹窗',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
-          matches:
-            'View[childCount=3] > Image[text!=null] +2 @TextView[clickable=true] <<n [vid="push_tips_ptr_super_webview"]',
-          snapshotUrls: 'https://i.gkd.li/i/13945835',
         },
       ],
     },
@@ -166,6 +171,21 @@ export default defineGkdApp({
             '[text="签到成功"] -2 View[childCount=1] > @Image[text!=null][childCount=0] <<n [vid="push_tips_ptr_super_webview"]',
           exampleUrls: 'https://e.gkd.li/c8c2f3cb-9bde-4a01-8eb6-145cf668993f',
           snapshotUrls: 'https://i.gkd.li/i/16382075',
+        },
+      ],
+    },
+    {
+      key: 10,
+      name: '评价提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
+          matches: [
+            '[text="喜欢WPS Office吗？"]',
+            '[text="以后再说"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23714159',
         },
       ],
     },

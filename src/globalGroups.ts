@@ -15,6 +15,7 @@ export default defineGkdGlobalGroups([
     matchTime: 10000,
     actionMaximum: 2,
     resetMatch: 'app',
+    forcedTime: 10000,
     actionCdKey: 0,
     actionMaximumKey: 0,
     priorityTime: 10000,
@@ -24,34 +25,47 @@ export default defineGkdGlobalGroups([
         key: 0,
         // 防止误触
         excludeMatches:
-          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="设置" || text="退款详情" || text="Submit" || text*="阅读并同意" || text$="登录" || text="选好了" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="行业"][text.length<10][visibleToUser=true])',
+          '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="Submit" || text*="阅读并同意" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text$="设置" || text^="选择" || text*="登录" || text$="选好了" || text^="下一步" || text^="完成"][text.length<10][visibleToUser=true])',
         anyMatches: [
-          '[text*="跳过"][text.length<10][visibleToUser=true]',
-          '@View[clickable=true][childCount=0] - [text="互动广告"][visibleToUser=true]',
-          '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
+          '@[name$="View" || name$="LinearLayout"][clickable=true][childCount<2][width<300 && height<150] - [text="互动广告"][visibleToUser=true]',
+          '[childCount=0][visibleToUser=true][width<400 && height<200][(text.length<10 && (text*="跳过" || text*="跳 过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         ],
-        snapshotUrls: 'https://i.gkd.li/i/21617612', // 互动开屏广告
+        snapshotUrls: [
+          // 互动开屏广告
+          'https://i.gkd.li/i/21617612',
+          'https://i.gkd.li/i/23557410',
+
+          // text*="跳 过"
+          'https://i.gkd.li/i/13421452',
+
+          // width<400
+          'https://i.gkd.li/i/23574381',
+        ],
         excludeSnapshotUrls: [
           // 避免误触
           'https://i.gkd.li/i/15079224', // !(text*="退出")
           'https://i.gkd.li/i/17108010', // !(text="帮助")
           'https://i.gkd.li/i/18265000', // !(text="取消")
-          'https://i.gkd.li/i/19580951', // text="退款详情"
           'https://i.gkd.li/i/19952277', // text="Submit"
-          'https://i.gkd.li/i/20946730', // text="设置"
+          'https://i.gkd.li/i/20946730', // text$="设置"
           'https://i.gkd.li/i/20949002', // vid!~="(?is).*video.*"
           'https://i.gkd.li/i/21617520', // text!*="视频"
-          'https://i.gkd.li/i/22634992', // text$="登录"
-          'https://i.gkd.li/i/23051921', // [text^="选择"][text*="偏好"]
-          'https://i.gkd.li/i/23052289', // text="选好了"  text*="行业"
+          'https://i.gkd.li/i/22634992', // text$="登录" text*="阅读并同意"
+          'https://i.gkd.li/i/23051921', // [text^="选择"]
+          'https://i.gkd.li/i/23742770', // [text^="选择"]
+          'https://i.gkd.li/i/23743049', // [text^="选择"]
+          'https://i.gkd.li/i/23052289', // text="选好了"
           'https://i.gkd.li/i/23122415', // text="书签"
           'https://i.gkd.li/i/23225609', // text="NEXT"
+          'https://i.gkd.li/i/23741801', // text^="下一步" text$="设置"
+          'https://i.gkd.li/i/23741779', // text^="完成" text$="设置"
         ],
       },
       {
         key: 1, // 字节SDK
         anyMatches: [
-          '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+          '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
           'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
         ],
         snapshotUrls: [
@@ -60,6 +74,7 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/20262130',
           'https://i.gkd.li/i/20768349',
           'https://i.gkd.li/i/20883248', // >(n+6)
+          'https://i.gkd.li/i/23549504', // text*="扭一扭"
         ],
       },
     ],
@@ -83,7 +98,7 @@ export default defineGkdGlobalGroups([
       {
         key: 0,
         excludeMatches:
-          '[text*="全部"][text*="更新" || text*="忽略"][text.length<7][visibleToUser=true]',
+          '([text*="全部"][text*="更新" || text*="忽略"][text.length<7][visibleToUser=true]) || ([text^="继续" || text^="仍然" || text*="权限"][text.length<6][visibleToUser=true]) || ([text*="来源"][visibleToUser=true])',
         matches: [
           '[text*="内测" || text*="测试版" || text*="新版" || text*="更新" || text*="升级" || text*="体验" || text*="內測" || text*="測試版" || text*="升級" || text*="體驗" || text*="Update" || text*="Upgrade" || text*="Experience"][text!*="自动" && text!*="自動" && text!*="成功" && text!*="失败" && text!*="失敗" && text!*="检查更新" && text!*="检测更新" && text!*="卸载"][childCount=0][visibleToUser=true]',
           '[text*="更新" || text*="下载" || text*="安装" || text*="升级" || text*="查看" || text*="体验" || text*="确定" || text*="确认"][text.length<6][childCount=0][visibleToUser=true]',
@@ -95,6 +110,12 @@ export default defineGkdGlobalGroups([
           'https://i.gkd.li/i/19605413', // [!(text*="取消"&&text*="忽略")][text.length<6]
           'https://i.gkd.li/i/19918544',
           'https://i.gkd.li/i/20033908',
+
+          // [text^="继续" || text^="仍然"][text.length<6][visibleToUser=true]
+          'https://i.gkd.li/i/16487278',
+          'https://i.gkd.li/i/16487282',
+          'https://i.gkd.li/i/16550275',
+          'https://i.gkd.li/i/20053957',
         ],
       },
     ],

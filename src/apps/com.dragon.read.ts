@@ -16,7 +16,7 @@ export default defineGkdApp({
           fastQuery: true,
           actionDelay: 1000, // 过早点击可能导致应用闪退
           matches:
-            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][visibleToUser=true]',
+            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e36d701f-bcee-48d5-99da-1c5301101d9e',
           snapshotUrls: 'https://i.gkd.li/i/23282793',
         },
@@ -124,7 +124,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告',
       rules: [
         {
           key: 0,
@@ -164,6 +164,47 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/96afbb4f-afd5-4f64-948d-15fc7bb14075',
           snapshotUrls: 'https://i.gkd.li/i/15223416',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: '.reader.ui.ReaderActivity',
+          matches:
+            'AwemeLynxVideoUI +n FlattenUIText[text="关闭"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6d33c17b-85de-4977-aa7f-b45e2a917a12',
+          snapshotUrls: 'https://i.gkd.li/i/23549149',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches:
+            'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13191156',
+        },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] +5 [text="领取限时福利"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14430326',
+            'https://i.gkd.li/i/14969861',
+          ],
+        },
+        {
+          key: 7,
+          fastQuery: true,
+          position: {
+            left: 'width * 0.9123',
+            top: 'width * 0.067',
+          },
+          activityIds: '.reader.ui.ReaderActivity',
+          matches:
+            'View[id=null][text=null][desc=null][childCount=0] < [id="com.dragon.read.awemevideo:id/fullvideo_videoview"][childCount=1][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c29c5647-e2ee-460f-87aa-8717779645ec',
+          snapshotUrls: 'https://i.gkd.li/i/23621776',
         },
       ],
     },
@@ -252,37 +293,6 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/12716592',
             'https://i.gkd.li/i/21589667',
-          ],
-        },
-      ],
-    },
-    {
-      key: 12,
-      name: '全屏广告',
-      desc: '点击"关闭"',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches:
-            'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13191156',
-        },
-      ],
-    },
-    {
-      key: 14,
-      name: '全屏广告-会员福利弹窗',
-      desc: '点击关闭',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
-          matches:
-            '@ImageView[clickable=true][visibleToUser=true] +5 [text="领取限时福利"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14430326',
-            'https://i.gkd.li/i/14969861',
           ],
         },
       ],

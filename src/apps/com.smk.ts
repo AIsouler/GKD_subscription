@@ -7,20 +7,20 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
           activityIds: [
             'com.smk.activity.MainActivity',
             'com.smk.activity.LaunchActivity',
+            'com.tianmu.biz.activity.InterstitialActivity',
           ],
-          matches: '[id="com.smk:id/iv_close_ad"]',
+          matches:
+            '[id="com.smk:id/iv_close_ad" || vid="tianmu_widget_iv_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13402584',
             'https://i.gkd.li/i/13425013',
+            'https://i.gkd.li/i/23567834',
           ],
         },
       ],

@@ -501,9 +501,10 @@ export default defineGkdApp({
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches:
-            '[id="com.alipay.mobile.beevideo:id/fl_bee_player_view_container"][visibleToUser=true]',
+            '@[id="com.alipay.mobile.beevideo:id/fl_bee_player_view_container"][childCount=2] > [id="com.alipay.mobile.beevideo:id/rl_player_poster"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/3698e238-f39b-47ce-b0df-e2e47c15b400',
           snapshotUrls: 'https://i.gkd.li/i/21467483',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23763580',
         },
       ],
     },
@@ -536,10 +537,12 @@ export default defineGkdApp({
           activityIds:
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches:
-            '@[text="全部领取"] < [childCount=1] <n View <<2 * - * >2 [text="我的积分"]',
+            '@[text*="领取"] < [childCount=1] <n View <<2 * - * >2 [text="我的积分"]',
           snapshotUrls: [
             'https://i.gkd.li/i/22951439',
             'https://i.gkd.li/i/22960401',
+            'https://i.gkd.li/i/23455621',
+            'https://i.gkd.li/i/23577538',
           ],
         },
       ],
@@ -550,8 +553,10 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverTransActivity$Main',
+          ],
           matches: [
             '[text="访问被拒绝" || text="人气太旺啦，请稍后再试"][visibleToUser=true]',
             '[id="com.alipay.mobile.antui:id/back_button"][visibleToUser=true]',
@@ -560,6 +565,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/23046994',
             'https://i.gkd.li/i/23096790',
+            'https://i.gkd.li/i/23549719',
           ],
         },
       ],
@@ -577,6 +583,39 @@ export default defineGkdApp({
             '[childCount=0][text="为保障您的正常访问请进行验证"] <<n [id="com.alipay.multiplatform.phone.xriver_integration:id/h5_trans_progress_rl"]',
           exampleUrls: 'https://e.gkd.li/f2571f51-3a8c-4e47-a7c5-3363375c1b78',
           snapshotUrls: 'https://i.gkd.li/i/23158302',
+        },
+      ],
+    },
+    {
+      key: 31,
+      name: '其他-开通刷脸支付弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
+          matches: [
+            '[text="开通刷脸支付"]',
+            '@[clickable=true] > [text="关闭"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23455533',
+        },
+      ],
+    },
+    {
+      key: 32,
+      name: '功能类-确认清理已选中的缓存',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
+          matches: [
+            '[text="是否确认清理已选中的缓存"][visibleToUser=true]',
+            '[text="确定"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/4dfc8429-e633-4cab-8f0e-7cf1f86f98ce',
+          snapshotUrls: 'https://i.gkd.li/i/23619464',
         },
       ],
     },

@@ -16,19 +16,19 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15102179',
         },
         {
-          key: 1,
-          position: {
-            left: 'width * 0.8379',
-            top: 'width * 0.2055',
-          },
-          excludeActivityIds:
-            '[text*="跳过"][text.length<10][visibleToUser=true]',
-          matches: 'FrameLayout[depth=0]',
-          snapshotUrls: 'https://i.gkd.li/i/14717741',
+          key: 2,
+          fastQuery: true,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/ab86d0ac-00f3-46e5-bfbc-c6a37c1c5a23',
+          snapshotUrls: 'https://i.gkd.li/i/23600688',
         },
       ],
     },

@@ -21,5 +21,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      rules: [
+        {
+          fastQuery: true,
+          matches: ['[text^="最新版本"]', '[text="以后再说"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23452864',
+            'https://i.gkd.li/i/23452891',
+          ],
+        },
+      ],
+    },
   ],
 });

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: -1,
       name: '开屏广告',
       matchTime: 10000,
-      actionMaximum: 1,
+      actionMaximum: 2,
       resetMatch: 'app',
       actionMaximumKey: 0,
       priorityTime: 10000,
@@ -17,7 +17,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           anyMatches: [
-            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物"][visibleToUser=true]',
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
             'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/15981630',
@@ -30,12 +30,13 @@ export default defineGkdApp({
             top: 'width * 0.17', // height可能会变化，不建议使用
           },
           matches:
-            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1216 && width!=1440]',
+            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1440]',
           snapshotUrls: [
             'https://i.gkd.li/i/13601755',
             'https://i.gkd.li/i/16054268',
             'https://i.gkd.li/i/23324118',
             'https://i.gkd.li/i/23324139',
+            'https://i.gkd.li/i/23652259',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/23283060',
@@ -60,7 +61,8 @@ export default defineGkdApp({
           key: 3,
           fastQuery: true,
           excludeMatches: '[text="去绑定邮箱"][visibleToUser=true]',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17687115',
           excludeSnapshotUrls: 'https://i.gkd.li/i/23283375',
         },

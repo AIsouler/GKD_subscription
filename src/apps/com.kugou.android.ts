@@ -92,6 +92,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/fcb3e4d2-73bf-49b5-9157-08cac0c11584',
           snapshotUrls: 'https://i.gkd.li/i/18207953',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@ImageButton[childCount=0][clickable=true] < RelativeLayout - LinearLayout > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/13b95c9a-1e6c-4d63-8372-1cff2261253c',
+          snapshotUrls: 'https://i.gkd.li/i/23687213',
+        },
       ],
     },
     {
@@ -121,7 +130,7 @@ export default defineGkdApp({
           key: 2,
           activityIds: '.app.MediaActivity',
           matches:
-            '@[clickable=true][childCount=0] < View <(1,2) View <(1,2) View < WebView < WebView < FrameLayout < FrameLayout < RelativeLayout < RelativeLayout < FrameLayout[id!="android:id/content"] < FrameLayout < [parent=null]',
+            '@[clickable=true][childCount=0] < View <(1,2) View <(1,2) View < WebView < WebView < FrameLayout < FrameLayout < RelativeLayout < RelativeLayout < FrameLayout[!(id="android:id/content")] < FrameLayout < [parent=null]',
           exampleUrls: 'https://e.gkd.li/f32ed6b7-e396-45a5-9849-f8a8ae99cb99',
           snapshotUrls: [
             'https://i.gkd.li/i/18070974',

@@ -25,10 +25,25 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
+          matchRoot: true, // 背景动画会持续产生无障碍事件
           activityIds: 'com.yunma.baseextend.ui.WebActivity',
           matches:
             '@TextView[text="开始"][childCount=0] < View[childCount=1] <<n WebView[text="立即用水"] <<2 [vid="web_parent_layout_id"]',
           snapshotUrls: 'https://i.gkd.li/i/23327551',
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '全屏广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
+          matches: '[vid="anythink_myoffer_btn_close_id"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3ddc6da8-7bbf-43f8-8d79-1fabe1180fea',
+          snapshotUrls: 'https://i.gkd.li/i/23475779',
         },
       ],
     },

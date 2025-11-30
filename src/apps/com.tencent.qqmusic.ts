@@ -17,14 +17,16 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           action: 'clickCenter',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/bde5c1a5-3259-45d3-a6b8-8482f7818c6f',
           snapshotUrls: 'https://i.gkd.li/i/17056504',
         },
         {
           key: 1,
           action: 'clickCenter',
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/6537da92-f5f6-4ee8-9219-5f39f7c5e8a2',
           snapshotUrls: 'https://i.gkd.li/i/17068758',
         },
@@ -125,10 +127,16 @@ export default defineGkdApp({
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: '.activity.AppStarterActivity',
-          matches: '[desc="关闭弹窗"][clickable=true][visibleToUser=true]',
+          activityIds: [
+            '.activity.AppStarterActivity',
+            'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
+          ],
+          matches: '[desc^="关闭弹窗"][clickable=true][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/47107dd3-b19a-4486-a0d1-6d9aa62ee722',
-          snapshotUrls: 'https://i.gkd.li/i/17057551',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17057551',
+            'https://i.gkd.li/i/23495699',
+          ],
         },
         {
           key: 2,

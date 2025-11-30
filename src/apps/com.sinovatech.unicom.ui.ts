@@ -66,6 +66,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18290899',
           ],
         },
+        {
+          key: 2,
+          activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
+          matches:
+            '@Image[text^="close"][childCount=0][width<150 && height<150] <2 View < View <2 View < View < View <2 View < View < WebView < WebView < [vid="homeweb_rootview"]',
+          snapshotUrls: 'https://i.gkd.li/i/23764750',
+        },
       ],
     },
     {

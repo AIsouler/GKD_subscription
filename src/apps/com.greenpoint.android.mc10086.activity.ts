@@ -17,7 +17,8 @@ export default defineGkdApp({
         {
           key: 0,
           action: 'clickCenter', // https://github.com/AIsouler/GKD_subscription/issues/1109
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+          matches:
+            '[text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16335136',
         },
         {
@@ -171,6 +172,23 @@ export default defineGkdApp({
           matches: ['[text="通讯录权限申请"]', '[text="取消"]'],
           exampleUrls: 'https://e.gkd.li/7d332325-497f-47a4-a322-729ffa5dd121',
           snapshotUrls: 'https://i.gkd.li/i/16369235',
+        },
+      ],
+    },
+    {
+      key: 15,
+      name: '权限提示-定位权限',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mc10086.cmcc.view.tabs.AppTabFragment',
+          matches: [
+            '[text^="位置权限" || text$="定位权限"]',
+            '[text="取消"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/23445705',
         },
       ],
     },
