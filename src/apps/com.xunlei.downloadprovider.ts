@@ -47,19 +47,31 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          activityIds: '.download.taskdetails.newui.DownloadDetailsActivity',
+          activityIds: [
+            '.frame.MainTabActivity',
+            '.download.taskdetails.newui.DownloadDetailsActivity',
+          ],
           matches:
-            '[vid="hermes_ad_banner_negative" || vid="close_iv"][visibleToUser=true]',
+            '[vid="hermes_ad_banner_negative" || vid="close_iv"  || vid="btn_ad_feedback"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/95d56e24-3223-4112-9222-de6d489aa79b',
-          snapshotUrls: 'https://i.gkd.li/i/23762793',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23762793',
+            'https://i.gkd.li/i/23845066',
+          ],
         },
         {
           preKeys: [0],
           fastQuery: true,
-          activityIds: '.download.taskdetails.newui.DownloadDetailsActivity',
+          activityIds: [
+            '.frame.MainTabActivity',
+            '.download.taskdetails.newui.DownloadDetailsActivity',
+          ],
           matches: '[text="不感兴趣"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/490bd679-86a5-432e-b0de-427da5513484',
-          snapshotUrls: 'https://i.gkd.li/i/23762972',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23762972',
+            'https://i.gkd.li/i/23845065',
+          ],
         },
       ],
     },
@@ -106,14 +118,14 @@ export default defineGkdApp({
         {
           key: 3,
           fastQuery: true,
-          activityIds:
-            'com.xunlei.web.XLWebViewActivity$XLWebViewActivityImpl2',
+          activityIds: 'com.xunlei.web.XLWebViewActivity$XLWebViewActivityImpl',
           matches:
-            '[text="老用户专属惊喜价"] + View > @[desc^="javascript"][clickable=true][childCount=0][width<120&&height<120][visibleToUser=true] <<n [vid="refreshLayout"]',
+            '[text$="专属惊喜价"] + View > @[desc^="javascript"][clickable=true][childCount=0][width<120&&height<120][visibleToUser=true] <<n [vid="refreshLayout"]',
           exampleUrls: 'https://e.gkd.li/ade9ca8a-b7a5-4a22-8c1f-d14423a34136',
           snapshotUrls: [
             'https://i.gkd.li/i/16914136',
             'https://i.gkd.li/i/23833175',
+            'https://i.gkd.li/i/23845039',
           ],
         },
         {
