@@ -101,6 +101,18 @@ export default defineGkdApp({
           matches: '[text="广告 | 关闭"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/18227204',
         },
+        {
+          key: 8,
+          matchTime: 10000,
+          activityIds: '.activity.AppStarterActivity',
+          matches:
+            'RecyclerView > FrameLayout[desc!=null] >3 LinearLayout[id!=null] > ViewPager > FrameLayout[visibleToUser=true] > ImageView[childCount=0][clickable=true][width<150 && height<100][index=parent.childCount.minus(1)]',
+          exampleUrls: 'https://e.gkd.li/c7b25408-26ed-4010-8506-88f614dccd26',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23623581',
+            'https://i.gkd.li/i/23623677',
+          ],
+        },
       ],
     },
     {
