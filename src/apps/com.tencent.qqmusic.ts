@@ -101,6 +101,18 @@ export default defineGkdApp({
           matches: '[text="广告 | 关闭"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/18227204',
         },
+        {
+          key: 8,
+          matchTime: 10000,
+          activityIds: '.activity.AppStarterActivity',
+          matches:
+            'RecyclerView > FrameLayout[desc!=null] >3 LinearLayout[id!=null] > ViewPager > FrameLayout[visibleToUser=true] > ImageView[childCount=0][clickable=true][width<150 && height<100][index=parent.childCount.minus(1)]',
+          exampleUrls: 'https://e.gkd.li/c7b25408-26ed-4010-8506-88f614dccd26',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23623581',
+            'https://i.gkd.li/i/23623677',
+          ],
+        },
       ],
     },
     {
@@ -311,30 +323,6 @@ export default defineGkdApp({
             '@ImageView[childCount=0][clickable=true] -2 [text="猜你也会喜欢"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/40846baf-4638-4740-970a-30924cbd9414',
           snapshotUrls: 'https://i.gkd.li/i/18410610',
-        },
-      ],
-    },
-    {
-      key: 12,
-      name: '局部广告-首页会员广告',
-      desc: '点击X',
-      rules: [
-        {
-          fastQuery: true,
-          actionMaximum: 1,
-          resetMatch: 'app',
-          activityIds: '.activity.AppStarterActivity',
-          matches: [
-            '@ImageView[clickable=true][visibleToUser=true][width<left] <n FrameLayout[visibleToUser=true] <n ViewPager < [vid="nuo"]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/23623581',
-            'https://i.gkd.li/i/23623677',
-          ],
-          exampleUrls: [
-            'https://e.gkd.li/40ce6c1a-0d2d-4a66-84f9-66a41f1d6fa0',
-            'https://e.gkd.li/b2b1ca19-4974-425e-a4c7-b770632a3c6d',
-          ],
         },
       ],
     },
