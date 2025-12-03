@@ -314,5 +314,29 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '局部广告-首页会员广告',
+      desc: '点击X',
+      rules: [
+        {
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.activity.AppStarterActivity',
+          matches: [
+            '@ImageView[clickable=true][visibleToUser=true][width<left] <n FrameLayout[visibleToUser=true] <n ViewPager < [vid="nuo"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23623581',
+            'https://i.gkd.li/i/23623677',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/40ce6c1a-0d2d-4a66-84f9-66a41f1d6fa0',
+            'https://e.gkd.li/b2b1ca19-4974-425e-a4c7-b770632a3c6d',
+          ],
+        },
+      ],
+    },
   ],
 });
