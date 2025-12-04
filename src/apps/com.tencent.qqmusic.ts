@@ -113,6 +113,13 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23623677',
           ],
         },
+        {
+          key: 9,
+          activityIds: '.activity.AppStarterActivity',
+          matches:
+            'ImageView[width<80 && height<80] <<2 @ViewGroup[clickable=true] - [text^="hi~"]',
+          snapshotUrls: 'https://i.gkd.li/i/23930716',
+        },
       ],
     },
     {
