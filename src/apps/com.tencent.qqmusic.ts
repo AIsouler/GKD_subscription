@@ -121,10 +121,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matchTime: 10000,
-          activityIds:
-            'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
-          matches: '@View[clickable=true][visibleToUser=true][desc="关闭"]',
+          activityIds: [
+            '.activity.TranslucentWebViewActivity',
+            '.activity.AppStarterActivity',
+          ],
+          matches: '@[desc="关闭"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13115121',
             'https://i.gkd.li/i/14549936',
@@ -132,6 +133,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15209764',
             'https://i.gkd.li/i/15261116',
             'https://i.gkd.li/i/17459008',
+            'https://i.gkd.li/i/23930628',
           ],
         },
         {
