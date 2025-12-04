@@ -16,7 +16,10 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          excludeMatches: '[vid="skip_parent_view"][visibleToUser=true]',
+          excludeMatches: [
+            '[!(vid="welcome_ad_view_skip")] > [text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
+            '@[desc="close_button"] - [text="|"][visibleToUser=true]',
+          ],
           matches:
             'LinearLayout[childCount>0] + LinearLayout[vid="welcome_ad_view_skip"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d14f7876-892f-4a25-aa1f-0f7500be52cb',
@@ -24,14 +27,26 @@ export default defineGkdApp({
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/18370963', // LinearLayout[childCount>0] 防止提前触发
             'https://i.gkd.li/i/21383354',
+            'https://i.gkd.li/i/23921822',
+            'https://i.gkd.li/i/23922767',
           ],
         },
         {
           key: 1,
           fastQuery: true,
-          matches: '[vid="skip_parent_view"][visibleToUser=true]',
+          matches:
+            '[!(vid="welcome_ad_view_skip")] > [text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/243c2920-9761-41c6-a142-9f6f53ab78fe',
-          snapshotUrls: 'https://i.gkd.li/i/21383354',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21383354',
+            'https://i.gkd.li/i/23921822',
+          ],
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          matches: '@[desc="close_button"] - [text="|"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23922767',
         },
       ],
     },
