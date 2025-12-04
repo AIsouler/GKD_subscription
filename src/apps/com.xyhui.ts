@@ -152,6 +152,13 @@ export default defineGkdApp({
             '@ImageView[width<100 && height<100] <<4 * + * >4 [text="反馈"]',
           snapshotUrls: 'https://i.gkd.li/i/23567050',
         },
+        {
+          key: 14,
+          fastQuery: true,
+          activityIds: '.lut.act.LutMainActivity',
+          matches: '@ImageView < FrameLayout - * >3 [text$="应用"]',
+          snapshotUrls: 'https://i.gkd.li/i/23937136',
+        },
       ],
     },
     {
