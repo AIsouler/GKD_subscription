@@ -372,19 +372,16 @@ export default defineGkdApp({
         {
           key: 0,
           anyMatches: [
-            '@[vid="more" || vid="more_layout" || id="tv.danmaku.bili.adbiz:id/more" || id="tv.danmaku.bili.adbiz:id/more_layout"] <<n [vid="ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame"][visibleToUser=true]',
-            '@[vid="more"] -(3,5) [vid="live_lottie_layout"][visibleToUser=true]',
+            '@[vid="more" || vid="more_layout" || id="tv.danmaku.bili.adbiz:id/more" || id="tv.danmaku.bili.adbiz:id/more_layout"] <<n [vid="ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame"][visibleToUser=true]', // 广告、推广
+            '@[vid="more"] -(3,5) [vid="live_lottie_layout"][visibleToUser=true]', // 直播
+            '[!(vid="duration") || text="课堂"] <3 ViewGroup[getChild(0).vid="cover"] > [vid="more"][visibleToUser=true]', // 纪录片、课堂推广
           ],
           exampleUrls: [
             'https://e.gkd.li/219c40c4-debf-40d8-889a-7eb39c87126c',
             'https://e.gkd.li/dc54e6ee-24df-49a8-874a-f381326122c3',
           ],
           snapshotUrls: [
-            // 直播
-            'https://i.gkd.li/i/17675894',
-            'https://i.gkd.li/i/18306858',
-
-            // 广告/推广
+            // 广告、推广
             'https://i.gkd.li/i/17675629',
             'https://i.gkd.li/i/20739380',
             'https://i.gkd.li/i/20744764',
@@ -392,6 +389,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21552836',
             'https://i.gkd.li/i/21705345',
             'https://i.gkd.li/i/21947622',
+
+            // 直播
+            'https://i.gkd.li/i/17675894',
+            'https://i.gkd.li/i/18306858',
+
+            // 纪录片、课堂推广
+            'https://i.gkd.li/i/23934632',
+            'https://i.gkd.li/i/23933925',
+            'https://i.gkd.li/i/23933866',
           ],
         },
         {
