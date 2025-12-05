@@ -131,6 +131,7 @@ export default defineGkdApp({
           activityIds: [
             '.activity.TranslucentWebViewActivity',
             '.activity.AppStarterActivity',
+            '.business.playernew.view.NewPlayerActivity',
           ],
           matches: '[desc="关闭"][visibleToUser=true]',
           snapshotUrls: [
