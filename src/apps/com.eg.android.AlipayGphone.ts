@@ -351,18 +351,23 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      name: '分段广告-服务消息页面-卡片广告',
-      desc: '点击[关闭]-点击[不感兴趣]',
+      name: '分段广告-服务消息页面卡片广告',
+      desc: '点击关闭-不感兴趣',
       fastQuery: true,
-      activityIds:
+      activityIds: [
         'com.alipay.android.phone.messageboxapp.ui.MsgBoxTabActivity',
+        'com.alipay.android.phone.msgboxapp.ui.activity.MBoxTabPageActivity',
+      ],
       rules: [
         {
           key: 0,
           matches: '@[clickable=true] > [text="广告"]',
           exampleUrls:
             'https://m.gkd.li/57941037/c3e08729-6d97-4a87-bfc3-1e38dd95c384',
-          snapshotUrls: 'https://i.gkd.li/i/14787644',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14787644',
+            'https://i.gkd.li/i/23935865',
+          ],
         },
         {
           preKeys: [0],
@@ -370,7 +375,10 @@ export default defineGkdApp({
           matches: '@[clickable=true] >2 [text="不感兴趣"]',
           exampleUrls:
             'https://m.gkd.li/57941037/64c8c27d-23de-43b1-a87b-e2107b644eb1',
-          snapshotUrls: 'https://i.gkd.li/i/14787585',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14787585',
+            'https://i.gkd.li/i/23935930',
+          ],
         },
       ],
     },
