@@ -156,7 +156,8 @@ export default defineGkdApp({
           key: 14,
           fastQuery: true,
           activityIds: '.lut.act.LutMainActivity',
-          matches: '@ImageView < FrameLayout - * >3 [text$="应用"]',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
           snapshotUrls: 'https://i.gkd.li/i/23937136',
         },
       ],
