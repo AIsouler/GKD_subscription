@@ -35,5 +35,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '功能类-中断考试弹窗',
+      desc: '点击确定',
+      rules: [
+        {
+          activityIds: 'com.sflep.course.activity.ClassActivity',
+          matches:
+            '@[text="确认"][clickable=true] <n * - [text="系统将自动保存已答题记录，确认中断本次考试？"] <<n Dialog',
+          snapshotUrls: 'https://i.gkd.li/i/23923998',
+        },
+      ],
+    },
   ],
 });
