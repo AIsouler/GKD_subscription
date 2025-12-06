@@ -30,7 +30,7 @@ export default defineGkdApp({
             top: 'width * 0.17', // height可能会变化，不建议使用
           },
           matches:
-            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1440]',
+            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1440 && width!=1224]',
           snapshotUrls: [
             'https://i.gkd.li/i/13601755',
             'https://i.gkd.li/i/16054268',
@@ -41,6 +41,7 @@ export default defineGkdApp({
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/23283060',
             'https://i.gkd.li/i/23382528',
+            'https://i.gkd.li/i/23982586',
           ],
         },
         {
@@ -50,11 +51,13 @@ export default defineGkdApp({
             left: 'width * 0.875',
             top: 'width * 0.137', // height可能会变化，不建议使用
           },
-          matches: '[vid="ad_view"][visibleToUser=true][width<1200]',
+          matches:
+            '[vid="ad_view"][visibleToUser=true][width<1200 || width=1224]',
           snapshotUrls: [
             'https://i.gkd.li/i/13575257',
             'https://i.gkd.li/i/13575547',
             'https://i.gkd.li/i/18423724',
+            'https://i.gkd.li/i/23982586',
           ],
         },
         {
@@ -101,6 +104,7 @@ export default defineGkdApp({
             '.subject.structure.activity.MovieActivity',
             '.group.activity.GroupTopicActivity',
             '.fangorns.topic.TopicsActivity',
+            '.subject.struct2.MovieActivity2',
           ],
           matches:
             '[vid="ad_header_new"] > [vid="menu_item"][visibleToUser=true]',
@@ -109,6 +113,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18424418',
             'https://i.gkd.li/i/18424924',
             'https://i.gkd.li/i/19615325',
+            'https://i.gkd.li/i/23982599',
           ],
         },
         {
