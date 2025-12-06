@@ -111,6 +111,12 @@ export default defineGkdApp({
           matches: '[vid="adCloseIV"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16385547',
         },
+        {
+          key: 2,
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="v_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23982125',
+        },
       ],
     },
     {
