@@ -119,7 +119,7 @@ export default defineGkdApp({
           key: 0,
           action: 'longClick',
           matches:
-            '@FrameLayout[desc*="旗舰店"][longClickable=true][visibleToUser=true] >(4,5) [text$="旗舰店" || text="广告"]',
+            '@FrameLayout[desc$="作品"][longClickable=true][visibleToUser=true] >(4,5) [text$="旗舰店" || text="广告"]',
           exampleUrls: 'https://e.gkd.li/f199ffaf-9ff8-49f5-a3fe-3fc5bbae8f7c',
           snapshotUrls: [
             'https://i.gkd.li/i/24022468',
