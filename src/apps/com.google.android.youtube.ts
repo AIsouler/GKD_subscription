@@ -55,7 +55,7 @@ export default defineGkdApp({
           activityIds:
             'com.google.android.apps.youtube.app.watchwhile.MainActivity',
           matches:
-            '[getChild(0).getChild(0).desc!="Image attachment"] + @[desc="不用了，谢谢" || desc="关闭" || desc="Close" || desc="No thanks"][visibleToUser=true] <<n [vid="bottom_ui_container" || vid="custom"]',
+            '[!(getChild(0).getChild(0).desc="Image attachment")] + @[desc="不用了，谢谢" || desc="关闭" || desc="Close" || desc="No thanks"][visibleToUser=true] <<n [vid="bottom_ui_container" || vid="custom"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13797512',
             'https://i.gkd.li/i/18017075',
@@ -134,6 +134,44 @@ export default defineGkdApp({
             'https://i.gkd.li/i/22762876', // 中文界面
             'https://i.gkd.li/i/22757397',
           ],
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '局部广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '@ImageView[clickable=true][width<100 && height<100] <<n [vid="panel_header"]',
+          snapshotUrls: 'https://i.gkd.li/i/23787178',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '分段广告-播放页广告',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches:
+            '@[vid="overflow_button"][clickable=true] <<n [vid="collapsible_ad_cta_overlay_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/23790199',
+        },
+        {
+          key: 2,
+          preKeys: [1],
+          fastQuery: true,
+          activityIds:
+            'com.google.android.apps.youtube.app.watchwhile.MainActivity',
+          matches: '@[clickable=true] > [text="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/23772979',
         },
       ],
     },

@@ -129,10 +129,11 @@ export default defineGkdApp({
           key: 8,
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <n RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <(2,3) RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [id="android:id/content"]',
+            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <n RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <(2,3) RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(1,2) FrameLayout <2 [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/23625987',
             'https://i.gkd.li/i/23625990',
+            'https://i.gkd.li/i/24077457',
           ],
         },
         {
@@ -227,12 +228,12 @@ export default defineGkdApp({
     {
       key: 6,
       name: '全屏广告-弹窗广告',
-      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds:
             'com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity',
           matches:
@@ -243,6 +244,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
+          fastQuery: true,
           activityIds: 'com.tencent.qqlive.ona.activity.SplashHomeActivity',
           matches: '@RelativeLayout[clickable=true] + * >3 [text="立即预约"]',
           exampleUrls:
@@ -251,6 +253,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: true,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] -3 LinearLayout >2 [text="立即免费领取"]',
@@ -259,6 +262,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          fastQuery: true,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches: '[text="暂不需要，稍后领取"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/3256ed8e-752c-426d-9d64-26c9fdea9b09',
@@ -266,6 +270,7 @@ export default defineGkdApp({
         },
         {
           key: 4,
+          fastQuery: true,
           activityIds: '.ona.activity.VideoDetailActivity',
           matches: '[text="放弃权益"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/37d3d077-1d3b-4b4d-87c2-4e0fa00d423e',
@@ -273,6 +278,7 @@ export default defineGkdApp({
         },
         {
           key: 5,
+          fastQuery: true,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             '@ImageView[clickable=true][childCount=0][visibleToUser=true][width<200 && height<200] <2 RelativeLayout < RelativeLayout < RelativeLayout < [id="android:id/content"]',
@@ -281,11 +287,20 @@ export default defineGkdApp({
         },
         {
           key: 6,
+          fastQuery: true,
           activityIds: '.ona.activity.SplashHomeActivity',
           matches:
             'TextView[text^="暂不需要"] < @View[clickable=true] <6 View < ComposeView < FrameLayout <2 FrameLayout < FrameLayout <2 FrameLayout <2 [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/4f48767f-9cfa-4507-89ab-eb24f483d05e',
           snapshotUrls: 'https://i.gkd.li/i/20148077',
+        },
+        {
+          key: 7,
+          activityIds: '.ona.activity.origin.OriginIconHomeActivity',
+          matches:
+            '@TextView[text="x"][clickable=true][childCount=0] + View >2 [text^="下载并领取"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/3a524370-1dbc-4017-a357-6728f809bd9c',
+          snapshotUrls: 'https://i.gkd.li/i/23763930',
         },
       ],
     },
@@ -328,12 +343,13 @@ export default defineGkdApp({
             '.ona.activity.origin.OriginIconHomeActivity',
           ],
           matches:
-            '@[name$="ImageView" || name$="FrameLayout" ][childCount<2][clickable=true][visibleToUser=true][width<250 && height<150] <3 RelativeLayout < FrameLayout <2 FrameLayout < FrameLayout <2 ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(4,5) [id="android:id/content"]',
+            '@[name$="ImageView" || name$="FrameLayout" ][childCount<2][clickable=true][visibleToUser=true][width<250 && height<150] <3 RelativeLayout < FrameLayout <2 FrameLayout < FrameLayout <2 ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <n [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/0ea465ad-e4e4-4af5-92a4-2d71e44845f4',
           snapshotUrls: [
             'https://i.gkd.li/i/19667104',
             'https://i.gkd.li/i/21327634',
             'https://i.gkd.li/i/23121852',
+            'https://i.gkd.li/i/23764004',
           ],
         },
         {

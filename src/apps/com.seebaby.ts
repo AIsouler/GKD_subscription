@@ -49,5 +49,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '全屏广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.ranfeng.adranfengsdk.biz.activity.InterstitialActivity',
+          matches: '[vid="ranfeng_widget_iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/0ae7b19f-6fa1-4eaf-a5b9-0dfb214541b4',
+          snapshotUrls: 'https://i.gkd.li/i/23981370',
+        },
+      ],
+    },
   ],
 });

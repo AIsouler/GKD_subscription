@@ -25,14 +25,15 @@ export default defineGkdApp({
     },
     {
       key: 1,
-      name: '局部广告-关闭用户推荐',
+      name: '局部广告',
       rules: [
         {
-          key: 6,
           fastQuery: true,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '@[text="不感兴趣"] - * [text*="也关注了"]',
-          snapshotUrls: 'https://i.gkd.li/i/14661956',
+          activityIds: '.live.LivePlayActivity',
+          matches:
+            '@View[clickable=true][width<80&&height<80] +2 View >4 [text="立即查看"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/7c97fdc7-9de0-403d-9817-e43da0eb8a31',
+          snapshotUrls: 'https://i.gkd.li/i/22743677',
         },
       ],
     },
@@ -52,19 +53,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15359995',
             'https://i.gkd.li/i/20139600',
           ],
-        },
-      ],
-    },
-    {
-      key: 7,
-      name: '功能类-设置无声进入抖音弹窗',
-      desc: '点击[拒绝]',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '@[text="拒绝"] + [text="去设置"]',
-          snapshotUrls: 'https://i.gkd.li/i/13256087',
         },
       ],
     },
@@ -127,7 +115,7 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-[添加快捷方式到桌面]弹窗',
+      name: '全屏广告-小组件弹窗',
       desc: '关闭弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -136,10 +124,7 @@ export default defineGkdApp({
           key: 1,
           name: '商城快捷方式',
           fastQuery: true,
-          activityIds: [
-            'com.ss.android.ugc.aweme.main.MainActivity',
-            'com.ss.android.ugc.aweme.live.LiveDummyActivity',
-          ],
+          activityIds: ['.main.MainActivity', '.live.LiveDummyActivity'],
           matches:
             '[text="添加抖音商城到桌面"] +2 LinearLayout > [text="不感兴趣"]',
           snapshotUrls: [
@@ -151,8 +136,7 @@ export default defineGkdApp({
           key: 2,
           name: '搜索组件',
           fastQuery: true,
-          activityIds:
-            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+          activityIds: '.search.activity.SearchResultActivity',
           matches: '[text="暂不开启"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/14325749',
         },
@@ -169,55 +153,30 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 14,
-      name: '全屏广告-视频播放中途插入的打招呼界面',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '@[desc="关闭"] + ViewGroup > [text$="打个招呼"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13379307',
-        },
-      ],
-    },
-    {
       key: 15,
-      name: '全屏广告-关闭商城推荐',
-      desc: '点击"不感兴趣"',
+      name: '全屏广告',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches:
-            '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
-          snapshotUrls: 'https://i.gkd.li/i/13800207',
+          activityIds: '.main.MainActivity',
+          anyMatches: [
+            'FlattenUIText[text="不感兴趣"][visibleToUser=true]',
+            '@[text="不感兴趣"] - FrameLayout >2 [text*="也关注了"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13800207',
+            'https://i.gkd.li/i/13996724',
+            'https://i.gkd.li/i/14661956',
+          ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/23833191',
         },
-      ],
-    },
-    {
-      key: 16,
-      name: '局部广告-拍同款弹窗',
-      desc: '点击不感兴趣',
-      rules: [
         {
-          fastQuery: true,
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
-          matches: '@LynxFlattenUI[text="不感兴趣"] +4 [text="拍同款"]',
-          snapshotUrls: 'https://i.gkd.li/i/13996724',
-        },
-      ],
-    },
-    {
-      key: 17,
-      name: '全屏广告-[去首页商城]弹窗',
-      desc: '点击[知道了]',
-      rules: [
-        {
+          key: 1,
           fastQuery: true,
           activityIds: [
-            'com.ss.android.ugc.aweme.live.LiveDummyActivity',
-            'com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity',
+            '.live.LiveDummyActivity',
+            '.commerce.sdk.MallContainerActivity',
             'com.bytedance.android.shopping.store.tabkit.container.TabKitActivity',
           ],
           matches: [
@@ -234,27 +193,8 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 18,
-      name: '全屏广告-低价秒杀券弹窗',
-      desc: '点击关闭',
-      rules: [
-        {
-          fastQuery: true,
-          position: {
-            left: 'width * 0.5051',
-            top: 'width * 2.0649',
-          },
-          activityIds: 'com.ss.android.ugc.aweme.live.LiveDummyActivity',
-          matches: '[text="恭喜获得低价秒杀券"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/ef703cd7-99af-4e10-8345-9860ed160b8b',
-          snapshotUrls: 'https://i.gkd.li/i/14585377',
-        },
-      ],
-    },
-    {
       key: 19,
-      name: '权限提示-请求访问通讯录弹窗',
+      name: '权限提示-通讯录权限',
       desc: '点击[拒绝]',
       actionMaximum: 1,
       resetMatch: 'app',
@@ -319,8 +259,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '顶部横条',
-          activityIds:
-            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+          activityIds: '.search.activity.SearchResultActivity',
           matches: '@ImageView[clickable=true] - [text^="开启定位"]',
           snapshotUrls: 'https://i.gkd.li/i/13755718',
         },
@@ -330,14 +269,14 @@ export default defineGkdApp({
       key: 22,
       name: '全屏广告-汽水音乐VIP',
       desc: '点击关闭',
-      activityIds: [
-        '.dsp.MusicLunaActivity',
-        '.dsp.playpage.singlepage.subpage.MusicDspSubPlayerActivity',
-      ],
       rules: [
         {
           key: 0,
           fastQuery: true,
+          activityIds: [
+            '.dsp.MusicLunaActivity',
+            '.dsp.playpage.singlepage.subpage.MusicDspSubPlayerActivity',
+          ],
           matches:
             'ScrollView - @ImageView[index=1][childCount=0][visibleToUser=true][width<100][height<100] <2 View < View < ViewGroup < ViewGroup < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/4c57ee77-2189-4b3b-be0b-430fac8853c2',
@@ -384,6 +323,7 @@ export default defineGkdApp({
           action: 'back',
           activityIds: '.main.MainActivity',
           matches: [
+            '[desc^="已选中"] > [text="推荐"][visibleToUser=true]', // 其他页面可能会误触回到推荐页
             '([text$="广告"][vid="desc"][visibleToUser=true]) || (ImageView[childCount=0] + [text="应用" || text="购物" || text="游戏"][visibleToUser=true])',
           ],
           snapshotUrls: [
@@ -392,20 +332,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21142249',
             'https://i.gkd.li/i/21142871',
           ],
-        },
-      ],
-    },
-    {
-      key: 25,
-      name: '局部广告-游戏直播间浮标广告',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: '.live.LivePlayActivity',
-          matches:
-            '@View[clickable=true][width<80&&height<80] +2 View >4 [text="立即查看"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/7c97fdc7-9de0-403d-9817-e43da0eb8a31',
-          snapshotUrls: 'https://i.gkd.li/i/22743677',
         },
       ],
     },
