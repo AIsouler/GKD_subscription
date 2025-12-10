@@ -129,10 +129,11 @@ export default defineGkdApp({
           key: 8,
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <n RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <(2,3) RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [id="android:id/content"]',
+            '@ImageView[clickable=true][visibleToUser=true][width<250 && height<150] <n RelativeLayout < RelativeLayout < RecyclerView < RelativeLayout < RelativeLayout < LinearLayout[desc="poster_inner_round_cell"] < RecyclerView <2 ViewGroup <2 FrameLayout <2 ScrollView <(2,3) RelativeLayout < ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(1,2) FrameLayout <2 [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/23625987',
             'https://i.gkd.li/i/23625990',
+            'https://i.gkd.li/i/24077457',
           ],
         },
         {
