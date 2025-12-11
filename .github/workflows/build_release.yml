@@ -5,10 +5,6 @@ on:
     - cron: '0 19 * * *'
   workflow_dispatch:
 
-permissions:
-  id-token: write
-  contents: write
-
 jobs:
   check_changes:
     runs-on: ubuntu-latest
@@ -45,8 +41,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          registry-url: 'https://registry.npmjs.org'
+          node-version: 25
 
       - uses: pnpm/action-setup@v4
 
@@ -89,8 +84,11 @@ jobs:
           body_path: ./dist/CHANGELOG.md
 
       - name: Publish package
-        if: ${{ steps.commit.outcome == 'success' }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
