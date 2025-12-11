@@ -62,9 +62,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.tencent.wework.launch.WwMainActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - ViewFlipper < RelativeLayout < LinearLayout < LinearLayout < RecyclerView < FrameLayout <2 ViewGroup - RelativeLayout >4 [text="工作台"]',
+            'ImageView[clickable=true][childCount=0] < ViewFlipper[childCount=1] + @ImageView[clickable=true][visibleToUser=true][width<140 && height<140] <n RelativeLayout <<n RecyclerView[childCount>10] <n FrameLayout <n ViewGroup - RelativeLayout >4 [text="工作台"]',
           exampleUrls: 'https://e.gkd.li/e0c4aa4a-fd8b-4440-920b-f96eec60baa1',
-          snapshotUrls: 'https://i.gkd.li/i/16977927',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16977927',
+            'https://i.gkd.li/i/24099806',
+          ],
         },
         {
           preKeys: [0],
