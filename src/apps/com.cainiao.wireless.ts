@@ -199,5 +199,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '全屏广告-超时享',
+      rules: [
+        {
+          activityIds:
+            'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
+          matches:
+            'Image[childCount=0][width<100 && height<100] < @View[clickable=true][childCount=1] - Image[text="超时享"]',
+          snapshotUrls: 'https://i.gkd.li/i/24099845',
+        },
+      ],
+    },
   ],
 });
