@@ -35,7 +35,7 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠" || text*="查看" || text^="立即"][text.length<5]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] - LinearLayout >(2,3) [text="广告" || text="立享优惠" || text*="查看" || text^="立即" || text^="点击参与"][text.length<5]',
           snapshotUrls: [
             'https://i.gkd.li/i/12908734',
             'https://i.gkd.li/i/14540281',
@@ -237,6 +237,16 @@ export default defineGkdApp({
           ],
         },
         {
+          key: 2,
+          name: '延时点击[反馈]按钮',
+          actionDelay: 3500, //按钮存在3秒后才可被点击
+          matches: '@[desc="反馈"][visibleToUser=true][name$="ViewGroup"]',
+          exampleUrls: [
+            'https://e.gkd.li/3837a70f-30e3-42d1-9354-696dcda598b7',
+          ],
+          snapshotUrls: ['https://i.gkd.li/i/24128141'],
+        },
+        {
           key: 3,
           matches:
             '@ImageView[clickable=true][childCount=0][visibleToUser=true] < FrameLayout - LinearLayout >2 [text="广告"]',
@@ -244,7 +254,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/18724040',
         },
         {
-          preKeys: [0, 3],
+          preKeys: [0, 2, 3],
           key: 1,
           name: '点击[不感兴趣]/[关闭此广告]',
           matches: '[text="不感兴趣" || text="关闭此广告"]',
@@ -254,6 +264,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13816454',
             'https://i.gkd.li/i/14913207',
             'https://i.gkd.li/i/18724041',
+            'https://i.gkd.li/i/24128392',
           ],
         },
       ],
