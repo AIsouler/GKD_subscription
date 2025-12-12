@@ -35,6 +35,12 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/f9c7621d-8b2b-4ca8-9904-fe0bca61c43f',
           snapshotUrls: 'https://i.gkd.li/i/17726527',
         },
+        {
+          key: 2,
+          matches:
+            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24119631',
+        },
       ],
     },
     {
