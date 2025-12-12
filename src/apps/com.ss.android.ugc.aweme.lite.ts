@@ -82,5 +82,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '局部广告-不感兴趣',
+      desc: '刷视频遇到商品广告',
+      rules: [
+        {
+          matches:
+            '@UIView[text="不感兴趣"][clickable=true] +2 FlattenUIText[text="不感兴趣"]',
+          fastQuery: true,
+          snapshotUrls: 'https://i.gkd.li/i/24123937',
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+        },
+      ],
+    },
   ],
 });
