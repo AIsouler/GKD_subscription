@@ -113,6 +113,28 @@ export default defineGkdApp({
             '@[id="cj.mobile.wm.allmodules:id/wm_pop_pic_close"] +n * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/23253580',
         },
+        {
+          key: 10,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][width<60 && height<60] < View[childCount=1] < View[childCount=1] < View[childCount=1] < View[childCount=1] + View >2 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/34c7741f-0f03-4b0d-b8d2-917ed297e304',
+          snapshotUrls: 'https://i.gkd.li/i/24119772',
+        },
+        {
+          key: 11,
+          fastQuery: true,
+          position: {
+            left: 'width * 0.9636',
+            top: 'height * 0.5',
+          },
+          activityIds: '.MainActivity',
+          matches:
+            '[desc="开通前请阅读"] -n @ImageView[childCount=0] < View < View < View < View < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/ee504d60-ca93-40de-bb0f-292ef1df8c70',
+          snapshotUrls: 'https://i.gkd.li/i/24119773',
+        },
       ],
     },
     {
