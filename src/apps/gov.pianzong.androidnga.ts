@@ -117,5 +117,22 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '权限提示-通知权限',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.donews.nga.activitys.MainActivity',
+          matches: '[vid="iv_close_notification_guide"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c6be338c-2a1b-4123-bd8c-51fa35d2b8f2',
+          snapshotUrls: 'https://i.gkd.li/i/24105952',
+        },
+      ],
+    },
   ],
 });
