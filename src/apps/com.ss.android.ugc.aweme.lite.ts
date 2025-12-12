@@ -74,25 +74,20 @@ export default defineGkdApp({
       name: '全屏广告',
       rules: [
         {
+          key: 0,
           activityIds:
             'com.ss.android.ugc.aweme.live.LiveDummyHybridTransparentActivity',
           matches:
             '@Image[clickable=true][text!=null][width<100 && height<100] +4 View >2 [text="同意协议并查看额度"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/23558501',
         },
-      ],
-    },
-    {
-      key: 12,
-      name: '局部广告-不感兴趣',
-      desc: '刷视频遇到商品广告',
-      rules: [
         {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches:
             '@UIView[text="不感兴趣"][clickable=true] +2 FlattenUIText[text="不感兴趣"]',
-          fastQuery: true,
           snapshotUrls: 'https://i.gkd.li/i/24123937',
-          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
         },
       ],
     },
