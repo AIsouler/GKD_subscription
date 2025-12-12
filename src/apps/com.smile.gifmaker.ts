@@ -109,5 +109,33 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '分段广告-信息流广告',
+      fastQuery: true,
+      activityIds: 'com.yxcorp.gifshow.HomeActivity',
+      rules: [
+        {
+          key: 0,
+          action: 'longClick',
+          matches:
+            '@FrameLayout[desc$="作品"][longClickable=true][visibleToUser=true] >(4,5) [text$="旗舰店" || text="广告"]',
+          exampleUrls: 'https://e.gkd.li/f199ffaf-9ff8-49f5-a3fe-3fc5bbae8f7c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24022468',
+            'https://i.gkd.li/i/24024010',
+          ],
+        },
+        {
+          preKeys: [0],
+          matches: '@[clickable=true] > [text="重复出现"]',
+          exampleUrls: 'https://e.gkd.li/a93df9c1-7abe-4bd0-9d7b-ca6cce5f2286',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24024009',
+            'https://i.gkd.li/i/24024011',
+          ],
+        },
+      ],
+    },
   ],
 });

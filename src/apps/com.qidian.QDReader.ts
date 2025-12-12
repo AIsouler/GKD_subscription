@@ -16,7 +16,7 @@ export default defineGkdApp({
           fastQuery: true,
           action: 'clickCenter',
           matches:
-            '([text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]) || ([vid="splash_skip_button"][visibleToUser=true])',
+            '([text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]) || ([vid="splash_skip_button"][visibleToUser=true])',
           exampleUrls: 'https://e.gkd.li/3e2357fd-dced-4929-85e0-a9a06ce5fea0',
           snapshotUrls: [
             'https://i.gkd.li/i/19580847',
@@ -209,6 +209,7 @@ export default defineGkdApp({
       name: '功能类-自动签到',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: '.ui.activity.MainGroupActivity',
           excludeMatches: '[vid="tvTipNum"][text="--"][visibleToUser=true]',
@@ -218,6 +219,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23210761',
             'https://i.gkd.li/i/23211622',
           ],
+        },
+        {
+          preKeys: [0],
+          fastQuery: true,
+          activityIds: '.ui.activity.QDBrowserActivity',
+          matches:
+            '@View[id=null][childCount=0][clickable=true] < View < View < WebView[text="福利中心"] < WebView < FrameLayout < [vid="webViewContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/24012947',
         },
       ],
     },
