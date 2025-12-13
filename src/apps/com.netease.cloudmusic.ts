@@ -20,7 +20,7 @@ export default defineGkdApp({
             '.music.biz.search.activity.SearchActivity',
           ],
           matches:
-            '[text*="跳过" || text*="Skip"][text.length<10][width<400 && height<200][visibleToUser=true]',
+            '[text*="跳过" || text*="Skip"][text.length<10][width<500 && height<200][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/15092772',
             'https://i.gkd.li/i/17892200', // 'Skip' for English users.
@@ -110,6 +110,12 @@ export default defineGkdApp({
           activityIds: '.music.biz.search.activity.SearchActivity',
           matches: '[vid="adCloseIV"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16385547',
+        },
+        {
+          key: 2,
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="v_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23982125',
         },
       ],
     },

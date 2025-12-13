@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '@[vid*="close"] > [text*="跳过"][text.length<10][width<400 && height<200][visibleToUser=true]',
+            '@[vid*="close"] > [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/17576743',
             'https://i.gkd.li/i/17578451',
@@ -332,6 +332,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
@@ -344,6 +345,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18296345',
             'https://i.gkd.li/i/22113615',
           ],
+        },
+        {
+          key: 1,
+          name: '充值类商品界面广告',
+          fastQuery: true,
+          activityIds: 'com.taobao.weex.WXActivity',
+          matches:
+            '@ImageView[clickable=true][width<150 && height<155] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [vid="weex_render_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/23923991',
         },
       ],
     },
