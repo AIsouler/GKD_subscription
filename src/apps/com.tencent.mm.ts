@@ -424,7 +424,9 @@ export default defineGkdApp({
       name: '功能类-付款后自动点击完成/返回商家',
       rules: [
         {
+          key: 0,
           fastQuery: true,
+          versionCode: { maximum: 2979 },
           activityIds: '.framework.app.UIPageFragmentActivity',
           matches:
             '[vid="kinda_button_impl_wrapper"][desc="完成" || desc="返回商家"]',
@@ -435,6 +437,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14662147',
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/14532946',
+        },
+        {
+          key: 1,
+          versionCode: { minimum: 2980 },
+          activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
+          matches: 'Button[desc="返回商家"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e7acbb38-c602-4ea4-88ec-7604c3aeae06',
+          snapshotUrls: 'https://i.gkd.li/i/24141842',
         },
       ],
     },
@@ -566,6 +576,7 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
+          versionCode: { maximum: 2959 },
           activityIds: '.framework.app.UIPageFragmentActivity',
           matches:
             'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
@@ -579,6 +590,7 @@ export default defineGkdApp({
           key: 1,
           matchRoot: true,
           forcedTime: 100000, // https://github.com/AIsouler/GKD_subscription/issues/1486
+          versionCode: { minimum: 2960 },
           activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
           matches:
             '[desc^="付款方式"] + Button[desc="支付"][visibleToUser=true]',
