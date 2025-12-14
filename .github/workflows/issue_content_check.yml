@@ -31,6 +31,7 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           labels: 'invalid'
           body: |
-            您好 ${{ github.event.issue.user.login }}，检测到您提供了他人无法访问的链接，请提供快照页面右上角生成的分享链接！
+            您好 ${{ github.event.issue.user.login }}，检测到您提供了他人无法访问的链接，
+            请点击查看 [正确的分享快照方式说明](https://gkd.li/guide/snapshot#share-note) 。
 
             可在下方评论区补充
