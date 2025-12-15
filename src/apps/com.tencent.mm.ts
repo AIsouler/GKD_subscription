@@ -424,6 +424,7 @@ export default defineGkdApp({
       name: '功能类-付款后自动点击完成/返回商家',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: '.framework.app.UIPageFragmentActivity',
           matches:
@@ -433,8 +434,17 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/14399355',
             'https://i.gkd.li/i/14662147',
+            'https://i.gkd.li/i/24157874',
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/14532946',
+        },
+        {
+          key: 1,
+          versionCode: { minimum: 2980 },
+          activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
+          matches: 'Button[desc="返回商家"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e7acbb38-c602-4ea4-88ec-7604c3aeae06',
+          snapshotUrls: 'https://i.gkd.li/i/24141842',
         },
       ],
     },
@@ -573,12 +583,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15144570',
             'https://i.gkd.li/i/15144571',
             'https://i.gkd.li/i/15360745',
+            'https://i.gkd.li/i/24157875',
           ],
         },
         {
           key: 1,
           matchRoot: true,
           forcedTime: 100000, // https://github.com/AIsouler/GKD_subscription/issues/1486
+          versionCode: { minimum: 2960 },
           activityIds: '.plugin.lite.ui.WxaLiteAppTransparentLiteUI',
           matches:
             '[desc^="付款方式"] + Button[desc="支付"][visibleToUser=true]',
@@ -798,6 +810,22 @@ export default defineGkdApp({
           matches:
             'ImageView[childCount=0] - ImageView[childCount=0] < RelativeLayout[childCount=2] < LinearLayout < @LinearLayout[clickable=true][visibleToUser=true] <n ListView <n RelativeLayout < FrameLayout < FrameLayout < FrameLayout < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/23737039',
+        },
+      ],
+    },
+    {
+      key: 44,
+      name: '功能类-自动允许打开外部应用',
+      desc: '点击允许',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.plugin.webview.ui.tools.MMWebViewUI',
+          matches: [
+            '[text^="即将离开微信"][visibleToUser=true]',
+            '[text="允许"][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24161524',
         },
       ],
     },
