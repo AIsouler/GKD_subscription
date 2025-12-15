@@ -813,5 +813,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 44,
+      name: '功能类-自动允许打开外部应用',
+      desc: '点击允许',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.plugin.webview.ui.tools.MMWebViewUI',
+          matches: [
+            '[text^="即将离开微信"][visibleToUser=true]',
+            '[text="允许"][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24161524',
+        },
+      ],
+    },
   ],
 });
