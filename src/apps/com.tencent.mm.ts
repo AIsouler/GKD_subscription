@@ -426,7 +426,6 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          versionCode: { maximum: 2979 },
           activityIds: '.framework.app.UIPageFragmentActivity',
           matches:
             '[vid="kinda_button_impl_wrapper"][desc="完成" || desc="返回商家"]',
@@ -435,6 +434,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/14399355',
             'https://i.gkd.li/i/14662147',
+            'https://i.gkd.li/i/24157874',
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/14532946',
         },
@@ -576,7 +576,6 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          versionCode: { maximum: 2959 },
           activityIds: '.framework.app.UIPageFragmentActivity',
           matches:
             'ViewGroup + ViewGroup > ViewGroup > [vid="kinda_button_impl_wrapper"][desc="支付"]',
@@ -584,6 +583,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15144570',
             'https://i.gkd.li/i/15144571',
             'https://i.gkd.li/i/15360745',
+            'https://i.gkd.li/i/24157875',
           ],
         },
         {
