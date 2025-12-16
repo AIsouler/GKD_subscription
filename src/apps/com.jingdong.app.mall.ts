@@ -149,6 +149,7 @@ export default defineGkdApp({
           excludeMatches: [
             'ImageView[desc="关闭页面"] - [text="优惠券"]',
             'TextView[text="退换/售后"][id=null]',
+            '[text="立即购买"][visibleToUser=true]',
           ],
           matches:
             '[desc="关闭页面" || desc="关闭按钮"][clickable=true][visibleToUser=true]',
@@ -159,6 +160,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15416926',
             'https://i.gkd.li/i/15862131',
             'https://i.gkd.li/i/16818580', // 增加excludeMatches: 'TextView[text="退换/售后"]', 避免在刚刚打开该快照页面时误触（此时activityId并未改变）
+            'https://i.gkd.li/i/24170046', // 增加excludeMatches: '[text="立即购买"][visibleToUser=true]', 避免在该快照误触
           ],
         },
         {
