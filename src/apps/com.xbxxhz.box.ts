@@ -40,5 +40,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告-更新弹窗',
+      desc: '点击x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mango.bridge.ui.update.AppUpdateTransAct',
+          matches:
+            '[vid="base_uav3_dlg_hide"][clickable=true][index=parent.childCount.minus(1)]',
+          snapshotUrls: 'https://i.gkd.li/i/24192680',
+        },
+      ],
+    },
   ],
 });
