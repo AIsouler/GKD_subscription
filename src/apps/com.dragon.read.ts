@@ -237,17 +237,41 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 3,
+          key: 1,
           matches:
             '@ImageView[clickable=true][childCount=0][visibleToUser=true] < FrameLayout - LinearLayout >2 [text="广告"]',
           exampleUrls: 'https://e.gkd.li/c172db67-a489-488b-a5f5-35aa9657c444',
           snapshotUrls: 'https://i.gkd.li/i/18724040',
         },
+        //key: 2广告多发于夜间模式
         {
-          preKeys: [0, 3],
-          key: 1,
+          key: 2,
+          name: '底部横幅广告-点击[x]',
+          matches:
+            '@ViewGroup[clickable=true][focusable=true][visibleToUser=true] +n [desc~="(?is)[0-9].*" || desc^="文明" || desc^="值得"]',
+          exampleUrls: [
+            'https://e.gkd.li/ab2021a9-8e5c-4d2a-8df1-8c6aff4e38f6',
+            'https://e.gkd.li/e899dbef-3b71-4422-a7a1-a2e6a110d23a',
+            'https://e.gkd.li/91bd37ce-b007-43bd-b7af-83eca67d253e',
+            'https://e.gkd.li/584da5b9-62d4-427e-9e2c-351310ca31fb',
+            'https://e.gkd.li/cc3d8ef7-1427-41f1-befc-8bff396553dd',
+            'https://e.gkd.li/ae2776e7-a6da-49ea-b3b2-c42a1734e6f8',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/24189866',
+            'https://i.gkd.li/i/24189900',
+            'https://i.gkd.li/i/24189911',
+            'https://i.gkd.li/i/24189915',
+            'https://i.gkd.li/i/24205796',
+            'https://i.gkd.li/i/24205810',
+          ],
+        },
+        {
+          preKeys: [0, 1, 2],
+          key: 3,
           name: '点击[不感兴趣]/[关闭此广告]',
           matches: '[text="不感兴趣" || text="关闭此广告"]',
+          exampleUrls: 'https://e.gkd.li/e04bcb90-ad61-43d9-97e9-b4f6e3873320',
           snapshotUrls: [
             'https://i.gkd.li/i/13520219',
             'https://i.gkd.li/i/13674550',
@@ -255,6 +279,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14913207',
             'https://i.gkd.li/i/18724041',
             'https://i.gkd.li/i/24128392',
+            'https://i.gkd.li/i/24189605',
           ],
         },
       ],
