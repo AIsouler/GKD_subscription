@@ -70,8 +70,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          matches:
-            '[id="cn.xiaochuankeji.tieba:id/hh_hermes_ad_tag"] + [id="cn.xiaochuankeji.tieba:id/iv_close"][clickable=true]',
+          matches: '@[id="cn.xiaochuankeji.tieba:id/iv_close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12661011',
         },
         {
