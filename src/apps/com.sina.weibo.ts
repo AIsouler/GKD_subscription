@@ -78,15 +78,20 @@ export default defineGkdApp({
         '.feed.DetailWeiboActivity',
         '.feed.detailrefactor.DetailPageActivity',
         '.feed.SubCommentActiity',
+        '.story.gallery.feed.StoryFeedCommentsActivity2',
       ],
       rules: [
         {
           key: 0,
-          matches: '@[vid="ll_close"] > [text="广告"][visibleToUser=true]',
+          matches:
+            '@[vid="ll_close"] > [text="广告" || text="推荐"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13852321',
             'https://i.gkd.li/i/19526000',
+            'https://i.gkd.li/i/19551850',
+            'https://i.gkd.li/i/19552278',
             'https://i.gkd.li/i/21828244',
+            'https://i.gkd.li/i/24208999',
           ],
         },
         {
@@ -145,6 +150,9 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19551451',
             'https://i.gkd.li/i/20710958',
             'https://i.gkd.li/i/21828246',
+            'https://i.gkd.li/i/19551857',
+            'https://i.gkd.li/i/19552282',
+            'https://i.gkd.li/i/24209013',
           ],
         },
       ],
@@ -278,35 +286,6 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '分段广告-评论区博主内容推荐',
-      desc: '点击关闭-点击[不感兴趣]/[不想看到此类内容]',
-      fastQuery: true,
-      activityIds: [
-        '.feed.detailrefactor.DetailPageActivity',
-        '.story.gallery.feed.StoryFeedCommentsActivity2',
-      ],
-      rules: [
-        {
-          key: 0,
-          matches: '@[vid="ll_close"] > [text="推荐"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/19551850',
-            'https://i.gkd.li/i/19552278',
-          ],
-        },
-        {
-          preKeys: [0],
-          matchRoot: true,
-          matches: '[text="不感兴趣"][clickable=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/19551857',
-            'https://i.gkd.li/i/19552282',
-          ],
-        },
-      ],
-    },
-    {
-      key: 27,
       name: '分段广告-评论区荐读',
       fastQuery: true,
       activityIds: '.feed.detailrefactor.DetailPageActivity',
