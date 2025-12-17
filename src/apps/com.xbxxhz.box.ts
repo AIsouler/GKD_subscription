@@ -40,5 +40,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mango.bridge.ui.update.AppUpdateTransAct',
+          matches: '[vid="base_uav3_dlg_hide"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24192680',
+        },
+      ],
+    },
   ],
 });
