@@ -30,13 +30,14 @@ export default defineGkdApp({
             top: 'width * 0.17', // height可能会变化，不建议使用
           },
           matches:
-            '[vid="ad_view"][visibleToUser=true][width>=1200 && width!=1440 && width!=1224]',
+            '[vid="ad_parent"][visibleToUser=true][width>=1200 && width!=1440 && width!=1224]',
           snapshotUrls: [
             'https://i.gkd.li/i/13601755',
             'https://i.gkd.li/i/16054268',
             'https://i.gkd.li/i/23324118',
             'https://i.gkd.li/i/23324139',
             'https://i.gkd.li/i/23652259',
+            'https://i.gkd.li/i/24191638',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/23283060',
@@ -52,7 +53,7 @@ export default defineGkdApp({
             top: 'width * 0.137', // height可能会变化，不建议使用
           },
           matches:
-            '[vid="ad_view"][visibleToUser=true][width<1200 || width=1224]',
+            '[vid="ad_parent"][visibleToUser=true][width<1200 || width=1224]',
           snapshotUrls: [
             'https://i.gkd.li/i/13575257',
             'https://i.gkd.li/i/13575547',
@@ -76,7 +77,7 @@ export default defineGkdApp({
             left: 'width * 0.868',
             top: 'width * 0.09', // height可能会变化，不建议使用
           },
-          matches: '[vid="ad_view"][visibleToUser=true][width=1216]',
+          matches: '[vid="ad_parent"][visibleToUser=true][width=1216]',
           snapshotUrls: 'https://i.gkd.li/i/23283060',
         },
         {
@@ -86,7 +87,7 @@ export default defineGkdApp({
             left: 'width * 0.875',
             top: 'width * 0.125',
           },
-          matches: '[vid="ad_view"][visibleToUser=true][width=1440]',
+          matches: '[vid="ad_parent"][visibleToUser=true][width=1440]',
           snapshotUrls: 'https://i.gkd.li/i/23382528',
         },
       ],
