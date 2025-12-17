@@ -89,6 +89,18 @@ export default defineGkdApp({
           matches: '[vid="ad_view"][visibleToUser=true][width=1440]',
           snapshotUrls: 'https://i.gkd.li/i/23382528',
         },
+        {
+          key: 6,
+          fastQuery: true,
+          position: {
+            left: 'width * 0.915',
+            top: 'width * 0.175', // height可能会变化，不建议使用
+          },
+          matches:
+            '[vid="sdk_view"][visibleToUser=true][width>=1200 && width!=1440 && width!=1224]',
+          exampleUrls: 'https://e.gkd.li/fe6ac3c5-4a7c-4133-9885-92f856f3e646',
+          snapshotUrls: 'https://i.gkd.li/i/24191638',
+        },
       ],
     },
     {
