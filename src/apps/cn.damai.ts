@@ -39,5 +39,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.homepage.MainActivity',
+          matches:
+            '[vid="damai_theme_dialog_close_layout"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24213790',
+        },
+      ],
+    },
   ],
 });
