@@ -20,15 +20,24 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-右下角领福利悬浮窗',
-      desc: '点击关闭',
+      name: '局部广告',
       rules: [
         {
+          key: 0,
+          name: '领福利悬浮窗',
           fastQuery: true,
           activityIds: 'com.cubic.autohome.MainActivity',
           matches:
             '@ImageView[visibleToUser=true] < * <2 * - [id="android:id/tabhost"]',
           snapshotUrls: 'https://i.gkd.li/i/13885414',
+        },
+        {
+          key: 1,
+          name: '直播悬浮窗',
+          activityIds: 'com.cubic.autohome.MainActivity',
+          matches:
+            '[id="com.autohome.main.car:id/image_live_close" || id="com.autohome.main.car:id/view_ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/24221462',
         },
       ],
     },
