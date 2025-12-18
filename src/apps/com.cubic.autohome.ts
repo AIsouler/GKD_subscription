@@ -35,7 +35,8 @@ export default defineGkdApp({
           key: 1,
           name: '直播悬浮窗',
           activityIds: 'com.cubic.autohome.MainActivity',
-          matches: '[id="com.autohome.main.car:id/image_live_close"]',
+          matches:
+            '[id="com.autohome.main.car:id/image_live_close" || id="com.autohome.main.car:id/view_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/24221462',
         },
       ],
