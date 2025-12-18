@@ -79,5 +79,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '权限提示-悬浮窗',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tencent.wework.common.controller.DialogActivityUtil',
+          matches: ['[text^="请开启悬浮窗"]', '[text="取消"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/24230054',
+        },
+      ],
+    },
   ],
 });
