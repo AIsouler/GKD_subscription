@@ -425,6 +425,15 @@ export default defineGkdApp({
           matches: '@TextView[width<50 && height<50] -n [text="去看看"]',
           snapshotUrls: 'https://i.gkd.li/i/23054580',
         },
+        {
+          key: 3,
+          name: '余额宝转出-询问转出原因',
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '@TextView[text="15天内不再询问"][clickable=true] -n [text$="转出原因"]',
+          snapshotUrls: 'https://i.gkd.li/i/24229300',
+        },
       ],
     },
     {
@@ -518,7 +527,7 @@ export default defineGkdApp({
     },
     {
       key: 27,
-      name: '功能类-余额宝转出自动勾选[7日内不再提示]',
+      name: '功能类-余额宝转出自动勾选[短期不再提示]',
       actionMaximum: 1,
       resetMatch: 'activity',
       rules: [
@@ -527,11 +536,12 @@ export default defineGkdApp({
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
           matches: [
             '[text^="该笔为你快速转出"]',
-            '@CheckBox + [text="7日内不再提示"]',
+            '@CheckBox + [text$="不再提示"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/22798330', // 勾选前
             'https://i.gkd.li/i/22798432', // 勾选后
+            'https://i.gkd.li/i/24230171', // 本月
           ],
         },
       ],
