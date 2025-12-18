@@ -68,12 +68,20 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          name: '消息页面顶部广告',
+          name: '消息列表页面顶部广告1',
           fastQuery: true,
           activityIds: '.activity.SplashActivity',
           matches:
             '@ImageView[desc="关闭"][clickable=true][childCount=0] -2 [text$="试用超级会员"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/23837678',
+        },
+        {
+          key: 3,
+          name: '消息列表页面顶部广告2',
+          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+          matches:
+            '@ImageView[desc="关闭"][clickable=true] <n RelativeLayout - RelativeLayout >3 ImageView[desc="快捷入口"]',
+          snapshotUrls: 'https://i.gkd.li/i/24230528',
         },
       ],
     },
