@@ -17,6 +17,7 @@ export default defineGkdApp({
           excludeActivityIds: [
             '.app.SearchActivity',
             '.comment.ui.activity.CommentListActivity',
+            '.feature.short_container_feature.ui.ShortContainerHostActivity',
           ],
           matches:
             '([vid="btn_skip"][visibleToUser=true]) || ([text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true])',
@@ -28,6 +29,7 @@ export default defineGkdApp({
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/18221225',
             'https://i.gkd.li/i/23141429',
+            'https://i.gkd.li/i/24229324',
           ],
         },
       ],
