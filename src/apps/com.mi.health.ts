@@ -27,7 +27,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '权限提示-权限提醒',
+      name: '权限提示-后台运行',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
