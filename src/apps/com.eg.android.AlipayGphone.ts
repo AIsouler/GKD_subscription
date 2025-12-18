@@ -425,6 +425,15 @@ export default defineGkdApp({
           matches: '@TextView[width<50 && height<50] -n [text="去看看"]',
           snapshotUrls: 'https://i.gkd.li/i/23054580',
         },
+        {
+          key: 3,
+          name: '余额宝转出-询问转出原因',
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '@TextView[text="15天内不再询问"][clickable=true] -n [text$="转出原因"]',
+          snapshotUrls: 'https://i.gkd.li/i/24229300',
+        },
       ],
     },
     {
