@@ -98,5 +98,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 6,
+      name: '权限提示-麦克风',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.xiaomi.fitness.baseui.common.CommonBaseActivity',
+          matches:
+            '@[vid="close_instruction"][clickable=true] - [text^="鼾声梦话监测开关因麦克风未授权而关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/24229351',
+        },
+      ],
+    },
   ],
 });
