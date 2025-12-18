@@ -69,5 +69,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '通知提示-AI分析',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.able.wisdomtree.course.course.studycourse.activity.StudyCourseVideoActivity',
+          matches: '@[vid="im_close"][clickable=true] - [text$="同学"]',
+          snapshotUrls: 'https://i.gkd.li/i/24230330',
+        },
+      ],
+    },
   ],
 });
