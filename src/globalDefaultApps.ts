@@ -155,6 +155,7 @@ export const blackListAppIDs: string[] = [
   'com.mtphotosapp', // MT Photos 全局规则误触 https://i.gkd.li/i/20023048
   'com.predidit.kazumi', // Kazumi
   'com.github.catfriend1.syncthingandroid', // Syncthing-Fork
+  'com.github.catfriend1.syncthingfork', // Syncthing-Fork
   'org.fcitx.fcitx5.android', // 小企鹅输入法
   'org.fcitx.fcitx5.android.plugin.clipboard_filter', // 小企鹅输入法（剪贴板过滤器插件）
   'org.fcitx.fcitx5.android.plugin.rime', // 小企鹅输入法（中州韵插件）
@@ -178,6 +179,15 @@ export const blackListAppIDs: string[] = [
   'gr.nikolasspyr.integritycheck', // Play Integrity API Checker
   'com.luckyzyx.luckytool', // 全局规则误触 https://i.gkd.li/i/21339859
   'ai.x.grok', // Grok 全局规则误触 https://i.gkd.li/i/22884434
+  'xyz.malkki.neostumbler.fdroid', // NeoStumbler
+  'org.torproject.torbrowser', // Tor Browser
+  'proton.android.authenticator', // Proton Authenticator
+  'io.safepal.wallet', // SafePal
+  'org.documentfoundation.libreoffice', // LibreOffice Viewer
+  'be.mygod.vpnhotspot_foss', // VPN 热点
+  'io.nekohasekai.sfa', // sing-box
+  'com.binance.dev', // 币安
+  'com.superproductivity.superproductivity', // Super Productivity
 
   'com.canghai.haoka',
   'com.xy.td',
