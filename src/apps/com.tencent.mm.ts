@@ -27,25 +27,25 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16568338',
           ],
         },
-        {
-          key: 1,
-          fastQuery: true,
-          actionDelay: 300,
-          position: {
-            left: 'width * 0.9223',
-            top: 'height * 0.5',
-          },
-          anyMatches: [
-            '@LinearLayout >2 [text="广告"][visibleToUser=false]',
-            'RecyclerView > FrameLayout[childCount=1] > RelativeLayout > FrameLayout > LinearLayout > LinearLayout > LinearLayout > @LinearLayout[childCount=2][getChild(0).getChild(0).text!=null] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/14783802',
-            'https://i.gkd.li/i/15531539',
-            'https://i.gkd.li/i/19665911',
-          ],
-          excludeSnapshotUrls: 'https://i.gkd.li/i/19717709',
-        },
+        // {
+        //   key: 1,
+        //   fastQuery: true,
+        //   actionDelay: 300,
+        //   position: {
+        //     left: 'width * 0.9223',
+        //     top: 'height * 0.5',
+        //   },
+        //   anyMatches: [
+        //     '@LinearLayout >2 [text="广告"][visibleToUser=false]',
+        //     'RecyclerView > FrameLayout[childCount=1] > RelativeLayout > FrameLayout > LinearLayout > LinearLayout > LinearLayout > @LinearLayout[childCount=2][getChild(0).getChild(0).text!=null] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
+        //   ],
+        //   snapshotUrls: [
+        //     'https://i.gkd.li/i/14783802',
+        //     'https://i.gkd.li/i/15531539',
+        //     'https://i.gkd.li/i/19665911',
+        //   ],
+        //   excludeSnapshotUrls: 'https://i.gkd.li/i/19717709',
+        // },
         {
           key: 2,
           matches:
@@ -59,7 +59,7 @@ export default defineGkdApp({
         // 预留key
         // 第二段
         {
-          preKeys: [0, 1, 2],
+          preKeys: [0, 2],
           key: 25,
           name: '点击[关闭]',
           fastQuery: true,
