@@ -49,10 +49,19 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.xiaomi.vipaccount.ui.home.page.HomeFrameActivity',
-          matches:
+          activityIds: [
+            'com.xiaomi.vipaccount.ui.home.page.HomeFrameActivity',
+            'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
+          ],
+          anyMatches: [
             '[desc="公告版弹窗"] +2 [id="com.xiaomi.vipaccount:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/13400617',
+            '[desc="公告版弹窗"] + ViewGroup[vid="image_container"] > [id="com.xiaomi.vipaccount:id/close"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/46e16bc5-2f13-408e-9c34-927a13ba3e9c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13400617',
+            'https://i.gkd.li/i/24289621',
+          ],
         },
       ],
     },
