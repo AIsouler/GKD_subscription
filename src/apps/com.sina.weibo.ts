@@ -78,6 +78,7 @@ export default defineGkdApp({
         '.feed.DetailWeiboActivity',
         '.feed.detailrefactor.DetailPageActivity',
         '.feed.SubCommentActiity',
+        '.feed.halfcontainer.HalfContainerPageActivity',
       ],
       rules: [
         {
@@ -87,6 +88,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13852321',
             'https://i.gkd.li/i/19526000',
             'https://i.gkd.li/i/21828244',
+            'https://i.gkd.li/i/24291704',
           ],
         },
         {
@@ -313,18 +315,17 @@ export default defineGkdApp({
       activityIds: [
         '.feed.detailrefactor.DetailPageActivity',
         '.feed.DetailWeiboActivity',
+        '.feed.halfcontainer.HalfContainerPageActivity',
       ],
       rules: [
         {
           key: 0,
           matches: '@[vid="ll_close"] > [text="荐读"][visibleToUser=true]',
-          exampleUrls: [
-            'https://e.gkd.li/bab872e2-6967-49f5-8443-46af8f225d8f',
-            'https://e.gkd.li/28cdd8fc-0495-4072-beb3-6e456bba9eff',
-          ],
+          exampleUrls: 'https://e.gkd.li/bab872e2-6967-49f5-8443-46af8f225d8f',
           snapshotUrls: [
             'https://i.gkd.li/i/21828298',
             'https://i.gkd.li/i/24237728',
+            'https://i.gkd.li/i/24291674',
           ],
         },
         {
