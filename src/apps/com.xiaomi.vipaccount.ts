@@ -53,7 +53,7 @@ export default defineGkdApp({
             'com.xiaomi.vipaccount.ui.home.page.HomeFrameActivity',
             'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
           ],
-          matches: [
+          anyMatches: [
             '[desc="公告版弹窗"] +2 [id="com.xiaomi.vipaccount:id/close"]',
             '[desc="公告版弹窗"] + ViewGroup[vid="image_container"] > [id="com.xiaomi.vipaccount:id/close"]',
           ],
