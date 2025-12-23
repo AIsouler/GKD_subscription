@@ -27,6 +27,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-顶部卡片广告',
+      actionDelay: 500,
       fastQuery: true,
       rules: [
         {
@@ -34,10 +35,16 @@ export default defineGkdApp({
             'org.qiyi.android.video.MainActivity',
             'org.qiyi.video.PhoneCloudRecordActivity',
           ],
-          matches: '@[vid="unused_res_a"][clickable=true] > [vid="close"]',
+          anyMatches: [
+            '@[vid="unused_res_a"][clickable=true] > [vid="close"]',
+            '@[vid="unused_res_a"][clickable=true] - [text="广告"][vid="tv_ad_badge" || vid="unused_res_a"]',
+          ],
+          exampleUrls: 'https://e.gkd.li/69dd60a4-3038-4a8c-8501-33a2d36b3283',
           snapshotUrls: [
             'https://i.gkd.li/i/12495050',
             'https://i.gkd.li/i/16301287',
+            'https://i.gkd.li/i/24312658',
+            'https://i.gkd.li/i/24314237',
           ],
         },
       ],
