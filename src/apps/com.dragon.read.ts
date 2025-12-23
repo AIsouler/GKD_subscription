@@ -224,7 +224,8 @@ export default defineGkdApp({
            */
           key: 0,
           name: '点击[反馈]按钮',
-          actionCd: 3000,
+          actionCd: 3500,
+          actionDelay: 200,
           matches:
             '[text="反馈" || desc="反馈"][visibleToUser=true][name$="UIText" || name$="ViewGroup"]',
           exampleUrls: [
