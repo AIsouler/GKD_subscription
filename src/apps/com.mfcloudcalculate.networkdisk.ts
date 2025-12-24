@@ -135,6 +135,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/ee504d60-ca93-40de-bb0f-292ef1df8c70',
           snapshotUrls: 'https://i.gkd.li/i/24119773',
         },
+        {
+          key: 12,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[vid="channel_insert_close_iv"][clickable=true] - ImageView[vid="iv_ad_icon"]',
+          exampleUrls: 'https://e.gkd.li/fa0391fe-54d4-4db0-930d-2cb9002b3786',
+          snapshotUrls: 'https://i.gkd.li/i/24325263',
+        },
       ],
     },
     {
