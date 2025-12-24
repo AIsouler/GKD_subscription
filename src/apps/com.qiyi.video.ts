@@ -36,8 +36,8 @@ export default defineGkdApp({
             'org.qiyi.video.PhoneCloudRecordActivity',
           ],
           anyMatches: [
-            '@[vid="unused_res_a"][clickable=true] > [vid="close"]',
-            '@[vid="unused_res_a"][clickable=true] - [text="广告"][vid="tv_ad_badge" || vid="unused_res_a"]',
+            '@[vid="unused_res_a"][clickable=true] > [vid="close"][visibleToUser=true]',
+            '@[vid="unused_res_a"][clickable=true] - [text="广告"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/69dd60a4-3038-4a8c-8501-33a2d36b3283',
           snapshotUrls: [
@@ -46,6 +46,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/24312658',
             'https://i.gkd.li/i/24314237',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24324750',
         },
       ],
     },
