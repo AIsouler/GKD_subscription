@@ -27,7 +27,6 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-顶部卡片广告',
-      actionDelay: 500,
       fastQuery: true,
       rules: [
         {
