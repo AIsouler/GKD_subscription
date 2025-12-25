@@ -18,5 +18,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] < * +n * >4 [text^="高级版"]',
+          snapshotUrls: 'https://i.gkd.li/i/24335645',
+        },
+      ],
+    },
   ],
 });
