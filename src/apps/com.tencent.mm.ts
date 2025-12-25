@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '分段广告-朋友圈广告',
-      desc: '点击卡片广告右上角,直接关闭/出现菜单,确认关闭',
+      desc: '警告⚠️：该规则有可能会误触，请谨慎开启',
       activityIds: [
         '.plugin.sns.ui.SnsTimeLineUI',
         '.plugin.sns.ui.improve.ImproveSnsTimelineUI',
@@ -27,25 +27,25 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16568338',
           ],
         },
-        // {
-        //   key: 1,
-        //   fastQuery: true,
-        //   actionDelay: 300,
-        //   position: {
-        //     left: 'width * 0.9223',
-        //     top: 'height * 0.5',
-        //   },
-        //   anyMatches: [
-        //     '@LinearLayout >2 [text="广告"][visibleToUser=false]',
-        //     'RecyclerView > FrameLayout[childCount=1] > RelativeLayout > FrameLayout > LinearLayout > LinearLayout > LinearLayout > @LinearLayout[childCount=2][getChild(0).getChild(0).text!=null] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
-        //   ],
-        //   snapshotUrls: [
-        //     'https://i.gkd.li/i/14783802',
-        //     'https://i.gkd.li/i/15531539',
-        //     'https://i.gkd.li/i/19665911',
-        //   ],
-        //   excludeSnapshotUrls: 'https://i.gkd.li/i/19717709',
-        // },
+        {
+          key: 1,
+          fastQuery: true,
+          actionDelay: 300,
+          position: {
+            left: 'width * 0.9223',
+            top: 'height * 0.5',
+          },
+          anyMatches: [
+            '@LinearLayout >2 [text="广告"][visibleToUser=false]',
+            'RecyclerView > FrameLayout[childCount=1] > RelativeLayout > FrameLayout > LinearLayout > LinearLayout > LinearLayout > @LinearLayout[childCount=2][getChild(0).getChild(0).text!=null] > LinearLayout[index=1][clickable=false][visibleToUser=false]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14783802',
+            'https://i.gkd.li/i/15531539',
+            'https://i.gkd.li/i/19665911',
+          ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/19717709',
+        },
         {
           key: 2,
           matches:
