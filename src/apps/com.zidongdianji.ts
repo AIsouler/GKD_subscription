@@ -36,7 +36,7 @@ export default defineGkdApp({
           key: 4,
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true] <n LinearLayout +n LinearLayout > [text="详情点击"]',
+            '@ImageView[clickable=true][width<80 && height<80] <2 LinearLayout +2 LinearLayout > [text="详情点击"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/029e9494-fb0a-4752-8711-1f6e68684ef5',
           snapshotUrls: 'https://i.gkd.li/i/24336331',
         },
