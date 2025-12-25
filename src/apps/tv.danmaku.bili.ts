@@ -405,7 +405,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           matches:
-            '@[clickable=true] > [text="不感兴趣" || text="相似内容过多" || text="对该up的直播不感兴趣" || text="我不想看"]',
+            '@[clickable=true] > [text*="不感兴趣" || text="相似内容过多" || text="我不想看"]',
           exampleUrls: 'https://e.gkd.li/23937c2d-379c-4fb5-aaee-7295bcf0afca',
           snapshotUrls: [
             'https://i.gkd.li/i/17676025',
@@ -415,6 +415,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18306839',
             'https://i.gkd.li/i/20739391',
             'https://i.gkd.li/i/24015691',
+            'https://i.gkd.li/i/24336415',
           ],
         },
         {
