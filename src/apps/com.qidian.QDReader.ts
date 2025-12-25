@@ -230,5 +230,32 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 16,
+      name: '功能类-做任务点击[去完成]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.ui.activity.QDBrowserActivity',
+          matches:
+            '[id="video"] >2 @[visibleToUser=true][text="去完成"] <<n [vid="webViewContainer"]',
+          exampleUrls: 'https://e.gkd.li/f2c12f77-adae-4411-b3db-0950360fad4b',
+          snapshotUrls: 'https://i.gkd.li/i/24339308',
+        },
+      ],
+    },
+    {
+      key: 17,
+      name: '功能类-获得积分点击[知道了]',
+      rules: [
+        {
+          activityIds: '.ui.activity.QDBrowserActivity',
+          matches:
+            '@[visibleToUser=true][text="知道了"] <<n [vid="webViewContainer"]',
+          exampleUrls: 'https://e.gkd.li/54f41a5a-1c71-4618-bdab-5335172ab7f5',
+          snapshotUrls: 'https://i.gkd.li/i/24339296',
+        },
+      ],
+    },
   ],
 });
