@@ -5,6 +5,23 @@ export default defineGkdApp({
   name: '顺丰速运',
   groups: [
     {
+      key: -1,
+      name: '开屏广告',
+      desc: '跳过',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches:
+            '@Button[desc^="跳过"][clickable=true] >n TextView[visibleToUser=true][text="跳过"]',
+          exampleUrls: 'https://e.gkd.li/122cb193-9ea0-4f70-b5cb-69ddacfb1e2a',
+          snapshotUrls: 'https://i.gkd.li/i/24330969',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '更新提示',
       matchTime: 10000,
