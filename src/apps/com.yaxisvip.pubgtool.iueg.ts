@@ -16,5 +16,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '全屏广告',
+      rules: [
+        {
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][text=""] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24331009',
+        },
+      ],
+    },
   ],
 });
