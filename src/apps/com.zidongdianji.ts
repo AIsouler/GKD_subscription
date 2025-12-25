@@ -33,10 +33,22 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16742931',
         },
         {
-          preKeys: [1, 3],
+          key: 4,
+          fastQuery: true,
+          matches:
+            '@ImageView[clickable=true] <n LinearLayout +n LinearLayout > [text="详情点击"]',
+          exampleUrls: 'https://e.gkd.li/029e9494-fb0a-4752-8711-1f6e68684ef5',
+          snapshotUrls: 'https://i.gkd.li/i/24336331',
+        },
+        {
+          preKeys: [1, 3, 4],
           key: 2,
-          matches: '@[clickable=true] > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/14783475',
+          matches: '@[clickable=true] >n [text="不感兴趣"]',
+          exampleUrls: 'https://e.gkd.li/560a7da4-64f5-4dc7-899c-60856241662f',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14783475',
+            'https://i.gkd.li/i/24336327',
+          ],
         },
       ],
     },
