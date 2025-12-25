@@ -38,6 +38,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/18683999',
         },
         {
+          key: 5,
           matches:
             '@View[vid="main_play_ad_close_real"][clickable=true][desc="关闭广告"] - [vid="main_play_ad_close_btn"][name$="ImageView"][desc="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/24330967',
