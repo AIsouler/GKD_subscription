@@ -224,6 +224,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/d81b6bc4-f4f9-466d-8edb-7af27c707ca5',
           snapshotUrls: 'https://i.gkd.li/i/20711018',
         },
+        {
+          key: 2,
+          name: '优质答主推荐',
+          fastQuery: true,
+          activityIds:
+            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
+          matches: '@[vid="ic_close"][clickable=true] -n [text="更多优质答主"]',
+          snapshotUrls: 'https://i.gkd.li/i/24335648',
+        },
       ],
     },
     {
