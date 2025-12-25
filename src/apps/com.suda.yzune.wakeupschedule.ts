@@ -17,5 +17,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.suda.yzune.wakeupschedule.schedule.ScheduleActivity',
+          matches: ['[text^="新版"]', '[vid="update_close"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/24336743',
+        },
+      ],
+    },
   ],
 });
