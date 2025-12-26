@@ -158,17 +158,20 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '其他-福利中心看视频后获得奖励',
-      desc: '点击[我知道了]',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
+      name: '功能类-福利中心看完广告-知道了',
+      desc: '点击[知道了]',
       rules: [
         {
-          activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
+          fastQuery: true,
+          activityIds: '.ui.activity.QDBrowserActivity',
           matches:
-            '@View[desc="我知道了"][clickable=true] <<n [id="com.qidian.QDReader:id/webViewContainer"]',
-          snapshotUrls: 'https://i.gkd.li/i/13606901',
+            '@TextView[childCount=0][text$="知道了"][visibleToUser=true] <<n [id="com.qidian.QDReader:id/webViewContainer"]',
+          exampleUrls: 'https://e.gkd.li/54f41a5a-1c71-4618-bdab-5335172ab7f5',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13606901', //v7.9.318 已失效，该版本的起点已无法看福利中心广告
+            'https://i.gkd.li/i/22909666', //422
+            'https://i.gkd.li/i/24339296', //428
+          ],
         },
       ],
     },
@@ -241,19 +244,6 @@ export default defineGkdApp({
             '[id="video"] >2 @[visibleToUser=true][text="去完成"] <<n [vid="webViewContainer"]',
           exampleUrls: 'https://e.gkd.li/f2c12f77-adae-4411-b3db-0950360fad4b',
           snapshotUrls: 'https://i.gkd.li/i/24339308',
-        },
-      ],
-    },
-    {
-      key: 17,
-      name: '功能类-获得积分点击[知道了]',
-      rules: [
-        {
-          activityIds: '.ui.activity.QDBrowserActivity',
-          matches:
-            '@[visibleToUser=true][text="知道了"] <<n [vid="webViewContainer"]',
-          exampleUrls: 'https://e.gkd.li/54f41a5a-1c71-4618-bdab-5335172ab7f5',
-          snapshotUrls: 'https://i.gkd.li/i/24339296',
         },
       ],
     },
