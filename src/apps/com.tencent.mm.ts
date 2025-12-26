@@ -196,10 +196,16 @@ export default defineGkdApp({
         {
           key: 1,
           name: '点击别人发的红包',
-          activityIds: '.ui.LauncherUI',
+          activityIds: [
+            '.ui.LauncherUI',
+            '.ui.chatting.variants.ChattingMainUI',
+          ],
           matches:
             'LinearLayout[childCount=1] >2 @FrameLayout[clickable=true] >2 LinearLayout[getChild(1).childCount=1] +2 RelativeLayout > [text="微信红包"]',
-          snapshotUrls: 'https://i.gkd.li/i/18134826',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18134826',
+            'https://i.gkd.li/i/24347101',
+          ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/18134823', // 自己发的， LinearLayout[childCount=1] 区分
             'https://i.gkd.li/i/18134833', // 已领取的， getChild(1).childCount=1 区分
