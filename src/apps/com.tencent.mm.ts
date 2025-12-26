@@ -59,7 +59,7 @@ export default defineGkdApp({
         // 预留key
         // 第二段
         {
-          preKeys: [0, 2],
+          preKeys: [0, 1, 2],
           key: 25,
           name: '点击[关闭]',
           fastQuery: true,
