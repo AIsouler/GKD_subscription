@@ -47,5 +47,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '更新提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.yunma.baseextend.appupdate.view.UpdateDialogActivity',
+          matches: ['[text^="发现新版本"]', '[vid="ib_close"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/24336659',
+        },
+      ],
+    },
   ],
 });
