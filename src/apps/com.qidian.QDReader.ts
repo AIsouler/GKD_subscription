@@ -165,13 +165,13 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.ui.activity.QDBrowserActivity',
           matches:
-            '@TextView[text$="知道了"][visibleToUser=true] <<n [id="com.qidian.QDReader:id/webViewContainer"]',
+            '@TextView[childCount=0][text$="知道了"][visibleToUser=true] <<n [id="com.qidian.QDReader:id/webViewContainer"]',
+          exampleUrls: 'https://e.gkd.li/54f41a5a-1c71-4618-bdab-5335172ab7f5',
           snapshotUrls: [
             'https://i.gkd.li/i/13606901', //v7.9.318 已失效，该版本的起点已无法看福利中心广告
             'https://i.gkd.li/i/22909666', //422
             'https://i.gkd.li/i/24339296', //428
           ],
-          exampleUrls: 'https://e.gkd.li/54f41a5a-1c71-4618-bdab-5335172ab7f5',
         },
       ],
     },
