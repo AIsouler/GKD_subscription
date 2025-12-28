@@ -23,35 +23,21 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
-      name: '局部广告-卡片广告',
-      fastQuery: true,
-      rules: [
-        {
-          key: 2,
-          activityIds: [
-            'com.huawei.android.totemweather.WeatherMainActivity',
-            'com.huawei.android.totemweather.WeatherHome',
-          ],
-          matches:
-            '[id="com.huawei.android.totemweather:id/ad_cancel"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13521221',
-            'https://i.gkd.li/i/13787501',
-          ],
-        },
-      ],
-    },
-    {
       key: 2,
       name: '分段广告-卡片广告',
       fastQuery: true,
       rules: [
         {
           key: 0,
-          activityIds: 'com.huawei.android.totemweather.WeatherMainActivity',
-          matches: '[vid="rl_close_pps"][visibleToUser=true]',
+          activityIds: [
+            'com.huawei.android.totemweather.WeatherMainActivity',
+            'com.huawei.android.totemweather.WeatherHome',
+          ],
+          matches:
+            '[vid="rl_close_pps" || vid="ad_cancel"][visibleToUser=true]',
           snapshotUrls: [
+            'https://i.gkd.li/i/13521221',
+            'https://i.gkd.li/i/13787501',
             'https://i.gkd.li/i/13800100',
             'https://i.gkd.li/i/14278462', // 使用visibleToUser=true防止在此页面误触
             'https://i.gkd.li/i/15831584',
