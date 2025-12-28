@@ -56,11 +56,17 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.ranfeng.adranfengsdk.biz.activity.InterstitialActivity',
-          matches: '[vid="ranfeng_widget_iv_close"][visibleToUser=true]',
+            'com.tianmu.biz.activity.InterstitialActivity',
+          ],
+          matches:
+            '[vid="ranfeng_widget_iv_close" || vid="tianmu_widget_iv_close"][clickable=true]',
           exampleUrls: 'https://e.gkd.li/0ae7b19f-6fa1-4eaf-a5b9-0dfb214541b4',
-          snapshotUrls: 'https://i.gkd.li/i/23981370',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23981370',
+            'https://i.gkd.li/i/24360340',
+          ],
         },
       ],
     },
