@@ -36,7 +36,14 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0, 1],
+          key: 2,
+          matches:
+            '[vid="tweet_curation_action"] - [vid="tweet_ad_badge_top_right"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/705dd827-ff04-4233-af38-60d92439e1f3',
+          snapshotUrls: 'https://i.gkd.li/i/24359526',
+        },
+        {
+          preKeys: [0, 1, 2],
           key: 10,
           name: '点击[我不喜欢这个广告]',
           matches:
@@ -45,6 +52,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12798810',
             'https://i.gkd.li/i/14782902',
             'https://i.gkd.li/i/20239421',
+            'https://i.gkd.li/i/24359537',
           ],
         },
       ],
