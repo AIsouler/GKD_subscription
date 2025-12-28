@@ -233,19 +233,5 @@ export default defineGkdApp({
         },
       ],
     },
-    {
-      key: 16,
-      name: '功能类-做任务点击[去完成]',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: '.ui.activity.QDBrowserActivity',
-          matches:
-            '[id="video"] >2 @[visibleToUser=true][text="去完成"] <<n [vid="webViewContainer"]',
-          exampleUrls: 'https://e.gkd.li/f2c12f77-adae-4411-b3db-0950360fad4b',
-          snapshotUrls: 'https://i.gkd.li/i/24339308',
-        },
-      ],
-    },
   ],
 });
