@@ -33,6 +33,7 @@ export default defineGkdApp({
           activityIds: [
             'org.qiyi.android.video.MainActivity',
             'org.qiyi.video.PhoneCloudRecordActivity',
+            '.qysplashscreen.hotlaunch.HotSplashScreenActivity',
           ],
           anyMatches: [
             '@[vid="unused_res_a"][clickable=true] > [vid="close"][visibleToUser=true]',
@@ -44,6 +45,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16301287',
             'https://i.gkd.li/i/24312658',
             'https://i.gkd.li/i/24314237',
+            'https://i.gkd.li/i/24364968',
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/24324750',
         },
