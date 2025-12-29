@@ -400,6 +400,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23933866',
             'https://i.gkd.li/i/24015674',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24365466',
         },
         {
           preKeys: [0],
