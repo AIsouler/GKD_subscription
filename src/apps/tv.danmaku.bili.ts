@@ -374,7 +374,7 @@ export default defineGkdApp({
           anyMatches: [
             '@[vid="more" || vid="more_layout" || id="tv.danmaku.bili.adbiz:id/more" || id="tv.danmaku.bili.adbiz:id/more_layout"] <<n [vid="ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame" || id="tv.danmaku.bili.adbiz:id/ad_tint_frame"][visibleToUser=true]', // 广告、推广
             '@[vid="more"] -(3,5) [vid="live_lottie_layout"][visibleToUser=true]', // 直播
-            '[!(vid="duration") || text="课堂"] <3 ViewGroup[getChild(0).vid="cover"] > [vid="more"][visibleToUser=true]', // 纪录片、课堂推广、游戏
+            '[!(vid="duration" || vid="second_to_last_line_area") || text="课堂"] <3 ViewGroup[getChild(0).vid="cover"] > [vid="more"][visibleToUser=true]', // 纪录片、课堂推广、游戏
           ],
           exampleUrls: [
             'https://e.gkd.li/219c40c4-debf-40d8-889a-7eb39c87126c',
@@ -400,6 +400,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23933866',
             'https://i.gkd.li/i/24015674',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24365466',
         },
         {
           preKeys: [0],
