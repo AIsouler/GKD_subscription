@@ -81,12 +81,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'info.muge.appshare.view.main.MainActivity',
+      activityIds: [
+        'info.muge.appshare.view.main.MainActivity',
+        '.MainActivity',
+      ],
       rules: [
         {
           key: 0,
-          matches: '[text="签到"][vid="tvSign"]',
-          snapshotUrls: 'https://i.gkd.li/i/13931265',
+          excludeMatches: '[vid="tvRandomTitle"][text="推荐应用"]',
+          matches: '[text="签到"][vid="tvSign" || vid=null]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13931265',
+            'https://i.gkd.li/i/24376300', //v5.0.5.beta.2
+          ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/22319703', // 避免点击首页签到按钮
         },
         {
@@ -95,6 +102,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/13931279',
             'https://i.gkd.li/i/20259829',
+            'https://i.gkd.li/i/24376307', //v5.0.5.beta.2
           ],
         },
       ],
