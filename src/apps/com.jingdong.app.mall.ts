@@ -287,5 +287,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 16,
+      name: '功能类-展开全部订单信息',
+      desc: '订单已完成-点击全部订单信息',
+      rules: [
+        {
+          actionMaximum: 1,
+          resetMatch: 'match',
+          fastQuery: true,
+          // activityIds: [],
+          matches: '[text="全部订单信息"][clickable=true][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e1a3b6f7-b6cb-4379-90b5-cb4b927dacc4',
+          snapshotUrls: 'https://i.gkd.li/i/24372039',
+        },
+      ],
+    },
   ],
 });
