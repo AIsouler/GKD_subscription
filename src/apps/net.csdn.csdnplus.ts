@@ -102,10 +102,11 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           activityIds: 'net.csdn.csdnplus.mvvm.ui.activity.BlogDetailActivity',
-          matches: '@LinearLayout[clickable=true] > [text="不感兴趣"]',
+          matches: '@LinearLayout[clickable=true] >(1,2) [text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13830858',
             'https://i.gkd.li/i/14312349',
+            'https://i.gkd.li/i/24376480', //v6.8.1
           ],
         },
       ],
