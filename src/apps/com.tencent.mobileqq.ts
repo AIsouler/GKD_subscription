@@ -89,8 +89,10 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-好友动态-卡片广告',
       fastQuery: true,
-      activityIds:
+      activityIds: [
         'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+        '.activity.SplashActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -99,9 +101,18 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/21947672',
         },
         {
-          preKeys: [0],
-          matches: '@[clickable=true] >(1,2) ImageView + [text="关闭此条广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/21947698',
+          key: 1,
+          matches:
+            '@[desc="更多"][clickable=true] - [desc="广告"][visibleToUser=true] - LinearLayout > [text="今天"]',
+          snapshotUrls: 'https://i.gkd.li/i/24381585',
+        },
+        {
+          preKeys: [0, 1],
+          matches: '@[clickable=true] >(1,2) [text="关闭此条广告"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21947698',
+            'https://i.gkd.li/i/24381598',
+          ],
         },
       ],
     },
