@@ -70,8 +70,11 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '[vid="ad_container"] >2 [vid="iv_close"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/24209546',
+            '@[vid="iv_close"] <<n [vid="ad_container"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24209546',
+            'https://i.gkd.li/i/24380002',
+          ],
         },
         {
           preKeys: [1],
