@@ -103,16 +103,15 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '@[desc="更多"][clickable=true] - [desc="广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/24381585', //v9.0.95
+            '@[desc="更多"][clickable=true] - [desc="广告"][visibleToUser=true] - LinearLayout > [text="今天"]',
+          snapshotUrls: 'https://i.gkd.li/i/24381585',
         },
         {
-          key: 10,
           preKeys: [0, 1],
-          matches: '@[clickable=true] >(1,2) ImageView + [text="关闭此条广告"]',
+          matches: '@[clickable=true] >(1,2) [text="关闭此条广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/21947698',
-            'https://i.gkd.li/i/24381598', //v9.0.95
+            'https://i.gkd.li/i/24381598',
           ],
         },
       ],
