@@ -77,44 +77,34 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-自动签到',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
           fastQuery: true,
-          activityIds: 'info.muge.appshare.view.main.MainActivity',
-          excludeMatches: '[vid="tvRandomTitle"][text="推荐应用"]',
-          matches: '[text="签到"][vid="tvSign"]',
-          snapshotUrls: 'https://i.gkd.li/i/13931265',
+          activityIds: '.view.main.MainActivity',
+          anyMatches: [
+            '[text="签到"][vid="tvSign"]',
+            '[!(vid="llDaySign")] > [childCount=0][text="签到"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13931265',
+            'https://i.gkd.li/i/24376300',
+          ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/22319703', // 避免点击首页签到按钮
         },
         {
           preKeys: [0],
           fastQuery: true,
-          activityIds: 'info.muge.appshare.view.main.MainActivity',
-          matches: '[text="确定"]',
+          activityIds: '.view.main.MainActivity',
+          anyMatches: [
+            '[text="确定"]',
+            '@[clickable=true] > [childCount=0][text="我知道了"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13931279',
             'https://i.gkd.li/i/20259829',
+            'https://i.gkd.li/i/24376307',
           ],
-        },
-        {
-          key: 1,
-          versionCode: { minimum: 392 },
-          activityIds: '.MainActivity',
-          matches: '[text="签到"]',
-          exampleUrls: 'https://e.gkd.li/7cfe113c-7d85-4810-be71-c04a090954af',
-          snapshotUrls: 'https://i.gkd.li/i/24376300',
-        },
-        {
-          preKeys: [1],
-          versionCode: { minimum: 392 },
-          activityIds: '.MainActivity',
-          matches: '[text="我知道了"]',
-          exampleUrls: 'https://e.gkd.li/8152f9f2-e0e9-4b0d-9cb7-64c6704a671f',
-          snapshotUrls: 'https://i.gkd.li/i/24376307',
         },
       ],
     },
