@@ -144,6 +144,15 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/fa0391fe-54d4-4db0-930d-2cb9002b3786',
           snapshotUrls: 'https://i.gkd.li/i/24325263',
         },
+        {
+          key: 13,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@TextView[clickable=true][childCount=0] <2 FrameLayout[childCount=2] - LinearLayout >4 [text$="第三方应用"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e6486e20-e908-48da-b84a-f3ea5519346b',
+          snapshotUrls: 'https://i.gkd.li/i/24404354',
+        },
       ],
     },
     {
@@ -198,6 +207,38 @@ export default defineGkdApp({
             '@ImageView[childCount=0][clickable=true][visibleToUser=true][width<100 && height<100] +2 [desc="开启相册自动备份"]',
           exampleUrls: 'https://e.gkd.li/e86a59e7-9329-4931-9bdd-5f6b4f896294',
           snapshotUrls: 'https://i.gkd.li/i/21326468',
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@TextView[clickable=true][childCount=0] <2 FrameLayout[childCount=2] < FrameLayout <2 LinearLayout + LinearLayout > [text="了解详情"]',
+          exampleUrls: 'https://e.gkd.li/64fcf71b-b7a8-4d1e-8fd4-8be4ea4692a2',
+          snapshotUrls: 'https://i.gkd.li/i/24404389',
+        },
+        {
+          key: 1,
+          activityIds: '.MainActivity',
+          matches:
+            '@Image[childCount=0][width<60 && height<60][visibleToUser=true] < View[childCount=1] -2 View >3 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/e6fc2756-928f-48d4-af51-3b6ce9aa557b',
+          snapshotUrls: 'https://i.gkd.li/i/24404390',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@View[clickable=true][childCount=0][visibleToUser=true] < [desc^="dislike"] + FrameLayout >2 [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/54463724-d3c0-42b4-8fac-adf47b31799d',
+          snapshotUrls: 'https://i.gkd.li/i/24404391',
         },
       ],
     },
