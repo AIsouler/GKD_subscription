@@ -87,31 +87,40 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '分段广告-好友动态-卡片广告',
+      name: '分段广告',
       fastQuery: true,
-      activityIds: [
-        'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
-        '.activity.SplashActivity',
-      ],
       rules: [
         {
           key: 0,
-          matches:
-            '@[desc="更多"][clickable=true] > [text="广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/21947672',
+          activityIds: [
+            'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+            '.guild.base.QPublicFragmentActivityForMainWebActivity',
+          ],
+          matches: '@[clickable=true] > [text="广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/21947672',
+            'https://i.gkd.li/i/24404962',
+          ],
         },
         {
           key: 1,
+          activityIds: '.activity.SplashActivity',
           matches:
             '@[desc="更多"][clickable=true] - [desc="广告"][visibleToUser=true] - LinearLayout > [text="今天"]',
           snapshotUrls: 'https://i.gkd.li/i/24381585',
         },
         {
           preKeys: [0, 1],
+          activityIds: [
+            'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+            '.activity.SplashActivity',
+            '.guild.base.QPublicFragmentActivityForMainWebActivity',
+          ],
           matches: '@[clickable=true] >(1,2) [text="关闭此条广告"]',
           snapshotUrls: [
             'https://i.gkd.li/i/21947698',
             'https://i.gkd.li/i/24381598',
+            'https://i.gkd.li/i/24406932',
           ],
         },
       ],
