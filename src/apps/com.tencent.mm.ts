@@ -227,12 +227,14 @@ export default defineGkdApp({
         {
           preKeys: [1, 2],
           name: '从红包结算界面返回',
+          action: 'back',
           activityIds: '.plugin.luckymoney.ui.LuckyMoney',
-          matches: '@ImageView[desc="返回"] +2 LinearLayout >8 [text$="红包"]',
+          matches: '[text$="的红包"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/18134829',
             'https://i.gkd.li/i/18135031',
             'https://i.gkd.li/i/23825631',
+            'https://i.gkd.li/i/24414957',
           ],
         },
       ],
