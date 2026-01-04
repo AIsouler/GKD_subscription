@@ -75,11 +75,12 @@ export default defineGkdApp({
           name: '信用卡页面',
           activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
           matches:
-            '[id="com.chinatelecom.bestpayclient:id/h5_pc_container"] >n View[childCount=3] > @[clickable=true] + * + [childCount=0]',
+            '[id="com.chinatelecom.bestpayclient:id/h5_pc_container"] >2 bc >5 View > View >3 View[childCount=3] > @[clickable=true][width<150 && height<150][visibleToUser=true] + * + View[childCount=0]',
           snapshotUrls: [
             'https://i.gkd.li/i/13696322',
             'https://i.gkd.li/i/13696323',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24420758',
         },
       ],
     },
