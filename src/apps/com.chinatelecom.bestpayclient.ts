@@ -28,10 +28,13 @@ export default defineGkdApp({
           key: 0,
           name: '权益页',
           fastQuery: true,
-          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
+          activityIds: '.ui.MainActivity',
           matches:
-            'Dialog >3 View[childCount=2] > @View[clickable=true] > Image[childCount=0] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
-          snapshotUrls: 'https://i.gkd.li/i/13402692',
+            '[name$="Dialog"] >4 @[clickable=true][visibleToUser=true] - View >(1,2) [childCount=0][text=""] + Image[text!=null][childCount=0] <<n [vid="best_h5_container"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13402692',
+            'https://i.gkd.li/i/24428096',
+          ],
         },
         {
           key: 1,
@@ -64,11 +67,14 @@ export default defineGkdApp({
         {
           key: 3,
           name: '借贷页',
-          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
+          activityIds: '.ui.MainActivity',
           fastQuery: true,
           matches:
-            '@View[clickable=true][text=""] <<n [id="com.chinatelecom.bestpayclient:id/best_h5_container"]',
-          snapshotUrls: 'https://i.gkd.li/i/13455929',
+            '@[clickable=true][text=""][visibleToUser=true] <<n [vid="best_h5_container"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13455929',
+            'https://i.gkd.li/i/24427912',
+          ],
         },
         {
           key: 4,
