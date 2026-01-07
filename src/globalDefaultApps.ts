@@ -243,7 +243,6 @@ export const blackListAppIDs: string[] = [
   'com.sevtinge.hyperceiler',
   'com.dna.tools',
   'flar2.devcheck',
-  'com.gstarmc.android',
   'com.github.capntrips.kernelflasher',
   'com.google.android.googlequicksearchbox',
   'qyz.onedesign',
