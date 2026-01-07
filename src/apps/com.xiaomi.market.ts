@@ -112,11 +112,20 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
-          matches: '@[clickable=true] > [text^="查看全部升级"]',
-          exampleUrls:
+          activityIds: [
+            'com.xiaomi.market.ui.UpdateListActivity',
+            '.ui.UpdateAppsActivity',
+          ],
+          matches:
+            '@[clickable=true] > [text^="查看全部升级" || text^="查看全部更新"]',
+          exampleUrls: [
             'https://m.gkd.li/57941037/8549db1e-17a5-44e3-b657-1d2d712efd2a',
-          snapshotUrls: 'https://i.gkd.li/i/14782814',
+            'https://e.gkd.li/e1a4d832-e582-4185-b93e-08ca41f46d92',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14782814',
+            'https://i.gkd.li/i/24461973',
+          ],
         },
       ],
     },
