@@ -77,5 +77,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-授权本次安装',
+      rules: [
+        {
+          matches:
+            '[vid="tv_install_guide"][text*="授权本次安装"][visibleToUser=true]',
+          fastQuery: true,
+          snapshotUrls: 'https://i.gkd.li/i/24465121', //vivo Android 16
+          exampleUrls: 'https://e.gkd.li/6ad6e4c6-3cb7-41b2-a37b-bcaa3c06de34',
+          activityIds: '.PackageInterceptActivity',
+        },
+      ],
+    },
   ],
 });
