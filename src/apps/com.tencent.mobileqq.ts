@@ -186,8 +186,11 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.tencent.richframework.gallery.QQGalleryActivity',
-          matches: '[text^="查看原图"]',
-          snapshotUrls: 'https://i.gkd.li/i/14757735',
+          matches: '[text^="查看原图"][left != 0]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14757735',
+            'https://i.gkd.li/i/24489364',
+          ],
         },
       ],
     },
