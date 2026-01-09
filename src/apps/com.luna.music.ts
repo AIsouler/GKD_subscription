@@ -159,15 +159,9 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: [
-            'com.ss.android.excitingvideo.ExcitingVideoActivity',
-            'com.luna.biz.ad.AdActivity',
-          ],
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
           matches: '[text="开启声音"][visibleToUser=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/15033124',
-            'https://i.gkd.li/i/24522999',
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/24522999',
           excludeSnapshotUrls: 'https://i.gkd.li/i/24521440',
         },
       ],
