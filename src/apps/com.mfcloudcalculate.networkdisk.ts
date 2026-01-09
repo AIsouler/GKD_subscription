@@ -153,6 +153,22 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/e6486e20-e908-48da-b84a-f3ea5519346b',
           snapshotUrls: 'https://i.gkd.li/i/24404354',
         },
+        {
+          key: 14,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] - FrameLayout >2 [text$="第三方应用"]',
+          snapshotUrls: 'https://i.gkd.li/i/24472832',
+        },
+        {
+          key: 15,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@Image[childCount=0][width<60 && height<60] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24473530',
+        },
       ],
     },
     {
