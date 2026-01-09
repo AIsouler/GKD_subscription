@@ -99,89 +99,76 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 7,
-      name: '功能类-看广告视频拿VIP',
-      desc: '30s广告后点击"跳过"',
-      activityIds: [
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-        'com.luna.biz.ad.AdActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          name: '等待30s点击"跳过"',
-          actionDelay: 30000,
-          matches: 'WebView > WebView > View TextView[text="| 跳过"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13611006',
-            'https://i.gkd.li/i/13613085',
-          ],
-        },
-        {
-          preKeys: [0],
-          key: 1,
-          name: '点击"坚持退出"',
-          fastQuery: true,
-          matches: '[text="坚持退出"]',
-          snapshotUrls: 'https://i.gkd.li/i/13613184',
-        },
-      ],
-    },
-    {
       key: 8,
-      name: '功能类-看广告获取听歌时长',
-      desc: '点击领取成功-点击坚持退出',
-      activityIds: [
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-        'com.ss.android.excitingvideo.ExcitingVideoActivity',
-        'com.luna.biz.ad.AdActivity',
-      ],
+      name: '功能类-全自动看广告获取听歌时长',
       rules: [
         {
           key: 0,
           fastQuery: true,
-          matches: '@[text*="领取成功"][clickable=true] - [text="反馈"]',
+          actionDelay: 15000,
+          position: {
+            left: 'width * 7.45',
+            top: 'height * 0.5',
+          },
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@FlattenUIText[text="广告"] + [text$="声音"] + [text="反馈"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/14767236',
-            'https://i.gkd.li/i/14391770',
-            'https://i.gkd.li/i/15033124',
+            'https://i.gkd.li/i/24521423',
+            'https://i.gkd.li/i/24521440',
           ],
         },
         {
-          key: 2,
-          matches: '[text="奖励已领取"]',
-          snapshotUrls: 'https://i.gkd.li/i/15140802',
-        },
-        {
-          preKeys: [0, 2],
           key: 1,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity',
+          matches: '[visibleToUser=true][text="奖励已领取"]',
+          snapshotUrls: 'https://i.gkd.li/i/24522627',
+        },
+        {
+          preKeys: [0, 1],
           fastQuery: true,
-          matches: '[text="坚持退出"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14767235',
-            'https://i.gkd.li/i/15033126',
-            'https://i.gkd.li/i/15140816',
+          actionDelay: 1000,
+          activityIds: [
+            'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity',
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+            'com.ss.android.excitingvideo.ExcitingVideoActivity',
           ],
+          matches:
+            '[text="领取奖励" || text^="再看一个" || text="继续观看"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15140816',
+            'https://i.gkd.li/i/24521416',
+            'https://i.gkd.li/i/24521446',
+            'https://i.gkd.li/i/24521516',
+          ],
+        },
+        {
+          key: 99,
+          fastQuery: true,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@[clickable=true][width<120 && height<120] + LinearLayout > [text="当前无新视频"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24522244',
         },
       ],
     },
     {
       key: 9,
-      name: '功能类-看视频免费听弹窗',
-      desc: '点击[立得全天畅听/立即解锁 今日畅听]',
+      name: '功能类-关闭广告的声音',
       rules: [
         {
           fastQuery: true,
           activityIds: [
-            'com.luna.biz.main.main.MainActivity',
-            'com.luna.biz.ad.view.container.AdActivity',
+            'com.ss.android.excitingvideo.ExcitingVideoActivity',
+            'com.luna.biz.ad.AdActivity',
           ],
-          matches:
-            'FlattenUIText[text="立得全天畅听" || text="立即解锁 今日畅听"][visibleToUser=true]',
+          matches: '[text="开启声音"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/14237527',
-            'https://i.gkd.li/i/18242457',
+            'https://i.gkd.li/i/15033124',
+            'https://i.gkd.li/i/24522999',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24521440',
         },
       ],
     },
