@@ -186,7 +186,10 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.tencent.richframework.gallery.QQGalleryActivity',
-          matches: '[text^="查看原图"][left != 0]',
+          anyMatches: [
+            '[text^="查看原图"][clickable=true][visibleToUser=true]',
+            '@[clickable=true] > [text^="查看原图"][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14757735',
             'https://i.gkd.li/i/24489364',
