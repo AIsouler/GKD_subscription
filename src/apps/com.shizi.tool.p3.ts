@@ -36,11 +36,22 @@ export default defineGkdApp({
       name: '全屏广告',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: 'com.windmill.sdk.widget.InterstitialView',
           matches: '[vid="tobid_interstitial_skip_ll"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/8405053f-ebb9-4915-b8c7-499fcaa953ff',
           snapshotUrls: 'https://i.gkd.li/i/23925245',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.beizi.ad.internal.activity.BeiZiInterstitialActivity',
+          matches:
+            '[vid="beizi_interstitial_ad_close_container_rl"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4ed42cae-88b2-4429-93ba-237bdf221f80',
+          snapshotUrls: 'https://i.gkd.li/i/24541547',
         },
       ],
     },
