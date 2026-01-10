@@ -145,12 +145,10 @@ export default defineGkdApp({
           matches:
             'ImageView[childCount=0] < @FrameLayout[clickable=true][childCount=1][visibleToUser=true] <2 RelativeLayout + RelativeLayout >3 [text="广告"] ',
           exampleUrls: 'https://e.gkd.li/0d5fea40-44ac-4b47-8b3c-e8388640e37d',
-          snapshotUrls: [
-            'https://i.gkd.li/i/24541094',
-          ],
+          snapshotUrls: 'https://i.gkd.li/i/24541094',
         },
         {
-          preKeys: [0, 1, 2, 3, 4],
+          preKeys: [0, 1, 2, 3, 4, 5],
           activityIds: [
             '.tblauncher.MainTabActivity',
             '.pb.pb.main.PbActivity',
