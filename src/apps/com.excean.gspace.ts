@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: 'OurPlay',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      ignoreGlobalGroupMatch: true,
+      rules: [
+        {
+          fastQuery: true,
+          matches:
+            '@View[clickable=true][childCount=0] +2 LinearLayout >3 [text="广告"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/8bad82e1-d00c-4d39-978c-513980b94962',
+          snapshotUrls: 'https://i.gkd.li/i/24539921',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '全屏广告-弹窗广告',
       matchTime: 10000,
