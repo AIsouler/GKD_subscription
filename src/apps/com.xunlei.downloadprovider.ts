@@ -22,8 +22,8 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/15048443',
             'https://i.gkd.li/i/15048416',
-            'https://i.gkd.li/i/16388942', // 防止误触
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/16388942',
         },
         {
           key: 1,
@@ -33,10 +33,16 @@ export default defineGkdApp({
           },
           excludeMatches: '[text*="跳过"]',
           matches: '[vid="native_container"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/15048354',
-            'https://i.gkd.li/i/15048376', // 防止在此页面提前触发规则
+          snapshotUrls: 'https://i.gkd.li/i/15048354',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/15048376',
+        },
+        {
+          key: 2,
+          anyMatches: [
+            '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
+            'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
           ],
+          snapshotUrls: 'https://i.gkd.li/i/24539634',
         },
       ],
     },
@@ -139,11 +145,16 @@ export default defineGkdApp({
         {
           key: 5,
           fastQuery: true,
-          activityIds:
+          activityIds: [
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          ],
           matches:
-            '@ImageView[childCount=0] < ViewGroup[childCount=1] < ViewGroup[childCount=1] < ViewGroup[childCount=1] < ViewGroup[childCount=1] + ViewGroup >4 [text="反馈"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/23762955',
+            '@ImageView[childCount=0] < ViewGroup[childCount=1] < ViewGroup[childCount=1] < ViewGroup[childCount=1] < ViewGroup[childCount=1] +2 ViewGroup >3 [text="广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23762955',
+            'https://i.gkd.li/i/24541418',
+          ],
         },
       ],
     },
