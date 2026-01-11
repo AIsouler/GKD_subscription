@@ -42,7 +42,7 @@ anyMatches: [
 - 选择器
 
 ```txt
-([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="Submit" || text*="阅读并同意" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text$="设置" || text*="登录" || text$="选好了" || text^="下一步" || text^="完成"][text.length<10][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="兴趣" || text*="喜好"][text.length<10][visibleToUser=true])
+([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="Submit" || text*="阅读并同意" || text="书签" || text="NEXT" || text*="隐私协议"][visibleToUser=true]) || ([text$="设置" || text$="选好了" || text^="下一步" || text^="完成"][text.length<10][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="兴趣" || text*="喜好"][text.length<10][visibleToUser=true])
 ```
 
 之所以限制文本长度 `[text.length>3 && text.length<6]` ，是因为有部分应用在加载开屏广告时会把首页的节点也加载出来，而大部分应用的首页顶部都会有一个搜索框，可能也会有“搜索”两个字，如果排除匹配内包含了 `vid*="search"` 和 `text="搜索"` ，那么这种情况下无法跳过开屏广告，并且 `vid*="search"` 不支持快速查询，所以去掉了 `vid*="search"` 和 `text="搜索"` ，使得排除匹配选择器只能匹配上大部分应用搜索页存在的文本：`搜索记录` 、`搜索历史` 、`搜索发现` 、`历史记录` 、`最近搜索` 、`最近在搜` 、`大家都在搜` 等等，这样就能实现仅排除匹配应用的搜索页，而不排除匹配应用的首页，避免出现上述无法跳过开屏广告的情况
