@@ -77,9 +77,12 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.MainActivity',
           matches:
-            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] -2 FrameLayout >3 [text="广告"]',
+            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] <n * > FrameLayout >2 [text="广告"]',
           exampleUrls: 'https://e.gkd.li/00bf6a60-c461-4970-bb73-b063376cbafd',
-          snapshotUrls: 'https://i.gkd.li/i/24541497',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24541497',
+            'https://i.gkd.li/i/24551719',
+          ],
         },
         {
           key: 3,
