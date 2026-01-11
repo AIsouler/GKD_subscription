@@ -99,20 +99,21 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           activityIds: '.view.main.MainActivity',
-          anyMatches: [
-            '[text="签到"][vid="tvSign"]',
-            '[!(vid="llDaySign")] > [childCount=0][text="签到"]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/13931265',
-            'https://i.gkd.li/i/24376300',
-          ],
+          matches: '[text="签到"][vid="tvSign"]',
+          snapshotUrls: 'https://i.gkd.li/i/13931265',
           excludeSnapshotUrls: 'https://i.gkd.li/i/22319703', // 避免点击首页签到按钮
         },
         {
-          preKeys: [0],
+          key: 1,
+          activityIds: '.MainActivity',
+          matches: '[!(vid="llDaySign")] > [childCount=0][text="签到"]',
+          snapshotUrls: 'https://i.gkd.li/i/24376300',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22319703', // 避免点击首页签到按钮
+        },
+        {
+          preKeys: [0, 1],
           fastQuery: true,
-          activityIds: '.view.main.MainActivity',
+          activityIds: ['.view.main.MainActivity', '.MainActivity'],
           anyMatches: [
             '[text="确定"]',
             '@[clickable=true] > [childCount=0][text="我知道了"]',
