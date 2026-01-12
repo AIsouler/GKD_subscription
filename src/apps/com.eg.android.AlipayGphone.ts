@@ -510,6 +510,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           position: {
             left: 'width * 0.8893',
@@ -522,6 +523,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/3698e238-f39b-47ce-b0df-e2e47c15b400',
           snapshotUrls: 'https://i.gkd.li/i/21467483',
           excludeSnapshotUrls: 'https://i.gkd.li/i/23763580',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '@TextView[clickable=true][width<110 && height<110] +n [text="产品动态"]',
+          snapshotUrls: 'https://i.gkd.li/i/24548034',
         },
       ],
     },
