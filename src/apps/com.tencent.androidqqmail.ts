@@ -39,7 +39,6 @@ export default defineGkdApp({
         {
           key: 3,
           fastQuery: true,
-          activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
           matches:
             'ImageView < LinearLayout[width<130 && height<100][id!=null] < @FrameLayout[clickable=true][id!=null] - [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/24559942',
