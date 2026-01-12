@@ -263,6 +263,14 @@ export default defineGkdApp({
           matches: 'Image[text="关闭弹屏"]',
           snapshotUrls: 'https://i.gkd.li/i/22531246',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: '.AlipayLogin',
+          matches:
+            '@[text="我知道了"][clickable=true] -n [text^="用碰一下支付"]',
+          snapshotUrls: 'https://i.gkd.li/i/24563264',
+        },
       ],
     },
     {
