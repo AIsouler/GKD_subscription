@@ -30,5 +30,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '局部广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'kt.com.fcbox.hiveconsumer.app.business.main.MainActivity',
+          matches: '[text*="会员已过期"] + [vid="close_img"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24560868',
+        },
+      ],
+    },
   ],
 });
