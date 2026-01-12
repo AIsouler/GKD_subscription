@@ -109,9 +109,12 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: '.MainActivity',
-          matches: '[!(vid="llDaySign")] > [childCount=0][text="签到"]',
+          matches: '[desc="头像"] +3 @View[clickable=true] > [text="签到"]',
           snapshotUrls: 'https://i.gkd.li/i/24376300',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/22319703', // 避免点击首页签到按钮
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/22319703',
+            'https://i.gkd.li/i/24563260',
+          ],
         },
         {
           preKeys: [0, 1],
