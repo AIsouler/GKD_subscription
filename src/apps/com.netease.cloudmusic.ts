@@ -194,6 +194,15 @@ export default defineGkdApp({
           ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/20097306', // 正常开通会员页面
         },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'com.netease.cloudmusic.music.biz.rn.activity.CashierRNActivity',
+          matches:
+            '[text="忍痛离开"] < @ViewGroup[clickable=true] -n * > [text$="VIP可畅享千万曲库"]',
+          snapshotUrls: 'https://i.gkd.li/i/24548104',
+        },
       ],
     },
     {
