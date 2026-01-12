@@ -7,48 +7,43 @@ export default defineGkdApp({
     {
       // 节点id疑似随机生成,尽量不用id属性
       key: 1,
-      name: '功能类-自动抢红包',
-      desc: '自己发的红包不抢',
+      name: '功能类-自动领红包',
+      desc: '自己发的红包不领',
+      fastQuery: true,
       rules: [
         {
           key: 0,
-          fastQuery: true,
           name: '点击别人发的红包',
-          activityIds:
-            'com.tencent.wework.msg.controller.ExternalContactMessageListActivity',
+          activityIds: [
+            '.msg.controller.ExternalContactMessageListActivity',
+            '.msg.controller.MessageListActivity',
+          ],
           matches:
-            'RelativeLayout[childCount=2] > ImageView + * @RelativeLayout[childCount=4] > LinearLayout[index=1] > LinearLayout[childCount=1] > [text="恭喜发财，大吉大利"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/64bdd899-9a30-4816-bafc-a9e2a0d09ec6',
+            'RelativeLayout[childCount=2] > ImageView[childCount=0] + RelativeLayout >2 @RelativeLayout[clickable=true][childCount=4] > LinearLayout[index=1] > LinearLayout[childCount=1] > [text="恭喜发财，大吉大利"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14151095',
-            'https://i.gkd.li/i/14151131', // 已领取的红包、自己的红包
+            'https://i.gkd.li/i/24560890',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/14151131', // 已领取的红包、自己的红包
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
           name: '开红包',
           activityIds:
-            'com.tencent.wework.enterprise.redenvelopes.controller.RedEnvelopeCollectorActivity',
+            '.enterprise.redenvelopes.controller.RedEnvelopeCollectorActivity',
           matches:
-            'RelativeLayout[childCount=3] > FrameLayout + RelativeLayout[childCount=3] + ImageView',
-          exampleUrls:
-            'https://m.gkd.li/57941037/52525cdb-0746-483c-b1ba-2282f3a8b8ed',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14151108',
-            'https://i.gkd.li/i/14151215',
-          ],
+            '@ImageView[childCount=0] - RelativeLayout[childCount=3] > TextView[text="恭喜发财，大吉大利"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24560289',
         },
         {
           preKeys: [0, 1],
           key: 2,
           name: '从金额页面返回到聊天页面',
+          action: 'back',
           activityIds:
-            'com.tencent.wework.enterprise.redenvelopes.controller.RedEnvelopeDetailActivity',
-          matches: 'LinearLayout[childCount=3] > LinearLayout TextView',
-          exampleUrls:
-            'https://m.gkd.li/57941037/2a69cf93-1d10-48c4-8456-663197c6feca',
+            '.enterprise.redenvelopes.controller.RedEnvelopeDetailActivity',
+          matches: '[text="已存入绑定的微信零钱账户"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14151120',
         },
       ],
