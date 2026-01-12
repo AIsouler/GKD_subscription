@@ -69,5 +69,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '其他-追加车型提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.didi.sdk.app.MainActivity',
+          matches: [
+            '[text="追加以下车型 可更快应答"]',
+            '[text="暂时不用"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24560279',
+        },
+      ],
+    },
   ],
 });
