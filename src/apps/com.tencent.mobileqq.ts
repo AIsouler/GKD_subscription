@@ -424,5 +424,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 34,
+      name: '功能类-关闭体验模式提醒',
+      desc: '点击[我知道了]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.QPublicFragmentActivity',
+          matches: [
+            '[text^="当前处于"][text*="体验模式"][visibleToUser=true]',
+            '[text="我知道了"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24561058',
+        },
+      ],
+    },
   ],
 });
