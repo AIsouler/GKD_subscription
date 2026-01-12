@@ -433,7 +433,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.activity.QPublicFragmentActivity',
           matches: [
-            '[text^="当前处于\\"体验模式\\"，不展示装扮。点击\\"立即切换\\"，可切换为\\"普通模式\\""]',
+            '[text^="当前处于"][text*="体验模式"][visibleToUser=true]',
             '[text="我知道了"][clickable=true]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/24561058',
