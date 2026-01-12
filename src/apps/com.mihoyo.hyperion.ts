@@ -145,5 +145,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 9,
+      name: '权限提示-通知权限',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.HyperionMainActivity',
+          matches: [
+            '[text^="开启通知提醒"]',
+            '@[clickable=true] > [text$="拒绝"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24489020',
+        },
+      ],
+    },
   ],
 });
