@@ -37,7 +37,15 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/17908070',
         },
         {
-          preKeys: [0, 1, 2], // https://github.com/gkd-kit/subscription/issues/1776
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmail.fragment.base.MailFragmentActivity',
+          matches:
+            'ImageView < LinearLayout[width<130 && height<100][id!=null] < @FrameLayout[clickable=true][id!=null] - [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/24559942',
+        },
+        {
+          preKeys: [0, 1, 2, 3], // https://github.com/gkd-kit/subscription/issues/1776
           key: 9,
           name: '点击[不感兴趣]',
           matches: '[text="不感兴趣"]',
