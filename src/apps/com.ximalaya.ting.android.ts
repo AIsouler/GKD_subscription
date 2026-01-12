@@ -5,19 +5,6 @@ export default defineGkdApp({
   name: '喜马拉雅',
   groups: [
     {
-      key: 0,
-      name: '局部广告-首页右侧浮动广告',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches:
-            '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
-          snapshotUrls: 'https://i.gkd.li/i/12472620',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '局部广告-播放页广告',
       rules: [
@@ -40,57 +27,6 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/18683999',
             'https://i.gkd.li/i/24330967',
-          ],
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: '分段广告-播放页面-底部推荐列表-夹杂广告',
-      desc: '点击关闭-点击屏蔽',
-      fastQuery: true,
-      rules: [
-        {
-          key: 1,
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches:
-            '@[id="com.ximalaya.ting.android:id/main_close_layout"][visibleToUser=true] > [id="com.ximalaya.ting.android:id/main_mark_text"][text="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12506225',
-            'https://i.gkd.li/i/12701414', // 关闭广告后，控件仍然存在但不可见，使用 visibleToUser=true 进行限定，防止关闭之后继续触发规则
-            'https://i.gkd.li/i/13314183', // 原规则clickable=false容易误触"橱窗"'[id="com.ximalaya.ting.android:id/main_mark_text"] + [id="com.ximalaya.ting.android:id/main_close"][visibleToUser=true]',
-          ],
-        },
-        {
-          preKeys: [1],
-          key: 2,
-          activityIds: [
-            'com.ximalaya.ting.android.main.dialog',
-            'com.ximalaya.ting.android.host.activity.MainActivity',
-          ],
-          matches: '@[clickable=true] > [text="屏蔽"] + [text="关闭当前广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12506269',
-            'https://i.gkd.li/i/13296565',
-          ],
-        },
-      ],
-    },
-    {
-      key: 3,
-      name: '局部广告-播放页面-播放前广告',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: [
-            'com.ximalaya.ting.android.host.activity.MainActivity',
-            'com.ximalaya.ting.android.framework.view.dialog',
-          ],
-          matches:
-            '[id="com.ximalaya.ting.android:id/main_play_ad_close_real"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12506250',
-            'https://i.gkd.li/i/12520626',
           ],
         },
       ],
@@ -127,18 +63,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
-      name: '局部广告-热播推荐广告',
-      rules: [
-        {
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches: '[text="热播推荐"] + ImageView + ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/12506270',
-          // 点击后出现 com.ximalaya.ting.android.main.dialog 弹窗
-        },
-      ],
-    },
-    {
       key: 7,
       name: '青少年模式',
       fastQuery: true,
@@ -153,19 +77,6 @@ export default defineGkdApp({
             '[id="com.ximalaya.ting.android:id/host_dialog_close"]',
           ],
           snapshotUrls: 'https://i.gkd.li/i/12506209',
-        },
-      ],
-    },
-    {
-      key: 8,
-      name: '局部广告-评论区广告',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
-          matches:
-            '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12869426',
         },
       ],
     },
