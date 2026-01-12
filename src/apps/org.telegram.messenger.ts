@@ -46,5 +46,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '其他-首页公告栏',
+      desc: '此规则覆盖生日提示、拍卖提示以及部分广告',
+      rules: [
+        {
+          activityIds: 'org.telegram.ui.LaunchActivity',
+          matches:
+            '@ImageView[clickable=true][width<140 && height<140] <n FrameLayout -n * >2 [desc="搜索"] < LinearLayout -n * > [text="Telegram"]',
+          snapshotUrls: 'https://i.gkd.li/i/24560612',
+        },
+      ],
+    },
   ],
 });
