@@ -56,7 +56,10 @@ export default defineGkdApp({
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           exampleUrls: 'https://e.gkd.li/49cef679-3efb-4719-9af9-8f3a4c311191',
-          snapshotUrls: 'https://i.gkd.li/i/17306992',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17306992',
+            'https://i.gkd.li/i/24472832',
+          ],
         },
         {
           key: 4,
@@ -155,14 +158,6 @@ export default defineGkdApp({
         },
         {
           key: 14,
-          fastQuery: true,
-          activityIds: '.MainActivity',
-          matches:
-            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] - FrameLayout >2 [text$="第三方应用"]',
-          snapshotUrls: 'https://i.gkd.li/i/24472832',
-        },
-        {
-          key: 15,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
