@@ -94,9 +94,10 @@ matches: [
 
 [https://i.gkd.li/i/15400143](https://i.gkd.li/i/15400143?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVtwYXJlbnQuY2hpbGRDb3VudD4zXSArbiBGcmFtZUxheW91dCA-KDEsMikgW3RleHRePSLnq4vljbMiIHx8IHRleHQ9Iuafpeeci-ivpuaDhSIgfHwgdGV4dD0i5LqG6Kej5pu05aSaIiB8fCB0ZXh0PSLljrvlvq7kv6HnnIvnnIsiIHx8IHRleHQkPSLlupTnlKgiIHx8IHRleHQ9Iui_m-WFpeWwj-eoi-W6jyIgfHwgdGV4dD0i6aKG5Y-W5LyY5oOgIiB8fCB0ZXh0PSLot7Povazlvq7kv6EiXQ)
 
-```txt
+[https://i.gkd.li/i/24488993](https://i.gkd.li/i/24488993?gkd=QEltYWdlVmlld1tjaGlsZENvdW50PTBdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVt2aXNpYmxlVG9Vc2VyPXRydWVdW3dpZHRoPDkwICYmIGhlaWdodDw5MF0gPCBGcmFtZUxheW91dFtjaGlsZENvdW50PTFdW3RleHQ9bnVsbF1bZGVzYz1udWxsXVtpZD1udWxsXVtwYXJlbnQuY2hpbGRDb3VudD4zXSA8biBGcmFtZUxheW91dCA-KDIsMykgW3RleHRePSLnq4vljbMiIHx8IHRleHQkPSLor6bmg4UiIHx8IHRleHRePSLkuobop6MiIHx8IHRleHQ9IuWOu-W-ruS_oeeci-eciyIgfHwgdGV4dCQ9IuW6lOeUqCIgfHwgdGV4dD0i6L-b5YWl5bCP56iL5bqPIiB8fCB0ZXh0PSLpooblj5bkvJjmg6AiIHx8IHRleHQ9Iui3s-i9rOW-ruS_oSJd)
 
-@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] +n FrameLayout >(1,2) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]
+```txt
+@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]
 ```
 
 - 选择器-2 **（可快速查询！）**
