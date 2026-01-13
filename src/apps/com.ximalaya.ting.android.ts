@@ -37,8 +37,8 @@ export default defineGkdApp({
       desc: '点击关闭-点击屏蔽',
       fastQuery: true,
       activityIds: [
-        'com.ximalaya.ting.android.host.activity.MainActivity',
-        'com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog',
+        '.host.activity.MainActivity',
+        '.adsdk.view.DislikeDialog.DislikeBottomDialog',
       ],
       rules: [
         {
@@ -52,12 +52,14 @@ export default defineGkdApp({
         },
         {
           preKeys: [0],
-          matches: '@[clickable=true] > [text="屏蔽" || text="直接关闭"]',
+          matches:
+            '@[clickable=true] > [text="屏蔽" || text="直接关闭" || text="不喜欢此内容"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13260487',
             'https://i.gkd.li/i/13275928',
             'https://i.gkd.li/i/17111444',
             'https://i.gkd.li/i/17111452',
+            'https://i.gkd.li/i/24589005',
           ],
         },
       ],
