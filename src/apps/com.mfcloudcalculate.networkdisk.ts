@@ -223,7 +223,7 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: '局部广告',
+      name: '分段广告',
       rules: [
         {
           key: 0,
@@ -250,6 +250,21 @@ export default defineGkdApp({
             '@View[clickable=true][childCount=0][visibleToUser=true] < [desc^="dislike"] + FrameLayout >2 [text="广告"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/54463724-d3c0-42b4-8fac-adf47b31799d',
           snapshotUrls: 'https://i.gkd.li/i/24404391',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1][visibleToUser=true] < ViewGroup[childCount=1] < ViewGroup[childCount=1] -2 ViewGroup >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/24589944',
+        },
+        {
+          preKeys: [0, 1, 2, 3],
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches: '@[clickable=true] >2 [text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24590419',
         },
       ],
     },
