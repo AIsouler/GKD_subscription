@@ -77,20 +77,24 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: '.MainActivity',
           matches:
-            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] <n * > FrameLayout >2 [text="广告"]',
+            '@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^="dislike"] <n * > FrameLayout >n [text="广告"]',
           exampleUrls: 'https://e.gkd.li/00bf6a60-c461-4970-bb73-b063376cbafd',
           snapshotUrls: [
             'https://i.gkd.li/i/24541497',
             'https://i.gkd.li/i/24551719',
+            'https://i.gkd.li/i/24612011',
+            'https://i.gkd.li/i/24612129',
           ],
         },
         {
           key: 3,
           activityIds: '.MainActivity',
+          excludeMatches: '[text="热门搜索"][visibleToUser=true]', // 搜索页误触键盘，排除匹配搜索页
           matches:
             'ViewFactoryHolder FrameLayout[childCount=5] > FrameLayout[childCount=1] > ImageView[childCount=0][id=null][desc=null][width<60 && height<60]',
           exampleUrls: 'https://e.gkd.li/1dfab1f2-f3d3-4f42-b421-d504083337c0',
           snapshotUrls: 'https://i.gkd.li/i/24541525',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24612044',
         },
       ],
     },
