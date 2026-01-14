@@ -85,7 +85,6 @@ export default defineGkdApp({
       key: 5,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      matchTime: 10000,
       rules: [
         {
           fastQuery: true,
@@ -116,6 +115,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18587702',
             'https://i.gkd.li/i/18587507',
           ],
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.plugin.runtime.PluginDefaultProxyActivity',
+          matches:
+            '@ImageView[clickable=true] <2 RelativeLayout[childCount=2] - FrameLayout >5 [text="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24605359',
         },
       ],
     },
