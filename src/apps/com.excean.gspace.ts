@@ -71,6 +71,14 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/48247609-a895-494d-9e3a-4575e809fe55',
           snapshotUrls: 'https://i.gkd.li/i/24464957',
         },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds:
+            'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
+          matches: '[vid="sdm_myoffer_btn_close_id"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24611979',
+        },
       ],
     },
   ],
