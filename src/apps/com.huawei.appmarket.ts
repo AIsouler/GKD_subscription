@@ -60,14 +60,14 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
-            'com.huawei.appgallery.upgraderecommendation.ui.UpgradeRecommendActivity',
+          activityIds: 'com.huawei.appgallery.upgraderecommendation.ui.',
           matches: '[text="直接进入" || text="进入主页"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/89e6f2eb-b543-4dd8-88ce-6e888d0d8c8a',
           snapshotUrls: [
             'https://i.gkd.li/i/14861810',
             'https://i.gkd.li/i/21231632',
+            'https://i.gkd.li/i/24640204',
           ],
         },
       ],
