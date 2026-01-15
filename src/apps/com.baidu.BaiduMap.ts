@@ -140,6 +140,14 @@ export default defineGkdApp({
             'ImageView[childCount=0] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] + ViewGroup > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/22616267',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.baidu.baidumaps.MapsActivity',
+          matches:
+            'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/24633179',
+        },
       ],
     },
   ],
