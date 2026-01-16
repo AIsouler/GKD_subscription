@@ -276,5 +276,23 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '局部广告',
+      desc: '点击x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[clickable=true] - ImageView < FrameLayout +n LinearLayout > [text="立即下载"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24675412',
+            'https://i.gkd.li/i/24675589',
+          ],
+          exampleUrls: 'https://e.gkd.li/fbdca5ca-1b99-4aa1-bc9e-25bf612e3d85',
+        },
+      ],
+    },
   ],
 });
