@@ -164,6 +164,14 @@ export default defineGkdApp({
             '@Image[childCount=0][width<60 && height<60] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text="反馈"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/24473530',
         },
+        {
+          key: 15,
+          fastQuery: true,
+          activityIds: 'com.adgain.sdk.base.activity.AdActivity',
+          matches:
+            '[text^="跳过"] < [vid="adgain_interstitial_skip_ll"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24675097',
+        },
       ],
     },
     {
