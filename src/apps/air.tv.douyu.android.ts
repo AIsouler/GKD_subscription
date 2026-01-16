@@ -64,7 +64,7 @@ export default defineGkdApp({
           name: '视频下方横幅广告-2',
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - FrameLayout >2 [text="去看看" || text="立即匹配" || text="立即购买"]',
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - FrameLayout >2 [text="去看看" || text^="立即"]',
           exampleUrls: 'https://e.gkd.li/942ee7a5-43e1-4709-b967-7af1a6900e4c',
           snapshotUrls: [
             'https://i.gkd.li/i/14668232',
