@@ -13,10 +13,17 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          activityIds:
+          fastQuery: true,
+          activityIds: [
             'com.huawei.openalliance.ad.ppskit.activity.InnerPPSInterstitialAdActivity',
-          matches: '[id="com.huawei.hwid:id/interstitial_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/12709068',
+            'com.huawei.openalliance.ad.ppskit.activity.InterstitialAdActivity',
+          ],
+          matches:
+            '[id="com.huawei.hwid:id/interstitial_close"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12709068',
+            'https://i.gkd.li/i/24675884', //平板?
+          ],
         },
       ],
     },
