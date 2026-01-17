@@ -52,13 +52,28 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13218197',
         },
         {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.news.main.content.ModulesActivity',
+          matches:
+            '@[clickable=true][text="负反馈"] <<n [vid="content_main_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/24688832',
+        },
+        {
           preKeys: [0, 1],
           key: 99,
-          activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
-          matches: '[text="直接关闭"]',
+          activityIds: [
+            'com.huawei.openalliance.ad.activity.FeedbackActivity',
+            '.news.main.content.ModulesActivity',
+          ],
+          anyMatches: [
+            '[text="直接关闭"]',
+            '@[clickable=true][text="直接关闭"] <<n [vid="content_main_view"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13259434',
             'https://i.gkd.li/i/15831539',
+            'https://i.gkd.li/i/24688856',
           ],
         },
       ],
