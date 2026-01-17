@@ -29,12 +29,14 @@ export default defineGkdApp({
           activityIds: [
             '.app.openscreenad.HomeBackSplashActivity',
             '.app.PopVideoPlayer',
+            '.view.FileExplorerActivity',
           ],
           matches: '[vid="ad_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/3632e624-28bf-45fd-bb52-a7ee9a644b7a',
           snapshotUrls: [
             'https://i.gkd.li/i/18072076',
             'https://i.gkd.li/i/18072078',
+            'https://i.gkd.li/i/24684475',
           ],
         },
       ],
