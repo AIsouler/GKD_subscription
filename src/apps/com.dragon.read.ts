@@ -317,35 +317,49 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 15,
-      name: '功能类-关闭广告声音',
-      actionMaximum: 1,
-      rules: [
-        {
-          fastQuery: true,
-          matchRoot: true,
-          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
-          matches: 'LynxFlattenUI[text="开启声音"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/7dcb8002-607b-4a0a-8ef7-cfa351fcc388',
-          snapshotUrls: 'https://i.gkd.li/i/20989168',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/20991240',
-        },
-      ],
-    },
-    {
       key: 16,
-      name: '功能类-观看广告后点击[获得听书时长/领取成功]旁边的关闭按钮',
+      name: '功能类-观看广告自动领取奖励',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          actionDelay: 10000,
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            '@ImageView[width<40 && height<40] <n ViewGroup <(4,5) ViewGroup < FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/c3e53a6c-cc60-413d-8464-2b4a1259c038',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24689154',
+            'https://i.gkd.li/i/24688948',
+            'https://i.gkd.li/i/24689141',
+            'https://i.gkd.li/i/24689202',
+          ],
+        },
+        {
+          preKeys: [0],
+          fastQuery: true,
+          actionDelay: 500,
+          position: {
+            left: 'width * 0.5',
+            bottom: 'width * 0.3182',
+          },
+          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[childCount=1][width>600 && height>600] <3 FrameLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls: 'https://e.gkd.li/f2859af8-7ca7-40d3-9737-7be8b0200bae',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24689140',
+            'https://i.gkd.li/i/24689143',
+            'https://i.gkd.li/i/24689393',
+          ],
+        },
+        {
+          key: 99,
           fastQuery: true,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
           matches:
-            '@LynxFlattenUI[clickable=true] -2 [text="获得听书时长" || text="领取成功"] -n FlattenUIText[text="广告"]',
-          exampleUrls: 'https://e.gkd.li/8f6a6b4b-b189-48b8-a068-d66514b244e3',
-          snapshotUrls: [
-            'https://i.gkd.li/i/20989165',
-            'https://i.gkd.li/i/23325310',
-          ],
+            '@[clickable=true][width<120 && height<120] + LinearLayout > [text="当前无新视频"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24689246',
         },
       ],
     },
@@ -360,34 +374,6 @@ export default defineGkdApp({
           activityIds: '.reader.ui.ReaderActivity',
           matches: ['[text="点评此书"]', '[text="取消"][clickable=true]'],
           snapshotUrls: 'https://i.gkd.li/i/21589381',
-        },
-      ],
-    },
-    {
-      key: 18,
-      name: '功能类-观看广告后点击领取奖励',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
-          matches:
-            '@[text="领取奖励"][clickable=true] + FlattenUIText[text="领取奖励"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/36d56a8d-7a3e-4bba-9c2b-59dfda1f1813',
-          snapshotUrls: 'https://i.gkd.li/i/21848210',
-        },
-      ],
-    },
-    {
-      key: 19,
-      name: '功能类-取消倒计时后自动进入直播间',
-      rules: [
-        {
-          fastQuery: true,
-          activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
-          matches:
-            '@[text="取消"] -2 [text$="后进入直播间"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/dc542a83-f5d2-4c88-9467-bbc6cc46ee04',
-          snapshotUrls: 'https://i.gkd.li/i/22861016',
         },
       ],
     },
