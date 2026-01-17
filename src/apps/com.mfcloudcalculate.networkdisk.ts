@@ -15,15 +15,17 @@ export default defineGkdApp({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
             'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
             '.activity.LauncherActivity',
+            'com.adgain.sdk.base.activity.AdActivity',
           ],
           matches:
-            '[vid="tv_ad_free_close" || vid="tv_ad_free_colse"][visibleToUser=true]',
+            '[vid="tv_ad_free_close" || vid="tv_ad_free_colse" || vid="adgain_interstitial_skip_ll"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/4cafd5fd-b5ed-4df1-b9f2-f443f53a7166',
           snapshotUrls: [
             'https://i.gkd.li/i/13546173',
             'https://i.gkd.li/i/14696860',
             'https://i.gkd.li/i/18121213',
+            'https://i.gkd.li/i/24675097',
           ],
         },
         {
@@ -265,6 +267,23 @@ export default defineGkdApp({
           activityIds: '.MainActivity',
           matches: '@[clickable=true] >2 [text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/24590419',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '局部广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[clickable=true][childCount=0] <2 FrameLayout +n LinearLayout > [text^="立即"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a49e21d0-7259-4f6a-93e2-add166738a5b',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24675412',
+            'https://i.gkd.li/i/24675589',
+          ],
         },
       ],
     },
