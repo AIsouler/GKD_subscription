@@ -43,9 +43,12 @@ export default defineGkdApp({
           name: '右下方悬浮广告-3',
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] + ViewGroup >2 [text="广告"]',
+            '@ImageView[clickable=true][visibleToUser=true] +(1,2) ViewGroup >2 [text="广告"]',
           exampleUrls: 'https://e.gkd.li/cfd83f2b-580d-4659-8966-eb5f4fe21ecd',
-          snapshotUrls: 'https://i.gkd.li/i/16939767',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16939767',
+            'https://i.gkd.li/i/24661966',
+          ],
         },
         {
           key: 9,
@@ -61,11 +64,12 @@ export default defineGkdApp({
           name: '视频下方横幅广告-2',
           fastQuery: true,
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - FrameLayout >2 [text="去看看" || text="立即匹配"]',
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] - FrameLayout >2 [text="去看看" || text^="立即"]',
           exampleUrls: 'https://e.gkd.li/942ee7a5-43e1-4709-b967-7af1a6900e4c',
           snapshotUrls: [
             'https://i.gkd.li/i/14668232',
             'https://i.gkd.li/i/18032754',
+            'https://i.gkd.li/i/24661966',
           ],
         },
       ],
