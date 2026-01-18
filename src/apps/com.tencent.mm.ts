@@ -317,6 +317,7 @@ export default defineGkdApp({
       activityIds: [
         '.plugin.appbrand.ui.AppBrandUI',
         '.plugin.appbrand.launching.AppBrandLaunchProxyUI',
+        '.plugin.appbrand.ui.AppBrandUI00',
       ],
       rules: [
         {
@@ -330,6 +331,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13306883',
             'https://i.gkd.li/i/13407275',
             'https://i.gkd.li/i/15108441',
+            'https://i.gkd.li/i/24694489',
           ],
         },
       ],
