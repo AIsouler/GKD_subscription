@@ -5,10 +5,10 @@ export default defineGkdApp({
   name: '雷神加速器',
   groups: [
     {
-      key: 0, // 全局规则概率误触 https://github.com/AIsouler/GKD_subscription/issues/285
+      key: 0, // clickCenter 可能误触 https://github.com/AIsouler/GKD_subscription/issues/285
       name: '开屏广告',
-      matchTime: 10000,
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -47,12 +47,14 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          matches:
-            '[text*="跳过"][text.length<10][clickable.or(parent.clickable)=true][visibleToUser=true]',
+          anyMatches: [
+            '[text*="跳过"][text.length<10][clickable=true][visibleToUser=true]',
+            '@[clickable=true] > [text*="跳过"][text.length<10][visibleToUser=true]',
+          ],
           exampleUrls: 'https://e.gkd.li/bff8f543-e262-4db1-b99b-32e2988fb47b',
           snapshotUrls: [
             'https://i.gkd.li/i/23096608',
-            'https://i.gkd.li/i/24695040', // 父节点 clickable=true
+            'https://i.gkd.li/i/24695040',
           ],
         },
       ],
