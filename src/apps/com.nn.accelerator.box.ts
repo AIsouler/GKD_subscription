@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 0, // 全局规则概率误触 https://github.com/AIsouler/GKD_subscription/issues/285
       name: '开屏广告',
       matchTime: 10000,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -15,7 +16,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
           matches: '[vid="tobid_splash_skip_ll" || vid="ms_skipView"]',
           exampleUrls: 'https://e.gkd.li/03b70de9-9e1d-4362-83df-08a95c2c224f',
           snapshotUrls: [
@@ -25,7 +25,6 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          fastQuery: true,
           matches:
             'ImageView[desc="skip_button"] + ViewGroup > TextView[text="跳过"]',
           exampleUrls: 'https://e.gkd.li/625debfb-faa5-438a-a5ba-5175233ea1d2',
@@ -33,7 +32,6 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          fastQuery: true,
           anyMatches: [
             '@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*="第三方应用" || text*="扭动手机" || text*="点击或上滑" || text*="省钱好物" || text*="扭一扭"][visibleToUser=true]',
             'FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]',
@@ -43,18 +41,19 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          fastQuery: true,
           matches: '@View[clickable=true] - [text="互动广告"]',
           exampleUrls: 'https://e.gkd.li/d32ca677-f0c4-49e4-8dfe-f105a9ab1cb9',
           snapshotUrls: 'https://i.gkd.li/i/18668852',
         },
         {
           key: 4,
-          fastQuery: true,
           matches:
-            '[text*="跳过"][text.length<10][clickable=true][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][clickable.or(parent.clickable)=true][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/bff8f543-e262-4db1-b99b-32e2988fb47b',
-          snapshotUrls: 'https://i.gkd.li/i/23096608',
+          snapshotUrls: [
+            'https://i.gkd.li/i/23096608',
+            'https://i.gkd.li/i/24695040', // 父节点 clickable=true
+          ],
         },
       ],
     },
@@ -68,10 +67,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: '.activity.MainActivity',
+          activityIds: ['.activity.MainActivity', '.activity.WelcomeActivity'],
           matches: '[vid="iv_activity"] + [vid="iv_close"]',
           exampleUrls: 'https://e.gkd.li/a65304c0-0abe-4fc6-8eda-03f8d51ad62d',
-          snapshotUrls: 'https://i.gkd.li/i/16869245',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16869245',
+            'https://i.gkd.li/i/24694978',
+          ],
         },
       ],
     },
