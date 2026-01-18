@@ -122,11 +122,13 @@ export default defineGkdApp({
           key: 7,
           fastQuery: true,
           matches:
-            '@View[clickable=true][childCount=0] <(1,2,3) View < View < View < View < [name*="KMMChannelNormalFragment"] < FrameLayout <(2,3,4) ViewPager < FrameLayout < FrameLayout < FrameLayout < FrameLayout <(1,2) FrameLayout <(2,5) [id="android:id/content"]',
+            '@View[clickable=true][childCount=0] <(1,2,3) View[checkable=true] <<4 [name*="KMMChannelNormalFragment"] < FrameLayout <(2,3,4) ViewPager <<4 FrameLayout <(1,2) FrameLayout <(2,3,5) [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/23431044',
             'https://i.gkd.li/i/24339351',
             'https://i.gkd.li/i/24588850',
+            'https://i.gkd.li/i/24693451',
+            'https://i.gkd.li/i/24693465',
           ],
         },
         {
