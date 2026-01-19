@@ -253,8 +253,10 @@ export default defineGkdApp({
           key: 0,
           name: '签到弹窗',
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: 'ViewGroup[childCount=17] > ImageView[index=5]',
+          matches:
+            'ViewGroup[childCount=17] >  @ImageView[index=5] +n ViewGroup[clickable=true] >n [text="签到必得现金"]',
           snapshotUrls: 'https://i.gkd.li/i/14033982',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24705788',
         },
         {
           key: 1,
