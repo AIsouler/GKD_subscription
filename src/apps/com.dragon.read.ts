@@ -71,6 +71,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14810480',
           ],
         },
+        {
+          key: 5,
+          name: '原著改编广告-点击[x]',
+          fastQuery: true,
+          matches:
+            '@ImageView[clickable=true] +n ViewGroup[visibleToUser=true] > [text="原著改编"]',
+          exampleUrls: 'https://e.gkd.li/f838939f-d42d-4bf8-9a68-59f4d4ec0d9b',
+          snapshotUrls: 'https://i.gkd.li/i/24706223',
+        },
       ],
     },
     {
