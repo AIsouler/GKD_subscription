@@ -32,5 +32,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '全屏广告-开屏弹窗广告',
+      rules: [
+        {
+          fastQuery: true,
+          matches:
+            '@ImageView[clickable=true][focusable=true] < FrameLayout - FrameLayout >2 FrameLayout[clickable=true][focusable=true][childCount=1] > ImageView[childCount=0][clickable=false]',
+          snapshotUrls: 'https://i.gkd.li/i/24706615',
+        },
+      ],
+    },
   ],
 });
