@@ -178,5 +178,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 19,
+      name: '功能类-风险提示-仍然支付',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.nantian.iBank.ui.activity.container.ProgramSingleWindowActivity',
+          matches: '[text="仍然支付"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24717617',
+        },
+      ],
+    },
   ],
 });
