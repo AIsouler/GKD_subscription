@@ -252,13 +252,17 @@ export default defineGkdApp({
         {
           key: 0,
           name: '签到弹窗',
+          fastQuery: true,
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: 'ViewGroup[childCount=17] > ImageView[index=5]',
+          matches:
+            'ViewGroup[childCount=17] >  @ImageView[index=5] +n ViewGroup[clickable=true] >n [text="签到必得现金"]',
           snapshotUrls: 'https://i.gkd.li/i/14033982',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24705788',
         },
         {
           key: 1,
           name: '看视频领现金弹窗',
+          fastQuery: true,
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
           matches:
             '@ImageView[visibleToUser=true] - ViewGroup[childCount=3] [text="看视频继续领现金"]',
