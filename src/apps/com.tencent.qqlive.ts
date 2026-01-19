@@ -152,24 +152,38 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          key: 10,
+          matches:
+            '@View[clickable=true][childCount=0][width<90 && height<90] <n View + [text="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24715171',
+        },
+        {
+          preKeys: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
           key: 50,
           fastQuery: true,
-          matches: '[text="直接关闭"][visibleToUser=true]',
+          anyMatches: [
+            '[text="直接关闭"][visibleToUser=true]',
+            '@View[clickable=true] > [visibleToUser=true][text="直接关闭"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/19667198',
             'https://i.gkd.li/i/19667244',
             'https://i.gkd.li/i/21139034',
+            'https://i.gkd.li/i/24715184', // 不能快速查询
           ],
         },
         {
           preKeys: [50],
           fastQuery: true,
-          matches: '[text="确认"][visibleToUser=true]',
+          anyMatches: [
+            '[text="确认"][visibleToUser=true]',
+            '@View[clickable=true] > [visibleToUser=true][text="确认"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/19667102',
             'https://i.gkd.li/i/19666759',
             'https://i.gkd.li/i/21152903',
+            'https://i.gkd.li/i/24715184', // 不能快速查询
           ],
         },
       ],
