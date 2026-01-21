@@ -16,7 +16,7 @@ export default defineGkdApp({
           fastQuery: true,
           actionDelay: 1000, // 过早点击可能导致应用闪退
           matches:
-            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '@[desc="跳过广告"][clickable=true] > [text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e36d701f-bcee-48d5-99da-1c5301101d9e',
           snapshotUrls: 'https://i.gkd.li/i/23282793',
         },

@@ -18,7 +18,7 @@ export default defineGkdApp({
           fastQuery: true,
           action: 'clickCenter',
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/94c7fc27-891f-4206-b933-f26661041b99',
           snapshotUrls: 'https://i.gkd.li/i/21451911',
         },

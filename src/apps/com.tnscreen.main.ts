@@ -17,7 +17,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           excludeMatches: [
-            '[!(vid="welcome_ad_view_skip")] > [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[!(vid="welcome_ad_view_skip")] > [text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
             '@[desc="close_button"] - [text="|"][visibleToUser=true]',
           ],
           matches:
@@ -35,7 +35,7 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '[!(vid="welcome_ad_view_skip")] > [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[!(vid="welcome_ad_view_skip")] > [text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/243c2920-9761-41c6-a142-9f6f53ab78fe',
           snapshotUrls: [
             'https://i.gkd.li/i/21383354',

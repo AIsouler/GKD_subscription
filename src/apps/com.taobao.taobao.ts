@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules: [
         {
           matches:
-            '@[vid*="close"] > [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '@[vid*="close"] > [text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/17576743',
             'https://i.gkd.li/i/17578451',

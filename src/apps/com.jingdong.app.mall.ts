@@ -18,7 +18,7 @@ export default defineGkdApp({
           fastQuery: true,
           excludeActivityIds: 'com.jd.lib.search.view.Activity.SearchActivity',
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/16323111',
           excludeSnapshotUrls: 'https://i.gkd.li/i/16323115',
         },
@@ -26,7 +26,7 @@ export default defineGkdApp({
           key: 1,
           excludeActivityIds: 'com.jd.lib.search.view.Activity.SearchActivity',
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17602356', // "跳过" 节点不支持fastQuery
           excludeSnapshotUrls: 'https://i.gkd.li/i/16323115',
         },

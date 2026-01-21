@@ -27,9 +27,9 @@ export default defineGkdGlobalGroups([
         excludeMatches:
           '([text*="搜索" || text="历史记录" || text$="在搜"][text.length>3 && text.length<7][visibleToUser=true]) || ([text="Submit" || text*="阅读并同意" || text="书签" || text="NEXT"][visibleToUser=true]) || ([text$="设置" || text$="选好了" || text^="下一步" || text^="完成"][text.length<10][visibleToUser=true]) || ([text^="选择"][text*="偏好" || text*="兴趣" || text*="喜好"][text.length<10][visibleToUser=true])',
         anyMatches: [
-          '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
-          '@[name$="View" || name$="LinearLayout"][clickable=true][childCount<2][width<300 && height<150] - [text="互动广告"][visibleToUser=true]',
-          '[childCount=0][visibleToUser=true][width<500 && height<200][(text.length<10 && (text*="跳过" || text*="跳 过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
+          '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
+          '@[name$="View" || name$="LinearLayout"][clickable=true][childCount<2][width<300 && height<200] - [text="互动广告"][visibleToUser=true]',
+          '[childCount=0][visibleToUser=true][width<500 && height<300][(text.length<10 && (text*="跳过" || text*="跳 过" || text*="跳過" || text~="(?is).*skip.*") && text!*="视频") || (vid~="(?is).*skip.*" && vid!~="(?is).*video.*" && !(text="帮助") && !(text="取消") && !(text*="退出")) || id$="tt_splash_skip_btn" || (desc.length<10 && (desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*"))]',
         ],
         snapshotUrls: [
           // 互动开屏广告
@@ -39,8 +39,8 @@ export default defineGkdGlobalGroups([
           // text*="跳 过"
           'https://i.gkd.li/i/13421452',
 
-          // width<500
-          'https://i.gkd.li/i/24097095',
+          'https://i.gkd.li/i/24097095', // width<500
+          'https://i.gkd.li/i/24766641', // height<300
 
           // 避免被excludeMatches匹配
           'https://i.gkd.li/i/24330969',

@@ -17,7 +17,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/f03b3648-757a-48e3-bd3b-098f8293edbf',
           snapshotUrls: 'https://i.gkd.li/i/16556555',
         },

@@ -19,7 +19,7 @@ export default defineGkdApp({
           order: -1,
           anyMatches: [
             '@[clickable=true][visibleToUser=true] + ViewGroup > [text="跳过"]',
-            '@[clickable=true] - [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]', // https://github.com/AIsouler/GKD_subscription/issues/1024
+            '@[clickable=true] - [text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]', // https://github.com/AIsouler/GKD_subscription/issues/1024
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/14549281',
@@ -31,11 +31,11 @@ export default defineGkdApp({
         {
           key: 1,
           excludeMatches: [
-            '@[clickable=true] - [text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '@[clickable=true] - [text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
             '@[clickable=true][visibleToUser=true] + ViewGroup > [text="跳过"]',
           ],
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14661654',
             'https://i.gkd.li/i/14661622',

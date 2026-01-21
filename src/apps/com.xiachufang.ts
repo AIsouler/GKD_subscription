@@ -24,7 +24,7 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           matches:
-            '([text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]) || ([visibleToUser=true][text*="跳过"][text.length<10][width<500 && height<200])',
+            '([text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]) || ([visibleToUser=true][text*="跳过"][text.length<10][width<500 && height<200])',
           exampleUrls: 'https://e.gkd.li/5c6579f4-77bb-4970-851f-087c2f86d6ad',
           snapshotUrls: [
             'https://i.gkd.li/i/19724959', // 无法快速查询

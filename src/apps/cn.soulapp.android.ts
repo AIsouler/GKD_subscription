@@ -17,13 +17,13 @@ export default defineGkdApp({
           fastQuery: true,
           action: 'clickCenter', // 该快照action: 'click' 无效
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/20139575',
         },
         {
           key: 1,
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/20139739',
         },
       ],
