@@ -17,7 +17,7 @@ export default defineGkdApp({
           excludeActivityIds:
             'com.baicizhan.client.business.webview.ui.BczWebActivity',
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/8612bbae-7a50-4730-8071-1c47e35c27ca',
           snapshotUrls: 'https://i.gkd.li/i/21705324',
           excludeSnapshotUrls: 'https://i.gkd.li/i/21705338',

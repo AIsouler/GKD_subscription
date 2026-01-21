@@ -17,7 +17,7 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/4bae84e9-357a-4cc9-a38b-c6949f5753cd',
           snapshotUrls: 'https://i.gkd.li/i/20903066',
         },
@@ -28,7 +28,7 @@ export default defineGkdApp({
             top: 'width * 2.0519',
           },
           excludeMatches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           matches: '[desc="广告素材"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/375bf789-95f6-4646-b433-3d3b25dda58a',
           snapshotUrls: 'https://i.gkd.li/i/16896514',

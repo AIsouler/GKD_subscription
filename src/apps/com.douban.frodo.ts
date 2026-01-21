@@ -67,7 +67,7 @@ export default defineGkdApp({
           fastQuery: true,
           excludeMatches: '[text="去绑定邮箱"][visibleToUser=true]',
           matches:
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17687115',
           excludeSnapshotUrls: 'https://i.gkd.li/i/23283375',
         },

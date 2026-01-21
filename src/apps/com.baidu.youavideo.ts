@@ -20,7 +20,7 @@ export default defineGkdApp({
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity',
           excludeMatches: '[text="开启安全备份"][visibleToUser=true]',
           anyMatches: [
-            '[text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true]',
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
             '[text.length<10][text*="跳过"][visibleToUser=true]',
           ],
           exampleUrls: 'https://e.gkd.li/5185bf9d-70f7-4841-991e-55b1b6768e97',

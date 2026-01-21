@@ -20,7 +20,7 @@ export default defineGkdApp({
             '.feature.short_container_feature.ui.ShortContainerHostActivity',
           ],
           matches:
-            '([vid="btn_skip"][visibleToUser=true]) || ([text*="跳过"][text.length<10][width<500 && height<200][visibleToUser=true])',
+            '([vid="btn_skip"][visibleToUser=true]) || ([text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true])',
           exampleUrls: 'https://e.gkd.li/e129aaa6-bf4f-4455-9242-a6779667d814',
           snapshotUrls: [
             'https://i.gkd.li/i/18221451',
