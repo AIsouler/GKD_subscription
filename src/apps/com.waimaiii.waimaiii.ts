@@ -19,5 +19,28 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '[id$="ksad_ad_dislike"] <n RelativeLayout - FrameLayout >3 [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/5559308c-b40c-484f-a4ee-c162b507fb27',
+          snapshotUrls: 'https://i.gkd.li/i/24790719',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <2 ViewGroup <2 ViewGroup <2 ViewGroup - ViewGroup >3 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/24656915',
+        },
+      ],
+    },
   ],
 });
