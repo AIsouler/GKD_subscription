@@ -27,13 +27,16 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          key: 0,
           fastQuery: true,
           activityIds: 'com.ucpro.BrowserActivity',
-          matches: ['[text*="版本更新" || text^="优化升级"]', '[text="取消"]'],
+          matches: [
+            '[text*="版本更新" || text^="优化升级" || text^="发现新版本"]',
+            '[text="取消" || text="暂不更新"][clickable=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13292512',
             'https://i.gkd.li/i/13455360',
+            'https://i.gkd.li/i/24786251',
             'https://i.gkd.li/i/16643051', // 避免误触
           ],
         },
