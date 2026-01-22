@@ -354,9 +354,10 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 20000,
       actionMaximum: 1,
+      activityIds: ['.plugin.finder.', '.ui.LauncherUI'],
       rules: [
         {
-          activityIds: ['.plugin.finder.', '.ui.LauncherUI'],
+          key: 0,
           matches:
             '@[text="我知道了"][index=parent.childCount.minus(1)] <n LinearLayout > [text^="为呵护未成年人健康成长"][visibleToUser=true]',
           snapshotUrls: [
@@ -367,6 +368,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18135103',
             'https://i.gkd.li/i/19683937',
           ],
+        },
+        {
+          key: 1,
+          matches:
+            '@[text="不再提醒"][clickable=true] <2 [index=parent.childCount.minus(1)] -n [text^="为呵护未成年人健康成长"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24796791',
         },
       ],
     },
