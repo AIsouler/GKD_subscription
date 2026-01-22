@@ -17,10 +17,11 @@ export default defineGkdApp({
             '.ui.activity.HomeActivity',
             '.ui.activity.MainFrameActivity',
           ],
-          matches: '@Image[clickable=true][text="webp"] +5 [text="立即升级"]',
+          matches: '@Image[clickable=true] +5 [text="立即升级"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13195645',
             'https://i.gkd.li/i/23936506',
+            'https://i.gkd.li/i/24786015',
           ],
         },
       ],
