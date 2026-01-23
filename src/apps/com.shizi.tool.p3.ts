@@ -55,5 +55,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      fastQuery: true,
+      name: '局部广告-点击[x]',
+      desc: '关闭',
+      rules: [
+        {
+          activityIds: 'app.video.guoguo.MainActivity',
+          matches: '@[clickable=true][id$="close_btn"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/179028f9-ae60-4286-b746-ac2f0bb7aad6',
+          snapshotUrls: 'https://i.gkd.li/i/24818734',
+        },
+      ],
+    },
   ],
 });
