@@ -10,7 +10,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
           activityIds: 'com.shuqi.home.MainActivity',
           matches: '[vid="promotion_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/a634cd5a-7b84-44ad-b65b-99f5e8769eeb',
