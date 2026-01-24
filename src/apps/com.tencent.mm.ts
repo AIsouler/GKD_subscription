@@ -919,15 +919,15 @@ export default defineGkdApp({
           preKeys: [1, 25, 50],
           name: '④误触-返回评论区',
           action: 'back',
-          matches: ['[text="反馈问题"][id="android:id/text1"]'],
+          anyMatches: [
+            '[vid="actionbar_up_indicator"][clickable=true]',
+            '[text="反馈问题"][id="android:id/text1"]',
+          ],
           snapshotUrls: [
+            'https://i.gkd.li/i/24836217', // 未加载完'反馈问题'页面的过渡页
             'https://i.gkd.li/i/24834641', // '反馈问题'页面
           ],
-          activityIds: [
-            '.plugin.finder.ui.FinderShareFeedRelUI',
-            '.plugin.finder.ui.FinderHomeAffinityUI',
-            '.plugin.webview.ui.tools.MMWebViewUI',
-          ],
+          activityIds: ['.plugin.webview.ui.tools.MMWebViewUI'],
         },
       ],
     },
