@@ -892,10 +892,7 @@ export default defineGkdApp({
           },
           matches:
             '@FrameLayout[clickable=true][visibleToUser=true][index=parent.childCount.minus(2)][top>getPrev(4).bottom] -n ImageView[desc="头像"] <<3 FrameLayout[bottom<getPrev(1).getChild(1).getChild(0).top] <n RecyclerView <<3 FrameLayout - FrameLayout[index=0] >3 TextView[text^="评论"][left<200]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/24834568',
-            // 'https://i.gkd.li/i/24834570',
-          ],
+          snapshotUrls: ['https://i.gkd.li/i/24834568'],
         },
         {
           key: 50,
@@ -907,27 +904,28 @@ export default defineGkdApp({
           },
           matches:
             '@FrameLayout[clickable=true][visibleToUser=true][index=parent.childCount.minus(2)][top>getPrev(4).bottom] -n ImageView[desc="头像"] <<3 FrameLayout[bottom<getPrev(1).getChild(1).getChild(0).top] <n RecyclerView <<3 FrameLayout - FrameLayout[index=0] >3 TextView[text^="评论"][left<200]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/24834571',
-            // 'https://i.gkd.li/i/24834573',
-          ],
+          snapshotUrls: ['https://i.gkd.li/i/24834571'],
         },
 
-        // 因误触出现的页面-返回键
+        // 因误触出现的页面-返回
         {
           key: 100,
           preKeys: [1, 25, 50],
           name: '④误触-返回评论区',
-          action: 'back',
+          // action: 'back',
           anyMatches: [
             '[vid="actionbar_up_indicator"][clickable=true]',
-            '[text="反馈问题"][id="android:id/text1"]',
+            '@ImageView[clickable=true] <2 FrameLayout[childCount=2] <<3 [id="android:id/content"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/24836217', // 未加载完'反馈问题'页面的过渡页
-            'https://i.gkd.li/i/24834641', // '反馈问题'页面
+            'https://i.gkd.li/i/24834641', // '反馈问题'页
+            'https://i.gkd.li/i/24836811', // '了解详情'页
           ],
-          activityIds: ['.plugin.webview.ui.tools.MMWebViewUI'],
+          activityIds: [
+            '.plugin.webview.ui.tools.MMWebViewUI',
+            '.plugin.sns.ad.landingpage.ui.activity.HalfScreenVangoghPageUI',
+          ],
         },
       ],
     },
