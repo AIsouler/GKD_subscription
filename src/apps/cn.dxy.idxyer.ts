@@ -76,22 +76,45 @@ export default defineGkdApp({
         {
           key: 0,
           name: "点击查看答案按钮",
-          matches: '@Button[id=null][clickable=true][focusable=true][width=180][height=52][text=" 查看答案"]',
-          snapshotUrls: 'https://i.gkd.li/i/24857800',
+          matches: '@Button[clickable=true][focusable=true][width<200 && height<80][text=" 查看答案"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24857800',
+            'https://i.gkd.li/i/24864697',
+          ]
         },
         {
           key: 1,
           name: "执行返回操作",
           action: 'back',
-          snapshotUrls: 'https://i.gkd.li/i/24858066'
+          snapshotUrls: 'https://i.gkd.li/i/24858066',
         },
       ],
     },
     {
       key: 5,
+      name: "功能类-讨论评论区详情-自动点击查看答案",
+      fastQuery: true,
+      activityIds: ['.biz.post.PostDetailActivity'],
+      rules: [
+        {
+          key: 0,
+          name: "点击查看答案按钮",
+          matches: '@Button[text=" 查看答案"][clickable=true][width<200 && height<80]',
+          snapshotUrls: 'https://i.gkd.li/i/24864724',
+        },
+        {
+          key: 1,
+          name: "执行返回操作",
+          action: 'back',
+          snapshotUrls: 'https://i.gkd.li/i/24864772',
+        },
+      ],
+    },
+    {
+      key: 6,
       name: '功能类-药品说明书-自动展开折叠部分',
       fastQuery: true,
-      matchRoot: true, //考虑Web情况概率性无法识别?
+      matchRoot: true, //考虑套Web情况，概率性无法识别?
       activityIds: ['cn.dxy.drugscomm.business.drug.detail.DrugDetailComposeActivity'],
       rules: [
         {
@@ -106,7 +129,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 6,
+      key: 7,
       name: '功能类-药品说明书-表格全屏自动横屏观看',
       fastQuery: true,
       activityIds: ['cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity'],
@@ -121,7 +144,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 7,
+      key: 8,
       name: '功能类-药品说明书-表格全屏自动横屏观看',
       fastQuery: true,
       activityIds: ['cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity'],
