@@ -104,7 +104,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
           matches:
-            '@ViewGroup[clickable=true][width>95 && width<119] <<n * + * > [vid="main"]',
+            '@ViewGroup[clickable=true][width <120 && width<120][childCount=0] <2 ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/24842488',
         },
       ],
@@ -250,7 +250,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
           matches:
-            '@[clickable=true][text=""] < [id="shareNav"] <2 View <<4 [vid="mil_container"]',
+            '@TextView[text=""][clickable=true][childCount=0] < View[id="shareNav"] <2 View < View < WebView < WebView < [vid="mil_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13800691',
         },
       ],
