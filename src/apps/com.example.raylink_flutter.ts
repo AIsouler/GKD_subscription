@@ -34,5 +34,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '通知提示-首页反诈骗提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.remote.cn.MainActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][width>54 && height>54][width<60 && height<60][childCount=0][focusable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24853050',
+        },
+      ],
+    },
   ],
 });
