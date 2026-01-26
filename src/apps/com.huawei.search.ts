@@ -8,10 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-下拉搜索横幅广告',
       fastQuery: true,
-      activityIds: [
-        'com.huawei.search.HomeActivity',
-        'com.huawei.search.MainActivity',
-      ],
+      activityIds: ['.HomeActivity', '.MainActivity'],
       rules: [
         {
           key: 0,
@@ -29,6 +26,19 @@ export default defineGkdApp({
           key: 1,
           matches: 'TextView[text="直接关闭"]',
           snapshotUrls: ['https://i.gkd.li/i/12745001'],
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '局部广告-搜索框下广告',
+      desc: '点击x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.HomeActivity',
+          matches: '[vid="btn_full_mode_cancel"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24856481',
         },
       ],
     },
