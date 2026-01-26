@@ -28,10 +28,11 @@ export default defineGkdApp({
       activityIds: ['.biz.job.JobHomeActivity'],
       rules: [
         {
-          matches: '@TextView[width<32 && height<32][clickable=true][focusable=true][index=1] < ViewGroup',
+          matches: '@ImageView <3 [vid="include_ad"]',
           snapshotUrls: [
             'https://i.gkd.li/i/24858514',
             'https://i.gkd.li/i/24858531',
+            'https://i.gkd.li/i/24868912',
           ],
         },
       ],
@@ -185,6 +186,7 @@ export default defineGkdApp({
       key: 10,
       name: '功能类-病例视频自动慢速x0.5',
       desc: '适合CT,MRI影像学深入分析',
+      actionCd: 8000,
       fastQuery: true,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
@@ -208,6 +210,7 @@ export default defineGkdApp({
       key: 11,
       name: '功能类-病例视频自动慢速x0.8',
       desc: '适合CT,MRI影像学深入分析',
+      actionCd: 8000,
       fastQuery: true,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
@@ -231,6 +234,7 @@ export default defineGkdApp({
       key: 12,
       name: '功能类-病例视频自动倍速x1.5',
       desc: '提高观看效率',
+      actionCd: 8000,
       fastQuery: true,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
@@ -255,6 +259,7 @@ export default defineGkdApp({
       name: '功能类-病例视频自动倍速x2.0',
       desc: '极限观看效率',
       fastQuery: true,
+      actionCd: 8000,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
         {
@@ -277,6 +282,7 @@ export default defineGkdApp({
       key: 14,
       name: '功能类-课程视频自动倍速x1.2',
       desc: '我们导师再也不卡壳啦',
+      actionCd: 10000,
       fastQuery: true,
       activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'], 
       rules: [
@@ -291,6 +297,7 @@ export default defineGkdApp({
       key: 15,
       name: '功能类-课程视频自动倍速x1.5',
       desc: '显著提高讲师效率',
+      actionCd: 10000,
       fastQuery: true,
       activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'], 
       snapshotUrls: 'https://i.gkd.li/i/24866929',
@@ -317,6 +324,7 @@ export default defineGkdApp({
       name: '功能类-课程视频自动倍速x2.0',
       desc: '导师讲到冒烟不带停',
       fastQuery: true,
+      actionCd: 10000,
       activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'], 
       snapshotUrls: 'https://i.gkd.li/i/24866758',
       rules: [
