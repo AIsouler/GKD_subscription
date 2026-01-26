@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: [
-            '@ImageView[clickable=true][childCount=0][text=null][desc=null][visibleToUser=true][width<80 && height<80] <<n ViewGroup < FrameLayout',
+            '[vid="iv_close"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/24852395',
