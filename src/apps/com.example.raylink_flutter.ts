@@ -23,14 +23,19 @@ export default defineGkdApp({
       name: '功能类-退出软件时点击"退出程序"',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.remote.cn.MainActivity',
+          matches: '[text="退出程序"]',
+          snapshotUrls: 'https://i.gkd.li/i/14047538',
+        },
+        {
+          key: 1,
           fastQuery: true,
           activityIds: 'com.remote.cn.MainActivity',
           matches:
-            '@Button[text=null][id=""][clickable=true][visibleToUser=true][desc="退出程序"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14047538',
-            'https://i.gkd.li/i/24852663',
-          ],
+            '@Button[desc="退出程序"] <4 View < View < View < View < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/24852663',
         },
       ],
     },
@@ -39,10 +44,9 @@ export default defineGkdApp({
       name: '通知提示-首页反诈骗提示',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.remote.cn.MainActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true][width>54 && height>54][width<60 && height<60][childCount=0][focusable=true]',
+            '[desc^="远程连接"] - View > View > View[childCount=1][index=parent.childCount.minus(1)] > ImageView[clickable=true][width<80 && height<80]',
           snapshotUrls: 'https://i.gkd.li/i/24853050',
         },
       ],
