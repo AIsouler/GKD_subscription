@@ -216,7 +216,7 @@ export default defineGkdApp({
           key: 50,
           name: '点击[不感兴趣]/[相似内容过多]',
           matches:
-            '@[clickable=true] > [text="相似内容过多" || text="不感兴趣" || text="up主不感兴趣" || text="对该up的直播不感兴趣" || text="我不想看" || text="引人不适"]',
+            '@[clickable=true] > [text="此类内容过多" || text="相似内容过多" || text="不感兴趣" || text="up主不感兴趣" || text="对该up的直播不感兴趣" || text="我不想看" || text="引人不适"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13625309',
             'https://i.gkd.li/i/13742257',
@@ -227,6 +227,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18292926',
             'https://i.gkd.li/i/20710223',
             'https://i.gkd.li/i/23687208',
+            'https://i.gkd.li/i/24836772',
           ],
           excludeSnapshotUrls: [
             'https://i.gkd.li/i/18292929',
