@@ -23,10 +23,31 @@ export default defineGkdApp({
       name: '功能类-退出软件时点击"退出程序"',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds: 'com.example.raylink_flutter.MainActivity',
-          matches: '[vid="raylink_desktop_dialog_msg_bottombtn_left_tv"]',
+          activityIds: 'com.remote.cn.MainActivity',
+          matches: '[text="退出程序"]',
           snapshotUrls: 'https://i.gkd.li/i/14047538',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.remote.cn.MainActivity',
+          matches:
+            '@Button[desc="退出程序"] <4 View < View < View < View < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/24852663',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '通知提示-首页反诈骗提示',
+      rules: [
+        {
+          activityIds: 'com.remote.cn.MainActivity',
+          matches:
+            '[desc^="远程连接"] - View > View > View[childCount=1][index=parent.childCount.minus(1)] > ImageView[clickable=true][width<80 && height<80]',
+          snapshotUrls: 'https://i.gkd.li/i/24853050',
         },
       ],
     },
