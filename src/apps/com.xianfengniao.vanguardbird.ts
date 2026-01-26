@@ -5,31 +5,34 @@ export default defineGkdApp({
   name: '先锋鸟',
   groups: [
     {
-      key: 9,
-      name: '功能类-自动点击签到',
-      desc: '首页-今日任务or个人-点击签到',
+      key: 0,
+      name: '功能类-今日任务自动点击签到',
+      desc: '首页-今日任务-点击签到',
+      fastQuery: true,
+      activityIds: '.ui.common.activity.MainActivity',
       rules: [
         {
           key: 1,
-          fastQuery: true,
-          activityIds: '.ui.common.activity.MainActivity',
-          matches: '[text="签到"]',
+          matches: '[text="签到"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/24839618',
         },
         {
-          key: 2,
-          fastQuery: true,
-          activityIds: '.ui.common.activity.MainActivity',
-          matches:
-            '[id="com.xianfengniao.vanguardbird:id/tv_time"][text="点击签到"]',
-          snapshotUrls: 'https://i.gkd.li/i/24839732',
+          preKeys: [1],
+          matches: '[vid="tv_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/24839655',
         },
+      ],
+    },
+    {
+      key: 1,
+      name: '功能类-个人页面自动点击签到',
+      desc: '个人页点击签到',
+      rules: [
         {
-          key: 3,
           fastQuery: true,
           activityIds: '.ui.common.activity.MainActivity',
-          matches: '[id="com.xianfengniao.vanguardbird:id/tv_cancel"]',
-          snapshotUrls: ['https://i.gkd.li/i/24839655'],
+          matches: '@[clickable=true] > [text="点击签到"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24839732',
         },
       ],
     },
