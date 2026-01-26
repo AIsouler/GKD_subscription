@@ -43,10 +43,12 @@ export default defineGkdApp({
       activityIds: ['.biz.main.MainActivity'],
       rules: [
         {
-          matches: '@ImageView[clickable=true][childCount=0][text=null][desc=null][visibleToUser=true][width<50 && height<50] <<n FrameLayout < RecyclerView',
+          matches: '[vid="iv_image_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/24851243',
             'https://i.gkd.li/i/24858118',
+            'https://i.gkd.li/i/24868466',
+            'https://i.gkd.li/i/24868496',
           ]
         },
       ],
@@ -63,7 +65,10 @@ export default defineGkdApp({
             '[text="你即将离开丁香园，请注意你的帐号和财产安全"]',
             '[text="继续访问"]',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/24845324',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24845324',
+            'https://i.gkd.li/i/24868816',
+          ],
         },
       ],
     },
@@ -94,7 +99,7 @@ export default defineGkdApp({
       key: 5,
       name: "功能类-讨论评论区详情-自动点击查看答案",
       fastQuery: true,
-      activityIds: ['.biz.post.PostDetailActivity'],
+      activityIds: ['.biz.post.CommentDetailActivity'],
       rules: [
         {
           key: 0,
@@ -120,7 +125,7 @@ export default defineGkdApp({
         {
           matches: '[desc="展开"][clickable=true][width<60 && height<40][childCount=1]',
           snapshotUrls: [
-            'https://i.gkd.li/i/24863642', //40%概率无法获得完整信息树-概率性or权限?
+            'https://i.gkd.li/i/24863642', //快照问题_40%概率无法获得完整信息树-概率性or权限?
             'https://i.gkd.li/i/24863694', //以下正常...
             'https://i.gkd.li/i/24863719',
             'https://i.gkd.li/i/24863715',
@@ -135,10 +140,11 @@ export default defineGkdApp({
       activityIds: ['cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity'],
       rules: [
         {
-          matches: '@TextView[text="横屏"]',
+          matches: '@TextView[text="横屏"]', //无法点击？未知原因
           snapshotUrls: [
             'https://i.gkd.li/i/24860315',
             'https://i.gkd.li/i/24860318',
+            'https://i.gkd.li/i/24868736',
           ],
         },
       ],
