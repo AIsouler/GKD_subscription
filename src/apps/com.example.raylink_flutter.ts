@@ -24,9 +24,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.example.raylink_flutter.MainActivity',
-          matches: '[vid="raylink_desktop_dialog_msg_bottombtn_left_tv"]',
-          snapshotUrls: 'https://i.gkd.li/i/14047538',
+          activityIds: 'com.remote.cn.MainActivity',
+          matches:
+            '@Button[text=null][id=""][clickable=true][visibleToUser=true][desc="退出程序"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14047538',
+            'https://i.gkd.li/i/24852663',
+          ],
         },
       ],
     },
