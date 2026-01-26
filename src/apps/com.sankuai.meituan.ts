@@ -98,6 +98,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20553947', // 避免误触 add [width<200]
           ],
         },
+        {
+          key: 7,
+          name: '首页-半价神券弹窗',
+          fastQuery: true,
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches:
+            '@ViewGroup[clickable=true][width <120 && width<120][childCount=0] <2 ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/24842488',
+        },
       ],
     },
     {
@@ -238,8 +247,10 @@ export default defineGkdApp({
       rules: [
         {
           matchTime: 10000,
+          fastQuery: true,
           activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
-          matches: '[id="shareNav"] > [text=""]',
+          matches:
+            '@TextView[text=""][clickable=true][childCount=0] < View[id="shareNav"] <2 View < View < WebView < WebView < [vid="mil_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13800691',
         },
       ],
@@ -248,24 +259,22 @@ export default defineGkdApp({
       key: 11,
       name: '全屏广告-视频页弹窗广告',
       desc: '点击X',
+      fastQuery: true,
+      activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
       rules: [
         {
           key: 0,
-          name: '签到弹窗',
-          fastQuery: true,
-          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          name: '视频页-签到弹窗',
           matches:
-            'ViewGroup[childCount=17] >  @ImageView[index=5] +n ViewGroup[clickable=true] >n [text="签到必得现金"]',
+            '@ImageView[index=5] +n ViewGroup[clickable=true] >n [text="签到必得现金"]',
           snapshotUrls: 'https://i.gkd.li/i/14033982',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/24705788',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24705788', // @ImageView[index=5] +n ViewGroup[clickable=true] 会误触
         },
         {
           key: 1,
-          name: '看视频领现金弹窗',
-          fastQuery: true,
-          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          name: '视频页-领现金弹窗',
           matches:
-            '@ImageView[visibleToUser=true] - ViewGroup[childCount=3] [text="看视频继续领现金"]',
+            '@ImageView[visibleToUser=true] - ViewGroup[childCount=3] > [text^="签到成功"]',
           snapshotUrls: 'https://i.gkd.li/i/14034073',
         },
       ],
