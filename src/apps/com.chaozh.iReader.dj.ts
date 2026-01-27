@@ -41,7 +41,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-听书播放器底部广告',
       fastQuery: true, 
-      activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
+      activityIds: 'com.zhangyue.iReader.ui.activity.ActivityContainer',
       rules: [
         {
           matches: '[id="com.zhangyue.module.ad:id/close"][text="关闭"][width=66 && height=45]',
@@ -55,7 +55,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '局部广告-书籍阅读页间断插入广告',
+      name: '局部广告-书籍阅读页间断插入广告', //可点击，但是容易被骗。。。
       fastQuery: true,  
       rules: [
         {
