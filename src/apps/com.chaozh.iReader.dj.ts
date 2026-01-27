@@ -84,5 +84,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '局部广告-短剧底部广告',
+      fastQuery: true,
+      activityIds: 'com.chaozh.iReader.dj',
+      rules: [
+        {
+          matches: '[id="com.zhangyue.module.ad:id/close_ad"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24885711',
+            'https://i.gkd.li/i/24885716',
+            'https://i.gkd.li/i/24885714',
+          ],
+        },
+      ],
+    },
   ],
 });
