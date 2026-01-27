@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: 
-           '@ImageView[id="com.zhangyue.module.ad:id/ad_close_2"][width=45 && height=24]',
+          '@ImageView[id="com.zhangyue.module.ad:id/ad_close_2"][width=45 && height=24]',
           snapshotUrls: [
             'https://i.gkd.li/i/24879639',
             'https://i.gkd.li/i/24879692',
@@ -46,7 +46,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: 
-           '[id="com.zhangyue.module.ad:id/close"][text="关闭"][width=66 && height=45]',
+          '[id="com.zhangyue.module.ad:id/close"][text="关闭"][width=66 && height=45]',
           snapshotUrls: [
             'https://i.gkd.li/i/24885529',
             'https://i.gkd.li/i/24884414',
@@ -65,7 +65,7 @@ export default defineGkdApp({
           name: '中间单容器单广告',
           activityIds: 'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
           matches: 
-           '@ImageView[id="com.zhangyue.module.ad:id/close"][width<25 && height<25]',
+          '@ImageView[id="com.zhangyue.module.ad:id/close"][width<25 && height<25]',
           snapshotUrls: [
             'https://i.gkd.li/i/24882824',
             'https://i.gkd.li/i/24882944',
@@ -95,7 +95,7 @@ export default defineGkdApp({
       name: '局部广告-短剧底部广告',
       fastQuery: true,
       activityIds: 
-       'com.zhangyue.app.shortplay.player.ui.activity.EpisodesSetPlayActivity',
+      'com.zhangyue.app.shortplay.player.ui.activity.EpisodesSetPlayActivity',
       rules: [
         {
           matches: '[id="com.zhangyue.module.ad:id/close_ad"]',
