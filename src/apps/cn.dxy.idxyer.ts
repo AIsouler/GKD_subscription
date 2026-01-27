@@ -57,7 +57,6 @@ export default defineGkdApp({
     {
       key: 3,
       name: "功能类-丁香园安全中心-自动点击继续访问",   //无法实现，原因未知，快照能找到控件(无vid)，但是无法触发选择器与点击
-      fastQuery: true,
       matchRoot: true,  //考虑套Web情况，概率性无法识别?
       activityIds: ['.common.OuterWebViewActivity'],
       rules: [
@@ -76,7 +75,6 @@ export default defineGkdApp({
     {
       key: 4,
       name: "功能类-病例讨论-自动点击查看答案",
-      fastQuery: true,
       activityIds: ['.biz.post.PostDetailActivity'],   //识别概率极低，抽风式无法命中，考虑增加matchRoot?
       rules: [
         {
@@ -125,7 +123,6 @@ export default defineGkdApp({
     {
       key: 6,
       name: '功能类-药品说明书-自动展开折叠部分',
-      fastQuery: true,
       matchRoot: true, //考虑套Web情况，概率性无法识别?
       activityIds: ['cn.dxy.drugscomm.business.drug.detail.DrugDetailComposeActivity'],
       rules: [
@@ -143,7 +140,6 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-药品说明书-表格全屏自动横屏观看',
-      fastQuery: true,
       activityIds: ['cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity'],
       rules: [
         {
