@@ -44,7 +44,7 @@ export default defineGkdApp({
       activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
       rules: [
         {
-          matches: '[id="com.zhangyue.module.ad:id/close"][text="关闭"]',
+          matches: '[id="com.zhangyue.module.ad:id/close"][text="关闭"][width=66 && height=45]',
           snapshotUrls: [
             'https://i.gkd.li/i/24885529',
             'https://i.gkd.li/i/24884414',
@@ -91,7 +91,7 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-短剧底部广告',
       fastQuery: true,
-      activityIds: 'com.chaozh.iReader.dj',
+      activityIds: 'com.zhangyue.app.shortplay.player.ui.activity.EpisodesSetPlayActivity',
       rules: [
         {
           matches: '[id="com.zhangyue.module.ad:id/close_ad"]',
