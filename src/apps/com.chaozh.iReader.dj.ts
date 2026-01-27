@@ -9,6 +9,7 @@ export default defineGkdApp({
       name: '局部广告-小说内下方悬浮广告',
       fastQuery: true,
       actionDelay: 300,
+      activityIds: 'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
       rules: [
         {
           matches: '@ImageView[id="com.zhangyue.module.ad:id/ad_close_2"][width=45 && height=24]',
