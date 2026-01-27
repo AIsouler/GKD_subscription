@@ -67,6 +67,8 @@ export default defineGkdApp({
             'https://i.gkd.li/i/24882824',
             'https://i.gkd.li/i/24882944',
             'https://i.gkd.li/i/24887834', //真机测试发现钓鱼假x关闭按钮3个，一旦点击会弹出两个层叠充值会员页面
+            'https://i.gkd.li/i/24888200', //结果图
+            'https://i.gkd.li/i/24888204',
           ],
         },
         {
