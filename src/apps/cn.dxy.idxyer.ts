@@ -174,7 +174,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '权限提示-开启悬浮小窗播放权限',
+      name: '提示-开启悬浮小窗播放权限权限',
       desc: '点击取消',
       fastQuery: true,
       activityIds: ['.common.WebViewActivity'],
@@ -355,6 +355,19 @@ export default defineGkdApp({
           preKeys: [1], 
           matches: '[vid="play_speed"]',
           action: 'click',
+        },
+      ],
+    },
+    {
+      key: 17,
+      name: '权限提示-开启通知权限',
+      desc: '点击x取消',
+      fastQuery: true,
+      activityIds: ['.biz.main.MainActivity'],
+      rules: [
+        {
+          matches: '[vid="iv_close_open_notification"]',
+          snapshotUrls: 'https://i.gkd.li/i/24877703',
         },
       ],
     },
