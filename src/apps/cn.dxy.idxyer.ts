@@ -56,9 +56,9 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: "功能类-丁香园安全中心-自动点击继续访问",
+      name: "功能类-丁香园安全中心-自动点击继续访问",   //无法实现，原因未知，快照能找到控件(无vid)，但是无法触发选择器与点击
       fastQuery: true,
-      matchRoot: true,
+      matchRoot: true,  //考虑套Web情况，概率性无法识别?
       activityIds: ['.common.OuterWebViewActivity'],
       rules: [
         {
@@ -77,7 +77,7 @@ export default defineGkdApp({
       key: 4,
       name: "功能类-病例讨论-自动点击查看答案",
       fastQuery: true,
-      activityIds: ['.biz.post.PostDetailActivity'],
+      activityIds: ['.biz.post.PostDetailActivity'],   //识别概率极低，抽风式无法命中，考虑增加matchRoot?
       rules: [
         {
           key: 0,
@@ -86,6 +86,8 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/24857800',
             'https://i.gkd.li/i/24864697',
+            'https://i.gkd.li/i/24875801',
+            'https://i.gkd.li/i/24875832',
           ]
         },
         {
@@ -98,7 +100,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: "功能类-讨论评论区详情-自动点击查看答案",
+      name: "功能类-讨论区详情-自动点击查看答案",
       fastQuery: true,
       activityIds: ['.biz.post.CommentDetailActivity'],
       rules: [
@@ -106,7 +108,11 @@ export default defineGkdApp({
           key: 0,
           name: "点击查看答案按钮",
           matches: '@Button[text=" 查看答案"][clickable=true][width<200 && height<80]',
-          snapshotUrls: 'https://i.gkd.li/i/24864724',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24864724',
+            'https://i.gkd.li/i/24875839',
+            'https://i.gkd.li/i/24875836', 
+          ]
         },
         {
           key: 1,
@@ -184,7 +190,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '功能类-病例视频自动慢速x0.5',
+      name: '功能类-病例视频自动慢速x0.5',  //尚未实现-失败
       desc: '适合CT,MRI影像学深入分析',
       actionCd: 8000,
       fastQuery: true,
@@ -208,7 +214,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-病例视频自动慢速x0.8',
+      name: '功能类-病例视频自动慢速x0.8',  //尚未实现-失败
       desc: '适合CT,MRI影像学深入分析',
       actionCd: 8000,
       fastQuery: true,
@@ -232,7 +238,7 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-病例视频自动倍速x1.5',
+      name: '功能类-病例视频自动倍速x1.5',  //尚未实现-失败
       desc: '提高观看效率',
       actionCd: 8000,
       fastQuery: true,
@@ -256,7 +262,7 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-病例视频自动倍速x2.0',
+      name: '功能类-病例视频自动倍速x2.0',  //尚未实现-失败
       desc: '极限观看效率',
       fastQuery: true,
       actionCd: 8000,
