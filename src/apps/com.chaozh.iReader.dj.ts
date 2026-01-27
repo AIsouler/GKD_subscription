@@ -101,5 +101,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 5,
+      name: '局部广告-小说结尾横幅小广告',
+      fastQuery: true,
+      activityIds: 'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
+      rules: [
+        {
+          matches: '[id="com.zhangyue.module.ad:id/ad_close_2"]',
+          snapshotUrls: 'https://i.gkd.li/i/24888022',
+        },
+      ],
+    },
   ],
 });
