@@ -21,5 +21,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '功能类-首页悬浮小红包',
+      desc: '关掉它',
+      fastQuery: true,
+      activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
+      rules: [
+        {
+          matches: '@ImageView < FrameLayout <2 [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24880989',
+            'https://i.gkd.li/i/24881759',
+          ],
+        },
+      ],
+    }
   ],
 });
