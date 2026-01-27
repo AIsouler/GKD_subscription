@@ -39,13 +39,16 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '局部广告-书籍详情页底部广告',
+      name: '局部广告-听书播放器底部广告',
       fastQuery: true, 
       activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
       rules: [
         {
           matches: '[id="com.zhangyue.module.ad:id/close"][text="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/24882622',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24884414',
+            'https://i.gkd.li/i/24882622',
+          ],
         },
       ],
     },
