@@ -99,7 +99,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 5,
+      key: 9,
       name: "功能类-讨论区详情-自动点击查看答案",
       fastQuery: true,
       activityIds: ['.biz.post.CommentDetailActivity'],
@@ -173,8 +173,8 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 9,
-      name: '提示-开启悬浮小窗播放权限权限',
+      key: 5,
+      name: '权限提示-开启悬浮小窗播放权限',
       desc: '点击取消',
       fastQuery: true,
       activityIds: ['.common.WebViewActivity'],
