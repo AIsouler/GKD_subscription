@@ -14,7 +14,7 @@ export default defineGkdApp({
           fastQuery: true,
           actionDelay: 300,
           activityIds: '.MainActivity',
-          matches: 
+          matches:
             '@ImageView[width<25 && height<25] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/24892095',
