@@ -46,6 +46,7 @@ export default defineGkdApp({
         {
           matches: '[id="com.zhangyue.module.ad:id/close"][text="关闭"]',
           snapshotUrls: [
+            'https://i.gkd.li/i/24885529',
             'https://i.gkd.li/i/24884414',
             'https://i.gkd.li/i/24882622',
           ],
