@@ -49,5 +49,36 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '局部广告-书籍阅读页间断插入广告',
+      fastQuery: true,  
+      rules: [
+        {
+          key: 0,
+          name: '中间单容器单广告',
+          activityIds: 'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
+          matches: '@ImageView[id="com.zhangyue.module.ad:id/close"][width<25 && height<25]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24882824',
+            'https://i.gkd.li/i/24882944',
+          ],
+        },
+        {
+          key: 1,
+          name: '大卡片广告',
+          activityIds: [  
+            'com.qq.e.ads.PortraitADActivity',
+            'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
+          ],
+          matches: '[text="关闭"][width<80 && height<50][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24883183',
+            'https://i.gkd.li/i/24883422',
+            'https://i.gkd.li/i/24884108',
+          ],
+        },
+      ],
+    },
   ],
 });
