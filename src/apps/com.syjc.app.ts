@@ -12,6 +12,7 @@ export default defineGkdApp({
           key: 0,
           name: '全屏广告-中号广告',
           fastQuery: true,
+          actionDelay: 300,
           activityIds: '.MainActivity',
           matches: 
             '@ImageView[width<25 && height<25] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
@@ -24,6 +25,7 @@ export default defineGkdApp({
           key: 1,
           name: '全屏广告-大号广告',
           fastQuery: true,
+          actionDelay: 300,
           activityIds: '.MainActivity',
           matches:
             '[id=`android:id/content`] FrameLayout[index=2] > FrameLayout[index=parent.childCount.minus(1)] > ImageView[width<60 && height<60]',
