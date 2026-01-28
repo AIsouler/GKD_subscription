@@ -5,34 +5,24 @@ export default defineGkdApp({
   name: '番喜视频',
   groups: [
     {
-      key: 7,
-      name: '全屏广告-首页悬浮广告',
+      key: 1,
+      name: '全屏广告',
       rules: [
         {
           key: 0,
-          name: '全屏广告-中号广告',
           fastQuery: true,
-          actionDelay: 300,
           activityIds: '.MainActivity',
           matches:
-            '@ImageView[width<25 && height<25] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/24892095',
-            'https://i.gkd.li/i/24892127',
-          ],
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          snapshotUrls: 'https://i.gkd.li/i/24908992',
         },
         {
           key: 1,
-          name: '全屏广告-大号广告',
           fastQuery: true,
-          actionDelay: 300,
           activityIds: '.MainActivity',
           matches:
-            '[id=`android:id/content`] FrameLayout[index=2] > FrameLayout[index=parent.childCount.minus(1)] > ImageView[width<60 && height<60]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/24892194',
-            'https://i.gkd.li/i/24892195',
-          ],
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
+          snapshotUrls: 'https://i.gkd.li/i/24892194',
         },
       ],
     },
