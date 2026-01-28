@@ -183,6 +183,8 @@ export default defineGkdApp({
           matches:
             '[desc="展开"][clickable=true][width<60 && height<40][childCount=1]',
           action: 'clickCenter',
+          actionCd: 300, 
+          actionMaximum: 8,
           snapshotUrls: [
             'https://i.gkd.li/i/24863642',
             'https://i.gkd.li/i/24863694',
