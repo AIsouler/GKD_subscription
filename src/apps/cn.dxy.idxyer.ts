@@ -90,10 +90,12 @@ export default defineGkdApp({
       key: 5,
       name: "功能类-丁香园安全中心-自动点击继续访问", //需要强制点击，等进修知识后再尝试实现
       activityIds: '.common.OuterWebViewActivity',
+      fastQuery: true,
       rules: [
         {
           key: 0,
           matches: '@Button',
+          action: "clickCenter",
           snapshotUrls: [
             'https://i.gkd.li/i/24845324',
             'https://i.gkd.li/i/24868816',
@@ -154,6 +156,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '功能类-药品说明书-自动展开折叠部分',
+      fastQuery: true,
       activityIds: [
         'cn.dxy.drugscomm.business.drug.detail.DrugDetailComposeActivity'
       ],
@@ -161,6 +164,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[desc="展开"][clickable=true][width<60 && height<40][childCount=1]',
+          action: "clickCenter",
           snapshotUrls: [
             'https://i.gkd.li/i/24863642',
             'https://i.gkd.li/i/24863694',
