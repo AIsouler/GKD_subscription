@@ -232,8 +232,9 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      name: '功能类-病例视频自动慢速x0.5',
+      name: '功能类-📋病例视频自动慢速x0.5_选你想要的但不要多选!',
       desc: '适合CT,MRI影像学深入分析',
+      actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
         {
@@ -246,6 +247,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '使用x0.5',
+          preKeys: [0],
           action: 'clickCenter',
           matches: '@MenuItem[text="0.5x"][clickable=true]',
           snapshotUrls: [
@@ -257,7 +259,7 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '功能类-病例视频自动慢速x0.8',
+      name: '功能类-📋病例视频自动慢速x0.8_选你想要的但不要多选!',
       desc: '适合CT,MRI影像学深入分析',
       actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
@@ -272,6 +274,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '使用x0.8',
+          preKeys: [0],
           action: 'clickCenter',
           matches: '@MenuItem[text="0.8x"][clickable=true]',
           snapshotUrls: [
@@ -283,7 +286,7 @@ export default defineGkdApp({
     },
     {
       key: 13,
-      name: '功能类-病例视频自动倍速x1.5',
+      name: '功能类-📋病例视频自动倍速x1.5_选你想要的但不要多选!',
       desc: '提高观看效率',
       actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
@@ -298,6 +301,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '使用x1.5',
+          preKeys: [0],
           action: 'clickCenter',
           matches: '@MenuItem[text="1.5x"][clickable=true]',
           snapshotUrls: [
@@ -309,7 +313,7 @@ export default defineGkdApp({
     },
     {
       key: 14,
-      name: '功能类-病例视频自动倍速x2.0',
+      name: '功能类-📋病例视频自动倍速x2.0_选你想要的但不要多选!',
       desc: '极限观看效率',
       actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
@@ -324,8 +328,9 @@ export default defineGkdApp({
         {
           key: 1,
           name: '使用x2.0',
+          preKeys: [0],
           action: 'clickCenter',
-          matches: '@MenuItem[text="2.0x"][clickable=true]',
+          matches: '@MenuItem[text="2x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
             'https://i.gkd.li/i/24865666',
@@ -335,7 +340,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      name: '功能类-课程视频自动倍速x1.2',
+      name: '功能类-📖课程视频自动倍速x1.2⚠️选你想要的但不要多选!',
       desc: '我们导师再也不卡壳啦',
       fastQuery: true,
       actionMaximum: 1,
@@ -351,7 +356,7 @@ export default defineGkdApp({
     },
     {
       key: 16,
-      name: '功能类-课程视频自动倍速x1.5',
+      name: '功能类-📖课程视频自动倍速x1.5⚠️选你想要的但不要多选',
       desc: '显著提高讲师效率',
       fastQuery: true,
       actionMaximum: 1,
@@ -377,7 +382,7 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      name: '功能类-课程视频自动倍速x2.0',
+      name: '功能类-📖课程视频自动倍速x2.0⚠️选你想要的但不要多选',
       desc: '导师讲到冒烟不带停',
       fastQuery: true,
       actionMaximum: 1,
