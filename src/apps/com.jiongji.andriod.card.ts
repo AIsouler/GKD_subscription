@@ -55,5 +55,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '通知提示-关闭断电保护卡消耗提醒💡',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baicizhan.main.activity.MainTabActivity',
+          matches: '@ImageView[clickable=true] - [text*="消耗提醒"]',
+          snapshotUrls: 'https://i.gkd.li/i/24887224',
+        },
+      ],
+    },
   ],
 });
