@@ -18,7 +18,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/24858118',
             'https://i.gkd.li/i/24868466',
             'https://i.gkd.li/i/24868496',
-          ]
+          ],
         },
       ],
     },
@@ -78,17 +78,14 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: [
-            '[text="开启悬浮小窗播放功能"]',
-            '[text="取消"]'
-          ],
-          snapshotUrls: 'https://i.gkd.li/i/24865283'
+          matches: ['[text="开启悬浮小窗播放功能"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/24865283',
         },
       ],
     },
     {
       key: 5,
-      name: "功能类-丁香园安全中心-自动点击继续访问", //需要强制点击，等进修知识后再尝试实现
+      name: '功能类-丁香园安全中心-自动点击继续访问', //需要强制点击，等进修知识后再尝试实现
       activityIds: '.common.OuterWebViewActivity',
       fastQuery: true,
       rules: [
@@ -105,25 +102,25 @@ export default defineGkdApp({
     },
     {
       key: 6,
-      name: "功能类-病例讨论-自动点击查看答案",
+      name: '功能类-病例讨论-自动点击查看答案',
       activityIds: '.biz.post.PostDetailActivity',
       rules: [
         {
           key: 0,
-          name: "点击查看答案按钮",
+          name: '点击查看答案按钮',
           matches: [
-            '@Button[clickable=true][focusable=true][width<200 && height<80][text=" 查看答案"]'
+            '@Button[clickable=true][focusable=true][width<200 && height<80][text=" 查看答案"]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/24857800',
             'https://i.gkd.li/i/24864697',
             'https://i.gkd.li/i/24875801',
             'https://i.gkd.li/i/24875832',
-          ]
+          ],
         },
         {
           key: 1,
-          name: "执行返回操作",
+          name: '执行返回操作',
           action: 'back',
           snapshotUrls: 'https://i.gkd.li/i/24858066',
         },
@@ -131,23 +128,24 @@ export default defineGkdApp({
     },
     {
       key: 7,
-      name: "功能类-讨论区详情-自动点击查看答案",
+      name: '功能类-讨论区详情-自动点击查看答案',
       fastQuery: true,
       activityIds: '.biz.post.CommentDetailActivity',
       rules: [
         {
           key: 0,
-          name: "点击查看答案按钮",
-          matches: '@Button[text=" 查看答案"][clickable=true][width<200 && height<80]',
+          name: '点击查看答案按钮',
+          matches:
+            '@Button[text=" 查看答案"][clickable=true][width<200 && height<80]',
           snapshotUrls: [
             'https://i.gkd.li/i/24864724',
             'https://i.gkd.li/i/24875839',
             'https://i.gkd.li/i/24875836',
-          ]
+          ],
         },
         {
           key: 1,
-          name: "执行返回操作",
+          name: '执行返回操作',
           action: 'back',
           snapshotUrls: 'https://i.gkd.li/i/24864772',
         },
@@ -158,7 +156,7 @@ export default defineGkdApp({
       name: '功能类-药品说明书-自动展开折叠部分',
       fastQuery: true,
       activityIds: [
-        'cn.dxy.drugscomm.business.drug.detail.DrugDetailComposeActivity'
+        'cn.dxy.drugscomm.business.drug.detail.DrugDetailComposeActivity',
       ],
       rules: [
         {
@@ -177,9 +175,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '功能类-药品说明书-表格全屏自动横屏观看', //改善逻辑，不要循环！
-      activityIds: [
-        'cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity'
-      ],
+      activityIds: ['cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity'],
       rules: [
         {
           key: 0,
@@ -218,18 +214,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: "调出倍速栏",
-          matches: '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
+          name: '调出倍速栏',
+          matches:
+            '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
-          name: "使用x0.5",
+          name: '使用x0.5',
           matches: '@MenuItem[text="0.5x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
             'https://i.gkd.li/i/24865666',
-          ]
-        }
+          ],
+        },
       ],
     },
     {
@@ -241,18 +238,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: "调出倍速栏",
-          matches: '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
+          name: '调出倍速栏',
+          matches:
+            '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
-          name: "使用x0.8",
+          name: '使用x0.8',
           matches: '@MenuItem[text="0.8x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
             'https://i.gkd.li/i/24865666',
-          ]
-        }
+          ],
+        },
       ],
     },
     {
@@ -264,18 +262,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: "调出倍速栏",
-          matches: '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
+          name: '调出倍速栏',
+          matches:
+            '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
-          name: "使用x1.5",
+          name: '使用x1.5',
           matches: '@MenuItem[text="1.5x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
             'https://i.gkd.li/i/24865666',
-          ]
-        }
+          ],
+        },
       ],
     },
     {
@@ -287,18 +286,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: "调出倍速栏",
-          matches: '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
+          name: '调出倍速栏',
+          matches:
+            '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
-          name: "使用x2.0",
+          name: '使用x2.0',
           matches: '@MenuItem[text="2.0x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
             'https://i.gkd.li/i/24865666',
-          ]
-        }
+          ],
+        },
       ],
     },
     {
@@ -307,9 +307,7 @@ export default defineGkdApp({
       desc: '我们导师再也不卡壳啦',
       actionCd: 10000,
       fastQuery: true,
-      activityIds: [
-        '.openclass.biz.video.detail.VideoDetailActivity'
-      ],
+      activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'],
       rules: [
         {
           key: 0,
@@ -325,24 +323,20 @@ export default defineGkdApp({
       desc: '显著提高讲师效率',
       actionCd: 10000,
       fastQuery: true,
-      activityIds: [
-        '.openclass.biz.video.detail.VideoDetailActivity'
-      ],
+      activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'],
       snapshotUrls: 'https://i.gkd.li/i/24866929',
       rules: [
         {
           key: 0,
-          name: "第一次点击",
+          name: '第一次点击',
           matches: '[vid="play_speed"]',
           action: 'click',
           actionDelay: 100,
         },
         {
           key: 1,
-          name: "第二次点击",
-          preKeys: [
-            0
-          ],
+          name: '第二次点击',
+          preKeys: [0],
           matches: '[vid="play_speed"]',
           action: 'click',
           actionDelay: 100,
@@ -355,34 +349,28 @@ export default defineGkdApp({
       desc: '导师讲到冒烟不带停',
       fastQuery: true,
       actionCd: 10000,
-      activityIds: [
-        '.openclass.biz.video.detail.VideoDetailActivity'
-      ],
+      activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'],
       snapshotUrls: 'https://i.gkd.li/i/24866758',
       rules: [
         {
           key: 0,
-          name: "第一次点击",
+          name: '第一次点击',
           matches: '[vid="play_speed"]',
           action: 'click',
           actionDelay: 100,
         },
         {
           key: 1,
-          name: "第二次点击",
-          preKeys: [
-            0
-          ],
+          name: '第二次点击',
+          preKeys: [0],
           matches: '[vid="play_speed"]',
           action: 'click',
           actionDelay: 100,
         },
         {
           key: 2,
-          name: "第三次点击",
-          preKeys: [
-            1
-          ],
+          name: '第三次点击',
+          preKeys: [1],
           matches: '[vid="play_speed"]',
           action: 'click',
         },
