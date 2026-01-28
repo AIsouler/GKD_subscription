@@ -92,7 +92,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '@Button',
-          action: "clickCenter",
+          action: 'clickCenter',
           snapshotUrls: [
             'https://i.gkd.li/i/24845324',
             'https://i.gkd.li/i/24868816',
@@ -161,8 +161,9 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[desc="展开"][clickable=true][width<60 && height<40][childCount=1]',
-          action: "clickCenter",
+          matches:
+            '[desc="展开"][clickable=true][width<60 && height<40][childCount=1]',
+          action: 'clickCenter',
           snapshotUrls: [
             'https://i.gkd.li/i/24863642',
             'https://i.gkd.li/i/24863694',
