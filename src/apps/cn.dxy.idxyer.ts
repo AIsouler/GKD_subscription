@@ -85,7 +85,7 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '功能类-丁香园安全中心-自动点击继续访问', //需要强制点击，等进修知识后再尝试实现
+      name: '功能类-丁香园安全中心-自动点击继续访问',
       activityIds: '.common.OuterWebViewActivity',
       fastQuery: true,
       rules: [
@@ -103,26 +103,35 @@ export default defineGkdApp({
     {
       key: 6,
       name: '功能类-病例讨论-自动点击查看答案',
-      activityIds: '.biz.post.PostDetailActivity',
+      activityIds: [
+        '.biz.post.PostDetailActivity',
+        '.biz.post.ShowAnswerActivity',
+      ],
       rules: [
         {
-          key: 0,
+          key: 1,
           name: '点击查看答案按钮',
           matches: [
             '@Button[clickable=true][focusable=true][width<200 && height<80][text=" 查看答案"]',
           ],
+          action: 'clickCenter',
           snapshotUrls: [
             'https://i.gkd.li/i/24857800',
             'https://i.gkd.li/i/24864697',
             'https://i.gkd.li/i/24875801',
             'https://i.gkd.li/i/24875832',
+            'https://i.gkd.li/i/24900598', //会出现没看到查看答案却提前点击情况。。。
           ],
         },
         {
-          key: 1,
+          preKeys: [1],
           name: '执行返回操作',
+          matches: '@ImageButton < [vid="toolbar"]',
           action: 'back',
-          snapshotUrls: 'https://i.gkd.li/i/24858066',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24858066',
+            'https://i.gkd.li/i/24900979',
+          ],
         },
       ],
     },
@@ -130,24 +139,33 @@ export default defineGkdApp({
       key: 7,
       name: '功能类-讨论区详情-自动点击查看答案',
       fastQuery: true,
-      activityIds: '.biz.post.CommentDetailActivity',
+      activityIds: [
+        '.biz.post.CommentDetailActivity',
+        '.biz.post.ShowAnswerActivity',
+      ],
       rules: [
         {
-          key: 0,
+          key: 1,
           name: '点击查看答案按钮',
           matches:
             '@Button[text=" 查看答案"][clickable=true][width<200 && height<80]',
+          action: 'clickCenter',
           snapshotUrls: [
             'https://i.gkd.li/i/24864724',
             'https://i.gkd.li/i/24875839',
             'https://i.gkd.li/i/24875836',
+            'https://i.gkd.li/i/24900598', //会出现没看到查看答案却提前点击情况。。。
           ],
         },
         {
-          key: 1,
+          preKeys: [1],
           name: '执行返回操作',
+          matches: '@ImageButton < [vid="toolbar"]',
           action: 'back',
-          snapshotUrls: 'https://i.gkd.li/i/24864772',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24864772',
+            'https://i.gkd.li/i/24900885',
+          ],
         },
       ],
     },
