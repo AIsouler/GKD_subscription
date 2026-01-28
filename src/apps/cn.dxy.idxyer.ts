@@ -173,6 +173,7 @@ export default defineGkdApp({
       key: 8,
       name: '功能类-药品说明书-自动展开折叠部分',
       fastQuery: true,
+      actionCd: 300,
       activityIds: [
         'cn.dxy.drugscomm.business.drug.detail.DrugDetailComposeActivity',
       ],
