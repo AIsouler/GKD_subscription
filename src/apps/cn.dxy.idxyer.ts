@@ -77,7 +77,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
+          action: 'clickCenter',
           activityIds: '.common.OuterWebViewActivity',
           matches: '@Button[text="继续访问"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/24845324',
@@ -148,6 +148,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches: '[text="Playback Rate"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -155,6 +156,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '使用x0.5',
+          action: 'clickCenter',
           matches: '@MenuItem[text="0.5x"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -170,6 +172,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches: '[text="Playback Rate"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -177,6 +180,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '使用x0.8',
+          action: 'clickCenter',
           matches: '@MenuItem[text="0.8x"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -192,6 +196,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches: '[text="Playback Rate"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -199,6 +204,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '使用x1.5',
+          action: 'clickCenter',
           matches: '@MenuItem[text="1.5x"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -214,6 +220,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches: '[text="Playback Rate"][clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
@@ -221,6 +228,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 1,
           name: '使用x2.0',
+          action: 'clickCenter',
           matches: '@MenuItem[text="2x"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/24865795',
         },
