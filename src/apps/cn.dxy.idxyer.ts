@@ -175,7 +175,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      name: '功能类-药品说明书-表格全屏自动横屏观看', 
+      name: '功能类-药品说明书-表格全屏自动横屏观看',
       fastQuery: true,
       actionMaximum: 4,
       actionCd: 10000,
