@@ -234,18 +234,19 @@ export default defineGkdApp({
       key: 11,
       name: '功能类-病例视频自动慢速x0.5',
       desc: '适合CT,MRI影像学深入分析',
-      actionCd: 8000,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches:
             '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
           name: '使用x0.5',
+          action: 'clickCenter',
           matches: '@MenuItem[text="0.5x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
@@ -258,18 +259,20 @@ export default defineGkdApp({
       key: 12,
       name: '功能类-病例视频自动慢速x0.8',
       desc: '适合CT,MRI影像学深入分析',
-      actionCd: 8000,
+      actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches:
             '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
           name: '使用x0.8',
+          action: 'clickCenter',
           matches: '@MenuItem[text="0.8x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
@@ -282,18 +285,20 @@ export default defineGkdApp({
       key: 13,
       name: '功能类-病例视频自动倍速x1.5',
       desc: '提高观看效率',
-      actionCd: 8000,
+      actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches:
             '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
           name: '使用x1.5',
+          action: 'clickCenter',
           matches: '@MenuItem[text="1.5x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
@@ -306,18 +311,20 @@ export default defineGkdApp({
       key: 14,
       name: '功能类-病例视频自动倍速x2.0',
       desc: '极限观看效率',
-      actionCd: 8000,
+      actionMaximum: 1,
       //activityIds: ['.biz.post.PostDetailActivity'], //考虑视频不止在一个界面id
       rules: [
         {
           key: 0,
           name: '调出倍速栏',
+          action: 'clickCenter',
           matches:
             '@Button[text="Playback Rate"][clickable=true][width<80 && height<67]',
         },
         {
           key: 1,
           name: '使用x2.0',
+          action: 'clickCenter',
           matches: '@MenuItem[text="2.0x"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/24865795',
@@ -330,8 +337,8 @@ export default defineGkdApp({
       key: 15,
       name: '功能类-课程视频自动倍速x1.2',
       desc: '我们导师再也不卡壳啦',
-      actionCd: 10000,
       fastQuery: true,
+      actionMaximum: 1,
       activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'],
       rules: [
         {
@@ -346,8 +353,8 @@ export default defineGkdApp({
       key: 16,
       name: '功能类-课程视频自动倍速x1.5',
       desc: '显著提高讲师效率',
-      actionCd: 10000,
       fastQuery: true,
+      actionMaximum: 1,
       activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'],
       snapshotUrls: 'https://i.gkd.li/i/24866929',
       rules: [
@@ -373,7 +380,7 @@ export default defineGkdApp({
       name: '功能类-课程视频自动倍速x2.0',
       desc: '导师讲到冒烟不带停',
       fastQuery: true,
-      actionCd: 10000,
+      actionMaximum: 1,
       activityIds: ['.openclass.biz.video.detail.VideoDetailActivity'],
       snapshotUrls: 'https://i.gkd.li/i/24866758',
       rules: [
