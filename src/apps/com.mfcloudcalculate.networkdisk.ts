@@ -7,13 +7,14 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      activityIds: '.MainActivity',
       rules: [
         {
           key: 0,
-          fastQuery: true,
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-            'com.mfcloudcalculate.networkdisk.activity.AdFreeActivity',
+            '.activity.AdFreeActivity',
             '.activity.LauncherActivity',
             'com.adgain.sdk.base.activity.AdActivity',
           ],
@@ -30,9 +31,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          fastQuery: true,
-          activityIds:
-            'com.mfcloudcalculate.networkdisk.activity.EmptyActivity',
+          activityIds: '.activity.EmptyActivity',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup <7 ViewGroup + ViewGroup [text="广告"]',
           exampleUrls:
@@ -41,6 +40,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
+          fastQuery: false,
           activityIds:
             'com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity',
           matches:
@@ -50,11 +50,9 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          fastQuery: true,
           matchTime: 10000,
           actionMaximum: 1,
           resetMatch: 'app',
-          activityIds: '.MainActivity',
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           exampleUrls: 'https://e.gkd.li/49cef679-3efb-4719-9af9-8f3a4c311191',
@@ -65,7 +63,6 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches: '@ImageView[clickable=true] - [text="反馈"]',
           exampleUrls: 'https://e.gkd.li/af430910-56e0-4b19-b23f-b120ce19fdc0',
@@ -73,8 +70,6 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          fastQuery: true,
-          activityIds: '.MainActivity',
           matches:
             '@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^="扭动或点击"]',
           exampleUrls: 'https://e.gkd.li/069fb571-ab57-42a7-a360-79b44efc2790',
@@ -82,7 +77,6 @@ export default defineGkdApp({
         },
         {
           key: 6,
-          fastQuery: true,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches: [
@@ -94,7 +88,6 @@ export default defineGkdApp({
         },
         {
           key: 7,
-          fastQuery: true,
           activityIds: 'com.meishu.sdk.activity.SdkInterstitialActivity',
           matches:
             '[vid="ms_activity_sdk_interstitial_cacel"][visibleToUser=true]',
@@ -103,23 +96,20 @@ export default defineGkdApp({
         },
         {
           key: 8,
-          fastQuery: true,
           action: 'back',
-          activityIds: '.MainActivity',
           matches:
             '[desc="开通前请阅读"] -8 @ImageView[clickable=true][childCount=0][visibleToUser=true] < View < View < View < View < FrameLayout < FrameLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/21820334',
         },
         {
           key: 9,
-          fastQuery: true,
-          activityIds: '.MainActivity',
           matches:
             '@[id="cj.mobile.wm.allmodules:id/wm_pop_pic_close"] +n * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/23253580',
         },
         {
           key: 10,
+          fastQuery: false,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
@@ -129,12 +119,10 @@ export default defineGkdApp({
         },
         {
           key: 11,
-          fastQuery: true,
           position: {
             left: 'width * 0.9636',
             top: 'height * 0.5',
           },
-          activityIds: '.MainActivity',
           matches:
             '[desc="开通前请阅读"] -n @ImageView[childCount=0] < View < View < View < View < FrameLayout < [id="android:id/content"]',
           exampleUrls: 'https://e.gkd.li/ee504d60-ca93-40de-bb0f-292ef1df8c70',
@@ -142,8 +130,6 @@ export default defineGkdApp({
         },
         {
           key: 12,
-          fastQuery: true,
-          activityIds: '.MainActivity',
           matches:
             '@ImageView[vid="channel_insert_close_iv"][clickable=true] - ImageView[vid="iv_ad_icon"]',
           exampleUrls: 'https://e.gkd.li/fa0391fe-54d4-4db0-930d-2cb9002b3786',
@@ -151,8 +137,6 @@ export default defineGkdApp({
         },
         {
           key: 13,
-          fastQuery: true,
-          activityIds: '.MainActivity',
           matches:
             '@TextView[clickable=true][childCount=0] <2 FrameLayout[childCount=2] - LinearLayout >4 [text$="第三方应用"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e6486e20-e908-48da-b84a-f3ea5519346b',
@@ -160,6 +144,7 @@ export default defineGkdApp({
         },
         {
           key: 14,
+          fastQuery: false,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
