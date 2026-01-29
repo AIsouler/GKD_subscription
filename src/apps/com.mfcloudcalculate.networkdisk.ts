@@ -19,7 +19,7 @@ export default defineGkdApp({
             'com.adgain.sdk.base.activity.AdActivity',
           ],
           matches:
-            '[vid="tv_ad_free_close" || vid="tv_ad_free_colse" || vid="adgain_interstitial_skip_ll"][visibleToUser=true]',
+            '[vid="tv_ad_free_close" || vid="tv_ad_free_colse" || vid="adgain_interstitial_skip_ll" || vid="adgain_interstitial_close_ll"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/4cafd5fd-b5ed-4df1-b9f2-f443f53a7166',
           snapshotUrls: [
@@ -27,6 +27,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14696860',
             'https://i.gkd.li/i/18121213',
             'https://i.gkd.li/i/24675097',
+            'https://i.gkd.li/i/24927790',
           ],
         },
         {
