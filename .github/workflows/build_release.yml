@@ -16,15 +16,19 @@ jobs:
           fetch-depth: 0
       - id: changes
         run: |
-          prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
-          if [ "$prev_tag" == "none" ]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            if git diff --exit-code $prev_tag HEAD -- src; then
-              echo "No changes detected in 'src' directory between $prev_tag and the latest commit."
-              echo "changed=false" >> $GITHUB_OUTPUT
-            else
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
               echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            prev_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
+            if [ "$prev_tag" == "none" ]; then
+              echo "changed=true" >> $GITHUB_OUTPUT
+            else
+              if git diff --exit-code $prev_tag HEAD -- src; then
+                echo "No changes detected in 'src' directory between $prev_tag and the latest commit."
+                echo "changed=false" >> $GITHUB_OUTPUT
+              else
+                echo "changed=true" >> $GITHUB_OUTPUT
+              fi
             fi
           fi
 
