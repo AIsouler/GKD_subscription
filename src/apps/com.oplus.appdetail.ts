@@ -7,12 +7,14 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-自动安装应用',
+      desc: '点击 ①继续安装 ②完成',
+      fastQuery: true,
       rules: [
         {
           key: 0,
           name: '点击[继续安装]',
           activityIds: [
-            'com.oplus.appdetail.model.guide.ui.InstallGuideActivity',
+            '.model.guide.ui.InstallGuideActivity',
             '.modelv2.parsing.PackageParsingV2Activity',
           ],
           excludeMatches:
@@ -20,17 +22,17 @@ export default defineGkdApp({
           matches:
             '[id="com.oplus.appdetail:id/view_bottom_guide_continue_install_btn" || text="继续安装"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13038560', // 使用 excludeMatches，扫描病毒阶段不进行点击
             'https://i.gkd.li/i/13054204',
             'https://i.gkd.li/i/13038570',
             'https://i.gkd.li/i/23146291',
             'https://i.gkd.li/i/23146289',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/13038560', // 扫描病毒阶段不进行点击
         },
         {
           key: 1,
           name: '点击[完成]',
-          activityIds: 'com.oplus.appdetail.model.finish.InstallFinishActivity',
+          activityIds: '.model.finish.InstallFinishActivity',
           matches: '[text="完成"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13038664',
