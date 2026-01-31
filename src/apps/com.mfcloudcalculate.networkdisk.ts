@@ -276,6 +276,7 @@ export default defineGkdApp({
       name: '局部广告',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: '.MainActivity',
           matches:
@@ -285,6 +286,28 @@ export default defineGkdApp({
             'https://i.gkd.li/i/24675412',
             'https://i.gkd.li/i/24675589',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[clickable=true][id=null][childCount=0] - [text="投诉"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24979308',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches: '[vid="ptgImgClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/24979282',
+        },
+        {
+          key: 3,
+          activityIds: '.MainActivity',
+          matches:
+            '@Image[childCount=0][width<50 && height<50] < View[childCount=1] - View >2 [text="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24979310',
         },
       ],
     },
