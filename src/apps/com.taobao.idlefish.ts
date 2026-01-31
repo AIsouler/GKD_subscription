@@ -61,8 +61,11 @@ export default defineGkdApp({
           activityIds:
             'com.taobao.idlefish.maincontainer.activity.MainActivity',
           matches:
-            'WebView[text="Rax App"] > [id="root"] >6 View[index=2][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14551046',
+            'WebView[text="Rax App"] > [id="root"] >(3,6) View[index=parent.childCount.minus(1)][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14551046',
+            'https://i.gkd.li/i/24981766',
+          ],
         },
         {
           key: 1,
