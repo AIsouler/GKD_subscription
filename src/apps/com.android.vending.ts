@@ -75,5 +75,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '通知提示-隐私政策更新',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.google.android.finsky.activities.MainActivity',
+          matches: [
+            '[text="更新 Google Play 隐私设置"]',
+            '[text="知道了"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24982226',
+        },
+      ],
+    },
   ],
 });
