@@ -88,11 +88,12 @@ export default defineGkdApp({
             'com.taobao.tao.TBMainActivity',
           ],
           matches:
-            '@[clickable=true][childCount=0][width<150 && height<150][index=parent.childCount.minus(1)] - TextView[text.length>0] <n View <<n WebView[vid="poplayer_inner_view"]',
+            '@[clickable=true][childCount=0][width<150 && height<150][index=parent.childCount.minus(1)] -n TextView[text.length>0] <n View <<n WebView[vid="poplayer_inner_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/22949963',
             'https://i.gkd.li/i/23289412',
             'https://i.gkd.li/i/23567053',
+            'https://i.gkd.li/i/24982514',
           ],
         },
       ],
