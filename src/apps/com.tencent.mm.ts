@@ -748,9 +748,17 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: ['.ui.LauncherUI', '.ui.chatting.ChattingUI'],
-          matches: '@[clickable=true] > [text="转文字"]',
-          snapshotUrls: 'https://i.gkd.li/i/18135057',
+          activityIds: [
+            '.ui.LauncherUI',
+            '.ui.chatting.ChattingUI',
+            '.ui.chatting.variants.ChattingMainUI',
+          ],
+          matches:
+            '@RelativeLayout[clickable=true] -2 FrameLayout >2 [desc^="语音" && desc$="未播放"] + [text^="0" || text^="1" || text^="2" || text^="3" || text^="4" || text^="5" || text^="6" || text^="7" || text^="8" || text^="9"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/18135057',
+            'https://i.gkd.li/i/24989479',
+          ],
           excludeSnapshotUrls: 'https://i.gkd.li/i/18135054',
         },
       ],
