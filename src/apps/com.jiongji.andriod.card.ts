@@ -60,7 +60,6 @@ export default defineGkdApp({
       name: '通知提示-关闭顶栏提醒',
       rules: [
         {
-          fastQuery: true,
           activityIds: 'com.baicizhan.main.activity.MainTabActivity',
           matches:
             '[desc="word_plan_tab"] > FrameLayout[index=2] >2 TextView[text!=null] + ImageView[clickable=true][childCount=0][index=parent.childCount.minus(1)]',
