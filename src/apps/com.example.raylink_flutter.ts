@@ -46,8 +46,11 @@ export default defineGkdApp({
         {
           activityIds: 'com.remote.cn.MainActivity',
           matches:
-            '[desc^="远程连接"] - View > View > View[childCount=1][index=parent.childCount.minus(1)] > ImageView[clickable=true][width<80 && height<80]',
-          snapshotUrls: 'https://i.gkd.li/i/24853050',
+            '[desc="允许远程本设备"] +2 View[childCount=1][index=parent.childCount.minus(1)] > ImageView[clickable=true][width<80 && height<80]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24853050',
+            'https://i.gkd.li/i/24995320',
+          ],
         },
       ],
     },
