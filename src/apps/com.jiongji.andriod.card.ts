@@ -62,7 +62,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.baicizhan.main.activity.MainTabActivity',
-          matches: '[desc="word_plan_tab"] > FrameLayout > ViewGroup > ImageView +2 ImageView',
+          matches:
+            '[desc="word_plan_tab"] > FrameLayout > ViewGroup > ImageView +2 ImageView',
           snapshotUrls: [
             'https://i.gkd.li/i/24887224',
             'https://i.gkd.li/i/24983406',
