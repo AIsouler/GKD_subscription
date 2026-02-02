@@ -874,5 +874,27 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 45,
+      name: '功能类-朋友圈企业朋友推广',
+      desc: '点击不感兴趣',
+      rules: [
+        {
+          key: 0,
+          name: '点击下拉三角',
+          matches:
+            '[text^=" @"][index=1] + FrameLayout[index=2][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25012856',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          name: '点击不感兴趣',
+          matches:
+            '@LinearLayout[clickable=true][index=0] < ViewGroup[childCount=1]',
+          snapshotUrls: 'https://i.gkd.li/i/25013144',
+        },
+      ],
+    },
   ],
 });
