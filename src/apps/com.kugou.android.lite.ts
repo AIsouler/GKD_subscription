@@ -242,5 +242,26 @@ export default defineGkdApp({
       },
       snapshotUrls: 'https://i.gkd.li/i/25021659',
     },
+    {
+      key: 10,
+      name: '全屏广告-播放器内VIP提示',
+      rules: [
+        {
+          key: 0,
+          name: '播放器null界面id VIP窗口',
+          actionCd: 5000,
+          matches:
+            '@Image[clickable=true][width<80 && height<80] + View > [text="支付方式"]',
+          snapshotUrls: 'https://i.gkd.li/i/25022154',
+        },
+        {
+          key: 1,
+          name: '播放器内1元开通VIP',
+          matches:
+            '@Image[clickable=true][width<70 && height<70] +n View[childCount=8] > [text="支付方式"]',
+          snapshotUrls: 'https://i.gkd.li/i/25022292',
+        },
+      ],
+    },
   ],
 });
