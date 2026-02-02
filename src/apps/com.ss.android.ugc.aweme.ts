@@ -368,5 +368,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 27,
+      name: '功能类-跳过话题推荐卡片',
+      desc: '执行返回操作',
+      rules: [
+        {
+          key: 0,
+          name: '识别界面',
+          activityIds: '.main.MainActivity',
+          matches:
+            '[desc="不感兴趣"] +n [desc="立即参与"] +n [desc="上滑继续看视频"]',
+          action: 'back',
+          snapshotUrls: 'https://i.gkd.li/i/25025682',
+        },
+      ],
+    },
   ],
 });
