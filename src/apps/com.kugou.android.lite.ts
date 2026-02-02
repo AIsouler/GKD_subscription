@@ -226,7 +226,7 @@ export default defineGkdApp({
           activityIds:
             'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
           matches:
-            'SeekBar -n LinearLayout[childCount=3] > ImageView[clickable=true][width<60 && height<60]',
+            'SeekBar[vid="dom"] -n LinearLayout[childCount=3] > ImageView[clickable=true][width<60 && height<60]',
           snapshotUrls: 'https://i.gkd.li/i/25021318',
         },
       ],
