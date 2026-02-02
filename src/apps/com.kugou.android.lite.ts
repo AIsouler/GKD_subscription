@@ -219,6 +219,16 @@ export default defineGkdApp({
             '[text$="详情"] -n LinearLayout[childCount=2][clickable=false] > TextView[text$="跳过"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/25021020',
         },
+        {
+          key: 3,
+          name: '播放器内左下角小横幅Tip_不包含免费领取1天VIP',
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches:
+            'SeekBar -n LinearLayout[childCount=3] > ImageView[clickable=true][width<60 && height<60]',
+          snapshotUrls: 'https://i.gkd.li/i/25021318',
+        },
       ],
     },
   ],
