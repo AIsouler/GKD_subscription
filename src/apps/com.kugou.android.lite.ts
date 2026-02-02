@@ -231,5 +231,16 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 9,
+      name: '功能类-极致屏蔽——播放器左下角Tip——签到领会员(白嫖1day VIP)关闭!',
+      fastQuery: true,
+      activityIds: 'com.kugou.android.app.MediaActivity',
+      rules: {
+        matches:
+          '[vid="dom"] -n LinearLayout[childCount=2][clickable=true] > [text="签到领会员"][clickable=false] + ImageView[clickable=true][width<50 && height<50]',
+      },
+      snapshotUrls: 'https://i.gkd.li/i/25021659',
+    },
   ],
 });
