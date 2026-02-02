@@ -304,6 +304,18 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19645122', // 无法快速查询
           ],
         },
+        {
+          key: 1,
+          name: '小程序截屏方式查看原图',
+          activityIds: '.ui.LauncherUI',
+          matches: [
+            '[desc~=".*(小程序|进入).*"][childCount=0] + RelativeLayout[childCount=1] > Button[text*="原图"][clickable=true][childCount=0]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/25009440',
+            'https://i.gkd.li/i/25009442',
+          ],
+        },
       ],
     },
     {
