@@ -67,5 +67,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '权限提示',
+      rules: [
+        {
+          key: 0,
+          name: '开启通知权限',
+          fastQuery: true,
+          activityIds: 'com.ants360.yicamera.activity.MainActivity',
+          matches:
+            '[text="开启通知"][childCount=0] +n [text="暂不开启"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25017451',
+        },
+      ],
+    },
   ],
 });
