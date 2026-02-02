@@ -29,7 +29,8 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          matches: '[text*="广告"][visibleToUser=true]',
+          matches:
+            '[text*="广告"][visibleToUser=true] < LinearLayout[index=6] -5 LinearLayout[childCount=1] > [text="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/24989298',
         },
         {
