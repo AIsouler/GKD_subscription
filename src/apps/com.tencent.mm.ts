@@ -878,6 +878,7 @@ export default defineGkdApp({
       key: 45,
       name: '功能类-朋友圈企业朋友推广',
       desc: '点击不感兴趣',
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -889,6 +890,7 @@ export default defineGkdApp({
         {
           preKeys: [0],
           key: 1,
+          actionCd: 1400,
           name: '点击不感兴趣',
           matches:
             '@LinearLayout[clickable=true][index=0] < ViewGroup[childCount=1]',
