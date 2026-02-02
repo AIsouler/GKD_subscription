@@ -140,5 +140,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '评价提示',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          name: '求五星鼓励',
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            '[text*="五星鼓励"] < LinearLayout[childCount=5] + ImageView[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25002911',
+        },
+      ],
+    },
   ],
 });
