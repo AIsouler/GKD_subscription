@@ -185,5 +185,31 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          name: '评论区插入广告-点击三角下拉菜单',
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            '[text^="立即"] -n @FrameLayout[clickable=true][childCount=3] > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/25020531',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          name: '评论区插入广告-关闭这条广告',
+          fastQuery: true,
+          actionCd: 1400,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            '@[text="关闭这条广告"] +n Button[text="取消"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25020623',
+        },
+      ],
+    },
   ],
 });
