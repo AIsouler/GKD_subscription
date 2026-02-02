@@ -209,6 +209,16 @@ export default defineGkdApp({
             '@[text="关闭这条广告"] +n Button[text="取消"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/25020623',
         },
+        {
+          key: 2,
+          name: '音乐播放器内广告',
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches:
+            '[text$="详情"] -n LinearLayout[childCount=2][clickable=false] > TextView[text$="跳过"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25021020',
+        },
       ],
     },
   ],
