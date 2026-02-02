@@ -54,6 +54,36 @@ export default defineGkdApp({
             '@ImageView[clickable=true][visibleToUser=true][childCount=0] <3 ViewGroup[childCount=3] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14321700',
         },
+        {
+          key: 2,
+          name: '邀好友送你3个月VIP',
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches:
+            '@ImageView[clickable=true][width<100 && height<100] -n ImageView[clickable=false] < ViewGroup[childCount=3]',
+          snapshotUrls: 'https://i.gkd.li/i/25018524',
+        },
+        {
+          key: 3,
+          name: '新人限时福利',
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches:
+            '@ImageView[clickable=true][width<120 && height<120] -n ViewGroup[childCount=3] > [text="立即领取"]',
+          snapshotUrls: 'https://i.gkd.li/i/25018724',
+        },
+        {
+          key: 4,
+          name: '你的概念版VIP已过期xx天',
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches:
+            '[text~=".*(VIP已过期|天|小时).*"] +n [text$="拒绝"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25020137',
+        },
       ],
     },
     {
