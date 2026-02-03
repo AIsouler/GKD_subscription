@@ -7,10 +7,10 @@ export default defineGkdApp({
     {
       key: 0,
       name: '全屏广告-关闭花呗升级弹窗',
+      fastQuery: true,
       rules: [
         {
           key: 1,
-          fastQuery: true,
           activityIds: [
             'com.alipay.android.msp.ui.views.MspContainerActivity',
             'com.alipay.android.msp.ui.views.MspUniRenderActivity',
@@ -26,7 +26,6 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          fastQuery: true,
           activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
           matches: [
             '[text*="花呗服务"]',
@@ -36,6 +35,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13631362',
             'https://i.gkd.li/i/13857535',
           ],
+        },
+        {
+          key: 3,
+          activityIds:
+            'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+          matches:
+            '@Image[width<90] - [text="花呗服务升级"] <<3 Dialog <2 View < View[index=parent.childCount.minus(1)] <n WebView <<4 [id="com.alipay.multiplatform.phone.xriver_integration:id/h5_pc_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/25000603',
         },
       ],
     },
