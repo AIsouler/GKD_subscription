@@ -205,13 +205,15 @@ export default defineGkdApp({
             'com.taobao.android.detail.wrapper.activity.DetailActivity',
             'com.taobao.android.order.bundle.TBOrderListActivity',
             'com.taobao.browser.BrowserActivity',
+            'com.taobao.themis.container.app.TMSActivity',
           ],
           matches: '[vid="update_imageview_cancel_v2"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13336760',
             'https://i.gkd.li/i/13695520',
             'https://i.gkd.li/i/14899863',
-            'https://i.gkd.li/i/24861114',
+            'https://i.gkd.li/i/24861114', //芭芭农场
+            'https://i.gkd.li/i/24999523', //淘金币
           ],
         },
       ],
