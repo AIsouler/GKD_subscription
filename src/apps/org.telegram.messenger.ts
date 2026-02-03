@@ -54,8 +54,9 @@ export default defineGkdApp({
         {
           activityIds: 'org.telegram.ui.LaunchActivity',
           matches:
-            '@ImageView[clickable=true][width<140 && height<140] <n FrameLayout -n * >2 [desc="搜索"] < LinearLayout -n * > [text="Telegram"]',
+            '@ImageView[clickable=true][left>540] <2 FrameLayout -2 [getChild(2).getChild(0).desc="搜索"] >2 [text="Telegram"]',
           snapshotUrls: 'https://i.gkd.li/i/24560612',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/25030822', // [left>540] 防止反复点击播放、暂停音乐
         },
       ],
     },
