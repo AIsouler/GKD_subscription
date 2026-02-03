@@ -657,5 +657,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 33,
+      name: '青少年模式',
+      rules: [
+        {
+          key: 0,
+          name: '底部悬浮卡片-启用未成年人保护模式"',
+          fastQuery: true,
+          activityIds: '.AlipayLogin',
+          matches: [
+            '@[id="com.alipay.android.phone.wallet.manufacturebiz:id/teenager_cancel"] - RelativeLayout[childCount=4] > [text="启用未成年人保护模式"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24992663',
+        },
+      ],
+    },
   ],
 });
