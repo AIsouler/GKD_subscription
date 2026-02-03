@@ -29,7 +29,10 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          matches: '[text*="广告"][visibleToUser=true]',
+          matches: [
+            '[text*="广告"][visibleToUser=true]',
+            '[text="关闭"][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/24989298',
         },
         {
@@ -38,6 +41,12 @@ export default defineGkdApp({
           matches:
             '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/24989256',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          matches: '[vid="iv_ad_logo"] - [vid="iv_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25016571',
         },
       ],
     },
@@ -57,6 +66,20 @@ export default defineGkdApp({
             'https://i.gkd.li/i/24989254',
             'https://i.gkd.li/i/24989255',
           ],
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '权限提示-通知权限',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.ants360.yicamera.activity.MainActivity',
+          matches:
+            '[text="开启通知"][childCount=0] +n [text="暂不开启"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25017451',
         },
       ],
     },
