@@ -102,6 +102,14 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13372542',
         },
         {
+          key: 8,
+          fastQuery: true,
+          activityIds: 'com.beizi.ad.v2.activity.BeiZiNewInterstitialActivity',
+          matches:
+            '@[clickable=true] > ImageView[vid="beizi_interstitial_ad_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/i/25049918',
+        },
+        {
           key: 9,
           name: '字节广告-3',
           activityIds:
