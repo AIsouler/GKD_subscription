@@ -29,8 +29,10 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          matches:
-            '[text*="广告"][visibleToUser=true] < LinearLayout[index=6] -5 LinearLayout[childCount=1] > [text="关闭"]',
+          matches: [
+            '[text*="广告"][visibleToUser=true]',
+            '[text="关闭"][visibleToUser=true]',
+          ],
           snapshotUrls: 'https://i.gkd.li/i/24989298',
         },
         {
@@ -69,11 +71,10 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '权限提示',
+      name: '权限提示-通知权限',
       rules: [
         {
           key: 0,
-          name: '开启通知权限',
           fastQuery: true,
           activityIds: 'com.ants360.yicamera.activity.MainActivity',
           matches:
