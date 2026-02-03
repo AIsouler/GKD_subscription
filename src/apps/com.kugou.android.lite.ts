@@ -33,13 +33,9 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          name: '新人限时优惠弹窗',
           fastQuery: true,
           activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           matches: '[text^="新人限时开通"] +3 [text="放弃优惠"]',
@@ -47,12 +43,36 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '组队抽奖弹窗',
           fastQuery: true,
-          activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
+          activityIds: [
+            'com.kugou.android.app.setting.YoungModeTipsActivity',
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          ],
           matches:
             '@ImageView[clickable=true][visibleToUser=true][childCount=0] <3 ViewGroup[childCount=3] < [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/i/14321700',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14321700',
+            'https://i.gkd.li/i/25018524',
+          ],
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches: [
+            '[text*="已过期"][visibleToUser=true]',
+            '[text="狠心拒绝"][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/25020137',
+        },
+        {
+          key: 3,
+          activityIds:
+            'com.kugou.framework.musicfees.ui.feeintercept.FeeInterceptWebActivity',
+          matches:
+            'WebView > [id="body"] > [id="root"] >2 View > Image[index=0][clickable=true][visibleToUser=true][width<70 && width<70]',
+          snapshotUrls: 'https://i.gkd.li/i/25022292',
         },
       ],
     },
@@ -137,6 +157,63 @@ export default defineGkdApp({
             '@ImageView[clickable=true] - FrameLayout >2 [text="立即领取福利"]',
           exampleUrls: 'https://e.gkd.li/51fbe6aa-d0da-4f08-aae0-2eed4e6c0ad1',
           snapshotUrls: 'https://i.gkd.li/i/16594001',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '评价提示',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches:
+            '@ImageView[clickable=true][childCount=0] - LinearLayout > [text*="求五星鼓励"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25002911',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '分段广告-评论区广告',
+      fastQuery: true,
+      activityIds: 'com.kugou.android.app.MediaActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@[clickable=true] > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/25020531',
+        },
+        {
+          preKeys: [0],
+          matches: '[text="关闭这条广告"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25020623',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '局部广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches: '@[text*="跳过"] + [text*="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25021020',
+        },
+        {
+          key: 1,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches:
+            '@ImageView[clickable=true][childCount=0][parent.childCount<4][index=parent.childCount.minus(1)][width<60 && height<60] - [!(text=null)]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/25021318',
+            'https://i.gkd.li/i/25021659',
+          ],
         },
       ],
     },
