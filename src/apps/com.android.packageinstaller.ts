@@ -52,16 +52,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14228348',
         },
         {
-          key: 3,
-          name: '勾选[已了解此应用未经检测，可能存在风险]',
-          matches:
-            '[vid="checkbox" || vid="deleted_file_state_cb"][checked=false]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14595443',
-            'https://i.gkd.li/i/22870985',
-          ],
-        },
-        {
           key: 4,
           position: {
             left: 'width * 1.5394',
@@ -108,6 +98,28 @@ export default defineGkdApp({
           ],
           exampleUrls: 'https://e.gkd.li/2961e749-6aac-4f74-b7f7-268ecc0e14f4',
           snapshotUrls: 'https://i.gkd.li/i/24540505',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '功能类-勾选[已了解此应用未经检测，可能存在风险]',
+      fastQuery: true,
+      activityIds: ['.PackageInterceptActivity', '.PackageInstallerActivity'],
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[vid="checkbox" || vid="deleted_file_state_cb"][checked=false]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14595443',
+            'https://i.gkd.li/i/22870985',
+          ],
+        },
+        {
+          preKeys: [0],
+          matches: '@LinearLayout[clickable=true][id=null] > [text="继续安装"]',
+          snapshotUrls: 'https://i.gkd.li/i/22870985',
         },
       ],
     },
