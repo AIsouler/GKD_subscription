@@ -33,13 +33,9 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          name: '新人限时优惠弹窗',
           fastQuery: true,
           activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
           matches: '[text^="新人限时开通"] +3 [text="放弃优惠"]',
@@ -47,42 +43,36 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '组队抽奖弹窗',
           fastQuery: true,
-          activityIds: 'com.kugou.android.app.setting.YoungModeTipsActivity',
+          activityIds: [
+            'com.kugou.android.app.setting.YoungModeTipsActivity',
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          ],
           matches:
             '@ImageView[clickable=true][visibleToUser=true][childCount=0] <3 ViewGroup[childCount=3] < [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/i/14321700',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14321700',
+            'https://i.gkd.li/i/25018524',
+          ],
         },
         {
           key: 2,
-          name: '邀好友送你3个月VIP',
           fastQuery: true,
           activityIds:
             'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
-          matches:
-            '@ImageView[clickable=true][width<100 && height<100] -n ImageView[clickable=false] < ViewGroup[childCount=3]',
-          snapshotUrls: 'https://i.gkd.li/i/25018524',
+          matches: [
+            '[text*="已过期"][visibleToUser=true]',
+            '[text="狠心拒绝"][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/25020137',
         },
         {
           key: 3,
-          name: '新人限时福利',
-          fastQuery: true,
           activityIds:
-            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+            'com.kugou.framework.musicfees.ui.feeintercept.FeeInterceptWebActivity',
           matches:
-            '@ImageView[clickable=true][width<120 && height<120] -n ViewGroup[childCount=3] > [text="立即领取"]',
-          snapshotUrls: 'https://i.gkd.li/i/25018724',
-        },
-        {
-          key: 4,
-          name: '你的概念版VIP已过期xx天',
-          fastQuery: true,
-          activityIds:
-            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
-          matches:
-            '[text~=".*(VIP已过期|天|小时).*"] +n [text$="拒绝"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/25020137',
+            'WebView > [id="body"] > [id="root"] >2 View > Image[index=0][clickable=true][visibleToUser=true][width<70 && width<70]',
+          snapshotUrls: 'https://i.gkd.li/i/25022292',
         },
       ],
     },
@@ -173,93 +163,57 @@ export default defineGkdApp({
     {
       key: 7,
       name: '评价提示',
-      fastQuery: true,
       rules: [
         {
           key: 0,
-          name: '求五星鼓励',
+          fastQuery: true,
           activityIds: 'com.kugou.android.app.MediaActivity',
           matches:
-            '[text*="五星鼓励"] < LinearLayout[childCount=5] + ImageView[clickable=true]',
+            '@ImageView[clickable=true][childCount=0] - LinearLayout > [text*="求五星鼓励"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25002911',
         },
       ],
     },
     {
       key: 8,
-      name: '局部广告',
+      name: '分段广告-评论区广告',
+      fastQuery: true,
+      activityIds: 'com.kugou.android.app.MediaActivity',
       rules: [
         {
           key: 0,
-          name: '评论区插入广告-点击三角下拉菜单',
-          fastQuery: true,
-          activityIds: 'com.kugou.android.app.MediaActivity',
-          matches:
-            '[text^="立即"] -n @FrameLayout[clickable=true][childCount=3] > [text="广告"]',
+          matches: '@[clickable=true] > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/25020531',
         },
         {
           preKeys: [0],
-          key: 1,
-          name: '评论区插入广告-关闭这条广告',
-          fastQuery: true,
-          actionCd: 1400,
-          activityIds: 'com.kugou.android.app.MediaActivity',
-          matches:
-            '@[text="关闭这条广告"] +n Button[text="取消"][clickable=true]',
+          matches: '[text="关闭这条广告"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/25020623',
-        },
-        {
-          key: 2,
-          name: '音乐播放器内广告',
-          fastQuery: true,
-          activityIds:
-            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
-          matches:
-            '[text$="详情"] -n LinearLayout[childCount=2][clickable=false] > TextView[text$="跳过"][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/25021020',
-        },
-        {
-          key: 3,
-          name: '播放器内左下角小横幅Tip_不包含免费领取1天VIP',
-          fastQuery: true,
-          activityIds:
-            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
-          matches:
-            'SeekBar[vid="dom"] -n LinearLayout[childCount=3] > ImageView[clickable=true][width<60 && height<60]',
-          snapshotUrls: 'https://i.gkd.li/i/25021318',
         },
       ],
     },
     {
       key: 9,
-      name: '功能类-极致屏蔽——播放器左下角Tip——签到领会员(白嫖1day VIP)关闭!',
-      fastQuery: true,
-      activityIds: 'com.kugou.android.app.MediaActivity',
-      rules: {
-        matches:
-          '[vid="dom"] -n LinearLayout[childCount=2][clickable=true] > [text="签到领会员"][clickable=false] + ImageView[clickable=true][width<50 && height<50]',
-      },
-      snapshotUrls: 'https://i.gkd.li/i/25021659',
-    },
-    {
-      key: 10,
-      name: '全屏广告-播放器内VIP提示',
+      name: '局部广告',
       rules: [
         {
           key: 0,
-          name: '播放器null界面id VIP窗口',
-          actionCd: 5000,
-          matches:
-            '@Image[clickable=true][width<80 && height<80] + View > [text="支付方式"]',
-          snapshotUrls: 'https://i.gkd.li/i/25022154',
+          fastQuery: true,
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
+          matches: '@[text*="跳过"] + [text*="广告"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25021020',
         },
         {
           key: 1,
-          name: '播放器内1元开通VIP',
+          activityIds:
+            'com.kugou.common.useraccount.app.KgUserLoginAndRegActivity',
           matches:
-            '@Image[clickable=true][width<70 && height<70] +n View[childCount=8] > [text="支付方式"]',
-          snapshotUrls: 'https://i.gkd.li/i/25022292',
+            '@ImageView[clickable=true][childCount=0][parent.childCount<4][index=parent.childCount.minus(1)][width<60 && height<60] - [!(text=null)]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/25021318',
+            'https://i.gkd.li/i/25021659',
+          ],
         },
       ],
     },
