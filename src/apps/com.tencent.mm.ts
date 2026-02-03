@@ -304,6 +304,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/19645122', // 无法快速查询
           ],
         },
+        {
+          key: 1,
+          activityIds: '.ui.LauncherUI',
+          matches: '[text^="原图"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25009442',
+        },
       ],
     },
     {
