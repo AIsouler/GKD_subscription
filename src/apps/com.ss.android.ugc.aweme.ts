@@ -332,6 +332,14 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21142871',
           ],
         },
+        {
+          key: 2,
+          fastQuery: true,
+          action: 'back',
+          activityIds: '.detail.ui.DetailActivity',
+          matches: '[text="激励更好创作"] <<n LinearLayout [text$="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/25025779',
+        },
       ],
     },
     {
