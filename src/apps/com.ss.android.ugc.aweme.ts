@@ -63,17 +63,22 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: '.main.MainActivity',
+      activityIds: [
+        '.main.MainActivity',
+        '.profile.ui.UserProfileActivity',
+        '.detail.ui.DetailActivity',
+      ],
       rules: [
         {
           key: 1,
           matches:
             "[text~='^(暂不开启|以后再说|禁止)$'][clickable=true][focusable=true]",
           snapshotUrls: [
-            'https://i.gkd.li/i/13669790',
+            'https://i.gkd.li/i/13669790', //这些开启通知请求形式全都不一样！
             'https://i.gkd.li/i/18417891',
             'https://i.gkd.li/i/18419574',
             'https://i.gkd.li/i/25024525',
+            'https://i.gkd.li/i/25063241',
           ],
         },
       ],
