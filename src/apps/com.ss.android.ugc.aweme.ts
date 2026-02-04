@@ -386,7 +386,7 @@ export default defineGkdApp({
           name: '识别界面',
           activityIds: '.main.MainActivity',
           matches:
-            '[desc="不感兴趣"] +n [desc="立即参与"] +n [desc="上滑继续看视频"]',
+            '[desc="不感兴趣"][clickable=false] +3 [desc="立即参与"][clickable=false] +3 [desc="上滑继续看视频"][clickable=false]',
           action: 'back',
           snapshotUrls: 'https://i.gkd.li/i/25025682',
         },
