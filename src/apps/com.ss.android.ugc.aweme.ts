@@ -72,7 +72,7 @@ export default defineGkdApp({
         {
           key: 1,
           matches: [
-            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒"][visibleToUser=true]',
+            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒" || text$="及时获得评论回复提醒"][visibleToUser=true]',
             '[text="以后再说" || text="暂不开启" || text="禁止"][visibleToUser=true]',
           ],
           snapshotUrls: [
