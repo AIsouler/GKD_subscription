@@ -71,8 +71,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          matches:
-            "[text~='^(暂不开启|以后再说|禁止)$'][clickable=true][focusable=true]",
+          matches: [
+            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒"][visibleToUser=true]',
+            '[text="以后再说" || text="暂不开启" || text="禁止"][visibleToUser=true]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/13669790', //这些开启通知请求形式全都不一样！
             'https://i.gkd.li/i/18417891',
