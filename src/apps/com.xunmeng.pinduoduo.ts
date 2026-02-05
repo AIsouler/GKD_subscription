@@ -252,6 +252,7 @@ export default defineGkdApp({
             'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
             'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           ],
+          action: 'clickCenter',
           matches: 'Button[text="关闭弹窗" || desc="关闭弹窗"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13927594',
