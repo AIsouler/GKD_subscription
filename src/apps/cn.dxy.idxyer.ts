@@ -104,6 +104,7 @@ export default defineGkdApp({
             '.biz.post.PostDetailActivity',
             '.biz.post.CommentDetailActivity',
           ],
+          action: 'clickCenter',
           matches: [
             '@Button[text=" 查看答案"][clickable=true][visibleToUser=true]',
           ],
