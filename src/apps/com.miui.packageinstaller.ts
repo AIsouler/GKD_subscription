@@ -42,6 +42,8 @@ export default defineGkdApp({
             'com.miui.packageInstaller.NewInstallerPrepareActivity',
             'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
           ],
+          excludeMatches:
+            'CheckBox[text="已了解此应用存在风险"][clickable=true]', //使用excludeMatches排除没勾选风险知情状况
           matches:
             '@FrameLayout[clickable=true] > LinearLayout[childCount=1] > [text^="继续" || text^="仍然"][text.length=4][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/bd3e2764-4978-44ed-93d3-f176c23c3ec4',
@@ -53,7 +55,7 @@ export default defineGkdApp({
           ],
         },
         {
-          preKeys: [0],
+          preKeys: [0, 2],
           key: 1,
           name: '点击[完成]',
           activityIds:
@@ -63,6 +65,27 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/0011622b-580a-4810-81a4-b4a1181d121d',
           snapshotUrls: 'https://i.gkd.li/i/16487274',
           excludeSnapshotUrls: 'https://i.gkd.li/i/20282424',
+        },
+        {
+          key: 2,
+          name: '策略二:先勾选风险知情后才能安装/更新',
+          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          matches:
+            'CheckBox[text="已了解此应用存在风险"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25095995',
+        },
+        {
+          preKeys: [2],
+          key: 3,
+          name: '策略二:点击[安装]/[更新]',
+          activityIds: [
+            'com.miui.packageInstaller.NewInstallerPrepareActivity',
+            'com.miui.packageInstaller.ui.InstallPrepareAlertActivity',
+          ],
+          matches:
+            '@FrameLayout[clickable=true] > LinearLayout[childCount=1] > [text^="继续" || text^="仍然"][text.length=4][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/bd3e2764-4978-44ed-93d3-f176c23c3ec4',
+          snapshotUrls: 'https://i.gkd.li/i/25095995',
         },
       ],
     },
