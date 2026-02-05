@@ -155,5 +155,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 15,
+      name: '开屏广告',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      matchTime: 8000,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusiclite.activity.SplashAdActivity',
+          action: 'clickCenter',
+          matches: '[text$="跳过"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25094542',
+        },
+      ],
+    },
   ],
 });
