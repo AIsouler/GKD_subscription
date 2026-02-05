@@ -120,6 +120,22 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13680798', // 兼容英文
           ],
         },
+        {
+          preKeys: [0, 1, 2],
+          key: 12,
+          name: '点击隐藏 @xxx', //对于屏蔽过的广告用户第二策略
+          matches: [
+            '[text*="@"] - [vid="action_sheet_item_icon"] < @ViewGroup[childCount=2] -4 ViewGroup < [vid="action_sheet_recycler_view"][childCount=10]',
+          ], //兼容其他语言所以采用结构定位
+          snapshotUrls: 'https://i.gkd.li/i/25089665',
+        },
+        {
+          preKeys: [12],
+          key: 13,
+          name: '点击是的，我确定',
+          matches: 'Button + Button',
+          snapshotUrls: 'https://i.gkd.li/i/25089666',
+        },
       ],
     },
     {
