@@ -100,24 +100,25 @@ export default defineGkdApp({
           key: 10,
           name: '点击屏蔽',
           matches:
-            '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"||text^="屏蔽"||text^="Block"]',
+            '@ViewGroup > [id="com.twitter.android:id/action_sheet_item_title"][text^="屏蔽"||text^="屏蔽"||text^="Block"||text^="隐藏 @"||text^="Hide @"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12828815',
             'https://i.gkd.li/i/12847600',
             'https://i.gkd.li/i/12904602',
-            'https://i.gkd.li/i/13680783', // 兼容英文
+            'https://i.gkd.li/i/13680783',
+            'https://i.gkd.li/i/25089665',
           ],
         },
         {
           preKeys: [10],
           key: 11,
-          name: '二次确认-点击屏蔽',
           matches:
-            '[text="取消"||text^="Cancel"] + [text="屏蔽"||text^="Block"]',
+            '[text="取消"||text^="Cancel"] + [text="屏蔽"||text^="Block"||text="是的，我确定"||text^="Yes"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12828832',
             'https://i.gkd.li/i/12904601',
-            'https://i.gkd.li/i/13680798', // 兼容英文
+            'https://i.gkd.li/i/13680798',
+            'https://i.gkd.li/i/25089666',
           ],
         },
       ],
