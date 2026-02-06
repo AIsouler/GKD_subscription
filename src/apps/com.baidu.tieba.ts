@@ -64,6 +64,7 @@ export default defineGkdApp({
           key: 2,
           activityIds: 'com.baidu.tbadk.browser.TBWebContainerActivity',
           matches: '[text="开启通知"] <n * > [text="暂不开启"]',
+          action: 'clickCenter',
           snapshotUrls: [
             'https://i.gkd.li/i/13804455',
             'https://i.gkd.li/i/20918198',
