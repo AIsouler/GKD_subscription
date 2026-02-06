@@ -374,7 +374,6 @@ export default defineGkdApp({
       name: '功能类-自动抢口令红包',
       desc: '点击 ①口令红包 ②弹窗 ③一键发口令',
       fastQuery: true,
-      actionCd: 120,
       activityIds: '.fund.redpacket.RedPacketReceiveActivity',
       rules: [
         {
