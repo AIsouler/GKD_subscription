@@ -44,7 +44,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-通知权限',
-      matchTime: 10000,
       actionMaximum: 1,
       rules: [
         {
