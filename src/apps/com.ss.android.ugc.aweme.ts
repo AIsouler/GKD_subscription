@@ -72,7 +72,7 @@ export default defineGkdApp({
         {
           key: 1,
           matches: [
-            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒" || text$="及时获得评论回复提醒"][visibleToUser=true]',
+            '[text^="打开私信通知" || text="开启朋友的消息通知" || text="及时获得消息提醒" || text$="评论回复提醒"][visibleToUser=true]',
             '[text="以后再说" || text="暂不开启" || text="禁止"][visibleToUser=true]',
           ],
           snapshotUrls: [
@@ -339,14 +339,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21142871',
           ],
         },
-        {
-          key: 2,
-          fastQuery: true,
-          action: 'back',
-          activityIds: '.detail.ui.DetailActivity',
-          matches: '[text="激励更好创作"] <<n LinearLayout [text$="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/25025779',
-        },
       ],
     },
     {
@@ -380,22 +372,6 @@ export default defineGkdApp({
           matches: '[vid="iv_back"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/f92c1412-8111-40bc-8188-24f2c004c55c',
           snapshotUrls: 'https://i.gkd.li/i/22761554',
-        },
-      ],
-    },
-    {
-      key: 27,
-      name: '功能类-跳过话题推荐卡片',
-      desc: '执行返回操作',
-      rules: [
-        {
-          key: 0,
-          name: '识别界面',
-          activityIds: '.main.MainActivity',
-          matches:
-            '[desc="不感兴趣"][clickable=false] +3 [desc="立即参与"][clickable=false] +3 [desc="上滑继续看视频"][clickable=false]',
-          action: 'back',
-          snapshotUrls: 'https://i.gkd.li/i/25025682',
         },
       ],
     },
