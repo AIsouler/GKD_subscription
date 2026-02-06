@@ -56,12 +56,19 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          name: '软件详情页卡片广告',
           fastQuery: true,
-          activityIds: 'info.muge.appshare.view.app.detail.AppDetailActivity',
+          activityIds: [
+            'info.muge.appshare.view.app.detail.AppDetailActivity',
+            'info.muge.appshare.view.app.detail.v4.AppDetailV4Activity',
+            'info.muge.appshare.view.search.v4.SearchActivity',
+          ],
           matches:
-            'FrameLayout[childCount=5] > @FrameLayout[visibleToUser=true] > ImageView <<n [vid="adContainer"]',
-          snapshotUrls: 'https://i.gkd.li/i/14382413',
+            'FrameLayout[childCount=5] > @FrameLayout[childCount=1][visibleToUser=true][width<50 && height<50] > ImageView[childCount=0] <<n [vid="adContainer" || vid="adView" || vid="cardAd"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14382413',
+            'https://i.gkd.li/i/25124086',
+            'https://i.gkd.li/i/25124059',
+          ],
         },
       ],
     },
@@ -94,11 +101,13 @@ export default defineGkdApp({
           anyMatches: [
             '[text="确定"]',
             '@[clickable=true] > [childCount=0][text="我知道了"]',
+            '[vid="tvClose"][text="我知道了"][clickable=true][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13931279',
             'https://i.gkd.li/i/20259829',
             'https://i.gkd.li/i/24376307',
+            'https://i.gkd.li/i/25125005',
           ],
         },
       ],
@@ -247,6 +256,21 @@ export default defineGkdApp({
           exampleUrls:
             'https://m.gkd.li/57941037/aae3c59c-8eac-452c-984e-84ee9b97e986',
           snapshotUrls: 'https://i.gkd.li/i/14792822',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'info.muge.appshare.view.main.MainActivity',
+          matches: '@[vid="tvCancel"] + [vid="tvUpdate"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25123777',
         },
       ],
     },
