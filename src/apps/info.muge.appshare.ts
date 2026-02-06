@@ -250,5 +250,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 7,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'info.muge.appshare.view.main.MainActivity',
+          matches:
+            '@[vid="tvCancel"][clickable=true][visibleToUser=true] + [vid="tvUpdate"][clickable=true][visibleToUser=true] + [vid="tvBrowser"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25123777',
+        },
+      ],
+    },
   ],
 });
