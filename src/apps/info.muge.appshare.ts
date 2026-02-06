@@ -72,6 +72,14 @@ export default defineGkdApp({
             '@ImageView[visibleToUser=true][width<50 && height<50] <<n [vid="cardAd"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25124086',
         },
+        {
+          key: 2,
+          name: '软件搜索页底部卡片广告',
+          activityIds: 'info.muge.appshare.view.search.v4.SearchActivity',
+          matches:
+            '@ImageView[visibleToUser=true][width<50 && height<50] <<n FrameLayout[childCount=5][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25124059',
+        },
       ],
     },
     {
