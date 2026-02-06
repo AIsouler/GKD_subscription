@@ -33,10 +33,9 @@ export default defineGkdApp({
             'dev.xesam.chelaile.app.module.line.TimeTableActivity',
             'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           ],
-          matches: [
+          excludeMatches: '[text="选择下车站"][visibleToUser=true]',
+          matches:
             '[vid="cll_line_single_ad_close" || vid="cll_close" || vid="cll_card_single_ad_close"][visibleToUser=true][width<110 && height<110]',
-            '[id="com.ygkj.chelaile.standard:id/cll_line_single_ad_close"][visibleToUser=true][width<110 && height<110]',
-          ],
           exampleUrls: 'https://e.gkd.li/7d7b7d94-eb64-41a5-a5c2-c8418d6371a1',
           snapshotUrls: [
             'https://i.gkd.li/i/13625374',
@@ -44,6 +43,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16987313',
             'https://i.gkd.li/i/16988894',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/25092999',
         },
         {
           key: 2,
@@ -134,13 +134,14 @@ export default defineGkdApp({
       key: 4,
       name: '功能类-打开app自动点击收藏列表第一个车🚗(不要同时开启哦~)',
       desc: '启动app-收藏列表第一个车线-进入车线详情',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
-          matches: '[vid="fav_line_layout"][childCount=3][visibleToUser=true]',
+          matches:
+            '@FrameLayout[clickable=true][getChild(0).vid="fav_line_layout"] - LinearLayout >2 [text="我的收藏"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25091170',
         },
       ],
@@ -149,14 +150,15 @@ export default defineGkdApp({
       key: 5,
       name: '功能类-打开app自动点击第一个车🚗后打开地图🗺️(不要同时开启哦~)',
       desc: '启动app-收藏列表第一个车线-进入车线详情-点击地图查看所有车次位置',
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
           key: 0,
           activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
-          matches: '[vid="fav_line_layout"][childCount=3][visibleToUser=true]',
+          matches:
+            '@FrameLayout[clickable=true][getChild(0).vid="fav_line_layout"] - LinearLayout >2 [text="我的收藏"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25091170',
         },
         {
