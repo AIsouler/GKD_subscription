@@ -62,6 +62,12 @@ export default defineGkdApp({
           exampleUrls: 'https://e.gkd.li/179028f9-ae60-4286-b746-ac2f0bb7aad6',
           snapshotUrls: 'https://i.gkd.li/i/24818734',
         },
+        {
+          key: 3,
+          activityIds: 'app.video.guoguo.MainActivity',
+          matches: '[desc="不再显示"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25122774',
+        },
       ],
     },
   ],
