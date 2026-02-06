@@ -111,11 +111,13 @@ export default defineGkdApp({
           anyMatches: [
             '[text="确定"]',
             '@[clickable=true] > [childCount=0][text="我知道了"]',
+            '[vid="tvClose"][text="我知道了"][clickable=true][visibleToUser=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/13931279',
             'https://i.gkd.li/i/20259829',
             'https://i.gkd.li/i/24376307',
+            'https://i.gkd.li/i/25125005',
           ],
         },
       ],
