@@ -63,6 +63,15 @@ export default defineGkdApp({
             'FrameLayout[childCount=5] > @FrameLayout[visibleToUser=true] > ImageView <<n [vid="adContainer"]',
           snapshotUrls: 'https://i.gkd.li/i/14382413',
         },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds:
+            'info.muge.appshare.view.app.detail.v4.AppDetailV4Activity',
+          matches:
+            '@ImageView[visibleToUser=true][width<50 && height<50] <<n [vid="cardAd"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25124086',
+        },
       ],
     },
     {
