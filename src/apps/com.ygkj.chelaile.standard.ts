@@ -33,8 +33,9 @@ export default defineGkdApp({
             'dev.xesam.chelaile.app.module.line.TimeTableActivity',
             'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
           ],
+          excludeMatches: '[text="选择下车站"][visibleToUser=true]',
           matches:
-            '[vid="cll_line_single_ad_close" || vid="cll_close" || vid="cll_card_single_ad_close"][visibleToUser=true]',
+            '[vid="cll_line_single_ad_close" || vid="cll_close" || vid="cll_card_single_ad_close"][visibleToUser=true][width<110 && height<110]',
           exampleUrls: 'https://e.gkd.li/7d7b7d94-eb64-41a5-a5c2-c8418d6371a1',
           snapshotUrls: [
             'https://i.gkd.li/i/13625374',
@@ -42,6 +43,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16987313',
             'https://i.gkd.li/i/16988894',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/25092999',
         },
         {
           key: 2,
@@ -125,6 +127,47 @@ export default defineGkdApp({
             '@ViewGroup[childCount=1][visibleToUser=true][width<100 && height<100] + ViewGroup > [text="反馈"]',
           exampleUrls: 'https://e.gkd.li/1f1c3315-d245-404b-ad16-554583b16283',
           snapshotUrls: 'https://i.gkd.li/i/21120146',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '功能类-打开app自动点击收藏列表第一个车🚗(不要同时开启哦~)',
+      desc: '启动app-收藏列表第一个车线-进入车线详情',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
+          matches:
+            '@FrameLayout[clickable=true][getChild(0).vid="fav_line_layout"] - LinearLayout >2 [text="我的收藏"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25091170',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '功能类-打开app自动点击第一个车🚗后打开地图🗺️(不要同时开启哦~)',
+      desc: '启动app-收藏列表第一个车线-进入车线详情-点击地图查看所有车次位置',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          key: 0,
+          activityIds: 'dev.xesam.chelaile.app.module.PanelHostActivity',
+          matches:
+            '@FrameLayout[clickable=true][getChild(0).vid="fav_line_layout"] - LinearLayout >2 [text="我的收藏"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25091170',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          activityIds:
+            'dev.xesam.chelaile.app.module.line.gray.LineDetailActivity',
+          matches: '[vid="cll_cover"][visibleToUser=true][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25091375',
         },
       ],
     },
