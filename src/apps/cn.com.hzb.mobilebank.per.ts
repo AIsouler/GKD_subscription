@@ -20,5 +20,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-未登录时自动点击登录',
+      desc: '仅限财富版',
+      rules: [
+        {
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'cn.com.hzb.mobilebank.per.MainActivity',
+          matches: '@[clickable=true] > [text="立即登录>"]',
+          snapshotUrls: 'https://i.gkd.li/i/25150391',
+        },
+      ],
+    },
   ],
 });
