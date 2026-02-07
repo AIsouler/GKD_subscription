@@ -224,5 +224,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 8,
+      name: '其他-开启个性化广告弹窗',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.twitter.app.main.MainActivity',
+          matches:
+            '[text="保留更少相关广告"] <<n @[vid="secondary_button"][clickable=true] <n ViewGroup - [text$="更好地在 X 以及其他网站和应用上为你定制广告。"]',
+          snapshotUrls: 'https://i.gkd.li/i/25150279',
+        },
+      ],
+    },
   ],
 });
