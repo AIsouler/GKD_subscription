@@ -440,5 +440,21 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 35,
+      name: '功能类-自动跳转第三方应用',
+      desc: '点击[允许]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.QQBrowserActivity',
+          matches: [
+            '[text$="打开其他应用"]',
+            '[text="允许"][clickable=true][visibleToUser=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/25142977',
+        },
+      ],
+    },
   ],
 });
