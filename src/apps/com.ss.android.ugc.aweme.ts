@@ -344,34 +344,47 @@ export default defineGkdApp({
     {
       key: 26,
       name: '功能类-自动领取别人发的红包',
+      desc: '点击 ①抖音红包 ②弹窗-开红包 ③返回 ④x掉已领完弹窗',
+      fastQuery: true,
+      activityIds: '.fund.redpacket.RedPacketReceiveActivity',
       rules: [
         {
-          key: 0,
-          fastQuery: true,
+          key: 1,
+          name: '①点击[抖音红包]',
           activityIds: '.main.MainActivity',
           matches:
-            'FrameLayout[getChild(0).desc$="的头像"] + ViewGroup >3 @FrameLayout > [text="抖音红包"][visibleToUser=true]',
+            'FrameLayout[width>10] -2 @LinearLayout >3 [text="抖音红包"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/6c963e99-1a74-40a5-bf84-a9353c27acdb',
-          snapshotUrls: 'https://i.gkd.li/i/22761277',
-          excludeSnapshotUrls: 'https://i.gkd.li/i/22849224', // 自己发的不领取
+          snapshotUrls: [
+            'https://i.gkd.li/i/22761277',
+            'https://i.gkd.li/i/25190308',
+          ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22849224', // (右边)自己发的不领取 [width=0]
         },
         {
-          preKeys: [0],
-          key: 1,
-          fastQuery: true,
-          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
+          preKeys: [1],
+          key: 2,
+          name: '②红包弹窗-点击[开]',
           matches:
             '@FrameLayout[clickable=true][width=height] -2 [text="大吉大利"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/e8b822c1-c289-4802-85a4-994093024b24',
           snapshotUrls: 'https://i.gkd.li/i/22761510',
         },
         {
-          preKeys: [1],
-          fastQuery: true,
-          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
+          preKeys: [2],
+          key: 3,
+          name: '③已领-点击[返回]',
           matches: '[vid="iv_back"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/f92c1412-8111-40bc-8188-24f2c004c55c',
           snapshotUrls: 'https://i.gkd.li/i/22761554',
+        },
+        {
+          key: 4,
+          preKeys: [1, 2, 3],
+          name: '④已领完弹窗-x掉',
+          matches:
+            '@ImageView[clickable=true] - * > [text="红包已领完"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25190699',
         },
       ],
     },
