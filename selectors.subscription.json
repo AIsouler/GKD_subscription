@@ -1,0 +1,149 @@
+{
+  "404": [
+    {
+      "name": "开屏广告1",
+      "order": 100,
+      "selector": "[text*=\"跳过\"][text.length<10][width<500 && height<300][visibleToUser=true]"
+    },
+    {
+      "name": "开屏广告2",
+      "order": 99,
+      "selector": "[childCount=0][visibleToUser=true][width<500 && height<300][(text.length<10 && (text*=\"跳过\" || text*=\"跳 过\" || text*=\"跳過\" || text~=\"(?is).*skip.*\") && text!*=\"视频\" && text!*=\"片头\" && text!*=\"片尾\") || (vid~=\"(?is).*skip.*\" && vid!~=\"(?is).*video.*\" && vid!~=\"(?is).*head.*\" && vid!~=\"(?is).*tail.*\" && !(text=\"帮助\") && !(text=\"取消\") && !(text*=\"退出\")) || id$=\"tt_splash_skip_btn\" || (desc.length<10 && (desc*=\"跳过\" || desc*=\"跳過\" || desc~=\"(?is).*skip.*\"))]"
+    },
+    {
+      "name": "字节开屏1",
+      "order": 98,
+      "selector": "@View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0] <n FrameLayout[childCount>2][text=null][desc=null] >(n+6) [text*=\"第三方应用\" || text*=\"扭动手机\" || text*=\"点击或上滑\" || text*=\"省钱好物\" || text*=\"扭一扭\"][visibleToUser=true]"
+    },
+    {
+      "name": "字节开屏2",
+      "order": 97,
+      "selector": "FrameLayout > FrameLayout[childCount>2][text=null][desc=null] > @View[text=null][clickable=true][childCount=0][visibleToUser=true][width<200&&height<200] +(1,2) TextView[index=parent.childCount.minus(1)][childCount=0][visibleToUser=true]"
+    },
+    {
+      "name": "互动开屏",
+      "order": 96,
+      "selector": "@[name$=\"View\" || name$=\"LinearLayout\"][clickable=true][childCount<2][width<300 && height<200] - [text=\"互动广告\"][visibleToUser=true]"
+    },
+    {
+      "name": "开屏排除",
+      "order": 90,
+      "selector": "([text*=\"搜索\" || text=\"历史记录\" || text$=\"在搜\"][text.length>3 && text.length<7][visibleToUser=true]) || ([text=\"Submit\" || text*=\"阅读并同意\" || text=\"书签\" || text=\"NEXT\"][visibleToUser=true]) || ([text$=\"设置\" || text$=\"选好了\" || text^=\"下一步\" || text^=\"完成\" || text*=\"跳过片\"][text.length<10][visibleToUser=true]) || ([text^=\"选择\"][text*=\"偏好\" || text*=\"兴趣\" || text*=\"喜好\"][text.length<10][visibleToUser=true])"
+    },
+    {
+      "name": "更新提示1",
+      "order": 89,
+      "selector": "[text*=\"内测\" || text*=\"测试版\" || text*=\"新版\" || text*=\"更新\" || text*=\"升级\" || text*=\"体验\" || text*=\"內測\" || text*=\"測試版\" || text*=\"升級\" || text*=\"體驗\" || text*=\"Update\" || text*=\"Upgrade\" || text*=\"Experience\"][text!*=\"自动\" && text!*=\"自動\" && text!*=\"成功\" && text!*=\"失败\" && text!*=\"失敗\" && text!*=\"检查更新\" && text!*=\"检测更新\" && text!*=\"卸载\"][childCount=0][visibleToUser=true]"
+    },
+    {
+      "name": "更新提示2",
+      "order": 88,
+      "selector": "[text*=\"更新\" || text*=\"下载\" || text*=\"安装\" || text*=\"升级\" || text*=\"查看\" || text*=\"体验\" || text*=\"确定\" || text*=\"确认\"][text.length<6][childCount=0][visibleToUser=true]"
+    },
+    {
+      "name": "更新提示3",
+      "order": 87,
+      "selector": "([text*=\"不再提醒\" || text$=\"再说\" || text$=\"拒绝\" || text$=\"再想想\" || text*=\"再看看\" || text^=\"忽略\" || text^=\"暂不\" || text^=\"放弃\" || text^=\"取消\" || text$=\"不要\" || text$=\"再說\" || text$=\"暫不\" || text$=\"拒絕\" || text*=\"稍后\" || text^=\"关闭\" || text$=\"Later\" || text^=\"Ignore\" || text^=\"Not now\" || text^=\"Cancel\"][!(text*=\"取消\"&&text*=\"忽略\")][text.length<6][childCount=0][visibleToUser=true]) || ([vid=\"closeIv\" || vid=\"iv_close\" || vid=\"iv_cancel\" || vid=\"close\" || vid=\"Close\" || vid=\"img_close\" || vid=\"btn_close\" || vid=\"ivCancel\" || vid=\"tvCancel\" || vid=\"cancel\" || vid=\"Cancel\" || vid=\"ivClose\" || vid=\"imgClose\" || vid=\"iv_negative\" || vid=\"update_close_icon\"][childCount=0][visibleToUser=true])"
+    },
+    {
+      "name": "更新排除",
+      "order": 80,
+      "selector": "([text*=\"全部\"][text*=\"更新\" || text*=\"忽略\"][text.length<7][visibleToUser=true]) || ([text^=\"继续\" || text^=\"仍然\" || text*=\"权限\"][text.length<6][visibleToUser=true]) || ([text*=\"来源\"][visibleToUser=true])"
+    },
+    {
+      "name": "青少年模式1",
+      "order": 79,
+      "selector": "[text*=\"青少年\" || text*=\"未成年\" || text*=\"儿童\"][text*=\"模式\" || text*=\"守护\"][text.length<15][childCount=0][visibleToUser=true]"
+    },
+    {
+      "name": "青少年模式2",
+      "order": 78,
+      "selector": "[text*=\"知道了\" || text*=\"我已知晓\" || text*=\"已满\" || text*=\"不再提醒\"][text.length<8][childCount=0][visibleToUser=true]"
+    },
+    {
+      "name": "字节SDK-1",
+      "order": 69,
+      "selector": "@Image[childCount=0][text=\"\"][width<60 && height<60] < View[childCount=1] + View +n View > View[childCount=1] > TextView[text$=\"广告\"]"
+    },
+    {
+      "name": "字节SDK-2",
+      "order": 68,
+      "selector": "@Image[childCount=0][text=\"\"][width<60 && height<60] < View[childCount=1] + View > [text=\"反馈\"]"
+    },
+    {
+      "name": "字节SDK-3",
+      "order": 67,
+      "selector": "[text=\"反馈\"] +(1,2) View[childCount=1] > Image[childCount=0][text=\"\"][width<60 && height<60]"
+    },
+    {
+      "name": "字节SDK-4",
+      "order": 66,
+      "selector": "[text=\"反馈\"] - View[childCount=1] > Image[childCount=0][text=\"\"][width<60 && height<60]"
+    },
+    {
+      "name": "腾讯SDK-1",
+      "order": 59,
+      "selector": "@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^=\"立即\" || text$=\"详情\" || text^=\"了解\" || text=\"去微信看看\" || text$=\"应用\" || text=\"进入小程序\" || text=\"领取优惠\" || text=\"跳转微信\"]"
+    },
+    {
+      "name": "腾讯SDK-2",
+      "order": 58,
+      "selector": "@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <2 FrameLayout[childCount=5] + FrameLayout[childCount=2] > [text^=\"立即\" || text$=\"详情\" || text^=\"了解\" || text=\"去逛逛\" || text=\"去微信看看\" || text$=\"应用\" || text=\"进入小程序\" || text=\"领取优惠\" || text=\"跳转微信\"]"
+    },
+    {
+      "name": "腾讯SDK-3",
+      "order": 57,
+      "selector": "@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] <(2,3) FrameLayout[childCount=4] +(1,2) FrameLayout[childCount=2] >2 [text^=\"立即\" || text=\"去逛逛\"]"
+    },
+    {
+      "name": "腾讯SDK-4",
+      "order": 56,
+      "selector": "@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^=\"立即\" || text$=\"应用\" || text=\"了解更多\" || text=\"查看详情\"]"
+    },
+    {
+      "name": "腾讯SDK5",
+      "order": 55,
+      "selector": "@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] - FrameLayout >2 [text$=\"第三方应用\"]"
+    },
+    {
+      "name": "京东SDK-1",
+      "order": 49,
+      "selector": "@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^=\"扭动或点击\"]"
+    },
+    {
+      "name": "京东SDK-2",
+      "order": 48,
+      "selector": "@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <3 FrameLayout[childCount=3] < FrameLayout[childCount=2] +5 FrameLayout[childCount=4] > [text^=\"扭动或点击\"]"
+    },
+    {
+      "name": "快手SDK-1",
+      "order": 39,
+      "selector": "ImageView[childCount=0][text=null] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] < ViewGroup +n ViewGroup[childCount=2] > [text=\"广告\"]"
+    },
+    {
+      "name": "快手SDK-2",
+      "order": 38,
+      "selector": "@ImageView[clickable=true] - [text=\"|\"] - [text$=\"s\"]"
+    },
+    {
+      "name": "卡片-1",
+      "order": 1,
+      "selector": "@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] - LinearLayout[childCount=2] > [text=\"下载应用\" || text=\"立即下载\" || text=\"查看详情\" || text=\"领取优惠\" || text=\"进入小程序\" || text=\"了解更多\"][visibleToUser=true]"
+    },
+    {
+      "name": "dislike",
+      "order": 1,
+      "selector": "@View[clickable=true][childCount=0][visibleToUser=true] < FrameLayout[desc^=\"dislike\"] <n * > FrameLayout >n [text=\"广告\"]"
+    },
+    {
+      "name": "字节卡片",
+      "order": 1,
+      "selector": "@Image[childCount=0][visibleToUser=true][width<80&&height<80] < View[childCount=1] +n View[childCount=2] >(2,3) [text=\"广告\"]"
+    },
+    {
+      "name": "卡片2",
+      "order": 1,
+      "selector": "@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] <3 FrameLayout +2 FrameLayout >2 [text=\"下载应用\" || text=\"立即下载\" || text=\"查看详情\" || text=\"领取优惠\" || text=\"进入小程序\" || text=\"了解更多\"]"
+    }
+  ]
+}
