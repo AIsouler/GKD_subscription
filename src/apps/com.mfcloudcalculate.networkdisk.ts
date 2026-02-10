@@ -131,10 +131,7 @@ export default defineGkdApp({
         {
           key: 11,
           fastQuery: true,
-          position: {
-            left: 'width * 0.9636',
-            top: 'height * 0.55',
-          },
+          action: 'back',
           activityIds: '.MainActivity',
           matches:
             '[desc="开通前请阅读"] -n @ImageView[childCount=0][width>800] <(1,2) View < View < View < View < FrameLayout < [id="android:id/content"]',
