@@ -65,6 +65,21 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 4,
+      name: '全屏广告-弹窗广告',
+      desc: '点击【x】',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'net.csdn.csdnplus.activity.MainActivity',
+          matches:
+            'LinearLayout[childCount=2] > [vid="img_cancel"][clickable=true][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25171470',
+          exampleUrls: 'https://e.gkd.li/3debb965-7773-4160-b172-15dc052ac6c9',
+        },
+      ],
+    },
+    {
       key: 10,
       name: '权限提示-通知权限',
       fastQuery: true,
