@@ -1,0 +1,5 @@
+{
+  "id": "404",
+  "name": "GKD快捷选择器",
+  "selectors": "https://raw.githubusercontent.com/AIsouler/GKD_subscription/refs/heads/main/selectors.subscription.json"
+}
