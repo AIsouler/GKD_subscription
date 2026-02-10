@@ -601,6 +601,7 @@ export default defineGkdApp({
             'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
             'com.alipay.mobile.nebulax.xriver.activity.XRiverTransActivity$Main',
             '.AlipayLogin',
+            'com.alipay.android.phone.wallet.blessingcard_receive.biz.activity.ReceiveDialogActivity',
           ],
           matches: [
             '[text="访问被拒绝" || text="人气太旺啦，请稍后再试"][visibleToUser=true]',
@@ -612,6 +613,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/23096790',
             'https://i.gkd.li/i/23549719',
             'https://i.gkd.li/i/24183318',
+            'https://i.gkd.li/i/25199767',
           ],
         },
       ],
