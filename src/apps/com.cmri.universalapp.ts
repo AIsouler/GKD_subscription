@@ -24,17 +24,18 @@ export default defineGkdApp({
       name: '局部广告-卡片广告',
       fastQuery: true,
       matchTime: 10000,
-      activityIds: '.SmartMainProxyActivity',
       rules: [
         {
           key: 0,
           name: '横幅式',
+          activityIds: '.SmartMainProxyActivity',
           matches: '[vid="close_banner"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17872961',
         },
         {
           key: 1,
           name: '卡片信息流式',
+          activityIds: '.SmartMainProxyActivity',
           matches: '[vid="iv_close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17872961',
         },
