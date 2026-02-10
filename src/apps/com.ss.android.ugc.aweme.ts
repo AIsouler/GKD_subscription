@@ -393,24 +393,28 @@ export default defineGkdApp({
       name: '功能类-自动抢口令红包',
       desc: '点击 ①口令红包 ②弹窗 ③一键发口令',
       fastQuery: true,
-      activityIds: '.fund.redpacket.RedPacketReceiveActivity',
       rules: [
         {
           key: 1,
           name: '①点进口令红包',
-          activityIds: '.main.MainActivity',
+          activityIds: [
+            '.main.MainActivity',
+            '.fund.redpacket.RedPacketReceiveActivity',
+          ],
           matches: '@ImageView + [text="抖音红包「口令」"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25121991',
         },
         {
           key: 2,
           name: '②弹窗-点击红包',
+          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
           matches: 'ImageView < @[clickable=true] -2 [text="发口令开红包"]',
           snapshotUrls: 'https://i.gkd.li/i/25122030',
         },
         {
           key: 3,
           name: '③一键发口令',
+          activityIds: '.fund.redpacket.RedPacketReceiveActivity',
           matches:
             '[text="发口令开红包"] + LinearLayout >2 [text="一键发送到聊天"][clickable=true]',
           snapshotUrls: [
