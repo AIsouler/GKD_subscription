@@ -42,16 +42,16 @@ export default defineGkdApp({
       name: '全屏广告-红包弹窗',
       rules: [
         {
-          key: 1,
           fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches:
-            '@ImageView[clickable=true] <(2,3) ViewGroup >(1,4) [text*="红包"]',
+            '@ImageView[clickable=true] -(1,2) ViewGroup > [text="点击立得奖励" || text^="邀请"]',
           exampleUrls:
             'https://m.gkd.li/101449500/f7bbd1db-f519-4ff9-96cb-4cb5b2f483a2',
           snapshotUrls: [
             'https://i.gkd.li/i/14879912',
-            'https://i.gkd.li/i/15061662',
+            'https://i.gkd.li/i/15061662', //邀请4个新用户
+            'https://i.gkd.li/i/25200787', //邀请新用户
           ],
         },
       ],
