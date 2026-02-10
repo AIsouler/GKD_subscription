@@ -86,7 +86,7 @@ export default defineGkdApp({
             'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
           matches:
             '@TextView[text=""][width<90 && height<90] < View[childCount=1] - View > [text="反馈"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/25188505',
+          snapshotUrls: 'https://i.gkd.li/i/25202925',
         },
       ],
     },
