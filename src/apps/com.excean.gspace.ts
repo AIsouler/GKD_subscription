@@ -49,9 +49,18 @@ export default defineGkdApp({
         {
           key: 2,
           fastQuery: true,
-          activityIds: 'com.excelliance.kxqp.gs.main.MainActivity',
-          matches: '[vid="close_render_ad"]',
-          snapshotUrls: 'https://i.gkd.li/i/15284762',
+          activityIds: [
+            'com.excelliance.kxqp.gs.main.MainActivity',
+            'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
+            'com.anythink.core.common.inner.ui.ATPortraitTranslucentActivity',
+          ],
+          matches:
+            '[vid="close_render_ad" || vid="sdm_myoffer_btn_close_id" || vid="anythink_myoffer_btn_close_id"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15284762',
+            'https://i.gkd.li/i/24611979',
+            'https://i.gkd.li/i/25187840',
+          ],
         },
         {
           key: 3,
@@ -72,12 +81,12 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/24464957',
         },
         {
-          key: 5,
-          fastQuery: true,
+          key: 6,
           activityIds:
-            'com.smartdigimkt.sdk.basead.ui.ATPortraitTranslucentActivity',
-          matches: '[vid="sdm_myoffer_btn_close_id"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/24611979',
+            'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
+          matches:
+            '@TextView[text=""][width<90 && height<90] < View[childCount=1] - View > [text="反馈"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25202925',
         },
       ],
     },
