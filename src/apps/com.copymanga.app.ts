@@ -121,6 +121,15 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12925095',
           ],
         },
+        {
+          key: 10,
+          name: '百度广告-1',
+          fastQuery: true,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches:
+            '@ImageView[clickable=true] - RelativeLayout >2 [text="反馈"]',
+          snapshotUrls: 'https://i.gkd.li/i/25189723',
+        },
       ],
     },
     {
