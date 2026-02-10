@@ -91,5 +91,18 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 12,
+      name: '全屏广告-添加桌面小组件',
+      desc: 'x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
+          matches: '@ImageView[clickable=true] - [text$="桌面小组件"]',
+          snapshotUrls: 'https://i.gkd.li/i/25208769',
+        },
+      ],
+    },
   ],
 });
