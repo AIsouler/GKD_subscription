@@ -24,8 +24,7 @@ export default defineGkdApp({
       name: '局部广告-卡片广告',
       fastQuery: true,
       matchTime: 10000,
-      actionMaximum: 1,
-      activityIds: 'com.cmri.universalapp.SmartMainProxyActivity',
+      activityIds: '.SmartMainProxyActivity',
       rules: [
         {
           key: 0,
@@ -38,6 +37,13 @@ export default defineGkdApp({
           name: '卡片信息流式',
           matches: '[vid="iv_close"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/17872961',
+        },
+        {
+          key: 2,
+          name: '横幅式2',
+          activityIds: '.smarthome.control.view.CameraControlActivity',
+          matches: '[vid="iv_item_banner_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25209084',
         },
       ],
     },
