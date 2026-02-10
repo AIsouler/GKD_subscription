@@ -424,5 +424,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 28,
+      name: '权限提示-相机权限',
+      desc: '点击[以后再说]',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.shortvideo.ui.scan.ScanNewActivity',
+          matches: ['[text*="相机权限"]', '[text="以后再说"][clickable=true]'],
+          snapshotUrls: 'https://i.gkd.li/i/25183382',
+        },
+      ],
+    },
   ],
 });
