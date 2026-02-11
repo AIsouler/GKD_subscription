@@ -533,5 +533,35 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 21,
+      name: '功能类-直播自动点赞',
+      desc: '左下角提示-点击',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+          matches: '@[vid="live_combo_action_button"] > [text="点赞"]',
+          snapshotUrls: 'https://i.gkd.li/i/25238947',
+        },
+      ],
+    },
+    {
+      key: 22,
+      name: '功能类-直播自动投喂粉丝团',
+      desc: '左下角提示-点击投喂_需要0.1米谨慎开启(虽然只有一次)',
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+          matches: '@[vid="live_combo_action_button"] > [text="投喂"]',
+          snapshotUrls: 'https://i.gkd.li/i/25238945',
+        },
+      ],
+    },
   ],
 });
