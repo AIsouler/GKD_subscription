@@ -12,6 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          key: 0,
           fastQuery: true,
           activityIds: [
             'com.huawei.openalliance.ad.ppskit.activity.InnerPPSInterstitialAdActivity',
@@ -24,6 +25,12 @@ export default defineGkdApp({
             'https://i.gkd.li/i/24675884', //平板?
             'https://i.gkd.li/i/24979139',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          matches: '[vid="hiad_btn_skip"] > [text^="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/25240351',
         },
       ],
     },
