@@ -50,9 +50,9 @@ https://registry.npmmirror.com/@aisouler/gkd_subscription/latest/files/dist/AIso
 https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5
 ```
 
-- 当前版本: v405
+- 当前版本: v406
 
-- 当前订阅文件已适配 883 个应用，共有 2064 应用规则组，3 全局规则组
+- 当前订阅文件已适配 886 个应用，共有 2074 应用规则组，3 全局规则组
 
 - 查看 [适配 APP 列表](./dist/README.md)
 
@@ -64,8 +64,8 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 如果这个项目对您有帮助，欢迎赞助我，感谢您的支持！
 
-| 微信                                                                                    | 支付宝                                                                                      |
-| :-----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+|                                           微信                                            |                                          支付宝                                           |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 | ![Image](https://github.com/user-attachments/assets/16c5fdce-dec4-4e3b-a55f-ce08e94c6d02) | ![Image](https://github.com/user-attachments/assets/56bf69f4-aa06-423a-9964-e54ad3d59cf9) |
 
 爱发电：<https://ifdian.net/a/AIsouler>
@@ -88,7 +88,7 @@ https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_g
 
 ## 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=405)
+![img](https://contrib.rocks/image?repo=AIsouler/GKD_subscription&_v=406)
 
 ## Star History
 
