@@ -222,21 +222,11 @@ export default defineGkdApp({
       activityIds: 'com.xingin.alpha.audience.v2.AlphaAudienceActivityV2',
       rules: [
         {
-          key: 0,
-          actionMaximum: 1,
-          matches:
-            '@ViewGroup[childCount=2][clickable=true][visibleToUser=true] <<7 [vid="infoCardViewPager"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/25244875', //右上角卡片
-            'https://i.gkd.li/i/25244996',
-          ],
-        },
-        {
           key: 1,
           fastQuery: true,
           matches:
-            '@ViewGroup[clickable=true][visibleToUser=true] - ViewGroup <<4 [vid="canvasLayout"]',
-          snapshotUrls: 'https://i.gkd.li/i/25245250', //右下角橱窗卡片广告
+            '@ViewGroup[clickable=true][visibleToUser=true] - ViewGroup <<n [vid="canvasLayout"]',
+          snapshotUrls: 'https://i.gkd.li/i/25245250',
         },
       ],
     },
