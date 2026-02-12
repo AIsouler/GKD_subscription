@@ -137,11 +137,12 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '[id="tv.danmaku.bili:id/shopping_close" || vid="live_game_card_close" || vid="match_close"][visibleToUser=true]',
+            '[id="tv.danmaku.bili:id/shopping_close" || vid="live_game_card_close" || vid="match_close" || vid="iv_pop_rank_guide_card_close"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/13200549',
             'https://i.gkd.li/i/22990081',
             'https://i.gkd.li/i/23098023',
+            'https://i.gkd.li/i/25238734',
           ],
         },
         {
@@ -152,6 +153,17 @@ export default defineGkdApp({
             'https://i.gkd.li/i/14782965',
             'https://i.gkd.li/i/18046573',
             'https://i.gkd.li/i/22990105',
+          ],
+        },
+        {
+          key: 2,
+          matchTime: 10000,
+          actionMaximum: 1, //防止循环展开关闭
+          matches:
+            '[vid="vertical_container"] >3 FrameLayout[clickable=true][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/24985920',
+            'https://i.gkd.li/i/25240029',
           ],
         },
       ],
@@ -529,6 +541,36 @@ export default defineGkdApp({
           activityIds: 'com.bilibili.search2.main.BiliMainSearchActivity',
           matches: '[vid="rating_dialog_close"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/23440560',
+        },
+      ],
+    },
+    {
+      key: 21,
+      name: '功能类-直播自动点赞',
+      desc: '左下角提示-点击',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+          matches: '@[vid="live_combo_action_button"] > [text="点赞"]',
+          snapshotUrls: 'https://i.gkd.li/i/25238947',
+        },
+      ],
+    },
+    {
+      key: 22,
+      name: '功能类-直播自动投喂粉丝团',
+      desc: '左下角提示-点击投喂_需要0.1米谨慎开启(虽然只有一次)',
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+          matches: '@[vid="live_combo_action_button"] > [text="投喂"]',
+          snapshotUrls: 'https://i.gkd.li/i/25238945',
         },
       ],
     },
