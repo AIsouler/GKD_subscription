@@ -9,21 +9,27 @@ export default defineGkdApp({
       name: '全屏广告',
       rules: [
         {
-          activityIds: [
-            'com.yandex.mobile.ads.common.AdActivity',
-            'com.applovin.adview.AppLovinFullscreenActivity',
-          ],
-          matches: [
-            '[text="AD"] <<2 ViewGroup + ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true]',
-            'ViewGroup[childCount=3] >2 ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true]',
-            '[id="android:id/content"] > FrameLayout[childCount=2] >2 View[index=parent.childCount.minus(1)][visibleToUser=true]',
-          ],
-          snapshotUrls: [
-            'https://i.gkd.li/i/25241260',
-            'https://i.gkd.li/i/25241058',
-            'https://i.gkd.li/i/25241244',
-            'https://i.gkd.li/i/25241191',
-          ],
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.yandex.mobile.ads.common.AdActivity',
+          matches:
+            '@ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true] < ViewGroup <3 ViewGroup <2 ViewGroup +5 [text="Learn more"]',
+          snapshotUrls: 'https://i.gkd.li/i/25241260',
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.yandex.mobile.ads.common.AdActivity',
+          matches: '@ImageView - ViewGroup >2 [text="AD"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25241244',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.applovin.adview.AppLovinFullscreenActivity',
+          matches:
+            'View[childCount=0] < @FrameLayout[clickable=true][childCount=1] <2 FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/25241191',
         },
       ],
     },
