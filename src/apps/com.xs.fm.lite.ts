@@ -9,23 +9,35 @@ export default defineGkdApp({
       name: '全屏广告',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
           activityIds: [
             'com.dragon.read.pages.main.MainFragmentActivity',
             'com.bytedance.polaris.impl.view.BulletSingleContainerActivity',
           ],
-          matches: [
-            '[text$="为准" || text$="领取" || text$="收下"] + FlattenUIImage[clickable=true][visibleToUser=true]',
-            '[text$="音乐组件"] + ImageView[clickable=true][visibleToUser=true]',
-            '@ImageView[clickable=true][visibleToUser=true][width<90 && height<90] - View <2 ViewGroup[childCount=3]',
-            '@ImageView[index=parent.childCount.minus(1)][clickable=true][visibleToUser=true] <2 LinearLayout[childCount=2]',
-          ],
+          matches:
+            'FlattenUIImage[clickable=true] -(1,2) FlattenUIText[text="开心收下" || text="前往领取"][visibleToUser=true]',
           snapshotUrls: [
-            'https://i.gkd.li/i/25245765',
-            'https://i.gkd.li/i/25246270',
-            'https://i.gkd.li/i/25246625',
             'https://i.gkd.li/i/25246321',
-            'https://i.gkd.li/i/24908945',
+            'https://i.gkd.li/i/25246625',
+            'https://i.gkd.li/i/25245765',
           ],
+        },
+        {
+          key: 1,
+          fastQuery: true,
+          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          matches:
+            '@ImageView[clickable=true] - [text="添加番茄音乐组件"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25246270',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
+          matches:
+            '@ImageView[clickable=true] <3 ViewGroup[childCount=3] < ViewGroup < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/24908945',
         },
       ],
     },
@@ -42,8 +54,8 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/25246506',
         },
         {
-          key: 1,
           preKeys: [0],
+          key: 1,
           activityIds: 'com.ss.android.excitingvideo.ExcitingVideoActivity',
           matches:
             '@View[clickable=true][width<90 && height<90] -2 ScrollView < View[childCount=3]',
@@ -56,10 +68,10 @@ export default defineGkdApp({
       name: '功能类-自动展开回复',
       rules: [
         {
-          activityIds: 'com.xs.fm.karaoke.impl.cover.KaraokeCoverActivity',
           fastQuery: true,
+          activityIds: 'com.xs.fm.karaoke.impl.cover.KaraokeCoverActivity',
           matches:
-            'ViewGroup[childCount=3] > TextView[visibleToUser=true][text^="展开"][text$="回复"]',
+            '@ViewGroup[clickable=true] > TextView[text^="展开"][text$="回复"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25246736',
         },
       ],
